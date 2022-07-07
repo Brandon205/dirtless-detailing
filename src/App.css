@@ -2,6 +2,7 @@
   --contact-bkg-clr: #252525;
   --nav-bkg-clr: #2525253f;
   --boxshadow-clr: rgb(213, 213, 213);
+  --footer-bkg: #060606;
 }
 
 *,
@@ -116,4 +117,34 @@ section {
   color: white;
   font-weight: bold;
   letter-spacing: 0.7;
+}
+
+/** Footer CSS **/
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-color: var(--footer-bkg);
+  color: white;
+}
+
+hr {
+  width: 100%;
+}
+
+.footer-content-card {
+  margin-left: 10px;
+}
+
+.footer-text {
+  color: lightgray;
+}
+
+.socials-container {
+  text-align: center;
+}
+
+.socials {
+  font-size: 2em;
+  margin-bottom: 15px;
 }

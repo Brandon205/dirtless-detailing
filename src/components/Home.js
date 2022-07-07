@@ -6,11 +6,11 @@ export default function Home() {
         <div className="App">
             <section>
                 <h2>Your Pierce County Car Detailing Specialists</h2>
-                <h4 className='dd-desc'>Over 100+ 5-star reviews from out happy customers. From interior cleaning to paint correction and ceramic coatings. We can handle all your detailing needs.</h4>
+                <h4 className='dd-desc'>Over 100+ 5-star reviews from our happy customers. From interior cleaning to paint correction and ceramic coatings. We can handle all your detailing needs.</h4>
                 <button className="learn-btn">Learn More</button>
                 <button className="quote-btn">Get Quote</button>
             </section>
-            <article className="contact-container">
+            <section className="contact-container">
                 <h3>Contact Us</h3>
                 <p className="phone">(253) 252-9758</p>
 
@@ -21,7 +21,7 @@ export default function Home() {
 
                 <h3>LOCATION</h3>
                 Pierce County Washington
-            </article>
+            </section>
             <section className="popular-container">
                 <h2>Popular Detailing Services</h2>
 
@@ -78,6 +78,10 @@ export default function Home() {
                     <p className="service-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <button className="readmore">Read More</button>
                 </div>
+            </section>
+            <section className="serviceareas-container">
+                <h2>Servicing the Pierce County and King County Area</h2>
+                <p>We can come to you, all we need is access to your vehicle and we're ready to work. Simple and Hassle Free</p>
             </section>
         </div>
     )
