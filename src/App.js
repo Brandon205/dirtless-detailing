@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import Home from './components/Home.js';
+import ddLogo from './imgs/dd-logo.png';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Hello
-        </a>
+        <nav>
+          {/* <h1 className>Dirtless Detailing</h1> */}
+          <img src={ddLogo} className="logo" />
+          <a href="#">Home</a>
+        </nav>
       </header>
+      <main>
+        <Home />
+      </main>
+      <footer>
+        <h2>Footer Stuff</h2>
+      </footer>
     </div>
   );
 }
