@@ -1,5 +1,7 @@
 import Home from './components/Home.js';
 import ddLogo from './imgs/dd-logo.png';
+
+import { FaBars } from 'react-icons/fa';
 import './App.css';
 
 function App() {
@@ -9,7 +11,8 @@ function App() {
         <nav>
           {/* <h1 className>Dirtless Detailing</h1> */}
           <img src={ddLogo} className="logo" />
-          <a href="#">Home</a>
+          <FaBars className="menu-bars" />
+          {/* <a href="#">Home</a> */}
         </nav>
       </header>
       <main>

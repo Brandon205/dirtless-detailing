@@ -1,9 +1,26 @@
+:root {
+  --contact-bkg-clr: #252525;
+  --nav-bkg-clr: #2525253f;
+  --boxshadow-clr: rgb(213, 213, 213);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 nav {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #fff;
+  background-color: var(--nav-bkg-clr);
+}
+
+section {
+  width: 75vw;
+  margin: auto
 }
 
 .App {
@@ -11,6 +28,92 @@ nav {
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
+}
+
+.menu-bars {
+  margin-right: .5em;
+  font-size: 22px
+}
+
+.dd-desc {
+  line-height: 2;
+}
+
+.learn-btn {
+  display: inline-block;
+  padding: 12px;
+  background-color: #F70503;
+  border: none;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.7;
+}
+
+.quote-btn {
+  display: inline-block;
+  padding: 12px;
+  background-color: #1D96ED;
+  border: none;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.7;
+}
+
+/** Contact Home Page CSS **/
+.contact-container {
+  background-color: var(--contact-bkg-clr);
+  line-height: 2.5;
+  color: white;
+  width: 90vw;
+  margin:  25px auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 5px var(--boxshadow-clr);
+}
+
+/** Services CSS **/
+.popular-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.popular-services-card {
+  box-shadow: 0 0 10px 5px var(--boxshadow-clr);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px 0
+}
+
+.otherservices-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.service-card {
+  box-shadow: 0 0 10px 5px var(--boxshadow-clr);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.readmore {
+  display: inline-block;
+  padding: 12px;
+  background-color: #F70503;
+  border: none;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.7;
 }
