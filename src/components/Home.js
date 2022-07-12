@@ -1,5 +1,8 @@
 import React from 'react';
+import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
+
+import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 import '../App.css';
 
 export default function Home() {
@@ -142,6 +145,25 @@ export default function Home() {
                     </Link>
                 </div>
             </section>
+
+            <article className="reviews-container">
+                <h3>Read some of our 5 star reviews</h3>
+                <Carousel className="review-carousel" infiniteLoop autoPlay>
+                    <div>
+                        <p className="review">Brenden answered the first phone call gave a quote over the phone, I did not have to bring the car anywhere. He provided a value and was on time and was extremely thorough. Did not attempt to upsell me and increase price, day of the appointment, like another Bonney Lake detailer did. Can't recommend Dirt-Less Detail enough. My wife's Jeep Cherokee looks new!</p>
+                        <p className="reviewer">Darren Beatty</p>
+                    </div>
+                    <div>
+                        <p className="review">Brought in my 12 Escalade and he worked his magic on both inside and outside. Brenden is very good at what he does, the vehicle looks amazing. better than it was when I bought it. Thank you so much for getting me into your schedule. I am Extremely pleased with the outcome of your services.</p>
+                        <p className="reviewer">Rob Briese</p>
+                    </div>
+                    <div>
+                        <p className="review">Bought new/used SUV for my wife and the kids. 2002 Cadillac Escalade it was pretty filthy inside and out. Made an appointment with Dirt-less for an interior deep cleaning. Also a cut and buff on the exterior. He brought back the original Cadillac elegance of the vehicle. I highly recommend him. I wish I could post the before and after pictures. High end quality work for a fair price. 5 stars for his work</p>
+                        <p className="reviewer">Jeff Whitling</p>
+                    </div>
+                </Carousel>
+            </article>
+
             <section className="serviceareas-container">
                 <h2>Servicing most of the Pierce County and King County Area</h2>
                 <p>As part of our simple and hassle free service, we can come to you, all we need is access to your vehicle and we'll get to work.</p>

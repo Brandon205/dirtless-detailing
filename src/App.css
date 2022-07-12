@@ -23,7 +23,7 @@ nav {
 }
 
 section {
-  width: 75vw;
+  width: 80vw;
   margin: auto
 }
 
@@ -131,6 +131,22 @@ section {
   font-weight: bold;
   letter-spacing: 0.7;
   text-decoration: none;
+}
+
+/** Review CSS **/
+.review-carousel {
+  padding: 2em;
+  font-size: 1.25rem;
+  line-height: 1.75;
+}
+
+.review-carousel div {
+  padding: 1em 0;
+}
+
+.reviewer {
+  font-size: 1.25em;
+  font-weight: bold;
 }
 
 /** Footer CSS **/
