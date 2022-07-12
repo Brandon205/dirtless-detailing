@@ -3,6 +3,9 @@
   --nav-bkg-clr: #2525253f;
   --boxshadow-clr: rgb(213, 213, 213);
   --footer-bkg: #060606;
+
+  --learn-more-clr: #fc4c00;
+  --quote-clr: #1D96ED;
 }
 
 *,
@@ -35,7 +38,7 @@ section {
 
 .menu-bars {
   margin-right: .5em;
-  font-size: 22px
+  font-size: 1.5rem
 }
 
 .dd-desc {
@@ -44,11 +47,11 @@ section {
 
 .learn-btn {
   display: inline-block;
-  padding: 12px;
-  background-color: #F70503;
+  padding: 0.75rem;
+  background-color: var(--learn-more-clr);
   border: none;
-  border-radius: 8px;
-  margin: 10px;
+  border-radius: 0.5rem;
+  margin: 0.75rem;
   cursor: pointer;
   color: white;
   font-weight: bold;
@@ -57,11 +60,11 @@ section {
 
 .quote-btn {
   display: inline-block;
-  padding: 12px;
-  background-color: #1D96ED;
+  padding: 0.75rem;
+  background-color: var(--quote-clr);
   border: none;
-  border-radius: 8px;
-  margin: 10px;
+  border-radius: 0.5rem;
+  margin: 0.75rem;
   cursor: pointer;
   color: white;
   font-weight: bold;
@@ -74,10 +77,14 @@ section {
   line-height: 2.5;
   color: white;
   width: 90vw;
-  margin:  25px auto;
-  padding: 20px;
-  border-radius: 15px;
+  margin:  2rem auto;
+  padding: 1.2rem;
+  border-radius: 1rem;
   box-shadow: 0 0 10px 5px var(--boxshadow-clr);
+}
+
+.contact-link {
+  color: white
 }
 
 /** Services CSS **/
@@ -86,11 +93,16 @@ section {
   flex-direction: column;
   flex: 1;
 }
+
 .popular-services-card {
   box-shadow: 0 0 10px 5px var(--boxshadow-clr);
-  border-radius: 15px;
-  padding: 20px;
-  margin: 20px 0
+  border-radius: 1rem;
+  padding: 1em;
+  margin: 1em 0
+}
+
+.popular-service-title {
+  color: var(--quote-clr);
 }
 
 .otherservices-container {
@@ -108,11 +120,11 @@ section {
 
 .readmore {
   display: inline-block;
-  padding: 12px;
-  background-color: #F70503;
+  padding: 1em;
+  background-color: var(--learn-more-clr);
   border: none;
-  border-radius: 8px;
-  margin: 10px;
+  border-radius: 0.5rem;
+  margin: 0.75rem;
   cursor: pointer;
   color: white;
   font-weight: bold;
@@ -133,7 +145,7 @@ hr {
 }
 
 .footer-content-card {
-  margin-left: 10px;
+  margin-left: 1rem;
 }
 
 .footer-text {
@@ -146,5 +158,6 @@ hr {
 
 .socials {
   font-size: 2em;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
+  color: white;
 }
