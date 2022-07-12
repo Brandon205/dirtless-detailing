@@ -48,49 +48,49 @@ function App() {
         <footer>
           <div className="footer-content-card">
             <h3>COMPANY</h3>
-            <Link to="/">
+            <Link to="/" className="footer-link">
               <p className="footer-text">Home</p>
             </Link>
-            <Link to="about">
+            <Link to="about" className="footer-link">
               <p className="footer-text">About Us</p>
             </Link>
           </div>
           <div className="footer-content-card">
             <h3>INTERIOR</h3>
-            <Link to="full-int-ex">
+            <Link to="full-int-ex" className="footer-link">
               <p className="footer-text">Full Interior Cleaning with Extraction</p>
             </Link>
-            <Link to="full-int">
+            <Link to="full-int" className="footer-link">
               <p className="footer-text">Full Interior Cleaning without Extraction</p>
             </Link>
-            <Link to="bio">
+            <Link to="bio" className="footer-link">
               <p className="footer-text">Smoke / Biohazard / Mold Removal</p>
             </Link>
-            <Link to="headliners">
+            <Link to="headliners" className="footer-link">
               <p className="footer-text">Headliners</p>
             </Link>
           </div>
           <div className="footer-content-card">
             <h3>EXTERIOR</h3>
-            <Link to="dl-wash">
+            <Link to="dl-wash" className="footer-link">
               <p className="footer-text">Dirt-less Wash</p>
             </Link>
-            <Link to="premium-dl-wash">
+            <Link to="premium-dl-wash" className="footer-link">
               <p className="footer-text">Premium Dirt-less Wash</p>
             </Link>
-            <Link to="engine-bay">
+            <Link to="engine-bay" className="footer-link">
               <p className="footer-text">Engine Cleaning</p>
             </Link>
-            <Link to="single-paint-correction">
+            <Link to="single-paint-correction" className="footer-link">
               <p className="footer-text">Single Stage Paint Correction</p>
             </Link>
-            <Link to="two-paint-correction">
+            <Link to="two-paint-correction" className="footer-link">
               <p className="footer-text">Two Stage Paint Correction</p>
             </Link>
-            <Link to="glass">
+            <Link to="glass" className="footer-link">
               <p className="footer-text">Glass Polishing</p>
             </Link>
-            <Link to="waterspot">
+            <Link to="waterspot" className="footer-link">
               <p className="footer-text">Waterspot / Overspray Removal</p>
             </Link>
           </div>

@@ -125,7 +125,6 @@ section {
   background-color: var(--learn-more-clr);
   border: none;
   border-radius: 0.5rem;
-  /* margin: 0.75rem; */
   cursor: pointer;
   color: white;
   font-weight: bold;
@@ -179,4 +178,12 @@ hr {
   font-size: 2em;
   margin-bottom: 1rem;
   color: white;
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+.footer-link p:hover {
+  color: gray;
 }
