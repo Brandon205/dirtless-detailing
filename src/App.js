@@ -1,5 +1,6 @@
 import { HashRouter, Link, Route, Routes } from 'react-router-dom';
 import Home from './components/Home.js';
+import About from './components/About.js';
 import ddLogo from './imgs/dd-logo.png';
 
 import { FaBars, FaFacebook } from 'react-icons/fa';
@@ -16,7 +17,8 @@ function App() {
           </nav>
         </header>
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
+          <Route path="about" element={<About />} />
         </Routes>
         <footer>
           <div className="footer-content-card">
@@ -24,7 +26,7 @@ function App() {
             <Link to="/">
               <p className="footer-text">Home</p>
             </Link>
-            <Link to="/about">
+            <Link to="about">
               <p className="footer-text">About Us</p>
             </Link>
             <p className="footer-text">Contact</p>
