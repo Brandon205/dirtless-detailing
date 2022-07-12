@@ -1,5 +1,5 @@
 import { HashRouter, Link, Route, Routes } from 'react-router-dom';
-import ddLogo from './imgs/dd-logo.png';
+import ddLogo from './assets/imgs/dd-logo.png';
 
 import Home from './components/Home.js';
 import About from './components/About.js';

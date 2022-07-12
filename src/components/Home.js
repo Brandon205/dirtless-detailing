@@ -9,7 +9,7 @@ export default function Home() {
     return (
         <div className="App">
             <section>
-                <h2>Your Pierce County Car Detailing Specialists</h2>
+                <h2>Your Bonney Lake Car Detailing Specialists</h2>
                 <h4 className='dd-desc'>Plenty of 5-star reviews from the customers we've served. We will do Interiors, Exteriors, Paint Correction, and much more. We will have your car looking brand new.</h4>
                 <button className="learn-btn">Learn More</button>
                 <button className="quote-btn">Get a Quote</button>
@@ -38,7 +38,7 @@ export default function Home() {
                 </div>
                 <div className="popular-services-card">
                     <h3 className="popular-service-title">Two Stage Paint Correction</h3>
-                    <p>Our best package to get your vehicles paint to pristine condition. Making the </p>
+                    <p>Our best package to get your vehicles paint to pristine condition.</p>
                     <p>We'll start by giving your vehicle an entire wash, then we will use a clay bar, iron decontamination, and tape off the vehicle to get it ready for the paint correction. Lastly, we will protect your car with a ceramic coating to preserve the work we did.</p>
                     <p>This is a time consuming process, but trust us it will remove most if not all of the scratches and swirls from your paint, making your car look better than ever.</p>
                     <Link to="two-paint-correction" className="readmore">
