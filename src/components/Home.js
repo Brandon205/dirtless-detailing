@@ -13,13 +13,13 @@ export default function Home() {
             </section>
             <section className="contact-container">
                 <h3>Contact Us</h3>
-                <a href="tel:2532529758" className="contact-link">(253) 252-9758</a>
+                <a href="tel:2532529758" className="contact-link" target="_blank">(253) 252-9758</a>
 
                 <h3>WORKING HOURS</h3>
                 <p className="hours-p">Monday - Sunday: 8 AM - 8 PM</p>
 
                 <h3>LOCATION</h3>
-                <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link">9305 205th Ave E Bonney Lake Washington</a>
+                <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link" target="_blank">9305 205th Ave E Bonney Lake Washington</a>
             </section>
             <section className="popular-container">
                 <h2>Popular Detailing Services</h2>
