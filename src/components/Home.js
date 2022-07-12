@@ -29,21 +29,27 @@ export default function Home() {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
                     <p>exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur</p>
                     <p>sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <button className="readmore">Read More</button>
+                    <Link to="full-int-ex" className="readmore">
+                        <p>Read More</p>
+                    </Link>
                 </div>
                 <div className="popular-services-card">
                     <h3 className="popular-service-title">Two Stage Paint Correction</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
                     <p>exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur</p>
                     <p>sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <button className="readmore">Read More</button>
+                    <Link to="two-paint-correction" className="readmore">
+                        <p>Read More</p>
+                    </Link>
                 </div>
                 <div className="popular-services-card">
                     <h3 className="popular-service-title">Premium Dirt-less Wash</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
                     <p>exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur</p>
                     <p>sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <button className="readmore">Read More</button>
+                    <Link to="premium-dl-wash" className="readmore">
+                        <p>Read More</p>
+                    </Link>
                 </div>
 
             </section>
@@ -57,61 +63,83 @@ export default function Home() {
                 <div className="service-card">
                     <h3>Full Interior without Extraction</h3>
                     <p className="service-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <button className="readmore">Read More</button>
+                    <Link to="full-int" className="readmore">
+                        <p>Read More</p>
+                    </Link>
                 </div>
                 <div className="service-card">
                     <h3 className="popular-service-title">Full Interior with Extraction</h3>
                     <p className="service-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <button className="readmore">Read More</button>
+                    <Link to="full-int-ex" className="readmore">
+                        <p>Read More</p>
+                    </Link>
                 </div>
                 <div className="service-card">
                     <h3>Smoker Car/Bio/Mold or other Extreme Condition Cleaning</h3>
                     <p className="service-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <button className="readmore">Read More</button>
+                    <Link to="bio" className="readmore">
+                        <p>Read More</p>
+                    </Link>
                 </div>
                 <div className="service-card">
                     <h3>Headliners</h3>
                     <p className="service-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <button className="readmore">Read More</button>
+                    <Link to="headliners" className="readmore">
+                        <p>Read More</p>
+                    </Link>
                 </div>
 
                 <h3>EXTERIOR CORRECTION</h3>
                 <div className="service-card">
                     <h3>Single Stage Paint Correction</h3>
                     <p className="service-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <button className="readmore">Read More</button>
+                    <Link to="single-paint-correction" className="readmore">
+                        <p>Read More</p>
+                    </Link>
                 </div>
                 <div className="service-card">
                     <h3 className="popular-service-title">Two Stage Paint Correction</h3>
                     <p className="service-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <button className="readmore">Read More</button>
+                    <Link to="two-paint-correction" className="readmore">
+                        <p>Read More</p>
+                    </Link>
                 </div>
                 <div className="service-card">
                     <h3>Glass Polishing</h3>
                     <p className="service-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <button className="readmore">Read More</button>
+                    <Link to="glass" className="readmore">
+                        <p>Read More</p>
+                    </Link>
                 </div>
                 <div className="service-card">
                     <h3>Waterspot and Overspray Removal</h3>
                     <p className="service-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <button className="readmore">Read More</button>
+                    <Link to="waterspot" className="readmore">
+                        <p>Read More</p>
+                    </Link>
                 </div>
 
                 <h3>EXTERIOR CLEANING</h3>
                 <div className="service-card">
                     <h3>Dirt-less Wash</h3>
                     <p className="service-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <button className="readmore">Read More</button>
+                    <Link to="dl-wash" className="readmore">
+                        <p>Read More</p>
+                    </Link>
                 </div>
                 <div className="service-card">
                     <h3 className="popular-service-title">Premium Dirt-less Wash</h3>
                     <p className="service-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <button className="readmore">Read More</button>
+                    <Link to="premium-dl-wash" className="readmore">
+                        <p>Read More</p>
+                    </Link>
                 </div>
                 <div className="service-card">
                     <h3>Engine Cleaning</h3>
                     <p className="service-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <button className="readmore">Read More</button>
+                    <Link to="engine-bay" className="readmore">
+                        <p>Read More</p>
+                    </Link>
                 </div>
             </section>
             <section className="serviceareas-container">

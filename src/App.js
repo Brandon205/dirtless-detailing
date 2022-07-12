@@ -1,7 +1,19 @@
 import { HashRouter, Link, Route, Routes } from 'react-router-dom';
+import ddLogo from './imgs/dd-logo.png';
+
 import Home from './components/Home.js';
 import About from './components/About.js';
-import ddLogo from './imgs/dd-logo.png';
+import FullIntEx from './components/FullIntEx.js';
+import FullInt from './components/FullInt.js';
+import Bio from './components/Bio.js';
+import Headliners from './components/Headliners.js';
+import DLWash from './components/DLWash.js';
+import PDLWash from './components/PDLWash.js';
+import Engine from './components/Engine.js';
+import SinglePC from './components/SinglePC.js';
+import TwoPC from './components/TwoPC.js';
+import Glass from './components/Glass.js';
+import Waterspot from './components/Waterspot.js';
 
 import { FaBars, FaFacebook } from 'react-icons/fa';
 import './App.css';
@@ -12,13 +24,26 @@ function App() {
       <div className="App">
         <header className="App-header">
           <nav>
-            <img src={ddLogo} className="logo" />
+            <Link to="/">
+              <img src={ddLogo} className="logo" />
+            </Link>
             <FaBars className="menu-bars" />
           </nav>
         </header>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route path="about" element={<About />} />
+          <Route path="full-int-ex" element={<FullIntEx />} />
+          <Route exact path="full-int" element={<FullInt />} />
+          <Route path="bio" element={<Bio />} />
+          <Route path="headliners" element={<Headliners />} />
+          <Route path="dl-wash" element={<DLWash />} />
+          <Route path="premium-dl-wash" element={<PDLWash />} />
+          <Route path="engine-bay" element={<Engine />} />
+          <Route path="single-paint-correction" element={<SinglePC />} />
+          <Route path="two-paint-correction" element={<TwoPC />} />
+          <Route path="glass" element={<Glass />} />
+          <Route path="waterspot" element={<Waterspot />} />
         </Routes>
         <footer>
           <div className="footer-content-card">
@@ -29,26 +54,47 @@ function App() {
             <Link to="about">
               <p className="footer-text">About Us</p>
             </Link>
-            <p className="footer-text">Contact</p>
           </div>
           <div className="footer-content-card">
             <h3>INTERIOR</h3>
-            <p className="footer-text">Full Interior Cleaning with Extraction</p>
-            <p className="footer-text">Full Interior Cleaning without Extraction</p>
-            <p className="footer-text">Smoke / Biohazard / Mold Removal</p>
-            <p className="footer-text">Headliners</p>
+            <Link to="full-int-ex">
+              <p className="footer-text">Full Interior Cleaning with Extraction</p>
+            </Link>
+            <Link to="full-int">
+              <p className="footer-text">Full Interior Cleaning without Extraction</p>
+            </Link>
+            <Link to="bio">
+              <p className="footer-text">Smoke / Biohazard / Mold Removal</p>
+            </Link>
+            <Link to="headliners">
+              <p className="footer-text">Headliners</p>
+            </Link>
           </div>
           <div className="footer-content-card">
             <h3>EXTERIOR</h3>
-            <p className="footer-text">Dirt-less Wash</p>
-            <p className="footer-text">Premium Dirt-less Wash</p>
-            <p className="footer-text">Engine Cleaning</p>
-            <p className="footer-text">Single Stage Paint Correction</p>
-            <p className="footer-text">Two Stage Paint Correction</p>
-            <p className="footer-text">Glass Polishing</p>
-            <p className="footer-text">Waterspot / Overspray Removal</p>
+            <Link to="dl-wash">
+              <p className="footer-text">Dirt-less Wash</p>
+            </Link>
+            <Link to="premium-dl-wash">
+              <p className="footer-text">Premium Dirt-less Wash</p>
+            </Link>
+            <Link to="engine-bay">
+              <p className="footer-text">Engine Cleaning</p>
+            </Link>
+            <Link to="single-paint-correction">
+              <p className="footer-text">Single Stage Paint Correction</p>
+            </Link>
+            <Link to="two-paint-correction">
+              <p className="footer-text">Two Stage Paint Correction</p>
+            </Link>
+            <Link to="glass">
+              <p className="footer-text">Glass Polishing</p>
+            </Link>
+            <Link to="waterspot">
+              <p className="footer-text">Waterspot / Overspray Removal</p>
+            </Link>
           </div>
-          <div className="footer-content-card">
+          <div className="footer-content-card" id="contact">
             <h3>CONTACT US</h3>
             <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link" target="_blank">9305 205th Ave E Bonney Lake Washington</a><br />
             <a href="tel:2532529758" className="contact-link">(253) 252-9758</a>
