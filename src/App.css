@@ -292,3 +292,13 @@ hr {
 .footer-link p:hover {
   color: gray;
 }
+
+/** ABOUT US CSS **/
+
+.about-header {
+  color: white;
+}
+
+.about-container {
+  color: white
+}
