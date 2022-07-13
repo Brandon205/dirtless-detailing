@@ -36,8 +36,8 @@ export default function Home() {
                 <h2>Popular Detailing Services</h2>
 
                 <div className="popular-services-card">
-                    <h3 className="popular-service-title">Full Interior Cleaning with Extraction</h3>
-                    <p className="price">Starting at: <p>$200</p></p>
+                    <h2 className="popular-service-title">Full Interior Cleaning with Extraction</h2>
+                    <p className="price">Starting at: <span>$200</span></p>
                     <img src={interior} alt="car interior before and after" className="popular-img" />
 
                     <div className="popular-desc">
@@ -50,8 +50,8 @@ export default function Home() {
                     </Link>
                 </div>
                 <div className="popular-services-card">
-                    <h3 className="popular-service-title">Two Stage Paint Correction</h3>
-                    <p className="price">Starting at: <p>$450</p></p>
+                    <h2 className="popular-service-title">Two Stage Paint Correction</h2>
+                    <p className="price">Starting at: <span>$450</span></p>
                     <img src={paint} alt="paint correction before and after" className="popular-img" />
 
                     <div className="popular-desc">
@@ -64,8 +64,8 @@ export default function Home() {
                     </Link>
                 </div>
                 <div className="popular-services-card">
-                    <h3 className="popular-service-title">Premium Dirt-less Wash</h3>
-                    <p className="price">Starting at: <p>$150</p></p>
+                    <h2 className="popular-service-title">Premium Dirt-less Wash</h2>
+                    <p className="price">Starting at: <span>$150</span></p>
                     <img src={dlWash} alt="car exterior picture" className="popular-img" />
                     
                     <div className="popular-desc">
@@ -83,12 +83,12 @@ export default function Home() {
             <button className="quote-btn">Get a Quote</button>
 
             <section className="otherservices-container">
-                <h2>Our Other Services</h2>
+                <h1>Our Other Services</h1>
 
                 <h3>INTERIOR CLEANING SERVICES</h3>
                 <div className="service-card">
                     <h2>Full Interior without Extraction</h2>
-                    <p className="secondary-text">Starting at: <p>$200</p></p>
+                    <p className="secondary-text">Starting at: <span>$200</span></p>
                     <p className="service-desc">A thorough cleaning of your cars interior, we'll get all of the cracks and crevices of your vehicle cleaned out with this one.</p>
                     <Link to="full-int" className="readmore">
                         <p>Learn More</p>
@@ -96,7 +96,7 @@ export default function Home() {
                 </div>
                 <div className="service-card">
                     <h2 className="popular-service-title">Full Interior with Extraction</h2>
-                    <p className="secondary-text">Starting at: <p>$250</p></p>
+                    <p className="secondary-text">Starting at: <span>$250</span></p>
                     <p className="service-desc">Our best interior cleaning package that will get your vehicle looking like new. Comes with extraction, which might be needed to get out some of those tougher stains in your vehicle.</p>
                     <Link to="full-int-ex" className="readmore">
                         <p>Learn More</p>
@@ -104,7 +104,7 @@ export default function Home() {
                 </div>
                 <div className="service-card">
                     <h2>Smoker Car/Bio/Mold/etc Cleaning</h2>
-                    <p className="secondary-text">Starting at: <p>$300</p></p>
+                    <p className="secondary-text">Starting at: <span>$300</span></p>
                     <p className="service-desc">If there are bad smells like mold or smoke in your car this might be the package for you. We'll use cleaning chemicals suited for the job to get rid of those odors for good.</p>
                     <Link to="bio" className="readmore">
                         <p>Learn More</p>
@@ -112,7 +112,7 @@ export default function Home() {
                 </div>
                 <div className="service-card">
                     <h2>Headliners</h2>
-                    <p className="secondary-text">Starting at: <p>$40</p></p>
+                    <p className="secondary-text">Starting at: <span>$40</span></p>
                     <p className="service-desc">To clean your headliners we will determine the best plan of attack based on the materials in order to leave your headliners clean without sagging or eventual problems.</p>
                     <Link to="headliners" className="readmore">
                         <p>Learn More</p>
@@ -122,7 +122,7 @@ export default function Home() {
                 <h3>EXTERIOR CORRECTION SERVICES</h3>
                 <div className="service-card">
                     <h2>Single Stage Paint Correction</h2>
-                    <p className="secondary-text">Starting at: <p>$300</p></p>
+                    <p className="secondary-text">Starting at: <span>$300</span></p>
                     <p className="service-desc">Our single stage paint correction can fix about 80% of minor damage and scratches and will leave your vehicle looking shinier than ever.</p>
                     <Link to="single-paint-correction" className="readmore">
                         <p>Learn More</p>
@@ -130,7 +130,7 @@ export default function Home() {
                 </div>
                 <div className="service-card">
                     <h2 className="popular-service-title">Two Stage Paint Correction</h2>
-                    <p className="secondary-text">Starting at: <p>$450</p></p>
+                    <p className="secondary-text">Starting at: <span>$450</span></p>
                     <p className="service-desc">A more in depth process to remove and smooth out any exterior paint damage on your vehicle. We will do as much as we can to get every imperfection out of your cars paint job.</p>
                     <Link to="two-paint-correction" className="readmore">
                         <p>Learn More</p>
@@ -138,7 +138,7 @@ export default function Home() {
                 </div>
                 <div className="service-card">
                     <h2>Glass Polishing</h2>
-                    <p className="secondary-text">Starting at: <p>$70/hr</p></p>
+                    <p className="secondary-text">Starting at: <span>$70</span></p>
                     <p className="service-desc">Scratches or etching on the glass of your car? We'll get rid of those with this package.</p>
                     <Link to="glass" className="readmore">
                         <p>Learn More</p>
@@ -146,7 +146,7 @@ export default function Home() {
                 </div>
                 <div className="service-card">
                     <h2>Waterspot and Overspray Removal</h2>
-                    <p className="secondary-text">Starting at: <p>$60/hr</p></p>
+                    <p className="secondary-text">Starting at: <span>$60</span></p>
                     <p className="service-desc">If there are any waterspots or overspray on your vehicle that are bugging you, let us know and we can get rid of them.</p>
                     <Link to="waterspot" className="readmore">
                         <p>Learn More</p>
@@ -156,7 +156,7 @@ export default function Home() {
                 <h3>EXTERIOR CLEANING SERVICES</h3>
                 <div className="service-card">
                     <h2>Dirt-less Wash</h2>
-                    <p className="secondary-text">Starting at: <p>$75</p></p>
+                    <p className="secondary-text">Starting at: <span>$75</span></p>
                     <p className="service-desc">Our Dirt-less Wash will thoroughly clean the exterior of your vehicle with our tried and true cleaning process.</p>
                     <Link to="dl-wash" className="readmore">
                         <p>Learn More</p>
@@ -164,7 +164,7 @@ export default function Home() {
                 </div>
                 <div className="service-card">
                     <h2 className="popular-service-title">Premium Dirt-less Wash</h2>
-                    <p className="secondary-text">Starting at: <p>$150</p></p>
+                    <p className="secondary-text">Starting at: <span>$150</span></p>
                     <p className="service-desc">The Premium Dirt-less Wash will deep clean the exterior, but will also keep your vehicle looking clean for months to come with our multiple step waxing process</p>
                     <Link to="premium-dl-wash" className="readmore">
                         <p>Learn More</p>
@@ -172,7 +172,7 @@ export default function Home() {
                 </div>
                 <div className="service-card">
                     <h2>Engine Cleaning</h2>
-                    <p className="secondary-text">Starting at: <p>$80</p></p>
+                    <p className="secondary-text">Starting at: <span>$80</span></p>
                     <p className="service-desc">The engine bay is usually overlooked and tricky to clean, but we can take care of it for you and leave yours looking like new.</p>
                     <Link to="engine-bay" className="readmore">
                         <p>Learn More</p>
@@ -185,15 +185,15 @@ export default function Home() {
                 <Carousel className="review-carousel" infiniteLoop autoPlay showThumbs={false}>
                     <div>
                         <p className="review">Brenden answered the first phone call gave a quote over the phone, I did not have to bring the car anywhere. He provided a value and was on time and was extremely thorough. Did not attempt to upsell me and increase price, day of the appointment, like another Bonney Lake detailer did. Can't recommend Dirt-Less Detail enough. My wife's Jeep Cherokee looks new!</p>
-                        <p className="reviewer">Darren Beatty</p>
+                        <p className="reviewer">Darren B.</p>
                     </div>
                     <div>
                         <p className="review">Brought in my 12 Escalade and he worked his magic on both inside and outside. Brenden is very good at what he does, the vehicle looks amazing. better than it was when I bought it. Thank you so much for getting me into your schedule. I am Extremely pleased with the outcome of your services.</p>
-                        <p className="reviewer">Rob Briese</p>
+                        <p className="reviewer">Rob B.</p>
                     </div>
                     <div>
                         <p className="review">Bought new/used SUV for my wife and the kids. 2002 Cadillac Escalade it was pretty filthy inside and out. Made an appointment with Dirt-less for an interior deep cleaning. Also a cut and buff on the exterior. He brought back the original Cadillac elegance of the vehicle. I highly recommend him. I wish I could post the before and after pictures. High end quality work for a fair price. 5 stars for his work</p>
-                        <p className="reviewer">Jeff Whitling</p>
+                        <p className="reviewer">Jeff W.</p>
                     </div>
                 </Carousel>
             </article>
