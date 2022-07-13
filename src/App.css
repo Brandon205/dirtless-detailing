@@ -1,11 +1,16 @@
 :root {
+  /** Backgrounds and other colors **/
   --contact-bkg-clr: #252525;
   --nav-bkg-clr: #2525253f;
   --boxshadow-clr: rgb(213, 213, 213);
   --footer-bkg: #060606;
 
+  /** Button colors **/
   --learn-more-clr: #fc4c00;
   --quote-clr: #1D96ED;
+
+  /** Text and smaller colors **/
+  --supporting-text: #6B6B6B;
 }
 
 *,
@@ -58,6 +63,10 @@ section {
   letter-spacing: 0.7;
 }
 
+.learn-btn:hover {
+  background-color: #d54102;
+}
+
 .quote-btn {
   display: inline-block;
   padding: 0.75rem;
@@ -104,7 +113,6 @@ header h1 {
   margin:  2rem auto;
   padding: 1.2rem;
   border-radius: 1rem;
-  /* box-shadow: 0 0 10px 5px var(--boxshadow-clr); */
 }
 
 .contact-link {
@@ -122,12 +130,36 @@ header h1 {
 .popular-services-card {
   box-shadow: 0 0 10px 5px var(--boxshadow-clr);
   border-radius: 1rem;
-  padding: 1em;
   margin: 1em 0
+}
+
+.popular-services-card a {
+  margin-bottom: 1em;
+}
+
+.popular-desc {
+  padding: 0 1em;
 }
 
 .popular-service-title {
   color: var(--quote-clr);
+  margin-bottom: 0;
+}
+
+.popular-img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.price {
+  color: var(--supporting-text);
+  display: inline-block;
+  margin-top: 0;
+}
+
+.price p {
+  display: inline-block;
+  font-weight: 300;
 }
 
 .otherservices-container {
@@ -145,15 +177,21 @@ header h1 {
 
 .readmore {
   display: inline-block;
-  padding: 0 0.75em;
+  padding: 0.75em 20%;
   background-color: var(--learn-more-clr);
-  border: none;
   border-radius: 0.5rem;
-  cursor: pointer;
+  box-shadow: 0 0 10px 5px var(--boxshadow-clr);
   color: white;
   font-weight: bold;
-  letter-spacing: 0.7;
   text-decoration: none;
+}
+
+.readmore:hover {
+  background-color: #d54102;
+}
+
+.readmore p {
+  margin: 0;
 }
 
 /** Home Page Review CSS **/

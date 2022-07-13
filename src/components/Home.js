@@ -1,12 +1,14 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
-import { FaEngine, FaTire, FaCar, FaVacuum, FaVacuumRobot, FaCarWash, FaPumpSoap, FaSparkles, FaSprayCan, FaScrubber } from 'react-icons/fa';
 
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 import '../App.css';
 
 import cover from '../assets/imgs/cover.jpg';
+import interior from '../assets/imgs/driverseatBA.jpg';
+import dlWash from '../assets/imgs/dlwashA.jpg';
+import paint from '../assets/imgs/paintcorrectionBA.jpg';
 
 export default function Home() {
     return (
@@ -35,29 +37,44 @@ export default function Home() {
 
                 <div className="popular-services-card">
                     <h3 className="popular-service-title">Full Interior Cleaning with Extraction</h3>
-                    <p>Our best selling interior cleaning solution, because it can and will clean years of worth of dirt and other buildup from your cars interior. The difference will be noticeable!</p>
-                    <p>We will use our array of tools to help us get the stickiest of things out of the carpet, stains off of the vinyl, or dress up your leather seats. This package comes with Hot Water Extraction which we will go above and beyond with to clean your vehicle.</p>
-                    <p>We'll work on all sizes of vehicles, and we've been able to get plenty of great results from even the worst of interiors!</p>
+                    <p className="price">Starting at: <p>$200</p></p>
+                    <img src={interior} alt="car interior before and after" className="popular-img" />
+
+                    <div className="popular-desc">
+                        <p>Our best selling interior cleaning solution, because it can and will clean years of worth of dirt and other buildup from your cars interior. The difference will be noticeable!</p>
+                        <p>We will use our array of tools to help us get the stickiest of things out of the carpet, stains off of the vinyl, or dress up your leather seats. This package comes with Hot Water Extraction which we will go above and beyond with to clean your vehicle.</p>
+                        <p>We'll work on all sizes of vehicles, and we've been able to get plenty of great results from even the worst of interiors!</p>
+                    </div>
                     <Link to="full-int-ex" className="readmore">
-                        <p>Read More</p>
+                        <p>Learn More</p>
                     </Link>
                 </div>
                 <div className="popular-services-card">
                     <h3 className="popular-service-title">Two Stage Paint Correction</h3>
-                    <p>Our best package to get your vehicles paint to pristine condition.</p>
-                    <p>We'll start by giving your vehicle an entire wash, then we will use a clay bar, iron decontamination, and tape off the vehicle to get it ready for the paint correction. Lastly, we will protect your car with a ceramic coating to preserve the work we did.</p>
-                    <p>This is a time consuming process, but trust us it will remove most if not all of the scratches and swirls from your paint, making your car look better than ever.</p>
+                    <p className="price">Starting at: <p>$450</p></p>
+                    <img src={paint} alt="paint correction before and after" className="popular-img" />
+
+                    <div className="popular-desc">
+                        <p>Our best package to get your vehicles paint to pristine condition.</p>
+                        <p>We'll start by giving your vehicle an entire wash, then we will use a clay bar, iron decontamination, and tape off the vehicle to get it ready for the paint correction. Lastly, we will protect your car with a ceramic coating to preserve the work we did.</p>
+                        <p>This is a time consuming process, but trust us it will remove most if not all of the scratches and swirls from your paint, making your car look better than ever.</p>
+                    </div>
                     <Link to="two-paint-correction" className="readmore">
-                        <p>Read More</p>
+                        <p>Learn More</p>
                     </Link>
                 </div>
                 <div className="popular-services-card">
                     <h3 className="popular-service-title">Premium Dirt-less Wash</h3>
-                    <p>The best Exterior wash package you could choose! Complete with a ceramic spray wax to protect your car from the outside world.</p>
-                    <p>We'll wash everything from the gas door to the wheel wells to leave no dirt behind.</p>
-                    <p>This package comes with our 3 step process when waxing your car to make sure the wax applies properly and will not only last longer, but also protect your vehicle better.</p>
+                    <p className="price">Starting at: <p>$150</p></p>
+                    <img src={dlWash} alt="car exterior picture" className="popular-img" />
+                    
+                    <div className="popular-desc">
+                        <p>The best Exterior wash package you could choose! Complete with a ceramic spray wax to protect your car from the outside world.</p>
+                        <p>We'll wash everything from the gas door to the wheel wells to leave no dirt behind.</p>
+                        <p>This package comes with our 3 step process when waxing your car to make sure the wax applies properly and will not only last longer, but also protect your vehicle better.</p>
+                    </div>
                     <Link to="premium-dl-wash" className="readmore">
-                        <p>Read More</p>
+                        <p>Learn More</p>
                     </Link>
                 </div>
 
@@ -73,28 +90,28 @@ export default function Home() {
                     <h3>Full Interior without Extraction</h3>
                     <p className="service-desc">A thorough cleaning of your cars interior, we'll get all of the cracks and crevices of your vehicle cleaned out with this one.</p>
                     <Link to="full-int" className="readmore">
-                        <p>Read More</p>
+                        <p>Learn More</p>
                     </Link>
                 </div>
                 <div className="service-card">
                     <h3 className="popular-service-title">Full Interior with Extraction</h3>
                     <p className="service-desc">Our best interior cleaning package that will get your vehicle looking like new. Comes with extraction, which might be needed to get out some of those tougher stains in your vehicle.</p>
                     <Link to="full-int-ex" className="readmore">
-                        <p>Read More</p>
+                        <p>Learn More</p>
                     </Link>
                 </div>
                 <div className="service-card">
                     <h3>Smoker Car/Bio/Mold or other Extreme Condition Cleaning</h3>
                     <p className="service-desc">If there are bad smells like mold or smoke in your car this might be the package for you. We'll use cleaning chemicals suited for the job to get rid of those odors for good.</p>
                     <Link to="bio" className="readmore">
-                        <p>Read More</p>
+                        <p>Learn More</p>
                     </Link>
                 </div>
                 <div className="service-card">
                     <h3>Headliners</h3>
                     <p className="service-desc">To clean your headliners we will determine the best plan of attack based on the materials in order to leave your headliners clean without sagging or eventual problems.</p>
                     <Link to="headliners" className="readmore">
-                        <p>Read More</p>
+                        <p>Learn More</p>
                     </Link>
                 </div>
 
@@ -103,28 +120,28 @@ export default function Home() {
                     <h3>Single Stage Paint Correction</h3>
                     <p className="service-desc">Our single stage paint correction can fix about 80% of minor damage and scratches and will leave your vehicle looking shinier than ever.</p>
                     <Link to="single-paint-correction" className="readmore">
-                        <p>Read More</p>
+                        <p>Learn More</p>
                     </Link>
                 </div>
                 <div className="service-card">
                     <h3 className="popular-service-title">Two Stage Paint Correction</h3>
                     <p className="service-desc">A more in depth process to remove and smooth out any exterior paint damage on your vehicle. We will do as much as we can to get every imperfection out of your cars paint job.</p>
                     <Link to="two-paint-correction" className="readmore">
-                        <p>Read More</p>
+                        <p>Learn More</p>
                     </Link>
                 </div>
                 <div className="service-card">
                     <h3>Glass Polishing</h3>
                     <p className="service-desc">Scratches or etching on the glass of your car? We'll get rid of those with this package.</p>
                     <Link to="glass" className="readmore">
-                        <p>Read More</p>
+                        <p>Learn More</p>
                     </Link>
                 </div>
                 <div className="service-card">
                     <h3>Waterspot and Overspray Removal</h3>
                     <p className="service-desc">If there are any waterspots or overspray on your vehicle that are bugging you, let us know and we can get rid of them.</p>
                     <Link to="waterspot" className="readmore">
-                        <p>Read More</p>
+                        <p>Learn More</p>
                     </Link>
                 </div>
 
@@ -133,21 +150,21 @@ export default function Home() {
                     <h3>Dirt-less Wash</h3>
                     <p className="service-desc">Our Dirt-less Wash will thoroughly clean the exterior of your vehicle with our tried and true cleaning process.</p>
                     <Link to="dl-wash" className="readmore">
-                        <p>Read More</p>
+                        <p>Learn More</p>
                     </Link>
                 </div>
                 <div className="service-card">
                     <h3 className="popular-service-title">Premium Dirt-less Wash</h3>
                     <p className="service-desc">The Premium Dirt-less Wash will deep clean the exterior, but will also keep your vehicle looking clean for months to come with our multiple step waxing process</p>
                     <Link to="premium-dl-wash" className="readmore">
-                        <p>Read More</p>
+                        <p>Learn More</p>
                     </Link>
                 </div>
                 <div className="service-card">
                     <h3>Engine Cleaning</h3>
                     <p className="service-desc">The engine bay is usually overlooked and tricky to clean, but we can take care of it for you and leave yours looking like new.</p>
                     <Link to="engine-bay" className="readmore">
-                        <p>Read More</p>
+                        <p>Learn More</p>
                     </Link>
                 </div>
             </section>
