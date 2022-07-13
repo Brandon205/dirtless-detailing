@@ -71,7 +71,31 @@ section {
   letter-spacing: 0.7;
 }
 
-/** Contact Home Page CSS **/
+/** Home Page Header CSS **/
+header h1 {
+  margin-top: 0;
+  margin-bottom: 4em;
+  padding-top: 2em;
+}
+
+.home-header {
+  color: white
+}
+
+.cover {
+  filter: brightness(65%);
+  position: absolute;
+  height: 75%;
+  width: 100%;
+  z-index: -5;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+
+/** Home Page Contact CSS **/
 .contact-container {
   background-color: var(--contact-bkg-clr);
   line-height: 2.5;
@@ -80,7 +104,7 @@ section {
   margin:  2rem auto;
   padding: 1.2rem;
   border-radius: 1rem;
-  box-shadow: 0 0 10px 5px var(--boxshadow-clr);
+  /* box-shadow: 0 0 10px 5px var(--boxshadow-clr); */
 }
 
 .contact-link {
@@ -88,7 +112,7 @@ section {
   margin: 0.25em;
 }
 
-/** Services CSS **/
+/** Home Page Services CSS **/
 .popular-container {
   display: flex;
   flex-direction: column;
@@ -132,7 +156,7 @@ section {
   text-decoration: none;
 }
 
-/** Review CSS **/
+/** Home Page Review CSS **/
 .review-carousel {
   padding: 2em;
   font-size: 1.25rem;

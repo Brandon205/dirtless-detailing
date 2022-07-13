@@ -5,15 +5,20 @@ import { Link } from 'react-router-dom';
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 import '../App.css';
 
+import cover from '../assets/imgs/cover.jpg';
+
 export default function Home() {
     return (
         <div className="App">
-            <section>
-                <h2>Your Bonney Lake Car Detailing Specialists</h2>
-                <h4 className='dd-desc'>Plenty of 5-star reviews from the customers we've served. We will do Interiors, Exteriors, Paint Correction, and much more. We will have your car looking brand new.</h4>
-                <button className="learn-btn">Learn More</button>
-                <button className="quote-btn">Get a Quote</button>
-            </section>
+            <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}></div>
+            <header className="home-header">
+                <div>
+                    <h1>Your Bonney Lake Car Detailing Specialists</h1>
+                    <h4 className='dd-desc'>Plenty of 5-star reviews from the customers we've served. We will do Interiors, Exteriors, Paint Correction, and much more. We will have your car looking brand new.</h4>
+                    <button className="learn-btn">Learn More</button>
+                    <button className="quote-btn">Get a Quote</button>
+                </div>
+            </header>
             <section className="contact-container">
                 <h3>Contact Us</h3>
                 <a href="tel:2532529758" className="contact-link" target="_blank">(253) 252-9758</a>
@@ -147,8 +152,8 @@ export default function Home() {
             </section>
 
             <article className="reviews-container">
-                <h3>Read some of our 5 star reviews</h3>
-                <Carousel className="review-carousel" infiniteLoop autoPlay>
+                <h2>Read through some of our 5 star reviews</h2>
+                <Carousel className="review-carousel" infiniteLoop autoPlay showThumbs={false}>
                     <div>
                         <p className="review">Brenden answered the first phone call gave a quote over the phone, I did not have to bring the car anywhere. He provided a value and was on time and was extremely thorough. Did not attempt to upsell me and increase price, day of the appointment, like another Bonney Lake detailer did. Can't recommend Dirt-Less Detail enough. My wife's Jeep Cherokee looks new!</p>
                         <p className="reviewer">Darren Beatty</p>
