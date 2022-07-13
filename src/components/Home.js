@@ -1,6 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
+import { FaEngine, FaTire, FaCar, FaVacuum, FaVacuumRobot, FaCarWash, FaPumpSoap, FaSparkles, FaSprayCan, FaScrubber } from 'react-icons/fa';
 
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 import '../App.css';
