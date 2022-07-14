@@ -302,3 +302,36 @@ hr {
 .about-container {
   color: white
 }
+
+/** SIDE PAGE CSS **/
+.servicepage-heading {
+  margin: 0 auto 75vh auto;
+}
+
+.content-container {
+  width: 100%;
+  
+}
+
+.list {
+  list-style: none;
+  counter-reset: steps;
+}
+
+.item {
+  counter-increment: steps;
+}
+
+.item p {
+  display: inline;
+}
+
+.item:before {
+  content: "Step " counter(steps) ".";
+  margin-right: 0.5rem;
+  color: #ff6f00;
+}
+
+.main-content-container {
+  text-align: center;
+}
