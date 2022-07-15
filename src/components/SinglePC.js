@@ -11,7 +11,7 @@ const steps = [
   "Tape off trim and sensitive areas (Some detailers skip this step).",
   "Complete Single Stage paint correction using Griots products removing 65-80% of scratches and swirls.",
   "Protect paint with ceramic spray or coating.",
-  "Clean door jams.",
+  "Clean door jambs.",
   "Dress all plastics, wheel wells, tires."
 ]
 

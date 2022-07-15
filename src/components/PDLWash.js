@@ -9,7 +9,7 @@ const steps = [
   "Iron Decontamination to make sure everything is off of the paint, this improves wax adhesion as well.",
   "Dry the whole vehicle with Supple towels and Air blowers.",
   "Apply Griots 3 in 1 Ceramic Spray Wax (Best in the Industy, trust us).",
-  "Clean Door Jams.",
+  "Clean Door Jambs.",
   "Dress all plastics, wheel wells, tires."
 ]
 

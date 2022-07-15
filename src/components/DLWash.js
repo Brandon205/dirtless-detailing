@@ -8,7 +8,7 @@ const steps = [
   "Dry the whole vehicle with supple towels and air blowers.",
   "Apply Spray Wax.",
   "Dress tires, wheel wells, plastics.",
-  "Clean door jams."
+  "Clean door jambs."
 ]
 
 export default function DLWash() {
