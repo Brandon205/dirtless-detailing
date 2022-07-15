@@ -1,6 +1,6 @@
 import React from 'react';
 
-import cover from '../assets/imgs/fullIntExCover.jpg';
+import cover from '../assets/imgs/PCA.jpg';
 
 const steps = [
   "Thorough strip wash top to bottom using 2 bucket method or foam wash, including gas door.",
