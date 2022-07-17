@@ -23,7 +23,7 @@ export default function Home() {
                 </div>
             </header>
             <section className="contact-container">
-                <h3>Contact Us</h3>
+                <h3>CONTACT US</h3>
                 <a href="tel:2532529758" className="contact-link" target="_blank">(253) 252-9758</a>
 
                 <h3>WORKING HOURS</h3>
@@ -64,7 +64,7 @@ export default function Home() {
                     </Link>
                 </div>
                 <div className="popular-services-card">
-                    <h2 className="popular-service-title">Premium Dirt-less Wash</h2>
+                    <h2 className="popular-service-title">Premium Dirt-Less Wash</h2>
                     <p className="price">Starting at: <span>$150</span></p>
                     <img src={dlWash} alt="car exterior picture" className="popular-img" />
                     
@@ -83,9 +83,9 @@ export default function Home() {
             <button className="quote-btn">Get a Quote</button>
 
             <section className="otherservices-container">
-                <h1>Our Other Services</h1>
+                <h1>All Services</h1>
 
-                <h3>INTERIOR CLEANING SERVICES</h3>
+                <h3 className="service-heading">INTERIOR CLEANING SERVICES</h3>
                 <div className="service-card">
                     <h2>Full Interior without Extraction</h2>
                     <p className="secondary-text">Starting at: <span>$200</span></p>
@@ -119,7 +119,7 @@ export default function Home() {
                     </Link>
                 </div>
 
-                <h3>EXTERIOR CORRECTION SERVICES</h3>
+                <h3 className="service-heading">EXTERIOR CORRECTION SERVICES</h3>
                 <div className="service-card">
                     <h2>Single Stage Paint Correction</h2>
                     <p className="secondary-text">Starting at: <span>$300</span></p>
@@ -153,19 +153,19 @@ export default function Home() {
                     </Link>
                 </div>
 
-                <h3>EXTERIOR CLEANING SERVICES</h3>
+                <h3 className="service-heading">EXTERIOR CLEANING SERVICES</h3>
                 <div className="service-card">
-                    <h2>Dirt-less Wash</h2>
+                    <h2>Dirt-Less Wash</h2>
                     <p className="secondary-text">Starting at: <span>$75</span></p>
-                    <p className="service-desc">Our Dirt-less Wash will thoroughly clean the exterior of your vehicle with our tried and true cleaning process.</p>
+                    <p className="service-desc">Our Dirt-Less Wash will thoroughly clean the exterior of your vehicle with our tried and true cleaning process.</p>
                     <Link to="dl-wash" className="readmore">
                         <p>Learn More</p>
                     </Link>
                 </div>
                 <div className="service-card">
-                    <h2 className="popular-service-title">Premium Dirt-less Wash</h2>
+                    <h2 className="popular-service-title">Premium Dirt-Less Wash</h2>
                     <p className="secondary-text">Starting at: <span>$150</span></p>
-                    <p className="service-desc">The Premium Dirt-less Wash will deep clean the exterior, but will also keep your vehicle looking clean for months to come with our multiple step waxing process</p>
+                    <p className="service-desc">The Premium Dirt-Less Wash will deep clean the exterior, but will also keep your vehicle looking clean for months to come with our multiple step waxing process</p>
                     <Link to="premium-dl-wash" className="readmore">
                         <p>Learn More</p>
                     </Link>
@@ -181,7 +181,7 @@ export default function Home() {
             </section>
 
             <article className="reviews-container">
-                <h2>Read through some of our 5 star reviews</h2>
+                <h2>Read some of our 5 star reviews from our customers</h2>
                 <Carousel className="review-carousel" infiniteLoop autoPlay showThumbs={false}>
                     <div>
                         <p className="review">Brenden answered the first phone call gave a quote over the phone, I did not have to bring the car anywhere. He provided a value and was on time and was extremely thorough. Did not attempt to upsell me and increase price, day of the appointment, like another Bonney Lake detailer did. Can't recommend Dirt-Less Detail enough. My wife's Jeep Cherokee looks new!</p>
@@ -192,7 +192,7 @@ export default function Home() {
                         <p className="reviewer">Rob B.</p>
                     </div>
                     <div>
-                        <p className="review">Bought new/used SUV for my wife and the kids. 2002 Cadillac Escalade it was pretty filthy inside and out. Made an appointment with Dirt-less for an interior deep cleaning. Also a cut and buff on the exterior. He brought back the original Cadillac elegance of the vehicle. I highly recommend him. I wish I could post the before and after pictures. High end quality work for a fair price. 5 stars for his work</p>
+                        <p className="review">Bought new/used SUV for my wife and the kids. 2002 Cadillac Escalade it was pretty filthy inside and out. Made an appointment with Dirt-Less for an interior deep cleaning. Also a cut and buff on the exterior. He brought back the original Cadillac elegance of the vehicle. I highly recommend him. I wish I could post the before and after pictures. High end quality work for a fair price. 5 stars for his work</p>
                         <p className="reviewer">Jeff W.</p>
                     </div>
                 </Carousel>
@@ -200,7 +200,7 @@ export default function Home() {
 
             <section className="serviceareas-container">
                 <h2>Servicing most of the Pierce County and King County Area</h2>
-                <p>As part of our simple and hassle free service, we can come to you, all we need is access to your vehicle and we'll get to work.</p>
+                <p>As part of our simple and hassle free service, you can come to us or we could come to you!</p>
             </section>
         </div>
     )

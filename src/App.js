@@ -101,6 +101,7 @@ function App() {
           </div>
           <hr />
           <div className='socials-container'>
+            <h4>Copyright 2022 Dirt-Less Detailing</h4>
             <a href="https://www.facebook.com/DirtLessDetailing/" className="socials" target="_blank" rel="noreferrer"><FaFacebook /></a>
           </div>
         </footer>

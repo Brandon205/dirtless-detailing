@@ -115,6 +115,14 @@ header h1 {
   border-radius: 1rem;
 }
 
+.contact-container h3 {
+  text-decoration: underline;
+}
+
+.contact-container a {
+  color: red;
+}
+
 .contact-link {
   color: white;
   margin: 0.25em;
@@ -169,10 +177,20 @@ header h1 {
   margin: 0;
 }
 
+.service-heading {
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
 .otherservices-container {
   display: flex;
   flex-direction: column;
   flex: 1;
+}
+
+.otherservices-container h1 {
+  font-size: 2em;
+  text-decoration: underline;
 }
 
 .service-card {
@@ -196,9 +214,8 @@ header h1 {
   margin: 0;
 }
 
-.secondary-text sanp {
-  display: inline-block;
-  margin: 0
+.secondary-text span {
+  color: var(--learn-more-clr);
 }
 
 .readmore {
@@ -276,7 +293,9 @@ hr {
 }
 
 .socials-container {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .socials {
