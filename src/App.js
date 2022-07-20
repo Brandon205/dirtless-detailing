@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { HashRouter, Link, Route, Routes } from 'react-router-dom';
 import ddLogo from './assets/imgs/dd-logo.png';
 
@@ -18,7 +19,12 @@ import Waterspot from './components/Waterspot.js';
 import { FaBars, FaFacebook } from 'react-icons/fa';
 import './App.css';
 
-function App() {
+export default function App() {
+  const [nav, setNav] = useState('none');
+  const [interior, setInterior] = useState('none');
+  const [exteriorCorr, setExteriorCorr] = useState('none');
+  const [exteriorClean, setExteriorClean] = useState('none');
+
   return (
     <HashRouter>
       <div className="App">
@@ -27,7 +33,37 @@ function App() {
             <Link to="/">
               <img src={ddLogo} className="logo" />
             </Link>
-            <FaBars className="menu-bars" />
+            <FaBars className="menu-bars" onClick={() => setNav(nav === 'block' ? 'none' : 'block')} />
+            <div style={{display: nav}} className="menu-container">
+              <ul>
+                <li>Home</li>
+                <li onClick={() => { setExteriorCorr('none'); setExteriorClean('none'); setInterior('block') }}>Interior</li>
+                <ul style={{display: interior}}>
+                  <li>Full Interior w/ Extraction</li>
+                  <li>Full Interior w/out Extraction</li>
+                  <li>Bio</li>
+                  <li>Headliners</li>
+                </ul>
+
+                <li onClick={() => { setExteriorCorr('block'); setExteriorClean('none'); setInterior('none') }}>Exterior Correction</li>
+                <ul style={{display: exteriorCorr}}>
+                  <li>Full Interior w/ Extraction</li>
+                  <li>Full Interior w/out Extraction</li>
+                  <li>Bio</li>
+                  <li>Headliners</li>
+                </ul>
+
+                <li onClick={() => { setExteriorCorr('none'); setExteriorClean('block'); setInterior('none') }}>Exterior Cleaning</li>
+                <ul style={{display: exteriorClean}}>
+                  <li>Full Interior w/ Extraction</li>
+                  <li>Full Interior w/out Extraction</li>
+                  <li>Bio</li>
+                  <li>Headliners</li>
+                </ul>
+
+                <li>About Us</li>
+              </ul>
+            </div>
           </nav>
         </header>
         <Routes>
@@ -108,5 +144,3 @@ function App() {
     </HashRouter>
   );
 }
-
-export default App;

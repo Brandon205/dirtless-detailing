@@ -1,7 +1,7 @@
 :root {
   /** Backgrounds and other colors **/
   --contact-bkg-clr: #252525;
-  --nav-bkg-clr: #A6A6A6;
+  --nav-bkg-clr: #a6a6a647;
   --boxshadow-clr: rgb(213, 213, 213);
   --footer-bkg: #060606;
 
@@ -87,8 +87,15 @@ nav {
   background-color: var(--nav-bkg-clr);
 }
 
-
-
+.menu-container {
+  position: absolute;
+  text-align: left;
+  padding: 1rem;
+  width: 350px;
+  background-color: #6B6B6B;
+  top: 80px;
+  right: 0;
+}
 
 /** Home Page Header CSS **/
 header h1 {
