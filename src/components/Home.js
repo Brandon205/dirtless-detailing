@@ -18,7 +18,7 @@ export default function Home() {
                 <div>
                     <h1>Your Bonney Lake Car Detailing Specialists</h1>
                     <h4 className='dd-desc'>Plenty of 5-star reviews from the customers we've served. We will do Interiors, Exteriors, Paint Correction, and much more. We will have your car looking brand new.</h4>
-                    <button className="learn-btn">Learn More</button>
+                    <button className="learn-btn top-learn-btn">Learn More</button>
                     <button className="quote-btn">Get a Quote</button>
                 </div>
             </header>
@@ -32,8 +32,8 @@ export default function Home() {
                 <h3>LOCATION</h3>
                 <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link" target="_blank">9305 205th Ave E Bonney Lake Washington</a>
             </section>
+            <h1>Popular Detailing Services</h1>
             <section className="popular-container">
-                <h2>Popular Detailing Services</h2>
 
                 <div className="popular-services-card">
                     <h2 className="popular-service-title">Full Interior Cleaning with Extraction</h2>
@@ -49,6 +49,7 @@ export default function Home() {
                         <p>Learn More</p>
                     </Link>
                 </div>
+
                 <div className="popular-services-card">
                     <h2 className="popular-service-title">Two Stage Paint Correction</h2>
                     <p className="price">Starting at: <span>$450</span></p>
@@ -64,7 +65,7 @@ export default function Home() {
                     </Link>
                 </div>
                 <div className="popular-services-card">
-                    <h2 className="popular-service-title">Premium Dirt-less Wash</h2>
+                    <h2 className="popular-service-title">Premium Dirt-Less Wash</h2>
                     <p className="price">Starting at: <span>$150</span></p>
                     <img src={dlWash} alt="car exterior picture" className="popular-img" />
                     
@@ -77,28 +78,19 @@ export default function Home() {
                         <p>Learn More</p>
                     </Link>
                 </div>
-
             </section>
 
-            <button className="quote-btn">Get a Quote</button>
+            <button className="quote-btn main-quote-btn">Get a Quote</button>
 
+            <h1>Our Other Services</h1>
+
+            <h2>INTERIOR CLEANING SERVICES</h2>
             <section className="otherservices-container">
-                <h1>Our Other Services</h1>
-
-                <h3>INTERIOR CLEANING SERVICES</h3>
                 <div className="service-card">
                     <h2>Full Interior without Extraction</h2>
                     <p className="secondary-text">Starting at: <span>$200</span></p>
                     <p className="service-desc">A thorough cleaning of your cars interior, we'll get all of the cracks and crevices of your vehicle cleaned out with this one.</p>
                     <Link to="full-int" className="readmore">
-                        <p>Learn More</p>
-                    </Link>
-                </div>
-                <div className="service-card">
-                    <h2 className="popular-service-title">Full Interior with Extraction</h2>
-                    <p className="secondary-text">Starting at: <span>$250</span></p>
-                    <p className="service-desc">Our best interior cleaning package that will get your vehicle looking like new. Comes with extraction, which might be needed to get out some of those tougher stains in your vehicle.</p>
-                    <Link to="full-int-ex" className="readmore">
                         <p>Learn More</p>
                     </Link>
                 </div>
@@ -118,21 +110,15 @@ export default function Home() {
                         <p>Learn More</p>
                     </Link>
                 </div>
+            </section>
 
-                <h3>EXTERIOR CORRECTION SERVICES</h3>
+            <h2>EXTERIOR CORRECTION SERVICES</h2>
+            <section className="otherservices-container">
                 <div className="service-card">
                     <h2>Single Stage Paint Correction</h2>
                     <p className="secondary-text">Starting at: <span>$300</span></p>
                     <p className="service-desc">Our single stage paint correction can fix about 80% of minor damage and scratches and will leave your vehicle looking shinier than ever.</p>
                     <Link to="single-paint-correction" className="readmore">
-                        <p>Learn More</p>
-                    </Link>
-                </div>
-                <div className="service-card">
-                    <h2 className="popular-service-title">Two Stage Paint Correction</h2>
-                    <p className="secondary-text">Starting at: <span>$450</span></p>
-                    <p className="service-desc">A more in depth process to remove and smooth out any exterior paint damage on your vehicle. We will do as much as we can to get every imperfection out of your cars paint job.</p>
-                    <Link to="two-paint-correction" className="readmore">
                         <p>Learn More</p>
                     </Link>
                 </div>
@@ -152,21 +138,15 @@ export default function Home() {
                         <p>Learn More</p>
                     </Link>
                 </div>
+            </section>
 
-                <h3>EXTERIOR CLEANING SERVICES</h3>
+            <h2>EXTERIOR CLEANING SERVICES</h2>
+            <section className="otherservices-container">
                 <div className="service-card">
                     <h2>Dirt-less Wash</h2>
                     <p className="secondary-text">Starting at: <span>$75</span></p>
                     <p className="service-desc">Our Dirt-less Wash will thoroughly clean the exterior of your vehicle with our tried and true cleaning process.</p>
                     <Link to="dl-wash" className="readmore">
-                        <p>Learn More</p>
-                    </Link>
-                </div>
-                <div className="service-card">
-                    <h2 className="popular-service-title">Premium Dirt-less Wash</h2>
-                    <p className="secondary-text">Starting at: <span>$150</span></p>
-                    <p className="service-desc">The Premium Dirt-less Wash will deep clean the exterior, but will also keep your vehicle looking clean for months to come with our multiple step waxing process</p>
-                    <Link to="premium-dl-wash" className="readmore">
                         <p>Learn More</p>
                     </Link>
                 </div>
