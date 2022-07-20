@@ -35,33 +35,32 @@ export default function App() {
             </Link>
             <FaBars className="menu-bars" onClick={() => setNav(nav === 'block' ? 'none' : 'block')} />
             <div style={{display: nav}} className="menu-container">
-              <ul>
-                <li>Home</li>
-                <li onClick={() => { setExteriorCorr('none'); setExteriorClean('none'); setInterior('block') }}>Interior</li>
-                <ul style={{display: interior}}>
-                  <li>Full Interior w/ Extraction</li>
-                  <li>Full Interior w/out Extraction</li>
-                  <li>Bio</li>
-                  <li>Headliners</li>
+              <ul className='main-ul'>
+                <li className='menu-li'><Link to="/" className='menu-link' onClick={() => setNav('none')}>Home</Link></li>
+                <li className='menu-li' onClick={() => { setExteriorCorr('none'); setExteriorClean('none'); setInterior('block') }}>Interior <span style={interior === 'block' ? {display: 'none'} : {display: 'block'}}>{'>'}</span></li>
+                <ul className="sub-ul" style={{display: interior}}>
+                  <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='full-int-ex' className='menu-link'>Full Interior w/ Extraction</Link></li>
+                  <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='full-int' className='menu-link'>Full Interior w/out Extraction</Link></li>
+                  <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='bio' className='menu-link'>Biohazard Cleaning</Link></li>
+                  <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='headliners' className='menu-link'>Headliners</Link></li>
                 </ul>
 
-                <li onClick={() => { setExteriorCorr('block'); setExteriorClean('none'); setInterior('none') }}>Exterior Correction</li>
-                <ul style={{display: exteriorCorr}}>
-                  <li>Full Interior w/ Extraction</li>
-                  <li>Full Interior w/out Extraction</li>
-                  <li>Bio</li>
-                  <li>Headliners</li>
+                <li className='menu-li' onClick={() => { setExteriorCorr('block'); setExteriorClean('none'); setInterior('none') }}>Exterior Correction <span style={exteriorCorr === 'block' ? {display: 'none'} : {display: 'block'}}>{'>'}</span></li>
+                <ul className="sub-ul" style={{display: exteriorCorr}}>
+                  <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='single-paint-correction' className='menu-link'>Single Stage Paint Correction</Link></li>
+                  <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='two-paint-correction' className='menu-link'>Two Stage Paint Correction</Link></li>
+                  <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='glass' className='menu-link'>Glass Polishing</Link></li>
+                  <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='waterspot' className='menu-link'>Waterspot/Overspray Removal</Link></li>
                 </ul>
 
-                <li onClick={() => { setExteriorCorr('none'); setExteriorClean('block'); setInterior('none') }}>Exterior Cleaning</li>
-                <ul style={{display: exteriorClean}}>
-                  <li>Full Interior w/ Extraction</li>
-                  <li>Full Interior w/out Extraction</li>
-                  <li>Bio</li>
-                  <li>Headliners</li>
+                <li className='menu-li' onClick={() => { setExteriorCorr('none'); setExteriorClean('block'); setInterior('none') }}>Exterior Cleaning <span style={exteriorClean === 'block' ? {display: 'none'} : {display: 'block'}}>{'>'}</span></li>
+                <ul className="sub-ul" style={{display: exteriorClean}}>
+                  <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='dl-wash' className='menu-link'>Dirt-Less Wash</Link></li>
+                  <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='premium-dl-wash' className='menu-link'>Premium Dirt-Less Wash</Link></li>
+                  <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='engine' className='menu-link'>Engine Bay</Link></li>
                 </ul>
 
-                <li>About Us</li>
+                <li className='menu-li'><Link to='about' className='menu-link' onClick={() => setNav('none')}>About</Link></li>
               </ul>
             </div>
           </nav>

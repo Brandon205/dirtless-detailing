@@ -87,14 +87,46 @@ nav {
   background-color: var(--nav-bkg-clr);
 }
 
+li span {
+  float: right;
+  padding-right: 10px;
+}
+
 .menu-container {
   position: absolute;
   text-align: left;
-  padding: 1rem;
   width: 350px;
-  background-color: #6B6B6B;
+  height: 80vh;
+  line-height: 2.5;
+  background-color: #6b6b6b;
   top: 80px;
   right: 0;
+}
+
+.main-ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sub-ul {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+}
+
+.menu-li {
+  padding-left: 0.5rem;
+  cursor: pointer;
+}
+
+.sub-menu-li {
+  background-color: darkgray;
+  padding-left: 1rem;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: black;
 }
 
 /** Home Page Header CSS **/
