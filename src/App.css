@@ -1,7 +1,7 @@
 :root {
   /** Backgrounds and other colors **/
   --contact-bkg-clr: #252525;
-  --nav-bkg-clr: #a6a6a647;
+  --nav-bkg-clr: #a6a6a6;
   --boxshadow-clr: rgb(213, 213, 213);
   --footer-bkg: #060606;
 
@@ -98,7 +98,7 @@ li span {
   width: 350px;
   height: 80vh;
   line-height: 2.5;
-  background-color: #6b6b6b;
+  background-color: var(--nav-bkg-clr);
   top: 80px;
   right: 0;
 }
@@ -120,8 +120,12 @@ li span {
 }
 
 .sub-menu-li {
-  background-color: darkgray;
+  background-color: slategray;
   padding-left: 1rem;
+}
+
+.sub-menu-li:hover {
+  background-color: rgb(99, 113, 127);
 }
 
 .menu-link {
@@ -447,5 +451,43 @@ hr {
 
   .popular-container {
     justify-content: space-around;
+  }
+
+  /** Nav CSS **/
+  /* li span {
+    display: none !important;
+  } */
+
+  .menu-container {
+    display: inline-block !important;
+    position: static;
+    height: auto;
+    width: 75vw;
+    background-color: var(--nav-bkg-clr)
+  }
+
+  .main-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .menu-li {
+    position: relative;
+  }
+
+  .sub-ul {
+    position: absolute;
+    width: 250px;
+    top: 35px;
+  }
+
+  .sub-menu-li {
+    border-bottom: 1px solid black;
+  }
+
+  .menu-bars {
+    display: none;
   }
 }
