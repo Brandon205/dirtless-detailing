@@ -28,6 +28,11 @@ section {
   text-align: center;
 }
 
+.App-header {
+  position: sticky;
+  top: 0;
+}
+
 .logo {
   width: 75px;
   height: 75px;
@@ -88,6 +93,7 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
+  top: 0;
   justify-content: space-between;
   background-color: var(--nav-bkg-clr);
 }
