@@ -1,6 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 import '../App.css';
@@ -18,8 +19,8 @@ export default function Home() {
                 <div>
                     <h1>Your Bonney Lake Car Detailing Specialists</h1>
                     <h4 className='dd-desc'>Plenty of 5-star reviews from the customers we've served. We will do Interiors, Exteriors, Paint Correction, and much more. We will have your car looking brand new.</h4>
-                    <button className="learn-btn top-learn-btn">Learn More</button>
-                    <button className="quote-btn">Get a Quote</button>
+                    <HashLink smooth to="/#popular-services" className="learn-btn top-learn-btn">Learn More</HashLink>
+                    <HashLink smooth to="/#temp-hash" className="quote-btn top-quote-btn">Get Quote</HashLink>
                 </div>
             </header>
             <section className="contact-container">
@@ -32,7 +33,7 @@ export default function Home() {
                 <h3>LOCATION</h3>
                 <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link" target="_blank">9305 205th Ave E Bonney Lake Washington</a>
             </section>
-            <h1>Popular Detailing Services</h1>
+            <h1 id="popular-services">Popular Detailing Services</h1>
             <section className="popular-container">
 
                 <div className="popular-services-card">
@@ -179,7 +180,7 @@ export default function Home() {
             </article>
 
             <section className="serviceareas-container">
-                <h2>Servicing most of the Pierce County and King County Area</h2>
+                <h2 id="temp-hash">Servicing most of the Pierce County and King County Area</h2>
                 <p>As part of our simple and hassle free service, you can come to us or we could come to you!</p>
             </section>
         </div>
