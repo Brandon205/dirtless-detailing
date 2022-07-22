@@ -318,6 +318,8 @@ header h1 {
   padding: 2em;
   font-size: 1.25rem;
   line-height: 1.75;
+  width: 85vw;
+  margin: 0 auto;
 }
 
 .review-carousel div {

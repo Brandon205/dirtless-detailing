@@ -176,6 +176,22 @@ export default function Home() {
                         <p className="review">Bought new/used SUV for my wife and the kids. 2002 Cadillac Escalade it was pretty filthy inside and out. Made an appointment with Dirt-Less for an interior deep cleaning. Also a cut and buff on the exterior. He brought back the original Cadillac elegance of the vehicle. I highly recommend him. I wish I could post the before and after pictures. High end quality work for a fair price. 5 stars for his work</p>
                         <p className="reviewer">Jeff W.</p>
                     </div>
+                    <div>
+                        <p className="review">Brenden has done a few trucks for me including re covering my 07 dodge drivers seat and did an awesome job, I would recommend him to anyone!</p>
+                        <p className="reviewer">Patrick K.</p>
+                    </div>
+                    <div>
+                        <p className="review">We have been using Dirt-Less detailing for the last year at our office as an employee perk. He comes in once a month on schedule, always performs fantastic work. I highly recommend them.</p>
+                        <p className="reviewer">Rick E.</p>
+                    </div>
+                    <div>
+                        <p className="review">My kids left a gal of milk in the back of my car, needless to say the nice warm weather it leaked all over and soon smelled horrid. He did a fantastic job, car smells and looks brand new, even got every hair out from my pups.  very happy I got his number as a referral from a friend.</p>
+                        <p className="reviewer">Trisha C.</p>
+                    </div>
+                    <div>
+                        <p className="review">My car has never been cleaner!!</p>
+                        <p className="reviewer">Austin M.</p>
+                    </div>
                 </Carousel>
             </article>
 
