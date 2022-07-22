@@ -1,7 +1,9 @@
 :root {
   /** Backgrounds and other colors **/
   --contact-bkg-clr: #252525;
-  --nav-bkg-clr: #a6a6a6;
+  --nav-bkg-clr: whitesmoke;
+  --nav-dropdown-clr: #252525;
+  --nav-dropdown-hover: #1d1d1d;
   --boxshadow-clr: rgb(213, 213, 213);
   --footer-bkg: #060606;
 
@@ -131,12 +133,16 @@ li span {
 }
 
 .sub-menu-li {
-  background-color: slategray;
+  background-color: var(--nav-dropdown-clr);
   padding-left: 1rem;
 }
 
 .sub-menu-li:hover {
-  background-color: rgb(99, 113, 127);
+  background-color: var(--nav-dropdown-hover);
+}
+
+.sub-menu-li .menu-link {
+  color: white;
 }
 
 .menu-link {
@@ -486,10 +492,6 @@ hr {
   }
 
   /** Nav CSS **/
-  /* li span {
-    display: none !important;
-  } */
-
   .menu-container {
     display: inline-block !important;
     position: static;
