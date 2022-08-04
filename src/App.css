@@ -14,6 +14,8 @@
 
   /** Text and smaller colors **/
   --supporting-text: #6B6B6B;
+  --heading-clr1: #4B7E90;
+  --heading-clr2: #035979;
 
   /** Backgrounds and other colors **/
   /* --contact-bkg-clr: #252525;
@@ -118,6 +120,10 @@ section {
   text-decoration: none;
 }
 
+.main-quote-btn {
+  margin-bottom: 3rem;
+}
+
 /** Navigation CSS **/
 nav {
   display: flex;
@@ -192,7 +198,7 @@ header h1 {
   margin-top: 1em;
   font-size: 2.5em;
   font-weight: 300;
-  color: #4B7E90;
+  color: var(--heading-clr1);
 }
 
 .title-bottom {
@@ -200,7 +206,7 @@ header h1 {
   font-size: 2.5em;
   margin-bottom: 3rem;
   font-weight: 600;
-  color: #035979;
+  color: var(--heading-clr2);
 }
 
 
@@ -299,6 +305,21 @@ header h1 {
 .otherservices-container h1 {
   font-size: 2em;
   text-decoration: underline;
+}
+
+.separator-container {
+  background-color: lightgray;
+  padding: 2rem 0;
+}
+
+.separator-container p {
+  margin-top: 0;
+  color: var(--supporting-text);
+}
+
+.service-title {
+  color: var(--heading-clr2);
+  margin-bottom: 0;
 }
 
 .service-card {

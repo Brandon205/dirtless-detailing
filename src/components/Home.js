@@ -35,7 +35,10 @@ export default function Home() {
                 <h3>LOCATION</h3>
                 <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link" target="_blank">9305 205th Ave E Bonney Lake Washington</a>
             </section>
-            <h1 id="popular-services">Popular Detailing Services</h1>
+            <div className='separator-container'>
+                <h1 id="service-title">Popular Detailing Services</h1>
+                <p>Our most popular services for making your car look like new</p>
+            </div>
             <section className="popular-container">
 
                 <div className="popular-services-card">
@@ -85,9 +88,10 @@ export default function Home() {
 
             <button className="quote-btn main-quote-btn">Get a Quote</button>
 
-            <h1>Our Other Services</h1>
-
-            <h2>INTERIOR CLEANING SERVICES</h2>
+            <div className='separator-container'>
+                <h2 className='service-title'>INTERIOR CLEANING SERVICES</h2>
+                <p>Our services that will renew your vehicles interior</p>
+            </div>
             <section className="otherservices-container">
                 <div className="service-card">
                     <h2>Full Interior without Extraction</h2>
@@ -118,7 +122,10 @@ export default function Home() {
                 </div>
             </section>
 
-            <h2>EXTERIOR CORRECTION SERVICES</h2>
+            <div className='separator-container'>
+                <h2 className='service-title'>EXTERIOR CORRECTION SERVICES</h2>
+                <p>Our services that will undo any exterior problems</p>
+            </div>
             <section className="otherservices-container">
                 <div className="service-card">
                     <h2>Single Stage Paint Correction</h2>
@@ -149,7 +156,10 @@ export default function Home() {
                 </div>
             </section>
 
-            <h2>EXTERIOR CLEANING SERVICES</h2>
+            <div className='separator-container'>
+                <h2 className='service-title'>EXTERIOR CLEANING SERVICES</h2>
+                <p>Our services that will make your exterior shine like never before</p>
+            </div>
             <section className="otherservices-container">
                 <div className="service-card">
                     <h2>Dirt-Less Wash</h2>
