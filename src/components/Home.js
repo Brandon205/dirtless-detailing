@@ -14,11 +14,13 @@ import paint from '../assets/imgs/paintcorrectionBA.jpg';
 export default function Home() {
     return (
         <div className="App">
-            <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}></div>
+            {/* <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}></div> */}
             <header className="home-header">
                 <div>
-                    <h1>Your Bonney Lake Car Detailing Specialists</h1>
-                    <h4 className='dd-desc'>Plenty of 5-star reviews from the customers we've served. We will do Interiors, Exteriors, Paint Correction, and much more. We will have your car looking brand new.</h4>
+                    <h1 className='title-top'>Your Bonney Lake</h1><br />
+                    <h1 className='title-bottom'>Car Detailing Specialists</h1>
+                    <h4 className='dd-desc'>Plenty of 5-star reviews from the customers we've served. </h4>
+                    <h4 className='dd-desc'>We will do Interiors, Exteriors, Paint Correction, and much more. We will have your car looking brand new.</h4>
                     <HashLink smooth to="/#popular-services" className="learn-btn top-learn-btn">Learn More</HashLink>
                     <HashLink smooth to="/#temp-hash" className="quote-btn top-quote-btn">Get Quote</HashLink>
                 </div>
@@ -91,6 +93,7 @@ export default function Home() {
                     <h2>Full Interior without Extraction</h2>
                     <p className="secondary-text">Starting at: <span>$200</span></p>
                     <p className="service-desc">A thorough cleaning of your cars interior, we'll get all of the cracks and crevices of your vehicle cleaned out with this one.</p>
+                    <hr className="card-hr" />
                     <Link to="full-int" className="readmore">
                         <p>Learn More</p>
                     </Link>
@@ -99,6 +102,7 @@ export default function Home() {
                     <h2>Smoker Car/Bio/Mold/etc Cleaning</h2>
                     <p className="secondary-text">Starting at: <span>$300</span></p>
                     <p className="service-desc">If there are bad smells like mold or smoke in your car this might be the package for you. We'll use cleaning chemicals suited for the job to get rid of those odors for good.</p>
+                    <hr className="card-hr" />
                     <Link to="bio" className="readmore">
                         <p>Learn More</p>
                     </Link>
@@ -107,6 +111,7 @@ export default function Home() {
                     <h2>Headliners</h2>
                     <p className="secondary-text">Starting at: <span>$40</span></p>
                     <p className="service-desc">To clean your headliners we will determine the best plan of attack based on the materials in order to leave your headliners clean without sagging or eventual problems.</p>
+                    <hr className="card-hr" />
                     <Link to="headliners" className="readmore">
                         <p>Learn More</p>
                     </Link>
@@ -119,6 +124,7 @@ export default function Home() {
                     <h2>Single Stage Paint Correction</h2>
                     <p className="secondary-text">Starting at: <span>$300</span></p>
                     <p className="service-desc">Our single stage paint correction can fix about 80% of minor damage and scratches and will leave your vehicle looking shinier than ever.</p>
+                    <hr className="card-hr" />
                     <Link to="single-paint-correction" className="readmore">
                         <p>Learn More</p>
                     </Link>
@@ -127,6 +133,7 @@ export default function Home() {
                     <h2>Glass Polishing</h2>
                     <p className="secondary-text">Starting at: <span>$70</span></p>
                     <p className="service-desc">Scratches or etching on the glass of your car? We'll get rid of those with this package.</p>
+                    <hr className="card-hr" />
                     <Link to="glass" className="readmore">
                         <p>Learn More</p>
                     </Link>
@@ -135,6 +142,7 @@ export default function Home() {
                     <h2>Waterspot and Overspray Removal</h2>
                     <p className="secondary-text">Starting at: <span>$60</span></p>
                     <p className="service-desc">If there are any waterspots or overspray on your vehicle that are bugging you, let us know and we can get rid of them.</p>
+                    <hr className="card-hr" />
                     <Link to="waterspot" className="readmore">
                         <p>Learn More</p>
                     </Link>
@@ -147,6 +155,7 @@ export default function Home() {
                     <h2>Dirt-Less Wash</h2>
                     <p className="secondary-text">Starting at: <span>$75</span></p>
                     <p className="service-desc">Our Dirt-Less Wash will thoroughly clean the exterior of your vehicle with our tried and true cleaning process.</p>
+                    <hr className="card-hr" />
                     <Link to="dl-wash" className="readmore">
                         <p>Learn More</p>
                     </Link>
@@ -155,6 +164,7 @@ export default function Home() {
                     <h2>Engine Cleaning</h2>
                     <p className="secondary-text">Starting at: <span>$80</span></p>
                     <p className="service-desc">The engine bay is usually overlooked and tricky to clean, but we can take care of it for you and leave yours looking like new.</p>
+                    <hr className="card-hr" />
                     <Link to="engine-bay" className="readmore">
                         <p>Learn More</p>
                     </Link>

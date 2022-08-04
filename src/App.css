@@ -8,11 +8,27 @@
   --footer-bkg: #060606;
 
   /** Button colors **/
-  --learn-more-clr: #fc4c00;
+  --main-clr: #fc4c00;
+  --main-clr-hover: #d54102;
   --quote-clr: #1D96ED;
 
   /** Text and smaller colors **/
   --supporting-text: #6B6B6B;
+
+  /** Backgrounds and other colors **/
+  /* --contact-bkg-clr: #252525;
+  --nav-bkg-clr: whitesmoke;
+  --nav-dropdown-clr: #252525;
+  --nav-dropdown-hover: #1d1d1d;
+  --boxshadow-clr: rgb(213, 213, 213);
+  --footer-bkg: #060606; */
+
+  /** Button colors **/
+  /* --main-clr: #fc4c00;
+  --quote-clr: #1D96ED; */
+
+  /** Text and smaller colors **/
+  /* --supporting-text: #6B6B6B; */
 }
 
 *,
@@ -23,7 +39,7 @@
 
 section {
   width: 80vw;
-  margin: auto
+  margin: auto;
 }
 
 .App {
@@ -42,17 +58,21 @@ section {
 
 .menu-bars {
   margin-right: .5em;
-  font-size: 1.5rem
+  font-size: 1.5rem;
 }
 
 .dd-desc {
+  color: black;
+  font-weight: 300;
   line-height: 2;
+  margin: 0 auto;
+  max-width: 90vw;
 }
 
 .learn-btn {
   display: inline-block;
   padding: 0.75rem;
-  background-color: var(--learn-more-clr);
+  background-color: var(--main-clr);
   border: none;
   border-radius: 0.5rem;
   margin: 0.75rem;
@@ -62,32 +82,40 @@ section {
   letter-spacing: 0.7;
 }
 
+.learn-btn:hover {
+  background-color: var(--main-clr-hover);
+}
+
 .top-learn-btn {
   text-decoration: none;
+  margin-top: 2rem;
   font-size: 1.5em;
   font-weight: 300;
 }
 
-.top-quote-btn {
-  text-decoration: none;
-}
-
-.learn-btn:hover {
-  background-color: #d54102;
-}
 
 .quote-btn {
   display: inline-block;
   padding: 0.75rem;
   font-size: 1.5em;
-  background-color: var(--quote-clr);
-  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid var(--main-clr);
   border-radius: 0.5rem;
   margin: 0.75rem;
   cursor: pointer;
-  color: white;
+  color: black;
   font-weight: 300;
   letter-spacing: 0.7;
+  transition: 0.5s;
+}
+
+.quote-btn:hover {
+  background-color: var(--main-clr);
+  color: white;
+}
+
+.top-quote-btn {
+  text-decoration: none;
 }
 
 /** Navigation CSS **/
@@ -114,6 +142,7 @@ li span {
   background-color: var(--nav-bkg-clr);
   top: 80px;
   right: 0;
+  transition: 0.5s;
 }
 
 .main-ul {
@@ -152,14 +181,26 @@ li span {
 
 /** Home Page Header CSS **/
 header h1 {
-  margin-top: 0;
-  margin-bottom: 4em;
-  padding-top: 2em;
+  margin: 0;
 }
 
 .home-header {
-  color: white
+  color: white;
 }
+
+.title-top {
+  margin-top: 1em;
+  font-weight: 300;
+  color: #4B7E90;
+}
+
+.title-bottom {
+  margin-top: -0.75em;
+  margin-bottom: 3rem;
+  font-weight: 600;
+  color: #035979;
+}
+
 
 .cover {
   filter: brightness(65%) blur(1px);
@@ -173,14 +214,13 @@ header h1 {
   background-blend-mode: darken;
 }
 
-
 /** Home Page Contact CSS **/
 .contact-container {
   background-color: var(--contact-bkg-clr);
   line-height: 2.5;
   color: white;
   width: 90vw;
-  margin:  2rem auto;
+  margin: 4rem auto;
   padding: 1.2rem;
   border-radius: 1rem;
 }
@@ -190,7 +230,7 @@ header h1 {
 }
 
 .contact-container a {
-  color: red;
+  color: var(--main-clr);
 }
 
 .contact-link {
@@ -240,6 +280,7 @@ header h1 {
   display: inline-block;
   font-weight: 300;
   margin: 0;
+  color: var(--main-clr)
 }
 
 .service-heading {
@@ -261,7 +302,6 @@ header h1 {
 .service-card {
   box-shadow: 0 0 10px 5px var(--boxshadow-clr);
   border-radius: 15px;
-  text-align: left;
   padding: 20px;
   margin: 20px 0;
 }
@@ -272,6 +312,13 @@ header h1 {
   font-weight: 600;
 }
 
+.card-hr {
+  border-top: 1px dashed black;
+  border-bottom: none;
+  width: 112%;
+  margin-left: -6%
+}
+
 .secondary-text {
   display: inline-block;
   color: gray;
@@ -280,12 +327,13 @@ header h1 {
 }
 
 .secondary-text span {
-  color: var(--learn-more-clr);
+  color: var(--main-clr);
 }
 
 .readmore {
   display: inline-block;
-  background-color: var(--learn-more-clr);
+  margin-top: 0.75rem;
+  background-color: var(--main-clr);
   color: white;
   padding: 0.5em 10%;
   text-decoration: none;
@@ -304,7 +352,7 @@ header h1 {
 .popular-readmore {
   display: inline-block;
   padding: 0.75em 20%;
-  background-color: var(--learn-more-clr);
+  background-color: var(--main-clr);
   border-radius: 0.5rem;
   color: white;
   font-weight: bold;
@@ -363,11 +411,11 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
 }
 
 .socials {
   font-size: 2em;
-  margin-bottom: 1rem;
   color: white;
 }
 
@@ -484,7 +532,7 @@ hr {
   }
 
   .contact-container {
-    margin-top: 10rem;
+    margin-top: 8rem;
   }
 
   .popular-container {

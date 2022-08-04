@@ -114,7 +114,7 @@ export default function App() {
           <div className="footer-content-card">
             <h3>EXTERIOR</h3>
             <Link to="dl-wash" className="footer-link">
-              <p className="footer-text">Dirt-less Wash</p>
+              <p className="footer-text">Dirt-Less Wash</p>
             </Link>
             <Link to="premium-dl-wash" className="footer-link">
               <p className="footer-text">Premium Dirt-less Wash</p>
@@ -142,7 +142,7 @@ export default function App() {
           </div>
           <hr />
           <div className='socials-container'>
-            <h4>Copyright 2022 Dirt-Less Detailing</h4>
+            <h4>FOLLOW US!</h4>
             <a href="https://www.facebook.com/DirtLessDetailing/" className="socials" target="_blank" rel="noreferrer"><FaFacebook /></a>
           </div>
         </footer>
