@@ -190,12 +190,14 @@ header h1 {
 
 .title-top {
   margin-top: 1em;
+  font-size: 2.5em;
   font-weight: 300;
   color: #4B7E90;
 }
 
 .title-bottom {
-  margin-top: -0.75em;
+  margin-top: -0.5em;
+  font-size: 2.5em;
   margin-bottom: 3rem;
   font-weight: 600;
   color: #035979;
@@ -332,6 +334,8 @@ header h1 {
 
 .readmore {
   display: inline-block;
+  position: relative;
+  bottom: 0;
   margin-top: 0.75rem;
   background-color: var(--main-clr);
   color: white;
@@ -529,6 +533,16 @@ hr {
 @media screen and (min-width: 880px) {
   body {
     font-size: 1.1em;
+  }
+
+  .title-top {
+    margin-top: 3rem;
+    line-height: 2;
+  }
+
+  .title-bottom {
+    margin-bottom: 5rem;
+    line-height: 2;
   }
 
   .contact-container {
