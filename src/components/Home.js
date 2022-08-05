@@ -2,6 +2,7 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import { FaCheckCircle } from 'react-icons/fa';
 
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 import '../App.css';
@@ -14,7 +15,7 @@ import paint from '../assets/imgs/paintcorrectionBA.jpg';
 export default function Home() {
     return (
         <div className="App">
-            {/* <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}></div> */}
+            <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}></div>
             <header className="home-header">
                 <div>
                     <h1 className='title-top'>Your Bonney Lake</h1><br />
@@ -47,9 +48,39 @@ export default function Home() {
                     <img src={interior} alt="car interior before and after" className="popular-img" />
 
                     <div className="popular-desc">
-                        <p>Our best selling interior cleaning solution, because it can and will clean years of worth of dirt and other buildup from your cars interior. The difference will be noticeable!</p>
+                        {/* <p>Our best selling interior cleaning solution, because it can and will clean years of worth of dirt and other buildup from your cars interior. The difference will be noticeable!</p>
                         <p>We will use our array of tools to help us get the stickiest of things out of the carpet, stains off of the vinyl, or dress up your leather seats. This package comes with Hot Water Extraction which we will go above and beyond with to clean your vehicle.</p>
-                        <p>We'll work on all sizes of vehicles, and we've been able to get plenty of great results from even the worst of interiors!</p>
+                        <p>We'll work on all sizes of vehicles, and we've been able to get plenty of great results from even the worst of interiors!</p> */}
+                        <ul className="checklist">
+                            <li className="checklist-item">
+                                <FaCheckCircle className='checkcircle' />
+                                <p>Vacuum the Whole Interior</p>
+                            </li>
+                            <li className="checklist-item">
+                                <FaCheckCircle className='checkcircle' />
+                                <p>Tornador Vortex blowgun</p>
+                            </li>
+                            <li className="checklist-item">
+                                <FaCheckCircle className='checkcircle' />
+                                <p>Hot Water Extraction</p>
+                            </li>
+                            <li className="checklist-item">
+                                <FaCheckCircle className='checkcircle' />
+                                <p>Clean ALL Plastics/Leather</p>
+                            </li>
+                            <li className="checklist-item">
+                                <FaCheckCircle className='checkcircle' />
+                                <p>Dress Vinyl/Leather</p>
+                            </li>
+                            <li className="checklist-item">
+                                <FaCheckCircle className='checkcircle' />
+                                <p>Clean Door Jambs</p>
+                            </li>
+                            <li className="checklist-item">
+                                <FaCheckCircle className='checkcircle' />
+                                <p>Lick Windows clean</p>
+                            </li>
+                        </ul>
                     </div>
                     <Link to="full-int-ex" className="popular-readmore">
                         <p>Learn More</p>
@@ -62,9 +93,9 @@ export default function Home() {
                     <img src={paint} alt="paint correction before and after" className="popular-img" />
 
                     <div className="popular-desc">
-                        <p>Our best package to get your vehicles paint to pristine condition.</p>
+                        {/* <p>Our best package to get your vehicles paint to pristine condition.</p>
                         <p>We'll start by giving your vehicle an entire wash, then we will use a clay bar, iron decontamination, and tape off the vehicle to get it ready for the paint correction. Lastly, we will protect your car with a ceramic coating to preserve the work we did.</p>
-                        <p>This is a time consuming process, but trust us it will remove most if not all of the scratches and swirls from your paint, making your car look better than ever.</p>
+                        <p>This is a time consuming process, but trust us it will remove most if not all of the scratches and swirls from your paint, making your car look better than ever.</p> */}
                     </div>
                     <Link to="two-paint-correction" className="popular-readmore">
                         <p>Learn More</p>
@@ -76,9 +107,9 @@ export default function Home() {
                     <img src={dlWash} alt="car exterior picture" className="popular-img" />
                     
                     <div className="popular-desc">
-                        <p>The best Exterior wash package you could choose! Complete with a ceramic spray wax to protect your car from the outside world.</p>
+                        {/* <p>The best Exterior wash package you could choose! Complete with a ceramic spray wax to protect your car from the outside world.</p>
                         <p>We'll wash everything from the gas door to the wheel wells to leave no dirt behind.</p>
-                        <p>This package comes with our 3 step process when waxing your car to make sure the wax applies properly and will not only last longer, but also protect your vehicle better.</p>
+                        <p>This package comes with our 3 step process when waxing your car to make sure the wax applies properly and will not only last longer, but also protect your vehicle better.</p> */}
                     </div>
                     <Link to="premium-dl-wash" className="popular-readmore">
                         <p>Learn More</p>

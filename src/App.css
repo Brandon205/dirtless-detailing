@@ -14,8 +14,10 @@
 
   /** Text and smaller colors **/
   --supporting-text: #6B6B6B;
-  --heading-clr1: #4B7E90;
-  --heading-clr2: #035979;
+  /* --heading-clr1: #4B7E90;
+  --heading-clr2: #035979; */
+  --heading-clr1: #2EC8FF;
+  --heading-clr2: #00a2e1;
 
   /** Backgrounds and other colors **/
   /* --contact-bkg-clr: #252525;
@@ -64,7 +66,6 @@ section {
 }
 
 .dd-desc {
-  color: black;
   font-weight: 300;
   line-height: 2;
   margin: 0 auto;
@@ -117,6 +118,7 @@ section {
 }
 
 .top-quote-btn {
+  color: white;
   text-decoration: none;
 }
 
@@ -195,7 +197,8 @@ header h1 {
 }
 
 .title-top {
-  margin-top: 1em;
+  margin-top: 0;
+  padding-top: 1em;
   font-size: 2.5em;
   font-weight: 300;
   color: var(--heading-clr1);
@@ -211,7 +214,8 @@ header h1 {
 
 
 .cover {
-  filter: brightness(65%) blur(1px);
+  /* filter: brightness(65%) blur(6px) grayscale(50%); */
+  filter: brightness(50%) grayscale(65%);
   position: absolute;
   height: 75%;
   width: 100%;
@@ -272,11 +276,37 @@ header h1 {
 
 .popular-desc {
   padding: 0 1em;
+  position: relative;
 }
 
 .popular-img {
   max-width: 100%;
   border-radius: 5px;
+}
+
+.checklist {
+  list-style: none;
+  display: inline-block;
+  padding-left: 0;
+  font-size: 1.1rem;
+  font-weight: 300;
+  width: 95%;
+}
+
+.checklist-item {
+  display: flex;
+  justify-content: flex-start;
+  padding: 7px
+}
+
+.checklist-item p {
+  display: inline-block;
+  margin: 0;
+}
+
+.checkcircle {
+  color: var(--main-clr);
+  margin-right: 0.5rem;
 }
 
 .price {
@@ -368,7 +398,7 @@ header h1 {
 }
 
 .readmore:hover {
-  background-color: #d54102;
+  background-color: var(--main-clr-hover);
 }
 
 .readmore p {
@@ -378,6 +408,8 @@ header h1 {
 .popular-readmore {
   display: inline-block;
   padding: 0.75em 20%;
+  /* position: absolute; */
+  bottom: 10px;
   background-color: var(--main-clr);
   border-radius: 0.5rem;
   color: white;
@@ -386,7 +418,7 @@ header h1 {
 }
 
 .popular-readmore:hover {
-  background-color: #d54102;
+  background-color: var(--main-clr-hover);
 }
 
 .popular-readmore p {
@@ -558,7 +590,8 @@ hr {
   }
 
   .title-top {
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
+    padding-top: 3rem;
     line-height: 2;
   }
 
@@ -573,6 +606,10 @@ hr {
 
   .popular-container {
     justify-content: space-around;
+  }
+
+  .popular-desc {
+    height: 400px;
   }
 
   /** Nav CSS **/

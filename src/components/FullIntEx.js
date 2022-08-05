@@ -7,8 +7,8 @@ const steps = [
   "Use our Tornador Vortex blowgun which uses compressed air to blow out every spot a vacuum can't reach, it also extracts sand and loose soil from carpeting (Most detailers don't do this).",
   "We use a professional hot water extractor and professional flex stain remover and alkaline floor rinse to keep floors at a neutral PH level. (Another thing other detailers won't do). We will be sure to get all carpets, floor mats, and cloth seats",
   "Clean, steam, and degrease all plastics and leather seats",
-  "Dress all vinal and leather (if wanted)",
-  "Clean all of the door jams",
+  "Dress all vinyl and leather (if wanted)",
+  "Clean all of the door jambs",
   "Clean windows",
 ]
 
