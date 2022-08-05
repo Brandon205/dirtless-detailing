@@ -296,6 +296,7 @@ header h1 {
 .checklist-item {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   padding: 7px
 }
 
@@ -590,7 +591,6 @@ hr {
   }
 
   .title-top {
-    /* margin-top: 3rem; */
     padding-top: 3rem;
     line-height: 2;
   }
@@ -609,7 +609,10 @@ hr {
   }
 
   .popular-desc {
-    height: 400px;
+    /* height: 400px; */
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
   }
 
   /** Nav CSS **/

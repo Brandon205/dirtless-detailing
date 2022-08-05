@@ -3,6 +3,7 @@ import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { FaCheckCircle } from 'react-icons/fa';
+import { BsCheck2Circle } from 'react-icons/bs';
 
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 import '../App.css';
@@ -53,31 +54,31 @@ export default function Home() {
                         <p>We'll work on all sizes of vehicles, and we've been able to get plenty of great results from even the worst of interiors!</p> */}
                         <ul className="checklist">
                             <li className="checklist-item">
-                                <FaCheckCircle className='checkcircle' />
+                                <BsCheck2Circle className='checkcircle' />
                                 <p>Vacuum the Whole Interior</p>
                             </li>
                             <li className="checklist-item">
-                                <FaCheckCircle className='checkcircle' />
-                                <p>Tornador Vortex blowgun</p>
+                                <BsCheck2Circle className='checkcircle' />
+                                <p>Tornador Vortex Blowgun</p>
                             </li>
                             <li className="checklist-item">
-                                <FaCheckCircle className='checkcircle' />
+                                <BsCheck2Circle className='checkcircle' />
                                 <p>Hot Water Extraction</p>
                             </li>
                             <li className="checklist-item">
-                                <FaCheckCircle className='checkcircle' />
+                                <BsCheck2Circle className='checkcircle' />
                                 <p>Clean ALL Plastics/Leather</p>
                             </li>
                             <li className="checklist-item">
-                                <FaCheckCircle className='checkcircle' />
+                                <BsCheck2Circle className='checkcircle' />
                                 <p>Dress Vinyl/Leather</p>
                             </li>
                             <li className="checklist-item">
-                                <FaCheckCircle className='checkcircle' />
+                                <BsCheck2Circle className='checkcircle' />
                                 <p>Clean Door Jambs</p>
                             </li>
                             <li className="checklist-item">
-                                <FaCheckCircle className='checkcircle' />
+                                <BsCheck2Circle className='checkcircle' />
                                 <p>Lick Windows clean</p>
                             </li>
                         </ul>
@@ -96,6 +97,44 @@ export default function Home() {
                         {/* <p>Our best package to get your vehicles paint to pristine condition.</p>
                         <p>We'll start by giving your vehicle an entire wash, then we will use a clay bar, iron decontamination, and tape off the vehicle to get it ready for the paint correction. Lastly, we will protect your car with a ceramic coating to preserve the work we did.</p>
                         <p>This is a time consuming process, but trust us it will remove most if not all of the scratches and swirls from your paint, making your car look better than ever.</p> */}
+                        <ul className="checklist">
+                            <li className="checklist-item">
+                                <BsCheck2Circle className='checkcircle' />
+                                <p>Full Vehicle Strip Wash</p>
+                            </li>
+                            <li className="checklist-item">
+                                <BsCheck2Circle className='checkcircle' />
+                                <p>Clean Wheel Wells, Wheel Barriers, and Wheels</p>
+                            </li>
+                            <li className="checklist-item">
+                                <BsCheck2Circle className='checkcircle' />
+                                <p>Clay Bar Treatment</p>
+                            </li>
+                            <li className="checklist-item">
+                                <BsCheck2Circle className='checkcircle' />
+                                <p>Iron Decontamination Treatment</p>
+                            </li>
+                            <li className="checklist-item">
+                                <BsCheck2Circle className='checkcircle' />
+                                <p>Tape off all Trim</p>
+                            </li>
+                            <li className="checklist-item">
+                                <BsCheck2Circle className='checkcircle' />
+                                <p>Apply Griots 2 Stage Paint Correction</p>
+                            </li>
+                            <li className="checklist-item">
+                                <BsCheck2Circle className='checkcircle' />
+                                <p>Ceramic Coat/Spray Vehicle</p>
+                            </li>
+                            <li className="checklist-item">
+                                <BsCheck2Circle className='checkcircle' />
+                                <p>Clean Door Jambs</p>
+                            </li>
+                            <li className="checklist-item">
+                                <BsCheck2Circle className='checkcircle' />
+                                <p>Dress Plastics, Wheel Wells, and Tires</p>
+                            </li>
+                        </ul>
                     </div>
                     <Link to="two-paint-correction" className="popular-readmore">
                         <p>Learn More</p>
@@ -110,6 +149,36 @@ export default function Home() {
                         {/* <p>The best Exterior wash package you could choose! Complete with a ceramic spray wax to protect your car from the outside world.</p>
                         <p>We'll wash everything from the gas door to the wheel wells to leave no dirt behind.</p>
                         <p>This package comes with our 3 step process when waxing your car to make sure the wax applies properly and will not only last longer, but also protect your vehicle better.</p> */}
+                        <ul className="checklist">
+                            <li className="checklist-item">
+                                <BsCheck2Circle className='checkcircle' />
+                                <p>Full Vehicle Strip Wash</p>
+                            </li>
+                            <li className="checklist-item">
+                                <BsCheck2Circle className='checkcircle' />
+                                <p>Clean Wheel Wells, Wheel Barriers, and Wheels</p>
+                            </li>
+                            <li className="checklist-item">
+                                <BsCheck2Circle className='checkcircle' />
+                                <p>Clay Bar Treatment</p>
+                            </li>
+                            <li className="checklist-item">
+                                <BsCheck2Circle className='checkcircle' />
+                                <p>Iron Decontamination Treatment</p>
+                            </li>
+                            <li className="checklist-item">
+                                <BsCheck2Circle className='checkcircle' />
+                                <p>Apply Griots Ceramic Spray</p>
+                            </li>
+                            <li className="checklist-item">
+                                <BsCheck2Circle className='checkcircle' />
+                                <p>Clean Door Jambs</p>
+                            </li>
+                            <li className="checklist-item">
+                                <BsCheck2Circle className='checkcircle' />
+                                <p>Dress Plastics, Wheel Wells, and Tires</p>
+                            </li>
+                        </ul>
                     </div>
                     <Link to="premium-dl-wash" className="popular-readmore">
                         <p>Learn More</p>

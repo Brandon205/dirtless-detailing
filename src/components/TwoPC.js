@@ -9,7 +9,7 @@ const steps = [
   "Iron decontamination to get rid of the rest of the embeded particles in your paint.",
   "Dry the whole vehicle with Supple towels and air blowers.",
   "Tape off trim and sensitive areas (Some detailers skip this step).",
-  "Complete Two Stage pain correction using Griots products removing all scratches and swirls we possibly can while staying safe for clear coat thickness.",
+  "Complete Two Stage paint correction using Griots products removing all scratches and swirls we possibly can while staying safe for clear coat thickness.",
   "Protect paint with ceramic spray or coating.",
   "Clean door jambs.",
   "Dress all plastics, wheel wells, tires."
