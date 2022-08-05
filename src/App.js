@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { HashRouter, Link, Route, Routes } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
 import ddLogo from './assets/imgs/dd-logo.png';
 
 import Home from './components/Home.js';
@@ -24,9 +25,10 @@ export default function App() {
   const [interior, setInterior] = useState('none');
   const [exteriorCorr, setExteriorCorr] = useState('none');
   const [exteriorClean, setExteriorClean] = useState('none');
-
+  
   return (
     <HashRouter>
+      <ScrollToTop />
       <div className="App">
         <header className="App-header">
           <nav>

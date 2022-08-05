@@ -2,7 +2,6 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import { FaCheckCircle } from 'react-icons/fa';
 import { BsCheck2Circle } from 'react-icons/bs';
 
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
