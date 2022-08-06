@@ -562,6 +562,11 @@ hr {
     max-width: 350px;
   }
 
+  .service-heading-link {
+    text-decoration: none;
+    color: black;
+  }
+
   .otherservices-container {
     flex-wrap: wrap;
     flex-direction: row;
@@ -609,7 +614,7 @@ hr {
   }
 
   .contact-container {
-    margin-top: 8rem;
+    margin-top: 5rem;
   }
 
   .popular-container {

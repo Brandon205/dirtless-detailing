@@ -24,7 +24,7 @@ export default function FullIntEx() {
   return (
     <section className='content-container'>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}></div>
-      <h1 className='servicepage-heading'>Full Interior With Extraction</h1>
+      <h1 className='servicepage-heading'>Full Interior Cleaning</h1>
       <div className='main-content-container'>
         <h2>Our Interior Cleaning Process</h2>
         <ol className='list'>
@@ -32,8 +32,28 @@ export default function FullIntEx() {
         </ol>
         <h4><span className='special-package'>*</span>Extraction Package Only</h4>
         <h4>*Headliners not included*</h4>
-        <h2>Pricing</h2>
+
+        <h2>Full Interior Without Extraction Pricing</h2>
         <h4>Our basic prices are shown below, actual prices will be based on your vehicle size.</h4>
+        <div className="pricing-container">
+          <div className="pricing-card">
+            <h4 className="size">Small</h4>
+            <p className="example-vehicle">2 Door Coupes, Single and Extended Cabs</p>
+            <p className="pricing-price">$200</p>
+          </div>
+          <div className="pricing-card">
+            <h4 className="size">Medium</h4>
+            <p className="example-vehicle">4 Door Sedans, 4 Door Trucks, Smaller SUV's</p>
+            <p className="pricing-price">$250</p>
+          </div>
+          <div className="pricing-card">
+            <h4 className="size">Large</h4>
+            <p className="example-vehicle">Big SUV's and 3 Row SUV's</p>
+            <p className="pricing-price">$300</p>
+          </div>
+        </div>
+
+        <h2>Full Interior With Extraction Pricing</h2>
         <div className="pricing-container">
           <div className="pricing-card">
             <h4 className="size">Small</h4>

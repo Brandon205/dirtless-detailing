@@ -43,7 +43,7 @@ export default function Home() {
             <section className="popular-container">
 
                 <div className="popular-services-card">
-                    <h2 className="popular-service-title">Full Interior Cleaning with Extraction</h2>
+                    <Link to="full-int-ex" className="service-heading-link"><h2 className="popular-service-title">Full Interior Cleaning with Extraction</h2></Link>
                     <p className="price">Starting at: <span>$200</span></p>
                     <img src={interior} alt="car interior before and after" className="popular-img" />
 
@@ -88,7 +88,7 @@ export default function Home() {
                 </div>
 
                 <div className="popular-services-card">
-                    <h2 className="popular-service-title">Two Stage Paint Correction</h2>
+                    <Link to="two-paint-correction" className="service-heading-link"><h2 className="popular-service-title">Two Stage Paint Correction</h2></Link>
                     <p className="price">Starting at: <span>$450</span></p>
                     <img src={paint} alt="paint correction before and after" className="popular-img" />
 
@@ -140,7 +140,7 @@ export default function Home() {
                     </Link>
                 </div>
                 <div className="popular-services-card">
-                    <h2 className="popular-service-title">Premium Dirt-Less Wash</h2>
+                    <Link to="premium-dl-wash" className="service-heading-link"><h2 className="popular-service-title">Premium Dirt-Less Wash</h2></Link>
                     <p className="price">Starting at: <span>$150</span></p>
                     <img src={dlWash} alt="car exterior picture" className="popular-img" />
                     
@@ -192,17 +192,17 @@ export default function Home() {
                 <p>Our services that will renew your vehicles interior</p>
             </div>
             <section className="otherservices-container">
-                <div className="service-card">
-                    <h2>Full Interior without Extraction</h2>
+                {/* <div className="service-card">
+                    <Link to="full-int-ex" className="service-heading-link"><h2>Full Interior without Extraction</h2></Link>
                     <p className="secondary-text">Starting at: <span>$200</span></p>
                     <p className="service-desc">A thorough cleaning of your cars interior, we'll get all of the cracks and crevices of your vehicle cleaned out with this one.</p>
                     <hr className="card-hr" />
                     <Link to="full-int" className="readmore">
                         <p>Learn More</p>
                     </Link>
-                </div>
+                </div> */}
                 <div className="service-card">
-                    <h2>Smoker Car/Bio/Mold/etc Cleaning</h2>
+                    <Link to="bio" className="service-heading-link"><h2>Smoker Car/Bio/Mold/etc Cleaning</h2></Link>
                     <p className="secondary-text">Starting at: <span>$300</span></p>
                     <p className="service-desc">If there are bad smells like mold or smoke in your car this will be the package for you. We'll use cleaning chemicals suited for the job to get rid of those odors for good.</p>
                     <hr className="card-hr" />
@@ -211,7 +211,7 @@ export default function Home() {
                     </Link>
                 </div>
                 <div className="service-card">
-                    <h2>Headliners</h2>
+                    <Link to="headliners" className="service-heading-link"><h2>Headliners</h2></Link>
                     <p className="secondary-text">Starting at: <span>$40</span></p>
                     <p className="service-desc">To clean your headliners we will determine the best plan of attack based on the materials in order to leave your headliners clean without sagging or eventual problems.</p>
                     <hr className="card-hr" />
@@ -227,7 +227,7 @@ export default function Home() {
             </div>
             <section className="otherservices-container">
                 <div className="service-card">
-                    <h2>Single Stage Paint Correction</h2>
+                    <Link to="single-paint-correction" className="service-heading-link"><h2>Single Stage Paint Correction</h2></Link>
                     <p className="secondary-text">Starting at: <span>$300</span></p>
                     <p className="service-desc">Our single stage paint correction can fix about 80% of minor damage and scratches and will leave your vehicle looking shinier than ever.</p>
                     <hr className="card-hr" />
@@ -236,7 +236,7 @@ export default function Home() {
                     </Link>
                 </div>
                 <div className="service-card">
-                    <h2>Glass Polishing</h2>
+                    <Link to="glass" className="service-heading-link"><h2>Glass Polishing</h2></Link>
                     <p className="secondary-text">Starting at: <span>$70</span></p>
                     <p className="service-desc">Scratches or etching on the glass of your car? We'll get rid of those with this package.</p>
                     <hr className="card-hr" />
@@ -245,7 +245,7 @@ export default function Home() {
                     </Link>
                 </div>
                 <div className="service-card">
-                    <h2>Waterspot and Overspray Removal</h2>
+                    <Link to="waterspot" className="service-heading-link"><h2>Waterspot and Overspray Removal</h2></Link>
                     <p className="secondary-text">Starting at: <span>$60</span></p>
                     <p className="service-desc">If there are any waterspots or overspray on your vehicle that are bugging you, let us know and we can get rid of them.</p>
                     <hr className="card-hr" />
@@ -261,7 +261,7 @@ export default function Home() {
             </div>
             <section className="otherservices-container">
                 <div className="service-card">
-                    <h2>Dirt-Less Wash</h2>
+                    <Link to="dl-wash" className="service-heading-link"><h2>Dirt-Less Wash</h2></Link>
                     <p className="secondary-text">Starting at: <span>$75</span></p>
                     <p className="service-desc">Our Dirt-Less Wash will thoroughly clean the exterior of your vehicle with our tried and true cleaning process.</p>
                     <hr className="card-hr" />
@@ -270,7 +270,7 @@ export default function Home() {
                     </Link>
                 </div>
                 <div className="service-card">
-                    <h2>Engine Cleaning</h2>
+                    <Link to="engine" className="service-heading-link"><h2>Engine Cleaning</h2></Link>
                     <p className="secondary-text">Starting at: <span>$80</span></p>
                     <p className="service-desc">The engine bay is usually overlooked and tricky to clean, but we can take care of it for you and leave yours looking like new.</p>
                     <hr className="card-hr" />

@@ -6,7 +6,6 @@ import ddLogo from './assets/imgs/dd-logo.png';
 import Home from './components/Home.js';
 import About from './components/About.js';
 import FullIntEx from './components/FullIntEx.js';
-import FullInt from './components/FullInt.js';
 import Bio from './components/Bio.js';
 import Headliners from './components/Headliners.js';
 import DLWash from './components/DLWash.js';
@@ -25,7 +24,7 @@ export default function App() {
   const [interior, setInterior] = useState('none');
   const [exteriorCorr, setExteriorCorr] = useState('none');
   const [exteriorClean, setExteriorClean] = useState('none');
-  
+
   return (
     <HashRouter>
       <ScrollToTop />
@@ -42,8 +41,8 @@ export default function App() {
                 <div style={{position: 'relative'}}>
                   <li className='menu-li' onMouseEnter={() => { setExteriorCorr('none'); setExteriorClean('none'); setInterior('block') }} onMouseLeave={() => { setExteriorCorr('none'); setExteriorClean('none'); setInterior('none') }} onClick={() => { setExteriorCorr('none'); setExteriorClean('none'); setInterior('block') }}>Interior <span><FaCaretDown /></span></li>
                   <ul className="sub-ul" onMouseEnter={() => { setExteriorCorr('none'); setExteriorClean('none'); setInterior('block') }} onMouseLeave={() => { setExteriorCorr('none'); setExteriorClean('none'); setInterior('none') }} style={{display: interior}}>
-                    <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='full-int-ex' className='menu-link'>Full Interior w/ Extraction</Link></li>
-                    <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='full-int' className='menu-link'>Full Interior w/out Extraction</Link></li>
+                    <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='full-int-ex' className='menu-link'>Full Interior Cleaning</Link></li>
+                    {/* <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='full-int' className='menu-link'>Full Interior w/out Extraction</Link></li> */}
                     <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='bio' className='menu-link'>Biohazard Cleaning</Link></li>
                     <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='headliners' className='menu-link'>Headliners</Link></li>
                   </ul>
@@ -77,7 +76,6 @@ export default function App() {
           <Route exact path="/" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="full-int-ex" element={<FullIntEx />} />
-          <Route exact path="full-int" element={<FullInt />} />
           <Route path="bio" element={<Bio />} />
           <Route path="headliners" element={<Headliners />} />
           <Route path="dl-wash" element={<DLWash />} />
@@ -101,10 +99,7 @@ export default function App() {
           <div className="footer-content-card">
             <h3>INTERIOR</h3>
             <Link to="full-int-ex" className="footer-link">
-              <p className="footer-text">Full Interior Cleaning with Extraction</p>
-            </Link>
-            <Link to="full-int" className="footer-link">
-              <p className="footer-text">Full Interior Cleaning without Extraction</p>
+              <p className="footer-text">Full Interior Cleaning</p>
             </Link>
             <Link to="bio" className="footer-link">
               <p className="footer-text">Smoke / Biohazard / Mold Removal</p>
