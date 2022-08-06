@@ -19,7 +19,7 @@ export default function Home() {
             <header className="home-header">
                 <div>
                     <h1 className='title-top'>Your Bonney Lake</h1><br />
-                    <h1 className='title-bottom'>Car Detailing Specialists</h1>
+                    <h1 className='title-bottom'>Detailing Specialists</h1>
                     <h4 className='dd-desc'>Plenty of 5-star reviews from the customers we've served. </h4>
                     <h4 className='dd-desc'>We will do Interiors, Exteriors, Paint Correction, and much more. We will have your car looking brand new.</h4>
                     <HashLink smooth to="/#popular-services" className="learn-btn top-learn-btn">Learn More</HashLink>
