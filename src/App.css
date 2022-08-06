@@ -125,8 +125,7 @@ nav {
 }
 
 li span {
-  float: right;
-  padding-right: 10px;
+  padding: 0 3px 0 2px;
 }
 
 .menu-container {
@@ -505,7 +504,7 @@ hr {
 }
 
 .item {
-  background-color: #252525;
+  background-color: var(--contact-bkg-clr);
   padding: 1rem;
   margin-bottom: 1rem;
   color: white;

@@ -16,8 +16,7 @@ export default function FullIntEx() {
   const content = steps.map((item, id) => {
     return (
       <li key={id} className="item">
-        <h3>Step {id + 1}:</h3>
-        {id === 2 ? <span className='special-package'>EXTRACTION PACKAGE ONLY: </span> : ""}
+        <h3>Step {id + 1}{id === 2 ? <span className='special-package'>*</span> : ""}:</h3>
         <p>{item}</p>
       </li>
     )
@@ -31,7 +30,8 @@ export default function FullIntEx() {
         <ol className='list'>
           {content}
         </ol>
-        <h4>*Headliners not included</h4>
+        <h4><span className='special-package'>*</span>Extraction Package Only</h4>
+        <h4>*Headliners not included*</h4>
         <h2>Pricing</h2>
         <h4>Our basic prices are shown below, actual prices will be based on your vehicle size.</h4>
         <div className="pricing-container">
