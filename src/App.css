@@ -1,7 +1,8 @@
 :root {
   /** Backgrounds and other colors **/
   --contact-bkg-clr: #252525;
-  --nav-bkg-clr: whitesmoke;
+  --nav-bkg-clr: rgba(245, 245, 245, 0.5);
+  --menu-container-clr: rgba(245, 245, 245);
   --nav-dropdown-clr: #252525;
   --nav-dropdown-hover: #1d1d1d;
   --boxshadow-clr: rgb(213, 213, 213);
@@ -14,31 +15,18 @@
 
   /** Text and smaller colors **/
   --supporting-text: #6B6B6B;
-  /* --heading-clr1: #4B7E90;
-  --heading-clr2: #035979; */
   --heading-clr1: #2EC8FF;
   --heading-clr2: #00a2e1;
-
-  /** Backgrounds and other colors **/
-  /* --contact-bkg-clr: #252525;
-  --nav-bkg-clr: whitesmoke;
-  --nav-dropdown-clr: #252525;
-  --nav-dropdown-hover: #1d1d1d;
-  --boxshadow-clr: rgb(213, 213, 213);
-  --footer-bkg: #060606; */
-
-  /** Button colors **/
-  /* --main-clr: #fc4c00;
-  --quote-clr: #1D96ED; */
-
-  /** Text and smaller colors **/
-  /* --supporting-text: #6B6B6B; */
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+#service-title {
+  color: var(--heading-clr2)
 }
 
 section {
@@ -144,10 +132,11 @@ li span {
 .menu-container {
   position: absolute;
   text-align: left;
+  margin-top: -2px;
   width: 350px;
   height: 80vh;
   line-height: 2.5;
-  background-color: var(--nav-bkg-clr);
+  background-color: var(--menu-container-clr);
   top: 80px;
   right: 0;
   transition: 0.5s;
@@ -214,9 +203,9 @@ header h1 {
 
 
 .cover {
-  /* filter: brightness(65%) blur(6px) grayscale(50%); */
   filter: brightness(50%) grayscale(65%);
   position: absolute;
+  top: 0;
   height: 75%;
   width: 100%;
   z-index: -5;
@@ -303,10 +292,12 @@ header h1 {
 .checklist-item p {
   display: inline-block;
   margin: 0;
+  text-align: left;
 }
 
 .checkcircle {
   color: var(--main-clr);
+  flex: 0 0 auto;
   margin-right: 0.5rem;
 }
 
@@ -506,7 +497,6 @@ hr {
 
 .content-container {
   width: 100%;
-  
 }
 
 .list {
@@ -539,12 +529,14 @@ hr {
 .pricing-container {
   width: 80vw;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .pricing-card {
   padding: 0.75rem;
-  width: 100%;
-  background-color: dodgerblue;
+  background-color: var(--heading-clr2);
   border-radius: 0.5rem;
   margin-bottom: 2rem;
 }
@@ -557,6 +549,10 @@ hr {
 
 @media screen and (min-width: 450px) {
 
+  .menu-container {
+    background-color: rgba(245, 245, 245, 0);
+  }
+  
   .popular-container {
     flex-wrap: wrap;
     flex-direction: row;
@@ -582,6 +578,19 @@ hr {
   .contact-container {
     max-width: 500px;
     margin-top: 6rem;
+  }
+
+  .list {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .pricing-container {
+    flex-direction: row;
+  }
+
+  .pricing-card {
+    width: 300px;
   }
 }
 
@@ -609,7 +618,6 @@ hr {
   }
 
   .popular-desc {
-    /* height: 400px; */
     display: flex; 
     flex-direction: column;
     justify-content: center;
@@ -621,7 +629,6 @@ hr {
     position: static;
     height: auto;
     width: 75vw;
-    background-color: var(--nav-bkg-clr)
   }
 
   .main-ul {

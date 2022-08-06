@@ -12,7 +12,7 @@ export default function Bio() {
     return (
       <li key={id} className="item">
         <h3>Step {id + 1}:</h3>
-        <p>{item}</p>
+        <p>{item}</p> 
       </li>
     )
   });

@@ -78,7 +78,7 @@ export default function Home() {
                             </li>
                             <li className="checklist-item">
                                 <BsCheck2Circle className='checkcircle' />
-                                <p>Lick Windows clean</p>
+                                <p>Clean Windows</p>
                             </li>
                         </ul>
                     </div>
@@ -204,7 +204,7 @@ export default function Home() {
                 <div className="service-card">
                     <h2>Smoker Car/Bio/Mold/etc Cleaning</h2>
                     <p className="secondary-text">Starting at: <span>$300</span></p>
-                    <p className="service-desc">If there are bad smells like mold or smoke in your car this might be the package for you. We'll use cleaning chemicals suited for the job to get rid of those odors for good.</p>
+                    <p className="service-desc">If there are bad smells like mold or smoke in your car this will be the package for you. We'll use cleaning chemicals suited for the job to get rid of those odors for good.</p>
                     <hr className="card-hr" />
                     <Link to="bio" className="readmore">
                         <p>Learn More</p>
@@ -315,8 +315,8 @@ export default function Home() {
             </article>
 
             <section className="serviceareas-container">
-                <h2 id="temp-hash">Servicing most of the Pierce County and King County Area</h2>
-                <p>As part of our simple and hassle free service, you can come to us or we could come to you!</p>
+                <h2 id="temp-hash">Servicing most of the Pierce and King County Area</h2>
+                <p>As part of our simple and hassle free service, you can come to us or we can come to you!</p>
             </section>
         </div>
     )
