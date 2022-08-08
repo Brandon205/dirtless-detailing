@@ -1,6 +1,6 @@
 import React from 'react';
 
-import cover from '../assets/imgs/fullIntExCover.jpg';
+import cover from '../../assets/imgs/fullIntExCover.jpg';
 
 const steps = [
   "Thouroughly vacuum every crack and crevice of the vehicle",

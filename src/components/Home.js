@@ -48,9 +48,6 @@ export default function Home() {
                     <img src={interior} alt="car interior before and after" className="popular-img" />
 
                     <div className="popular-desc">
-                        {/* <p>Our best selling interior cleaning solution, because it can and will clean years of worth of dirt and other buildup from your cars interior. The difference will be noticeable!</p>
-                        <p>We will use our array of tools to help us get the stickiest of things out of the carpet, stains off of the vinyl, or dress up your leather seats. This package comes with Hot Water Extraction which we will go above and beyond with to clean your vehicle.</p>
-                        <p>We'll work on all sizes of vehicles, and we've been able to get plenty of great results from even the worst of interiors!</p> */}
                         <ul className="checklist">
                             <li className="checklist-item">
                                 <BsCheck2Circle className='checkcircle' />
@@ -93,9 +90,6 @@ export default function Home() {
                     <img src={paint} alt="paint correction before and after" className="popular-img" />
 
                     <div className="popular-desc">
-                        {/* <p>Our best package to get your vehicles paint to pristine condition.</p>
-                        <p>We'll start by giving your vehicle an entire wash, then we will use a clay bar, iron decontamination, and tape off the vehicle to get it ready for the paint correction. Lastly, we will protect your car with a ceramic coating to preserve the work we did.</p>
-                        <p>This is a time consuming process, but trust us it will remove most if not all of the scratches and swirls from your paint, making your car look better than ever.</p> */}
                         <ul className="checklist">
                             <li className="checklist-item">
                                 <BsCheck2Circle className='checkcircle' />
@@ -145,9 +139,6 @@ export default function Home() {
                     <img src={dlWash} alt="car exterior picture" className="popular-img" />
                     
                     <div className="popular-desc">
-                        {/* <p>The best Exterior wash package you could choose! Complete with a ceramic spray wax to protect your car from the outside world.</p>
-                        <p>We'll wash everything from the gas door to the wheel wells to leave no dirt behind.</p>
-                        <p>This package comes with our 3 step process when waxing your car to make sure the wax applies properly and will not only last longer, but also protect your vehicle better.</p> */}
                         <ul className="checklist">
                             <li className="checklist-item">
                                 <BsCheck2Circle className='checkcircle' />
@@ -192,15 +183,6 @@ export default function Home() {
                 <p>Our services that will renew your vehicles interior</p>
             </div>
             <section className="otherservices-container">
-                {/* <div className="service-card">
-                    <Link to="full-int-ex" className="service-heading-link"><h2>Full Interior without Extraction</h2></Link>
-                    <p className="secondary-text">Starting at: <span>$200</span></p>
-                    <p className="service-desc">A thorough cleaning of your cars interior, we'll get all of the cracks and crevices of your vehicle cleaned out with this one.</p>
-                    <hr className="card-hr" />
-                    <Link to="full-int" className="readmore">
-                        <p>Learn More</p>
-                    </Link>
-                </div> */}
                 <div className="service-card">
                     <Link to="bio" className="service-heading-link"><h2>Smoker Car/Bio/Mold/etc Cleaning</h2></Link>
                     <p className="secondary-text">Starting at: <span>$300</span></p>

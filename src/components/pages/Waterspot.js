@@ -1,14 +1,12 @@
 import React from 'react';
 
-import cover from '../assets/imgs/fullIntExCover.jpg';
+import cover from '../../assets/imgs/fullIntExCover.jpg';
 
 const steps = [
-  "Steam Clean.",
-  "Degrease.",
-  "Dress Engine Bay."
+  "Remove all overspray and waterspots we can."
 ]
 
-export default function Engine() {
+export default function Waterspot() {
   const content = steps.map((item, id) => {
     return (
       <li key={id} className="item">
@@ -20,18 +18,18 @@ export default function Engine() {
   return (
     <section className='content-container'>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}></div>
-      <h1 className='servicepage-heading'>Engine Bay Cleaning</h1>
+      <h1 className='servicepage-heading'>Waterspot and Overspray Removal</h1>
       <div className='main-content-container'>
-        <h2>Our Engine Bay Cleaning Process</h2>
+        <h2>Our Overspray Removal Process</h2>
         <ol className='list'>
           {content}
         </ol>
         <h2>Pricing</h2>
-        <h4>Our basic prices for this service are shown below</h4>
+        <h4>Our basic prices are shown below, actual prices will be based on your vehicle size.</h4>
         <div className="pricing-container">
           <div className="pricing-card">
-            <p className="example-vehicle">Any size Vehicle</p>
-            <p className="pricing-price">$80</p>
+            <p className="example-vehicle">Any size vehicle, price is per hour spent</p>
+            <p className="pricing-price">$60/hour</p>
           </div>
         </div>
       </div>
