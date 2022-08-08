@@ -262,6 +262,11 @@ header h1 {
   margin-bottom: 1em;
 }
 
+.service-heading-link {
+  text-decoration: none;
+  color: black;
+}
+
 .popular-desc {
   padding: 0 1em;
   position: relative;
@@ -560,11 +565,6 @@ hr {
 
   .popular-services-card {
     max-width: 350px;
-  }
-
-  .service-heading-link {
-    text-decoration: none;
-    color: black;
   }
 
   .otherservices-container {
