@@ -43,7 +43,7 @@ export default function Home() {
             <section className="popular-container">
 
                 <div className="popular-services-card">
-                    <Link to="full-int-ex" className="service-heading-link"><h2 className="popular-service-title">Full Interior Cleaning with Extraction</h2></Link>
+                    <Link to="full-int-ex" className="service-heading-link"><h2 className="popular-service-title">Full Interior Cleaning</h2></Link>
                     <p className="price">Starting at: <span>$200</span></p>
                     <img src={interior} alt="car interior before and after" className="popular-img" />
 
@@ -85,8 +85,8 @@ export default function Home() {
                 </div>
 
                 <div className="popular-services-card">
-                    <Link to="two-paint-correction" className="service-heading-link"><h2 className="popular-service-title">Two Stage Paint Correction</h2></Link>
-                    <p className="price">Starting at: <span>$450</span></p>
+                    <Link to="single-paint-correction" className="service-heading-link"><h2 className="popular-service-title">Single Stage Paint Correction</h2></Link>
+                    <p className="price">Starting at: <span>$300</span></p>
                     <img src={paint} alt="paint correction before and after" className="popular-img" />
 
                     <div className="popular-desc">
@@ -113,7 +113,7 @@ export default function Home() {
                             </li>
                             <li className="checklist-item">
                                 <BsCheck2Circle className='checkcircle' />
-                                <p>Apply Griots 2 Stage Paint Correction</p>
+                                <p>Apply Griots Single Stage Paint Correction</p>
                             </li>
                             <li className="checklist-item">
                                 <BsCheck2Circle className='checkcircle' />
@@ -129,7 +129,7 @@ export default function Home() {
                             </li>
                         </ul>
                     </div>
-                    <Link to="two-paint-correction" className="popular-readmore">
+                    <Link to="single-paint-correction" className="popular-readmore">
                         <p>Learn More</p>
                     </Link>
                 </div>
