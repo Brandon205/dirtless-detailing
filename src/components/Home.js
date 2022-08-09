@@ -184,6 +184,15 @@ export default function Home() {
             </div>
             <section className="otherservices-container">
                 <div className="service-card">
+                    <Link to="bio" className="service-heading-link"><h2>Full Interior Cleaning</h2></Link>
+                    <p className="secondary-text">Starting at: <span>$200</span></p>
+                    <p className="service-desc"></p>
+                    <hr className="card-hr" />
+                    <Link to="full-int-ex" className="readmore">
+                        <p>Learn More</p>
+                    </Link>
+                </div>
+                <div className="service-card">
                     <Link to="bio" className="service-heading-link"><h2>Smoker Car/Bio/Mold/etc Cleaning</h2></Link>
                     <p className="secondary-text">Starting at: <span>$300</span></p>
                     <p className="service-desc">If there are bad smells like mold or smoke in your car this will be the package for you. We'll use cleaning chemicals suited for the job to get rid of those odors for good.</p>
@@ -218,6 +227,15 @@ export default function Home() {
                     </Link>
                 </div>
                 <div className="service-card">
+                    <Link to="single-paint-correction" className="service-heading-link"><h2>Two Stage Paint Correction</h2></Link>
+                    <p className="secondary-text">Starting at: <span>$450</span></p>
+                    <p className="service-desc"></p>
+                    <hr className="card-hr" />
+                    <Link to="two-paint-correction" className="readmore">
+                        <p>Learn More</p>
+                    </Link>
+                </div>
+                <div className="service-card">
                     <Link to="glass" className="service-heading-link"><h2>Glass Polishing</h2></Link>
                     <p className="secondary-text">Starting at: <span>$70</span></p>
                     <p className="service-desc">Scratches or etching on the glass of your car? We'll get rid of those with this package.</p>
@@ -246,6 +264,15 @@ export default function Home() {
                     <Link to="dl-wash" className="service-heading-link"><h2>Dirt-Less Wash</h2></Link>
                     <p className="secondary-text">Starting at: <span>$75</span></p>
                     <p className="service-desc">Our Dirt-Less Wash will thoroughly clean the exterior of your vehicle with our tried and true cleaning process.</p>
+                    <hr className="card-hr" />
+                    <Link to="dl-wash" className="readmore">
+                        <p>Learn More</p>
+                    </Link>
+                </div>
+                <div className="service-card">
+                    <Link to="dl-wash" className="service-heading-link"><h2>Premium Dirt-Less Wash</h2></Link>
+                    <p className="secondary-text">Starting at: <span>$150</span></p>
+                    <p className="service-desc"></p>
                     <hr className="card-hr" />
                     <Link to="dl-wash" className="readmore">
                         <p>Learn More</p>
