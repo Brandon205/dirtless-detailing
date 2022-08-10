@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Gallery, Item } from 'react-photoswipe-gallery';
+import 'photoswipe/dist/photoswipe.css';
 
 import cover from '../../assets/imgs/fullIntExCover.jpg';
 
@@ -16,7 +18,11 @@ console.log(images)
 export default function FullIntGallery() {
 
   let imagery = images.map((pic, id) => {
-    return <img key={id} src={pic} className="gallery-image" />
+    return <Item original={images[id]} thumbnail={images[id]} className="gallery-item">
+      {({ ref, open }) => (
+      <img className="gallery-image" ref={ref} onClick={open} src={images[id]} />
+    )}
+  </Item>
   })
 
   return (
@@ -26,9 +32,11 @@ export default function FullIntGallery() {
 
       <p>We have cleaned it all, and this is a gallery to show what we can do to even the worst of interiors. Take a look at our <Link to="/full-int-ex" >Full Interior Cleaning</Link> page to find out more</p>
 
-      <div className="gallery-container">
-        {imagery}
-      </div>
+      <Gallery>
+        <div className="gallery-container">
+          {imagery}
+        </div>
+      </Gallery>
     </section>
   )
 }

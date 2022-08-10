@@ -551,10 +551,27 @@ hr {
 
 .gallery-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* .gallery-item {
+  display: block;
+
+  width: 400px;
+  height: 250px;
+} */
+
+.gallery-item {
+  object-fit: fill;
+  width: 100%;
+  height: 250px;
 }
 
 .gallery-image {
-  width: 450px;
+  cursor: pointer;
+  max-height: 450px;
+  margin: 5px;
 }
 
 /** Media Queries CSS **/
