@@ -549,6 +549,14 @@ hr {
   color: var(--quote-clr);
 }
 
+.gallery-container {
+  display: flex;
+}
+
+.gallery-image {
+  width: 450px;
+}
+
 /** Media Queries CSS **/
 
 @media screen and (min-width: 450px) {
