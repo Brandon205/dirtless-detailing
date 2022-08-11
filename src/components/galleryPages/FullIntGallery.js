@@ -13,16 +13,15 @@ function importAll(r) {
 
 let images = importAll(require.context('../../assets/imgs/pageimgs/interior', false, /\.(webp|jpe?g|svg)$/));
 images = Object.values(images)
-console.log(images)
 
 export default function FullIntGallery() {
 
   let imagery = images.map((pic, id) => {
-    return <Item original={images[id]} thumbnail={images[id]} className="gallery-item">
-      {({ ref, open }) => (
-      <img className="gallery-image" ref={ref} onClick={open} src={images[id]} />
-    )}
-  </Item>
+    return <Item key={id} original={images[id]} thumbnail={images[id]} className="gallery-item">
+        {({ ref, open }) => (
+        <img className="gallery-image" ref={ref} onClick={open} src={images[id]} />
+      )}
+    </Item>
   })
 
   return (
