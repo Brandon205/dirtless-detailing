@@ -15,8 +15,10 @@
 
   /** Text and smaller colors **/
   --supporting-text: #6B6B6B;
-  --heading-clr1: #2EC8FF;
-  --heading-clr2: #00a2e1;
+  /* --heading-clr1: #2EC8FF;
+  --heading-clr2: #00a2e1; */
+  --heading-clr1: #fff;
+  --heading-clr2: rgb(185, 185, 185);
 }
 
 *,
@@ -25,9 +27,9 @@
   box-sizing: border-box;
 }
 
-#service-title {
-  color: var(--heading-clr2)
-}
+/* #service-title {
+  color: var(--heading-clr1)
+} */
 
 section {
   width: 80vw;
@@ -226,11 +228,8 @@ header h1 {
 }
 
 .contact-container h3 {
-  text-decoration: underline;
-}
-
-.contact-container a {
   color: var(--main-clr);
+  text-decoration: underline;
 }
 
 .contact-link {
@@ -335,7 +334,7 @@ header h1 {
 }
 
 .separator-container {
-  background-color: lightgray;
+  background-color: var(--contact-bkg-clr);
   padding: 2rem 0;
 }
 
@@ -345,8 +344,8 @@ header h1 {
 }
 
 .service-title {
-  color: var(--heading-clr2);
-  margin-bottom: 0;
+  color: var(--heading-clr1);
+  margin: 30px 0;
 }
 
 .service-card {
@@ -578,7 +577,7 @@ hr {
   }
 
   .popular-services-card {
-    max-width: 350px;
+    max-width: 360px;
   }
 
   .otherservices-container {
