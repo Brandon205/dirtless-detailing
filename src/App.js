@@ -205,7 +205,7 @@ export default function App() {
           </div>
           <hr />
           <div className='socials-container'>
-            <h4>FOLLOW US!</h4>
+            <h4>Copyright DirtLess Detailing 2022</h4>
             <a href="https://www.facebook.com/DirtLessDetailing/" className="socials" target="_blank" rel="noreferrer"><FaFacebook /></a>
           </div>
         </footer>
