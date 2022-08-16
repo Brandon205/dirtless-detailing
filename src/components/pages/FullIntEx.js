@@ -1,4 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+import '../../App.css';
 
 import cover from '../../assets/imgs/fullIntExCover.jpg';
 
@@ -23,9 +26,9 @@ export default function FullIntEx() {
   })
   return (
     <section className='content-container'>
-      <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}></div>
-      <h1 className='servicepage-heading'>Full Interior Cleaning</h1>
       <div className='main-content-container'>
+        <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}></div>
+        <h1 className='servicepage-heading'>Full Interior Cleaning</h1>
         <h2>Our Interior Cleaning Process</h2>
         <ol className='list'>
           {content}
@@ -72,6 +75,14 @@ export default function FullIntEx() {
         </div>
         </div>
       </div>
+      <aside className='service-aside'>
+        <h3>Other Interior Services</h3>
+        <div className="aside-links">
+          <Link to="/full-int-ex" className='service-link'>{window.location.href === 'full-int-ex' ? '> ' : ''} Full Interior Cleaning</Link>
+          <Link to="/bio" className='service-link'>{window.location.href === 'bio' ? '> ' : ''} Bio Hazard/Odor Cleaning</Link>
+          <Link to="/headliners" className='service-link'>{window.location.href === 'headliners' ? '> ' : ''} Headliners</Link>
+        </div>
+      </aside>
     </section>
   )
 }

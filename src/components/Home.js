@@ -37,8 +37,7 @@ export default function Home() {
                 <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link" target="_blank">9305 205th Ave E Bonney Lake Washington</a>
             </section>
             <div className='separator-container'>
-                <h1 id="service-title">Popular Detailing Services</h1>
-                <p>Our most popular services for making your car look like new</p>
+                <h1 className="service-title">Popular Detailing Services</h1>
             </div>
             <section className="popular-container">
 
@@ -80,6 +79,48 @@ export default function Home() {
                         </ul>
                     </div>
                     <Link to="full-int-ex" className="popular-readmore">
+                        <p>Learn More</p>
+                    </Link>
+                </div>
+
+                <div className="popular-services-card">
+                    <Link to="premium-dl-wash" className="service-heading-link"><h2 className="popular-service-title">Premium Dirt-Less Wash</h2></Link>
+                    <p className="price">Starting at: <span>$150</span></p>
+                    <img src={dlWash} alt="car exterior picture" className="popular-img" />
+                    
+                    <div className="popular-desc">
+                        <ul className="checklist">
+                            <li className="checklist-item">
+                                <BsCheck2Circle className='checkcircle' />
+                                <p>Full Vehicle Strip Wash</p>
+                            </li>
+                            <li className="checklist-item">
+                                <BsCheck2Circle className='checkcircle' />
+                                <p>Clean Wheel Wells, Wheel Barriers, and Wheels</p>
+                            </li>
+                            <li className="checklist-item">
+                                <BsCheck2Circle className='checkcircle' />
+                                <p>Clay Bar Treatment</p>
+                            </li>
+                            <li className="checklist-item">
+                                <BsCheck2Circle className='checkcircle' />
+                                <p>Iron Decontamination Treatment</p>
+                            </li>
+                            <li className="checklist-item">
+                                <BsCheck2Circle className='checkcircle' />
+                                <p>Apply Griots Ceramic Spray</p>
+                            </li>
+                            <li className="checklist-item">
+                                <BsCheck2Circle className='checkcircle' />
+                                <p>Clean Door Jambs</p>
+                            </li>
+                            <li className="checklist-item">
+                                <BsCheck2Circle className='checkcircle' />
+                                <p>Dress Plastics, Wheel Wells, and Tires</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <Link to="premium-dl-wash" className="popular-readmore">
                         <p>Learn More</p>
                     </Link>
                 </div>
@@ -133,60 +174,18 @@ export default function Home() {
                         <p>Learn More</p>
                     </Link>
                 </div>
-                <div className="popular-services-card">
-                    <Link to="premium-dl-wash" className="service-heading-link"><h2 className="popular-service-title">Premium Dirt-Less Wash</h2></Link>
-                    <p className="price">Starting at: <span>$150</span></p>
-                    <img src={dlWash} alt="car exterior picture" className="popular-img" />
-                    
-                    <div className="popular-desc">
-                        <ul className="checklist">
-                            <li className="checklist-item">
-                                <BsCheck2Circle className='checkcircle' />
-                                <p>Full Vehicle Strip Wash</p>
-                            </li>
-                            <li className="checklist-item">
-                                <BsCheck2Circle className='checkcircle' />
-                                <p>Clean Wheel Wells, Wheel Barriers, and Wheels</p>
-                            </li>
-                            <li className="checklist-item">
-                                <BsCheck2Circle className='checkcircle' />
-                                <p>Clay Bar Treatment</p>
-                            </li>
-                            <li className="checklist-item">
-                                <BsCheck2Circle className='checkcircle' />
-                                <p>Iron Decontamination Treatment</p>
-                            </li>
-                            <li className="checklist-item">
-                                <BsCheck2Circle className='checkcircle' />
-                                <p>Apply Griots Ceramic Spray</p>
-                            </li>
-                            <li className="checklist-item">
-                                <BsCheck2Circle className='checkcircle' />
-                                <p>Clean Door Jambs</p>
-                            </li>
-                            <li className="checklist-item">
-                                <BsCheck2Circle className='checkcircle' />
-                                <p>Dress Plastics, Wheel Wells, and Tires</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <Link to="premium-dl-wash" className="popular-readmore">
-                        <p>Learn More</p>
-                    </Link>
-                </div>
             </section>
 
             <button className="quote-btn main-quote-btn">Get a Quote</button>
 
             <div className='separator-container'>
                 <h2 className='service-title'>INTERIOR CLEANING SERVICES</h2>
-                <p>Our services that will renew your vehicles interior</p>
             </div>
             <section className="otherservices-container">
                 <div className="service-card">
                     <Link to="bio" className="service-heading-link"><h2>Full Interior Cleaning</h2></Link>
                     <p className="secondary-text">Starting at: <span>$200</span></p>
-                    <p className="service-desc"></p>
+                    <p className="service-desc">A full interior detail will clean every crack and crevice of your cars interior. Optionally we can also do a hot water extraction to the carpets of your vehicle to get out deeper stains and dirt.</p>
                     <hr className="card-hr" />
                     <Link to="full-int-ex" className="readmore">
                         <p>Learn More</p>
@@ -212,9 +211,42 @@ export default function Home() {
                 </div>
             </section>
 
+
+            <div className='separator-container'>
+                <h2 className='service-title'>EXTERIOR CLEANING SERVICES</h2>
+            </div>
+            <section className="otherservices-container">
+                <div className="service-card">
+                    <Link to="dl-wash" className="service-heading-link"><h2>Dirt-Less Wash</h2></Link>
+                    <p className="secondary-text">Starting at: <span>$75</span></p>
+                    <p className="service-desc">Our Dirt-Less Wash will thoroughly clean the exterior of your vehicle with our tried and true cleaning process.</p>
+                    <hr className="card-hr" />
+                    <Link to="dl-wash" className="readmore">
+                        <p>Learn More</p>
+                    </Link>
+                </div>
+                <div className="service-card">
+                    <Link to="dl-wash" className="service-heading-link"><h2>Premium Dirt-Less Wash</h2></Link>
+                    <p className="secondary-text">Starting at: <span>$150</span></p>
+                    <p className="service-desc">Our Premium exterior wash will clean your car with the same thorough procedure as the Dirt-Less Wash, and will then go above and beyond in the cleaning process and topping it all off with a Ceramic Coat to protect your vehicle.</p>
+                    <hr className="card-hr" />
+                    <Link to="dl-wash" className="readmore">
+                        <p>Learn More</p>
+                    </Link>
+                </div>
+                <div className="service-card">
+                    <Link to="engine" className="service-heading-link"><h2>Engine Cleaning</h2></Link>
+                    <p className="secondary-text">Starting at: <span>$80</span></p>
+                    <p className="service-desc">The engine bay is usually overlooked and tricky to clean, but we can take care of it for you and leave yours looking like new.</p>
+                    <hr className="card-hr" />
+                    <Link to="engine-bay" className="readmore">
+                        <p>Learn More</p>
+                    </Link>
+                </div>
+            </section>
+            
             <div className='separator-container'>
                 <h2 className='service-title'>EXTERIOR CORRECTION SERVICES</h2>
-                <p>Our services that will undo any exterior problems</p>
             </div>
             <section className="otherservices-container">
                 <div className="service-card">
@@ -227,9 +259,9 @@ export default function Home() {
                     </Link>
                 </div>
                 <div className="service-card">
-                    <Link to="single-paint-correction" className="service-heading-link"><h2>Two Stage Paint Correction</h2></Link>
+                    <Link to="two-paint-correction" className="service-heading-link"><h2>Two Stage Paint Correction</h2></Link>
                     <p className="secondary-text">Starting at: <span>$450</span></p>
-                    <p className="service-desc"></p>
+                    <p className="service-desc">Our 2 stage paint correction is perfect for getting your car to a perfect state. This is great for show cars that need that extra shine to get to that showroom state.</p>
                     <hr className="card-hr" />
                     <Link to="two-paint-correction" className="readmore">
                         <p>Learn More</p>
@@ -250,40 +282,6 @@ export default function Home() {
                     <p className="service-desc">If there are any waterspots or overspray on your vehicle that are bugging you, let us know and we can get rid of them.</p>
                     <hr className="card-hr" />
                     <Link to="waterspot" className="readmore">
-                        <p>Learn More</p>
-                    </Link>
-                </div>
-            </section>
-
-            <div className='separator-container'>
-                <h2 className='service-title'>EXTERIOR CLEANING SERVICES</h2>
-                <p>Our services that will make your exterior shine like never before</p>
-            </div>
-            <section className="otherservices-container">
-                <div className="service-card">
-                    <Link to="dl-wash" className="service-heading-link"><h2>Dirt-Less Wash</h2></Link>
-                    <p className="secondary-text">Starting at: <span>$75</span></p>
-                    <p className="service-desc">Our Dirt-Less Wash will thoroughly clean the exterior of your vehicle with our tried and true cleaning process.</p>
-                    <hr className="card-hr" />
-                    <Link to="dl-wash" className="readmore">
-                        <p>Learn More</p>
-                    </Link>
-                </div>
-                <div className="service-card">
-                    <Link to="dl-wash" className="service-heading-link"><h2>Premium Dirt-Less Wash</h2></Link>
-                    <p className="secondary-text">Starting at: <span>$150</span></p>
-                    <p className="service-desc"></p>
-                    <hr className="card-hr" />
-                    <Link to="dl-wash" className="readmore">
-                        <p>Learn More</p>
-                    </Link>
-                </div>
-                <div className="service-card">
-                    <Link to="engine" className="service-heading-link"><h2>Engine Cleaning</h2></Link>
-                    <p className="secondary-text">Starting at: <span>$80</span></p>
-                    <p className="service-desc">The engine bay is usually overlooked and tricky to clean, but we can take care of it for you and leave yours looking like new.</p>
-                    <hr className="card-hr" />
-                    <Link to="engine-bay" className="readmore">
                         <p>Learn More</p>
                     </Link>
                 </div>
