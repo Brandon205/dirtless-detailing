@@ -8,19 +8,43 @@ export default function About() {
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}></div>
       <div className='about-header'>
         <h1>About Us/FAQ</h1>
-        <h3>Here you can get some of your questions answered and learn a little about us.</h3>
+        <h3>Learn more about us, and get answers to some of the most commonly asked questions.</h3>
       </div>
 
-      <main className="about-container">
-        <h2>Small Intro</h2>
-        <p>Here at Dirt-less Detailing we strive to provide our best service in order to get your vehicle looking the way that you want it. ETC...</p>
+      <section className="about-container">
+        <h2>Who are we?</h2>
+        <p>Us here at Dirt-less Detailing strive to provide our best service in order to get your vehicle looking the way that you want it.</p>
 
-        <h2>FAQ stuff in here</h2>
-        <ul>
-          <li>How are your prices determined?</li>
-          <p>We have made our simple pricing scheme as easy to navigate as possible to avoid confusion.</p>
+        <h2>FAQ</h2>
+        <ul className='faq-ul'>
+          <li className='faq-li'>What do you need from us when you get here?</li>
+          <p className='faq-p'>All we need is an electrical outlet, and a water spicket and we are good to go.</p>
         </ul>
-      </main>
+        <ul className='faq-ul'>
+          <li className='faq-li'>How long will the detail take?</li>
+          <p className='faq-p'>Every job will take a different amount of time, but there are time estimates on the page of the detail you're looking into.</p>
+        </ul>
+        <ul className='faq-ul'>
+          <li className='faq-li'>Can you come to my apartment or workplace?</li>
+          <p className='faq-p'>Highly dependent on the amount of space and permissions.</p>
+        </ul>
+        <ul className='faq-ul'>
+          <li className='faq-li'>What forms of payment do you take?</li>
+          <p className='faq-p'>You can pay by card or Facebook pay.</p>
+        </ul>
+        <ul className='faq-ul'>
+          <li className='faq-li'>Are you licensed and insured?</li>
+          <p className='faq-p'>We are 100% licensed and insured!</p>
+        </ul>
+        <ul className='faq-ul'>
+          <li className='faq-li'>What cities do you service?</li>
+          <p className='faq-p'>We service most cities in King and Pierce County currently!</p>
+        </ul>
+        <ul className='faq-ul'>
+          <li className='faq-li'>Do I have to be there the whole time you're working on my car?</li>
+          <p className='faq-p'>Absolutely not, you are free to go do whatever you need to do while we are working.</p>
+        </ul>
+      </section>
     </div>
   )
 }

@@ -484,12 +484,34 @@ hr {
 /** ABOUT US CSS **/
 
 .about-header {
+  padding-top: 25vh;
   color: white;
 }
 
 .about-container {
-  color: white
+  margin-top: 32vh;
+  max-width: 80vw;
+  color: black;
 }
+
+.about-container h2 {
+  font-size: 3em;
+}
+
+.faq-ul {
+  text-align: left;
+  letter-spacing: 1.2;
+  padding-left: 0;
+  margin-bottom: 8vh;
+}
+
+.faq-li {
+  font-weight: bold;
+  font-size: 1.2em;
+  list-style: none;
+}
+
+.faq-p
 
 /** SIDE PAGE CSS **/
 .servicepage-heading {
