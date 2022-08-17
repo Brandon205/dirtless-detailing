@@ -520,7 +520,18 @@ hr {
 
 .content-container {
   display: flex;
+  flex-direction: column;
   width: 100%;
+  margin-bottom: 5vh;
+}
+
+.content-container header {
+  color: white;
+  margin: 25vh auto;
+}
+
+.gallery-link {
+  color: var(--main-clr);
 }
 
 .list {
@@ -581,6 +592,7 @@ hr {
 
 .gallery-image {
   cursor: pointer;
+  box-shadow: 0 5px 5px 3px gray;
   max-height: 450px;
   margin: 5px;
 }
@@ -703,9 +715,7 @@ hr {
   }
 
   .content-container {
-    display: flex;
-    flex-direction: row;
-    /* margin-top: 42vh; */
+    margin-top: 10vh
   }
 
   .service-aside {

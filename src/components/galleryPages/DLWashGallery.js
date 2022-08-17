@@ -27,11 +27,12 @@ export default function PaintCorrectionGallery() {
   return (
     <section className='content-container'>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}></div>
-      <h1 className='servicepage-heading'>Engine Cleaning Gallery</h1>
-
-      <p>This is a showcase of our Dirt-Less Wash service. Take a look at our <Link to="/dl-wash">Dirt-Less Wash</Link> page for more info, and if your
-        vehicle is in need of a little extra love you can check out our <Link to="/premium-dl-wash">Premium Dirt-Less Wash</Link>.
-      </p>
+      <header>
+        <h1 className='servicepage-heading'>Dirt-Less Wash Gallery</h1>
+        <p>This is a showcase of our Dirt-Less Wash service. Take a look at our <Link to="/dl-wash" className='gallery-link'>Dirt-Less Wash</Link> page for more info, and if your
+          vehicle is in need of a little extra love you can check out our <Link to="/premium-dl-wash" className='gallery-link'>Premium Dirt-Less Wash</Link>.
+        </p>
+      </header>
 
       <Gallery>
         <div className="gallery-container">

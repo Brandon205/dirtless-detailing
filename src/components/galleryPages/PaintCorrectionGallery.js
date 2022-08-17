@@ -27,9 +27,10 @@ export default function PaintCorrectionGallery() {
   return (
     <section className='content-container'>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}></div>
-      <h1 className='servicepage-heading'>Paint Correction Gallery</h1>
-
-      <p>This is a gallery to show what we can do to correct your paint problems. Take a look at our <Link to="/single-paint-correction" >Single Stage Paint Correction</Link> page or our <Link to="/two-paint-correction" >Two Stage Paint Correction</Link></p>
+      <header>
+        <h1 className='servicepage-heading'>Paint Correction Gallery</h1>
+        <p>This is a gallery to show what we can do to correct your paint problems. Take a look at our <Link to="/single-paint-correction" className='gallery-link' >Single Stage Paint Correction</Link> page or our <Link to="/two-paint-correction" className='gallery-link' >Two Stage Paint Correction</Link></p>
+      </header>
 
       <Gallery>
         <div className="gallery-container">
