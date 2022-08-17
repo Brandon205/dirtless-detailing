@@ -534,6 +534,11 @@ hr {
   color: var(--main-clr);
 }
 
+.service-content-container {
+  display: flex;
+  width: 100%;
+}
+
 .list {
   list-style: none;
   padding: 0.5rem;
