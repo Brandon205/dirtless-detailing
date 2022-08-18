@@ -360,7 +360,7 @@ header h1 {
 .card-hr {
   border-top: 1px dashed black;
   border-bottom: none;
-  width: 100%;
+  width: 112%;
   margin-left: -6%
 }
 
@@ -399,7 +399,6 @@ header h1 {
 .popular-readmore {
   display: inline-block;
   padding: 0.75em 20%;
-  /* position: absolute; */
   bottom: 10px;
   background-color: var(--main-clr);
   border-radius: 0.5rem;
@@ -684,6 +683,27 @@ hr {
     display: flex; 
     flex-direction: column;
     justify-content: center;
+  }
+
+  .popular-services-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .popular-readmore {
+    margin: 0 auto;
+  }
+
+  .service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .readmore {
+    max-width: 50%;
+    margin: 0 auto;
   }
 
   /** Nav CSS **/
