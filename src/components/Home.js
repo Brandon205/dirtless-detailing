@@ -27,26 +27,24 @@ export default function Home() {
                 </div>
             </header>
             <section className="contact-container">
-                <div>
+                <div className='contact-container-left'>
                     <h2>CONTACT US</h2>
-                    <a href="tel:2532529758" className="contact-link" target="_blank">(253) 252-9758</a>
+                    <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link" target="_blank">9305 205th Ave E Bonney Lake Washington</a>
 
                     <h3>WORKING HOURS</h3>
                     <p className="hours-p">Monday - Sunday: 8 AM - 8 PM</p>
 
-                    <h3>LOCATION</h3>
-                    <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link" target="_blank">9305 205th Ave E Bonney Lake Washington</a>
                 </div>
-                <div className='contact-right-container'>
-                    <h3>Get In Touch</h3>
-                    <input type="text" id="name" name="name" />
-                    <label for="name">Name</label>
-                    <input type="text" id="email" name="email" />
-                    <label htmlFor="email">Email</label>
-                    <input type="checkbox" id="service" name="service" />
-                    <label htmlFor="service">Service Type</label>
-                    <input type="text" id="message" name="message" />
-                    <label htmlFor="message">Message</label>
+                <div className='contact-container-right'>
+                    <h2>Get In Touch</h2>
+                    <label for="name" className='input-label'>Name</label><br />
+                    <input type="text" id="name" name="name" /><br />
+                    <label htmlFor="email" className='input-label'>Email</label><br />
+                    <input type="text" id="email" name="email" /><br />
+                    <label htmlFor="service" className='input-label'>Service Type</label><br />
+                    <input type="radio" id="service" name="service" /><br />
+                    <label htmlFor="message" className='input-label'>Message</label><br />
+                    <input type="textarea" id="message" name="message" />
                 </div>
             </section>
             <div className='separator-container'>

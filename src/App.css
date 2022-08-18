@@ -214,18 +214,33 @@ header h1 {
 
 /** Home Page Contact CSS **/
 .contact-container {
-  background-color: var(--contact-bkg-clr);
   line-height: 2.5;
-  color: white;
+  color: black;
   width: 90vw;
   margin: 4rem auto;
-  padding: 1.2rem;
-  border-radius: 1rem;
 }
 
 .contact-container h3 {
   color: var(--main-clr);
   text-decoration: underline;
+}
+
+.contact-container-left h2, .contact-container-right h2 {
+  color: var(--main-clr);
+  font-size: 1.5em;
+  margin: 0.75rem;
+}
+
+.contact-container-left {
+  background-color: var(--contact-bkg-clr);
+  padding: 1.2rem;
+  border-radius: 1rem;
+  color: white;  
+}
+
+.contact-container-right {
+  /* background-color: var(--contact-bkg-clr); */
+  color: black;
 }
 
 .contact-link {
@@ -672,7 +687,9 @@ hr {
   }
 
   .contact-container {
-    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: space-around;
   }
 
   .popular-container {
