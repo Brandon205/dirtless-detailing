@@ -39,11 +39,11 @@ export default function Home() {
                     <h2>Get In Touch</h2>
                     <form action="#" className="form">
                         <label for="name" className='input-label' aria-required>Name</label><br />
-                        <input type="text" id="name" name="name" /><br />
+                        <input type="text" id="name" name="name" className='text-input' /><br />
                         <label htmlFor="email" className='input-label'>Email</label><br />
-                        <input type="text" id="email" name="email" /><br />
+                        <input type="text" id="email" name="email" className='text-input' /><br />
                         <label htmlFor="service" className='input-label'>Service Type</label><br />
-                        <select name="service" id="service">
+                        <select name="service" id="service" className='select-input'>
                             <option value="Select">Select One...</option>
 
                             <option value="Full Interior Cleaning">Full Interior Cleaning</option>
@@ -59,8 +59,8 @@ export default function Home() {
                             <option value="Glass Polishing">Glass Polishing</option>
                             <option value="Waterspot/Overspray Removal">Waterspot/Overspray Removal</option>
                         </select>
-                        <label htmlFor="message" className='input-label'>Message</label><br />
-                        <textarea type="textarea" id="message" name="message" placeholder='Additional details, etc...' />
+                        <label htmlFor="message" className='input-label'>Additional Details</label><br />
+                        <textarea type="textarea" id="message" name="message" className='textarea-input' placeholder='Anything else we might want to know?' />
                     </form>
                 </div>
             </section>
