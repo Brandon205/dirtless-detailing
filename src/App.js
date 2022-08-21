@@ -100,21 +100,21 @@ export default function App() {
                 </div>
 
                 <div style={{position: 'relative'}}>
+                  <li className='menu-li' onMouseEnter={() => changeNav('exteriorClean')} onMouseLeave={() => changeNav('none')} onClick={() => changeNav('exteriorClean')}>Exterior Cleaning <span><FaCaretDown /></span></li>
+                  <ul className="sub-ul" onMouseEnter={() => changeNav('exteriorClean')} onMouseLeave={() => changeNav('none')} style={{display: exteriorClean}}>
+                    <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='dl-wash' className='menu-link'>Dirt-Less Wash</Link></li>
+                    <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='premium-dl-wash' className='menu-link'>Premium Dirt-Less Wash</Link></li>
+                    <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='engine' className='menu-link'>Engine Bay</Link></li>
+                  </ul>
+                </div>
+
+                <div style={{position: 'relative'}}>
                   <li className='menu-li' onMouseEnter={() => changeNav('exteriorCorr')} onMouseLeave={() => changeNav('none')} onClick={() => changeNav('exteriorCorr')}>Paint Correction <span><FaCaretDown /></span></li>
                   <ul className="sub-ul" onMouseEnter={() => changeNav('exteriorCorr')} onMouseLeave={() => changeNav('none')} style={{display: exteriorCorr}}>
                     <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='single-paint-correction' className='menu-link'>Single Stage Paint Correction</Link></li>
                     <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='two-paint-correction' className='menu-link'>Two Stage Paint Correction</Link></li>
                     <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='glass' className='menu-link'>Glass Polishing</Link></li>
                     <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='waterspot' className='menu-link'>Waterspot/Overspray Removal</Link></li>
-                  </ul>
-                </div>
-
-                <div style={{position: 'relative'}}>
-                  <li className='menu-li' onMouseEnter={() => changeNav('exteriorClean')} onMouseLeave={() => changeNav('none')} onClick={() => changeNav('exteriorClean')}>Exterior Cleaning <span><FaCaretDown /></span></li>
-                  <ul className="sub-ul" onMouseEnter={() => changeNav('exteriorClean')} onMouseLeave={() => changeNav('none')} style={{display: exteriorClean}}>
-                    <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='dl-wash' className='menu-link'>Dirt-Less Wash</Link></li>
-                    <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='premium-dl-wash' className='menu-link'>Premium Dirt-Less Wash</Link></li>
-                    <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='engine' className='menu-link'>Engine Bay</Link></li>
                   </ul>
                 </div>
 

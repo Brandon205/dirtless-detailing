@@ -33,22 +33,38 @@ export default function Home() {
 
                     <h3>WORKING HOURS</h3>
                     <p className="hours-p">Monday - Sunday: <br />8 AM - 8 PM</p>
-
                 </div>
+
                 <div className='contact-container-right'>
                     <h2>Get In Touch</h2>
                     <form action="#" className="form">
-                        <label for="name" className='input-label'>Name</label><br />
+                        <label for="name" className='input-label' aria-required>Name</label><br />
                         <input type="text" id="name" name="name" /><br />
                         <label htmlFor="email" className='input-label'>Email</label><br />
                         <input type="text" id="email" name="email" /><br />
                         <label htmlFor="service" className='input-label'>Service Type</label><br />
-                        <input type="radio" id="service" name="service" /><br />
+                        <select name="service" id="service">
+                            <option value="Select">Select One...</option>
+
+                            <option value="Full Interior Cleaning">Full Interior Cleaning</option>
+                            <option value="Biohazard Cleaning">Biohazard Cleaning</option>
+                            <option value="Headliners">Headliners</option>
+
+                            <option value="Dirt-Less Wash">Dirt-Less Wash</option>
+                            <option value="Premium Dirt-Less Wash">Premium Dirt-Less Wash</option>
+                            <option value="Engine Bay Cleaning">Engine Bay Cleaning</option>
+
+                            <option value="Single Stage Paint Correction">Single Stage Paint Correction</option>
+                            <option value="Two Stage Paint Correction">Two Stage Paint Correction</option>
+                            <option value="Glass Polishing">Glass Polishing</option>
+                            <option value="Waterspot/Overspray Removal">Waterspot/Overspray Removal</option>
+                        </select>
                         <label htmlFor="message" className='input-label'>Message</label><br />
-                        <input type="textarea" id="message" name="message" />
+                        <textarea type="textarea" id="message" name="message" placeholder='Additional details, etc...' />
                     </form>
                 </div>
             </section>
+
             <div className='separator-container'>
                 <h1 className="service-title">Popular Detailing Services</h1>
             </div>
