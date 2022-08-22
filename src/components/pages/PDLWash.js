@@ -1,4 +1,5 @@
 import React from 'react';
+import { HashLink } from 'react-router-hash-link';
 
 import cover from '../../assets/imgs/fullIntExCover.jpg';
 
@@ -56,6 +57,7 @@ export default function PDLWash() {
           </div>
         </div>
       </div>
+      <HashLink smooth to="/#contact" className="quote-btn top-quote-btn service-page-quote-btn">Get Quote</HashLink>
     </section>
   )
 }

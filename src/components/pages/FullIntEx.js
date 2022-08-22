@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 import '../../App.css';
 
@@ -74,6 +74,7 @@ export default function FullIntEx() {
             <p className="pricing-price">$350</p>
         </div>
         </div>
+        <HashLink smooth to="/#contact" className="quote-btn top-quote-btn service-page-quote-btn">Get Quote</HashLink>
       </div>
       {/* <aside className='service-aside'>
         <h3>Other Interior Services</h3>

@@ -112,6 +112,10 @@ section {
   margin-bottom: 3rem;
 }
 
+.service-page-quote-btn {
+  color: black;
+}
+
 /** Navigation CSS **/
 nav {
   display: flex;
@@ -239,11 +243,15 @@ header h1 {
 }
 
 .contact-container-left a {
-  color: var(--main-clr);
+  color: white;
 }
 
 .contact-container-right {
   text-align: center;
+  color: black;
+}
+
+.contact-container-right a {
   color: black;
 }
 
@@ -728,7 +736,7 @@ hr {
   }
 
   .contact-container-left {
-    width: 250px;
+    width: 300px;
   }
 
   .popular-container {

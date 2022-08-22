@@ -23,10 +23,10 @@ export default function Home() {
                     <h4 className='dd-desc'>Plenty of 5-star reviews from the customers we've served. </h4>
                     <h4 className='dd-desc'>We will do Interiors, Exteriors, Paint Correction, and much more. We will have your car looking brand new.</h4>
                     <HashLink smooth to="/#popular-services" className="learn-btn top-learn-btn">Learn More</HashLink>
-                    <HashLink smooth to="/#temp-hash" className="quote-btn top-quote-btn">Get Quote</HashLink>
+                    <HashLink smooth to="/#contact" className="quote-btn top-quote-btn">Get Quote</HashLink>
                 </div>
             </header>
-            <section className="contact-container">
+            <section className="contact-container" id="contact">
                 <div className='contact-container-left'>
                     <h2>CONTACT US</h2>
                     <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link" target="_blank">9305 205th Ave E Bonney Lake Washington</a>
@@ -39,6 +39,8 @@ export default function Home() {
 
                 <div className='contact-container-right'>
                     <h2>Get In Touch</h2>
+                    <a href="tel:2532529758" target="_blank" rel="noreferrer">(253) 252-9758</a>
+
                     <form action="#" className="form">
                         <label for="name" className='input-label' aria-required>Name</label><br />
                         <input type="text" id="name" name="name" className='text-input' /><br />
