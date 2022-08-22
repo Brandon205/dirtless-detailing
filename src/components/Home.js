@@ -30,6 +30,8 @@ export default function Home() {
                 <div className='contact-container-left'>
                     <h2>CONTACT US</h2>
                     <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link" target="_blank">9305 205th Ave E Bonney Lake Washington</a>
+                    <p>Feel free to message or call us at: <a href="tel:2532529758" target="_blank" rel="noreferrer">(253) 252-9758</a>, send us a message on <a href="https://www.facebook.com/DirtLessDetailing/" target="_blank" rel="noreferrer">Facebook Messenger</a>, or send us an email below/to the right.</p>
+                    
 
                     <h3>WORKING HOURS</h3>
                     <p className="hours-p">Monday - Sunday: <br />8 AM - 8 PM</p>
@@ -61,6 +63,7 @@ export default function Home() {
                         </select>
                         <label htmlFor="message" className='input-label'>Additional Details</label><br />
                         <textarea type="textarea" id="message" name="message" className='textarea-input' placeholder='Anything else we might want to know?' />
+                        <button className='readmore'>Submit</button>
                     </form>
                 </div>
             </section>
