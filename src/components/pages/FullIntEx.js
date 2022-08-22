@@ -1,7 +1,6 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
-
-import '../../App.css';
+import { BsCheck2Circle } from 'react-icons/bs';
 
 import cover from '../../assets/imgs/fullIntExCover.jpg';
 
@@ -24,17 +23,53 @@ export default function FullIntEx() {
       </li>
     )
   })
+
   return (
     <section className='service-content-container'>
       <div className='main-content-container'>
         <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}></div>
-        <h1 className='servicepage-heading'>Full Interior Cleaning</h1>
+        <h1 className='servicepage-header'>Full Interior Cleaning</h1>
         <h2>Our Interior Cleaning Process</h2>
         <ol className='list'>
           {content}
         </ol>
         <h4><span className='special-package'>*</span>Extraction Package Only</h4>
         <h4>*Headliners not included*</h4>
+
+        <div className="service-checklist">
+          <h3 className="checklist-title">Full Interior Cleaning</h3>
+          <h4>This Package Includes:</h4>
+          <ul className="checklist">
+            <li className="checklist-item">
+              <BsCheck2Circle className='checkcircle' />
+              <p>Vacuum the Whole Interior</p>
+            </li>
+            <li className="checklist-item">
+              <BsCheck2Circle className='checkcircle' />
+              <p>Tornador Vortex Blowgun</p>
+            </li>
+            <li className="checklist-item">
+              <BsCheck2Circle className='checkcircle' />
+              <p>Hot Water Extraction</p>
+            </li>
+            <li className="checklist-item">
+              <BsCheck2Circle className='checkcircle' />
+              <p>Clean ALL Plastics/Leather</p>
+            </li>
+            <li className="checklist-item">
+              <BsCheck2Circle className='checkcircle' />
+              <p>Dress Vinyl/Leather</p>
+            </li>
+            <li className="checklist-item">
+              <BsCheck2Circle className='checkcircle' />
+              <p>Clean Door Jambs</p>
+            </li>
+            <li className="checklist-item">
+              <BsCheck2Circle className='checkcircle' />
+              <p>Clean Windows</p>
+            </li>
+          </ul>
+        </div>
 
         <h2>Full Interior Without Extraction Pricing</h2>
         <h4>Our basic prices are shown below, actual prices will be based on your vehicle size.</h4>

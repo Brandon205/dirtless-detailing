@@ -564,11 +564,9 @@ hr {
   list-style: none;
 }
 
-.faq-p
-
 /** SIDE PAGE CSS **/
-.servicepage-heading {
-  color: white;
+.servicepage-header {
+  color: var(--heading-clr1);
   font-size: 2em;
   padding-top: 25vh;
   margin: 0 auto 42vh auto;
@@ -622,10 +620,6 @@ hr {
   text-align: center;
 }
 
-.service-aside {
-  display: none;
-}
-
 .pricing-container {
   width: 80vw;
   margin: 0 auto;
@@ -643,6 +637,31 @@ hr {
 
 .special-package {
   color: var(--quote-clr);
+}
+
+.service-checklist {
+  background-color: var(--contact-bkg-clr);
+  color: white;
+  width: 90vw;
+  margin: 0 auto;
+  border-radius: 1rem;
+  padding: 0 0 1.2rem 0;
+}
+
+.service-checklist h4 {
+  font-size: 1.2em;
+  font-size: 500;
+  margin-bottom: 0;
+}
+
+.checklist-title {
+  margin: 0;
+  font-size: 1.4em;
+  padding: 0.5rem;
+  background-color: var(--main-clr);
+  color: white;
+  width: 100%
+  border-radius 1rem 1rem 0 0 
 }
 
 .gallery-container {
