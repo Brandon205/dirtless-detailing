@@ -1,6 +1,7 @@
 :root {
   /** Backgrounds and other colors **/
   --contact-bkg-clr: #252525;
+  --contact-bkg-clr-light: #ECEDF5;
   --nav-bkg-clr: rgba(245, 245, 245, 0.5);
   --menu-container-clr: rgba(245, 245, 245);
   --nav-dropdown-clr: #252525;
@@ -589,7 +590,6 @@ hr {
 }
 
 .service-content-container {
-  display: flex;
   width: 100%;
 }
 
@@ -824,12 +824,54 @@ hr {
     display: none;
   }
 
+  /** OTHER CSS **/
+
+  .list {
+    width: 60vw;
+  }
+
   .content-container {
     margin-top: 10vh
   }
 
+  .main-content-container {
+    display: flex;
+    flex-direction: row;
+    width: 95vw;
+    margin: 0 auto;
+  }
+
+  .aside-container {
+    display: flex;
+    flex-direction: column;
+  }
+
   .service-aside {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--contact-bkg-clr-light);
+    max-height: 400px;
+    color: black;
+    padding: 1rem;
+  }
+
+  .service-link {
     display: inline-block;
+    text-decoration: none;
+    margin: 5px;
+    padding: 0.5rem;
+    background-color: var(--contact-bkg-clr-light);
+    border-radius: 5px;
+    color: black;
+  }
+
+  .service-link:hover {
+    background-color: #d6d7e1 !important;
+    color: var(--main-clr);
+  }
+
+  .service-checklist {
+    width: 45vw;
   }
 
 }
