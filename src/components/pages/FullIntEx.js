@@ -110,7 +110,7 @@ export default function FullIntEx() {
               <h4 className="size">Large</h4>
               <p className="example-vehicle">Big SUV's and 3 Row SUV's</p>
               <p className="pricing-price">$350</p>
-          </div>
+            </div>
           </div>
         </div>
 
@@ -126,7 +126,6 @@ export default function FullIntEx() {
           <HashLink smooth to="/#contact" className="quote-btn top-quote-btn service-page-quote-btn">Contact Us</HashLink>
         </div>
       </div>
-
     </section>
   )
 }

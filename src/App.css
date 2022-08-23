@@ -510,6 +510,10 @@ hr {
   margin-left: 1rem;
 }
 
+.footer-text:hover {
+  text-decoration: underline;
+}
+
 .footer-text {
   color: lightgray;
 }
@@ -630,9 +634,20 @@ hr {
 
 .pricing-card {
   padding: 0.75rem;
-  background-color: var(--heading-clr2);
+  background-color: var(--contact-bkg-clr-light);
   border-radius: 0.5rem;
   margin-bottom: 2rem;
+}
+
+.size {
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0.5rem 0 0.75rem 0;
+}
+
+.example-vehicle {
+  margin-bottom: 1.75rem;
 }
 
 .special-package {
