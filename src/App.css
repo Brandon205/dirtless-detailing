@@ -42,6 +42,12 @@ section {
   top: 0;
 }
 
+.subtext {
+  margin-top: 0;
+  font-weight: 300;
+  color: var(--supporting-text)
+}
+
 .logo {
   width: 75px;
   height: 75px;
@@ -638,9 +644,49 @@ hr {
   font-weight: 300;
 }
 
+.cleaning-process-title {
+  margin-top: 0;
+}
+
+.vertical-rule {
+  display: inline;
+  outline: 2px solid white;
+  height: 100%;
+  margin-right: 10px;
+}
 
 .main-content-container {
   text-align: center;
+}
+
+.aside-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-aside {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--contact-bkg-clr-light);
+  border-radius: 0.5rem;
+  max-height: 400px;
+  color: black;
+  padding: 1rem;
+}
+
+.service-link {
+  display: inline-block;
+  text-decoration: none;
+  margin: 5px;
+  padding: 0.5rem;
+  background-color: var(--contact-bkg-clr-light);
+  border-radius: 5px;
+  color: black;
+}
+
+.service-link:hover {
+  background-color: #d6d7e1 !important;
+  color: var(--main-clr);
 }
 
 .pricing-container {
@@ -649,6 +695,11 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.pricing-title {
+  font-size: 2em;
+  margin-bottom: 0
 }
 
 .pricing-card {
@@ -670,7 +721,7 @@ hr {
 }
 
 .special-package {
-  color: var(--quote-clr);
+  color: var(--main-clr);
 }
 
 .service-checklist {
@@ -870,38 +921,15 @@ hr {
 
   .main-content-container {
     display: flex;
+    flex-direction: column;
+  }
+
+  .process-container {
+    display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     width: 95vw;
     margin: 0 auto;
-  }
-
-  .aside-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .service-aside {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--contact-bkg-clr-light);
-    max-height: 400px;
-    color: black;
-    padding: 1rem;
-  }
-
-  .service-link {
-    display: inline-block;
-    text-decoration: none;
-    margin: 5px;
-    padding: 0.5rem;
-    background-color: var(--contact-bkg-clr-light);
-    border-radius: 5px;
-    color: black;
-  }
-
-  .service-link:hover {
-    background-color: #d6d7e1 !important;
-    color: var(--main-clr);
   }
 
   .service-checklist {

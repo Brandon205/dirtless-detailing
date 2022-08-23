@@ -20,10 +20,10 @@ export default function FullIntEx() {
     return (
       <li key={id} className="item">
         <div className='step-number-container'>
-          <h3 className='step-number'>{id + 1}{id === 2 ? <span className='special-package'>*</span> : ""}|</h3>
+          <h3 className='step-number'>{id + 1}</h3><div className="vertical-rule"></div>
         </div>
         <div className='step-container'>
-          <h4 className="step-title">{item[0]}</h4>
+          <h4 className="step-title">{item[0]}{id === 2 ? <span className='special-package'>*</span> : ""}</h4>
           <p className='step-desc'>{item[1]}</p>
         </div>
       </li>
@@ -36,15 +36,17 @@ export default function FullIntEx() {
       <h1 className='servicepage-header'>Full Interior Cleaning</h1>
 
       <div className='main-content-container'>
-        <div>
-          <h2>Our Interior Cleaning Process*</h2>
-          <ol className='list'>
-            {content}
-          </ol>
-          <h4>*Headliners not included</h4>
-          <h4><span className='special-package'>*</span>Extraction Package Only</h4>
+        <div className='process-container'>
+          <div>
+            <h2 className='cleaning-process-title'>Our Interior Cleaning Process*</h2>
+            <ol className='list'>
+              {content}
+            </ol>
+            <h4 style={{marginTop: 0}}>*Headliners not included</h4>
+            <h4><span className='special-package'>*</span>Extraction Package Only</h4>
+          </div>
 
-          <div className="service-checklist">
+          {/* <div className="service-checklist">
             <h3 className="checklist-title">Full Interior Cleaning</h3>
             <h4>This Package Includes:</h4>
             <ul className="checklist">
@@ -77,10 +79,24 @@ export default function FullIntEx() {
                 <p>Clean Windows</p>
               </li>
             </ul>
-          </div>
+          </div> */}
 
-          <h2>Full Interior Without Extraction Pricing</h2>
-          <h4>Our basic prices are shown below, actual prices will be based on your vehicle size.</h4>
+          <div className='aside-container'>
+            <div className='service-aside'>
+              <h3>Our Other Interior Services</h3>
+              <div className="aside-links">
+                <Link to="/full-int-ex" style={{color: window.location.href.endsWith('full-int-ex') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('full-int-ex') ? '> ' : ''} Full Interior Cleaning</Link><br />
+                <Link to="/bio" style={{color: window.location.href.endsWith('bio') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('bio') ? '> ' : ''} Bio Hazard/Odor Cleaning</Link><br />
+                <Link to="/headliners" style={{color: window.location.href.endsWith('headliners') ? 'blue' : 'black'}} className={'service-link'}>{window.location.href.endsWith('headliners') ? '> ' : ''} Headliners</Link>
+              </div>
+            </div>
+            <HashLink smooth to="/#contact" className="quote-btn top-quote-btn service-page-quote-btn">Contact Us</HashLink>
+          </div>
+        </div>
+
+        <div>
+          <h2 className='pricing-title'>Full Interior Without Extraction Pricing</h2>
+          <h4 className='subtext'>*Final pricing may vary based on vehicle size/condition</h4>
           <div className="pricing-container">
             <div className="pricing-card">
               <h4 className="size">Small</h4>
@@ -99,7 +115,7 @@ export default function FullIntEx() {
             </div>
           </div>
 
-          <h2>Full Interior With Extraction Pricing</h2>
+          <h2 className='pricing-title'>Full Interior With Extraction Pricing</h2>
           <div className="pricing-container">
             <div className="pricing-card">
               <h4 className="size">Small</h4>
@@ -117,18 +133,6 @@ export default function FullIntEx() {
               <p className="pricing-price">$350</p>
             </div>
           </div>
-        </div>
-
-        <div className='aside-container'>
-          <div className='service-aside'>
-            <h3>Other Interior Services</h3>
-            <div className="aside-links">
-              <Link to="/full-int-ex" style={{color: window.location.href.endsWith('full-int-ex') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('full-int-ex') ? '> ' : ''} Full Interior Cleaning</Link><br />
-              <Link to="/bio" style={{color: window.location.href.endsWith('bio') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('bio') ? '> ' : ''} Bio Hazard/Odor Cleaning</Link><br />
-              <Link to="/headliners" style={{color: window.location.href.endsWith('headliners') ? 'blue' : 'black'}} className={'service-link'}>{window.location.href.endsWith('headliners') ? '> ' : ''} Headliners</Link>
-            </div>
-          </div>
-          <HashLink smooth to="/#contact" className="quote-btn top-quote-btn service-page-quote-btn">Contact Us</HashLink>
         </div>
       </div>
     </section>
