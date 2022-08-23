@@ -6,21 +6,26 @@ import { BsCheck2Circle } from 'react-icons/bs';
 import cover from '../../assets/imgs/fullIntExCover.jpg';
 
 const steps = [
-  "Thouroughly vacuum every crack and crevice of the vehicle",
-  "Use our Tornador Vortex blowgun which uses compressed air to blow out every spot a vacuum can't reach, it also extracts sand and loose soil from carpeting (Most detailers don't do this).",
-  "We use a professional hot water extractor and professional flex stain remover and alkaline floor rinse to keep floors at a neutral PH level. (Another thing other detailers won't do). We will be sure to get all carpets, floor mats, and cloth seats",
-  "Clean, steam, and degrease all plastics and leather seats",
-  "Dress all vinyl and leather (if wanted)",
-  "Clean all of the door jambs",
-  "Clean windows",
+  ["Vacuum Vehicle", "Thouroughly vacuum every crack and crevice of the vehicle"],
+  ["Expose Hidden Dirt", "Use our Tornador Vortex blowgun which uses compressed air to blow out every spot a vacuum can't reach, it also extracts sand and loose soil from carpeting (Most detailers don't do this)."],
+  ["Hot Water Extraction", "We use a professional hot water extractor and professional flex stain remover and alkaline floor rinse to keep floors at a neutral PH level. (Another thing other detailers won't do). We will be sure to get all carpets, floor mats, and cloth seats"],
+  ["Clean Plastics and Leathers", "Clean, steam, and degrease all plastics and leather seats"],
+  ["Dress Interior", "Dress all vinyl and leather (if wanted)"],
+  ["Door Jambs", "Clean all of the door jambs"],
+  ["Window Cleaning", "Clean windows"],
 ]
 
 export default function FullIntEx() {
   const content = steps.map((item, id) => {
     return (
       <li key={id} className="item">
-        <h3>Step {id + 1}{id === 2 ? <span className='special-package'>*</span> : ""}:</h3>
-        <p>{item}</p>
+        <div className='step-number-container'>
+          <h3 className='step-number'>{id + 1}{id === 2 ? <span className='special-package'>*</span> : ""}|</h3>
+        </div>
+        <div className='step-container'>
+          <h4 className="step-title">{item[0]}</h4>
+          <p className='step-desc'>{item[1]}</p>
+        </div>
       </li>
     )
   })

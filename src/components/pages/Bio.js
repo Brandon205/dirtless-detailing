@@ -25,8 +25,6 @@ export default function Bio() {
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}></div>
       <h1 className='servicepage-header'>Smoke/Biohazard/Odor Removal</h1>
 
-
-
       <div className='main-content-container'>
         <div>
           <h2>Our Biohazard Cleaning Process</h2>

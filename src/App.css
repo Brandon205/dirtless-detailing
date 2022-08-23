@@ -604,21 +604,40 @@ hr {
 
 .item {
   background-color: var(--contact-bkg-clr);
+  display: flex;
   padding: 1rem;
   margin-bottom: 1rem;
   color: white;
   border-radius: 0.5em;
 }
 
-.item p {
+.step-number-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-container {
+  text-align: left;
+}
+
+.step-number {
+  display: inline;
+  font-size: 2em;
+  margin: 0.5rem;
+}
+
+.step-title {
+  font-size: 1.2em;
+  line-height: 1.2;
+  margin: 0.5rem 0 0 0;
+}
+
+.step-desc{
   display: inline;
   font-weight: 300;
 }
 
-.item h3 {
-  display: inline;
-  margin: 0.5rem;
-}
 
 .main-content-container {
   text-align: center;
