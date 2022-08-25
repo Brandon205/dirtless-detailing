@@ -328,7 +328,7 @@ header h1 {
 
 .popular-desc {
   padding: 0 1em;
-  position: relative;
+  /* position: relative; */
 }
 
 .popular-img {
@@ -441,7 +441,7 @@ header h1 {
 
 .readmore {
   display: inline-block;
-  position: relative;
+  /* position: relative; */
   bottom: 0;
   margin-top: 0.75rem;
   background-color: var(--main-clr);
@@ -480,6 +480,11 @@ header h1 {
 }
 
 /** Home Page Review CSS **/
+.reviews-container {
+  position: relative;
+  z-index: -999;
+}
+
 .review-carousel {
   padding: 2em;
   font-size: 1.25rem;
