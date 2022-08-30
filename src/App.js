@@ -39,39 +39,21 @@ export default function App() {
     switch (changeTo) {
       case 'interior': {
         setInterior('block');
-        // setExteriorCorr('none');
-        // setExteriorClean('none');
-        // setGallery('none');
       }
       break;
       case 'exteriorCorr': {
-        // setInterior('none');
         setExteriorCorr('block');
-        // setExteriorClean('none');
-        // setGallery('none');
       }
       break;
       case 'exteriorClean': {
-        // setInterior('none');
-        // setExteriorCorr('none');
         setExteriorClean('block');
-        // setGallery('none');
       }
       break;
       case 'gallery': {
-        // setInterior('none');
-        // setExteriorCorr('none');
-        // setExteriorClean('none');
+
         setGallery('block');
       }
       break;
-      // case 'none': {
-      //   setInterior('none');
-      //   setExteriorCorr('none');
-      //   setExteriorClean('none');
-      //   setGallery('none');
-      // }
-      // break;
 
       default: {
         setInterior('none');
