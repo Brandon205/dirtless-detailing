@@ -249,8 +249,34 @@ header h1 {
   color: white;  
 }
 
+.hours-p {
+  margin-top: 0;
+}
+
 .contact-container-left a {
   color: white;
+}
+
+.contact-container-left h2 {
+  margin-bottom: 0;
+}
+
+.contact-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.contact-icon {
+  font-size: 1.5em;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.contact-icon:hover {
+  color: black;
+  transition: color 0.25s
 }
 
 .contact-container-right {
@@ -295,6 +321,10 @@ header h1 {
 .contact-link {
   color: white;
   margin: 0.25em;
+}
+
+.location-link {
+  line-height: 1.5s
 }
 
 /** Home Page Services CSS **/
