@@ -13,7 +13,7 @@ export default function About() {
 
       <section className="about-container">
         <h2>Who are we?</h2>
-        <p>Us here at Dirt-less Detailing strive to provide our best service in order to get your vehicle looking the way that you want it.</p>
+        <p>Dirt-Less Detailing was started with two things in mind. Providing the absolute best results and customer service your money can buy.</p>
 
         <h2>FAQ</h2>
         <ul className='faq-ul'>

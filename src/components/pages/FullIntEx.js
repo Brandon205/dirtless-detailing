@@ -89,7 +89,7 @@ export default function FullIntEx() {
                 <Link to="/headliners" style={{color: window.location.href.endsWith('headliners') ? 'blue' : 'black'}} className={'service-link'}>{window.location.href.endsWith('headliners') ? '> ' : ''} Headliners</Link>
               </div>
             </div>
-            <HashLink smooth to="/#contact" className="quote-btn top-quote-btn service-page-quote-btn">Contact Us</HashLink>
+            <HashLink smooth to="/#contact" className="quote-btn top-quote-btn service-page-quote-btn">Get A Quote</HashLink>
           </div>
         </div>
 
