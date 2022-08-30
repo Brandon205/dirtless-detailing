@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
-import cover from '../../assets/imgs/fullIntExCover.jpg';
+import cover from '../../assets/imgs/PDLWashCover.jpg';
 
 const steps = [
   ["Wash Vehicle", "Thorough strip wash top to bottom including the gas door with the 2 bucket method or using a Foam Cannon."],
