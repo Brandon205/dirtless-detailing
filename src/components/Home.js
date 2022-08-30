@@ -99,15 +99,15 @@ export default function Home() {
                         <ul className="checklist">
                             <li className="checklist-item">
                                 <BsCheck2Circle className='checkcircle' />
+                                <p>Blow out with Vortex Blowgun</p>
+                            </li>
+                            <li className="checklist-item">
+                                <BsCheck2Circle className='checkcircle' />
+                                <p>Hot Water Extraction - If added</p>
+                            </li>
+                            <li className="checklist-item">
+                                <BsCheck2Circle className='checkcircle' />
                                 <p>Vacuum the Whole Interior</p>
-                            </li>
-                            <li className="checklist-item">
-                                <BsCheck2Circle className='checkcircle' />
-                                <p>Tornador Vortex Blowgun</p>
-                            </li>
-                            <li className="checklist-item">
-                                <BsCheck2Circle className='checkcircle' />
-                                <p>Hot Water Extraction</p>
                             </li>
                             <li className="checklist-item">
                                 <BsCheck2Circle className='checkcircle' />
@@ -157,7 +157,7 @@ export default function Home() {
                             </li>
                             <li className="checklist-item">
                                 <BsCheck2Circle className='checkcircle' />
-                                <p>Apply Griots Ceramic Spray</p>
+                                <p>Apply 6 month sealant or better</p>
                             </li>
                             <li className="checklist-item">
                                 <BsCheck2Circle className='checkcircle' />
@@ -187,7 +187,7 @@ export default function Home() {
                             </li>
                             <li className="checklist-item">
                                 <BsCheck2Circle className='checkcircle' />
-                                <p>Clean Wheel Wells, Wheel Barriers, and Wheels</p>
+                                <p>Clean Wheel Wells, Wheel Barrels, and Wheels</p>
                             </li>
                             <li className="checklist-item">
                                 <BsCheck2Circle className='checkcircle' />
@@ -199,15 +199,19 @@ export default function Home() {
                             </li>
                             <li className="checklist-item">
                                 <BsCheck2Circle className='checkcircle' />
-                                <p>Tape off all Trim</p>
+                                <p>Remove Tar and Sap</p>
                             </li>
                             <li className="checklist-item">
                                 <BsCheck2Circle className='checkcircle' />
-                                <p>Apply Griots Single Stage Paint Correction</p>
+                                <p>Tape Off All Trim</p>
                             </li>
                             <li className="checklist-item">
                                 <BsCheck2Circle className='checkcircle' />
-                                <p>Ceramic Coat/Spray Vehicle</p>
+                                <p>Single Stage Paint Correction</p>
+                            </li>
+                            <li className="checklist-item">
+                                <BsCheck2Circle className='checkcircle' />
+                                <p>Ceramic Spray/Coat</p>
                             </li>
                             <li className="checklist-item">
                                 <BsCheck2Circle className='checkcircle' />
@@ -234,7 +238,7 @@ export default function Home() {
                 <div className="service-card">
                     <Link to="bio" className="service-heading-link"><h2>Full Interior Cleaning</h2></Link>
                     <p className="secondary-text">Starting at: <span>$200</span></p>
-                    <p className="service-desc">A full interior detail will clean every crack and crevice of your cars interior. Optionally we can also do a hot water extraction to the carpets of your vehicle to get out deeper stains and dirt.</p>
+                    <p className="service-desc">A full interior detail will clean every crack and crevice of your vehicles interior. Optionally we can also do a hot water extraction to the carpets of your vehicle to get out deeper stains and dirt.</p>
                     <hr className="card-hr" />
                     <Link to="full-int-ex" className="readmore">
                         <p>Learn More</p>
@@ -252,7 +256,7 @@ export default function Home() {
                 <div className="service-card">
                     <Link to="headliners" className="service-heading-link"><h2>Headliners</h2></Link>
                     <p className="secondary-text">Starting at: <span>$40</span></p>
-                    <p className="service-desc">To clean your headliners we will determine the best plan of attack based on the materials in order to leave your headliners clean without sagging or eventual problems.</p>
+                    <p className="service-desc">To clean your headliners we will determine the best plan of attack based on the materials in order to leave your headliners clean and prevent sagging or damage.</p>
                     <hr className="card-hr" />
                     <Link to="headliners" className="readmore">
                         <p>Learn More</p>
@@ -277,7 +281,7 @@ export default function Home() {
                 <div className="service-card">
                     <Link to="dl-wash" className="service-heading-link"><h2>Premium Dirt-Less Wash</h2></Link>
                     <p className="secondary-text">Starting at: <span>$150</span></p>
-                    <p className="service-desc">Our Premium exterior wash will clean your car with the same thorough procedure as the Dirt-Less Wash, and will then go above and beyond in the cleaning process and topping it all off with a Ceramic Coat to protect your vehicle.</p>
+                    <p className="service-desc">Our Premium exterior wash will clean your car with the same thorough procedure as the Dirt-Less Wash, and will then go above and beyond in the cleaning process and topping it all off with a 6 month sealant or better to protect your vehicle.</p>
                     <hr className="card-hr" />
                     <Link to="dl-wash" className="readmore">
                         <p>Learn More</p>
@@ -286,7 +290,7 @@ export default function Home() {
                 <div className="service-card">
                     <Link to="engine" className="service-heading-link"><h2>Engine Cleaning</h2></Link>
                     <p className="secondary-text">Starting at: <span>$80</span></p>
-                    <p className="service-desc">The engine bay is usually overlooked and tricky to clean, but we can take care of it for you and leave yours looking like new.</p>
+                    <p className="service-desc">The engine bay is typically overlooked and tricky to clean, but we can take care of it for you and leave yours looking like new.</p>
                     <hr className="card-hr" />
                     <Link to="engine-bay" className="readmore">
                         <p>Learn More</p>
@@ -301,7 +305,7 @@ export default function Home() {
                 <div className="service-card">
                     <Link to="single-paint-correction" className="service-heading-link"><h2>Single Stage Paint Correction</h2></Link>
                     <p className="secondary-text">Starting at: <span>$300</span></p>
-                    <p className="service-desc">Our single stage paint correction can fix about 80% of minor damage and scratches and will leave your vehicle looking shinier than ever.</p>
+                    <p className="service-desc">Our single stage paint correction can fix 60%-80% of minor damage and scratches and will leave your vehicle looking shinier than ever.</p>
                     <hr className="card-hr" />
                     <Link to="single-paint-correction" className="readmore">
                         <p>Learn More</p>
@@ -310,7 +314,7 @@ export default function Home() {
                 <div className="service-card">
                     <Link to="two-paint-correction" className="service-heading-link"><h2>Two Stage Paint Correction</h2></Link>
                     <p className="secondary-text">Starting at: <span>$450</span></p>
-                    <p className="service-desc">Our 2 stage paint correction is perfect for getting your car to a perfect state. This is great for show cars that need that extra shine to get to that showroom state.</p>
+                    <p className="service-desc">Our 2 stage paint correction is great for getting your car to a near perfect state. This is great for show cars need that extra time and effort to get to that showroom shine.</p>
                     <hr className="card-hr" />
                     <Link to="two-paint-correction" className="readmore">
                         <p>Learn More</p>
