@@ -704,7 +704,7 @@ hr {
   flex-direction: column;
   background-color: var(--contact-bkg-clr-light);
   border-radius: 0.5rem;
-  max-height: 400px;
+  max-width: 280px;
   color: black;
   padding: 1rem;
 }

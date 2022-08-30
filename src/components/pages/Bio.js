@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import { BsCheck2Circle } from 'react-icons/bs';
 
 import cover from '../../assets/imgs/fullIntExCover.jpg';
 
@@ -39,21 +38,6 @@ export default function Bio() {
             </ol>
           </div>
 
-          {/* <div className="service-checklist">
-            <h3 className="checklist-title">Biohazard Cleaning</h3>
-            <h4>This Package Includes:</h4>
-            <ul className="checklist">
-              <li className="checklist-item">
-                <BsCheck2Circle className='checkcircle' />
-                <p>Finding the correct procedure</p>
-              </li>
-              <li className="checklist-item">
-                <BsCheck2Circle className='checkcircle' />
-                <p>Treating the areas to eliminate all issues</p>
-              </li>
-            </ul>
-          </div> */}
-
           <div className='aside-container'>
             <div className='service-aside'>
               <h3>Other Interior Services</h3>
@@ -77,7 +61,6 @@ export default function Bio() {
             </div>
           </div>
         </div>
-        
       </div>
     </section>
   )
