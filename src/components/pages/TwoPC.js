@@ -5,14 +5,15 @@ import { HashLink } from 'react-router-hash-link';
 import cover from '../../assets/imgs/2PCCover.jpg';
 
 const steps = [
-  ["Wash Vehicle", "Thorough strip wash top to bottom using 2 bucket method or foam wash, including gas door."],
+  ["Wash Vehicle", "Thorough strip wash top to bottom using 2 bucket method or equivalent, including gas door."],
   ["Wheel Cleaing", "Clean wheels, wheel wells, wheel barrels."],
   ["Correction Prep - Clay Bar", "Clay bar the entire vehicle to remove contaminants, and leave the paint smooth."],
-  ["Correction Prep - Iron Decontamination", "Iron decontamination to get rid of the rest of the embeded particles in your paint."],
+  ["Correction Prep - Iron Decontamination", "Iron decontamination to get rid of the rest of the embeded iron particles in your paint."],
+  ["Remove tar and sap", "Remove any and all tar and sap from the exterior."],
   ["Dry Vehicle", "Dry the whole vehicle with clean towels and air blowers."],
   ["Tape Off Areas", "Tape off trim and sensitive areas (Some detailers skip this step)."],
-  ["Paint Correction", "Complete Two Stage paint correction using Griots products removing all scratches and swirls we possibly can while staying safe for clear coat thickness."],
-  ["Protect Paint", "Protect paint with ceramic spray or coating."],
+  ["Paint Correction", "Complete Two Stage paint correction using Griots products removing all scratches and swirls we possibly can while staying safe for vehicle specific clear coat thickness."],
+  ["Protect Paint", "Protect paint with ceramic spray or ceramic coating."],
   ["Door Jambs", "Clean door jambs."],
   ["Dress Vehicle", "Dress all plastics, wheel wells, tires."]
 ]

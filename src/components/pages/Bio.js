@@ -6,6 +6,8 @@ import cover from '../../assets/imgs/BioCover.jpg';
 
 const steps = [
   ["Determine Products", "We will first determine what products will need to be used to best suit the situation."],
+  ["Disinfect", "Fully disinfect every single surface in the vehicle before we even get started."],
+  ["Full Interior Cleaning", "Then we will perform our Full Interior Cleaning Process on the vehicle."],
   ["Ozone Treatment", "Then we will perform Ozone Air treatment to fill all bacteria, mold spores, and get rid of smells where it's impossible to get to conventionally."]
 ]
 

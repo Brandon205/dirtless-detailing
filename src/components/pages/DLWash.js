@@ -5,12 +5,11 @@ import { HashLink } from 'react-router-hash-link';
 import cover from '../../assets/imgs/DLWashCover.jpg';
 
 const steps = [
-  ["Wash Vehicle", "Thourough 2 bucket or foam wash top to bottom including the gas door."],
+  ["Wash Vehicle", "Thourough 2 bucket or equivalent top to bottom wash including the gas door."],
   ["Wheel Cleaning", "Clean wheels, wheel wells, wheel barrels."],
   ["Dry Vehicle", "Dry the whole vehicle with clean towels and air blowers."],
   ["Wax", "Apply Spray Wax."],
   ["Dress Vehicle", "Dress tires, wheel wells, plastics."],
-  ["Final Touches", "Clean door jambs."]
 ]
 
 export default function DLWash() {

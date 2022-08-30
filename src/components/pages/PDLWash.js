@@ -5,12 +5,13 @@ import { HashLink } from 'react-router-hash-link';
 import cover from '../../assets/imgs/PDLWashCover.jpg';
 
 const steps = [
-  ["Wash Vehicle", "Thorough strip wash top to bottom including the gas door with the 2 bucket method or using a Foam Cannon."],
-  ["Wheel Cleaing", "Clean wheels, wheel wells, wheel barrels."],
-  ["Wax Prep - Clay Bar", "Clay bar the whole vehicle so was properly adheas and paint is smooth."],
-  ["Wax Prep - Iron Decontamination", "Iron Decontamination to make sure everything is off of the paint, this improves wax adhesion as well."],
+  ["Wash Vehicle", "Thorough strip wash top to bottom including the gas door with the 2 bucket method or equivalent."],
+  ["Wheel Cleaning", "Clean wheels, wheel wells, wheel barrels."],
+  ["Wax Prep - Clay Bar", "Clay bar the whole vehicle so sealent properly adheres and paint is smooth."],
+  ["Wax Prep - Iron Decontamination", "Iron Decontamination to make sure all microscopic iron contaminents are off of the paint, these are things that the clay bar won't get, this improves wax adhesion as well."],
+  ["Remove tar and sap", "Remove any and all tar and sap from the exterior."],
   ["Dry Vehicle", "Dry the whole vehicle with clean towels and Air blowers."],
-  ["Wax On", "Apply Griots 3 in 1 Ceramic Spray Wax (Best in the Industy, trust us)."],
+  ["Wax On", "Apply 6 month or more sealant."],
   ["Door Jambs", "Clean Door Jambs."],
   ["Dress Vehicle", "Dress all plastics, wheel wells, tires."]
 ]

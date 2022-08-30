@@ -5,8 +5,8 @@ import { HashLink } from 'react-router-hash-link';
 import cover from '../../assets/imgs/fullIntExCover.jpg';
 
 const steps = [
-  ["Determine Method", "We will first determine what fabric and materials are present to find the lightest form of cleaning to start with."],
-  ["Clean Headliners", "We will perform the cleaning methods found from the first step, we do this to prevent sagging and damage to the headliners. (results may vary)"]
+  ["Determine Method", "We have an array of gentle products available, the materials of your headliner will tell us what to use."],
+  ["Clean Headliners", "We will perform the cleaning methods found from the first step, we do this to prevent sagging and damage to the headliners (Results may vary)."]
 ]
 
 export default function Headliners() {

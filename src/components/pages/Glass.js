@@ -5,7 +5,7 @@ import { HashLink } from 'react-router-hash-link';
 import cover from '../../assets/imgs/fullIntExCover.jpg';
 
 const steps = [
-  ["", "Remove all scratches, etching, and watermarks possible."]
+  ["Clean Glass", "Remove all scratches, etching, and watermarks possible."]
 ]
 
 export default function Glass() {
@@ -30,10 +30,11 @@ export default function Glass() {
       <div className='main-content-container'>
         <div className="process-container">
           <div>
-            <h2>Our Glass Polishing Process</h2>
+            <h2>Our Process</h2>
             <ol className='list'>
               {content}
             </ol>
+            <p>This is a great addon package. This package is for cars that have excessive waterspots on glass, deeper scratches on glass, windsheild wiper marks, and etching. We mask all sensitive areas off to make sure nothing sensitive gets damaged in the process</p>
           </div>
 
           <div className='aside-container'>

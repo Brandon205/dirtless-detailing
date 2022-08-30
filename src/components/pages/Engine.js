@@ -5,9 +5,10 @@ import { HashLink } from 'react-router-hash-link';
 import cover from '../../assets/imgs/EngineCover.webp';
 
 const steps = [
-  ["Initial Wash", "Steam Clean."],
-  ["Clean Grease", "Degrease."],
-  ["Dress", "Dress Engine Bay."]
+  ["Preemptive Measures", "Cover all sensitive areas, like air intakes, and any exposed electronics."],
+  ["Initial Wash", "Steam clean, degrease, and use specialized brushes to get in every crack and crevice."],
+  ["Dry", "Dry with air blowers and towels."],
+  ["Dress Engine Bay", "Dress with water based dressing."]
 ]
 
 export default function Engine() {
