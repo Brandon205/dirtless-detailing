@@ -141,7 +141,7 @@ export default function App() {
           <Route path="headliners" element={<Headliners />} />
           <Route path="dl-wash" element={<DLWash />} />
           <Route path="premium-dl-wash" element={<PDLWash />} />
-          <Route path="engine-bay" element={<Engine />} />
+          <Route path="engine" element={<Engine />} />
           <Route path="single-paint-correction" element={<SinglePC />} />
           <Route path="two-paint-correction" element={<TwoPC />} />
           <Route path="glass" element={<Glass />} />
