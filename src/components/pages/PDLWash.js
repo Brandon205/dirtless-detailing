@@ -9,7 +9,7 @@ const steps = [
   ["Wheel Cleaing", "Clean wheels, wheel wells, wheel barrels."],
   ["Wax Prep - Clay Bar", "Clay bar the whole vehicle so was properly adheas and paint is smooth."],
   ["Wax Prep - Iron Decontamination", "Iron Decontamination to make sure everything is off of the paint, this improves wax adhesion as well."],
-  ["Dry Vehicle", "Dry the whole vehicle with Supple towels and Air blowers."],
+  ["Dry Vehicle", "Dry the whole vehicle with clean towels and Air blowers."],
   ["Wax On", "Apply Griots 3 in 1 Ceramic Spray Wax (Best in the Industy, trust us)."],
   ["Door Jambs", "Clean Door Jambs."],
   ["Dress Vehicle", "Dress all plastics, wheel wells, tires."]

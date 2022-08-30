@@ -7,7 +7,7 @@ import cover from '../../assets/imgs/fullIntExCover.jpg';
 const steps = [
   ["Wash Vehicle", "Thourough 2 bucket or foam wash top to bottom including the gas door."],
   ["Wheel Cleaning", "Clean wheels, wheel wells, wheel barrels."],
-  ["Dry Vehicle", "Dry the whole vehicle with supple towels and air blowers."],
+  ["Dry Vehicle", "Dry the whole vehicle with clean towels and air blowers."],
   ["Wax", "Apply Spray Wax."],
   ["Dress Vehicle", "Dress tires, wheel wells, plastics."],
   ["Final Touches", "Clean door jambs."]
