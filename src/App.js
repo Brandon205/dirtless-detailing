@@ -31,42 +31,47 @@ export default function App() {
   const [gallery, setGallery] = useState('none');
 
   let changeNav = (changeTo) => {
+
+    setInterior('none');
+    setExteriorCorr('none');
+    setExteriorClean('none');
+    setGallery('none');
     switch (changeTo) {
       case 'interior': {
         setInterior('block');
-        setExteriorCorr('none');
-        setExteriorClean('none');
-        setGallery('none');
+        // setExteriorCorr('none');
+        // setExteriorClean('none');
+        // setGallery('none');
       }
       break;
       case 'exteriorCorr': {
-        setInterior('none');
+        // setInterior('none');
         setExteriorCorr('block');
-        setExteriorClean('none');
-        setGallery('none');
+        // setExteriorClean('none');
+        // setGallery('none');
       }
       break;
       case 'exteriorClean': {
-        setInterior('none');
-        setExteriorCorr('none');
+        // setInterior('none');
+        // setExteriorCorr('none');
         setExteriorClean('block');
-        setGallery('none');
+        // setGallery('none');
       }
       break;
       case 'gallery': {
-        setInterior('none');
-        setExteriorCorr('none');
-        setExteriorClean('none');
+        // setInterior('none');
+        // setExteriorCorr('none');
+        // setExteriorClean('none');
         setGallery('block');
       }
       break;
-      case 'none': {
-        setInterior('none');
-        setExteriorCorr('none');
-        setExteriorClean('none');
-        setGallery('none');
-      }
-      break;
+      // case 'none': {
+      //   setInterior('none');
+      //   setExteriorCorr('none');
+      //   setExteriorClean('none');
+      //   setGallery('none');
+      // }
+      // break;
 
       default: {
         setInterior('none');

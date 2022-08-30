@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import { BsCheck2Circle } from 'react-icons/bs';
+// import { BsCheck2Circle } from 'react-icons/bs';
 
 import cover from '../../assets/imgs/fullIntExCover.jpg';
 

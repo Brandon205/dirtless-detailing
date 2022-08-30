@@ -48,7 +48,7 @@ export default function Home() {
 
                     <div className='contact-icon-container'>
                         <GoLocation className='contact-icon' />
-                        <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link location-link" target="_blank">9305 205th Ave E Bonney Lake Washington</a>
+                        <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link location-link" target="_blank" rel='noreferrer'>9305 205th Ave E Bonney Lake Washington</a>
                     </div>
                 </div>
 
@@ -57,7 +57,7 @@ export default function Home() {
                     <a href="tel:2532529758" target="_blank" rel="noreferrer">(253) 252-9758</a>
 
                     <form action="#" className="form">
-                        <label for="name" className='input-label' aria-required>Name</label><br />
+                        <label htmlFor="name" className='input-label' aria-required>Name</label><br />
                         <input type="text" id="name" name="name" className='text-input' /><br />
                         <label htmlFor="email" className='input-label'>Email</label><br />
                         <input type="text" id="email" name="email" className='text-input' /><br />
@@ -135,7 +135,7 @@ export default function Home() {
                 <div className="popular-services-card">
                     <Link to="premium-dl-wash" className="service-heading-link"><h2 className="popular-service-title">Premium Dirt-Less Wash</h2></Link>
                     <p className="price">Starting at: <span>$150</span></p>
-                    <img src={dlWash} alt="car exterior picture" className="popular-img" />
+                    <img src={dlWash} alt="car exterior" className="popular-img" />
                     
                     <div className="popular-desc">
                         <ul className="checklist">
@@ -338,7 +338,7 @@ export default function Home() {
 
             <article className="reviews-container">
                 <h2>Read some of our 5 star reviews from our customers</h2>
-                <Carousel className="review-carousel" infiniteLoop autoPlay showThumbs={false}>
+                <Carousel className="review-carousel" style={styles} infiniteLoop autoPlay showThumbs={false}>
                     <div>
                         <p className="review">Brenden answered the first phone call gave a quote over the phone, I did not have to bring the car anywhere. He provided a value and was on time and was extremely thorough. Did not attempt to upsell me and increase price, day of the appointment, like another Bonney Lake detailer did. Can't recommend Dirt-Less Detail enough. My wife's Jeep Cherokee looks new!</p>
                         <p className="reviewer">Darren B.</p>
