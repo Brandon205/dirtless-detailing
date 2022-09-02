@@ -49,18 +49,34 @@ export default function SinglePC() {
             </ol>
           </div>
 
-          <div className='aside-container'>
-            <div className='service-aside'>
-              <h3>Other Correction Services</h3>
-              <div className="aside-links">
-                <Link to="/single-paint-correction" style={{color: window.location.href.endsWith('single-paint-correction') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('single-paint-correction') ? '> ' : ''} Single Stage Paint Correction</Link><br />
-                <Link to="/two-paint-correction" style={{color: window.location.href.endsWith('two-paint-correction') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('two-paint-correction') ? '> ' : ''} Two Stage Paint Correction</Link><br />
-                <Link to="/glass" style={{color: window.location.href.endsWith('glass') ? 'blue' : 'black'}} className={'service-link'}>{window.location.href.endsWith('glass') ? '> ' : ''} Glass Polishing</Link>
-                <Link to="/waterspot" style={{color: window.location.href.endsWith('waterspot') ? 'blue' : 'black'}} className={'service-link'}>{window.location.href.endsWith('waterspot') ? '> ' : ''} Overspray/Waterspot</Link>
+          <HashLink smooth to="/#contact" className="quote-btn service-page-quote-btn" scroll={el => scrollWithOffset(el)}>Get Started</HashLink>
+
+          <div>
+            <div className='aside-container'>
+              <div className='service-aside'>
+                <h3>Other Correction Services</h3>
+                <div className="aside-links">
+                  <Link to="/single-paint-correction" style={{color: window.location.href.endsWith('single-paint-correction') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('single-paint-correction') ? '> ' : ''} Single Stage Paint Correction</Link><br />
+                  <Link to="/two-paint-correction" style={{color: window.location.href.endsWith('two-paint-correction') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('two-paint-correction') ? '> ' : ''} Two Stage Paint Correction</Link><br />
+                  <Link to="/glass" style={{color: window.location.href.endsWith('glass') ? 'blue' : 'black'}} className={'service-link'}>{window.location.href.endsWith('glass') ? '> ' : ''} Glass Polishing</Link>
+                  <Link to="/waterspot" style={{color: window.location.href.endsWith('waterspot') ? 'blue' : 'black'}} className={'service-link'}>{window.location.href.endsWith('waterspot') ? '> ' : ''} Overspray/Waterspot</Link>
+                </div>
               </div>
             </div>
-            <HashLink smooth to="/#contact" className="quote-btn service-page-quote-btn" scroll={el => scrollWithOffset(el)}>Get Started</HashLink>
-          </div>
+
+            <div className='aside-container'>
+                <div className='service-aside'>
+                  <h3>Extra Addons</h3>
+                  <div className="aside-links">
+                    <div className="addon-container">
+                      <p className='addon-title'>Glass Polishing - <span className="bold">$70</span>/hour</p>
+                      <p className="subtext">We'll give you crystal clear windows</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
         </div>
 
         <div>
