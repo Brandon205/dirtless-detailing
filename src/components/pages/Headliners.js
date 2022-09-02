@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import { scrollWithOffset } from '../helpers/ScrollToTop';
 
 import cover from '../../assets/imgs/fullIntExCover.jpg';
 
@@ -46,15 +47,15 @@ export default function Headliners() {
                 <Link to="/headliners" style={{color: window.location.href.endsWith('headliners') ? 'blue' : 'black'}} className={'service-link'}>{window.location.href.endsWith('headliners') ? '> ' : ''} Headliners</Link>
               </div>
             </div>
-            <HashLink smooth to="/#contact" className="quote-btn top-quote-btn service-page-quote-btn">Contact Us</HashLink>
+            <HashLink smooth to="/#contact" className="quote-btn top-quote-btn service-page-quote-btn" scroll={el => scrollWithOffset(el)}>Get Started</HashLink>
           </div>
         </div>
         <div>
-          <h2>Headliner Cleaning Pricing</h2>
+          <h2>PRICING</h2>
           <h4>Our basic prices are shown below, actual prices will be based on your vehicle size.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
-              <p className="example-vehicle">Any size vehicle, price will vary on products needed and cleanlyness of the headliners</p>
+              <p className="example-vehicle">ANY SIZE</p>
               <p className="pricing-price">$40-$80</p>
             </div>
           </div>

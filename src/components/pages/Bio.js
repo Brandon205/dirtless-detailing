@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import { scrollWithOffset } from '../helpers/ScrollToTop';
 
 import cover from '../../assets/imgs/BioCover.jpg';
 
@@ -49,16 +50,16 @@ export default function Bio() {
                 <Link to="/headliners" style={{color: window.location.href.endsWith('headliners') ? 'blue' : 'black'}} className={'service-link'}>{window.location.href.endsWith('headliners') ? '> ' : ''} Headliners</Link>
               </div>
             </div>
-            <HashLink smooth to="/#contact" className="quote-btn top-quote-btn service-page-quote-btn">Contact Us</HashLink>
+            <HashLink smooth to="/#contact" className="quote-btn service-page-quote-btn" scroll={el => scrollWithOffset(el)}>Get Started</HashLink>
           </div>
         </div>
 
         <div>
-          <h2 className='pricing-title'>Bio Hazard Cleaning Pricing</h2>
+          <h2 className='pricing-title'>PRICING</h2>
           <h4 className='subtext'>Our basic prices are shown below, actual prices will be based on your vehicle size.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
-              <p className="example-vehicle">Any vehicle size, price will vary based on the situation</p>
+              <p className="example-vehicle">ANY SIZE</p>
               <p className="pricing-price">$300-$600</p>
             </div>
           </div>

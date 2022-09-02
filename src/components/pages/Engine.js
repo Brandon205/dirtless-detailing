@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import { scrollWithOffset } from '../helpers/ScrollToTop';
 
 import cover from '../../assets/imgs/EngineCover.webp';
 
@@ -47,16 +48,16 @@ export default function Engine() {
                 <Link to="/engine" style={{color: window.location.href.endsWith('engine') ? 'blue' : 'black'}} className={'service-link'}>{window.location.href.endsWith('engine') ? '> ' : ''} Engine Bay</Link>
               </div>
             </div>
-            <HashLink smooth to="/#contact" className="quote-btn top-quote-btn service-page-quote-btn">Contact Us</HashLink>
+            <HashLink smooth to="/#contact" className="quote-btn service-page-quote-btn" scroll={el => scrollWithOffset(el)}>Get Started</HashLink>
           </div>
         </div>
 
         <div>
-          <h2>Pricing</h2>
+          <h2>PRICING</h2>
           <h4>Our basic prices for this service are shown below</h4>
           <div className="pricing-container">
             <div className="pricing-card">
-              <p className="example-vehicle">Any size Vehicle</p>
+              <p className="example-vehicle">ANY SIZE</p>
               <p className="pricing-price">$80</p>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import { scrollWithOffset } from '../helpers/ScrollToTop';
 
 import cover from '../../assets/imgs/PDLWashCover.jpg';
 
@@ -53,7 +54,7 @@ export default function PDLWash() {
                 <Link to="/engine" style={{color: window.location.href.endsWith('engine') ? 'blue' : 'black'}} className={'service-link'}>{window.location.href.endsWith('engine') ? '> ' : ''} Single Stage Paint Correction</Link>
               </div>
             </div>
-            <HashLink smooth to="/#contact" className="quote-btn top-quote-btn service-page-quote-btn">Contact Us</HashLink>
+            <HashLink smooth to="/#contact" className="quote-btn service-page-quote-btn" scroll={el => scrollWithOffset(el)}>Get Started</HashLink>
           </div>
         </div>
 
@@ -62,22 +63,22 @@ export default function PDLWash() {
           <h4>Our basic prices are shown below, actual prices will be based on your vehicle size.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
-              <h4 className="size">Small</h4>
+              <h4 className="size">SMALL</h4>
               <p className="example-vehicle">Small cars and mini trucks</p>
               <p className="pricing-price">$150</p>
             </div>
             <div className="pricing-card">
-              <h4 className="size">Medium</h4>
+              <h4 className="size">MEDIUM</h4>
               <p className="example-vehicle">Mid size SUV's, and most Wagons</p>
               <p className="pricing-price">$200</p>
             </div>
             <div className="pricing-card">
-              <h4 className="size">Large</h4>
+              <h4 className="size">LARGE</h4>
               <p className="example-vehicle">Big SUV's and Big trucks</p>
               <p className="pricing-price">$250</p>
             </div>
             <div className="pricing-card">
-              <h4 className="size">Extra Large</h4>
+              <h4 className="size">EXTRA LARGE</h4>
               <p className="example-vehicle">Massive trucks and above</p>
               <p className="pricing-price">$275</p>
             </div>

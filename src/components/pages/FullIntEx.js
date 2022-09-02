@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import { scrollWithOffset } from '../helpers/ScrollToTop';
 
 import cover from '../../assets/imgs/fullIntExCover.jpg';
 
@@ -45,41 +46,6 @@ export default function FullIntEx() {
             <h4><span className='special-package'>*</span>Extraction Package Only</h4>
           </div>
 
-          {/* <div className="service-checklist">
-            <h3 className="checklist-title">Full Interior Cleaning</h3>
-            <h4>This Package Includes:</h4>
-            <ul className="checklist">
-              <li className="checklist-item">
-                <BsCheck2Circle className='checkcircle' />
-                <p>Vacuum the Whole Interior</p>
-              </li>
-              <li className="checklist-item">
-                <BsCheck2Circle className='checkcircle' />
-                <p>Tornador Vortex Blowgun</p>
-              </li>
-              <li className="checklist-item">
-                <BsCheck2Circle className='checkcircle' />
-                <p>Hot Water Extraction</p>
-              </li>
-              <li className="checklist-item">
-                <BsCheck2Circle className='checkcircle' />
-                <p>Clean ALL Plastics/Leather</p>
-              </li>
-              <li className="checklist-item">
-                <BsCheck2Circle className='checkcircle' />
-                <p>Dress Vinyl/Leather</p>
-              </li>
-              <li className="checklist-item">
-                <BsCheck2Circle className='checkcircle' />
-                <p>Clean Door Jambs</p>
-              </li>
-              <li className="checklist-item">
-                <BsCheck2Circle className='checkcircle' />
-                <p>Clean Windows</p>
-              </li>
-            </ul>
-          </div> */}
-
           <div className='aside-container'>
             <div className='service-aside'>
               <h3>Our Other Interior Services</h3>
@@ -89,7 +55,7 @@ export default function FullIntEx() {
                 <Link to="/headliners" style={{color: window.location.href.endsWith('headliners') ? 'blue' : 'black'}} className={'service-link'}>{window.location.href.endsWith('headliners') ? '> ' : ''} Headliners</Link>
               </div>
             </div>
-            <HashLink smooth to="/#contact" className="quote-btn top-quote-btn service-page-quote-btn">Get A Quote</HashLink>
+            <HashLink smooth to="/#contact" className="quote-btn service-page-quote-btn" scroll={el => scrollWithOffset(el)}>Get Started</HashLink>
           </div>
         </div>
 
