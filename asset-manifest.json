@@ -1,8 +1,11 @@
 {
   "files": {
-    "main.css": "/dirtless-detailing/static/css/main.da93059b.css",
-    "main.js": "/dirtless-detailing/static/js/main.59cd47b0.js",
+    "main.css": "/dirtless-detailing/static/css/main.005fb83a.css",
+    "main.js": "/dirtless-detailing/static/js/main.08804bc0.js",
     "static/js/787.014c8e76.chunk.js": "/dirtless-detailing/static/js/787.014c8e76.chunk.js",
+    "static/media/1PCCover.jpg": "/dirtless-detailing/static/media/1PCCover.9376093b60f2f76e21b5.jpg",
+    "static/media/2PCCover.jpg": "/dirtless-detailing/static/media/2PCCover.317bf6fa4776e80d4e76.jpg",
+    "static/media/DLWashCover.jpg": "/dirtless-detailing/static/media/DLWashCover.b3387cd344d8838d2aba.jpg",
     "static/media/IMG_20200713_155629.webp": "/dirtless-detailing/static/media/IMG_20200713_155629.3b9570c837aa8d1ae298.webp",
     "static/media/IMG_20210513_151654.jpg": "/dirtless-detailing/static/media/IMG_20210513_151654.3b1b997a4361e7bd5799.jpg",
     "static/media/IMG_20210513_152327.webp": "/dirtless-detailing/static/media/IMG_20210513_152327.1c3f0e2620656dbc044e.webp",
@@ -13,12 +16,14 @@
     "static/media/IMG_20210424_014111.jpg": "/dirtless-detailing/static/media/IMG_20210424_014111.7affbde3a744a3947e29.jpg",
     "static/media/IMG_20210329_133550.jpg": "/dirtless-detailing/static/media/IMG_20210329_133550.60d6d22cb58ac823ce4e.jpg",
     "static/media/IMG_20210513_152333.jpg": "/dirtless-detailing/static/media/IMG_20210513_152333.d349718f5c1a2f7b5f9c.jpg",
+    "static/media/PDLWashCover.jpg": "/dirtless-detailing/static/media/PDLWashCover.84e16b756cb34c681f9e.jpg",
     "static/media/IMG_20220518_150460.webp": "/dirtless-detailing/static/media/IMG_20220518_150460.5e73b0e199693365202b.webp",
     "static/media/IMG_20220518_150458.webp": "/dirtless-detailing/static/media/IMG_20220518_150458.6ea0458d3e31a1a6aafc.webp",
     "static/media/IMG_20210423_185227.jpg": "/dirtless-detailing/static/media/IMG_20210423_185227.2211f7eddd8aee6ba14c.jpg",
     "static/media/IMG_20200605_124115.webp": "/dirtless-detailing/static/media/IMG_20200605_124115.581e432bd6f8bd90aacc.webp",
     "static/media/IMG_20210329_133555.jpg": "/dirtless-detailing/static/media/IMG_20210329_133555.9ddfc373459d4a998547.jpg",
     "static/media/IMG_20210513_095000.jpg": "/dirtless-detailing/static/media/IMG_20210513_095000.4c698f1c3e2cd7635deb.jpg",
+    "static/media/BioCover.jpg": "/dirtless-detailing/static/media/BioCover.41819ddfdedc5d8c2457.jpg",
     "static/media/IMG_20210819_193340.webp": "/dirtless-detailing/static/media/IMG_20210819_193340.c0c18e7b59467094a1ae.webp",
     "static/media/IMG_20210513_151609.jpg": "/dirtless-detailing/static/media/IMG_20210513_151609.208471d2c7017c42734f.jpg",
     "static/media/IMG_20210331_134603.webp": "/dirtless-detailing/static/media/IMG_20210331_134603.de87ace0d37bad538688.webp",
@@ -30,6 +35,7 @@
     "static/media/IMG_20210428_185817.webp": "/dirtless-detailing/static/media/IMG_20210428_185817.5ea28fbd3900575b4559.webp",
     "static/media/IMG_20211123_171033.webp": "/dirtless-detailing/static/media/IMG_20211123_171033.31a3e0ef3ad9444116a7.webp",
     "static/media/IMG_20210526_193017.webp": "/dirtless-detailing/static/media/IMG_20210526_193017.e5977333e062e9b469ae.webp",
+    "static/media/EngineCover.webp": "/dirtless-detailing/static/media/EngineCover.90f38c4d0da03b1c2c59.webp",
     "static/media/IMG_20220518_150505.webp": "/dirtless-detailing/static/media/IMG_20220518_150505.90f38c4d0da03b1c2c59.webp",
     "static/media/IMG_20200831_134437.webp": "/dirtless-detailing/static/media/IMG_20200831_134437.feb3366c037067a69124.webp",
     "static/media/IMG_20200501_133507.webp": "/dirtless-detailing/static/media/IMG_20200501_133507.160b058f82023dc25177.webp",
@@ -48,7 +54,6 @@
     "static/media/My project-1.webp": "/dirtless-detailing/static/media/My project-1.697025fa23e327655804.webp",
     "static/media/My project-1(1).webp": "/dirtless-detailing/static/media/My project-1(1).be2eed1b06f917821989.webp",
     "static/media/fullIntExCover.jpg": "/dirtless-detailing/static/media/fullIntExCover.3798d5547a77210d2e5a.jpg",
-    "static/media/PCA.jpg": "/dirtless-detailing/static/media/PCA.7d245a3319b1d64e7761.jpg",
     "static/media/My project-1(7).webp": "/dirtless-detailing/static/media/My project-1(7).a181731e57237bb08572.webp",
     "static/media/FB_IMG_1590172598060.webp": "/dirtless-detailing/static/media/FB_IMG_1590172598060.305deced477111a65824.webp",
     "static/media/FB_IMG_1590172571290.webp": "/dirtless-detailing/static/media/FB_IMG_1590172571290.34711c34532176b91b47.webp",
@@ -62,12 +67,12 @@
     "static/media/dd-logo.png": "/dirtless-detailing/static/media/dd-logo.ab1ac6892fe6e8cdf8a7.png",
     "static/media/FB_IMG_1590172711463.webp": "/dirtless-detailing/static/media/FB_IMG_1590172711463.6e784a3216177b03e431.webp",
     "index.html": "/dirtless-detailing/index.html",
-    "main.da93059b.css.map": "/dirtless-detailing/static/css/main.da93059b.css.map",
-    "main.59cd47b0.js.map": "/dirtless-detailing/static/js/main.59cd47b0.js.map",
+    "main.005fb83a.css.map": "/dirtless-detailing/static/css/main.005fb83a.css.map",
+    "main.08804bc0.js.map": "/dirtless-detailing/static/js/main.08804bc0.js.map",
     "787.014c8e76.chunk.js.map": "/dirtless-detailing/static/js/787.014c8e76.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.da93059b.css",
-    "static/js/main.59cd47b0.js"
+    "static/css/main.005fb83a.css",
+    "static/js/main.08804bc0.js"
   ]
 }
