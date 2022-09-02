@@ -45,17 +45,37 @@ export default function PDLWash() {
             </ol>
           </div>
 
-          <div className='aside-container'>
-            <div className='service-aside'>
-              <h3>Other Exterior Services</h3>
-              <div className="aside-links">
-                <Link to="/dl-wash" style={{color: window.location.href.endsWith('/dl-wash') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('dl-wash') ? '> ' : ''} Dirt-Less Wash</Link><br />
-                <Link to="/premium-dl-wash" style={{color: window.location.href.endsWith('premium-dl-wash') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('premium-dl-wash') ? '> ' : ''} Premium Dirt-Less Wash</Link><br />
-                <Link to="/engine" style={{color: window.location.href.endsWith('engine') ? 'blue' : 'black'}} className={'service-link'}>{window.location.href.endsWith('engine') ? '> ' : ''} Single Stage Paint Correction</Link>
+          <HashLink smooth to="/#contact" className="quote-btn service-page-quote-btn" scroll={el => scrollWithOffset(el)}>Get Started</HashLink>
+
+          <div>
+            <div className='aside-container'>
+              <div className='service-aside'>
+                <h3>Other Exterior Services</h3>
+                <div className="aside-links">
+                  <Link to="/dl-wash" style={{color: window.location.href.endsWith('/dl-wash') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('/dl-wash') ? '> ' : ''} Dirt-Less Wash</Link><br />
+                  <Link to="/premium-dl-wash" style={{color: window.location.href.endsWith('premium-dl-wash') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('premium-dl-wash') ? '> ' : ''} Premium Dirt-Less Wash</Link><br />
+                  <Link to="/engine" style={{color: window.location.href.endsWith('engine') ? 'blue' : 'black'}} className={'service-link'}>{window.location.href.endsWith('engine') ? '> ' : ''} Engine Bay Cleaning</Link>
+                </div>
               </div>
             </div>
-            <HashLink smooth to="/#contact" className="quote-btn service-page-quote-btn" scroll={el => scrollWithOffset(el)}>Get Started</HashLink>
+
+            <div className='aside-container'>
+              <div className='service-aside'>
+                <h3>Extra Addons</h3>
+                <div className="aside-links">
+                  <div className="addon-container">
+                    <p className='addon-title'>Glass Polishing - <span className="bold">$70</span>/hour</p>
+                    <p className="subtext">We'll give you crystal clear windows</p>
+                  </div>
+                  <div className="addon-container">
+                    <p className='addon-title'>Waterspot/Overspray Removal - <span className="bold">$60</span>/hour</p>
+                    <p className="subtext">We'll remove overspray and waterspots from your vehicle</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
         </div>
 
         <div>
