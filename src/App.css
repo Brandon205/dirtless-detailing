@@ -116,6 +116,7 @@ section {
 }
 
 .main-quote-btn {
+  text-decoration: none;
   margin-bottom: 3rem;
 }
 

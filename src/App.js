@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { HashRouter, Link, Route, Routes } from 'react-router-dom';
-import ScrollToTop from './components/helpers/ScrollToTop';
+import { ScrollToTop } from './components/helpers/ScrollToTop';
 import ddLogo from './assets/imgs/dd-logo.png';
 
 import Home from './components/Home.js';

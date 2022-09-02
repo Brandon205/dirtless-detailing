@@ -2,6 +2,8 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import { scrollWithOffset } from './helpers/ScrollToTop';
+
 import { BsCheck2Circle } from 'react-icons/bs';
 import { FaPhoneAlt, FaFacebookMessenger, FaClock } from 'react-icons/fa';
 import { GoLocation } from "react-icons/go";
@@ -229,7 +231,8 @@ export default function Home() {
                 </div>
             </section>
 
-            <button className="quote-btn main-quote-btn">Get a Quote</button>
+            {/* <button className="quote-btn main-quote-btn">Get a Quote</button> */}
+            <HashLink smooth to="/#contact" className="quote-btn main-quote-btn" scroll={el => scrollWithOffset(el)}>Get a Quote</HashLink>
 
             <div className='separator-container'>
                 <h2 className='service-title'>INTERIOR CLEANING SERVICES</h2>

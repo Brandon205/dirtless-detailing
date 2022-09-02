@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-export default function ScrollToTop() {
+export function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -9,4 +9,10 @@ export default function ScrollToTop() {
   }, [pathname]);
 
   return null;
+}
+
+export function scrollWithOffset(el) {
+  const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+  const yOffset = -90; 
+  window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
 }
