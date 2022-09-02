@@ -712,7 +712,8 @@ hr {
   flex-direction: column;
   background-color: var(--contact-bkg-clr-light);
   border-radius: 0.5rem;
-  max-width: 280px;
+  margin: 10px auto;
+  width: 275px;
   color: black;
   padding: 1rem;
 }
@@ -762,6 +763,14 @@ hr {
   outline: 2px solid black;
   padding: 5px;
   border-radius: 15px;
+}
+
+.addon-title {
+  margin: 10px 0 0 0;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .size {

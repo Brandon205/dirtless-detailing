@@ -59,13 +59,13 @@ export default function Home() {
                     <a href="tel:2532529758" target="_blank" rel="noreferrer">(253) 252-9758</a>
 
                     <form action="#" className="form">
-                        <label htmlFor="name" className='input-label' aria-required>Name</label><br />
-                        <input type="text" id="name" name="name" className='text-input' /><br />
+                        <label htmlFor="name" className='input-label'>Name</label><br />
+                        <input type="text" id="name" name="name" className='text-input' required /><br />
                         <label htmlFor="email" className='input-label'>Email</label><br />
-                        <input type="text" id="email" name="email" className='text-input' /><br />
-                        <label htmlFor="service" className='input-label'>Service Type</label><br />
-                        <select name="service" id="service" className='select-input'>
-                            <option value="Select">Select One...</option>
+                        <input type="text" id="email" name="email" className='text-input' required /><br />
+                        <label htmlFor="service" className='input-label'>Service Type (Hold Control or Command to select multiple)</label><br />
+                        <select name="service" id="service" className='select-input' multiple>
+                            <option value="Select">Select Services Needed...</option>
 
                             <option value="Full Interior Cleaning">Full Interior Cleaning</option>
                             <option value="Biohazard Cleaning">Biohazard Cleaning</option>
@@ -231,7 +231,6 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* <button className="quote-btn main-quote-btn">Get a Quote</button> */}
             <HashLink smooth to="/#contact" className="quote-btn main-quote-btn" scroll={el => scrollWithOffset(el)}>Get a Quote</HashLink>
 
             <div className='separator-container'>
