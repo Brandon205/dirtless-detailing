@@ -13,8 +13,6 @@ import PDLWash from './components/pages/PDLWash.js';
 import Engine from './components/pages/Engine.js';
 import SinglePC from './components/pages/SinglePC.js';
 import TwoPC from './components/pages/TwoPC.js';
-import Glass from './components/pages/Glass.js';
-import Waterspot from './components/pages/Waterspot.js';
 import FullIntGallery from './components/galleryPages/FullIntGallery';
 import EngineGallery from './components/galleryPages/EngineGallery';
 import DLWashGallery from './components/galleryPages/DLWashGallery';
@@ -100,8 +98,6 @@ export default function App() {
                   <ul className="sub-ul" onMouseEnter={() => changeNav('exteriorCorr')} onMouseLeave={() => changeNav('none')} style={{display: exteriorCorr}}>
                     <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='single-paint-correction' className='menu-link'>Single Stage Paint Correction</Link></li>
                     <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='two-paint-correction' className='menu-link'>Two Stage Paint Correction</Link></li>
-                    <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='glass' className='menu-link'>Glass Polishing</Link></li>
-                    <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='waterspot' className='menu-link'>Waterspot/Overspray Removal</Link></li>
                   </ul>
                 </div>
 
@@ -131,8 +127,6 @@ export default function App() {
           <Route path="engine" element={<Engine />} />
           <Route path="single-paint-correction" element={<SinglePC />} />
           <Route path="two-paint-correction" element={<TwoPC />} />
-          <Route path="glass" element={<Glass />} />
-          <Route path="waterspot" element={<Waterspot />} />
 
           <Route path="full-int-gallery" element={<FullIntGallery />} />
           <Route path="paint-correction-gallery" element={<PaintCorrectionGallery />} />
@@ -177,12 +171,6 @@ export default function App() {
             </Link>
             <Link to="two-paint-correction" className="footer-link">
               <p className="footer-text">Two Stage Paint Correction</p>
-            </Link>
-            <Link to="glass" className="footer-link">
-              <p className="footer-text">Glass Polishing</p>
-            </Link>
-            <Link to="waterspot" className="footer-link">
-              <p className="footer-text">Waterspot / Overspray Removal</p>
             </Link>
           </div>
           <div className="footer-content-card" id="contact">
