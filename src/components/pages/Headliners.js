@@ -38,6 +38,8 @@ export default function Headliners() {
             </ol>
           </div>
 
+          <HashLink smooth to="/#contact" className="quote-btn top-quote-btn service-page-quote-btn" scroll={el => scrollWithOffset(el)}>Get Started</HashLink>
+
           <div className='aside-container'>
             <div className='service-aside'>
               <h3>Our Other Interior Services</h3>
@@ -47,7 +49,6 @@ export default function Headliners() {
                 <Link to="/headliners" style={{color: window.location.href.endsWith('headliners') ? 'blue' : 'black'}} className={'service-link'}>{window.location.href.endsWith('headliners') ? '> ' : ''} Headliners</Link>
               </div>
             </div>
-            <HashLink smooth to="/#contact" className="quote-btn top-quote-btn service-page-quote-btn" scroll={el => scrollWithOffset(el)}>Get Started</HashLink>
           </div>
         </div>
         <div>

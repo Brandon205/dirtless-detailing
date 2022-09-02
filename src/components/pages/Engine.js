@@ -39,6 +39,8 @@ export default function Engine() {
             </ol>
           </div>
 
+          <HashLink smooth to="/#contact" className="quote-btn service-page-quote-btn" scroll={el => scrollWithOffset(el)}>Get Started</HashLink>
+
           <div className='aside-container'>
             <div className='service-aside'>
               <h3>Other Exterior Services</h3>
@@ -48,7 +50,6 @@ export default function Engine() {
                 <Link to="/engine" style={{color: window.location.href.endsWith('engine') ? 'blue' : 'black'}} className={'service-link'}>{window.location.href.endsWith('engine') ? '> ' : ''} Engine Bay</Link>
               </div>
             </div>
-            <HashLink smooth to="/#contact" className="quote-btn service-page-quote-btn" scroll={el => scrollWithOffset(el)}>Get Started</HashLink>
           </div>
         </div>
 

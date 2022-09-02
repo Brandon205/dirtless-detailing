@@ -65,17 +65,17 @@ export default function SinglePC() {
             </div>
 
             <div className='aside-container'>
-                <div className='service-aside'>
-                  <h3>Extra Addons</h3>
-                  <div className="aside-links">
-                    <div className="addon-container">
-                      <p className='addon-title'>Glass Polishing - <span className="bold">$70</span>/hour</p>
-                      <p className="subtext">We'll give you crystal clear windows</p>
-                    </div>
+              <div className='service-aside'>
+                <h3>Extra Addons</h3>
+                <div className="aside-links">
+                  <div className="addon-container">
+                    <p className='addon-title'>Glass Polishing - <span className="bold">$70</span>/hour</p>
+                    <p className="subtext">We'll give you crystal clear windows</p>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
         </div>
 
