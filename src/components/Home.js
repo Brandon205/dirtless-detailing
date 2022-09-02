@@ -26,8 +26,8 @@ export default function Home() {
                     <h1 className='title-bottom'>Detailing Specialists</h1>
                     <h4 className='dd-desc'>Plenty of 5-star reviews from the customers we've served. </h4>
                     <h4 className='dd-desc'>We will do Interiors, Exteriors, Paint Correction, and much more. We will have your car looking brand new.</h4>
-                    <HashLink smooth to="/#popular-services" className="learn-btn top-learn-btn">Learn More</HashLink>
-                    <HashLink smooth to="/#contact" className="quote-btn top-quote-btn">Get Quote</HashLink>
+                    <HashLink smooth to="/#popular-services" className="learn-btn top-learn-btn" scroll={el => scrollWithOffset(el)}>Learn More</HashLink>
+                    <HashLink smooth to="/#contact" className="quote-btn top-quote-btn" scroll={el => scrollWithOffset(el)}>Get Quote</HashLink>
                 </div>
             </header>
             <section className="contact-container" id="contact">
@@ -87,7 +87,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <div className='separator-container'>
+            <div id="popular-services" className='separator-container'>
                 <h1 className="service-title">Popular Detailing Services</h1>
             </div>
             <section className="popular-container">
