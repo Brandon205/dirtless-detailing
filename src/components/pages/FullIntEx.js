@@ -66,21 +66,52 @@ export default function FullIntEx() {
             <div className="pricing-card">
               <h4 className="size">SMALL</h4>
               <p className="example-vehicle">2 Door Coupes, Single and Extended Cabs</p>
-              <p className="pricing-price">$200</p>
+              <div className='fullInt-pricing-container'>
+                <div className='pricing-outline'>
+                  <p>Without Extraction</p>
+                  <p className="pricing-price">$200</p>
+                </div>
+                <div className='pricing-outline'>
+                  <p>With Extraction</p>
+                  <p className="pricing-price special-package">$250</p>
+                </div>
+              </div>
             </div>
             <div className="pricing-card">
               <h4 className="size">MEDIUM</h4>
               <p className="example-vehicle">4 Door Sedans, 4 Door Trucks, Smaller SUV's</p>
-              <p className="pricing-price">$250</p>
+              {/* <p className="pricing-price">$250</p>
+              <p className="pricing-price special-package">$300</p> */}
+              <div className='fullInt-pricing-container'>
+                <div className='pricing-outline'>
+                  <p>Without Extraction</p>
+                  <p className="pricing-price">$250</p>
+                </div>
+                <div className='pricing-outline'>
+                  <p>With Extraction</p>
+                  <p className="pricing-price special-package">$300</p>
+                </div>
+              </div>
             </div>
             <div className="pricing-card">
               <h4 className="size">LARGE</h4>
               <p className="example-vehicle">Big SUV's and 3 Row SUV's</p>
-              <p className="pricing-price">$300</p>
+              <div className='fullInt-pricing-container'>
+                <div className='pricing-outline'>
+                  <p>Without Extraction</p>
+                  <p className="pricing-price">$300</p>
+                </div>
+                <div className='pricing-outline'>
+                  <p>With Extraction</p>
+                  <p className="pricing-price special-package">$350</p>
+                </div>
+              </div>
+              {/* <p className="pricing-price">$300</p>
+              <p className="pricing-price special-package">$350</p> */}
             </div>
           </div>
 
-          <h2 className='pricing-title'>Full Interior With Extraction Pricing</h2>
+          {/* <h2 className='pricing-title'>Full Interior With Extraction Pricing</h2>
           <div className="pricing-container">
             <div className="pricing-card">
               <h4 className="size">SMALL</h4>
@@ -97,7 +128,7 @@ export default function FullIntEx() {
               <p className="example-vehicle">Big SUV's and 3 Row SUV's</p>
               <p className="pricing-price">$350</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

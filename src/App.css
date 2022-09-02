@@ -752,6 +752,18 @@ hr {
   margin-bottom: 2rem;
 }
 
+.fullInt-pricing-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.pricing-outline {
+  outline: 2px solid black;
+  padding: 5px;
+  border-radius: 15px;
+}
+
 .size {
   font-size: 1.5em;
   font-weight: 400;
