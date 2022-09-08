@@ -327,24 +327,6 @@ export default function Home() {
                         <p>Learn More</p>
                     </Link>
                 </div>
-                <div className="service-card">
-                    <Link to="glass" className="service-heading-link"><h2>Glass Polishing</h2></Link>
-                    <p className="secondary-text">Starting at: <span>$70</span></p>
-                    <p className="service-desc">Scratches or etching on the glass of your car? We'll get rid of those with this package.</p>
-                    <hr className="card-hr" />
-                    <Link to="glass" className="readmore">
-                        <p>Learn More</p>
-                    </Link>
-                </div>
-                <div className="service-card">
-                    <Link to="waterspot" className="service-heading-link"><h2>Waterspot and Overspray Removal</h2></Link>
-                    <p className="secondary-text">Starting at: <span>$60</span></p>
-                    <p className="service-desc">If there are any waterspots or overspray on your vehicle that are bugging you, let us know and we can get rid of them.</p>
-                    <hr className="card-hr" />
-                    <Link to="waterspot" className="readmore">
-                        <p>Learn More</p>
-                    </Link>
-                </div>
             </section>
 
             <article className="reviews-container">

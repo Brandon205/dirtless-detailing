@@ -58,8 +58,6 @@ export default function SinglePC() {
                 <div className="aside-links">
                   <Link to="/single-paint-correction" style={{color: window.location.href.endsWith('single-paint-correction') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('single-paint-correction') ? '> ' : ''} Single Stage Paint Correction</Link><br />
                   <Link to="/two-paint-correction" style={{color: window.location.href.endsWith('two-paint-correction') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('two-paint-correction') ? '> ' : ''} Two Stage Paint Correction</Link><br />
-                  <Link to="/glass" style={{color: window.location.href.endsWith('glass') ? 'blue' : 'black'}} className={'service-link'}>{window.location.href.endsWith('glass') ? '> ' : ''} Glass Polishing</Link>
-                  <Link to="/waterspot" style={{color: window.location.href.endsWith('waterspot') ? 'blue' : 'black'}} className={'service-link'}>{window.location.href.endsWith('waterspot') ? '> ' : ''} Overspray/Waterspot</Link>
                 </div>
               </div>
             </div>
