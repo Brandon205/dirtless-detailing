@@ -64,16 +64,15 @@ export default function Home() {
                         <label htmlFor="email" className='input-label'>Email</label><br />
                         <input type="text" id="email" name="email" className='text-input' required /><br />
 
-                        <h4 style={{marginBottom: 0}}>Select Desired Services:</h4>
-                        <h6>Interior Cleaning:</h6>
+                        <h5 style={{marginBottom: 4}}>Interior Cleaning:</h5>
                         <input type="checkbox" name="FullInt" value="FullInt" className='checkbox-input' />
                         <label htmlFor="FullInt" className='input-label'>Full Interior With Extraction</label><br />
                         <input type="checkbox" name="Bio" value="Bio" className='checkbox-input' />
                         <label htmlFor="Bio" className='input-label'>Biohazard Cleaning</label><br />
                         <input type="checkbox" name="Headliners" value="Headliners" />
                         <label htmlFor="Headliners" className='input-label'>Headliners</label><br />
-                        
-                        <h6>Exterior Cleaning:</h6>
+
+                        <h5 style={{marginBottom: 4}}>Exterior Cleaning:</h5>
                         <input type="checkbox" name="DLWash" value="DLWash" className='checkbox-input' />
                         <label htmlFor="DLWash" className='input-label'>Dirt-Less Wash</label><br />
                         <input type="checkbox" name="PDLWash" value="PDLWash" className='checkbox-input' />
@@ -81,11 +80,22 @@ export default function Home() {
                         <input type="checkbox" name="Engine" value="Engine" />
                         <label htmlFor="Engine" className='input-label' style={{marginBottom: 16}}>Engine Bay</label><br />
 
-                        <h6>Paint Correction:</h6>
+                        <h6 className="form-subheading">Exterior Addons:</h6>
+                        <input type="checkbox" name="Glass" value="Glass" />
+                        <label htmlFor="Glass" className='input-label' style={{marginBottom: 16}}>Glass Polishing</label><br />
+                        <input type="checkbox" name="Waterspot" value="Waterspot" />
+                        <label htmlFor="Waterspot" className='input-label' style={{marginBottom: 16}}>Waterspot/Overspray Removal</label><br />
+
+
+                        <h5 style={{marginBottom: 4}}>Paint Correction:</h5>
                         <input type="checkbox" name="SinglePC" value="SinglePC" className='checkbox-input' />
                         <label htmlFor="SinglePC" className='input-label'>Single Stage Paint Correction</label><br />
                         <input type="checkbox" name="TwoPC" value="TwoPC" />
                         <label htmlFor="TwoPC" className='input-label' style={{marginBottom: 16}}>Two Stage Paint Correction</label><br />
+
+                        <h6 className="form-subheading">Paint Correction Addons:</h6>
+                        <input type="checkbox" name="Glass" value="Glass" className='checkbox-input' />
+                        <label htmlFor="Glass" className='input-label'>Glass Polishing</label><br style={{marginBottom: 16}} />
 
                         <label htmlFor="message" className='input-label'>Additional Details</label><br />
                         <textarea type="textarea" id="message" name="message" className='textarea-input' placeholder='Anything else we might want to know?' />
