@@ -65,6 +65,7 @@ export default function Home() {
                         <input type="text" id="email" name="email" className='text-input' required /><br />
 
                         <h4 style={{marginBottom: 0}}>Select Desired Services:</h4>
+                        <h6>Interior Cleaning:</h6>
                         <input type="checkbox" name="FullInt" value="FullInt" className='checkbox-input' />
                         <label htmlFor="FullInt" className='input-label'>Full Interior With Extraction</label><br />
                         <input type="checkbox" name="Bio" value="Bio" className='checkbox-input' />
@@ -72,12 +73,19 @@ export default function Home() {
                         <input type="checkbox" name="Headliners" value="Headliners" />
                         <label htmlFor="Headliners" className='input-label'>Headliners</label><br />
                         
+                        <h6>Exterior Cleaning:</h6>
                         <input type="checkbox" name="DLWash" value="DLWash" className='checkbox-input' />
                         <label htmlFor="DLWash" className='input-label'>Dirt-Less Wash</label><br />
                         <input type="checkbox" name="PDLWash" value="PDLWash" className='checkbox-input' />
                         <label htmlFor="PDLWash" className='input-label'>Premium Dirt-Less Wash</label><br />
                         <input type="checkbox" name="Engine" value="Engine" />
                         <label htmlFor="Engine" className='input-label' style={{marginBottom: 16}}>Engine Bay</label><br />
+
+                        <h6>Paint Correction:</h6>
+                        <input type="checkbox" name="SinglePC" value="SinglePC" className='checkbox-input' />
+                        <label htmlFor="SinglePC" className='input-label'>Single Stage Paint Correction</label><br />
+                        <input type="checkbox" name="TwoPC" value="TwoPC" />
+                        <label htmlFor="TwoPC" className='input-label' style={{marginBottom: 16}}>Two Stage Paint Correction</label><br />
 
                         <label htmlFor="message" className='input-label'>Additional Details</label><br />
                         <textarea type="textarea" id="message" name="message" className='textarea-input' placeholder='Anything else we might want to know?' />
@@ -192,11 +200,7 @@ export default function Home() {
                             </li>
                             <li className="checklist-item">
                                 <BsCheck2Circle className='checkcircle' />
-                                <p>Clay Bar Treatment</p>
-                            </li>
-                            <li className="checklist-item">
-                                <BsCheck2Circle className='checkcircle' />
-                                <p>Iron Decontamination Treatment</p>
+                                <p>Clay Bar and Iron Decontamination Treatment</p>
                             </li>
                             <li className="checklist-item">
                                 <BsCheck2Circle className='checkcircle' />
@@ -213,14 +217,6 @@ export default function Home() {
                             <li className="checklist-item">
                                 <BsCheck2Circle className='checkcircle' />
                                 <p>Ceramic Spray/Coat</p>
-                            </li>
-                            <li className="checklist-item">
-                                <BsCheck2Circle className='checkcircle' />
-                                <p>Clean Door Jambs</p>
-                            </li>
-                            <li className="checklist-item">
-                                <BsCheck2Circle className='checkcircle' />
-                                <p>Dress Plastics, Wheel Wells, and Tires</p>
                             </li>
                         </ul>
                     </div>
