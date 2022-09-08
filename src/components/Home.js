@@ -63,23 +63,22 @@ export default function Home() {
                         <input type="text" id="name" name="name" className='text-input' required /><br />
                         <label htmlFor="email" className='input-label'>Email</label><br />
                         <input type="text" id="email" name="email" className='text-input' required /><br />
-                        <label htmlFor="service" className='input-label'>Service Type (Hold Control or Command to select multiple)</label><br />
-                        <select name="service" id="service" className='select-input' multiple>
-                            <option value="Select">Select Services Needed...</option>
 
-                            <option value="Full Interior Cleaning">Full Interior Cleaning</option>
-                            <option value="Biohazard Cleaning">Biohazard Cleaning</option>
-                            <option value="Headliners">Headliners</option>
+                        <h4 style={{marginBottom: 0}}>Select Desired Services:</h4>
+                        <input type="checkbox" name="FullInt" value="FullInt" className='checkbox-input' />
+                        <label htmlFor="FullInt" className='input-label'>Full Interior With Extraction</label><br />
+                        <input type="checkbox" name="Bio" value="Bio" className='checkbox-input' />
+                        <label htmlFor="Bio" className='input-label'>Biohazard Cleaning</label><br />
+                        <input type="checkbox" name="Headliners" value="Headliners" />
+                        <label htmlFor="Headliners" className='input-label'>Headliners</label><br />
+                        
+                        <input type="checkbox" name="DLWash" value="DLWash" className='checkbox-input' />
+                        <label htmlFor="DLWash" className='input-label'>Dirt-Less Wash</label><br />
+                        <input type="checkbox" name="PDLWash" value="PDLWash" className='checkbox-input' />
+                        <label htmlFor="PDLWash" className='input-label'>Premium Dirt-Less Wash</label><br />
+                        <input type="checkbox" name="Engine" value="Engine" />
+                        <label htmlFor="Engine" className='input-label' style={{marginBottom: 16}}>Engine Bay</label><br />
 
-                            <option value="Dirt-Less Wash">Dirt-Less Wash</option>
-                            <option value="Premium Dirt-Less Wash">Premium Dirt-Less Wash</option>
-                            <option value="Engine Bay Cleaning">Engine Bay Cleaning</option>
-
-                            <option value="Single Stage Paint Correction">Single Stage Paint Correction</option>
-                            <option value="Two Stage Paint Correction">Two Stage Paint Correction</option>
-                            <option value="Glass Polishing">Glass Polishing</option>
-                            <option value="Waterspot/Overspray Removal">Waterspot/Overspray Removal</option>
-                        </select>
                         <label htmlFor="message" className='input-label'>Additional Details</label><br />
                         <textarea type="textarea" id="message" name="message" className='textarea-input' placeholder='Anything else we might want to know?' />
                         <button className='readmore'>Submit</button>
