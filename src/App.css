@@ -1016,3 +1016,11 @@ hr {
   }
 
 }
+
+@media screen and (min-width: 1800px) {
+
+  .contact-container {
+    margin: 8rem auto
+  }
+  
+}
