@@ -18,7 +18,7 @@ export default function About() {
         <h2>FAQ</h2>
         <ul className='faq-ul'>
           <li className='faq-li'>What do you need from us when you get here?</li>
-          <p className='faq-p'>All we need is an electrical outlet, and a water spicket and we are good to go.</p>
+          <p className='faq-p'>All we need is an electrical outlet, and a water spigot and we are good to go.</p>
         </ul>
         <ul className='faq-ul'>
           <li className='faq-li'>How long will the detail take?</li>

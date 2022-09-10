@@ -8,8 +8,8 @@ import cover from '../../assets/imgs/PDLWashCover.jpg';
 const steps = [
   ["Wash Vehicle", "Thorough strip wash top to bottom including the gas door with the 2 bucket method or equivalent."],
   ["Wheel Cleaning", "Clean wheels, wheel wells, wheel barrels."],
-  ["Wax Prep - Clay Bar", "Clay bar the whole vehicle so sealent properly adheres and paint is smooth."],
-  ["Wax Prep - Iron Decontamination", "Iron Decontamination to make sure all microscopic iron contaminents are off of the paint, these are things that the clay bar won't get, this improves wax adhesion as well."],
+  ["Wax Prep - Clay Bar", "Clay bar the whole vehicle so sealant properly adheres and paint is smooth."],
+  ["Wax Prep - Iron Decontamination", "Iron Decontamination to make sure all microscopic iron contaminants are off of the paint, these are things that the clay bar won't get, this improves wax adhesion as well."],
   ["Remove tar and sap", "Remove any and all tar and sap from the exterior."],
   ["Dry Vehicle", "Dry the whole vehicle with clean towels and Air blowers."],
   ["Wax On", "Apply 6 month or more sealant."],

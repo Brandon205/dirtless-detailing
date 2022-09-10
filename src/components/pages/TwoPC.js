@@ -7,9 +7,9 @@ import cover from '../../assets/imgs/2PCCover.jpg';
 
 const steps = [
   ["Wash Vehicle", "Thorough strip wash top to bottom using 2 bucket method or equivalent, including gas door."],
-  ["Wheel Cleaing", "Clean wheels, wheel wells, wheel barrels."],
+  ["Wheel Cleaning", "Clean wheels, wheel wells, wheel barrels."],
   ["Correction Prep - Clay Bar", "Clay bar the entire vehicle to remove contaminants, and leave the paint smooth."],
-  ["Correction Prep - Iron Decontamination", "Iron decontamination to get rid of the rest of the embeded iron particles in your paint."],
+  ["Correction Prep - Iron Decontamination", "Iron decontamination to get rid of the rest of the embedded iron particles in your paint."],
   ["Remove tar and sap", "Remove any and all tar and sap from the exterior."],
   ["Dry Vehicle", "Dry the whole vehicle with clean towels and air blowers."],
   ["Tape Off Areas", "Tape off trim and sensitive areas (Some detailers skip this step)."],

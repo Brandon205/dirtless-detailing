@@ -8,7 +8,7 @@ import cover from '../../assets/imgs/fullIntExCover.jpg';
 const steps = [
   ["Expose Hidden Dirt", "Use our Tornador Vortex blowgun which uses compressed air to blow out every spot a vacuum can't reach, it also extracts sand and loose soil from carpeting (Most detailers don't do this)."],
   ["Hot Water Extraction", "We use a professional hot water extractor and professional flex stain remover and alkaline floor rinse to keep floors at a neutral PH level. (Another thing other detailers won't do). We will be sure to get all carpets, floor mats, and cloth seats"],
-  ["Vacuum Vehicle", "Thouroughly vacuum every crack and crevice of the vehicle"],
+  ["Vacuum Vehicle", "Thoroughly vacuum every crack and crevice of the vehicle"],
   ["Clean Plastics and Leathers", "Clean, steam, and degrease all plastics and leather seats"],
   ["Dress Interior", "Dress all vinyl and leather (if wanted)"],
   ["Door Jambs", "Clean all of the door jambs"],

@@ -6,7 +6,7 @@ import { scrollWithOffset } from '../helpers/ScrollToTop';
 import cover from '../../assets/imgs/DLWashCover.jpg';
 
 const steps = [
-  ["Wash Vehicle", "Thourough 2 bucket or equivalent top to bottom wash including the gas door."],
+  ["Wash Vehicle", "Thorough 2 bucket or equivalent top to bottom wash including the gas door."],
   ["Wheel Cleaning", "Clean wheels, wheel wells, wheel barrels."],
   ["Dry Vehicle", "Dry the whole vehicle with clean towels and air blowers."],
   ["Wax", "Apply Spray Wax."],

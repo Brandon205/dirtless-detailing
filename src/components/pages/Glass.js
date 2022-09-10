@@ -34,7 +34,7 @@ export default function Glass() {
             <ol className='list'>
               {content}
             </ol>
-            <p>This is a great addon package. This package is for cars that have excessive waterspots on glass, deeper scratches on glass, windsheild wiper marks, and etching. We mask all sensitive areas off to make sure nothing sensitive gets damaged in the process</p>
+            <p>This is a great addon package. This package is for cars that have excessive waterspots on glass, deeper scratches on glass, windshield wiper marks, and etching. We mask all sensitive areas off to make sure nothing sensitive gets damaged in the process</p>
           </div>
 
           <div className='aside-container'>
