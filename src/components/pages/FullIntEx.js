@@ -61,7 +61,7 @@ export default function FullIntEx() {
         </div>
 
         <div>
-          <h2 className='pricing-title'>Full Interior Without Extraction Pricing</h2>
+          <h2 className='pricing-title'>PRICING</h2>
           <h4 className='subtext'>*Final pricing may vary based on vehicle size/condition</h4>
           <div className="pricing-container">
             <div className="pricing-card">

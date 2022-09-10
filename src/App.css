@@ -49,8 +49,9 @@ section {
 }
 
 .logo {
-  width: 75px;
-  height: 75px;
+  width: 132px;
+  height: 80px;
+  margin-left: 5px;   
 }
 
 .menu-bars {
@@ -147,7 +148,6 @@ li span {
 .menu-container {
   position: absolute;
   text-align: left;
-  margin-top: -2px;
   width: 350px;
   height: 80vh;
   line-height: 2.5;

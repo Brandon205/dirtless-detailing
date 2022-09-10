@@ -79,7 +79,7 @@ export default function PDLWash() {
         </div>
 
         <div>
-          <h2>Premium Dirt-Less Wash Pricing</h2>
+          <h2>PRICING</h2>
           <h4>Our basic prices are shown below, actual prices will be based on your vehicle size.</h4>
           <div className="pricing-container">
             <div className="pricing-card">

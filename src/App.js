@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { HashRouter, Link, Route, Routes } from 'react-router-dom';
 import { ScrollToTop } from './components/helpers/ScrollToTop';
-import ddLogo from './assets/imgs/dd-logo.png';
+import ddLogo from './assets/imgs/PNG1.png';
 
 import Home from './components/Home.js';
 import About from './components/pages/About.js';
