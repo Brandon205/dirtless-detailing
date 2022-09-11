@@ -16,8 +16,6 @@
 
   /** Text and smaller colors **/
   --supporting-text: #6B6B6B;
-  /* --heading-clr1: #2EC8FF;
-  --heading-clr2: #00a2e1; */
   --heading-clr1: #fff;
   --heading-clr2: rgb(185, 185, 185);
 }
