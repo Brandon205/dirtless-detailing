@@ -17,7 +17,18 @@ images = Object.values(images)
 export default function FullIntGallery() {
 
   let imagery = images.map((pic, id) => {
-    return <Item key={id} original={images[id]} thumbnail={images[id]} className="gallery-item">
+    const img = new Image()
+    img.src = pic;
+
+    let imgHeight, imgWidth;
+    img.onload = () => {
+      imgHeight = img.height.toString()
+      imgWidth = img.width.toString()
+      console.log(imgHeight, imgWidth)
+    }
+
+    //width={imgWidth} height={imgHeight}
+    return <Item key={id} original={images[id]} thumbnail={images[id]} width="1080" height="1980">
         {({ ref, open }) => (
         <img className="gallery-image" ref={ref} onClick={open} src={images[id]} />
       )}
