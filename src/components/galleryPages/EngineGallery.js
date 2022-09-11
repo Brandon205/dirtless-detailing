@@ -17,7 +17,10 @@ images = Object.values(images)
 export default function PaintCorrectionGallery() {
 
   let imagery = images.map((pic, id) => {
-    return <Item key={id} original={images[id]} thumbnail={images[id]} className="gallery-item">
+    let width = pic.match(/[0-9]+/gm)
+    let height = pic.match(/(x)(\d+)/)
+
+    return <Item key={id} original={images[id]} thumbnail={images[id]} width={width[0]} height={height[2]}>
         {({ ref, open }) => (
         <img className="gallery-image" ref={ref} onClick={open} src={images[id]} />
       )}

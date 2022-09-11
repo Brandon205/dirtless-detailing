@@ -17,7 +17,10 @@ images = Object.values(images)
 export default function PaintCorrectionGallery() {
 
   let imagery = images.map((pic, id) => {
-    return <Item key={id} original={images[id]} thumbnail={images[id]} className="gallery-item">
+    let width = pic.match(/[0-9]+/gm)
+    let height = pic.match(/(x)(\d+)/)
+
+    return <Item key={id} original={images[id]} thumbnail={images[id]} width={width[0]} height={height[2]}>
         {({ ref, open }) => (
         <img className="gallery-image" ref={ref} onClick={open} src={images[id]} />
       )}
@@ -29,7 +32,7 @@ export default function PaintCorrectionGallery() {
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}></div>
       <header>
         <h1 className='servicepage-heading'>Paint Correction Gallery</h1>
-        <p>This is a gallery to show what we can do to correct your paint problems. Take a look at our <Link to="/single-paint-correction" className='gallery-link' >Single Stage Paint Correction</Link> page or our <Link to="/two-paint-correction" className='gallery-link' >Two Stage Paint Correction</Link></p>
+        <p>This is a gallery to show what we can do to correct your paint problems. Take a look at our <Link to="/single-paint-correction" className='gallery-link' >Single Stage Paint Correction</Link> page or our <Link to="/two-paint-correction" className='gallery-link' >Two Stage Paint Correction</Link> services.</p>
       </header>
 
       <Gallery>
