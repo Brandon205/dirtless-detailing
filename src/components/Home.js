@@ -64,6 +64,9 @@ export default function Home() {
                         <label htmlFor="email" className='input-label'>Email</label><br />
                         <input type="text" id="email" name="email" className='text-input' required /><br />
 
+                        <label htmlFor="message" className='input-label'>Additional Details</label><br />
+                        <textarea type="textarea" id="message" name="message" className='textarea-input' placeholder='Anything else we might want to know?' />
+
                         <h5 style={{marginBottom: 4}}>Interior Cleaning:</h5>
                         <input type="checkbox" name="FullInt" value="FullInt" className='checkbox-input' />
                         <label htmlFor="FullInt" className='input-label'>Full Interior With Extraction</label><br />
@@ -86,7 +89,6 @@ export default function Home() {
                         <input type="checkbox" name="Waterspot" value="Waterspot" />
                         <label htmlFor="Waterspot" className='input-label' style={{marginBottom: 16}}>Waterspot/Overspray Removal</label><br />
 
-
                         <h5 style={{marginBottom: 4}}>Paint Correction:</h5>
                         <input type="checkbox" name="SinglePC" value="SinglePC" className='checkbox-input' />
                         <label htmlFor="SinglePC" className='input-label'>Single Stage Paint Correction</label><br />
@@ -97,8 +99,7 @@ export default function Home() {
                         <input type="checkbox" name="Glass" value="Glass" className='checkbox-input' />
                         <label htmlFor="Glass" className='input-label'>Glass Polishing</label><br style={{marginBottom: 16}} />
 
-                        <label htmlFor="message" className='input-label'>Additional Details</label><br />
-                        <textarea type="textarea" id="message" name="message" className='textarea-input' placeholder='Anything else we might want to know?' />
+
                         <button className='readmore'>Submit</button>
                     </form>
                 </div>
