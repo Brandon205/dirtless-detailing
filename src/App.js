@@ -13,6 +13,7 @@ import PDLWash from './components/pages/PDLWash.js';
 import Engine from './components/pages/Engine.js';
 import SinglePC from './components/pages/SinglePC.js';
 import TwoPC from './components/pages/TwoPC.js';
+import Addons from './components/pages/Addons.js';
 import FullIntGallery from './components/galleryPages/FullIntGallery';
 import EngineGallery from './components/galleryPages/EngineGallery';
 import DLWashGallery from './components/galleryPages/DLWashGallery';
@@ -128,6 +129,7 @@ export default function App() {
           <Route path="engine" element={<Engine />} />
           <Route path="single-paint-correction" element={<SinglePC />} />
           <Route path="two-paint-correction" element={<TwoPC />} />
+          <Route path="addons" element={<Addons />} />
 
           <Route path="full-int-gallery" element={<FullIntGallery />} />
           <Route path="paint-correction-gallery" element={<PaintCorrectionGallery />} />
