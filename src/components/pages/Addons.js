@@ -41,7 +41,6 @@ export default function Addons() {
         )
       })
 
-
   return (
     <section className='service-content-container'>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}></div>
@@ -50,7 +49,7 @@ export default function Addons() {
       <div className='main-content-container'>
         <div className="process-container">
           <div>
-            <h1  id="waterspot" style={{textDecoration: 'underline'}}>Waterspot/Overspray Removal</h1>
+            <h1 id="waterspot" style={{textDecoration: 'underline'}}>Waterspot/Overspray Removal</h1>
             <h2>Our Simple Process</h2>
             <ol className='list'>
               {waterspotContent}

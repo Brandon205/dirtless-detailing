@@ -58,14 +58,14 @@ export default function DLWash() {
 
             <div className='aside-container'>
               <div className='service-aside'>
-                <h3>Extra Addons</h3>
+              <h3><Link to="/addons" style={{color: 'black'}}>Extra Addons</Link></h3>
                 <div className="aside-links">
                   <div className="addon-container">
-                    <p className='addon-title'>Glass Polishing - <span className="bold">$70</span>/hour</p>
+                    <p className='addon-title'><HashLink smooth to="/addons/#glass" style={{color: 'blue'}} scroll={el => scrollWithOffset(el)}>Glass Polishing</HashLink> - <span className="bold">$70</span>/hour</p>
                     <p className="subtext">We'll give you crystal clear windows</p>
                   </div>
                   <div className="addon-container">
-                    <p className='addon-title'>Waterspot/Overspray Removal - <span className="bold">$60</span>/hour</p>
+                    <p className='addon-title'><HashLink smooth to="/addons/#waterspot" style={{color: 'blue'}} scroll={el => scrollWithOffset(el)}>Waterspot/Overspray</HashLink> - <span className="bold">$60</span>/hour</p>
                     <p className="subtext">We'll remove overspray and waterspots from your vehicle</p>
                   </div>
                 </div>
