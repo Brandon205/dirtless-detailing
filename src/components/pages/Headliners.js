@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { scrollWithOffset } from '../helpers/ScrollToTop';
 
-import cover from '../../assets/imgs/fullIntExCover.jpg';
+import cover from '../../assets/imgs/headlinersCover.JPEG';
 
 const steps = [
   ["Determine Method", "We have an array of gentle products available, the materials of your headliner will tell us what to use."],
