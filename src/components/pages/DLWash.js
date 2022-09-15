@@ -82,7 +82,7 @@ export default function DLWash() {
 
         <div>
           <h2 className='pricing-title'>PRICING</h2>
-          <h4 className='subtext'>Our basic prices are shown below, actual prices will be based on your vehicle size.</h4>
+          <h4 className='subtext'>Our basic prices are shown below, final prices will be based on your vehicle size.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
               <h4 className="size">SMALL</h4>

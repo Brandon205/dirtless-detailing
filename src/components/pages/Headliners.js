@@ -53,7 +53,7 @@ export default function Headliners() {
         </div>
         <div>
           <h2>PRICING</h2>
-          <h4>Our basic prices are shown below, actual prices will be based on your vehicle size.</h4>
+          <h4>Our basic prices are shown below, final prices will be based on your vehicle size.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
               <p className="example-vehicle">ANY SIZE</p>
