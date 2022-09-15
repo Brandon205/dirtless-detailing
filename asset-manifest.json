@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dirtless-detailing/static/css/main.e96ca6b7.css",
-    "main.js": "/dirtless-detailing/static/js/main.ac1fbfb6.js",
+    "main.css": "/dirtless-detailing/static/css/main.6122d968.css",
+    "main.js": "/dirtless-detailing/static/js/main.e6fc7482.js",
     "static/js/787.014c8e76.chunk.js": "/dirtless-detailing/static/js/787.014c8e76.chunk.js",
     "static/media/1PCCover.jpg": "/dirtless-detailing/static/media/1PCCover.9376093b60f2f76e21b5.jpg",
     "static/media/2PCCover.jpg": "/dirtless-detailing/static/media/2PCCover.317bf6fa4776e80d4e76.jpg",
@@ -49,15 +49,16 @@
     "static/media/1080x720b.webp": "/dirtless-detailing/static/media/1080x720b.5410688fd5370c148db0.webp",
     "static/media/1080x720a.webp": "/dirtless-detailing/static/media/1080x720a.ec5c07c51bb7640c85f5.webp",
     "static/media/1080x1221a.webp": "/dirtless-detailing/static/media/1080x1221a.58d59a7b4db60fdd3216.webp",
+    "static/media/headlinersCover.JPEG": "/dirtless-detailing/static/media/headlinersCover.82cb73bdf85f7c6a8107.JPEG",
     "static/media/908x1220a.webp": "/dirtless-detailing/static/media/908x1220a.6e784a3216177b03e431.webp",
     "static/media/PNG1.png": "/dirtless-detailing/static/media/PNG1.4e6a140cd424bc4ae3b9.png",
     "index.html": "/dirtless-detailing/index.html",
-    "main.e96ca6b7.css.map": "/dirtless-detailing/static/css/main.e96ca6b7.css.map",
-    "main.ac1fbfb6.js.map": "/dirtless-detailing/static/js/main.ac1fbfb6.js.map",
+    "main.6122d968.css.map": "/dirtless-detailing/static/css/main.6122d968.css.map",
+    "main.e6fc7482.js.map": "/dirtless-detailing/static/js/main.e6fc7482.js.map",
     "787.014c8e76.chunk.js.map": "/dirtless-detailing/static/js/787.014c8e76.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e96ca6b7.css",
-    "static/js/main.ac1fbfb6.js"
+    "static/css/main.6122d968.css",
+    "static/js/main.e6fc7482.js"
   ]
 }
