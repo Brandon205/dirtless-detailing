@@ -3,6 +3,7 @@ import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { scrollWithOffset } from './helpers/ScrollToTop';
+import submit from './helpers/submit.js';
 
 import { BsCheck2Circle } from 'react-icons/bs';
 import { FaPhoneAlt, FaFacebookMessenger, FaClock } from 'react-icons/fa';
@@ -58,7 +59,7 @@ export default function Home() {
                     <h2>Get In Touch</h2>
                     <a href="tel:2532529758" target="_blank" rel="noreferrer">(253) 252-9758</a>
 
-                    <form action="#" className="form">
+                    <form action="#" className="form" onSubmit={(e) => submit(e)}>
                         <label htmlFor="name" className='input-label'>Name</label><br />
                         <input type="text" id="name" name="name" className='text-input' required /><br />
                         <label htmlFor="email" className='input-label'>Email</label><br />
@@ -102,7 +103,6 @@ export default function Home() {
                         <h6 className="form-subheading">Paint Correction Addons:</h6>
                         <input type="checkbox" name="Glass" value="Glass" className='checkbox-input' />
                         <label htmlFor="Glass" className='input-label'>Glass Polishing</label><br style={{marginBottom: 16}} />
-
 
                         <button className='readmore'>Submit</button>
                     </form>
@@ -296,7 +296,6 @@ export default function Home() {
                     </Link>
                 </div>
             </section>
-
 
             <div className='separator-container'>
                 <h2 className='service-title'>EXTERIOR CLEANING SERVICES</h2>
