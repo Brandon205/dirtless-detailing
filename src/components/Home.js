@@ -240,6 +240,27 @@ export default function Home() {
             <HashLink smooth to="/#contact" className="quote-btn main-quote-btn" scroll={el => scrollWithOffset(el)}>Get a Quote</HashLink>
 
             <div className='separator-container'>
+                <h2 className='service-title'>COMBO DEALS</h2>
+            </div>
+
+            <section className="otherservices-container">
+                <div className="service-card">
+                    <Link to="bio" className="service-heading-link"><h2>Full Interior and Exterior Cleaning Combo</h2></Link>
+                    <p className="secondary-text">Starting at: <span>$275</span></p>
+                    <p className="service-desc">This combo comes with a <span className='special-package'>free</span> Engine Bay cleaning, along with the full interior and exterior detail this package is sure to bring your whole car back to life.</p>
+                    <hr className="card-hr" />
+                    <div style={{display: 'flex'}}>
+                        <Link to="full-int-ex" className="readmore">
+                            <p>Full Interior</p>
+                        </Link>
+                        <Link to="dl-wash" className="readmore">
+                            <p>Exterior Cleaning</p>
+                        </Link>
+                    </div>
+                </div>
+            </section>
+
+            <div className='separator-container'>
                 <h2 className='service-title'>INTERIOR CLEANING SERVICES</h2>
             </div>
             <section className="otherservices-container">
