@@ -67,6 +67,10 @@ export default function Home() {
                         <label htmlFor="message" className='input-label'>Additional Details</label><br />
                         <textarea type="textarea" id="message" name="message" className='textarea-input' placeholder='Anything else we might want to know?' />
 
+                        <h5 style={{marginBottom: 4}}>Combos:</h5>
+                        <input type="checkbox" name="Combo" value="Combo" className='checkbox-input' />
+                        <label htmlFor="Combo" className='input-label'>Full Interior and Exterior Combo</label><br />
+
                         <h5 style={{marginBottom: 4}}>Interior Cleaning:</h5>
                         <input type="checkbox" name="FullInt" value="FullInt" className='checkbox-input' />
                         <label htmlFor="FullInt" className='input-label'>Full Interior With Extraction</label><br />
