@@ -68,7 +68,7 @@ export default function SinglePC() {
                 <div className="aside-links">
                   <div className="addon-container">
                     <p className='addon-title'><HashLink smooth to="/addons/#glass" style={{color: 'blue'}} scroll={el => scrollWithOffset(el)}>Glass Polishing</HashLink> - <span className="bold">$70</span>/hour</p>
-                    <p className="subtext">We'll give you crystal clear windows</p>
+                    <p className="subtext">Gives you crystal clear windows</p>
                   </div>
                 </div>
               </div>

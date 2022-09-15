@@ -60,6 +60,11 @@ export default function FullIntEx() {
           </div>
         </div>
 
+        <div className="combo-container">
+          <h2>Get a <span className='special-package'>free</span> Engine cleaning!</h2>
+          <p className="subtext">When you book this Full Interior Cleaning (with or without extraction) and an <Link to="/dl-wash">Exterior Cleaning</Link> together we will clean out your engine bay at no extra cost.</p>
+        </div>
+
         <div>
           <h2 className='pricing-title'>PRICING</h2>
           <h4 className='subtext'>*Final pricing may vary based on vehicle size/condition</h4>

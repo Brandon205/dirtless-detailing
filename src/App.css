@@ -731,6 +731,14 @@ hr {
   padding: 1rem;
 }
 
+.combo-container {
+  background-color: var(--contact-bkg-clr-light);
+  width: 275px;
+  margin: 1rem auto 0 auto;
+  padding: 0.75rem;
+  border-radius: 15px;
+}
+
 .service-link {
   display: inline-block;
   text-decoration: none;
@@ -939,6 +947,10 @@ hr {
 
   .popular-readmore {
     margin: 0 auto;
+  }
+
+  .combo-container {
+    width: 55vw;
   }
 
   .service-card {

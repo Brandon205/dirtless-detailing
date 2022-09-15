@@ -62,17 +62,22 @@ export default function DLWash() {
                 <div className="aside-links">
                   <div className="addon-container">
                     <p className='addon-title'><HashLink smooth to="/addons/#glass" style={{color: 'blue'}} scroll={el => scrollWithOffset(el)}>Glass Polishing</HashLink> - <span className="bold">$70</span>/hour</p>
-                    <p className="subtext">We'll give you crystal clear windows</p>
+                    <p className="subtext">Gives you crystal clear windows</p>
                   </div>
                   <div className="addon-container">
                     <p className='addon-title'><HashLink smooth to="/addons/#waterspot" style={{color: 'blue'}} scroll={el => scrollWithOffset(el)}>Waterspot/Overspray</HashLink> - <span className="bold">$60</span>/hour</p>
-                    <p className="subtext">We'll remove overspray and waterspots from your vehicle</p>
+                    <p className="subtext">Remove Overspray and Waterspots from your vehicle</p>
                   </div>
                 </div>
               </div>
             </div>
 
           </div>
+        </div>
+
+        <div className="combo-container">
+          <h2>Get a <span className='special-package'>free</span> Engine cleaning!</h2>
+          <p className="subtext">When you book this Exterior Cleaning (Premium or not) and a <Link to="/dl-wash">Full Interior Cleaning</Link> together we will clean out your engine bay at no extra cost.</p>
         </div>
 
         <div>
