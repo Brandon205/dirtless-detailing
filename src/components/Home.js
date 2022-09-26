@@ -274,7 +274,7 @@ export default function Home() {
                     <hr className="card-hr" />
                     <div style={{display: 'flex'}}>
                         <Link to="full-int-ex" className="readmore">
-                            <p>Full Interior</p>
+                            <p>Full Interior Cleaning</p>
                         </Link>
                         <Link to="dl-wash" className="readmore">
                             <p>Exterior Cleaning</p>
