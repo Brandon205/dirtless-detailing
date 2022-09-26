@@ -4,11 +4,15 @@
   --contact-bkg-clr-light: #ECEDF5;
   --nav-bkg-clr: rgba(245, 245, 245, 0.8);
   --menu-container-clr: rgba(245, 245, 245);
-  /* --nav-dropdown-clr: #252525;
-  --nav-dropdown-hover: #1d1d1d; */
   --nav-color: #636364;
   --boxshadow-clr: rgb(213, 213, 213);
   --footer-bkg: #060606;
+
+  /** Service Card Colors **/
+  --small-card: #60EFFF;
+  --medium-card: #4BD1FF;
+  --large-card: #30A8FF;
+  --xl-card: #0061FF;
 
   /** Button colors **/
   --main-clr: #fc4c00;
@@ -167,7 +171,7 @@ li span {
 }
 
 .menu-li {
-  padding-left: 0.5rem;
+  padding: 0 1rem;
   cursor: pointer;
 }
 
@@ -781,6 +785,22 @@ hr {
   background-color: var(--contact-bkg-clr-light);
   border-radius: 0.5rem;
   margin-bottom: 2rem;
+}
+
+.small-card {
+  background-color: var(--small-card);
+}
+
+.medium-card {
+  background-color: var(--medium-card);
+}
+
+.large-card {
+  background-color: var(--large-card);
+}
+
+.xl-card {
+  background-color: var(--xl-card);
 }
 
 .fullInt-pricing-container {

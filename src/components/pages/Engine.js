@@ -57,8 +57,8 @@ export default function Engine() {
           <h2>PRICING</h2>
           <h4>Our basic prices for this service are shown below</h4>
           <div className="pricing-container">
-            <div className="pricing-card">
-              <p className="example-vehicle">ANY SIZE</p>
+            <div className="pricing-card medium-card">
+              <p className="example-vehicle">ANY SIZE VEHICLE</p>
               <p className="pricing-price">$80</p>
             </div>
           </div>

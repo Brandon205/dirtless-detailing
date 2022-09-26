@@ -81,17 +81,17 @@ export default function TwoPC() {
           <div className="pricing-container">
             <div className="pricing-card">
               <h4 className="size">SMALL</h4>
-              <p className="example-vehicle">Small cars and mini trucks</p>
+              <p className="example-vehicle">Most Cars and Smaller Trucks</p>
               <p className="pricing-price">$450-600</p>
             </div>
             <div className="pricing-card">
               <h4 className="size">MEDIUM</h4>
-              <p className="example-vehicle">Mid size SUV's, and most Wagons</p>
+              <p className="example-vehicle">Mid-Size SUV's, and most Wagons</p>
               <p className="pricing-price">$600-$850</p>
             </div>
             <div className="pricing-card">
               <h4 className="size">LARGE</h4>
-              <p className="example-vehicle">Big SUV's and Big trucks</p>
+              <p className="example-vehicle">Large SUV's and Large Trucks</p>
               <p className="pricing-price">$800-$1,100</p>
             </div>
           </div>
