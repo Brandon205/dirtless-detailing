@@ -4,8 +4,9 @@
   --contact-bkg-clr-light: #ECEDF5;
   --nav-bkg-clr: rgba(245, 245, 245, 0.8);
   --menu-container-clr: rgba(245, 245, 245);
-  --nav-dropdown-clr: #252525;
-  --nav-dropdown-hover: #1d1d1d;
+  /* --nav-dropdown-clr: #252525;
+  --nav-dropdown-hover: #1d1d1d; */
+  --nav-color: #636364;
   --boxshadow-clr: rgb(213, 213, 213);
   --footer-bkg: #060606;
 
@@ -163,7 +164,6 @@ li span {
 .sub-ul {
   list-style: none;
   padding-left: 0;
-  width: 100%;
 }
 
 .menu-li {
@@ -171,17 +171,26 @@ li span {
   cursor: pointer;
 }
 
-.sub-menu-li {
-  background-color: var(--nav-dropdown-clr);
-  padding-left: 1rem;
+.menu-li:hover {
+  color: var(--nav-color);
 }
 
-.sub-menu-li:hover {
-  background-color: var(--nav-dropdown-hover);
+.nav-div {
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--contact-bkg-clr-light);
 }
 
 .sub-menu-li .menu-link {
-  color: white;
+  color: var(--nav-color);
+}
+
+.sub-menu-li .menu-link:hover {
+  color: black;
+}
+
+.sub-menu-header {
+  margin: 0;
 }
 
 .menu-link {
@@ -904,6 +913,10 @@ hr {
     font-size: 1.1em;
   }
 
+  .nav-div {
+    padding: 2rem;
+  }
+
   .menu-container {
     background-color: rgba(245, 245, 245, 0);
   }
@@ -985,12 +998,8 @@ hr {
 
   .sub-ul {
     position: absolute;
-    width: 250px;
+    width: 325px;
     top: 35px;
-  }
-
-  .sub-menu-li {
-    border-bottom: 1px solid black;
   }
 
   .menu-bars {

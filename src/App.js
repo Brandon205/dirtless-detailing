@@ -19,46 +19,33 @@ import EngineGallery from './components/galleryPages/EngineGallery';
 import DLWashGallery from './components/galleryPages/DLWashGallery';
 import PaintCorrectionGallery from './components/galleryPages/PaintCorrectionGallery';
 
-import { FaBars, FaFacebook, FaCaretDown, FaPhoneAlt } from 'react-icons/fa';
+import { FaBars, FaFacebook, FaPhoneAlt, FaCarSide, FaPhotoVideo } from 'react-icons/fa';
 import { GoLocation } from "react-icons/go";
+import { GiSteeringWheel } from 'react-icons/gi';
+import { RiCarWashingFill } from 'react-icons/ri';
 import './App.css';
 
 export default function App() {
   const [nav, setNav] = useState('none');
-  const [interior, setInterior] = useState('none');
-  const [exteriorCorr, setExteriorCorr] = useState('none');
-  const [exteriorClean, setExteriorClean] = useState('none');
+  const [services, setServices] = useState('none');
   const [gallery, setGallery] = useState('none');
 
   let changeNav = (changeTo) => {
 
-    setInterior('none');
-    setExteriorCorr('none');
-    setExteriorClean('none');
+    setServices('none');
     setGallery('none');
     switch (changeTo) {
-      case 'interior': {
-        setInterior('block');
-      }
-      break;
-      case 'exteriorCorr': {
-        setExteriorCorr('block');
-      }
-      break;
-      case 'exteriorClean': {
-        setExteriorClean('block');
+      case 'services': {
+        setServices('block');
       }
       break;
       case 'gallery': {
-
         setGallery('block');
       }
       break;
 
       default: {
-        setInterior('none');
-        setExteriorCorr('none');
-        setExteriorClean('none');
+        setServices('none');
         setGallery('none');
       }
     }
@@ -76,40 +63,38 @@ export default function App() {
             <FaBars className="menu-bars" onClick={() => setNav(nav === 'block' ? 'none' : 'block')} />
             <div style={{display: nav}} className="menu-container">
               <ul className='main-ul'>
+                
                 <li className='menu-li'><Link to="/" className='menu-link' onClick={() => setNav('none')}>Home</Link></li>
+
                 <div style={{position: 'relative'}}>
-                  <li className='menu-li' onMouseEnter={() => changeNav('interior')} onMouseLeave={() => changeNav('none')} onClick={() => changeNav('interior')}>Interior <span><FaCaretDown /></span></li>
-                  <ul className="sub-ul" onMouseEnter={() => changeNav('interior')} onMouseLeave={() => changeNav('none')} style={{display: interior}}>
-                    <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='full-int-ex' className='menu-link'>Full Interior Cleaning</Link></li>
-                    <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='bio' className='menu-link'>Biohazard Cleaning</Link></li>
-                    <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='headliners' className='menu-link'>Headliners</Link></li>
+                  <li className='menu-li' onMouseEnter={() => changeNav('services')} onMouseLeave={() => changeNav('none')} onClick={() => changeNav('services')}>Services</li>
+                  <ul className="sub-ul" onMouseEnter={() => changeNav('services')} onMouseLeave={() => changeNav('none')}  style={{display: services}}>
+                    <div className="nav-div">
+                      <h4 className='sub-menu-header'><GiSteeringWheel /> INTERIOR CLEANING</h4>
+                      <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='full-int-ex' className='menu-link'>Full Interior Cleaning</Link></li>
+                      <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='bio' className='menu-link'>Biohazard Cleaning</Link></li>
+                      <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='headliners' className='menu-link'>Headliners</Link></li>
+                      <h4 className='sub-menu-header'><RiCarWashingFill /> EXTERIOR CLEANING</h4>
+                      <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='dl-wash' className='menu-link'>Dirt-Less Wash</Link></li>
+                      <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='premium-dl-wash' className='menu-link'>Premium Dirt-Less Wash</Link></li>
+                      <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='engine' className='menu-link'>Engine Bay</Link></li>
+                      <h4 className='sub-menu-header'><FaCarSide /> EXTERIOR CORRECTION</h4>
+                      <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='single-paint-correction' className='menu-link'>Single Stage Paint Correction</Link></li>
+                      <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='two-paint-correction' className='menu-link'>Two Stage Paint Correction</Link></li>
+                    </div>
                   </ul>
                 </div>
 
                 <div style={{position: 'relative'}}>
-                  <li className='menu-li' onMouseEnter={() => changeNav('exteriorClean')} onMouseLeave={() => changeNav('none')} onClick={() => changeNav('exteriorClean')}>Exterior Cleaning <span><FaCaretDown /></span></li>
-                  <ul className="sub-ul" onMouseEnter={() => changeNav('exteriorClean')} onMouseLeave={() => changeNav('none')} style={{display: exteriorClean}}>
-                    <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='dl-wash' className='menu-link'>Dirt-Less Wash</Link></li>
-                    <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='premium-dl-wash' className='menu-link'>Premium Dirt-Less Wash</Link></li>
-                    <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='engine' className='menu-link'>Engine Bay</Link></li>
-                  </ul>
-                </div>
-
-                <div style={{position: 'relative'}}>
-                  <li className='menu-li' onMouseEnter={() => changeNav('exteriorCorr')} onMouseLeave={() => changeNav('none')} onClick={() => changeNav('exteriorCorr')}>Paint Correction <span><FaCaretDown /></span></li>
-                  <ul className="sub-ul" onMouseEnter={() => changeNav('exteriorCorr')} onMouseLeave={() => changeNav('none')} style={{display: exteriorCorr}}>
-                    <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='single-paint-correction' className='menu-link'>Single Stage Paint Correction</Link></li>
-                    <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='two-paint-correction' className='menu-link'>Two Stage Paint Correction</Link></li>
-                  </ul>
-                </div>
-
-                <div style={{position: 'relative'}}>
-                  <li className='menu-li' onMouseEnter={() => changeNav('gallery')} onMouseLeave={() => changeNav('none')} onClick={() => changeNav('gallery')}>Gallery <span><FaCaretDown /></span></li>
+                  <li className='menu-li' onMouseEnter={() => changeNav('gallery')} onMouseLeave={() => changeNav('none')} onClick={() => changeNav('gallery')}>Gallery</li>
                   <ul className="sub-ul" onMouseEnter={() => changeNav('gallery')} onMouseLeave={() => changeNav('none')} style={{display: gallery}}>
-                    <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='full-int-gallery' className='menu-link'>Interior Gallery</Link></li>
-                    <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='paint-correction-gallery' className='menu-link'>Paint Correction Gallery</Link></li>
-                    <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='dl-wash-gallery' className='menu-link'>Dirt-Less Wash Gallery</Link></li>
-                    <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='engine-gallery' className='menu-link'>Engine Cleaning Gallery</Link></li>
+                    <div className="nav-div">
+                      <h4 className="sub-menu-header"><FaPhotoVideo /> GALLERIES</h4>
+                      <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='full-int-gallery' className='menu-link'>Interior Gallery</Link></li>
+                      <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='paint-correction-gallery' className='menu-link'>Paint Correction Gallery</Link></li>
+                      <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='dl-wash-gallery' className='menu-link'>Dirt-Less Wash Gallery</Link></li>
+                      <li className='sub-menu-li' onClick={() => setNav('none')}><Link to='engine-gallery' className='menu-link'>Engine Cleaning Gallery</Link></li>
+                    </div>
                   </ul>
                 </div>
 
