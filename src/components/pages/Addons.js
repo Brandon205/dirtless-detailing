@@ -49,21 +49,22 @@ export default function Addons() {
       <div className='main-content-container'>
         <div className="process-container">
           <div>
-            <h1 id="waterspot" style={{textDecoration: 'underline'}}>Waterspot/Overspray Removal</h1>
-            <h2>Our Simple Process</h2>
+            <h1 id="waterspot" style={{textDecoration: 'underline', marginBottom: 0}}>Waterspot/Overspray Removal</h1>
+            <p>This can be added onto any of our Exterior or Paint Correction Services</p>
+            <h2>Our Process</h2>
             <ol className='list'>
               {waterspotContent}
             </ol>
           </div>
         </div>
-        <HashLink smooth to="/#contact" className="quote-btn top-quote-btn service-page-quote-btn">Contact Us</HashLink>
+        <HashLink smooth to="/#contact" className="quote-btn top-quote-btn service-page-quote-btn">Get Started</HashLink>
 
         <div>
           <h2>PRICING</h2>
           <h4>Our hourly rate for this job is posted below.</h4>
           <div className="pricing-container">
-            <div className="pricing-card">
-              <p className="example-vehicle">Any size vehicle, price is per hour spent</p>
+            <div className="pricing-card medium-card">
+              <p className="example-vehicle">ANY SIZE VEHICLE</p>
               <p className="pricing-price">$60/hour</p>
             </div>
           </div>
@@ -73,8 +74,9 @@ export default function Addons() {
       <div className='main-content-container'>
         <div className="process-container">
           <div>
-            <h1 id="glass" style={{textDecoration: 'underline'}}>Glass Polishing</h1>
-            <h2>Our Simple Process</h2>
+            <h1 id="glass" style={{textDecoration: 'underline', marginBottom: 0}}>Glass Polishing</h1>
+            <p>This can be added onto either of our Paint Correction Services</p>
+            <h2>Our Process</h2>
             <ol className='list'>
               {glassContent}
             </ol>
@@ -85,8 +87,8 @@ export default function Addons() {
           <h2>PRICING</h2>
           <h4>Our hourly rate for this job is posted below.</h4>
           <div className="pricing-container">
-            <div className="pricing-card">
-              <p className="example-vehicle">Any size vehicle, price is per hour spent</p>
+            <div className="pricing-card medium-card">
+              <p className="example-vehicle">ANY SIZE VEHICLE</p>
               <p className="pricing-price">$70/hour</p>
             </div>
           </div>

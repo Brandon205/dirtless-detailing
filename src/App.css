@@ -152,7 +152,7 @@ li span {
   position: absolute;
   text-align: left;
   width: 350px;
-  height: 80vh;
+  height: 90vh;
   line-height: 2.5;
   background-color: var(--menu-container-clr);
   top: 80px;

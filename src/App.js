@@ -63,7 +63,7 @@ export default function App() {
             <FaBars className="menu-bars" onClick={() => setNav(nav === 'block' ? 'none' : 'block')} />
             <div style={{display: nav}} className="menu-container">
               <ul className='main-ul'>
-                
+
                 <li className='menu-li'><Link to="/" className='menu-link' onClick={() => setNav('none')}>Home</Link></li>
 
                 <div style={{position: 'relative'}}>
@@ -97,6 +97,8 @@ export default function App() {
                     </div>
                   </ul>
                 </div>
+
+                <li className='menu-li'><Link to="addons" className='menu-link' onClick={() => setNav('none')}>Addons</Link></li>
 
                 <li className='menu-li'><Link to='about' className='menu-link' onClick={() => setNav('none')}>About Us</Link></li>
               </ul>
