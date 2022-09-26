@@ -21,6 +21,7 @@ export default function Home() {
     const [moreInterior, setMoreInterior] = useState(false);
     const [moreExterior, setMoreExterior] = useState(false);
     const [moreCorrection, setMoreCorrection] = useState(false);
+    const [showForm, setShowForm] = useState(false);
 
     return (
         <div className="App">
@@ -69,46 +70,51 @@ export default function Home() {
                         <label htmlFor="email" className='input-label'>Email</label><br />
                         <input type="text" id="email" name="email" className='text-input' required /><br />
 
-                        <label htmlFor="message" className='input-label'>Additional Details</label><br />
-                        <textarea type="textarea" id="message" name="message" className='textarea-input' placeholder='Anything else we might want to know?' />
+                        <span onClick={() => setShowForm(!showForm)} style={{cursor: 'pointer'}}>{showForm ? 'Hide' : 'Show'} the rest of the form</span>
 
-                        <h5 style={{marginBottom: 4}}>Combos:</h5>
-                        <input type="checkbox" name="Combo" value="Combo" className='checkbox-input' />
-                        <label htmlFor="Combo" className='input-label'>Full Interior and Exterior Combo</label><br />
+                        <span style={{display: showForm ? 'block' : 'none'}}>
+                            <label htmlFor="message" className='input-label'>Additional Details</label><br />
+                            <textarea type="textarea" id="message" name="message" className='textarea-input' placeholder='Anything else we might want to know?' />
 
-                        <h5 style={{marginBottom: 4}}>Interior Cleaning:</h5>
-                        <input type="checkbox" name="FullInt" value="FullInt" className='checkbox-input' />
-                        <label htmlFor="FullInt" className='input-label'>Full Interior With Extraction</label><br />
-                        <input type="checkbox" name="Bio" value="Bio" className='checkbox-input' />
-                        <label htmlFor="Bio" className='input-label'>Biohazard Cleaning</label><br />
-                        <input type="checkbox" name="Headliners" value="Headliners" />
-                        <label htmlFor="Headliners" className='input-label'>Headliners</label><br />
+                            <h5 style={{marginBottom: 4}}>Combos:</h5>
+                            <input type="checkbox" name="Combo" value="Combo" className='checkbox-input' />
+                            <label htmlFor="Combo" className='input-label'>Full Interior and Exterior Combo</label><br />
 
-                        <h5 style={{marginBottom: 4}}>Exterior Cleaning:</h5>
-                        <input type="checkbox" name="DLWash" value="DLWash" className='checkbox-input' />
-                        <label htmlFor="DLWash" className='input-label'>Dirt-Less Wash</label><br />
-                        <input type="checkbox" name="PDLWash" value="PDLWash" className='checkbox-input' />
-                        <label htmlFor="PDLWash" className='input-label'>Premium Dirt-Less Wash</label><br />
-                        <input type="checkbox" name="Engine" value="Engine" />
-                        <label htmlFor="Engine" className='input-label' style={{marginBottom: 16}}>Engine Bay</label><br />
+                            <h5 style={{marginBottom: 4}}>Interior Cleaning:</h5>
+                            <input type="checkbox" name="FullInt" value="FullInt" className='checkbox-input' />
+                            <label htmlFor="FullInt" className='input-label'>Full Interior With Extraction</label><br />
+                            <input type="checkbox" name="Bio" value="Bio" className='checkbox-input' />
+                            <label htmlFor="Bio" className='input-label'>Biohazard Cleaning</label><br />
+                            <input type="checkbox" name="Headliners" value="Headliners" />
+                            <label htmlFor="Headliners" className='input-label'>Headliners</label><br />
 
-                        <h6 className="form-subheading">Exterior Addons:</h6>
-                        <input type="checkbox" name="Glass" value="Glass" />
-                        <label htmlFor="Glass" className='input-label' style={{marginBottom: 16}}>Glass Polishing</label><br />
-                        <input type="checkbox" name="Waterspot" value="Waterspot" />
-                        <label htmlFor="Waterspot" className='input-label' style={{marginBottom: 16}}>Waterspot/Overspray Removal</label><br />
+                            <h5 style={{marginBottom: 4}}>Exterior Cleaning:</h5>
+                            <input type="checkbox" name="DLWash" value="DLWash" className='checkbox-input' />
+                            <label htmlFor="DLWash" className='input-label'>Dirt-Less Wash</label><br />
+                            <input type="checkbox" name="PDLWash" value="PDLWash" className='checkbox-input' />
+                            <label htmlFor="PDLWash" className='input-label'>Premium Dirt-Less Wash</label><br />
+                            <input type="checkbox" name="Engine" value="Engine" />
+                            <label htmlFor="Engine" className='input-label' style={{marginBottom: 16}}>Engine Bay</label><br />
 
-                        <h5 style={{marginBottom: 4}}>Paint Correction:</h5>
-                        <input type="checkbox" name="SinglePC" value="SinglePC" className='checkbox-input' />
-                        <label htmlFor="SinglePC" className='input-label'>Single Stage Paint Correction</label><br />
-                        <input type="checkbox" name="TwoPC" value="TwoPC" />
-                        <label htmlFor="TwoPC" className='input-label' style={{marginBottom: 16}}>Two Stage Paint Correction</label><br />
+                            <h6 className="form-subheading">Exterior Addons:</h6>
+                            <input type="checkbox" name="Glass" value="Glass" />
+                            <label htmlFor="Glass" className='input-label' style={{marginBottom: 16}}>Glass Polishing</label><br />
+                            <input type="checkbox" name="Waterspot" value="Waterspot" />
+                            <label htmlFor="Waterspot" className='input-label' style={{marginBottom: 16}}>Waterspot/Overspray Removal</label><br />
 
-                        <h6 className="form-subheading">Paint Correction Addons:</h6>
-                        <input type="checkbox" name="Glass" value="Glass" className='checkbox-input' />
-                        <label htmlFor="Glass" className='input-label'>Glass Polishing</label><br style={{marginBottom: 16}} />
+                            <h5 style={{marginBottom: 4}}>Paint Correction:</h5>
+                            <input type="checkbox" name="SinglePC" value="SinglePC" className='checkbox-input' />
+                            <label htmlFor="SinglePC" className='input-label'>Single Stage Paint Correction</label><br />
+                            <input type="checkbox" name="TwoPC" value="TwoPC" />
+                            <label htmlFor="TwoPC" className='input-label' style={{marginBottom: 16}}>Two Stage Paint Correction</label><br />
 
-                        <button className='readmore'>Submit</button>
+                            <h6 className="form-subheading">Paint Correction Addons:</h6>
+                            <input type="checkbox" name="Glass" value="Glass" className='checkbox-input' />
+                            <label htmlFor="Glass" className='input-label'>Glass Polishing</label><br style={{marginBottom: 16}} />
+
+                            <button className='readmore'>Submit</button>
+                        </span>
+
                     </form>
                 </div>
             </section>
@@ -127,7 +133,7 @@ export default function Home() {
                         <ul className="checklist">
                             <li className="checklist-item">
                                 <BsCheck2Circle className='checkcircle' />
-                                <p>Blow out with Vortex Blowgun</p>
+                                <p>Blow out with Vortex Blowgun<span style={{display: moreInterior ? 'none' : 'inline', }}>...</span></p>
                             </li>
                             <span style={{display: moreInterior ? 'block' : 'none'}}>
                                 <li className="checklist-item">
@@ -172,7 +178,7 @@ export default function Home() {
                         <ul className="checklist">
                             <li className="checklist-item">
                                 <BsCheck2Circle className='checkcircle' />
-                                <p>Full Vehicle Strip Wash</p>
+                                <p>Full Vehicle Strip Wash<span style={{display: moreExterior ? 'none' : 'inline', }}>...</span></p>
                             </li>
                             <span style={{display: moreExterior ? 'block' : 'none'}}>
                                 <li className="checklist-item">
@@ -217,7 +223,7 @@ export default function Home() {
                         <ul className="checklist">
                             <li className="checklist-item">
                                 <BsCheck2Circle className='checkcircle' />
-                                <p>Full Vehicle Strip Wash</p>
+                                <p>Full Vehicle Strip Wash<span style={{display: moreCorrection ? 'none' : 'inline', }}>...</span></p>
                             </li>
                             <span style={{display: moreCorrection ? 'block' : 'none'}}>
                                 <li className="checklist-item">
