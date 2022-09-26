@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
@@ -18,6 +18,10 @@ import dlWash from '../assets/imgs/dlwashA.jpg';
 import paint from '../assets/imgs/paintcorrectionBA.jpg';
 
 export default function Home() {
+    const [moreInterior, setMoreInterior] = useState(false);
+    const [moreExterior, setMoreExterior] = useState(false);
+    const [moreCorrection, setMoreCorrection] = useState(false);
+
     return (
         <div className="App">
             <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}></div>
@@ -125,30 +129,33 @@ export default function Home() {
                                 <BsCheck2Circle className='checkcircle' />
                                 <p>Blow out with Vortex Blowgun</p>
                             </li>
-                            <li className="checklist-item">
-                                <BsCheck2Circle className='checkcircle' />
-                                <p>Hot Water Extraction - If added</p>
-                            </li>
-                            <li className="checklist-item">
-                                <BsCheck2Circle className='checkcircle' />
-                                <p>Vacuum the Whole Interior</p>
-                            </li>
-                            <li className="checklist-item">
-                                <BsCheck2Circle className='checkcircle' />
-                                <p>Clean ALL Plastics/Leather</p>
-                            </li>
-                            <li className="checklist-item">
-                                <BsCheck2Circle className='checkcircle' />
-                                <p>Dress Vinyl/Leather</p>
-                            </li>
-                            <li className="checklist-item">
-                                <BsCheck2Circle className='checkcircle' />
-                                <p>Clean Door Jambs</p>
-                            </li>
-                            <li className="checklist-item">
-                                <BsCheck2Circle className='checkcircle' />
-                                <p>Clean Windows</p>
-                            </li>
+                            <span style={{display: moreInterior ? 'block' : 'none'}}>
+                                <li className="checklist-item">
+                                    <BsCheck2Circle className='checkcircle' />
+                                    <p>Hot Water Extraction - If added</p>
+                                </li>
+                                <li className="checklist-item">
+                                    <BsCheck2Circle className='checkcircle' />
+                                    <p>Vacuum the Whole Interior</p>
+                                </li>
+                                <li className="checklist-item">
+                                    <BsCheck2Circle className='checkcircle' />
+                                    <p>Clean ALL Plastics/Leather</p>
+                                </li>
+                                <li className="checklist-item">
+                                    <BsCheck2Circle className='checkcircle' />
+                                    <p>Dress Vinyl/Leather</p>
+                                </li>
+                                <li className="checklist-item">
+                                    <BsCheck2Circle className='checkcircle' />
+                                    <p>Clean Door Jambs</p>
+                                </li>
+                                <li className="checklist-item">
+                                    <BsCheck2Circle className='checkcircle' />
+                                    <p>Clean Windows</p>
+                                </li>
+                            </span>
+                            <span onClick={() => setMoreInterior(!moreInterior)} style={{cursor: 'pointer'}}>...</span>
                         </ul>
                     </div>
                     <Link to="full-int-ex" className="popular-readmore">
@@ -167,30 +174,33 @@ export default function Home() {
                                 <BsCheck2Circle className='checkcircle' />
                                 <p>Full Vehicle Strip Wash</p>
                             </li>
-                            <li className="checklist-item">
-                                <BsCheck2Circle className='checkcircle' />
-                                <p>Clean Wheel Wells, Wheel Barriers, and Wheels</p>
-                            </li>
-                            <li className="checklist-item">
-                                <BsCheck2Circle className='checkcircle' />
-                                <p>Clay Bar Treatment</p>
-                            </li>
-                            <li className="checklist-item">
-                                <BsCheck2Circle className='checkcircle' />
-                                <p>Iron Decontamination Treatment</p>
-                            </li>
-                            <li className="checklist-item">
-                                <BsCheck2Circle className='checkcircle' />
-                                <p>Apply 6 month sealant or better</p>
-                            </li>
-                            <li className="checklist-item">
-                                <BsCheck2Circle className='checkcircle' />
-                                <p>Clean Door Jambs</p>
-                            </li>
-                            <li className="checklist-item">
-                                <BsCheck2Circle className='checkcircle' />
-                                <p>Dress Plastics, Wheel Wells, and Tires</p>
-                            </li>
+                            <span style={{display: moreExterior ? 'block' : 'none'}}>
+                                <li className="checklist-item">
+                                    <BsCheck2Circle className='checkcircle' />
+                                    <p>Clean Wheel Wells, Wheel Barriers, and Wheels</p>
+                                </li>
+                                <li className="checklist-item">
+                                    <BsCheck2Circle className='checkcircle' />
+                                    <p>Clay Bar Treatment</p>
+                                </li>
+                                <li className="checklist-item">
+                                    <BsCheck2Circle className='checkcircle' />
+                                    <p>Iron Decontamination Treatment</p>
+                                </li>
+                                <li className="checklist-item">
+                                    <BsCheck2Circle className='checkcircle' />
+                                    <p>Apply 6 month sealant or better</p>
+                                </li>
+                                <li className="checklist-item">
+                                    <BsCheck2Circle className='checkcircle' />
+                                    <p>Clean Door Jambs</p>
+                                </li>
+                                <li className="checklist-item">
+                                    <BsCheck2Circle className='checkcircle' />
+                                    <p>Dress Plastics, Wheel Wells, and Tires</p>
+                                </li>
+                            </span>
+                            <span onClick={() => setMoreExterior(!moreExterior)} style={{cursor: 'pointer'}}>...</span>
                         </ul>
                     </div>
                     <Link to="premium-dl-wash" className="popular-readmore">
@@ -209,30 +219,33 @@ export default function Home() {
                                 <BsCheck2Circle className='checkcircle' />
                                 <p>Full Vehicle Strip Wash</p>
                             </li>
-                            <li className="checklist-item">
-                                <BsCheck2Circle className='checkcircle' />
-                                <p>Clean Wheel Wells, Wheel Barrels, and Wheels</p>
-                            </li>
-                            <li className="checklist-item">
-                                <BsCheck2Circle className='checkcircle' />
-                                <p>Clay Bar and Iron Decontamination Treatment</p>
-                            </li>
-                            <li className="checklist-item">
-                                <BsCheck2Circle className='checkcircle' />
-                                <p>Remove Tar and Sap</p>
-                            </li>
-                            <li className="checklist-item">
-                                <BsCheck2Circle className='checkcircle' />
-                                <p>Tape Off All Trim</p>
-                            </li>
-                            <li className="checklist-item">
-                                <BsCheck2Circle className='checkcircle' />
-                                <p>Single Stage Paint Correction</p>
-                            </li>
-                            <li className="checklist-item">
-                                <BsCheck2Circle className='checkcircle' />
-                                <p>Ceramic Spray/Coat</p>
-                            </li>
+                            <span style={{display: moreCorrection ? 'block' : 'none'}}>
+                                <li className="checklist-item">
+                                    <BsCheck2Circle className='checkcircle' />
+                                    <p>Clean Wheel Wells, Wheel Barrels, and Wheels</p>
+                                </li>
+                                <li className="checklist-item">
+                                    <BsCheck2Circle className='checkcircle' />
+                                    <p>Clay Bar and Iron Decontamination Treatment</p>
+                                </li>
+                                <li className="checklist-item">
+                                    <BsCheck2Circle className='checkcircle' />
+                                    <p>Remove Tar and Sap</p>
+                                </li>
+                                <li className="checklist-item">
+                                    <BsCheck2Circle className='checkcircle' />
+                                    <p>Tape Off All Trim</p>
+                                </li>
+                                <li className="checklist-item">
+                                    <BsCheck2Circle className='checkcircle' />
+                                    <p>Single Stage Paint Correction</p>
+                                </li>
+                                <li className="checklist-item">
+                                    <BsCheck2Circle className='checkcircle' />
+                                    <p>Ceramic Spray/Coat</p>
+                                </li>
+                            </span>
+                            <span onClick={() => setMoreCorrection(!moreCorrection)} style={{cursor: 'pointer'}}>...</span>
                         </ul>
                     </div>
                     <Link to="single-paint-correction" className="popular-readmore">
