@@ -21,9 +21,11 @@ import paint from '../assets/imgs/paintcorrectionBA.jpg';
 
 export default function Home() {
     const [showForm, setShowForm] = useState(false);
+    const [wideScreen, setWideScreen] = useState(false); // Using for the auto expanded form if screen is wide enough
 
     useEffect(() => {
         if (window.innerWidth > 879) {
+            setWideScreen(true);
             setShowForm(true);
         }
     }, [])
@@ -76,7 +78,7 @@ export default function Home() {
                         <label htmlFor="email" className='input-label'>Email</label><br />
                         <input type="text" id="email" name="email" className='text-input' required /><br />
 
-                        <span onClick={() => setShowForm(!showForm)} style={{cursor: 'pointer', display: showForm ? 'none' : 'block'}}>{showForm ? <FaCaretUp /> : <FaCaretDown />} {showForm ? 'Hide' : 'Show'} the rest of the form {showForm ? <FaCaretUp /> : <FaCaretDown />}</span>
+                        <span onClick={() => setShowForm(!showForm)} style={{cursor: 'pointer', display: wideScreen ? 'none' : 'block'}}>{showForm ? <FaCaretUp /> : <FaCaretDown />} {showForm ? 'Hide' : 'Show'} the rest of the form {showForm ? <FaCaretUp /> : <FaCaretDown />}</span>
 
                         <span style={{display: showForm ? 'block' : 'none'}}>
                             <label htmlFor="message" className='input-label'>Additional Details</label><br />
