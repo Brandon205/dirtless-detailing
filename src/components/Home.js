@@ -17,6 +17,8 @@ import interior from '../assets/imgs/driverseatBA.jpg';
 import dlWash from '../assets/imgs/dlwashA.jpg';
 import paint from '../assets/imgs/paintcorrectionBA.jpg';
 
+
+
 export default function Home() {
     const [showForm, setShowForm] = useState(false);
 
@@ -75,8 +77,6 @@ export default function Home() {
                         <input type="text" id="email" name="email" className='text-input' required /><br />
 
                         <span onClick={() => setShowForm(!showForm)} style={{cursor: 'pointer', display: showForm ? 'none' : 'block'}}>{showForm ? <FaCaretUp /> : <FaCaretDown />} {showForm ? 'Hide' : 'Show'} the rest of the form {showForm ? <FaCaretUp /> : <FaCaretDown />}</span>
-
-                        {/* <div style={{height: 647, display: showForm ? 'none' : 'block'}}></div> */}
 
                         <span style={{display: showForm ? 'block' : 'none'}}>
                             <label htmlFor="message" className='input-label'>Additional Details</label><br />
