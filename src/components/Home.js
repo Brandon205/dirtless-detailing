@@ -128,7 +128,7 @@ export default function Home() {
                             <input type="checkbox" name="Glass" value="Glass" className='checkbox-input' />
                             <label htmlFor="Glass" className='input-label'>Glass Polishing</label><br style={{marginBottom: 16}} />
 
-                            <button className='readmore'>Submit</button>
+                            <button className='popular-readmore'>Submit</button>
                         </span>
 
                     </form>

@@ -544,7 +544,6 @@ header h1 {
 .popular-readmore {
   display: inline-block;
   padding: 0.75em 20%;
-  bottom: 10px;
   background-color: var(--main-clr);
   border-radius: 0.5rem;
   color: white;
