@@ -357,7 +357,7 @@ export default function Home() {
                     <div className="otherservices-desc">
                         <Link to="premium-dl-wash" className="service-heading-link"><h2>Premium Dirt-Less Wash</h2></Link>
                         <p className="secondary-text">Starting at: <span>$150</span></p>
-                        <p className="service-desc">Our Premium exterior wash will clean your car with the same thorough procedure as the Dirt-Less Wash, and will then go above and beyond in the cleaning process and topping it all off with a 6 month sealant or better to protect your vehicle.</p>
+                        <p className="service-desc">Our Premium exterior wash will go above and beyond the Dirt-Less Wash in the cleaning process and will top it off with a 6 month sealant or better to protect your vehicle.</p>
                         <Link to="dl-wash" className="readmore">
                             <p>Learn More</p>
                         </Link>
