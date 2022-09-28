@@ -338,6 +338,7 @@ export default function Home() {
             <div className='separator-container'>
                 <h2 className='service-title'>EXTERIOR CLEANING SERVICES</h2>
             </div>
+
             <section className="otherservices-container">
                 <div className="service-card">
                     <img src={dlwash} alt="dirt-less wash cleaning after" className='otherservices-image' />
