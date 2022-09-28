@@ -9,10 +9,14 @@
   --footer-bkg: #060606;
 
   /** Service Card Colors **/
-  --small-card: #60EFFF;
+  --small-card: #BBBBC1;
+  --medium-card: #89898D;
+  --large-card: #707073;
+  --xl-card: #575759;
+  /* --small-card: #60EFFF;
   --medium-card: #4BD1FF;
   --large-card: #30A8FF;
-  --xl-card: #0061FF;
+  --xl-card: #0061FF; */
 
   /** Button colors **/
   --main-clr: #fc4c00;
@@ -247,7 +251,7 @@ header h1 {
   flex-direction: column;
   color: black;
   width: 90vw;
-  margin: 4rem auto;
+  margin: 3.5rem auto;
 }
 
 .contact-container h3 {
@@ -1070,10 +1074,10 @@ hr {
 
 }
 
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 2000px) {
 
   .contact-container {
-    margin: 8rem auto
+    margin: 23rem auto 5rem auto
   }
   
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
@@ -20,6 +20,12 @@ import paint from '../assets/imgs/paintcorrectionBA.jpg';
 export default function Home() {
     const [showForm, setShowForm] = useState(false);
 
+    useEffect(() => {
+        if (window.innerWidth > 879) {
+            setShowForm(true);
+        }
+    }, [])
+
     return (
         <div className="App">
             <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}></div>
@@ -28,7 +34,8 @@ export default function Home() {
                     <h1 className='title-top'>Your Bonney Lake</h1><br />
                     <h1 className='title-bottom'>Detailing Specialists</h1>
                     <h4 className='dd-desc'>Plenty of 5-star reviews from the customers we've served. </h4>
-                    <h4 className='dd-desc'>We will do Interiors, Exteriors, Paint Correction, and much more. We will have your car looking like new!</h4>
+                    <h4 className='dd-desc'>We will do Interiors, Exteriors, Paint Correction, and much more!</h4>
+                    <h4 className='dd-desc'>For your convenience we can come to you, or you can bring your car to us!</h4>
                     <HashLink smooth to="/#popular-services" className="learn-btn top-learn-btn" scroll={el => scrollWithOffset(el)}>Learn More</HashLink>
                     <HashLink smooth to="/#contact" className="quote-btn top-quote-btn" scroll={el => scrollWithOffset(el)}>Get Quote</HashLink>
                 </div>
@@ -67,9 +74,9 @@ export default function Home() {
                         <label htmlFor="email" className='input-label'>Email</label><br />
                         <input type="text" id="email" name="email" className='text-input' required /><br />
 
-                        <span onClick={() => setShowForm(!showForm)} style={{cursor: 'pointer'}}>{showForm ? <FaCaretUp /> : <FaCaretDown />} {showForm ? 'Hide' : 'Show'} the rest of the form {showForm ? <FaCaretUp /> : <FaCaretDown />}</span>
+                        <span onClick={() => setShowForm(!showForm)} style={{cursor: 'pointer', display: showForm ? 'none' : 'block'}}>{showForm ? <FaCaretUp /> : <FaCaretDown />} {showForm ? 'Hide' : 'Show'} the rest of the form {showForm ? <FaCaretUp /> : <FaCaretDown />}</span>
 
-                        <div style={{height: 650, display: showForm ? 'none' : 'block'}}></div>
+                        {/* <div style={{height: 647, display: showForm ? 'none' : 'block'}}></div> */}
 
                         <span style={{display: showForm ? 'block' : 'none'}}>
                             <label htmlFor="message" className='input-label'>Additional Details</label><br />
@@ -134,7 +141,6 @@ export default function Home() {
                                 <BsCheck2Circle className='checkcircle' />
                                 <p>Blow out with Vortex Blowgun</p>
                             </li>
-                            {/* <span style={{display: moreInterior ? 'block' : 'none'}}> */}
                                 <li className="checklist-item">
                                     <BsCheck2Circle className='checkcircle' />
                                     <p>Hot Water Extraction - If added</p>
@@ -159,8 +165,6 @@ export default function Home() {
                                     <BsCheck2Circle className='checkcircle' />
                                     <p>Clean Windows</p>
                                 </li>
-                            {/* </span>
-                            <span onClick={() => setMoreInterior(!moreInterior)} style={{cursor: 'pointer'}}>...</span> */}
                         </ul>
                     </div>
                     <Link to="full-int-ex" className="popular-readmore">
@@ -179,7 +183,6 @@ export default function Home() {
                                 <BsCheck2Circle className='checkcircle' />
                                 <p>Full Vehicle Strip Wash</p>
                             </li>
-                            {/* <span style={{display: moreExterior ? 'block' : 'none'}}> */}
                                 <li className="checklist-item">
                                     <BsCheck2Circle className='checkcircle' />
                                     <p>Clean Wheel Wells, Wheel Barriers, and Wheels</p>
@@ -204,8 +207,6 @@ export default function Home() {
                                     <BsCheck2Circle className='checkcircle' />
                                     <p>Dress Plastics, Wheel Wells, and Tires</p>
                                 </li>
-                            {/* </span>
-                            <span onClick={() => setMoreExterior(!moreExterior)} style={{cursor: 'pointer'}}>...</span> */}
                         </ul>
                     </div>
                     <Link to="premium-dl-wash" className="popular-readmore">
@@ -224,7 +225,6 @@ export default function Home() {
                                 <BsCheck2Circle className='checkcircle' />
                                 <p>Full Vehicle Strip Wash</p>
                             </li>
-                            {/* <span style={{display: moreCorrection ? 'block' : 'none'}}> */}
                                 <li className="checklist-item">
                                     <BsCheck2Circle className='checkcircle' />
                                     <p>Clean Wheel Wells, Wheel Barrels, and Wheels</p>
@@ -249,8 +249,6 @@ export default function Home() {
                                     <BsCheck2Circle className='checkcircle' />
                                     <p>Ceramic Spray/Coat</p>
                                 </li>
-                            {/* </span>
-                            <span onClick={() => setMoreCorrection(!moreCorrection)} style={{cursor: 'pointer'}}>...</span> */}
                         </ul>
                     </div>
                     <Link to="single-paint-correction" className="popular-readmore">
