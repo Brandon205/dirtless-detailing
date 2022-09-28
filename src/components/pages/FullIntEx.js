@@ -62,7 +62,7 @@ export default function FullIntEx() {
 
         <div className="combo-container">
           <h2>Get a <span className='special-package'>free</span> Engine cleaning!</h2>
-          <p className="subtext">When you book this Full Interior Cleaning (with or without extraction) and an <Link to="/premium-dl-wash">Premium Exterior Cleaning</Link> together we will clean out your engine bay at no extra cost.</p>
+          <p className="subtext">When you book this Full Interior Cleaning (with or without extraction) and an <Link to="/premium-dl-wash">Premium Cleaning</Link> together we will clean out your engine bay at no extra cost. (Click the Get Started button below to begin).</p>
         </div>
 
         <div>
@@ -71,43 +71,43 @@ export default function FullIntEx() {
           <div className="pricing-container">
             <div className="pricing-card small-card">
               <h4 className="size">SMALL</h4>
-              <p className="example-vehicle">2 Door Coupes, Single and Extended Cabs</p>
+              <p className="example-vehicle small-card-text">2 Door Coupes, Single and Extended Cabs</p>
               <div className='fullInt-pricing-container'>
                 <div className='pricing-outline'>
-                  <p>Without Extraction</p>
-                  <p className="pricing-price">$200</p>
+                  <p className='small-card-text'>Without Extraction</p>
+                  <p className="pricing-price small-card-text">$200</p>
                 </div>
                 <div className='pricing-outline'>
-                  <p>With Extraction</p>
-                  <p className="pricing-price special-package">$250</p>
+                  <p className='small-card-text'>With Extraction</p>
+                  <p className="pricing-price small-card-text">$250</p>
                 </div>
               </div>
             </div>
             <div className="pricing-card medium-card">
               <h4 className="size">MEDIUM</h4>
-              <p className="example-vehicle">4 Door Sedans, 4 Door Trucks, Smaller SUV's</p>
+              <p className="example-vehicle medium-card-text">4 Door Sedans, 4 Door Trucks, Smaller SUV's</p>
               <div className='fullInt-pricing-container'>
                 <div className='pricing-outline'>
-                  <p>Without Extraction</p>
-                  <p className="pricing-price">$250</p>
+                  <p className='medium-card-text'>Without Extraction</p>
+                  <p className="pricing-price medium-card-text">$250</p>
                 </div>
                 <div className='pricing-outline'>
-                  <p>With Extraction</p>
-                  <p className="pricing-price special-package">$300</p>
+                  <p className='medium-card-text'>With Extraction</p>
+                  <p className="pricing-price medium-card-text">$300</p>
                 </div>
               </div>
             </div>
             <div className="pricing-card large-card">
               <h4 className="size">LARGE</h4>
-              <p className="example-vehicle">Big SUV's and 3 Row SUV's</p>
+              <p className="example-vehicle small-card-text">Big SUV's and 3 Row SUV's</p>
               <div className='fullInt-pricing-container'>
                 <div className='pricing-outline'>
-                  <p>Without Extraction</p>
-                  <p className="pricing-price">$300</p>
+                  <p className='large-card-text'>Without Extraction</p>
+                  <p className="pricing-price large-card-text">$300</p>
                 </div>
                 <div className='pricing-outline'>
-                  <p>With Extraction</p>
-                  <p className="pricing-price special-package">$350</p>
+                  <p className='large-card-text'>With Extraction</p>
+                  <p className="pricing-price large-card-text">$350</p>
                 </div>
               </div>
             </div>

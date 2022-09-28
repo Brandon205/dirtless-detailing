@@ -81,23 +81,23 @@ export default function DLWash() {
           <div className="pricing-container">
             <div className="pricing-card small-card">
               <h4 className="size">SMALL</h4>
-              <p className="example-vehicle">Most Cars and Smaller Trucks</p>
-              <p className="pricing-price">$75</p>
+              <p className="example-vehicle small-card-text">Most Cars and Smaller Trucks</p>
+              <p className="pricing-price small-card-text">$75</p>
             </div>
             <div className="pricing-card medium-card">
               <h4 className="size">MEDIUM</h4>
-              <p className="example-vehicle">Mid-Size SUV's, and Most Wagons</p>
-              <p className="pricing-price">$100</p>
+              <p className="example-vehicle medium-card-text">Mid-Size SUV's, and Most Wagons</p>
+              <p className="pricing-price medium-card-text">$100</p>
             </div>
             <div className="pricing-card large-card">
               <h4 className="size">LARGE</h4>
-              <p className="example-vehicle">Large SUV's and Large trucks</p>
-              <p className="pricing-price">$125</p>
+              <p className="example-vehicle large-card-text">Large SUV's and Large trucks</p>
+              <p className="pricing-price large-card-text">$125</p>
             </div>
             <div className="pricing-card xl-card">
               <h4 className="size">EXTRA LARGE</h4>
-              <p className="example-vehicle">Extra Large Vehicles</p>
-              <p className="pricing-price">$150</p>
+              <p className="example-vehicle xl-card-text">Extra Large Vehicles</p>
+              <p className="pricing-price xl-card-text">$150</p>
             </div>
           </div>
         </div>

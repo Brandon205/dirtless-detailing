@@ -63,9 +63,9 @@ export default function Addons() {
           <h2>PRICING</h2>
           <h4>Our hourly rate for this job is posted below.</h4>
           <div className="pricing-container">
-            <div className="pricing-card medium-card">
-              <p className="example-vehicle">ANY SIZE VEHICLE</p>
-              <p className="pricing-price">$60/hour</p>
+            <div className="pricing-card large-card">
+              <p className="example-vehicle small-card-text">ANY SIZE VEHICLE</p>
+              <p className="pricing-price small-card-text">$60/hour</p>
             </div>
           </div>
         </div>
@@ -87,9 +87,9 @@ export default function Addons() {
           <h2>PRICING</h2>
           <h4>Our hourly rate for this job is posted below.</h4>
           <div className="pricing-container">
-            <div className="pricing-card medium-card">
-              <p className="example-vehicle">ANY SIZE VEHICLE</p>
-              <p className="pricing-price">$70/hour</p>
+            <div className="pricing-card large-card">
+              <p className="example-vehicle small-card-text">ANY SIZE VEHICLE</p>
+              <p className="pricing-price small-card-text">$70/hour</p>
             </div>
           </div>
         </div>

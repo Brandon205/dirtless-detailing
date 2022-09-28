@@ -80,7 +80,7 @@ export default function PDLWash() {
 
         <div className="combo-container">
           <h2>Get a <span className='special-package'>free</span> Engine cleaning!</h2>
-          <p className="subtext">When you book this Exterior Cleaning (Premium or not) and a <Link to="/full-int-ex">Full Interior Cleaning</Link> together we will clean out your engine bay at no extra cost.</p>
+          <p className="subtext">When you book this Premium Exterior Cleaning and a <Link to="/full-int-ex">Full Interior Cleaning</Link> together we will clean out your engine bay at no extra cost. (Click the Get Started button below to begin).</p>
         </div>
 
         <div>

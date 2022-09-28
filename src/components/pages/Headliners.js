@@ -55,9 +55,9 @@ export default function Headliners() {
           <h2>PRICING</h2>
           <h4>Our basic prices are shown below, final prices will be based on your vehicle size.</h4>
           <div className="pricing-container">
-            <div className="pricing-card medium-card">
-              <p className="example-vehicle">ANY SIZE VEHICLE</p>
-              <p className="pricing-price">$40-$80</p>
+            <div className="pricing-card large-card">
+              <p className="example-vehicle small-card-text">ANY SIZE VEHICLE</p>
+              <p className="pricing-price small-card-text">$40-$80</p>
             </div>
           </div>
         </div>
