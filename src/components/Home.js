@@ -90,7 +90,7 @@ export default function Home() {
 
                         <span style={{display: showForm ? 'block' : 'none'}}>
                             <label htmlFor="message" className='input-label'>Additional Details</label><br />
-                            <textarea type="textarea" id="message" name="message" className='textarea-input' placeholder='Anything else we might want to know?' />
+                            <textarea type="textarea" id="message" name="message" className='textarea-input' placeholder='Do you want mobile service or a drop off? Do you have any other questions/concerns?' />
 
                             <h5 style={{marginBottom: 4}}>Combos:</h5>
                             <input type="checkbox" name="Combo" value="Combo" className='checkbox-input' />
@@ -280,7 +280,6 @@ export default function Home() {
                         <Link to="bio" className="service-heading-link"><h2>Full Interior and Exterior Cleaning Combo</h2></Link>
                         <p className="secondary-text">Starting at: <span>$275</span></p>
                         <p className="service-desc">This combo comes with a <span className='special-package'>free</span> Engine Bay cleaning, along with the full interior and exterior detail this package is sure to bring your whole car back to life.</p>
-
                         <div>
                             <Link to="full-int-ex" className="readmore">
                                 <p>Interior</p>
@@ -406,8 +405,11 @@ export default function Home() {
                 </div>
             </section>
 
+            <div className='separator-container'>
+                <h2 className='service-title'>REVIEWS</h2>
+            </div>
+
             <article className="reviews-container">
-                <h2>Read some of our 5 star reviews from our customers</h2>
                 <Carousel className="review-carousel" style={styles} infiniteLoop autoPlay showThumbs={false}>
                     <div>
                         <p className="review">Brenden answered the first phone call gave a quote over the phone, I did not have to bring the car anywhere. He provided a value and was on time and was extremely thorough. Did not attempt to upsell me and increase price, day of the appointment, like another Bonney Lake detailer did. Can't recommend Dirt-Less Detail enough. My wife's Jeep Cherokee looks new!</p>
