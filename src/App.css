@@ -9,14 +9,15 @@
   --footer-bkg: #060606;
 
   /** Service Card Colors **/
-  --small-card: #BBBBC1;
-  --medium-card: #89898D;
-  --large-card: #707073;
-  --xl-card: #575759;
-  /* --small-card: #60EFFF;
-  --medium-card: #4BD1FF;
-  --large-card: #30A8FF;
-  --xl-card: #0061FF; */
+  --small-card: #6b6b6d;
+  --medium-card: #575759;
+  --large-card: #3E3E3F;
+  --xl-card: #323232;
+  
+  --small-card-text: #fff;
+  --medium-card-text: #D4D4DB;
+  --large-card-text: #C8C8CE;
+  --xl-card-text: #BBBBC1;
 
   /** Button colors **/
   --main-clr: #fc4c00;
@@ -806,6 +807,22 @@ hr {
   background-color: var(--xl-card);
 }
 
+.small-card-text {
+  color: var(--small-card-text);
+}
+
+.medium-card-text {
+  color: var(--medium-card-text);
+}
+
+.large-card-text {
+  color: var(--large-card-text);
+}
+
+.xl-card-text {
+  color: var(--xl-card-text);
+}
+
 .fullInt-pricing-container {
   display: flex;
   flex-direction: row;
@@ -831,6 +848,7 @@ hr {
   font-weight: 400;
   line-height: 1.5;
   margin: 0.5rem 0 0.75rem 0;
+  color: white;
 }
 
 .example-vehicle {
