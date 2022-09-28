@@ -75,11 +75,6 @@ export default function DLWash() {
           </div>
         </div>
 
-        <div className="combo-container">
-          <h2>Get a <span className='special-package'>free</span> Engine cleaning!</h2>
-          <p className="subtext">When you book this Exterior Cleaning (Premium or not) and a <Link to="/dl-wash">Full Interior Cleaning</Link> together we will clean out your engine bay at no extra cost.</p>
-        </div>
-
         <div>
           <h2 className='pricing-title'>PRICING</h2>
           <h4 className='subtext'>Our basic prices are shown below, final prices will be based on your vehicle size.</h4>

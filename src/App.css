@@ -2,7 +2,7 @@
   /** Backgrounds and other colors **/
   --contact-bkg-clr: #252525;
   --contact-bkg-clr-light: #ECEDF5;
-  --nav-bkg-clr: rgba(245, 245, 245, 0.8);
+  --nav-bkg-clr: rgba(245, 245, 245);
   --menu-container-clr: rgba(245, 245, 245);
   --nav-color: #636364;
   --boxshadow-clr: rgb(213, 213, 213);
@@ -54,7 +54,7 @@ section {
 .logo {
   width: 132px;
   height: 80px;
-  margin-left: 5px;   
+  margin-left: 1rem;   
 }
 
 .menu-bars {
@@ -139,7 +139,6 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  top: 0;
   justify-content: space-between;
   background-color: var(--nav-bkg-clr);
 }
