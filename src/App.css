@@ -376,7 +376,8 @@ header h1 {
 .popular-services-card {
   box-shadow: 0 0 10px 5px var(--boxshadow-clr);
   border-radius: 1rem;
-  margin: 1em 0
+  margin: 1em 0;
+  position: relative
 }
 
 .popular-services-card h2 {
@@ -389,18 +390,24 @@ header h1 {
   margin-bottom: 1em;
 }
 
+.popular-services-header {
+  position: absolute;
+  width: 100%;
+  background-color: #636364;
+  top: 1rem;
+}
+
 .service-heading-link {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .service-heading-link:hover {
-  color: rgb(72, 72, 72);
+  color: whitesmoke;
 }
 
 .popular-desc {
   padding: 0 1em;
-  /* position: relative; */
 }
 
 .popular-img {
@@ -437,14 +444,14 @@ header h1 {
 }
 
 .price {
-  color: var(--supporting-text);
+  color: white;
   display: inline-block;
   margin-top: 0;
 }
 
 .price span {
   display: inline-block;
-  font-weight: 300;
+  font-weight: 500;
   margin: 0;
   color: var(--main-clr)
 }
@@ -993,6 +1000,7 @@ hr {
   .contact-container {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     justify-content: space-evenly;
     margin: 10rem auto;
   }
