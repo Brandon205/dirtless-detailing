@@ -53,8 +53,7 @@ export default function Addons() {
       <div className='main-content-container'>
         <div className="process-container">
           <div>
-            {/* <h1 id="waterspot" style={{textDecoration: 'underline', marginBottom: 0}}>Waterspot/Overspray Removal</h1> */}
-            <p>This can be added onto any of our Exterior or Paint Correction Services</p>
+            <p>This can be added onto any of our Exterior or Paint Correction Services when contacting us.</p>
             <h2>Our Process</h2>
             <ol className='list'>
               {waterspotContent}
@@ -67,9 +66,10 @@ export default function Addons() {
           <h2>PRICING</h2>
           <h4>This services pricing is based on an hourly rate.</h4>
           <div className="pricing-container">
-            <div className="pricing-card large-card">
-              <p className="example-vehicle small-card-text">ANY SIZE VEHICLE</p>
-              <p className="pricing-price small-card-text">$60/hour</p>
+            <div className="pricing-card">
+              <h4 className="size">All Vehicles</h4>
+              <p className="example-vehicle">(Any Size)</p>
+              <p className="pricing-price">$60/hour</p>
             </div>
           </div>
         </div>
@@ -82,8 +82,7 @@ export default function Addons() {
       <div className='main-content-container'>
         <div className="process-container">
           <div>
-            {/* <h1 id="glass" style={{textDecoration: 'underline', marginBottom: 0}}>Glass Polishing</h1> */}
-            <p>This can be added onto either of our Paint Correction Services</p>
+            <p>This can be added onto either of our Paint Correction Services when contacting us.</p>
             <h2>Our Process</h2>
             <ol className='list'>
               {glassContent}
@@ -95,9 +94,10 @@ export default function Addons() {
           <h2>PRICING</h2>
           <h4>This services pricing is based on an hourly rate.</h4>
           <div className="pricing-container">
-            <div className="pricing-card large-card">
-              <p className="example-vehicle small-card-text">ANY SIZE VEHICLE</p>
-              <p className="pricing-price small-card-text">$70/hour</p>
+            <div className="pricing-card">
+              <h4 className="size">All Vehicles</h4>
+              <p className="example-vehicle">(Any Size)</p>
+              <p className="pricing-price">$70/hour</p>
             </div>
           </div>
         </div>

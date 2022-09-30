@@ -81,20 +81,20 @@ export default function SinglePC() {
           <h2>PRICING</h2>
           <h4>Our basic prices are shown below, final prices will be based on your vehicle size.</h4>
           <div className="pricing-container">
-          <div className="pricing-card small-card">
-              <h4 className="size">SMALL</h4>
-              <p className="example-vehicle small-card-text">Most Cars and Smaller Trucks</p>
-              <p className="pricing-price small-card-text">$300-$450</p>
+          <div className="pricing-card">
+              <h4 className="size">Small</h4>
+              <p className="example-vehicle">(Most Cars and Smaller Trucks)</p>
+              <p className="pricing-price">$300 - $450</p>
             </div>
-            <div className="pricing-card medium-card">
-              <h4 className="size">MEDIUM</h4>
-              <p className="example-vehicle medium-card-text">Mid-Size SUV's, and Most Wagons</p>
-              <p className="pricing-price medium-card-text">$450-$600</p>
+            <div className="pricing-card">
+              <h4 className="size">Medium</h4>
+              <p className="example-vehicle">(Mid-Size SUV's, and Most Wagons)</p>
+              <p className="pricing-price">$450 - $600</p>
             </div>
-            <div className="pricing-card large-card">
-              <h4 className="size">LARGE</h4>
-              <p className="example-vehicle large-card-text">Large SUV's and Large Trucks</p>
-              <p className="pricing-price large-card-text">$600-$850</p>
+            <div className="pricing-card">
+              <h4 className="size">Large</h4>
+              <p className="example-vehicle">(Large SUV's and Large Trucks)</p>
+              <p className="pricing-price">$600 - $850</p>
             </div>
           </div>
         </div>

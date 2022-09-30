@@ -87,25 +87,25 @@ export default function PDLWash() {
           <h2>PRICING</h2>
           <h4>Our basic prices are shown below, final prices will be based on your vehicle size.</h4>
           <div className="pricing-container">
-            <div className="pricing-card small-card">
-              <h4 className="size">SMALL</h4>
-              <p className="example-vehicle small-card-text">Most Cars and Smaller Trucks</p>
-              <p className="pricing-price small-card-text">$150</p>
+            <div className="pricing-card">
+              <h4 className="size">Small</h4>
+              <p className="example-vehicle">(Most Cars and Smaller Trucks)</p>
+              <p className="pricing-price">$150</p>
             </div>
-            <div className="pricing-card medium-card">
-              <h4 className="size">MEDIUM</h4>
-              <p className="example-vehicle small-card-text">Mid-Size SUV's, and Most Wagons</p>
-              <p className="pricing-price small-card-text">$200</p>
+            <div className="pricing-card">
+              <h4 className="size">Medium</h4>
+              <p className="example-vehicle">(Mid-Size SUV's, and Most Wagons)</p>
+              <p className="pricing-price">$200</p>
             </div>
-            <div className="pricing-card large-card">
-              <h4 className="size">LARGE</h4>
-              <p className="example-vehicle small-card-text">Large SUV's and Large trucks</p>
-              <p className="pricing-price small-card-text">$250</p>
+            <div className="pricing-card">
+              <h4 className="size">Large</h4>
+              <p className="example-vehicle">(Large SUV's and Large trucks)</p>
+              <p className="pricing-price">$250</p>
             </div>
-            <div className="pricing-card xl-card">
-              <h4 className="size">EXTRA LARGE</h4>
-              <p className="example-vehicle small-card-text">Extra Large Vehicles</p>
-              <p className="pricing-price small-card-text">$275</p>
+            <div className="pricing-card">
+              <h4 className="size">Extra Large</h4>
+              <p className="example-vehicle">(Extra Large Vehicles)</p>
+              <p className="pricing-price">$275</p>
             </div>
           </div>
         </div>
