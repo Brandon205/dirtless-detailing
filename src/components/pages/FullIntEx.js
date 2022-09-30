@@ -67,47 +67,47 @@ export default function FullIntEx() {
 
         <div>
           <h2 className='pricing-title'>PRICING</h2>
-          <h4 className='subtext'>*Final pricing may vary based on vehicle size/condition</h4>
+          <h4 className='subtext'>*Final pricing may vary based on vehicle size/condition*</h4>
           <div className="pricing-container">
-            <div className="pricing-card small-card">
+            <div className="pricing-card">
               <h4 className="size">SMALL</h4>
-              <p className="example-vehicle small-card-text">2 Door Coupes, Single and Extended Cabs</p>
+              <p className="example-vehicle">(2 Door Coupes, Single and Extended Cabs)</p>
               <div className='fullInt-pricing-container'>
                 <div className='pricing-outline'>
-                  <p className='small-card-text'>Without Extraction</p>
-                  <p className="pricing-price small-card-text">$200</p>
+                  <p className='white-text'>No Extraction</p>
+                  <p className="pricing-price">$200</p>
                 </div>
                 <div className='pricing-outline'>
-                  <p className='small-card-text'>With Extraction</p>
-                  <p className="pricing-price small-card-text">$250</p>
+                  <p className='white-text'>With Extraction</p>
+                  <p className="pricing-price">$250</p>
                 </div>
               </div>
             </div>
-            <div className="pricing-card medium-card">
+            <div className="pricing-card">
               <h4 className="size">MEDIUM</h4>
-              <p className="example-vehicle medium-card-text">4 Door Sedans, 4 Door Trucks, Smaller SUV's</p>
+              <p className="example-vehicle">(4 Door Sedans, 4 Door Trucks, Smaller SUV's)</p>
               <div className='fullInt-pricing-container'>
                 <div className='pricing-outline'>
-                  <p className='medium-card-text'>Without Extraction</p>
-                  <p className="pricing-price medium-card-text">$250</p>
+                  <p className='white-text'>No Extraction</p>
+                  <p className="pricing-price">$250</p>
                 </div>
                 <div className='pricing-outline'>
-                  <p className='medium-card-text'>With Extraction</p>
-                  <p className="pricing-price medium-card-text">$300</p>
+                  <p className='white-text'>With Extraction</p>
+                  <p className="pricing-price">$300</p>
                 </div>
               </div>
             </div>
-            <div className="pricing-card large-card">
+            <div className="pricing-card">
               <h4 className="size">LARGE</h4>
-              <p className="example-vehicle small-card-text">Big SUV's and 3 Row SUV's</p>
+              <p className="example-vehicle">(All Large SUV's and any 3 Row SUV's)</p>
               <div className='fullInt-pricing-container'>
                 <div className='pricing-outline'>
-                  <p className='large-card-text'>Without Extraction</p>
-                  <p className="pricing-price large-card-text">$300</p>
+                  <p className='white-text'>No Extraction</p>
+                  <p className="pricing-price">$300</p>
                 </div>
                 <div className='pricing-outline'>
-                  <p className='large-card-text'>With Extraction</p>
-                  <p className="pricing-price large-card-text">$350</p>
+                  <p className='white-text'>With Extraction</p>
+                  <p className="pricing-price">$350</p>
                 </div>
               </div>
             </div>

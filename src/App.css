@@ -9,11 +9,17 @@
   --footer-bkg: #060606;
 
   /** Service Card Colors **/
-  --small-card: #6b6b6d;
+  /* --small-card: #6b6b6d;
   --medium-card: #575759;
   --large-card: #3E3E3F;
-  --xl-card: #323232;
-  
+  --xl-card: #323232; */
+  --small-card: #6b6b6d;
+  --medium-card: #656567;
+  --large-card: #4f4f50;
+  --xl-card: #484848;
+
+  --card-text: black;
+
   --small-card-text: #fff;
   --medium-card-text: #D4D4DB;
   --large-card-text: #C8C8CE;
@@ -821,12 +827,20 @@ hr {
 
 .pricing-card {
   padding: 0.75rem;
-  background-color: var(--contact-bkg-clr-light);
+  background-color: var(--contact-bkg-clr);
   border-radius: 0.5rem;
   margin-bottom: 2rem;
 }
 
-.small-card {
+.pricing-price {
+  color: var(--main-clr);
+}
+
+.white-text {
+  color: white;
+}
+
+/* .small-card {
   background-color: var(--small-card);
 }
 
@@ -840,6 +854,10 @@ hr {
 
 .xl-card {
   background-color: var(--xl-card);
+}
+
+.card-text {
+  color: var(--card-text);
 }
 
 .small-card-text {
@@ -856,7 +874,7 @@ hr {
 
 .xl-card-text {
   color: var(--xl-card-text);
-}
+} */
 
 .fullInt-pricing-container {
   display: flex;
@@ -866,7 +884,7 @@ hr {
 
 .pricing-outline {
   outline: 2px solid black;
-  padding: 5px;
+  padding: 7px;
   border-radius: 15px;
 }
 
@@ -882,11 +900,13 @@ hr {
   font-size: 1.5em;
   font-weight: 400;
   line-height: 1.5;
-  margin: 0.5rem 0 0.75rem 0;
+  margin: 0.5rem 0 0 0;
   color: white;
 }
 
 .example-vehicle {
+  color: var(--supporting-text);
+  margin-top: 0;
   margin-bottom: 1.75rem;
 }
 
