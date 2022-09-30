@@ -8,23 +8,6 @@
   --boxshadow-clr: rgb(213, 213, 213);
   --footer-bkg: #060606;
 
-  /** Service Card Colors **/
-  /* --small-card: #6b6b6d;
-  --medium-card: #575759;
-  --large-card: #3E3E3F;
-  --xl-card: #323232; */
-  --small-card: #6b6b6d;
-  --medium-card: #656567;
-  --large-card: #4f4f50;
-  --xl-card: #484848;
-
-  --card-text: black;
-
-  --small-card-text: #fff;
-  --medium-card-text: #D4D4DB;
-  --large-card-text: #C8C8CE;
-  --xl-card-text: #BBBBC1;
-
   /** Button colors **/
   --main-clr: #fc4c00;
   --main-clr-hover: #d2470b;
@@ -839,42 +822,6 @@ hr {
 .white-text {
   color: white;
 }
-
-/* .small-card {
-  background-color: var(--small-card);
-}
-
-.medium-card {
-  background-color: var(--medium-card);
-}
-
-.large-card {
-  background-color: var(--large-card);
-}
-
-.xl-card {
-  background-color: var(--xl-card);
-}
-
-.card-text {
-  color: var(--card-text);
-}
-
-.small-card-text {
-  color: var(--small-card-text);
-}
-
-.medium-card-text {
-  color: var(--medium-card-text);
-}
-
-.large-card-text {
-  color: var(--large-card-text);
-}
-
-.xl-card-text {
-  color: var(--xl-card-text);
-} */
 
 .fullInt-pricing-container {
   display: flex;
