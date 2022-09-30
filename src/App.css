@@ -379,6 +379,7 @@ header h1 {
 
 .popular-services-card {
   box-shadow: 0 0 10px 5px var(--boxshadow-clr);
+  z-index: -1;
   border-radius: 1rem;
   margin: 1em 0;
   position: relative
