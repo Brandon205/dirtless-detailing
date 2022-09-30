@@ -56,7 +56,7 @@ export default function App() {
       <ScrollToTop />
       <div className="App">
         <header className="App-header">
-          <nav>
+          <nav id="nav">
             <Link to="/">
               <img src={ddLogo} className="logo" />
             </Link>

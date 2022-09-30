@@ -30,6 +30,10 @@
   --heading-clr2: rgb(185, 185, 185);
 }
 
+#nav {
+  z-index: 9999;
+}
+
 *,
 *::before,
 *::after {
