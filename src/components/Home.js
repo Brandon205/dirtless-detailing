@@ -229,8 +229,10 @@ export default function Home() {
                 </div>
 
                 <div className="popular-services-card">
-                    <Link to="single-paint-correction" className="service-heading-link"><h2 className="popular-service-title">Single Stage Paint Correction</h2></Link>
-                    <p className="price">Starting at: <span>$300</span></p>
+                    <div className="popular-services-header">
+                        <Link to="single-paint-correction" className="service-heading-link"><h2 className="popular-service-title">Single Stage Paint Correction</h2></Link>
+                        <p className="price">Starting at: <span>$300</span></p>
+                    </div>
                     <img src={paint} alt="paint correction before and after" className="popular-img" />
 
                     <div className="popular-desc">
