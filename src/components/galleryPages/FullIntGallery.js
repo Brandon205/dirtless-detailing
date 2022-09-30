@@ -22,7 +22,7 @@ export default function FullIntGallery() {
     
     return <Item key={id} original={images[id]} thumbnail={images[id]} width={width[0]} height={height[2]}>
         {({ ref, open }) => (
-        <img className="gallery-image" ref={ref} onClick={open} src={images[id]} />
+        <img className="gallery-image" alt={'full interior cleaning example ' + id} ref={ref} onClick={open} src={images[id]} />
       )}
     </Item>
   
