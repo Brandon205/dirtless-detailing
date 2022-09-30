@@ -63,8 +63,8 @@ export default function Addons() {
         <HashLink smooth to="/#contact" className="quote-btn top-quote-btn service-page-quote-btn">Get Started</HashLink>
 
         <div>
-          <h2>PRICING</h2>
-          <h4>This services pricing is based on an hourly rate.</h4>
+          <h2>Our Pricing</h2>
+          <h4>This services' pricing is based on an hourly rate.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
               <h4 className="size">All Vehicles</h4>
@@ -72,6 +72,9 @@ export default function Addons() {
               <p className="pricing-price">$60/hour</p>
             </div>
           </div>
+
+          <h4>Interested? Click "Get Started" on the bottom right of your screen to get in touch!</h4>
+
         </div>
       </div>
 
@@ -91,8 +94,8 @@ export default function Addons() {
         </div>
 
         <div>
-          <h2>PRICING</h2>
-          <h4>This services pricing is based on an hourly rate.</h4>
+          <h2>Our Pricing</h2>
+          <h4>This services' pricing is based on an hourly rate.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
               <h4 className="size">All Vehicles</h4>
@@ -100,6 +103,9 @@ export default function Addons() {
               <p className="pricing-price">$70/hour</p>
             </div>
           </div>
+
+          <h4>Interested? Click "Get Started" on the bottom right of your screen to get in touch!</h4>
+
         </div>
       </div>
     </section>

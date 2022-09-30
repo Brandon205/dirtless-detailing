@@ -113,6 +113,8 @@ export default function FullIntEx() {
             </div>
           </div>
 
+          <h4>Interested? Click "Get Started" on the bottom right of your screen to get in touch!</h4>
+          
         </div>
       </div>
     </section>

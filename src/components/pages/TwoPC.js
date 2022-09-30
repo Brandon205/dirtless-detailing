@@ -76,8 +76,8 @@ export default function TwoPC() {
         </div>
 
         <div>
-          <h2>PRICING</h2>
-          <h4>Our basic prices are shown below, final prices will be based on your vehicle size.</h4>
+          <h2>Our Pricing</h2>
+          <h4>Our basic prices are shown below, final pricing may vary based on your vehicle size.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
               <h4 className="size">Small</h4>
@@ -95,6 +95,9 @@ export default function TwoPC() {
               <p className="pricing-price">$800 - $1,100</p>
             </div>
           </div>
+
+          <h4>Interested? Click "Get Started" on the bottom right of your screen to get in touch!</h4>
+
         </div>
       </div>
     </section>

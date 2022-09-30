@@ -76,8 +76,8 @@ export default function DLWash() {
         </div>
 
         <div>
-          <h2 className='pricing-title'>PRICING</h2>
-          <h4 className='subtext'>Our basic prices are shown below, final prices will be based on your vehicle size.</h4>
+          <h2 className='pricing-title'>Our Pricing</h2>
+          <h4 className='subtext'>Our basic prices are shown below, final pricing may vary based on your vehicle size.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
               <h4 className="size">Small Vehicles</h4>
@@ -100,6 +100,9 @@ export default function DLWash() {
               <p className="pricing-price">$150</p>
             </div>
           </div>
+
+          <h4>Interested? Click "Get Started" on the bottom right of your screen to get in touch!</h4>
+
         </div>
       </div>
     </section>

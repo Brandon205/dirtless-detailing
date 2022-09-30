@@ -56,8 +56,8 @@ export default function Bio() {
         </div>
 
         <div>
-          <h2 className='pricing-title'>PRICING</h2>
-          <h4 className='subtext'>Our basic prices are shown below, final prices will be based on your vehicle size.</h4>
+          <h2 className='pricing-title'>Our Pricing</h2>
+          <h4 className='subtext'>Our basic prices are shown below, final pricing may vary based on your vehicle size.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
             <h4 className="size">All Vehicles</h4>
