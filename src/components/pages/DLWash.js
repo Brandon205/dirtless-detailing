@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { scrollWithOffset } from '../helpers/ScrollToTop';
 
-import cover from '../../assets/imgs/DLWashCover.jpg';
+import cover from '../../assets/imgs/DLWashCover.webp';
 
 const steps = [
   ["Wash Vehicle", "Thorough 2 bucket or equivalent top to bottom wash including the gas door."],

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
-import cover from '../../assets/imgs/fullIntExCover.jpg';
+import cover from '../../assets/imgs/fullIntExCover.webp';
 
 const waterSpotSteps = [
     ["Waterspot/Overspray Removal", "Remove all overspray and waterspots we can."]

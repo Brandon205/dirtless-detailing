@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Gallery, Item } from 'react-photoswipe-gallery';
 import 'photoswipe/dist/photoswipe.css';
 
-import cover from '../../assets/imgs/dlWashGallery.jpg';
+import cover from '../../assets/imgs/dlWashGallery.webp';
 
 function importAll(r) {
   let images = {};

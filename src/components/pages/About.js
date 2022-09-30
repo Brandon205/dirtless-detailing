@@ -1,6 +1,6 @@
 import React from 'react';
 
-import cover from '../../assets/imgs/worktruck.jpg';
+import cover from '../../assets/imgs/worktruck.webp';
 
 export default function About() {
   return (

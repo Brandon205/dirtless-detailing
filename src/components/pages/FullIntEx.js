@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { scrollWithOffset } from '../helpers/ScrollToTop';
 
-import cover from '../../assets/imgs/fullIntExCover.jpg';
+import cover from '../../assets/imgs/fullIntExCover.webp';
 
 const steps = [
   ["Expose Hidden Dirt", "Use our Tornador Vortex blowgun which uses compressed air to blow out every spot a vacuum can't reach, it also extracts sand and loose soil from carpeting (Most detailers don't do this)."],

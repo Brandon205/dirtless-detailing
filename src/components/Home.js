@@ -12,20 +12,20 @@ import { GoLocation } from "react-icons/go";
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 import '../App.css';
 
-import cover from '../assets/imgs/cover.jpg';
-import interior from '../assets/imgs/driverseatBA.jpg';
-import dlWash from '../assets/imgs/dlwashA.jpg';
-import paint from '../assets/imgs/paintcorrectionBA.jpg';
+import cover from '../assets/imgs/cover.webp';
+import interior from '../assets/imgs/driverseatBA.webp';
+import dlWash from '../assets/imgs/dlwashA.webp';
+import paint from '../assets/imgs/paintcorrectionBA.webp';
 
-import bio from '../assets/imgs/pageimgs/homepage/bio.jpg';
-import combo from '../assets/imgs/pageimgs/homepage/combo.jpg';
-import dlwash from '../assets/imgs/pageimgs/homepage/dlwash.jpg';
-import engine from '../assets/imgs/pageimgs/homepage/engine.jpg';
-import fullintex from '../assets/imgs/pageimgs/homepage/fullintex.jpg';
-import headliner from '../assets/imgs/pageimgs/homepage/headliner.JPEG';
-import pdlwash from '../assets/imgs/pageimgs/homepage/pdlwash.jpg';
-import stage1 from '../assets/imgs/pageimgs/homepage/stage1.jpg';
-import stage2 from '../assets/imgs/pageimgs/homepage/stage2.jpg';
+import bio from '../assets/imgs/pageimgs/homepage/bio.webp';
+import combo from '../assets/imgs/pageimgs/homepage/combo.webp';
+import dlwash from '../assets/imgs/pageimgs/homepage/dlwash.webp';
+import engine from '../assets/imgs/pageimgs/homepage/engine.webp';
+import fullintex from '../assets/imgs/pageimgs/homepage/fullintex.webp';
+import headliner from '../assets/imgs/pageimgs/homepage/headliner.webp';
+import pdlwash from '../assets/imgs/pageimgs/homepage/pdlwash.webp';
+import stage1 from '../assets/imgs/pageimgs/homepage/stage1.webp';
+import stage2 from '../assets/imgs/pageimgs/homepage/stage2.webp';
 
 export default function Home() {
     const [showForm, setShowForm] = useState(false);

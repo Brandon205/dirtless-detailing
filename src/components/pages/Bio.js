@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { scrollWithOffset } from '../helpers/ScrollToTop';
 
-import cover from '../../assets/imgs/BioCover.jpg';
+import cover from '../../assets/imgs/BioCover.webp';
 
 const steps = [
   ["Determine Products", "We will first determine what products will need to be used to best suit the situation."],
