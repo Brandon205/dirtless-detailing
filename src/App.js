@@ -58,7 +58,7 @@ export default function App() {
         <header className="App-header">
           <nav id="nav">
             <Link to="/">
-              <img src={ddLogo} className="logo" />
+              <img src={ddLogo} className="logo" alt="logo" />
             </Link>
             <FaBars className="menu-bars" onClick={() => setNav(nav === 'block' ? 'none' : 'block')} />
             <div style={{display: nav}} className="menu-container">
