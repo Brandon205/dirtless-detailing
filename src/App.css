@@ -20,7 +20,7 @@
 }
 
 #nav {
-  z-index: 9999;
+  z-index: 9999 !important;
 }
 
 *,
@@ -368,10 +368,10 @@ header h1 {
 
 .popular-services-card {
   box-shadow: 0 0 10px 5px var(--boxshadow-clr);
-  z-index: -1;
+  z-index: 0;
   border-radius: 1rem;
   margin: 1em 0;
-  position: relative
+  position: relative;
 }
 
 .popular-services-card h2 {
@@ -560,6 +560,7 @@ header h1 {
   color: white;
   font-weight: bold;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .popular-readmore:hover {
