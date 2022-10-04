@@ -391,6 +391,14 @@ header h1 {
   top: 1rem;
 }
 
+.popular-service-title {
+  color: white;
+}
+
+.popular-service-title:hover {
+  color: lightgray;
+}
+
 .service-heading-link {
   text-decoration: none;
   color: black;
@@ -922,14 +930,6 @@ hr {
     max-width: 360px;
   }
 
-  .popular-service-title {
-    color: white;
-  }
-
-  .popular-service-title:hover {
-    color: lightgray;
-  }
-
   .otherservices-container {
     flex-wrap: wrap;
     flex-direction: row;
@@ -993,6 +993,10 @@ hr {
 
   .contact-container-left {
     width: 300px;
+  }
+
+  .popular-img {
+    height: 475px;
   }
 
   .popular-container {
@@ -1090,9 +1094,9 @@ hr {
 
 @media screen and (min-width: 1350px) {
 
-  .popular-img {
+  /* .popular-img {
     height: 475px;
-  }
+  } */
 
   .form {
     width: 450px;
