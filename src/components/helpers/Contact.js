@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import '../../App.css';
 
 import { FaPhoneAlt, FaFacebookMessenger, FaClock, FaCaretDown, FaCaretUp } from 'react-icons/fa';
@@ -11,25 +13,41 @@ export default function Contact() {
     
     const form = useRef();
 
-    let submit = (e) => {
-        e.preventDefault();
-    
-        emailjs.sendForm('gmail', 'dirtless-detailing', e.target, '')
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
-    
-        e.target.reset();
-    }
-
     useEffect(() => {
         if (window.innerWidth > 879) {
             setWideScreen(true);
             setShowForm(true);
         }
     }, [])
+
+    let submit = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('gmail', 'dirtless-detailing', e.target, '')
+          .then((result) => {
+            toast.success("Form submitted! Expect an email reply soon!", {
+                position: "bottom-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined
+            })
+            e.target.reset();
+          }, (error) => {
+            toast.success("An error occurred, please try again.", {
+                position: "bottom-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined
+            })
+        });
+    } 
+
 
   return (
     <section className="contact-container" id="contact">
@@ -112,6 +130,16 @@ export default function Contact() {
 
                             <button className='popular-readmore'>Submit</button>
                         </span>
+                        <ToastContainer position="bottom-center"
+                            autoClose={5000}
+                            hideProgressBar={false}
+                            newestOnTop={false}
+                            closeOnClick
+                            rtl={false}
+                            pauseOnFocusLoss
+                            draggable
+                            pauseOnHover
+                        />
 
                     </form>
                 </div>
