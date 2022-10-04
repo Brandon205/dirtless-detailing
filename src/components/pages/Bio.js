@@ -62,7 +62,7 @@ export default function Bio() {
             <div className="pricing-card">
             <h4 className="size">All Vehicles</h4>
               <p className="example-vehicle">(Any Size)</p>
-              <p className="pricing-price">$300-$600</p>
+              <p className="pricing-price">$400-$800</p>
             </div>
           </div>
         </div>
