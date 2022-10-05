@@ -1,16 +1,14 @@
-import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import { HashLink } from 'react-router-hash-link';
-import { scrollWithOffset } from './helpers/ScrollToTop';
-import '../App.css';
+import { scrollWithOffset } from '../utils/ScrollToTop.js';
 
-import Contact from '../../utils/Contact';
-import PopularServices from '../../utils/PopularServices';
-import OtherServices from '../../utils/OtherServices';
+import Contact from '../utils/Contact';
+import PopularServices from '../utils/PopularServices';
+import OtherServices from '../utils/OtherServices';
 
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-import cover from '../assets/imgs/cover.webp';
+import cover from '../public/imgs/cover.webp';
 
 export default function Home() {
     return (
@@ -23,8 +21,8 @@ export default function Home() {
                     <h4 className='dd-desc'>Plenty of 5-star reviews from the customers we've served. </h4>
                     <h4 className='dd-desc'>We will do Interiors, Exteriors, Paint Correction, and much more!</h4>
                     <h4 className='dd-desc'>For your convenience we can come to you, or you can bring your car to us!</h4>
-                    <HashLink smooth to="/#popular-services" className="learn-btn top-learn-btn" scroll={el => scrollWithOffset(el)}>Learn More</HashLink>
-                    <HashLink smooth to="/#contact" className="quote-btn top-quote-btn" scroll={el => scrollWithOffset(el)}>Get Quote</HashLink>
+                    <HashLink smooth href="/#popular-services" className="learn-btn top-learn-btn" scroll={el => scrollWithOffset(el)}>Learn More</HashLink>
+                    <HashLink smooth href="/#contact" className="quote-btn top-quote-btn" scroll={el => scrollWithOffset(el)}>Get Quote</HashLink>
                 </div>
             </header>
             <Contact />
@@ -35,7 +33,7 @@ export default function Home() {
             
             <PopularServices />
 
-            <HashLink smooth to="/#contact" className="quote-btn main-quote-btn" scroll={el => scrollWithOffset(el)}>Get a Quote</HashLink>
+            <HashLink smooth href="/#contact" className="quote-btn main-quote-btn" scroll={el => scrollWithOffset(el)}>Get a Quote</HashLink>
 
             <div className='separator-container'>
                 <h2 className='service-title'>COMBO DEALS</h2>

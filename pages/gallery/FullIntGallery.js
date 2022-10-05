@@ -33,7 +33,7 @@ export default function FullIntGallery() {
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}></div>
       <header>
         <h1 className='servicepage-heading'>Full Interior Cleaning Gallery</h1>
-        <p>We have cleaned it all, and this is a gallery to show what we can do to even the worst of interiors. Take a look at our <Link to="/full-int-ex" className='gallery-link' >Full Interior Cleaning</Link> page to find out more</p>
+        <p>We have cleaned it all, and this is a gallery to show what we can do to even the worst of interiors. Take a look at our <Link href="/full-int-ex" className='gallery-link' >Full Interior Cleaning</Link> page to find out more</p>
       </header>
 
       <Gallery>

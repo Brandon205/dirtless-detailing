@@ -49,25 +49,25 @@ export default function SinglePC() {
             </ol>
           </div>
 
-          <HashLink smooth to="/#contact" className="quote-btn service-page-quote-btn" scroll={el => scrollWithOffset(el)}>Get Started</HashLink>
+          <HashLink smooth href="/#contact" className="quote-btn service-page-quote-btn" scroll={el => scrollWithOffset(el)}>Get Started</HashLink>
 
           <div>
             <div className='aside-container'>
               <div className='service-aside'>
                 <h3>Other Correction Services</h3>
                 <div className="aside-links">
-                  <Link to="/single-paint-correction" style={{color: window.location.href.endsWith('single-paint-correction') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('single-paint-correction') ? '> ' : ''} Single Stage Paint Correction</Link><br />
-                  <Link to="/two-paint-correction" style={{color: window.location.href.endsWith('two-paint-correction') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('two-paint-correction') ? '> ' : ''} Two Stage Paint Correction</Link><br />
+                  <Link href="/single-paint-correction" style={{color: window.location.href.endsWith('single-paint-correction') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('single-paint-correction') ? '> ' : ''} Single Stage Paint Correction</Link><br />
+                  <Link href="/two-paint-correction" style={{color: window.location.href.endsWith('two-paint-correction') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('two-paint-correction') ? '> ' : ''} Two Stage Paint Correction</Link><br />
                 </div>
               </div>
             </div>
 
             <div className='aside-container'>
               <div className='service-aside'>
-                <h3><Link to="/addons" style={{color: 'black'}}>Extra Addons</Link></h3>
+                <h3><Link href="/addons" style={{color: 'black'}}>Extra Addons</Link></h3>
                 <div className="aside-links">
                   <div className="addon-container">
-                    <p className='addon-title'><HashLink smooth to="/addons/#glass" style={{color: 'blue'}} scroll={el => scrollWithOffset(el)}>Glass Polishing</HashLink> - <span className="bold">$70</span>/hour</p>
+                    <p className='addon-title'><HashLink smooth href="/addons/#glass" style={{color: 'blue'}} scroll={el => scrollWithOffset(el)}>Glass Polishing</HashLink> - <span className="bold">$70</span>/hour</p>
                     <p className="subtext">Gives you crystal clear windows</p>
                   </div>
                 </div>

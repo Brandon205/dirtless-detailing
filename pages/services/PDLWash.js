@@ -45,30 +45,30 @@ export default function PDLWash() {
             </ol>
           </div>
 
-          <HashLink smooth to="/#contact" className="quote-btn service-page-quote-btn" scroll={el => scrollWithOffset(el)}>Get Started</HashLink>
+          <HashLink smooth href="/#contact" className="quote-btn service-page-quote-btn" scroll={el => scrollWithOffset(el)}>Get Started</HashLink>
 
           <div>
             <div className='aside-container'>
               <div className='service-aside'>
                 <h3>Other Exterior Services</h3>
                 <div className="aside-links">
-                  <Link to="/dl-wash" style={{color: window.location.href.endsWith('/dl-wash') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('/dl-wash') ? '> ' : ''} Dirt-Less Wash</Link><br />
-                  <Link to="/premium-dl-wash" style={{color: window.location.href.endsWith('premium-dl-wash') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('premium-dl-wash') ? '> ' : ''} Premium Dirt-Less Wash</Link><br />
-                  <Link to="/engine" style={{color: window.location.href.endsWith('engine') ? 'blue' : 'black'}} className={'service-link'}>{window.location.href.endsWith('engine') ? '> ' : ''} Engine Bay Cleaning</Link>
+                  <Link href="/dl-wash" style={{color: window.location.href.endsWith('/dl-wash') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('/dl-wash') ? '> ' : ''} Dirt-Less Wash</Link><br />
+                  <Link href="/premium-dl-wash" style={{color: window.location.href.endsWith('premium-dl-wash') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('premium-dl-wash') ? '> ' : ''} Premium Dirt-Less Wash</Link><br />
+                  <Link href="/engine" style={{color: window.location.href.endsWith('engine') ? 'blue' : 'black'}} className={'service-link'}>{window.location.href.endsWith('engine') ? '> ' : ''} Engine Bay Cleaning</Link>
                 </div>
               </div>
             </div>
 
             <div className='aside-container'>
               <div className='service-aside'>
-              <h3><Link to="/addons" style={{color: 'black'}}>Extra Addons</Link></h3>
+              <h3><Link href="/addons" style={{color: 'black'}}>Extra Addons</Link></h3>
                 <div className="aside-links"> 
                   <div className="addon-container">
-                    <p className='addon-title'><HashLink smooth to="/addons/#glass" style={{color: 'blue'}} scroll={el => scrollWithOffset(el)}>Glass Polishing</HashLink> - <span className="bold">$70</span>/hour</p>
+                    <p className='addon-title'><HashLink smooth href="/addons/#glass" style={{color: 'blue'}} scroll={el => scrollWithOffset(el)}>Glass Polishing</HashLink> - <span className="bold">$70</span>/hour</p>
                     <p className="subtext">Gives you crystal clear windows</p>
                   </div>
                   <div className="addon-container">
-                    <p className='addon-title'><HashLink smooth to="/addons/#waterspot" style={{color: 'blue'}} scroll={el => scrollWithOffset(el)}>Waterspot/Overspray</HashLink> - <span className="bold">$60</span>/hour</p>
+                    <p className='addon-title'><HashLink smooth href="/addons/#waterspot" style={{color: 'blue'}} scroll={el => scrollWithOffset(el)}>Waterspot/Overspray</HashLink> - <span className="bold">$60</span>/hour</p>
                     <p className="subtext">Remove Overspray and Waterspots from your vehicle</p>
                   </div>
                 </div>
@@ -80,7 +80,7 @@ export default function PDLWash() {
 
         <div className="combo-container">
           <h2>Get a <span className='special-package'>free</span> Engine cleaning!</h2>
-          <p className="subtext">When you book this Premium Exterior Cleaning and a <Link to="/full-int-ex">Full Interior Cleaning</Link> together we will clean out your engine bay at no extra cost. (Click the Get Started button below to begin).</p>
+          <p className="subtext">When you book this Premium Exterior Cleaning and a <Link href="/full-int-ex">Full Interior Cleaning</Link> together we will clean out your engine bay at no extra cost. (Click the Get Started button below to begin).</p>
         </div>
 
         <div>

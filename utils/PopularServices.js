@@ -3,16 +3,16 @@ import Link from 'next/link';
 
 import { BsCheck2Circle } from 'react-icons/bs';
 
-import interior from '../../assets/imgs/driverseatBA.webp';
-import dlWash from '../../assets/imgs/dlwashA.webp';
-import paint from '../../assets/imgs/paintcorrectionBA.webp';
+import interior from '../public/imgs/driverseatBA.webp';
+import dlWash from '../public/imgs/dlwashA.webp';
+import paint from '../public/imgs/paintcorrectionBA.webp';
 
 export default function PopularServices() {
   return (
     <section className="popular-container">
         <div className="popular-services-card">
             <div className="popular-services-header">
-                <Link to="full-int-ex" className="service-heading-link"><h2 className="popular-service-title">Full Interior Cleaning</h2></Link>
+                <Link href="full-int-ex" className="service-heading-link"><h2 className="popular-service-title">Full Interior Cleaning</h2></Link>
                 <p className="price">Starting at: <span>$200</span></p>
             </div>
             <img src={interior} alt="car interior before and after" className="popular-img" />
@@ -49,14 +49,14 @@ export default function PopularServices() {
                     </li>
                 </ul>
             </div>
-            <Link to="full-int-ex" className="popular-readmore">
+            <Link href="full-int-ex" className="popular-readmore">
                 <p>Learn More</p>
             </Link>
         </div>
 
         <div className="popular-services-card">
             <div className="popular-services-header">
-                <Link to="premium-dl-wash" className="service-heading-link"><h2 className="popular-service-title">Premium Dirt-Less Wash</h2></Link>
+                <Link href="premium-dl-wash" className="service-heading-link"><h2 className="popular-service-title">Premium Dirt-Less Wash</h2></Link>
                 <p className="price">Starting at: <span>$150</span></p>
             </div>
             <img src={dlWash} alt="car exterior" className="popular-img" />
@@ -93,14 +93,14 @@ export default function PopularServices() {
                     </li>
                 </ul>
             </div>
-            <Link to="premium-dl-wash" className="popular-readmore">
+            <Link href="premium-dl-wash" className="popular-readmore">
                 <p>Learn More</p>
             </Link>
         </div>
 
         <div className="popular-services-card">
             <div className="popular-services-header">
-                <Link to="single-paint-correction" className="service-heading-link"><h2 className="popular-service-title">Single Stage Paint Correction</h2></Link>
+                <Link href="single-paint-correction" className="service-heading-link"><h2 className="popular-service-title">Single Stage Paint Correction</h2></Link>
                 <p className="price">Starting at: <span>$300</span></p>
             </div>
             <img src={paint} alt="paint correction before and after" className="popular-img" />
@@ -137,7 +137,7 @@ export default function PopularServices() {
                     </li>
                 </ul>
             </div>
-            <Link to="single-paint-correction" className="popular-readmore">
+            <Link href="single-paint-correction" className="popular-readmore">
                 <p>Learn More</p>
             </Link>
         </div>

@@ -32,7 +32,7 @@ export default function PaintCorrectionGallery() {
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}></div>
       <header>
         <h1 className='servicepage-heading'>Engine Cleaning Gallery</h1>
-        <p>This is a gallery to show what we can do to clean your engine bay. Take a look at our <Link to="/engine" className='gallery-link' >Engine Cleaning</Link> page for more info.</p>
+        <p>This is a gallery to show what we can do to clean your engine bay. Take a look at our <Link href="/engine" className='gallery-link' >Engine Cleaning</Link> page for more info.</p>
       </header>
 
       <Gallery>

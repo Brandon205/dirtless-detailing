@@ -60,7 +60,7 @@ export default function Addons() {
             </ol>
           </div>
         </div>
-        <HashLink smooth to="/#contact" className="quote-btn top-quote-btn service-page-quote-btn">Get Started</HashLink>
+        <HashLink smooth href="/#contact" className="quote-btn top-quote-btn service-page-quote-btn">Get Started</HashLink>
 
         <div>
           <h2>Our Pricing</h2>
