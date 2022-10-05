@@ -1,5 +1,6 @@
 import { Carousel } from 'react-responsive-carousel';
 import Link from 'next/link';
+import Image from 'next/image';
 // import { scrollWithOffset } from '../utils/ScrollToTop.js';
 
 import Contact from '../utils/Contact';
@@ -13,7 +14,9 @@ import cover from '../public/imgs/cover.webp';
 export default function Home() {
     return (
         <div className="App">
-            <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}></div>
+            <div class="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
+                <Image src={cover} layout="responsive" />
+            </div>
             <header className="home-header">
                 <div className='contact-left-container'>
                     <h1 className='title-top'>Your Bonney Lake</h1><br />
@@ -33,7 +36,9 @@ export default function Home() {
             
             <PopularServices />
 
-            <Link href="/#contact" className="quote-btn main-quote-btn">Get a Quote</Link>
+            <Link href="/#contact" className="quote-btn main-quote-btn">
+                <a className="quote-btn main-quote-btn">Get a Quote</a>
+            </Link>
 
             <div className='separator-container'>
                 <h2 className='service-title'>COMBO DEALS</h2>

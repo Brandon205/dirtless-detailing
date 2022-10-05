@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 // import { ScrollToTop } from '../utils/ScrollToTop';
 
 import { FaBars, FaFacebook, FaPhoneAlt, FaCarSide, FaPhotoVideo } from 'react-icons/fa';
@@ -40,7 +41,7 @@ export default function MyApp({ Component, pageProps }) {
             <header className="App-header">
                 <nav id="nav">
                     <Link href="/">
-                        <img src={ddLogo} className="logo" alt="logo" />
+                        <Image src={ddLogo} width='132' height="80" className="logo" alt="logo" />
                     </Link>
                     <FaBars className="menu-bars" onClick={() => setNav(nav === 'block' ? 'none' : 'block')} />
                     <div style={{display: nav}} className="menu-container">
@@ -87,6 +88,8 @@ export default function MyApp({ Component, pageProps }) {
                     </div>
                 </nav>
             </header>
+
+            <Component {...pageProps} />
 
             <footer>
                 <div className="footer-content-card">
@@ -141,7 +144,6 @@ export default function MyApp({ Component, pageProps }) {
                     <a href="https://www.facebook.com/DirtLessDetailing/" className="socials" target="_blank" rel="noreferrer"><FaFacebook /></a>
                 </div>
             </footer>
-            <Component {...pageProps} />
         </div>
     )
 }
