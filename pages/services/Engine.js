@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import { HashLink } from 'react-router-hash-link';
 import { scrollWithOffset } from '../../src/components/helpers/ScrollToTop';
 
 import cover from '../../assets/imgs/EngineCover.webp';
@@ -39,7 +38,7 @@ export default function Engine() {
             </ol>
           </div>
 
-          <HashLink smooth href="/#contact" className="quote-btn service-page-quote-btn" scroll={el => scrollWithOffset(el)}>Get Started</HashLink>
+          <Link href="/#contact" className="quote-btn service-page-quote-btn" scroll={el => scrollWithOffset(el)}>Get Started</Link>
 
           <div className='aside-container'>
             <div className='service-aside'>

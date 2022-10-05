@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import { HashLink } from 'react-router-hash-link';
 import { scrollWithOffset } from '../helpers/ScrollToTop';
 
 import cover from '../../assets/imgs/BioCover.webp';
@@ -41,7 +40,7 @@ export default function Bio() {
             </ol>
           </div>
           
-          <HashLink smooth href="/#contact" className="quote-btn service-page-quote-btn" scroll={el => scrollWithOffset(el)}>Get Started</HashLink>
+          <Link href="/#contact" className="quote-btn service-page-quote-btn" scroll={el => scrollWithOffset(el)}>Get Started</Link>
 
           <div className='aside-container'>
             <div className='service-aside'>

@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'next/link';
-import { HashLink } from 'react-router-hash-link';
 
 import cover from '../../assets/imgs/addonsCover.webp';
 
@@ -60,7 +59,7 @@ export default function Addons() {
             </ol>
           </div>
         </div>
-        <HashLink smooth href="/#contact" className="quote-btn top-quote-btn service-page-quote-btn">Get Started</HashLink>
+        <Link href="/#contact" className="quote-btn top-quote-btn service-page-quote-btn">Get Started</Link>
 
         <div>
           <h2>Our Pricing</h2>

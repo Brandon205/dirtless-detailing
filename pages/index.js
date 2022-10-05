@@ -1,6 +1,6 @@
 import { Carousel } from 'react-responsive-carousel';
-import { HashLink } from 'react-router-hash-link';
-import { scrollWithOffset } from '../utils/ScrollToTop.js';
+import Link from 'next/link';
+// import { scrollWithOffset } from '../utils/ScrollToTop.js';
 
 import Contact from '../utils/Contact';
 import PopularServices from '../utils/PopularServices';
@@ -21,8 +21,8 @@ export default function Home() {
                     <h4 className='dd-desc'>Plenty of 5-star reviews from the customers we've served. </h4>
                     <h4 className='dd-desc'>We will do Interiors, Exteriors, Paint Correction, and much more!</h4>
                     <h4 className='dd-desc'>For your convenience we can come to you, or you can bring your car to us!</h4>
-                    <HashLink smooth href="/#popular-services" className="learn-btn top-learn-btn" scroll={el => scrollWithOffset(el)}>Learn More</HashLink>
-                    <HashLink smooth href="/#contact" className="quote-btn top-quote-btn" scroll={el => scrollWithOffset(el)}>Get Quote</HashLink>
+                    <Link href="/#popular-services" className="learn-btn top-learn-btn">Learn More</Link>
+                    <Link href="/#contact" className="quote-btn top-quote-btn">Get Quote</Link>
                 </div>
             </header>
             <Contact />
@@ -33,7 +33,7 @@ export default function Home() {
             
             <PopularServices />
 
-            <HashLink smooth href="/#contact" className="quote-btn main-quote-btn" scroll={el => scrollWithOffset(el)}>Get a Quote</HashLink>
+            <Link href="/#contact" className="quote-btn main-quote-btn">Get a Quote</Link>
 
             <div className='separator-container'>
                 <h2 className='service-title'>COMBO DEALS</h2>

@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import { HashLink } from 'react-router-hash-link';
 import { scrollWithOffset } from '../helpers/ScrollToTop';
 
 import cover from '../../assets/imgs/2PCCover.webp';
@@ -47,7 +46,7 @@ export default function TwoPC() {
             </ol>
           </div>
 
-          <HashLink smooth href="/#contact" className="quote-btn service-page-quote-btn" scroll={el => scrollWithOffset(el)}>Get Started</HashLink>
+          <Link href="/#contact" className="quote-btn service-page-quote-btn" scroll={el => scrollWithOffset(el)}>Get Started</Link>
 
           <div>
             <div className='aside-container'>
@@ -65,7 +64,7 @@ export default function TwoPC() {
               <h3><Link href="/addons" style={{color: 'black'}}>Extra Addons</Link></h3>
                 <div className="aside-links">
                   <div className="addon-container">
-                    <p className='addon-title'><HashLink smooth href="/addons/#glass" style={{color: 'blue'}} scroll={el => scrollWithOffset(el)}>Glass Polishing</HashLink> - <span className="bold">$70</span>/hour</p>
+                    <p className='addon-title'><Link href="/addons/#glass" style={{color: 'blue'}} scroll={el => scrollWithOffset(el)}>Glass Polishing</Link> - <span className="bold">$70</span>/hour</p>
                     <p className="subtext">Gives you crystal clear windows</p>
                   </div>
                 </div>

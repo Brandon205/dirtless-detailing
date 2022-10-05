@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import { HashLink } from 'react-router-hash-link';
 import { scrollWithOffset } from '../helpers/ScrollToTop';
 
 import cover from '../../assets/imgs/fullIntExCover.webp';
@@ -46,7 +45,7 @@ export default function FullIntEx() {
             <h4><span className='special-package'>*</span>Extraction Package Only</h4>
           </div>
 
-          <HashLink smooth href="/#contact" className="quote-btn service-page-quote-btn" scroll={el => scrollWithOffset(el)}>Get Started</HashLink>
+          <Link href="/#contact" className="quote-btn service-page-quote-btn" scroll={el => scrollWithOffset(el)}>Get Started</Link>
 
           <div className='aside-container'>
             <div className='service-aside'>
