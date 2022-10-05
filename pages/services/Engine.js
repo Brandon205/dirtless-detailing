@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import { scrollWithOffset } from '../helpers/ScrollToTop';
+import { scrollWithOffset } from '../../src/components/helpers/ScrollToTop';
 
 import cover from '../../assets/imgs/EngineCover.webp';
 

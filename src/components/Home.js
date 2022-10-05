@@ -4,9 +4,9 @@ import { HashLink } from 'react-router-hash-link';
 import { scrollWithOffset } from './helpers/ScrollToTop';
 import '../App.css';
 
-import Contact from './helpers/Contact';
-import PopularServices from './helpers/PopularServices';
-import OtherServices from './helpers/OtherServices';
+import Contact from '../../utils/Contact';
+import PopularServices from '../../utils/PopularServices';
+import OtherServices from '../../utils/OtherServices';
 
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 

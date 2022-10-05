@@ -1,23 +1,7 @@
 import React, { useState } from 'react';
-import { HashRouter, Link, Route, Routes } from 'react-router-dom';
+import Link from 'next/link';
 import { ScrollToTop } from './components/helpers/ScrollToTop';
 import ddLogo from './assets/imgs/PNG1.png';
-
-import Home from './components/Home.js';
-import About from './components/sitePages/About.js';
-import FullIntEx from './components/sitePages/FullIntEx.js';
-import Bio from './components/sitePages/Bio.js';
-import Headliners from './components/sitePages/Headliners.js';
-import DLWash from './components/sitePages/DLWash.js';
-import PDLWash from './components/sitePages/PDLWash.js';
-import Engine from './components/sitePages/Engine.js';
-import SinglePC from './components/sitePages/SinglePC.js';
-import TwoPC from './components/sitePages/TwoPC.js';
-import Addons from './components/sitePages/Addons.js';
-import FullIntGallery from './components/galleryPages/FullIntGallery';
-import EngineGallery from './components/galleryPages/EngineGallery';
-import DLWashGallery from './components/galleryPages/DLWashGallery';
-import PaintCorrectionGallery from './components/galleryPages/PaintCorrectionGallery';
 
 import { FaBars, FaFacebook, FaPhoneAlt, FaCarSide, FaPhotoVideo } from 'react-icons/fa';
 import { GoLocation } from "react-icons/go";
@@ -52,9 +36,8 @@ export default function App() {
   }
 
   return (
-    <HashRouter>
-      <ScrollToTop />
-      <div className="App">
+    <div className="App">
+        <ScrollToTop />
         <header className="App-header">
           <nav id="nav">
             <Link to="/">
@@ -105,24 +88,6 @@ export default function App() {
             </div>
           </nav>
         </header>
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="full-int-ex" element={<FullIntEx />} />
-          <Route path="bio" element={<Bio />} />
-          <Route path="headliners" element={<Headliners />} />
-          <Route path="dl-wash" element={<DLWash />} />
-          <Route path="premium-dl-wash" element={<PDLWash />} />
-          <Route path="engine" element={<Engine />} />
-          <Route path="single-paint-correction" element={<SinglePC />} />
-          <Route path="two-paint-correction" element={<TwoPC />} />
-          <Route path="addons" element={<Addons />} />
-
-          <Route path="full-int-gallery" element={<FullIntGallery />} />
-          <Route path="paint-correction-gallery" element={<PaintCorrectionGallery />} />
-          <Route path="dl-wash-gallery" element={<DLWashGallery />} />
-          <Route path="engine-gallery" element={<EngineGallery />} />
-        </Routes>
         <footer>
           <div className="footer-content-card">
             <h3>COMPANY</h3>
@@ -177,6 +142,5 @@ export default function App() {
           </div>
         </footer>
       </div>
-    </HashRouter>
   );
 }
