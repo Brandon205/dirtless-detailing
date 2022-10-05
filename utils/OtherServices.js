@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 import bio from '../../assets/imgs/pageimgs/homepage/bio.webp';
 import combo from '../../assets/imgs/pageimgs/homepage/combo.webp';
