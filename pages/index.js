@@ -14,8 +14,8 @@ import cover from '../public/imgs/cover.webp';
 export default function Home() {
     return (
         <div className="App">
-            <div class="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
-                <Image src={cover} layout="responsive" />
+            <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
+                <Image src={cover} layout="fill" objectFit='cover' />
             </div>
             <header className="home-header">
                 <div className='contact-left-container'>
@@ -24,8 +24,12 @@ export default function Home() {
                     <h4 className='dd-desc'>Plenty of 5-star reviews from the customers we've served. </h4>
                     <h4 className='dd-desc'>We will do Interiors, Exteriors, Paint Correction, and much more!</h4>
                     <h4 className='dd-desc'>For your convenience we can come to you, or you can bring your car to us!</h4>
-                    <Link href="/#popular-services" className="learn-btn top-learn-btn">Learn More</Link>
-                    <Link href="/#contact" className="quote-btn top-quote-btn">Get Quote</Link>
+                    <Link href="/#popular-services">
+                        <a className="learn-btn top-learn-btn">Learn More</a>
+                    </Link>
+                    <Link href="/#contact" className="quote-btn top-quote-btn">
+                        <a className="quote-btn top-quote-btn">Get a Quote</a>
+                    </Link>
                 </div>
             </header>
             <Contact />
@@ -36,7 +40,7 @@ export default function Home() {
             
             <PopularServices />
 
-            <Link href="/#contact" className="quote-btn main-quote-btn">
+            <Link href="/#contact">
                 <a className="quote-btn main-quote-btn">Get a Quote</a>
             </Link>
 

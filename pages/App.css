@@ -233,14 +233,9 @@ header h1 {
 .cover {
   filter: brightness(50%) grayscale(65%);
   position: absolute;
-  top: -135px;
   height: 75%;
   width: 100%;
   z-index: -5;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: darken;
 }
 
 /** Home Page Contact CSS **/
@@ -994,7 +989,7 @@ hr {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-evenly;
-    margin: 10rem auto;
+    margin: 12rem auto;
   }
 
   .contact-container-left {
