@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
-import { scrollWithOffset } from '../helpers/ScrollToTop';
+// import { scrollWithOffset } from '../helpers/ScrollToTop';
 
-import cover from '../../assets/imgs/DLWashCover.webp';
+import cover from '../../public/imgs/DLWashCover.webp';
 
 const steps = [
   ["Wash Vehicle", "Thorough 2 bucket or equivalent top to bottom wash including the gas door."],
@@ -41,7 +41,7 @@ export default function DLWash() {
             </ol>
           </div>
 
-          <Link href="/#contact" className="quote-btn service-page-quote-btn" scroll={el => scrollWithOffset(el)}>Get Started</Link>
+          <Link href="/#contact" className="quote-btn service-page-quote-btn">Get Started</Link>
 
           <div>
             <div className='aside-container'>
@@ -60,11 +60,11 @@ export default function DLWash() {
               <h3><Link href="/addons" style={{color: 'black'}}>Extra Addons</Link></h3>
                 <div className="aside-links">
                   <div className="addon-container">
-                    <p className='addon-title'><Link href="/addons/#glass" style={{color: 'blue'}} scroll={el => scrollWithOffset(el)}>Glass Polishing</Link> - <span className="bold">$70</span>/hour</p>
+                    <p className='addon-title'><Link href="/addons/#glass" style={{color: 'blue'}}>Glass Polishing</Link> - <span className="bold">$70</span>/hour</p>
                     <p className="subtext">Gives you crystal clear windows</p>
                   </div>
                   <div className="addon-container">
-                    <p className='addon-title'><Link href="/addons/#waterspot" style={{color: 'blue'}} scroll={el => scrollWithOffset(el)}>Waterspot/Overspray</Link> - <span className="bold">$60</span>/hour</p>
+                    <p className='addon-title'><Link href="/addons/#waterspot" style={{color: 'blue'}}>Waterspot/Overspray</Link> - <span className="bold">$60</span>/hour</p>
                     <p className="subtext">Remove Overspray and Waterspots from your vehicle</p>
                   </div>
                 </div>

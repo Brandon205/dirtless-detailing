@@ -27,7 +27,7 @@ export default function Home() {
                     <Link href="/#popular-services">
                         <a className="learn-btn top-learn-btn">Learn More</a>
                     </Link>
-                    <Link href="/#contact" className="quote-btn top-quote-btn">
+                    <Link href="/#contact">
                         <a className="quote-btn top-quote-btn">Get a Quote</a>
                     </Link>
                 </div>
