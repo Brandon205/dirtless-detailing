@@ -16,7 +16,9 @@ export default function PopularServices() {
                 <Link href="full-int-ex" className="service-heading-link"><h2 className="popular-service-title">Full Interior Cleaning</h2></Link>
                 <p className="price">Starting at: <span>$200</span></p>
             </div>
-            <Image src={interior} alt="car interior before and after" layout='fixed' height={475} width={360} objectFit="cover" className="popular-img" />
+            <div className='popular-img'>
+                <Image style={{borderRadius: '1rem 1rem 0 0'}} src={interior} alt="car interior before and after" layout='fill' objectFit="cover" />
+            </div>
 
             <div className="popular-desc">
                 <ul className="checklist">
@@ -60,7 +62,9 @@ export default function PopularServices() {
                 <Link href="premium-dl-wash" className="service-heading-link"><h2 className="popular-service-title">Premium Dirt-Less Wash</h2></Link>
                 <p className="price">Starting at: <span>$150</span></p>
             </div>
-            <Image src={dlWash} alt="car exterior" layout='fixed' height={475} width={360} objectFit="cover" className="popular-img" />
+            <div className="popular-img">
+                <Image style={{borderRadius: '1rem 1rem 0 0'}} src={dlWash} alt="car exterior" layout='fill' objectFit="cover" />
+            </div>
             
             <div className="popular-desc">
                 <ul className="checklist">
@@ -104,7 +108,9 @@ export default function PopularServices() {
                 <Link href="single-paint-correction" className="service-heading-link"><h2 className="popular-service-title">Single Stage Paint Correction</h2></Link>
                 <p className="price">Starting at: <span>$300</span></p>
             </div>
-            <Image src={paint} alt="paint correction before and after" layout='fixed' height={475} width={360} objectFit="cover" className="popular-img" />
+            <div className="popular-img">
+                <Image style={{borderRadius: '1rem 1rem 0 0'}} src={paint} alt="paint correction before and after" layout='fill' objectFit="cover" />
+            </div>
 
             <div className="popular-desc">
                 <ul className="checklist">

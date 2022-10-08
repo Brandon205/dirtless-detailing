@@ -422,7 +422,7 @@ header h1 {
 }
 
 .popular-img {
-  /* max-width: 100%; */
+  position: relative;
   border-radius: 1rem 1rem 0 0;
 }
 
@@ -1007,7 +1007,7 @@ hr {
   }
 
   .popular-img {
-    /* height: 475px; */
+    height: 475px;
   }
 
   .popular-container {
@@ -1026,9 +1026,9 @@ hr {
     justify-content: space-around;
   }
 
-  /* .popular-readmore {
-    margin: 0 auto;
-  } */
+  .popular-readmore {
+    margin: 0 auto 1rem auto;
+  }
 
   .combo-container {
     width: 55vw;
