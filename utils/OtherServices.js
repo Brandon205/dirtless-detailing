@@ -29,10 +29,10 @@ export default function OtherServices() {
                     <p className="service-desc">This combo comes with a <span className='special-package'>free</span> Engine Bay cleaning, along with the full interior and exterior detail this package is sure to bring your whole car back to life.</p>
                     <div>
                         <Link href="full-int-ex">
-                            <a className="readmore">Interior</a>
+                            <p className="readmore">Interior</p>
                         </Link>
                         <Link href="dl-wash">
-                            <a className="readmore">Exterior</a>
+                            <p className="readmore">Exterior</p>
                         </Link>
                     </div>
                 </div>
@@ -51,7 +51,7 @@ export default function OtherServices() {
                     <p className="service-desc">A full interior detail will clean every crack and crevice of your vehicles interior. Optionally we can also do a hot water extraction to the carpets of your vehicle to get out deeper stains and dirt.</p>
 
                     <Link href="full-int-ex">
-                        <a className="readmore">Learn More</a>
+                        <p className="readmore">Learn More</p>
                     </Link>
                 </div>
             </div>
@@ -64,7 +64,7 @@ export default function OtherServices() {
                     <p className="service-desc">If there are bad smells like mold or smoke in your car this will be the package for you. We'll use cleaning chemicals suited for the job to get rid of those odors for good.</p>
 
                     <Link href="bio">
-                        <a className="readmore">Learn More</a>
+                        <p className="readmore">Learn More</p>
                     </Link>
                 </div>
             </div>
@@ -76,7 +76,7 @@ export default function OtherServices() {
                     <p className="service-desc">To clean your headliners we will determine the best plan of attack based on the materials in order to leave your headliners clean and prevent sagging or damage.</p>
 
                     <Link href="headliners">
-                        <a className="readmore">Learn More</a>
+                        <p className="readmore">Learn More</p>
                     </Link>
                 </div>
             </div>
@@ -121,7 +121,7 @@ export default function OtherServices() {
                     <p className="secondary-text">Starting at: <span>$80</span></p>
                     <p className="service-desc">The engine bay is typically overlooked and tricky to clean, but we can take care of it for you and leave yours looking like new.</p>
                     <Link href="engine-bay">
-                        <a className="readmore">Learn More</a>
+                        <p className="readmore">Learn More</p>
                     </Link>
                 </div>
             </div>
@@ -138,7 +138,7 @@ export default function OtherServices() {
                     <p className="secondary-text">Starting at: <span>$300</span></p>
                     <p className="service-desc">Our single stage paint correction can fix 60%-80% of minor damage and scratches and will leave your vehicle looking shinier than ever.</p>
                     <Link href="single-paint-correction">
-                        <a className="readmore">Learn More</a>
+                        <p className="readmore">Learn More</p>
                     </Link>
                 </div>
             </div>
@@ -150,7 +150,7 @@ export default function OtherServices() {
                     <p className="secondary-text">Starting at: <span>$450</span></p>
                     <p className="service-desc">Our 2 stage paint correction is great for getting your car to a near perfect state. This is great for show cars need that extra time and effort to get to that showroom shine.</p>
                     <Link href="two-paint-correction" className="readmore">
-                        <a className="readmore">Learn More</a>
+                        <p className="readmore">Learn More</p>
                     </Link>
                 </div>
             </div>
