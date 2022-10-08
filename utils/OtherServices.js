@@ -96,8 +96,8 @@ export default function OtherServices() {
                     {/* <Link href="dl-wash" passHref={true}>
                         <a className="readmore">Learn More</a>
                     </Link> */}
-                    <Link href="/services/DLWash" class='readmore'>
-                        Learn More
+                    <Link href="/services/DLWash">
+                        <p className="readmore">Learn More</p>
                     </Link>
                 </div>
             </div>

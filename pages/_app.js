@@ -41,20 +41,20 @@ export default function MyApp({ Component, pageProps }) {
             <header className="App-header">
                 <nav id="nav">
                     <Link href="/">
-                        <Image src={ddLogo} width='132' height="80" className="logo" alt="logo" />
+                        <Image src={ddLogo} style={{marginLeft: 16}} width='132' height="80" className="logo" alt="logo" />
                     </Link>
                     <FaBars className="menu-bars" onClick={() => setNav(nav === 'block' ? 'none' : 'block')} />
                     <div style={{display: nav}} className="menu-container">
                         <ul className='main-ul'>
 
-                            <li className='menu-li'><Link href="/" className='menu-link' onClick={() => setNav('none')}>Home</Link></li>
+                            <li className='menu-li'><Link href="/" onClick={() => setNav('none')}><p className='menu-link'>Home</p></Link></li>
 
                             <div style={{position: 'relative'}}>
-                                <li className='menu-li' onMouseEnter={() => changeNav('services')} onMouseLeave={() => changeNav('none')} onClick={() => changeNav('services')}>Services</li>
+                                <li onMouseEnter={() => changeNav('services')} onMouseLeave={() => changeNav('none')} onClick={() => changeNav('services')}><p className='menu-li'>Services</p></li>
                                 <ul className="sub-ul" onMouseEnter={() => changeNav('services')} onMouseLeave={() => changeNav('none')}  style={{display: services}}>
                                     <div className="nav-div">
                                         <h4 className='sub-menu-header'><GiSteeringWheel /> INTERIOR CLEANING</h4>
-                                        <li className='sub-menu-li' onClick={() => setNav('none')}><Link href='full-int-ex' className='menu-link'>Full Interior Cleaning</Link></li>
+                                        <li onClick={() => setNav('none')}><Link href='full-int-ex' className='menu-link'><p className='sub-menu-li'>Full Interior Cleaning</p></Link></li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}><Link href='bio' className='menu-link'>Biohazard Cleaning</Link></li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}><Link href='headliners' className='menu-link'>Headliners</Link></li>
                                         <h4 className='sub-menu-header'><RiCarWashingFill /> EXTERIOR CLEANING</h4>
