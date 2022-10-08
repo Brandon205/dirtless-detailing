@@ -696,7 +696,7 @@ hr {
   color: var(--heading-clr1);
   font-size: 2em;
   padding-top: 25vh;
-  margin: 0 auto 42vh auto;
+  margin: 0 auto 45vh auto;
 }
 
 .content-container {
@@ -808,6 +808,7 @@ hr {
   background-color: var(--contact-bkg-clr-light);
   border-radius: 5px;
   color: black;
+  cursor: pointer;
 }
 
 .service-link:hover {

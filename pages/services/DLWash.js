@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 // import { scrollWithOffset } from '../helpers/ScrollToTop';
 
 import cover from '../../public/imgs/DLWashCover.webp';
@@ -35,7 +36,9 @@ export default function DLWash() {
 
   return (
     <section className='service-content-container'>
-      <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}></div>
+      <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
+        <Image src={cover} alt="dirt-less wash cover photo" layout="fill" objectFit='cover' />
+      </div>
       <h1 className='servicepage-header'>Dirt-Less Wash</h1>
 
       <div className='main-content-container'>
@@ -47,16 +50,16 @@ export default function DLWash() {
             </ol>
           </div>
 
-          <Link href="/#contact" className="quote-btn service-page-quote-btn">Get Started</Link>
+          <Link href="/#contact"><p className="quote-btn service-page-quote-btn">Get Started</p></Link>
 
           <div>
             <div className='aside-container'>
               <div className='service-aside'>
                 <h3>Other Exterior Services</h3>
                 <div className="aside-links">
-                  {/* <Link href="/dl-wash" style={{color: href.endsWith('dl-wash') ? 'blue' : 'black'}} className='service-link'>{href.endsWith('dl-wash') ? '> ' : ''} Dirt-Less Wash</Link><br />
-                  <Link href="/premium-dl-wash" style={{color: href.endsWith('premium-dl-wash') ? 'blue' : 'black'}} className='service-link'>{href.endsWith('premium-dl-wash') ? '> ' : ''} Premium Dirt-Less Wash</Link><br />
-                  <Link href="/engine" style={{color: href.endsWith('engine') ? 'blue' : 'black'}} className={'service-link'}>{href.endsWith('engine') ? '> ' : ''} Single Stage Paint Correction</Link> */}
+                  <Link href="/dl-wash"><p style={{color: href.endsWith('DLWash') ? 'blue' : 'black'}} className='service-link'>Dirt-Less Wash</p></Link><br />
+                  <Link href="/premium-dl-wash"><p style={{color: href.endsWith('PDLWash') ? 'blue' : 'black'}} className='service-link'>Premium Dirt-Less Wash</p></Link><br />
+                  <Link href="/engine"><p style={{color: href.endsWith('Engine') ? 'blue' : 'black'}} className='service-link'>Single Stage Paint Correction</p></Link>
                 </div>
               </div>
             </div>
