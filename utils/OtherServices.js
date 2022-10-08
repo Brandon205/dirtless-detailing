@@ -96,7 +96,7 @@ export default function OtherServices() {
                     {/* <Link href="dl-wash" passHref={true}>
                         <a className="readmore">Learn More</a>
                     </Link> */}
-                    <Link href="/services/DLWash">
+                    <Link href="/services/DLWash" class='readmore'>
                         Learn More
                     </Link>
                 </div>
@@ -108,8 +108,8 @@ export default function OtherServices() {
                     <Link href="premium-dl-wash" className="service-heading-link"><h2>Premium Dirt-Less Wash</h2></Link>
                     <p className="secondary-text">Starting at: <span>$150</span></p>
                     <p className="service-desc">Our Premium exterior wash will go above and beyond the Dirt-Less Wash in the cleaning process and will top it off with a 6 month sealant or better to protect your vehicle.</p>
-                    <Link href="/services/PDLWash" passHref>
-                        <a className="readmore" onClick={() => handleClick()}>Learn More</a>
+                    <Link href="/services/PDLWash">
+                        <p className="readmore">Learn More</p>
                     </Link>
                 </div>
             </div>

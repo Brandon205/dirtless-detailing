@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 // import { scrollWithOffset } from '../helpers/ScrollToTop';
 
@@ -13,6 +13,12 @@ const steps = [
 ]
 
 export default function DLWash() {
+  const [href, setHref] = useState('');
+
+  useEffect(() => {
+    setHref(window.location.href)
+  }, [])
+
   const content = steps.map((item, id) => {
     return (
       <li key={id} className="item">
@@ -48,9 +54,9 @@ export default function DLWash() {
               <div className='service-aside'>
                 <h3>Other Exterior Services</h3>
                 <div className="aside-links">
-                  <Link href="/dl-wash" style={{color: window.location.href.endsWith('dl-wash') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('dl-wash') ? '> ' : ''} Dirt-Less Wash</Link><br />
-                  <Link href="/premium-dl-wash" style={{color: window.location.href.endsWith('premium-dl-wash') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('premium-dl-wash') ? '> ' : ''} Premium Dirt-Less Wash</Link><br />
-                  <Link href="/engine" style={{color: window.location.href.endsWith('engine') ? 'blue' : 'black'}} className={'service-link'}>{window.location.href.endsWith('engine') ? '> ' : ''} Single Stage Paint Correction</Link>
+                  <Link href="/dl-wash" style={{color: href.endsWith('dl-wash') ? 'blue' : 'black'}} className='service-link'>{href.endsWith('dl-wash') ? '> ' : ''} Dirt-Less Wash</Link><br />
+                  <Link href="/premium-dl-wash" style={{color: href.endsWith('premium-dl-wash') ? 'blue' : 'black'}} className='service-link'>{href.endsWith('premium-dl-wash') ? '> ' : ''} Premium Dirt-Less Wash</Link><br />
+                  <Link href="/engine" style={{color: href.endsWith('engine') ? 'blue' : 'black'}} className={'service-link'}>{href.endsWith('engine') ? '> ' : ''} Single Stage Paint Correction</Link>
                 </div>
               </div>
             </div>
