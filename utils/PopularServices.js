@@ -16,7 +16,7 @@ export default function PopularServices() {
                 <Link href="full-int-ex" className="service-heading-link"><h2 className="popular-service-title">Full Interior Cleaning</h2></Link>
                 <p className="price">Starting at: <span>$200</span></p>
             </div>
-            <Image src={interior} layout='responsive' alt="car interior before and after" className="popular-img" />
+            <Image src={interior} alt="car interior before and after" layout='fixed' height={475} width={360} objectFit="cover" className="popular-img" />
 
             <div className="popular-desc">
                 <ul className="checklist">
@@ -50,8 +50,8 @@ export default function PopularServices() {
                     </li>
                 </ul>
             </div>
-            <Link href="full-int-ex" className="popular-readmore">
-                <p>Learn More</p>
+            <Link href="full-int-ex">
+                <p className='popular-readmore'>Learn More</p>
             </Link>
         </div>
 
@@ -60,7 +60,7 @@ export default function PopularServices() {
                 <Link href="premium-dl-wash" className="service-heading-link"><h2 className="popular-service-title">Premium Dirt-Less Wash</h2></Link>
                 <p className="price">Starting at: <span>$150</span></p>
             </div>
-            <Image src={dlWash} alt="car exterior" className="popular-img" />
+            <Image src={dlWash} alt="car exterior" layout='fixed' height={475} width={360} objectFit="cover" className="popular-img" />
             
             <div className="popular-desc">
                 <ul className="checklist">
@@ -94,8 +94,8 @@ export default function PopularServices() {
                     </li>
                 </ul>
             </div>
-            <Link href="premium-dl-wash" className="popular-readmore">
-                <p>Learn More</p>
+            <Link href="premium-dl-wash">
+                <p className="popular-readmore">Learn More</p>
             </Link>
         </div>
 
@@ -104,7 +104,7 @@ export default function PopularServices() {
                 <Link href="single-paint-correction" className="service-heading-link"><h2 className="popular-service-title">Single Stage Paint Correction</h2></Link>
                 <p className="price">Starting at: <span>$300</span></p>
             </div>
-            <Image src={paint} alt="paint correction before and after" className="popular-img" />
+            <Image src={paint} alt="paint correction before and after" layout='fixed' height={475} width={360} objectFit="cover" className="popular-img" />
 
             <div className="popular-desc">
                 <ul className="checklist">
@@ -138,8 +138,8 @@ export default function PopularServices() {
                     </li>
                 </ul>
             </div>
-            <Link href="single-paint-correction" className="popular-readmore">
-                <p>Learn More</p>
+            <Link href="single-paint-correction">
+                <p className="popular-readmore">Learn More</p>
             </Link>
         </div>
     </section>

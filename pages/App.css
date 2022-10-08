@@ -422,7 +422,7 @@ header h1 {
 }
 
 .popular-img {
-  max-width: 100%;
+  /* max-width: 100%; */
   border-radius: 1rem 1rem 0 0;
 }
 
@@ -573,6 +573,7 @@ header h1 {
 .popular-readmore {
   display: inline-block;
   padding: 0.75em 20%;
+  margin-bottom: 0.75rem;
   background-color: var(--main-clr);
   border-radius: 0.5rem;
   color: white;
@@ -585,9 +586,9 @@ header h1 {
   background-color: var(--main-clr-hover);
 }
 
-.popular-readmore p {
+/* .popular-readmore p {
   margin: 0;
-}
+} */
 
 /** Home Page Review CSS **/
 .reviews-container {
@@ -1006,7 +1007,7 @@ hr {
   }
 
   .popular-img {
-    height: 475px;
+    /* height: 475px; */
   }
 
   .popular-container {
@@ -1025,9 +1026,9 @@ hr {
     justify-content: space-around;
   }
 
-  .popular-readmore {
+  /* .popular-readmore {
     margin: 0 auto;
-  }
+  } */
 
   .combo-container {
     width: 55vw;
