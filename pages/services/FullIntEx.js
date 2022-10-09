@@ -1,6 +1,5 @@
-import React from 'react';
-import Link from 'next/link';
-// import { scrollWithOffset } from '../helpers/ScrollToTop';
+import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 import cover from '../../public/imgs/fullIntExCover.webp';
 
@@ -15,6 +14,12 @@ const steps = [
 ]
 
 export default function FullIntEx() {
+  const [href, setHref] = useState('');
+
+  useEffect(() => {
+    setHref(window.location.href)
+  }, []);
+
   const content = steps.map((item, id) => {
     return (
       <li key={id} className="item">
@@ -31,7 +36,9 @@ export default function FullIntEx() {
 
   return (
     <section className='service-content-container'>
-      <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}></div>
+      <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
+        <Image src={cover} alt="Full Interior cleaning cover" layout="fill" objectFit='cover' />
+      </div>
       <h1 className='servicepage-header'>Full Interior Cleaning</h1>
 
       <div className='main-content-container'>
@@ -45,15 +52,15 @@ export default function FullIntEx() {
             <h4><span className='special-package'>*</span>Extraction Package Only</h4>
           </div>
 
-          <Link href="/#contact" className="quote-btn service-page-quote-btn">Get Started</Link>
+          <a href="/#contact" className="quote-btn service-page-quote-btn">Get Started</a>
 
           <div className='aside-container'>
             <div className='service-aside'>
               <h3>Our Other Interior Services</h3>
               <div className="aside-links">
-                <Link href="/full-int-ex" style={{color: window.location.href.endsWith('full-int-ex') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('full-int-ex') ? '> ' : ''} Full Interior Cleaning</Link><br />
-                <Link href="/bio" style={{color: window.location.href.endsWith('bio') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('bio') ? '> ' : ''} Bio Hazard/Odor Cleaning</Link><br />
-                <Link href="/headliners" style={{color: window.location.href.endsWith('headliners') ? 'blue' : 'black'}} className={'service-link'}>{window.location.href.endsWith('headliners') ? '> ' : ''} Headliners</Link>
+                <a href="/services/FullIntEx" style={{color: href.endsWith('FullIntEx') ? 'blue' : 'black'}} className="service-link">{href.endsWith('FullIntEx') ? '> ' : ''} Full Interior Cleaning</a>
+                <a href="/services/Bio" style={{color: href.endsWith('Bio') ? 'blue' : 'black'}} className="service-link">{href.endsWith('Bio') ? '> ' : ''} Biohazard Cleaning</a>
+                <a href="/services/Headliners" style={{color: href.endsWith('Headliners') ? 'blue' : 'black'}} className="service-link">{href.endsWith('Headliners') ? '> ' : ''} Headliners</a>
               </div>
             </div>
           </div>
@@ -61,7 +68,7 @@ export default function FullIntEx() {
 
         <div className="combo-container">
           <h2>Get a <span className='special-package'>free</span> Engine cleaning!</h2>
-          <p className="subtext">When you book this Full Interior Cleaning (with or without extraction) and an <Link href="/premium-dl-wash">Premium Cleaning</Link> together we will clean out your engine bay at no extra cost. (Click the Get Started button below to begin).</p>
+          <p className="subtext">When you book this Full Interior Cleaning (with or without extraction) and an <a href="/services/PDLWash">Premium Cleaning</a> together we will clean out your engine bay at no extra cost. (Click the Get Started button below to begin).</p>
         </div>
 
         <div>
