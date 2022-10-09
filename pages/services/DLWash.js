@@ -57,10 +57,9 @@ export default function DLWash() {
               <div className='service-aside'>
                 <h3>Other Exterior Services</h3>
                 <div className="aside-links">
-                  <Link href="/dl-wash"><p style={{color: href.endsWith('DLWash') ? 'blue' : 'black'}} className='service-link'>Dirt-Less Wash</p></Link><br />
-                  <Link href="/premium-dl-wash"><p style={{color: href.endsWith('PDLWash') ? 'blue' : 'black'}} className='service-link'>Premium Dirt-Less Wash</p></Link><br />
-                  <Link href="/engine"><p style={{color: href.endsWith('Engine') ? 'blue' : 'black'}} className='service-link'>Single Stage Paint Correction</p></Link>
-                </div>
+                  <a href="/services/DLWash" style={{color: href.endsWith('DLWash') ? 'blue' : 'black'}} className="service-link">{href.endsWith('DLWash') ? '> ' : ''} Dirt-Less Wash</a>
+                  <a href="/services/PDLWash" style={{color: href.endsWith('PDLWash') ? 'blue' : 'black'}} className="service-link">{href.endsWith('PDLWash') ? '> ' : ''} Premium Dirt-Less Wash</a>
+                  <a href="/services/Engine" style={{color: href.endsWith('Engine') ? 'blue' : 'black'}} className="service-link">{href.endsWith('Engine') ? '> ' : ''} Engine Bay Cleaning</a>                </div>
               </div>
             </div>
 
