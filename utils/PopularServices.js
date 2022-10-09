@@ -52,7 +52,7 @@ export default function PopularServices() {
                     </li>
                 </ul>
             </div>
-            <Link href="full-int-ex">
+            <Link href="/services/FullIntEx">
                 <p className='popular-readmore'>Learn More</p>
             </Link>
         </div>
@@ -98,7 +98,7 @@ export default function PopularServices() {
                     </li>
                 </ul>
             </div>
-            <Link href="premium-dl-wash">
+            <Link href="/services/PDLWash">
                 <p className="popular-readmore">Learn More</p>
             </Link>
         </div>
@@ -144,7 +144,7 @@ export default function PopularServices() {
                     </li>
                 </ul>
             </div>
-            <Link href="single-paint-correction">
+            <Link href="/services/SinglePC">
                 <p className="popular-readmore">Learn More</p>
             </Link>
         </div>

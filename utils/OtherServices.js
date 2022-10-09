@@ -14,9 +14,9 @@ import stage2 from '../public/imgs/pageimgs/homepage/stage2.webp';
 
 export default function OtherServices() {
 
-    let handleClick = () => {
-        console.log('hello')
-    }
+    // let handleClick = () => {
+    //     console.log('hello')
+    // }
 
   return (
     <div>
@@ -28,12 +28,12 @@ export default function OtherServices() {
                     <p className="secondary-text">Starting at: <span>$275</span></p>
                     <p className="service-desc">This combo comes with a <span className='special-package'>free</span> Engine Bay cleaning, along with the full interior and exterior detail this package is sure to bring your whole car back to life.</p>
                     <div>
-                        <Link href="full-int-ex">
-                            <p className="readmore">Interior</p>
-                        </Link>
-                        <Link href="dl-wash">
-                            <p className="readmore">Exterior</p>
-                        </Link>
+                        {/* <Link href="full-int-ex"> */}
+                            <a href="/services/FullIntEx" className="readmore">Interior</a>
+                        {/* </Link> */}
+                        {/* <Link href="dl-wash"> */}
+                            <p href="/services/DLWash" className="readmore">Exterior</p>
+                        {/* </Link> */}
                     </div>
                 </div>
             </div>
@@ -97,7 +97,7 @@ export default function OtherServices() {
                         <a className="readmore">Learn More</a>
                     </Link> */}
                     <Link href="/services/DLWash">
-                        <p className="readmore">Learn More</p>
+                        <a className="readmore">Learn More</a>
                     </Link>
                 </div>
             </div>

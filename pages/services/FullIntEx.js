@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-import { scrollWithOffset } from '../helpers/ScrollToTop';
+// import { scrollWithOffset } from '../helpers/ScrollToTop';
 
-import cover from '../../assets/imgs/fullIntExCover.webp';
+import cover from '../../public/imgs/fullIntExCover.webp';
 
 const steps = [
   ["Expose Hidden Dirt", "Use our Tornador Vortex blowgun which uses compressed air to blow out every spot a vacuum can't reach, it also extracts sand and loose soil from carpeting (Most detailers don't do this)."],
@@ -45,7 +45,7 @@ export default function FullIntEx() {
             <h4><span className='special-package'>*</span>Extraction Package Only</h4>
           </div>
 
-          <Link href="/#contact" className="quote-btn service-page-quote-btn" scroll={el => scrollWithOffset(el)}>Get Started</Link>
+          <Link href="/#contact" className="quote-btn service-page-quote-btn">Get Started</Link>
 
           <div className='aside-container'>
             <div className='service-aside'>

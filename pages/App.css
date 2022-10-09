@@ -193,12 +193,12 @@ li span {
   cursor: pointer
 }
 
-.sub-menu-li .menu-link {
-  margin: 0;
+.sub-menu-li a .menu-link {
+  margin: 20;
   color: var(--nav-color);
 }
 
-.sub-menu-li .menu-link:hover {
+.menu-link:hover {
   color: black;
 }
 

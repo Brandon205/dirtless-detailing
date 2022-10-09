@@ -47,23 +47,59 @@ export default function MyApp({ Component, pageProps }) {
                     <div style={{display: nav}} className="menu-container">
                         <ul className='main-ul'>
 
-                            <li className='menu-li'><Link href="/" onClick={() => setNav('none')}><p className='menu-link'>Home</p></Link></li>
+                            <li className='menu-li'>
+                                <Link href="/">
+                                    <a className='menu-link'>Home</a>
+                                </Link>
+                            </li>
 
                             <div style={{position: 'relative'}}>
                                 <li onMouseEnter={() => changeNav('services')} onMouseLeave={() => changeNav('none')} onClick={() => changeNav('services')}><p className='menu-li'>Services</p></li>
                                 <ul className="sub-ul" onMouseEnter={() => changeNav('services')} onMouseLeave={() => changeNav('none')}  style={{display: services}}>
                                     <div className="nav-div">
                                         <h4 className='sub-menu-header'><GiSteeringWheel /> INTERIOR CLEANING</h4>
-                                        <li onClick={() => setNav('none')}><Link href='full-int-ex' className='menu-link'><p className='sub-menu-li'>Full Interior Cleaning</p></Link></li>
-                                        <li className='sub-menu-li' onClick={() => setNav('none')}><Link href='bio' className='menu-link'>Biohazard Cleaning</Link></li>
-                                        <li className='sub-menu-li' onClick={() => setNav('none')}><Link href='headliners' className='menu-link'>Headliners</Link></li>
+                                        <li onClick={() => setNav('none')}>
+                                            <Link href='full-int-ex' className='menu-link'>
+                                                <p className='sub-menu-li'>Full Interior Cleaning</p>
+                                            </Link>
+                                        </li>
+                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                            <Link href='/services/Bio'>
+                                                <p className='menu-link'>Biohazard Cleaning</p>
+                                            </Link>
+                                        </li>
+                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                            <Link href='/services/Headliners'>
+                                                <p className='menu-link'>Headliners</p>
+                                            </Link>
+                                        </li>
                                         <h4 className='sub-menu-header'><RiCarWashingFill /> EXTERIOR CLEANING</h4>
-                                        <li className='sub-menu-li' onClick={() => setNav('none')}><Link href='dl-wash' className='menu-link'>Dirt-Less Wash</Link></li>
-                                        <li className='sub-menu-li' onClick={() => setNav('none')}><Link href='premium-dl-wash' className='menu-link'>Premium Dirt-Less Wash</Link></li>
-                                        <li className='sub-menu-li' onClick={() => setNav('none')}><Link href='engine' className='menu-link'>Engine Bay</Link></li>
+                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                            <Link href='/services/DLWash'>
+                                                <p className='menu-link'>Dirt-Less Wash</p>
+                                            </Link>
+                                        </li>
+                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                            <Link href='/services/PDLWash'>
+                                                <p className='menu-link'>Premium Dirt-Less Wash</p>
+                                            </Link>
+                                        </li>
+                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                            <Link href='/services/Engine'>
+                                                <p className='menu-link'>Engine Bay</p>
+                                            </Link>
+                                        </li>
                                         <h4 className='sub-menu-header'><FaCarSide /> EXTERIOR CORRECTION</h4>
-                                        <li className='sub-menu-li' onClick={() => setNav('none')}><Link href='single-paint-correction' className='menu-link'>Single Stage Paint Correction</Link></li>
-                                        <li className='sub-menu-li' onClick={() => setNav('none')}><Link href='two-paint-correction' className='menu-link'>Two Stage Paint Correction</Link></li>
+                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                            <Link href='/services/SinglePC'>
+                                                <p className='menu-link'>Single Stage Paint Correction</p>
+                                            </Link>
+                                        </li>
+                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                            <Link href='/services/TwoPC'>
+                                                <p className='menu-link'>Two Stage Paint Correction</p>
+                                            </Link>
+                                        </li>
                                     </div>
                                 </ul>
                             </div>
@@ -81,9 +117,19 @@ export default function MyApp({ Component, pageProps }) {
                             </ul>
                             </div>
 
-                            <li className='menu-li'><Link href="addons" className='menu-link' onClick={() => setNav('none')}>Addons</Link></li>
+                            <li className='menu-li'>
+                            {/* onClick={() => setNav('none')} */}
+                                <Link href="/services/Addons">
+                                    <p className='menu-link'>Addons</p>
+                                </Link>
+                            </li>
 
-                            <li className='menu-li'><Link href='about' className='menu-link' onClick={() => setNav('none')}>About Us</Link></li>
+                            <li className='menu-li'>
+                            {/* onClick={() => setNav('none')} */}
+                                <Link href='/About'>
+                                    <p className='menu-link'>About Us</p>
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                 </nav>
