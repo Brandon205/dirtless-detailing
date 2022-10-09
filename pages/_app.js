@@ -40,17 +40,19 @@ export default function MyApp({ Component, pageProps }) {
             {/* <ScrollToTop /> */}
             <header className="App-header">
                 <nav id="nav">
-                    <Link href="/">
+                    {/* <Link href="/">
                         <Image src={ddLogo} style={{marginLeft: 16}} width='132' height="80" className="logo" alt="logo" />
-                    </Link>
+                    </Link> */}
+                    <a href="/"><Image src={ddLogo} style={{marginLeft: 16}} width='132' height="80" className="logo" alt="logo" /></a>
                     <FaBars className="menu-bars" onClick={() => setNav(nav === 'block' ? 'none' : 'block')} />
                     <div style={{display: nav}} className="menu-container">
                         <ul className='main-ul'>
 
                             <li className='menu-li'>
-                                <Link href="/">
+                                {/* <Link href="/">
                                     <a className='menu-link'>Home</a>
-                                </Link>
+                                </Link> */}
+                                <a href="/" className='menu-link'>Home</a>
                             </li>
 
                             <div style={{position: 'relative'}}>
@@ -59,46 +61,56 @@ export default function MyApp({ Component, pageProps }) {
                                     <div className="nav-div">
                                         <h4 className='sub-menu-header'><GiSteeringWheel /> INTERIOR CLEANING</h4>
                                         <li onClick={() => setNav('none')}>
-                                            <Link href='full-int-ex' className='menu-link'>
+                                            {/* <Link href='full-int-ex' className='menu-link'>
                                                 <p className='sub-menu-li'>Full Interior Cleaning</p>
-                                            </Link>
+                                            </Link> */}
+                                            <a href="/services/FullIntEx" className='menu-link'>Full Interior Cleaning</a>
                                         </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <Link href='/services/Bio'>
+                                            {/* <Link href='/services/Bio'>
                                                 <p className='menu-link'>Biohazard Cleaning</p>
-                                            </Link>
+                                            </Link> */}
+                                            <a href="/services/Bio" className='menu-link'>Biohazard Cleaning</a>
                                         </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <Link href='/services/Headliners'>
+                                            {/* <Link href='/services/Headliners'>
                                                 <p className='menu-link'>Headliners</p>
-                                            </Link>
+                                            </Link> */}
+                                            <a href="/services/Headliners" className='menu-link'>Headliners</a>
                                         </li>
                                         <h4 className='sub-menu-header'><RiCarWashingFill /> EXTERIOR CLEANING</h4>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <Link href='/services/DLWash'>
+                                            {/* <Link href='/services/DLWash'>
                                                 <p className='menu-link'>Dirt-Less Wash</p>
-                                            </Link>
+                                            </Link> */}
+                                            <a href="/services/DLWash" className='menu-link'>Dirt-Less Wash</a>
                                         </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <Link href='/services/PDLWash'>
+                                            {/* <Link href='/services/PDLWash'>
                                                 <p className='menu-link'>Premium Dirt-Less Wash</p>
-                                            </Link>
+                                            </Link> */}
+                                            <a href="/services/PDLWash" className='menu-link'>Premium Dirt-Less Wash</a>
+
                                         </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <Link href='/services/Engine'>
+                                            {/* <Link href='/services/Engine'>
                                                 <p className='menu-link'>Engine Bay</p>
-                                            </Link>
+                                            </Link> */}
+                                            <a href="/services/Engine" className='menu-link'>Engine Bay Cleaning</a>
+
                                         </li>
                                         <h4 className='sub-menu-header'><FaCarSide /> EXTERIOR CORRECTION</h4>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <Link href='/services/SinglePC'>
+                                            {/* <Link href='/services/SinglePC'>
                                                 <p className='menu-link'>Single Stage Paint Correction</p>
-                                            </Link>
+                                            </Link> */}
+                                            <a href="/services/SinglePC" className='menu-link'>Single Stage Paint Correction</a>
                                         </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <Link href='/services/TwoPC'>
+                                            {/* <Link href='/services/TwoPC'>
                                                 <p className='menu-link'>Two Stage Paint Correction</p>
-                                            </Link>
+                                            </Link> */}
+                                            <a href="/services/TwoPC" className='menu-link'>Two Stage Paint Correction</a>
                                         </li>
                                     </div>
                                 </ul>
@@ -109,26 +121,40 @@ export default function MyApp({ Component, pageProps }) {
                             <ul className="sub-ul" onMouseEnter={() => changeNav('gallery')} onMouseLeave={() => changeNav('none')} style={{display: gallery}}>
                                 <div className="nav-div">
                                     <h4 className="sub-menu-header"><FaPhotoVideo /> GALLERIES</h4>
-                                    <li className='sub-menu-li' onClick={() => setNav('none')}><Link href='full-int-gallery' className='menu-link'>Interior Gallery</Link></li>
-                                    <li className='sub-menu-li' onClick={() => setNav('none')}><Link href='paint-correction-gallery' className='menu-link'>Paint Correction Gallery</Link></li>
-                                    <li className='sub-menu-li' onClick={() => setNav('none')}><Link href='dl-wash-gallery' className='menu-link'>Dirt-Less Wash Gallery</Link></li>
-                                    <li className='sub-menu-li' onClick={() => setNav('none')}><Link href='engine-gallery' className='menu-link'>Engine Cleaning Gallery</Link></li>
+                                    <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                        {/* <Link href='full-int-gallery' className='menu-link'>
+                                            Interior Gallery
+                                        </Link> */}
+                                        <a href="/gallery/FullIntGallery" className='menu-link'>Headliners</a>
+                                    </li>
+                                    <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                        {/* <Link href='paint-correction-gallery' className='menu-link'>
+                                            Paint Correction Gallery
+                                        </Link> */}
+                                        <a href="/gallery/PaintCorrectionGallery" className='menu-link'>Headliners</a>
+                                    </li>
+                                    <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                        {/* <Link href='dl-wash-gallery' className='menu-link'>
+                                            Dirt-Less Wash Gallery
+                                        </Link> */}
+                                        <a href="/gallery/DLWashGallery" className='menu-link'>Headliners</a>
+                                    </li>
+                                    <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                        {/* <Link href='engine-gallery' className='menu-link'>
+                                            Engine Cleaning Gallery
+                                        </Link> */}
+                                        <a href="/gallery/EngineGallery" className='menu-link'>Headliners</a>
+                                    </li>
                                 </div>
                             </ul>
                             </div>
 
                             <li className='menu-li'>
-                            {/* onClick={() => setNav('none')} */}
-                                <Link href="/services/Addons">
-                                    <p className='menu-link'>Addons</p>
-                                </Link>
+                                <a href="/services/Addons" className='menu-link' onClick={() => setNav('none')}>Addons</a>
                             </li>
 
                             <li className='menu-li'>
-                            {/* onClick={() => setNav('none')} */}
-                                <Link href='/About'>
-                                    <p className='menu-link'>About Us</p>
-                                </Link>
+                                <a href="/About" className="menu-link">About Us</a>
                             </li>
                         </ul>
                     </div>
@@ -140,28 +166,33 @@ export default function MyApp({ Component, pageProps }) {
             <footer>
                 <div className="footer-content-card">
                     <h3>COMPANY</h3>
-                    <Link href="/" className="footer-link">
+                    {/* <Link href="/" className="footer-link">
                         <p className="footer-text">Home</p>
-                    </Link>
-                    <Link href="about" className="footer-link">
+                    </Link> */}
+                    {/* <Link href="about" className="footer-link">
                         <p className="footer-text">About Us</p>
-                    </Link>
+                    </Link> */}
+                    <a href="/" className='footer-link'>Home</a>
+                    <a href="/About" className='footer-link'>About Us</a>
                 </div>
                 <div className="footer-content-card">
                     <h3>INTERIOR</h3>
-                    <Link href="full-int-ex" className="footer-link">
+                    {/* <Link href="full-int-ex" className="footer-link">
                         <p className="footer-text">Full Interior Cleaning</p>
-                    </Link>
-                    <Link href="bio" className="footer-link">
+                    </Link> */}
+                    {/* <Link href="bio" className="footer-link">
                         <p className="footer-text">Smoke / Biohazard / Mold Removal</p>
-                    </Link>
-                    <Link href="headliners" className="footer-link">
+                    </Link> */}
+                    {/* <Link href="headliners" className="footer-link">
                         <p className="footer-text">Headliners</p>
-                    </Link>
+                    </Link> */}
+                    <a href="/services/FullIntEx" className='footer-link'>Full Interior Cleaning</a>
+                    <a href="/services/Bio" className='footer-link'>Smoke / Biohazard / Mold Removal</a>
+                    <a href="/services/Headliners" className='footer-link'>Headliners</a>
                 </div>
                 <div className="footer-content-card">
                     <h3>EXTERIOR</h3>
-                    <Link href="dl-wash" className="footer-link">
+                    {/* <Link href="dl-wash" className="footer-link">
                         <p className="footer-text">Dirt-Less Wash</p>
                     </Link>
                     <Link href="premium-dl-wash" className="footer-link">
@@ -175,7 +206,12 @@ export default function MyApp({ Component, pageProps }) {
                     </Link>
                     <Link href="two-paint-correction" className="footer-link">
                         <p className="footer-text">Two Stage Paint Correction</p>
-                    </Link>
+                    </Link> */}
+                    <a href="/services/DLWash" className='footer-link'>Dirt-Less Wash</a>
+                    <a href="/services/PDLWash" className='footer-link'>Premium Dirt-Less Wash</a>
+                    <a href="/services/Engine" className='footer-link'>Engine Bay Cleaning</a>
+                    <a href="/services/SinglePC" className='footer-link'>Single Stage Paint Correction</a>
+                    <a href="/services/TwoPC" className='footer-link'>Two Stage Paint Correction</a>
                 </div>
                 <div className="footer-content-card" id="contact">
                     <h3>CONTACT US</h3>

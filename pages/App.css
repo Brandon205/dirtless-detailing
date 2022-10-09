@@ -622,14 +622,6 @@ hr {
   margin-left: 1rem;
 }
 
-.footer-text:hover {
-  text-decoration: underline;
-}
-
-.footer-text {
-  color: lightgray;
-}
-
 .socials-container {
   width: 100%;
   display: flex;
@@ -644,11 +636,15 @@ hr {
 }
 
 .footer-link {
+  display: block;
   text-decoration: none;
+  color: lightgray;
+  margin-top: 1.25rem;
 }
 
-.footer-link p:hover {
+.footer-link:hover {
   color: gray;
+  text-decoration: underline;
 }
 
 /** ABOUT US CSS **/
