@@ -1,8 +1,7 @@
-import React from 'react';
-import Link from 'next/link';
-import { scrollWithOffset } from '../../src/components/helpers/ScrollToTop';
+import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
-import cover from '../../assets/imgs/EngineCover.webp';
+import cover from '../../public/imgs/EngineCover.webp';
 
 const steps = [
   ["Preemptive Measures", "Cover all sensitive areas, like air intakes, and any exposed electronics."],
@@ -12,6 +11,12 @@ const steps = [
 ]
 
 export default function Engine() {
+  const [href, setHref] = useState('');
+
+  useEffect(() => {
+    setHref(window.location.href)
+  }, [])
+  
   const content = steps.map((item, id) => {
     return (
       <li key={id} className="item">
@@ -26,7 +31,9 @@ export default function Engine() {
   })
   return (
     <section className='service-content-container'>
-      <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}></div>
+      <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
+        <Image src={cover} alt="Engine cleaning cover" layout="fill" objectFit='cover' />
+      </div>
       <h1 className='servicepage-header'>Engine Bay Cleaning</h1>
 
       <div className='main-content-container'>
@@ -38,15 +45,18 @@ export default function Engine() {
             </ol>
           </div>
 
-          <Link href="/#contact" className="quote-btn service-page-quote-btn" scroll={el => scrollWithOffset(el)}>Get Started</Link>
+          <a href="/#contact" className="quote-btn service-page-quote-btn">Get Started</a>
 
           <div className='aside-container'>
             <div className='service-aside'>
               <h3>Other Exterior Services</h3>
               <div className="aside-links">
-                <Link href="/dl-wash" style={{color: window.location.href.endsWith('dl-wash') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('dl-wash') ? '> ' : ''} Dirt-Less Wash</Link><br />
+                {/* <Link href="/dl-wash" style={{color: window.location.href.endsWith('dl-wash') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('dl-wash') ? '> ' : ''} Dirt-Less Wash</Link><br />
                 <Link href="/premium-dl-wash" style={{color: window.location.href.endsWith('premium-dl-wash') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('premium-dl-wash') ? '> ' : ''} Premium Dirt-Less Wash</Link><br />
-                <Link href="/engine" style={{color: window.location.href.endsWith('engine') ? 'blue' : 'black'}} className={'service-link'}>{window.location.href.endsWith('engine') ? '> ' : ''} Engine Bay</Link>
+                <Link href="/engine" style={{color: window.location.href.endsWith('engine') ? 'blue' : 'black'}} className={'service-link'}>{window.location.href.endsWith('engine') ? '> ' : ''} Engine Bay</Link> */}
+                <a href="/services/DLWash" style={{color: href.endsWith('DLWash') ? 'blue' : 'black'}} className="service-link">{href.endsWith('DLWash') ? '> ' : ''} Dirt-Less Wash</a>
+                <a href="/services/PDLWash" style={{color: href.endsWith('PDLWash') ? 'blue' : 'black'}} className="service-link">{href.endsWith('PDLWash') ? '> ' : ''} Premium Dirt-Less Wash</a>
+                <a href="/services/Engine" style={{color: href.endsWith('Engine') ? 'blue' : 'black'}} className="service-link">{href.endsWith('Engine') ? '> ' : ''} Engine Bay Cleaning</a>
               </div>
             </div>
           </div>
