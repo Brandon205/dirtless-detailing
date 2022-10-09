@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
-// import { scrollWithOffset } from '../helpers/ScrollToTop';
 
 import cover from '../../public/imgs/DLWashCover.webp';
 
@@ -18,7 +16,7 @@ export default function DLWash() {
 
   useEffect(() => {
     setHref(window.location.href)
-  }, [])
+  }, []);
 
   const content = steps.map((item, id) => {
     return (
@@ -50,7 +48,7 @@ export default function DLWash() {
             </ol>
           </div>
 
-          <Link href="/#contact"><p className="quote-btn service-page-quote-btn">Get Started</p></Link>
+          <a href="/#contact" className="quote-btn service-page-quote-btn">Get Started</a>
 
           <div>
             <div className='aside-container'>
@@ -65,14 +63,14 @@ export default function DLWash() {
 
             <div className='aside-container'>
               <div className='service-aside'>
-              <h3><Link href="/addons" style={{color: 'black'}}>Extra Addons</Link></h3>
+              <h3><a href="/services/Addons" style={{color: 'black'}}>Extra Addons</a></h3>
                 <div className="aside-links">
                   <div className="addon-container">
-                    <p className='addon-title'><Link href="/addons/#glass" style={{color: 'blue'}}>Glass Polishing</Link> - <span className="bold">$70</span>/hour</p>
+                    <p className='addon-title'><a href="/services/Addons/#glass" style={{color: 'blue'}}>Glass Polishing</a> - <span className="bold">$70</span>/hour</p>
                     <p className="subtext">Gives you crystal clear windows</p>
                   </div>
                   <div className="addon-container">
-                    <p className='addon-title'><Link href="/addons/#waterspot" style={{color: 'blue'}}>Waterspot/Overspray</Link> - <span className="bold">$60</span>/hour</p>
+                    <p className='addon-title'><a href="/services/Addons/#waterspot" style={{color: 'blue'}}>Waterspot/Overspray</a> - <span className="bold">$60</span>/hour</p>
                     <p className="subtext">Remove Overspray and Waterspots from your vehicle</p>
                   </div>
                 </div>
