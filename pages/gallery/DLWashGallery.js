@@ -1,32 +1,48 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Image from 'next/image';
 import { Gallery, Item } from 'react-photoswipe-gallery';
 import 'photoswipe/dist/photoswipe.css';
 
-import cover from '../../assets/imgs/dlWashGallery.webp';
-
-function importAll(r) {
-  let images = {};
-  r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
-  return images;
-}
-
-let images = importAll(require.context('../../assets/imgs/pageimgs/exterior', false, /\.(webp|jpe?g|svg)$/));
-images = Object.values(images)
+import cover from '../../public/imgs/dlWashGallery.webp';
 
 export default function PaintCorrectionGallery() {
+  let images = [];
+  let imagery = (<>Loading...</>)
+  useEffect(() => {  
+    images = importAll(require.context('../../public/imgs/pageimgs/exterior', false, /\.(webp|jpe?g|svg)$/));
+    images = Object.values(images)
+    console.log(images)
 
-  let imagery = images.map((pic, id) => {
-    let width = pic.match(/[0-9]+/gm)
-    let height = pic.match(/(x)(\d+)/)
+    imagery = images.map((pic, id) => {
+      console.log(typeof(pic))
+      let width = pic.match(/[0-9]+/gm)
+      let height = pic.match(/(x)(\d+)/)
+  
+      return <Item key={id} original={images[id]} thumbnail={images[id]} width={width[0]} height={height[2]}>
+          {({ ref, open }) => (
+          <Image className="gallery-image" alt={'dirtless wash example ' + id} ref={ref} onClick={open} src={images[id]} />
+        )}
+      </Item>
+      })
+  }, [])
 
-    return <Item key={id} original={images[id]} thumbnail={images[id]} width={width[0]} height={height[2]}>
-        {({ ref, open }) => (
-        // <img className="gallery-image" alt={'dirtless wash example ' + id} ref={ref} onClick={open} src={images[id]} />
-        <Image className="gallery-image" alt={'dirtless wash example ' + id} ref={ref} onClick={open} src={images[id]} />
-      )}
-    </Item>
-  })
+  function importAll(r) {
+    let images = {};
+    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+    return images;
+  }
+
+  // let imagery = images.map((pic, id) => {
+  //   console.log(pic)
+  //   let width = pic.match(/[0-9]+/gm)
+  //   let height = pic.match(/(x)(\d+)/)
+
+  //   return <Item key={id} original={images[id]} thumbnail={images[id]} width={width[0]} height={height[2]}>
+  //       {({ ref, open }) => (
+  //       <Image className="gallery-image" alt={'dirtless wash example ' + id} ref={ref} onClick={open} src={images[id]} />
+  //     )}
+  //   </Item>
+  // })
 
   return (
     <section className='content-container'>
