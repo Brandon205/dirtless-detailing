@@ -408,8 +408,23 @@ header h1 {
   color: lightgray;
 }
 
+/* .service-card h2 {
+  margin: 0.25rem auto 0 auto; 
+  letter-spacing: 2; 
+  font-weight: 600;
+  color: black;
+}
+
+.service-card h2:hover {
+  color: gray;
+} */
+
 .service-heading-link {
+  display: block;
+  margin: 0.25rem auto 0 auto; 
   text-decoration: none;
+  font-size: 1.75em;
+  font-weight: 600;
   color: black;
 }
 
@@ -516,17 +531,6 @@ header h1 {
   box-shadow: 0 0 10px 5px var(--boxshadow-clr);
   border-radius: 1rem;
   margin: 20px 0;
-}
-
-.service-card h2 {
-  margin: 0.25rem auto 0 auto; 
-  letter-spacing: 2; 
-  font-weight: 600;
-  color: black;
-}
-
-.service-card h2:hover {
-  color: gray;
 }
 
 .service-desc {
