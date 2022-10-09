@@ -1,7 +1,6 @@
 import { Carousel } from 'react-responsive-carousel';
 import Link from 'next/link';
 import Image from 'next/image';
-// import { scrollWithOffset } from '../utils/ScrollToTop.js';
 
 import Contact from '../utils/Contact';
 import PopularServices from '../utils/PopularServices';

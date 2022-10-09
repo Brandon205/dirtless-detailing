@@ -23,7 +23,7 @@ export default function OtherServices() {
                     <p className="service-desc">This combo comes with a <span className='special-package'>free</span> Engine Bay cleaning, along with the full interior and exterior detail this package is sure to bring your whole car back to life.</p>
                     <div>
                         <a href="/services/FullIntEx" className="readmore">Interior</a>
-                        <a href="/services/DLWash" className="readmore">Exterior</a>
+                        <a href="/services/PDLWash" className="readmore">Exterior</a>
                     </div>
                 </div>
             </div>
