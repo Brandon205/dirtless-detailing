@@ -13,7 +13,7 @@ export default function PopularServices() {
     <section className="popular-container">
         <div className="popular-services-card">
             <div className="popular-services-header">
-                <Link href="full-int-ex" className="service-heading-link"><h2 className="popular-service-title">Full Interior Cleaning</h2></Link>
+                <a href='/services/FullIntEx' className="service-heading-link popular-service-title">Full Interior Cleaning</a>
                 <p className="price">Starting at: <span>$200</span></p>
             </div>
             <div className='popular-img'>
@@ -52,14 +52,13 @@ export default function PopularServices() {
                     </li>
                 </ul>
             </div>
-            <Link href="/services/FullIntEx">
-                <p className='popular-readmore'>Learn More</p>
-            </Link>
+
+            <a href='/services/FullIntEx' className='popular-readmore'>Learn More</a>
         </div>
 
         <div className="popular-services-card">
             <div className="popular-services-header">
-                <Link href="premium-dl-wash" className="service-heading-link"><h2 className="popular-service-title">Premium Dirt-Less Wash</h2></Link>
+                <a href='/services/PDLWash' className="service-heading-link popular-service-title">Premium Dirt-Less Wash</a>
                 <p className="price">Starting at: <span>$150</span></p>
             </div>
             <div className="popular-img">
@@ -98,14 +97,13 @@ export default function PopularServices() {
                     </li>
                 </ul>
             </div>
-            <Link href="/services/PDLWash">
-                <p className="popular-readmore">Learn More</p>
-            </Link>
+
+            <a href="/services/PDLWash" className="popular-readmore">Learn More</a>
         </div>
 
         <div className="popular-services-card">
             <div className="popular-services-header">
-                <Link href="single-paint-correction" className="service-heading-link"><h2 className="popular-service-title">Single Stage Paint Correction</h2></Link>
+                <a href='/services/SinglePC' className="service-heading-link popular-service-title">Single Stage Paint Correction</a>
                 <p className="price">Starting at: <span>$300</span></p>
             </div>
             <div className="popular-img">
@@ -144,9 +142,8 @@ export default function PopularServices() {
                     </li>
                 </ul>
             </div>
-            <Link href="/services/SinglePC">
-                <p className="popular-readmore">Learn More</p>
-            </Link>
+            
+            <a href="/services/SinglePC" className="popular-readmore">Learn More</a>
         </div>
     </section>
   )

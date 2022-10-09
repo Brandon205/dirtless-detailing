@@ -388,10 +388,6 @@ header h1 {
   font-weight: 600;
 }
 
-.popular-services-card a {
-  margin-bottom: 1em;
-}
-
 .popular-services-header {
   position: absolute;
   width: 100%;
@@ -400,24 +396,6 @@ header h1 {
   z-index: 5;
 }
 
-.popular-service-title {
-  color: white;
-}
-
-.popular-service-title:hover {
-  color: lightgray;
-}
-
-/* .service-card h2 {
-  margin: 0.25rem auto 0 auto; 
-  letter-spacing: 2; 
-  font-weight: 600;
-  color: black;
-}
-
-.service-card h2:hover {
-  color: gray;
-} */
 
 .service-heading-link {
   display: block;
@@ -429,7 +407,15 @@ header h1 {
 }
 
 .service-heading-link:hover {
-  color: whitesmoke;
+  color: gray;
+}
+
+.popular-service-title {
+  color: white;
+}
+
+.popular-service-title:hover {
+  color: lightgray;
 }
 
 .popular-desc {
