@@ -1,7 +1,7 @@
 import React from 'react'
-import Link from 'next/link';
+import Image from 'next/image';
 
-import cover from '../../assets/imgs/addonsCover.webp';
+import cover from '../../public/imgs/addonsCover.webp';
 
 const waterSpotSteps = [
     ["Waterspot/Overspray Removal", "Remove all overspray and waterspots we can."]
@@ -42,7 +42,10 @@ export default function Addons() {
 
   return (
     <section className='service-content-container'>
-      <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}></div>
+      {/* <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}></div> */}
+      <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
+        <Image src={cover} alt="addons cover photo" layout="fill" objectFit='cover' />
+      </div>
       <h1 className='servicepage-header'>Addons</h1>
 
       <div className='separator-container'>
@@ -59,7 +62,8 @@ export default function Addons() {
             </ol>
           </div>
         </div>
-        <Link href="/#contact" className="quote-btn top-quote-btn service-page-quote-btn">Get Started</Link>
+        {/* <Link href="/#contact" className="quote-btn top-quote-btn service-page-quote-btn">Get Started</Link> */}
+        <a href="/#contact" className='quote-btn top-quote-btn service-page-quote-btn'>Get Started!</a>
 
         <div>
           <h2>Our Pricing</h2>
