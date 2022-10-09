@@ -1,8 +1,7 @@
-import React from 'react';
-import Link from 'next/link';
-import { scrollWithOffset } from '../helpers/ScrollToTop';
+import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
-import cover from '../../assets/imgs/1PCCover.webp';
+import cover from '../../public/imgs/1PCCover.webp';
 
 const steps = [
   ["Wash Vehicle", "Thorough strip wash top to bottom using 2 bucket method or equivalent, including gas door."],
@@ -20,6 +19,12 @@ const steps = [
 ]
 
 export default function SinglePC() {
+  const [href, setHref] = useState('');
+
+  useEffect(() => {
+    setHref(window.location.href)
+  }, []);
+
   const content = steps.map((item, id) => {
     return (
       <li key={id} className="item">
@@ -36,7 +41,9 @@ export default function SinglePC() {
 
   return (
     <section className='service-content-container'>
-      <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}></div>
+      <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
+        <Image src={cover} alt="Single Stage Paint Correction cover" layout="fill" objectFit='cover' />
+      </div>
       <h1 className='servicepage-header'>Single Stage Paint Correction</h1>
 
       <div className='main-content-container'>
@@ -48,25 +55,25 @@ export default function SinglePC() {
             </ol>
           </div>
 
-          <Link href="/#contact" className="quote-btn service-page-quote-btn" scroll={el => scrollWithOffset(el)}>Get Started</Link>
+          <a href="/#contact" className="quote-btn service-page-quote-btn">Get Started</a>
 
           <div>
             <div className='aside-container'>
               <div className='service-aside'>
                 <h3>Other Correction Services</h3>
                 <div className="aside-links">
-                  <Link href="/single-paint-correction" style={{color: window.location.href.endsWith('single-paint-correction') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('single-paint-correction') ? '> ' : ''} Single Stage Paint Correction</Link><br />
-                  <Link href="/two-paint-correction" style={{color: window.location.href.endsWith('two-paint-correction') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('two-paint-correction') ? '> ' : ''} Two Stage Paint Correction</Link><br />
+                  <a href="/services/SinglePC" style={{color: href.endsWith('SinglePC') ? 'blue' : 'black'}} className="service-link">{href.endsWith('SinglePC') ? '> ' : ''} Single Stage Paint Correction</a>
+                  <a href="/services/TwoPC" style={{color: href.endsWith('TwoPC') ? 'blue' : 'black'}} className="service-link">{href.endsWith('TwoPC') ? '> ' : ''} Two Stage Paint Correction</a>
                 </div>
               </div>
             </div>
 
             <div className='aside-container'>
               <div className='service-aside'>
-                <h3><Link href="/addons" style={{color: 'black'}}>Extra Addons</Link></h3>
+                <h3><a href="/services/Addons" style={{color: 'black'}}>Extra Addons</a></h3>
                 <div className="aside-links">
                   <div className="addon-container">
-                    <p className='addon-title'><Link href="/addons/#glass" style={{color: 'blue'}} scroll={el => scrollWithOffset(el)}>Glass Polishing</Link> - <span className="bold">$70</span>/hour</p>
+                    <p className='addon-title'><a href="/services/Addons/#glass" style={{color: 'blue'}} scroll={el => scrollWithOffset(el)}>Glass Polishing</a> - <span className="bold">$70</span>/hour</p>
                     <p className="subtext">Gives you crystal clear windows</p>
                   </div>
                 </div>
