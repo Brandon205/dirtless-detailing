@@ -35,7 +35,6 @@ export default function MyApp({ Component, pageProps }) {
 
     return (
         <div className="App">
-            {/* <ScrollToTop /> */}
             <header className="App-header">
                 <nav id="nav">
                     <a href="/"><Image src={ddLogo} style={{marginLeft: 16}} width='132' height="80" className="logo" alt="logo" /></a>

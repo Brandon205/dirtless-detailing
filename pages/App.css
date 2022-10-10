@@ -19,10 +19,6 @@
   --heading-clr2: rgb(185, 185, 185);
 }
 
-#nav {
-  z-index: 9999 !important;
-}
-
 *,
 *::before,
 *::after {
@@ -45,6 +41,7 @@ body {
 
 .App-header {
   position: sticky;
+  z-index: 999;
   top: 0;
 }
 
@@ -139,6 +136,7 @@ body {
 
 /** Navigation CSS **/
 nav {
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -396,7 +394,6 @@ header h1 {
   z-index: 5;
 }
 
-
 .service-heading-link {
   display: block;
   margin: 0.25rem auto 0 auto; 
@@ -575,10 +572,6 @@ header h1 {
 .popular-readmore:hover {
   background-color: var(--main-clr-hover);
 }
-
-/* .popular-readmore p {
-  margin: 0;
-} */
 
 /** Home Page Review CSS **/
 .reviews-container {
