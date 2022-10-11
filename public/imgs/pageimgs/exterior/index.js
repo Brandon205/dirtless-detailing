@@ -41,15 +41,10 @@ let images = [
     motorhome
 ]
 
-console.log(images)
-
 let imagery = images.map((pic, id) => {
-    let width;
-    let height;
-    if (images[id].width)
     return (
         <Zoom key={id}>
-            <Image className="gallery-image" alt={'dirt-less wash example ' + id} layout="intrinsic" src={images[id]} width={width} height={height} />
+            <Image className="gallery-image" alt={'dirt-less wash example ' + id} layout="intrinsic" src={images[id]} width={images[id].width} height={images[id].height} />
         </Zoom>
     )
 })
