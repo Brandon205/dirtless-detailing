@@ -1,8 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import { imagery } from '../../public/imgs/pageimgs/exterior/index';
-// import { Gallery, Item } from 'react-photoswipe-gallery';
-// import 'photoswipe/dist/photoswipe.css';
 
 import cover from '../../public/imgs/dlWashGallery.webp';
 
@@ -11,7 +9,7 @@ export default function PaintCorrectionGallery() {
   return (
     <section className='content-container'>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
-        <Image src={cover} alt="dirt-less wash cover photo" layout="fill" objectFit='cover' />
+        <Image src={cover} alt="dirt-less wash cover" layout="fill" objectFit='cover' />
       </div>
       <header>
         <h1 className='servicepage-heading'>Dirt-Less Wash Gallery</h1>
@@ -22,12 +20,6 @@ export default function PaintCorrectionGallery() {
       <div className='gallery-container'>
         { imagery }
       </div>
-
-      {/* <Gallery>
-        <div className="gallery-container">
-          {imagery}
-        </div>
-      </Gallery> */}
     </section>
   )
 }

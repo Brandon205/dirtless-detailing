@@ -1,9 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import { Gallery, Item } from 'react-photoswipe-gallery';
-import 'photoswipe/dist/photoswipe.css';
 
-import cover from '../../assets/imgs/engineGallery.webp';
+import cover from '../../public/imgs/engineGallery.webp';
 
 function importAll(r) {
   let images = {};
@@ -29,7 +27,9 @@ export default function PaintCorrectionGallery() {
 
   return (
     <section className='content-container'>
-      <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}></div>
+      <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
+        <Image src={cover} alt="engine cleaning cover" layout="fill" objectFit='cover' />
+      </div> 
       <header>
         <h1 className='servicepage-heading'>Engine Cleaning Gallery</h1>
         <p>This is a gallery to show what we can do to clean your engine bay. Take a look at our <Link href="/engine" className='gallery-link' >Engine Cleaning</Link> page for more info.</p>
