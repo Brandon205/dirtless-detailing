@@ -8,7 +8,7 @@ export default function PaintCorrectionGallery() {
   return (
     <section className='content-container'>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
-        <Image src={cover} alt="paint correction cover" layout="fill" objectFit='cover' />
+        <Image src={cover} alt="paint correction cover" layout="fill" objectFit='cover' priority={true} />
       </div>
       <header>
         <h1 className='servicepage-heading'>Paint Correction Gallery</h1>
