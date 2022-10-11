@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Zoom from 'react-medium-image-zoom';
-import 'react-medium-image-zoom/dist/styles.css'
+import 'react-medium-image-zoom/dist/styles.css';
 
 import redToyota from './1080x720a.webp';
 import rearCupholders from './1080x1221a.webp';
@@ -45,4 +45,4 @@ let imagery = images.map((pic, id) => {
     )
 })
 
-export { imagery }
+export { imagery };

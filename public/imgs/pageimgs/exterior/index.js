@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Zoom from 'react-medium-image-zoom';
-import 'react-medium-image-zoom/dist/styles.css'
+import 'react-medium-image-zoom/dist/styles.css';
 
 import trunkLining from './908x1220a.webp';
 import whiteF150 from './1080x720a.webp';
@@ -49,4 +49,4 @@ let imagery = images.map((pic, id) => {
     )
 })
 
-export { imagery }
+export { imagery };

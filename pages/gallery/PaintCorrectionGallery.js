@@ -1,45 +1,23 @@
 import React from 'react';
-import Link from 'next/link';
-import { Gallery, Item } from 'react-photoswipe-gallery';
-import 'photoswipe/dist/photoswipe.css';
+import Image from 'next/image';
+import { imagery } from '../../public/imgs/pageimgs/paintCorrection/index';
 
-import cover from '../../assets/imgs/correctionGallery.webp';
-
-function importAll(r) {
-  let images = {};
-  r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
-  return images;
-}
-
-let images = importAll(require.context('../../assets/imgs/pageimgs/paintCorrection', false, /\.(webp|jpe?g|svg)$/));
-images = Object.values(images)
+import cover from '../../public/imgs/correctionGallery.webp';
 
 export default function PaintCorrectionGallery() {
-
-  let imagery = images.map((pic, id) => {
-    let width = pic.match(/[0-9]+/gm)
-    let height = pic.match(/(x)(\d+)/)
-
-    return <Item key={id} original={images[id]} thumbnail={images[id]} width={width[0]} height={height[2]}>
-        {({ ref, open }) => (
-        <img className="gallery-image" alt={'paint correction example ' + id} ref={ref} onClick={open} src={images[id]} />
-      )}
-    </Item>
-  })
-
   return (
     <section className='content-container'>
-      <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}></div>
+      <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
+        <Image src={cover} alt="paint correction cover" layout="fill" objectFit='cover' />
+      </div>
       <header>
         <h1 className='servicepage-heading'>Paint Correction Gallery</h1>
-        <p>This is a gallery to show what we can do to correct your paint problems. Take a look at our <Link href="/single-paint-correction" className='gallery-link' >Single Stage Paint Correction</Link> page or our <Link href="/two-paint-correction" className='gallery-link' >Two Stage Paint Correction</Link> services.</p>
+        <p>This is a gallery to show what we can do to correct your paint problems. Take a look at our <a href="/single-paint-correction" className='gallery-link' >Single Stage Paint Correction</a> page or our <a href="/two-paint-correction" className='gallery-link' >Two Stage Paint Correction</a> services.</p>
       </header>
 
-      <Gallery>
-        <div className="gallery-container">
-          {imagery}
-        </div>
-      </Gallery>
+      <div className='gallery-container'>
+        { imagery }
+      </div>
     </section>
   )
 }
