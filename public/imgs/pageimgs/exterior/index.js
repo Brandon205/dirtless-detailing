@@ -1,6 +1,7 @@
 import React from 'react';
-// import { Item } from 'react-photoswipe-gallery';
 import Image from 'next/image';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css'
 
 import trunkLining from './908x1220a.webp';
 import whiteF150 from './1080x720a.webp';
@@ -43,14 +44,14 @@ let images = [
 console.log(images)
 
 let imagery = images.map((pic, id) => {
-    let dimensions = pic.src.match(/[0-9]+/gm)
-    console.log(dimensions)
+    let width;
+    let height;
+    if (images[id].width)
+    return (
+        <Zoom key={id}>
+            <Image className="gallery-image" alt={'dirt-less wash example ' + id} layout="intrinsic" src={images[id]} width={width} height={height} />
+        </Zoom>
+    )
+})
 
-    return <Item key={id} original={images.src} thumbnail={images.src}>
-        {({ ref, open }) => (
-            <Image className="gallery-image" alt={'dirt-less wash example ' + id} layout="fixed" ref={ref} onClick={open} src={images[id]} width={dimensions[0]} height={dimensions[1]} />
-        )}
-        </Item>
-    })
-
-export { images, imagery }
+export { imagery }

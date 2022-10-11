@@ -892,12 +892,14 @@ hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 80vw;
+  margin: 0 auto
 }
 
 .gallery-image {
   cursor: pointer;
   box-shadow: 0 5px 5px 3px gray;
-  max-height: 450px;
+  max-width: 80vw;
   margin: 5px;
 }
 
@@ -1060,8 +1062,8 @@ hr {
     width: 60vw;
   }
 
-  .content-container {
-    margin-top: 10vh
+  .gallery-container {
+    max-width: 60vw;
   }
 
   .main-content-container {
@@ -1092,12 +1094,20 @@ hr {
     width: 450px
   }
 
+  .gallery-container {
+    max-width: 45vw;
+  }
+
 }
 
 @media screen and (min-width: 2000px) {
 
   .contact-container {
     margin: 23rem auto 5rem auto
+  }
+
+  .gallery-container {
+    max-width: 35vw;
   }
   
 }

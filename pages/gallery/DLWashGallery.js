@@ -19,6 +19,9 @@ export default function PaintCorrectionGallery() {
           vehicle is in need of a little extra love you can check out our <a href="/services/PDLWash" className='gallery-link'>Premium Dirt-Less Wash</a>.
         </p>
       </header>
+      <div className='gallery-container'>
+        { imagery }
+      </div>
 
       {/* <Gallery>
         <div className="gallery-container">
