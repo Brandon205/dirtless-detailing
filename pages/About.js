@@ -1,11 +1,14 @@
 import React from 'react';
+import Image from 'next/image';
 
-import cover from '../../assets/imgs/worktruck.webp';
+import cover from '../public/imgs/worktruck.webp';
 
 export default function About() {
   return (
     <div className='App'>
-      <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}></div>
+      <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
+        <Image src={cover} alt="worktruck cover" layout="fill" objectFit='cover' priority />
+      </div>
       <div className='about-header'>
         <h1>About Us/FAQ</h1>
         <h3>Learn more about us, and get answers to some of the most commonly asked questions.</h3>
