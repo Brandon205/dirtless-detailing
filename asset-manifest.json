@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dirtless-detailing/static/css/main.1e66bbd6.css",
-    "main.js": "/dirtless-detailing/static/js/main.d3e3e487.js",
+    "main.css": "/dirtless-detailing/static/css/main.985476ea.css",
+    "main.js": "/dirtless-detailing/static/js/main.b07e212e.js",
     "static/js/787.014c8e76.chunk.js": "/dirtless-detailing/static/js/787.014c8e76.chunk.js",
     "static/media/stage1.webp": "/dirtless-detailing/static/media/stage1.ff6a2a29d366ac5ad35b.webp",
     "static/media/3456x4608c.webp": "/dirtless-detailing/static/media/3456x4608c.419a6d021a7051f036ed.webp",
@@ -57,12 +57,12 @@
     "static/media/PNG1.png": "/dirtless-detailing/static/media/PNG1.4e6a140cd424bc4ae3b9.png",
     "static/media/headlinersCover.webp": "/dirtless-detailing/static/media/headlinersCover.e984a48f342bdc1d28c8.webp",
     "index.html": "/dirtless-detailing/index.html",
-    "main.1e66bbd6.css.map": "/dirtless-detailing/static/css/main.1e66bbd6.css.map",
-    "main.d3e3e487.js.map": "/dirtless-detailing/static/js/main.d3e3e487.js.map",
+    "main.985476ea.css.map": "/dirtless-detailing/static/css/main.985476ea.css.map",
+    "main.b07e212e.js.map": "/dirtless-detailing/static/js/main.b07e212e.js.map",
     "787.014c8e76.chunk.js.map": "/dirtless-detailing/static/js/787.014c8e76.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e66bbd6.css",
-    "static/js/main.d3e3e487.js"
+    "static/css/main.985476ea.css",
+    "static/js/main.b07e212e.js"
   ]
 }
