@@ -2,16 +2,9 @@ import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
 
-    // <meta charset="utf-8" />
-    // <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    // <meta name="viewport" content="width=device-width, initial-scale=1" />
-    // <meta name="theme-color" content="#000000" />
-    // <meta name="description" content="Dirt-Less Detailing Official Site" />
-    // <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    // <title>Dirt-Less Detailing</title>
-
-    // <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-
+  // <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  // <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  
   return (
     <Html>
       <Head>

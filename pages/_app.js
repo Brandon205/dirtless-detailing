@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Head from 'next/head';
 import Image from 'next/image';
 
 import { FaBars, FaFacebook, FaPhoneAlt, FaCarSide, FaPhotoVideo } from 'react-icons/fa';
@@ -35,6 +36,13 @@ export default function MyApp({ Component, pageProps }) {
 
     return (
         <div className="App">
+            <Head>
+                <meta charSet="utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta name="theme-color" content="#000000" />
+                <meta name="description" content="Dirt-Less Detailing Official Site" />
+                <title>Dirt-Less Detailing</title>
+            </Head>
             <header className="App-header">
                 <nav id="nav">
                     <a href="/"><Image src={ddLogo} width='132' height="80" className="logo" alt="logo" /></a>
