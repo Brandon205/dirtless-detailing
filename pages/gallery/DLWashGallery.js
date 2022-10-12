@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { imagery } from '../../public/imgs/pageimgs/exterior/index';
 
-import cover from '../../public/imgs/dlWashGallery.webp';
+import cover from '../../public/imgs/dlwashA.webp';
 
 export default function PaintCorrectionGallery() {
 

@@ -982,7 +982,7 @@ hr {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-evenly;
-    margin: 35vh auto;
+    margin-top: 35vh;
   }
 
   .contact-container-left {
