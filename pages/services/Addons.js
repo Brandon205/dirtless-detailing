@@ -42,9 +42,8 @@ export default function Addons() {
 
   return (
     <section className='service-content-container'>
-      {/* <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}></div> */}
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
-        <Image src={cover} alt="addons cover photo" layout="fill" objectFit='cover' />
+        <Image src={cover} alt="addons cover photo" layout="fill" objectFit='cover' priority />
       </div>
       <h1 className='servicepage-header'>Addons</h1>
 
@@ -62,7 +61,6 @@ export default function Addons() {
             </ol>
           </div>
         </div>
-        {/* <Link href="/#contact" className="quote-btn top-quote-btn service-page-quote-btn">Get Started</Link> */}
         <a href="/#contact" className='quote-btn top-quote-btn service-page-quote-btn'>Get Started!</a>
 
         <div>

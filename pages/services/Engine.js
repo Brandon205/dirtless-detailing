@@ -21,7 +21,8 @@ export default function Engine() {
     return (
       <li key={id} className="item">
         <div className="step-number-container">
-          <h3 className='step-number'>{id + 1}</h3><div className="vertical-rule"></div>        </div>
+          <h3 className='step-number'>{id + 1}</h3><div className="vertical-rule"></div>        
+        </div>
         <div className="step-container">
           <h4 className="step-title">{item[0]}</h4>
           <p className='step-desc'>{item[1]}</p>
@@ -32,7 +33,7 @@ export default function Engine() {
   return (
     <section className='service-content-container'>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
-        <Image src={cover} alt="Engine cleaning cover" layout="fill" objectFit='cover' />
+        <Image src={cover} alt="Engine cleaning cover" layout="fill" objectFit='cover' priority />
       </div>
       <h1 className='servicepage-header'>Engine Bay Cleaning</h1>
 
@@ -51,9 +52,6 @@ export default function Engine() {
             <div className='service-aside'>
               <h3>Other Exterior Services</h3>
               <div className="aside-links">
-                {/* <Link href="/dl-wash" style={{color: window.location.href.endsWith('dl-wash') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('dl-wash') ? '> ' : ''} Dirt-Less Wash</Link><br />
-                <Link href="/premium-dl-wash" style={{color: window.location.href.endsWith('premium-dl-wash') ? 'blue' : 'black'}} className='service-link'>{window.location.href.endsWith('premium-dl-wash') ? '> ' : ''} Premium Dirt-Less Wash</Link><br />
-                <Link href="/engine" style={{color: window.location.href.endsWith('engine') ? 'blue' : 'black'}} className={'service-link'}>{window.location.href.endsWith('engine') ? '> ' : ''} Engine Bay</Link> */}
                 <a href="/services/DLWash" style={{color: href.endsWith('DLWash') ? 'blue' : 'black'}} className="service-link">{href.endsWith('DLWash') ? '> ' : ''} Dirt-Less Wash</a>
                 <a href="/services/PDLWash" style={{color: href.endsWith('PDLWash') ? 'blue' : 'black'}} className="service-link">{href.endsWith('PDLWash') ? '> ' : ''} Premium Dirt-Less Wash</a>
                 <a href="/services/Engine" style={{color: href.endsWith('Engine') ? 'blue' : 'black'}} className="service-link">{href.endsWith('Engine') ? '> ' : ''} Engine Bay Cleaning</a>

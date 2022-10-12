@@ -42,7 +42,7 @@ export default function SinglePC() {
   return (
     <section className='service-content-container'>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
-        <Image src={cover} alt="Single Stage Paint Correction cover" layout="fill" objectFit='cover' />
+        <Image src={cover} alt="Single Stage Paint Correction cover" layout="fill" objectFit='cover' priority />
       </div>
       <h1 className='servicepage-header'>Single Stage Paint Correction</h1>
 
