@@ -37,7 +37,7 @@ export default function MyApp({ Component, pageProps }) {
         <div className="App">
             <header className="App-header">
                 <nav id="nav">
-                    <a href="/"><Image src={ddLogo} style={{marginLeft: 16}} width='132' height="80" className="logo" alt="logo" /></a>
+                    <a href="/"><Image src={ddLogo} width='132' height="80" className="logo" alt="logo" /></a>
                     <FaBars className="menu-bars" onClick={() => setNav(nav === 'block' ? 'none' : 'block')} />
                     <div style={{display: nav}} className="menu-container">
                         <ul className='main-ul'>
