@@ -1,5 +1,4 @@
 import { Carousel } from 'react-responsive-carousel';
-import Link from 'next/link';
 import Image from 'next/image';
 
 import Contact from '../utils/Contact';
@@ -14,7 +13,7 @@ export default function Home() {
     return (
         <div className="App">
             <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
-                <Image src={cover} layout="fill" objectFit='cover' />
+                <Image src={cover} layout="fill" objectFit='cover' priority />
             </div>
             <header className="home-header">
                 <div className='contact-left-container'>
@@ -23,14 +22,12 @@ export default function Home() {
                     <h4 className='dd-desc'>Plenty of 5-star reviews from the customers we've served. </h4>
                     <h4 className='dd-desc'>We will do Interiors, Exteriors, Paint Correction, and much more!</h4>
                     <h4 className='dd-desc'>For your convenience we can come to you, or you can bring your car to us!</h4>
-                    <Link href="/#popular-services">
-                        <a className="learn-btn top-learn-btn">Learn More</a>
-                    </Link>
-                    <Link href="/#contact">
-                        <a className="quote-btn top-quote-btn">Get a Quote</a>
-                    </Link>
+
+                    <a href="/#popular-services" className="learn-btn top-learn-btn">Learn More</a>
+                    <a href="/#contact" className="quote-btn top-quote-btn">Get a Quote</a>
                 </div>
             </header>
+
             <Contact />
 
             <div id="popular-services" className='separator-container'>
@@ -39,9 +36,7 @@ export default function Home() {
             
             <PopularServices />
 
-            <Link href="/#contact">
-                <a className="quote-btn main-quote-btn">Get a Quote</a>
-            </Link>
+            <a href="/#contact" className="quote-btn main-quote-btn">Get a Quote</a>
 
             <div className='separator-container'>
                 <h2 className='service-title'>COMBO DEALS</h2>
