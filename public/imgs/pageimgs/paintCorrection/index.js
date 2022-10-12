@@ -30,7 +30,7 @@ let images = [
 let imagery = images.map((pic, id) => {
     return (
         <Zoom key={id}>
-            <Image className="gallery-image" alt={'paint correction example ' + id} layout="intrinsic" src={images[id]} width={images[id].width} height={images[id].height} />
+            <Image className="gallery-image" alt={'paint correction example ' + id} layout="intrinsic" src={images[id]} width={images[id].width} height={images[id].height} loading="lazy" placeholder='blur' />
         </Zoom>
     )
 })
