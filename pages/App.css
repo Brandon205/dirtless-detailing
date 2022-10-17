@@ -358,7 +358,8 @@ header h1 {
 }
 
 .footer-contact-link {
-  margin: 8px 0 5px 5px; 
+  display: inline-block;
+  margin: 8px 0 0 5px; 
 }
 
 .location-link {
@@ -614,6 +615,10 @@ hr {
 
 .footer-content-card {
   margin-left: 1rem;
+}
+
+.footer-content-card a {
+  margin-bottom: 1rem;
 }
 
 .socials-container {
