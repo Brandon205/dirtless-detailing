@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 
-import { FaBars, FaFacebook, FaPhoneAlt, FaCarSide, FaPhotoVideo } from 'react-icons/fa';
+import { FaBars, FaFacebook, FaInstagram, FaPhoneAlt, FaCarSide, FaPhotoVideo } from 'react-icons/fa';
 import { GoLocation } from "react-icons/go";
 import { GiSteeringWheel } from 'react-icons/gi';
 import { RiCarWashingFill } from 'react-icons/ri';
@@ -156,7 +156,10 @@ export default function MyApp({ Component, pageProps }) {
                 <hr />
                 <div className='socials-container'>
                     <h4>Copyright Dirt-Less Detailing 2022</h4>
-                    <a href="https://www.facebook.com/DirtLessDetailing/" className="socials" target="_blank" rel="noreferrer"><FaFacebook /></a>
+                    <div>
+                        <a href="https://www.facebook.com/DirtLessDetailing/" className="socials" target="_blank" rel="noreferrer"><FaFacebook /></a>
+                        <a href="https://www.instagram.com/dirtlessdetailing/" className="socials" target="_blank" rel="noreferrer"><FaInstagram /></a>
+                    </div>
                 </div>
             </footer>
         </div>

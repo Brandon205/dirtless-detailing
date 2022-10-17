@@ -618,6 +618,7 @@ hr {
 
 .socials-container {
   width: 100%;
+  text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -627,6 +628,10 @@ hr {
 .socials {
   font-size: 2em;
   color: white;
+}
+
+.socials-container div a {
+  margin-right: 20px
 }
 
 .footer-link {
