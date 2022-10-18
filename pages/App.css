@@ -96,19 +96,20 @@ body {
 
 .nav-quote-btn {
   display: inline-block;
-  padding: 0 0.15rem;
+  padding: 0 0.25rem;
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0);
-  outline: 2px solid var(--main-clr);
-  color: black;
+  font-size: 0.9rem;
+  border: 2px solid var(--main-clr);
+  background-color: var(--main-clr);
+  color: white;
   border-radius: 0.5rem;
   transition: 0.5s;
   margin-top: 5px;
 }
 
 .nav-quote-btn:hover {
-  background-color: var(--main-clr);
-  color: white;
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
 }
 
 .quote-btn {
@@ -988,6 +989,7 @@ hr {
   .nav-div {
     padding: 2rem;
   }
+
   .nav-quote-btn {
     margin-top: 0;
   }
