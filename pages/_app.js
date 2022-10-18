@@ -117,11 +117,11 @@ export default function MyApp({ Component, pageProps }) {
                             </li>
 
                             <li className='menu-li'>
-                                <a href="/About" className="menu-link">About Us</a>
+                                <a href="/About" className="menu-link" onClick={() => setNav('none')}>About Us</a>
                             </li>
 
                             <li className="menu-li">
-                                <a href="/#contact" className="nav-quote-btn">Get Started</a>
+                                <a href="/#contact" className="nav-quote-btn" onClick={() => setNav('none')}>Get Started</a>
                             </li>
                         </ul>
                     </div>
@@ -152,10 +152,8 @@ export default function MyApp({ Component, pageProps }) {
                 </div>
                 <div className="footer-content-card" id="contact">
                     <h3>CONTACT US</h3>
-                    <GoLocation />
-                    <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link footer-contact-link" target="_blank" rel="noreferrer">9305 205th Ave E Bonney Lake Washington</a><br />
-                    <FaPhoneAlt />
-                    <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noreferrer">(253) 252-9758</a>
+                    <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link footer-contact-link" target="_blank" rel="noreferrer"><GoLocation /> 9305 205th Ave E Bonney Lake Washington</a><br />
+                    <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noreferrer"><FaPhoneAlt /> (253) 252-9758</a>
                 </div>
                 <hr />
                 <div className='socials-container'>
