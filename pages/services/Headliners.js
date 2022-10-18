@@ -44,8 +44,6 @@ export default function Headliners() {
             </ol>
           </div>
 
-          <a href="/#contact" className="quote-btn service-page-quote-btn">Get Started</a>
-
           <div className='aside-container'>
             <div className='service-aside'>
               <h3>Our Other Interior Services</h3>

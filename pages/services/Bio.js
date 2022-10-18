@@ -47,8 +47,6 @@ export default function Bio() {
             </ol>
           </div>
           
-          <a href="/#contact" className="quote-btn service-page-quote-btn">Get Started</a>
-
           <div className='aside-container'>
             <div className='service-aside'>
               <h3>Other Interior Services</h3>

@@ -10,7 +10,7 @@ const steps = [
   ["Clean Plastics and Leathers", "Clean, steam, and degrease all plastics and leather seats"],
   ["Dress Interior", "Dress all vinyl and leather (if wanted)"],
   ["Door Jambs", "Clean all of the door jambs"],
-  ["Window Cleaning", "Clean windows"],
+  ["Window Cleaning", "Clean windows"]
 ]
 
 export default function FullIntEx() {
@@ -51,8 +51,6 @@ export default function FullIntEx() {
             <h4 style={{marginTop: 0}}>*Headliners not included</h4>
             <h4><span className='special-package'>*</span>Extraction Package Only</h4>
           </div>
-
-          <a href="/#contact" className="quote-btn service-page-quote-btn">Get Started</a>
 
           <div className='aside-container'>
             <div className='service-aside'>

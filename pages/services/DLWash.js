@@ -8,7 +8,7 @@ const steps = [
   ["Wheel Cleaning", "Clean wheels, wheel wells, wheel barrels."],
   ["Dry Vehicle", "Dry the whole vehicle with clean towels and air blowers."],
   ["Wax", "Apply Spray Wax."],
-  ["Dress Vehicle", "Dress tires, wheel wells, plastics."],
+  ["Dress Vehicle", "Dress tires, wheel wells, plastics."]
 ]
 
 export default function DLWash() {
@@ -47,8 +47,6 @@ export default function DLWash() {
               {content}
             </ol>
           </div>
-
-          <a href="/#contact" className="quote-btn service-page-quote-btn">Get Started</a>
 
           <div>
             <div className='aside-container'>

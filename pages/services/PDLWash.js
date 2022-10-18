@@ -51,8 +51,6 @@ export default function PDLWash() {
             </ol>
           </div>
 
-          <a href="/#contact" className="quote-btn service-page-quote-btn">Get Started</a>
-
           <div>
             <div className='aside-container'>
               <div className='service-aside'>

@@ -119,6 +119,10 @@ export default function MyApp({ Component, pageProps }) {
                             <li className='menu-li'>
                                 <a href="/About" className="menu-link">About Us</a>
                             </li>
+
+                            <li className="menu-li">
+                                <a href="/#contact" className="nav-quote-btn">Get Started</a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
