@@ -785,14 +785,21 @@ hr {
 }
 
 .service-aside {
+  display: none;
+}
+
+.examples-container {
   display: flex;
   flex-direction: column;
-  background-color: var(--contact-bkg-clr-light);
-  border-radius: 0.5rem;
-  margin: 10px auto;
-  width: 275px;
-  color: black;
-  padding: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+}
+
+.example-img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 1rem
 }
 
 .combo-container {
@@ -967,6 +974,10 @@ hr {
     width: 90vw;
     margin: 0 auto;
   }
+  
+  .example-img {
+    width: 275px;
+  }
 
   .pricing-container {
     flex-direction: row;
@@ -1040,6 +1051,17 @@ hr {
     margin: 0 auto 1rem auto;
   }
 
+  .service-aside {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--contact-bkg-clr-light);
+    border-radius: 0.5rem;
+    margin: 10px auto;
+    width: 275px;
+    color: black;
+    padding: 1rem;
+  }
+
   .combo-container {
     width: 55vw;
   }
@@ -1105,6 +1127,12 @@ hr {
     justify-content: space-evenly;
     width: 95vw;
     margin: 0 auto;
+  }
+
+  .examples-container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .service-checklist {

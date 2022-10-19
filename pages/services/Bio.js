@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import Zoom from 'react-medium-image-zoom';
 import Image from 'next/image';
+import 'react-medium-image-zoom/dist/styles.css';
 
 import cover from '../../public/imgs/BioCover.webp';
+import seats from '../../public/imgs/pageimgs/bio/SeatsBA.webp';
+import seatbelts from '../../public/imgs/pageimgs/bio/SeatbeltBA.webp';
+import mesh from '../../public/imgs/pageimgs/bio/MeshBA.webp';
 
 const steps = [
   ["Determine Products", "We will first determine what products will need to be used to best suit the situation."],
@@ -56,6 +61,24 @@ export default function Bio() {
                 <a href="/services/Headliners" style={{color: href.endsWith('Headliners') ? 'blue' : 'black'}} className="service-link">{href.endsWith('Headliners') ? '> ' : ''} Headliners</a>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div className="examples-container">
+          <div className="example-img">
+            <Zoom>
+              <Image style={{borderRadius: 16}} src={seats} alt="seat mold before and after" layout="responsive" objectFit='scale-down' />
+            </Zoom>
+          </div>
+          <div className="example-img">
+            <Zoom>
+              <Image style={{borderRadius: 16}} src={seatbelts} alt="seatbelt mold before and after" layout="responsive" objectFit='scale-down' />
+            </Zoom>
+          </div>
+          <div className="example-img">
+            <Zoom>
+              <Image style={{borderRadius: 16}} src={mesh} alt="mesh net mold before and after" layout="responsive" objectFit="scale-down" />
+            </Zoom>
           </div>
         </div>
 
