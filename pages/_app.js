@@ -92,24 +92,24 @@ export default function MyApp({ Component, pageProps }) {
                             </div>
 
                             <div style={{position: 'relative'}}>
-                            <li className='menu-li' onMouseEnter={() => changeNav('gallery')} onMouseLeave={() => changeNav('none')} onClick={() => changeNav('gallery')}>Gallery</li>
-                            <ul className="sub-ul" onMouseEnter={() => changeNav('gallery')} onMouseLeave={() => changeNav('none')} style={{display: gallery}}>
-                                <div className="nav-div">
-                                    <h4 className="sub-menu-header"><FaPhotoVideo /> GALLERIES</h4>
-                                    <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                        <a href="/gallery/FullIntGallery" className='menu-link'>Full Interior Gallery</a>
-                                    </li>
-                                    <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                        <a href="/gallery/PaintCorrectionGallery" className='menu-link'>Paint Correction Gallery</a>
-                                    </li>
-                                    <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                        <a href="/gallery/DLWashGallery" className='menu-link'>Dirt-Less Wash Gallery</a>
-                                    </li>
-                                    <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                        <a href="/gallery/EngineGallery" className='menu-link'>Engine Bay Gallery</a>
-                                    </li>
-                                </div>
-                            </ul>
+                                <li className='menu-li' onMouseEnter={() => changeNav('gallery')} onMouseLeave={() => changeNav('none')} onClick={() => changeNav('gallery')}>Gallery</li>
+                                <ul className="sub-ul" onMouseEnter={() => changeNav('gallery')} onMouseLeave={() => changeNav('none')} style={{display: gallery}}>
+                                    <div className="nav-div">
+                                        <h4 className="sub-menu-header"><FaPhotoVideo /> GALLERIES</h4>
+                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                            <a href="/gallery/FullIntGallery" className='menu-link'>Full Interior Gallery</a>
+                                        </li>
+                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                            <a href="/gallery/DLWashGallery" className='menu-link'>Dirt-Less Wash Gallery</a>
+                                        </li>
+                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                            <a href="/gallery/PaintCorrectionGallery" className='menu-link'>Paint Correction Gallery</a>
+                                        </li>
+                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                            <a href="/gallery/EngineGallery" className='menu-link'>Engine Bay Gallery</a>
+                                        </li>
+                                    </div>
+                                </ul>
                             </div>
 
                             <li className='menu-li'>

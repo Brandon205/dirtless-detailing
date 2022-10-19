@@ -20,6 +20,8 @@ import beigeFord from './3456x4608g.webp';
 import denaliFront from './3456x4608i.webp';
 import f250 from './4608x3456a.webp';
 import motorhome from './4608x3456b.webp';
+import chrystlerRim from './chrystlerRim.webp';
+import chrystlerExterior from './chrystlerExterior.webp';
 
 let images = [
     trunkLining,
@@ -38,6 +40,8 @@ let images = [
     beigeFord,
     denaliFront,
     f250,
+    chrystlerRim,
+    chrystlerExterior,
     motorhome
 ]
 

@@ -9,6 +9,7 @@ import engine3 from './3456x4608c.webp';
 import engine4 from './3456x4608d.webp';
 import toyotaBay from './3456x4608e.webp';
 import mazdaBay from './3456x4608f.webp';
+import vanBay from './4032x3024a.webp';
 
 let images = [
     chevyEngine,
@@ -16,7 +17,8 @@ let images = [
     engine3,
     engine4,
     toyotaBay,
-    mazdaBay
+    mazdaBay,
+    vanBay
 ]
 
 let imagery = images.map((pic, id) => {
