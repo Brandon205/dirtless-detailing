@@ -921,17 +921,17 @@ hr {
 
 .gallery-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 80vw;
-  margin: 0 auto
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  margin-top: 8vh;
 }
 
-.gallery-image {
-  cursor: pointer;
-  box-shadow: 0 5px 5px 3px gray;
-  max-width: 80vw;
-  margin: 5px;
+.gallery-image-div {
+  position: relative;
+  margin: 0.25rem auto;
+  width: 80vw;
+  height: 45vh;
 }
 
 /** Media Queries CSS **/
@@ -990,6 +990,17 @@ hr {
   .pricing-card {
     width: 300px;
   }
+
+  .gallery-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .gallery-image-div {
+    width: 45vw;
+    height: 60vh;
+  }
+
 }
 
 @media screen and (min-width: 880px) {
@@ -1116,10 +1127,6 @@ hr {
     width: 60vw;
   }
 
-  .gallery-container {
-    max-width: 60vw;
-  }
-
   .main-content-container {
     display: flex;
     flex-direction: column;
@@ -1143,6 +1150,11 @@ hr {
     width: 45vw;
   }
 
+  .gallery-image-div {
+    width: 30vw;
+    height: 40vh;
+  }
+
 }
 
 @media screen and (min-width: 1350px) {
@@ -1154,8 +1166,9 @@ hr {
     width: 450px
   }
 
-  .gallery-container {
-    max-width: 45vw;
+  .gallery-image-div {
+    width: 25vw;
+    height: 40vh;
   }
 
 }
@@ -1164,10 +1177,6 @@ hr {
 
   .contact-container {
     margin: 40vh auto 5rem auto
-  }
-
-  .gallery-container {
-    max-width: 35vw;
   }
   
 }

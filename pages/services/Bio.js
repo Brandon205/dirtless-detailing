@@ -67,17 +67,17 @@ export default function Bio() {
         <div className="examples-container">
           <div className="example-img">
             <Zoom>
-              <Image style={{borderRadius: 16}} src={seats} alt="seat mold before and after" layout="responsive" objectFit='scale-down' />
+              <Image style={{borderRadius: 16}} src={seats} alt="seat mold before and after" layout="responsive" objectFit='scale-down' placeholder='blur' />
             </Zoom>
           </div>
           <div className="example-img">
             <Zoom>
-              <Image style={{borderRadius: 16}} src={seatbelts} alt="seatbelt mold before and after" layout="responsive" objectFit='scale-down' />
+              <Image style={{borderRadius: 16}} src={seatbelts} alt="seatbelt mold before and after" layout="responsive" objectFit='scale-down' placeholder='blur' />
             </Zoom>
           </div>
           <div className="example-img">
             <Zoom>
-              <Image style={{borderRadius: 16}} src={mesh} alt="mesh net mold before and after" layout="responsive" objectFit="scale-down" />
+              <Image style={{borderRadius: 16}} src={mesh} alt="mesh net mold before and after" layout="responsive" objectFit="scale-down" placeholder='blur' />
             </Zoom>
           </div>
         </div>
