@@ -441,6 +441,7 @@ header h1 {
 .popular-img {
   position: relative;
   border-radius: 1rem 1rem 0 0;
+  height: 350px;
 }
 
 .checklist {

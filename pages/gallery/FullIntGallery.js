@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { imagery } from '../../public/imgs/pageimgs/engine/index';
+import { imagery } from '../../public/imgs/pageimgs/interior/index';
 
 import cover from '../../public/imgs/fullIntExCover.webp';
 

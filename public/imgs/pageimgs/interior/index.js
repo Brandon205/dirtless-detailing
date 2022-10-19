@@ -17,7 +17,7 @@ import floorMat1 from './1080x1920f.webp';
 import floorMat2 from './1080x1920g.webp';
 import passengerSeat1 from './3456x4608a.webp';
 import passengerSeat2 from './3456x4608a.webp';
-import driversSeat3 from './4608x3456b.webp';
+import driversSeat3 from './4608x3456a.webp';
 
 let images = [
     redToyota,
@@ -40,7 +40,9 @@ let images = [
 let imagery = images.map((pic, id) => {
     return (
         <Zoom key={id}>
-            <Image className="gallery-image" alt={'full interior example ' + id} layout="intrinsic" src={images[id]} width={images[id].width} height={images[id].height} loading="lazy" placeholder='blur' />
+            <div className='gallery-image-div'>
+                <Image alt={'full interior example ' + id} layout="fill" objectFit='contain' src={images[id]} loading="lazy" placeholder='blur' />
+            </div>
         </Zoom>
     )
 })
