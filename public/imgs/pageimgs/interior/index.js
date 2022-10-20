@@ -16,7 +16,7 @@ import driversSeat2 from './1080x1920e.webp';
 import floorMat1 from './1080x1920f.webp';
 import floorMat2 from './1080x1920g.webp';
 import passengerSeat1 from './3456x4608a.webp';
-import passengerSeat2 from './3456x4608a.webp';
+import passengerSeat2 from './3456x4608b.webp';
 import driversSeat3 from './4608x3456a.webp';
 
 let images = [

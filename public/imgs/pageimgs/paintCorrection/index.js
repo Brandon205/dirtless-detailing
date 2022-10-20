@@ -9,10 +9,10 @@ import bmwHoodB from './3456x4608c.webp';
 import bmwHoodA from './3456x4608d.webp';
 import redRoofB from './3456x4608e.webp';
 import redHood1 from './3456x4608f.webp';
-import redSide1 from './3456x4608g.webp';
 import redHood2 from './3456x4608h.webp';
-import redSide2 from './3456x4608i.webp';
 import redHood3 from './3456x4608j.webp';
+import redSide1 from './3456x4608g.webp';
+import redSide2 from './3456x4608i.webp';
 
 let images = [
     grayClose,
@@ -21,10 +21,10 @@ let images = [
     bmwHoodB,
     redRoofB,
     redHood1,
-    redSide1,
     redHood2,
-    redSide2,
-    redHood3
+    redHood3,
+    redSide1,
+    redSide2
 ]
 
 let imagery = images.map((pic, id) => {
