@@ -27,17 +27,17 @@ export default function Home() {
                     <div className="header-icons-container">
                         <div>
                             <FaRegStar className='header-icon' />
-                            <p className="header-desc">50+</p>
+                            <p className="header-desc">15+</p>
                             <span className='header-desc-span'>5 Star Reviews</span>
                         </div>
                         <div>
                             <MdOutlineLocalCarWash className='header-icon' />
-                            <p className="header-desc">800+</p>
+                            <p className="header-desc">1200+</p>
                             <span className='header-desc-span'>Cars Washed</span>
                         </div>
                         <div>
                             <BiCertification className='header-icon' />
-                            <p className="header-desc">5 Years</p>
+                            <p className="header-desc">7 Years</p>
                             <span className='header-desc-span'>Of Experience</span>
                         </div>
                     </div>

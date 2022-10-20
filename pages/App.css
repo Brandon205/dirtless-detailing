@@ -374,6 +374,7 @@ header h1 {
   text-align: center;
   border-radius: 1rem;
   padding: 1.2rem;
+  margin-top: 1rem;
   background-color: var(--contact-bkg-clr);
   color: white;
 }
@@ -1104,6 +1105,10 @@ hr {
     width: 300px;
   }
 
+  .contact-container-right {
+    margin-top: 0;
+  }
+
   .popular-img {
     height: 450px;
   }
@@ -1223,6 +1228,11 @@ hr {
 }
 
 @media screen and (min-width: 1350px) {
+
+  .header-icons-container {
+    margin: 16vh auto;
+  }
+
   .form {
     width: 450px;
   }
@@ -1239,6 +1249,10 @@ hr {
 }
 
 @media screen and (min-width: 2000px) {
+
+  .header-icons-container {
+    margin: 25vh auto;
+  }
 
   .contact-container {
     margin: 40vh auto 5rem auto
