@@ -55,8 +55,8 @@ export default function MyApp({ Component, pageProps }) {
                             </li>
 
                             <div style={{position: 'relative'}}>
-                                <li onMouseEnter={() => changeNav('services')} onMouseLeave={() => changeNav('none')} onClick={() => changeNav('services')}><p className='menu-li'>Services</p></li>
-                                <ul className="sub-ul" onMouseEnter={() => changeNav('services')} onMouseLeave={() => changeNav('none')}  style={{display: services}}>
+                                <li onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('services')}><p className='menu-li'>Services</p></li>
+                                <ul className="sub-ul" onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')}  style={{display: services}}>
                                     <div className="nav-div">
                                         <h4 className='sub-menu-header'><GiSteeringWheel /> INTERIOR CLEANING</h4>
                                         <li onClick={() => setNav('none')}>
@@ -92,8 +92,8 @@ export default function MyApp({ Component, pageProps }) {
                             </div>
 
                             <div style={{position: 'relative'}}>
-                                <li className='menu-li' onMouseEnter={() => changeNav('gallery')} onMouseLeave={() => changeNav('none')} onClick={() => changeNav('gallery')}>Gallery</li>
-                                <ul className="sub-ul" onMouseEnter={() => changeNav('gallery')} onMouseLeave={() => changeNav('none')} style={{display: gallery}}>
+                                <li className='menu-li' onPointerEnter={() => changeNav('gallery')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('gallery')}>Gallery</li>
+                                <ul className="sub-ul" onPointerEnter={() => changeNav('gallery')} onPointerLeave={() => changeNav('none')} style={{display: gallery}}>
                                     <div className="nav-div">
                                         <h4 className="sub-menu-header"><FaPhotoVideo /> GALLERIES</h4>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
