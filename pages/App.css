@@ -1,7 +1,7 @@
 :root {
   /** Backgrounds and other colors **/
   --contact-bkg-clr: #252525;
-  --contact-bkg-clr-light: #ECEDF5;
+  --contact-bkg-clr-light: #cecfd5;
   --nav-bkg-clr: #101010;
   /* --nav-bkg-clr: rgba(245, 245, 245); */
   /* --menu-container-clr: rgba(245, 245, 245); */
@@ -257,6 +257,13 @@ header h1 {
   color: var(--main-clr);
 }
 
+.maincover {
+  filter: brightness(20%) grayscale(65%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -5;
+}
 
 .cover {
   filter: brightness(50%) grayscale(65%);
@@ -328,11 +335,14 @@ header h1 {
 
 .contact-container-right {
   text-align: center;
-  color: black;
+  border-radius: 1rem;
+  padding: 1.2rem;
+  background-color: var(--contact-bkg-clr);
+  color: white;
 }
 
 .contact-container-right a {
-  color: black;
+  color: white;
 }
 
 .form {
@@ -347,8 +357,8 @@ header h1 {
 .text-input {
   padding: 12px 10px;
   margin-bottom: 1rem;
-  font-size: 1.2em;
-  width: 100%
+  font-size: 1em;
+  width: 90%
 }
 
 .select-input {
@@ -359,18 +369,21 @@ header h1 {
 
 .checkbox-input {
   display: inline;
+  margin-left: 10px
 }
 
 .textarea-input {
   padding: 6px;
   height: 65px;
-  width: 100%;
+  width: 90%;
   margin-bottom: 1rem;
 }
 
 .form-subheading {
-  margin: 8px 0; 
-  color: var(--supporting-text)
+  margin: 0.5rem 0 0 0;
+  font-style: italic;
+  font-weight: 300;
+  color: white;
 }
 
 .contact-link {

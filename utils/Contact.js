@@ -89,41 +89,41 @@ export default function Contact() {
                             <label htmlFor="message" className='input-label'>Additional Details</label><br />
                             <textarea type="textarea" id="message" name="message" className='textarea-input' placeholder='Do you want mobile service or a drop off? Do you have any other questions/concerns?' />
 
-                            <h5 style={{marginBottom: 4}}>Combos:</h5>
+                            <h4 style={{marginBottom: 4}}>Combos:</h4>
                             <input type="checkbox" name="combo" value="Full Interior and Exterior Combo" className='checkbox-input' />
                             <label htmlFor="Full Interior and Exterior Combo" className='input-label'>Full Interior and Exterior Combo</label><br />
 
-                            <h5 style={{marginBottom: 4}}>Interior Cleaning:</h5>
+                            <h4 style={{marginBottom: 4}}>Interior Cleaning:</h4>
                             <input type="checkbox" name="fullIntEx" value="Full Interior With Extraction" className='checkbox-input' />
                             <label htmlFor="fullIntEx" className='input-label'>Full Interior With Extraction</label><br />
                             <input type="checkbox" name="fullInt" value="Full Interior Without Extraction" className='checkbox-input' />
                             <label htmlFor="fullInt" className='input-label'>Full Interior Without Extraction</label><br />
                             <input type="checkbox" name="bio" value="Biohazard Cleaning" className='checkbox-input' />
                             <label htmlFor="bio" className='input-label'>Biohazard Cleaning</label><br />
-                            <input type="checkbox" name="headliners" value="Headliners" />
+                            <input type="checkbox" name="headliners" value="Headliners" className='checkbox-input' />
                             <label htmlFor="headliners" className='input-label'>Headliners</label><br />
 
-                            <h5 style={{marginBottom: 4}}>Exterior Cleaning:</h5>
+                            <h4 style={{marginBottom: 4}}>Exterior Cleaning:</h4>
                             <input type="checkbox" name="dlWash" value="Dirt-Less Wash" className='checkbox-input' />
                             <label htmlFor="dlWash" className='input-label'>Dirt-Less Wash</label><br />
                             <input type="checkbox" name="pdlWash" value="Premium Dirt-Less Wash" className='checkbox-input' />
                             <label htmlFor="pdlWash" className='input-label'>Premium Dirt-Less Wash</label><br />
-                            <input type="checkbox" name="engine" value="Engine Bay Cleaning" />
+                            <input type="checkbox" name="engine" value="Engine Bay Cleaning" className='checkbox-input' />
                             <label htmlFor="engine" className='input-label' style={{marginBottom: 16}}>Engine Bay</label><br />
 
-                            <h6 className="form-subheading">Exterior Addons:</h6>
-                            <input type="checkbox" name="glass" value="Glass Polishing" />
+                            <h5 className="form-subheading">Exterior Addons:</h5>
+                            <input type="checkbox" name="glass" value="Glass Polishing" className='checkbox-input' />
                             <label htmlFor="glass" className='input-label' style={{marginBottom: 16}}>Glass Polishing</label><br />
-                            <input type="checkbox" name="waterspot" value="Waterspot/Overspray Removal" />
+                            <input type="checkbox" name="waterspot" value="Waterspot/Overspray Removal" className='checkbox-input' />
                             <label htmlFor="waterspot" className='input-label' style={{marginBottom: 16}}>Waterspot/Overspray Removal</label><br />
 
-                            <h5 style={{marginBottom: 4}}>Paint Correction:</h5>
+                            <h4 style={{marginBottom: 4}}>Paint Correction:</h4>
                             <input type="checkbox" name="singlePC" value="Single Stage Paint Correction" className='checkbox-input' />
                             <label htmlFor="singlePC" className='input-label'>Single Stage Paint Correction</label><br />
-                            <input type="checkbox" name="twoPC" value="Two Stage Paint Correction" />
+                            <input type="checkbox" name="twoPC" value="Two Stage Paint Correction" className='checkbox-input' />
                             <label htmlFor="twoPC" className='input-label' style={{marginBottom: 16}}>Two Stage Paint Correction</label><br />
 
-                            <h6 className="form-subheading">Paint Correction Addons:</h6>
+                            <h5 className="form-subheading">Paint Correction Addons:</h5>
                             <input type="checkbox" name="correctionGlass" value="Glass Polishing" className='checkbox-input' />
                             <label htmlFor="correctionGlass" className='input-label'>Glass Polishing</label><br style={{marginBottom: 16}} />
 
