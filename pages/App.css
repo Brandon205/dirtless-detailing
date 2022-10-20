@@ -303,7 +303,7 @@ header h1 {
 }
 
 .cover {
-  filter: brightness(50%) grayscale(65%);
+  filter: brightness(25%) grayscale(65%);
   position: absolute;
   height: 75%;
   width: 100%;
@@ -758,6 +758,10 @@ hr {
   margin: 0 auto 48vh auto;
 }
 
+.servicepage-heading {
+  font-size: 2em;
+}
+
 .content-container {
   display: flex;
   flex-direction: column;
@@ -997,6 +1001,7 @@ hr {
   display: flex; 
   flex-direction: column;
   justify-content: space-around;
+  gap: 1rem;
   width: 75vw;
   margin: 0 auto;
 }
@@ -1006,12 +1011,12 @@ hr {
   margin: 0.25rem auto;
   width: 80vw;
   height: 45vh; */
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
-.gallery-image {
+/* .gallery-image {
   margin-bottom: 1rem;
-}
+} */
 
 /** Media Queries CSS **/
 
@@ -1070,15 +1075,15 @@ hr {
     width: 300px;
   }
 
-  .gallery-container {
+  /* .gallery-container {
     flex-direction: row;
     flex-wrap: wrap;
-  }
-
+  } */
+/* 
   .gallery-image-div {
     width: 45vw;
     height: 60vh;
-  }
+  } */
 
 }
 
@@ -1243,9 +1248,16 @@ hr {
     width: 45vw;
   }
 
+  .gallery-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   .gallery-image-div {
-    width: 30vw;
-    height: 40vh;
+    margin-bottom: 1rem;
+    width: 20vw;
+    height: auto;
+    flex-grow: 1;
   }
 
 }
@@ -1264,9 +1276,17 @@ hr {
     width: 450px
   }
 
+  .servicepage-heading {
+    font-size: 2.5em;
+  }
+
+  .gallery-container {
+    width: 100vw;
+  }
+
   .gallery-image-div {
     width: 25vw;
-    height: 40vh;
+    height: auto;
   }
 
 }
