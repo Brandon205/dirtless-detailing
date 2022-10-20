@@ -757,6 +757,8 @@ hr {
   font-size: 2em;
   padding-top: 25vh;
   margin: 0 auto 48vh auto;
+  z-index: 1;
+  position: relative;
 }
 
 .servicepage-heading {
@@ -906,6 +908,7 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  gap: 0.5rem;
 }
 
 .pricing-title {
@@ -1043,14 +1046,6 @@ hr {
     width: 275px;
   }
 
-  .pricing-container {
-    flex-direction: row;
-  }
-
-  .pricing-card {
-    width: 300px;
-  }
-
 }
 
 @media screen and (min-width: 660px) {
@@ -1058,6 +1053,18 @@ hr {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+  }
+
+  .servicepage-header {
+    font-size: 3em;
+  }
+
+  .pricing-container {
+    flex-direction: row;
+  }
+  
+  .pricing-card {
+    width: 300px;
   }
 }
 

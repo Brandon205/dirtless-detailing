@@ -108,6 +108,7 @@ export default function Home() {
                         <p className="reviewer">Terri E.</p>
                     </div>
                 </Carousel>
+                <p>Check out more reviews on our <a style={{cursor: 'pointer', marginBottom: 16}} href="https://www.facebook.com/DirtLessDetailing/reviews">Facebook</a> page.</p>
             </article>
 
             <section className="serviceareas-container">
