@@ -7,7 +7,7 @@ import cover from '../../public/imgs/dlwashA.webp';
 export default function PaintCorrectionGallery() {
 
   return (
-    <section className='content-container'>
+    <section className='gallery-content-container'>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="dirt-less wash cover" layout="fill" objectFit='cover' priority />
       </div>

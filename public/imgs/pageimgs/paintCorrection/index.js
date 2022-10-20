@@ -31,7 +31,7 @@ let imagery = images.map((pic, id) => {
     return (
         <Zoom key={id}>
             <div className='gallery-image-div'>
-                <Image alt={'paint correction example ' + id} layout="fill" objectFit='contain' src={images[id]} loading="lazy" placeholder='blur' />
+                <Image style={{borderRadius: 16}} alt={'paint correction example ' + id} src={images[id]} loading="lazy" placeholder='blur' />
             </div>
         </Zoom>
     )

@@ -6,7 +6,7 @@ import cover from '../../public/imgs/correctionGallery.webp';
 
 export default function PaintCorrectionGallery() {
   return (
-    <section className='content-container'>
+    <section className='gallery-content-container'>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="paint correction cover" layout="fill" objectFit='cover' priority />
       </div>

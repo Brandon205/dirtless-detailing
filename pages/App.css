@@ -1254,7 +1254,6 @@ hr {
   }
 
   .gallery-image-div {
-    margin-bottom: 1rem;
     width: 20vw;
     height: auto;
     flex-grow: 1;
