@@ -5,6 +5,10 @@ import Contact from '../utils/Contact';
 import PopularServices from '../utils/PopularServices';
 import OtherServices from '../utils/OtherServices';
 
+import { MdOutlineLocalCarWash } from 'react-icons/md';
+import { BiCertification } from 'react-icons/bi';
+import { FaRegStar } from 'react-icons/fa';
+
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 import cover from '../public/imgs/cover.webp';
@@ -19,9 +23,26 @@ export default function Home() {
                 <div className='contact-left-container'>
                     <h1 className='title-top'>Your Bonney Lake</h1><br />
                     <h1 className='title-bottom'>Detailing Specialists</h1>
-                    <h4 className='dd-desc'>Plenty of 5-star reviews from the customers we've served. </h4>
-                    <h4 className='dd-desc'>We will do Interiors, Exteriors, Paint Correction, and much more!</h4>
-                    <h4 className='dd-desc'>For your convenience we can come to you, or you can bring your car to us!</h4>
+
+                    <div className="header-icons-container">
+                        <div>
+                            <FaRegStar className='header-icon' />
+                            <p className="header-desc">50+</p>
+                            <span className='header-desc-span'>5 Star Reviews</span>
+                        </div>
+                        <div>
+                            <MdOutlineLocalCarWash className='header-icon' />
+                            <p className="header-desc">800+</p>
+                            <span className='header-desc-span'>Cars Washed</span>
+                        </div>
+                        <div>
+                            <BiCertification className='header-icon' />
+                            <p className="header-desc">5 Years</p>
+                            <span className='header-desc-span'>Of Experience</span>
+                        </div>
+                    </div>
+
+                    <h4 className='dd-desc'>We also offer a <span className='special-package'>mobile</span> service free of charge!</h4>
 
                     <a href="/#popular-services" className="learn-btn top-learn-btn">Learn More</a>
                     <a href="/#contact" className="quote-btn top-quote-btn">Get a Quote</a>

@@ -241,6 +241,43 @@ header h1 {
   color: white;
 }
 
+.header-icons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-icons-container div {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  grid-template-areas: "icon desc"
+                       "icon myspan";
+  margin-bottom: 2rem; 
+  width: 190px;
+  text-align: left;
+}
+
+.header-icon {
+  color: var(--main-clr);
+  font-size: 4em;
+  display: inline;
+  grid-area: icon;
+}
+
+.header-desc {
+  font-size: 2em;
+  margin: 0;
+  display: inline;
+  grid-area: desc
+}
+
+.header-desc-span {
+  font-size: 0.8em;
+  /* color: var(--supporting-text); */
+  grid-area: myspan
+}
+
 .title-top {
   margin-top: 0;
   padding-top: 1em;
@@ -1036,6 +1073,13 @@ hr {
 
   .menu-container {
     background-color: var(--nav-bkg-clr);
+  }
+
+  .header-icons-container {
+    flex-direction: row;
+    width: 80vw;
+    justify-content: space-around;
+    margin: 0 auto 8rem auto;
   }
 
   .title-top {
