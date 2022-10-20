@@ -307,7 +307,7 @@ header h1 {
   position: absolute;
   height: 75%;
   width: 100%;
-  z-index: -5;
+  z-index: 0;
 }
 
 /** Home Page Contact CSS **/
@@ -770,6 +770,19 @@ hr {
   margin: 25vh auto;
 }
 
+.gallery-content-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #101010;
+}
+
+.gallery-content-container header {
+  z-index: 1;
+  color: white;
+  margin: 25vh auto;
+}
+
 .gallery-link {
   color: var(--main-clr);
 }
@@ -976,18 +989,28 @@ hr {
 }
 
 .gallery-container {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: space-around;
   position: relative;
-  margin-top: 8vh;
+  margin-top: 8vh; */
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-around;
+  width: 75vw;
+  margin: 0 auto;
 }
 
 .gallery-image-div {
-  position: relative;
+  /* position: relative;
   margin: 0.25rem auto;
   width: 80vw;
-  height: 45vh;
+  height: 45vh; */
+  margin-bottom: 1rem;
+}
+
+.gallery-image {
+  margin-bottom: 1rem;
 }
 
 /** Media Queries CSS **/

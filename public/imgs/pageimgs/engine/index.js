@@ -23,9 +23,14 @@ let images = [
 
 let imagery = images.map((pic, id) => {
     return (
+        // <Zoom key={id}>
+        //     <div className="gallery-image-div">
+        //         <Image alt={'engine example ' + id} layout="fill" objectFit='contain' src={images[id]} loading="lazy" placeholder='blur' />
+        //     </div>
+        // </Zoom>
         <Zoom key={id}>
-            <div className="gallery-image-div">
-                <Image alt={'engine example ' + id} layout="fill" objectFit='contain' src={images[id]} loading="lazy" placeholder='blur' />
+            <div className='gallery-image-div'>
+                <Image style={{borderRadius: 16}} alt={'engine example ' + id} src={images[id]} />
             </div>
         </Zoom>
     )
