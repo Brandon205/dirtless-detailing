@@ -136,6 +136,7 @@ body {
 
 .main-quote-btn {
   margin-bottom: 3rem;
+  margin-right: 3rem;
 }
 
 .service-page-quote-btn {
@@ -1002,12 +1003,6 @@ hr {
 }
 
 @media screen and (min-width: 450px) {
-
-  footer {
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
   
   .popular-container {
     flex-wrap: wrap;
@@ -1056,6 +1051,14 @@ hr {
     width: 300px;
   }
 
+}
+
+@media screen and (min-width: 660px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (min-width: 880px) {
