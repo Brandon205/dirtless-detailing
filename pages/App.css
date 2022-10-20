@@ -2,8 +2,9 @@
   /** Backgrounds and other colors **/
   --contact-bkg-clr: #252525;
   --contact-bkg-clr-light: #ECEDF5;
-  --nav-bkg-clr: rgba(245, 245, 245);
-  --menu-container-clr: rgba(245, 245, 245);
+  --nav-bkg-clr: #101010;
+  /* --nav-bkg-clr: rgba(245, 245, 245); */
+  /* --menu-container-clr: rgba(245, 245, 245); */
   --nav-color: #636364;
   --boxshadow-clr: rgb(213, 213, 213);
   --footer-bkg: #060606;
@@ -52,8 +53,6 @@ body {
 }
 
 .logo {
-  width: 132px;
-  height: 80px;
   margin-left: 1rem;   
 }
 
@@ -96,10 +95,8 @@ body {
 
 .nav-quote-btn {
   display: inline-block;
-  padding: 0 0.25rem;
+  padding: 0 0.35rem;
   text-decoration: none;
-  font-size: 0.9rem;
-  border: 2px solid var(--main-clr);
   background-color: var(--main-clr);
   color: white;
   border-radius: 0.5rem;
@@ -169,13 +166,13 @@ li span {
 .menu-container {
   position: absolute;
   text-align: left;
+  padding: 1rem;
   width: 350px;
   height: 90vh;
   line-height: 2.5;
-  background-color: var(--menu-container-clr);
+  background-color: var(--nav-bkg-clr);
   top: 80px;
   right: 0;
-  transition: 0.5s;
 }
 
 .main-ul {
@@ -189,8 +186,8 @@ li span {
 }
 
 .menu-li {
-  padding: 0 1rem;
   cursor: pointer;
+  color: white;
   margin: 0;
 }
 
@@ -199,9 +196,13 @@ li span {
 }
 
 .nav-div {
-  padding: 1rem;
+  padding: 0.75rem;
   border-radius: 1rem;
-  background-color: var(--contact-bkg-clr-light);
+  background-color: var(--nav-bkg-clr);
+}
+
+.nav-div li {
+  margin-left: 1rem;
 }
 
 .sub-menu-li {
@@ -210,22 +211,24 @@ li span {
 }
 
 .sub-menu-li a .menu-link {
-  margin: 20;
-  color: var(--nav-color);
+  margin-left: 20;
+  color: white;
 }
 
 .menu-link:hover {
-  color: black;
+  color: var(--nav-color);
 }
 
 .sub-menu-header {
+  color: whitesmoke;
+  font-weight: bold;
   margin: 0;
 }
 
 .menu-link {
   margin: 0;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 /** Home Page Header CSS **/
@@ -1010,7 +1013,7 @@ hr {
   }
 
   .nav-div {
-    padding: 2rem;
+    padding: 1.5rem;
   }
 
   .nav-quote-btn {
@@ -1018,7 +1021,7 @@ hr {
   }
 
   .menu-container {
-    background-color: rgba(245, 245, 245, 0);
+    background-color: var(--nav-bkg-clr);
   }
 
   .title-top {
@@ -1096,6 +1099,8 @@ hr {
   /** Nav CSS **/
   .menu-container {
     display: inline-block !important;
+    flex: 2;
+    padding: 0;
     position: static;
     height: auto;
     width: 75vw;
@@ -1105,6 +1110,7 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin: 0;
     width: 100%;
   }
 

@@ -45,7 +45,7 @@ export default function MyApp({ Component, pageProps }) {
             </Head>
             <header className="App-header">
                 <nav id="nav">
-                    <a href="/"><Image src={ddLogo} width='132' height="80" className="logo" alt="logo" /></a>
+                    <a style={{display: 'flex', justifyContent: 'flex-start', flex: 1}} href="/"><Image src={ddLogo} objectFit="contain" width={120} height={90} className="logo" alt="logo" /></a>
                     <FaBars className="menu-bars" onClick={() => setNav(nav === 'block' ? 'none' : 'block')} />
                     <div style={{display: nav}} className="menu-container">
                         <ul className='main-ul'>
