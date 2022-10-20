@@ -778,7 +778,7 @@ hr {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: #101010;
+  background-color: #000;
 }
 
 .gallery-content-container header {
@@ -993,11 +993,6 @@ hr {
 }
 
 .gallery-container {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  position: relative;
-  margin-top: 8vh; */
   display: flex; 
   flex-direction: column;
   justify-content: space-around;
@@ -1005,20 +1000,6 @@ hr {
   width: 75vw;
   margin: 0 auto;
 }
-
-.gallery-image-div {
-  /* position: relative;
-  margin: 0.25rem auto;
-  width: 80vw;
-  height: 45vh; */
-  /* margin-bottom: 1rem; */
-}
-
-/* .gallery-image {
-  margin-bottom: 1rem;
-} */
-
-/** Media Queries CSS **/
 
 @media screen and (min-width: 450px) {
 
@@ -1074,16 +1055,6 @@ hr {
   .pricing-card {
     width: 300px;
   }
-
-  /* .gallery-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-  } */
-/* 
-  .gallery-image-div {
-    width: 45vw;
-    height: 60vh;
-  } */
 
 }
 
