@@ -18,7 +18,7 @@ export default function OtherServices() {
             <div className="service-card">
                 <Image src={combo} alt="combo cleaning after" className='otherservices-image' loading='lazy' placeholder='blur' quality={10} />
                 <div className="otherservices-desc">
-                    <a href='/services/FullIntEx' className='service-heading-link'>Full Interior and Exterior Cleaning Combo</a>
+                    <a href='/services/Combo' className='service-heading-link'>Full Interior and Exterior Cleaning Combo</a>
                     <p className="secondary-text">Starting at: <span>$275</span></p>
                     <p className="service-desc">This combo comes with a <span className='special-package'>free</span> Engine Bay cleaning, along with the full interior and exterior detail this package is sure to bring your whole car back to life.</p>
                     <div>

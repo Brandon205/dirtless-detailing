@@ -1211,12 +1211,17 @@ hr {
     flex-direction: column;
   }
 
+
   .process-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 95vw;
     margin: 0 auto;
+  }
+
+  #combo-process {
+    flex-direction: column;
   }
 
   .examples-container {

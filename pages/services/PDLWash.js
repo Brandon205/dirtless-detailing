@@ -10,7 +10,7 @@ const steps = [
   ["Wax Prep - Iron Decontamination", "Iron Decontamination to make sure all microscopic iron contaminants are off of the paint, these are things that the clay bar won't get, this improves wax adhesion as well."],
   ["Remove tar and sap", "Remove any and all tar and sap from the exterior."],
   ["Dry Vehicle", "Dry the whole vehicle with clean towels and Air blowers."],
-  ["Wax On", "Apply 6 month or more sealant."],
+  ["Apply Wax", "Apply 6 month or more sealant."],
   ["Door Jambs", "Clean Door Jambs."],
   ["Dress Vehicle", "Dress all plastics, wheel wells, tires."]
 ]
@@ -45,7 +45,7 @@ export default function PDLWash() {
       <div className='main-content-container'>
         <div className="process-container">
           <div>
-            <h2>Our Exterior Cleaning Process</h2>
+            <h2>Our Premium Exterior Cleaning Process</h2>
             <ol className='list'>
               {content}
             </ol>

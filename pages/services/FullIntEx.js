@@ -8,7 +8,7 @@ const steps = [
   ["Hot Water Extraction", "We use a professional hot water extractor and professional flex stain remover and alkaline floor rinse to keep floors at a neutral PH level. (Another thing other detailers won't do). We will be sure to get all carpets, floor mats, and cloth seats"],
   ["Vacuum Vehicle", "Thoroughly vacuum every crack and crevice of the vehicle"],
   ["Clean Plastics and Leathers", "Clean, steam, and degrease all plastics and leather seats"],
-  ["Dress Interior", "Dress all vinyl and leather (if wanted)"],
+  ["Dress Interior", "Dress all vinyl and leather (if requested)"],
   ["Door Jambs", "Clean all of the door jambs"],
   ["Window Cleaning", "Clean windows"]
 ]
@@ -66,7 +66,7 @@ export default function FullIntEx() {
 
         <div className="combo-container">
           <h2>Get a <span className='special-package'>free</span> Engine cleaning!</h2>
-          <p className="subtext">When you book this Full Interior Cleaning (with or without extraction) and a <a href="/services/PDLWash">Premium Cleaning</a> together we will clean out your engine bay at no extra cost. (Click the Get Started button below to begin).</p>
+          <p className="subtext">When you book this Full Interior Cleaning (with extraction) and a <a href="/services/PDLWash">Premium Dirt-Less Wash</a> together we will clean out your engine bay at no extra cost. (Click the Get Started button below to begin).</p>
         </div>
 
         <div>
