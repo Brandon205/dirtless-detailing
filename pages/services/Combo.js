@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-import cover from '../../public/imgs/PDLWashCover.webp';
+import cover from '../../public/imgs/ComboCover.webp';
 
 const pdlSteps = [
     ["Wash Vehicle", "Thorough strip wash top to bottom including the gas door with the 2 bucket method or equivalent."],
@@ -57,9 +57,9 @@ export default function Combo() {
   return (
     <section className='service-content-container'>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
-        <Image src={cover} alt="Premium Dirt-Less wash cover" layout="fill" objectFit='cover' priority />
+        <Image src={cover} alt="Combo wash cover" layout="fill" objectFit='cover' priority />
       </div>
-      <h1 className='servicepage-header'>The Complete Package</h1>
+      <h1 className='servicepage-header'>The Full Interior and Exterior Package</h1>
 
       <div className='main-content-container'>
         <div className="process-container" id="combo-process">
