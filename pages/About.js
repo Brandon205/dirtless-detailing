@@ -41,7 +41,7 @@ export default function About() {
         </ul>
         <ul className='faq-ul'>
           <li className='faq-li'>What cities do you service?</li>
-          <p className='faq-p'>We service most cities in King and Pierce County currently!</p>
+          <p className='faq-p'>Currently: Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham.</p>
         </ul>
         <ul className='faq-ul'>
           <li className='faq-li'>Do I have to be there the whole time you're working on my car?</li>
