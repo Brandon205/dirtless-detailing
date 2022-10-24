@@ -14,25 +14,33 @@ export default function MyApp({ Component, pageProps }) {
     const [services, setServices] = useState('none');
     const [gallery, setGallery] = useState('none');
 
-    let changeNav = (changeTo) => {
-        setServices('none');
-        setGallery('none');
-        switch (changeTo) {
-          case 'services': {
-            setServices('block');
-          }
-          break;
-          case 'gallery': {
-            setGallery('block');
-          }
-          break;
+    // let changeNav = (changeTo) => {
+    //     setServices('none');
+    //     setGallery('none');
+    //     switch (changeTo) {
+    //       case 'services': {
+    //         setServices('block');
+    //       }
+    //       break;
+    //       case 'gallery': {
+    //         setGallery('block');
+    //       }
+    //       break;
     
-          default: {
-            setServices('none');
-            setGallery('none');
-          }
-        }
-      }
+    //       default: {
+    //         setServices('none');
+    //         setGallery('none');
+    //       }
+    //     }
+    //   }
+
+    let handleEnter = (e) => {
+        console.log(e.target.firstChild)
+    }
+
+    let handleLeave = (e) => {
+        console.log("LEAVE")
+    }
 
     return (
         <div className="App">
@@ -50,11 +58,11 @@ export default function MyApp({ Component, pageProps }) {
                     <div style={{display: nav}} className="menu-container">
                         <ul className='main-ul'>
 
-                            <li className='menu-li'>
+                            <li>
                                 <a href="/" className='menu-link'>Home</a>
                             </li>
 
-                            <div style={{position: 'relative'}}>
+                            {/* <div style={{position: 'relative'}}>
                                 <li onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('services')}><p className='menu-li'>Services</p></li>
                                 <ul className="sub-ul" onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')}  style={{display: services}}>
                                     <div className="nav-div">
@@ -74,11 +82,9 @@ export default function MyApp({ Component, pageProps }) {
                                         </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
                                             <a href="/services/PDLWash" className='menu-link'>Premium Dirt-Less Wash</a>
-
                                         </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
                                             <a href="/services/Engine" className='menu-link'>Engine Bay Cleaning</a>
-
                                         </li>
                                         <h4 className='sub-menu-header'><FaCarSide /> EXTERIOR CORRECTION</h4>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
@@ -89,9 +95,38 @@ export default function MyApp({ Component, pageProps }) {
                                         </li>
                                     </div>
                                 </ul>
-                            </div>
+                            </div> */}
 
-                            <div style={{position: 'relative'}}>
+                            <li onMouseEnter={(e) => {handleEnter(e)}} onMouseLeave={(e) => {handleLeave(e)}}>
+                                <p>Services</p>
+                                <ul className='dropdown'>
+                                    <li>
+                                        <h4 className='sub-menu-header'><GiSteeringWheel /> INTERIOR CLEANING</h4>
+                                        <ul>
+                                            <li><a href="/services/FullIntEx" className='menu-link'>Full Interior Cleaning</a></li>
+                                            <li><a href="/services/Bio" className='menu-link'>Biohazard Cleaning</a></li>
+                                            <li><a href="/services/Headliners" className='menu-link'>Headliners</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4 className='sub-menu-header'><RiCarWashingFill /> EXTERIOR CLEANING</h4>
+                                        <ul>
+                                            <li><a href="/services/DLWash" className='menu-link'>Dirt-Less Wash</a></li>
+                                            <li><a href="/services/PDLWash" className='menu-link'>Premium Dirt-Less Wash</a></li>
+                                            <li><a href="/services/Engine" className='menu-link'>Engine Bay Cleaning</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4 className='sub-menu-header'><FaCarSide /> EXTERIOR CORRECTION</h4>
+                                        <ul>
+                                            <li><a href="/services/SinglePC" className='menu-link'>Single Stage Paint Correction</a></li>
+                                            <li><a href="/services/TwoPC" className='menu-link'>Two Stage Paint Correction</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            {/* <div style={{position: 'relative'}}>
                                 <li className='menu-li' onPointerEnter={() => changeNav('gallery')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('gallery')}>Gallery</li>
                                 <ul className="sub-ul" onPointerEnter={() => changeNav('gallery')} onPointerLeave={() => changeNav('none')} style={{display: gallery}}>
                                     <div className="nav-div">
@@ -110,13 +145,23 @@ export default function MyApp({ Component, pageProps }) {
                                         </li>
                                     </div>
                                 </ul>
-                            </div>
+                            </div> */}
+                            <li>
+                                <p>Gallery</p>
+                                <h4 className="sub-menu-header"><FaPhotoVideo /> GALLERIES</h4>
+                                <ul>
+                                    <li><a href="/gallery/FullIntGallery" className='menu-link'>Full Interior Gallery</a></li>
+                                    <li><a href="/gallery/DLWashGallery" className='menu-link'>Dirt-Less Wash Gallery</a></li>
+                                    <li><a href="/gallery/PaintCorrectionGallery" className='menu-link'>Paint Correction Gallery</a></li>
+                                    <li><a href="/gallery/EngineGallery" className='menu-link'>Engine Bay Gallery</a></li>
+                                </ul>
+                            </li>
 
-                            <li className='menu-li'>
+                            <li>
                                 <a href="/services/Addons" className='menu-link' onClick={() => setNav('none')}>Addons</a>
                             </li>
 
-                            <li className='menu-li'>
+                            <li>
                                 <a href="/About" className="menu-link" onClick={() => setNav('none')}>About Us</a>
                             </li>
 
