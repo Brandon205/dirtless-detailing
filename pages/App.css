@@ -177,10 +177,10 @@ li span {
   right: 0;
 }
 
-/* .main-ul {
+.main-ul {
   list-style: none;
   padding-left: 0;
-} */
+}
 
 .sub-ul {
   list-style: none;
@@ -1178,13 +1178,13 @@ hr {
     width: 75vw;
   }
 
-  /* .main-ul {
+  .main-ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 0;
     width: 100%;
-  } */
+  }
 
   .menu-li {
     position: relative;
