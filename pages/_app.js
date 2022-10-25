@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 
@@ -11,25 +11,32 @@ import './App.css';
 
 export default function MyApp({ Component, pageProps }) {
     const [nav, setNav] = useState('none');
-    const [services, setServices] = useState('none');
-    const [gallery, setGallery] = useState('none');
+    const [services, setServices] = useState(false);
+    const [gallery, setGallery] = useState(false);
+    const [smallScreen, setSmallScreen] = useState(false);
+
+    useEffect(() => {
+        if (window.innerWidth < 879) {
+            setSmallScreen(true);
+        }
+    }, [])
 
     let changeNav = (changeTo) => {
         setServices('none');
         setGallery('none');
         switch (changeTo) {
           case 'services': {
-            setServices('block');
+            setServices(true);
           }
           break;
           case 'gallery': {
-            setGallery('block');
+            setGallery(true);
           }
           break;
     
           default: {
-            setServices('none');
-            setGallery('none');
+            setServices(false);
+            setGallery(false);
           }
         }
       }
@@ -64,10 +71,10 @@ export default function MyApp({ Component, pageProps }) {
 
                             <div style={{position: 'relative'}}>
                                 <li onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('services')}><p className='menu-li'>Services</p></li>
-                                <ul className="sub-ul" onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')}  style={{display: services}}>
+                                <ul className="sub-ul" onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} style={{opacity: smallScreen ? 1 : services ? 1 : 0, pointerEvents: smallScreen ? 1 : services ? 'none' : 'auto'}}>
                                     <div className="nav-div">
                                         <h4 className='sub-menu-header'><GiSteeringWheel /> INTERIOR CLEANING</h4>
-                                        <li onClick={() => setNav('none')}>
+                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
                                             <a href="/services/FullIntEx" className='menu-link'>Full Interior Cleaning</a>
                                         </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
@@ -128,7 +135,7 @@ export default function MyApp({ Component, pageProps }) {
 
                             <div style={{position: 'relative'}}>
                                 <li className='menu-li' onPointerEnter={() => changeNav('gallery')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('gallery')}>Gallery</li>
-                                <ul className="sub-ul" onPointerEnter={() => changeNav('gallery')} onPointerLeave={() => changeNav('none')} style={{display: gallery}}>
+                                <ul className="sub-ul" onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} style={{opacity: smallScreen ? 1 : gallery ? 1 : 0, pointerEvents: smallScreen ? 1 : gallery ? 'auto' : 'none'}}>
                                     <div className="nav-div">
                                         <h4 className="sub-menu-header"><FaPhotoVideo /> GALLERIES</h4>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
@@ -146,6 +153,7 @@ export default function MyApp({ Component, pageProps }) {
                                     </div>
                                 </ul>
                             </div>
+
                             {/* <li>
                                 <p>Gallery</p>
                                 <h4 className="sub-menu-header"><FaPhotoVideo /> GALLERIES</h4>

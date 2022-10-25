@@ -175,6 +175,7 @@ li span {
   background-color: var(--nav-bkg-clr);
   top: 80px;
   right: 0;
+  overflow: scroll;
 }
 
 .main-ul {
@@ -183,6 +184,8 @@ li span {
 }
 
 .sub-ul {
+  opacity: 0;
+  will-change: opacity;
   list-style: none;
   padding-left: 0;
 }
