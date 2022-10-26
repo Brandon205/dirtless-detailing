@@ -16,7 +16,7 @@ export default function OtherServices() {
     <div>
         <section className="otherservices-container">
             <div className="service-card">
-                <Image src={combo} alt="combo cleaning after" className='otherservices-image' loading='lazy' placeholder='blur' quality={10} />
+                <Image src={combo} alt="combo cleaning after" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
                 <div className="otherservices-desc">
                     <a href='/services/Combo' className='service-heading-link'>Full Interior and Exterior Cleaning Combo</a>
                     <p className="secondary-text">Starting at: <span>$400</span></p>
@@ -35,7 +35,7 @@ export default function OtherServices() {
         </div>
         <section className="otherservices-container">
             <div className="service-card">
-                <Image src={fullintex} alt="full interior cleaning after" className='otherservices-image' loading='lazy' placeholder='blur' quality={10} />
+                <Image src={fullintex} alt="full interior cleaning after" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
                 <div className="otherservices-desc">
                     <a href="/services/FullIntEx" className='service-heading-link'>Full Interior Cleaning</a>
                     <p className="secondary-text">Starting at: <span>$200</span></p>
@@ -46,7 +46,7 @@ export default function OtherServices() {
             </div>
 
             <div className="service-card">
-                <Image src={bio} alt="biohazard cleaning before" className='otherservices-image' loading='lazy' placeholder='blur' quality={10} />
+                <Image src={bio} alt="biohazard cleaning before" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
                 <div className="otherservices-desc">
                     <a href='/services/Bio' className='service-heading-link'>Smokers Car/Bio/Mold/etc Cleaning</a>
                     <p className="secondary-text">Starting at: <span>$300</span></p>
@@ -56,7 +56,7 @@ export default function OtherServices() {
                 </div>
             </div>
             <div className="service-card">
-                <Image src={headliner} alt="headliner cleaning after" className='otherservices-image' loading='lazy' placeholder='blur' quality={100} />
+                <Image src={headliner} alt="headliner cleaning after" className='otherservices-image' loading='lazy' placeholder='blur' quality={80} />
                 <div className="otherservices-desc">
                     <a href='/services/Headliners' className='service-heading-link'>Headliners</a>
                     <p className="secondary-text">Starting at: <span>$40</span></p>
@@ -73,7 +73,7 @@ export default function OtherServices() {
 
         <section className="otherservices-container">
             <div className="service-card">
-                <Image src={dlwash} alt="dirt-less wash cleaning after" className='otherservices-image' loading='lazy' placeholder='blur' quality={10} />
+                <Image src={dlwash} alt="dirt-less wash cleaning after" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
                 <div className="otherservices-desc">
                     <a href='services/DLWash' className='service-heading-link'>Dirt-Less Wash</a>
                     <p className="secondary-text">Starting at: <span>$75</span></p>
@@ -84,7 +84,7 @@ export default function OtherServices() {
             </div>
 
             <div className="service-card">
-                <Image src={pdlwash} alt="premium dirt-less wash cleaning after" className='otherservices-image' loading='lazy' placeholder='blur' quality={10} />
+                <Image src={pdlwash} alt="premium dirt-less wash cleaning after" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
                 <div className="otherservices-desc">
                     <a href='/services/PDLWash' className='service-heading-link'>Premium Dirt-Less Wash</a>
                     <p className="secondary-text">Starting at: <span>$150</span></p>
@@ -95,7 +95,7 @@ export default function OtherServices() {
             </div>
 
             <div className="service-card">
-                <Image src={engine} alt="engine bay cleaning after" className='otherservices-image' loading='lazy' placeholder='blur' quality={10} />
+                <Image src={engine} alt="engine bay cleaning after" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
                 <div className="otherservices-desc">
                     <a href='/services/Engine' className='service-heading-link'>Engine Cleaning</a>
                     <p className="secondary-text">Starting at: <span>$80</span></p>
@@ -111,7 +111,7 @@ export default function OtherServices() {
         </div>
         <section className="otherservices-container">
             <div className="service-card">
-                <Image src={stage1} alt="stage 1 paint correction cleaning after" className='otherservices-image' loading='lazy' placeholder='blur' quality={10} />
+                <Image src={stage1} alt="stage 1 paint correction cleaning after" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
                 <div className="otherservices-desc">
                     <a href='/services/SinglePC' className='service-heading-link'>Single Stage Paint Correction</a>
                     <p className="secondary-text">Starting at: <span>$300</span></p>
@@ -122,7 +122,7 @@ export default function OtherServices() {
             </div>
 
             <div className="service-card">
-                <Image src={stage2} alt="stage 2 paint correction cleaning after" className='otherservices-image' loading='lazy' placeholder='blur' quality={10} />
+                <Image src={stage2} alt="stage 2 paint correction cleaning after" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
                 <div className="otherservices-desc">
                     <a href='/services/TwoPC' className='service-heading-link'>Two Stage Paint Correction</a>
                     <p className="secondary-text">Starting at: <span>$450</span></p>

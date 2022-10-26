@@ -1183,6 +1183,7 @@ hr {
     position: static;
     height: auto;
     width: 75vw;
+    overflow: hidden;
   }
 
   .main-ul {
