@@ -1194,9 +1194,8 @@ hr {
   }
 
   .sub-ul {
-    position: absolute;
-    width: 325px;
-    top: 35px;
+    position: fixed;
+    top: 55px;
   }
 
   .menu-bars {
