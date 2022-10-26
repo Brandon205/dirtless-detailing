@@ -42,7 +42,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <h4 className='dd-desc'>We also offer a <span className='special-package'>mobile</span> service free of charge!</h4>
+                    <p className='dd-desc'>We also offer a <span className='special-package'>mobile</span> service free of charge!</p>
 
                     <a href="/#popular-services" className="learn-btn top-learn-btn">Learn More</a>
                     <a href="/#contact" className="quote-btn top-quote-btn">Get a Quote</a>
