@@ -865,6 +865,17 @@ hr {
 
 .service-aside {
   display: none;
+  flex-direction: column;
+  background-color: var(--contact-bkg-clr-light);
+  border-radius: 0.5rem;
+  margin: 10px auto;
+  width: 275px;
+  color: black;
+  padding: 1rem;
+}
+
+.addons-aside {
+  display: block;
 }
 
 .examples-container {
@@ -1147,13 +1158,6 @@ hr {
 
   .service-aside {
     display: flex;
-    flex-direction: column;
-    background-color: var(--contact-bkg-clr-light);
-    border-radius: 0.5rem;
-    margin: 10px auto;
-    width: 275px;
-    color: black;
-    padding: 1rem;
   }
 
   .combo-container {

@@ -64,7 +64,7 @@ export default function PDLWash() {
             </div>
 
             <div className='aside-container'>
-              <div className='service-aside'>
+              <div className='service-aside addons-aside'>
               <h3><a href="/services/Addons" style={{color: 'black'}}>Extra Addons</a></h3>
                 <div className="aside-links"> 
                   <div className="addon-container">
