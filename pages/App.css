@@ -3,19 +3,20 @@
   --contact-bkg-clr: #252525;
   --contact-bkg-clr-light: #cecfd5;
   --nav-bkg-clr: #101010;
-  /* --nav-bkg-clr: rgba(245, 245, 245); */
-  /* --menu-container-clr: rgba(245, 245, 245); */
   --nav-color: #636364;
   --boxshadow-clr: rgb(213, 213, 213);
   --footer-bkg: #060606;
 
   /** Button colors **/
-  --main-clr: #fc4c00;
-  --main-clr-hover: #d2470b;
+  /* --main-clr: #fc4c00; */
+  --main-clr: #c83f03;
+  /* --main-clr-hover: #d2470b; */
+  --main-clr-hover: #aa3b0b;
   --quote-clr: #1D96ED;
 
   /** Text and smaller colors **/
   --supporting-text: #6B6B6B;
+  --secondary-text: #575757;
   --heading-clr1: #fff;
   --heading-clr2: rgb(185, 185, 185);
 }
@@ -596,7 +597,7 @@ header h1 {
 }
 
 .service-desc {
-  color: gray;
+  color: var(--secondary-text);
 }
 
 .card-hr {
@@ -608,7 +609,7 @@ header h1 {
 
 .secondary-text {
   display: inline-block;
-  color: gray;
+  color: var(--secondary-text);
   padding: 0;
   margin: 0;
 }
@@ -720,7 +721,7 @@ hr {
 }
 
 .footer-link:hover {
-  color: gray;
+  color: rgb(246, 246, 246);
   text-decoration: underline;
 }
 

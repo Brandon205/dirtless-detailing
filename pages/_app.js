@@ -165,8 +165,8 @@ export default function MyApp({ Component, pageProps }) {
                 <div className='socials-container'>
                     <h4>Copyright Dirt-Less Detailing 2022</h4>
                     <div>
-                        <a href="https://www.facebook.com/DirtLessDetailing/" className="socials" target="_blank" rel="noreferrer"><FaFacebook /></a>
-                        <a href="https://www.instagram.com/dirtlessdetailing/" className="socials" target="_blank" rel="noreferrer"><FaInstagram /></a>
+                        <a href="https://www.facebook.com/DirtLessDetailing/" className="socials" target="_blank" rel="noreferrer" aria-label="Facebook"><FaFacebook /></a>
+                        <a href="https://www.instagram.com/dirtlessdetailing/" className="socials" target="_blank" rel="noreferrer" aria-label="Instagram"><FaInstagram /></a>
                     </div>
                 </div>
             </footer>
