@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Zoom from 'react-medium-image-zoom';
 import Image from 'next/image';
+import Head from 'next/head';
 import 'react-medium-image-zoom/dist/styles.css';
 
 import cover from '../../public/imgs/BioCover.webp';
@@ -38,6 +39,9 @@ export default function Bio() {
 
   return (
     <section className='service-content-container'>
+      <Head>
+        <title>Dirt-Less Detailing | BioHazards</title>
+      </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="biohazard cleaning cover" layout="fill" objectFit='cover' priority />
       </div>

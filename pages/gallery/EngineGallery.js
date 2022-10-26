@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Head from 'next/head';
 import { imagery } from '../../public/imgs/pageimgs/engine/index';
 
 import cover from '../../public/imgs/engineGallery.webp';
@@ -7,6 +8,9 @@ import cover from '../../public/imgs/engineGallery.webp';
 export default function PaintCorrectionGallery() {
   return (
     <section className='gallery-content-container'>
+      <Head>
+        <title>Dirt-Less Detailing | Engine Gallery</title>
+      </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="engine cleaning cover" layout="fill" objectFit='cover' priority />
       </div> 

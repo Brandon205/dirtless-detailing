@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
+import Head from 'next/head';
 
 import cover from '../../public/imgs/addonsCover.webp';
 
@@ -42,6 +43,9 @@ export default function Addons() {
 
   return (
     <section className='service-content-container'>
+      <Head>
+        <title>Dirt-Less Detailing | Addons</title>
+      </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="addons cover" layout="fill" objectFit='cover' priority />
       </div>

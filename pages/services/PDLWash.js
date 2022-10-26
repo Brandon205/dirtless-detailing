@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Head from 'next/head';
 
 import cover from '../../public/imgs/PDLWashCover.webp';
 
@@ -37,6 +38,9 @@ export default function PDLWash() {
   })
   return (
     <section className='service-content-container'>
+      <Head>
+        <title>Dirt-Less Detailing | Premium Wash</title>
+      </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="Premium Dirt-Less wash cover" layout="fill" objectFit='cover' priority />
       </div>

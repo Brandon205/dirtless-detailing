@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Head from 'next/head';
 
 import cover from '../../public/imgs/headlinersCover.webp';
 
@@ -30,6 +31,9 @@ export default function Headliners() {
   })
   return (
     <section className='service-content-container'>
+      <Head>
+        <title>Dirt-Less Detailing | Headliners</title>
+      </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="Headliner cleaning cover" layout="fill" objectFit='cover' priority />
       </div>

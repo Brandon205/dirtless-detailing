@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Head from 'next/head';
 import { imagery } from '../../public/imgs/pageimgs/interior/index';
 
 import cover from '../../public/imgs/fullIntExCover.webp';
@@ -7,6 +8,9 @@ import cover from '../../public/imgs/fullIntExCover.webp';
 export default function FullIntGallery() {
   return (
     <section className='gallery-content-container'>
+      <Head>
+        <title>Dirt-Less Detailing | Full Interior Gallery</title>
+      </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="dirt-less wash cover" layout="fill" objectFit='cover' priority />
       </div>

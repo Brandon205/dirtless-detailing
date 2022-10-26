@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Head from 'next/head';
 
 import cover from '../../public/imgs/ComboCover.webp';
 
@@ -56,6 +57,9 @@ export default function Combo() {
 
   return (
     <section className='service-content-container'>
+      <Head>
+        <title>Dirt-Less Detailing | Combo</title>
+      </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="Combo wash cover" layout="fill" objectFit='cover' priority />
       </div>

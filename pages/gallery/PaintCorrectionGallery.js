@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Head from 'next/head';
 import { imagery } from '../../public/imgs/pageimgs/paintCorrection/index';
 
 import cover from '../../public/imgs/correctionGallery.webp';
@@ -7,6 +8,9 @@ import cover from '../../public/imgs/correctionGallery.webp';
 export default function PaintCorrectionGallery() {
   return (
     <section className='gallery-content-container'>
+      <Head>
+        <title>Dirt-Less Detailing | Paint Correction Gallery</title>
+      </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="paint correction cover" layout="fill" objectFit='cover' priority />
       </div>
