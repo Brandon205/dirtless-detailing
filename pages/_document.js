@@ -1,10 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
-
-  // <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-  // <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-  
   return (
     <Html>
       <Head>
