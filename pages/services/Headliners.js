@@ -35,7 +35,7 @@ export default function Headliners() {
         <title>Dirt-Less Detailing | Headliners</title>
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
-        <Image src={cover} alt="Headliner cleaning cover" layout="fill" objectFit='cover' priority />
+        <Image src={cover} alt="Clean headliners" layout="fill" objectFit='cover' priority />
       </div>
       <h1 className='servicepage-header'>Headliners</h1>
 

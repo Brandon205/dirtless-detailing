@@ -39,7 +39,7 @@ export default function DLWash() {
         <title>Dirt-Less Detailing | Wash</title>
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
-        <Image src={cover} alt="dirt-less wash cover" layout="fill" objectFit='cover' priority />
+        <Image src={cover} alt="Vehicle after a Dirt-Less Wash" layout="fill" objectFit='cover' priority />
       </div>
       <h1 className='servicepage-header'>Dirt-Less Wash</h1>
 

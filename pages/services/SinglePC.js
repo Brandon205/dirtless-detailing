@@ -46,7 +46,7 @@ export default function SinglePC() {
         <title>Dirt-Less Detailing | Single Stage</title>
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
-        <Image src={cover} alt="Single Stage Paint Correction cover" layout="fill" objectFit='cover' priority />
+        <Image src={cover} alt="Vehicle after a Single Stage Paint Correction" layout="fill" objectFit='cover' priority />
       </div>
       <h1 className='servicepage-header'>Single Stage Paint Correction</h1>
 

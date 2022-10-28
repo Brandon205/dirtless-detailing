@@ -44,7 +44,7 @@ export default function TwoPC() {
         <title>Dirt-Less Detailing | Two Stage</title>
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
-        <Image src={cover} alt="Two Stage Paint Correction cover" layout="fill" objectFit='cover' priority />
+        <Image src={cover} alt="Vehicle after a Two Stage Paint Correction" layout="fill" objectFit='cover' priority />
       </div>
       <h1 className='servicepage-header'>Two Stage Paint Correction</h1>
 

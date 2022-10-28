@@ -17,7 +17,7 @@ export default function PopularServices() {
                 <p className="price">Starting at: <span>$200</span></p>
             </div>
             <div className='popular-img'>
-                <Image style={{borderRadius: '1rem 1rem 0 0'}} src={interior} alt="car interior before and after" layout='fill' objectFit='cover' loading='lazy' quality={25} />
+                <Image style={{borderRadius: '1rem 1rem 0 0'}} src={interior} alt="Car interior before and after" layout='fill' objectFit='cover' loading='lazy' quality={25} />
             </div>
 
             <div className="popular-desc">
@@ -62,7 +62,7 @@ export default function PopularServices() {
                 <p className="price">Starting at: <span>$150</span></p>
             </div>
             <div className="popular-img">
-                <Image style={{borderRadius: '1rem 1rem 0 0'}} src={dlWash} alt="car exterior" layout='fill' objectFit='cover' loading='lazy' quality={25} />
+                <Image style={{borderRadius: '1rem 1rem 0 0'}} src={dlWash} alt="Car exterior after Dirt-Less Wash" layout='fill' objectFit='cover' loading='lazy' quality={25} />
             </div>
             
             <div className="popular-desc">
@@ -107,7 +107,7 @@ export default function PopularServices() {
                 <p className="price">Starting at: <span>$300</span></p>
             </div>
             <div className="popular-img">
-                <Image style={{borderRadius: '1rem 1rem 0 0'}} src={paint} alt="paint correction before and after" layout='fill' objectFit='cover' loading='lazy' quality={25} />
+                <Image style={{borderRadius: '1rem 1rem 0 0'}} src={paint} alt="Before and after a Paint Correction" layout='fill' objectFit='cover' loading='lazy' quality={25} />
             </div>
 
             <div className="popular-desc">

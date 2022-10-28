@@ -12,7 +12,7 @@ export default function PaintCorrectionGallery() {
         <title>Dirt-Less Detailing | Engine Gallery</title>
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
-        <Image src={cover} alt="engine cleaning cover" layout="fill" objectFit='cover' priority />
+        <Image src={cover} alt="Vehicle after a Engine Bay Cleaning" layout="fill" objectFit='cover' priority />
       </div> 
       <header>
         <h1 className='servicepage-heading'>Engine Cleaning Gallery</h1>

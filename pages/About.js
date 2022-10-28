@@ -7,7 +7,7 @@ export default function About() {
   return (
     <div className='App'>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
-        <Image src={cover} alt="worktruck cover" layout="fill" objectFit='cover' priority />
+        <Image src={cover} alt="Fully loaded worktruck" layout="fill" objectFit='cover' priority />
       </div>
       <div className='about-header'>
         <h1>About Us/FAQ</h1>

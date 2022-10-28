@@ -17,7 +17,7 @@ export default function Home() {
     return (
         <div className="App">
             <div className="maincover" style={{backgroundImage: 'url(' + cover + ')' }}>
-                <Image src={cover} layout="fill" objectFit='cover' alt="toyota tundra background" priority />
+                <Image src={cover} layout="fill" objectFit='cover' alt="Cleaned Toyota Tundra" priority />
             </div>
             <header className="home-header">
                 <div className='contact-left-container'>

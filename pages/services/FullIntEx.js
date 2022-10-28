@@ -41,7 +41,7 @@ export default function FullIntEx() {
         <title>Dirt-Less Detailing | Full Interior</title>
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
-        <Image src={cover} alt="Full Interior cleaning cover" layout="fill" objectFit='cover' priority />
+        <Image src={cover} alt="Vehicle after a Full Interior Cleaning" layout="fill" objectFit='cover' priority />
       </div>
       <h1 className='servicepage-header'>Full Interior Cleaning</h1>
 

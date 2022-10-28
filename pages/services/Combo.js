@@ -61,7 +61,7 @@ export default function Combo() {
         <title>Dirt-Less Detailing | Combo</title>
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
-        <Image src={cover} alt="Combo wash cover" layout="fill" objectFit='cover' priority />
+        <Image src={cover} alt="Vehicle after a Combo Wash" layout="fill" objectFit='cover' priority />
       </div>
       <h1 className='servicepage-header'>The Full Interior and Exterior Package</h1>
 

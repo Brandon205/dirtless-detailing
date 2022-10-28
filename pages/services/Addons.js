@@ -47,7 +47,7 @@ export default function Addons() {
         <title>Dirt-Less Detailing | Addons</title>
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
-        <Image src={cover} alt="addons cover" layout="fill" objectFit='cover' priority />
+        <Image src={cover} alt="Vehicle after a Dirt-Less Wash with Glass Polishing addons" layout="fill" objectFit='cover' priority />
       </div>
       <h1 className='servicepage-header'>Addons</h1>
 

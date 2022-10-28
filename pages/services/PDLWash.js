@@ -42,7 +42,7 @@ export default function PDLWash() {
         <title>Dirt-Less Detailing | Premium Wash</title>
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
-        <Image src={cover} alt="Premium Dirt-Less wash cover" layout="fill" objectFit='cover' priority />
+        <Image src={cover} alt="Vehicle after a Premium Dirt-Less Wash" layout="fill" objectFit='cover' priority />
       </div>
       <h1 className='servicepage-header'>Premium Dirt-Less Wash</h1>
 
