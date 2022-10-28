@@ -17,12 +17,11 @@ export default function Home() {
     return (
         <div className="App">
             <div className="maincover" style={{backgroundImage: 'url(' + cover + ')' }}>
-                <Image src={cover} layout="fill" objectFit='cover' priority />
+                <Image src={cover} layout="fill" objectFit='cover' alt="toyota tundra background" priority />
             </div>
             <header className="home-header">
                 <div className='contact-left-container'>
-                    <h1 className='title-top'>Your Bonney Lake</h1><br />
-                    <h1 className='title-bottom'>Detailing Specialists</h1>
+                    <h1 className='title-top'>Your Bonney Lake<br /><span className='title-bottom'>Detailing Specialists</span></h1>
 
                     <div className="header-icons-container">
                         <div>
@@ -52,7 +51,7 @@ export default function Home() {
             <Contact />
 
             <div id="popular-services" className='separator-container'>
-                <h1 className="service-title">Popular Detailing Services</h1>
+                <h2 className="service-title">Popular Detailing Services</h2>
             </div>
             
             <PopularServices />

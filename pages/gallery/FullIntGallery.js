@@ -12,7 +12,7 @@ export default function FullIntGallery() {
         <title>Dirt-Less Detailing | Full Interior Gallery</title>
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
-        <Image src={cover} alt="dirt-less wash cover" layout="fill" objectFit='cover' priority />
+        <Image src={cover} alt="full interior cleaning cover" layout="fill" objectFit='cover' priority />
       </div>
       <header>
         <h1 className='servicepage-heading'>Full Interior Cleaning Gallery</h1>
