@@ -56,7 +56,7 @@ export default function Home() {
             
             <PopularServices />
 
-            <a href="/#contact" className="quote-btn main-quote-btn">Get a Quote</a>
+            <a style={{marginRight: 48}} href="/#contact" className="quote-btn main-quote-btn">Get a Quote</a>
 
             <div className='separator-container'>
                 <h2 className='service-title'>COMBO DEALS</h2>
@@ -111,7 +111,7 @@ export default function Home() {
             </article>
 
             <section className="serviceareas-container">
-                <h2>We are currently servicing:</h2>
+                <h2>We are currently detailing in:</h2>
                 <p className='cities'>Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham.</p>
                 <p>As part of our simple and hassle free service, you can come to us or we can come to you with select packages!</p>
             </section>
