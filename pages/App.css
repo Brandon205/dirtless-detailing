@@ -8,10 +8,8 @@
   --footer-bkg: #060606;
 
   /** Button colors **/
-  /* --main-clr: #fc4c00; */
   --main-clr: #c83f03;
-  /* --main-clr-hover: #d2470b; */
-  --main-clr-hover: #aa3b0b;
+  --main-clr-hover: #98350b;
   --quote-clr: #1D96ED;
 
   /** Text and smaller colors **/
@@ -104,11 +102,12 @@ body {
   border-radius: 0.5rem;
   transition: 0.5s;
   margin-top: 5px;
+  transition: 1s
 }
 
 .nav-quote-btn:hover {
   background-color: rgba(255, 255, 255, 0);
-  color: black;
+  outline: 1px solid var(--main-clr);
 }
 
 .quote-btn {
@@ -123,7 +122,7 @@ body {
   color: black;
   font-weight: 300;
   letter-spacing: 0.7;
-  transition: 0.5s;
+  transition: 0.75s;
 }
 
 .quote-btn:hover {
@@ -137,7 +136,6 @@ body {
 
 .main-quote-btn {
   margin-bottom: 3rem;
-  margin-right: 3rem;
 }
 
 .service-page-quote-btn {
@@ -555,6 +553,7 @@ header h1 {
   display: flex;
   flex-direction: column;
   flex: 1;
+  gap: 0.5rem;
 }
 
 .otherservices-container h1 {
@@ -628,7 +627,7 @@ header h1 {
   font-weight: bold;
   border-radius: 1rem;
   cursor: pointer;
-  width: 100%;
+  width: auto;
 }
 
 .readmore:hover {
@@ -676,6 +675,15 @@ header h1 {
 .reviewer {
   font-size: 1.25em;
   font-weight: bold;
+}
+
+.serviceareas-container h2 {
+  margin-bottom: 0.5rem;
+}
+
+.cities {
+  margin: 0;
+  color: var(--secondary-text);
 }
 
 /** Footer CSS **/
@@ -895,12 +903,27 @@ hr {
   margin-bottom: 1rem
 }
 
+.combo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.combo-img-container {
+  margin-top: 1rem;
+  max-width: 360px;
+}
+
 .combo-container {
   background-color: var(--contact-bkg-clr-light);
   width: 275px;
   margin: 1rem auto 0 auto;
   padding: 0.75rem;
   border-radius: 15px;
+}
+
+.combo-desc-area div a:last-child {
+  padding-right: 0;
 }
 
 .service-link {
@@ -1043,7 +1066,7 @@ hr {
     flex-direction: row;
     justify-content: space-around;
     margin-top: 3rem;
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
   }
 
   .service-card {
@@ -1163,6 +1186,12 @@ hr {
     display: flex;
   }
 
+  .combo-section {
+    flex-direction: row;
+    gap: 1.5rem;
+    text-align: left;
+  }
+
   .combo-container {
     width: 55vw;
   }
@@ -1269,6 +1298,10 @@ hr {
 
   .contact-container-right {
     width: 450px
+  }
+
+  .combo-section {
+    max-width: 80vw;
   }
 
   .servicepage-heading {

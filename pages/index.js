@@ -111,7 +111,8 @@ export default function Home() {
             </article>
 
             <section className="serviceareas-container">
-                <h2 id="temp-hash">Servicing most of the Pierce and King County Area</h2>
+                <h2>We are currently servicing:</h2>
+                <p className='cities'>Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham.</p>
                 <p>As part of our simple and hassle free service, you can come to us or we can come to you with select packages!</p>
             </section>
         </div>
