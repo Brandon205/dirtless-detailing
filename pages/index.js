@@ -26,8 +26,8 @@ export default function Home() {
                     <div className="header-icons-container">
                         <div>
                             <FaRegStar className='header-icon' />
-                            <p className="header-desc">15+</p>
-                            <span className='header-desc-span'>5 Star Reviews</span>
+                            <p className="header-desc">Plenty</p>
+                            <span className='header-desc-span'>of 5 Star Reviews</span>
                         </div>
                         <div>
                             <MdOutlineLocalCarWash className='header-icon' />
@@ -41,7 +41,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <p className='dd-desc'>We also offer a <span className='special-package'>mobile</span> service free of charge!</p>
+                    <p className='dd-desc'>We also offer a <span className='special-package'>mobile</span> service free of charge on select packages!</p>
 
                     <a href="/#popular-services" className="learn-btn top-learn-btn">Learn More</a>
                     <a href="/#contact" className="quote-btn top-quote-btn">Get a Quote</a>
@@ -112,7 +112,7 @@ export default function Home() {
 
             <section className="serviceareas-container">
                 <h2 id="temp-hash">Servicing most of the Pierce and King County Area</h2>
-                <p>As part of our simple and hassle free service, you can come to us or we can come to you!</p>
+                <p>As part of our simple and hassle free service, you can come to us or we can come to you with select packages!</p>
             </section>
         </div>
     )

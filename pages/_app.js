@@ -106,7 +106,7 @@ export default function MyApp({ Component, pageProps }) {
                                             <a href="/gallery/FullIntGallery" className='menu-link'>Full Interior Gallery</a>
                                         </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <a href="/gallery/DLWashGallery" className='menu-link'>Dirt-Less Wash Gallery</a>
+                                            <a href="/gallery/ExteriorWashGallery" className='menu-link'>Exterior Wash Gallery</a>
                                         </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
                                             <a href="/gallery/PaintCorrectionGallery" className='menu-link'>Paint Correction Gallery</a>

@@ -70,7 +70,7 @@ export default function FullIntEx() {
 
         <div className="combo-container">
           <h2>Get a <span className='special-package'>free</span> Engine cleaning!</h2>
-          <p className="subtext">When you book this Full Interior Cleaning (with extraction) and a <a href="/services/PDLWash">Premium Dirt-Less Wash</a> together we will clean out your engine bay at no extra cost. (Click <a href='/services/Combo'>here</a> to learn more).</p>
+          <p className="subtext">When you book this Full Interior Cleaning and a <a href="/services/PDLWash">Premium Dirt-Less Wash</a> together we will clean out your engine bay at no extra cost. (Click <a href='/services/Combo'>here</a> to learn more).</p>
         </div>
 
         <div>

@@ -622,13 +622,13 @@ header h1 {
 
 .readmore {
   display: inline-block;
-  margin-top: 0.75rem;
   color: var(--main-clr);
   padding-right: 2em;
   text-decoration: none;
   font-weight: bold;
   border-radius: 1rem;
   cursor: pointer;
+  width: 100%;
 }
 
 .readmore:hover {
@@ -1047,7 +1047,7 @@ hr {
   }
 
   .service-card {
-    max-width: 350px;
+    max-width: 360px;
   }
 
   .contact-container {
@@ -1174,7 +1174,7 @@ hr {
   }
 
   .readmore {
-    max-width: 50%;
+    /* max-width: 50%; */
     margin: 0 auto;
   }
 

@@ -69,7 +69,7 @@ export default function Addons() {
 
         <div>
           <h2>Our Pricing</h2>
-          <h4>We charge an hourly rate for this service.</h4>
+          <h4>We charge an hourly rate for this service, prices may vary based on condition of the vehicle.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
               <h4 className="size">All Vehicles</h4>
@@ -98,7 +98,7 @@ export default function Addons() {
 
         <div>
           <h2>Our Pricing</h2>
-          <h4>We charge an hourly rate for this service.</h4>
+          <h4>We charge an hourly rate for this service, prices may vary based on condition of the vehicle.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
               <h4 className="size">All Vehicles</h4>

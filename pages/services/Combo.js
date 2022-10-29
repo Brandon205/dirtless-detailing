@@ -103,7 +103,7 @@ export default function Combo() {
 
         <div className="combo-container">
           <h2>You get an <span className='special-package'>included</span> Engine cleaning with this order!</h2>
-          <p className="subtext">When you book a <a href="/services/PDLWash">Premium Dirt-Less Wash</a> and a <a href="/services/FullIntEx">Full Interior Cleaning</a> (with Extraction) together we will clean out your engine bay at no extra cost. (Click the Get Started in the navigation to get started).</p>
+          <p className="subtext">When you book a <a href="/services/PDLWash">Premium Dirt-Less Wash</a> and a <a href="/services/FullIntEx">Full Interior Cleaning</a> together we will clean out your engine bay at no extra cost. (Click the Get Started in the navigation to get started).</p>
         </div>
 
         <div>
