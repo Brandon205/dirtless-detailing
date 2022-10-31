@@ -69,7 +69,7 @@ export default function Home() {
             </div>
 
             <article className="reviews-container">
-                <Carousel className="review-carousel" style={styles} infiniteLoop autoPlay swipeable={true} showThumbs={false} interval={8000}>
+                <Carousel className="review-carousel" style={styles} infiniteLoop autoPlay stopOnHover showThumbs={false} swipeable showArrows interval={7000} emulateTouch>
                     <div>
                         <p className="review">Brenden answered the first phone call gave a quote over the phone, I did not have to bring the car anywhere. He provided a value and was on time and was extremely thorough. Did not attempt to upsell me and increase price, day of the appointment, like another Bonney Lake detailer did. Can't recommend Dirt-Less Detail enough. My wife's Jeep Cherokee looks new!</p>
                         <p className="reviewer">Darren B.</p>
@@ -107,8 +107,8 @@ export default function Home() {
                         <p className="reviewer">Terri E.</p>
                     </div>
                 </Carousel>
-                <p>Check out more reviews on our <a style={{cursor: 'pointer', marginBottom: 16}} href="https://www.facebook.com/DirtLessDetailing/reviews">Facebook</a> page.</p>
             </article>
+            <p>Check out more reviews on our <a style={{cursor: 'pointer'}} href="https://www.facebook.com/DirtLessDetailing/reviews">Facebook</a> page.</p>
 
             <section className="serviceareas-container">
                 <h2>We are currently detailing in:</h2>

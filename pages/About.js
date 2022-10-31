@@ -7,7 +7,7 @@ export default function About() {
   return (
     <div className='App'>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
-        <Image src={cover} alt="Fully loaded worktruck" layout="fill" objectFit='cover' priority />
+        <Image src={cover} alt="Our Worktruck" layout="fill" objectFit='cover' priority />
       </div>
       <div className='about-header'>
         <h1>About Us/FAQ</h1>
@@ -20,7 +20,7 @@ export default function About() {
 
         <h2>FAQ</h2>
         <ul className='faq-ul'>
-          <li className='faq-li'>What do you need from us when you get here?</li>
+          <li className='faq-li'>What do you need from me when you get here?</li>
           <p className='faq-p'>All we need is an electrical outlet, a water spigot, and preferably all personal items out of the car.</p>
         </ul>
         <ul className='faq-ul'>

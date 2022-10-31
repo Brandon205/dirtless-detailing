@@ -656,15 +656,15 @@ header h1 {
 
 /** Home Page Review CSS **/
 .reviews-container {
-  position: relative;
-  z-index: -999;
+  width: 100%;
 }
 
 .review-carousel {
+  user-select: none;
   padding: 2em;
   font-size: 1.25rem;
   line-height: 1.75;
-  width: 85vw;
+  width: 97vw;
   margin: 0 auto;
 }
 

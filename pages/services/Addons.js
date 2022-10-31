@@ -65,7 +65,6 @@ export default function Addons() {
             </ol>
           </div>
         </div>
-        <a href="/#contact" className='quote-btn top-quote-btn service-page-quote-btn'>Get Started!</a>
 
         <div>
           <h2>Our Pricing</h2>
