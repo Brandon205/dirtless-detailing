@@ -5,14 +5,14 @@ import Head from 'next/head';
 import cover from '../../public/imgs/ComboCover.webp';
 
 const pdlSteps = [
-    ["Wash Vehicle", "Thorough strip wash top to bottom including the gas door with the 2 bucket method or equivalent."],
-    ["Wheel Cleaning", "Clean wheels, wheel wells, wheel barrels."],
-    ["Wax Prep - Clay Bar", "Clay bar the whole vehicle so sealant properly adheres and paint is smooth."],
-    ["Wax Prep - Iron Decontamination", "Iron Decontamination to make sure all microscopic iron contaminants are off of the paint, these are things that the clay bar won't get, this improves wax adhesion as well."],
-    ["Remove tar and sap", "Remove any and all tar and sap from the exterior."],
-    ["Dry Vehicle", "Dry the whole vehicle with clean towels and Air blowers."],
-    ["Apply Wax", "Apply 6 month or more sealant."],
-    ["Door Jambs", "Clean Door Jambs."]
+  ["Wash Vehicle", "Thorough strip wash top to bottom including the gas door with the 2 bucket method or equivalent."],
+  ["Wheel Cleaning", "Clean wheels, wheel wells, wheel barrels."],
+  ["Wax Prep - Clay Bar", "Clay bar the whole vehicle so sealant properly adheres and paint is smooth."],
+  ["Wax Prep - Iron Decontamination", "Iron Decontamination to make sure all microscopic iron contaminants are off of the paint, these are things that the clay bar won't get, this improves wax adhesion as well."],
+  ["Remove tar and sap", "Remove any and all tar and sap from the exterior."],
+  ["Dry Vehicle", "Dry the whole vehicle with clean towels and Air blowers."],
+  ["Apply Wax", "Apply 6 month or more sealant."],
+  ["Door Jambs", "Clean Door Jambs."]
 ]
 
 const fullIntSteps = [
@@ -27,33 +27,33 @@ const fullIntSteps = [
 
 export default function Combo() {
 
-    const pdlContent = pdlSteps.map((item, id) => {
-        return (
-          <li key={id} className="item">
-            <div className="step-number-container">
-              <h3 className='step-number'>{id + 1}</h3><div className="vertical-rule"></div>
-            </div>
-            <div className="step-container">
-              <h4 className="step-title">{item[0]}</h4>
-              <p className='step-desc'>{item[1]}</p>
-            </div>
-          </li>
-        )
-      })
+  const pdlContent = pdlSteps.map((item, id) => {
+    return (
+      <li key={id} className="item">
+        <div className="step-number-container">
+          <h3 className='step-number'>{id + 1}</h3><div className="vertical-rule"></div>
+        </div>
+        <div className="step-container">
+          <h4 className="step-title">{item[0]}</h4>
+          <p className='step-desc'>{item[1]}</p>
+        </div>
+      </li>
+    )
+  })
 
-      const fullIntContent = fullIntSteps.map((item, id) => {
-        return (
-          <li key={id} className="item">
-            <div className='step-number-container'>
-              <h3 className='step-number'>{id + 1}</h3><div className="vertical-rule"></div>
-            </div>
-            <div className='step-container'>
-              <h4 className="step-title">{item[0]}{id === 1 ? <span className='special-package'>*</span> : ""}</h4>
-              <p className='step-desc'>{item[1]}</p>
-            </div>
-          </li>
-        )
-      })
+  const fullIntContent = fullIntSteps.map((item, id) => {
+    return (
+      <li key={id} className="item">
+        <div className='step-number-container'>
+          <h3 className='step-number'>{id + 1}</h3><div className="vertical-rule"></div>
+        </div>
+        <div className='step-container'>
+          <h4 className="step-title">{item[0]}{id === 1 ? <span className='special-package'>*</span> : ""}</h4>
+          <p className='step-desc'>{item[1]}</p>
+        </div>
+      </li>
+    )
+  })
 
   return (
     <section className='service-content-container'>
@@ -68,19 +68,26 @@ export default function Combo() {
       <div className='main-content-container'>
         <div className="process-container" id="combo-process">
           <div>
-            <h2>Our Premium Exterior Cleaning Process</h2>
-            <ol className='list'>
-              {pdlContent}
-            </ol>
+
+            <div>
+              <h2>Our Exterior Cleaning Process</h2>
+              <ol className='list'>
+                {pdlContent}
+              </ol>
+            </div>
+
+            <div>
+              <h2 className='cleaning-process-title'>Our Interior Cleaning Process*</h2>
+              <ol className='list'>
+                {fullIntContent}
+              </ol>
+              <h4 style={{marginTop: 0}}>*Headliners not included</h4>
+              <h4><span className='special-package'>*</span>Extraction Package Only</h4>
+            </div>
+
           </div>
+
           <div>
-            <h2 className='cleaning-process-title'>Our Interior Cleaning Process*</h2>
-            <ol className='list'>
-              {fullIntContent}
-            </ol>
-            <h4 style={{marginTop: 0}}>*Headliners not included</h4>
-            <h4><span className='special-package'>*</span>Extraction Package Only</h4>
-          </div>
 
             <div className='aside-container'>
               <div className='service-aside addons-aside'>
@@ -97,13 +104,21 @@ export default function Combo() {
                 </div>
               </div>
             </div>
+
+            <div className='aside-container'>
+              <div className='service-aside addons-aside'>
+              <h3><a href="/services/Addons" style={{color: 'black'}}>Combo Deal</a></h3>
+                <div className="aside-links"> 
+                  <h3>You get an <span className='special-package'>included</span> Engine Cleaning with this order!</h3>
+                  <p className="subtext">When you book a <a href="/services/PDLWash">Premium Dirt-Less Wash</a> and a <a href="/services/FullIntEx">Full Interior Cleaning</a> together we will clean out your engine bay at no extra cost. (Click the Get Started in the navigation to begin).</p>
+                </div>
+              </div>
+            </div>
+
           </div>
 
         </div>
 
-        <div className="combo-container">
-          <h2>You get an <span className='special-package'>included</span> Engine cleaning with this order!</h2>
-          <p className="subtext">When you book a <a href="/services/PDLWash">Premium Dirt-Less Wash</a> and a <a href="/services/FullIntEx">Full Interior Cleaning</a> together we will clean out your engine bay at no extra cost. (Click the Get Started in the navigation to get begin).</p>
         </div>
 
         <div>
