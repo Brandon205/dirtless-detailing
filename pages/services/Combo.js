@@ -70,7 +70,7 @@ export default function Combo() {
           <div>
 
             <div>
-              <h2>Our Exterior Cleaning Process</h2>
+              <h2 className='cleaning-process-title'>Our Exterior Cleaning Process</h2>
               <ol className='list'>
                 {pdlContent}
               </ol>

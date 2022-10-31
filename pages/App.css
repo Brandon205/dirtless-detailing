@@ -92,7 +92,6 @@ body {
   font-weight: 300;
 }
 
-
 .nav-quote-btn {
   display: inline-block;
   padding: 0 0.35rem;
@@ -870,6 +869,7 @@ hr {
 }
 
 .cleaning-process-title {
+  font-size: 2em;
   margin-top: 0;
 }
 
@@ -1062,15 +1062,6 @@ hr {
   border-radius 1rem 1rem 0 0;
 }
 
-/* .gallery-container {
-  display: inline-flex; 
-  flex-direction: column;
-  justify-content: space-around;
-  gap: 1rem;
-  width: 75vw;
-  margin: 0 auto;
-} */
-
 @media screen and (min-width: 450px) {
   
   .popular-container {
@@ -1115,7 +1106,6 @@ hr {
   .example-img {
     width: 275px;
   }
-
 }
 
 @media screen and (min-width: 660px) {
@@ -1281,17 +1271,12 @@ hr {
     flex-direction: column;
   }
 
-
   .process-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 95vw;
     margin: 0 auto;
-  }
-
-  #combo-process {
-    flex-direction: column;
   }
 
   .examples-container {
