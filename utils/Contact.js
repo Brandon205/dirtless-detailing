@@ -51,7 +51,6 @@ export default function Contact() {
           method: "POST",
           body: formData
         }).then((test) => {
-            console.log(test)
             toast.success("Form submitted! Expect an email reply soon!", {
                 position: "bottom-center",
                 autoClose: 5000,
