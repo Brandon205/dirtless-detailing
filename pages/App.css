@@ -796,6 +796,17 @@ hr {
   margin: 25vh auto;
 }
 
+.gallery-container {
+  width: 90vw;
+  margin: 0 auto;
+  column-count: 1;
+  column-gap: 1rem;
+}
+
+.gallery-container div {
+  margin-bottom: 0.5rem;
+}
+
 .gallery-content-container {
   display: flex;
   flex-direction: column;
@@ -1048,17 +1059,17 @@ hr {
   background-color: var(--main-clr);
   color: white;
   width: 100%
-  border-radius 1rem 1rem 0 0 
+  border-radius 1rem 1rem 0 0;
 }
 
-.gallery-container {
-  display: flex; 
+/* .gallery-container {
+  display: inline-flex; 
   flex-direction: column;
   justify-content: space-around;
   gap: 1rem;
   width: 75vw;
   margin: 0 auto;
-}
+} */
 
 @media screen and (min-width: 450px) {
   
@@ -1086,6 +1097,10 @@ hr {
 
   .service-card {
     max-width: 360px;
+  }
+
+  .gallery-container {
+    column-count: 2;
   }
 
   .contact-container {
@@ -1290,14 +1305,7 @@ hr {
   }
 
   .gallery-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .gallery-image-div {
-    width: 20vw;
-    height: auto;
-    flex-grow: 1;
+    column-count: 3;
   }
 
 }
@@ -1325,12 +1333,7 @@ hr {
   }
 
   .gallery-container {
-    width: 100vw;
-  }
-
-  .gallery-image-div {
-    width: 25vw;
-    height: auto;
+    column-count: 4;
   }
 
 }
