@@ -53,8 +53,10 @@ export default function OtherServices() {
             <div className="service-card">
                 <Image src={fullintex} alt="Vehicle after a Full Interior Cleaning" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
                 <div className="otherservices-desc">
-                    <a href="/services/FullIntEx" className='service-heading-link'>Full Interior Cleaning</a>
-                    <p className="secondary-text">Starting at: <span>$200</span></p>
+                    <div>
+                        <a href="/services/FullIntEx" className='service-heading-link'>Full Interior Cleaning</a>
+                        <p className="secondary-text">Starting at: <span>$200</span></p>
+                    </div>
                     <p className="service-desc">A full interior detail will clean every crack and crevice of your vehicles interior. Optionally we can also do a hot water extraction to the carpets of your vehicle to get out deeper stains and dirt.</p>
 
                     <a href='/services/FullIntEx' className="readmore">Cleaning Combo Details {'>'}</a>
@@ -64,8 +66,10 @@ export default function OtherServices() {
             <div className="service-card">
                 <Image src={bio} alt="Vehicle before a biohazard cleaning" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
                 <div className="otherservices-desc">
-                    <a href='/services/Bio' className='service-heading-link'>Smokers Car/Bio/Mold/etc Cleaning</a>
-                    <p className="secondary-text">Starting at: <span>$300</span></p>
+                    <div>
+                        <a href='/services/Bio' className='service-heading-link'>Smokers Car/Bio/Mold/etc Cleaning</a>
+                        <p className="secondary-text">Starting at: <span>$300</span></p>
+                    </div>
                     <p className="service-desc">If there are bad smells like mold or smoke in your car this will be the package for you. We'll use cleaning chemicals suited for the job to get rid of those odors for good.</p>
 
                     <a href='/services/Bio' className="readmore">Biohazard Cleaning Details {'>'}</a>
@@ -74,8 +78,10 @@ export default function OtherServices() {
             <div className="service-card">
                 <Image src={headliner} alt="Headliner after a cleaning" className='otherservices-image' loading='lazy' placeholder='blur' quality={80} />
                 <div className="otherservices-desc">
-                    <a href='/services/Headliners' className='service-heading-link'>Headliners</a>
-                    <p className="secondary-text">Starting at: <span>$40</span></p>
+                    <div>
+                        <a href='/services/Headliners' className='service-heading-link'>Headliners</a>
+                        <p className="secondary-text">Starting at: <span>$40</span></p>
+                    </div>
                     <p className="service-desc">To clean your headliners we will determine the best plan of attack based on the materials in order to leave your headliners clean and prevent sagging or damage.</p>
 
                     <a href="services/Headliners" className="readmore">Headliner Cleaning Details {'>'}</a>
@@ -92,8 +98,10 @@ export default function OtherServices() {
             <div className="service-card">
                 <Image src={dlwash} alt="Vehicle after a Dirt-Less Wash Cleaning" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
                 <div className="otherservices-desc">
-                    <a href='services/DLWash' className='service-heading-link'>Dirt-Less Wash</a>
-                    <p className="secondary-text">Starting at: <span>$75</span></p>
+                    <div>
+                        <a href='services/DLWash' className='service-heading-link'>Dirt-Less Wash</a>
+                        <p className="secondary-text">Starting at: <span>$75</span></p>
+                    </div>
                     <p className="service-desc">Our Dirt-Less Wash will thoroughly clean the exterior of your vehicle with our tried and true cleaning process.</p>
 
                     <a href="/services/DLWash" className="readmore">Dirt-Less Wash Details {'>'}</a>
@@ -103,8 +111,10 @@ export default function OtherServices() {
             <div className="service-card">
                 <Image src={pdlwash} alt="Vehicle after a Premium Dirt-Less Cleaning" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
                 <div className="otherservices-desc">
-                    <a href='/services/PDLWash' className='service-heading-link'>Premium Dirt-Less Wash</a>
-                    <p className="secondary-text">Starting at: <span>$150</span></p>
+                    <div>
+                        <a href='/services/PDLWash' className='service-heading-link'>Premium Dirt-Less Wash</a>
+                        <p className="secondary-text">Starting at: <span>$150</span></p>
+                    </div>
                     <p className="service-desc">Our Premium exterior wash will go above and beyond the Dirt-Less Wash in the cleaning process and will top it off with a 6 month sealant or better to protect your vehicle.</p>
 
                     <a href="/services/PDLWash" className="readmore">Premium Dirt-Less Wash Details {'>'}</a>
@@ -114,8 +124,10 @@ export default function OtherServices() {
             <div className="service-card">
                 <Image src={engine} alt="Vehicle after a Engine Bay Cleaning" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
                 <div className="otherservices-desc">
-                    <a href='/services/Engine' className='service-heading-link'>Engine Bay</a>
-                    <p className="secondary-text">Starting at: <span>$80</span></p>
+                    <div>
+                        <a href='/services/Engine' className='service-heading-link'>Engine Bay</a>
+                        <p className="secondary-text">Starting at: <span>$80</span></p>
+                    </div>
                     <p className="service-desc">The engine bay is typically overlooked and tricky to clean, but we can take care of it for you and leave yours looking like new.</p>
 
                     <a href="/services/Engine" className="readmore">Engine Bay Cleaning Details{'>'}</a>
@@ -131,8 +143,10 @@ export default function OtherServices() {
             <div className="service-card">
                 <Image src={stage1} alt="Vehicle after a Single Stage Paint Correction" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
                 <div className="otherservices-desc">
-                    <a href='/services/SinglePC' className='service-heading-link'>Single Stage Paint Correction</a>
-                    <p className="secondary-text">Starting at: <span>$300</span></p>
+                    <div>
+                        <a href='/services/SinglePC' className='service-heading-link'>Single Stage Paint Correction</a>
+                        <p className="secondary-text">Starting at: <span>$300</span></p>
+                    </div>
                     <p className="service-desc">Our single stage paint correction can fix 60%-80% of minor damage and scratches and will leave your vehicle looking shinier than ever.</p>
 
                     <a href="services/SinglePC" className="readmore">Paint Correction Details {'>'}</a>
@@ -142,8 +156,10 @@ export default function OtherServices() {
             <div className="service-card">
                 <Image src={stage2} alt="Vehicle after a Two Stage Paint Correction" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
                 <div className="otherservices-desc">
-                    <a href='/services/TwoPC' className='service-heading-link'>Two Stage Paint Correction</a>
-                    <p className="secondary-text">Starting at: <span>$450</span></p>
+                    <div>
+                        <a href='/services/TwoPC' className='service-heading-link'>Two Stage Paint Correction</a>
+                        <p className="secondary-text">Starting at: <span>$450</span></p>
+                    </div>
                     <p className="service-desc">Our 2 stage paint correction is great for getting your car to a near perfect state. This is great for show cars need that extra time and effort to get to that showroom shine.</p>
 
                     <a href="services/TwoPC" className="readmore">Two Stage Paint Correction Details {'>'}</a>
