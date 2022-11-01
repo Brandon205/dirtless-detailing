@@ -137,15 +137,35 @@ body {
   margin-bottom: 3rem;
 }
 
+@keyframes serviceButton{
+  0% {
+    font-size: 1.5rem;
+    padding: 0.6rem
+  }
+
+  50% {
+    font-size: 1.8rem;
+    padding: 1rem;
+  }
+
+  100% {
+    font-size: 1.5rem;
+    padding: 0.75rem
+  }
+}
+
 .service-page-quote-btn {
-  position: fixed;
-  bottom: 1px;
-  right: 1px;
-  -webkit-transition: all 2s ease-in-out;
-  transition: all 2s ease-in-out;
-  z-index: 1;
-  background-color: var(--main-clr);
+  position: absolute;
+  top: 100%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  animation: 2s ease-in-out serviceButton;
+  background-color: rgba(0, 0, 0, 0);
   color: white;
+}
+
+.service-page-quote-btn:hover {
+  background-color: var(--main-clr)
 }
 
 /** Navigation CSS **/
@@ -771,12 +791,12 @@ hr {
 
 /** SIDE PAGE CSS **/
 .servicepage-header {
+  position: relative;
   color: var(--heading-clr1);
   font-size: 2em;
   padding-top: 25vh;
-  margin: 0 auto 48vh auto;
+  margin: 0 auto 42vh auto;
   z-index: 1;
-  position: relative;
 }
 
 .servicepage-heading {

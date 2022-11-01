@@ -63,7 +63,10 @@ export default function Combo() {
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="Vehicle after a Combo Wash" layout="fill" objectFit='cover' priority />
       </div>
-      <h1 className='servicepage-header'>The Full Interior and Exterior Package</h1>
+      <div className="servicepage-header">
+        <h1>The Full Interior and Exterior Package</h1>
+        <a href="/#contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+      </div>
 
       <div className='main-content-container'>
         <div className="process-container" id="combo-process">

@@ -44,7 +44,10 @@ export default function PDLWash() {
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="Vehicle after a Premium Dirt-Less Wash" layout="fill" objectFit='cover' priority />
       </div>
-      <h1 className='servicepage-header'>Premium Dirt-Less Wash</h1>
+      <div className="servicepage-header">
+        <h1>Premium Dirt-Less Wash</h1>
+        <a href="/#contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+      </div>
 
       <div className='main-content-container'>
         <div className="process-container">

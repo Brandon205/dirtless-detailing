@@ -4,7 +4,7 @@ import Image from 'next/image';
 // import { useRouter } from 'next/router';
 // import { ToastContainer, toast } from 'react-toastify';
 
-import Cookies from '../utils/Cookies';
+// import Cookies from '../utils/Cookies';
 
 import { FaBars, FaFacebook, FaInstagram, FaPhoneAlt, FaCarSide, FaPhotoVideo } from 'react-icons/fa';
 import { GoLocation } from "react-icons/go";

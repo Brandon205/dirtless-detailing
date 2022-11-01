@@ -46,7 +46,10 @@ export default function TwoPC() {
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="Vehicle after a Two Stage Paint Correction" layout="fill" objectFit='cover' priority />
       </div>
-      <h1 className='servicepage-header'>Two Stage Paint Correction</h1>
+      <div className="servicepage-header">
+        <h1>Two Stage Paint Correction</h1>
+        <a href="/#contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+      </div>
 
       <div className='main-content-container'>
         <div className="process-container">

@@ -43,7 +43,10 @@ export default function FullIntEx() {
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="Vehicle after a Full Interior Cleaning" layout="fill" objectFit='cover' priority />
       </div>
-      <h1 className='servicepage-header'>Full Interior Cleaning</h1>
+      <div className="servicepage-header">
+        <h1>Full Interior Cleaning</h1>
+        <a href="/#contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+      </div>
 
       <div className='main-content-container'>
         <div className='process-container'>

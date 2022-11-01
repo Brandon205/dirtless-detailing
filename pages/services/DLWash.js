@@ -41,7 +41,10 @@ export default function DLWash() {
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="Vehicle after a Dirt-Less Wash" layout="fill" objectFit='cover' priority />
       </div>
-      <h1 className='servicepage-header'>Dirt-Less Wash</h1>
+      <div className="servicepage-header">
+        <h1>Dirt-Less Wash</h1>
+        <a href="/#contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+      </div>
 
       <div className='main-content-container'>
         <div className="process-container">
