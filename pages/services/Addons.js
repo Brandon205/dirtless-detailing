@@ -28,8 +28,8 @@ export default function Addons() {
             <p className="service-desc">• This can be added onto any of our Exterior Washes or any of our Paint Correction Services when contacting us.</p>
 
             <div>
-              <a style={{marginBottom: 8}} href='/services/SinglePC' className="readmore">Paint Correction Details {'>'}</a>
-              <a href='/services/DLWash' className="readmore">Dirt-Less Wash Details {'>'}</a>
+              <a style={{marginBottom: 8}} href='/services/DLWash' className="readmore">Dirt-Less Wash Details {'>'}</a>
+              <a href='/services/SinglePC' className="readmore">Paint Correction Details {'>'}</a>
             </div>
           </div>
         </div>

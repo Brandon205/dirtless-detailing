@@ -40,7 +40,7 @@ export default function Bio() {
   return (
     <section className='service-content-container'>
       <Head>
-        <title>Dirt-Less Detailing | BioHazards</title>
+        <title>Dirt-Less Detailing | Biohazard Cleaning</title>
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="biohazard cleaning cover" layout="fill" objectFit='cover' priority />
