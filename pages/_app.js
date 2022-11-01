@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
-import { ToastContainer, toast } from 'react-toastify';
+// import { useRouter } from 'next/router';
+// import { ToastContainer, toast } from 'react-toastify';
 
 import Cookies from '../utils/Cookies';
 
@@ -20,35 +20,35 @@ export default function MyApp({ Component, pageProps }) {
     const [smallScreen, setSmallScreen] = useState(false);
     // const [cookies, setCookies] = useState(false);
 
-    const router = useRouter();
+    // const router = useRouter();
 
-    useEffect(() => {
-        import('react-facebook-pixel')
-            .then((x) => x.default)
-            .then((ReactPixel) => {
-                (ReactPixel.init(process.env.FACEBOOK_PIXEL))
-                toast.info('This site uses Cookies to track website traffic.', {
-                    position: "bottom-center",
-                    autoClose: true,
-                    hideProgressBar: false,
-                    closeOnClick: false,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                    theme: "dark",
-                });
-                // toast(<Cookies acceptCookies={() => setCookies(true)} />)
-                if (!navigator.cookieEnabled) {
-                    ReactPixel.revokeConsent();
-                } else {
-                    ReactPixel.pageView()
+    // useEffect(() => {
+    //     import('react-facebook-pixel')
+    //         .then((x) => x.default)
+    //         .then((ReactPixel) => {
+    //             (ReactPixel.init(process.env.FACEBOOK_PIXEL))
+    //             toast.info('This site uses Cookies to track website traffic.', {
+    //                 position: "bottom-center",
+    //                 autoClose: true,
+    //                 hideProgressBar: false,
+    //                 closeOnClick: false,
+    //                 pauseOnHover: true,
+    //                 draggable: true,
+    //                 progress: undefined,
+    //                 theme: "dark"
+    //             });
+    //             // toast(<Cookies acceptCookies={() => setCookies(true)} />)
+    //             if (!navigator.cookieEnabled) {
+    //                 ReactPixel.revokeConsent();
+    //             } else {
+    //                 ReactPixel.pageView()
     
-                    router.events.on('routeChangeComplete', () => {
-                        ReactPixel.pageView()
-                    })
-                }
-            })
-    }, [router.events])
+    //                 router.events.on('routeChangeComplete', () => {
+    //                     ReactPixel.pageView()
+    //                 })
+    //             }
+    //         })
+    // }, [router.events])
 
     useEffect(() => {
         if (window.innerWidth < 879) {
