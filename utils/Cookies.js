@@ -1,5 +1,4 @@
 import React from 'react';
-import { ToastContainer } from 'react-toastify';
 
 export default function Cookies(props) {
 
@@ -13,10 +12,12 @@ export default function Cookies(props) {
       props.closeToast()
     }
   return (
-    <div>
-        <p>This site uses Cookies for website analytics</p>
-        <button onClick={(e) => handleClick(e, true) }>Accept</button>
-        <button onClick={(e) => handleClick(e, false) }>Decline</button>
+    <div className='cookie-div'>
+        <p>This site uses Cookies for website analytics.</p>
+        <div>
+          <button className='cookie-button' onClick={(e) => handleClick(e, true) }>Accept</button>
+          <button className='cookie-button' onClick={(e) => handleClick(e, false) }>Decline</button>
+        </div>
     </div>
   )
 }
