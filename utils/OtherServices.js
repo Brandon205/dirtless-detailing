@@ -29,7 +29,7 @@ export default function OtherServices() {
                 </div>
             </div>
         </section>
-        <a href="/#contact" className="quote-btn main-quote-btn">Get a Quote</a>
+        <a href="/Contact" className="quote-btn main-quote-btn">Get a Quote</a>
 
         <div className='separator-container'>
             <h2 className='service-title'>INTERIOR CLEANING SERVICES</h2>
@@ -73,7 +73,7 @@ export default function OtherServices() {
                 </div>
             </div>
         </section>
-        <a href="/#contact" className="quote-btn main-quote-btn">Get a Quote</a>
+        <a href="/Contact" className="quote-btn main-quote-btn">Get a Quote</a>
 
         <div className='separator-container'>
             <h2 className='service-title'>EXTERIOR CLEANING SERVICES</h2>
@@ -119,7 +119,7 @@ export default function OtherServices() {
                 </div>
             </div>
         </section>
-        <a href="/#contact" className="quote-btn main-quote-btn">Get a Quote</a>
+        <a href="/Contact" className="quote-btn main-quote-btn">Get a Quote</a>
         
         <div className='separator-container'>
             <h2 className='service-title'>EXTERIOR CORRECTION SERVICES</h2>
@@ -151,7 +151,7 @@ export default function OtherServices() {
                 </div>
             </div>
         </section>
-        <a href="/#contact" className="quote-btn main-quote-btn">Get a Quote</a>
+        <a href="/Contact" className="quote-btn main-quote-btn">Get a Quote</a>
     </div>
   )
 }

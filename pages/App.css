@@ -1146,7 +1146,7 @@ hr {
   .otherservices-container {
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 3rem;
     margin-bottom: 2rem;
   }

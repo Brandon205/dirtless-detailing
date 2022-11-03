@@ -1,7 +1,6 @@
 import { Carousel } from 'react-responsive-carousel';
 import Image from 'next/image';
 
-import Contact from '../utils/Contact';
 import PopularServices from '../utils/PopularServices';
 import OtherServices from '../utils/OtherServices';
 
@@ -43,12 +42,9 @@ export default function Home() {
 
                     <p className='dd-desc'>We also offer a <span className='special-package'>mobile</span> service free of charge on select packages!</p>
 
-                    {/* <a href="/#popular-services" className="learn-btn top-learn-btn">Learn More</a> */}
-                    <a href="/#contact" className="quote-btn top-quote-btn">Get a Quote</a>
+                    <a href="/Contact" className="quote-btn top-quote-btn">Get a Quote</a>
                 </div>
             </header>
-
-            {/* <Contact /> */}
 
             <div id="popular-services" className='separator-container'>
                 <h2 className="service-title">Popular Detailing Services</h2>
@@ -56,7 +52,7 @@ export default function Home() {
             
             <PopularServices />
 
-            <a href="/#contact" className="quote-btn main-quote-btn">Get a Quote</a>
+            <a href="/Contact" className="quote-btn main-quote-btn">Get a Quote</a>
 
             <div className='separator-container'>
                 <h2 className='service-title'>COMBO DEALS</h2>

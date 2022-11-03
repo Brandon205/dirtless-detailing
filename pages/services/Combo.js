@@ -65,7 +65,7 @@ export default function Combo() {
       </div>
       <div className="servicepage-header">
         <h1>The Full Interior and Exterior Package</h1>
-        <a href="/#contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+        <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
       </div>
 
       <div className='main-content-container'>

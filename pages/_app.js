@@ -23,7 +23,7 @@ export default function MyApp({ Component, pageProps }) {
     const router = useRouter();
 
     useEffect(() => {
-        // if (smallScreen === null) {
+        // if (smallScreen === null) { // Facebook Pixel init code
         //     toast(<Cookies acceptCookies={() => setCookies(true)} declineCookies={() => setCookies(false)} />, {position: "bottom-center", autoClose: false, hideProgressBar: true, closeOnClick: false, pauseOnHover: true, draggable: true, progress: undefined, theme: "dark", role: "info"})
         // }
 
@@ -34,7 +34,7 @@ export default function MyApp({ Component, pageProps }) {
         }
     }, []);
 
-    // useEffect(() => {
+    // useEffect(() => { // Facebook Pixel init code
     //     import('react-facebook-pixel')
     //         .then((x) => x.default)
     //         .then((ReactPixel) => {
@@ -81,11 +81,11 @@ export default function MyApp({ Component, pageProps }) {
                 <meta name="apple-mobile-web-app-status-bar" content="#90cdf4" />
 
                 <link rel="icon" href="/favicon.ico" />
-                <title>Dirt-Less Detailing Official Site</title>
+                <title>Dirt-Less Detailing | Home</title>
             </Head>
             <header className="App-header">
                 <nav id="nav">
-                    <a style={{display: 'flex', justifyContent: 'flex-start', flex: 1}} href="/"><Image src={ddLogo} objectFit="contain" width={120} height={90} className="logo" alt="logo" /></a>
+                    <a style={{display: 'flex', justifyContent: 'flex-start', flex: 1}} href="/"><Image src={ddLogo} objectFit="contain" width={smallScreen ? 120 : 140} height={smallScreen ? 90 : 105} className="logo" alt="logo" /></a>
                     <FaBars className="menu-bars" onClick={() => setNav(nav === 'block' ? 'none' : 'block')} />
                     <div style={{display: nav}} className="menu-container">
                         <ul className='main-ul'>
@@ -159,7 +159,7 @@ export default function MyApp({ Component, pageProps }) {
                             </li>
 
                             <li className="menu-li">
-                                <a href="/#contact" className="nav-quote-btn" onClick={() => setNav('none')}>Get Started</a>
+                                <a href="Contact" className="nav-quote-btn" onClick={() => setNav('none')}>Get Started</a>
                             </li>
                         </ul>
                     </div>

@@ -4,6 +4,9 @@
   <loc>http://dirtless-detailing.vercel.app/</loc>
 </url>
 <url>
+  <loc>http://dirtless-detailing.vercel.app/Contact</loc>
+</url>
+<url>
   <loc>http://dirtless-detailing.vercel.app/services/FullIntEx</loc>
 </url>
 <url>
@@ -44,9 +47,6 @@
 </url>
 <url>
   <loc>http://dirtless-detailing.vercel.app/About</loc>
-</url>
-<url>
-  <loc>http://dirtless-detailing.vercel.app/#contact</loc>
 </url>
 <url>
   <loc>http://dirtless-detailing.vercel.app/#popular-services</loc>

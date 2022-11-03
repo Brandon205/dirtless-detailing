@@ -17,7 +17,7 @@ export default function Addons() {
       </div>
       <div className="servicepage-header">
         <h1>Dirt-Less Detailing Addons</h1>
-        <a href="/#contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+        <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
       </div>
 
       <div className="addon-content-container">

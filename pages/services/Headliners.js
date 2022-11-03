@@ -39,7 +39,7 @@ export default function Headliners() {
       </div>
       <div className="servicepage-header">
         <h1>Headliners</h1>
-        <a href="/#contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+        <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
       </div>
 
       <div className='main-content-container'>

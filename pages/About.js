@@ -11,7 +11,7 @@ export default function About() {
       </div>
       <div className="servicepage-header">
         <h1>About Us/FAQ</h1>
-        <a href="/#contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+        <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
       </div>
 
       <section className="about-container">
