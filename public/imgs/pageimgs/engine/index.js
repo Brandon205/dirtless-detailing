@@ -11,7 +11,7 @@ function importAll(r) {
   
   let images = importAll(require.context('./', false, /\.(png|jpe?g|webp)$/));
 
-images = Object.entries(images)
+images = Object.entries(images);
 
 let imagery = images.map((pic, id) => {
     return (
