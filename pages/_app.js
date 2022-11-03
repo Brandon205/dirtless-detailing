@@ -23,9 +23,9 @@ export default function MyApp({ Component, pageProps }) {
     const router = useRouter();
 
     useEffect(() => {
-        if (smallScreen === null) {
-            toast(<Cookies acceptCookies={() => setCookies(true)} declineCookies={() => setCookies(false)} />, {position: "bottom-center", autoClose: false, hideProgressBar: true, closeOnClick: false, pauseOnHover: true, draggable: true, progress: undefined, theme: "dark", role: "info"})
-        }
+        // if (smallScreen === null) {
+        //     toast(<Cookies acceptCookies={() => setCookies(true)} declineCookies={() => setCookies(false)} />, {position: "bottom-center", autoClose: false, hideProgressBar: true, closeOnClick: false, pauseOnHover: true, draggable: true, progress: undefined, theme: "dark", role: "info"})
+        // }
 
         if (window.innerWidth < 879) {
             setSmallScreen(true);

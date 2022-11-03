@@ -43,7 +43,7 @@ export default function Bio() {
         <title>Dirt-Less Detailing | Biohazard Cleaning</title>
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
-        <Image src={cover} alt="biohazard cleaning cover" layout="fill" objectFit='cover' priority />
+        <Image src={cover} alt="biohazard cleaning cover" layout="fill" objectFit='cover' placeholder='blur' priority />
       </div>
       <div className="servicepage-header">
         <h1>Smoke, Biohazard, or Odor Removal</h1>

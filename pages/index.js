@@ -11,13 +11,13 @@ import { FaRegStar } from 'react-icons/fa';
 
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-import cover from '../public/imgs/cover.webp';
+import cover from '../public/imgs/main-cover.webp';
 
 export default function Home() {
     return (
         <div className="App">
             <div className="maincover" style={{backgroundImage: 'url(' + cover + ')' }}>
-                <Image src={cover} layout="fill" objectFit='cover' alt="Cleaned Toyota Tundra" priority />
+                <Image src={cover} layout="fill" objectFit='cover' alt="Cleaned Toyota Tundra" placeholder='blur' priority />
             </div>
             <header className="home-header">
                 <div className='contact-left-container'>
