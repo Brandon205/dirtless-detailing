@@ -20,8 +20,8 @@ export default function Home() {
                 <Image src={cover} layout="fill" objectFit='cover' alt="Cleaned Toyota Tundra" placeholder='blur' priority />
             </div>
             <header className="home-header">
-                <div className='contact-left-container'>
-                    <h1 className='title-top'>Your Bonney Lake<br /><span className='title-bottom'>Detailing Specialists</span></h1>
+                <div className='landing-div'>
+                    <h1 className='title-top'>Your Bonney Lake <span className='title-bottom'>Detailing Specialists</span></h1>
 
                     <div className="header-icons-container">
                         <div>
@@ -43,12 +43,12 @@ export default function Home() {
 
                     <p className='dd-desc'>We also offer a <span className='special-package'>mobile</span> service free of charge on select packages!</p>
 
-                    <a href="/#popular-services" className="learn-btn top-learn-btn">Learn More</a>
+                    {/* <a href="/#popular-services" className="learn-btn top-learn-btn">Learn More</a> */}
                     <a href="/#contact" className="quote-btn top-quote-btn">Get a Quote</a>
                 </div>
             </header>
 
-            <Contact />
+            {/* <Contact /> */}
 
             <div id="popular-services" className='separator-container'>
                 <h2 className="service-title">Popular Detailing Services</h2>
@@ -56,7 +56,7 @@ export default function Home() {
             
             <PopularServices />
 
-            <a style={{marginRight: 48}} href="/#contact" className="quote-btn main-quote-btn">Get a Quote</a>
+            <a href="/#contact" className="quote-btn main-quote-btn">Get a Quote</a>
 
             <div className='separator-container'>
                 <h2 className='service-title'>COMBO DEALS</h2>
