@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
-import { ToastContainer, toast } from 'react-toastify';
+// import { useRouter } from 'next/router';
+// import { ToastContainer, toast } from 'react-toastify';
 
-import Cookies from '../utils/Cookies';
+// import Cookies from '../utils/Cookies';
 
 import { FaBars, FaFacebook, FaInstagram, FaPhoneAlt, FaCarSide, FaPhotoVideo } from 'react-icons/fa';
 import { GoLocation } from "react-icons/go";
@@ -18,9 +18,9 @@ export default function MyApp({ Component, pageProps }) {
     const [services, setServices] = useState(false);
     const [gallery, setGallery] = useState(false);
     const [smallScreen, setSmallScreen] = useState(null);
-    const [cookies, setCookies] = useState(false);
+    // const [cookies, setCookies] = useState(false);
 
-    const router = useRouter();
+    // const router = useRouter();
 
     useEffect(() => {
         // if (smallScreen === null) { // Facebook Pixel init code

@@ -52,7 +52,7 @@ export default function Home() {
             
             <PopularServices />
 
-            <a href="/Contact" className="quote-btn main-quote-btn">Get a Quote</a>
+            <a href="/Contact" className="quote-btn main-quote-btn popular-quote-btn">Get a Quote</a>
 
             <div className='separator-container'>
                 <h2 className='service-title'>COMBO DEALS</h2>
