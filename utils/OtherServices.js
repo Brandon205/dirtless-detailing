@@ -6,7 +6,7 @@ import combo from '../public/imgs/pageimgs/homepage/combo.webp';
 import dlwash from '../public/imgs/pageimgs/homepage/dlwash.webp';
 import engine from '../public/imgs/pageimgs/homepage/engine.webp';
 import fullintex from '../public/imgs/pageimgs/homepage/fullintex.webp';
-import headliner from '../public/imgs/headlinersCover.webp';
+import headliner from '../public/imgs/pageimgs/addons/headlinersCover.webp';
 import pdlwash from '../public/imgs/pageimgs/homepage/pdlwash.webp';
 import stage1 from '../public/imgs/pageimgs/homepage/stage1.webp';
 import stage2 from '../public/imgs/pageimgs/homepage/stage2.webp';
@@ -14,21 +14,6 @@ import stage2 from '../public/imgs/pageimgs/homepage/stage2.webp';
 export default function OtherServices() {
   return (
     <div>
-        {/* <section className="otherservices-container">
-            <div className="service-card">
-                <Image src={combo} alt="Vehicle after a Combo Cleaning" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
-                <div className="otherservices-desc">
-                    <a href='/services/Combo' className='service-heading-link'>Full Interior and Exterior Cleaning Combo</a>
-                    <p className="secondary-text">Starting at: <span>$400</span></p>
-                    <p className="service-desc">This combo comes with a <span className='special-package'>free</span> Engine Bay cleaning, along with the full interior and exterior detail this package is sure to bring your whole car back to life.</p>
-                    <div>
-                        <a href="/services/FullIntEx" className="readmore">Interior</a>
-                        <a href="/services/PDLWash" className="readmore">Exterior</a>
-                        <a href="/services/Combo" className="readmore">Combo</a>
-                    </div>
-                </div>
-            </div>
-        </section> */}
         <section className="combo-section">
             <div className="combo-img-container">
                 <Image style={{borderRadius: 16}} src={combo} alt="Vehicle after a Combo Cleaning" loading='lazy' placeholder='blur' quality={90} />

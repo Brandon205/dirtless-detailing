@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 
-import cover from '../../public/imgs/PDLWashCover.webp';
+import cover from '../../public/imgs/pageimgs/exterior/PDLWashCover.webp';
 
 const steps = [
   ["Wash Vehicle", "Thorough strip wash top to bottom including the gas door with the 2 bucket method or equivalent."],

@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 
-import cover from '../../public/imgs/ComboCover.webp';
+import cover from '../../public/imgs/pageimgs/exterior/IMG_20220121_153440.jpg';
 
 const pdlSteps = [
   ["Wash Vehicle", "Thorough strip wash top to bottom including the gas door with the 2 bucket method or equivalent."],

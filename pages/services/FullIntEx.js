@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 
-import cover from '../../public/imgs/fullIntExCover.webp';
+import cover from '../../public/imgs/pageimgs/interior/fullIntExCover.webp';
 
 const steps = [
   ["Expose Hidden Dirt", "Use our Tornador Vortex blowgun which uses compressed air to blow out every spot a vacuum can't reach, it also extracts sand and loose soil from carpeting (Most detailers don't do this)."],

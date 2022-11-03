@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 
-import cover from '../../public/imgs/headlinersCover.webp';
+import cover from '../../public/imgs/pageimgs/addons/headlinersCover.webp';
 
 const steps = [
   ["Determine Method", "We have an array of gentle products available, the materials of your headliner will tell us what to use."],

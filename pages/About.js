@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-import cover from '../public/imgs/worktruck.webp';
+import cover from '../public/imgs/pageimgs/homepage/worktruck.webp';
 
 export default function About() {
   return (
@@ -9,9 +9,9 @@ export default function About() {
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="Our Worktruck" layout="fill" objectFit='cover' priority />
       </div>
-      <div className='about-header'>
+      <div className="servicepage-header">
         <h1>About Us/FAQ</h1>
-        <h3>Learn more about us, and get answers to some of the most commonly asked questions.</h3>
+        <a href="/#contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
       </div>
 
       <section className="about-container">
@@ -25,7 +25,7 @@ export default function About() {
         </ul>
         <ul className='faq-ul'>
           <li className='faq-li'>How long will the detail take?</li>
-          <p className='faq-p'>Every job will take a different amount of time, but there are time estimates on the page of the detail you're looking into.</p>
+          <p className='faq-p'>Every job will take a different amount of time, but once you have contacted us with your vehicles' condition we can give a good estimate as to how long it will take.</p>
         </ul>
         <ul className='faq-ul'>
           <li className='faq-li'>Can you come to my apartment or workplace?</li>
@@ -41,7 +41,7 @@ export default function About() {
         </ul>
         <ul className='faq-ul'>
           <li className='faq-li'>What cities do you service?</li>
-          <p className='faq-p'>Currently: Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham.</p>
+          <p className='faq-p'>We are currently servicing: Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham.</p>
         </ul>
         <ul className='faq-ul'>
           <li className='faq-li'>Do I have to be there the whole time you're working on my car?</li>

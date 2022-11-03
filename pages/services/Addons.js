@@ -2,8 +2,9 @@ import React from 'react'
 import Image from 'next/image';
 import Head from 'next/head';
 
-import cover from '../../public/imgs/addonsCover.webp';
-import interior from '../../public/imgs/pageimgs/homepage/fullintex.webp';
+import cover from '../../public/imgs/pageimgs/paintCorrection/IMG_20220304_132750.jpg';
+import waterspot from '../../public/imgs/pageimgs/paintCorrection/IMG_20220902_085328.jpg';
+import glassPolish from '../../public/imgs/pageimgs/addons/IMG_20220912_192744.jpg';
 
 export default function Addons() {
   return (
@@ -21,7 +22,7 @@ export default function Addons() {
 
       <div className="addon-content-container">
         <div className="service-card">
-          <Image src={interior} alt="TODO: CHANGE THIS IMAGE" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
+          <Image src={waterspot} alt="Waterspot / Overspray removal after" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
           <div className="otherservices-desc">
             <div>
               <a href="/services/FullIntEx" className='service-heading-link'>Waterspot/Overspray Removal</a>
@@ -37,7 +38,7 @@ export default function Addons() {
           </div>
         </div>
         <div className="service-card">
-          <Image src={interior} alt="TODO: CHANGE THIS IMAGE" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
+          <Image src={glassPolish} alt="TODO: CHANGE THIS IMAGE" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
           <div className="otherservices-desc">
             <div>
               <a href="/services/FullIntEx" className='service-heading-link'>Glass Polishing</a>
