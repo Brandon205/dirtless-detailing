@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Head from 'next/head';
 import { imagery } from '../../public/imgs/pageimgs/interior/index';
 
-import cover from '../../public/imgs/pageimgs/interior/fullIntExCover.webp';
+import cover from '../../public/imgs/pageimgs/interior/IMG_20200702_155834.jpg';
 
 export default function FullIntGallery() {
   return (

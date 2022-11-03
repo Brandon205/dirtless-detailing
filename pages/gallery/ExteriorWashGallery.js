@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Head from 'next/head';
 import { imagery } from '../../public/imgs/pageimgs/exterior/index';
 
-import cover from '../../public/imgs/pageimgs/exterior/IMG_20210429_202336.webp';
+import cover from '../../public/imgs/pageimgs/exterior/IMG_20210429_202336.jpg';
 
 export default function PaintCorrectionGallery() {
 
