@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-// import { useRouter } from 'next/router';
-// import { ToastContainer, toast } from 'react-toastify';
+import { useRouter } from 'next/router';
+import { toast } from 'react-toastify';
 
-// import Cookies from '../utils/Cookies';
+import Cookies from '../utils/Cookies';
 
 import { FaBars, FaFacebook, FaInstagram, FaPhoneAlt, FaCarSide, FaPhotoVideo } from 'react-icons/fa';
 import { GoLocation } from "react-icons/go";
@@ -18,39 +18,36 @@ export default function MyApp({ Component, pageProps }) {
     const [services, setServices] = useState(false);
     const [gallery, setGallery] = useState(false);
     const [smallScreen, setSmallScreen] = useState(null);
-    // const [cookies, setCookies] = useState(false);
-
-    // const router = useRouter();
-
+        
+    const router = useRouter();
     useEffect(() => {
-        // if (smallScreen === null) { // Facebook Pixel init code
-        //     toast(<Cookies acceptCookies={() => setCookies(true)} declineCookies={() => setCookies(false)} />, {position: "bottom-center", autoClose: false, hideProgressBar: true, closeOnClick: false, pauseOnHover: true, draggable: true, progress: undefined, theme: "dark", role: "info"})
-        // }
-
+        console.log(document.cookie)
+        if (document.cookie === "") {
+            toast(<Cookies acceptCookies={() => document.cookie = 'foo=bar;path=/;samesite'} declineCookies={() => document.cookie = `foo=;path=/;expires=Thu,01Jan197000:00:01GMT`} />, {position: "bottom-center", autoClose: false, hideProgressBar: true, closeOnClick: false, pauseOnHover: true, draggable: true, progress: undefined, theme: "dark"})
+        }
+    
         if (window.innerWidth < 879) {
             setSmallScreen(true);
         } else {
             setSmallScreen(false)
         }
-    }, []);
 
-    // useEffect(() => { // Facebook Pixel init code
-    //     import('react-facebook-pixel')
-    //         .then((x) => x.default)
-    //         .then((ReactPixel) => {
-    //             (ReactPixel.init(process.env.FACEBOOK_PIXEL))
-    //             if (!cookies) {
-    //                 ReactPixel.revokeConsent();
-    //             } else {
-    //                 ReactPixel.grantConsent();
-    //             }
-    //             ReactPixel.pageView()
-    
-    //             router.events.on('routeChangeComplete', () => {
-    //                 ReactPixel.pageView()
-    //             })
-    //         })
-    // }, [router.events, cookies])
+        // import('react-facebook-pixel') // Facebook Pixel init code
+        //     .then((x) => x.default)
+        //     .then((ReactPixel) => {
+        //         (ReactPixel.init(process.env.FACEBOOK_PIXEL))
+        //         if (!document.cookie) {
+        //             ReactPixel.revokeConsent();
+        //         } else {
+        //             ReactPixel.grantConsent();
+        //             ReactPixel.pageView()
+        
+        //             router.events.on('routeChangeComplete', () => {
+        //                 ReactPixel.pageView()
+        //             })
+        //         }
+        //     })
+    }, [router.events])
 
 
     let changeNav = (changeTo) => {
@@ -203,6 +200,7 @@ export default function MyApp({ Component, pageProps }) {
                     </div>
                 </div>
             </footer>
+            {/* <ToastContainer /> */}
         </div>
     )
 }
