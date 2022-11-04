@@ -837,11 +837,13 @@ hr {
   width: 90vw;
   margin: 0 auto;
   column-count: 1;
+  line-height: 2rem;
   column-gap: 1rem;
 }
 
-.gallery-container div {
-  margin-bottom: 0.5rem;
+.gallery-image-div {
+  width: 100% !important;
+  height: auto !important;
 }
 
 .gallery-content-container {
