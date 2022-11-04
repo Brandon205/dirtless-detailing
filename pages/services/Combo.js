@@ -131,22 +131,22 @@ export default function Combo() {
             <div className="pricing-card">
               <h4 className="size">Small</h4>
               <p className="example-vehicle">(Most Cars and Smaller Trucks)</p>
-              <p className="pricing-price">$400</p>
+              <p className="pricing-price">$350 - $400</p>
             </div>
             <div className="pricing-card">
               <h4 className="size">Medium</h4>
               <p className="example-vehicle">(Mid-Size SUV's, and Most Wagons)</p>
-              <p className="pricing-price">$500</p>
+              <p className="pricing-price">$450 - $500</p>
             </div>
             <div className="pricing-card">
               <h4 className="size">Large</h4>
               <p className="example-vehicle">(Large SUV's and Large trucks)</p>
-              <p className="pricing-price">$600</p>
+              <p className="pricing-price">$550 - $600</p>
             </div>
             <div className="pricing-card">
               <h4 className="size">Extra Large</h4>
               <p className="example-vehicle">(Extra Large Vehicles)</p>
-              <p className="pricing-price">$625+</p>
+              <p className="pricing-price">$625 - $700</p>
             </div>
           </div>
 
