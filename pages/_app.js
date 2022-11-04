@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import { toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import Cookies from '../utils/Cookies';
 
@@ -22,21 +23,22 @@ export default function MyApp({ Component, pageProps }) {
     const router = useRouter();
     useEffect(() => {
         console.log(document.cookie)
-        if (document.cookie === "") {
-            toast(<Cookies acceptCookies={() => document.cookie = 'foo=bar;path=/;samesite'} declineCookies={() => document.cookie = `foo=;path=/;expires=Thu,01Jan197000:00:01GMT`} />, {position: "bottom-center", autoClose: false, hideProgressBar: true, closeOnClick: false, pauseOnHover: true, draggable: true, progress: undefined, theme: "dark"})
+        if (document.cookie === "foo=") {
+            console.log('toast time')
+            toast(<Cookies acceptCookies={() => document.cookie = 'foo=bar;path=/;sameSite="lax";'} declineCookies={() => document.cookie = `foo=;path=/;sameSite="lax";expires=Thu,01Jan197000:00:01GMT`} />, {position: "bottom-center", autoClose: false, hideProgressBar: true, closeOnClick: false, pauseOnHover: true, draggable: true, progress: undefined, theme: "dark"})
         }
     
         if (window.innerWidth < 879) {
             setSmallScreen(true);
         } else {
-            setSmallScreen(false)
+            setSmallScreen(false);
         }
 
         // import('react-facebook-pixel') // Facebook Pixel init code
         //     .then((x) => x.default)
         //     .then((ReactPixel) => {
         //         (ReactPixel.init(process.env.FACEBOOK_PIXEL))
-        //         if (!document.cookie) {
+        //         if (document.cookie !== 'foo=bar') {
         //             ReactPixel.revokeConsent();
         //         } else {
         //             ReactPixel.grantConsent();
@@ -200,7 +202,7 @@ export default function MyApp({ Component, pageProps }) {
                     </div>
                 </div>
             </footer>
-            {/* <ToastContainer /> */}
+            <ToastContainer />
         </div>
     )
 }
