@@ -79,7 +79,7 @@ export default function MyApp({ Component, pageProps }) {
                 <link rel="canonical" href="https://dirtless-detailing.vercel.app/" />
 
                 <link rel="icon" href="/favicon.ico" />
-                <title>Dirt-Less Detailing | Home</title>
+                <title>Dirt-Less Detailing | Bonney Lakes Top Auto Detailer</title>
             </Head>
             <header className="App-header">
                 <nav id="nav">

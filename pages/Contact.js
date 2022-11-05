@@ -108,49 +108,49 @@ export default function Contact() {
                 <textarea type="textarea" name="message" className='textarea-input' placeholder='Do you want mobile service or a drop off? Do you have any other questions/concerns?' />
 
                 <p style={{marginBottom: 4}}>Combos:</p>
-                <input type="checkbox" name="combo" value="no" className='checkbox-input' />
-                <label htmlFor="combo" className='input-label'>Full Interior and Exterior Combo</label><br />
+                <input type="checkbox" name="combo" id='combo' value="no" className='checkbox-input' />
+                <label htmlFor="combo" className='checkbox-label'>Full Interior and Exterior Combo</label><br />
 
                 <p style={{marginBottom: 4}}>Interior Cleaning:</p>
-                <input type="checkbox" name="FullInteriorExtraction" value="no" className='checkbox-input' />
-                <label htmlFor="fullIntEx" className='input-label'>Full Interior With Extraction</label><br />
+                <input type="checkbox" id='fullIntEx' name="fullIntEx" value="no" className='checkbox-input' />
+                <label htmlFor="fullIntEx" className='checkbox-label'>Full Interior With Extraction</label><br />
 
-                <input type="checkbox" name="fullInterior" value="no" className='checkbox-input' />
-                <label htmlFor="fullInt" className='input-label'>Full Interior Without Extraction</label><br />
+                <input type="checkbox" id='fullInterior' name="fullInterior" value="no" className='checkbox-input' />
+                <label htmlFor="fullInterior" className='checkbox-label'>Full Interior Without Extraction</label><br />
 
-                <input type="checkbox" name="bio" value="no" className='checkbox-input' />
-                <label htmlFor="bio" className='input-label'>Biohazard Cleaning</label><br />
+                <input type="checkbox" id='bio' name="bio" value="no" className='checkbox-input' />
+                <label htmlFor="bio" className='checkbox-label'>Biohazard Cleaning</label><br />
 
-                <input type="checkbox" name="headliners" value="no" className='checkbox-input' />
-                <label htmlFor="headliners" className='input-label'>Headliners</label><br />
+                <input type="checkbox" id='headliners' name="headliners" value="no" className='checkbox-input' />
+                <label htmlFor="headliners" className='checkbox-label'>Headliners</label><br />
 
                 <p style={{marginBottom: 4}}>Exterior Cleaning:</p>
-                <input type="checkbox" name="dirtlessWash" value="no" className='checkbox-input' />
-                <label htmlFor="dirtlessWash" className='input-label'>Dirt-Less Wash</label><br />
+                <input type="checkbox" id='dirtlessWash' name="dirtlessWash" value="no" className='checkbox-input' />
+                <label htmlFor="dirtlessWash" className='checkbox-label'>Dirt-Less Wash</label><br />
 
-                <input type="checkbox" name="premium dirtlessWash" value="no" className='checkbox-input' />
-                <label htmlFor="premium dirtlessWash" className='input-label'>Premium Dirt-Less Wash</label><br />
+                <input type="checkbox" id='premium dirtlessWash' name="premium dirtlessWash" value="no" className='checkbox-input' />
+                <label htmlFor="premium dirtlessWash" className='checkbox-label'>Premium Dirt-Less Wash</label><br />
 
-                <input type="checkbox" name="engine" value="no" className='checkbox-input' />
-                <label htmlFor="engine" className='input-label' style={{marginBottom: 16}}>Engine Bay</label><br />
+                <input type="checkbox" id='engine' name="engine" value="no" className='checkbox-input' />
+                <label htmlFor="engine" className='checkbox-label' style={{marginBottom: 16}}>Engine Bay</label><br />
 
                 <p className="form-subheading">Exterior Addons:</p>
-                <input type="checkbox" name="glass" value="no" className='checkbox-input addon-checkbox' />
-                <label htmlFor="glass" className='input-label' style={{marginBottom: 16}}>Glass Polishing</label><br />
+                <input type="checkbox" id='glass' name="glass" value="no" className='checkbox-input addon-checkbox' />
+                <label htmlFor="glass" className='checkbox-label' style={{marginBottom: 16}}>Glass Polishing</label><br />
 
-                <input type="checkbox" name="waterspot" value="no" className='checkbox-input addon-checkbox' />
-                <label htmlFor="waterspot" className='input-label' style={{marginBottom: 16}}>Waterspot/Overspray Removal</label><br />
+                <input type="checkbox" id='waterspot' name="waterspot" value="no" className='checkbox-input addon-checkbox' />
+                <label htmlFor="waterspot" className='checkbox-label' style={{marginBottom: 16}}>Waterspot/Overspray Removal</label><br />
 
                 <p style={{marginBottom: 4}}>Paint Correction:</p>
-                <input type="checkbox" name="singlePC" value="no" className='checkbox-input' />
-                <label htmlFor="singlePC" className='input-label'>Single Stage Paint Correction</label><br />
+                <input type="checkbox" id='singlePC' name="singlePC" value="no" className='checkbox-input' />
+                <label htmlFor="singlePC" className='checkbox-label'>Single Stage Paint Correction</label><br />
 
-                <input type="checkbox" name="twoPC" value="no" className='checkbox-input' />
-                <label htmlFor="twoPC" className='input-label' style={{marginBottom: 16}}>Two Stage Paint Correction</label><br />
+                <input type="checkbox" id='twoPC' name="twoPC" value="no" className='checkbox-input' />
+                <label htmlFor="twoPC" className='checkbox-label' style={{marginBottom: 16}}>Two Stage Paint Correction</label><br />
 
                 <p className="form-subheading">Paint Correction Addons:</p>
-                <input type="checkbox" name="correctionGlass" value="no" className='checkbox-input addon-checkbox' />
-                <label htmlFor="correctionGlass" className='input-label'>Glass Polishing</label><br style={{marginBottom: 16}} />
+                <input type="checkbox" id='correctionGlass' name="correctionGlass" value="no" className='checkbox-input addon-checkbox' />
+                <label htmlFor="correctionGlass" className='checkbox-label'>Glass Polishing</label><br style={{marginBottom: 16}} />
 
                 <button className='popular-readmore'>Submit</button>
 
