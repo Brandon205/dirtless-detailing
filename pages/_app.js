@@ -22,10 +22,8 @@ export default function MyApp({ Component, pageProps }) {
         
     const router = useRouter();
     useEffect(() => {
-        console.log(document.cookie)
-        if (document.cookie === "foo=") {
-            console.log('toast time')
-            toast(<Cookies acceptCookies={() => document.cookie = 'foo=bar;path=/;sameSite="lax";'} declineCookies={() => document.cookie = `foo=;path=/;sameSite="lax";expires=Thu,01Jan197000:00:01GMT`} />, {position: "bottom-center", autoClose: false, hideProgressBar: true, closeOnClick: false, pauseOnHover: true, draggable: true, progress: undefined, theme: "dark"})
+        if (document.cookie === "ddCookies=" || document.cookie === '') {
+            toast(<Cookies acceptCookies={() => document.cookie = 'ddCookies=true;path=/;sameSite="Lax";'} declineCookies={() => document.cookie = `ddCookies=;path=/;sameSite="Lax";expires=Thu,01Jan197000:00:01GMT`} />, {position: "bottom-center", autoClose: false, hideProgressBar: true, closeOnClick: false, pauseOnHover: true, draggable: true, progress: undefined, theme: "dark"})
         }
     
         if (window.innerWidth < 879) {
@@ -38,7 +36,7 @@ export default function MyApp({ Component, pageProps }) {
         //     .then((x) => x.default)
         //     .then((ReactPixel) => {
         //         (ReactPixel.init(process.env.FACEBOOK_PIXEL))
-        //         if (document.cookie !== 'foo=bar') {
+        //         if (document.cookie !== 'ddCookies=true') {
         //             ReactPixel.revokeConsent();
         //         } else {
         //             ReactPixel.grantConsent();
