@@ -670,7 +670,6 @@ input[type="range"] {
   flex-direction: column;
   justify-content: space-between;
   height: 60%;
-  flex: 1 2 1;
   padding: 1rem;
 }
 
@@ -1289,6 +1288,7 @@ hr {
   .header-icons-container {
     flex-direction: row;
     justify-content: flex-start;
+    gap: 2rem;
   }
 
   .title-top {
@@ -1363,7 +1363,7 @@ hr {
   .addon-content-container {
     flex-direction: row;
     align-items: inherit;
-    gap: 10vw;
+    flex-wrap: wrap;
   }
 
   /** Nav CSS **/
@@ -1391,7 +1391,7 @@ hr {
 
   .sub-ul {
     position: fixed;
-    top: 55px;
+    top: 65px;
   }
 
   .menu-bars {

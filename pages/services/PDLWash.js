@@ -53,7 +53,7 @@ export default function PDLWash() {
       <div className='main-content-container'>
         <div className="process-container">
           <div>
-            <h2>Our Premium Exterior Cleaning Process</h2>
+            <h2>Our Premium Exterior Cleaning Process*</h2>
             <ol className='list'>
               {content}
             </ol>
@@ -66,7 +66,7 @@ export default function PDLWash() {
                 <div className="aside-links">
                   <a href="/services/DLWash" style={{color: href.endsWith('/DLWash') ? 'blue' : 'black'}} className="service-link">{href.endsWith('/DLWash') ? '> ' : ''} Dirt-Less Wash</a>
                   <a href="/services/PDLWash" style={{color: href.endsWith('PDLWash') ? 'blue' : 'black'}} className="service-link">{href.endsWith('PDLWash') ? '> ' : ''} Premium Dirt-Less Wash</a>
-                  <a href="/services/Engine" style={{color: href.endsWith('Engine') ? 'blue' : 'black'}} className="service-link">{href.endsWith('Engine') ? '> ' : ''} Engine Bay Cleaning</a>
+                  <a href="/services/Engine" style={{color: href.endsWith('Engine') ? 'blue' : 'black'}} className="service-link">{href.endsWith('/Engine') ? '> ' : ''} Engine Bay Cleaning</a>
                 </div>
               </div>
             </div>
@@ -76,12 +76,16 @@ export default function PDLWash() {
               <h3><a href="/services/Addons" style={{color: 'black'}}>Extra Addons</a></h3>
                 <div className="aside-links"> 
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/Addons/#glass" style={{color: 'blue'}}>Glass Polishing</a> - <span className="bold">$70</span>/hour</p>
-                    <p className="subtext">Gives you crystal clear windows</p>
+                    <p className='addon-title'><a href="/services/Addons" style={{color: 'blue'}}>Glass Polishing</a> - <span className="bold">$70</span>/hour</p>
+                    <p className="subtext">Gives you crystal clear windows.</p>
                   </div>
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/Addons/#waterspot" style={{color: 'blue'}}>Waterspot/Overspray</a> - <span className="bold">$60</span>/hour</p>
-                    <p className="subtext">Remove Overspray and Waterspots from your vehicle</p>
+                    <p className='addon-title'><a href="/services/Addons" style={{color: 'blue'}}>Waterspot/Overspray</a> - <span className="bold">$60</span>/hour</p>
+                    <p className="subtext">Remove Overspray and Waterspots from your vehicle.</p>
+                  </div>
+                  <div className="addon-container">
+                    <p className='addon-title'><a href="/services/Addons/#waterspot" style={{color: 'blue'}}>Truck Bed Cleaning</a> - <span className="bold">$25</span></p>
+                    <p className="subtext">Addon to get your truck bed cleaned.</p>
                   </div>
                 </div>
               </div>

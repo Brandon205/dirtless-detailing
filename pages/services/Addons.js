@@ -6,6 +6,7 @@ import cover from '../../public/imgs/pageimgs/paintCorrection/IMG_20220304_13275
 import waterspot from '../../public/imgs/pageimgs/paintCorrection/IMG_20211123_170951.jpg';
 import glassPolish from '../../public/imgs/pageimgs/addons/IMG_20220912_192744.jpg';
 import ozone from '../../public/imgs/pageimgs/bio/IMG_20220904_140012.jpg';
+import truckBed from '../../public/imgs/pageimgs/exterior/1667675422409.jpeg';
 
 export default function Addons() {
   return (
@@ -28,7 +29,7 @@ export default function Addons() {
           <div className="otherservices-desc">
             <div>
               <a href="/services/FullIntEx" className='service-heading-link'>Waterspot/Overspray Removal</a>
-              <p className="secondary-text">Hourly rate: <span>$60/hour</span></p>
+              <p className="secondary-text">Hourly rate: <span>$80/hour</span></p>
             </div>
             <p className="service-desc">Remove all overspray and waterspots we can.</p>
             <p className="service-desc">• This can be added onto any of our Exterior Washes or any of our Paint Correction Services when contacting us.</p>
@@ -45,7 +46,7 @@ export default function Addons() {
           <div className="otherservices-desc">
             <div>
               <a href="/services/FullIntEx" className='service-heading-link'>Glass Polishing</a>
-              <p className="secondary-text">Hourly rate: <span>$70/hour</span></p>
+              <p className="secondary-text">Hourly rate: <span>$80/hour</span></p>
             </div>
             <p className="service-desc">Remove all scratches, etching, and watermarks possible.</p>
             <p className="service-desc">• This can be added onto any of our Paint Correction Services when contacting us.</p>
@@ -64,10 +65,27 @@ export default function Addons() {
               <p className="secondary-text">Cost: <span>$100</span></p>
             </div>
             <p className="service-desc">Ozone treatment is the use of O3 (gas ozone) to remove bacteria, viruses, and odors from your vehicle.</p>
-            <p className="service-desc">• This can be added to our Biohazard treatment when contacting us.</p>
+            <p className="service-desc">• This can be added to any of our Interior treatments when contacting us.</p>
 
             <div>
               <a style={{marginBottom: 8}} href='/services/Bio' className="readmore">Biohazard Details {'>'}</a>
+            </div>
+          </div>
+        </div>
+
+        <div className="service-card">
+          <Image src={truckBed} alt="Truck Bed Cleaning" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
+          <div className="otherservices-desc">
+            <div>
+              <a href="/services/FullIntEx" className='service-heading-link'>Truck Bed Cleaning</a>
+              <p className="secondary-text">Cost: <span>$25</span></p>
+            </div>
+            <p className="service-desc">This is our addon to get your truck bed cleaned out.</p>
+            <p className="service-desc">• This can be added to either of our exterior services.</p>
+
+            <div>
+              <a style={{marginBottom: 8}} href='/services/DLWash' className="readmore">Dirt-Less Wash Details {'>'}</a>
+              <a style={{marginBottom: 8}} href='/services/PDLWash' className="readmore">Premium Dirt-Less Wash Details {'>'}</a>
             </div>
           </div>
         </div>

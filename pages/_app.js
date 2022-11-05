@@ -157,7 +157,7 @@ export default function MyApp({ Component, pageProps }) {
                             </li>
 
                             <li className="menu-li">
-                                <a href="Contact" className="nav-quote-btn" onClick={() => setNav('none')}>Get Started</a>
+                                <a href="/Contact" className="nav-quote-btn" onClick={() => setNav('none')}>Get Started</a>
                             </li>
                         </ul>
                     </div>

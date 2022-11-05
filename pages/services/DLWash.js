@@ -50,7 +50,7 @@ export default function DLWash() {
       <div className='main-content-container'>
         <div className="process-container">
           <div>
-            <h2>Our Exterior Cleaning Process</h2>
+            <h2>Our Exterior Cleaning Process*</h2>
             <ol className='list'>
               {content}
             </ol>
@@ -78,6 +78,10 @@ export default function DLWash() {
                   <div className="addon-container">
                     <p className='addon-title'><a href="/services/Addons/#waterspot" style={{color: 'blue'}}>Waterspot/Overspray</a> - <span className="bold">$60</span>/hour</p>
                     <p className="subtext">Remove Overspray and Waterspots from your vehicle</p>
+                  </div>
+                  <div className="addon-container">
+                    <p className='addon-title'><a href="/services/Addons/#waterspot" style={{color: 'blue'}}>Truck Bed Cleaning</a> - <span className="bold">$25</span></p>
+                    <p className="subtext">Addon to get your truck bed cleaned.</p>
                   </div>
                 </div>
               </div>
