@@ -95,7 +95,7 @@ export default function Home() {
                         <p className="reviewer">Austin M.</p>
                     </div>
                     <div>
-                        <p className="review">The process was easy.  He responded right away when I contacted him about a detail. He showed up when he said he would and was extremely professional.  He did an amazing job on the detail of my car.  Would have him detail my car again.</p>
+                        <p className="review">The process was easy. He responded right away when I contacted him about a detail. He showed up when he said he would and was extremely professional.  He did an amazing job on the detail of my car.  Would have him detail my car again.</p>
                         <p className="reviewer">Barbara G.</p>
                     </div>
                     <div>
@@ -107,7 +107,7 @@ export default function Home() {
             <p>Check out more reviews on our <a style={{cursor: 'pointer'}} href="https://www.facebook.com/DirtLessDetailing/reviews">Facebook</a> page.</p>
 
             <section className="serviceareas-container">
-                <h2>We are currently detailing in:</h2>
+                <h2>We are currently detailing in these cities:</h2>
                 <p className='cities'>Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham.</p>
                 <p>As part of our simple and hassle free service, you can come to us or we can come to you with select packages!</p>
             </section>

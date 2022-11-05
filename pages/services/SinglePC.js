@@ -44,6 +44,7 @@ export default function SinglePC() {
     <section className='service-content-container'>
       <Head>
         <title>Dirt-Less Detailing | Single Stage</title>
+        <meta name="description" content="Single Stage Paint Correction should fix most of your Paint Correction needs!" />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="Vehicle after a Single Stage Paint Correction" layout="fill" objectFit='cover' placeholder='blur' priority />

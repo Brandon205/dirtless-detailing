@@ -59,6 +59,7 @@ export default function Combo() {
     <section className='service-content-container'>
       <Head>
         <title>Dirt-Less Detailing | Combo</title>
+        <meta name="description" content="Full Interior Cleaning + Premium Dirt-Less Wash Combo. Get a free engine bay cleaning when booking our current Combo Deal!" />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="Vehicle after a Combo Wash" layout="fill" objectFit='cover' placeholder='blur' priority />
@@ -126,7 +127,7 @@ export default function Combo() {
 
         <div>
           <h2>Our Pricing</h2>
-          <h4>Our basic prices are shown below, final pricing may vary based on your vehicle size and condition.</h4>
+          <h4>Our basic prices are shown below, final pricing may vary based on your vehicle size, condition, and whether or not you need extraction on the carpets.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
               <h4 className="size">Small</h4>

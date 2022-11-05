@@ -80,6 +80,7 @@ export default function Contact() {
     <section className="contact-container" id="contact">
         <Head>
             <title>Dirt-Less Detailing | Contact</title>
+            <meta name="description" content="Contact us to ask questions or set up an appointment here!" />
         </Head>
         <div className='contact-container-left'>
             <h2>CONTACT US</h2>

@@ -11,6 +11,7 @@ export default function PaintCorrectionGallery() {
     <section className='gallery-content-container'>
       <Head>
         <title>Dirt-Less Detailing | Exterior Wash Gallery</title>
+        <meta name="description" content="Check out some photos from both our Dirt-Less and Premium Dirt-Less washes here." />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="Vehicle after a Dirt-Less Wash" layout="fill" objectFit='cover' priority />

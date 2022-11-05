@@ -1,11 +1,16 @@
 import React from 'react';
 import Image from 'next/image';
+import Head from 'next/head';
 
 import cover from '../public/imgs/pageimgs/homepage/worktruck.webp';
 
 export default function About() {
   return (
     <div className='App'>
+      <Head>
+        <title>Dirt-Less Detailing | About Us / FAQ</title>
+        <meta name="description" content="Who we are and some of our most frequently asked questions." />
+      </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="Our Worktruck" layout="fill" objectFit='cover' priority />
       </div>
