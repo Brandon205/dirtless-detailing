@@ -99,58 +99,86 @@ export default function Contact() {
 
         <div className='contact-container-right'>
             <form className="form" onSubmit={(e) => formSubmit(e)}>
-                <label htmlFor="name" className='text-input-label'>Name</label><br />
-                <input type="text" id="name" name="Name" className='text-input' required /><br />
-                <label htmlFor="email" className='text-input-label'>Email</label><br />
-                <input type="text" id="email" name="Email" className='text-input' required /><br />
+                <div className="form-section form-top-section">
+                    <label htmlFor="name" className='text-input-label'>Name</label><br />
+                    <input type="text" id="name" name="Name" className='text-input' required /><br />
+                    <label htmlFor="email" className='text-input-label'>Email</label><br />
+                    <input type="text" id="email" name="Email" className='text-input' required /><br />
 
-                <label htmlFor="message" className='input-label'>Additional Details</label><br />
-                <textarea type="textarea" name="message" className='textarea-input' placeholder='Do you want mobile service or a drop off? Do you have any other questions/concerns?' />
+                    <label htmlFor="message" className='input-label'>Additional Details</label><br />
+                    <textarea type="textarea" name="message" className='textarea-input' placeholder='Do you want mobile service or a drop off? Do you have any other questions/concerns?' />
+                </div>
 
-                <p style={{marginBottom: 4}}>Combos:</p>
-                <input type="checkbox" name="combo" id='combo' value="no" className='checkbox-input' />
-                <label htmlFor="combo" className='checkbox-label'>Full Interior and Exterior Combo</label><br />
+                <div className="form-section">
+                    <p className='form-section-heading'>Combos:</p>
+                    <div>
+                        <input type="checkbox" name="combo" id='combo' className='checkbox-input' />
+                        <label htmlFor="combo" className='checkbox-label'>Full Interior and Exterior Combo</label><br />
+                    </div>
+                </div>
 
-                <p style={{marginBottom: 4}}>Interior Cleaning:</p>
-                <input type="checkbox" id='fullIntEx' name="fullIntEx" value="no" className='checkbox-input' />
-                <label htmlFor="fullIntEx" className='checkbox-label'>Full Interior With Extraction</label><br />
+                <div className="form-section">
+                    <p className='form-section-heading'>Interior Cleaning:</p>
+                    <div>
+                        <input type="checkbox" id='fullIntEx' name="fullIntEx" className='checkbox-input' />
+                        <label htmlFor="fullIntEx" className='checkbox-label'>Full Interior With Extraction</label><br />
 
-                <input type="checkbox" id='fullInterior' name="fullInterior" value="no" className='checkbox-input' />
-                <label htmlFor="fullInterior" className='checkbox-label'>Full Interior Without Extraction</label><br />
+                        <input type="checkbox" id='fullInterior' name="fullInterior" className='checkbox-input' />
+                        <label htmlFor="fullInterior" className='checkbox-label'>Full Interior Without Extraction</label><br />
 
-                <input type="checkbox" id='bio' name="bio" value="no" className='checkbox-input' />
-                <label htmlFor="bio" className='checkbox-label'>Biohazard Cleaning</label><br />
+                        <input type="checkbox" id='bio' name="bio" className='checkbox-input' />
+                        <label htmlFor="bio" className='checkbox-label'>Biohazard Cleaning</label><br />
 
-                <input type="checkbox" id='headliners' name="headliners" value="no" className='checkbox-input' />
-                <label htmlFor="headliners" className='checkbox-label'>Headliners</label><br />
+                        <input type="checkbox" id='headliners' name="headliners" className='checkbox-input' />
+                        <label htmlFor="headliners" className='checkbox-label'>Headliners</label><br />
+                    </div>
 
-                <p style={{marginBottom: 4}}>Exterior Cleaning:</p>
-                <input type="checkbox" id='dirtlessWash' name="dirtlessWash" value="no" className='checkbox-input' />
-                <label htmlFor="dirtlessWash" className='checkbox-label'>Dirt-Less Wash</label><br />
+                    <p className="form-section-heading">Interior Addons:</p>
+                    <div>
+                        <input type="checkbox" id='ozone' name="ozone" className='checkbox-input' />
+                        <label htmlFor="ozone" className='checkbox-label'>Ozone Treatment</label><br />
+                    </div>
+                </div>
 
-                <input type="checkbox" id='premium dirtlessWash' name="premium dirtlessWash" value="no" className='checkbox-input' />
-                <label htmlFor="premium dirtlessWash" className='checkbox-label'>Premium Dirt-Less Wash</label><br />
+                <div className="form-section">
+                    <p className='form-section-heading'>Exterior Cleaning:</p>
+                    <div>
+                        <input type="checkbox" id='dirtlessWash' name="dirtlessWash" className='checkbox-input' />
+                        <label htmlFor="dirtlessWash" className='checkbox-label'>Dirt-Less Wash</label><br />
 
-                <input type="checkbox" id='engine' name="engine" value="no" className='checkbox-input' />
-                <label htmlFor="engine" className='checkbox-label' style={{marginBottom: 16}}>Engine Bay</label><br />
+                        <input type="checkbox" id='premium dirtlessWash' name="premium dirtlessWash" className='checkbox-input' />
+                        <label htmlFor="premium dirtlessWash" className='checkbox-label'>Premium Dirt-Less Wash</label><br />
 
-                <p className="form-subheading">Exterior Addons:</p>
-                <input type="checkbox" id='glass' name="glass" value="no" className='checkbox-input addon-checkbox' />
-                <label htmlFor="glass" className='checkbox-label' style={{marginBottom: 16}}>Glass Polishing</label><br />
+                        <input type="checkbox" id='engine' name="engine" className='checkbox-input' />
+                        <label htmlFor="engine" className='checkbox-label' style={{marginBottom: 16}}>Engine Bay</label><br />
+                    </div>
 
-                <input type="checkbox" id='waterspot' name="waterspot" value="no" className='checkbox-input addon-checkbox' />
-                <label htmlFor="waterspot" className='checkbox-label' style={{marginBottom: 16}}>Waterspot/Overspray Removal</label><br />
+                    <p className="form-section-heading">Exterior Addons:</p>
+                    <div>
+                        <input type="checkbox" id='glass' name="glass" className='checkbox-input' />
+                        <label htmlFor="glass" className='checkbox-label'>Glass Polishing</label><br />
 
-                <p style={{marginBottom: 4}}>Paint Correction:</p>
-                <input type="checkbox" id='singlePC' name="singlePC" value="no" className='checkbox-input' />
-                <label htmlFor="singlePC" className='checkbox-label'>Single Stage Paint Correction</label><br />
+                        <input type="checkbox" id='waterspot' name="waterspot" className='checkbox-input' />
+                        <label htmlFor="waterspot" className='checkbox-label'>Waterspot/Overspray Removal</label><br />
+                    </div>
+                </div>
 
-                <input type="checkbox" id='twoPC' name="twoPC" value="no" className='checkbox-input' />
-                <label htmlFor="twoPC" className='checkbox-label' style={{marginBottom: 16}}>Two Stage Paint Correction</label><br />
+                <div className="form-section">
+                    <p className='form-section-heading'>Paint Correction:</p>
+                    <div>
+                        <input type="checkbox" id='singlePC' name="singlePC" className='checkbox-input' />
+                        <label htmlFor="singlePC" className='checkbox-label'>Single Stage Paint Correction</label><br />
 
-                <p className="form-subheading">Paint Correction Addons:</p>
-                <input type="checkbox" id='correctionGlass' name="correctionGlass" value="no" className='checkbox-input addon-checkbox' />
-                <label htmlFor="correctionGlass" className='checkbox-label'>Glass Polishing</label><br style={{marginBottom: 16}} />
+                        <input type="checkbox" id='twoPC' name="twoPC" className='checkbox-input' />
+                        <label htmlFor="twoPC" className='checkbox-label' style={{marginBottom: 16}}>Two Stage Paint Correction</label><br />
+                    </div>
+
+                    <p className="form-section-heading">Paint Correction Addons:</p>
+                    <div>
+                        <input type="checkbox" id='correctionGlass' name="correctionGlass" className='checkbox-input' />
+                        <label htmlFor="correctionGlass" className='checkbox-label'>Glass Polishing</label>
+                    </div>
+                </div>
 
                 <button className='popular-readmore'>Submit</button>
 
