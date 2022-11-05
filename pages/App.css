@@ -372,13 +372,13 @@ input[type='checkbox']:checked + label {
   margin-bottom: 0.5rem;
 }
 
-.text-input {
+/* .text-input {
   
 }
 
 .text-input-label {
   
-}
+} */
 
 .checkbox-label {
   transition: all 500ms ease;
