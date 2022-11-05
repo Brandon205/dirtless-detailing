@@ -1,11 +1,10 @@
 import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 
 import { BsCheck2Circle } from 'react-icons/bs';
 
 import interior from '../public/imgs/pageimgs/interior/driverseatBA.webp';
-import dlWash from '../public/imgs/pageimgs/exterior/IMG_20210429_202336.jpg';
+import dlWash from '../public/imgs/pageimgs/exterior/IMG_20220929_155119.jpg';
 import paint from '../public/imgs/pageimgs/paintCorrection/paintcorrectionBA.webp';
 
 export default function PopularServices() {

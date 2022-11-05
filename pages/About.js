@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 
-import cover from '../public/imgs/pageimgs/homepage/worktruck.webp';
+import cover from '../public/imgs/main-cover.webp';
 
 export default function About() {
   return (

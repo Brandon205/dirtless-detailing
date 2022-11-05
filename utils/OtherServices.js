@@ -2,14 +2,14 @@ import React from 'react';
 import Image from 'next/image';
 
 import bio from '../public/imgs/pageimgs/homepage/bio.webp';
-import combo from '../public/imgs/pageimgs/homepage/combo.webp';
+import combo from '../public/imgs/pageimgs/interior/combo.jpg';
 import dlwash from '../public/imgs/pageimgs/homepage/dlwash.webp';
 import engine from '../public/imgs/pageimgs/homepage/engine.webp';
-import fullintex from '../public/imgs/pageimgs/homepage/fullintex.webp';
+import fullintex from '../public/imgs/pageimgs/interior/IMG_20200702_155834.jpg';
 import headliner from '../public/imgs/pageimgs/addons/headlinersCover.webp';
-import pdlwash from '../public/imgs/pageimgs/homepage/pdlwash.webp';
-import stage1 from '../public/imgs/pageimgs/homepage/stage1.webp';
-import stage2 from '../public/imgs/pageimgs/homepage/stage2.webp';
+import pdlwash from '../public/imgs/pageimgs/exterior/IMG_20220121_153454.jpg';
+import stage1 from '../public/imgs/pageimgs/paintCorrection/IMG_20220826_165738.jpg';
+import stage2 from '../public/imgs/pageimgs/paintCorrection/IMG_20210517_111329.jpg';
 
 export default function OtherServices() {
   return (
