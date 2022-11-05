@@ -3,10 +3,10 @@ import Image from 'next/image';
 import Head from 'next/head';
 
 import cover from '../../public/imgs/pageimgs/paintCorrection/IMG_20220304_132750.jpg';
-import waterspot from '../../public/imgs/pageimgs/homepage/1667678920614.jpeg';
+import waterspot from '../../public/imgs/pageimgs/homepage/1667678920614.webp'; //
 import glassPolish from '../../public/imgs/pageimgs/addons/IMG_20220912_192744.jpg';
 import ozone from '../../public/imgs/pageimgs/bio/IMG_20220904_140012.jpg';
-import truckBed from '../../public/imgs/pageimgs/exterior/1667675422409.jpeg';
+import truckBed from '../../public/imgs/pageimgs/exterior/1667675422409.webp'; //
 
 export default function Addons() {
   return (
