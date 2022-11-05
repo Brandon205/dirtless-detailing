@@ -138,6 +138,29 @@ export default function Contact() {
                         <input type="checkbox" id='ozone' name="ozone" className='checkbox-input' />
                         <label htmlFor="ozone" className='checkbox-label'>Ozone Treatment</label><br />
                     </div>
+
+                    <p className="form-section-heading">Dirtiness (1-Cleanest, 5-Dirtiest)</p>
+                    <div>
+                        <input type="range" name="dogHair" id="dogHair" min="1" max="5" step="1" list="tickmarks" />
+                        <datalist id="tickmarks">
+                            <option value="1" label="1"></option>
+                            <option value="2" label="2"></option>
+                            <option value="3" label="3"></option>
+                            <option value="4" label="4"></option>
+                            <option value="5" label="5"></option>
+                        </datalist>
+                    </div>
+                    <p className="form-section-heading">Dog Hair Amount (0-None, 4-Lots)</p>
+                    <div>
+                        <input type="range" name="dogHair" id="dogHair" min="0" max="4" step="1" list="tickmarks" />
+                        <datalist id="tickmarks">
+                            <option value="0" label="0"></option>
+                            <option value="1" label="1"></option>
+                            <option value="2" label="2"></option>
+                            <option value="3" label="3"></option>
+                            <option value="4" label="4"></option>
+                        </datalist>
+                    </div>
                 </div>
 
                 <div className="form-section">

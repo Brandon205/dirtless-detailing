@@ -392,6 +392,21 @@ input[type='checkbox']:checked + label {
   margin-top: 0.25rem;
 }
 
+datalist {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+option {
+  padding: 0;
+}
+
+input[type="range"] {
+  width: 200px;
+  margin: 0;
+}
+
 /* .contact-container {
   display: flex;
   align-items: center;
