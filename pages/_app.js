@@ -76,7 +76,6 @@ export default function MyApp({ Component, pageProps }) {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="description" content="Dirt-Less Detailing is here to provide the highest-quality detailing services at great prices here in the Bonney Lake area. Check out our offers here!" />
                 <meta name="apple-mobile-web-app-status-bar" content="#90cdf4" />
-                <link rel="canonical" href="https://dirtless-detailing.vercel.app/" />
 
                 <link rel="icon" href="/favicon.ico" />
                 <title>Dirt-Less Detailing | Bonney Lakes Top Auto Detailer</title>
