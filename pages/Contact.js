@@ -74,29 +74,6 @@ export default function Contact() {
             <title>Dirt-Less Detailing | Contact</title>
             <meta name="description" content="Contact us to ask questions or set up an appointment here!" />
         </Head>
-        {/* <div className='contact-container-left'>
-            <h2>CONTACT US</h2>
-            <div className='contact-icon-container'>
-                <FaPhoneAlt className='contact-icon' />
-                <a href="tel:2532529758" target="_blank" rel="noreferrer">(253) 252-9758</a>
-            </div>
-            <div className='contact-icon-container'>
-                <FaFacebookMessenger className='contact-icon' />
-                <a href="https://www.facebook.com/DirtLessDetailing/" target="_blank" rel="noreferrer">Facebook Messenger</a>
-            </div>
-
-            <h2>WORKING HOURS</h2>
-            <div className="contact-icon-container">
-                <FaClock className='contact-icon' />
-                <p className="hours-p">Monday - Sunday:<br />8 AM - 8 PM</p>
-            </div>
-
-            <h2>Location</h2>
-            <div className='contact-icon-container'>
-                <GoLocation className='contact-icon' />
-                <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link location-link" target="_blank" rel='noreferrer'>9305 205th Ave E Bonney Lake Washington</a>
-            </div>
-        </div> */}
 
         <div className="contact-information-container">
             <div className="contact-information">
@@ -236,7 +213,7 @@ export default function Contact() {
                     </div>
                 </div>
 
-                <button className='popular-readmore'>Submit</button>
+                <button className='submit-button'>Submit</button>
 
                 <ToastContainer position="bottom-center"
                     autoClose={5000}
