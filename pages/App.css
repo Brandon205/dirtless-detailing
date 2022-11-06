@@ -336,8 +336,22 @@ input[type='checkbox']:checked + label {
   border-color: var(--main-clr);
 }
 
+datalist {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+option {
+  padding: 0;
+}
+
+input[type="range"] {
+  width: 200px;
+  margin: 0;
+}
+
 .contact-container {
-  /* height: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -353,6 +367,10 @@ input[type='checkbox']:checked + label {
   align-items: center;
   margin: 0 auto;
   padding: 2rem 0;
+}
+
+.form {
+  width: 100%;
 }
 
 .form-section {
@@ -414,21 +432,6 @@ input[type='checkbox']:checked + label {
   margin-top: 0.25rem;
 }
 
-datalist {
-  display: flex;
-  justify-content: space-between;
-  width: 200px;
-}
-
-option {
-  padding: 0;
-}
-
-input[type="range"] {
-  width: 200px;
-  margin: 0;
-}
-
 .contact-information-container {
   padding-top: 2rem;
 }
@@ -444,10 +447,11 @@ input[type="range"] {
   border-radius: 1rem;
   margin: 0 auto;
   padding: 2rem 0.75rem;
-  height: 600px;
+  height: 580px;
 }
 
 .contact-information h2 {
+  text-decoration: underline;
   margin-top: 0;
 }
 
@@ -476,10 +480,11 @@ input[type="range"] {
 }
 
 .submit-button {
-  padding: 1rem;
+  padding: 0.75rem 2rem;
+  font-size: 1.3em;
   background-color: var(--contact-bkg-lighter);
   color: white;
-  border: 2px solid black;
+  border: solid 2px #7d7d7d;
   border-radius: 15px;
   margin-top: 0.5rem;
   transition: 0.5s ease;
@@ -1220,7 +1225,7 @@ hr {
   }
 
   #popular-services {
-    margin-top: 35vh;
+    margin-top: 28vh;
   }
 
   .nav-div {
@@ -1235,7 +1240,7 @@ hr {
     padding-left: 1.5rem;
     justify-content: space-between;
     align-items: center;
-    height: 55vh;
+    height: 70vh;
   }
 
   .dd-desc {
@@ -1260,6 +1265,10 @@ hr {
   .title-bottom {
     margin-bottom: 5rem;
     line-height: 2;
+  }
+
+  .contact-container-right {
+    max-width: 650px;
   }
 
   .popular-img {
@@ -1380,10 +1389,6 @@ hr {
 }
 
 @media screen and (min-width: 1350px) {
-
-  .form {
-    width: 450px;
-  }
 
   .popular-quote-btn {
     margin-right: 3rem;

@@ -21,19 +21,23 @@ export default function Contact() {
             "Full Interior Without Extraction": e.target[5].checked,
             "Biohazard Cleaning": e.target[6].checked,
             "Headliners": e.target[7].checked,
-            "Dirt-Less Wash": e.target[8].checked,
-            "Premium Dirt-LessWash": e.target[9].checked,
-            "Engine Bay": e.target[10].checked,
-            "Glass Polishing (Exterior Addon)": e.target[11].checked,
-            "Waterspot Removal (Exterior Addon)": e.target[12].checked,
-            "Single Stage Paint Correction": e.target[13].checked,
-            "Two Stage Paint Correction": e.target[14].checked,
-            "Glass Polishing (Correction Addon)": e.target[15].checked,
+            "Ozone": e.target[8].checked,
+            "Dirtiness": e.target[9].value,
+            "Dog Hair": e.target[10].value,
+            "Dirt-Less Wash": e.target[11].checked,
+            "Premium Dirt-LessWash": e.target[12].checked,
+            "Engine Bay": e.target[13].checked,
+            "Glass Polishing (Exterior Addon)": e.target[14].checked,
+            "Waterspot Removal (Exterior Addon)": e.target[15].checked,
+            "Truck Bed Cleaning (Exterior Addon)": e.target[16].checked,
+            "Single Stage Paint Correction": e.target[17].checked,
+            "Two Stage Paint Correction": e.target[18].checked,
+            "Glass Polishing (Correction Addon)": e.target[19].checked,
         }
         const formData = new FormData();
 
         Object.entries(formInfo).forEach(([key, value]) => {
-            if (key === "Name" || key === "Email" || key === "Message") {
+            if (key === "Name" || key === "Email" || key === "Message" || key === "Dirtiness" || key === "Dog Hair") {
                 formData.append(key, value);
             } else if (value === true) {
                 formData.append(key, value);
@@ -54,8 +58,7 @@ export default function Contact() {
                 progress: undefined
             })
             e.target.reset()
-        })
-        .catch(error => {
+        }).catch(error => {
             toast.error("An error occurred, please try again." + error, {
                 position: "bottom-center",
                 autoClose: 5000,
@@ -126,7 +129,7 @@ export default function Contact() {
                 </div>
 
                 <div className="form-section">
-                    <p className='form-section-heading'>Combos:</p>
+                    <p className='form-section-heading'>Combo Deals:</p>
                     <div>
                         <input type="checkbox" name="combo" id='combo' className='checkbox-input' />
                         <label htmlFor="combo" className='checkbox-label'>Full Interior and Exterior Combo</label><br />
@@ -134,7 +137,7 @@ export default function Contact() {
                 </div>
 
                 <div className="form-section">
-                    <p className='form-section-heading'>Interior Cleaning:</p>
+                    <p className='form-section-heading'>Interior Cleaning Services:</p>
                     <div>
                         <input type="checkbox" id='fullIntEx' name="fullIntEx" className='checkbox-input' />
                         <label htmlFor="fullIntEx" className='checkbox-label'>Full Interior With Extraction</label><br />
@@ -174,7 +177,7 @@ export default function Contact() {
                 </div>
 
                 <div className="form-section">
-                    <p className='form-section-heading'>Exterior Cleaning:</p>
+                    <p className='form-section-heading'>Exterior Cleaning Services:</p>
                     <div>
                         <input type="checkbox" id='dirtlessWash' name="dirtlessWash" className='checkbox-input' />
                         <label htmlFor="dirtlessWash" className='checkbox-label'>Dirt-Less Wash</label><br />
@@ -193,11 +196,14 @@ export default function Contact() {
 
                         <input type="checkbox" id='waterspot' name="waterspot" className='checkbox-input' />
                         <label htmlFor="waterspot" className='checkbox-label'>Waterspot/Overspray Removal</label><br />
+
+                        <input type="checkbox" id='truckBed' name="truckBed" className='checkbox-input' />
+                        <label htmlFor="truckBed" className='checkbox-label'>Truck Bed Cleaning</label><br />
                     </div>
                 </div>
 
                 <div className="form-section">
-                    <p className='form-section-heading'>Paint Correction:</p>
+                    <p className='form-section-heading'>Paint Correction Services:</p>
                     <div>
                         <input type="checkbox" id='singlePC' name="singlePC" className='checkbox-input' />
                         <label htmlFor="singlePC" className='checkbox-label'>Single Stage Paint Correction</label><br />
