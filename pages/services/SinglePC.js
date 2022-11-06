@@ -79,7 +79,7 @@ export default function SinglePC() {
                 <h3><a href="/services/Addons" style={{color: 'black'}}>Extra Addons</a></h3>
                 <div className="aside-links">
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/Addons/#glass" style={{color: 'blue'}} scroll={el => scrollWithOffset(el)}>Glass Polishing</a> - <span className="bold">$70</span>/hour</p>
+                    <p className='addon-title'><a href="/services/Addons" style={{color: 'blue'}} scroll={el => scrollWithOffset(el)}>Glass Polishing</a> - <span className="bold">$70</span>/hour</p>
                     <p className="subtext">Gives you crystal clear windows</p>
                   </div>
                 </div>

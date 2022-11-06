@@ -196,7 +196,7 @@ li span {
 }
 
 .menu-li {
-  cursor: pointer;
+  cursor: default;
   color: white;
   margin: 0;
 }

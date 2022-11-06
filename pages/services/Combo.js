@@ -98,11 +98,11 @@ export default function Combo() {
               <h3><a href="/services/Addons" style={{color: 'black'}}>Extra Addons</a></h3>
                 <div className="aside-links"> 
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/Addons/#glass" style={{color: 'blue'}}>Glass Polishing</a> - <span className="bold">$70</span>/hour</p>
+                    <p className='addon-title'><a href="/services/Addons" style={{color: 'blue'}}>Glass Polishing</a> - <span className="bold">$70</span>/hour</p>
                     <p className="subtext">Gives you crystal clear windows</p>
                   </div>
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/Addons/#waterspot" style={{color: 'blue'}}>Waterspot/Overspray</a> - <span className="bold">$60</span>/hour</p>
+                    <p className='addon-title'><a href="/services/Addons" style={{color: 'blue'}}>Waterspot/Overspray</a> - <span className="bold">$60</span>/hour</p>
                     <p className="subtext">Remove Overspray and Waterspots from your vehicle</p>
                   </div>
                 </div>

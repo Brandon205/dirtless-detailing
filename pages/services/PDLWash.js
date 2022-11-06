@@ -84,7 +84,7 @@ export default function PDLWash() {
                     <p className="subtext">Remove Overspray and Waterspots from your vehicle.</p>
                   </div>
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/Addons/#waterspot" style={{color: 'blue'}}>Truck Bed Cleaning</a> - <span className="bold">$25</span></p>
+                    <p className='addon-title'><a href="/services/Addons" style={{color: 'blue'}}>Truck Bed Cleaning</a> - <span className="bold">$25</span></p>
                     <p className="subtext">Addon to get your truck bed cleaned.</p>
                   </div>
                 </div>

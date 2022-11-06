@@ -36,7 +36,7 @@ export default function DLWash() {
   return (
     <section className='service-content-container'>
       <Head>
-        <title>Dirt-Less Detailing | Wash</title>
+        <title>Dirt-Less Detailing | Dirt-Less Wash</title>
         <meta name="description" content="The Dirt-Less Wash is our base tier exterior cleaning service, complete with a spray wax to protect your vehicle." />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
@@ -72,15 +72,15 @@ export default function DLWash() {
               <h3><a href="/services/Addons" style={{color: 'black'}}>Extra Addons</a></h3>
                 <div className="aside-links">
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/Addons/#glass" style={{color: 'blue'}}>Glass Polishing</a> - <span className="bold">$70</span>/hour</p>
+                    <p className='addon-title'><a href="/services/Addons" style={{color: 'blue'}}>Glass Polishing</a> - <span className="bold">$70</span>/hour</p>
                     <p className="subtext">Gives you crystal clear windows</p>
                   </div>
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/Addons/#waterspot" style={{color: 'blue'}}>Waterspot/Overspray</a> - <span className="bold">$60</span>/hour</p>
+                    <p className='addon-title'><a href="/services/Addons" style={{color: 'blue'}}>Waterspot/Overspray</a> - <span className="bold">$60</span>/hour</p>
                     <p className="subtext">Remove Overspray and Waterspots from your vehicle</p>
                   </div>
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/Addons/#waterspot" style={{color: 'blue'}}>Truck Bed Cleaning</a> - <span className="bold">$25</span></p>
+                    <p className='addon-title'><a href="/services/Addons" style={{color: 'blue'}}>Truck Bed Cleaning</a> - <span className="bold">$25</span></p>
                     <p className="subtext">Addon to get your truck bed cleaned.</p>
                   </div>
                 </div>

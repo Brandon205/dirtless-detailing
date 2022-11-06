@@ -69,8 +69,21 @@ export default function FullIntEx() {
                 <a href="/services/Headliners" style={{color: href.endsWith('Headliners') ? 'blue' : 'black'}} className="service-link">{href.endsWith('Headliners') ? '> ' : ''} Headliners</a>
               </div>
             </div>
+
+          <div className='aside-container'>
+            <div className='service-aside addons-aside'>
+            <h3><a href="/services/Addons" style={{color: 'black'}}>Extra Addons</a></h3>
+              <div className="aside-links">
+                <div className="addon-container">
+                  <p className='addon-title'><a href="/services/Addons" style={{color: 'blue'}}>Ozone Treatment</a> - <span className="bold">$100</span></p>
+                  <p className="subtext">Treats your vehicle to get rid of any viruses, bacteria, and odors</p>
+                </div>
+              </div>
+            </div>
           </div>
+
         </div>
+      </div>
 
         <div className="combo-container">
           <h2>Get a <span className='special-package'>free</span> Engine cleaning!</h2>
