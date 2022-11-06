@@ -54,10 +54,11 @@ export default function PDLWash() {
       <div className='main-content-container'>
         <div className="process-container">
           <div>
-            <h2>Our Premium Exterior Cleaning Process*</h2>
+            <h2>Our Premium Dirt-Less Wash Process*</h2>
             <ol className='list'>
               {content}
             </ol>
+            <h4 style={{marginTop: 0}}>*Truck Bed cleaning offered as an extra addon if needed.</h4>
           </div>
 
           <div>
