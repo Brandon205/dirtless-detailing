@@ -41,6 +41,7 @@ export default function PDLWash() {
       <Head>
         <title>Dirt-Less Detailing | Premium Wash</title>
         <meta name="description" content="Our Premium Dirt-Less Wash will go above and beyond what our base tier offers, and is sure to get everything off your vehicles exterior!" />
+        <link rel="canonical" href="https://dirtless-detailing.vercel.app/services/PDLWash" />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="Vehicle after a Premium Dirt-Less Wash" layout="fill" objectFit='cover' placeholder='blur' priority />

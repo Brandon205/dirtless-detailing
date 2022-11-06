@@ -76,6 +76,7 @@ export default function Contact() {
         <Head>
             <title>Dirt-Less Detailing | Contact</title>
             <meta name="description" content="Contact us to ask questions or set up an appointment here!" />
+            <link rel="canonical" href="https://dirtless-detailing.vercel.app/Contact" />
         </Head>
 
         <div className="contact-information-container">

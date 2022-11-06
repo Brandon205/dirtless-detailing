@@ -34,6 +34,7 @@ export default function Headliners() {
       <Head>
         <title>Dirt-Less Detailing | Headliners</title>
         <meta name="description" content="Dirty or stained headliners? We are here to help with plenty of solutions to best suit your headliners needs." />
+        <link rel="canonical" href="https://dirtless-detailing.vercel.app/services/Headliners" />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="Clean headliners" layout="fill" objectFit='cover' placeholder='blur' priority />

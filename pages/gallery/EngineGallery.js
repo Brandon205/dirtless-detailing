@@ -11,6 +11,7 @@ export default function PaintCorrectionGallery() {
       <Head>
         <title>Dirt-Less Detailing | Engine Gallery</title>
         <meta name="description" content="Engine bay photos after our engine bay cleaning service!" />
+        <link rel="canonical" href="https://dirtless-detailing.vercel.app/gallery/EngineGallery" />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="Vehicle after a Engine Bay Cleaning" layout="fill" objectFit='cover' priority />

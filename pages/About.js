@@ -10,6 +10,7 @@ export default function About() {
       <Head>
         <title>Dirt-Less Detailing | About Us / FAQ</title>
         <meta name="description" content="Who we are and some of our most frequently asked questions." />
+        <link rel="canonical" href="https://dirtless-detailing.vercel.app/About" />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="Our Worktruck" layout="fill" objectFit='cover' priority />

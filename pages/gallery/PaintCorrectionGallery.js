@@ -11,13 +11,14 @@ export default function PaintCorrectionGallery() {
       <Head>
         <title>Dirt-Less Detailing | Paint Correction Gallery</title>
         <meta name="description" content="Here are some examples from both of our Paint Correction services!" />
+        <link rel="canonical" href="https://dirtless-detailing.vercel.app/gallery/PaintCorrectionGallery" />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="Vehicle after a Two Stage Paint Correction" layout="fill" objectFit='cover' priority />
       </div>
       <header>
         <h1 className='servicepage-heading'>Paint Correction Gallery</h1>
-        <p>This is a gallery to show what we can do to correct your paint problems. Take a look at our <a href="/single-paint-correction" className='gallery-link' >Single Stage Paint Correction</a> page or our <a href="/two-paint-correction" className='gallery-link' >Two Stage Paint Correction</a> services.</p>
+        <p>This is a gallery to show what we can do to correct your paint problems. Take a look at our <a href="/services/SinglePC" className='gallery-link' >Single Stage Paint Correction</a> page or our <a href="/services/TwoPC" className='gallery-link' >Two Stage Paint Correction</a> services.</p>
       </header>
 
       <div className='gallery-container'>

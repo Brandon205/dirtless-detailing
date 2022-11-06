@@ -37,7 +37,8 @@ export default function DLWash() {
     <section className='service-content-container'>
       <Head>
         <title>Dirt-Less Detailing | Dirt-Less Wash</title>
-        <meta name="description" content="The Dirt-Less Wash is our base tier exterior cleaning service, complete with a spray wax to protect your vehicle." />
+        <meta name="description" content="The Dirt-Less Wash is our base tier exterior cleaning service, complete with a spray wax to protect your vehicle." />\
+        <link rel="canonical" href="https://dirtless-detailing.vercel.app/services/DLWash" />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="Vehicle after a Dirt-Less Wash" layout="fill" objectFit='cover' placeholder='blur' priority />

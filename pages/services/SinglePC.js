@@ -45,6 +45,7 @@ export default function SinglePC() {
       <Head>
         <title>Dirt-Less Detailing | Single Stage</title>
         <meta name="description" content="Single Stage Paint Correction should fix most of your Paint Correction needs!" />
+        <link rel="canonical" href="https://dirtless-detailing.vercel.app/services/SinglePC" />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="Vehicle after a Single Stage Paint Correction" layout="fill" objectFit='cover' placeholder='blur' priority />

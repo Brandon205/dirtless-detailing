@@ -60,6 +60,7 @@ export default function Combo() {
       <Head>
         <title>Dirt-Less Detailing | Combo</title>
         <meta name="description" content="Full Interior Cleaning + Premium Dirt-Less Wash Combo. Get a free engine bay cleaning when booking our current Combo Deal!" />
+        <link rel="canonical" href="https://dirtless-detailing.vercel.app/services/Combo" />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="Vehicle after a Combo Wash" layout="fill" objectFit='cover' placeholder='blur' priority />
