@@ -68,7 +68,7 @@ export default function Engine() {
         </div>
 
         <div>
-          <h2>Our Pricing</h2>
+          <h3>Our Engine Bay Cleaning Price</h3>
           <h4>Our simple price for this service is shown below.</h4>
           <div className="pricing-container">
             <div className="pricing-card">

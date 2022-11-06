@@ -58,7 +58,7 @@ export default function Combo() {
   return (
     <section className='service-content-container'>
       <Head>
-        <title>Dirt-Less Detailing | Combo</title>
+        <title>Dirt-Less Detailing | Combo Deals</title>
         <meta name="description" content="Full Interior Cleaning + Premium Dirt-Less Wash Combo. Get a free engine bay cleaning when booking our current Combo Deal!" />
         <link rel="canonical" href="https://dirtless-detailing.vercel.app/services/Combo" />
       </Head>
@@ -127,7 +127,7 @@ export default function Combo() {
         </div>
 
         <div>
-          <h2>Our Pricing</h2>
+          <h3 className='pricing-title'>Our Combo Deal Pricing</h3>
           <h4>Our basic prices are shown below, final pricing may vary based on your vehicle size, condition, and whether or not you need extraction on the carpets.</h4>
           <div className="pricing-container">
             <div className="pricing-card">

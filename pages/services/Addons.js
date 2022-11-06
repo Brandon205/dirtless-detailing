@@ -12,7 +12,7 @@ export default function Addons() {
   return (
     <section className='service-content-container'>
       <Head>
-        <title>Dirt-Less Detailing | Addons</title>
+        <title>Dirt-Less Detailing | Dirt-Less Addons</title>
         <meta name="description" content="Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment. Check out our popular addons that top off our services." />
         <link rel="canonical" href="https://dirtless-detailing.vercel.app/services/Addons" />
       </Head>

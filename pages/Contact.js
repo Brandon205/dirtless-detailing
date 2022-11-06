@@ -74,14 +74,14 @@ export default function Contact() {
   return (
     <section className="contact-container" id="contact">
         <Head>
-            <title>Dirt-Less Detailing | Contact</title>
+            <title>Dirt-Less Detailing | Contact Us</title>
             <meta name="description" content="Contact us to ask questions or set up an appointment here!" />
             <link rel="canonical" href="https://dirtless-detailing.vercel.app/Contact" />
         </Head>
 
         <div className="contact-information-container">
             <div className="contact-information">
-                <h2>Contact Information</h2>
+                <h1>Contact Information</h1>
                 <p>Feel free to reach out to us using any of these methods, our general info like location and hours are listed below as well.</p>
                 <hr className="contact-border" />
                 <div className="contact-icon-container">

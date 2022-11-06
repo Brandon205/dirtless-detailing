@@ -1,5 +1,6 @@
 import { Carousel } from 'react-responsive-carousel';
 import Image from 'next/image';
+import Head from 'next/head';
 
 import PopularServices from '../utils/PopularServices';
 import OtherServices from '../utils/OtherServices';
@@ -15,6 +16,9 @@ import cover from '../public/imgs/main-cover.webp';
 export default function Home() {
     return (
         <div className="App">
+            <Head>
+                <link rel="canonical" href="https://dirtless-detailing.vercel.app" />
+            </Head>
             <div className="maincover" style={{backgroundImage: 'url(' + cover + ')' }}>
                 <Image src={cover} layout="fill" objectFit='cover' alt="Cleaned Toyota Tundra" placeholder='blur' priority />
             </div>

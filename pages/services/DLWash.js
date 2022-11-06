@@ -92,7 +92,7 @@ export default function DLWash() {
         </div>
 
         <div>
-          <h2 className='pricing-title'>Our Pricing</h2>
+          <h3 className='pricing-title'>Our Dirt-Less Wash Pricing</h3>
           <h4 className='subtext'>Our basic prices are shown below, final pricing may vary based on your vehicle size.</h4>
           <div className="pricing-container">
             <div className="pricing-card">

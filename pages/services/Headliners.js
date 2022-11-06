@@ -79,7 +79,7 @@ export default function Headliners() {
         </div>
 
         <div>
-          <h2>Our Pricing</h2>
+          <h3>Our Headliner Cleaning Price</h3>
           <h4>Our basic prices are shown below, final pricing may vary based on your vehicle size.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
