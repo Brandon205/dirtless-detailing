@@ -1,7 +1,7 @@
 {
   "name": "dirtless-detailing",
   "homepage": "https://brandon205.github.io/dirtless-detailing/",
-  "version": "0.9.98",
+  "version": "0.9.99",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
