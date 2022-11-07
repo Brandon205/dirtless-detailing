@@ -16,30 +16,30 @@ export default function Contact() {
             "Name": e.target[0].value,
             "Email": e.target[1].value,
             "Message": e.target[2].value,
-            "Combo": e.target[3].checked,
-            "Full Interior With Extraction": e.target[4].checked,
-            "Full Interior Without Extraction": e.target[5].checked,
-            "Biohazard Cleaning": e.target[6].checked,
-            "Headliners": e.target[7].checked,
-            "Ozone": e.target[8].checked,
+            "Combo": e.target[3].checked ? 'Yes': 'No',
+            "Full Interior With Extraction": e.target[4].checked ? 'Yes': 'No',
+            "Full Interior Without Extraction": e.target[5].checked ? 'Yes': 'No',
+            "Biohazard Cleaning": e.target[6].checked ? 'Yes': 'No',
+            "Headliners": e.target[7].checked ? 'Yes': 'No',
+            "Ozone": e.target[8].checked ? 'Yes': 'No',
             "Dirtiness": e.target[9].value,
             "Dog Hair": e.target[10].value,
-            "Dirt-Less Wash": e.target[11].checked,
-            "Premium Dirt-LessWash": e.target[12].checked,
-            "Engine Bay": e.target[13].checked,
-            "Glass Polishing (Exterior Addon)": e.target[14].checked,
-            "Waterspot Removal (Exterior Addon)": e.target[15].checked,
-            "Truck Bed Cleaning (Exterior Addon)": e.target[16].checked,
-            "Single Stage Paint Correction": e.target[17].checked,
-            "Two Stage Paint Correction": e.target[18].checked,
-            "Glass Polishing (Correction Addon)": e.target[19].checked,
+            "Dirt-Less Wash": e.target[11].checked ? 'Yes': 'No',
+            "Premium Dirt-LessWash": e.target[12].checked ? 'Yes': 'No',
+            "Engine Bay": e.target[13].checked ? 'Yes': 'No',
+            "Glass Polishing (Exterior Addon)": e.target[14].checked ? 'Yes': 'No',
+            "Waterspot Removal (Exterior Addon)": e.target[15].checked ? 'Yes': 'No',
+            "Truck Bed Cleaning (Exterior Addon)": e.target[16].checked ? 'Yes': 'No',
+            "Single Stage Paint Correction": e.target[17].checked ? 'Yes': 'No',
+            "Two Stage Paint Correction": e.target[18].checked ? 'Yes': 'No',
+            "Glass Polishing (Correction Addon)": e.target[19].checked ? 'Yes': 'No'
         }
         const formData = new FormData();
 
         Object.entries(formInfo).forEach(([key, value]) => {
             if (key === "Name" || key === "Email" || key === "Message" || key === "Dirtiness" || key === "Dog Hair") {
                 formData.append(key, value);
-            } else if (value === true) {
+            } else if (value === 'Yes') {
                 formData.append(key, value);
             }
         });
