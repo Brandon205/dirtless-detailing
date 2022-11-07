@@ -58,7 +58,7 @@ export default function PDLWash() {
             <ol className='list'>
               {content}
             </ol>
-            <h4 style={{marginTop: 0}}>*Truck Bed cleaning offered as an extra addon if needed.</h4>
+            <p style={{marginTop: 0}}>*Truck Bed cleaning offered as an extra addon if needed.</p>
           </div>
 
           <div>
@@ -97,7 +97,7 @@ export default function PDLWash() {
         </div>
 
         <div className="combo-container">
-          <h2>Get a <span className='special-package'>free</span> Engine cleaning!</h2>
+          <h3>Get a <span className='special-package'>free</span> Engine cleaning!</h3>
           <p className="subtext">When you book this Premium Exterior Cleaning and a <a href="/services/FullIntEx">Full Interior Cleaning</a> together we will clean out your engine bay at no extra cost. (Click <a href='/services/Combo'>here</a> to learn more).</p>
         </div>
 

@@ -9,7 +9,7 @@ export default function About() {
     <div className='App'>
       <Head>
         <title>Dirt-Less Detailing | About Us / FAQ</title>
-        <meta name="description" content="Who we are and some of our most frequently asked questions." />
+        <meta name="description" content="Find out who we are, and get answers to some of our most frequently asked questions." />
         <link rel="canonical" href="https://dirtless-detailing.vercel.app/About" />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
@@ -24,7 +24,7 @@ export default function About() {
         <h2>Who are we?</h2>
         <p>Dirt-Less Detailing was started with two things in mind. Providing the absolute best results and customer service your money can buy.</p>
 
-        <h2>FAQ</h2>
+        <h3>FAQ</h3>
         <ul className='faq-ul'>
           <li className='faq-li'>What do you need from me when you get here?</li>
           <p className='faq-p'>All we need is an electrical outlet, a water spigot, and preferably all personal items out of the car.</p>

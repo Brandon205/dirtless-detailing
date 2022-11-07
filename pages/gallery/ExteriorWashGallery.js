@@ -26,6 +26,7 @@ export default function PaintCorrectionGallery() {
       <div className='gallery-container'>
         { imagery }
       </div>
+      <h2 style={{color: 'white'}}>Check out our <a href="/services/DLWash" className='gallery-link'>Dirt-Less Wash</a> page for more details!</h2>
     </section>
   )
 }

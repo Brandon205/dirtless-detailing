@@ -57,8 +57,8 @@ export default function FullIntEx() {
             <ol className='list'>
               {content}
             </ol>
-            <h4 style={{marginTop: 0}}>*Headliners not included</h4>
-            <h4><span className='special-package'>*</span>Extraction Package Only</h4>
+            <p style={{marginTop: 0}}>*Headliners not included</p>
+            <p><span className='special-package'>*Extraction</span> Package Only</p>
           </div>
 
           <div className='aside-container'>
@@ -87,7 +87,7 @@ export default function FullIntEx() {
       </div>
 
         <div className="combo-container">
-          <h2>Get a <span className='special-package'>free</span> Engine cleaning!</h2>
+          <h3>Get a <span className='special-package'>free</span> Engine cleaning!</h3>
           <p className="subtext">When you book this Full Interior Cleaning and a <a href="/services/PDLWash">Premium Dirt-Less Wash</a> together we will clean out your engine bay at no extra cost. (Click <a href='/services/Combo'>here</a> to learn more).</p>
         </div>
 
@@ -104,7 +104,7 @@ export default function FullIntEx() {
                   <p className="pricing-price">$200</p>
                 </div>
                 <div className='pricing-outline'>
-                  <p className='white-text'>With Extraction</p>
+                  <p className='white-text'>With <span className="special-package">Extraction</span></p>
                   <p className="pricing-price">$250</p>
                 </div>
               </div>
@@ -118,7 +118,7 @@ export default function FullIntEx() {
                   <p className="pricing-price">$250</p>
                 </div>
                 <div className='pricing-outline'>
-                  <p className='white-text'>With Extraction</p>
+                  <p className='white-text'>With <span className="special-package">Extraction</span></p>
                   <p className="pricing-price">$300</p>
                 </div>
               </div>
@@ -132,7 +132,7 @@ export default function FullIntEx() {
                   <p className="pricing-price">$300</p>
                 </div>
                 <div className='pricing-outline'>
-                  <p className='white-text'>With Extraction</p>
+                  <p className='white-text'>With <span className="special-package">Extraction</span></p>
                   <p className="pricing-price">$350</p>
                 </div>
               </div>

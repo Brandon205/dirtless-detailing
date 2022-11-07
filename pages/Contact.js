@@ -75,7 +75,7 @@ export default function Contact() {
     <section className="contact-container" id="contact">
         <Head>
             <title>Dirt-Less Detailing | Contact Us</title>
-            <meta name="description" content="Contact us to ask questions or set up an appointment here!" />
+            <meta name="description" content="Find out how to contact us here to ask any questions, or to set up an appointment!" />
             <link rel="canonical" href="https://dirtless-detailing.vercel.app/Contact" />
         </Head>
 
@@ -116,6 +116,7 @@ export default function Contact() {
         </div>
 
         <div className='contact-container-right'>
+            <h2>Email us by filling out this form:</h2>
             <form className="form" onSubmit={(e) => formSubmit(e)}>
                 <div className="form-section form-top-section">
                     <div>

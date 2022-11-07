@@ -24,6 +24,7 @@ export default function FullIntGallery() {
       <div className='gallery-container'>
         { imagery }
       </div>
+      <h2 style={{color: 'white'}}>Check out our <a href="/services/FullIntEx" className='gallery-link' >Full Interior Cleaning</a> page for more details!</h2>
     </section>
   )
 }

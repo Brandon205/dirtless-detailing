@@ -58,7 +58,7 @@ export default function SinglePC() {
       <div className='main-content-container'>
         <div className="process-container">
           <div>
-            <h2>Our Paint Correction Process</h2>
+            <h2>Our Single Stage Paint Correction Process</h2>
             <ol className='list'>
               {content}
             </ol>
