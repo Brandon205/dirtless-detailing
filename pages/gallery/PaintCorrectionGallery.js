@@ -10,7 +10,7 @@ export default function PaintCorrectionGallery() {
     <section className='gallery-content-container'>
       <Head>
         <title>Dirt-Less Detailing | Paint Correction Gallery</title>
-        <meta name="description" content="Here are some examples from both of our Paint Correction services!" />
+        <meta name="description" content="Paint Correction Photos • Here are some examples from both our Single and Two Stage Paint Correction services!" />
         <link rel="canonical" href="https://dirtless-detailing.vercel.app/gallery/PaintCorrectionGallery" />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
@@ -24,6 +24,7 @@ export default function PaintCorrectionGallery() {
       <div className='gallery-container'>
         { imagery }
       </div>
+      <h2 style={{color: 'white'}}>Check out our <a href="/services/SinglePC" className='gallery-link' >Single Stage Paint Correction</a> page or our <a href="/services/TwoPC" className='gallery-link' >Two Stage Paint Correction</a> pages for more details!</h2>
     </section>
   )
 }

@@ -13,7 +13,7 @@ export default function Addons() {
     <section className='service-content-container'>
       <Head>
         <title>Dirt-Less Detailing | Dirt-Less Addons</title>
-        <meta name="description" content="Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment. Check out our popular addons that top off our services." />
+        <meta name="description" content="Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment • Truck Bed Cleaning. Check out our popular addons that top off our services." />
         <link rel="canonical" href="https://dirtless-detailing.vercel.app/services/Addons" />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
@@ -24,6 +24,7 @@ export default function Addons() {
         <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
       </div>
 
+      <h2 style={{fontSize: 32}}>Our Current Dirt-Less Addons:</h2>
       <div className="addon-content-container">
 
         <div className="feature-section">
