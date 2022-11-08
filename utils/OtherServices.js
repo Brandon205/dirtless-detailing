@@ -14,11 +14,11 @@ import stage2 from '../public/imgs/pageimgs/paintCorrection/IMG_20210517_111329.
 export default function OtherServices() {
   return (
     <div>
-        <section className="combo-section">
-            <div className="combo-img-container">
+        <section className="feature-section">
+            <div className="feature-img-container">
                 <Image style={{borderRadius: 16}} src={combo} alt="Vehicle after a Combo Cleaning" loading='lazy' placeholder='blur' quality={90} />
             </div>
-            <div className="combo-desc-area">
+            <div className="feature-desc-area">
                 <a href="/services/Combo" className='service-heading-link'>Full Interior and Exterior Cleaning Combo</a>
                 <p className="secondary-text">Starting at: <span>$400</span></p>
                 <p className="service-desc">This combo comes with a <span className='special-package'>free</span> Engine Bay cleaning, along with the full interior and exterior detail this package is sure to bring your whole car back to life.</p>
