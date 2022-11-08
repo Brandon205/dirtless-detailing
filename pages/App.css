@@ -13,7 +13,7 @@
 
   /** Button colors **/
   --main-clr: #c83f03;
-  --main-clr-hover: #98350b;
+  --main-clr-hover: #91350e;
   --quote-clr: #1D96ED;
 
   /** Text and smaller colors **/
@@ -537,6 +537,7 @@ input[type="range"] {
 
 .service-heading-link {
   display: block;
+  margin-bottom: 0.25rem;
   text-decoration: none;
   font-size: 1.75em;
   font-weight: 600;
@@ -864,7 +865,7 @@ hr {
   position: relative;
   color: var(--heading-clr1);
   font-size: 2em;
-  padding-top: 25vh;
+  padding-top: 20vh;
   margin: 0 auto 40vh auto;
   z-index: 1;
 }
@@ -1003,8 +1004,14 @@ hr {
   align-items: flex-start;
   flex-direction: column;
   gap: 1rem;
-  width: 80vw;
+  width: 85vw;
   margin: 0 auto 3rem auto;
+}
+
+.internal-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .examples-container {
@@ -1038,6 +1045,10 @@ hr {
   margin: 1rem auto 0 auto;
   padding: 0.75rem;
   border-radius: 15px;
+}
+
+.feature-desc-area {
+  height: 80%;
 }
 
 .feature-desc-area div a:last-child {

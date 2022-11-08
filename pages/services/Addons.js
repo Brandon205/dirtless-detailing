@@ -26,131 +26,71 @@ export default function Addons() {
 
       <div className="addon-content-container">
 
-        {/* <div className="service-card">
-          <Image src={glassPolish} alt="Window after a glass polishing" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
-          <div className="otherservices-desc">
-            <div>
-              <a href="/services/FullIntEx" className='service-heading-link'>Glass Polishing</a>
-              <p className="secondary-text">Hourly rate: <span>$80/hour</span></p>
-            </div>
-            <p className="service-desc">Remove all scratches, etching, and watermarks possible.</p>
-            <p className="service-desc">• This can be added onto any of our Paint Correction Services when contacting us.</p>
-
-            <div>
-              <a style={{marginBottom: 8}} href='/services/SinglePC' className="readmore">Paint Correction Details {'>'}</a>
+        <div className="feature-section">
+          <div className="feature-img-container">
+            <Image style={{borderRadius: 16}} src={glassPolish} alt="Window after a glass polishing" className='otherservices-image' loading='lazy' placeholder='blur' quality={90} />
+          </div>
+          <div className="feature-desc-area">
+            <p className='service-heading-link'>Glass Polishing</p>
+            <p className="secondary-text">Hourly Rate: <span>$80</span></p>
+            <p className="service-desc">Remove all scratches, etching, and watermarks possible. Can be added to any of our Paint Correction Services when contacting us.</p>
+            <div className='internal-links'>
+              <a href="/services/SinglePC" className="readmore">Single Stage Paint Correction</a>
+              <a href="/services/TwoPC" className="readmore">Two Stage Paint Correction</a>
             </div>
           </div>
-        </div> */}
-        <div className="feature-section">
-            <div className="feature-img-container">
-                <Image style={{borderRadius: 16}} src={glassPolish} alt="Window after a glass polishing" className='otherservices-image' loading='lazy' placeholder='blur' quality={90} />
-            </div>
-            <div className="feature-desc-area">
-                <p className='service-heading-link'>Glass Polishing</p>
-                <p className="secondary-text">Hourly Rate: <span>$80</span></p>
-                <p className="service-desc">Remove all scratches, etching, and watermarks possible. Can be added to any of our Paint Correction Services when contacting us.</p>
-                <div>
-                    <a href="/services/SinglePC" className="readmore">Single Stage Paint Correction</a>
-                    <a href="/services/TwoPC" className="readmore">Two Stage Paint Correction</a>
-                </div>
-            </div>
         </div>
+        <hr className='contact-border' />
 
         <div className="feature-section">
-            <div className="feature-img-container">
-                <Image style={{borderRadius: 16}} src={ozone} alt="Ozone Treatment in Progress" className='otherservices-image' loading='lazy' placeholder='blur' quality={90} />
+          <div className="feature-img-container">
+            <Image style={{borderRadius: 16}} src={ozone} alt="Ozone Treatment in Progress" className='otherservices-image' loading='lazy' placeholder='blur' quality={90} />
+          </div>
+          <div className="feature-desc-area">
+            <p className='service-heading-link'>Ozone Treatment</p>
+            <p className="secondary-text">Cost: <span>$100</span></p>
+            <p className="service-desc">Ozone treatment is the use of O3 (gas ozone) to remove bacteria, viruses, and odors from your vehicle. This can be added to any of our Interior cleanings when contacting us.</p>
+            <div className='internal-links'>
+              <a href="/services/FullIntEx" className="readmore">Full Interior Cleaning</a>
+              <a href="/services/Bio" className="readmore">Biohazard Cleaning</a>
+              <a href="/services/Headliners" className="readmore">Headliners</a>
             </div>
-            <div className="feature-desc-area">
-                <p className='service-heading-link'>Ozone Treatment</p>
-                <p className="secondary-text">Cost: <span>$100</span></p>
-                <p className="service-desc">Ozone treatment is the use of O3 (gas ozone) to remove bacteria, viruses, and odors from your vehicle. This can be added to any of our Interior cleanings when contacting us.</p>
-                <div>
-                    <a href="/services/FullIntEx" className="readmore">Full Interior Cleaning</a>
-                    <a href="/services/Bio" className="readmore">Biohazard Cleaning</a>
-                    <a href="/services/Headliners" className="readmore">Headliners</a>
-                </div>
-            </div>
+          </div>
         </div>
+        <hr className='contact-border' />
 
-        {/* <div className="service-card">
-          <Image src={ozone} alt="Ozone treatment in progress" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
-          <div className="otherservices-desc">
-          <div>
-          <a href="/services/FullIntEx" className='service-heading-link'>Ozone Treatment</a>
-          <p className="secondary-text">Cost: <span>$100</span></p>
-          </div>
-          <p className="service-desc">Ozone treatment is the use of O3 (gas ozone) to remove bacteria, viruses, and odors from your vehicle.</p>
-          <p className="service-desc">• This can be added to any of our Interior treatments when contacting us.</p>
-          
-          <div>
-          <a style={{marginBottom: 8}} href='/services/Bio' className="readmore">Biohazard Details {'>'}</a>
-          </div>
-          </div>
-        </div> */}
         <div className="feature-section">
-            <div className="feature-img-container">
-                <Image style={{borderRadius: 16}} src={waterspot} alt="Waterspot / Overspray removal after" className='otherservices-image' loading='lazy' placeholder='blur' quality={90} />
+          <div className="feature-img-container">
+            <Image style={{borderRadius: 16}} src={waterspot} alt="Waterspot / Overspray removal after" className='otherservices-image' loading='lazy' placeholder='blur' quality={90} />
+          </div>
+          <div className="feature-desc-area">
+            <p className='service-heading-link'>Waterspot/Overspray Removal</p>
+            <p className="secondary-text">Hourly rate: <span>$80/hour</span></p>
+            <p className="service-desc">Remove all overspray and waterspots we can. This can be added onto any of our Exterior Washes or either of our Paint Correction Services when contacting us.</p>
+            <div className='internal-links'>
+              <a href="/services/DLWash" className="readmore">Dirt-Less Wash</a>
+              <a href="/services/PDLWash" className="readmore">Premium Dirt-Less Wash</a>
+              <a href="/services/SinglePC" className="readmore">Single Stage Paint Correction</a>
+              <a href="/services/TwoPC" className="readmore">Headliners</a>
             </div>
-            <div className="feature-desc-area">
-                <p className='service-heading-link'>Waterspot/Overspray Removal</p>
-                <p className="secondary-text">Hourly rate: <span>$80/hour</span></p>
-                <p className="service-desc">Remove all overspray and waterspots we can. This can be added onto any of our Exterior Washes or either of our Paint Correction Services when contacting us.</p>
-                <div>
-                    <a href="/services/DLWash" className="readmore">Dirt-Less Wash</a>
-                    <a href="/services/PDLWash" className="readmore">Premium Dirt-Less Wash</a>
-                    <a href="/services/SinglePC" className="readmore">Single Stage Paint Correction</a>
-                    <a href="/services/TwoPC" className="readmore">Headliners</a>
-                </div>
-            </div>
+          </div>
         </div>
+        <hr className='contact-border' />
         
-        {/* <div className="service-card">
-          <Image src={waterspot} alt="Waterspot / Overspray removal after" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
-          <div className="otherservices-desc">
-          <div>
-          <a href="/services/FullIntEx" className='service-heading-link'>Waterspot/Overspray Removal</a>
-          <p className="secondary-text">Hourly rate: <span>$80/hour</span></p>
-          </div>
-          <p className="service-desc">Remove all overspray and waterspots we can.</p>
-          <p className="service-desc">• This can be added onto any of our Exterior Washes or any of our Paint Correction Services when contacting us.</p>
-          
-          <div>
-          <a style={{marginBottom: 8}} href='/services/DLWash' className="readmore">Dirt-Less Wash Details {'>'}</a>
-          <a href='/services/SinglePC' className="readmore">Paint Correction Details {'>'}</a>
-          </div>
-          </div>
-        </div> */}
         <div className="feature-section">
-            <div className="feature-img-container">
-                <Image style={{borderRadius: 16}} src={truckBed} alt="Truck Bed Cleaning" className='otherservices-image' loading='lazy' placeholder='blur' quality={90} />
-            </div>
-            <div className="feature-desc-area">
-                <p className='service-heading-link'>Truck Bed Cleaning</p>
-                <p className="secondary-text">Cost: <span>$25</span></p>
-                <p className="service-desc">This is our addon to get your truck bed cleaned out. Can be added to either of out Dirt-Less Washes.</p>
-                <div>
-                    <a href="/services/DLWash" className="readmore">Dirt-Less Wash</a>
-                    <a href="/services/PDLWash" className="readmore">Premium Dirt-Less Wash</a>
-                </div>
-            </div>
-        </div>
-
-        {/* <div className="service-card">
-          <Image src={truckBed} alt="Truck Bed Cleaning" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
-          <div className="otherservices-desc">
-            <div>
-              <a href="/services/FullIntEx" className='service-heading-link'>Truck Bed Cleaning</a>
-              <p className="secondary-text">Cost: <span>$25</span></p>
-            </div>
-            <p className="service-desc">This is our addon to get your truck bed cleaned out.</p>
-            <p className="service-desc">• This can be added to either of our exterior services.</p>
-
-            <div>
-              <a style={{marginBottom: 8}} href='/services/DLWash' className="readmore">Dirt-Less Wash Details {'>'}</a>
-              <a style={{marginBottom: 8}} href='/services/PDLWash' className="readmore">Premium Dirt-Less Wash Details {'>'}</a>
+          <div className="feature-img-container">
+            <Image style={{borderRadius: 16}} src={truckBed} alt="Truck Bed Cleaning" className='otherservices-image' loading='lazy' placeholder='blur' quality={90} />
+          </div>
+          <div className="feature-desc-area">
+            <p className='service-heading-link'>Truck Bed Cleaning</p>
+            <p className="secondary-text">Cost: <span>$25</span></p>
+            <p className="service-desc">This is our addon to get your truck bed cleaned out. Can be added to either of out Dirt-Less Washes.</p>
+            <div className='internal-links'>
+              <a href="/services/DLWash" className="readmore">Dirt-Less Wash</a>
+              <a href="/services/PDLWash" className="readmore">Premium Dirt-Less Wash</a>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </section>
   )
