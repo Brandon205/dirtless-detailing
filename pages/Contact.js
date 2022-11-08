@@ -3,7 +3,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import Head from 'next/head';
 import 'react-toastify/dist/ReactToastify.css';
 
-import { FaPhoneAlt, FaFacebookMessenger, FaClock } from 'react-icons/fa';
+import { FaPhoneAlt, FaFacebookMessenger, FaClock, FaCity } from 'react-icons/fa';
 import { GoLocation } from "react-icons/go";
 import { MdOutlineEmail } from 'react-icons/md';
 
@@ -84,6 +84,8 @@ export default function Contact() {
                 <h1>Contact Information</h1>
                 <p>Feel free to reach out to us using any of these methods, our general info like location and hours are listed below as well.</p>
                 <hr className="contact-border" />
+                <p className="hours-p">We are currently servicing:<span style={{fontWeight: 'bold'}}> Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham.</span></p>
+                <hr className="contact-border" />
                 <div className="contact-icon-container">
                     <FaClock className='contact-icon' />
                     <p className="hours-p">Monday - Sunday: 8 AM - 8 PM</p>
@@ -109,7 +111,7 @@ export default function Contact() {
                 <div className='contact-icon-container'>
                     <MdOutlineEmail className='contact-icon' />
                     <div>
-                        <p>Or contact us by email by filling out the form below!</p>
+                        <p>Or contact us by email down below!</p>
                     </div>
                 </div>
             </div>

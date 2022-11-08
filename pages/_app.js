@@ -72,6 +72,42 @@ export default function MyApp({ Component, pageProps }) {
 
     return (
         <div className="App">
+            <Script type="application/ld+json" onLoad={() => { console.log('Rich content has loaded') }}>
+                {
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "Car Detailing",
+                        "name": "Dirt-Less Detailing",
+                        "address": {
+                            "@type":"PostalAddress",
+                            "streetAddress": "9305 205th Ave E",
+                            "addressLocality": "Bonney Lake",
+                            "addressRegion": "WA",
+                            "postalCode": "98391",
+                            "addressCountry": "US"
+                        },
+                        "url": "https://dirtless-detailing.vercel.app/",
+                        "priceRange": "$$",
+                        "telephone": "+12532529758",
+                        "openingHoursSpecification": [
+                            {
+                                "@type": "OpeningHoursSpecification",
+                                "dayOfWeek": [
+                                    "Monday",
+                                    "Tuesday",
+                                    "Wednesday",
+                                    "Thursday",
+                                    "Friday",
+                                    "Saturday",
+                                    "Sunday"
+                                ],
+                                "opens": "08:00",
+                                "closes": "20:00"
+                            }
+                        ]
+                    }
+                }
+            </Script>
             <Head>
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -81,42 +117,6 @@ export default function MyApp({ Component, pageProps }) {
 
                 <link rel="icon" href="/favicon.ico" />
                 <title>Dirt-Less Detailing | Bonney Lakes Top Auto Detailer</title>
-                <Script type="application/ld+json" onLoad={() => { console.log('Script has loaded') }}>
-                    {
-                        {
-                            "@context": "https://schema.org",
-                            "@type": "Car Detailing",
-                            "name": "Dirt-Less Detailing",
-                            "address": {
-                                "@type":"PostalAddress",
-                                "streetAddress": "9305 205th Ave E",
-                                "addressLocality": "Bonney Lake",
-                                "addressRegion": "WA",
-                                "postalCode": "98391",
-                                "addressCountry": "US"
-                            },
-                            "url": "https://dirtless-detailing.vercel.app/",
-                            "priceRange": "$$",
-                            "telephone": "+12532529758",
-                            "openingHoursSpecification": [
-                                {
-                                    "@type": "OpeningHoursSpecification",
-                                    "dayOfWeek": [
-                                        "Monday",
-                                        "Tuesday",
-                                        "Wednesday",
-                                        "Thursday",
-                                        "Friday",
-                                        "Saturday",
-                                        "Sunday"
-                                    ],
-                                    "opens": "08:00",
-                                    "closes": "20:00"
-                                }
-                            ]
-                        }
-                    }
-                </Script>
             </Head>
             <header className="App-header">
                 <nav id="nav">
@@ -220,6 +220,9 @@ export default function MyApp({ Component, pageProps }) {
                     <a href="/services/DLWash" className='footer-link'>Dirt-Less Wash</a>
                     <a href="/services/PDLWash" className='footer-link'>Premium Dirt-Less Wash</a>
                     <a href="/services/Engine" className='footer-link'>Engine Bay Cleaning</a>
+                </div>
+                <div className="footer-content-card">
+                    <h3>CORRECTION SERVICES</h3>
                     <a href="/services/SinglePC" className='footer-link'>Single Stage Paint Correction</a>
                     <a href="/services/TwoPC" className='footer-link'>Two Stage Paint Correction</a>
                 </div>

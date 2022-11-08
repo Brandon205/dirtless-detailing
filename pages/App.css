@@ -40,7 +40,7 @@ body {
 }
 
 #popular-services {
-  margin-top: 15rem;
+  margin-top: 10rem;
 }
 
 .App {
@@ -447,7 +447,6 @@ input[type="range"] {
   border-radius: 1rem;
   margin: 0 auto;
   padding: 2rem 0.75rem;
-  height: 580px;
 }
 
 .contact-information h1 {
@@ -470,8 +469,6 @@ input[type="range"] {
 
 .contact-icon {
   font-size: 1.5em;
-  margin-right: 1rem;
-  cursor: pointer;
 }
 
 .contact-link {
@@ -1276,6 +1273,10 @@ hr {
   .title-bottom {
     margin-bottom: 5rem;
     line-height: 2;
+  }
+
+  .contact-information {
+    max-width: 650px;
   }
 
   .contact-container-right {

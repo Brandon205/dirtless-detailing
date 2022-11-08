@@ -44,7 +44,7 @@ export default function OtherServices() {
                     </div>
                     <p className="service-desc">A full interior detail will clean every crack and crevice of your vehicles interior. Optionally we can also do a hot water extraction to the carpets of your vehicle to get out deeper stains and dirt.</p>
 
-                    <a href='/services/FullIntEx' className="readmore">Cleaning Combo Details {'>'}</a>
+                    <a href='/services/FullIntEx' className="readmore">Full Interior Cleaning Details {'>'}</a>
                 </div>
             </div>
 
@@ -115,7 +115,7 @@ export default function OtherServices() {
                     </div>
                     <p className="service-desc">The engine bay is typically overlooked and tricky to clean, but we can take care of it for you and leave yours looking like new.</p>
 
-                    <a href="/services/Engine" className="readmore">Engine Bay Cleaning Details{'>'}</a>
+                    <a href="/services/Engine" className="readmore">Engine Bay Cleaning Details {'>'}</a>
                 </div>
             </div>
         </section>
