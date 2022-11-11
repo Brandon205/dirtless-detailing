@@ -118,8 +118,8 @@ export default function MyApp({ Component, pageProps }) {
 
                 <link rel="icon" href="/favicon.ico" />
                 <title>Dirt-Less Detailing | Bonney Lakes Top Auto Detailer</title>
-                <script key="structured-data" type="application/ld+json" dangerouslySetInnerHTML={generateStructuredData()} />
             </Head>
+            <Script key="structured-data" type="application/ld+json" dangerouslySetInnerHTML={generateStructuredData()}></Script>
             <header className="App-header">
                 <nav id="nav">
                     <a style={{display: 'flex', justifyContent: 'flex-start', flex: 1}} href="/"><Image src={ddLogo} objectFit="contain" width={smallScreen ? 120 : 140} height={smallScreen ? 90 : 105} className="logo" alt="logo" /></a>
