@@ -33,21 +33,21 @@ export default function MyApp({ Component, pageProps }) {
             setSmallScreen(false);
         }
 
-        // import('react-facebook-pixel') // Facebook Pixel init code
-        //     .then((x) => x.default)
-        //     .then((ReactPixel) => {
-        //         (ReactPixel.init(process.env.FACEBOOK_PIXEL))
-        //         if (document.cookie !== 'ddCookies=true') {
-        //             ReactPixel.revokeConsent();
-        //         } else {
-        //             ReactPixel.grantConsent();
-        //             ReactPixel.pageView()
+        import('react-facebook-pixel') // Facebook Pixel init code
+            .then((x) => x.default)
+            .then((ReactPixel) => {
+                (ReactPixel.init(process.env.FACEBOOK_PIXEL))
+                if (document.cookie !== 'ddCookies=true') {
+                    ReactPixel.revokeConsent();
+                } else {
+                    ReactPixel.grantConsent();
+                    ReactPixel.pageView()
         
-        //             router.events.on('routeChangeComplete', () => {
-        //                 ReactPixel.pageView()
-        //             })
-        //         }
-        //     })
+                    router.events.on('routeChangeComplete', () => {
+                        ReactPixel.pageView()
+                    })
+                }
+            })
     }, [router.events])
 
 
@@ -72,42 +72,6 @@ export default function MyApp({ Component, pageProps }) {
 
     return (
         <div className="App">
-            <Script type="application/ld+json" onLoad={() => { console.log('Rich content has loaded') }}>
-                {
-                    {
-                        "@context": "https://schema.org",
-                        "@type": "Car Detailing",
-                        "name": "Dirt-Less Detailing",
-                        "address": {
-                            "@type":"PostalAddress",
-                            "streetAddress": "9305 205th Ave E",
-                            "addressLocality": "Bonney Lake",
-                            "addressRegion": "WA",
-                            "postalCode": "98391",
-                            "addressCountry": "US"
-                        },
-                        "url": "https://dirtless-detailing.vercel.app/",
-                        "priceRange": "$$",
-                        "telephone": "+12532529758",
-                        "openingHoursSpecification": [
-                            {
-                                "@type": "OpeningHoursSpecification",
-                                "dayOfWeek": [
-                                    "Monday",
-                                    "Tuesday",
-                                    "Wednesday",
-                                    "Thursday",
-                                    "Friday",
-                                    "Saturday",
-                                    "Sunday"
-                                ],
-                                "opens": "08:00",
-                                "closes": "20:00"
-                            }
-                        ]
-                    }
-                }
-            </Script>
             <Head>
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -118,6 +82,40 @@ export default function MyApp({ Component, pageProps }) {
                 <link rel="icon" href="/favicon.ico" />
                 <title>Dirt-Less Detailing | Bonney Lakes Top Auto Detailer</title>
             </Head>
+            <Script key="structured-data" type="application/ld+json" dangerouslySetInnerHTML={{__html: {
+                            "@context": "https://schema.org",
+                            "@type": "Car Detailing",
+                            "name": "Dirt-Less Detailing",
+                            "address": {
+                            "@type":"PostalAddress",
+                            "streetAddress": "9305 205th Ave E",
+                            "addressLocality": "Bonney Lake",
+                            "addressRegion": "WA",
+                            "postalCode": "98391",
+                            "addressCountry": "US"
+                        },
+                        "url": "https://www.dirtlessdetailing.com",
+                        "priceRange": "$$",
+                        "telephone": "+12532529758",
+                        "openingHoursSpecification": [
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": [
+                            "Monday",
+                            "Tuesday",
+                            "Wednesday",
+                            "Thursday",
+                            "Friday",
+                            "Saturday",
+                            "Sunday"
+                            ],
+                            "opens": "08:00",
+                            "closes": "20:00"
+                        }
+                        ]
+                    }
+                }}>
+            </Script>
             <header className="App-header">
                 <nav id="nav">
                     <a style={{display: 'flex', justifyContent: 'flex-start', flex: 1}} href="/"><Image src={ddLogo} objectFit="contain" width={smallScreen ? 120 : 140} height={smallScreen ? 90 : 105} className="logo" alt="logo" /></a>
