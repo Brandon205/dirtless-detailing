@@ -1,4 +1,4 @@
-import React from 'react';canonical
+import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 import { imagery } from '../../public/imgs/pageimgs/engine/index';
