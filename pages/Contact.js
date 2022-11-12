@@ -84,7 +84,8 @@ export default function Contact() {
                 <h1>Contact Information</h1>
                 <hr className="contact-border" />
                 <h3 style={{marginBottom: 0}}>Need us to come to you?</h3>
-                <p className="hours-p">We are currently servicing:<br /><span style={{fontWeight: 'bold', color: '#9f9f9f'}}> Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham.</span></p>
+                <p className="hours-p" style={{marginBottom: 0}}>We are currently servicing:</p>
+                <p className="hours-p"><span style={{fontWeight: 'bold', color: '#9f9f9f'}}> Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham.</span></p>
                 <hr className="contact-border" />
                 <div className="contact-icon-container">
                     <FaClock className='contact-icon' />
