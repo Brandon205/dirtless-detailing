@@ -24,7 +24,7 @@ export default function MyApp({ Component, pageProps }) {
     const router = useRouter();
     useEffect(() => {
         if (document.cookie === "ddCookies=" || document.cookie === '') {
-            toast(<Cookies acceptCookies={() => document.cookie = 'ddCookies=true;path=/;sameSite="Lax";'} declineCookies={() => document.cookie = `ddCookies=;path=/;sameSite="Lax";expires=Thu,01Jan197000:00:01GMT`} />, {position: "bottom-center", autoClose: false, hideProgressBar: true, closeOnClick: false, pauseOnHover: true, draggable: true, progress: undefined, theme: "dark"})
+            toast(<Cookies acceptCookies={() => document.cookie = `ddCookies=true;path=/;sameSite="Lax"expires=${new Date(Date.now() + 86400*1000).toUTCString()};`} declineCookies={() => document.cookie = `ddCookies=;path=/;sameSite="Lax";expires=Thu,01Jan197000:00:01GMT`} />, {position: "bottom-center", autoClose: false, hideProgressBar: true, closeOnClick: false, pauseOnHover: true, draggable: true, progress: undefined, theme: "dark"})
         }
     
         if (window.innerWidth < 879) {
