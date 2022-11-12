@@ -82,13 +82,13 @@ export default function Contact() {
         <div className="contact-information-container">
             <div className="contact-information">
                 <h1>Contact Information</h1>
-                <p>Feel free to reach out to us using any of these methods, our general info like location and hours are listed below as well.</p>
                 <hr className="contact-border" />
-                <p className="hours-p">We are currently servicing:<span style={{fontWeight: 'bold'}}> Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham.</span></p>
+                <h3 style={{marginBottom: 0}}>Need us to come to you?</h3>
+                <p className="hours-p">We are currently servicing:<br /><span style={{fontWeight: 'bold', color: '#9f9f9f'}}> Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham.</span></p>
                 <hr className="contact-border" />
                 <div className="contact-icon-container">
                     <FaClock className='contact-icon' />
-                    <p className="hours-p">Monday - Sunday: 8 AM - 8 PM</p>
+                    <p className="hours-p">Monday - Sunday: 7 AM - 7 PM</p>
                 </div>
                 <hr className="contact-border" />
                 <div className='contact-icon-container'>
@@ -111,14 +111,14 @@ export default function Contact() {
                 <div className='contact-icon-container'>
                     <MdOutlineEmail className='contact-icon' />
                     <div>
-                        <p>Or contact us by email down below!</p>
+                        <a href="mailto:brenden@dirtlessdetail.com?subject = Schedule a Dirt-Less Detail" target="_blank" rel="noreferrer">brenden@dirtlessdetail.com</a>
                     </div>
                 </div>
             </div>
         </div>
 
         <div className='contact-container-right'>
-            <h2>Email us by filling out this form:</h2>
+            <h2>Or Email us by filling out our form:</h2>
             <form className="form" onSubmit={(e) => formSubmit(e)}>
                 <div className="form-section form-top-section">
                     <div>
@@ -128,7 +128,7 @@ export default function Contact() {
                         <input type="text" id="email" name="Email" className='text-input' placeholder="Email" required /><br />
 
                         <label htmlFor="message" className='text-input-label'>Additional Information</label><br />
-                        <textarea type="textarea" name="message" className='textarea' placeholder='Do you want mobile service or a drop off? Do you have any other questions/concerns?' />
+                        <textarea type="textarea" name="message" className='textarea' placeholder='Do you want our mobile service or to schedule a drop off? Do you have any other questions/concerns?' />
                     </div>
                 </div>
 
@@ -160,23 +160,23 @@ export default function Contact() {
                         <input type="checkbox" id='ozone' name="ozone" className='checkbox-input' />
                         <label htmlFor="ozone" className='checkbox-label'>Ozone Treatment</label><br />
 
-                    <p className="form-section-heading">Dirtiness (1-Cleanest, 5-Dirtiest)</p>
-                    <input type="range" name="dogHair" id="dogHair" min="1" max="5" step="1" list="tickmarks" />
-                    <datalist id="tickmarks">
-                        <option value="1" label="1"></option>
-                        <option value="2" label="2"></option>
-                        <option value="3" label="3"></option>
-                        <option value="4" label="4"></option>
-                        <option value="5" label="5"></option>
+                    <p className="form-section-heading">Vehicle Dirtiness</p>
+                    <input type="range" name="dirtiness" id="dirtiness" min="1" max="5" step="1" list="dirtiness-tickmarks" />
+                    <datalist id="dirtiness-tickmarks">
+                        <option value="1" label="Pretty Clean"></option>
+                        <option value="2" label=""></option>
+                        <option value="3" label=""></option>
+                        <option value="4" label=""></option>
+                        <option value="5" label="Very Dirty"></option>
                     </datalist>
-                    <p className="form-section-heading">Dog Hair Amount (0-None, 4-Lots)</p>
-                    <input type="range" name="dogHair" id="dogHair" min="0" max="4" step="1" list="tickmarks" />
-                    <datalist id="tickmarks">
-                        <option value="0" label="0"></option>
-                        <option value="1" label="1"></option>
-                        <option value="2" label="2"></option>
-                        <option value="3" label="3"></option>
-                        <option value="4" label="4"></option>
+                    <p className="form-section-heading">Dog Hair Amount</p>
+                    <input type="range" name="dogHair" id="dogHair" min="1" max="5" step="1" list="hair-tickmarks" />
+                    <datalist id="hair-tickmarks">
+                        <option value="1" label="No Hair"></option>
+                        <option value="2" label=""></option>
+                        <option value="3" label=""></option>
+                        <option value="4" label=""></option>
+                        <option value="5" label="Lots of Hair"></option>
                     </datalist>
                 </div>
 
