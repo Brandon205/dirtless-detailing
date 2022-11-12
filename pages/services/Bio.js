@@ -42,7 +42,7 @@ export default function Bio() {
       <Head>
         <title>Dirt-Less Detailing | Biohazard Cleaning</title>
         <meta name="description" content="Smokers Car • Biohazard Cleaning • Odor Removal - See what we can do if your car has unwanted odors or smells" />
-        <link rel="canonical" href="https://dirtless-detailing.vercel.app/services/Bio" />
+        <link rel="canonical" href="https://dirtlessdetailing.com/services/Bio" />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="biohazard cleaning cover" layout="fill" objectFit='cover' placeholder='blur' priority />

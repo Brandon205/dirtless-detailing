@@ -17,7 +17,7 @@ export default function Home() {
     return (
         <div className="App">
             <Head>
-                <link rel="canonical" href="https://dirtless-detailing.vercel.app" />
+                <link rel="canonical" href="https://dirtlessdetailing.com" />
             </Head>
             <div className="maincover" style={{backgroundImage: 'url(' + cover + ')' }}>
                 <Image src={cover} layout="fill" objectFit='cover' alt="Cleaned Toyota Tundra" placeholder='blur' priority />

@@ -40,7 +40,7 @@ export default function FullIntEx() {
       <Head>
         <title>Dirt-Less Detailing | Full Interior</title>
         <meta name="description" content="The Full Interior cleaning is our most sought after service, and for good reason, it will completely renew your cars interior!" />
-        <link rel="canonical" href="https://dirtless-detailing.vercel.app/services/FullIntEx" />
+        <link rel="canonical" href="https://dirtlessdetailing.com/services/FullIntEx" />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="Vehicle after a Full Interior Cleaning" layout="fill" objectFit='cover' placeholder='blur' priority />

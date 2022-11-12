@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react';canonical
 import Image from 'next/image';
 import Head from 'next/head';
 import { imagery } from '../../public/imgs/pageimgs/engine/index';
@@ -11,7 +11,7 @@ export default function PaintCorrectionGallery() {
       <Head>
         <title>Dirt-Less Detailing | Engine Gallery</title>
         <meta name="description" content="Engine Bay Photos • Engine bay images after our engine bay cleaning service!" />
-        <link rel="canonical" href="https://dirtless-detailing.vercel.app/gallery/EngineGallery" />
+        <link rel="canonical" href="https://dirtlessdetailing.com/gallery/EngineGallery" />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="Vehicle after a Engine Bay Cleaning" layout="fill" objectFit='cover' priority />
