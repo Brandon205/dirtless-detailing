@@ -27,19 +27,23 @@ export default function About() {
         <h3>FAQ</h3>
         <ul className='faq-ul'>
           <li className='faq-li'>What do you need from me when you get here?</li>
-          <p className='faq-p'>All we need is an electrical outlet, a water spigot, and preferably all personal items out of the car.</p>
+          <p className='faq-p'>All we will need is an electrical outlet, a water spigot, and preferably all/most personal items out of the car.</p>
+        </ul>
+        <ul className='faq-ul'>
+          <li className='faq-li'>Do you offer ceramic coating?</li>
+          <p className='faq-p'>Our ceramic coating services are being tested and finalized, and will be offered very soon!</p>
         </ul>
         <ul className='faq-ul'>
           <li className='faq-li'>How long will the detail take?</li>
-          <p className='faq-p'>Every job will take a different amount of time, but once you have contacted us with your vehicles' condition we can give a good estimate as to how long it will take.</p>
+          <p className='faq-p'>Every job will take a different amount of time, but once we know the condition of the car and the services requested we can give a good estimate as to how long it will take.</p>
         </ul>
         <ul className='faq-ul'>
           <li className='faq-li'>Can you come to my apartment or workplace?</li>
-          <p className='faq-p'>Highly dependent on the amount of space and permissions.</p>
+          <p className='faq-p'>It will depend on the amount of space and access if we can or not.</p>
         </ul>
         <ul className='faq-ul'>
           <li className='faq-li'>What forms of payment do you take?</li>
-          <p className='faq-p'>You can pay by card or Facebook pay.</p>
+          <p className='faq-p'>Currently you can pay by card, cash, or Facebook pay.</p>
         </ul>
         <ul className='faq-ul'>
           <li className='faq-li'>Are you licensed and insured?</li>
@@ -47,7 +51,7 @@ export default function About() {
         </ul>
         <ul className='faq-ul'>
           <li className='faq-li'>What cities do you service?</li>
-          <p className='faq-p'>We are currently servicing: Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham.</p>
+          <p className='faq-p'>With our mobile service we can go out to: Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham.</p>
         </ul>
         <ul className='faq-ul'>
           <li className='faq-li'>Do I have to be there the whole time you're working on my car?</li>

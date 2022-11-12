@@ -29,7 +29,7 @@ export default function Addons() {
 
         <div className="feature-section">
           <div className="feature-img-container">
-            <Image style={{borderRadius: 16}} src={glassPolish} alt="Window after a glass polishing" className='otherservices-image' loading='lazy' placeholder='blur' quality={90} />
+            <Image style={{borderRadius: 16}} src={glassPolish} alt="Window after a glass polishing" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
           </div>
           <div className="feature-desc-area">
             <p className='service-heading-link'>Glass Polishing</p>
@@ -45,7 +45,7 @@ export default function Addons() {
 
         <div className="feature-section">
           <div className="feature-img-container">
-            <Image style={{borderRadius: 16}} src={ozone} alt="Ozone Treatment in Progress" className='otherservices-image' loading='lazy' placeholder='blur' quality={90} />
+            <Image style={{borderRadius: 16}} src={ozone} alt="Ozone Treatment in Progress" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
           </div>
           <div className="feature-desc-area">
             <p className='service-heading-link'>Ozone Treatment</p>
@@ -62,7 +62,7 @@ export default function Addons() {
 
         <div className="feature-section">
           <div className="feature-img-container">
-            <Image style={{borderRadius: 16}} src={waterspot} alt="Waterspot / Overspray removal after" className='otherservices-image' loading='lazy' placeholder='blur' quality={90} />
+            <Image style={{borderRadius: 16}} src={waterspot} alt="Waterspot / Overspray removal after" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
           </div>
           <div className="feature-desc-area">
             <p className='service-heading-link'>Waterspot/Overspray Removal</p>
@@ -80,7 +80,7 @@ export default function Addons() {
         
         <div className="feature-section">
           <div className="feature-img-container">
-            <Image style={{borderRadius: 16}} src={truckBed} alt="Truck Bed Cleaning" className='otherservices-image' loading='lazy' placeholder='blur' quality={90} />
+            <Image style={{borderRadius: 16}} src={truckBed} alt="Truck Bed Cleaning" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
           </div>
           <div className="feature-desc-area">
             <p className='service-heading-link'>Truck Bed Cleaning</p>
