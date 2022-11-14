@@ -23,15 +23,15 @@ export default function PopularServices() {
                 <ul className="checklist">
                     <li className="checklist-item">
                         <BsCheck2Circle className='checkcircle' />
-                        <p>Blow out with Vortex Blowgun</p>
+                        <p>Blow out the Interior with a Vortex Blowgun</p>
                     </li>
                     <li className="checklist-item">
                         <BsCheck2Circle className='checkcircle' />
-                        <p>Hot Water Extraction - If added</p>
+                        <p>Hot Water Extraction (Only if Added)</p>
                     </li>
                     <li className="checklist-item">
                         <BsCheck2Circle className='checkcircle' />
-                        <p>Vacuum the Whole Interior</p>
+                        <p>Vacuum out the Entire Interior</p>
                     </li>
                     <li className="checklist-item">
                         <BsCheck2Circle className='checkcircle' />

@@ -499,7 +499,7 @@ input[type="range"] {
 }
 
 .location-link {
-  line-height: 1.5s
+  line-height: 1.5s;
 }
 
 /** Home Page Services CSS **/
@@ -512,9 +512,10 @@ input[type="range"] {
 
 .popular-services-card {
   box-shadow: 0 0 10px 5px var(--boxshadow-clr);
+  width: 90%;
   z-index: 0;
   border-radius: 1rem;
-  margin: 1em 0;
+  margin: 1em auto;
   position: relative;
 }
 
@@ -660,7 +661,8 @@ input[type="range"] {
   text-align: left;
   box-shadow: 0 0 10px 5px var(--boxshadow-clr);
   border-radius: 1rem;
-  margin: 20px 0;
+  width: 90%;
+  margin: 1rem auto;
 }
 
 .service-desc {
@@ -1029,6 +1031,8 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .feature-img-container {
