@@ -200,7 +200,7 @@ export default function MyApp({ Component, pageProps }) {
                                 <a href="/About" className="menu-link" onClick={() => setNav('none')}>About Us</a>
                             </li>
 
-                            <li className="menu-li">
+                            <li className="menu-li quote-li">
                                 <a href="/Contact" className="nav-quote-btn" onClick={() => setNav('none')}>Get Started</a>
                             </li>
                         </ul>

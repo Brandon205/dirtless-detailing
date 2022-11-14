@@ -205,6 +205,12 @@ li span {
   color: var(--nav-color);
 }
 
+.quote-li {
+  position: absolute;
+  top: 0;
+  right: 37%;
+}
+
 .nav-div {
   padding: 0.75rem;
   border-radius: 1rem;
@@ -1246,6 +1252,11 @@ hr {
 
   .nav-quote-btn {
     margin-top: 0;
+  }
+
+  .quote-li {
+    position: relative;
+    right: auto;
   }
 
   .landing-div {
