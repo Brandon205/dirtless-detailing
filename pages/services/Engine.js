@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 
-import cover from '../../public/imgs/pageimgs/engine/IMG_20220524_144640.jpg';
+import cover from '../../public/imgs/EngineCover.webp';
 
 const steps = [
   ["Preemptive Measures", "Cover all sensitive areas, like air intakes, and any exposed electronics."],

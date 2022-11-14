@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Head from 'next/head';
 import 'react-medium-image-zoom/dist/styles.css';
 
-import cover from '../../public/imgs/pageimgs/bio/IMG_20220217_093930.jpg';
+import cover from '../../public/imgs/BioCover.webp';
 import seats from '../../public/imgs/pageimgs/bio/SeatsBA.webp';
 import seatbelts from '../../public/imgs/pageimgs/bio/SeatbeltBA.webp';
 import mesh from '../../public/imgs/pageimgs/bio/MeshBA.webp';

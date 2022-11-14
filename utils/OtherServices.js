@@ -6,7 +6,7 @@ import combo from '../public/imgs/pageimgs/interior/combo.jpg';
 import dlwash from '../public/imgs/pageimgs/homepage/dlwash.webp';
 import engine from '../public/imgs/pageimgs/homepage/engine.webp';
 import fullintex from '../public/imgs/pageimgs/interior/IMG_20200702_155834.jpg';
-import headliner from '../public/imgs/pageimgs/addons/headlinersCover.webp';
+import headliner from '../public/imgs/headlinersCover.webp';
 import pdlwash from '../public/imgs/pageimgs/exterior/IMG_20220121_153454.jpg';
 import stage1 from '../public/imgs/pageimgs/paintCorrection/IMG_20220826_165738.jpg';
 import stage2 from '../public/imgs/pageimgs/paintCorrection/IMG_20210517_111329.jpg';
