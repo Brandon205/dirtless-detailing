@@ -23,8 +23,12 @@ export default function MyApp({ Component, pageProps }) {
         
     const router = useRouter();
     useEffect(() => {
-        if (document.cookie === "ddCookies=" || document.cookie === '') {
-            toast(<Cookies acceptCookies={() => document.cookie = `ddCookies=true;path=/;sameSite="Lax"expires=${new Date(Date.now() + 86400*1000).toUTCString()};`} declineCookies={() => document.cookie = `ddCookies=;path=/;sameSite="Lax";expires=Thu,01Jan197000:00:01GMT`} />, {position: "bottom-center", autoClose: false, hideProgressBar: true, closeOnClick: false, pauseOnHover: true, draggable: true, progress: undefined, theme: "dark"})
+        if (document.cookie === '') {
+            let year = new Date();
+            year = year.getFullYear() + 5;
+            toast(<Cookies acceptCookies={() => document.cookie = `ddCookies=true; SameSite=Lax; expires=Thu, 18 Dec ${year} 12:00:00;`}
+            declineCookies={() => document.cookie = `ddCookies=false; SameSite=Lax; expires=Thu, 01 Jan 1970 00:00:00 UTC`} />,
+            {position: "bottom-center", autoClose: false, hideProgressBar: true, closeOnClick: false, pauseOnHover: true, draggable: true, progress: undefined, theme: "dark"})
         }
     
         if (window.innerWidth < 879) {
@@ -120,7 +124,7 @@ export default function MyApp({ Component, pageProps }) {
                 <title>Dirt-Less Detailing | Bonney Lakes Top Auto Detailer</title>
                 <script key="structured-data" type="application/ld+json" dangerouslySetInnerHTML={generateStructuredData()}></script>
             </Head>
-            {/* <Script key="structured-data" type="application/ld+json" dangerouslySetInnerHTML={generateStructuredData()}></Script> */}
+            <Script key="structured-data" type="application/ld+json" dangerouslySetInnerHTML={generateStructuredData()}></Script>
             <header className="App-header">
                 <nav id="nav">
                     <a style={{display: 'flex', justifyContent: 'flex-start', flex: 1}} href="/"><Image src={ddLogo} objectFit="contain" width={smallScreen ? 120 : 140} height={smallScreen ? 90 : 105} className="logo" alt="logo" /></a>
