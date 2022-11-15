@@ -69,7 +69,6 @@ export default function PDLWash() {
                 <div className="aside-links">
                   <a href="/services/DLWash" style={{color: href.endsWith('/DLWash') ? 'blue' : 'black'}} className="service-link">{href.endsWith('/DLWash') ? '> ' : ''} Dirt-Less Wash</a>
                   <a href="/services/PDLWash" style={{color: href.endsWith('PDLWash') ? 'blue' : 'black'}} className="service-link">{href.endsWith('PDLWash') ? '> ' : ''} Premium Dirt-Less Wash</a>
-                  <a href="/services/Engine" style={{color: href.endsWith('Engine') ? 'blue' : 'black'}} className="service-link">{href.endsWith('/Engine') ? '> ' : ''} Engine Bay Cleaning</a>
                 </div>
               </div>
             </div>
@@ -99,7 +98,7 @@ export default function PDLWash() {
 
         <div className="combo-container">
           <h3>Get a <span className='special-package'>FREE</span> Engine cleaning!</h3>
-          <p className="subtext">Check out our Current <a className='aside-link' href="/services/Combo">Combo</a> deal that combines this Premium Dirt-Less Wash, our <a className='aside-link' href="/services/FullIntEx">Full Interior Cleaning</a>, and gives you an <a className='aside-link' href="/services/PDLWash">Engine Bay Cleaning</a> totally on us!  </p>
+          <p className="subtext">Check out our Current <a className='aside-link' href="/services/Combo">Combo</a> deal that combines this Premium Dirt-Less Wash, our <a className='aside-link' href="/services/FullIntEx">Full Interior Cleaning</a>, and gives you an Engine Bay Cleaning totally on us!  </p>
         </div>
 
         <div>

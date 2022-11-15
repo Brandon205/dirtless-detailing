@@ -57,7 +57,7 @@ export default function FullIntEx() {
             <ol className='list'>
               {content}
             </ol>
-            <p style={{marginTop: 0}}>*Headliners not included</p>
+            <p style={{marginTop: 0}}>*Headliners offered as an addon</p>
             <p><span className='special-package'>*Extraction</span> Package Only</p>
           </div>
 
@@ -67,7 +67,6 @@ export default function FullIntEx() {
               <div className="aside-links">
                 <a href="/services/FullIntEx" style={{color: href.endsWith('FullIntEx') ? 'blue' : 'black'}} className="service-link">{href.endsWith('FullIntEx') ? '> ' : ''} Full Interior Cleaning</a>
                 <a href="/services/Bio" style={{color: href.endsWith('Bio') ? 'blue' : 'black'}} className="service-link">{href.endsWith('Bio') ? '> ' : ''} Biohazard Cleaning</a>
-                <a href="/services/Headliners" style={{color: href.endsWith('Headliners') ? 'blue' : 'black'}} className="service-link">{href.endsWith('Headliners') ? '> ' : ''} Headliners</a>
               </div>
             </div>
 
@@ -88,7 +87,7 @@ export default function FullIntEx() {
 
         <div className="combo-container">
           <h3>Get a <span className='special-package'>FREE</span> Engine cleaning!</h3>
-          <p className="subtext">Check out our Current <a className='aside-link' href="/services/Combo">Combo</a> deal that combines this Full Interior Cleaning, our <a className='aside-link' href="/services/PDLWash">Premium Dirt-Less Wash</a>, and gives you an <a className='aside-link' href="/services/PDLWash">Engine Bay Cleaning</a> totally on us!  </p>
+          <p className="subtext">Check out our Current <a className='aside-link' href="/services/Combo">Combo</a> deal that combines this Full Interior Cleaning, our <a className='aside-link' href="/services/PDLWash">Premium Dirt-Less Wash</a>, and gives you an Engine Bay Cleaning totally on us!  </p>
         </div>
 
         <div>

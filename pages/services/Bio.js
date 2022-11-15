@@ -48,7 +48,7 @@ export default function Bio() {
         <Image src={cover} alt="biohazard cleaning cover" layout="fill" objectFit='cover' placeholder='blur' priority />
       </div>
       <div className="servicepage-header">
-        <h1>Smoke, Biohazard, or Odor Removal</h1>
+        <h1>BioHazard Cleaning</h1>
         <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
       </div>
 
@@ -67,7 +67,6 @@ export default function Bio() {
               <div className="aside-links">
                 <a href="/services/FullIntEx" style={{color: href.endsWith('FullIntEx') ? 'blue' : 'black'}} className="service-link">{href.endsWith('FullIntEx') ? '> ' : ''} Full Interior Cleaning</a>
                 <a href="/services/Bio" style={{color: href.endsWith('Bio') ? 'blue' : 'black'}} className="service-link">{href.endsWith('Bio') ? '> ' : ''} Biohazard Cleaning</a>
-                <a href="/services/Headliners" style={{color: href.endsWith('Headliners') ? 'blue' : 'black'}} className="service-link">{href.endsWith('Headliners') ? '> ' : ''} Headliners</a>
               </div>
             </div>
 

@@ -148,18 +148,12 @@ export default function MyApp({ Component, pageProps }) {
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
                                             <a href="/services/Bio" className='menu-link'>Biohazard Cleaning</a>
                                         </li>
-                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <a href="/services/Headliners" className='menu-link'>Headliners</a>
-                                        </li>
                                         <h4 className='sub-menu-header'><RiCarWashingFill /> EXTERIOR CLEANING</h4>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
                                             <a href="/services/DLWash" className='menu-link'>Dirt-Less Wash</a>
                                         </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
                                             <a href="/services/PDLWash" className='menu-link'>Premium Dirt-Less Wash</a>
-                                        </li>
-                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <a href="/services/Engine" className='menu-link'>Engine Bay Cleaning</a>
                                         </li>
                                         <h4 className='sub-menu-header'><FaCarSide /> EXTERIOR CORRECTION</h4>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
@@ -185,9 +179,6 @@ export default function MyApp({ Component, pageProps }) {
                                         </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
                                             <a href="/gallery/PaintCorrectionGallery" className='menu-link'>Paint Correction Gallery</a>
-                                        </li>
-                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <a href="/gallery/EngineGallery" className='menu-link'>Engine Bay Gallery</a>
                                         </li>
                                     </div>
                                 </ul>
@@ -221,13 +212,11 @@ export default function MyApp({ Component, pageProps }) {
                     <h3>INTERIOR</h3>
                     <a href="/services/FullIntEx" className='footer-link'>Full Interior Cleaning</a>
                     <a href="/services/Bio" className='footer-link'>Smoke / Biohazard / Mold Removal</a>
-                    <a href="/services/Headliners" className='footer-link'>Headliners</a>
                 </div>
                 <div className="footer-content-card">
                     <h3>EXTERIOR</h3>
                     <a href="/services/DLWash" className='footer-link'>Dirt-Less Wash</a>
                     <a href="/services/PDLWash" className='footer-link'>Premium Dirt-Less Wash</a>
-                    <a href="/services/Engine" className='footer-link'>Engine Bay Cleaning</a>
                 </div>
                 <div className="footer-content-card">
                     <h3>CORRECTION SERVICES</h3>

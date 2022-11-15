@@ -65,7 +65,7 @@ export default function DLWash() {
                 <div className="aside-links">
                   <a href="/services/DLWash" style={{color: href.endsWith('DLWash') ? 'blue' : 'black'}} className="service-link">{href.endsWith('DLWash') ? '> ' : ''} Dirt-Less Wash</a>
                   <a href="/services/PDLWash" style={{color: href.endsWith('PDLWash') ? 'blue' : 'black'}} className="service-link">{href.endsWith('PDLWash') ? '> ' : ''} Premium Dirt-Less Wash</a>
-                  <a href="/services/Engine" style={{color: href.endsWith('Engine') ? 'blue' : 'black'}} className="service-link">{href.endsWith('Engine') ? '> ' : ''} Engine Bay Cleaning</a>                </div>
+                </div>
               </div>
             </div>
 

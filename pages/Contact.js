@@ -156,12 +156,11 @@ export default function Contact() {
 
                         <input type="checkbox" id='bio' name="bio" className='checkbox-input' />
                         <label htmlFor="bio" className='checkbox-label'>Biohazard Cleaning</label><br />
-
-                        <input type="checkbox" id='headliners' name="headliners" className='checkbox-input' />
-                        <label htmlFor="headliners" className='checkbox-label'>Headliners</label><br />
                     </div>
 
                     <p className="form-section-heading">Interior Addons:</p>
+                        <input type="checkbox" id='headliners' name="headliners" className='checkbox-input' />
+                        <label htmlFor="headliners" className='checkbox-label'>Headliners</label><br />
                         <input type="checkbox" id='ozone' name="ozone" className='checkbox-input' />
                         <label htmlFor="ozone" className='checkbox-label'>Ozone Treatment</label><br />
 
@@ -193,13 +192,13 @@ export default function Contact() {
 
                         <input type="checkbox" id='premium dirtlessWash' name="premium dirtlessWash" className='checkbox-input' />
                         <label htmlFor="premium dirtlessWash" className='checkbox-label'>Premium Dirt-Less Wash</label><br />
-
-                        <input type="checkbox" id='engine' name="engine" className='checkbox-input' />
-                        <label htmlFor="engine" className='checkbox-label' style={{marginBottom: 16}}>Engine Bay</label><br />
                     </div>
 
                     <p className="form-section-heading">Exterior Addons:</p>
                     <div>
+                        <input type="checkbox" id='engine' name="engine" className='checkbox-input' />
+                        <label htmlFor="engine" className='checkbox-label' style={{marginBottom: 16}}>Engine Bay</label><br />
+
                         <input type="checkbox" id='glass' name="glass" className='checkbox-input' />
                         <label htmlFor="glass" className='checkbox-label'>Glass Polishing</label><br />
 
