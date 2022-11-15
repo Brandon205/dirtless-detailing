@@ -805,6 +805,11 @@ hr {
   margin-left: 1rem;
 }
 
+.footer-contact-card {
+  display: flex;
+  flex-direction: column;
+}
+
 .socials-container {
   width: 100%;
   text-align: center;

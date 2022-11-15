@@ -36,7 +36,7 @@ export default function Engine() {
       <Head>
         <title>Dirt-Less Detailing | Engine Bay</title>
         <meta name="description" content="A typically ignored part of your vehicle to clean, but we'll take care of that for you!" />
-        <link rel="canonical" href="https://dirtlessdetailing.com/services/Engine" />
+        <link rel="canonical" href="https://www.dirtlessdetailing.com/services/Engine" />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="Vehicle after a Engine Bay Cleaning" layout="fill" objectFit='cover' placeholder='blur' priority />

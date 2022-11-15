@@ -14,7 +14,7 @@ export default function Addons() {
       <Head>
         <title>Dirt-Less Detailing | Dirt-Less Addons</title>
         <meta name="description" content="Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment • Truck Bed Cleaning. Check out our popular addons that top off our services." />
-        <link rel="canonical" href="https://dirtlessdetailing.com/services/Addons" />
+        <link rel="canonical" href="https://www.dirtlessdetailing.com/services/Addons" />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="Vehicle after a Dirt-Less Wash with Glass Polishing addons" layout="fill" objectFit='cover' placeholder='blur' priority />

@@ -10,7 +10,7 @@ export default function About() {
       <Head>
         <title>Dirt-Less Detailing | About Us / FAQ</title>
         <meta name="description" content="Find out who we are, and get answers to some of our most frequently asked questions." />
-        <link rel="canonical" href="https://dirtlessdetailing.com/About" />
+        <link rel="canonical" href="https://www.dirtlessdetailing.com/About" />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="Our Worktruck" layout="fill" objectFit='cover' priority />

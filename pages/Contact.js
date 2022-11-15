@@ -112,7 +112,7 @@ export default function Contact() {
                 <div className='contact-icon-container'>
                     <MdOutlineEmail className='contact-icon' />
                     <div>
-                        <a href="mailto:brenden@dirtlessdetail.com?subject = Schedule a Dirt-Less Detail" target="_blank" rel="noreferrer">brenden@dirtlessdetail.com</a>
+                        <a href="mailto:brenden@dirtlessdetailing.com?subject = Schedule a Dirt-Less Detail" target="_blank" rel="noreferrer">brenden@dirtlessdetail.com</a>
                     </div>
                 </div>
             </div>

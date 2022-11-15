@@ -11,7 +11,7 @@ export default function PaintCorrectionGallery() {
       <Head>
         <title>Dirt-Less Detailing | Paint Correction Gallery</title>
         <meta name="description" content="Paint Correction Photos • Here are some examples from both our Single and Two Stage Paint Correction services!" />
-        <link rel="canonical" href="https://dirtlessdetailing.com/gallery/PaintCorrectionGallery" />
+        <link rel="canonical" href="https://www.dirtlessdetailing.com/gallery/PaintCorrectionGallery" />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="Vehicle after a Two Stage Paint Correction" layout="fill" objectFit='cover' priority />

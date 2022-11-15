@@ -12,6 +12,7 @@ import { FaBars, FaFacebook, FaInstagram, FaPhoneAlt, FaCarSide, FaPhotoVideo } 
 import { GoLocation } from "react-icons/go";
 import { GiSteeringWheel } from 'react-icons/gi';
 import { RiCarWashingFill } from 'react-icons/ri';
+import { MdOutlineEmail } from 'react-icons/md';
 import ddLogo from '../public/imgs/PNG1.png';
 import './App.css';
 
@@ -233,10 +234,11 @@ export default function MyApp({ Component, pageProps }) {
                     <a href="/services/SinglePC" className='footer-link'>Single Stage Paint Correction</a>
                     <a href="/services/TwoPC" className='footer-link'>Two Stage Paint Correction</a>
                 </div>
-                <div className="footer-content-card" id="contact">
+                <div className="footer-content-card footer-contact-card" id="contact">
                     <h3>CONTACT US</h3>
-                    <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link footer-contact-link" target="_blank" rel="noreferrer"><GoLocation /> 9305 205th Ave E Bonney Lake Washington</a><br />
                     <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noreferrer"><FaPhoneAlt /> (253) 252-9758</a>
+                    <a href="mailto:brenden@dirtlessdetailing.com?subject = Schedule a Dirt-Less Detail" className="contact-link footer-contact-link" target="_blank" rel="noreferrer"><MdOutlineEmail /> brenden@dirtlessdetailing.com</a>
+                    <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link footer-contact-link" target="_blank" rel="noreferrer"><GoLocation /> 9305 205th Ave E Bonney Lake Washington</a><br />
                 </div>
                 <hr />
                 <div className='socials-container'>
