@@ -218,7 +218,7 @@ li span {
 }
 
 .nav-div li {
-  margin-left: 1rem;
+  margin-left: 1.65rem;
 }
 
 .sub-menu-li {
@@ -227,8 +227,14 @@ li span {
 }
 
 .sub-menu-li a .menu-link {
-  margin-left: 20;
+  margin-left: 20px;
   color: white;
+}
+
+.menu-link {
+  margin: 0;
+  text-decoration: none;
+  color: lightgray;
 }
 
 .menu-link:hover {
@@ -236,15 +242,13 @@ li span {
 }
 
 .sub-menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
   color: whitesmoke;
   font-weight: bold;
   margin: 0;
-}
-
-.menu-link {
-  margin: 0;
-  text-decoration: none;
-  color: white;
 }
 
 /** Home Page Header CSS **/

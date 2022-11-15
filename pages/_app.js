@@ -10,7 +10,7 @@ import Cookies from '../utils/Cookies';
 
 import { FaBars, FaFacebook, FaInstagram, FaPhoneAlt, FaCarSide, FaPhotoVideo } from 'react-icons/fa';
 import { GoLocation } from "react-icons/go";
-import { GiSteeringWheel } from 'react-icons/gi';
+import { GiSteeringWheel, GiCarKey } from 'react-icons/gi';
 import { RiCarWashingFill } from 'react-icons/ri';
 import { MdOutlineEmail } from 'react-icons/md';
 import ddLogo from '../public/imgs/PNG1.png';
@@ -141,21 +141,28 @@ export default function MyApp({ Component, pageProps }) {
                                 <li onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('services')}><p className='menu-li'>Services</p></li>
                                 <ul className="sub-ul" onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} style={{opacity: smallScreen ? 1 : services ? 1 : !services ? 0 : 0, pointerEvents: smallScreen ? 'auto' : services ? 'auto' : !services ? 'none' : 'auto'}} >
                                     <div className="nav-div">
-                                        <h4 className='sub-menu-header'><GiSteeringWheel /> INTERIOR CLEANING</h4>
+                                        <h4 className='sub-menu-header'><GiSteeringWheel /> INTERIOR CLEANING SERVICES</h4>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
                                             <a href="/services/FullIntEx" className='menu-link'>Full Interior Cleaning</a>
                                         </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
                                             <a href="/services/Bio" className='menu-link'>Biohazard Cleaning</a>
                                         </li>
-                                        <h4 className='sub-menu-header'><RiCarWashingFill /> EXTERIOR CLEANING</h4>
+                                        <hr className="contact-border" />
+                                        <h4 className='sub-menu-header'><RiCarWashingFill /> EXTERIOR CLEANING SERVICES</h4>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
                                             <a href="/services/DLWash" className='menu-link'>Dirt-Less Wash</a>
                                         </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
                                             <a href="/services/PDLWash" className='menu-link'>Premium Dirt-Less Wash</a>
                                         </li>
-                                        <h4 className='sub-menu-header'><FaCarSide /> EXTERIOR CORRECTION</h4>
+                                        <hr className="contact-border" />
+                                        <h4 className='sub-menu-header'><GiCarKey /> COMBO DEALS</h4>
+                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                            <a href="/services/Combo" className='menu-link'>Interior + Exterior Combo</a>
+                                        </li>
+                                        <hr className="contact-border" />
+                                        <h4 className='sub-menu-header'><FaCarSide /> EXTERIOR CORRECTION SERVICES</h4>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
                                             <a href="/services/SinglePC" className='menu-link'>Single Stage Paint Correction</a>
                                         </li>
@@ -176,6 +183,9 @@ export default function MyApp({ Component, pageProps }) {
                                         </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
                                             <a href="/gallery/ExteriorWashGallery" className='menu-link'>Exterior Wash Gallery</a>
+                                        </li>
+                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                            <a href="/gallery/EngineGallery" className='menu-link'>Engine Bay Gallery</a>
                                         </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
                                             <a href="/gallery/PaintCorrectionGallery" className='menu-link'>Paint Correction Gallery</a>
@@ -217,6 +227,7 @@ export default function MyApp({ Component, pageProps }) {
                     <h3>EXTERIOR</h3>
                     <a href="/services/DLWash" className='footer-link'>Dirt-Less Wash</a>
                     <a href="/services/PDLWash" className='footer-link'>Premium Dirt-Less Wash</a>
+                    <a href="/services/Combo" className='footer-link'>Interior + Exterior Combo</a>
                 </div>
                 <div className="footer-content-card">
                     <h3>CORRECTION SERVICES</h3>
