@@ -3,7 +3,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import Head from 'next/head';
 import 'react-toastify/dist/ReactToastify.css';
 
-import { FaPhoneAlt, FaFacebookMessenger, FaClock, FaCity } from 'react-icons/fa';
+import { FaPhoneAlt, FaFacebookMessenger, FaClock } from 'react-icons/fa';
 import { GoLocation } from "react-icons/go";
 import { MdOutlineEmail } from 'react-icons/md';
 
@@ -15,29 +15,31 @@ export default function Contact() {
         const formInfo = {
             "Name": e.target[0].value,
             "Email": e.target[1].value,
-            "Message": e.target[2].value,
-            "Combo": e.target[3].checked ? 'Yes': 'No',
-            "Full Interior With Extraction": e.target[4].checked ? 'Yes': 'No',
-            "Full Interior Without Extraction": e.target[5].checked ? 'Yes': 'No',
-            "Biohazard Cleaning": e.target[6].checked ? 'Yes': 'No',
-            "Headliners": e.target[7].checked ? 'Yes': 'No',
-            "Ozone": e.target[8].checked ? 'Yes': 'No',
-            "Dirtiness": e.target[9].value,
-            "Dog Hair": e.target[10].value,
-            "Dirt-Less Wash": e.target[11].checked ? 'Yes': 'No',
-            "Premium Dirt-LessWash": e.target[12].checked ? 'Yes': 'No',
-            "Engine Bay": e.target[13].checked ? 'Yes': 'No',
-            "Glass Polishing (Exterior Addon)": e.target[14].checked ? 'Yes': 'No',
-            "Waterspot Removal (Exterior Addon)": e.target[15].checked ? 'Yes': 'No',
-            "Truck Bed Cleaning (Exterior Addon)": e.target[16].checked ? 'Yes': 'No',
-            "Single Stage Paint Correction": e.target[17].checked ? 'Yes': 'No',
-            "Two Stage Paint Correction": e.target[18].checked ? 'Yes': 'No',
-            "Glass Polishing (Correction Addon)": e.target[19].checked ? 'Yes': 'No'
+            "Phone": e.target[2].value,
+            "Message": e.target[3].value,
+            "Combo": e.target[4].checked ? 'Yes': 'No',
+            "Full Interior With Extraction": e.target[5].checked ? 'Yes': 'No',
+            "Full Interior Without Extraction": e.target[6].checked ? 'Yes': 'No',
+            "Biohazard Cleaning": e.target[7].checked ? 'Yes': 'No',
+            "Headliners": e.target[8].checked ? 'Yes': 'No',
+            "Ozone": e.target[9].checked ? 'Yes': 'No',
+            "Dirtiness": e.target[10].value,
+            "Dog Hair": e.target[11].value,
+            "Dirt-Less Wash": e.target[12].checked ? 'Yes': 'No',
+            "Premium Dirt-LessWash": e.target[13].checked ? 'Yes': 'No',
+            "Engine Bay": e.target[14].checked ? 'Yes': 'No',
+            "Glass Polishing (Exterior Addon)": e.target[15].checked ? 'Yes': 'No',
+            "Waterspot Removal (Exterior Addon)": e.target[16].checked ? 'Yes': 'No',
+            "Truck Bed Cleaning (Exterior Addon)": e.target[17].checked ? 'Yes': 'No',
+            "Single Stage Paint Correction": e.target[18].checked ? 'Yes': 'No',
+            "Two Stage Paint Correction": e.target[19].checked ? 'Yes': 'No',
+            "Glass Polishing (Correction Addon)": e.target[20].checked ? 'Yes': 'No'
         }
         const formData = new FormData();
+        console.log(formInfo);
 
         Object.entries(formInfo).forEach(([key, value]) => {
-            if (key === "Name" || key === "Email" || key === "Message" || key === "Dirtiness" || key === "Dog Hair") {
+            if (key === "Name" || key === "Email" || key === "Message" || key === "Dirtiness" || key === "Dog Hair" || key === "Phone") {
                 formData.append(key, value);
             } else if (value === 'Yes') {
                 formData.append(key, value);
@@ -126,9 +128,11 @@ export default function Contact() {
                         <label htmlFor="name" className='text-input-label'>Name<span className='special-package'>*</span></label><br />
                         <input type="text" id="name" name="Name" className='text-input' placeholder="Name" required /><br />
                         <label htmlFor="email" className='text-input-label'>Email<span className='special-package'>*</span></label><br />
-                        <input type="text" id="email" name="Email" className='text-input' placeholder="Email" required /><br />
+                        <input type="email" id="email" name="Email" className='text-input' placeholder="Email" required /><br />
+                        <label htmlFor="phone" className='text-input-label'>Phone<span className='special-package'>*</span><small> (Ex: 111-123-4567)</small></label><br />
+                        <input type="tel" id="phone" name="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" className='text-input' placeholder="Phone Number" required /><br />
 
-                        <label htmlFor="message" className='text-input-label'>Additional Information</label><br />
+                        <label htmlFor="message" className='text-input-label'>Additional Information:</label><br />
                         <textarea type="textarea" name="message" className='textarea' placeholder='Do you want our mobile service or to schedule a drop off? Do you have any other questions/concerns?' />
                     </div>
                 </div>
