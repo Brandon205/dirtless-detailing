@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-import bio from '../public/imgs/pageimgs/homepage/bio.webp';
+import bio from '../public/imgs/pageimgs/bio/SeatsBA.webp';
 import combo from '../public/imgs/pageimgs/homepage/comboHome.jpg';
 import dlwash from '../public/imgs/pageimgs/homepage/dlwash.webp';
 import engine from '../public/imgs/pageimgs/homepage/engine.webp';
