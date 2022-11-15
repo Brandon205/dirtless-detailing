@@ -1008,6 +1008,14 @@ hr {
   display: block;
 }
 
+.aside-link {
+  color: blue;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
 .addon-content-container {
   display: flex;
   justify-content: center;

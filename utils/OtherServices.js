@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import bio from '../public/imgs/pageimgs/homepage/bio.webp';
-import combo from '../public/imgs/pageimgs/interior/combo.jpg';
+import combo from '../public/imgs/pageimgs/homepage/comboHome.jpg';
 import dlwash from '../public/imgs/pageimgs/homepage/dlwash.webp';
 import engine from '../public/imgs/pageimgs/homepage/engine.webp';
 import fullintex from '../public/imgs/pageimgs/interior/IMG_20200702_155834.jpg';
@@ -19,13 +19,13 @@ export default function OtherServices() {
                 <Image style={{borderRadius: 16}} src={combo} alt="Vehicle after a Combo Cleaning" loading='lazy' placeholder='blur' quality={90} />
             </div>
             <div className="feature-desc-area">
-                <a href="/services/Combo" className='service-heading-link'>Full Interior and Exterior Cleaning Combo</a>
+                <a href="/services/Combo" className='service-heading-link'>Full Interior, Exterior, and <span className='special-package'>Engine Cleaning</span> Combo</a>
                 <p className="secondary-text">Starting at: <span>$400</span></p>
-                <p className="service-desc">This combo comes with a <span className='special-package'>free</span> Engine Bay cleaning, along with the full interior and exterior detail this package is sure to bring your whole car back to life.</p>
+                <p className="service-desc">This combo comes with a <span className='special-package'>FREE</span> Engine Bay cleaning, along with the full interior and exterior detail this package is sure to bring your whole car back to life.</p>
                 <div>
+                    <a href="/services/Combo" className="readmore">Combo Deal</a>
                     <a href="/services/FullIntEx" className="readmore">Interior</a>
                     <a href="/services/PDLWash" className="readmore">Exterior</a>
-                    <a href="/services/Combo" className="readmore">Combo</a>
                 </div>
             </div>
         </section>
