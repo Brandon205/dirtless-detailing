@@ -7,6 +7,8 @@ import waterspot from '../../public/imgs/pageimgs/homepage/1667678920614.webp';
 import glassPolish from '../../public/imgs/pageimgs/addons/IMG_20220912_192744.jpg';
 import ozone from '../../public/imgs/pageimgs/bio/IMG_20220904_140012.jpg';
 import truckBed from '../../public/imgs/pageimgs/exterior/1667675422409.webp';
+import headliner from '../../public/imgs/headlinersCover.webp';
+import engine from '../../public/imgs/EngineCover.webp';
 
 export default function Addons() {
   return (
@@ -27,6 +29,7 @@ export default function Addons() {
       <h2 style={{fontSize: 32}}>Our Current Dirt-Less Addons:</h2>
       <div className="addon-content-container">
 
+        <h3 className='addons-subheading'>Exterior Addons:</h3>
         <div className="feature-section">
           <div className="feature-img-container">
             <Image style={{borderRadius: 16}} src={truckBed} alt="Truck Bed Cleaning" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
@@ -45,16 +48,15 @@ export default function Addons() {
 
         <div className="feature-section">
           <div className="feature-img-container">
-            <Image style={{borderRadius: 16}} src={ozone} alt="Ozone Treatment in Progress" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
+            <Image style={{borderRadius: 16}} src={engine} alt="Cleaned Engine Bay" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
           </div>
           <div className="feature-desc-area">
-            <p className='service-heading-link'>Ozone Treatment</p>
-            <p className="secondary-text">Cost: <span>$100</span></p>
-            <p className="service-desc">Ozone treatment is the use of O3 (gas ozone) to remove bacteria, viruses, and odors from your vehicle. This can be added to any of our Interior cleanings when contacting us.</p>
+            <p className='service-heading-link'>Engine Bay Cleaning</p>
+            <p className="secondary-text">Cost: <span>$80</span></p>
+            <p className="service-desc">We will cover sensitive/electronic areas in the bay, clean and wash, then dress the engine bay to have it looking like new!</p>
             <div className='internal-links'>
-              <a href="/services/FullIntEx" className="readmore">Full Interior Cleaning</a>
-              <a href="/services/Bio" className="readmore">Biohazard Cleaning</a>
-              <a href="/services/Headliners" className="readmore">Headliners</a>
+              <a href="/services/DLWash" className="readmore">Dirt-Less Wash</a>
+              <a href="/services/PDLWash" className="readmore">Premium Dirt-Less Wash</a>
             </div>
           </div>
         </div>
@@ -88,10 +90,44 @@ export default function Addons() {
               <a href="/services/DLWash" className="readmore">Dirt-Less Wash</a>
               <a href="/services/PDLWash" className="readmore">Premium Dirt-Less Wash</a>
               <a href="/services/SinglePC" className="readmore">Single Stage Paint Correction</a>
-              <a href="/services/TwoPC" className="readmore">Headliners</a>
+              <a href="/services/TwoPC" className="readmore">Two Stage Paint Correction</a>
             </div>
           </div>
         </div>
+        <hr className='contact-border' />
+
+        <h3 className='addons-subheading'>Interior Addons:</h3>
+        <div className="feature-section">
+          <div className="feature-img-container">
+            <Image style={{borderRadius: 16}} src={headliner} alt="Cleaned Headliners" className='otherservices-image' loading='lazy' placeholder='blur' quality={100} />
+          </div>
+          <div className="feature-desc-area">
+            <p className='service-heading-link'>Headliner Cleaning</p>
+            <p className="secondary-text">Cost: <span>$40-$80</span></p>
+            <p className="service-desc">We will perform cleaning methods specific to your vehicles headliner material, we do this to prevent sagging and damage to the headliners. (Results may vary)</p>
+            <div className='internal-links'>
+              <a href="/services/FullIntEx" className="readmore">Full Interior Cleaning</a>
+              <a href="/services/Bio" className="readmore">Biohazard Cleaning</a>
+            </div>
+          </div>
+        </div>
+        <hr className='contact-border' />
+
+        <div className="feature-section">
+          <div className="feature-img-container">
+            <Image style={{borderRadius: 16}} src={ozone} alt="Ozone Treatment in Progress" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
+          </div>
+          <div className="feature-desc-area">
+            <p className='service-heading-link'>Ozone Treatment</p>
+            <p className="secondary-text">Cost: <span>$100</span></p>
+            <p className="service-desc">Ozone treatment is the use of O3 (gas ozone) to remove bacteria, viruses, and odors from your vehicle. This can be added to any of our Interior cleanings when contacting us.</p>
+            <div className='internal-links'>
+              <a href="/services/FullIntEx" className="readmore">Full Interior Cleaning</a>
+              <a href="/services/Bio" className="readmore">Biohazard Cleaning</a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   )
