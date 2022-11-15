@@ -36,6 +36,7 @@ export default function PDLWash() {
       </li>
     )
   })
+
   return (
     <section className='service-content-container'>
       <Head>
@@ -97,8 +98,8 @@ export default function PDLWash() {
         </div>
 
         <div className="combo-container">
-          <h3>Get a <span className='special-package'>free</span> Engine cleaning!</h3>
-          <p className="subtext">When you book this Premium Exterior Cleaning and a <a href="/services/FullIntEx">Full Interior Cleaning</a> together we will clean out your engine bay at no extra cost. (Click <a href='/services/Combo'>here</a> to learn more).</p>
+          <h3>Get a <span className='special-package'>FREE</span> Engine cleaning!</h3>
+          <p className="subtext">Check out our Current <a className='aside-link' href="/services/Combo">Combo</a> deal that combines this Premium Dirt-Less Wash, our <a className='aside-link' href="/services/FullIntEx">Full Interior Cleaning</a>, and gives you an <a className='aside-link' href="/services/PDLWash">Engine Bay Cleaning</a> totally on us!  </p>
         </div>
 
         <div>
@@ -106,22 +107,22 @@ export default function PDLWash() {
           <h4>Our basic prices are shown below, final pricing may vary based on your vehicle size.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
-              <h4 className="size">Small</h4>
+              <h4 className="size">SMALL</h4>
               <p className="example-vehicle">(Most Cars and Smaller Trucks)</p>
               <p className="pricing-price">$150</p>
             </div>
             <div className="pricing-card">
-              <h4 className="size">Medium</h4>
+              <h4 className="size">MEDIUM</h4>
               <p className="example-vehicle">(Mid-Size SUV's, and Most Wagons)</p>
               <p className="pricing-price">$200</p>
             </div>
             <div className="pricing-card">
-              <h4 className="size">Large</h4>
+              <h4 className="size">LARGE</h4>
               <p className="example-vehicle">(Large SUV's and Large trucks)</p>
               <p className="pricing-price">$250</p>
             </div>
             <div className="pricing-card">
-              <h4 className="size">Extra Large</h4>
+              <h4 className="size">EXTRA LARGE</h4>
               <p className="example-vehicle">(Extra Large Vehicles)</p>
               <p className="pricing-price">$275</p>
             </div>

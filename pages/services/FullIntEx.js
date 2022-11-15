@@ -87,8 +87,8 @@ export default function FullIntEx() {
       </div>
 
         <div className="combo-container">
-          <h3>Get a <span className='special-package'>free</span> Engine cleaning!</h3>
-          <p className="subtext">When you book this Full Interior Cleaning and a <a href="/services/PDLWash">Premium Dirt-Less Wash</a> together we will clean out your engine bay at no extra cost. (Click <a href='/services/Combo'>here</a> to learn more).</p>
+          <h3>Get a <span className='special-package'>FREE</span> Engine cleaning!</h3>
+          <p className="subtext">Check out our Current <a className='aside-link' href="/services/Combo">Combo</a> deal that combines this Full Interior Cleaning, our <a className='aside-link' href="/services/PDLWash">Premium Dirt-Less Wash</a>, and gives you an <a className='aside-link' href="/services/PDLWash">Engine Bay Cleaning</a> totally on us!  </p>
         </div>
 
         <div>
