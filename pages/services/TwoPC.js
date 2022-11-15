@@ -78,8 +78,8 @@ export default function TwoPC() {
               <h3><a href="/services/Addons" style={{color: 'black'}}>Extra Addons</a></h3>
                 <div className="aside-links">
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/Addons" style={{color: 'blue'}}>Glass Polishing</a> - <span className="bold">$70</span>/hour</p>
-                    <p className="subtext">Gives you crystal clear windows</p>
+                    <p className='addon-title'><a href="/services/Addons" style={{color: 'blue'}}>Glass Polishing</a> - <span className="bold">$80</span>/hour</p>
+                    <p className="subtext">Gives you crystal clear windows.</p>
                   </div>
                 </div>
               </div>

@@ -29,15 +29,15 @@ export default function Addons() {
 
         <div className="feature-section">
           <div className="feature-img-container">
-            <Image style={{borderRadius: 16}} src={glassPolish} alt="Window after a glass polishing" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
+            <Image style={{borderRadius: 16}} src={truckBed} alt="Truck Bed Cleaning" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
           </div>
           <div className="feature-desc-area">
-            <p className='service-heading-link'>Glass Polishing</p>
-            <p className="secondary-text">Hourly Rate: <span>$80</span></p>
-            <p className="service-desc">Remove all scratches, etching, and watermarks possible. Can be added to any of our Paint Correction Services when contacting us.</p>
+            <p className='service-heading-link'>Truck Bed Cleaning</p>
+            <p className="secondary-text">Cost: <span>$25</span></p>
+            <p className="service-desc">This is our addon to get your truck bed cleaned out. Can be added to either of out Dirt-Less Washes.</p>
             <div className='internal-links'>
-              <a href="/services/SinglePC" className="readmore">Single Stage Paint Correction</a>
-              <a href="/services/TwoPC" className="readmore">Two Stage Paint Correction</a>
+              <a href="/services/DLWash" className="readmore">Dirt-Less Wash</a>
+              <a href="/services/PDLWash" className="readmore">Premium Dirt-Less Wash</a>
             </div>
           </div>
         </div>
@@ -62,6 +62,22 @@ export default function Addons() {
 
         <div className="feature-section">
           <div className="feature-img-container">
+            <Image style={{borderRadius: 16}} src={glassPolish} alt="Window after a glass polishing" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
+          </div>
+          <div className="feature-desc-area">
+            <p className='service-heading-link'>Glass Polishing</p>
+            <p className="secondary-text">Hourly Rate: <span>$80/hour</span></p>
+            <p className="service-desc">Remove all scratches, etching, and watermarks possible. Can be added to any of our Paint Correction Services when contacting us.</p>
+            <div className='internal-links'>
+              <a href="/services/SinglePC" className="readmore">Single Stage Paint Correction</a>
+              <a href="/services/TwoPC" className="readmore">Two Stage Paint Correction</a>
+            </div>
+          </div>
+        </div>
+        <hr className='contact-border' />
+
+        <div className="feature-section">
+          <div className="feature-img-container">
             <Image style={{borderRadius: 16}} src={waterspot} alt="Waterspot / Overspray removal after" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
           </div>
           <div className="feature-desc-area">
@@ -73,22 +89,6 @@ export default function Addons() {
               <a href="/services/PDLWash" className="readmore">Premium Dirt-Less Wash</a>
               <a href="/services/SinglePC" className="readmore">Single Stage Paint Correction</a>
               <a href="/services/TwoPC" className="readmore">Headliners</a>
-            </div>
-          </div>
-        </div>
-        <hr className='contact-border' />
-        
-        <div className="feature-section">
-          <div className="feature-img-container">
-            <Image style={{borderRadius: 16}} src={truckBed} alt="Truck Bed Cleaning" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
-          </div>
-          <div className="feature-desc-area">
-            <p className='service-heading-link'>Truck Bed Cleaning</p>
-            <p className="secondary-text">Cost: <span>$25</span></p>
-            <p className="service-desc">This is our addon to get your truck bed cleaned out. Can be added to either of out Dirt-Less Washes.</p>
-            <div className='internal-links'>
-              <a href="/services/DLWash" className="readmore">Dirt-Less Wash</a>
-              <a href="/services/PDLWash" className="readmore">Premium Dirt-Less Wash</a>
             </div>
           </div>
         </div>
