@@ -513,7 +513,7 @@ input[type="range"] {
 
 .footer-contact-link {
   display: inline-block;
-  margin: 12px 0 0 6px; 
+  margin: 0
 }
 
 .location-link {
@@ -817,9 +817,12 @@ hr {
   margin-left: 1rem;
 }
 
-.footer-contact-card {
+/* .footer-contact-card {
   display: flex;
   flex-direction: column;
+} */
+.footer-content-card a {
+  display: block;
 }
 
 .socials-container {
@@ -837,7 +840,7 @@ hr {
 }
 
 .socials-container div a {
-  margin-right: 20px
+  margin-right: 20px;
 }
 
 .footer-link {
@@ -850,6 +853,10 @@ hr {
 .footer-link:hover {
   color: rgb(246, 246, 246);
   text-decoration: underline;
+}
+
+.footer-contact-link {
+  margin-top: 1.25rem;
 }
 
 /** ABOUT US CSS **/
@@ -1014,6 +1021,12 @@ hr {
   width: 275px;
   color: black;
   padding: 1rem;
+}
+
+.addons-subheading {
+  margin: 0;
+  font-size: 2em;
+  border-bottom: 3px solid var(--main-clr);
 }
 
 .addons-aside {

@@ -159,10 +159,12 @@ export default function Contact() {
                     </div>
 
                     <p className="form-section-heading">Interior Addons:</p>
-                        <input type="checkbox" id='headliners' name="headliners" className='checkbox-input' />
-                        <label htmlFor="headliners" className='checkbox-label'>Headliners</label><br />
-                        <input type="checkbox" id='ozone' name="ozone" className='checkbox-input' />
-                        <label htmlFor="ozone" className='checkbox-label'>Ozone Treatment</label><br />
+                        <div>
+                            <input type="checkbox" id='headliners' name="headliners" className='checkbox-input' />
+                            <label htmlFor="headliners" className='checkbox-label'>Headliners</label><br />
+                            <input type="checkbox" id='ozone' name="ozone" className='checkbox-input' />
+                            <label htmlFor="ozone" className='checkbox-label'>Ozone Treatment</label><br />
+                        </div>
 
                     <p className="form-section-heading">Vehicle Dirtiness</p>
                     <input type="range" name="dirtiness" id="dirtiness" min="1" max="5" step="1" list="dirtiness-tickmarks" />
