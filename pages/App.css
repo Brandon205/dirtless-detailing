@@ -1037,7 +1037,8 @@ hr {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 100vw;
+  width: 90vw;
+  margin: 0 auto;
 }
 
 .example-img {

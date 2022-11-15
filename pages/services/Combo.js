@@ -1,8 +1,13 @@
 import React from 'react';
+import Zoom from 'react-medium-image-zoom';
 import Image from 'next/image';
 import Head from 'next/head';
+import 'react-medium-image-zoom/dist/styles.css';
 
 import cover from '../../public/imgs/pageimgs/exterior/IMG_20220121_153440.jpg';
+import exterior from '../../public/imgs/pageimgs/paintCorrection/IMG_20220902_085328.jpg';
+import engine from '../../public/imgs/pageimgs/engine/IMG_20220830_193915.jpg';
+import interior from '../../public/imgs/pageimgs/interior/IMG_20211210_142317.jpg';
 
 // const pdlSteps = [
 //   ["Wash Vehicle", "Thorough strip wash top to bottom including the gas door with the 2 bucket method or equivalent."],
@@ -93,7 +98,7 @@ export default function Combo() {
         <Image src={cover} alt="Vehicle after a Combo Wash" layout="fill" objectFit='cover' placeholder='blur' priority />
       </div>
       <div className="servicepage-header">
-        <h1>Interior and Exterior Combo</h1>
+        <h1>Full Interior and Exterior Combo</h1>
         <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
       </div>
 
@@ -191,6 +196,25 @@ export default function Combo() {
 
           </div>
         </div>
+
+        <div className="examples-container">
+          <div className="example-img">
+            <Zoom>
+              <Image style={{borderRadius: 16}} src={interior} alt="seat mold before and after" layout="responsive" objectFit='cover' placeholder='blur' quality={25} />
+            </Zoom>
+          </div>
+          <div className="example-img">
+            <Zoom>
+              <Image style={{borderRadius: 16}} src={engine} alt="seatbelt mold before and after" layout="responsive" objectFit='cover' placeholder='blur' quality={25} />
+            </Zoom>
+          </div>
+          <div className="example-img">
+            <Zoom>
+              <Image style={{borderRadius: 16}} src={exterior} alt="mesh net mold before and after" layout="responsive" objectFit="cover" placeholder='blur' quality={25} />
+            </Zoom>
+          </div>
+        </div>
+
       </div>
 
         <div>

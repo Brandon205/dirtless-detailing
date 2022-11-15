@@ -19,7 +19,7 @@ export default function OtherServices() {
                 <Image style={{borderRadius: 16}} src={combo} alt="Vehicle after a Combo Cleaning" loading='lazy' placeholder='blur' quality={90} />
             </div>
             <div className="feature-desc-area">
-                <a href="/services/Combo" className='service-heading-link'>Full Interior, Exterior, and <span className='special-package'>Engine Cleaning</span> Combo</a>
+                <a href="/services/Combo" className='service-heading-link'>Full Interior, <span className='special-package'>Engine Cleaning</span>, and Exterior Combo</a>
                 <p className="secondary-text">Starting at: <span>$400</span></p>
                 <p className="service-desc">This combo comes with a <span className='special-package'>FREE</span> Engine Bay cleaning, along with the full interior and exterior detail this package is sure to bring your whole car back to life.</p>
                 <div>

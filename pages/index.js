@@ -34,8 +34,8 @@ export default function Home() {
                         </div>
                         <div>
                             <MdOutlineLocalCarWash className='header-icon' />
-                            <p className="header-desc">1200+</p>
-                            <span className='header-desc-span'>Cars Washed</span>
+                            <p className="header-desc">1000+</p>
+                            <span className='header-desc-span'>Details Completed</span>
                         </div>
                         <div>
                             <BiCertification className='header-icon' />
