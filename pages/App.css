@@ -1428,6 +1428,11 @@ hr {
     width: 60vw;
   }
 
+  .text-center {
+    text-align: center;
+    padding: 1rem;
+  }
+
   .main-content-container {
     display: flex;
     flex-direction: column;

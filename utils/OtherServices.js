@@ -8,6 +8,9 @@ import fullintex from '../public/imgs/pageimgs/interior/IMG_20200702_155834.jpg'
 import pdlwash from '../public/imgs/pageimgs/exterior/IMG_20220121_153454.jpg';
 import stage1 from '../public/imgs/pageimgs/paintCorrection/IMG_20220826_165738.jpg';
 import stage2 from '../public/imgs/pageimgs/paintCorrection/IMG_20210517_111329.jpg';
+import interiorGallery from '../public/imgs/pageimgs/interior/IMG_20220329_135221.jpg';
+import exteriorGallery from '../public/imgs/pageimgs/exterior/IMG_20210327_124515.jpg';
+import paintCorrectionGallery from '../public/imgs/pageimgs/paintCorrection/IMG_20220909_124912.jpg';
 
 export default function OtherServices() {
   return (
@@ -47,6 +50,19 @@ export default function OtherServices() {
             </div>
 
             <div className="service-card">
+                <Image src={interiorGallery} alt="vehicle rear after an interior detail" className='otherservices-image' loading='lazy' objectFit='cover' placeholder='blur' quality={1} />
+                <div className="otherservices-desc text-center">
+                    <div>
+                        <a href='/gallery/FullIntGallery' className='service-heading-link'>FULL INTERIOR GALLERY</a>
+                    </div>
+                    <p className="service-desc">Our interior gallery is full of before and after images of the interiors that we have done.</p>
+                    <p className="service-desc">Come check out some of the hundreds of photos we have of what we have been able to do for our customers interiors!</p>
+
+                    <a href='/gallery/FullIntGallery' className="readmore text-center">Full Interior Gallery</a>
+                </div>
+            </div>
+
+            <div className="service-card">
                 <Image src={bio} alt="Vehicle before a biohazard cleaning" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
                 <div className="otherservices-desc">
                     <div>
@@ -76,6 +92,19 @@ export default function OtherServices() {
                     <p className="service-desc">Our Dirt-Less Wash will thoroughly clean the exterior of your vehicle with our tried and true cleaning process.</p>
 
                     <a href="/services/DLWash" className="readmore">Dirt-Less Wash Details {'>'}</a>
+                </div>
+            </div>
+
+            <div className="service-card">
+                <Image src={exteriorGallery} alt="subaru after an exterior wash" className='otherservices-image' loading='lazy' objectFit='cover' placeholder='blur' quality={1} />
+                <div className="otherservices-desc text-center">
+                    <div>
+                        <a href='/gallery/ExteriorWashGallery' className='service-heading-link'>EXTERIOR WASH GALLERY</a>
+                    </div>
+                    <p className="service-desc">Our exterior gallery has plenty of examples of the exterior work that we do.</p>
+                    <p className="service-desc">We have easily washed hundreds of vehicles and have our process optimized from the tires to door jambs, leaving every vehicle in great condition every time!</p>
+
+                    <a href='/gallery/ExteriorWashGallery' className="readmore text-center">Exterior Wash Gallery</a>
                 </div>
             </div>
 
@@ -121,6 +150,19 @@ export default function OtherServices() {
                     <p className="service-desc">Our 2 stage paint correction is great for getting your car to a near perfect state. This is great for show cars need that extra time and effort to get to that showroom shine.</p>
 
                     <a href="services/TwoPC" className="readmore">Two Stage Paint Correction Details {'>'}</a>
+                </div>
+            </div>
+
+            <div className="service-card">
+                <Image src={paintCorrectionGallery} alt="" className='otherservices-image' loading='lazy' objectFit='cover' placeholder='blur' quality={1} />
+                <div className="otherservices-desc text-center">
+                    <div>
+                        <a href='/gallery/PaintCorrectionGallery' className='service-heading-link'>PAINT CORRECTION GALLERY</a>
+                    </div>
+                    <p className="service-desc">Come see some of the results from our Paint Correction services!</p>
+                    <p className="service-desc">These vehicles have all been through the whole process from completely washing, to taping off, all the way to the paint correction itself.</p>
+
+                    <a href='/gallery/PaintCorrectionGallery' className="readmore text-center">Paint Correction Gallery</a>
                 </div>
             </div>
         </section>
