@@ -124,11 +124,23 @@ export default function MyApp({ Component, pageProps }) {
                 <meta name="description" content="Dirt-Less Detailing is here to provide the highest-quality detailing services at great prices here in the Bonney Lake area. Come check out our offers!" />
                 <meta name="apple-mobile-web-app-status-bar" content="#90cdf4" />
                 <meta name="google-site-verification" content="sq8uUuD_CLtkO1bg33IWhAVFjproB_N6s2Qqll0IxUo" />
+                
+
 
                 <link rel="icon" href="/favicon.ico" />
                 <title>Dirt-Less Detailing | Bonney Lakes Top Auto Detailer</title>
                 <script key="structured-data" type="application/ld+json" dangerouslySetInnerHTML={generateStructuredData()}></script>
             </Head>
+            <Script src="https://www.googletagmanager.com/gtag/js?id=G-4YJ6RQHQY8" strategy='afterInteractive' />
+            <Script id='google-analytics' strategy='afterInteractive'>
+                {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments)}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-4YJ6RQHQY8');
+                `}
+            </Script>
             <Script key="structured-data" type="application/ld+json" dangerouslySetInnerHTML={generateStructuredData()}></Script>
             <header className="App-header">
                 <nav id="nav">
