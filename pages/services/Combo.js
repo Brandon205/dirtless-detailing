@@ -70,26 +70,31 @@ export default function Combo() {
 
             <div className='aside-container'>
               <div className='service-aside addons-aside'>
-              <h3><a href="/services/Addons" style={{color: 'black'}}>Extra Add-ons</a></h3>
+                <a href="/services/Addons" className='extra-addons'>Extra Add-ons</a>
+                <hr className="contact-border" style={{marginBottom: 16}} />
                 <div className="aside-links"> 
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/Addons" style={{color: 'blue'}}>Glass Polishing</a> - <span className="bold">$80</span>/hour</p>
-                    <p className="subtext">Gives you crystal clear windows.</p>
+                    <p className='addon-title'><a href="/services/Addons" className='text-blue'>Glass Polishing</a></p>
+                    <p className='m-0'><span className="bold special-package">$80</span>/hour</p>
+                    <p className='addon-subtext'>Gives you crystal clear windows.</p>
                   </div>
+                  <hr className="contact-border" style={{marginBottom: 16}} />
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/Addons" style={{color: 'blue'}}>Waterspot/Overspray Removal</a> - <span className="bold">$80</span>/hour</p>
-                    <p className="subtext">Remove any Overspray and Waterspots from your vehicle.</p>
+                    <p className='addon-title'><a href="/services/Addons" className='text-blue'>Waterspot/Overspray Removal</a></p>
+                    <p className='m-0'><span className="bold special-package">$80</span>/hour</p>
+                    <p className='addon-subtext'>Remove any Overspray and Waterspots from your vehicle.</p>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className='aside-container'>
-              <div className='service-aside addons-aside'>
-              <h3 className='underline'>Combo Deal</h3>
+              <div className='service-aside'>
+                <p className='extra-addons'>Combo Deal</p>
+                <hr className="contact-border" style={{marginBottom: 16}} />
                 <div className="aside-links"> 
                   <h3>You get an <span className='special-package'>INCLUDED</span> Engine Cleaning with this order!</h3>
-                  <p className="subtext">This special deal combines our <a className='aside-link' href="/services/PDLWash">Premium Dirt-Less Wash</a>, our best exterior wash service. Our <a className='aside-link' href="/services/FullIntEx">Full Interior Cleaning</a>, the most complete interior cleaning we provide, and we'll also give you an Engine Bay Cleaning <span className='special-package'>ON US!</span></p>
+                  <p style={{color: 'lightgray'}} className="subtext">This special deal combines our <a className='aside-link text-blue' href="/services/PDLWash">Premium Dirt-Less Wash</a>, our best exterior wash service. Our <a className='aside-link text-blue' href="/services/FullIntEx">Full Interior Cleaning</a>, the most complete interior cleaning we provide, and we'll give you an Engine Bay Cleaning <span className='special-package bold'>ON US!</span></p>
                 </div>
               </div>
             </div>

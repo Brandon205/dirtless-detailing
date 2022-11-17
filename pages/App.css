@@ -817,10 +817,6 @@ hr {
   margin-left: 1rem;
 }
 
-/* .footer-contact-card {
-  display: flex;
-  flex-direction: column;
-} */
 .footer-content-card a {
   display: block;
 }
@@ -1015,11 +1011,12 @@ hr {
 .service-aside {
   display: none;
   flex-direction: column;
-  background-color: var(--contact-bkg-clr-light);
-  border-radius: 0.5rem;
+  background-color: var(--contact-bkg-clr);
+  border-radius: 0.75rem;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   margin: 10px auto;
-  width: 275px;
-  color: black;
+  width: 300px;
+  color: white;
   padding: 1rem;
 }
 
@@ -1029,7 +1026,13 @@ hr {
   border-bottom: 3px solid var(--main-clr);
 }
 
+.addon-subtext {
+  margin-top: 0;
+  color: lightgray;
+}
+
 .addons-aside {
+  text-align: left;
   display: block;
 }
 
@@ -1037,8 +1040,28 @@ hr {
   color: blue;
 }
 
+.extra-addons {
+  font-size: 1.5em;
+  margin: 0;
+  color: white;
+  text-decoration: none;
+}
+
 .underline {
   text-decoration: underline;
+}
+
+.text-blue {
+  color: dodgerblue;
+}
+
+.m-0 {
+  margin: 0;
+  color: lightgray
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .addon-content-container {
@@ -1106,15 +1129,9 @@ hr {
   text-decoration: none;
   margin: 5px;
   padding: 0.5rem;
-  background-color: var(--contact-bkg-clr-light);
   border-radius: 5px;
-  color: black;
+  color: white;
   cursor: pointer;
-}
-
-.service-link:hover {
-  background-color: #d6d7e1 !important;
-  color: var(--main-clr);
 }
 
 .pricing-container {
@@ -1159,11 +1176,10 @@ hr {
 }
 
 .addon-title {
+  font-size: 1.3em;
+  color: white;
   margin: 10px 0 0 0;
-}
-
-.bold {
-  font-weight: bold;
+  display: inline;
 }
 
 .size {

@@ -13,7 +13,7 @@ const steps = [
   ["Determine Products", "We will first determine what products will need to be used to best suit the situation."],
   ["Disinfect", "Fully disinfect every single surface in the vehicle before we even get started."],
   ["Full Interior Cleaning", "Perform our Full Interior Cleaning Process on the vehicle."],
-  ["Ozone Treatment", "Perform Ozone Air treatment to fill all bacteria, mold spores, and get rid of smells where it's impossible to get to conventionally."]
+  ["Ozone Treatment", "Perform Ozone air treatment to fill all bacteria, mold spores, and get rid of smells where it's impossible to get to conventionally."]
 ]
 
 export default function Bio() {
@@ -63,20 +63,24 @@ export default function Bio() {
           
           <div className='aside-container'>
             <div className='service-aside'>
-              <h3>Other Interior Services</h3>
+              <p className='extra-addons'>Other Interior Pages</p>
+              <hr className="contact-border" style={{marginBottom: 16}} />
               <div className="aside-links">
-                <a href="/services/FullIntEx" style={{color: href.endsWith('FullIntEx') ? 'blue' : 'black'}} className="service-link">{href.endsWith('FullIntEx') ? '> ' : ''} Full Interior Cleaning</a>
-                <a href="/services/Bio" style={{color: href.endsWith('Bio') ? 'blue' : 'black'}} className="service-link">{href.endsWith('Bio') ? '> ' : ''} Biohazard Cleaning</a>
+                <a href="/services/FullIntEx" style={{color: href.endsWith('FullIntEx') ? 'dodgerblue' : 'white'}} className="service-link">{href.endsWith('FullIntEx') ? '> ' : ''} Full Interior Cleaning</a>
+                <a href="/services/Bio" style={{color: href.endsWith('Bio') ? 'dodgerblue' : 'white'}} className="service-link">{href.endsWith('Bio') ? '> ' : ''} Biohazard Cleaning</a>
+                <a href="/gallery/FullIntGallery" className="service-link">Full Interior Gallery</a>
               </div>
             </div>
 
             <div className='aside-container'>
               <div className='service-aside addons-aside'>
-              <h3><a href="/services/Addons" style={{color: 'black'}}>Extra Add-ons</a></h3>
+                <a href="/services/Addons" className='extra-addons'>Extra Add-ons</a>
+                <hr className="contact-border" style={{marginBottom: 16}} />
                 <div className="aside-links">
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/Addons" style={{color: 'blue'}}>Ozone Treatment</a> - <span className="bold">$100</span></p>
-                    <p className="subtext">Treats your vehicle to get rid of any viruses, bacteria, and odors</p>
+                    <p className='addon-title'><a href="/services/Addons" className='text-blue'>Ozone Treatment</a></p>
+                    <p className='m-0'><span className="bold special-package">$100</span></p>
+                    <p className="addon-subtext">Treats your vehicle to get rid of any viruses, bacteria, and odors.</p>
                   </div>
                 </div>
               </div>  

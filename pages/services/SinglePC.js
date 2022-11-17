@@ -67,21 +67,25 @@ export default function SinglePC() {
           <div>
             <div className='aside-container'>
               <div className='service-aside'>
-                <h3>Other Correction Services</h3>
+                <p className='extra-addons'>Other Correction Pages</p>
+                <hr className="contact-border" style={{marginBottom: 16}} />
                 <div className="aside-links">
-                  <a href="/services/SinglePC" style={{color: href.endsWith('SinglePC') ? 'blue' : 'black'}} className="service-link">{href.endsWith('SinglePC') ? '> ' : ''} Single Stage Paint Correction</a>
-                  <a href="/services/TwoPC" style={{color: href.endsWith('TwoPC') ? 'blue' : 'black'}} className="service-link">{href.endsWith('TwoPC') ? '> ' : ''} Two Stage Paint Correction</a>
+                  <a href="/services/SinglePC" style={{color: href.endsWith('SinglePC') ? 'dodgerblue' : 'white'}} className="service-link">{href.endsWith('SinglePC') ? '> ' : ''} Single Stage Paint Correction</a>
+                  <a href="/services/TwoPC" style={{color: href.endsWith('TwoPC') ? 'dodgerblue' : 'white'}} className="service-link">{href.endsWith('TwoPC') ? '> ' : ''} Two Stage Paint Correction</a>
+                  <a href="/gallery/PaintCorrectionGallery" className="service-link">Paint Correction Gallery</a>
                 </div>
               </div>
             </div>
 
             <div className='aside-container'>
               <div className='service-aside addons-aside'>
-                <h3><a href="/services/Addons" style={{color: 'black'}}>Extra Add-ons</a></h3>
+                <a href="/services/Addons" className='extra-addons'>Extra Add-ons</a>
+                <hr className="contact-border" style={{marginBottom: 16}} />
                 <div className="aside-links">
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/Addons" style={{color: 'blue'}}>Glass Polishing</a> - <span className="bold">$80</span>/hour</p>
-                    <p className="subtext">Gives you crystal clear windows.</p>
+                    <p className='addon-title'><a href="/services/Addons" className='text-blue'>Glass Polishing</a></p>
+                    <p className='m-0'><span className="bold special-package">$80</span>/hour</p>
+                    <p className="addon-subtext">Gives you crystal clear windows.</p>
                   </div>
                 </div>
               </div>
