@@ -11,7 +11,7 @@ const steps = [
   ["Correction Prep - Iron Decontamination", "Iron decontamination to get rid of the rest of the embedded iron particles in your paint."],
   ["Remove tar and sap", "Remove any and all tar and sap from the exterior."],
   ["Dry Vehicle", "Dry the whole vehicle with clean towels and air blowers."],
-  ["Tape Off Areas", "Tape off trim and sensitive areas (Some detailers skip this step)."],
+  ["Tape Off Areas", "Tape off trim and sensitive areas (some detailers skip this step)."],
   ["Paint Correction", "Complete Two Stage paint correction using Griots products removing all scratches and swirls we possibly can while staying safe for vehicle specific clear coat thickness."],
   ["Remove Polishing Compound", "Remove polishing compound residue from cracks, crevices, etc."],
   ["Protect Paint", "Protect paint with ceramic spray or ceramic coating."],
@@ -110,7 +110,8 @@ export default function TwoPC() {
             </div>
           </div>
 
-          <h4>Interested? Click "Get Started" in the Navigation to get in touch!</h4>
+          <h4>Interested? Get in touch with us here, and let us know what we can do to help you!</h4>
+          <a href="/Contact" className="quote-btn main-quote-btn">Contact Us</a>
 
         </div>
       </div>

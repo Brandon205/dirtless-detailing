@@ -143,8 +143,8 @@ export default function Combo() {
             </div>
           </div>
 
-          <h4>Interested? Get started by contacting us!</h4>
-          <a href="/Contact" className="quote-btn main-quote-btn">Reach Out!</a>
+          <h4>Interested? Get in touch with us here, and let us know what we can do to help you!</h4>
+          <a href="/Contact" className="quote-btn main-quote-btn">Contact Us</a>
 
         </div>
     </section>

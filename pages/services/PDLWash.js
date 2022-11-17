@@ -127,7 +127,8 @@ export default function PDLWash() {
             </div>
           </div>
 
-          <h4>Interested? Click "Get Started" in the Navigation to get in touch!</h4>
+          <h4>Interested? Get in touch with us here, and let us know what we can do to help you!</h4>
+          <a href="/Contact" className="quote-btn main-quote-btn">Contact Us</a>
 
         </div>
       </div>
