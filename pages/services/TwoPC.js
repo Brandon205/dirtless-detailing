@@ -57,7 +57,7 @@ export default function TwoPC() {
       <div className='main-content-container'>
         <div className="process-container">
           <div>
-            <h2>Our Two Stage Paint Correction Process</h2>
+            <h2 className='cleaning-process-title'>Our Two Stage Paint Correction Process</h2>
             <ol className='list'>
               {content}
             </ol>

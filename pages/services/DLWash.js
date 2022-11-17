@@ -51,7 +51,7 @@ export default function DLWash() {
       <div className='main-content-container'>
         <div className="process-container">
           <div>
-            <h2>Our Dirt-Less Wash Process*</h2>
+            <h2 className='cleaning-process-title'>Our Dirt-Less Wash Process*</h2>
             <ol className='list'>
               {content}
             </ol>

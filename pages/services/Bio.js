@@ -55,7 +55,7 @@ export default function Bio() {
       <div className='main-content-container'>
         <div className='process-container'>
           <div>
-            <h2>Our Biohazard Cleaning Process</h2>
+            <h2 className='cleaning-process-title'>Our Biohazard Cleaning Process</h2>
             <ol className='list'>
               {content}
             </ol>
