@@ -12,8 +12,8 @@ import mesh from '../../public/imgs/pageimgs/bio/MeshBA.webp';
 const steps = [
   ["Determine Products", "We will first determine what products will need to be used to best suit the situation."],
   ["Disinfect", "Fully disinfect every single surface in the vehicle before we even get started."],
-  ["Full Interior Cleaning", "Then we will perform our Full Interior Cleaning Process on the vehicle."],
-  ["Ozone Treatment", "Then we will perform Ozone Air treatment to fill all bacteria, mold spores, and get rid of smells where it's impossible to get to conventionally."]
+  ["Full Interior Cleaning", "Perform our Full Interior Cleaning Process on the vehicle."],
+  ["Ozone Treatment", "Perform Ozone Air treatment to fill all bacteria, mold spores, and get rid of smells where it's impossible to get to conventionally."]
 ]
 
 export default function Bio() {
@@ -72,7 +72,7 @@ export default function Bio() {
 
             <div className='aside-container'>
               <div className='service-aside addons-aside'>
-              <h3><a href="/services/Addons" style={{color: 'black'}}>Extra Addons</a></h3>
+              <h3><a href="/services/Addons" style={{color: 'black'}}>Extra Add-ons</a></h3>
                 <div className="aside-links">
                   <div className="addon-container">
                     <p className='addon-title'><a href="/services/Addons" style={{color: 'blue'}}>Ozone Treatment</a> - <span className="bold">$100</span></p>
@@ -105,7 +105,7 @@ export default function Bio() {
 
         <div>
           <h3 className='pricing-title'>Our Biohazard Cleaning Prices</h3>
-          <h4 className='subtext'>Our basic prices are shown below, final pricing may vary based on your vehicle size and condition.</h4>
+          <h4 className='subtext'>Our basic prices are shown below. Final pricing may vary based on your vehicle size and condition.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
             <h4 className="size">All Vehicles</h4>

@@ -28,12 +28,12 @@ export default function Contact() {
             "Dirt-Less Wash": e.target[12].checked ? 'Yes': 'No',
             "Premium Dirt-LessWash": e.target[13].checked ? 'Yes': 'No',
             "Engine Bay": e.target[14].checked ? 'Yes': 'No',
-            "Glass Polishing (Exterior Addon)": e.target[15].checked ? 'Yes': 'No',
-            "Waterspot Removal (Exterior Addon)": e.target[16].checked ? 'Yes': 'No',
-            "Truck Bed Cleaning (Exterior Addon)": e.target[17].checked ? 'Yes': 'No',
+            "Glass Polishing (Exterior Add-on)": e.target[15].checked ? 'Yes': 'No',
+            "Waterspot Removal (Exterior Add-on)": e.target[16].checked ? 'Yes': 'No',
+            "Truck Bed Cleaning (Exterior Add-on)": e.target[17].checked ? 'Yes': 'No',
             "Single Stage Paint Correction": e.target[18].checked ? 'Yes': 'No',
             "Two Stage Paint Correction": e.target[19].checked ? 'Yes': 'No',
-            "Glass Polishing (Correction Addon)": e.target[20].checked ? 'Yes': 'No'
+            "Glass Polishing (Correction Add-on)": e.target[20].checked ? 'Yes': 'No'
         }
         const formData = new FormData();
         console.log(formInfo);
@@ -158,7 +158,7 @@ export default function Contact() {
                         <label htmlFor="bio" className='checkbox-label'>Biohazard Cleaning</label><br />
                     </div>
 
-                    <p className="form-section-heading">Interior Addons:</p>
+                    <p className="form-section-heading">Interior Add-ons:</p>
                         <div>
                             <input type="checkbox" id='headliners' name="headliners" className='checkbox-input' />
                             <label htmlFor="headliners" className='checkbox-label'>Headliners</label><br />
@@ -196,7 +196,7 @@ export default function Contact() {
                         <label htmlFor="premium dirtlessWash" className='checkbox-label'>Premium Dirt-Less Wash</label><br />
                     </div>
 
-                    <p className="form-section-heading">Exterior Addons:</p>
+                    <p className="form-section-heading">Exterior Add-ons:</p>
                     <div>
                         <input type="checkbox" id='engine' name="engine" className='checkbox-input' />
                         <label htmlFor="engine" className='checkbox-label' style={{marginBottom: 16}}>Engine Bay</label><br />
@@ -222,7 +222,7 @@ export default function Contact() {
                         <label htmlFor="twoPC" className='checkbox-label' style={{marginBottom: 16}}>Two Stage Paint Correction</label><br />
                     </div>
 
-                    <p className="form-section-heading">Paint Correction Addons:</p>
+                    <p className="form-section-heading">Paint Correction Add-ons:</p>
                     <div>
                         <input type="checkbox" id='correctionGlass' name="correctionGlass" className='checkbox-input' />
                         <label htmlFor="correctionGlass" className='checkbox-label'>Glass Polishing</label>

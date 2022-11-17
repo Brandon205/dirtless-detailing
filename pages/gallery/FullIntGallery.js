@@ -18,7 +18,7 @@ export default function FullIntGallery() {
       </div>
       <header>
         <h1 className='servicepage-heading'>Full Interior Cleaning Gallery</h1>
-        <p>We have cleaned it all, and this is a gallery to show what we can do to even the worst of interiors. Take a look at our <a href="/services/FullIntEx" className='gallery-link' >Full Interior Cleaning</a> page to find out more</p>
+        <p>We have cleaned it all, even the worst of interiors. Check out the Gallery below. Take a look at our <a href="/services/FullIntEx" className='gallery-link' >Full Interior Cleaning</a> page to find out more.</p>
       </header>
 
       <div className='gallery-container'>

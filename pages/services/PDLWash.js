@@ -5,15 +5,15 @@ import Head from 'next/head';
 import cover from '../../public/imgs/PDLWashCover.webp';
 
 const steps = [
-  ["Wash Vehicle", "Thorough strip wash top to bottom including the gas door with the 2 bucket method or equivalent."],
-  ["Wheel Cleaning", "Clean wheels, wheel wells, wheel barrels."],
-  ["Wax Prep - Clay Bar", "Clay bar the whole vehicle so sealant properly adheres and paint is smooth."],
-  ["Wax Prep - Iron Decontamination", "Iron Decontamination to make sure all microscopic iron contaminants are off of the paint, these are things that the clay bar won't get, this improves wax adhesion as well."],
+  ["Wash Vehicle", "Thorough strip wash top to bottom, including the gas door with the 2 bucket method or equivalent."],
+  ["Wheel Cleaning", "Clean wheels, wheel wells, and wheel barrels."],
+  ["Wax Prep - Clay Bar", "Clay bar the whole vehicle so sealant properly adheres and paint is left smooth."],
+  ["Wax Prep - Iron Decontamination", "Decontaminate the vehicle to make sure all microscopic iron contaminants are off of the paint. These are things that the clay bar won't get. This will improve wax adhesion as well."],
   ["Remove tar and sap", "Remove any and all tar and sap from the exterior."],
-  ["Dry Vehicle", "Dry the whole vehicle with clean towels and Air blowers."],
-  ["Apply Wax", "Apply 6 month or more sealant."],
-  ["Door Jambs", "Clean Door Jambs."],
-  ["Dress Vehicle", "Dress all plastics, wheel wells, tires."]
+  ["Dry Vehicle", "Dry the whole vehicle with clean towels and air blowers."],
+  ["Apply Wax", "Apply sealant."],
+  ["Door Jambs", "Clean door jambs."],
+  ["Dress Vehicle", "Dress all plastics, wheel wells, and tires."]
 ]
 
 export default function PDLWash() {
@@ -59,7 +59,7 @@ export default function PDLWash() {
             <ol className='list'>
               {content}
             </ol>
-            <p style={{marginTop: 0}}>*Truck Bed cleaning offered as an extra addon if needed.</p>
+            <p style={{marginTop: 0}}>*Truck Bed cleaning offered as an extra add-on if needed.</p>
           </div>
 
           <div>
@@ -75,11 +75,11 @@ export default function PDLWash() {
 
             <div className='aside-container'>
               <div className='service-aside addons-aside'>
-              <h3><a href="/services/Addons" style={{color: 'black'}}>Extra Addons</a></h3>
+              <h3><a href="/services/Addons" style={{color: 'black'}}>Extra Add-ons</a></h3>
                 <div className="aside-links"> 
                   <div className="addon-container">
                     <p className='addon-title'><a href="/services/Addons" style={{color: 'blue'}}>Truck Bed Cleaning</a> - <span className="bold">$25</span></p>
-                    <p className="subtext">Addon to get your truck bed cleaned.</p>
+                    <p className="subtext">Add-on to get your truck bed cleaned.</p>
                   </div>
                   <div className="addon-container">
                     <p className='addon-title'><a href="/services/Addons" style={{color: 'blue'}}>Glass Polishing</a> - <span className="bold">$80</span>/hour</p>
@@ -103,7 +103,7 @@ export default function PDLWash() {
 
         <div>
           <h3>Our Premium Dirt-Less Wash Pricing</h3>
-          <h4>Our basic prices are shown below, final pricing may vary based on your vehicle size.</h4>
+          <h4>Our basic prices are shown below. Final pricing may vary based on your vehicle size.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
               <h4 className="size">SMALL</h4>

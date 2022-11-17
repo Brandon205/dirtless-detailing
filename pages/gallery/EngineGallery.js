@@ -18,13 +18,13 @@ export default function PaintCorrectionGallery() {
       </div> 
       <header>
         <h1 className='servicepage-heading'>Engine Cleaning Gallery</h1>
-        <p>This is a gallery to show what we can do to clean your engine bay. Take a look at our <a href="/services/Addons" className='gallery-link' >Engine Cleaning</a> section on our addons page for more info.</p>
+        <p>Check out the gallery below to see what we can do to clean your engine bay. Take a look at our <a href="/services/Addons" className='gallery-link' >Engine Cleaning</a> section on our add-ons page for more info.</p>
       </header>
 
       <div className='gallery-container'>
         { imagery }
       </div>
-      <h2 style={{color: 'white'}}>Check out the Engine Cleaning option on our <a href="/services/Addons" className='gallery-link' >Addons</a> page for more details!</h2>
+      <h2 style={{color: 'white'}}>Check out the Engine Cleaning option on our <a href="/services/Addons" className='gallery-link' >Add-ons</a> page for more details!</h2>
     </section>
   )
 }

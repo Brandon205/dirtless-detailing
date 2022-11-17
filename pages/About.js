@@ -17,7 +17,6 @@ export default function About() {
       </div>
       <div className="servicepage-header">
         <h1>About Us/FAQ</h1>
-        <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
       </div>
 
       <section className="about-container">
@@ -55,7 +54,7 @@ export default function About() {
         </ul>
         <ul className='faq-ul'>
           <li className='faq-li'>Do I have to be there the whole time you're working on my car?</li>
-          <p className='faq-p'>Absolutely not, you are free to go do whatever you need to do while we are working.</p>
+          <p className='faq-p'>Absolutely not. You are free to go do whatever you need to do while we are working.</p>
         </ul>
       </section>
     </div>

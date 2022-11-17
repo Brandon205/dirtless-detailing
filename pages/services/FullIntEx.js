@@ -5,13 +5,13 @@ import Head from 'next/head';
 import cover from '../../public/imgs/pageimgs/interior/fullIntExCover.webp';
 
 const steps = [
-  ["Expose Hidden Dirt", "Use our Tornador Vortex blowgun which uses compressed air to blow out every spot a vacuum can't reach, it also extracts sand and loose soil from carpeting (Most detailers don't do this)."],
-  ["Hot Water Extraction", "We use a professional hot water extractor and professional flex stain remover and alkaline floor rinse to keep floors at a neutral PH level. (Another thing other detailers won't do). We will be sure to get all carpets, floor mats, and cloth seats"],
-  ["Vacuum Vehicle", "Thoroughly vacuum every crack and crevice of the vehicle"],
-  ["Clean Plastics and Leathers", "Clean, steam, and degrease all plastics and leather seats"],
-  ["Dress Interior", "Dress all vinyl and leather (if requested)"],
-  ["Door Jambs", "Clean all of the door jambs"],
-  ["Window Cleaning", "Clean windows"]
+  ["Expose Hidden Dirt", "Use our Tornador Vortex blowgun which uses compressed air to blow out every spot a vacuum can't reach. It also extracts sand and loose soil from carpeting."],
+  ["Hot Water Extraction", "We use a professional hot water extractor and professional flex stain remover and alkaline floor rinse to keep floors at a neutral PH level. We will be sure to get all carpets, floor mats, and cloth seats."],
+  ["Vacuum Vehicle", "Thoroughly vacuum every crack and crevice of the vehicle."],
+  ["Clean Plastics and Leathers", "Clean, steam, and degrease all plastics and leather seats."],
+  ["Dress Interior", "Dress all vinyl and leather (if requested)."],
+  ["Door Jambs", "Clean all of the door jambs."],
+  ["Window Cleaning", "Clean windows."]
 ]
 
 export default function FullIntEx() {
@@ -57,7 +57,7 @@ export default function FullIntEx() {
             <ol className='list'>
               {content}
             </ol>
-            <p style={{marginTop: 0}}>*Headliners offered as an addon</p>
+            <p style={{marginTop: 0}}>*Headliners offered as an add-on</p>
             <p><span className='special-package'>*Extraction</span> Package Only</p>
           </div>
 
@@ -72,7 +72,7 @@ export default function FullIntEx() {
 
           <div className='aside-container'>
             <div className='service-aside addons-aside'>
-            <h3><a href="/services/Addons" style={{color: 'black'}}>Extra Addons</a></h3>
+            <h3><a href="/services/Addons" style={{color: 'black'}}>Extra Add-ons</a></h3>
               <div className="aside-links">
                 <div className="addon-container">
                   <p className='addon-title'><a href="/services/Addons" style={{color: 'blue'}}>Ozone Treatment</a> - <span className="bold">$100</span></p>

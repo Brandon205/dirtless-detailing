@@ -50,19 +50,6 @@ export default function OtherServices() {
             </div>
 
             <div className="service-card">
-                <Image src={interiorGallery} alt="vehicle rear after an interior detail" className='otherservices-image' loading='lazy' objectFit='cover' placeholder='blur' quality={1} />
-                <div className="otherservices-desc text-center">
-                    <div>
-                        <a href='/gallery/FullIntGallery' className='service-heading-link'>FULL INTERIOR GALLERY</a>
-                    </div>
-                    <p className="service-desc">Our interior gallery is full of before and after images of the interiors that we have done.</p>
-                    <p className="service-desc">Come check out some of the hundreds of photos we have of what we have been able to do for our customers interiors!</p>
-
-                    <a href='/gallery/FullIntGallery' className="readmore text-center">Full Interior Gallery</a>
-                </div>
-            </div>
-
-            <div className="service-card">
                 <Image src={bio} alt="Vehicle before a biohazard cleaning" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
                 <div className="otherservices-desc">
                     <div>
@@ -72,6 +59,19 @@ export default function OtherServices() {
                     <p className="service-desc">If there are bad smells like mold or smoke in your car this will be the package for you. We'll use cleaning chemicals suited for the job to get rid of those odors for good.</p>
 
                     <a href='/services/Bio' className="readmore">Biohazard Cleaning Details {'>'}</a>
+                </div>
+            </div>
+
+            <div className="service-card">
+                <Image src={interiorGallery} alt="vehicle rear after an interior detail" className='otherservices-image' loading='lazy' objectFit='cover' placeholder='blur' quality={1} />
+                <div className="otherservices-desc text-center">
+                    <div>
+                        <a href='/gallery/FullIntGallery' className='service-heading-link'>FULL INTERIOR GALLERY</a>
+                    </div>
+                    <p className="service-desc">Our interior gallery is full of before and after images of the interiors that we have done.</p>
+                    <p className="service-desc">Come check out some of the hundreds of photos we have of what we have been able to do for our customers interiors!</p>
+
+                    <a href='/gallery/FullIntGallery' className="readmore text-center">Full Interior Gallery</a>
                 </div>
             </div>
         </section>
@@ -96,6 +96,19 @@ export default function OtherServices() {
             </div>
 
             <div className="service-card">
+                <Image src={pdlwash} alt="Vehicle after a Premium Dirt-Less Cleaning" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
+                <div className="otherservices-desc">
+                    <div>
+                        <a href='/services/PDLWash' className='service-heading-link'>Premium Dirt-Less Wash</a>
+                        <p className="secondary-text">Starting at: <span>$150</span></p>
+                    </div>
+                    <p className="service-desc">Our Premium exterior wash will go above and beyond the Dirt-Less Wash in the cleaning process and will top it off with a 6 month sealant or better to protect your vehicle.</p>
+
+                    <a href="/services/PDLWash" className="readmore">Premium Dirt-Less Wash Details {'>'}</a>
+                </div>
+            </div>
+
+            <div className="service-card">
                 <Image src={exteriorGallery} alt="subaru after an exterior wash" className='otherservices-image' loading='lazy' objectFit='cover' placeholder='blur' quality={1} />
                 <div className="otherservices-desc text-center">
                     <div>
@@ -108,18 +121,6 @@ export default function OtherServices() {
                 </div>
             </div>
 
-            <div className="service-card">
-                <Image src={pdlwash} alt="Vehicle after a Premium Dirt-Less Cleaning" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
-                <div className="otherservices-desc">
-                    <div>
-                        <a href='/services/PDLWash' className='service-heading-link'>Premium Dirt-Less Wash</a>
-                        <p className="secondary-text">Starting at: <span>$150</span></p>
-                    </div>
-                    <p className="service-desc">Our Premium exterior wash will go above and beyond the Dirt-Less Wash in the cleaning process and will top it off with a 6 month sealant or better to protect your vehicle.</p>
-
-                    <a href="/services/PDLWash" className="readmore">Premium Dirt-Less Wash Details {'>'}</a>
-                </div>
-            </div>
         </section>
         <a href="/Contact" className="quote-btn main-quote-btn">Get a Quote</a>
         

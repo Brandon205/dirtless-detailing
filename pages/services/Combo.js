@@ -9,12 +9,6 @@ import exterior from '../../public/imgs/pageimgs/paintCorrection/IMG_20220902_08
 import engine from '../../public/imgs/pageimgs/engine/IMG_20220830_193915.jpg';
 import interior from '../../public/imgs/pageimgs/interior/IMG_20211210_142317.jpg';
 
-const steps = [
-  ["We will start out by cleaning out the Interior of the vehicle, so that anything we blow out of there doesn't end up on the cleaned exterior. For more details on our exact Full Interior methods check out our "],
-  ["We will then clean out the engine bay, continuing to clean from the inside of the vehicle out, so that the exterior is as clean as can be by the end. All of our steps for the Engine Bay cleaning are posted "],
-  ["After cleaning and dressing the engine bay we will finally move onto the exterior as the last step. We will perform our Premium Dirt-Less Wash procedure on your vehicle, for more details check out our"]
-]
-
 export default function Combo() {
 
   return (
@@ -44,7 +38,7 @@ export default function Combo() {
                   </div>
                   <div className="step-container">
                     <h4 className="step-title">Full Interior Cleaning</h4>
-                    <p className='step-desc'>We will start out by cleaning out the Interior of the vehicle, so that anything we blow out of there doesn't end up on the cleaned exterior. For more details on our exact Full Interior methods check out our <a href='/services/FullIntEx' className='special-package'>Full Interior</a> page.</p>
+                    <p className='step-desc'>We will start by cleaning out the interior of the vehicle so that anything we blow out doesn't end up on the cleaned exterior. For more details on our exact full interior methods, check out our <a href='/services/FullIntEx' className='special-package'>Full Interior</a> page.</p>
                   </div>
                 </li>
                 
@@ -54,7 +48,7 @@ export default function Combo() {
                   </div>
                   <div className="step-container">
                     <h4 className="step-title">Engine Bay Cleaning</h4>
-                    <p className='step-desc'>Next we will then clean out the engine bay, continuing to clean from the inside of the vehicle out, so that the exterior will be spotless at the end. More information for the engine cleaning is posted <a href='/services/Addons' className='special-package'>here</a>.</p>
+                    <p className='step-desc'>We will then clean out the engine bay, continuing to clean from the inside of the vehicle out, so that the exterior will be spotless at the end. More information for the engine cleaning is posted <a href='/services/Addons' className='special-package'>here</a>.</p>
                   </div>
                 </li>
 
@@ -64,7 +58,7 @@ export default function Combo() {
                   </div>
                   <div className="step-container">
                     <h4 className="step-title">Premium Dirt-Less Wash</h4>
-                    <p className='step-desc'>After cleaning and dressing the engine bay we will finally move onto the exterior as the last step. We will perform our Premium Dirt-Less Wash procedure on your vehicle, for more details check out our <a href='/services/PDLWash' className='special-package'>Premium Dirt-Less Wash</a> page.</p>
+                    <p className='step-desc'>After cleaning and dressing the engine bay, we will finally move onto the exterior as the last step. We will perform our Premium Dirt-Less Wash procedure on your vehicle. For more details check out our <a href='/services/PDLWash' className='special-package'>Premium Dirt-Less Wash</a> page.</p>
                   </div>
                 </li>
               </ol>
@@ -76,7 +70,7 @@ export default function Combo() {
 
             <div className='aside-container'>
               <div className='service-aside addons-aside'>
-              <h3><a href="/services/Addons" style={{color: 'black'}}>Extra Addons</a></h3>
+              <h3><a href="/services/Addons" style={{color: 'black'}}>Extra Add-ons</a></h3>
                 <div className="aside-links"> 
                   <div className="addon-container">
                     <p className='addon-title'><a href="/services/Addons" style={{color: 'blue'}}>Glass Polishing</a> - <span className="bold">$80</span>/hour</p>
@@ -84,7 +78,7 @@ export default function Combo() {
                   </div>
                   <div className="addon-container">
                     <p className='addon-title'><a href="/services/Addons" style={{color: 'blue'}}>Waterspot/Overspray Removal</a> - <span className="bold">$80</span>/hour</p>
-                    <p className="subtext">Remove any Overspray and Waterspots from your vehicle</p>
+                    <p className="subtext">Remove any Overspray and Waterspots from your vehicle.</p>
                   </div>
                 </div>
               </div>
@@ -125,7 +119,7 @@ export default function Combo() {
 
         <div>
           <h3 className='pricing-title'>Our Combo Deal Pricing</h3>
-          <h4>Our basic prices are shown below, final pricing may vary based on your vehicle size, condition, and whether or not you need extraction on the carpets.</h4>
+          <h4>Our basic prices are shown below. Final pricing may vary based on your vehicle size, condition, and whether or not you need extraction on the carpets.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
               <h4 className="size">SMALL</h4>

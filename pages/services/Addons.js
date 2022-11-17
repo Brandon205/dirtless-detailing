@@ -14,22 +14,22 @@ export default function Addons() {
   return (
     <section className='service-content-container'>
       <Head>
-        <title>Dirt-Less Detailing | Dirt-Less Addons</title>
-        <meta name="description" content="Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment • Truck Bed Cleaning. Check out our popular addons that top off our services." />
+        <title>Dirt-Less Detailing | Dirt-Less Add-ons</title>
+        <meta name="description" content="Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment • Truck Bed Cleaning. Check out our popular add-ons that top off our services." />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/services/Addons" />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
         <Image src={cover} alt="Vehicle after a Dirt-Less Wash with Glass Polishing addons" layout="fill" objectFit='cover' placeholder='blur' priority />
       </div>
       <div className="servicepage-header">
-        <h1>Dirt-Less Detailing Addons</h1>
+        <h1>Dirt-Less Detailing Add-ons</h1>
         <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
       </div>
 
-      <h2 style={{fontSize: 32}}>Our Current Dirt-Less Addons:</h2>
+      <h2 style={{fontSize: 32}}>Our Current Dirt-Less Add-ons:</h2>
       <div className="addon-content-container">
 
-        <h3 className='addons-subheading'>Exterior Addons:</h3>
+        <h3 className='addons-subheading'>Exterior Add-ons:</h3>
         <div className="feature-section">
           <div className="feature-img-container">
             <Image style={{borderRadius: 16}} src={truckBed} alt="Truck Bed Cleaning" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
@@ -37,7 +37,7 @@ export default function Addons() {
           <div className="feature-desc-area">
             <p className='service-heading-link'>Truck Bed Cleaning</p>
             <p className="secondary-text">Cost: <span>$25</span></p>
-            <p className="service-desc">This is our addon to get your truck bed cleaned out. Can be added to either of out Dirt-Less Washes.</p>
+            <p className="service-desc">This is our add-on to get your truck bed cleaned out. Can be added to either of our Dirt-Less Washes.</p>
             <div className='internal-links'>
               <a href="/services/DLWash" className="readmore">Dirt-Less Wash</a>
               <a href="/services/PDLWash" className="readmore">Premium Dirt-Less Wash</a>
@@ -96,7 +96,7 @@ export default function Addons() {
         </div>
         <hr className='contact-border' />
 
-        <h3 className='addons-subheading'>Interior Addons:</h3>
+        <h3 className='addons-subheading'>Interior Add-ons:</h3>
         <div className="feature-section">
           <div className="feature-img-container">
             <Image style={{borderRadius: 16}} src={headliner} alt="Cleaned Headliners" className='otherservices-image' loading='lazy' placeholder='blur' quality={100} />
@@ -104,7 +104,7 @@ export default function Addons() {
           <div className="feature-desc-area">
             <p className='service-heading-link'>Headliner Cleaning</p>
             <p className="secondary-text">Cost: <span>$40-$80</span></p>
-            <p className="service-desc">We will perform cleaning methods specific to your vehicles headliner material, we do this to prevent sagging and damage to the headliners. (Results may vary)</p>
+            <p className="service-desc">We will perform cleaning methods specific to your vehicles headliner material. We do this to prevent sagging and damage to the headliners. (Results may vary)</p>
             <div className='internal-links'>
               <a href="/services/FullIntEx" className="readmore">Full Interior Cleaning</a>
               <a href="/services/Bio" className="readmore">Biohazard Cleaning</a>
