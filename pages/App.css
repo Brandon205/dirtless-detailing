@@ -437,6 +437,23 @@ input[type="range"] {
   margin-top: 1rem;
 }
 
+.select-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.year-input {
+  width: 80px;
+}
+
+.make-input {
+  width: 125px;
+}
+
+.model-input {
+  width: 150px;
+}
+
 .checkbox-label {
   transition: all 500ms ease;
   color: black;

@@ -16,30 +16,32 @@ export default function Contact() {
             "Name": e.target[0].value,
             "Email": e.target[1].value,
             "Phone": e.target[2].value,
-            "Message": e.target[3].value,
-            "Combo": e.target[4].checked ? 'Yes': 'No',
-            "Full Interior With Extraction": e.target[5].checked ? 'Yes': 'No',
-            "Full Interior Without Extraction": e.target[6].checked ? 'Yes': 'No',
-            "Biohazard Cleaning": e.target[7].checked ? 'Yes': 'No',
-            "Headliners": e.target[8].checked ? 'Yes': 'No',
-            "Ozone": e.target[9].checked ? 'Yes': 'No',
-            "Dirtiness": e.target[10].value,
-            "Dog Hair": e.target[11].value,
-            "Dirt-Less Wash": e.target[12].checked ? 'Yes': 'No',
-            "Premium Dirt-LessWash": e.target[13].checked ? 'Yes': 'No',
-            "Engine Bay": e.target[14].checked ? 'Yes': 'No',
-            "Glass Polishing (Exterior Add-on)": e.target[15].checked ? 'Yes': 'No',
-            "Waterspot Removal (Exterior Add-on)": e.target[16].checked ? 'Yes': 'No',
-            "Truck Bed Cleaning (Exterior Add-on)": e.target[17].checked ? 'Yes': 'No',
-            "Single Stage Paint Correction": e.target[18].checked ? 'Yes': 'No',
-            "Two Stage Paint Correction": e.target[19].checked ? 'Yes': 'No',
-            "Glass Polishing (Correction Add-on)": e.target[20].checked ? 'Yes': 'No'
+            "Year": e.target[3].value,
+            "Make": e.target[4].value,
+            "Model": e.target[5].value,
+            "Message": e.target[6].value,
+            "Combo": e.target[7].checked ? 'Yes': 'No',
+            "Full Interior With Extraction": e.target[8].checked ? 'Yes': 'No',
+            "Full Interior Without Extraction": e.target[9].checked ? 'Yes': 'No',
+            "Biohazard Cleaning": e.target[10].checked ? 'Yes': 'No',
+            "Headliners": e.target[11].checked ? 'Yes': 'No',
+            "Ozone": e.target[12].checked ? 'Yes': 'No',
+            "Dirtiness": e.target[13].value,
+            "Dog Hair": e.target[14].value,
+            "Dirt-Less Wash": e.target[15].checked ? 'Yes': 'No',
+            "Premium Dirt-LessWash": e.target[16].checked ? 'Yes': 'No',
+            "Engine Bay": e.target[17].checked ? 'Yes': 'No',
+            "Glass Polishing (Exterior Add-on)": e.target[18].checked ? 'Yes': 'No',
+            "Waterspot Removal (Exterior Add-on)": e.target[19].checked ? 'Yes': 'No',
+            "Truck Bed Cleaning (Exterior Add-on)": e.target[20].checked ? 'Yes': 'No',
+            "Debadging (Exterior Add-on)": e.target[21].checked ? 'Yes': 'No',
+            "Single Stage Paint Correction": e.target[22].checked ? 'Yes': 'No',
+            "Two Stage Paint Correction": e.target[23].checked ? 'Yes': 'No',
+            "Glass Polishing (Correction Add-on)": e.target[24].checked ? 'Yes': 'No'
         }
         const formData = new FormData();
-        console.log(formInfo);
-
         Object.entries(formInfo).forEach(([key, value]) => {
-            if (key === "Name" || key === "Email" || key === "Message" || key === "Dirtiness" || key === "Dog Hair" || key === "Phone") {
+            if (key === "Name" || key === "Email" || key === "Message" || key === "Dirtiness" || key === "Dog Hair" || key === "Phone" || key === "Year" || key === "Make" || key === "Model") {
                 formData.append(key, value);
             } else if (value === 'Yes') {
                 formData.append(key, value);
@@ -60,6 +62,7 @@ export default function Contact() {
                 progress: undefined
             })
             e.target.reset()
+            window.scrollTo(0,0)
         }).catch(error => {
             toast.error("An error occurred, please try again." + error, {
                 position: "bottom-center",
@@ -125,15 +128,178 @@ export default function Contact() {
             <form className="form" onSubmit={(e) => formSubmit(e)}>
                 <div className="form-section form-top-section">
                     <div>
-                        <label htmlFor="name" className='text-input-label'>Name<span className='special-package'>*</span></label><br />
-                        <input type="text" id="name" name="Name" className='text-input' placeholder="Name" required /><br />
-                        <label htmlFor="email" className='text-input-label'>Email<span className='special-package'>*</span></label><br />
-                        <input type="email" id="email" name="Email" className='text-input' placeholder="Email" required /><br />
-                        <label htmlFor="phone" className='text-input-label'>Phone<span className='special-package'>*</span><small> (Ex: 111-123-4567)</small></label><br />
-                        <input type="tel" id="phone" name="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" className='text-input' placeholder="Phone Number" required /><br />
+                        <label htmlFor="name" className='text-input-label'>Name<span className='special-package'>*</span></label>
+                        <input type="text" id="name" name="Name" className='text-input' placeholder="Name" required />
+                        <label htmlFor="email" className='text-input-label'>Email<span className='special-package'>*</span></label>
+                        <input type="email" id="email" name="Email" className='text-input' placeholder="Email" required />
+                        <label htmlFor="phone" className='text-input-label'>Phone<span className='special-package'>*</span><small> (Ex: 111-123-4567)</small></label>
+                        <input type="tel" id="phone" name="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" className='text-input' placeholder="Phone Number" required />
 
-                        <label htmlFor="message" className='text-input-label'>Additional Information:</label><br />
-                        <textarea type="textarea" name="message" className='textarea' placeholder='Do you want our mobile service or to schedule a drop off? Do you have any other questions/concerns?' />
+                        <div className='select-field'>
+                            <label htmlFor="year" className='text-input-label'>Year<span className='special-package'>*</span></label>
+                            <select id="year" name="Year" className='text-input year-input' placeholder="Year" required>
+                                <option>Year</option>
+                                <option>2023</option>
+                                <option>2022</option>
+                                <option>2021</option>
+                                <option>2020</option>
+                                <option>2019</option>
+                                <option>2018</option>
+                                <option>2017</option>
+                                <option>2016</option>
+                                <option>2015</option>
+                                <option>2014</option>
+                                <option>2013</option>
+                                <option>2012</option>
+                                <option>2011</option>
+                                <option>2010</option>
+                                <option>2009</option>
+                                <option>2008</option>
+                                <option>2007</option>
+                                <option>2006</option>
+                                <option>2005</option>
+                                <option>2004</option>
+                                <option>2003</option>
+                                <option>2002</option>
+                                <option>2001</option>
+                                <option>2000</option>
+                                <option>1999</option>
+                                <option>1998</option>
+                                <option>1997</option>
+                                <option>1996</option>
+                                <option>1995</option>
+                                <option>1994</option>
+                                <option>1993</option>
+                                <option>1992</option>
+                                <option>1991</option>
+                                <option>1990</option>
+                                <option>1989</option>
+                                <option>1988</option>
+                                <option>1987</option>
+                                <option>1986</option>
+                                <option>1985</option>
+                                <option>1984</option>
+                                <option>1983</option>
+                                <option>1982</option>
+                                <option>1981</option>
+                                <option>1980</option>
+                                <option>1979</option>
+                                <option>1978</option>
+                                <option>1977</option>
+                                <option>1976</option>
+                                <option>1975</option>
+                                <option>1974</option>
+                                <option>1973</option>
+                                <option>1972</option>
+                                <option>1971</option>
+                                <option>1970</option>
+                                <option>1969</option>
+                                <option>1968</option>
+                                <option>1967</option>
+                                <option>1966</option>
+                                <option>1965</option>
+                                <option>1964</option>
+                                <option>1963</option>
+                                <option>1962</option>
+                                <option>1961</option>
+                                <option>1960</option>
+                            </select>
+                        </div>
+                        <div className='select-field'>
+                            <label htmlFor="make" className='text-input-label'>Make<span className='special-package'>*</span></label>
+                            <select id="make" name="Make" className='text-input make-input' placeholder="Make" required>
+                                <option>Make</option>
+                                <option>Acura</option>
+                                <option>Airstream</option>
+                                <option>Alfa Romeo</option>
+                                <option>American Coach</option>
+                                <option>Aston Martin</option>
+                                <option>Audi</option>
+                                <option>Autocar</option>
+                                <option>Bentley</option>
+                                <option>Blue Bird</option>
+                                <option>BMW</option>
+                                <option>Bugatti</option>
+                                <option>Buick</option>
+                                <option>Cadillac</option>
+                                <option>Capacity</option>
+                                <option>Chevrolet</option>
+                                <option>Chrysler</option>
+                                <option>Coach House</option>
+                                <option>Coachmen</option>
+                                <option>Crane Carrier</option>
+                                <option>Dodge</option>
+                                <option>Dynamax Corp</option>
+                                <option>E-One</option>
+                                <option>El Dorado</option>
+                                <option>Entegra Coach</option>
+                                <option>Ferrari</option>
+                                <option>Fiat</option>
+                                <option>Ford</option>
+                                <option>Freightliner</option>
+                                <option>Genesis</option>
+                                <option>Gillig</option>
+                                <option>GMC</option>
+                                <option>Grande West</option>
+                                <option>Hino</option>
+                                <option>Honda</option>
+                                <option>Hyundai</option>
+                                <option>IC Co</option>
+                                <option>Infiniti</option>
+                                <option>International</option>
+                                <option>Isuzu</option>
+                                <option>Jaguar</option>
+                                <option>Jeep</option>
+                                <option>Kalmar</option>
+                                <option>Karma</option>
+                                <option>Kenworth</option>
+                                <option>Kia</option>
+                                <option>Lamborghini</option>
+                                <option>Land Rover</option>
+                                <option>Lexus</option>
+                                <option>Lincoln</option>
+                                <option>Lotus</option>
+                                <option>Mack</option>
+                                <option>Maserati</option>
+                                <option>Mazda</option>
+                                <option>MCI</option>
+                                <option>McLaren</option>
+                                <option>Mercedes Benz</option>
+                                <option>Mini</option>
+                                <option>Mitsubishi</option>
+                                <option>New Flyer</option>
+                                <option>Nissan/Datsun</option>
+                                <option>Nova Bus</option>
+                                <option>Peterbilt</option>
+                                <option>Polestar</option>
+                                <option>Porsche</option>
+                                <option>Prevost</option>
+                                <option>Rolls Royce</option>
+                                <option>Rosenbauer Am</option>
+                                <option>Spartan</option>
+                                <option>Subaru</option>
+                                <option>Temsa Bus</option>
+                                <option>Terex</option>
+                                <option>Tesla</option>
+                                <option>Thomas Built</option>
+                                <option>Tiffin</option>
+                                <option>Toyota</option>
+                                <option>Van Hool</option>
+                                <option>Volkswagen</option>
+                                <option>Volvo</option>
+                                <option>Western Star</option>
+                                <option>Winnebago</option>
+                            </select>
+                        </div>
+                        <div className='select-field'>
+                            <label htmlFor="model" className='text-input-label'>Model<span className='special-package'>*</span></label>
+                            <input type="text" id="model" name="Model" className='text-input model-input' placeholder="Model" required />
+                        </div>
+
+                        <div style={{width: 100 + '%'}}>
+                            <label htmlFor="message" className='text-input-label'>Additional Information:</label>
+                            <textarea type="textarea" name="message" className='textarea' placeholder='Do you want our mobile service or to schedule a drop off? Do you have any other questions/concerns?' />
+                        </div>
                     </div>
                 </div>
 
@@ -141,7 +307,7 @@ export default function Contact() {
                     <p className='form-section-heading'>Combo Deals:</p>
                     <div>
                         <input type="checkbox" name="combo" id='combo' className='checkbox-input' />
-                        <label htmlFor="combo" className='checkbox-label'>Full Interior and Exterior Combo</label><br />
+                        <label htmlFor="combo" className='checkbox-label'>Full Interior and Exterior Combo</label>
                     </div>
                 </div>
 
@@ -149,21 +315,21 @@ export default function Contact() {
                     <p className='form-section-heading'>Interior Cleaning Services:</p>
                     <div>
                         <input type="checkbox" id='fullIntEx' name="fullIntEx" className='checkbox-input' />
-                        <label htmlFor="fullIntEx" className='checkbox-label'>Full Interior With Extraction</label><br />
+                        <label htmlFor="fullIntEx" className='checkbox-label'>Full Interior With Extraction</label>
 
                         <input type="checkbox" id='fullInterior' name="fullInterior" className='checkbox-input' />
-                        <label htmlFor="fullInterior" className='checkbox-label'>Full Interior Without Extraction</label><br />
+                        <label htmlFor="fullInterior" className='checkbox-label'>Full Interior Without Extraction</label>
 
                         <input type="checkbox" id='bio' name="bio" className='checkbox-input' />
-                        <label htmlFor="bio" className='checkbox-label'>Biohazard Cleaning</label><br />
+                        <label htmlFor="bio" className='checkbox-label'>Biohazard Cleaning</label>
                     </div>
 
                     <p className="form-section-heading">Interior Add-ons:</p>
                         <div>
                             <input type="checkbox" id='headliners' name="headliners" className='checkbox-input' />
-                            <label htmlFor="headliners" className='checkbox-label'>Headliners</label><br />
+                            <label htmlFor="headliners" className='checkbox-label'>Headliners</label>
                             <input type="checkbox" id='ozone' name="ozone" className='checkbox-input' />
-                            <label htmlFor="ozone" className='checkbox-label'>Ozone Treatment</label><br />
+                            <label htmlFor="ozone" className='checkbox-label'>Ozone Treatment</label>
                         </div>
 
                     <p className="form-section-heading">Vehicle Dirtiness</p>
@@ -190,25 +356,28 @@ export default function Contact() {
                     <p className='form-section-heading'>Exterior Cleaning Services:</p>
                     <div>
                         <input type="checkbox" id='dirtlessWash' name="dirtlessWash" className='checkbox-input' />
-                        <label htmlFor="dirtlessWash" className='checkbox-label'>Dirt-Less Wash</label><br />
+                        <label htmlFor="dirtlessWash" className='checkbox-label'>Dirt-Less Wash</label>
 
                         <input type="checkbox" id='premium dirtlessWash' name="premium dirtlessWash" className='checkbox-input' />
-                        <label htmlFor="premium dirtlessWash" className='checkbox-label'>Premium Dirt-Less Wash</label><br />
+                        <label htmlFor="premium dirtlessWash" className='checkbox-label'>Premium Dirt-Less Wash</label>
                     </div>
 
                     <p className="form-section-heading">Exterior Add-ons:</p>
                     <div>
                         <input type="checkbox" id='engine' name="engine" className='checkbox-input' />
-                        <label htmlFor="engine" className='checkbox-label' style={{marginBottom: 16}}>Engine Bay</label><br />
+                        <label htmlFor="engine" className='checkbox-label' style={{marginBottom: 16}}>Engine Bay</label>
 
                         <input type="checkbox" id='glass' name="glass" className='checkbox-input' />
-                        <label htmlFor="glass" className='checkbox-label'>Glass Polishing</label><br />
+                        <label htmlFor="glass" className='checkbox-label'>Glass Polishing</label>
 
                         <input type="checkbox" id='waterspot' name="waterspot" className='checkbox-input' />
-                        <label htmlFor="waterspot" className='checkbox-label'>Waterspot/Overspray Removal</label><br />
+                        <label htmlFor="waterspot" className='checkbox-label'>Waterspot/Overspray Removal</label>
 
                         <input type="checkbox" id='truckBed' name="truckBed" className='checkbox-input' />
-                        <label htmlFor="truckBed" className='checkbox-label'>Truck Bed Cleaning</label><br />
+                        <label htmlFor="truckBed" className='checkbox-label'>Truck Bed Cleaning</label>
+
+                        <input type="checkbox" id='debadge' name="debadge" className='checkbox-input' />
+                        <label htmlFor="debadge" className='checkbox-label'>Debadging</label>
                     </div>
                 </div>
 
@@ -216,10 +385,10 @@ export default function Contact() {
                     <p className='form-section-heading'>Paint Correction Services:</p>
                     <div>
                         <input type="checkbox" id='singlePC' name="singlePC" className='checkbox-input' />
-                        <label htmlFor="singlePC" className='checkbox-label'>Single Stage Paint Correction</label><br />
+                        <label htmlFor="singlePC" className='checkbox-label'>Single Stage Paint Correction</label>
 
                         <input type="checkbox" id='twoPC' name="twoPC" className='checkbox-input' />
-                        <label htmlFor="twoPC" className='checkbox-label' style={{marginBottom: 16}}>Two Stage Paint Correction</label><br />
+                        <label htmlFor="twoPC" className='checkbox-label' style={{marginBottom: 16}}>Two Stage Paint Correction</label>
                     </div>
 
                     <p className="form-section-heading">Paint Correction Add-ons:</p>

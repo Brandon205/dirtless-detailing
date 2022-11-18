@@ -9,6 +9,7 @@ import ozone from '../../public/imgs/pageimgs/bio/IMG_20220904_140012.jpg';
 import truckBed from '../../public/imgs/pageimgs/exterior/1667675422409.webp';
 import headliner from '../../public/imgs/headlinersCover.webp';
 import engine from '../../public/imgs/EngineCover.webp';
+import debadge from '../../public/imgs/pageimgs/exterior/IMG_20220709_124846.jpg';
 
 export default function Addons() {
   return (
@@ -86,6 +87,24 @@ export default function Addons() {
             <p className='service-heading-link'>Waterspot/Overspray Removal</p>
             <p className="secondary-text">Hourly rate: <span>$80/hour</span></p>
             <p className="service-desc">Remove all overspray and waterspots we can. This can be added onto any of our Exterior Washes or either of our Paint Correction Services when contacting us.</p>
+            <div className='internal-links'>
+              <a href="/services/DLWash" className="readmore">Dirt-Less Wash</a>
+              <a href="/services/PDLWash" className="readmore">Premium Dirt-Less Wash</a>
+              <a href="/services/SinglePC" className="readmore">Single Stage Paint Correction</a>
+              <a href="/services/TwoPC" className="readmore">Two Stage Paint Correction</a>
+            </div>
+          </div>
+        </div>
+        <hr className='contact-border' />
+        
+        <div className="feature-section">
+          <div className="feature-img-container">
+            <Image style={{borderRadius: 16}} src={debadge} alt="Vehicle side shot" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
+          </div>
+          <div className="feature-desc-area">
+            <p className='service-heading-link'>Debadging</p>
+            <p className="secondary-text">Hourly rate: <span>$80/hour</span></p>
+            <p className="service-desc">Remove any vehicle badging including any residue left behind after removal</p>
             <div className='internal-links'>
               <a href="/services/DLWash" className="readmore">Dirt-Less Wash</a>
               <a href="/services/PDLWash" className="readmore">Premium Dirt-Less Wash</a>

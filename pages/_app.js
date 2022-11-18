@@ -31,8 +31,8 @@ export default function MyApp({ Component, pageProps }) {
         if (document.cookie === '') {
             let year = new Date();
             year = year.getFullYear() + 5;
-            toast(<Cookies acceptCookies={() => document.cookie = `ddCookies=true; SameSite=Lax; expires=Thu, 18 Dec ${year} 12:00:00;`}
-            declineCookies={() => document.cookie = `ddCookies=false; SameSite=Lax; expires=Thu, 01 Jan 1970 00:00:00 UTC`} />,
+            toast(<Cookies acceptCookies={() => document.cookie = `ddCookies=true; SameSite=Strict; expires=Thu, 18 Dec ${year} 12:00:00;`}
+            declineCookies={() => document.cookie = `ddCookies=false; SameSite=Strict; expires=Thu, 01 Jan 1970 00:00:00 UTC`} />,
             {position: "bottom-center", autoClose: false, hideProgressBar: true, closeOnClick: false, pauseOnHover: true, draggable: true, progress: undefined, theme: "dark"})
         }
     
