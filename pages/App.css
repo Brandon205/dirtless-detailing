@@ -16,7 +16,7 @@
   --quote-clr: #1D96ED;
 
   /** Text and smaller colors **/
-  --supporting-text: #6B6B6B;
+  --supporting-text: #bbb;
   --secondary-text: #575757;
   --heading-clr1: #fff;
   --heading-clr2: rgb(185, 185, 185);
@@ -600,26 +600,51 @@ input[type="range"] {
 }
 
 .coating-container {
+  display: flex;
+  gap: 3rem;
+}
 
+.bg-contact {
+  background-color: var(--contact-bkg);
+  color: white;
+}
+
+.package-icon {
+  font-size: 3em;
+}
+
+.text-xl {
+  font-size: 1.5em;
+}
+
+.mb-0 {
+  margin-bottom: 0;
 }
 
 .coating-left {
   text-align: left;
   padding-left: 2rem;
-  width: 80vw;
 }
 
 .package-container {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 1fr;
-  gap: 2rem;
+  text-align: center;
+  margin-top: 3rem;
+  gap: 3rem;
 }
 
 .package-details {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.maintenance-costs {
+  display: flex;
+  gap: 2rem;
+  padding-left: 2rem;
 }
 
 .checklist {
@@ -924,6 +949,13 @@ hr {
   list-style: none;
 }
 
+.faq-p {
+  list-style: none;
+  margin: 1rem 0 3rem 0;
+  line-height: 2;
+  color: var(--supporting-text);
+}
+
 /** SIDE PAGE CSS **/
 .servicepage-header {
   position: relative;
@@ -1212,6 +1244,10 @@ hr {
   outline: 2px solid white;
   padding: 7px;
   border-radius: 15px;
+}
+
+.outline-padding {
+  padding: 1rem;
 }
 
 .addon-title {

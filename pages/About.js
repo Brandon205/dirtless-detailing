@@ -26,6 +26,31 @@ export default function About() {
         <h3>FAQ</h3>
         <ul className='faq-ul'>
           <li className='faq-li'>What do you need from me when you get here?</li>
+          <li className='faq-p'>All we will need is an electrical outlet, a water spigot, and preferably all/most personal items out of the car.</li>
+
+          <li className='faq-li'>How long will the detail take?</li>
+          <li className='faq-p'>Every job will take a different amount of time, but once we know the condition of the car and the services requested we can give a good estimate as to how long it will take.</li>
+
+          <li className='faq-li'>Can you come to my apartment or workplace?</li>
+          <li className='faq-p'>It will depend on the amount of space and access if we can or not.</li>
+
+          <li className='faq-li'>What forms of payment do you take?</li>
+          <li className='faq-p'>Currently you can pay by card, cash, or Facebook pay.</li>
+
+          <li className='faq-li'>Are you licensed and insured?</li>
+          <li className='faq-p'>We are 100% licensed and insured!</li>
+
+          <li className='faq-li'>What cities do you service?</li>
+          <li className='faq-p'>With our mobile service we can go out to: Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham.</li>
+
+          <li className='faq-li'>Do I have to be there the whole time you're working on my car?</li>
+          <li className='faq-p'>Absolutely not. You are free to go do whatever you need to do while we are working.</li>
+
+          <li className='faq-li'>I have questions about taking care of my car after getting a ceramic coating?</li>
+          <li className='faq-p'>Check out our <a href="/services/ExtCoatings" className="">Ceramic Coating</a> FAQ section to get your questions answered!</li>
+        </ul>
+        {/* <ul className='faq-ul'>
+          <li className='faq-li'>What do you need from me when you get here?</li>
           <p className='faq-p'>All we will need is an electrical outlet, a water spigot, and preferably all/most personal items out of the car.</p>
         </ul>
         <ul className='faq-ul'>
@@ -59,7 +84,7 @@ export default function About() {
         <ul className='faq-ul'>
           <li className='faq-li'>I have questions about taking care of my car after getting a ceramic coating?</li>
           <p className='faq-p'>Check out our <a href="/services/ExtCoatings" className="">Ceramic Coating</a> FAQ section to get your questions answered!</p>
-        </ul>
+        </ul> */}
       </section>
     </div>
   )
