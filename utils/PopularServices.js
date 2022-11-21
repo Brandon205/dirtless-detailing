@@ -57,13 +57,58 @@ export default function PopularServices() {
 
         <div className="popular-services-card">
             <div className="popular-services-header">
-                <a href='/services/PDLWash' className="service-heading-link popular-service-title">Premium Dirt-Less Wash</a>
-                <p className="price">Starting at: <span>$150</span></p>
+                <a href='/services/PDLWash' className="service-heading-link popular-service-title">Full Interior + Exterior Combo + <span className="special-package">Engine Bay</span></a>
+                <p className="price">Starting at: <span>$350</span></p>
             </div>
             <div className="popular-img">
-                <Image style={{borderRadius: '1rem 1rem 0 0'}} src={dlWash} alt="Car exterior after Dirt-Less Wash" layout='fill' objectFit='cover' loading='lazy' quality={25} />
+                <Image style={{borderRadius: '1rem 1rem 0 0'}} src={dlWash} alt="Car exterior after Dirt-Less Wash and full interior" layout='fill' objectFit='cover' loading='lazy' quality={25} />
             </div>
             
+            <div className="popular-desc">
+                <ul className="checklist">
+                    <li className="checklist-item">
+                        <BsCheck2Circle className='checkcircle' />
+                        <p>Vortex Blowgun to remove loose dirt/debris</p>
+                    </li>
+                    <li className="checklist-item">
+                        <BsCheck2Circle className='checkcircle' />
+                        <p>Vacuum out the interior</p>
+                    </li>
+                    <li className="checklist-item">
+                        <BsCheck2Circle className='checkcircle' />
+                        <p>Wipe Down and dress the interior</p>
+                    </li>
+                    <li className="checklist-item">
+                        <BsCheck2Circle className='checkcircle' />
+                        <p>Full Vehicle Strip Wash</p>
+                    </li>
+                    <li className="checklist-item">
+                        <BsCheck2Circle className='checkcircle' />
+                        <p>Clay Bar and Iron Decontamination Treatment</p>
+                    </li>
+                    <li className="checklist-item">
+                        <BsCheck2Circle className='checkcircle' />
+                        <p>Apply 6 month sealant</p>
+                    </li>
+                    <li className="checklist-item">
+                        <BsCheck2Circle className='checkcircle' />
+                        <p>Clean and dress entire Engine Bay</p>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="/services/PDLWash" className="popular-readmore">Premium Wash Details {'>'}</a>
+        </div>
+
+        <div className="popular-services-card">
+            <div className="popular-services-header">
+                <a href='/services/SinglePC' className="service-heading-link popular-service-title">Ceramic Coating <br />(Protect Package)</a>
+                <p className="price">Starting at: <span>$300</span></p>
+            </div>
+            <div className="popular-img">
+                <Image style={{borderRadius: '1rem 1rem 0 0'}} src={paint} alt="Before and after a Paint Correction" layout='fill' objectFit='cover' loading='lazy' quality={25} />
+            </div>
+
             <div className="popular-desc">
                 <ul className="checklist">
                     <li className="checklist-item">
@@ -84,65 +129,20 @@ export default function PopularServices() {
                     </li>
                     <li className="checklist-item">
                         <BsCheck2Circle className='checkcircle' />
-                        <p>Apply 6 month sealant or better</p>
+                        <p>Dress all Plastics and Tires</p>
                     </li>
                     <li className="checklist-item">
                         <BsCheck2Circle className='checkcircle' />
-                        <p>Clean Door Jambs</p>
+                        <p>Coat Paint with IGL Kenzo Graphene 10H Ceramic</p>
                     </li>
                     <li className="checklist-item">
                         <BsCheck2Circle className='checkcircle' />
-                        <p>Dress Plastics, Wheel Wells, and Tires</p>
-                    </li>
-                </ul>
-            </div>
-
-            <a href="/services/PDLWash" className="popular-readmore">Premium Wash Details {'>'}</a>
-        </div>
-
-        <div className="popular-services-card">
-            <div className="popular-services-header">
-                <a href='/services/SinglePC' className="service-heading-link popular-service-title">Single Stage Paint Correction</a>
-                <p className="price">Starting at: <span>$300</span></p>
-            </div>
-            <div className="popular-img">
-                <Image style={{borderRadius: '1rem 1rem 0 0'}} src={paint} alt="Before and after a Paint Correction" layout='fill' objectFit='cover' loading='lazy' quality={25} />
-            </div>
-
-            <div className="popular-desc">
-                <ul className="checklist">
-                    <li className="checklist-item">
-                        <BsCheck2Circle className='checkcircle' />
-                        <p>Full Vehicle Strip Wash</p>
-                    </li>
-                    <li className="checklist-item">
-                        <BsCheck2Circle className='checkcircle' />
-                        <p>Clean Wheel Wells, Wheel Barrels, and Wheels</p>
-                    </li>
-                    <li className="checklist-item">
-                        <BsCheck2Circle className='checkcircle' />
-                        <p>Clay Bar and Iron Decontamination Treatment</p>
-                    </li>
-                    <li className="checklist-item">
-                        <BsCheck2Circle className='checkcircle' />
-                        <p>Remove Tar and Sap</p>
-                    </li>
-                    <li className="checklist-item">
-                        <BsCheck2Circle className='checkcircle' />
-                        <p>Tape Off All Trim</p>
-                    </li>
-                    <li className="checklist-item">
-                        <BsCheck2Circle className='checkcircle' />
-                        <p>Single Stage Paint Correction</p>
-                    </li>
-                    <li className="checklist-item">
-                        <BsCheck2Circle className='checkcircle' />
-                        <p>Ceramic Spray/Coat</p>
+                        <p>Coat Windshield and Lights as well</p>
                     </li>
                 </ul>
             </div>
             
-            <a href="/services/SinglePC" className="popular-readmore">Paint Correction Details {'>'}</a>
+            <a href="/services/ExtCoatings" className="popular-readmore">Ceramic Coating Details {'>'}</a>
         </div>
     </section>
   )

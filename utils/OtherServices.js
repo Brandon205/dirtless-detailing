@@ -15,6 +15,55 @@ import paintCorrectionGallery from '../public/imgs/pageimgs/paintCorrection/IMG_
 export default function OtherServices() {
   return (
     <div>
+        <div className='separator-container'>
+            <h2 className='service-title'>CERAMIC COATING</h2>
+        </div>
+        <section className="otherservices-container">
+            <div className="service-card">
+                <Image src={stage1} alt="Vehicle after a Single Stage Paint Correction" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
+                <div className="otherservices-desc">
+                    <div>
+                        <a href='/services/SinglePC' className='service-heading-link'>Exterior Ceramic Coatings</a>
+                        <p className="secondary-text">Starting at: <span>$1,000</span></p>
+                    </div>
+                    <p className="service-desc">Our 5 year Ceramic Coatings will not only protect your vehicle but will also keep it looking great for years to come.</p>
+
+                    <a href="services/ExtCoatings" className="readmore">Exterior Coating Details {'>'}</a>
+                </div>
+            </div>
+
+            <div className="service-card">
+                <Image src={stage2} alt="Vehicle after a Two Stage Paint Correction" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
+                <div className="otherservices-desc">
+                    <div>
+                        <a href='/services/TwoPC' className='service-heading-link'>Interior Coatings</a>
+                        <p className="secondary-text">Starting at: <span>$75</span></p>
+                    </div>
+                    <p className="service-desc">Need to protect your black interior, or keep your white interior white? Then check out our interior coatings here!</p>
+
+                    <a href="services/IntCoatings" className="readmore">Interior Coating Details {'>'}</a>
+                </div>
+            </div>
+
+            <div className="service-card">
+                <Image src={paintCorrectionGallery} alt="" className='otherservices-image' loading='lazy' objectFit='cover' placeholder='blur' quality={1} />
+                <div className="otherservices-desc text-center">
+                    <div>
+                        <a href='/gallery/PaintCorrectionGallery' className='service-heading-link'>CERAMIC COATING GALLERY</a>
+                    </div>
+                    <p className="service-desc">Take a look at some of the results we've had after our Ceramic Details.</p>
+                    <p className="service-desc">Starting with our Single Stage Paint Correction before applying our Ceramics ensures the best covering of your vehicle possible, giving the absolute best results and longevity.</p>
+
+                    <a href='/gallery/CeramicGallery' className="readmore text-center">Ceramic Coating Gallery</a>
+                </div>
+            </div>
+        </section>
+        <a href="/Contact" className="quote-btn main-quote-btn">Get a Quote</a>
+
+        <div className='separator-container'>
+            <h3 className='service-title'>COMBO DEALS</h3>
+        </div>
+
         <section className="feature-section">
             <div className="feature-img-container">
                 <Image style={{borderRadius: 16}} src={combo} alt="Vehicle after a Combo Cleaning" loading='lazy' placeholder='blur' quality={90} />

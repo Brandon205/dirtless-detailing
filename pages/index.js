@@ -58,10 +58,6 @@ export default function Home() {
 
             <a href="/Contact" className="quote-btn main-quote-btn popular-quote-btn">Get a Quote</a>
 
-            <div className='separator-container'>
-                <h3 className='service-title'>COMBO DEALS</h3>
-            </div>
-
             <OtherServices />
 
             <div className='separator-container'>
