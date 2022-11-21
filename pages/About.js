@@ -56,6 +56,10 @@ export default function About() {
           <li className='faq-li'>Do I have to be there the whole time you're working on my car?</li>
           <p className='faq-p'>Absolutely not. You are free to go do whatever you need to do while we are working.</p>
         </ul>
+        <ul className='faq-ul'>
+          <li className='faq-li'>I have questions about taking care of my car after getting a ceramic coating?</li>
+          <p className='faq-p'>Check out our <a href="/services/ExtCoatings" className="">Ceramic Coating</a> FAQ section to get your questions answered!</p>
+        </ul>
       </section>
     </div>
   )

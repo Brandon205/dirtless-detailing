@@ -599,6 +599,29 @@ input[type="range"] {
   height: 350px;
 }
 
+.coating-container {
+
+}
+
+.coating-left {
+  text-align: left;
+  padding-left: 2rem;
+  width: 80vw;
+}
+
+.package-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 2rem;
+}
+
+.package-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .checklist {
   list-style: none;
   display: inline-block;
