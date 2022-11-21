@@ -125,7 +125,7 @@ export default function OtherServices() {
         <a href="/Contact" className="quote-btn main-quote-btn">Get a Quote</a>
         
         <div className='separator-container'>
-            <h2 className='service-title'>EXTERIOR CORRECTION SERVICES</h2>
+            <h2 className='service-title'>PAINT CORRECTION SERVICES</h2>
         </div>
         <section className="otherservices-container">
             <div className="service-card">

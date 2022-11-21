@@ -114,9 +114,17 @@ export default function MyApp({ Component, pageProps }) {
                             <hr className="nav-hr" />
 
                             <div style={{position: 'relative'}}>
-                                <li onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('services')}><p className='menu-li'><GiVacuumCleaner /> Services</p></li>
+                                <li onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('services')}><p className='menu-li'><GiVacuumCleaner /> All Services</p></li>
                                 <ul className="sub-ul" onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} style={{opacity: smallScreen ? 1 : services ? 1 : !services ? 0 : 0, pointerEvents: smallScreen ? 'auto' : services ? 'auto' : !services ? 'none' : 'auto'}} >
                                     <div className="nav-div">
+                                        <h4 className='sub-menu-header'>CERAMIC COATING</h4>
+                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                            <a href="/services/ExtCoatings" className='menu-link'><FaCarSide /> Exterior Ceramic Coatings</a>
+                                        </li>
+                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                            <a href="/services/IntCoatings" className='menu-link'><HiSparkles /> Interior Coatings</a>
+                                        </li>
+                                        <hr className="nav-hr" />
                                         <h4 className='sub-menu-header'>INTERIOR CLEANING SERVICES</h4>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
                                             <a href="/services/FullIntEx" className='menu-link'><GiSteeringWheel /> Full Interior Cleaning</a>
@@ -138,7 +146,7 @@ export default function MyApp({ Component, pageProps }) {
                                             <a href="/services/Combo" className='menu-link'><GiCarKey /> Interior + Exterior Combo</a>
                                         </li>
                                         <hr className="nav-hr" />
-                                        <h4 className='sub-menu-header'>EXTERIOR CORRECTION SERVICES</h4>
+                                        <h4 className='sub-menu-header'>PAINT CORRECTION SERVICES</h4>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
                                             <a href="/services/SinglePC" className='menu-link'><FaCarSide /> Single Stage Paint Correction</a>
                                         </li>

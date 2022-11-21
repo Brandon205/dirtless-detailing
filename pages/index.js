@@ -51,7 +51,7 @@ export default function Home() {
             </header>
 
             <div id="popular-services" className='separator-container'>
-                <h2 className="service-title">Popular Detailing Services</h2>
+                <h2 className="service-title">POPULAR DETAILING SERVICES</h2>
             </div>
             
             <PopularServices />
