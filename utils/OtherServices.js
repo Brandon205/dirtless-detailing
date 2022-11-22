@@ -11,6 +11,9 @@ import stage2 from '../public/imgs/pageimgs/paintCorrection/IMG_20210517_111329.
 import interiorGallery from '../public/imgs/pageimgs/interior/IMG_20220329_135221.jpg';
 import exteriorGallery from '../public/imgs/pageimgs/exterior/IMG_20210327_124515.jpg';
 import paintCorrectionGallery from '../public/imgs/pageimgs/paintCorrection/IMG_20220909_124912.jpg';
+import ceramicInt from '../public/imgs/pageimgs/interior/IMG_20220329_135252.jpg';
+import ceramicExt from '../public/imgs/pageimgs/paintCorrection/IMG_20211123_170855.jpg';
+import ceramicGallery from '../public/imgs/pageimgs/paintCorrection/IMG_20220919_100906.jpg';
 
 export default function OtherServices() {
   return (
@@ -20,20 +23,7 @@ export default function OtherServices() {
         </div>
         <section className="otherservices-container">
             <div className="service-card">
-                <Image src={stage1} alt="Vehicle after a Single Stage Paint Correction" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
-                <div className="otherservices-desc">
-                    <div>
-                        <a href='/services/SinglePC' className='service-heading-link'>Exterior Ceramic Coatings</a>
-                        <p className="secondary-text">Starting at: <span>$1,000</span></p>
-                    </div>
-                    <p className="service-desc">Our 5 year Ceramic Coatings will not only protect your vehicle but will also keep it looking great for years to come.</p>
-
-                    <a href="services/ExtCoatings" className="readmore">Exterior Coating Details {'>'}</a>
-                </div>
-            </div>
-
-            <div className="service-card">
-                <Image src={stage2} alt="Vehicle after a Two Stage Paint Correction" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
+                <Image src={ceramicInt} alt="Vehicle after a Two Stage Paint Correction" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
                 <div className="otherservices-desc">
                     <div>
                         <a href='/services/TwoPC' className='service-heading-link'>Interior Coatings</a>
@@ -46,7 +36,20 @@ export default function OtherServices() {
             </div>
 
             <div className="service-card">
-                <Image src={paintCorrectionGallery} alt="" className='otherservices-image' loading='lazy' objectFit='cover' placeholder='blur' quality={1} />
+                <Image src={ceramicExt} alt="Vehicle after a Single Stage Paint Correction" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
+                <div className="otherservices-desc">
+                    <div>
+                        <a href='/services/SinglePC' className='service-heading-link'>Exterior Ceramic Coatings</a>
+                        <p className="secondary-text">Starting at: <span>$1,000</span></p>
+                    </div>
+                    <p className="service-desc">Our 5 year Ceramic Coatings will not only protect your vehicle but will also keep it looking great for years to come.</p>
+
+                    <a href="services/ExtCoatings" className="readmore">Exterior Coating Details {'>'}</a>
+                </div>
+            </div>
+
+            <div className="service-card">
+                <Image src={ceramicGallery} alt="" className='otherservices-image' loading='lazy' objectFit='cover' placeholder='blur' quality={1} />
                 <div className="otherservices-desc text-center">
                     <div>
                         <a href='/gallery/PaintCorrectionGallery' className='service-heading-link'>CERAMIC COATING GALLERY</a>
@@ -204,7 +207,7 @@ export default function OtherServices() {
             </div>
 
             <div className="service-card">
-                <Image src={paintCorrectionGallery} alt="" className='otherservices-image' loading='lazy' objectFit='cover' placeholder='blur' quality={1} />
+                <Image src={paintCorrectionGallery} alt="Cleaned and corrected car" className='otherservices-image' loading='lazy' objectFit='cover' placeholder='blur' quality={1} />
                 <div className="otherservices-desc text-center">
                     <div>
                         <a href='/gallery/PaintCorrectionGallery' className='service-heading-link'>PAINT CORRECTION GALLERY</a>

@@ -57,7 +57,7 @@ export default function PopularServices() {
 
         <div className="popular-services-card">
             <div className="popular-services-header">
-                <a href='/services/PDLWash' className="service-heading-link popular-service-title">Full Interior + Exterior Combo + <span className="special-package">Engine Bay</span></a>
+                <a href='/services/PDLWash' className="service-heading-link popular-service-title">Full Interior + Exterior + Engine Bay Combo</a>
                 <p className="price">Starting at: <span>$350</span></p>
             </div>
             <div className="popular-img">
@@ -84,7 +84,7 @@ export default function PopularServices() {
                     </li>
                     <li className="checklist-item">
                         <BsCheck2Circle className='checkcircle' />
-                        <p>Clay Bar and Iron Decontamination Treatment</p>
+                        <p>Clay Bar and Iron Decontamination</p>
                     </li>
                     <li className="checklist-item">
                         <BsCheck2Circle className='checkcircle' />
@@ -92,7 +92,7 @@ export default function PopularServices() {
                     </li>
                     <li className="checklist-item">
                         <BsCheck2Circle className='checkcircle' />
-                        <p>Clean and dress entire Engine Bay</p>
+                        <p>Clean and dress the entire Engine Bay for FREE</p>
                     </li>
                 </ul>
             </div>
