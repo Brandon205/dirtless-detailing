@@ -900,6 +900,10 @@ hr {
   color: white;
 }
 
+.socials:hover {
+  color: gray;
+}
+
 .socials-container div a {
   margin-right: 20px;
 }
