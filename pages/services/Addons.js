@@ -16,7 +16,7 @@ export default function Addons() {
     <section className='service-content-container'>
       <Head>
         <title>Dirt-Less Detailing | Dirt-Less Add-ons</title>
-        <meta name="description" content="Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment • Truck Bed Cleaning. Check out our popular add-ons that top off our services." />
+        <meta property="og:description" content="Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment • Truck Bed Cleaning. Check out our popular add-ons that top off our services." />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/services/Addons" />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>

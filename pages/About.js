@@ -9,7 +9,7 @@ export default function About() {
     <div className='App'>
       <Head>
         <title>Dirt-Less Detailing | About Us / FAQ</title>
-        <meta name="description" content="Find out who we are, and get answers to some of our most frequently asked questions." />
+        <meta property="og:description" content="Find out who we are, and get answers to some of our most frequently asked questions." />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/About" />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>

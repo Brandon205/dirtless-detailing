@@ -10,7 +10,7 @@ export default function CoatingGallery() {
     <section className='gallery-content-container'>
       <Head>
         <title>Dirt-Less Detailing | Ceramic Coating Gallery</title>
-        <meta name="description" content="A gallery of photos that we have taken showing off some of the vehicles that we have coated and protected!" />
+        <meta property="og:description" content="A gallery of photos that we have taken showing off some of the vehicles that we have coated and protected!" />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/gallery/CoatingGallery" />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>

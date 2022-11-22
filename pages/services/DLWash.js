@@ -37,7 +37,7 @@ export default function DLWash() {
     <section className='service-content-container'>
       <Head>
         <title>Dirt-Less Detailing | Dirt-Less Wash</title>
-        <meta name="description" content="The Dirt-Less Wash is our base tier exterior cleaning service, complete with a spray wax to protect your vehicle." />\
+        <meta property="og:description" content="The Dirt-Less Wash is our base tier exterior cleaning service, complete with a spray wax to protect your vehicle." />\
         <link rel="canonical" href="https://www.dirtlessdetailing.com/services/DLWash" />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>

@@ -44,7 +44,7 @@ export default function SinglePC() {
     <section className='service-content-container'>
       <Head>
         <title>Dirt-Less Detailing | Single Stage</title>
-        <meta name="description" content="Single Stage Paint Correction should fix most of your Paint Correction needs!" />
+        <meta property="og:description" content="Single Stage Paint Correction should fix most of your Paint Correction needs!" />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/services/SinglePC" />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>

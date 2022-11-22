@@ -10,7 +10,7 @@ export default function PaintCorrectionGallery() {
     <section className='gallery-content-container'>
       <Head>
         <title>Dirt-Less Detailing | Engine Gallery</title>
-        <meta name="description" content="Engine Bay Photos • Engine bay images after our engine bay cleaning service!" />
+        <meta property="og:description" content="Engine Bay Photos • Engine bay images after our engine bay cleaning service!" />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/gallery/EngineGallery" />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>

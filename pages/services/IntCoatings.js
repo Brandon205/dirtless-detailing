@@ -15,7 +15,7 @@ export default function IntCoatings() {
     <section className="service-content-container bg-contact">
         <Head>
             <title>Dirt-Less Detailing | Interior Coatings</title>
-            <meta name="description" content="Have us coat the interior of your vehicle with our products to keep them clean and protected from day to day use." />
+            <meta property="og:description" content="Have us coat the interior of your vehicle with our products to keep them clean and protected from day to day use." />
             <link rel="canonical" href="https://www.dirtlessdetailing.com/services/IntCoatings" />
         </Head>
         <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>

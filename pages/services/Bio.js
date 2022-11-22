@@ -41,7 +41,7 @@ export default function Bio() {
     <section className='service-content-container'>
       <Head>
         <title>Dirt-Less Detailing | Biohazard Cleaning</title>
-        <meta name="description" content="Smokers Car • Biohazard Cleaning • Odor Removal - See what we can do if your car has unwanted odors or smells" />
+        <meta property="og:description" content="Smokers Car • Biohazard Cleaning • Odor Removal - See what we can do if your car has unwanted odors or smells" />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/services/Bio" />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>

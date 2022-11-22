@@ -15,7 +15,7 @@ export default function ExtCoatings() {
     <section className="service-content-container bg-contact">
         <Head>
             <title>Dirt-Less Detailing | Exterior Ceramic Coatings</title>
-            <meta name="description" content="Ensure that your vehicle is protected through us with our exterior Ceramic Coating services!" />
+            <meta property="og:description" content="Ensure that your vehicle is protected through us with our exterior Ceramic Coating services!" />
             <link rel="canonical" href="https://www.dirtlessdetailing.com/services/ExtCoatings" />
         </Head>
         <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>

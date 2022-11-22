@@ -41,7 +41,7 @@ export default function PDLWash() {
     <section className='service-content-container'>
       <Head>
         <title>Dirt-Less Detailing | Premium Wash</title>
-        <meta name="description" content="Our Premium Dirt-Less Wash will go above and beyond what our base tier offers, and is sure to get everything off your vehicles exterior!" />
+        <meta property="og:description" content="Our Premium Dirt-Less Wash will go above and beyond what our base tier offers, and is sure to get everything off your vehicles exterior!" />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/services/PDLWash" />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>

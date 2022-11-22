@@ -43,7 +43,7 @@ export default function TwoPC() {
     <section className='service-content-container'>
       <Head>
         <title>Dirt-Less Detailing | Two Stage</title>
-        <meta name="description" content="Our Two Stage Paint Correction is for vehicles that need to be in perfect condition, this service will get them there." />
+        <meta property="og:description" content="Our Two Stage Paint Correction is for vehicles that need to be in perfect condition, this service will get them there." />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/services/TwoPC" />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>

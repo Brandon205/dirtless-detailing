@@ -80,7 +80,7 @@ export default function Contact() {
     <section className="contact-container" id="contact">
         <Head>
             <title>Dirt-Less Detailing | Contact Us</title>
-            <meta name="description" content="Find out how to contact us here to ask any questions, or to set up an appointment!" />
+            <meta property="og:description" content="Find out how to contact us here to ask any questions, or to set up an appointment!" />
             <link rel="canonical" href="https://www.dirtlessdetailing.com/Contact" />
         </Head>
 

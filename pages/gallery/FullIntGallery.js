@@ -10,7 +10,7 @@ export default function FullIntGallery() {
     <section className='gallery-content-container'>
       <Head>
         <title>Dirt-Less Detailing | Full Interior Gallery</title>
-        <meta name="description" content="Check out some of the images before and after our Full Interior Cleaning to see the difference!" />
+        <meta property="og:description" content="Check out some of the images before and after our Full Interior Cleaning to see the difference!" />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/gallery/FullIntGallery" />
       </Head>
       <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
