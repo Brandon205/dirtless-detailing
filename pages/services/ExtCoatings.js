@@ -75,24 +75,24 @@ export default function ExtCoatings() {
                     <p>• We will wash the whole vehicle top to bottom, remove and tar/sap, and do an iron decontamination treatment.</p>
                     <p>• Then we will super lightly clay bar and/or polish the vehicle, if needed.</p>
                     <p>• Finally we will top with a Ceramic Booster, and apply an Aquapel windshield coating.</p>
-                    <p>• NOTE: This will qualify you for our 5 year warranty on your Ceramic Coating.</p>
+                    <p>• BONUS: This will qualify you for our 5 year warranty on your Ceramic Coating.</p>
                     <p className='bold text-xl mb-0'>Yearly Maintenance costs:</p>
                     <div className='maintenance-costs'>
-                        <p>SMALL - <span className='special-package'>$200</span></p>
-                        <p>MEDIUM - <span className='special-package'>$250</span></p>
-                        <p>LARGE - <span className='special-package'>$300</span></p>
+                        <p>SMALL <span className='special-package'>$200</span></p>
+                        <p>MEDIUM <span className='special-package'>$250</span></p>
+                        <p>LARGE <span className='special-package'>$300</span></p>
                     </div>
 
                     <h4 className='text-xl mb-0'>Monthly Maintenance:</h4>
                     <p>• We will wash the whole vehicle top to bottom, remove and tar/sap, and do an iron decontamination treatment.</p>
                     <p>• Then we will super lightly clay bar and/or polish the vehicle, if needed.</p>
                     <p>• Finally we will top with a Ceramic Booster, and apply an Aquapel windshield coating.</p>
-                    <p>• NOTE: This will qualify you for our Lifetime and 5 year warranty on your Ceramic Coating.</p>
+                    <p>• BONUS: This will qualify you for our Lifetime and 5 year warranty on your Ceramic Coating.</p>
                     <p className='bold text-xl mb-0'>Monthly Maintenance costs:</p>
                     <div className='maintenance-costs'>
-                        <p>SMALL - <span className='special-package'>$200</span></p>
-                        <p>MEDIUM - <span className='special-package'>$250</span></p>
-                        <p>LARGE - <span className='special-package'>$300</span></p>
+                        <p>SMALL <span className='special-package'>$200</span></p>
+                        <p>MEDIUM <span className='special-package'>$250</span></p>
+                        <p>LARGE <span className='special-package'>$300</span></p>
                     </div>
 
                 </div>
@@ -190,6 +190,10 @@ export default function ExtCoatings() {
                     </div>
                 </div>
             </div>
+
+            <h4>Interested? Get in touch with us here, and let us know what we can do to help you!</h4>
+            <a href="/Contact" className="quote-btn main-quote-btn">Contact Us</a>
+
         </div>
     </section>
   )
