@@ -90,10 +90,14 @@ export default function ExtCoatings() {
                     <p>• BONUS: This will qualify you for our Lifetime and 5 year warranty on your Ceramic Coating.</p>
                     <p className='bold text-xl mb-0'>Monthly Maintenance costs:</p>
                     <div className='maintenance-costs'>
-                        <p>SMALL <span className='special-package'>$200</span></p>
-                        <p>MEDIUM <span className='special-package'>$250</span></p>
-                        <p>LARGE <span className='special-package'>$300</span></p>
+                        <p>SMALL <span className='special-package'>$130</span></p>
+                        <p>MEDIUM <span className='special-package'>$160</span></p>
+                        <p>LARGE <span className='special-package'>$190</span></p>
                     </div>
+
+                    <h4 className='text-xl mb-0'>Recoating Options:</h4>
+                    <p>• Recoat trim <span className='special-package'>$100</span></p>
+                    <p>• Recoat wheel faces <span className='special-package'>$150</span></p>
 
                 </div>
 

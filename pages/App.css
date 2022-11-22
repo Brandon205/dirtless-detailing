@@ -600,6 +600,7 @@ input[type="range"] {
 }
 
 .coating-container {
+  padding: 0 1rem;
   gap: 3rem;
 }
 
@@ -1465,6 +1466,7 @@ hr {
 
   .coating-container {
     display: flex;
+    padding: 2rem;
   }
 
   .maintenance-costs {

@@ -2,11 +2,16 @@ import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 
+import { GiLeatherBoot, GiRolledCloth } from 'react-icons/gi';
+import { MdCleaningServices } from 'react-icons/md';
+import { FiSun } from 'react-icons/fi';
+import { BsClockHistory } from 'react-icons/bs';
+
 import cover from '../../public/imgs/pageimgs/interior/fullIntExCover.webp';
 
 export default function IntCoatings() {
   return (
-    <section className="service-content-container">
+    <section className="service-content-container bg-contact">
         <Head>
             <title>Dirt-Less Detailing | Interior Coatings</title>
             <meta name="description" content="Have us coat the interior of your vehicle with our products to keep them clean and protected from day to day use." />
@@ -18,6 +23,113 @@ export default function IntCoatings() {
         <div className="servicepage-header">
             <h1>Interior Coatings</h1>
             <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+        </div>
+
+        <div className="coating-container">
+            <div className="coating-left">
+                <h2 className='mb-0'>Fabric Coating:</h2>
+                <p className='package-desc subtext'>Further protect the fabric inside of your vehicle with a ceramic coating to keep a cleaner and newer looking interior.</p>
+                <div className='package-container'>
+                    <div className='package-details'>
+                        <GiRolledCloth className='package-icon' />
+                        <h4>All Interior Fabrics Covered</h4>
+                        <p className='subtext'>Apply IGL Fabric to all carpet and fabric.</p>
+                    </div>
+                    <div className='package-details'>
+                        <MdCleaningServices className='package-icon' />
+                        <h4>Easier to Clean<span className='special-package'>*</span></h4>
+                        <p className='subtext'>Fabric is one of the toughest things to clean in a vehicle, especially when things are stained. After this even liquid spills won't be close to as much of an issue.</p>
+                    </div>
+                    <div className='package-details'>
+                        <BsClockHistory className='package-icon' />
+                        <h4>Increase Longevity</h4>
+                        <p className='subtext'>All of the stains and dirt overtime does damage to the longevity of the materials, the IGL coating can take most of the hits instead of the fabric.</p>
+                    </div>
+                </div>
+
+                <h2 className='mb-0'>Leather Coating:</h2>
+                <p className='package-desc subtext'>Ceramic coat the leather inside of your vehicle to keep a cleaner, newer, and easier to clean interior.</p>
+                <div className='package-container'>
+                    <div className='package-details'>
+                        <GiLeatherBoot className='package-icon' />
+                        <h4>All Interior Leather Coated</h4>
+                        <p className='subtext'>Install IGL Ecocoat Leather to all leather.</p>
+                    </div>
+                    <div className='package-details'>
+                        <MdCleaningServices className='package-icon' />
+                        <h4>Even Easier to Clean<span className='special-package'>*</span></h4>
+                        <p className='subtext'>The coating we will put on will create a low surface tension layer that stops spills and other messes from bonding to the materials.</p>
+                    </div>
+                    <div className='package-details'>
+                        <FiSun className='package-icon' />
+                        <h4>Block Harmful Rays</h4>
+                        <p className='subtext'>Coating your interior can help block harmful UV rays that can eventually cause yellowing and fading on leather materials.</p>
+                    </div>
+                </div>
+
+                <div style={{marginTop: 100, marginBottom: 100}}>
+
+                    <h4 className='text-xl mb-0'>Recoating Options:</h4>
+                    <p>• Recoat fabrics <span className='special-package'>$75</span></p>
+                    <p>• Recoat leathers <span className='special-package'>$150</span></p>
+
+                </div>
+
+                <div>
+                    <h3 style={{fontSize: 2 + 'em'}}>Interior Coating FAQ</h3>
+                    <ul className='faq-ul'>
+                        <li className='faq-li'>How long does it last?</li>
+                        <li className='faq-p'>Both of our Interior Coatings typically last about 1 year.</li>
+                    </ul>
+                </div>
+            </div>
+            <div className="coating-right">
+
+                <div className='aside-container'>
+                    <div className='aside-container'>
+                        <div className='service-aside addons-aside'>
+                            <a href="/services/Addons" className='extra-addons'>Our Exterior Coatings</a>
+                            <hr className="contact-border" style={{marginBottom: 16}} />
+                            <div className="aside-links">
+                                <div className="addon-container">
+                                    <p className='addon-title'><a href="/services/ExtCoatings" className='text-blue'>Protect Ceramic Coating</a></p>
+                                    <p className='m-0 subtext'>Starting at: <span className="bold special-package">$1,000</span></p>
+                                    <p className="addon-subtext">Ceramic Coating package that covers and protects only the most essential parts of your vehicle.</p>
+                                </div>
+                                <div className="addon-container">
+                                    <p className='addon-title'><a href="/services/ExtCoatings" className='text-blue'>Protect<span className="bold special-package">+</span> Ceramic Coating</a></p>
+                                    <p className='m-0 subtext'>Starting at: <span className="bold special-package">$1,200</span></p>
+                                    <p className="addon-subtext">A Premium Ceramic Coating service to coat and protect your entire vehicle.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div>
+            <h3 className='pricing-title'>Our Interior Coating Pricing</h3>
+            <h4 className='subtext'><span className='special-package'>*</span>Pricing does not include an Interior Cleaning, which you will want to factor in before getting a coating.</h4>
+                <div className="pricing-container">
+                    <div className="pricing-card">
+                        <h4 className="size">FABRIC COATING</h4>
+                        <p className="example-vehicle">(Any Size Vehicle)</p>
+                        <p className="pricing-price">$75*</p>
+                    </div>
+                </div>
+                <div className="pricing-container">
+                    <div className="pricing-card">
+                        <h4 className="size">LEATHER COATING</h4>
+                        <p className="example-vehicle">(Any Size Vehicle)</p>
+                        <p className="pricing-price">$150*</p>
+                    </div>
+                </div>
+
+            <h4>Interested? Get in touch with us here, and let us know what we can do to help you!</h4>
+            <a href="/Contact" className="quote-btn main-quote-btn">Contact Us</a>
+
         </div>
     </section>
   )
