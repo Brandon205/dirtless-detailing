@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 
 import { FaCar } from 'react-icons/fa';
 import { BiCar } from 'react-icons/bi';
@@ -70,7 +72,7 @@ export default function ExtCoatings() {
 
                 <div>
                     <h3 className='pricing-title'>Our Ceramic Coating Pricing</h3>
-                    <h4 className='subtext'>*Pricing already includes the Single Stage Paint Correction that we do before the coating.</h4>
+                    <h4 className='subtext'><span className='special-package'>*</span>Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</h4>
                     <div className="pricing-container">
                         <div className="pricing-card">
                             <h4 className="size">SMALL</h4>
@@ -143,18 +145,18 @@ export default function ExtCoatings() {
                 <div className='aside-container'>
                     <div className='aside-container'>
                         <div className='service-aside addons-aside'>
-                            <a href="/services/Addons" className='extra-addons'>Our Other Coatings</a>
+                            <a href="/services/Addons" className='extra-addons'>Our Interior Coatings</a>
                             <hr className="contact-border" style={{marginBottom: 16}} />
                             <div className="aside-links">
-                                <div className="addon-container">
-                                    <p className='addon-title'><a href="/services/IntCoatings" className='text-blue'>Leather Coating</a></p>
-                                    <p className='m-0'><span className="bold special-package">$150</span></p>
-                                    <p className="addon-subtext">We will treat and protect all leathers in the vehicle.</p>
-                                </div>
                                 <div className="addon-container">
                                     <p className='addon-title'><a href="/services/IntCoatings" className='text-blue'>Fabric Coating</a></p>
                                     <p className='m-0'><span className="bold special-package">$75</span></p>
                                     <p className="addon-subtext">We will treat and protect all fabrics in the vehicle.</p>
+                                </div>
+                                <div className="addon-container">
+                                    <p className='addon-title'><a href="/services/IntCoatings" className='text-blue'>Leather Coating</a></p>
+                                    <p className='m-0'><span className="bold special-package">$150</span></p>
+                                    <p className="addon-subtext">We will treat and protect all leathers in the vehicle.</p>
                                 </div>
                             </div>
                         </div>
@@ -164,12 +166,12 @@ export default function ExtCoatings() {
                 <div className='aside-container'>
                     <div className='aside-container'>
                         <div className='service-aside addons-aside'>
-                            <h4 className='text-xl mb-0'>Monthly Maintenance:</h4>
+                            <h4 className='text-xl mb-0 mt-0'>Monthly Maintenance:</h4>
                             <p>• 2 bucket wash top to bottom.</p>
                             <p>• Clean wheels, wheel barrels, and wheel wells.</p>
                             <p>• Remove tar/sap, decontaminate iron, and use clay bar as needed.</p>
                             <p>• Dry with Ceramic Spray, and dress vehicle.</p>
-                            <p>• BONUS: This will qualify you for our Lifetime and 5 year warranty on your Ceramic Coating.</p>
+                            <p>• BONUS: Keeping up with this will qualify you for our Lifetime and 5 year warranty on your Ceramic Coating.</p>
                             <p className='bold text-xl mb-0'>Monthly Maintenance costs:</p>
                             <div className='maintenance-costs'>
                                 <p>SMALL <span className='special-package'>$130</span></p>
@@ -183,11 +185,11 @@ export default function ExtCoatings() {
                 <div className='aside-container'>
                     <div className='aside-container'>
                         <div className='service-aside addons-aside'>
-                            <h4 className='text-xl mb-0'>Yearly Maintenance:</h4>
+                            <h4 className='text-xl mb-0 mt-0'>Yearly Maintenance:</h4>
                             <p>• We will wash the whole vehicle top to bottom, remove and tar/sap, and do an iron decontamination treatment.</p>
                             <p>• Then we will super lightly clay bar and/or polish the vehicle, if needed.</p>
                             <p>• Finally we will top with a Ceramic Booster, and apply an Aquapel windshield coating.</p>
-                            <p>• BONUS: This will qualify you for our 5 year warranty on your Ceramic Coating.</p>
+                            <p>• BONUS: Keeping up with this will qualify you for our 5 year warranty on your Ceramic Coating.</p>
                             <p className='bold text-xl mb-0'>Yearly Maintenance costs:</p>
                             <div className='maintenance-costs'>
                                 <p>SMALL <span className='special-package'>$200</span></p>
@@ -201,7 +203,7 @@ export default function ExtCoatings() {
                 <div className='aside-container'>
                     <div className='aside-container'>
                         <div className='service-aside addons-aside'>
-                            <h4 className='text-xl mb-0'>Recoating Options:</h4>
+                            <h4 className='text-xl mb-0 mt-0'>Recoating Options:</h4>
                             <p>• Recoat trim <span className='special-package'>$100</span></p>
                             <p>• Recoat wheel faces <span className='special-package'>$150</span></p>
                         </div>
@@ -210,8 +212,8 @@ export default function ExtCoatings() {
 
                 <div className='aside-container'>
                     <div className='aside-container'>
-                        <div className='service-aside addons-aside'>
-                            <h4>Interested? Get in touch with us here, and let us know what we can do to help you!</h4>
+                        <div className='service-aside addons-aside contact-aside'>
+                            <h4 className='mt-0'>Interested? Get in touch with us here, and let us know what we can do to help you!</h4>
                             <a href="/Contact" className="quote-btn side-quote-btn">Contact Us</a>
                         </div>
                     </div>
@@ -219,7 +221,9 @@ export default function ExtCoatings() {
             </div>
         </div>
         <div style={{paddingBottom: 25}}>
-            <Image src={kenzo} style={{borderRadius: 20}} alt="igl coverage circle" placeholder='blur' />
+            <Zoom>
+                <Image src={kenzo} style={{borderRadius: 20}} alt="igl coverage circle" placeholder='blur' />
+            </Zoom>
         </div>
 
     </section>

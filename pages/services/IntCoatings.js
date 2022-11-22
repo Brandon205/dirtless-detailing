@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 
 import { GiLeatherBoot, GiRolledCloth } from 'react-icons/gi';
 import { MdCleaningServices } from 'react-icons/md';
@@ -44,7 +46,7 @@ export default function IntCoatings() {
                     <div className='package-details'>
                         <BsClockHistory className='package-icon' />
                         <h4>Increase Longevity</h4>
-                        <p className='subtext'>All of the stains and dirt overtime does damage to the longevity of the materials, the IGL coating can take most of the hits instead of the fabric.</p>
+                        <p className='subtext'>All of the stains and dirt overtime does damage to the longevity of any materials. With this the IGL coating can take most of the hits instead of the fabric.</p>
                     </div>
                 </div>
 
@@ -54,7 +56,7 @@ export default function IntCoatings() {
                     <div className='package-details'>
                         <GiLeatherBoot className='package-icon' />
                         <h4>All Interior Leather Coated</h4>
-                        <p className='subtext'>Install IGL Ecocoat Leather to all leather.</p>
+                        <p className='subtext'>Install IGL Ecocoat Leather to all leather in the vehicle.</p>
                     </div>
                     <div className='package-details'>
                         <MdCleaningServices className='package-icon' />
@@ -86,14 +88,14 @@ export default function IntCoatings() {
 
                 </div>
 
-                <div>
+                <div className='coating-faq'>
                     <h3 style={{fontSize: 2 + 'em'}}>Interior Coating FAQ</h3>
                     <ul className='faq-ul'>
                         <li className='faq-li'>How long does it last?</li>
                         <li className='faq-p'>Both of our Interior Coatings typically last about 1 year.</li>
 
                         <li className='faq-li'>Is there anything I need to do to preserve the coating?</li>
-                        <li className='faq-p'>Sadly there are no maintenance products for interior coatings out there. You should be able to keep cleaning your car like normal and have us reapply just about every year.</li>
+                        <li className='faq-p'>Sadly there are no maintenance products for interior coatings out there. You can either go through us for interior cleaning, or you should be able to clean your car like normal. We suggest having us reapply a coating yearly when it wears off.</li>
                     </ul>
                 </div>
             </div>
@@ -123,7 +125,7 @@ export default function IntCoatings() {
                 <div className='aside-container'>
                     <div className='aside-container'>
                         <div className='service-aside addons-aside'>
-                            <h4 className='text-xl mb-0'>Monthly Maintenance:</h4>
+                            <h4 className='text-xl mb-0 mt-0'>Monthly Maintenance:</h4>
                             <p>• Blow out the whole interior with a Tornador.</p>
                             <p>• Vacuum entire vehicle.</p>
                             <p>• Clean out the door jambs.</p>
@@ -142,7 +144,7 @@ export default function IntCoatings() {
                 <div className='aside-container'>
                     <div className='aside-container'>
                         <div className='service-aside addons-aside'>
-                            <h4 className='text-xl mb-0'>Recoating Options:</h4>
+                            <h4 className='text-xl mb-0 mt-0'>Recoating Options:</h4>
                             <p>• Recoat fabrics <span className='special-package'>$75</span></p>
                             <p>• Recoat leathers <span className='special-package'>$150</span></p>
                         </div>
@@ -151,8 +153,8 @@ export default function IntCoatings() {
 
                 <div className='aside-container'>
                     <div className='aside-container'>
-                        <div className='service-aside addons-aside'>
-                            <h4>Interested? Get in touch with us here, and let us know what we can do to help you!</h4>
+                        <div className='service-aside addons-aside contact-aside'>
+                            <h4 className='mt-0'>Interested? Get in touch with us here, and let us know what we can do to help you!</h4>
                             <a href="/Contact" className="quote-btn side-quote-btn">Contact Us</a>
                         </div>
                     </div>
@@ -164,7 +166,9 @@ export default function IntCoatings() {
 
         </div>
         <div style={{paddingBottom: 25}}>
-            <Image src={iglCircle} style={{borderRadius: 50}} alt="igl coverage circle" placeholder='blur' />
+            <Zoom>
+                <Image src={iglCircle} style={{borderRadius: 50}} alt="igl coverage circle" placeholder='blur' />
+            </Zoom>
         </div>
 
     </section>
