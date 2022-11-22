@@ -69,6 +69,19 @@ export default function IntCoatings() {
 
                 <div style={{marginTop: 100, marginBottom: 100}}>
 
+                    <h4 className='text-xl mb-0'>Monthly Maintenance:</h4>
+                    <p>• Blow out the whole interior with a Tornador.</p>
+                    <p>• Vacuum entire vehicle.</p>
+                    <p>• Clean out the door jambs.</p>
+                    <p>• Wipe the whole interior down.</p>
+                    <p>• Clean windows and floor mats.</p>
+                    <p className='bold text-xl mb-0'>Monthly Maintenance costs:</p>
+                    <div className='maintenance-costs'>
+                        <p>SMALL <span className='special-package'>$130</span></p>
+                        <p>MEDIUM <span className='special-package'>$160</span></p>
+                        <p>LARGE <span className='special-package'>$190</span></p>
+                    </div>
+
                     <h4 className='text-xl mb-0'>Recoating Options:</h4>
                     <p>• Recoat fabrics <span className='special-package'>$75</span></p>
                     <p>• Recoat leathers <span className='special-package'>$150</span></p>

@@ -120,10 +120,10 @@ export default function MyApp({ Component, pageProps }) {
                                     <div className="nav-div">
                                         <h4 className='sub-menu-header'>CERAMIC COATING</h4>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <a href="/services/ExtCoatings" className='menu-link'><AiOutlineCar /> Exterior Ceramic Coating</a>
+                                            <a href="/services/IntCoatings" className='menu-link'><GiCarSeat /> Interior Coating</a>
                                         </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <a href="/services/IntCoatings" className='menu-link'><GiCarSeat /> Interior Coating</a>
+                                            <a href="/services/ExtCoatings" className='menu-link'><AiOutlineCar /> Exterior Ceramic Coating</a>
                                         </li>
                                         <hr className="nav-hr" />
                                         <h4 className='sub-menu-header'>INTERIOR CLEANING SERVICES</h4>

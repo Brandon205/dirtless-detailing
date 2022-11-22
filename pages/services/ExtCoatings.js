@@ -84,9 +84,10 @@ export default function ExtCoatings() {
                     </div>
 
                     <h4 className='text-xl mb-0'>Monthly Maintenance:</h4>
-                    <p>• We will wash the whole vehicle top to bottom, remove and tar/sap, and do an iron decontamination treatment.</p>
-                    <p>• Then we will super lightly clay bar and/or polish the vehicle, if needed.</p>
-                    <p>• Finally we will top with a Ceramic Booster, and apply an Aquapel windshield coating.</p>
+                    <p>• 2 bucket wash top to bottom.</p>
+                    <p>• Clean wheels, wheel barrels, and wheel wells.</p>
+                    <p>• Remove tar/sap, decontaminate iron, and use clay bar as needed.</p>
+                    <p>• Dry with Ceramic Spray, and dress vehicle.</p>
                     <p>• BONUS: This will qualify you for our Lifetime and 5 year warranty on your Ceramic Coating.</p>
                     <p className='bold text-xl mb-0'>Monthly Maintenance costs:</p>
                     <div className='maintenance-costs'>
