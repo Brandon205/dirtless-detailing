@@ -320,6 +320,7 @@ export default function Contact() {
                         <input type="checkbox" name="protect+" id='protect+' className='checkbox-input' />
                         <label htmlFor="protect+" className='checkbox-label'>Protect<span className='special-package'>+</span></label>
                     </div>
+                    <hr className="contact-border" />
 
                     <p className="form-section-heading">Interior Coatings:</p>
                     <div>
@@ -329,6 +330,7 @@ export default function Contact() {
                         <input type="checkbox" name="leather" id='leather' className='checkbox-input' />
                         <label htmlFor="leather" className='checkbox-label'>Leather</label>
                     </div>
+                    <hr className="contact-border" />
 
                     <p className="form-section-heading">Re-coating options:</p>
                     <div>
@@ -366,14 +368,16 @@ export default function Contact() {
                         <input type="checkbox" id='bio' name="bio" className='checkbox-input' />
                         <label htmlFor="bio" className='checkbox-label'>Biohazard Cleaning</label>
                     </div>
+                    <hr className="contact-border" />
 
                     <p className="form-section-heading">Interior Add-ons:</p>
-                        <div>
-                            <input type="checkbox" id='headliners' name="headliners" className='checkbox-input' />
-                            <label htmlFor="headliners" className='checkbox-label'>Headliners</label>
-                            <input type="checkbox" id='ozone' name="ozone" className='checkbox-input' />
-                            <label htmlFor="ozone" className='checkbox-label'>Ozone Treatment</label>
-                        </div>
+                    <div>
+                        <input type="checkbox" id='headliners' name="headliners" className='checkbox-input' />
+                        <label htmlFor="headliners" className='checkbox-label'>Headliners</label>
+                        <input type="checkbox" id='ozone' name="ozone" className='checkbox-input' />
+                        <label htmlFor="ozone" className='checkbox-label'>Ozone Treatment</label>
+                    </div>
+                    <hr className="contact-border" />
 
                     <p className="form-section-heading">Vehicle Dirtiness</p>
                     <input type="range" name="dirtiness" id="dirtiness" min="1" max="5" step="1" list="dirtiness-tickmarks" />
@@ -404,6 +408,7 @@ export default function Contact() {
                         <input type="checkbox" id='premium dirtlessWash' name="premium dirtlessWash" className='checkbox-input' />
                         <label htmlFor="premium dirtlessWash" className='checkbox-label'>Premium Dirt-Less Wash</label>
                     </div>
+                    <hr className="contact-border" />
 
                     <p className="form-section-heading">Exterior Add-ons:</p>
                     <div>
@@ -433,6 +438,7 @@ export default function Contact() {
                         <input type="checkbox" id='twoPC' name="twoPC" className='checkbox-input' />
                         <label htmlFor="twoPC" className='checkbox-label' style={{marginBottom: 16}}>Two Stage Paint Correction</label>
                     </div>
+                    <hr className="contact-border" />
 
                     <p className="form-section-heading">Paint Correction Add-ons:</p>
                     <div>
