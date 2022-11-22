@@ -20,14 +20,14 @@ export default function Contact() {
             "Make": e.target[4].value,
             "Model": e.target[5].value,
             "Message": e.target[6].value,
-            "Protect Package": e.target[7].checked,
-            "Protect+ Package": e.target[8].checked,
-            "Fabric Coating": e.target[9].checked,
-            "Leather Coating": e.target[10].checked,
-            "Fabric re-coating": e.target[11].checked,
-            "Trim re-coating": e.target[12].checked,
-            "Leather re-coating": e.target[13].checked,
-            "Wheel Faces re-coating": e.target[14].checked,
+            "Protect Package": e.target[7].checked ? 'Yes': 'No',
+            "Protect+ Package": e.target[8].checked ? 'Yes': 'No',
+            "Fabric Coating": e.target[9].checked ? 'Yes': 'No',
+            "Leather Coating": e.target[10].checked ? 'Yes': 'No',
+            "Fabric re-coating": e.target[11].checked ? 'Yes': 'No',
+            "Trim re-coating": e.target[12].checked ? 'Yes': 'No',
+            "Leather re-coating": e.target[13].checked ? 'Yes': 'No',
+            "Wheel Faces re-coating": e.target[14].checked ? 'Yes': 'No',
             "Combo": e.target[15].checked ? 'Yes': 'No',
             "Full Interior With Extraction": e.target[16].checked ? 'Yes': 'No',
             "Full Interior Without Extraction": e.target[17].checked ? 'Yes': 'No',
@@ -332,17 +332,17 @@ export default function Contact() {
 
                     <p className="form-section-heading">Re-coating options:</p>
                     <div>
-                        <input type="checkbox" name="fabric" id='fabric' className='checkbox-input' />
-                        <label htmlFor="fabric" className='checkbox-label'>Fabric</label>
+                        <input type="checkbox" name="fabric-recoat" id='fabric-recoat' className='checkbox-input' />
+                        <label htmlFor="fabric-recoat" className='checkbox-label'>Fabric</label>
 
-                        <input type="checkbox" name="fabric" id='fabric' className='checkbox-input' />
-                        <label htmlFor="fabric" className='checkbox-label'>Trim</label>
+                        <input type="checkbox" name="trim-recoat" id='trim-recoat' className='checkbox-input' />
+                        <label htmlFor="trim-recoat" className='checkbox-label'>Trim</label>
 
-                        <input type="checkbox" name="leather" id='leather' className='checkbox-input' />
-                        <label htmlFor="leather" className='checkbox-label'>Leather</label>
+                        <input type="checkbox" name="leather-recoat" id='leather-recoat' className='checkbox-input' />
+                        <label htmlFor="leather-recoat" className='checkbox-label'>Leather</label>
 
-                        <input type="checkbox" name="leather" id='leather' className='checkbox-input' />
-                        <label htmlFor="leather" className='checkbox-label'>Wheel Faces</label>
+                        <input type="checkbox" name="wheel-recoat" id='wheel-recoat' className='checkbox-input' />
+                        <label htmlFor="wheel-recoat" className='checkbox-label'>Wheel Faces</label>
                     </div>
                 </div>
 
@@ -439,6 +439,7 @@ export default function Contact() {
                         <input type="checkbox" id='correctionGlass' name="correctionGlass" className='checkbox-input' />
                         <label htmlFor="correctionGlass" className='checkbox-label'>Glass Polishing</label>
                     </div>
+                    <input type="hidden" name="_gotcha" style={{display: 'none !important'}} />
                 </div>
 
                 <button className='submit-button'>Submit</button>
