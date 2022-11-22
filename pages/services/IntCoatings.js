@@ -67,24 +67,24 @@ export default function IntCoatings() {
                     </div>
                 </div>
 
-                <div style={{marginTop: 100, marginBottom: 100}}>
-
-                    <h4 className='text-xl mb-0'>Monthly Maintenance:</h4>
-                    <p>• Blow out the whole interior with a Tornador.</p>
-                    <p>• Vacuum entire vehicle.</p>
-                    <p>• Clean out the door jambs.</p>
-                    <p>• Wipe the whole interior down.</p>
-                    <p>• Clean windows and floor mats.</p>
-                    <p className='bold text-xl mb-0'>Monthly Maintenance costs:</p>
-                    <div className='maintenance-costs'>
-                        <p>SMALL <span className='special-package'>$130</span></p>
-                        <p>MEDIUM <span className='special-package'>$160</span></p>
-                        <p>LARGE <span className='special-package'>$190</span></p>
+                <div>
+                    <h3 className='pricing-title'>Our Interior Coating Pricing</h3>
+                    <h4 className='subtext'><span className='special-package'>*</span>Pricing does not include an Interior Cleaning, which you will want to factor in before getting a coating.</h4>
+                    <div className='pricing-container'>
+                        <div className="pricing-card">
+                            <h4 className="size">FABRIC COATING</h4>
+                            <p className="example-vehicle">(Any Size Vehicle)</p>
+                            <p className="pricing-price">$75</p>
+                        </div>
+                        <div className="pricing-card">
+                            <h4 className="size">LEATHER COATING</h4>
+                            <p className="example-vehicle">(Any Size Vehicle)</p>
+                            <p className="pricing-price">$150</p>
+                        </div>
                     </div>
 
-                    <h4 className='text-xl mb-0'>Recoating Options:</h4>
-                    <p>• Recoat fabrics <span className='special-package'>$75</span></p>
-                    <p>• Recoat leathers <span className='special-package'>$150</span></p>
+                    <h4>Interested? Get in touch with us here, and let us know what we can do to help you!</h4>
+                    <a href="/Contact" className="quote-btn main-quote-btn">Contact Us</a>
 
                 </div>
 
@@ -119,31 +119,39 @@ export default function IntCoatings() {
                     </div>
                 </div>
 
+                <div className='aside-container'>
+                    <div className='aside-container'>
+                        <div className='service-aside addons-aside'>
+                            <h4 className='text-xl mb-0'>Monthly Maintenance:</h4>
+                            <p>• Blow out the whole interior with a Tornador.</p>
+                            <p>• Vacuum entire vehicle.</p>
+                            <p>• Clean out the door jambs.</p>
+                            <p>• Wipe the whole interior down.</p>
+                            <p>• Clean windows and floor mats.</p>
+                            <p className='bold text-xl mb-0'>Monthly Maintenance costs:</p>
+                            <div className='maintenance-costs'>
+                                <p>SMALL <span className='special-package'>$130</span></p>
+                                <p>MEDIUM <span className='special-package'>$160</span></p>
+                                <p>LARGE <span className='special-package'>$190</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='aside-container'>
+                    <div className='aside-container'>
+                        <div className='service-aside addons-aside'>
+                            <h4 className='text-xl mb-0'>Recoating Options:</h4>
+                            <p>• Recoat fabrics <span className='special-package'>$75</span></p>
+                            <p>• Recoat leathers <span className='special-package'>$150</span></p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </div>
-
-        <div>
-            <h3 className='pricing-title'>Our Interior Coating Pricing</h3>
-            <h4 className='subtext'><span className='special-package'>*</span>Pricing does not include an Interior Cleaning, which you will want to factor in before getting a coating.</h4>
-                <div className="pricing-container">
-                    <div className="pricing-card">
-                        <h4 className="size">FABRIC COATING</h4>
-                        <p className="example-vehicle">(Any Size Vehicle)</p>
-                        <p className="pricing-price">$75*</p>
-                    </div>
-                </div>
-                <div className="pricing-container">
-                    <div className="pricing-card">
-                        <h4 className="size">LEATHER COATING</h4>
-                        <p className="example-vehicle">(Any Size Vehicle)</p>
-                        <p className="pricing-price">$150*</p>
-                    </div>
-                </div>
-
-            <h4>Interested? Get in touch with us here, and let us know what we can do to help you!</h4>
-            <a href="/Contact" className="quote-btn main-quote-btn">Contact Us</a>
 
         </div>
+
     </section>
   )
 }

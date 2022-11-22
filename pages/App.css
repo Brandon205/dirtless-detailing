@@ -600,7 +600,7 @@ input[type="range"] {
 }
 
 .coating-container {
-  padding: 0 1rem;
+  padding: 0 1rem 2rem 1rem;
   gap: 3rem;
 }
 
@@ -619,11 +619,6 @@ input[type="range"] {
 
 .mb-0 {
   margin-bottom: 0;
-}
-
-.coating-left {
-  text-align: left;
-  padding: 0 1rem;
 }
 
 .package-container {
@@ -645,8 +640,8 @@ input[type="range"] {
 
 .maintenance-costs {
   display: flex;
+  justify-content: center;
   gap: 2rem;
-  text-align: center;
 }
 
 .checklist {
@@ -1208,7 +1203,6 @@ hr {
 }
 
 .pricing-container {
-  width: 80vw;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -1459,20 +1453,6 @@ hr {
     margin: 0 auto 1rem auto;
   }
 
-  .package-container {
-    grid-auto-flow: column;
-    gap: 3rem;
-  }
-
-  .coating-container {
-    display: flex;
-    padding: 2rem;
-  }
-
-  .maintenance-costs {
-    padding-left: 2rem;
-  }
-
   .service-aside {
     display: flex;
   }
@@ -1583,11 +1563,35 @@ hr {
     font-size: 2.5em;
   }
 
+  .maintenance-costs {
+    padding-left: 2rem;
+    justify-content: center;
+  }
+
+  .coating-container {
+    display: flex;
+    flex: 1fr
+  }
+
+  .coating-left {
+    text-align: left;
+  }
+
+  .package-container {
+    grid-auto-flow: column;
+  }
+
   .gallery-container {
     column-count: 4;
   }
 
   .servicepage-header {
-    margin: 0 auto 45vh auto
+    margin: 0 auto 42vh auto
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .servicepage-header {
+    margin: 0 auto 45vh auto;
   }
 }

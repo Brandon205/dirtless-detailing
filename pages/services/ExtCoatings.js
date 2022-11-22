@@ -67,38 +67,56 @@ export default function ExtCoatings() {
                     </div>
                 </div>
 
-                <div style={{marginTop: 100, marginBottom: 100}}>
-                    <h3 className='text-xl mb-0'>Maintenance Services</h3>
-                    <p className="subtext">Services by us either monthly or yearly to maintain the ceramic coat and keep your car clean. For specifics on how to maintain your own car check the FAQ below.</p>
-
-                    <h4 className='text-xl mb-0'>Yearly Maintenance:</h4>
-                    <p>• We will wash the whole vehicle top to bottom, remove and tar/sap, and do an iron decontamination treatment.</p>
-                    <p>• Then we will super lightly clay bar and/or polish the vehicle, if needed.</p>
-                    <p>• Finally we will top with a Ceramic Booster, and apply an Aquapel windshield coating.</p>
-                    <p>• BONUS: This will qualify you for our 5 year warranty on your Ceramic Coating.</p>
-                    <p className='bold text-xl mb-0'>Yearly Maintenance costs:</p>
-                    <div className='maintenance-costs'>
-                        <p>SMALL <span className='special-package'>$200</span></p>
-                        <p>MEDIUM <span className='special-package'>$250</span></p>
-                        <p>LARGE <span className='special-package'>$300</span></p>
+                <div>
+                    <h3 className='pricing-title'>Our Ceramic Coating Pricing</h3>
+                    <h4 className='subtext'>*Pricing already includes the Single Stage Paint Correction that we do before the coating.</h4>
+                    <div className="pricing-container">
+                        <div className="pricing-card">
+                            <h4 className="size">SMALL</h4>
+                            <p className="example-vehicle">(2 Door Coupes, Single and Extended Cabs)</p>
+                            <div className='fullInt-pricing-container'>
+                                <div className='pricing-outline outline-padding'>
+                                    <p className='white-text'>Protect</p>
+                                    <p className="pricing-price">$1,000</p>
+                                </div>
+                                <div className='pricing-outline outline-padding'>
+                                    <p className='white-text'>Protect<span className="special-package">+</span></p>
+                                    <p className="pricing-price">$1,500</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="pricing-card">
+                            <h4 className="size">MEDIUM</h4>
+                            <p className="example-vehicle">(4 Door Sedans, 4 Door Trucks, Smaller SUV's)</p>
+                            <div className='fullInt-pricing-container'>
+                                <div className='pricing-outline outline-padding'>
+                                    <p className='white-text'>Protect</p>
+                                    <p className="pricing-price">$1,200</p>
+                                </div>
+                                <div className='pricing-outline outline-padding'>
+                                    <p className='white-text'>Protect<span className="special-package">+</span></p>
+                                    <p className="pricing-price">$1,700</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="pricing-card">
+                            <h4 className="size">LARGE</h4>
+                            <p className="example-vehicle">(All Large SUV's and any 3 Row SUV's)</p>
+                            <div className='fullInt-pricing-container'>
+                                <div className='pricing-outline outline-padding'>
+                                    <p className='white-text'>Protect</p>
+                                    <p className="pricing-price">$1,400</p>
+                                </div>
+                                <div className='pricing-outline outline-padding'>
+                                    <p className='white-text'>Protect<span className="special-package">+</span></p>
+                                    <p className="pricing-price">$1,900</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <h4 className='text-xl mb-0'>Monthly Maintenance:</h4>
-                    <p>• 2 bucket wash top to bottom.</p>
-                    <p>• Clean wheels, wheel barrels, and wheel wells.</p>
-                    <p>• Remove tar/sap, decontaminate iron, and use clay bar as needed.</p>
-                    <p>• Dry with Ceramic Spray, and dress vehicle.</p>
-                    <p>• BONUS: This will qualify you for our Lifetime and 5 year warranty on your Ceramic Coating.</p>
-                    <p className='bold text-xl mb-0'>Monthly Maintenance costs:</p>
-                    <div className='maintenance-costs'>
-                        <p>SMALL <span className='special-package'>$130</span></p>
-                        <p>MEDIUM <span className='special-package'>$160</span></p>
-                        <p>LARGE <span className='special-package'>$190</span></p>
-                    </div>
-
-                    <h4 className='text-xl mb-0'>Recoating Options:</h4>
-                    <p>• Recoat trim <span className='special-package'>$100</span></p>
-                    <p>• Recoat wheel faces <span className='special-package'>$150</span></p>
+                    <h4>Interested? Get in touch with us here, and let us know what we can do to help you!</h4>
+                    <a href="/Contact" className="quote-btn main-quote-btn">Contact Us</a>
 
                 </div>
 
@@ -145,61 +163,55 @@ export default function ExtCoatings() {
                     </div>
                 </div>
 
-            </div>
-        </div>
+                <div className='aside-container'>
+                    <div className='aside-container'>
+                        <div className='service-aside addons-aside'>
+                            <h4 className='text-xl mb-0'>Monthly Maintenance:</h4>
+                            <p>• 2 bucket wash top to bottom.</p>
+                            <p>• Clean wheels, wheel barrels, and wheel wells.</p>
+                            <p>• Remove tar/sap, decontaminate iron, and use clay bar as needed.</p>
+                            <p>• Dry with Ceramic Spray, and dress vehicle.</p>
+                            <p>• BONUS: This will qualify you for our Lifetime and 5 year warranty on your Ceramic Coating.</p>
+                            <p className='bold text-xl mb-0'>Monthly Maintenance costs:</p>
+                            <div className='maintenance-costs'>
+                                <p>SMALL <span className='special-package'>$130</span></p>
+                                <p>MEDIUM <span className='special-package'>$160</span></p>
+                                <p>LARGE <span className='special-package'>$190</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <div>
-            <h3 className='pricing-title'>Our Ceramic Coating Pricing</h3>
-            <h4 className='subtext'>*Pricing already includes the Single Stage Paint Correction that we do before the coating.</h4>
-            <div className="pricing-container">
-                <div className="pricing-card">
-                    <h4 className="size">SMALL</h4>
-                    <p className="example-vehicle">(2 Door Coupes, Single and Extended Cabs)</p>
-                    <div className='fullInt-pricing-container'>
-                        <div className='pricing-outline outline-padding'>
-                            <p className='white-text'>Protect</p>
-                            <p className="pricing-price">$1,000</p>
-                        </div>
-                        <div className='pricing-outline outline-padding'>
-                            <p className='white-text'>Protect<span className="special-package">+</span></p>
-                            <p className="pricing-price">$1,500</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="pricing-card">
-                    <h4 className="size">MEDIUM</h4>
-                    <p className="example-vehicle">(4 Door Sedans, 4 Door Trucks, Smaller SUV's)</p>
-                    <div className='fullInt-pricing-container'>
-                        <div className='pricing-outline outline-padding'>
-                            <p className='white-text'>Protect</p>
-                            <p className="pricing-price">$1,200</p>
-                        </div>
-                        <div className='pricing-outline outline-padding'>
-                            <p className='white-text'>Protect<span className="special-package">+</span></p>
-                            <p className="pricing-price">$1,700</p>
+                <div className='aside-container'>
+                    <div className='aside-container'>
+                        <div className='service-aside addons-aside'>
+                            <h4 className='text-xl mb-0'>Yearly Maintenance:</h4>
+                            <p>• We will wash the whole vehicle top to bottom, remove and tar/sap, and do an iron decontamination treatment.</p>
+                            <p>• Then we will super lightly clay bar and/or polish the vehicle, if needed.</p>
+                            <p>• Finally we will top with a Ceramic Booster, and apply an Aquapel windshield coating.</p>
+                            <p>• BONUS: This will qualify you for our 5 year warranty on your Ceramic Coating.</p>
+                            <p className='bold text-xl mb-0'>Yearly Maintenance costs:</p>
+                            <div className='maintenance-costs'>
+                                <p>SMALL <span className='special-package'>$200</span></p>
+                                <p>MEDIUM <span className='special-package'>$250</span></p>
+                                <p>LARGE <span className='special-package'>$300</span></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className="pricing-card">
-                    <h4 className="size">LARGE</h4>
-                    <p className="example-vehicle">(All Large SUV's and any 3 Row SUV's)</p>
-                    <div className='fullInt-pricing-container'>
-                        <div className='pricing-outline outline-padding'>
-                            <p className='white-text'>Protect</p>
-                            <p className="pricing-price">$1,400</p>
-                        </div>
-                        <div className='pricing-outline outline-padding'>
-                            <p className='white-text'>Protect<span className="special-package">+</span></p>
-                            <p className="pricing-price">$1,900</p>
+
+                <div className='aside-container'>
+                    <div className='aside-container'>
+                        <div className='service-aside addons-aside'>
+                            <h4 className='text-xl mb-0'>Recoating Options:</h4>
+                            <p>• Recoat trim <span className='special-package'>$100</span></p>
+                            <p>• Recoat wheel faces <span className='special-package'>$150</span></p>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <h4>Interested? Get in touch with us here, and let us know what we can do to help you!</h4>
-            <a href="/Contact" className="quote-btn main-quote-btn">Contact Us</a>
-
         </div>
+
     </section>
   )
 }
