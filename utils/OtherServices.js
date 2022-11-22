@@ -23,7 +23,7 @@ export default function OtherServices() {
         </div>
         <section className="otherservices-container">
             <div className="service-card">
-                <Image src={ceramicInt} alt="Vehicle after a Two Stage Paint Correction" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
+                <Image src={ceramicInt} alt="Vehicle after a Two Stage Paint Correction" className='otherservices-image' layout='responsive' height={450} width={450} loading='lazy' placeholder='blur' quality={1} />
                 <div className="otherservices-desc">
                     <div>
                         <a href='/services/TwoPC' className='service-heading-link'>Interior Coatings</a>
@@ -36,7 +36,7 @@ export default function OtherServices() {
             </div>
 
             <div className="service-card">
-                <Image src={ceramicExt} alt="Vehicle after a Single Stage Paint Correction" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
+                <Image src={ceramicExt} alt="Vehicle after a Single Stage Paint Correction" className='otherservices-image' layout='responsive' height={450} width={450} loading='lazy' placeholder='blur' quality={1} />
                 <div className="otherservices-desc">
                     <div>
                         <a href='/services/SinglePC' className='service-heading-link'>Exterior Ceramic Coatings</a>
@@ -49,7 +49,7 @@ export default function OtherServices() {
             </div>
 
             <div className="service-card">
-                <Image src={ceramicGallery} alt="" className='otherservices-image' loading='lazy' objectFit='cover' placeholder='blur' quality={1} />
+                <Image src={ceramicGallery} alt="van after ceramic coating" className='otherservices-image' layout='responsive' height={450} width={450} loading='lazy' placeholder='blur' quality={1} />
                 <div className="otherservices-desc text-center">
                     <div>
                         <a href='/gallery/PaintCorrectionGallery' className='service-heading-link'>CERAMIC COATING GALLERY</a>
@@ -89,7 +89,7 @@ export default function OtherServices() {
         </div>
         <section className="otherservices-container">
             <div className="service-card">
-                <Image src={fullintex} alt="Vehicle after a Full Interior Cleaning" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
+                <Image src={fullintex} alt="Vehicle after a Full Interior Cleaning" className='otherservices-image' layout='responsive' height={550} width={450} loading='lazy' placeholder='blur' quality={1} />
                 <div className="otherservices-desc">
                     <div>
                         <a href="/services/FullIntEx" className='service-heading-link'>Full Interior Cleaning</a>
@@ -102,7 +102,7 @@ export default function OtherServices() {
             </div>
 
             <div className="service-card">
-                <Image src={bio} alt="Vehicle before a biohazard cleaning" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
+                <Image src={bio} alt="Vehicle before a biohazard cleaning" className='otherservices-image' layout='responsive' height={550} width={450} loading='lazy' placeholder='blur' quality={1} />
                 <div className="otherservices-desc">
                     <div>
                         <a href='/services/Bio' className='service-heading-link'>Biohazard Cleaning</a>
@@ -115,7 +115,7 @@ export default function OtherServices() {
             </div>
 
             <div className="service-card">
-                <Image src={interiorGallery} alt="vehicle rear after an interior detail" className='otherservices-image' loading='lazy' objectFit='cover' placeholder='blur' quality={1} />
+                <Image src={interiorGallery} alt="vehicle rear after an interior detail" className='otherservices-image' layout='responsive' height={550} width={450} loading='lazy' objectFit='cover' placeholder='blur' quality={1} />
                 <div className="otherservices-desc text-center">
                     <div>
                         <a href='/gallery/FullIntGallery' className='service-heading-link'>FULL INTERIOR GALLERY</a>
@@ -135,7 +135,7 @@ export default function OtherServices() {
 
         <section className="otherservices-container">
             <div className="service-card">
-                <Image src={dlwash} alt="Vehicle after a Dirt-Less Wash Cleaning" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
+                <Image src={dlwash} alt="Vehicle after a Dirt-Less Wash Cleaning" className='otherservices-image' layout='responsive' height={550} width={450} loading='lazy' placeholder='blur' quality={1} />
                 <div className="otherservices-desc">
                     <div>
                         <a href='services/DLWash' className='service-heading-link'>Dirt-Less Wash</a>
@@ -148,7 +148,7 @@ export default function OtherServices() {
             </div>
 
             <div className="service-card">
-                <Image src={pdlwash} alt="Vehicle after a Premium Dirt-Less Cleaning" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
+                <Image src={pdlwash} alt="Vehicle after a Premium Dirt-Less Cleaning" className='otherservices-image' layout='responsive' height={550} width={450} loading='lazy' placeholder='blur' quality={1} />
                 <div className="otherservices-desc">
                     <div>
                         <a href='/services/PDLWash' className='service-heading-link'>Premium Dirt-Less Wash</a>
@@ -161,7 +161,7 @@ export default function OtherServices() {
             </div>
 
             <div className="service-card">
-                <Image src={exteriorGallery} alt="subaru after an exterior wash" className='otherservices-image' loading='lazy' objectFit='cover' placeholder='blur' quality={1} />
+                <Image src={exteriorGallery} alt="subaru after an exterior wash" className='otherservices-image' layout='responsive' height={550} width={450} loading='lazy' objectFit='cover' placeholder='blur' quality={1} />
                 <div className="otherservices-desc text-center">
                     <div>
                         <a href='/gallery/ExteriorWashGallery' className='service-heading-link'>EXTERIOR WASH GALLERY</a>
@@ -181,7 +181,7 @@ export default function OtherServices() {
         </div>
         <section className="otherservices-container">
             <div className="service-card">
-                <Image src={stage1} alt="Vehicle after a Single Stage Paint Correction" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
+                <Image src={stage1} alt="Vehicle after a Single Stage Paint Correction" className='otherservices-image' layout='responsive' height={550} width={450} loading='lazy' placeholder='blur' quality={1} />
                 <div className="otherservices-desc">
                     <div>
                         <a href='/services/SinglePC' className='service-heading-link'>Single Stage Paint Correction</a>
@@ -194,7 +194,7 @@ export default function OtherServices() {
             </div>
 
             <div className="service-card">
-                <Image src={stage2} alt="Vehicle after a Two Stage Paint Correction" className='otherservices-image' loading='lazy' placeholder='blur' quality={1} />
+                <Image src={stage2} alt="Vehicle after a Two Stage Paint Correction" className='otherservices-image' layout='responsive' height={550} width={450} loading='lazy' placeholder='blur' quality={1} />
                 <div className="otherservices-desc">
                     <div>
                         <a href='/services/TwoPC' className='service-heading-link'>Two Stage Paint Correction</a>
@@ -207,7 +207,7 @@ export default function OtherServices() {
             </div>
 
             <div className="service-card">
-                <Image src={paintCorrectionGallery} alt="Cleaned and corrected car" className='otherservices-image' loading='lazy' objectFit='cover' placeholder='blur' quality={1} />
+                <Image src={paintCorrectionGallery} alt="Cleaned and corrected car" className='otherservices-image' layout='responsive' height={550} width={450} loading='lazy' objectFit='cover' placeholder='blur' quality={1} />
                 <div className="otherservices-desc text-center">
                     <div>
                         <a href='/gallery/PaintCorrectionGallery' className='service-heading-link'>PAINT CORRECTION GALLERY</a>

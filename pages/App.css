@@ -717,7 +717,7 @@ input[type="range"] {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 60%;
+  height: 50%;
   padding: 1rem;
 }
 
