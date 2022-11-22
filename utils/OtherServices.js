@@ -54,7 +54,7 @@ export default function OtherServices() {
                     <p className="service-desc">Take a look at some of the results we've had after our Ceramic Details.</p>
                     <p className="service-desc">Starting with our Single Stage Paint Correction before applying our Ceramics ensures the best covering of your vehicle possible, giving the absolute best results and longevity.</p>
 
-                    <a href='/gallery/CeramicGallery' className="readmore text-center">Ceramic Coating Gallery</a>
+                    <a href='/gallery/CoatingGallery' className="readmore text-center">Ceramic Coating Gallery</a>
                 </div>
             </div>
         </section>

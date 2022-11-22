@@ -17,6 +17,7 @@ import { HiSparkles, HiInformationCircle } from 'react-icons/hi';
 import { MdOutlineEmail } from 'react-icons/md';
 import { TbEngine } from 'react-icons/tb';
 import { RiCarWashingFill } from 'react-icons/ri';
+import { ImFilePicture } from 'react-icons/im';
 import ddLogo from '../public/imgs/PNG1.png';
 import './App.css';
 
@@ -163,6 +164,9 @@ export default function MyApp({ Component, pageProps }) {
                                 <ul className="sub-ul" onPointerEnter={() => changeNav('gallery')} onPointerLeave={() => changeNav('none')} style={{opacity: smallScreen ? 1 : gallery ? 1 : !gallery ? 0 : 0, pointerEvents: smallScreen ? 'auto' : gallery ? 'auto' : !gallery ? 'none' : 'auto'}}>
                                     <div className="nav-div">
                                         <h4 className="sub-menu-header">GALLERIES</h4>
+                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                            <a href="/gallery/CoatingGallery" className='menu-link'><ImFilePicture /> Ceramic Coating Gallery</a>
+                                        </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
                                             <a href="/gallery/FullIntGallery" className='menu-link'><FaPhotoVideo /> Full Interior Gallery</a>
                                         </li>

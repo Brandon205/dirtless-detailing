@@ -18,14 +18,13 @@ export default function PaintCorrectionGallery() {
       </div>
       <header>
         <h1 className='servicepage-heading'>Paint Correction Gallery</h1>
-        {/* <p>This is a gallery to show what we can do to correct your paint problems. Take a look at our page or our <a href="/services/TwoPC" className='gallery-link' >Two Stage Paint Correction</a> services.</p> */}
         <p>Check out the gallery below to see what we can do to correct your paint problems. Take a look at our <a href="/services/SinglePC" className='gallery-link' >Single Stage Paint Correction</a> page or our <a href="/services/TwoPC" className='gallery-link' >Two Stage Paint Correction</a> services.</p>
       </header>
 
       <div className='gallery-container'>
         { imagery }
       </div>
-      <h2 style={{color: 'white'}}>Check out our <a href="/services/SinglePC" className='gallery-link' >Single Stage Paint Correction</a> page or our <a href="/services/TwoPC" className='gallery-link' >Two Stage Paint Correction</a> pages for more details!</h2>
+      <h2 style={{color: 'white'}}>Check out our <a href="/services/SinglePC" className='gallery-link' >Single Stage Paint Correction</a> page or our <a href="/services/TwoPC" className='gallery-link' >Two Stage Paint Correction</a> page for more details!</h2>
     </section>
   )
 }
