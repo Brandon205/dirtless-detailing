@@ -20,24 +20,32 @@ export default function Contact() {
             "Make": e.target[4].value,
             "Model": e.target[5].value,
             "Message": e.target[6].value,
-            "Combo": e.target[7].checked ? 'Yes': 'No',
-            "Full Interior With Extraction": e.target[8].checked ? 'Yes': 'No',
-            "Full Interior Without Extraction": e.target[9].checked ? 'Yes': 'No',
-            "Biohazard Cleaning": e.target[10].checked ? 'Yes': 'No',
-            "Headliners": e.target[11].checked ? 'Yes': 'No',
-            "Ozone": e.target[12].checked ? 'Yes': 'No',
-            "Dirtiness": e.target[13].value,
-            "Dog Hair": e.target[14].value,
-            "Dirt-Less Wash": e.target[15].checked ? 'Yes': 'No',
-            "Premium Dirt-LessWash": e.target[16].checked ? 'Yes': 'No',
-            "Engine Bay": e.target[17].checked ? 'Yes': 'No',
-            "Glass Polishing (Exterior Add-on)": e.target[18].checked ? 'Yes': 'No',
-            "Waterspot Removal (Exterior Add-on)": e.target[19].checked ? 'Yes': 'No',
-            "Truck Bed Cleaning (Exterior Add-on)": e.target[20].checked ? 'Yes': 'No',
-            "Debadging (Exterior Add-on)": e.target[21].checked ? 'Yes': 'No',
-            "Single Stage Paint Correction": e.target[22].checked ? 'Yes': 'No',
-            "Two Stage Paint Correction": e.target[23].checked ? 'Yes': 'No',
-            "Glass Polishing (Correction Add-on)": e.target[24].checked ? 'Yes': 'No'
+            "Protect Package": e.target[7].checked,
+            "Protect+ Package": e.target[8].checked,
+            "Fabric Coating": e.target[9].checked,
+            "Leather Coating": e.target[10].checked,
+            "Fabric re-coating": e.target[11].checked,
+            "Trim re-coating": e.target[12].checked,
+            "Leather re-coating": e.target[13].checked,
+            "Wheel Faces re-coating": e.target[14].checked,
+            "Combo": e.target[15].checked ? 'Yes': 'No',
+            "Full Interior With Extraction": e.target[16].checked ? 'Yes': 'No',
+            "Full Interior Without Extraction": e.target[17].checked ? 'Yes': 'No',
+            "Biohazard Cleaning": e.target[18].checked ? 'Yes': 'No',
+            "Headliners": e.target[19].checked ? 'Yes': 'No',
+            "Ozone": e.target[20].checked ? 'Yes': 'No',
+            "Dirtiness": e.target[21].value,
+            "Dog Hair": e.target[22].value,
+            "Dirt-Less Wash": e.target[23].checked ? 'Yes': 'No',
+            "Premium Dirt-LessWash": e.target[24].checked ? 'Yes': 'No',
+            "Engine Bay": e.target[25].checked ? 'Yes': 'No',
+            "Glass Polishing (Exterior Add-on)": e.target[26].checked ? 'Yes': 'No',
+            "Waterspot Removal (Exterior Add-on)": e.target[27].checked ? 'Yes': 'No',
+            "Truck Bed Cleaning (Exterior Add-on)": e.target[28].checked ? 'Yes': 'No',
+            "Debadging (Exterior Add-on)": e.target[29].checked ? 'Yes': 'No',
+            "Single Stage Paint Correction": e.target[30].checked ? 'Yes': 'No',
+            "Two Stage Paint Correction": e.target[31].checked ? 'Yes': 'No',
+            "Glass Polishing (Correction Add-on)": e.target[32].checked ? 'Yes': 'No'
         }
         const formData = new FormData();
         Object.entries(formInfo).forEach(([key, value]) => {
@@ -304,7 +312,42 @@ export default function Contact() {
                 </div>
 
                 <div className="form-section">
-                    <p className='form-section-heading'>Combo Deals:</p>
+                    <p className="form-section-heading">Exterior Ceramic Coatings:</p>
+                    <div>
+                        <input type="checkbox" name="protect" id='protect' className='checkbox-input' />
+                        <label htmlFor="protect" className='checkbox-label'>Protect</label>
+
+                        <input type="checkbox" name="protect+" id='protect+' className='checkbox-input' />
+                        <label htmlFor="protect+" className='checkbox-label'>Protect<span className='special-package'>+</span></label>
+                    </div>
+
+                    <p className="form-section-heading">Interior Coatings:</p>
+                    <div>
+                        <input type="checkbox" name="fabric" id='fabric' className='checkbox-input' />
+                        <label htmlFor="fabric" className='checkbox-label'>Fabric</label>
+
+                        <input type="checkbox" name="leather" id='leather' className='checkbox-input' />
+                        <label htmlFor="leather" className='checkbox-label'>Leather</label>
+                    </div>
+
+                    <p className="form-section-heading">Re-coating options:</p>
+                    <div>
+                        <input type="checkbox" name="fabric" id='fabric' className='checkbox-input' />
+                        <label htmlFor="fabric" className='checkbox-label'>Fabric</label>
+
+                        <input type="checkbox" name="fabric" id='fabric' className='checkbox-input' />
+                        <label htmlFor="fabric" className='checkbox-label'>Trim</label>
+
+                        <input type="checkbox" name="leather" id='leather' className='checkbox-input' />
+                        <label htmlFor="leather" className='checkbox-label'>Leather</label>
+
+                        <input type="checkbox" name="leather" id='leather' className='checkbox-input' />
+                        <label htmlFor="leather" className='checkbox-label'>Wheel Faces</label>
+                    </div>
+                </div>
+
+                <div className="form-section">
+                    <p className='form-section-heading'>Combo Deal (Comes with FREE engine bay cleaning):</p>
                     <div>
                         <input type="checkbox" name="combo" id='combo' className='checkbox-input' />
                         <label htmlFor="combo" className='checkbox-label'>Full Interior and Exterior Combo</label>
