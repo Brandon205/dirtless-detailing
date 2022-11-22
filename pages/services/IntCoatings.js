@@ -7,7 +7,7 @@ import { MdCleaningServices } from 'react-icons/md';
 import { FiSun } from 'react-icons/fi';
 import { BsClockHistory } from 'react-icons/bs';
 
-import cover from '../../public/imgs/pageimgs/interior/fullIntExCover.webp';
+import cover from '../../public/imgs/pageimgs/interior/IMG_20220929_155050.jpg';
 
 export default function IntCoatings() {
   return (
@@ -37,7 +37,7 @@ export default function IntCoatings() {
                     </div>
                     <div className='package-details'>
                         <MdCleaningServices className='package-icon' />
-                        <h4>Easier to Clean<span className='special-package'>*</span></h4>
+                        <h4>Easier to Clean</h4>
                         <p className='subtext'>Fabric is one of the toughest things to clean in a vehicle, especially when things are stained. After this even liquid spills won't be close to as much of an issue.</p>
                     </div>
                     <div className='package-details'>
@@ -57,7 +57,7 @@ export default function IntCoatings() {
                     </div>
                     <div className='package-details'>
                         <MdCleaningServices className='package-icon' />
-                        <h4>Even Easier to Clean<span className='special-package'>*</span></h4>
+                        <h4>Even Easier to Clean</h4>
                         <p className='subtext'>The coating we will put on will create a low surface tension layer that stops spills and other messes from bonding to the materials.</p>
                     </div>
                     <div className='package-details'>

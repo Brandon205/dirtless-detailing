@@ -7,7 +7,7 @@ import { BiCar } from 'react-icons/bi';
 import { SiAdguard } from 'react-icons/si';
 import { RiPaintFill } from 'react-icons/ri';
 
-import cover from '../../public/imgs/pageimgs/interior/fullIntExCover.webp';
+import cover from '../../public/imgs/pageimgs/paintCorrection/IMG_20220812_063401.jpg';
 
 export default function ExtCoatings() {
   return (

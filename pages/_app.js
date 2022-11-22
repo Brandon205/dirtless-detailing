@@ -10,8 +10,8 @@ import Cookies from '../utils/Cookies';
 
 import { AiOutlineCar, AiOutlinePlus } from "react-icons/ai";
 import { BsFillCameraFill, BsFillPersonBadgeFill } from "react-icons/bs";
-import { FaBars, FaFacebook, FaInstagram, FaPhoneAlt, FaCarSide, FaPhotoVideo, FaBiohazard, FaCameraRetro, FaHome, FaImages } from 'react-icons/fa';
-import { GiSteeringWheel, GiCarKey, GiVacuumCleaner } from 'react-icons/gi';
+import { FaBars, FaFacebook, FaInstagram, FaPhoneAlt, FaCarSide, FaPhotoVideo, FaBiohazard, FaCameraRetro, FaHome, FaImages, FaSoap } from 'react-icons/fa';
+import { GiSteeringWheel, GiCarKey, GiVacuumCleaner, GiCarSeat } from 'react-icons/gi';
 import { GoLocation } from "react-icons/go";
 import { HiSparkles, HiInformationCircle } from 'react-icons/hi';
 import { MdOutlineEmail } from 'react-icons/md';
@@ -119,10 +119,10 @@ export default function MyApp({ Component, pageProps }) {
                                     <div className="nav-div">
                                         <h4 className='sub-menu-header'>CERAMIC COATING</h4>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <a href="/services/ExtCoatings" className='menu-link'><FaCarSide /> Exterior Ceramic Coatings</a>
+                                            <a href="/services/ExtCoatings" className='menu-link'><AiOutlineCar /> Exterior Ceramic Coating</a>
                                         </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <a href="/services/IntCoatings" className='menu-link'><HiSparkles /> Interior Coatings</a>
+                                            <a href="/services/IntCoatings" className='menu-link'><GiCarSeat /> Interior Coating</a>
                                         </li>
                                         <hr className="nav-hr" />
                                         <h4 className='sub-menu-header'>INTERIOR CLEANING SERVICES</h4>
@@ -135,10 +135,10 @@ export default function MyApp({ Component, pageProps }) {
                                         <hr className="nav-hr" />
                                         <h4 className='sub-menu-header'>EXTERIOR CLEANING SERVICES</h4>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <a href="/services/DLWash" className='menu-link'><RiCarWashingFill /> Dirt-Less Wash</a>
+                                            <a href="/services/DLWash" className='menu-link'><FaSoap /> Dirt-Less Wash</a>
                                         </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <a href="/services/PDLWash" className='menu-link'><AiOutlineCar /> Premium Dirt-Less Wash</a>
+                                            <a href="/services/PDLWash" className='menu-link'><RiCarWashingFill /> Premium Dirt-Less Wash</a>
                                         </li>
                                         <hr className="nav-hr" />
                                         <h4 className='sub-menu-header'>COMBO DEALS</h4>
