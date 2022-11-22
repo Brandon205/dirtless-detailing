@@ -131,6 +131,10 @@ body {
   color: black;
 }
 
+.side-quote-btn:hover {
+  color: white
+}
+
 @keyframes serviceButton{
   0% {
     font-size: 1.5rem;

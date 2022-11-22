@@ -8,6 +8,7 @@ import { FiSun } from 'react-icons/fi';
 import { BsClockHistory } from 'react-icons/bs';
 
 import cover from '../../public/imgs/pageimgs/interior/IMG_20220929_155050.jpg';
+import iglCircle from '../../public/imgs/iglcircle.jpg';
 
 export default function IntCoatings() {
   return (
@@ -83,9 +84,6 @@ export default function IntCoatings() {
                         </div>
                     </div>
 
-                    <h4>Interested? Get in touch with us here, and let us know what we can do to help you!</h4>
-                    <a href="/Contact" className="quote-btn main-quote-btn">Contact Us</a>
-
                 </div>
 
                 <div>
@@ -93,6 +91,9 @@ export default function IntCoatings() {
                     <ul className='faq-ul'>
                         <li className='faq-li'>How long does it last?</li>
                         <li className='faq-p'>Both of our Interior Coatings typically last about 1 year.</li>
+
+                        <li className='faq-li'>Is there anything I need to do to preserve the coating?</li>
+                        <li className='faq-p'>Sadly there are no maintenance products for interior coatings out there. You should be able to keep cleaning your car like normal and have us reapply just about every year.</li>
                     </ul>
                 </div>
             </div>
@@ -148,8 +149,22 @@ export default function IntCoatings() {
                     </div>
                 </div>
 
+                <div className='aside-container'>
+                    <div className='aside-container'>
+                        <div className='service-aside addons-aside'>
+                            <h4>Interested? Get in touch with us here, and let us know what we can do to help you!</h4>
+                            <a href="/Contact" className="quote-btn side-quote-btn">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
+
+
+        </div>
+        <div style={{paddingBottom: 25}}>
+            <Image src={iglCircle} style={{borderRadius: 50}} alt="igl coverage circle" placeholder='blur' />
         </div>
 
     </section>

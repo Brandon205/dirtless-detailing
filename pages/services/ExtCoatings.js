@@ -8,6 +8,7 @@ import { SiAdguard } from 'react-icons/si';
 import { RiPaintFill } from 'react-icons/ri';
 
 import cover from '../../public/imgs/pageimgs/paintCorrection/IMG_20220812_063401.jpg';
+import kenzo from '../../public/imgs/kenzo.png';
 
 export default function ExtCoatings() {
   return (
@@ -115,9 +116,6 @@ export default function ExtCoatings() {
                         </div>
                     </div>
 
-                    <h4>Interested? Get in touch with us here, and let us know what we can do to help you!</h4>
-                    <a href="/Contact" className="quote-btn main-quote-btn">Contact Us</a>
-
                 </div>
 
                 <div>
@@ -209,7 +207,19 @@ export default function ExtCoatings() {
                         </div>
                     </div>
                 </div>
+
+                <div className='aside-container'>
+                    <div className='aside-container'>
+                        <div className='service-aside addons-aside'>
+                            <h4>Interested? Get in touch with us here, and let us know what we can do to help you!</h4>
+                            <a href="/Contact" className="quote-btn side-quote-btn">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div style={{paddingBottom: 25}}>
+            <Image src={kenzo} style={{borderRadius: 20}} alt="igl coverage circle" placeholder='blur' />
         </div>
 
     </section>
