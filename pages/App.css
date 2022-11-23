@@ -649,6 +649,10 @@ input[type="range"] {
   margin-top: 0;
 }
 
+.text-white {
+  color: white;
+}
+
 .package-container {
   display: grid;
   grid-auto-flow: row;
@@ -1152,7 +1156,7 @@ hr {
 }
 
 .aside-link {
-  color: blue;
+  color: dodgerblue;
 }
 
 .contact-aside {
@@ -1231,7 +1235,7 @@ hr {
 }
 
 .combo-container {
-  background-color: var(--contact-bkg-clr-light);
+  background-color: var(--contact-bkg-clr);
   width: 275px;
   margin: 1rem auto 0 auto;
   padding: 0.75rem;
