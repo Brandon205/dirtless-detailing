@@ -103,7 +103,7 @@ export default function PopularServices() {
         <div className="popular-services-card">
             <div className="popular-services-header">
                 <a href='/services/SinglePC' className="service-heading-link popular-service-title">Ceramic Coating <br />(Protect Package)</a>
-                <p className="price">Starting at: <span>$300</span></p>
+                <p className="price">Starting at: <span>$1,000</span></p>
             </div>
             <div className="popular-img">
                 <Image style={{borderRadius: '1rem 1rem 0 0'}} src={paint} alt="Before and after a Paint Correction" layout='fill' objectFit='cover' loading='lazy' quality={25} />

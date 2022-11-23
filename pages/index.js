@@ -12,6 +12,7 @@ import { FaRegStar } from 'react-icons/fa';
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 import cover from '../public/imgs/main-cover.webp';
+import kenzo from '../public/imgs/pageimgs/homepage/project.png';
 
 export default function Home() {
     return (
@@ -48,7 +49,11 @@ export default function Home() {
 
                     <a href="/Contact" className="quote-btn top-quote-btn">Get a Quote</a>
 
-                    <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="nofollow"><img src="https://seal-alaskaoregonwesternwashington.bbb.org/seals/blue-seal-160-82-bbb-1000135733.png" style={{border: 0}} alt="Dirt-Less Detailing BBB Business Review" /></a>
+                    <div style={{display: 'flex', alignItems: 'center', gap: 32}}>
+                        <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="nofollow"><img src="https://seal-alaskaoregonwesternwashington.bbb.org/seals/blue-seal-160-82-bbb-1000135733.png" style={{border: 0}} alt="Dirt-Less Detailing BBB Business Review" /></a>
+                        <a href="https://iglcoatingsusa.com/kenzo/" target="_blank" rel="nofollow"><Image src={kenzo} width={135} height={135} alt="igl kenzo coatings" /></a>
+                    </div>
+
                 </div>
             </header>
 
