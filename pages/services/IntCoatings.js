@@ -133,9 +133,9 @@ export default function IntCoatings() {
                 <div className='aside-container'>
                     <div className='aside-container'>
                         <div className='service-aside addons-aside'>
-                            <h4 className='text-xl mb-0 mt-0'>Recoating Options:</h4>
-                            <p>• Recoat fabrics <span className='special-package'>$75</span></p>
-                            <p>• Recoat leathers <span className='special-package'>$150</span></p>
+                            <h4 className='text-xl mb-0 mt-0'>Re-coating Options:</h4>
+                            <p>• Re-coat fabrics <span className='special-package'>$75</span></p>
+                            <p>• Re-coat leathers <span className='special-package'>$150</span></p>
                         </div>
                     </div>
                 </div>

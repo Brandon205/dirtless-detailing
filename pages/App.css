@@ -364,6 +364,11 @@ input[type='checkbox']:checked + label {
   border-color: var(--main-clr);
 }
 
+input[type='checkbox']:disabled + label {
+  color: gray;
+  cursor: default;
+}
+
 datalist {
   display: flex;
   justify-content: space-between;

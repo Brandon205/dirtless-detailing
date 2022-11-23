@@ -203,9 +203,9 @@ export default function ExtCoatings() {
                 <div className='aside-container'>
                     <div className='aside-container'>
                         <div className='service-aside addons-aside'>
-                            <h4 className='text-xl mb-0 mt-0'>Recoating Options:</h4>
-                            <p>• Recoat trim <span className='special-package'>$100</span></p>
-                            <p>• Recoat wheel faces <span className='special-package'>$150</span></p>
+                            <h4 className='text-xl mb-0 mt-0'>Re-coating Options:</h4>
+                            <p>• Re-coat trim <span className='special-package'>$100</span></p>
+                            <p>• Re-coat wheel faces <span className='special-package'>$150</span></p>
                         </div>
                     </div>
                 </div>
