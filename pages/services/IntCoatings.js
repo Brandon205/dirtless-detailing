@@ -1,15 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
-import Zoom from 'react-medium-image-zoom';
-import 'react-medium-image-zoom/dist/styles.css';
 
 import { GiLeatherBoot, GiRolledCloth, GiSpill } from 'react-icons/gi';
 import { MdCleaningServices } from 'react-icons/md';
 import { FiSun } from 'react-icons/fi';
 
 import cover from '../../public/imgs/pageimgs/interior/IMG_20220929_155050.jpg';
-import iglCircle from '../../public/imgs/iglcircle.jpg';
 
 export default function IntCoatings() {
   return (
@@ -157,11 +154,6 @@ export default function IntCoatings() {
 
 
 
-        </div>
-        <div style={{paddingBottom: 25}}>
-            <Zoom>
-                <Image src={iglCircle} style={{borderRadius: 50}} alt="igl coverage circle" placeholder='blur' />
-            </Zoom>
         </div>
 
     </section>

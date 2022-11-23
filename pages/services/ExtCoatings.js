@@ -9,7 +9,7 @@ import { BiCar } from 'react-icons/bi';
 import { SiAdguard } from 'react-icons/si';
 import { RiPaintFill } from 'react-icons/ri';
 
-// import cover from '../../public/imgs/pageimgs/paintCorrection/IMG_20220812_063401.jpg';
+import iglCircle from '../../public/imgs/iglcircle.jpg';
 import kenzo from '../../public/imgs/kenzo.png';
 
 export default function ExtCoatings() {
@@ -220,6 +220,11 @@ export default function ExtCoatings() {
                     </div>
                 </div>
             </div>
+        </div>
+        <div style={{paddingBottom: 25}}>
+            <Zoom>
+                <Image src={iglCircle} style={{borderRadius: 50}} alt="igl coverage circle" placeholder='blur' />
+            </Zoom>
         </div>
 
     </section>
