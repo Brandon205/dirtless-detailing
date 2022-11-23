@@ -29,7 +29,7 @@ export default function ExtCoatings() {
 
         <div className="coating-container">
             <div className="coating-left">
-                <h2 className='mb-0'>Protect Package:</h2>
+                <h2 className='mb-0 underline'>Protect Package</h2>
                 <p className='package-desc subtext'>The Protect package will cover and protect the most essential parts of your car with a 5 year ceramic coating.</p>
                 <div className='package-container'>
                     <div className='package-details'>
@@ -49,7 +49,7 @@ export default function ExtCoatings() {
                     </div>
                 </div>
 
-                <h2 className='mb-0'>Protect<span className='special-package'>+</span> Package:</h2>
+                <h2 className='mb-0 underline'>Protect<span className='special-package'>+</span> Package</h2>
                 <p className='package-desc subtext'>The Protect+ package will cover and protect your whole vehicle with a 5 year Ceramic Coating.</p>
                 <div className='package-container'>
                     <div className='package-details'>
@@ -170,12 +170,9 @@ export default function ExtCoatings() {
                     <div className='aside-container'>
                         <div className='service-aside addons-aside'>
                             <h4 className='text-xl mb-0 mt-0'>Monthly Maintenance:</h4>
-                            <p>• 2 bucket wash top to bottom.</p>
-                            <p>• Clean wheels, wheel barrels, and wheel wells.</p>
-                            <p>• Remove tar/sap, decontaminate iron, and use clay bar as needed.</p>
-                            <p>• Dry with Ceramic Spray, and dress vehicle.</p>
-                            <p>• BONUS: Keeping up with this will qualify you for our Lifetime warranty on your Ceramic Coating.</p>
-                            <p className='bold text-xl mb-0'>Monthly Maintenance costs:</p>
+                            <p>The goal of our monthly maintenance is to keep your vehicle looking like new year around.</p>
+                            <p>Every month you get a <a href="/services/DLWash" className='aside-link'>Dirt-Less Wash</a> with a ceramic booster and a <a href='/services/FullIntEx' className='aside-link'>Full Interior Detail</a>.</p>
+                            <p className='bold text-xl mb-0'>Monthly Maintenance Pricing:</p>
                             <div className='maintenance-costs'>
                                 <p>SMALL <span className='special-package'>$130</span></p>
                                 <p>MEDIUM <span className='special-package'>$160</span></p>

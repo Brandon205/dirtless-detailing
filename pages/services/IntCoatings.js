@@ -26,7 +26,7 @@ export default function IntCoatings() {
 
         <div className="coating-container">
             <div className="coating-left">
-                <h2 className='mb-0'>Fabric Coating:</h2>
+                <h2 className='mb-0 underline'>Fabric Coating</h2>
                 <p className='package-desc subtext'>Further protect the fabric inside of your vehicle with a ceramic coating to keep a cleaner and newer looking interior.</p>
                 <div className='package-container'>
                     <div className='package-details'>
@@ -41,7 +41,7 @@ export default function IntCoatings() {
                     </div>
                 </div>
 
-                <h2 className='mb-0'>Leather Coating:</h2>
+                <h2 className='mb-0 underline'>Leather Coating</h2>
                 <p className='package-desc subtext'>Ceramic coat the leather inside of your vehicle to keep a cleaner, newer, and easier to clean interior.</p>
                 <div className='package-container'>
                     <div className='package-details'>
@@ -63,7 +63,7 @@ export default function IntCoatings() {
 
                 <div>
                     <h3 className='pricing-title'>Our Interior Coating Pricing</h3>
-                    <h4 className='subtext'><span className='special-package'>*</span>Pricing does not include an Interior Cleaning, which you will want to factor in before getting a coating.</h4>
+                    <h4 className='subtext'><span className='special-package'>*</span>Pricing does NOT include an Interior Cleaning, which you will want to factor in before getting a coating.</h4>
                     <div className='pricing-container'>
                         <div className="pricing-card">
                             <h4 className="size">FABRIC COATING</h4>
@@ -118,12 +118,9 @@ export default function IntCoatings() {
                     <div className='aside-container'>
                         <div className='service-aside addons-aside'>
                             <h4 className='text-xl mb-0 mt-0'>Monthly Maintenance:</h4>
-                            <p>• Blow out the whole interior with a Tornador.</p>
-                            <p>• Vacuum entire vehicle.</p>
-                            <p>• Clean out the door jambs.</p>
-                            <p>• Wipe the whole interior down.</p>
-                            <p>• Clean windows and floor mats.</p>
-                            <p className='bold text-xl mb-0'>Monthly Maintenance costs:</p>
+                            <p>The goal of our monthly maintenance is to keep your vehicle looking like new year around.</p>
+                            <p>Every month you get a <a href="/services/DLWash" className='aside-link'>Dirt-Less Wash</a> with a ceramic booster and a <a href='/services/FullIntEx' className='aside-link'>Full Interior Detail</a>.</p>
+                            <p className='bold text-xl mb-0'>Monthly Maintenance Pricing:</p>
                             <div className='maintenance-costs'>
                                 <p>SMALL <span className='special-package'>$130</span></p>
                                 <p>MEDIUM <span className='special-package'>$160</span></p>
