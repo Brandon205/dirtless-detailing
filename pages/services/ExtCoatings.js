@@ -21,7 +21,7 @@ export default function ExtCoatings() {
             <link rel="canonical" href="https://www.dirtlessdetailing.com/services/ExtCoatings" />
         </Head>
         <div className="coating-cover">
-            <Image src={kenzo} alt="Vehicle Exterior after paint correction and ceramic coating" layout="fill" objectFit='cover' placeholder='blur' priority />
+            <Image src={kenzo} alt="Vehicle Exterior after paint correction and ceramic coating" layout="fill" objectFit='cover' placeholder='blur' priority quality={100} />
         </div>
         <div className="coatingpage-header">
             <h1>Exterior Ceramic Coating</h1>
@@ -117,7 +117,9 @@ export default function ExtCoatings() {
                         </div>
                     </div>
 
-                    <a href="/Contact" className="quote-btn main-quote-btn coating-contact-btn">Contact Us</a>
+                    <div className="coating-contact-container">
+                        <a href="/Contact" className="quote-btn main-quote-btn coating-contact-btn">Contact Us</a>
+                    </div>
 
                 </div>
 

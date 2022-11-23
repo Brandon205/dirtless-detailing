@@ -77,7 +77,9 @@ export default function IntCoatings() {
                         </div>
                     </div>
 
-                    <a href="/Contact" className="quote-btn main-quote-btn coating-contact-btn">Contact Us</a>
+                    <div className="coating-contact-container">
+                        <a href="/Contact" className="quote-btn main-quote-btn coating-contact-btn">Contact Us</a>
+                    </div>
 
                 </div>
 

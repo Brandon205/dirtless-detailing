@@ -618,6 +618,12 @@ input[type="range"] {
   gap: 3rem;
 }
 
+.coating-contact-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .coating-faq {
   text-align: left;
 }
@@ -1626,10 +1632,6 @@ hr {
 
   .coating-left {
     text-align: left;
-  }
-
-  .coating-contact-btn {
-    margin-left: 44%;
   }
 
   .coatingpage-header h1 {
