@@ -4,10 +4,9 @@ import Head from 'next/head';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 
-import { GiLeatherBoot, GiRolledCloth } from 'react-icons/gi';
+import { GiLeatherBoot, GiRolledCloth, GiSpill } from 'react-icons/gi';
 import { MdCleaningServices } from 'react-icons/md';
 import { FiSun } from 'react-icons/fi';
-import { BsClockHistory } from 'react-icons/bs';
 
 import cover from '../../public/imgs/pageimgs/interior/IMG_20220929_155050.jpg';
 import iglCircle from '../../public/imgs/iglcircle.jpg';
@@ -20,11 +19,11 @@ export default function IntCoatings() {
             <meta property="og:description" content="Have us coat the interior of your vehicle with our products to keep them clean and protected from day to day use." />
             <link rel="canonical" href="https://www.dirtlessdetailing.com/services/IntCoatings" />
         </Head>
-        <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
+        <div className="cover">
             <Image src={cover} alt="Coated and protected vehicle interior" layout="fill" objectFit='cover' placeholder='blur' priority />
         </div>
         <div className="servicepage-header">
-            <h1>Interior Coatings</h1>
+            <h1>Interior Coating</h1>
             <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
         </div>
 
@@ -39,14 +38,9 @@ export default function IntCoatings() {
                         <p className='subtext'>Apply IGL Fabric to all carpet and fabric.</p>
                     </div>
                     <div className='package-details'>
-                        <MdCleaningServices className='package-icon' />
-                        <h4>Easier to Clean</h4>
-                        <p className='subtext'>Fabric is one of the toughest things to clean in a vehicle, especially when things are stained. After this even liquid spills won't be close to as much of an issue.</p>
-                    </div>
-                    <div className='package-details'>
-                        <BsClockHistory className='package-icon' />
-                        <h4>Increase Longevity</h4>
-                        <p className='subtext'>All of the stains and dirt overtime does damage to the longevity of any materials. With this the IGL coating can take most of the hits instead of the fabric.</p>
+                        <GiSpill className='package-icon' />
+                        <h4>Spill Resistance</h4>
+                        <p className='subtext'>Gives you more time to wipe up spills before it seeps into carpets.</p>
                     </div>
                 </div>
 
@@ -86,6 +80,8 @@ export default function IntCoatings() {
                         </div>
                     </div>
 
+                    <a href="/Contact" className="quote-btn main-quote-btn coating-contact-btn">Contact Us</a>
+
                 </div>
 
                 <div className='coating-faq'>
@@ -93,9 +89,6 @@ export default function IntCoatings() {
                     <ul className='faq-ul'>
                         <li className='faq-li'>How long does it last?</li>
                         <li className='faq-p'>Both of our Interior Coatings typically last about 1 year.</li>
-
-                        <li className='faq-li'>Is there anything I need to do to preserve the coating?</li>
-                        <li className='faq-p'>Sadly there are no maintenance products for interior coatings out there. You can either go through us for interior cleaning, or you should be able to clean your car like normal. We suggest having us reapply a coating yearly when it wears off.</li>
                     </ul>
                 </div>
             </div>
@@ -114,7 +107,7 @@ export default function IntCoatings() {
                                 </div>
                                 <div className="addon-container">
                                     <p className='addon-title'><a href="/services/ExtCoatings" className='text-blue'>Protect<span className="bold special-package">+</span> Ceramic Coating</a></p>
-                                    <p className='m-0 subtext'>Starting at: <span className="bold special-package">$1,200</span></p>
+                                    <p className='m-0 subtext'>Starting at: <span className="bold special-package">$1,500</span></p>
                                     <p className="addon-subtext">A Premium Ceramic Coating service to coat and protect your entire vehicle.</p>
                                 </div>
                             </div>

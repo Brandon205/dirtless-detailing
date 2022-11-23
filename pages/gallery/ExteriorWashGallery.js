@@ -14,7 +14,7 @@ export default function PaintCorrectionGallery() {
         <meta property="og:description" content="Check out some photos from both our Dirt-Less and Premium Dirt-Less washes here." />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/gallery/ExteriorWashGallery" />
       </Head>
-      <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
+      <div className="cover">
         <Image src={cover} alt="Vehicle after a Dirt-Less Wash" layout="fill" objectFit='cover' priority />
       </div>
       <header>

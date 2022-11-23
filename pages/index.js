@@ -19,7 +19,7 @@ export default function Home() {
             <Head>
                 <link rel="canonical" href="https://www.dirtlessdetailing.com/" />
             </Head>
-            <div className="maincover" style={{backgroundImage: 'url(' + cover + ')' }}>
+            <div className="maincover">
                 <Image src={cover} layout="fill" objectFit='cover' alt="Cleaned Toyota Tundra" placeholder='blur' priority />
             </div>
             <header className="home-header">

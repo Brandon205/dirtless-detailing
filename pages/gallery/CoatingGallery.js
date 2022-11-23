@@ -13,7 +13,7 @@ export default function CoatingGallery() {
         <meta property="og:description" content="A gallery of photos that we have taken showing off some of the vehicles that we have coated and protected!" />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/gallery/CoatingGallery" />
       </Head>
-      <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
+      <div className="cover">
         <Image src={cover} alt="Vehicle after a Ceramic Coating" layout="fill" objectFit='cover' priority />
       </div>
       <header>

@@ -9,7 +9,7 @@ import { BiCar } from 'react-icons/bi';
 import { SiAdguard } from 'react-icons/si';
 import { RiPaintFill } from 'react-icons/ri';
 
-import cover from '../../public/imgs/pageimgs/paintCorrection/IMG_20220812_063401.jpg';
+// import cover from '../../public/imgs/pageimgs/paintCorrection/IMG_20220812_063401.jpg';
 import kenzo from '../../public/imgs/kenzo.png';
 
 export default function ExtCoatings() {
@@ -17,15 +17,14 @@ export default function ExtCoatings() {
     <section className="service-content-container bg-contact">
         <Head>
             <title>Dirt-Less Detailing | Exterior Ceramic Coatings</title>
-            <meta property="og:description" content="Ensure that your vehicle is protected through us with our exterior Ceramic Coating services!" />
+            <meta property="og:description" content="Ensure that your vehicle is protected through us with our exterior Ceramic Coating services." />
             <link rel="canonical" href="https://www.dirtlessdetailing.com/services/ExtCoatings" />
         </Head>
-        <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
-            <Image src={cover} alt="Vehicle Exterior after paint correction and ceramic coating" layout="fill" objectFit='cover' placeholder='blur' priority />
+        <div className="coating-cover">
+            <Image src={kenzo} alt="Vehicle Exterior after paint correction and ceramic coating" layout="fill" objectFit='cover' placeholder='blur' priority />
         </div>
-        <div className="servicepage-header">
-            <h1>Exterior Ceramic Coatings</h1>
-            <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+        <div className="coatingpage-header">
+            <h1>Exterior Ceramic Coating</h1>
         </div>
 
         <div className="coating-container">
@@ -41,7 +40,7 @@ export default function ExtCoatings() {
                     <div className='package-details'>
                         <SiAdguard className='package-icon' />
                         <h4>Lifetime Warranty<span className='special-package'>*</span></h4>
-                        <p className='subtext'>After your first coating if you follow through with our monthly maintenance your Ceramic coating has a lifetime guarantee through us!</p>
+                        <p className='subtext'>After your first coating if you follow through with our monthly maintenance your Ceramic coating has a lifetime guarantee through us.</p>
                     </div>
                     <div className='package-details'>
                         <BiCar className='package-icon' />
@@ -61,7 +60,7 @@ export default function ExtCoatings() {
                     <div className='package-details'>
                         <SiAdguard className='package-icon' />
                         <h4>Lifetime Warranty<span className='special-package'>*</span></h4>
-                        <p className='subtext'>Our Protect+ package also comes with a lifetime warranty if you follow through with our monthly maintenance!</p>
+                        <p className='subtext'>Our Protect+ package also comes with a lifetime warranty if you follow through with our monthly maintenance.</p>
                     </div>
                     <div className='package-details'>
                         <FaCar className='package-icon' />
@@ -118,6 +117,8 @@ export default function ExtCoatings() {
                         </div>
                     </div>
 
+                    <a href="/Contact" className="quote-btn main-quote-btn coating-contact-btn">Contact Us</a>
+
                 </div>
 
                 <div>
@@ -133,10 +134,10 @@ export default function ExtCoatings() {
                         <li className='faq-p'>When we Ceramic Coat your car we can either set up a schedule to have your car professionally and safely washed by us. We can also give you a list of products that we recommend you use to wash your car while not damaging the ceramic coat.</li>
 
                         <li className='faq-li'>How does the 5 year warranty work?</li>
-                        <li className='faq-p'>If we do our yearly maintenance on the vehicle we guarantee that the ceramic coat will last 5 years or more!</li>
+                        <li className='faq-p'>If we do our yearly maintenance on the vehicle we guarantee that the ceramic coat will last 5 years or more.</li>
 
                         <li className='faq-li'>How does the Lifetime warranty work?</li>
-                        <li className='faq-p'>If we do monthly maintenance on the vehicle we guarantee that the coat will last a lifetime, and will keep a ceramic coat on it as long as you want!</li>
+                        <li className='faq-p'>If we do monthly maintenance on the vehicle we guarantee that the coat will last a lifetime, and will keep a ceramic coat on it as long as you want.</li>
                     </ul>
                 </div>
             </div>
@@ -171,7 +172,7 @@ export default function ExtCoatings() {
                             <p>• Clean wheels, wheel barrels, and wheel wells.</p>
                             <p>• Remove tar/sap, decontaminate iron, and use clay bar as needed.</p>
                             <p>• Dry with Ceramic Spray, and dress vehicle.</p>
-                            <p>• BONUS: Keeping up with this will qualify you for our Lifetime and 5 year warranty on your Ceramic Coating.</p>
+                            <p>• BONUS: Keeping up with this will qualify you for our Lifetime warranty on your Ceramic Coating.</p>
                             <p className='bold text-xl mb-0'>Monthly Maintenance costs:</p>
                             <div className='maintenance-costs'>
                                 <p>SMALL <span className='special-package'>$130</span></p>
@@ -188,7 +189,7 @@ export default function ExtCoatings() {
                             <h4 className='text-xl mb-0 mt-0'>Yearly Maintenance:</h4>
                             <p>• We will wash the whole vehicle top to bottom, remove and tar/sap, and do an iron decontamination treatment.</p>
                             <p>• Then we will super lightly clay bar and/or polish the vehicle, if needed.</p>
-                            <p>• Finally we will top with a Ceramic Booster, and apply an Aquapel windshield coating.</p>
+                            <p>• Finally we will top with a ceramic booster and apply and another coat of ceramic to the windshield.</p>
                             <p>• BONUS: Keeping up with this will qualify you for our 5 year warranty on your Ceramic Coating.</p>
                             <p className='bold text-xl mb-0'>Yearly Maintenance costs:</p>
                             <div className='maintenance-costs'>
@@ -219,11 +220,6 @@ export default function ExtCoatings() {
                     </div>
                 </div>
             </div>
-        </div>
-        <div style={{paddingBottom: 25}}>
-            <Zoom>
-                <Image src={kenzo} style={{borderRadius: 20}} alt="igl coverage circle" placeholder='blur' />
-            </Zoom>
         </div>
 
     </section>

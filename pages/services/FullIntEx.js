@@ -42,7 +42,7 @@ export default function FullIntEx() {
         <meta property="og:description" content="The Full Interior cleaning is our most sought after service, and for good reason, it will completely renew your cars interior!" />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/services/FullIntEx" />
       </Head>
-      <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
+      <div className="cover">
         <Image src={cover} alt="Vehicle after a Full Interior Cleaning" layout="fill" objectFit='cover' placeholder='blur' priority />
       </div>
       <div className="servicepage-header">

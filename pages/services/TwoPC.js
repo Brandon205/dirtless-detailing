@@ -46,7 +46,7 @@ export default function TwoPC() {
         <meta property="og:description" content="Our Two Stage Paint Correction is for vehicles that need to be in perfect condition, this service will get them there." />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/services/TwoPC" />
       </Head>
-      <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
+      <div className="cover">
         <Image src={cover} alt="Vehicle after a Two Stage Paint Correction" layout="fill" objectFit='cover' placeholder='blur' priority />
       </div>
       <div className="servicepage-header">

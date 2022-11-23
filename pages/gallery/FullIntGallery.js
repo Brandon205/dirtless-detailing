@@ -13,7 +13,7 @@ export default function FullIntGallery() {
         <meta property="og:description" content="Check out some of the images before and after our Full Interior Cleaning to see the difference!" />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/gallery/FullIntGallery" />
       </Head>
-      <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
+      <div className="cover">
         <Image src={cover} alt="Vehicle after a Full Interior Cleaning" layout="fill" objectFit='cover' priority />
       </div>
       <header>

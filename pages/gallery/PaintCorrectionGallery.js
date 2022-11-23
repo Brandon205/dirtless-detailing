@@ -13,7 +13,7 @@ export default function PaintCorrectionGallery() {
         <meta property="og:description" content="Paint Correction Photos • Here are some examples from both our Single and Two Stage Paint Correction services!" />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/gallery/PaintCorrectionGallery" />
       </Head>
-      <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
+      <div className="cover">
         <Image src={cover} alt="Vehicle after a Two Stage Paint Correction" layout="fill" objectFit='cover' priority />
       </div>
       <header>

@@ -12,7 +12,7 @@ export default function About() {
         <meta property="og:description" content="Find out who we are, and get answers to some of our most frequently asked questions." />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/About" />
       </Head>
-      <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
+      <div className="cover">
         <Image src={cover} alt="Our Worktruck" layout="fill" objectFit='cover' priority />
       </div>
       <div className="servicepage-header">

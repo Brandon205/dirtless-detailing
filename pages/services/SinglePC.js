@@ -47,7 +47,7 @@ export default function SinglePC() {
         <meta property="og:description" content="Single Stage Paint Correction should fix most of your Paint Correction needs!" />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/services/SinglePC" />
       </Head>
-      <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
+      <div className="cover">
         <Image src={cover} alt="Vehicle after a Single Stage Paint Correction" layout="fill" objectFit='cover' placeholder='blur' priority />
       </div>
       <div className="servicepage-header">

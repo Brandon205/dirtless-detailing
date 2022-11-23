@@ -344,6 +344,13 @@ header h1 {
   z-index: 0;
 }
 
+.coating-cover {
+  position: absolute;
+  height: 75%;
+  width: 100%;
+  z-index: 0;
+}
+
 /** Contact Page CSS **/
 
 input[type='checkbox'] {
@@ -982,6 +989,21 @@ hr {
   z-index: 1;
 }
 
+.coatingpage-header {
+  position: relative;
+  color: var(--heading-clr1);
+  font-size: 2em;
+  padding-top: 0;
+  margin: 0 auto 70vh auto;
+  z-index: 1;
+}
+
+.coatingpage-header h1 {
+  font-size: 0.95em;
+  line-height: 2;
+  margin-top: 0;
+}
+
 .servicepage-heading {
   font-size: 2em;
 }
@@ -1101,7 +1123,7 @@ hr {
   background-color: var(--contact-bkg-clr);
   border-radius: 0.75rem;
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  margin: 10px auto;
+  margin: 1rem auto;
   width: 300px;
   color: white;
   padding: 1rem;
@@ -1604,6 +1626,15 @@ hr {
 
   .coating-left {
     text-align: left;
+  }
+
+  .coating-contact-btn {
+    margin-left: 44%;
+  }
+
+  .coatingpage-header h1 {
+    font-size: 2em;
+    line-height: 1;
   }
 
   .package-container {

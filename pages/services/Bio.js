@@ -44,7 +44,7 @@ export default function Bio() {
         <meta property="og:description" content="Smokers Car • Biohazard Cleaning • Odor Removal - See what we can do if your car has unwanted odors or smells" />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/services/Bio" />
       </Head>
-      <div className="cover" style={{backgroundImage: 'url(' + cover + ')' }}>
+      <div className="cover">
         <Image src={cover} alt="biohazard cleaning cover" layout="fill" objectFit='cover' placeholder='blur' priority />
       </div>
       <div className="servicepage-header">
@@ -117,6 +117,10 @@ export default function Bio() {
               <p className="pricing-price">$400-$1000</p>
             </div>
           </div>
+
+        <h4>Interested? Get in touch with us here, and let us know what we can do to help you!</h4>
+        <a href="/Contact" className="quote-btn main-quote-btn">Contact Us</a>
+
         </div>
       </div>
     </section>
