@@ -1632,6 +1632,14 @@ hr {
     font-size: 2.5em;
   }
 
+  .contact-container-right {
+    max-width: 800px;
+  }
+
+  .contact-information {
+    max-width: 800px;
+  }
+
   .coating-container {
     padding: 0 2rem 2rem 2rem;
   }

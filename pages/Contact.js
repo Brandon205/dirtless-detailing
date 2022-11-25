@@ -16,43 +16,6 @@ export default function Contact() {
     const formSubmit = (e) => {
         e.preventDefault();
 
-        console.log(e.target['name'].value)
-
-        // const formInfo = {
-        //     "Name": e.target[0].value,
-        //     "Email": e.target[1].value,
-        //     "Phone": e.target[2].value,
-        //     "Year": e.target[3].value,
-        //     "Make": e.target[4].value,
-        //     "Model": e.target[5].value,
-        //     "Message": e.target[6].value,
-        //     "Combo": e.target[7].checked ? 'Yes': 'No',
-        //     "Full Interior With Extraction": e.target[8].checked ? 'Yes': 'No',
-        //     "Full Interior Without Extraction": e.target[9].checked ? 'Yes': 'No',
-        //     "Biohazard Cleaning": e.target[0].checked ? 'Yes': 'No',
-        //     "Fabric Coating": e.target[11].checked ? 'Yes': 'No',
-        //     "Leather Coating": e.target[12].checked ? 'Yes': 'No',
-        //     "Headliners": e.target[13].checked ? 'Yes': 'No',
-        //     "Ozone": e.target[14].checked ? 'Yes': 'No',
-        //     "Dirtiness": e.target[15].value,
-        //     "Dog Hair": e.target[16].value,
-        //     "Dirt-Less Wash": e.target[17].checked ? 'Yes': 'No',
-        //     "Premium Dirt-Less Wash": e.target[18].checked ? 'Yes': 'No',
-        //     "Protect Package": e.target[19].checked ? 'Yes': 'No',
-        //     "Protect+ Package": e.target[20].checked ? 'Yes': 'No',
-        //     "Engine Bay": e.target[21].checked ? 'Yes': 'No',
-        //     "Glass Polishing (Exterior Add-on)": e.target[22].checked ? 'Yes': 'No',
-        //     "Waterspot Removal (Exterior Add-on)": e.target[23].checked ? 'Yes': 'No',
-        //     "Truck Bed Cleaning (Exterior Add-on)": e.target[24].checked ? 'Yes': 'No',
-        //     "Debadging (Exterior Add-on)": e.target[25].checked ? 'Yes': 'No',
-        //     "Fabric re-coating": e.target[26].checked ? 'Yes': 'No',
-        //     "Trim re-coating": e.target[27].checked ? 'Yes': 'No',
-        //     "Leather re-coating": e.target[28].checked ? 'Yes': 'No',
-        //     "Wheel Faces re-coating": e.target[29].checked ? 'Yes': 'No',
-        //     "Single Stage Paint Correction": e.target[30].checked ? 'Yes': 'No',
-        //     "Two Stage Paint Correction": e.target[31].checked ? 'Yes': 'No',
-        //     "Glass Polishing (Correction Add-on)": e.target[32].checked ? 'Yes': 'No'
-        // }
         const formInfo = {
             "Name": e.target['name'].value,
             "Email": e.target['email'].value,
@@ -75,6 +38,8 @@ export default function Contact() {
             "Premium Dirt-Less Wash": e.target['pdlWash'].checked ? 'Yes': 'No',
             "Protect Package": e.target['protect'].checked ? 'Yes': 'No',
             "Protect+ Package": e.target['protect+'].checked ? 'Yes': 'No',
+            "Monthly Maintenance": e.target['monthly'].checked ? 'Yes': 'No',
+            "Yearly Maintenance": e.target['yearly'].checked ? 'Yes': 'No',
             "Engine Bay": e.target['engine'].checked ? 'Yes': 'No',
             "Glass Polishing (Exterior Add-on)": e.target['glassEx'].checked ? 'Yes': 'No',
             "Waterspot Removal (Exterior Add-on)": e.target['waterspotEx'].checked ? 'Yes': 'No',
@@ -96,35 +61,33 @@ export default function Contact() {
                 formData.append(key, value);
             }
         });
-
-        console.log("FORM INFO ", formData)
         
-        // fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
-        //   method: "POST",
-        //   body: formData
-        // }).then((test) => {
-        //     toast.success("Form submitted! Expect an email reply soon!", {
-        //         position: "bottom-center",
-        //         autoClose: 5000,
-        //         hideProgressBar: false,
-        //         closeOnClick: true,
-        //         pauseOnHover: true,
-        //         draggable: true,
-        //         progress: undefined
-        //     })
-        //     e.target.reset()
-        //     window.scrollTo(0,0)
-        // }).catch(error => {
-        //     toast.error("An error occurred, please try again." + error, {
-        //         position: "bottom-center",
-        //         autoClose: 5000,
-        //         hideProgressBar: false,
-        //         closeOnClick: true,
-        //         pauseOnHover: true,
-        //         draggable: true,
-        //         progress: undefined
-        //     })
-        // });
+        fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
+          method: "POST",
+          body: formData
+        }).then((test) => {
+            toast.success("Form submitted! Expect an email reply soon!", {
+                position: "bottom-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined
+            })
+            e.target.reset()
+            window.scrollTo(0,0)
+        }).catch(error => {
+            toast.error("An error occurred, please try again." + error, {
+                position: "bottom-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined
+            })
+        });
     };
 
     let handleIntSelect = () => {
@@ -147,8 +110,6 @@ export default function Contact() {
         } else {
             setCoatingSelected(false)
         }
-
-        console.log(coatingSelected)
     }
 
   return (
@@ -379,6 +340,44 @@ export default function Contact() {
                 </div>
 
                 <div className="form-section">
+                    <p className='form-section-heading'>Ceramic Coating:</p>
+                    <div>
+                        <input type="checkbox" name="protect" id='protect' className='checkbox-input' onClick={() => handleIntSelect()} />
+                        <label title="Will automatically include a Single Stage Paint Correction." htmlFor="protect" className='checkbox-label'>Protect Ceramic Package</label>
+
+                        <input type="checkbox" name="protect+" id='protect+' className='checkbox-input' onClick={() => handleIntSelect()} />
+                        <label title="Will automatically include a Single Stage Paint Correction." htmlFor="protect+" className='checkbox-label'>Protect<span className='special-package'>+</span> Ceramic Package</label>
+                    </div>
+                </div>
+
+                <div className="form-section">
+                    <p className="form-section-heading">Monthly Maintenance (More details <a href="/services/ExtCoatings" className='aside-link'>here</a>):</p>
+                    <div>
+                        <input type="checkbox" name="monthly" id='monthly' className='checkbox-input' />
+                        <label htmlFor="monthly" className='checkbox-label'>Monthly Maintenance</label>
+                    </div>
+                    <hr className="contact-border" />
+
+                    <p className="form-section-heading">Yearly Maintenance (More details <a href="/services/ExtCoatings" className='aside-link'>here</a>):</p>
+                    <div>
+                        <input type="checkbox" name="yearly" id='yearly' className='checkbox-input' />
+                        <label htmlFor="yearly" className='checkbox-label'>Yearly Maintenance</label>
+
+                        <input type="checkbox" name="trim-recoat" id='trim-recoat' className='checkbox-input' />
+                        <label htmlFor="trim-recoat" className='checkbox-label'>Trim Re-coating</label>
+
+                        <input type="checkbox" name="wheel-recoat" id='wheel-recoat' className='checkbox-input' />
+                        <label htmlFor="wheel-recoat" className='checkbox-label'>Wheel Faces Re-coating</label>
+
+                        <input type="checkbox" name="fabric-recoat" id='fabric-recoat' className='checkbox-input' />
+                        <label htmlFor="fabric-recoat" className='checkbox-label'>Fabric Re-coating</label>
+
+                        <input type="checkbox" name="leather-recoat" id='leather-recoat' className='checkbox-input' />
+                        <label htmlFor="leather-recoat" className='checkbox-label'>Leather Re-coating</label>
+                    </div>
+                </div>
+
+                <div className="form-section">
                     <p className='form-section-heading'>Combo Deal (Comes with <span className='special-package'>FREE</span> engine bay cleaning):</p>
                     <div>
                         <input type="checkbox" name="combo" id='combo' className='checkbox-input' />
@@ -450,12 +449,6 @@ export default function Contact() {
 
                     <p className="form-section-heading">Exterior Add-ons:</p>
                     <div>
-                        <input type="checkbox" name="protect" id='protect' className='checkbox-input' onClick={() => handleIntSelect()} />
-                        <label htmlFor="protect" className='checkbox-label'>Protect Ceramic Package</label>
-
-                        <input type="checkbox" name="protect+" id='protect+' className='checkbox-input' onClick={() => handleIntSelect()} />
-                        <label htmlFor="protect+" className='checkbox-label'>Protect<span className='special-package'>+</span> Ceramic Package</label>
-
                         <input type="checkbox" id='engine' name="engine" className='checkbox-input' />
                         <label htmlFor="engine" className='checkbox-label' style={{marginBottom: 16}}>Engine Bay</label>
 
@@ -474,27 +467,10 @@ export default function Contact() {
                 </div>
 
                 <div className="form-section">
-                    <p className="form-section-heading">Ceramic re-coating Options:</p>
-                    <div>
-                        <input type="checkbox" name="fabric-recoat" id='fabric-recoat' className='checkbox-input' />
-                        <label htmlFor="fabric-recoat" className='checkbox-label'>Fabric</label>
-
-                        <input type="checkbox" name="trim-recoat" id='trim-recoat' className='checkbox-input' />
-                        <label htmlFor="trim-recoat" className='checkbox-label'>Trim</label>
-
-                        <input type="checkbox" name="leather-recoat" id='leather-recoat' className='checkbox-input' />
-                        <label htmlFor="leather-recoat" className='checkbox-label'>Leather</label>
-
-                        <input type="checkbox" name="wheel-recoat" id='wheel-recoat' className='checkbox-input' />
-                        <label htmlFor="wheel-recoat" className='checkbox-label'>Wheel Faces</label>
-                    </div>
-                </div>
-
-                <div className="form-section">
                     <p className='form-section-heading'>Paint Correction Services:</p>
                     <div>
                         <input type="checkbox" id='singlePC' name="singlePC" className='checkbox-input' disabled={!coatingSelected ? "" : "disabled"} />
-                        <label htmlFor="singlePC" className='checkbox-label'>Single Stage Paint Correction</label>
+                        <label title="Automatically included with either of the Ceramic Coating packages." htmlFor="singlePC" className='checkbox-label'>Single Stage Paint Correction</label>
 
                         <input type="checkbox" id='twoPC' name="twoPC" className='checkbox-input' />
                         <label htmlFor="twoPC" className='checkbox-label' style={{marginBottom: 16}}>Two Stage Paint Correction</label>

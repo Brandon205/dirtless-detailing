@@ -38,14 +38,14 @@ export default function ExtCoatings() {
                         <p className='subtext'>All of the paint on the exterior will be coated with IGL's Kenzo Graphene 10H coating.</p>
                     </div>
                     <div className='package-details'>
-                        <SiAdguard className='package-icon' />
-                        <h4>Lifetime Warranty<span className='special-package'>*</span><br />or 5 years or 50,000 miles</h4>
-                        <p className='subtext'>After your first coating if you follow through with our monthly maintenance your Ceramic coating has a lifetime guarantee through us.</p>
-                    </div>
-                    <div className='package-details'>
                         <BiCar className='package-icon' />
                         <h4>Coat Windshield and Lights</h4>
                         <p className='subtext'>The windshield and lights are the 2 next most essential things after paint to coat when giving your vehicle a ceramic coating.</p>
+                    </div>
+                    <div className='package-details'>
+                        <SiAdguard className='package-icon' />
+                        <h4>Lifetime Warranty<span className='special-package'>*</span><br />or 5 years or 50,000 miles</h4>
+                        <p className='subtext'>After your first coating if you follow through with our monthly maintenance your Ceramic coating has a lifetime guarantee through us.</p>
                     </div>
                 </div>
 
@@ -58,14 +58,14 @@ export default function ExtCoatings() {
                         <p className='subtext'>All of the paint on the exterior will be coated with IGL's Kenzo Graphene 10H coating.</p>
                     </div>
                     <div className='package-details'>
-                        <SiAdguard className='package-icon' />
-                        <h4>Lifetime Warranty<span className='special-package'>*</span><br />or 5 years or 50,000 miles</h4>
-                        <p className='subtext'>Our Protect+ package also comes with a lifetime warranty if you follow through with our monthly maintenance.</p>
-                    </div>
-                    <div className='package-details'>
                         <FaCar className='package-icon' />
                         <h4>Coat Trim, Glass, Lights, and Wheel Faces</h4>
                         <p className='subtext'>We will cover nearly the entire exterior of your vehicle, ensuring that it is completely protected all around.</p>
+                    </div>
+                    <div className='package-details'>
+                        <SiAdguard className='package-icon' />
+                        <h4>Lifetime Warranty<span className='special-package'>*</span><br />or 5 years or 50,000 miles</h4>
+                        <p className='subtext'>Our Protect+ package also comes with a lifetime warranty if you follow through with our monthly maintenance.</p>
                     </div>
                 </div>
 
