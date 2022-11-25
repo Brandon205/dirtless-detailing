@@ -7,14 +7,14 @@ import cover from '../../public/imgs/TwoStageCover.webp';
 const steps = [
   ["Wash Vehicle", "Thorough strip wash top to bottom using 2 bucket method or equivalent, including gas door."],
   ["Wheel Cleaning", "Clean wheels, wheel wells, and wheel barrels."],
+  ["Remove tar and sap", "Remove any and all tar and sap from the exterior."],
   ["Correction Prep - Clay Bar", "Clay bar the entire vehicle to remove contaminants and leave the paint smooth."],
   ["Correction Prep - Iron Decontamination", "Iron decontamination to get rid of the rest of the embedded iron particles in your paint."],
-  ["Remove tar and sap", "Remove any and all tar and sap from the exterior."],
   ["Dry Vehicle", "Dry the whole vehicle with clean towels and air blowers."],
   ["Tape Off Areas", "Tape off trim and sensitive areas (some detailers skip this step)."],
   ["Paint Correction", "Complete Two Stage paint correction using Griots products removing all scratches and swirls we possibly can while staying safe for vehicle specific clear coat thickness."],
   ["Remove Polishing Compound", "Remove polishing compound residue from cracks, crevices, etc."],
-  ["Protect Paint", "Protect paint with ceramic spray or ceramic coating."],
+  ["Protect Paint", "Protect paint with ceramic spray or "],
   ["Door Jambs", "Clean door jambs."],
   ["Dress Vehicle", "Dress all plastics, wheel wells, and tires."]
 ]
@@ -35,6 +35,7 @@ export default function TwoPC() {
         <div className="step-container">
           <h4 className="step-title">{item[0]}</h4>
           <p className='step-desc'>{item[1]}</p>
+          {id === 9 ? <a className='aside-link' href="/services/ExtCoatings">ceramic coating.</a> : ''}
         </div>
       </li>
     )
@@ -94,8 +95,8 @@ export default function TwoPC() {
         </div>
 
         <div>
-          <h3>Our Two  Stage Paint Correction Pricing</h3>
-          <h4>Our basic prices are shown below. Final pricing may vary based on your vehicle size.</h4>
+          <h3>Our Two Stage Paint Correction Pricing</h3>
+          <h4>Final pricing may vary based on your vehicle condition and size.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
               <h4 className="size">Small</h4>

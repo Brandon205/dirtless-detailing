@@ -27,7 +27,7 @@ export default function IntCoatings() {
         <div className="coating-container">
             <div className="coating-left">
                 <h2 className='mb-0 underline'>Fabric Coating</h2>
-                <p className='package-desc subtext'>Further protect the fabric inside of your vehicle with a ceramic coating to keep a cleaner and newer looking interior.</p>
+                <p className='package-desc subtext'>The best protection for the fabric inside of your vehicle.</p>
                 <div className='package-container'>
                     <div className='package-details'>
                         <GiRolledCloth className='package-icon' />
@@ -42,7 +42,7 @@ export default function IntCoatings() {
                 </div>
 
                 <h2 className='mb-0 underline'>Leather Coating</h2>
-                <p className='package-desc subtext'>Ceramic coat the leather inside of your vehicle to keep a cleaner, newer, and easier to clean interior.</p>
+                <p className='package-desc subtext'>The longest lasting protection for your vehicles leather.</p>
                 <div className='package-container'>
                     <div className='package-details'>
                         <GiLeatherBoot className='package-icon' />

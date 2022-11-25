@@ -70,6 +70,7 @@ body {
 
 .dd-desc {
   font-weight: 300;
+  font-size: 1.5em;
   line-height: 2;
   margin: 0 auto;
   max-width: 90vw;
@@ -967,10 +968,10 @@ hr {
 .about-container {
   margin-top: 39vh;
   max-width: 80vw;
-  color: black;
+  color: white;
 }
 
-.about-container h2 {
+.about-container h2, .about-container h3 {
   font-size: 3em;
 }
 
@@ -978,7 +979,8 @@ hr {
   text-align: left;
   letter-spacing: 1.2;
   padding-left: 0;
-  margin-bottom: 8vh;
+  padding-bottom: 8vh;
+  margin-bottom: 0;
 }
 
 .faq-li {
@@ -1014,7 +1016,7 @@ hr {
 }
 
 .coatingpage-header h1 {
-  font-size: 0.95em;
+  font-size: 0.8em;
   line-height: 2;
   margin-top: 0;
 }
@@ -1644,7 +1646,8 @@ hr {
   }
 
   .coatingpage-header h1 {
-    font-size: 2em;
+    font-size: 1.3em;
+    padding-top: 0.75rem;
     line-height: 1;
   }
 

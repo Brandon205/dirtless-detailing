@@ -39,7 +39,7 @@ export default function ExtCoatings() {
                     </div>
                     <div className='package-details'>
                         <SiAdguard className='package-icon' />
-                        <h4>Lifetime Warranty<span className='special-package'>*</span></h4>
+                        <h4>Lifetime Warranty<span className='special-package'>*</span><br />or 5 years or 50,000 miles</h4>
                         <p className='subtext'>After your first coating if you follow through with our monthly maintenance your Ceramic coating has a lifetime guarantee through us.</p>
                     </div>
                     <div className='package-details'>
@@ -59,7 +59,7 @@ export default function ExtCoatings() {
                     </div>
                     <div className='package-details'>
                         <SiAdguard className='package-icon' />
-                        <h4>Lifetime Warranty<span className='special-package'>*</span></h4>
+                        <h4>Lifetime Warranty<span className='special-package'>*</span><br />or 5 years or 50,000 miles</h4>
                         <p className='subtext'>Our Protect+ package also comes with a lifetime warranty if you follow through with our monthly maintenance.</p>
                     </div>
                     <div className='package-details'>
@@ -127,19 +127,19 @@ export default function ExtCoatings() {
                     <h3 style={{fontSize: 2 + 'em'}}>Ceramic Coating FAQ</h3>
                     <ul className='faq-ul'>
                         <li className='faq-li'>How long does it last?</li>
-                        <li className='faq-p'>The paint coating should last 5 years, or a Lifetime<span className='special-package'>*</span> with our warranty. The coating on any trim, glass, lights, or wheels will last 1 year approximately.</li>
+                        <li className='faq-p'>The paint coating should last 5 years, 50,000 miles, or a Lifetime<span className='special-package'>*</span> with our warranty. The coating on any trim, glass, lights, or wheels will last 1 year approximately.</li>
 
                         <li className='faq-li'>Can I still go through car washes?</li>
                         <li className='faq-p'>If you want to keep the ceramic coat in good condition and have it last as long as possible, you won't want to go through any car washes even touch-less ones.</li>
 
                         <li className='faq-li'>How should I wash my car then?</li>
-                        <li className='faq-p'>When we Ceramic Coat your car we can either set up a schedule to have your car professionally and safely washed by us. We can also give you a list of products that we recommend you use to wash your car while not damaging the ceramic coat.</li>
+                        <li className='faq-p'>For washing your coated vehicle you have a couple of options. Hand washing with our recommended products and techniques, or you can simply schedule monthly maintenance through us!</li>
 
                         <li className='faq-li'>How does the 5 year warranty work?</li>
                         <li className='faq-p'>If we do our yearly maintenance on the vehicle we guarantee that the ceramic coat will last 5 years or more.</li>
 
                         <li className='faq-li'>How does the Lifetime warranty work?</li>
-                        <li className='faq-p'>If we do monthly maintenance on the vehicle we guarantee that the coat will last a lifetime, and will keep a ceramic coat on it as long as you want.</li>
+                        <li className='faq-p'>Your vehicles paint coating is guaranteed for life as long as you are on our monthly maintenance schedule. If you ever wish to cancel monthly maintenance, the remainder of your 5 year 50,000 mile warranty you had before takes effect.</li>
                     </ul>
                 </div>
             </div>
@@ -188,7 +188,7 @@ export default function ExtCoatings() {
                             <h4 className='text-xl mb-0 mt-0'>Yearly Maintenance:</h4>
                             <p>• We will wash the whole vehicle top to bottom, remove and tar/sap, and do an iron decontamination treatment.</p>
                             <p>• Then we will super lightly clay bar and/or polish the vehicle, if needed.</p>
-                            <p>• Finally we will top with a ceramic booster and apply and another coat of ceramic to the windshield.</p>
+                            <p>• Finally we will top with a ceramic booster and apply another coat of ceramic to the windshield.</p>
                             <p>• BONUS: Keeping up with this will qualify you for our 5 year warranty on your Ceramic Coating.</p>
                             <p className='bold text-xl mb-0'>Yearly Maintenance costs:</p>
                             <div className='maintenance-costs'>

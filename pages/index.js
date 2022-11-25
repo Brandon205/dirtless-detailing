@@ -114,9 +114,9 @@ export default function Home() {
             <p>Check out more reviews on our <a style={{cursor: 'pointer'}} href="https://www.facebook.com/DirtLessDetailing/reviews">Facebook</a> page.</p>
 
             <section className="serviceareas-container">
-                <h3>We are currently detailing in these cities:</h3>
+                <h3>We can come to you in the following cities:</h3>
                 <p className='cities'>Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham.</p>
-                <p>As part of our simple and hassle free service, you can come to us or we can come to you with select packages!</p>
+                <h3>As part of our simple and hassle free service, you can come to us or we can come to you with select packages!</h3>
             </section>
         </div>
     )

@@ -117,7 +117,7 @@ export default function PopularServices() {
                     </li>
                     <li className="checklist-item">
                         <BsCheck2Circle className='checkcircle' />
-                        <p>Clean Wheel Wells, Wheel Barriers, and Wheels</p>
+                        <p>Full Single Stage Paint Correction Service</p>
                     </li>
                     <li className="checklist-item">
                         <BsCheck2Circle className='checkcircle' />

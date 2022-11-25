@@ -146,10 +146,10 @@ export default function MyApp({ Component, pageProps }) {
                                     <div className="nav-div">
                                         <h4 className='sub-menu-header'>CERAMIC COATING</h4>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <a href="/services/IntCoatings" className='menu-link'><GiCarSeat /> Interior Coating</a>
+                                            <a href="/services/ExtCoatings" className='menu-link'><AiOutlineCar /> Exterior Ceramic Coating</a>
                                         </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <a href="/services/ExtCoatings" className='menu-link'><AiOutlineCar /> Exterior Ceramic Coating</a>
+                                            <a href="/services/IntCoatings" className='menu-link'><GiCarSeat /> Interior Coating</a>
                                         </li>
                                         <hr className="nav-hr" />
                                         <h4 className='sub-menu-header'>INTERIOR CLEANING SERVICES</h4>
@@ -162,10 +162,10 @@ export default function MyApp({ Component, pageProps }) {
                                         <hr className="nav-hr" />
                                         <h4 className='sub-menu-header'>EXTERIOR CLEANING SERVICES</h4>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <a href="/services/DLWash" className='menu-link'><FaSoap /> Dirt-Less Wash</a>
+                                            <a href="/services/PDLWash" className='menu-link'><RiCarWashingFill /> Premium Dirt-Less Wash</a>
                                         </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <a href="/services/PDLWash" className='menu-link'><RiCarWashingFill /> Premium Dirt-Less Wash</a>
+                                            <a href="/services/DLWash" className='menu-link'><FaSoap /> Dirt-Less Wash</a>
                                         </li>
                                         <hr className="nav-hr" />
                                         <h4 className='sub-menu-header'>COMBO DEALS</h4>
@@ -236,8 +236,14 @@ export default function MyApp({ Component, pageProps }) {
                     <a href="/About" className='footer-link'>About Us</a>
                 </div>
                 <div className="footer-content-card">
+                    <h3>CERAMIC COATINGS</h3>
+                    <a href="/services/ExtCoatings" className='footer-link'>Exterior Ceramic Coating</a>
+                    <a href="/services/IntCoatings" className='footer-link'>Interior Coating</a>
+                </div>
+                <div className="footer-content-card">
                     <h3>INTERIOR</h3>
                     <a href="/services/FullIntEx" className='footer-link'>Full Interior Cleaning</a>
+                    <a href="/services/Combo" className='footer-link'>Interior + Exterior Combo</a>
                     <a href="/services/Bio" className='footer-link'>Smoke / Biohazard / Mold Removal</a>
                 </div>
                 <div className="footer-content-card">

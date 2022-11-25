@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import bio from '../public/imgs/pageimgs/bio/SeatsBA.webp';
-import combo from '../public/imgs/pageimgs/interior/combo.jpg';
+import combo from '../public/imgs/pageimgs/homepage/combo.jpg';
 import dlwash from '../public/imgs/pageimgs/homepage/dlwash.webp';
 import fullintex from '../public/imgs/pageimgs/interior/IMG_20200702_155834.jpg';
 import pdlwash from '../public/imgs/pageimgs/exterior/IMG_20220121_153454.jpg';

@@ -7,9 +7,9 @@ import cover from '../../public/imgs/PDLWashCover.webp';
 const steps = [
   ["Wash Vehicle", "Thorough strip wash top to bottom, including the gas door with the 2 bucket method or equivalent."],
   ["Wheel Cleaning", "Clean wheels, wheel wells, and wheel barrels."],
+  ["Remove tar and sap", "Remove any and all tar and sap from the exterior."],
   ["Wax Prep - Clay Bar", "Clay bar the whole vehicle so sealant properly adheres and paint is left smooth."],
   ["Wax Prep - Iron Decontamination", "Decontaminate the vehicle to make sure all microscopic iron contaminants are off of the paint. These are things that the clay bar won't get. This will improve wax adhesion as well."],
-  ["Remove tar and sap", "Remove any and all tar and sap from the exterior."],
   ["Dry Vehicle", "Dry the whole vehicle with clean towels and air blowers."],
   ["Apply Wax", "Apply sealant."],
   ["Door Jambs", "Clean door jambs."],
@@ -109,7 +109,7 @@ export default function PDLWash() {
 
         <div>
           <h3>Our Premium Dirt-Less Wash Pricing</h3>
-          <h4>Our basic prices are shown below. Final pricing may vary based on your vehicle size.</h4>
+          <h4>Final pricing may vary based on your vehicle condition and size.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
               <h4 className="size">SMALL</h4>

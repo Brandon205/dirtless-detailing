@@ -5,9 +5,9 @@ import Head from 'next/head';
 import 'react-medium-image-zoom/dist/styles.css';
 
 import cover from '../../public/imgs/pageimgs/exterior/IMG_20220121_153440.jpg';
-import exterior from '../../public/imgs/pageimgs/paintCorrection/IMG_20220902_085328.jpg';
-import engine from '../../public/imgs/pageimgs/engine/IMG_20220830_193915.jpg';
-import interior from '../../public/imgs/pageimgs/interior/IMG_20211210_142317.jpg';
+import exterior from '../../public/imgs/pageimgs/exterior/IMG_20220524_163118.jpg';
+import engine from '../../public/imgs/pageimgs/engine/IMG_20220524_144623.jpg';
+import interior from '../../public/imgs/pageimgs/interior/IMG_20220524_140445.jpg';
 
 export default function Combo() {
 
@@ -124,7 +124,7 @@ export default function Combo() {
 
         <div>
           <h3 className='pricing-title'>Our Combo Deal Pricing</h3>
-          <h4>Our basic prices are shown below. Final pricing may vary based on your vehicle size, condition, and whether or not you need extraction on the carpets.</h4>
+          <h4>Final pricing may vary based on your vehicle condition, size, and whether or not you need extraction.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
               <h4 className="size">SMALL</h4>

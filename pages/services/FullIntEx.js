@@ -6,10 +6,10 @@ import cover from '../../public/imgs/pageimgs/interior/fullIntExCover.webp';
 
 const steps = [
   ["Expose Hidden Dirt", "Use our Tornador Vortex blowgun which uses compressed air to blow out every spot a vacuum can't reach. It also extracts sand and loose soil from carpeting."],
-  ["Hot Water Extraction", "We use a professional hot water extractor and professional flex stain remover and alkaline floor rinse to keep floors at a neutral PH level. We will be sure to get all carpets, floor mats, and cloth seats."],
   ["Vacuum Vehicle", "Thoroughly vacuum every crack and crevice of the vehicle."],
+  ["Hot Water Extraction", "We use a professional hot water extractor and professional flex stain remover and alkaline floor rinse to keep floors at a neutral PH level. We will be sure to get all carpets, floor mats, and cloth seats."],
   ["Clean Plastics and Leathers", "Clean, steam, and degrease all plastics and leather seats."],
-  ["Dress Interior", "Dress all vinyl and leather (if requested)."],
+  ["Dress Interior", "Dress or "],
   ["Door Jambs", "Clean all of the door jambs."],
   ["Window Cleaning", "Clean windows."]
 ]
@@ -28,8 +28,9 @@ export default function FullIntEx() {
           <h3 className='step-number'>{id + 1}</h3><div className="vertical-rule"></div>
         </div>
         <div className='step-container'>
-          <h4 className="step-title">{item[0]}{id === 1 ? <span className='special-package'>*</span> : ""}</h4>
+          <h4 className="step-title">{item[0]}{id === 2 ? <span className='special-package'>*</span> : ""}</h4>
           <p className='step-desc'>{item[1]}</p>
+          {id === 4 ? <a className='aside-link' href="/services/IntCoatings">coat interior.</a> : ''}
         </div>
       </li>
     )
@@ -57,7 +58,7 @@ export default function FullIntEx() {
             <ol className='list'>
               {content}
             </ol>
-            <p style={{marginTop: 0}}>*Headliners offered as an add-on</p>
+            <p style={{marginTop: 0}}>*Headliners offered as a separate add-on</p>
             <p><span className='special-package'>*Extraction</span> Package Only</p>
           </div>
 
@@ -106,7 +107,7 @@ export default function FullIntEx() {
 
         <div>
           <h3 className='pricing-title'>Our Full Interior Cleaning Pricing</h3>
-          <h4 className='subtext'>*Final pricing may vary based on vehicle size/condition*</h4>
+          <h4 className='subtext'>Final pricing may vary based on your vehicle condition and size.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
               <h4 className="size">SMALL</h4>
