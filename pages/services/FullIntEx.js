@@ -81,12 +81,12 @@ export default function FullIntEx() {
                 <div className="addon-container">
                   <p className='addon-title'><a href="/services/Addons" className='text-blue'>Fabric Coating</a></p>
                   <p className='m-0'><span className="bold special-package">$75</span></p>
-                  <p className="addon-subtext">Apply IGL Fabric to all carpet and fabric.</p>
+                  <p className="addon-subtext">The best protection for the fabric inside of your vehicle.</p>
                 </div>
                 <div className="addon-container">
                   <p className='addon-title'><a href="/services/Addons" className='text-blue'>Leather Coating</a></p>
                   <p className='m-0'><span className="bold special-package">$150</span></p>
-                  <p className="addon-subtext">Install IGL Ecocoat Leather to all leather in the vehicle.</p>
+                  <p className="addon-subtext">The longest lasting protection for your vehicles leather.</p>
                 </div>
                 <div className="addon-container">
                   <p className='addon-title'><a href="/services/Addons" className='text-blue'>Ozone Treatment</a></p>
