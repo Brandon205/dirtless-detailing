@@ -9,46 +9,84 @@ import { MdOutlineEmail } from 'react-icons/md';
 
 export default function Contact() {
     const [intSelected, setIntSelected] = useState(false);
+    const [coatingSelected, setCoatingSelected] = useState(false);
 
     let formRef = useRef();
 
     const formSubmit = (e) => {
         e.preventDefault();
 
+        console.log(e.target['name'].value)
+
+        // const formInfo = {
+        //     "Name": e.target[0].value,
+        //     "Email": e.target[1].value,
+        //     "Phone": e.target[2].value,
+        //     "Year": e.target[3].value,
+        //     "Make": e.target[4].value,
+        //     "Model": e.target[5].value,
+        //     "Message": e.target[6].value,
+        //     "Combo": e.target[7].checked ? 'Yes': 'No',
+        //     "Full Interior With Extraction": e.target[8].checked ? 'Yes': 'No',
+        //     "Full Interior Without Extraction": e.target[9].checked ? 'Yes': 'No',
+        //     "Biohazard Cleaning": e.target[0].checked ? 'Yes': 'No',
+        //     "Fabric Coating": e.target[11].checked ? 'Yes': 'No',
+        //     "Leather Coating": e.target[12].checked ? 'Yes': 'No',
+        //     "Headliners": e.target[13].checked ? 'Yes': 'No',
+        //     "Ozone": e.target[14].checked ? 'Yes': 'No',
+        //     "Dirtiness": e.target[15].value,
+        //     "Dog Hair": e.target[16].value,
+        //     "Dirt-Less Wash": e.target[17].checked ? 'Yes': 'No',
+        //     "Premium Dirt-Less Wash": e.target[18].checked ? 'Yes': 'No',
+        //     "Protect Package": e.target[19].checked ? 'Yes': 'No',
+        //     "Protect+ Package": e.target[20].checked ? 'Yes': 'No',
+        //     "Engine Bay": e.target[21].checked ? 'Yes': 'No',
+        //     "Glass Polishing (Exterior Add-on)": e.target[22].checked ? 'Yes': 'No',
+        //     "Waterspot Removal (Exterior Add-on)": e.target[23].checked ? 'Yes': 'No',
+        //     "Truck Bed Cleaning (Exterior Add-on)": e.target[24].checked ? 'Yes': 'No',
+        //     "Debadging (Exterior Add-on)": e.target[25].checked ? 'Yes': 'No',
+        //     "Fabric re-coating": e.target[26].checked ? 'Yes': 'No',
+        //     "Trim re-coating": e.target[27].checked ? 'Yes': 'No',
+        //     "Leather re-coating": e.target[28].checked ? 'Yes': 'No',
+        //     "Wheel Faces re-coating": e.target[29].checked ? 'Yes': 'No',
+        //     "Single Stage Paint Correction": e.target[30].checked ? 'Yes': 'No',
+        //     "Two Stage Paint Correction": e.target[31].checked ? 'Yes': 'No',
+        //     "Glass Polishing (Correction Add-on)": e.target[32].checked ? 'Yes': 'No'
+        // }
         const formInfo = {
-            "Name": e.target[0].value,
-            "Email": e.target[1].value,
-            "Phone": e.target[2].value,
-            "Year": e.target[3].value,
-            "Make": e.target[4].value,
-            "Model": e.target[5].value,
-            "Message": e.target[6].value,
-            "Combo": e.target[7].checked ? 'Yes': 'No',
-            "Full Interior With Extraction": e.target[8].checked ? 'Yes': 'No',
-            "Full Interior Without Extraction": e.target[9].checked ? 'Yes': 'No',
-            "Biohazard Cleaning": e.target[0].checked ? 'Yes': 'No',
-            "Fabric Coating": e.target[11].checked ? 'Yes': 'No',
-            "Leather Coating": e.target[12].checked ? 'Yes': 'No',
-            "Headliners": e.target[13].checked ? 'Yes': 'No',
-            "Ozone": e.target[14].checked ? 'Yes': 'No',
-            "Dirtiness": e.target[15].value,
-            "Dog Hair": e.target[16].value,
-            "Dirt-Less Wash": e.target[17].checked ? 'Yes': 'No',
-            "Premium Dirt-Less Wash": e.target[18].checked ? 'Yes': 'No',
-            "Protect Package": e.target[19].checked ? 'Yes': 'No',
-            "Protect+ Package": e.target[20].checked ? 'Yes': 'No',
-            "Engine Bay": e.target[21].checked ? 'Yes': 'No',
-            "Glass Polishing (Exterior Add-on)": e.target[22].checked ? 'Yes': 'No',
-            "Waterspot Removal (Exterior Add-on)": e.target[23].checked ? 'Yes': 'No',
-            "Truck Bed Cleaning (Exterior Add-on)": e.target[24].checked ? 'Yes': 'No',
-            "Debadging (Exterior Add-on)": e.target[25].checked ? 'Yes': 'No',
-            "Fabric re-coating": e.target[26].checked ? 'Yes': 'No',
-            "Trim re-coating": e.target[27].checked ? 'Yes': 'No',
-            "Leather re-coating": e.target[28].checked ? 'Yes': 'No',
-            "Wheel Faces re-coating": e.target[29].checked ? 'Yes': 'No',
-            "Single Stage Paint Correction": e.target[30].checked ? 'Yes': 'No',
-            "Two Stage Paint Correction": e.target[31].checked ? 'Yes': 'No',
-            "Glass Polishing (Correction Add-on)": e.target[32].checked ? 'Yes': 'No'
+            "Name": e.target['name'].value,
+            "Email": e.target['email'].value,
+            "Phone": e.target['phone'].value,
+            "Year": e.target['year'].value,
+            "Make": e.target['make'].value,
+            "Model": e.target['model'].value,
+            "Message": e.target['message'].value,
+            "Combo": e.target['combo'].checked ? 'Yes': 'No',
+            "Full Interior With Extraction": e.target['fullIntEx'].checked ? 'Yes': 'No',
+            "Full Interior Without Extraction": e.target['fullInterior'].checked ? 'Yes': 'No',
+            "Biohazard Cleaning": e.target['bio'].checked ? 'Yes': 'No',
+            "Fabric Coating": e.target['fabric'].checked ? 'Yes': 'No',
+            "Leather Coating": e.target['leather'].checked ? 'Yes': 'No',
+            "Headliners": e.target['headliners'].checked ? 'Yes': 'No',
+            "Ozone": e.target['ozone'].checked ? 'Yes': 'No',
+            "Dirtiness": e.target['dirtiness'].value,
+            "Dog Hair": e.target['dogHair'].value,
+            "Dirt-Less Wash": e.target['dlWash'].checked ? 'Yes': 'No',
+            "Premium Dirt-Less Wash": e.target['pdlWash'].checked ? 'Yes': 'No',
+            "Protect Package": e.target['protect'].checked ? 'Yes': 'No',
+            "Protect+ Package": e.target['protect+'].checked ? 'Yes': 'No',
+            "Engine Bay": e.target['engine'].checked ? 'Yes': 'No',
+            "Glass Polishing (Exterior Add-on)": e.target['glassEx'].checked ? 'Yes': 'No',
+            "Waterspot Removal (Exterior Add-on)": e.target['waterspotEx'].checked ? 'Yes': 'No',
+            "Truck Bed Cleaning": e.target['truckBed'].checked ? 'Yes': 'No',
+            "Debadging": e.target['debadge'].checked ? 'Yes': 'No',
+            "Fabric re-coating": e.target['fabric-recoat'].checked ? 'Yes': 'No',
+            "Trim re-coating": e.target['trim-recoat'].checked ? 'Yes': 'No',
+            "Leather re-coating": e.target['leather-recoat'].checked ? 'Yes': 'No',
+            "Wheel Faces re-coating": e.target['wheel-recoat'].checked ? 'Yes': 'No',
+            "Single Stage Paint Correction": e.target['singlePC'].checked ? 'Yes': 'No',
+            "Two Stage Paint Correction": e.target['twoPC'].checked ? 'Yes': 'No',
+            "Glass Polishing (Correction Add-on)": e.target['glassCorrection'].checked ? 'Yes': 'No'
         }
         const formData = new FormData();
         Object.entries(formInfo).forEach(([key, value]) => {
@@ -58,46 +96,59 @@ export default function Contact() {
                 formData.append(key, value);
             }
         });
+
+        console.log("FORM INFO ", formData)
         
-        fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
-          method: "POST",
-          body: formData
-        }).then((test) => {
-            toast.success("Form submitted! Expect an email reply soon!", {
-                position: "bottom-center",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined
-            })
-            e.target.reset()
-            window.scrollTo(0,0)
-        }).catch(error => {
-            toast.error("An error occurred, please try again." + error, {
-                position: "bottom-center",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined
-            })
-        });
+        // fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
+        //   method: "POST",
+        //   body: formData
+        // }).then((test) => {
+        //     toast.success("Form submitted! Expect an email reply soon!", {
+        //         position: "bottom-center",
+        //         autoClose: 5000,
+        //         hideProgressBar: false,
+        //         closeOnClick: true,
+        //         pauseOnHover: true,
+        //         draggable: true,
+        //         progress: undefined
+        //     })
+        //     e.target.reset()
+        //     window.scrollTo(0,0)
+        // }).catch(error => {
+        //     toast.error("An error occurred, please try again." + error, {
+        //         position: "bottom-center",
+        //         autoClose: 5000,
+        //         hideProgressBar: false,
+        //         closeOnClick: true,
+        //         pauseOnHover: true,
+        //         draggable: true,
+        //         progress: undefined
+        //     })
+        // });
     };
 
     let handleIntSelect = () => {
-        if (formRef.current[8].checked && formRef.current[9].checked) {
+        if (formRef.current['fullIntEx'].checked && formRef.current['fullInterior'].checked) {
             setIntSelected(true)
-        } else if (formRef.current[8].checked || formRef.current[9].checked) {
+        } else if (formRef.current['fullIntEx'].checked || formRef.current['fullInterior'].checked) {
             setIntSelected(true)
         } else {
             setIntSelected(false)
-            formRef.current[11].checked = false
-            formRef.current[12].checked = false
+            formRef.current['fabric'].checked = false
+            formRef.current['leather'].checked = false
         }
-        console.log(intSelected)
+
+        if (formRef.current['protect'].checked && formRef.current['protect+'].checked) {
+            setCoatingSelected(true);
+            formRef.current['singlePC'].checked = false
+        } else if (formRef.current['protect'].checked || formRef.current['protect+'].checked) {
+            setCoatingSelected(true)
+            formRef.current['singlePC'].checked = false
+        } else {
+            setCoatingSelected(false)
+        }
+
+        console.log(coatingSelected)
     }
 
   return (
@@ -153,15 +204,15 @@ export default function Contact() {
                 <div className="form-section form-top-section">
                     <div>
                         <label htmlFor="name" className='text-input-label'>Name<span className='special-package'>*</span></label>
-                        <input type="text" id="name" name="Name" className='text-input' placeholder="Name" required />
+                        <input type="text" id="name" name="name" className='text-input' placeholder="Name" required />
                         <label htmlFor="email" className='text-input-label'>Email<span className='special-package'>*</span></label>
-                        <input type="email" id="email" name="Email" className='text-input' placeholder="Email" required />
+                        <input type="email" id="email" name="email" className='text-input' placeholder="Email" required />
                         <label htmlFor="phone" className='text-input-label'>Phone<span className='special-package'>*</span><small> (Ex: 111-123-4567)</small></label>
-                        <input type="tel" id="phone" name="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" className='text-input' placeholder="Phone Number" required />
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" className='text-input' placeholder="Phone Number" required />
 
                         <div className='select-field'>
                             <label htmlFor="year" className='text-input-label'>Year<span className='special-package'>*</span></label>
-                            <select id="year" name="Year" className='text-input year-input' placeholder="Year" required>
+                            <select id="year" name="year" className='text-input year-input' placeholder="Year" required>
                                 <option>Year</option>
                                 <option>2023</option>
                                 <option>2022</option>
@@ -231,7 +282,7 @@ export default function Contact() {
                         </div>
                         <div className='select-field'>
                             <label htmlFor="make" className='text-input-label'>Make<span className='special-package'>*</span></label>
-                            <select id="make" name="Make" className='text-input make-input' placeholder="Make" required>
+                            <select id="make" name="make" className='text-input make-input' placeholder="Make" required>
                                 <option>Make</option>
                                 <option>Acura</option>
                                 <option>Airstream</option>
@@ -317,12 +368,12 @@ export default function Contact() {
                         </div>
                         <div className='select-field'>
                             <label htmlFor="model" className='text-input-label'>Model<span className='special-package'>*</span></label>
-                            <input type="text" id="model" name="Model" className='text-input model-input' placeholder="Model" required />
+                            <input type="text" id="model" name="model" className='text-input model-input' placeholder="Model" required />
                         </div>
 
                         <div style={{width: 100 + '%'}}>
                             <label htmlFor="message" className='text-input-label'>Additional Information:</label>
-                            <textarea type="textarea" name="message" className='textarea' placeholder='Do you want our mobile service or to schedule a drop off? Do you have any other questions/concerns?' />
+                            <textarea type="textarea" name="message" id='message' className='textarea' placeholder='Do you want our mobile service or to schedule a drop off? Do you have any other questions/concerns?' />
                         </div>
                     </div>
                 </div>
@@ -389,30 +440,30 @@ export default function Contact() {
                 <div className="form-section">
                     <p className='form-section-heading'>Exterior Cleaning Services:</p>
                     <div>
-                        <input type="checkbox" id='dirtlessWash' name="dirtlessWash" className='checkbox-input' />
-                        <label htmlFor="dirtlessWash" className='checkbox-label'>Dirt-Less Wash</label>
+                        <input type="checkbox" id='dlWash' name="dirtless wash" className='checkbox-input' />
+                        <label htmlFor="dlWash" className='checkbox-label'>Dirt-Less Wash</label>
 
-                        <input type="checkbox" id='premium dirtlessWash' name="premium dirtlessWash" className='checkbox-input' />
-                        <label htmlFor="premium dirtlessWash" className='checkbox-label'>Premium Dirt-Less Wash</label>
+                        <input type="checkbox" id='pdlWash' name="premium dirtless wash" className='checkbox-input' />
+                        <label htmlFor="pdlWash" className='checkbox-label'>Premium Dirt-Less Wash</label>
                     </div>
                     <hr className="contact-border" />
 
                     <p className="form-section-heading">Exterior Add-ons:</p>
                     <div>
-                        <input type="checkbox" name="protect" id='protect' className='checkbox-input' />
+                        <input type="checkbox" name="protect" id='protect' className='checkbox-input' onClick={() => handleIntSelect()} />
                         <label htmlFor="protect" className='checkbox-label'>Protect Ceramic Package</label>
 
-                        <input type="checkbox" name="protect+" id='protect+' className='checkbox-input' />
+                        <input type="checkbox" name="protect+" id='protect+' className='checkbox-input' onClick={() => handleIntSelect()} />
                         <label htmlFor="protect+" className='checkbox-label'>Protect<span className='special-package'>+</span> Ceramic Package</label>
 
                         <input type="checkbox" id='engine' name="engine" className='checkbox-input' />
                         <label htmlFor="engine" className='checkbox-label' style={{marginBottom: 16}}>Engine Bay</label>
 
-                        <input type="checkbox" id='glass' name="glass" className='checkbox-input' />
-                        <label htmlFor="glass" className='checkbox-label'>Glass Polishing</label>
+                        <input type="checkbox" id='glassEx' name="glass" className='checkbox-input' />
+                        <label htmlFor="glassEx" className='checkbox-label'>Glass Polishing</label>
 
-                        <input type="checkbox" id='waterspot' name="waterspot" className='checkbox-input' />
-                        <label htmlFor="waterspot" className='checkbox-label'>Waterspot/Overspray Removal</label>
+                        <input type="checkbox" id='waterspotEx' name="waterspot" className='checkbox-input' />
+                        <label htmlFor="waterspotEx" className='checkbox-label'>Waterspot/Overspray Removal</label>
 
                         <input type="checkbox" id='truckBed' name="truckBed" className='checkbox-input' />
                         <label htmlFor="truckBed" className='checkbox-label'>Truck Bed Cleaning</label>
@@ -442,7 +493,7 @@ export default function Contact() {
                 <div className="form-section">
                     <p className='form-section-heading'>Paint Correction Services:</p>
                     <div>
-                        <input type="checkbox" id='singlePC' name="singlePC" className='checkbox-input' />
+                        <input type="checkbox" id='singlePC' name="singlePC" className='checkbox-input' disabled={!coatingSelected ? "" : "disabled"} />
                         <label htmlFor="singlePC" className='checkbox-label'>Single Stage Paint Correction</label>
 
                         <input type="checkbox" id='twoPC' name="twoPC" className='checkbox-input' />
@@ -452,8 +503,8 @@ export default function Contact() {
 
                     <p className="form-section-heading">Paint Correction Add-ons:</p>
                     <div>
-                        <input type="checkbox" id='correctionGlass' name="correctionGlass" className='checkbox-input' />
-                        <label htmlFor="correctionGlass" className='checkbox-label'>Glass Polishing</label>
+                        <input type="checkbox" id='glassCorrection' name="glass Correction" className='checkbox-input' />
+                        <label htmlFor="glassCorrection" className='checkbox-label'>Glass Polishing</label>
                     </div>
                     <input type="hidden" name="_gotcha" style={{display: 'none !important'}} />
                 </div>

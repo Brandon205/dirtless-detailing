@@ -365,6 +365,10 @@ input[type='checkbox']:checked + label {
   border-color: var(--main-clr);
 }
 
+input[type='checkbox']:checked + label .special-package {
+  color: white;
+}
+
 input[type='checkbox']:disabled + label {
   color: gray;
   cursor: default;
