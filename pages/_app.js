@@ -97,34 +97,34 @@ export default function MyApp({ Component, pageProps }) {
                 <title>Dirt-Less Detailing | Bonney Lakes Top Auto Detailer</title>
             </Head>
             <script type="application/ld+json" dangerouslySetInnerHTML={{__html:`
-                @context: https://schema.org,
-                @type: Car Detailing,
-                name: Dirt-Less Detailing,
+                @context: "https://schema.org",
+                @type: "Car Detailing",
+                name: "Dirt-Less Detailing",
                 address: {
-                @type:PostalAddress,
-                streetAddress: 9305 205th Ave E,
-                addressLocality: Bonney Lake,
-                addressRegion: WA,
-                postalCode: 98391,
-                addressCountry: US
+                @type:"PostalAddress",
+                streetAddress: "9305 205th Ave E",
+                addressLocality: "Bonney Lake",
+                addressRegion: "WA",
+                postalCode: "98391",
+                addressCountry: "US"
                 },
-                url: https://www.dirtlessdetailing.com,
-                priceRange: $$,
-                telephone: +12532529758,
+                url: "https://www.dirtlessdetailing.com",
+                priceRange: "$$",
+                telephone: "+12532529758",
                 openingHoursSpecification: [
                     {
-                        @type: OpeningHoursSpecification,
+                        @type: "OpeningHoursSpecification",
                         dayOfWeek: [
-                        Monday,
-                        Tuesday,
-                        Wednesday,
-                        Thursday,
-                        Friday,
-                        Saturday,
-                        Sunday
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday",
+                        "Sunday"
                         ],
-                        opens: 08:00,
-                        closes: 20:00
+                        opens: "08:00",
+                        closes: "20:00"
                     }
                 ]
             `}}></script>
