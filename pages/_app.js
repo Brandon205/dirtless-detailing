@@ -96,25 +96,25 @@ export default function MyApp({ Component, pageProps }) {
                 <link rel="icon" href="/favicon.ico" />
                 <title>Dirt-Less Detailing | Bonney Lakes Top Auto Detailer</title>
             </Head>
-            <script type="application/ld+json" dangerouslySetInnerHTML={{__html:`
-                @context: "https://schema.org",
-                @type: "Car Detailing",
-                name: "Dirt-Less Detailing",
-                address: {
-                @type:"PostalAddress",
-                streetAddress: "9305 205th Ave E",
-                addressLocality: "Bonney Lake",
-                addressRegion: "WA",
-                postalCode: "98391",
-                addressCountry: "US"
+            <script type="application/ld+json" dangerouslySetInnerHTML={{__html: {
+                "@context": "https://schema.org",
+                "@type": "Car Detailing",
+                "name": "Dirt-Less Detailing",
+                "address": {
+                "@type":"PostalAddress",
+                "streetAddress": "9305 205th Ave E",
+                "addressLocality": "Bonney Lake",
+                "addressRegion": "WA",
+                "postalCode": "98391",
+                "addressCountry": "US"
                 },
-                url: "https://www.dirtlessdetailing.com",
-                priceRange: "$$",
-                telephone: "+12532529758",
-                openingHoursSpecification: [
+                "url": "https://www.dirtlessdetailing.com",
+                "priceRange": "$$",
+                "telephone": "+12532529758",
+                "openingHoursSpecification": [
                     {
-                        @type: "OpeningHoursSpecification",
-                        dayOfWeek: [
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": [
                         "Monday",
                         "Tuesday",
                         "Wednesday",
@@ -123,11 +123,11 @@ export default function MyApp({ Component, pageProps }) {
                         "Saturday",
                         "Sunday"
                         ],
-                        opens: "08:00",
-                        closes: "20:00"
+                        "opens": "08:00",
+                        "closes": "20:00"
                     }
                 ]
-            `}}></script>
+            }}}></script>
             <header className="App-header">
                 <nav id="nav">
                     <a style={{display: 'flex', justifyContent: 'flex-start', flex: 1}} href="/"><Image src={ddLogo} objectFit="contain" width={smallScreen ? 120 : 140} height={smallScreen ? 90 : 105} className="logo" alt="logo" /></a>
