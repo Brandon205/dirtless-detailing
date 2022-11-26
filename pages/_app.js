@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import Script from 'next/script';
+import {LocalBusinessJsonLd} from 'next-seo';
 import { useRouter } from 'next/router';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -96,7 +96,44 @@ export default function MyApp({ Component, pageProps }) {
                 <link rel="icon" href="/favicon.ico" />
                 <title>Dirt-Less Detailing | Bonney Lakes Top Auto Detailer</title>
             </Head>
-            <script type="application/ld+json" dangerouslySetInnerHTML={{__html: {
+            <LocalBusinessJsonLd
+                type="Car Detailing"
+                id="https://www.dirtlessdetailing.com"
+                name="Dirt-Less Detailing"
+                description="Dirt-Less Detailing is here to provide the highest-quality detailing services at great prices here in the Bonney Lake area. Come check out our offers!"
+                url="https://www.dirtlessdetailing.com/"
+                telephone="+12532529758"
+                address={{
+                    streetAddress: "9305 205th Ave E",
+                    addressLocality: "Bonney Lake",
+                    addressRegion: "WA",
+                    postalCode: "98391",
+                    addressCountry: "US"
+                }}
+                geo={{
+                    latitude: '47.172955345482336',
+                    longitude: '-122.15679612413133',
+                }}
+                openingHours={[
+                    {
+                    opens: '08:00',
+                    closes: '20:00',
+                    dayOfWeek: [
+                        'Monday',
+                        'Tuesday',
+                        'Wednesday',
+                        'Thursday',
+                        'Friday',
+                        'Saturday',
+                        'Sunday'
+                    ],
+                    validFrom: '2019-12-23',
+                    validThrough: '2020-04-02',
+                    }
+                ]}
+                priceRange="$$"
+                />
+            {/* <script type="application/ld+json" dangerouslySetInnerHTML={{__html: {
                 "@context": "https://schema.org",
                 "@type": "Car Detailing",
                 "name": "Dirt-Less Detailing",
@@ -127,7 +164,7 @@ export default function MyApp({ Component, pageProps }) {
                         "closes": "20:00"
                     }
                 ]
-            }}}></script>
+            }}}></script> */}
             <header className="App-header">
                 <nav id="nav">
                     <a style={{display: 'flex', justifyContent: 'flex-start', flex: 1}} href="/"><Image src={ddLogo} objectFit="contain" width={smallScreen ? 120 : 140} height={smallScreen ? 90 : 105} className="logo" alt="logo" /></a>
