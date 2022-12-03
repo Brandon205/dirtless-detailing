@@ -96,28 +96,31 @@ export default function SinglePC() {
         </div>
 
         <div>
-          <h3>Our Single Stage Paint Correction Pricing</h3>
-          <h4>Final pricing may vary based on your vehicle condition and size.</h4>
+          <h3 className='pricing-title'>Our Single Stage Paint Correction Pricing</h3>
+          <h4 className='pricing-subtext'>Final pricing may vary based on your vehicle condition and size.</h4>
           <div className="pricing-container">
           <div className="pricing-card">
               <h4 className="size">Small</h4>
-              <p className="example-vehicle">(Most Cars and Smaller Trucks)</p>
-              <p className="pricing-price">$300 - $450</p>
+              <p className="pricing-price pricing-border">$300- $450</p>
+              <p className="example-vehicle pricing-border">Smaller Trucks</p>
+              <p className="example-vehicle pricing-border">Most Cars</p>
+              <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
             </div>
             <div className="pricing-card">
               <h4 className="size">Medium</h4>
-              <p className="example-vehicle">(Mid-Size SUV's, and Most Wagons)</p>
-              <p className="pricing-price">$450 - $600</p>
+              <p className="pricing-price pricing-border">$450- $600</p>
+              <p className="example-vehicle pricing-border">Mid-Size SUV's</p>
+              <p className="example-vehicle pricing-border">Most Wagons</p>
+              <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
             </div>
             <div className="pricing-card">
               <h4 className="size">Large</h4>
-              <p className="example-vehicle">(Large SUV's and Large Trucks)</p>
-              <p className="pricing-price">$600 - $850</p>
+              <p className="pricing-price pricing-border">$600- $850</p>
+              <p className="example-vehicle pricing-border">Large SUV's</p>
+              <p className="example-vehicle pricing-border">Trucks</p>
+              <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
             </div>
           </div>
-
-          <h4>Interested? Get in touch with us here, and let us know what we can do to help you!</h4>
-          <a href="/Contact" className="quote-btn main-quote-btn">Contact Us</a>
 
         </div>
       </div>

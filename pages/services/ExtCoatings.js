@@ -74,8 +74,7 @@ export default function ExtCoatings() {
                     <h4 className='subtext'><span className='special-package'>*</span>Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</h4>
                     <div className="pricing-container">
                         <div className="pricing-card">
-                            <h4 className="size">SMALL</h4>
-                            <p className="example-vehicle">(2 Door Coupes, Single and Extended Cabs)</p>
+                            <h4 className="size">Small</h4>
                             <div className='fullInt-pricing-container'>
                                 <div className='pricing-outline outline-padding'>
                                     <p className='white-text'>Protect</p>
@@ -86,10 +85,10 @@ export default function ExtCoatings() {
                                     <p className="pricing-price">$1,500</p>
                                 </div>
                             </div>
+                            <p className="example-vehicle">(2 Door Coupes, Single and Extended Cabs)</p>
                         </div>
                         <div className="pricing-card">
-                            <h4 className="size">MEDIUM</h4>
-                            <p className="example-vehicle">(4 Door Sedans, 4 Door Trucks, Smaller SUV's)</p>
+                            <h4 className="size">Medium</h4>
                             <div className='fullInt-pricing-container'>
                                 <div className='pricing-outline outline-padding'>
                                     <p className='white-text'>Protect</p>
@@ -100,10 +99,10 @@ export default function ExtCoatings() {
                                     <p className="pricing-price">$1,700</p>
                                 </div>
                             </div>
+                            <p className="example-vehicle">(4 Door Sedans, 4 Door Trucks, Smaller SUV's)</p>
                         </div>
                         <div className="pricing-card">
-                            <h4 className="size">LARGE</h4>
-                            <p className="example-vehicle">(All Large SUV's and any 3 Row SUV's)</p>
+                            <h4 className="size">Large</h4>
                             <div className='fullInt-pricing-container'>
                                 <div className='pricing-outline outline-padding'>
                                     <p className='white-text'>Protect</p>
@@ -114,6 +113,7 @@ export default function ExtCoatings() {
                                     <p className="pricing-price">$1,900</p>
                                 </div>
                             </div>
+                            <p className="example-vehicle">(All Large SUV's and any 3 Row SUV's)</p>
                         </div>
                     </div>
 
@@ -174,9 +174,9 @@ export default function ExtCoatings() {
                             <p>Every month you get a <a href="/services/DLWash" className='aside-link'>Dirt-Less Wash</a> with a ceramic booster and a <a href='/services/FullIntEx' className='aside-link'>Full Interior Detail</a>.</p>
                             <p className='bold text-xl mb-0'>Monthly Maintenance Pricing:</p>
                             <div className='maintenance-costs'>
-                                <p>SMALL <span className='special-package'>$130</span></p>
-                                <p>MEDIUM <span className='special-package'>$160</span></p>
-                                <p>LARGE <span className='special-package'>$190</span></p>
+                                <p>Small <span className='special-package'>$130</span></p>
+                                <p>Medium <span className='special-package'>$160</span></p>
+                                <p>Large <span className='special-package'>$190</span></p>
                             </div>
                         </div>
                     </div>
@@ -192,9 +192,9 @@ export default function ExtCoatings() {
                             <p>• BONUS: Keeping up with this will qualify you for our 5 year warranty on your Ceramic Coating.</p>
                             <p className='bold text-xl mb-0'>Yearly Maintenance costs:</p>
                             <div className='maintenance-costs'>
-                                <p>SMALL <span className='special-package'>$200</span></p>
-                                <p>MEDIUM <span className='special-package'>$250</span></p>
-                                <p>LARGE <span className='special-package'>$300</span></p>
+                                <p>Small <span className='special-package'>$200</span></p>
+                                <p>Medium <span className='special-package'>$250</span></p>
+                                <p>Large <span className='special-package'>$300</span></p>
                             </div>
                         </div>
                     </div>

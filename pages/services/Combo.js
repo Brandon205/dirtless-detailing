@@ -124,32 +124,37 @@ export default function Combo() {
 
         <div>
           <h3 className='pricing-title'>Our Combo Deal Pricing</h3>
-          <h4>Final pricing may vary based on your vehicle condition, size, and whether or not you need extraction.</h4>
+          <h4 className='pricing-subtext'>Final pricing may vary based on your vehicle condition, size, and whether or not you need extraction.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
-              <h4 className="size">SMALL</h4>
-              <p className="example-vehicle">(Most Cars and Smaller Trucks)</p>
-              <p className="pricing-price">$350 - $400</p>
+              <h4 className="size">Small</h4>
+              <p className="pricing-price pricing-border">$350- $400</p>
+              <p className="example-vehicle pricing-border">Smaller Trucks</p>
+              <p className="example-vehicle pricing-border">Most Cars</p>
+              <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
             </div>
             <div className="pricing-card">
-              <h4 className="size">MEDIUM</h4>
-              <p className="example-vehicle">(Mid-Size SUV's, and Most Wagons)</p>
-              <p className="pricing-price">$450 - $500</p>
+              <h4 className="size">Medium</h4>
+              <p className="pricing-price pricing-border">$450- $500</p>
+              <p className="example-vehicle pricing-border">Mid-Size SUV's</p>
+              <p className="example-vehicle pricing-border">Most Wagons</p>
+              <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
             </div>
             <div className="pricing-card">
-              <h4 className="size">LARGE</h4>
-              <p className="example-vehicle">(Large SUV's and Large trucks)</p>
-              <p className="pricing-price">$550 - $600</p>
+              <h4 className="size">Large</h4>
+              <p className="pricing-price pricing-border">$550- $600</p>
+              <p className="example-vehicle pricing-border">Large SUV's</p>
+              <p className="example-vehicle pricing-border">Large trucks</p>
+              <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
             </div>
             <div className="pricing-card">
-              <h4 className="size">EXTRA LARGE</h4>
-              <p className="example-vehicle">(Extra Large Vehicles)</p>
-              <p className="pricing-price">$625 - $700</p>
+              <h4 className="size">Extra Large</h4>
+              <p className="pricing-price pricing-border">$625- $700</p>
+              <p className="example-vehicle pricing-border">Large Trucks</p>
+              <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
+              <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
             </div>
           </div>
-
-          <h4>Interested? Get in touch with us here, and let us know what we can do to help you!</h4>
-          <a href="/Contact" className="quote-btn main-quote-btn">Contact Us</a>
 
         </div>
     </section>

@@ -110,7 +110,7 @@ export default function FullIntEx() {
           <h4 className='subtext'>Final pricing may vary based on your vehicle condition and size.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
-              <h4 className="size">SMALL</h4>
+              <h4 className="size">Small</h4>
               <p className="example-vehicle">(2 Door Coupes, Single and Extended Cabs)</p>
               <div className='fullInt-pricing-container'>
                 <div className='pricing-outline'>
@@ -124,7 +124,7 @@ export default function FullIntEx() {
               </div>
             </div>
             <div className="pricing-card">
-              <h4 className="size">MEDIUM</h4>
+              <h4 className="size">Medium</h4>
               <p className="example-vehicle">(4 Door Sedans, 4 Door Trucks, Smaller SUV's)</p>
               <div className='fullInt-pricing-container'>
                 <div className='pricing-outline'>
@@ -138,7 +138,7 @@ export default function FullIntEx() {
               </div>
             </div>
             <div className="pricing-card">
-              <h4 className="size">LARGE</h4>
+              <h4 className="size">Large</h4>
               <p className="example-vehicle">(All Large SUV's and any 3 Row SUV's)</p>
               <div className='fullInt-pricing-container'>
                 <div className='pricing-outline'>

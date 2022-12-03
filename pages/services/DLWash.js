@@ -99,8 +99,8 @@ export default function DLWash() {
         </div>
 
         <div>
-          <h3 className='pricing-title'>Our Dirt-Less Wash Pricing</h3>
-          <h4 className='pricing-subtext'>Final pricing may vary based on your vehicle condition and size.</h4>
+          <h3 className='pricing-title'>Dirt-Less Wash Pricing</h3>
+          <h4 className='pricing-subtext'>*Final pricing may vary based on your vehicle condition and size.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
               <h4 className="size">Small</h4>
@@ -120,7 +120,7 @@ export default function DLWash() {
               <h4 className="size">Large</h4>
               <p className="pricing-price pricing-border">$125</p>
               <p className="example-vehicle pricing-border">Large SUV's</p>
-              <p className="example-vehicle pricing-border">Big trucks</p>
+              <p className="example-vehicle pricing-border">Trucks</p>
               <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
             </div>
             <div className="pricing-card">
@@ -131,9 +131,6 @@ export default function DLWash() {
               <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
             </div>
           </div>
-
-          {/* <h4>Interested? Get in touch with us here, and let us know what we can do to help you!</h4>
-          <a href="/Contact" className="quote-btn main-quote-btn">Contact Us</a> */}
 
         </div>
       </div>

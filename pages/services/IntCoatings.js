@@ -122,9 +122,9 @@ export default function IntCoatings() {
                             <p>Every month you get a <a href="/services/DLWash" className='aside-link'>Dirt-Less Wash</a> with a ceramic booster and a <a href='/services/FullIntEx' className='aside-link'>Full Interior Detail</a>.</p>
                             <p className='bold text-xl mb-0'>Monthly Maintenance Pricing:</p>
                             <div className='maintenance-costs'>
-                                <p>SMALL <span className='special-package'>$130</span></p>
-                                <p>MEDIUM <span className='special-package'>$160</span></p>
-                                <p>LARGE <span className='special-package'>$190</span></p>
+                                <p>Small <span className='special-package'>$130</span></p>
+                                <p>Medium <span className='special-package'>$160</span></p>
+                                <p>Large <span className='special-package'>$190</span></p>
                             </div>
                         </div>
                     </div>
