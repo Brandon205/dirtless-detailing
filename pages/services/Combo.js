@@ -38,7 +38,7 @@ export default function Combo() {
                   </div>
                   <div className="step-container">
                     <h4 className="step-title">Full Interior Cleaning</h4>
-                    <p className='step-desc'>We will start by cleaning out the interior of the vehicle so that anything we blow out doesn't end up on the cleaned exterior. For more details on our exact full interior methods, check out our <a href='/services/FullIntEx' className='special-package'>Full Interior</a> page.</p>
+                    <p className='step-desc'>We will start by cleaning out the interior of the vehicle so that anything we blow out doesn't end up on the cleaned exterior. For more details on our exact full interior methods, check out our <a href='/services/FullIntEx' className='aside-link'>Full Interior</a> page.</p>
                   </div>
                 </li>
                 
@@ -48,7 +48,7 @@ export default function Combo() {
                   </div>
                   <div className="step-container">
                     <h4 className="step-title">Engine Bay Cleaning</h4>
-                    <p className='step-desc'>We will then clean out the engine bay, continuing to clean from the inside of the vehicle out, so that the exterior will be spotless at the end. More information for the engine cleaning is posted <a href='/services/Addons' className='special-package'>here</a>.</p>
+                    <p className='step-desc'>We will then clean out the engine bay, continuing to clean from the inside of the vehicle out, so that the exterior will be spotless at the end. More information for the engine cleaning is posted <a href='/services/Addons' className='aside-link'>here</a>.</p>
                   </div>
                 </li>
 
@@ -58,7 +58,7 @@ export default function Combo() {
                   </div>
                   <div className="step-container">
                     <h4 className="step-title">Premium Dirt-Less Wash</h4>
-                    <p className='step-desc'>After cleaning and dressing the engine bay, we will finally move onto the exterior as the last step. We will perform our Premium Dirt-Less Wash procedure on your vehicle. For more details check out our <a href='/services/PDLWash' className='special-package'>Premium Dirt-Less Wash</a> page.</p>
+                    <p className='step-desc'>After cleaning and dressing the engine bay, we will finally move onto the exterior as the last step. We will perform our Premium Dirt-Less Wash procedure on your vehicle. For more details check out our <a href='/services/PDLWash' className='aside-link'>Premium Dirt-Less Wash</a> page.</p>
                   </div>
                 </li>
               </ol>
@@ -78,7 +78,7 @@ export default function Combo() {
                     <p className='m-0'><span className="bold special-package">$80</span>/hour</p>
                     <p className='addon-subtext'>Gives you crystal clear windows.</p>
                   </div>
-                  <hr className="contact-border" style={{marginBottom: 16}} />
+                  <hr className='aside-border' />
                   <div className="addon-container">
                     <p className='addon-title'><a href="/services/Addons" className='text-blue'>Waterspot/Overspray Removal</a></p>
                     <p className='m-0'><span className="bold special-package">$80</span>/hour</p>

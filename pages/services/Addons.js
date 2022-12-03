@@ -27,7 +27,7 @@ export default function Addons() {
         <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
       </div>
 
-      <h2 style={{fontSize: 32}}>Our Current Dirt-Less Add-ons:</h2>
+      <h2 style={{fontSize: 40}}>Our Current Add-ons:</h2>
       <div className="addon-content-container">
 
         <h3 className='addons-subheading'>Exterior Add-ons:</h3>
@@ -36,8 +36,8 @@ export default function Addons() {
             <Image style={{borderRadius: 16}} src={truckBed} alt="Truck Bed Cleaning" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
           </div>
           <div className="feature-desc-area">
-            <p className='service-heading-link'>Truck Bed Cleaning</p>
-            <p className="secondary-text">Cost: <span>$25</span></p>
+            <p className='service-heading-subtitle'>Truck Bed Cleaning</p>
+            <p className="secondary-text"><span>$25</span></p>
             <p className="service-desc">This is our add-on to get your truck bed cleaned out. Can be added to either of our Dirt-Less Washes.</p>
             <div className='internal-links'>
               <a href="/services/DLWash" className="readmore">Dirt-Less Wash</a>
@@ -52,8 +52,8 @@ export default function Addons() {
             <Image style={{borderRadius: 16}} src={engine} alt="Cleaned Engine Bay" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
           </div>
           <div className="feature-desc-area">
-            <p className='service-heading-link'>Engine Bay Cleaning</p>
-            <p className="secondary-text">Cost: <span>$80</span></p>
+            <p className='service-heading-subtitle'>Engine Bay Cleaning</p>
+            <p className="secondary-text"><span>$80</span></p>
             <p className="service-desc">We will cover sensitive/electronic areas in the bay, clean and wash, then dress the engine bay to have it looking like new!</p>
             <div className='internal-links'>
               <a href="/services/DLWash" className="readmore">Dirt-Less Wash</a>
@@ -68,8 +68,8 @@ export default function Addons() {
             <Image style={{borderRadius: 16}} src={glassPolish} alt="Window after a glass polishing" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
           </div>
           <div className="feature-desc-area">
-            <p className='service-heading-link'>Glass Polishing</p>
-            <p className="secondary-text">Hourly Rate: <span>$80/hour</span></p>
+            <p className='service-heading-subtitle'>Glass Polishing</p>
+            <p className="secondary-text"><span>$80/hour</span></p>
             <p className="service-desc">Remove all scratches, etching, and watermarks possible. Can be added to any of our Paint Correction Services when contacting us.</p>
             <div className='internal-links'>
               <a href="/services/SinglePC" className="readmore">Single Stage Paint Correction</a>
@@ -84,8 +84,8 @@ export default function Addons() {
             <Image style={{borderRadius: 16}} src={waterspot} alt="Waterspot / Overspray removal after" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
           </div>
           <div className="feature-desc-area">
-            <p className='service-heading-link'>Waterspot/Overspray Removal</p>
-            <p className="secondary-text">Hourly rate: <span>$80/hour</span></p>
+            <p className='service-heading-subtitle'>Waterspot/Overspray Removal</p>
+            <p className="secondary-text"><span>$80/hour</span></p>
             <p className="service-desc">Remove all overspray and waterspots we can. This can be added onto any of our Exterior Washes or either of our Paint Correction Services when contacting us.</p>
             <div className='internal-links'>
               <a href="/services/DLWash" className="readmore">Dirt-Less Wash</a>
@@ -102,8 +102,8 @@ export default function Addons() {
             <Image style={{borderRadius: 16}} src={debadge} alt="Vehicle side shot" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
           </div>
           <div className="feature-desc-area">
-            <p className='service-heading-link'>Debadging</p>
-            <p className="secondary-text">Hourly rate: <span>$80/hour</span></p>
+            <p className='service-heading-subtitle'>Debadging</p>
+            <p className="secondary-text"><span>$80/hour</span></p>
             <p className="service-desc">Remove any vehicle badging including any residue left behind after removal</p>
             <div className='internal-links'>
               <a href="/services/DLWash" className="readmore">Dirt-Less Wash</a>
@@ -121,8 +121,8 @@ export default function Addons() {
             <Image style={{borderRadius: 16}} src={headliner} alt="Cleaned Headliners" className='otherservices-image' loading='lazy' placeholder='blur' quality={100} />
           </div>
           <div className="feature-desc-area">
-            <p className='service-heading-link'>Headliner Cleaning</p>
-            <p className="secondary-text">Cost: <span>$40-$80</span></p>
+            <p className='service-heading-subtitle'>Headliner Cleaning</p>
+            <p className="secondary-text"><span>$40-$80</span></p>
             <p className="service-desc">We will perform cleaning methods specific to your vehicles headliner material. We do this to prevent sagging and damage to the headliners. (Results may vary)</p>
             <div className='internal-links'>
               <a href="/services/FullIntEx" className="readmore">Full Interior Cleaning</a>
@@ -137,8 +137,8 @@ export default function Addons() {
             <Image style={{borderRadius: 16}} src={ozone} alt="Ozone Treatment in Progress" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
           </div>
           <div className="feature-desc-area">
-            <p className='service-heading-link'>Ozone Treatment</p>
-            <p className="secondary-text">Cost: <span>$100</span></p>
+            <p className='service-heading-subtitle'>Ozone Treatment</p>
+            <p className="secondary-text"><span>$100</span></p>
             <p className="service-desc">Ozone treatment is the use of O3 (gas ozone) to remove bacteria, viruses, and odors from your vehicle. This can be added to any of our Interior cleanings when contacting us.</p>
             <div className='internal-links'>
               <a href="/services/FullIntEx" className="readmore">Full Interior Cleaning</a>

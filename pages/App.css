@@ -519,6 +519,12 @@ input[type="range"] {
   width: 100%;
 }
 
+.aside-border {
+  opacity: 0.6;
+  width: 95%;
+  margin: 1rem auto;
+}
+
 .contact-icon-container {
   display: flex;
   justify-content: flex-start;
@@ -590,6 +596,14 @@ input[type="range"] {
   background-color: #636364c4;
   top: 1rem;
   z-index: 5;
+}
+
+.service-heading-subtitle {
+  display: block;
+  margin-bottom: 0.25rem;
+  text-decoration: none;
+  font-size: 1.75em;
+  font-weight: 600;
 }
 
 .service-heading-link {
@@ -798,6 +812,7 @@ input[type="range"] {
 
 .secondary-text span {
   color: var(--main-clr);
+  font-size: 1.3em;
 }
 
 .readmore {

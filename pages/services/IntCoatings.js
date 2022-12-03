@@ -102,6 +102,7 @@ export default function IntCoatings() {
                                     <p className='m-0 subtext'>Starting at: <span className="bold special-package">$1,000</span></p>
                                     <p className="addon-subtext">Ceramic Coating package that covers and protects only the most essential parts of your vehicle.</p>
                                 </div>
+                                <hr className='aside-border' />
                                 <div className="addon-container">
                                     <p className='addon-title'><a href="/services/ExtCoatings" className='text-blue'>Protect<span className="bold special-package">+</span> Ceramic Coating</a></p>
                                     <p className='m-0 subtext'>Starting at: <span className="bold special-package">$1,500</span></p>
@@ -116,8 +117,10 @@ export default function IntCoatings() {
                     <div className='aside-container'>
                         <div className='service-aside addons-aside'>
                             <h4 className='text-xl mb-0 mt-0'>Monthly Maintenance:</h4>
+                            <hr className='aside-border' />
                             <p>The goal of our monthly maintenance is to keep your vehicle looking like new year around.</p>
                             <p>Every month you get a <a href="/services/DLWash" className='aside-link'>Dirt-Less Wash</a> with a ceramic booster and a <a href='/services/FullIntEx' className='aside-link'>Full Interior Detail</a>.</p>
+                            <hr className='aside-border' />
                             <p className='bold text-xl mb-0'>Monthly Maintenance Pricing:</p>
                             <div className='maintenance-costs'>
                                 <p>Small <span className='special-package'>$130</span></p>

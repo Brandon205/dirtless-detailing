@@ -83,16 +83,19 @@ export default function FullIntEx() {
                   <p className='m-0'><span className="bold special-package">$75</span></p>
                   <p className="addon-subtext">The best protection for the fabric inside of your vehicle.</p>
                 </div>
+                <hr className='aside-border' />
                 <div className="addon-container">
                   <p className='addon-title'><a href="/services/Addons" className='text-blue'>Leather Coating</a></p>
                   <p className='m-0'><span className="bold special-package">$150</span></p>
                   <p className="addon-subtext">The longest lasting protection for your vehicles leather.</p>
                 </div>
+                <hr className='aside-border' />
                 <div className="addon-container">
                   <p className='addon-title'><a href="/services/Addons" className='text-blue'>Headliners</a></p>
                   <p className='m-0'><span className="bold special-package">$40-$80</span>/hour</p>
                   <p className="addon-subtext">Clean your vehicles headliners.</p>
                 </div>
+                <hr className='aside-border' />
                 <div className="addon-container">
                   <p className='addon-title'><a href="/services/Addons" className='text-blue'>Ozone Treatment</a></p>
                   <p className='m-0'><span className="bold special-package">$100</span></p>

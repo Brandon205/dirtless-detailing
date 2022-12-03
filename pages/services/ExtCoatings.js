@@ -182,6 +182,7 @@ export default function ExtCoatings() {
                                     <p className='m-0'><span className="bold special-package">$75</span></p>
                                     <p className="addon-subtext">We will treat and protect all fabrics in the vehicle.</p>
                                 </div>
+                                <hr className='aside-border' />
                                 <div className="addon-container">
                                     <p className='addon-title'><a href="/services/IntCoatings" className='text-blue'>Leather Coating</a></p>
                                     <p className='m-0'><span className="bold special-package">$150</span></p>
@@ -196,8 +197,10 @@ export default function ExtCoatings() {
                     <div className='aside-container'>
                         <div className='service-aside addons-aside'>
                             <h4 className='text-xl mb-0 mt-0'>Monthly Maintenance:</h4>
+                            <hr className='aside-border' />
                             <p>The goal of our monthly maintenance is to keep your vehicle looking like new year around.</p>
                             <p>Every month you get a <a href="/services/DLWash" className='aside-link'>Dirt-Less Wash</a> with a ceramic booster and a <a href='/services/FullIntEx' className='aside-link'>Full Interior Detail</a>.</p>
+                            <hr className='aside-border' />
                             <p className='bold text-xl mb-0'>Monthly Maintenance Pricing:</p>
                             <div className='maintenance-costs'>
                                 <p>Small <span className='special-package'>$130</span></p>
@@ -212,10 +215,12 @@ export default function ExtCoatings() {
                     <div className='aside-container'>
                         <div className='service-aside addons-aside'>
                             <h4 className='text-xl mb-0 mt-0'>Yearly Maintenance:</h4>
+                            <hr className='aside-border' />
                             <p>• We will wash the whole vehicle top to bottom, remove and tar/sap, and do an iron decontamination treatment.</p>
                             <p>• Then we will super lightly clay bar and/or polish the vehicle, if needed.</p>
                             <p>• Finally we will top with a ceramic booster and apply another coat of ceramic to the windshield.</p>
                             <p>• BONUS: Keeping up with this will qualify you for our 5 year warranty on your Ceramic Coating.</p>
+                            <hr className='aside-border' />
                             <p className='bold text-xl mb-0'>Yearly Maintenance costs:</p>
                             <div className='maintenance-costs'>
                                 <p>Small <span className='special-package'>$200</span></p>
@@ -230,6 +235,7 @@ export default function ExtCoatings() {
                     <div className='aside-container'>
                         <div className='service-aside addons-aside'>
                             <h4 className='text-xl mb-0 mt-0'>Re-coating Options:</h4>
+                            <hr className='aside-border' />
                             <p>• Re-coat trim <span className='special-package'>$100</span></p>
                             <p>• Re-coat wheel faces <span className='special-package'>$150</span></p>
                         </div>

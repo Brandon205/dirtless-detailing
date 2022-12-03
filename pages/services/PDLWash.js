@@ -85,11 +85,13 @@ export default function PDLWash() {
                     <p className='m-0'><span className="bold special-package">$25</span></p>
                     <p className="addon-subtext">Add-on to get your truck bed cleaned.</p>
                   </div>
+                  <hr className='aside-border' />
                   <div className="addon-container">
                     <p className='addon-title'><a href="/services/Addons" className='text-blue'>Glass Polishing</a></p>
                     <p className='m-0'><span className="bold special-package">$80</span>/hour</p>
                     <p className="addon-subtext">Gives you crystal clear windows.</p>
                   </div>
+                  <hr className='aside-border' />
                   <div className="addon-container">
                     <p className='addon-title'><a href="/services/Addons" className='text-blue'>Waterspot/Overspray Removal</a></p>
                     <p className='m-0'><span className="bold special-package">$80</span>/hour</p>
