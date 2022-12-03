@@ -112,8 +112,8 @@ export default function Bio() {
           <h4 className='subtext'>Final pricing may vary based on your vehicle condition and size.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
-            <h4 className="size">All Vehicles</h4>
-              <p className="example-vehicle">(Any Size)</p>
+            <h4 className="size">Any Vehicles</h4>
+              <p className="example-vehicle">Any Size</p>
               <p className="pricing-price">$400-$1000</p>
             </div>
           </div>
