@@ -78,7 +78,7 @@ export default function Bio() {
                 <hr className="contact-border" style={{marginBottom: 16}} />
                 <div className="aside-links">
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/Addons" className='text-blue'>Ozone Treatment</a></p>
+                    <p className='addon-title'><a href="/services/Addons/#ozone" className='text-blue'>Ozone Treatment</a></p>
                     <p className='m-0'><span className="bold special-package">$100</span></p>
                     <p className="addon-subtext">Treats your vehicle to get rid of any viruses, bacteria, and odors.</p>
                   </div>
@@ -113,7 +113,7 @@ export default function Bio() {
           <div className="pricing-container">
             <div className="pricing-card">
             <h4 className="size">Any Vehicles</h4>
-              <p className="pricing-price pricing-border">$400 - $1000</p>
+              <p className="pricing-price pricing-border">$400- $1000</p>
               <p className="example-vehicle pricing-border">Any Size Vehicle</p>
               <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
             </div>

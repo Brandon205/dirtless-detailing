@@ -174,7 +174,7 @@ export default function ExtCoatings() {
                 <div className='aside-container'>
                     <div className='aside-container'>
                         <div className='service-aside addons-aside'>
-                            <a href="/services/Addons" className='extra-addons'>Our Interior Coatings</a>
+                            <p className='extra-addons'>Our Interior Coatings</p>
                             <hr className="contact-border" style={{marginBottom: 16}} />
                             <div className="aside-links">
                                 <div className="addon-container">

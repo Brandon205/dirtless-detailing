@@ -1285,43 +1285,13 @@ hr {
   color: white;
 }
 
-/* .pricing-container {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  gap: 0.5rem;
-}
-
-.pricing-title {
-  font-size: 2em;
-  margin-bottom: 0
-}
-
-.pricing-card {
-  padding: 0.75rem;
-  background-color: var(--contact-bkg-clr);
-  border-radius: 0.5rem;
-  margin-bottom: 2rem;
-}
-
-.pricing-price {
-  color: var(--main-clr);
-}
-
-.pricing-outline {
-  outline: 2px solid white;
-  padding: 7px;
-  border-radius: 15px;
-} */
-
 .pricing-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 1.25rem;
-  margin-bottom: 3rem;
+  padding-bottom: 3rem;
 }
 
 .pricing-title {
@@ -1682,7 +1652,7 @@ hr {
 
   .process-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-evenly;
     width: 95vw;
     margin: 0 auto;

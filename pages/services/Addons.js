@@ -31,7 +31,7 @@ export default function Addons() {
       <div className="addon-content-container">
 
         <h3 className='addons-subheading'>Exterior Add-ons:</h3>
-        <div className="feature-section">
+        <div className="feature-section" id="truck">
           <div className="feature-img-container">
             <Image style={{borderRadius: 16}} src={truckBed} alt="Truck Bed Cleaning" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
           </div>
@@ -47,7 +47,7 @@ export default function Addons() {
         </div>
         <hr className='contact-border' />
 
-        <div className="feature-section">
+        <div className="feature-section" id="engine">
           <div className="feature-img-container">
             <Image style={{borderRadius: 16}} src={engine} alt="Cleaned Engine Bay" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
           </div>
@@ -63,7 +63,7 @@ export default function Addons() {
         </div>
         <hr className='contact-border' />
 
-        <div className="feature-section">
+        <div className="feature-section" id="glass">
           <div className="feature-img-container">
             <Image style={{borderRadius: 16}} src={glassPolish} alt="Window after a glass polishing" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
           </div>
@@ -79,7 +79,7 @@ export default function Addons() {
         </div>
         <hr className='contact-border' />
 
-        <div className="feature-section">
+        <div className="feature-section" id="waterspot">
           <div className="feature-img-container">
             <Image style={{borderRadius: 16}} src={waterspot} alt="Waterspot / Overspray removal after" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
           </div>
@@ -97,7 +97,7 @@ export default function Addons() {
         </div>
         <hr className='contact-border' />
         
-        <div className="feature-section">
+        <div className="feature-section" id="debadge">
           <div className="feature-img-container">
             <Image style={{borderRadius: 16}} src={debadge} alt="Vehicle side shot" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
           </div>
@@ -116,7 +116,7 @@ export default function Addons() {
         <hr className='contact-border' />
 
         <h3 className='addons-subheading'>Interior Add-ons:</h3>
-        <div className="feature-section">
+        <div className="feature-section" id="headliners">
           <div className="feature-img-container">
             <Image style={{borderRadius: 16}} src={headliner} alt="Cleaned Headliners" className='otherservices-image' loading='lazy' placeholder='blur' quality={100} />
           </div>
@@ -132,7 +132,7 @@ export default function Addons() {
         </div>
         <hr className='contact-border' />
 
-        <div className="feature-section">
+        <div className="feature-section" id="ozone">
           <div className="feature-img-container">
             <Image style={{borderRadius: 16}} src={ozone} alt="Ozone Treatment in Progress" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
           </div>

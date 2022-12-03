@@ -48,7 +48,7 @@ export default function Combo() {
                   </div>
                   <div className="step-container">
                     <h4 className="step-title">Engine Bay Cleaning</h4>
-                    <p className='step-desc'>We will then clean out the engine bay, continuing to clean from the inside of the vehicle out, so that the exterior will be spotless at the end. More information for the engine cleaning is posted <a href='/services/Addons' className='aside-link'>here</a>.</p>
+                    <p className='step-desc'>We will then clean out the engine bay, continuing to clean from the inside of the vehicle out, so that the exterior will be spotless at the end. More information for the engine cleaning is posted <a href='/services/Addons/#engine' className='aside-link'>here</a>.</p>
                   </div>
                 </li>
 
@@ -74,13 +74,13 @@ export default function Combo() {
                 <hr className="contact-border" style={{marginBottom: 16}} />
                 <div className="aside-links"> 
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/Addons" className='text-blue'>Glass Polishing</a></p>
+                    <p className='addon-title'><a href="/services/Addons/#glass" className='text-blue'>Glass Polishing</a></p>
                     <p className='m-0'><span className="bold special-package">$80</span>/hour</p>
                     <p className='addon-subtext'>Gives you crystal clear windows.</p>
                   </div>
                   <hr className='aside-border' />
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/Addons" className='text-blue'>Waterspot/Overspray Removal</a></p>
+                    <p className='addon-title'><a href="/services/Addons/#waterspot" className='text-blue'>Waterspot/Overspray Removal</a></p>
                     <p className='m-0'><span className="bold special-package">$80</span>/hour</p>
                     <p className='addon-subtext'>Remove any Overspray and Waterspots from your vehicle.</p>
                   </div>

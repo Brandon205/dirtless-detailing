@@ -94,7 +94,7 @@ export default function IntCoatings() {
                 <div className='aside-container'>
                     <div className='aside-container'>
                         <div className='service-aside addons-aside'>
-                            <a href="/services/Addons" className='extra-addons'>Our Exterior Coatings</a>
+                            <p className='extra-addons'>Our Exterior Coatings</p>
                             <hr className="contact-border" style={{marginBottom: 16}} />
                             <div className="aside-links">
                                 <div className="addon-container">
