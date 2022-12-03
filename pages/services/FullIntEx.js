@@ -89,6 +89,11 @@ export default function FullIntEx() {
                   <p className="addon-subtext">The longest lasting protection for your vehicles leather.</p>
                 </div>
                 <div className="addon-container">
+                  <p className='addon-title'><a href="/services/Addons" className='text-blue'>Headliners</a></p>
+                  <p className='m-0'><span className="bold special-package">$40-$80</span>/hour</p>
+                  <p className="addon-subtext">Clean your vehicles headliners.</p>
+                </div>
+                <div className="addon-container">
                   <p className='addon-title'><a href="/services/Addons" className='text-blue'>Ozone Treatment</a></p>
                   <p className='m-0'><span className="bold special-package">$100</span></p>
                   <p className="addon-subtext">Treats your vehicle to get rid of any viruses, bacteria, and odors.</p>
@@ -107,55 +112,39 @@ export default function FullIntEx() {
 
         <div>
           <h3 className='pricing-title'>Our Full Interior Cleaning Pricing</h3>
-          <h4 className='subtext'>Final pricing may vary based on your vehicle condition and size.</h4>
+          <h4 className='pricing-subtext'>*Final pricing may vary based on your vehicle condition and size.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
-              <h4 className="size">Small</h4>
-              <p className="example-vehicle">(2 Door Coupes, Single and Extended Cabs)</p>
-              <div className='fullInt-pricing-container'>
-                <div className='pricing-outline'>
-                  <p className='white-text'>No Extraction</p>
-                  <p className="pricing-price">$200</p>
-                </div>
-                <div className='pricing-outline'>
-                  <p className='white-text'>With <span className="special-package">Extraction</span></p>
-                  <p className="pricing-price">$250</p>
-                </div>
-              </div>
+              <h4 className="size" style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Small</h4>
+              <h4 className="size">Without Extraction</h4>
+              <p className="pricing-price pricing-border">$200</p>
+              <h4 className="size">With Extraction</h4>
+              <p className="pricing-price pricing-border">$250</p>
+              <p className="example-vehicle pricing-border">2-Door Coupes</p>
+              <p className="example-vehicle pricing-border">Single/Extended Cabs</p>
+              <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
             </div>
             <div className="pricing-card">
-              <h4 className="size">Medium</h4>
-              <p className="example-vehicle">(4 Door Sedans, 4 Door Trucks, Smaller SUV's)</p>
-              <div className='fullInt-pricing-container'>
-                <div className='pricing-outline'>
-                  <p className='white-text'>No Extraction</p>
-                  <p className="pricing-price">$250</p>
-                </div>
-                <div className='pricing-outline'>
-                  <p className='white-text'>With <span className="special-package">Extraction</span></p>
-                  <p className="pricing-price">$300</p>
-                </div>
-              </div>
+              <h4 className="size" style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Medium</h4>
+              <h4 className="size">Without Extraction</h4>
+              <p className="pricing-price pricing-border">$250</p>
+              <h4 className="size">With Extraction</h4>
+              <p className="pricing-price pricing-border">$300</p>
+              <p className="example-vehicle pricing-border">4 Door Vehicles</p>
+              <p className="example-vehicle pricing-border">Smaller SUV's</p>
+              <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
             </div>
             <div className="pricing-card">
-              <h4 className="size">Large</h4>
-              <p className="example-vehicle">(All Large SUV's and any 3 Row SUV's)</p>
-              <div className='fullInt-pricing-container'>
-                <div className='pricing-outline'>
-                  <p className='white-text'>No Extraction</p>
-                  <p className="pricing-price">$300</p>
-                </div>
-                <div className='pricing-outline'>
-                  <p className='white-text'>With <span className="special-package">Extraction</span></p>
-                  <p className="pricing-price">$350</p>
-                </div>
-              </div>
+              <h4 className="size" style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Large</h4>
+              <h4 className="size">Without Extraction</h4>
+              <p className="pricing-price pricing-border">$300</p>
+              <h4 className="size">With Extraction</h4>
+              <p className="pricing-price pricing-border">$350</p>
+              <p className="example-vehicle pricing-border">Larger Trucks</p>
+              <p className="example-vehicle pricing-border">Extra Large SUV's</p>
+              <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
             </div>
           </div>
-
-          <h4>Interested? Get in touch with us here, and let us know what we can do to help you!</h4>
-          <a href="/Contact" className="quote-btn main-quote-btn">Contact Us</a>
-          
         </div>
       </div>
     </section>

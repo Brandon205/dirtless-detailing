@@ -70,18 +70,18 @@ export default function ExtCoatings() {
                 </div>
 
                 <div>
-                    <h3 className='pricing-title'>Our Ceramic Coating Pricing</h3>
+                    <h3 className='pricing-title text-white'>Our Ceramic Coating Pricing</h3>
                     <h4 className='subtext'><span className='special-package'>*</span>Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</h4>
-                    <div className="pricing-container">
-                        <div className="pricing-card">
+                    <div className="pricing-container text-black">
+                        {/* <div className="pricing-card">
                             <h4 className="size">Small</h4>
                             <div className='fullInt-pricing-container'>
                                 <div className='pricing-outline outline-padding'>
-                                    <p className='white-text'>Protect</p>
+                                    <p className=''>Protect</p>
                                     <p className="pricing-price">$1,000</p>
                                 </div>
                                 <div className='pricing-outline outline-padding'>
-                                    <p className='white-text'>Protect<span className="special-package">+</span></p>
+                                    <p className=''>Protect<span className="special-package">+</span></p>
                                     <p className="pricing-price">$1,500</p>
                                 </div>
                             </div>
@@ -91,11 +91,11 @@ export default function ExtCoatings() {
                             <h4 className="size">Medium</h4>
                             <div className='fullInt-pricing-container'>
                                 <div className='pricing-outline outline-padding'>
-                                    <p className='white-text'>Protect</p>
+                                    <p className=''>Protect</p>
                                     <p className="pricing-price">$1,200</p>
                                 </div>
                                 <div className='pricing-outline outline-padding'>
-                                    <p className='white-text'>Protect<span className="special-package">+</span></p>
+                                    <p className=''>Protect<span className="special-package">+</span></p>
                                     <p className="pricing-price">$1,700</p>
                                 </div>
                             </div>
@@ -105,20 +105,46 @@ export default function ExtCoatings() {
                             <h4 className="size">Large</h4>
                             <div className='fullInt-pricing-container'>
                                 <div className='pricing-outline outline-padding'>
-                                    <p className='white-text'>Protect</p>
+                                    <p className=''>Protect</p>
                                     <p className="pricing-price">$1,400</p>
                                 </div>
                                 <div className='pricing-outline outline-padding'>
-                                    <p className='white-text'>Protect<span className="special-package">+</span></p>
+                                    <p className=''>Protect<span className="special-package">+</span></p>
                                     <p className="pricing-price">$1,900</p>
                                 </div>
                             </div>
                             <p className="example-vehicle">(All Large SUV's and any 3 Row SUV's)</p>
+                        </div> */}
+                        <div className="pricing-card">
+                            <h4 className="size" style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Small</h4>
+                            <h4 className="size">Protect</h4>
+                            <p className="pricing-price pricing-border">$1,000</p>
+                            <h4 className="size">Protect<span className="special-package">+</span></h4>
+                            <p className="pricing-price pricing-border">$1,500</p>
+                            <p className="example-vehicle pricing-border">2-Door Coupes</p>
+                            <p className="example-vehicle pricing-border">Single/Extended Cabs</p>
+                            <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                         </div>
-                    </div>
-
-                    <div className="coating-contact-container">
-                        <a href="/Contact" className="quote-btn main-quote-btn coating-contact-btn">Contact Us</a>
+                        <div className="pricing-card">
+                            <h4 className="size" style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Medium</h4>
+                            <h4 className="size">Protect</h4>
+                            <p className="pricing-price pricing-border">$1,200</p>
+                            <h4 className="size">Protect<span className="special-package">+</span></h4>
+                            <p className="pricing-price pricing-border">$1,700</p>
+                            <p className="example-vehicle pricing-border">4 Door Vehicles</p>
+                            <p className="example-vehicle pricing-border">Smaller SUV's</p>
+                            <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                        </div>
+                        <div className="pricing-card">
+                            <h4 className="size" style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Large</h4>
+                            <h4 className="size">Protect</h4>
+                            <p className="pricing-price pricing-border">$1,400</p>
+                            <h4 className="size">Protect<span className="special-package">+</span></h4>
+                            <p className="pricing-price pricing-border">$1,900</p>
+                            <p className="example-vehicle pricing-border">Larger Trucks</p>
+                            <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
+                            <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                        </div>
                     </div>
 
                 </div>

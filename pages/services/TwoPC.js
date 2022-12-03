@@ -96,7 +96,7 @@ export default function TwoPC() {
 
         <div>
           <h3 className='pricing-title'>Our Two Stage Paint Correction Pricing</h3>
-          <h4 className='pricing-subtext'>Final pricing may vary based on your vehicle condition and size.</h4>
+          <h4 className='pricing-subtext'>*Final pricing may vary based on your vehicle condition and size.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
               <h4 className="size">Small</h4>

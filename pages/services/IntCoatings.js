@@ -62,23 +62,21 @@ export default function IntCoatings() {
                 </div>
 
                 <div>
-                    <h3 className='pricing-title'>Our Interior Coating Pricing</h3>
+                    <h3 className='pricing-title text-white'>Our Interior Coating Pricing</h3>
                     <h4 className='subtext'><span className='special-package'>*</span>Pricing does NOT include an Interior Cleaning, which you will want to factor in before getting a coating.</h4>
-                    <div className='pricing-container'>
+                    <div className='pricing-container text-black'>
                         <div className="pricing-card">
-                            <h4 className="size">FABRIC COATING</h4>
-                            <p className="example-vehicle">(Any Size Vehicle)</p>
-                            <p className="pricing-price">$75</p>
+                            <h4 className="size">Fabric Coating</h4>
+                            <p className="pricing-price pricing-border">$75</p>    
+                            <p className="example-vehicle pricing-border">Any Size Vehicle</p>
+                            <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                         </div>
                         <div className="pricing-card">
-                            <h4 className="size">LEATHER COATING</h4>
-                            <p className="example-vehicle">(Any Size Vehicle)</p>
-                            <p className="pricing-price">$150</p>
+                            <h4 className="size">Leather Coating</h4>
+                            <p className="pricing-price pricing-border">$150</p>
+                            <p className="example-vehicle pricing-border">Any Size Vehicle</p>
+                            <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                         </div>
-                    </div>
-
-                    <div className="coating-contact-container">
-                        <a href="/Contact" className="quote-btn main-quote-btn coating-contact-btn">Contact Us</a>
                     </div>
 
                 </div>

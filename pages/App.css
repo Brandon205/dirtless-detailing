@@ -655,10 +655,6 @@ input[type="range"] {
   margin-top: 0;
 }
 
-.text-white {
-  color: white;
-}
-
 .package-container {
   display: grid;
   grid-auto-flow: row;
@@ -1269,6 +1265,11 @@ hr {
   cursor: pointer;
 }
 
+.bg-contact {
+  background-color: var(--contact-bkg);
+  color: white;
+}
+
 /* .pricing-container {
   margin: 0 auto;
   display: flex;
@@ -1332,6 +1333,12 @@ hr {
 
 .pricing-border {
   border-bottom: 2px solid hsla(240, 8%, 85%, 0.582);
+}
+
+.pricing-outline {
+  outline: 2px solid black;
+  padding: 7px;
+  border-radius: 15px;
 }
 
 .pricing-quote-btn {
@@ -1424,6 +1431,14 @@ hr {
   border-radius 1rem 1rem 0 0;
 }
 
+.text-white {
+  color: white;
+}
+
+.text-black {
+  color: black;
+}
+
 @media screen and (min-width: 450px) {
   
   #popular-services {
@@ -1467,11 +1482,6 @@ hr {
   .example-img {
     width: 275px;
   }
-
-  .bg-contact {
-    background-color: var(--contact-bkg);
-    color: white;
-  }
 }
 
 @media screen and (min-width: 660px) {
@@ -1490,7 +1500,7 @@ hr {
   }
   
   .pricing-card {
-    width: 300px;
+    width: 305px;
   }
 }
 

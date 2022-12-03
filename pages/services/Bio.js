@@ -109,11 +109,11 @@ export default function Bio() {
 
         <div>
           <h3 className='pricing-title'>Our Biohazard Cleaning Prices</h3>
-          <h4 className='pricing-subtext'>Final pricing may vary based on your vehicle condition and size.</h4>
+          <h4 className='pricing-subtext'>*Final pricing may vary based on your vehicle condition and size.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
             <h4 className="size">Any Vehicles</h4>
-              <p className="pricing-price">$400 - $1000</p>
+              <p className="pricing-price pricing-border">$400 - $1000</p>
               <p className="example-vehicle pricing-border">Any Size Vehicle</p>
               <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
             </div>
