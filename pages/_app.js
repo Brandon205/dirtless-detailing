@@ -2,10 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import { ToastContainer, toast } from 'react-toastify';
+// import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
-import Cookies from '../utils/Cookies';
 
 import { AiOutlineCar, AiOutlinePlus } from "react-icons/ai";
 import { BsFillCameraFill, BsFillPersonBadgeFill } from "react-icons/bs";
@@ -28,13 +26,13 @@ export default function MyApp({ Component, pageProps }) {
         
     const router = useRouter();
     useEffect(() => {
-        if (document.cookie === '') {
-            let year = new Date();
-            year = year.getFullYear() + 5;
-            toast(<Cookies acceptCookies={() => document.cookie = `ddCookies=true; SameSite=Strict; expires=Thu, 18 Dec ${year} 12:00:00;`}
-            declineCookies={() => document.cookie = `ddCookies=false; SameSite=Strict; expires=Thu, 01 Jan 1970 00:00:00 UTC`} />,
-            {position: "bottom-center", autoClose: false, hideProgressBar: true, closeOnClick: false, pauseOnHover: true, draggable: true, progress: undefined, theme: "dark"})
-        }
+        // if (document.cookie === '') {
+        //     let year = new Date();
+        //     year = year.getFullYear() + 5;
+        //     toast(<Cookies acceptCookies={() => document.cookie = `ddCookies=true; SameSite=Strict; expires=Thu, 18 Dec ${year} 12:00:00;`}
+        //     declineCookies={() => document.cookie = `ddCookies=false; SameSite=Strict; expires=Thu, 01 Jan 1970 00:00:00 UTC`} />,
+        //     {position: "bottom-center", autoClose: false, hideProgressBar: true, closeOnClick: false, pauseOnHover: true, draggable: true, progress: undefined, theme: "dark"})
+        // }
     
         if (window.innerWidth < 879) {
             setSmallScreen(true);
@@ -42,21 +40,21 @@ export default function MyApp({ Component, pageProps }) {
             setSmallScreen(false);
         }
 
-        import('react-facebook-pixel') // Facebook Pixel init code
-            .then((x) => x.default)
-            .then((ReactPixel) => {
-                (ReactPixel.init(process.env.FACEBOOK_PIXEL))
-                if (document.cookie !== 'ddCookies=true') {
-                    ReactPixel.revokeConsent();
-                } else {
-                    ReactPixel.grantConsent();
-                    ReactPixel.pageView()
+        // import('react-facebook-pixel') // Facebook Pixel init code
+        //     .then((x) => x.default)
+        //     .then((ReactPixel) => {
+        //         (ReactPixel.init(process.env.FACEBOOK_PIXEL))
+        //         if (document.cookie !== 'ddCookies=true') {
+        //             ReactPixel.revokeConsent();
+        //         } else {
+        //             ReactPixel.grantConsent();
+        //             ReactPixel.pageView()
         
-                    router.events.on('routeChangeComplete', () => {
-                        ReactPixel.pageView()
-                    })
-                }
-            })
+        //             router.events.on('routeChangeComplete', () => {
+        //                 ReactPixel.pageView()
+        //             })
+        //         }
+        //     })
     }, [router.events])
 
 
@@ -233,14 +231,14 @@ export default function MyApp({ Component, pageProps }) {
                 <hr />
                 <div className='socials-container'>
                     <h4 style={{fontSize: 1.3 + 'em'}}>Dirt-Less Detailing 2022</h4>
-                    <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="nofollow"><img src="https://seal-alaskaoregonwesternwashington.bbb.org/seals/blue-seal-160-82-bbb-1000135733.png" style={{border: 0}} alt="Dirt-Less Detailing BBB Business Review" /></a>
+                    <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="nofollow"><img src="https://seal-alaskaoregonwesternwashington.bbb.org/seals/blue-seal-160-82-bbb-1000135733.png" className="bbb-seal" alt="Dirt-Less Detailing BBB Business Review" /></a>
                     <div>
                         <a href="https://www.facebook.com/DirtLessDetailing/" className="socials" target="_blank" rel="noreferrer" aria-label="Facebook"><FaFacebook /></a>
                         <a href="https://www.instagram.com/dirtlessdetailing/" className="socials" target="_blank" rel="noreferrer" aria-label="Instagram"><FaInstagram /></a>
                     </div>
                 </div>
             </footer>
-            <ToastContainer />
+            {/* <ToastContainer /> */}
         </div>
     )
 }

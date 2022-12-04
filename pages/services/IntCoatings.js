@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 
-import { GiLeatherBoot, GiRolledCloth, GiSpill } from 'react-icons/gi';
+import { GiCarSeat, GiRolledCloth, GiSpill } from 'react-icons/gi';
 import { MdCleaningServices } from 'react-icons/md';
 import { FiSun } from 'react-icons/fi';
 
@@ -26,7 +26,7 @@ export default function IntCoatings() {
 
         <div className="coating-container">
             <div className="coating-left">
-                <h2 className='mb-0 underline'>Fabric Coating</h2>
+                <h2 className='coating-heading'>Fabric Coating</h2>
                 <p className='package-desc subtext'>The best protection for the fabric inside of your vehicle.</p>
                 <div className='package-container'>
                     <div className='package-details'>
@@ -41,11 +41,11 @@ export default function IntCoatings() {
                     </div>
                 </div>
 
-                <h2 className='mb-0 underline'>Leather Coating</h2>
+                <h2 className='coating-heading'>Leather Coating</h2>
                 <p className='package-desc subtext'>The longest lasting protection for your vehicles leather.</p>
                 <div className='package-container'>
                     <div className='package-details'>
-                        <GiLeatherBoot className='package-icon' />
+                        <GiCarSeat className='package-icon' />
                         <h4>All Interior Leather Coated</h4>
                         <p className='subtext'>Install IGL Ecocoat Leather to all leather in the vehicle.</p>
                     </div>
@@ -144,7 +144,7 @@ export default function IntCoatings() {
                 <div className='aside-container'>
                     <div className='aside-container'>
                         <div className='service-aside addons-aside contact-aside'>
-                            <h4 className='mt-0'>Interested? Get in touch with us here, and let us know what we can do to help you!</h4>
+                            <h4 className='mt-0'>Interested? Get in touch with us here, and let us know what we can do!</h4>
                             <a href="/Contact" className="quote-btn side-quote-btn">Contact Us</a>
                         </div>
                     </div>

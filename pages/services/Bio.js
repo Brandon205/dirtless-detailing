@@ -48,7 +48,7 @@ export default function Bio() {
         <Image src={cover} alt="biohazard cleaning cover" layout="fill" objectFit='cover' placeholder='blur' priority />
       </div>
       <div className="servicepage-header">
-        <h1>BioHazard Cleaning</h1>
+        <h1>Biohazard Cleaning</h1>
         <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
       </div>
 
@@ -112,7 +112,7 @@ export default function Bio() {
           <h4 className='pricing-subtext'>*Final pricing may vary based on your vehicle condition and size.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
-            <h4 className="size">Any Vehicles</h4>
+            <h4 className="size">Any Vehicle</h4>
               <p className="pricing-price pricing-border">$400- $1000</p>
               <p className="example-vehicle pricing-border">Any Size Vehicle</p>
               <a href="/Contact" className="pricing-quote-btn">Contact Us</a>

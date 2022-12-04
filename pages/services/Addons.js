@@ -30,7 +30,7 @@ export default function Addons() {
       <h2 style={{fontSize: 40}}>Our Current Add-ons:</h2>
       <div className="addon-content-container">
 
-        <h3 className='addons-subheading'>Exterior Add-ons:</h3>
+        <h3 className='addons-subheading' id='exterior'>Exterior Add-ons:</h3>
         <div className="feature-section" id="truck">
           <div className="feature-img-container">
             <Image style={{borderRadius: 16}} src={truckBed} alt="Truck Bed Cleaning" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
@@ -115,7 +115,7 @@ export default function Addons() {
         </div>
         <hr className='contact-border' />
 
-        <h3 className='addons-subheading'>Interior Add-ons:</h3>
+        <h3 className='addons-subheading' id='interior'>Interior Add-ons:</h3>
         <div className="feature-section" id="headliners">
           <div className="feature-img-container">
             <Image style={{borderRadius: 16}} src={headliner} alt="Cleaned Headliners" className='otherservices-image' loading='lazy' placeholder='blur' quality={100} />

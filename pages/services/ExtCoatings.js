@@ -29,7 +29,7 @@ export default function ExtCoatings() {
 
         <div className="coating-container">
             <div className="coating-left">
-                <h2 className='mb-0 underline'>Protect Package</h2>
+                <h2 className='coating-heading'>Protect Package</h2>
                 <p className='package-desc subtext'>The Protect package will cover and protect the most essential parts of your car with a 5 year ceramic coating.</p>
                 <div className='package-container'>
                     <div className='package-details'>
@@ -49,7 +49,7 @@ export default function ExtCoatings() {
                     </div>
                 </div>
 
-                <h2 className='mb-0 underline'>Protect<span className='special-package'>+</span> Package</h2>
+                <h2 className='coating-heading'>Protect<span className='special-package'>+</span> Package</h2>
                 <p className='package-desc subtext'>The Protect+ package will cover and protect your whole vehicle with a 5 year Ceramic Coating.</p>
                 <div className='package-container'>
                     <div className='package-details'>
@@ -68,53 +68,12 @@ export default function ExtCoatings() {
                         <p className='subtext'>Our Protect+ package also comes with a lifetime warranty if you follow through with our monthly maintenance.</p>
                     </div>
                 </div>
+                <p><span className='special-package'>*</span>Must follow maintenance procedures to qualify for our warranties.</p>
 
                 <div>
                     <h3 className='pricing-title text-white'>Our Ceramic Coating Pricing</h3>
-                    <h4 className='subtext'><span className='special-package'>*</span>Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</h4>
+                    <h4 className='subtext'>*Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</h4>
                     <div className="pricing-container text-black">
-                        {/* <div className="pricing-card">
-                            <h4 className="size">Small</h4>
-                            <div className='fullInt-pricing-container'>
-                                <div className='pricing-outline outline-padding'>
-                                    <p className=''>Protect</p>
-                                    <p className="pricing-price">$1,000</p>
-                                </div>
-                                <div className='pricing-outline outline-padding'>
-                                    <p className=''>Protect<span className="special-package">+</span></p>
-                                    <p className="pricing-price">$1,500</p>
-                                </div>
-                            </div>
-                            <p className="example-vehicle">(2 Door Coupes, Single and Extended Cabs)</p>
-                        </div>
-                        <div className="pricing-card">
-                            <h4 className="size">Medium</h4>
-                            <div className='fullInt-pricing-container'>
-                                <div className='pricing-outline outline-padding'>
-                                    <p className=''>Protect</p>
-                                    <p className="pricing-price">$1,200</p>
-                                </div>
-                                <div className='pricing-outline outline-padding'>
-                                    <p className=''>Protect<span className="special-package">+</span></p>
-                                    <p className="pricing-price">$1,700</p>
-                                </div>
-                            </div>
-                            <p className="example-vehicle">(4 Door Sedans, 4 Door Trucks, Smaller SUV's)</p>
-                        </div>
-                        <div className="pricing-card">
-                            <h4 className="size">Large</h4>
-                            <div className='fullInt-pricing-container'>
-                                <div className='pricing-outline outline-padding'>
-                                    <p className=''>Protect</p>
-                                    <p className="pricing-price">$1,400</p>
-                                </div>
-                                <div className='pricing-outline outline-padding'>
-                                    <p className=''>Protect<span className="special-package">+</span></p>
-                                    <p className="pricing-price">$1,900</p>
-                                </div>
-                            </div>
-                            <p className="example-vehicle">(All Large SUV's and any 3 Row SUV's)</p>
-                        </div> */}
                         <div className="pricing-card">
                             <h4 className="size" style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Small</h4>
                             <h4 className="size">Protect</h4>
@@ -245,7 +204,7 @@ export default function ExtCoatings() {
                 <div className='aside-container'>
                     <div className='aside-container'>
                         <div className='service-aside addons-aside contact-aside'>
-                            <h4 className='mt-0'>Interested? Get in touch with us here, and let us know what we can do to help you!</h4>
+                            <h4 className='mt-0'>Interested? Get in touch with us here, and let us know what we can do!</h4>
                             <a href="/Contact" className="quote-btn side-quote-btn">Contact Us</a>
                         </div>
                     </div>

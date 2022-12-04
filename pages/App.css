@@ -353,6 +353,11 @@ header h1 {
   z-index: 0;
 }
 
+.coating-heading {
+  margin-bottom: 0;
+  font-size: 2em;
+}
+
 /** Contact Page CSS **/
 
 input[type='checkbox'] {
@@ -561,6 +566,11 @@ input[type="range"] {
 .footer-contact-link {
   display: inline-block;
   margin: 0
+}
+
+.bbb-seal {
+  border: 0;
+  width: 85%;
 }
 
 .location-link {
@@ -1014,7 +1024,7 @@ hr {
   color: var(--heading-clr1);
   font-size: 2em;
   padding-top: 20vh;
-  margin: 0 auto 40vh auto;
+  margin: 0 auto 43vh auto;
   z-index: 1;
 }
 
@@ -1427,7 +1437,7 @@ hr {
 @media screen and (min-width: 450px) {
   
   #popular-services {
-    margin-top: 50vh;
+    margin-top: 18vh;
   }
   .popular-container {
     flex-wrap: wrap;
@@ -1508,6 +1518,10 @@ hr {
 
   .nav-hr {
     display: none;
+  }
+
+  .bbb-seal {
+    width: 100%;
   }
 
   .quote-li {

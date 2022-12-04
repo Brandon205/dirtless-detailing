@@ -111,7 +111,7 @@ export default function Home() {
                     </div>
                 </Carousel>
             </article>
-            <p>Check out more reviews on our <a style={{cursor: 'pointer'}} href="https://www.facebook.com/DirtLessDetailing/reviews">Facebook</a> page.</p>
+            <p>Check out more reviews on our <a className='aside-link' href="https://www.facebook.com/DirtLessDetailing/reviews">Facebook</a> page.</p>
 
             <section className="serviceareas-container">
                 <h3>We can come to you in the following cities:</h3>
