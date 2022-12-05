@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import Image from 'next/image';
 import Head from 'next/head';
@@ -15,6 +16,17 @@ import cover from '../public/imgs/main-cover.webp';
 import kenzo from '../public/imgs/pageimgs/homepage/project.png';
 
 export default function Home() {
+    const [smallScreen, setSmallScreen] = useState(null);
+
+    useEffect(() => {
+        if (window.innerWidth < 879) {
+            setSmallScreen(true);
+        } else {
+            setSmallScreen(false);
+        }
+
+    }, [])
+
     return (
         <div className="App">
             <Head>
@@ -45,14 +57,15 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <p className='dd-desc'>We also offer a <span className='special-package'>mobile</span> service free of charge on select packages!</p>
-
-                    <a href="/Contact" className="quote-btn top-quote-btn">Get a Quote</a>
+                    <p className='dd-desc'>We also offer a mobile service free of charge on select packages!</p>
 
                     <div style={{display: 'flex', alignItems: 'center', gap: 32}}>
                         <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="nofollow"><img src="https://seal-alaskaoregonwesternwashington.bbb.org/seals/blue-seal-160-82-bbb-1000135733.png" style={{border: 0}} alt="Dirt-Less Detailing BBB Business Review" /></a>
                         <a href="https://iglcoatingsusa.com/kenzo/" target="_blank" rel="nofollow"><Image src={kenzo} width={135} height={135} alt="igl kenzo coatings" /></a>
                     </div>
+
+                    <a href="/Contact" className="quote-btn top-quote-btn">Get a Quote</a>
+
 
                 </div>
             </header>
@@ -94,7 +107,7 @@ export default function Home() {
                         <p className="reviewer">Rick E.</p>
                     </div>
                     <div>
-                        <p className="review">My kids left a gal of milk in the back of my car, needless to say the nice warm weather it leaked all over and soon smelled horrid. He did a fantastic job, car smells and looks brand new, even got every hair out from my pups.  very happy I got his number as a referral from a friend.</p>
+                        <p className="review">My kids left a gal of milk in the back of my car, needless to say the nice warm weather it leaked all over and soon smelled horrid. He did a fantastic job, car smells and looks brand new, even got every hair out from my pups. very happy I got his number as a referral from a friend.</p>
                         <p className="reviewer">Trisha C.</p>
                     </div>
                     <div>
@@ -106,17 +119,37 @@ export default function Home() {
                         <p className="reviewer">Barbara G.</p>
                     </div>
                     <div>
-                        <p className="review">Brendan is a hard worker, on time, great work and attention to detail. Highly recommend</p>
+                        <p className="review">Brenden is a hard worker, on time, great work and attention to detail. Highly recommend</p>
                         <p className="reviewer">Terri E.</p>
                     </div>
                 </Carousel>
             </article>
-            <p>Check out more reviews on our <a className='aside-link' href="https://www.facebook.com/DirtLessDetailing/reviews">Facebook</a> page.</p>
+            <p>Check out more reviews on our <a className='aside-link' target='_blank' rel='noopener' href="https://www.facebook.com/DirtLessDetailing/reviews">Facebook</a> page.</p>
 
-            <section className="serviceareas-container">
-                <h3>We can come to you in the following cities:</h3>
-                <p className='cities'>Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham.</p>
-                <h3>As part of our simple and hassle free service, you can come to us or we can come to you with select packages!</h3>
+            <section className='mobileservices-container'>
+                <div className="locations">
+                    <h3>We currently provide mobile services to the following cities:</h3>
+                    <div style={{display: 'grid', placeItems: 'center'}}>
+                        <ul className='cities-ul'>
+                            <li>Bonney Lake</li>
+                            <li>Buckley</li>
+                            <li>Sumner</li>
+                            <li>Enumclaw</li>
+                            <li>Puyallup</li>
+                            <li>Federal Way</li>
+                            <li>Orting</li>
+                            <li>South Prairie</li>
+                            <li>Black Diamond</li>
+                            <li>Milton</li>
+                            <li>Edgewood</li>
+                            <li>Graham</li>
+                        </ul>
+                    </div>
+                    <h3>As part of our simple and hassle free service, you can come to us or we can come to you with select packages!</h3>
+                </div>
+                <div className='map'>
+                    <iframe width={smallScreen ? '250' : '500'} height={smallScreen ? '300' : '400'} style={{border:0}} loading="lazy" src={`https://www.google.com/maps/embed/v1/place?zoom=15&q=place_id:ChIJxxfUWqz7kFQRotRs8MwWDRE&key=${process.env.GOOGLE_MAPS}`}></iframe> 
+                </div>
             </section>
         </div>
     )

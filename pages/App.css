@@ -88,7 +88,6 @@ body {
   border-radius: 0.5rem;
   transition: 0.5s;
   margin-top: 5px;
-  transition: 1s
 }
 
 .nav-quote-btn:hover {
@@ -113,7 +112,7 @@ body {
   border-radius: 0.5rem;
   margin: 0.75rem;
   font-weight: 300;
-  transition: 0.75s;
+  transition: 0.5s;
 }
 
 .quote-btn:hover {
@@ -319,7 +318,6 @@ header h1 {
 
 .title-top {
   margin-top: 0;
-  padding-top: 1em;
   font-size: 2.5em;
   font-weight: 300;
   color: var(--heading-clr1);
@@ -883,13 +881,26 @@ input[type="range"] {
   font-weight: bold;
 }
 
-.serviceareas-container h2 {
-  margin-bottom: 0.5rem;
+.mobileservices-container {
+  width: 100%;
+  padding: 1rem; 
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--contact-bkg);
+  color: white;
 }
 
-.cities {
-  margin: 0;
-  color: var(--secondary-text);
+.map {
+  width: 250px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.cities-ul {
+  columns: 2;
+  gap: 3rem;
+  text-align: left;
 }
 
 .cookie-div {
@@ -1439,6 +1450,12 @@ hr {
   #popular-services {
     margin-top: 18vh;
   }
+
+  .title-top {
+    padding-top: 1rem;
+    line-height: 2;
+  }
+
   .popular-container {
     flex-wrap: wrap;
     flex-direction: row;
@@ -1547,7 +1564,7 @@ hr {
   .header-icons-container {
     flex-direction: row;
     justify-content: flex-start;
-    gap: 2rem;
+    gap: 4rem;
   }
 
   .title-top {
@@ -1566,6 +1583,25 @@ hr {
 
   .contact-container-right {
     max-width: 650px;
+  }
+
+  .mobileservices-container {
+    flex-direction: row;
+    padding: 3rem 1rem;
+    justify-content: space-around;
+    gap: 4rem;
+  }
+
+  .locations {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .map {
+    width: 500px;
+    height: 400px;
   }
 
   .popular-img {
@@ -1637,6 +1673,9 @@ hr {
 
   .menu-li {
     position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
   }
 
   .sub-ul {
@@ -1692,6 +1731,10 @@ hr {
 
   .popular-quote-btn {
     margin-right: 3rem;
+  }
+
+  .header-icons-container {
+    gap: 10rem;
   }
 
   .feature-section {

@@ -8,10 +8,10 @@ import 'react-toastify/dist/ReactToastify.css';
 import { AiOutlineCar, AiOutlinePlus } from "react-icons/ai";
 import { BsFillCameraFill, BsFillPersonBadgeFill } from "react-icons/bs";
 import { FaBars, FaFacebook, FaInstagram, FaPhoneAlt, FaCarSide, FaPhotoVideo, FaBiohazard, FaCameraRetro, FaHome, FaImages, FaSoap } from 'react-icons/fa';
-import { GiSteeringWheel, GiCarKey, GiVacuumCleaner, GiCarSeat } from 'react-icons/gi';
+import { GiSteeringWheel, GiCarKey, GiCarSeat } from 'react-icons/gi';
 import { GoLocation } from "react-icons/go";
 import { HiSparkles, HiInformationCircle } from 'react-icons/hi';
-import { MdOutlineEmail } from 'react-icons/md';
+import { MdOutlineEmail, MdLocalOffer } from 'react-icons/md';
 import { TbEngine } from 'react-icons/tb';
 import { RiCarWashingFill } from 'react-icons/ri';
 import { ImFilePicture } from 'react-icons/im';
@@ -106,7 +106,7 @@ export default function MyApp({ Component, pageProps }) {
                             <hr className="nav-hr" />
 
                             <div style={{position: 'relative'}}>
-                                <li onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('services')}><p className='menu-li'><GiVacuumCleaner /> All Services</p></li>
+                                <li onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('services')}><p className='menu-li'><MdLocalOffer /> All Services</p></li>
                                 <ul className="sub-ul" onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} style={{opacity: smallScreen ? 1 : services ? 1 : !services ? 0 : 0, pointerEvents: smallScreen ? 'auto' : services ? 'auto' : !services ? 'none' : 'auto'}} >
                                     <div className="nav-div">
                                         <h4 className='sub-menu-header'>CERAMIC COATING</h4>
@@ -125,7 +125,7 @@ export default function MyApp({ Component, pageProps }) {
                                             <a href="/services/Bio" className='menu-link'><FaBiohazard /> Biohazard Cleaning</a>
                                         </li>
                                         <hr className="nav-hr" />
-                                        <h4 className='sub-menu-header'>EXTERIOR CLEANING SERVICES</h4>
+                                        <h4 className='sub-menu-header'>EXTERIOR DETAILING SERVICES</h4>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
                                             <a href="/services/PDLWash" className='menu-link'><RiCarWashingFill /> Premium Dirt-Less Wash</a>
                                         </li>
@@ -224,17 +224,17 @@ export default function MyApp({ Component, pageProps }) {
                 </div>
                 <div className="footer-content-card footer-contact-card" id="contact">
                     <h3>CONTACT US</h3>
-                    <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noreferrer"><FaPhoneAlt /> (253) 252-9758</a>
-                    <a href="mailto:brenden@dirtlessdetailing.com?subject = Schedule a Dirt-Less Detail" className="contact-link footer-contact-link" target="_blank" rel="noreferrer"><MdOutlineEmail /> brenden@dirtlessdetailing.com</a>
-                    <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link footer-contact-link" target="_blank" rel="noreferrer"><GoLocation /> 9305 205th Ave E Bonney Lake Washington</a><br />
+                    <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener"><FaPhoneAlt /> (253) 252-9758</a>
+                    <a href="mailto:brenden@dirtlessdetailing.com?subject = Schedule a Dirt-Less Detail" className="contact-link footer-contact-link" target="_blank" rel="noopener"><MdOutlineEmail /> brenden@dirtlessdetailing.com</a>
+                    <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link footer-contact-link" target="_blank" rel="noopener"><GoLocation /> 9305 205th Ave E Bonney Lake Washington</a><br />
                 </div>
                 <hr />
                 <div className='socials-container'>
                     <h4 style={{fontSize: 1.3 + 'em'}}>Dirt-Less Detailing 2022</h4>
                     <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="nofollow"><img src="https://seal-alaskaoregonwesternwashington.bbb.org/seals/blue-seal-160-82-bbb-1000135733.png" className="bbb-seal" alt="Dirt-Less Detailing BBB Business Review" /></a>
                     <div>
-                        <a href="https://www.facebook.com/DirtLessDetailing/" className="socials" target="_blank" rel="noreferrer" aria-label="Facebook"><FaFacebook /></a>
-                        <a href="https://www.instagram.com/dirtlessdetailing/" className="socials" target="_blank" rel="noreferrer" aria-label="Instagram"><FaInstagram /></a>
+                        <a href="https://www.facebook.com/DirtLessDetailing/" className="socials" target="_blank" rel="noopener" aria-label="Facebook"><FaFacebook /></a>
+                        <a href="https://www.instagram.com/dirtlessdetailing/" className="socials" target="_blank" rel="noopener" aria-label="Instagram"><FaInstagram /></a>
                     </div>
                 </div>
             </footer>

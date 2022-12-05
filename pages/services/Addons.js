@@ -4,7 +4,7 @@ import Head from 'next/head';
 
 import cover from '../../public/imgs/AddonsCover.webp';
 import waterspot from '../../public/imgs/pageimgs/homepage/1667678920614.webp';
-import glassPolish from '../../public/imgs/pageimgs/addons/IMG_20220912_192744.jpg';
+import glassPolish from '../../public/imgs/pageimgs/addons/glassPolish.jpg';
 import ozone from '../../public/imgs/pageimgs/bio/IMG_20220904_140012.jpg';
 import truckBed from '../../public/imgs/pageimgs/exterior/1667675422409.webp';
 import headliner from '../../public/imgs/headlinersCover.webp';
