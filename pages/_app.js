@@ -82,12 +82,16 @@ export default function MyApp({ Component, pageProps }) {
             <Head>
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta property="description" content="Dirt-Less Detailing is here to provide the highest-quality detailing services at great prices here in the Bonney Lake area. Come check out our offers!" />
                 <meta property="og:description" content="Dirt-Less Detailing is here to provide the highest-quality detailing services at great prices here in the Bonney Lake area. Come check out our offers!" />
                 <meta name="apple-mobile-web-app-status-bar" content="#90cdf4" />
                 <meta name="google-site-verification" content="sq8uUuD_CLtkO1bg33IWhAVFjproB_N6s2Qqll0IxUo" />
                 <meta name="robots" content="index, follow" />
+                <meta property="url" content="https://www.dirtlessdetailing.com/" />
                 <meta property="og:url" content="https://www.dirtlessdetailing.com/" />
+                <meta property="site_name" content="Dirt-Less Detailing" />
                 <meta property="og:site_name" content="Dirt-Less Detailing" />
+                <meta property="type" content="website" />
                 <meta property="og:type" content="website" />
 
                 <link rel="icon" href="/favicon.ico" />

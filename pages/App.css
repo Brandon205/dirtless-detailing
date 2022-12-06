@@ -1439,6 +1439,25 @@ hr {
 
 /** LOCATION PAGE CSS **/
 
+.location-container {
+  width: 100vw;
+  min-height: 100%;
+}
+
+.location-cover {
+  padding-top: 7rem;
+  filter: brightness(25%) grayscale(65%);
+  height: 75vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.location-main {
+  
+}
+
 .text-white {
   color: white;
 }

@@ -1,23 +1,15 @@
 import React from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
-
-import cover from '../../public/imgs/pageimgs/exterior/IMG_20221007_130043.jpg';
 
 export default function puyallup() {
     return (
-        <div className='location-container'>
+        <div>
             <Head>
                 <title>Dirt-Less Detailing | Vehicle Detailing in Puyallup</title>
                 <meta property="og:description" content="Interior • Exterior • Ceramic Coating • Paint Correction. Check out our top auto detailing services for Puyallup Washington" />
                 <link rel="canonical" href="https://www.dirtlessdetailing.com/location/puyallup" />
             </Head>
-            <div className="location-cover">
-                <Image src={cover} alt="biohazard cleaning cover" layout="fill" objectFit='cover' placeholder='blur' priority />
-            </div>
-            <main className="location-main">
-                <h1>Hello and stuff</h1>
-            </main>
+            Puyallup
         </div> 
     )
 }
