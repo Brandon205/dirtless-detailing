@@ -1445,17 +1445,16 @@ hr {
 }
 
 .location-cover {
-  padding-top: 7rem;
-  filter: brightness(25%) grayscale(65%);
-  height: 75vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 50vh;
+}
+
+.location-header {
+  padding-top: 10vh;
+  margin: 0 auto 15vh auto
 }
 
 .location-main {
-  
+   
 }
 
 .text-white {
@@ -1526,6 +1525,9 @@ hr {
 
   .servicepage-header {
     font-size: 3em;
+  }
+  .location-header {
+    font-size: 2em;
   }
 
   .pricing-container {
@@ -1808,10 +1810,18 @@ hr {
   .servicepage-header {
     margin: 0 auto 42vh auto
   }
+
+  .location-header {
+    margin: 0 auto 20vh auto
+  }
 }
 
 @media screen and (min-width: 2000px) {
   .servicepage-header {
     margin: 0 auto 45vh auto;
+  }
+
+  .location-header {
+    margin: 0 auto 24vh auto
   }
 }
