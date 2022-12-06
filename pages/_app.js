@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 // import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -23,8 +23,10 @@ export default function MyApp({ Component, pageProps }) {
     const [services, setServices] = useState(false);
     const [gallery, setGallery] = useState(false);
     const [smallScreen, setSmallScreen] = useState(null);
+
+    const navBar = useRef(null)
         
-    const router = useRouter();
+    // const router = useRouter();
     useEffect(() => {
         // if (document.cookie === '') {
         //     let year = new Date();
@@ -38,6 +40,12 @@ export default function MyApp({ Component, pageProps }) {
             setSmallScreen(true);
         } else {
             setSmallScreen(false);
+        }
+
+        document.addEventListener('scroll', handleScroll, { passive: true });
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
         }
 
         // import('react-facebook-pixel') // Facebook Pixel init code
@@ -55,8 +63,17 @@ export default function MyApp({ Component, pageProps }) {
         //             })
         //         }
         //     })
-    }, [router.events])
+    }, []) // ADD router.events here if using the facebook pixel things again
 
+    let handleScroll = () => {
+        const pos = window.pageYOffset;
+        console.log(pos)
+        if (pos > 450 || smallScreen) {
+            navBar.current.classList.add('navigation-large')
+        } else {
+            navBar.current.classList.remove('navigation-large')
+        }
+    }
 
     let changeNav = (changeTo) => {
         switch (changeTo) {
@@ -93,12 +110,13 @@ export default function MyApp({ Component, pageProps }) {
                 <meta property="og:site_name" content="Dirt-Less Detailing" />
                 <meta property="type" content="website" />
                 <meta property="og:type" content="website" />
+                <meta property="og:image" content={ddLogo} />
 
                 <link rel="icon" href="/favicon.ico" />
                 <title>Dirt-Less Detailing | Bonney Lakes Top Auto Detailer</title>
             </Head>
             <header className="App-header">
-                <nav id="nav">
+                <nav id="nav" className='navigation-small' ref={navBar}>
                     <a style={{display: 'flex', justifyContent: 'flex-start', flex: 1}} href="/"><Image src={ddLogo} objectFit="contain" width={smallScreen ? 120 : 140} height={smallScreen ? 90 : 105} className="logo" alt="logo" /></a>
                     <FaBars className="menu-bars" onClick={() => setNav(nav === 'block' ? 'none' : 'block')} />
                     <div style={{display: nav}} className="menu-container">
@@ -233,6 +251,7 @@ export default function MyApp({ Component, pageProps }) {
                     <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link footer-contact-link" target="_blank" rel="noopener"><GoLocation /> 9305 205th Ave E Bonney Lake Washington</a><br />
                 </div>
                 <hr />
+                <p>We currently service:<span style={{color: 'lightgray'}}> Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham.</span></p>
                 <div className='socials-container'>
                     <h4 style={{fontSize: 1.3 + 'em'}}>Dirt-Less Detailing 2022</h4>
                     <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="nofollow"><img src="https://seal-alaskaoregonwesternwashington.bbb.org/seals/blue-seal-160-82-bbb-1000135733.png" className="bbb-seal" alt="Dirt-Less Detailing BBB Business Review" /></a>

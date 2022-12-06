@@ -3,6 +3,7 @@
   --contact-bkg-clr: #252525;
   --contact-bkg-clr-light: #cecfd5;
   --nav-bkg-clr: #101010;
+  --nav-bkg-clr-transparent: #10101000;
   --nav-color: #636364;
   --boxshadow-clr: rgb(213, 213, 213);
   --footer-bkg: #060606;
@@ -40,7 +41,7 @@ body {
 }
 
 #popular-services {
-  margin-top: 13vh;
+  margin-top: 10vh;
 }
 
 .App {
@@ -170,11 +171,12 @@ body {
 nav {
   width: 100%;
   padding-left: 1.25rem;
+  position: absolute;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--nav-bkg-clr);
+  background-color: var(--nav-bkg-clr-transparent);
 }
 
 li span {
@@ -201,7 +203,6 @@ li span {
 
 .sub-ul {
   opacity: 0;
-  will-change: opacity;
   list-style: none;
   padding-left: 0;
 }
@@ -224,7 +225,7 @@ li span {
 
 .nav-div {
   padding: 0 0.75rem 0.75rem 0.75rem;
-  border-radius: 1rem;
+  border-radius: 0 0 1rem 1rem;
   background-color: var(--nav-bkg-clr);
 }
 
@@ -337,8 +338,9 @@ header h1 {
 
 .cover {
   filter: brightness(25%) grayscale(65%);
-  position: absolute;
-  height: 75%;
+  position: relative;
+  /* top: -50px; */
+  height: 100vh;
   width: 100%;
   z-index: 0;
 }
@@ -1030,31 +1032,37 @@ hr {
 
 /** SIDE PAGE CSS **/
 .servicepage-header {
-  position: relative;
+  position: absolute;
   color: var(--heading-clr1);
   font-size: 2em;
-  padding-top: 20vh;
-  margin: 0 auto 43vh auto;
+  width: 100%;
+  transform: translate(0, -75vh);
+  /* padding-top: 20vh; */
+  /* margin: 0 auto 43vh auto; */
   z-index: 1;
 }
 
-.coatingpage-header {
+/* .coatingpage-header {
   position: relative;
   color: var(--heading-clr1);
   font-size: 2em;
   padding-top: 0;
   margin: 0 auto 70vh auto;
   z-index: 1;
-}
+} */
 
-.coatingpage-header h1 {
+/* .coatingpage-header h1 {
   font-size: 0.8em;
   line-height: 2;
   margin-top: 0;
-}
+} */
 
 .servicepage-heading {
   font-size: 2em;
+}
+
+.process-container {
+  padding-top: 2rem;
 }
 
 .content-container {
@@ -1473,12 +1481,21 @@ hr {
 }
 
 .locationpage-section {
-  background-color: #ececec;
+  background-color: #F5F5F5;
   width: 100%;
   padding: 2rem 1rem;
   letter-spacing: 0.75px;
   line-height: 2;
   text-align: left;
+}
+
+.location-quote-btn {
+  padding: 0.5rem;
+  margin: 0;
+}
+
+.location-quote-btn:hover {
+  color: black;
 }
 
 .extra-space {
@@ -1502,10 +1519,6 @@ hr {
 }
 
 @media screen and (min-width: 450px) {
-  
-  #popular-services {
-    margin-top: 18vh;
-  }
 
   .title-top {
     padding-top: 1rem;
@@ -1536,6 +1549,19 @@ hr {
     justify-content: space-evenly;
     margin-top: 3rem;
     margin-bottom: 2rem;
+  }
+
+  .navigation-small {
+    backdrop-filter: saturate(180%) blur(20px);
+    background-color: var(--nav-bkg-clr-transparent);
+    transform: scale(90%);
+    transition: 0.4s;
+  }
+  
+  .navigation-large {
+    backdrop-filter: none;
+    background-color: var(--nav-bkg-clr);
+    transform: scale(100%);
   }
 
   .service-card {
@@ -1595,10 +1621,6 @@ hr {
     font-size: 1.1em;
   }
 
-  #popular-services {
-    margin-top: 28vh;
-  }
-
   .nav-div {
     padding: 1.5rem;
   }
@@ -1624,7 +1646,7 @@ hr {
     padding-left: 1.5rem;
     justify-content: space-between;
     align-items: center;
-    height: 70vh;
+    height: 90vh;
   }
 
   .dd-desc {
@@ -1632,7 +1654,7 @@ hr {
   }
 
   .menu-container {
-    background-color: var(--nav-bkg-clr);
+    background-color: var(--nav-bkg-clr-transparent);
   }
 
   .header-icons-container {
@@ -1642,7 +1664,7 @@ hr {
   }
 
   .title-top {
-    padding-top: 3rem;
+    padding-top: 10rem;
     line-height: 2;
   }
 
@@ -1831,17 +1853,13 @@ hr {
     max-width: 800px;
   }
 
-  .coating-container {
-    padding: 0 2rem 2rem 2rem;
-  }
-
   .maintenance-costs {
     justify-content: center;
   }
 
   .coating-container {
     display: flex;
-    flex: 1fr
+    padding: 0 2rem 2rem 2rem;
   }
 
   .coating-left {
@@ -1862,9 +1880,9 @@ hr {
     column-count: 4;
   }
 
-  .servicepage-header {
+  /* .servicepage-header {
     margin: 0 auto 42vh auto
-  }
+  } */
 
   .location-header {
     padding-top: 10rem;
@@ -1873,9 +1891,9 @@ hr {
 }
 
 @media screen and (min-width: 2000px) {
-  .servicepage-header {
+  /* .servicepage-header {
     margin: 0 auto 45vh auto;
-  }
+  } */
 
   .location-header {
     padding-top: 14rem;

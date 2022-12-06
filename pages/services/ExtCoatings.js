@@ -9,6 +9,7 @@ import { BiCar } from 'react-icons/bi';
 import { SiAdguard } from 'react-icons/si';
 import { RiPaintFill } from 'react-icons/ri';
 
+import cover from '../../public/imgs/pageimgs/ceramic/waterBeads.jpg';
 import iglCircle from '../../public/imgs/iglcircle.jpg';
 import kenzo from '../../public/imgs/kenzo.png';
 
@@ -20,11 +21,12 @@ export default function ExtCoatings() {
             <meta property="og:description" content="Ensure that your vehicle is protected through us with our exterior Ceramic Coating services." />
             <link rel="canonical" href="https://www.dirtlessdetailing.com/services/ExtCoatings" />
         </Head>
-        <div className="coating-cover">
-            <Image src={kenzo} alt="Vehicle Exterior after paint correction and ceramic coating" layout="fill" objectFit='cover' placeholder='blur' priority quality={100} />
+        <div className="cover">
+            <Image src={cover} alt="Vehicle Exterior after paint correction and ceramic coating" layout="fill" objectFit='cover' placeholder='blur' priority quality={100} />
         </div>
-        <div className="coatingpage-header">
+        <div className="servicepage-header">
             <h1>Exterior Ceramic Coating</h1>
+            <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
         </div>
 
         <div className="coating-container">
@@ -211,9 +213,12 @@ export default function ExtCoatings() {
                 </div>
             </div>
         </div>
-        <div style={{paddingBottom: 25}}>
+        <div className='gallery-container center'>
             <Zoom>
-                <Image src={iglCircle} style={{borderRadius: 50}} alt="igl coverage circle" placeholder='blur' />
+                <Image src={iglCircle} alt="igl coverage circle" placeholder='blur' />
+            </Zoom>
+            <Zoom>
+                <Image src={kenzo} alt="kenzo graphene coating information" placeholder='blur' />
             </Zoom>
         </div>
 
