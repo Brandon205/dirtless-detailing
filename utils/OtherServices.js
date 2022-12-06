@@ -167,7 +167,7 @@ export default function OtherServices() {
                         <a href='/gallery/ExteriorWashGallery' className='service-heading-link'>EXTERIOR WASH GALLERY</a>
                     </div>
                     <p className="service-desc">Our exterior gallery has plenty of examples of the exterior work that we do.</p>
-                    <p className="service-desc">We have easily washed hundreds of vehicles and have our process optimized from the tires to door jambs, leaving every vehicle in great condition every time!</p>
+                    <p className="service-desc">We have easily washed hundreds of vehicles and have our process optimized from the tires to the headlights, leaving every vehicle in great condition every time!</p>
 
                     <a href='/gallery/ExteriorWashGallery' className="readmore text-center">Exterior Wash Gallery</a>
                 </div>

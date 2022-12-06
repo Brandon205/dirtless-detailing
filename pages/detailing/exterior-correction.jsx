@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function exteriorDetail() {
+export default function exteriorCorrection() {
     return (
         <div>
-            exterior Detail
+            exterior Correction
         </div> 
     )
 }
