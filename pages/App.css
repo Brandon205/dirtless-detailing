@@ -339,7 +339,6 @@ header h1 {
 .cover {
   filter: brightness(25%) grayscale(65%);
   position: relative;
-  /* top: -50px; */
   height: 100vh;
   width: 100%;
   z-index: 0;

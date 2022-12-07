@@ -21,7 +21,7 @@ export default function puyallup() {
             </div>
             <div className="servicepage-header">
                 <h1>Ceramic Coating in Puyallup Washington</h1>
-                <h2>5-year Graphene Coatings</h2>
+                <h2>5-year IGL Graphene Coatings</h2>
                 <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
             </div>
             
@@ -29,7 +29,7 @@ export default function puyallup() {
                 <h2 className='large'>Professional Ceramic Coatings in Puyallup Washington.</h2>
                 <p>For the best results on your ceramic coat we will have you drop your car off at our shop location in Bonney Lake.</p>
                 <p>One of the first things we do to your car is a full <a href="/services/SinglePC" className='aside-link'>Single Stage Paint Correction</a> to clean and prep your vehicle. For that service we also like to have our customers bring their vehicles to us.</p>
-                <p>Why? Well we want a controlled environment when applying a ceramic coat. At our shop we have lighting and temperature controls. This way we can keep an optimal temperature and the lighting helps us see and fix any imperfections on the paint.</p>
+                <p>Why? We want a controlled environment when applying a ceramic coat. At our shop we have lighting and temperature controls. This way we can keep an optimal temperature and the lighting helps us see and fix any imperfections on the paint.</p>
                 <p>Our shop is about 20 minutes away from most of Puyallup, once there you are free to go wherever or stick around while we work.</p>
 
                 <br className='extra-space' />
@@ -43,6 +43,7 @@ export default function puyallup() {
                     <li>Easier to maintain</li>
                     <li>No need to spend time waxing your car each wash</li>
                     <li>Gives paint a glossy finish</li>
+                    <li>Light layer of protection against the environment</li>
                 </ul>
 
                 <br className='extra-space' />
