@@ -1040,6 +1040,11 @@ hr {
   z-index: 1;
 }
 
+.servicepage-header h2 {
+  font-size: 1em;
+  margin-top: 0
+}
+
 .servicepage-heading {
   font-size: 2em;
 }
@@ -1480,6 +1485,15 @@ hr {
   background-color: white;
 }
 
+.only-bg {
+  background-color: #F5F5F5;
+  padding: 2rem;
+}
+
+.columns-2 {
+  columns: 2;
+}
+
 @media screen and (min-width: 450px) {
 
   .title-top {
@@ -1557,7 +1571,7 @@ hr {
   }
 
   .locationpage-section div {
-    max-width: 60vw; 
+    max-width: 60vw;
     margin: 0 auto;
   }
 

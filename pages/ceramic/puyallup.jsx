@@ -1,8 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import Zoom from 'react-medium-image-zoom';
-import 'react-medium-image-zoom/dist/styles.css';
 
 import cover from '../../public/imgs/pageimgs/ceramic/waterBeads.jpg';
 
@@ -30,7 +28,8 @@ export default function puyallup() {
             <main className="location-main">
                 <h2 className='large'>Professional Ceramic Coatings in Puyallup Washington.</h2>
                 <p>For the best results on your ceramic coat we will have you drop your car off at our shop location in Bonney Lake.</p>
-                <p>Why? Well we want a controlled environment when putting on a ceramic coat. At our shop we have lighting and temparature controls. This way we can keep an optimal temparature and the lighting helps us see and fix any imperfections on the paint.</p>
+                <p>One of the first things we do to your car is a full <a href="/services/SinglePC" className='aside-link'>Single Stage Paint Correction</a> to clean and prep your vehicle. For that service we also like to have our customers bring their vehicles to us.</p>
+                <p>Why? Well we want a controlled environment when applying a ceramic coat. At our shop we have lighting and temperature controls. This way we can keep an optimal temperature and the lighting helps us see and fix any imperfections on the paint.</p>
                 <p>Our shop is about 20 minutes away from most of Puyallup, once there you are free to go wherever or stick around while we work.</p>
 
                 <br className='extra-space' />
@@ -38,7 +37,7 @@ export default function puyallup() {
                 <h2 className='large'>Why get a ceramic coating?</h2>
                 <p>Here's a list of some of the many benefits to getting a ceramic coating on your car:</p>
                 <ul className='cities-ul'>
-                    <li>Lasts about 5 years</li>
+                    <li>Lasts about 5 years (with proper care)</li>
                     <li>Hyrophobic</li>
                     <li>Easy to Wash</li>
                     <li>Easier to maintain</li>

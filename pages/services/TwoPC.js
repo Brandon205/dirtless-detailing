@@ -11,7 +11,7 @@ const steps = [
   ["Correction Prep - Clay Bar", "Clay bar the entire vehicle to remove contaminants and leave the paint smooth."],
   ["Correction Prep - Iron Decontamination", "Iron decontamination to get rid of the rest of the embedded iron particles in your paint."],
   ["Dry Vehicle", "Dry the whole vehicle with clean towels and air blowers."],
-  ["Tape Off Areas", "Tape off trim and sensitive areas (some detailers skip this step)."],
+  ["Tape Vehicle", "Tape off trim and sensitive areas (some detailers skip this step)."],
   ["Paint Correction", "Complete Two Stage paint correction using Griots products removing all scratches and swirls we possibly can while staying safe for vehicle specific clear coat thickness."],
   ["Remove Polishing Compound", "Remove polishing compound residue from cracks, crevices, etc."],
   ["Protect Paint", "Protect paint with ceramic spray or "],
