@@ -1531,12 +1531,14 @@ hr {
     backdrop-filter: saturate(180%) blur(20px);
     background-color: var(--nav-bkg-clr-transparent);
     transform: scale(90%);
+    border-radius: 15px;
     transition: 0.4s;
   }
   
   .navigation-large {
     backdrop-filter: none;
     background-color: var(--nav-bkg-clr);
+    border-radius: 0;
     transform: scale(100%);
   }
 
