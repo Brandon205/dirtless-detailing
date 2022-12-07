@@ -27,13 +27,14 @@ export default function puyallup() {
                 <link rel="canonical" href="https://www.dirtlessdetailing.com/location/puyallup" />
             </Head>
             <div className="cover">
-                <Image src={cover} alt="biohazard cleaning cover" layout="fill" objectFit='cover' placeholder='blur' priority />
+                <Image src={cover} alt="Car after a Dirt-Less Wash" layout="fill" objectFit='cover' placeholder='blur' priority />
             </div>
             <div className="servicepage-header">
                 <h1>Mobile Detailing in Puyallup Washington</h1>
                 <h2>Ceramic Coating • Interior • Exterior • Paint Correction</h2>
                 <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
             </div>
+
             <main className="location-main">
                 <h2 className='large'>Professional Detailing Services in Puyallup Washington.</h2>
                 <p>Getting a car detailed in Puyallup is no problem with our mobile service. We can come to you and perform most of our services at your home or work. If </p>

@@ -1434,27 +1434,6 @@ hr {
   min-height: 100%;
 }
 
-/* .location-cover {
-  height: 50vh;
-} */
-
-/* .location-header {
-  padding-top: 0.25rem;
-  margin-top: 0;
-  font-size: 1.2rem;
-  margin: 0 auto 20vh auto;
-} */
-
-/* .location-header h1 {
-  margin-bottom: 1rem;
-  margin-top: 0;
-} */
-
-/* .location-header h2 {
-  font-size: 2rem;
-  margin: 0 auto 2rem auto;
-} */
-
 .location-main {
   width: 80vw;
   margin: 0 auto;
@@ -1570,10 +1549,6 @@ hr {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-  }
-
-  .servicepage-header {
-    font-size: 2em;
   }
 
   .location-header {
