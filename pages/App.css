@@ -1037,25 +1037,8 @@ hr {
   font-size: 2em;
   width: 100%;
   transform: translate(0, -75vh);
-  /* padding-top: 20vh; */
-  /* margin: 0 auto 43vh auto; */
   z-index: 1;
 }
-
-/* .coatingpage-header {
-  position: relative;
-  color: var(--heading-clr1);
-  font-size: 2em;
-  padding-top: 0;
-  margin: 0 auto 70vh auto;
-  z-index: 1;
-} */
-
-/* .coatingpage-header h1 {
-  font-size: 0.8em;
-  line-height: 2;
-  margin-top: 0;
-} */
 
 .servicepage-heading {
   font-size: 2em;
@@ -1451,26 +1434,26 @@ hr {
   min-height: 100%;
 }
 
-.location-cover {
+/* .location-cover {
   height: 50vh;
-}
+} */
 
-.location-header {
+/* .location-header {
   padding-top: 0.25rem;
   margin-top: 0;
   font-size: 1.2rem;
   margin: 0 auto 20vh auto;
-}
+} */
 
-.location-header h1 {
+/* .location-header h1 {
   margin-bottom: 1rem;
   margin-top: 0;
-}
+} */
 
-.location-header h2 {
+/* .location-header h2 {
   font-size: 2rem;
   margin: 0 auto 2rem auto;
-}
+} */
 
 .location-main {
   width: 80vw;
@@ -1590,7 +1573,7 @@ hr {
   }
 
   .servicepage-header {
-    font-size: 3em;
+    font-size: 2em;
   }
 
   .location-header {
@@ -1880,10 +1863,6 @@ hr {
     column-count: 4;
   }
 
-  /* .servicepage-header {
-    margin: 0 auto 42vh auto
-  } */
-
   .location-header {
     padding-top: 10rem;
     margin: 0 auto 30vh auto
@@ -1891,9 +1870,6 @@ hr {
 }
 
 @media screen and (min-width: 2000px) {
-  /* .servicepage-header {
-    margin: 0 auto 45vh auto;
-  } */
 
   .location-header {
     padding-top: 14rem;

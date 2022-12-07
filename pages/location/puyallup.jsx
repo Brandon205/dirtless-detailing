@@ -26,18 +26,17 @@ export default function puyallup() {
                 <meta property="og:url" content="https://www.dirtlessdetailing.com/location/puyallup" />
                 <link rel="canonical" href="https://www.dirtlessdetailing.com/location/puyallup" />
             </Head>
-            <div className="cover location-cover">
+            <div className="cover">
                 <Image src={cover} alt="biohazard cleaning cover" layout="fill" objectFit='cover' placeholder='blur' priority />
             </div>
-            <div className="servicepage-header location-header">
+            <div className="servicepage-header">
                 <h1>Mobile Detailing in Puyallup Washington</h1>
                 <h2>Ceramic Coating • Interior • Exterior • Paint Correction</h2>
                 <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
             </div>
             <main className="location-main">
                 <h2 className='large'>Professional Detailing Services in Puyallup Washington.</h2>
-                <p>Getting a car detailed in Puyallup is no problem with our mobile service. We can come to you and perform most of our services at your home or work.</p>
-                <p><span className='special-package'>*</span>If we come to your work location, make sure that they allow detailers on site. Most will and there shouldn't be a problem, but very rarely a property manager might not allow it.</p>
+                <p>Getting a car detailed in Puyallup is no problem with our mobile service. We can come to you and perform most of our services at your home or work. If </p>
                 <p>Some of our most complicated services will need a more controlled environment. Services like our <a href="/detailing/ceramic" className='aside-link'>Ceramic Coating</a> and <a href="/detailing/exterior-correction" className='aside-link'>Paint Correction</a> will benefit if done at our shop. There we have lighting and heating where we can get the conditions just right for the service.</p>
                 <p>If you need one of our more extensive details then our <a href="/location/bonney-lake" className='aside-link'>shop</a> is about 20 minutes away from Puyallup. We can set up an appointment to have you drop it off and once you do you are free to stay or go while we do our work.</p>
 
@@ -118,7 +117,7 @@ export default function puyallup() {
                 </Zoom>
             </div>
 
-            <div className='locationpage-section no-bg'>
+            <div className='locationpage-section'>
                 <div>
                     <h3 className='large'>For our full galleries:</h3>
                     <p><a href="/gallery/FullIntGallery" className='aside-link'>Interior Cleaning Gallery</a> - Come check out some of the hundreds of photos we have of what we have been able to do for our customers interiors!</p>
