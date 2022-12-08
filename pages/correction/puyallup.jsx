@@ -26,7 +26,7 @@ export default function puyallup() {
                 <link rel="canonical" href="https://www.dirtlessdetailing.com/correction/puyallup" />
             </Head>
             <div className="cover">
-                <Image src={cover} alt="biohazard cleaning cover" layout="fill" objectFit='cover' placeholder='blur' priority />
+                <Image src={cover} alt="Car after Paint Correction service" layout="fill" objectFit='cover' placeholder='blur' priority />
             </div>
             <div className="servicepage-header location-header">
                 <h1>Paint Correction in Puyallup Washington</h1>

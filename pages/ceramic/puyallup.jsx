@@ -17,7 +17,7 @@ export default function puyallup() {
                 <link rel="canonical" href="https://www.dirtlessdetailing.com/ceramic/puyallup" />
             </Head>
             <div className="cover">
-                <Image src={cover} alt="biohazard cleaning cover" layout="fill" objectFit='cover' placeholder='blur' priority />
+                <Image src={cover} alt="water beading off of car" layout="fill" objectFit='cover' placeholder='blur' priority />
             </div>
             <div className="servicepage-header">
                 <h1>Ceramic Coating in Puyallup Washington</h1>
@@ -45,6 +45,11 @@ export default function puyallup() {
                     <li>Gives paint a glossy finish</li>
                     <li>Light layer of protection against the environment</li>
                 </ul>
+
+                <h2 className='large'>Professional Interior Coatings in Puyallup Washington.</h2>
+                <p>If you want extra protection on the interior of your car whether it's leather or fabric, we have you covered, literally.</p>
+                <p>Besides extra protection, interior coatings also make spills and other messes far easier to clean up, even on fabrics.</p>
+                <p>The leather coating can also help prevent yellowing from UV rays and other forms of discoloration from normal wear and tear.</p>
 
                 <br className='extra-space' />
             </main>
@@ -86,6 +91,26 @@ export default function puyallup() {
                 </div>
 
             </div>
+
+            <div>
+                    <h3 className='pricing-title text-black'>Our Interior Coating Pricing</h3>
+                    <h4 className='pricing-subtext'>*Pricing does NOT include an <a href="/services/FullIntEx" className='aside-link'>Interior Cleaning</a>, which you will need to add to get a coating.</h4>
+                    <div className='pricing-container text-black'>
+                        <div className="pricing-card">
+                            <h4 className="size">Fabric Coating</h4>
+                            <p className="pricing-price pricing-border">$75</p>    
+                            <p className="example-vehicle pricing-border">Any Size Vehicle</p>
+                            <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                        </div>
+                        <div className="pricing-card">
+                            <h4 className="size">Leather Coating</h4>
+                            <p className="pricing-price pricing-border">$150</p>
+                            <p className="example-vehicle pricing-border">Any Size Vehicle</p>
+                            <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                        </div>
+                    </div>
+
+                </div>
 
             <div className='locationpage-section'>
                 <div>

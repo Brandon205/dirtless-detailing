@@ -63,7 +63,7 @@ export default function IntCoatings() {
 
                 <div>
                     <h3 className='pricing-title text-white'>Our Interior Coating Pricing</h3>
-                    <h4 className='subtext'><span className='special-package'>*</span>Pricing does NOT include an Interior Cleaning, which you will want to factor in before getting a coating.</h4>
+                    <h4 className='subtext'><span className='special-package'>*</span>Pricing does NOT include an <a href="/services/FullIntEx" className='aside-link'>Interior Cleaning</a>, which you will want to factor in before getting a coating.</h4>
                     <div className='pricing-container text-black'>
                         <div className="pricing-card">
                             <h4 className="size">Fabric Coating</h4>
