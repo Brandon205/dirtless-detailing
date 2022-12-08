@@ -38,7 +38,7 @@ export default function puyallup() {
             <main className="location-main">
                 <h2 className='large'>Professional Detailing Services in Puyallup Washington.</h2>
                 <p>Getting a car detailed in Puyallup is no problem with our mobile service. We can come to you and perform most of our services at your home or work. If we have permission to detail in the location then we can do it.</p>
-                <p>Some of our most complicated services will need a more controlled environment. Services like our <a href="/detailing/ceramic" className='aside-link'>Ceramic Coating</a> and <a href="/detailing/exterior-correction" className='aside-link'>Paint Correction</a> will benefit if done at our shop. There we have lighting and heating where we can get the conditions just right for the service.</p>
+                <p>Some of our most complicated services will need a more controlled environment. Services like our <a href="/detailing/ceramic" className='aside-link'>Ceramic Coating</a> and <a href="/detailing/paint-correction" className='aside-link'>Paint Correction</a> will benefit if done at our shop. There we have lighting and heating where we can get the conditions just right for the service.</p>
                 <p>If you need one of our more extensive details then our <a href="/location/bonney-lake" className='aside-link'>shop</a> is about 20 minutes away from Puyallup. We can set up an appointment to have you drop it off and once you do you are free to stay or go while we do our work.</p>
 
                 <br className='extra-space' />
@@ -68,7 +68,7 @@ export default function puyallup() {
                     <p><a href="/detailing/ceramic" className='aside-link'>Ceramic Coating</a> - Our 5 year Ceramic Coatings will not only keep your vehicle looking great, but will also keep your paint protected. A full <a href="/servicles/SinglePC" className='aside-link'>Single Stage Paint Correction</a> is performed before the coating to give it a nice even surface to be applied to.</p>
                     <p><a href="/services/FullIntEx" className='aside-link'>Interior Cleaning</a> - A full interior detail will clean every crack and crevice of your vehicles interior to a like-new condition. Optionally we can also do a hot water extraction to the carpets of your vehicle to get out the deeper stains and dirt.</p>
                     <p><a href="/detailing/exterior-wash" className='aside-link'>Exterior Washes</a> - Either of our Dirt-Less Washes will thoroughly clean the exterior of your vehicle with our tried and true cleaning processes. Topped off with a spray wax for an extra layer of protection and shine.</p>
-                    <p><a href="/detailing/exterior-correction" className='aside-link'>Paint Correction</a> - Our paint correction services can fix roughly 60%-90% of minor damage and scratches and will leave your vehicle looking shinier and feeling smoother than ever.</p>
+                    <p><a href="/detailing/paint-correction" className='aside-link'>Paint Correction</a> - Our paint correction services can fix roughly 60%-90% of minor damage and scratches and will leave your vehicle looking shinier and feeling smoother than ever.</p>
 
                     <a href="/Contact" className="quote-btn location-quote-btn">Get a Quote</a>
                 </div>

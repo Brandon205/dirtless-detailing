@@ -13,39 +13,37 @@ import ext5 from '../../public/imgs/pageimgs/paintCorrection/IMG_20220909_124912
 import ext6 from '../../public/imgs/pageimgs/paintCorrection/IMG_20220919_100906.jpg';
 import ext7 from '../../public/imgs/pageimgs/paintCorrection/IMG_20220727_091237.jpg';
 
-export default function puyallup() {
+export default function paintCorrection() {
     return (
         <div>
             <Head>
-                <title>Dirt-Less Detailing | Paint Correction in Puyallup</title>
-                <meta property="og:title" content="Dirt-Less Detailing | Paint Correction in Puyallup" />
+                <title>Dirt-Less Detailing | Paint Correction Services</title>
+                <meta property="og:title" content="Dirt-Less Detailing | Paint Correction Services" />
                 <meta property="description" content="Check out our Single and Two Stage paint correction to fix any scratches or swirls in your paint." />
                 <meta property="og:description" content="Check out our Single and Two Stage paint correction to fix any scratches or swirls in your paint." />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://www.dirtlessdetailing.com/correction/puyallup" />
-                <link rel="canonical" href="https://www.dirtlessdetailing.com/correction/puyallup" />
+                <meta property="og:url" content="https://www.dirtlessdetailing.com/detailing/paint-correction" />
+                <link rel="canonical" href="https://www.dirtlessdetailing.com/detailing/paint-correction" />
             </Head>
             <div className="cover">
                 <Image src={cover} alt="Car after Paint Correction service" layout="fill" objectFit='cover' placeholder='blur' priority />
             </div>
             <div className="servicepage-header location-header">
-                <h1>Paint Correction in Puyallup Washington</h1>
+                <h1>Paint Correction</h1>
                 <h2>Single and Two Stage Paint Correction services</h2>
                 <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
             </div>
             
             <main className="location-main">
-                <h2 className='large'>Professional Paint Correction in Puyallup Washington.</h2>
+                <h2 className='large'>Professional Paint Correction.</h2>
                 <p>To ensure the best results on your paint correction we will have you drop your car off at our shop location in Bonney Lake.</p>
                 <p>Why? Well we want a controlled environment when performing our paint correction procedures. At our shop we have lighting and temperature controls. This way we can keep an optimal temperature and the lighting helps us see and fix any imperfections on the paint.</p>
-                <p>Our shop is about 20 minutes away from most of Puyallup, once there you are free to go wherever or stick around while we work.</p>
 
                 <br className='extra-space' />
 
                 <h2 className='large'>What's the difference between the Single Stage and Two Stage Paint Correction?</h2>
                 <p>The simple answer is that we just use a different product on one of the steps. The Two Stage paint correction product we use can get rid of up to 90% of scratches and swirl marks in your paint, while the Single Stage product usually removes around 60%-80%.</p>
                 <p>In the steps below its shown in step number 8, all of the other steps are carried out the same.</p>
-                <p>To learn more about each check out our <a href="/detailing/paint-correction" className='aside-link'>comparison</a> page. Or if you're interested in one or the other check out our <a href="/services/SinglePC" className='aside-link'>Single Stage Paint Correction</a> or the <a href="/services/TwoPC" className='aside-link'>Two Stage Paint Correction</a> page.</p>
 
                 <br className='extra-space' />
             </main>
