@@ -67,11 +67,14 @@ export default function MyApp({ Component, pageProps }) {
 
     let handleScroll = () => {
         const pos = window.pageYOffset;
-        console.log(pos)
         if (pos > 450 || smallScreen) {
-            navBar.current.classList.add('navigation-large')
+            navBar.current.style.backgroundColor = '#101010'
+            navBar.current.style.backdropFilter = 'none'
+            navBar.current.style.borderRadius = '0'
+            navBar.current.style.transform = 'scale(100%)'
+            navBar.current.style.transition = '0.5s'
         } else {
-            navBar.current.classList.remove('navigation-large')
+            navBar.current.removeAttribute('style')
         }
     }
 
