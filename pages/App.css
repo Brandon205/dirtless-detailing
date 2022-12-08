@@ -61,7 +61,7 @@ body {
 }
 
 .logo {
-  margin-left: 1rem;   
+  margin-left: 1rem;
 }
 
 .menu-bars {
@@ -137,7 +137,7 @@ body {
   color: white
 }
 
-@keyframes serviceButton{
+@keyframes serviceButton {
   0% {
     font-size: 1.5rem;
     padding: 0.6rem
@@ -291,8 +291,8 @@ header h1 {
   grid-template-rows: auto auto;
   grid-template-columns: auto auto;
   grid-template-areas: "icon desc"
-                       "icon myspan";
-  margin-bottom: 2rem; 
+    "icon myspan";
+  margin-bottom: 2rem;
   width: 190px;
   text-align: left;
 }
@@ -362,18 +362,18 @@ input[type='checkbox'] {
   display: none;
 }
 
-input[type='checkbox']:checked + label {
+input[type='checkbox']:checked+label {
   transition: all 500ms ease;
   background-color: var(--main-clr);
   color: white;
   border-color: var(--main-clr);
 }
 
-input[type='checkbox']:checked + label .special-package {
+input[type='checkbox']:checked+label .special-package {
   color: white;
 }
 
-input[type='checkbox']:disabled + label {
+input[type='checkbox']:disabled+label {
   color: gray;
   cursor: default;
 }
@@ -593,8 +593,8 @@ input[type="range"] {
 }
 
 .popular-services-card h2 {
-  margin: 1rem auto 0 auto; 
-  letter-spacing: 2; 
+  margin: 1rem auto 0 auto;
+  letter-spacing: 2;
   font-weight: 600;
 }
 
@@ -883,7 +883,7 @@ input[type="range"] {
 
 .mobileservices-container {
   width: 100%;
-  padding: 1rem; 
+  padding: 1rem;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -1004,7 +1004,8 @@ hr {
   color: white;
 }
 
-.about-container h2, .about-container h3 {
+.about-container h2,
+.about-container h3 {
   font-size: 3em;
 }
 
@@ -1135,7 +1136,7 @@ hr {
   margin: 0.5rem 0 0 0;
 }
 
-.step-desc{
+.step-desc {
   display: inline;
   font-weight: 300;
 }
@@ -1350,11 +1351,9 @@ hr {
   justify-content: center;
   align-items: center;
   border-radius: 4px;
-  background: linear-gradient(
-    135deg,
-    var(--main-clr) 0%,
-    var(--main-clr-lighter) 100%
-  );
+  background: linear-gradient(135deg,
+      var(--main-clr) 0%,
+      var(--main-clr-lighter) 100%);
   color: #fff;
   outline: none;
   border: 0;
@@ -1427,8 +1426,7 @@ hr {
   padding: 0.5rem;
   background-color: var(--main-clr);
   color: white;
-  width: 100%
-  border-radius 1rem 1rem 0 0;
+  width: 100% border-radius 1rem 1rem 0 0;
 }
 
 /** LOCATION PAGE CSS **/
@@ -1548,7 +1546,7 @@ hr {
     width: 90vw;
     margin: 0 auto;
   }
-  
+
   .example-img {
     width: 275px;
   }
@@ -1573,7 +1571,7 @@ hr {
   .pricing-container {
     flex-direction: row;
   }
-  
+
   .pricing-card {
     width: 305px;
   }
@@ -1657,7 +1655,7 @@ hr {
     flex-direction: column;
     justify-content: space-around;
   }
-  
+
   .map {
     width: 500px;
     height: 400px;
@@ -1672,7 +1670,7 @@ hr {
   }
 
   .popular-desc {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: center;
   }
@@ -1814,6 +1812,19 @@ hr {
 
   .contact-information {
     max-width: 800px;
+  }
+
+  .sidebyside {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 2rem 5rem;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sidebyside .list {
+    width: 40vw;
   }
 
   .maintenance-costs {

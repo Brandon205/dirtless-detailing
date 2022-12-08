@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 
-import cover from '../../public/imgs/pageimgs/ceramic/waterBeads.jpg';
+import cover from '../../public/imgs/pageimgs/exterior/IMG_20211103_105855.jpg';
 
 export default function puyallup() {
     return (
@@ -93,24 +93,23 @@ export default function puyallup() {
             </div>
 
             <div>
-                    <h3 className='pricing-title text-black'>Our Interior Coating Pricing</h3>
-                    <h4 className='pricing-subtext'>*Pricing does NOT include an <a href="/services/FullIntEx" className='aside-link'>Interior Cleaning</a>, which you will need to add to get a coating.</h4>
-                    <div className='pricing-container text-black'>
-                        <div className="pricing-card">
-                            <h4 className="size">Fabric Coating</h4>
-                            <p className="pricing-price pricing-border">$75</p>    
-                            <p className="example-vehicle pricing-border">Any Size Vehicle</p>
-                            <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                        </div>
-                        <div className="pricing-card">
-                            <h4 className="size">Leather Coating</h4>
-                            <p className="pricing-price pricing-border">$150</p>
-                            <p className="example-vehicle pricing-border">Any Size Vehicle</p>
-                            <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                        </div>
+                <h3 className='pricing-title text-black'>Our Interior Coating Pricing</h3>
+                <h4 className='pricing-subtext'>*Pricing does NOT include an <a href="/services/FullIntEx" className='aside-link'>Interior Cleaning</a>, which you will need to add to get a coating.</h4>
+                <div className='pricing-container text-black'>
+                    <div className="pricing-card">
+                        <h4 className="size">Fabric Coating</h4>
+                        <p className="pricing-price pricing-border">$75</p>    
+                        <p className="example-vehicle pricing-border">Any Size Vehicle</p>
+                        <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                     </div>
-
+                    <div className="pricing-card">
+                        <h4 className="size">Leather Coating</h4>
+                        <p className="pricing-price pricing-border">$150</p>
+                        <p className="example-vehicle pricing-border">Any Size Vehicle</p>
+                        <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                    </div>
                 </div>
+            </div>
 
             <div className='locationpage-section'>
                 <div>
