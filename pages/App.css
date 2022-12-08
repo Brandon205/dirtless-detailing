@@ -1443,6 +1443,7 @@ hr {
   margin: 0 auto;
   letter-spacing: 0.75px;
   line-height: 2;
+  font-size: 1.1em;
   text-align: left;
 }
 
@@ -1452,7 +1453,12 @@ hr {
   padding: 2rem 1rem;
   letter-spacing: 0.75px;
   line-height: 2;
+  font-size: 1.1em;
   text-align: left;
+}
+
+.location-header {
+  font-size: 1.5em;
 }
 
 .location-quote-btn {
@@ -1465,7 +1471,7 @@ hr {
 }
 
 .extra-space {
-  margin: 1.5rem auto;
+  margin: 1rem auto;
 }
 
 .text-white {
@@ -1514,10 +1520,6 @@ hr {
     max-width: 360px;
   }
 
-  .location-header {
-    padding-top: 2.5rem;
-  }
-
   .otherservices-container {
     flex-wrap: wrap;
     flex-direction: row;
@@ -1557,11 +1559,6 @@ hr {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-  }
-
-  .location-header {
-    padding-top: 5rem;
-    font-size: 2em;
   }
 
   .locationpage-section div {
@@ -1845,17 +1842,10 @@ hr {
   .gallery-container {
     column-count: 4;
   }
-
-  .location-header {
-    padding-top: 10rem;
-    margin: 0 auto 30vh auto
-  }
 }
 
 @media screen and (min-width: 2000px) {
-
   .location-header {
-    padding-top: 14rem;
-    margin: 0 auto 24vh auto
+    font-size: 2.5em;
   }
 }

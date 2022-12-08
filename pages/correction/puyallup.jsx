@@ -28,8 +28,8 @@ export default function puyallup() {
             <div className="cover">
                 <Image src={cover} alt="biohazard cleaning cover" layout="fill" objectFit='cover' placeholder='blur' priority />
             </div>
-            <div className="servicepage-header">
-                <h1>Ceramic Coating in Puyallup Washington</h1>
+            <div className="servicepage-header location-header">
+                <h1>Paint Correction in Puyallup Washington</h1>
                 <h2>Single and Two Stage Paint Correction services</h2>
                 <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
             </div>
@@ -42,7 +42,7 @@ export default function puyallup() {
 
                 <br className='extra-space' />
 
-                <h2 className=''>What's the difference between the Single Stage and Two Stage Paint Correction?</h2>
+                <h2 className='large'>What's the difference between the Single Stage and Two Stage Paint Correction?</h2>
                 <p>The simple answer is that we just use a different product on one of the steps. The Two Stage paint correction product we use can get rid of up to 90% of scratches and swirl marks in your paint, while the Single Stage product usually removes around 60%-80%.</p>
                 <p>In the steps below its shown in step number 8, all of the other steps are carried out the same.</p>
                 <p>To learn more about each check out our <a href="/detailing/exterior-correction" className='aside-link'>comparison</a> page. Or if you're interested in one or the other check out our <a href="/services/SinglePC" className='aside-link'>Single Stage Paint Correction</a> or the <a href="/services/TwoPC" className='aside-link'>Two Stage Paint Correction</a> page.</p>
