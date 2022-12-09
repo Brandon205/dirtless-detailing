@@ -155,9 +155,7 @@ body {
 }
 
 .service-page-quote-btn {
-  position: absolute;
-  transform: translateX(-50%);
-  margin: 0 auto;
+  margin: 0 2.5rem;
   animation: 2s ease-in-out serviceButton;
   background-color: rgba(0, 0, 0, 0);
   color: white;
@@ -1437,7 +1435,7 @@ hr {
   letter-spacing: 0.75px;
   line-height: 2;
   font-size: 1.1em;
-  text-align: left;
+  text-align: center;
 }
 
 .locationpage-section {
@@ -1447,7 +1445,7 @@ hr {
   letter-spacing: 0.75px;
   line-height: 2;
   font-size: 1.1em;
-  text-align: left;
+  text-align: center;
 }
 
 .location-header {
@@ -1456,7 +1454,7 @@ hr {
 
 .location-quote-btn {
   padding: 0.5rem;
-  margin: 0;
+  margin: 0 0 1rem 0;
 }
 
 .location-quote-btn:hover {
@@ -1475,8 +1473,24 @@ hr {
   color: black;
 }
 
-.large {
-  font-size: 1.5em;
+.text-left {
+  text-align: left;
+}
+
+.inline {
+  display: inline;
+}
+
+.text-small {
+  font-size: 1.5rem;
+}
+
+.text-medium {
+  font-size: 1.3em;
+}
+
+.text-large {
+  font-size: 1.7em;
 }
 
 .no-bg {

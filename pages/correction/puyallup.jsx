@@ -32,26 +32,33 @@ export default function puyallup() {
                 <h1>Paint Correction in Puyallup Washington</h1>
                 <h2>Single and Two Stage Paint Correction services</h2>
                 <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+                <p className='inline text-small'>
+                    Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
+                </p>
             </div>
             
             <main className="location-main">
-                <h2 className='large'>Professional Paint Correction in Puyallup Washington.</h2>
-                <p>To ensure the best results on your paint correction we will have you drop your car off at our shop location in Bonney Lake.</p>
-                <p>Why? Well we want a controlled environment when performing our paint correction procedures. At our shop we have lighting and temperature controls. This way we can keep an optimal temperature and the lighting helps us see and fix any imperfections on the paint.</p>
-                <p>Our shop is about 20 minutes away from most of Puyallup, once there you are free to go wherever or stick around while we work.</p>
+                <h2 className='text-large'>Professional Paint Correction in Puyallup Washington.</h2>
+                <div className="text-left">
+                    <p>To ensure the best results on your paint correction we will have you drop your car off at our shop location in Bonney Lake.</p>
+                    <p>Why? Well we want a controlled environment when performing our paint correction procedures. At our shop we have lighting and temperature controls. This way we can keep an optimal temperature and the lighting helps us see and fix any imperfections on the paint.</p>
+                    <p>Our shop is about 20 minutes away from most of Puyallup, once there you are free to go wherever or stick around while we work.</p>
+                </div>
 
                 <br className='extra-space' />
 
-                <h2 className='large'>What's the difference between the Single Stage and Two Stage Paint Correction?</h2>
-                <p>The simple answer is that we just use a different product on one of the steps. The Two Stage paint correction product we use can get rid of up to 90% of scratches and swirl marks in your paint, while the Single Stage product usually removes around 60%-80%.</p>
-                <p>In the steps below its shown in step number 8, all of the other steps are carried out the same.</p>
-                <p>To learn more about each check out our <a href="/detailing/paint-correction" className='aside-link'>comparison</a> page. Or if you're interested in one or the other check out our <a href="/services/SinglePC" className='aside-link'>Single Stage Paint Correction</a> or the <a href="/services/TwoPC" className='aside-link'>Two Stage Paint Correction</a> page.</p>
+                <h2 className='text-large'>What's the difference between the Single Stage and Two Stage Paint Correction?</h2>
+                <div className="text-left">
+                    <p>The simple answer is that we just use a different product on one of the steps. The Two Stage paint correction product we use can get rid of up to 90% of scratches and swirl marks in your paint, while the Single Stage product usually removes around 60%-80%.</p>
+                    <p>In the steps below its shown in step number 8, all of the other steps are carried out the same.</p>
+                    <p>To learn more about each check out our <a href="/detailing/correction" className='aside-link'>comparison</a> page. Or if you're interested in one or the other check out our <a href="/services/SinglePC" className='aside-link'>Single Stage Paint Correction</a> or the <a href="/services/TwoPC" className='aside-link'>Two Stage Paint Correction</a> page.</p>
+                </div>
 
                 <br className='extra-space' />
             </main>
 
             <div>
-                <h3 className='large'>Our General Paint Correction Process</h3>
+                <h3 className='text-large'>Our General Paint Correction Process</h3>
                 <ol style={{width: 80 + 'vw'}} className='list columns-2'>
                     <li className="item">
                         <div className="step-number-container">
@@ -204,7 +211,7 @@ export default function puyallup() {
             </div>
 
             <div className="locationpage-section no-bg">
-                <h3 className='large'>Check out some of the results from our Paint Correction service</h3>
+                <h3 className='text-large'>Check out some of the results from our Paint Correction service</h3>
                 <div className="gallery-container">
                     <Zoom>
                         <div className='gallery-image-div'>
@@ -243,7 +250,8 @@ export default function puyallup() {
                     </Zoom>
                 </div>
             </div>
-            <h3>See more on our <a href="/gallery/PaintCorrection" className='aside-link'>Paint Correction Gallery</a>.</h3>
+            <h3>See more in our <a href="/gallery/PaintCorrection" className='aside-link'>Paint Correction Gallery</a>.</h3>
+            <a href="/Contact" className="quote-btn location-quote-btn">Get a Quote Today!</a>
 
         </div> 
     )

@@ -33,30 +33,41 @@ export default function puyallup() {
                 <h1>Mobile Detailing in Puyallup Washington</h1>
                 <h2>Ceramic Coating • Interior • Exterior • Paint Correction</h2>
                 <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+                <p className='inline text-small'>
+                    Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
+                </p>
             </div>
 
             <main className="location-main">
-                <h2 className='large'>Professional Detailing Services in Puyallup Washington.</h2>
-                <p>Getting a car detailed in Puyallup is no problem with our mobile service. We can come to you and perform most of our services at your home or work. If we have permission to detail in the location then we can do it.</p>
-                <p>Some of our most complicated services will need a more controlled environment. Services like our <a href="/detailing/ceramic" className='aside-link'>Ceramic Coating</a> and <a href="/detailing/paint-correction" className='aside-link'>Paint Correction</a> will benefit if done at our shop. There we have lighting and heating where we can get the conditions just right for the service.</p>
-                <p>If you need one of our more extensive details then our <a href="/location/bonney-lake" className='aside-link'>shop</a> is about 20 minutes away from Puyallup. We can set up an appointment to have you drop it off and once you do you are free to stay or go while we do our work.</p>
+                <h2 className='text-large'>Professional Detailing Services in Puyallup Washington.</h2>
+                <div className="text-left">
+                    <p>Getting a car detailed in Puyallup is no problem with our mobile service. We can come to you and perform most of our services at your home or work. If we have permission to detail in the location then we can do it.</p>
+                    <p>Some of our most complicated services will need a more controlled environment. Services like our <a href="/detailing/ceramic" className='aside-link'>Ceramic Coating</a> and <a href="/detailing/correction" className='aside-link'>Paint Correction</a> will benefit if done at our shop. There we have lighting and heating where we can get the conditions just right for the service.</p>
+                    <p>If you need one of our more extensive details then our <a href="/location/bonney-lake" className='aside-link'>shop</a> is about 20 minutes away from Puyallup in Bonney Lake. We can set up an appointment to have you drop it off and once you do you are free to stay or go while we do our work.</p>
+                </div>
 
                 <br className='extra-space' />
             </main>
-            <div className='locationpage-section'>
+            <div className='locationpage-section no-bg'>
                 <div>
-                    <h3 className='large'>Puyallup Services:</h3>
-                    <p><a href="/detailing/ceramic" className='aside-link large'>Ceramic Coating</a> - Our 5 year Ceramic Coatings will not only keep your vehicle looking great, but will also keep your paint protected. A full <a href="/services/SinglePC" className='aside-link'>Single Stage Paint Correction</a> is performed before the coating to give it a nice even surface to be applied to.</p>
-                    <p><a href="/services/FullIntEx" className='aside-link large'>Interior Cleaning</a> - A full interior detail will clean every crack and crevice of your vehicles interior to a like-new condition. Optionally we can also do a hot water extraction to the carpets of your vehicle to get out the deeper stains and dirt.</p>
-                    <p><a href="/detailing/exterior-wash" className='aside-link large'>Premium Car Washes</a> - Either of our Dirt-Less Washes will thoroughly clean the exterior of your vehicle with our tried and true cleaning processes. Topped off with a spray wax for an extra layer of protection and shine.</p>
-                    <p><a href="/detailing/paint-correction" className='aside-link large'>Paint Correction</a> - Our paint correction services can fix roughly 60%-90% of minor damage and scratches and will leave your vehicle looking shinier and feeling smoother than ever.</p>
+                    <h3 className='text-large'>Services offered in Puyallup:</h3>
+                    <div className="text-left">
+                        <a href="/detailing/ceramic" className='aside-link text-medium'>Ceramic Coating</a>
+                        <p className='mt-0'>Our 5 year Ceramic Coatings will not only keep your vehicle looking great, but they will also keep your paint protected. A full <a href="/services/SinglePC" className='aside-link'>Single Stage Paint Correction</a> is performed before the coating to give it a nice even surface to be applied to. Our exterior Ceramic Coatings will have to be performed at our shop in Bonney Lake.</p>
+                        <a href="/services/FullIntEx" className='aside-link text-medium'>Interior Cleaning</a>
+                        <p className='mt-0'>A full interior detail will clean every crack and crevice of your vehicles interior to a like-new condition. Optionally we can also do a hot water extraction to the carpets of your vehicle to get out the deeper stains and dirt.</p>
+                        <a href="/detailing/exterior-wash" className='aside-link text-medium'>Premium Car Washes</a>
+                        <p className='mt-0'>Either of our Dirt-Less Washes will thoroughly clean the exterior of your vehicle with our tried and true cleaning processes. Topped off with a spray wax for an extra layer of protection and shine.</p>
+                        <a href="/detailing/correction" className='aside-link text-medium'>Paint Correction</a>
+                        <p className='mt-0'>Our paint correction services can fix roughly 60%-90% of minor damage and scratches and will leave your vehicle looking shinier and feeling smoother than ever.</p>
+                    </div>
 
                     <a href="/Contact" className="quote-btn location-quote-btn">Get a Quote</a>
                 </div>
             </div>
 
-            <div className="locationpage-section no-bg">
-                <h3 className='large'>Check out some of the results from our services</h3>
+            <div className="locationpage-section">
+                <h3 className='text-large'>Check out some of the results from our services</h3>
                 <div className="gallery-container">
                     <Zoom>
                         <div className='gallery-image-div'>
@@ -101,16 +112,24 @@ export default function puyallup() {
                 </div>
             </div>
 
-            <div className='locationpage-section'>
+            <div className='locationpage-section no-bg'>
                 <div className='location-gallery-container'>
-                    <h3 className='large'>Our gallery pages:</h3>
-                    <p><a href="/gallery/FullIntGallery" className='aside-link'>Interior Cleaning Gallery</a> - Come check out some of the hundreds of photos we have of what we have been able to do for our customers interiors!</p>
-                    <p><a href="/gallery/ExteriorWashGallery" className='aside-link'>Exterior Wash Gallery</a> - We have easily washed hundreds of vehicles and have our process optimized from the tires to the headlights, leaving every vehicle in great condition every time.</p>
-                    <p><a href="/gallery/PaintCorrectionGallery" className='aside-link'>Paint Correction Gallery</a> - These vehicles have all been through the whole process from completely washing, to taping off, all the way to the paint correction itself.</p>
-                    <p><a href="/gallery/CoatingGallery" className='aside-link'>Ceramic Coating Gallery</a> - A gallery of our work so far applying ceramic coats.</p>
-                    <p><a href="/gallery/EngineGallery" className='aside-link'>Engine Bay Gallery</a> - Take a look at some of the engines that we've gotten to take care of.</p>
+                    <h3 className='text-large'>Our gallery pages:</h3>
+                    <div className="text-left">
+                        <a href="/gallery/FullIntGallery" className='aside-link text-medium'>Interior Cleaning Gallery</a>
+                        <p className='mt-0'>Come check out some of the hundreds of photos we have of what we have been able to do for our customers interiors!</p>
+                        <a href="/gallery/ExteriorWashGallery" className='aside-link text-medium'>Exterior Wash Gallery</a>
+                        <p className='mt-0'>We have easily washed hundreds of vehicles and have our process optimized from the tires to the headlights, leaving every vehicle in great condition every time.</p>
+                        <a href="/gallery/PaintCorrectionGallery" className='aside-link text-medium'>Paint Correction Gallery</a>
+                        <p className='mt-0'>These vehicles have all been through the whole process from completely washing, to taping off, all the way to the paint correction itself.</p>
+                        <a href="/gallery/CoatingGallery" className='aside-link text-medium'>Ceramic Coating Gallery</a>
+                        <p className='mt-0'>A gallery of our work so far applying ceramic coats.</p>
+                        <a href="/gallery/EngineGallery" className='aside-link text-medium'>Engine Bay Gallery</a>
+                        <p className='mt-0'>Take a look at some of the engines that we've gotten to take care of.</p>
+                    </div>
                 </div>
             </div>
+            <a href="/Contact" className="quote-btn location-quote-btn">Get a Quote Today!</a>
         </div> 
     )
 }

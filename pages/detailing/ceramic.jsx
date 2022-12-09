@@ -23,18 +23,23 @@ export default function ceramic() {
                 <h1>Ceramic Coating</h1>
                 <h2>5-year IGL Graphene Coatings</h2>
                 <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+                <p className='inline text-small'>
+                    Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
+                </p>
             </div>
             
             <main className="location-main">
-                <h2 className='large'>Professional Ceramic Coatings.</h2>
-                <p>For the best results on your ceramic coat we will have you drop your car off at our shop location in Bonney Lake.</p>
-                <p>One of the first things we do to your car is a full <a href="/services/SinglePC" className='aside-link'>Single Stage Paint Correction</a> to clean and prep your vehicle. For that service we also like to have our customers bring their vehicles to us.</p>
-                <p>Why? We want a controlled environment when applying a ceramic coat. At our shop we have lighting and temperature controls. This way we can keep an optimal temperature and the lighting helps us see and fix any imperfections on the paint.</p>
+                <h2 className='text-large'>Professional Ceramic Coatings.</h2>
+                <div className="text-left">
+                    <p>For the best results on your ceramic coat we will have you drop your car off at our shop location in Bonney Lake.</p>
+                    <p>One of the first things we do to your car is a full <a href="/services/SinglePC" className='aside-link'>Single Stage Paint Correction</a> to clean and prep your vehicle. For that service we also like to have our customers bring their vehicles to us.</p>
+                    <p>Why? We want a controlled environment when applying a ceramic coat. At our shop we have lighting and temperature controls. This way we can keep an optimal temperature and the lighting helps us see and fix any imperfections on the paint.</p>
+                </div>
 
                 <br className='extra-space' />
 
-                <h2 className='large'>Why get a ceramic coating?</h2>
-                <p>Here's a list of some of the many benefits to getting a ceramic coating on your car:</p>
+                <h2 className='text-large'>Why get a ceramic coating?</h2>
+                <p className='text-left'>Here's a list of some of the many benefits to getting a ceramic coating on your car:</p>
                 <ul className='cities-ul'>
                     <li>Lasts about 5 years (with proper care)</li>
                     <li>Hyrophobic</li>
@@ -45,15 +50,19 @@ export default function ceramic() {
                     <li>Light layer of protection against the environment</li>
                 </ul>
 
-                <h2 className='large'>Professional Interior Coatings.</h2>
-                <p>If you want extra protection on the interior of your car whether it's leather or fabric, we have you covered, literally.</p>
-                <p>Besides extra protection, interior coatings also make spills and other messes far easier to clean up, even on fabrics.</p>
-                <p>The leather coating can also help prevent yellowing from UV rays and other forms of discoloration from normal wear and tear.</p>
+                <br className='extra-space' />
+
+                <h2 className='text-large'>Professional Interior Coatings.</h2>
+                <div className="text-left">
+                    <p>If you want extra protection on the interior of your car whether it's leather or fabric, we have you covered, literally.</p>
+                    <p>Besides extra protection, interior coatings also make spills and other messes far easier to clean up, even on fabrics.</p>
+                    <p>The leather coating can also help prevent yellowing from UV rays and other forms of discoloration from normal wear and tear.</p>
+                </div>
 
                 <br className='extra-space' />
             </main>
 
-            <div>
+            <div className='only-bg'>
                 <h3 className='pricing-title text-black'>Our Ceramic Coating Pricing</h3>
                 <h4 className='pricing-subtext'>*Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</h4>
                 <div className="pricing-container text-black">
@@ -111,9 +120,9 @@ export default function ceramic() {
 
             </div>
 
-            <div className='locationpage-section'>
+            <div className='locationpage-section no-bg'>
                 <div>
-                    <h3 className='large'>Ceramic Coating FAQ</h3>
+                    <h3 className='text-large'>Ceramic Coating FAQ</h3>
                     <ul className='faq-ul'>
                         <li className='faq-li'>How long does it last?</li>
                         <li className='faq-p text-black'>The paint coating should last 5 years, 50,000 miles, or a Lifetime<span className='special-package'>*</span> with our warranty. The coating on any trim, glass, lights, or wheels will last 1 year approximately.</li>
@@ -132,6 +141,7 @@ export default function ceramic() {
                     </ul>
                 </div>
             </div>
+            <a href="/Contact" className="quote-btn location-quote-btn">Get a Quote Today!</a>
 
         </div> 
     )

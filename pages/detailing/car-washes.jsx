@@ -33,31 +33,42 @@ export default function exteriorWash() {
         <h1>Car Wash Services</h1>
         <h2>Dirt-Less Wash, Premium Dirt-Less Wash, and Engine Bay Washes</h2>
         <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+        <p className='inline text-small'>
+          Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
+        </p>
       </div>
 
       <main className="location-main">
-        <h2 className='large'>Professional Car Washes.</h2>
-        <p>With either of our car wash services your vehicle will be left in a dealership ready state.</p>
-        <p>Our Dirt-Less Detail will clean the whole exterior of your vehicle from the wheel wells to the roof racks.</p>
-        <p>Go the extra mile with our Premium service to get clay bar and iron decontamination treatment as well, and ensure that all contaminants are off of your vehicle.</p>
+        <h2 className='text-large'>Professional Car Washes.</h2>
+        <div className="text-left">
+          <p>With either of our car wash services your vehicle will be left in a dealership ready state.</p>
+          <p>Our Dirt-Less Detail will clean the whole exterior of your vehicle from the wheel wells to the roof racks.</p>
+          <p>Go the extra mile with our Premium service to get clay bar and iron decontamination treatment as well, and ensure that all contaminants are off of your vehicle.</p>
+        </div>
 
         <br className='extra-space' />
 
-        <h2 className='large'>What's the difference between the Dirt-Less Wash and the Premium version?</h2>
-        <p>For a more detailed side by side comparison check out the steps below.</p>
-        <p>Basically with the Premium wash we go above and beyond what is done in the Dirt-Less wash. Here are some of the extra steps we will take:</p>
-        <p>We will clay bar the entire vehicle to leave the vehicle smooth and to make sure the wax we apply adheres as good as possible.</p>
-        <p>Then we will perform an Iron Decontamination to get any remnants that the clay bar might have missed including microscopic iron contaminants.</p>
+        <h2 className='text-large'>What's the difference between the Dirt-Less Wash and the Premium Dirt-Less Wash?</h2>
+        <div className="text-left">
+          <p>For a more detailed side by side comparison check out the steps below.</p>
+          <p>Basically with the Premium wash we go above and beyond what is done in the Dirt-Less wash. Here are some of the extra steps we will take:</p>
+          <p>We will clay bar the entire vehicle to leave the vehicle smooth and to make sure the wax we apply adheres as good as possible.</p>
+          <p>Then we will perform an Iron Decontamination to get any remnants that the clay bar might have missed including microscopic iron contaminants.</p>
+        </div>
 
         <br className='extra-space' />
 
-        <h2 className='large'>Truck Bed Cleaning - <span className="special-package">$25</span></h2>
-        <p>Typically in our washes by default we don't clean out truck beds, but if you want us to this is just the addon for you. We will fully rinse out and clean any size truck bed.</p>
+        <h2 className='text-large'>Truck Bed Cleaning - <span className="special-package">$25</span></h2>
+        <div className="text-left">
+          <p>Typically in our washes by default we don't clean out truck beds, but if you want us to this is just the add-on for you. We will fully rinse out and clean any size truck bed.</p>
+        </div>
 
         <br className='extra-space' />
 
-        <h2 className='large'>Engine Bay Wash - <span className="special-package">$80</span></h2>
-        <p>When washing engine bays we cover and take care of any and all electronics and other sensitive areas of the engine bay so there's nothing to worry about.</p>
+        <h2 className='text-large'>Engine Bay Wash - <span className="special-package">$80</span></h2>
+        <div className="text-left">
+          <p>When washing engine bays we cover and take care of any and all electronics and other sensitive areas of the engine bay so there's nothing to worry about.</p>
+        </div>
 
         <br className='extra-space' />
       </main>
@@ -251,7 +262,7 @@ export default function exteriorWash() {
       </div>
 
       <div className="locationpage-section no-bg">
-        <h3 className='large'>Check out some of the results from our exterior services</h3>
+        <h3 className='text-large'>Check out some of the results from our exterior services</h3>
         <div className="gallery-container">
           <Zoom>
             <div className='gallery-image-div'>
@@ -295,7 +306,9 @@ export default function exteriorWash() {
           </Zoom>
         </div>
       </div>
-      <h3>See more exterior photos on our <a href="/gallery/ExteriorWashGallery" className='aside-link'>Exterior Wash Gallery</a>. For more engine bay photos check out our <a href="/gallery/EngineGallery" className='aside-link'>Engine Gallery</a>.</h3>
+      <h3>See more exterior photos in our <a href="/gallery/ExteriorWashGallery" className='aside-link'>Exterior Wash Gallery</a>. For more engine bay photos check out our <a href="/gallery/EngineGallery" className='aside-link'>Engine Gallery</a>.</h3>
+
+      <a href="/Contact" className="quote-btn location-quote-btn">Get a Quote Today!</a>
 
     </div>
   );

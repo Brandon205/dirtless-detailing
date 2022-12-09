@@ -13,7 +13,7 @@ import ext5 from '../../public/imgs/pageimgs/paintCorrection/IMG_20220909_124912
 import ext6 from '../../public/imgs/pageimgs/paintCorrection/IMG_20220919_100906.jpg';
 import ext7 from '../../public/imgs/pageimgs/paintCorrection/IMG_20220727_091237.jpg';
 
-export default function paintCorrection() {
+export default function correction() {
     return (
         <div>
             <Head>
@@ -22,34 +22,41 @@ export default function paintCorrection() {
                 <meta property="description" content="Check out our Single and Two Stage paint correction to fix any scratches or swirls in your paint." />
                 <meta property="og:description" content="Check out our Single and Two Stage paint correction to fix any scratches or swirls in your paint." />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://www.dirtlessdetailing.com/detailing/paint-correction" />
-                <link rel="canonical" href="https://www.dirtlessdetailing.com/detailing/paint-correction" />
+                <meta property="og:url" content="https://www.dirtlessdetailing.com/detailing/correction" />
+                <link rel="canonical" href="https://www.dirtlessdetailing.com/detailing/correction" />
             </Head>
             <div className="cover">
                 <Image src={cover} alt="Car after Paint Correction service" layout="fill" objectFit='cover' placeholder='blur' priority />
             </div>
             <div className="servicepage-header location-header">
-                <h1>Paint Correction</h1>
+                <h1>Paint Correction Services</h1>
                 <h2>Single and Two Stage Paint Correction services</h2>
                 <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+                <p className='inline text-small'>
+                    Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
+                </p>
             </div>
             
             <main className="location-main">
-                <h2 className='large'>Professional Paint Correction.</h2>
-                <p>To ensure the best results on your paint correction we will have you drop your car off at our shop location in Bonney Lake.</p>
-                <p>Why? Well we want a controlled environment when performing our paint correction procedures. At our shop we have lighting and temperature controls. This way we can keep an optimal temperature and the lighting helps us see and fix any imperfections on the paint.</p>
+                <h2 className='text-large'>Professional Paint Correction.</h2>
+                <div className="text-left">
+                    <p>To ensure the best results on your paint correction we will have you drop your car off at our shop location in Bonney Lake.</p>
+                    <p>Why? Well we want a controlled environment when performing our paint correction procedures. At our shop we have lighting and temperature controls. This way we can keep an optimal temperature and the lighting helps us see and fix any imperfections on the paint.</p>
+                </div>
 
                 <br className='extra-space' />
 
-                <h2 className='large'>What's the difference between the Single Stage and Two Stage Paint Correction?</h2>
-                <p>The simple answer is that we just use a different product on one of the steps. The Two Stage paint correction product we use can get rid of up to 90% of scratches and swirl marks in your paint, while the Single Stage product usually removes around 60%-80%.</p>
-                <p>In the steps below its shown in step number 8, all of the other steps are carried out the same.</p>
+                <h2 className='text-large'>What's the difference between the Single Stage and Two Stage Paint Correction?</h2>
+                <div className="text-left">
+                    <p>The simple answer is that we just use a different product on one of the steps. The Two Stage paint correction product we use can get rid of up to 90% of scratches and swirl marks in your paint, while the Single Stage product usually removes around 60%-80%.</p>
+                    <p>In the steps below its shown in step number 8, all of the other steps are carried out the same.</p>
+                </div>
 
                 <br className='extra-space' />
             </main>
 
             <div className='only-bg'>
-                <h3 className='large'>Our General Paint Correction Process</h3>
+                <h3 className='text-large'>Our General Paint Correction Process</h3>
                 <ol style={{width: 80 + 'vw'}} className='list columns-2'>
                     <li className="item">
                         <div className="step-number-container">
@@ -200,7 +207,7 @@ export default function paintCorrection() {
             </div>
 
             <div className="locationpage-section no-bg">
-                <h3 className='large'>Check out some of the results from our Paint Correction service</h3>
+                <h3 className='text-large'>Check out some of the results from our Paint Correction service</h3>
                 <div className="gallery-container">
                     <Zoom>
                         <div className='gallery-image-div'>
@@ -239,7 +246,8 @@ export default function paintCorrection() {
                     </Zoom>
                 </div>
             </div>
-            <h3 className=''>See more on our <a href="/gallery/PaintCorrection" className='aside-link'>Paint Correction Gallery</a> page.</h3>
+            <h3>See more on our <a href="/gallery/PaintCorrection" className='aside-link'>Paint Correction Gallery</a> page.</h3>
+            <a href="/Contact" className="quote-btn location-quote-btn">Get a Quote Today!</a>
 
         </div> 
     )
