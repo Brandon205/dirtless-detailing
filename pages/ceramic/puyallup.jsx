@@ -45,6 +45,8 @@ export default function puyallup() {
                     <li>Gives paint a glossy finish</li>
                     <li>Light layer of protection against the environment</li>
                 </ul>
+                
+                <br className='extra-space' />
 
                 <h2 className='large'>Professional Interior Coatings in Puyallup Washington.</h2>
                 <p>If you want extra protection on the interior of your car whether it's leather or fabric, we have you covered, literally.</p>
@@ -54,7 +56,7 @@ export default function puyallup() {
                 <br className='extra-space' />
             </main>
 
-            <div>
+            <div className='only-bg'>
                 <h3 className='pricing-title text-black'>Our Ceramic Coating Pricing</h3>
                 <h4 className='pricing-subtext'>*Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</h4>
                 <div className="pricing-container text-black">
@@ -92,7 +94,7 @@ export default function puyallup() {
 
             </div>
 
-            <div>
+            <div className='only-bg'>
                 <h3 className='pricing-title text-black'>Our Interior Coating Pricing</h3>
                 <h4 className='pricing-subtext'>*Pricing does NOT include an <a href="/services/FullIntEx" className='aside-link'>Interior Cleaning</a>, which you will need to add to get a coating.</h4>
                 <div className='pricing-container text-black'>
@@ -111,7 +113,7 @@ export default function puyallup() {
                 </div>
             </div>
 
-            <div className='locationpage-section'>
+            <div className='locationpage-section no-bg'>
                 <div>
                     <h3 className='large'>Ceramic Coating FAQ</h3>
                     <ul className='faq-ul'>

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 
-import cover from '../../public/imgs/pageimgs/paintCorrection/IMG_20220304_132750.jpg';
+import cover from '../../public/imgs/pageimgs/paintCorrection/IMG_20220729_101013.jpg';
 import ext1 from '../../public/imgs/pageimgs/paintCorrection/FB_IMG_1590172607272.jpg';
 import ext2 from '../../public/imgs/pageimgs/paintCorrection/IMG_20210929_141852.jpg';
 import ext3 from '../../public/imgs/pageimgs/paintCorrection/IMG_20211123_170951.jpg';

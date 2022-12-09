@@ -50,7 +50,7 @@ export default function puyallup() {
                 <br className='extra-space' />
             </main>
 
-            <div className='only-bg'>
+            <div>
                 <h3 className='large'>Our General Paint Correction Process</h3>
                 <ol style={{width: 80 + 'vw'}} className='list columns-2'>
                     <li className="item">
@@ -164,7 +164,9 @@ export default function puyallup() {
                 </ol>
             </div>
 
-            <div>
+            <br className='extra-space' />
+
+            <div className='only-bg'>
                 <h3 className='pricing-title text-black'>Our Paint Correction Pricing</h3>
                 <h4 className='pricing-subtext'>*Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</h4>
                 <div className="pricing-container text-black">
@@ -241,7 +243,7 @@ export default function puyallup() {
                     </Zoom>
                 </div>
             </div>
-            <h3 className=''>See more on our <a href="/gallery/PaintCorrection" className='aside-link'>Paint Correction Gallery</a> page.</h3>
+            <h3>See more on our <a href="/gallery/PaintCorrection" className='aside-link'>Paint Correction Gallery</a>.</h3>
 
         </div> 
     )

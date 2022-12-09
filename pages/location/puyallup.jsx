@@ -42,80 +42,63 @@ export default function puyallup() {
                 <p>If you need one of our more extensive details then our <a href="/location/bonney-lake" className='aside-link'>shop</a> is about 20 minutes away from Puyallup. We can set up an appointment to have you drop it off and once you do you are free to stay or go while we do our work.</p>
 
                 <br className='extra-space' />
-
-                <h2 className='large'>If you need an auto detailer in Puyallup, then you're in the right place.</h2>
-                <p>We will come fully prepared to wherever your need us. We currently also service these locations:</p>
-                <ul className='cities-ul'>
-                    <li>Bonney Lake</li>
-                    <li>Buckley</li>
-                    <li>Sumner</li>
-                    <li>Enumclaw</li>
-                    <li>Puyallup</li>
-                    <li>Federal Way</li>
-                    <li>Orting</li>
-                    <li>South Prairie</li>
-                    <li>Black Diamond</li>
-                    <li>Milton</li>
-                    <li>Edgewood</li>
-                    <li>Graham</li>
-                </ul>
-
-                <br className='extra-space' />
             </main>
             <div className='locationpage-section'>
                 <div>
                     <h3 className='large'>Puyallup Services:</h3>
-                    <p><a href="/detailing/ceramic" className='aside-link'>Ceramic Coating</a> - Our 5 year Ceramic Coatings will not only keep your vehicle looking great, but will also keep your paint protected. A full <a href="/servicles/SinglePC" className='aside-link'>Single Stage Paint Correction</a> is performed before the coating to give it a nice even surface to be applied to.</p>
-                    <p><a href="/services/FullIntEx" className='aside-link'>Interior Cleaning</a> - A full interior detail will clean every crack and crevice of your vehicles interior to a like-new condition. Optionally we can also do a hot water extraction to the carpets of your vehicle to get out the deeper stains and dirt.</p>
-                    <p><a href="/detailing/exterior-wash" className='aside-link'>Exterior Washes</a> - Either of our Dirt-Less Washes will thoroughly clean the exterior of your vehicle with our tried and true cleaning processes. Topped off with a spray wax for an extra layer of protection and shine.</p>
-                    <p><a href="/detailing/paint-correction" className='aside-link'>Paint Correction</a> - Our paint correction services can fix roughly 60%-90% of minor damage and scratches and will leave your vehicle looking shinier and feeling smoother than ever.</p>
+                    <p><a href="/detailing/ceramic" className='aside-link large'>Ceramic Coating</a> - Our 5 year Ceramic Coatings will not only keep your vehicle looking great, but will also keep your paint protected. A full <a href="/services/SinglePC" className='aside-link'>Single Stage Paint Correction</a> is performed before the coating to give it a nice even surface to be applied to.</p>
+                    <p><a href="/services/FullIntEx" className='aside-link large'>Interior Cleaning</a> - A full interior detail will clean every crack and crevice of your vehicles interior to a like-new condition. Optionally we can also do a hot water extraction to the carpets of your vehicle to get out the deeper stains and dirt.</p>
+                    <p><a href="/detailing/exterior-wash" className='aside-link large'>Premium Car Washes</a> - Either of our Dirt-Less Washes will thoroughly clean the exterior of your vehicle with our tried and true cleaning processes. Topped off with a spray wax for an extra layer of protection and shine.</p>
+                    <p><a href="/detailing/paint-correction" className='aside-link large'>Paint Correction</a> - Our paint correction services can fix roughly 60%-90% of minor damage and scratches and will leave your vehicle looking shinier and feeling smoother than ever.</p>
 
                     <a href="/Contact" className="quote-btn location-quote-btn">Get a Quote</a>
                 </div>
             </div>
 
-            <h3 className='large'>Check out some of the results from our services</h3>
-            <div className="gallery-container">
-                <Zoom>
-                    <div className='gallery-image-div'>
-                        <Image style={{borderRadius: 16}} alt='Lexus Exterior after a wash' objectFit="cover" src={ext1} loading="lazy" placeholder='blur' />
-                    </div>
-                </Zoom>
-                <Zoom>
-                    <div className='gallery-image-div'>
-                        <Image style={{borderRadius: 16}} alt='Before and after our wash service' objectFit="cover" src={ext2} loading="lazy" placeholder='blur' />
-                    </div>
-                </Zoom>
-                <Zoom>
-                    <div className='gallery-image-div'>
-                        <Image style={{borderRadius: 16}} alt='Spotless Lexus interior' objectFit="cover" src={int1} loading="lazy" placeholder='blur' />
-                    </div>
-                </Zoom>
-                <Zoom>
-                    <div className='gallery-image-div'>
-                        <Image style={{borderRadius: 16}} alt='Cleaned BMW interior' objectFit="cover" src={int2} loading="lazy" placeholder='blur' />
-                    </div>
-                </Zoom>
-                <Zoom>
-                    <div className='gallery-image-div'>
-                        <Image style={{borderRadius: 16}} alt='Red truck after our paint correction service' objectFit="cover" src={pc1} loading="lazy" placeholder='blur' />
-                    </div>
-                </Zoom>
-                <Zoom>
-                    <div className='gallery-image-div'>
-                        <Image style={{borderRadius: 16}} alt='Truck after a paint correction job' objectFit="cover" src={pc2} loading="lazy" placeholder='blur' />
-                    </div>
-                </Zoom>
-                <Zoom>
-                    <div className='gallery-image-div'>
-                        <Image style={{borderRadius: 16}} alt='Sparkling van after a paint correction job' objectFit="cover" src={ceramic1} loading="lazy" placeholder='blur' />
-                    </div>
-                </Zoom>
-                <Zoom>
-                    <div className='gallery-image-div'>
-                        <Image style={{borderRadius: 16}} alt='Cleaned engine bay' objectFit="cover" src={engine} loading="lazy" placeholder='blur' />
-                    </div>
-                </Zoom>
+            <div className="locationpage-section no-bg">
+                <h3 className='large'>Check out some of the results from our services</h3>
+                <div className="gallery-container">
+                    <Zoom>
+                        <div className='gallery-image-div'>
+                            <Image style={{borderRadius: 16}} alt='Lexus Exterior after a wash' objectFit="cover" src={ext1} loading="lazy" placeholder='blur' />
+                        </div>
+                    </Zoom>
+                    <Zoom>
+                        <div className='gallery-image-div'>
+                            <Image style={{borderRadius: 16}} alt='Before and after our wash service' objectFit="cover" src={ext2} loading="lazy" placeholder='blur' />
+                        </div>
+                    </Zoom>
+                    <Zoom>
+                        <div className='gallery-image-div'>
+                            <Image style={{borderRadius: 16}} alt='Spotless Lexus interior' objectFit="cover" src={int1} loading="lazy" placeholder='blur' />
+                        </div>
+                    </Zoom>
+                    <Zoom>
+                        <div className='gallery-image-div'>
+                            <Image style={{borderRadius: 16}} alt='Cleaned BMW interior' objectFit="cover" src={int2} loading="lazy" placeholder='blur' />
+                        </div>
+                    </Zoom>
+                    <Zoom>
+                        <div className='gallery-image-div'>
+                            <Image style={{borderRadius: 16}} alt='Red truck after our paint correction service' objectFit="cover" src={pc1} loading="lazy" placeholder='blur' />
+                        </div>
+                    </Zoom>
+                    <Zoom>
+                        <div className='gallery-image-div'>
+                            <Image style={{borderRadius: 16}} alt='Truck after a paint correction job' objectFit="cover" src={pc2} loading="lazy" placeholder='blur' />
+                        </div>
+                    </Zoom>
+                    <Zoom>
+                        <div className='gallery-image-div'>
+                            <Image style={{borderRadius: 16}} alt='Sparkling van after a paint correction job' objectFit="cover" src={ceramic1} loading="lazy" placeholder='blur' />
+                        </div>
+                    </Zoom>
+                    <Zoom>
+                        <div className='gallery-image-div'>
+                            <Image style={{borderRadius: 16}} alt='Cleaned engine bay' objectFit="cover" src={engine} loading="lazy" placeholder='blur' />
+                        </div>
+                    </Zoom>
+                </div>
             </div>
 
             <div className='locationpage-section'>
@@ -126,7 +109,6 @@ export default function puyallup() {
                     <p><a href="/gallery/PaintCorrectionGallery" className='aside-link'>Paint Correction Gallery</a> - These vehicles have all been through the whole process from completely washing, to taping off, all the way to the paint correction itself.</p>
                     <p><a href="/gallery/CoatingGallery" className='aside-link'>Ceramic Coating Gallery</a> - A gallery of our work so far applying ceramic coats.</p>
                     <p><a href="/gallery/EngineGallery" className='aside-link'>Engine Bay Gallery</a> - Take a look at some of the engines that we've gotten to take care of.</p>
-
                 </div>
             </div>
         </div> 

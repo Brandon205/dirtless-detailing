@@ -18,25 +18,25 @@ export default function exteriorWash() {
   return (
     <div>
       <Head>
-        <title>Dirt-Less Detailing | Exterior Wash Services</title>
-        <meta property="og:title" content="Dirt-Less Detailing | Exterior Wash Services" />
-        <meta property="description" content="Come see our exterior wash services that we provide, they will leave your vehicle washed and protected." />
-        <meta property="og:description" content="Come see our exterior wash services that we provide, they will leave your vehicle washed and protected." />
+        <title>Dirt-Less Detailing | Car Wash Services</title>
+        <meta property="og:title" content="Dirt-Less Detailing | Car Wash Services" />
+        <meta property="description" content="Come see our car wash services that we provide, they will leave your vehicle washed and protected." />
+        <meta property="og:description" content="Come see our car wash services that we provide, they will leave your vehicle washed and protected." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.dirtlessdetailing.com/detailing/exterior-wash" />
-        <link rel="canonical" href="https://www.dirtlessdetailing.com/detailing/exterior-wash" />
+        <meta property="og:url" content="https://www.dirtlessdetailing.com/detailing/car-washes" />
+        <link rel="canonical" href="https://www.dirtlessdetailing.com/detailing/car-washes" />
       </Head>
       <div className="cover">
         <Image src={cover} alt="Car after Paint Correction service" layout="fill" objectFit='cover' placeholder='blur' priority />
       </div>
       <div className="servicepage-header location-header">
-        <h1>Exterior Wash Services</h1>
+        <h1>Car Wash Services</h1>
         <h2>Dirt-Less Wash, Premium Dirt-Less Wash, and Engine Bay Washes</h2>
         <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
       </div>
 
       <main className="location-main">
-        <h2 className='large'>Professional Exterior Washes.</h2>
+        <h2 className='large'>Professional Car Washes.</h2>
         <p>With either of our car wash services your vehicle will be left in a dealership ready state.</p>
         <p>Our Dirt-Less Detail will clean the whole exterior of your vehicle from the wheel wells to the roof racks.</p>
         <p>Go the extra mile with our Premium service to get clay bar and iron decontamination treatment as well, and ensure that all contaminants are off of your vehicle.</p>
