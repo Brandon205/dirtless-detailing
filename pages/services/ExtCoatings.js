@@ -110,7 +110,7 @@ export default function ExtCoatings() {
 
                     </div>
 
-                    <div>
+                    <div id='faq'>
                         <h3 style={{ fontSize: 2 + 'em' }}>Ceramic Coating FAQ</h3>
                         <ul className='faq-ul'>
                             <li className='faq-li'>How long does it last?</li>

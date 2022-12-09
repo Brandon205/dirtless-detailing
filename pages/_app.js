@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-// import { useRouter } from 'next/router';
-// import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import { AiOutlineCar, AiOutlinePlus } from "react-icons/ai";
@@ -26,15 +24,7 @@ export default function MyApp({ Component, pageProps }) {
 
     const navBar = useRef(null)
         
-    // const router = useRouter();
     useEffect(() => {
-        // if (document.cookie === '') {
-        //     let year = new Date();
-        //     year = year.getFullYear() + 5;
-        //     toast(<Cookies acceptCookies={() => document.cookie = `ddCookies=true; SameSite=Strict; expires=Thu, 18 Dec ${year} 12:00:00;`}
-        //     declineCookies={() => document.cookie = `ddCookies=false; SameSite=Strict; expires=Thu, 01 Jan 1970 00:00:00 UTC`} />,
-        //     {position: "bottom-center", autoClose: false, hideProgressBar: true, closeOnClick: false, pauseOnHover: true, draggable: true, progress: undefined, theme: "dark"})
-        // }
     
         if (window.innerWidth < 879) {
             setSmallScreen(true);
@@ -48,26 +38,12 @@ export default function MyApp({ Component, pageProps }) {
             window.removeEventListener('scroll', handleScroll)
         }
 
-        // import('react-facebook-pixel') // Facebook Pixel init code
-        //     .then((x) => x.default)
-        //     .then((ReactPixel) => {
-        //         (ReactPixel.init(process.env.FACEBOOK_PIXEL))
-        //         if (document.cookie !== 'ddCookies=true') {
-        //             ReactPixel.revokeConsent();
-        //         } else {
-        //             ReactPixel.grantConsent();
-        //             ReactPixel.pageView()
         
-        //             router.events.on('routeChangeComplete', () => {
-        //                 ReactPixel.pageView()
-        //             })
-        //         }
-        //     })
-    }, []) // ADD router.events here if using the facebook pixel things again
+    }, [])
 
     let handleScroll = () => {
         const pos = window.pageYOffset;
-        if (pos > 450 || smallScreen) {
+        if (pos > 400 || smallScreen) {
             navBar.current.style.backgroundColor = '#101010'
             navBar.current.style.backdropFilter = 'none'
             navBar.current.style.borderRadius = '0'
@@ -264,7 +240,7 @@ export default function MyApp({ Component, pageProps }) {
                     </div>
                 </div>
             </footer>
-            {/* <ToastContainer /> */}
+            
         </div>
     )
 }

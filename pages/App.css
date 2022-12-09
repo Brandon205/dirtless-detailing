@@ -493,7 +493,7 @@ input[type="range"] {
 }
 
 .contact-information-container {
-  padding-top: 2rem;
+  padding-top: 15rem;
 }
 
 .contact-information {
@@ -997,7 +997,6 @@ hr {
 }
 
 .about-container {
-  margin-top: 39vh;
   max-width: 80vw;
   color: white;
 }
