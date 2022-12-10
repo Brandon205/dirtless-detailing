@@ -896,7 +896,6 @@ input[type="range"] {
 }
 
 .cities-ul {
-  columns: 2;
   gap: 3rem;
   text-align: left;
 }
@@ -1477,7 +1476,7 @@ hr {
 }
 
 .inline {
-  display: inline;
+  display: block;
 }
 
 .text-small {
@@ -1583,12 +1582,12 @@ hr {
   }
 
   .locationpage-section div {
-    max-width: 60vw;
+    max-width: 70vw;
     margin: 0 auto;
   }
 
   .location-main {
-    max-width: 60vw;
+    max-width: 70vw;
   }
 
   .pricing-container {
@@ -1615,6 +1614,10 @@ hr {
 
   .nav-hr {
     display: none;
+  }
+
+  .cities-ul {
+    columns: 2;
   }
 
   .bbb-seal {
@@ -1807,6 +1810,10 @@ hr {
 
   .large {
     font-size: 2em;
+  }
+
+  .inline {
+    display: inline;
   }
 
 }

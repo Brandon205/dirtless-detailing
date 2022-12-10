@@ -40,7 +40,7 @@ export default function puyallup() {
                 <br className='extra-space' />
 
                 <h2 className='text-large'>Why get a ceramic coating?</h2>
-                <p className='text-left'>Here's a list of some of the many benefits to getting a ceramic coating on your car:</p>
+                <p className='text-left'>Here's a list of some of the benefits to getting a ceramic coating on your car we have more listed on our <a href="/detailing/ceramic" className='aside-link'>ceramic</a> page:</p>
                 <ul className='cities-ul'>
                     <li>Lasts about 5 years (with proper care)</li>
                     <li>Hyrophobic</li>
