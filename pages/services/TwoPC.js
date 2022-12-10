@@ -58,6 +58,19 @@ export default function TwoPC() {
       <div className='main-content-container'>
         <div className="process-container">
           <div>
+            <main className="location-main">
+              <h2 className='text-large'>Two Stage Paint Correction</h2>
+              <div className="text-left">
+                <p>Our <a href="/services/TwoPC" className='aside-link'>Two Stage Paint Correction</a> service is aimed to remove as many swirls, scratches, and imperfections from your paint as possible. This is where we do an intense cutting and polishing step, called a 2-step correction, to get the most gloss and clarity from your paintwork.</p>
+                <p>Depending on the condition, whether the vehicle is new or not, some scratches won't come all the way out. It could be the scratches are too deep to remove safely, or the clear coat itself is thinning out. (We'll take paint measurements before we start.)</p>
+                <p>This is where we'll make the call on what we can safely remove from your paint. It's not just about removing as many imperfections as possible. It's also knowing when enough is enough to keep the integrity of the paint healthy.</p>
+                <p>The Level 2 paint correction is a commitment that you are making to your vehicle. If you'd like to keep the shine on your paint, you have to properly maintain the vehicle after the service is complete. If you don't properly wash and dry the vehicle, you can easily put all those swirls and scratches back into your paint after just a few washes.</p>
+                <p>This is one of our most involved services that we offer so we'll need to perform it at our <a href='/correction/bonney-lake' className='aside-link'>shop</a> location in Bonney Lake.</p>
+              </div>
+            </main>
+
+            <br className='extra-space' />
+
             <h2 className='cleaning-process-title'>Our Two Stage Paint Correction Process</h2>
             <ol className='list'>
               {content}
@@ -68,10 +81,10 @@ export default function TwoPC() {
             <div className='aside-container'>
               <div className='service-aside'>
                 <p className='extra-addons'>Other Correction Pages</p>
-                <hr className="contact-border" style={{marginBottom: 16}} />
+                <hr className="contact-border" style={{ marginBottom: 16 }} />
                 <div className="aside-links">
-                  <a href="/services/SinglePC" style={{color: href.endsWith('SinglePC') ? 'dodgerblue' : 'white'}} className="service-link">{href.endsWith('SinglePC') ? '> ' : ''} Single Stage Paint Correction</a>
-                  <a href="/services/TwoPC" style={{color: href.endsWith('TwoPC') ? 'dodgerblue' : 'white'}} className="service-link">{href.endsWith('TwoPC') ? '> ' : ''} Two Stage Paint Correction</a>
+                  <a href="/services/SinglePC" style={{ color: href.endsWith('SinglePC') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('SinglePC') ? '> ' : ''} Single Stage Paint Correction</a>
+                  <a href="/services/TwoPC" style={{ color: href.endsWith('TwoPC') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('TwoPC') ? '> ' : ''} Two Stage Paint Correction</a>
                   <a href="/gallery/PaintCorrectionGallery" className="service-link">Paint Correction Gallery</a>
                 </div>
               </div>
@@ -80,7 +93,7 @@ export default function TwoPC() {
             <div className='aside-container'>
               <div className='service-aside addons-aside'>
                 <a href="/services/Addons" className='extra-addons'>Extra Add-ons</a>
-                <hr className="contact-border" style={{marginBottom: 16}} />
+                <hr className="contact-border" style={{ marginBottom: 16 }} />
                 <div className="aside-links">
                   <div className="addon-container">
                     <p className='addon-title'><a href="/services/Addons/#glass" className='text-blue'>Glass Polishing</a></p>

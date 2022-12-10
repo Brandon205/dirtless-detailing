@@ -59,6 +59,18 @@ export default function SinglePC() {
       <div className='main-content-container'>
         <div className="process-container">
           <div>
+            <main className="location-main">
+              <h2 className='text-large'>Single Stage Paint Correction</h2>
+              <div className="text-left">
+                <p>Have you looked at your paint under the sun and saw a web of swirls and scratches?</p>
+                <p>These are called swirl marks. How did they get there in the first place? The biggest culprit is usually improper washing and drying methods. Automatic car washes and using low-quality towels or wash mitts can all lead to abrading your paint and leaving imperfections.</p>
+                <p>With our <a href='/services/SinglePC' className='aside-link'>Single Stage Paint Correction</a> service, you can remove 60% to 70% of imperfections to reveal a great shine. This is a fantastic service for vehicles that you want to restore their shine without going “all in” like we do with our 2 stage paint correction service.</p>
+                <p>Unlike some of our other services that can be done in just a few hours, this service requires more time and better lighting to achieve the proper results. This is why we require you to drop off the vehicle at our <a href='/correction/bonney-lake' className='aside-link'>shop</a> location.</p>
+              </div>
+            </main>
+
+            <br className='extra-space' />
+
             <h2 className='cleaning-process-title'>Our Single Stage Paint Correction Process</h2>
             <ol className='list'>
               {content}
@@ -69,10 +81,10 @@ export default function SinglePC() {
             <div className='aside-container'>
               <div className='service-aside'>
                 <p className='extra-addons'>Other Correction Pages</p>
-                <hr className="contact-border" style={{marginBottom: 16}} />
+                <hr className="contact-border" style={{ marginBottom: 16 }} />
                 <div className="aside-links">
-                  <a href="/services/SinglePC" style={{color: href.endsWith('SinglePC') ? 'dodgerblue' : 'white'}} className="service-link">{href.endsWith('SinglePC') ? '> ' : ''} Single Stage Paint Correction</a>
-                  <a href="/services/TwoPC" style={{color: href.endsWith('TwoPC') ? 'dodgerblue' : 'white'}} className="service-link">{href.endsWith('TwoPC') ? '> ' : ''} Two Stage Paint Correction</a>
+                  <a href="/services/SinglePC" style={{ color: href.endsWith('SinglePC') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('SinglePC') ? '> ' : ''} Single Stage Paint Correction</a>
+                  <a href="/services/TwoPC" style={{ color: href.endsWith('TwoPC') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('TwoPC') ? '> ' : ''} Two Stage Paint Correction</a>
                   <a href="/gallery/PaintCorrectionGallery" className="service-link">Paint Correction Gallery</a>
                 </div>
               </div>
@@ -81,7 +93,7 @@ export default function SinglePC() {
             <div className='aside-container'>
               <div className='service-aside addons-aside'>
                 <a href="/services/Addons" className='extra-addons'>Extra Add-ons</a>
-                <hr className="contact-border" style={{marginBottom: 16}} />
+                <hr className="contact-border" style={{ marginBottom: 16 }} />
                 <div className="aside-links">
                   <div className="addon-container">
                     <p className='addon-title'><a href="/services/Addons/#glass" className='text-blue'>Glass Polishing</a></p>
@@ -99,7 +111,7 @@ export default function SinglePC() {
           <h3 className='pricing-title'>Our Single Stage Paint Correction Pricing</h3>
           <h4 className='pricing-subtext'>*Final pricing may vary based on your vehicle condition and size.</h4>
           <div className="pricing-container">
-          <div className="pricing-card">
+            <div className="pricing-card">
               <h4 className="size">Small</h4>
               <p className="pricing-price pricing-border">$300- $450</p>
               <p className="example-vehicle pricing-border">Smaller Trucks</p>

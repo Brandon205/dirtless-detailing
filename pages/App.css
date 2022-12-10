@@ -1492,6 +1492,11 @@ hr {
   font-size: 1.7em;
 }
 
+.w-70 {
+  width: 70%;
+  margin: 0 auto;
+}
+
 .no-bg {
   background-color: white;
 }

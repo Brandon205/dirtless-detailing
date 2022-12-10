@@ -42,16 +42,16 @@ export default function puyallup() {
                 <div className="text-left">
                     <p>To ensure the best results on your paint correction we will have you drop your car off at our shop location in Bonney Lake.</p>
                     <p>Why? Well we want a controlled environment when performing our paint correction procedures. At our shop we have lighting and temperature controls. This way we can keep an optimal temperature and the lighting helps us see and fix any imperfections on the paint.</p>
-                    <p>Our shop is about 20 minutes away from most of Puyallup, once there you are free to go wherever or stick around while we work.</p>
+                    <p>Our shop is about 20 minutes away from most of Puyallup, these services will take time, but once you are there you are free to go wherever or stick around if needed while we work.</p>
                 </div>
 
                 <br className='extra-space' />
 
                 <h2 className='text-large'>What's the difference between the Single Stage and Two Stage Paint Correction?</h2>
                 <div className="text-left">
-                    <p>The simple answer is that we just use a different product on one of the steps. The Two Stage paint correction product we use can get rid of up to 90% of scratches and swirl marks in your paint, while the Single Stage product usually removes around 60%-80%.</p>
+                    <p>The simple answer is that we use a different product on one of the steps. The Two Stage paint correction product we use is designed to get out as many scratches and swirls as possible, while the Single Stage product usually removes around 60%-70%.</p>
                     <p>In the steps below its shown in step number 8, all of the other steps are carried out the same.</p>
-                    <p>To learn more about each check out our <a href="/detailing/correction" className='aside-link'>comparison</a> page. Or if you're interested in one or the other check out our <a href="/services/SinglePC" className='aside-link'>Single Stage Paint Correction</a> or the <a href="/services/TwoPC" className='aside-link'>Two Stage Paint Correction</a> page.</p>
+                    <p>To learn more about each check out our <a href="/detailing/correction" className='aside-link'>comparison</a> page where we go into much more detail on the differences. Or if you're interested in one or the other check out our <a href="/services/SinglePC" className='aside-link'>Single Stage Paint Correction</a> or the <a href="/services/TwoPC" className='aside-link'>Two Stage Paint Correction</a> page.</p>
                 </div>
 
                 <br className='extra-space' />
@@ -175,7 +175,7 @@ export default function puyallup() {
 
             <div className='only-bg'>
                 <h3 className='pricing-title text-black'>Our Paint Correction Pricing</h3>
-                <h4 className='pricing-subtext'>*Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</h4>
+                <h4 className='pricing-subtext'>*Final pricing may vary based on your vehicle condition and size.</h4>
                 <div className="pricing-container text-black">
                     <div className="pricing-card">
                         <h4 className="size" style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Small</h4>
