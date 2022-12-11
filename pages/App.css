@@ -1430,7 +1430,6 @@ hr {
 .location-main {
   width: 80vw;
   margin: 0 auto;
-  letter-spacing: 0.75px;
   line-height: 2;
   font-size: 1.1em;
   text-align: center;
@@ -1440,7 +1439,7 @@ hr {
   background-color: #F5F5F5;
   width: 100%;
   padding: 2rem 1rem;
-  letter-spacing: 0.75px;
+  /* letter-spacing: 0.75px; */
   line-height: 2;
   font-size: 1.1em;
   text-align: center;
@@ -1680,6 +1679,14 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+  }
+
+  .location-main {
+    letter-spacing: 0.75px;
+  }
+
+  .locationpage-section {
+    letter-spacing: 0.75px;
   }
 
   .map {

@@ -55,7 +55,7 @@ export default function puyallup() {
                         <a href="/detailing/ceramic" className='aside-link text-medium'>Ceramic Coating</a>
                         <p className='mt-0'>Our 5 year Ceramic Coatings will not only keep your vehicle looking great, but they will also keep your paint protected. A full <a href="/services/SinglePC" className='aside-link'>Single Stage Paint Correction</a> is performed before the coating to give it a nice even surface to be applied to. Our exterior Ceramic Coatings will have to be performed at our shop in Bonney Lake.</p>
                         <a href="/services/FullIntEx" className='aside-link text-medium'>Interior Cleaning</a>
-                        <p className='mt-0'>A full interior detail will clean every crack and crevice of your vehicles interior to a like-new condition. Optionally we can also do a hot water extraction to the carpets of your vehicle to get out the deeper stains and dirt.</p>
+                        <p className='mt-0'>A full interior detail will clean every crack and crevice of your vehicles interior to a like-new condition. Optionally we can also do a hot water extraction to the carpets of your vehicle to get out the deeper stains and dirt. A <a href="/services/Bio" className='aside-link'>Biohazard</a> cleaning is also available for mold, spills and unwanted odor removal.</p>
                         <a href="/detailing/exterior-wash" className='aside-link text-medium'>Premium Car Washes</a>
                         <p className='mt-0'>Either of our Dirt-Less Washes will thoroughly clean the exterior of your vehicle with our tried and true cleaning processes. Topped off with a spray wax for an extra layer of protection and shine.</p>
                         <a href="/detailing/correction" className='aside-link text-medium'>Paint Correction</a>
@@ -114,7 +114,7 @@ export default function puyallup() {
 
             <div className='locationpage-section no-bg'>
                 <div className='location-gallery-container'>
-                    <h3 className='text-large'>Our gallery pages:</h3>
+                    <h3 className='text-large'>Our Gallery Pages:</h3>
                     <div className="text-left">
                         <a href="/gallery/FullIntGallery" className='aside-link text-medium'>Interior Cleaning Gallery</a>
                         <p className='mt-0'>Come check out some of the hundreds of photos we have of what we have been able to do for our customers interiors!</p>

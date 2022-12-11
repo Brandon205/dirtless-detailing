@@ -75,9 +75,7 @@ export default function ceramic() {
 
                 <h2 className='text-large'>Professional Interior Coatings</h2>
                 <div className="text-left">
-                    <p>If you want extra protection on the interior of your car whether it's leather or fabric, we have you covered, literally.</p>
-                    <p>Besides extra protection, interior coatings also make spills and other messes far easier to clean up, even on fabrics.</p>
-                    <p>The leather coating can also help prevent yellowing from UV rays and other forms of discoloration from normal wear and tear.</p>
+                    <p>Whether it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe any spill up before it seeps in.</p>
                 </div>
 
                 <br className='extra-space' />
@@ -143,7 +141,7 @@ export default function ceramic() {
 
             <div className='locationpage-section no-bg'>
                 <div>
-                    <h3 className='text-large'>Ceramic Coating FAQ</h3>
+                    <h3 className='text-large'>Exterior Ceramic Coating FAQ</h3>
                     <ul className='faq-ul'>
                         <li className='faq-li'>How long does it last?</li>
                         <li className='faq-p text-black'>The paint coating should last 5 years, 50,000 miles, or a Lifetime<span className='special-package'>*</span> with our warranty. The coating on any trim, glass, lights, or wheels will last 1 year approximately.</li>
