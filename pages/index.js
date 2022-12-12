@@ -30,6 +30,14 @@ export default function Home() {
     return (
         <div className="App">
             <Head>
+                <meta name="description" content="Dirt-Less Detailing is here to provide the highest-quality detailing services at great prices here in the Bonney Lake area. Come check out our offers!" />
+                <meta property="og:description" content="Dirt-Less Detailing is here to provide the highest-quality detailing services at great prices here in the Bonney Lake area. Come check out our offers!" />
+                <meta name="url" content="https://www.dirtlessdetailing.com/" />
+                <meta property="og:url" content="https://www.dirtlessdetailing.com/" />
+                <meta name="site_name" content="Dirt-Less Detailing" />
+                <meta property="og:site_name" content="Dirt-Less Detailing" />
+                <meta name="type" content="website" />
+                <meta property="og:type" content="website" />
                 <link rel="canonical" href="https://www.dirtlessdetailing.com/" />
             </Head>
             <div className="maincover">

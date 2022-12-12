@@ -17,8 +17,12 @@ export default function ExtCoatings() {
     return (
         <section className="service-content-container bg-contact">
             <Head>
-                <title>Dirt-Less Detailing | Exterior Ceramic Coatings</title>
+                <title>Exterior Ceramic Coatings | Dirt-Less Detailing</title>
+                <meta property="og:title" content="Exterior Ceramic Coatings | Dirt-Less Detailing" />
+                <meta property="description" content="Ensure that your vehicle is protected through us with our exterior Ceramic Coating services." />
                 <meta property="og:description" content="Ensure that your vehicle is protected through us with our exterior Ceramic Coating services." />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://www.dirtlessdetailing.com/services/ExtCoatings" />
                 <link rel="canonical" href="https://www.dirtlessdetailing.com/services/ExtCoatings" />
             </Head>
             <div className="cover">

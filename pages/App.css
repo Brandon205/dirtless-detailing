@@ -1388,6 +1388,8 @@ hr {
   font-size: 1.3em;
   font-weight: 500;
   color: black;
+  display: block;
+  padding: 1rem 0;
 }
 
 .special-package {

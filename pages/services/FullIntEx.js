@@ -39,8 +39,12 @@ export default function FullIntEx() {
   return (
     <section className='service-content-container'>
       <Head>
-        <title>Dirt-Less Detailing | Full Interior</title>
-        <meta property="og:description" content="The Full Interior cleaning is our most sought after service, and for good reason, it will completely renew your cars interior!" />
+        <title>Full Interior Cleaning | Dirt-Less Detailing</title>
+        <meta property="og:title" content="Full Interior Cleaning | Dirt-Less Detailing" />
+        <meta property="description" content="Our Full Interior cleaning is the most sought after service, and for good reason, it will completely renew your cars interior!" />
+        <meta property="og:description" content="Our Full Interior cleaning is the most sought after service, and for good reason, it will completely renew your cars interior!" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.dirtlessdetailing.com/services/FullIntEx" />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/services/FullIntEx" />
       </Head>
       <div className="cover">

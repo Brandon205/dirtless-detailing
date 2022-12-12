@@ -15,8 +15,11 @@ export default function Addons() {
   return (
     <section className='service-content-container'>
       <Head>
-        <title>Dirt-Less Detailing | Dirt-Less Add-ons</title>
-        <meta property="og:description" content="Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment • Truck Bed Cleaning. Check out our popular add-ons that top off our services." />
+        <title>Dirt-Less Add-ons | Dirt-Less Detailing</title>
+        <meta property="og:title" content="Dirt-Less Add-ons | Dirt-Less Detailing" />
+        <meta name='description' property="og:description" content="Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment • Truck Bed Cleaning. Check out our popular add-ons that top off our services." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.dirtlessdetailing.com/services/Addons" />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/services/Addons" />
       </Head>
       <div className="cover">
@@ -27,13 +30,13 @@ export default function Addons() {
         <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
       </div>
 
-      <h2 style={{fontSize: 40}}>Our Current Add-ons:</h2>
+      <h2 style={{ fontSize: 40 }}>Our Current Add-ons:</h2>
       <div className="addon-content-container">
 
         <h3 className='addons-subheading' id='exterior'>Exterior Add-ons:</h3>
         <div className="feature-section" id="truck">
           <div className="feature-img-container">
-            <Image style={{borderRadius: 16}} src={truckBed} alt="Truck Bed Cleaning" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
+            <Image style={{ borderRadius: 16 }} src={truckBed} alt="Truck Bed Cleaning" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
           </div>
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Truck Bed Cleaning</p>
@@ -49,7 +52,7 @@ export default function Addons() {
 
         <div className="feature-section" id="engine">
           <div className="feature-img-container">
-            <Image style={{borderRadius: 16}} src={engine} alt="Cleaned Engine Bay" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
+            <Image style={{ borderRadius: 16 }} src={engine} alt="Cleaned Engine Bay" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
           </div>
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Engine Bay Cleaning</p>
@@ -65,7 +68,7 @@ export default function Addons() {
 
         <div className="feature-section" id="glass">
           <div className="feature-img-container">
-            <Image style={{borderRadius: 16}} src={glassPolish} alt="Window after a glass polishing" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
+            <Image style={{ borderRadius: 16 }} src={glassPolish} alt="Window after a glass polishing" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
           </div>
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Glass Polishing</p>
@@ -81,7 +84,7 @@ export default function Addons() {
 
         <div className="feature-section" id="waterspot">
           <div className="feature-img-container">
-            <Image style={{borderRadius: 16}} src={waterspot} alt="Waterspot / Overspray removal after" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
+            <Image style={{ borderRadius: 16 }} src={waterspot} alt="Waterspot / Overspray removal after" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
           </div>
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Waterspot/Overspray Removal</p>
@@ -96,10 +99,10 @@ export default function Addons() {
           </div>
         </div>
         <hr className='contact-border' />
-        
+
         <div className="feature-section" id="debadge">
           <div className="feature-img-container">
-            <Image style={{borderRadius: 16}} src={debadge} alt="Vehicle side shot" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
+            <Image style={{ borderRadius: 16 }} src={debadge} alt="Vehicle side shot" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
           </div>
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Debadging</p>
@@ -118,7 +121,7 @@ export default function Addons() {
         <h3 className='addons-subheading' id='interior'>Interior Add-ons:</h3>
         <div className="feature-section" id="headliners">
           <div className="feature-img-container">
-            <Image style={{borderRadius: 16}} src={headliner} alt="Cleaned Headliners" className='otherservices-image' loading='lazy' placeholder='blur' quality={100} />
+            <Image style={{ borderRadius: 16 }} src={headliner} alt="Cleaned Headliners" className='otherservices-image' loading='lazy' placeholder='blur' quality={100} />
           </div>
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Headliner Cleaning</p>
@@ -134,7 +137,7 @@ export default function Addons() {
 
         <div className="feature-section" id="ozone">
           <div className="feature-img-container">
-            <Image style={{borderRadius: 16}} src={ozone} alt="Ozone Treatment in Progress" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
+            <Image style={{ borderRadius: 16 }} src={ozone} alt="Ozone Treatment in Progress" className='otherservices-image' loading='lazy' placeholder='blur' quality={15} />
           </div>
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Ozone Treatment</p>
