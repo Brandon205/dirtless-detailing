@@ -62,6 +62,15 @@ export default function PDLWash() {
       <div className='main-content-container'>
         <div className="process-container">
           <div>
+            <main className="service-main">
+              <h2 className='text-large'>Premium Dirt-Less Wash</h2>
+              <div className="text-left">
+                <p>Not only will you see a humongous difference in the appearance, but you will also be able to feel the smoothness and slickness of the paint once we're done with this service.</p>
+                <p>A lot of our customers love this service since it doesn't take much time to perform, but the results that you get are stellar!</p>
+              </div>
+
+              <br className='extra-space' />
+            </main>
             <h2 className='cleaning-process-title'>Our Premium Dirt-Less Wash Process*</h2>
             <ol className='list'>
               {content}

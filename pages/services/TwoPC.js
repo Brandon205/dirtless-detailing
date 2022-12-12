@@ -65,7 +65,7 @@ export default function TwoPC() {
       <div className='main-content-container'>
         <div className="process-container">
           <div>
-            <main className="location-main">
+            <main className="service-main">
               <h2 className='text-large'>Two Stage Paint Correction</h2>
               <div className="text-left">
                 <p>Our <a href="/services/TwoPC" className='aside-link'>Two Stage Paint Correction</a> service is aimed to remove as many swirls, scratches, and imperfections from your paint as possible. This is where we do an intense cutting and polishing step, called a 2-step correction, to get the most gloss and clarity from your paintwork.</p>

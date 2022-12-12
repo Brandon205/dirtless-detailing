@@ -76,7 +76,6 @@ export default function Home() {
 
                     <a href="/Contact" className="quote-btn top-quote-btn">Get a Quote</a>
 
-
                 </div>
             </header>
 

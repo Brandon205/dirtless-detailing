@@ -66,7 +66,7 @@ export default function SinglePC() {
       <div className='main-content-container'>
         <div className="process-container">
           <div>
-            <main className="location-main">
+            <main className="service-main">
               <h2 className='text-large'>Single Stage Paint Correction</h2>
               <div className="text-left">
                 <p>Have you looked at your paint under the sun and saw a web of swirls and scratches?</p>

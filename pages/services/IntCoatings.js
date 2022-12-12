@@ -37,6 +37,14 @@ export default function IntCoatings() {
 
             <div className="coating-container">
                 <div className="coating-left">
+                    <main className="service-main">
+                        <h2 className='text-large'>Professional Interior Ceramic Coating</h2>
+                        <div className="text-left">
+                            <p>Weather it's your kid spilling juice, or you spilling your morning coffee, we have all been there.  Our interior coatings provide a barrier of protection and allow you time to wipe the spill up before it seeps in.</p>
+                        </div>
+
+                        <br className='extra-space' />
+                    </main>
                     <h2 className='coating-heading'>Fabric Coating</h2>
                     <p className='package-desc subtext'>The best protection for the fabric inside of your vehicle.</p>
                     <div className='package-container'>

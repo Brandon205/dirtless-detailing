@@ -62,6 +62,16 @@ export default function Bio() {
       <div className='main-content-container'>
         <div className='process-container'>
           <div>
+            <main className="service-main">
+              <h2 className='text-large'>Professional Biohazard Cleaning</h2>
+              <div className="text-left">
+                <p>No one likes surprises. Especially not a smelly, moldy car.  Sometimes we get called to clean mold, urine, or even a busted gallon of spoiled milk. All of these are considered biohazard cleaning.</p>
+                <p>The sooner we can get to it, the easier it is to clean up. Depending on where the accident took place, how much fluid came out, and how long ago the accident happened will determine what we can do.</p>
+                <p>Generally speaking, if there is a smell lingering in the interior due to an accident, the smell should be gone once it is cleaned up.  We also have a state of the art ozone machine to blast away any remaining odors and sanitize the air.</p>
+              </div>
+
+              <br className='extra-space' />
+            </main>
             <h2 className='cleaning-process-title'>Our Biohazard Cleaning Process</h2>
             <ol className='list'>
               {content}

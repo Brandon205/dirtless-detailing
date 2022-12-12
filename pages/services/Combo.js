@@ -36,6 +36,15 @@ export default function Combo() {
       <div className='main-content-container'>
         <div className="process-container" id="combo-process">
           <div>
+            <main className="service-main">
+              <h2 className='text-large'>Interior and Exterior Combo Cleaning</h2>
+              <div className="text-left">
+                <p>The full enchilada!  Our most complete detailing package and the best value package we offer. You get a Full Interior detail, Premium Dirt-Less wash, and a free engine bay detail on the house!</p>
+                <p>If you are after the most thorough interior and exterior detail you can find, or even trying to get the most money when selling your vehicle, this is the package for you!</p>
+              </div>
+
+              <br className='extra-space' />
+            </main>
             <div>
               <h2 className='cleaning-process-title'>Our Combo Cleaning Process</h2>
               <ol className='list'>
