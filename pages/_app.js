@@ -80,10 +80,8 @@ export default function MyApp({ Component, pageProps }) {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="apple-mobile-web-app-status-bar" content="#90cdf4" />
                 <meta name="google-site-verification" content="sq8uUuD_CLtkO1bg33IWhAVFjproB_N6s2Qqll0IxUo" />
-                <meta name="robots" content="index, follow" />
 
                 <link rel="icon" href="/favicon.ico" />
-                <title>Dirt-Less Detailing | Bonney Lakes Top Auto Detailer</title>
             </Head>
             <header className="App-header">
                 <nav id="nav" className='navigation-small' ref={navBar}>
