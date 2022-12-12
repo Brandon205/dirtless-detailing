@@ -9,22 +9,31 @@ export default function FullIntGallery() {
   return (
     <section className='gallery-content-container'>
       <Head>
-        <title>Dirt-Less Detailing | Full Interior Gallery</title>
+        <title>Full Interior Gallery | Dirt-Less Detailing</title>
+        <meta property="og:title" content="Full Interior Gallery | Dirt-Less Detailing" />
+        <meta property="description" content="Check out some of the images before and after our Full Interior Cleaning to see the difference!" />
         <meta property="og:description" content="Check out some of the images before and after our Full Interior Cleaning to see the difference!" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.dirtlessdetailing.com/gallery/FullIntGallery" />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/gallery/FullIntGallery" />
       </Head>
       <div className="cover">
         <Image src={cover} alt="Vehicle after a Full Interior Cleaning" layout="fill" objectFit='cover' priority />
       </div>
-      <header>
-        <h1 className='servicepage-heading'>Full Interior Cleaning Gallery</h1>
-        <p>We have cleaned it all, even the worst of interiors. Check out the Gallery below. Take a look at our <a href="/services/FullIntEx" className='gallery-link' >Full Interior Cleaning</a> page to find out more.</p>
-      </header>
+      <div className="servicepage-heading">
+        <h1>Full Interior Cleaning Gallery</h1>
+        <p>We have cleaned it all, even the worst of interiors. Check out the Gallery below. Take a look at our <a href="/services/FullIntEx" className='aside-link' >Full Interior Cleaning</a> page to find out more.</p>
+
+        <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+        <p className='inline text-small'>
+          Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
+        </p>
+      </div>
 
       <div className='gallery-container'>
-        { imagery }
+        {imagery}
       </div>
-      <h2 style={{color: 'white'}}>Check out our <a href="/services/FullIntEx" className='gallery-link' >Full Interior Cleaning</a> page for more details!</h2>
+      <h2 style={{ color: 'white' }}>Check out our <a href="/services/FullIntEx" className='aside-link' >Full Interior Cleaning</a> page for more details!</h2>
     </section>
   )
 }

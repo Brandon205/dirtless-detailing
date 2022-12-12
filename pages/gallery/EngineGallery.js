@@ -9,22 +9,31 @@ export default function PaintCorrectionGallery() {
   return (
     <section className='gallery-content-container'>
       <Head>
-        <title>Dirt-Less Detailing | Engine Gallery</title>
+        <title>Engine Bay Gallery | Dirt-Less Detailing</title>
+        <meta property="og:title" content="Engine Bay Gallery | Dirt-Less Detailing" />
+        <meta property="description" content="Engine Bay Photos • Engine bay images after our engine bay cleaning service!" />
         <meta property="og:description" content="Engine Bay Photos • Engine bay images after our engine bay cleaning service!" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.dirtlessdetailing.com/gallery/EngineGallery" />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/gallery/EngineGallery" />
       </Head>
       <div className="cover">
         <Image src={cover} alt="Vehicle after a Engine Bay Cleaning" layout="fill" objectFit='cover' priority />
-      </div> 
-      <header>
-        <h1 className='servicepage-heading'>Engine Cleaning Gallery</h1>
-        <p>Check out the gallery below to see what we can do to clean your engine bay. Take a look at our <a href="/services/Addons/#engine" className='gallery-link' >Engine Cleaning</a> section on our add-ons page for more info.</p>
-      </header>
+      </div>
+      <div className="servicepage-heading">
+        <h1>Engine Cleaning Gallery</h1>
+        <p>Check out the gallery below to see what we can do to clean your engine bay. Take a look at our <a href="/services/Addons/#engine" className='aside-link' >Engine Cleaning</a> section on our add-ons page for more info.</p>
+
+        <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+        <p className='inline text-small'>
+          Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
+        </p>
+      </div>
 
       <div className='gallery-container'>
-        { imagery }
+        {imagery}
       </div>
-      <h2 style={{color: 'white'}}>Check out the Engine Cleaning option on our <a href="/services/Addons/#engine" className='gallery-link' >Add-ons</a> page for more details!</h2>
+      <h2 style={{ color: 'white' }}>Check out the Engine Cleaning option on our <a href="/services/Addons/#engine" className='aside-link' >Add-ons</a> page for more details!</h2>
     </section>
   )
 }

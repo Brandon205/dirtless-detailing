@@ -1042,7 +1042,12 @@ hr {
 }
 
 .servicepage-heading {
-  font-size: 2em;
+  color: var(--heading-clr1);
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.25em;
+  transform: translate(0, -75vh);
+  z-index: 1;
 }
 
 .process-container {
@@ -1087,7 +1092,7 @@ hr {
   margin: 25vh auto;
 }
 
-.gallery-link {
+.aside-link {
   color: var(--main-clr);
 }
 
@@ -1842,7 +1847,7 @@ hr {
   }
 
   .servicepage-heading {
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
 
   .contact-container-right {
