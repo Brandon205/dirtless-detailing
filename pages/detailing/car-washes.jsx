@@ -18,8 +18,8 @@ export default function exteriorWash() {
   return (
     <div>
       <Head>
-        <title>Dirt-Less Detailing | Car Wash Services</title>
-        <meta property="og:title" content="Dirt-Less Detailing | Car Wash Services" />
+        <title>Car Wash Services | Dirt-Less Detailing</title>
+        <meta property="og:title" content="Car Wash Services | Dirt-Less Detailing" />
         <meta property="description" content="Come see our car wash services that we provide, they will leave your vehicle washed and protected." />
         <meta property="og:description" content="Come see our car wash services that we provide, they will leave your vehicle washed and protected." />
         <meta property="og:type" content="website" />
@@ -58,7 +58,7 @@ export default function exteriorWash() {
         <h2 className='text-large'>What's the difference between the Dirt-Less Wash and the Premium Dirt-Less Wash?</h2>
         <div className="text-left">
           <p>For a more detailed side by side comparison check out the steps below.</p>
-          <p>Basically with the Premium wash we go above and beyond what is done in the Dirt-Less wash. Here are some of the extra steps we will take:</p>
+          <p>Basically with the Premium wash we go above and beyond what is done in the Dirt-Less wash. This will leave your vehicle with an even smoother finish that you can see and feel.</p>
           <p>We will clay bar the entire vehicle to leave the vehicle smooth and to make sure the wax we apply adheres as good as possible.</p>
           <p>Then we will perform an Iron Decontamination to get any remnants that the clay bar might have missed including microscopic iron contaminants.</p>
         </div>
@@ -76,13 +76,65 @@ export default function exteriorWash() {
         <div className="text-left">
           <p>When washing engine bays we cover and take care of any and all electronics and other sensitive areas of the engine bay so there's nothing to worry about.</p>
         </div>
+        <p className='text-small'>Check out more of our add-ons <a href="/services/Addons" className='aside-link'>here</a>.</p>
 
         <br className='extra-space' />
       </main>
 
       <div className='sidebyside only-bg'>
         <div>
-          <h2 className="cleaning-process-title">Our Premium Dirt-Less Wash Process*</h2>
+          <h2 className="cleaning-process-title">Our Simple Dirt-Less Wash Process</h2>
+          <ol className="list">
+            <li className="item">
+              <div className="step-number-container">
+                <h3 className="step-number">1</h3><div className="vertical-rule"></div>
+              </div>
+              <div className="step-container">
+                <h4 className="step-title">Wash Vehicle</h4>
+                <p className="step-desc">Thorough 2 bucket or equivalent top to bottom wash including the gas door.</p>
+              </div>
+            </li>
+            <li className="item">
+              <div className="step-number-container">
+                <h3 className="step-number">2</h3><div className="vertical-rule"></div>
+              </div>
+              <div className="step-container">
+                <h4 className="step-title">Wheel Cleaning</h4>
+                <p className="step-desc">Clean wheels, wheel wells, and wheel barrels.</p>
+              </div>
+            </li>
+            <li className="item">
+              <div className="step-number-container">
+                <h3 className="step-number">3</h3><div className="vertical-rule"></div>
+              </div>
+              <div className="step-container">
+                <h4 className="step-title">Dry Vehicle</h4>
+                <p className="step-desc">Dry the whole vehicle with clean towels and air blowers.</p>
+              </div>
+            </li>
+            <li className="item">
+              <div className="step-number-container">
+                <h3 className="step-number">4</h3><div className="vertical-rule"></div>
+              </div>
+              <div className="step-container">
+                <h4 className="step-title">Wax</h4>
+                <p className="step-desc">Apply spray wax.</p>
+              </div>
+            </li>
+            <li className="item">
+              <div className="step-number-container">
+                <h3 className="step-number">5</h3><div className="vertical-rule"></div>
+              </div>
+              <div className="step-container">
+                <h4 className="step-title">Dress Vehicle</h4>
+                <p className="step-desc">Dress tires, wheel wells, and plastics.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div>
+          <h2 className="cleaning-process-title">Our Premium Dirt-Less Wash Process</h2>
           <ol className="list">
             <li className="item">
               <div className="step-number-container">
@@ -167,58 +219,6 @@ export default function exteriorWash() {
             </li>
           </ol>
         </div>
-
-        <div>
-          <h2 className="cleaning-process-title">Our Simple Dirt-Less Wash Process*</h2>
-          <ol className="list">
-            <li className="item">
-              <div className="step-number-container">
-                <h3 className="step-number">1</h3><div className="vertical-rule"></div>
-              </div>
-              <div className="step-container">
-                <h4 className="step-title">Wash Vehicle</h4>
-                <p className="step-desc">Thorough 2 bucket or equivalent top to bottom wash including the gas door.</p>
-              </div>
-            </li>
-            <li className="item">
-              <div className="step-number-container">
-                <h3 className="step-number">2</h3><div className="vertical-rule"></div>
-              </div>
-              <div className="step-container">
-                <h4 className="step-title">Wheel Cleaning</h4>
-                <p className="step-desc">Clean wheels, wheel wells, and wheel barrels.</p>
-              </div>
-            </li>
-            <li className="item">
-              <div className="step-number-container">
-                <h3 className="step-number">3</h3><div className="vertical-rule"></div>
-              </div>
-              <div className="step-container">
-                <h4 className="step-title">Dry Vehicle</h4>
-                <p className="step-desc">Dry the whole vehicle with clean towels and air blowers.</p>
-              </div>
-            </li>
-            <li className="item">
-              <div className="step-number-container">
-                <h3 className="step-number">4</h3><div className="vertical-rule"></div>
-              </div>
-              <div className="step-container">
-                <h4 className="step-title">Wax</h4>
-                <p className="step-desc">Apply spray wax.</p>
-              </div>
-            </li>
-            <li className="item">
-              <div className="step-number-container">
-                <h3 className="step-number">5</h3><div className="vertical-rule"></div>
-              </div>
-              <div className="step-container">
-                <h4 className="step-title">Dress Vehicle</h4>
-                <p className="step-desc">Dress tires, wheel wells, and plastics.</p>
-              </div>
-            </li>
-          </ol>
-        </div>
-        {/* <h4 style={{marginTop: 0}}> *Truck Bed cleaning offered as an extra add-on if needed. </h4> */}
       </div>
 
       <div className='locationpage-section no-bg'>
@@ -226,40 +226,40 @@ export default function exteriorWash() {
         <h4 className='pricing-subtext'>*Final pricing may vary based on your vehicle condition and size.</h4>
         <div className="pricing-container text-black">
           <div className="pricing-card">
-            <h4 className="size" style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Small</h4>
-            <h4 className="size">Dirt-Less Wash</h4>
+            <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Small</strong>
+            <strong className='size'>Dirt-Less Wash</strong>
             <p className="pricing-price pricing-border">$75</p>
-            <h4 className="size">Premium Dirt-Less Wash</h4>
+            <strong className='size'>Premium Dirt-Less Wash</strong>
             <p className="pricing-price pricing-border">$150</p>
             <p className="example-vehicle pricing-border">Smaller Trucks</p>
             <p className="example-vehicle pricing-border">Most Cars</p>
             <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
           </div>
           <div className="pricing-card">
-            <h4 className="size" style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Medium</h4>
-            <h4 className="size">Dirt-Less Wash</h4>
+            <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Medium</strong>
+            <strong className='size'>Dirt-Less Wash</strong>
             <p className="pricing-price pricing-border">$100</p>
-            <h4 className="size">Premium Dirt-Less Wash</h4>
+            <strong className='size'>Premium Dirt-Less Wash</strong>
             <p className="pricing-price pricing-border">$200</p>
             <p className="example-vehicle pricing-border">Mid-Size SUVs</p>
             <p className="example-vehicle pricing-border">Most Wagons</p>
             <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
           </div>
           <div className="pricing-card">
-            <h4 className="size" style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Large</h4>
-            <h4 className="size">Dirt-Less Wash</h4>
+            <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Large</strong>
+            <strong className='size'>Dirt-Less Wash</strong>
             <p className="pricing-price pricing-border">$125</p>
-            <h4 className="size">Premium Dirt-Less Wash</h4>
+            <strong className='size'>Premium Dirt-Less Wash</strong>
             <p className="pricing-price pricing-border">$250</p>
             <p className="example-vehicle pricing-border">Large SUVs</p>
             <p className="example-vehicle pricing-border">Some Trucks</p>
             <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
           </div>
           <div className="pricing-card">
-            <h4 className="size" style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Extra Large</h4>
-            <h4 className="size">Dirt-Less Wash</h4>
+            <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Extra Large</strong>
+            <strong className='size'>Dirt-Less Wash</strong>
             <p className="pricing-price pricing-border">$150</p>
-            <h4 className="size">Premium Dirt-Less Wash</h4>
+            <strong className='size'>Premium Dirt-Less Wash</strong>
             <p className="pricing-price pricing-border">$275</p>
             <p className="example-vehicle pricing-border">Larger Trucks</p>
             <p className="example-vehicle pricing-border">Extra Large Vehicles</p>

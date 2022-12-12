@@ -112,21 +112,21 @@ export default function TwoPC() {
           <h4 className='pricing-subtext'>*Final pricing may vary based on your vehicle condition and size.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
-              <h4 className="size">Small</h4>
+              <strong className='size'>Small</strong>
               <p className="pricing-price pricing-border">$450- $600</p>
               <p className="example-vehicle pricing-border">Smaller Trucks</p>
               <p className="example-vehicle pricing-border">Most Cars</p>
               <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
             </div>
             <div className="pricing-card">
-              <h4 className="size">Medium</h4>
+              <strong className='size'>Medium</strong>
               <p className="pricing-price pricing-border">$600- $850</p>
               <p className="example-vehicle pricing-border">Mid-Size SUV's</p>
               <p className="example-vehicle pricing-border">Most Wagons</p>
               <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
             </div>
             <div className="pricing-card">
-              <h4 className="size">Large</h4>
+              <strong className='size'>Large</strong>
               <p className="pricing-price pricing-border">$800- $1,100</p>
               <p className="example-vehicle pricing-border">Large SUV's</p>
               <p className="example-vehicle pricing-border">Trucks</p>

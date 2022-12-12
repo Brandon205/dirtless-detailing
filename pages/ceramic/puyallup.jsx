@@ -8,10 +8,10 @@ export default function puyallup() {
     return (
         <div>
             <Head>
-                <title>Dirt-Less Detailing | Ceramic Coating in Puyallup</title>
-                <meta property="og:title" content="Dirt-Less Detailing | Ceramic Coating in Puyallup" />
-                <meta property="description" content="Want a ceramic coating to protect your car in Puyallup? Check out our offers on Graphene coatings." />
-                <meta property="og:description" content="Want a ceramic coating to protect your car in Puyallup? Check out our offers on Graphene coatings." />
+                <title>Ceramic Coating in Puyallup | Dirt-Less Detailing</title>
+                <meta property="og:title" content="Ceramic Coating in Puyallup | Dirt-Less Detailing" />
+                <meta property="description" content="Want a ceramic coating to protect your car in Puyallup? Check out our options and offers on Graphene coatings here." />
+                <meta property="og:description" content="Want a ceramic coating to protect your car in Puyallup? Check out our options and offers on Graphene coatings here." />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://www.dirtlessdetailing.com/ceramic/puyallup" />
                 <link rel="canonical" href="https://www.dirtlessdetailing.com/ceramic/puyallup" />
@@ -66,30 +66,30 @@ export default function puyallup() {
                 <h4 className='pricing-subtext'>*Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</h4>
                 <div className="pricing-container text-black">
                     <div className="pricing-card">
-                        <h4 className="size" style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Small</h4>
-                        <h4 className="size">Protect</h4>
+                        <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Small</strong>
+                        <strong className='size'>Protect</strong>
                         <p className="pricing-price pricing-border">$1,000</p>
-                        <h4 className="size">Protect<span className="special-package">+</span></h4>
+                        <strong className='size'>Protect<span className="special-package">+</span></strong>
                         <p className="pricing-price pricing-border">$1,500</p>
                         <p className="example-vehicle pricing-border">2-Door Coupes</p>
                         <p className="example-vehicle pricing-border">Single/Extended Cabs</p>
                         <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                     </div>
                     <div className="pricing-card">
-                        <h4 className="size" style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Medium</h4>
-                        <h4 className="size">Protect</h4>
+                        <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Medium</strong>
+                        <strong className='size'>Protect</strong>
                         <p className="pricing-price pricing-border">$1,200</p>
-                        <h4 className="size">Protect<span className="special-package">+</span></h4>
+                        <strong className='size'>Protect<span className="special-package">+</span></strong>
                         <p className="pricing-price pricing-border">$1,700</p>
                         <p className="example-vehicle pricing-border">4 Door Vehicles</p>
                         <p className="example-vehicle pricing-border">Smaller SUV's</p>
                         <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                     </div>
                     <div className="pricing-card">
-                        <h4 className="size" style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Large</h4>
-                        <h4 className="size">Protect</h4>
+                        <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Large</strong>
+                        <strong className='size'>Protect</strong>
                         <p className="pricing-price pricing-border">$1,400</p>
-                        <h4 className="size">Protect<span className="special-package">+</span></h4>
+                        <strong className='size'>Protect<span className="special-package">+</span></strong>
                         <p className="pricing-price pricing-border">$1,900</p>
                         <p className="example-vehicle pricing-border">Larger Trucks</p>
                         <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
@@ -105,13 +105,13 @@ export default function puyallup() {
                 <h4 className='pricing-subtext'>*Pricing does NOT include an <a href="/services/FullIntEx" className='aside-link'>Interior Cleaning</a>, which you will need to add to get a coating.</h4>
                 <div className='pricing-container text-black'>
                     <div className="pricing-card">
-                        <h4 className="size">Fabric Coating</h4>
+                        <strong className='size'>Fabric Coating</strong>
                         <p className="pricing-price pricing-border">$75</p>    
                         <p className="example-vehicle pricing-border">Any Size Vehicle</p>
                         <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                     </div>
                     <div className="pricing-card">
-                        <h4 className="size">Leather Coating</h4>
+                        <strong className='size'>Leather Coating</strong>
                         <p className="pricing-price pricing-border">$150</p>
                         <p className="example-vehicle pricing-border">Any Size Vehicle</p>
                         <a href="/Contact" className="pricing-quote-btn">Contact Us</a>

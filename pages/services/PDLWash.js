@@ -59,17 +59,17 @@ export default function PDLWash() {
             <ol className='list'>
               {content}
             </ol>
-            <p style={{marginTop: 0}}>*Truck Bed cleaning offered as an extra add-on if needed.</p>
+            <p style={{ marginTop: 0 }}>*Truck Bed cleaning offered as an extra add-on if needed.</p>
           </div>
 
           <div>
             <div className='aside-container'>
               <div className='service-aside'>
                 <p className='extra-addons'>Other Exterior Pages</p>
-                <hr className="contact-border" style={{marginBottom: 16}} />
+                <hr className="contact-border" style={{ marginBottom: 16 }} />
                 <div className="aside-links">
-                  <a href="/services/DLWash" style={{color: href.endsWith('/DLWash') ? 'dodgerblue' : 'white'}} className="service-link">{href.endsWith('/DLWash') ? '> ' : ''} Dirt-Less Wash</a>
-                  <a href="/services/PDLWash" style={{color: href.endsWith('PDLWash') ? 'dodgerblue' : 'white'}} className="service-link">{href.endsWith('PDLWash') ? '> ' : ''} Premium Dirt-Less Wash</a>
+                  <a href="/services/DLWash" style={{ color: href.endsWith('/DLWash') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('/DLWash') ? '> ' : ''} Dirt-Less Wash</a>
+                  <a href="/services/PDLWash" style={{ color: href.endsWith('PDLWash') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('PDLWash') ? '> ' : ''} Premium Dirt-Less Wash</a>
                   <a href="/gallery/ExteriorWashGallery" className="service-link">Exterior Wash Gallery</a>
                 </div>
               </div>
@@ -78,8 +78,8 @@ export default function PDLWash() {
             <div className='aside-container'>
               <div className='service-aside addons-aside'>
                 <a href="/services/Addons" className='extra-addons'>Extra Add-ons</a>
-                <hr className="contact-border" style={{marginBottom: 16}} />
-                <div className="aside-links"> 
+                <hr className="contact-border" style={{ marginBottom: 16 }} />
+                <div className="aside-links">
                   <div className="addon-container">
                     <p className='addon-title'><a href="/services/Addons/#truck" className='text-blue'>Truck Bed Cleaning</a></p>
                     <p className='m-0'><span className="bold special-package">$25</span></p>
@@ -114,35 +114,35 @@ export default function PDLWash() {
           <h4 className='pricing-subtext'>*Final pricing may vary based on your vehicle condition and size.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
-              <h4 className="size">Small</h4>
+              <strong className='size'>Small</strong>
               <p className="pricing-price pricing-border">$150</p>
               <p className="example-vehicle pricing-border">Smaller Trucks</p>
               <p className="example-vehicle pricing-border">Most Cars</p>
               <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
             </div>
             <div className="pricing-card">
-              <h4 className="size">Medium</h4>
+              <strong className='size'>Medium</strong>
               <p className="pricing-price pricing-border">$200</p>
               <p className="example-vehicle pricing-border">Mid-Size SUV's</p>
               <p className="example-vehicle pricing-border">Most Wagons</p>
               <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
             </div>
             <div className="pricing-card">
-              <h4 className="size">Large</h4>
+              <strong className='size'>Large</strong>
               <p className="pricing-price pricing-border">$250</p>
               <p className="example-vehicle pricing-border">Large SUV's</p>
               <p className="example-vehicle pricing-border">Some Trucks</p>
               <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
             </div>
             <div className="pricing-card">
-              <h4 className="size">Extra Large</h4>
+              <strong className='size'>Extra Large</strong>
               <p className="pricing-price pricing-border">$275</p>
               <p className="example-vehicle pricing-border">Larger trucks</p>
               <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
               <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
             </div>
           </div>
-          
+
         </div>
       </div>
     </section>

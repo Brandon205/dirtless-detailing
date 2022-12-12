@@ -17,8 +17,8 @@ export default function correction() {
     return (
         <div>
             <Head>
-                <title>Dirt-Less Detailing | Paint Correction Services</title>
-                <meta property="og:title" content="Dirt-Less Detailing | Paint Correction Services" />
+                <title>Paint Correction Services | Dirt-Less Detailing</title>
+                <meta property="og:title" content="Paint Correction Services | Dirt-Less Detailing" />
                 <meta property="description" content="Check out our Single and Two Stage paint correction to fix any scratches or swirls in your paint." />
                 <meta property="og:description" content="Check out our Single and Two Stage paint correction to fix any scratches or swirls in your paint." />
                 <meta property="og:type" content="website" />
@@ -185,30 +185,30 @@ export default function correction() {
                 <h4 className='pricing-subtext'>*Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</h4>
                 <div className="pricing-container text-black">
                     <div className="pricing-card">
-                        <h4 className="size" style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Small</h4>
-                        <h4 className="size">Single Stage</h4>
+                        <strong className="size" style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Small</strong>
+                        <strong className='size'>Single Stage</strong>
                         <p className="pricing-price pricing-border">$300- $450</p>
-                        <h4 className="size">Two Stage</h4>
+                        <strong className='size'>Two Stage</strong>
                         <p className="pricing-price pricing-border">$450- $600</p>
                         <p className="example-vehicle pricing-border">2-Door Coupes</p>
                         <p className="example-vehicle pricing-border">Single/Extended Cabs</p>
                         <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                     </div>
                     <div className="pricing-card">
-                        <h4 className="size" style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Medium</h4>
-                        <h4 className="size">Single Stage</h4>
+                        <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Medium</strong>
+                        <strong className='size'>Single Stage</strong>
                         <p className="pricing-price pricing-border">$450- $600</p>
-                        <h4 className="size">Two Stage</h4>
+                        <strong className='size'>Two Stage</strong>
                         <p className="pricing-price pricing-border">$600- $850</p>
                         <p className="example-vehicle pricing-border">4 Door Vehicles</p>
                         <p className="example-vehicle pricing-border">Smaller SUV's</p>
                         <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                     </div>
                     <div className="pricing-card">
-                        <h4 className="size" style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Large</h4>
-                        <h4 className="size">Single Stage</h4>
+                        <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Large</strong>
+                        <strong className='size'>Single Stage</strong>
                         <p className="pricing-price pricing-border">$600- $850</p>
-                        <h4 className="size">Two Stage</h4>
+                        <strong className='size'>Two Stage</strong>
                         <p className="pricing-price pricing-border">$800- $1,100</p>
                         <p className="example-vehicle pricing-border">Larger Trucks</p>
                         <p className="example-vehicle pricing-border">Extra Large Vehicles</p>

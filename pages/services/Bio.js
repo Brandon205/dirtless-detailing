@@ -31,7 +31,7 @@ export default function Bio() {
         </div>
         <div className="step-container">
           <h4 className="step-title">{item[0]}</h4>
-          <p className='step-desc'>{item[1]}</p> 
+          <p className='step-desc'>{item[1]}</p>
         </div>
       </li>
     )
@@ -60,14 +60,14 @@ export default function Bio() {
               {content}
             </ol>
           </div>
-          
+
           <div className='aside-container'>
             <div className='service-aside'>
               <p className='extra-addons'>Other Interior Pages</p>
-              <hr className="contact-border" style={{marginBottom: 16}} />
+              <hr className="contact-border" style={{ marginBottom: 16 }} />
               <div className="aside-links">
-                <a href="/services/FullIntEx" style={{color: href.endsWith('FullIntEx') ? 'dodgerblue' : 'white'}} className="service-link">{href.endsWith('FullIntEx') ? '> ' : ''} Full Interior Cleaning</a>
-                <a href="/services/Bio" style={{color: href.endsWith('Bio') ? 'dodgerblue' : 'white'}} className="service-link">{href.endsWith('Bio') ? '> ' : ''} Biohazard Cleaning</a>
+                <a href="/services/FullIntEx" style={{ color: href.endsWith('FullIntEx') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('FullIntEx') ? '> ' : ''} Full Interior Cleaning</a>
+                <a href="/services/Bio" style={{ color: href.endsWith('Bio') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('Bio') ? '> ' : ''} Biohazard Cleaning</a>
                 <a href="/gallery/FullIntGallery" className="service-link">Full Interior Gallery</a>
               </div>
             </div>
@@ -75,7 +75,7 @@ export default function Bio() {
             <div className='aside-container'>
               <div className='service-aside addons-aside'>
                 <a href="/services/Addons" className='extra-addons'>Extra Add-ons</a>
-                <hr className="contact-border" style={{marginBottom: 16}} />
+                <hr className="contact-border" style={{ marginBottom: 16 }} />
                 <div className="aside-links">
                   <div className="addon-container">
                     <p className='addon-title'><a href="/services/Addons/#ozone" className='text-blue'>Ozone Treatment</a></p>
@@ -83,7 +83,7 @@ export default function Bio() {
                     <p className="addon-subtext">Treats your vehicle to get rid of any viruses, bacteria, and odors.</p>
                   </div>
                 </div>
-              </div>  
+              </div>
             </div>
 
           </div>
@@ -92,17 +92,17 @@ export default function Bio() {
         <div className="examples-container">
           <div className="example-img">
             <Zoom>
-              <Image style={{borderRadius: 16}} src={seats} alt="seat mold before and after" layout="responsive" objectFit='scale-down' placeholder='blur' />
+              <Image style={{ borderRadius: 16 }} src={seats} alt="seat mold before and after" layout="responsive" objectFit='scale-down' placeholder='blur' />
             </Zoom>
           </div>
           <div className="example-img">
             <Zoom>
-              <Image style={{borderRadius: 16}} src={seatbelts} alt="seatbelt mold before and after" layout="responsive" objectFit='scale-down' placeholder='blur' />
+              <Image style={{ borderRadius: 16 }} src={seatbelts} alt="seatbelt mold before and after" layout="responsive" objectFit='scale-down' placeholder='blur' />
             </Zoom>
           </div>
           <div className="example-img">
             <Zoom>
-              <Image style={{borderRadius: 16}} src={mesh} alt="mesh net mold before and after" layout="responsive" objectFit="scale-down" placeholder='blur' />
+              <Image style={{ borderRadius: 16 }} src={mesh} alt="mesh net mold before and after" layout="responsive" objectFit="scale-down" placeholder='blur' />
             </Zoom>
           </div>
         </div>
@@ -112,7 +112,7 @@ export default function Bio() {
           <h4 className='pricing-subtext'>*Final pricing may vary based on your vehicle condition and size.</h4>
           <div className="pricing-container">
             <div className="pricing-card">
-            <h4 className="size">Any Vehicle</h4>
+              <strong className='size'>Any Vehicle</strong>
               <p className="pricing-price pricing-border">$400- $1000</p>
               <p className="example-vehicle pricing-border">Any Size Vehicle</p>
               <a href="/Contact" className="pricing-quote-btn">Contact Us</a>

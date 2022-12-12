@@ -18,8 +18,8 @@ export default function puyallup() {
     return (
         <div className='location-container'>
             <Head>
-                <title>Dirt-Less Detailing | Vehicle Detailing in Puyallup</title>
-                <meta property="og:title" content="Dirt-Less Detailing | Vehicle Detailing in Puyallup" />
+                <title>Vehicle Detailing in Puyallup | Dirt-Less Detailing</title>
+                <meta property="og:title" content="Vehicle Detailing in Puyallup | Dirt-Less Detailing" />
                 <meta property="description" content="Interior • Exterior • Ceramic Coating • Paint Correction. Check out our top auto detailing services for Puyallup Washington" />
                 <meta property="og:description" content="Interior • Exterior • Ceramic Coating • Paint Correction. Check out our top auto detailing services for Puyallup Washington" />
                 <meta property="og:type" content="website" />
