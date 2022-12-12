@@ -1,8 +1,18 @@
 import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 
 import cover from '../../public/imgs/pageimgs/exterior/IMG_20211103_105855.jpg';
+import ext1 from '../../public/imgs/pageimgs/ceramic/317895587_701820004796038_115520810281779526_n.jpg';
+import ext2 from '../../public/imgs/pageimgs/ceramic/317941187_811122646616266_4791919094544331114_n.jpg';
+import ext3 from '../../public/imgs/pageimgs/ceramic/317953380_3245073689065810_496222385512149880_n.jpg';
+import ext4 from '../../public/imgs/pageimgs/ceramic/318206630_688872332864156_6250333864852484039_n.jpg';
+import ext5 from '../../public/imgs/pageimgs/ceramic/EW0A9486.jpg';
+import ext6 from '../../public/imgs/pageimgs/ceramic/318668138_534490881683360_5498452884377282120_n.jpg';
+import ext7 from '../../public/imgs/pageimgs/ceramic/319282824_6026927310663439_4187208472627188697_n.jpg';
+import ext8 from '../../public/imgs/pageimgs/ceramic/EW0A9472.jpg';
 
 export default function puyallup() {
     return (
@@ -138,6 +148,52 @@ export default function puyallup() {
                         <li className='faq-li'>How does the Lifetime warranty work?</li>
                         <li className='faq-p text-black'>Your vehicles paint coating is guaranteed for life as long as you are on our monthly maintenance schedule. If you ever wish to cancel monthly maintenance, the remainder of your 5 year 50,000 mile warranty you had before takes effect.</li>
                     </ul>
+                </div>
+            </div>
+
+            <div className="locationpage-section no-bg">
+                <h3 className='text-large'>Check out some of the results from our interior and exterior Ceramic services.</h3>
+                <div className="gallery-container">
+                    <Zoom>
+                        <div className='gallery-image-div'>
+                            <Image style={{borderRadius: 16}} alt={'Black car after paint correction service'} objectFit="cover" src={ext1} loading="lazy" placeholder='blur' />
+                        </div>
+                    </Zoom>
+                    <Zoom>
+                        <div className='gallery-image-div'>
+                            <Image style={{borderRadius: 16}} alt={'Hood of vehicle after our paint correction service'} objectFit="cover" src={ext2} loading="lazy" placeholder='blur' />
+                        </div>
+                    </Zoom>
+                    <Zoom>
+                        <div className='gallery-image-div'>
+                            <Image style={{borderRadius: 16}} alt={'Angle view of F350 after paint correction service'} objectFit="cover" src={ext3} loading="lazy" placeholder='blur' />
+                        </div>
+                    </Zoom>
+                    <Zoom>
+                        <div className='gallery-image-div'>
+                            <Image style={{borderRadius: 16}} alt={'Angle view of Jeep in the middle of our paint correction service'} objectFit="cover" src={ext4} loading="lazy" placeholder='blur' />
+                        </div>
+                    </Zoom>
+                    <Zoom>
+                        <div className='gallery-image-div'>
+                            <Image style={{borderRadius: 16}} alt={'Side view of project car after our paint correction service'} objectFit="cover" src={ext5} loading="lazy" placeholder='blur' />
+                        </div>
+                    </Zoom>
+                    <Zoom>
+                        <div className='gallery-image-div'>
+                            <Image style={{borderRadius: 16}} alt={'Side view of minivan after our paint correction service'} objectFit="cover" src={ext6} loading="lazy" placeholder='blur' />
+                        </div>
+                    </Zoom>
+                    <Zoom>
+                        <div className='gallery-image-div'>
+                            <Image style={{borderRadius: 16}} alt={'Angle view of van in the middle of our paint correction service'} objectFit="cover" src={ext7} loading="lazy" placeholder='blur' />
+                        </div>
+                    </Zoom>
+                    <Zoom>
+                        <div className='gallery-image-div'>
+                            <Image style={{borderRadius: 16}} alt={'Angle view of van in the middle of our paint correction service'} objectFit="cover" src={ext8} loading="lazy" placeholder='blur' />
+                        </div>
+                    </Zoom>
                 </div>
             </div>
             <a href="/Contact" className="quote-btn location-quote-btn">Get a Quote Today!</a>
