@@ -39,11 +39,18 @@ export default function exteriorWash() {
       </div>
 
       <main className="location-main">
-        <h2 className='text-large'>Professional Car Washes.</h2>
+        <h2 className='text-large'>Dirt-Less Wash</h2>
         <div className="text-left">
-          <p>With either of our car wash services your vehicle will be left in a dealership ready state.</p>
-          <p>Our Dirt-Less Detail will clean the whole exterior of your vehicle from the wheel wells to the roof racks.</p>
-          <p>Go the extra mile with our Premium service to get clay bar and iron decontamination treatment as well, and ensure that all contaminants are off of your vehicle.</p>
+          <p>You don't have to go to Harvard University to wash a car, but there are methods of washing that produce infinitely better results than your typical tunnel car wash. Our methods are also way safer.</p>
+          <p>If you're looking for a fast and cheap option to get your car washed in Bonney lake or the surrounding areas, we most likely won't be a great fit for you. We go very in-depth in our washing process to provide the highest quality level of service and results your money can buy.</p>
+        </div>
+
+        <br className='extra-space' />
+
+        <h2 className='text-large'>Premium Dirt-Less Wash</h2>
+        <div className="text-left">
+          <p>Not only will you see a humongous difference in the appearance, but you will also be able to feel the smoothness and slickness of the paint once we're done with this service.</p>
+          <p>A lot of our customers love this service since it doesn't take much time to perform, but the results that you get are stellar!</p>
         </div>
 
         <br className='extra-space' />

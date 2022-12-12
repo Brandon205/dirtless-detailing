@@ -8,8 +8,8 @@ export default function ceramic() {
     return (
         <div>
             <Head>
-                <title>Dirt-Less Detailing | Graphene Ceramic Coatings</title>
-                <meta property="og:title" content="Dirt-Less Detailing | Graphene Ceramic Coatings" />
+                <title>Graphene Ceramic Coatings | Dirt-Less Detailing</title>
+                <meta property="og:title" content="Graphene Ceramic Coatings | Dirt-Less Detailing" />
                 <meta property="description" content="Want a high quality ceramic coating to protect your car? Check out our offers on graphene ceramic coatings." />
                 <meta property="og:description" content="Want a high quality ceramic coating to protect your car? Check out our offers on graphene ceramic coatings." />
                 <meta property="og:type" content="website" />
@@ -31,11 +31,10 @@ export default function ceramic() {
             <main className="location-main">
                 <h2 className='text-large'>What is a Ceramic Coating?</h2>
                 <div className="text-left">
-                    <p>The absolute best way to protect your vehicle from the harsh weather we experience in Bonney Lake.
-                        Back in the day, wax was the cutting edge choice to enhance your vehicle's shine. It also protected your paint from external elements like rain, bird poop, dirt, tree sap, etc.</p>
+                    <p>It is the absolute best way to protect your vehicle from the harsh weather we experience in Bonney Lake. Back in the day, wax was the cutting edge choice to enhance your vehicle's shine. It also protected your paint from external elements like rain, bird poop, dirt, tree sap, etc.</p>
                     <p>Now, with modern day technology, we have a far more durable and superior form of protection: ceramic/graphene coatings.</p>
                     <p>Unlike wax, you can't just simply wipe it on and off. The ceramic coating is a semi-permanent barrier that bonds to the vehicle's surface. It is commonly referred to as a “sacrificial” layer of protection. It will take the blow of the weathers elements like rain, dirt, and snow to better protect the paint underneath.</p>
-                    <p>As an analogy, think of The Three Little Pigs. Wax is like the straw house, and ceramic coatings are like the brick house. Both offer protection from rain and dust, but one is far superior.</p>
+                    <p>As an analogy, think of the Three Little Pigs. Wax is like the straw house, and ceramic coatings are like the brick house. Both offer protection from rain and dust, but one is far superior.</p>
                 </div>
 
                 <br className='extra-space' />
@@ -43,8 +42,8 @@ export default function ceramic() {
                 <h2 className='text-large'>The benefits you get with a coating:</h2>
                 <p className='text-left'>There are a lot of coating companies that make some pretty big claims of what a coating can do. Although there is some truth to these claims, we don't like to oversell the coatings capabilities.</p>
                 <ul className='cities-ul'>
-                    <li>Produces the most durable protection possible that lasts 5 years to a lifetime* </li>
-                    <li>You only need to apply it once. (Not every couple of months like wax.)</li>
+                    <li>Produces the most durable protection possible that lasts 5 years to a lifetime (With proper maintenance through us).</li>
+                    <li>You only need to apply it once. (Not every couple of months like wax).</li>
                     <li>Creates a deep level of gloss that is not possible with other forms of protection like wax or sealant.</li>
                     <li>Provides unmatched hydrophobic properties that keeps your car cleaner, making it easier and more fun to wash.</li>
                 </ul>
@@ -56,7 +55,7 @@ export default function ceramic() {
                     <p>Before the coating is installed, your vehicle must first be properly prepped and corrected with one of our <a href="/detailing/correction" className='aside-link'>Paint Correction</a> services. If we apply the coating without the proper prep work, you won't get all of the benefits a ceramic coating can offer.</p>
                     <p>This is why you want a professional ceramic coating installer. Additionally, if it's not properly installed, you'll see a ton of smudges across your vehicle. This is what we call “high spots”. You'll see this when the coating was not properly applied and it was left to dry for too long without being wiped off.</p>
                     <p>As a general rule of thumb, the more durable the coating, the harder it is to install. For instance, a 1 year versus a 5 year coating. You have to understand the weather variables since that can play a major factor in the installation process.</p>
-                    <p>Coatings react differently when it is humid, cold, or hot.  If you've been in Bonney Lake an extended period of time, you'll notice that the weather is always changing. We do all of our coating installations at our shop location so we can control the working conditions.</p>
+                    <p>Coatings react differently when it is humid, cold, or hot.  If you've been in Bonney Lake for an extended period of time, you'll notice that the weather is always changing. We do all of our coating installations at our shop location so we can control the working conditions.</p>
                 </div>
 
                 <br className='extra-space' />
@@ -64,7 +63,7 @@ export default function ceramic() {
                 <h2 className="text-large">Common Myths About Ceramic Coatings</h2>
                 <div className="text-left">
                     <p>Yes, coatings are long-lasting and durable. That doesn't mean you can beat the snot out of your vehicle and think the coating will protect it.</p>
-                    <p>It has it's limitations and it's important to understand the limitations of what the ceramic coating can handle. Too many times we see customers overestimate the protection of the coating and are then disappointed when they see swirl marks in the paintwork.</p>
+                    <p>It has its limitations and it's important to understand the limitations of what the ceramic coating can handle. Too many times we see customers overestimate the protection of the coating and are then disappointed when they see swirl marks in the paintwork.</p>
                     <p>The coating will not make your paint scratch-proof. When we say the coating will resist light swirls and scratches, we really mean very light swirls and scratches.</p>
                     <p>The coating will not protect your paint from rock chips whatsoever. No matter how many layers you apply of any protection, whether it's wax or ceramic coating, it cannot stop a rock hitting your vehicle.</p>
                     <p>The coating requires maintenance to prolong the durability. Just like many other things in life (like going to the dentist), if you don't care for the coating, it will degrade over time and not last its intended lifespan.</p>
@@ -75,7 +74,7 @@ export default function ceramic() {
 
                 <h2 className='text-large'>Professional Interior Coatings</h2>
                 <div className="text-left">
-                    <p>Whether it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe any spill up before it seeps in.</p>
+                    <p>Whether it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe any spill up before it seeps in. Get more info <a href="/services/IntCoatings" className='aside-link'>here</a>.</p>
                 </div>
 
                 <br className='extra-space' />

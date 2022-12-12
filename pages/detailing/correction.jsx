@@ -51,14 +51,14 @@ export default function correction() {
                 <h2 className='text-large'>Two Stage Paint Correction</h2>
                 <div className="text-left">
                     <p>Our <a href="/services/TwoPC" className='aside-link'>Two Stage Paint Correction</a> service is aimed to remove as many swirls, scratches, and imperfections from your paint as possible. This is where we do an intense cutting and polishing step, called a 2-step correction, to get the most gloss and clarity from your paintwork.</p>
-                    <p>Depending on the condition, whether the vehicle is new or not, some scratches won't come all the way out. It could be the scratches are too deep to remove safely, or the clear coat itself is thinning out. (We'll take paint measurements before we start.)</p>
+                    <p>Depending on the condition, whether the vehicle is new or not, some scratches won't come all the way out. It could be the scratches are too deep to remove safely, or the clear coat itself is thinning out. (We'll take paint measurements before we start).</p>
                     <p>This is where we'll make the call on what we can safely remove from your paint. It's not just about removing as many imperfections as possible. It's also knowing when enough is enough to keep the integrity of the paint healthy.</p>
                     <p>The Level 2 paint correction is a commitment that you are making to your vehicle. If you'd like to keep the shine on your paint, you have to properly maintain the vehicle after the service is complete. If you don't properly wash and dry the vehicle, you can easily put all those swirls and scratches back into your paint after just a few washes.</p>
                 </div>
 
                 <br className='extra-space' />
 
-                <h2 className='text-large'>So what service should I get?</h2>
+                <h2 className='text-large'>What service should I get?</h2>
                 <div className="text-left">
                     <p>Feel free to give us a call if you're not sure which service would suit you and your vehicle best, or if you have questions on the new higher quality maintenance that we recommend after getting a paint correction service.</p>
                 </div>

@@ -42,7 +42,7 @@ export default function puyallup() {
                 <h2 className='text-large'>Why get a Ceramic Coating?</h2>
                 <p className='text-left'>Here's a list of some of the benefits to getting a ceramic coating on your car we have more listed on our <a href="/detailing/ceramic" className='aside-link'>ceramic</a> page:</p>
                 <ul className='cities-ul'>
-                    <li>Lasts about 5 years (with proper care)</li>
+                    <li>Lasts up to 5 years or a lifetime (with proper maintenance through us).</li>
                     <li>Hyrophobic</li>
                     <li>Easy to Wash</li>
                     <li>Easier to maintain</li>
@@ -53,9 +53,9 @@ export default function puyallup() {
 
                 <br className='extra-space' />
 
-                <h2 className='text-large'>Professional Interior Coatings in Puyallup Washington.</h2>
+                <h2 className='text-large'>Professional Interior Coatings in Puyallup Washington</h2>
                 <div className="text-left">
-                    <p>Whether it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe any spill up before it seeps in.</p>
+                    <p>Whether it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe any spill up before it seeps in. Get more info <a href="/services/IntCoatings" className='aside-link'>here</a>.</p>
                 </div>
 
                 <br className='extra-space' />

@@ -233,7 +233,7 @@ export default function MyApp({ Component, pageProps }) {
                 <hr />
                 <div className='socials-container'>
                     <h4 style={{fontSize: 1.3 + 'em'}}>Dirt-Less Detailing 2022</h4>
-                    <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="nofollow"><img src="https://seal-alaskaoregonwesternwashington.bbb.org/seals/blue-seal-160-82-bbb-1000135733.png" className="bbb-seal" alt="Dirt-Less Detailing BBB Business Review" /></a>
+                    <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="noopener"><img src="https://seal-alaskaoregonwesternwashington.bbb.org/seals/blue-seal-160-82-bbb-1000135733.png" className="bbb-seal" alt="Dirt-Less Detailing BBB Business Review" /></a>
                     <div>
                         <a href="https://www.facebook.com/DirtLessDetailing/" className="socials" target="_blank" rel="noopener" aria-label="Facebook"><FaFacebook /></a>
                         <a href="https://www.instagram.com/dirtlessdetailing/" className="socials" target="_blank" rel="noopener" aria-label="Instagram"><FaInstagram /></a>

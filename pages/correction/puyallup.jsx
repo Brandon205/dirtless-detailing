@@ -40,7 +40,7 @@ export default function puyallup() {
             <main className="location-main">
                 <h2 className='text-large'>Professional Paint Correction in Puyallup Washington.</h2>
                 <div className="text-left">
-                    <p>To ensure the best results on your paint correction we will have you drop your car off at our shop location in Bonney Lake.</p>
+                    <p>For all of the details on our process check out our <a href="/detailing/correction" className='aside-link'>Paint Correction</a> page. To ensure the best results on your paint correction we will have you drop your car off at our shop location in <a href="/correction/bonney-lake" className='aside-link'>Bonney Lake</a>.</p>
                     <p>Why? Well we want a controlled environment when performing our paint correction procedures. At our shop we have lighting and temperature controls. This way we can keep an optimal temperature and the lighting helps us see and fix any imperfections on the paint.</p>
                     <p>Our shop is about 20 minutes away from most of Puyallup, these services will take time, but once you are there you are free to go wherever or stick around if needed while we work.</p>
                 </div>
