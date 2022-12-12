@@ -8,8 +8,12 @@ export default function About() {
   return (
     <div className='App bg-contact'>
       <Head>
-        <title>Dirt-Less Detailing | About Us / FAQ</title>
+        <title>About Us / FAQ | Dirt-Less Detailing</title>
+        <meta property="og:title" content="About Us / FAQ | Dirt-Less Detailing" />
+        <meta property="description" content="Find out who we are, and get answers to some of our most frequently asked questions." />
         <meta property="og:description" content="Find out who we are, and get answers to some of our most frequently asked questions." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.dirtlessdetailing.com/About" />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/About" />
       </Head>
       <div className="cover">
