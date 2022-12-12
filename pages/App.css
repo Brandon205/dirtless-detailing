@@ -858,7 +858,7 @@ input[type="range"] {
 
 /** Home Page Review CSS **/
 .reviews-container {
-  width: 100%;
+  width: 80%;
 }
 
 .review-carousel {
@@ -1030,15 +1030,10 @@ hr {
 .servicepage-header {
   position: absolute;
   color: var(--heading-clr1);
-  font-size: 2em;
+  font-size: 1.5em;
   width: 100%;
   transform: translate(0, -75vh);
   z-index: 1;
-}
-
-.servicepage-header h2 {
-  font-size: 1em;
-  margin-top: 0
 }
 
 .servicepage-heading {
@@ -1427,6 +1422,14 @@ hr {
   width: 100% border-radius 1rem 1rem 0 0;
 }
 
+.service-main {
+  width: 80vw;
+  margin: 0 auto;
+  line-height: 2;
+  font-size: 1.1em;
+  text-align: center;
+}
+
 /** LOCATION PAGE CSS **/
 
 .location-container {
@@ -1446,7 +1449,6 @@ hr {
   background-color: #F5F5F5;
   width: 100%;
   padding: 2rem 1rem;
-  /* letter-spacing: 0.75px; */
   line-height: 2;
   font-size: 1.1em;
   text-align: center;
@@ -1672,6 +1674,10 @@ hr {
 
   .contact-container-right {
     max-width: 650px;
+  }
+
+  .service-main {
+    width: 60vw;
   }
 
   .mobileservices-container {
@@ -1900,7 +1906,7 @@ hr {
 }
 
 @media screen and (min-width: 2000px) {
-  .location-header {
+  .servicepage-header {
     font-size: 2.5em;
   }
 }

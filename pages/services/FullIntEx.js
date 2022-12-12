@@ -53,11 +53,27 @@ export default function FullIntEx() {
       <div className="servicepage-header">
         <h1>Full Interior Cleaning</h1>
         <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+        <p className='inline text-small'>
+          Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
+        </p>
       </div>
 
       <div className='main-content-container'>
         <div className='process-container'>
           <div>
+            <main className="service-main">
+              <h2 className='text-large'>Professional Interior Detailing</h2>
+              <div className="text-left">
+                <p>The Full Interior Cleaning package is meant to get your interior back to the best condition possible. Your seats, floor mats, plastics, windows, and carpet will all be thoroughly cleaned, detailed, and shampooed/extracted. </p>
+                <p>If it can be cleaned, we'll clean it. Does that mean every little stain will be removed? Unfortunately, that isn't the case. Based on the type of stain, how long it's been sitting, and the material, many stains won't come out 100%.</p>
+                <p>Of course we'll still do our best to reduce the appearance of it.</p>
+                <p>Please don't think your interior is “too dirty”. We have the necessary tools and products to get the job done. We have cleaned hundreds of interiors, of all conditions. It's not easy to surprise us.</p>
+                <p>Make it a <a href='/services/Combo' className='aside-link'>Combo</a> deal by booking a Premium Dirtless Wash, and get a free engine bay cleaning on the house!</p>
+              </div>
+
+              <br className='extra-space' />
+            </main>
+
             <h2 className='cleaning-process-title'>Our Interior Cleaning Process*</h2>
             <ol className='list'>
               {content}

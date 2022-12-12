@@ -28,6 +28,9 @@ export default function Combo() {
       <div className="servicepage-header">
         <h1>Full Interior and Exterior Combo</h1>
         <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+        <p className='inline text-small'>
+          Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
+        </p>
       </div>
 
       <div className='main-content-container'>
