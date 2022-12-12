@@ -12,6 +12,11 @@ import { RiPaintFill } from 'react-icons/ri';
 import cover from '../../public/imgs/pageimgs/ceramic/waterBeads.jpg';
 import iglCircle from '../../public/imgs/iglcircle.jpg';
 import kenzo from '../../public/imgs/kenzo.png';
+import ext1 from '../../public/imgs/pageimgs/ceramic/317953380_3245073689065810_496222385512149880_n.jpg';
+import ext2 from '../../public/imgs/pageimgs/ceramic/318206630_688872332864156_6250333864852484039_n.jpg';
+import ext3 from '../../public/imgs/pageimgs/ceramic/EW0A9486.jpg';
+import ext4 from '../../public/imgs/pageimgs/ceramic/319282824_6026927310663439_4187208472627188697_n.jpg';
+import ext5 from '../../public/imgs/pageimgs/ceramic/EW0A9472.jpg';
 
 export default function ExtCoatings() {
     return (
@@ -217,11 +222,45 @@ export default function ExtCoatings() {
                     </div>
                 </div>
             </div>
-            <div className='locationpage-section bg-contact'>
-                <div className='center'>
+
+            <h4 className='text-large'>Some examples of our Exterior Coating work so far:</h4>
+            <div className="examples-container">
+                <div className="example-img">
+                    <Zoom>
+                        <Image style={{ borderRadius: 16 }} src={ext1} alt="Water beads on large surface" layout="responsive" objectFit='scale-down' placeholder='blur' />
+                    </Zoom>
+                </div>
+                <div className="example-img">
+                    <Zoom>
+                        <Image style={{ borderRadius: 16 }} src={ext2} alt="Water beads on side of vehicle fender" layout="responsive" objectFit='scale-down' placeholder='blur' />
+                    </Zoom>
+                </div>
+                <div className="example-img">
+                    <Zoom>
+                        <Image style={{ borderRadius: 16 }} src={ext3} alt="Small water beads area" layout="responsive" objectFit="scale-down" placeholder='blur' />
+                    </Zoom>
+                </div>
+                <div className="example-img">
+                    <Zoom>
+                        <Image style={{ borderRadius: 16 }} src={ext4} alt="Large water beads" layout="responsive" objectFit="scale-down" placeholder='blur' />
+                    </Zoom>
+                </div>
+                <div className="example-img">
+                    <Zoom>
+                        <Image style={{ borderRadius: 16 }} src={ext5} alt="Water beads near hood of vehicle" layout="responsive" objectFit="scale-down" placeholder='blur' />
+                    </Zoom>
+                </div>
+            </div>
+            <br className='extra-space' />
+
+            <h4 className='text-large'>Informational photos from IGL Coatings:</h4>
+            <div className='examples-container'>
+                <div className='example-img'>
                     <Zoom>
                         <Image src={iglCircle} alt="igl coverage circle" placeholder='blur' />
                     </Zoom>
+                </div>
+                <div className='example-img'>
                     <Zoom>
                         <Image src={kenzo} alt="kenzo graphene coating information" placeholder='blur' />
                     </Zoom>

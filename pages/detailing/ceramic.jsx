@@ -175,42 +175,42 @@ export default function ceramic() {
                 <div className="gallery-container">
                     <Zoom>
                         <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt={'Black car after paint correction service'} objectFit="cover" src={ext1} loading="lazy" placeholder='blur' />
+                            <Image style={{borderRadius: 16}} alt='Side view of seat after leather ceramic coating' objectFit="cover" src={ext1} loading="lazy" placeholder='blur' />
                         </div>
                     </Zoom>
                     <Zoom>
                         <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt={'Hood of vehicle after our paint correction service'} objectFit="cover" src={ext2} loading="lazy" placeholder='blur' />
+                            <Image style={{borderRadius: 16}} alt='Front view of seat after leather ceramic coating' objectFit="cover" src={ext2} loading="lazy" placeholder='blur' />
                         </div>
                     </Zoom>
                     <Zoom>
                         <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt={'Angle view of F350 after paint correction service'} objectFit="cover" src={ext3} loading="lazy" placeholder='blur' />
+                            <Image style={{borderRadius: 16}} alt='Water beads in a large area' objectFit="cover" src={ext3} loading="lazy" placeholder='blur' />
                         </div>
                     </Zoom>
                     <Zoom>
                         <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt={'Angle view of Jeep in the middle of our paint correction service'} objectFit="cover" src={ext4} loading="lazy" placeholder='blur' />
+                            <Image style={{borderRadius: 16}} alt='Large water beads near edge of car' objectFit="cover" src={ext4} loading="lazy" placeholder='blur' />
                         </div>
                     </Zoom>
                     <Zoom>
                         <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt={'Side view of project car after our paint correction service'} objectFit="cover" src={ext5} loading="lazy" placeholder='blur' />
+                            <Image style={{borderRadius: 16}} alt='Small water beads on flat surface of vehicle' objectFit="cover" src={ext5} loading="lazy" placeholder='blur' />
                         </div>
                     </Zoom>
                     <Zoom>
                         <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt={'Side view of minivan after our paint correction service'} objectFit="cover" src={ext6} loading="lazy" placeholder='blur' />
+                            <Image style={{borderRadius: 16}} alt='Larger water beads on a ceramic coated vehicle' objectFit="cover" src={ext6} loading="lazy" placeholder='blur' />
                         </div>
                     </Zoom>
                     <Zoom>
                         <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt={'Angle view of van in the middle of our paint correction service'} objectFit="cover" src={ext7} loading="lazy" placeholder='blur' />
+                            <Image style={{borderRadius: 16}} alt='Ceramic coating making large water droplets on vehicle' objectFit="cover" src={ext7} loading="lazy" placeholder='blur' />
                         </div>
                     </Zoom>
                     <Zoom>
                         <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt={'Angle view of van in the middle of our paint correction service'} objectFit="cover" src={ext8} loading="lazy" placeholder='blur' />
+                            <Image style={{borderRadius: 16}} alt='Smaller water beads near edge of vehicle' objectFit="cover" src={ext8} loading="lazy" placeholder='blur' />
                         </div>
                     </Zoom>
                 </div>

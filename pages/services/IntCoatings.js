@@ -1,12 +1,16 @@
 import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 
 import { GiCarSeat, GiRolledCloth, GiSpill } from 'react-icons/gi';
 import { MdCleaningServices } from 'react-icons/md';
 import { FiSun } from 'react-icons/fi';
 
 import cover from '../../public/imgs/pageimgs/interior/IMG_20220929_155050.jpg';
+import ext1 from '../../public/imgs/pageimgs/ceramic/317895587_701820004796038_115520810281779526_n.jpg';
+import ext2 from '../../public/imgs/pageimgs/ceramic/317941187_811122646616266_4791919094544331114_n.jpg';
 
 export default function IntCoatings() {
     return (
@@ -153,12 +157,23 @@ export default function IntCoatings() {
                             </div>
                         </div>
                     </div>
-
                 </div>
-
-
-
             </div>
+
+            <h4 className='text-large'>Some examples of our Exterior Coating work so far:</h4>
+            <div className="examples-container">
+                <div className="example-img">
+                    <Zoom>
+                        <Image style={{ borderRadius: 16 }} src={ext1} alt="Side view of seat after leather ceramic coating" layout="responsive" objectFit='scale-down' placeholder='blur' />
+                    </Zoom>
+                </div>
+                <div className="example-img">
+                    <Zoom>
+                        <Image style={{ borderRadius: 16 }} src={ext2} alt="Front view of seat after leather ceramic coating" layout="responsive" objectFit='scale-down' placeholder='blur' />
+                    </Zoom>
+                </div>
+            </div>
+            <br className='extra-space' />
 
         </section>
     )
