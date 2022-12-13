@@ -21,6 +21,7 @@ export default function About() {
       </div>
       <div className="servicepage-header">
         <h1>About Us/FAQ</h1>
+        <h2 className='page-subheading'>Learn a little about us, and see our most commonly asked questions here</h2>
       </div>
 
       <section className="about-container">

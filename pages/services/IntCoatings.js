@@ -29,6 +29,7 @@ export default function IntCoatings() {
             </div>
             <div className="servicepage-header">
                 <h1>Interior Coating</h1>
+                <h2 className='page-subheading'>Let us install an interior ceramic coating in your car to save you time when cleaning up spills and other messes</h2>
                 <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
                 <p className='inline text-small'>
                     Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
@@ -40,7 +41,7 @@ export default function IntCoatings() {
                     <main className="service-main">
                         <h2 className='text-large'>Professional Interior Ceramic Coating</h2>
                         <div className="text-left">
-                            <p>Weather it's your kid spilling juice, or you spilling your morning coffee, we have all been there.  Our interior coatings provide a barrier of protection and allow you time to wipe the spill up before it seeps in.</p>
+                            <p>Weather it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe the spill up before it seeps in.</p>
                         </div>
 
                         <br className='extra-space' />

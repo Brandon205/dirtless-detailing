@@ -53,6 +53,7 @@ export default function PDLWash() {
       </div>
       <div className="servicepage-header">
         <h1>Premium Dirt-Less Wash</h1>
+        <h2 className='page-subheading'>Our Premium Wash goes above and beyond removing all contaminants from your vehicles paint</h2>
         <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
         <p className='inline text-small'>
           Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
@@ -66,6 +67,7 @@ export default function PDLWash() {
               <h2 className='text-large'>Premium Dirt-Less Wash</h2>
               <div className="text-left">
                 <p>Not only will you see a humongous difference in the appearance, but you will also be able to feel the smoothness and slickness of the paint once we're done with this service.</p>
+                <p>Both of our Dirt-Less Wash services go very in depth, cleaning areas that you won't even see on a day to day basis. Our Premium package goes even further than that by using a clay bar and iron decontamination products on the whole vehicle to remove any contaminants.</p>
                 <p>A lot of our customers love this service since it doesn't take much time to perform, but the results that you get are stellar!</p>
               </div>
 

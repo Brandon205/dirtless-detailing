@@ -45,10 +45,11 @@ export default function DLWash() {
         <link rel="canonical" href="https://www.dirtlessdetailing.com/services/DLWash" />
       </Head>
       <div className="cover">
-        <Image src={cover} alt="Vehicle after a Dirt-Less Wash" layout="fill" objectFit='cover' placeholder='blur' priority />
+        <Image src={cover} alt="Subaru after a Dirt-Less Wash" layout="fill" objectFit='cover' placeholder='blur' priority />
       </div>
       <div className="servicepage-header">
         <h1>Dirt-Less Wash</h1>
+        <h2 className='page-subheading'>Get a Dirt-Less Wash and have your vehicle shine like never before!</h2>
         <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
         <p className='inline text-small'>
           Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>

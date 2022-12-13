@@ -57,6 +57,7 @@ export default function SinglePC() {
       </div>
       <div className="servicepage-header">
         <h1>Single Stage Paint Correction</h1>
+        <h2 className='page-subheading'>Restore your vehicles paint by removing scratches and swirls</h2>
         <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
         <p className='inline text-small'>
           Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>

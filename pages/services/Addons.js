@@ -17,7 +17,7 @@ export default function Addons() {
       <Head>
         <title>Dirt-Less Add-ons | Dirt-Less Detailing</title>
         <meta property="og:title" content="Dirt-Less Add-ons | Dirt-Less Detailing" />
-        <meta name='description' property="og:description" content="Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment • Truck Bed Cleaning. Check out our popular add-ons that top off our services." />
+        <meta name='description' property="og:description" content="Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment • Truck Bed Cleaning • Debadging • Headliners • Engine Bay Cleaning." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dirtlessdetailing.com/services/Addons" />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/services/Addons" />
@@ -27,10 +27,14 @@ export default function Addons() {
       </div>
       <div className="servicepage-header">
         <h1>Dirt-Less Detailing Add-ons</h1>
+        <h2 className='page-subheading'>Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment • Truck Bed Cleaning • Debadging • Headliners • Engine Bay Cleaning.</h2>
         <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+        <p className='inline text-small'>
+          Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
+        </p>
       </div>
 
-      <h2 style={{ fontSize: 40 }}>Our Current Add-ons:</h2>
+      <h3 style={{ fontSize: 40 }}>Our Currently Offered Add-ons:</h3>
       <div className="addon-content-container">
 
         <h3 className='addons-subheading' id='exterior'>Exterior Add-ons:</h3>
@@ -126,7 +130,7 @@ export default function Addons() {
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Headliner Cleaning</p>
             <p className="secondary-text"><span>$40-$80</span></p>
-            <p className="service-desc">We will perform cleaning methods specific to your vehicles headliner material. We do this to prevent sagging and damage to the headliners. (Results may vary)</p>
+            <p className="service-desc">We will perform cleaning methods specific to your vehicles headliner material. We do this to prevent sagging and damage to the headliners. (Results may vary).</p>
             <div className='internal-links'>
               <a href="/services/FullIntEx" className="readmore">Full Interior Cleaning</a>
               <a href="/services/Bio" className="readmore">Biohazard Cleaning</a>

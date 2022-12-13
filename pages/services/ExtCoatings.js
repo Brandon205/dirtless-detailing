@@ -35,6 +35,7 @@ export default function ExtCoatings() {
             </div>
             <div className="servicepage-header">
                 <h1>Exterior Ceramic Coating</h1>
+                <h2 className='page-subheading'>Get a 5 year Ceramic Coating professionally installed by us to protect your vehicle year-round.</h2>
                 <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
                 <p className='inline text-small'>
                     Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
@@ -309,7 +310,7 @@ export default function ExtCoatings() {
             <br className='extra-space' />
 
             <h4 className='text-large'>Informational photos from IGL Coatings:</h4>
-            <strong className='subtext'>Check out more from IGL <a href='https://iglcoatingsusa.com/' target='_blank' rel='noopener' className='aside-link'>here</a>.</strong>
+            <strong className='subtext'>Check out more from our Ceramic Coating provider IGL <a href='https://iglcoatingsusa.com/' target='_blank' rel='noopener' className='aside-link'>here</a>.</strong>
             <div className='examples-container'>
                 <div className='example-img'>
                     <Zoom>

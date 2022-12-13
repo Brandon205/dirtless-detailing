@@ -50,16 +50,17 @@ export default function exteriorWash() {
         <h2 className='text-large'>Premium Dirt-Less Wash</h2>
         <div className="text-left">
           <p>Not only will you see a humongous difference in the appearance, but you will also be able to feel the smoothness and slickness of the paint once we're done with this service.</p>
+          <p>Both of our Dirt-Less Wash services go very in depth, cleaning areas that you won't even see on a day to day basis. Our Premium package goes even further than that by using a clay bar and iron decontamination products on the whole vehicle to remove any contaminants.</p>
           <p>A lot of our customers love this service since it doesn't take much time to perform, but the results that you get are stellar!</p>
         </div>
 
         <br className='extra-space' />
 
-        <h2 className='text-large'>What's the difference between the Dirt-Less Wash and the Premium Dirt-Less Wash?</h2>
+        <h2 className='text-large'>What's the difference between the regular and premium service?</h2>
         <div className="text-left">
           <p>For a more detailed side by side comparison check out the steps below.</p>
           <p>Basically with the Premium wash we go above and beyond what is done in the Dirt-Less wash. This will leave your vehicle with an even smoother finish that you can see and feel.</p>
-          <p>We will clay bar the entire vehicle to leave the vehicle smooth and to make sure the wax we apply adheres as good as possible.</p>
+          <p>We will clay bar the entire vehicle to leave the vehicle smooth and to make sure the wax we apply at the end adheres as good as possible.</p>
           <p>Then we will perform an Iron Decontamination to get any remnants that the clay bar might have missed including microscopic iron contaminants.</p>
         </div>
 
@@ -67,14 +68,14 @@ export default function exteriorWash() {
 
         <h2 className='text-large'>Truck Bed Cleaning - <span className="special-package">$25</span></h2>
         <div className="text-left">
-          <p>Typically in our washes by default we don't clean out truck beds, but if you want us to this is just the add-on for you. We will fully rinse out and clean any size truck bed.</p>
+          <p>Typically in our washes we don't clean out truck beds, but if you want us to this is just the add-on for you. We will fully rinse out and clean any size truck bed.</p>
         </div>
 
         <br className='extra-space' />
 
         <h2 className='text-large'>Engine Bay Wash - <span className="special-package">$80</span></h2>
         <div className="text-left">
-          <p>When washing engine bays we cover and take care of any and all electronics and other sensitive areas of the engine bay so there's nothing to worry about.</p>
+          <p>Give your engine bay a cleaning with this add-on. When washing engine bays we cover and take care of any and all electronics and other sensitive areas of the engine bay so there's nothing to worry about.</p>
         </div>
         <p className='text-small'>Check out more of our add-ons <a href="/services/Addons" className='aside-link'>here</a>.</p>
 

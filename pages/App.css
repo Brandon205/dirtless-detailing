@@ -644,6 +644,13 @@ input[type="range"] {
   height: 350px;
 }
 
+.page-subheading {
+  font-size: 1.5rem;
+  width: 90vw;
+  font-weight: 400;
+  margin: 0 auto 2rem auto;
+}
+
 .coating-container {
   padding: 0 1rem 2rem 1rem;
   gap: 3rem;
@@ -1030,10 +1037,13 @@ hr {
 .servicepage-header {
   position: absolute;
   color: var(--heading-clr1);
-  font-size: 1.5em;
   width: 100%;
   transform: translate(0, -75vh);
   z-index: 1;
+}
+
+.servicepage-header h1 {
+  font-size: 2.5em;
 }
 
 .servicepage-heading {
@@ -1454,10 +1464,6 @@ hr {
   text-align: center;
 }
 
-.location-header {
-  font-size: 1.5em;
-}
-
 .location-quote-btn {
   padding: 0.5rem;
   margin: 0 0 1rem 0;
@@ -1465,6 +1471,11 @@ hr {
 
 .location-quote-btn:hover {
   color: black;
+}
+
+.bg-contact {
+  background-color: var(--contact-bkg);
+  color: white;
 }
 
 .extra-space {
@@ -1514,7 +1525,8 @@ hr {
 }
 
 .columns-2 {
-  columns: 2;
+  columns: 1;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 450px) {
@@ -1571,10 +1583,6 @@ hr {
     width: 275px;
   }
 
-  .bg-contact {
-    background-color: var(--contact-bkg);
-    color: white;
-  }
 
   .center {
     display: grid;
@@ -1625,6 +1633,10 @@ hr {
   }
 
   .cities-ul {
+    columns: 2;
+  }
+
+  .columns-2 {
     columns: 2;
   }
 
@@ -1705,6 +1717,14 @@ hr {
   .map {
     width: 500px;
     height: 400px;
+  }
+
+  .page-subheading {
+    width: 70vw;
+  }
+
+  .servicepage-header h1 {
+    font-size: 3em;
   }
 
   .popular-img {

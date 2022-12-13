@@ -52,6 +52,7 @@ export default function FullIntEx() {
       </div>
       <div className="servicepage-header">
         <h1>Full Interior Cleaning</h1>
+        <h2 className='page-subheading'>Easy and hassle free thorough interior cleaning service</h2>
         <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
         <p className='inline text-small'>
           Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
@@ -68,7 +69,7 @@ export default function FullIntEx() {
                 <p>If it can be cleaned, we'll clean it. Does that mean every little stain will be removed? Unfortunately, that isn't the case. Based on the type of stain, how long it's been sitting, and the material, many stains won't come out 100%.</p>
                 <p>Of course we'll still do our best to reduce the appearance of it.</p>
                 <p>Please don't think your interior is “too dirty”. We have the necessary tools and products to get the job done. We have cleaned hundreds of interiors, of all conditions. It's not easy to surprise us.</p>
-                <p>Make it a <a href='/services/Combo' className='aside-link'>Combo</a> deal by booking a Premium Dirtless Wash, and get a free engine bay cleaning on the house!</p>
+                <p>Make it a <a href='/services/Combo' className='aside-link'>Combo</a> deal by booking with a Premium Dirt-Less Wash, and get a free <a href='/services/Addons/#engine' className='aside-link'>Engine Bay</a> cleaning on the house!</p>
               </div>
 
               <br className='extra-space' />
@@ -130,7 +131,7 @@ export default function FullIntEx() {
 
         <div className="combo-container">
           <h3 className='text-white'>Get a <span className='special-package'>FREE</span> Engine cleaning!</h3>
-          <p className="subtext">Check out our Current <a className='aside-link' href="/services/Combo">Combo</a> deal that combines this Full Interior Cleaning, our <a className='aside-link' href="/services/PDLWash">Premium Dirt-Less Wash</a>, and gives you an Engine Bay Cleaning totally on us!  </p>
+          <p className="subtext">Check out our Current <a className='aside-link' href="/services/Combo">Combo</a> deal that combines this Full Interior Cleaning, our <a className='aside-link' href="/services/PDLWash">Premium Dirt-Less Wash</a>, and gives you an Engine Bay cleaning totally on us!  </p>
         </div>
 
         <div>
