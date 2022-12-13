@@ -17,7 +17,7 @@ export default function About() {
         <link rel="canonical" href="https://www.dirtlessdetailing.com/About" />
       </Head>
       <div className="cover">
-        <Image src={cover} alt="Our Worktruck" layout="fill" objectFit='cover' priority />
+        <Image src={cover} alt="Chevrolet truck on trailer after Two Stage Paint Correction" layout="fill" objectFit='cover' priority />
       </div>
       <div className="servicepage-header">
         <h1>About Us/FAQ</h1>

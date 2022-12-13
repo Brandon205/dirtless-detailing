@@ -283,32 +283,32 @@ export default function exteriorWash() {
           </Zoom>
           <Zoom>
             <div className='gallery-image-div'>
-              <Image style={{borderRadius: 16}} alt='Spotless Lexus interior' objectFit="cover" src={ext3} loading="lazy" placeholder='blur' />
+              <Image style={{borderRadius: 16}} alt='Clean and shiny Infinity after exterior detail' objectFit="cover" src={ext3} loading="lazy" placeholder='blur' />
             </div>
           </Zoom>
           <Zoom>
             <div className='gallery-image-div'>
-              <Image style={{borderRadius: 16}} alt='Cleaned BMW interior' objectFit="cover" src={ext4} loading="lazy" placeholder='blur' />
+              <Image style={{borderRadius: 16}} alt='Washed and waxed show truck' objectFit="cover" src={ext4} loading="lazy" placeholder='blur' />
             </div>
           </Zoom>
           <Zoom>
             <div className='gallery-image-div'>
-              <Image style={{borderRadius: 16}} alt='Red truck after our paint correction service' objectFit="cover" src={ext5} loading="lazy" placeholder='blur' />
+              <Image style={{borderRadius: 16}} alt='Large GMC after our car wash service' objectFit="cover" src={ext5} loading="lazy" placeholder='blur' />
             </div>
           </Zoom>
           <Zoom>
             <div className='gallery-image-div'>
-              <Image style={{borderRadius: 16}} alt='Truck after a paint correction job' objectFit="cover" src={ext6} loading="lazy" placeholder='blur' />
+              <Image style={{borderRadius: 16}} alt='Cleaned and washed wheel and rim' objectFit="cover" src={ext6} loading="lazy" placeholder='blur' />
             </div>
           </Zoom>
           <Zoom>
             <div className='gallery-image-div'>
-              <Image style={{borderRadius: 16}} alt='Sparkling van after a paint correction job' objectFit="cover" src={ext7} loading="lazy" placeholder='blur' />
+              <Image style={{borderRadius: 16}} alt='Black car clean exterior after Premium Dirt-Less Wash' objectFit="cover" src={ext7} loading="lazy" placeholder='blur' />
             </div>
           </Zoom>
           <Zoom>
             <div className='gallery-image-div'>
-              <Image style={{borderRadius: 16}} alt='Cleaned engine bay' objectFit="cover" src={ext8} loading="lazy" placeholder='blur' />
+              <Image style={{borderRadius: 16}} alt='Lexus exterior after a car wash' objectFit="cover" src={ext8} loading="lazy" placeholder='blur' />
             </div>
           </Zoom>
         </div>

@@ -43,7 +43,7 @@ export default function Home() {
                 <link rel="canonical" href="https://www.dirtlessdetailing.com/" />
             </Head>
             <div className="maincover">
-                <Image src={cover} layout="fill" objectFit='cover' alt="Cleaned Toyota Tundra" placeholder='blur' priority />
+                <Image src={cover} layout="fill" objectFit='cover' alt="Chevrolet truck on trailer after Two Stage Paint Correction" placeholder='blur' priority />
             </div>
             <header className="home-header">
                 <div className='landing-div'>

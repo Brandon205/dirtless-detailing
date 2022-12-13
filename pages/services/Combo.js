@@ -121,17 +121,17 @@ export default function Combo() {
         <div className="examples-container">
           <div className="example-img">
             <Zoom>
-              <Image style={{ borderRadius: 16 }} src={interior} alt="seat mold before and after" layout="responsive" objectFit='cover' placeholder='blur' quality={25} />
+              <Image style={{ borderRadius: 16 }} src={interior} alt="Mazda interior after combo deal cleaning" layout="responsive" objectFit='cover' placeholder='blur' quality={25} />
             </Zoom>
           </div>
           <div className="example-img">
             <Zoom>
-              <Image style={{ borderRadius: 16 }} src={engine} alt="seatbelt mold before and after" layout="responsive" objectFit='cover' placeholder='blur' quality={25} />
+              <Image style={{ borderRadius: 16 }} src={engine} alt="Mazda engine bay after included engine bay cleaning" layout="responsive" objectFit='cover' placeholder='blur' quality={25} />
             </Zoom>
           </div>
           <div className="example-img">
             <Zoom>
-              <Image style={{ borderRadius: 16 }} src={exterior} alt="mesh net mold before and after" layout="responsive" objectFit="cover" placeholder='blur' quality={25} />
+              <Image style={{ borderRadius: 16 }} src={exterior} alt="Mazda exterior after the Premium Dirt-Less wash" layout="responsive" objectFit="cover" placeholder='blur' quality={25} />
             </Zoom>
           </div>
         </div>

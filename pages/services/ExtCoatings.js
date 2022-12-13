@@ -313,12 +313,12 @@ export default function ExtCoatings() {
             <div className='examples-container'>
                 <div className='example-img'>
                     <Zoom>
-                        <Image src={iglCircle} alt="igl coverage circle" placeholder='blur' />
+                        <Image src={iglCircle} alt="What IGL coatings protect from circle" placeholder='blur' />
                     </Zoom>
                 </div>
                 <div className='example-img'>
                     <Zoom>
-                        <Image src={kenzo} alt="kenzo graphene coating information" placeholder='blur' />
+                        <Image src={kenzo} alt="Kenzo graphene coating information" placeholder='blur' />
                     </Zoom>
                 </div>
             </div>

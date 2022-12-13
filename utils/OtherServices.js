@@ -11,9 +11,9 @@ import stage2 from '../public/imgs/pageimgs/paintCorrection/IMG_20210517_111329.
 import interiorGallery from '../public/imgs/pageimgs/interior/IMG_20220329_135221.jpg';
 import exteriorGallery from '../public/imgs/pageimgs/exterior/IMG_20210327_124515.jpg';
 import paintCorrectionGallery from '../public/imgs/pageimgs/paintCorrection/IMG_20220909_124912.jpg';
-import ceramicInt from '../public/imgs/pageimgs/interior/IMG_20220329_135252.jpg';
-import ceramicExt from '../public/imgs/pageimgs/paintCorrection/IMG_20211123_170855.jpg';
-import ceramicGallery from '../public/imgs/pageimgs/paintCorrection/IMG_20220919_100906.jpg';
+import ceramicInt from '../public/imgs/pageimgs/ceramic/317895587_701820004796038_115520810281779526_n.jpg';
+import ceramicExt from '../public/imgs/pageimgs/ceramic/318295030_1118591338675237_1649623092355474681_n.jpg';
+import ceramicGallery from '../public/imgs/pageimgs/ceramic/EW0A9472.jpg';
 
 export default function OtherServices() {
     return (
@@ -23,7 +23,7 @@ export default function OtherServices() {
             </div>
             <section className="otherservices-container">
                 <div className="service-card">
-                    <Image src={ceramicInt} alt="Vehicle after a Two Stage Paint Correction" className='otherservices-image' layout='responsive' height={450} width={450} loading='lazy' placeholder='blur' quality={1} />
+                    <Image src={ceramicInt} alt="Vehicle after an interior coating" className='otherservices-image' layout='responsive' height={450} width={450} loading='lazy' placeholder='blur' quality={15} />
                     <div className="otherservices-desc">
                         <div>
                             <a href='/services/TwoPC' className='service-heading-link'>Interior Coatings</a>
@@ -36,7 +36,7 @@ export default function OtherServices() {
                 </div>
 
                 <div className="service-card">
-                    <Image src={ceramicExt} alt="Vehicle after a Single Stage Paint Correction" className='otherservices-image' layout='responsive' height={450} width={450} loading='lazy' placeholder='blur' quality={1} />
+                    <Image src={ceramicExt} alt="Large water beads after a ceramic coating" className='otherservices-image' layout='responsive' height={450} width={450} loading='lazy' placeholder='blur' quality={15} />
                     <div className="otherservices-desc">
                         <div>
                             <a href='/services/SinglePC' className='service-heading-link'>Exterior Ceramic Coatings</a>
@@ -49,7 +49,7 @@ export default function OtherServices() {
                 </div>
 
                 <div className="service-card">
-                    <Image src={ceramicGallery} alt="van after ceramic coating" className='otherservices-image' layout='responsive' height={450} width={450} loading='lazy' placeholder='blur' quality={1} />
+                    <Image src={ceramicGallery} alt="Smaller water beads on side of vehicle after a ceramic coating" className='otherservices-image' layout='responsive' height={450} width={450} loading='lazy' placeholder='blur' quality={20} />
                     <div className="otherservices-desc text-center">
                         <div>
                             <a href='/gallery/PaintCorrectionGallery' className='service-heading-link'>CERAMIC COATING GALLERY</a>
@@ -207,7 +207,7 @@ export default function OtherServices() {
                 </div>
 
                 <div className="service-card">
-                    <Image src={paintCorrectionGallery} alt="Cleaned and corrected car" className='otherservices-image' layout='responsive' height={550} width={450} loading='lazy' objectFit='cover' placeholder='blur' quality={1} />
+                    <Image src={paintCorrectionGallery} alt="Washed and paint corrected car" className='otherservices-image' layout='responsive' height={550} width={450} loading='lazy' objectFit='cover' placeholder='blur' quality={1} />
                     <div className="otherservices-desc text-center">
                         <div>
                             <a href='/gallery/PaintCorrectionGallery' className='service-heading-link'>PAINT CORRECTION GALLERY</a>
