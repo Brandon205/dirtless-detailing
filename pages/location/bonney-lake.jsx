@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 
-import cover from '../../public/imgs/pageimgs/exterior/IMG_20221007_130043.jpg';
+import cover from '../../public/imgs/pageimgs/homepage/worktruck.webp';
 import ext1 from '../../public/imgs/pageimgs/exterior/IMG_20200722_161452.jpg';
 import ext2 from '../../public/imgs/pageimgs/exterior/IMG_20210309_092147.jpg';
 import int1 from '../../public/imgs/pageimgs/interior/IMG_20220211_135242.jpg';
@@ -41,9 +41,9 @@ export default function bonneyLake() {
             <main className="location-main">
                 <h2 className='text-large'>Professional Detailing Services in Bonney Lake Washington.</h2>
                 <div className="text-left">
-                    <p>Getting a car detailed in Bonney Lake is no problem with our mobile service. We can come to you and perform most of our services at your home or work. If we have permission to detail in the location then we can do it.</p>
+                    <p>Getting a car detailed in Bonney Lake is no problem with our close by mobile service, or even at our shop which is located in Bonney Lake! We can come to you and perform most of our services at your home or work. If we have permission to detail in the location then we can do it.</p>
                     <p>Some of our most complicated services will need a more controlled environment. Services like our <a href="/detailing/ceramic" className='aside-link'>Ceramic Coating</a> and <a href="/detailing/correction" className='aside-link'>Paint Correction</a> will benefit if done at our shop. There we have lighting and heating where we can get the conditions just right for the service.</p>
-                    <p>If you are interested in one of our more involved services Bonney Lake is our home location, so luckily for you you are nearby our shop already.</p>
+                    <p>If you are interested in one of our more involved services Bonney Lake is our home location, so lucky for you you are nearby our shop already.</p>
                 </div>
 
                 <br className='extra-space' />

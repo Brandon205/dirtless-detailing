@@ -141,7 +141,7 @@ export default function Combo() {
 
       <div>
         <h3 className='pricing-title'>Our Combo Deal Pricing</h3>
-        <h4 className='pricing-subtext'>*Final pricing may vary based on your vehicle condition, size, and whether or not you need extraction.</h4>
+        <strong className='pricing-subtext'>*Final pricing may vary based on your vehicle condition, size, and whether or not you need extraction.</strong>
         <div className="pricing-container">
           <div className="pricing-card">
             <strong className='size'>Small</strong>

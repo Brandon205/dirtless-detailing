@@ -136,7 +136,7 @@ export default function FullIntEx() {
 
         <div>
           <h3 className='pricing-title'>Our Full Interior Cleaning Pricing</h3>
-          <h4 className='pricing-subtext'>*Final pricing may vary based on your vehicle condition and size.</h4>
+          <strong className='pricing-subtext'>*Final pricing may vary based on your vehicle condition and size.</strong>
           <div className="pricing-container">
             <div className="pricing-card">
               <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Small</strong>

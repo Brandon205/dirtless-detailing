@@ -73,7 +73,7 @@ export default function buckley() {
 
             <div className='only-bg'>
                 <h3 className='pricing-title text-black'>Our Ceramic Coating Pricing</h3>
-                <h4 className='pricing-subtext'>*Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</h4>
+                <strong className='pricing-subtext'>*Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</strong>
                 <div className="pricing-container text-black">
                     <div className="pricing-card">
                         <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Small</strong>
@@ -106,13 +106,13 @@ export default function buckley() {
                         <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                     </div>
                 </div>
-                <h4 className='pricing-subtext'>For more detailed information check out our main <a href="/detailing/ceramic" className='aside-link'>Ceramic</a> page.</h4>
+                <strong className='pricing-subtext'>For more detailed information check out our main <a href="/detailing/ceramic" className='aside-link'>Ceramic</a> page.</strong>
 
             </div>
 
             <div className='only-bg'>
                 <h3 className='pricing-title text-black'>Our Interior Coating Pricing</h3>
-                <h4 className='pricing-subtext'>*Pricing does NOT include an <a href="/services/FullIntEx" className='aside-link'>Interior Cleaning</a>, which you will need to add to get a coating.</h4>
+                <strong className='pricing-subtext'>*Pricing does NOT include an <a href="/services/FullIntEx" className='aside-link'>Interior Cleaning</a>, which you will need to add to get a coating.</strong>
                 <div className='pricing-container text-black'>
                     <div className="pricing-card">
                         <strong className='size'>Fabric Coating</strong>

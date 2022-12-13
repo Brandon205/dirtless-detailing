@@ -1363,6 +1363,8 @@ hr {
 
 .pricing-subtext {
   margin-top: 0;
+  display: block;
+  margin-bottom: 1.2em;
   font-weight: 300;
   color: black;
 }

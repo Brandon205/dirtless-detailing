@@ -41,10 +41,10 @@ export default function bonneyLake() {
             <main className="location-main">
                 <h2 className='text-large'>Professional Ceramic Coatings in Bonney Lake Washington.</h2>
                 <div className="text-left">
-                    <p>Check out our main <a href="/detailing/ceramic" className='aside-link'>Ceramic</a> page for all the information you need on our ceramic coatings. For the best results on your ceramic coat we will have you drop your car off at our shop location in Bonney Lake.</p>
+                    <p>Check out our main <a href="/detailing/ceramic" className='aside-link'>Ceramic</a> page for all the information you need on our ceramic coatings. For the best results on your ceramic coat we will have you drop your car off at our shop location here in Bonney Lake.</p>
                     <p>One of the first things we do to your car is a full <a href="/services/SinglePC" className='aside-link'>Single Stage Paint Correction</a> to clean and prep your vehicle. For that service we also like to have our customers bring their vehicles to us.</p>
                     <p>Why? We want a controlled environment when applying a ceramic coat. At our shop we have lighting and temperature controls. This way we can keep an optimal temperature and the lighting helps us see and fix any imperfections on the paint.</p>
-                    <p>Our shop is about 20 minutes away from most of Bonney Lake, once there you are free to go wherever or stick around while we work.</p>
+                    <p>Bonney Lake is our home location, so lucky for you you are nearby our shop already and it won't be much of a commute!</p>
                 </div>
 
                 <br className='extra-space' />
@@ -73,7 +73,7 @@ export default function bonneyLake() {
 
             <div className='only-bg'>
                 <h3 className='pricing-title text-black'>Our Ceramic Coating Pricing</h3>
-                <h4 className='pricing-subtext'>*Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</h4>
+                <strong className='pricing-subtext'>*Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</strong>
                 <div className="pricing-container text-black">
                     <div className="pricing-card">
                         <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Small</strong>
@@ -106,13 +106,13 @@ export default function bonneyLake() {
                         <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                     </div>
                 </div>
-                <h4 className='pricing-subtext'>For more detailed information check out our main <a href="/detailing/ceramic" className='aside-link'>Ceramic</a> page.</h4>
+                <strong className='pricing-subtext'>For more detailed information check out our main <a href="/detailing/ceramic" className='aside-link'>Ceramic</a> page.</strong>
 
             </div>
 
             <div className='only-bg'>
                 <h3 className='pricing-title text-black'>Our Interior Coating Pricing</h3>
-                <h4 className='pricing-subtext'>*Pricing does NOT include an <a href="/services/FullIntEx" className='aside-link'>Interior Cleaning</a>, which you will need to add to get a coating.</h4>
+                <strong className='pricing-subtext'>*Pricing does NOT include an <a href="/services/FullIntEx" className='aside-link'>Interior Cleaning</a>, which you will need to add to get a coating.</strong>
                 <div className='pricing-container text-black'>
                     <div className="pricing-card">
                         <strong className='size'>Fabric Coating</strong>

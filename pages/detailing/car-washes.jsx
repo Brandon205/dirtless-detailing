@@ -224,7 +224,7 @@ export default function exteriorWash() {
 
       <div className='locationpage-section no-bg'>
         <h3 className='pricing-title text-black'>Our Dirt-Less Wash Pricing</h3>
-        <h4 className='pricing-subtext'>*Final pricing may vary based on your vehicle condition and size.</h4>
+        <strong className='pricing-subtext'>*Final pricing may vary based on your vehicle condition and size.</strong>
         <div className="pricing-container text-black">
           <div className="pricing-card">
             <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Small</strong>

@@ -117,7 +117,7 @@ export default function SinglePC() {
 
         <div>
           <h3 className='pricing-title'>Our Single Stage Paint Correction Pricing</h3>
-          <h4 className='pricing-subtext'>*Final pricing may vary based on your vehicle condition and size.</h4>
+          <strong className='pricing-subtext'>*Final pricing may vary based on your vehicle condition and size.</strong>
           <div className="pricing-container">
             <div className="pricing-card">
               <strong className='size'>Small</strong>
