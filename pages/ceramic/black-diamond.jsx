@@ -151,8 +151,8 @@ export default function blackDiamond() {
                 </div>
             </div>
 
-            <div className="locationpage-section no-bg">
-                <h3 className='text-large'>Check out some of the results from our interior and exterior Ceramic services.</h3>
+            <div>
+                <h3 className='text-large'>Check out some of the results from our Interior and Exterior Ceramic services.</h3>
                 <div className="gallery-container">
                     <Zoom>
                         <div className='gallery-image-div'>

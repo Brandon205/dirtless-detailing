@@ -66,7 +66,7 @@ export default function southPrairie() {
                 </div>
             </div>
 
-            <div className="locationpage-section">
+            <div>
                 <h3 className='text-large'>Check out some of the results from our services</h3>
                 <div className="gallery-container">
                     <Zoom>
