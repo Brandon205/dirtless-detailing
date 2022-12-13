@@ -54,6 +54,7 @@ export default function correction() {
                     <p>Depending on the condition, whether the vehicle is new or not, some scratches won't come all the way out. It could be the scratches are too deep to remove safely, or the clear coat itself is thinning out. (We'll take paint measurements before we start).</p>
                     <p>This is where we'll make the call on what we can safely remove from your paint. It's not just about removing as many imperfections as possible. It's also knowing when enough is enough to keep the integrity of the paint healthy.</p>
                     <p>The Level 2 paint correction is a commitment that you are making to your vehicle. If you'd like to keep the shine on your paint, you have to properly maintain the vehicle after the service is complete. If you don't properly wash and dry the vehicle, you can easily put all those swirls and scratches back into your paint after just a few washes.</p>
+                    <p>This is one of our most involved services that we offer so we'll need to perform it at our <a href='/correction/bonney-lake' className='aside-link'>shop</a> location in Bonney Lake.</p>
                 </div>
 
                 <br className='extra-space' />
