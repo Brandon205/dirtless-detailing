@@ -269,7 +269,7 @@ export default function exteriorWash() {
         </div>
       </div>
 
-      <div className="locationpage-section no-bg">
+      <div>
         <h3 className='text-large'>Check out some of the results from our exterior services</h3>
         <div className="gallery-container">
           <Zoom>
