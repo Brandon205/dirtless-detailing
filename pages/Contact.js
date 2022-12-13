@@ -4,6 +4,7 @@ import Head from 'next/head';
 import 'react-toastify/dist/ReactToastify.css';
 
 import { FaPhoneAlt, FaFacebookMessenger, FaClock } from 'react-icons/fa';
+import { AiFillGift } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import { MdOutlineEmail } from 'react-icons/md';
 import { BiLinkExternal } from 'react-icons/bi';
@@ -160,6 +161,13 @@ export default function Contact() {
                         <MdOutlineEmail className='contact-icon' />
                         <div>
                             <a className='contact-link location-link' href="mailto:brenden@dirtlessdetailing.com?subject = Schedule a Dirt-Less Detail" target="_blank" rel="noreferrer">brenden@dirtlessdetailing.com</a>
+                        </div>
+                    </div>
+                    <hr className="contact-border" />
+                    <div className='contact-icon-container'>
+                        <AiFillGift className='contact-icon' />
+                        <div>
+                            <p>Still searching for a Christmas Gift for someone? Ask us about gift certificates and we will gladly give a certificate for any one of our services!</p>
                         </div>
                     </div>
                 </div>
