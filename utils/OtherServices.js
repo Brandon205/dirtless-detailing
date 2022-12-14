@@ -13,7 +13,7 @@ import exteriorGallery from '../public/imgs/pageimgs/exterior/IMG_20210327_12451
 import paintCorrectionGallery from '../public/imgs/pageimgs/paintCorrection/IMG_20220909_124912.jpg';
 import ceramicInt from '../public/imgs/pageimgs/ceramic/317895587_701820004796038_115520810281779526_n.jpg';
 import ceramicExt from '../public/imgs/pageimgs/ceramic/318295030_1118591338675237_1649623092355474681_n.jpg';
-import ceramicGallery from '../public/imgs/pageimgs/ceramic/EW0A9472.jpg';
+import ceramicGallery from '../public/imgs/pageimgs/ceramic/fenderDrops.jpg';
 
 export default function OtherServices() {
     return (
