@@ -14,9 +14,9 @@ import iglCircle from '../../public/imgs/iglcircle.jpg';
 import kenzo from '../../public/imgs/kenzo.png';
 import ext1 from '../../public/imgs/pageimgs/ceramic/317953380_3245073689065810_496222385512149880_n.jpg';
 import ext2 from '../../public/imgs/pageimgs/ceramic/318206630_688872332864156_6250333864852484039_n.jpg';
-import ext3 from '../../public/imgs/pageimgs/ceramic/EW0A9486.JPG';
+import ext3 from '../../public/imgs/pageimgs/ceramic/EW0A9486.jpg';
 import ext4 from '../../public/imgs/pageimgs/ceramic/319282824_6026927310663439_4187208472627188697_n.jpg';
-import ext5 from '../../public/imgs/pageimgs/ceramic/EW0A9472.JPG';
+import ext5 from '../../public/imgs/pageimgs/ceramic/EW0A9472.jpg';
 
 export default function ExtCoatings() {
     return (

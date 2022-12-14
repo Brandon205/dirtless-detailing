@@ -9,10 +9,10 @@ import ext1 from '../../public/imgs/pageimgs/ceramic/317895587_701820004796038_1
 import ext2 from '../../public/imgs/pageimgs/ceramic/317941187_811122646616266_4791919094544331114_n.jpg';
 import ext3 from '../../public/imgs/pageimgs/ceramic/317953380_3245073689065810_496222385512149880_n.jpg';
 import ext4 from '../../public/imgs/pageimgs/ceramic/318206630_688872332864156_6250333864852484039_n.jpg';
-import ext5 from '../../public/imgs/pageimgs/ceramic/EW0A9486.JPG';
+import ext5 from '../../public/imgs/pageimgs/ceramic/EW0A9486.jpg';
 import ext6 from '../../public/imgs/pageimgs/ceramic/318668138_534490881683360_5498452884377282120_n.jpg';
 import ext7 from '../../public/imgs/pageimgs/ceramic/319282824_6026927310663439_4187208472627188697_n.jpg';
-import ext8 from '../../public/imgs/pageimgs/ceramic/EW0A9472.JPG';
+import ext8 from '../../public/imgs/pageimgs/ceramic/EW0A9472.jpg';
 
 export default function ceramic() {
     return (
@@ -172,7 +172,7 @@ export default function ceramic() {
 
             <div>
                 <h3 className='text-large'>Check out some of the results from our interior and exterior Ceramic services.</h3>
-                <div className="gallery-container">
+                <div className="gallery-container" style={{width: 70 + 'vw'}}>
                     <Zoom>
                         <div className='gallery-image-div'>
                             <Image style={{borderRadius: 16}} alt='Side view of seat after leather ceramic coating' objectFit="cover" src={ext1} loading="lazy" placeholder='blur' />

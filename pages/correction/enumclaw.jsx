@@ -212,7 +212,7 @@ export default function enumclaw() {
 
             <div>
                 <h3 className='text-large'>Some of the results from our Paint Correction service:</h3>
-                <div className="gallery-container">
+                <div className="gallery-container" style={{width: 70 + 'vw'}}>
                     <Zoom>
                         <div className='gallery-image-div'>
                             <Image style={{borderRadius: 16}} alt={'Black car after paint correction service'} objectFit="cover" src={ext1} loading="lazy" placeholder='blur' />

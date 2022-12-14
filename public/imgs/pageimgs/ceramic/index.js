@@ -9,7 +9,7 @@ function importAll(r) {
     return images;
 }
 
-let images = importAll(require.context('./', false, /\.(png|jpe?g|webp|JPG)$/));
+let images = importAll(require.context('./', false, /\.(png|jpe?g|webp)$/));
 
 images = Object.entries(images);
 

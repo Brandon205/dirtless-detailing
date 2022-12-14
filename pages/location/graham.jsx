@@ -68,7 +68,7 @@ export default function graham() {
 
             <div>
                 <h3 className='text-large'>Check out some of the results from our services</h3>
-                <div className="gallery-container">
+                <div className="gallery-container" style={{width: 70 + 'vw'}}>
                     <Zoom>
                         <div className='gallery-image-div'>
                             <Image style={{borderRadius: 16}} alt='Lexus Exterior after a wash' objectFit="cover" src={ext1} loading="lazy" placeholder='blur' />
