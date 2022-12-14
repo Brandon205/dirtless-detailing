@@ -1926,9 +1926,3 @@ hr {
     column-count: 4;
   }
 }
-
-@media screen and (min-width: 2000px) {
-  .servicepage-header {
-    font-size: 2.5em;
-  }
-}
