@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 
 import cover from '../../public/imgs/TwoStageCover.webp';
+import paintDefects from '../../public/imgs/pageimgs/homepage/paintDefects.png';
 
 const steps = [
   ["Wash Vehicle", "Thorough strip wash top to bottom using 2 bucket method or equivalent, including gas door."],
@@ -139,6 +142,16 @@ export default function TwoPC() {
               <p className="example-vehicle pricing-border">Large SUV's</p>
               <p className="example-vehicle pricing-border">Trucks</p>
               <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+            </div>
+          </div>
+
+          <h4 className='text-large'>Visual example of different paint defects:</h4>
+          <strong className='pricing-subtext'>This gives an example of why deeper scratches aren't removable without repainting.</strong>
+          <div className='examples-container'>
+            <div className='example-img'>
+              <Zoom>
+                <Image src={paintDefects} alt="What IGL coatings protect from circle" placeholder='blur' />
+              </Zoom>
             </div>
           </div>
 

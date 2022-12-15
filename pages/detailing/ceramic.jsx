@@ -5,6 +5,9 @@ import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 
 import cover from '../../public/imgs/pageimgs/ceramic/waterBeads.jpg';
+import iglCircle from '../../public/imgs/iglcircle.jpg';
+import kenzo from '../../public/imgs/kenzo.png';
+import iglCoating from '../../public/imgs/pageimgs/homepage/iglCoating.png';
 import ext1 from '../../public/imgs/pageimgs/ceramic/317895587_701820004796038_115520810281779526_n.jpg';
 import ext2 from '../../public/imgs/pageimgs/ceramic/317941187_811122646616266_4791919094544331114_n.jpg';
 import ext3 from '../../public/imgs/pageimgs/ceramic/317953380_3245073689065810_496222385512149880_n.jpg';
@@ -169,6 +172,28 @@ export default function ceramic() {
                     </ul>
                 </div>
             </div>
+
+            <h4 className='text-large'>Informational photos from IGL:</h4>
+            <strong className='pricing-subtext'>Check out more from our Ceramic Coating provider IGL <a href='https://iglcoatingsusa.com/' target='_blank' rel='noopener' className='aside-link'>here</a>.</strong>
+            <div className='examples-container'>
+                <div className='example-img'>
+                    <Zoom>
+                        <Image src={iglCircle} alt="What IGL coatings protect from circle" placeholder='blur' />
+                    </Zoom>
+                </div>
+                <div className='example-img'>
+                    <Zoom>
+                        <Image src={iglCoating} alt="Igl protection example" placeholder='blur' />
+                    </Zoom>
+                </div>
+                <div className='example-img'>
+                    <Zoom>
+                        <Image src={kenzo} alt="Kenzo graphene coating information" placeholder='blur' />
+                    </Zoom>
+                </div>
+            </div>
+
+            <br className="extra-space" />
 
             <div>
                 <h3 className='text-large'>Check out some of the results from our interior and exterior Ceramic services.</h3>

@@ -47,7 +47,7 @@ export default function Home() {
             </div>
             <header className="home-header">
                 <div className='landing-div'>
-                    <h1 className='title-top'>Your Bonney Lake <span className='title-bottom'>Detailing Specialists</span></h1>
+                    <h1 className='title-top'>Your Bonney Lake <span className='title-bottom'>Detailing/Ceramic Coating Specialists</span></h1>
 
                     <div className="header-icons-container">
                         <div>
@@ -67,7 +67,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <p className='dd-desc'>We also offer a mobile service free of charge on select packages!</p>
+                    <p className='dd-desc'>We also offer a mobile service <span className='special-package'>FREE</span> of charge on select packages!</p>
 
                     <div style={{display: 'flex', alignItems: 'center', gap: 32}}>
                         <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="noopener"><img src="https://seal-alaskaoregonwesternwashington.bbb.org/seals/blue-seal-160-82-bbb-1000135733.png" style={{border: 0}} alt="Dirt-Less Detailing BBB Business Review" /></a>
