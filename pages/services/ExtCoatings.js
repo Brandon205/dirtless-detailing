@@ -96,106 +96,8 @@ export default function ExtCoatings() {
 
                         <br className='extra-space' />
                     </main>
-
-                    <h2 className='coating-heading'>Protect Package</h2>
-                    <p className='package-desc subtext'>The Protect package will cover and protect the most essential parts of your car with a 5 year ceramic coating.</p>
-                    <div className='package-container'>
-                        <div className='package-details'>
-                            <RiPaintFill className='package-icon' />
-                            <h4>Paint Covered</h4>
-                            <p className='subtext'>All of the paint on the exterior will be coated with IGL's Kenzo Graphene 10H coating.</p>
-                        </div>
-                        <div className='package-details'>
-                            <BiCar className='package-icon' />
-                            <h4>Coat Windshield and Lights</h4>
-                            <p className='subtext'>The windshield and lights are the 2 next most essential things after paint to coat when giving your vehicle a ceramic coating.</p>
-                        </div>
-                        <div className='package-details'>
-                            <SiAdguard className='package-icon' />
-                            <h4>Lifetime Warranty<span className='special-package'>*</span><br />or 5 years or 50,000 miles</h4>
-                            <p className='subtext'>After your first coating if you follow through with our monthly maintenance your Ceramic coating has a lifetime guarantee through us.</p>
-                        </div>
-                    </div>
-
-                    <h2 className='coating-heading'>Protect<span className='special-package'>+</span> Package</h2>
-                    <p className='package-desc subtext'>The Protect+ package will cover and protect your whole vehicle with a 5 year Ceramic Coating.</p>
-                    <div className='package-container'>
-                        <div className='package-details'>
-                            <RiPaintFill className='package-icon' />
-                            <h4>Paint Covered</h4>
-                            <p className='subtext'>All of the paint on the exterior will be coated with IGL's Kenzo Graphene 10H coating.</p>
-                        </div>
-                        <div className='package-details'>
-                            <FaCar className='package-icon' />
-                            <h4>Coat Trim, Glass, Lights, and Wheel Faces</h4>
-                            <p className='subtext'>We will cover nearly the entire exterior of your vehicle, ensuring that it is completely protected all around.</p>
-                        </div>
-                        <div className='package-details'>
-                            <SiAdguard className='package-icon' />
-                            <h4>Lifetime Warranty<span className='special-package'>*</span><br />or 5 years or 50,000 miles</h4>
-                            <p className='subtext'>Our Protect+ package also comes with a lifetime warranty if you follow through with our monthly maintenance.</p>
-                        </div>
-                    </div>
-                    <p><span className='special-package'>*</span>Must follow maintenance procedures to qualify for our warranties.</p>
-
-                    <div>
-                        <h3 className='pricing-title text-white'>Our Ceramic Coating Pricing</h3>
-                        <h4 className='subtext'>*Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</h4>
-                        <div className="pricing-container text-black">
-                            <div className="pricing-card">
-                                <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Small</strong>
-                                <strong className='size'>Protect</strong>
-                                <p className="pricing-price pricing-border">$1,000</p>
-                                <strong className='size'>Protect<span className="special-package">+</span></strong>
-                                <p className="pricing-price pricing-border">$1,500</p>
-                                <p className="example-vehicle pricing-border">2-Door Coupes</p>
-                                <p className="example-vehicle pricing-border">Single/Extended Cabs</p>
-                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                            </div>
-                            <div className="pricing-card">
-                                <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Medium</strong>
-                                <strong className='size'>Protect</strong>
-                                <p className="pricing-price pricing-border">$1,200</p>
-                                <strong className='size'>Protect<span className="special-package">+</span></strong>
-                                <p className="pricing-price pricing-border">$1,700</p>
-                                <p className="example-vehicle pricing-border">4 Door Vehicles</p>
-                                <p className="example-vehicle pricing-border">Smaller SUV's</p>
-                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                            </div>
-                            <div className="pricing-card">
-                                <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Large</strong>
-                                <strong className='size'>Protect</strong>
-                                <p className="pricing-price pricing-border">$1,400</p>
-                                <strong className='size'>Protect<span className="special-package">+</span></strong>
-                                <p className="pricing-price pricing-border">$1,900</p>
-                                <p className="example-vehicle pricing-border">Larger Trucks</p>
-                                <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
-                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div id='faq'>
-                        <h3 style={{ fontSize: 2 + 'em' }}>Ceramic Coating FAQ</h3>
-                        <ul className='faq-ul'>
-                            <li className='faq-li'>How long does it last?</li>
-                            <li className='faq-p'>The paint coating should last 5 years, 50,000 miles, or a Lifetime<span className='special-package'>*</span> with our warranty. The coating on any trim, glass, lights, or wheels will last 1 year approximately.</li>
-
-                            <li className='faq-li'>Can I still go through car washes?</li>
-                            <li className='faq-p'>If you want to keep the ceramic coat in good condition and have it last as long as possible, you won't want to go through any car washes even touch-less ones.</li>
-
-                            <li className='faq-li'>How should I wash my car then?</li>
-                            <li className='faq-p'>For washing your coated vehicle you have a couple of options. Hand washing with our recommended products and techniques, or you can simply schedule monthly maintenance through us!</li>
-
-                            <li className='faq-li'>How does the 5 year warranty work?</li>
-                            <li className='faq-p'>If we do our yearly maintenance on the vehicle we guarantee that the ceramic coat will last 5 years or more.</li>
-
-                            <li className='faq-li'>How does the Lifetime warranty work?</li>
-                            <li className='faq-p'>Your vehicles paint coating is guaranteed for life as long as you are on our monthly maintenance schedule. If you ever wish to cancel monthly maintenance, the remainder of your 5 year 50,000 mile warranty you had before takes effect.</li>
-                        </ul>
-                    </div>
                 </div>
+
                 <div className="coating-right">
 
                     <div className='aside-container'>
@@ -278,6 +180,112 @@ export default function ExtCoatings() {
                         </div>
                     </div>
                 </div>
+
+            </div>
+
+            <div style={{ padding: 2 + 'rem' }}>
+                <h2 className='coating-heading'>Protect Package</h2>
+                <p className='package-desc subtext'>The Protect package will cover and protect the most essential parts of your car with a 5 year ceramic coating.</p>
+                <div className='package-container'>
+                    <div className='package-details'>
+                        <RiPaintFill className='package-icon' />
+                        <h4>Paint Covered</h4>
+                        <p className='subtext'>All of the paint on the exterior will be coated with IGL's Kenzo Graphene 10H coating.</p>
+                    </div>
+                    <div className='package-details'>
+                        <BiCar className='package-icon' />
+                        <h4>Coat Windshield and Lights</h4>
+                        <p className='subtext'>The windshield and lights are the 2 next most essential things after paint to coat when giving your vehicle a ceramic coating.</p>
+                    </div>
+                    <div className='package-details'>
+                        <SiAdguard className='package-icon' />
+                        <h4>Lifetime Warranty<span className='special-package'>*</span><br />or 5 years or 50,000 miles</h4>
+                        <p className='subtext'>After your first coating if you follow through with our monthly maintenance your Ceramic coating has a lifetime guarantee through us.</p>
+                    </div>
+                </div>
+
+                <br className='extra-space' />
+
+                <h2 className='coating-heading'>Protect<span className='special-package'>+</span> Package</h2>
+                <p className='package-desc subtext'>The Protect+ package will cover and protect your whole vehicle with a 5 year Ceramic Coating.</p>
+                <div className='package-container'>
+                    <div className='package-details'>
+                        <RiPaintFill className='package-icon' />
+                        <h4>Paint Covered</h4>
+                        <p className='subtext'>All of the paint on the exterior will be coated with IGL's Kenzo Graphene 10H coating.</p>
+                    </div>
+                    <div className='package-details'>
+                        <FaCar className='package-icon' />
+                        <h4>Coat Trim, Glass, Lights, and Wheel Faces</h4>
+                        <p className='subtext'>We will cover nearly the entire exterior of your vehicle, ensuring that it is completely protected all around.</p>
+                    </div>
+                    <div className='package-details'>
+                        <SiAdguard className='package-icon' />
+                        <h4>Lifetime Warranty<span className='special-package'>*</span><br />or 5 years or 50,000 miles</h4>
+                        <p className='subtext'>Our Protect+ package also comes with a lifetime warranty if you follow through with our monthly maintenance.</p>
+                    </div>
+                </div>
+                <p><span className='special-package'>*</span>Must follow maintenance procedures to qualify for our warranties.</p>
+
+                <br className='extra-space' />
+
+                <div>
+                    <h3 className='pricing-title text-white'>Our Ceramic Coating Pricing</h3>
+                    <h4 className='subtext'>*Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</h4>
+                    <div className="pricing-container text-black">
+                        <div className="pricing-card">
+                            <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Small</strong>
+                            <strong className='size'>Protect</strong>
+                            <p className="pricing-price pricing-border">$1,000</p>
+                            <strong className='size'>Protect<span className="special-package">+</span></strong>
+                            <p className="pricing-price pricing-border">$1,500</p>
+                            <p className="example-vehicle pricing-border">2-Door Coupes</p>
+                            <p className="example-vehicle pricing-border">Single/Extended Cabs</p>
+                            <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                        </div>
+                        <div className="pricing-card">
+                            <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Medium</strong>
+                            <strong className='size'>Protect</strong>
+                            <p className="pricing-price pricing-border">$1,200</p>
+                            <strong className='size'>Protect<span className="special-package">+</span></strong>
+                            <p className="pricing-price pricing-border">$1,700</p>
+                            <p className="example-vehicle pricing-border">4 Door Vehicles</p>
+                            <p className="example-vehicle pricing-border">Smaller SUV's</p>
+                            <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                        </div>
+                        <div className="pricing-card">
+                            <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Large</strong>
+                            <strong className='size'>Protect</strong>
+                            <p className="pricing-price pricing-border">$1,400</p>
+                            <strong className='size'>Protect<span className="special-package">+</span></strong>
+                            <p className="pricing-price pricing-border">$1,900</p>
+                            <p className="example-vehicle pricing-border">Larger Trucks</p>
+                            <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
+                            <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id='faq'>
+                    <h3 style={{ fontSize: 2 + 'em' }}>Ceramic Coating FAQ</h3>
+                    <ul className='faq-ul'>
+                        <li className='faq-li'>How long does it last?</li>
+                        <li className='faq-p'>The paint coating should last 5 years, 50,000 miles, or a Lifetime<span className='special-package'>*</span> with our warranty. The coating on any trim, glass, lights, or wheels will last 1 year approximately.</li>
+
+                        <li className='faq-li'>Can I still go through car washes?</li>
+                        <li className='faq-p'>If you want to keep the ceramic coat in good condition and have it last as long as possible, you won't want to go through any car washes even touch-less ones.</li>
+
+                        <li className='faq-li'>How should I wash my car then?</li>
+                        <li className='faq-p'>For washing your coated vehicle you have a couple of options. Hand washing with our recommended products and techniques, or you can simply schedule monthly maintenance through us!</li>
+
+                        <li className='faq-li'>How does the 5 year warranty work?</li>
+                        <li className='faq-p'>If we do our yearly maintenance on the vehicle we guarantee that the ceramic coat will last 5 years or more.</li>
+
+                        <li className='faq-li'>How does the Lifetime warranty work?</li>
+                        <li className='faq-p'>Your vehicles paint coating is guaranteed for life as long as you are on our monthly maintenance schedule. If you ever wish to cancel monthly maintenance, the remainder of your 5 year 50,000 mile warranty you had before takes effect.</li>
+                    </ul>
+                </div>
             </div>
 
             <h4 className='text-large'>Some examples of our Exterior Coating work so far:</h4>
@@ -329,6 +337,30 @@ export default function ExtCoatings() {
                     </Zoom>
                 </div>
             </div>
+
+            <br className='extra-space' />
+
+            <div>
+                <strong className='text-medium'>We'll help customers from all over get a ceramic coating on their vehicle, however, most of our customers come to our shop from these areas:</strong>
+                <div style={{ display: 'grid', placeItems: 'center' }}>
+                    <ul className='cities-ul'>
+                        <li><a href='/ceramic/bonney-lake' className='aside-link'>Bonney Lake</a></li>
+                        <li><a href='/ceramic/buckley' className='aside-link'>Buckley</a></li>
+                        <li><a href='/ceramic/sumner' className='aside-link'>Sumner</a></li>
+                        <li><a href='/ceramic/enumclaw' className='aside-link'>Enumclaw</a></li>
+                        <li><a href='/ceramic/puyallup' className='aside-link'>Puyallup</a></li>
+                        <li><a href='/ceramic/federal-way' className='aside-link'>Federal Way</a></li>
+                        <li><a href='/ceramic/orting' className='aside-link'>Orting</a></li>
+                        <li><a href='/ceramic/south-prairie' className='aside-link'>South Prairie</a></li>
+                        <li><a href='/ceramic/black-diamond' className='aside-link'>Black Diamond</a></li>
+                        <li><a href='/ceramic/milton' className='aside-link'>Milton</a></li>
+                        <li><a href='/ceramic/edgewood' className='aside-link'>Edgewood</a></li>
+                        <li><a href='/ceramic/graham' className='aside-link'>Graham</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <br className='extra-space' />
 
         </section>
     )
