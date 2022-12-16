@@ -269,7 +269,7 @@ export default function correction() {
                     </Zoom>
                 </div>
             </div>
-            <h3>See more on our <a href="/gallery/PaintCorrection" className='aside-link'>Paint Correction Gallery</a> page.</h3>
+            <h3>See more on our <a href="/gallery/PaintCorrectionGallery" className='aside-link'>Paint Correction Gallery</a> page.</h3>
             <a href="/Contact" className="quote-btn location-quote-btn">Get a Quote Today!</a>
 
         </div> 
