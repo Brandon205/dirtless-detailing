@@ -69,8 +69,8 @@ export default function Home() {
 
                     <p className='dd-desc'>We also offer a mobile service <span className='special-package'>FREE</span> of charge on select packages!</p>
 
-                    <div style={{display: 'flex', alignItems: 'center', gap: 32}}>
-                        <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="noopener"><img src="https://seal-alaskaoregonwesternwashington.bbb.org/seals/blue-seal-160-82-bbb-1000135733.png" style={{border: 0}} alt="Dirt-Less Detailing BBB Business Review" /></a>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 32 }}>
+                        <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="noopener"><img src="https://seal-alaskaoregonwesternwashington.bbb.org/seals/blue-seal-160-82-bbb-1000135733.png" style={{ border: 0 }} alt="Dirt-Less Detailing BBB Business Review" /></a>
                         <a href="https://iglcoatingsusa.com/" target="_blank" rel="noopener"><Image src={kenzo} width={smallScreen ? 100 : 135} height={smallScreen ? 100 : 135} alt="igl kenzo coatings" /></a>
                     </div>
 
@@ -82,7 +82,7 @@ export default function Home() {
             <div id="popular-services" className='separator-container'>
                 <h2 className="service-title">POPULAR DETAILING SERVICES</h2>
             </div>
-            
+
             <PopularServices />
 
             <a href="/Contact" className="quote-btn main-quote-btn popular-quote-btn">Get a Quote</a>
@@ -138,26 +138,26 @@ export default function Home() {
             <section className='mobileservices-container'>
                 <div className="locations">
                     <h3>We currently provide mobile services to the following cities:</h3>
-                    <div style={{display: 'grid', placeItems: 'center'}}>
+                    <div style={{ display: 'grid', placeItems: 'center' }}>
                         <ul className='cities-ul'>
-                            <li>Bonney Lake</li>
-                            <li>Buckley</li>
-                            <li>Sumner</li>
-                            <li>Enumclaw</li>
-                            <li>Puyallup</li>
-                            <li>Federal Way</li>
-                            <li>Orting</li>
-                            <li>South Prairie</li>
-                            <li>Black Diamond</li>
-                            <li>Milton</li>
-                            <li>Edgewood</li>
-                            <li>Graham</li>
+                            <li><a href='/location/bonney-lake' className='aside-link'>Bonney Lake</a></li>
+                            <li><a href='/location/buckley' className='aside-link'>Buckley</a></li>
+                            <li><a href='/location/sumner' className='aside-link'>Sumner</a></li>
+                            <li><a href='/location/enumclaw' className='aside-link'>Enumclaw</a></li>
+                            <li><a href='/location/puyallup' className='aside-link'>Puyallup</a></li>
+                            <li><a href='/location/federal-way' className='aside-link'>Federal Way</a></li>
+                            <li><a href='/location/orting' className='aside-link'>Orting</a></li>
+                            <li><a href='/location/south-prairie' className='aside-link'>South Prairie</a></li>
+                            <li><a href='/location/black-diamond' className='aside-link'>Black Diamond</a></li>
+                            <li><a href='/location/milton' className='aside-link'>Milton</a></li>
+                            <li><a href='/location/edgewood' className='aside-link'>Edgewood</a></li>
+                            <li><a href='/location/graham' className='aside-link'>Graham</a></li>
                         </ul>
                     </div>
                     <h3>As part of our simple and hassle free service, you can come to us or we can come to you with select packages!</h3>
                 </div>
                 <div className='map'>
-                    <iframe width={smallScreen ? '250' : '500'} height={smallScreen ? '300' : '400'} style={{border:0}} loading="lazy" src={`https://www.google.com/maps/embed/v1/place?zoom=15&q=place_id:ChIJxxfUWqz7kFQRotRs8MwWDRE&key=${process.env.GOOGLE_MAPS}`}></iframe> 
+                    <iframe width={smallScreen ? '250' : '500'} height={smallScreen ? '300' : '400'} style={{ border: 0 }} loading="lazy" src={`https://www.google.com/maps/embed/v1/place?zoom=15&q=place_id:ChIJxxfUWqz7kFQRotRs8MwWDRE&key=${process.env.GOOGLE_MAPS}`}></iframe>
                 </div>
             </section>
         </div>
