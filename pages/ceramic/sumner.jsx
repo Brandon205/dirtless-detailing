@@ -65,7 +65,7 @@ export default function sumner() {
 
                 <h2 className='text-large'>Professional Interior Coatings in Sumner Washington</h2>
                 <div className="text-left">
-                    <p>Whether it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe any spill up before it seeps in. Get more info <a href="/services/IntCoatings" className='aside-link'>here</a>.</p>
+                    <p>Whether it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe any spill up before it seeps in. Get more info on our <a href="/services/IntCoatings" className='aside-link'>Interior Coating</a> page.</p>
                 </div>
 
                 <br className='extra-space' />

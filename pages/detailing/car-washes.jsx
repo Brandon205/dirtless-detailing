@@ -77,7 +77,7 @@ export default function exteriorWash() {
         <div className="text-left">
           <p>Give your engine bay a cleaning with this add-on. When washing engine bays we cover and take care of any and all electronics and other sensitive areas of the engine bay so there's nothing to worry about.</p>
         </div>
-        <p className='text-small'>Check out more of our add-ons <a href="/services/Addons" className='aside-link'>here</a>.</p>
+        <p className='text-small'>Check out our <a href="/services/Addons" className='aside-link'>Add-ons</a> page to see more of our add-on offers.</p>
 
         <br className='extra-space' />
       </main>

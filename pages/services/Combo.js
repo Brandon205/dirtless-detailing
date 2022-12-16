@@ -65,7 +65,7 @@ export default function Combo() {
                   </div>
                   <div className="step-container">
                     <h4 className="step-title">Engine Bay Cleaning</h4>
-                    <p className='step-desc'>We will then clean out the engine bay, continuing to clean from the inside of the vehicle out, so that the exterior will be spotless at the end. More information for the engine cleaning is posted <a href='/services/Addons/#engine' className='aside-link'>here</a>.</p>
+                    <p className='step-desc'>We will then clean out the engine bay, continuing to clean from the inside of the vehicle out, so that the exterior will be spotless at the end. More information for the engine cleaning is posted on our <a href='/services/Addons/#engine' className='aside-link'>Add-ons</a> page.</p>
                   </div>
                 </li>
 

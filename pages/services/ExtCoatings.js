@@ -91,7 +91,7 @@ export default function ExtCoatings() {
 
                         <h2 className='text-large'>Professional Interior Coatings</h2>
                         <div className="text-left">
-                            <p>Whether it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe any spill up before it seeps in. Get more info <a href="/services/IntCoatings" className='aside-link'>here</a>.</p>
+                            <p>Whether it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe any spill up before it seeps in. Get more info on our <a href="/services/IntCoatings" className='aside-link'>Interior Coating</a> page.</p>
                         </div>
 
                         <br className='extra-space' />
@@ -311,7 +311,7 @@ export default function ExtCoatings() {
             <br className='extra-space' />
 
             <h4 className='text-large'>Informational photos from IGL:</h4>
-            <strong className='subtext'>Check out more from our Ceramic Coating provider IGL <a href='https://iglcoatingsusa.com/' target='_blank' rel='noopener' className='aside-link'>here</a>.</strong>
+            <strong className='subtext'>Check out more from our Ceramic Coating provider <a href='https://iglcoatingsusa.com/' target='_blank' rel='noopener' className='aside-link'>IGL</a>.</strong>
             <div className='examples-container'>
                 <div className='example-img'>
                     <Zoom>
