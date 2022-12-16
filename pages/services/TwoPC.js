@@ -48,7 +48,7 @@ export default function TwoPC() {
       <Head>
         <title>Two Stage Paint Correction | Dirt-Less Detailing</title>
         <meta property="og:title" content="Two Stage Paint Correction | Dirt-Less Detailing" />
-        <meta property="description" content="Our Two Stage Paint Correction is for vehicles that are to be spotless and have a beautiful shine. This service will get them there." />
+        <meta name="description" content="Our Two Stage Paint Correction is for vehicles that are to be spotless and have a beautiful shine. This service will get them there." />
         <meta property="og:description" content="Our Two Stage Paint Correction is for vehicles that are to be spotless and have a beautiful shine. This service will get them there." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dirtlessdetailing.com/services/TwoPC" />

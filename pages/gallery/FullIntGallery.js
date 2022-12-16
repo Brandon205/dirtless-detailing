@@ -11,7 +11,7 @@ export default function FullIntGallery() {
       <Head>
         <title>Full Interior Gallery | Dirt-Less Detailing</title>
         <meta property="og:title" content="Full Interior Gallery | Dirt-Less Detailing" />
-        <meta property="description" content="Check out some of the images before and after our Full Interior Cleaning to see the difference!" />
+        <meta name="description" content="Check out some of the images before and after our Full Interior Cleaning to see the difference!" />
         <meta property="og:description" content="Check out some of the images before and after our Full Interior Cleaning to see the difference!" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dirtlessdetailing.com/gallery/FullIntGallery" />

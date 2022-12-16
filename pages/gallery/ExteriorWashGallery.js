@@ -12,7 +12,7 @@ export default function PaintCorrectionGallery() {
       <Head>
         <title>Car Wash Gallery | Dirt-Less Detailing</title>
         <meta property="og:title" content="Car Wash Gallery | Dirt-Less Detailing" />
-        <meta property="description" content="Check out some photos from both our Dirt-Less and Premium Dirt-Less washes here." />
+        <meta name="description" content="Check out some photos from both our Dirt-Less and Premium Dirt-Less washes here." />
         <meta property="og:description" content="Check out some photos from both our Dirt-Less and Premium Dirt-Less washes here." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dirtlessdetailing.com/gallery/ExteriorWashGallery" />

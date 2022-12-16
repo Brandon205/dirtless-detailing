@@ -25,7 +25,7 @@ export default function ExtCoatings() {
             <Head>
                 <title>Exterior Ceramic Coatings | Dirt-Less Detailing</title>
                 <meta property="og:title" content="Exterior Ceramic Coatings | Dirt-Less Detailing" />
-                <meta property="description" content="Ensure that your vehicle is protected through us with our exterior Ceramic Coating services." />
+                <meta name="description" content="Ensure that your vehicle is protected through us with our exterior Ceramic Coating services." />
                 <meta property="og:description" content="Ensure that your vehicle is protected through us with our exterior Ceramic Coating services." />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://www.dirtlessdetailing.com/services/ExtCoatings" />

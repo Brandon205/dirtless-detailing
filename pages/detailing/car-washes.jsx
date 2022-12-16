@@ -20,7 +20,7 @@ export default function exteriorWash() {
       <Head>
         <title>Car Wash Services | Dirt-Less Detailing</title>
         <meta property="og:title" content="Car Wash Services | Dirt-Less Detailing" />
-        <meta property="description" content="Come see our car wash services that we provide, they will leave your vehicle washed and protected." />
+        <meta name="description" content="Come see our car wash services that we provide, they will leave your vehicle washed and protected." />
         <meta property="og:description" content="Come see our car wash services that we provide, they will leave your vehicle washed and protected." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dirtlessdetailing.com/detailing/car-washes" />

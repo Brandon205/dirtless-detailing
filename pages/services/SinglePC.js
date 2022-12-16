@@ -49,7 +49,7 @@ export default function SinglePC() {
       <Head>
         <title>Single Stage Paint Correction | Dirt-Less Detailing</title>
         <meta property="og:title" content="Single Stage Paint Correction | Dirt-Less Detailing" />
-        <meta property="description" content="Our Single Stage Paint Correction should fix most of your Paint Correction needs, leaving your paint nearly scratch free!" />
+        <meta name="description" content="Our Single Stage Paint Correction should fix most of your Paint Correction needs, leaving your paint nearly scratch free!" />
         <meta property="og:description" content="Our Single Stage Paint Correction should fix most of your Paint Correction needs, leaving your paint nearly scratch free!" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dirtlessdetailing.com/services/SinglePC" />

@@ -20,7 +20,7 @@ export default function correction() {
             <Head>
                 <title>Paint Correction Services | Dirt-Less Detailing</title>
                 <meta property="og:title" content="Paint Correction Services | Dirt-Less Detailing" />
-                <meta property="description" content="Check out our Single and Two Stage paint correction to fix any scratches or swirls in your paint." />
+                <meta name="description" content="Check out our Single and Two Stage paint correction to fix any scratches or swirls in your paint." />
                 <meta property="og:description" content="Check out our Single and Two Stage paint correction to fix any scratches or swirls in your paint." />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://www.dirtlessdetailing.com/detailing/correction" />

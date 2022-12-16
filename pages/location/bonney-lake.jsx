@@ -20,7 +20,7 @@ export default function bonneyLake() {
             <Head>
                 <title>Vehicle Detailing in Bonney Lake | Dirt-Less Detailing</title>
                 <meta property="og:title" content="Vehicle Detailing in Bonney Lake | Dirt-Less Detailing" />
-                <meta property="description" content="Interior • Exterior • Ceramic Coating • Paint Correction. Check out our top auto detailing services for Bonney Lake Washington" />
+                <meta name="description" content="Interior • Exterior • Ceramic Coating • Paint Correction. Check out our top auto detailing services for Bonney Lake Washington" />
                 <meta property="og:description" content="Interior • Exterior • Ceramic Coating • Paint Correction. Check out our top auto detailing services for Bonney Lake Washington" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://www.dirtlessdetailing.com/location/bonney-lake" />

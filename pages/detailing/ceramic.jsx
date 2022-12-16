@@ -23,7 +23,7 @@ export default function ceramic() {
             <Head>
                 <title>Kenzo Graphene Ceramic Coatings | Dirt-Less Detailing</title>
                 <meta property="og:title" content="Kenzo Graphene Ceramic Coatings | Dirt-Less Detailing" />
-                <meta property="description" content="Want a high quality 10H ceramic coating to protect your car? Check out our offers on IGL graphene ceramic coatings." />
+                <meta name="description" content="Want a high quality 10H ceramic coating to protect your car? Check out our offers on IGL graphene ceramic coatings." />
                 <meta property="og:description" content="Want a high quality 10H ceramic coating to protect your car? Check out our offers on IGL graphene ceramic coatings." />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://www.dirtlessdetailing.com/detailing/ceramic" />

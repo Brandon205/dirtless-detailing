@@ -10,7 +10,7 @@ export default function About() {
       <Head>
         <title>About Us / FAQ | Dirt-Less Detailing</title>
         <meta property="og:title" content="About Us / FAQ | Dirt-Less Detailing" />
-        <meta property="description" content="Find out who we are, and get answers to some of our most frequently asked questions." />
+        <meta name="description" content="Find out who we are, and get answers to some of our most frequently asked questions." />
         <meta property="og:description" content="Find out who we are, and get answers to some of our most frequently asked questions." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dirtlessdetailing.com/About" />

@@ -11,7 +11,7 @@ export default function PaintCorrectionGallery() {
       <Head>
         <title>Paint Correction Gallery | Dirt-Less Detailing</title>
         <meta property="og:title" content="Paint Correction Gallery | Dirt-Less Detailing" />
-        <meta property="description" content="Paint Correction Photos • Here are some examples from both our Single and Two Stage Paint Correction services!" />
+        <meta name="description" content="Paint Correction Photos • Here are some examples from both our Single and Two Stage Paint Correction services!" />
         <meta property="og:description" content="Paint Correction Photos • Here are some examples from both our Single and Two Stage Paint Correction services!" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dirtlessdetailing.com/gallery/PaintCorrectionGallery" />

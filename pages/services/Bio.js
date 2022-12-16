@@ -42,7 +42,7 @@ export default function Bio() {
       <Head>
         <title>Biohazard Cleaning | Dirt-Less Detailing</title>
         <meta property="og:title" content="Biohazard Cleaning | Dirt-Less Detailing" />
-        <meta property="description" content="Smokers Car • Biohazard Cleaning • Odor Removal - See what we can do if your car has unwanted odors or smells" />
+        <meta name="description" content="Smokers Car • Biohazard Cleaning • Odor Removal - See what we can do if your car has unwanted odors or smells" />
         <meta property="og:description" content="Smokers Car • Biohazard Cleaning • Odor Removal - See what we can do if your car has unwanted odors or smells" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dirtlessdetailing.com/services/Bio" />

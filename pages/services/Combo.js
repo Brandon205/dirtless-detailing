@@ -16,7 +16,7 @@ export default function Combo() {
       <Head>
         <title>Interior and Exterior Combo | Dirt-Less Detailing</title>
         <meta property="og:title" content="Interior and Exterior Combo | Dirt-Less Detailing" />
-        <meta property="description" content="Full Interior Cleaning + Premium Dirt-Less Wash Combo. Get a FREE engine bay cleaning when booking this Combo Deal!" />
+        <meta name="description" content="Full Interior Cleaning + Premium Dirt-Less Wash Combo. Get a FREE engine bay cleaning when booking this Combo Deal!" />
         <meta property="og:description" content="Full Interior Cleaning + Premium Dirt-Less Wash Combo. Get a FREE engine bay cleaning when booking this Combo Deal!" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dirtlessdetailing.com/services/Combo" />

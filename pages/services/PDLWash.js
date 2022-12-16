@@ -42,7 +42,7 @@ export default function PDLWash() {
       <Head>
         <title>Premium Car Wash | Dirt-Less Detailing</title>
         <meta property="og:title" content="Premium Car Wash | Dirt-Less Detailing" />
-        <meta property="description" content="Our Premium Dirt-Less Wash will go above and beyond what our base tier offers, and is sure to get everything off your vehicles exterior!" />
+        <meta name="description" content="Our Premium Dirt-Less Wash will go above and beyond what our base tier offers, and is sure to get everything off your vehicles exterior!" />
         <meta property="og:description" content="Our Premium Dirt-Less Wash will go above and beyond what our base tier offers, and is sure to get everything off your vehicles exterior!" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dirtlessdetailing.com/services/PDLWash" />

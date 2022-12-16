@@ -20,7 +20,7 @@ export default function federalWay() {
             <Head>
                 <title>Ceramic Coating in Federal Way | Dirt-Less Detailing</title>
                 <meta property="og:title" content="Ceramic Coating in Federal Way | Dirt-Less Detailing" />
-                <meta property="description" content="Want a ceramic coating to protect your car in Federal Way? Check out our options and offers on Graphene coatings here." />
+                <meta name="description" content="Want a ceramic coating to protect your car in Federal Way? Check out our options and offers on Graphene coatings here." />
                 <meta property="og:description" content="Want a ceramic coating to protect your car in Federal Way? Check out our options and offers on Graphene coatings here." />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://www.dirtlessdetailing.com/ceramic/federal-way" />

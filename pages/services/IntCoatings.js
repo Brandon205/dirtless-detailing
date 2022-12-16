@@ -18,7 +18,7 @@ export default function IntCoatings() {
             <Head>
                 <title>Interior Ceramic Coatings | Dirt-Less Detailing</title>
                 <meta property="og:title" content="Interior Ceramic Coatings | Dirt-Less Detailing" />
-                <meta property="description" content="Have us coat the interior of your vehicle with our products to keep them clean and protected from day to day use." />
+                <meta name="description" content="Have us coat the interior of your vehicle with our products to keep them clean and protected from day to day use." />
                 <meta property="og:description" content="Have us coat the interior of your vehicle with our products to keep them clean and protected from day to day use." />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://www.dirtlessdetailing.com/services/IntCoatings" />

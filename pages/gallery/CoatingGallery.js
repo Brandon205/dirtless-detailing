@@ -12,7 +12,7 @@ export default function CoatingGallery() {
         <title>Dirt-Less Detailing | Ceramic Coating Gallery</title>
         <meta property="og:description" content="A gallery of photos that we have taken showing off some of the vehicles that we have coated and protected!" />
         <meta property="og:title" content="Dirt-Less Detailing | Ceramic Coating Gallery" />
-        <meta property="description" content="A gallery of photos that we have taken showing off some of the vehicles that we have coated and protected!" />
+        <meta name="description" content="A gallery of photos that we have taken showing off some of the vehicles that we have coated and protected!" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dirtlessdetailing.com/gallery/CoatingGallery" />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/gallery/CoatingGallery" />

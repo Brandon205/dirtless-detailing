@@ -20,7 +20,7 @@ export default function edgewood() {
             <Head>
                 <title>Vehicle Detailing in Edgewood | Dirt-Less Detailing</title>
                 <meta property="og:title" content="Vehicle Detailing in Edgewood | Dirt-Less Detailing" />
-                <meta property="description" content="Interior • Exterior • Ceramic Coating • Paint Correction. Check out our top auto detailing services for Edgewood Washington" />
+                <meta name="description" content="Interior • Exterior • Ceramic Coating • Paint Correction. Check out our top auto detailing services for Edgewood Washington" />
                 <meta property="og:description" content="Interior • Exterior • Ceramic Coating • Paint Correction. Check out our top auto detailing services for Edgewood Washington" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://www.dirtlessdetailing.com/location/edgewood" />

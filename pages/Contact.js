@@ -119,7 +119,7 @@ export default function Contact() {
             <Head>
                 <title>Contact Us | Dirt-Less Detailing</title>
                 <meta property="og:title" content="Contact Us | Dirt-Less Detailing" />
-                <meta property="description" content="Find out how to contact us here to ask any questions, or to set up an appointment!" />
+                <meta name="description" content="Find out how to contact us here to ask any questions, or to set up an appointment!" />
                 <meta property="og:description" content="Find out how to contact us here to ask any questions, or to set up an appointment!" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://www.dirtlessdetailing.com/Contact" />

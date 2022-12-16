@@ -20,7 +20,7 @@ export default function blackDiamond() {
             <Head>
                 <title>Vehicle Detailing in Black Diamond | Dirt-Less Detailing</title>
                 <meta property="og:title" content="Vehicle Detailing in Black Diamond | Dirt-Less Detailing" />
-                <meta property="description" content="Interior • Exterior • Ceramic Coating • Paint Correction. Check out our top auto detailing services for Black Diamond Washington" />
+                <meta name="description" content="Interior • Exterior • Ceramic Coating • Paint Correction. Check out our top auto detailing services for Black Diamond Washington" />
                 <meta property="og:description" content="Interior • Exterior • Ceramic Coating • Paint Correction. Check out our top auto detailing services for Black Diamond Washington" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://www.dirtlessdetailing.com/location/black-diamond" />

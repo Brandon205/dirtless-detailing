@@ -20,7 +20,7 @@ export default function puyallup() {
             <Head>
                 <title>Kenzo Ceramic Coating in Puyallup | Dirt-Less Detailing</title>
                 <meta property="og:title" content="Kenzo Ceramic Coating in Puyallup | Dirt-Less Detailing" />
-                <meta property="description" content="Want a ceramic coating to protect your car in Puyallup? Check out our options and offers on 10H IGL Kenzo Graphene coatings here." />
+                <meta name="description" content="Want a ceramic coating to protect your car in Puyallup? Check out our options and offers on 10H IGL Kenzo Graphene coatings here." />
                 <meta property="og:description" content="Want a ceramic coating to protect your car in Puyallup? Check out our options and offers on 10H IGL Kenzo Graphene coatings here." />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://www.dirtlessdetailing.com/ceramic/puyallup" />

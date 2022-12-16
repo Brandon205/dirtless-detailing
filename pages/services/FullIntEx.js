@@ -41,7 +41,7 @@ export default function FullIntEx() {
       <Head>
         <title>Full Interior Cleaning | Dirt-Less Detailing</title>
         <meta property="og:title" content="Full Interior Cleaning | Dirt-Less Detailing" />
-        <meta property="description" content="Our Full Interior cleaning is the most sought after service, and for good reason, it will completely renew your cars interior!" />
+        <meta name="description" content="Our Full Interior cleaning is the most sought after service, and for good reason, it will completely renew your cars interior!" />
         <meta property="og:description" content="Our Full Interior cleaning is the most sought after service, and for good reason, it will completely renew your cars interior!" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dirtlessdetailing.com/services/FullIntEx" />
