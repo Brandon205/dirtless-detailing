@@ -23,9 +23,9 @@ export default function MyApp({ Component, pageProps }) {
     const [smallScreen, setSmallScreen] = useState(null);
 
     const navBar = useRef(null)
-        
+
     useEffect(() => {
-    
+
         if (window.innerWidth < 879) {
             setSmallScreen(true);
         } else {
@@ -38,7 +38,7 @@ export default function MyApp({ Component, pageProps }) {
             window.removeEventListener('scroll', handleScroll)
         }
 
-        
+
     }, [])
 
     let handleScroll = () => {
@@ -60,18 +60,18 @@ export default function MyApp({ Component, pageProps }) {
                 setGallery(false);
                 setServices(true);
             }
-            break;
+                break;
             case 'gallery': {
                 setServices(false);
                 setGallery(true);
-          }
-          break;
-          default: {
-            setServices(false);
-            setGallery(false);
-          }
+            }
+                break;
+            default: {
+                setServices(false);
+                setGallery(false);
+            }
         }
-      }
+    }
 
     return (
         <div className="App">
@@ -85,9 +85,9 @@ export default function MyApp({ Component, pageProps }) {
             </Head>
             <header className="App-header">
                 <nav id="nav" className='navigation-small' ref={navBar}>
-                    <a style={{display: 'flex', justifyContent: 'flex-start', flex: 1}} href="/"><Image src={ddLogo} objectFit="contain" width={smallScreen ? 120 : 140} height={smallScreen ? 90 : 105} className="logo" alt="logo" /></a>
+                    <a style={{ display: 'flex', justifyContent: 'flex-start', flex: 1 }} href="/"><Image src={ddLogo} objectFit="contain" width={smallScreen ? 120 : 140} height={smallScreen ? 90 : 105} className="logo" alt="logo" /></a>
                     <FaBars className="menu-bars" onClick={() => setNav(nav === 'block' ? 'none' : 'block')} />
-                    <div style={{display: nav}} className="menu-container">
+                    <div style={{ display: nav }} className="menu-container">
                         <ul className='main-ul'>
 
                             <li>
@@ -95,9 +95,9 @@ export default function MyApp({ Component, pageProps }) {
                             </li>
                             <hr className="nav-hr" />
 
-                            <div style={{position: 'relative'}}>
+                            <div style={{ position: 'relative' }}>
                                 <li onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('services')}><p className='menu-li'><MdLocalOffer /> All Services</p></li>
-                                <ul className="sub-ul" onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} style={{opacity: smallScreen ? 1 : services ? 1 : !services ? 0 : 0, pointerEvents: smallScreen ? 'auto' : services ? 'auto' : !services ? 'none' : 'auto'}} >
+                                <ul className="sub-ul" onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} style={{ opacity: smallScreen ? 1 : services ? 1 : !services ? 0 : 0, pointerEvents: smallScreen ? 'auto' : services ? 'auto' : !services ? 'none' : 'auto' }} >
                                     <div className="nav-div">
                                         <h4 className='sub-menu-header'>CERAMIC COATING</h4>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
@@ -140,9 +140,9 @@ export default function MyApp({ Component, pageProps }) {
                             </div>
                             <hr className="nav-hr" />
 
-                            <div style={{position: 'relative'}}>
+                            <div style={{ position: 'relative' }}>
                                 <li className='menu-li' onPointerEnter={() => changeNav('gallery')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('gallery')}><FaImages /> Gallery</li>
-                                <ul className="sub-ul" onPointerEnter={() => changeNav('gallery')} onPointerLeave={() => changeNav('none')} style={{opacity: smallScreen ? 1 : gallery ? 1 : !gallery ? 0 : 0, pointerEvents: smallScreen ? 'auto' : gallery ? 'auto' : !gallery ? 'none' : 'auto'}}>
+                                <ul className="sub-ul" onPointerEnter={() => changeNav('gallery')} onPointerLeave={() => changeNav('none')} style={{ opacity: smallScreen ? 1 : gallery ? 1 : !gallery ? 0 : 0, pointerEvents: smallScreen ? 'auto' : gallery ? 'auto' : !gallery ? 'none' : 'auto' }}>
                                     <div className="nav-div">
                                         <h4 className="sub-menu-header">GALLERIES</h4>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
@@ -216,12 +216,12 @@ export default function MyApp({ Component, pageProps }) {
                     <h3>CONTACT US</h3>
                     <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener"><FaPhoneAlt /> (253) 252-9758</a>
                     <a href="mailto:brenden@dirtlessdetailing.com?subject = Schedule a Dirt-Less Detail" className="contact-link footer-contact-link" target="_blank" rel="noopener"><MdOutlineEmail /> brenden@dirtlessdetailing.com</a>
-                    <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link footer-contact-link" target="_blank" rel="noopener"><GoLocation /> 9305 205th Ave E Bonney Lake Washington</a><br />
+                    <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link footer-contact-link" target="_blank" rel="noopener"><GoLocation /> 9305 205th Ave E, Bonney Lake, Wa 98391</a><br />
                 </div>
-                <p style={{marginBottom: 0}}>We currently service:<span style={{color: 'lightgray'}}> Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham.</span></p>
+                <p style={{ marginBottom: 0 }}>We currently service:<span style={{ color: 'lightgray' }}> Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham.</span></p>
                 <hr />
                 <div className='socials-container'>
-                    <h4 style={{fontSize: 1.3 + 'em'}}>Dirt-Less Detailing 2022</h4>
+                    <h4 style={{ fontSize: 1.3 + 'em' }}>Dirt-Less Detailing 2022</h4>
                     <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="noopener"><img src="https://seal-alaskaoregonwesternwashington.bbb.org/seals/blue-seal-160-82-bbb-1000135733.png" className="bbb-seal" alt="Dirt-Less Detailing BBB Business Review" /></a>
                     <div>
                         <a href="https://www.facebook.com/DirtLessDetailing/" className="socials" target="_blank" rel="noopener" aria-label="Facebook"><FaFacebook /></a>
@@ -229,7 +229,7 @@ export default function MyApp({ Component, pageProps }) {
                     </div>
                 </div>
             </footer>
-            
+
         </div>
     )
 }
