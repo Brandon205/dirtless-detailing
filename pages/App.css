@@ -1254,6 +1254,7 @@ hr {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  gap: 0.5rem;
   width: 90vw;
   margin: 2rem auto 0 auto;
 }
