@@ -47,7 +47,7 @@ export default function Home() {
             </div>
             <header className="home-header">
                 <div className='landing-div'>
-                    <h1 className='title-top'>Your Bonney Lake <span className='title-bottom'>Detailing/Ceramic Coating Specialists</span></h1>
+                    <h1 className='title-top'>Your Bonney Lake <span className='title-bottom'>Detailing / Ceramic Coating Specialists</span></h1>
 
                     <div className="header-icons-container">
                         <div>
