@@ -69,7 +69,7 @@ export default function FullIntEx() {
                 <p>If it can be cleaned, we'll clean it. Does that mean every little stain will be removed? Unfortunately, that isn't the case. Based on the type of stain, how long it's been sitting, and the material, many stains won't come out 100%.</p>
                 <p>Of course we'll still do our best to reduce the appearance of it.</p>
                 <p>Please don't think your interior is “too dirty”. We have the necessary tools and products to get the job done. We have cleaned hundreds of interiors, of all conditions. It's not easy to surprise us.</p>
-                <p>Make it a <a href='/services/Combo' className='aside-link'>Combo</a> deal by booking with a Premium Dirt-Less Wash, and get a free <a href='/services/Addons/#engine' className='aside-link'>Engine Bay</a> cleaning on the house!</p>
+                <p>Make it a <a href='/services/Combo' className='aside-link'>Combo</a> deal by booking with a Premium Dirt-Less Wash, and get a free <a href='/services/Addons#engine' className='aside-link'>Engine Bay</a> cleaning on the house!</p>
               </div>
 
               <br className='extra-space' />
@@ -112,13 +112,13 @@ export default function FullIntEx() {
                   </div>
                   <hr className='aside-border' />
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/Addons/#headliners" className='text-blue'>Headliners</a></p>
+                    <p className='addon-title'><a href="/services/Addons#headliners" className='text-blue'>Headliners</a></p>
                     <p className='m-0'><span className="bold special-package">$40-$80</span></p>
                     <p className="addon-subtext">Clean your vehicles headliners.</p>
                   </div>
                   <hr className='aside-border' />
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/Addons/#ozone" className='text-blue'>Ozone Treatment</a></p>
+                    <p className='addon-title'><a href="/services/Addons#ozone" className='text-blue'>Ozone Treatment</a></p>
                     <p className='m-0'><span className="bold special-package">$100</span></p>
                     <p className="addon-subtext">Treats your vehicle to get rid of any viruses, bacteria, and odors.</p>
                   </div>

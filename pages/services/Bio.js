@@ -96,7 +96,7 @@ export default function Bio() {
                 <hr className="contact-border" style={{ marginBottom: 16 }} />
                 <div className="aside-links">
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/Addons/#ozone" className='text-blue'>Ozone Treatment</a></p>
+                    <p className='addon-title'><a href="/services/Addons#ozone" className='text-blue'>Ozone Treatment</a></p>
                     <p className='m-0'><span className="bold special-package">$100</span></p>
                     <p className="addon-subtext">Treats your vehicle to get rid of any viruses, bacteria, and odors.</p>
                   </div>

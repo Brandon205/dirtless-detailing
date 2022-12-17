@@ -414,7 +414,7 @@ export default function Contact() {
                         </div>
                         <hr className="contact-border" />
 
-                        <p className="form-section-heading">Interior Add-ons <a href='/services/Addons/#interior' className='aside-link'><BiLinkExternal /></a></p>
+                        <p className="form-section-heading">Interior Add-ons <a href='/services/Addons#interior' className='aside-link'><BiLinkExternal /></a></p>
                         <p style={{ marginTop: 0, }}>(Coatings need a Full Interior Cleaning service selected)</p>
                         <div>
                             <input type="checkbox" name="fabric" id='fabric' className={'checkbox-input'} disabled={!intSelected ? "disabled" : ""} />
@@ -462,7 +462,7 @@ export default function Contact() {
                         </div>
                         <hr className="contact-border" />
 
-                        <p className="form-section-heading">Exterior Add-ons <a href='/services/Addons/#exterior' className='aside-link'><BiLinkExternal /></a></p>
+                        <p className="form-section-heading">Exterior Add-ons <a href='/services/Addons#exterior' className='aside-link'><BiLinkExternal /></a></p>
                         <div>
                             <input type="checkbox" id='engine' name="engine" className='checkbox-input' />
                             <label htmlFor="engine" className='checkbox-label' style={{ marginBottom: 16 }}>Engine Bay</label>
@@ -492,7 +492,7 @@ export default function Contact() {
                         </div>
                         <hr className="contact-border" />
 
-                        <p className="form-section-heading">Paint Correction Add-ons <a href='/services/Addons/#exterior' className='aside-link'><BiLinkExternal /></a></p>
+                        <p className="form-section-heading">Paint Correction Add-ons <a href='/services/Addons#exterior' className='aside-link'><BiLinkExternal /></a></p>
                         <div>
                             <input type="checkbox" id='glassCorrection' name="glass Correction" className='checkbox-input' />
                             <label htmlFor="glassCorrection" className='checkbox-label'>Glass Polishing</label>

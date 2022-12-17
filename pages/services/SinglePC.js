@@ -108,7 +108,7 @@ export default function SinglePC() {
                 <hr className="contact-border" style={{ marginBottom: 16 }} />
                 <div className="aside-links">
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/Addons/#glass" className='text-blue'>Glass Polishing</a></p>
+                    <p className='addon-title'><a href="/services/Addons#glass" className='text-blue'>Glass Polishing</a></p>
                     <p className='m-0'><span className="bold special-package">$80</span>/hour</p>
                     <p className="addon-subtext">Gives you crystal clear windows.</p>
                   </div>
