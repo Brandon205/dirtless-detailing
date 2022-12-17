@@ -69,6 +69,7 @@ export default function PDLWash() {
                 <p>Not only will you see a humongous difference in the appearance, but you will also be able to feel the smoothness and slickness of the paint once we're done with this service.</p>
                 <p>Both of our Dirt-Less Wash services go very in depth, cleaning areas that you won't even see on a day to day basis. Our Premium package goes even further than that by using a clay bar and iron decontamination products on the whole vehicle to remove any contaminants.</p>
                 <p>A lot of our customers love this service since it doesn't take much time to perform, but the results that you get are stellar!</p>
+                <p>Want to compare our Premium and non-premium washes? Check out our <a href='/detailing/car-washes' className='aside-link'>comparison</a> page for more details.</p>
               </div>
 
               <br className='extra-space' />
