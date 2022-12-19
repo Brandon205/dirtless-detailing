@@ -40,7 +40,7 @@ export default function Home() {
                 <meta property="og:site_name" content="Dirt-Less Detailing" />
                 <meta name="type" content="website" />
                 <meta property="og:type" content="website" />
-                <meta property="og:image" content={cover} />
+                <meta property="og:image" content='https://www.dirtlessdetailing.com/:3000/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmain-cover.23617712.webp&w=640&q=75 640w' />
                 <link rel="canonical" href="https://www.dirtlessdetailing.com/" />
             </Head>
             <div className="maincover">
