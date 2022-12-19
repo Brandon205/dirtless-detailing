@@ -3,6 +3,8 @@ import { toast, ToastContainer } from 'react-toastify';
 import Head from 'next/head';
 import 'react-toastify/dist/ReactToastify.css';
 
+import cover from '../public/imgs/main-cover.webp';
+
 import { FaPhoneAlt, FaFacebookMessenger, FaClock } from 'react-icons/fa';
 import { AiFillGift } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
