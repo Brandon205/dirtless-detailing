@@ -11,8 +11,8 @@ export default function PaintCorrectionGallery() {
       <Head>
         <title>Engine Bay Gallery | Dirt-Less Detailing</title>
         <meta property="og:title" content="Engine Bay Gallery | Dirt-Less Detailing" />
-        <meta name="description" content="Engine Bay Photos • Engine bay images after our engine bay cleaning service!" />
-        <meta property="og:description" content="Engine Bay Photos • Engine bay images after our engine bay cleaning service!" />
+        <meta name="description" content="Check out photos from our engine bay cleaning service here. This is a great showcase of the final product our washing procedure creates." />
+        <meta property="og:description" content="Check out photos from our engine bay cleaning service here. This is a great showcase of the final product our washing procedure creates." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dirtlessdetailing.com/gallery/EngineGallery" />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/gallery/EngineGallery" />

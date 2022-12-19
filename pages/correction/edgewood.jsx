@@ -19,8 +19,8 @@ export default function edgewood() {
             <Head>
                 <title>Paint Correction in Edgewood | Dirt-Less Detailing</title>
                 <meta property="og:title" content="Paint Correction in Edgewood | Dirt-Less Detailing" />
-                <meta name="description" content="Check out our Single and Two Stage paint correction to fix any scratches or swirls in your paint." />
-                <meta property="og:description" content="Check out our Single and Two Stage paint correction to fix any scratches or swirls in your paint." />
+                <meta name="description" content="Scratches and swirls in your paint? We can help! With our Single and Two Stage Paint Correction services we can remove many imperfections!" />
+                <meta property="og:description" content="Scratches and swirls in your paint? We can help! With our Single and Two Stage Paint Correction services we can remove many imperfections!" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://www.dirtlessdetailing.com/correction/edgewood" />
                 <link rel="canonical" href="https://www.dirtlessdetailing.com/correction/edgewood" />
