@@ -24,6 +24,7 @@ export default function correction() {
                 <meta property="og:description" content="See some of the vehicles that have had our Single and Two Stage Paint Correction services done to them. They shine like never before!" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://www.dirtlessdetailing.com/detailing/correction" />
+                <meta property="og:image" content={cover.src} />
                 <link rel="canonical" href="https://www.dirtlessdetailing.com/detailing/correction" />
             </Head>
             <div className="cover">

@@ -29,6 +29,7 @@ export default function ExtCoatings() {
                 <meta property="og:description" content="Get a professionally installed Ceramic Coating through Dirt-Less Detailing to protect your vehicle from the always changing Washington weather." />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://www.dirtlessdetailing.com/services/ExtCoatings" />
+                <meta property="og:image" content={cover.src} />
                 <link rel="canonical" href="https://www.dirtlessdetailing.com/services/ExtCoatings" />
             </Head>
             <div className="cover">

@@ -24,6 +24,7 @@ export default function enumclaw() {
                 <meta property="og:description" content="Want a ceramic coating to protect your car in Enumclaw? Check out our options and offers on Graphene coatings here." />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://www.dirtlessdetailing.com/ceramic/enumclaw" />
+                <meta property="og:image" content={cover.src} />
                 <link rel="canonical" href="https://www.dirtlessdetailing.com/ceramic/enumclaw" />
             </Head>
             <div className="cover">

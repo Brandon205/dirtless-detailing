@@ -46,6 +46,7 @@ export default function PDLWash() {
         <meta property="og:description" content="Our Premium Dirt-Less Wash will go above and beyond what our base tier offers, and is sure to get everything off your vehicles exterior!" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dirtlessdetailing.com/services/PDLWash" />
+        <meta property="og:image" content={cover.src} />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/services/PDLWash" />
       </Head>
       <div className="cover">

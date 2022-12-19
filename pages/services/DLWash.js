@@ -42,6 +42,7 @@ export default function DLWash() {
         <meta property="og:description" content="The Dirt-Less Wash is our base tier exterior car wash service, complete with a spray wax to protect your vehicle." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dirtlessdetailing.com/services/DLWash" />
+        <meta property="og:image" content={cover.src} />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/services/DLWash" />
       </Head>
       <div className="cover">

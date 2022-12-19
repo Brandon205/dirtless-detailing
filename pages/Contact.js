@@ -123,7 +123,7 @@ export default function Contact() {
                 <meta property="og:description" content="Contact us here! Let us know any additional information we may need to know before your detail. Feel free to reach out with any questions!" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://www.dirtlessdetailing.com/Contact" />
-
+                <meta property="og:image" content={cover.src} />
                 <link rel="canonical" href="https://www.dirtlessdetailing.com/Contact" />
             </Head>
 

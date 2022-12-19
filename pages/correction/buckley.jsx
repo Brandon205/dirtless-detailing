@@ -23,6 +23,7 @@ export default function buckley() {
                 <meta property="og:description" content="Scratches and swirls in your paint? We can help! With our Single and Two Stage Paint Correction services we can remove many imperfections!" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://www.dirtlessdetailing.com/correction/buckley" />
+                <meta property="og:image" content={cover.src} />
                 <link rel="canonical" href="https://www.dirtlessdetailing.com/correction/buckley" />
             </Head>
             <div className="cover">

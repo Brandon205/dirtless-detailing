@@ -24,6 +24,7 @@ export default function puyallup() {
                 <meta property="og:description" content="Want a ceramic coating to protect your car in Puyallup? Check out our options and offers on 10H IGL Kenzo Graphene coatings here." />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://www.dirtlessdetailing.com/ceramic/puyallup" />
+                <meta property="og:image" content={cover.src} />
                 <link rel="canonical" href="https://www.dirtlessdetailing.com/ceramic/puyallup" />
             </Head>
             <div className="cover">

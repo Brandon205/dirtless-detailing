@@ -24,6 +24,7 @@ export default function edgewood() {
                 <meta property="og:description" content="Want a ceramic coating to protect your car in Edgewood? Check out our options and offers on Graphene coatings here." />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://www.dirtlessdetailing.com/ceramic/edgewood" />
+                <meta property="og:image" content={cover.src} />
                 <link rel="canonical" href="https://www.dirtlessdetailing.com/ceramic/edgewood" />
             </Head>
             <div className="cover">

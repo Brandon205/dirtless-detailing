@@ -15,6 +15,7 @@ export default function CoatingGallery() {
         <meta name="description" content="A gallery of photos that we have taken showing off some of the vehicles that we have coated and protected!" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dirtlessdetailing.com/gallery/CoatingGallery" />
+        <meta property="og:image" content={cover.src} />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/gallery/CoatingGallery" />
       </Head>
       <div className="cover">

@@ -22,6 +22,7 @@ export default function IntCoatings() {
                 <meta property="og:description" content="Have us coat the interior of your vehicle with our products to keep them clean and protected from day to day use." />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://www.dirtlessdetailing.com/services/IntCoatings" />
+                <meta property="og:image" content={cover.src} />
                 <link rel="canonical" href="https://www.dirtlessdetailing.com/services/IntCoatings" />
             </Head>
             <div className="cover">

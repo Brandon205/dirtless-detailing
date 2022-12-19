@@ -53,6 +53,7 @@ export default function SinglePC() {
         <meta property="og:description" content="Our Single Stage Paint Correction should fix most of your Paint Correction needs, leaving your paint nearly scratch free!" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dirtlessdetailing.com/services/SinglePC" />
+        <meta property="og:image" content={cover.src} />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/services/SinglePC" />
       </Head>
       <div className="cover">

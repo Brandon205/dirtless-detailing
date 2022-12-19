@@ -24,6 +24,7 @@ export default function exteriorWash() {
         <meta property="og:description" content="Come see our car wash services that we provide, they will leave your vehicle washed and protected." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dirtlessdetailing.com/detailing/car-washes" />
+        <meta property="og:image" content={cover.src} />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/detailing/car-washes" />
       </Head>
       <div className="cover">

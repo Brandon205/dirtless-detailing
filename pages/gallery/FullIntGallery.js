@@ -15,6 +15,7 @@ export default function FullIntGallery() {
         <meta property="og:description" content="Our Full Interior Gallery shows off some of our hard work cleaning vehicle interiors. We've cleaned everything from spilled drinks to crumbs everywhere!" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dirtlessdetailing.com/gallery/FullIntGallery" />
+        <meta property="og:image" content={cover.src} />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/gallery/FullIntGallery" />
       </Head>
       <div className="cover">

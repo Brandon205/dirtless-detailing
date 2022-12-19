@@ -27,6 +27,7 @@ export default function ceramic() {
                 <meta property="og:description" content="Want a high quality 10H ceramic coating to protect your car? Check out our offers on IGL graphene ceramic coatings." />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://www.dirtlessdetailing.com/detailing/ceramic" />
+                <meta property="og:image" content={cover.src} />
                 <link rel="canonical" href="https://www.dirtlessdetailing.com/detailing/ceramic" />
             </Head>
             <div className="cover">

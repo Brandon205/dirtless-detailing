@@ -16,6 +16,7 @@ export default function PaintCorrectionGallery() {
         <meta property="og:description" content="Take a look at our showcase of our exterior wash services to get a preview of what we're capable of doing to your car, no matter the current condition!" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dirtlessdetailing.com/gallery/ExteriorWashGallery" />
+        <meta property="og:image" content={cover.src} />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/gallery/ExteriorWashGallery" />
       </Head>
       <div className="cover">

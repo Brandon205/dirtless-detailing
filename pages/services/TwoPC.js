@@ -52,6 +52,7 @@ export default function TwoPC() {
         <meta property="og:description" content="Our Two Stage Paint Correction is for vehicles that are to be spotless and have a beautiful shine. This service will get them there." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dirtlessdetailing.com/services/TwoPC" />
+        <meta property="og:image" content={cover.src} />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/services/TwoPC" />
       </Head>
       <div className="cover">
