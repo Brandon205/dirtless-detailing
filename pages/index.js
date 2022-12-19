@@ -18,8 +18,6 @@ import kenzo from '../public/imgs/pageimgs/homepage/project.png';
 export default function Home() {
     const [smallScreen, setSmallScreen] = useState(null);
 
-    console.log(cover)
-
     useEffect(() => {
         if (window.innerWidth < 879) {
             setSmallScreen(true);
