@@ -14,24 +14,24 @@ import ext6 from '../../public/imgs/pageimgs/ceramic/318668138_534490881683360_5
 import ext7 from '../../public/imgs/pageimgs/ceramic/319282824_6026927310663439_4187208472627188697_n.jpg';
 import ext8 from '../../public/imgs/pageimgs/ceramic/fenderDrops.jpg';
 
-export default function puyallup() {
+export default function sumner() {
     return (
         <div>
             <Head>
-                <title>Kenzo Ceramic Coating in Puyallup | Dirt-Less Detailing</title>
-                <meta property="og:title" content="Kenzo Ceramic Coating in Puyallup | Dirt-Less Detailing" />
-                <meta name="description" content="Want a ceramic coating to protect your car in Puyallup? Check out our options and offers on 10H IGL Kenzo Graphene coatings here." />
-                <meta property="og:description" content="Want a ceramic coating to protect your car in Puyallup? Check out our options and offers on 10H IGL Kenzo Graphene coatings here." />
+                <title>Ceramic Coating in Sumner | Dirt-Less Detailing</title>
+                <meta property="og:title" content="Ceramic Coating in Sumner | Dirt-Less Detailing" />
+                <meta name="description" content="Want a ceramic coating to protect your car in Sumner? Check out our options and offers on Graphene coatings here." />
+                <meta property="og:description" content="Want a ceramic coating to protect your car in Sumner? Check out our options and offers on Graphene coatings here." />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://www.dirtlessdetailing.com/ceramic/puyallup" />
+                <meta property="og:url" content="https://www.dirtlessdetailing.com/ceramic-coating/sumner" />
                 <meta property="og:image" content={cover.src} />
-                <link rel="canonical" href="https://www.dirtlessdetailing.com/ceramic/puyallup" />
+                <link rel="canonical" href="https://www.dirtlessdetailing.com/ceramic-coating/sumner" />
             </Head>
             <div className="cover">
                 <Image src={cover} alt="Water beading off of a ceramic coated car" layout="fill" objectFit='cover' placeholder='blur' priority />
             </div>
             <div className="servicepage-header">
-                <h1>Kenzo Ceramic Coating Installation in Puyallup Washington</h1>
+                <h1>Kenzo Ceramic Coating Installation in Sumner Washington</h1>
                 <h2>5-year IGL Graphene Coatings</h2>
                 <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
                 <p className='inline text-small'>
@@ -40,12 +40,12 @@ export default function puyallup() {
             </div>
             
             <main className="location-main">
-                <h2 className='text-large'>Professional Ceramic Coatings in Puyallup Washington.</h2>
+                <h2 className='text-large'>Professional Ceramic Coatings in Sumner Washington.</h2>
                 <div className="text-left">
                     <p>Check out our main <a href="/detailing/ceramic" className='aside-link'>Ceramic</a> page for all the information you need on our ceramic coatings. For the best results on your ceramic coat we will have you drop your car off at our shop location in Bonney Lake.</p>
                     <p>One of the first things we do to your car is a full <a href="/services/SinglePC" className='aside-link'>Single Stage Paint Correction</a> to clean and prep your vehicle. For that service we also like to have our customers bring their vehicles to us.</p>
                     <p>Why? We want a controlled environment when applying a ceramic coat. At our shop we have lighting and temperature controls. This way we can keep an optimal temperature and the lighting helps us see and fix any imperfections on the paint.</p>
-                    <p>Our shop is about 20 minutes away from most of Puyallup, once there you are free to go wherever or stick around while we work.</p>
+                    <p>Our shop is about 20 minutes away from most of Sumner, once there you are free to go wherever or stick around while we work.</p>
                 </div>
 
                 <br className='extra-space' />
@@ -64,7 +64,7 @@ export default function puyallup() {
 
                 <br className='extra-space' />
 
-                <h2 className='text-large'>Professional Interior Coatings in Puyallup Washington</h2>
+                <h2 className='text-large'>Professional Interior Coatings in Sumner Washington</h2>
                 <div className="text-left">
                     <p>Whether it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe any spill up before it seeps in. Get more info on our <a href="/services/IntCoatings" className='aside-link'>Interior Coating</a> page.</p>
                 </div>
@@ -198,7 +198,6 @@ export default function puyallup() {
                 </div>
             </div>
             <a href="/Contact" className="quote-btn location-quote-btn">Get a Quote Today!</a>
-
         </div> 
     )
 }

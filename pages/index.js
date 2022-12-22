@@ -30,10 +30,10 @@ export default function Home() {
     return (
         <div className="App">
             <Head>
-                <title>Dirt-Less Detailing | Bonney Lakes Top Auto Detailer</title>
-                <meta name="og:title" content="Dirt-Less Detailing | Bonney Lakes Top Auto Detailer" />
-                <meta name="description" content="Dirt-Less Detailing is here to provide the highest-quality detailing services at great prices here in the Bonney Lake area. Come check out our offers!" />
-                <meta property="og:description" content="Dirt-Less Detailing is here to provide the highest-quality detailing services at great prices here in the Bonney Lake area. Come check out our offers!" />
+                <title>Bonney Lakes Trusted Auto Detailing & Ceramic Coating Specialists</title>
+                <meta name="og:title" content="Bonney Lakes Trusted Auto Detailing & Ceramic Coating Specialists" />
+                <meta name="description" content="Bonney lakes top choice for ceramic coating, paint correction, and all your auto detailing needs!" />
+                <meta property="og:description" content="Bonney lakes top choice for ceramic coating, paint correction, and all your auto detailing needs!" />
                 <meta name="url" content="https://www.dirtlessdetailing.com/" />
                 <meta property="og:url" content="https://www.dirtlessdetailing.com/" />
                 <meta name="site_name" content="Dirt-Less Detailing" />
@@ -48,7 +48,7 @@ export default function Home() {
             </div>
             <header className="home-header">
                 <div className='landing-div'>
-                    <h1 className='title-top'>Your Bonney Lake <span className='title-bottom'>Detailing / Ceramic Coating Specialists</span></h1>
+                    <h1 className='title-top'>Your Bonney Lake <span className='title-bottom'>Detailing & Ceramic Coating Specialists</span></h1>
 
                     <div className="header-icons-container">
                         <div>
