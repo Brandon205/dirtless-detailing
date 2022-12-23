@@ -34,7 +34,7 @@ export default function PaintCorrectionGallery() {
       <div className='gallery-container'>
         {imagery}
       </div>
-      <h2 style={{ color: 'white' }}>Check out our <a href="/services/SinglePC" className='aside-link' >Single Stage Paint Correction</a> page or our <a href="/services/TwoPC" className='aside-link' >Two Stage Paint Correction</a> page for more details!</h2>
+      <h2 style={{ color: 'white' }}>Check out our <a href="/services/single-stage-correction" className='aside-link' >Single Stage Paint Correction</a> page or our <a href="/services/two-stage-correction" className='aside-link' >Two Stage Paint Correction</a> page for more details!</h2>
     </section>
   )
 }

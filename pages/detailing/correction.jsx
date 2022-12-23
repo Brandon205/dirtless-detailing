@@ -44,7 +44,7 @@ export default function correction() {
                 <div className="text-left">
                     <p>Have you looked at your paint under the sun and saw a web of swirls and scratches?</p>
                     <p>These are called swirl marks. How did they get there in the first place? The biggest culprit is usually improper washing and drying methods. Automatic car washes and using low-quality towels or wash mitts can all lead to abrading your paint and leaving imperfections.</p>
-                    <p>With our <a href='/services/SinglePC' className='aside-link'>Single Stage Paint Correction</a> service, you can remove 60% to 70% of imperfections to reveal a great shine. This is a fantastic service for vehicles that you want to restore their shine without going “all in” like we do with our 2 stage paint correction service.</p>
+                    <p>With our <a href='/services/single-stage-correction' className='aside-link'>Single Stage Paint Correction</a> service, you can remove 60% to 70% of imperfections to reveal a great shine. This is a fantastic service for vehicles that you want to restore their shine without going “all in” like we do with our 2 stage paint correction service.</p>
                     <p>Unlike some of our other services that can be done in just a few hours, this service requires more time and better lighting to achieve the proper results. This is why we require you to drop off the vehicle at our <a href='/correction/bonney-lake' className='aside-link'>shop</a> location.</p>
                 </div>
 
@@ -52,7 +52,7 @@ export default function correction() {
 
                 <h2 className='text-large'>Two Stage Paint Correction</h2>
                 <div className="text-left">
-                    <p>Our <a href="/services/TwoPC" className='aside-link'>Two Stage Paint Correction</a> service is aimed to remove as many swirls, scratches, and imperfections from your paint as possible. This is where we do an intense cutting and polishing step, called a 2-step correction, to get the most gloss and clarity from your paintwork.</p>
+                    <p>Our <a href="/services/two-stage-correction" className='aside-link'>Two Stage Paint Correction</a> service is aimed to remove as many swirls, scratches, and imperfections from your paint as possible. This is where we do an intense cutting and polishing step, called a 2-step correction, to get the most gloss and clarity from your paintwork.</p>
                     <p>Depending on the condition, whether the vehicle is new or not, some scratches won't come all the way out. It could be the scratches are too deep to remove safely, or the clear coat itself is thinning out. (We'll take paint measurements before we start).</p>
                     <p>This is where we'll make the call on what we can safely remove from your paint. It's not just about removing as many imperfections as possible. It's also knowing when enough is enough to keep the integrity of the paint healthy.</p>
                     <p>The Level 2 paint correction is a commitment that you are making to your vehicle. If you'd like to keep the shine on your paint, you have to properly maintain the vehicle after the service is complete. If you don't properly wash and dry the vehicle, you can easily put all those swirls and scratches back into your paint after just a few washes.</p>

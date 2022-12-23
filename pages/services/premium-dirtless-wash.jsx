@@ -45,9 +45,9 @@ export default function PDLWash() {
         <meta name="description" content="Our Premium Dirt-Less Wash will go above and beyond what our base tier offers, and is sure to get everything off your vehicles exterior!" />
         <meta property="og:description" content="Our Premium Dirt-Less Wash will go above and beyond what our base tier offers, and is sure to get everything off your vehicles exterior!" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.dirtlessdetailing.com/services/PDLWash" />
+        <meta property="og:url" content="https://www.dirtlessdetailing.com/services/premium-dirtless-wash" />
         <meta property="og:image" content={cover.src} />
-        <link rel="canonical" href="https://www.dirtlessdetailing.com/services/PDLWash" />
+        <link rel="canonical" href="https://www.dirtlessdetailing.com/services/premium-dirtless-wash" />
       </Head>
       <div className="cover">
         <Image src={cover} alt="Vehicle after a Premium Dirt-Less Wash" layout="fill" objectFit='cover' placeholder='blur' priority />
@@ -88,8 +88,8 @@ export default function PDLWash() {
                 <p className='extra-addons'>Other Exterior Pages</p>
                 <hr className="contact-border" style={{ marginBottom: 16 }} />
                 <div className="aside-links">
-                  <a href="/services/DLWash" style={{ color: href.endsWith('/DLWash') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('/DLWash') ? '> ' : ''} Dirt-Less Wash</a>
-                  <a href="/services/PDLWash" style={{ color: href.endsWith('PDLWash') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('PDLWash') ? '> ' : ''} Premium Dirt-Less Wash</a>
+                  <a href="/services/dirtless-wash" style={{ color: href.endsWith('/DLWash') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('/DLWash') ? '> ' : ''} Dirt-Less Wash</a>
+                  <a href="/services/premium-dirtless-wash" style={{ color: href.endsWith('PDLWash') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('PDLWash') ? '> ' : ''} Premium Dirt-Less Wash</a>
                   <a href="/gallery/ExteriorWashGallery" className="service-link">Exterior Wash Gallery</a>
                 </div>
               </div>
@@ -97,23 +97,23 @@ export default function PDLWash() {
 
             <div className='aside-container'>
               <div className='service-aside addons-aside'>
-                <a href="/services/Addons" className='extra-addons'>Extra Add-ons</a>
+                <a href="/services/add-ons" className='extra-addons'>Extra Add-ons</a>
                 <hr className="contact-border" style={{ marginBottom: 16 }} />
                 <div className="aside-links">
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/Addons#truck" className='text-blue'>Truck Bed Cleaning</a></p>
+                    <p className='addon-title'><a href="/services/add-ons#truck" className='text-blue'>Truck Bed Cleaning</a></p>
                     <p className='m-0'><span className="bold special-package">$25</span></p>
                     <p className="addon-subtext">Add-on to get your truck bed cleaned.</p>
                   </div>
                   <hr className='aside-border' />
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/Addons#glass" className='text-blue'>Glass Polishing</a></p>
+                    <p className='addon-title'><a href="/services/add-ons#glass" className='text-blue'>Glass Polishing</a></p>
                     <p className='m-0'><span className="bold special-package">$80</span>/hour</p>
                     <p className="addon-subtext">Gives you crystal clear windows.</p>
                   </div>
                   <hr className='aside-border' />
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/Addons#waterspot" className='text-blue'>Waterspot/Overspray Removal</a></p>
+                    <p className='addon-title'><a href="/services/add-ons#waterspot" className='text-blue'>Waterspot/Overspray Removal</a></p>
                     <p className='m-0'><span className="bold special-package">$80</span>/hour</p>
                     <p className="addon-subtext">Remove any Overspray and Waterspots from your vehicle.</p>
                   </div>
@@ -126,7 +126,7 @@ export default function PDLWash() {
 
         <div className="combo-container">
           <h3 className="text-white">Get a <span className='special-package'>FREE</span> Engine cleaning!</h3>
-          <p className="subtext">Check out our Current <a className='aside-link' href="/services/Combo">Combo</a> deal that combines this Premium Dirt-Less Wash, our <a className='aside-link' href="/services/FullIntEx">Full Interior Cleaning</a>, and gives you an Engine Bay Cleaning totally on us!  </p>
+          <p className="subtext">Check out our Current <a className='aside-link' href="/services/interior-exterior-detailing-combo">Combo</a> deal that combines this Premium Dirt-Less Wash, our <a className='aside-link' href="/services/full-interior-detail">Full Interior Cleaning</a>, and gives you an Engine Bay Cleaning totally on us!  </p>
         </div>
 
         <div>

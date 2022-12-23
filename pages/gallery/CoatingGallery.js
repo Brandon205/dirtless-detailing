@@ -23,7 +23,7 @@ export default function CoatingGallery() {
       </div>
       <div className="servicepage-heading">
         <h1>Ceramic Coating Gallery</h1>
-        <p>Check out the gallery below to see what we can do to correct your paint problems. Take a look at our <a href="/services/IntCoatings" className='aside-link' >Interior Coatings</a> page or our <a href="/detailing/ceramic" className='aside-link' >Ceramic Coating</a> page to learn more about these services.</p>
+        <p>Check out the gallery below to see what we can do to correct your paint problems. Take a look at our <a href="/services/interior-ceramic-coating" className='aside-link' >Interior Coatings</a> page or our <a href="/detailing/ceramic" className='aside-link' >Ceramic Coating</a> page to learn more about these services.</p>
 
         <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
         <p className='inline text-small'>
@@ -34,7 +34,7 @@ export default function CoatingGallery() {
       <div className='gallery-container'>
         {imagery}
       </div>
-      <h2 style={{ color: 'white' }}>Check out our <a href="/services/IntCoatings" className='aside-link' >Interior Coatings</a> page or our <a href="/detailing/ceramic" className='aside-link' >Ceramic Coating</a> page for more details!</h2>
+      <h2 style={{ color: 'white' }}>Check out our <a href="/services/interior-ceramic-coating" className='aside-link' >Interior Coatings</a> page or our <a href="/detailing/ceramic" className='aside-link' >Ceramic Coating</a> page for more details!</h2>
     </section>
   )
 }

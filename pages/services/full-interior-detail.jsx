@@ -30,7 +30,7 @@ export default function FullIntEx() {
         <div className='step-container'>
           <h4 className="step-title">{item[0]}{id === 2 ? <span className='special-package'>*</span> : ""}</h4>
           <p className='step-desc'>{item[1]}</p>
-          {id === 4 ? <a className='aside-link' href="/services/IntCoatings">coat interior.</a> : ''}
+          {id === 4 ? <a className='aside-link' href="/services/interior-ceramic-coating">coat interior.</a> : ''}
         </div>
       </li>
     )
@@ -70,7 +70,7 @@ export default function FullIntEx() {
                 <p>If it can be cleaned, we'll clean it. Does that mean every little stain will be removed? Unfortunately, that isn't the case. Based on the type of stain, how long it's been sitting, and the material, many stains won't come out 100%.</p>
                 <p>Of course we'll still do our best to reduce the appearance of it.</p>
                 <p>Please don't think your interior is “too dirty”. We have the necessary tools and products to get the job done. We have cleaned hundreds of interiors, of all conditions. It's not easy to surprise us.</p>
-                <p>Make it a <a href='/services/Combo' className='aside-link'>Combo</a> deal by booking with a Premium Dirt-Less Wash, and get a free <a href='/services/Addons#engine' className='aside-link'>Engine Bay</a> cleaning on the house!</p>
+                <p>Make it a <a href='/services/interior-exterior-detailing-combo' className='aside-link'>Combo</a> deal by booking with a Premium Dirt-Less Wash, and get a free <a href='/services/add-ons#engine' className='aside-link'>Engine Bay</a> cleaning on the house!</p>
               </div>
 
               <br className='extra-space' />
@@ -90,36 +90,36 @@ export default function FullIntEx() {
               <hr className="contact-border" style={{ marginBottom: 16 }} />
               <div className="aside-links">
                 <a href="/services/FullIntEx" style={{ color: href.endsWith('FullIntEx') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('FullIntEx') ? '> ' : ''} Full Interior Cleaning</a>
-                <a href="/services/Bio" style={{ color: href.endsWith('Bio') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('Bio') ? '> ' : ''} Biohazard Cleaning</a>
+                <a href="/services/biohazard-cleaning" style={{ color: href.endsWith('Bio') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('Bio') ? '> ' : ''} Biohazard Cleaning</a>
                 <a href="/gallery/FullIntGallery" className="service-link">Full Interior Gallery</a>
               </div>
             </div>
 
             <div className='aside-container'>
               <div className='service-aside addons-aside'>
-                <a href="/services/Addons" className='extra-addons'>Extra Add-ons</a>
+                <a href="/services/add-ons" className='extra-addons'>Extra Add-ons</a>
                 <hr className="contact-border" style={{ marginBottom: 16 }} />
                 <div className="aside-links">
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/IntCoatings" className='text-blue'>Fabric Coating</a></p>
+                    <p className='addon-title'><a href="/services/interior-ceramic-coating" className='text-blue'>Fabric Coating</a></p>
                     <p className='m-0'><span className="bold special-package">$75</span></p>
                     <p className="addon-subtext">The best protection for the fabric inside of your vehicle.</p>
                   </div>
                   <hr className='aside-border' />
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/IntCoatings" className='text-blue'>Leather Coating</a></p>
+                    <p className='addon-title'><a href="/services/interior-ceramic-coating" className='text-blue'>Leather Coating</a></p>
                     <p className='m-0'><span className="bold special-package">$150</span></p>
                     <p className="addon-subtext">The longest lasting protection for your vehicles leather.</p>
                   </div>
                   <hr className='aside-border' />
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/Addons#headliners" className='text-blue'>Headliners</a></p>
+                    <p className='addon-title'><a href="/services/add-ons#headliners" className='text-blue'>Headliners</a></p>
                     <p className='m-0'><span className="bold special-package">$40-$80</span></p>
                     <p className="addon-subtext">Clean your vehicles headliners.</p>
                   </div>
                   <hr className='aside-border' />
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/Addons#ozone" className='text-blue'>Ozone Treatment</a></p>
+                    <p className='addon-title'><a href="/services/add-ons#ozone" className='text-blue'>Ozone Treatment</a></p>
                     <p className='m-0'><span className="bold special-package">$100</span></p>
                     <p className="addon-subtext">Treats your vehicle to get rid of any viruses, bacteria, and odors.</p>
                   </div>
@@ -132,7 +132,7 @@ export default function FullIntEx() {
 
         <div className="combo-container">
           <h3 className='text-white'>Get a <span className='special-package'>FREE</span> Engine cleaning!</h3>
-          <p className="subtext">Check out our Current <a className='aside-link' href="/services/Combo">Combo</a> deal that combines this Full Interior Cleaning, our <a className='aside-link' href="/services/PDLWash">Premium Dirt-Less Wash</a>, and gives you an Engine Bay cleaning totally on us!  </p>
+          <p className="subtext">Check out our Current <a className='aside-link' href="/services/interior-exterior-detailing-combo">Combo</a> deal that combines this Full Interior Cleaning, our <a className='aside-link' href="/services/premium-dirtless-wash">Premium Dirt-Less Wash</a>, and gives you an Engine Bay cleaning totally on us!  </p>
         </div>
 
         <div>

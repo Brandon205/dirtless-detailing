@@ -88,7 +88,7 @@ export default function ceramic() {
 
                 <h2 className='text-large'>Professional Interior Coatings</h2>
                 <div className="text-left">
-                    <p>Whether it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe any spill up before it seeps in. Get more info on our <a href="/services/IntCoatings" className='aside-link'>Interior Coating</a> page.</p>
+                    <p>Whether it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe any spill up before it seeps in. Get more info on our <a href="/services/interior-ceramic-coating" className='aside-link'>Interior Coating</a> page.</p>
                 </div>
 
                 <br className='extra-space' />
@@ -132,7 +132,7 @@ export default function ceramic() {
                 
                 <div>
                     <h3 className='pricing-title text-black'>Our Interior Coating Pricing</h3>
-                    <strong className='pricing-subtext'>*Pricing does NOT include an <a href="/services/FullIntEx" className='aside-link'>Interior Cleaning</a>, which you will need to add to get a coating.</strong>
+                    <strong className='pricing-subtext'>*Pricing does NOT include an <a href="/services/full-interior-detail" className='aside-link'>Interior Cleaning</a>, which you will need to add to get a coating.</strong>
                     <div className='pricing-container text-black'>
                         <div className="pricing-card">
                             <strong className='size'>Fabric Coating</strong>

@@ -34,7 +34,7 @@ export default function PaintCorrectionGallery() {
       <div className='gallery-container'>
         {imagery}
       </div>
-      <h2 style={{ color: 'white' }}>Check out our <a href="/services/DLWash" className='aside-link'>Dirt-Less Wash</a> page for more details!</h2>
+      <h2 style={{ color: 'white' }}>Check out our <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> page for more details!</h2>
     </section>
   )
 }

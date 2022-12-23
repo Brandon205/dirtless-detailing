@@ -23,7 +23,7 @@ export default function FullIntGallery() {
       </div>
       <div className="servicepage-heading">
         <h1>Full Interior Cleaning Gallery</h1>
-        <p>We have cleaned it all, even the worst of interiors. Check out the Gallery below. Take a look at our <a href="/services/FullIntEx" className='aside-link' >Full Interior Cleaning</a> page to find out more.</p>
+        <p>We have cleaned it all, even the worst of interiors. Check out the Gallery below. Take a look at our <a href="/services/full-interior-detail" className='aside-link' >Full Interior Cleaning</a> page to find out more.</p>
 
         <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
         <p className='inline text-small'>
@@ -34,7 +34,7 @@ export default function FullIntGallery() {
       <div className='gallery-container'>
         {imagery}
       </div>
-      <h2 style={{ color: 'white' }}>Check out our <a href="/services/FullIntEx" className='aside-link' >Full Interior Cleaning</a> page for more details!</h2>
+      <h2 style={{ color: 'white' }}>Check out our <a href="/services/full-interior-detail" className='aside-link' >Full Interior Cleaning</a> page for more details!</h2>
     </section>
   )
 }

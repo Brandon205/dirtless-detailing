@@ -26,7 +26,7 @@ export default function OtherServices() {
                     <Image src={ceramicInt} alt="Vehicle after an interior coating" className='otherservices-image' layout='responsive' height={450} width={450} loading='lazy' placeholder='blur' quality={15} />
                     <div className="otherservices-desc">
                         <div>
-                            <a href='/services/TwoPC' className='service-heading-link'>Interior Coatings</a>
+                            <a href='/services/two-stage-correction' className='service-heading-link'>Interior Coatings</a>
                             <p className="secondary-text">Starting at: <span>$75</span></p>
                         </div>
                         <p className="service-desc">Did you know you could ceramic coat the interior of your car? Well you can, and it provides many of the benefits of a normal exterior coating like ease of maintenance/cleaning, but to the interior of your car!</p>
@@ -39,7 +39,7 @@ export default function OtherServices() {
                     <Image src={ceramicExt} alt="Large water beads after a ceramic coating" className='otherservices-image' layout='responsive' height={450} width={450} loading='lazy' placeholder='blur' quality={15} />
                     <div className="otherservices-desc">
                         <div>
-                            <a href='/services/SinglePC' className='service-heading-link'>Exterior Ceramic Coatings</a>
+                            <a href='/services/single-stage-correction' className='service-heading-link'>Exterior Ceramic Coatings</a>
                             <p className="secondary-text">Starting at: <span>$1,000</span></p>
                         </div>
                         <p className="service-desc">With a professionally installed IGL Ceramic coating from us, your vehicle will be clean and protected. We are a licensed and certified coating installer through IGL and are happy to give your car that extra layer of protection it deserves</p>
@@ -72,13 +72,13 @@ export default function OtherServices() {
                     <Image style={{ borderRadius: 16 }} src={combo} alt="Vehicle after a Combo Cleaning" loading='lazy' placeholder='blur' quality={90} />
                 </div>
                 <div className="feature-desc-area">
-                    <a href="/services/Combo" className='service-heading-link'>Full Interior, <span className='special-package'>Engine Cleaning</span>, and Exterior Combo</a>
+                    <a href="/services/interior-exterior-detailing-combo" className='service-heading-link'>Full Interior, <span className='special-package'>Engine Cleaning</span>, and Exterior Combo</a>
                     <p className="secondary-text">Starting at: <span>$350</span></p>
                     <p className="service-desc">This combo comes with a <span className='special-package'>FREE</span> Engine Bay cleaning, along with the full interior and exterior detail this package is sure to bring your whole car back to life.</p>
                     <div>
-                        <a href="/services/Combo" className="readmore">Combo Deal</a>
-                        <a href="/services/FullIntEx" className="readmore">Interior</a>
-                        <a href="/services/PDLWash" className="readmore">Exterior</a>
+                        <a href="/services/interior-exterior-detailing-combo" className="readmore">Combo Deal</a>
+                        <a href="/services/full-interior-detail" className="readmore">Interior</a>
+                        <a href="/services/premium-dirtless-wash" className="readmore">Exterior</a>
                     </div>
                 </div>
             </section>
@@ -92,12 +92,12 @@ export default function OtherServices() {
                     <Image src={fullintex} alt="Vehicle after a Full Interior Cleaning" className='otherservices-image' layout='responsive' height={550} width={450} loading='lazy' placeholder='blur' quality={1} />
                     <div className="otherservices-desc">
                         <div>
-                            <a href="/services/FullIntEx" className='service-heading-link'>Full Interior Cleaning</a>
+                            <a href="/services/full-interior-detail" className='service-heading-link'>Full Interior Cleaning</a>
                             <p className="secondary-text">Starting at: <span>$200</span></p>
                         </div>
                         <p className="service-desc">A full interior detail will clean every crack and crevice of your vehicles interior. Optionally we can also do a hot water extraction to the carpets of your vehicle to get out deeper stains and dirt.</p>
 
-                        <a href='/services/FullIntEx' className="readmore">Full Interior Cleaning Details {'>'}</a>
+                        <a href='/services/full-interior-detail' className="readmore">Full Interior Cleaning Details {'>'}</a>
                     </div>
                 </div>
 
@@ -105,12 +105,12 @@ export default function OtherServices() {
                     <Image src={bio} alt="Vehicle before a biohazard cleaning" className='otherservices-image' layout='responsive' height={550} width={450} loading='lazy' placeholder='blur' quality={1} />
                     <div className="otherservices-desc">
                         <div>
-                            <a href='/services/Bio' className='service-heading-link'>Biohazard Cleaning</a>
+                            <a href='/services/biohazard-cleaning' className='service-heading-link'>Biohazard Cleaning</a>
                             <p className="secondary-text">Starting at: <span>$400</span></p>
                         </div>
                         <p className="service-desc">If there are bad smells like mold or smoke in your car this will be the package for you. We'll use cleaning chemicals suited for the job to get rid of those odors for good.</p>
 
-                        <a href='/services/Bio' className="readmore">Biohazard Cleaning Details {'>'}</a>
+                        <a href='/services/biohazard-cleaning' className="readmore">Biohazard Cleaning Details {'>'}</a>
                     </div>
                 </div>
 
@@ -143,7 +143,7 @@ export default function OtherServices() {
                         </div>
                         <p className="service-desc">Our Dirt-Less Wash will thoroughly clean the exterior of your vehicle with our tried and true cleaning process. We even apply a layer of wax to give your vehicle a layer of protection.</p>
 
-                        <a href="/services/DLWash" className="readmore">Dirt-Less Wash Details {'>'}</a>
+                        <a href="/services/dirtless-wash" className="readmore">Dirt-Less Wash Details {'>'}</a>
                     </div>
                 </div>
 
@@ -151,12 +151,12 @@ export default function OtherServices() {
                     <Image src={pdlwash} alt="Vehicle after a Premium Dirt-Less Cleaning" className='otherservices-image' layout='responsive' height={550} width={450} loading='lazy' placeholder='blur' quality={1} />
                     <div className="otherservices-desc">
                         <div>
-                            <a href='/services/PDLWash' className='service-heading-link'>Premium Dirt-Less Wash</a>
+                            <a href='/services/premium-dirtless-wash' className='service-heading-link'>Premium Dirt-Less Wash</a>
                             <p className="secondary-text">Starting at: <span>$150</span></p>
                         </div>
                         <p className="service-desc">Our Premium exterior wash will go above and beyond the Dirt-Less Wash in the cleaning process and will top it off with a 6 month sealant or better to protect your vehicle.</p>
 
-                        <a href="/services/PDLWash" className="readmore">Premium Dirt-Less Wash Details {'>'}</a>
+                        <a href="/services/premium-dirtless-wash" className="readmore">Premium Dirt-Less Wash Details {'>'}</a>
                     </div>
                 </div>
 
@@ -184,7 +184,7 @@ export default function OtherServices() {
                     <Image src={stage1} alt="Vehicle after a Single Stage Paint Correction" className='otherservices-image' layout='responsive' height={550} width={450} loading='lazy' placeholder='blur' quality={1} />
                     <div className="otherservices-desc">
                         <div>
-                            <a href='/services/SinglePC' className='service-heading-link'>Single Stage Paint Correction</a>
+                            <a href='/services/single-stage-correction' className='service-heading-link'>Single Stage Paint Correction</a>
                             <p className="secondary-text">Starting at: <span>$300</span></p>
                         </div>
                         <p className="service-desc">Our single stage paint correction can fix 60%-70% of minor damage and scratches and will leave your vehicle looking shinier than ever.</p>
@@ -197,7 +197,7 @@ export default function OtherServices() {
                     <Image src={stage2} alt="Vehicle after a Two Stage Paint Correction" className='otherservices-image' layout='responsive' height={550} width={450} loading='lazy' placeholder='blur' quality={1} />
                     <div className="otherservices-desc">
                         <div>
-                            <a href='/services/TwoPC' className='service-heading-link'>Two Stage Paint Correction</a>
+                            <a href='/services/two-stage-correction' className='service-heading-link'>Two Stage Paint Correction</a>
                             <p className="secondary-text">Starting at: <span>$450</span></p>
                         </div>
                         <p className="service-desc">Our 2 stage paint correction is great for getting your car to a near perfect state. This is great for show cars need that extra time and effort to get to that showroom shine.</p>

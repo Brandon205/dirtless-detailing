@@ -43,7 +43,7 @@ export default function blackDiamond() {
                 <h2 className='text-large'>Professional Ceramic Coatings in Black Diamond Washington.</h2>
                 <div className="text-left">
                     <p>Check out our main <a href="/detailing/ceramic" className='aside-link'>Ceramic</a> page for all the information you need on our ceramic coatings. For the best results on your ceramic coat we will have you drop your car off at our shop location in Bonney Lake.</p>
-                    <p>One of the first things we do to your car is a full <a href="/services/SinglePC" className='aside-link'>Single Stage Paint Correction</a> to clean and prep your vehicle. For that service we also like to have our customers bring their vehicles to us.</p>
+                    <p>One of the first things we do to your car is a full <a href="/services/single-stage-correction" className='aside-link'>Single Stage Paint Correction</a> to clean and prep your vehicle. For that service we also like to have our customers bring their vehicles to us.</p>
                     <p>Why? We want a controlled environment when applying a ceramic coat. At our shop we have lighting and temperature controls. This way we can keep an optimal temperature and the lighting helps us see and fix any imperfections on the paint.</p>
                     <p>Our shop is about 20 minutes away from most of Black Diamond, once there you are free to go wherever or stick around while we work.</p>
                 </div>
@@ -66,7 +66,7 @@ export default function blackDiamond() {
 
                 <h2 className='text-large'>Professional Interior Coatings in Black Diamond Washington</h2>
                 <div className="text-left">
-                    <p>Whether it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe any spill up before it seeps in. Get more info on our <a href="/services/IntCoatings" className='aside-link'>Interior Coating</a> page.</p>
+                    <p>Whether it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe any spill up before it seeps in. Get more info on our <a href="/services/interior-ceramic-coating" className='aside-link'>Interior Coating</a> page.</p>
                 </div>
 
                 <br className='extra-space' />
@@ -113,7 +113,7 @@ export default function blackDiamond() {
 
             <div className='only-bg'>
                 <h3 className='pricing-title text-black'>Our Interior Coating Pricing</h3>
-                <strong className='pricing-subtext'>*Pricing does NOT include an <a href="/services/FullIntEx" className='aside-link'>Interior Cleaning</a>, which you will need to add to get a coating.</strong>
+                <strong className='pricing-subtext'>*Pricing does NOT include an <a href="/services/full-interior-detail" className='aside-link'>Interior Cleaning</a>, which you will need to add to get a coating.</strong>
                 <div className='pricing-container text-black'>
                     <div className="pricing-card">
                         <strong className='size'>Fabric Coating</strong>

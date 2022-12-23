@@ -52,7 +52,7 @@ export default function orting() {
                 <div className="text-left">
                     <p>The simple answer is that we use a different product on one of the steps. The Two Stage paint correction product we use is designed to get out as many scratches and swirls as possible, while the Single Stage product usually removes around 60%-70%.</p>
                     <p>In the steps below its shown in step number 8, all of the other steps are carried out the same.</p>
-                    <p>To learn more about each check out our <a href="/detailing/correction" className='aside-link'>comparison</a> page where we go into much more detail on the differences. Or if you're interested in one or the other check out our <a href="/services/SinglePC" className='aside-link'>Single Stage Paint Correction</a> or the <a href="/services/TwoPC" className='aside-link'>Two Stage Paint Correction</a> page.</p>
+                    <p>To learn more about each check out our <a href="/detailing/correction" className='aside-link'>comparison</a> page where we go into much more detail on the differences. Or if you're interested in one or the other check out our <a href="/services/single-stage-correction" className='aside-link'>Single Stage Paint Correction</a> or the <a href="/services/two-stage-correction" className='aside-link'>Two Stage Paint Correction</a> page.</p>
                 </div>
 
                 <br className='extra-space' />

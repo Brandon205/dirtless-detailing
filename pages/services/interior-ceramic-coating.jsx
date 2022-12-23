@@ -21,9 +21,9 @@ export default function IntCoatings() {
                 <meta name="description" content="Have us coat the interior of your vehicle with our products to keep them clean and protected from day to day use." />
                 <meta property="og:description" content="Have us coat the interior of your vehicle with our products to keep them clean and protected from day to day use." />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://www.dirtlessdetailing.com/services/IntCoatings" />
+                <meta property="og:url" content="https://www.dirtlessdetailing.com/services/interior-ceramic-coating" />
                 <meta property="og:image" content={cover.src} />
-                <link rel="canonical" href="https://www.dirtlessdetailing.com/services/IntCoatings" />
+                <link rel="canonical" href="https://www.dirtlessdetailing.com/services/interior-ceramic-coating" />
             </Head>
             <div className="cover">
                 <Image src={cover} alt="Coated and protected vehicle interior" layout="fill" objectFit='cover' placeholder='blur' priority />
@@ -84,7 +84,7 @@ export default function IntCoatings() {
 
                     <div>
                         <h3 className='pricing-title text-white'>Our Interior Coating Pricing</h3>
-                        <h4 className='subtext'><span className='special-package'>*</span>Pricing does NOT include an <a href="/services/FullIntEx" className='aside-link'>Interior Cleaning</a>, which you will want to factor in before getting a coating.</h4>
+                        <h4 className='subtext'><span className='special-package'>*</span>Pricing does NOT include an <a href="/services/full-interior-detail" className='aside-link'>Interior Cleaning</a>, which you will want to factor in before getting a coating.</h4>
                         <div className='pricing-container text-black'>
                             <div className="pricing-card">
                                 <strong className='size'>Fabric Coating</strong>
@@ -119,13 +119,13 @@ export default function IntCoatings() {
                                 <hr className="contact-border" style={{ marginBottom: 16 }} />
                                 <div className="aside-links">
                                     <div className="addon-container">
-                                        <p className='addon-title'><a href="/services/ExtCoatings" className='text-blue'>Protect Ceramic Coating</a></p>
+                                        <p className='addon-title'><a href="/services/exterior-ceramic-coating" className='text-blue'>Protect Ceramic Coating</a></p>
                                         <p className='m-0 subtext'>Starting at: <span className="bold special-package">$1,000</span></p>
                                         <p className="addon-subtext">Ceramic Coating package that covers and protects only the most essential parts of your vehicle.</p>
                                     </div>
                                     <hr className='aside-border' />
                                     <div className="addon-container">
-                                        <p className='addon-title'><a href="/services/ExtCoatings" className='text-blue'>Protect<span className="bold special-package">+</span> Ceramic Coating</a></p>
+                                        <p className='addon-title'><a href="/services/exterior-ceramic-coating" className='text-blue'>Protect<span className="bold special-package">+</span> Ceramic Coating</a></p>
                                         <p className='m-0 subtext'>Starting at: <span className="bold special-package">$1,500</span></p>
                                         <p className="addon-subtext">A Premium Ceramic Coating service to coat and protect your entire vehicle.</p>
                                     </div>
@@ -140,7 +140,7 @@ export default function IntCoatings() {
                                 <h4 className='text-xl mb-0 mt-0'>Monthly Maintenance:</h4>
                                 <hr className='aside-border' />
                                 <p>The goal of our monthly maintenance is to keep your vehicle looking like new year around.</p>
-                                <p>Every month you get a <a href="/services/DLWash" className='aside-link'>Dirt-Less Wash</a> with a ceramic booster and a <a href='/services/FullIntEx' className='aside-link'>Full Interior Detail</a>.</p>
+                                <p>Every month you get a <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> with a ceramic booster and a <a href='/services/full-interior-detail' className='aside-link'>Full Interior Detail</a>.</p>
                                 <hr className='aside-border' />
                                 <p className='bold text-xl mb-0'>Monthly Maintenance Pricing:</p>
                                 <div className='maintenance-costs'>

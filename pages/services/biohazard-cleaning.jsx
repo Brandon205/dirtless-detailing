@@ -45,9 +45,9 @@ export default function Bio() {
         <meta name="description" content="Smokers Car • Biohazard Cleaning • Odor Removal - See what we can do if your car has unwanted odors or smells" />
         <meta property="og:description" content="Smokers Car • Biohazard Cleaning • Odor Removal - See what we can do if your car has unwanted odors or smells" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.dirtlessdetailing.com/services/Bio" />
+        <meta property="og:url" content="https://www.dirtlessdetailing.com/services/biohazard-cleaning" />
         <meta property="og:image" content={cover.src} />
-        <link rel="canonical" href="https://www.dirtlessdetailing.com/services/Bio" />
+        <link rel="canonical" href="https://www.dirtlessdetailing.com/services/biohazard-cleaning" />
       </Head>
       <div className="cover">
         <Image src={cover} alt="biohazard cleaning cover" layout="fill" objectFit='cover' placeholder='blur' priority />
@@ -85,19 +85,19 @@ export default function Bio() {
               <p className='extra-addons'>Other Interior Pages</p>
               <hr className="contact-border" style={{ marginBottom: 16 }} />
               <div className="aside-links">
-                <a href="/services/FullIntEx" style={{ color: href.endsWith('FullIntEx') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('FullIntEx') ? '> ' : ''} Full Interior Cleaning</a>
-                <a href="/services/Bio" style={{ color: href.endsWith('Bio') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('Bio') ? '> ' : ''} Biohazard Cleaning</a>
+                <a href="/services/full-interior-detail" style={{ color: href.endsWith('FullIntEx') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('FullIntEx') ? '> ' : ''} Full Interior Cleaning</a>
+                <a href="/services/biohazard-cleaning" style={{ color: href.endsWith('Bio') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('Bio') ? '> ' : ''} Biohazard Cleaning</a>
                 <a href="/gallery/FullIntGallery" className="service-link">Full Interior Gallery</a>
               </div>
             </div>
 
             <div className='aside-container'>
               <div className='service-aside addons-aside'>
-                <a href="/services/Addons" className='extra-addons'>Extra Add-ons</a>
+                <a href="/services/add-ons" className='extra-addons'>Extra Add-ons</a>
                 <hr className="contact-border" style={{ marginBottom: 16 }} />
                 <div className="aside-links">
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/Addons#ozone" className='text-blue'>Ozone Treatment</a></p>
+                    <p className='addon-title'><a href="/services/add-ons#ozone" className='text-blue'>Ozone Treatment</a></p>
                     <p className='m-0'><span className="bold special-package">$100</span></p>
                     <p className="addon-subtext">Treats your vehicle to get rid of any viruses, bacteria, and odors.</p>
                   </div>

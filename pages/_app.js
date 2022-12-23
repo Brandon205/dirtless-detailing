@@ -101,39 +101,39 @@ export default function MyApp({ Component, pageProps }) {
                                     <div className="nav-div">
                                         <h4 className='sub-menu-header'>CERAMIC COATING</h4>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <a href="/services/ExtCoatings" className='menu-link'><AiOutlineCar /> Exterior Ceramic Coating</a>
+                                            <a href="/services/exterior-ceramic-coating" className='menu-link'><AiOutlineCar /> Exterior Ceramic Coating</a>
                                         </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <a href="/services/IntCoatings" className='menu-link'><GiCarSeat /> Interior Coating</a>
+                                            <a href="/services/interior-ceramic-coating" className='menu-link'><GiCarSeat /> Interior Coating</a>
                                         </li>
                                         <hr className="nav-hr" />
                                         <h4 className='sub-menu-header'>INTERIOR CLEANING SERVICES</h4>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <a href="/services/FullIntEx" className='menu-link'><GiSteeringWheel /> Full Interior Cleaning</a>
+                                            <a href="/services/full-interior-detail" className='menu-link'><GiSteeringWheel /> Full Interior Cleaning</a>
                                         </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <a href="/services/Bio" className='menu-link'><FaBiohazard /> Biohazard Cleaning</a>
+                                            <a href="/services/biohazard-cleaning" className='menu-link'><FaBiohazard /> Biohazard Cleaning</a>
                                         </li>
                                         <hr className="nav-hr" />
                                         <h4 className='sub-menu-header'>EXTERIOR DETAILING SERVICES</h4>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <a href="/services/PDLWash" className='menu-link'><RiCarWashingFill /> Premium Dirt-Less Wash</a>
+                                            <a href="/services/premium-dirtless-wash" className='menu-link'><RiCarWashingFill /> Premium Dirt-Less Wash</a>
                                         </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <a href="/services/DLWash" className='menu-link'><FaSoap /> Dirt-Less Wash</a>
+                                            <a href="/services/dirtless-wash" className='menu-link'><FaSoap /> Dirt-Less Wash</a>
                                         </li>
                                         <hr className="nav-hr" />
                                         <h4 className='sub-menu-header'>COMBO DEALS</h4>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <a href="/services/Combo" className='menu-link'><GiCarKey /> Interior + Exterior Combo</a>
+                                            <a href="/services/interior-exterior-detailing-combo" className='menu-link'><GiCarKey /> Interior + Exterior Combo</a>
                                         </li>
                                         <hr className="nav-hr" />
                                         <h4 className='sub-menu-header'>PAINT CORRECTION SERVICES</h4>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <a href="/services/SinglePC" className='menu-link'><FaCarSide /> Single Stage Paint Correction</a>
+                                            <a href="/services/single-stage-correction" className='menu-link'><FaCarSide /> Single Stage Paint Correction</a>
                                         </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <a href="/services/TwoPC" className='menu-link'><HiSparkles /> Two Stage Paint Correction</a>
+                                            <a href="/services/two-stage-correction" className='menu-link'><HiSparkles /> Two Stage Paint Correction</a>
                                         </li>
                                     </div>
                                 </ul>
@@ -166,7 +166,7 @@ export default function MyApp({ Component, pageProps }) {
                             <hr className="nav-hr" />
 
                             <li>
-                                <a href="/services/Addons" className='menu-link' onClick={() => setNav('none')}><AiOutlinePlus /> Addons</a>
+                                <a href="/services/add-ons" className='menu-link' onClick={() => setNav('none')}><AiOutlinePlus /> Addons</a>
                             </li>
                             <hr className="nav-hr" />
 
@@ -192,25 +192,25 @@ export default function MyApp({ Component, pageProps }) {
                 </div>
                 <div className="footer-content-card">
                     <h3>CERAMIC COATINGS</h3>
-                    <a href="/services/ExtCoatings" className='footer-link'>Exterior Ceramic Coating</a>
-                    <a href="/services/IntCoatings" className='footer-link'>Interior Coating</a>
+                    <a href="/services/exterior-ceramic-coating" className='footer-link'>Exterior Ceramic Coating</a>
+                    <a href="/services/interior-ceramic-coating" className='footer-link'>Interior Coating</a>
                 </div>
                 <div className="footer-content-card">
                     <h3>INTERIOR</h3>
-                    <a href="/services/FullIntEx" className='footer-link'>Full Interior Cleaning</a>
-                    <a href="/services/Combo" className='footer-link'>Interior + Exterior Combo</a>
-                    <a href="/services/Bio" className='footer-link'>Smoke / Biohazard / Mold Removal</a>
+                    <a href="/services/full-interior-detail" className='footer-link'>Full Interior Cleaning</a>
+                    <a href="/services/interior-exterior-detailing-combo" className='footer-link'>Interior + Exterior Combo</a>
+                    <a href="/services/biohazard-cleaning" className='footer-link'>Smoke / Biohazard / Mold Removal</a>
                 </div>
                 <div className="footer-content-card">
                     <h3>EXTERIOR</h3>
-                    <a href="/services/DLWash" className='footer-link'>Dirt-Less Wash</a>
-                    <a href="/services/PDLWash" className='footer-link'>Premium Dirt-Less Wash</a>
-                    <a href="/services/Combo" className='footer-link'>Interior + Exterior Combo</a>
+                    <a href="/services/dirtless-wash" className='footer-link'>Dirt-Less Wash</a>
+                    <a href="/services/premium-dirtless-wash" className='footer-link'>Premium Dirt-Less Wash</a>
+                    <a href="/services/interior-exterior-detailing-combo" className='footer-link'>Interior + Exterior Combo</a>
                 </div>
                 <div className="footer-content-card">
                     <h3>CORRECTION SERVICES</h3>
-                    <a href="/services/SinglePC" className='footer-link'>Single Stage Paint Correction</a>
-                    <a href="/services/TwoPC" className='footer-link'>Two Stage Paint Correction</a>
+                    <a href="/services/single-stage-correction" className='footer-link'>Single Stage Paint Correction</a>
+                    <a href="/services/two-stage-correction" className='footer-link'>Two Stage Paint Correction</a>
                 </div>
                 <div className="footer-content-card footer-contact-card" id="contact">
                     <h3>CONTACT US</h3>

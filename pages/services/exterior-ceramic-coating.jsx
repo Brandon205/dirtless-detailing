@@ -28,9 +28,9 @@ export default function ExtCoatings() {
                 <meta name="description" content="Get a professionally installed Ceramic Coating through Dirt-Less Detailing to protect your vehicle from the always changing Washington weather." />
                 <meta property="og:description" content="Get a professionally installed Ceramic Coating through Dirt-Less Detailing to protect your vehicle from the always changing Washington weather." />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://www.dirtlessdetailing.com/services/ExtCoatings" />
+                <meta property="og:url" content="https://www.dirtlessdetailing.com/services/exterior-ceramic-coating" />
                 <meta property="og:image" content={cover.src} />
-                <link rel="canonical" href="https://www.dirtlessdetailing.com/services/ExtCoatings" />
+                <link rel="canonical" href="https://www.dirtlessdetailing.com/services/exterior-ceramic-coating" />
             </Head>
             <div className="cover">
                 <Image src={cover} alt="Vehicle Exterior after paint correction and ceramic coating" layout="fill" objectFit='cover' placeholder='blur' priority quality={100} />
@@ -92,7 +92,7 @@ export default function ExtCoatings() {
 
                         <h2 className='text-large'>Professional Interior Coatings</h2>
                         <div className="text-left">
-                            <p>Whether it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe any spill up before it seeps in. Get more info on our <a href="/services/IntCoatings" className='aside-link'>Interior Coating</a> page.</p>
+                            <p>Whether it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe any spill up before it seeps in. Get more info on our <a href="/services/interior-ceramic-coating" className='aside-link'>Interior Coating</a> page.</p>
                         </div>
 
                         <br className='extra-space' />
@@ -108,13 +108,13 @@ export default function ExtCoatings() {
                                 <hr className="contact-border" style={{ marginBottom: 16 }} />
                                 <div className="aside-links">
                                     <div className="addon-container">
-                                        <p className='addon-title'><a href="/services/IntCoatings" className='text-blue'>Fabric Coating</a></p>
+                                        <p className='addon-title'><a href="/services/interior-ceramic-coating" className='text-blue'>Fabric Coating</a></p>
                                         <p className='m-0'><span className="bold special-package">$75</span></p>
                                         <p className="addon-subtext">We will treat and protect all fabrics in the vehicle.</p>
                                     </div>
                                     <hr className='aside-border' />
                                     <div className="addon-container">
-                                        <p className='addon-title'><a href="/services/IntCoatings" className='text-blue'>Leather Coating</a></p>
+                                        <p className='addon-title'><a href="/services/interior-ceramic-coating" className='text-blue'>Leather Coating</a></p>
                                         <p className='m-0'><span className="bold special-package">$150</span></p>
                                         <p className="addon-subtext">We will treat and protect all leathers in the vehicle.</p>
                                     </div>
@@ -129,7 +129,7 @@ export default function ExtCoatings() {
                                 <h4 className='text-xl mb-0 mt-0'>Monthly Maintenance:</h4>
                                 <hr className='aside-border' />
                                 <p>The goal of our monthly maintenance is to keep your vehicle looking like new year around.</p>
-                                <p>Every month you get a <a href="/services/DLWash" className='aside-link'>Dirt-Less Wash</a> with a ceramic booster and a <a href='/services/FullIntEx' className='aside-link'>Full Interior Detail</a>.</p>
+                                <p>Every month you get a <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> with a ceramic booster and a <a href='/services/full-interior-detail' className='aside-link'>Full Interior Detail</a>.</p>
                                 <hr className='aside-border' />
                                 <p className='bold text-xl mb-0'>Monthly Maintenance Pricing:</p>
                                 <div className='maintenance-costs'>

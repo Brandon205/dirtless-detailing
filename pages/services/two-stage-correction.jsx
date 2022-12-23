@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 
-import cover from '../../public/imgs/FB_IMG_1590172619153.jpg';
+import cover from '../../public/imgs/TwoStageCover.webp';
 import paintDefects from '../../public/imgs/pageimgs/homepage/paintDefects.png';
 
 const steps = [
@@ -15,14 +15,14 @@ const steps = [
   ["Correction Prep - Iron Decontamination", "Iron decontamination to get rid of the rest of the embedded iron particles in your paint."],
   ["Dry Vehicle", "Dry the whole vehicle with clean towels and air blowers."],
   ["Tape Vehicle", "Tape off trim and sensitive areas (some detailers skip this step)."],
-  ["Paint Correction", "Complete Single Stage paint correction using Griots products removing 65-80% of scratches and swirls."],
+  ["Paint Correction", "Complete Two Stage paint correction using Griots products removing all scratches and swirls we possibly can while staying safe for vehicle specific clear coat thickness."],
   ["Remove Polishing Compound", "Remove polishing compound residue from cracks, crevices, etc."],
   ["Protect Paint", "Protect paint with ceramic spray or "],
   ["Door Jambs", "Clean door jambs."],
   ["Dress Vehicle", "Dress all plastics, wheel wells, and tires."]
 ]
 
-export default function SinglePC() {
+export default function TwoPC() {
   const [href, setHref] = useState('');
 
   useEffect(() => {
@@ -38,30 +38,29 @@ export default function SinglePC() {
         <div className="step-container">
           <h4 className="step-title">{item[0]}</h4>
           <p className='step-desc'>{item[1]}</p>
-          {id === 9 ? <a className='aside-link' href="/services/ExtCoatings">ceramic coating.</a> : ''}
+          {id === 9 ? <a className='aside-link' href="/services/exterior-ceramic-coating">ceramic coating.</a> : ''}
         </div>
       </li>
     )
   })
-
   return (
     <section className='service-content-container'>
       <Head>
-        <title>Single Stage Paint Correction | Dirt-Less Detailing</title>
-        <meta property="og:title" content="Single Stage Paint Correction | Dirt-Less Detailing" />
-        <meta name="description" content="Our Single Stage Paint Correction should fix most of your Paint Correction needs, leaving your paint nearly scratch free!" />
-        <meta property="og:description" content="Our Single Stage Paint Correction should fix most of your Paint Correction needs, leaving your paint nearly scratch free!" />
+        <title>Two Stage Paint Correction | Dirt-Less Detailing</title>
+        <meta property="og:title" content="Two Stage Paint Correction | Dirt-Less Detailing" />
+        <meta name="description" content="Our Two Stage Paint Correction is for vehicles that are to be spotless and have a beautiful shine. This service will get them there." />
+        <meta property="og:description" content="Our Two Stage Paint Correction is for vehicles that are to be spotless and have a beautiful shine. This service will get them there." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.dirtlessdetailing.com/services/SinglePC" />
+        <meta property="og:url" content="https://www.dirtlessdetailing.com/services/two-stage-correction" />
         <meta property="og:image" content={cover.src} />
-        <link rel="canonical" href="https://www.dirtlessdetailing.com/services/SinglePC" />
+        <link rel="canonical" href="https://www.dirtlessdetailing.com/services/two-stage-correction" />
       </Head>
       <div className="cover">
-        <Image src={cover} alt="Vehicle after a Single Stage Paint Correction" layout="fill" objectFit='cover' placeholder='blur' priority />
+        <Image src={cover} alt="Vehicle after a Two Stage Paint Correction" layout="fill" objectFit='cover' placeholder='blur' priority />
       </div>
       <div className="servicepage-header">
-        <h1>Single Stage Paint Correction</h1>
-        <h2 className='page-subheading'>Restore your vehicles paint by removing scratches and swirls</h2>
+        <h1>Two Stage Paint Correction</h1>
+        <h2 className='page-subheading'>Go the extra mile and remove years of scratches and swirls with this 2 stage correction</h2>
         <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
         <p className='inline text-small'>
           Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
@@ -72,19 +71,20 @@ export default function SinglePC() {
         <div className="process-container">
           <div>
             <main className="service-main">
-              <h2 className='text-large'>Single Stage Paint Correction</h2>
+              <h2 className='text-large mt-0'>Two Stage Paint Correction</h2>
               <div className="text-left">
-                <p>Have you looked at your paint under the sun and saw a web of swirls and scratches?</p>
-                <p>These are called swirl marks. How did they get there in the first place? The biggest culprit is usually improper washing and drying methods. Automatic car washes and using low-quality towels or wash mitts can all lead to abrading your paint and leaving imperfections.</p>
-                <p>With our <a href='/services/SinglePC' className='aside-link'>Single Stage Paint Correction</a> service, you can remove 60% to 70% of imperfections to reveal a great shine. This is a fantastic service for vehicles that you want to restore their shine without going “all in” like we do with our 2 stage paint correction service.</p>
-                <p>Unlike some of our other services that can be done in just a few hours, this service requires more time and better lighting to achieve the proper results. This is why we require you to drop off the vehicle at our <a href='/correction/bonney-lake' className='aside-link'>shop</a> location.</p>
-                <p>Want to compare this to our Two Stage Paint Correction? Check out our <a href='/detailing/correction' className='aside-link'>comparison</a> page for more details.</p>
+                <p>Our <a href="/services/two-stage-correction" className='aside-link'>Two Stage Paint Correction</a> service is aimed to remove as many swirls, scratches, and imperfections from your paint as possible. This is where we do an intense cutting and polishing step, called a 2-step correction, to get the most gloss and clarity from your paintwork.</p>
+                <p>Depending on the condition, whether the vehicle is new or not, some scratches won't come all the way out. It could be the scratches are too deep to remove safely, or the clear coat itself is thinning out. (We'll take paint measurements before we start.)</p>
+                <p>This is where we'll make the call on what we can safely remove from your paint. It's not just about removing as many imperfections as possible. It's also knowing when enough is enough to keep the integrity of the paint healthy.</p>
+                <p>The Level 2 paint correction is a commitment that you are making to your vehicle. If you'd like to keep the shine on your paint, you have to properly maintain the vehicle after the service is complete. If you don't properly wash and dry the vehicle, you can easily put all those swirls and scratches back into your paint after just a few washes.</p>
+                <p>This is one of our most involved services that we offer so we'll need to perform it at our <a href='/correction/bonney-lake' className='aside-link'>shop</a> location in Bonney Lake.</p>
+                <p>Want to compare this to our Single Stage Paint Correction? Check out our <a href='/detailing/correction' className='aside-link'>comparison</a> page for more details.</p>
               </div>
             </main>
 
             <br className='extra-space' />
 
-            <h2 className='cleaning-process-title'>Our Single Stage Paint Correction Process</h2>
+            <h2 className='cleaning-process-title'>Our Two Stage Paint Correction Process</h2>
             <ol className='list'>
               {content}
             </ol>
@@ -96,8 +96,8 @@ export default function SinglePC() {
                 <p className='extra-addons'>Other Correction Pages</p>
                 <hr className="contact-border" style={{ marginBottom: 16 }} />
                 <div className="aside-links">
-                  <a href="/services/SinglePC" style={{ color: href.endsWith('SinglePC') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('SinglePC') ? '> ' : ''} Single Stage Paint Correction</a>
-                  <a href="/services/TwoPC" style={{ color: href.endsWith('TwoPC') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('TwoPC') ? '> ' : ''} Two Stage Paint Correction</a>
+                  <a href="/services/single-stage-correction" style={{ color: href.endsWith('SinglePC') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('SinglePC') ? '> ' : ''} Single Stage Paint Correction</a>
+                  <a href="/services/two-stage-correction" style={{ color: href.endsWith('TwoPC') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('TwoPC') ? '> ' : ''} Two Stage Paint Correction</a>
                   <a href="/gallery/PaintCorrectionGallery" className="service-link">Paint Correction Gallery</a>
                 </div>
               </div>
@@ -105,11 +105,11 @@ export default function SinglePC() {
 
             <div className='aside-container'>
               <div className='service-aside addons-aside'>
-                <a href="/services/Addons" className='extra-addons'>Extra Add-ons</a>
+                <a href="/services/add-ons" className='extra-addons'>Extra Add-ons</a>
                 <hr className="contact-border" style={{ marginBottom: 16 }} />
                 <div className="aside-links">
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/Addons#glass" className='text-blue'>Glass Polishing</a></p>
+                    <p className='addon-title'><a href="/services/add-ons#glass" className='text-blue'>Glass Polishing</a></p>
                     <p className='m-0'><span className="bold special-package">$80</span>/hour</p>
                     <p className="addon-subtext">Gives you crystal clear windows.</p>
                   </div>
@@ -121,26 +121,26 @@ export default function SinglePC() {
         </div>
 
         <div>
-          <h3 className='pricing-title'>Our Single Stage Paint Correction Pricing</h3>
+          <h3 className='pricing-title'>Our Two Stage Paint Correction Pricing</h3>
           <strong className='pricing-subtext'>*Final pricing may vary based on your vehicle condition and size.</strong>
           <div className="pricing-container">
             <div className="pricing-card">
               <strong className='size'>Small</strong>
-              <p className="pricing-price pricing-border">$300- $450</p>
+              <p className="pricing-price pricing-border">$450- $600</p>
               <p className="example-vehicle pricing-border">Smaller Trucks</p>
               <p className="example-vehicle pricing-border">Most Cars</p>
               <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
             </div>
             <div className="pricing-card">
               <strong className='size'>Medium</strong>
-              <p className="pricing-price pricing-border">$450- $600</p>
+              <p className="pricing-price pricing-border">$600- $850</p>
               <p className="example-vehicle pricing-border">Mid-Size SUV's</p>
               <p className="example-vehicle pricing-border">Most Wagons</p>
               <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
             </div>
             <div className="pricing-card">
               <strong className='size'>Large</strong>
-              <p className="pricing-price pricing-border">$600- $850</p>
+              <p className="pricing-price pricing-border">$800- $1,100</p>
               <p className="example-vehicle pricing-border">Large SUV's</p>
               <p className="example-vehicle pricing-border">Trucks</p>
               <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
@@ -158,8 +158,6 @@ export default function SinglePC() {
           </div>
 
         </div>
-
-        <br className="extra-space" />
 
         <div>
           <strong className='text-medium'>We'll help customers from all over get a paint correction on their vehicle, however, most of our customers come to our shop from these areas:</strong>

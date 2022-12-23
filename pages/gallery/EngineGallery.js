@@ -23,7 +23,7 @@ export default function PaintCorrectionGallery() {
       </div>
       <div className="servicepage-heading">
         <h1>Engine Cleaning Gallery</h1>
-        <p>Check out the gallery below to see what we can do to clean your engine bay. Take a look at our <a href="/services/Addons#engine" className='aside-link' >Engine Cleaning</a> section on our add-ons page for more info.</p>
+        <p>Check out the gallery below to see what we can do to clean your engine bay. Take a look at our <a href="/services/add-ons#engine" className='aside-link' >Engine Cleaning</a> section on our add-ons page for more info.</p>
 
         <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
         <p className='inline text-small'>
@@ -34,7 +34,7 @@ export default function PaintCorrectionGallery() {
       <div className='gallery-container'>
         {imagery}
       </div>
-      <h2 style={{ color: 'white' }}>Check out the Engine Cleaning option on our <a href="/services/Addons#engine" className='aside-link' >Add-ons</a> page for more details!</h2>
+      <h2 style={{ color: 'white' }}>Check out the Engine Cleaning option on our <a href="/services/add-ons#engine" className='aside-link' >Add-ons</a> page for more details!</h2>
     </section>
   )
 }

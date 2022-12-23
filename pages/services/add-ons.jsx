@@ -19,9 +19,9 @@ export default function Addons() {
         <meta property="og:title" content="Dirt-Less Add-ons | Dirt-Less Detailing" />
         <meta name='description' property="og:description" content="Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment • Truck Bed Cleaning • Debadging • Headliners • Engine Bay Cleaning." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.dirtlessdetailing.com/services/Addons" />
+        <meta property="og:url" content="https://www.dirtlessdetailing.com/services/add-ons" />
         <meta property="og:image" content={cover.src} />
-        <link rel="canonical" href="https://www.dirtlessdetailing.com/services/Addons" />
+        <link rel="canonical" href="https://www.dirtlessdetailing.com/services/add-ons" />
       </Head>
       <div className="cover">
         <Image src={cover} alt="Vehicle after a Dirt-Less Wash with Glass Polishing addons" layout="fill" objectFit='cover' placeholder='blur' priority />
@@ -48,8 +48,8 @@ export default function Addons() {
             <p className="secondary-text"><span>$25</span></p>
             <p className="service-desc">This is our add-on to get your truck bed cleaned out. Can be added to either of our Dirt-Less Washes.</p>
             <div className='internal-links'>
-              <a href="/services/DLWash" className="readmore">Dirt-Less Wash</a>
-              <a href="/services/PDLWash" className="readmore">Premium Dirt-Less Wash</a>
+              <a href="/services/dirtless-wash" className="readmore">Dirt-Less Wash</a>
+              <a href="/services/premium-dirtless-wash" className="readmore">Premium Dirt-Less Wash</a>
             </div>
           </div>
         </div>
@@ -64,8 +64,8 @@ export default function Addons() {
             <p className="secondary-text"><span>$80</span></p>
             <p className="service-desc">We will cover sensitive/electronic areas in the bay, clean and wash, then dress the engine bay to have it looking like new!</p>
             <div className='internal-links'>
-              <a href="/services/DLWash" className="readmore">Dirt-Less Wash</a>
-              <a href="/services/PDLWash" className="readmore">Premium Dirt-Less Wash</a>
+              <a href="/services/dirtless-wash" className="readmore">Dirt-Less Wash</a>
+              <a href="/services/premium-dirtless-wash" className="readmore">Premium Dirt-Less Wash</a>
             </div>
           </div>
         </div>
@@ -80,8 +80,8 @@ export default function Addons() {
             <p className="secondary-text"><span>$80/hour</span></p>
             <p className="service-desc">Remove all scratches, etching, and watermarks possible. Can be added to any of our Paint Correction Services when contacting us.</p>
             <div className='internal-links'>
-              <a href="/services/SinglePC" className="readmore">Single Stage Paint Correction</a>
-              <a href="/services/TwoPC" className="readmore">Two Stage Paint Correction</a>
+              <a href="/services/single-stage-correction" className="readmore">Single Stage Paint Correction</a>
+              <a href="/services/two-stage-correction" className="readmore">Two Stage Paint Correction</a>
             </div>
           </div>
         </div>
@@ -96,10 +96,10 @@ export default function Addons() {
             <p className="secondary-text"><span>$80/hour</span></p>
             <p className="service-desc">Remove all overspray and waterspots we can. This can be added onto any of our Exterior Washes or either of our Paint Correction Services when contacting us.</p>
             <div className='internal-links'>
-              <a href="/services/DLWash" className="readmore">Dirt-Less Wash</a>
-              <a href="/services/PDLWash" className="readmore">Premium Dirt-Less Wash</a>
-              <a href="/services/SinglePC" className="readmore">Single Stage Paint Correction</a>
-              <a href="/services/TwoPC" className="readmore">Two Stage Paint Correction</a>
+              <a href="/services/dirtless-wash" className="readmore">Dirt-Less Wash</a>
+              <a href="/services/premium-dirtless-wash" className="readmore">Premium Dirt-Less Wash</a>
+              <a href="/services/single-stage-correction" className="readmore">Single Stage Paint Correction</a>
+              <a href="/services/two-stage-correction" className="readmore">Two Stage Paint Correction</a>
             </div>
           </div>
         </div>
@@ -114,10 +114,10 @@ export default function Addons() {
             <p className="secondary-text"><span>$80/hour</span></p>
             <p className="service-desc">Remove any vehicle badging including any residue left behind after removal</p>
             <div className='internal-links'>
-              <a href="/services/DLWash" className="readmore">Dirt-Less Wash</a>
-              <a href="/services/PDLWash" className="readmore">Premium Dirt-Less Wash</a>
-              <a href="/services/SinglePC" className="readmore">Single Stage Paint Correction</a>
-              <a href="/services/TwoPC" className="readmore">Two Stage Paint Correction</a>
+              <a href="/services/dirtless-wash" className="readmore">Dirt-Less Wash</a>
+              <a href="/services/premium-dirtless-wash" className="readmore">Premium Dirt-Less Wash</a>
+              <a href="/services/single-stage-correction" className="readmore">Single Stage Paint Correction</a>
+              <a href="/services/two-stage-correction" className="readmore">Two Stage Paint Correction</a>
             </div>
           </div>
         </div>
@@ -133,8 +133,8 @@ export default function Addons() {
             <p className="secondary-text"><span>$40-$80</span></p>
             <p className="service-desc">We will perform cleaning methods specific to your vehicles headliner material. We do this to prevent sagging and damage to the headliners. (Results may vary).</p>
             <div className='internal-links'>
-              <a href="/services/FullIntEx" className="readmore">Full Interior Cleaning</a>
-              <a href="/services/Bio" className="readmore">Biohazard Cleaning</a>
+              <a href="/services/full-interior-detail" className="readmore">Full Interior Cleaning</a>
+              <a href="/services/biohazard-cleaning" className="readmore">Biohazard Cleaning</a>
             </div>
           </div>
         </div>
@@ -149,8 +149,8 @@ export default function Addons() {
             <p className="secondary-text"><span>$100</span></p>
             <p className="service-desc">Ozone treatment is the use of O3 (gas ozone) to remove bacteria, viruses, and odors from your vehicle. This can be added to any of our Interior cleanings when contacting us.</p>
             <div className='internal-links'>
-              <a href="/services/FullIntEx" className="readmore">Full Interior Cleaning</a>
-              <a href="/services/Bio" className="readmore">Biohazard Cleaning</a>
+              <a href="/services/full-interior-detail" className="readmore">Full Interior Cleaning</a>
+              <a href="/services/biohazard-cleaning" className="readmore">Biohazard Cleaning</a>
             </div>
           </div>
         </div>

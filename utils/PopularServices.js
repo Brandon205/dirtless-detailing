@@ -8,142 +8,142 @@ import dlWash from '../public/imgs/pageimgs/exterior/IMG_20220929_155119.jpg';
 import paint from '../public/imgs/pageimgs/paintCorrection/paintcorrectionBA.webp';
 
 export default function PopularServices() {
-  return (
-    <section className="popular-container">
-        <div className="popular-services-card">
-            <div className="popular-services-header">
-                <a href='/services/FullIntEx' className="service-heading-link popular-service-title">Full Interior Cleaning</a>
-                <p className="price">Starting at: <span>$200</span></p>
-            </div>
-            <div className='popular-img'>
-                <Image style={{borderRadius: '1rem 1rem 0 0'}} src={interior} alt="Car interior before and after" layout='fill' objectFit='cover' loading='lazy' quality={25} />
+    return (
+        <section className="popular-container">
+            <div className="popular-services-card">
+                <div className="popular-services-header">
+                    <a href='/services/full-interior-detail' className="service-heading-link popular-service-title">Full Interior Cleaning</a>
+                    <p className="price">Starting at: <span>$200</span></p>
+                </div>
+                <div className='popular-img'>
+                    <Image style={{ borderRadius: '1rem 1rem 0 0' }} src={interior} alt="Car interior before and after" layout='fill' objectFit='cover' loading='lazy' quality={25} />
+                </div>
+
+                <div className="popular-desc">
+                    <ul className="checklist">
+                        <li className="checklist-item">
+                            <BsCheck2Circle className='checkcircle' />
+                            <p>Blow out the Interior with a Vortex Blowgun</p>
+                        </li>
+                        <li className="checklist-item">
+                            <BsCheck2Circle className='checkcircle' />
+                            <p>Hot Water Extraction (Only if Added)</p>
+                        </li>
+                        <li className="checklist-item">
+                            <BsCheck2Circle className='checkcircle' />
+                            <p>Vacuum out the Entire Interior</p>
+                        </li>
+                        <li className="checklist-item">
+                            <BsCheck2Circle className='checkcircle' />
+                            <p>Clean ALL Plastics/Leather</p>
+                        </li>
+                        <li className="checklist-item">
+                            <BsCheck2Circle className='checkcircle' />
+                            <p>Dress Vinyl/Leather</p>
+                        </li>
+                        <li className="checklist-item">
+                            <BsCheck2Circle className='checkcircle' />
+                            <p>Clean Door Jambs</p>
+                        </li>
+                        <li className="checklist-item">
+                            <BsCheck2Circle className='checkcircle' />
+                            <p>Clean Windows</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href='/services/full-interior-detail' className='popular-readmore'>Interior Cleaning Details {'>'}</a>
             </div>
 
-            <div className="popular-desc">
-                <ul className="checklist">
-                    <li className="checklist-item">
-                        <BsCheck2Circle className='checkcircle' />
-                        <p>Blow out the Interior with a Vortex Blowgun</p>
-                    </li>
-                    <li className="checklist-item">
-                        <BsCheck2Circle className='checkcircle' />
-                        <p>Hot Water Extraction (Only if Added)</p>
-                    </li>
-                    <li className="checklist-item">
-                        <BsCheck2Circle className='checkcircle' />
-                        <p>Vacuum out the Entire Interior</p>
-                    </li>
-                    <li className="checklist-item">
-                        <BsCheck2Circle className='checkcircle' />
-                        <p>Clean ALL Plastics/Leather</p>
-                    </li>
-                    <li className="checklist-item">
-                        <BsCheck2Circle className='checkcircle' />
-                        <p>Dress Vinyl/Leather</p>
-                    </li>
-                    <li className="checklist-item">
-                        <BsCheck2Circle className='checkcircle' />
-                        <p>Clean Door Jambs</p>
-                    </li>
-                    <li className="checklist-item">
-                        <BsCheck2Circle className='checkcircle' />
-                        <p>Clean Windows</p>
-                    </li>
-                </ul>
+            <div className="popular-services-card">
+                <div className="popular-services-header">
+                    <a href='/services/premium-dirtless-wash' className="service-heading-link popular-service-title">Full Interior + Exterior + Engine Bay Combo</a>
+                    <p className="price">Starting at: <span>$350</span></p>
+                </div>
+                <div className="popular-img">
+                    <Image style={{ borderRadius: '1rem 1rem 0 0' }} src={dlWash} alt="Car exterior after Dirt-Less Wash and full interior" layout='fill' objectFit='cover' loading='lazy' quality={25} />
+                </div>
+
+                <div className="popular-desc">
+                    <ul className="checklist">
+                        <li className="checklist-item">
+                            <BsCheck2Circle className='checkcircle' />
+                            <p>Vortex Blowgun to remove loose dirt/debris</p>
+                        </li>
+                        <li className="checklist-item">
+                            <BsCheck2Circle className='checkcircle' />
+                            <p>Vacuum out the interior</p>
+                        </li>
+                        <li className="checklist-item">
+                            <BsCheck2Circle className='checkcircle' />
+                            <p>Wipe Down and dress the interior</p>
+                        </li>
+                        <li className="checklist-item">
+                            <BsCheck2Circle className='checkcircle' />
+                            <p>Full Vehicle Strip Wash</p>
+                        </li>
+                        <li className="checklist-item">
+                            <BsCheck2Circle className='checkcircle' />
+                            <p>Clay Bar and Iron Decontamination</p>
+                        </li>
+                        <li className="checklist-item">
+                            <BsCheck2Circle className='checkcircle' />
+                            <p>Apply 6 month sealant</p>
+                        </li>
+                        <li className="checklist-item">
+                            <BsCheck2Circle className='checkcircle' />
+                            <p>Clean and dress the entire Engine Bay for FREE</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="/services/premium-dirtless-wash" className="popular-readmore">Premium Wash Details {'>'}</a>
             </div>
 
-            <a href='/services/FullIntEx' className='popular-readmore'>Interior Cleaning Details {'>'}</a>
-        </div>
+            <div className="popular-services-card">
+                <div className="popular-services-header">
+                    <a href='/services/single-stage-correction' className="service-heading-link popular-service-title">Ceramic Coating <br />(Protect Package)</a>
+                    <p className="price">Starting at: <span>$1,000</span></p>
+                </div>
+                <div className="popular-img">
+                    <Image style={{ borderRadius: '1rem 1rem 0 0' }} src={paint} alt="Before and after a Paint Correction" layout='fill' objectFit='cover' loading='lazy' quality={25} />
+                </div>
 
-        <div className="popular-services-card">
-            <div className="popular-services-header">
-                <a href='/services/PDLWash' className="service-heading-link popular-service-title">Full Interior + Exterior + Engine Bay Combo</a>
-                <p className="price">Starting at: <span>$350</span></p>
-            </div>
-            <div className="popular-img">
-                <Image style={{borderRadius: '1rem 1rem 0 0'}} src={dlWash} alt="Car exterior after Dirt-Less Wash and full interior" layout='fill' objectFit='cover' loading='lazy' quality={25} />
-            </div>
-            
-            <div className="popular-desc">
-                <ul className="checklist">
-                    <li className="checklist-item">
-                        <BsCheck2Circle className='checkcircle' />
-                        <p>Vortex Blowgun to remove loose dirt/debris</p>
-                    </li>
-                    <li className="checklist-item">
-                        <BsCheck2Circle className='checkcircle' />
-                        <p>Vacuum out the interior</p>
-                    </li>
-                    <li className="checklist-item">
-                        <BsCheck2Circle className='checkcircle' />
-                        <p>Wipe Down and dress the interior</p>
-                    </li>
-                    <li className="checklist-item">
-                        <BsCheck2Circle className='checkcircle' />
-                        <p>Full Vehicle Strip Wash</p>
-                    </li>
-                    <li className="checklist-item">
-                        <BsCheck2Circle className='checkcircle' />
-                        <p>Clay Bar and Iron Decontamination</p>
-                    </li>
-                    <li className="checklist-item">
-                        <BsCheck2Circle className='checkcircle' />
-                        <p>Apply 6 month sealant</p>
-                    </li>
-                    <li className="checklist-item">
-                        <BsCheck2Circle className='checkcircle' />
-                        <p>Clean and dress the entire Engine Bay for FREE</p>
-                    </li>
-                </ul>
-            </div>
+                <div className="popular-desc">
+                    <ul className="checklist">
+                        <li className="checklist-item">
+                            <BsCheck2Circle className='checkcircle' />
+                            <p>Full Vehicle Strip Wash</p>
+                        </li>
+                        <li className="checklist-item">
+                            <BsCheck2Circle className='checkcircle' />
+                            <p>Full Single Stage Paint Correction Service</p>
+                        </li>
+                        <li className="checklist-item">
+                            <BsCheck2Circle className='checkcircle' />
+                            <p>Clay Bar Treatment</p>
+                        </li>
+                        <li className="checklist-item">
+                            <BsCheck2Circle className='checkcircle' />
+                            <p>Iron Decontamination Treatment</p>
+                        </li>
+                        <li className="checklist-item">
+                            <BsCheck2Circle className='checkcircle' />
+                            <p>Dress all Plastics and Tires</p>
+                        </li>
+                        <li className="checklist-item">
+                            <BsCheck2Circle className='checkcircle' />
+                            <p>Coat Paint with IGL Kenzo Graphene 10H Ceramic</p>
+                        </li>
+                        <li className="checklist-item">
+                            <BsCheck2Circle className='checkcircle' />
+                            <p>Coat Windshield and Lights as well</p>
+                        </li>
+                    </ul>
+                </div>
 
-            <a href="/services/PDLWash" className="popular-readmore">Premium Wash Details {'>'}</a>
-        </div>
-
-        <div className="popular-services-card">
-            <div className="popular-services-header">
-                <a href='/services/SinglePC' className="service-heading-link popular-service-title">Ceramic Coating <br />(Protect Package)</a>
-                <p className="price">Starting at: <span>$1,000</span></p>
+                <a href="/services/exterior-ceramic-coating" className="popular-readmore">Ceramic Coating Details {'>'}</a>
             </div>
-            <div className="popular-img">
-                <Image style={{borderRadius: '1rem 1rem 0 0'}} src={paint} alt="Before and after a Paint Correction" layout='fill' objectFit='cover' loading='lazy' quality={25} />
-            </div>
-
-            <div className="popular-desc">
-                <ul className="checklist">
-                    <li className="checklist-item">
-                        <BsCheck2Circle className='checkcircle' />
-                        <p>Full Vehicle Strip Wash</p>
-                    </li>
-                    <li className="checklist-item">
-                        <BsCheck2Circle className='checkcircle' />
-                        <p>Full Single Stage Paint Correction Service</p>
-                    </li>
-                    <li className="checklist-item">
-                        <BsCheck2Circle className='checkcircle' />
-                        <p>Clay Bar Treatment</p>
-                    </li>
-                    <li className="checklist-item">
-                        <BsCheck2Circle className='checkcircle' />
-                        <p>Iron Decontamination Treatment</p>
-                    </li>
-                    <li className="checklist-item">
-                        <BsCheck2Circle className='checkcircle' />
-                        <p>Dress all Plastics and Tires</p>
-                    </li>
-                    <li className="checklist-item">
-                        <BsCheck2Circle className='checkcircle' />
-                        <p>Coat Paint with IGL Kenzo Graphene 10H Ceramic</p>
-                    </li>
-                    <li className="checklist-item">
-                        <BsCheck2Circle className='checkcircle' />
-                        <p>Coat Windshield and Lights as well</p>
-                    </li>
-                </ul>
-            </div>
-            
-            <a href="/services/ExtCoatings" className="popular-readmore">Ceramic Coating Details {'>'}</a>
-        </div>
-    </section>
-  )
+        </section>
+    )
 }

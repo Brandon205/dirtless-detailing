@@ -56,7 +56,7 @@ export default function Combo() {
                   </div>
                   <div className="step-container">
                     <h4 className="step-title">Full Interior Cleaning</h4>
-                    <p className='step-desc'>We will start by cleaning out the interior of the vehicle so that anything we blow out doesn't end up on the cleaned exterior. For more details on our exact full interior methods, check out our <a href='/services/FullIntEx' className='aside-link'>Full Interior</a> page.</p>
+                    <p className='step-desc'>We will start by cleaning out the interior of the vehicle so that anything we blow out doesn't end up on the cleaned exterior. For more details on our exact full interior methods, check out our <a href='/services/full-interior-detail' className='aside-link'>Full Interior</a> page.</p>
                   </div>
                 </li>
 
@@ -66,7 +66,7 @@ export default function Combo() {
                   </div>
                   <div className="step-container">
                     <h4 className="step-title">Engine Bay Cleaning</h4>
-                    <p className='step-desc'>We will then clean out the engine bay, continuing to clean from the inside of the vehicle out, so that the exterior will be spotless at the end. More information for the engine cleaning is posted on our <a href='/services/Addons#engine' className='aside-link'>Add-ons</a> page.</p>
+                    <p className='step-desc'>We will then clean out the engine bay, continuing to clean from the inside of the vehicle out, so that the exterior will be spotless at the end. More information for the engine cleaning is posted on our <a href='/services/add-ons#engine' className='aside-link'>Add-ons</a> page.</p>
                   </div>
                 </li>
 
@@ -76,7 +76,7 @@ export default function Combo() {
                   </div>
                   <div className="step-container">
                     <h4 className="step-title">Premium Dirt-Less Wash</h4>
-                    <p className='step-desc'>After cleaning and dressing the engine bay, we will finally move onto the exterior as the last step. We will perform our Premium Dirt-Less Wash procedure on your vehicle. For more details check out our <a href='/services/PDLWash' className='aside-link'>Premium Dirt-Less Wash</a> page.</p>
+                    <p className='step-desc'>After cleaning and dressing the engine bay, we will finally move onto the exterior as the last step. We will perform our Premium Dirt-Less Wash procedure on your vehicle. For more details check out our <a href='/services/premium-dirtless-wash' className='aside-link'>Premium Dirt-Less Wash</a> page.</p>
                   </div>
                 </li>
               </ol>
@@ -88,17 +88,17 @@ export default function Combo() {
 
             <div className='aside-container'>
               <div className='service-aside addons-aside'>
-                <a href="/services/Addons" className='extra-addons'>Extra Add-ons</a>
+                <a href="/services/add-ons" className='extra-addons'>Extra Add-ons</a>
                 <hr className="contact-border" style={{ marginBottom: 16 }} />
                 <div className="aside-links">
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/Addons#glass" className='text-blue'>Glass Polishing</a></p>
+                    <p className='addon-title'><a href="/services/add-ons#glass" className='text-blue'>Glass Polishing</a></p>
                     <p className='m-0'><span className="bold special-package">$80</span>/hour</p>
                     <p className='addon-subtext'>Gives you crystal clear windows.</p>
                   </div>
                   <hr className='aside-border' />
                   <div className="addon-container">
-                    <p className='addon-title'><a href="/services/Addons#waterspot" className='text-blue'>Waterspot/Overspray Removal</a></p>
+                    <p className='addon-title'><a href="/services/add-ons#waterspot" className='text-blue'>Waterspot/Overspray Removal</a></p>
                     <p className='m-0'><span className="bold special-package">$80</span>/hour</p>
                     <p className='addon-subtext'>Remove any Overspray and Waterspots from your vehicle.</p>
                   </div>
@@ -112,7 +112,7 @@ export default function Combo() {
                 <hr className="contact-border" style={{ marginBottom: 16 }} />
                 <div className="aside-links">
                   <h3>You get an <span className='special-package'>INCLUDED</span> Engine Cleaning with this order!</h3>
-                  <p style={{ color: 'lightgray' }} className="subtext">This special deal combines our <a className='aside-link text-blue' href="/services/PDLWash">Premium Dirt-Less Wash</a>, our best exterior wash service. Our <a className='aside-link text-blue' href="/services/FullIntEx">Full Interior Cleaning</a>, the most complete interior cleaning we provide, and we'll give you an Engine Bay Cleaning <span className='special-package bold'>ON US!</span></p>
+                  <p style={{ color: 'lightgray' }} className="subtext">This special deal combines our <a className='aside-link text-blue' href="/services/premium-dirtless-wash">Premium Dirt-Less Wash</a>, our best exterior wash service. Our <a className='aside-link text-blue' href="/services/full-interior-detail">Full Interior Cleaning</a>, the most complete interior cleaning we provide, and we'll give you an Engine Bay Cleaning <span className='special-package bold'>ON US!</span></p>
                 </div>
               </div>
             </div>
