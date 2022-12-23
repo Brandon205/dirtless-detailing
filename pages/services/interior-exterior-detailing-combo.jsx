@@ -41,7 +41,7 @@ export default function Combo() {
             <main className="service-main">
               <h2 className='text-large'>Interior and Exterior Combo Cleaning</h2>
               <div className="text-left">
-                <p>The full enchilada!  Our most complete detailing package and the best value package we offer. You get a Full Interior detail, Premium Dirt-Less wash, and a free engine bay detail on the house!</p>
+                <p>The full enchilada!  Our most complete detailing package and the best value package we offer. You get a <a href="/services/full-interior-detail" className='aside-link'>Full Interior Detail</a>, a <a href="/services/premium-dirtless-wash" className='aside-link'>Premium Dirt-Less Wash</a>, and a free <a href="/services/add-ons#engine" className='aside-link'>Engine Bay Detail</a> on the house!</p>
                 <p>If you are after the most thorough interior and exterior detail you can find, or even trying to get the most money when selling your vehicle, this is the package for you!</p>
               </div>
 
@@ -88,7 +88,7 @@ export default function Combo() {
 
             <div className='aside-container'>
               <div className='service-aside addons-aside'>
-                <a href="/services/add-ons" className='extra-addons'>Extra Add-ons</a>
+                <a href="/services/add-ons" className='extra-addons text-large'>Extra Add-ons</a>
                 <hr className="contact-border" style={{ marginBottom: 16 }} />
                 <div className="aside-links">
                   <div className="addon-container">
@@ -108,7 +108,7 @@ export default function Combo() {
 
             <div className='aside-container'>
               <div className='service-aside'>
-                <p className='extra-addons'>Combo Deal</p>
+                <p className='extra-addons text-large'>Combo Deal</p>
                 <hr className="contact-border" style={{ marginBottom: 16 }} />
                 <div className="aside-links">
                   <h3>You get an <span className='special-package'>INCLUDED</span> Engine Cleaning with this order!</h3>
@@ -120,6 +120,9 @@ export default function Combo() {
           </div>
         </div>
 
+        <br className='extra-space' />
+
+        <h4 className='text-large'>An example of our completed Combo Work:</h4>
         <div className="examples-container">
           <div className="example-img">
             <Zoom>
@@ -139,6 +142,8 @@ export default function Combo() {
         </div>
 
       </div>
+
+      <br className='extra-space' />
 
       <div>
         <h3 className='pricing-title'>Our Combo Deal Pricing</h3>
