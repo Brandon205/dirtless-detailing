@@ -76,7 +76,7 @@ export default function FullIntEx() {
               <br className='extra-space' />
             </main>
 
-            <h2 className='cleaning-process-title'>Our Interior Cleaning Process*</h2>
+            <h2 className='cleaning-process-title text-large'>Our Interior Cleaning Process*</h2>
             <ol className='list'>
               {content}
             </ol>
@@ -86,18 +86,18 @@ export default function FullIntEx() {
 
           <div className='aside-container'>
             <div className='service-aside'>
-              <p className='extra-addons'>Other Interior Pages</p>
+              <p className='extra-addons text-large'>Other Interior Pages</p>
               <hr className="contact-border" style={{ marginBottom: 16 }} />
               <div className="aside-links">
-                <a href="/services/FullIntEx" style={{ color: href.endsWith('FullIntEx') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('FullIntEx') ? '> ' : ''} Full Interior Cleaning</a>
-                <a href="/services/biohazard-cleaning" style={{ color: href.endsWith('Bio') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('Bio') ? '> ' : ''} Biohazard Cleaning</a>
+                <a href="/services/FullIntEx" style={{ color: href.endsWith('full-interior-detail') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('full-interior-detail') ? '> ' : ''} Full Interior Detail</a><br />
+                <a href="/services/biohazard-cleaning" style={{ color: href.endsWith('biohazard-cleaning') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('biohazard-cleaning') ? '> ' : ''} Biohazard Cleaning</a><br />
                 <a href="/gallery/interior-detail-gallery" className="service-link">Full Interior Gallery</a>
               </div>
             </div>
 
             <div className='aside-container'>
               <div className='service-aside addons-aside'>
-                <a href="/services/add-ons" className='extra-addons'>Extra Add-ons</a>
+                <a href="/services/add-ons" className='extra-addons text-large'>Extra Add-ons</a>
                 <hr className="contact-border" style={{ marginBottom: 16 }} />
                 <div className="aside-links">
                   <div className="addon-container">
@@ -150,7 +150,7 @@ export default function FullIntEx() {
               <a href="/contact" className="pricing-quote-btn">Contact Us</a>
             </div>
             <div className="pricing-card">
-              <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Small</strong>
+              <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Medium</strong>
               <strong className='size'>Without Extraction</strong>
               <p className="pricing-price pricing-border">$250</p>
               <strong className='size'>With Extraction</strong>
@@ -160,7 +160,7 @@ export default function FullIntEx() {
               <a href="/contact" className="pricing-quote-btn">Contact Us</a>
             </div>
             <div className="pricing-card">
-              <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Small</strong>
+              <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Large</strong>
               <strong className='size'>Without Extraction</strong>
               <p className="pricing-price pricing-border">$300</p>
               <strong className='size'>With Extraction</strong>

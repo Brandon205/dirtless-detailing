@@ -74,26 +74,28 @@ export default function Bio() {
 
               <br className='extra-space' />
             </main>
-            <h2 className='cleaning-process-title'>Our Biohazard Cleaning Process</h2>
+            <h2 className='cleaning-process-title text-large'>Our Biohazard Cleaning Process</h2>
             <ol className='list'>
               {content}
             </ol>
           </div>
 
+          <br className='extra-space' />
+
           <div className='aside-container'>
             <div className='service-aside'>
-              <p className='extra-addons'>Other Interior Pages</p>
+              <p className='extra-addons text-large'>Other Interior Pages</p>
               <hr className="contact-border" style={{ marginBottom: 16 }} />
               <div className="aside-links">
-                <a href="/services/full-interior-detail" style={{ color: href.endsWith('FullIntEx') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('FullIntEx') ? '> ' : ''} Full Interior Cleaning</a>
-                <a href="/services/biohazard-cleaning" style={{ color: href.endsWith('Bio') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('Bio') ? '> ' : ''} Biohazard Cleaning</a>
+                <a href="/services/full-interior-detail" style={{ color: href.endsWith('full-interior-detail') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('full-interior-detail') ? '> ' : ''} Full Interior Detail</a><br />
+                <a href="/services/biohazard-cleaning" style={{ color: href.endsWith('biohazard-cleaning') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('biohazard-cleaning') ? '> ' : ''} Biohazard Cleaning</a><br />
                 <a href="/gallery/interior-detail-gallery" className="service-link">Full Interior Gallery</a>
               </div>
             </div>
 
             <div className='aside-container'>
               <div className='service-aside addons-aside'>
-                <a href="/services/add-ons" className='extra-addons'>Extra Add-ons</a>
+                <a href="/services/add-ons" className='extra-addons text-large'>Extra Add-ons</a>
                 <hr className="contact-border" style={{ marginBottom: 16 }} />
                 <div className="aside-links">
                   <div className="addon-container">
@@ -108,6 +110,9 @@ export default function Bio() {
           </div>
         </div>
 
+        <br className='extra-space' />
+
+        <h4 className='text-large'>Some extreme examples of our Biohazard cleaning work so far:</h4>
         <div className="examples-container">
           <div className="example-img">
             <Zoom>
@@ -125,6 +130,8 @@ export default function Bio() {
             </Zoom>
           </div>
         </div>
+
+        <br className='extra-space' />
 
         <div>
           <h3 className='pricing-title'>Our Biohazard Cleaning Prices</h3>
