@@ -1015,8 +1015,7 @@ hr {
 
 .faq-ul {
   text-align: left;
-  letter-spacing: 1.2;
-  padding-left: 0;
+  letter-spacing: 1.25px;
   padding-bottom: 8vh;
   margin-bottom: 0;
 }
@@ -1441,7 +1440,7 @@ hr {
   margin: 0 auto;
   line-height: 2;
   font-size: 1.1em;
-  text-align: center;
+  text-align: left;
 }
 
 /** LOCATION PAGE CSS **/
@@ -1517,6 +1516,10 @@ hr {
 
 .text-large {
   font-size: 1.7em;
+}
+
+.text-xl {
+  font-size: 2em;
 }
 
 .w-70 {
@@ -1936,5 +1939,32 @@ hr {
 
   .gallery-container {
     column-count: 4;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .pricing-container {
+    gap: 4rem
+  }
+
+  .service-main {
+    width: 55vw;
+    text-align: center;
+  }
+
+  .service-aside {
+    width: 400px;
+  }
+
+  .extra-space {
+    margin: 4rem auto
+  }
+
+  .text-large {
+    font-size: 2em;
+  }
+
+  .text-xl {
+    font-size: 2.5em;
   }
 }

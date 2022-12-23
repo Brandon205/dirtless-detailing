@@ -14,7 +14,6 @@ import iglCircle from '../../public/imgs/iglcircle.jpg';
 import kenzo from '../../public/imgs/kenzo.png';
 import iglCoating from '../../public/imgs/pageimgs/homepage/iglCoating.png';
 import ext1 from '../../public/imgs/pageimgs/ceramic/317953380_3245073689065810_496222385512149880_n.jpg';
-import ext2 from '../../public/imgs/pageimgs/ceramic/318206630_688872332864156_6250333864852484039_n.jpg';
 import ext3 from '../../public/imgs/pageimgs/ceramic/organized1.jpg';
 import ext4 from '../../public/imgs/pageimgs/ceramic/319282824_6026927310663439_4187208472627188697_n.jpg';
 import ext5 from '../../public/imgs/pageimgs/ceramic/fenderDrops.jpg';
@@ -55,7 +54,7 @@ export default function ExtCoatings() {
                             <p>As an analogy, think of the Three Little Pigs. Wax is like the straw house, and ceramic coatings are like the brick house. Both offer protection from rain and dust, but one is far superior.</p>
                         </div>
 
-                        <br className='extra-space' />
+                        {/* <br className='extra-space' /> */}
 
                         <h2 className='text-large'>The benefits you get with a coating:</h2>
                         <p className='text-left'>There are a lot of coating companies that make some pretty big claims of what a coating can do. Although there is some truth to these claims, we don't like to oversell the coatings capabilities.</p>
@@ -66,7 +65,7 @@ export default function ExtCoatings() {
                             <li>Provides unmatched hydrophobic properties that keeps your car cleaner, making it easier and more fun to wash.</li>
                         </ul>
 
-                        <br className='extra-space' />
+                        {/* <br className='extra-space' /> */}
 
                         <h2 className="text-large">Ceramic Coating Installation Facts</h2>
                         <div className="text-left">
@@ -76,7 +75,7 @@ export default function ExtCoatings() {
                             <p>Coatings react differently when it is humid, cold, or hot.  If you've been in Bonney Lake for an extended period of time, you'll notice that the weather is always changing. We do all of our coating installations at our shop location so we can control the working conditions.</p>
                         </div>
 
-                        <br className='extra-space' />
+                        {/* <br className='extra-space' /> */}
 
                         <h2 className="text-large">Common Myths About Ceramic Coatings</h2>
                         <div className="text-left">
@@ -88,7 +87,7 @@ export default function ExtCoatings() {
                             <p>You have to properly wash, dry, and maintain the coating for maximum durability. A coating that was meant to last for 5 years can start to break down after 2 to 3 years if not maintained properly.</p>
                         </div>
 
-                        <br className='extra-space' />
+                        {/* <br className='extra-space' /> */}
 
                         <h2 className='text-large'>Professional Interior Coatings</h2>
                         <div className="text-left">
@@ -104,7 +103,7 @@ export default function ExtCoatings() {
                     <div className='aside-container'>
                         <div className='aside-container'>
                             <div className='service-aside addons-aside'>
-                                <p className='extra-addons'>Our Interior Coatings</p>
+                                <p className='extra-addons text-large'>Our Interior Coatings</p>
                                 <hr className="contact-border" style={{ marginBottom: 16 }} />
                                 <div className="aside-links">
                                     <div className="addon-container">
@@ -126,12 +125,12 @@ export default function ExtCoatings() {
                     <div className='aside-container'>
                         <div className='aside-container'>
                             <div className='service-aside addons-aside'>
-                                <h4 className='text-xl mb-0 mt-0'>Monthly Maintenance:</h4>
+                                <h4 className='text-large mb-0 mt-0'>Monthly Maintenance:</h4>
                                 <hr className='aside-border' />
                                 <p>The goal of our monthly maintenance is to keep your vehicle looking like new year around.</p>
                                 <p>Every month you get a <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> with a ceramic booster and a <a href='/services/full-interior-detail' className='aside-link'>Full Interior Detail</a>.</p>
                                 <hr className='aside-border' />
-                                <p className='bold text-xl mb-0'>Monthly Maintenance Pricing:</p>
+                                <p className='bold text-large mb-0'>Monthly Maintenance Pricing:</p>
                                 <div className='maintenance-costs'>
                                     <p>Small <span className='special-package'>$130</span></p>
                                     <p>Medium <span className='special-package'>$160</span></p>
@@ -144,14 +143,14 @@ export default function ExtCoatings() {
                     <div className='aside-container'>
                         <div className='aside-container'>
                             <div className='service-aside addons-aside'>
-                                <h4 className='text-xl mb-0 mt-0'>Yearly Maintenance:</h4>
+                                <h4 className='text-large mb-0 mt-0'>Yearly Maintenance:</h4>
                                 <hr className='aside-border' />
                                 <p>• We will wash the whole vehicle top to bottom, remove and tar/sap, and do an iron decontamination treatment.</p>
                                 <p>• Then we will super lightly clay bar and/or polish the vehicle, if needed.</p>
                                 <p>• Finally we will top with a ceramic booster and apply another coat of ceramic to the windshield.</p>
                                 <p>• BONUS: Keeping up with this will qualify you for our 5 year warranty on your Ceramic Coating.</p>
                                 <hr className='aside-border' />
-                                <p className='bold text-xl mb-0'>Yearly Maintenance costs:</p>
+                                <p className='bold text-large mb-0'>Yearly Maintenance costs:</p>
                                 <div className='maintenance-costs'>
                                     <p>Small <span className='special-package'>$200</span></p>
                                     <p>Medium <span className='special-package'>$250</span></p>
@@ -164,7 +163,7 @@ export default function ExtCoatings() {
                     <div className='aside-container'>
                         <div className='aside-container'>
                             <div className='service-aside addons-aside'>
-                                <h4 className='text-xl mb-0 mt-0'>Re-coating Options:</h4>
+                                <h4 className='text-large mb-0 mt-0'>Re-coating Options:</h4>
                                 <hr className='aside-border' />
                                 <p>• Re-coat trim <span className='special-package'>$100</span></p>
                                 <p>• Re-coat wheel faces <span className='special-package'>$150</span></p>
@@ -185,7 +184,7 @@ export default function ExtCoatings() {
             </div>
 
             <div style={{ padding: 2 + 'rem' }}>
-                <h2 className='coating-heading'>Protect Package</h2>
+                <h2 className='coating-heading text-xl'>Protect Package</h2>
                 <p className='package-desc subtext'>The Protect package will cover and protect the most essential parts of your car with a 5 year ceramic coating.</p>
                 <div className='package-container'>
                     <div className='package-details'>
@@ -207,7 +206,7 @@ export default function ExtCoatings() {
 
                 <br className='extra-space' />
 
-                <h2 className='coating-heading'>Protect<span className='special-package'>+</span> Package</h2>
+                <h2 className='coating-heading text-xl'>Protect<span className='special-package'>+</span> Package</h2>
                 <p className='package-desc subtext'>The Protect+ package will cover and protect your whole vehicle with a 5 year Ceramic Coating.</p>
                 <div className='package-container'>
                     <div className='package-details'>
@@ -294,11 +293,6 @@ export default function ExtCoatings() {
                 <div className="example-img">
                     <Zoom>
                         <Image style={{ borderRadius: 16 }} src={ext1} alt="Water beads on large surface" layout="responsive" objectFit='scale-down' placeholder='blur' />
-                    </Zoom>
-                </div>
-                <div className="example-img">
-                    <Zoom>
-                        <Image style={{ borderRadius: 16 }} src={ext2} alt="Water beads on side of vehicle fender" layout="responsive" objectFit='scale-down' placeholder='blur' />
                     </Zoom>
                 </div>
                 <div className="example-img">
