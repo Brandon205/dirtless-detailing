@@ -33,7 +33,7 @@ export default function buckley() {
             <div className="servicepage-header">
                 <h1>Mobile Detailing in Buckley Washington</h1>
                 <h2>Ceramic Coating • Interior • Exterior • Paint Correction</h2>
-                <a href="/contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+                <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
                 <p className='inline text-small'>
                     Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
                 </p>
@@ -63,7 +63,7 @@ export default function buckley() {
                         <p className='mt-0'>Our paint correction services can fix roughly 60%-90% of minor damage and scratches and will leave your vehicle looking shinier and feeling smoother than ever.</p>
                     </div>
 
-                    <a href="/contact" className="quote-btn location-quote-btn">Get a Quote</a>
+                    <a href="/Contact" className="quote-btn location-quote-btn">Get a Quote</a>
                 </div>
             </div>
 
@@ -130,7 +130,7 @@ export default function buckley() {
                     </div>
                 </div>
             </div>
-            <a href="/contact" className="quote-btn location-quote-btn">Get a Quote Today!</a>
+            <a href="/Contact" className="quote-btn location-quote-btn">Get a Quote Today!</a>
         </div> 
     )
 }

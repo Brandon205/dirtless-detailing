@@ -55,7 +55,7 @@ export default function Bio() {
       <div className="servicepage-header">
         <h1>Biohazard Cleaning</h1>
         <h2 className='page-subheading'>Deeper stains and spills leaving unwanted odors? Look no further than our Biohazard cleaning.</h2>
-        <a href="/contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+        <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
         <p className='inline text-small'>
           Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
         </p>
@@ -141,7 +141,7 @@ export default function Bio() {
               <strong className='size'>Any Vehicle</strong>
               <p className="pricing-price pricing-border">$400- $1000</p>
               <p className="example-vehicle pricing-border">Any Size Vehicle</p>
-              <a href="/contact" className="pricing-quote-btn">Contact Us</a>
+              <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
             </div>
           </div>
 

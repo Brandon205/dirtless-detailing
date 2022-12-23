@@ -171,11 +171,11 @@ export default function MyApp({ Component, pageProps }) {
                             <hr className="nav-hr" />
 
                             <li>
-                                <a href="/about" className="menu-link" onClick={() => setNav('none')}><BsFillPersonBadgeFill /> About Us</a>
+                                <a href="/About" className="menu-link" onClick={() => setNav('none')}><BsFillPersonBadgeFill /> About Us</a>
                             </li>
 
                             <li className="menu-li quote-li">
-                                <a href="/contact" className="nav-quote-btn" onClick={() => setNav('none')}><HiInformationCircle /> Get Started</a>
+                                <a href="/Contact" className="nav-quote-btn" onClick={() => setNav('none')}><HiInformationCircle /> Get Started</a>
                             </li>
                         </ul>
                     </div>
@@ -188,7 +188,7 @@ export default function MyApp({ Component, pageProps }) {
                 <div className="footer-content-card">
                     <h3>COMPANY</h3>
                     <a href="/" className='footer-link'>Home</a>
-                    <a href="/about" className='footer-link'>About Us</a>
+                    <a href="/About" className='footer-link'>About Us</a>
                 </div>
                 <div className="footer-content-card">
                     <h3>CERAMIC COATINGS</h3>

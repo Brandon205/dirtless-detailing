@@ -32,7 +32,7 @@ export default function sumner() {
             <div className="servicepage-header location-header">
                 <h1>Paint Correction in Sumner Washington</h1>
                 <h2>Single and Two Stage Paint Correction services</h2>
-                <a href="/contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+                <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
                 <p className='inline text-small'>
                     Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
                 </p>
@@ -186,7 +186,7 @@ export default function sumner() {
                         <p className="pricing-price pricing-border">$450- $600</p>
                         <p className="example-vehicle pricing-border">2-Door Coupes</p>
                         <p className="example-vehicle pricing-border">Single/Extended Cabs</p>
-                        <a href="/contact" className="pricing-quote-btn">Contact Us</a>
+                        <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                     </div>
                     <div className="pricing-card">
                         <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Medium</strong>
@@ -196,7 +196,7 @@ export default function sumner() {
                         <p className="pricing-price pricing-border">$600- $850</p>
                         <p className="example-vehicle pricing-border">4 Door Vehicles</p>
                         <p className="example-vehicle pricing-border">Smaller SUV's</p>
-                        <a href="/contact" className="pricing-quote-btn">Contact Us</a>
+                        <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                     </div>
                     <div className="pricing-card">
                         <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Large</strong>
@@ -206,7 +206,7 @@ export default function sumner() {
                         <p className="pricing-price pricing-border">$800- $1,100</p>
                         <p className="example-vehicle pricing-border">Larger Trucks</p>
                         <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
-                        <a href="/contact" className="pricing-quote-btn">Contact Us</a>
+                        <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -252,7 +252,7 @@ export default function sumner() {
                 </div>
             </div>
             <h3>See more in our <a href="/gallery/paint-correction-gallery" className='aside-link'>Paint Correction Gallery</a>.</h3>
-            <a href="/contact" className="quote-btn location-quote-btn">Get a Quote Today!</a>
+            <a href="/Contact" className="quote-btn location-quote-btn">Get a Quote Today!</a>
         </div> 
     )
 }

@@ -25,7 +25,7 @@ export default function CoatingGallery() {
         <h1>Ceramic Coating Gallery</h1>
         <p>Check out the gallery below to see what we can do to correct your paint problems. Take a look at our <a href="/services/interior-ceramic-coating" className='aside-link' >Interior Coatings</a> page or our <a href="/detailing/ceramic" className='aside-link' >Ceramic Coating</a> page to learn more about these services.</p>
 
-        <a href="/contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+        <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
         <p className='inline text-small'>
           Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
         </p>

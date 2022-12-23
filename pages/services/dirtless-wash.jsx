@@ -51,7 +51,7 @@ export default function DLWash() {
       <div className="servicepage-header">
         <h1>Dirt-Less Wash</h1>
         <h2 className='page-subheading'>Get a Dirt-Less Wash and have your vehicle shine like never before!</h2>
-        <a href="/contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+        <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
         <p className='inline text-small'>
           Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
         </p>
@@ -130,28 +130,28 @@ export default function DLWash() {
               <p className="pricing-price pricing-border">$75</p>
               <p className="example-vehicle pricing-border">Smaller Trucks</p>
               <p className="example-vehicle pricing-border">Most Cars</p>
-              <a href="/contact" className="pricing-quote-btn">Contact Us</a>
+              <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
             </div>
             <div className="pricing-card">
               <strong className='size'>Medium</strong>
               <p className="pricing-price pricing-border">$100</p>
               <p className="example-vehicle pricing-border">Mid-Size SUV's</p>
               <p className="example-vehicle pricing-border">Most Wagons</p>
-              <a href="/contact" className="pricing-quote-btn">Contact Us</a>
+              <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
             </div>
             <div className="pricing-card">
               <strong className='size'>Large</strong>
               <p className="pricing-price pricing-border">$125</p>
               <p className="example-vehicle pricing-border">Large SUV's</p>
               <p className="example-vehicle pricing-border">Trucks</p>
-              <a href="/contact" className="pricing-quote-btn">Contact Us</a>
+              <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
             </div>
             <div className="pricing-card">
               <strong className='size'>Extra Large</strong>
               <p className="pricing-price pricing-border">$150</p>
               <p className="example-vehicle pricing-border">Larger Trucks</p>
               <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
-              <a href="/contact" className="pricing-quote-btn">Contact Us</a>
+              <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
             </div>
           </div>
 

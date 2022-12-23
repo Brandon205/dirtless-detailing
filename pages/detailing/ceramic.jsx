@@ -36,7 +36,7 @@ export default function ceramic() {
             <div className="servicepage-header">
                 <h1>Interior / Exterior Ceramic Coatings</h1>
                 <h2>IGL Graphene Coatings</h2>
-                <a href="/contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+                <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
                 <p className='inline text-small'>
                     Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
                 </p>
@@ -106,7 +106,7 @@ export default function ceramic() {
                         <p className="pricing-price pricing-border">$1,500</p>
                         <p className="example-vehicle pricing-border">2-Door Coupes</p>
                         <p className="example-vehicle pricing-border">Single/Extended Cabs</p>
-                        <a href="/contact" className="pricing-quote-btn">Contact Us</a>
+                        <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                     </div>
                     <div className="pricing-card">
                         <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Medium</strong>
@@ -116,7 +116,7 @@ export default function ceramic() {
                         <p className="pricing-price pricing-border">$1,700</p>
                         <p className="example-vehicle pricing-border">4 Door Vehicles</p>
                         <p className="example-vehicle pricing-border">Smaller SUV's</p>
-                        <a href="/contact" className="pricing-quote-btn">Contact Us</a>
+                        <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                     </div>
                     <div className="pricing-card">
                         <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Large</strong>
@@ -126,7 +126,7 @@ export default function ceramic() {
                         <p className="pricing-price pricing-border">$1,900</p>
                         <p className="example-vehicle pricing-border">Larger Trucks</p>
                         <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
-                        <a href="/contact" className="pricing-quote-btn">Contact Us</a>
+                        <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                     </div>
                 </div>
                 
@@ -138,13 +138,13 @@ export default function ceramic() {
                             <strong className='size'>Fabric Coating</strong>
                             <p className="pricing-price pricing-border">$75</p>    
                             <p className="example-vehicle pricing-border">Any Size Vehicle</p>
-                            <a href="/contact" className="pricing-quote-btn">Contact Us</a>
+                            <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                         </div>
                         <div className="pricing-card">
                             <strong className='size'>Leather Coating</strong>
                             <p className="pricing-price pricing-border">$150</p>
                             <p className="example-vehicle pricing-border">Any Size Vehicle</p>
-                            <a href="/contact" className="pricing-quote-btn">Contact Us</a>
+                            <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                         </div>
                     </div>
 
@@ -265,7 +265,7 @@ export default function ceramic() {
             </div>
 
             <br className="extra-space" />
-            <a href="/contact" className="quote-btn location-quote-btn">Get a Quote Today!</a>
+            <a href="/Contact" className="quote-btn location-quote-btn">Get a Quote Today!</a>
 
         </div> 
     )

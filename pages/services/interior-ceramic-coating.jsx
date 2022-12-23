@@ -31,7 +31,7 @@ export default function IntCoatings() {
             <div className="servicepage-header">
                 <h1>Interior Coating</h1>
                 <h2 className='page-subheading'>Let us install an interior ceramic coating in your car to save you time when cleaning up spills and other messes</h2>
-                <a href="/contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+                <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
                 <p className='inline text-small'>
                     Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
                 </p>
@@ -94,13 +94,13 @@ export default function IntCoatings() {
                                 <strong className='size text-xl'>Fabric Coating</strong>
                                 <p className="pricing-price pricing-border">$75</p>
                                 <p className="example-vehicle pricing-border">Any Size Vehicle</p>
-                                <a href="/contact" className="pricing-quote-btn">Contact Us</a>
+                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                             </div>
                             <div className="pricing-card">
                                 <strong className='size text-xl'>Leather Coating</strong>
                                 <p className="pricing-price pricing-border">$150</p>
                                 <p className="example-vehicle pricing-border">Any Size Vehicle</p>
-                                <a href="/contact" className="pricing-quote-btn">Contact Us</a>
+                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                             </div>
                         </div>
 
@@ -172,7 +172,7 @@ export default function IntCoatings() {
                         <div className='aside-container'>
                             <div className='service-aside addons-aside contact-aside'>
                                 <h4 className='mt-0'>Interested? Get in touch with us here, and let us know what we can do!</h4>
-                                <a href="/contact" className="quote-btn side-quote-btn">Contact Us</a>
+                                <a href="/Contact" className="quote-btn side-quote-btn">Contact Us</a>
                             </div>
                         </div>
                     </div>
