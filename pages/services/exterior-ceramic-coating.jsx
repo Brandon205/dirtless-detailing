@@ -38,7 +38,7 @@ export default function ExtCoatings() {
             <div className="servicepage-header">
                 <h1>Exterior Ceramic Coating</h1>
                 <h2 className='page-subheading'>Get a 5 year Ceramic Coating professionally installed by us to protect your vehicle year-round.</h2>
-                <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+                <a href="/contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
                 <p className='inline text-small'>
                     Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
                 </p>
@@ -176,7 +176,7 @@ export default function ExtCoatings() {
                         <div className='aside-container'>
                             <div className='service-aside addons-aside contact-aside'>
                                 <h4 className='mt-0'>Interested? Get in touch with us here, and let us know what we can do!</h4>
-                                <a href="/Contact" className="quote-btn side-quote-btn">Contact Us</a>
+                                <a href="/contact" className="quote-btn side-quote-btn">Contact Us</a>
                             </div>
                         </div>
                     </div>
@@ -242,7 +242,7 @@ export default function ExtCoatings() {
                             <p className="pricing-price pricing-border">$1,500</p>
                             <p className="example-vehicle pricing-border">2-Door Coupes</p>
                             <p className="example-vehicle pricing-border">Single/Extended Cabs</p>
-                            <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                            <a href="/contact" className="pricing-quote-btn">Contact Us</a>
                         </div>
                         <div className="pricing-card">
                             <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Medium</strong>
@@ -252,7 +252,7 @@ export default function ExtCoatings() {
                             <p className="pricing-price pricing-border">$1,700</p>
                             <p className="example-vehicle pricing-border">4 Door Vehicles</p>
                             <p className="example-vehicle pricing-border">Smaller SUV's</p>
-                            <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                            <a href="/contact" className="pricing-quote-btn">Contact Us</a>
                         </div>
                         <div className="pricing-card">
                             <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Large</strong>
@@ -262,7 +262,7 @@ export default function ExtCoatings() {
                             <p className="pricing-price pricing-border">$1,900</p>
                             <p className="example-vehicle pricing-border">Larger Trucks</p>
                             <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
-                            <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                            <a href="/contact" className="pricing-quote-btn">Contact Us</a>
                         </div>
                     </div>
 

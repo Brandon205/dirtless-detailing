@@ -52,16 +52,16 @@ export default function OtherServices() {
                     <Image src={ceramicGallery} alt="Smaller water beads on side of vehicle after a ceramic coating" className='otherservices-image' layout='responsive' height={450} width={450} loading='lazy' placeholder='blur' quality={20} />
                     <div className="otherservices-desc text-center">
                         <div>
-                            <a href='/gallery/PaintCorrectionGallery' className='service-heading-link'>CERAMIC COATING GALLERY</a>
+                            <a href='/gallery/paint-correction-gallery' className='service-heading-link'>CERAMIC COATING GALLERY</a>
                         </div>
                         <p className="service-desc">Take a look at some of the results we've had after our Ceramic Details.</p>
                         <p className="service-desc">Starting with our Single Stage Paint Correction before applying our Ceramics ensures the best covering of your vehicle possible, giving the absolute best results and longevity.</p>
 
-                        <a href='/gallery/CoatingGallery' className="readmore text-center">Ceramic Coating Gallery</a>
+                        <a href='/gallery/ceramic-coating-gallery' className="readmore text-center">Ceramic Coating Gallery</a>
                     </div>
                 </div>
             </section>
-            <a href="/Contact" className="quote-btn main-quote-btn">Get a Quote</a>
+            <a href="/contact" className="quote-btn main-quote-btn">Get a Quote</a>
 
             <div className='separator-container'>
                 <h3 className='service-title'>COMBO DEALS</h3>
@@ -82,7 +82,7 @@ export default function OtherServices() {
                     </div>
                 </div>
             </section>
-            <a href="/Contact" className="quote-btn main-quote-btn">Get a Quote</a>
+            <a href="/contact" className="quote-btn main-quote-btn">Get a Quote</a>
 
             <div className='separator-container'>
                 <h2 className='service-title'>INTERIOR CLEANING SERVICES</h2>
@@ -118,16 +118,16 @@ export default function OtherServices() {
                     <Image src={interiorGallery} alt="vehicle rear after an interior detail" className='otherservices-image' layout='responsive' height={550} width={450} loading='lazy' objectFit='cover' placeholder='blur' quality={1} />
                     <div className="otherservices-desc text-center">
                         <div>
-                            <a href='/gallery/FullIntGallery' className='service-heading-link'>FULL INTERIOR GALLERY</a>
+                            <a href='/gallery/interior-detail-gallery' className='service-heading-link'>FULL INTERIOR GALLERY</a>
                         </div>
                         <p className="service-desc">Our interior gallery is full of before and after images of the interiors that we have done.</p>
                         <p className="service-desc">Come check out some of the hundreds of photos we have of what we have been able to do for our customers interiors!</p>
 
-                        <a href='/gallery/FullIntGallery' className="readmore text-center">Full Interior Gallery</a>
+                        <a href='/gallery/interior-detail-gallery' className="readmore text-center">Full Interior Gallery</a>
                     </div>
                 </div>
             </section>
-            <a href="/Contact" className="quote-btn main-quote-btn">Get a Quote</a>
+            <a href="/contact" className="quote-btn main-quote-btn">Get a Quote</a>
 
             <div className='separator-container'>
                 <h2 className='service-title'>EXTERIOR CLEANING SERVICES</h2>
@@ -164,17 +164,17 @@ export default function OtherServices() {
                     <Image src={exteriorGallery} alt="subaru after an exterior wash" className='otherservices-image' layout='responsive' height={550} width={450} loading='lazy' objectFit='cover' placeholder='blur' quality={1} />
                     <div className="otherservices-desc text-center">
                         <div>
-                            <a href='/gallery/ExteriorWashGallery' className='service-heading-link'>EXTERIOR WASH GALLERY</a>
+                            <a href='/gallery/dirtless-wash-gallery' className='service-heading-link'>EXTERIOR WASH GALLERY</a>
                         </div>
                         <p className="service-desc">Our exterior gallery has plenty of examples of the exterior work that we do.</p>
                         <p className="service-desc">We have easily washed hundreds of vehicles and have our process optimized from the tires to the headlights, leaving every vehicle in great condition every time!</p>
 
-                        <a href='/gallery/ExteriorWashGallery' className="readmore text-center">Exterior Wash Gallery</a>
+                        <a href='/gallery/dirtless-wash-gallery' className="readmore text-center">Exterior Wash Gallery</a>
                     </div>
                 </div>
 
             </section>
-            <a href="/Contact" className="quote-btn main-quote-btn">Get a Quote</a>
+            <a href="/contact" className="quote-btn main-quote-btn">Get a Quote</a>
 
             <div className='separator-container'>
                 <h2 className='service-title'>PAINT CORRECTION SERVICES</h2>
@@ -210,16 +210,16 @@ export default function OtherServices() {
                     <Image src={paintCorrectionGallery} alt="Washed and paint corrected car" className='otherservices-image' layout='responsive' height={550} width={450} loading='lazy' objectFit='cover' placeholder='blur' quality={1} />
                     <div className="otherservices-desc text-center">
                         <div>
-                            <a href='/gallery/PaintCorrectionGallery' className='service-heading-link'>PAINT CORRECTION GALLERY</a>
+                            <a href='/gallery/paint-correction-gallery' className='service-heading-link'>PAINT CORRECTION GALLERY</a>
                         </div>
                         <p className="service-desc">Come see some of the results from our Paint Correction services!</p>
                         <p className="service-desc">These vehicles have all been through the whole process from completely washing, to taping off, all the way to the paint correction itself.</p>
 
-                        <a href='/gallery/PaintCorrectionGallery' className="readmore text-center">Paint Correction Gallery</a>
+                        <a href='/gallery/paint-correction-gallery' className="readmore text-center">Paint Correction Gallery</a>
                     </div>
                 </div>
             </section>
-            <a href="/Contact" className="quote-btn main-quote-btn">Get a Quote</a>
+            <a href="/contact" className="quote-btn main-quote-btn">Get a Quote</a>
         </div>
     )
 }

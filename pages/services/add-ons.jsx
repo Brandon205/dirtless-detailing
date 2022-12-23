@@ -29,7 +29,7 @@ export default function Addons() {
       <div className="servicepage-header">
         <h1>Dirt-Less Detailing Add-ons</h1>
         <h2 className='page-subheading'>Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment • Truck Bed Cleaning • Debadging • Headliners • Engine Bay Cleaning.</h2>
-        <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+        <a href="/contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
         <p className='inline text-small'>
           Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
         </p>

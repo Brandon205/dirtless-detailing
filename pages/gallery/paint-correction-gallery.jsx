@@ -14,9 +14,9 @@ export default function PaintCorrectionGallery() {
         <meta name="description" content="Paint Correction Photos • Here are some examples from both our Single and Two Stage Paint Correction services!" />
         <meta property="og:description" content="Paint Correction Photos • Here are some examples from both our Single and Two Stage Paint Correction services!" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.dirtlessdetailing.com/gallery/PaintCorrectionGallery" />
+        <meta property="og:url" content="https://www.dirtlessdetailing.com/gallery/paint-correction-gallery" />
         <meta property="og:image" content={cover.src} />
-        <link rel="canonical" href="https://www.dirtlessdetailing.com/gallery/PaintCorrectionGallery" />
+        <link rel="canonical" href="https://www.dirtlessdetailing.com/gallery/paint-correction-gallery" />
       </Head>
       <div className="cover">
         <Image src={cover} alt="Vehicle after a Two Stage Paint Correction" layout="fill" objectFit='cover' priority />
@@ -25,7 +25,7 @@ export default function PaintCorrectionGallery() {
         <h1>Paint Correction Gallery</h1>
         <p>Check out the gallery below to see what we can do to correct your paint problems. Take a look at our <a href='/detailing/correction' className='aside-link'>Paint Correction</a> page for more details on both of the correction services we offer.</p>
 
-        <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+        <a href="/contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
         <p className='inline text-small'>
           Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
         </p>

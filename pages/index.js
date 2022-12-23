@@ -75,7 +75,7 @@ export default function Home() {
                         <a href="https://iglcoatingsusa.com/" target="_blank" rel="noopener"><Image src={kenzo} width={smallScreen ? 100 : 135} height={smallScreen ? 100 : 135} alt="igl kenzo coatings" /></a>
                     </div>
 
-                    <a href="/Contact" className="quote-btn top-quote-btn">Get a Quote</a>
+                    <a href="/contact" className="quote-btn top-quote-btn">Get a Quote</a>
 
                 </div>
             </header>
@@ -86,7 +86,7 @@ export default function Home() {
 
             <PopularServices />
 
-            <a href="/Contact" className="quote-btn main-quote-btn popular-quote-btn">Get a Quote</a>
+            <a href="/contact" className="quote-btn main-quote-btn popular-quote-btn">Get a Quote</a>
 
             <OtherServices />
 

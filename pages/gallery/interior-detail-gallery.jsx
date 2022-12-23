@@ -14,9 +14,9 @@ export default function FullIntGallery() {
         <meta name="description" content="Our Full Interior Gallery shows off some of our hard work cleaning vehicle interiors. We've cleaned everything from spilled drinks to crumbs everywhere!" />
         <meta property="og:description" content="Our Full Interior Gallery shows off some of our hard work cleaning vehicle interiors. We've cleaned everything from spilled drinks to crumbs everywhere!" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.dirtlessdetailing.com/gallery/FullIntGallery" />
+        <meta property="og:url" content="https://www.dirtlessdetailing.com/gallery/interior-detail-gallery" />
         <meta property="og:image" content={cover.src} />
-        <link rel="canonical" href="https://www.dirtlessdetailing.com/gallery/FullIntGallery" />
+        <link rel="canonical" href="https://www.dirtlessdetailing.com/gallery/interior-detail-gallery" />
       </Head>
       <div className="cover">
         <Image src={cover} alt="Vehicle after a Full Interior Cleaning" layout="fill" objectFit='cover' priority />
@@ -25,7 +25,7 @@ export default function FullIntGallery() {
         <h1>Full Interior Cleaning Gallery</h1>
         <p>We have cleaned it all, even the worst of interiors. Check out the Gallery below. Take a look at our <a href="/services/full-interior-detail" className='aside-link' >Full Interior Cleaning</a> page to find out more.</p>
 
-        <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+        <a href="/contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
         <p className='inline text-small'>
           Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
         </p>

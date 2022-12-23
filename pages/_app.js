@@ -146,19 +146,19 @@ export default function MyApp({ Component, pageProps }) {
                                     <div className="nav-div">
                                         <h4 className="sub-menu-header">GALLERIES</h4>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <a href="/gallery/CoatingGallery" className='menu-link'><ImFilePicture /> Ceramic Coating Gallery</a>
+                                            <a href="/gallery/ceramic-coating-gallery" className='menu-link'><ImFilePicture /> Ceramic Coating Gallery</a>
                                         </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <a href="/gallery/FullIntGallery" className='menu-link'><FaPhotoVideo /> Full Interior Gallery</a>
+                                            <a href="/gallery/interior-detail-gallery" className='menu-link'><FaPhotoVideo /> Full Interior Gallery</a>
                                         </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <a href="/gallery/ExteriorWashGallery" className='menu-link'><BsFillCameraFill /> Exterior Wash Gallery</a>
+                                            <a href="/gallery/dirtless-wash-gallery" className='menu-link'><BsFillCameraFill /> Exterior Wash Gallery</a>
                                         </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <a href="/gallery/EngineGallery" className='menu-link'><TbEngine /> Engine Bay Gallery</a>
+                                            <a href="/gallery/engine-bay-gallery" className='menu-link'><TbEngine /> Engine Bay Gallery</a>
                                         </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <a href="/gallery/PaintCorrectionGallery" className='menu-link'><FaCameraRetro /> Paint Correction Gallery</a>
+                                            <a href="/gallery/paint-correction-gallery" className='menu-link'><FaCameraRetro /> Paint Correction Gallery</a>
                                         </li>
                                     </div>
                                 </ul>
@@ -171,11 +171,11 @@ export default function MyApp({ Component, pageProps }) {
                             <hr className="nav-hr" />
 
                             <li>
-                                <a href="/About" className="menu-link" onClick={() => setNav('none')}><BsFillPersonBadgeFill /> About Us</a>
+                                <a href="/about" className="menu-link" onClick={() => setNav('none')}><BsFillPersonBadgeFill /> About Us</a>
                             </li>
 
                             <li className="menu-li quote-li">
-                                <a href="/Contact" className="nav-quote-btn" onClick={() => setNav('none')}><HiInformationCircle /> Get Started</a>
+                                <a href="/contact" className="nav-quote-btn" onClick={() => setNav('none')}><HiInformationCircle /> Get Started</a>
                             </li>
                         </ul>
                     </div>
@@ -188,7 +188,7 @@ export default function MyApp({ Component, pageProps }) {
                 <div className="footer-content-card">
                     <h3>COMPANY</h3>
                     <a href="/" className='footer-link'>Home</a>
-                    <a href="/About" className='footer-link'>About Us</a>
+                    <a href="/about" className='footer-link'>About Us</a>
                 </div>
                 <div className="footer-content-card">
                     <h3>CERAMIC COATINGS</h3>

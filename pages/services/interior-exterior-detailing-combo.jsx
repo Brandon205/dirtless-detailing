@@ -29,7 +29,7 @@ export default function Combo() {
       <div className="servicepage-header">
         <h1>Full Interior and Exterior Combo</h1>
         <h2 className='page-subheading'>Full Interior Cleaning, Premium Dirt-Less Wash, and get an Engine Bay Cleaning on us!</h2>
-        <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+        <a href="/contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
         <p className='inline text-small'>
           Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
         </p>
@@ -149,28 +149,28 @@ export default function Combo() {
             <p className="pricing-price pricing-border">$350- $400</p>
             <p className="example-vehicle pricing-border">Smaller Trucks</p>
             <p className="example-vehicle pricing-border">Most Cars</p>
-            <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+            <a href="/contact" className="pricing-quote-btn">Contact Us</a>
           </div>
           <div className="pricing-card">
             <strong className='size'>Medium</strong>
             <p className="pricing-price pricing-border">$450- $500</p>
             <p className="example-vehicle pricing-border">Mid-Size SUV's</p>
             <p className="example-vehicle pricing-border">Most Wagons</p>
-            <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+            <a href="/contact" className="pricing-quote-btn">Contact Us</a>
           </div>
           <div className="pricing-card">
             <strong className='size'>Large</strong>
             <p className="pricing-price pricing-border">$550- $600</p>
             <p className="example-vehicle pricing-border">Large SUV's</p>
             <p className="example-vehicle pricing-border">Large trucks</p>
-            <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+            <a href="/contact" className="pricing-quote-btn">Contact Us</a>
           </div>
           <div className="pricing-card">
             <strong className='size'>Extra Large</strong>
             <p className="pricing-price pricing-border">$625- $700</p>
             <p className="example-vehicle pricing-border">Large Trucks</p>
             <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
-            <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+            <a href="/contact" className="pricing-quote-btn">Contact Us</a>
           </div>
         </div>
 

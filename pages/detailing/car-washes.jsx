@@ -33,7 +33,7 @@ export default function exteriorWash() {
       <div className="servicepage-header location-header">
         <h1>Car Wash Services</h1>
         <h2>Dirt-Less Wash, Premium Dirt-Less Wash, and Engine Bay Washes</h2>
-        <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+        <a href="/contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
         <p className='inline text-small'>
           Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
         </p>
@@ -235,7 +235,7 @@ export default function exteriorWash() {
             <p className="pricing-price pricing-border">$150</p>
             <p className="example-vehicle pricing-border">Smaller Trucks</p>
             <p className="example-vehicle pricing-border">Most Cars</p>
-            <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+            <a href="/contact" className="pricing-quote-btn">Contact Us</a>
           </div>
           <div className="pricing-card">
             <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Medium</strong>
@@ -245,7 +245,7 @@ export default function exteriorWash() {
             <p className="pricing-price pricing-border">$200</p>
             <p className="example-vehicle pricing-border">Mid-Size SUVs</p>
             <p className="example-vehicle pricing-border">Most Wagons</p>
-            <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+            <a href="/contact" className="pricing-quote-btn">Contact Us</a>
           </div>
           <div className="pricing-card">
             <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Large</strong>
@@ -255,7 +255,7 @@ export default function exteriorWash() {
             <p className="pricing-price pricing-border">$250</p>
             <p className="example-vehicle pricing-border">Large SUVs</p>
             <p className="example-vehicle pricing-border">Some Trucks</p>
-            <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+            <a href="/contact" className="pricing-quote-btn">Contact Us</a>
           </div>
           <div className="pricing-card">
             <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Extra Large</strong>
@@ -265,7 +265,7 @@ export default function exteriorWash() {
             <p className="pricing-price pricing-border">$275</p>
             <p className="example-vehicle pricing-border">Larger Trucks</p>
             <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
-            <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+            <a href="/contact" className="pricing-quote-btn">Contact Us</a>
           </div>
         </div>
       </div>
@@ -315,9 +315,9 @@ export default function exteriorWash() {
           </Zoom>
         </div>
       </div>
-      <h3>See more exterior photos in our <a href="/gallery/ExteriorWashGallery" className='aside-link'>Exterior Wash Gallery</a>. For more engine bay photos check out our <a href="/gallery/EngineGallery" className='aside-link'>Engine Gallery</a>.</h3>
+      <h3>See more exterior photos in our <a href="/gallery/dirtless-wash-gallery" className='aside-link'>Exterior Wash Gallery</a>. For more engine bay photos check out our <a href="/gallery/engine-bay-gallery" className='aside-link'>Engine Gallery</a>.</h3>
 
-      <a href="/Contact" className="quote-btn location-quote-btn">Get a Quote Today!</a>
+      <a href="/contact" className="quote-btn location-quote-btn">Get a Quote Today!</a>
 
     </div>
   );

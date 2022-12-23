@@ -15,9 +15,9 @@ export default function PaintCorrectionGallery() {
         <meta name="description" content="Take a look at our showcase of our exterior wash services to get a preview of what we're capable of doing to your car, no matter the current condition!" />
         <meta property="og:description" content="Take a look at our showcase of our exterior wash services to get a preview of what we're capable of doing to your car, no matter the current condition!" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.dirtlessdetailing.com/gallery/ExteriorWashGallery" />
+        <meta property="og:url" content="https://www.dirtlessdetailing.com/gallery/dirtless-wash-gallery" />
         <meta property="og:image" content={cover.src} />
-        <link rel="canonical" href="https://www.dirtlessdetailing.com/gallery/ExteriorWashGallery" />
+        <link rel="canonical" href="https://www.dirtlessdetailing.com/gallery/dirtless-wash-gallery" />
       </Head>
       <div className="cover">
         <Image src={cover} alt="Vehicle after a Dirt-Less Wash" layout="fill" objectFit='cover' priority />
@@ -26,7 +26,7 @@ export default function PaintCorrectionGallery() {
         <h1>Engine Cleaning Gallery</h1>
         <p>This is a showcase of our Dirt-Less Wash service. Take a look at our <a href="/detailing/car-washes" className='aside-link'>Car Washes</a> page for more info on the 2 services.</p>
 
-        <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+        <a href="/contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
         <p className='inline text-small'>
           Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
         </p>

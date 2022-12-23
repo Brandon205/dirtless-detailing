@@ -62,7 +62,7 @@ export default function SinglePC() {
       <div className="servicepage-header">
         <h1>Single Stage Paint Correction</h1>
         <h2 className='page-subheading'>Restore your vehicles paint by removing scratches and swirls</h2>
-        <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+        <a href="/contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
         <p className='inline text-small'>
           Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
         </p>
@@ -98,7 +98,7 @@ export default function SinglePC() {
                 <div className="aside-links">
                   <a href="/services/single-stage-correction" style={{ color: href.endsWith('SinglePC') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('SinglePC') ? '> ' : ''} Single Stage Paint Correction</a>
                   <a href="/services/two-stage-correction" style={{ color: href.endsWith('TwoPC') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('TwoPC') ? '> ' : ''} Two Stage Paint Correction</a>
-                  <a href="/gallery/PaintCorrectionGallery" className="service-link">Paint Correction Gallery</a>
+                  <a href="/gallery/paint-correction-gallery" className="service-link">Paint Correction Gallery</a>
                 </div>
               </div>
             </div>
@@ -129,21 +129,21 @@ export default function SinglePC() {
               <p className="pricing-price pricing-border">$300- $450</p>
               <p className="example-vehicle pricing-border">Smaller Trucks</p>
               <p className="example-vehicle pricing-border">Most Cars</p>
-              <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+              <a href="/contact" className="pricing-quote-btn">Contact Us</a>
             </div>
             <div className="pricing-card">
               <strong className='size'>Medium</strong>
               <p className="pricing-price pricing-border">$450- $600</p>
               <p className="example-vehicle pricing-border">Mid-Size SUV's</p>
               <p className="example-vehicle pricing-border">Most Wagons</p>
-              <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+              <a href="/contact" className="pricing-quote-btn">Contact Us</a>
             </div>
             <div className="pricing-card">
               <strong className='size'>Large</strong>
               <p className="pricing-price pricing-border">$600- $850</p>
               <p className="example-vehicle pricing-border">Large SUV's</p>
               <p className="example-vehicle pricing-border">Trucks</p>
-              <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+              <a href="/contact" className="pricing-quote-btn">Contact Us</a>
             </div>
           </div>
 

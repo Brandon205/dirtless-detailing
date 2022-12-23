@@ -14,9 +14,9 @@ export default function CoatingGallery() {
         <meta property="og:title" content="Dirt-Less Detailing | Ceramic Coating Gallery" />
         <meta name="description" content="A gallery of photos that we have taken showing off some of the vehicles that we have coated and protected!" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.dirtlessdetailing.com/gallery/CoatingGallery" />
+        <meta property="og:url" content="https://www.dirtlessdetailing.com/gallery/ceramic-coating-gallery" />
         <meta property="og:image" content={cover.src} />
-        <link rel="canonical" href="https://www.dirtlessdetailing.com/gallery/CoatingGallery" />
+        <link rel="canonical" href="https://www.dirtlessdetailing.com/gallery/ceramic-coating-gallery" />
       </Head>
       <div className="cover">
         <Image src={cover} alt="Vehicle after a Ceramic Coating" layout="fill" objectFit='cover' priority />
@@ -25,7 +25,7 @@ export default function CoatingGallery() {
         <h1>Ceramic Coating Gallery</h1>
         <p>Check out the gallery below to see what we can do to correct your paint problems. Take a look at our <a href="/services/interior-ceramic-coating" className='aside-link' >Interior Coatings</a> page or our <a href="/detailing/ceramic" className='aside-link' >Ceramic Coating</a> page to learn more about these services.</p>
 
-        <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+        <a href="/contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
         <p className='inline text-small'>
           Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
         </p>

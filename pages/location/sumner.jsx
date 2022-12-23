@@ -33,7 +33,7 @@ export default function sumner() {
             <div className="servicepage-header">
                 <h1>Mobile Detailing in Sumner Washington</h1>
                 <h2>Ceramic Coating • Interior • Exterior • Paint Correction</h2>
-                <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
+                <a href="/contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
                 <p className='inline text-small'>
                     Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
                 </p>
@@ -63,7 +63,7 @@ export default function sumner() {
                         <p className='mt-0'>Our paint correction services can fix roughly 60%-90% of minor damage and scratches and will leave your vehicle looking shinier and feeling smoother than ever.</p>
                     </div>
 
-                    <a href="/Contact" className="quote-btn location-quote-btn">Get a Quote</a>
+                    <a href="/contact" className="quote-btn location-quote-btn">Get a Quote</a>
                 </div>
             </div>
 
@@ -117,20 +117,20 @@ export default function sumner() {
                 <div className='location-gallery-container'>
                     <h3 className='text-large'>Our Gallery Pages:</h3>
                     <div className="text-left">
-                        <a href="/gallery/FullIntGallery" className='aside-link text-medium'>Interior Cleaning Gallery</a>
+                        <a href="/gallery/interior-detail-gallery" className='aside-link text-medium'>Interior Cleaning Gallery</a>
                         <p className='mt-0'>Come check out some of the photos we have of what we have been able to do for our customers interiors!</p>
-                        <a href="/gallery/ExteriorWashGallery" className='aside-link text-medium'>Exterior Wash Gallery</a>
+                        <a href="/gallery/dirtless-wash-gallery" className='aside-link text-medium'>Exterior Wash Gallery</a>
                         <p className='mt-0'>We have easily washed hundreds of vehicles and have our process optimized from the tires to the headlights, leaving every vehicle in great condition every time.</p>
-                        <a href="/gallery/PaintCorrectionGallery" className='aside-link text-medium'>Paint Correction Gallery</a>
+                        <a href="/gallery/paint-correction-gallery" className='aside-link text-medium'>Paint Correction Gallery</a>
                         <p className='mt-0'>These vehicles have all been through the whole process from completely washing, to taping off, all the way to the paint correction itself.</p>
-                        <a href="/gallery/CoatingGallery" className='aside-link text-medium'>Ceramic Coating Gallery</a>
+                        <a href="/gallery/ceramic-coating-gallery" className='aside-link text-medium'>Ceramic Coating Gallery</a>
                         <p className='mt-0'>A gallery of our work so far applying ceramic coatings.</p>
-                        <a href="/gallery/EngineGallery" className='aside-link text-medium'>Engine Bay Gallery</a>
+                        <a href="/gallery/engine-bay-gallery" className='aside-link text-medium'>Engine Bay Gallery</a>
                         <p className='mt-0'>Take a look at some of the results we've gotten from our engine bay cleaning service.</p>
                     </div>
                 </div>
             </div>
-            <a href="/Contact" className="quote-btn location-quote-btn">Get a Quote Today!</a>
+            <a href="/contact" className="quote-btn location-quote-btn">Get a Quote Today!</a>
         </div> 
     )
 }
