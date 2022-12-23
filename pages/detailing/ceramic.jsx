@@ -248,18 +248,18 @@ export default function ceramic() {
                 <strong className='text-medium'>We'll help customers from all over get a ceramic coating on their vehicle, however, most of our customers come to our shop from these areas:</strong>
                 <div style={{ display: 'grid', placeItems: 'center' }}>
                     <ul className='cities-ul'>
-                        <li><a href='/ceramic/bonney-lake' className='aside-link'>Bonney Lake</a></li>
-                        <li><a href='/ceramic/buckley' className='aside-link'>Buckley</a></li>
-                        <li><a href='/ceramic/sumner' className='aside-link'>Sumner</a></li>
-                        <li><a href='/ceramic/enumclaw' className='aside-link'>Enumclaw</a></li>
-                        <li><a href='/ceramic/puyallup' className='aside-link'>Puyallup</a></li>
-                        <li><a href='/ceramic/federal-way' className='aside-link'>Federal Way</a></li>
-                        <li><a href='/ceramic/orting' className='aside-link'>Orting</a></li>
-                        <li><a href='/ceramic/south-prairie' className='aside-link'>South Prairie</a></li>
-                        <li><a href='/ceramic/black-diamond' className='aside-link'>Black Diamond</a></li>
-                        <li><a href='/ceramic/milton' className='aside-link'>Milton</a></li>
-                        <li><a href='/ceramic/edgewood' className='aside-link'>Edgewood</a></li>
-                        <li><a href='/ceramic/graham' className='aside-link'>Graham</a></li>
+                        <li><a href='/ceramic-coating/bonney-lake' className='aside-link'>Bonney Lake</a></li>
+                        <li><a href='/ceramic-coating/buckley' className='aside-link'>Buckley</a></li>
+                        <li><a href='/ceramic-coating/sumner' className='aside-link'>Sumner</a></li>
+                        <li><a href='/ceramic-coating/enumclaw' className='aside-link'>Enumclaw</a></li>
+                        <li><a href='/ceramic-coating/puyallup' className='aside-link'>Puyallup</a></li>
+                        <li><a href='/ceramic-coating/federal-way' className='aside-link'>Federal Way</a></li>
+                        <li><a href='/ceramic-coating/orting' className='aside-link'>Orting</a></li>
+                        <li><a href='/ceramic-coating/south-prairie' className='aside-link'>South Prairie</a></li>
+                        <li><a href='/ceramic-coating/black-diamond' className='aside-link'>Black Diamond</a></li>
+                        <li><a href='/ceramic-coating/milton' className='aside-link'>Milton</a></li>
+                        <li><a href='/ceramic-coating/edgewood' className='aside-link'>Edgewood</a></li>
+                        <li><a href='/ceramic-coating/graham' className='aside-link'>Graham</a></li>
                     </ul>
                 </div>
             </div>

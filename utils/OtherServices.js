@@ -31,7 +31,7 @@ export default function OtherServices() {
                         </div>
                         <p className="service-desc">Did you know you could ceramic coat the interior of your car? Well you can, and it provides many of the benefits of a normal exterior coating like ease of maintenance/cleaning, but to the interior of your car!</p>
 
-                        <a href="services/IntCoatings" className="readmore">Interior Coating Details {'>'}</a>
+                        <a href="/services/interior-ceramic-coating" className="readmore">Interior Coating Details {'>'}</a>
                     </div>
                 </div>
 
@@ -44,7 +44,7 @@ export default function OtherServices() {
                         </div>
                         <p className="service-desc">With a professionally installed IGL Ceramic coating from us, your vehicle will be clean and protected. We are a licensed and certified coating installer through IGL and are happy to give your car that extra layer of protection it deserves</p>
 
-                        <a href="services/ExtCoatings" className="readmore">Exterior Coating Details {'>'}</a>
+                        <a href="/services/exterior-ceramic-coating" className="readmore">Exterior Coating Details {'>'}</a>
                     </div>
                 </div>
 
@@ -138,7 +138,7 @@ export default function OtherServices() {
                     <Image src={dlwash} alt="Vehicle after a Dirt-Less Wash Cleaning" className='otherservices-image' layout='responsive' height={550} width={450} loading='lazy' placeholder='blur' quality={1} />
                     <div className="otherservices-desc">
                         <div>
-                            <a href='services/DLWash' className='service-heading-link'>Dirt-Less Wash</a>
+                            <a href='/services/dirtless-wash' className='service-heading-link'>Dirt-Less Wash</a>
                             <p className="secondary-text">Starting at: <span>$75</span></p>
                         </div>
                         <p className="service-desc">Our Dirt-Less Wash will thoroughly clean the exterior of your vehicle with our tried and true cleaning process. We even apply a layer of wax to give your vehicle a layer of protection.</p>
@@ -189,7 +189,7 @@ export default function OtherServices() {
                         </div>
                         <p className="service-desc">Our single stage paint correction can fix 60%-70% of minor damage and scratches and will leave your vehicle looking shinier than ever.</p>
 
-                        <a href="services/SinglePC" className="readmore">Paint Correction Details {'>'}</a>
+                        <a href="/services/single-stage-correction" className="readmore">Paint Correction Details {'>'}</a>
                     </div>
                 </div>
 
@@ -202,7 +202,7 @@ export default function OtherServices() {
                         </div>
                         <p className="service-desc">Our 2 stage paint correction is great for getting your car to a near perfect state. This is great for show cars need that extra time and effort to get to that showroom shine.</p>
 
-                        <a href="services/TwoPC" className="readmore">Two Stage Paint Correction Details {'>'}</a>
+                        <a href="/services/two-stage-correction" className="readmore">Two Stage Paint Correction Details {'>'}</a>
                     </div>
                 </div>
 
