@@ -671,10 +671,6 @@ input[type="range"] {
   font-size: 3em;
 }
 
-.text-xl {
-  font-size: 1.5em;
-}
-
 .mb-0 {
   margin-bottom: 0;
 }
@@ -1921,10 +1917,6 @@ hr {
     display: flex;
     justify-content: space-around;
     padding: 0 2rem 2rem 2rem;
-  }
-
-  .coating-left {
-    text-align: left;
   }
 
   .coatingpage-header h1 {

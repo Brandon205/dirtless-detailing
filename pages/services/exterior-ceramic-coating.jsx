@@ -54,8 +54,6 @@ export default function ExtCoatings() {
                             <p>As an analogy, think of the Three Little Pigs. Wax is like the straw house, and ceramic coatings are like the brick house. Both offer protection from rain and dust, but one is far superior.</p>
                         </div>
 
-                        {/* <br className='extra-space' /> */}
-
                         <h2 className='text-large'>The benefits you get with a coating:</h2>
                         <p className='text-left'>There are a lot of coating companies that make some pretty big claims of what a coating can do. Although there is some truth to these claims, we don't like to oversell the coatings capabilities.</p>
                         <ul className='cities-ul'>
@@ -65,8 +63,6 @@ export default function ExtCoatings() {
                             <li>Provides unmatched hydrophobic properties that keeps your car cleaner, making it easier and more fun to wash.</li>
                         </ul>
 
-                        {/* <br className='extra-space' /> */}
-
                         <h2 className="text-large">Ceramic Coating Installation Facts</h2>
                         <div className="text-left">
                             <p>Before the coating is installed, your vehicle must first be properly prepped and corrected with one of our <a href="/detailing/correction" className='aside-link'>Paint Correction</a> services. If we apply the coating without the proper prep work, you won't get all of the benefits a ceramic coating can offer.</p>
@@ -74,8 +70,6 @@ export default function ExtCoatings() {
                             <p>As a general rule of thumb, the more durable the coating, the harder it is to install. For instance, a 1 year versus a 5 year coating. You have to understand the weather variables since that can play a major factor in the installation process.</p>
                             <p>Coatings react differently when it is humid, cold, or hot.  If you've been in Bonney Lake for an extended period of time, you'll notice that the weather is always changing. We do all of our coating installations at our shop location so we can control the working conditions.</p>
                         </div>
-
-                        {/* <br className='extra-space' /> */}
 
                         <h2 className="text-large">Common Myths About Ceramic Coatings</h2>
                         <div className="text-left">
@@ -86,8 +80,6 @@ export default function ExtCoatings() {
                             <p>The coating requires maintenance to prolong the durability. Just like many other things in life (like going to the dentist), if you don't care for the coating, it will degrade over time and not last its intended lifespan.</p>
                             <p>You have to properly wash, dry, and maintain the coating for maximum durability. A coating that was meant to last for 5 years can start to break down after 2 to 3 years if not maintained properly.</p>
                         </div>
-
-                        {/* <br className='extra-space' /> */}
 
                         <h2 className='text-large'>Professional Interior Coatings</h2>
                         <div className="text-left">
@@ -130,7 +122,7 @@ export default function ExtCoatings() {
                                 <p>The goal of our monthly maintenance is to keep your vehicle looking like new year around.</p>
                                 <p>Every month you get a <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> with a ceramic booster and a <a href='/services/full-interior-detail' className='aside-link'>Full Interior Detail</a>.</p>
                                 <hr className='aside-border' />
-                                <p className='bold text-large mb-0'>Monthly Maintenance Pricing:</p>
+                                <p className='text-large mb-0'>Monthly Maintenance Pricing:</p>
                                 <div className='maintenance-costs'>
                                     <p>Small <span className='special-package'>$130</span></p>
                                     <p>Medium <span className='special-package'>$160</span></p>
@@ -150,7 +142,7 @@ export default function ExtCoatings() {
                                 <p>• Finally we will top with a ceramic booster and apply another coat of ceramic to the windshield.</p>
                                 <p>• BONUS: Keeping up with this will qualify you for our 5 year warranty on your Ceramic Coating.</p>
                                 <hr className='aside-border' />
-                                <p className='bold text-large mb-0'>Yearly Maintenance costs:</p>
+                                <p className='text-large mb-0'>Yearly Maintenance costs:</p>
                                 <div className='maintenance-costs'>
                                     <p>Small <span className='special-package'>$200</span></p>
                                     <p>Medium <span className='special-package'>$250</span></p>

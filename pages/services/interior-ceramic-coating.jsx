@@ -62,6 +62,8 @@ export default function IntCoatings() {
                         </div>
                     </div>
 
+                    <br className='extra-space' />
+
                     <h2 className='coating-heading'>Leather Coating</h2>
                     <p className='package-desc subtext'>The longest lasting protection for your vehicles leather.</p>
                     <div className='package-container'>
@@ -82,18 +84,20 @@ export default function IntCoatings() {
                         </div>
                     </div>
 
+                    <br className='extra-space' />
+
                     <div>
                         <h3 className='pricing-title text-white'>Our Interior Coating Pricing</h3>
                         <h4 className='subtext'><span className='special-package'>*</span>Pricing does NOT include an <a href="/services/full-interior-detail" className='aside-link'>Interior Cleaning</a>, which you will want to factor in before getting a coating.</h4>
                         <div className='pricing-container text-black'>
                             <div className="pricing-card">
-                                <strong className='size'>Fabric Coating</strong>
+                                <strong className='size text-xl'>Fabric Coating</strong>
                                 <p className="pricing-price pricing-border">$75</p>
                                 <p className="example-vehicle pricing-border">Any Size Vehicle</p>
                                 <a href="/contact" className="pricing-quote-btn">Contact Us</a>
                             </div>
                             <div className="pricing-card">
-                                <strong className='size'>Leather Coating</strong>
+                                <strong className='size text-xl'>Leather Coating</strong>
                                 <p className="pricing-price pricing-border">$150</p>
                                 <p className="example-vehicle pricing-border">Any Size Vehicle</p>
                                 <a href="/contact" className="pricing-quote-btn">Contact Us</a>
@@ -101,6 +105,8 @@ export default function IntCoatings() {
                         </div>
 
                     </div>
+
+                    <br className='extra-space' />
 
                     <div className='coating-faq'>
                         <h3 style={{ fontSize: 2 + 'em' }}>Interior Coating FAQ</h3>
@@ -115,7 +121,7 @@ export default function IntCoatings() {
                     <div className='aside-container'>
                         <div className='aside-container'>
                             <div className='service-aside addons-aside'>
-                                <p className='extra-addons'>Our Exterior Coatings</p>
+                                <p className='extra-addons text-large'>Our Exterior Coatings</p>
                                 <hr className="contact-border" style={{ marginBottom: 16 }} />
                                 <div className="aside-links">
                                     <div className="addon-container">
@@ -137,12 +143,12 @@ export default function IntCoatings() {
                     <div className='aside-container'>
                         <div className='aside-container'>
                             <div className='service-aside addons-aside'>
-                                <h4 className='text-xl mb-0 mt-0'>Monthly Maintenance:</h4>
+                                <h4 className='text-large mb-0 mt-0'>Monthly Maintenance:</h4>
                                 <hr className='aside-border' />
                                 <p>The goal of our monthly maintenance is to keep your vehicle looking like new year around.</p>
                                 <p>Every month you get a <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> with a ceramic booster and a <a href='/services/full-interior-detail' className='aside-link'>Full Interior Detail</a>.</p>
                                 <hr className='aside-border' />
-                                <p className='bold text-xl mb-0'>Monthly Maintenance Pricing:</p>
+                                <p className='text-large mb-0'>Monthly Maintenance Pricing:</p>
                                 <div className='maintenance-costs'>
                                     <p>Small <span className='special-package'>$130</span></p>
                                     <p>Medium <span className='special-package'>$160</span></p>
@@ -155,7 +161,7 @@ export default function IntCoatings() {
                     <div className='aside-container'>
                         <div className='aside-container'>
                             <div className='service-aside addons-aside'>
-                                <h4 className='text-xl mb-0 mt-0'>Re-coating Options:</h4>
+                                <h4 className='text-large mb-0 mt-0'>Re-coating Options:</h4>
                                 <p>• Re-coat fabrics <span className='special-package'>$75</span></p>
                                 <p>• Re-coat leathers <span className='special-package'>$150</span></p>
                             </div>
@@ -173,7 +179,7 @@ export default function IntCoatings() {
                 </div>
             </div>
 
-            <h4 className='text-large'>Some examples of our Exterior Coating work so far:</h4>
+            <h4 className='text-large'>Some examples of our Interior Coating work so far:</h4>
             <div className="examples-container">
                 <div className="example-img">
                     <Zoom>
