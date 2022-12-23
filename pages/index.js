@@ -30,8 +30,8 @@ export default function Home() {
     return (
         <div className="App">
             <Head>
-                <title>Bonney Lakes Trusted Auto Detailing & Ceramic Coating Specialists</title>
-                <meta name="og:title" content="Bonney Lakes Trusted Auto Detailing & Ceramic Coating Specialists" />
+                <title>Bonney Lakes Auto Detailing & Ceramic Coating Specialists</title>
+                <meta name="og:title" content="Bonney Lakes Auto Detailing & Ceramic Coating Specialists" />
                 <meta name="description" content="Bonney lakes top choice for ceramic coating, paint correction, and all your auto detailing needs!" />
                 <meta property="og:description" content="Bonney lakes top choice for ceramic coating, paint correction, and all your auto detailing needs!" />
                 <meta name="url" content="https://www.dirtlessdetailing.com/" />
