@@ -65,7 +65,7 @@ export default function PDLWash() {
         <div className="process-container">
           <div>
             <main className="service-main">
-              <h2 className='text-large'>Premium Dirt-Less Wash</h2>
+              <h2 className='text-large mt-0'>Premium Dirt-Less Wash</h2>
               <div className="text-left">
                 <p>Not only will you see a humongous difference in the appearance, but you will also be able to feel the smoothness and slickness of the paint once we're done with this service.</p>
                 <p>Both of our Dirt-Less Wash services go very in depth, cleaning areas that you won't even see on a day to day basis. Our Premium package goes even further than that by using a clay bar and iron decontamination products on the whole vehicle to remove any contaminants.</p>
@@ -85,11 +85,11 @@ export default function PDLWash() {
           <div>
             <div className='aside-container'>
               <div className='service-aside'>
-                <p className='extra-addons'>Other Exterior Pages</p>
+                <p className='extra-addons text-large'>Other Exterior Pages</p>
                 <hr className="contact-border" style={{ marginBottom: 16 }} />
                 <div className="aside-links">
-                  <a href="/services/dirtless-wash" style={{ color: href.endsWith('/DLWash') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('/DLWash') ? '> ' : ''} Dirt-Less Wash</a>
-                  <a href="/services/premium-dirtless-wash" style={{ color: href.endsWith('PDLWash') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('PDLWash') ? '> ' : ''} Premium Dirt-Less Wash</a>
+                  <a href="/services/dirtless-wash" style={{ color: href.endsWith('/dirtless-wash') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('/dirtless-wash') ? '> ' : ''} Dirt-Less Wash</a><br />
+                  <a href="#" style={{ color: href.endsWith('premium-dirtless-wash') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('premium-dirtless-wash') ? '> ' : ''} Premium Dirt-Less Wash</a><br />
                   <a href="/gallery/dirtless-wash-gallery" className="service-link">Exterior Wash Gallery</a>
                 </div>
               </div>
@@ -97,7 +97,7 @@ export default function PDLWash() {
 
             <div className='aside-container'>
               <div className='service-aside addons-aside'>
-                <a href="/services/add-ons" className='extra-addons'>Extra Add-ons</a>
+                <a href="/services/add-ons" className='extra-addons text-large'>Extra Add-ons</a>
                 <hr className="contact-border" style={{ marginBottom: 16 }} />
                 <div className="aside-links">
                   <div className="addon-container">
@@ -124,10 +124,14 @@ export default function PDLWash() {
 
         </div>
 
+        <br className='extra-space' />
+
         <div className="combo-container">
           <h3 className="text-white">Get a <span className='special-package'>FREE</span> Engine cleaning!</h3>
           <p className="subtext">Check out our Current <a className='aside-link' href="/services/interior-exterior-detailing-combo">Combo</a> deal that combines this Premium Dirt-Less Wash, our <a className='aside-link' href="/services/full-interior-detail">Full Interior Cleaning</a>, and gives you an Engine Bay Cleaning totally on us!  </p>
         </div>
+
+        <br className='extra-space' />
 
         <div>
           <h3 className='pricing-title'>Premium Dirt-Less Wash Pricing</h3>

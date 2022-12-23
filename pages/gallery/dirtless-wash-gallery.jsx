@@ -24,7 +24,7 @@ export default function PaintCorrectionGallery() {
       </div>
       <div className="servicepage-heading">
         <h1>Engine Cleaning Gallery</h1>
-        <p>This is a showcase of our Dirt-Less Wash service. Take a look at our <a href="/detailing/car-washes" className='aside-link'>Car Washes</a> page for more info on the 2 services.</p>
+        <p>This is a showcase of our Dirt-Less Wash service. Take a look at our <a href="/detailing/car-washes" className='aside-link'>Car Washes</a> page for more info on the 2 exterior wash services that we offer.</p>
 
         <a href="/contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
         <p className='inline text-small'>

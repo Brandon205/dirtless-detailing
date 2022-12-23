@@ -88,7 +88,7 @@ export default function Bio() {
               <hr className="contact-border" style={{ marginBottom: 16 }} />
               <div className="aside-links">
                 <a href="/services/full-interior-detail" style={{ color: href.endsWith('full-interior-detail') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('full-interior-detail') ? '> ' : ''} Full Interior Detail</a><br />
-                <a href="/services/biohazard-cleaning" style={{ color: href.endsWith('biohazard-cleaning') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('biohazard-cleaning') ? '> ' : ''} Biohazard Cleaning</a><br />
+                <a href="#" style={{ color: href.endsWith('biohazard-cleaning') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('biohazard-cleaning') ? '> ' : ''} Biohazard Cleaning</a><br />
                 <a href="/gallery/interior-detail-gallery" className="service-link">Full Interior Gallery</a>
               </div>
             </div>

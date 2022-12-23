@@ -44,9 +44,9 @@ export default function FullIntEx() {
         <meta name="description" content="Our Full Interior cleaning is the most sought after service, and for good reason, it will completely renew your cars interior!" />
         <meta property="og:description" content="Our Full Interior cleaning is the most sought after service, and for good reason, it will completely renew your cars interior!" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.dirtlessdetailing.com/services/FullIntEx" />
+        <meta property="og:url" content="https://www.dirtlessdetailing.com/services/full-interior-detail" />
         <meta property="og:image" content={cover.src} />
-        <link rel="canonical" href="https://www.dirtlessdetailing.com/services/FullIntEx" />
+        <link rel="canonical" href="https://www.dirtlessdetailing.com/services/full-interior-detail" />
       </Head>
       <div className="cover">
         <Image src={cover} alt="Vehicle after a Full Interior Cleaning" layout="fill" objectFit='cover' placeholder='blur' priority />
@@ -89,7 +89,7 @@ export default function FullIntEx() {
               <p className='extra-addons text-large'>Other Interior Pages</p>
               <hr className="contact-border" style={{ marginBottom: 16 }} />
               <div className="aside-links">
-                <a href="/services/FullIntEx" style={{ color: href.endsWith('full-interior-detail') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('full-interior-detail') ? '> ' : ''} Full Interior Detail</a><br />
+                <a href="#" style={{ color: href.endsWith('full-interior-detail') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('full-interior-detail') ? '> ' : ''} Full Interior Detail</a><br />
                 <a href="/services/biohazard-cleaning" style={{ color: href.endsWith('biohazard-cleaning') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('biohazard-cleaning') ? '> ' : ''} Biohazard Cleaning</a><br />
                 <a href="/gallery/interior-detail-gallery" className="service-link">Full Interior Gallery</a>
               </div>

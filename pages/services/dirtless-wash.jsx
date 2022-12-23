@@ -80,11 +80,11 @@ export default function DLWash() {
           <div>
             <div className='aside-container'>
               <div className='service-aside'>
-                <p className='extra-addons'>Other Exterior Pages</p>
+                <p className='extra-addons text-large'>Other Exterior Pages</p>
                 <hr className="contact-border" style={{ marginBottom: 16 }} />
                 <div className="aside-links">
-                  <a href="/services/dirtless-wash" style={{ color: href.endsWith('DLWash') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('DLWash') ? '> ' : ''} Dirt-Less Wash</a>
-                  <a href="/services/premium-dirtless-wash" style={{ color: href.endsWith('PDLWash') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('PDLWash') ? '> ' : ''} Premium Dirt-Less Wash</a>
+                  <a href="#" style={{ color: href.endsWith('/dirtless-wash') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('/dirtless-wash') ? '> ' : ''} Dirt-Less Wash</a><br />
+                  <a href="/services/premium-dirtless-wash" style={{ color: href.endsWith('premium-dirtless-wash') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('premium-dirtless-wash') ? '> ' : ''} Premium Dirt-Less Wash</a><br />
                   <a href="/gallery/dirtless-wash-gallery" className="service-link">Exterior Wash Gallery</a>
                 </div>
               </div>
@@ -92,7 +92,7 @@ export default function DLWash() {
 
             <div className='aside-container'>
               <div className='service-aside addons-aside'>
-                <a href="/services/add-ons" className='extra-addons'>Extra Add-ons</a>
+                <a href="/services/add-ons" className='extra-addons text-large'>Extra Add-ons</a>
                 <hr className="contact-border" style={{ marginBottom: 16 }} />
                 <div className="aside-links">
                   <div className="addon-container">
@@ -118,6 +118,8 @@ export default function DLWash() {
 
           </div>
         </div>
+
+        <br className='extra-space' />
 
         <div>
           <h3 className='pricing-title'>Dirt-Less Wash Pricing</h3>
