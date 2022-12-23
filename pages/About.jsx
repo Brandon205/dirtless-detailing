@@ -13,9 +13,9 @@ export default function About() {
         <meta name="description" content="Find out a little more about us here, and check out our FAQ for to get answers to our most frequently asked questions." />
         <meta property="og:description" content="Find out a little more about us here, and check out our FAQ for to get answers to our most frequently asked questions." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.dirtlessdetailing.com/about" />
+        <meta property="og:url" content="https://www.dirtlessdetailing.com/About" />
         <meta property="og:image" content={cover.src} />
-        <link rel="canonical" href="https://www.dirtlessdetailing.com/about" />
+        <link rel="canonical" href="https://www.dirtlessdetailing.com/About" />
       </Head>
       <div className="cover">
         <Image src={cover} alt="Chevrolet truck on trailer after Two Stage Paint Correction" layout="fill" objectFit='cover' priority />
