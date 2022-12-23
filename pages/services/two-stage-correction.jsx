@@ -93,11 +93,11 @@ export default function TwoPC() {
           <div>
             <div className='aside-container'>
               <div className='service-aside'>
-                <p className='extra-addons'>Other Correction Pages</p>
+                <p className='extra-addons text-large'>Other Correction Pages</p>
                 <hr className="contact-border" style={{ marginBottom: 16 }} />
                 <div className="aside-links">
-                  <a href="/services/single-stage-correction" style={{ color: href.endsWith('SinglePC') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('SinglePC') ? '> ' : ''} Single Stage Paint Correction</a>
-                  <a href="/services/two-stage-correction" style={{ color: href.endsWith('TwoPC') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('TwoPC') ? '> ' : ''} Two Stage Paint Correction</a>
+                  <a href="/services/single-stage-correction" style={{ color: href.endsWith('single-stage-correction') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('single-stage-correction') ? '> ' : ''} Single Stage Paint Correction</a><br />
+                  <a href="#" style={{ color: href.endsWith('two-stage-correction') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('two-stage-correction') ? '> ' : ''} Two Stage Paint Correction</a><br />
                   <a href="/gallery/paint-correction-gallery" className="service-link">Paint Correction Gallery</a>
                 </div>
               </div>
@@ -105,7 +105,7 @@ export default function TwoPC() {
 
             <div className='aside-container'>
               <div className='service-aside addons-aside'>
-                <a href="/services/add-ons" className='extra-addons'>Extra Add-ons</a>
+                <p className='extra-addons text-large'>Extra Add-ons</p>
                 <hr className="contact-border" style={{ marginBottom: 16 }} />
                 <div className="aside-links">
                   <div className="addon-container">
@@ -119,6 +119,8 @@ export default function TwoPC() {
           </div>
 
         </div>
+
+        <br className='extra-space' />
 
         <div>
           <h3 className='pricing-title'>Our Two Stage Paint Correction Pricing</h3>
@@ -146,6 +148,8 @@ export default function TwoPC() {
               <a href="/contact" className="pricing-quote-btn">Contact Us</a>
             </div>
           </div>
+
+          <br className='extra-space' />
 
           <h4 className='text-large'>Visual example of different paint defects:</h4>
           <strong className='pricing-subtext'>This gives an example of why deeper scratches aren't removable without repainting.</strong>

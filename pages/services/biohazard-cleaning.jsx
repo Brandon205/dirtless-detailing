@@ -95,7 +95,7 @@ export default function Bio() {
 
             <div className='aside-container'>
               <div className='service-aside addons-aside'>
-                <a href="/services/add-ons" className='extra-addons text-large'>Extra Add-ons</a>
+                <p className='extra-addons text-large'>Extra Add-ons</p>
                 <hr className="contact-border" style={{ marginBottom: 16 }} />
                 <div className="aside-links">
                   <div className="addon-container">
