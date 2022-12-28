@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
+import createSchema from '../../utils/Schema';
 
 import cover from '../../public/imgs/DLWashCover.webp';
 
@@ -44,6 +45,15 @@ export default function DLWash() {
         <meta property="og:url" content="https://www.dirtlessdetailing.com/services/dirtless-wash" />
         <meta property="og:image" content={cover.src} />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/services/dirtless-wash" />
+        <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={createSchema({
+          name: 'Dirt-Less Wash',
+          image: cover.src,
+          description: "At Dirt-Less Detailing, we offer a comprehensive car wash service to keep your vehicle looking its best.",
+          url: '/services/dirtless-wash',
+          minPrice: '75',
+          maxPrice: '150',
+          mobility: 'dynamic'
+        })} />
       </Head>
       <div className="cover">
         <Image src={cover} alt="Subaru after a Dirt-Less Wash" layout="fill" objectFit='cover' placeholder='blur' priority />
