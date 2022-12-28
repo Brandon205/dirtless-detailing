@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import Image from 'next/image';
 import Head from 'next/head';
+import Schema from '../utils/Schema';
 
 import PopularServices from '../utils/PopularServices';
 import OtherServices from '../utils/OtherServices';
@@ -42,6 +43,7 @@ export default function Home() {
                 <meta property="og:type" content="website" />
                 <meta property="og:image" content={cover.src} />
                 <link rel="canonical" href="https://www.dirtlessdetailing.com/" />
+                <Schema />
             </Head>
             <div className="maincover">
                 <Image src={cover} layout="fill" objectFit='cover' alt="Chevrolet truck on trailer after Two Stage Paint Correction" placeholder='blur' priority />
