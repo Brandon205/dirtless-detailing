@@ -48,6 +48,33 @@ export default function Bio() {
         <meta property="og:url" content="https://www.dirtlessdetailing.com/services/biohazard-cleaning" />
         <meta property="og:image" content={cover.src} />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/services/biohazard-cleaning" />
+        <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
+          __html: `{
+            "@context": "http://schema.org",
+            "@type": "WebPage",
+            "name": "Biohazard Cleaning",
+            "description": "Our team at Dirt-Less Detailing is trained and equipped to handle the safe and effective cleaning of biohazard materials in your vehicle.",
+            "url": "https://www.dirtlessdetailing.com/services/biohazard-cleaning",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "USD",
+              "priceSpecification": {
+              	"@type": "PriceSpecification",
+                "priceCurrency": "USD",
+                "minPrice": "400",
+                "maxPrice": "1000"
+              },
+              "availability": "http://schema.org/InStock",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Biohazard Cleaning Service",
+                "serviceType": "Biohazard Removal",
+                "image": "${seatbelts.src}",
+                "providerMobility": "dynamic"
+              }
+            }
+          }`,
+        }} />
       </Head>
       <div className="cover">
         <Image src={cover} alt="biohazard cleaning cover" layout="fill" objectFit='cover' placeholder='blur' priority />
