@@ -30,7 +30,6 @@ export default function Schema() {
   }
 
   return (
-    <script type="application/ld+json" key="product-jsonld"
-      dangerouslySetInnerHTML={addProductJsonLd()} />
+    <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={addProductJsonLd()} />
   )
 }
