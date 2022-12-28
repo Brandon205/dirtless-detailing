@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import Image from 'next/image';
 import Head from 'next/head';
-import Schema from '../utils/Schema';
 
 import PopularServices from '../utils/PopularServices';
 import OtherServices from '../utils/OtherServices';
@@ -28,36 +27,6 @@ export default function Home() {
 
     }, [])
 
-    function addProductJsonLd() {
-        return {
-          __html: `{
-            "@context": "https://schema.org/",
-            "@type": "LocalBusiness",
-            "name": "Dirt-Less Detailing",
-            "image": "${cover.src}",
-            "currenciesAccepted": "USD",
-            "openingHours": ["Mo-Su 7:00-19:00"],
-            "paymentAccepted": "Cash, Credit/Debit Card, Facebook Pay",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Bonney Lake",
-              "addressRegion": "WA",
-              "postalCode": "99391",
-              "streetAddress": "9305 205th Ave E"
-            },
-            "email": "brenden@dirtlessdetailing.com",
-            "telephone": "(253) 252-9758",
-            "makesOffer": {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Full Interior Detail"
-              }
-            }
-          }`,
-        };
-      }
-
     return (
         <div className="App">
             <Head>
@@ -74,32 +43,33 @@ export default function Home() {
                 <meta property="og:image" content={cover.src} />
                 <link rel="canonical" href="https://www.dirtlessdetailing.com/" />
                 <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
-          __html: `{
-            "@context": "https://schema.org/",
-            "@type": "LocalBusiness",
-            "name": "Dirt-Less Detailing",
-            "image": "${cover.src}",
-            "currenciesAccepted": "USD",
-            "openingHours": ["Mo-Su 7:00-19:00"],
-            "paymentAccepted": "Cash, Credit/Debit Card, Facebook Pay",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Bonney Lake",
-              "addressRegion": "WA",
-              "postalCode": "99391",
-              "streetAddress": "9305 205th Ave E"
-            },
-            "email": "brenden@dirtlessdetailing.com",
-            "telephone": "(253) 252-9758",
-            "makesOffer": {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Full Interior Detail"
-              }
-            }
-          }`,
-        }} />
+                    __html: `{
+                        "@context": "https://schema.org/",
+                        "@type": "LocalBusiness",
+                        "name": "Dirt-Less Detailing",
+                        "image": "${cover.src}",
+                        "currenciesAccepted": "USD",
+                        "priceRange": "$$$",
+                        "openingHours": ["Mo-Su 7:00-19:00"],
+                        "paymentAccepted": "Cash, Credit/Debit Card, Facebook Pay",
+                        "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Bonney Lake",
+                        "addressRegion": "WA",
+                        "postalCode": "99391",
+                        "streetAddress": "9305 205th Ave E"
+                        },
+                        "email": "brenden@dirtlessdetailing.com",
+                        "telephone": "(253) 252-9758",
+                        "makesOffer": {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Full Interior Detail"
+                        }
+                        }
+                    }`,
+                }} />
             </Head>
             <div className="maincover">
                 <Image src={cover} layout="fill" objectFit='cover' alt="Chevrolet truck on trailer after Two Stage Paint Correction" placeholder='blur' priority />
