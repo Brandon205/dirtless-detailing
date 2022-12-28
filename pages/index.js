@@ -31,8 +31,10 @@ export default function Home() {
     function addProductJsonLd() {
         return {
           __html: `{
-            "@context":"https://schema.org/",
-            "@type":"LocalBusiness",
+            "@context": "https://schema.org/",
+            "@type": "LocalBusiness",
+            "name": "Dirt-Less Detailing",
+            "image": "${cover.src}",
             "currenciesAccepted": "USD",
             "openingHours": ["Mo-Su 7:00-19:00"],
             "paymentAccepted": "Cash, Credit/Debit Card, Facebook Pay",
