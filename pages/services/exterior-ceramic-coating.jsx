@@ -39,35 +39,66 @@ export default function ExtCoatings() {
                         "description": "Protect and enhance your vehicle's paint with our professional ceramic coating service. Our team at Dirt-Less Detailing uses top-quality products to provide long-lasting protection and a glossy finish for your car. Contact us to learn more and schedule your ceramic coating service today.",
                         "image": "${cover.src}",
                         "url": "https://www.dirtlessdetailing.com/services/exterior-ceramic-coating/",
-                        "offers": {
-                            "@type": "Offer",
-                            "priceCurrency": "USD",
-                            "price": "1000",
-                            "priceSpecification": {
-                                "@type": "PriceSpecification",
+                        "offers": [
+                            {
+                                "@type": "Offer",
                                 "priceCurrency": "USD",
-                                "price": "1000",
-                                "minPrice": "1000",
-                                "maxPrice": "1900"
-                            },
-                            "availability": "http://schema.org/InStock",
-                            "itemOffered": {
-                                "@type": "Service",
-                                "name": "Exterior Ceramic Coating Service",
-                                "serviceType": "Ceramic Coating",
-                                "areaServed": {
-                                    "@type": "Place",
-                                    "address": {
-                                        "@type": "PostalAddress",
-                                        "addressLocality": "Bonney Lake",
-                                        "addressRegion": "WA",
-                                        "postalCode": "99391",
-                                        "streetAddress": "9305 205th Ave E"
-                                    }
+                                "price": "1,000",
+                                "priceSpecification": {
+                                    "@type": "PriceSpecification",
+                                    "priceCurrency": "USD",
+                                    "price": "1,000",
+                                    "minPrice": "1,000",
+                                    "maxPrice": "1,400"
                                 },
-                                "providerMobility": "static"
+                                "availability": "http://schema.org/InStock",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "Ceramic Coating Protect Package",
+                                    "serviceType": "Ceramic Coating",
+                                    "areaServed": {
+                                        "@type": "Place",
+                                        "address": {
+                                            "@type": "PostalAddress",
+                                            "addressLocality": "Bonney Lake",
+                                            "addressRegion": "WA",
+                                            "postalCode": "99391",
+                                            "streetAddress": "9305 205th Ave E"
+                                        }
+                                    },
+                                    "providerMobility": "static"
+                                }
+                            },
+                            {
+                                "@type": "Offer",
+                                "priceCurrency": "USD",
+                                "price": "1,500",
+                                "priceSpecification": {
+                                    "@type": "PriceSpecification",
+                                    "priceCurrency": "USD",
+                                    "price": "1,500",
+                                    "minPrice": "1,500",
+                                    "maxPrice": "1,900"
+                                },
+                                "availability": "http://schema.org/InStock",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "Ceramic Coating Protect+ Package",
+                                    "serviceType": "Ceramic Coating",
+                                    "areaServed": {
+                                        "@type": "Place",
+                                        "address": {
+                                            "@type": "PostalAddress",
+                                            "addressLocality": "Bonney Lake",
+                                            "addressRegion": "WA",
+                                            "postalCode": "99391",
+                                            "streetAddress": "9305 205th Ave E"
+                                        }
+                                    },
+                                    "providerMobility": "static"
+                                }
                             }
-                        }
+                        ]
                     }`,
                 }} />
             </Head>

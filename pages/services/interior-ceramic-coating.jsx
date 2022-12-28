@@ -33,25 +33,32 @@ export default function IntCoatings() {
                         "description": "Protect and enhance your vehicle's interior with our professional interior ceramic coating service. Contact us to learn more and schedule your interior ceramic coating service today.",
                         "image": "${cover.src}",
                         "url": "https://www.dirtlessdetailing.com/services/interior-ceramic-coating/",
-                        "offers": {
-                            "@type": "Offer",
-                            "priceCurrency": "USD",
-                            "price": "75",
-                            "priceSpecification": {
-                                "@type": "PriceSpecification",
+                        "offers": [
+                            {
+                                "@type": "Offer",
                                 "priceCurrency": "USD",
-                                "price": "75",
-                                "minPrice": "75",
-                                "maxPrice": "150"
+                                "price": "75"
+                                "availability": "http://schema.org/InStock",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "Interior Fabric Ceramic Coating",
+                                    "serviceType": "Ceramic Coating",
+                                    "providerMobility": "dynamic"
+                                }
                             },
-                            "availability": "http://schema.org/InStock",
-                            "itemOffered": {
-                                "@type": "Service",
-                                "name": "Interior Ceramic Coating Service",
-                                "serviceType": "Ceramic Coating",
-                                "providerMobility": "dynamic"
+                            {
+                                "@type": "Offer",
+                                "priceCurrency": "USD",
+                                "price": "150"
+                                "availability": "http://schema.org/InStock",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "Interior Leather Ceramic Coating",
+                                    "serviceType": "Ceramic Coating",
+                                    "providerMobility": "dynamic"
+                                }
                             }
-                        }
+                        ]
                     }`,
                 }} />
             </Head>
