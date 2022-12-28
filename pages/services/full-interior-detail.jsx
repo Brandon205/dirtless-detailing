@@ -60,6 +60,7 @@ export default function FullIntEx() {
               "priceSpecification": {
               	"@type": "PriceSpecification",
                 "priceCurrency": "USD",
+                "price": "200",
                 "minPrice": "200",
                 "maxPrice": "350"
               },

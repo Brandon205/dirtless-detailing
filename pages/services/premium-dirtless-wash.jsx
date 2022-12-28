@@ -51,7 +51,7 @@ export default function PDLWash() {
         <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
           __html: `{
             "@context": "http://schema.org",
-            "@type": "WebPage",
+            "@type": "Product",
             "name": "Premium Dirt-Less Wash",
             "description": "At Dirt-Less Detailing, our team uses top-of-the-line equipment and environmentally friendly products to provide a thorough wash and wax, leaving your car shining and protected.",
             "url": "https://www.dirtlessdetailing.com/services/premium-dirtless-wash",
@@ -61,6 +61,7 @@ export default function PDLWash() {
               "priceSpecification": {
               	"@type": "PriceSpecification",
                 "priceCurrency": "USD",
+                "price": "75",
                 "minPrice": "150",
                 "maxPrice": "275"
               },

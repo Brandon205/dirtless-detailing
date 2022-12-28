@@ -47,7 +47,7 @@ export default function DLWash() {
         <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
           __html: `{
             "@context": "http://schema.org",
-            "@type": "WebPage",
+            "@type": "Product",
             "name": "Dirt-Less Wash",
             "description": "At Dirt-Less Detailing, we offer a comprehensive car wash service to keep your vehicle looking its best.",
             "url": "https://www.dirtlessdetailing.com/services/dirtless-wash",
@@ -57,6 +57,7 @@ export default function DLWash() {
               "priceSpecification": {
               	"@type": "PriceSpecification",
                 "priceCurrency": "USD",
+                "price": "75",
                 "minPrice": "75",
                 "maxPrice": "150"
               },

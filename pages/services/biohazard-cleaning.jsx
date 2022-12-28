@@ -61,6 +61,7 @@ export default function Bio() {
               "priceSpecification": {
               	"@type": "PriceSpecification",
                 "priceCurrency": "USD",
+                "price": "400",
                 "minPrice": "400",
                 "maxPrice": "1000"
               },
