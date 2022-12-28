@@ -59,7 +59,7 @@ export default function Addons() {
               {
                 "@type": "Offer",
                 "priceCurrency": "USD",
-                "price": "80/hour",
+                "price": "80",
                 "availability": "http://schema.org/InStock",
                 "itemOffered": {
                   "@type": "Service",
@@ -71,7 +71,7 @@ export default function Addons() {
               {
                 "@type": "Offer",
                 "priceCurrency": "USD",
-                "price": "80/hour",
+                "price": "80",
                 "availability": "http://schema.org/InStock",
                 "itemOffered": {
                   "@type": "Service",
@@ -83,7 +83,7 @@ export default function Addons() {
               {
                 "@type": "Offer",
                 "priceCurrency": "USD",
-                "price": "80/hour",
+                "price": "80",
                 "availability": "http://schema.org/InStock",
                 "itemOffered": {
                   "@type": "Service",

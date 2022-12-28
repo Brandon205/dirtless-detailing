@@ -26,6 +26,46 @@ export default function bonneyLake() {
                 <meta property="og:url" content="https://www.dirtlessdetailing.com/ceramic-coating/bonney-lake" />
                 <meta property="og:image" content={cover.src} />
                 <link rel="canonical" href="https://www.dirtlessdetailing.com/ceramic-coating/bonney-lake" />
+                <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
+                    __html: `{
+                        "@context": "http://schema.org",
+                        "@type": "Product",
+                        "name": "Exterior Ceramic Coating",
+                        "brand": "Dirt-Less Detailing",
+                        "description": "Protect and enhance your vehicle's paint with our professional ceramic coating service. Our team at Dirt-Less Detailing uses top-quality products to provide long-lasting protection and a glossy finish for your car. Contact us to learn more and schedule your ceramic coating service today.",
+                        "image": "${cover.src}",
+                        "url": "https://www.dirtlessdetailing.com/ceramic-coating/bonney-lake/",
+                        "offers": {
+                            "@type": "Offer",
+                            "priceCurrency": "USD",
+                            "price": "1000",
+                            "priceSpecification": {
+                                "@type": "PriceSpecification",
+                                "priceCurrency": "USD",
+                                "price": "1000",
+                                "minPrice": "1000",
+                                "maxPrice": "1900"
+                            },
+                            "availability": "http://schema.org/InStock",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Exterior Ceramic Coating Service",
+                                "serviceType": "Ceramic Coating",
+                                "areaServed": {
+                                    "@type": "Place",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Bonney Lake",
+                                        "addressRegion": "WA",
+                                        "postalCode": "99391",
+                                        "streetAddress": "9305 205th Ave E"
+                                    }
+                                },
+                                "providerMobility": "static"
+                            }
+                        }
+                    }`,
+                }} />
             </Head>
             <div className="cover">
                 <Image src={cover} alt="Water beading off of a ceramic coated car" layout="fill" objectFit='cover' placeholder='blur' priority />
