@@ -43,13 +43,13 @@ export default function ExtCoatings() {
                             {
                                 "@type": "Offer",
                                 "priceCurrency": "USD",
-                                "price": "1,000",
+                                "price": "1000",
                                 "priceSpecification": {
                                     "@type": "PriceSpecification",
                                     "priceCurrency": "USD",
-                                    "price": "1,000",
-                                    "minPrice": "1,000",
-                                    "maxPrice": "1,400"
+                                    "price": "1000",
+                                    "minPrice": "1000",
+                                    "maxPrice": "1400"
                                 },
                                 "availability": "http://schema.org/InStock",
                                 "itemOffered": {
@@ -72,13 +72,13 @@ export default function ExtCoatings() {
                             {
                                 "@type": "Offer",
                                 "priceCurrency": "USD",
-                                "price": "1,500",
+                                "price": "1500",
                                 "priceSpecification": {
                                     "@type": "PriceSpecification",
                                     "priceCurrency": "USD",
-                                    "price": "1,500",
-                                    "minPrice": "1,500",
-                                    "maxPrice": "1,900"
+                                    "price": "1500",
+                                    "minPrice": "1500",
+                                    "maxPrice": "1900"
                                 },
                                 "availability": "http://schema.org/InStock",
                                 "itemOffered": {
