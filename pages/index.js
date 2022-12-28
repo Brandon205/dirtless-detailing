@@ -5,7 +5,6 @@ import Head from 'next/head';
 
 import PopularServices from '../utils/PopularServices';
 import OtherServices from '../utils/OtherServices';
-import ddLogo from '../public/imgs/PNG1.png';
 
 import { MdOutlineLocalCarWash } from 'react-icons/md';
 import { BiCertification } from 'react-icons/bi';
@@ -13,6 +12,7 @@ import { FaRegStar } from 'react-icons/fa';
 
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 
+import ddLogo from '../public/imgs/PNG1.png';
 import cover from '../public/imgs/main-cover.webp';
 import kenzo from '../public/imgs/pageimgs/homepage/project.png';
 
@@ -49,7 +49,6 @@ export default function Home() {
                         "@type": "LocalBusiness",
                         "name": "Dirt-Less Detailing",
                         "image": "${cover.src}",
-                        "logo": "${ddLogo.src}",
                         "currenciesAccepted": "USD",
                         "priceRange": "$$$",
                         "openingHours": ["Mo-Su 7:00-19:00"],

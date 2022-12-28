@@ -51,7 +51,7 @@ export default function Bio() {
         <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
           __html: `{
             "@context": "http://schema.org",
-            "@type": "WebPage",
+            "@type": "Product",
             "name": "Biohazard Cleaning",
             "description": "Our team at Dirt-Less Detailing is trained and equipped to handle the safe and effective cleaning of biohazard materials in your vehicle.",
             "url": "https://www.dirtlessdetailing.com/services/biohazard-cleaning",

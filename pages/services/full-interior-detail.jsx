@@ -50,7 +50,7 @@ export default function FullIntEx() {
         <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
           __html: `{
             "@context": "http://schema.org",
-            "@type": "WebPage",
+            "@type": "Product",
             "name": "Full Interior Detailing",
             "description": "Get your car's interior looking brand new with our full interior detailing service. We offer thorough cleaning and conditioning of all surfaces, including the dashboard, seats, and carpets. Contact us to schedule your appointment today.",
             "url": "https://www.dirtlessdetailing.com/services/full-interior-detail",
