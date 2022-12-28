@@ -47,6 +47,37 @@ export default function FullIntEx() {
         <meta property="og:url" content="https://www.dirtlessdetailing.com/services/full-interior-detail" />
         <meta property="og:image" content={cover.src} />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/services/full-interior-detail" />
+        <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
+          __html: `{
+            "@context": "http://schema.org",
+            "@type": "WebPage",
+            "name": "Full Interior Detailing Service",
+            "description": "Get your car's interior looking brand new with our full interior detailing service. We offer thorough cleaning and conditioning of all surfaces, including the dashboard, seats, and carpets. Contact us to schedule your appointment today.",
+            "url": "https://www.dirtlessdetailing.com/services/full-interior-detail",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "USD",
+              "priceSpecification": {
+              	"@type": "PriceSpecification",
+                "priceCurrency": "USD",
+                "minPrice": "200",
+                "maxPrice": "350"
+              },
+              "availability": "http://schema.org/InStock",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Full Interior Detailing",
+                "serviceType": "Interior Detailing",
+                "image": "${cover.src}",
+                "provider": {
+                  "@type": "LocalBusiness",
+                  "name": "Dirt-Less Detailing"
+                },
+                "providerMobility": "dynamic"
+              }
+            }
+          }`,
+        }} />
       </Head>
       <div className="cover">
         <Image src={cover} alt="Vehicle after a Full Interior Cleaning" layout="fill" objectFit='cover' placeholder='blur' priority />
