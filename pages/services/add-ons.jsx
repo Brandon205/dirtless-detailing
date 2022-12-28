@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 
@@ -22,6 +22,110 @@ export default function Addons() {
         <meta property="og:url" content="https://www.dirtlessdetailing.com/services/add-ons" />
         <meta property="og:image" content={cover.src} />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/services/add-ons" />
+        <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
+          __html: `{
+            "@context": "http://schema.org",
+            "@type": "Product",
+            "name": "Dirt-Less Add-ons",
+            "brand": "Dirt-Less Detailing",
+            "description": "Our currently offered Add-ons for our various detailing services.",
+            "image": "${cover.src}",
+            "url": "https://www.dirtlessdetailing.com/services/add-ons/",
+            "offers": [
+              {
+                "@type": "Offer",
+                "priceCurrency": "USD",
+                "price": "25",
+                "availability": "http://schema.org/InStock",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Truck Bed Washing Service",
+                  "serviceType": "Truck Bed Wash",
+                  "providerMobility": "dynamic"
+                }
+              },
+              {
+                "@type": "Offer",
+                "priceCurrency": "USD",
+                "price": "80",
+                "availability": "http://schema.org/InStock",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Engine Bay Washing Service",
+                  "serviceType": "Engine Bay Wash",
+                  "providerMobility": "dynamic"
+                }
+              },
+              {
+                "@type": "Offer",
+                "priceCurrency": "USD",
+                "price": "80/hour",
+                "availability": "http://schema.org/InStock",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Glass Polishing Service",
+                  "serviceType": "Glass Polish",
+                  "providerMobility": "dynamic"
+                }
+              },
+              {
+                "@type": "Offer",
+                "priceCurrency": "USD",
+                "price": "80/hour",
+                "availability": "http://schema.org/InStock",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Waterspot/Overspray Removal Service",
+                  "serviceType": "Waterspot/Overspray Removal",
+                  "providerMobility": "dynamic"
+                }
+              },
+              {
+                "@type": "Offer",
+                "priceCurrency": "USD",
+                "price": "80/hour",
+                "availability": "http://schema.org/InStock",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Debadging Service",
+                  "serviceType": "Vehicle Debadging",
+                  "providerMobility": "dynamic"
+                }
+              },
+              {
+                "@type": "Offer",
+                "priceCurrency": "USD",
+                "price": "40",
+                "priceSpecification": {
+                  "@type": "PriceSpecification",
+                  "priceCurrency": "USD",
+                  "price": "40",
+                  "minPrice": "40",
+                  "maxPrice": "80"
+                },
+                "availability": "http://schema.org/InStock",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Headliner Cleaning Service",
+                  "serviceType": "Headliner Cleaning",
+                  "providerMobility": "dynamic"
+                }
+              },
+              {
+                "@type": "Offer",
+                "priceCurrency": "USD",
+                "price": "100",
+                "availability": "http://schema.org/InStock",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Ozone Treatment Service",
+                  "serviceType": "Ozone Treatment",
+                  "providerMobility": "dynamic"
+                }
+              }
+            ]
+          }`,
+        }} />
       </Head>
       <div className="cover">
         <Image src={cover} alt="Vehicle after a Dirt-Less Wash with Glass Polishing addons" layout="fill" objectFit='cover' placeholder='blur' priority />

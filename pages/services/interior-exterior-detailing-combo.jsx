@@ -22,6 +22,36 @@ export default function Combo() {
         <meta property="og:url" content="https://www.dirtlessdetailing.com/services/interior-exterior-detailing-combo" />
         <meta property="og:image" content={cover.src} />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/services/interior-exterior-detailing-combo" />
+        <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
+          __html: `{
+            "@context": "http://schema.org",
+            "@type": "Product",
+            "name": "Full Interior and Exterior Detail Combo",
+            "brand": "Dirt-Less Detailing",
+            "description": "With our combo service your entire vehicle including the engine bay will be cleaned with out tried and true practices.",
+            "image": "${cover.src}",
+            "url": "https://www.dirtlessdetailing.com/services/interior-exterior-detailing-combo/",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "USD",
+              "price": "350",
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "priceCurrency": "USD",
+                "price": "350",
+                "minPrice": "350",
+                "maxPrice": "700"
+              },
+              "availability": "http://schema.org/InStock",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Full Interior and Exterior Detailing Service",
+                "serviceType": "Full Vehicle Detail",
+                "providerMobility": "dynamic"
+              }
+            }
+          }`,
+        }} />
       </Head>
       <div className="cover">
         <Image src={cover} alt="Vehicle after a Combo Wash" layout="fill" objectFit='cover' placeholder='blur' priority />

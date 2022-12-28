@@ -56,7 +56,7 @@ export default function PDLWash() {
             "brand": "Dirt-Less Detailing",
             "description": "At Dirt-Less Detailing, our team uses top-of-the-line equipment and environmentally friendly products to provide a thorough wash and wax, leaving your car shining and protected.",
             "image": "${cover.src}",
-            "url": "https://www.dirtlessdetailing.com/services/premium-dirtless-wash",
+            "url": "https://www.dirtlessdetailing.com/services/premium-dirtless-wash/",
             "offers": {
               "@type": "Offer",
               "priceCurrency": "USD",

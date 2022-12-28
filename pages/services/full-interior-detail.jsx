@@ -55,7 +55,7 @@ export default function FullIntEx() {
             "brand": "Dirt-Less Detailing",
             "description": "Get your car's interior looking brand new with our full interior detailing service. We offer thorough cleaning and conditioning of all surfaces, including the dashboard, seats, and carpets. Contact us to schedule your appointment today.",
             "image": "${cover.src}",
-            "url": "https://www.dirtlessdetailing.com/services/full-interior-detail",
+            "url": "https://www.dirtlessdetailing.com/services/full-interior-detail/",
             "offers": {
               "@type": "Offer",
               "priceCurrency": "USD",

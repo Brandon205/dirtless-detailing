@@ -52,7 +52,7 @@ export default function DLWash() {
             "brand": "Dirt-Less Detailing",
             "description": "At Dirt-Less Detailing, we offer a comprehensive car wash service to keep your vehicle looking its best.",
             "image": "${cover.src}",
-            "url": "https://www.dirtlessdetailing.com/services/dirtless-wash",
+            "url": "https://www.dirtlessdetailing.com/services/dirtless-wash/",
             "offers": {
               "@type": "Offer",
               "priceCurrency": "USD",

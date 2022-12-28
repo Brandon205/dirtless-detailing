@@ -24,6 +24,36 @@ export default function IntCoatings() {
                 <meta property="og:url" content="https://www.dirtlessdetailing.com/services/interior-ceramic-coating" />
                 <meta property="og:image" content={cover.src} />
                 <link rel="canonical" href="https://www.dirtlessdetailing.com/services/interior-ceramic-coating" />
+                <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
+                    __html: `{
+                        "@context": "http://schema.org",
+                        "@type": "Product",
+                        "name": "Interior Ceramic Coating",
+                        "brand": "Dirt-Less Detailing",
+                        "description": "Protect and enhance your vehicle's interior with our professional interior ceramic coating service. Contact us to learn more and schedule your interior ceramic coating service today.",
+                        "image": "${cover.src}",
+                        "url": "https://www.dirtlessdetailing.com/services/interior-ceramic-coating/",
+                        "offers": {
+                            "@type": "Offer",
+                            "priceCurrency": "USD",
+                            "price": "75",
+                            "priceSpecification": {
+                                "@type": "PriceSpecification",
+                                "priceCurrency": "USD",
+                                "price": "75",
+                                "minPrice": "75",
+                                "maxPrice": "150"
+                            },
+                            "availability": "http://schema.org/InStock",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Interior Ceramic Coating Service",
+                                "serviceType": "Ceramic Coating",
+                                "providerMobility": "dynamic"
+                            }
+                        }
+                    }`,
+                }} />
             </Head>
             <div className="cover">
                 <Image src={cover} alt="Coated and protected vehicle interior" layout="fill" objectFit='cover' placeholder='blur' priority />

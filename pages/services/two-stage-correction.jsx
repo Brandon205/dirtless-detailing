@@ -54,6 +54,46 @@ export default function TwoPC() {
         <meta property="og:url" content="https://www.dirtlessdetailing.com/services/two-stage-correction" />
         <meta property="og:image" content={cover.src} />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/services/two-stage-correction" />
+        <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
+          __html: `{
+            "@context": "http://schema.org",
+            "@type": "Product",
+            "name": "Two Stage Paint Correction",
+            "brand": "Dirt-Less Detailing",
+            "description": "Revive the shine and clarity of your vehicle's paint with our professional paint correction service. Our team at Dirt-Less Detailing uses advanced techniques and products to remove defects and imperfections, leaving your car with a smooth and flawless finish. Contact us to learn more and schedule your paint correction service today.",
+            "image": "${cover.src}",
+            "url": "https://www.dirtlessdetailing.com/services/two-stage-correction/",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "USD",
+              "price": "450",
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "priceCurrency": "USD",
+                "price": "450",
+                "minPrice": "450",
+                "maxPrice": "1100"
+              },
+              "availability": "http://schema.org/InStock",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Two Stage Paint Correction Service",
+                "serviceType": "Paint Correction",
+                "areaServed": {
+                  "@type": "Place",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Bonney Lake",
+                    "addressRegion": "WA",
+                    "postalCode": "99391",
+                    "streetAddress": "9305 205th Ave E"
+                  }
+                },
+                "providerMobility": "static"
+              }
+            }
+          }`,
+        }} />
       </Head>
       <div className="cover">
         <Image src={cover} alt="Vehicle after a Two Stage Paint Correction" layout="fill" objectFit='cover' placeholder='blur' priority />

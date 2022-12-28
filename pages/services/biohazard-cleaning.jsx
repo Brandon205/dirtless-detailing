@@ -56,7 +56,7 @@ export default function Bio() {
             "brand": "Dirt-Less Detailing",
             "description": "Our team at Dirt-Less Detailing is trained and equipped to handle the safe and effective cleaning of biohazard materials in your vehicle.",
             "image": "${seatbelts.src}",
-            "url": "https://www.dirtlessdetailing.com/services/biohazard-cleaning",
+            "url": "https://www.dirtlessdetailing.com/services/biohazard-cleaning/",
             "offers": {
               "@type": "Offer",
               "priceCurrency": "USD",
