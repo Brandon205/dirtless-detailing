@@ -53,15 +53,18 @@ export default function PDLWash() {
             "@context": "http://schema.org",
             "@type": "Product",
             "name": "Premium Dirt-Less Wash",
+            "brand": "Dirt-Less Detailing",
             "description": "At Dirt-Less Detailing, our team uses top-of-the-line equipment and environmentally friendly products to provide a thorough wash and wax, leaving your car shining and protected.",
+            "image": "${cover.src}",
             "url": "https://www.dirtlessdetailing.com/services/premium-dirtless-wash",
             "offers": {
               "@type": "Offer",
               "priceCurrency": "USD",
+              "price": "150",
               "priceSpecification": {
               	"@type": "PriceSpecification",
                 "priceCurrency": "USD",
-                "price": "75",
+                "price": "150",
                 "minPrice": "150",
                 "maxPrice": "275"
               },
@@ -70,7 +73,6 @@ export default function PDLWash() {
                 "@type": "Service",
                 "name": "Premium Dirt-Less Wash Service",
                 "serviceType": "Car Wash and Wax",
-                "image": "${cover.src}",
                 "providerMobility": "dynamic"
               }
             }

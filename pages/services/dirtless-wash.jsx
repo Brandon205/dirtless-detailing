@@ -49,11 +49,14 @@ export default function DLWash() {
             "@context": "http://schema.org",
             "@type": "Product",
             "name": "Dirt-Less Wash",
+            "brand": "Dirt-Less Detailing",
             "description": "At Dirt-Less Detailing, we offer a comprehensive car wash service to keep your vehicle looking its best.",
+            "image": "${cover.src}",
             "url": "https://www.dirtlessdetailing.com/services/dirtless-wash",
             "offers": {
               "@type": "Offer",
               "priceCurrency": "USD",
+              "price": "75",
               "priceSpecification": {
               	"@type": "PriceSpecification",
                 "priceCurrency": "USD",
@@ -66,7 +69,6 @@ export default function DLWash() {
                 "@type": "Service",
                 "name": "Dirt-Less Wash Service",
                 "serviceType": "Car Wash",
-                "image": "${cover.src}",
                 "providerMobility": "dynamic"
               }
             }

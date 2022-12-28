@@ -52,11 +52,14 @@ export default function FullIntEx() {
             "@context": "http://schema.org",
             "@type": "Product",
             "name": "Full Interior Detailing",
+            "brand": "Dirt-Less Detailing",
             "description": "Get your car's interior looking brand new with our full interior detailing service. We offer thorough cleaning and conditioning of all surfaces, including the dashboard, seats, and carpets. Contact us to schedule your appointment today.",
+            "image": "${cover.src}",
             "url": "https://www.dirtlessdetailing.com/services/full-interior-detail",
             "offers": {
               "@type": "Offer",
               "priceCurrency": "USD",
+              "price": "200",
               "priceSpecification": {
               	"@type": "PriceSpecification",
                 "priceCurrency": "USD",
@@ -69,7 +72,6 @@ export default function FullIntEx() {
                 "@type": "Service",
                 "name": "Full Interior Detailing Service",
                 "serviceType": "Interior Detailing",
-                "image": "${cover.src}",
                 "providerMobility": "dynamic"
               }
             }

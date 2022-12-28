@@ -53,11 +53,14 @@ export default function Bio() {
             "@context": "http://schema.org",
             "@type": "Product",
             "name": "Biohazard Cleaning",
+            "brand": "Dirt-Less Detailing",
             "description": "Our team at Dirt-Less Detailing is trained and equipped to handle the safe and effective cleaning of biohazard materials in your vehicle.",
+            "image": "${seatbelts.src}",
             "url": "https://www.dirtlessdetailing.com/services/biohazard-cleaning",
             "offers": {
               "@type": "Offer",
               "priceCurrency": "USD",
+              "price": "400",
               "priceSpecification": {
               	"@type": "PriceSpecification",
                 "priceCurrency": "USD",
@@ -70,7 +73,6 @@ export default function Bio() {
                 "@type": "Service",
                 "name": "Biohazard Cleaning Service",
                 "serviceType": "Biohazard Removal",
-                "image": "${seatbelts.src}",
                 "providerMobility": "dynamic"
               }
             }
