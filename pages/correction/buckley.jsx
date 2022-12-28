@@ -25,6 +25,78 @@ export default function buckley() {
                 <meta property="og:url" content="https://www.dirtlessdetailing.com/correction/buckley" />
                 <meta property="og:image" content={cover.src} />
                 <link rel="canonical" href="https://www.dirtlessdetailing.com/correction/buckley" />
+                
+                <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
+                    __html: `{
+                        "@context": "http://schema.org",
+                        "@type": "Product",
+                        "name": "Paint Correction",
+                        "brand": "Dirt-Less Detailing",
+                        "description": "Revive the shine and clarity of your vehicle's paint with our professional paint correction service. Contact us to learn more and schedule your paint correction service today.",
+                        "image": "${cover.src}",
+                        "url": "https://www.dirtlessdetailing.com/correction/buckley/",
+                        "offers": [
+                            {
+                                "@type": "Offer",
+                                "priceCurrency": "USD",
+                                "price": "300",
+                                "priceSpecification": {
+                                    "@type": "PriceSpecification",
+                                    "priceCurrency": "USD",
+                                    "price": "300",
+                                    "minPrice": "300",
+                                    "maxPrice": "850"
+                                },
+                                "availability": "http://schema.org/InStock",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "Single Stage Correction Service",
+                                    "serviceType": "Paint Correction",
+                                    "areaServed": {
+                                        "@type": "Place",
+                                        "address": {
+                                            "@type": "PostalAddress",
+                                            "addressLocality": "Bonney Lake",
+                                            "addressRegion": "WA",
+                                            "postalCode": "99391",
+                                            "streetAddress": "9305 205th Ave E"
+                                        }
+                                    },
+                                    "providerMobility": "static"
+                                }
+                            },
+                            {
+                                "@type": "Offer",
+                                "priceCurrency": "USD",
+                                "price": "450",
+                                "priceSpecification": {
+                                    "@type": "PriceSpecification",
+                                    "priceCurrency": "USD",
+                                    "price": "450",
+                                    "minPrice": "450",
+                                    "maxPrice": "1100"
+                                },
+                                "availability": "http://schema.org/InStock",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "Two Stage Correction Service",
+                                    "serviceType": "Paint Correction",
+                                    "areaServed": {
+                                        "@type": "Place",
+                                        "address": {
+                                            "@type": "PostalAddress",
+                                            "addressLocality": "Bonney Lake",
+                                            "addressRegion": "WA",
+                                            "postalCode": "99391",
+                                            "streetAddress": "9305 205th Ave E"
+                                        }
+                                    },
+                                    "providerMobility": "static"
+                                }
+                            }
+                        ]
+                    }`,
+                }} />
             </Head>
             <div className="cover">
                 <Image src={cover} alt="Car after Paint Correction service" layout="fill" objectFit='cover' placeholder='blur' priority />
