@@ -65,7 +65,7 @@ export default function Home() {
                             "@type": "AggregateRating",
                             "ratingValue": 5,
                             "reviewCount": 4
-                        }
+                        },
                         "email": "brenden@dirtlessdetailing.com",
                         "telephone": "(253) 252-9758"
                     }`,

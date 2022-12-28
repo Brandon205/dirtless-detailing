@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
-import createSchema from '../../utils/Schema';
 
 import cover from '../../public/imgs/PDLWashCover.webp';
 
@@ -49,15 +48,33 @@ export default function PDLWash() {
         <meta property="og:url" content="https://www.dirtlessdetailing.com/services/premium-dirtless-wash" />
         <meta property="og:image" content={cover.src} />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/services/premium-dirtless-wash" />
-        <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={createSchema({
-          name: 'Premium Dirt-Less Wash',
-          image: cover.src,
-          description: "At Dirt-Less Detailing, our team uses top-of-the-line equipment and environmentally friendly products to provide a thorough wash and wax, leaving your car shining and protected.",
-          url: '/services/premium-dirtless-wash',
-          minPrice: '150',
-          maxPrice: '275',
-          mobility: 'dynamic'
-        })} />
+        <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
+          __html: `{
+            "@context": "http://schema.org",
+            "@type": "WebPage",
+            "name": "Premium Dirt-Less Wash",
+            "description": "At Dirt-Less Detailing, our team uses top-of-the-line equipment and environmentally friendly products to provide a thorough wash and wax, leaving your car shining and protected.",
+            "url": "https://www.dirtlessdetailing.com/services/premium-dirtless-wash",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "USD",
+              "priceSpecification": {
+              	"@type": "PriceSpecification",
+                "priceCurrency": "USD",
+                "minPrice": "150",
+                "maxPrice": "275"
+              },
+              "availability": "http://schema.org/InStock",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Premium Dirt-Less Wash Service",
+                "serviceType": "Car Wash and Wax",
+                "image": "${cover.src}",
+                "providerMobility": "dynamic"
+              }
+            }
+          }`,
+        }} />
       </Head>
       <div className="cover">
         <Image src={cover} alt="Vehicle after a Premium Dirt-Less Wash" layout="fill" objectFit='cover' placeholder='blur' priority />
