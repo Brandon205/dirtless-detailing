@@ -12,7 +12,6 @@ import { FaRegStar } from 'react-icons/fa';
 
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-import ddLogo from '../public/imgs/PNG1.png';
 import cover from '../public/imgs/main-cover.webp';
 import kenzo from '../public/imgs/pageimgs/homepage/project.png';
 

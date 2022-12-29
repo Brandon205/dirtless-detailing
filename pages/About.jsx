@@ -16,6 +16,66 @@ export default function About() {
         <meta property="og:url" content="https://www.dirtlessdetailing.com/About" />
         <meta property="og:image" content={cover.src} />
         <link rel="canonical" href="https://www.dirtlessdetailing.com/About" />
+        <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
+          __html: `{
+            "@context": "https://schema.org/",
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "What do you need from me when you get here?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "All we will need is an electrical outlet, a water spigot, and preferably all/most personal items out of the car."
+              }
+            }, {
+              "@type": "Question",
+              "name": "How long will the detail take?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Every job will take a different amount of time, but once we know the condition of the car and the services requested we can give a good estimate as to how long it will take."
+              }
+            }, {
+              "@type": "Question",
+              "name": "Can you come to my apartment or workplace?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It will depend on the amount of space and access if we can or not."
+              }
+            }, {
+              "@type": "Question",
+              "name": "What forms of payment do you take?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Currently you can pay by card, cash, or Facebook pay."
+              }
+            }, 
+            {
+              "@type": "Question",
+              "name": "Are you licensed and insured?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text":"We are 100% licensed and insured!"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What cities do you service?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text":"With our mobile service we can go out to: Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I have to be there the whole time you're working on my car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text":"Absolutely not! You are free to go do whatever you need to do while we are working."
+              }
+            }
+          ]
+          }`,
+        }} />
       </Head>
       <div className="cover">
         <Image src={cover} alt="Chevrolet truck on trailer after Two Stage Paint Correction" layout="fill" objectFit='cover' priority />
@@ -50,7 +110,7 @@ export default function About() {
           <li className='faq-p'>With our mobile service we can go out to: Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham.</li>
 
           <li className='faq-li'>Do I have to be there the whole time you're working on my car?</li>
-          <li className='faq-p'>Absolutely not. You are free to go do whatever you need to do while we are working.</li>
+          <li className='faq-p'>Absolutely not! You are free to go do whatever you need to do while we are working.</li>
 
           <li className='faq-li'>I have questions about taking care of my car after getting a ceramic coating?</li>
           <li className='faq-p'>Check out our <a href="/services/exterior-ceramic-coating#faq" className="aside-link">Ceramic Coating</a> FAQ section to get your questions answered!</li>
