@@ -52,6 +52,9 @@ export default function Home() {
                         "priceRange": "$$$",
                         "openingHours": ["Mo-Su 7:00-19:00"],
                         "paymentAccepted": "Cash, Credit/Debit Card, Facebook Pay",
+                        "url": "https://www.dirtlessdetailing.com",
+                        "email": "brenden@dirtlessdetailing.com",
+                        "telephone": "(253) 252-9758",
                         "address": {
                             "@type": "PostalAddress",
                             "addressLocality": "Bonney Lake",
@@ -59,13 +62,16 @@ export default function Home() {
                             "postalCode": "99391",
                             "streetAddress": "9305 205th Ave E"
                         },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 47.17285149644542,
+                            "longitude": -122.15677457325478
+                        },
                         "aggregateRating": {
                             "@type": "AggregateRating",
                             "ratingValue": 5,
                             "reviewCount": 4
-                        },
-                        "email": "brenden@dirtlessdetailing.com",
-                        "telephone": "(253) 252-9758"
+                        }
                     }`,
                 }} />
             </Head>

@@ -26,6 +26,38 @@ export default function federalWay() {
                 <meta property="og:url" content="https://www.dirtlessdetailing.com/location/federal-way" />
                 <meta property="og:image" content={cover.src} />
                 <link rel="canonical" href="https://www.dirtlessdetailing.com/location/federal-way" />
+                <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
+                    __html: `{
+                        "@context": "https://schema.org/",
+                        "@type": "LocalBusiness",
+                        "name": "Dirt-Less Detailing",
+                        "image": "${cover.src}",
+                        "currenciesAccepted": "USD",
+                        "priceRange": "$$$",
+                        "openingHours": ["Mo-Su 7:00-19:00"],
+                        "paymentAccepted": "Cash, Credit/Debit Card, Facebook Pay",
+                        "url": "https://www.dirtlessdetailing.com",
+                        "email": "brenden@dirtlessdetailing.com",
+                        "telephone": "(253) 252-9758",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "addressLocality": "Bonney Lake",
+                            "addressRegion": "WA",
+                            "postalCode": "99391",
+                            "streetAddress": "9305 205th Ave E"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 47.17285149644542,
+                            "longitude": -122.15677457325478
+                        },
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": 5,
+                            "reviewCount": 4
+                        }
+                    }`,
+                }} />
             </Head>
             <div className="cover">
                 <Image src={cover} alt="Car after a Dirt-Less Wash" layout="fill" objectFit='cover' placeholder='blur' priority />
