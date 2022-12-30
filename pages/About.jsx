@@ -27,26 +27,37 @@ export default function About() {
                 "@type": "Answer",
                 "text": "All we will need is an electrical outlet, a water spigot, and preferably all/most personal items out of the car."
               }
-            }, {
+            },
+            {
               "@type": "Question",
               "name": "How long will the detail take?",
               "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "Every job will take a different amount of time, but once we know the condition of the car and the services requested we can give a good estimate as to how long it will take."
               }
-            }, {
+            },
+            {
               "@type": "Question",
               "name": "Can you come to my apartment or workplace?",
               "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "It will depend on the amount of space and access if we can or not."
               }
-            }, {
+            },
+            {
+              "@type": "Question",
+              "name": "Do you offer gift cards or gift certificates?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Currently you can pay by card, cash, or Facebook pay."
+              }
+            }, 
+            {
               "@type": "Question",
               "name": "What forms of payment do you take?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Currently you can pay by card, cash, or Facebook pay."
+                "text": "<p>Yes we do! Any of our services can be bought as a gift certificate. On the <a href=https://www.dirtlessdetailing.com/Contact>Contact</a> page choose the For Someone Else option.</p>"
               }
             }, 
             {
