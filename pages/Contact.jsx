@@ -14,6 +14,7 @@ import { BiLinkExternal } from 'react-icons/bi';
 export default function Contact() {
     const [intSelected, setIntSelected] = useState(false);
     const [coatingSelected, setCoatingSelected] = useState(false);
+    const [gift, setGift] = useState(false);
 
     let formRef = useRef();
 
@@ -28,6 +29,8 @@ export default function Contact() {
             "Make": e.target['make'].value,
             "Model": e.target['model'].value,
             "Message": e.target['message'].value,
+            "For Myself": e.target['myself'].checked ? 'Yes' : 'No',
+            "Gift Card": e.target['someone'].checked ? 'Yes' : 'No',
             "Combo": e.target['combo'].checked ? 'Yes' : 'No',
             "Full Interior With Extraction": e.target['fullIntEx'].checked ? 'Yes' : 'No',
             "Full Interior Without Extraction": e.target['fullInterior'].checked ? 'Yes' : 'No',
@@ -57,6 +60,7 @@ export default function Contact() {
             "Two Stage Paint Correction": e.target['twoPC'].checked ? 'Yes' : 'No',
             "Glass Polishing (Correction Add-on)": e.target['glassCorrection'].checked ? 'Yes' : 'No'
         }
+
         const formData = new FormData();
         Object.entries(formInfo).forEach(([key, value]) => {
             if (key === "Name" || key === "Email" || key === "Message" || key === "Dirtiness" || key === "Dog Hair" || key === "Phone" || key === "Year" || key === "Make" || key === "Model") {
@@ -70,7 +74,7 @@ export default function Contact() {
             method: "POST",
             body: formData
         }).then((test) => {
-            toast.success("Form submitted! Expect an email reply soon!", {
+            toast.success("Form submitted! Expect an email, text, or phone call soon!", {
                 position: "bottom-center",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -93,6 +97,10 @@ export default function Contact() {
             })
         });
     };
+
+    let handleGiftSelect = (giftButton) => {
+        setGift(giftButton)
+    }
 
     let handleIntSelect = () => {
         if (formRef.current['fullIntEx'].checked && formRef.current['fullInterior'].checked) {
@@ -169,7 +177,7 @@ export default function Contact() {
                     <div className='contact-icon-container'>
                         <AiFillGift className='contact-icon' />
                         <div>
-                            <p>Still searching for a Christmas Gift for someone? Ask us about gift certificates and we will gladly give a certificate for any one of our services!</p>
+                            <p>Looking to get a gift for someone? All of our services can be bought as a gift certificate, just select "For Someone Else" below!</p>
                         </div>
                     </div>
                 </div>
@@ -352,6 +360,13 @@ export default function Contact() {
                                 <label htmlFor="message" className='text-input-label'>Additional Information:</label>
                                 <textarea type="textarea" name="message" id='message' className='textarea' placeholder='Do you want our mobile service or to schedule a drop off? Do you have any other questions/concerns?' />
                             </div>
+                            <div>
+                                <input type="checkbox" name="myself" id='myself' className='checkbox-input' onChange={() => handleGiftSelect(false)} checked={gift ? false : true} />
+                                <label htmlFor="myself" className='checkbox-label'>For Myself</label>
+                                <input type="checkbox" name="someone" id='someone' className='checkbox-input' onChange={() => handleGiftSelect(true)} checked={gift ? true : false} />
+                                <label htmlFor="someone" className='checkbox-label'>For Someone Else</label>
+                            </div>
+                            <p style={{textAlign: 'left', marginTop: 0, display: gift ? 'block' : 'none'}}>* When buying a gift certificate for someone else fill out your contact information, but their vehicle information (or as much as you know about their vehicle). We'll then get in contact with you to get the gift card to you!</p>
                         </div>
                     </div>
 
@@ -395,7 +410,7 @@ export default function Contact() {
 
                     <div className="form-section">
                         <p className='form-section-heading'>Combo Deal <a href='/services/interior-exterior-detailing-combo' className='aside-link'><BiLinkExternal /></a></p>
-                        <p style={{ marginTop: 0, }}>(Comes with <span className='special-package'>FREE</span> engine bay cleaning)</p>
+                        <p style={{ marginTop: 0, }}>(Comes with a <span className='special-package'>FREE</span> engine bay cleaning)</p>
                         <div>
                             <input type="checkbox" name="combo" id='combo' className='checkbox-input' />
                             <label htmlFor="combo" className='checkbox-label'>Full Interior and Exterior Combo</label>

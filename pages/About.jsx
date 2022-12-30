@@ -100,6 +100,9 @@ export default function About() {
           <li className='faq-li'>Can you come to my apartment or workplace?</li>
           <li className='faq-p'>It will depend on the amount of space and access if we can or not.</li>
 
+          <li className='faq-li'>Do you offer gift cards or gift certificates?</li>
+          <li className='faq-p'>Yes we do! Any of our services can be bought as a gift certificate. On the <a href="/Contact" className='aside-link'>Contact</a> page choose the "For Someone Else" option.</li>
+
           <li className='faq-li'>What forms of payment do you take?</li>
           <li className='faq-p'>Currently you can pay by card, cash, or Facebook pay.</li>
 
