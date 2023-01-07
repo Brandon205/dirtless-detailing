@@ -91,7 +91,7 @@ export default function PDLWash() {
         </p>
       </div>
 
-      <div className='main-content-container'>
+      <div className='main-content-container bg-contact'>
         <div className="process-container">
           <div>
             <main className="service-main">
@@ -102,14 +102,50 @@ export default function PDLWash() {
                 <p>A lot of our customers love this service since it doesn't take much time to perform, but the results that you get are stellar!</p>
                 <p>Want to compare our Premium and non-premium washes? Check out our <a href='/detailing/car-washes' className='aside-link'>comparison</a> page for more details.</p>
               </div>
-
-              <br className='extra-space' />
             </main>
+            <br className='extra-space' />
             <h2 className='cleaning-process-title'>Our Premium Dirt-Less Wash Process*</h2>
             <ol className='list'>
               {content}
             </ol>
             <p style={{ marginTop: 0 }}>*Truck Bed cleaning offered as an extra add-on if needed.</p>
+
+            <br className='extra-space' />
+
+            <div>
+              <h3 className='pricing-title text-white'>Premium Dirt-Less Wash Pricing</h3>
+              <p className='subtext'>*Final pricing may vary based on your vehicle condition and size.</p>
+              <div className="pricing-container">
+                <div className="pricing-card text-black">
+                  <strong className='size'>Small</strong>
+                  <p className="pricing-price pricing-border">$150</p>
+                  <p className="example-vehicle pricing-border">Smaller Trucks</p>
+                  <p className="example-vehicle pricing-border">Most Cars</p>
+                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                </div>
+                <div className="pricing-card text-black">
+                  <strong className='size'>Medium</strong>
+                  <p className="pricing-price pricing-border">$200</p>
+                  <p className="example-vehicle pricing-border">Mid-Size SUV's</p>
+                  <p className="example-vehicle pricing-border">Most Wagons</p>
+                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                </div>
+                <div className="pricing-card text-black">
+                  <strong className='size'>Large</strong>
+                  <p className="pricing-price pricing-border">$250</p>
+                  <p className="example-vehicle pricing-border">Large SUV's</p>
+                  <p className="example-vehicle pricing-border">Some Trucks</p>
+                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                </div>
+                <div className="pricing-card text-black">
+                  <strong className='size'>Extra Large</strong>
+                  <p className="pricing-price pricing-border">$275</p>
+                  <p className="example-vehicle pricing-border">Larger trucks</p>
+                  <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
+                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div>
@@ -123,9 +159,7 @@ export default function PDLWash() {
                   <a href="/gallery/dirtless-wash-gallery" className="service-link">Exterior Wash Gallery</a>
                 </div>
               </div>
-            </div>
 
-            <div className='aside-container'>
               <div className='service-aside addons-aside'>
                 <p className='extra-addons text-large'>Extra Add-ons</p>
                 <hr className="contact-border" style={{ marginBottom: 16 }} />
@@ -149,6 +183,11 @@ export default function PDLWash() {
                   </div>
                 </div>
               </div>
+
+              <div className="service-aside addons-aside">
+                <h3 className="text-white">Get a <span className='special-package'>FREE</span> Engine cleaning!</h3>
+                <p className="subtext">Check out our Current <a className='aside-link' href="/services/interior-exterior-detailing-combo">Combo</a> deal that combines this Premium Dirt-Less Wash, our <a className='aside-link' href="/services/full-interior-detail">Full Interior Cleaning</a>, and gives you an <a href="/add-ons#engine" className='aside-link'>Engine Bay Cleaning</a> totally on us!</p>              
+              </div>
             </div>
           </div>
 
@@ -156,48 +195,6 @@ export default function PDLWash() {
 
         <br className='extra-space' />
 
-        <div className="combo-container">
-          <h3 className="text-white">Get a <span className='special-package'>FREE</span> Engine cleaning!</h3>
-          <p className="subtext">Check out our Current <a className='aside-link' href="/services/interior-exterior-detailing-combo">Combo</a> deal that combines this Premium Dirt-Less Wash, our <a className='aside-link' href="/services/full-interior-detail">Full Interior Cleaning</a>, and gives you an Engine Bay Cleaning totally on us!  </p>
-        </div>
-
-        <br className='extra-space' />
-
-        <div>
-          <h3 className='pricing-title'>Premium Dirt-Less Wash Pricing</h3>
-          <strong className='pricing-subtext'>*Final pricing may vary based on your vehicle condition and size.</strong>
-          <div className="pricing-container">
-            <div className="pricing-card">
-              <strong className='size'>Small</strong>
-              <p className="pricing-price pricing-border">$150</p>
-              <p className="example-vehicle pricing-border">Smaller Trucks</p>
-              <p className="example-vehicle pricing-border">Most Cars</p>
-              <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-            </div>
-            <div className="pricing-card">
-              <strong className='size'>Medium</strong>
-              <p className="pricing-price pricing-border">$200</p>
-              <p className="example-vehicle pricing-border">Mid-Size SUV's</p>
-              <p className="example-vehicle pricing-border">Most Wagons</p>
-              <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-            </div>
-            <div className="pricing-card">
-              <strong className='size'>Large</strong>
-              <p className="pricing-price pricing-border">$250</p>
-              <p className="example-vehicle pricing-border">Large SUV's</p>
-              <p className="example-vehicle pricing-border">Some Trucks</p>
-              <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-            </div>
-            <div className="pricing-card">
-              <strong className='size'>Extra Large</strong>
-              <p className="pricing-price pricing-border">$275</p>
-              <p className="example-vehicle pricing-border">Larger trucks</p>
-              <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
-              <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-            </div>
-          </div>
-
-        </div>
       </div>
     </section>
   )
