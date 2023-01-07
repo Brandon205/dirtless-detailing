@@ -107,7 +107,7 @@ export default function TwoPC() {
         </p>
       </div>
 
-      <div className='main-content-container'>
+      <div className='main-content-container bg-contact'>
         <div className="process-container">
           <div>
             <main className="service-main">
@@ -128,6 +128,70 @@ export default function TwoPC() {
             <ol className='list'>
               {content}
             </ol>
+
+            <br className='extra-space' />
+
+            <div>
+              <h3 className='pricing-title text-white'>Our Two Stage Paint Correction Pricing</h3>
+              <p className='subtext'>*Final pricing may vary based on your vehicle condition and size.</p>
+              <div className="pricing-container">
+                <div className="pricing-card text-black">
+                  <strong className='size'>Small</strong>
+                  <p className="pricing-price pricing-border">$450- $600</p>
+                  <p className="example-vehicle pricing-border">Smaller Trucks</p>
+                  <p className="example-vehicle pricing-border">Most Cars</p>
+                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                </div>
+                <div className="pricing-card text-black">
+                  <strong className='size'>Medium</strong>
+                  <p className="pricing-price pricing-border">$600- $850</p>
+                  <p className="example-vehicle pricing-border">Mid-Size SUV's</p>
+                  <p className="example-vehicle pricing-border">Most Wagons</p>
+                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                </div>
+                <div className="pricing-card text-black">
+                  <strong className='size'>Large</strong>
+                  <p className="pricing-price pricing-border">$800- $1,100</p>
+                  <p className="example-vehicle pricing-border">Large SUV's</p>
+                  <p className="example-vehicle pricing-border">Trucks</p>
+                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                </div>
+              </div>
+
+              <br className='extra-space' />
+
+              <h4 className='text-large'>Visual example of different paint defects:</h4>
+              <p className='subtext'>This gives an example of why deeper scratches aren't removable without repainting.</p>
+              <div className='examples-container'>
+                <div className='example-img'>
+                  <Zoom>
+                    <Image src={paintDefects} alt="What IGL coatings protect from circle" placeholder='blur' />
+                  </Zoom>
+                </div>
+              </div>
+            </div>
+
+            <br className='extra-space' />
+
+            <div>
+              <strong className='text-medium'>We'll help customers from all over get a paint correction on their vehicle, however, most of our customers come to our shop from these areas:</strong>
+              <div style={{ display: 'grid', placeItems: 'center' }}>
+                <ul className='cities-ul'>
+                  <li><a href='/correction/bonney-lake' className='aside-link'>Bonney Lake</a></li>
+                  <li><a href='/correction/buckley' className='aside-link'>Buckley</a></li>
+                  <li><a href='/correction/sumner' className='aside-link'>Sumner</a></li>
+                  <li><a href='/correction/enumclaw' className='aside-link'>Enumclaw</a></li>
+                  <li><a href='/correction/puyallup' className='aside-link'>Puyallup</a></li>
+                  <li><a href='/correction/federal-way' className='aside-link'>Federal Way</a></li>
+                  <li><a href='/correction/orting' className='aside-link'>Orting</a></li>
+                  <li><a href='/correction/south-prairie' className='aside-link'>South Prairie</a></li>
+                  <li><a href='/correction/black-diamond' className='aside-link'>Black Diamond</a></li>
+                  <li><a href='/correction/milton' className='aside-link'>Milton</a></li>
+                  <li><a href='/correction/edgewood' className='aside-link'>Edgewood</a></li>
+                  <li><a href='/correction/graham' className='aside-link'>Graham</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
 
           <div>
@@ -141,9 +205,6 @@ export default function TwoPC() {
                   <a href="/gallery/paint-correction-gallery" className="service-link">Paint Correction Gallery</a>
                 </div>
               </div>
-            </div>
-
-            <div className='aside-container'>
               <div className='service-aside addons-aside'>
                 <p className='extra-addons text-large'>Extra Add-ons</p>
                 <hr className="contact-border" style={{ marginBottom: 16 }} />
@@ -156,72 +217,11 @@ export default function TwoPC() {
                 </div>
               </div>
             </div>
+
           </div>
 
         </div>
 
-        <br className='extra-space' />
-
-        <div>
-          <h3 className='pricing-title'>Our Two Stage Paint Correction Pricing</h3>
-          <strong className='pricing-subtext'>*Final pricing may vary based on your vehicle condition and size.</strong>
-          <div className="pricing-container">
-            <div className="pricing-card">
-              <strong className='size'>Small</strong>
-              <p className="pricing-price pricing-border">$450- $600</p>
-              <p className="example-vehicle pricing-border">Smaller Trucks</p>
-              <p className="example-vehicle pricing-border">Most Cars</p>
-              <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-            </div>
-            <div className="pricing-card">
-              <strong className='size'>Medium</strong>
-              <p className="pricing-price pricing-border">$600- $850</p>
-              <p className="example-vehicle pricing-border">Mid-Size SUV's</p>
-              <p className="example-vehicle pricing-border">Most Wagons</p>
-              <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-            </div>
-            <div className="pricing-card">
-              <strong className='size'>Large</strong>
-              <p className="pricing-price pricing-border">$800- $1,100</p>
-              <p className="example-vehicle pricing-border">Large SUV's</p>
-              <p className="example-vehicle pricing-border">Trucks</p>
-              <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-            </div>
-          </div>
-
-          <br className='extra-space' />
-
-          <h4 className='text-large'>Visual example of different paint defects:</h4>
-          <strong className='pricing-subtext'>This gives an example of why deeper scratches aren't removable without repainting.</strong>
-          <div className='examples-container'>
-            <div className='example-img'>
-              <Zoom>
-                <Image src={paintDefects} alt="What IGL coatings protect from circle" placeholder='blur' />
-              </Zoom>
-            </div>
-          </div>
-
-        </div>
-
-        <div>
-          <strong className='text-medium'>We'll help customers from all over get a paint correction on their vehicle, however, most of our customers come to our shop from these areas:</strong>
-          <div style={{ display: 'grid', placeItems: 'center' }}>
-            <ul className='cities-ul'>
-              <li><a href='/correction/bonney-lake' className='aside-link'>Bonney Lake</a></li>
-              <li><a href='/correction/buckley' className='aside-link'>Buckley</a></li>
-              <li><a href='/correction/sumner' className='aside-link'>Sumner</a></li>
-              <li><a href='/correction/enumclaw' className='aside-link'>Enumclaw</a></li>
-              <li><a href='/correction/puyallup' className='aside-link'>Puyallup</a></li>
-              <li><a href='/correction/federal-way' className='aside-link'>Federal Way</a></li>
-              <li><a href='/correction/orting' className='aside-link'>Orting</a></li>
-              <li><a href='/correction/south-prairie' className='aside-link'>South Prairie</a></li>
-              <li><a href='/correction/black-diamond' className='aside-link'>Black Diamond</a></li>
-              <li><a href='/correction/milton' className='aside-link'>Milton</a></li>
-              <li><a href='/correction/edgewood' className='aside-link'>Edgewood</a></li>
-              <li><a href='/correction/graham' className='aside-link'>Graham</a></li>
-            </ul>
-          </div>
-        </div>
         <br className='extra-space' />
       </div>
     </section>
