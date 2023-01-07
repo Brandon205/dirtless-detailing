@@ -676,7 +676,6 @@ input[type="range"] {
   grid-auto-columns: 1fr;
   text-align: center;
   margin-top: 3rem;
-  width: 60vw;
   gap: 1rem;
 }
 
@@ -1734,6 +1733,10 @@ hr {
 
   .page-subheading {
     width: 70vw;
+  }
+
+  .package-container {
+    width: 60vw;
   }
 
   .servicepage-header h1 {
