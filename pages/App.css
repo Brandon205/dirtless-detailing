@@ -1159,6 +1159,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
 }
 
 .service-aside {
@@ -1432,7 +1433,7 @@ hr {
   margin: 0 auto;
   line-height: 2;
   font-size: 1.1em;
-  text-align: left;
+  text-align: center;
 }
 
 /** LOCATION PAGE CSS **/
@@ -1700,6 +1701,14 @@ hr {
     width: 60vw;
   }
 
+  .aside-container {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+    height: 100vh;
+    overflow: auto;
+  }
+
   .mobileservices-container {
     flex-direction: row;
     padding: 3rem 1rem;
@@ -1837,8 +1846,9 @@ hr {
   .process-container {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-evenly;
-    width: 95vw;
+    justify-content: center;
+    gap: 4vw;
+    width: 100vw;
     margin: 0 auto;
   }
 
