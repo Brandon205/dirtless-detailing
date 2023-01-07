@@ -91,7 +91,7 @@ export default function Bio() {
         </p>
       </div>
 
-      <div className='main-content-container'>
+      <div className='main-content-container bg-contact'>
         <div className='process-container'>
           <div>
             <main className="service-main">
@@ -108,6 +108,42 @@ export default function Bio() {
             <ol className='list'>
               {content}
             </ol>
+
+            <br className='extra-space' />
+
+            <h4 className='text-large'>Some extreme examples of our Biohazard cleaning work so far:</h4>
+            <div className="examples-container">
+              <div className="example-img">
+                <Zoom>
+                  <Image style={{ borderRadius: 16 }} src={seats} alt="seat mold before and after" layout="responsive" objectFit='scale-down' placeholder='blur' />
+                </Zoom>
+              </div>
+              <div className="example-img">
+                <Zoom>
+                  <Image style={{ borderRadius: 16 }} src={seatbelts} alt="seatbelt mold before and after" layout="responsive" objectFit='scale-down' placeholder='blur' />
+                </Zoom>
+              </div>
+              <div className="example-img">
+                <Zoom>
+                  <Image style={{ borderRadius: 16 }} src={mesh} alt="mesh net mold before and after" layout="responsive" objectFit="scale-down" placeholder='blur' />
+                </Zoom>
+              </div>
+            </div>
+
+            <br className='extra-space' />
+
+            <div>
+              <h3 className='pricing-title text-white'>Our Biohazard Cleaning Prices</h3>
+              <p className='subtext'>*Final pricing may vary based on your vehicle condition and size.</p>
+              <div className="pricing-container">
+                <div className="pricing-card text-black">
+                  <strong className='size'>Any Vehicle</strong>
+                  <p className="pricing-price pricing-border">$400- $1000</p>
+                  <p className="example-vehicle pricing-border">Any Size Vehicle</p>
+                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                </div>
+              </div>
+            </div>
           </div>
 
           <br className='extra-space' />
@@ -122,60 +158,21 @@ export default function Bio() {
                 <a href="/gallery/interior-detail-gallery" className="service-link">Full Interior Gallery</a>
               </div>
             </div>
-
-            <div className='aside-container'>
-              <div className='service-aside addons-aside'>
-                <p className='extra-addons text-large'>Extra Add-ons</p>
-                <hr className="contact-border" style={{ marginBottom: 16 }} />
-                <div className="aside-links">
-                  <div className="addon-container">
-                    <p className='addon-title'><a href="/services/add-ons#ozone" className='text-blue'>Ozone Treatment</a></p>
-                    <p className='m-0'><span className="bold special-package">$100</span></p>
-                    <p className="addon-subtext">Treats your vehicle to get rid of any viruses, bacteria, and odors.</p>
-                  </div>
+            {/* <div className='service-aside addons-aside'>
+              <p className='extra-addons text-large'>Extra Add-ons</p>
+              <hr className="contact-border" style={{ marginBottom: 16 }} />
+              <div className="aside-links">
+                <div className="addon-container">
+                  <p className='addon-title'><a href="/services/add-ons#ozone" className='text-blue'>Ozone Treatment</a></p>
+                  <p className='m-0'><span className="bold special-package">$100</span></p>
+                  <p className="addon-subtext">Treats your vehicle to get rid of any viruses, bacteria, and odors.</p>
                 </div>
               </div>
-            </div>
+            </div> */}
 
           </div>
         </div>
 
-        <br className='extra-space' />
-
-        <h4 className='text-large'>Some extreme examples of our Biohazard cleaning work so far:</h4>
-        <div className="examples-container">
-          <div className="example-img">
-            <Zoom>
-              <Image style={{ borderRadius: 16 }} src={seats} alt="seat mold before and after" layout="responsive" objectFit='scale-down' placeholder='blur' />
-            </Zoom>
-          </div>
-          <div className="example-img">
-            <Zoom>
-              <Image style={{ borderRadius: 16 }} src={seatbelts} alt="seatbelt mold before and after" layout="responsive" objectFit='scale-down' placeholder='blur' />
-            </Zoom>
-          </div>
-          <div className="example-img">
-            <Zoom>
-              <Image style={{ borderRadius: 16 }} src={mesh} alt="mesh net mold before and after" layout="responsive" objectFit="scale-down" placeholder='blur' />
-            </Zoom>
-          </div>
-        </div>
-
-        <br className='extra-space' />
-
-        <div>
-          <h3 className='pricing-title'>Our Biohazard Cleaning Prices</h3>
-          <strong className='pricing-subtext'>*Final pricing may vary based on your vehicle condition and size.</strong>
-          <div className="pricing-container">
-            <div className="pricing-card">
-              <strong className='size'>Any Vehicle</strong>
-              <p className="pricing-price pricing-border">$400- $1000</p>
-              <p className="example-vehicle pricing-border">Any Size Vehicle</p>
-              <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-            </div>
-          </div>
-
-        </div>
       </div>
     </section>
   )

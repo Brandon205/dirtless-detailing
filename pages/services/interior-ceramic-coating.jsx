@@ -82,10 +82,11 @@ export default function IntCoatings() {
                             <p>Weather it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe the spill up before it seeps in.</p>
                             <p>Typically both of our interior coatings will protect your vehicle for about a year before they should be reapplied.</p>
                         </div>
-
-                        <br className='extra-space' />
                     </main>
-                    <h2 className='coating-heading'>Fabric Coating</h2>
+
+                    <br className='extra-space' />
+
+                    <h2 className='coating-heading text-xl'>Fabric Coating</h2>
                     <p className='package-desc subtext'>The best protection for the fabric inside of your vehicle.</p>
                     <div className='package-container'>
                         <div className='package-details'>
@@ -102,7 +103,7 @@ export default function IntCoatings() {
 
                     <br className='extra-space' />
 
-                    <h2 className='coating-heading'>Leather Coating</h2>
+                    <h2 className='coating-heading text-xl'>Leather Coating</h2>
                     <p className='package-desc subtext'>The longest lasting protection for your vehicles leather.</p>
                     <div className='package-container'>
                         <div className='package-details'>
