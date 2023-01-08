@@ -115,7 +115,7 @@ export default function ExtCoatings() {
             </div>
 
             <div className="process-container">
-                <div style={{width: 60 + 'vw'}}>
+                <div>
                     <main className="service-main">
                         <h2 className='text-large'>What is a Ceramic Coating?</h2>
                         <div className="text-left">
@@ -155,6 +155,28 @@ export default function ExtCoatings() {
                         <h2 className='text-large'>Professional Interior Coatings</h2>
                         <div className="text-left">
                             <p>Whether it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe any spill up before it seeps in. Get more info on our <a href="/services/interior-ceramic-coating" className='aside-link'>Interior Coating</a> page.</p>
+                        </div>
+
+                        <br className='extra-space' />
+
+                        <div id='faq'>
+                            <h3 style={{ fontSize: 2 + 'em' }}>Ceramic Coating FAQ</h3>
+                            <ul className='faq-ul'>
+                                <li className='faq-li'>How long does it last?</li>
+                                <li className='faq-p'>The paint coating should last 5 years, 50,000 miles, or a Lifetime<span className='special-package'>*</span> with our warranty. The coating on any trim, glass, lights, or wheels will last 1 year approximately.</li>
+
+                                <li className='faq-li'>Can I still go through car washes?</li>
+                                <li className='faq-p'>If you want to keep the ceramic coat in good condition and have it last as long as possible, you won't want to go through any car washes even touch-less ones.</li>
+
+                                <li className='faq-li'>How should I wash my car then?</li>
+                                <li className='faq-p'>For washing your coated vehicle you have a couple of options. Hand washing with our recommended products and techniques, or you can simply schedule monthly maintenance through us!</li>
+
+                                <li className='faq-li'>How does the 5 year warranty work?</li>
+                                <li className='faq-p'>If we do our yearly maintenance on the vehicle we guarantee that the ceramic coat will last 5 years or more.</li>
+
+                                <li className='faq-li'>How does the Lifetime warranty work?</li>
+                                <li className='faq-p'>Your vehicles paint coating is guaranteed for life as long as you are on our monthly maintenance schedule. If you ever wish to cancel monthly maintenance, the remainder of your 5 year 50,000 mile warranty you had before takes effect.</li>
+                            </ul>
                         </div>
                     </main>
 
@@ -243,26 +265,6 @@ export default function ExtCoatings() {
 
                     </div>
 
-                    <div id='faq'>
-                        <h3 style={{ fontSize: 2 + 'em' }}>Ceramic Coating FAQ</h3>
-                        <ul className='faq-ul'>
-                            <li className='faq-li'>How long does it last?</li>
-                            <li className='faq-p'>The paint coating should last 5 years, 50,000 miles, or a Lifetime<span className='special-package'>*</span> with our warranty. The coating on any trim, glass, lights, or wheels will last 1 year approximately.</li>
-
-                            <li className='faq-li'>Can I still go through car washes?</li>
-                            <li className='faq-p'>If you want to keep the ceramic coat in good condition and have it last as long as possible, you won't want to go through any car washes even touch-less ones.</li>
-
-                            <li className='faq-li'>How should I wash my car then?</li>
-                            <li className='faq-p'>For washing your coated vehicle you have a couple of options. Hand washing with our recommended products and techniques, or you can simply schedule monthly maintenance through us!</li>
-
-                            <li className='faq-li'>How does the 5 year warranty work?</li>
-                            <li className='faq-p'>If we do our yearly maintenance on the vehicle we guarantee that the ceramic coat will last 5 years or more.</li>
-
-                            <li className='faq-li'>How does the Lifetime warranty work?</li>
-                            <li className='faq-p'>Your vehicles paint coating is guaranteed for life as long as you are on our monthly maintenance schedule. If you ever wish to cancel monthly maintenance, the remainder of your 5 year 50,000 mile warranty you had before takes effect.</li>
-                        </ul>
-                    </div>
-
                     <h4 className='text-large'>Some examples of our Exterior Coating work so far:</h4>
                     <div className="examples-container">
                         <div className="example-img">
@@ -338,13 +340,13 @@ export default function ExtCoatings() {
                         <div className="aside-links">
                             <div className="addon-container">
                                 <p className='addon-title'><a href="/services/interior-ceramic-coating" className='text-blue'>Fabric Coating</a></p>
-                                <p className='m-0'><span className="bold special-package">$75</span></p>
+                                <p className='m-0 subtext'><span className="bold special-package">$75</span></p>
                                 <p className="addon-subtext">We will treat and protect all fabrics in the vehicle.</p>
                             </div>
                             <hr className='aside-border' />
                             <div className="addon-container">
                                 <p className='addon-title'><a href="/services/interior-ceramic-coating" className='text-blue'>Leather Coating</a></p>
-                                <p className='m-0'><span className="bold special-package">$150</span></p>
+                                <p className='m-0 subtext'><span className="bold special-package">$150</span></p>
                                 <p className="addon-subtext">We will treat and protect all leathers in the vehicle.</p>
                             </div>
                         </div>
