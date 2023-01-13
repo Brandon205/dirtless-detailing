@@ -36,7 +36,7 @@ export default function LakeTapps() {
                         "priceRange": "$$$",
                         "openingHours": ["Mo-Su 7:00-19:00"],
                         "paymentAccepted": "Cash, Credit/Debit Card, Facebook Pay",
-                        "url": "https://www.dirtlessdetailing.com",
+                        "url": "https://www.dirtlessdetailing.com/location/lake-tapps",
                         "email": "brenden@dirtlessdetailing.com",
                         "telephone": "(253) 252-9758",
                         "address": {
