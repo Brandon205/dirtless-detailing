@@ -174,7 +174,7 @@ export default function Home() {
                     </div>
                 </Carousel>
             </article>
-            <p>Check out more reviews on our <a className='aside-link' target='_blank' rel='noopener' href="https://www.facebook.com/DirtLessDetailing/reviews">Facebook</a> page.</p>
+            <p>Check out more reviews on our <a style={{ color: 'blue' }} target='_blank' rel='noopener' href="https://www.facebook.com/DirtLessDetailing/reviews">Facebook</a> page.</p>
 
             <section className='mobileservices-container'>
                 <div className="locations">
@@ -200,7 +200,7 @@ export default function Home() {
                     <h3>As part of our simple and hassle free service, you can come to us or we can come to you with select packages!</h3>
                 </div>
                 <div className='map'>
-                    <iframe width={smallScreen ? '250' : '500'} height={smallScreen ? '300' : '400'} style={{ border: 0 }} loading="lazy" src={`https://www.google.com/maps/embed/v1/place?zoom=15&q=place_id:ChIJxxfUWqz7kFQRotRs8MwWDRE&key=${process.env.GOOGLE_MAPS}`}></iframe>
+                    <iframe title="Map of Dirt-Less Detailing location" width={smallScreen ? '250' : '500'} height={smallScreen ? '300' : '400'} style={{ border: 0 }} loading="lazy" src={`https://www.google.com/maps/embed/v1/place?zoom=15&q=place_id:ChIJxxfUWqz7kFQRotRs8MwWDRE&key=${process.env.GOOGLE_MAPS}`}></iframe>
                 </div>
             </section>
         </div>

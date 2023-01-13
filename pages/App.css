@@ -896,6 +896,10 @@ input[type="range"] {
   text-align: left;
 }
 
+.cities-ul li {
+  margin-bottom: 0.5rem;
+}
+
 .cookie-div {
   display: flex;
   flex-direction: column;
