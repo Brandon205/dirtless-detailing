@@ -22,7 +22,6 @@ export async function getStaticProps(context) {
     }
 }
 
-
 export default function Home() {
     const [smallScreen, setSmallScreen] = useState(null);
 
