@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
+import Metatags from '../../utils/Metatags';
 
 import cover from '../../public/imgs/AddonsCover.webp';
 import waterspot from '../../public/imgs/pageimgs/homepage/1667678920614.webp';
@@ -15,13 +16,19 @@ export default function Addons() {
   return (
     <section className='service-content-container'>
       <Head>
-        <title>Dirt-Less Add-ons | Dirt-Less Detailing</title>
+        {/* <title>Dirt-Less Add-ons | Dirt-Less Detailing</title>
         <meta property="og:title" content="Dirt-Less Add-ons | Dirt-Less Detailing" />
         <meta name='description' property="og:description" content="Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment • Truck Bed Cleaning • Debadging • Headliners • Engine Bay Cleaning." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dirtlessdetailing.com/services/add-ons" />
         <meta property="og:image" content={cover.src} />
-        <link rel="canonical" href="https://www.dirtlessdetailing.com/services/add-ons" />
+        <link rel="canonical" href="https://www.dirtlessdetailing.com/services/add-ons" /> */}
+        <Metatags
+          title='Dirt-Less Add-ons | Dirt-Less Detailing'
+          description='Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment • Truck Bed Cleaning • Debadging • Headliners • Engine Bay Cleaning.'
+          image={cover.src}
+          canonical='/services/add-ons'
+        />
         <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
           __html: `{
             "@context": "http://schema.org",
