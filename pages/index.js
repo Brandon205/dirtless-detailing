@@ -176,8 +176,10 @@ export default function Home() {
                             <li><a href='/location/bonney-lake' className='aside-link'>Bonney Lake</a></li>
                             <li><a href='/location/buckley' className='aside-link'>Buckley</a></li>
                             <li><a href='/location/sumner' className='aside-link'>Sumner</a></li>
+                            <li><a href='/location/lake-tapps' className='aside-link'>Lake Tapps</a></li>
                             <li><a href='/location/enumclaw' className='aside-link'>Enumclaw</a></li>
                             <li><a href='/location/puyallup' className='aside-link'>Puyallup</a></li>
+                            <li><a href='/location/tehaleh' className='aside-link'>Tehaleh</a></li>
                             <li><a href='/location/federal-way' className='aside-link'>Federal Way</a></li>
                             <li><a href='/location/orting' className='aside-link'>Orting</a></li>
                             <li><a href='/location/south-prairie' className='aside-link'>South Prairie</a></li>

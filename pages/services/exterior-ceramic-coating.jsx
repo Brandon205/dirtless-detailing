@@ -319,8 +319,10 @@ export default function ExtCoatings() {
                                 <li><a href='/ceramic-coating/bonney-lake' className='aside-link'>Bonney Lake</a></li>
                                 <li><a href='/ceramic-coating/buckley' className='aside-link'>Buckley</a></li>
                                 <li><a href='/ceramic-coating/sumner' className='aside-link'>Sumner</a></li>
+                                <li><a href='/ceramic-coating/lake-tapps' className='aside-link'>Lake Tapps</a></li>
                                 <li><a href='/ceramic-coating/enumclaw' className='aside-link'>Enumclaw</a></li>
                                 <li><a href='/ceramic-coating/puyallup' className='aside-link'>Puyallup</a></li>
+                                <li><a href='/ceramic-coating/tehaleh' className='aside-link'>Tehaleh</a></li>
                                 <li><a href='/ceramic-coating/federal-way' className='aside-link'>Federal Way</a></li>
                                 <li><a href='/ceramic-coating/orting' className='aside-link'>Orting</a></li>
                                 <li><a href='/ceramic-coating/south-prairie' className='aside-link'>South Prairie</a></li>

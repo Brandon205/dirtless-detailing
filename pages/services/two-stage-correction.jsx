@@ -180,8 +180,10 @@ export default function TwoPC() {
                   <li><a href='/correction/bonney-lake' className='aside-link'>Bonney Lake</a></li>
                   <li><a href='/correction/buckley' className='aside-link'>Buckley</a></li>
                   <li><a href='/correction/sumner' className='aside-link'>Sumner</a></li>
+                  <li><a href='/correction/lake-tapps' className='aside-link'>Lake Tapps</a></li>
                   <li><a href='/correction/enumclaw' className='aside-link'>Enumclaw</a></li>
                   <li><a href='/correction/puyallup' className='aside-link'>Puyallup</a></li>
+                  <li><a href='/correction/tehaleh' className='aside-link'>Tehaleh</a></li>
                   <li><a href='/correction/federal-way' className='aside-link'>Federal Way</a></li>
                   <li><a href='/correction/orting' className='aside-link'>Orting</a></li>
                   <li><a href='/correction/south-prairie' className='aside-link'>South Prairie</a></li>
