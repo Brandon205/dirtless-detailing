@@ -22,6 +22,7 @@
   --secondary-text: #575757;
   --heading-clr1: #fff;
   --heading-clr2: rgb(185, 185, 185);
+  --text-blue: rgb(59, 158, 255);
 }
 
 *,
@@ -1084,10 +1085,6 @@ hr {
   margin: 25vh auto;
 }
 
-.aside-link {
-  color: var(--main-clr);
-}
-
 .service-content-container {
   width: 100%;
   background-color: #f7f7ff
@@ -1186,7 +1183,7 @@ hr {
 }
 
 .aside-link {
-  color: dodgerblue;
+  color: var(--text-blue);
 }
 
 .contact-aside {
@@ -1208,7 +1205,7 @@ hr {
 }
 
 .text-blue {
-  color: dodgerblue;
+  color: var(--text-blue);
 }
 
 .m-0 {

@@ -14,6 +14,14 @@ import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 import cover from '../public/imgs/main-cover.webp';
 import kenzo from '../public/imgs/pageimgs/homepage/project.png';
+import bbbImage from '../public/imgs/pageimgs/homepage/blue-seal-160-82-bbb-1000135733-transformed.png';
+
+export async function getStaticProps(context) {
+    return {
+        props: {},
+    }
+}
+
 
 export default function Home() {
     const [smallScreen, setSmallScreen] = useState(null);
@@ -31,10 +39,10 @@ export default function Home() {
         <div className="App">
             <Head>
                 <title>Bonney Lakes Auto Detailing & Ceramic Coating Specialists</title>
-                <meta name="og:title" content="Bonney Lakes Auto Detailing & Ceramic Coating Specialists" />
+                <meta property="og:title" content="Bonney Lakes Auto Detailing & Ceramic Coating Specialists" />
                 <meta name="description" content="Bonney lakes top choice for ceramic coating, paint correction, and all of your auto detailing needs! Contact us to schedule your appointment today." />
                 <meta property="og:description" content="Bonney lakes top choice for ceramic coating, paint correction, and all of your auto detailing needs! Contact us to schedule your appointment today." />
-                <meta name="url" content="https://www.dirtlessdetailing.com/" />
+                <meta property="url" content="https://www.dirtlessdetailing.com/" />
                 <meta property="og:url" content="https://www.dirtlessdetailing.com/" />
                 <meta name="site_name" content="Dirt-Less Detailing" />
                 <meta property="og:site_name" content="Dirt-Less Detailing" />
@@ -103,8 +111,8 @@ export default function Home() {
                     <p className='dd-desc'>We also offer a mobile service <span className='special-package'>FREE</span> of charge on select packages!</p>
 
                     <div style={{ display: 'flex', alignItems: 'center', gap: 32 }}>
-                        <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="noopener"><img src="https://seal-alaskaoregonwesternwashington.bbb.org/seals/blue-seal-160-82-bbb-1000135733.png" style={{ border: 0 }} alt="Dirt-Less Detailing BBB Business Review" /></a>
-                        <a href="https://iglcoatingsusa.com/" target="_blank" rel="noopener"><Image src={kenzo} width={smallScreen ? 100 : 135} height={smallScreen ? 100 : 135} alt="igl kenzo coatings" /></a>
+                        <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="noopener"><Image src={bbbImage} width={smallScreen ? 140 : 300} height={smallScreen ? 62 : 134} alt="Dirt-Less Detailing BBB Seal" /></a>
+                        <a href="https://iglcoatingsusa.com/" target="_blank" rel="noopener"><Image src={kenzo} width={smallScreen ? 100 : 135} height={smallScreen ? 110 : 165} alt="igl kenzo coatings" /></a>
                     </div>
 
                     <a href="/Contact" className="quote-btn top-quote-btn">Get a Quote</a>
