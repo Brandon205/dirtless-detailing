@@ -8,6 +8,7 @@ import { FaCar } from 'react-icons/fa';
 import { BiCar } from 'react-icons/bi';
 import { SiAdguard } from 'react-icons/si';
 import { RiPaintFill } from 'react-icons/ri';
+import ReactPlayer from 'react-player'; 
 
 import cover from '../../public/imgs/pageimgs/ceramic/waterBeads.jpg';
 import iglCircle from '../../public/imgs/iglcircle.jpg';
@@ -267,6 +268,7 @@ export default function ExtCoatings() {
 
                     <h4 className='text-large'>Some examples of our Exterior Coating work so far:</h4>
                     <div className="examples-container">
+                        <ReactPlayer url='https://res.cloudinary.com/brandon205/video/upload/v1674493877/Dirt-Less%20Detailing/Videos/received_1200318400918064_3_qteejy.mp4' loop muted playing />
                         <div className="example-img">
                             <Zoom>
                                 <Image style={{ borderRadius: 16 }} src={ext1} alt="Water beads on large surface" layout="responsive" objectFit='scale-down' placeholder='blur' />
