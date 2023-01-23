@@ -4,12 +4,12 @@ import Head from 'next/head';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 
+import { BiLinkExternal } from 'react-icons/bi';
 import { GiCarSeat, GiRolledCloth, GiSpill } from 'react-icons/gi';
 import { MdCleaningServices } from 'react-icons/md';
 import { FiSun } from 'react-icons/fi';
 
 import cover from '../../public/imgs/pageimgs/interior/IMG_20220929_155050.jpg';
-import ext1 from '../../public/imgs/pageimgs/ceramic/317895587_701820004796038_115520810281779526_n.jpg';
 import ext2 from '../../public/imgs/pageimgs/ceramic/317941187_811122646616266_4791919094544331114_n.jpg';
 
 export default function IntCoatings() {
@@ -77,10 +77,22 @@ export default function IntCoatings() {
             <div className="process-container">
                 <div>
                     <main className="service-main">
-                        <h2 className='text-large'>Professional Interior Ceramic Coating</h2>
+                        <div className="service-explain">
+                            <div className="text-left">
+                                <h2 className='text-large'>Professional Interior Ceramic Coating</h2>
+                                <p>Whether it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe the spill up before it seeps in.</p>
+                                <p>Typically both of our interior coatings will protect your vehicle for about a year before they should be reapplied.</p>
+                            </div>
+                            <div className="service-image">
+                                <Zoom>
+                                    <Image style={{ borderRadius: 16 }} src={ext2} alt="Front view of seat after leather ceramic coating" layout="responsive" objectFit='scale-down' placeholder='blur' />
+                                </Zoom>
+                            </div>
+                        </div>
+
+                        <h2 className='text-large'>Professional Exterior Coatings <a href='/services/exterior-ceramic-coating' className='aside-link'><BiLinkExternal /></a></h2>
                         <div className="text-left">
-                            <p>Weather it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe the spill up before it seeps in.</p>
-                            <p>Typically both of our interior coatings will protect your vehicle for about a year before they should be reapplied.</p>
+                            <p>If you're interested in protecting the exterior of your vehicle including the windshield, wheel faces, and headlights, then you're looking for our Exterior Ceramic Coatings which you can check out <a href='/services/exterior-ceramic-coating' className='aside-link'>here</a>. </p>
                         </div>
                     </main>
 
@@ -126,7 +138,7 @@ export default function IntCoatings() {
                     <br className='extra-space' />
 
                     <div>
-                        <h3 className='pricing-title text-white'>Our Interior Coating Pricing</h3>
+                        <h3 className='pricing-title text-white'>Interior Coating Pricing</h3>
                         <h4 className='subtext'><span className='special-package'>*</span>Pricing does NOT include an <a href="/services/full-interior-detail" className='aside-link'>Interior Cleaning</a>, which you will want to factor in before getting a coating.</h4>
                         <div className='pricing-container text-black'>
                             <div className="pricing-card">
@@ -143,70 +155,51 @@ export default function IntCoatings() {
                             </div>
                         </div>
 
+                        <h3 className='pricing-title text-white'>Monthly Maintenance Pricing</h3>
+                        <h4 className='subtext'>The goal of our monthly maintenance is to keep your vehicle looking like new year-round. Every month you will get a full <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> and a <a href='/services/full-interior-detail' className='aside-link'>Full Interior Detail</a>.</h4>
+                        <div className='pricing-container text-black'>
+                            <div className="pricing-card">
+                                <strong className='size text-xl'>Small</strong>
+                                <p className="pricing-price pricing-border">$130</p>
+                                <p className="example-vehicle pricing-border">2-Door Coupes</p>
+                                <p className="example-vehicle pricing-border">Single/Extended Cabs</p>
+                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                            </div>
+                            <div className="pricing-card">
+                                <strong className='size text-xl'>Medium</strong>
+                                <p className="pricing-price pricing-border">$160</p>
+                                <p className="example-vehicle pricing-border">4 Door Vehicles</p>
+                                <p className="example-vehicle pricing-border">Smaller SUV's</p>
+                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                            </div>
+                            <div className="pricing-card">
+                                <strong className='size text-xl'>Large</strong>
+                                <p className="pricing-price pricing-border">$190</p>
+                                <p className="example-vehicle pricing-border">Larger Trucks</p>
+                                <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
+                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                            </div>
+                        </div>
+
+                        <h3 className="pricing-title text-white">Interior Re-coating Options</h3>
+                        <h4 className='subtext'><span className="special-package">*</span>Note: Price doesn't include an <a href="/services/full-interior-detail" className='aside-link'>Interior Detail</a> service which we will need to do before applying the coating for the best results.</h4>
+                        <div className="pricing-container text-black">
+                            <div className="pricing-card">
+                                <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Re-coat All Vehicle Trim</strong>
+                                <p className="pricing-price">$100</p>
+                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                            </div>
+                            <div className="pricing-card">
+                                <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Re-coat Wheel Faces</strong>
+                                <p className="pricing-price">$150</p>
+                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                            </div>
+                        </div>
+
                     </div>
 
                     <br className='extra-space' />
 
-                    <h4 className='text-large'>Some examples of our Interior Coating work so far:</h4>
-                    <div className="examples-container">
-                        <div className="example-img">
-                            <Zoom>
-                                <Image style={{ borderRadius: 16 }} src={ext1} alt="Side view of seat after leather ceramic coating" layout="responsive" objectFit='scale-down' placeholder='blur' />
-                            </Zoom>
-                        </div>
-                        <div className="example-img">
-                            <Zoom>
-                                <Image style={{ borderRadius: 16 }} src={ext2} alt="Front view of seat after leather ceramic coating" layout="responsive" objectFit='scale-down' placeholder='blur' />
-                            </Zoom>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div className="aside-container">
-                    <div className='service-aside addons-aside'>
-                        <p className='extra-addons text-large'>Our Exterior Coatings</p>
-                        <hr className="contact-border" style={{ marginBottom: 16 }} />
-                        <div className="aside-links">
-                            <div className="addon-container">
-                                <p className='addon-title'><a href="/services/exterior-ceramic-coating" className='text-blue'>Protect Ceramic Coating</a></p>
-                                <p className='m-0 subtext'>Starting at: <span className="bold special-package">$1,000</span></p>
-                                <p className="addon-subtext">Ceramic Coating package that covers and protects only the most essential parts of your vehicle.</p>
-                            </div>
-                            <hr className='aside-border' />
-                            <div className="addon-container">
-                                <p className='addon-title'><a href="/services/exterior-ceramic-coating" className='text-blue'>Protect<span className="bold special-package">+</span> Ceramic Coating</a></p>
-                                <p className='m-0 subtext'>Starting at: <span className="bold special-package">$1,500</span></p>
-                                <p className="addon-subtext">A Premium Ceramic Coating service to coat and protect your entire vehicle.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='service-aside addons-aside'>
-                        <h4 className='text-large mb-0 mt-0'>Monthly Maintenance:</h4>
-                        <hr className='aside-border' />
-                        <p>The goal of our monthly maintenance is to keep your vehicle looking like new year around.</p>
-                        <p>Every month you get a <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> with a ceramic booster and a <a href='/services/full-interior-detail' className='aside-link'>Full Interior Detail</a>.</p>
-                        <hr className='aside-border' />
-                        <p className='text-large mb-0'>Monthly Maintenance Pricing:</p>
-                        <div className='maintenance-costs'>
-                            <p>Small <span className='special-package'>$130</span></p>
-                            <p>Medium <span className='special-package'>$160</span></p>
-                            <p>Large <span className='special-package'>$190</span></p>
-                        </div>
-                    </div>
-
-                    <div className='service-aside addons-aside'>
-                        <h4 className='text-large mb-0 mt-0'>Re-coating Options:</h4>
-                        <p>• Re-coat fabrics <span className='special-package'>$75</span></p>
-                        <p>• Re-coat leathers <span className='special-package'>$150</span></p>
-                    </div>
-
-                    <div className='service-aside addons-aside contact-aside'>
-                        <h4 className='mt-0'>Interested? Get in touch with us here, and let us know what we can do!</h4>
-                        <a href="/Contact" className="quote-btn side-quote-btn">Contact Us</a>
-                    </div>
-                    <br className='extra-space' />
                 </div>
             </div>
 
