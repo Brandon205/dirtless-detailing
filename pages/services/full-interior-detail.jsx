@@ -1,8 +1,11 @@
-import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
+import { BiLinkExternal } from 'react-icons/bi';
 
 import cover from '../../public/imgs/pageimgs/interior/fullIntExCover.webp';
+import serviceImage from '../../public/imgs/pageimgs/interior/driverseatBA.webp';
 
 const steps = [
   ["Expose Hidden Dirt", "Use our Tornador Vortex blowgun which uses compressed air to blow out every spot a vacuum can't reach. It also extracts sand and loose soil from carpeting."],
@@ -15,11 +18,6 @@ const steps = [
 ]
 
 export default function FullIntEx() {
-  const [href, setHref] = useState('');
-
-  useEffect(() => {
-    setHref(window.location.href)
-  }, []);
 
   const content = steps.map((item, id) => {
     return (
@@ -90,16 +88,33 @@ export default function FullIntEx() {
         </p>
       </div>
 
-      <div className='main-content-container'>
+      <div className='main-content-container bg-contact'>
         <div className='process-container'>
           <div>
             <main className="service-main">
-              <h2 className='text-large'>Professional Interior Detailing</h2>
+              <div className="service-explain">
+                <div className="text-left">
+                  <h2 className='text-large'>Professional Interior Detailing</h2>
+                  <p>The Full Interior Cleaning package is meant to get your interior back to the best condition possible. Your seats, floor mats, plastics, windows, and carpet will all be thoroughly cleaned, detailed, and shampooed/extracted. </p>
+                  <p>If it can be cleaned, we'll clean it. Does that mean every little stain will be removed? Unfortunately, that isn't the case. Based on the type of stain, how long it's been sitting, and the material, many stains won't come out 100%. Of course we'll still do our best to reduce the appearance of it.</p>
+                  <p>Please don't think your interior is “too dirty”. We have the necessary tools and products to get the job done. We have cleaned hundreds of interiors, of all conditions. It's not easy to surprise us.</p>
+                  <p>Make it a <a href='/services/interior-exterior-detailing-combo' className='aside-link'>Combo</a> deal by booking with a Premium Dirt-Less Wash, and get a free <a href='/services/add-ons#engine' className='aside-link'>Engine Bay</a> cleaning on the house!</p>
+                </div>
+                <div className='service-image'>
+                  <Zoom>
+                    <Image src={serviceImage} alt="Interior cleaning before and after" placeholder='blur' />
+                  </Zoom>
+                </div>
+              </div>
+
+              <h2 className='text-large'>Biohazard Cleanings <a href='/services/biohazard-cleaning' className='aside-link'><BiLinkExternal /></a></h2>
               <div className="text-left">
-                <p>The Full Interior Cleaning package is meant to get your interior back to the best condition possible. Your seats, floor mats, plastics, windows, and carpet will all be thoroughly cleaned, detailed, and shampooed/extracted. </p>
-                <p>If it can be cleaned, we'll clean it. Does that mean every little stain will be removed? Unfortunately, that isn't the case. Based on the type of stain, how long it's been sitting, and the material, many stains won't come out 100%. Of course we'll still do our best to reduce the appearance of it.</p>
-                <p>Please don't think your interior is “too dirty”. We have the necessary tools and products to get the job done. We have cleaned hundreds of interiors, of all conditions. It's not easy to surprise us.</p>
-                <p>Make it a <a href='/services/interior-exterior-detailing-combo' className='aside-link'>Combo</a> deal by booking with a Premium Dirt-Less Wash, and get a free <a href='/services/add-ons#engine' className='aside-link'>Engine Bay</a> cleaning on the house!</p>
+                <p>If the interior of your vehicle has things like strong odors, mold, or even bodily fluids we can clean those with our <a href="/services/biohazard-cleaning" className='aside-link'>Biohazard Cleaning</a> service. This will cover a normal interior cleaning and will also include extra things like carpet extraction and ozone treatment depending on the severity of the situation.</p>
+              </div>
+
+              <h2 className='text-large'>Interior and Exterior Combo <a href='/services/interior-exterior-detailing-combo' className='aside-link'><BiLinkExternal /></a></h2>
+              <div className="text-left">
+                <p>Get a <span className="special-package">FREE</span> Engine Bay Cleaning when you schedule our Full Interior and Exterior Detailing combo service. This service is sure to get your entire vehicle looking like new, even the engine bay which is typically overlooked when washing your car.</p>
               </div>
 
               <br className='extra-space' />
@@ -115,10 +130,10 @@ export default function FullIntEx() {
             <br className='extra-space' />
 
             <div>
-              <h3 className='pricing-title'>Our Full Interior Cleaning Pricing</h3>
-              <strong className='pricing-subtext'>*Final pricing may vary based on your vehicle condition and size.</strong>
+              <h3 className='pricing-title text-white'>Full Interior Cleaning Pricing</h3>
+              <strong className='subtext'>*Final pricing may vary based on your vehicle condition and size.</strong>
               <div className="pricing-container">
-                <div className="pricing-card">
+                <div className="pricing-card text-black">
                   <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Small</strong>
                   <strong className='size'>Without Extraction</strong>
                   <p className="pricing-price pricing-border">$200</p>
@@ -128,7 +143,7 @@ export default function FullIntEx() {
                   <p className="example-vehicle pricing-border">Single/Extended Cabs</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
-                <div className="pricing-card">
+                <div className="pricing-card text-black">
                   <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Medium</strong>
                   <strong className='size'>Without Extraction</strong>
                   <p className="pricing-price pricing-border">$250</p>
@@ -138,7 +153,7 @@ export default function FullIntEx() {
                   <p className="example-vehicle pricing-border">Smaller SUV's</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
-                <div className="pricing-card">
+                <div className="pricing-card text-black">
                   <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Large</strong>
                   <strong className='size'>Without Extraction</strong>
                   <p className="pricing-price pricing-border">$300</p>
@@ -149,57 +164,37 @@ export default function FullIntEx() {
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <div className='aside-container'>
-            <div className='service-aside'>
-              <p className='extra-addons text-large'>Other Interior Pages</p>
-              <hr className="contact-border" style={{ marginBottom: 16 }} />
-              <div className="aside-links">
-                <a href="#" style={{ color: href.endsWith('full-interior-detail') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('full-interior-detail') ? '> ' : ''} Full Interior Detail</a><br />
-                <a href="/services/biohazard-cleaning" style={{ color: href.endsWith('biohazard-cleaning') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('biohazard-cleaning') ? '> ' : ''} Biohazard Cleaning</a><br />
-                <a href="/gallery/interior-detail-gallery" className="service-link">Full Interior Gallery</a>
-              </div>
-            </div>
-
-            <div className="service-aside addons-aside">
-              <h3 className="text-white">Get a <span className='special-package'>FREE</span> Engine cleaning!</h3>
-              <p className="subtext">Check out our current <a className='aside-link' href="/services/interior-exterior-detailing-combo">Combo</a> deal that combines this Full Interior Detail, our <a className='aside-link' href="/services/premium-dirtless-wash">Premium Dirt-Less Wash</a>, and gives you an <a href="/services/add-ons#engine" className='aside-link'>Engine Bay Cleaning</a> totally on us!  </p>
-            </div>
-
-            <div className='service-aside addons-aside'>
-              <p className='extra-addons text-large'>Extra Add-ons</p>
-              <hr className="contact-border" style={{ marginBottom: 16 }} />
-              <div className="aside-links">
-                <div className="addon-container">
-                  <p className='addon-title'><a href="/services/interior-ceramic-coating" className='text-blue'>Fabric Coating</a></p>
-                  <p className='m-0'><span className="bold special-package">$75</span></p>
-                  <p className="addon-subtext">The best protection for the fabric inside of your vehicle.</p>
+              <h3 className='pricing-title text-white'>Extra Add-ons <a href='/services/add-ons' className='aside-link'><BiLinkExternal /></a></h3>
+              <strong className='subtext'>Some of our most popular add-ons that are usually added on top of our Interior Cleaning Service.</strong>
+              <div className="pricing-container">
+                <div className="pricing-card text-black">
+                  <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Fabric Ceramic Coating</strong>
+                  <p className="pricing-price pricing-border">$75</p>
+                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
-                <hr className='aside-border' />
-                <div className="addon-container">
-                  <p className='addon-title'><a href="/services/interior-ceramic-coating" className='text-blue'>Leather Coating</a></p>
-                  <p className='m-0'><span className="bold special-package">$150</span></p>
-                  <p className="addon-subtext">The longest lasting protection for your vehicles leather.</p>
+                <div className="pricing-card text-black">
+                  <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Leather Ceramic Coating</strong>
+                  <p className="pricing-price pricing-border">$150</p>
+                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
-                <hr className='aside-border' />
-                <div className="addon-container">
-                  <p className='addon-title'><a href="/services/add-ons#headliners" className='text-blue'>Headliners</a></p>
-                  <p className='m-0'><span className="bold special-package">$40-$80</span></p>
-                  <p className="addon-subtext">Clean your vehicles headliners.</p>
+                <div className="pricing-card text-black">
+                  <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Headliner Cleaning</strong>
+                  <p className="pricing-price pricing-border">$40-$80</p>
+                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
-                <hr className='aside-border' />
-                <div className="addon-container">
-                  <p className='addon-title'><a href="/services/add-ons#ozone" className='text-blue'>Ozone Treatment</a></p>
-                  <p className='m-0'><span className="bold special-package">$100</span></p>
-                  <p className="addon-subtext">Treats your vehicle to get rid of any viruses, bacteria, and odors.</p>
+                <div className="pricing-card text-black">
+                  <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Ozone Treatment</strong>
+                  <p className="pricing-price pricing-border">$100</p>
+                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
               </div>
             </div>
           </div>
 
         </div>
+
+        <br className='extra-space' />
 
       </div>
     </section>
