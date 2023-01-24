@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import Head from 'next/head';
+import ReactPlayer from 'react-player/lazy'; 
 import { BiLinkExternal } from 'react-icons/bi';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 
 import cover from '../../public/imgs/PDLWashCover.webp';
-import serviceImage from '../../public/imgs/pageimgs/exterior/received_3263767913873257.jpeg';
 
 const steps = [
   ["Wash Vehicle", "Thorough strip wash top to bottom, including the gas door with the 2 bucket method or equivalent."],
@@ -102,7 +102,7 @@ export default function PDLWash() {
                 </div>
                 <div className='service-image'>
                   <Zoom>
-                    <Image src={serviceImage} alt="Vehicle after a Premium Exterior Wash" placeholder='blur' />
+                    <ReactPlayer width={280} height={487} url='https://res.cloudinary.com/brandon205/video/upload/v1674493883/Dirt-Less%20Detailing/Videos/received_618310056492003_3_dyax17.mp4' loop muted playing />
                   </Zoom>
                 </div>
               </div>

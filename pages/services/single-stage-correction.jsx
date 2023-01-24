@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
+import { BiLinkExternal } from 'react-icons/bi';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 
 import cover from '../../public/imgs/FB_IMG_1590172619153.jpg';
 import paintDefects from '../../public/imgs/pageimgs/homepage/paintDefects.png';
+import serviceImage from '../../public/imgs/pageimgs/paintCorrection/IMG_20211123_170855.jpg';
 
 const steps = [
   ["Wash Vehicle", "Thorough strip wash top to bottom using 2 bucket method or equivalent, including gas door."],
@@ -23,12 +24,6 @@ const steps = [
 ]
 
 export default function SinglePC() {
-  const [href, setHref] = useState('');
-
-  useEffect(() => {
-    setHref(window.location.href)
-  }, []);
-
   const content = steps.map((item, id) => {
     return (
       <li key={id} className="item">
@@ -112,13 +107,20 @@ export default function SinglePC() {
         <div className="process-container">
           <div>
             <main className="service-main">
-              <h2 className='text-large mt-0'>Single Stage Paint Correction</h2>
-              <div className="text-left">
-                <p>Have you looked at your paint under the sun and saw a web of swirls and scratches?</p>
-                <p>These are called swirl marks. How did they get there in the first place? The biggest culprit is usually improper washing and drying methods. Automatic car washes and using low-quality towels or wash mitts can all lead to abrading your paint and leaving imperfections.</p>
-                <p>With our <a href='/services/single-stage-correction' className='aside-link'>Single Stage Paint Correction</a> service, you can remove 60% to 70% of imperfections to reveal a great shine. This is a fantastic service for vehicles that you want to restore their shine without going “all in” like we do with our 2 stage paint correction service.</p>
-                <p>Unlike some of our other services that can be done in just a few hours, this service requires more time and better lighting to achieve the proper results. This is why we require you to drop off the vehicle at our <a href='/correction/bonney-lake' className='aside-link'>shop</a> location.</p>
-                <p>Want to compare this to our Two Stage Paint Correction? Check out our <a href='/detailing/correction' className='aside-link'>comparison</a> page for more details.</p>
+              <div className="service-explain">
+                <div className="text-left">
+                  <h2 className='text-large mt-0'>Single Stage Paint Correction</h2>
+                  <p>Have you looked at your paint under the sun and saw a web of swirls and scratches?</p>
+                  <p>These are called swirl marks. How did they get there in the first place? The biggest culprit is usually improper washing and drying methods. Automatic car washes and using low-quality towels or wash mitts can all lead to abrading your paint and leaving imperfections.</p>
+                  <p>With our <a href='/services/single-stage-correction' className='aside-link'>Single Stage Paint Correction</a> service, you can remove 60% to 70% of imperfections to reveal a great shine. This is a fantastic service for vehicles that you want to restore their shine without going “all in” like we do with our 2 stage paint correction service.</p>
+                  <p>Unlike some of our other services that can be done in just a few hours, this service requires more time and better lighting to achieve the proper results. This is why we require you to drop off the vehicle at our <a href='/correction/bonney-lake' className='aside-link'>shop</a> location.</p>
+                  <p>Want to compare this to our Two Stage Paint Correction? Check out our <a href='/detailing/correction' className='aside-link'>comparison</a> page for more details.</p>
+                </div>
+                <div className='service-image'>
+                  <Zoom>
+                    <Image src={serviceImage} alt="Vehicle after a Premium Exterior Wash" placeholder='blur' />
+                  </Zoom>
+                </div>
               </div>
             </main>
 
@@ -158,19 +160,30 @@ export default function SinglePC() {
                 </div>
               </div>
 
-              <br className='extra-space' />
-
-              <h4 className='text-large'>Visual example of different paint defects:</h4>
-              <p className='subtext'>This gives an example of why deeper scratches aren't removable without repainting.</p>
-              <div className='examples-container'>
-                <div className='example-img'>
-                  <Zoom>
-                    <Image src={paintDefects} alt="What IGL coatings protect from circle" placeholder='blur' />
-                  </Zoom>
+              <h3 className='pricing-title text-white'>Extra Add-ons <a href='/services/add-ons' className='aside-link'><BiLinkExternal /></a></h3>
+              <p className='subtext'>Our current add-ons that are typically paired with a Single Stage Paint Correction.</p>
+              <div className="pricing-container">
+                <div className="pricing-card text-black">
+                  <strong className='size'>Glass Polishing</strong>
+                  <p className="pricing-price pricing-border">$80/hour</p>
+                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
               </div>
 
             </div>
+
+            <br className='extra-space' />
+
+            <h4 className='text-large'>Visual example of different paint defects:</h4>
+            <p className='subtext'>This gives an example of why deeper scratches aren't removable without repainting.</p>
+            <div className='examples-container'>
+              <div className='example-img'>
+                <Zoom>
+                  <Image src={paintDefects} alt="What IGL coatings protect from circle" placeholder='blur' />
+                </Zoom>
+              </div>
+            </div>
+
 
             <br className="extra-space" />
 
@@ -195,32 +208,6 @@ export default function SinglePC() {
                 </ul>
               </div>
             </div>
-          </div>
-
-          <div>
-            <div className='aside-container'>
-              <div className='service-aside'>
-                <p className='extra-addons text-large'>Other Correction Pages</p>
-                <hr className="contact-border" style={{ marginBottom: 16 }} />
-                <div className="aside-links">
-                  <a href="#" style={{ color: href.endsWith('single-stage-correction') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('single-stage-correction') ? '> ' : ''} Single Stage Paint Correction</a><br />
-                  <a href="/services/two-stage-correction" style={{ color: href.endsWith('two-stage-correction') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('two-stage-correction') ? '> ' : ''} Two Stage Paint Correction</a><br />
-                  <a href="/gallery/paint-correction-gallery" className="service-link">Paint Correction Gallery</a>
-                </div>
-              </div>
-              <div className='service-aside addons-aside'>
-                <p className='extra-addons text-large'>Extra Add-ons</p>
-                <hr className="contact-border" style={{ marginBottom: 16 }} />
-                <div className="aside-links">
-                  <div className="addon-container">
-                    <p className='addon-title'><a href="/services/add-ons#glass" className='text-blue'>Glass Polishing</a></p>
-                    <p className='m-0'><span className="bold special-package">$80</span>/hour</p>
-                    <p className="addon-subtext">Gives you crystal clear windows.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
           </div>
 
         </div>
