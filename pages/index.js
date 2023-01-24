@@ -16,12 +16,6 @@ import cover from '../public/imgs/main-cover.webp';
 import kenzo from '../public/imgs/pageimgs/homepage/project.png';
 import bbbImage from '../public/imgs/pageimgs/homepage/blue-seal-160-82-bbb-1000135733-transformed.png';
 
-export async function getStaticProps(context) {
-    return {
-        props: {},
-    }
-}
-
 export default function Home() {
     const [smallScreen, setSmallScreen] = useState(null);
 

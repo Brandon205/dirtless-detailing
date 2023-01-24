@@ -5,12 +5,6 @@ import { imagery } from '../../public/imgs/pageimgs/exterior/index';
 
 import cover from '../../public/imgs/pageimgs/exterior/IMG_20210429_202336.jpg';
 
-export async function getStaticProps(context) {
-  return {
-    props: {},
-  }
-}
-
 export default function PaintCorrectionGallery() {
 
   return (

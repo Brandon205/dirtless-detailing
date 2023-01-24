@@ -5,9 +5,9 @@ import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 
 import cover from '../../public/imgs/pageimgs/exterior/IMG_20220121_153440.jpg';
-import exterior from '../../public/imgs/pageimgs/exterior/IMG_20220524_163118.jpg';
-import engine from '../../public/imgs/pageimgs/engine/IMG_20220524_144623.jpg';
-import interior from '../../public/imgs/pageimgs/interior/IMG_20220524_140445.jpg';
+import exterior from '../../public/imgs/pageimgs/exterior/speed3exterior.jpg';
+import engine from '../../public/imgs/pageimgs/engine/speed3engine.jpg';
+import interior from '../../public/imgs/pageimgs/interior/speed3interior.jpg';
 import serviceImage from '../../public/imgs/pageimgs/homepage/combo.jpg';
 
 export default function Combo() {
@@ -120,7 +120,7 @@ export default function Combo() {
 
               <br className='extra-space' />
 
-              <h4 className='text-large'>An example of our completed Combo Work:</h4>
+              <h4 className='text-large'>Another example of our completed Combo Work:</h4>
               <div className="examples-container">
                 <div className="example-img">
                   <Zoom>
