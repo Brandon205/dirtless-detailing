@@ -112,9 +112,9 @@ export default function FullIntEx() {
                 <p>If the interior of your vehicle has things like strong odors, mold, or even bodily fluids we can clean those with our <a href="/services/biohazard-cleaning" className='aside-link'>Biohazard Cleaning</a> service. This will cover a normal interior cleaning and will also include extra things like carpet extraction and ozone treatment depending on the severity of the situation.</p>
               </div>
 
-              <h2 className='text-large'>Interior and Exterior Combo <a href='/services/interior-exterior-detailing-combo' className='aside-link'><BiLinkExternal /></a></h2>
+              <h2 className='text-large'>Interior and Exterior Combo Deal <a href='/services/interior-exterior-detailing-combo' className='aside-link'><BiLinkExternal /></a></h2>
               <div className="text-left">
-                <p>Get a <span className="special-package">FREE</span> Engine Bay Cleaning when you schedule our Full Interior and Exterior Detailing combo service. This service is sure to get your entire vehicle looking like new, even the engine bay which is typically overlooked when washing your car.</p>
+                <p>Get a <span className="special-package">FREE</span> Engine Bay Cleaning when you schedule our Combo service. This service combines our <a href="/services/premium-dirtless-wash" className='aside-link'>Premium Dirt-Less Wash</a> and this Full Interior Detail. It is sure to get your entire vehicle looking like new, even the engine bay which is typically overlooked when washing your car.</p>
               </div>
 
               <br className='extra-space' />

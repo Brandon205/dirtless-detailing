@@ -1,8 +1,11 @@
-import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
+import { BiLinkExternal } from 'react-icons/bi';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 
 import cover from '../../public/imgs/PDLWashCover.webp';
+import serviceImage from '../../public/imgs/pageimgs/exterior/received_3263767913873257.jpeg';
 
 const steps = [
   ["Wash Vehicle", "Thorough strip wash top to bottom, including the gas door with the 2 bucket method or equivalent."],
@@ -17,12 +20,6 @@ const steps = [
 ]
 
 export default function PDLWash() {
-  const [href, setHref] = useState('');
-
-  useEffect(() => {
-    setHref(window.location.href)
-  }, []);
-
   const content = steps.map((item, id) => {
     return (
       <li key={id} className="item">
@@ -84,7 +81,7 @@ export default function PDLWash() {
       </div>
       <div className="servicepage-header">
         <h1>Premium Dirt-Less Wash</h1>
-        <h2 className='page-subheading'>Our Premium Wash goes above and beyond removing all contaminants from your vehicles paint</h2>
+        <h2 className='page-subheading'>Our Premium Wash goes above and beyond removing all exterior contaminants and giving your paint an even cleaner shine.</h2>
         <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
         <p className='inline text-small'>
           Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
@@ -95,12 +92,24 @@ export default function PDLWash() {
         <div className="process-container">
           <div>
             <main className="service-main">
-              <h2 className='text-large mt-0'>Premium Dirt-Less Wash</h2>
+              <div className="service-explain">
+                <div className="text-left">
+                  <h2 className='text-large mt-0'>Premium Dirt-Less Wash</h2>
+                  <p>Not only will you see a humongous difference in the appearance, but you will also be able to feel the smoothness and slickness of the paint once we're done with this service.</p>
+                  <p>Both of our Dirt-Less Wash services go very in depth, cleaning areas that you won't even see on a day to day basis. Our Premium package goes even further than that by using a clay bar and iron decontamination products on the whole vehicle to remove any contaminants.</p>
+                  <p>A lot of our customers love this service since it doesn't take much time to perform, but the results that you get are stellar!</p>
+                  <p>Want to compare our Premium and non-premium washes? Check out our <a href='/detailing/car-washes' className='aside-link'>comparison</a> page for more details.</p>
+                </div>
+                <div className='service-image'>
+                  <Zoom>
+                    <Image src={serviceImage} alt="Vehicle after a Premium Exterior Wash" placeholder='blur' />
+                  </Zoom>
+                </div>
+              </div>
+
+              <h2 className='text-large'>Interior and Exterior Combo Deal <a href='/services/interior-exterior-detailing-combo' className='aside-link'><BiLinkExternal /></a></h2>
               <div className="text-left">
-                <p>Not only will you see a humongous difference in the appearance, but you will also be able to feel the smoothness and slickness of the paint once we're done with this service.</p>
-                <p>Both of our Dirt-Less Wash services go very in depth, cleaning areas that you won't even see on a day to day basis. Our Premium package goes even further than that by using a clay bar and iron decontamination products on the whole vehicle to remove any contaminants.</p>
-                <p>A lot of our customers love this service since it doesn't take much time to perform, but the results that you get are stellar!</p>
-                <p>Want to compare our Premium and non-premium washes? Check out our <a href='/detailing/car-washes' className='aside-link'>comparison</a> page for more details.</p>
+                <p>Get a <span className="special-package">FREE</span> Engine Bay Cleaning when you schedule our Combo service. This service combines our <a href="/services/full-interior-detail" className='aside-link'>Full Interior Detail</a> and this Premium Dirt-Less Wash. It is sure to get your entire vehicle looking like new, even the engine bay which is typically overlooked when washing your car.</p>
               </div>
             </main>
             <br className='extra-space' />
@@ -145,48 +154,25 @@ export default function PDLWash() {
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <div>
-            <div className='aside-container'>
-              <div className='service-aside'>
-                <p className='extra-addons text-large'>Other Exterior Pages</p>
-                <hr className="contact-border" style={{ marginBottom: 16 }} />
-                <div className="aside-links">
-                  <a href="/services/dirtless-wash" style={{ color: href.endsWith('/dirtless-wash') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('/dirtless-wash') ? '> ' : ''} Dirt-Less Wash</a><br />
-                  <a href="#" style={{ color: href.endsWith('premium-dirtless-wash') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('premium-dirtless-wash') ? '> ' : ''} Premium Dirt-Less Wash</a><br />
-                  <a href="/gallery/dirtless-wash-gallery" className="service-link">Exterior Wash Gallery</a>
+              <h3 className='pricing-title text-white'>Extra Add-ons <a href='/services/add-ons' className='aside-link'><BiLinkExternal /></a></h3>
+              <p className='subtext'>Add-ons that typically get paired with either of our exterior wash services</p>
+              <div className="pricing-container">
+                <div className="pricing-card text-black">
+                  <strong className='size'>Truck Bed Cleaning</strong>
+                  <p className="pricing-price pricing-border">$25</p>
+                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
-              </div>
-
-              <div className='service-aside addons-aside'>
-                <p className='extra-addons text-large'>Extra Add-ons</p>
-                <hr className="contact-border" style={{ marginBottom: 16 }} />
-                <div className="aside-links">
-                  <div className="addon-container">
-                    <p className='addon-title'><a href="/services/add-ons#truck" className='text-blue'>Truck Bed Cleaning</a></p>
-                    <p className='m-0'><span className="bold special-package">$25</span></p>
-                    <p className="addon-subtext">Add-on to get your truck bed cleaned.</p>
-                  </div>
-                  <hr className='aside-border' />
-                  <div className="addon-container">
-                    <p className='addon-title'><a href="/services/add-ons#glass" className='text-blue'>Glass Polishing</a></p>
-                    <p className='m-0'><span className="bold special-package">$80</span>/hour</p>
-                    <p className="addon-subtext">Gives you crystal clear windows.</p>
-                  </div>
-                  <hr className='aside-border' />
-                  <div className="addon-container">
-                    <p className='addon-title'><a href="/services/add-ons#waterspot" className='text-blue'>Waterspot/Overspray Removal</a></p>
-                    <p className='m-0'><span className="bold special-package">$80</span>/hour</p>
-                    <p className="addon-subtext">Remove any Overspray and Waterspots from your vehicle.</p>
-                  </div>
+                <div className="pricing-card text-black">
+                  <strong className='size'>Glass Polishing</strong>
+                  <p className="pricing-price pricing-border">$80/hour</p>
+                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
-              </div>
-
-              <div className="service-aside addons-aside">
-                <h3 className="text-white">Get a <span className='special-package'>FREE</span> Engine cleaning!</h3>
-                <p className="subtext">Check out our Current <a className='aside-link' href="/services/interior-exterior-detailing-combo">Combo</a> deal that combines this Premium Dirt-Less Wash, our <a className='aside-link' href="/services/full-interior-detail">Full Interior Cleaning</a>, and gives you an <a href="/services/add-ons#engine" className='aside-link'>Engine Bay Cleaning</a> totally on us!</p>              
+                <div className="pricing-card text-black">
+                  <strong className='size'>Waterspot/Overspray Removal</strong>
+                  <p className="pricing-price pricing-border">$80/hour</p>
+                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                </div>
               </div>
             </div>
           </div>
