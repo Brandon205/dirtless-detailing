@@ -1,8 +1,11 @@
-import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
+import { BiLinkExternal } from 'react-icons/bi';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 
 import cover from '../../public/imgs/DLWashCover.webp';
+import serviceImage from '../../public/imgs/pageimgs/exterior/IMG_20211103_105903.jpg';
 
 const steps = [
   ["Wash Vehicle", "Thorough 2 bucket or equivalent top to bottom wash including the gas door."],
@@ -13,12 +16,6 @@ const steps = [
 ]
 
 export default function DLWash() {
-  const [href, setHref] = useState('');
-
-  useEffect(() => {
-    setHref(window.location.href)
-  }, []);
-
   const content = steps.map((item, id) => {
     return (
       <li key={id} className="item">
@@ -91,15 +88,24 @@ export default function DLWash() {
         <div className="process-container">
           <div>
             <main className="service-main">
-              <h2 className='text-large mt-0'>Dirt-Less Wash</h2>
-              <div className="text-left">
-                <p>You don't have to go to Harvard University to wash a car, but there are methods of washing that produce infinitely better results than your typical tunnel car wash. Our methods are also way safer.</p>
-                <p>If you're looking for a fast and cheap option to get your car washed in Bonney Lake or the surrounding areas, we most likely won't be a great fit for you. We go very in-depth in our washing process to provide the highest quality level of service and results your money can buy.</p>
-                <p>Want to go a step further than our Dirt-Less wash? Check out our <a href='/detailing/car-washes' className='aside-link'>comparison</a> page to see the differences between our this service and the <a href='/services/premium-dirtless-wash' className='aside-link'>Premium</a> version.</p>
+              <div className="service-explain">
+                <div className="text-left">
+                  <h2 className='text-large mt-0'>Dirt-Less Wash</h2>
+                  <p>You don't have to go to Harvard University to wash a car, but there are methods of washing that produce infinitely better results than your typical tunnel car wash. Our methods are also way safer.</p>
+                  <p>If you're looking for a fast and cheap option to get your car washed in Bonney Lake or the surrounding areas, we most likely won't be a great fit for you. We go very in-depth in our washing process to provide the highest quality level of service and results your money can buy.</p>
+                  <p>Want to go a step further than our Dirt-Less wash? Check out our <a href='/detailing/car-washes' className='aside-link'>comparison</a> page to see the differences between our this service and the <a href='/services/premium-dirtless-wash' className='aside-link'>Premium</a> version.</p>
+                </div>
+                <div className='service-image'>
+                  <Zoom>
+                    <Image src={serviceImage} alt="Vehicle after our Dirt-Less Wash" placeholder='blur' />
+                  </Zoom>
+                </div>
               </div>
 
             </main>
+
             <br className='extra-space' />
+
             <h2 className='cleaning-process-title'>Our Dirt-Less Wash Process*</h2>
             <ol className='list'>
               {content}
@@ -142,53 +148,33 @@ export default function DLWash() {
                 </div>
               </div>
 
+                <h3 className='pricing-title text-white'>Extra Add-ons <a href='/services/add-ons' className='aside-link'><BiLinkExternal /></a></h3>
+                <p className='subtext'>Add-ons that typically get paired with either of our exterior wash services</p>
+                <div className="pricing-container">
+                  <div className="pricing-card text-black">
+                    <strong className='size'>Truck Bed Cleaning</strong>
+                    <p className="pricing-price pricing-border">$25</p>
+                    <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                  </div>
+                  <div className="pricing-card text-black">
+                    <strong className='size'>Glass Polishing</strong>
+                    <p className="pricing-price pricing-border">$80/hour</p>
+                    <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                  </div>
+                  <div className="pricing-card text-black">
+                    <strong className='size'>Waterspot/Overspray Removal</strong>
+                    <p className="pricing-price pricing-border">$80/hour</p>
+                    <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                  </div>
+                </div>
+
             </div>
           </div>
 
-          <div>
-            <div className='aside-container'>
-              <div className='service-aside'>
-                <p className='extra-addons text-large'>Other Exterior Pages</p>
-                <hr className="contact-border" style={{ marginBottom: 16 }} />
-                <div className="aside-links">
-                  <a href="#" style={{ color: href.endsWith('/dirtless-wash') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('/dirtless-wash') ? '> ' : ''} Dirt-Less Wash</a><br />
-                  <a href="/services/premium-dirtless-wash" style={{ color: href.endsWith('premium-dirtless-wash') ? 'dodgerblue' : 'white' }} className="service-link">{href.endsWith('premium-dirtless-wash') ? '> ' : ''} Premium Dirt-Less Wash</a><br />
-                  <a href="/gallery/dirtless-wash-gallery" className="service-link">Exterior Wash Gallery</a>
-                </div>
-              </div>
-              <div className='service-aside addons-aside'>
-                <p className='extra-addons text-large'>Extra Add-ons</p>
-                <hr className="contact-border" style={{ marginBottom: 16 }} />
-                <div className="aside-links">
-                  <div className="addon-container">
-                    <p className='addon-title'><a href="/services/add-ons#truck" className='text-blue'>Truck Bed Cleaning</a></p>
-                    <p className='m-0'><span className="bold special-package">$25</span></p>
-                    <p className="addon-subtext">Add-ons to get your truck bed cleaned.</p>
-                  </div>
-                  <hr className='aside-border' />
-                  <div className="addon-container">
-                    <p className='addon-title'><a href="/services/add-ons#glass" className='text-blue'>Glass Polishing</a></p>
-                    <p className='m-0'><span className="bold special-package">$80</span>/hour</p>
-                    <p className="addon-subtext">Gives you crystal clear windows.</p>
-                  </div>
-                  <hr className='aside-border' />
-                  <div className="addon-container">
-                    <p className='addon-title'><a href="/services/add-ons#waterspot" className='text-blue'>Waterspot/Overspray Removal</a></p>
-                    <p className='m-0'><span className="bold special-package">$80</span>/hour</p>
-                    <p className="addon-subtext">Remove any Overspray and Waterspots from your vehicle.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="service-aside addons-aside">
-                <h3 className="text-white">Get a <span className='special-package'>FREE</span> Engine cleaning!</h3>
-                <p className="subtext">Check out our Current <a className='aside-link' href="/services/interior-exterior-detailing-combo">Combo</a> deal that combines this our upgraded <a href="/services/premium-dirtless-wash" className='aside-link'>Premium Dirt-Less Wash</a>, our <a className='aside-link' href="/services/full-interior-detail">Full Interior Cleaning</a>, and gives you an <a href="/services/add-ons#engine" className='aside-link'>Engine Bay Cleaning</a> totally on us!</p>
-              </div>
-              
-            </div>
-
-          </div>
         </div>
+
+        <br className='extra-space' />
+
       </div>
     </section>
   )

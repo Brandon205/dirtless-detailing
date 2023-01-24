@@ -77,7 +77,7 @@ export default function PDLWash() {
         }} />
       </Head>
       <div className="cover">
-        <Image src={cover} alt="Vehicle after a Premium Dirt-Less Wash" layout="fill" objectFit='cover' placeholder='blur' priority />
+        <Image src={cover} alt="Vehicle after our Premium Dirt-Less Wash" layout="fill" objectFit='cover' placeholder='blur' priority />
       </div>
       <div className="servicepage-header">
         <h1>Premium Dirt-Less Wash</h1>
@@ -174,6 +174,7 @@ export default function PDLWash() {
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
               </div>
+              
             </div>
           </div>
 
