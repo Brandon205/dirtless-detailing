@@ -1,16 +1,16 @@
-import React from 'react';
-import Zoom from 'react-medium-image-zoom';
 import Image from 'next/image';
 import Head from 'next/head';
+import { BiLinkExternal } from 'react-icons/bi';
+import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 
 import cover from '../../public/imgs/pageimgs/exterior/IMG_20220121_153440.jpg';
 import exterior from '../../public/imgs/pageimgs/exterior/IMG_20220524_163118.jpg';
 import engine from '../../public/imgs/pageimgs/engine/IMG_20220524_144623.jpg';
 import interior from '../../public/imgs/pageimgs/interior/IMG_20220524_140445.jpg';
+import serviceImage from '../../public/imgs/pageimgs/homepage/combo.jpg';
 
 export default function Combo() {
-
   return (
     <section className='service-content-container'>
       <Head>
@@ -69,10 +69,17 @@ export default function Combo() {
         <div className="process-container" id="combo-process">
           <div>
             <main className="service-main">
-              <h2 className='text-large'>Interior and Exterior Combo Cleaning</h2>
-              <div className="text-left">
-                <p>The full enchilada!  Our most complete detailing package and the best value package we offer. You get a <a href="/services/full-interior-detail" className='aside-link'>Full Interior Detail</a>, a <a href="/services/premium-dirtless-wash" className='aside-link'>Premium Dirt-Less Wash</a>, and a free <a href="/services/add-ons#engine" className='aside-link'>Engine Bay Detail</a> on the house!</p>
-                <p>If you are after the most thorough interior and exterior detail you can find, or even trying to get the most money when selling your vehicle, this is the package for you!</p>
+              <div className="service-explain">
+                <div className="text-left">
+                  <h2 className='text-large'>Interior and Exterior Combo Cleaning</h2>
+                  <p>The full enchilada! Our most complete detailing package and the best value package we offer. You get a <a href="/services/full-interior-detail" className='aside-link'>Full Interior Detail</a>, a <a href="/services/premium-dirtless-wash" className='aside-link'>Premium Dirt-Less Wash</a>, and a <span className="special-package">FREE</span> <a href="/services/add-ons#engine" className='aside-link'>Engine Bay Detail</a> on the house!</p>
+                  <p>If you are after the most thorough interior and exterior detail you can find, or even trying to get the most money when selling your vehicle, this is the package for you!</p>
+                </div>
+                <div className='service-image'>
+                  <Zoom>
+                    <Image src={serviceImage} alt="Vehicle after a Premium Exterior Wash" placeholder='blur' />
+                  </Zoom>
+                </div>
               </div>
 
               <br className='extra-space' />
@@ -170,36 +177,23 @@ export default function Combo() {
                 </div>
               </div>
 
-            </div>
-
-          </div>
-
-          <div className='aside-container'>
-            <div className='service-aside addons-aside'>
-              <p className='extra-addons text-large'>Combo Deal</p>
-              <hr className="contact-border" style={{ marginBottom: 16 }} />
-              <div className="aside-links">
-                <h3>You get an <span className='special-package'>INCLUDED</span> Engine Cleaning with this order!</h3>
-                <p style={{ color: 'lightgray' }} className="subtext">This special deal combines our <a className='aside-link text-blue' href="/services/premium-dirtless-wash">Premium Dirt-Less Wash</a>, our best exterior wash service. Our <a className='aside-link text-blue' href="/services/full-interior-detail">Full Interior Cleaning</a>, the most complete interior cleaning we provide, and we'll give you an Engine Bay Cleaning <span className='special-package bold'>ON US!</span></p>
-              </div>
-            </div>
-            <div className='service-aside addons-aside'>
-              <p className='extra-addons text-large'>Extra Add-ons</p>
-              <hr className="contact-border" style={{ marginBottom: 16 }} />
-              <div className="aside-links">
-                <div className="addon-container">
-                  <p className='addon-title'><a href="/services/add-ons#glass" className='text-blue'>Glass Polishing</a></p>
-                  <p className='m-0'><span className="bold special-package">$80</span>/hour</p>
-                  <p className='addon-subtext'>Gives you crystal clear windows.</p>
+              <h3 className='pricing-title text-white'>Extra Add-ons <a href='/services/add-ons' className='aside-link'><BiLinkExternal /></a></h3>
+              <p className='subtext'>Add-ons that are most commonly paired with our Combo deal.</p>
+              <div className="pricing-container">
+                <div className="pricing-card text-black">
+                  <strong className='size'>Glass Polishing</strong>
+                  <p className="pricing-price pricing-border">$80/hour</p>
+                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
-                <hr className='aside-border' />
-                <div className="addon-container">
-                  <p className='addon-title'><a href="/services/add-ons#waterspot" className='text-blue'>Waterspot/Overspray Removal</a></p>
-                  <p className='m-0'><span className="bold special-package">$80</span>/hour</p>
-                  <p className='addon-subtext'>Remove any Overspray and Waterspots from your vehicle.</p>
+                <div className="pricing-card text-black">
+                  <strong className='size'>Waterspot/Overspray Removal</strong>
+                  <p className="pricing-price pricing-border">$80/hour</p>
+                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
               </div>
+
             </div>
+
           </div>
 
         </div>
