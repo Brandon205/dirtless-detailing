@@ -1544,6 +1544,13 @@ hr {
   margin: 0 auto;
 }
 
+.new-offer {
+  font-size: small;
+  position: absolute;
+  transform: translate(-10px, -6px) rotate(40deg);
+  color: var(--main-clr-lighter);
+}
+
 @media screen and (min-width: 450px) {
 
   .title-top {

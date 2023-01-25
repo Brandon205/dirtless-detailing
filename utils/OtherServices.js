@@ -19,7 +19,7 @@ export default function OtherServices() {
     return (
         <div>
             <div className='separator-container'>
-                <h2 className='service-title'>CERAMIC COATING</h2>
+                <h2 className='service-title'>CERAMIC COATING <span className='new-offer'>NEW</span></h2>
             </div>
             <section className="otherservices-container">
                 <div className="service-card">
@@ -64,7 +64,7 @@ export default function OtherServices() {
             <a href="/Contact" className="quote-btn main-quote-btn">Get a Quote</a>
 
             <div className='separator-container'>
-                <h3 className='service-title'>COMBO DEALS</h3>
+                <h3 className='service-title'>COMBO DEAL <span className='new-offer'>NEW</span></h3>
             </div>
 
             <section className="feature-section">
