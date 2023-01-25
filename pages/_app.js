@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { AiOutlineCar, AiOutlinePlus } from "react-icons/ai";
 import { BsFillCameraFill, BsFillPersonBadgeFill } from "react-icons/bs";
 import { FaBars, FaFacebook, FaInstagram, FaPhoneAlt, FaCarSide, FaPhotoVideo, FaBiohazard, FaCameraRetro, FaHome, FaImages, FaSoap } from 'react-icons/fa';
-import { GiSteeringWheel, GiCarKey, GiCarSeat } from 'react-icons/gi';
+import { GiSteeringWheel, GiCarKey, GiCarSeat, GiSmallFire } from 'react-icons/gi';
 import { GoLocation } from "react-icons/go";
 import { HiSparkles, HiInformationCircle } from 'react-icons/hi';
 import { MdOutlineEmail, MdLocalOffer } from 'react-icons/md';
@@ -14,6 +14,7 @@ import { TbEngine } from 'react-icons/tb';
 import { RiCarWashingFill } from 'react-icons/ri';
 import { ImFilePicture } from 'react-icons/im';
 import ddLogo from '../public/imgs/PNG1.png';
+import bbbLogo from '../public/imgs/pageimgs/homepage/bbb-logo-small.png';
 import './App.css';
 
 export default function MyApp({ Component, pageProps }) {
@@ -218,11 +219,15 @@ export default function MyApp({ Component, pageProps }) {
                     <a href="mailto:brenden@dirtlessdetailing.com?subject = Schedule a Dirt-Less Detail" className="contact-link footer-contact-link" target="_blank" rel="noopener"><MdOutlineEmail /> brenden@dirtlessdetailing.com</a>
                     <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link footer-contact-link" target="_blank" rel="noopener"><GoLocation /> 9305 205th Ave E, Bonney Lake, Wa 98391</a><br />
                 </div>
-                <p style={{ marginBottom: 0 }}>We currently service:<span style={{ color: 'lightgray' }}> Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Lake Tapps, Federal Way, Orting, South Prairie, Tehaleh, Black Diamond, Milton, Edgewood, and Graham.</span></p>
+                <div className='bbb-footer'>
+                    <p>We currently service:<span style={{ color: 'lightgray' }}> Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Lake Tapps, Federal Way, Orting, South Prairie, Tehaleh, Black Diamond, Milton, Edgewood, and Graham.</span></p>
+                    <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="nofollow">
+                        <img src="https://seal-alaskaoregonwesternwashington.bbb.org/seals/blue-seal-160-82-bbb-1000135733.png" style={{ border: 0 }} alt="Dirt-Less Detailing BBB Business Review" />
+                    </a>
+                </div>
                 <hr />
                 <div className='socials-container'>
-                    <h4 style={{ fontSize: 1.3 + 'em' }}>Dirt-Less Detailing 2022</h4>
-                    <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="noopener"><img src="https://seal-alaskaoregonwesternwashington.bbb.org/seals/blue-seal-160-82-bbb-1000135733.png" className="bbb-seal" alt="Dirt-Less Detailing BBB Business Review" /></a>
+                    <h4 style={{ fontSize: 1.3 + 'em' }}>Dirt-Less Detailing 2023</h4>
                     <div>
                         <a href="https://www.facebook.com/DirtLessDetailing/" className="socials" target="_blank" rel="noopener" aria-label="Facebook"><FaFacebook /></a>
                         <a href="https://www.instagram.com/dirtlessdetailing/" className="socials" target="_blank" rel="noopener" aria-label="Instagram"><FaInstagram /></a>

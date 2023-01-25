@@ -8,13 +8,13 @@ import OtherServices from '../utils/OtherServices';
 
 import { MdOutlineLocalCarWash } from 'react-icons/md';
 import { BiCertification } from 'react-icons/bi';
-import { FaRegStar } from 'react-icons/fa';
+import { FaRegStar, FaMapMarkedAlt } from 'react-icons/fa';
 
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 import cover from '../public/imgs/main-cover.webp';
 import kenzo from '../public/imgs/pageimgs/homepage/project.png';
-import bbbImage from '../public/imgs/pageimgs/homepage/blue-seal-160-82-bbb-1000135733-transformed.png';
+import bbbImage from '../public/imgs/pageimgs/homepage/bbb-logo-small.png';
 
 export default function Home() {
     const [smallScreen, setSmallScreen] = useState(null);
@@ -25,7 +25,6 @@ export default function Home() {
         } else {
             setSmallScreen(false);
         }
-
     }, [])
 
     return (
@@ -81,7 +80,7 @@ export default function Home() {
             </div>
             <header className="home-header">
                 <div className='landing-div'>
-                    <h1 className='title-top'>Your Bonney Lake <span className='title-bottom'>Detailing & Ceramic Coating Specialists</span></h1>
+                    <h1 className='title-top'>Your Bonney Lake <br /><span className='title-bottom'>Detailing & Ceramic Coating Specialists</span></h1>
 
                     <div className="header-icons-container">
                         <div>
@@ -99,13 +98,20 @@ export default function Home() {
                             <p className="header-desc">7 Years</p>
                             <span className='header-desc-span'>Of Experience</span>
                         </div>
+                        <div>
+                            <FaMapMarkedAlt className='header-icon' />
+                            <p className="header-desc">Mobile</p>
+                            <span className='header-desc-span'>Services</span>
+                        </div>
                     </div>
 
-                    <p className='dd-desc'>We also offer a mobile service <span className='special-package'>FREE</span> of charge on select packages!</p>
-
-                    <div style={{ display: 'flex', alignItems: 'center', gap: 32 }}>
-                        <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="noopener"><Image src={bbbImage} width={smallScreen ? 140 : 300} height={smallScreen ? 62 : 134} alt="Dirt-Less Detailing BBB Seal" /></a>
-                        <a href="https://iglcoatingsusa.com/" target="_blank" rel="noopener"><Image src={kenzo} width={smallScreen ? 100 : 135} height={smallScreen ? 110 : 165} alt="igl kenzo coatings" /></a>
+                    <div style={{ display: smallScreen ? 'none' : 'flex', alignItems: 'center', gap: 32 }}>
+                        <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="noopener">
+                            <Image src={bbbImage} width={134} height={134} alt="Dirt-Less Detailing BBB Seal" />
+                        </a>
+                        <a href="https://iglcoatingsusa.com/" target="_blank" rel="noopener">
+                            <Image src={kenzo} width={135} height={165} alt="IGL Kenzo coatings" />
+                        </a>
                     </div>
 
                     <a href="/Contact" className="quote-btn top-quote-btn">Get a Quote Today!</a>
