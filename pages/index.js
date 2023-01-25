@@ -8,7 +8,7 @@ import OtherServices from '../utils/OtherServices';
 
 import { MdOutlineLocalCarWash } from 'react-icons/md';
 import { BiCertification } from 'react-icons/bi';
-import { FaRegStar, FaMapMarkedAlt } from 'react-icons/fa';
+import { FaRegStar, FaMapMarkedAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 
@@ -178,22 +178,22 @@ export default function Home() {
             <section className='mobileservices-container'>
                 <div className="locations">
                     <h3>We currently provide mobile services to the following cities:</h3>
-                    <div style={{ display: 'grid', placeItems: 'center' }}>
+                    <div style={{ width: 100 + '%', display: 'flex', justifyContent: 'center' }}>
                         <ul className='cities-ul'>
-                            <li><a href='/location/bonney-lake' className='aside-link'>Bonney Lake</a></li>
-                            <li><a href='/location/buckley' className='aside-link'>Buckley</a></li>
-                            <li><a href='/location/sumner' className='aside-link'>Sumner</a></li>
-                            <li><a href='/location/lake-tapps' className='aside-link'>Lake Tapps</a></li>
-                            <li><a href='/location/enumclaw' className='aside-link'>Enumclaw</a></li>
-                            <li><a href='/location/puyallup' className='aside-link'>Puyallup</a></li>
-                            <li><a href='/location/tehaleh' className='aside-link'>Tehaleh</a></li>
-                            <li><a href='/location/federal-way' className='aside-link'>Federal Way</a></li>
-                            <li><a href='/location/orting' className='aside-link'>Orting</a></li>
-                            <li><a href='/location/south-prairie' className='aside-link'>South Prairie</a></li>
-                            <li><a href='/location/black-diamond' className='aside-link'>Black Diamond</a></li>
-                            <li><a href='/location/milton' className='aside-link'>Milton</a></li>
-                            <li><a href='/location/edgewood' className='aside-link'>Edgewood</a></li>
-                            <li><a href='/location/graham' className='aside-link'>Graham</a></li>
+                            <li><a href='/location/bonney-lake' className='aside-link'>Bonney Lake</a><FaMapMarkerAlt /></li>
+                            <li><a href='/location/buckley' className='aside-link'>Buckley</a><FaMapMarkerAlt /></li>
+                            <li><a href='/location/sumner' className='aside-link'>Sumner</a><FaMapMarkerAlt /></li>
+                            <li><a href='/location/lake-tapps' className='aside-link'>Lake Tapps</a><FaMapMarkerAlt /></li>
+                            <li><a href='/location/enumclaw' className='aside-link'>Enumclaw</a><FaMapMarkerAlt /></li>
+                            <li><a href='/location/puyallup' className='aside-link'>Puyallup</a><FaMapMarkerAlt /></li>
+                            <li><a href='/location/tehaleh' className='aside-link'>Tehaleh</a><FaMapMarkerAlt /></li>
+                            <li><a href='/location/federal-way' className='aside-link'>Federal Way</a><FaMapMarkerAlt /></li>
+                            <li><a href='/location/orting' className='aside-link'>Orting</a><FaMapMarkerAlt /></li>
+                            <li><a href='/location/south-prairie' className='aside-link'>South Prairie</a><FaMapMarkerAlt /></li>
+                            <li><a href='/location/black-diamond' className='aside-link'>Black Diamond</a><FaMapMarkerAlt /></li>
+                            <li><a href='/location/milton' className='aside-link'>Milton</a><FaMapMarkerAlt /></li>
+                            <li><a href='/location/edgewood' className='aside-link'>Edgewood</a><FaMapMarkerAlt /></li>
+                            <li><a href='/location/graham' className='aside-link'>Graham</a><FaMapMarkerAlt /></li>
                         </ul>
                     </div>
                     <h3>As part of our simple and hassle free service, you can come to us or we can come to you with select packages!</h3>

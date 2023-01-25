@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
+import { FaMapMarkerAlt } from 'react-icons/fa';
 
 import cover from '../../public/imgs/pageimgs/paintCorrection/IMG_20220729_101013.jpg';
 import paintDefects from '../../public/imgs/pageimgs/homepage/paintDefects.png';
@@ -349,18 +350,18 @@ export default function correction() {
                 <strong className='text-medium'>We'll help customers from all over get a paint correction on their vehicle, however, most of our customers come to our shop from these areas:</strong>
                 <div style={{ display: 'grid', placeItems: 'center' }}>
                     <ul className='cities-ul'>
-                    <li><a href='/correction/bonney-lake' className='aside-link'>Bonney Lake</a></li>
-                    <li><a href='/correction/buckley' className='aside-link'>Buckley</a></li>
-                    <li><a href='/correction/sumner' className='aside-link'>Sumner</a></li>
-                    <li><a href='/correction/enumclaw' className='aside-link'>Enumclaw</a></li>
-                    <li><a href='/correction/puyallup' className='aside-link'>Puyallup</a></li>
-                    <li><a href='/correction/federal-way' className='aside-link'>Federal Way</a></li>
-                    <li><a href='/correction/orting' className='aside-link'>Orting</a></li>
-                    <li><a href='/correction/south-prairie' className='aside-link'>South Prairie</a></li>
-                    <li><a href='/correction/black-diamond' className='aside-link'>Black Diamond</a></li>
-                    <li><a href='/correction/milton' className='aside-link'>Milton</a></li>
-                    <li><a href='/correction/edgewood' className='aside-link'>Edgewood</a></li>
-                    <li><a href='/correction/graham' className='aside-link'>Graham</a></li>
+                    <li><a href='/correction/bonney-lake' className='aside-link'>Bonney Lake</a><FaMapMarkerAlt /></li>
+                    <li><a href='/correction/buckley' className='aside-link'>Buckley</a><FaMapMarkerAlt /></li>
+                    <li><a href='/correction/sumner' className='aside-link'>Sumner</a><FaMapMarkerAlt /></li>
+                    <li><a href='/correction/enumclaw' className='aside-link'>Enumclaw</a><FaMapMarkerAlt /></li>
+                    <li><a href='/correction/puyallup' className='aside-link'>Puyallup</a><FaMapMarkerAlt /></li>
+                    <li><a href='/correction/federal-way' className='aside-link'>Federal Way</a><FaMapMarkerAlt /></li>
+                    <li><a href='/correction/orting' className='aside-link'>Orting</a><FaMapMarkerAlt /></li>
+                    <li><a href='/correction/south-prairie' className='aside-link'>South Prairie</a><FaMapMarkerAlt /></li>
+                    <li><a href='/correction/black-diamond' className='aside-link'>Black Diamond</a><FaMapMarkerAlt /></li>
+                    <li><a href='/correction/milton' className='aside-link'>Milton</a><FaMapMarkerAlt /></li>
+                    <li><a href='/correction/edgewood' className='aside-link'>Edgewood</a><FaMapMarkerAlt /></li>
+                    <li><a href='/correction/graham' className='aside-link'>Graham</a><FaMapMarkerAlt /></li>
                     </ul>
                 </div>
             </div>

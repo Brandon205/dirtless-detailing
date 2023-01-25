@@ -897,12 +897,22 @@ input[type="range"] {
 }
 
 .cities-ul {
-  gap: 3rem;
+  list-style: none;
+  padding-left: 0;
   text-align: left;
 }
 
 .cities-ul li {
-  margin-bottom: 0.5rem;
+  color: var(--text-blue);
+  padding: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  outline: 1px solid white;
+}
+
+.cities-ul li a {
+  text-decoration: none;
 }
 
 .cookie-div {

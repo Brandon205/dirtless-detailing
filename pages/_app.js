@@ -14,7 +14,6 @@ import { TbEngine } from 'react-icons/tb';
 import { RiCarWashingFill } from 'react-icons/ri';
 import { ImFilePicture } from 'react-icons/im';
 import ddLogo from '../public/imgs/PNG1.png';
-import bbbLogo from '../public/imgs/pageimgs/homepage/bbb-logo-small.png';
 import './App.css';
 
 export default function MyApp({ Component, pageProps }) {
