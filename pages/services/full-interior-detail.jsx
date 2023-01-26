@@ -38,6 +38,7 @@ export default function FullIntEx() {
   return (
     <section className='service-content-container'>
       <Head>
+        <title>Full Interior Cleaning | Dirt-Less Detailing</title>
         <Metatags
           title='Full Interior Cleaning | Dirt-Less Detailing'
           description='Our Full Interior cleaning is the most sought after service, and for good reason, it will completely renew your cars interior!'

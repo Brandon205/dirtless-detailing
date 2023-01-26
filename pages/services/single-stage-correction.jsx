@@ -44,6 +44,7 @@ export default function SinglePC() {
   return (
     <section className='service-content-container'>
       <Head>
+        <title>Single Stage Paint Correction | Dirt-Less Detailing</title>
         <Metatags
           title='Single Stage Paint Correction | Dirt-Less Detailing'
           description='Our Single Stage Paint Correction should fix most of your Paint Correction needs, leaving your paint nearly scratch free!'

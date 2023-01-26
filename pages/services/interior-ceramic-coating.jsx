@@ -17,6 +17,7 @@ export default function IntCoatings() {
     return (
         <section className="service-content-container bg-contact">
             <Head>
+                <title>Interior Ceramic Coatings | Dirt-Less Detailing</title>
                 <Metatags
                     title='Interior Ceramic Coatings | Dirt-Less Detailing'
                     description='Have us coat the interior of your vehicle with our products to keep them clean and protected from day to day use.'

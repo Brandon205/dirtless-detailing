@@ -23,6 +23,7 @@ export default function ExtCoatings() {
     return (
         <section className="service-content-container bg-contact">
             <Head>
+                <title>Exterior Ceramic Coatings | Dirt-Less Detailing</title>
                 <Metatags
                     title='Exterior Ceramic Coatings | Dirt-Less Detailing'
                     description='Get a professionally installed Ceramic Coating through Dirt-Less Detailing to protect your vehicle from the always changing Washington weather.'

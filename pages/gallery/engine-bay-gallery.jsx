@@ -10,6 +10,7 @@ export default function PaintCorrectionGallery() {
   return (
     <section className='gallery-content-container'>
       <Head>
+        <title>Engine Bay Gallery | Dirt-Less Detailing</title>
         <Metatags
           title='Engine Bay Gallery | Dirt-Less Detailing'
           description='Check out photos from our engine bay cleaning service here. This is a great showcase of the final product our washing procedure creates.'

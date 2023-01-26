@@ -35,6 +35,7 @@ export default function Bio() {
   return (
     <section className='service-content-container'>
       <Head>
+        <title>Biohazard Cleaning | Dirt-Less Detailing</title>
         <Metatags
           title='Biohazard Cleaning | Dirt-Less Detailing'
           description='Smokers Car • Biohazard Cleaning • Odor Removal - See what we can do if your car has unwanted odors or smells'

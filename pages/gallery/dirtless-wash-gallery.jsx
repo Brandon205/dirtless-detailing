@@ -11,6 +11,7 @@ export default function PaintCorrectionGallery() {
   return (
     <section className='gallery-content-container'>
       <Head>
+        <title>Car Wash Gallery | Dirt-Less Detailing</title>
         <Metatags
           title='Car Wash Gallery | Dirt-Less Detailing'
           description='Take a look at our showcase of our exterior wash services to get a preview of what we are capable of doing to your car, no matter the current condition!'

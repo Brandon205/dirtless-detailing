@@ -16,6 +16,7 @@ export default function Addons() {
   return (
     <section className='service-content-container'>
       <Head>
+        <title>Dirt-Less Add-ons | Dirt-Less Detailing</title>
         <Metatags
           title='Dirt-Less Add-ons | Dirt-Less Detailing'
           description='Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment • Truck Bed Cleaning • Debadging • Headliners • Engine Bay Cleaning.'

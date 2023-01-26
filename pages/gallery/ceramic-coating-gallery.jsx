@@ -10,6 +10,7 @@ export default function CoatingGallery() {
   return (
     <section className='gallery-content-container'>
       <Head>
+        <title>Dirt-Less Detailing | Ceramic Coating Gallery</title>
         <Metatags
           title='Dirt-Less Detailing | Ceramic Coating Gallery'
           description='A gallery of photos that we have taken showing off some of the vehicles that we have coated and protected!'

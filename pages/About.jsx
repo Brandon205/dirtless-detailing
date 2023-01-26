@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
-import Metatags from '../../utils/Metatags';
+import Metatags from '../utils/Metatags';
 
 import cover from '../public/imgs/main-cover.webp';
 
@@ -9,6 +9,7 @@ export default function About() {
   return (
     <div className='App bg-contact'>
       <Head>
+        <title>About Us / FAQ | Dirt-Less Detailing</title>
         <Metatags
           title='About Us / FAQ | Dirt-Less Detailing'
           description='Find out a little more about us here, and check out our FAQ for to get answers to our most frequently asked questions.'

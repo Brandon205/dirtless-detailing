@@ -38,6 +38,7 @@ export default function PDLWash() {
   return (
     <section className='service-content-container'>
       <Head>
+        <title>Premium Car Wash | Dirt-Less Detailing</title>
         <Metatags
           title='Premium Car Wash | Dirt-Less Detailing'
           description='Our Premium Dirt-Less Wash will go above and beyond what our base tier offers, and is sure to get everything off your vehicles exterior!'

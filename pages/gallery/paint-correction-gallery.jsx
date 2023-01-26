@@ -10,6 +10,7 @@ export default function PaintCorrectionGallery() {
   return (
     <section className='gallery-content-container'>
       <Head>
+        <title>Paint Correction Gallery | Dirt-Less Detailing</title>
         <Metatags
           title='Paint Correction Gallery | Dirt-Less Detailing'
           description='Paint Correction Photos • Here are some examples from both our Single and Two Stage Paint Correction services!'

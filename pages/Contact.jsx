@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import Head from 'next/head';
-import Metatags from '../../utils/Metatags';
+import Metatags from '../utils/Metatags';
 import 'react-toastify/dist/ReactToastify.css';
 
 import cover from '../public/imgs/main-cover.webp';
@@ -128,6 +128,7 @@ export default function Contact() {
     return (
         <section className="contact-container" id="contact">
             <Head>
+                <title>Contact Us | Dirt-Less Detailing</title>
                 <Metatags
                     title='Contact Us | Dirt-Less Detailing'
                     description='Contact us here! Let us know any additional information we may need to know before your detail. Feel free to reach out with any questions!'

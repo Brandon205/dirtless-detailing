@@ -15,6 +15,7 @@ export default function Combo() {
   return (
     <section className='service-content-container'>
       <Head>
+        <title>Interior and Exterior Combo | Dirt-Less Detailing</title>
         <Metatags
           title='Interior and Exterior Combo | Dirt-Less Detailing'
           description='Full Interior Cleaning + Premium Dirt-Less Wash Combo. Get a FREE engine bay cleaning when booking this Combo Deal!'

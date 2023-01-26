@@ -34,6 +34,7 @@ export default function DLWash() {
   return (
     <section className='service-content-container'>
       <Head>
+        <title>Dirt-Less Car Wash | Dirt-Less Detailing</title>
         <Metatags
           title='Dirt-Less Car Wash | Dirt-Less Detailing'
           description='The Dirt-Less Wash is our base tier exterior car wash service, complete with a spray wax to protect your vehicle.'

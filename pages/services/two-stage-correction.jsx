@@ -44,6 +44,7 @@ export default function TwoPC() {
   return (
     <section className='service-content-container'>
       <Head>
+        <title>Two Stage Paint Correction | Dirt-Less Detailing</title>
         <Metatags
           title='Two Stage Paint Correction | Dirt-Less Detailing'
           description='Our Two Stage Paint Correction is for vehicles that are to be spotless and have a beautiful shine. This service will get them there.'
