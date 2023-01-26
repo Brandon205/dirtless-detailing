@@ -1686,6 +1686,7 @@ hr {
   }
 
   .coating-points {
+    text-align: left;
     columns: 2;
   }
 

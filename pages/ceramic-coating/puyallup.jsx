@@ -123,7 +123,7 @@ export default function puyallup() {
 
                 <h2 className='text-large'>Why get a Ceramic Coating?</h2>
                 <p className='text-left'>Here's a list of some of the benefits to getting a ceramic coating on your car we have more listed on our <a href="/detailing/ceramic" className='aside-link'>ceramic</a> page:</p>
-                <ul className='cities-ul'>
+                <ul className='coating-points'>
                     <li>Lasts up to 5 years or a lifetime (with proper maintenance through us).</li>
                     <li>Hyrophobic</li>
                     <li>Easy to Wash</li>
