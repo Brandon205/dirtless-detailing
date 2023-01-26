@@ -91,9 +91,9 @@ export default function DLWash() {
               <div className="service-explain">
                 <div className="text-left">
                   <h2 className='text-large mt-0'>Dirt-Less Wash</h2>
-                  <p>You don't have to go to Harvard University to wash a car, but there are methods of washing that produce infinitely better results than your typical tunnel car wash. Our methods are also way safer.</p>
+                  <p>While you don't have to go to Harvard to wash a car there are methods of washing that produce infinitely better results than your typical tunnel car wash. Our methods are also way safer for your paint.</p>
                   <p>If you're looking for a fast and cheap option to get your car washed in Bonney Lake or the surrounding areas, we most likely won't be a great fit for you. We go very in-depth in our washing process to provide the highest quality level of service and results your money can buy.</p>
-                  <p>Want to go a step further than our Dirt-Less wash? Check out our <a href='/detailing/car-washes' className='aside-link'>comparison</a> page to see the differences between our this service and the <a href='/services/premium-dirtless-wash' className='aside-link'>Premium</a> version.</p>
+                  <p>Want to go a step further than our Dirt-Less Wash, removing all of the contaminants that may be hiding on your paint? Check out our <a href='/detailing/car-washes' className='aside-link'>comparison</a> page to see the differences between our this service and the <a href='/services/premium-dirtless-wash' className='aside-link'>Premium</a> version.</p>
                 </div>
                 <div className='service-image'>
                   <Zoom>

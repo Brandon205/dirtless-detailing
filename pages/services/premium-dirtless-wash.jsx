@@ -95,10 +95,10 @@ export default function PDLWash() {
               <div className="service-explain">
                 <div className="text-left">
                   <h2 className='text-large mt-0'>Premium Dirt-Less Wash</h2>
-                  <p>Not only will you see a humongous difference in the appearance, but you will also be able to feel the smoothness and slickness of the paint once we're done with this service.</p>
+                  <p>Not only will you see a huge difference in the appearance, but you will also be able to feel how smooth the paint is once we're done.</p>
                   <p>Both of our Dirt-Less Wash services go very in depth, cleaning areas that you won't even see on a day to day basis. Our Premium package goes even further than that by using a clay bar and iron decontamination products on the whole vehicle to remove any contaminants.</p>
                   <p>A lot of our customers love this service since it doesn't take much time to perform, but the results that you get are stellar!</p>
-                  <p>Want to compare our Premium and non-premium washes? Check out our <a href='/detailing/car-washes' className='aside-link'>comparison</a> page for more details.</p>
+                  <p>Want to compare our Premium and normal wash services? Check out our <a href='/detailing/car-washes' className='aside-link'>comparison</a> page for more details.</p>
                 </div>
                 <div className='service-image'>
                   <Zoom>
