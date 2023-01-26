@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 import ReactPlayer from 'react-player/lazy'; 
@@ -18,12 +17,6 @@ const steps = [
 ]
 
 export default function Bio() {
-  const [href, setHref] = useState('');
-
-  useEffect(() => {
-    setHref(window.location.href)
-  }, [])
-
   const content = steps.map((item, id) => {
     return (
       <li key={id} className="item">

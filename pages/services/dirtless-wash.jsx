@@ -151,18 +151,21 @@ export default function DLWash() {
                 <h3 className='pricing-title text-white'>Extra Add-ons <a href='/services/add-ons' className='aside-link'><BiLinkExternal /></a></h3>
                 <p className='subtext'>Add-ons that typically get paired with either of our exterior wash services</p>
                 <div className="pricing-container">
-                  <div className="pricing-card text-black">
+                  <div className="pricing-card text-black fixed-height">
                     <strong className='size'>Truck Bed Cleaning</strong>
+                    <p>Rinse and wash your truck bed.</p>
                     <p className="pricing-price pricing-border">$25</p>
                     <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                   </div>
-                  <div className="pricing-card text-black">
+                  <div className="pricing-card text-black fixed-height">
                     <strong className='size'>Glass Polishing</strong>
+                    <p>Removes Waterspots and stains from your glass.</p>
                     <p className="pricing-price pricing-border">$80/hour</p>
                     <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                   </div>
-                  <div className="pricing-card text-black">
+                  <div className="pricing-card text-black fixed-height">
                     <strong className='size'>Waterspot/Overspray Removal</strong>
+                    <p>Remove Waterspots and Overspray from your vehicles paint.</p>
                     <p className="pricing-price pricing-border">$80/hour</p>
                     <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                   </div>

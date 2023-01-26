@@ -180,13 +180,15 @@ export default function Combo() {
               <h3 className='pricing-title text-white'>Extra Add-ons <a href='/services/add-ons' className='aside-link'><BiLinkExternal /></a></h3>
               <p className='subtext'>Add-ons that are most commonly paired with our Combo deal.</p>
               <div className="pricing-container">
-                <div className="pricing-card text-black">
+                <div className="pricing-card text-black fixed-height">
                   <strong className='size'>Glass Polishing</strong>
+                  <p>Removes Waterspots and stains from your glass.</p>
                   <p className="pricing-price pricing-border">$80/hour</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
-                <div className="pricing-card text-black">
+                <div className="pricing-card text-black fixed-height">
                   <strong className='size'>Waterspot/Overspray Removal</strong>
+                  <p>Remove Waterspots and Overspray from your vehicles paint.</p>
                   <p className="pricing-price pricing-border">$80/hour</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>

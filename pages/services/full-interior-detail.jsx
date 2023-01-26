@@ -95,10 +95,10 @@ export default function FullIntEx() {
               <div className="service-explain">
                 <div className="text-left">
                   <h2 className='text-large'>Professional Interior Detailing</h2>
-                  <p>The Full Interior Cleaning package is meant to get your interior back to the best condition possible. Your seats, floor mats, plastics, windows, and carpet will all be thoroughly cleaned, detailed, and shampooed/extracted. </p>
-                  <p>If it can be cleaned, we'll clean it. Does that mean every little stain will be removed? Unfortunately, that isn't the case. Based on the type of stain, how long it's been sitting, and the material, many stains won't come out 100%. Of course we'll still do our best to reduce the appearance of it.</p>
-                  <p>Please don't think your interior is “too dirty”. We have the necessary tools and products to get the job done. We have cleaned hundreds of interiors, of all conditions. It's not easy to surprise us.</p>
-                  <p>Make it a <a href='/services/interior-exterior-detailing-combo' className='aside-link'>Combo</a> deal by booking with a Premium Dirt-Less Wash, and get a free <a href='/services/add-ons#engine' className='aside-link'>Engine Bay</a> cleaning on the house!</p>
+                  <p>The goal of the Full Interior Cleaning package is to restore your interior to its best condition. Your carpet, seats, floor mats, plastics, windows, and all other interior fixtures will be meticulously cleaned.</p>
+                  <p>If it can be cleaned, we'll clean it. Many stains may be more difficult or may not come out all of the way. This all depends on the type of stain, how long it's been sitting, and the material, many stains won't come out all of the way.</p>
+                  <p>Taking us by surprise is difficult. Please don't think that your interior is too dirty. We've seen hundreds of different interiors and have all the necessary tools to attempt to remove any and all.</p>
+                  <p>Make it a <a href='/services/interior-exterior-detailing-combo' className='aside-link'>Combo</a> deal by booking with a Premium Dirt-Less Wash, and get an <a href='/services/add-ons#engine' className='aside-link'>Engine Bay</a> cleaning on the house!</p>
                 </div>
                 <div className='service-image'>
                   <Zoom>
@@ -168,23 +168,27 @@ export default function FullIntEx() {
               <h3 className='pricing-title text-white'>Extra Add-ons <a href='/services/add-ons' className='aside-link'><BiLinkExternal /></a></h3>
               <strong className='subtext'>Some of our most popular add-ons that are usually added on top of our Interior Cleaning Service.</strong>
               <div className="pricing-container">
-                <div className="pricing-card text-black">
+                <div className="pricing-card text-black fixed-height">
                   <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Fabric Ceramic Coating</strong>
+                  <p>Get a coat of IGL's Interior Coating.</p>
                   <p className="pricing-price pricing-border">$75</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
-                <div className="pricing-card text-black">
+                <div className="pricing-card text-black fixed-height">
                   <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Leather Ceramic Coating</strong>
+                  <p>Get a coat of IGL's Leather Coating professionally applied.</p>
                   <p className="pricing-price pricing-border">$150</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
-                <div className="pricing-card text-black">
+                <div className="pricing-card text-black fixed-height">
                   <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Headliner Cleaning</strong>
+                  <p>Get your headliners professionally and safely cleaned.</p>
                   <p className="pricing-price pricing-border">$40-$80</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
-                <div className="pricing-card text-black">
+                <div className="pricing-card text-black fixed-height">
                   <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Ozone Treatment</strong>
+                  <p>Have an ozone treatment done to remove odors and clean the air in your car.</p>
                   <p className="pricing-price pricing-border">$100</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>

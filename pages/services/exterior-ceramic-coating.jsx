@@ -142,7 +142,7 @@ export default function ExtCoatings() {
                             <div className="text-left">
                                 <h2 className='text-large'>The benefits you get with a coating:</h2>
                                 <p className='text-left'>There are a lot of coating companies that make some pretty big claims of what a coating can do. We don't like to use most of these claims and oversell what the ceramic coatings can do and how long they can last.</p>
-                                <ul className='cities-ul'>
+                                <ul className='coating-points'>
                                     <li>Produces durable protection possible that can last 5 years to a lifetime* (With our monthly maintenance).</li>
                                     <li>Only one application is needed. (Not every couple of washes like normal wax protection).</li>
                                     <li>Creates a deep level of gloss that is not possible with other forms of protection like wax or sealant.</li>
@@ -328,13 +328,15 @@ export default function ExtCoatings() {
                         <h3 className="pricing-title text-white">Exterior Re-coating Options</h3>
                         <h4 className='subtext'>Our re-coating options if you have had a ceramic coating done through us.</h4>
                         <div className="pricing-container text-black">
-                            <div className="pricing-card">
+                            <div className="pricing-card fixed-height">
                                 <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Re-coat All Vehicle Trim</strong>
+                                <p>Get all exterior vehicle trim re-coated.</p>
                                 <p className="pricing-price">$100</p>
                                 <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                             </div>
-                            <div className="pricing-card">
+                            <div className="pricing-card fixed-height">
                                 <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Re-coat Wheel Faces</strong>
+                                <p>Re-coat all Wheel Faces.</p>
                                 <p className="pricing-price">$150</p>
                                 <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                             </div>

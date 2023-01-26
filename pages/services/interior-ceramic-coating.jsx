@@ -184,13 +184,15 @@ export default function IntCoatings() {
                         <h3 className="pricing-title text-white">Interior Re-coating Options</h3>
                         <h4 className='subtext'><span className="special-package">*</span>Note: Price doesn't include an <a href="/services/full-interior-detail" className='aside-link'>Interior Detail</a> service which we will need to do before applying the coating for the best results.</h4>
                         <div className="pricing-container text-black">
-                            <div className="pricing-card">
+                            <div className="pricing-card fixed-height">
                                 <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Re-coat All Vehicle Trim</strong>
+                                <p>Get all exterior vehicle trim re-coated.</p>
                                 <p className="pricing-price">$100</p>
                                 <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                             </div>
-                            <div className="pricing-card">
+                            <div className="pricing-card fixed-height">
                                 <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Re-coat Wheel Faces</strong>
+                                <p>Re-coat all Wheel Faces.</p>
                                 <p className="pricing-price">$150</p>
                                 <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                             </div>

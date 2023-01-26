@@ -1574,6 +1574,10 @@ hr {
   text-overflow: clip;
 }
 
+.fixed-height {
+  height: 410px;
+}
+
 @media screen and (min-width: 450px) {
 
   .title-top {
@@ -1679,6 +1683,10 @@ hr {
 
   .nav-hr {
     display: none;
+  }
+
+  .coating-points {
+    columns: 2;
   }
 
   .cities-ul {
