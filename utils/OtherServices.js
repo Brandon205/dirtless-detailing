@@ -26,7 +26,7 @@ export default function OtherServices() {
                     <Image src={ceramicInt} alt="Vehicle after an interior coating" className='otherservices-image' layout='responsive' height={450} width={450} loading='lazy' placeholder='blur' quality={15} />
                     <div className="otherservices-desc">
                         <div>
-                            <a href='/services/two-stage-correction' className='service-heading-link'>Interior Coatings</a>
+                            <a href='/services/interior-ceramic-coating' className='service-heading-link'>Interior Ceramic Coatings</a>
                             <p className="secondary-text">Starting at: <span>$75</span></p>
                         </div>
                         <p className="service-desc">Did you know you could ceramic coat the interior of your car? Well you can, and it provides many of the benefits of a normal exterior coating like ease of maintenance/cleaning, but to the interior of your car!</p>
@@ -39,7 +39,7 @@ export default function OtherServices() {
                     <Image src={ceramicExt} alt="Large water beads after a ceramic coating" className='otherservices-image' layout='responsive' height={450} width={450} loading='lazy' placeholder='blur' quality={15} />
                     <div className="otherservices-desc">
                         <div>
-                            <a href='/services/single-stage-correction' className='service-heading-link'>Exterior Ceramic Coatings</a>
+                            <a href='/services/exterior-ceramic-coating' className='service-heading-link'>Exterior Ceramic Coatings</a>
                             <p className="secondary-text">Starting at: <span>$1,000</span></p>
                         </div>
                         <p className="service-desc">With a professionally installed IGL Ceramic coating from us, your vehicle will be clean and protected. We are a licensed and certified coating installer through IGL and are happy to give your car that extra layer of protection it deserves</p>
@@ -52,7 +52,7 @@ export default function OtherServices() {
                     <Image src={ceramicGallery} alt="Smaller water beads on side of vehicle after a ceramic coating" className='otherservices-image' layout='responsive' height={450} width={450} loading='lazy' placeholder='blur' quality={20} />
                     <div className="otherservices-desc text-center">
                         <div>
-                            <a href='/gallery/paint-correction-gallery' className='service-heading-link'>CERAMIC COATING GALLERY</a>
+                            <a href='/gallery/ceramic-coating-gallery' className='service-heading-link'>CERAMIC COATING GALLERY</a>
                         </div>
                         <p className="service-desc">Take a look at some of the results we've had after our Ceramic Details.</p>
                         <p className="service-desc">Starting with our Single Stage Paint Correction before applying our Ceramics ensures the best covering of your vehicle possible, giving the absolute best results and longevity.</p>
@@ -120,7 +120,7 @@ export default function OtherServices() {
                         <div>
                             <a href='/gallery/interior-detail-gallery' className='service-heading-link'>FULL INTERIOR GALLERY</a>
                         </div>
-                        <p className="service-desc">Our interior gallery is full of before and after images of the interiors that we have done.</p>
+                        <p className="service-desc">Our interior gallery is full of images of the interiors that we have cleaned.</p>
                         <p className="service-desc">Come check out some of the hundreds of photos we have of what we have been able to do for our customers interiors!</p>
 
                         <a href='/gallery/interior-detail-gallery' className="readmore text-center">Full Interior Gallery</a>
@@ -187,7 +187,7 @@ export default function OtherServices() {
                             <a href='/services/single-stage-correction' className='service-heading-link'>Single Stage Paint Correction</a>
                             <p className="secondary-text">Starting at: <span>$300</span></p>
                         </div>
-                        <p className="service-desc">Our single stage paint correction can fix 60%-70% of minor damage and scratches and will leave your vehicle looking shinier than ever.</p>
+                        <p className="service-desc">Our Single Stage Paint Correction can fix 60%-70% of minor damage and scratches and will leave your vehicle looking shinier than ever.</p>
 
                         <a href="/services/single-stage-correction" className="readmore">Paint Correction Details {'>'}</a>
                     </div>
@@ -200,7 +200,7 @@ export default function OtherServices() {
                             <a href='/services/two-stage-correction' className='service-heading-link'>Two Stage Paint Correction</a>
                             <p className="secondary-text">Starting at: <span>$450</span></p>
                         </div>
-                        <p className="service-desc">Our 2 stage paint correction is great for getting your car to a near perfect state. This is great for show cars need that extra time and effort to get to that showroom shine.</p>
+                        <p className="service-desc">Our 2 stage paint correction is great for getting your car's paint to a close to perfect state. This is great for show cars need that extra time and effort to get to that showroom shine.</p>
 
                         <a href="/services/two-stage-correction" className="readmore">Two Stage Paint Correction Details {'>'}</a>
                     </div>

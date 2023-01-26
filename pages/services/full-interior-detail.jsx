@@ -133,7 +133,7 @@ export default function FullIntEx() {
               <strong className='subtext'>*Final pricing may vary based on your vehicle condition and size.</strong>
               <div className="pricing-container">
                 <div className="pricing-card text-black">
-                  <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Small</strong>
+                  <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Small</strong>
                   <strong className='size'>Without Extraction</strong>
                   <p className="pricing-price pricing-border">$200</p>
                   <strong className='size'>With Extraction</strong>
@@ -143,7 +143,7 @@ export default function FullIntEx() {
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
                 <div className="pricing-card text-black">
-                  <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Medium</strong>
+                  <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Medium</strong>
                   <strong className='size'>Without Extraction</strong>
                   <p className="pricing-price pricing-border">$250</p>
                   <strong className='size'>With Extraction</strong>
@@ -153,7 +153,7 @@ export default function FullIntEx() {
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
                 <div className="pricing-card text-black">
-                  <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Large</strong>
+                  <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Large</strong>
                   <strong className='size'>Without Extraction</strong>
                   <p className="pricing-price pricing-border">$300</p>
                   <strong className='size'>With Extraction</strong>
@@ -168,25 +168,25 @@ export default function FullIntEx() {
               <strong className='subtext'>Some of our most popular add-ons that are usually added on top of our Interior Cleaning Service.</strong>
               <div className="pricing-container">
                 <div className="pricing-card text-black fixed-height">
-                  <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Fabric Ceramic Coating</strong>
+                  <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Fabric Ceramic Coating</strong>
                   <p>Get a coat of IGL's Interior Coating.</p>
                   <p className="pricing-price pricing-border">$75</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
                 <div className="pricing-card text-black fixed-height">
-                  <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Leather Ceramic Coating</strong>
+                  <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Leather Ceramic Coating</strong>
                   <p>Get a coat of IGL's Leather Coating professionally applied.</p>
                   <p className="pricing-price pricing-border">$150</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
                 <div className="pricing-card text-black fixed-height">
-                  <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Headliner Cleaning</strong>
+                  <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Headliner Cleaning</strong>
                   <p>Get your headliners professionally and safely cleaned.</p>
                   <p className="pricing-price pricing-border">$40-$80</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
                 <div className="pricing-card text-black fixed-height">
-                  <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Ozone Treatment</strong>
+                  <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Ozone Treatment</strong>
                   <p>Have an ozone treatment done to remove odors and clean the air in your car.</p>
                   <p className="pricing-price pricing-border">$100</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>

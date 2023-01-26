@@ -122,7 +122,7 @@ export default function ExtCoatings() {
                                 <p>It is the absolute best way to protect your vehicle from the harsh weather we experience in Bonney Lake. Back in the day, wax was the cutting edge choice to enhance your vehicle's shine. It also protected your paint from external elements like rain, bird poop, dirt, tree sap, etc.</p>
                                 <p>Now, with modern day technology, we have a far more durable and superior form of protection: ceramic/graphene coatings.</p>
                                 <p>Unlike wax, you can't just simply wipe it on and off. The ceramic coating adheres to the surface of the car and creates a semi-permanent barrier. It is frequently described as a "sacrificial" layer of protection. Rain, debris, and other weather conditions will be absorbed by it, better protecting the paint underneath.</p>
-                                <p>As an analogy, think of the Three Little Pigs. Wax is like the straw house, and ceramic coatings are like the brick house. Both offer protection from rain and dust, but one is far superior.</p>
+                                <p>As an analogy, think of the Three Little Pigs. No after wash product is like the straw house, wax is like the stick house, and ceramic coatings are like the brick house. Both the wax and ceramic offer protection from rain and dust, but one is far stronger.</p>
                             </div>
                             <div className='service-image'>
                                 <Zoom>
@@ -257,7 +257,7 @@ export default function ExtCoatings() {
                         <h4 className='subtext'>*Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</h4>
                         <div className="pricing-container text-black">
                             <div className="pricing-card">
-                                <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Small</strong>
+                                <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Small</strong>
                                 <strong className='size'>Protect</strong>
                                 <p className="pricing-price pricing-border">$1,000</p>
                                 <strong className='size'>Protect<span className="special-package">+</span></strong>
@@ -267,7 +267,7 @@ export default function ExtCoatings() {
                                 <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                             </div>
                             <div className="pricing-card">
-                                <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Medium</strong>
+                                <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Medium</strong>
                                 <strong className='size'>Protect</strong>
                                 <p className="pricing-price pricing-border">$1,200</p>
                                 <strong className='size'>Protect<span className="special-package">+</span></strong>
@@ -277,7 +277,7 @@ export default function ExtCoatings() {
                                 <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                             </div>
                             <div className="pricing-card">
-                                <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Large</strong>
+                                <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Large</strong>
                                 <strong className='size'>Protect</strong>
                                 <p className="pricing-price pricing-border">$1,400</p>
                                 <strong className='size'>Protect<span className="special-package">+</span></strong>
@@ -289,11 +289,11 @@ export default function ExtCoatings() {
                         </div>
 
                         <h3 className='pricing-title text-white'>Our Monthly/Yearly Maintenance Pricing</h3>
-                        <h4 className='subtext'>The goal of our monthly maintenance is to keep your vehicle looking like new year-round. Every month you will get a full <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> and a <a href='/services/full-interior-detail' className='aside-link'>Full Interior Detail</a>.</h4>
-                        <h4 className='subtext'>Our yearly service goes into far more detail and will: • Wash the entire vehicle • Iron decontamination treatment • Top the vehicle off with a ceramic booster • Apply a new coat of ceramic to the windshield.</h4>
+                        <h4 className='subtext'>The goal of our monthly maintenance is to keep your vehicle looking like new year-round. Every month you will get a <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> and a <a href='/services/full-interior-detail' className='aside-link'>Full Interior Detail</a>.</h4>
+                        <h4 className='subtext'>Our yearly service goes into far more detail and we will: • Wash the entire vehicle • Perform Iron Decontamination treatment • Top the vehicle off with a ceramic booster • Apply a new coat of ceramic to the windshield.</h4>
                         <div className="pricing-container text-black">
                             <div className="pricing-card">
-                                <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Small</strong>
+                                <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Small</strong>
                                 <strong className='size'>Monthly</strong>
                                 <p className="pricing-price pricing-border">$130</p>
                                 <strong className='size'>Yearly</strong>
@@ -303,7 +303,7 @@ export default function ExtCoatings() {
                                 <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                             </div>
                             <div className="pricing-card">
-                                <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Medium</strong>
+                                <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Medium</strong>
                                 <strong className='size'>Monthly</strong>
                                 <p className="pricing-price pricing-border">$160</p>
                                 <strong className='size'>Yearly</strong>
@@ -313,7 +313,7 @@ export default function ExtCoatings() {
                                 <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                             </div>
                             <div className="pricing-card">
-                                <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Large</strong>
+                                <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Large</strong>
                                 <strong className='size'>Monthly</strong>
                                 <p className="pricing-price pricing-border">$190</p>
                                 <strong className='size'>Yearly</strong>
