@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Head from 'next/head';
+import Metatags from '../../utils/Metatags';
 import { BiLinkExternal } from 'react-icons/bi';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
@@ -43,14 +44,12 @@ export default function SinglePC() {
   return (
     <section className='service-content-container'>
       <Head>
-        <title>Single Stage Paint Correction | Dirt-Less Detailing</title>
-        <meta property="og:title" content="Single Stage Paint Correction | Dirt-Less Detailing" />
-        <meta name="description" content="Our Single Stage Paint Correction should fix most of your Paint Correction needs, leaving your paint nearly scratch free!" />
-        <meta property="og:description" content="Our Single Stage Paint Correction should fix most of your Paint Correction needs, leaving your paint nearly scratch free!" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.dirtlessdetailing.com/services/single-stage-correction" />
-        <meta property="og:image" content={cover.src} />
-        <link rel="canonical" href="https://www.dirtlessdetailing.com/services/single-stage-correction" />
+        <Metatags
+          title='Single Stage Paint Correction | Dirt-Less Detailing'
+          description='Our Single Stage Paint Correction should fix most of your Paint Correction needs, leaving your paint nearly scratch free!'
+          image={cover.src}
+          canonical='/services/single-stage-correction'
+        />
         <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
           __html: `{
             "@context": "http://schema.org",

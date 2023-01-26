@@ -1,8 +1,10 @@
 import Image from 'next/image';
 import Head from 'next/head';
+import Metatags from '../../utils/Metatags';
 import { BiLinkExternal } from 'react-icons/bi';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
+import Metatags from '../../utils/Metatags';
 
 import cover from '../../public/imgs/pageimgs/exterior/IMG_20220121_153440.jpg';
 import exterior from '../../public/imgs/pageimgs/exterior/speed3exterior.jpg';
@@ -14,14 +16,12 @@ export default function Combo() {
   return (
     <section className='service-content-container'>
       <Head>
-        <title>Interior and Exterior Combo | Dirt-Less Detailing</title>
-        <meta property="og:title" content="Interior and Exterior Combo | Dirt-Less Detailing" />
-        <meta name="description" content="Full Interior Cleaning + Premium Dirt-Less Wash Combo. Get a FREE engine bay cleaning when booking this Combo Deal!" />
-        <meta property="og:description" content="Full Interior Cleaning + Premium Dirt-Less Wash Combo. Get a FREE engine bay cleaning when booking this Combo Deal!" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.dirtlessdetailing.com/services/interior-exterior-detailing-combo" />
-        <meta property="og:image" content={cover.src} />
-        <link rel="canonical" href="https://www.dirtlessdetailing.com/services/interior-exterior-detailing-combo" />
+        <Metatags
+          title='Interior and Exterior Combo | Dirt-Less Detailing'
+          description='Full Interior Cleaning + Premium Dirt-Less Wash Combo. Get a FREE engine bay cleaning when booking this Combo Deal!'
+          image={cover.src}
+          canonical='/services/interior-exterior-detailing-combo'
+        />
         <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
           __html: `{
             "@context": "http://schema.org",

@@ -14,8 +14,6 @@ export default function Metatags({title, description, image, canonical}) {
             <meta name="twitter:description" content={description} />
             <meta name="twitter:image" content={image} />
 
-
-
             <link rel="canonical" href={`https://www.dirtlessdetailing.com${canonical}`} />
         </>
     )

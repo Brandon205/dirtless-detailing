@@ -1,8 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
+import Metatags from '../../utils/Metatags';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
+import Metatags from '../../utils/Metatags';
 
 import { BiLinkExternal } from 'react-icons/bi';
 import { GiCarSeat, GiRolledCloth, GiSpill } from 'react-icons/gi';
@@ -16,14 +18,12 @@ export default function IntCoatings() {
     return (
         <section className="service-content-container bg-contact">
             <Head>
-                <title>Interior Ceramic Coatings | Dirt-Less Detailing</title>
-                <meta property="og:title" content="Interior Ceramic Coatings | Dirt-Less Detailing" />
-                <meta name="description" content="Have us coat the interior of your vehicle with our products to keep them clean and protected from day to day use." />
-                <meta property="og:description" content="Have us coat the interior of your vehicle with our products to keep them clean and protected from day to day use." />
-                <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://www.dirtlessdetailing.com/services/interior-ceramic-coating" />
-                <meta property="og:image" content={cover.src} />
-                <link rel="canonical" href="https://www.dirtlessdetailing.com/services/interior-ceramic-coating" />
+                <Metatags
+                    title='Interior Ceramic Coatings | Dirt-Less Detailing'
+                    description='Have us coat the interior of your vehicle with our products to keep them clean and protected from day to day use.'
+                    image={cover.src}
+                    canonical='/services/interior-ceramic-coating'
+                />
                 <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
                     __html: `{
                         "@context": "http://schema.org",

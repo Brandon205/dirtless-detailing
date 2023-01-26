@@ -1,8 +1,10 @@
 import Image from 'next/image';
 import Head from 'next/head';
+import Metatags from '../../utils/Metatags';
 import { BiLinkExternal } from 'react-icons/bi';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
+import Metatags from '../../utils/Metatags';
 
 import cover from '../../public/imgs/DLWashCover.webp';
 import serviceImage from '../../public/imgs/pageimgs/exterior/IMG_20211103_105903.jpg';
@@ -33,14 +35,12 @@ export default function DLWash() {
   return (
     <section className='service-content-container'>
       <Head>
-        <title>Dirt-Less Car Wash | Dirt-Less Detailing</title>
-        <meta property="og:title" content="Dirt-Less Car Wash | Dirt-Less Detailing" />
-        <meta name="description" content="The Dirt-Less Wash is our base tier exterior car wash service, complete with a spray wax to protect your vehicle." />
-        <meta property="og:description" content="The Dirt-Less Wash is our base tier exterior car wash service, complete with a spray wax to protect your vehicle." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.dirtlessdetailing.com/services/dirtless-wash" />
-        <meta property="og:image" content={cover.src} />
-        <link rel="canonical" href="https://www.dirtlessdetailing.com/services/dirtless-wash" />
+        <Metatags
+          title='Dirt-Less Car Wash | Dirt-Less Detailing'
+          description='The Dirt-Less Wash is our base tier exterior car wash service, complete with a spray wax to protect your vehicle.'
+          image={cover.src}
+          canonical='/services/dirtless-wash'
+        />
         <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
           __html: `{
             "@context": "http://schema.org",

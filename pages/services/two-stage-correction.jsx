@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Head from 'next/head';
+import Metatags from '../../utils/Metatags';
 import { BiLinkExternal } from 'react-icons/bi';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
@@ -43,14 +44,12 @@ export default function TwoPC() {
   return (
     <section className='service-content-container'>
       <Head>
-        <title>Two Stage Paint Correction | Dirt-Less Detailing</title>
-        <meta property="og:title" content="Two Stage Paint Correction | Dirt-Less Detailing" />
-        <meta name="description" content="Our Two Stage Paint Correction is for vehicles that are to be spotless and have a beautiful shine. This service will get them there." />
-        <meta property="og:description" content="Our Two Stage Paint Correction is for vehicles that are to be spotless and have a beautiful shine. This service will get them there." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.dirtlessdetailing.com/services/two-stage-correction" />
-        <meta property="og:image" content={cover.src} />
-        <link rel="canonical" href="https://www.dirtlessdetailing.com/services/two-stage-correction" />
+        <Metatags
+          title='Two Stage Paint Correction | Dirt-Less Detailing'
+          description='Our Two Stage Paint Correction is for vehicles that are to be spotless and have a beautiful shine. This service will get them there.'
+          image={cover.src}
+          canonical='/services/two-stage-correction'
+        />
         <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
           __html: `{
             "@context": "http://schema.org",

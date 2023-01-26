@@ -1,9 +1,11 @@
 import Image from 'next/image';
 import Head from 'next/head';
+import Metatags from '../../utils/Metatags';
 import ReactPlayer from 'react-player/lazy'; 
 import { BiLinkExternal } from 'react-icons/bi';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
+import Metatags from '../../utils/Metatags';
 
 import cover from '../../public/imgs/PDLWashCover.webp';
 
@@ -37,14 +39,12 @@ export default function PDLWash() {
   return (
     <section className='service-content-container'>
       <Head>
-        <title>Premium Car Wash | Dirt-Less Detailing</title>
-        <meta property="og:title" content="Premium Car Wash | Dirt-Less Detailing" />
-        <meta name="description" content="Our Premium Dirt-Less Wash will go above and beyond what our base tier offers, and is sure to get everything off your vehicles exterior!" />
-        <meta property="og:description" content="Our Premium Dirt-Less Wash will go above and beyond what our base tier offers, and is sure to get everything off your vehicles exterior!" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.dirtlessdetailing.com/services/premium-dirtless-wash" />
-        <meta property="og:image" content={cover.src} />
-        <link rel="canonical" href="https://www.dirtlessdetailing.com/services/premium-dirtless-wash" />
+        <Metatags
+          title='Premium Car Wash | Dirt-Less Detailing'
+          description='Our Premium Dirt-Less Wash will go above and beyond what our base tier offers, and is sure to get everything off your vehicles exterior!'
+          image={cover.src}
+          canonical='/services/premium-dirtless-wash'
+        />
         <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
           __html: `{
             "@context": "http://schema.org",

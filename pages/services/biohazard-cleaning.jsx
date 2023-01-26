@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Head from 'next/head';
+import Metatags from '../../utils/Metatags';
 import ReactPlayer from 'react-player/lazy'; 
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
@@ -34,14 +35,12 @@ export default function Bio() {
   return (
     <section className='service-content-container'>
       <Head>
-        <title>Biohazard Cleaning | Dirt-Less Detailing</title>
-        <meta property="og:title" content="Biohazard Cleaning | Dirt-Less Detailing" />
-        <meta name="description" content="Smokers Car • Biohazard Cleaning • Odor Removal - See what we can do if your car has unwanted odors or smells" />
-        <meta property="og:description" content="Smokers Car • Biohazard Cleaning • Odor Removal - See what we can do if your car has unwanted odors or smells" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.dirtlessdetailing.com/services/biohazard-cleaning" />
-        <meta property="og:image" content={cover.src} />
-        <link rel="canonical" href="https://www.dirtlessdetailing.com/services/biohazard-cleaning" />
+        <Metatags
+          title='Biohazard Cleaning | Dirt-Less Detailing'
+          description='Smokers Car • Biohazard Cleaning • Odor Removal - See what we can do if your car has unwanted odors or smells'
+          image={cover.src}
+          canonical='/services/biohazard-cleaning'
+        />
         <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
           __html: `{
             "@context": "http://schema.org",

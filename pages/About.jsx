@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
+import Metatags from '../../utils/Metatags';
 
 import cover from '../public/imgs/main-cover.webp';
 
@@ -8,14 +9,12 @@ export default function About() {
   return (
     <div className='App bg-contact'>
       <Head>
-        <title>About Us / FAQ | Dirt-Less Detailing</title>
-        <meta property="og:title" content="About Us / FAQ | Dirt-Less Detailing" />
-        <meta name="description" content="Find out a little more about us here, and check out our FAQ for to get answers to our most frequently asked questions." />
-        <meta property="og:description" content="Find out a little more about us here, and check out our FAQ for to get answers to our most frequently asked questions." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.dirtlessdetailing.com/About" />
-        <meta property="og:image" content={cover.src} />
-        <link rel="canonical" href="https://www.dirtlessdetailing.com/About" />
+        <Metatags
+          title='About Us / FAQ | Dirt-Less Detailing'
+          description='Find out a little more about us here, and check out our FAQ for to get answers to our most frequently asked questions.'
+          image={cover.src}
+          canonical='/About'
+        />
         <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
           __html: `{
             "@context": "https://schema.org/",

@@ -1,8 +1,10 @@
 import Image from 'next/image';
 import Head from 'next/head';
+import Metatags from '../../utils/Metatags';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 import { BiLinkExternal } from 'react-icons/bi';
+import Metatags from '../../utils/Metatags';
 
 import cover from '../../public/imgs/pageimgs/interior/fullIntExCover.webp';
 import serviceImage from '../../public/imgs/pageimgs/interior/driverseatBA.webp';
@@ -37,14 +39,12 @@ export default function FullIntEx() {
   return (
     <section className='service-content-container'>
       <Head>
-        <title>Full Interior Cleaning | Dirt-Less Detailing</title>
-        <meta property="og:title" content="Full Interior Cleaning | Dirt-Less Detailing" />
-        <meta name="description" content="Our Full Interior cleaning is the most sought after service, and for good reason, it will completely renew your cars interior!" />
-        <meta property="og:description" content="Our Full Interior cleaning is the most sought after service, and for good reason, it will completely renew your cars interior!" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.dirtlessdetailing.com/services/full-interior-detail" />
-        <meta property="og:image" content={cover.src} />
-        <link rel="canonical" href="https://www.dirtlessdetailing.com/services/full-interior-detail" />
+        <Metatags
+          title='Full Interior Cleaning | Dirt-Less Detailing'
+          description='Our Full Interior cleaning is the most sought after service, and for good reason, it will completely renew your cars interior!'
+          image={cover.src}
+          canonical='/services/full-interior-detail'
+        />
         <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
           __html: `{
             "@context": "http://schema.org",

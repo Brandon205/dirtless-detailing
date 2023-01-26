@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import Image from 'next/image';
 import Head from 'next/head';
+import Metatags from '../../utils/Metatags';
 
 import PopularServices from '../utils/PopularServices';
 import OtherServices from '../utils/OtherServices';
@@ -30,18 +31,13 @@ export default function Home() {
     return (
         <div className="App">
             <Head>
-                <title>Bonney Lakes Auto Detailing & Ceramic Coating Specialists</title>
-                <meta property="og:title" content="Bonney Lakes Auto Detailing & Ceramic Coating Specialists" />
-                <meta name="description" content="Bonney Lakes top choice for Ceramic Coating, Paint Correction, and all of your auto detailing needs! Contact us to schedule your appointment today!" />
-                <meta property="og:description" content="Bonney Lakes top choice for Ceramic Coating, Paint Correction, and all of your auto detailing needs! Contact us to schedule your appointment today!" />
-                <meta property="url" content="https://www.dirtlessdetailing.com/" />
-                <meta property="og:url" content="https://www.dirtlessdetailing.com/" />
-                <meta name="site_name" content="Dirt-Less Detailing" />
                 <meta property="og:site_name" content="Dirt-Less Detailing" />
-                <meta name="type" content="website" />
-                <meta property="og:type" content="website" />
-                <meta property="og:image" content={cover.src} />
-                <link rel="canonical" href="https://www.dirtlessdetailing.com/" />
+                <Metatags
+                    title='Bonney Lakes Auto Detailing & Ceramic Coating Specialists'
+                    description='Bonney Lakes top choice for Ceramic Coating, Paint Correction, and all of your auto detailing needs! Contact us to schedule your appointment today!'
+                    image={cover.src}
+                    canonical='/'
+                />
                 <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
                     __html: `{
                         "@context": "https://schema.org/",

@@ -1,9 +1,10 @@
-import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
+import Metatags from '../../utils/Metatags';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 import { FaMapMarkerAlt } from 'react-icons/fa';
+import Metatags from '../../utils/Metatags';
 
 import { FaCar } from 'react-icons/fa';
 import { BiCar, BiLinkExternal } from 'react-icons/bi';
@@ -23,14 +24,12 @@ export default function ExtCoatings() {
     return (
         <section className="service-content-container bg-contact">
             <Head>
-                <title>Exterior Ceramic Coatings | Dirt-Less Detailing</title>
-                <meta property="og:title" content="Exterior Ceramic Coatings | Dirt-Less Detailing" />
-                <meta name="description" content="Get a professionally installed Ceramic Coating through Dirt-Less Detailing to protect your vehicle from the always changing Washington weather." />
-                <meta property="og:description" content="Get a professionally installed Ceramic Coating through Dirt-Less Detailing to protect your vehicle from the always changing Washington weather." />
-                <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://www.dirtlessdetailing.com/services/exterior-ceramic-coating" />
-                <meta property="og:image" content={cover.src} />
-                <link rel="canonical" href="https://www.dirtlessdetailing.com/services/exterior-ceramic-coating" />
+                <Metatags
+                    title='Exterior Ceramic Coatings | Dirt-Less Detailing'
+                    description='Get a professionally installed Ceramic Coating through Dirt-Less Detailing to protect your vehicle from the always changing Washington weather.'
+                    image={cover.src}
+                    canonical='/services/exterior-ceramic-coating'
+                />
                 <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
                     __html: `{
                         "@context": "http://schema.org",
