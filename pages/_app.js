@@ -193,13 +193,13 @@ export default function MyApp({ Component, pageProps }) {
                 <div className="footer-content-card">
                     <h3>CERAMIC COATINGS</h3>
                     <a href="/services/exterior-ceramic-coating" className='footer-link'>Exterior Ceramic Coating</a>
-                    <a href="/services/interior-ceramic-coating" className='footer-link'>Interior Coating</a>
+                    <a href="/services/interior-ceramic-coating" className='footer-link'>Interior Ceramic Coating</a>
                 </div>
                 <div className="footer-content-card">
                     <h3>INTERIOR</h3>
                     <a href="/services/full-interior-detail" className='footer-link'>Full Interior Cleaning</a>
-                    <a href="/services/interior-exterior-detailing-combo" className='footer-link'>Interior + Exterior Combo</a>
                     <a href="/services/biohazard-cleaning" className='footer-link'>Smoke / Biohazard / Mold Removal</a>
+                    <a href="/services/interior-exterior-detailing-combo" className='footer-link'>Interior + Exterior Combo</a>
                 </div>
                 <div className="footer-content-card">
                     <h3>EXTERIOR</h3>

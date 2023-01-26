@@ -32,8 +32,8 @@ export default function Home() {
             <Head>
                 <title>Bonney Lakes Auto Detailing & Ceramic Coating Specialists</title>
                 <meta property="og:title" content="Bonney Lakes Auto Detailing & Ceramic Coating Specialists" />
-                <meta name="description" content="Bonney lakes top choice for ceramic coating, paint correction, and all of your auto detailing needs! Contact us to schedule your appointment today." />
-                <meta property="og:description" content="Bonney lakes top choice for ceramic coating, paint correction, and all of your auto detailing needs! Contact us to schedule your appointment today." />
+                <meta name="description" content="Bonney Lakes top choice for Ceramic Coating, Paint Correction, and all of your auto detailing needs! Contact us to schedule your appointment today!" />
+                <meta property="og:description" content="Bonney Lakes top choice for Ceramic Coating, Paint Correction, and all of your auto detailing needs! Contact us to schedule your appointment today!" />
                 <meta property="url" content="https://www.dirtlessdetailing.com/" />
                 <meta property="og:url" content="https://www.dirtlessdetailing.com/" />
                 <meta name="site_name" content="Dirt-Less Detailing" />

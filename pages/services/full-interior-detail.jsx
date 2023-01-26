@@ -96,8 +96,8 @@ export default function FullIntEx() {
                 <div className="text-left">
                   <h2 className='text-large'>Professional Interior Detailing</h2>
                   <p>The goal of the Full Interior Cleaning package is to restore your interior to its best condition. Your carpet, seats, floor mats, plastics, windows, and all other interior fixtures will be meticulously cleaned.</p>
-                  <p>If it can be cleaned, we'll clean it. Many stains may be more difficult or may not come out all of the way. This all depends on the type of stain, how long it's been sitting, and the material, many stains won't come out all of the way.</p>
-                  <p>Taking us by surprise is difficult. Please don't think that your interior is too dirty. We've seen hundreds of different interiors and have all the necessary tools to attempt to remove any and all.</p>
+                  <p>While we will attempt to remove 100% of stains many stains could prove to be more challenging to remove or might not be completely removed. Some won't completely disappear depending on the kind of stain, how long it has been sitting, and the material the stain is on. </p>
+                  <p>Taking us by surprise is difficult. Please don't think that your interior is too dirty. We've seen hundreds of different interiors and have all the necessary tools to attempt to remove any kind of stain or mess.</p>
                   <p>Make it a <a href='/services/interior-exterior-detailing-combo' className='aside-link'>Combo</a> deal by booking with a Premium Dirt-Less Wash, and get an <a href='/services/add-ons#engine' className='aside-link'>Engine Bay</a> cleaning on the house!</p>
                 </div>
                 <div className='service-image'>
