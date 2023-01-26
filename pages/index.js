@@ -31,6 +31,7 @@ export default function Home() {
     return (
         <div className="App">
             <Head>
+                <title>Bonney Lakes Auto Detailing & Ceramic Coating Specialists</title>
                 <meta property="og:site_name" content="Dirt-Less Detailing" />
                 <Metatags
                     title='Bonney Lakes Auto Detailing & Ceramic Coating Specialists'
