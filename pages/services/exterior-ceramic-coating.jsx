@@ -4,7 +4,6 @@ import Metatags from '../../utils/Metatags';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 import { FaMapMarkerAlt } from 'react-icons/fa';
-import Metatags from '../../utils/Metatags';
 
 import { FaCar } from 'react-icons/fa';
 import { BiCar, BiLinkExternal } from 'react-icons/bi';

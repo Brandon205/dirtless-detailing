@@ -4,7 +4,6 @@ import Metatags from '../../utils/Metatags';
 import { BiLinkExternal } from 'react-icons/bi';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
-import Metatags from '../../utils/Metatags';
 
 import cover from '../../public/imgs/DLWashCover.webp';
 import serviceImage from '../../public/imgs/pageimgs/exterior/IMG_20211103_105903.jpg';

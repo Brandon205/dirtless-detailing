@@ -4,7 +4,6 @@ import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
-import Metatags from '../../utils/Metatags';
 
 import { BiLinkExternal } from 'react-icons/bi';
 import { GiCarSeat, GiRolledCloth, GiSpill } from 'react-icons/gi';

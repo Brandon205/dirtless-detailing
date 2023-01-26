@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import Image from 'next/image';
 import Head from 'next/head';
-import Metatags from '../../utils/Metatags';
+import Metatags from '../utils/Metatags';
 
 import PopularServices from '../utils/PopularServices';
 import OtherServices from '../utils/OtherServices';

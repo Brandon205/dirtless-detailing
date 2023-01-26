@@ -5,7 +5,6 @@ import ReactPlayer from 'react-player/lazy';
 import { BiLinkExternal } from 'react-icons/bi';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
-import Metatags from '../../utils/Metatags';
 
 import cover from '../../public/imgs/PDLWashCover.webp';
 

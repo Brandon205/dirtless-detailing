@@ -4,7 +4,6 @@ import Metatags from '../../utils/Metatags';
 import { BiLinkExternal } from 'react-icons/bi';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
-import Metatags from '../../utils/Metatags';
 
 import cover from '../../public/imgs/pageimgs/exterior/IMG_20220121_153440.jpg';
 import exterior from '../../public/imgs/pageimgs/exterior/speed3exterior.jpg';
