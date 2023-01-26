@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
+import Metatags from '../../utils/Metatags';
 import { imagery } from '../../public/imgs/pageimgs/exterior/index';
 
 import cover from '../../public/imgs/pageimgs/exterior/IMG_20210429_202336.jpg';
@@ -10,14 +11,12 @@ export default function PaintCorrectionGallery() {
   return (
     <section className='gallery-content-container'>
       <Head>
-        <title>Car Wash Gallery | Dirt-Less Detailing</title>
-        <meta property="og:title" content="Car Wash Gallery | Dirt-Less Detailing" />
-        <meta name="description" content="Take a look at our showcase of our exterior wash services to get a preview of what we're capable of doing to your car, no matter the current condition!" />
-        <meta property="og:description" content="Take a look at our showcase of our exterior wash services to get a preview of what we're capable of doing to your car, no matter the current condition!" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.dirtlessdetailing.com/gallery/dirtless-wash-gallery" />
-        <meta property="og:image" content={cover.src} />
-        <link rel="canonical" href="https://www.dirtlessdetailing.com/gallery/dirtless-wash-gallery" />
+        <Metatags
+          title='Car Wash Gallery | Dirt-Less Detailing'
+          description='Take a look at our showcase of our exterior wash services to get a preview of what we are capable of doing to your car, no matter the current condition!'
+          image={cover.src}
+          canonical='/gallery/dirtless-wash-gallery'
+        />
       </Head>
       <div className="cover">
         <Image src={cover} alt="Vehicle after a Dirt-Less Wash" layout="fill" objectFit='cover' priority />

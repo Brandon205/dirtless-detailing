@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
+import Metatags from '../../utils/Metatags';
 import { imagery } from '../../public/imgs/pageimgs/engine/index';
 
 import cover from '../../public/imgs/engineGallery.webp';
@@ -9,14 +10,12 @@ export default function PaintCorrectionGallery() {
   return (
     <section className='gallery-content-container'>
       <Head>
-        <title>Engine Bay Gallery | Dirt-Less Detailing</title>
-        <meta property="og:title" content="Engine Bay Gallery | Dirt-Less Detailing" />
-        <meta name="description" content="Check out photos from our engine bay cleaning service here. This is a great showcase of the final product our washing procedure creates." />
-        <meta property="og:description" content="Check out photos from our engine bay cleaning service here. This is a great showcase of the final product our washing procedure creates." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.dirtlessdetailing.com/gallery/engine-bay-gallery" />
-        <meta property="og:image" content={cover.src} />
-        <link rel="canonical" href="https://www.dirtlessdetailing.com/gallery/engine-bay-gallery" />
+        <Metatags
+          title='Engine Bay Gallery | Dirt-Less Detailing'
+          description='Check out photos from our engine bay cleaning service here. This is a great showcase of the final product our washing procedure creates.'
+          image={cover.src}
+          canonical='/gallery/engine-bay-gallery'
+        />
       </Head>
       <div className="cover">
         <Image src={cover} alt="Vehicle after a Engine Bay Cleaning" layout="fill" objectFit='cover' priority />

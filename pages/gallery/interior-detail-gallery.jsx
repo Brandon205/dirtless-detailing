@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
+import Metatags from '../../utils/Metatags';
 import { imagery } from '../../public/imgs/pageimgs/interior/index';
 
 import cover from '../../public/imgs/pageimgs/interior/IMG_20200702_155834.jpg';
@@ -9,14 +10,12 @@ export default function FullIntGallery() {
   return (
     <section className='gallery-content-container'>
       <Head>
-        <title>Full Interior Gallery | Dirt-Less Detailing</title>
-        <meta property="og:title" content="Full Interior Gallery | Dirt-Less Detailing" />
-        <meta name="description" content="Our Full Interior Gallery shows off some of our hard work cleaning vehicle interiors. We've cleaned everything from spilled drinks to crumbs everywhere!" />
-        <meta property="og:description" content="Our Full Interior Gallery shows off some of our hard work cleaning vehicle interiors. We've cleaned everything from spilled drinks to crumbs everywhere!" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.dirtlessdetailing.com/gallery/interior-detail-gallery" />
-        <meta property="og:image" content={cover.src} />
-        <link rel="canonical" href="https://www.dirtlessdetailing.com/gallery/interior-detail-gallery" />
+        <Metatags
+          title='Full Interior Gallery | Dirt-Less Detailing'
+          description="Our Full Interior Gallery shows off some of our hard work cleaning vehicle interiors. We've cleaned everything from spilled drinks to crumbs everywhere!"
+          image={cover.src}
+          canonical='/gallery/interior-detail-gallery'
+        />
       </Head>
       <div className="cover">
         <Image src={cover} alt="Vehicle after a Full Interior Cleaning" layout="fill" objectFit='cover' priority />

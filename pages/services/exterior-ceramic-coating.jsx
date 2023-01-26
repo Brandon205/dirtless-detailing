@@ -156,7 +156,8 @@ export default function ExtCoatings() {
                                 <p>Your car must first be correctly prepared and corrected using one of our <a href="/detailing/correction" className='aside-link'>Paint Correction</a> services before the coating is applied. You won't get the full range of advantages that a ceramic coating can provide if we apply it without doing the necessary preparation work. </p>
                                 <p>For this reason, you should hire a qualified installer of ceramic coating, like us. Additionally, if it's not applied correctly, your car will have a lot of smudges in the end. We refer to these as "high spots." You'll notice this if the coating was improperly applied and allowed to dry for an excessive amount of time without being removed.</p>
                                 <p>Generally speaking, the harder it is to install a coating the more durable it is. One year vs five years, for example. You must also be aware of the weather factors because they might significantly affect the installation process. </p>
-                                <p>When it's hot, cold, or humid, coatings respond differently. If you've spent much time in Bonney Lake, you've probably noticed that the weather is always fluctuating. We complete every coating installation in our shop, where we have complete control over the working environment. </p>
+                                <p>When it's hot, cold, or humid, coatings respond differently. If you've spent much time in Bonney Lake, you've probably noticed that the weather is always fluctuating.</p>
+                                <p><span className="special-package">NOTICE:</span>  We complete every coating installation in our shop, where we have complete control over the working environment to provide the best end results. </p>
                             </div>
                             <div className="service-image">
                                 <Zoom>
