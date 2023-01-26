@@ -111,10 +111,10 @@ export default function SinglePC() {
               <div className="service-explain">
                 <div className="text-left">
                   <h2 className='text-large mt-0'>Single Stage Paint Correction</h2>
-                  <p>Have you looked at your paint under the sun and saw a web of swirls and scratches?</p>
-                  <p>These are called swirl marks. How did they get there in the first place? The biggest culprit is usually improper washing and drying methods. Automatic car washes and using low-quality towels or wash mitts can all lead to abrading your paint and leaving imperfections.</p>
-                  <p>With our <a href='/services/single-stage-correction' className='aside-link'>Single Stage Paint Correction</a> service, you can remove 60% to 70% of imperfections to reveal a great shine. This is a fantastic service for vehicles that you want to restore their shine without going “all in” like we do with our 2 stage paint correction service.</p>
-                  <p>Unlike some of our other services that can be done in just a few hours, this service requires more time and better lighting to achieve the proper results. This is why we require you to drop off the vehicle at our <a href='/correction/bonney-lake' className='aside-link'>shop</a> location.</p>
+                  <p>Have you every noticed a web of scratches and swirls in your paint when looking at it closely?</p>
+                  <p>They are referred to as swirl marks. How did they first get there? The main culprit is typically using inefficient washing and drying techniques. Automatic car washes, the use of cheap towels or wash mitts, and other factors can all erode your paint and leave blemishes. </p>
+                  <p>With this Single Stage Paint Correction service, you can remove 60% to 70% of imperfections to reveal a great shine. If you want to restore the shine of your car without going "all in" like we do with our <a href="/services/two-stage-correction" className='aside-link'>Two Stage Paint Correction</a> service, this is a perfect service for you. </p>
+                  <p>Unlike most of our other services that are mobile and can be done in just a few hours, this service requires more time and better lighting to achieve the proper results. This is why we require you to drop off the vehicle at our <a href='/correction/bonney-lake' className='aside-link'>shop location</a> in Bonney Lake.</p>
                   <p>Want to compare this to our Two Stage Paint Correction? Check out our <a href='/detailing/correction' className='aside-link'>comparison</a> page for more details.</p>
                 </div>
                 <div className='service-image'>

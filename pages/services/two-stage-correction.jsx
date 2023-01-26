@@ -97,7 +97,7 @@ export default function TwoPC() {
       </div>
       <div className="servicepage-header">
         <h1>Two Stage Paint Correction</h1>
-        <h2 className='page-subheading'>Go the extra mile and remove years of scratches and swirls with our 2 stage paint correction service.</h2>
+        <h2 className='page-subheading'>Go the extra mile and remove years of scratches and swirls with our Two Stage Paint Correction service.</h2>
         <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
         <p className='inline text-small'>
           Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
@@ -111,9 +111,9 @@ export default function TwoPC() {
               <div className="service-explain">
                 <div className="text-left">
                   <h2 className='text-large mt-0'>Two Stage Paint Correction Overview</h2>
-                  <p>Our <a href="/services/two-stage-correction" className='aside-link'>Two Stage Paint Correction</a> service is aimed to remove as many swirls, scratches, and imperfections from your paint as possible. This is where we do an intense cutting and polishing step, called a 2-step correction, to get the most gloss and clarity from your paintwork.</p>
-                  <p>Depending on the condition, whether the vehicle is new or not, some scratches won't come all the way out. It could be the scratches are too deep to remove safely, or the clear coat itself is thinning out. (We'll take paint measurements before we start.)</p>
-                  <p>This is where we'll make the call on what we can safely remove from your paint. It's not just about removing as many imperfections as possible. It's also knowing when enough is enough to keep the integrity of the paint healthy.</p>
+                  <p>We strive to eliminate as many swirls, scratches, and other flaws from your paint as we can with our two-stage paint correction process. To maximize the shine and clarity of your paintwork, we perform a 2-step correction at this point, which involves intensive cutting and polishing step.</p>
+                  <p>Depending on the state of your vehicles paint, age, and quality certain scratches may not completely disappear. Either the clear coat is thinning away too much or the scratches may be too deep to properly remove. (Before we begin, we'll measure the paint.)</p>
+                  <p>We'll decide from here what we can safely remove from your paint. It's not only about getting rid of as many flaws as you can. In order to maintain the quality of the paint, it's also important to determine when enough is enough.</p>
                 </div>
                 <div className='service-image'>
                   <Zoom>
@@ -130,9 +130,9 @@ export default function TwoPC() {
                 </div>
                 <div className="text-left">
                   <h2 className="text-large mt-0">Maintenance Commitment</h2>
-                  <p>Our Level 2 paint correction is a commitment that you are making to your vehicle. If you'd like to keep the shine on your paint, you have to properly maintain the vehicle after the service is complete. If you don't properly wash and dry the vehicle, you can easily put all those swirls and scratches back into your paint after just a few washes.</p>
-                  <p>This is one of our most involved services that we offer so we'll need to perform it at our <a href='/correction/bonney-lake' className='aside-link'>shop</a> location in Bonney Lake.</p>
-                  <p>Want to compare this to our Single Stage Paint Correction? Check out our <a href='/detailing/correction' className='aside-link'>comparison</a> page for more details.</p>
+                  <p>You are making a commitment at this point to your vehicle by getting our Level 2 paint correction. After the service is over, you must carefully maintain the vehicle if you want to keep the shine on your paint. After just a few washes, you may easily bring all those swirls and scratches back into your paint if you don't correctly wash and dry the car.</p>
+                  <p><span className="special-package">NOTICE:</span> This is one of our most involved services that we offer, so we'll need to perform it at our <a href='/correction/bonney-lake' className='aside-link'>shop</a> location in Bonney Lake.</p>
+                  <p>Want to compare this to our Single Stage Paint Correction? Check out our <a href='/detailing/correction' className='aside-link'>comparison</a> page for more details on both services.</p>
                 </div>
               </div>
             </main>
