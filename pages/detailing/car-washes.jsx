@@ -16,7 +16,7 @@ import ext8 from '../../public/imgs/pageimgs/exterior/IMG_20200702_101443.jpg';
 
 export default function exteriorWash() {
   return (
-    <div>
+    <div className='bg-contact'>
       <Head>
         <title>Car Wash Services | Dirt-Less Detailing</title>
         <meta property="og:title" content="Car Wash Services | Dirt-Less Detailing" />
@@ -275,10 +275,10 @@ export default function exteriorWash() {
       </div>
 
       <div className='locationpage-section no-bg'>
-        <h3 className='pricing-title text-black'>Our Dirt-Less Wash Pricing</h3>
-        <strong className='pricing-subtext'>*Final pricing may vary based on your vehicle condition and size.</strong>
-        <div className="pricing-container text-black">
-          <div className="pricing-card">
+        <h3 className='pricing-title text-white'>Our Dirt-Less Wash Pricing</h3>
+        <strong className='subtext'>*Final pricing may vary based on your vehicle condition and size.</strong>
+        <div className="pricing-container text-white">
+          <div className="pricing-card text-black">
             <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Small</strong>
             <strong className='size'>Dirt-Less Wash</strong>
             <p className="pricing-price pricing-border">$75</p>
@@ -288,7 +288,7 @@ export default function exteriorWash() {
             <p className="example-vehicle pricing-border">Most Cars</p>
             <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
           </div>
-          <div className="pricing-card">
+          <div className="pricing-card text-black">
             <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Medium</strong>
             <strong className='size'>Dirt-Less Wash</strong>
             <p className="pricing-price pricing-border">$100</p>
@@ -298,7 +298,7 @@ export default function exteriorWash() {
             <p className="example-vehicle pricing-border">Most Wagons</p>
             <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
           </div>
-          <div className="pricing-card">
+          <div className="pricing-card text-black">
             <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Large</strong>
             <strong className='size'>Dirt-Less Wash</strong>
             <p className="pricing-price pricing-border">$125</p>
@@ -308,7 +308,7 @@ export default function exteriorWash() {
             <p className="example-vehicle pricing-border">Some Trucks</p>
             <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
           </div>
-          <div className="pricing-card">
+          <div className="pricing-card text-black">
             <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Extra Large</strong>
             <strong className='size'>Dirt-Less Wash</strong>
             <p className="pricing-price pricing-border">$150</p>

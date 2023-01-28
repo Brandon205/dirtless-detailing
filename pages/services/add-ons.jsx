@@ -14,7 +14,7 @@ import debadge from '../../public/imgs/pageimgs/exterior/IMG_20220709_124846.jpg
 
 export default function Addons() {
   return (
-    <section className='service-content-container'>
+    <section className='service-content-container bg-contact'>
       <Head>
         <title>Dirt-Less Add-ons | Dirt-Less Detailing</title>
         <Metatags

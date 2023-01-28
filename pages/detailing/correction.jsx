@@ -17,7 +17,7 @@ import ext7 from '../../public/imgs/pageimgs/paintCorrection/IMG_20220727_091237
 
 export default function correction() {
     return (
-        <div>
+        <div className='bg-contact'>
             <Head>
                 <title>Paint Correction Services | Dirt-Less Detailing</title>
                 <meta property="og:title" content="Paint Correction Services | Dirt-Less Detailing" />
@@ -256,10 +256,10 @@ export default function correction() {
             </div>
 
             <div>
-                <h3 className='pricing-title text-black'>Our Paint Correction Pricing</h3>
-                <strong className='pricing-subtext'>*Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</strong>
-                <div className="pricing-container text-black">
-                    <div className="pricing-card">
+                <h3 className='pricing-title text-white'>Our Paint Correction Pricing</h3>
+                <strong className='subtext'>*Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</strong>
+                <div className="pricing-container text-white">
+                    <div className="pricing-card text-black">
                         <strong className="size" style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Small</strong>
                         <strong className='size'>Single Stage</strong>
                         <p className="pricing-price pricing-border">$300- $450</p>
@@ -269,7 +269,7 @@ export default function correction() {
                         <p className="example-vehicle pricing-border">Single/Extended Cabs</p>
                         <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                     </div>
-                    <div className="pricing-card">
+                    <div className="pricing-card text-black">
                         <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Medium</strong>
                         <strong className='size'>Single Stage</strong>
                         <p className="pricing-price pricing-border">$450- $600</p>
@@ -279,7 +279,7 @@ export default function correction() {
                         <p className="example-vehicle pricing-border">Smaller SUV's</p>
                         <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                     </div>
-                    <div className="pricing-card">
+                    <div className="pricing-card text-black">
                         <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Large</strong>
                         <strong className='size'>Single Stage</strong>
                         <p className="pricing-price pricing-border">$600- $850</p>
@@ -293,7 +293,7 @@ export default function correction() {
             </div>
 
             <h4 className='text-large'>Visual example of different paint defects:</h4>
-            <strong className='pricing-subtext'>This gives an example of why deeper scratches aren't removable without repainting.</strong>
+            <strong className='subtext'>This gives an example of why deeper scratches aren't removable without repainting.</strong>
             <div className='examples-container'>
                 <div className='example-img'>
                     <Zoom>
@@ -346,7 +346,7 @@ export default function correction() {
 
             <br className="extra-space" />
 
-            <div>
+            <div style={{width: 80 + 'vw', margin: '0 auto'}}>
                 <strong className='text-medium'>We'll help customers from all over get a paint correction on their vehicle, however, most of our customers come to our shop from these areas:</strong>
                 <div style={{ display: 'grid', placeItems: 'center' }}>
                     <ul className='cities-ul'>

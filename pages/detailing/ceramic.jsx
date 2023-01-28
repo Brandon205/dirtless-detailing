@@ -20,7 +20,7 @@ import ext8 from '../../public/imgs/pageimgs/ceramic/fenderDrops.jpg';
 
 export default function ceramic() {
     return (
-        <div>
+        <div className='bg-contact'>
             <Head>
                 <title>Kenzo Graphene Ceramic Coatings | Dirt-Less Detailing</title>
                 <meta property="og:title" content="Kenzo Graphene Ceramic Coatings | Dirt-Less Detailing" />
@@ -127,7 +127,7 @@ export default function ceramic() {
 
                 <h2 className='text-large'>The benefits you get with a coating:</h2>
                 <p className='text-left'>There are a lot of coating companies that make some pretty big claims of what a coating can do. Although there is some truth to these claims, we don't like to oversell the coatings capabilities.</p>
-                <ul className='cities-ul'>
+                <ul className='coating-points'>
                     <li>Produces the most durable protection possible that lasts 5 years to a lifetime (With proper maintenance through us).</li>
                     <li>You only need to apply it once. (Not every couple of months like wax).</li>
                     <li>Creates a deep level of gloss that is not possible with other forms of protection like wax or sealant.</li>
@@ -167,10 +167,10 @@ export default function ceramic() {
             </main>
 
             <div className='only-bg'>
-                <h3 className='pricing-title text-black'>Our Ceramic Coating Pricing</h3>
-                <strong className='pricing-subtext'>*Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</strong>
-                <div className="pricing-container text-black">
-                    <div className="pricing-card">
+                <h3 className='pricing-title text-white'>Our Ceramic Coating Pricing</h3>
+                <strong className='subtext'>*Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</strong>
+                <div className="pricing-container text-white">
+                    <div className="pricing-card text-black">
                         <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Small</strong>
                         <strong className='size'>Protect</strong>
                         <p className="pricing-price pricing-border">$1,000</p>
@@ -180,7 +180,7 @@ export default function ceramic() {
                         <p className="example-vehicle pricing-border">Single/Extended Cabs</p>
                         <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                     </div>
-                    <div className="pricing-card">
+                    <div className="pricing-card text-black">
                         <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Medium</strong>
                         <strong className='size'>Protect</strong>
                         <p className="pricing-price pricing-border">$1,200</p>
@@ -190,7 +190,7 @@ export default function ceramic() {
                         <p className="example-vehicle pricing-border">Smaller SUV's</p>
                         <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                     </div>
-                    <div className="pricing-card">
+                    <div className="pricing-card text-black">
                         <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Large</strong>
                         <strong className='size'>Protect</strong>
                         <p className="pricing-price pricing-border">$1,400</p>
@@ -203,16 +203,16 @@ export default function ceramic() {
                 </div>
                 
                 <div>
-                    <h3 className='pricing-title text-black'>Our Interior Coating Pricing</h3>
-                    <strong className='pricing-subtext'>*Pricing does NOT include an <a href="/services/full-interior-detail" className='aside-link'>Interior Cleaning</a>, which you will need to add to get a coating.</strong>
-                    <div className='pricing-container text-black'>
-                        <div className="pricing-card">
+                    <h3 className='pricing-title text-white'>Our Interior Coating Pricing</h3>
+                    <strong className='subtext'>*Pricing does NOT include an <a href="/services/full-interior-detail" className='aside-link'>Interior Cleaning</a>, which you will need to add to get a coating.</strong>
+                    <div className='pricing-container text-white'>
+                        <div className="pricing-card text-black">
                             <strong className='size'>Fabric Coating</strong>
                             <p className="pricing-price pricing-border">$75</p>    
                             <p className="example-vehicle pricing-border">Any Size Vehicle</p>
                             <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                         </div>
-                        <div className="pricing-card">
+                        <div className="pricing-card text-black">
                             <strong className='size'>Leather Coating</strong>
                             <p className="pricing-price pricing-border">$150</p>
                             <p className="example-vehicle pricing-border">Any Size Vehicle</p>
@@ -229,25 +229,25 @@ export default function ceramic() {
                     <h3 className='text-large'>Exterior Ceramic Coating FAQ</h3>
                     <ul className='faq-ul'>
                         <li className='faq-li'>How long does it last?</li>
-                        <li className='faq-p text-black'>The paint coating should last 5 years, 50,000 miles, or a Lifetime<span className='special-package'>*</span> with our warranty. The coating on any trim, glass, lights, or wheels will last 1 year approximately.</li>
+                        <li className='faq-p text-white'>The paint coating should last 5 years, 50,000 miles, or a Lifetime<span className='special-package'>*</span> with our warranty. The coating on any trim, glass, lights, or wheels will last 1 year approximately.</li>
 
                         <li className='faq-li'>Can I still go through car washes?</li>
-                        <li className='faq-p text-black'>If you want to keep the ceramic coat in good condition and have it last as long as possible, you won't want to go through any car washes even touch-less ones.</li>
+                        <li className='faq-p text-white'>If you want to keep the ceramic coat in good condition and have it last as long as possible, you won't want to go through any car washes even touch-less ones.</li>
 
                         <li className='faq-li'>How should I wash my car then?</li>
-                        <li className='faq-p text-black'>For washing your coated vehicle you have a couple of options. Hand washing with our recommended products and techniques, or you can simply schedule monthly maintenance through us!</li>
+                        <li className='faq-p text-white'>For washing your coated vehicle you have a couple of options. Hand washing with our recommended products and techniques, or you can simply schedule monthly maintenance through us!</li>
 
                         <li className='faq-li'>How does the 5 year warranty work?</li>
-                        <li className='faq-p text-black'>If we do our yearly maintenance on the vehicle we guarantee that the ceramic coat will last 5 years or more.</li>
+                        <li className='faq-p text-white'>If we do our yearly maintenance on the vehicle we guarantee that the ceramic coat will last 5 years or more.</li>
 
                         <li className='faq-li'>How does the Lifetime warranty work?</li>
-                        <li className='faq-p text-black'>Your vehicles paint coating is guaranteed for life as long as you are on our monthly maintenance schedule. If you ever wish to cancel monthly maintenance, the remainder of your 5 year 50,000 mile warranty you had before takes effect.</li>
+                        <li className='faq-p text-white'>Your vehicles paint coating is guaranteed for life as long as you are on our monthly maintenance schedule. If you ever wish to cancel monthly maintenance, the remainder of your 5 year 50,000 mile warranty you had before takes effect.</li>
                     </ul>
                 </div>
             </div>
 
             <h4 className='text-large'>Informational photos from IGL:</h4>
-            <strong className='pricing-subtext'>Check out more from our Ceramic Coating provider <a href='https://iglcoatingsusa.com/' target='_blank' rel='noopener' className='aside-link'>IGL</a>.</strong>
+            <strong className='subtext'>Check out more from our Ceramic Coating provider <a href='https://iglcoatingsusa.com/' target='_blank' rel='noopener' className='aside-link'>IGL</a>.</strong>
             <div className='examples-container'>
                 <div className='example-img'>
                     <Zoom>
