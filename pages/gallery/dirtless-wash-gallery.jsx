@@ -23,7 +23,7 @@ export default function PaintCorrectionGallery() {
         <Image src={cover} alt="Vehicle after a Dirt-Less Wash" layout="fill" objectFit='cover' priority />
       </div>
       <div className="servicepage-heading">
-        <h1>Engine Cleaning Gallery</h1>
+        <h1>Dirt-Less Wash Gallery</h1>
         <p>This is a showcase of our Dirt-Less Wash service. Take a look at our <a href="/detailing/car-washes" className='aside-link'>Car Washes</a> page for more info on the 2 exterior wash services that we offer.</p>
 
         <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
