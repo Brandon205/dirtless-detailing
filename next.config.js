@@ -11,6 +11,11 @@ const withPWA = require('next-pwa')({
           hostname: 'res.cloudinary.com',
           port: ''
         },
+        {
+          protocol: 'https',
+          hostname: 'imagedelivery.net',
+          port: ''
+        },
       ],
     },
   })

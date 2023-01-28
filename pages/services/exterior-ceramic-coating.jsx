@@ -127,7 +127,8 @@ export default function ExtCoatings() {
                             </div>
                             <div className='service-image'>
                                 <Zoom>
-                                    <Image style={{ borderRadius: 16 }} src={ext1} alt="Water beads on large surface" layout="responsive" objectFit='scale-down' placeholder='blur' />
+                                    <Image style={{ borderRadius: 16 }} src='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/68a8c346-71da-481a-aad1-7550e34bed00/public' alt="Water beads on large surface" width='50%' height='100%' objectFit="contain" layout='responsive' />
+                                    {/* <img src='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/9268170a-9ae2-41bf-5b6e-65627a7a4900/public' /> */}
                                 </Zoom>
                             </div>
                         </div>
@@ -135,7 +136,7 @@ export default function ExtCoatings() {
                         <div className="service-explain">
                             <div className="service-image">
                                 <Zoom>
-                                    <Image style={{ borderRadius: 16 }} src={ext3} alt="Small water beads area" layout="responsive" objectFit="scale-down" placeholder='blur' />
+                                    <Image style={{ borderRadius: 16 }} src='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ef9b1f71-aa91-4fb8-caee-9edb3704e900/public' alt="Small water beads area" width='50%' height='100%' objectFit="contain" layout='responsive' />
                                 </Zoom>
                             </div>
                             <div className="text-left">

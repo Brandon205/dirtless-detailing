@@ -1754,10 +1754,6 @@ hr {
     max-width: 650px;
   }
 
-  .service-main {
-    width: 70vw;
-  }
-
   .service-explain {
     flex-direction: row;
     align-items: center;
