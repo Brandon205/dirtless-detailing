@@ -2,7 +2,7 @@ export default function Metatags({title, description, image, canonical}) {
     return (
         <>
             <meta property="og:title" content={title} />
-            <meta property="description" content={description} />
+            <meta name="description" content={description} />
             <meta property="og:description" content={description} />
             <meta property="og:image" content={image} />
             <meta property="og:url" content={`https://www.dirtlessdetailing.com${canonical}`} />
