@@ -23,7 +23,8 @@ export default function OtherServices() {
             </div>
             <section className="otherservices-container">
                 <div className="service-card">
-                    <Image src={ceramicInt} alt="Vehicle after an interior coating" className='otherservices-image' layout='responsive' height={450} width={450} loading='lazy' placeholder='blur' quality={15} />
+                    {/* <Image src={ceramicInt} alt="Vehicle after an interior coating" className='otherservices-image' layout='responsive' height={450} width={450} loading='lazy' placeholder='blur' quality={15} /> */}
+                    <div className="otherservices-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3e71dbba-b8c6-4c21-7d4c-edc497331100/public')`}}></div>
                     <div className="otherservices-desc">
                         <div>
                             <a href='/services/interior-ceramic-coating' className='service-heading-link'>Interior Ceramic Coatings</a>
@@ -36,7 +37,8 @@ export default function OtherServices() {
                 </div>
 
                 <div className="service-card">
-                    <Image src={ceramicExt} alt="Large water beads after a ceramic coating" className='otherservices-image' layout='responsive' height={450} width={450} loading='lazy' placeholder='blur' quality={15} />
+                    {/* <Image src={ceramicExt} alt="Large water beads after a ceramic coating" className='otherservices-image' layout='responsive' height={450} width={450} loading='lazy' placeholder='blur' quality={15} /> */}
+                    <div className="otherservices-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a30c288d-c816-4a42-e313-d7fa80e04200/public')`}}></div>
                     <div className="otherservices-desc">
                         <div>
                             <a href='/services/exterior-ceramic-coating' className='service-heading-link'>Exterior Ceramic Coatings</a>
@@ -49,7 +51,8 @@ export default function OtherServices() {
                 </div>
 
                 <div className="service-card">
-                    <Image src={ceramicGallery} alt="Smaller water beads on side of vehicle after a ceramic coating" className='otherservices-image' layout='responsive' height={450} width={450} loading='lazy' placeholder='blur' quality={20} />
+                    {/* <Image src={ceramicGallery} alt="Smaller water beads on side of vehicle after a ceramic coating" className='otherservices-image' layout='responsive' height={450} width={450} loading='lazy' placeholder='blur' quality={20} /> */}
+                    <div className="otherservices-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c7f409bd-c823-4598-6c56-5da726d30b00/public')`}}></div>
                     <div className="otherservices-desc text-center">
                         <div>
                             <a href='/gallery/ceramic-coating-gallery' className='service-heading-link'>CERAMIC COATING GALLERY</a>
@@ -69,7 +72,8 @@ export default function OtherServices() {
 
             <section className="feature-section">
                 <div className="feature-img-container">
-                    <Image style={{ borderRadius: 16 }} src={combo} alt="Vehicle after a Combo Cleaning" loading='lazy' placeholder='blur' quality={90} />
+                    {/* <Image style={{ borderRadius: 16 }} src={combo} alt="Vehicle after a Combo Cleaning" loading='lazy' placeholder='blur' quality={90} /> */}
+                    <div className="otherservices-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3031c630-d6f2-48fc-1bb4-62844fbd5a00/public')`, height: 550 + 'px', width: 350 + 'px'}}></div>
                 </div>
                 <div className="feature-desc-area">
                     <a href="/services/interior-exterior-detailing-combo" className='service-heading-link'>Full Interior, <span className='special-package'>Engine Cleaning</span>, and Exterior Combo</a>
@@ -89,7 +93,8 @@ export default function OtherServices() {
             </div>
             <section className="otherservices-container">
                 <div className="service-card">
-                    <Image src={fullintex} alt="Vehicle after a Full Interior Cleaning" className='otherservices-image' layout='responsive' height={550} width={450} loading='lazy' placeholder='blur' quality={1} />
+                    {/* <Image src={fullintex} alt="Vehicle after a Full Interior Cleaning" className='otherservices-image' layout='responsive' height={550} width={450} loading='lazy' placeholder='blur' quality={1} /> */}
+                    <div className="otherservices-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/213e3fa9-1def-44b2-3031-1901432b9a00/public')`}}></div>
                     <div className="otherservices-desc">
                         <div>
                             <a href="/services/full-interior-detail" className='service-heading-link'>Full Interior Cleaning</a>
@@ -102,7 +107,8 @@ export default function OtherServices() {
                 </div>
 
                 <div className="service-card">
-                    <Image src={bio} alt="Vehicle before a biohazard cleaning" className='otherservices-image' layout='responsive' height={550} width={450} loading='lazy' placeholder='blur' quality={1} />
+                    {/* <Image src={bio} alt="Vehicle before a biohazard cleaning" className='otherservices-image' layout='responsive' height={550} width={450} loading='lazy' placeholder='blur' quality={1} /> */}
+                    <div className="otherservices-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b1445bc-f69e-44e8-6336-345384ea5700/public')`}}></div>
                     <div className="otherservices-desc">
                         <div>
                             <a href='/services/biohazard-cleaning' className='service-heading-link'>Biohazard Cleaning</a>
@@ -115,7 +121,8 @@ export default function OtherServices() {
                 </div>
 
                 <div className="service-card">
-                    <Image src={interiorGallery} alt="vehicle rear after an interior detail" className='otherservices-image' layout='responsive' height={550} width={450} loading='lazy' objectFit='cover' placeholder='blur' quality={1} />
+                    {/* <Image src={interiorGallery} alt="vehicle rear after an interior detail" className='otherservices-image' layout='responsive' height={550} width={450} loading='lazy' objectFit='cover' placeholder='blur' quality={1} /> */}
+                    <div className="otherservices-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7bafe41a-9d42-4916-be4b-1a1c1086d200/public')`}}></div>
                     <div className="otherservices-desc text-center">
                         <div>
                             <a href='/gallery/interior-detail-gallery' className='service-heading-link'>FULL INTERIOR GALLERY</a>

@@ -13,7 +13,6 @@ import { FaRegStar, FaMapMarkedAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-import cover from '../public/imgs/main-cover.webp';
 import kenzo from '../public/imgs/pageimgs/homepage/project.png';
 import bbbImage from '../public/imgs/pageimgs/homepage/bbb-logo-small.png';
 
@@ -36,7 +35,7 @@ export default function Home() {
                 <Metatags
                     title='Bonney Lakes Auto Detailing & Ceramic Coating Specialists'
                     description='Bonney Lakes top choice for Ceramic Coating, Paint Correction, and all of your auto detailing needs! Contact us to schedule your appointment today!'
-                    image={cover.src}
+                    image={'https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/public'}
                     canonical='/'
                 />
                 <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
@@ -44,7 +43,7 @@ export default function Home() {
                         "@context": "https://schema.org/",
                         "@type": "LocalBusiness",
                         "name": "Dirt-Less Detailing",
-                        "image": "${cover.src}",
+                        "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/public",
                         "currenciesAccepted": "USD",
                         "priceRange": "$$$",
                         "openingHours": ["Mo-Su 7:00-19:00"],
@@ -72,9 +71,7 @@ export default function Home() {
                     }`,
                 }} />
             </Head>
-            <div className="maincover">
-                <Image src={cover} layout="fill" objectFit='cover' alt="Chevrolet truck on trailer after Two Stage Paint Correction" placeholder='blur' priority />
-            </div>
+            <div className="maincover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/public')`}}></div>
             <header className="home-header">
                 <div className='landing-div'>
                     <h1 className='title-top'>Your Bonney Lake <br /><span className='title-bottom'>Detailing & Ceramic Coating Specialists</span></h1>

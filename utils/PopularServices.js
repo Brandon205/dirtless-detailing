@@ -1,11 +1,6 @@
 import React from 'react';
-import Image from 'next/image';
 
 import { BsCheck2Circle } from 'react-icons/bs';
-
-import interior from '../public/imgs/pageimgs/interior/driverseatBA.webp';
-import dlWash from '../public/imgs/pageimgs/exterior/IMG_20220929_155119.jpg';
-import paint from '../public/imgs/pageimgs/paintCorrection/paintcorrectionBA.webp';
 
 export default function PopularServices() {
     return (
@@ -15,9 +10,8 @@ export default function PopularServices() {
                     <a href='/services/full-interior-detail' className="service-heading-link popular-service-title">Full Interior Cleaning</a>
                     <p className="price">Starting at: <span>$200</span></p>
                 </div>
-                <div className='popular-img'>
-                    <Image style={{ borderRadius: '1rem 1rem 0 0' }} src={interior} alt="Car interior before and after" layout='fill' objectFit='cover' loading='lazy' quality={25} />
-                </div>
+                <div className="popular-img" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4f5cb5ee-45a7-4123-acaf-586335420600/public')`}}></div>
+
 
                 <div className="popular-desc">
                     <ul className="checklist">
@@ -60,9 +54,8 @@ export default function PopularServices() {
                     <a href='/services/premium-dirtless-wash' className="service-heading-link popular-service-title">Full Interior + Exterior + Engine Bay Combo</a>
                     <p className="price">Starting at: <span>$350</span></p>
                 </div>
-                <div className="popular-img">
-                    <Image style={{ borderRadius: '1rem 1rem 0 0' }} src={dlWash} alt="Car exterior after Dirt-Less Wash and full interior" layout='fill' objectFit='cover' loading='lazy' quality={25} />
-                </div>
+                <div className="popular-img" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/de5ece74-66af-46cb-8460-7e0246257b00/public')`}}></div>
+
 
                 <div className="popular-desc">
                     <ul className="checklist">
@@ -105,9 +98,7 @@ export default function PopularServices() {
                     <a href='/services/single-stage-correction' className="service-heading-link popular-service-title">Ceramic Coating <br />(Protect Package)</a>
                     <p className="price">Starting at: <span>$1,000</span></p>
                 </div>
-                <div className="popular-img">
-                    <Image style={{ borderRadius: '1rem 1rem 0 0' }} src={paint} alt="Before and after a Paint Correction" layout='fill' objectFit='cover' loading='lazy' quality={25} />
-                </div>
+                <div className="popular-img" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7c93452e-cf47-4898-a618-e427e19a0e00/public')`}}></div>
 
                 <div className="popular-desc">
                     <ul className="checklist">

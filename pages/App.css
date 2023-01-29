@@ -332,6 +332,9 @@ header h1 {
 .maincover {
   filter: brightness(20%) grayscale(65%);
   position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 90vh;
   width: 100%;
   z-index: -5;
@@ -646,6 +649,9 @@ input[type="range"] {
 
 .popular-img {
   position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 1rem 1rem 0 0;
   height: 350px;
 }
@@ -762,7 +768,10 @@ input[type="range"] {
 
 .otherservices-image {
   border-radius: 1rem 1rem 0 0;
-  height: 255px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 450px;
   object-fit: cover
 }
 
