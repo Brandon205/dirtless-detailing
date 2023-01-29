@@ -812,7 +812,7 @@ input[type="range"] {
 }
 
 .service-desc {
-  color: #9d9d9d
+  color: #1c1c1c
 }
 
 .card-hr {
@@ -1030,6 +1030,14 @@ hr {
 .about-container h2,
 .about-container h3 {
   font-size: 3em;
+}
+
+.header-cert {
+  /* width: 134px;
+  height: 134px; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
 }
 
 .faq-ul {

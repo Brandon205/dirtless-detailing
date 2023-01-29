@@ -101,10 +101,11 @@ export default function Home() {
 
                     <div style={{ display: smallScreen ? 'none' : 'flex', alignItems: 'center', gap: 32 }}>
                         <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="noopener">
-                            <Image src={bbbImage} width={134} height={134} alt="Dirt-Less Detailing BBB Seal" />
+                            <div className="header-cert" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/242a2248-1f41-4edf-b2c5-d508a10bef00/public')`, height: 134 + 'px', width: 134 + 'px'}}></div>
                         </a>
+
                         <a href="https://iglcoatingsusa.com/" target="_blank" rel="noopener">
-                            <Image src={kenzo} width={135} height={165} alt="IGL Kenzo coatings" />
+                            <div className="header-cert" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/833088d3-ca7b-41b9-561f-21f8517f3300/public')`, height: 165 + 'px', width: 145 + 'px'}}></div>
                         </a>
                     </div>
 

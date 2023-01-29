@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
 import 'react-toastify/dist/ReactToastify.css';
 
 import { AiOutlineCar, AiOutlinePlus } from "react-icons/ai";
@@ -13,7 +12,6 @@ import { MdOutlineEmail, MdLocalOffer } from 'react-icons/md';
 import { TbEngine } from 'react-icons/tb';
 import { RiCarWashingFill } from 'react-icons/ri';
 import { ImFilePicture } from 'react-icons/im';
-import ddLogo from '../public/imgs/PNG1.png';
 import './App.css';
 
 export default function MyApp({ Component, pageProps }) {
@@ -85,7 +83,9 @@ export default function MyApp({ Component, pageProps }) {
             </Head>
             <header className="App-header">
                 <nav id="nav" className='navigation-small' ref={navBar}>
-                    <a style={{ display: 'flex', justifyContent: 'flex-start', flex: 1 }} href="/"><Image src={ddLogo} objectFit="contain" width={smallScreen ? 120 : 140} height={smallScreen ? 90 : 105} className="logo" alt="logo" /></a>
+                    <a style={{ display: 'flex', justifyContent: 'flex-start', flex: 1 }} href="/">
+                        <div className="header-cert" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0a945e76-f4c0-4e29-ef16-463490d0db00/public')`, height: 105 + 'px', width: 140 + 'px'}}></div>
+                    </a>
                     <FaBars className="menu-bars" onClick={() => setNav(nav === 'block' ? 'none' : 'block')} />
                     <div style={{ display: nav }} className="menu-container">
                         <ul className='main-ul'>
@@ -210,7 +210,7 @@ export default function MyApp({ Component, pageProps }) {
                 <div className="footer-content-card">
                     <h3>CORRECTION SERVICES</h3>
                     <a href="/services/single-stage-correction" className='footer-link'>Single Stage Paint Correction</a>
-                    <a href="/services/two-stage-correction" className='footer-link'>Two Stage Paint Correction</a>
+                    <a href="/services/two-stage-correction" className='footer-link'>Two Stage Paint Correction</a>     
                 </div>
                 <div className="footer-content-card footer-contact-card" id="contact">
                     <h3>CONTACT US</h3>
@@ -221,7 +221,7 @@ export default function MyApp({ Component, pageProps }) {
                 <div className='bbb-footer'>
                     <p>We currently service:<span style={{ color: 'lightgray' }}> Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Lake Tapps, Federal Way, Orting, South Prairie, Tehaleh, Black Diamond, Milton, Edgewood, and Graham.</span></p>
                     <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="nofollow">
-                        <img src="https://seal-alaskaoregonwesternwashington.bbb.org/seals/blue-seal-160-82-bbb-1000135733.png" style={{ border: 0 }} alt="Dirt-Less Detailing BBB Business Review" />
+                        <div className="header-cert" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/1f42d129-8657-4246-7297-ab33dc24c000/public')`, width: 147 + 'px', height: 75 + 'px'}}></div>
                     </a>
                 </div>
                 <hr />
