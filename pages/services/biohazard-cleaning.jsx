@@ -39,7 +39,7 @@ export default function Bio() {
         <Metatags
           title='Biohazard Cleaning | Dirt-Less Detailing'
           description='Smokers Car • Biohazard Cleaning • Odor Removal - See what we can do if your car has unwanted odors or smells'
-          image={cover.src}
+          image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/901f2f70-2010-4f2b-aac3-6a98dc38e400/public'
           canonical='/services/biohazard-cleaning'
         />
         <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
@@ -49,7 +49,7 @@ export default function Bio() {
             "name": "Biohazard Cleaning",
             "brand": "Dirt-Less Detailing",
             "description": "Our team at Dirt-Less Detailing is trained and equipped to handle the safe and effective cleaning of biohazard materials in your vehicle.",
-            "image": "${seatbelts.src}",
+            "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/901f2f70-2010-4f2b-aac3-6a98dc38e400/public",
             "url": "https://www.dirtlessdetailing.com/services/biohazard-cleaning/",
             "offers": {
               "@type": "Offer",
@@ -73,9 +73,7 @@ export default function Bio() {
           }`,
         }} />
       </Head>
-      <div className="cover">
-        <Image src={cover} alt="biohazard cleaning cover" layout="fill" objectFit='cover' placeholder='blur' priority />
-      </div>
+      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/901f2f70-2010-4f2b-aac3-6a98dc38e400/public')`}}></div>
       <div className="servicepage-header">
         <h1>Biohazard Cleaning</h1>
         <h2 className='page-subheading'>Mold, odors, or other mildly hazardous spills in your vehicle? Look no further than our Biohazard cleaning.</h2>
@@ -111,22 +109,10 @@ export default function Bio() {
             <br className='extra-space' />
 
             <h4 className='text-large'>Some extreme examples of our Biohazard cleaning work so far:</h4>
-            <div className="examples-container">
-              <div className="example-img">
-                <Zoom>
-                  <Image style={{ borderRadius: 16 }} src={seats} alt="seat mold before and after" layout="responsive" objectFit='scale-down' placeholder='blur' />
-                </Zoom>
-              </div>
-              <div className="example-img">
-                <Zoom>
-                  <Image style={{ borderRadius: 16 }} src={seatbelts} alt="seatbelt mold before and after" layout="responsive" objectFit='scale-down' placeholder='blur' />
-                </Zoom>
-              </div>
-              <div className="example-img">
-                <Zoom>
-                  <Image style={{ borderRadius: 16 }} src={mesh} alt="mesh net mold before and after" layout="responsive" objectFit="scale-down" placeholder='blur' />
-                </Zoom>
-              </div>
+            <div className="photo-grid">
+              <div className="card card-tall" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b1445bc-f69e-44e8-6336-345384ea5700/public')`}}></div>
+              <div className="card card-tall" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/573ae239-6c34-445b-648b-be2771384600/public')`}}></div>
+              <div className="card card-tall" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/94622f27-c613-4daa-6c08-4d0cb31af800/public')`}}></div>
             </div>
 
             <br className='extra-space' />

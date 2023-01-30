@@ -1,12 +1,6 @@
-import Image from 'next/image';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
-import Zoom from 'react-medium-image-zoom';
-import 'react-medium-image-zoom/dist/styles.css';
 import { BiLinkExternal } from 'react-icons/bi';
-
-import cover from '../../public/imgs/pageimgs/interior/fullIntExCover.webp';
-import serviceImage from '../../public/imgs/pageimgs/interior/driverseatBA.webp';
 
 const steps = [
   ["Expose Hidden Dirt", "Use our Tornador Vortex blowgun which uses compressed air to blow out every spot a vacuum can't reach. It also extracts sand and loose soil from carpeting."],
@@ -42,7 +36,7 @@ export default function FullIntEx() {
         <Metatags
           title='Full Interior Cleaning | Dirt-Less Detailing'
           description='Our Full Interior cleaning is the most sought after service, and for good reason, it will completely renew your cars interior!'
-          image={cover.src}
+          image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/public'
           canonical='/services/full-interior-detail'
         />
         <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
@@ -52,7 +46,7 @@ export default function FullIntEx() {
             "name": "Full Interior Detailing",
             "brand": "Dirt-Less Detailing",
             "description": "Get your car's interior looking brand new with our full interior detailing service. We offer thorough cleaning and conditioning of all surfaces, including the dashboard, seats, and carpets. Contact us to schedule your appointment today.",
-            "image": "${cover.src}",
+            "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/public",
             "url": "https://www.dirtlessdetailing.com/services/full-interior-detail/",
             "offers": {
               "@type": "Offer",
@@ -76,9 +70,7 @@ export default function FullIntEx() {
           }`,
         }} />
       </Head>
-      <div className="cover">
-        <Image src={cover} alt="Vehicle after a Full Interior Cleaning" layout="fill" objectFit='cover' placeholder='blur' priority />
-      </div>
+      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/public')`}}></div>
       <div className="servicepage-header">
         <h1>Full Interior Cleaning</h1>
         <h2 className='page-subheading'>Easy and hassle free thorough interior cleaning service</h2>
@@ -100,11 +92,7 @@ export default function FullIntEx() {
                   <p>Taking us by surprise is difficult. Please don't think that your interior is too dirty. We've seen hundreds of different interiors and have all the necessary tools to attempt to remove any kind of stain or mess.</p>
                   <p>Make it a <a href='/services/interior-exterior-detailing-combo' className='aside-link'>Combo</a> deal by booking with a Premium Dirt-Less Wash, and get an <a href='/services/add-ons#engine' className='aside-link'>Engine Bay</a> cleaning on the house!</p>
                 </div>
-                <div className='service-image'>
-                  <Zoom>
-                    <Image src={serviceImage} alt="Interior cleaning before and after" placeholder='blur' />
-                  </Zoom>
-                </div>
+                <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4f5cb5ee-45a7-4123-acaf-586335420600/public')`}}></div>
               </div>
 
               <h2 className='text-large'>Biohazard Cleanings <a href='/services/biohazard-cleaning' className='aside-link'><BiLinkExternal /></a></h2>
