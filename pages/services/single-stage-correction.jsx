@@ -1,14 +1,7 @@
-import Image from 'next/image';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import { BiLinkExternal } from 'react-icons/bi';
-import Zoom from 'react-medium-image-zoom';
-import 'react-medium-image-zoom/dist/styles.css';
 import { FaMapMarkerAlt } from 'react-icons/fa';
-
-import cover from '../../public/imgs/FB_IMG_1590172619153.jpg';
-import paintDefects from '../../public/imgs/pageimgs/homepage/paintDefects.png';
-import serviceImage from '../../public/imgs/pageimgs/paintCorrection/IMG_20211123_170855.jpg';
 
 const steps = [
   ["Wash Vehicle", "Thorough strip wash top to bottom using 2 bucket method or equivalent, including gas door."],
