@@ -48,7 +48,7 @@ export default function SinglePC() {
         <Metatags
           title='Single Stage Paint Correction | Dirt-Less Detailing'
           description='Our Single Stage Paint Correction should fix most of your Paint Correction needs, leaving your paint nearly scratch free!'
-          image={cover.src}
+          image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4da6f2e1-140d-4f39-abed-9624c82f2a00/public'
           canonical='/services/single-stage-correction'
         />
         <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
@@ -58,7 +58,7 @@ export default function SinglePC() {
             "name": "Single Stage Paint Correction",
             "brand": "Dirt-Less Detailing",
             "description": "Revive the shine and clarity of your vehicle's paint with our professional paint correction service. Contact us to learn more and schedule your paint correction service today.",
-            "image": "${cover.src}",
+            "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4da6f2e1-140d-4f39-abed-9624c82f2a00/public",
             "url": "https://www.dirtlessdetailing.com/services/single-stage-correction/",
             "offers": {
               "@type": "Offer",
@@ -92,9 +92,7 @@ export default function SinglePC() {
           }`,
         }} />
       </Head>
-      <div className="cover">
-        <Image src={cover} alt="Vehicle after a Single Stage Paint Correction" layout="fill" objectFit='cover' placeholder='blur' priority />
-      </div>
+      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4da6f2e1-140d-4f39-abed-9624c82f2a00/public')`}}></div>
       <div className="servicepage-header">
         <h1>Single Stage Paint Correction</h1>
         <h2 className='page-subheading'>Restore your vehicles paint by removing scratches and swirls</h2>
@@ -117,11 +115,7 @@ export default function SinglePC() {
                   <p><span className="special-package">NOTICE:</span> Unlike most of our other services that are mobile and can be done in just a few hours, this service requires more time and better lighting to achieve the proper results. This is why we require you to drop off the vehicle at our <a href='/correction/bonney-lake' className='aside-link'>shop location</a> in Bonney Lake.</p>
                   <p>Want to compare this to our Two Stage Paint Correction? Check out our <a href='/detailing/correction' className='aside-link'>comparison</a> page for more details.</p>
                 </div>
-                <div className='service-image'>
-                  <Zoom>
-                    <Image src={serviceImage} alt="Vehicle after a Premium Exterior Wash" placeholder='blur' />
-                  </Zoom>
-                </div>
+                <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/9ad6bfa1-52e8-4349-db4c-646a0a51f000/public')`}}></div>
               </div>
             </main>
 
@@ -178,12 +172,8 @@ export default function SinglePC() {
 
             <h4 className='text-large'>Visual example of different paint defects:</h4>
             <p className='subtext'>This gives an example of why deeper scratches aren't removable without repainting.</p>
-            <div className='examples-container'>
-              <div className='example-img'>
-                <Zoom>
-                  <Image src={paintDefects} alt="What IGL coatings protect from circle" placeholder='blur' />
-                </Zoom>
-              </div>
+            <div className="photo-grid place-center">
+              <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3c1c25a3-cbab-4f82-91b1-ba2a30626500/public')`, width: 260 + 'px', height: 250 + 'px'}}></div>
             </div>
 
 

@@ -1585,6 +1585,10 @@ hr {
   text-align: left;
 }
 
+.place-center {
+  place-items: center;
+}
+
 .inline {
   display: block;
 }
@@ -1698,7 +1702,6 @@ hr {
   .example-img {
     width: 275px;
   }
-
 
   .center {
     display: grid;

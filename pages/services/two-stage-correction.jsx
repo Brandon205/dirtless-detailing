@@ -48,7 +48,7 @@ export default function TwoPC() {
         <Metatags
           title='Two Stage Paint Correction | Dirt-Less Detailing'
           description='Our Two Stage Paint Correction is for vehicles that are to be spotless and have a beautiful shine. This service will get them there.'
-          image={cover.src}
+          image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f6fc5ab8-7f12-4b69-4986-f007fdbf7700/public'
           canonical='/services/two-stage-correction'
         />
         <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
@@ -58,7 +58,7 @@ export default function TwoPC() {
             "name": "Two Stage Paint Correction",
             "brand": "Dirt-Less Detailing",
             "description": "Revive the shine and clarity of your vehicle's paint with our professional paint correction service. Our team at Dirt-Less Detailing uses advanced techniques and products to remove defects and imperfections, leaving your car with a smooth and flawless finish. Contact us to learn more and schedule your paint correction service today.",
-            "image": "${cover.src}",
+            "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f6fc5ab8-7f12-4b69-4986-f007fdbf7700/public",
             "url": "https://www.dirtlessdetailing.com/services/two-stage-correction/",
             "offers": {
               "@type": "Offer",
@@ -92,9 +92,7 @@ export default function TwoPC() {
           }`,
         }} />
       </Head>
-      <div className="cover">
-        <Image src={cover} alt="Vehicle after a Two Stage Paint Correction" layout="fill" objectFit='cover' placeholder='blur' priority />
-      </div>
+      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f6fc5ab8-7f12-4b69-4986-f007fdbf7700/public')`}}></div>
       <div className="servicepage-header">
         <h1>Two Stage Paint Correction</h1>
         <h2 className='page-subheading'>Go the extra mile and remove years of scratches and swirls with our Two Stage Paint Correction service.</h2>
@@ -115,19 +113,11 @@ export default function TwoPC() {
                   <p>Depending on the state of your vehicles paint, age, and quality certain scratches may not completely disappear. Either the clear coat is thinning away too much or the scratches may be too deep to properly remove. (Before we begin, we'll measure the paint.)</p>
                   <p>We'll decide from here what we can safely remove from your paint. It's not only about getting rid of as many flaws as you can. In order to maintain the quality of the paint, it's also important to determine when enough is enough.</p>
                 </div>
-                <div className='service-image'>
-                  <Zoom>
-                    <Image src={serviceImage} alt="Vehicle after a Premium Exterior Wash" placeholder='blur' />
-                  </Zoom>
-                </div>
+                <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fabb5ba-d12e-4e8a-c3bb-f5901af53e00/public')`}}></div>
               </div>
 
               <div className="service-explain">
-                <div className='service-image'>
-                  <Zoom>
-                    <Image src={serviceImage2} alt="Vehicle after a Premium Exterior Wash" placeholder='blur' />
-                  </Zoom>
-                </div>
+                <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/08914f28-3d2e-421e-c846-8f15062e0000/public')`}}></div>
                 <div className="text-left">
                   <h2 className="text-large mt-0">Maintenance Commitment</h2>
                   <p>You are making a commitment at this point to your vehicle by getting our Level 2 paint correction. After the service is over, you must carefully maintain the vehicle if you want to keep the shine on your paint. After just a few washes, you may easily bring all those swirls and scratches back into your paint if you don't correctly wash and dry the car.</p>
@@ -163,12 +153,8 @@ export default function TwoPC() {
 
             <h4 className='text-large'>Visual example of different paint defects:</h4>
             <p className='subtext'>This gives an example of why deeper scratches aren't removable without repainting.</p>
-            <div className='examples-container'>
-              <div className='example-img'>
-                <Zoom>
-                  <Image src={paintDefects} alt="What IGL coatings protect from circle" placeholder='blur' />
-                </Zoom>
-              </div>
+            <div className="photo-grid place-center">
+              <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3c1c25a3-cbab-4f82-91b1-ba2a30626500/public')`, width: 260 + 'px', height: 250 + 'px'}}></div>
             </div>
 
             <br className='extra-space' />
