@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { AiOutlineCar, AiOutlinePlus } from "react-icons/ai";
 import { BsFillCameraFill, BsFillPersonBadgeFill } from "react-icons/bs";
 import { FaBars, FaFacebook, FaInstagram, FaPhoneAlt, FaCarSide, FaPhotoVideo, FaBiohazard, FaCameraRetro, FaHome, FaImages, FaSoap } from 'react-icons/fa';
-import { GiSteeringWheel, GiCarKey, GiCarSeat, GiSmallFire } from 'react-icons/gi';
+import { GiSteeringWheel, GiCarKey, GiCarSeat } from 'react-icons/gi';
 import { GoLocation } from "react-icons/go";
 import { HiSparkles, HiInformationCircle } from 'react-icons/hi';
 import { MdOutlineEmail, MdLocalOffer } from 'react-icons/md';

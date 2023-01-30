@@ -27,7 +27,7 @@ export default function ExtCoatings() {
                 <Metatags
                     title='Exterior Ceramic Coatings | Dirt-Less Detailing'
                     description='Get a professionally installed Ceramic Coating through Dirt-Less Detailing to protect your vehicle from the always changing Washington weather.'
-                    image={cover.src}
+                    image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b441cde-1d0f-45d9-665f-e44bfce0d800/public'
                     canonical='/services/exterior-ceramic-coating'
                 />
                 <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
@@ -37,7 +37,7 @@ export default function ExtCoatings() {
                         "name": "Exterior Ceramic Coating",
                         "brand": "Dirt-Less Detailing",
                         "description": "Protect and enhance your vehicle's paint with our professional ceramic coating service. Our team at Dirt-Less Detailing uses top-quality products to provide long-lasting protection and a glossy finish for your car. Contact us to learn more and schedule your ceramic coating service today.",
-                        "image": "${cover.src}",
+                        "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b441cde-1d0f-45d9-665f-e44bfce0d800/public",
                         "url": "https://www.dirtlessdetailing.com/services/exterior-ceramic-coating/",
                         "offers": [
                             {
@@ -102,9 +102,8 @@ export default function ExtCoatings() {
                     }`,
                 }} />
             </Head>
-            <div className="cover">
-                <Image src={cover} alt="Vehicle Exterior after paint correction and ceramic coating" layout="fill" objectFit='cover' placeholder='blur' priority quality={100} />
-            </div>
+            <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b441cde-1d0f-45d9-665f-e44bfce0d800/public')`}}></div>
+
             <div className="servicepage-header">
                 <h1>Exterior Ceramic Coating</h1>
                 <h2 className='page-subheading'>Get a professionally installed 5 year Ceramic Coating professionally to protect your vehicle year-round.</h2>
@@ -125,19 +124,11 @@ export default function ExtCoatings() {
                                 <p>Unlike wax, you can't just simply wipe it on and off. The ceramic coating adheres to the surface of the car and creates a semi-permanent barrier. It is frequently described as a "sacrificial" layer of protection. Rain, debris, and other weather conditions will be absorbed by it, better protecting the paint underneath.</p>
                                 <p>As an analogy, think of the Three Little Pigs. No after wash product is like the straw house, wax is like the stick house, and ceramic coatings are like the brick house. Both the wax and ceramic offer protection from rain and dust, but one is far stronger.</p>
                             </div>
-                            <div className='service-image'>
-                                <Zoom>
-                                    <Image style={{ borderRadius: 16 }} src='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/68a8c346-71da-481a-aad1-7550e34bed00/public' alt="Water beads on large surface" width='50%' height='100%' objectFit="contain" layout='responsive' />
-                                </Zoom>
-                            </div>
+                            <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5b0798e5-2648-4845-168b-98e7ff013100/public')`}}></div>
                         </div>
 
                         <div className="service-explain">
-                            <div className="service-image">
-                                <Zoom>
-                                    <Image style={{ borderRadius: 16 }} src='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ef9b1f71-aa91-4fb8-caee-9edb3704e900/public' alt="Small water beads area" width='50%' height='100%' objectFit="contain" layout='responsive' />
-                                </Zoom>
-                            </div>
+                            <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a5260bdd-11e9-4e31-74ec-c1d75787e000/public')`}}></div>
                             <div className="text-left">
                                 <h2 className='text-large'>The benefits you get with a coating:</h2>
                                 <p className='text-left'>There are a lot of coating companies that make some pretty big claims of what a coating can do. We don't like to use most of these claims and oversell what the ceramic coatings can do and how long they can last.</p>
@@ -160,11 +151,7 @@ export default function ExtCoatings() {
                                 <p>When it's hot, cold, or humid, coatings respond differently. If you've spent much time in Bonney Lake, you've probably noticed that the weather is always fluctuating.</p>
                                 <p><span className="special-package">NOTICE:</span>  We complete every coating installation in our shop, where we have complete control over the working environment to provide the best end results. </p>
                             </div>
-                            <div className="service-image">
-                                <Zoom>
-                                    <Image style={{ borderRadius: 16 }} src={ext4} alt="Large water beads" layout="responsive" objectFit="scale-down" placeholder='blur' />
-                                </Zoom>
-                            </div>
+                            <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a30c288d-c816-4a42-e313-d7fa80e04200/public')`}}></div>
                         </div>
 
                         <div className="service-explain">
