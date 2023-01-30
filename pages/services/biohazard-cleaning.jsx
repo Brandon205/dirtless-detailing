@@ -1,14 +1,6 @@
-import Image from 'next/image';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import ReactPlayer from 'react-player/lazy'; 
-import Zoom from 'react-medium-image-zoom';
-import 'react-medium-image-zoom/dist/styles.css';
-
-import cover from '../../public/imgs/BioCover.webp';
-import seats from '../../public/imgs/pageimgs/bio/SeatsBA.webp';
-import seatbelts from '../../public/imgs/pageimgs/bio/SeatbeltBA.webp';
-import mesh from '../../public/imgs/pageimgs/bio/MeshBA.webp';
 
 const steps = [
   ["Determine Products", "We will first determine what products will need to be used to best suit the situation."],

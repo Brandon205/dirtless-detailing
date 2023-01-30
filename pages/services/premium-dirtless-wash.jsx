@@ -42,7 +42,7 @@ export default function PDLWash() {
         <Metatags
           title='Premium Car Wash | Dirt-Less Detailing'
           description='Our Premium Dirt-Less Wash will go above and beyond what our base tier offers, and is sure to get everything off your vehicles exterior!'
-          image={cover.src}
+          image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/9a9af281-4951-4113-7d02-dcea991eed00/public'
           canonical='/services/premium-dirtless-wash'
         />
         <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
@@ -52,7 +52,7 @@ export default function PDLWash() {
             "name": "Premium Dirt-Less Wash",
             "brand": "Dirt-Less Detailing",
             "description": "At Dirt-Less Detailing, our team uses top-of-the-line equipment and environmentally friendly products to provide a thorough wash and wax, leaving your car shining and protected.",
-            "image": "${cover.src}",
+            "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/9a9af281-4951-4113-7d02-dcea991eed00/public",
             "url": "https://www.dirtlessdetailing.com/services/premium-dirtless-wash/",
             "offers": {
               "@type": "Offer",
@@ -76,9 +76,7 @@ export default function PDLWash() {
           }`,
         }} />
       </Head>
-      <div className="cover">
-        <Image src={cover} alt="Vehicle after our Premium Dirt-Less Wash" layout="fill" objectFit='cover' placeholder='blur' priority />
-      </div>
+      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/9a9af281-4951-4113-7d02-dcea991eed00/public')`}}></div>
       <div className="servicepage-header">
         <h1>Premium Dirt-Less Wash</h1>
         <h2 className='page-subheading'>Our Premium Wash goes above and beyond removing all exterior contaminants and giving your paint an even cleaner shine.</h2>

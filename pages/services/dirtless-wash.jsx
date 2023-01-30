@@ -1,12 +1,6 @@
-import Image from 'next/image';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import { BiLinkExternal } from 'react-icons/bi';
-import Zoom from 'react-medium-image-zoom';
-import 'react-medium-image-zoom/dist/styles.css';
-
-import cover from '../../public/imgs/DLWashCover.webp';
-import serviceImage from '../../public/imgs/pageimgs/exterior/IMG_20211103_105903.jpg';
 
 const steps = [
   ["Wash Vehicle", "Thorough 2 bucket or equivalent top to bottom wash including the gas door."],
@@ -38,7 +32,7 @@ export default function DLWash() {
         <Metatags
           title='Dirt-Less Car Wash | Dirt-Less Detailing'
           description='The Dirt-Less Wash is our base tier exterior car wash service, complete with a spray wax to protect your vehicle.'
-          image={cover.src}
+          image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d3ac6cf4-b415-476d-8286-5f169f4dca00/public'
           canonical='/services/dirtless-wash'
         />
         <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
@@ -48,7 +42,7 @@ export default function DLWash() {
             "name": "Dirt-Less Wash",
             "brand": "Dirt-Less Detailing",
             "description": "At Dirt-Less Detailing, we offer a comprehensive car wash service to keep your vehicle looking its best.",
-            "image": "${cover.src}",
+            "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d3ac6cf4-b415-476d-8286-5f169f4dca00/public",
             "url": "https://www.dirtlessdetailing.com/services/dirtless-wash/",
             "offers": {
               "@type": "Offer",
@@ -72,9 +66,7 @@ export default function DLWash() {
           }`,
         }} />
       </Head>
-      <div className="cover">
-        <Image src={cover} alt="Subaru after a Dirt-Less Wash" layout="fill" objectFit='cover' placeholder='blur' priority />
-      </div>
+      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d3ac6cf4-b415-476d-8286-5f169f4dca00/public')`}}></div>
       <div className="servicepage-header">
         <h1>Dirt-Less Wash</h1>
         <h2 className='page-subheading'>Get a Dirt-Less Wash and have your vehicle shine like never before!</h2>
@@ -95,11 +87,7 @@ export default function DLWash() {
                   <p>If you're looking for a fast and cheap option to get your car washed in Bonney Lake or the surrounding areas, we most likely won't be a great fit for you. We go very in-depth in our washing process to provide the highest quality level of service and results your money can buy.</p>
                   <p>Want to go a step further than our Dirt-Less Wash, removing all of the contaminants that may be hiding on your paint? Check out our <a href='/detailing/car-washes' className='aside-link'>comparison</a> page to see the differences between our this service and the <a href='/services/premium-dirtless-wash' className='aside-link'>Premium</a> version.</p>
                 </div>
-                <div className='service-image'>
-                  <Zoom>
-                    <Image src={serviceImage} alt="Vehicle after our Dirt-Less Wash" placeholder='blur' />
-                  </Zoom>
-                </div>
+                <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6fb3a112-d77a-41fb-e7ec-728b2185b600/public')`}}></div>
               </div>
 
             </main>

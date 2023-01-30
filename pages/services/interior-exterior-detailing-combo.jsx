@@ -19,7 +19,7 @@ export default function Combo() {
         <Metatags
           title='Interior and Exterior Combo | Dirt-Less Detailing'
           description='Full Interior Cleaning + Premium Dirt-Less Wash Combo. Get a FREE engine bay cleaning when booking this Combo Deal!'
-          image={cover.src}
+          image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2f40a30b-c1c1-4dba-3b4b-9f3521eaa800/public'
           canonical='/services/interior-exterior-detailing-combo'
         />
         <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
@@ -29,7 +29,7 @@ export default function Combo() {
             "name": "Full Interior and Exterior Detail Combo",
             "brand": "Dirt-Less Detailing",
             "description": "With our combo service your entire vehicle including the engine bay will be cleaned with out tried and true practices.",
-            "image": "${cover.src}",
+            "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2f40a30b-c1c1-4dba-3b4b-9f3521eaa800/public",
             "url": "https://www.dirtlessdetailing.com/services/interior-exterior-detailing-combo/",
             "offers": {
               "@type": "Offer",
@@ -53,9 +53,7 @@ export default function Combo() {
           }`,
         }} />
       </Head>
-      <div className="cover">
-        <Image src={cover} alt="Vehicle after a Combo Wash" layout="fill" objectFit='cover' placeholder='blur' priority />
-      </div>
+      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2f40a30b-c1c1-4dba-3b4b-9f3521eaa800/public')`}}></div>
       <div className="servicepage-header">
         <h1>Full Interior and Exterior Combo</h1>
         <h2 className='page-subheading'>Full Interior Cleaning, Premium Dirt-Less Wash, and get an Engine Bay Cleaning on us!</h2>
@@ -75,11 +73,7 @@ export default function Combo() {
                   <p>The full enchilada! Our most complete detailing package and the best value package we offer. You get a <a href="/services/full-interior-detail" className='aside-link'>Full Interior Detail</a>, a <a href="/services/premium-dirtless-wash" className='aside-link'>Premium Dirt-Less Wash</a>, and a <span className="special-package">FREE</span> <a href="/services/add-ons#engine" className='aside-link'>Engine Bay Detail</a> on the house!</p>
                   <p>If you are after the most thorough interior and exterior detail you can find, or even trying to get the most money when selling your vehicle, this is the package for you!</p>
                 </div>
-                <div className='service-image'>
-                  <Zoom>
-                    <Image src={serviceImage} alt="Vehicle after a Premium Exterior Wash" placeholder='blur' />
-                  </Zoom>
-                </div>
+                <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3031c630-d6f2-48fc-1bb4-62844fbd5a00/public')`}}></div>
               </div>
 
               <br className='extra-space' />
@@ -121,22 +115,10 @@ export default function Combo() {
               <br className='extra-space' />
 
               <h4 className='text-large'>Another example of our completed Combo Work:</h4>
-              <div className="examples-container">
-                <div className="example-img">
-                  <Zoom>
-                    <Image style={{ borderRadius: 16 }} src={interior} alt="Mazda interior after combo deal cleaning" layout="responsive" objectFit='cover' placeholder='blur' quality={25} />
-                  </Zoom>
-                </div>
-                <div className="example-img">
-                  <Zoom>
-                    <Image style={{ borderRadius: 16 }} src={engine} alt="Mazda engine bay after included engine bay cleaning" layout="responsive" objectFit='cover' placeholder='blur' quality={25} />
-                  </Zoom>
-                </div>
-                <div className="example-img">
-                  <Zoom>
-                    <Image style={{ borderRadius: 16 }} src={exterior} alt="Mazda exterior after the Premium Dirt-Less wash" layout="responsive" objectFit="cover" placeholder='blur' quality={25} />
-                  </Zoom>
-                </div>
+              <div className="photo-grid">
+                <div className="card card-tall" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c537680c-f103-4032-65e3-11370c73d300/public')`}}></div>
+                <div className="card card-tall" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/42b27e69-bb43-40d4-55c0-4be942f7a300/public')`}}></div>
+                <div className="card card-tall" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6fb3a112-d77a-41fb-e7ec-728b2185b600/public')`}}></div>
               </div>
 
             </div>
