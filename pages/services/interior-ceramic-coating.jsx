@@ -1,17 +1,11 @@
 import React from 'react';
-import Image from 'next/image';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
-import Zoom from 'react-medium-image-zoom';
-import 'react-medium-image-zoom/dist/styles.css';
 
 import { BiLinkExternal } from 'react-icons/bi';
 import { GiCarSeat, GiRolledCloth, GiSpill } from 'react-icons/gi';
 import { MdCleaningServices } from 'react-icons/md';
 import { FiSun } from 'react-icons/fi';
-
-import cover from '../../public/imgs/pageimgs/interior/IMG_20220929_155050.jpg';
-import ext2 from '../../public/imgs/pageimgs/ceramic/317941187_811122646616266_4791919094544331114_n.jpg';
 
 export default function IntCoatings() {
     return (
@@ -21,7 +15,7 @@ export default function IntCoatings() {
                 <Metatags
                     title='Interior Ceramic Coatings | Dirt-Less Detailing'
                     description='Have us coat the interior of your vehicle with our products to keep them clean and protected from day to day use.'
-                    image={cover.src}
+                    image="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7a8e321a-6a57-41ea-9736-7bd4849bcf00/public"
                     canonical='/services/interior-ceramic-coating'
                 />
                 <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
@@ -31,7 +25,7 @@ export default function IntCoatings() {
                         "name": "Interior Ceramic Coating",
                         "brand": "Dirt-Less Detailing",
                         "description": "Protect and enhance your vehicle's interior with our professional interior ceramic coating service. Contact us to learn more and schedule your interior ceramic coating service today.",
-                        "image": "${cover.src}",
+                        "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7a8e321a-6a57-41ea-9736-7bd4849bcf00/public",
                         "url": "https://www.dirtlessdetailing.com/services/interior-ceramic-coating/",
                         "offers": [
                             {
@@ -62,9 +56,8 @@ export default function IntCoatings() {
                     }`,
                 }} />
             </Head>
-            <div className="cover">
-                <Image src={cover} alt="Coated and protected vehicle interior" layout="fill" objectFit='cover' placeholder='blur' priority />
-            </div>
+            <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7a8e321a-6a57-41ea-9736-7bd4849bcf00/public')`}}></div>
+
             <div className="servicepage-header">
                 <h1>Interior Coating</h1>
                 <h2 className='page-subheading'>Let us install an interior ceramic coating in your car to save you time when cleaning up spills and other messes</h2>
@@ -83,11 +76,8 @@ export default function IntCoatings() {
                                 <p>Whether it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe the spill up before it seeps in.</p>
                                 <p>Typically both of our interior coatings will protect your vehicle for about a year before they should be reapplied.</p>
                             </div>
-                            <div className="service-image">
-                                <Zoom>
-                                    <Image style={{ borderRadius: 16 }} src={ext2} alt="Front view of seat after leather ceramic coating" layout="responsive" objectFit='scale-down' placeholder='blur' />
-                                </Zoom>
-                            </div>
+                            <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a196c77-cb1a-42f9-479b-8fdbe3c14500/public')`}}></div>
+
                         </div>
 
                         <h2 className='text-large'>Professional Exterior Coatings <a href='/services/exterior-ceramic-coating' className='aside-link'><BiLinkExternal /></a></h2>

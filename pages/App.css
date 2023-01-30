@@ -1324,8 +1324,9 @@ hr {
 }
 
 .example-img {
-  width: 200px;
-  height: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin-bottom: 1rem
 }
 

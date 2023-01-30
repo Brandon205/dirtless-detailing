@@ -11,13 +11,9 @@ import { SiAdguard } from 'react-icons/si';
 import { RiPaintFill } from 'react-icons/ri';
 import ReactPlayer from 'react-player/lazy'; 
 
-import cover from '../../public/imgs/pageimgs/ceramic/waterBeads.jpg';
 import iglCircle from '../../public/imgs/iglcircle.jpg';
 import kenzo from '../../public/imgs/kenzo.png';
 import iglCoating from '../../public/imgs/pageimgs/homepage/iglCoating.png';
-import ext1 from '../../public/imgs/pageimgs/ceramic/317953380_3245073689065810_496222385512149880_n.jpg';
-import ext3 from '../../public/imgs/pageimgs/ceramic/organized1.jpg';
-import ext4 from '../../public/imgs/pageimgs/ceramic/319282824_6026927310663439_4187208472627188697_n.jpg';
 
 export default function ExtCoatings() {
     return (
@@ -334,22 +330,10 @@ export default function ExtCoatings() {
 
                     <h4 className='text-large'>Informational photos from IGL:</h4>
                     <strong className='subtext'>Check out more from our Ceramic Coating provider <a href='https://iglcoatingsusa.com/' target='_blank' rel='noopener' className='aside-link'>IGL</a>.</strong>
-                    <div className='examples-container'>
-                        <div className='example-img'>
-                            <Zoom>
-                                <Image src={iglCircle} alt="What IGL coatings protect from circle" placeholder='blur' />
-                            </Zoom>
-                        </div>
-                        <div className='example-img'>
-                            <Zoom>
-                                <Image src={iglCoating} alt="Igl protection example" placeholder='blur' />
-                            </Zoom>
-                        </div>
-                        <div className='example-img'>
-                            <Zoom>
-                                <Image src={kenzo} alt="Kenzo graphene coating information" placeholder='blur' />
-                            </Zoom>
-                        </div>
+                    <div className="photo-grid">
+                        <div className="card card-tall card-wide" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b69dcca1-8d92-414e-32c9-ddfe247fa100/public')`}}></div>
+                        <div className="card card-tall" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/32aa3e25-1fcb-4e05-760a-eb53f4b18400/public')`}}></div>
+                        <div className="card card-wide" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b3d13f8-c7ec-44fc-7750-ab0d466eae00/public')`}}></div>
                     </div>
 
                     <br className='extra-space' />
