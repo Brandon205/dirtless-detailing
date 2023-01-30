@@ -1,9 +1,6 @@
 import React from 'react';
-import Image from 'next/image';
 import Head from 'next/head';
 import Metatags from '../utils/Metatags';
-
-import cover from '../public/imgs/main-cover.webp';
 
 export default function About() {
   return (
