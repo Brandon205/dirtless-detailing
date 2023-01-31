@@ -1,35 +1,19 @@
 import React from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
-import Zoom from 'react-medium-image-zoom';
-import 'react-medium-image-zoom/dist/styles.css';
+import Metatags from '../../utils/Metatags';
 import { FaMapMarkerAlt } from 'react-icons/fa';
-
-import cover from '../../public/imgs/pageimgs/ceramic/waterBeads.jpg';
-import iglCircle from '../../public/imgs/iglcircle.jpg';
-import kenzo from '../../public/imgs/kenzo.png';
-import iglCoating from '../../public/imgs/pageimgs/homepage/iglCoating.png';
-import ext1 from '../../public/imgs/pageimgs/ceramic/317895587_701820004796038_115520810281779526_n.jpg';
-import ext2 from '../../public/imgs/pageimgs/ceramic/317941187_811122646616266_4791919094544331114_n.jpg';
-import ext3 from '../../public/imgs/pageimgs/ceramic/317953380_3245073689065810_496222385512149880_n.jpg';
-import ext4 from '../../public/imgs/pageimgs/ceramic/318206630_688872332864156_6250333864852484039_n.jpg';
-import ext5 from '../../public/imgs/pageimgs/ceramic/organized1.jpg';
-import ext6 from '../../public/imgs/pageimgs/ceramic/318668138_534490881683360_5498452884377282120_n.jpg';
-import ext7 from '../../public/imgs/pageimgs/ceramic/319282824_6026927310663439_4187208472627188697_n.jpg';
-import ext8 from '../../public/imgs/pageimgs/ceramic/fenderDrops.jpg';
 
 export default function ceramic() {
     return (
         <div className='bg-contact'>
             <Head>
                 <title>Kenzo Graphene Ceramic Coatings | Dirt-Less Detailing</title>
-                <meta property="og:title" content="Kenzo Graphene Ceramic Coatings | Dirt-Less Detailing" />
-                <meta name="description" content="Want a high quality 10H ceramic coating to protect your car? Check out our offers on IGL graphene ceramic coatings." />
-                <meta property="og:description" content="Want a high quality 10H ceramic coating to protect your car? Check out our offers on IGL graphene ceramic coatings." />
-                <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://www.dirtlessdetailing.com/detailing/ceramic" />
-                <meta property="og:image" content={cover.src} />
-                <link rel="canonical" href="https://www.dirtlessdetailing.com/detailing/ceramic" />
+                <Metatags
+                    title='Kenzo Graphene Ceramic Coatings | Dirt-Less Detailing'
+                    description='Want a high quality 10H ceramic coating to protect your car? Check out our offers on IGL graphene ceramic coatings.'
+                    image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/cfc8823e-d28e-4ccc-255a-afa3fa5ad400/public'
+                    canonical='/detailing/ceramic'
+                />
                 <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
                     __html: `{
                         "@context": "http://schema.org",
@@ -37,7 +21,7 @@ export default function ceramic() {
                         "name": "Exterior Ceramic Coating",
                         "brand": "Dirt-Less Detailing",
                         "description": "Protect and enhance your vehicle's paint with our professional ceramic coating service. Our team at Dirt-Less Detailing uses top-quality products to provide long-lasting protection and a glossy finish for your car. Contact us to learn more and schedule your ceramic coating service today.",
-                        "image": "${cover.src}",
+                        "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/cfc8823e-d28e-4ccc-255a-afa3fa5ad400/public",
                         "url": "https://www.dirtlessdetailing.com/ceramic-coating/sumner/",
                         "offers": [
                             {
@@ -102,9 +86,7 @@ export default function ceramic() {
                     }`,
                 }} />
             </Head>
-            <div className="cover">
-                <Image src={cover} alt="Water beading off of a car" layout="fill" objectFit='cover' placeholder='blur' priority />
-            </div>
+            <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/cfc8823e-d28e-4ccc-255a-afa3fa5ad400/public')`}}></div>
             <div className="servicepage-header">
                 <h1>Interior / Exterior Ceramic Coatings</h1>
                 <h2>IGL Graphene Coatings</h2>
@@ -248,69 +230,25 @@ export default function ceramic() {
 
             <h4 className='text-large'>Informational photos from IGL:</h4>
             <strong className='subtext'>Check out more from our Ceramic Coating provider <a href='https://iglcoatingsusa.com/' target='_blank' rel='noopener' className='aside-link'>IGL</a>.</strong>
-            <div className='examples-container'>
-                <div className='example-img'>
-                    <Zoom>
-                        <Image src={iglCircle} alt="What IGL coatings protect from circle" placeholder='blur' />
-                    </Zoom>
-                </div>
-                <div className='example-img'>
-                    <Zoom>
-                        <Image src={iglCoating} alt="Igl protection example" placeholder='blur' />
-                    </Zoom>
-                </div>
-                <div className='example-img'>
-                    <Zoom>
-                        <Image src={kenzo} alt="Kenzo graphene coating information" placeholder='blur' />
-                    </Zoom>
-                </div>
+            <div className="photo-grid">
+                <div className="card card-tall card-wide" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b69dcca1-8d92-414e-32c9-ddfe247fa100/public')`}}></div>
+                <div className="card card-tall" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/32aa3e25-1fcb-4e05-760a-eb53f4b18400/public')`}}></div>
+                <div className="card card-wide" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b3d13f8-c7ec-44fc-7750-ab0d466eae00/public')`}}></div>
             </div>
 
             <br className="extra-space" />
 
             <div>
                 <h3 className='text-large'>Check out some of the results from our interior and exterior Ceramic services.</h3>
-                <div className="gallery-container" style={{width: 70 + 'vw'}}>
-                    <Zoom>
-                        <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt='Side view of seat after leather ceramic coating' objectFit="cover" src={ext1} loading="lazy" placeholder='blur' />
-                        </div>
-                    </Zoom>
-                    <Zoom>
-                        <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt='Front view of seat after leather ceramic coating' objectFit="cover" src={ext2} loading="lazy" placeholder='blur' />
-                        </div>
-                    </Zoom>
-                    <Zoom>
-                        <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt='Water beads in a large area' objectFit="cover" src={ext3} loading="lazy" placeholder='blur' />
-                        </div>
-                    </Zoom>
-                    <Zoom>
-                        <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt='Large water beads near edge of car' objectFit="cover" src={ext4} loading="lazy" placeholder='blur' />
-                        </div>
-                    </Zoom>
-                    <Zoom>
-                        <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt='Small water beads on flat surface of vehicle' objectFit="cover" src={ext5} loading="lazy" placeholder='blur' />
-                        </div>
-                    </Zoom>
-                    <Zoom>
-                        <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt='Larger water beads on a ceramic coated vehicle' objectFit="cover" src={ext6} loading="lazy" placeholder='blur' />
-                        </div>
-                    </Zoom>
-                    <Zoom>
-                        <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt='Ceramic coating making large water droplets on vehicle' objectFit="cover" src={ext7} loading="lazy" placeholder='blur' />
-                        </div>
-                    </Zoom>
-                    <Zoom>
-                        <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt='Smaller water beads near edge of vehicle' objectFit="cover" src={ext8} loading="lazy" placeholder='blur' />
-                        </div>
-                    </Zoom>
+                <div className="photo-grid">
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5b0798e5-2648-4845-168b-98e7ff013100/public')`}}></div>
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3e71dbba-b8c6-4c21-7d4c-edc497331100/public')`}}></div>
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/43a02c30-4982-435d-7f91-6d81fd11a000/public')`}}></div>
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/fdce3625-66ac-4ea8-68e5-9f2e9e94c500/public')`}}></div>
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c8855b02-88e3-47c6-f8ab-835cead38f00/public')`}}></div>
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/eef9854b-8f53-4f66-fa7f-d7c97fc71e00/public')`}}></div>
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ab68bfcc-17a0-4468-539b-fded52edc500/public')`}}></div>
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a30c288d-c816-4a42-e313-d7fa80e04200/public')`}}></div>
                 </div>
             </div>
 

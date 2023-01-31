@@ -1,31 +1,18 @@
 import React from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
-import Zoom from 'react-medium-image-zoom';
-import 'react-medium-image-zoom/dist/styles.css';
-
-import cover from '../../public/imgs/pageimgs/exterior/IMG_20220929_155111.jpg';
-import ext1 from '../../public/imgs/pageimgs/exterior/IMG_20200722_161452.jpg';
-import ext2 from '../../public/imgs/pageimgs/exterior/IMG_20210309_092147.jpg';
-import ext3 from '../../public/imgs/pageimgs/exterior/IMG_20220823_145025.jpg';
-import ext4 from '../../public/imgs/pageimgs/exterior/IMG_20220806_084540.jpg';
-import ext5 from '../../public/imgs/pageimgs/exterior/IMG_20220324_180154.jpg';
-import ext6 from '../../public/imgs/pageimgs/exterior/IMG_20211009_114936.jpg';
-import ext7 from '../../public/imgs/pageimgs/exterior/IMG_20210505_144759.jpg';
-import ext8 from '../../public/imgs/pageimgs/exterior/IMG_20200702_101443.jpg';
+import Metatags from '../../utils/Metatags';
 
 export default function exteriorWash() {
   return (
     <div className='bg-contact'>
       <Head>
         <title>Car Wash Services | Dirt-Less Detailing</title>
-        <meta property="og:title" content="Car Wash Services | Dirt-Less Detailing" />
-        <meta name="description" content="Check out and compare our Dirt-Less and Premium Dirt-Less Washes here to see which one best fits your vehicles needs." />
-        <meta property="og:description" content="Check out and compare our Dirt-Less and Premium Dirt-Less Washes here to see which one best fits your vehicles needs." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.dirtlessdetailing.com/detailing/car-washes" />
-        <meta property="og:image" content={cover.src} />
-        <link rel="canonical" href="https://www.dirtlessdetailing.com/detailing/car-washes" />
+        <Metatags
+          title='Car Wash Services | Dirt-Less Detailing'
+          description='Check out and compare our Dirt-Less and Premium Dirt-Less Washes here to see which one best fits your vehicles needs.'
+          image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/fee6fb10-d853-445b-1cb9-0e42779cd800/public'
+          canonical='/detailing/car-washes'
+        />
         <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
           __html: `{
             "@context": "http://schema.org",
@@ -33,7 +20,7 @@ export default function exteriorWash() {
             "name": "Dirt-Less Car Washes",
             "brand": "Dirt-Less Detailing",
             "description": "At Dirt-Less Detailing, we offer multiple comprehensive car wash services to keep your vehicle looking its best.",
-            "image": "${cover.src}",
+            "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/fee6fb10-d853-445b-1cb9-0e42779cd800/public",
             "url": "https://www.dirtlessdetailing.com/detailing/car-washes",
             "offers": [
               {
@@ -78,9 +65,7 @@ export default function exteriorWash() {
           }`,
         }} />
       </Head>
-      <div className="cover">
-        <Image src={cover} alt="Car after Paint Correction service" layout="fill" objectFit='cover' placeholder='blur' priority />
-      </div>
+      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/fee6fb10-d853-445b-1cb9-0e42779cd800/public')`}}></div>
       <div className="servicepage-header location-header">
         <h1>Car Wash Services</h1>
         <h2>Dirt-Less Wash, Premium Dirt-Less Wash, and Engine Bay Washes</h2>
@@ -323,47 +308,15 @@ export default function exteriorWash() {
 
       <div>
         <h3 className='text-large'>Check out some of the results from our exterior services</h3>
-        <div className="gallery-container" style={{width: 70 + 'vw'}}>
-          <Zoom>
-            <div className='gallery-image-div'>
-              <Image style={{borderRadius: 16}} alt='Lexus Exterior after a wash' objectFit="cover" src={ext1} loading="lazy" placeholder='blur' />
-            </div>
-          </Zoom>
-          <Zoom>
-            <div className='gallery-image-div'>
-              <Image style={{borderRadius: 16}} alt='Before and after our wash service' objectFit="cover" src={ext2} loading="lazy" placeholder='blur' />
-            </div>
-          </Zoom>
-          <Zoom>
-            <div className='gallery-image-div'>
-              <Image style={{borderRadius: 16}} alt='Clean and shiny Infinity after exterior detail' objectFit="cover" src={ext3} loading="lazy" placeholder='blur' />
-            </div>
-          </Zoom>
-          <Zoom>
-            <div className='gallery-image-div'>
-              <Image style={{borderRadius: 16}} alt='Washed and waxed show truck' objectFit="cover" src={ext4} loading="lazy" placeholder='blur' />
-            </div>
-          </Zoom>
-          <Zoom>
-            <div className='gallery-image-div'>
-              <Image style={{borderRadius: 16}} alt='Large GMC after our car wash service' objectFit="cover" src={ext5} loading="lazy" placeholder='blur' />
-            </div>
-          </Zoom>
-          <Zoom>
-            <div className='gallery-image-div'>
-              <Image style={{borderRadius: 16}} alt='Cleaned and washed wheel and rim' objectFit="cover" src={ext6} loading="lazy" placeholder='blur' />
-            </div>
-          </Zoom>
-          <Zoom>
-            <div className='gallery-image-div'>
-              <Image style={{borderRadius: 16}} alt='Black car clean exterior after Premium Dirt-Less Wash' objectFit="cover" src={ext7} loading="lazy" placeholder='blur' />
-            </div>
-          </Zoom>
-          <Zoom>
-            <div className='gallery-image-div'>
-              <Image style={{borderRadius: 16}} alt='Lexus exterior after a car wash' objectFit="cover" src={ext8} loading="lazy" placeholder='blur' />
-            </div>
-          </Zoom>
+        <div className="photo-grid">
+          <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5c7fc46a-ada8-4ee1-a95f-3faaf47ded00/public')`}}></div>
+          <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b5859464-3c0e-4fcf-8332-17155eb86d00/public')`}}></div>
+          <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/eb8099ef-8be3-4be2-77bc-ec6b65a7fc00/public')`}}></div>
+          <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f2fc5016-bb6c-4051-69e9-d533d51b8600/public')`}}></div>
+          <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5e5a1366-292c-4c52-3983-98f2e0b2d600/public')`}}></div>
+          <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/fe0c1c1d-4c2b-4bd4-d959-e5d325d87b00/public')`}}></div>
+          <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6667c959-e20c-4ec4-03a8-c9219eb78c00/public')`}}></div>
+          <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/dfcc9990-ee88-465d-de08-97f94b37b000/public')`}}></div>
         </div>
       </div>
       <h3>See more exterior photos in our <a href="/gallery/dirtless-wash-gallery" className='aside-link'>Exterior Wash Gallery</a>. For more engine bay photos check out our <a href="/gallery/engine-bay-gallery" className='aside-link'>Engine Gallery</a>.</h3>
