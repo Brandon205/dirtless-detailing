@@ -1,31 +1,18 @@
 import React from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
-import Zoom from 'react-medium-image-zoom';
-import 'react-medium-image-zoom/dist/styles.css';
-
-import cover from '../../public/imgs/pageimgs/exterior/IMG_20211103_105855.jpg';
-import ext1 from '../../public/imgs/pageimgs/ceramic/317895587_701820004796038_115520810281779526_n.jpg';
-import ext2 from '../../public/imgs/pageimgs/ceramic/317941187_811122646616266_4791919094544331114_n.jpg';
-import ext3 from '../../public/imgs/pageimgs/ceramic/317953380_3245073689065810_496222385512149880_n.jpg';
-import ext4 from '../../public/imgs/pageimgs/ceramic/318206630_688872332864156_6250333864852484039_n.jpg';
-import ext5 from '../../public/imgs/pageimgs/ceramic/organized1.jpg';
-import ext6 from '../../public/imgs/pageimgs/ceramic/318668138_534490881683360_5498452884377282120_n.jpg';
-import ext7 from '../../public/imgs/pageimgs/ceramic/319282824_6026927310663439_4187208472627188697_n.jpg';
-import ext8 from '../../public/imgs/pageimgs/ceramic/fenderDrops.jpg';
+import Metatags from '../../utils/Metatags';
 
 export default function LakeTapps() {
     return (
-        <div>
+        <div className='bg-contact'>
             <Head>
                 <title>Ceramic Coating in Lake Tapps | Dirt-Less Detailing</title>
-                <meta property="og:title" content="Ceramic Coating in Lake Tapps | Dirt-Less Detailing" />
-                <meta name="description" content="Want a ceramic coating to protect your car in Lake Tapps? Check out our options and offers on Graphene coatings here." />
-                <meta property="og:description" content="Want a ceramic coating to protect your car in Lake Tapps? Check out our options and offers on Graphene coatings here." />
-                <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://www.dirtlessdetailing.com/ceramic-coating/lake-tapps" />
-                <meta property="og:image" content={cover.src} />
-                <link rel="canonical" href="https://www.dirtlessdetailing.com/ceramic-coating/lake-tapps" />
+                <Metatags
+                    title='Ceramic Coating in Lake Tapps | Dirt-Less Detailing'
+                    description='Want a ceramic coating to protect your car in Lake Tapps? Check out our options and offers on Graphene coatings here.'
+                    image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a5260bdd-11e9-4e31-74ec-c1d75787e000/public'
+                    canonical='/ceramic-coating/lake-tapps'
+                />
                 <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
                     __html: `{
                         "@context": "http://schema.org",
@@ -33,7 +20,7 @@ export default function LakeTapps() {
                         "name": "Exterior Ceramic Coating",
                         "brand": "Dirt-Less Detailing",
                         "description": "Protect and enhance your vehicle's paint with our professional ceramic coating service. Our team at Dirt-Less Detailing uses top-quality products to provide long-lasting protection and a glossy finish for your car. Contact us to learn more and schedule your ceramic coating service today.",
-                        "image": "${cover.src}",
+                        "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a5260bdd-11e9-4e31-74ec-c1d75787e000/public",
                         "url": "https://www.dirtlessdetailing.com/ceramic-coating/Lake Tapps/",
                         "offers": [
                             {
@@ -98,9 +85,7 @@ export default function LakeTapps() {
                     }`,
                 }} />
             </Head>
-            <div className="cover">
-                <Image src={cover} alt="Water beading off of a ceramic coated car" layout="fill" objectFit='cover' placeholder='blur' priority />
-            </div>
+            <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a5260bdd-11e9-4e31-74ec-c1d75787e000/public')`}}></div>
             <div className="servicepage-header">
                 <h1>Kenzo Ceramic Coating Installation in Lake Tapps Washington</h1>
                 <h2>5-year IGL Graphene Coatings</h2>
@@ -144,10 +129,10 @@ export default function LakeTapps() {
             </main>
 
             <div className='only-bg'>
-                <h3 className='pricing-title text-black'>Our Ceramic Coating Pricing</h3>
-                <strong className='pricing-subtext'>*Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</strong>
-                <div className="pricing-container text-black">
-                    <div className="pricing-card">
+                <h3 className='pricing-title text-white'>Our Ceramic Coating Pricing</h3>
+                <strong className='subtext'>*Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</strong>
+                <div className="pricing-container text-white">
+                    <div className="pricing-card text-black">
                         <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Small</strong>
                         <strong className='size'>Protect</strong>
                         <p className="pricing-price pricing-border">$1,000</p>
@@ -157,7 +142,7 @@ export default function LakeTapps() {
                         <p className="example-vehicle pricing-border">Single/Extended Cabs</p>
                         <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                     </div>
-                    <div className="pricing-card">
+                    <div className="pricing-card text-black">
                         <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Medium</strong>
                         <strong className='size'>Protect</strong>
                         <p className="pricing-price pricing-border">$1,200</p>
@@ -167,7 +152,7 @@ export default function LakeTapps() {
                         <p className="example-vehicle pricing-border">Smaller SUV's</p>
                         <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                     </div>
-                    <div className="pricing-card">
+                    <div className="pricing-card text-black">
                         <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Large</strong>
                         <strong className='size'>Protect</strong>
                         <p className="pricing-price pricing-border">$1,400</p>
@@ -178,21 +163,21 @@ export default function LakeTapps() {
                         <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                     </div>
                 </div>
-                <strong className='pricing-subtext'>For more detailed information check out our main <a href="/detailing/ceramic" className='aside-link'>Ceramic</a> page.</strong>
+                <strong className='subtext'>For more detailed information check out our main <a href="/detailing/ceramic" className='aside-link'>Ceramic</a> page.</strong>
 
             </div>
 
             <div className='only-bg'>
-                <h3 className='pricing-title text-black'>Our Interior Coating Pricing</h3>
-                <strong className='pricing-subtext'>*Pricing does NOT include an <a href="/services/full-interior-detail" className='aside-link'>Interior Cleaning</a>, which you will need to add to get a coating.</strong>
-                <div className='pricing-container text-black'>
-                    <div className="pricing-card">
+                <h3 className='pricing-title text-white'>Our Interior Coating Pricing</h3>
+                <strong className='subtext'>*Pricing does NOT include an <a href="/services/full-interior-detail" className='aside-link'>Interior Cleaning</a>, which you will need to add to get a coating.</strong>
+                <div className='pricing-container text-white'>
+                    <div className="pricing-card text-black">
                         <strong className='size'>Fabric Coating</strong>
                         <p className="pricing-price pricing-border">$75</p>    
                         <p className="example-vehicle pricing-border">Any Size Vehicle</p>
                         <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                     </div>
-                    <div className="pricing-card">
+                    <div className="pricing-card text-black">
                         <strong className='size'>Leather Coating</strong>
                         <p className="pricing-price pricing-border">$150</p>
                         <p className="example-vehicle pricing-border">Any Size Vehicle</p>
@@ -206,66 +191,34 @@ export default function LakeTapps() {
                     <h3 className='text-large'>Exterior Ceramic Coating FAQ</h3>
                     <ul className='faq-ul'>
                         <li className='faq-li'>How long does it last?</li>
-                        <li className='faq-p text-black'>The paint coating should last 5 years, 50,000 miles, or a Lifetime<span className='special-package'>*</span> with our warranty. The coating on any trim, glass, lights, or wheels will last 1 year approximately.</li>
+                        <li className='faq-p text-white'>The paint coating should last 5 years, 50,000 miles, or a Lifetime<span className='special-package'>*</span> with our warranty. The coating on any trim, glass, lights, or wheels will last 1 year approximately.</li>
 
                         <li className='faq-li'>Can I still go through car washes?</li>
-                        <li className='faq-p text-black'>If you want to keep the ceramic coat in good condition and have it last as long as possible, you won't want to go through any car washes even touch-less ones.</li>
+                        <li className='faq-p text-white'>If you want to keep the ceramic coat in good condition and have it last as long as possible, you won't want to go through any car washes even touch-less ones.</li>
 
                         <li className='faq-li'>How should I wash my car then?</li>
-                        <li className='faq-p text-black'>For washing your coated vehicle you have a couple of options. Hand washing with our recommended products and techniques, or you can simply schedule monthly maintenance through us!</li>
+                        <li className='faq-p text-white'>For washing your coated vehicle you have a couple of options. Hand washing with our recommended products and techniques, or you can simply schedule monthly maintenance through us!</li>
 
                         <li className='faq-li'>How does the 5 year warranty work?</li>
-                        <li className='faq-p text-black'>If we do our yearly maintenance on the vehicle we guarantee that the ceramic coat will last 5 years or more.</li>
+                        <li className='faq-p text-white'>If we do our yearly maintenance on the vehicle we guarantee that the ceramic coat will last 5 years or more.</li>
 
                         <li className='faq-li'>How does the Lifetime warranty work?</li>
-                        <li className='faq-p text-black'>Your vehicles paint coating is guaranteed for life as long as you are on our monthly maintenance schedule. If you ever wish to cancel monthly maintenance, the remainder of your 5 year 50,000 mile warranty you had before takes effect.</li>
+                        <li className='faq-p text-white'>Your vehicles paint coating is guaranteed for life as long as you are on our monthly maintenance schedule. If you ever wish to cancel monthly maintenance, the remainder of your 5 year 50,000 mile warranty you had before takes effect.</li>
                     </ul>
                 </div>
             </div>
 
             <div>
-            <h3 className='text-large'>Check out some of the results from our Interior and Exterior Ceramic services.</h3>
-                <div className="gallery-container" style={{width: 70 + 'vw'}}>
-                    <Zoom>
-                        <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt='Side view of seat after leather ceramic coating' objectFit="cover" src={ext1} loading="lazy" placeholder='blur' />
-                        </div>
-                    </Zoom>
-                    <Zoom>
-                        <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt='Front view of seat after leather ceramic coating' objectFit="cover" src={ext2} loading="lazy" placeholder='blur' />
-                        </div>
-                    </Zoom>
-                    <Zoom>
-                        <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt='Water beads in a large area' objectFit="cover" src={ext3} loading="lazy" placeholder='blur' />
-                        </div>
-                    </Zoom>
-                    <Zoom>
-                        <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt='Large water beads near edge of car' objectFit="cover" src={ext4} loading="lazy" placeholder='blur' />
-                        </div>
-                    </Zoom>
-                    <Zoom>
-                        <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt='Small water beads on flat surface of vehicle' objectFit="cover" src={ext5} loading="lazy" placeholder='blur' />
-                        </div>
-                    </Zoom>
-                    <Zoom>
-                        <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt='Larger water beads on a ceramic coated vehicle' objectFit="cover" src={ext6} loading="lazy" placeholder='blur' />
-                        </div>
-                    </Zoom>
-                    <Zoom>
-                        <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt='Ceramic coating making large water droplets on vehicle' objectFit="cover" src={ext7} loading="lazy" placeholder='blur' />
-                        </div>
-                    </Zoom>
-                    <Zoom>
-                        <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt='Smaller water beads near edge of vehicle' objectFit="cover" src={ext8} loading="lazy" placeholder='blur' />
-                        </div>
-                    </Zoom>
+                <h3 className='text-large'>Check out some of the results from our Interior and Exterior Ceramic services.</h3>
+                <div className="photo-grid">
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5b0798e5-2648-4845-168b-98e7ff013100/public')`}}></div>
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3e71dbba-b8c6-4c21-7d4c-edc497331100/public')`}}></div>
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/43a02c30-4982-435d-7f91-6d81fd11a000/public')`}}></div>
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/fdce3625-66ac-4ea8-68e5-9f2e9e94c500/public')`}}></div>
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c8855b02-88e3-47c6-f8ab-835cead38f00/public')`}}></div>
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/eef9854b-8f53-4f66-fa7f-d7c97fc71e00/public')`}}></div>
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ab68bfcc-17a0-4468-539b-fded52edc500/public')`}}></div>
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a30c288d-c816-4a42-e313-d7fa80e04200/public')`}}></div>
                 </div>
             </div>
             <a href="/Contact" className="quote-btn location-quote-btn">Get a Quote Today!</a>
