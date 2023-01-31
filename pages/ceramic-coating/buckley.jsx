@@ -1,19 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
-import Image from 'next/image';
-import Zoom from 'react-medium-image-zoom';
-import 'react-medium-image-zoom/dist/styles.css';
-
-import cover from '../../public/imgs/pageimgs/exterior/IMG_20211103_105855.jpg';
-import ext1 from '../../public/imgs/pageimgs/ceramic/317895587_701820004796038_115520810281779526_n.jpg';
-import ext2 from '../../public/imgs/pageimgs/ceramic/317941187_811122646616266_4791919094544331114_n.jpg';
-import ext3 from '../../public/imgs/pageimgs/ceramic/317953380_3245073689065810_496222385512149880_n.jpg';
-import ext4 from '../../public/imgs/pageimgs/ceramic/318206630_688872332864156_6250333864852484039_n.jpg';
-import ext5 from '../../public/imgs/pageimgs/ceramic/organized1.jpg';
-import ext6 from '../../public/imgs/pageimgs/ceramic/318668138_534490881683360_5498452884377282120_n.jpg';
-import ext7 from '../../public/imgs/pageimgs/ceramic/319282824_6026927310663439_4187208472627188697_n.jpg';
-import ext8 from '../../public/imgs/pageimgs/ceramic/fenderDrops.jpg';
 
 export default function buckley() {
     return (

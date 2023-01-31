@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
-import Image from 'next/image';
 import Head from 'next/head';
 import Metatags from '../utils/Metatags';
 
@@ -12,9 +11,6 @@ import { BiCertification } from 'react-icons/bi';
 import { FaRegStar, FaMapMarkedAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
-
-import kenzo from '../public/imgs/pageimgs/homepage/project.png';
-import bbbImage from '../public/imgs/pageimgs/homepage/bbb-logo-small.png';
 
 export default function Home() {
     const [smallScreen, setSmallScreen] = useState(null);

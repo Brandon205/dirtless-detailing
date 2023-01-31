@@ -1,12 +1,7 @@
-import Image from 'next/image';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import ReactPlayer from 'react-player/lazy'; 
 import { BiLinkExternal } from 'react-icons/bi';
-import Zoom from 'react-medium-image-zoom';
-import 'react-medium-image-zoom/dist/styles.css';
-
-import cover from '../../public/imgs/PDLWashCover.webp';
 
 const steps = [
   ["Wash Vehicle", "Thorough strip wash top to bottom, including the gas door with the 2 bucket method or equivalent."],
@@ -99,9 +94,7 @@ export default function PDLWash() {
                   <p>Want to compare our Premium and normal wash services? Check out our <a href='/detailing/car-washes' className='aside-link'>comparison</a> page for more details.</p>
                 </div>
                 <div className='service-image'>
-                  <Zoom>
-                    <ReactPlayer width={280} height={487} url='https://res.cloudinary.com/brandon205/video/upload/v1674493883/Dirt-Less%20Detailing/Videos/received_618310056492003_3_dyax17.mp4' loop muted playing />
-                  </Zoom>
+                  <ReactPlayer width={280} height={487} url='https://res.cloudinary.com/brandon205/video/upload/v1674493883/Dirt-Less%20Detailing/Videos/received_618310056492003_3_dyax17.mp4' loop muted playing />
                 </div>
               </div>
 
