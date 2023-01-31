@@ -4,8 +4,6 @@ import Head from 'next/head';
 import Metatags from '../utils/Metatags';
 import 'react-toastify/dist/ReactToastify.css';
 
-import cover from '../public/imgs/main-cover.webp';
-
 import { FaPhoneAlt, FaFacebookMessenger, FaClock } from 'react-icons/fa';
 import { AiFillGift } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
@@ -132,7 +130,7 @@ export default function Contact() {
                 <Metatags
                     title='Contact Us | Dirt-Less Detailing'
                     description='Contact us here! Let us know any additional information we may need to know before your detail. Feel free to reach out with any questions!'
-                    image={cover.src}
+                    image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/public'
                     canonical='/Contact'
                 />
             </Head>

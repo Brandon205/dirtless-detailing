@@ -1,7 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
-import { imagery } from '../../public/imgs/pageimgs/ceramic/index';
 
 export default function CoatingGallery() {
   return (
