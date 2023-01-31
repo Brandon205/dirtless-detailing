@@ -1,37 +1,24 @@
 import React from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
-import Zoom from 'react-medium-image-zoom';
-import 'react-medium-image-zoom/dist/styles.css';
-
-import cover from '../../public/imgs/pageimgs/homepage/worktruck.webp';
-import ext1 from '../../public/imgs/pageimgs/exterior/IMG_20200722_161452.jpg';
-import ext2 from '../../public/imgs/pageimgs/exterior/IMG_20210309_092147.jpg';
-import int1 from '../../public/imgs/pageimgs/interior/IMG_20220211_135242.jpg';
-import int2 from '../../public/imgs/pageimgs/interior/IMG_20220712_144618.jpg';
-import pc1 from '../../public/imgs/pageimgs/paintCorrection/FB_IMG_1590172616958.jpg';
-import pc2 from '../../public/imgs/pageimgs/paintCorrection/IMG_20210526_055946.jpg';
-import ceramic1 from '../../public/imgs/pageimgs/paintCorrection/IMG_20220729_101013.jpg';
-import engine from '../../public/imgs/pageimgs/engine/IMG_20220915_134850.jpg';
+import Metatags from '../../utils/Metatags';
 
 export default function bonneyLake() {
     return (
-        <div className='location-container'>
+        <div className='location-container bg-contact'>
             <Head>
                 <title>Vehicle Detailing in Bonney Lake | Dirt-Less Detailing</title>
-                <meta property="og:title" content="Vehicle Detailing in Bonney Lake | Dirt-Less Detailing" />
-                <meta name="description" content="Interior • Exterior • Ceramic Coating • Paint Correction. Check out our top auto detailing services for Bonney Lake Washington" />
-                <meta property="og:description" content="Interior • Exterior • Ceramic Coating • Paint Correction. Check out our top auto detailing services for Bonney Lake Washington" />
-                <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://www.dirtlessdetailing.com/location/bonney-lake" />
-                <meta property="og:image" content={cover.src} />
-                <link rel="canonical" href="https://www.dirtlessdetailing.com/location/bonney-lake" />
+                <Metatags
+                    title='Vehicle Detailing in Bonney Lake | Dirt-Less Detailing'
+                    description='Interior • Exterior • Ceramic Coating • Paint Correction. Check out our top auto detailing services for Bonney Lake Washington'
+                    image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b441cde-1d0f-45d9-665f-e44bfce0d800/public'
+                    canonical='/location/bonney-lake'
+                />
                 <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
                     __html: `{
                         "@context": "https://schema.org/",
                         "@type": "LocalBusiness",
                         "name": "Dirt-Less Detailing",
-                        "image": "${cover.src}",
+                        "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/65eea438-142c-4422-24fe-16ec7eac3700/public",
                         "currenciesAccepted": "USD",
                         "priceRange": "$$$",
                         "openingHours": ["Mo-Su 7:00-19:00"],
@@ -59,9 +46,7 @@ export default function bonneyLake() {
                     }`,
                 }} />
             </Head>
-            <div className="cover">
-                <Image src={cover} alt="Car after a Dirt-Less Wash" layout="fill" objectFit='cover' placeholder='blur' priority />
-            </div>
+            <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/65eea438-142c-4422-24fe-16ec7eac3700/public')`}}></div>
             <div className="servicepage-header">
                 <h1>Mobile Detailing in Bonney Lake Washington</h1>
                 <h2>Ceramic Coating • Interior • Exterior • Paint Correction</h2>
@@ -81,7 +66,7 @@ export default function bonneyLake() {
 
                 <br className='extra-space' />
             </main>
-            <div className='locationpage-section no-bg'>
+            <div className='locationpage-section only-bg'>
                 <div>
                     <h3 className='text-large'>Services offered in Bonney Lake:</h3>
                     <div className="text-left">
@@ -101,53 +86,22 @@ export default function bonneyLake() {
 
             <div>
                 <h3 className='text-large'>Check out some of the results from our services</h3>
-                <div className="gallery-container" style={{width: 70 + 'vw'}}>
-                    <Zoom>
-                        <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt='Lexus Exterior after a wash' objectFit="cover" src={ext1} loading="lazy" placeholder='blur' />
-                        </div>
-                    </Zoom>
-                    <Zoom>
-                        <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt='Before and after our wash service' objectFit="cover" src={ext2} loading="lazy" placeholder='blur' />
-                        </div>
-                    </Zoom>
-                    <Zoom>
-                        <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt='Spotless Lexus interior' objectFit="cover" src={int1} loading="lazy" placeholder='blur' />
-                        </div>
-                    </Zoom>
-                    <Zoom>
-                        <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt='Cleaned BMW interior' objectFit="cover" src={int2} loading="lazy" placeholder='blur' />
-                        </div>
-                    </Zoom>
-                    <Zoom>
-                        <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt='Red truck after our paint correction service' objectFit="cover" src={pc1} loading="lazy" placeholder='blur' />
-                        </div>
-                    </Zoom>
-                    <Zoom>
-                        <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt='Truck after a paint correction job' objectFit="cover" src={pc2} loading="lazy" placeholder='blur' />
-                        </div>
-                    </Zoom>
-                    <Zoom>
-                        <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt='Sparkling van after a paint correction job' objectFit="cover" src={ceramic1} loading="lazy" placeholder='blur' />
-                        </div>
-                    </Zoom>
-                    <Zoom>
-                        <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt='Cleaned engine bay' objectFit="cover" src={engine} loading="lazy" placeholder='blur' />
-                        </div>
-                    </Zoom>
+                <div className="photo-grid">
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5c7fc46a-ada8-4ee1-a95f-3faaf47ded00/public')`}}></div>
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/24656e79-2a98-495c-99f6-3e65665c5300/public')`}}></div>
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ff2d836c-23d3-43fe-4f5c-844e5fb2a100/public')`}}></div>
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4b286353-ec88-4c47-225f-5890ed674000/public')`}}></div>
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f6170666-70f6-487c-4db8-26125453df00/public')`}}></div>
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b36b25e0-3f4f-41e9-75ce-5f1245ec6500/public')`}}></div>
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6e0ddf6d-7ccb-4ee8-5ae1-bdc6574eae00/public')`}}></div>
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/8c1574b9-7517-4c50-6b36-133352ab0a00/public')`}}></div>
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6fb3a112-d77a-41fb-e7ec-728b2185b600/public')`}}></div>
                 </div>
             </div>
 
             <div className='locationpage-section no-bg'>
                 <div className='location-gallery-container'>
-                    <h3 className='text-large'>Our Gallery Pages:</h3>
+                    <h3 className='text-large'>See more results down below:</h3>
                     <div className="text-left">
                         <a href="/gallery/interior-detail-gallery" className='aside-link text-medium'>Interior Cleaning Gallery</a>
                         <p className='mt-0'>Come check out some of the photos we have of what we have been able to do for our customers interiors!</p>
