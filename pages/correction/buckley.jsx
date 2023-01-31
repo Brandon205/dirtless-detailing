@@ -1,31 +1,18 @@
 import React from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
-import Zoom from 'react-medium-image-zoom';
-import 'react-medium-image-zoom/dist/styles.css';
-
-import cover from '../../public/imgs/pageimgs/paintCorrection/IMG_20220304_132750.jpg';
-import ext1 from '../../public/imgs/pageimgs/paintCorrection/FB_IMG_1590172607272.jpg';
-import ext2 from '../../public/imgs/pageimgs/paintCorrection/IMG_20210929_141852.jpg';
-import ext3 from '../../public/imgs/pageimgs/paintCorrection/IMG_20211123_170951.jpg';
-import ext4 from '../../public/imgs/pageimgs/paintCorrection/IMG_20220720_165323.jpg';
-import ext5 from '../../public/imgs/pageimgs/paintCorrection/IMG_20220909_124912.jpg';
-import ext6 from '../../public/imgs/pageimgs/paintCorrection/IMG_20220919_100906.jpg';
-import ext7 from '../../public/imgs/pageimgs/paintCorrection/IMG_20220727_091237.jpg';
+import Metatags from '../../utils/Metatags';
 
 export default function buckley() {
     return (
-        <div>
+        <div className='bg-contact'>
             <Head>
                 <title>Paint Correction in Buckley | Dirt-Less Detailing</title>
-                <meta property="og:title" content="Paint Correction in Buckley | Dirt-Less Detailing" />
-                <meta name="description" content="Scratches and swirls in your paint? We can help! With our Single and Two Stage Paint Correction services we can remove many imperfections!" />
-                <meta property="og:description" content="Scratches and swirls in your paint? We can help! With our Single and Two Stage Paint Correction services we can remove many imperfections!" />
-                <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://www.dirtlessdetailing.com/correction/buckley" />
-                <meta property="og:image" content={cover.src} />
-                <link rel="canonical" href="https://www.dirtlessdetailing.com/correction/buckley" />
-                
+                <Metatags
+                    title='Paint Correction in Buckley | Dirt-Less Detailing'
+                    description='Scratches and swirls in your paint? We can help! With our Single and Two Stage Paint Correction services we can remove many imperfections!'
+                    image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/eae0cc31-00b4-4fef-07e3-6dedd1b89200/public'
+                    canonical='/correction/buckley'
+                />
                 <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
                     __html: `{
                         "@context": "http://schema.org",
@@ -33,7 +20,7 @@ export default function buckley() {
                         "name": "Paint Correction",
                         "brand": "Dirt-Less Detailing",
                         "description": "Revive the shine and clarity of your vehicle's paint with our professional paint correction service. Contact us to learn more and schedule your paint correction service today.",
-                        "image": "${cover.src}",
+                        "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/eae0cc31-00b4-4fef-07e3-6dedd1b89200/public",
                         "url": "https://www.dirtlessdetailing.com/correction/buckley/",
                         "offers": [
                             {
@@ -98,9 +85,7 @@ export default function buckley() {
                     }`,
                 }} />
             </Head>
-            <div className="cover">
-                <Image src={cover} alt="Car after Paint Correction service" layout="fill" objectFit='cover' placeholder='blur' priority />
-            </div>
+            <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/eae0cc31-00b4-4fef-07e3-6dedd1b89200/public')`}}></div>
             <div className="servicepage-header location-header">
                 <h1>Paint Correction in Buckley Washington</h1>
                 <h2>Single and Two Stage Paint Correction services</h2>
@@ -247,10 +232,10 @@ export default function buckley() {
             <br className='extra-space' />
 
             <div className='only-bg'>
-                <h3 className='pricing-title text-black'>Our Paint Correction Pricing</h3>
-                <strong className='pricing-subtext'>*Final pricing may vary based on your vehicle condition and size.</strong>
-                <div className="pricing-container text-black">
-                    <div className="pricing-card">
+                <h3 className='pricing-title text-white'>Our Paint Correction Pricing</h3>
+                <strong className='subtext'>*Final pricing may vary based on your vehicle condition and size.</strong>
+                <div className="pricing-container text-white">
+                    <div className="pricing-card text-black">
                         <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Small</strong>
                         <strong className='size'>Single Stage</strong>
                         <p className="pricing-price pricing-border">$300- $450</p>
@@ -260,7 +245,7 @@ export default function buckley() {
                         <p className="example-vehicle pricing-border">Single/Extended Cabs</p>
                         <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                     </div>
-                    <div className="pricing-card">
+                    <div className="pricing-card text-black">
                         <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Medium</strong>
                         <strong className='size'>Single Stage</strong>
                         <p className="pricing-price pricing-border">$450- $600</p>
@@ -270,7 +255,7 @@ export default function buckley() {
                         <p className="example-vehicle pricing-border">Smaller SUV's</p>
                         <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                     </div>
-                    <div className="pricing-card">
+                    <div className="pricing-card text-black">
                         <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Large</strong>
                         <strong className='size'>Single Stage</strong>
                         <p className="pricing-price pricing-border">$600- $850</p>
@@ -285,42 +270,14 @@ export default function buckley() {
 
             <div>
                 <h3 className='text-large'>Some of the results from our Paint Correction service:</h3>
-                <div className="gallery-container" style={{width: 70 + 'vw'}}>
-                    <Zoom>
-                        <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt={'Black car after paint correction service'} objectFit="cover" src={ext1} loading="lazy" placeholder='blur' />
-                        </div>
-                    </Zoom>
-                    <Zoom>
-                        <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt={'Hood of vehicle after our paint correction service'} objectFit="cover" src={ext2} loading="lazy" placeholder='blur' />
-                        </div>
-                    </Zoom>
-                    <Zoom>
-                        <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt={'Angle view of F350 after paint correction service'} objectFit="cover" src={ext3} loading="lazy" placeholder='blur' />
-                        </div>
-                    </Zoom>
-                    <Zoom>
-                        <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt={'Angle view of Jeep in the middle of our paint correction service'} objectFit="cover" src={ext4} loading="lazy" placeholder='blur' />
-                        </div>
-                    </Zoom>
-                    <Zoom>
-                        <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt={'Side view of project car after our paint correction service'} objectFit="cover" src={ext5} loading="lazy" placeholder='blur' />
-                        </div>
-                    </Zoom>
-                    <Zoom>
-                        <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt={'Side view of minivan after our paint correction service'} objectFit="cover" src={ext6} loading="lazy" placeholder='blur' />
-                        </div>
-                    </Zoom>
-                    <Zoom>
-                        <div className='gallery-image-div'>
-                            <Image style={{borderRadius: 16}} alt={'Angle view of van in the middle of our paint correction service'} objectFit="cover" src={ext7} loading="lazy" placeholder='blur' />
-                        </div>
-                    </Zoom>
+                <div className="photo-grid">
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a88a5723-312c-4d9f-7e44-6751373ccc00/public')`}}></div>
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/05a03dc9-11c9-4ad8-a8a3-eba28b243e00/public')`}}></div>
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/fbae254b-fd19-4fb9-2af7-7fa74e753c00/public')`}}></div>
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2e52fbef-fad5-4867-9c02-157690455900/public')`}}></div>
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a1962dba-9065-4a4e-9c99-792960ba5f00/public')`}}></div>
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/42bf45ce-c76d-4614-817b-7f4b5a55b200/public')`}}></div>
+                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/816ccafc-084b-4d7d-8735-8da8117a4700/public')`}}></div>
                 </div>
             </div>
             <h3>See more in our <a href="/gallery/paint-correction-gallery" className='aside-link'>Paint Correction Gallery</a>.</h3>

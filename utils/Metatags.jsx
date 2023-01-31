@@ -1,5 +1,4 @@
 export default function Metatags({title, description, image, canonical}) {
-    console.log('CANNONICAL: ', `https://www.dirtlessdetailing.com${canonical}`)
     return (
         <>
             <meta property="og:title" content={title} />
