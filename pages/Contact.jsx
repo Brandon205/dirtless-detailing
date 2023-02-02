@@ -150,25 +150,25 @@ export default function Contact() {
                     <hr className="contact-border" />
                     <div className='contact-icon-container'>
                         <GoLocation className='contact-icon' />
-                        <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link location-link" target="_blank" rel='noreferrer'>9305 205th Ave E, Bonney Lake, Washington 98391</a>
+                        <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link location-link" target="_blank" rel='noopener'>9305 205th Ave E, Bonney Lake, Washington 98391</a>
                     </div>
                     <hr className="contact-border" />
                     <div className='contact-icon-container'>
                         <FaFacebookMessenger className='contact-icon' />
-                        <a href="https://www.facebook.com/DirtLessDetailing/" className="contact-link location-link" target="_blank" rel="noreferrer">Facebook Messenger</a>
+                        <a href="https://www.facebook.com/DirtLessDetailing/" className="contact-link location-link" target="_blank" rel="noopener">Facebook Messenger</a>
                     </div>
                     <hr className="contact-border" />
                     <div className='contact-icon-container'>
                         <FaPhoneAlt className='contact-icon' />
                         <div>
-                            <a className='contact-link location-link' href="tel:2532529758" target="_blank" rel="noreferrer">(253) 252-9758</a><p style={{ display: 'inline' }}> (Text or Call)</p>
+                            <a className='contact-link location-link' href="tel:2532529758" target="_blank" rel="noopener">(253) 252-9758</a><p style={{ display: 'inline' }}> (Text or Call)</p>
                         </div>
                     </div>
                     <hr className="contact-border" />
                     <div className='contact-icon-container'>
                         <MdOutlineEmail className='contact-icon' />
                         <div>
-                            <a className='contact-link location-link' href="mailto:brenden@dirtlessdetailing.com?subject = Schedule a Dirt-Less Detail" target="_blank" rel="noreferrer">brenden@dirtlessdetailing.com</a>
+                            <a className='contact-link location-link' href="mailto:brenden@dirtlessdetailing.com?subject = Schedule a Dirt-Less Detail" target="_blank" rel="noopener">brenden@dirtlessdetailing.com</a>
                         </div>
                     </div>
                     <hr className="contact-border" />
