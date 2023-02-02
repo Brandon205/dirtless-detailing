@@ -9,7 +9,7 @@ export default function LakeTapps() {
                 <title>Paint Correction in Lake Tapps | Dirt-Less Detailing</title>
                 <Metatags
                     title='Paint Correction in Lake Tapps | Dirt-Less Detailing'
-                    description='Scratches and swirls in your paint? We can help! With our Single and Two Stage Paint Correction services we can remove many imperfections!'
+                    description='Are you in need of a Paint Correction/Scratch Removal service in Tehaleh? We can help! With our Paint Correction services we can remove many imperfections!'
                     image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/eae0cc31-00b4-4fef-07e3-6dedd1b89200/public'
                     canonical='/correction/lake-tapps'
                 />
