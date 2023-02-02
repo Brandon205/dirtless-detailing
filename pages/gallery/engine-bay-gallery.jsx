@@ -2,6 +2,12 @@ import React from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 
+export async function getStaticProps(context) {
+  return {
+      props: {}
+  }
+}
+
 export default function PaintCorrectionGallery() {
   return (
     <section className='gallery-content-container'>
