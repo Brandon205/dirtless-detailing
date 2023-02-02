@@ -11,7 +11,7 @@ export default function blackDiamond() {
                     title='Vehicle Detailing in Black Diamond | Dirt-Less Detailing'
                     description='Interior • Exterior • Ceramic Coating • Paint Correction. Check out our top auto detailing services for Black Diamond Washington'
                     image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b441cde-1d0f-45d9-665f-e44bfce0d800/public'
-                    canonical='/location/bonney-lake'
+                    canonical='/location/black-diamond'
                 />
                 <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
                     __html: `{

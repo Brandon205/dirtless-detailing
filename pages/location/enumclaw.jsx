@@ -11,7 +11,7 @@ export default function enumclaw() {
                     title='Vehicle Detailing in Enumclaw | Dirt-Less Detailing'
                     description='Interior • Exterior • Ceramic Coating • Paint Correction. Check out our top auto detailing services for Enumclaw Washington'
                     image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/public'
-                    canonical='/location/bonney-lake'
+                    canonical='/location/enumclaw'
                 />
                 <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
                     __html: `{
