@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import Zoom from 'react-medium-image-zoom';
@@ -11,6 +12,8 @@ import { RiPaintFill } from 'react-icons/ri';
 import ReactPlayer from 'react-player/lazy';
 
 export default function ExtCoatings() {
+    const [slide, setSlide] = useState(50);
+
     return (
         <section className="service-content-container bg-contact">
             <Head>
@@ -162,6 +165,15 @@ export default function ExtCoatings() {
                         <h2 className='text-large'>Professional Interior Coatings <a href='/services/interior-ceramic-coating' className='aside-link'><BiLinkExternal /></a></h2>
                         <div className="text-left">
                             <p>Whether it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe any spill up before it seeps in. Get more info on our <a href="/services/interior-ceramic-coating" className='aside-link'>Interior Coating</a> page.</p>
+                        </div>
+
+                        <div style={{display: 'grid'}} className='place-center'>
+                            <div className='slider-container'>
+                                <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a2d79f4f-82e7-488d-deaf-7b0f7136a400/public')`}} className='slider-img'></div>
+                                <div style={{width: 0 + slide + '%', backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d80fdd8a-40cd-4481-91cf-c80025e68a00/public')`}} className='slider-img foreground'></div>
+                                <input type="range" min="1" max="100" value={slide} onChange={(e) => setSlide(Number(e.target.value))} className="slider" name='slider' id="slider" />
+                                {/* <div style={{left: slide - 1.5 + '%'}} className='slider-button'></div> */}
+                            </div>
                         </div>
 
                         <div id='faq'>
