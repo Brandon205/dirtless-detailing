@@ -1,6 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 
 export default function ceramic() {
@@ -230,10 +232,16 @@ export default function ceramic() {
 
             <h4 className='text-large'>Informational photos from IGL:</h4>
             <strong className='subtext'>Check out more from our Ceramic Coating provider <a href='https://iglcoatingsusa.com/' target='_blank' rel='noopener' className='aside-link'>IGL</a>.</strong>
-            <div className="photo-grid">
-                <div className="card card-tall card-wide" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b69dcca1-8d92-414e-32c9-ddfe247fa100/public')`}}></div>
-                <div className="card card-tall" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/32aa3e25-1fcb-4e05-760a-eb53f4b18400/public')`}}></div>
-                <div className="card card-wide" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b3d13f8-c7ec-44fc-7750-ab0d466eae00/public')`}}></div>
+            <div className="photo-grid place-center">
+                <Zoom>
+                    <div aria-label="What an IGL Coating can protect your paint from" role='img' className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b69dcca1-8d92-414e-32c9-ddfe247fa100/public')`, width: 260 + 'px', height: 250 + 'px'}} />
+                </Zoom>
+                <Zoom>
+                    <div aria-label="Paint layers explained" role='img' className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/32aa3e25-1fcb-4e05-760a-eb53f4b18400/public')`, width: 260 + 'px', height: 250 + 'px'}} />
+                </Zoom>
+                <Zoom>
+                    <div aria-label="What to expect from an IGL Coating" role='img' className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b3d13f8-c7ec-44fc-7750-ab0d466eae00/public')`, width: 260 + 'px', height: 250 + 'px'}} />
+                </Zoom>
             </div>
 
             <br className="extra-space" />

@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 import { BiLinkExternal } from 'react-icons/bi';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 
@@ -32,7 +34,8 @@ export default function TwoPC() {
         </div>
       </li>
     )
-  })
+  });
+
   return (
     <section className='service-content-container'>
       <Head>
@@ -129,6 +132,32 @@ export default function TwoPC() {
             <br className='extra-space' />
 
             <div>
+              <h3 className='pricing-title text-white'>Our Two Stage Paint Correction Pricing</h3>
+              <p className='subtext'>*Final pricing may vary based on your vehicle condition and size.</p>
+              <div className="pricing-container">
+                <div className="pricing-card text-black">
+                  <strong className='size'>Small</strong>
+                  <p className="pricing-price pricing-border">$450- $600</p>
+                  <p className="example-vehicle pricing-border">Smaller Trucks</p>
+                  <p className="example-vehicle pricing-border">Most Cars</p>
+                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                </div>
+                <div className="pricing-card text-black">
+                  <strong className='size'>Medium</strong>
+                  <p className="pricing-price pricing-border">$600- $850</p>
+                  <p className="example-vehicle pricing-border">Mid-Size SUV's</p>
+                  <p className="example-vehicle pricing-border">Most Wagons</p>
+                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                </div>
+                <div className="pricing-card text-black">
+                  <strong className='size'>Large</strong>
+                  <p className="pricing-price pricing-border">$800- $1,100</p>
+                  <p className="example-vehicle pricing-border">Large SUV's</p>
+                  <p className="example-vehicle pricing-border">Trucks</p>
+                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                </div>
+              </div>
+
               <h3 className='pricing-title text-white'>Extra Add-ons <a href='/services/interior-exterior-detailing-combo' className='aside-link'><BiLinkExternal /></a></h3>
               <p className='subtext'>Our current add-ons that are typically paired with a Two Stage Paint Correction.</p>
               <div className="pricing-container">
@@ -146,7 +175,9 @@ export default function TwoPC() {
             <h4 className='text-large'>Visual example of different paint defects:</h4>
             <p className='subtext'>This gives an example of why deeper scratches aren't removable without repainting.</p>
             <div className="photo-grid place-center">
-              <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3c1c25a3-cbab-4f82-91b1-ba2a30626500/public')`, width: 260 + 'px', height: 250 + 'px'}}></div>
+              <Zoom>
+                <div aria-label="Paint defects info and depth" role='img' className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3c1c25a3-cbab-4f82-91b1-ba2a30626500/public')`, width: 260 + 'px', height: 250 + 'px'}} />
+              </Zoom>
             </div>
 
             <br className='extra-space' />

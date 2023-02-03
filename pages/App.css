@@ -1127,6 +1127,11 @@ hr {
   transform: scale(1.1);
 }
 
+.photo-grid.service-grid div {
+  width: 100%;
+  height: 100%;
+}
+
 @media screen and (min-width: 600px) {
   .card-tall {
     grid-row: span 2 / auto;
@@ -1136,7 +1141,6 @@ hr {
     grid-column: span 2 / auto;
   }
 }
-
 
 .gallery-container {
   width: 90vw;
@@ -1567,6 +1571,10 @@ hr {
 
 .extra-space {
   margin: 1rem auto;
+}
+
+.gap-sm {
+  gap: 2rem;
 }
 
 .text-white {
