@@ -279,8 +279,8 @@ export default function ExtCoatings() {
                         </div>
 
                         <h3 className='pricing-title text-white'>Our Monthly/Yearly Maintenance Pricing</h3>
-                        <h4 className='subtext'>The goal of our monthly maintenance is to keep your vehicle looking like new year-round. Every month you will get a <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> and a <a href='/services/full-interior-detail' className='aside-link'>Full Interior Detail</a>.</h4>
-                        <h4 className='subtext'>Our yearly service goes into far more detail and we will: • Wash the entire vehicle • Perform Iron Decontamination treatment • Top the vehicle off with a ceramic booster • Apply a new coat of ceramic to the windshield.</h4>
+                        <h4 className='subtext'><span className='special-package'>MONTHLY: </span>The goal of our monthly maintenance is to keep your vehicle looking like new year-round. Every month you will get a <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> and a <a href='/services/full-interior-detail' className='aside-link'>Full Interior Detail</a>.</h4>
+                        <h4 className='subtext'><span className='special-package'>YEARLY: </span>Our yearly service goes into far more detail and we will: • Wash the entire vehicle • Perform Iron Decontamination treatment • Top the vehicle off with a ceramic booster • Apply a new coat of ceramic to the windshield.</h4>
                         <div className="pricing-container text-black">
                             <div className="pricing-card">
                                 <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Small</strong>
