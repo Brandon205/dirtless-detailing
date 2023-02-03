@@ -87,7 +87,7 @@ export default function SinglePC() {
           }`,
         }} />
       </Head>
-      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4da6f2e1-140d-4f39-abed-9624c82f2a00/public')`}}></div>
+      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4da6f2e1-140d-4f39-abed-9624c82f2a00/cover')`}}></div>
       <div className="servicepage-header">
         <h1>Single Stage Paint Correction</h1>
         <h2 className='page-subheading'>Restore your vehicles paint by removing scratches and swirls</h2>

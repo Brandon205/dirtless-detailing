@@ -14,7 +14,7 @@ export default function FullIntGallery() {
           canonical='/gallery/interior-detail-gallery'
         />
       </Head>
-      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/213e3fa9-1def-44b2-3031-1901432b9a00/public')`}}></div>
+      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/213e3fa9-1def-44b2-3031-1901432b9a00/cover')`}}></div>
       <div className="servicepage-heading">
         <h1>Full Interior Cleaning Gallery</h1>
         <p>We have cleaned it all, even the worst of interiors. Check out the Gallery below. Take a look at our <a href="/services/full-interior-detail" className='aside-link' >Full Interior Cleaning</a> page to find out more.</p>

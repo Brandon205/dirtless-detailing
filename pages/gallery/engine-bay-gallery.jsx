@@ -20,7 +20,7 @@ export default function PaintCorrectionGallery() {
           canonical='/gallery/engine-bay-gallery'
         />
       </Head>
-      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a7dcc1f9-9d92-4c21-cf16-fa498046af00/public')`}}></div>
+      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a7dcc1f9-9d92-4c21-cf16-fa498046af00/cover')`}}></div>
       <div className="servicepage-heading">
         <h1>Engine Cleaning Gallery</h1>
         <p>Check out the gallery below to see what we can do to clean your engine bay. Take a look at our <a href="/services/add-ons#engine" className='aside-link' >Engine Cleaning</a> section on our add-ons page for more info.</p>

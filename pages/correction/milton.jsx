@@ -85,7 +85,7 @@ export default function milton() {
                     }`,
                 }} />
             </Head>
-            <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/eae0cc31-00b4-4fef-07e3-6dedd1b89200/public')`}}></div>
+            <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/eae0cc31-00b4-4fef-07e3-6dedd1b89200/cover')`}}></div>
             <div className="servicepage-header location-header">
                 <h1>Paint Correction in Milton Washington</h1>
                 <h2>Single and Two Stage Paint Correction services</h2>

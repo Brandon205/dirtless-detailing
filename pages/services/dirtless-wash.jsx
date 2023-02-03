@@ -66,7 +66,7 @@ export default function DLWash() {
           }`,
         }} />
       </Head>
-      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d3ac6cf4-b415-476d-8286-5f169f4dca00/public')`}}></div>
+      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d3ac6cf4-b415-476d-8286-5f169f4dca00/cover')`}}></div>
       <div className="servicepage-header">
         <h1>Dirt-Less Wash</h1>
         <h2 className='page-subheading'>Get a Dirt-Less Wash and have your vehicle shine like never before!</h2>

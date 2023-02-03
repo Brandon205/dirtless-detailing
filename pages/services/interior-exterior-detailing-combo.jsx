@@ -44,7 +44,7 @@ export default function Combo() {
           }`,
         }} />
       </Head>
-      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2f40a30b-c1c1-4dba-3b4b-9f3521eaa800/public')`}}></div>
+      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2f40a30b-c1c1-4dba-3b4b-9f3521eaa800/cover')`}}></div>
       <div className="servicepage-header">
         <h1>Full Interior and Exterior Combo</h1>
         <h2 className='page-subheading'>Full Interior Cleaning, Premium Dirt-Less Wash, and get an Engine Bay Cleaning on us!</h2>

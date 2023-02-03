@@ -14,7 +14,7 @@ export default function PaintCorrectionGallery() {
           canonical='/gallery/paint-correction-gallery'
         />
       </Head>
-      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/dcfb9b5c-1867-4678-8ae3-2d88d1286300/public')`}}></div>
+      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/dcfb9b5c-1867-4678-8ae3-2d88d1286300/cover')`}}></div>
       <div className="servicepage-heading">
         <h1>Paint Correction Gallery</h1>
         <p>Check out the gallery below to see what we can do to correct your paint problems. Take a look at our <a href='/detailing/correction' className='aside-link'>Paint Correction</a> page for more details on both of the correction services we offer.</p>

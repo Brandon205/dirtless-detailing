@@ -46,7 +46,7 @@ export default function LakeTapps() {
                     }`,
                 }} />
             </Head>
-            <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/public')`}}></div>
+            <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/cover')`}}></div>
             <div className="servicepage-header">
                 <h1>Mobile Detailing in Lake Tapps Washington</h1>
                 <h2>Ceramic Coating • Interior • Exterior • Paint Correction</h2>

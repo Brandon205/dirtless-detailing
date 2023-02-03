@@ -87,7 +87,7 @@ export default function TwoPC() {
           }`,
         }} />
       </Head>
-      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f6fc5ab8-7f12-4b69-4986-f007fdbf7700/public')`}}></div>
+      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f6fc5ab8-7f12-4b69-4986-f007fdbf7700/cover')`}}></div>
       <div className="servicepage-header">
         <h1>Two Stage Paint Correction</h1>
         <h2 className='page-subheading'>Go the extra mile and remove years of scratches and swirls with our Two Stage Paint Correction service.</h2>

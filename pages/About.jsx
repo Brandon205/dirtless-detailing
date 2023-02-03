@@ -85,7 +85,7 @@ export default function About() {
           }`,
         }} />
       </Head>
-      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/public')`}}></div>
+      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover')`}}></div>
       <div className="servicepage-header">
         <h1>About Us/FAQ</h1>
         <h2 className='page-subheading'>Learn a little about us, and see our most commonly asked questions here</h2>

@@ -46,7 +46,7 @@ export default function bonneyLake() {
                     }`,
                 }} />
             </Head>
-            <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/65eea438-142c-4422-24fe-16ec7eac3700/public')`}}></div>
+            <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/65eea438-142c-4422-24fe-16ec7eac3700/cover')`}}></div>
             <div className="servicepage-header">
                 <h1>Mobile Detailing in Bonney Lake Washington</h1>
                 <h2>Ceramic Coating • Interior • Exterior • Paint Correction</h2>

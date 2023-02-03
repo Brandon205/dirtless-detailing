@@ -93,7 +93,7 @@ export default function ExtCoatings() {
                     }`,
                 }} />
             </Head>
-            <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b441cde-1d0f-45d9-665f-e44bfce0d800/public')`}}></div>
+            <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b441cde-1d0f-45d9-665f-e44bfce0d800/cover')`}}></div>
             <div className="servicepage-header">
                 <h1>Exterior Ceramic Coating</h1>
                 <h2 className='page-subheading'>Get a professionally installed 5 year Ceramic Coating professionally to protect your vehicle year-round.</h2>

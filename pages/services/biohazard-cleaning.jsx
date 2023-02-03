@@ -65,7 +65,7 @@ export default function Bio() {
           }`,
         }} />
       </Head>
-      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/901f2f70-2010-4f2b-aac3-6a98dc38e400/public')`}}></div>
+      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/901f2f70-2010-4f2b-aac3-6a98dc38e400/cover')`}}></div>
       <div className="servicepage-header">
         <h1>Biohazard Cleaning</h1>
         <h2 className='page-subheading'>Mold, odors, or other mildly hazardous spills in your vehicle? Look no further than our Biohazard cleaning.</h2>

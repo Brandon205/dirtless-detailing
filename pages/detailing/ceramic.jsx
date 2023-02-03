@@ -88,7 +88,7 @@ export default function ceramic() {
                     }`,
                 }} />
             </Head>
-            <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/cfc8823e-d28e-4ccc-255a-afa3fa5ad400/public')`}}></div>
+            <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/cfc8823e-d28e-4ccc-255a-afa3fa5ad400/cover')`}}></div>
             <div className="servicepage-header">
                 <h1>Interior / Exterior Ceramic Coatings</h1>
                 <h2>IGL Graphene Coatings</h2>

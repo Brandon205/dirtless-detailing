@@ -85,7 +85,7 @@ export default function bonneyLake() {
                     }`,
                 }} />
             </Head>
-            <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a5260bdd-11e9-4e31-74ec-c1d75787e000/public')`}}></div>
+            <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a5260bdd-11e9-4e31-74ec-c1d75787e000/cover')`}}></div>
             <div className="servicepage-header">
                 <h1>Kenzo Ceramic Coating Installation in Bonney Lake Washington</h1>
                 <h2>5-year IGL Graphene Coatings</h2>

@@ -71,7 +71,7 @@ export default function PDLWash() {
           }`,
         }} />
       </Head>
-      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/9a9af281-4951-4113-7d02-dcea991eed00/public')`}}></div>
+      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/9a9af281-4951-4113-7d02-dcea991eed00/cover')`}}></div>
       <div className="servicepage-header">
         <h1>Premium Dirt-Less Wash</h1>
         <h2 className='page-subheading'>Our Premium Wash goes above and beyond removing all exterior contaminants and giving your paint an even cleaner shine.</h2>

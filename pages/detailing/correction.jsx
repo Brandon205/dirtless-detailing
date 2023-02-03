@@ -88,7 +88,7 @@ export default function correction() {
                     }`,
                 }} />
             </Head>
-            <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ff2d836c-23d3-43fe-4f5c-844e5fb2a100/public')`}}></div>
+            <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ff2d836c-23d3-43fe-4f5c-844e5fb2a100/cover')`}}></div>
             <div className="servicepage-header location-header">
                 <h1>Paint Correction Services</h1>
                 <h2>Single and Two Stage Paint Correction services</h2>

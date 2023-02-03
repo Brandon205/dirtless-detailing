@@ -65,7 +65,7 @@ export default function exteriorWash() {
           }`,
         }} />
       </Head>
-      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/fee6fb10-d853-445b-1cb9-0e42779cd800/public')`}}></div>
+      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/fee6fb10-d853-445b-1cb9-0e42779cd800/cover')`}}></div>
       <div className="servicepage-header location-header">
         <h1>Car Wash Services</h1>
         <h2>Dirt-Less Wash, Premium Dirt-Less Wash, and Engine Bay Washes</h2>

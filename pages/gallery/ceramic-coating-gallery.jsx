@@ -14,7 +14,7 @@ export default function CoatingGallery() {
           canonical='/gallery/ceramic-coating-gallery'
         />
       </Head>
-      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/8c1574b9-7517-4c50-6b36-133352ab0a00/public')`}}></div>
+      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/8c1574b9-7517-4c50-6b36-133352ab0a00/cover')`}}></div>
       <div className="servicepage-heading">
         <h1>Ceramic Coating Gallery</h1>
         <p>Check out the gallery below to see the results of a freshly applied IGL Ceramic Coating. Take a look at our <a href="/services/interior-ceramic-coating" className='aside-link' >Interior Coatings</a> page or our <a href="/detailing/ceramic" className='aside-link' >Ceramic Coating</a> page to learn more about these services.</p>

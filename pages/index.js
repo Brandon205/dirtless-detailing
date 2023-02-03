@@ -73,7 +73,7 @@ export default function Home() {
                     }`,
                 }} />
             </Head>
-            <div className="maincover" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/public')` }}></div>
+            <div className="maincover" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover')` }}></div>
             <header className="home-header">
                 <div className='landing-div'>
                     <h1 className='title-top'>Your Bonney Lake <br /><span className='title-bottom'>Detailing & Ceramic Coating Specialists</span></h1>
