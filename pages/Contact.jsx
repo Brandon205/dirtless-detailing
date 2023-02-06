@@ -160,23 +160,17 @@ export default function Contact() {
                     <hr className="contact-border" />
                     <div className='contact-icon-container'>
                         <FaPhoneAlt className='contact-icon' />
-                        <div>
-                            <a className='contact-link location-link' href="tel:2532529758" target="_blank" rel="noopener">(253) 252-9758</a><p style={{ display: 'inline' }}> (Text or Call)</p>
-                        </div>
+                        <a className='contact-link location-link' href="tel:2532529758" target="_blank" rel="noopener">(253) 252-9758</a><p style={{ display: 'inline' }}> (Text or Call)</p>
                     </div>
                     <hr className="contact-border" />
                     <div className='contact-icon-container'>
                         <MdOutlineEmail className='contact-icon' />
-                        <div>
-                            <a className='contact-link location-link' href="mailto:brenden@dirtlessdetailing.com?subject = Schedule a Dirt-Less Detail" target="_blank" rel="noopener">brenden@dirtlessdetailing.com</a>
-                        </div>
+                        <a className='contact-link location-link' href="mailto:brenden@dirtlessdetailing.com?subject = Schedule a Dirt-Less Detail" target="_blank" rel="noopener">brenden@dirtlessdetailing.com</a>
                     </div>
                     <hr className="contact-border" />
                     <div className='contact-icon-container'>
                         <AiFillGift className='contact-icon' />
-                        <div>
-                            <p>Looking to get a gift for someone? All of our services can be bought as a gift certificate, just select "For Someone Else" below!</p>
-                        </div>
+                        <p>Looking to get a gift for someone? All of our services can be bought as a gift certificate, just select "For Someone Else" below!</p>
                     </div>
                 </div>
             </div>

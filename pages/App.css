@@ -345,6 +345,7 @@ header h1 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   position: relative;
   height: 90vh;
   width: 100%;
@@ -532,9 +533,12 @@ option {
 
 .contact-icon-container {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
+}
+
+.contact-icon-container p {
+  flex-shrink: 5;
 }
 
 .contact-icon {
