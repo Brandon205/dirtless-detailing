@@ -27,7 +27,7 @@
             #DD962B,
             #f2ec53);
     text-align: left;
-    padding: 7rem 5rem;
+    padding: 7rem 1rem;
     text-align: center;
     margin: -7vh auto 0 auto;
     position: relative;
@@ -46,10 +46,20 @@
     transform: skewY(var(--skew-angle));
 }
 
+.diagonalP {
+    max-width: 90vw;
+}
+
 @media screen and (min-width: 450px) {
     .diagonalP {
         max-width: 60vw;
-        font-size: 1.2em;
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 880px) {
+    .diagonal {
+        padding: 7rem 5rem;
     }
 }
 
@@ -119,9 +129,8 @@
 .formContainer {
     background-color: #3a3c3f;
     width: 60vw;
-    margin: 15vh auto 0 auto;
+    margin: 10vh auto 0 auto;
     padding: 1rem;
-    margin-top: 15vh;
     border-radius: 1rem;
     text-align: left;
 }
@@ -139,4 +148,8 @@
 .textXl {
     font-size: 3em;
     margin-bottom: 0;
+}
+
+.strikethrough {
+    text-decoration: line-through;
 }

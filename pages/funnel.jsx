@@ -18,9 +18,9 @@ export default function funnel() {
             </div>
 
             <div className={styles.diagonal}>
-                <h1 className={styles.textXl}>Bonney Lake Ceramic Coating/Detailing Specialists</h1>
+                <h1 className={styles.textXl}>Bonney Lake's Trusted Auto Detailing Specialists</h1>
                 <p className={styles.diagonalP}>
-                    We are Bonney Lake's trusted auto detailers. Getting you car detailed couldn't be easier through us!
+                    We are Bonney Lake's go to spot for Ceramic Coatings and all of your detailing needs. Getting you car detailed couldn't be easier through us!
                     <br />
                     Below you will find our trusted and best services grouped into simple package structures. 
                 </p>
@@ -156,7 +156,8 @@ export default function funnel() {
             </div>
 
             <div className={styles.diagonal} style={{marginTop: 10 + 'vh'}}>
-                <h2 className={styles.textXl}>Contact Us!</h2>
+                <h2 className={styles.textXl}>Contact Us</h2>
+                <p className={styles.diagonalP}>And bring your car back to life!</p>
             </div>
 
             <div className={styles.formContainer}>
@@ -335,6 +336,11 @@ export default function funnel() {
                     </div>
                 </div>
                 <button className='submit-button'>Submit</button>
+            </div>
+
+            <div className={styles.diagonal} style={{marginTop: 10 + 'vh'}}>
+                <h2 className={styles.textXl}>5 Star Reviews</h2>
+                <p className={styles.diagonalP}>Read some of the great reviews made by our great customers!</p>
             </div>
 
         </div>
