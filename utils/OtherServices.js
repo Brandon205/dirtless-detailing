@@ -120,7 +120,7 @@ export default function OtherServices() {
 
             <section className="otherservices-container">
                 <div className="service-card">
-                    <div className="otherservices-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/660ccdf5-2e84-4a77-eb2e-f7529b51a400/public')`}}></div>
+                    <div className="otherservices-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d7e1e319-7f78-4ac6-907a-9b100171ca00/public')`}}></div>
                     <div className="otherservices-desc">
                         <div>
                             <a href='/services/dirtless-wash' className='service-heading-link'>Dirt-Less Wash</a>
