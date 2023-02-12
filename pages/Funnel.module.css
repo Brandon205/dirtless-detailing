@@ -27,7 +27,7 @@
             #DD962B,
             #f2ec53);
     text-align: left;
-    padding: 7rem 1rem;
+    padding: 4rem 1rem;
     text-align: center;
     margin: -7vh auto 0 auto;
     position: relative;
@@ -59,7 +59,7 @@
 
 @media screen and (min-width: 880px) {
     .diagonal {
-        padding: 7rem 5rem;
+        padding: 4.5rem 5rem;
     }
 }
 
@@ -130,14 +130,14 @@
 
 .formContainer {
     background-color: #3a3c3f;
-    width: 60vw;
+    width: 80vw;
     margin: 10vh auto 0 auto;
     padding: 1rem;
     border-radius: 1rem;
     text-align: left;
 }
 
-.form-container div {
+.formContainer div {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -145,10 +145,17 @@
     padding-bottom: 1rem;
 }
 
+@media screen and (min-width: 880px) {
+    .formContainer {
+        width: 60vw;
+    }
+}
+
 /* REVIEW SECTION STYLING */
 .reviewsContainer {
     display: flex;
     flex-direction: column;
+    width: 90%;
     margin: 10vh auto 0 auto;
     gap: 2rem;
 }
@@ -163,6 +170,9 @@
 
 .reviewTop {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 1rem;
 }
 
@@ -186,7 +196,36 @@
 
 .review {
     color: gold;
-    float: right;
+    margin-left: auto;
+}
+
+.servicesP {
+    text-align: left;
+}
+
+.cardHr {
+    border-top: 1px solid white;
+    width: 90%;
+    margin: 0 auto;
+    opacity: 0.5;
+  }
+
+@media screen and (min-width: 880px) {
+    .reviewsContainer {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .reviewCard {
+        width: 390px;
+    }
+}
+
+/* OTHER CSS */
+
+.bottomCTA {
+    margin-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 /* HELPER CLASSES */
@@ -203,4 +242,8 @@
 
 .subtext {
     color: gray;
+}
+
+.extraSpace {
+    margin: 1rem auto;
 }
