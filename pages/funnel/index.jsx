@@ -9,6 +9,7 @@ import Faq from './faq';
 
 export default function funnel() {
     const [smallScreen, setSmallScreen] = useState(null);
+    const [service, setService] = useState(null);
 
     useEffect(() => {
         if (window.innerWidth < 879) {
@@ -71,7 +72,7 @@ export default function funnel() {
                 <p className={styles.diagonalP}>And bring your car back to life!</p>
             </div>
 
-            <Contact />
+            <Contact package={service} />
 
             <div className={styles.diagonal} style={{marginTop: 10 + 'vh'}}>
                 <h2 className={styles.textXl}>5 Star Reviews</h2>

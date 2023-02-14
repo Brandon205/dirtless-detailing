@@ -1,7 +1,8 @@
 import { useState, useRef } from 'react';
+import { toast, ToastContainer } from 'react-toastify';
 import styles from './Funnel.module.css';
 
-export default function Contact() {
+export default function Contact(props) {
     const [gift, setGift] = useState(false);
 
     let formRef = useRef();
@@ -63,6 +64,8 @@ export default function Contact() {
         setGift(giftButton)
     }
 
+    console.log(props.package)
+
     return (
         <form className="form" onSubmit={(e) => formSubmit(e)} ref={formRef}>
             <div className={styles.formContainer}>
@@ -77,7 +80,7 @@ export default function Contact() {
                     <div className='select-field'>
                         <label htmlFor="year" className='text-input-label'>Year<span className='special-package'>*</span></label>
                         <select id="year" name="year" className='text-input year-input' placeholder="Year" required>
-                            <option>Year</option>
+                            <option hidden disabled selected>Year</option>
                             <option>2023</option>
                             <option>2022</option>
                             <option>2021</option>
@@ -147,7 +150,7 @@ export default function Contact() {
                     <div className='select-field'>
                         <label htmlFor="make" className='text-input-label'>Make<span className='special-package'>*</span></label>
                         <select id="make" name="make" className='text-input make-input' placeholder="Make" required>
-                            <option>Make</option>
+                            <option hidden selected disabled>Make</option>
                             <option>Acura</option>
                             <option>Airstream</option>
                             <option>Alfa Romeo</option>
@@ -237,11 +240,11 @@ export default function Contact() {
 
                     <div className='select-field'>
                         <label htmlFor="service" className='text-input-label'>Service Package</label>
-                        <select name='service' id='service' style={{width: 'auto'}} className='text-input make-input'>
-                            <option value="No Service Selected" selected hidden disabled>Please Select a Package Below</option>   
-                            <option value="Gold">Gold</option>
-                            <option value="Platinum">Platinum</option>
-                            <option value="Iridium">Iridium</option>
+                        <select name='service' id='service' style={{width: 'auto'}} className='text-input make-input' required>
+                            <option value="" selected={props.package === null ? true : false} hidden disabled>Please Select a Package Below</option>   
+                            <option value="Gold" selected={props.package === 'gold' ? true : false}>Gold</option>
+                            <option value="Platinum" selected={props.package === 'platinum' ? true : false}>Platinum</option>
+                            <option value="Iridium" selected={props.package === 'iridium' ? true : false}>Iridium</option>
                         </select>
                     </div>
 
@@ -262,6 +265,16 @@ export default function Contact() {
                 </div>
                 <button className='submit-button'>Submit</button>
             </div>
+            <ToastContainer position="bottom-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+            />
         </form>
     )
 }

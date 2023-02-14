@@ -1,7 +1,7 @@
 import { GiGoldBar } from 'react-icons/gi';
 import { SlBadge } from 'react-icons/sl';
 import { FaCrown } from 'react-icons/fa';
-import { AiFillCheckCircle } from 'react-icons/ai';
+import { AiFillCheckCircle, AiFillCloseCircle } from 'react-icons/ai';
 import styles from './Funnel.module.css';
 
 export default function Packages() {
@@ -28,36 +28,36 @@ export default function Packages() {
                         <p>Engine Bay Cleaning</p>
                     </li>
                     <li className="checklist-item">
-                        <AiFillCheckCircle style={{color: 'lightblue'}} className='checkcircle' />
+                        <AiFillCloseCircle style={{color: 'lightblue'}} className='checkcircle' />
                         <p className={styles.strikethrough}>Single Stage Polish</p>
                     </li>
                     <li className="checklist-item">
-                        <AiFillCheckCircle style={{color: 'lightblue'}} className='checkcircle' />
+                        <AiFillCloseCircle style={{color: 'lightblue'}} className='checkcircle' />
                         <p className={styles.strikethrough}>Apply Stoner Ceramic to all Trim</p>
                     </li>
                     <li className="checklist-item">
-                        <AiFillCheckCircle style={{color: 'lightblue'}} className='checkcircle' />
+                        <AiFillCloseCircle style={{color: 'lightblue'}} className='checkcircle' />
                         <p className={styles.strikethrough}>Apply Aquapel to Windshield</p>
                     </li>
                     <li className="checklist-item">
-                        <AiFillCheckCircle style={{color: 'lightblue'}} className='checkcircle' />
+                        <AiFillCloseCircle style={{color: 'lightblue'}} className='checkcircle' />
                         <p className={styles.strikethrough}>Coating of Premier on top of Ceramic</p>
                     </li>
                     <li className="checklist-item">
-                        <AiFillCheckCircle style={{color: 'lightblue'}} className='checkcircle' />
+                        <AiFillCloseCircle style={{color: 'lightblue'}} className='checkcircle' />
                         <p className={styles.strikethrough}>Ceramic Tire Shine</p>
                     </li>
                     <li className="checklist-item">
-                        <AiFillCheckCircle style={{color: 'silver'}} className='checkcircle' />
+                        <AiFillCloseCircle style={{color: 'silver'}} className='checkcircle' />
                         <p className={styles.strikethrough}>Lifetime Ceramic Coating</p>
                     </li>
                     <li className="checklist-item">
-                        <AiFillCheckCircle style={{color: 'silver'}} className='checkcircle' />
+                        <AiFillCloseCircle style={{color: 'silver'}} className='checkcircle' />
                         <p className={styles.strikethrough}>Eclipse Wheel Faces</p>
                     </li>
                 </ul>
 
-                <a href="/services/exterior-ceramic-coating" className="popular-readmore">Gold Package {'>'}</a>
+                <a href="#form" className="popular-readmore">Gold Package {'>'}</a>
             </div>
 
             <div style={{boxShadow: '0 0 10px 5px lightblue'}} className={styles.card}>
@@ -105,16 +105,16 @@ export default function Packages() {
                             <p>Ceramic Tire Shine</p>
                         </li>
                         <li className="checklist-item">
-                            <AiFillCheckCircle style={{color: 'silver'}} className='checkcircle' />
+                            <AiFillCloseCircle style={{color: 'silver'}} className='checkcircle' />
                             <p className={styles.strikethrough}>Lifetime Ceramic Coating</p>
                         </li>
                         <li className="checklist-item">
-                            <AiFillCheckCircle style={{color: 'silver'}} className='checkcircle' />
+                            <AiFillCloseCircle style={{color: 'silver'}} className='checkcircle' />
                             <p className={styles.strikethrough}>Eclipse Wheel Faces</p>
                         </li>
                     </ul>
 
-                <a href="/services/exterior-ceramic-coating" className="popular-readmore">Platinum Package {'>'}</a>
+                <a href="#form" className="popular-readmore">Platinum Package {'>'}</a>
             </div>
 
             <div style={{boxShadow: '0 0 10px 5px silver'}} className={styles.card}>
@@ -167,7 +167,7 @@ export default function Packages() {
                     </li>
                 </ul>
 
-                <a href="/services/exterior-ceramic-coating" className="popular-readmore">Iridium Package {'>'}</a>
+                <a href="#form" className="popular-readmore">Iridium Package {'>'}</a>
             </div>
         </div>
     )
