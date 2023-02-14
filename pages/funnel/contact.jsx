@@ -1,7 +1,9 @@
-import { useRef } from 'react';
+import { useState, useRef } from 'react';
 import styles from './Funnel.module.css';
 
 export default function Contact() {
+    const [gift, setGift] = useState(false);
+
     let formRef = useRef();
 
     const formSubmit = (e) => {
@@ -29,35 +31,37 @@ export default function Contact() {
             }
         });
 
-        console.log("SENT DATA: ", formData)
-
-        // fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
-        //     method: "POST",
-        //     body: formData
-        // }).then((test) => {
-        //     toast.success("Form submitted! Expect an email, text, or phone call soon!", {
-        //         position: "bottom-center",
-        //         autoClose: 5000,
-        //         hideProgressBar: false,
-        //         closeOnClick: true,
-        //         pauseOnHover: true,
-        //         draggable: true,
-        //         progress: undefined
-        //     })
-        //     e.target.reset()
-        //     window.scrollTo(0, 0)
-        // }).catch(error => {
-        //     toast.error("An error occurred, please try again." + error, {
-        //         position: "bottom-center",
-        //         autoClose: 5000,
-        //         hideProgressBar: false,
-        //         closeOnClick: true,
-        //         pauseOnHover: true,
-        //         draggable: true,
-        //         progress: undefined
-        //     })
-        // });
+        fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
+            method: "POST",
+            body: formData
+        }).then((test) => {
+            toast.success("Form submitted! Expect an email, text, or phone call soon!", {
+                position: "bottom-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined
+            })
+            e.target.reset()
+            window.scrollTo(0, 0)
+        }).catch(error => {
+            toast.error("An error occurred, please try again." + error, {
+                position: "bottom-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined
+            })
+        });
     };
+
+    let handleGiftSelect = (giftButton) => {
+        setGift(giftButton)
+    }
 
     return (
         <form className="form" onSubmit={(e) => formSubmit(e)} ref={formRef}>
@@ -231,11 +235,6 @@ export default function Contact() {
                         <input type="text" id="model" name="model" className='text-input model-input' placeholder="Model" required />
                     </div>
 
-                    <div style={{ width: 100 + '%' }}>
-                        <label htmlFor="message" className='text-input-label'>Additional Information:</label>
-                        <textarea type="textarea" name="message" id='message' className='textarea' placeholder='Do you want our mobile service or to schedule a drop off? Do you have any other questions/concerns?' />
-                    </div>
-
                     <div className='select-field'>
                         <label htmlFor="service" className='text-input-label'>Service Package</label>
                         <select name='service' id='service' style={{width: 'auto'}} className='text-input make-input'>
@@ -245,6 +244,21 @@ export default function Contact() {
                             <option value="Iridium">Iridium</option>
                         </select>
                     </div>
+
+                    <div style={{ width: 100 + '%' }}>
+                        <label htmlFor="message" className='text-input-label'>Additional Information:</label>
+                        <textarea type="textarea" name="message" id='message' className='textarea' placeholder='Do you want our mobile service or to schedule a drop off? Do you have any other questions/concerns?' />
+                    </div>
+
+
+                    <div>
+                        <input type="checkbox" name="myself" id='myself' className='checkbox-input' onChange={() => handleGiftSelect(false)} checked={gift ? false : true} />
+                        <label htmlFor="myself" className='checkbox-label'>For Myself</label>
+                        <input type="checkbox" name="someone" id='someone' className='checkbox-input' onChange={() => handleGiftSelect(true)} checked={gift ? true : false} />
+                        <label htmlFor="someone" className='checkbox-label'>For Someone Else (Gift Certificate)</label>
+                    </div>
+                    <p style={{textAlign: 'left', marginTop: 0, display: gift ? 'block' : 'none'}}>* When buying a gift certificate for someone else fill out <span className={styles.bold}>your</span> contact information, but <span className={styles.bold}>their</span> vehicle information (or as much as you know about their vehicle). We'll then get in contact with you to get the gift card to you!</p>
+
                 </div>
                 <button className='submit-button'>Submit</button>
             </div>

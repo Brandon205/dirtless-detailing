@@ -306,3 +306,8 @@
 .extraSpace {
     margin: 1rem auto;
 }
+
+.bold {
+    text-decoration: underline;
+    font-weight: 600;
+}
