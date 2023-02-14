@@ -65,7 +65,7 @@ export default function funnel() {
                 </p>
             </div>
 
-            <Packages />
+            <Packages setPackage={setService} />
 
             <div className={styles.diagonal} style={{marginTop: 10 + 'vh'}}>
                 <h2 id='form' className={styles.textXl}>Contact Us</h2>

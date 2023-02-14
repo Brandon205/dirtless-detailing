@@ -4,7 +4,7 @@ import { FaCrown } from 'react-icons/fa';
 import { AiFillCheckCircle, AiFillCloseCircle } from 'react-icons/ai';
 import styles from './Funnel.module.css';
 
-export default function Packages() {
+export default function Packages(props) {
     return (
         <div className={styles.cards}>
             <div style={{boxShadow: '0 0 10px 5px gold'}} className={styles.card}>
@@ -57,7 +57,7 @@ export default function Packages() {
                     </li>
                 </ul>
 
-                <a href="#form" className="popular-readmore">Gold Package {'>'}</a>
+                <a href="#form" className="popular-readmore" onClick={() => props.setPackage('gold')}>Gold Package {'>'}</a>
             </div>
 
             <div style={{boxShadow: '0 0 10px 5px lightblue'}} className={styles.card}>
@@ -114,7 +114,7 @@ export default function Packages() {
                         </li>
                     </ul>
 
-                <a href="#form" className="popular-readmore">Platinum Package {'>'}</a>
+                <a href="#form" className="popular-readmore" onClick={() => props.setPackage('platinum')}>Platinum Package {'>'}</a>
             </div>
 
             <div style={{boxShadow: '0 0 10px 5px silver'}} className={styles.card}>
@@ -167,7 +167,7 @@ export default function Packages() {
                     </li>
                 </ul>
 
-                <a href="#form" className="popular-readmore">Iridium Package {'>'}</a>
+                <a href="#form" className="popular-readmore" onClick={() => props.setPackage('iridium')}>Iridium Package {'>'}</a>
             </div>
         </div>
     )
