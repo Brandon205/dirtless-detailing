@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { BsFillTelephoneFill, BsFillChatLeftTextFill } from 'react-icons/bs';
 import styles from './Funnel.module.css';
 
 import Packages from './packages';
@@ -44,15 +45,13 @@ export default function funnel() {
                 <h1 className={styles.textXl}>Bonney Lake's Trusted Auto Detailing Specialists</h1>
                 <p className={styles.diagonalP}>
                     We are Bonney Lake's go to spot for Ceramic Coatings and all of your detailing needs. Getting you car detailed couldn't be easier through us!
-                    <br />
-                    Below you will find our trusted and best services grouped into simple package structures. 
                 </p>
             </div>
 
             <Packages />
 
             <div className={styles.diagonal} style={{marginTop: 10 + 'vh'}}>
-                <h2 className={styles.textXl}>Contact Us</h2>
+                <h2 id='form' className={styles.textXl}>Contact Us</h2>
                 <p className={styles.diagonalP}>And bring your car back to life!</p>
             </div>
 
@@ -71,7 +70,8 @@ export default function funnel() {
             <Faq />
 
             <div className={styles.bottomCTA}>
-                <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Free Quote Today!</a>
+                <a href="#form" className="quote-btn service-page-quote-btn">Get a Free Quote Today!</a>
+                <a href="tel:2532529758" className="quote-btn service-page-quote-btn"><BsFillTelephoneFill className={styles.callIcon} />/<BsFillChatLeftTextFill className={styles.callIcon} /> (253) 252-9758</a>
             </div>
 
         </div>

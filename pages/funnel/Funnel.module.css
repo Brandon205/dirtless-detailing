@@ -276,6 +276,14 @@
     padding-bottom: 4rem;
 }
 
+.callButton {
+    font-size: 1.2em;
+}
+
+.callIcon {
+    font-size: 0.9em;
+}
+
 /* HELPER CLASSES */
 
 .textXl {
