@@ -4,6 +4,7 @@ import styles from './Funnel.module.css';
 import Packages from './packages';
 import Reviews from './reviews';
 import Contact from './contact';
+import Faq from './faq';
 
 export default function funnel() {
     const [smallScreen, setSmallScreen] = useState(null);
@@ -63,6 +64,11 @@ export default function funnel() {
             </div>
 
             <Reviews />
+
+            <h2 className={styles.textXl}>FAQ</h2>
+            <p className={styles.diagonalP}>Get answers to some of our most commonly asked questions</p>
+
+            <Faq />
 
             <div className={styles.bottomCTA}>
                 <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Free Quote Today!</a>
