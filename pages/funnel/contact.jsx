@@ -64,8 +64,6 @@ export default function Contact(props) {
         setGift(giftButton)
     }
 
-    console.log(props.package)
-
     return (
         <form className="form" onSubmit={(e) => formSubmit(e)} ref={formRef}>
             <div className={styles.formContainer}>

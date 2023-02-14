@@ -15,6 +15,42 @@
     margin: 0;
 } */
 
+.quoteBtn {
+    display: inline-block;
+    padding: 0.75rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: #c83f03;
+    color: white;
+    border: 2px solid #c83f03;
+    border-radius: 0.5rem;
+    margin: 0.75rem;
+    font-weight: 300;
+    transition: 0.5s;
+}
+
+.quoteBtn:hover {
+    background-color: #9d2f00;
+}
+
+.mainQuoteBtn {
+    display: inline-block;
+    padding: 0.75rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border: 2px solid #c83f03;
+    border-radius: 0.5rem;
+    font-weight: 300;
+    transition: 0.5s;
+    margin: 0 2.5rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+.mainQuoteBtn:hover {
+    background-color: #c83f03;
+}
+
 .bgContact {
     background-color: #292B2F;
     color: white;
@@ -256,7 +292,7 @@
 }
 
 .faqQ {
-    font-size: 2em;
+    font-size: 1.5em;
     width: 90%;
     cursor: pointer;
     border-bottom: 1px solid rgba(255, 255, 255, 0.262);
@@ -272,7 +308,7 @@
     padding-left: 2rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 880px) {
     .faqUl {
         width: 70vw;
     }

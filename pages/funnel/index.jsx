@@ -52,10 +52,11 @@ export default function funnel() {
                     </a>
                 </div>
 
-                <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
-                <p className='inline text-small'>
+                <a href="#form" className={styles.quoteBtn}>Get a Free Quote</a>
+                {/* <p className='inline text-small'>
                     Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
-                </p>
+                </p> */}
+                <a href="tel:2532529758" className={styles.mainQuoteBtn}><BsFillTelephoneFill className={styles.callIcon} />/<BsFillChatLeftTextFill className={styles.callIcon} /> (253) 252-9758</a>
             </div>
 
             <div className={styles.diagonal}>
