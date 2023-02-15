@@ -339,7 +339,7 @@
 
 .strikethrough {
     text-decoration: line-through;
-    color: gray
+    color: rgb(111, 111, 111);
 }
 
 .subtext {

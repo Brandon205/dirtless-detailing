@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import { BsFillTelephoneFill, BsFillChatLeftTextFill } from 'react-icons/bs';
-import styles from './Funnel.module.css';
+import styles from '../../utils/Funnel.module.css';
 
-import Packages from './packages';
-import Reviews from './reviews';
-import Contact from './contact';
-import Faq from './faq';
+import Packages from '../../components/packages';
+import Reviews from '../../components/reviews';
+import Contact from '../../components/contact';
+import Faq from '../../components/faq';
 
 export default function funnel() {
     const [smallScreen, setSmallScreen] = useState(null);
@@ -40,7 +40,7 @@ export default function funnel() {
             <div className="cover" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover')` }}></div>
             <div className="servicepage-header">
                 <h1>DIRT-LESS DETAILING</h1>
-                <h2 className='page-subheading'>CERAMIC COATING • EXTERIOR WASH • INTERIOR DETAILING • PAINT CORRECTION</h2>
+                <h2 className='page-subheading'>CERAMIC COATINGS • EXTERIOR WASHES • INTERIOR DETAILING • PAINT CORRECTIONS</h2>
 
                 <div style={{display: smallScreen ? 'none' : 'flex', alignItems: 'center', justifyContent: 'center', gap: 32}}>
                     <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="noopener">
@@ -53,9 +53,6 @@ export default function funnel() {
                 </div>
 
                 <a href="#form" className={styles.quoteBtn}>Get a Free Quote</a>
-                {/* <p className='inline text-small'>
-                    Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
-                </p> */}
                 <a href="tel:2532529758" className={styles.mainQuoteBtn}><BsFillTelephoneFill className={styles.callIcon} />/<BsFillChatLeftTextFill className={styles.callIcon} /> (253) 252-9758</a>
             </div>
 
@@ -83,7 +80,7 @@ export default function funnel() {
             <Reviews />
 
             <h2 className={styles.textXl}>FAQ</h2>
-            <p className={styles.diagonalP}>Get answers to some of our most commonly asked questions</p>
+            <p className={styles.diagonalP}>Get answers to some of our most commonly asked questions about ceramic coatings.</p>
 
             <Faq />
 

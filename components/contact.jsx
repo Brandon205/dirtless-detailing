@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
-import styles from './Funnel.module.css';
+import styles from '../utils/Funnel.module.css';
 
 export default function Contact(props) {
     const [gift, setGift] = useState(false);

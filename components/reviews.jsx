@@ -1,5 +1,5 @@
 import { CgProfile } from 'react-icons/cg';
-import styles from './Funnel.module.css';
+import styles from '../utils/Funnel.module.css';
 
 export default function Reviews() {
     return (

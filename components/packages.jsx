@@ -2,7 +2,7 @@ import { GiGoldBar } from 'react-icons/gi';
 import { SlBadge } from 'react-icons/sl';
 import { FaCrown } from 'react-icons/fa';
 import { AiFillCheckCircle, AiFillCloseCircle } from 'react-icons/ai';
-import styles from './Funnel.module.css';
+import styles from '../utils/Funnel.module.css';
 
 export default function Packages(props) {
     return (
@@ -21,7 +21,7 @@ export default function Packages(props) {
                     </li>
                     <li className="checklist-item">
                         <AiFillCheckCircle style={{color: 'gold'}} className='checkcircle' />
-                        <p>Premium Dirt-Less Wash</p>
+                        <p>Our Premium Dirt-Less Wash</p>
                     </li>
                     <li className="checklist-item">
                         <AiFillCheckCircle style={{color: 'gold'}} className='checkcircle' />
@@ -29,19 +29,19 @@ export default function Packages(props) {
                     </li>
                     <li className="checklist-item">
                         <AiFillCloseCircle style={{color: 'lightblue'}} className='checkcircle' />
-                        <p className={styles.strikethrough}>Single Stage Polish</p>
+                        <p className={styles.strikethrough}>Single Stage Paint Correction (Polishing)</p>
                     </li>
                     <li className="checklist-item">
                         <AiFillCloseCircle style={{color: 'lightblue'}} className='checkcircle' />
-                        <p className={styles.strikethrough}>Apply Stoner Ceramic to all Trim</p>
+                        <p className={styles.strikethrough}>Apply Stoner® Ceramic to all Trim</p>
                     </li>
                     <li className="checklist-item">
                         <AiFillCloseCircle style={{color: 'lightblue'}} className='checkcircle' />
-                        <p className={styles.strikethrough}>Apply Aquapel to Windshield</p>
+                        <p className={styles.strikethrough}>Apply Aquapel Glass Treatment to Windshield</p>
                     </li>
                     <li className="checklist-item">
                         <AiFillCloseCircle style={{color: 'lightblue'}} className='checkcircle' />
-                        <p className={styles.strikethrough}>Coating of Premier on top of Ceramic</p>
+                        <p className={styles.strikethrough}>Apply a Coat of Premier WAX on top of Ceramic Coating</p>
                     </li>
                     <li className="checklist-item">
                         <AiFillCloseCircle style={{color: 'lightblue'}} className='checkcircle' />
@@ -74,7 +74,7 @@ export default function Packages(props) {
                         </li>
                         <li className="checklist-item">
                             <AiFillCheckCircle style={{color: 'gold'}} className='checkcircle' />
-                            <p>Premium Dirt-Less Wash</p>
+                            <p>Our Premium Dirt-Less Wash</p>
                         </li>
                         <li className="checklist-item">
                             <AiFillCheckCircle style={{color: 'gold'}} className='checkcircle' />
@@ -82,7 +82,7 @@ export default function Packages(props) {
                         </li>
                         <li className="checklist-item">
                             <AiFillCheckCircle style={{color: 'lightblue'}} className='checkcircle' />
-                            <p>Single Stage Polish</p>
+                            <p>Single Stage Paint Correction (Polishing)</p>
                         </li>
                         <li className="checklist-item">
                             <AiFillCheckCircle style={{color: 'lightblue'}} className='checkcircle' />
@@ -90,15 +90,15 @@ export default function Packages(props) {
                         </li>
                         <li className="checklist-item">
                             <AiFillCheckCircle style={{color: 'lightblue'}} className='checkcircle' />
-                            <p>Apply Stoner Ceramic to all Trim</p>
+                            <p>Apply Stoner® Ceramic to all Trim</p>
                         </li>
                         <li className="checklist-item">
                             <AiFillCheckCircle style={{color: 'lightblue'}} className='checkcircle' />
-                            <p>Apply Aquapel to Windshield</p>
+                            <p>Apply Aquapel Glass Treatment to Windshield</p>
                         </li>
                         <li className="checklist-item">
                             <AiFillCheckCircle style={{color: 'lightblue'}} className='checkcircle' />
-                            <p>Coating of Premier on top of Ceramic</p>
+                            <p>Apply a Coat of Premier WAX on top of Ceramic Coating</p>
                         </li>
                         <li className="checklist-item">
                             <AiFillCheckCircle style={{color: 'lightblue'}} className='checkcircle' />
@@ -131,7 +131,7 @@ export default function Packages(props) {
                     </li>
                     <li className="checklist-item">
                         <AiFillCheckCircle style={{color: 'gold'}} className='checkcircle' />
-                        <p>Premium Dirt-Less Wash</p>
+                        <p>Our Premium Dirt-Less Wash</p>
                     </li>
                     <li className="checklist-item">
                         <AiFillCheckCircle style={{color: 'gold'}} className='checkcircle' />
@@ -139,19 +139,19 @@ export default function Packages(props) {
                     </li>
                     <li className="checklist-item">
                         <AiFillCheckCircle style={{color: 'lightblue'}} className='checkcircle' />
-                        <p>Single Stage Polish</p>
+                        <p>Single Stage Paint Correction (Polishing)</p>
                     </li>
                     <li className="checklist-item">
                         <AiFillCheckCircle style={{color: 'lightblue'}} className='checkcircle' />
-                        <p>Apply Stoner Ceramic to all Trim</p>
+                        <p>Apply Stoner® Ceramic to all Trim</p>
                     </li>
                     <li className="checklist-item">
                         <AiFillCheckCircle style={{color: 'lightblue'}} className='checkcircle' />
-                        <p>Apply Aquapel to Windshield</p>
+                        <p>Apply Aquapel Glass Treatment to Windshield</p>
                     </li>
                     <li className="checklist-item">
                         <AiFillCheckCircle style={{color: 'lightblue'}} className='checkcircle' />
-                        <p>Coating of Premier on top of Ceramic</p>
+                        <p>Apply a Coat of Premier WAX on top of Ceramic Coating</p>
                     </li>
                     <li className="checklist-item">
                         <AiFillCheckCircle style={{color: 'lightblue'}} className='checkcircle' />
