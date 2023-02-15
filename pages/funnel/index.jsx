@@ -6,6 +6,7 @@ import Packages from '../../components/packages';
 import Reviews from '../../components/reviews';
 import Contact from '../../components/contact';
 import Faq from '../../components/faq';
+import Gallery from '../../components/gallery';
 
 export default function funnel() {
     const [smallScreen, setSmallScreen] = useState(null);
@@ -78,6 +79,11 @@ export default function funnel() {
             </div>
 
             <Reviews />
+
+            <h2 className={styles.textXl}>Gallery</h2>
+            <p className={styles.diagonalP}>Small showcase of the vehicles we have been able to work on!</p>
+
+            <Gallery />
 
             <h2 className={styles.textXl}>FAQ</h2>
             <p className={styles.diagonalP}>Get answers to some of our most commonly asked questions about ceramic coatings.</p>
