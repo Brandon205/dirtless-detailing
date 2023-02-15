@@ -65,19 +65,19 @@ export default function Contact(props) {
     }
 
     return (
-        <form className="form" onSubmit={(e) => formSubmit(e)} ref={formRef}>
+        <form className={styles.form} onSubmit={(e) => formSubmit(e)} ref={formRef}>
             <div className={styles.formContainer}>
                 <div>
-                    <label htmlFor="name" className='text-input-label'>Name<span className='special-package'>*</span></label>
-                    <input type="text" id="name" name="name" className='text-input' placeholder="Name" required />
-                    <label htmlFor="email" className='text-input-label'>Email<span className='special-package'>*</span></label>
-                    <input type="email" id="email" name="email" className='text-input' placeholder="Email" required />
-                    <label htmlFor="phone" className='text-input-label'>Phone<span className='special-package'>*</span><small> (Ex: 111-123-4567)</small></label>
-                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" className='text-input' placeholder="Phone Number" required />
+                    <label htmlFor="name" className={styles.textInputLabel}>Name<span className={styles.specialPackage}>*</span></label>
+                    <input type="text" id="name" name="name" className={styles.textInput} placeholder="Name" required />
+                    <label htmlFor="email" className={styles.textInputLabel}>Email<span className={styles.specialPackage}>*</span></label>
+                    <input type="email" id="email" name="email" className={styles.textInput} placeholder="Email" required />
+                    <label htmlFor="phone" className={styles.textInputLabel}>Phone<span className={styles.specialPackage}>*</span><small> (Ex: 111-123-4567)</small></label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" className={styles.textInput} placeholder="Phone Number" required />
 
-                    <div className='select-field'>
-                        <label htmlFor="year" className='text-input-label'>Year<span className='special-package'>*</span></label>
-                        <select id="year" name="year" className='text-input year-input' placeholder="Year" required>
+                    <div className={styles.selectField}>
+                        <label htmlFor="year" className={styles.textInputLabel}>Year<span className={styles.specialPackage}>*</span></label>
+                        <select id="year" name="year" className={styles.textInput} placeholder="Year" required>
                             <option hidden disabled selected>Year</option>
                             <option>2023</option>
                             <option>2022</option>
@@ -145,9 +145,9 @@ export default function Contact(props) {
                             <option>1960</option>
                         </select>
                     </div>
-                    <div className='select-field'>
-                        <label htmlFor="make" className='text-input-label'>Make<span className='special-package'>*</span></label>
-                        <select id="make" name="make" className='text-input make-input' placeholder="Make" required>
+                    <div className={styles.selectField}>
+                        <label htmlFor="make" className={styles.textInputLabel}>Make<span className={styles.specialPackage}>*</span></label>
+                        <select id="make" name="make" className={styles.textInput} placeholder="Make" required>
                             <option hidden selected disabled>Make</option>
                             <option>Acura</option>
                             <option>Airstream</option>
@@ -231,14 +231,14 @@ export default function Contact(props) {
                             <option>Winnebago</option>
                         </select>
                     </div>
-                    <div className='select-field'>
-                        <label htmlFor="model" className='text-input-label'>Model<span className='special-package'>*</span></label>
-                        <input type="text" id="model" name="model" className='text-input model-input' placeholder="Model" required />
+                    <div className={styles.selectField}>
+                        <label htmlFor="model" className={styles.textInputLabel}>Model<span className={styles.specialPackage}>*</span></label>
+                        <input type="text" id="model" name="model" className={styles.textInput} placeholder="Model" required />
                     </div>
 
-                    <div className='select-field'>
-                        <label htmlFor="service" className='text-input-label'>Service Package</label>
-                        <select name='service' id='service' style={{width: 'auto'}} className='text-input make-input' required>
+                    <div className={styles.selectField}>
+                        <label htmlFor="service" className={styles.textInputLabel}>Service Package</label>
+                        <select name='service' id='service' style={{width: 'auto'}} className={styles.textInput} required>
                             <option value="" selected={props.package === null ? true : false} hidden disabled>Please Select a Package Below</option>   
                             <option value="Gold" selected={props.package === 'gold' ? true : false}>Gold</option>
                             <option value="Platinum" selected={props.package === 'platinum' ? true : false}>Platinum</option>
@@ -247,21 +247,21 @@ export default function Contact(props) {
                     </div>
 
                     <div style={{ width: 100 + '%' }}>
-                        <label htmlFor="message" className='text-input-label'>Additional Information:</label>
-                        <textarea type="textarea" name="message" id='message' className='textarea' placeholder='Do you want our mobile service or to schedule a drop off? Do you have any other questions/concerns?' />
+                        <label htmlFor="message" className={styles.textInputLabel}>Additional Information:</label>
+                        <textarea type="textarea" name="message" id='message' className={styles.textarea} placeholder='Do you want our mobile service or to schedule a drop off? Do you have any other questions/concerns?' />
                     </div>
 
 
                     <div>
-                        <input type="checkbox" name="myself" id='myself' className='checkbox-input' onChange={() => handleGiftSelect(false)} checked={gift ? false : true} />
-                        <label htmlFor="myself" className='checkbox-label'>For Myself</label>
-                        <input type="checkbox" name="someone" id='someone' className='checkbox-input' onChange={() => handleGiftSelect(true)} checked={gift ? true : false} />
-                        <label htmlFor="someone" className='checkbox-label'>For Someone Else (Gift Certificate)</label>
+                        <input type="checkbox" name="myself" id='myself' onChange={() => handleGiftSelect(false)} checked={gift ? false : true} />
+                        <label htmlFor="myself" className={styles.checkboxLabel}>For Myself</label>
+                        <input type="checkbox" name="someone" id='someone' onChange={() => handleGiftSelect(true)} checked={gift ? true : false} />
+                        <label htmlFor="someone" className={styles.checkboxLabel}>For Someone Else (Gift Certificate)</label>
                     </div>
                     <p style={{textAlign: 'left', marginTop: 0, display: gift ? 'block' : 'none'}}>* When buying a gift certificate for someone else fill out <span className={styles.bold}>your</span> contact information, but <span className={styles.bold}>their</span> vehicle information (or as much as you know about their vehicle). We'll then get in contact with you to get the gift card to you!</p>
 
                 </div>
-                <button className='submit-button'>Submit</button>
+                <button className={styles.submitButton}>Submit</button>
             </div>
             <ToastContainer position="bottom-center"
                 autoClose={5000}

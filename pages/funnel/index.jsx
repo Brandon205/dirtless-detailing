@@ -38,18 +38,18 @@ export default function funnel() {
 
             <link rel="canonical" href='https://www.dirtlessdetailing.com/funnel' />
 
-            <div className="cover" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover')` }}></div>
-            <div className="servicepage-header">
+            <div className={styles.cover} style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover')` }}></div>
+            <div className={styles.servicepageHeader}>
                 <h1>DIRT-LESS DETAILING</h1>
-                <h2 className='page-subheading'>CERAMIC COATINGS • EXTERIOR WASHES • INTERIOR DETAILING • PAINT CORRECTIONS</h2>
+                <h2 className={styles.pageSubheading}>CERAMIC COATINGS • EXTERIOR WASHES • INTERIOR DETAILING • PAINT CORRECTIONS</h2>
 
                 <div style={{display: smallScreen ? 'none' : 'flex', alignItems: 'center', justifyContent: 'center', gap: 32}}>
                     <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="noopener">
-                        <div className="header-cert" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/242a2248-1f41-4edf-b2c5-d508a10bef00/public')`, height: 134 + 'px', width: 134 + 'px' }}></div>
+                        <div className={styles.headerCert} style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/242a2248-1f41-4edf-b2c5-d508a10bef00/public')`, height: 134 + 'px', width: 134 + 'px' }}></div>
                     </a>
 
                     <a href="https://iglcoatingsusa.com/" target="_blank" rel="noopener">
-                        <div className="header-cert" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/833088d3-ca7b-41b9-561f-21f8517f3300/public')`, height: 165 + 'px', width: 145 + 'px' }}></div>
+                        <div className={styles.headerCert} style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/833088d3-ca7b-41b9-561f-21f8517f3300/public')`, height: 165 + 'px', width: 145 + 'px' }}></div>
                     </a>
                 </div>
 
@@ -91,8 +91,8 @@ export default function funnel() {
             <Faq />
 
             <div className={styles.bottomCTA}>
-                <a href="#form" className="quote-btn service-page-quote-btn">Get a Free Quote Today!</a>
-                <a href="tel:2532529758" className="quote-btn service-page-quote-btn"><BsFillTelephoneFill className={styles.callIcon} />/<BsFillChatLeftTextFill className={styles.callIcon} /> (253) 252-9758</a>
+                <a href="#form" className={styles.quoteBtn}>Get a Free Quote Today!</a>
+                <a href="tel:2532529758" className={styles.quoteBtn}><BsFillTelephoneFill className={styles.callIcon} />/<BsFillChatLeftTextFill className={styles.callIcon} /> (253) 252-9758</a>
             </div>
 
         </div>

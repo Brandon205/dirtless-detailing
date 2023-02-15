@@ -26,7 +26,7 @@ export default function Faq() {
 
                 <li className={styles.liContainer}>
                     <h4 onClick={() => setQ1(!q1)} className={styles.faqQ}><BsQuestionCircleFill className={styles.faqIcon} /> How long does the ceramic coating last? {q1 ? <RxCaretUp className={styles.faqCaret} /> : <RxCaretDown className={styles.faqCaret} />}</h4>
-                    <p style={{maxHeight: q1 ? '300px' : 0, opacity: q1 ? 1 : 0}} className={styles.faqP}>The paint coating should last 5 years, 50,000 miles, or a Lifetime<span className='special-package'>*</span> with our warranty. The coating on any trim, glass, lights, or wheels will typically last about 1 year when taken care of.</p>
+                    <p style={{maxHeight: q1 ? '300px' : 0, opacity: q1 ? 1 : 0}} className={styles.faqP}>The paint coating should last 5 years, 50,000 miles, or a Lifetime<span className={styles.specialPackage}>*</span> with our warranty. The coating on any trim, glass, lights, or wheels will typically last about 1 year when taken care of.</p>
                 </li>
 
                 <li className={styles.liContainer}>

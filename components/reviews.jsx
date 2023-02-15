@@ -1,13 +1,11 @@
-import { CgProfile } from 'react-icons/cg';
 import styles from '../utils/Funnel.module.css';
 
 export default function Reviews() {
     return (
         <div className={styles.reviewsContainer}>
             <div className={styles.reviewCard}>
-                <div className="popular-img" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d3ac6cf4-b415-476d-8286-5f169f4dca00/public')`}}></div>
+                <div className={styles.popularImg} style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d3ac6cf4-b415-476d-8286-5f169f4dca00/public')`}}></div>
                 <div className={styles.reviewTop}>
-                    {/* <CgProfile className={styles.profile} /> */}
                     <strong className={styles.name}>Brandon B.</strong>
                     <strong className={styles.review}>★★★★★</strong>
                     <p className={styles.servicesP}>Services: <span className={styles.subtext}>Wheel washing, Paint repair, Auto interior vacuuming, Auto detailing, Full body wash, Car waxing</span></p>
@@ -19,9 +17,8 @@ export default function Reviews() {
             </div>
 
             <div className={styles.reviewCard}>
-                <div className="popular-img" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/89cde8ad-b8a8-4d15-5a65-786ad9772d00/public')`}}></div>
+                <div className={styles.popularImg} style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/89cde8ad-b8a8-4d15-5a65-786ad9772d00/public')`}}></div>
                 <div className={styles.reviewTop}>
-                    {/* <CgProfile className={styles.profile} /> */}
                     <strong className={styles.name}>Mark B.</strong>
                     <strong className={styles.review}>★★★★★</strong>
                     <p className={styles.servicesP}>Services: <span className={styles.subtext}>Full body wash, Car waxing, Headlight polishing, Auto detailing, Paint repair, Exhaust tip polishing, Clay bar treatment, Wheel washing</span></p>
@@ -33,9 +30,8 @@ export default function Reviews() {
             </div>
 
             <div className={styles.reviewCard}>
-                <div className="popular-img" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0a564c14-dde7-4018-e403-c646a78af000/public')`}}></div>
+                <div className={styles.popularImg} style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0a564c14-dde7-4018-e403-c646a78af000/public')`}}></div>
                 <div className={styles.reviewTop}>
-                    {/* <CgProfile className={styles.profile} /> */}
                     <strong className={styles.name}>Nathan M.</strong>
                     <strong className={styles.review}>★★★★★</strong>
                     <p className={styles.servicesP}>Services: <span className={styles.subtext}>Engine detailing, Auto interior vacuuming, Full body wash, Car waxing, Auto detailing, Interior scenting, Exhaust tip polishing, Steam cleaning, Seat shampooing, Clay bar treatment, Wheel washing</span></p>
