@@ -66,12 +66,15 @@ export default function funnel() {
 
             <Packages setPackage={setService} />
 
-            <div className={styles.diagonal} style={{marginTop: 10 + 'vh'}}>
+            <div className={styles.diagonal} style={{marginTop: 10 + 'vh', marginBottom: 8 + 'vh'}}>
                 <h2 id='form' className={styles.textXl}>Contact Us</h2>
                 <p className={styles.diagonalP}>And bring your car back to life!</p>
             </div>
 
-            <Contact package={service} />
+            <div className={styles.contactContainer}>
+                <Contact package={service} />
+                <div className={styles.contactPhoto} style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2b4f72db-a0cc-4f91-ed15-66d8a1b4c400/public')`}}></div>
+            </div>
 
             <div className={styles.diagonal} style={{marginTop: 10 + 'vh'}}>
                 <h2 className={styles.textXl}>5 Star Reviews</h2>

@@ -251,16 +251,31 @@
 }
 
 /* FORM SECTION */
+.contactContainer {
+    margin: 20vh auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contactPhoto {
+    width: 85vw;
+    height: 240px;
+    background-position: center;
+    background-size: cover;
+}
+
 .form {
-    width: 100%;
+    width: 85vw;
 }
 
 .formContainer {
     background-color: #3a3c3f;
-    width: 80vw;
-    margin: 10vh auto 0 auto;
+    width: 85vw;
     padding: 1rem;
-    border-radius: 1rem;
+    border-radius: 0 0 1rem 1rem;
     text-align: left;
 }
 
@@ -332,7 +347,26 @@
 
 @media screen and (min-width: 880px) {
     .formContainer {
+        border-radius: 1rem 0 0 1rem;
         width: 60vw;
+    }
+
+    .form {
+        width: 60vw;
+    }
+
+    .contactContainer {
+        width: 90vw;
+        margin: 10vh auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contactPhoto {
+        width: 30vw;
+        height: 690px;
+        border-radius: 0 1rem 1rem 0;
     }
 }
 
@@ -373,10 +407,10 @@
 }
 
 .name {
-    position: absolute;
+    /* position: absolute;
     top: 3px;
-    left: 4%;
-    font-size: 2.3em;
+    left: 4%; */
+    font-size: 1.3em;
 }
 
 .review {
@@ -403,6 +437,10 @@
 
     .reviewCard {
         width: 390px;
+    }
+
+    .name {
+        font-size: 2.3em;
     }
 }
 
