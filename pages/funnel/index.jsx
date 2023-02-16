@@ -43,7 +43,7 @@ export default function funnel() {
                 <h1>DIRT-LESS DETAILING</h1>
                 <h2 className={styles.pageSubheading}>CERAMIC COATINGS • EXTERIOR WASHES • INTERIOR DETAILING • PAINT CORRECTIONS</h2>
 
-                <div style={{display: smallScreen ? 'none' : 'flex', alignItems: 'center', justifyContent: 'center', gap: 32}}>
+                <div style={{display: smallScreen ? 'none' : 'flex', alignItems: 'center', justifyContent: 'center', gap: 32, marginBottom: 7 + 'vh'}}>
                     <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="noopener">
                         <div className={styles.headerCert} style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/242a2248-1f41-4edf-b2c5-d508a10bef00/public')`, height: 134 + 'px', width: 134 + 'px' }}></div>
                     </a>
