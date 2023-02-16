@@ -43,10 +43,10 @@ export default function funnel() {
 
             <div className={styles.cover} style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover')` }}></div>
             <div className={styles.servicepageHeader}>
-                <h1>DIRT-LESS DETAILING</h1>
-                <h2 className={styles.pageSubheading}>CERAMIC COATINGS • EXTERIOR WASHES • INTERIOR DETAILING • PAINT CORRECTIONS</h2>
+                <div className={styles.headerLogo} style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0a945e76-f4c0-4e29-ef16-463490d0db00/public')`}}></div>
+                <h2 className={styles.pageSubheading}>Upgrade your car's protection and appearance with graphene ceramic coating for a long-lasting shine, scratch, and UV resistance. Invest in your car's future and keep it looking new.</h2>
 
-                <div style={{display: smallScreen ? 'none' : 'flex', alignItems: 'center', justifyContent: 'center', gap: 32, marginBottom: 7 + 'vh'}}>
+                <div style={{display: smallScreen ? 'none' : 'flex', alignItems: 'center', justifyContent: 'center', gap: 32}}>
                     <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="noopener">
                         <div className={styles.headerCert} style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/242a2248-1f41-4edf-b2c5-d508a10bef00/public')`, height: 134 + 'px', width: 134 + 'px' }}></div>
                     </a>
@@ -56,8 +56,10 @@ export default function funnel() {
                     </a>
                 </div>
 
-                <a href="#form" className={styles.quoteBtn}>Get a Free Quote</a>
-                <a href="tel:2532529758" className={styles.mainQuoteBtn}><BsFillTelephoneFill className={styles.callIcon} />/<BsFillChatLeftTextFill className={styles.callIcon} /> (253) 252-9758</a>
+                <div>
+                    <a href="#form" className={styles.quoteBtn}>Get a Free Quote</a>
+                    <a href="tel:2532529758" className={styles.mainQuoteBtn}><BsFillTelephoneFill className={styles.callIcon} /> (253) 252-9758 <BsFillChatLeftTextFill className={styles.callIcon} /></a>
+                </div>
             </div>
 
             <div className={styles.diagonal}>
@@ -98,7 +100,7 @@ export default function funnel() {
 
             <div className={styles.bottomCTA}>
                 <a href="#form" className={styles.quoteBtn}>Get a Free Quote Today!</a>
-                <a href="tel:2532529758" className={styles.quoteBtn}><BsFillTelephoneFill className={styles.callIcon} />/<BsFillChatLeftTextFill className={styles.callIcon} /> (253) 252-9758</a>
+                <a href="tel:2532529758" className={styles.quoteBtn}><BsFillTelephoneFill className={styles.callIcon} /> (253) 252-9758 <BsFillChatLeftTextFill className={styles.callIcon} /></a>
             </div>
 
         </div>

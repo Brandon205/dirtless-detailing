@@ -77,8 +77,8 @@ export default function Contact(props) {
 
                     <div className={styles.selectField}>
                         <label htmlFor="year" className={styles.textInputLabel}>Year<span className={styles.specialPackage}>*</span></label>
-                        <select id="year" name="year" className={styles.textInput} placeholder="Year" required>
-                            <option hidden disabled selected>Year</option>
+                        <select value="" id="year" name="year" className={styles.textInput} placeholder="Year" required>
+                            <option hidden disabled>Year</option>
                             <option>2023</option>
                             <option>2022</option>
                             <option>2021</option>
@@ -147,8 +147,8 @@ export default function Contact(props) {
                     </div>
                     <div className={styles.selectField}>
                         <label htmlFor="make" className={styles.textInputLabel}>Make<span className={styles.specialPackage}>*</span></label>
-                        <select id="make" name="make" className={styles.textInput} placeholder="Make" required>
-                            <option hidden selected disabled>Make</option>
+                        <select value="" id="make" name="make" className={styles.textInput} placeholder="Make" required>
+                            <option hidden disabled>Make</option>
                             <option>Acura</option>
                             <option>Airstream</option>
                             <option>Alfa Romeo</option>

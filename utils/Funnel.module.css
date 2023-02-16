@@ -15,6 +15,11 @@
     margin: 0;
 } */
 
+/* :root {
+    --diagonalFirst: #c0cbcd;
+    --diagonalSecond: #37cf6b;
+} */
+
 .quoteBtn {
     display: inline-block;
     padding: 0.75rem;
@@ -58,10 +63,13 @@
 
 .diagonal {
     --skew-angle: -3deg;
-    --background: linear-gradient(45deg,
+    /* --background: linear-gradient(45deg,
             #c83f03,
             #DD962B,
-            #f2ec53);
+            #f2ec53); */
+    --background: linear-gradient(45deg,
+            var(--diagonalFirst),
+            var(--diagonalSecond));
     text-align: left;
     padding: 3rem 1rem 5rem 1rem;
     text-align: center;
@@ -218,6 +226,7 @@
 .price {
     color: lightgray;
     display: inline-block;
+    font-size: 1.5rem;
     margin-top: 0;
 }
 
@@ -226,6 +235,7 @@
     font-weight: 500;
     margin: 0;
     color: white;
+    text-decoration: underline;
 }
 
 .checkcircle {
@@ -452,6 +462,7 @@
 
 .faqCaret {
     font-size: 3.5em;
+    margin-left: auto;
     color: #c83f03;
 }
 
@@ -473,12 +484,17 @@
 }
 
 .liTop {
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    gap: 1rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.262);
     padding-bottom: 1rem;
     cursor: pointer;
+}
+
+.liTop:last-child {
+    margin-left: auto;
 }
 
 .faqQ {
@@ -505,7 +521,7 @@
         font-size: 2em;
         /* margin-right: 2rem; */
     }
-    
+
     .faqCaret {
         font-size: 2em;
         /* margin-left: 1rem; */
@@ -560,14 +576,23 @@
 
 .servicepageHeader {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
     color: var(--heading-clr1);
     width: 100%;
-    transform: translate(0, -70vh);
+    transform: translate(0, -82vh);
     z-index: 1;
 }
 
-.servicepageHeader h1 {
-    font-size: 2.5em;
+.headerLogo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 220px;
+    height: 165px;
 }
 
 .headerCert {
@@ -612,7 +637,7 @@
     font-size: 1.5rem;
     width: 90vw;
     font-weight: 400;
-    margin: 0 auto 2rem auto;
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 880px) {
@@ -620,8 +645,13 @@
         width: 70vw;
     }
 
-    .servicepageHeader h1 {
-        font-size: 3em;
+    .servicepageHeader {
+        gap: 3rem;
+    }
+
+    .headerLogo {
+        width: 400px;
+        height: 300px;
     }
 }
 

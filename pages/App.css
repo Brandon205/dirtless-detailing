@@ -23,6 +23,11 @@
   --heading-clr1: #fff;
   --heading-clr2: rgb(185, 185, 185);
   --text-blue: rgb(59, 158, 255);
+
+
+  /* TEMPORARY ROOT SELECTORS: */
+  --diagonalFirst: #c0cbcd;
+  --diagonalSecond: #37cf6b;
 }
 
 *,
