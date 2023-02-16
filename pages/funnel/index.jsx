@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Head from 'next/head';
 import { BsFillTelephoneFill, BsFillChatLeftTextFill } from 'react-icons/bs';
 import styles from '../../utils/Funnel.module.css';
 
@@ -22,21 +23,23 @@ export default function funnel() {
 
     return (
         <div style={{minHeight: 100 + 'vh'}} className={styles.bgContact}>
-            <title>Bonney Lakes Trusted Auto Detailing & Ceramic Coating Detailers</title>
-            <meta property="og:title" content='Bonney Lakes Auto Detailing & Ceramic Coating Specialists' />
-            <meta name="description" content='Bonney Lakes trusted Auto Detailing Specialists. From normal Inside and out Details to Ceramic Coating Dirt-Less Detailing has you covered!' />
-            <meta property="og:description" content='Bonney Lakes trusted Auto Detailing Specialists. From normal Inside and out Details to Ceramic Coating Dirt-Less Detailing has you covered!' />
-            <meta property="og:image" content='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/public' />
-            <meta property="og:url" content='https://www.dirtlessdetailing.com/funnel' />
-            <meta property="type" content="website" />
+            <Head>
+                <title>Bonney Lakes Trusted Auto Detailing & Ceramic Coating Detailers</title>
+                <meta property="og:title" content='Bonney Lakes Auto Detailing & Ceramic Coating Specialists' />
+                <meta name="description" content='Bonney Lakes trusted Auto Detailing Specialists. From normal Inside and out Details to Ceramic Coating Dirt-Less Detailing has you covered!' />
+                <meta property="og:description" content='Bonney Lakes trusted Auto Detailing Specialists. From normal Inside and out Details to Ceramic Coating Dirt-Less Detailing has you covered!' />
+                <meta property="og:image" content='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/public' />
+                <meta property="og:url" content='https://www.dirtlessdetailing.com/funnel' />
+                <meta property="type" content="website" />
 
-            <meta name="twitter:title" content='Bonney Lakes Auto Detailing & Ceramic Coating Specialists' />
-            <meta name="twitter:card" content="summary" />
-            <meta name="twitter:site" content="@dirtless-detailing" />
-            <meta name="twitter:description" content='Bonney Lakes trusted Auto Detailing Specialists. From normal Inside and out Details to Ceramic Coating Dirt-Less Detailing has you covered!' />
-            <meta name="twitter:image" content='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/public' />
+                <meta name="twitter:title" content='Bonney Lakes Auto Detailing & Ceramic Coating Specialists' />
+                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:site" content="@dirtless-detailing" />
+                <meta name="twitter:description" content='Bonney Lakes trusted Auto Detailing Specialists. From normal Inside and out Details to Ceramic Coating Dirt-Less Detailing has you covered!' />
+                <meta name="twitter:image" content='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/public' />
 
-            <link rel="canonical" href='https://www.dirtlessdetailing.com/funnel' />
+                <link rel="canonical" href='https://www.dirtlessdetailing.com/funnel' />
+            </Head>
 
             <div className={styles.cover} style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover')` }}></div>
             <div className={styles.servicepageHeader}>
