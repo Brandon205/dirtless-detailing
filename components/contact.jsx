@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import styles from '../utils/Funnel.module.css';
 
-export default function Contact(props) {
+export default function Contact() {
     const [gift, setGift] = useState(false);
 
     let formRef = useRef();
@@ -245,9 +245,6 @@ export default function Contact(props) {
                             <option value="Gold">Gold</option>
                             <option value="Platinum">Platinum</option>
                             <option value="Iridium">Iridium</option>
-                            {/* <option value="Gold" selected={props.package === 'gold' ? true : false}>Gold</option>
-                            <option value="Platinum" selected={props.package === 'platinum' ? true : false}>Platinum</option>
-                            <option value="Iridium" selected={props.package === 'iridium' ? true : false}>Iridium</option> */}
                         </select>
                     </div>
 
