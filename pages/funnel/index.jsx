@@ -11,7 +11,6 @@ import Gallery from '../../components/gallery';
 
 export default function funnel() {
     const [smallScreen, setSmallScreen] = useState(null);
-    const [service, setService] = useState(null);
     const [gallery, setGallery] = useState(false);
 
     useEffect(() => {
@@ -70,7 +69,7 @@ export default function funnel() {
                 </p>
             </div>
 
-            <Packages setPackage={setService} />
+            <Packages />
 
             <div className={styles.diagonal} style={{marginTop: 10 + 'vh', marginBottom: 8 + 'vh'}}>
                 <h2 id='form' className={styles.textXl}>Contact Us</h2>
@@ -78,7 +77,7 @@ export default function funnel() {
             </div>
 
             <div className={styles.contactContainer}>
-                <Contact package={service} />
+                <Contact />
                 <div className={styles.contactPhoto} style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5b0798e5-2648-4845-168b-98e7ff013100/public')`}}></div>
             </div>
 

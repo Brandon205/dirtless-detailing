@@ -21,6 +21,17 @@
     --diagonalThird: #37cf6b;
     --funnelMain: #37cf6b;
     --funnelMainHover: #2aa053;
+
+    COPIED VARIABLES
+    --contact-bkg: #292B2F;
+    --contact-bkg-lighter: #33373F;
+} */
+
+/* input[type='checkbox']:checked+label {
+    transition: all 500ms ease;
+    background-color: var(--funnelMain);
+    color: white;
+    border-color: var(--funnelMain);
 } */
 
 .quoteBtn {
@@ -338,6 +349,13 @@
     margin-top: 0.25rem;
 }
 
+.checkboxLabel:checked {
+    transition: all 500ms ease;
+    background-color: var(--funnelMain);
+    color: white;
+    border-color: var(--funnelMain);
+}
+
 .submitButton {
     padding: 0.75rem 2rem;
     font-size: 1.3em;
@@ -579,7 +597,7 @@
     align-items: center;
     gap: 2rem;
 
-    color: var(--heading-clr1);
+    color: white;
     width: 100%;
     transform: translate(0, -82vh);
     z-index: 1;
@@ -599,7 +617,7 @@
     background-repeat: none;
 }
 
-.quoteBtn {
+/* .quoteBtn {
     display: inline-block;
     padding: 0.75rem;
     font-size: 1.5rem;
@@ -616,7 +634,7 @@
 
 .quoteBtn:hover {
     background-color: rgba(255, 255, 255, 0);
-}
+} */
 
 .bottomCTA {
     margin-top: 4rem;
