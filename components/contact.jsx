@@ -258,7 +258,7 @@ export default function Contact(props) {
                         <input type="checkbox" name="someone" id='someone' onChange={() => handleGiftSelect(true)} checked={gift ? true : false} />
                         <label htmlFor="someone" className={styles.checkboxLabel}>For Someone Else (Gift Certificate)</label>
                     </div>
-                    <p style={{textAlign: 'left', marginTop: 0, display: gift ? 'block' : 'none'}}>* When buying a gift certificate for someone else fill out <span className={styles.bold}>your</span> contact information, but <span className={styles.bold}>their</span> vehicle information (or as much as you know about their vehicle). We'll then get in contact with you to get the gift card to you!</p>
+                    <p style={{textAlign: 'left', marginTop: 0, visibility: gift ? 'visible' : 'hidden'}}>* When buying a gift certificate for someone else fill out <span className={styles.bold}>your</span> contact information, but <span className={styles.bold}>their</span> vehicle information (or as much as you know about their vehicle). We'll then get in contact with you to get the gift card to you!</p>
 
                 </div>
                 <button className={styles.submitButton}>Submit</button>

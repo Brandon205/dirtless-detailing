@@ -34,6 +34,7 @@ export default function Home() {
             <Head>
                 <title>Bonney Lakes Auto Detailing & Ceramic Coating Specialists</title>
                 <meta property="og:site_name" content="Dirt-Less Detailing" />
+                <meta property="og:type" content="website" />
                 <Metatags
                     title='Bonney Lakes Auto Detailing & Ceramic Coating Specialists'
                     description='Bonney Lakes top choice for Ceramic Coating, Paint Correction, and all of your auto detailing needs! Contact us to schedule your appointment today!'
