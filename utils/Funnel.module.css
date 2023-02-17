@@ -561,7 +561,7 @@
 .photoCard {
     background-position: center;
     background-size: cover;
-    transition: 0.5s ease;
+    transition: 0.75s ease;
     border-radius: 1rem;
 }
 
