@@ -12,6 +12,7 @@ import Gallery from '../../components/gallery';
 export default function funnel() {
     const [smallScreen, setSmallScreen] = useState(null);
     const [service, setService] = useState(null);
+    const [gallery, setGallery] = useState(false);
 
     useEffect(() => {
         if (window.innerWidth < 879) {
@@ -42,6 +43,7 @@ export default function funnel() {
             </Head>
 
             <div className={styles.cover} style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover')` }}></div>
+            {/* <div className={styles.cover} style={{ backgroundImage: `url('https://res.cloudinary.com/brandon205/video/upload/v1674493877/Dirt-Less%20Detailing/Videos/received_1200318400918064_3_qteejy.mp4')` }}></div> */}
             <div className={styles.servicepageHeader}>
                 <div className={styles.headerLogo} style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0a945e76-f4c0-4e29-ef16-463490d0db00/public')`}}></div>
                 <h2 className={styles.pageSubheading}>Upgrade your car's protection and appearance with graphene ceramic coating for a long-lasting shine, scratch, and UV resistance. Invest in your car's future and keep it looking new.</h2>
@@ -78,7 +80,7 @@ export default function funnel() {
 
             <div className={styles.contactContainer}>
                 <Contact package={service} />
-                <div className={styles.contactPhoto} style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2b4f72db-a0cc-4f91-ed15-66d8a1b4c400/public')`}}></div>
+                <div className={styles.contactPhoto} style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5b0798e5-2648-4845-168b-98e7ff013100/public')`}}></div>
             </div>
 
             <div className={styles.diagonal} style={{marginTop: 10 + 'vh'}}>
@@ -91,7 +93,8 @@ export default function funnel() {
             <h2 className={styles.textXl}>Gallery</h2>
             <p className={styles.diagonalP}>Small showcase of the vehicles we have been able to work on!</p>
 
-            <Gallery />
+            <Gallery show={gallery} />
+            <button onClick={() => setGallery(!gallery)}>Show More</button>
 
             <h2 className={styles.textXl}>FAQ</h2>
             <p className={styles.diagonalP}>Get answers to some of our most commonly asked questions about ceramic coatings.</p>

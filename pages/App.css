@@ -27,7 +27,10 @@
 
   /* TEMPORARY ROOT SELECTORS: */
   --diagonalFirst: #c0cbcd;
-  --diagonalSecond: #37cf6b;
+  --diagonalSecond: #47ce77;
+  --diagonalThird: #37cf6b;
+  --funnelMain: #37cf6b;
+  --funnelMainHover: #2aa053;
 }
 
 *,

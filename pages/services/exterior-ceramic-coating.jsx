@@ -96,7 +96,7 @@ export default function ExtCoatings() {
                     }`,
                 }} />
             </Head>
-            <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b441cde-1d0f-45d9-665f-e44bfce0d800/cover')`}}></div>
+            <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a30c288d-c816-4a42-e313-d7fa80e04200/cover')`}}></div>
             <div className="servicepage-header">
                 <h1>Exterior Ceramic Coating</h1>
                 <h2 className='page-subheading'>Get a professionally installed 5 year Ceramic Coating professionally to protect your vehicle year-round.</h2>
@@ -167,12 +167,105 @@ export default function ExtCoatings() {
                             <p>Whether it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe any spill up before it seeps in. Get more info on our <a href="/services/interior-ceramic-coating" className='aside-link'>Interior Coating</a> page.</p>
                         </div>
 
+                        <br className='extra-space' />
+
+                        <div>
+                            <h3 className='pricing-title text-white'>Our Ceramic Coating Pricing</h3>
+                            <h4 className='subtext'>*Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</h4>
+                            <div className="pricing-container text-black">
+                                <div className="pricing-card">
+                                    <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Small</strong>
+                                    <strong className='size'>Protect</strong>
+                                    <p className="pricing-price pricing-border">$1,000</p>
+                                    <strong className='size'>Protect<span className="special-package">+</span></strong>
+                                    <p className="pricing-price pricing-border">$1,500</p>
+                                    <p className="example-vehicle pricing-border">2-Door Coupes</p>
+                                    <p className="example-vehicle pricing-border">Single/Extended Cabs</p>
+                                    <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                                </div>
+                                <div className="pricing-card">
+                                    <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Medium</strong>
+                                    <strong className='size'>Protect</strong>
+                                    <p className="pricing-price pricing-border">$1,200</p>
+                                    <strong className='size'>Protect<span className="special-package">+</span></strong>
+                                    <p className="pricing-price pricing-border">$1,700</p>
+                                    <p className="example-vehicle pricing-border">4 Door Vehicles</p>
+                                    <p className="example-vehicle pricing-border">Smaller SUV's</p>
+                                    <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                                </div>
+                                <div className="pricing-card">
+                                    <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Large</strong>
+                                    <strong className='size'>Protect</strong>
+                                    <p className="pricing-price pricing-border">$1,400</p>
+                                    <strong className='size'>Protect<span className="special-package">+</span></strong>
+                                    <p className="pricing-price pricing-border">$1,900</p>
+                                    <p className="example-vehicle pricing-border">Larger Trucks</p>
+                                    <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
+                                    <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                                </div>
+                            </div>
+
+                            <h3 className='pricing-title text-white'>Our Monthly/Yearly Maintenance Pricing</h3>
+                            <h4 className='subtext'><span className='special-package'>MONTHLY: </span>The goal of our monthly maintenance is to keep your vehicle looking like new year-round. Every month you will get a <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> and a <a href='/services/full-interior-detail' className='aside-link'>Full Interior Detail</a>.</h4>
+                            <h4 className='subtext'><span className='special-package'>YEARLY: </span>Our yearly service goes into far more detail and we will: • Wash the entire vehicle • Perform Iron Decontamination treatment • Top the vehicle off with a ceramic booster • Apply a new coat of ceramic to the windshield.</h4>
+                            <div className="pricing-container text-black">
+                                <div className="pricing-card">
+                                    <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Small</strong>
+                                    <strong className='size'>Monthly</strong>
+                                    <p className="pricing-price pricing-border">$130</p>
+                                    <strong className='size'>Yearly</strong>
+                                    <p className="pricing-price pricing-border">$200</p>
+                                    <p className="example-vehicle pricing-border">2-Door Coupes</p>
+                                    <p className="example-vehicle pricing-border">Single/Extended Cabs</p>
+                                    <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                                </div>
+                                <div className="pricing-card">
+                                    <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Medium</strong>
+                                    <strong className='size'>Monthly</strong>
+                                    <p className="pricing-price pricing-border">$160</p>
+                                    <strong className='size'>Yearly</strong>
+                                    <p className="pricing-price pricing-border">$250</p>
+                                    <p className="example-vehicle pricing-border">4 Door Vehicles</p>
+                                    <p className="example-vehicle pricing-border">Smaller SUV's</p>
+                                    <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                                </div>
+                                <div className="pricing-card">
+                                    <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Large</strong>
+                                    <strong className='size'>Monthly</strong>
+                                    <p className="pricing-price pricing-border">$190</p>
+                                    <strong className='size'>Yearly</strong>
+                                    <p className="pricing-price pricing-border">$300</p>
+                                    <p className="example-vehicle pricing-border">Larger Trucks</p>
+                                    <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
+                                    <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                                </div>
+                            </div>
+
+                            <h3 className="pricing-title text-white">Exterior Re-coating Options</h3>
+                            <h4 className='subtext'>Our re-coating options if you have had a ceramic coating done through us.</h4>
+                            <div className="pricing-container text-black">
+                                <div className="pricing-card">
+                                    <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Re-coat All Vehicle Trim</strong>
+                                    <p>Get all exterior vehicle trim re-coated.</p>
+                                    <p className="pricing-price">$100</p>
+                                    <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                                </div>
+                                <div className="pricing-card">
+                                    <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Re-coat Wheel Faces</strong>
+                                    <p>Re-coat all Wheel Faces.</p>
+                                    <p className="pricing-price">$150</p>
+                                    <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br className='extra-space' />
+
                         <div style={{display: 'grid'}} className='place-center'>
                             <div className='slider-container'>
                                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a2d79f4f-82e7-488d-deaf-7b0f7136a400/public')`}} className='slider-img'></div>
                                 <div style={{width: 0 + slide + '%', backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d80fdd8a-40cd-4481-91cf-c80025e68a00/public')`}} className='slider-img foreground'></div>
                                 <input type="range" min="1" max="100" value={slide} onChange={(e) => setSlide(Number(e.target.value))} className="slider" name='slider' id="slider" />
-                                {/* <div style={{left: slide - 1.5 + '%'}} className='slider-button'></div> */}
                             </div>
                         </div>
 
@@ -239,98 +332,6 @@ export default function ExtCoatings() {
                         </div>
                     </div>
                     <p><span className='special-package'>*</span>Must follow maintenance procedures to qualify for our warranties.</p>
-
-                    <br className='extra-space' />
-
-                    <div>
-                        <h3 className='pricing-title text-white'>Our Ceramic Coating Pricing</h3>
-                        <h4 className='subtext'>*Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</h4>
-                        <div className="pricing-container text-black">
-                            <div className="pricing-card">
-                                <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Small</strong>
-                                <strong className='size'>Protect</strong>
-                                <p className="pricing-price pricing-border">$1,000</p>
-                                <strong className='size'>Protect<span className="special-package">+</span></strong>
-                                <p className="pricing-price pricing-border">$1,500</p>
-                                <p className="example-vehicle pricing-border">2-Door Coupes</p>
-                                <p className="example-vehicle pricing-border">Single/Extended Cabs</p>
-                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                            </div>
-                            <div className="pricing-card">
-                                <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Medium</strong>
-                                <strong className='size'>Protect</strong>
-                                <p className="pricing-price pricing-border">$1,200</p>
-                                <strong className='size'>Protect<span className="special-package">+</span></strong>
-                                <p className="pricing-price pricing-border">$1,700</p>
-                                <p className="example-vehicle pricing-border">4 Door Vehicles</p>
-                                <p className="example-vehicle pricing-border">Smaller SUV's</p>
-                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                            </div>
-                            <div className="pricing-card">
-                                <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Large</strong>
-                                <strong className='size'>Protect</strong>
-                                <p className="pricing-price pricing-border">$1,400</p>
-                                <strong className='size'>Protect<span className="special-package">+</span></strong>
-                                <p className="pricing-price pricing-border">$1,900</p>
-                                <p className="example-vehicle pricing-border">Larger Trucks</p>
-                                <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
-                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                            </div>
-                        </div>
-
-                        <h3 className='pricing-title text-white'>Our Monthly/Yearly Maintenance Pricing</h3>
-                        <h4 className='subtext'><span className='special-package'>MONTHLY: </span>The goal of our monthly maintenance is to keep your vehicle looking like new year-round. Every month you will get a <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> and a <a href='/services/full-interior-detail' className='aside-link'>Full Interior Detail</a>.</h4>
-                        <h4 className='subtext'><span className='special-package'>YEARLY: </span>Our yearly service goes into far more detail and we will: • Wash the entire vehicle • Perform Iron Decontamination treatment • Top the vehicle off with a ceramic booster • Apply a new coat of ceramic to the windshield.</h4>
-                        <div className="pricing-container text-black">
-                            <div className="pricing-card">
-                                <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Small</strong>
-                                <strong className='size'>Monthly</strong>
-                                <p className="pricing-price pricing-border">$130</p>
-                                <strong className='size'>Yearly</strong>
-                                <p className="pricing-price pricing-border">$200</p>
-                                <p className="example-vehicle pricing-border">2-Door Coupes</p>
-                                <p className="example-vehicle pricing-border">Single/Extended Cabs</p>
-                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                            </div>
-                            <div className="pricing-card">
-                                <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Medium</strong>
-                                <strong className='size'>Monthly</strong>
-                                <p className="pricing-price pricing-border">$160</p>
-                                <strong className='size'>Yearly</strong>
-                                <p className="pricing-price pricing-border">$250</p>
-                                <p className="example-vehicle pricing-border">4 Door Vehicles</p>
-                                <p className="example-vehicle pricing-border">Smaller SUV's</p>
-                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                            </div>
-                            <div className="pricing-card">
-                                <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Large</strong>
-                                <strong className='size'>Monthly</strong>
-                                <p className="pricing-price pricing-border">$190</p>
-                                <strong className='size'>Yearly</strong>
-                                <p className="pricing-price pricing-border">$300</p>
-                                <p className="example-vehicle pricing-border">Larger Trucks</p>
-                                <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
-                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                            </div>
-                        </div>
-
-                        <h3 className="pricing-title text-white">Exterior Re-coating Options</h3>
-                        <h4 className='subtext'>Our re-coating options if you have had a ceramic coating done through us.</h4>
-                        <div className="pricing-container text-black">
-                            <div className="pricing-card fixed-height">
-                                <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Re-coat All Vehicle Trim</strong>
-                                <p>Get all exterior vehicle trim re-coated.</p>
-                                <p className="pricing-price">$100</p>
-                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                            </div>
-                            <div className="pricing-card fixed-height">
-                                <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Re-coat Wheel Faces</strong>
-                                <p>Re-coat all Wheel Faces.</p>
-                                <p className="pricing-price">$150</p>
-                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                            </div>
-                        </div>
-                    </div>
 
                     <br className='extra-space' />
 

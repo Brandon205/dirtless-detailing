@@ -33,15 +33,11 @@ export default function Packages(props) {
                     </li>
                     <li className={styles.checklistItem}>
                         <AiFillCloseCircle style={{color: 'lightblue'}} className={styles.checkcircle} />
-                        <p className={styles.strikethrough}>Apply Stoner® Ceramic to all Trim</p>
+                        <p className={styles.strikethrough}>Apply Ceramic to all Trim</p>
                     </li>
                     <li className={styles.checklistItem}>
                         <AiFillCloseCircle style={{color: 'lightblue'}} className={styles.checkcircle} />
-                        <p className={styles.strikethrough}>Apply Aquapel Glass Treatment to Windshield</p>
-                    </li>
-                    <li className={styles.checklistItem}>
-                        <AiFillCloseCircle style={{color: 'lightblue'}} className={styles.checkcircle} />
-                        <p className={styles.strikethrough}>Apply a Coat of Premier WAX on top of Ceramic Coating</p>
+                        <p className={styles.strikethrough}>Apply Glass Treatment to Windshield</p>
                     </li>
                     <li className={styles.checklistItem}>
                         <AiFillCloseCircle style={{color: 'lightblue'}} className={styles.checkcircle} />
@@ -53,7 +49,7 @@ export default function Packages(props) {
                     </li>
                     <li className={styles.checklistItem}>
                         <AiFillCloseCircle style={{color: 'silver'}} className={styles.checkcircle} />
-                        <p className={styles.strikethrough}>Eclipse Wheel Faces</p>
+                        <p className={styles.strikethrough}>Coat Wheel Faces</p>
                     </li>
                 </ul>
 
@@ -86,23 +82,19 @@ export default function Packages(props) {
                         </li>
                         <li className={styles.checklistItem}>
                             <AiFillCheckCircle style={{color: 'lightblue'}} className={styles.checkcircle} />
-                            <p>2 Year Ceramic Coating</p>
+                            <p>Apply Ceramic to all Trim</p>
                         </li>
                         <li className={styles.checklistItem}>
                             <AiFillCheckCircle style={{color: 'lightblue'}} className={styles.checkcircle} />
-                            <p>Apply Stoner® Ceramic to all Trim</p>
-                        </li>
-                        <li className={styles.checklistItem}>
-                            <AiFillCheckCircle style={{color: 'lightblue'}} className={styles.checkcircle} />
-                            <p>Apply Aquapel Glass Treatment to Windshield</p>
-                        </li>
-                        <li className={styles.checklistItem}>
-                            <AiFillCheckCircle style={{color: 'lightblue'}} className={styles.checkcircle} />
-                            <p>Apply a Coat of Premier WAX on top of Ceramic Coating</p>
+                            <p>Apply Glass Treatment to Windshield</p>
                         </li>
                         <li className={styles.checklistItem}>
                             <AiFillCheckCircle style={{color: 'lightblue'}} className={styles.checkcircle} />
                             <p>Ceramic Tire Shine</p>
+                        </li>
+                        <li className={styles.checklistItem}>
+                            <AiFillCheckCircle style={{color: 'lightblue'}} className={styles.checkcircle} />
+                            <p>2 Year Ceramic Coating</p>
                         </li>
                         <li className={styles.checklistItem}>
                             <AiFillCloseCircle style={{color: 'silver'}} className={styles.checkcircle} />
@@ -110,7 +102,7 @@ export default function Packages(props) {
                         </li>
                         <li className={styles.checklistItem}>
                             <AiFillCloseCircle style={{color: 'silver'}} className={styles.checkcircle} />
-                            <p className={styles.strikethrough}>Eclipse Wheel Faces</p>
+                            <p className={styles.strikethrough}>Coat Wheel Faces</p>
                         </li>
                     </ul>
 
@@ -143,15 +135,11 @@ export default function Packages(props) {
                     </li>
                     <li className={styles.checklistItem}>
                         <AiFillCheckCircle style={{color: 'lightblue'}} className={styles.checkcircle} />
-                        <p>Apply Stoner® Ceramic to all Trim</p>
+                        <p>Apply Ceramic to all Trim</p>
                     </li>
                     <li className={styles.checklistItem}>
                         <AiFillCheckCircle style={{color: 'lightblue'}} className={styles.checkcircle} />
-                        <p>Apply Aquapel Glass Treatment to Windshield</p>
-                    </li>
-                    <li className={styles.checklistItem}>
-                        <AiFillCheckCircle style={{color: 'lightblue'}} className={styles.checkcircle} />
-                        <p>Apply a Coat of Premier WAX on top of Ceramic Coating</p>
+                        <p>Apply Glass Treatment to Windshield</p>
                     </li>
                     <li className={styles.checklistItem}>
                         <AiFillCheckCircle style={{color: 'lightblue'}} className={styles.checkcircle} />
@@ -163,7 +151,7 @@ export default function Packages(props) {
                     </li>
                     <li className={styles.checklistItem}>
                         <AiFillCheckCircle style={{color: 'silver'}} className={styles.checkcircle} />
-                        <p>Eclipse Wheel Faces</p>
+                        <p>Coat Wheel Faces</p>
                     </li>
                 </ul>
 

@@ -17,7 +17,10 @@
 
 /* :root {
     --diagonalFirst: #c0cbcd;
-    --diagonalSecond: #37cf6b;
+    --diagonalSecond: #80cd9f;
+    --diagonalThird: #37cf6b;
+    --funnelMain: #37cf6b;
+    --funnelMainHover: #2aa053;
 } */
 
 .quoteBtn {
@@ -25,9 +28,9 @@
     padding: 0.75rem;
     font-size: 1.5rem;
     text-decoration: none;
-    background-color: #c83f03;
+    background-color: var(--funnelMain);
     color: white;
-    border: 2px solid #c83f03;
+    border: 2px solid var(--funnelMain);
     border-radius: 0.5rem;
     margin: 0.75rem;
     font-weight: 300;
@@ -35,7 +38,7 @@
 }
 
 .quoteBtn:hover {
-    background-color: #9d2f00;
+    background-color: var(--funnelMainHover);
 }
 
 .mainQuoteBtn {
@@ -43,7 +46,7 @@
     padding: 0.75rem;
     font-size: 1.5rem;
     text-decoration: none;
-    border: 2px solid #c83f03;
+    border: 2px solid var(--funnelMain);
     border-radius: 0.5rem;
     font-weight: 300;
     transition: 0.5s;
@@ -53,7 +56,7 @@
 }
 
 .mainQuoteBtn:hover {
-    background-color: #c83f03;
+    background-color: var(--funnelMain);
 }
 
 .bgContact {
@@ -63,13 +66,10 @@
 
 .diagonal {
     --skew-angle: -3deg;
-    /* --background: linear-gradient(45deg,
-            #c83f03,
-            #DD962B,
-            #f2ec53); */
     --background: linear-gradient(45deg,
             var(--diagonalFirst),
-            var(--diagonalSecond));
+            var(--diagonalSecond),
+            var(--diagonalThird));
     text-align: left;
     padding: 3rem 1rem 5rem 1rem;
     text-align: center;
@@ -211,7 +211,7 @@
     display: inline-block;
     padding: 0.75em 10%;
     margin-bottom: 0.75rem;
-    background-color: var(--main-clr);
+    background-color: var(--funnelMain);
     border-radius: 0.5rem;
     color: white;
     font-weight: bold;
@@ -220,7 +220,7 @@
 }
 
 .popularReadmore:hover {
-    background-color: var(--main-clr-hover);
+    background-color: var(--funnelMainHover);
 }
 
 .price {
@@ -239,7 +239,7 @@
 }
 
 .checkcircle {
-    color: var(--main-clr);
+    color: var(--funnelMain);
     flex: 0 0 auto;
     margin-right: 0.5rem;
 }
@@ -331,7 +331,7 @@
     color: black;
     cursor: pointer;
     border-radius: 50px;
-    background-color: #fff;
+    background-color: white;
     border: solid 2px #7d7d7d;
     padding: 0.5rem 1.5rem;
     display: inline-block;
@@ -463,7 +463,7 @@
 .faqCaret {
     font-size: 3.5em;
     margin-left: auto;
-    color: #c83f03;
+    color: var(--funnelMain);
 }
 
 .faqUl {
@@ -519,13 +519,11 @@
 
     .faqIcon {
         font-size: 2em;
-        /* margin-right: 2rem; */
     }
 
     .faqCaret {
         font-size: 2em;
-        /* margin-left: 1rem; */
-        color: #c83f03;
+        color: var(--funnelMain);
     }
 }
 
@@ -606,7 +604,7 @@
     padding: 0.75rem;
     font-size: 1.5rem;
     text-decoration: none;
-    border: 2px solid var(--main-clr);
+    border: 2px solid var(--funnelMain);
     border-radius: 0.5rem;
     font-weight: 300;
     transition: 0.5s;
@@ -672,7 +670,7 @@
 }
 
 .specialPackage {
-    color: #c83f03;
+    color: var(--funnelMain);
 }
 
 .extraSpace {
