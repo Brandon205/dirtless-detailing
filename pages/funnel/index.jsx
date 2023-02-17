@@ -43,7 +43,6 @@ export default function funnel() {
             </Head>
 
             <div className={styles.cover} style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover')` }}></div>
-            {/* <div className={styles.cover} style={{ backgroundImage: `url('https://res.cloudinary.com/brandon205/video/upload/v1674493877/Dirt-Less%20Detailing/Videos/received_1200318400918064_3_qteejy.mp4')` }}></div> */}
             <div className={styles.servicepageHeader}>
                 <div className={styles.headerLogo} style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0a945e76-f4c0-4e29-ef16-463490d0db00/public')`}}></div>
                 <h2 className={styles.pageSubheading}>Upgrade your car's protection and appearance with graphene ceramic coating for a long-lasting shine, scratch, and UV resistance. Invest in your car's future and keep it looking new.</h2>
