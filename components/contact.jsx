@@ -77,8 +77,8 @@ export default function Contact(props) {
 
                     <div className={styles.selectField}>
                         <label htmlFor="year" className={styles.textInputLabel}>Year<span className={styles.specialPackage}>*</span></label>
-                        <select value="" id="year" name="year" className={styles.textInput} placeholder="Year" required>
-                            <option hidden disabled>Year</option>
+                        <select defaultValue="" id="year" name="year" className={styles.textInput} placeholder="Year" required>
+                            <option value="" hidden disabled>Year</option>
                             <option>2023</option>
                             <option>2022</option>
                             <option>2021</option>
@@ -143,12 +143,13 @@ export default function Contact(props) {
                             <option>1962</option>
                             <option>1961</option>
                             <option>1960</option>
+                            <option>1959 or before</option>
                         </select>
                     </div>
                     <div className={styles.selectField}>
                         <label htmlFor="make" className={styles.textInputLabel}>Make<span className={styles.specialPackage}>*</span></label>
-                        <select value="" id="make" name="make" className={styles.textInput} placeholder="Make" required>
-                            <option hidden disabled>Make</option>
+                        <select defaultValue="" id="make" name="make" className={styles.textInput} placeholder="Make" required>
+                            <option value="" hidden disabled>Make</option>
                             <option>Acura</option>
                             <option>Airstream</option>
                             <option>Alfa Romeo</option>
@@ -229,6 +230,7 @@ export default function Contact(props) {
                             <option>Volvo</option>
                             <option>Western Star</option>
                             <option>Winnebago</option>
+                            <option>Other/Unknown</option>
                         </select>
                     </div>
                     <div className={styles.selectField}>
@@ -237,12 +239,15 @@ export default function Contact(props) {
                     </div>
 
                     <div className={styles.selectField}>
-                        <label htmlFor="service" className={styles.textInputLabel}>Service Package</label>
-                        <select name='service' id='service' style={{width: 'auto'}} className={styles.textInput} required>
-                            <option value="" selected={props.package === null ? true : false} hidden disabled>Please Select a Package Below</option>   
-                            <option value="Gold" selected={props.package === 'gold' ? true : false}>Gold</option>
+                        <label htmlFor="service" className={styles.textInputLabel}>Service Package<span className={styles.specialPackage}>*</span></label>
+                        <select defaultValue="" name='service' id='service' style={{width: 'auto'}} className={styles.textInput} required>
+                            <option value="" hidden disabled>Please Select a Package Below</option>   
+                            <option value="Gold">Gold</option>
+                            <option value="Platinum">Platinum</option>
+                            <option value="Iridium">Iridium</option>
+                            {/* <option value="Gold" selected={props.package === 'gold' ? true : false}>Gold</option>
                             <option value="Platinum" selected={props.package === 'platinum' ? true : false}>Platinum</option>
-                            <option value="Iridium" selected={props.package === 'iridium' ? true : false}>Iridium</option>
+                            <option value="Iridium" selected={props.package === 'iridium' ? true : false}>Iridium</option> */}
                         </select>
                     </div>
 

@@ -53,7 +53,7 @@ export default function Packages(props) {
                     </li>
                 </ul>
 
-                <a href="#form" className={styles.popularReadmore} onClick={() => props.setPackage('gold')}>Gold Package {'>'}</a>
+                <a href="#form" className={styles.popularReadmore} onClick={() => props.setPackage('Gold')}>Gold Package {'>'}</a>
             </div>
 
             <div style={{boxShadow: '0 0 10px 5px lightblue'}} className={styles.card}>
@@ -106,7 +106,7 @@ export default function Packages(props) {
                         </li>
                     </ul>
 
-                <a href="#form" className={styles.popularReadmore} onClick={() => props.setPackage('platinum')}>Platinum Package {'>'}</a>
+                <a href="#form" className={styles.popularReadmore} onClick={() => props.setPackage('Platinum')}>Platinum Package {'>'}</a>
             </div>
 
             <div style={{boxShadow: '0 0 10px 5px silver'}} className={styles.card}>
@@ -155,7 +155,7 @@ export default function Packages(props) {
                     </li>
                 </ul>
 
-                <a href="#form" className={styles.popularReadmore} onClick={() => props.setPackage('iridium')}>Iridium Package {'>'}</a>
+                <a href="#form" className={styles.popularReadmore} onClick={() => props.setPackage('Iridium')}>Iridium Package {'>'}</a>
             </div>
         </div>
     )
