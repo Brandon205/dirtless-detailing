@@ -8,6 +8,7 @@ import OtherServices from '../utils/OtherServices';
 
 import { MdOutlineLocalCarWash } from 'react-icons/md';
 import { BiCertification } from 'react-icons/bi';
+import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 import { FaRegStar, FaMapMarkedAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -113,6 +114,7 @@ export default function Home() {
                     </div>
 
                     <a href="/Contact" className="quote-btn top-quote-btn">Get a Quote Today!</a>
+                    <a href="tel:2532529758" className="quote-btn"><MdOutlinePermPhoneMsg className="call-icon" /> (253) 252-9758</a>
 
                 </div>
             </header>

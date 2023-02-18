@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
-import { BsFillTelephoneFill, BsFillChatLeftTextFill } from 'react-icons/bs';
+import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 import styles from '../../utils/Funnel.module.css';
 
 import Packages from '../../components/packages';
@@ -58,7 +58,7 @@ export default function funnel() {
 
                 <div>
                     <a href="#form" className={styles.quoteBtn}>Get a Free Quote</a>
-                    <a href="tel:2532529758" className={styles.mainQuoteBtn}><BsFillTelephoneFill className={styles.callIcon} /> (253) 252-9758 <BsFillChatLeftTextFill className={styles.callIcon} /></a>
+                    <a href="tel:2532529758" className={styles.mainQuoteBtn}><MdOutlinePermPhoneMsg className={styles.callIcon} /> (253) 252-9758</a>
                 </div>
             </div>
 
@@ -101,7 +101,7 @@ export default function funnel() {
 
             <div className={styles.bottomCTA}>
                 <a href="#form" className={styles.quoteBtn}>Get a Free Quote Today!</a>
-                <a href="tel:2532529758" className={styles.quoteBtn}><BsFillTelephoneFill className={styles.callIcon} /> (253) 252-9758 <BsFillChatLeftTextFill className={styles.callIcon} /></a>
+                <a href="tel:2532529758" className={styles.mainQuoteBtn}><MdOutlinePermPhoneMsg className={styles.callIcon} /> (253) 252-9758</a>
             </div>
 
         </div>
