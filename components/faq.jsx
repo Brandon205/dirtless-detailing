@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { BsQuestionCircleFill } from 'react-icons/bs';
-import { RxCaretUp } from 'react-icons/rx';
-import { RxCaretDown } from 'react-icons/rx';
+import { RxCaretUp, RxCaretDown } from 'react-icons/rx';
 import styles from '../utils/Funnel.module.css';
 
 export default function Faq() {

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import { MdOutlinePermPhoneMsg } from 'react-icons/md';
+import { RxCaretUp, RxCaretDown } from 'react-icons/rx';
 import styles from '../../utils/Funnel.module.css';
 
 import Packages from '../../components/packages';
@@ -92,7 +93,7 @@ export default function funnel() {
             <p className={styles.diagonalP}>Small showcase of the vehicles we have been able to work on!</p>
 
             <Gallery show={gallery} />
-            <button onClick={() => setGallery(!gallery)}>Show More</button>
+            <div className={styles.showMore} onClick={() => setGallery(!gallery)} >{gallery ? <RxCaretUp /> : <RxCaretDown />}</div>
 
             <h2 className={styles.textXl}>FAQ</h2>
             <p className={styles.diagonalP}>Get answers to some of our most commonly asked questions about ceramic coatings.</p>

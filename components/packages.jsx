@@ -9,7 +9,7 @@ export default function Packages() {
         <div className={styles.cards}>
             <div style={{boxShadow: '0 0 10px 5px gold'}} className={styles.card}>
                 <div className={styles.cardHeader}>
-                    <a href='/services/single-stage-correction' className={styles.serviceHeadingLink}><GiGoldBar style={{color: 'gold'}} /> GOLD PACKAGE</a>
+                    <a href='/services/single-stage-correction' className={styles.serviceHeadingLink}><GiGoldBar style={{color: 'gold' }} /> GOLD PACKAGE</a>
                     <p className={styles.price}>Starting at: <span>$399</span></p>
                 </div>
                 <div className={styles.popularImg} style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/920c592d-31ee-41b9-2d3b-0b95d6ca7500/public')`}}></div>
@@ -111,7 +111,7 @@ export default function Packages() {
 
             <div style={{boxShadow: '0 0 10px 5px silver'}} className={styles.card}>
                 <div className={styles.cardHeader}>
-                    <a href='/services/single-stage-correction' className={styles.serviceHeadingLink}><FaCrown style={{color: 'gold'}} /> IRIDIUM PACKAGE</a>
+                    <a href='/services/single-stage-correction' className={styles.serviceHeadingLink}><FaCrown style={{color: 'gold', transform: 'rotate(-20deg) translate(28px, -3px)'}} /> IRIDIUM PACKAGE</a>
                     <p className={styles.price}>Starting at: <span>$1,699</span></p>
                 </div>
                 <div className={styles.popularImg} style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c7f409bd-c823-4598-6c56-5da726d30b00/public')`}}></div>
