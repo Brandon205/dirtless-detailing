@@ -109,9 +109,9 @@ export default function Packages() {
                 <a href="#form" className={styles.popularReadmore}>Platinum Package {'>'}</a>
             </div>
 
-            <div style={{boxShadow: '0 0 10px 5px silver'}} className={styles.card}>
+            <div style={{boxShadow: '0 0 10px 5px #c0c3c1'}} className={styles.card}>
                 <div className={styles.cardHeader}>
-                    <a href='/services/single-stage-correction' className={styles.serviceHeadingLink}><FaCrown style={{color: 'gold', transform: 'rotate(-20deg) translate(28px, -3px)'}} /> IRIDIUM PACKAGE</a>
+                    <a href='/services/single-stage-correction' className={styles.serviceHeadingLink}><FaCrown style={{color: '#c0c3c1', transform: 'rotate(-20deg) translate(28px, -3px)'}} /> IRIDIUM PACKAGE</a>
                     <p className={styles.price}>Starting at: <span>$1,699</span></p>
                 </div>
                 <div className={styles.popularImg} style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c7f409bd-c823-4598-6c56-5da726d30b00/public')`}}></div>
