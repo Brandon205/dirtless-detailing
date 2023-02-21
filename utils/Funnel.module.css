@@ -64,10 +64,9 @@
     border-radius: 0.5rem;
     font-weight: 300;
     transition: 0.5s;
-    margin: 0 auto;
+    margin: 0.75rem;
     background-color: rgba(0, 0, 0, 0);
     color: white;
-    max-width: 260px;
 }
 
 .mainQuoteBtn:hover {

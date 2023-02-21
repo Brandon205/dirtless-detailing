@@ -58,7 +58,7 @@ export default function funnel() {
                     </a>
                 </div>
 
-                <div>
+                <div style={{display: 'flex'}}>
                     <a href="#form" className={styles.quoteBtn}>Get a Free Quote</a>
                     <a href="tel:2532529758" className={styles.mainQuoteBtn}><MdOutlinePermPhoneMsg className={styles.callIcon} /> (253) 252-9758</a>
                 </div>

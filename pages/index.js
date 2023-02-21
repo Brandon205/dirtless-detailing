@@ -113,8 +113,13 @@ export default function Home() {
                         </a>
                     </div>
 
-                    <a href="/Contact" className="quote-btn top-quote-btn">Get a Quote Today!</a>
-                    <a href="tel:2532529758" className="quote-btn"><MdOutlinePermPhoneMsg className="call-icon" /> (253) 252-9758</a>
+                    {/* <a href="/Contact" className="quote-btn top-quote-btn">Get a Quote Today!</a>
+                    <a href="tel:2532529758" className="quote-btn"><MdOutlinePermPhoneMsg className="call-icon" /> (253) 252-9758</a> */}
+
+                    <div style={{display: 'flex', gap: 1 + 'rem'}}>
+                        <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
+                        <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
+                    </div>
 
                 </div>
             </header>
