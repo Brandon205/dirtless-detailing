@@ -1,9 +1,21 @@
+import { Carousel } from 'react-responsive-carousel';
 import styles from '../utils/Funnel.module.css';
+import styling from 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 export default function Reviews() {
     return (
         <div className={styles.reviewsContainer}>
             <div className={styles.reviewCard}>
+                {/* <Carousel width="370px" className={styles.reviewCarousel} style={styling} infiniteLoop stopOnHover showThumbs={false} swipeable showArrows interval={7000} emulateTouch>
+                    <div className={styles.reviewImg} style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d3ac6cf4-b415-476d-8286-5f169f4dca00/public')`}}></div>
+                    <div className={styles.reviewImg} style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7bc8d9b2-dd2a-4fb7-213a-dd02c3f33c00/public')`}}></div>
+                    <div className={styles.reviewImg}>
+                    <img src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7bc8d9b2-dd2a-4fb7-213a-dd02c3f33c00/public" />
+                    </div>
+                    <div className={styles.reviewImg}>
+                    <img src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d3ac6cf4-b415-476d-8286-5f169f4dca00/public" />
+                    </div>
+                </Carousel> */}
                 <div className={styles.popularImg} style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d3ac6cf4-b415-476d-8286-5f169f4dca00/public')`}}></div>
                 <div className={styles.reviewTop}>
                     <strong className={styles.name}>Brandon B.</strong>
