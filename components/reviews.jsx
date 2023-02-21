@@ -9,7 +9,7 @@ export default function Reviews() {
                     <strong className={styles.name}>Brandon B.</strong>
                     <strong className={styles.review}>★★★★★</strong>
                 </div>
-                <p className={styles.servicesP}>Services: <span className={styles.subtext}>Wheel washing, Paint repair, Auto interior vacuuming, Auto detailing, Full body wash, Car waxing</span></p>
+                <p className={styles.servicesP}><span className={styles.subtext}>Gold Package</span></p>
                 <hr className={styles.cardHr} />
                 <div className={styles.reviewBottom}>
                     <p>Brenden is a very experienced, organized, and detailed person who has done an amazing job detailing my car twice now! No matter what questions I have for him he responds right away and always has an answer. You can tell that he's done his research and uses only the best products for the job. He was even able to remove scratches from my trunk lid that I had after uninstalling an old rear wing! I would highly recommend Dirt-Less Detailing to anyone who needs a detail!</p>
@@ -22,7 +22,7 @@ export default function Reviews() {
                     <strong className={styles.name}>Mark B.</strong>
                     <strong className={styles.review}>★★★★★</strong>
                 </div>
-                <p className={styles.servicesP}>Services: <span className={styles.subtext}>Full body wash, Car waxing, Headlight polishing, Auto detailing, Paint repair, Exhaust tip polishing, Clay bar treatment, Wheel washing</span></p>
+                <p className={styles.servicesP}><span className={styles.subtext}>Platinum Package</span></p>
                 <hr className={styles.cardHr} />
                 <div className={styles.reviewBottom}>
                     <p>Amazing experience amazing Owner had no issues with the work and had amazing time communicating with him my truck turned out beautiful</p>
@@ -35,7 +35,7 @@ export default function Reviews() {
                     <strong className={styles.name}>Nathan M.</strong>
                     <strong className={styles.review}>★★★★★</strong>
                 </div>
-                <p className={styles.servicesP}>Services: <span className={styles.subtext}>Engine detailing, Auto interior vacuuming, Full body wash, Car waxing, Auto detailing, Interior scenting, Exhaust tip polishing, Steam cleaning, Seat shampooing, Clay bar treatment, Wheel washing</span></p>
+                <p className={styles.servicesP}><span className={styles.subtext}>Iridium Package</span></p>
                 <hr className={styles.cardHr} />
                 <div className={styles.reviewBottom}>
                     <p>I was just astounded by the quality of his performance as a detailer. My car has never been cleaner. From simple maintenance to even stage 1 buff; the quality has been on point every single time. He's a very good friend of mine and his dedication to detailing is proven to be remarkable.</p>

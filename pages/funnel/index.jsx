@@ -45,7 +45,7 @@ export default function funnel() {
             <div className={styles.cover} style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover')` }}></div>
             <div className={styles.servicepageHeader}>
                 <div className={styles.headerLogo} style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0a945e76-f4c0-4e29-ef16-463490d0db00/public')`}}></div>
-                <h2 className={styles.pageSubheading}>Upgrade your car's protection and appearance with graphene ceramic coating for a long-lasting shine, scratch, and UV resistance. Invest in your car's future and keep it looking new.</h2>
+                <h2 className={styles.pageSubheading}>Upgrade your cars armor and appearance with a Graphene Ceramic Coating for a long lasting shine, protection, UV resistance and more! Invest in your cars future to keep it looking like the day you got it!</h2>
 
                 <div style={{display: smallScreen ? 'none' : 'flex', alignItems: 'center', justifyContent: 'center', gap: 32}}>
                     <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="noopener">
@@ -64,9 +64,9 @@ export default function funnel() {
             </div>
 
             <div className={styles.diagonal}>
-                <h1 className={styles.textXl}>Bonney Lake's Trusted Auto Detailing Specialists</h1>
+                <h1 className={styles.textXl}>Bonney Lakes Detailing and Ceramic Coating Specialists</h1>
                 <p className={styles.diagonalP}>
-                    We are Bonney Lake's go to spot for Ceramic Coatings and all of your detailing needs. Getting you car detailed couldn't be easier through us!
+                    We are your go to spot for ceramic coatings and all of your auto detailing needs. Getting your car looking like new couldn't be easier!
                 </p>
             </div>
 

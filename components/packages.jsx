@@ -33,7 +33,7 @@ export default function Packages() {
                     </li>
                     <li className={styles.checklistItem}>
                         <AiFillCloseCircle style={{color: 'lightblue'}} className={styles.checkcircle} />
-                        <p className={styles.strikethrough}>Apply Ceramic to all Trim</p>
+                        <p className={styles.strikethrough}>Apply Ceramic Coating to all Trim</p>
                     </li>
                     <li className={styles.checklistItem}>
                         <AiFillCloseCircle style={{color: 'lightblue'}} className={styles.checkcircle} />
@@ -45,11 +45,15 @@ export default function Packages() {
                     </li>
                     <li className={styles.checklistItem}>
                         <AiFillCloseCircle style={{color: 'silver'}} className={styles.checkcircle} />
-                        <p className={styles.strikethrough}>Lifetime Ceramic Coating</p>
+                        <p className={styles.strikethrough}>Apply Glass Treatment to all glass</p>
                     </li>
                     <li className={styles.checklistItem}>
                         <AiFillCloseCircle style={{color: 'silver'}} className={styles.checkcircle} />
-                        <p className={styles.strikethrough}>Coat Wheel Faces</p>
+                        <p className={styles.strikethrough}>Lifetime Graphene Ceramic Coating</p>
+                    </li>
+                    <li className={styles.checklistItem}>
+                        <AiFillCloseCircle style={{color: 'silver'}} className={styles.checkcircle} />
+                        <p className={styles.strikethrough}>Ceramic Coat Wheel Faces</p>
                     </li>
                 </ul>
 
@@ -82,11 +86,11 @@ export default function Packages() {
                         </li>
                         <li className={styles.checklistItem}>
                             <AiFillCheckCircle style={{color: 'lightblue'}} className={styles.checkcircle} />
-                            <p>Apply Ceramic to all Trim</p>
+                            <p>Apply Ceramic Coating to all Trim</p>
                         </li>
                         <li className={styles.checklistItem}>
                             <AiFillCheckCircle style={{color: 'lightblue'}} className={styles.checkcircle} />
-                            <p>Apply Glass Treatment to Windshield</p>
+                            <p>Apply Glass Treatment to the Windshield</p>
                         </li>
                         <li className={styles.checklistItem}>
                             <AiFillCheckCircle style={{color: 'lightblue'}} className={styles.checkcircle} />
@@ -98,11 +102,7 @@ export default function Packages() {
                         </li>
                         <li className={styles.checklistItem}>
                             <AiFillCloseCircle style={{color: 'silver'}} className={styles.checkcircle} />
-                            <p className={styles.strikethrough}>Lifetime Ceramic Coating</p>
-                        </li>
-                        <li className={styles.checklistItem}>
-                            <AiFillCloseCircle style={{color: 'silver'}} className={styles.checkcircle} />
-                            <p className={styles.strikethrough}>Coat Wheel Faces</p>
+                            <p className={styles.strikethrough}>Ceramic Coat Wheel Faces</p>
                         </li>
                     </ul>
 
@@ -135,11 +135,11 @@ export default function Packages() {
                     </li>
                     <li className={styles.checklistItem}>
                         <AiFillCheckCircle style={{color: 'lightblue'}} className={styles.checkcircle} />
-                        <p>Apply Ceramic to all Trim</p>
+                        <p>Apply Ceramic Coating to all Trim</p>
                     </li>
                     <li className={styles.checklistItem}>
                         <AiFillCheckCircle style={{color: 'lightblue'}} className={styles.checkcircle} />
-                        <p>Apply Glass Treatment to Windshield</p>
+                        <p>Apply Glass Treatment to ALL glass</p>
                     </li>
                     <li className={styles.checklistItem}>
                         <AiFillCheckCircle style={{color: 'lightblue'}} className={styles.checkcircle} />
@@ -147,11 +147,11 @@ export default function Packages() {
                     </li>
                     <li className={styles.checklistItem}>
                         <AiFillCheckCircle style={{color: 'silver'}} className={styles.checkcircle} />
-                        <p>Lifetime Ceramic Coating</p>
+                        <p>Lifetime Graphene Ceramic Coating</p>
                     </li>
                     <li className={styles.checklistItem}>
                         <AiFillCheckCircle style={{color: 'silver'}} className={styles.checkcircle} />
-                        <p>Coat Wheel Faces</p>
+                        <p>Ceramic Coat Wheel Faces</p>
                     </li>
                 </ul>
 
