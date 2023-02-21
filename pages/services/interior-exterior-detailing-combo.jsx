@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import { BiLinkExternal } from 'react-icons/bi';
+import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 
 export default function Combo() {
   return (
@@ -48,10 +49,10 @@ export default function Combo() {
       <div className="servicepage-header">
         <h1>Full Interior and Exterior Combo</h1>
         <h2 className='page-subheading'>Full Interior Cleaning, Premium Dirt-Less Wash, and get an Engine Bay Cleaning on us!</h2>
-        <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
-        <p className='inline text-small'>
-          Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
-        </p>
+        <div className='header-buttons'>
+          <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
+          <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
+        </div>
       </div>
 
       <div className='main-content-container bg-contact'>

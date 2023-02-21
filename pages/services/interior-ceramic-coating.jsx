@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
+import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 
 import { BiLinkExternal } from 'react-icons/bi';
 import { GiCarSeat, GiRolledCloth, GiSpill } from 'react-icons/gi';
@@ -61,10 +62,10 @@ export default function IntCoatings() {
             <div className="servicepage-header">
                 <h1>Interior Coating</h1>
                 <h2 className='page-subheading'>Let us install an interior ceramic coating in your car to save you time when cleaning up spills and other messes</h2>
-                <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
-                <p className='inline text-small'>
-                    Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
-                </p>
+                <div className='header-buttons'>
+                    <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
+                    <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
+                </div>
             </div>
 
             <div className="process-container">

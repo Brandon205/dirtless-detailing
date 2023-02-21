@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import { BiLinkExternal } from 'react-icons/bi';
+import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 
 const steps = [
   ["Expose Hidden Dirt", "Use our Tornador Vortex blowgun which uses compressed air to blow out every spot a vacuum can't reach. It also extracts sand and loose soil from carpeting."],
@@ -74,10 +75,10 @@ export default function FullIntEx() {
       <div className="servicepage-header">
         <h1>Full Interior Cleaning</h1>
         <h2 className='page-subheading'>Easy and hassle free thorough interior cleaning service</h2>
-        <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
-        <p className='inline text-small'>
-          Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
-        </p>
+        <div className='header-buttons'>
+          <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
+          <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
+        </div>
       </div>
 
       <div className='main-content-container bg-contact'>

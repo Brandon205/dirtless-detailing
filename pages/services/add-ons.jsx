@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
+import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 
 export default function Addons() {
   return (
@@ -122,10 +123,10 @@ export default function Addons() {
       <div className="servicepage-header">
         <h1>Dirt-Less Detailing Add-ons</h1>
         <h2 className='page-subheading'>Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment • Truck Bed Cleaning • Debadging • Headliners • Engine Bay Cleaning.</h2>
-        <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
-        <p className='inline text-small'>
-          Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
-        </p>
+        <div className='header-buttons'>
+          <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
+          <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
+        </div>
       </div>
 
       <h3 style={{ fontSize: 40 }}>Our Currently Offered Add-ons:</h3>

@@ -4,6 +4,7 @@ import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 import { BiLinkExternal } from 'react-icons/bi';
 import { FaMapMarkerAlt } from 'react-icons/fa';
+import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 
 const steps = [
   ["Wash Vehicle", "Thorough strip wash top to bottom using 2 bucket method or equivalent, including gas door."],
@@ -91,10 +92,10 @@ export default function SinglePC() {
       <div className="servicepage-header">
         <h1>Single Stage Paint Correction</h1>
         <h2 className='page-subheading'>Restore your vehicles paint by removing scratches and swirls</h2>
-        <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
-        <p className='inline text-small'>
-          Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
-        </p>
+        <div className='header-buttons'>
+          <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
+          <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
+        </div>
       </div>
 
       <div className='main-content-container bg-contact'>

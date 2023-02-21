@@ -4,6 +4,7 @@ import Metatags from '../../utils/Metatags';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 import { FaMapMarkerAlt } from 'react-icons/fa';
+import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 
 import { FaCar } from 'react-icons/fa';
 import { BiCar, BiLinkExternal } from 'react-icons/bi';
@@ -100,10 +101,10 @@ export default function ExtCoatings() {
             <div className="servicepage-header">
                 <h1>Exterior Ceramic Coating</h1>
                 <h2 className='page-subheading'>Get a professionally installed 5 year Ceramic Coating professionally to protect your vehicle year-round.</h2>
-                <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
-                <p className='inline text-small'>
-                    Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
-                </p>
+                <div className='header-buttons'>
+                    <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
+                    <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
+                </div>
             </div>
 
             <div className="process-container">

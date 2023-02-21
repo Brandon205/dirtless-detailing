@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import ReactPlayer from 'react-player/lazy'; 
 import { BiLinkExternal } from 'react-icons/bi';
+import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 
 const steps = [
   ["Wash Vehicle", "Thorough strip wash top to bottom, including the gas door with the 2 bucket method or equivalent."],
@@ -75,10 +76,10 @@ export default function PDLWash() {
       <div className="servicepage-header">
         <h1>Premium Dirt-Less Wash</h1>
         <h2 className='page-subheading'>Our Premium Wash goes above and beyond removing all exterior contaminants and giving your paint an even cleaner shine.</h2>
-        <a href="/Contact" className="quote-btn service-page-quote-btn">Get a Quote</a>
-        <p className='inline text-small'>
-          Call/Text: <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener">(253) 252-9758</a>
-        </p>
+        <div className='header-buttons'>
+          <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
+          <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
+        </div>
       </div>
 
       <div className='main-content-container bg-contact'>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Metatags from '../utils/Metatags';
+import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 
 export default function About() {
   return (
@@ -89,6 +90,10 @@ export default function About() {
       <div className="servicepage-header">
         <h1>About Us/FAQ</h1>
         <h2 className='page-subheading'>Learn a little about us, and see our most commonly asked questions here</h2>
+        <div className='header-buttons'>
+          <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
+          <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
+        </div>
       </div>
 
       <section className="about-container">
