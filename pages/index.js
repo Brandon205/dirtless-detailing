@@ -162,8 +162,8 @@ export default function Home() {
                         <p className="reviewer">Trisha C.</p>
                     </div>
                     <div>
-                        <p className="review">My car has never been cleaner!!</p>
-                        <p className="reviewer">Austin M.</p>
+                        <p className="review">I was just astounded by the quality of his performance as a detailer. My car has never been cleaner. From simple maintenance to even stage 1 buff; the quality has been on point every single time. He's a very good friend of mine and his dedication to detailing is proven to be remarkable.</p>
+                        <p className="reviewer">Nathan M.</p>
                     </div>
                     <div>
                         <p className="review">The process was easy. He responded right away when I contacted him about a detail. He showed up when he said he would and was extremely professional.  He did an amazing job on the detail of my car.  Would have him detail my car again.</p>
@@ -173,9 +173,17 @@ export default function Home() {
                         <p className="review">Brenden is a hard worker, on time, great work and attention to detail. Highly recommend</p>
                         <p className="reviewer">Terri E.</p>
                     </div>
+                    <div>
+                        <p className="review">Without a doubt. Brenden is the MAN! Hands down second to none when it comes to his detailing services. My wifes Fit is as good as new if not better.</p>
+                        <p className="reviewer">Mike P.</p>
+                    </div>
+                    <div>
+                        <p className="review">Amazing experience amazing Owner had no issues with the work and had amazing time communicating with him my truck turned out beautiful</p>
+                        <p className="reviewer">Mark B.</p>
+                    </div>
                 </Carousel>
             </article>
-            <p>Check out more reviews on our <a style={{ color: 'blue' }} target='_blank' rel='noopener' href="https://www.facebook.com/DirtLessDetailing/reviews">Facebook</a> page.</p>
+            <p>Check out more reviews on our <a style={{ color: 'blue' }} target='_blank' rel='noopener' href="https://www.facebook.com/DirtLessDetailing/reviews">Facebook</a> or <a style={{ color: 'blue' }} target='_blank' rel='noopener' href="https://www.google.com/search?client=firefox-b-1-d&q=dirtlessdetailing+&dlnr=1&sei=Lhr1Y8_hCsz99AP82ZLACQ#dlnr=1&lrd=0x5490fbac5ad417c7:0x110d16ccf06cd4a2,1,,,,">Google</a> page.</p>
 
             <section className='mobileservices-container'>
                 <div className="locations">
