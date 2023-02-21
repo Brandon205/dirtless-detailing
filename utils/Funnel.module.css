@@ -477,6 +477,13 @@
     }
 
     .name {
+        font-size: 1.75em;
+    }
+
+}
+
+@media screen and (min-width: 1350px) {
+    .name {
         font-size: 2.3em;
     }
 }
