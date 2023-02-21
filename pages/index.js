@@ -13,12 +13,6 @@ import { FaRegStar, FaMapMarkedAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-export async function getStaticProps(context) {
-    return {
-        props: {}
-    }
-}
-
 export default function Home() {
     const [smallScreen, setSmallScreen] = useState(null);
 

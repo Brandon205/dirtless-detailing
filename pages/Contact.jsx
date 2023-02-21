@@ -513,9 +513,9 @@ export default function Contact() {
                         <input type="hidden" name="_gotcha" style={{ display: 'none !important' }} />
                     </div>
 
-                    <button className='submit-button'>Submit</button>
+                    <button className='submit-button'>Submit Quote Form!</button>
 
-                    <form style={{marginTop: 10 + 'vh'}} action="https://dirtlessdetailing.us9.list-manage.com/subscribe/post?u=752a73821b38b96d23f195a09&amp;id=d2a4976ed6&amp;f_id=00e011e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <form style={{marginTop: 15 + 'vh'}} action="https://dirtlessdetailing.us9.list-manage.com/subscribe/post?u=752a73821b38b96d23f195a09&amp;id=d2a4976ed6&amp;f_id=00e011e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                         <div className="form-section form-top-section">
                             <h2 style={{marginBottom: 0}}>Subscribe to us!</h2><br />
                             <p style={{marginTop: 0}}>Get news about Dirt-Less Detailing, along with special offers, deals and tips!</p>

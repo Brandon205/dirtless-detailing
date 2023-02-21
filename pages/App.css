@@ -571,7 +571,7 @@ option {
   font-size: 1.3em;
   background-color: var(--contact-bkg-lighter);
   color: white;
-  border: solid 2px #7d7d7d;
+  border: solid 2px var(--main-clr);
   border-radius: 15px;
   margin-top: 0.5rem;
   transition: 0.5s ease;
