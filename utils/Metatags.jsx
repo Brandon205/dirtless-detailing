@@ -8,6 +8,7 @@ export default function Metatags({title, description, image, canonical}) {
             <meta property="og:description" content={description} />
             <meta property="og:image" content={image} />
             <meta property="og:url" content={`https://www.dirtlessdetailing.com${canonical}`} />
+            <meta property="og:locale" content='en_us' />
 
             <meta name="twitter:title" content={title} />
             <meta name="twitter:card" content="summary" />

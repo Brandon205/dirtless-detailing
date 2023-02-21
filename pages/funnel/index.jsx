@@ -32,6 +32,7 @@ export default function funnel() {
                 <meta property="og:image" content='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/public' />
                 <meta property="og:url" content='https://www.dirtlessdetailing.com/funnel' />
                 <meta property="type" content="website" />
+                <meta property="og:type" content="website" />
 
                 <meta name="twitter:title" content='Bonney Lakes Auto Detailing & Ceramic Coating Specialists' />
                 <meta name="twitter:card" content="summary" />

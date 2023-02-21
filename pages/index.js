@@ -70,7 +70,7 @@ export default function Home() {
                         "aggregateRating": {
                             "@type": "AggregateRating",
                             "ratingValue": 5,
-                            "reviewCount": 6
+                            "reviewCount": 7
                         }
                     }`,
                 }} />
