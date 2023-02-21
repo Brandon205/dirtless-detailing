@@ -31,7 +31,6 @@ export default function Contact() {
             "Make": e.target['make'].value,
             "Model": e.target['model'].value,
             "Message": e.target['message'].value,
-            "Newsletter": e.target['newsletter'].checked ? 'Yes' : 'No',
             "For Myself": e.target['myself'].checked ? 'Yes' : 'No',
             "Gift Card": e.target['someone'].checked ? 'Yes' : 'No',
             "Combo": e.target['combo'].checked ? 'Yes' : 'No',
@@ -355,11 +354,6 @@ export default function Contact() {
                             <div style={{ width: 100 + '%' }}>
                                 <label htmlFor="message" className='text-input-label'>Additional Information:</label>
                                 <textarea type="textarea" name="message" id='message' className='textarea' placeholder='Do you want our mobile service or to schedule a drop off? Do you have any other questions/concerns?' />
-                            </div>
-
-                            <div style={{width: 100 + '%'}}>
-                                <label htmlFor="newsletter" className=''>Sign up for our newsletter? </label>
-                                <input type="checkbox" name="newsletter" id='newsletter' style={{display: 'block'}} />
                             </div>
 
                             <div>
