@@ -28,6 +28,7 @@ export default function Contact() {
             "Make": e.target['make'].value,
             "Model": e.target['model'].value,
             "Message": e.target['message'].value,
+            "Newsletter": e.target['newsletter'].checked ? 'Yes' : 'No',
             "For Myself": e.target['myself'].checked ? 'Yes' : 'No',
             "Gift Card": e.target['someone'].checked ? 'Yes' : 'No',
             "Combo": e.target['combo'].checked ? 'Yes' : 'No',
@@ -69,32 +70,56 @@ export default function Contact() {
             }
         });
 
-        fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
-            method: "POST",
-            body: formData
-        }).then((test) => {
-            toast.success("Form submitted! Expect an email, text, or phone call soon!", {
-                position: "bottom-center",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined
-            })
-            e.target.reset()
-            window.scrollTo(0, 0)
-        }).catch(error => {
-            toast.error("An error occurred, please try again." + error, {
-                position: "bottom-center",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined
-            })
-        });
+        // if (formInfo['Newsletter'] === "Yes") {
+        //     // Submit to mailchimp in here
+        //     let mailChimpData = new FormData();
+        //     mailChimpData.append('u', '752a73821b38b96d23f195a09');
+        //     mailChimpData.append('id', 'd2a4976ed6');
+
+        //     mailChimpData.append('MERGE1', formInfo["Name"]);
+        //     mailChimpData.append('MERGE0', formInfo["Email"]);
+        //     mailChimpData.append('MERGE4', formInfo["Phone"]);
+
+        //     console.log(mailChimpData)
+
+        //     fetch('https://dirtlessdetailing.us9.list-manage.com/subscribe/post', {
+        //         method: 'POST',
+        //         body: mailChimpData
+        //     }).then((res) => {
+        //         console.log('in the .then, maybe it worked? ', res)
+        //     }).catch((error) => {
+        //         console.log("ERROR: ", error)
+        //     })
+        // }
+
+        console.log('FORM SUBMITTED: ', formInfo['Name'])
+
+        // fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
+        //     method: "POST",
+        //     body: formData
+        // }).then((test) => {
+        //     toast.success("Form submitted! Expect an email, text, or phone call soon!", {
+        //         position: "bottom-center",
+        //         autoClose: 5000,
+        //         hideProgressBar: false,
+        //         closeOnClick: true,
+        //         pauseOnHover: true,
+        //         draggable: true,
+        //         progress: undefined
+        //     })
+        //     e.target.reset()
+        //     window.scrollTo(0, 0)
+        // }).catch(error => {
+        //     toast.error("An error occurred, please try again." + error, {
+        //         position: "bottom-center",
+        //         autoClose: 5000,
+        //         hideProgressBar: false,
+        //         closeOnClick: true,
+        //         pauseOnHover: true,
+        //         draggable: true,
+        //         progress: undefined
+        //     })
+        // });
     };
 
     let handleGiftSelect = (giftButton) => {
@@ -352,6 +377,12 @@ export default function Contact() {
                                 <label htmlFor="message" className='text-input-label'>Additional Information:</label>
                                 <textarea type="textarea" name="message" id='message' className='textarea' placeholder='Do you want our mobile service or to schedule a drop off? Do you have any other questions/concerns?' />
                             </div>
+
+                            <div style={{width: 100 + '%'}}>
+                                <label htmlFor="newsletter" className=''>Sign up for our newsletter? </label>
+                                <input type="checkbox" name="newsletter" id='newsletter' style={{display: 'block'}} />
+                            </div>
+
                             <div>
                                 <input type="checkbox" name="myself" id='myself' className='checkbox-input' onChange={() => handleGiftSelect(false)} checked={gift ? false : true} />
                                 <label htmlFor="myself" className='checkbox-label'>For Myself</label>
