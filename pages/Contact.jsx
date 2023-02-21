@@ -15,6 +15,9 @@ export default function Contact() {
     const [coatingSelected, setCoatingSelected] = useState(false);
     const [gift, setGift] = useState(false);
 
+    const [nameVal, setNameVal] = useState('');
+    const [emailVal, setEmailVal] = useState('');
+
     let formRef = useRef();
 
     const formSubmit = (e) => {
@@ -70,56 +73,32 @@ export default function Contact() {
             }
         });
 
-        // if (formInfo['Newsletter'] === "Yes") {
-        //     // Submit to mailchimp in here
-        //     let mailChimpData = new FormData();
-        //     mailChimpData.append('u', '752a73821b38b96d23f195a09');
-        //     mailChimpData.append('id', 'd2a4976ed6');
-
-        //     mailChimpData.append('MERGE1', formInfo["Name"]);
-        //     mailChimpData.append('MERGE0', formInfo["Email"]);
-        //     mailChimpData.append('MERGE4', formInfo["Phone"]);
-
-        //     console.log(mailChimpData)
-
-        //     fetch('https://dirtlessdetailing.us9.list-manage.com/subscribe/post', {
-        //         method: 'POST',
-        //         body: mailChimpData
-        //     }).then((res) => {
-        //         console.log('in the .then, maybe it worked? ', res)
-        //     }).catch((error) => {
-        //         console.log("ERROR: ", error)
-        //     })
-        // }
-
-        console.log('FORM SUBMITTED: ', formInfo['Name'])
-
-        // fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
-        //     method: "POST",
-        //     body: formData
-        // }).then((test) => {
-        //     toast.success("Form submitted! Expect an email, text, or phone call soon!", {
-        //         position: "bottom-center",
-        //         autoClose: 5000,
-        //         hideProgressBar: false,
-        //         closeOnClick: true,
-        //         pauseOnHover: true,
-        //         draggable: true,
-        //         progress: undefined
-        //     })
-        //     e.target.reset()
-        //     window.scrollTo(0, 0)
-        // }).catch(error => {
-        //     toast.error("An error occurred, please try again." + error, {
-        //         position: "bottom-center",
-        //         autoClose: 5000,
-        //         hideProgressBar: false,
-        //         closeOnClick: true,
-        //         pauseOnHover: true,
-        //         draggable: true,
-        //         progress: undefined
-        //     })
-        // });
+        fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
+            method: "POST",
+            body: formData
+        }).then((test) => {
+            toast.success("Form submitted! Expect an email, text, or phone call soon!", {
+                position: "bottom-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined
+            })
+            e.target.reset()
+            window.scrollTo(0, 0)
+        }).catch(error => {
+            toast.error("An error occurred, please try again." + error, {
+                position: "bottom-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined
+            })
+        });
     };
 
     let handleGiftSelect = (giftButton) => {
@@ -541,6 +520,30 @@ export default function Contact() {
                     </div>
 
                     <button className='submit-button'>Submit</button>
+
+                    <form style={{marginTop: 10 + 'vh'}} action="https://dirtlessdetailing.us9.list-manage.com/subscribe/post?u=752a73821b38b96d23f195a09&amp;id=d2a4976ed6&amp;f_id=00e011e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div className="form-section form-top-section">
+                            <h2 style={{marginBottom: 0}}>Subscribe to us!</h2><br />
+                            <p style={{marginTop: 0}}>Get news about Dirt-Less Detailing, along with special offers, deals and tips!</p>
+
+                            <div className="mc-field-group">
+                                <label for="mce-FNAME"  className='text-input-label'>First Name<span className="special-package">*</span></label>
+                                <input type="text" value={nameVal} onChange={() => setNameVal()} name="FNAME" className="text-input" id="mce-FNAME" />
+                            </div>
+                            <div className="mc-field-group">
+                                <label for="mce-EMAIL" className='text-input-label'>Email Address<span className="special-package">*</span></label>
+                                <input type="email" value={emailVal} onChange={() => setEmailVal()} className="text-input" name="EMAIL" id="mce-EMAIL" required />
+                            </div>
+                            <div id="mce-responses" className="clear foot">
+                                <div className="response" id="mce-error-response" style={{display: 'none'}}></div>
+                                <div className="response" id="mce-success-response" style={{display: 'none'}}></div>
+                            </div>
+                            <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true">
+                                <input type="text" name="b_752a73821b38b96d23f195a09_d2a4976ed6" tabindex="-1" value="" />
+                            </div>
+                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="submit-button" />
+                        </div>
+                    </form>
 
                     <ToastContainer position="bottom-center"
                         autoClose={5000}
