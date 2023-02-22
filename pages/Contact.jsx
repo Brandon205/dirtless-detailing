@@ -87,6 +87,7 @@ export default function Contact() {
                 progress: undefined
             })
             e.target.reset()
+        setPhoneNumber('')
             window.scrollTo(0, 0)
         }).catch(error => {
             toast.error("An error occurred, please try again." + error, {
@@ -212,7 +213,7 @@ export default function Contact() {
 
             <div className='contact-container-right'>
                 <h2>Or Email us by filling out our form:</h2>
-                <form className="form" onSubmit={(e) => formSubmit(e)} ref={formRef}>
+                <form className="form" onSubmit={(e) => formSubmit(e)} ref={formRef} autoComplete="on">
                     <div className="form-section form-top-section">
                         <div>
                             <label htmlFor="name" className='text-input-label'>Name<span className='special-package'>*</span></label>
@@ -220,7 +221,7 @@ export default function Contact() {
                             <label htmlFor="email" className='text-input-label'>Email<span className='special-package'>*</span></label>
                             <input type="email" id="email" name="email" className='text-input' placeholder="Email" required />
                             <label htmlFor="phone" className='text-input-label'>Phone Number<span className='special-package'>*</span></label>
-                            <input type="tel" id="phone" name="phone" value={phoneNumber} onChange={(e) => handlePhoneNumber(e)} className='text-input' placeholder="Ex. (111) 111-1111" required />
+                            <input type="tel" id="phone" name="phone" pattern="(\d{3}) \d{3}-\d{4}" value={phoneNumber} onChange={(e) => handlePhoneNumber(e)} className='text-input' placeholder="Ex. (111) 111-1111" required />
 
                             <div className='select-field'>
                                 <label htmlFor="year" className='text-input-label'>Year<span className='special-package'>*</span></label>
@@ -479,20 +480,20 @@ export default function Contact() {
                         <p className="form-section-heading">Vehicle Dirtiness</p>
                         <input type="range" name="dirtiness" id="dirtiness" min="1" max="5" step="1" list="dirtiness-tickmarks" />
                         <datalist id="dirtiness-tickmarks">
-                            <option value="1" label="Pretty Clean"></option>
-                            <option value="2" label=""></option>
-                            <option value="3" label=""></option>
-                            <option value="4" label=""></option>
-                            <option value="5" label="Very Dirty"></option>
+                            <option value="1" aria-readonly label="Pretty Clean"></option>
+                            <option value="2" aria-readonly label=""></option>
+                            <option value="3" aria-readonly label=""></option>
+                            <option value="4" aria-readonly label=""></option>
+                            <option value="5" aria-readonly label="Very Dirty"></option>
                         </datalist>
                         <p className="form-section-heading">Dog Hair Amount</p>
                         <input type="range" name="dogHair" id="dogHair" min="1" max="5" step="1" list="hair-tickmarks" />
                         <datalist id="hair-tickmarks">
-                            <option value="1" label="No Hair"></option>
-                            <option value="2" label=""></option>
-                            <option value="3" label=""></option>
-                            <option value="4" label=""></option>
-                            <option value="5" label="Lots of Hair"></option>
+                            <option value="1" aria-readonly label="No Hair"></option>
+                            <option value="2" aria-readonly label=""></option>
+                            <option value="3" aria-readonly label=""></option>
+                            <option value="4" aria-readonly label=""></option>
+                            <option value="5" aria-readonly label="Lots of Hair"></option>
                         </datalist>
                     </div>
 
@@ -547,30 +548,6 @@ export default function Contact() {
 
                     <button className='submit-button'>Submit Quote Form!</button>
 
-                    <form style={{marginTop: 15 + 'vh'}} action="https://dirtlessdetailing.us9.list-manage.com/subscribe/post?u=752a73821b38b96d23f195a09&amp;id=d2a4976ed6&amp;f_id=00e011e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        <div className="form-section form-top-section">
-                            <h2 style={{marginBottom: 0}}>Subscribe to us!</h2><br />
-                            <p style={{marginTop: 0}}>Get news about Dirt-Less Detailing, along with special offers, deals and tips!</p>
-
-                            <div className="mc-field-group">
-                                <label for="mce-FNAME"  className='text-input-label'>First Name<span className="special-package">*</span></label>
-                                <input type="text" value={nameVal} onChange={() => setNameVal()} name="FNAME" className="text-input" id="mce-FNAME" />
-                            </div>
-                            <div className="mc-field-group">
-                                <label for="mce-EMAIL" className='text-input-label'>Email Address<span className="special-package">*</span></label>
-                                <input type="email" value={emailVal} onChange={() => setEmailVal()} className="text-input" name="EMAIL" id="mce-EMAIL" required />
-                            </div>
-                            <div id="mce-responses" className="clear foot">
-                                <div className="response" id="mce-error-response" style={{display: 'none'}}></div>
-                                <div className="response" id="mce-success-response" style={{display: 'none'}}></div>
-                            </div>
-                            <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true">
-                                <input type="text" name="b_752a73821b38b96d23f195a09_d2a4976ed6" tabindex="-1" value="" />
-                            </div>
-                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="submit-button" />
-                        </div>
-                    </form>
-
                     <ToastContainer position="bottom-center"
                         autoClose={5000}
                         hideProgressBar={false}
@@ -581,7 +558,30 @@ export default function Contact() {
                         draggable
                         pauseOnHover
                     />
+                </form>
 
+                <form style={{marginTop: 10 + 'vh'}} action="https://dirtlessdetailing.us9.list-manage.com/subscribe/post?u=752a73821b38b96d23f195a09&amp;id=d2a4976ed6&amp;f_id=00e011e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" noValidate>
+                    <div className="form-section form-top-section">
+                        <h2 style={{marginBottom: 0}}>Subscribe to us!</h2><br />
+                        <p style={{marginTop: 0}}>Get news about Dirt-Less Detailing, along with special offers, deals and tips!</p>
+
+                        <div className="mc-field-group">
+                            <label htmlFor="mce-FNAME"  className='text-input-label'>First Name<span className="special-package">*</span></label>
+                            <input type="text" value={nameVal} onChange={() => setNameVal()} name="FNAME" className="text-input" id="mce-FNAME" />
+                        </div>
+                        <div className="mc-field-group">
+                            <label htmlFor="mce-EMAIL" className='text-input-label'>Email Address<span className="special-package">*</span></label>
+                            <input type="email" value={emailVal} onChange={() => setEmailVal()} className="text-input" name="EMAIL" id="mce-EMAIL" required />
+                        </div>
+                        <div id="mce-responses" className="clear foot">
+                            <div className="response" id="mce-error-response" style={{display: 'none'}}></div>
+                            <div className="response" id="mce-success-response" style={{display: 'none'}}></div>
+                        </div>
+                        <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true">
+                            <input type="text" name="b_752a73821b38b96d23f195a09_d2a4976ed6" tabIndex="-1" />
+                        </div>
+                        <input type="submit" name="subscribe" id="mc-embedded-subscribe" className="submit-button" />
+                    </div>
                 </form>
             </div>
         </section>

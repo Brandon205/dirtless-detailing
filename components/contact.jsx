@@ -14,7 +14,7 @@ export default function Contact() {
         const formInfo = {
             "Name": e.target['name'].value,
             "Email": e.target['email'].value,
-            "Phone": e.target['phone'].value,
+            "Phone": phoneNumber,
             "Year": e.target['year'].value,
             "Make": e.target['make'].value,
             "Model": e.target['model'].value,
