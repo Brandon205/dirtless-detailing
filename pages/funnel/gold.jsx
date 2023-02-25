@@ -14,6 +14,7 @@ export default function Gold() {
             content = (
                 <div>
                     <h2>Our Interior Detailing Process</h2>
+                    <hr className={styles.cardHr} />
                     <ul className={styles.detailCardUl}>
                         <li key={1} style={{animationDuration: 0.5 + 's'}} className={styles.detailCardLi}>
                             <div className={styles.stepNumberContainer}>
@@ -47,6 +48,7 @@ export default function Gold() {
             content = (
                 <div>
                     <h2>Our Exterior Washing Process</h2>
+                    <hr className={styles.cardHr} />
                     <ul className={styles.detailCardUl}>
                         <li key={5} style={{animationDuration: 0.5 + 's'}} className={styles.detailCardLi}>
                             <div className={styles.stepNumberContainer}>
@@ -92,6 +94,7 @@ export default function Gold() {
             content = (
                 <div>
                     <h2>Our Engine Bay Cleaning Process</h2>
+                    <hr className={styles.cardHr} />
                     <ul className={styles.detailCardUl}>
                         <li key={11} style={{animationDuration: 0.5 + 's'}} className={styles.detailCardLi}>
                             <div className={styles.stepNumberContainer}>
@@ -181,7 +184,7 @@ export default function Gold() {
                 <div className={styles.serviceExplain}>
                     <div className={styles.textLeft}>
                         <h2 className={styles.textLarge}>Gold Package</h2>
-                        <p>Our Full Interior Detail service includes a thorough cleaning of every nook and cranny inside your car. We'll remove all dirt, dust, and debris from your carpets, seats, and upholstery, and make sure your dashboard, door panels, and console are spotless. We'll also clean your windows, leaving them crystal clear and streak-free.</p>
+                        <p>The Full Interior Detail service includes a thorough cleaning of every nook and cranny inside your car. We'll remove all dirt, dust, and debris from your carpets, seats, and upholstery, and make sure your dashboard, door panels, and console are spotless. We'll also clean your windows, leaving them crystal clear and streak-free.</p>
                         <p>Our Premium Dirt-Less Wash service uses the latest technology to wash your car safely, preventing dirt and grime from sticking to your freshly cleaned car. Not only does this give your car a superior clean, but it's also environmentally friendly.</p>
                         <p>Finally, our Engine Bay Cleaning service will give your engine a thorough cleaning, removing any built-up grime or grease. Not only will your engine bay look great, but a clean engine can also run more efficiently and last longer.</p>
                         <p>Together, these three services will leave your car looking and feeling like new again, both inside and out. Don't settle for a subpar detailing job - trust our team of experts to give your car the care it deserves. Book your appointment today!</p>
@@ -199,15 +202,15 @@ export default function Gold() {
                     <div className={styles.popularImg} style={{backgroundImage: `url(${serviceImage})`}}></div>
 
                     <ul className={styles.detailsChecklist}>
-                        <li style={{backgroundColor: service === 'interior' ? 'gray' : '#80808000'}} onClick={() => setService('interior')} className={styles.packageChecklistItem}>
+                        <li style={{backgroundColor: service === 'interior' ? 'gray' : '#80808000', border: service === 'interior' ? '1px solid white' : 'none'}} onClick={() => setService('interior')} className={styles.packageChecklistItem}>
                             <AiFillCheckCircle style={{color: 'gold'}} className={styles.checkcircle} />
                             <p>Full Interior Detail</p>
                         </li>
-                        <li style={{backgroundColor: service === 'exterior' ? 'gray' : '#80808000'}} onClick={() => setService('exterior')} className={styles.packageChecklistItem}>
+                        <li style={{backgroundColor: service === 'exterior' ? 'gray' : '#80808000', border: service === 'exterior' ? '1px solid white' : 'none'}} onClick={() => setService('exterior')} className={styles.packageChecklistItem}>
                             <AiFillCheckCircle style={{color: 'gold'}} className={styles.checkcircle} />
                             <p>Our Premium Dirt-Less Wash</p>
                         </li>
-                        <li style={{backgroundColor: service === 'engine' ? 'gray' : '#80808000'}} onClick={() => setService('engine')} className={styles.packageChecklistItem}>
+                        <li style={{backgroundColor: service === 'engine' ? 'gray' : '#80808000', border: service === 'engine' ? '1px solid white' : 'none'}} onClick={() => setService('engine')} className={styles.packageChecklistItem}>
                             <AiFillCheckCircle style={{color: 'gold'}} className={styles.checkcircle} />
                             <p>Engine Bay Cleaning</p>
                         </li>
@@ -220,30 +223,35 @@ export default function Gold() {
                 </div>
             </div>
 
-            <h3 className='pricing-title text-white'>Gold Package Pricing</h3>
-            <p className='subtext'>*Final pricing may vary based on your vehicle condition and size.</p>
-            <div className="pricing-container">
-                <div className="pricing-card text-black">
-                    <strong className='size'>Small</strong>
-                    <p className="pricing-price pricing-border">$399</p>
-                    <p className="example-vehicle pricing-border">Smaller Trucks</p>
-                    <p className="example-vehicle pricing-border">Most Cars</p>
-                    <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+            <h3 className={`${styles.pricingTitle} ${styles.textWhite}`}>Gold Package Pricing</h3>
+            <p className={styles.subtext}>*Final pricing may vary based on your vehicle condition and size.</p>
+            <div className={styles.pricingContainer}>
+                <div className={`${styles.pricingCard} ${styles.textBlack}`}>
+                    <strong className={styles.size}>Small</strong>
+                    <p className={`${styles.pricingPrice} ${styles.pricingBorder}`}>$399</p>
+                    <p className={`${styles.exampleVehicle} ${styles.pricingBorder}`}>Smaller Trucks</p>
+                    <p className={`${styles.exampleVehicle} ${styles.pricingBorder}`}>Most Cars</p>
+                    <a href="/funnel#form" className={styles.pricingQuoteBtn}>Contact Us</a>
                 </div>
-                <div className="pricing-card text-black">
-                    <strong className='size'>Medium</strong>
-                    <p className="pricing-price pricing-border">$499</p>
-                    <p className="example-vehicle pricing-border">Mid-Size SUV's</p>
-                    <p className="example-vehicle pricing-border">Most Wagons</p>
-                    <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                <div className={`${styles.pricingCard} ${styles.textBlack}`}>
+                    <strong className={styles.size}>Medium</strong>
+                    <p className={`${styles.pricingPrice} ${styles.pricingBorder}`}>$499</p>
+                    <p className={`${styles.exampleVehicle} ${styles.pricingBorder}`}>Mid-Size SUV's</p>
+                    <p className={`${styles.exampleVehicle} ${styles.pricingBorder}`}>Most Wagons</p>
+                    <a href="/funnel#form" className={styles.pricingQuoteBtn}>Contact Us</a>
                 </div>
-                <div className="pricing-card text-black">
-                    <strong className='size'>Large</strong>
-                    <p className="pricing-price pricing-border">$599</p>
-                    <p className="example-vehicle pricing-border">Large SUV's</p>
-                    <p className="example-vehicle pricing-border">Trucks</p>
-                    <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                <div className={`${styles.pricingCard} ${styles.textBlack}`}>
+                    <strong className={styles.size}>Large</strong>
+                    <p className={`${styles.pricingPrice} ${styles.pricingBorder}`}>$599</p>
+                    <p className={`${styles.exampleVehicle} ${styles.pricingBorder}`}>Large SUV's</p>
+                    <p className={`${styles.exampleVehicle} ${styles.pricingBorder}`}>Trucks</p>
+                    <a href="/funnel#form" className={styles.pricingQuoteBtn}>Contact Us</a>
                 </div>
+            </div>
+
+            <div className={styles.bottomCTA}>
+                <a href="/funnel#form" className={styles.quoteBtn}>Get a Free Quote Today!</a>
+                <a href="tel:2532529758" className={styles.mainQuoteBtn}><MdOutlinePermPhoneMsg className={styles.callIcon} /> (253) 252-9758</a>
             </div>
         </div>
     )

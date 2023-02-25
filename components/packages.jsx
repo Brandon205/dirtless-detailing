@@ -57,8 +57,10 @@ export default function Packages() {
                     </li>
                 </ul>
 
-                <a href="#form" className={styles.popularReadmore}>Gold Package {'>'}</a>
-                <a href="/funnel/gold" className=''>Details</a>
+                <div className={styles.popularLinkContainer}>
+                    <a href="#form" className={styles.popularReadmore}>Gold Package {'>'}</a>
+                    <a href="/funnel/gold" className={styles.detailsLink}>Details</a>
+                </div>
             </div>
 
             <div style={{boxShadow: '0 0 10px 5px lightblue'}} className={styles.card}>
@@ -107,7 +109,10 @@ export default function Packages() {
                         </li>
                     </ul>
 
-                <a href="#form" className={styles.popularReadmore}>Platinum Package {'>'}</a>
+                    <div className={styles.popularLinkContainer}>
+                        <a href="#form" className={styles.popularReadmore}>Platinum Package {'>'}</a>
+                        <a href="/funnel/platinum" className={styles.detailsLink}>Details</a>
+                    </div>
             </div>
 
             <div style={{boxShadow: '0 0 10px 5px #c0c3c1'}} className={styles.card}>
@@ -156,7 +161,10 @@ export default function Packages() {
                     </li>
                 </ul>
 
-                <a href="#form" className={styles.popularReadmore}>Iridium Package {'>'}</a>
+                <div className={styles.popularLinkContainer}>
+                    <a href="#form" className={styles.popularReadmore}>Iridium Package {'>'}</a>
+                    <a href="/funnel/iridium" className={styles.detailsLink}>Details</a>
+                </div>
             </div>
         </div>
     )
