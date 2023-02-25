@@ -104,7 +104,7 @@ export default function Contact() {
                     <input type="text" id="name" name="name" className={styles.textInput} placeholder="Name" required />
                     <label htmlFor="email" className={styles.textInputLabel}>Email<span className={styles.specialPackage}>*</span></label>
                     <input type="email" id="email" name="email" className={styles.textInput} placeholder="Email" required />
-                    <label htmlFor="phone" className='text-input-label'>Phone Number<span className='special-package'>*</span></label>
+                    <label htmlFor="phone" className='text-input-label'>Phone Number<span className={styles.specialPackage}>*</span></label>
                     <input type="tel" id="phone" name="phone" value={phoneNumber} onChange={(e) => handlePhoneNumber(e)} className='text-input' placeholder="Ex. (111) 111-1111" required />
 
                     <div className={styles.selectField}>

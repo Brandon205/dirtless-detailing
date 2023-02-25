@@ -12,105 +12,161 @@ export default function Gold() {
     switch (service) {
         case 'interior':
             content = (
-                <ul className={styles.detailCardUl}>
-                    <li className="item">
-                        <div className='step-number-container'>
-                            <h3 className='step-number'>1</h3><div className="vertical-rule"></div>
-                        </div>
-                        <div className='step-container'>
-                            <p className='step-desc'>Expose Hidden Dirt, and Vacuum the Vehicle.</p>
-                        </div>
-                    </li>
-                    <li className="item">
-                        <div className='step-number-container'>
-                            <h3 className='step-number'>2</h3><div className="vertical-rule"></div>
-                        </div>
-                        <div className='step-container'>
-                            <p className='step-desc'>(If needed) Perform a Hot Water Extraction.</p>
-                        </div>
-                    </li>
-                    <li className="item">
-                        <div className='step-number-container'>
-                            <h3 className='step-number'>3</h3><div className="vertical-rule"></div>
-                        </div>
-                        <div className='step-container'>
-                            <p className='step-desc'>Clean and Dress Plastics and Leathers.</p>
-                        </div>
-                    </li>
-                    <li className="item">
-                        <div className='step-number-container'>
-                            <h3 className='step-number'>4</h3><div className="vertical-rule"></div>
-                        </div>
-                        <div className='step-container'>
-                            <p className='step-desc'>Clean Door Jambs and Windows.</p>
-                        </div>
-                    </li>
-                </ul>
+                <div>
+                    <h2>Our Interior Detailing Process</h2>
+                    <ul className={styles.detailCardUl}>
+                        <li key={1} style={{animationDuration: 0.5 + 's'}} className={styles.detailCardLi}>
+                            <div className='step-number-container'>
+                                <h3 className='step-number'>1</h3><div className="vertical-rule"></div>
+                            </div>
+                            <div className='step-container'>
+                                <p className='step-desc'>Expose Hidden Dirt, and Vacuum the Vehicle.</p>
+                            </div>
+                        </li>
+                        <li key={2} style={{animationDuration: 0.9 + 's'}} className={styles.detailCardLi}>
+                            <div className='step-number-container'>
+                                <h3 className='step-number'>2</h3><div className="vertical-rule"></div>
+                            </div>
+                            <div className='step-container'>
+                                <p className='step-desc'>(If needed) Perform a Hot Water Extraction.</p>
+                            </div>
+                        </li>
+                        <li key={3} style={{animationDuration: 1.3 + 's'}} className={styles.detailCardLi}>
+                            <div className='step-number-container'>
+                                <h3 className='step-number'>3</h3><div className="vertical-rule"></div>
+                            </div>
+                            <div className='step-container'>
+                                <p className='step-desc'>Clean and Dress Plastics and Leathers.</p>
+                            </div>
+                        </li>
+                        <li key={4} style={{animationDuration: 1.7 + 's'}} className={styles.detailCardLi}>
+                            <div className='step-number-container'>
+                                <h3 className='step-number'>4</h3><div className="vertical-rule"></div>
+                            </div>
+                            <div className='step-container'>
+                                <p className='step-desc'>Clean Door Jambs and Windows.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             )
             break;
         case 'exterior':
             content = (
-                <ul className={styles.detailCardUl}>
-                    <li className="item">
-                        <div className='step-number-container'>
-                            <h3 className='step-number'>1</h3><div className="vertical-rule"></div>
-                        </div>
-                        <div className='step-container'>
-                            <p className='step-desc'>Thoroughly Wash Vehicle and Wheels.</p>
-                        </div>
-                    </li>
-                    <li className="item">
-                        <div className='step-number-container'>
-                            <h3 className='step-number'>2</h3><div className="vertical-rule"></div>
-                        </div>
-                        <div className='step-container'>
-                            <p className='step-desc'>Remove any Tar and Sap.</p>
-                        </div>
-                    </li>
-                    <li className="item">
-                        <div className='step-number-container'>
-                            <h3 className='step-number'>3</h3><div className="vertical-rule"></div>
-                        </div>
-                        <div className='step-container'>
-                            <p className='step-desc'>Iron Decontamination and Clay Bar the Vehicle.</p>
-                        </div>
-                    </li>
-                    <li className="item">
-                        <div className='step-number-container'>
-                            <h3 className='step-number'>4</h3><div className="vertical-rule"></div>
-                        </div>
-                        <div className='step-container'>
-                            <p className='step-desc'>Dry Vehicle off and Apply Wax</p>
-                        </div>
-                    </li>
-                    <li className="item">
-                        <div className='step-number-container'>
-                            <h3 className='step-number'>5</h3><div className="vertical-rule"></div>
-                        </div>
-                        <div className='step-container'>
-                            <p className='step-desc'>Clean Door Jambs.</p>
-                        </div>
-                    </li>
-                    <li className="item">
-                        <div className='step-number-container'>
-                            <h3 className='step-number'>6</h3><div className="vertical-rule"></div>
-                        </div>
-                        <div className='step-container'>
-                            <p className='step-desc'>Dress Vehicle.</p>
-                        </div>
-                    </li>
-                </ul>
+                <div>
+                    <h2>Our Exterior Washing Process</h2>
+                    <ul className={styles.detailCardUl}>
+                        <li key={5} style={{animationDuration: 0.5 + 's'}} className={styles.detailCardLi}>
+                            <div className='step-number-container'>
+                                <h3 className='step-number'>1</h3><div className="vertical-rule"></div>
+                            </div>
+                            <div className='step-container'>
+                                <p className='step-desc'>Thoroughly Wash Vehicle and Wheels.</p>
+                            </div>
+                        </li>
+                        <li key={6} style={{animationDuration: 0.9 + 's'}} className={styles.detailCardLi}>
+                            <div className='step-number-container'>
+                                <h3 className='step-number'>2</h3><div className="vertical-rule"></div>
+                            </div>
+                            <div className='step-container'>
+                                <p className='step-desc'>Remove any Tar and Sap.</p>
+                            </div>
+                        </li>
+                        <li key={7} style={{animationDuration: 1.3 + 's'}} className={styles.detailCardLi}>
+                            <div className='step-number-container'>
+                                <h3 className='step-number'>3</h3><div className="vertical-rule"></div>
+                            </div>
+                            <div className='step-container'>
+                                <p className='step-desc'>Iron Decontamination and Clay Bar the Vehicle.</p>
+                            </div>
+                        </li>
+                        <li key={8} style={{animationDuration: 1.7 + 's'}} className={styles.detailCardLi}>
+                            <div className='step-number-container'>
+                                <h3 className='step-number'>4</h3><div className="vertical-rule"></div>
+                            </div>
+                            <div className='step-container'>
+                                <p className='step-desc'>Dry Vehicle off and Apply Wax</p>
+                            </div>
+                        </li>
+                        <li key={9} style={{animationDuration: 2.1 + 's'}} className={styles.detailCardLi}>
+                            <div className='step-number-container'>
+                                <h3 className='step-number'>5</h3><div className="vertical-rule"></div>
+                            </div>
+                            <div className='step-container'>
+                                <p className='step-desc'>Clean Door Jambs.</p>
+                            </div>
+                        </li>
+                        <li key={10} style={{animationDuration: 2.5 + 's'}} className={styles.detailCardLi}>
+                            <div className='step-number-container'>
+                                <h3 className='step-number'>6</h3><div className="vertical-rule"></div>
+                            </div>
+                            <div className='step-container'>
+                                <p className='step-desc'>Dress Vehicle.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             )
             break;
         case 'engine':
             content = (
-                <ul className={styles.detailCardUl}>
-                    <li>ENGINE</li>
-                    <li>THINGS</li>
-                    <li>STUFF</li>
-                </ul>
+                <div>
+                    <h2>Our Engine Bay Cleaning Process</h2>
+                    <ul className={styles.detailCardUl}>
+                        <li key={11} style={{animationDuration: 0.5 + 's'}} className={styles.detailCardLi}>
+                            <div className='step-number-container'>
+                                <h3 className='step-number'>1</h3><div className="vertical-rule"></div>
+                            </div>
+                            <div className='step-container'>
+                                <p className='step-desc'>Cover/Close anything that shouldn't get wet.</p>
+                            </div>
+                        </li>
+                        <li key={12} style={{animationDuration: 0.9 + 's'}} className={styles.detailCardLi}>
+                            <div className='step-number-container'>
+                                <h3 className='step-number'>2</h3><div className="vertical-rule"></div>
+                            </div>
+                            <div className='step-container'>
+                                <p className='step-desc'>Rinse the Engine Bay off.</p>
+                            </div>
+                        </li>
+                        <li key={13} style={{animationDuration: 1.3 + 's'}} className={styles.detailCardLi}>
+                            <div className='step-number-container'>
+                                <h3 className='step-number'>3</h3><div className="vertical-rule"></div>
+                            </div>
+                            <div className='step-container'>
+                                <p className='step-desc'>Apply our cleaner and scrub all areas of the engine bay.</p>
+                            </div>
+                        </li>
+                        <li key={14} style={{animationDuration: 1.7 + 's'}} className={styles.detailCardLi}>
+                            <div className='step-number-container'>
+                                <h3 className='step-number'>4</h3><div className="vertical-rule"></div>
+                            </div>
+                            <div className='step-container'>
+                                <p className='step-desc'>Rinse the Engine Bay off again.</p>
+                            </div>
+                        </li>
+                        <li key={15} style={{animationDuration: 2.1 + 's'}} className={styles.detailCardLi}>
+                            <div className='step-number-container'>
+                                <h3 className='step-number'>5</h3><div className="vertical-rule"></div>
+                            </div>
+                            <div className='step-container'>
+                                <p className='step-desc'>Dress Engine Bay.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             )
             break;
+            case 'none':
+                content = (
+                    <div>
+                        <h2>Loading...</h2>
+                        <ul className={styles.detailCardUl}>
+                            <li>Loading</li>
+                        </ul>
+                    </div>
+                )
+                break;
     }
 
     return (
@@ -174,21 +230,19 @@ export default function Gold() {
                     <div className={styles.popularImg} style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/920c592d-31ee-41b9-2d3b-0b95d6ca7500/public')`}}></div>
 
                     <ul className={styles.detailsChecklist}>
-                        <li onClick={() => setService('interior')} className={styles.checklistItem}>
+                        <li style={{backgroundColor: service === 'interior' ? 'gray' : '#80808000'}} onClick={() => setService('interior')} className={styles.packageChecklistItem}>
                             <AiFillCheckCircle style={{color: 'gold'}} className={styles.checkcircle} />
                             <p>Full Interior Detail</p>
                         </li>
-                        <li onClick={() => setService('exterior')} className={styles.checklistItem}>
+                        <li style={{backgroundColor: service === 'exterior' ? 'gray' : '#80808000'}} onClick={() => setService('exterior')} className={styles.packageChecklistItem}>
                             <AiFillCheckCircle style={{color: 'gold'}} className={styles.checkcircle} />
                             <p>Our Premium Dirt-Less Wash</p>
                         </li>
-                        <li onClick={() => setService('engine')} className={styles.checklistItem}>
+                        <li style={{backgroundColor: service === 'engine' ? 'gray' : '#80808000'}} onClick={() => setService('engine')} className={styles.packageChecklistItem}>
                             <AiFillCheckCircle style={{color: 'gold'}} className={styles.checkcircle} />
                             <p>Engine Bay Cleaning</p>
                         </li>
                     </ul>
-
-                    {/* <a href="/funnel#form" className={styles.popularReadmore}>Gold Package {'>'}</a> */}
                 </div>
 
                 <div className={styles.detailsCard}>

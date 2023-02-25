@@ -58,6 +58,7 @@ export default function Packages() {
                 </ul>
 
                 <a href="#form" className={styles.popularReadmore}>Gold Package {'>'}</a>
+                <a href="/funnel/gold" className=''>Details</a>
             </div>
 
             <div style={{boxShadow: '0 0 10px 5px lightblue'}} className={styles.card}>
