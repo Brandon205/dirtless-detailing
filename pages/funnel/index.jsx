@@ -44,7 +44,7 @@ export default function funnel() {
             </Head>
 
             <div className={styles.cover} style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover')` }}></div>
-            <div className={styles.servicepageHeader}>
+            <div style={{transform: 'translate(0, -82vh)'}} className={styles.servicepageHeader}>
                 <div className={styles.headerLogo} style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0a945e76-f4c0-4e29-ef16-463490d0db00/public')`}}></div>
                 <h2 className={styles.pageSubheading}>Upgrade your cars armor and appearance with a Graphene Ceramic Coating for a long lasting shine, protection, UV resistance and more! Invest in your cars future to keep it looking like the day you got it!</h2>
 

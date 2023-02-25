@@ -647,7 +647,7 @@
 
     color: white;
     width: 100%;
-    transform: translate(0, -82vh);
+    transform: translate(0, -72vh);
     z-index: 1;
 }
 
@@ -723,7 +723,6 @@
 
 .detailsCard {
     background-color: var(--contact-bkg-lighter);
-    padding: 0.5rem;
     min-width: 90%;
     max-width: 420px;
     border-radius: 1rem;
@@ -737,19 +736,20 @@
 
 .detailCardUl {
     padding-left: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 .detailCardLi {
-    padding: 1rem;
-    width: 100%;
-    list-style: none;
     animation: fadeInAnimation 1s linear;
-
-    background-color: var(--contact-bkg-clr);
+    padding: 1rem;
+    width: 90%;
+    list-style: none;
+    border-radius: 0 1rem 1rem 0;
     display: flex;
+    background-color: var(--contact-bkg-clr);
     margin-bottom: 1rem;
     color: white;
-    border-radius: 0.5em;
 }
 
 .packageChecklistItem {
@@ -785,6 +785,7 @@
 .stepDesc {
     display: inline;
     font-weight: 300;
+    text-align: left;
 }
 
 .verticalRule {

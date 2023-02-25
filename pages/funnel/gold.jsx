@@ -19,33 +19,25 @@ export default function Gold() {
                             <div className={styles.stepNumberContainer}>
                                 <h3 className={styles.stepNumber}>1</h3><div className={styles.verticalRule}></div>
                             </div>
-                            <div className={styles.stepContainer}>
-                                <p className={styles.stepDesc}>Expose Hidden Dirt, and Vacuum the Vehicle.</p>
-                            </div>
+                            <p className={styles.stepDesc}>Expose Hidden Dirt, and Vacuum the Vehicle.</p>
                         </li>
                         <li key={2} style={{animationDuration: 0.9 + 's'}} className={styles.detailCardLi}>
                             <div className={styles.stepNumberContainer}>
                                 <h3 className={styles.stepNumber}>2</h3><div className={styles.verticalRule}></div>
                             </div>
-                            <div className={styles.stepContainer}>
-                                <p className={styles.stepDesc}>(If needed) Perform a Hot Water Extraction.</p>
-                            </div>
+                            <p className={styles.stepDesc}>(If needed) Perform a Hot Water Extraction.</p>
                         </li>
                         <li key={3} style={{animationDuration: 1.3 + 's'}} className={styles.detailCardLi}>
                             <div className={styles.stepNumberContainer}>
                                 <h3 className={styles.stepNumber}>3</h3><div className={styles.verticalRule}></div>
                             </div>
-                            <div className={styles.stepContainer}>
-                                <p className={styles.stepDesc}>Clean and Dress Plastics and Leathers.</p>
-                            </div>
+                            <p className={styles.stepDesc}>Clean and Dress Plastics and Leathers.</p>
                         </li>
                         <li key={4} style={{animationDuration: 1.7 + 's'}} className={styles.detailCardLi}>
                             <div className={styles.stepNumberContainer}>
                                 <h3 className={styles.stepNumber}>4</h3><div className={styles.verticalRule}></div>
                             </div>
-                            <div className={styles.stepContainer}>
-                                <p className={styles.stepDesc}>Clean Door Jambs and Windows.</p>
-                            </div>
+                            <p className={styles.stepDesc}>Clean Door Jambs and Windows.</p>
                         </li>
                     </ul>
                 </div>
@@ -60,49 +52,37 @@ export default function Gold() {
                             <div className={styles.stepNumberContainer}>
                                 <h3 className={styles.stepNumber}>1</h3><div className={styles.verticalRule}></div>
                             </div>
-                            <div className={styles.stepContainer}>
-                                <p className={styles.stepDesc}>Thoroughly Wash Vehicle and Wheels.</p>
-                            </div>
+                            <p className={styles.stepDesc}>Thoroughly Wash Vehicle and Wheels.</p>
                         </li>
                         <li key={6} style={{animationDuration: 0.9 + 's'}} className={styles.detailCardLi}>
                             <div className={styles.stepNumberContainer}>
                                 <h3 className={styles.stepNumber}>2</h3><div className={styles.verticalRule}></div>
                             </div>
-                            <div className={styles.stepContainer}>
-                                <p className={styles.stepDesc}>Remove any Tar and Sap.</p>
-                            </div>
+                            <p className={styles.stepDesc}>Remove any Tar and Sap.</p>
                         </li>
                         <li key={7} style={{animationDuration: 1.3 + 's'}} className={styles.detailCardLi}>
                             <div className={styles.stepNumberContainer}>
                                 <h3 className={styles.stepNumber}>3</h3><div className={styles.verticalRule}></div>
                             </div>
-                            <div className={styles.stepContainer}>
-                                <p className={styles.stepDesc}>Iron Decontamination and Clay Bar the Vehicle.</p>
-                            </div>
+                            <p className={styles.stepDesc}>Iron Decontamination and Clay Bar the Vehicle.</p>
                         </li>
                         <li key={8} style={{animationDuration: 1.7 + 's'}} className={styles.detailCardLi}>
                             <div className={styles.stepNumberContainer}>
                                 <h3 className={styles.stepNumber}>4</h3><div className={styles.verticalRule}></div>
                             </div>
-                            <div className={styles.stepContainer}>
-                                <p className={styles.stepDesc}>Dry Vehicle off and Apply Wax</p>
-                            </div>
+                            <p className={styles.stepDesc}>Dry Vehicle off and Apply Wax</p>
                         </li>
                         <li key={9} style={{animationDuration: 2.1 + 's'}} className={styles.detailCardLi}>
                             <div className={styles.stepNumberContainer}>
                                 <h3 className={styles.stepNumber}>5</h3><div className={styles.verticalRule}></div>
                             </div>
-                            <div className={styles.stepContainer}>
-                                <p className={styles.stepDesc}>Clean Door Jambs.</p>
-                            </div>
+                            <p className={styles.stepDesc}>Clean Door Jambs.</p>
                         </li>
                         <li key={10} style={{animationDuration: 2.5 + 's'}} className={styles.detailCardLi}>
                             <div className={styles.stepNumberContainer}>
                                 <h3 className={styles.stepNumber}>6</h3><div className={styles.verticalRule}></div>
                             </div>
-                            <div className={styles.stepContainer}>
-                                <p className={styles.stepDesc}>Dress Vehicle.</p>
-                            </div>
+                            <p className={styles.stepDesc}>Dress Vehicle.</p>
                         </li>
                     </ul>
                 </div>
@@ -117,41 +97,31 @@ export default function Gold() {
                             <div className={styles.stepNumberContainer}>
                                 <h3 className={styles.stepNumber}>1</h3><div className={styles.verticalRule}></div>
                             </div>
-                            <div className={styles.stepContainer}>
-                                <p className={styles.stepDesc}>Cover/Close anything that shouldn't get wet.</p>
-                            </div>
+                            <p className={styles.stepDesc}>Cover/Close anything that shouldn't get wet.</p>
                         </li>
                         <li key={12} style={{animationDuration: 0.9 + 's'}} className={styles.detailCardLi}>
                             <div className={styles.stepNumberContainer}>
                                 <h3 className={styles.stepNumber}>2</h3><div className={styles.verticalRule}></div>
                             </div>
-                            <div className={styles.stepContainer}>
-                                <p className={styles.stepDesc}>Rinse the Engine Bay off.</p>
-                            </div>
+                            <p className={styles.stepDesc}>Rinse the Engine Bay off.</p>
                         </li>
                         <li key={13} style={{animationDuration: 1.3 + 's'}} className={styles.detailCardLi}>
                             <div className={styles.stepNumberContainer}>
                                 <h3 className={styles.stepNumber}>3</h3><div className={styles.verticalRule}></div>
                             </div>
-                            <div className={styles.stepContainer}>
-                                <p className={styles.stepDesc}>Apply our cleaner and scrub all areas of the engine bay.</p>
-                            </div>
+                            <p className={styles.stepDesc}>Apply our cleaner and scrub all areas of the engine bay.</p>
                         </li>
                         <li key={14} style={{animationDuration: 1.7 + 's'}} className={styles.detailCardLi}>
                             <div className={styles.stepNumberContainer}>
                                 <h3 className={styles.stepNumber}>4</h3><div className={styles.verticalRule}></div>
                             </div>
-                            <div className={styles.stepContainer}>
-                                <p className={styles.stepDesc}>Rinse the Engine Bay off again.</p>
-                            </div>
+                            <p className={styles.stepDesc}>Rinse the Engine Bay off again.</p>
                         </li>
                         <li key={15} style={{animationDuration: 2.1 + 's'}} className={styles.detailCardLi}>
                             <div className={styles.stepNumberContainer}>
                                 <h3 className={styles.stepNumber}>5</h3><div className={styles.verticalRule}></div>
                             </div>
-                            <div className={styles.stepContainer}>
-                                <p className={styles.stepDesc}>Dress Engine Bay.</p>
-                            </div>
+                            <p className={styles.stepDesc}>Dress Engine Bay.</p>
                         </li>
                     </ul>
                 </div>
@@ -167,8 +137,6 @@ export default function Gold() {
     } else if (service === 'engine') {
         serviceImage = 'https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4181890d-4471-47ce-496a-51433a279800/public'
     }
-
-    console.log(service)
 
     return (
         <div className={styles.bgContact}>
@@ -246,8 +214,35 @@ export default function Gold() {
                     </ul>
                 </div>
 
+
                 <div className={styles.detailsCard}>
                     {content}
+                </div>
+            </div>
+
+            <h3 className='pricing-title text-white'>Gold Package Pricing</h3>
+            <p className='subtext'>*Final pricing may vary based on your vehicle condition and size.</p>
+            <div className="pricing-container">
+                <div className="pricing-card text-black">
+                    <strong className='size'>Small</strong>
+                    <p className="pricing-price pricing-border">$399</p>
+                    <p className="example-vehicle pricing-border">Smaller Trucks</p>
+                    <p className="example-vehicle pricing-border">Most Cars</p>
+                    <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                </div>
+                <div className="pricing-card text-black">
+                    <strong className='size'>Medium</strong>
+                    <p className="pricing-price pricing-border">$499</p>
+                    <p className="example-vehicle pricing-border">Mid-Size SUV's</p>
+                    <p className="example-vehicle pricing-border">Most Wagons</p>
+                    <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                </div>
+                <div className="pricing-card text-black">
+                    <strong className='size'>Large</strong>
+                    <p className="pricing-price pricing-border">$599</p>
+                    <p className="example-vehicle pricing-border">Large SUV's</p>
+                    <p className="example-vehicle pricing-border">Trucks</p>
+                    <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
             </div>
         </div>
