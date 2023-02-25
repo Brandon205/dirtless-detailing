@@ -157,17 +157,18 @@ export default function Gold() {
                 </div>
             )
             break;
-            case 'none':
-                content = (
-                    <div>
-                        <h2>Loading...</h2>
-                        <ul className={styles.detailCardUl}>
-                            <li>Loading</li>
-                        </ul>
-                    </div>
-                )
-                break;
     }
+
+    let serviceImage;
+    if (service === 'interior') {
+        serviceImage = 'https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/65eea438-142c-4422-24fe-16ec7eac3700/public'
+    } else if (service === 'exterior') {
+        serviceImage = 'https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/920c592d-31ee-41b9-2d3b-0b95d6ca7500/public'
+    } else if (service === 'engine') {
+        serviceImage = 'https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4181890d-4471-47ce-496a-51433a279800/public'
+    }
+
+    console.log(service)
 
     return (
         <div className={styles.bgContact}>
@@ -227,7 +228,7 @@ export default function Gold() {
                         <a href='/services/single-stage-correction' className={styles.serviceHeadingLink}><GiGoldBar style={{color: 'gold' }} /> GOLD PACKAGE</a>
                         <p className={styles.price}>Starting at: <span>$399</span></p>
                     </div>
-                    <div className={styles.popularImg} style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/920c592d-31ee-41b9-2d3b-0b95d6ca7500/public')`}}></div>
+                    <div className={styles.popularImg} style={{backgroundImage: `url(${serviceImage})`}}></div>
 
                     <ul className={styles.detailsChecklist}>
                         <li style={{backgroundColor: service === 'interior' ? 'gray' : '#80808000'}} onClick={() => setService('interior')} className={styles.packageChecklistItem}>
