@@ -297,7 +297,7 @@ export default function Platinum() {
             <div className={styles.cover} style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover')` }}></div>
             <div className={styles.servicepageHeader}>
                 <h1>PLATINUM PACKAGE</h1>
-                <h2 className={styles.pageSubheading}>Looking for a comprehensive auto detailing service that will make your car look and feel like new again? Look no further than our Platinum Package!</h2>
+                <h2 className={styles.pageSubheading}>Looking for the ultimate auto detailing experience? Our Platinum Package has everything you need to keep your car looking and feeling like new for years to come!</h2>
 
                 <div style={{display: 'flex'}}>
                     <a href="#form" className={styles.quoteBtn}>Get a Free Quote</a>
@@ -308,7 +308,7 @@ export default function Platinum() {
             <div className={styles.diagonal}>
                 <h1 className={styles.textXl}>Our Platinum Package Details</h1>
                 <p className={styles.diagonalP}>
-                    Our most simple but cost effective package yet! We'll cover the interior, exterior, and even the engine bay with this package!
+                    Our full detailing service topped with a 2 year Ceramic Coating!
                 </p>
             </div>
 
@@ -316,12 +316,13 @@ export default function Platinum() {
                 <div className={styles.serviceExplain}>
                     <div className={styles.textLeft}>
                         <h2 className={styles.textLarge}>Platinum Package</h2>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <p>This package includes everything offered in our <a href="/funnel/gold" className={styles.asideLink}>Gold Package</a> and more!</p>
+                        <p>Our package includes a two-year ceramic coating, which will protect your car's paint from scratches, chips, and other forms of damage. The ceramic coating also provides a high-gloss finish that will make your car shine like never before.</p>
+                        <p>But that's not all - this package also includes a full inside and out car wash. We'll clean every inch of your car, from the wheels to the windows, and make sure that every surface is spotless. Our team of detailing experts uses the latest tools and techniques to get your car looking its best.</p>
+                        <p>With our Platinum Package, you'll enjoy the peace of mind that comes with knowing your car is protected by the best ceramic coating on the market. And with our top-notch detailing services, you'll always drive a car that looks and feels like it just rolled off the lot.</p>
+                        <p>Don't wait any longer to give your car the care it deserves - book your Platinum Package appointment today and experience the ultimate auto detailing experience!</p>
                     </div>
-                    <div className={styles.serviceImage} style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5b0798e5-2648-4845-168b-98e7ff013100/public')`}}></div>
+                    <div className={styles.serviceImage} style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a30c288d-c816-4a42-e313-d7fa80e04200/public')`}}></div>
                 </div>
             </main>
 

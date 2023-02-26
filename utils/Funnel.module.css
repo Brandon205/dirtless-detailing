@@ -890,8 +890,8 @@
     align-items: center;
     border-radius: 4px;
     background: linear-gradient(135deg,
-        var(--main-clr) 0%,
-        var(--main-clr-lighter) 100%);
+        var(--funnelMain) 0%,
+        var(--funnelMainHover) 100%);
     color: #fff;
     outline: none;
     border: 0;
@@ -984,4 +984,8 @@
 
 .textBlack {
     color: black;
+}
+
+.asideLink {
+    color: var(--text-blue);
 }
