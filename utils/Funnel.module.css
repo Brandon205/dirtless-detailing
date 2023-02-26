@@ -814,7 +814,7 @@
 }
 
 .serviceMain {
-    width: 80vw;
+    width: 85vw;
     margin: 0 auto;
     line-height: 2;
     font-size: 1.1em;
@@ -890,8 +890,8 @@
     align-items: center;
     border-radius: 4px;
     background: linear-gradient(135deg,
-        var(--funnelMain) 0%,
-        var(--funnelMainHover) 100%);
+    var(--funnelMainHover) 0%,
+    var(--funnelMain) 100%);
     color: #fff;
     outline: none;
     border: 0;
