@@ -302,7 +302,7 @@ export default function Iridium() {
                 <meta property="og:title" content='Iridium Package Details | Dirt-Less Detailing' />
                 <meta name="description" content='Our highest grade detailing service, ensuring every spot on your vehicle gets washed, cleaned and protected. Your vehicle has never looked better!' />
                 <meta property="og:description" content='Our highest grade detailing service, ensuring every spot on your vehicle gets washed, cleaned and protected. Your vehicle has never looked better!' />
-                <meta property="og:image" content='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/public' />
+                <meta property="og:image" content='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/8d0fdc90-2463-4bce-ca3d-3ebb0730ef00/public' />
                 <meta property="og:url" content='https://www.dirtlessdetailing.com/funnel/iridium' />
                 <meta property="type" content="website" />
                 <meta property="og:type" content="website" />
@@ -311,15 +311,15 @@ export default function Iridium() {
                 <meta name="twitter:card" content="summary" />
                 <meta name="twitter:site" content="@dirtless-detailing" />
                 <meta name="twitter:description" content='Our highest grade detailing service, ensuring every spot on your vehicle gets washed, cleaned and protected. Your vehicle has never looked better!' />
-                <meta name="twitter:image" content='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/public' />
+                <meta name="twitter:image" content='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/8d0fdc90-2463-4bce-ca3d-3ebb0730ef00/public' />
 
                 <link rel="canonical" href='https://www.dirtlessdetailing.com/funnel/iridium' />
             </Head>
 
-            <div className={styles.cover} style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover')` }}></div>
+            <div className={styles.cover} style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/8d0fdc90-2463-4bce-ca3d-3ebb0730ef00/cover')` }}></div>
             <div className={styles.servicepageHeader}>
                 <h1>IRIDIUM PACKAGE</h1>
-                <h2 className={styles.pageSubheading}>Looking for the ultimate protection and detailing experience for your car? Our Iridium Package is the answer you've been looking for!</h2>
+                <h2 className={styles.pageSubheading}>Looking for our top of the line package for detailing and protection? Our Iridium Package is the answer you've been looking for!</h2>
 
                 <div style={{display: 'flex'}}>
                     <a href="#form" className={styles.quoteBtn}>Get a Free Quote</a>

@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
 import Head from 'next/head';
+import { useState, useEffect } from 'react';
 import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 import { RxCaretUp, RxCaretDown } from 'react-icons/rx';
 import styles from '../../utils/Funnel.module.css';
@@ -15,7 +15,7 @@ export default function funnel() {
     const [gallery, setGallery] = useState(false);
 
     useEffect(() => {
-        if (window.innerWidth < 879) {
+        if (window.innerWidth < 1350) {
             setSmallScreen(true);
         } else {
             setSmallScreen(false);

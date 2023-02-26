@@ -148,7 +148,7 @@ export default function Gold() {
                 <meta property="og:title" content='Gold Package Details | Dirt-Less Detailing' />
                 <meta name="description" content='Our Gold package will get your whole vehicle washed from inside out, leaving it cleaner than ever!' />
                 <meta property="og:description" content='Our Gold package will get your whole vehicle washed from inside out, leaving it cleaner than ever!' />
-                <meta property="og:image" content='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/public' />
+                <meta property="og:image" content='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/31265123-5fa7-4f81-af49-d224e86beb00/public' />
                 <meta property="og:url" content='https://www.dirtlessdetailing.com/funnel/gold' />
                 <meta property="type" content="website" />
                 <meta property="og:type" content="website" />
@@ -157,12 +157,12 @@ export default function Gold() {
                 <meta name="twitter:card" content="summary" />
                 <meta name="twitter:site" content="@dirtless-detailing" />
                 <meta name="twitter:description" content='Our Gold package will get your whole vehicle washed from inside out, leaving it cleaner than ever!' />
-                <meta name="twitter:image" content='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/public' />
+                <meta name="twitter:image" content='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/31265123-5fa7-4f81-af49-d224e86beb00/public' />
 
                 <link rel="canonical" href='https://www.dirtlessdetailing.com/funnel/gold' />
             </Head>
 
-            <div className={styles.cover} style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover')` }}></div>
+            <div className={styles.cover} style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/31265123-5fa7-4f81-af49-d224e86beb00/cover')` }}></div>
             <div className={styles.servicepageHeader}>
                 <h1>GOLD PACKAGE</h1>
                 <h2 className={styles.pageSubheading}>Looking for a comprehensive auto detailing service that will make your car look and feel like new again? Look no further than our Gold Package!</h2>
@@ -190,7 +190,7 @@ export default function Gold() {
                         <p>Together, these three services will leave your car looking and feeling like new again, both inside and out. Don't settle for a subpar detailing job - trust our team of experts to give your car the care it deserves. Book your appointment today!</p>
                         <p>One great benefit of our Gold Package is that you don't need to bring your car to us, we can come to you and perform the same great service that we carry out at our shop!</p>
                     </div>
-                    <div className={styles.serviceImage} style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5b0798e5-2648-4845-168b-98e7ff013100/public')`}}></div>
+                    <div className={styles.serviceImage} style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/caab7c47-0030-4dd7-b338-e56ce725c300/public')`}}></div>
                 </div>
             </main>
 

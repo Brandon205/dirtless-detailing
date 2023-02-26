@@ -280,7 +280,7 @@ export default function Platinum() {
                 <meta property="og:title" content='Platinum Package Details | Dirt-Less Detailing' />
                 <meta name="description" content='Our Platinum package will leave your vehicle completely cleaned and protected from the inside out!' />
                 <meta property="og:description" content='Our Platinum package will leave your vehicle completely cleaned and protected from the inside out!' />
-                <meta property="og:image" content='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/public' />
+                <meta property="og:image" content='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2b4f72db-a0cc-4f91-ed15-66d8a1b4c400/public' />
                 <meta property="og:url" content='https://www.dirtlessdetailing.com/funnel/platinum' />
                 <meta property="type" content="website" />
                 <meta property="og:type" content="website" />
@@ -289,12 +289,12 @@ export default function Platinum() {
                 <meta name="twitter:card" content="summary" />
                 <meta name="twitter:site" content="@dirtless-detailing" />
                 <meta name="twitter:description" content='Our Platinum package will leave your vehicle completely cleaned and protected from the inside out!' />
-                <meta name="twitter:image" content='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/public' />
+                <meta name="twitter:image" content='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2b4f72db-a0cc-4f91-ed15-66d8a1b4c400/public' />
 
                 <link rel="canonical" href='https://www.dirtlessdetailing.com/funnel/platinum' />
             </Head>
 
-            <div className={styles.cover} style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover')` }}></div>
+            <div className={styles.cover} style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2b4f72db-a0cc-4f91-ed15-66d8a1b4c400/cover')` }}></div>
             <div className={styles.servicepageHeader}>
                 <h1>PLATINUM PACKAGE</h1>
                 <h2 className={styles.pageSubheading}>Looking for the ultimate auto detailing experience? Our Platinum Package has everything you need to keep your car looking and feeling like new for years to come!</h2>
@@ -323,7 +323,7 @@ export default function Platinum() {
                         <p>Don't wait any longer to give your car the care it deserves - book your Platinum Package appointment today and experience the ultimate auto detailing experience!</p>
                         <p><span className={styles.specialPackage}>*</span>To ensure the best results we only offer this service at our shop location in <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className={styles.asideLink} target="_blank" rel='noopener'>Bonney Lake</a>. With drying times included it typically takes about 2 days to complete.</p>
                     </div>
-                    <div className={styles.serviceImage} style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a30c288d-c816-4a42-e313-d7fa80e04200/public')`}}></div>
+                    <div className={styles.serviceImage} style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e0f2ecbc-7591-4ec8-534c-28b3261ec700/public')`}}></div>
                 </div>
             </main>
 

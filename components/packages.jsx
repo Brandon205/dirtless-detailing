@@ -59,7 +59,7 @@ export default function Packages() {
 
                 <div className={styles.popularLinkContainer}>
                     <a href="#form" className={styles.popularReadmore}>Gold Package {'>'}</a>
-                    <a href="/funnel/gold" className={styles.detailsLink}>Details</a>
+                    <a href="/funnel/gold" className={styles.detailsLink}>More Info</a>
                 </div>
             </div>
 
@@ -111,7 +111,7 @@ export default function Packages() {
 
                     <div className={styles.popularLinkContainer}>
                         <a href="#form" className={styles.popularReadmore}>Platinum Package {'>'}</a>
-                        <a href="/funnel/platinum" className={styles.detailsLink}>Details</a>
+                        <a href="/funnel/platinum" className={styles.detailsLink}>More Info</a>
                     </div>
             </div>
 
@@ -163,7 +163,7 @@ export default function Packages() {
 
                 <div className={styles.popularLinkContainer}>
                     <a href="#form" className={styles.popularReadmore}>Iridium Package {'>'}</a>
-                    <a href="/funnel/iridium" className={styles.detailsLink}>Details</a>
+                    <a href="/funnel/iridium" className={styles.detailsLink}>More Info</a>
                 </div>
             </div>
         </div>
