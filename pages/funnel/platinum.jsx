@@ -321,6 +321,7 @@ export default function Platinum() {
                         <p>But that's not all - this package also includes a full inside and out car wash. We'll clean every inch of your car, from the wheels to the windows, and make sure that every surface is spotless. Our team of detailing experts uses the latest tools and techniques to get your car looking its best.</p>
                         <p>With our Platinum Package, you'll enjoy the peace of mind that comes with knowing your car is protected by the best ceramic coating on the market. And with our top-notch detailing services, you'll always drive a car that looks and feels like it just rolled off the lot.</p>
                         <p>Don't wait any longer to give your car the care it deserves - book your Platinum Package appointment today and experience the ultimate auto detailing experience!</p>
+                        <p><span className={styles.specialPackage}>*</span>To ensure the best results we only offer this service at our shop location in <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className={styles.asideLink} target="_blank" rel='noopener'>Bonney Lake</a>. With drying times included it typically takes about 2 days to complete.</p>
                     </div>
                     <div className={styles.serviceImage} style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a30c288d-c816-4a42-e313-d7fa80e04200/public')`}}></div>
                 </div>
@@ -329,7 +330,7 @@ export default function Platinum() {
             <div className={styles.detailsContainer}>    
                 <div style={{boxShadow: 'none', margin: 0}} className={styles.card}>
                     <div className={styles.cardHeader}>
-                        <a href='/services/single-stage-correction' className={styles.serviceHeadingLink}><SlBadge style={{color: 'lightblue' }} /> PLATINUM PACKAGE</a>
+                        <a href='/funnel/platinum' className={styles.serviceHeadingLink}><SlBadge style={{color: 'lightblue' }} /> PLATINUM PACKAGE</a>
                         <p className={styles.price}>Starting at: <span>$1,199</span></p>
                     </div>
                     <div className={styles.popularImg} style={{backgroundImage: `url(${serviceImage})`}}></div>
@@ -369,7 +370,6 @@ export default function Platinum() {
                         </li>
                     </ul>
                 </div>
-
 
                 <div className={styles.detailsCard}>
                     {content}

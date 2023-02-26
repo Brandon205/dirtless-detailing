@@ -188,6 +188,7 @@ export default function Gold() {
                         <p>Our Premium Dirt-Less Wash service uses the latest technology to wash your car safely, preventing dirt and grime from sticking to your freshly cleaned car. Not only does this give your car a superior clean, but it's also environmentally friendly.</p>
                         <p>Finally, our Engine Bay Cleaning service will give your engine a thorough cleaning, removing any built-up grime or grease. Not only will your engine bay look great, but a clean engine can also run more efficiently and last longer.</p>
                         <p>Together, these three services will leave your car looking and feeling like new again, both inside and out. Don't settle for a subpar detailing job - trust our team of experts to give your car the care it deserves. Book your appointment today!</p>
+                        <p>One great benefit of our Gold Package is that you don't need to bring your car to us, we can come to you and perform the same great service that we carry out at our shop!</p>
                     </div>
                     <div className={styles.serviceImage} style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5b0798e5-2648-4845-168b-98e7ff013100/public')`}}></div>
                 </div>
