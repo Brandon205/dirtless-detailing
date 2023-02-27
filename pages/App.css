@@ -446,7 +446,8 @@ option {
   text-align: center;
 }
 
-.form-section div, .form-section form {
+.form-section div,
+.form-section form {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
