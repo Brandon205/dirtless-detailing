@@ -111,7 +111,7 @@ export default function Bio() {
             <br className='extra-space' />
 
             <div>
-              <h3 className='pricing-title text-white'>Our Biohazard Cleaning Prices</h3>
+              <h3 className='pricing-title text-white'>Our Biohazard Cleaning Pricing</h3>
               <p className='subtext'>*Final pricing may vary based on your vehicle condition and size.</p>
               <div className="pricing-container">
                 <div className="pricing-card text-black">

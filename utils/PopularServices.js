@@ -46,7 +46,7 @@ export default function PopularServices() {
                     </ul>
                 </div>
 
-                <a href='/services/full-interior-detail' className='popular-readmore'>Interior Cleaning Details {'>'}</a>
+                <a href='/services/full-interior-detail' className='popular-readmore'>Interior Cleaning Details</a>
             </div>
 
             <div className="popular-services-card">
@@ -90,7 +90,7 @@ export default function PopularServices() {
                     </ul>
                 </div>
 
-                <a href="/services/premium-dirtless-wash" className="popular-readmore">Premium Wash Details {'>'}</a>
+                <a href="/services/premium-dirtless-wash" className="popular-readmore">Premium Wash Details</a>
             </div>
 
             <div className="popular-services-card">
@@ -133,7 +133,7 @@ export default function PopularServices() {
                     </ul>
                 </div>
 
-                <a href="/services/exterior-ceramic-coating" className="popular-readmore">Ceramic Coating Details {'>'}</a>
+                <a href="/services/exterior-ceramic-coating" className="popular-readmore">Ceramic Coating Details</a>
             </div>
         </section>
     )

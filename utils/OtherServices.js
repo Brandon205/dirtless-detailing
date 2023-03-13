@@ -16,7 +16,7 @@ export default function OtherServices() {
                         </div>
                         <p className="service-desc">Did you know you could ceramic coat the interior of your car? Well you can, and it provides many of the benefits of a normal exterior coating like ease of maintenance/cleaning, but to the interior of your car!</p>
 
-                        <a href="/services/interior-ceramic-coating" className="readmore">Interior Coating Details {'>'}</a>
+                        <a href="/services/interior-ceramic-coating" className="popular-readmore">Interior Coating Details</a>
                     </div>
                 </div>
 
@@ -29,7 +29,7 @@ export default function OtherServices() {
                         </div>
                         <p className="service-desc">With a professionally installed IGL Ceramic coating from us, your vehicle will be clean and protected. We are a licensed and certified coating installer through IGL and are happy to give your car that extra layer of protection it deserves</p>
 
-                        <a href="/services/exterior-ceramic-coating" className="readmore">Exterior Coating Details {'>'}</a>
+                        <a href="/services/exterior-ceramic-coating" className="popular-readmore">Exterior Coating Details</a>
                     </div>
                 </div>
 
@@ -42,11 +42,11 @@ export default function OtherServices() {
                         <p className="service-desc">Take a look at some of the results we've had after our Ceramic Details.</p>
                         <p className="service-desc">Starting with our Single Stage Paint Correction before applying our Ceramics ensures the best covering of your vehicle possible, giving the absolute best results and longevity.</p>
 
-                        <a href='/gallery/ceramic-coating-gallery' className="readmore text-center">Ceramic Coating Gallery</a>
+                        <a href='/gallery/ceramic-coating-gallery' className="popular-readmore text-center">Ceramic Coating Gallery</a>
                     </div>
                 </div>
             </section>
-            <a href="/Contact" className="quote-btn main-quote-btn">Get a Quote</a>
+            <a href="/Contact" className="quote-btn main-quote-btn">Get A Free Quote</a>
 
             <div className='separator-container'>
                 <h3 className='service-title'>COMBO DEAL <span className='new-offer'>NEW</span></h3>
@@ -67,7 +67,7 @@ export default function OtherServices() {
                     </div>
                 </div>
             </section>
-            <a href="/Contact" className="quote-btn main-quote-btn">Get a Quote</a>
+            <a href="/Contact" className="quote-btn main-quote-btn">Get A Free Quote</a>
 
             <div className='separator-container'>
                 <h2 className='service-title'>INTERIOR CLEANING SERVICES</h2>
@@ -82,7 +82,7 @@ export default function OtherServices() {
                         </div>
                         <p className="service-desc">A full interior detail will clean every crack and crevice of your vehicles interior. Optionally we can also do a hot water extraction to the carpets of your vehicle to get out deeper stains and dirt.</p>
 
-                        <a href='/services/full-interior-detail' className="readmore">Full Interior Cleaning Details {'>'}</a>
+                        <a href='/services/full-interior-detail' className="popular-readmore">Full Interior Cleaning Details</a>
                     </div>
                 </div>
 
@@ -95,7 +95,7 @@ export default function OtherServices() {
                         </div>
                         <p className="service-desc">If there are bad smells like mold or smoke in your car this will be the package for you. We'll use cleaning chemicals suited for the job to get rid of those odors for good.</p>
 
-                        <a href='/services/biohazard-cleaning' className="readmore">Biohazard Cleaning Details {'>'}</a>
+                        <a href='/services/biohazard-cleaning' className="popular-readmore">Biohazard Cleaning Details</a>
                     </div>
                 </div>
 
@@ -108,11 +108,11 @@ export default function OtherServices() {
                         <p className="service-desc">Our interior gallery is full of images of the interiors that we have cleaned.</p>
                         <p className="service-desc">Come check out some of the hundreds of photos we have of what we have been able to do for our customers interiors!</p>
 
-                        <a href='/gallery/interior-detail-gallery' className="readmore text-center">Full Interior Gallery</a>
+                        <a href='/gallery/interior-detail-gallery' className="popular-readmore">Full Interior Gallery</a>
                     </div>
                 </div>
             </section>
-            <a href="/Contact" className="quote-btn main-quote-btn">Get a Quote</a>
+            <a href="/Contact" className="quote-btn main-quote-btn">Get A Free Quote</a>
 
             <div className='separator-container'>
                 <h2 className='service-title'>EXTERIOR CLEANING SERVICES</h2>
@@ -128,7 +128,7 @@ export default function OtherServices() {
                         </div>
                         <p className="service-desc">Our Dirt-Less Wash will thoroughly clean the exterior of your vehicle with our tried and true cleaning process. We even apply a layer of wax to give your vehicle a layer of protection.</p>
 
-                        <a href="/services/dirtless-wash" className="readmore">Dirt-Less Wash Details {'>'}</a>
+                        <a href="/services/dirtless-wash" className="popular-readmore">Dirt-Less Wash Details</a>
                     </div>
                 </div>
 
@@ -141,7 +141,7 @@ export default function OtherServices() {
                         </div>
                         <p className="service-desc">Our Premium exterior wash will go above and beyond the Dirt-Less Wash in the cleaning process and will top it off with a 6 month sealant or better to protect your vehicle.</p>
 
-                        <a href="/services/premium-dirtless-wash" className="readmore">Premium Dirt-Less Wash Details {'>'}</a>
+                        <a href="/services/premium-dirtless-wash" className="popular-readmore">Premium Dirt-Less Wash Details</a>
                     </div>
                 </div>
 
@@ -154,12 +154,12 @@ export default function OtherServices() {
                         <p className="service-desc">Our exterior gallery has plenty of examples of the exterior work that we do.</p>
                         <p className="service-desc">We have easily washed hundreds of vehicles and have our process optimized from the tires to the headlights, leaving every vehicle in great condition every time!</p>
 
-                        <a href='/gallery/dirtless-wash-gallery' className="readmore text-center">Exterior Wash Gallery</a>
+                        <a href='/gallery/dirtless-wash-gallery' className="popular-readmore text-center">Exterior Wash Gallery</a>
                     </div>
                 </div>
 
             </section>
-            <a href="/Contact" className="quote-btn main-quote-btn">Get a Quote</a>
+            <a href="/Contact" className="quote-btn main-quote-btn">Get A Free Quote</a>
 
             <div className='separator-container'>
                 <h2 className='service-title'>PAINT CORRECTION SERVICES</h2>
@@ -174,7 +174,7 @@ export default function OtherServices() {
                         </div>
                         <p className="service-desc">Our Single Stage Paint Correction can fix 60%-70% of minor damage and scratches and will leave your vehicle looking shinier than ever.</p>
 
-                        <a href="/services/single-stage-correction" className="readmore">Paint Correction Details {'>'}</a>
+                        <a href="/services/single-stage-correction" className="popular-readmore">Paint Correction Details</a>
                     </div>
                 </div>
 
@@ -187,7 +187,7 @@ export default function OtherServices() {
                         </div>
                         <p className="service-desc">Our 2 stage paint correction is great for getting your car's paint to a close to perfect state. This is great for show cars need that extra time and effort to get to that showroom shine.</p>
 
-                        <a href="/services/two-stage-correction" className="readmore">Two Stage Paint Correction Details {'>'}</a>
+                        <a href="/services/two-stage-correction" className="popular-readmore">Two Stage Paint Correction Details</a>
                     </div>
                 </div>
 
@@ -200,11 +200,11 @@ export default function OtherServices() {
                         <p className="service-desc">Come see some of the results from our Paint Correction services!</p>
                         <p className="service-desc">These vehicles have all been through the whole process from completely washing, to taping off, all the way to the paint correction itself.</p>
 
-                        <a href='/gallery/paint-correction-gallery' className="readmore text-center">Paint Correction Gallery</a>
+                        <a href='/gallery/paint-correction-gallery' className="popular-readmore text-center">Paint Correction Gallery</a>
                     </div>
                 </div>
             </section>
-            <a href="/Contact" className="quote-btn main-quote-btn">Get a Quote</a>
+            <a href="/Contact" className="quote-btn main-quote-btn">Get A Free Quote</a>
         </div>
     )
 }

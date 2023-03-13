@@ -81,7 +81,7 @@ export default function LakeTapps() {
                         <p className='mt-0'>Our paint correction services can fix roughly 60%-90% of minor damage and scratches and will leave your vehicle looking shinier and feeling smoother than ever.</p>
                     </div>
 
-                    <a href="/Contact" className="quote-btn location-quote-btn">Get a Quote</a>
+                    <a href="/Contact" className="quote-btn location-quote-btn">Get A Free Quote</a>
                 </div>
             </div>
 
@@ -117,7 +117,7 @@ export default function LakeTapps() {
                     </div>
                 </div>
             </div>
-            <a href="/Contact" className="quote-btn location-quote-btn">Get a Quote Today!</a>
+            <a href="/Contact" className="quote-btn location-quote-btn">Get A Free Quote Today!</a>
         </div> 
     )
 }

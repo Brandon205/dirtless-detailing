@@ -1306,8 +1306,10 @@ hr {
 
 .step-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   text-align: left;
+
+  flex-direction: column;
 }
 
 .step-number {

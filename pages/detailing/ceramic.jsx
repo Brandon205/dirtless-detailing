@@ -284,7 +284,7 @@ export default function ceramic() {
             </div>
 
             <br className="extra-space" />
-            <a href="/Contact" className="quote-btn location-quote-btn">Get a Quote Today!</a>
+            <a href="/Contact" className="quote-btn location-quote-btn">Get A Free Quote Today!</a>
 
         </div> 
     )

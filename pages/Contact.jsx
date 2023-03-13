@@ -173,11 +173,11 @@ export default function Contact() {
 
             <div className="contact-information-container">
                 <div className="contact-information">
-                    <h1>Contact Information</h1>
+                    <h1 style={{fontSize: '1.75em'}}>Our Contact Information</h1>
                     <hr className="contact-border" />
                     <h3 style={{ marginBottom: 0 }}>Need us to come to you?</h3>
-                    <p className="hours-p" style={{ marginBottom: 0 }}>We are currently servicing:</p>
-                    <p className="hours-p"><span style={{ fontWeight: 'bold', color: '#9f9f9f' }}> Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham.</span></p>
+                    <p className="hours-p" style={{ marginBottom: 0 }}>We can perform mobile detailing in the following cities:</p>
+                    <p className="hours-p"><span style={{ fontWeight: 'bold', color: '#9f9f9f' }}> Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Tehaleh, Black Diamond, Milton, Edgewood, and Graham.</span></p>
                     <hr className="contact-border" />
                     <div className="contact-icon-container">
                         <FaClock className='contact-icon' />
@@ -221,7 +221,7 @@ export default function Contact() {
                             <label htmlFor="email" className='text-input-label'>Email<span className='special-package'>*</span></label>
                             <input type="email" id="email" name="email" className='text-input' placeholder="Email" required />
                             <label htmlFor="phone" className='text-input-label'>Phone Number<span className='special-package'>*</span></label>
-                            <input type="tel" id="phone" name="phone" pattern="(\d{3}) \d{3}-\d{4}" value={phoneNumber} onChange={(e) => handlePhoneNumber(e)} className='text-input' placeholder="Ex. (111) 111-1111" required />
+                            <input type="tel" id="phone" name="phone" pattern="\(\d{3}\) \d{3}-\d{4}" value={phoneNumber} onChange={(e) => handlePhoneNumber(e)} className='text-input' placeholder="Ex. (111) 111-1111" required />
 
                             <div className='select-field'>
                                 <label htmlFor="year" className='text-input-label'>Year<span className='special-package'>*</span></label>

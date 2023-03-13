@@ -282,7 +282,7 @@ export default function blackDiamond() {
                 </div>
             </div>
             <h3>See more in our <a href="/gallery/paint-correction-gallery" className='aside-link'>Paint Correction Gallery</a>.</h3>
-            <a href="/Contact" className="quote-btn location-quote-btn">Get a Quote Today!</a>
+            <a href="/Contact" className="quote-btn location-quote-btn">Get A Free Quote Today!</a>
         </div> 
     )
 }

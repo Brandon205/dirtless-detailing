@@ -16,7 +16,7 @@ const steps = [
   ["Tape Vehicle", "Tape off trim and sensitive areas (some detailers skip this step)."],
   ["Paint Correction", "Complete Single Stage paint correction using Griots products removing 65-80% of scratches and swirls."],
   ["Remove Polishing Compound", "Remove polishing compound residue from cracks, crevices, etc."],
-  ["Protect Paint", "Protect paint with ceramic spray or "],
+  ["Protect Paint", "Protect paint with ceramic spray or a Ceramic Coating*"],
   ["Door Jambs", "Clean door jambs."],
   ["Dress Vehicle", "Dress all plastics, wheel wells, and tires."]
 ]
@@ -31,7 +31,6 @@ export default function SinglePC() {
         <div className="step-container">
           <h4 className="step-title">{item[0]}</h4>
           <p className='step-desc'>{item[1]}</p>
-          {id === 9 ? <a className='aside-link' href="/services/exterior-ceramic-coating">ceramic coating.</a> : ''}
         </div>
       </li>
     )
@@ -121,6 +120,7 @@ export default function SinglePC() {
             <ol className='list'>
               {content}
             </ol>
+            <p>**For Ceramic Coating details check <a className='aside-link' href="/services/exterior-ceramic-coating">here</a>.</p>
 
             <br className='extra-space' />
 

@@ -222,7 +222,7 @@ export default function orting() {
                     <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a30c288d-c816-4a42-e313-d7fa80e04200/public')`}}></div>
                 </div>
             </div>
-            <a href="/Contact" className="quote-btn location-quote-btn">Get a Quote Today!</a>
+            <a href="/Contact" className="quote-btn location-quote-btn">Get A Free Quote Today!</a>
         </div> 
     )
 }

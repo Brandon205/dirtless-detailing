@@ -121,7 +121,7 @@ export default function Home() {
 
             <PopularServices />
 
-            <a href="/Contact" className="quote-btn main-quote-btn popular-quote-btn">Get a Quote</a>
+            <a href="/Contact" className="quote-btn main-quote-btn popular-quote-btn">Get A Free Quote</a>
 
             <OtherServices />
 
