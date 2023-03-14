@@ -27,6 +27,8 @@ export default function FullIntGallery() {
       </div>
 
       <div className="photo-grid">
+        <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7e7cbef8-df97-4821-1aa4-13dd0f99d400/public')`}}></div>
+        <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/be771e29-71fe-47b0-8fa3-0419d7991800/public')`}}></div>
         <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/07c0720a-4281-4c16-bfb7-01fcc942d100/public')`}}></div>
         <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/878bae8f-0568-46c7-ba04-9a1025e24300/public')`}}></div>
         <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f6e423a1-7430-40bc-9e61-2c93a8c9f100/public')`}}></div>

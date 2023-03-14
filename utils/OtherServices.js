@@ -34,7 +34,7 @@ export default function OtherServices() {
                 </div>
 
                 <div className="service-card">
-                    <div className="otherservices-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c7f409bd-c823-4598-6c56-5da726d30b00/public')`}}></div>
+                    <div className="otherservices-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/public')`}}></div>
                     <div className="otherservices-desc text-center">
                         <div>
                             <a href='/gallery/ceramic-coating-gallery' className='service-heading-link'>CERAMIC COATING GALLERY</a>

@@ -26,6 +26,11 @@ export default function CoatingGallery() {
         </div>
       </div>
       <div className="photo-grid">
+        <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a7cc8a20-819f-4ef2-8b36-d41dc99bc200/public')`}}></div>
+        <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/535a82f6-dd2b-450c-99fc-1bedd61bf700/public')`}}></div>
+        <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/568455f2-1e76-41bd-3ab9-7dcb5c7e2500/public')`}}></div>
+        <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a7b4af9c-97db-42dc-3b72-452a6221aa00/public')`}}></div>
+        <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/public')`}}></div>
         <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a8430f3-90c0-4f56-1fff-88fcd3b29600/public')`}}></div>
         <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/318b00ed-4a02-4f43-7fdb-1d407d7b0100/public')`}}></div>
         <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3c484dfb-5247-428e-1735-1b31f3efd600/public')`}}></div>

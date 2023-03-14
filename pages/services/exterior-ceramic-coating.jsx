@@ -97,7 +97,7 @@ export default function ExtCoatings() {
                     }`,
                 }} />
             </Head>
-            <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a30c288d-c816-4a42-e313-d7fa80e04200/cover')`}}></div>
+            <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/cover')`}}></div>
             <div className="servicepage-header">
                 <h1>Exterior Ceramic Coating</h1>
                 <h2 className='page-subheading'>Get a professionally installed 5 year Ceramic Coating professionally to protect your vehicle year-round.</h2>
@@ -145,7 +145,7 @@ export default function ExtCoatings() {
                                 <p>When it's hot, cold, or humid, coatings respond differently. If you've spent much time in Bonney Lake, you've probably noticed that the weather is always fluctuating.</p>
                                 <p><span className="special-package">NOTICE:</span>  We complete every coating installation in our shop, where we have complete control over the working environment to provide the best end results. </p>
                             </div>
-                            <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a30c288d-c816-4a42-e313-d7fa80e04200/public')`}}></div>
+                            <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/public')`}}></div>
                         </div>
 
                         <div className="service-explain">
