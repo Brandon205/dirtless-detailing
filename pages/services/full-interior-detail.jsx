@@ -125,9 +125,9 @@ export default function FullIntEx() {
                 <div className="pricing-card text-black">
                   <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Small</strong>
                   <strong className='size'>Without Extraction</strong>
-                  <p className="pricing-price pricing-border">$200</p>
-                  <strong className='size'>With Extraction</strong>
                   <p className="pricing-price pricing-border">$250</p>
+                  <strong className='size'>With Extraction</strong>
+                  <p className="pricing-price pricing-border">$300</p>
                   <p className="example-vehicle pricing-border">2-Door Coupes</p>
                   <p className="example-vehicle pricing-border">Single/Extended Cabs</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
@@ -135,9 +135,9 @@ export default function FullIntEx() {
                 <div className="pricing-card text-black">
                   <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Medium</strong>
                   <strong className='size'>Without Extraction</strong>
-                  <p className="pricing-price pricing-border">$250</p>
-                  <strong className='size'>With Extraction</strong>
                   <p className="pricing-price pricing-border">$300</p>
+                  <strong className='size'>With Extraction</strong>
+                  <p className="pricing-price pricing-border">$350</p>
                   <p className="example-vehicle pricing-border">4 Door Vehicles</p>
                   <p className="example-vehicle pricing-border">Smaller SUV's</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
@@ -145,9 +145,9 @@ export default function FullIntEx() {
                 <div className="pricing-card text-black">
                   <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Large</strong>
                   <strong className='size'>Without Extraction</strong>
-                  <p className="pricing-price pricing-border">$300</p>
-                  <strong className='size'>With Extraction</strong>
                   <p className="pricing-price pricing-border">$350</p>
+                  <strong className='size'>With Extraction</strong>
+                  <p className="pricing-price pricing-border">$400</p>
                   <p className="example-vehicle pricing-border">Larger Trucks</p>
                   <p className="example-vehicle pricing-border">Extra Large SUV's</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>

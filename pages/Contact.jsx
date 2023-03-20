@@ -96,13 +96,12 @@ export default function Contact() {
 
             "Exterior Wash": e.target['exteriorWash'].value,
             "Engine Bay": e.target['engine'].checked ? 'Yes' : 'No',
-            "Glass Polishing (Exterior Add-on)": e.target['glassEx'].checked ? 'Yes' : 'No',
-            "Waterspot Removal (Exterior Add-on)": e.target['waterspotEx'].checked ? 'Yes' : 'No',
+            "Glass Polishing": e.target['glassEx'].checked ? 'Yes' : 'No',
+            "Waterspot Removal": e.target['waterspotEx'].checked ? 'Yes' : 'No',
             "Truck Bed Cleaning": e.target['truckBed'].checked ? 'Yes' : 'No',
             "Debadging": e.target['debadge'].checked ? 'Yes' : 'No',
 
             "Paint Correction": e.target['paintCorrection'].value,
-            "Glass Polishing (Correction Add-on)": e.target['glassCorrection'].checked ? 'Yes' : 'No'
         }
 
         const formData = new FormData();
@@ -157,25 +156,35 @@ export default function Contact() {
     }
 
     let handleIntSelect = () => {
-        if (formRef.current['fullIntEx'].checked && formRef.current['fullInterior'].checked) {
-            setIntSelected(true)
-        } else if (formRef.current['fullIntEx'].checked || formRef.current['fullInterior'].checked) {
-            setIntSelected(true)
-        } else {
+        let currForm = formRef.current
+        // if (formRef.current['fullIntEx'].checked && formRef.current['fullInterior'].checked) {
+        //     setIntSelected(true)
+        // } else if (formRef.current['fullIntEx'].checked || formRef.current['fullInterior'].checked) {
+        //     setIntSelected(true)
+        // } else {
+        //     setIntSelected(false)
+        //     formRef.current['fabric'].checked = false
+        //     formRef.current['leather'].checked = false
+        // }
+        if (!currForm['interiorCleaning'][0].checked && !currForm['interiorCleaning'][1].checked && !currForm['interiorCleaning'][2].checked) {
             setIntSelected(false)
-            formRef.current['fabric'].checked = false
-            formRef.current['leather'].checked = false
+        } else {
+            setIntSelected(true)
+            // formRef.current['fabric'].checked = false
+            // formRef.current['leather'].checked = false
         }
 
-        if (formRef.current['protect'].checked && formRef.current['protect+'].checked) {
-            setCoatingSelected(true);
-            formRef.current['singlePC'].checked = false
-        } else if (formRef.current['protect'].checked || formRef.current['protect+'].checked) {
-            setCoatingSelected(true)
-            formRef.current['singlePC'].checked = false
-        } else {
-            setCoatingSelected(false)
-        }
+        console.log(formRef.current['interiorCleaning'][0].checked)
+
+        // if (formRef.current['protect'].checked && formRef.current['protect+'].checked) {
+        //     setCoatingSelected(true);
+        //     formRef.current['singlePC'].checked = false
+        // } else if (formRef.current['protect'].checked || formRef.current['protect+'].checked) {
+        //     setCoatingSelected(true)
+        //     formRef.current['singlePC'].checked = false
+        // } else {
+        //     setCoatingSelected(false)
+        // }
     }
 
     function formatPhoneNumber(value) {
@@ -263,6 +272,7 @@ export default function Contact() {
 
             <div className='contact-container-right'>
                 <h2>Or Email us by filling out our form:</h2>
+                <p style={{ marginTop: 0, }}><span className='special-package'>*</span>Pricing may vary inside of the listed ranges based on vehicle size and condition.</p>
                 <form className="form" onSubmit={(e) => formSubmit(e)} ref={formRef} autoComplete="on">
                     <div className="form-section form-top-section">
                         <div>
@@ -461,9 +471,9 @@ export default function Contact() {
                             <input type="checkbox" name="protect+" id='protect+' className='checkbox-input' onClick={() => handleIntSelect()} />
                             <label title="Will automatically include a Single Stage Paint Correction." htmlFor="protect+" className='checkbox-label'>Protect<span className='special-package'>+</span> Ceramic Package</label> */}
                             <input type="radio" name="exteriorCoating" id="Protect" value="Protect" className='radio-button' />
-                            <label htmlFor="Protect" className='checkbox-label'>Protect</label>
+                            <label htmlFor="Protect" className='checkbox-label'>Protect <span className='special-package italic'>($1,000-$1,400)</span></label>
                             <input type="radio" name="exteriorCoating" id="Protect+" value="Protect+" className='radio-button' />
-                            <label htmlFor="Protect+" className='checkbox-label'>Protect<span className='special-package'>+</span></label>
+                            <label htmlFor="Protect+" className='checkbox-label'>Protect<span className='special-package'>+</span> <span className='special-package italic'>($1,500-$1,900)</span></label>
                         </div>
                     </div>
 
@@ -472,7 +482,7 @@ export default function Contact() {
                         <p style={{ marginTop: 0, }}>(Comes with a <span className='special-package'>FREE</span> engine bay cleaning)</p>
                         <div>
                             <input type="checkbox" name="combo" id='combo' className='checkbox-input' />
-                            <label htmlFor="combo" className='checkbox-label'>Full Interior and Exterior Combo</label>
+                            <label htmlFor="combo" className='checkbox-label'>Full Interior and Exterior Combo <span className='special-package italic'>($350-$700)</span></label>
                         </div>
                     </div>
 
@@ -487,12 +497,12 @@ export default function Contact() {
 
                             <input type="checkbox" id='bio' name="bio" className='checkbox-input' />
                             <label htmlFor="bio" className='checkbox-label'>Biohazard Cleaning</label> */}
-                            <input type="radio" name="interiorCleaning" id="FullIntEx" value="Full Interior With Extraction" className='radio-button' />
-                            <label htmlFor="FullIntEx" className='checkbox-label'>Full Interior With Extraction</label>
-                            <input type="radio" name="interiorCleaning" id="FullInt" value="Full Interior Without Extraction" className='radio-button' />
-                            <label htmlFor="FullInt" className='checkbox-label'>Full Interior Without Extraction</label>
-                            <input type="radio" name="interiorCleaning" id="Bio" value="Biohazard Cleaning" className='radio-button' />
-                            <label htmlFor="Bio" className='checkbox-label'>Biohazard Cleaning</label>
+                            <input type="radio" name="interiorCleaning" id="FullInt" value="Full Interior Without Extraction" className='radio-button' onClick={() => handleIntSelect()}  />
+                            <label htmlFor="FullInt" className='checkbox-label'>Full Interior Without Extraction <span className='special-package italic'>($250-$300)</span></label>
+                            <input type="radio" name="interiorCleaning" id="FullIntEx" value="Full Interior With Extraction" className='radio-button' onClick={() => handleIntSelect()}  />
+                            <label htmlFor="FullIntEx" className='checkbox-label'>Full Interior With Extraction <span className='special-package italic'>($250-$350)</span></label>
+                            <input type="radio" name="interiorCleaning" id="Bio" value="Biohazard Cleaning" className='radio-button' onClick={() => handleIntSelect()}  />
+                            <label htmlFor="Bio" className='checkbox-label'>Biohazard Cleaning <span className='special-package italic'>($400-$1,000)</span></label>
 
                         </div>
                         <hr className="contact-border" />
@@ -501,16 +511,16 @@ export default function Contact() {
                         <p style={{ marginTop: 0, }}>(Coatings need a Full Interior Cleaning service selected)</p>
                         <div>
                             <input type="checkbox" name="fabric" id='fabric' className={'checkbox-input'} disabled={!intSelected ? "disabled" : ""} />
-                            <label title="Need to have an Interior Cleaning option selected." htmlFor="fabric" className='checkbox-label'>Fabric Coating</label>
+                            <label title="Need to have an Interior Cleaning option selected." htmlFor="fabric" className='checkbox-label'>Fabric Coating <span className='special-package italic'>($75)</span></label>
 
                             <input type="checkbox" name="leather" id='leather' className={'checkbox-input'} disabled={!intSelected ? "disabled" : ""} />
-                            <label title="Need to have an Interior Cleaning option selected." htmlFor="leather" className='checkbox-label'>Leather Coating</label>
+                            <label title="Need to have an Interior Cleaning option selected." htmlFor="leather" className='checkbox-label'>Leather Coating <span className='special-package italic'>($150)</span></label>
 
                             <input type="checkbox" id='headliners' name="headliners" className='checkbox-input' />
-                            <label htmlFor="headliners" className='checkbox-label'>Headliners</label>
+                            <label htmlFor="headliners" className='checkbox-label'>Headliners <span className='special-package italic'>($40-$80)</span></label>
 
                             <input type="checkbox" id='ozone' name="ozone" className='checkbox-input' />
-                            <label htmlFor="ozone" className='checkbox-label'>Ozone Treatment</label>
+                            <label htmlFor="ozone" className='checkbox-label'>Ozone Treatment <span className='special-package italic'>($100)</span></label>
                         </div>
                         <hr className="contact-border" />
 
@@ -562,33 +572,34 @@ export default function Contact() {
                             <input type="checkbox" id='pdlWash' name="premium dirtless wash" className='checkbox-input' />
                             <label htmlFor="pdlWash" className='checkbox-label'>Premium Dirt-Less Wash</label> */}
                             <input type="radio" name="exteriorWash" id="Dirt-Less Wash" value="Dirt-Less Wash" className='radio-button' />
-                            <label htmlFor="Dirt-Less Wash" className='checkbox-label'>Dirt-Less Wash</label>
+                            <label htmlFor="Dirt-Less Wash" className='checkbox-label'>Dirt-Less Wash <span className='special-package italic'>($75-$150)</span></label>
                             <input type="radio" name="exteriorWash" id="Premium Wash" value="Premium Dirt-Less Wash" className='radio-button' />
-                            <label htmlFor="Premium Wash" className='checkbox-label'>Premium Dirt-Less Wash</label>
+                            <label htmlFor="Premium Wash" className='checkbox-label'>Premium Dirt-Less Wash <span className='special-package italic'>($150-$275)</span></label>
                         </div>
                         <hr className="contact-border" />
 
                         <p className="form-section-heading">Exterior Add-ons <a href='/services/add-ons#exterior' className='aside-link'><BiLinkExternal /></a></p>
                         <div>
+                            <input type="checkbox" id='truckBed' name="truckBed" className='checkbox-input' />
+                            <label htmlFor="truckBed" className='checkbox-label'>Truck Bed Cleaning <span className='special-package italic'>($25)</span></label>
+
                             <input type="checkbox" id='engine' name="engine" className='checkbox-input' />
-                            <label htmlFor="engine" className='checkbox-label' style={{ marginBottom: 16 }}>Engine Bay</label>
+                            <label htmlFor="engine" className='checkbox-label' style={{ marginBottom: 16 }}>Engine Bay <span className='special-package italic'>($80)</span></label>
 
                             <input type="checkbox" id='glassEx' name="glass" className='checkbox-input' />
-                            <label htmlFor="glassEx" className='checkbox-label'>Glass Polishing</label>
+                            <label htmlFor="glassEx" className='checkbox-label'>Glass Polishing <span className='special-package italic'>($80/hour)</span></label>
 
                             <input type="checkbox" id='waterspotEx' name="waterspot" className='checkbox-input' />
-                            <label htmlFor="waterspotEx" className='checkbox-label'>Waterspot/Overspray Removal</label>
-
-                            <input type="checkbox" id='truckBed' name="truckBed" className='checkbox-input' />
-                            <label htmlFor="truckBed" className='checkbox-label'>Truck Bed Cleaning</label>
+                            <label htmlFor="waterspotEx" className='checkbox-label'>Waterspot/Overspray Removal <span className='special-package italic'>($80/hour)</span></label>
 
                             <input type="checkbox" id='debadge' name="debadge" className='checkbox-input' />
-                            <label htmlFor="debadge" className='checkbox-label'>Debadging</label>
+                            <label htmlFor="debadge" className='checkbox-label'>Debadging <span className='special-package italic'>($80/hour)</span></label>
                         </div>
                     </div>
 
                     <div className="form-section">
                         <p className='form-section-heading'>Paint Correction Services <a href='/services/single-stage-correction' className='aside-link'><BiLinkExternal /></a></p>
+                        <p style={{ marginTop: 0, }}>(Exterior Add-ons go great with our Paint Correction Services too!)</p>
                         <div>
                             {/* <input type="checkbox" id='singlePC' name="singlePC" className='checkbox-input' disabled={!coatingSelected ? "" : "disabled"} />
                             <label title="Automatically included with either of the Ceramic Coating packages." htmlFor="singlePC" className='checkbox-label'>Single Stage Paint Correction</label>
@@ -597,17 +608,17 @@ export default function Contact() {
                             <label htmlFor="twoPC" className='checkbox-label' style={{ marginBottom: 16 }}>Two Stage Paint Correction</label> */}
 
                             <input type="radio" name="paintCorrection" id="Single" value="Single Stage" className='radio-button' />
-                            <label htmlFor="Single" className='checkbox-label'>Single Stage Paint Correction</label>
+                            <label htmlFor="Single" className='checkbox-label'>Single Stage Paint Correction <span className='special-package italic'>($300-$850)</span></label>
                             <input type="radio" name="paintCorrection" id="Two" value="Two Stage" className='radio-button' />
-                            <label htmlFor="Two" className='checkbox-label'>Two Stage Paint Correction</label>
+                            <label htmlFor="Two" className='checkbox-label'>Two Stage Paint Correction <span className='special-package italic'>($450-$1,100)</span></label>
                         </div>
-                        <hr className="contact-border" />
+                        {/* <hr className="contact-border" /> */}
 
-                        <p className="form-section-heading">Paint Correction Add-ons <a href='/services/add-ons#exterior' className='aside-link'><BiLinkExternal /></a></p>
+                        {/* <p className="form-section-heading">Paint Correction Add-ons <a href='/services/add-ons#exterior' className='aside-link'><BiLinkExternal /></a></p>
                         <div>
                             <input type="checkbox" id='glassCorrection' name="glass Correction" className='checkbox-input' />
                             <label htmlFor="glassCorrection" className='checkbox-label'>Glass Polishing</label>
-                        </div>
+                        </div> */}
                         <input type="hidden" name="_gotcha" style={{ display: 'none !important' }} />
                     </div>
 
@@ -615,22 +626,22 @@ export default function Contact() {
                         <p className="form-section-heading">Maintenance Options <a href='/services/exterior-ceramic-coating' className='aside-link'><BiLinkExternal /></a></p>
                         <div>
                             <input type="checkbox" name="monthly" id='monthly' className='checkbox-input' />
-                            <label htmlFor="monthly" className='checkbox-label'>Monthly Maintenance</label>
+                            <label htmlFor="monthly" className='checkbox-label'>Monthly Maintenance <span className='special-package italic'>($130-$190)</span></label>
 
                             <input type="checkbox" name="yearly" id='yearly' className='checkbox-input' />
-                            <label htmlFor="yearly" className='checkbox-label'>Yearly Maintenance</label>
+                            <label htmlFor="yearly" className='checkbox-label'>Yearly Maintenance <span className='special-package italic'>($200-$300)</span></label>
 
                             <input type="checkbox" name="trim-recoat" id='trim-recoat' className='checkbox-input' />
-                            <label htmlFor="trim-recoat" className='checkbox-label'>Trim Re-coating</label>
+                            <label htmlFor="trim-recoat" className='checkbox-label'>Trim Re-coating <span className='special-package italic'>($100)</span></label>
 
                             <input type="checkbox" name="wheel-recoat" id='wheel-recoat' className='checkbox-input' />
-                            <label htmlFor="wheel-recoat" className='checkbox-label'>Wheel Faces Re-coating</label>
+                            <label htmlFor="wheel-recoat" className='checkbox-label'>Wheel Faces Re-coating <span className='special-package italic'>($150)</span></label>
 
                             <input type="checkbox" name="fabric-recoat" id='fabric-recoat' className='checkbox-input' />
-                            <label htmlFor="fabric-recoat" className='checkbox-label'>Fabric Re-coating</label>
+                            <label htmlFor="fabric-recoat" className='checkbox-label'>Fabric Re-coating <span className='special-package italic'>($75)</span></label>
 
                             <input type="checkbox" name="leather-recoat" id='leather-recoat' className='checkbox-input' />
-                            <label htmlFor="leather-recoat" className='checkbox-label'>Leather Re-coating</label>
+                            <label htmlFor="leather-recoat" className='checkbox-label'>Leather Re-coating <span className='special-package italic'>($150)</span></label>
                         </div>
                     </div>
 
