@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Metatags from '../utils/Metatags';
 import 'react-toastify/dist/ReactToastify.css';
 
-import { FaPhoneAlt, FaFacebookMessenger, FaClock } from 'react-icons/fa';
+import { FaFacebookMessenger, FaClock } from 'react-icons/fa';
 import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 import { AiFillGift } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
@@ -16,6 +16,14 @@ export default function Contact() {
     const [coatingSelected, setCoatingSelected] = useState(false);
     const [gift, setGift] = useState(false);
     const [phoneNumber, setPhoneNumber] = useState('');
+
+    //State for the "Radio" buttons
+    const [paintCorrection, setPaintCorrection] = useState('');
+    const [exteriorWash, setExteriorWash] = useState('');
+    const [interiorCleaning, setInteriorCleaning] = useState('');
+    const [exteriorCoating, setExteriorCoating] = useState('');
+    const [dirtiness, setDirtiness] = useState('');
+    const [dogHair, setDogHair] = useState('');
 
     const [nameVal, setNameVal] = useState('');
     const [emailVal, setEmailVal] = useState('');
@@ -156,35 +164,25 @@ export default function Contact() {
     }
 
     let handleIntSelect = () => {
-        let currForm = formRef.current
-        // if (formRef.current['fullIntEx'].checked && formRef.current['fullInterior'].checked) {
-        //     setIntSelected(true)
-        // } else if (formRef.current['fullIntEx'].checked || formRef.current['fullInterior'].checked) {
-        //     setIntSelected(true)
-        // } else {
-        //     setIntSelected(false)
-        //     formRef.current['fabric'].checked = false
-        //     formRef.current['leather'].checked = false
-        // }
+        let currForm = formRef.current;
+
+        // Interior Cleaning selected check
         if (!currForm['interiorCleaning'][0].checked && !currForm['interiorCleaning'][1].checked && !currForm['interiorCleaning'][2].checked) {
-            setIntSelected(false)
+            currForm['fabric'].checked = false;
+            currForm['leather'].checked = false;
+            setIntSelected(false);
         } else {
-            setIntSelected(true)
-            // formRef.current['fabric'].checked = false
-            // formRef.current['leather'].checked = false
+            setIntSelected(true);
         }
 
-        console.log(formRef.current['interiorCleaning'][0].checked)
-
-        // if (formRef.current['protect'].checked && formRef.current['protect+'].checked) {
-        //     setCoatingSelected(true);
-        //     formRef.current['singlePC'].checked = false
-        // } else if (formRef.current['protect'].checked || formRef.current['protect+'].checked) {
-        //     setCoatingSelected(true)
-        //     formRef.current['singlePC'].checked = false
-        // } else {
-        //     setCoatingSelected(false)
-        // }
+        // Coating selected check
+        if (!currForm['exteriorCoating'][0].checked && !currForm['exteriorCoating'][1].checked) {
+            currForm['paintCorrection'][0].checked = false;
+            currForm['paintCorrection'][1].checked = false;
+            setCoatingSelected(false);
+        } else {
+            setCoatingSelected(true);
+        }
     }
 
     function formatPhoneNumber(value) {
@@ -216,6 +214,49 @@ export default function Contact() {
         const formattedPhoneNumber = formatPhoneNumber(e.target.value);
 
         setPhoneNumber(formattedPhoneNumber)
+    }
+
+    let handleRadioClick = (e, button) => {
+        if (button === "interiorCleaning") { // INTERIOR
+            if (e.target.id === interiorCleaning) {
+                setInteriorCleaning('')
+            } else {
+                setInteriorCleaning(e.target.id)
+            }
+            
+        } else if (button === "exteriorCoating") { // COATING
+            if (e.target.id === exteriorCoating) {
+                setExteriorCoating('')
+            } else {
+                setExteriorCoating(e.target.id)
+            }
+            
+        } else if (button === "exteriorWash") { // EXTERIOR
+            if (e.target.id === exteriorWash) {
+                setExteriorWash('')
+            } else {
+                setExteriorWash(e.target.id)
+            }
+
+        } else if (button === "paintCorrection") { // PAINT CORRECTION
+            if (e.target.id === paintCorrection) {
+                setPaintCorrection('')
+            } else {
+                setPaintCorrection(e.target.id)
+            }
+        } else if (button === "dirtiness") { // DIRTINESS
+            if (e.target.id === dirtiness) {
+                setDirtiness('')
+            } else {
+                setDirtiness(e.target.id)
+            }
+        } else if (button === "dogHair") { // DOG HAIR
+            if (e.target.id === dogHair) {
+                setDogHair('')
+            } else {
+                setDogHair(e.target.id)
+            }
+        }
     }
 
     return (
@@ -470,9 +511,9 @@ export default function Contact() {
 
                             <input type="checkbox" name="protect+" id='protect+' className='checkbox-input' onClick={() => handleIntSelect()} />
                             <label title="Will automatically include a Single Stage Paint Correction." htmlFor="protect+" className='checkbox-label'>Protect<span className='special-package'>+</span> Ceramic Package</label> */}
-                            <input type="radio" name="exteriorCoating" id="Protect" value="Protect" className='radio-button' />
+                            <input type="checkbox" name="exteriorCoating" id="Protect" value="Protect" className='radio-button' onChange={(e) => {handleRadioClick(e, 'exteriorCoating'); handleIntSelect()}} checked={exteriorCoating === "Protect"} />
                             <label htmlFor="Protect" className='checkbox-label'>Protect <span className='special-package italic'>($1,000-$1,400)</span></label>
-                            <input type="radio" name="exteriorCoating" id="Protect+" value="Protect+" className='radio-button' />
+                            <input type="checkbox" name="exteriorCoating" id="Protect+" value="Protect+" className='radio-button' onChange={(e) => {handleRadioClick(e, 'exteriorCoating'); handleIntSelect()}} checked={exteriorCoating === "Protect+"} />
                             <label htmlFor="Protect+" className='checkbox-label'>Protect<span className='special-package'>+</span> <span className='special-package italic'>($1,500-$1,900)</span></label>
                         </div>
                     </div>
@@ -497,11 +538,11 @@ export default function Contact() {
 
                             <input type="checkbox" id='bio' name="bio" className='checkbox-input' />
                             <label htmlFor="bio" className='checkbox-label'>Biohazard Cleaning</label> */}
-                            <input type="radio" name="interiorCleaning" id="FullInt" value="Full Interior Without Extraction" className='radio-button' onClick={() => handleIntSelect()}  />
+                            <input type="checkbox" name="interiorCleaning" id="FullInt" value="Full Interior Without Extraction" className='radio-button' onChange={(e) => {handleRadioClick(e, 'interiorCleaning'); handleIntSelect()}} checked={interiorCleaning === "FullInt"} />
                             <label htmlFor="FullInt" className='checkbox-label'>Full Interior Without Extraction <span className='special-package italic'>($250-$300)</span></label>
-                            <input type="radio" name="interiorCleaning" id="FullIntEx" value="Full Interior With Extraction" className='radio-button' onClick={() => handleIntSelect()}  />
-                            <label htmlFor="FullIntEx" className='checkbox-label'>Full Interior With Extraction <span className='special-package italic'>($250-$350)</span></label>
-                            <input type="radio" name="interiorCleaning" id="Bio" value="Biohazard Cleaning" className='radio-button' onClick={() => handleIntSelect()}  />
+                            <input type="checkbox" name="interiorCleaning" id="FullIntEx" value="Full Interior With Extraction" className='radio-button' onChange={(e) => {handleRadioClick(e, 'interiorCleaning'); handleIntSelect()}} checked={interiorCleaning === "FullIntEx"} />
+                            <label htmlFor="FullIntEx" className='checkbox-label'>Full Interior With Extraction <span className='special-package italic'>($300-$400)</span></label>
+                            <input type="checkbox" name="interiorCleaning" id="Bio" value="Biohazard Cleaning" className='radio-button' onChange={(e) => {handleRadioClick(e, 'interiorCleaning'); handleIntSelect()}} checked={interiorCleaning === "Bio"} />
                             <label htmlFor="Bio" className='checkbox-label'>Biohazard Cleaning <span className='special-package italic'>($400-$1,000)</span></label>
 
                         </div>
@@ -543,21 +584,21 @@ export default function Contact() {
                             <option value="5" aria-readonly label="Lots of Hair"></option>
                         </datalist> */}
                         <div>
-                            <input type="radio" name="dirtiness" id="Pretty Clean" value="Pretty Clean" className='radio-button' />
+                            <input type="checkbox" name="dirtiness" id="Pretty Clean" value="Pretty Clean" className='radio-button' onChange={(e) => handleRadioClick(e, 'dirtiness')} checked={dirtiness === "Pretty Clean"} />
                             <label htmlFor="Pretty Clean" className='dirty-label' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3031c630-d6f2-48fc-1bb4-62844fbd5a00/public')`}}>Pretty Clean</label>
-                            <input type="radio" name="dirtiness" id="Normal Use" value="Normal Use" className='radio-button' />
+                            <input type="checkbox" name="dirtiness" id="Normal Use" value="Normal Use" className='radio-button' onChange={(e) => handleRadioClick(e, 'dirtiness')} checked={dirtiness === "Normal Use"} />
                             <label htmlFor="Normal Use" className='dirty-label' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3031c630-d6f2-48fc-1bb4-62844fbd5a00/public')`}}>Normal Use</label>
-                            <input type="radio" name="dirtiness" id="Very Dirty" value="Very Dirty" className='radio-button' />
+                            <input type="checkbox" name="dirtiness" id="Very Dirty" value="Very Dirty" className='radio-button' onChange={(e) => handleRadioClick(e, 'dirtiness')} checked={dirtiness === "Very Dirty"} />
                             <label htmlFor="Very Dirty" className='dirty-label' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/70e54f6b-a9f8-48aa-a9af-893776082400/public')`}}>Very Dirty</label>
                         </div>
 
                         <p className="form-section-heading">Dog Hair Amount</p>
                         <div>
-                            <input type="radio" name="dogHair" id="Little to None" value="Little to None" className='radio-button' />
+                            <input type="checkbox" name="dogHair" id="Little to None" value="Little to None" className='radio-button' onChange={(e) => handleRadioClick(e, 'dogHair')} checked={dogHair === "Little to None"} />
                             <label htmlFor="Little to None" className='dirty-label' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3031c630-d6f2-48fc-1bb4-62844fbd5a00/public')`}}>Little to No Dog Hair</label>
-                            <input type="radio" name="dogHair" id="Medium Hair" value="Medium Hair" className='radio-button' />
+                            <input type="checkbox" name="dogHair" id="Medium Hair" value="Medium Hair" className='radio-button' onChange={(e) => handleRadioClick(e, 'dogHair')} checked={dogHair === "Medium Hair"} />
                             <label htmlFor="Medium Hair" className='dirty-label' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3031c630-d6f2-48fc-1bb4-62844fbd5a00/public')`}}>Medium Amount of Dog Hair</label>
-                            <input type="radio" name="dogHair" id="Lots of Hair" value="Lots of Hair" className='radio-button' />
+                            <input type="checkbox" name="dogHair" id="Lots of Hair" value="Lots of Hair" className='radio-button' onChange={(e) => handleRadioClick(e, 'dogHair')} checked={dogHair === "Lots of Hair"} />
                             <label htmlFor="Lots of Hair" className='dirty-label' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3031c630-d6f2-48fc-1bb4-62844fbd5a00/public')`}}>Lots of Dog Hair</label>
                         </div>
 
@@ -571,9 +612,9 @@ export default function Contact() {
 
                             <input type="checkbox" id='pdlWash' name="premium dirtless wash" className='checkbox-input' />
                             <label htmlFor="pdlWash" className='checkbox-label'>Premium Dirt-Less Wash</label> */}
-                            <input type="radio" name="exteriorWash" id="Dirt-Less Wash" value="Dirt-Less Wash" className='radio-button' />
+                            <input type="checkbox" name="exteriorWash" id="Dirt-Less Wash" value="Dirt-Less Wash" className='radio-button' onChange={(e) => handleRadioClick(e, 'exteriorWash')} checked={exteriorWash === 'Dirt-Less Wash'} />
                             <label htmlFor="Dirt-Less Wash" className='checkbox-label'>Dirt-Less Wash <span className='special-package italic'>($75-$150)</span></label>
-                            <input type="radio" name="exteriorWash" id="Premium Wash" value="Premium Dirt-Less Wash" className='radio-button' />
+                            <input type="checkbox" name="exteriorWash" id="Premium Wash" value="Premium Dirt-Less Wash" className='radio-button' onChange={(e) => handleRadioClick(e, 'exteriorWash')} checked={exteriorWash === 'Premium Wash'} />
                             <label htmlFor="Premium Wash" className='checkbox-label'>Premium Dirt-Less Wash <span className='special-package italic'>($150-$275)</span></label>
                         </div>
                         <hr className="contact-border" />
@@ -607,10 +648,10 @@ export default function Contact() {
                             <input type="checkbox" id='twoPC' name="twoPC" className='checkbox-input' />
                             <label htmlFor="twoPC" className='checkbox-label' style={{ marginBottom: 16 }}>Two Stage Paint Correction</label> */}
 
-                            <input type="radio" name="paintCorrection" id="Single" value="Single Stage" className='radio-button' />
-                            <label htmlFor="Single" className='checkbox-label'>Single Stage Paint Correction <span className='special-package italic'>($300-$850)</span></label>
-                            <input type="radio" name="paintCorrection" id="Two" value="Two Stage" className='radio-button' />
-                            <label htmlFor="Two" className='checkbox-label'>Two Stage Paint Correction <span className='special-package italic'>($450-$1,100)</span></label>
+                            <input type="checkbox" name="paintCorrection" id="Single Stage" value="Single Stage" className='radio-button' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => handleRadioClick(e, 'paintCorrection')} checked={paintCorrection === 'Single Stage'} />
+                            <label htmlFor="Single Stage" className='checkbox-label'>Single Stage Paint Correction <span className='special-package italic'>($300-$850)</span></label>
+                            <input type="checkbox" name="paintCorrection" id="Two Stage" value="Two Stage" className='radio-button' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => handleRadioClick(e, 'paintCorrection')} checked={paintCorrection === 'Two Stage'} />
+                            <label htmlFor="Two Stage" className='checkbox-label'>Two Stage Paint Correction <span className='special-package italic'>($450-$1,100)</span></label>
                         </div>
                         {/* <hr className="contact-border" /> */}
 
