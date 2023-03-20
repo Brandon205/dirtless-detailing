@@ -407,6 +407,11 @@ input[type='radio']:checked+label {
   background-color: var(--main-clr);
   color: white;
   border-color: var(--main-clr);
+  /* border: 3px solid var(--main-clr); */
+}
+
+input[type='radio']:checked .dirty-label {
+  border: 3px solid var(--main-clr);
 }
 
 input[type='radio']:checked+label .special-package {
@@ -438,11 +443,15 @@ option {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+  gap: 4rem;
   padding: 2rem 0;
 }
 
 .form {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .form-section {
@@ -451,6 +460,7 @@ option {
   margin-top: 0.5rem;
   border-radius: 1rem;
   text-align: left;
+  box-shadow: 0 0 4px white;
 }
 
 .form-top-section {
@@ -525,8 +535,18 @@ option {
   margin-top: 0.25rem;
 }
 
+.dirty-label {
+  padding: 2rem;
+  border: 3px solid white;
+  border-radius: 1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: blur
+}
+
 .radio-button {
-  visibility: hidden;
+  display: none;
 }
 
 .contact-information-container {

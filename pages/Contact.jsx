@@ -83,6 +83,26 @@ export default function Contact() {
             "Message": e.target['message'].value,
 
             "Exterior Coating": e.target['exteriorCoating'].value,
+
+            "Combo": e.target['combo'].checked ? 'Yes' : 'No',
+
+            "Interior Cleaning": e.target['interiorCleaning'].value,
+            "Fabric Coating": e.target['fabric'].checked ? 'Yes' : 'No',
+            "Leather Coating": e.target['leather'].checked ? 'Yes' : 'No',
+            "Headliners": e.target['headliners'].checked ? 'Yes' : 'No',
+            "Ozone": e.target['ozone'].checked ? 'Yes' : 'No',
+            "Dirtiness": e.target['dirtiness'].value,
+            "Dog Hair": e.target['dogHair'].value,
+
+            "Exterior Wash": e.target['exteriorWash'].value,
+            "Engine Bay": e.target['engine'].checked ? 'Yes' : 'No',
+            "Glass Polishing (Exterior Add-on)": e.target['glassEx'].checked ? 'Yes' : 'No',
+            "Waterspot Removal (Exterior Add-on)": e.target['waterspotEx'].checked ? 'Yes' : 'No',
+            "Truck Bed Cleaning": e.target['truckBed'].checked ? 'Yes' : 'No',
+            "Debadging": e.target['debadge'].checked ? 'Yes' : 'No',
+
+            "Paint Correction": e.target['paintCorrection'].value,
+            "Glass Polishing (Correction Add-on)": e.target['glassCorrection'].checked ? 'Yes' : 'No'
         }
 
         const formData = new FormData();
@@ -94,12 +114,8 @@ export default function Contact() {
         //     }
         // });
         Object.entries(formInfo).forEach(([key, value]) => {
-            if (key === "Name" || key === "Email" || key === "Message" || key === "Phone" || key === "Year" || key === "Make" || key === "Model") {
+            if (key === "Name" || key === "Email" || key === "Message" || key === "Phone" || key === "Year" || key === "Make" || key === "Model" || key === "Exterior Coating" || key === "Interior Cleaning" || key === "Dirtiness" || key === "Dog Hair" || key === "Exterior Wash" || key === "Paint Correction") {
                 formData.append(key, value);
-            } else if (key === 'exteriorCoating') {
-                console.log(value)
-                if (value !== '') {
-                }
             } else if (value === 'Yes') {
                 formData.append(key, value);
             }
@@ -444,37 +460,10 @@ export default function Contact() {
 
                             <input type="checkbox" name="protect+" id='protect+' className='checkbox-input' onClick={() => handleIntSelect()} />
                             <label title="Will automatically include a Single Stage Paint Correction." htmlFor="protect+" className='checkbox-label'>Protect<span className='special-package'>+</span> Ceramic Package</label> */}
-                            <input type="radio" name="exteriorCoating" id="Protect" className='radio-button' />
+                            <input type="radio" name="exteriorCoating" id="Protect" value="Protect" className='radio-button' />
                             <label htmlFor="Protect" className='checkbox-label'>Protect</label>
-                            <input type="radio" name="exteriorCoating" id="Protect+" className='radio-button' />
+                            <input type="radio" name="exteriorCoating" id="Protect+" value="Protect+" className='radio-button' />
                             <label htmlFor="Protect+" className='checkbox-label'>Protect<span className='special-package'>+</span></label>
-                        </div>
-                    </div>
-
-                    <div className="form-section">
-                        <p className="form-section-heading">Monthly Maintenance <a href='/services/exterior-ceramic-coating' className='aside-link'><BiLinkExternal /></a></p>
-                        <div>
-                            <input type="checkbox" name="monthly" id='monthly' className='checkbox-input' />
-                            <label htmlFor="monthly" className='checkbox-label'>Monthly Maintenance</label>
-                        </div>
-                        <hr className="contact-border" />
-
-                        <p className="form-section-heading">Yearly Maintenance <a href='/services/exterior-ceramic-coating' className='aside-link'><BiLinkExternal /></a></p>
-                        <div>
-                            <input type="checkbox" name="yearly" id='yearly' className='checkbox-input' />
-                            <label htmlFor="yearly" className='checkbox-label'>Yearly Maintenance</label>
-
-                            <input type="checkbox" name="trim-recoat" id='trim-recoat' className='checkbox-input' />
-                            <label htmlFor="trim-recoat" className='checkbox-label'>Trim Re-coating</label>
-
-                            <input type="checkbox" name="wheel-recoat" id='wheel-recoat' className='checkbox-input' />
-                            <label htmlFor="wheel-recoat" className='checkbox-label'>Wheel Faces Re-coating</label>
-
-                            <input type="checkbox" name="fabric-recoat" id='fabric-recoat' className='checkbox-input' />
-                            <label htmlFor="fabric-recoat" className='checkbox-label'>Fabric Re-coating</label>
-
-                            <input type="checkbox" name="leather-recoat" id='leather-recoat' className='checkbox-input' />
-                            <label htmlFor="leather-recoat" className='checkbox-label'>Leather Re-coating</label>
                         </div>
                     </div>
 
@@ -490,14 +479,21 @@ export default function Contact() {
                     <div className="form-section">
                         <p className='form-section-heading'>Interior Cleaning Services <a href='/services/full-interior-detail' className='aside-link'><BiLinkExternal /></a></p>
                         <div>
-                            <input type="checkbox" id='fullIntEx' name="fullIntEx" className='checkbox-input' onClick={() => handleIntSelect()} />
+                            {/* <input type="checkbox" id='fullIntEx' name="fullIntEx" className='checkbox-input' onClick={() => handleIntSelect()} />
                             <label htmlFor="fullIntEx" className='checkbox-label'>Full Interior With Extraction</label>
 
                             <input type="checkbox" id='fullInterior' name="fullInterior" className='checkbox-input' onClick={() => handleIntSelect()} />
                             <label htmlFor="fullInterior" className='checkbox-label'>Full Interior Without Extraction</label>
 
                             <input type="checkbox" id='bio' name="bio" className='checkbox-input' />
-                            <label htmlFor="bio" className='checkbox-label'>Biohazard Cleaning</label>
+                            <label htmlFor="bio" className='checkbox-label'>Biohazard Cleaning</label> */}
+                            <input type="radio" name="interiorCleaning" id="FullIntEx" value="Full Interior With Extraction" className='radio-button' />
+                            <label htmlFor="FullIntEx" className='checkbox-label'>Full Interior With Extraction</label>
+                            <input type="radio" name="interiorCleaning" id="FullInt" value="Full Interior Without Extraction" className='radio-button' />
+                            <label htmlFor="FullInt" className='checkbox-label'>Full Interior Without Extraction</label>
+                            <input type="radio" name="interiorCleaning" id="Bio" value="Biohazard Cleaning" className='radio-button' />
+                            <label htmlFor="Bio" className='checkbox-label'>Biohazard Cleaning</label>
+
                         </div>
                         <hr className="contact-border" />
 
@@ -519,33 +515,56 @@ export default function Contact() {
                         <hr className="contact-border" />
 
                         <p className="form-section-heading">Vehicle Dirtiness</p>
-                        <input type="range" name="dirtiness" id="dirtiness" min="1" max="5" step="1" list="dirtiness-tickmarks" />
-                        <datalist id="dirtiness-tickmarks">
+                        {/* <input type="range" name="dirtiness" id="dirtiness" min="1" max="5" step="1" list="dirtiness-tickmarks" /> */}
+                        {/* <datalist id="dirtiness-tickmarks">
                             <option value="1" aria-readonly label="Pretty Clean"></option>
                             <option value="2" aria-readonly label=""></option>
                             <option value="3" aria-readonly label=""></option>
                             <option value="4" aria-readonly label=""></option>
                             <option value="5" aria-readonly label="Very Dirty"></option>
-                        </datalist>
-                        <p className="form-section-heading">Dog Hair Amount</p>
-                        <input type="range" name="dogHair" id="dogHair" min="1" max="5" step="1" list="hair-tickmarks" />
-                        <datalist id="hair-tickmarks">
+                            </datalist>
+                            <p className="form-section-heading">Dog Hair Amount</p>
+                            <input type="range" name="dogHair" id="dogHair" min="1" max="5" step="1" list="hair-tickmarks" />
+                            <datalist id="hair-tickmarks">
                             <option value="1" aria-readonly label="No Hair"></option>
                             <option value="2" aria-readonly label=""></option>
                             <option value="3" aria-readonly label=""></option>
                             <option value="4" aria-readonly label=""></option>
                             <option value="5" aria-readonly label="Lots of Hair"></option>
-                        </datalist>
+                        </datalist> */}
+                        <div>
+                            <input type="radio" name="dirtiness" id="Pretty Clean" value="Pretty Clean" className='radio-button' />
+                            <label htmlFor="Pretty Clean" className='dirty-label' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3031c630-d6f2-48fc-1bb4-62844fbd5a00/public')`}}>Pretty Clean</label>
+                            <input type="radio" name="dirtiness" id="Normal Use" value="Normal Use" className='radio-button' />
+                            <label htmlFor="Normal Use" className='dirty-label' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3031c630-d6f2-48fc-1bb4-62844fbd5a00/public')`}}>Normal Use</label>
+                            <input type="radio" name="dirtiness" id="Very Dirty" value="Very Dirty" className='radio-button' />
+                            <label htmlFor="Very Dirty" className='dirty-label' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/70e54f6b-a9f8-48aa-a9af-893776082400/public')`}}>Very Dirty</label>
+                        </div>
+
+                        <p className="form-section-heading">Dog Hair Amount</p>
+                        <div>
+                            <input type="radio" name="dogHair" id="Little to None" value="Little to None" className='radio-button' />
+                            <label htmlFor="Little to None" className='dirty-label' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3031c630-d6f2-48fc-1bb4-62844fbd5a00/public')`}}>Little to No Dog Hair</label>
+                            <input type="radio" name="dogHair" id="Medium Hair" value="Medium Hair" className='radio-button' />
+                            <label htmlFor="Medium Hair" className='dirty-label' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3031c630-d6f2-48fc-1bb4-62844fbd5a00/public')`}}>Medium Amount of Dog Hair</label>
+                            <input type="radio" name="dogHair" id="Lots of Hair" value="Lots of Hair" className='radio-button' />
+                            <label htmlFor="Lots of Hair" className='dirty-label' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3031c630-d6f2-48fc-1bb4-62844fbd5a00/public')`}}>Lots of Dog Hair</label>
+                        </div>
+
                     </div>
 
                     <div className="form-section">
                         <p className='form-section-heading'>Exterior Cleaning Services <a href='/services/dirtless-wash' className='aside-link'><BiLinkExternal /></a></p>
                         <div>
-                            <input type="checkbox" id='dlWash' name="dirtless wash" className='checkbox-input' />
+                            {/* <input type="checkbox" id='dlWash' name="dirtless wash" className='checkbox-input' />
                             <label htmlFor="dlWash" className='checkbox-label'>Dirt-Less Wash</label>
 
                             <input type="checkbox" id='pdlWash' name="premium dirtless wash" className='checkbox-input' />
-                            <label htmlFor="pdlWash" className='checkbox-label'>Premium Dirt-Less Wash</label>
+                            <label htmlFor="pdlWash" className='checkbox-label'>Premium Dirt-Less Wash</label> */}
+                            <input type="radio" name="exteriorWash" id="Dirt-Less Wash" value="Dirt-Less Wash" className='radio-button' />
+                            <label htmlFor="Dirt-Less Wash" className='checkbox-label'>Dirt-Less Wash</label>
+                            <input type="radio" name="exteriorWash" id="Premium Wash" value="Premium Dirt-Less Wash" className='radio-button' />
+                            <label htmlFor="Premium Wash" className='checkbox-label'>Premium Dirt-Less Wash</label>
                         </div>
                         <hr className="contact-border" />
 
@@ -571,11 +590,16 @@ export default function Contact() {
                     <div className="form-section">
                         <p className='form-section-heading'>Paint Correction Services <a href='/services/single-stage-correction' className='aside-link'><BiLinkExternal /></a></p>
                         <div>
-                            <input type="checkbox" id='singlePC' name="singlePC" className='checkbox-input' disabled={!coatingSelected ? "" : "disabled"} />
+                            {/* <input type="checkbox" id='singlePC' name="singlePC" className='checkbox-input' disabled={!coatingSelected ? "" : "disabled"} />
                             <label title="Automatically included with either of the Ceramic Coating packages." htmlFor="singlePC" className='checkbox-label'>Single Stage Paint Correction</label>
 
                             <input type="checkbox" id='twoPC' name="twoPC" className='checkbox-input' />
-                            <label htmlFor="twoPC" className='checkbox-label' style={{ marginBottom: 16 }}>Two Stage Paint Correction</label>
+                            <label htmlFor="twoPC" className='checkbox-label' style={{ marginBottom: 16 }}>Two Stage Paint Correction</label> */}
+
+                            <input type="radio" name="paintCorrection" id="Single" value="Single Stage" className='radio-button' />
+                            <label htmlFor="Single" className='checkbox-label'>Single Stage Paint Correction</label>
+                            <input type="radio" name="paintCorrection" id="Two" value="Two Stage" className='radio-button' />
+                            <label htmlFor="Two" className='checkbox-label'>Two Stage Paint Correction</label>
                         </div>
                         <hr className="contact-border" />
 
@@ -585,6 +609,29 @@ export default function Contact() {
                             <label htmlFor="glassCorrection" className='checkbox-label'>Glass Polishing</label>
                         </div>
                         <input type="hidden" name="_gotcha" style={{ display: 'none !important' }} />
+                    </div>
+
+                    <div className="form-section">
+                        <p className="form-section-heading">Maintenance Options <a href='/services/exterior-ceramic-coating' className='aside-link'><BiLinkExternal /></a></p>
+                        <div>
+                            <input type="checkbox" name="monthly" id='monthly' className='checkbox-input' />
+                            <label htmlFor="monthly" className='checkbox-label'>Monthly Maintenance</label>
+
+                            <input type="checkbox" name="yearly" id='yearly' className='checkbox-input' />
+                            <label htmlFor="yearly" className='checkbox-label'>Yearly Maintenance</label>
+
+                            <input type="checkbox" name="trim-recoat" id='trim-recoat' className='checkbox-input' />
+                            <label htmlFor="trim-recoat" className='checkbox-label'>Trim Re-coating</label>
+
+                            <input type="checkbox" name="wheel-recoat" id='wheel-recoat' className='checkbox-input' />
+                            <label htmlFor="wheel-recoat" className='checkbox-label'>Wheel Faces Re-coating</label>
+
+                            <input type="checkbox" name="fabric-recoat" id='fabric-recoat' className='checkbox-input' />
+                            <label htmlFor="fabric-recoat" className='checkbox-label'>Fabric Re-coating</label>
+
+                            <input type="checkbox" name="leather-recoat" id='leather-recoat' className='checkbox-input' />
+                            <label htmlFor="leather-recoat" className='checkbox-label'>Leather Re-coating</label>
+                        </div>
                     </div>
 
                     <button className='submit-button'>Submit Quote Form!</button>
