@@ -5,6 +5,7 @@ import Metatags from '../utils/Metatags';
 import 'react-toastify/dist/ReactToastify.css';
 
 import { FaPhoneAlt, FaFacebookMessenger, FaClock } from 'react-icons/fa';
+import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 import { AiFillGift } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import { MdOutlineEmail } from 'react-icons/md';
@@ -24,7 +25,55 @@ export default function Contact() {
     const formSubmit = (e) => {
         e.preventDefault();
 
+        // const formInfo = {
+        //     "For Myself": e.target['myself'].checked ? 'Yes' : 'No',
+        //     "Gift Card": e.target['someone'].checked ? 'Yes' : 'No',
+        //     "Name": e.target['name'].value,
+        //     "Email": e.target['email'].value,
+        //     "Phone": phoneNumber,
+        //     "Year": e.target['year'].value,
+        //     "Make": e.target['make'].value,
+        //     "Model": e.target['model'].value,
+        //     "Message": e.target['message'].value,
+
+        //     "Combo": e.target['combo'].checked ? 'Yes' : 'No',
+
+        //     "Full Interior With Extraction": e.target['fullIntEx'].checked ? 'Yes' : 'No',
+        //     "Full Interior Without Extraction": e.target['fullInterior'].checked ? 'Yes' : 'No',
+        //     "Biohazard Cleaning": e.target['bio'].checked ? 'Yes' : 'No',
+        //     "Fabric Coating": e.target['fabric'].checked ? 'Yes' : 'No',
+        //     "Leather Coating": e.target['leather'].checked ? 'Yes' : 'No',
+        //     "Headliners": e.target['headliners'].checked ? 'Yes' : 'No',
+        //     "Ozone": e.target['ozone'].checked ? 'Yes' : 'No',
+        //     "Dirtiness": e.target['dirtiness'].value,
+        //     "Dog Hair": e.target['dogHair'].value,
+
+        //     "Protect Package": e.target['protect'].checked ? 'Yes' : 'No',
+        //     "Protect+ Package": e.target['protect+'].checked ? 'Yes' : 'No',
+        //     "Monthly Maintenance": e.target['monthly'].checked ? 'Yes' : 'No',
+        //     "Yearly Maintenance": e.target['yearly'].checked ? 'Yes' : 'No',
+
+        //     "Fabric re-coating": e.target['fabric-recoat'].checked ? 'Yes' : 'No',
+        //     "Trim re-coating": e.target['trim-recoat'].checked ? 'Yes' : 'No',
+        //     "Leather re-coating": e.target['leather-recoat'].checked ? 'Yes' : 'No',
+        //     "Wheel Faces re-coating": e.target['wheel-recoat'].checked ? 'Yes' : 'No',
+
+        //     "Dirt-Less Wash": e.target['dlWash'].checked ? 'Yes' : 'No',
+        //     "Premium Dirt-Less Wash": e.target['pdlWash'].checked ? 'Yes' : 'No',
+        //     "Engine Bay": e.target['engine'].checked ? 'Yes' : 'No',
+        //     "Glass Polishing (Exterior Add-on)": e.target['glassEx'].checked ? 'Yes' : 'No',
+        //     "Waterspot Removal (Exterior Add-on)": e.target['waterspotEx'].checked ? 'Yes' : 'No',
+        //     "Truck Bed Cleaning": e.target['truckBed'].checked ? 'Yes' : 'No',
+        //     "Debadging": e.target['debadge'].checked ? 'Yes' : 'No',
+
+        //     "Single Stage Paint Correction": e.target['singlePC'].checked ? 'Yes' : 'No',
+        //     "Two Stage Paint Correction": e.target['twoPC'].checked ? 'Yes' : 'No',
+        //     "Glass Polishing (Correction Add-on)": e.target['glassCorrection'].checked ? 'Yes' : 'No'
+        // }
+
         const formInfo = {
+            "For Myself": e.target['myself'].checked ? 'Yes' : 'No',
+            "Gift Card": e.target['someone'].checked ? 'Yes' : 'No',
             "Name": e.target['name'].value,
             "Email": e.target['email'].value,
             "Phone": phoneNumber,
@@ -32,74 +81,59 @@ export default function Contact() {
             "Make": e.target['make'].value,
             "Model": e.target['model'].value,
             "Message": e.target['message'].value,
-            "For Myself": e.target['myself'].checked ? 'Yes' : 'No',
-            "Gift Card": e.target['someone'].checked ? 'Yes' : 'No',
-            "Combo": e.target['combo'].checked ? 'Yes' : 'No',
-            "Full Interior With Extraction": e.target['fullIntEx'].checked ? 'Yes' : 'No',
-            "Full Interior Without Extraction": e.target['fullInterior'].checked ? 'Yes' : 'No',
-            "Biohazard Cleaning": e.target['bio'].checked ? 'Yes' : 'No',
-            "Fabric Coating": e.target['fabric'].checked ? 'Yes' : 'No',
-            "Leather Coating": e.target['leather'].checked ? 'Yes' : 'No',
-            "Headliners": e.target['headliners'].checked ? 'Yes' : 'No',
-            "Ozone": e.target['ozone'].checked ? 'Yes' : 'No',
-            "Dirtiness": e.target['dirtiness'].value,
-            "Dog Hair": e.target['dogHair'].value,
-            "Dirt-Less Wash": e.target['dlWash'].checked ? 'Yes' : 'No',
-            "Premium Dirt-Less Wash": e.target['pdlWash'].checked ? 'Yes' : 'No',
-            "Protect Package": e.target['protect'].checked ? 'Yes' : 'No',
-            "Protect+ Package": e.target['protect+'].checked ? 'Yes' : 'No',
-            "Monthly Maintenance": e.target['monthly'].checked ? 'Yes' : 'No',
-            "Yearly Maintenance": e.target['yearly'].checked ? 'Yes' : 'No',
-            "Engine Bay": e.target['engine'].checked ? 'Yes' : 'No',
-            "Glass Polishing (Exterior Add-on)": e.target['glassEx'].checked ? 'Yes' : 'No',
-            "Waterspot Removal (Exterior Add-on)": e.target['waterspotEx'].checked ? 'Yes' : 'No',
-            "Truck Bed Cleaning": e.target['truckBed'].checked ? 'Yes' : 'No',
-            "Debadging": e.target['debadge'].checked ? 'Yes' : 'No',
-            "Fabric re-coating": e.target['fabric-recoat'].checked ? 'Yes' : 'No',
-            "Trim re-coating": e.target['trim-recoat'].checked ? 'Yes' : 'No',
-            "Leather re-coating": e.target['leather-recoat'].checked ? 'Yes' : 'No',
-            "Wheel Faces re-coating": e.target['wheel-recoat'].checked ? 'Yes' : 'No',
-            "Single Stage Paint Correction": e.target['singlePC'].checked ? 'Yes' : 'No',
-            "Two Stage Paint Correction": e.target['twoPC'].checked ? 'Yes' : 'No',
-            "Glass Polishing (Correction Add-on)": e.target['glassCorrection'].checked ? 'Yes' : 'No'
+
+            "Exterior Coating": e.target['exteriorCoating'].value,
         }
 
         const formData = new FormData();
+        // Object.entries(formInfo).forEach(([key, value]) => {
+        //     if (key === "Name" || key === "Email" || key === "Message" || key === "Dirtiness" || key === "Dog Hair" || key === "Phone" || key === "Year" || key === "Make" || key === "Model") {
+        //         formData.append(key, value);
+        //     } else if (value === 'Yes') {
+        //         formData.append(key, value);
+        //     }
+        // });
         Object.entries(formInfo).forEach(([key, value]) => {
-            if (key === "Name" || key === "Email" || key === "Message" || key === "Dirtiness" || key === "Dog Hair" || key === "Phone" || key === "Year" || key === "Make" || key === "Model") {
+            if (key === "Name" || key === "Email" || key === "Message" || key === "Phone" || key === "Year" || key === "Make" || key === "Model") {
                 formData.append(key, value);
+            } else if (key === 'exteriorCoating') {
+                console.log(value)
+                if (value !== '') {
+                }
             } else if (value === 'Yes') {
                 formData.append(key, value);
             }
         });
 
-        fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
-            method: "POST",
-            body: formData
-        }).then((test) => {
-            toast.success("Form submitted! Expect an email, text, or phone call soon!", {
-                position: "bottom-center",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined
-            })
-            e.target.reset()
-        setPhoneNumber('')
-            window.scrollTo(0, 0)
-        }).catch(error => {
-            toast.error("An error occurred, please try again." + error, {
-                position: "bottom-center",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined
-            })
-        });
+        console.log(formData)
+
+        // fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
+        //     method: "POST",
+        //     body: formData
+        // }).then((test) => {
+        //     toast.success("Form submitted! Expect an email, text, or phone call soon!", {
+        //         position: "bottom-center",
+        //         autoClose: 5000,
+        //         hideProgressBar: false,
+        //         closeOnClick: true,
+        //         pauseOnHover: true,
+        //         draggable: true,
+        //         progress: undefined
+        //     })
+        //     e.target.reset()
+        // setPhoneNumber('')
+        //     window.scrollTo(0, 0)
+        // }).catch(error => {
+        //     toast.error("An error occurred, please try again." + error, {
+        //         position: "bottom-center",
+        //         autoClose: 5000,
+        //         hideProgressBar: false,
+        //         closeOnClick: true,
+        //         pauseOnHover: true,
+        //         draggable: true,
+        //         progress: undefined
+        //     })
+        // });
     };
 
     let handleGiftSelect = (giftButton) => {
@@ -195,7 +229,7 @@ export default function Contact() {
                     </div>
                     <hr className="contact-border" />
                     <div className='contact-icon-container'>
-                        <FaPhoneAlt className='contact-icon' />
+                        <MdOutlinePermPhoneMsg className='contact-icon' />
                         <a className='contact-link location-link' href="tel:2532529758" target="_blank" rel="noopener">(253) 252-9758</a><p style={{ display: 'inline' }}> (Text or Call)</p>
                     </div>
                     <hr className="contact-border" />
@@ -216,12 +250,22 @@ export default function Contact() {
                 <form className="form" onSubmit={(e) => formSubmit(e)} ref={formRef} autoComplete="on">
                     <div className="form-section form-top-section">
                         <div>
-                            <label htmlFor="name" className='text-input-label'>Name<span className='special-package'>*</span></label>
-                            <input type="text" id="name" name="name" className='text-input' placeholder="Name" required />
-                            <label htmlFor="email" className='text-input-label'>Email<span className='special-package'>*</span></label>
-                            <input type="email" id="email" name="email" className='text-input' placeholder="Email" required />
-                            <label htmlFor="phone" className='text-input-label'>Phone Number<span className='special-package'>*</span></label>
-                            <input type="tel" id="phone" name="phone" pattern="\(\d{3}\) \d{3}-\d{4}" value={phoneNumber} onChange={(e) => handlePhoneNumber(e)} className='text-input' placeholder="Ex. (111) 111-1111" required />
+                            <div>
+                                <input type="checkbox" name="myself" id='myself' className='checkbox-input' onChange={() => handleGiftSelect(false)} checked={gift ? false : true} />
+                                <label htmlFor="myself" className='checkbox-label'>For Myself</label>
+                                <input type="checkbox" name="someone" id='someone' className='checkbox-input' onChange={() => handleGiftSelect(true)} checked={gift ? true : false} />
+                                <label htmlFor="someone" className='checkbox-label'>For Someone Else</label>
+                            </div>
+                            <p style={{textAlign: 'left', marginTop: 0, display: gift ? 'block' : 'none'}}>* When buying a gift certificate for someone else fill out YOUR contact information, but THEIR vehicle information (or as much as you know about their vehicle). We'll then get in contact with you to get the gift card to you!</p>
+                            
+                            <div>
+                                <label htmlFor="name" className='text-input-label'>Name<span className='special-package'>*</span></label>
+                                <input type="text" id="name" name="name" className='text-input' placeholder="Name" required />
+                                <label htmlFor="email" className='text-input-label'>Email<span className='special-package'>*</span></label>
+                                <input type="email" id="email" name="email" className='text-input' placeholder="Email" required />
+                                <label htmlFor="phone" className='text-input-label'>Phone Number<span className='special-package'>*</span></label>
+                                <input type="tel" id="phone" name="phone" pattern="\(\d{3}\) \d{3}-\d{4}" value={phoneNumber} onChange={(e) => handlePhoneNumber(e)} className='text-input' placeholder="Ex. (111) 111-1111" required />
+                            </div>
 
                             <div className='select-field'>
                                 <label htmlFor="year" className='text-input-label'>Year<span className='special-package'>*</span></label>
@@ -389,24 +433,21 @@ export default function Contact() {
                                 <textarea type="textarea" name="message" id='message' className='textarea' placeholder='Do you want our mobile service or to schedule a drop off? Do you have any other questions/concerns?' />
                             </div>
 
-                            <div>
-                                <input type="checkbox" name="myself" id='myself' className='checkbox-input' onChange={() => handleGiftSelect(false)} checked={gift ? false : true} />
-                                <label htmlFor="myself" className='checkbox-label'>For Myself</label>
-                                <input type="checkbox" name="someone" id='someone' className='checkbox-input' onChange={() => handleGiftSelect(true)} checked={gift ? true : false} />
-                                <label htmlFor="someone" className='checkbox-label'>For Someone Else</label>
-                            </div>
-                            <p style={{textAlign: 'left', marginTop: 0, display: gift ? 'block' : 'none'}}>* When buying a gift certificate for someone else fill out your contact information, but their vehicle information (or as much as you know about their vehicle). We'll then get in contact with you to get the gift card to you!</p>
                         </div>
                     </div>
 
                     <div className="form-section">
                         <p className='form-section-heading'>Ceramic Coating Services <a href='/services/exterior-ceramic-coating' className='aside-link'><BiLinkExternal /></a></p>
                         <div>
-                            <input type="checkbox" name="protect" id='protect' className='checkbox-input' onClick={() => handleIntSelect()} />
+                            {/* <input type="checkbox" name="protect" id='protect' className='checkbox-input' onClick={() => handleIntSelect()} />
                             <label title="Will automatically include a Single Stage Paint Correction." htmlFor="protect" className='checkbox-label'>Protect Ceramic Package</label>
 
                             <input type="checkbox" name="protect+" id='protect+' className='checkbox-input' onClick={() => handleIntSelect()} />
-                            <label title="Will automatically include a Single Stage Paint Correction." htmlFor="protect+" className='checkbox-label'>Protect<span className='special-package'>+</span> Ceramic Package</label>
+                            <label title="Will automatically include a Single Stage Paint Correction." htmlFor="protect+" className='checkbox-label'>Protect<span className='special-package'>+</span> Ceramic Package</label> */}
+                            <input type="radio" name="exteriorCoating" id="Protect" className='radio-button' />
+                            <label htmlFor="Protect" className='checkbox-label'>Protect</label>
+                            <input type="radio" name="exteriorCoating" id="Protect+" className='radio-button' />
+                            <label htmlFor="Protect+" className='checkbox-label'>Protect<span className='special-package'>+</span></label>
                         </div>
                     </div>
 
