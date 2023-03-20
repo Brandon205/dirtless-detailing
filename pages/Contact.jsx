@@ -565,7 +565,7 @@ export default function Contact() {
                         </div>
                         <hr className="contact-border" />
 
-                        <p className="form-section-heading">Vehicle Dirtiness</p>
+                        <p className="form-section-heading">Vehicle Dirtiness<span className='special-package'>*</span></p>
                         {/* <input type="range" name="dirtiness" id="dirtiness" min="1" max="5" step="1" list="dirtiness-tickmarks" /> */}
                         {/* <datalist id="dirtiness-tickmarks">
                             <option value="1" aria-readonly label="Pretty Clean"></option>
@@ -584,7 +584,7 @@ export default function Contact() {
                             <option value="5" aria-readonly label="Lots of Hair"></option>
                         </datalist> */}
                         <div>
-                            <input type="checkbox" name="dirtiness" id="Pretty Clean" value="Pretty Clean" className='radio-button' onChange={(e) => handleRadioClick(e, 'dirtiness')} checked={dirtiness === "Pretty Clean"} />
+                            <input type="checkbox" name="dirtiness" id="Pretty Clean" value="Pretty Clean" className='radio-button' onChange={(e) => handleRadioClick(e, 'dirtiness')} checked={dirtiness === "Pretty Clean"} required />
                             <label htmlFor="Pretty Clean" className='dirty-label' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3031c630-d6f2-48fc-1bb4-62844fbd5a00/public')`}}>Pretty Clean</label>
                             <input type="checkbox" name="dirtiness" id="Normal Use" value="Normal Use" className='radio-button' onChange={(e) => handleRadioClick(e, 'dirtiness')} checked={dirtiness === "Normal Use"} />
                             <label htmlFor="Normal Use" className='dirty-label' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3031c630-d6f2-48fc-1bb4-62844fbd5a00/public')`}}>Normal Use</label>
@@ -592,9 +592,9 @@ export default function Contact() {
                             <label htmlFor="Very Dirty" className='dirty-label' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/70e54f6b-a9f8-48aa-a9af-893776082400/public')`}}>Very Dirty</label>
                         </div>
 
-                        <p className="form-section-heading">Dog Hair Amount</p>
+                        <p className="form-section-heading">Dog Hair Amount<span className='special-package'>*</span></p>
                         <div>
-                            <input type="checkbox" name="dogHair" id="Little to None" value="Little to None" className='radio-button' onChange={(e) => handleRadioClick(e, 'dogHair')} checked={dogHair === "Little to None"} />
+                            <input type="checkbox" name="dogHair" id="Little to None" value="Little to None" className='radio-button' onChange={(e) => handleRadioClick(e, 'dogHair')} checked={dogHair === "Little to None"} required />
                             <label htmlFor="Little to None" className='dirty-label' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3031c630-d6f2-48fc-1bb4-62844fbd5a00/public')`}}>Little to No Dog Hair</label>
                             <input type="checkbox" name="dogHair" id="Medium Hair" value="Medium Hair" className='radio-button' onChange={(e) => handleRadioClick(e, 'dogHair')} checked={dogHair === "Medium Hair"} />
                             <label htmlFor="Medium Hair" className='dirty-label' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3031c630-d6f2-48fc-1bb4-62844fbd5a00/public')`}}>Medium Amount of Dog Hair</label>
