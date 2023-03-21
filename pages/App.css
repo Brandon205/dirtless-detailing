@@ -546,7 +546,7 @@ option {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  filter: blur
+  cursor: pointer;
 }
 
 .radio-button {
