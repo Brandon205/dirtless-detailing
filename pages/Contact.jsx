@@ -480,9 +480,9 @@ export default function Contact() {
                         <p className='form-section-heading'>Interior Cleaning Services <a href='/services/full-interior-detail' className='aside-link'><BiLinkExternal /></a></p>
                         <div>
                             <input type="checkbox" name="interiorCleaning" id="FullInt" value="Full Interior Without Extraction" className='radio-button' onChange={(e) => {handleRadioClick(e, 'interiorCleaning'); handleIntSelect()}} checked={interiorCleaning === "FullInt"} />
-                            <label htmlFor="FullInt" className='checkbox-label'>Full Interior Without Extraction <span className='special-package italic'>($250-$300)</span></label>
+                            <label htmlFor="FullInt" className='checkbox-label'>Full Interior Without Extraction <span className='special-package italic'>($300-$400)</span></label>
                             <input type="checkbox" name="interiorCleaning" id="FullIntEx" value="Full Interior With Extraction" className='radio-button' onChange={(e) => {handleRadioClick(e, 'interiorCleaning'); handleIntSelect()}} checked={interiorCleaning === "FullIntEx"} />
-                            <label htmlFor="FullIntEx" className='checkbox-label'>Full Interior With Extraction <span className='special-package italic'>($300-$400)</span></label>
+                            <label htmlFor="FullIntEx" className='checkbox-label'>Full Interior With Extraction <span className='special-package italic'>($350-$500)</span></label>     
                             <input type="checkbox" name="interiorCleaning" id="Bio" value="Biohazard Cleaning" className='radio-button' onChange={(e) => {handleRadioClick(e, 'interiorCleaning'); handleIntSelect()}} checked={interiorCleaning === "Bio"} />
                             <label htmlFor="Bio" className='checkbox-label'>Biohazard Cleaning <span className='special-package italic'>($400-$1,000)</span></label>
 
