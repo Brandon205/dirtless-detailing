@@ -10,7 +10,7 @@ export default function Addons() {
         <title>Dirt-Less Add-ons | Dirt-Less Detailing</title>
         <Metatags
           title='Dirt-Less Add-ons | Dirt-Less Detailing'
-          description='Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment • Truck Bed Cleaning • Debadging • Headliners • Engine Bay Cleaning.'
+          description='Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment • Debadging • Engine Bay Cleaning.'
           image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ddb3cc29-1d60-4676-48d8-f86bdcfc5c00/public'
           canonical='/services/add-ons'
         />
@@ -24,18 +24,6 @@ export default function Addons() {
             "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ddb3cc29-1d60-4676-48d8-f86bdcfc5c00/public",
             "url": "https://www.dirtlessdetailing.com/services/add-ons/",
             "offers": [
-              {
-                "@type": "Offer",
-                "priceCurrency": "USD",
-                "price": "25",
-                "availability": "http://schema.org/InStock",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Truck Bed Washing Service",
-                  "serviceType": "Truck Bed Wash",
-                  "providerMobility": "dynamic"
-                }
-              },
               {
                 "@type": "Offer",
                 "priceCurrency": "USD",
@@ -87,25 +75,6 @@ export default function Addons() {
               {
                 "@type": "Offer",
                 "priceCurrency": "USD",
-                "price": "40",
-                "priceSpecification": {
-                  "@type": "PriceSpecification",
-                  "priceCurrency": "USD",
-                  "price": "40",
-                  "minPrice": "40",
-                  "maxPrice": "80"
-                },
-                "availability": "http://schema.org/InStock",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Headliner Cleaning Service",
-                  "serviceType": "Headliner Cleaning",
-                  "providerMobility": "dynamic"
-                }
-              },
-              {
-                "@type": "Offer",
-                "priceCurrency": "USD",
                 "price": "100",
                 "availability": "http://schema.org/InStock",
                 "itemOffered": {
@@ -122,7 +91,7 @@ export default function Addons() {
       <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ddb3cc29-1d60-4676-48d8-f86bdcfc5c00/cover')`}}></div>
       <div className="servicepage-header">
         <h1>Dirt-Less Detailing Add-ons</h1>
-        <h2 className='page-subheading'>Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment • Truck Bed Cleaning • Debadging • Headliners • Engine Bay Cleaning.</h2>
+        <h2 className='page-subheading'>Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment • Debadging • Engine Bay Cleaning.</h2>
         <div className='header-buttons'>
           <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
           <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
@@ -133,20 +102,6 @@ export default function Addons() {
       <div className="addon-content-container">
 
         <h3 className='addons-subheading' id='exterior'>Exterior Add-ons:</h3>
-        <div className="feature-section" id="truck">
-          <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/546a9fca-8e03-4f4e-eb3d-0885817bb500/public')`}}></div>
-          <div className="feature-desc-area">
-            <p className='service-heading-subtitle'>Truck Bed Cleaning</p>
-            <p className="secondary-text"><span>$25</span></p>
-            <p className="service-desc text-white">This is our add-on to get your truck bed cleaned out. Can be added to either of our Dirt-Less Washes.</p>
-            <div className='internal-links'>
-              <a href="/services/dirtless-wash" className="readmore">Dirt-Less Wash</a>
-              <a href="/services/premium-dirtless-wash" className="readmore">Premium Dirt-Less Wash</a>
-            </div>
-          </div>
-        </div>
-        <hr className='contact-border' />
-
         <div className="feature-section" id="engine">
           <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/8ae09f8b-9ace-4f48-265a-5ac051eaf400/public')`}}></div>
 
@@ -209,20 +164,6 @@ export default function Addons() {
         <hr className='contact-border' />
 
         <h3 className='addons-subheading' id='interior'>Interior Add-ons:</h3>
-        <div className="feature-section" id="headliners">
-          <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d9975368-5cef-4bcb-4646-75b2783c8900/public')`}}></div>
-          <div className="feature-desc-area">
-            <p className='service-heading-subtitle'>Headliner Cleaning</p>
-            <p className="secondary-text"><span>$40-$80</span></p>
-            <p className="service-desc text-white">We will perform cleaning methods specific to your vehicles headliner material. We do this to prevent sagging and damage to the headliners. (Results may vary).</p>
-            <div className='internal-links'>
-              <a href="/services/full-interior-detail" className="readmore">Full Interior Cleaning</a>
-              <a href="/services/biohazard-cleaning" className="readmore">Biohazard Cleaning</a>
-            </div>
-          </div>
-        </div>
-        <hr className='contact-border' />
-
         <div className="feature-section" id="ozone">
           <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/1da88e3b-77d3-43da-6f00-e7af4b914000/public')`}}></div>
           <div className="feature-desc-area">

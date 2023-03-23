@@ -104,13 +104,6 @@ export default function exteriorWash() {
 
         <br className='extra-space' />
 
-        <h2 className='text-large'>Truck Bed Cleaning - <span className="special-package">$25</span></h2>
-        <div className="text-left">
-          <p>Typically in our washes we don't clean out truck beds, but if you want us to this is just the add-on for you. We will fully rinse out and clean any size truck bed.</p>
-        </div>
-
-        <br className='extra-space' />
-
         <h2 className='text-large'>Engine Bay Wash - <span className="special-package">$80</span></h2>
         <div className="text-left">
           <p>Give your engine bay a cleaning with this add-on. When washing engine bays we cover and take care of any and all electronics and other sensitive areas of the engine bay so there's nothing to worry about.</p>

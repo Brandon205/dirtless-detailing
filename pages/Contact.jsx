@@ -51,13 +51,11 @@ export default function Contact() {
             "Interior Cleaning": formRef.current['FullInt'].checked ? 'Full Interior Without Extraction' : formRef.current['FullIntEx'].checked ? 'Full Interior With Extraction' : formRef.current['Bio'].checked ? 'Biohazard Cleaning' : '',
             "Fabric Coating": e.target['fabric'].checked ? 'Yes' : 'No',
             "Leather Coating": e.target['leather'].checked ? 'Yes' : 'No',
-            "Headliners": e.target['headliners'].checked ? 'Yes' : 'No',
             "Ozone": e.target['ozone'].checked ? 'Yes' : 'No',
             "Dirtiness": formRef.current['Pretty Clean'].checked ? 'Pretty Clean' : formRef.current['Normal Use'].checked ? 'Normal Use' : formRef.current['Very Dirty'].checked ? 'Very Dirty' : '',
             "Dog Hair": formRef.current['Little to None'].checked ? 'Little to None' : formRef.current['Medium Hair'].checked ? 'Medium Hair' : formRef.current['Lots of Hair'].checked ? 'Lots of Hair' : '',
 
             "Exterior Wash": formRef.current['Dirt-Less Wash'].checked ? 'Dirt-Less Wash' : formRef.current['Premium Wash'].checked ? 'Premium Dirt-Less Wash' : '',
-            "Truck Bed Cleaning": e.target['truckBed'].checked ? 'Yes' : 'No',
             "Engine Bay": e.target['engine'].checked ? 'Yes' : 'No',
             "Glass Polishing": e.target['glassEx'].checked ? 'Yes' : 'No',
             "Waterspot Removal": e.target['waterspotEx'].checked ? 'Yes' : 'No',
@@ -500,16 +498,13 @@ export default function Contact() {
                             <input type="checkbox" name="leather" id='leather' className={'checkbox-input'} disabled={!intSelected ? "disabled" : ""} />
                             <label title="Need to have an Interior Cleaning option selected." htmlFor="leather" className='checkbox-label'>Leather Coating <span className='special-package italic'>($150)</span></label>
 
-                            <input type="checkbox" id='headliners' name="headliners" className='checkbox-input' />
-                            <label htmlFor="headliners" className='checkbox-label'>Headliners <span className='special-package italic'>($40-$80)</span></label>
-
                             <input type="checkbox" id='ozone' name="ozone" className='checkbox-input' />
                             <label htmlFor="ozone" className='checkbox-label'>Ozone Treatment <span className='special-package italic'>($100)</span></label>
                         </div>
                         <hr className="contact-border" />
 
                         <p className="form-section-heading">Vehicle Interior Dirtiness{intSelected ? <span className='special-package'>*</span> : ''}</p>
-                        <p style={{ marginTop: 0, }}>(Only required when an Interior Cleaning is selected)</p>
+                        <p style={{ marginTop: 0 }}>(Only required when an Interior Cleaning is selected)</p>
                         <div style={{display: 'flex', justifyContent: 'center', gap: '1rem'}}>
                             <div className="label-container">
                                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d69dedc8-dfb3-47bd-80f3-8e76256dfb00/public')`}} className="label-image"></div>
@@ -542,7 +537,7 @@ export default function Contact() {
                                 <label htmlFor="Medium Hair" className='dirty-label' style={{color: 'yellow'}}>Medium Amount</label>
                             </div>
                             <div className="label-container">
-                                <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3a9162a5-972e-4ab1-9c15-0309139ece00/public')`}} className="label-image"></div>
+                                <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5153d5b2-eae0-4675-361f-5d761349b500/public')`}} className="label-image"></div>
                                 <input type="checkbox" name="dogHair" id="Lots of Hair" value="Lots of Hair" className='radio-button' onChange={(e) => handleRadioClick(e, 'dogHair')} checked={dogHair === "Lots of Hair"} />
                                 <label htmlFor="Lots of Hair" className='dirty-label' style={{color: 'red'}}>Plenty of Hair</label>
                             </div>
@@ -562,9 +557,6 @@ export default function Contact() {
 
                         <p className="form-section-heading">Exterior Add-ons <a href='/services/add-ons#exterior' className='aside-link'><BiLinkExternal /></a></p>
                         <div>
-                            <input type="checkbox" id='truckBed' name="truckBed" className='checkbox-input' />
-                            <label htmlFor="truckBed" className='checkbox-label'>Truck Bed Cleaning <span className='special-package italic'>($25)</span></label>
-
                             <input type="checkbox" id='engine' name="engine" className='checkbox-input' />
                             <label htmlFor="engine" className='checkbox-label' style={{ marginBottom: 16 }}>Engine Bay <span className='special-package italic'>($80)</span></label>
 

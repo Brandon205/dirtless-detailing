@@ -1656,6 +1656,12 @@ hr {
   padding: 1rem 0;
 }
 
+.ninety-nine {
+  position: absolute;
+  font-size: 1.8rem;
+  top: 0;
+}
+
 .special-package {
   color: var(--main-clr);
 }
@@ -1775,6 +1781,10 @@ hr {
 
 .inline {
   display: block;
+}
+
+.text-addition {
+  font-size: 1em;
 }
 
 .text-small {
