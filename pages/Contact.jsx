@@ -84,35 +84,33 @@ export default function Contact() {
             }
         });
 
-        console.log(formData)
-
-        // fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
-        //     method: "POST",
-        //     body: formData
-        // }).then((test) => {
-        //     toast.success("Form submitted! Expect a text response from us soon!", {
-        //         position: "bottom-center",
-        //         autoClose: 5000,
-        //         hideProgressBar: false,
-        //         closeOnClick: true,
-        //         pauseOnHover: true,
-        //         draggable: true,
-        //         progress: undefined
-        //     })
-        //     e.target.reset()
-        // setPhoneNumber('')
-        //     window.scrollTo(0, 0)
-        // }).catch(error => {
-        //     toast.error("An error occurred, please try again." + error, {
-        //         position: "bottom-center",
-        //         autoClose: 5000,
-        //         hideProgressBar: false,
-        //         closeOnClick: true,
-        //         pauseOnHover: true,
-        //         draggable: true,
-        //         progress: undefined
-        //     })
-        // });
+        fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
+            method: "POST",
+            body: formData
+        }).then((test) => {
+            toast.success("Form submitted! Expect a text response from us soon!", {
+                position: "bottom-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined
+            })
+            e.target.reset()
+        setPhoneNumber('')
+            window.scrollTo(0, 0)
+        }).catch(error => {
+            toast.error("An error occurred, please try again." + error, {
+                position: "bottom-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined
+            })
+        });
     };
 
     let handleGiftSelect = (giftButton) => {
@@ -514,17 +512,17 @@ export default function Contact() {
                         <p style={{ marginTop: 0, }}>(Only required when an Interior Cleaning is selected)</p>
                         <div style={{display: 'flex', justifyContent: 'center', gap: '1rem'}}>
                             <div className="label-container">
-                                <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2e80678b-26bd-4943-13c4-686560fbe600/public')`}} className="label-image"></div>
+                                <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d69dedc8-dfb3-47bd-80f3-8e76256dfb00/public')`}} className="label-image"></div>
                                 <input type="checkbox" name="dirtiness" id="Pretty Clean" value="Pretty Clean" className='radio-button' onChange={(e) => handleRadioClick(e, 'dirtiness')} checked={dirtiness === "Pretty Clean"} />
                                 <label htmlFor="Pretty Clean" className='dirty-label' style={{color: 'green'}}>Pretty Clean</label>
                             </div>
                             <div className='label-container'>
-                                <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2e80678b-26bd-4943-13c4-686560fbe600/public')`}} className="label-image"></div>
+                                <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7ab9a475-7d86-4a02-22d8-086cdf595200/public')`}} className="label-image"></div>
                                 <input type="checkbox" name="dirtiness" id="Normal Use" value="Normal Use" className='radio-button' onChange={(e) => handleRadioClick(e, 'dirtiness')} checked={dirtiness === "Normal Use"} />
                                 <label htmlFor="Normal Use" className='dirty-label' style={{color: 'yellow'}}>Normal Use</label>
                             </div>
                             <div className="label-container">
-                                <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/70e54f6b-a9f8-48aa-a9af-893776082400/public')`}} className="label-image"></div>
+                                <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f06c6b85-4960-420b-0948-e14d69910a00/public')`}} className="label-image"></div>
                                 <input type="checkbox" name="dirtiness" id="Very Dirty" value="Very Dirty" className='radio-button' onChange={(e) => handleRadioClick(e, 'dirtiness')} checked={dirtiness === "Very Dirty"} />
                                 <label htmlFor="Very Dirty" className='dirty-label' style={{color: 'red'}}>Very Dirty</label>
                             </div>
@@ -534,19 +532,19 @@ export default function Contact() {
                         <p style={{ marginTop: 0, }}>(Only required when an Interior Cleaning is selected)</p>
                         <div style={{display: 'flex', justifyContent: 'center', gap: '1rem'}}>
                             <div className="label-container">
-                                <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2e80678b-26bd-4943-13c4-686560fbe600/public')`}} className="label-image"></div>
+                                <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/264a9c3b-d6cd-4575-132a-80d4450cdc00/public')`}} className="label-image"></div>
                                 <input type="checkbox" name="dogHair" id="Little to None" value="Little to None" className='radio-button' onChange={(e) => handleRadioClick(e, 'dogHair')} checked={dogHair === "Little to None"} />
                                 <label htmlFor="Little to None" className='dirty-label' style={{color: 'green'}}>Little to None</label>
                             </div>
                             <div className="label-container">
-                                <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2e80678b-26bd-4943-13c4-686560fbe600/public')`}} className="label-image"></div>
+                                <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/53860f31-e2a6-409d-fc5f-018eb1580e00/public')`}} className="label-image"></div>
                                 <input type="checkbox" name="dogHair" id="Medium Hair" value="Medium Hair" className='radio-button' onChange={(e) => handleRadioClick(e, 'dogHair')} checked={dogHair === "Medium Hair"} />
                                 <label htmlFor="Medium Hair" className='dirty-label' style={{color: 'yellow'}}>Medium Amount</label>
                             </div>
                             <div className="label-container">
-                                <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2e80678b-26bd-4943-13c4-686560fbe600/public')`}} className="label-image"></div>
+                                <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3a9162a5-972e-4ab1-9c15-0309139ece00/public')`}} className="label-image"></div>
                                 <input type="checkbox" name="dogHair" id="Lots of Hair" value="Lots of Hair" className='radio-button' onChange={(e) => handleRadioClick(e, 'dogHair')} checked={dogHair === "Lots of Hair"} />
-                                <label htmlFor="Lots of Hair" className='dirty-label' style={{color: 'red'}}>Plenty</label>
+                                <label htmlFor="Lots of Hair" className='dirty-label' style={{color: 'red'}}>Plenty of Hair</label>
                             </div>
                         </div>
 

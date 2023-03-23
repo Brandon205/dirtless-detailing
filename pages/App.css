@@ -570,7 +570,6 @@ option {
   height: 100%;
   top: 0;
   left: 0;
-  filter: brightness(65%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
