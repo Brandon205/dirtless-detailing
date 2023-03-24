@@ -95,35 +95,33 @@ export default function Contact() {
                 progress: undefined
             })
         } else if (!intSelected || dirtiness !== '' && dogHair !== '') {
-            console.log("Form submitted: ", formData)
-
-            // fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
-            //     method: "POST",
-            //     body: formData
-            // }).then((test) => {
-            //     toast.success("Form submitted! Expect a text response from us soon!", {
-            //         position: "bottom-center",
-            //         autoClose: 5000,
-            //         hideProgressBar: false,
-            //         closeOnClick: true,
-            //         pauseOnHover: true,
-            //         draggable: true,
-            //         progress: undefined
-            //     })
-            //     e.target.reset()
-            // setPhoneNumber('')
-            //     window.scrollTo(0, 0)
-            // }).catch(error => {
-            //     toast.error("An error occurred, please try again." + error, {
-            //         position: "bottom-center",
-            //         autoClose: 5000,
-            //         hideProgressBar: false,
-            //         closeOnClick: true,
-            //         pauseOnHover: true,
-            //         draggable: true,
-            //         progress: undefined
-            //     })
-            // });
+            fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
+                method: "POST",
+                body: formData
+            }).then((test) => {
+                toast.success("Form submitted! Expect a text response from us soon!", {
+                    position: "bottom-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined
+                })
+                e.target.reset()
+            setPhoneNumber('')
+                window.scrollTo(0, 0)
+            }).catch(error => {
+                toast.error("An error occurred, please try again." + error, {
+                    position: "bottom-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined
+                })
+            });
         }
     };
 
@@ -145,8 +143,6 @@ export default function Contact() {
 
         // Coating selected check
         if (!currForm['exteriorCoating'][0].checked && !currForm['exteriorCoating'][1].checked) {
-            // console.log('not runned yet', currForm['Single Stage'].checked)
-            // console.log('ran', currForm['Single Stage'].checked)
             setCoatingSelected(false);
         } else {
             setPaintCorrection('')
@@ -282,7 +278,7 @@ export default function Contact() {
 
             <div className='contact-container-right'>
                 <h2>Or Email us by filling out our form:</h2>
-                <p style={{ marginTop: 0, }}><span className='special-package'>*</span>Pricing may vary inside of the listed ranges based on vehicle size and condition.</p>
+                <p style={{ marginTop: 0, }}><span className='special-package'>*</span>Pricing is approximate and may vary inside of the listed ranges based on vehicle size and condition.</p>
                 <form className="form" ref={formRef} autoComplete="on" onSubmit={(e) => formSubmit(e)}>
                     <div className="form-section form-top-section">
                         <div>

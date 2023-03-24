@@ -10,7 +10,7 @@ export default function Addons() {
         <title>Dirt-Less Add-ons | Dirt-Less Detailing</title>
         <Metatags
           title='Dirt-Less Add-ons | Dirt-Less Detailing'
-          description='Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment • Debadging • Engine Bay Cleaning.'
+          description='Engine Bay Cleaning • Debadging • Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment • Fabric / Leather Ceramic Coatings.'
           image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ddb3cc29-1d60-4676-48d8-f86bdcfc5c00/public'
           canonical='/services/add-ons'
         />
@@ -91,7 +91,7 @@ export default function Addons() {
       <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ddb3cc29-1d60-4676-48d8-f86bdcfc5c00/cover')`}}></div>
       <div className="servicepage-header">
         <h1>Dirt-Less Detailing Add-ons</h1>
-        <h2 className='page-subheading'>Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment • Debadging • Engine Bay Cleaning.</h2>
+        <h2 className='page-subheading'>Engine Bay Cleaning • Debadging • Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment • Fabric / Leather Ceramic Coatings.</h2>
         <div className='header-buttons'>
           <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
           <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
@@ -107,7 +107,7 @@ export default function Addons() {
 
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Engine Bay Cleaning</p>
-            <p className="secondary-text"><span>$80</span></p>
+            <p className="secondary-text"><span>$79.99</span></p>
             <p className="service-desc text-white">We will cover sensitive/electronic areas in the bay, clean and wash, then dress the engine bay to have it looking like new!</p>
             <div className='internal-links'>
               <a href="/services/dirtless-wash" className="readmore">Dirt-Less Wash</a>
@@ -165,8 +165,36 @@ export default function Addons() {
           <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/1da88e3b-77d3-43da-6f00-e7af4b914000/public')`}}></div>
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Ozone Treatment</p>
-            <p className="secondary-text"><span>$100</span></p>
+            <p className="secondary-text"><span>$99.99</span></p>
             <p className="service-desc text-white">Ozone treatment is the use of O3 (gas ozone) to remove bacteria, viruses, and odors from your vehicle. This can be added to any of our Interior cleanings when contacting us.</p>
+            <div className='internal-links'>
+              <a href="/services/full-interior-detail" className="readmore">Full Interior Cleaning</a>
+              <a href="/services/biohazard-cleaning" className="readmore">Biohazard Cleaning</a>
+            </div>
+          </div>
+        </div>
+        <hr className='contact-border' />
+
+        <div className="feature-section" id="fabric">
+          <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c537680c-f103-4032-65e3-11370c73d300/public')`}}></div>
+          <div className="feature-desc-area">
+            <p className='service-heading-subtitle'>Fabric Coating</p>
+            <p className="secondary-text"><span>$74.99</span></p>
+            <p className="service-desc text-white">Though Ceramic Coatings are typically applied to vehicles' exteriors ceramic coatings can also be applied to the fabric of a vehicle's interior, providing a range of benefits that can help to keep the interior looking clean and well-maintained.</p>
+            <div className='internal-links'>
+              <a href="/services/full-interior-detail" className="readmore">Full Interior Cleaning</a>
+              <a href="/services/biohazard-cleaning" className="readmore">Biohazard Cleaning</a>
+            </div>
+          </div>
+        </div>
+        <hr className='contact-border' />
+
+        <div className="feature-section" id="leather">
+          <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a196c77-cb1a-42f9-479b-8fdbe3c14500/public')`}}></div>
+          <div className="feature-desc-area">
+            <p className='service-heading-subtitle'>Leather Coating</p>
+            <p className="secondary-text"><span>$149.99</span></p>
+            <p className="service-desc text-white">Ceramic coating can also be a great option for anyone who wants to protect the leather in their vehicle from stains, UV damage, and make it easier to clean.</p>
             <div className='internal-links'>
               <a href="/services/full-interior-detail" className="readmore">Full Interior Cleaning</a>
               <a href="/services/biohazard-cleaning" className="readmore">Biohazard Cleaning</a>

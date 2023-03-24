@@ -130,21 +130,21 @@ export default function SinglePC() {
               <div className="pricing-container">
                 <div className="pricing-card text-black">
                   <strong className='size'>Small</strong>
-                  <p className="pricing-price pricing-border">$300- $450</p>
+                  <p className="pricing-price pricing-border">$299.99- $449.99</p>
                   <p className="example-vehicle pricing-border">Smaller Trucks</p>
                   <p className="example-vehicle pricing-border">Most Cars</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
                 <div className="pricing-card text-black">
                   <strong className='size'>Medium</strong>
-                  <p className="pricing-price pricing-border">$450- $600</p>
+                  <p className="pricing-price pricing-border">$449.99- $599.99</p>
                   <p className="example-vehicle pricing-border">Mid-Size SUV's</p>
                   <p className="example-vehicle pricing-border">Most Wagons</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
                 <div className="pricing-card text-black">
                   <strong className='size'>Large</strong>
-                  <p className="pricing-price pricing-border">$600- $850</p>
+                  <p className="pricing-price pricing-border">$599.99- $849.99</p>
                   <p className="example-vehicle pricing-border">Large SUV's</p>
                   <p className="example-vehicle pricing-border">Trucks</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
