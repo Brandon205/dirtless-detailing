@@ -485,7 +485,7 @@ export default function Contact() {
 
                     <div className="form-section">
                         <p className='form-section-heading'>Combo Deal <a href='/services/interior-exterior-detailing-combo' className='aside-link'><BiLinkExternal /></a></p>
-                        <p style={{ marginTop: 0, }}>(Includes a Full Interior With Extraction, Premium Dirt-Less Wash, and a <span className='special-package'>FREE</span> Engine Bay Cleaning!)</p>
+                        <p style={{ marginTop: 0, }}>(Includes a Full Interior With Extraction, Dirt-Less Wash, and a <span className='special-package'>FREE</span> Engine Bay Cleaning!)</p>
                         <div>
                             <input type="checkbox" name="combo" id='combo' className='checkbox-input' onClick={() => handleIntSelect()} />
                             <label htmlFor="combo" className='checkbox-label'>Full Interior and Exterior Combo <span className='special-package italic'>($350-$700)</span></label>
@@ -566,8 +566,6 @@ export default function Contact() {
                         <div>
                             <input type="checkbox" name="exteriorWash" id="Dirt-Less Wash" value="Dirt-Less Wash" className='radio-button' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => handleRadioClick(e, 'exteriorWash')} checked={exteriorWash === 'Dirt-Less Wash'} />
                             <label htmlFor="Dirt-Less Wash" className='checkbox-label'>Dirt-Less Wash <span className='special-package italic'>($75-$150)</span></label>
-                            {/* <input type="checkbox" name="exteriorWash" id="Premium Wash" value="Premium Dirt-Less Wash" className='radio-button' onChange={(e) => handleRadioClick(e, 'exteriorWash')} checked={exteriorWash === 'Premium Wash'} />
-                            <label htmlFor="Premium Wash" className='checkbox-label'>Premium Dirt-Less Wash <span className='special-package italic'>($150-$275)</span></label> */}
                         </div>
                         <hr className="contact-border" />
 

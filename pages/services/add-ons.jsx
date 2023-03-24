@@ -111,7 +111,6 @@ export default function Addons() {
             <p className="service-desc text-white">We will cover sensitive/electronic areas in the bay, clean and wash, then dress the engine bay to have it looking like new!</p>
             <div className='internal-links'>
               <a href="/services/dirtless-wash" className="readmore">Dirt-Less Wash</a>
-              <a href="/services/premium-dirtless-wash" className="readmore">Premium Dirt-Less Wash</a>
             </div>
           </div>
         </div>
@@ -139,7 +138,6 @@ export default function Addons() {
             <p className="service-desc text-white">Remove all overspray and waterspots we can. This can be added onto any of our Exterior Washes or either of our Paint Correction Services when contacting us.</p>
             <div className='internal-links'>
               <a href="/services/dirtless-wash" className="readmore">Dirt-Less Wash</a>
-              <a href="/services/premium-dirtless-wash" className="readmore">Premium Dirt-Less Wash</a>
               <a href="/services/single-stage-correction" className="readmore">Single Stage Paint Correction</a>
               <a href="/services/two-stage-correction" className="readmore">Two Stage Paint Correction</a>
             </div>
@@ -155,7 +153,6 @@ export default function Addons() {
             <p className="service-desc text-white">Remove any vehicle badging including any residue left behind after removal</p>
             <div className='internal-links'>
               <a href="/services/dirtless-wash" className="readmore">Dirt-Less Wash</a>
-              <a href="/services/premium-dirtless-wash" className="readmore">Premium Dirt-Less Wash</a>
               <a href="/services/single-stage-correction" className="readmore">Single Stage Paint Correction</a>
               <a href="/services/two-stage-correction" className="readmore">Two Stage Paint Correction</a>
             </div>

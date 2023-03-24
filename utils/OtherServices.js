@@ -8,7 +8,7 @@ export default function OtherServices() {
             </div>
             <section className="otherservices-container">
                 <div className="service-card">
-                    <div className="otherservices-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3e71dbba-b8c6-4c21-7d4c-edc497331100/public')`}}></div>
+                    <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3e71dbba-b8c6-4c21-7d4c-edc497331100/public')` }}></div>
                     <div className="otherservices-desc">
                         <div>
                             <a href='/services/interior-ceramic-coating' className='service-heading-link'>Interior Ceramic Coatings</a>
@@ -21,7 +21,7 @@ export default function OtherServices() {
                 </div>
 
                 <div className="service-card">
-                    <div className="otherservices-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a30c288d-c816-4a42-e313-d7fa80e04200/public')`}}></div>
+                    <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a30c288d-c816-4a42-e313-d7fa80e04200/public')` }}></div>
                     <div className="otherservices-desc">
                         <div>
                             <a href='/services/exterior-ceramic-coating' className='service-heading-link'>Exterior Ceramic Coatings</a>
@@ -34,7 +34,7 @@ export default function OtherServices() {
                 </div>
 
                 <div className="service-card">
-                    <div className="otherservices-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/public')`}}></div>
+                    <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/public')` }}></div>
                     <div className="otherservices-desc text-center">
                         <div>
                             <a href='/gallery/ceramic-coating-gallery' className='service-heading-link'>CERAMIC COATING GALLERY</a>
@@ -54,7 +54,7 @@ export default function OtherServices() {
 
             <section className="feature-section">
                 <div className="feature-img-container">
-                    <div className="otherservices-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3031c630-d6f2-48fc-1bb4-62844fbd5a00/public')`, height: 550 + 'px', width: 350 + 'px'}}></div>
+                    <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3031c630-d6f2-48fc-1bb4-62844fbd5a00/public')`, height: 550 + 'px', width: 350 + 'px' }}></div>
                 </div>
                 <div className="feature-desc-area">
                     <a href="/services/interior-exterior-detailing-combo" className='service-heading-link'>Full Interior, <span className='special-package'>Engine Cleaning</span>, and Exterior Combo</a>
@@ -63,7 +63,7 @@ export default function OtherServices() {
                     <div>
                         <a href="/services/interior-exterior-detailing-combo" className="readmore">Combo Deal</a>
                         <a href="/services/full-interior-detail" className="readmore">Interior</a>
-                        <a href="/services/premium-dirtless-wash" className="readmore">Exterior</a>
+                        <a href="/services/dirtless-wash" className="readmore">Exterior</a>
                     </div>
                 </div>
             </section>
@@ -74,7 +74,7 @@ export default function OtherServices() {
             </div>
             <section className="otherservices-container">
                 <div className="service-card">
-                    <div className="otherservices-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/213e3fa9-1def-44b2-3031-1901432b9a00/public')`}}></div>
+                    <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/213e3fa9-1def-44b2-3031-1901432b9a00/public')` }}></div>
                     <div className="otherservices-desc">
                         <div>
                             <a href="/services/full-interior-detail" className='service-heading-link'>Full Interior Cleaning</a>
@@ -87,7 +87,7 @@ export default function OtherServices() {
                 </div>
 
                 <div className="service-card">
-                    <div className="otherservices-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b1445bc-f69e-44e8-6336-345384ea5700/public')`}}></div>
+                    <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b1445bc-f69e-44e8-6336-345384ea5700/public')` }}></div>
                     <div className="otherservices-desc">
                         <div>
                             <a href='/services/biohazard-cleaning' className='service-heading-link'>Biohazard Cleaning</a>
@@ -100,7 +100,7 @@ export default function OtherServices() {
                 </div>
 
                 <div className="service-card">
-                    <div className="otherservices-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7bafe41a-9d42-4916-be4b-1a1c1086d200/public')`}}></div>
+                    <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7bafe41a-9d42-4916-be4b-1a1c1086d200/public')` }}></div>
                     <div className="otherservices-desc text-center">
                         <div>
                             <a href='/gallery/interior-detail-gallery' className='service-heading-link'>FULL INTERIOR GALLERY</a>
@@ -120,7 +120,7 @@ export default function OtherServices() {
 
             <section className="otherservices-container">
                 <div className="service-card">
-                    <div className="otherservices-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d7e1e319-7f78-4ac6-907a-9b100171ca00/public')`}}></div>
+                    <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d7e1e319-7f78-4ac6-907a-9b100171ca00/public')` }}></div>
                     <div className="otherservices-desc">
                         <div>
                             <a href='/services/dirtless-wash' className='service-heading-link'>Dirt-Less Wash</a>
@@ -133,20 +133,7 @@ export default function OtherServices() {
                 </div>
 
                 <div className="service-card">
-                    <div className="otherservices-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0a564c14-dde7-4018-e403-c646a78af000/public')`}}></div>
-                    <div className="otherservices-desc">
-                        <div>
-                            <a href='/services/premium-dirtless-wash' className='service-heading-link'>Premium Dirt-Less Wash</a>
-                            <p className="secondary-text">Starting at: <span>$150</span></p>
-                        </div>
-                        <p className="service-desc">Our Premium exterior wash will go above and beyond the Dirt-Less Wash in the cleaning process and will top it off with a 6 month sealant or better to protect your vehicle.</p>
-
-                        <a href="/services/premium-dirtless-wash" className="popular-readmore">Premium Dirt-Less Wash Details</a>
-                    </div>
-                </div>
-
-                <div className="service-card">
-                    <div className="otherservices-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/caab7c47-0030-4dd7-b338-e56ce725c300/public')`}}></div>
+                    <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/caab7c47-0030-4dd7-b338-e56ce725c300/public')` }}></div>
                     <div className="otherservices-desc text-center">
                         <div>
                             <a href='/gallery/dirtless-wash-gallery' className='service-heading-link'>EXTERIOR WASH GALLERY</a>
@@ -166,7 +153,7 @@ export default function OtherServices() {
             </div>
             <section className="otherservices-container">
                 <div className="service-card">
-                    <div className="otherservices-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f7c127be-d17d-4563-48c3-809289e8bc00/public')`}}></div>
+                    <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f7c127be-d17d-4563-48c3-809289e8bc00/public')` }}></div>
                     <div className="otherservices-desc">
                         <div>
                             <a href='/services/single-stage-correction' className='service-heading-link'>Single Stage Paint Correction</a>
@@ -179,7 +166,7 @@ export default function OtherServices() {
                 </div>
 
                 <div className="service-card">
-                    <div className="otherservices-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fabb5ba-d12e-4e8a-c3bb-f5901af53e00/public')`}}></div>
+                    <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fabb5ba-d12e-4e8a-c3bb-f5901af53e00/public')` }}></div>
                     <div className="otherservices-desc">
                         <div>
                             <a href='/services/two-stage-correction' className='service-heading-link'>Two Stage Paint Correction</a>
@@ -192,7 +179,7 @@ export default function OtherServices() {
                 </div>
 
                 <div className="service-card">
-                    <div className="otherservices-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/32930152-a55c-4325-49cb-e25a40fbeb00/public')`}}></div>
+                    <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/32930152-a55c-4325-49cb-e25a40fbeb00/public')` }}></div>
                     <div className="otherservices-desc text-center">
                         <div>
                             <a href='/gallery/paint-correction-gallery' className='service-heading-link'>PAINT CORRECTION GALLERY</a>

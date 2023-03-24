@@ -117,9 +117,6 @@ export default function MyApp({ Component, pageProps }) {
                                         <hr className="nav-hr" />
                                         <h4 className='sub-menu-header'>EXTERIOR DETAILING SERVICES</h4>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <a href="/services/premium-dirtless-wash" className='menu-link'><RiCarWashingFill /> Premium Dirt-Less Wash</a>
-                                        </li>
-                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
                                             <a href="/services/dirtless-wash" className='menu-link'><FaSoap /> Dirt-Less Wash</a>
                                         </li>
                                         <hr className="nav-hr" />
@@ -204,7 +201,6 @@ export default function MyApp({ Component, pageProps }) {
                 <div className="footer-content-card">
                     <h3>EXTERIOR</h3>
                     <a href="/services/dirtless-wash" className='footer-link'>Dirt-Less Wash</a>
-                    <a href="/services/premium-dirtless-wash" className='footer-link'>Premium Dirt-Less Wash</a>
                     <a href="/services/interior-exterior-detailing-combo" className='footer-link'>Interior + Exterior Combo</a>
                 </div>
                 <div className="footer-content-card">

@@ -90,7 +90,7 @@ export default function FullIntEx() {
                   <p>The goal of the Full Interior Cleaning package is to restore your interior to its best condition. Your carpet, seats, floor mats, plastics, windows, and all other interior fixtures will be meticulously cleaned.</p>
                   <p>While we will attempt to remove 100% of stains many stains could prove to be more challenging to remove or might not be completely removed. Some won't completely disappear depending on the kind of stain, how long it has been sitting, and the material the stain is on. </p>
                   <p>Taking us by surprise is difficult. Please don't think that your interior is too dirty. We've seen hundreds of different interiors and have all the necessary tools to attempt to remove any kind of stain or mess.</p>
-                  <p>Make it a <a href='/services/interior-exterior-detailing-combo' className='aside-link'>Combo</a> deal by booking with a Premium Dirt-Less Wash, and get an <a href='/services/add-ons#engine' className='aside-link'>Engine Bay</a> cleaning on the house!</p>
+                  <p>Make it a <a href='/services/interior-exterior-detailing-combo' className='aside-link'>Combo</a> deal by booking with a Dirt-Less Wash, and get an <a href='/services/add-ons#engine' className='aside-link'>Engine Bay</a> cleaning on the house!</p>
                 </div>
                 <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/be771e29-71fe-47b0-8fa3-0419d7991800/public')`}}></div>
               </div>
@@ -102,7 +102,7 @@ export default function FullIntEx() {
 
               <h2 className='text-large'>Interior and Exterior Combo Deal <a href='/services/interior-exterior-detailing-combo' className='aside-link'><BiLinkExternal /></a></h2>
               <div className="text-left">
-                <p>Get a <span className="special-package">FREE</span> Engine Bay Cleaning when you schedule our Combo service. This service combines our <a href="/services/premium-dirtless-wash" className='aside-link'>Premium Dirt-Less Wash</a> and this Full Interior Detail. It is sure to get your entire vehicle looking like new, even the engine bay which is typically overlooked when washing your car.</p>
+                <p>Get a <span className="special-package">FREE</span> Engine Bay Cleaning when you schedule our Combo service. This service combines our <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> and this Full Interior Detail. It is sure to get your entire vehicle looking like new, even the engine bay which is typically overlooked when washing your car.</p>
               </div>
 
               <br className='extra-space' />

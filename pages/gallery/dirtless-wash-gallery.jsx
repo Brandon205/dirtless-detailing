@@ -19,7 +19,7 @@ export default function PaintCorrectionGallery() {
       <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a33a454b-ac45-4972-91f7-3d80eda98900/cover')`}}></div>
       <div className="servicepage-heading">
         <h1>Dirt-Less Wash Gallery</h1>
-        <p>This is a showcase of our Dirt-Less Wash service. Take a look at our <a href="/detailing/car-washes" className='aside-link'>Car Washes</a> page for more info on the 2 exterior wash services that we offer.</p>
+        <p>This is a showcase of our Dirt-Less Wash service. Take a look at our <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> page for more details.</p>
 
         <div className='header-buttons'>
           <a href="/Contact" className='quote-btn'>Get a Free Quote</a>

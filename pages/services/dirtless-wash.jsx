@@ -6,8 +6,9 @@ import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 const steps = [
   ["Wash Vehicle", "Thorough 2 bucket or equivalent top to bottom wash including the gas door."],
   ["Wheel Cleaning", "Clean wheels, wheel wells, and wheel barrels."],
+  ["Remove tar and sap", "Remove any and all tar and sap from the exterior."],
+  ["Wax Vehicle", "Apply a coating of spray wax."],
   ["Dry Vehicle", "Dry the whole vehicle with clean towels and air blowers."],
-  ["Wax", "Apply spray wax."],
   ["Dress Vehicle", "Dress tires, wheel wells, and plastics."]
 ]
 
@@ -33,7 +34,7 @@ export default function DLWash() {
         <Metatags
           title='Dirt-Less Car Wash | Dirt-Less Detailing'
           description='The Dirt-Less Wash is our base tier exterior car wash service, complete with a spray wax to protect your vehicle.'
-          image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d3ac6cf4-b415-476d-8286-5f169f4dca00/public'
+          image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a7b4af9c-97db-42dc-3b72-452a6221aa00/public'
           canonical='/services/dirtless-wash'
         />
         <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
@@ -43,7 +44,7 @@ export default function DLWash() {
             "name": "Dirt-Less Wash",
             "brand": "Dirt-Less Detailing",
             "description": "At Dirt-Less Detailing, we offer a comprehensive car wash service to keep your vehicle looking its best.",
-            "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d3ac6cf4-b415-476d-8286-5f169f4dca00/public",
+            "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a7b4af9c-97db-42dc-3b72-452a6221aa00/public",
             "url": "https://www.dirtlessdetailing.com/services/dirtless-wash/",
             "offers": {
               "@type": "Offer",
@@ -67,7 +68,7 @@ export default function DLWash() {
           }`,
         }} />
       </Head>
-      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d3ac6cf4-b415-476d-8286-5f169f4dca00/cover')`}}></div>
+      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a7b4af9c-97db-42dc-3b72-452a6221aa00/cover')`}}></div>
       <div className="servicepage-header">
         <h1>Dirt-Less Wash</h1>
         <h2 className='page-subheading'>Get a Dirt-Less Wash and have your vehicle shine like never before!</h2>
@@ -85,8 +86,7 @@ export default function DLWash() {
                 <div className="text-left">
                   <h2 className='text-large mt-0'>Dirt-Less Wash</h2>
                   <p>While you don't have to go to Harvard to wash a car there are methods of washing that produce infinitely better results than your typical tunnel car wash. Our methods are also way safer for your paint.</p>
-                  <p>If you're looking for a fast and cheap option to get your car washed in Bonney Lake or the surrounding areas, we most likely won't be a great fit for you. We go very in-depth in our washing process to provide the highest quality level of service and results your money can buy.</p>
-                  <p>Want to go a step further than our Dirt-Less Wash, removing all of the contaminants that may be hiding on your paint? Check out our <a href='/detailing/car-washes' className='aside-link'>comparison</a> page to see the differences between our this service and the <a href='/services/premium-dirtless-wash' className='aside-link'>Premium</a> version.</p>
+                  {/* <p>If you're looking for our quick and most affordable option to get your car washed in Bonney Lake or the surrounding areas, we most likely won't be a great fit for you. We go very in-depth in our washing process to provide the highest quality level of service and results your money can buy.</p> */}
                 </div>
                 <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6fb3a112-d77a-41fb-e7ec-728b2185b600/public')`}}></div>
               </div>
@@ -140,8 +140,14 @@ export default function DLWash() {
                 <p className='subtext'>Add-ons that typically get paired with either of our exterior wash services</p>
                 <div className="pricing-container">
                   <div className="pricing-card text-black fixed-height">
+                    <strong className='size'>Clay Bar Treatment</strong>
+                    <p>Removes contaminants from your paint leaving a much cleaner and smoother end result.</p>
+                    <p className="pricing-price pricing-border">$50-$75</p>
+                    <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                  </div>
+                  <div className="pricing-card text-black fixed-height">
                     <strong className='size'>Glass Polishing</strong>
-                    <p>Removes Waterspots and stains from your glass.</p>
+                    <p>Remove Waterspots and etching from your vehicles glass.</p>
                     <p className="pricing-price pricing-border">$80/hour</p>
                     <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                   </div>

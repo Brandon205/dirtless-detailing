@@ -10,7 +10,7 @@ export default function Combo() {
         <title>Interior and Exterior Combo | Dirt-Less Detailing</title>
         <Metatags
           title='Interior and Exterior Combo | Dirt-Less Detailing'
-          description='Full Interior Cleaning + Premium Dirt-Less Wash Combo. Get a FREE engine bay cleaning when booking this Combo Deal!'
+          description='Full Interior Cleaning + Dirt-Less Wash Combo. Get a FREE engine bay cleaning when booking this Combo Deal!'
           image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2f40a30b-c1c1-4dba-3b4b-9f3521eaa800/public'
           canonical='/services/interior-exterior-detailing-combo'
         />
@@ -48,7 +48,7 @@ export default function Combo() {
       <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2f40a30b-c1c1-4dba-3b4b-9f3521eaa800/cover')`}}></div>
       <div className="servicepage-header">
         <h1>Full Interior and Exterior Combo</h1>
-        <h2 className='page-subheading'>Full Interior Cleaning, Premium Dirt-Less Wash, and get an Engine Bay Cleaning on us!</h2>
+        <h2 className='page-subheading'>Full Interior Cleaning, Dirt-Less Wash, and get an Engine Bay Cleaning on us!</h2>
         <div className='header-buttons'>
           <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
           <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
@@ -62,7 +62,7 @@ export default function Combo() {
               <div className="service-explain">
                 <div className="text-left">
                   <h2 className='text-large'>Interior and Exterior Combo Cleaning</h2>
-                  <p>The full enchilada! Our most complete detailing package and the best value package we offer. You get a <a href="/services/full-interior-detail" className='aside-link'>Full Interior Detail</a>, a <a href="/services/premium-dirtless-wash" className='aside-link'>Premium Dirt-Less Wash</a>, and a <span className="special-package">FREE</span> <a href="/services/add-ons#engine" className='aside-link'>Engine Bay Detail</a> on the house!</p>
+                  <p>The full enchilada! Our most complete detailing package and the best value package we offer. You get a <a href="/services/full-interior-detail" className='aside-link'>Full Interior Detail</a>, a <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a>, and a <span className="special-package">FREE</span> <a href="/services/add-ons#engine" className='aside-link'>Engine Bay Detail</a> on the house!</p>
                   <p>If you are after the most thorough interior and exterior detail you can find, or even trying to get the most money when selling your vehicle, this is the package for you!</p>
                 </div>
                 <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3031c630-d6f2-48fc-1bb4-62844fbd5a00/public')`}}></div>
@@ -98,8 +98,8 @@ export default function Combo() {
                     <h3 className='step-number'>3</h3><div className="vertical-rule"></div>
                   </div>
                   <div className="step-container">
-                    <h4 className="step-title">Premium Dirt-Less Wash</h4>
-                    <p className='step-desc'>After cleaning and dressing the engine bay, we will finally move onto the exterior as the last step. We will perform our Premium Dirt-Less Wash procedure on your vehicle. For more details check out our <a href='/services/premium-dirtless-wash' className='aside-link'>Premium Dirt-Less Wash</a> page.</p>
+                    <h4 className="step-title">Dirt-Less Wash</h4>
+                    <p className='step-desc'>After cleaning and dressing the engine bay, we will finally move onto the exterior as the last step. We will perform our Dirt-Less Wash procedure on your vehicle. For more details check out our <a href='/services/dirtless-wash' className='aside-link'>Dirt-Less Wash</a> page.</p>
                   </div>
                 </li>
               </ol>
