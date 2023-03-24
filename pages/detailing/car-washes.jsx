@@ -315,7 +315,7 @@ export default function exteriorWash() {
       </div>
       <h3>See more exterior photos in our <a href="/gallery/dirtless-wash-gallery" className='aside-link'>Exterior Wash Gallery</a>. For more engine bay photos check out our <a href="/gallery/engine-bay-gallery" className='aside-link'>Engine Gallery</a>.</h3>
 
-      <a href="/Contact" className="quote-btn location-quote-btn">Get A Free Quote Today!</a>
+      <a href="/Contact" className="quote-btn">Get A Free Quote Today!</a>
 
     </div>
   );
