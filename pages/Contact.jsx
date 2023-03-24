@@ -55,7 +55,7 @@ export default function Contact() {
             "Dirtiness": formRef.current['Pretty Clean'].checked ? 'Pretty Clean' : formRef.current['Normal Use'].checked ? 'Normal Use' : formRef.current['Very Dirty'].checked ? 'Very Dirty' : '',
             "Dog Hair": formRef.current['Little to None'].checked ? 'Little to None' : formRef.current['Medium Hair'].checked ? 'Medium Hair' : formRef.current['Lots of Hair'].checked ? 'Lots of Hair' : '',
 
-            "Exterior Wash": formRef.current['Dirt-Less Wash'].checked ? 'Dirt-Less Wash' : formRef.current['Premium Wash'].checked ? 'Premium Dirt-Less Wash' : '',
+            "Exterior Wash": formRef.current['Dirt-Less Wash'].checked ? 'Dirt-Less Wash' : '',
             "Engine Bay": e.target['engine'].checked ? 'Yes' : 'No',
             "Glass Polishing": e.target['glassEx'].checked ? 'Yes' : 'No',
             "Waterspot Removal": e.target['waterspotEx'].checked ? 'Yes' : 'No',
@@ -82,11 +82,9 @@ export default function Contact() {
             }
         });
 
-        fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
-            method: "POST",
-            body: formData
-        }).then((test) => {
-            toast.success("Form submitted! Expect a text response from us soon!", {
+        
+        if (intSelected && dirtiness === '' || dogHair === '') {
+            toast.error("Please fill out the Interior Dirtiness and Dog Hair Sections.", {
                 position: "bottom-center",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -95,20 +93,37 @@ export default function Contact() {
                 draggable: true,
                 progress: undefined
             })
-            e.target.reset()
-        setPhoneNumber('')
-            window.scrollTo(0, 0)
-        }).catch(error => {
-            toast.error("An error occurred, please try again." + error, {
-                position: "bottom-center",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined
-            })
-        });
+        } else if (!intSelected || dirtiness !== '' && dogHair !== '') {
+            console.log("Form submitted: ", formData)
+
+            // fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
+            //     method: "POST",
+            //     body: formData
+            // }).then((test) => {
+            //     toast.success("Form submitted! Expect a text response from us soon!", {
+            //         position: "bottom-center",
+            //         autoClose: 5000,
+            //         hideProgressBar: false,
+            //         closeOnClick: true,
+            //         pauseOnHover: true,
+            //         draggable: true,
+            //         progress: undefined
+            //     })
+            //     e.target.reset()
+            // setPhoneNumber('')
+            //     window.scrollTo(0, 0)
+            // }).catch(error => {
+            //     toast.error("An error occurred, please try again." + error, {
+            //         position: "bottom-center",
+            //         autoClose: 5000,
+            //         hideProgressBar: false,
+            //         closeOnClick: true,
+            //         pauseOnHover: true,
+            //         draggable: true,
+            //         progress: undefined
+            //     })
+            // });
+        }
     };
 
     let handleGiftSelect = (giftButton) => {
@@ -129,10 +144,10 @@ export default function Contact() {
 
         // Coating selected check
         if (!currForm['exteriorCoating'][0].checked && !currForm['exteriorCoating'][1].checked) {
-            console.log('not runned yet', currForm['Single Stage'].checked)
+            // console.log('not runned yet', currForm['Single Stage'].checked)
             currForm['Single Stage'].checked = false;
             currForm['Two Stage'].checked = false;
-            console.log('ran', currForm['Single Stage'].checked)
+            // console.log('ran', currForm['Single Stage'].checked)
             setCoatingSelected(false);
         } else {
             setCoatingSelected(true);
@@ -268,7 +283,7 @@ export default function Contact() {
             <div className='contact-container-right'>
                 <h2>Or Email us by filling out our form:</h2>
                 <p style={{ marginTop: 0, }}><span className='special-package'>*</span>Pricing may vary inside of the listed ranges based on vehicle size and condition.</p>
-                <form className="form" onSubmit={(e) => formSubmit(e)} ref={formRef} autoComplete="on">
+                <form className="form" ref={formRef} autoComplete="on" onSubmit={(e) => formSubmit(e)}>
                     <div className="form-section form-top-section">
                         <div>
                             <div>
@@ -459,6 +474,7 @@ export default function Contact() {
 
                     <div className="form-section">
                         <p className='form-section-heading'>Ceramic Coating Services <a href='/services/exterior-ceramic-coating' className='aside-link'><BiLinkExternal /></a></p>
+                        <p style={{ marginTop: 0, }}>(Both Coating services also include a Wash, Paint Correction, and Engine Bay Wash)</p>
                         <div>
                             <input type="checkbox" name="exteriorCoating" id="Protect" value="Protect" className='radio-button' onChange={(e) => {handleRadioClick(e, 'exteriorCoating'); handleIntSelect()}} checked={exteriorCoating === "Protect"} />
                             <label htmlFor="Protect" className='checkbox-label'>Protect <span className='special-package italic'>($1,000-$1,400)</span></label>
@@ -548,16 +564,16 @@ export default function Contact() {
                     <div className="form-section">
                         <p className='form-section-heading'>Exterior Cleaning Services <a href='/services/dirtless-wash' className='aside-link'><BiLinkExternal /></a></p>
                         <div>
-                            <input type="checkbox" name="exteriorWash" id="Dirt-Less Wash" value="Dirt-Less Wash" className='radio-button' onChange={(e) => handleRadioClick(e, 'exteriorWash')} checked={exteriorWash === 'Dirt-Less Wash'} />
+                            <input type="checkbox" name="exteriorWash" id="Dirt-Less Wash" value="Dirt-Less Wash" className='radio-button' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => handleRadioClick(e, 'exteriorWash')} checked={exteriorWash === 'Dirt-Less Wash'} />
                             <label htmlFor="Dirt-Less Wash" className='checkbox-label'>Dirt-Less Wash <span className='special-package italic'>($75-$150)</span></label>
-                            <input type="checkbox" name="exteriorWash" id="Premium Wash" value="Premium Dirt-Less Wash" className='radio-button' onChange={(e) => handleRadioClick(e, 'exteriorWash')} checked={exteriorWash === 'Premium Wash'} />
-                            <label htmlFor="Premium Wash" className='checkbox-label'>Premium Dirt-Less Wash <span className='special-package italic'>($150-$275)</span></label>
+                            {/* <input type="checkbox" name="exteriorWash" id="Premium Wash" value="Premium Dirt-Less Wash" className='radio-button' onChange={(e) => handleRadioClick(e, 'exteriorWash')} checked={exteriorWash === 'Premium Wash'} />
+                            <label htmlFor="Premium Wash" className='checkbox-label'>Premium Dirt-Less Wash <span className='special-package italic'>($150-$275)</span></label> */}
                         </div>
                         <hr className="contact-border" />
 
                         <p className="form-section-heading">Exterior Add-ons <a href='/services/add-ons#exterior' className='aside-link'><BiLinkExternal /></a></p>
                         <div>
-                            <input type="checkbox" id='engine' name="engine" className='checkbox-input' />
+                            <input type="checkbox" id='engine' name="engine" className='checkbox-input' disabled={!coatingSelected ? "" : "disabled"} />
                             <label htmlFor="engine" className='checkbox-label' style={{ marginBottom: 16 }}>Engine Bay <span className='special-package italic'>($80)</span></label>
 
                             <input type="checkbox" id='glassEx' name="glass" className='checkbox-input' />
