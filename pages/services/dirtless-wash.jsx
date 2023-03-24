@@ -55,7 +55,7 @@ export default function DLWash() {
                 "priceCurrency": "USD",
                 "price": "75",
                 "minPrice": "75",
-                "maxPrice": "150"
+                "maxPrice": "225"
               },
               "availability": "http://schema.org/InStock",
               "itemOffered": {
@@ -85,10 +85,15 @@ export default function DLWash() {
               <div className="service-explain">
                 <div className="text-left">
                   <h2 className='text-large mt-0'>Dirt-Less Wash</h2>
-                  <p>While you don't have to go to Harvard to wash a car there are methods of washing that produce infinitely better results than your typical tunnel car wash. Our methods are also way safer for your paint.</p>
-                  {/* <p>If you're looking for our quick and most affordable option to get your car washed in Bonney Lake or the surrounding areas, we most likely won't be a great fit for you. We go very in-depth in our washing process to provide the highest quality level of service and results your money can buy.</p> */}
+                  <p>The Dirt-Less Wash is a professional car wash service that specializes in providing exceptional care for all types of vehicles. We take pride in our commitment to using the latest techniques and high-quality products to ensure that every car is left looking its best. With a thorough 2 bucket method or equivalent, we will ensure that every inch of your car is washed with great care.</p>
+                  <p>After the car is washed we will clean the wheels and wheel wells, remove any stubborn tar or sap, and even apply a spray wax for added protection and shine. Once the car is washed, we will dry the vehicle, cleans the door jambs, and dress all plastics, wheel wells, and tires. You can be sure that our Dirt-Less wash is far better than anything you can get in a typical tunnel wash.</p>
+                  <p>For those who want an even higher level of care for their vehicle, we also offer an option for a clay bar treatment. This treatment involves using a special clay bar to remove any contaminants or impurities from the surface of the car, leaving it with a smooth and clean finish.</p>
                 </div>
                 <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6fb3a112-d77a-41fb-e7ec-728b2185b600/public')`}}></div>
+              </div>
+              <h2 className="text-large">Interior and Exterior Combo Deal <a className="aside-link" href="/services/interior-exterior-detailing-combo"><BiLinkExternal /></a></h2>
+              <div className="text-left">
+                <p>Get a <span className="special-package">FREE</span> Engine Bay Cleaning when you schedule our Combo Service. This service combines our <a href="/services/full-interior-detail" className="aside-link">Full Interior Detail</a> and this Dirt-Less Wash. It is sure to get your entire vehicle looking like new, even the engine bay which is typically overlooked when washing your car.</p>
               </div>
 
             </main>
@@ -109,6 +114,8 @@ export default function DLWash() {
                 <div className="pricing-card text-black">
                   <strong className='size'>Small</strong>
                   <p className="pricing-price pricing-border">$75</p>
+                  <strong className='size text-addition'>Clay Bar Treatment</strong>
+                  <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50</p>
                   <p className="example-vehicle pricing-border">Smaller Trucks</p>
                   <p className="example-vehicle pricing-border">Most Cars</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
@@ -116,6 +123,8 @@ export default function DLWash() {
                 <div className="pricing-card text-black">
                   <strong className='size'>Medium</strong>
                   <p className="pricing-price pricing-border">$100</p>
+                  <strong className='size text-addition'>Clay Bar Treatment</strong>
+                  <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50</p>
                   <p className="example-vehicle pricing-border">Mid-Size SUV's</p>
                   <p className="example-vehicle pricing-border">Most Wagons</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
@@ -123,6 +132,8 @@ export default function DLWash() {
                 <div className="pricing-card text-black">
                   <strong className='size'>Large</strong>
                   <p className="pricing-price pricing-border">$125</p>
+                  <strong className='size text-addition'>Clay Bar Treatment</strong>
+                  <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$75</p>
                   <p className="example-vehicle pricing-border">Large SUV's</p>
                   <p className="example-vehicle pricing-border">Trucks</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
@@ -130,6 +141,8 @@ export default function DLWash() {
                 <div className="pricing-card text-black">
                   <strong className='size'>Extra Large</strong>
                   <p className="pricing-price pricing-border">$150</p>
+                  <strong className='size text-addition'>Clay Bar Treatment</strong>
+                  <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$75</p>
                   <p className="example-vehicle pricing-border">Larger Trucks</p>
                   <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
@@ -139,12 +152,6 @@ export default function DLWash() {
                 <h3 className='pricing-title text-white'>Extra Add-ons <a href='/services/add-ons' className='aside-link'><BiLinkExternal /></a></h3>
                 <p className='subtext'>Add-ons that typically get paired with either of our exterior wash services</p>
                 <div className="pricing-container">
-                  <div className="pricing-card text-black fixed-height">
-                    <strong className='size'>Clay Bar Treatment</strong>
-                    <p>Removes contaminants from your paint leaving a much cleaner and smoother end result.</p>
-                    <p className="pricing-price pricing-border">$50-$75</p>
-                    <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                  </div>
                   <div className="pricing-card text-black fixed-height">
                     <strong className='size'>Glass Polishing</strong>
                     <p>Remove Waterspots and etching from your vehicles glass.</p>
