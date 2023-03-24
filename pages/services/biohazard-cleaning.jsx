@@ -116,12 +116,7 @@ export default function Bio() {
               <div className="pricing-container">
                 <div className="pricing-card text-black">
                   <strong className='size'>Mild Mold/Odors</strong>
-                  <p className="pricing-price pricing-border">$399<span className='ninety-nine'>99</span></p>
-                  <p className="example-vehicle pricing-border">Any Size Vehicle</p>
-                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                </div>
-                <div className="pricing-card text-black">
-                  <strong className='size'>Extreme Mold/Odors</strong>
+                  <p style={{paddingBottom: 0}} className="pricing-price">$399<span className='ninety-nine'>99</span>-</p>
                   <p className="pricing-price pricing-border">$999<span className='ninety-nine'>99</span></p>
                   <p className="example-vehicle pricing-border">Any Size Vehicle</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>

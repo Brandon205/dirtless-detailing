@@ -122,48 +122,48 @@ export default function FullIntEx() {
               <strong className='subtext'>*Final pricing may vary within the ranges below based on your vehicle condition and size.</strong>
               <div className="pricing-container">
                 <div className="pricing-card text-black">
-                  <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Small</strong>
+                  <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>2-Door Coupes, Single and Extended Cab Trucks</strong>
                   <strong className='size'>Starting Price</strong>
                   <p className="pricing-price pricing-border">$299<span className='ninety-nine'>99</span></p>
-                  <strong className='size text-addition'>ADD Extraction</strong>
-                  <p style={{borderBottom: 'none', paddingBottom: 0}} className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50 (Seats)</p>
-                  <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50 (Carpets)</p>
+                  <strong className='size text-addition'>ADD Stain Extraction</strong>
+                  <p style={{borderBottom: 'none', paddingBottom: 0}} className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$35 (Seats)</p>
+                  <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$35 (Carpets)</p>
                   <strong className='size text-addition'>REMOVE Pet Hair</strong>
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50-$100</p>
                   <strong className='size text-addition'>CLEAN Headliners</strong>
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$40-$80</p>
-                  <p className="example-vehicle pricing-border">2-Door Coupes</p>
-                  <p className="example-vehicle pricing-border">Single/Extended Cabs</p>
+                  {/* <p className="example-vehicle pricing-border">2-Door Coupes</p>
+                  <p className="example-vehicle pricing-border">Single/Extended Cabs</p> */}
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
                 <div className="pricing-card text-black">
-                  <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Medium</strong>
+                  <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Most 4 Door Vehicles and Trucks</strong>
                   <strong className='size'>Starting Price</strong>
                   <p className="pricing-price pricing-border">$349<span className='ninety-nine'>99</span></p>
-                  <strong className='size text-addition'>ADD Extraction</strong>
+                  <strong className='size text-addition'>ADD Stain Extraction</strong>
                   <p style={{borderBottom: 'none', paddingBottom: 0}} className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50 (Seats)</p>
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50 (Carpets)</p>
                   <strong className='size text-addition'>REMOVE Pet Hair</strong>
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50-$100</p>
                   <strong className='size text-addition'>CLEAN Headliners</strong>
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$40-$80</p>
-                  <p className="example-vehicle pricing-border">Most 4 Door Vehicles</p>
-                  <p className="example-vehicle pricing-border">Most Trucks</p>
+                  {/* <p className="example-vehicle pricing-border">Most 4 Door Vehicles</p>
+                  <p className="example-vehicle pricing-border">Most Trucks</p> */}
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
                 <div className="pricing-card text-black">
-                  <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Large</strong>
+                  <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>3-Row SUV's and Minivans</strong>
                   <strong className='size'>Starting Price</strong>
                   <p className="pricing-price pricing-border">$399<span className='ninety-nine'>99</span></p>
-                  <strong className='size text-addition'>ADD Extraction</strong>
+                  <strong className='size text-addition'>ADD Stain Extraction</strong>
                   <p style={{borderBottom: 'none', paddingBottom: 0}} className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50 (Seats)</p>
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50 (Carpets)</p>
                   <strong className='size text-addition'>REMOVE Pet Hair</strong>
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50-$100</p>
                   <strong className='size text-addition'>CLEAN Headliners</strong>
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$40-$80</p>
-                  <p className="example-vehicle pricing-border">3 Row SUV's</p>
-                  <p className="example-vehicle pricing-border">Minivans</p>
+                  {/* <p className="example-vehicle pricing-border">3 Row SUV's</p>
+                  <p className="example-vehicle pricing-border">Minivans</p> */}
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
               </div>

@@ -52,7 +52,7 @@ export default function PopularServices() {
             <div className="popular-services-card">
                 <div className="popular-services-header">
                     <a href='/services/interior-exterior-detailing-combo' className="service-heading-link popular-service-title">Full Interior + Exterior + Engine Bay Combo</a>
-                    <p className="price">Starting at: <span>$349.99</span></p>
+                    <p className="price">Starting at: <span>$374.99</span></p>
                 </div>
                 <div className="popular-img" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/de5ece74-66af-46cb-8460-7e0246257b00/public')` }}></div>
 

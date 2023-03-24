@@ -122,31 +122,63 @@ export default function Combo() {
               <p className='subtext'>*Final pricing may vary based on your vehicle condition, size, and whether or not you need extraction.</p>
               <div className="pricing-container">
                 <div className="pricing-card text-black">
-                  <strong className='size'>Small</strong>
-                  <p className="pricing-price pricing-border">$349.99- $399.99</p>
-                  <p className="example-vehicle pricing-border">Smaller Trucks</p>
-                  <p className="example-vehicle pricing-border">Most Cars</p>
+                  <strong className='size pricing-border'>Single Row Trucks and 2-Door Cars</strong>
+                  <strong className='size'>Starting Price</strong>
+                  <p className="pricing-price pricing-border">$374<span className='ninety-nine'>99</span></p>
+                  <strong className='size text-addition'>ADD Stain Extraction</strong>
+                  <p style={{borderBottom: 'none', paddingBottom: 0}} className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$35 (Seats)</p>
+                  <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$35 (Carpets)</p>
+                  <strong className='size text-addition'>REMOVE Pet Hair</strong>
+                  <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50-$100</p>
+                  <strong className='size text-addition'>Clay Bar Treatment</strong>
+                  <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50</p>
+                  {/* <p className="example-vehicle pricing-border">Smaller Trucks</p>
+                  <p className="example-vehicle pricing-border">2 Door Cars</p> */}
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
                 <div className="pricing-card text-black">
-                  <strong className='size'>Medium</strong>
-                  <p className="pricing-price pricing-border">$449.99- $499.99</p>
-                  <p className="example-vehicle pricing-border">Mid-Size SUV's</p>
-                  <p className="example-vehicle pricing-border">Most Wagons</p>
+                  <strong className='size pricing-border'>Most Mid-Size SUV's and 4-Door Cars</strong>
+                  <strong className='size'>Starting Price</strong>
+                  <p className="pricing-price pricing-border">$449<span className='ninety-nine'>99</span></p>
+                  <strong className='size text-addition'>ADD Stain Extraction</strong>
+                  <p style={{borderBottom: 'none', paddingBottom: 0}} className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50 (Seats)</p>
+                  <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50 (Carpets)</p>
+                  <strong className='size text-addition'>REMOVE Pet Hair</strong>
+                  <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50-$100</p>
+                  <strong className='size text-addition'>Clay Bar Treatment</strong>
+                  <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50</p>
+                  {/* <p className="example-vehicle pricing-border">Mid-Size SUV's</p>
+                  <p className="example-vehicle pricing-border">Most 4-5 Door Cars</p> */}
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
                 <div className="pricing-card text-black">
-                  <strong className='size'>Large</strong>
-                  <p className="pricing-price pricing-border">$549.99- $699.99</p>
-                  <p className="example-vehicle pricing-border">Large SUV's</p>
-                  <p className="example-vehicle pricing-border">Large trucks</p>
+                  <strong className='size pricing-border'>Most 4-Door Trucks</strong>
+                  <strong className='size'>Starting Price</strong>
+                  <p className="pricing-price pricing-border">$474<span className='ninety-nine'>99</span></p>
+                  <strong className='size text-addition'>ADD Stain Extraction</strong>
+                  <p style={{borderBottom: 'none', paddingBottom: 0}} className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50 (Seats)</p>
+                  <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50 (Carpets)</p>
+                  <strong className='size text-addition'>REMOVE Pet Hair</strong>
+                  <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50-$100</p>
+                  <strong className='size text-addition'>Clay Bar Treatment</strong>
+                  <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$75</p>
+                  {/* <p className="example-vehicle pricing-border">Large Trucks</p>
+                  <p className="example-vehicle pricing-border">Extra Large Vehicles</p> */}
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
                 <div className="pricing-card text-black">
-                  <strong className='size'>Extra Large</strong>
-                  <p className="pricing-price pricing-border">$624.99- $699.99</p>
-                  <p className="example-vehicle pricing-border">Large Trucks</p>
-                  <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
+                  <strong className='size pricing-border'>3-Row SUV's and Minivans</strong>
+                  <strong className='size'>Starting Price</strong>
+                  <p className="pricing-price pricing-border">$524<span className='ninety-nine'>99</span></p>
+                  <strong className='size text-addition'>ADD Stain Extraction</strong>
+                  <p style={{borderBottom: 'none', paddingBottom: 0}} className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$75 (Seats)</p>
+                  <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$75 (Carpets)</p>
+                  <strong className='size text-addition'>REMOVE Pet Hair</strong>
+                  <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50-$100</p>
+                  <strong className='size text-addition'>Clay Bar Treatment</strong>
+                  <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$75</p>
+                  {/* <p className="example-vehicle pricing-border">3 Row SUV's, Minivans</p>
+                  <p className="example-vehicle pricing-border">Large trucks</p> */}
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
               </div>

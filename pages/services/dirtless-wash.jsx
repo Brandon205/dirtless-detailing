@@ -134,7 +134,7 @@ export default function DLWash() {
                   <p className="pricing-price pricing-border">$124<span className='ninety-nine'>99</span></p>
                   <strong className='size text-addition'>Clay Bar Treatment</strong>
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$75</p>
-                  <p className="example-vehicle pricing-border">Large SUV's</p>
+                  <p className="example-vehicle pricing-border">3 Row SUV's</p>
                   <p className="example-vehicle pricing-border">Trucks</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
