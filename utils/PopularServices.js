@@ -8,7 +8,7 @@ export default function PopularServices() {
             <div className="popular-services-card">
                 <div className="popular-services-header">
                     <a href='/services/full-interior-detail' className="service-heading-link popular-service-title">Full Interior Cleaning</a>
-                    <p className="price">Starting at: <span>$200</span></p>
+                    <p className="price">Starting at: <span>$199.99</span></p>
                 </div>
                 <div className="popular-img" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4f5cb5ee-45a7-4123-acaf-586335420600/public')` }}></div>
 
@@ -52,7 +52,7 @@ export default function PopularServices() {
             <div className="popular-services-card">
                 <div className="popular-services-header">
                     <a href='/services/interior-exterior-detailing-combo' className="service-heading-link popular-service-title">Full Interior + Exterior + Engine Bay Combo</a>
-                    <p className="price">Starting at: <span>$350</span></p>
+                    <p className="price">Starting at: <span>$349.99</span></p>
                 </div>
                 <div className="popular-img" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/de5ece74-66af-46cb-8460-7e0246257b00/public')` }}></div>
 
@@ -96,7 +96,7 @@ export default function PopularServices() {
             <div className="popular-services-card">
                 <div className="popular-services-header">
                     <a href='/services/single-stage-correction' className="service-heading-link popular-service-title">Ceramic Coating <br />(Protect Package)</a>
-                    <p className="price">Starting at: <span>$1,000</span></p>
+                    <p className="price">Starting at: <span>$999.99</span></p>
                 </div>
                 <div className="popular-img" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7c93452e-cf47-4898-a618-e427e19a0e00/public')` }}></div>
 

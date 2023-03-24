@@ -112,11 +112,17 @@ export default function Bio() {
 
             <div>
               <h3 className='pricing-title text-white'>Our Biohazard Cleaning Pricing</h3>
-              <p className='subtext'>*Final pricing may vary based on your vehicle condition and size.</p>
+              <p className='subtext'>*Final pricing may vary within the ranges below based on your vehicle condition and size.</p>
               <div className="pricing-container">
                 <div className="pricing-card text-black">
-                  <strong className='size'>Any Vehicle</strong>
-                  <p className="pricing-price pricing-border">$400- $1000</p>
+                  <strong className='size'>Mild Mold/Odors</strong>
+                  <p className="pricing-price pricing-border">$399<span className='ninety-nine'>99</span></p>
+                  <p className="example-vehicle pricing-border">Any Size Vehicle</p>
+                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                </div>
+                <div className="pricing-card text-black">
+                  <strong className='size'>Extreme Mold/Odors</strong>
+                  <p className="pricing-price pricing-border">$999<span className='ninety-nine'>99</span></p>
                   <p className="example-vehicle pricing-border">Any Size Vehicle</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>

@@ -51,13 +51,13 @@ export default function FullIntEx() {
             "offers": {
               "@type": "Offer",
               "priceCurrency": "USD",
-              "price": "200",
+              "price": "300",
               "priceSpecification": {
               	"@type": "PriceSpecification",
                 "priceCurrency": "USD",
-                "price": "200",
-                "minPrice": "200",
-                "maxPrice": "350"
+                "price": "300",
+                "minPrice": "300",
+                "maxPrice": "500"
               },
               "availability": "http://schema.org/InStock",
               "itemOffered": {
@@ -124,7 +124,7 @@ export default function FullIntEx() {
                 <div className="pricing-card text-black">
                   <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Small</strong>
                   <strong className='size'>Starting Price</strong>
-                  <p style={{position: 'relative'}} className="pricing-price pricing-border">$299<span className='ninety-nine'>99</span></p>
+                  <p className="pricing-price pricing-border">$299<span className='ninety-nine'>99</span></p>
                   <strong className='size text-addition'>ADD Extraction</strong>
                   <p style={{borderBottom: 'none', paddingBottom: 0}} className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50 (Seats)</p>
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50 (Carpets)</p>
@@ -139,7 +139,7 @@ export default function FullIntEx() {
                 <div className="pricing-card text-black">
                   <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Medium</strong>
                   <strong className='size'>Starting Price</strong>
-                  <p style={{position: 'relative'}} className="pricing-price pricing-border">$349<span className='ninety-nine'>99</span></p>
+                  <p className="pricing-price pricing-border">$349<span className='ninety-nine'>99</span></p>
                   <strong className='size text-addition'>ADD Extraction</strong>
                   <p style={{borderBottom: 'none', paddingBottom: 0}} className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50 (Seats)</p>
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50 (Carpets)</p>
@@ -154,7 +154,7 @@ export default function FullIntEx() {
                 <div className="pricing-card text-black">
                   <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Large</strong>
                   <strong className='size'>Starting Price</strong>
-                  <p style={{position: 'relative'}} className="pricing-price pricing-border">$399<span className='ninety-nine'>99</span></p>
+                  <p className="pricing-price pricing-border">$399<span className='ninety-nine'>99</span></p>
                   <strong className='size text-addition'>ADD Extraction</strong>
                   <p style={{borderBottom: 'none', paddingBottom: 0}} className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50 (Seats)</p>
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50 (Carpets)</p>

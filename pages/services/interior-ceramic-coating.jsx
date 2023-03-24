@@ -134,13 +134,13 @@ export default function IntCoatings() {
                         <div className='pricing-container text-black'>
                             <div className="pricing-card">
                                 <strong className='size text-xl'>Fabric Coating</strong>
-                                <p className="pricing-price pricing-border">$75</p>
+                                <p className="pricing-price pricing-border">$74<span className='ninety-nine'>99</span></p>
                                 <p className="example-vehicle pricing-border">Any Size Vehicle</p>
                                 <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                             </div>
                             <div className="pricing-card">
                                 <strong className='size text-xl'>Leather Coating</strong>
-                                <p className="pricing-price pricing-border">$150</p>
+                                <p className="pricing-price pricing-border">$149<span className='ninety-nine'>99</span></p>
                                 <p className="example-vehicle pricing-border">Any Size Vehicle</p>
                                 <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                             </div>
@@ -151,21 +151,21 @@ export default function IntCoatings() {
                         <div className='pricing-container text-black'>
                             <div className="pricing-card">
                                 <strong className='size text-xl'>Small</strong>
-                                <p className="pricing-price pricing-border">$130</p>
+                                <p className="pricing-price pricing-border">$129<span className='ninety-nine'>99</span></p>
                                 <p className="example-vehicle pricing-border">2-Door Coupes</p>
                                 <p className="example-vehicle pricing-border">Single/Extended Cabs</p>
                                 <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                             </div>
                             <div className="pricing-card">
                                 <strong className='size text-xl'>Medium</strong>
-                                <p className="pricing-price pricing-border">$160</p>
+                                <p className="pricing-price pricing-border">$159<span className='ninety-nine'>99</span></p>
                                 <p className="example-vehicle pricing-border">4 Door Vehicles</p>
                                 <p className="example-vehicle pricing-border">Smaller SUV's</p>
                                 <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                             </div>
                             <div className="pricing-card">
                                 <strong className='size text-xl'>Large</strong>
-                                <p className="pricing-price pricing-border">$190</p>
+                                <p className="pricing-price pricing-border">$189<span className='ninety-nine'>99</span></p>
                                 <p className="example-vehicle pricing-border">Larger Trucks</p>
                                 <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
                                 <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
@@ -178,13 +178,13 @@ export default function IntCoatings() {
                             <div className="pricing-card fixed-height">
                                 <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Fabric Re-coating</strong>
                                 <p>Get all interior Fabric/Carpet re-coated.</p>
-                                <p className="pricing-price">$75</p>
+                                <p className="pricing-price">$74<span className='ninety-nine'>99</span></p>
                                 <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                             </div>
                             <div className="pricing-card fixed-height">
                                 <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Leather Re-coating</strong>
                                 <p>Get all interior Leather re-coated.</p>
-                                <p className="pricing-price">$150</p>
+                                <p className="pricing-price">$149<span className='ninety-nine'>99</span></p>
                                 <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                             </div>
                         </div>

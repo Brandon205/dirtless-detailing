@@ -177,9 +177,9 @@ export default function ExtCoatings() {
                                 <div className="pricing-card">
                                     <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Small</strong>
                                     <strong className='size'>Protect</strong>
-                                    <p className="pricing-price pricing-border">$1,000</p>
+                                    <p className="pricing-price pricing-border">$999<span className='ninety-nine'>99</span></p>
                                     <strong className='size'>Protect<span className="special-package">+</span></strong>
-                                    <p className="pricing-price pricing-border">$1,500</p>
+                                    <p className="pricing-price pricing-border">$1,499<span className='ninety-nine'>99</span></p>
                                     <p className="example-vehicle pricing-border">2-Door Coupes</p>
                                     <p className="example-vehicle pricing-border">Single/Extended Cabs</p>
                                     <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
@@ -187,9 +187,9 @@ export default function ExtCoatings() {
                                 <div className="pricing-card">
                                     <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Medium</strong>
                                     <strong className='size'>Protect</strong>
-                                    <p className="pricing-price pricing-border">$1,200</p>
+                                    <p className="pricing-price pricing-border">$1,199<span className='ninety-nine'>99</span></p>
                                     <strong className='size'>Protect<span className="special-package">+</span></strong>
-                                    <p className="pricing-price pricing-border">$1,700</p>
+                                    <p className="pricing-price pricing-border">$1,699<span className='ninety-nine'>99</span></p>
                                     <p className="example-vehicle pricing-border">4 Door Vehicles</p>
                                     <p className="example-vehicle pricing-border">Smaller SUV's</p>
                                     <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
@@ -197,9 +197,9 @@ export default function ExtCoatings() {
                                 <div className="pricing-card">
                                     <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Large</strong>
                                     <strong className='size'>Protect</strong>
-                                    <p className="pricing-price pricing-border">$1,400</p>
+                                    <p className="pricing-price pricing-border">$1,399<span className='ninety-nine'>99</span></p>
                                     <strong className='size'>Protect<span className="special-package">+</span></strong>
-                                    <p className="pricing-price pricing-border">$1,900</p>
+                                    <p className="pricing-price pricing-border">$1,899<span className='ninety-nine'>99</span></p>
                                     <p className="example-vehicle pricing-border">Larger Trucks</p>
                                     <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
                                     <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
@@ -213,9 +213,9 @@ export default function ExtCoatings() {
                                 <div className="pricing-card">
                                     <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Small</strong>
                                     <strong className='size'>Monthly</strong>
-                                    <p className="pricing-price pricing-border">$130</p>
+                                    <p className="pricing-price pricing-border">$129<span className='ninety-nine'>99</span></p>
                                     <strong className='size'>Yearly</strong>
-                                    <p className="pricing-price pricing-border">$200</p>
+                                    <p className="pricing-price pricing-border">$199<span className='ninety-nine'>99</span></p>
                                     <p className="example-vehicle pricing-border">2-Door Coupes</p>
                                     <p className="example-vehicle pricing-border">Single/Extended Cabs</p>
                                     <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
@@ -223,9 +223,9 @@ export default function ExtCoatings() {
                                 <div className="pricing-card">
                                     <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Medium</strong>
                                     <strong className='size'>Monthly</strong>
-                                    <p className="pricing-price pricing-border">$160</p>
+                                    <p className="pricing-price pricing-border">$159<span className='ninety-nine'>99</span></p>
                                     <strong className='size'>Yearly</strong>
-                                    <p className="pricing-price pricing-border">$250</p>
+                                    <p className="pricing-price pricing-border">$249<span className='ninety-nine'>99</span></p>
                                     <p className="example-vehicle pricing-border">4 Door Vehicles</p>
                                     <p className="example-vehicle pricing-border">Smaller SUV's</p>
                                     <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
@@ -233,9 +233,9 @@ export default function ExtCoatings() {
                                 <div className="pricing-card">
                                     <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Large</strong>
                                     <strong className='size'>Monthly</strong>
-                                    <p className="pricing-price pricing-border">$190</p>
+                                    <p className="pricing-price pricing-border">$189<span className='ninety-nine'>99</span></p>
                                     <strong className='size'>Yearly</strong>
-                                    <p className="pricing-price pricing-border">$300</p>
+                                    <p className="pricing-price pricing-border">$299<span className='ninety-nine'>99</span></p>
                                     <p className="example-vehicle pricing-border">Larger Trucks</p>
                                     <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
                                     <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
@@ -248,13 +248,13 @@ export default function ExtCoatings() {
                                 <div className="pricing-card">
                                     <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Re-coat All Vehicle Trim</strong>
                                     <p>Get all exterior vehicle trim re-coated.</p>
-                                    <p className="pricing-price">$100</p>
+                                    <p className="pricing-price">$99<span className='ninety-nine'>99</span></p>
                                     <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                                 </div>
                                 <div className="pricing-card">
                                     <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Re-coat Wheel Faces</strong>
                                     <p>Re-coat all Wheel Faces.</p>
-                                    <p className="pricing-price">$150</p>
+                                    <p className="pricing-price">$149<span className='ninety-nine'>99</span></p>
                                     <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                                 </div>
                             </div>

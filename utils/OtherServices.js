@@ -12,7 +12,7 @@ export default function OtherServices() {
                     <div className="otherservices-desc">
                         <div>
                             <a href='/services/interior-ceramic-coating' className='service-heading-link'>Interior Ceramic Coatings</a>
-                            <p className="secondary-text">Starting at: <span>$75</span></p>
+                            <p className="secondary-text">Starting at: <span>$74.99</span></p>
                         </div>
                         <p className="service-desc">Did you know you could ceramic coat the interior of your car? Well you can, and it provides many of the benefits of a normal exterior coating like ease of maintenance/cleaning, but to the interior of your car!</p>
 
@@ -25,7 +25,7 @@ export default function OtherServices() {
                     <div className="otherservices-desc">
                         <div>
                             <a href='/services/exterior-ceramic-coating' className='service-heading-link'>Exterior Ceramic Coatings</a>
-                            <p className="secondary-text">Starting at: <span>$1,000</span></p>
+                            <p className="secondary-text">Starting at: <span>$999.99</span></p>
                         </div>
                         <p className="service-desc">With a professionally installed IGL Ceramic coating from us, your vehicle will be clean and protected. We are a licensed and certified coating installer through IGL and are happy to give your car that extra layer of protection it deserves</p>
 
@@ -58,7 +58,7 @@ export default function OtherServices() {
                 </div>
                 <div className="feature-desc-area">
                     <a href="/services/interior-exterior-detailing-combo" className='service-heading-link'>Full Interior, <span className='special-package'>Engine Cleaning</span>, and Exterior Combo</a>
-                    <p className="secondary-text">Starting at: <span>$350</span></p>
+                    <p className="secondary-text">Starting at: <span>$349.99</span></p>
                     <p className="service-desc">This combo comes with a <span className='special-package'>FREE</span> Engine Bay cleaning, along with the full interior and exterior detail this package is sure to bring your whole car back to life.</p>
                     <div>
                         <a href="/services/interior-exterior-detailing-combo" className="readmore">Combo Deal</a>
@@ -78,7 +78,7 @@ export default function OtherServices() {
                     <div className="otherservices-desc">
                         <div>
                             <a href="/services/full-interior-detail" className='service-heading-link'>Full Interior Cleaning</a>
-                            <p className="secondary-text">Starting at: <span>$200</span></p>
+                            <p className="secondary-text">Starting at: <span>$199.99</span></p>
                         </div>
                         <p className="service-desc">A full interior detail will clean every crack and crevice of your vehicles interior. Optionally we can also do a hot water extraction to the carpets of your vehicle to get out deeper stains and dirt.</p>
 
@@ -91,7 +91,7 @@ export default function OtherServices() {
                     <div className="otherservices-desc">
                         <div>
                             <a href='/services/biohazard-cleaning' className='service-heading-link'>Biohazard Cleaning</a>
-                            <p className="secondary-text">Starting at: <span>$400</span></p>
+                            <p className="secondary-text">Starting at: <span>$399.99</span></p>
                         </div>
                         <p className="service-desc">If there are bad smells like mold or smoke in your car this will be the package for you. We'll use cleaning chemicals suited for the job to get rid of those odors for good.</p>
 
@@ -124,7 +124,7 @@ export default function OtherServices() {
                     <div className="otherservices-desc">
                         <div>
                             <a href='/services/dirtless-wash' className='service-heading-link'>Dirt-Less Wash</a>
-                            <p className="secondary-text">Starting at: <span>$75</span></p>
+                            <p className="secondary-text">Starting at: <span>$75.99</span></p>
                         </div>
                         <p className="service-desc">Our Dirt-Less Wash will thoroughly clean the exterior of your vehicle with our tried and true cleaning process. We even apply a layer of wax to give your vehicle a layer of protection.</p>
 
@@ -157,11 +157,11 @@ export default function OtherServices() {
                     <div className="otherservices-desc">
                         <div>
                             <a href='/services/single-stage-correction' className='service-heading-link'>Single Stage Paint Correction</a>
-                            <p className="secondary-text">Starting at: <span>$300</span></p>
+                            <p className="secondary-text">Starting at: <span>$299.99</span></p>
                         </div>
                         <p className="service-desc">Our Single Stage Paint Correction can fix 60%-70% of minor damage and scratches and will leave your vehicle looking shinier than ever.</p>
 
-                        <a href="/services/single-stage-correction" className="popular-readmore">Paint Correction Details</a>
+                        <a href="/services/single-stage-correction" className="popular-readmore">Single Stage Details</a>
                     </div>
                 </div>
 
@@ -170,11 +170,11 @@ export default function OtherServices() {
                     <div className="otherservices-desc">
                         <div>
                             <a href='/services/two-stage-correction' className='service-heading-link'>Two Stage Paint Correction</a>
-                            <p className="secondary-text">Starting at: <span>$450</span></p>
+                            <p className="secondary-text">Starting at: <span>$449.99</span></p>
                         </div>
                         <p className="service-desc">Our 2 stage paint correction is great for getting your car's paint to a close to perfect state. This is great for show cars need that extra time and effort to get to that showroom shine.</p>
 
-                        <a href="/services/two-stage-correction" className="popular-readmore">Two Stage Paint Correction Details</a>
+                        <a href="/services/two-stage-correction" className="popular-readmore">Two Stage Details</a>
                     </div>
                 </div>
 
