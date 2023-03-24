@@ -115,7 +115,7 @@ export default function Bio() {
               <p className='subtext'>*Final pricing may vary within the ranges below based on your vehicle condition and size.</p>
               <div className="pricing-container">
                 <div className="pricing-card text-black">
-                  <strong className='size'>Mild Mold/Odors</strong>
+                  <strong className='size'>All Vehicles</strong>
                   <p style={{paddingBottom: 0}} className="pricing-price">$399<span className='ninety-nine'>99</span>-</p>
                   <p className="pricing-price pricing-border">$999<span className='ninety-nine'>99</span></p>
                   <p className="example-vehicle pricing-border">Any Size Vehicle</p>

@@ -107,7 +107,7 @@ export default function Home() {
                         </a>
                     </div>
 
-                    <div style={{display: 'flex', gap: 1 + 'rem'}}>
+                    <div style={{ display: 'flex', gap: 1 + 'rem' }}>
                         <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
                         <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
                     </div>
@@ -154,10 +154,6 @@ export default function Home() {
                     <div>
                         <p className="review">My kids left a gal of milk in the back of my car, needless to say the nice warm weather it leaked all over and soon smelled horrid. He did a fantastic job, car smells and looks brand new, even got every hair out from my pups. very happy I got his number as a referral from a friend.</p>
                         <p className="reviewer">Trisha C.</p>
-                    </div>
-                    <div>
-                        <p className="review">I was just astounded by the quality of his performance as a detailer. My car has never been cleaner. From simple maintenance to even stage 1 buff; the quality has been on point every single time. He's a very good friend of mine and his dedication to detailing is proven to be remarkable.</p>
-                        <p className="reviewer">Nathan M.</p>
                     </div>
                     <div>
                         <p className="review">The process was easy. He responded right away when I contacted him about a detail. He showed up when he said he would and was extremely professional.  He did an amazing job on the detail of my car.  Would have him detail my car again.</p>

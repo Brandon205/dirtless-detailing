@@ -278,7 +278,7 @@ export default function Contact() {
 
             <div className='contact-container-right'>
                 <h2>Or Email us by filling out our form:</h2>
-                <p style={{ marginTop: 0, }}><span className='special-package'>*</span>Pricing is approximate and may vary inside of the listed ranges based on vehicle size and condition.</p>
+                <p style={{ marginTop: 0 }}><span className='special-package'>*</span>Pricing is approximate and may vary inside of the listed ranges based on vehicle size and condition.</p>
                 <form className="form" ref={formRef} autoComplete="on" onSubmit={(e) => formSubmit(e)}>
                     <div className="form-section form-top-section">
                         <div>
@@ -470,18 +470,18 @@ export default function Contact() {
 
                     <div className="form-section">
                         <p className='form-section-heading'>Ceramic Coating Services <a href='/services/exterior-ceramic-coating' className='aside-link'><BiLinkExternal /></a></p>
-                        <p style={{ marginTop: 0, }}>(Both Coating services also include a Wash, Paint Correction, and Engine Bay Wash)</p>
+                        <p style={{ marginTop: 0 }}>(Both Coating services also include a Wash, Paint Correction, and Engine Bay Wash)</p>
                         <div>
                             <input type="checkbox" name="exteriorCoating" id="Protect" value="Protect" className='radio-button' onChange={(e) => {handleRadioClick(e, 'exteriorCoating'); handleIntSelect()}} checked={exteriorCoating === "Protect"} />
-                            <label htmlFor="Protect" className='checkbox-label'>Protect <span className='special-package italic'>($1,000-$1,400)</span></label>
+                            <label htmlFor="Protect" className='checkbox-label'>Protect <span className='special-package italic'>($950-$1,250)</span></label>
                             <input type="checkbox" name="exteriorCoating" id="Protect+" value="Protect+" className='radio-button' onChange={(e) => {handleRadioClick(e, 'exteriorCoating'); handleIntSelect()}} checked={exteriorCoating === "Protect+"} />
-                            <label htmlFor="Protect+" className='checkbox-label'>Protect+ <span className='special-package italic'>($1,500-$1,900)</span></label>
+                            <label htmlFor="Protect+" className='checkbox-label'>Protect+ <span className='special-package italic'>($1,400-$1,850)</span></label>
                         </div>
                     </div>
 
                     <div className="form-section">
                         <p className='form-section-heading'>Combo Deal <a href='/services/interior-exterior-detailing-combo' className='aside-link'><BiLinkExternal /></a></p>
-                        <p style={{ marginTop: 0, }}>(Includes a Full Interior With Extraction, Dirt-Less Wash, and a <span className='special-package'>FREE</span> Engine Bay Cleaning!)</p>
+                        <p style={{ marginTop: 0 }}>(Includes a Full Interior With Extraction, Dirt-Less Wash, and a <span className='special-package'>FREE</span> Engine Bay Cleaning!)</p>
                         <div>
                             <input type="checkbox" name="combo" id='combo' className='checkbox-input' onClick={() => handleIntSelect()} />
                             <label htmlFor="combo" className='checkbox-label'>Full Interior and Exterior Combo <span className='special-package italic'>($350-$700)</span></label>
@@ -502,7 +502,7 @@ export default function Contact() {
                         <hr className="contact-border" />
 
                         <p className="form-section-heading">Interior Add-ons <a href='/services/add-ons#interior' className='aside-link'><BiLinkExternal /></a></p>
-                        <p style={{ marginTop: 0, }}>(Coatings need a Full Interior Cleaning service selected)</p>
+                        <p style={{ marginTop: 0}}>(Coatings need a Full Interior Cleaning service selected)</p>
                         <div>
                             <input type="checkbox" name="fabric" id='fabric' className={'checkbox-input'} disabled={!intSelected ? "disabled" : ""} />
                             <label title="Need to have an Interior Cleaning option selected." htmlFor="fabric" className='checkbox-label'>Fabric Coating <span className='special-package italic'>($75)</span></label>
@@ -536,7 +536,7 @@ export default function Contact() {
                         </div>
 
                         <p className="form-section-heading">Interior Dog Hair Amount{intSelected ? <span className='special-package'>*</span> : ''}</p>
-                        <p style={{ marginTop: 0, }}>(Only required when an Interior Cleaning is selected)</p>
+                        <p style={{ marginTop: 0 }}>(Only required when an Interior Cleaning is selected)</p>
                         <div style={{display: 'flex', justifyContent: 'center', gap: '1rem'}}>
                             <div className="label-container">
                                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/264a9c3b-d6cd-4575-132a-80d4450cdc00/public')`}} className="label-image"></div>
@@ -585,12 +585,12 @@ export default function Contact() {
 
                     <div className="form-section">
                         <p className='form-section-heading'>Paint Correction Services <a href='/services/single-stage-correction' className='aside-link'><BiLinkExternal /></a></p>
-                        <p style={{ marginTop: 0, }}>(Exterior Add-ons go great with our Paint Correction Services too!)</p>
+                        <p style={{ marginTop: 0 }}>(Exterior Add-ons go great with our Paint Correction Services too!)</p>
                         <div>
                             <input type="checkbox" name="paintCorrection" id="Single Stage" value="Single Stage" className='radio-button' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => handleRadioClick(e, 'paintCorrection')} checked={paintCorrection === 'Single Stage'} />
-                            <label htmlFor="Single Stage" className='checkbox-label'>Single Stage Paint Correction <span className='special-package italic'>($300-$850)</span></label>
+                            <label htmlFor="Single Stage" className='checkbox-label'>Single Stage Paint Correction <span className='special-package italic'>($550-$850)</span></label>
                             <input type="checkbox" name="paintCorrection" id="Two Stage" value="Two Stage" className='radio-button' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => handleRadioClick(e, 'paintCorrection')} checked={paintCorrection === 'Two Stage'} />
-                            <label htmlFor="Two Stage" className='checkbox-label'>Two Stage Paint Correction <span className='special-package italic'>($450-$1,100)</span></label>
+                            <label htmlFor="Two Stage" className='checkbox-label'>Two Stage Paint Correction <span className='special-package italic'>($700-$1,000)</span></label>
                         </div>
                         <input type="hidden" name="_gotcha" style={{ display: 'none !important' }} />
                     </div>

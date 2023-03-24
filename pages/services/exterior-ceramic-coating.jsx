@@ -168,6 +168,47 @@ export default function ExtCoatings() {
                             <p>Whether it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe any spill up before it seeps in. Get more info on our <a href="/services/interior-ceramic-coating" className='aside-link'>Interior Coating</a> page.</p>
                         </div>
 
+                        <h2 className='coating-heading text-xl'>Protect Package</h2>
+                        <p className='package-desc subtext'>The Protect package will cover and protect the most essential parts of your car with a 5 year ceramic coating.</p>
+                        <div className='package-container'>
+                            <div className='package-details'>
+                                <RiPaintFill className='package-icon' />
+                                <h4>Paint Covered</h4>
+                                <p className='subtext'>All of the paint on the exterior will be coated with IGL's Quartz Ceramic 9H Coating.</p>
+                            </div>
+                            <div className='package-details'>
+                                <BiCar className='package-icon' />
+                                <h4>Coat Windshield, Lights, and Trim</h4>
+                                <p className='subtext'>Aside from the paint, coating the windshield and lights are crucial areas to apply ceramic coating on a vehicle, we also coat the trim to protect plastic and rubber surfaces.</p>
+                            </div>
+                            <div className='package-details'>
+                                <SiAdguard className='package-icon' />
+                                <h4>Lifetime Warranty<span className='special-package'>*</span><br />or 2 years or 20,000 miles</h4>
+                                <p className='subtext'>After your first coating if you follow through with our monthly maintenance your Ceramic coating has a lifetime guarantee through us.</p>
+                            </div>
+                        </div>
+
+                        <h2 className='coating-heading text-xl'>Protect<span className='special-package'>+</span> Package</h2>
+                        <p className='package-desc subtext'>The Protect+ package will cover and protect your whole vehicle with a 5 year Ceramic Coating.</p>
+                        <div className='package-container'>
+                            <div className='package-details'>
+                                <RiPaintFill className='package-icon' />
+                                <h4>Paint Covered</h4>
+                                <p className='subtext'>All of the paint on the exterior will be coated with IGL's Kenzo Graphene Ceramic 10H coating.</p>
+                            </div>
+                            <div className='package-details'>
+                                <FaCar className='package-icon' />
+                                <h4>Coat Trim, Glass, Lights, and Wheel Faces</h4>
+                                <p className='subtext'>We will cover nearly the entire exterior of your vehicle, ensuring that it is completely protected all around.</p>
+                            </div>
+                            <div className='package-details'>
+                                <SiAdguard className='package-icon' />
+                                <h4>Lifetime Warranty<span className='special-package'>*</span><br />or 5 years or 50,000 miles</h4>
+                                <p className='subtext'>Our Protect+ package also comes with a lifetime warranty if you follow through with our monthly maintenance.</p>
+                            </div>
+                        </div>
+                        <p><span className='special-package'>*</span>Must follow maintenance procedures to qualify for our warranties.</p>
+
                         <br className='extra-space' />
 
                         <div>
@@ -177,9 +218,9 @@ export default function ExtCoatings() {
                                 <div className="pricing-card">
                                     <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Small</strong>
                                     <strong className='size'>Protect</strong>
-                                    <p className="pricing-price pricing-border">$999<span className='ninety-nine'>99</span></p>
+                                    <p className="pricing-price pricing-border">$949<span className='ninety-nine'>99</span></p>
                                     <strong className='size'>Protect<span className="special-package">+</span></strong>
-                                    <p className="pricing-price pricing-border">$1,499<span className='ninety-nine'>99</span></p>
+                                    <p className="pricing-price pricing-border">$1,399<span className='ninety-nine'>99</span></p>
                                     <p className="example-vehicle pricing-border">2-Door Coupes</p>
                                     <p className="example-vehicle pricing-border">Single/Extended Cabs</p>
                                     <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
@@ -187,7 +228,7 @@ export default function ExtCoatings() {
                                 <div className="pricing-card">
                                     <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Medium</strong>
                                     <strong className='size'>Protect</strong>
-                                    <p className="pricing-price pricing-border">$1,199<span className='ninety-nine'>99</span></p>
+                                    <p className="pricing-price pricing-border">$1,099<span className='ninety-nine'>99</span></p>
                                     <strong className='size'>Protect<span className="special-package">+</span></strong>
                                     <p className="pricing-price pricing-border">$1,699<span className='ninety-nine'>99</span></p>
                                     <p className="example-vehicle pricing-border">4 Door Vehicles</p>
@@ -197,9 +238,9 @@ export default function ExtCoatings() {
                                 <div className="pricing-card">
                                     <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Large</strong>
                                     <strong className='size'>Protect</strong>
-                                    <p className="pricing-price pricing-border">$1,399<span className='ninety-nine'>99</span></p>
+                                    <p className="pricing-price pricing-border">$1,249<span className='ninety-nine'>99</span></p>
                                     <strong className='size'>Protect<span className="special-package">+</span></strong>
-                                    <p className="pricing-price pricing-border">$1,899<span className='ninety-nine'>99</span></p>
+                                    <p className="pricing-price pricing-border">$1,849<span className='ninety-nine'>99</span></p>
                                     <p className="example-vehicle pricing-border">Larger Trucks</p>
                                     <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
                                     <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
@@ -290,49 +331,6 @@ export default function ExtCoatings() {
                             </ul>
                         </div>
                     </main>
-
-                    <h2 className='coating-heading text-xl'>Protect Package</h2>
-                    <p className='package-desc subtext'>The Protect package will cover and protect the most essential parts of your car with a 5 year ceramic coating.</p>
-                    <div className='package-container'>
-                        <div className='package-details'>
-                            <RiPaintFill className='package-icon' />
-                            <h4>Paint Covered</h4>
-                            <p className='subtext'>All of the paint on the exterior will be coated with IGL's Kenzo Graphene 10H coating.</p>
-                        </div>
-                        <div className='package-details'>
-                            <BiCar className='package-icon' />
-                            <h4>Coat Windshield and Lights</h4>
-                            <p className='subtext'>The windshield and lights are the 2 next most essential things after paint to coat when giving your vehicle a ceramic coating.</p>
-                        </div>
-                        <div className='package-details'>
-                            <SiAdguard className='package-icon' />
-                            <h4>Lifetime Warranty<span className='special-package'>*</span><br />or 5 years or 50,000 miles</h4>
-                            <p className='subtext'>After your first coating if you follow through with our monthly maintenance your Ceramic coating has a lifetime guarantee through us.</p>
-                        </div>
-                    </div>
-
-                    <br className='extra-space' />
-
-                    <h2 className='coating-heading text-xl'>Protect<span className='special-package'>+</span> Package</h2>
-                    <p className='package-desc subtext'>The Protect+ package will cover and protect your whole vehicle with a 5 year Ceramic Coating.</p>
-                    <div className='package-container'>
-                        <div className='package-details'>
-                            <RiPaintFill className='package-icon' />
-                            <h4>Paint Covered</h4>
-                            <p className='subtext'>All of the paint on the exterior will be coated with IGL's Kenzo Graphene 10H coating.</p>
-                        </div>
-                        <div className='package-details'>
-                            <FaCar className='package-icon' />
-                            <h4>Coat Trim, Glass, Lights, and Wheel Faces</h4>
-                            <p className='subtext'>We will cover nearly the entire exterior of your vehicle, ensuring that it is completely protected all around.</p>
-                        </div>
-                        <div className='package-details'>
-                            <SiAdguard className='package-icon' />
-                            <h4>Lifetime Warranty<span className='special-package'>*</span><br />or 5 years or 50,000 miles</h4>
-                            <p className='subtext'>Our Protect+ package also comes with a lifetime warranty if you follow through with our monthly maintenance.</p>
-                        </div>
-                    </div>
-                    <p><span className='special-package'>*</span>Must follow maintenance procedures to qualify for our warranties.</p>
 
                     <br className='extra-space' />
 

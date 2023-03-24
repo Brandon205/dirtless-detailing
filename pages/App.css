@@ -961,7 +961,7 @@ option {
   padding: 2em;
   font-size: 1.25rem;
   line-height: 1.75;
-  width: 97vw;
+  /* width: 97vw; */
   margin: 0 auto;
 }
 

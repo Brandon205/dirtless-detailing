@@ -174,19 +174,19 @@ export default function FullIntEx() {
                 <div className="pricing-card text-black">
                   <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Fabric Ceramic Coating</strong>
                   <p>Get a coat of IGL's Interior Coating.</p>
-                  <p className="pricing-price pricing-border">$75</p>
+                  <p className="pricing-price pricing-border">$74.99</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
                 <div className="pricing-card text-black">
                   <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Leather Ceramic Coating</strong>
                   <p>Get a coat of IGL's Leather Coating professionally applied.</p>
-                  <p className="pricing-price pricing-border">$150</p>
+                  <p className="pricing-price pricing-border">$149.99</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
                 <div className="pricing-card text-black">
                   <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Ozone Treatment</strong>
                   <p>Have an ozone treatment done to remove odors and clean the air in your car.</p>
-                  <p className="pricing-price pricing-border">$100</p>
+                  <p className="pricing-price pricing-border">$99.99</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
               </div>

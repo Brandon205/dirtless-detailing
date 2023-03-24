@@ -129,25 +129,25 @@ export default function SinglePC() {
               <p className='subtext'>*Final pricing may vary based on your vehicle condition and size.</p>
               <div className="pricing-container">
                 <div className="pricing-card text-black">
-                  <strong className='size'>Small</strong>
-                  <p style={{paddingBottom: 0}} className="pricing-price">$299<span className='ninety-nine'>99</span>-</p>
-                  <p className="pricing-price pricing-border">$449<span className='ninety-nine'>99</span></p>
+                  <strong className='size pricing-border'>Small</strong>
+                  <strong className='size'>Starting Price</strong>
+                  <p style={{paddingBottom: 0}} className="pricing-price">$549<span className='ninety-nine'>99</span></p>
                   <p className="example-vehicle pricing-border">Smaller Trucks</p>
                   <p className="example-vehicle pricing-border">Most Cars</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
                 <div className="pricing-card text-black">
-                  <strong className='size'>Medium</strong>
-                  <p style={{paddingBottom: 0}} className="pricing-price">$449<span className='ninety-nine'>99</span>-</p>
-                  <p className="pricing-price pricing-border">$599<span className='ninety-nine'>99</span></p>
+                  <strong className='size pricing-border'>Medium</strong>
+                  <strong className='size'>Starting Price</strong>
+                  <p style={{paddingBottom: 0}} className="pricing-price">$699<span className='ninety-nine'>99</span></p>
                   <p className="example-vehicle pricing-border">Mid-Size SUV's</p>
                   <p className="example-vehicle pricing-border">Most Wagons</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
                 <div className="pricing-card text-black">
-                  <strong className='size'>Large</strong>
-                  <p style={{paddingBottom: 0}} className="pricing-price">$599<span className='ninety-nine'>99</span>-</p>
-                  <p className="pricing-price pricing-border">$849<span className='ninety-nine'>99</span></p>
+                  <strong className='size pricing-border'>Large</strong>
+                  <strong className='size'>Starting Price</strong>
+                  <p style={{paddingBottom: 0}} className="pricing-price">$849<span className='ninety-nine'>99</span></p>
                   <p className="example-vehicle pricing-border">3 Row SUV's</p>
                   <p className="example-vehicle pricing-border">Trucks</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>

@@ -4,13 +4,12 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import { AiOutlineCar, AiOutlinePlus } from "react-icons/ai";
 import { BsFillCameraFill, BsFillPersonBadgeFill } from "react-icons/bs";
-import { FaBars, FaFacebook, FaInstagram, FaPhoneAlt, FaCarSide, FaPhotoVideo, FaBiohazard, FaCameraRetro, FaHome, FaImages, FaSoap } from 'react-icons/fa';
+import { FaBars, FaFacebook, FaInstagram, FaPhoneAlt, FaCarSide, FaPhotoVideo, FaBiohazard, FaCameraRetro, FaHome, FaImages, FaSoap, FaYoutube } from 'react-icons/fa';
 import { GiSteeringWheel, GiCarKey, GiCarSeat } from 'react-icons/gi';
 import { GoLocation } from "react-icons/go";
 import { HiSparkles, HiInformationCircle } from 'react-icons/hi';
 import { MdOutlineEmail, MdLocalOffer } from 'react-icons/md';
 import { TbEngine } from 'react-icons/tb';
-import { RiCarWashingFill } from 'react-icons/ri';
 import { ImFilePicture } from 'react-icons/im';
 import './App.css';
 
@@ -107,6 +106,11 @@ export default function MyApp({ Component, pageProps }) {
                                             <a href="/services/interior-ceramic-coating" className='menu-link'><GiCarSeat /> Interior Coating</a>
                                         </li>
                                         <hr className="nav-hr" />
+                                        <h4 className='sub-menu-header'>COMBO DEALS</h4>
+                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                            <a href="/services/interior-exterior-detailing-combo" className='menu-link'><GiCarKey /> Interior + Exterior Combo</a>
+                                        </li>
+                                        <hr className="nav-hr" />
                                         <h4 className='sub-menu-header'>INTERIOR CLEANING SERVICES</h4>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
                                             <a href="/services/full-interior-detail" className='menu-link'><GiSteeringWheel /> Full Interior Cleaning</a>
@@ -118,11 +122,6 @@ export default function MyApp({ Component, pageProps }) {
                                         <h4 className='sub-menu-header'>EXTERIOR DETAILING SERVICES</h4>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
                                             <a href="/services/dirtless-wash" className='menu-link'><FaSoap /> Dirt-Less Wash</a>
-                                        </li>
-                                        <hr className="nav-hr" />
-                                        <h4 className='sub-menu-header'>COMBO DEALS</h4>
-                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <a href="/services/interior-exterior-detailing-combo" className='menu-link'><GiCarKey /> Interior + Exterior Combo</a>
                                         </li>
                                         <hr className="nav-hr" />
                                         <h4 className='sub-menu-header'>PAINT CORRECTION SERVICES</h4>
@@ -226,6 +225,7 @@ export default function MyApp({ Component, pageProps }) {
                     <div>
                         <a href="https://www.facebook.com/DirtLessDetailing/" className="socials" target="_blank" rel="noopener" aria-label="Facebook"><FaFacebook /></a>
                         <a href="https://www.instagram.com/dirtlessdetailing/" className="socials" target="_blank" rel="noopener" aria-label="Instagram"><FaInstagram /></a>
+                        <a href="https://www.youtube.com/channel/UCsoqP5s4hwkQd_Sd-TVv-jg" className="socials" target="_blank" rel="noopener" aria-label="Youtube"><FaYoutube /></a>
                     </div>
                 </div>
             </footer>
