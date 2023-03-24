@@ -145,11 +145,10 @@ export default function Contact() {
         // Coating selected check
         if (!currForm['exteriorCoating'][0].checked && !currForm['exteriorCoating'][1].checked) {
             // console.log('not runned yet', currForm['Single Stage'].checked)
-            currForm['Single Stage'].checked = false;
-            currForm['Two Stage'].checked = false;
             // console.log('ran', currForm['Single Stage'].checked)
             setCoatingSelected(false);
         } else {
+            setPaintCorrection('')
             setCoatingSelected(true);
         }
     }
@@ -591,7 +590,6 @@ export default function Contact() {
                         <p className='form-section-heading'>Paint Correction Services <a href='/services/single-stage-correction' className='aside-link'><BiLinkExternal /></a></p>
                         <p style={{ marginTop: 0, }}>(Exterior Add-ons go great with our Paint Correction Services too!)</p>
                         <div>
-
                             <input type="checkbox" name="paintCorrection" id="Single Stage" value="Single Stage" className='radio-button' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => handleRadioClick(e, 'paintCorrection')} checked={paintCorrection === 'Single Stage'} />
                             <label htmlFor="Single Stage" className='checkbox-label'>Single Stage Paint Correction <span className='special-package italic'>($300-$850)</span></label>
                             <input type="checkbox" name="paintCorrection" id="Two Stage" value="Two Stage" className='radio-button' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => handleRadioClick(e, 'paintCorrection')} checked={paintCorrection === 'Two Stage'} />
