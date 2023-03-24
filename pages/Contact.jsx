@@ -56,6 +56,7 @@ export default function Contact() {
             "Dog Hair": formRef.current['Little to None'].checked ? 'Little to None' : formRef.current['Medium Hair'].checked ? 'Medium Hair' : formRef.current['Lots of Hair'].checked ? 'Lots of Hair' : '',
 
             "Exterior Wash": formRef.current['Dirt-Less Wash'].checked ? 'Dirt-Less Wash' : '',
+            "Clay Bar": e.target['claybar'].checked ? 'Yes' : 'No',
             "Engine Bay": e.target['engine'].checked ? 'Yes' : 'No',
             "Glass Polishing": e.target['glassEx'].checked ? 'Yes' : 'No',
             "Waterspot Removal": e.target['waterspotEx'].checked ? 'Yes' : 'No',
@@ -534,7 +535,7 @@ export default function Contact() {
                             <div className="label-container">
                                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f06c6b85-4960-420b-0948-e14d69910a00/public')`}} className="label-image"></div>
                                 <input type="checkbox" name="dirtiness" id="Very Dirty" value="Very Dirty" className='radio-button' onChange={(e) => handleRadioClick(e, 'dirtiness')} checked={dirtiness === "Very Dirty"} />
-                                <label htmlFor="Very Dirty" className='dirty-label' style={{color: 'red'}}>Very Dirty</label>
+                                <label htmlFor="Very Dirty" className='dirty-label' style={{color: 'red'}}>Extremely Dirty</label>
                             </div>
                         </div>
 
@@ -572,6 +573,8 @@ export default function Contact() {
 
                         <p className="form-section-heading">Exterior Add-ons <a href='/services/add-ons#exterior' className='aside-link'><BiLinkExternal /></a></p>
                         <div>
+                            <input type="checkbox" id='claybar' name="claybar" className='checkbox-input' disabled={!coatingSelected ? "" : "disabled"} />
+                            <label htmlFor="claybar" className='checkbox-label' style={{ marginBottom: 16 }}>Clay Bar Treatment <span className='special-package italic'>($50-$75)</span></label>
                             <input type="checkbox" id='engine' name="engine" className='checkbox-input' disabled={!coatingSelected ? "" : "disabled"} />
                             <label htmlFor="engine" className='checkbox-label' style={{ marginBottom: 16 }}>Engine Bay <span className='special-package italic'>($80)</span></label>
 
