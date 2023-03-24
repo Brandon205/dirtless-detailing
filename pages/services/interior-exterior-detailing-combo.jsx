@@ -132,8 +132,6 @@ export default function Combo() {
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50-$100</p>
                   <strong className='size text-addition'>Clay Bar Treatment</strong>
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50</p>
-                  {/* <p className="example-vehicle pricing-border">Smaller Trucks</p>
-                  <p className="example-vehicle pricing-border">2 Door Cars</p> */}
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
                 <div className="pricing-card text-black">
@@ -147,8 +145,6 @@ export default function Combo() {
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50-$100</p>
                   <strong className='size text-addition'>Clay Bar Treatment</strong>
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50</p>
-                  {/* <p className="example-vehicle pricing-border">Mid-Size SUV's</p>
-                  <p className="example-vehicle pricing-border">Most 4-5 Door Cars</p> */}
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
                 <div className="pricing-card text-black">
@@ -162,8 +158,6 @@ export default function Combo() {
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50-$100</p>
                   <strong className='size text-addition'>Clay Bar Treatment</strong>
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$75</p>
-                  {/* <p className="example-vehicle pricing-border">Large Trucks</p>
-                  <p className="example-vehicle pricing-border">Extra Large Vehicles</p> */}
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
                 <div className="pricing-card text-black">
@@ -177,8 +171,6 @@ export default function Combo() {
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50-$100</p>
                   <strong className='size text-addition'>Clay Bar Treatment</strong>
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$75</p>
-                  {/* <p className="example-vehicle pricing-border">3 Row SUV's, Minivans</p>
-                  <p className="example-vehicle pricing-border">Large trucks</p> */}
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
               </div>
@@ -186,13 +178,13 @@ export default function Combo() {
               <h3 className='pricing-title text-white'>Extra Add-ons <a href='/services/add-ons' className='aside-link'><BiLinkExternal /></a></h3>
               <p className='subtext'>Add-ons that are most commonly paired with our Combo deal.</p>
               <div className="pricing-container">
-                <div className="pricing-card text-black fixed-height">
+                <div className="pricing-card text-black">
                   <strong className='size'>Glass Polishing</strong>
                   <p>Removes Waterspots and stains from your glass.</p>
                   <p className="pricing-price pricing-border">$80/hour</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
-                <div className="pricing-card text-black fixed-height">
+                <div className="pricing-card text-black">
                   <strong className='size'>Waterspot/Overspray Removal</strong>
                   <p>Remove Waterspots and Overspray from your vehicles paint.</p>
                   <p className="pricing-price pricing-border">$80/hour</p>

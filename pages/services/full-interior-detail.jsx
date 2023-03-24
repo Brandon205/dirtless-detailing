@@ -171,19 +171,19 @@ export default function FullIntEx() {
               <h3 className='pricing-title text-white'>Extra Add-ons <a href='/services/add-ons' className='aside-link'><BiLinkExternal /></a></h3>
               <strong className='subtext'>Some of our most popular add-ons that are usually added on top of our Interior Cleaning Service.</strong>
               <div className="pricing-container">
-                <div className="pricing-card text-black fixed-height">
+                <div className="pricing-card text-black">
                   <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Fabric Ceramic Coating</strong>
                   <p>Get a coat of IGL's Interior Coating.</p>
                   <p className="pricing-price pricing-border">$75</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
-                <div className="pricing-card text-black fixed-height">
+                <div className="pricing-card text-black">
                   <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Leather Ceramic Coating</strong>
                   <p>Get a coat of IGL's Leather Coating professionally applied.</p>
                   <p className="pricing-price pricing-border">$150</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
-                <div className="pricing-card text-black fixed-height">
+                <div className="pricing-card text-black">
                   <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Ozone Treatment</strong>
                   <p>Have an ozone treatment done to remove odors and clean the air in your car.</p>
                   <p className="pricing-price pricing-border">$100</p>

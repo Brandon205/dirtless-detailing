@@ -157,7 +157,7 @@ export default function SinglePC() {
               <h3 className='pricing-title text-white'>Extra Add-ons <a href='/services/add-ons' className='aside-link'><BiLinkExternal /></a></h3>
               <p className='subtext'>Our current add-ons that are typically paired with a Single Stage Paint Correction.</p>
               <div className="pricing-container">
-                <div className="pricing-card text-black fixed-height">
+                <div className="pricing-card text-black">
                   <strong className='size'>Glass Polishing</strong>
                   <p>Removes Waterspots and stains from your glass.</p>
                   <p className="pricing-price pricing-border">$80/hour</p>
