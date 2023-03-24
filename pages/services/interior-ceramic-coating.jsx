@@ -133,13 +133,13 @@ export default function IntCoatings() {
                         <h4 className='subtext'><span className='special-package'>*</span>Pricing does NOT include an <a href="/services/full-interior-detail" className='aside-link'>Interior Cleaning</a>, which you will want to factor in before getting a coating.</h4>
                         <div className='pricing-container text-black'>
                             <div className="pricing-card">
-                                <strong className='size text-xl'>Fabric Coating</strong>
+                                <strong className='size'>Fabric Coating</strong>
                                 <p className="pricing-price pricing-border">$74<span className='ninety-nine'>99</span></p>
                                 <p className="example-vehicle pricing-border">Any Size Vehicle</p>
                                 <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                             </div>
                             <div className="pricing-card">
-                                <strong className='size text-xl'>Leather Coating</strong>
+                                <strong className='size'>Leather Coating</strong>
                                 <p className="pricing-price pricing-border">$149<span className='ninety-nine'>99</span></p>
                                 <p className="example-vehicle pricing-border">Any Size Vehicle</p>
                                 <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
@@ -150,21 +150,21 @@ export default function IntCoatings() {
                         <h4 className='subtext'>The goal of our monthly maintenance is to keep your vehicle looking like new year-round. Every month you will get a full <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> and a <a href='/services/full-interior-detail' className='aside-link'>Full Interior Detail</a>.</h4>
                         <div className='pricing-container text-black'>
                             <div className="pricing-card">
-                                <strong className='size text-xl'>Small</strong>
+                                <strong className='size'>Small</strong>
                                 <p className="pricing-price pricing-border">$129<span className='ninety-nine'>99</span></p>
                                 <p className="example-vehicle pricing-border">2-Door Coupes</p>
                                 <p className="example-vehicle pricing-border">Single/Extended Cabs</p>
                                 <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                             </div>
                             <div className="pricing-card">
-                                <strong className='size text-xl'>Medium</strong>
+                                <strong className='size'>Medium</strong>
                                 <p className="pricing-price pricing-border">$159<span className='ninety-nine'>99</span></p>
                                 <p className="example-vehicle pricing-border">4 Door Vehicles</p>
                                 <p className="example-vehicle pricing-border">Smaller SUV's</p>
                                 <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                             </div>
                             <div className="pricing-card">
-                                <strong className='size text-xl'>Large</strong>
+                                <strong className='size'>Large</strong>
                                 <p className="pricing-price pricing-border">$189<span className='ninety-nine'>99</span></p>
                                 <p className="example-vehicle pricing-border">Larger Trucks</p>
                                 <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
