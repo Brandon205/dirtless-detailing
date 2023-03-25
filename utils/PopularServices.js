@@ -77,15 +77,15 @@ export default function PopularServices() {
                         </li>
                         <li className="checklist-item">
                             <BsCheck2Circle className='checkcircle' />
-                            <p>Clay Bar and Iron Decontamination</p>
+                            <p>Remove Tar and Sap</p>
                         </li>
                         <li className="checklist-item">
                             <BsCheck2Circle className='checkcircle' />
-                            <p>Apply 6 month sealant</p>
+                            <p>Apply Ceramic Spray Sealant</p>
                         </li>
                         <li className="checklist-item">
                             <BsCheck2Circle className='checkcircle' />
-                            <p>Clean and dress the entire Engine Bay for FREE</p>
+                            <p>Clean and dress the entire Engine Bay for <span className='special-package'>FREE</span></p>
                         </li>
                     </ul>
                 </div>
@@ -124,7 +124,7 @@ export default function PopularServices() {
                         </li>
                         <li className="checklist-item">
                             <BsCheck2Circle className='checkcircle' />
-                            <p>Coat Paint with IGL Kenzo Graphene 10H Ceramic</p>
+                            <p>Coat Paint with IGL's Kenzo Quartz Ceramic 9H Coating</p>
                         </li>
                         <li className="checklist-item">
                             <BsCheck2Circle className='checkcircle' />
