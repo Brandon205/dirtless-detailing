@@ -179,7 +179,7 @@ export default function ExtCoatings() {
                             <div className='package-details'>
                                 <BiCar className='package-icon' />
                                 <h4>Coat Windshield, Lights, and Trim</h4>
-                                <p className='subtext'>Aside from the paint, coating the windshield and lights are crucial areas to apply ceramic coating on a vehicle, we also coat the trim to protect plastic and rubber surfaces.</p>
+                                <p className='subtext'>Aside from the paint, coating the windshield and lights are crucial areas to apply ceramic coating on a vehicle, we will also coat all of the trim.</p>
                             </div>
                             <div className='package-details'>
                                 <SiAdguard className='package-icon' />
@@ -213,7 +213,7 @@ export default function ExtCoatings() {
 
                         <div>
                             <h3 className='pricing-title text-white'>Our Ceramic Coating Pricing</h3>
-                            <h4 className='subtext'>*Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</h4>
+                            <h4 className='subtext'><span className='special-package'>*</span>Pricing <span className='special-package'>INCLUDES</span> a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</h4>
                             <div className="pricing-container text-black">
                                 <div className="pricing-card">
                                     <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Small</strong>
@@ -248,8 +248,8 @@ export default function ExtCoatings() {
                             </div>
 
                             <h3 className='pricing-title text-white'>Our Monthly/Yearly Maintenance Pricing</h3>
-                            <h4 className='subtext'><span className='special-package'>MONTHLY: </span>The goal of our monthly maintenance is to keep your vehicle looking like new year-round. Every month you will get a <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> and a <a href='/services/full-interior-detail' className='aside-link'>Full Interior Detail</a>.</h4>
-                            <h4 className='subtext'><span className='special-package'>YEARLY: </span>Our yearly service goes into far more detail and we will: • Wash the entire vehicle • Perform Iron Decontamination treatment • Top the vehicle off with a ceramic booster • Apply a new coat of ceramic to the windshield.</h4>
+                            <h4 style={{fontSize: '1.3em'}} className='subtext'><span style={{fontSize: '1.3em'}} className='special-package'>MONTHLY SERVICE: </span>Keeping up with this service will grant you with our <span className='special-package'>LIFETIME</span> Warranty. The goal of our monthly maintenance is to keep your vehicle looking like new year-round. Every month you will get a <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> and a <a href='/services/full-interior-detail' className='aside-link'>Full Interior Detail</a>.</h4>
+                            <h4 style={{fontSize: '1.3em'}} className='subtext'><span style={{fontSize: '1.3em'}} className='special-package'>YEARLY SERVICE: </span>To qualify for our <span className='special-package'>2-Year</span> (Protect Service) or the <span className='special-package'>5-Year</span> (Protect+ Service) Warranty. Our yearly service needs to go into much more detail, as your car hasn't been seen by us on a monthly basis, so we will: • Wash the entire vehicle • Perform Iron Decontamination treatment • Top the vehicle off with a ceramic booster • Apply a new coat of ceramic to the windshield.</h4>
                             <div className="pricing-container text-black">
                                 <div className="pricing-card">
                                     <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Small</strong>
