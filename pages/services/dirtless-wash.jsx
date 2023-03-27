@@ -112,39 +112,39 @@ export default function DLWash() {
               <p className='subtext'>*Final pricing may vary based on your vehicle condition and size.</p>
               <div className="pricing-container">
                 <div className="pricing-card text-black">
-                  <strong className='size'>Small</strong>
+                  <strong className='size'>Single Row Trucks and 2-Door Cars</strong>
                   <p className="pricing-price pricing-border">$74<span className='ninety-nine'>99</span></p>
-                  <strong className='size text-addition'>Clay Bar Treatment</strong>
-                  <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50</p>
-                  <p className="example-vehicle pricing-border">Smaller Trucks</p>
-                  <p className="example-vehicle pricing-border">Most Cars</p>
+                  <div className='additions-container'>
+                    <strong className='size text-addition'>Clay Bar Treatment</strong>
+                    <p><span className='special-package'>+</span>$50</p>
+                  </div>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
                 <div className="pricing-card text-black">
-                  <strong className='size'>Medium</strong>
+                  <strong className='size'>Most Mid-Size SUV's and 4-Door Cars</strong>
                   <p className="pricing-price pricing-border">$99<span className='ninety-nine'>99</span></p>
-                  <strong className='size text-addition'>Clay Bar Treatment</strong>
-                  <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50</p>
-                  <p className="example-vehicle pricing-border">Mid-Size SUV's</p>
-                  <p className="example-vehicle pricing-border">Most Wagons</p>
+                  <div className='additions-container'>
+                    <strong className='size text-addition'>Clay Bar Treatment</strong>
+                    <p><span className='special-package'>+</span>$50</p>
+                  </div>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
                 <div className="pricing-card text-black">
-                  <strong className='size'>Large</strong>
+                  <strong className='size'>Most 4-Door Trucks</strong>
                   <p className="pricing-price pricing-border">$124<span className='ninety-nine'>99</span></p>
-                  <strong className='size text-addition'>Clay Bar Treatment</strong>
-                  <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$75</p>
-                  <p className="example-vehicle pricing-border">3 Row SUV's</p>
-                  <p className="example-vehicle pricing-border">Trucks</p>
+                  <div className='additions-container'>
+                    <strong className='size text-addition'>Clay Bar Treatment</strong>
+                    <p><span className='special-package'>+</span>$75</p>
+                  </div>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
                 <div className="pricing-card text-black">
-                  <strong className='size'>Extra Large</strong>
+                  <strong className='size'>3-Row SUV's and Minivans</strong>
                   <p className="pricing-price pricing-border">$149<span className='ninety-nine'>99</span></p>
-                  <strong className='size text-addition'>Clay Bar Treatment</strong>
-                  <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$75</p>
-                  <p className="example-vehicle pricing-border">Larger Trucks</p>
-                  <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
+                  <div className='additions-container'>
+                    <strong className='size text-addition'>Clay Bar Treatment</strong>
+                    <p><span className='special-package'>+</span>$75</p>
+                  </div>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
               </div>

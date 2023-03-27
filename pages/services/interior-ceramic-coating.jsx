@@ -131,17 +131,15 @@ export default function IntCoatings() {
                     <div>
                         <h3 className='pricing-title text-white'>Interior Coating Pricing</h3>
                         <h4 className='subtext'><span className='special-package'>*</span>Pricing does NOT include an <a href="/services/full-interior-detail" className='aside-link'>Interior Cleaning</a>, which you will want to factor in before getting a coating.</h4>
-                        <div className='pricing-container text-black'>
+                        <div style={{width: '75%'}} className='pricing-container text-black'>
                             <div className="pricing-card">
-                                <strong className='size'>Fabric Coating</strong>
+                                <strong className='size'>Fabric Coating<br /> (Any Size Vehicle)</strong>
                                 <p className="pricing-price pricing-border">$74<span className='ninety-nine'>99</span></p>
-                                <p className="example-vehicle pricing-border">Any Size Vehicle</p>
                                 <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                             </div>
                             <div className="pricing-card">
-                                <strong className='size'>Leather Coating</strong>
+                                <strong className='size'>Leather Coating<br /> (Any Size Vehicle)</strong>
                                 <p className="pricing-price pricing-border">$149<span className='ninety-nine'>99</span></p>
-                                <p className="example-vehicle pricing-border">Any Size Vehicle</p>
                                 <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                             </div>
                         </div>
