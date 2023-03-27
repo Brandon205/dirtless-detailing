@@ -132,8 +132,6 @@ export default function FullIntEx() {
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50-$100</p>
                   <strong className='size text-addition'>CLEAN Headliners</strong>
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$40-$80</p>
-                  {/* <p className="example-vehicle pricing-border">2-Door Coupes</p>
-                  <p className="example-vehicle pricing-border">Single/Extended Cabs</p> */}
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
                 <div className="pricing-card text-black">
@@ -147,8 +145,6 @@ export default function FullIntEx() {
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50-$100</p>
                   <strong className='size text-addition'>CLEAN Headliners</strong>
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$40-$80</p>
-                  {/* <p className="example-vehicle pricing-border">Most 4 Door Vehicles</p>
-                  <p className="example-vehicle pricing-border">Most Trucks</p> */}
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
                 <div className="pricing-card text-black">
@@ -162,8 +158,6 @@ export default function FullIntEx() {
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50-$100</p>
                   <strong className='size text-addition'>CLEAN Headliners</strong>
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$40-$80</p>
-                  {/* <p className="example-vehicle pricing-border">3 Row SUV's</p>
-                  <p className="example-vehicle pricing-border">Minivans</p> */}
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
               </div>

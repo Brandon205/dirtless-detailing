@@ -112,7 +112,6 @@ export default function Combo() {
                 <div className="card card-tall" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/42b27e69-bb43-40d4-55c0-4be942f7a300/public')`}}></div>
                 <div className="card card-tall" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6fb3a112-d77a-41fb-e7ec-728b2185b600/public')`}}></div>
               </div>
-
             </div>
 
             <br className='extra-space' />
@@ -125,11 +124,13 @@ export default function Combo() {
                   <strong className='size pricing-border'>Single Row Trucks and 2-Door Cars</strong>
                   <strong className='size'>Starting Price</strong>
                   <p className="pricing-price pricing-border">$374<span className='ninety-nine'>99</span></p>
-                  <strong className='size text-addition'>ADD Stain Extraction</strong>
+                  <strong className='size text-addition'>Add Stain Extraction</strong>
                   <p style={{borderBottom: 'none', paddingBottom: 0}} className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$35 (Seats)</p>
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$35 (Carpets)</p>
-                  <strong className='size text-addition'>REMOVE Pet Hair</strong>
+                  <strong className='size text-addition'>Remove Pet Hair</strong>
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50-$100</p>
+                  <strong className='size text-addition'>Clean Headliners</strong>
+                  <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$40-$80</p>
                   <strong className='size text-addition'>Clay Bar Treatment</strong>
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
@@ -138,11 +139,13 @@ export default function Combo() {
                   <strong className='size pricing-border'>Most Mid-Size SUV's and 4-Door Cars</strong>
                   <strong className='size'>Starting Price</strong>
                   <p className="pricing-price pricing-border">$449<span className='ninety-nine'>99</span></p>
-                  <strong className='size text-addition'>ADD Stain Extraction</strong>
+                  <strong className='size text-addition'>Add Stain Extraction</strong>
                   <p style={{borderBottom: 'none', paddingBottom: 0}} className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50 (Seats)</p>
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50 (Carpets)</p>
-                  <strong className='size text-addition'>REMOVE Pet Hair</strong>
+                  <strong className='size text-addition'>Remove Pet Hair</strong>
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50-$100</p>
+                  <strong className='size text-addition'>Clean Headliners</strong>
+                  <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$40-$80</p>
                   <strong className='size text-addition'>Clay Bar Treatment</strong>
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
@@ -151,11 +154,13 @@ export default function Combo() {
                   <strong className='size pricing-border'>Most 4-Door Trucks</strong>
                   <strong className='size'>Starting Price</strong>
                   <p className="pricing-price pricing-border">$474<span className='ninety-nine'>99</span></p>
-                  <strong className='size text-addition'>ADD Stain Extraction</strong>
+                  <strong className='size text-addition'>Add Stain Extraction</strong>
                   <p style={{borderBottom: 'none', paddingBottom: 0}} className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50 (Seats)</p>
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50 (Carpets)</p>
-                  <strong className='size text-addition'>REMOVE Pet Hair</strong>
+                  <strong className='size text-addition'>Remove Pet Hair</strong>
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50-$100</p>
+                  <strong className='size text-addition'>Clean Headliners</strong>
+                  <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$40-$80</p>
                   <strong className='size text-addition'>Clay Bar Treatment</strong>
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$75</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
@@ -164,11 +169,13 @@ export default function Combo() {
                   <strong className='size pricing-border'>3-Row SUV's and Minivans</strong>
                   <strong className='size'>Starting Price</strong>
                   <p className="pricing-price pricing-border">$524<span className='ninety-nine'>99</span></p>
-                  <strong className='size text-addition'>ADD Stain Extraction</strong>
+                  <strong className='size text-addition'>Add Stain Extraction</strong>
                   <p style={{borderBottom: 'none', paddingBottom: 0}} className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$75 (Seats)</p>
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$75 (Carpets)</p>
-                  <strong className='size text-addition'>REMOVE Pet Hair</strong>
+                  <strong className='size text-addition'>Remove Pet Hair</strong>
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$50-$100</p>
+                  <strong className='size text-addition'>Clean Headliners</strong>
+                  <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$40-$80</p>
                   <strong className='size text-addition'>Clay Bar Treatment</strong>
                   <p className="pricing-price pricing-border text-large"><span className='special-package'>+</span>$75</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
