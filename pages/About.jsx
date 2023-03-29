@@ -96,9 +96,16 @@ export default function About() {
         </div>
       </div>
 
-      <section className="about-container">
-        <h2>Who are we?</h2>
-        <p>Dirt-Less Detailing was started with two things in mind. Providing the absolute best results and customer service your money can buy.</p>
+      <section style={{marginTop: 10 + 'vh', lineHeight: '2', fontSize: '1.2em'}} className="about-container">
+        <div className="service-explain">
+          <div className="text-left">
+            <h2 className="text-large">Who Are We?</h2>
+            <p>Dirt-Less Detailing is a premier auto detailing company founded last year by an experienced detailer with 7 years of industry knowledge. We specialize in restoring your vehicle's beauty, inside and out. Our mission is simple - to provide you with the best results and customer service that your money can buy. Let us make your car shine like new again!</p>
+            <p>At Dirt-Less Detailing, we are passionate about providing top-notch auto detailing services to our valued clients. With our comprehensive range of services, including interior and exterior detailing, ceramic coatings, paint corrections, and engine bay washes, we strive to keep your vehicle looking and performing its best. Trust us to provide the care and attention to detail that your car deserves.</p>
+            <p>Our main shop location is right in <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className='aside-link' target="_blank" rel='noopener'>Bonney Lake</a> off of 410.</p>
+          </div>
+          <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/public')`}}></div>
+        </div>
 
         <h3>FAQ</h3>
         <ul className='faq-ul'>

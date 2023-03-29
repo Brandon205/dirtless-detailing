@@ -1,6 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 
 export default function PaintCorrectionGallery() {
@@ -26,6 +28,21 @@ export default function PaintCorrectionGallery() {
         </div>
       </div>
 
+      <div style={{width: '90vw', margin: '0 auto'}} className="service-explain text-white">
+        <div className="text-left">
+          <h2 className="text-large">Paint Correction Before and After Photos</h2>
+          <p>Unveil Your Car's True Potential: Our Paint Correction Gallery displays the transformative power of our cutting-edge techniques and tools, restoring the flawless finish of even the most damaged and neglected paint jobs.</p>
+        </div>
+      </div>
+      <div style={{gridAutoRows: '30vh'}} className="photo-grid place-center">
+        <Zoom>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/9e4d290e-ad89-4cc9-1f10-a1d37790cb00/public')`, width: 260 + 'px', height: 30 + 'vh'}}></div>
+        </Zoom>
+      </div>
+
+      <br className="extra-space" />
+
+      <h2 className="text-large text-white">More Images from our Paint Correction Services</h2>
       <div className="photo-grid">
         <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ef4953cd-466a-4752-9d87-12ddba64d700/public')`}}></div>
         <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a205f097-f145-41b5-8af5-98a046dca700/public')`}}></div>
