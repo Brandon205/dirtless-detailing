@@ -148,7 +148,7 @@ export default function MyApp({ Component, pageProps }) {
                                             <a href="/gallery/interior-detail-gallery" className='menu-link'><FaPhotoVideo /> Full Interior Gallery</a>
                                         </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
-                                            <a href="/gallery/dirtless-wash-gallery" className='menu-link'><BsFillCameraFill /> Exterior Wash Gallery</a>
+                                            <a href="/gallery/dirtless-wash-gallery" className='menu-link'><BsFillCameraFill /> Dirt-Less Wash Gallery</a>
                                         </li>
                                         <li className='sub-menu-li' onClick={() => setNav('none')}>
                                             <a href="/gallery/engine-bay-gallery" className='menu-link'><TbEngine /> Engine Bay Gallery</a>
