@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 import { BiLinkExternal } from 'react-icons/bi';
 import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 
@@ -48,7 +50,7 @@ export default function Combo() {
       <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2f40a30b-c1c1-4dba-3b4b-9f3521eaa800/cover')`}}></div>
       <div className="servicepage-header">
         <h1>Full Interior and Exterior Combo</h1>
-        <h2 className='page-subheading'>Full Interior Cleaning, Dirt-Less Wash, and get an Engine Bay Cleaning on us!</h2>
+        <h2 className='page-subheading'>Full Interior Cleaning, Dirt-Less Wash, and an Engine Bay Cleaning on us!</h2>
         <div className='header-buttons'>
           <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
           <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
@@ -62,7 +64,7 @@ export default function Combo() {
               <div className="service-explain">
                 <div className="text-left">
                   <h2 className='text-large'>Interior and Exterior Combo Cleaning</h2>
-                  <p>The full enchilada! Our most complete detailing package and the best value package we offer. You get a <a href="/services/full-interior-detail" className='aside-link'>Full Interior Detail</a>, a <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a>, and a <span className="special-package">FREE</span> <a href="/services/add-ons#engine" className='aside-link'>Engine Bay Detail</a> on the house!</p>
+                  <p>Our Combo Service offers a comprehensive package that includes a thorough  <a href="/services/full-interior-detail" className='aside-link'>Full Interior Detail</a> and a <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a>, as well as a <span className="special-package">FREE</span> <a href="/services/add-ons#engine" className='aside-link'>Engine Bay Cleaning</a> to keep your vehicle in top shape. Trust us to leave your car looking and feeling like new with our expert attention to detail and use of high-quality products.</p>
                   <p>If you are after the most thorough interior and exterior detail you can find, or even trying to get the most money when selling your vehicle, this is the package for you!</p>
                 </div>
                 <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3031c630-d6f2-48fc-1bb4-62844fbd5a00/public')`}}></div>
@@ -103,18 +105,8 @@ export default function Combo() {
                   </div>
                 </li>
               </ol>
-
               <br className='extra-space' />
-
-              <h4 className='text-large'>Another example of our completed Combo Work:</h4>
-              <div className="photo-grid">
-                <div className="card card-tall" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c537680c-f103-4032-65e3-11370c73d300/public')`}}></div>
-                <div className="card card-tall" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/42b27e69-bb43-40d4-55c0-4be942f7a300/public')`}}></div>
-                <div className="card card-tall" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6fb3a112-d77a-41fb-e7ec-728b2185b600/public')`}}></div>
-              </div>
             </div>
-
-            <br className='extra-space' />
 
             <div>
               <h3 className='pricing-title text-white'>Our Combo Deal Pricing</h3>
@@ -230,8 +222,24 @@ export default function Combo() {
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
               </div>
-
             </div>
+
+            <br className='extra-space' />
+
+            <h4 className='text-large'>Another example of our completed Combo Work:</h4>
+            <div style={{gridAutoRows: '50vh'}} className="photo-grid place-center">
+              <Zoom>
+                <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c537680c-f103-4032-65e3-11370c73d300/public')`, width: 400 + 'px', height: 50 + 'vh'}}></div>
+              </Zoom>
+              <Zoom>
+                <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/42b27e69-bb43-40d4-55c0-4be942f7a300/public')`, width: 400 + 'px', height: 50 + 'vh'}}></div>
+              </Zoom>
+              <Zoom>
+                <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6fb3a112-d77a-41fb-e7ec-728b2185b600/public')`, width: 400 + 'px', height: 50 + 'vh'}}></div>
+              </Zoom>
+            </div>
+
+            <br className='extra-space' />
 
           </div>
 
