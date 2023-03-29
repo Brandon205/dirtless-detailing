@@ -1,6 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 
 export default function FullIntGallery() {
@@ -26,9 +28,49 @@ export default function FullIntGallery() {
         </div>
       </div>
 
+      <div style={{width: '90vw', margin: '0 auto'}} className="service-explain text-white">
+        <div className="text-left">
+          <h2 className="text-large">Interior Before and After photos</h2>
+          <p>Experience the Luxury of a Pristine Interior: Our Interior Detailing Gallery displays the incredible results of our comprehensive detailing services on the many vehicles we've worked on, highlighting our commitment to quality and attention to detail.</p>
+        </div>
+      </div>
+      <div style={{gridAutoRows: '30vh'}} className="photo-grid place-center">
+        <Zoom>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7e7cbef8-df97-4821-1aa4-13dd0f99d400/public')`, width: 260 + 'px', height: 30 + 'vh'}}></div>
+        </Zoom>
+        <Zoom>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/be771e29-71fe-47b0-8fa3-0419d7991800/public')`, width: 260 + 'px', height: 30 + 'vh'}}></div>
+        </Zoom>
+        <Zoom>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/377058f9-ccde-4c74-8ad8-e969d0d7cb00/public')`, width: 260 + 'px', height: 30 + 'vh'}}></div>
+        </Zoom>
+        <Zoom>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5c4c38ce-70eb-4e06-8e57-b567b6852600/public')`, width: 260 + 'px', height: 30 + 'vh'}}></div>
+        </Zoom>
+        <Zoom>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7e7f0840-f8da-413d-8ffc-d860260b8500/public')`, width: 260 + 'px', height: 30 + 'vh'}}></div>
+        </Zoom>
+        <Zoom>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/35529183-852b-444d-21f7-e115fd2f7a00/public')`, width: 260 + 'px', height: 30 + 'vh'}}></div>
+        </Zoom>
+        <Zoom>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/fc07a7ff-a339-48b8-cda9-b7dd7f0d5900/public')`, width: 260 + 'px', height: 30 + 'vh'}}></div>
+        </Zoom>
+        <Zoom>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c9eb4d1f-d3d1-4865-875f-2f569520e700/public')`, width: 260 + 'px', height: 30 + 'vh'}}></div>
+        </Zoom>
+        <Zoom>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/400ec429-66ab-4dec-e992-a60d6d5d4b00/public')`, width: 260 + 'px', height: 30 + 'vh'}}></div>
+        </Zoom>
+        <Zoom>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/00cf8ed5-c134-4532-5f8c-356bc06caf00/public')`, width: 260 + 'px', height: 30 + 'vh'}}></div>
+        </Zoom>
+      </div>
+
+      <br className="extra-space" />
+
+      <h2 className="text-large text-white">More Images from our Interior Detailing Services</h2>
       <div className="photo-grid">
-        <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7e7cbef8-df97-4821-1aa4-13dd0f99d400/public')`}}></div>
-        <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/be771e29-71fe-47b0-8fa3-0419d7991800/public')`}}></div>
         <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/07c0720a-4281-4c16-bfb7-01fcc942d100/public')`}}></div>
         <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/878bae8f-0568-46c7-ba04-9a1025e24300/public')`}}></div>
         <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f6e423a1-7430-40bc-9e61-2c93a8c9f100/public')`}}></div>
@@ -54,7 +96,6 @@ export default function FullIntGallery() {
         <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ca98f257-8727-4688-56fa-56fffe647200/public')`}}></div>
         <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e7d160ba-aac9-46f5-985d-1a9dc5d0d600/public')`}}></div>
         <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4c1641c6-5da3-4bc4-6962-92a721a24300/public')`}}></div>
-        <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e2d544ec-b25c-4d22-53c2-bdf651767200/public')`}}></div>
         <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e2d544ec-b25c-4d22-53c2-bdf651767200/public')`}}></div>
         <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/cf3f9ae6-55af-4cca-b900-9b89f4a6d500/public')`}}></div>
         <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7e9aa1a7-5196-4e41-6964-6432a26a0100/public')`}}></div>
@@ -98,7 +139,6 @@ export default function FullIntGallery() {
         <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/1d9fa3c0-9cda-40f6-9c81-8b1d231a8900/public')`}}></div>
         <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e87046e0-064b-4bc3-1b0a-b45c5c72ad00/public')`}}></div>
         <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d83defe9-6419-4ae2-e777-4dd6e57e7000/public')`}}></div>
-        <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5519f886-ca2f-43d8-b3a6-617a17278d00/public')`}}></div>
         <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/26aa8532-5746-4ffd-5c6f-c8bea4d4e200/public')`}}></div>
         <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/22119e06-9793-41ca-984d-9ef85b303200/public')`}}></div>
         <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7ccbfc8c-7794-4443-932d-3baed2dc7100/public')`}}></div>

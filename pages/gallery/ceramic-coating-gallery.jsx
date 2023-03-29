@@ -26,6 +26,8 @@ export default function CoatingGallery() {
         </div>
       </div>
       <div className="photo-grid">
+        <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/84a0827d-9311-458e-dc03-f5f300669d00/public')`}}></div>
+        <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/29a47701-c7df-4637-bbf3-44adad7a3000/public')`}}></div>
         <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a7cc8a20-819f-4ef2-8b36-d41dc99bc200/public')`}}></div>
         <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/535a82f6-dd2b-450c-99fc-1bedd61bf700/public')`}}></div>
         <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/568455f2-1e76-41bd-3ab9-7dcb5c7e2500/public')`}}></div>

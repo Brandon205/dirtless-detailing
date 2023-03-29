@@ -1,6 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 
 export default function PaintCorrectionGallery() {
@@ -26,6 +28,21 @@ export default function PaintCorrectionGallery() {
         </div>
       </div>
 
+      <div style={{width: '90vw', margin: '0 auto'}} className="service-explain text-white">
+        <div className="text-left">
+          <h2 className="text-large">Engine Bay Before and After</h2>
+          <p>Unleash the Power Under the Hood: Our Engine Bay Cleaning Gallery showcases the transformative results of our thorough engine bay cleaning services on a variety of vehicles.</p>
+        </div>
+      </div>
+      <div style={{gridAutoRows: '30vh'}} className="photo-grid place-center">
+        <Zoom>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/99a7f37a-45be-4aad-1b80-c86cc4120400/public')`, width: 260 + 'px', height: 30 + 'vh'}}></div>
+        </Zoom>
+      </div>
+
+      <br className="extra-space" />
+
+      <h2 className="text-large text-white">More Images from our Engine Bay Washes</h2>
       <div className="photo-grid">
         <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5dc233ba-d226-416f-d078-eb45d9185300/public')`}}></div>
         <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/13765ea9-d7bf-48ec-cf73-af8442d50300/public')`}}></div>

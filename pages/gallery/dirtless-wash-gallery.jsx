@@ -31,7 +31,7 @@ export default function PaintCorrectionGallery() {
 
       <div style={{width: '90vw', margin: '0 auto'}} className="service-explain text-white">
         <div className="text-left">
-          <h2 className="text-large">Exterior Before And After photos</h2>
+          <h2 className="text-large">Exterior Before and After photos</h2>
           <p>Revive the Shine of Your Ride: Our Exterior Detailing Gallery showcases the stunning results of our meticulous detailing services on a wide range of vehicles.</p>
         </div>
       </div>
