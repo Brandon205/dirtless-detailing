@@ -40,12 +40,6 @@ export default function PaintCorrectionGallery() {
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/9ff43bd5-bcd3-4664-b8cb-71a354e17300/public')`, width: 260 + 'px', height: 30 + 'vh'}}></div>
         </Zoom>
         <Zoom>
-          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f591456c-7567-4c19-db12-80da8ef25900/public')`, width: 260 + 'px', height: 30 + 'vh'}}></div>
-        </Zoom>
-        <Zoom>
-          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4f30659a-76d0-474e-25d6-a1edb59b6000/public')`, width: 260 + 'px', height: 30 + 'vh'}}></div>
-        </Zoom>
-        <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f33cbb52-1621-49e7-7656-ba47d7ff2700/public')`, width: 260 + 'px', height: 30 + 'vh'}}></div>
         </Zoom>
         <Zoom>

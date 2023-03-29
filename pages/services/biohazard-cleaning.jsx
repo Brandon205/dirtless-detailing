@@ -101,15 +101,6 @@ export default function Bio() {
 
             <br className='extra-space' />
 
-            <h4 className='text-large'>Some extreme examples of our Biohazard cleaning work so far:</h4>
-            <div className="photo-grid">
-              <div className="card card-tall" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b1445bc-f69e-44e8-6336-345384ea5700/public')`}}></div>
-              <div className="card card-tall" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/573ae239-6c34-445b-648b-be2771384600/public')`}}></div>
-              <div className="card card-tall" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/94622f27-c613-4daa-6c08-4d0cb31af800/public')`}}></div>
-            </div>
-
-            <br className='extra-space' />
-
             <div>
               <h3 className='pricing-title text-white'>Our Biohazard Cleaning Pricing</h3>
               <p className='subtext'>*Final pricing may vary within the ranges below based on your vehicle condition and size.</p>
@@ -123,9 +114,16 @@ export default function Bio() {
                 </div>
               </div>
             </div>
+
+            <h4 className='text-large'>Some extreme examples of our Biohazard cleaning work so far:</h4>
+            <div className="photo-grid">
+              <div className="card card-tall" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b1445bc-f69e-44e8-6336-345384ea5700/public')`}}></div>
+              <div className="card card-tall" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/573ae239-6c34-445b-648b-be2771384600/public')`}}></div>
+              <div className="card card-tall" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/94622f27-c613-4daa-6c08-4d0cb31af800/public')`}}></div>
+            </div>
+            <br className='extra-space' />
           </div>
 
-          <br className='extra-space' />
 
         </div>
 

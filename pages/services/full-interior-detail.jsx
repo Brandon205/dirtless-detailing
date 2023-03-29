@@ -73,7 +73,7 @@ export default function FullIntEx() {
       <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/cover')`}}></div>
       <div className="servicepage-header">
         <h1>Full Interior Cleaning</h1>
-        <h2 className='page-subheading'>Easy and hassle free thorough interior cleaning service</h2>
+        <h2 className='page-subheading'>Our easy and hassle-free thorough Interior Detailing Service.</h2>
         <div className='header-buttons'>
           <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
           <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>

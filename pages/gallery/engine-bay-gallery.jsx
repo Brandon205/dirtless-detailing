@@ -12,15 +12,15 @@ export default function PaintCorrectionGallery() {
         <title>Engine Bay Gallery | Dirt-Less Detailing</title>
         <Metatags
           title='Engine Bay Gallery | Dirt-Less Detailing'
-          description='Check out photos from our engine bay cleaning service here. This is a great showcase of the final product our washing procedure creates.'
+          description='Check out photos from our engine bay washing service here. This is a great showcase of the final product our washing procedure creates.'
           image={'https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a7dcc1f9-9d92-4c21-cf16-fa498046af00/public'}
           canonical='/gallery/engine-bay-gallery'
         />
       </Head>
       <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a7dcc1f9-9d92-4c21-cf16-fa498046af00/cover')`}}></div>
       <div className="servicepage-heading">
-        <h1>Engine Cleaning Gallery</h1>
-        <p>Check out the gallery below to see what we can do to clean your engine bay. Take a look at our <a href="/services/add-ons#engine" className='aside-link' >Engine Cleaning</a> section on our add-ons page for more info.</p>
+        <h1>Engine Bay Wash Gallery</h1>
+        <p>Check out the gallery below to see what we can do to clean your engine bay. Take a look at our <a href="/services/add-ons#engine" className='aside-link' >Engine Bay Wash</a> section on our add-ons page for more info.</p>
 
         <div className='header-buttons'>
           <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
@@ -31,12 +31,12 @@ export default function PaintCorrectionGallery() {
       <div style={{width: '90vw', margin: '0 auto'}} className="service-explain text-white">
         <div className="text-left">
           <h2 className="text-large">Engine Bay Before and After</h2>
-          <p>Unleash the Power Under the Hood: Our Engine Bay Cleaning Gallery showcases the transformative results of our thorough engine bay cleaning services on a variety of vehicles.</p>
+          <p>Unleash the Power Under the Hood: Our Engine Bay Washing Gallery showcases the transformative results of our thorough engine bay washing services on a variety of vehicles.</p>
         </div>
       </div>
-      <div style={{gridAutoRows: '30vh'}} className="photo-grid place-center">
+      <div style={{gridAutoRows: '20vh'}} className="photo-grid place-center">
         <Zoom>
-          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/99a7f37a-45be-4aad-1b80-c86cc4120400/public')`, width: 260 + 'px', height: 30 + 'vh'}}></div>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a80696d7-7afb-4d51-6507-614e3757b100/public')`, width: 55 + 'vw', height: 20 + 'vh'}}></div>
         </Zoom>
       </div>
 
@@ -67,7 +67,7 @@ export default function PaintCorrectionGallery() {
         <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6649be49-1ef8-475a-6610-695cc8619a00/public')`}}></div>
         <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/207eb43c-9ccb-42d1-356b-2d8f04136900/public')`}}></div>
       </div>
-      <h2 style={{ color: 'white' }}>Check out the Engine Cleaning option on our <a href="/services/add-ons#engine" className='aside-link' >Add-ons</a> page for more details!</h2>
+      <h2 style={{ color: 'white' }}>Check out the Engine Bay Wash option on our <a href="/services/add-ons#engine" className='aside-link' >Add-ons</a> page for more details!</h2>
     </section>
   )
 }
