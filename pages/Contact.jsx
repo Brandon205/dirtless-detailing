@@ -84,8 +84,32 @@ export default function Contact() {
         });
 
         
-        if (intSelected && dirtiness === '' || dogHair === '') {
-            toast.error("Please fill out the Interior Dirtiness and Dog Hair Sections.", {
+        if (intSelected) {
+            if (dirtiness === '' || dogHair === '') {
+                console.log(intSelected, dirtiness, dogHair)
+                toast.error("Please fill out the Interior Dirtiness and Dog Hair Sections.", {
+                    position: "bottom-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined
+                })
+            } else {
+                finalSubmit(formData);
+            }
+        } else if (!intSelected || dirtiness !== '' && dogHair !== '') {
+            finalSubmit(formData)
+        }
+    };
+
+    const finalSubmit = (formData) => {
+        fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
+            method: "POST",
+            body: formData
+        }).then((test) => {
+            toast.success("Form submitted! Expect a text response from us soon!", {
                 position: "bottom-center",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -94,36 +118,21 @@ export default function Contact() {
                 draggable: true,
                 progress: undefined
             })
-        } else if (!intSelected || dirtiness !== '' && dogHair !== '') {
-            fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
-                method: "POST",
-                body: formData
-            }).then((test) => {
-                toast.success("Form submitted! Expect a text response from us soon!", {
-                    position: "bottom-center",
-                    autoClose: 5000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined
-                })
-                e.target.reset()
-            setPhoneNumber('')
-                window.scrollTo(0, 0)
-            }).catch(error => {
-                toast.error("An error occurred, please try again." + error, {
-                    position: "bottom-center",
-                    autoClose: 5000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined
-                })
-            });
-        }
-    };
+            e.target.reset()
+        setPhoneNumber('')
+            window.scrollTo(0, 0)
+        }).catch(error => {
+            toast.error("An error occurred, please try again." + error, {
+                position: "bottom-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined
+            })
+        });
+    }
 
     let handleGiftSelect = (giftButton) => {
         setGift(giftButton)
