@@ -49,6 +49,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+div [data-rmiz-modal-overlay="visible"] {
+  background-color: var(--contact-bkg-lighter);
+}
+
 .App {
   text-align: center;
 }

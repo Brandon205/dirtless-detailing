@@ -37,7 +37,7 @@ export default function PaintCorrectionGallery() {
       </div>
       <div className="photo-grid place-center">
         <Zoom>
-          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/9ff43bd5-bcd3-4664-b8cb-71a354e17300/public')`, width: 260 + 'px', height: 30 + 'vh'}}></div>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d460cace-e72a-4781-d297-a57c1ae9dc00/public')`, width: 260 + 'px', height: 30 + 'vh'}}></div>
         </Zoom>
         <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f33cbb52-1621-49e7-7656-ba47d7ff2700/public')`, width: 260 + 'px', height: 30 + 'vh'}}></div>

@@ -252,6 +252,7 @@ export default function Contact() {
                     <h3 style={{ marginBottom: 0 }}>Need us to come to you?</h3>
                     <p className="hours-p" style={{ marginBottom: 0 }}>We can perform mobile detailing in the following cities:</p>
                     <p className="hours-p"><span style={{ fontWeight: 'bold', color: '#9f9f9f' }}> Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Tehaleh, Black Diamond, Milton, Edgewood, and Graham.</span></p>
+                    <p className='subtext italic'>*Note: If the total of the services you choose is less than $200, there is a $1/mile from our shop fee to cover travel costs.</p>
                     <hr className="contact-border" />
                     <div className="contact-icon-container">
                         <FaClock className='contact-icon' />

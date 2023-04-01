@@ -122,19 +122,19 @@ export default function About() {
           <li className='faq-p'>Yes we do! Any of our services can be bought as a gift certificate. On the <a href="/Contact" className='aside-link'>Contact</a> page choose the "For Someone Else" option.</li>
 
           <li className='faq-li'>What forms of payment do you take?</li>
-          <li className='faq-p'>Currently you can pay by card, cash, or Facebook pay.</li>
+          <li className='faq-p'>Currently you can pay by check, cash, card, or Facebook pay.</li>
 
           <li className='faq-li'>Are you licensed and insured?</li>
           <li className='faq-p'>We are 100% licensed and insured!</li>
 
           <li className='faq-li'>What cities do you service?</li>
-          <li className='faq-p'>With our mobile service we can go out to: Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham.</li>
+          <li className='faq-p'>With our mobile service we can go out to: Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham.<br /> *Note: Mobile service is free only if the total cost of your service is more than $200, otherwise there is a $1/mile fee.</li>
 
           <li className='faq-li'>Do I have to be there the whole time you're working on my car?</li>
           <li className='faq-p'>Absolutely not! You are free to go do whatever you need to do while we are working.</li>
 
           <li className='faq-li'>I have questions about taking care of my car after getting a ceramic coating?</li>
-          <li className='faq-p'>Check out our <a href="/services/exterior-ceramic-coating#faq" className="aside-link">Ceramic Coating</a> FAQ section to get your questions answered!</li>
+          <li className='faq-p'>Check out our <a href="/services/exterior-ceramic-coating#faq" className="aside-link">Ceramic Coating FAQ</a> to get your questions answered!</li>
         </ul>
       </section>
     </div>

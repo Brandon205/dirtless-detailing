@@ -196,7 +196,8 @@ export default function Home() {
                             <li><a href='/location/graham' className='aside-link'>Graham</a><FaMapMarkerAlt /></li>
                         </ul>
                     </div>
-                    <h3>As part of our simple and hassle free service, you can come to us or we can come to you with select packages!</h3>
+                    <h3>As part of our simple and hassle free service, you can come to us or we can come to you with select services!</h3>
+                    <p style={{ marginTop: 0 }}>*Services totalling less than $200 will have a $1/mile from our shop fee.</p>
                 </div>
                 <div className='map'>
                     <iframe title="Map of Dirt-Less Detailing location" width={smallScreen ? '250' : '500'} height={smallScreen ? '300' : '400'} style={{ border: 0 }} loading="lazy" src={`https://www.google.com/maps/embed/v1/place?zoom=15&q=place_id:ChIJxxfUWqz7kFQRotRs8MwWDRE&key=${process.env.GOOGLE_MAPS}`}></iframe>

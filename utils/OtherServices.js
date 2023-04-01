@@ -74,7 +74,7 @@ export default function OtherServices() {
             </div>
             <section className="otherservices-container">
                 <div className="service-card">
-                    <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/213e3fa9-1def-44b2-3031-1901432b9a00/public')` }}></div>
+                    <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/be771e29-71fe-47b0-8fa3-0419d7991800/public')` }}></div>
                     <div className="otherservices-desc">
                         <div>
                             <a href="/services/full-interior-detail" className='service-heading-link'>Full Interior Cleaning</a>
@@ -120,7 +120,7 @@ export default function OtherServices() {
 
             <section className="otherservices-container">
                 <div className="service-card">
-                    <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d7e1e319-7f78-4ac6-907a-9b100171ca00/public')` }}></div>
+                    <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d460cace-e72a-4781-d297-a57c1ae9dc00/public')` }}></div>
                     <div className="otherservices-desc">
                         <div>
                             <a href='/services/dirtless-wash' className='service-heading-link'>Dirt-Less Wash</a>
@@ -133,7 +133,7 @@ export default function OtherServices() {
                 </div>
 
                 <div className="service-card">
-                    <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/caab7c47-0030-4dd7-b338-e56ce725c300/public')` }}></div>
+                    <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d7e1e319-7f78-4ac6-907a-9b100171ca00/public')` }}></div>
                     <div className="otherservices-desc text-center">
                         <div>
                             <a href='/gallery/dirtless-wash-gallery' className='service-heading-link'>EXTERIOR WASH GALLERY</a>
