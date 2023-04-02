@@ -282,9 +282,9 @@ export default function correction() {
 
             <h4 className='text-large'>Visual example of different paint defects:</h4>
             <strong className='subtext'>This gives an example of why deeper scratches aren't removable without repainting.</strong>
-            <div className="photo-grid place-center">
+            <div className="photo-grid">
               <Zoom>
-                <div aria-label="Paint defects info and depth" role='img' className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3c1c25a3-cbab-4f82-91b1-ba2a30626500/public')`, width: 260 + 'px', height: 250 + 'px'}} />
+                <div aria-label="Paint defects info and depth" role='img' className="card card-tall card-wide" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3c1c25a3-cbab-4f82-91b1-ba2a30626500/public')`}} />
               </Zoom>
             </div>
 
