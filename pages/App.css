@@ -23,14 +23,6 @@
   --heading-clr1: #fff;
   --heading-clr2: rgb(185, 185, 185);
   --text-blue: rgb(59, 158, 255);
-
-
-  /* TEMPORARY ROOT SELECTORS: */
-  --diagonalFirst: #c0cbcd;
-  --diagonalSecond: #47ce77;
-  --diagonalThird: #37cf6b;
-  --funnelMain: #37cf6b;
-  --funnelMainHover: #208945;
 }
 
 *,
@@ -1198,7 +1190,7 @@ hr {
   margin: 25vh auto;
 }
 
-.photo-grid {
+/* .photo-grid {
   display: grid;
   gap: 1rem;
   width: 95%;
@@ -1207,31 +1199,75 @@ hr {
 
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-auto-rows: 240px;
+} */
+
+/* .photo-grid.service-grid div {
+  width: 100%;
+  height: 100%;
+} */
+
+.photo-grid {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  margin: 0 auto;
+  padding: 0;
+  gap: 0.25rem;
 }
 
 .card {
   background-position: center;
   background-size: cover;
-  transition: 0.5s ease;
-  border-radius: 1rem;
-}
-
-/* .card:hover {
-  transform: scale(1.1);
-} */
-
-.photo-grid.service-grid div {
   width: 100%;
-  height: 100%;
+  padding-bottom: 56%;
 }
 
-@media screen and (min-width: 600px) {
-  .card-tall {
-    grid-row: span 2 / auto;
+.card-tall {
+  height: 30vh;
+}
+
+.card-wide {
+  width: 50vw;
+}
+
+@media screen and (min-width: 700px) {
+  .photo-grid {
+    grid-template-columns: 2fr 2fr 2fr;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .photo-grid {
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    gap: 0.75rem;
   }
 
   .card-wide {
-    grid-column: span 2 / auto;
+    width: 40vw;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .photo-grid {
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+  }
+
+  .card {
+    border-radius: 1rem;
+  }
+
+  .card-wide {
+    width: 30vw;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .photo-grid {
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+  }
+
+  .card-wide {
+    width: 25vw;
   }
 }
 
@@ -2145,10 +2181,10 @@ hr {
     flex-wrap: wrap;
   }
 
-  .photo-grid {
+  /* .photo-grid {
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     grid-auto-rows: 360px;
-  }
+  } */
 
   .slider-container {
     width: 400px;
