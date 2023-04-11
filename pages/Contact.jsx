@@ -86,7 +86,6 @@ export default function Contact() {
         
         if (intSelected) {
             if (dirtiness === '' || dogHair === '') {
-                console.log(intSelected, dirtiness, dogHair)
                 toast.error("Please fill out the Interior Dirtiness and Dog Hair Sections.", {
                     position: "bottom-center",
                     autoClose: 5000,
@@ -540,8 +539,8 @@ export default function Contact() {
                             </div>
                             <div className="label-container">
                                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f06c6b85-4960-420b-0948-e14d69910a00/public')`}} className="label-image"></div>
-                                <input type="checkbox" name="dirtiness" id="Very Dirty" value="Very Dirty" className='radio-button' onChange={(e) => handleRadioClick(e, 'dirtiness')} checked={dirtiness === "Very Dirty"} />
-                                <label htmlFor="Very Dirty" className='dirty-label' style={{color: 'red'}}>Extremely Dirty</label>
+                                <input type="checkbox" name="dirtiness" id="Extremely Dirty" value="Extremely Dirty" className='radio-button' onChange={(e) => handleRadioClick(e, 'dirtiness')} checked={dirtiness === "Extremely Dirty"} />
+                                <label htmlFor="Extremely Dirty" className='dirty-label' style={{color: 'red'}}>Extremely Dirty</label>
                             </div>
                         </div>
 
@@ -555,8 +554,8 @@ export default function Contact() {
                             </div>
                             <div className="label-container">
                                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/53860f31-e2a6-409d-fc5f-018eb1580e00/public')`}} className="label-image"></div>
-                                <input type="checkbox" name="dogHair" id="Medium Hair" value="Medium Hair" className='radio-button' onChange={(e) => handleRadioClick(e, 'dogHair')} checked={dogHair === "Medium Hair"} />
-                                <label htmlFor="Medium Hair" className='dirty-label' style={{color: 'yellow'}}>Medium Amount</label>
+                                <input type="checkbox" name="dogHair" id="Medium Amount" value="Medium Amount" className='radio-button' onChange={(e) => handleRadioClick(e, 'dogHair')} checked={dogHair === "Medium Amount"} />
+                                <label htmlFor="Medium Amount" className='dirty-label' style={{color: 'yellow'}}>Medium Amount</label>
                             </div>
                             <div className="label-container">
                                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5153d5b2-eae0-4675-361f-5d761349b500/public')`}} className="label-image"></div>
