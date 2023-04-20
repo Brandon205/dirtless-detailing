@@ -14,7 +14,7 @@
   /** Button colors **/
   --main-clr: #c83f03;
   --main-clr-hover: #91350e;
-  --main-clr-lighter: #ff4d00;
+  --main-clr-lighter: #ff975a;
   --quote-clr: #1D96ED;
 
   /** Text and smaller colors **/
@@ -1684,8 +1684,9 @@ hr {
 }
 
 .pricing__img {
-  width: 40vw;
-  height: 40vh;
+  width: 90vw;
+  max-width: 600px;
+  height: 35vh;
   margin-top: -25vh;
   border: 16px solid var(--contact-bkg);
   border-radius: 24px;
@@ -1694,20 +1695,6 @@ hr {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-/* .range {
-  position: relative;
-  width: 80vw;
-  max-width: 600px;
-  height: 5px;
-} */
-
-/* .range input {
-  width: 100%;
-  position: absolute;
-  top: 2px;
-  height: 5px;
-} */
 
 .pricing__range-container {
   display: flex;
@@ -1729,7 +1716,8 @@ hr {
   -webkit-appearance: none;
 }
 
-/*                            RANGE THUMB                            */
+/*                            THUMB STYLING                           */
+/*                            WEBKIT THUMB                           */
 
 .pricing__range::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -1743,6 +1731,16 @@ hr {
   z-index: 5;
 }
 
+.pricing__range::-webkit-slider-thumb:hover {
+  box-shadow: 0 0 10px var(--main-clr);
+}
+
+.pricing__range::-webkit-slider-thumb:focus {
+  box-shadow: 0 0 15px var(--main-clr);
+}
+
+/*                            MOZILLA THUMB                            */
+
 .pricing__range::-moz-range-thumb {
   width: 24px;
   height: 24px;
@@ -1753,6 +1751,16 @@ hr {
   z-index: 5;
 }
 
+.pricing__range::-moz-range-thumb:hover {
+  box-shadow: 0 0 10px var(--main-clr);
+}
+
+.pricing__range::-moz-range-thumb:focus {
+  box-shadow: 0 0 15px #ff975a93;
+}
+
+/*                            MS THUMB                            */
+
 .pricing__range::-ms-thumb {
   width: 24px;
   height: 24px;
@@ -1761,6 +1769,14 @@ hr {
   cursor: pointer;
   border: 0 !important;
   z-index: 5;
+}
+
+.pricing__range::-moz-range-thumb:hover {
+  box-shadow: 0 0 10px var(--main-clr);
+}
+
+.pricing__range::-moz-range-thumb:focus {
+  box-shadow: 0 0 15px var(--main-clr);
 }
 
 /*                            RANGE TRACK                            */
@@ -1858,23 +1874,25 @@ hr {
   display: none;
 }
 
-/* .pricing__datalist {
-  width: 95%;
-  max-width: 1350px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-} */
-
 .pricing__pricecard {
-  background-color: var(--contact-bkg-lighter);
-  padding: 1rem;
-  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 90vw;
+  max-width: 700px;
 }
 
 .pricing__pricecard p {
   margin: 0;
+  font-size: 1.5rem;
   color: #c0c0c0;
+}
+
+.pricing__pricecard strong {
+  background-color: var(--contact-bkg-lighter);
+  padding: 1rem;
+  border-radius: 16px;
 }
 
 .pricing__pricecard-price {
