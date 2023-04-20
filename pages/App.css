@@ -22,7 +22,7 @@
   --secondary-text: #575757;
   --heading-clr1: #fff;
   --heading-clr2: rgb(185, 185, 185);
-  --text-blue: rgb(59, 158, 255);
+  --text-blue: #3b9eff;
 }
 
 *,
@@ -2480,7 +2480,7 @@ hr {
     flex-direction: row-reverse;
     justify-content: center;
     gap: 4vw;
-    margin: 0 auto;
+    width: 100%;
   }
 
   .examples-container {

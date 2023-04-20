@@ -150,7 +150,7 @@ export default function Addons() {
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Debadging</p>
             <p className="secondary-text"><span>$80/hour</span></p>
-            <p className="service-desc text-white">Remove any vehicle badging including any residue left behind after removal</p>
+            <p className="service-desc text-white">Remove any vehicle badging including any residue left behind after removal.</p>
             <div className='internal-links'>
               <a href="/services/dirtless-wash" className="readmore">Dirt-Less Wash</a>
               <a href="/services/single-stage-correction" className="readmore">Single Stage Paint Correction</a>

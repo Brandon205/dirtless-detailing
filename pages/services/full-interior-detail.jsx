@@ -2,6 +2,8 @@ import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import { BiLinkExternal } from 'react-icons/bi';
 import { MdOutlinePermPhoneMsg } from 'react-icons/md';
+import PricingComponent from '../../utils/PricingComponent';
+import addons from '../../utils/Addons';
 
 const steps = [
   ["Expose Hidden Dirt", "Use our Tornador Vortex blowgun which uses compressed air to blow out every spot a vacuum can't reach. It also extracts sand and loose soil from carpeting."],
@@ -14,7 +16,6 @@ const steps = [
 ]
 
 export default function FullIntEx() {
-
   const content = steps.map((item, id) => {
     return (
       <li key={id} className="item">
@@ -80,9 +81,9 @@ export default function FullIntEx() {
         </div>
       </div>
 
-      <div className='main-content-container bg-contact'>
+      <div className='main-content-container'>
         <div className='process-container'>
-          <div>
+          <div style={{width: '100%'}}>
             <main className="service-main">
               <div className="service-explain">
                 <div className="text-left">
@@ -118,6 +119,15 @@ export default function FullIntEx() {
             <br className='extra-space' />
 
             <div>
+              <div className='pricing__heading-container'>
+                <h3 className="pricing__heading">Our Interior Cleaning Prices</h3>
+                <strong className="pricing__subheading">Select the package and vehicle size below to get a quick price estimate for your vehicle.</strong>
+              </div>
+
+              <PricingComponent prices={['299', '299', '349', '349', '399', '399']} addons={[addons.extraction, addons.hair, addons.headliners, addons.fabric, addons.leather, addons.ozone]} />
+            </div>
+
+            {/* <div>
               <h3 className='pricing-title text-white'>Full Interior Cleaning Pricing</h3>
               <strong className='subtext'>*Final pricing may vary within the ranges below based on your vehicle condition and size.</strong>
               <div className="pricing-container">
@@ -202,7 +212,8 @@ export default function FullIntEx() {
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
               </div>
-            </div>
+            </div> */}
+
           </div>
 
         </div>

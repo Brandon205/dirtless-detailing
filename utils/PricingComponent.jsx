@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { GiSteam } from 'react-icons/gi';
 
 const imagesArr = [
     '22039636-a6ef-4ea7-f9c0-12beaeb19900',
@@ -9,9 +10,18 @@ const imagesArr = [
     'a205f097-f145-41b5-8af5-98a046dca700',
 ]
 
-{/* <PricingComponent title='Ceramic Coating' prices={['949', '949', '1099', '1099', '1249', '1249']} labels={['label1', 'label2', 'needs to have 6 labels...']} /> */}
-export default function PricingComponent({prices = props.prices, labels = ['2-Door Cars', 'Quarter Ton Trucks', '4-Door Cars', "Mid-Size SUV's", '4-Door Trucks', "3-Row SUV's, Minivans"]}) {
+{/* <PricingComponent title='Ceramic Coating' prices={['949', '949', '1099', '1099', '1249', '1249']} addons={[{}]} labels={['label1', 'label2', 'needs to have 6 labels...']} /> */}
+export default function PricingComponent({prices = props.prices, addons = [], labels = ['2-Door Cars', 'Quarter Ton Trucks', '4-Door Cars', "Mid-Size SUV's", '4-Door Trucks', "3-Row SUV's, Minivans"]}) {
     const [currVal, setCurrVal] = useState(0);
+
+    let content = '';
+    if (addons.length > 0) {
+        content = addons.map((item) => {
+            <div className="pricing__addon">
+                <GiSteam />
+            </div>
+        })
+    }
 
     return (
         <div className='pricing__container'>

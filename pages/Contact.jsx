@@ -594,7 +594,7 @@ export default function Contact() {
 
                     <div className="form-section">
                         <p className='form-section-heading'>Paint Correction Services <a href='/services/single-stage-correction' className='aside-link'><BiLinkExternal /></a></p>
-                        <p style={{ marginTop: 0 }}>(Exterior Add-ons go great with our Paint Correction Services too!)</p>
+                        <p style={{ marginTop: 0 }}>(The exterior add-ons above go great with our Paint Correction Services too!)</p>
                         <div>
                             <input type="checkbox" name="paintCorrection" id="Single Stage" value="Single Stage" className='radio-button' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => handleRadioClick(e, 'paintCorrection')} checked={paintCorrection === 'Single Stage'} />
                             <label htmlFor="Single Stage" className='checkbox-label'>Single Stage Paint Correction <span className='special-package italic'>($550-$850)</span></label>
