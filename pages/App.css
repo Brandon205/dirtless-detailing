@@ -484,7 +484,6 @@ option {
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 0.25rem;
-  /* padding-bottom: 1rem; */
 }
 
 .form-section-heading {
@@ -1160,6 +1159,35 @@ hr {
   max-width: 250px;
   gap: 1rem;
   margin: 0 auto;
+}
+
+.general-container {
+  width: 90%;
+  max-width: 1500px;
+}
+
+.new-heading-container {
+  text-align: left;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.above-heading {
+  color: #c0c0c0;
+  font-size: 24px;
+  margin: 0 auto 0 0;
+  text-align: left;
+}
+
+.above-heading::before {
+  content: '--- ';
+}
+
+.new-heading {
+  margin: 0 auto 0 0;
+  text-align: left;
+  font-size: 3em;
+  width: 70%;
 }
 
 .servicepage-heading {
@@ -1897,6 +1925,70 @@ hr {
 
 .pricing__pricecard-price {
   font-size: 2.5em;
+}
+
+/*                            PRICING CARD ADDONS STYLING                            */
+
+.pricing__addons-container {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.pricing__addon {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  grid-template-rows: 1fr;
+  border-radius: 24px;
+  gap: 1rem;
+  padding: 1rem;
+  background: #fff;
+  color: black;
+  width: 350px;
+}
+
+.pricing__hr {
+  height: 5px;
+  background: #d9d9d9a0;
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 100px;
+}
+
+.addon-icon {
+  font-size: 75px;
+  background: #d9d9d9;
+  padding: 0.75rem;
+  border-radius: 16px;
+}
+
+.addon-content {
+  text-align: left;
+}
+
+.addon-content h4 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.addon-content p {
+  margin: 0;
+  color: #575757;
+}
+
+.addon-addbutton {
+  content: '';
+}
+
+.addon-price {
+  background: var(--main-clr);
+  color: white;
+  font-size: 1.5em;
+  border-radius: 8px;
 }
 
 .example-vehicle {

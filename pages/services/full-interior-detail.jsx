@@ -113,7 +113,7 @@ export default function FullIntEx() {
             <ol className='list'>
               {content}
             </ol>
-            <p><span className='special-package'>*</span>Extraction Package Only</p>
+            <p><span className='special-package'>*</span>With Extraction Add-on Only</p>
             <p>**For Interior Coating details check <a className='aside-link' href="/services/interior-ceramic-coating">here</a>.</p>
 
             <br className='extra-space' />
