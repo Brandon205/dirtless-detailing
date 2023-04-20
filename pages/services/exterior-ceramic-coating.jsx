@@ -15,6 +15,7 @@ import PricingComponent from '../../utils/PricingComponent';
 
 export default function ExtCoatings() {
     const [slide, setSlide] = useState(50);
+    const [currPackage, setCurrPackage] = useState('Protect');
 
     return (
         <section className="service-content-container">
@@ -154,10 +155,18 @@ export default function ExtCoatings() {
                         <br className='extra-space' />
 
                         <div>
-                            <h3 className="pricing__heading">Our Ceramic Coating Pricing</h3>
-                            <strong className="pricing__subheading">Select the package and vehicle size below to get a quick price estimate for your vehicle.</strong>
+                            <div className='pricing__heading-container'>
+                                <h3 className="pricing__heading">Our Ceramic Coating Pricing</h3>
+                                <strong className="pricing__subheading">Select the package and vehicle size below to get a quick price estimate for your vehicle.</strong>
+                                <div style={{margin: '0 auto'}}>
+                                    <select className='text-input pricing__select' name="package" id="package" onChange={(e) => setCurrPackage(e.target.value)}>
+                                        <option value="Protect">Protect</option>
+                                        <option value="Protect+">Protect+</option>
+                                    </select>
+                                </div>
+                            </div>
 
-                            <PricingComponent prices={[949, 949, 1099, 1099, 1249, 1249]} />
+                            <PricingComponent prices={currPackage === 'Protect' ? ['949', '949', '1,099', '1,099', '1,249', '1,249'] : ['1,399', '1,399', '1,699', '1,699', '1,849', '1,849']} />
                         </div>
                         
                     <main className="service-main">

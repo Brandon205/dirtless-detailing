@@ -15,17 +15,27 @@ export default function PricingComponent({prices = props.prices, labels = ['2-Do
 
     return (
         <div className='pricing__container'>
-            <div className="pricing__img" style={{backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/${imagesArr[currVal]}/public)`}}></div>
-            <div style={{width: '100%'}}>
-                <input className='pricing__range' type="range" name="" id="" min='1' max='6' step='1' list="values" onChange={(e) => setCurrVal(e.target.value - 1)} />
-                <datalist id="values" className='pricing__datalist'>
+            <div className="pricing__img" style={{backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/${imagesArr[currVal]}/cover)`}}></div>
+            <div className='pricing__range-container' style={{position: 'relative', width: '50%', margin: '0 auto', display: 'flex', justifyContent: 'center'}}>
+                {/* <div className="range"> */}
+                <input className='pricing__range' type="range" defaultValue='1' name="size" id="size" min='1' max='6' steps='1' list="values" onChange={(e) => setCurrVal(e.target.value - 1)} />
+                {/* </div> */}
+                {/* <datalist id="values" className='pricing__datalist'>
                     <option value="1" label={labels[0]}></option>
                     <option value="2" label={labels[1]}></option>
                     <option value="3" label={labels[2]}></option>
                     <option value="4" label={labels[3]}></option>
                     <option value="5" label={labels[4]}></option>
                     <option value="6" label={labels[5]}></option>
-                </datalist>
+                </datalist> */}
+                <ul className='pricing__labels'>
+                    <li className={`${currVal > 0 ? 'pricing__active' : ''} ${currVal === 0 ? 'pricing__selected' : ''}`}>{labels[0]}</li>
+                    <li className={`${currVal > 1 ? 'pricing__active' : ''} ${currVal === 1 ? 'pricing__selected' : ''}`}>{labels[1]}</li>
+                    <li className={`${currVal > 2 ? 'pricing__active' : ''} ${currVal === 2 ? 'pricing__selected' : ''}`}>{labels[2]}</li>
+                    <li className={`${currVal > 3 ? 'pricing__active' : ''} ${currVal === 3 ? 'pricing__selected' : ''}`}>{labels[3]}</li>
+                    <li className={`${currVal > 4 ? 'pricing__active' : ''} ${currVal === 4 ? 'pricing__selected' : ''}`}>{labels[4]}</li>
+                    <li className={`${currVal > 5 ? 'pricing__active' : ''} ${currVal === 5 ? 'pricing__selected' : ''}`}>{labels[5]}</li>
+                </ul>
             </div>
 
             <div className="pricing__pricecard">

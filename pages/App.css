@@ -45,6 +45,10 @@ div [data-rmiz-modal-overlay="visible"] {
   background-color: var(--contact-bkg-lighter);
 }
 
+img {
+  max-width: 100%;
+}
+
 .App {
   text-align: center;
 }
@@ -1650,6 +1654,10 @@ hr {
 
 /* NEW PRICING STYLING */
 
+.pricing__heading-container {
+  margin-bottom: 25vh;
+}
+
 .pricing__heading {
   font-size: 3em;
   margin-bottom: 0;
@@ -1659,12 +1667,17 @@ hr {
   font-size: 1.5em;
 }
 
-.pricing__select {}
+.pricing__select {
+  margin: 2rem auto 0 auto;
+  width: 25%;
+  font-size: 1.5em;
+}
 
 .pricing__container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 5vh;
   padding: 5rem 0;
   background-color: var(--contact-bkg);
   color: white;
@@ -1673,27 +1686,185 @@ hr {
 .pricing__img {
   width: 40vw;
   height: 40vh;
-  margin-top: -20vh;
+  margin-top: -25vh;
   border: 16px solid var(--contact-bkg);
   border-radius: 24px;
 
-  background-position: 50% 60%;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.pricing__range {
+/* .range {
+  position: relative;
+  width: 80vw;
+  max-width: 600px;
+  height: 5px;
+} */
+
+/* .range input {
+  width: 100%;
+  position: absolute;
+  top: 2px;
+  height: 5px;
+} */
+
+.pricing__range-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
   width: 90%;
-  max-width: 1250px;
+  max-width: 750px;
 }
 
-.pricing__datalist {
+.pricing__range {
+  width: 89%;
+  margin: 0 auto;
+  position: absolute;
+  top: 2px;
+  height: 5px;
+  background: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+/*                            RANGE THUMB                            */
+
+.pricing__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  margin: -8px 0 0 0;
+  border-radius: 50%;
+  background: var(--main-clr);
+  cursor: pointer;
+  border: 0 !important;
+  z-index: 5;
+}
+
+.pricing__range::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--main-clr);
+  cursor: pointer;
+  border: 0 !important;
+  z-index: 5;
+}
+
+.pricing__range::-ms-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--main-clr);
+  cursor: pointer;
+  border: 0 !important;
+  z-index: 5;
+}
+
+/*                            RANGE TRACK                            */
+
+.pricing__range::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 12px;
+  border-radius: 100px;
+  cursor: pointer;
+  background: #c83e037a;
+}
+
+.pricing__range::-webkit-progress-value {
+  height: 10px;
+  border-radius: 100px;
+  background: var(--main-clr);
+}
+
+.pricing__range::-moz-range-track {
+  width: 100%;
+  height: 12px;
+  border-radius: 100px;
+  cursor: pointer;
+  background: #c83e037a;
+}
+
+.pricing__range::-moz-range-progress {
+  height: 10px;
+  border-radius: 100px;
+  background: var(--main-clr);
+}
+
+.pricing__range::-ms-track {
+  width: 100%;
+  height: 12px;
+  border-radius: 100px;
+  cursor: pointer;
+  background: #c83e037a;
+}
+
+.pricing__range::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.pricing__range:focus {
+  background: none;
+  outline: none;
+}
+
+/*                            RANGE LABELS                            */
+
+.pricing__labels {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 18px -41px 0;
+  padding: 0;
+  pointer-events: none;
+  list-style: none;
+}
+
+.pricing__labels li {
+  position: relative;
+  width: 90.25px;
+  text-align: center;
+  color: #b2b2b2;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.pricing__labels li::before {
+  content: "";
+  position: absolute;
+  top: -17px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 6px;
+  height: 6px;
+  background: var(--main-clr);
+  border-radius: 50%;
+}
+
+.pricing__active::before {
+  z-index: 0;
+  background: #c0c0c0 !important;
+}
+
+.pricing__selected::before {
+  display: none;
+}
+
+/* .pricing__datalist {
   width: 95%;
   max-width: 1350px;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
-}
+} */
 
 .pricing__pricecard {
   background-color: var(--contact-bkg-lighter);
