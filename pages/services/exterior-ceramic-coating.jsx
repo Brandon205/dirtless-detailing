@@ -11,12 +11,13 @@ import { BiCar, BiLinkExternal } from 'react-icons/bi';
 import { SiAdguard } from 'react-icons/si';
 import { RiPaintFill } from 'react-icons/ri';
 import ReactPlayer from 'react-player/lazy';
+import PricingComponent from '../../utils/PricingComponent';
 
 export default function ExtCoatings() {
     const [slide, setSlide] = useState(50);
 
     return (
-        <section className="service-content-container bg-contact">
+        <section className="service-content-container">
             <Head>
                 <title>Exterior Ceramic Coatings | Dirt-Less Detailing</title>
                 <Metatags
@@ -97,7 +98,7 @@ export default function ExtCoatings() {
                     }`,
                 }} />
             </Head>
-            <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/cover')`}}></div>
+            <div className="cover" style={{backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/cover)`}}></div>
             <div className="servicepage-header">
                 <h1>Exterior Ceramic Coating</h1>
                 <h2 className='page-subheading'>Get a professionally installed 5 year Ceramic Coating professionally to protect your vehicle year-round.</h2>
@@ -108,67 +109,8 @@ export default function ExtCoatings() {
             </div>
 
             <div className="process-container">
-                <div>
-                    <main className="service-main">
-                        <div className="service-explain">
-                            <div className="text-left">
-                                <h2 className='text-large'>What is a Ceramic Coating?</h2>
-                                <p>It is the absolute best way to protect your vehicle from the harsh weather we experience in Bonney Lake. Back in the day, wax was the cutting edge choice to enhance your vehicle's shine. It also protected your paint from external elements like rain, bird poop, dirt, tree sap, etc.</p>
-                                <p>Now, with modern day technology, we have a far more durable and superior form of protection: ceramic/graphene coatings.</p>
-                                <p>Unlike wax, you can't just simply wipe it on and off. The ceramic coating adheres to the surface of the car and creates a semi-permanent barrier. It is frequently described as a "sacrificial" layer of protection. Rain, debris, and other weather conditions will be absorbed by it, better protecting the paint underneath.</p>
-                                <p>As an analogy, think of the Three Little Pigs. No after wash product is like the straw house, wax is like the stick house, and ceramic coatings are like the brick house. Both the wax and ceramic offer protection from rain and dust, but one is far stronger.</p>
-                            </div>
-                            <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5b0798e5-2648-4845-168b-98e7ff013100/public')`}}></div>
-                        </div>
-
-                        <div className="service-explain">
-                            <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a5260bdd-11e9-4e31-74ec-c1d75787e000/public')`}}></div>
-                            <div className="text-left">
-                                <h2 className='text-large'>The benefits you get with a coating:</h2>
-                                <p className='text-left'>There are a lot of coating companies that make some pretty big claims of what a coating can do. We don't like to use most of these claims and oversell what the ceramic coatings can do and how long they can last.</p>
-                                <ul className='coating-points'>
-                                    <li>Produces durable protection possible that can last 5 years to a lifetime* (With our monthly maintenance).</li>
-                                    <li>Only one application is needed. (Not every couple of washes like normal wax protection).</li>
-                                    <li>Creates a deep level of gloss that is not possible with other forms of protection like wax or sealant.</li>
-                                    <li>Produces a deep level of gloss that is unmatched by other types of protection, such as a wax or sealant.</li>
-                                    <li>Offers unparalleled hydrophobic qualities that keep your vehicle clean and makes washing it simpler, and more fun.</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div className="service-explain">
-                            <div className="text-left">
-                                <h2 className="text-large">Ceramic Coating Installation Info</h2>
-                                <p>Your car must first be correctly prepared and corrected using one of our <a href="/detailing/correction" className='aside-link'>Paint Correction</a> services before the coating is applied. You won't get the full range of advantages that a ceramic coating can provide if we apply it without doing the necessary preparation work. </p>
-                                <p>For this reason, you should hire a qualified installer of ceramic coating, like us. Additionally, if it's not applied correctly, your car will have a lot of smudges in the end. We refer to these as "high spots." You'll notice this if the coating was improperly applied and allowed to dry for an excessive amount of time without being removed.</p>
-                                <p>Generally speaking, the harder it is to install a coating the more durable it is. One year vs five years, for example. You must also be aware of the weather factors because they might significantly affect the installation process. </p>
-                                <p>When it's hot, cold, or humid, coatings respond differently. If you've spent much time in Bonney Lake, you've probably noticed that the weather is always fluctuating.</p>
-                                <p><span className="special-package">NOTICE:</span> We complete every coating installation in our shop, where we have complete control over the working environment to provide the best end results. </p>
-                            </div>
-                            <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/public')`}}></div>
-                        </div>
-
-                        <div className="service-explain">
-                            <div className="example-img">
-                                <ReactPlayer width={280} height={487} url='https://res.cloudinary.com/brandon205/video/upload/v1674493877/Dirt-Less%20Detailing/Videos/received_1200318400918064_3_qteejy.mp4' loop muted playing />
-                            </div>
-                            <div className="text-left">
-                                <h2 className="text-large">Common Ceramic Coating Myths</h2>
-                                <p>Yes, coatings are robust and long-lasting. This does not imply that you may abuse your car and assume the coating will keep it safe. </p>
-                                <p>It has its limitations, and it's critical to be aware of what the ceramic coating is capable of. Customers frequently overestimate the coating's level of protection and are disappointed when swirl marks appear in the paint. </p>
-                                <p>Your paint will not become scratch-proof due to the coating. We mean very light swirls and scratches when we say the coating will resist light swirls and scratches. </p>
-                                <p>Your paint isn't protected from rock chips by the coating. No amount of wax or ceramic coating will be able to prevent a rock from striking and potentially damaging your car.</p>
-                                <p>To increase the coating's durability, proper maintenance is needed. If you don't take care of the coating, it will deteriorate over time and not have the intended lifespan, just like many other things in life (like visiting the dentist).</p>
-                                <p>For best durability, you must <a href="/services/dirtless-wash" className='aside-link'>wash</a>, dry, and preserve the coating appropriately (either through us or by following specific steps provided by us). If not properly maintained, a coating that was designed to last for five years may begin to degrade after two to three years.</p>
-                            </div>
-                        </div>
-
-                        <h2 className='text-large'>Professional Interior Coatings <a href='/services/interior-ceramic-coating' className='aside-link'><BiLinkExternal /></a></h2>
-                        <div className="text-left">
-                            <p>Whether it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe any spill up before it seeps in. Get more info on our <a href="/services/interior-ceramic-coating" className='aside-link'>Interior Coating</a> page.</p>
-                        </div>
-
-                        <h2 className='coating-heading text-xl'>Protect Package</h2>
+                <div style={{width: '100%'}}>
+                <h2 className='coating-heading text-xl'>Protect Package</h2>
                         <p className='package-desc subtext'>The Protect package will cover and protect the most essential parts of your car with a 5 year ceramic coating.</p>
                         <div className='package-container'>
                             <div className='package-details'>
@@ -212,82 +154,71 @@ export default function ExtCoatings() {
                         <br className='extra-space' />
 
                         <div>
-                            <h3 className='pricing-title text-white'>Our Ceramic Coating Pricing</h3>
-                            <h4 className='subtext'><span className='special-package'>*</span>Pricing <span className='special-package'>INCLUDES</span> a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</h4>
-                            <div className="pricing-container text-black">
-                                <div className="pricing-card">
-                                    <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Single Row Trucks and 2-Door Cars</strong>
-                                    <strong className='size'>Protect</strong>
-                                    <p className="pricing-price pricing-border">$949<span className='ninety-nine'>99</span></p>
-                                    <strong className='size'>Protect<span className="special-package">+</span></strong>
-                                    <p className="pricing-price pricing-border">$1,399<span className='ninety-nine'>99</span></p>
-                                    <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                                </div>
-                                <div className="pricing-card">
-                                    <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Most Mid-Size SUV's and 4-Door Cars</strong>
-                                    <strong className='size'>Protect</strong>
-                                    <p className="pricing-price pricing-border">$1,099<span className='ninety-nine'>99</span></p>
-                                    <strong className='size'>Protect<span className="special-package">+</span></strong>
-                                    <p className="pricing-price pricing-border">$1,699<span className='ninety-nine'>99</span></p>
-                                    <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                                </div>
-                                <div className="pricing-card">
-                                    <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>3-Row SUV's, Minivans, and Trucks</strong>
-                                    <strong className='size'>Protect</strong>
-                                    <p className="pricing-price pricing-border">$1,249<span className='ninety-nine'>99</span></p>
-                                    <strong className='size'>Protect<span className="special-package">+</span></strong>
-                                    <p className="pricing-price pricing-border">$1,849<span className='ninety-nine'>99</span></p>
-                                    <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                                </div>
-                            </div>
+                            <h3 className="pricing__heading">Our Ceramic Coating Pricing</h3>
+                            <strong className="pricing__subheading">Select the package and vehicle size below to get a quick price estimate for your vehicle.</strong>
 
-                            <h3 className='pricing-title text-white'>Our Monthly/Yearly Maintenance Pricing</h3>
-                            <h4 style={{fontSize: '1.3em'}} className='subtext'><span style={{fontSize: '1.3em'}} className='special-package'>MONTHLY SERVICE: </span>Keeping up with this service will grant you with our <span className='special-package'>LIFETIME</span> Warranty. The goal of our monthly maintenance is to keep your vehicle looking like new year-round. Every month you will get a <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> and a <a href='/services/full-interior-detail' className='aside-link'>Full Interior Detail</a>.</h4>
-                            <h4 style={{fontSize: '1.3em'}} className='subtext'><span style={{fontSize: '1.3em'}} className='special-package'>YEARLY SERVICE: </span>To qualify for our <span className='special-package'>2-Year</span> (Protect Service) or the <span className='special-package'>5-Year</span> (Protect+ Service) Warranty. Our yearly service needs to go into much more detail, as your car hasn't been seen by us on a monthly basis, so we will: • Wash the entire vehicle • Perform Iron Decontamination treatment • Top the vehicle off with a ceramic booster • Apply a new coat of ceramic to the windshield.</h4>
-                            <div className="pricing-container text-black">
-                                <div className="pricing-card">
-                                    <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Single Row Trucks and 2-Door Cars</strong>
-                                    <strong className='size'>Monthly</strong>
-                                    <p className="pricing-price pricing-border">$129<span className='ninety-nine'>99</span></p>
-                                    <strong className='size'>Yearly</strong>
-                                    <p className="pricing-price pricing-border">$199<span className='ninety-nine'>99</span></p>
-                                    <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                                </div>
-                                <div className="pricing-card">
-                                    <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Most Mid-Size SUV's and 4-Door Cars</strong>
-                                    <strong className='size'>Monthly</strong>
-                                    <p className="pricing-price pricing-border">$159<span className='ninety-nine'>99</span></p>
-                                    <strong className='size'>Yearly</strong>
-                                    <p className="pricing-price pricing-border">$249<span className='ninety-nine'>99</span></p>
-                                    <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                                </div>
-                                <div className="pricing-card">
-                                    <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>3-Row SUV's, Minivans, & Lifted Trucks</strong>
-                                    <strong className='size'>Monthly</strong>
-                                    <p className="pricing-price pricing-border">$189<span className='ninety-nine'>99</span></p>
-                                    <strong className='size'>Yearly</strong>
-                                    <p className="pricing-price pricing-border">$299<span className='ninety-nine'>99</span></p>
-                                    <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                                </div>
+                            <PricingComponent prices={[949, 949, 1099, 1099, 1249, 1249]} />
+                        </div>
+                        
+                    <main className="service-main">
+                        <div className="service-explain">
+                            <div className="text-left">
+                                <h2 className='text-large'>What is a Ceramic Coating?</h2>
+                                <p>It is the absolute best way to protect your vehicle from the harsh weather we experience in Bonney Lake. Back in the day, wax was the cutting edge choice to enhance your vehicle's shine. It also protected your paint from external elements like rain, bird poop, dirt, tree sap, etc.</p>
+                                <p>Now, with modern day technology, we have a far more durable and superior form of protection: ceramic/graphene coatings.</p>
+                                <p>Unlike wax, you can't just simply wipe it on and off. The ceramic coating adheres to the surface of the car and creates a semi-permanent barrier. It is frequently described as a "sacrificial" layer of protection. Rain, debris, and other weather conditions will be absorbed by it, better protecting the paint underneath.</p>
+                                <p>As an analogy, think of the Three Little Pigs. No after wash product is like the straw house, wax is like the stick house, and ceramic coatings are like the brick house. Both the wax and ceramic offer protection from rain and dust, but one is far stronger.</p>
                             </div>
+                            <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5b0798e5-2648-4845-168b-98e7ff013100/public')`}}></div>
+                        </div>
 
-                            <h3 className="pricing-title text-white">Exterior Re-coating Options</h3>
-                            <h4 className='subtext'>Our re-coating options if you have had a ceramic coating done through us.</h4>
-                            <div className="pricing-container text-black">
-                                <div className="pricing-card">
-                                    <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Re-coat All Vehicle Trim</strong>
-                                    <p>Get all exterior vehicle trim re-coated.</p>
-                                    <p className="pricing-price pricing-border">$99<span className='ninety-nine'>99</span></p>
-                                    <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                                </div>
-                                <div className="pricing-card">
-                                    <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Re-coat Wheel Faces</strong>
-                                    <p>Re-coat all Wheel Faces.</p>
-                                    <p className="pricing-price pricing-border">$149<span className='ninety-nine'>99</span></p>
-                                    <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                                </div>
+                        <div className="service-explain">
+                            <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a5260bdd-11e9-4e31-74ec-c1d75787e000/public')`}}></div>
+                            <div className="text-left">
+                                <h2 className='text-large'>The benefits you get with a coating:</h2>
+                                <p className='text-left'>There are a lot of coating companies that make some pretty big claims of what a coating can do. We don't like to use most of these claims and oversell what the ceramic coatings can do and how long they can last.</p>
+                                <ul className='coating-points'>
+                                    <li>Produces durable protection possible that can last 5 years to a lifetime* (With our monthly maintenance).</li>
+                                    <li>Only one application is needed. (Not every couple of washes like normal wax protection).</li>
+                                    <li>Creates a deep level of gloss that is not possible with other forms of protection like wax or sealant.</li>
+                                    <li>Produces a deep level of gloss that is unmatched by other types of protection, such as a wax or sealant.</li>
+                                    <li>Offers unparalleled hydrophobic qualities that keep your vehicle clean and makes washing it simpler, and more fun.</li>
+                                </ul>
                             </div>
                         </div>
+
+                        <div className="service-explain">
+                            <div className="text-left">
+                                <h2 className="text-large">Ceramic Coating Installation Info</h2>
+                                <p>Your car must first be correctly prepared and corrected using one of our <a href="/detailing/correction" className='aside-link'>Paint Correction</a> services before the coating is applied. You won't get the full range of advantages that a ceramic coating can provide if we apply it without doing the necessary preparation work. </p>
+                                <p>For this reason, you should hire a qualified installer of ceramic coating, like us. Additionally, if it's not applied correctly, your car will have a lot of smudges in the end. We refer to these as "high spots." You'll notice this if the coating was improperly applied and allowed to dry for an excessive amount of time without being removed.</p>
+                                <p>Generally speaking, the harder it is to install a coating the more durable it is. One year vs five years, for example. You must also be aware of the weather factors because they might significantly affect the installation process. </p>
+                                <p>When it's hot, cold, or humid, coatings respond differently. If you've spent much time in Bonney Lake, you've probably noticed that the weather is always fluctuating.</p>
+                                <p><span className="special-package">NOTICE:</span> We complete every coating installation in our shop, where we have complete control over the working environment to provide the best end results. </p>
+                            </div>
+                            <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/public')`}}></div>
+                        </div>
+
+                        <div className="service-explain">
+                            {/* <div className="example-img">
+                                <ReactPlayer width={280} height={487} url='https://res.cloudinary.com/brandon205/video/upload/v1674493877/Dirt-Less%20Detailing/Videos/received_1200318400918064_3_qteejy.mp4' loop muted playing />
+                            </div> */}
+                            <div className="text-left">
+                                <h2 className="text-large">Common Ceramic Coating Myths</h2>
+                                <p>Yes, coatings are robust and long-lasting. This does not imply that you may abuse your car and assume the coating will keep it safe. </p>
+                                <p>It has its limitations, and it's critical to be aware of what the ceramic coating is capable of. Customers frequently overestimate the coating's level of protection and are disappointed when swirl marks appear in the paint. </p>
+                                <p>Your paint will not become scratch-proof due to the coating. We mean very light swirls and scratches when we say the coating will resist light swirls and scratches. </p>
+                                <p>Your paint isn't protected from rock chips by the coating. No amount of wax or ceramic coating will be able to prevent a rock from striking and potentially damaging your car.</p>
+                                <p>To increase the coating's durability, proper maintenance is needed. If you don't take care of the coating, it will deteriorate over time and not have the intended lifespan, just like many other things in life (like visiting the dentist).</p>
+                                <p>For best durability, you must <a href="/services/dirtless-wash" className='aside-link'>wash</a>, dry, and preserve the coating appropriately (either through us or by following specific steps provided by us). If not properly maintained, a coating that was designed to last for five years may begin to degrade after two to three years.</p>
+                            </div>
+                        </div>
+
+                        <h2 className='text-large'>Professional Interior Coatings <a href='/services/interior-ceramic-coating' className='aside-link'><BiLinkExternal /></a></h2>
+                        <div className="text-left">
+                            <p>Whether it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe any spill up before it seeps in. Get more info on our <a href="/services/interior-ceramic-coating" className='aside-link'>Interior Coating</a> page.</p>
+                        </div>
+
 
                         <br className='extra-space' />
 
@@ -319,6 +250,83 @@ export default function ExtCoatings() {
                             </ul>
                         </div>
                     </main>
+                    {/* <div>
+                        <h3 className='pricing-title text-white'>Our Ceramic Coating Pricing</h3>
+                        <h4 className='subtext'><span className='special-package'>*</span>Pricing <span className='special-package'>INCLUDES</span> a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</h4>
+                        <div className="pricing-container text-black">
+                            <div className="pricing-card">
+                                <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Single Row Trucks and 2-Door Cars</strong>
+                                <strong className='size'>Protect</strong>
+                                <p className="pricing-price pricing-border">$949<span className='ninety-nine'>99</span></p>
+                                <strong className='size'>Protect<span className="special-package">+</span></strong>
+                                <p className="pricing-price pricing-border">$1,399<span className='ninety-nine'>99</span></p>
+                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                            </div>
+                            <div className="pricing-card">
+                                <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Most Mid-Size SUV's and 4-Door Cars</strong>
+                                <strong className='size'>Protect</strong>
+                                <p className="pricing-price pricing-border">$1,099<span className='ninety-nine'>99</span></p>
+                                <strong className='size'>Protect<span className="special-package">+</span></strong>
+                                <p className="pricing-price pricing-border">$1,699<span className='ninety-nine'>99</span></p>
+                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                            </div>
+                            <div className="pricing-card">
+                                <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>3-Row SUV's, Minivans, and Trucks</strong>
+                                <strong className='size'>Protect</strong>
+                                <p className="pricing-price pricing-border">$1,249<span className='ninety-nine'>99</span></p>
+                                <strong className='size'>Protect<span className="special-package">+</span></strong>
+                                <p className="pricing-price pricing-border">$1,849<span className='ninety-nine'>99</span></p>
+                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                            </div>
+                        </div>
+
+                        <h3 className='pricing-title text-white'>Our Monthly/Yearly Maintenance Pricing</h3>
+                        <h4 style={{fontSize: '1.3em'}} className='subtext'><span style={{fontSize: '1.3em'}} className='special-package'>MONTHLY SERVICE: </span>Keeping up with this service will grant you with our <span className='special-package'>LIFETIME</span> Warranty. The goal of our monthly maintenance is to keep your vehicle looking like new year-round. Every month you will get a <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> and a <a href='/services/full-interior-detail' className='aside-link'>Full Interior Detail</a>.</h4>
+                        <h4 style={{fontSize: '1.3em'}} className='subtext'><span style={{fontSize: '1.3em'}} className='special-package'>YEARLY SERVICE: </span>To qualify for our <span className='special-package'>2-Year</span> (Protect Service) or the <span className='special-package'>5-Year</span> (Protect+ Service) Warranty. Our yearly service needs to go into much more detail, as your car hasn't been seen by us on a monthly basis, so we will: • Wash the entire vehicle • Perform Iron Decontamination treatment • Top the vehicle off with a ceramic booster • Apply a new coat of ceramic to the windshield.</h4>
+                        <div className="pricing-container text-black">
+                            <div className="pricing-card">
+                                <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Single Row Trucks and 2-Door Cars</strong>
+                                <strong className='size'>Monthly</strong>
+                                <p className="pricing-price pricing-border">$129<span className='ninety-nine'>99</span></p>
+                                <strong className='size'>Yearly</strong>
+                                <p className="pricing-price pricing-border">$199<span className='ninety-nine'>99</span></p>
+                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                            </div>
+                            <div className="pricing-card">
+                                <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Most Mid-Size SUV's and 4-Door Cars</strong>
+                                <strong className='size'>Monthly</strong>
+                                <p className="pricing-price pricing-border">$159<span className='ninety-nine'>99</span></p>
+                                <strong className='size'>Yearly</strong>
+                                <p className="pricing-price pricing-border">$249<span className='ninety-nine'>99</span></p>
+                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                            </div>
+                            <div className="pricing-card">
+                                <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>3-Row SUV's, Minivans, & Lifted Trucks</strong>
+                                <strong className='size'>Monthly</strong>
+                                <p className="pricing-price pricing-border">$189<span className='ninety-nine'>99</span></p>
+                                <strong className='size'>Yearly</strong>
+                                <p className="pricing-price pricing-border">$299<span className='ninety-nine'>99</span></p>
+                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                            </div>
+                        </div>
+
+                        <h3 className="pricing-title text-white">Exterior Re-coating Options</h3>
+                        <h4 className='subtext'>Our re-coating options if you have had a ceramic coating done through us.</h4>
+                        <div className="pricing-container text-black">
+                            <div className="pricing-card">
+                                <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Re-coat All Vehicle Trim</strong>
+                                <p>Get all exterior vehicle trim re-coated.</p>
+                                <p className="pricing-price pricing-border">$99<span className='ninety-nine'>99</span></p>
+                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                            </div>
+                            <div className="pricing-card">
+                                <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Re-coat Wheel Faces</strong>
+                                <p>Re-coat all Wheel Faces.</p>
+                                <p className="pricing-price pricing-border">$149<span className='ninety-nine'>99</span></p>
+                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                            </div>
+                        </div>
+                    </div> */}
 
                     <br className='extra-space' />
 

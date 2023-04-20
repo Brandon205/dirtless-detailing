@@ -1,10 +1,37 @@
 import React, { useState, useEffect } from 'react';
 
+const imagesArr = [
+    '22039636-a6ef-4ea7-f9c0-12beaeb19900',
+    'cfc9ecbb-fd60-40e5-988b-ecbe28ac3c00',
+    '31265123-5fa7-4f81-af49-d224e86beb00',
+    'de5ece74-66af-46cb-8460-7e0246257b00',
+    '89cde8ad-b8a8-4d15-5a65-786ad9772d00',
+    'a205f097-f145-41b5-8af5-98a046dca700',
+]
+
 {/* <PricingComponent title='Ceramic Coating' prices={[949, 949, 1099, 1099, 1249, 1249]} labels={} /> */}
-export default function PricingComponent(props) {
+export default function PricingComponent({prices = props.prices, labels = ['2-Door Cars', 'Quarter Ton Trucks', '4-Door Cars', "Mid-Size SUV's", '4-Door Trucks', "3-Row SUV's, Minivans"]}) {
+    const [currVal, setCurrVal] = useState(0);
+
     return (
-        <div>
-            <h1>Hello World</h1>
+        <div className='pricing__container'>
+            <div className="pricing__img" style={{backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/${imagesArr[currVal]}/public)`}}></div>
+            <div style={{width: '100%'}}>
+                <input className='pricing__range' type="range" name="" id="" min='1' max='6' step='1' list="values" onChange={(e) => setCurrVal(e.target.value - 1)} />
+                <datalist id="values" className='pricing__datalist'>
+                    <option value="1" label={labels[0]}></option>
+                    <option value="2" label={labels[1]}></option>
+                    <option value="3" label={labels[2]}></option>
+                    <option value="4" label={labels[3]}></option>
+                    <option value="5" label={labels[4]}></option>
+                    <option value="6" label={labels[5]}></option>
+                </datalist>
+            </div>
+
+            <div className="pricing__pricecard">
+                <p>Your Price Estimate:</p>
+                <strong><span className='pricing__pricecard-price'>${prices[currVal]}.99</span></strong>
+            </div>
         </div>
     )
 }
