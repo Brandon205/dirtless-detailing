@@ -217,9 +217,6 @@ export default function FullIntEx() {
           </div>
 
         </div>
-
-        <br className='extra-space' />
-
       </div>
     </section>
   )

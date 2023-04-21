@@ -1209,13 +1209,12 @@ hr {
 
 .general-container {
   width: 90%;
-  max-width: 1500px;
+  max-width: 1750px;
 }
 
 .new-heading-container {
   text-align: left;
   margin: 0 auto;
-  padding: 0 1rem;
 }
 
 .above-heading {
@@ -1995,7 +1994,8 @@ hr {
   padding: 1rem;
   background: #fff;
   color: black;
-  width: 350px;
+  width: 90%;
+  max-width: 450px;
 }
 
 .pricing__hr {
@@ -2037,6 +2037,16 @@ hr {
   font-size: 1.5em;
   border-radius: 8px;
 }
+
+/*                            PRICING CARD VIP STYLING                            */
+.vip-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* .vip-content {
+  display: flex;
+} */
 
 .example-vehicle {
   padding: 1rem;
@@ -2110,8 +2120,15 @@ hr {
   width: 100% border-radius 1rem 1rem 0 0;
 }
 
+.service-bkg {
+  background: #292B2F;
+  color: white;
+  padding-top: 2rem;
+}
+
 .service-main {
-  width: 80vw;
+  width: 90%;
+  max-width: 1750px;
   margin: 0 auto;
   line-height: 2;
   font-size: 1.1em;
@@ -2122,14 +2139,15 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
 }
 
 .service-image {
+  align-self: center;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  min-width: 15vw;
+  width: 40%;
   height: 450px;
   max-width: 600px;
 }
@@ -2218,6 +2236,7 @@ hr {
 }
 
 .text-large {
+  margin-top: 0;
   font-size: 1.7em;
 }
 
