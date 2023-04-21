@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import { BiLinkExternal } from 'react-icons/bi';
@@ -6,16 +7,18 @@ import PricingComponent from '../../utils/PricingComponent';
 import addons from '../../utils/Addons';
 
 const steps = [
-  ["Expose Hidden Dirt", "Use our Tornador Vortex blowgun which uses compressed air to blow out every spot a vacuum can't reach. It also extracts sand and loose soil from carpeting."],
+  ["Expose Hidden Dirt", "Use drill brushes and our Tornador Vortex Blowgun which uses compressed air to blow out every spot a vacuum can't reach. Using these also extracts sand and loose soil from carpeting."],
   ["Vacuum Vehicle", "Thoroughly vacuum every crack and crevice of the vehicle."],
   ["Hot Water Extraction", "We use a professional hot water extractor and professional flex stain remover and alkaline floor rinse to keep floors at a neutral PH level. We will be sure to get all carpets, floor mats, and cloth seats."],
-  ["Clean Plastics and Leathers", "Clean, steam, and degrease all plastics and leather seats."],
+  ["Wipe Down Plastics and Leathers", "We will clean, steam, and degrease all plastics and leather seats."],
   ["Dress Interior", "Dress or Coat Interior**"],
   ["Door Jambs", "Clean all of the door jambs."],
   ["Window Cleaning", "Clean windows."]
 ]
 
 export default function FullIntEx() {
+  const [slide, setSlide] = useState(50);
+
   const content = steps.map((item, id) => {
     return (
       <li key={id} className="item">
@@ -84,7 +87,7 @@ export default function FullIntEx() {
       <div className='main-content-container'>
         <div className='process-container'>
           <div style={{width: '100%'}}>
-            <main className="service-main">
+            <main className="service-main top-service-main">
               <div className="service-explain">
                 <div className="text-left">
                   <h2 className='text-large'>Professional Interior Detailing</h2>
@@ -96,20 +99,10 @@ export default function FullIntEx() {
                 <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/be771e29-71fe-47b0-8fa3-0419d7991800/public')`}}></div>
               </div>
 
-              <h2 className='text-large'>Biohazard Cleanings <a href='/services/biohazard-cleaning' className='aside-link'><BiLinkExternal /></a></h2>
-              <div className="text-left">
-                <p>If the interior of your vehicle has things like strong odors, mold, or even bodily fluids we can clean those with our <a href="/services/biohazard-cleaning" className='aside-link'>Biohazard Cleaning</a> service. This will cover a normal interior cleaning and will also include extra things like carpet extraction and ozone treatment depending on the severity of the situation.</p>
-              </div>
-
-              <h2 className='text-large'>Interior and Exterior Combo Deal <a href='/services/interior-exterior-detailing-combo' className='aside-link'><BiLinkExternal /></a></h2>
-              <div className="text-left">
-                <p>Get a <span className="special-package">FREE</span> Engine Bay Cleaning when you schedule our Combo service. This service combines our <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> and this Full Interior Detail. It is sure to get your entire vehicle looking like new, even the engine bay which is typically overlooked when washing your car.</p>
-              </div>
-
               <br className='extra-space' />
             </main>
 
-            <h2 className='cleaning-process-title text-large'>Our Interior Cleaning Process*</h2>
+            <h2 style={{margin: '15vh auto 2rem auto'}} className='cleaning-process-title text-xl'>Our Interior Cleaning Process</h2>
             <ol className='list'>
               {content}
             </ol>
@@ -118,10 +111,21 @@ export default function FullIntEx() {
 
             <br className='extra-space' />
 
+            <p style={{fontSize: '2rem', margin: 0}}>End Results</p>
+            <h3 className='pricing__heading'>Fresh, Clean, and Stunning Results.</h3>
+            <p>Once we are done you won't want to see your car dirty ever again!</p>
+            <div style={{display: 'grid', marginBottom: '10vh'}} className='place-center'>
+              <div className='slider-container'>
+                <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/907d2e8b-5d24-40bf-387e-90be139c2d00/public')`}} className='slider-img'></div>
+                <div style={{width: slide + '%', backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/70e54f6b-a9f8-48aa-a9af-893776082400/public')`}} className='slider-img foreground'></div>
+                <input type="range" min="1" max="100" value={slide} onChange={(e) => setSlide(Number(e.target.value))} className="slider-bar" name='slider' id="slider" />
+              </div>
+            </div>
+
             <div>
               <div className='pricing__heading-container'>
                 <h3 className="pricing__heading">Our Interior Cleaning Prices</h3>
-                <strong className="pricing__subheading">Select the package and vehicle size below to get a quick price estimate for your vehicle.</strong>
+                <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
 
               <PricingComponent prices={['299', '299', '349', '349', '399', '399']} addons={[addons.extraction, addons.hair, addons.headliners, addons.fabric, addons.leather, addons.ozone]} />
@@ -213,6 +217,16 @@ export default function FullIntEx() {
                 </div>
               </div>
             </div> */}
+
+            <h2 className='text-large'>Biohazard Cleanings <a href='/services/biohazard-cleaning' className='aside-link'><BiLinkExternal /></a></h2>
+            <div className="text-left">
+              <p>If the interior of your vehicle has things like strong odors, mold, or even bodily fluids we can clean those with our <a href="/services/biohazard-cleaning" className='aside-link'>Biohazard Cleaning</a> service. This will cover a normal interior cleaning and will also include extra things like carpet extraction and ozone treatment depending on the severity of the situation.</p>
+            </div>
+
+            <h2 className='text-large'>Interior and Exterior Combo Deal <a href='/services/interior-exterior-detailing-combo' className='aside-link'><BiLinkExternal /></a></h2>
+            <div className="text-left">
+              <p>Get a <span className="special-package">FREE</span> Engine Bay Cleaning when you schedule our Combo service. This service combines our <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> and this Full Interior Detail. It is sure to get your entire vehicle looking like new, even the engine bay which is typically overlooked when washing your car.</p>
+            </div>
 
           </div>
 

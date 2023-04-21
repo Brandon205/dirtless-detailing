@@ -160,9 +160,9 @@ export default function ExtCoatings() {
 
                     <br className='extra-space' />
 
-                    <p>End Results</p>
+                    <p style={{fontSize: '2rem', margin: 0}}>End Results</p>
                     <h3 className='pricing__heading'>Smooth, Clean, and Picture Perfect Results.</h3>
-                    <p>Once we are done water will BEAD off of your car like you've never seen it do before.</p>
+                    <p>Once we are done water will BEAD off of your car like you've never seen before!</p>
                     <div style={{display: 'grid'}} className='place-center'>
                         <div className='slider-container'>
                             <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a2d79f4f-82e7-488d-deaf-7b0f7136a400/public')`}} className='slider-img'></div>

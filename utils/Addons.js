@@ -1,4 +1,4 @@
-const addons = {
+const addons = { // IF DIFFERENT COSTS ARE WANTED: make cost = ['$35', '$50', etc...] then use currVal on the PricingComponent to choose the corresponding cost.
     'extraction': {
         name: 'Steam Extraction',
         icon: 'extraction',
