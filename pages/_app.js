@@ -40,7 +40,7 @@ export default function MyApp({ Component, pageProps }) {
 
     let handleScroll = () => {
         const pos = window.pageYOffset;
-        if (pos > 400 || smallScreen) {
+        if (pos > 400 || smallScreen && navBar.current) {
             navBar.current.style.backgroundColor = '#101010'
             navBar.current.style.backdropFilter = 'none'
             navBar.current.style.borderRadius = '0'

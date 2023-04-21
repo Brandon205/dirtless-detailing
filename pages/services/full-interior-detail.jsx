@@ -119,7 +119,7 @@ export default function FullIntEx() {
                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/907d2e8b-5d24-40bf-387e-90be139c2d00/public')`}} className='slider-img'></div>
                 <div style={{width: slide + '%', backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/70e54f6b-a9f8-48aa-a9af-893776082400/public')`}} className='slider-img foreground'></div>
                 <input type="range" min="1" max="100" value={slide} onChange={(e) => setSlide(Number(e.target.value))} className="slider-bar" name='slider' id="slider" />
-                <div style={{left: slide - 2.7 + '%'}} className="slider-button"></div>
+                <div style={{left: slide - 4 + '%'}} className="slider-button"></div>
               </div>
             </div>
 
@@ -130,6 +130,26 @@ export default function FullIntEx() {
               </div>
 
               <PricingComponent prices={['299', '299', '349', '349', '399', '399']} addons={[addons.extraction, addons.hair, addons.headliners, addons.fabric, addons.leather, addons.ozone]} />
+            </div>
+
+            <div style={{padding: '2rem'}} className="service-bkg">
+              <div className="general-container new-heading-container">
+                <strong className="above-heading">Related Services</strong>
+                <h3 className="new-heading">Services similar to our Interior Cleaning.</h3>
+              </div>
+              <div style={{padding: '2rem 0'}} className="general-container">
+                <h2 className='text-large text-left'>Biohazard Cleanings <a href='/services/biohazard-cleaning' className='aside-link'><BiLinkExternal /></a></h2>
+                <div className="text-left">
+                  <p>If the interior of your vehicle has things like strong odors, mold, or even bodily fluids we can clean those with our <a href="/services/biohazard-cleaning" className='aside-link'>Biohazard Cleaning</a> service. This will cover a normal interior cleaning and will also include extra things like carpet extraction and ozone treatment depending on the severity of the situation.</p>
+                </div>
+
+                <br className='extra-space' />
+
+                <h2 className='text-large text-left'>Interior and Exterior Combo Deal <a href='/services/interior-exterior-detailing-combo' className='aside-link'><BiLinkExternal /></a></h2>
+                <div className="text-left">
+                  <p>Get a <span className="special-package">FREE</span> Engine Bay Cleaning when you schedule our Combo service. This service combines our <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> and this Full Interior Detail. It is sure to get your entire vehicle looking like new, even the engine bay which is typically overlooked when washing your car.</p>
+                </div>
+              </div>
             </div>
 
             {/* <div>
@@ -218,16 +238,6 @@ export default function FullIntEx() {
                 </div>
               </div>
             </div> */}
-
-            <h2 className='text-large'>Biohazard Cleanings <a href='/services/biohazard-cleaning' className='aside-link'><BiLinkExternal /></a></h2>
-            <div className="text-left">
-              <p>If the interior of your vehicle has things like strong odors, mold, or even bodily fluids we can clean those with our <a href="/services/biohazard-cleaning" className='aside-link'>Biohazard Cleaning</a> service. This will cover a normal interior cleaning and will also include extra things like carpet extraction and ozone treatment depending on the severity of the situation.</p>
-            </div>
-
-            <h2 className='text-large'>Interior and Exterior Combo Deal <a href='/services/interior-exterior-detailing-combo' className='aside-link'><BiLinkExternal /></a></h2>
-            <div className="text-left">
-              <p>Get a <span className="special-package">FREE</span> Engine Bay Cleaning when you schedule our Combo service. This service combines our <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> and this Full Interior Detail. It is sure to get your entire vehicle looking like new, even the engine bay which is typically overlooked when washing your car.</p>
-            </div>
 
           </div>
 

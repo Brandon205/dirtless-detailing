@@ -160,7 +160,7 @@ export default function ExtCoatings() {
 
                     <br className='extra-space' />
 
-                    <p style={{fontSize: '2rem', margin: 0}}>End Results</p>
+                    <p style={{fontSize: '2rem', margin: '2rem 0 0 0'}}>End Results</p>
                     <h3 className='pricing__heading'>Smooth, Clean, and Picture Perfect Results.</h3>
                     <p>Once we are done water will BEAD off of your car like you've never seen before!</p>
                     <div style={{display: 'grid'}} className='place-center'>
