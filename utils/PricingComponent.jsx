@@ -44,7 +44,7 @@ export default function PricingComponent({prices = props.prices, ceramic = false
                 </div>
                 <div className="addon-addbutton"></div>
                 <div className="addon-price">
-                    <strong>{item.cost}</strong>
+                    <strong>{item.cost[currVal]}</strong>
                 </div>
             </div>
         ))
