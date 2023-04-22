@@ -2,6 +2,8 @@ import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import { BiLinkExternal } from 'react-icons/bi';
 import { MdOutlinePermPhoneMsg } from 'react-icons/md';
+import PricingComponent from '../../utils/PricingComponent';
+import addons from '../../utils/Addons';
 
 const steps = [
   ["Wash Vehicle", "Thorough 2 bucket or equivalent top to bottom wash including the gas door."],
@@ -78,29 +80,22 @@ export default function DLWash() {
         </div>
       </div>
 
-      <div className='main-content-container bg-contact'>
+      <div className='main-content-container'>
         <div className="process-container">
-          <div>
-            <main className="service-main">
+          <div style={{width: '100%'}}>
+            <main className="service-main top-service-main">
               <div className="service-explain">
                 <div className="text-left">
                   <h2 className='text-large mt-0'>Dirt-Less Wash</h2>
                   <p>The Dirt-Less Wash is a professional car wash service that specializes in providing exceptional care for all types of vehicles. We take pride in our commitment to using the latest techniques and high-quality products to ensure that every car is left looking its best. With a thorough 2 bucket method or equivalent, we will ensure that every inch of your car is washed with great care.</p>
                   <p>After the car is washed we will clean the wheels and wheel wells, remove any stubborn tar or sap, and even apply a spray wax for added protection and shine. Once the car is washed, we will dry the vehicle, cleans the door jambs, and dress all plastics, wheel wells, and tires. You can be sure that our Dirt-Less wash is far better than anything you can get in a typical tunnel wash.</p>
-                  <p>For those who want an even higher level of care for their vehicle, we also offer an option for a clay bar treatment. This treatment involves using a special clay bar to remove any contaminants or impurities from the surface of the car, leaving it with a smooth and clean finish.</p>
+                  <p>For those who want an even higher level of care for their vehicle, we also offer an add-on for a clay bar treatment. This treatment involves using a special clay bar to remove any contaminants or impurities from the surface of the car, leaving it with a smooth and clean finish.</p>
                 </div>
                 <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6fb3a112-d77a-41fb-e7ec-728b2185b600/public')`}}></div>
               </div>
-              <h2 className="text-large">Interior and Exterior Combo Deal <a className="aside-link" href="/services/interior-exterior-detailing-combo"><BiLinkExternal /></a></h2>
-              <div className="text-left">
-                <p>Get a <span className="special-package">FREE</span> Engine Bay Cleaning when you schedule our Combo Service. This service combines our <a href="/services/full-interior-detail" className="aside-link">Full Interior Detail</a> and this Dirt-Less Wash. It is sure to get your entire vehicle looking like new, even the engine bay which is typically overlooked when washing your car.</p>
-              </div>
-
             </main>
 
-            <br className='extra-space' />
-
-            <h2 className='cleaning-process-title'>Our Dirt-Less Wash Process*</h2>
+            <h2 style={{marginTop: '15vh'}} className='cleaning-process-title'>Our Dirt-Less Wash Process</h2>
             <ol className='list'>
               {content}
             </ol>
@@ -108,6 +103,15 @@ export default function DLWash() {
             <br className='extra-space' />
 
             <div>
+              <div className='pricing__heading-container'>
+                <h3 className="pricing__heading">Our Dirt-Less Wash Pricing</h3>
+                <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
+              </div>
+
+              <PricingComponent prices={['74', '74', '99', '99', '124', '149']} addons={[addons.claybar, addons.glass, addons.waterspot]} />
+            </div>
+
+            {/* <div>
               <h3 className='pricing-title text-white'>Dirt-Less Wash Pricing</h3>
               <p className='subtext'>*Final pricing may vary based on your vehicle condition and size.</p>
               <div className="pricing-container">
@@ -149,29 +153,46 @@ export default function DLWash() {
                 </div>
               </div>
 
-                <h3 className='pricing-title text-white'>Extra Add-ons <a href='/services/add-ons' className='aside-link'><BiLinkExternal /></a></h3>
-                <p className='subtext'>Add-ons that typically get paired with either of our exterior wash services</p>
-                <div className="pricing-container">
-                  <div className="pricing-card text-black">
-                    <strong className='size'>Glass Polishing</strong>
-                    <p>Remove Waterspots and etching from your vehicles glass.</p>
-                    <p className="pricing-price pricing-border">$80/hour</p>
-                    <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                  </div>
-                  <div className="pricing-card text-black">
-                    <strong className='size'>Waterspot/Overspray Removal</strong>
-                    <p>Remove Waterspots and Overspray from your vehicles paint.</p>
-                    <p className="pricing-price pricing-border">$80/hour</p>
-                    <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                  </div>
+              <h3 className='pricing-title text-white'>Extra Add-ons <a href='/services/add-ons' className='aside-link'><BiLinkExternal /></a></h3>
+              <p className='subtext'>Add-ons that typically get paired with either of our exterior wash services</p>
+              <div className="pricing-container">
+                <div className="pricing-card text-black">
+                  <strong className='size'>Glass Polishing</strong>
+                  <p>Remove Waterspots and etching from your vehicles glass.</p>
+                  <p className="pricing-price pricing-border">$80/hour</p>
+                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
+                <div className="pricing-card text-black">
+                  <strong className='size'>Waterspot/Overspray Removal</strong>
+                  <p>Remove Waterspots and Overspray from your vehicles paint.</p>
+                  <p className="pricing-price pricing-border">$80/hour</p>
+                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                </div>
+              </div>
 
-            </div>
+            </div> */}
           </div>
 
         </div>
 
-        <br className='extra-space' />
+        <div style={{padding: '2rem'}} className="service-bkg-lighter">
+          <div className="general-container new-heading-container">
+            <strong className="above-heading">Combo Deal</strong>
+            <h3 className="new-heading">Our Interior + Exterior + FREE Engine Bay Deal</h3>
+          </div>
+          <div style={{padding: '2rem 0'}} className="general-container">
+            {/* <h2 className='text-large text-left'>Professional Exterior Coatings <a href='/services/exterior-ceramic-coating' className='aside-link'><BiLinkExternal /></a></h2>
+            <div className="text-left">
+              <p>If you're interested in protecting the exterior of your vehicle including the windshield, wheel faces, and headlights, then you're looking for our Exterior Ceramic Coatings which you can check out <a href='/services/exterior-ceramic-coating' className='aside-link'>here</a>. </p>
+            </div> */}
+            <h2 className="text-large text-left">Interior and Exterior Combo Deal <a className="aside-link" href="/services/interior-exterior-detailing-combo"><BiLinkExternal /></a></h2>
+            <div className="text-left">
+              <p>Get a <span className="special-package">FREE</span> Engine Bay Cleaning when you schedule our Combo Service. This service combines our <a href="/services/full-interior-detail" className="aside-link">Full Interior Detail</a> and this Dirt-Less Wash. It is sure to get your entire vehicle looking like new, even the engine bay which is typically overlooked when washing your car.</p>
+            </div>
+          </div>
+
+          <br className='extra-space' />
+        </div>
 
       </div>
     </section>
