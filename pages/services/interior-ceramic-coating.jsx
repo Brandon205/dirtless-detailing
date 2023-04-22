@@ -69,7 +69,7 @@ export default function IntCoatings() {
             </div>
 
             <div className="process-container">
-                <div>
+                <div style={{width: '100%'}}>
                     <main className="service-main">
                         <div className="service-explain">
                             <div className="text-left">
@@ -78,18 +78,56 @@ export default function IntCoatings() {
                                 <p>Typically both of our interior coatings will protect your vehicle for about a year before they should be reapplied.</p>
                             </div>
                             <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a196c77-cb1a-42f9-479b-8fdbe3c14500/public')`}}></div>
-
-                        </div>
-
-                        <h2 className='text-large'>Professional Exterior Coatings <a href='/services/exterior-ceramic-coating' className='aside-link'><BiLinkExternal /></a></h2>
-                        <div className="text-left">
-                            <p>If you're interested in protecting the exterior of your vehicle including the windshield, wheel faces, and headlights, then you're looking for our Exterior Ceramic Coatings which you can check out <a href='/services/exterior-ceramic-coating' className='aside-link'>here</a>. </p>
                         </div>
                     </main>
 
                     <br className='extra-space' />
 
-                    <h2 className='coating-heading text-xl'>Fabric Coating</h2>
+                    <div className='package-details-container'>
+                        <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+                            <h2 style={{fontSize: '3rem', margin: '0 0 1rem 0', width: '40%', textAlign: 'left'}}>Our Ceramic Coating Packages</h2>
+                            <p style={{width: '35%'}}>Ceramic coatings are liquid polymers that chemically bond with a vehicle's interior to create a strong, protective layer. This layer resists damage from UV rays, oxidation, small scratches, and contaminants, providing long-lasting protection.</p>
+                        </div>
+
+                        <div className='package-details-bkg'>
+                            <div className='package-container-header'>
+                                <h2 className='coating-heading text-shadow'><span className='special-package'>Fabric</span> Coating</h2>
+                                <p>Price: <span className='pricing__pricecard-price'>$74.99</span></p>
+                            </div>
+                            <div className='package-container'>
+                                <div className='package-details'>
+                                    <h4><GiRolledCloth className='star-icon' /> All Interior Fabrics Coated</h4>
+                                    <p>Apply IGL Fabric to all carpet and fabric.</p>
+                                </div>
+                                <div className='package-details'>
+                                    <h4><GiSpill className='star-icon' /> Spill Resistance</h4>
+                                    <p>Gives you more time to wipe up spills before it seeps into carpets.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='package-details-bkg'>
+                            <div className='package-container-header'>
+                                <h2 className='coating-heading text-shadow'><span className='special-package'>Leather</span> Package</h2>
+                                <p>Price: <span className='pricing__pricecard-price'>$149.99</span></p>
+                            </div>
+                            <div className='package-container'>
+                                <div className='package-details'>
+                                    <h4><GiCarSeat className='star-icon' /> All Interior Leather Coated</h4>
+                                    <p>Install IGL Ecocoat Leather to all leather in the vehicle</p>
+                                </div>
+                                <div className='package-details'>
+                                    <h4><MdCleaningServices className='star-icon' /> Even Easier to Clean</h4>
+                                    <p>The coating we will put on will create a low surface tension layer that stops spills and other messes from bonding to the materials.</p>
+                                </div>
+                                <div className='package-details'>
+                                    <h4><FiSun className='star-icon' /> Block Harmful Rays</h4>
+                                    <p>Coating your interior can help block harmful UV rays that can eventually cause yellowing and fading on leather materials.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* <h2 className='coating-heading text-xl'>Fabric Coating</h2>
                     <p className='package-desc subtext'>The best protection for the fabric inside of your vehicle.</p>
                     <div className='package-container'>
                         <div className='package-details'>
@@ -124,7 +162,7 @@ export default function IntCoatings() {
                             <h4>Block Harmful Rays</h4>
                             <p className='subtext'>Coating your interior can help block harmful UV rays that can eventually cause yellowing and fading on leather materials.</p>
                         </div>
-                    </div>
+                    </div> */}
 
                     <br className='extra-space' />
 
@@ -143,8 +181,11 @@ export default function IntCoatings() {
                                 <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                             </div>
                         </div>
+                    </div>
 
-                        <h3 className='pricing-title text-white'>Monthly Maintenance Pricing</h3>
+                    <br className='extra-space' />
+
+                        {/* <h3 className='pricing-title text-white'>Monthly Maintenance Pricing</h3>
                         <h4 className='subtext'>The goal of our monthly maintenance is to keep your vehicle looking like new year-round. Every month you will get a full <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> and a <a href='/services/full-interior-detail' className='aside-link'>Full Interior Detail</a>.</h4>
                         <div className='pricing-container text-black'>
                             <div className="pricing-card">
@@ -168,28 +209,24 @@ export default function IntCoatings() {
                                 <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
                                 <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                             </div>
-                        </div>
+                        </div> */}
 
-                        <h3 className="pricing-title text-white">Interior Re-coating Options</h3>
-                        <h4 className='subtext'><span className="special-package">*</span>Note: Price doesn't include an <a href="/services/full-interior-detail" className='aside-link'>Interior Detail</a> service which we will need to do before applying the coating for the best results.</h4>
-                        <div className="pricing-container text-black">
-                            <div className="pricing-card">
-                                <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Fabric Re-coating</strong>
-                                <p>Get all interior Fabric/Carpet re-coated.</p>
-                                <p className="pricing-price">$74<span className='ninety-nine'>99</span></p>
-                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                            </div>
-                            <div className="pricing-card">
-                                <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Leather Re-coating</strong>
-                                <p>Get all interior Leather re-coated.</p>
-                                <p className="pricing-price">$149<span className='ninety-nine'>99</span></p>
-                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+
+                    <div style={{padding: '2rem'}} className="service-bkg">
+                        <div className="general-container new-heading-container">
+                            <strong className="above-heading">Related Services</strong>
+                            <h3 className="new-heading">Services similar to our Interior Coatings.</h3>
+                        </div>
+                        <div style={{padding: '2rem 0'}} className="general-container">
+
+                            <h2 className='text-large text-left'>Professional Exterior Coatings <a href='/services/exterior-ceramic-coating' className='aside-link'><BiLinkExternal /></a></h2>
+                            <div className="text-left">
+                                <p>If you're interested in protecting the exterior of your vehicle including the windshield, wheel faces, and headlights, then you're looking for our Exterior Ceramic Coatings which you can check out <a href='/services/exterior-ceramic-coating' className='aside-link'>here</a>. </p>
                             </div>
                         </div>
-
+                        <br className='extra-space' />
                     </div>
 
-                    <br className='extra-space' />
 
                 </div>
             </div>

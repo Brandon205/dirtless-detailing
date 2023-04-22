@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
-import Zoom from 'react-medium-image-zoom';
-import 'react-medium-image-zoom/dist/styles.css';
+// import Zoom from 'react-medium-image-zoom';
+// import 'react-medium-image-zoom/dist/styles.css';
 
 import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 import { BiLinkExternal } from 'react-icons/bi';
@@ -111,7 +111,7 @@ export default function ExtCoatings() {
                     <div className='package-details-container'>
                         <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
                             <h2 style={{fontSize: '3rem', margin: '0 0 1rem 0', width: '40%', textAlign: 'left'}}>Our Ceramic Coating Packages</h2>
-                            <p style={{width: '35%'}}>Ceramic coatings are liquid polymers that chemically bond with a vehicle's exterior to create a hard, protective layer. This layer resists damage from UV rays, oxidation, scratches, and contaminants, providing long-lasting protection and a high-gloss finish.</p>
+                            <p style={{width: '35%'}}>Ceramic coatings are liquid polymers that chemically bond with a vehicle's exterior to create a hard, protective layer. This layer resists damage from UV rays, oxidation, light scratches, and contaminants, providing long-lasting protection and a high-gloss finish.</p>
                         </div>
 
                         <div className='package-details-bkg'>
