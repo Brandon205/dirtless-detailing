@@ -2,6 +2,8 @@ import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
+import PricingComponent from '../../utils/PricingComponent';
+import addons from '../../utils/Addons';
 import { BiLinkExternal } from 'react-icons/bi';
 import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 
@@ -57,10 +59,10 @@ export default function Combo() {
         </div>
       </div>
 
-      <div className='main-content-container bg-contact'>
-        <div className="process-container" id="combo-process">
-          <div>
-            <main className="service-main">
+      <div className='main-content-container'>
+        <div style={{paddingTop: 0}} className="process-container">
+          <div style={{width: '100%'}}>
+            <main className="service-main top-service-main">
               <div className="service-explain">
                 <div className="text-left">
                   <h2 className='text-large'>Interior and Exterior Combo Cleaning</h2>
@@ -69,11 +71,11 @@ export default function Combo() {
                 </div>
                 <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3031c630-d6f2-48fc-1bb4-62844fbd5a00/public')`}}></div>
               </div>
-
               <br className='extra-space' />
             </main>
-            <div>
-              <h2 className='cleaning-process-title'>Our Combo Cleaning Process</h2>
+
+            <div style={{backgroundColor: 'white', color: 'black', paddingTop: '14vh'}}>
+              <h2 className='cleaning-process-title text-xl'>Our Combo Cleaning Process</h2>
               <ol className='list'>
                 <li className="item">
                   <div className="step-number-container">
@@ -109,6 +111,15 @@ export default function Combo() {
             </div>
 
             <div>
+              <div style={{borderRadius: '38px 38px 0 0'}} className='pricing__heading-container'>
+                <h3 className="pricing__heading">Our Combo Package Pricing</h3>
+                <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
+              </div>
+
+              <PricingComponent prices={['299', '299', '349', '349', '399', '399']} addons={[addons.extraction, addons.hair, addons.headliners, addons.fabric, addons.leather, addons.ozone, addons.glass, addons.waterspot]} />
+            </div>
+
+            {/* <div>
               <h3 className='pricing-title text-white'>Our Combo Deal Pricing</h3>
               <p className='subtext'>*Final pricing may vary based on your vehicle condition, size, and whether or not you need extraction.</p>
               <div className="pricing-container">
@@ -222,24 +233,30 @@ export default function Combo() {
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
               </div>
+            </div> */}
+
+
+            <div className="service-bkg">
+              {/* <br className='extra-space' /> */}
+              <div style={{paddingBottom: '3rem'}} className="general-container new-heading-container">
+                <strong className="above-heading">End Results</strong>
+                <h3 className="new-heading">Another example of our completed combo work.</h3>
+              </div>
+              <div className="general-container">
+                <div className="photo-grid place-center">
+                  <Zoom>
+                    <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c537680c-f103-4032-65e3-11370c73d300/public')`, width: 400 + 'px', height: 50 + 'vh'}}></div>
+                  </Zoom>
+                  <Zoom>
+                    <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/42b27e69-bb43-40d4-55c0-4be942f7a300/public')`, width: 400 + 'px', height: 50 + 'vh'}}></div>
+                  </Zoom>
+                  <Zoom>
+                    <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6fb3a112-d77a-41fb-e7ec-728b2185b600/public')`, width: 400 + 'px', height: 50 + 'vh'}}></div>
+                  </Zoom>
+                </div>
+              </div>
+              <br className='extra-space' />
             </div>
-
-            <br className='extra-space' />
-
-            <h4 className='text-large'>Another example of our completed Combo Work:</h4>
-            <div style={{gridAutoRows: '50vh'}} className="photo-grid place-center">
-              <Zoom>
-                <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c537680c-f103-4032-65e3-11370c73d300/public')`, width: 400 + 'px', height: 50 + 'vh'}}></div>
-              </Zoom>
-              <Zoom>
-                <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/42b27e69-bb43-40d4-55c0-4be942f7a300/public')`, width: 400 + 'px', height: 50 + 'vh'}}></div>
-              </Zoom>
-              <Zoom>
-                <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6fb3a112-d77a-41fb-e7ec-728b2185b600/public')`, width: 400 + 'px', height: 50 + 'vh'}}></div>
-              </Zoom>
-            </div>
-
-            <br className='extra-space' />
 
           </div>
 

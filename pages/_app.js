@@ -40,14 +40,16 @@ export default function MyApp({ Component, pageProps }) {
 
     let handleScroll = () => {
         const pos = window.pageYOffset;
-        if (pos > 400 || smallScreen && navBar.current) {
-            navBar.current.style.backgroundColor = '#101010'
-            navBar.current.style.backdropFilter = 'none'
-            navBar.current.style.borderRadius = '0'
-            navBar.current.style.transform = 'scale(100%)'
-            navBar.current.style.transition = '0.5s'
-        } else {
-            navBar.current.removeAttribute('style')
+        if (navBar.current.style !== null) {
+            if (pos > 400 || smallScreen) {
+                navBar.current.style.backgroundColor = '#101010'
+                navBar.current.style.backdropFilter = 'none'
+                navBar.current.style.borderRadius = '0'
+                navBar.current.style.transform = 'scale(100%)'
+                navBar.current.style.transition = '0.5s'
+            } else {
+                navBar.current.removeAttribute('style')
+            }
         }
     }
 
