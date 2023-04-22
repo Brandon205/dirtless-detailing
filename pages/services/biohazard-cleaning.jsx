@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
-import ReactPlayer from 'react-player/lazy';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
+// import ReactPlayer from 'react-player/lazy';
 import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 
 const steps = [
@@ -69,17 +71,17 @@ export default function Bio() {
       <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/901f2f70-2010-4f2b-aac3-6a98dc38e400/cover')`}}></div>
       <div className="servicepage-header">
         <h1>Biohazard Cleaning</h1>
-        <h2 className='page-subheading'>Mold, odors, or other mildly hazardous spills in your vehicle? Look no further than our Biohazard cleaning.</h2>
+        <h2 className='page-subheading'>Mold, odors, or other mildly hazardous spills in your vehicle? Look no further than our biohazard cleaning.</h2>
         <div className='header-buttons'>
           <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
           <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
         </div>
       </div>
 
-      <div className='main-content-container bg-contact'>
+      <div className='main-content-container'>
         <div className='process-container'>
-          <div>
-            <main className="service-main">
+          <div style={{width: '100%'}}>
+            <main className="service-main top-service-main">
               <div className="service-explain">
                 <div className="text-left">
                   <h2 className='text-large'>Professional Biohazard Cleaning</h2>
@@ -87,21 +89,22 @@ export default function Bio() {
                   <p>The sooner we can get to it, the easier it is to clean up. Depending on where the accident took place, how much fluid came out, and how long ago the accident happened will determine what we can do.</p>
                   <p>Generally speaking, if there is a smell lingering in the interior due to an accident, the smell should be gone once it is cleaned up.  We also have a state of the art ozone machine to blast away any remaining odors and sanitize the air.</p>
                 </div>
-                <div className="service-image">
+                <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b1445bc-f69e-44e8-6336-345384ea5700/public')`}}></div>
+                {/* <div className="service-image">
                   <ReactPlayer width={280} height={487} url='https://res.cloudinary.com/brandon205/video/upload/v1674493881/Dirt-Less%20Detailing/Videos/received_1068200607393416_2_ln04go.mp4' loop muted playing />
-                </div>
+                </div> */}
               </div>
 
               <br className='extra-space' />
             </main>
-            <h2 className='cleaning-process-title text-large'>Our Biohazard Cleaning Process</h2>
+            <h2 style={{paddingTop: '15vh'}} className='cleaning-process-title text-large'>Our Biohazard Cleaning Process</h2>
             <ol className='list'>
               {content}
             </ol>
 
             <br className='extra-space' />
 
-            <div>
+            <div style={{borderRadius: '38px 38px 0 0'}} className='service-bkg'>
               <h3 className='pricing-title text-white'>Our Biohazard Cleaning Pricing</h3>
               <p className='subtext'>*Final pricing may vary within the ranges below based on your vehicle condition and size.</p>
               <div className="pricing-container">
@@ -113,15 +116,37 @@ export default function Bio() {
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                 </div>
               </div>
+              <br className='extra-space' />
             </div>
 
-            <h4 className='text-large'>Some extreme examples of our Biohazard cleaning work so far:</h4>
+            <div className="service-bkg-lighter">
+              <div style={{paddingBottom: '3rem'}} className="general-container new-heading-container">
+                <strong className="above-heading">End Results</strong>
+                <h3 className="new-heading">Some extreme examples of our Biohazard cleaning work so far:</h3>
+              </div>
+              <div className="general-container">
+                <div className="photo-grid place-center">
+                  <Zoom>
+                    <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b1445bc-f69e-44e8-6336-345384ea5700/public')`, width: 400 + 'px', height: 50 + 'vh'}}></div>
+                  </Zoom>
+                  <Zoom>
+                    <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/573ae239-6c34-445b-648b-be2771384600/public')`, width: 400 + 'px', height: 50 + 'vh'}}></div>
+                  </Zoom>
+                  <Zoom>
+                    <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/94622f27-c613-4daa-6c08-4d0cb31af800/public')`, width: 400 + 'px', height: 50 + 'vh'}}></div>
+                  </Zoom>
+                </div>
+              </div>
+              <br className='extra-space' />
+            </div>
+
+            {/* <h4 className='text-large'>Some extreme examples of our Biohazard cleaning work so far:</h4>
             <div className="photo-grid">
               <div className="card card-tall" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b1445bc-f69e-44e8-6336-345384ea5700/public')`}}></div>
               <div className="card card-tall" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/573ae239-6c34-445b-648b-be2771384600/public')`}}></div>
               <div className="card card-tall" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/94622f27-c613-4daa-6c08-4d0cb31af800/public')`}}></div>
             </div>
-            <br className='extra-space' />
+            <br className='extra-space' /> */}
           </div>
 
 

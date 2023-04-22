@@ -10,7 +10,7 @@ import { FiSun } from 'react-icons/fi';
 
 export default function IntCoatings() {
     return (
-        <section className="service-content-container bg-contact">
+        <section className="service-content-container">
             <Head>
                 <title>Interior Ceramic Coatings | Dirt-Less Detailing</title>
                 <Metatags
@@ -70,7 +70,7 @@ export default function IntCoatings() {
 
             <div className="process-container">
                 <div style={{width: '100%'}}>
-                    <main className="service-main">
+                    <main className="service-main top-service-main">
                         <div className="service-explain">
                             <div className="text-left">
                                 <h2 className='text-large'>Professional Interior Ceramic Coating</h2>
@@ -81,9 +81,7 @@ export default function IntCoatings() {
                         </div>
                     </main>
 
-                    <br className='extra-space' />
-
-                    <div className='package-details-container'>
+                    <div style={{marginTop: '15vh'}} className='package-details-container'>
                         <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
                             <h2 style={{fontSize: '3rem', margin: '0 0 1rem 0', width: '40%', textAlign: 'left'}}>Our Ceramic Coating Packages</h2>
                             <p style={{width: '35%'}}>Ceramic coatings are liquid polymers that chemically bond with a vehicle's interior to create a strong, protective layer. This layer resists damage from UV rays, oxidation, small scratches, and contaminants, providing long-lasting protection.</p>
@@ -166,7 +164,7 @@ export default function IntCoatings() {
 
                     <br className='extra-space' />
 
-                    <div>
+                    <div style={{marginTop: '5vh', borderRadius: '38px 38px 0 0'}} className='service-bkg'>
                         <h3 className='pricing-title text-white'>Interior Coating Pricing</h3>
                         <h4 className='subtext'><span className='special-package'>*</span>Pricing does NOT include an <a href="/services/full-interior-detail" className='aside-link'>Interior Cleaning</a>, which you will want to factor in before getting a coating.</h4>
                         <div style={{width: '75%'}} className='pricing-container text-black'>
@@ -181,9 +179,9 @@ export default function IntCoatings() {
                                 <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                             </div>
                         </div>
+                        <br className='extra-space' />
                     </div>
 
-                    <br className='extra-space' />
 
                         {/* <h3 className='pricing-title text-white'>Monthly Maintenance Pricing</h3>
                         <h4 className='subtext'>The goal of our monthly maintenance is to keep your vehicle looking like new year-round. Every month you will get a full <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> and a <a href='/services/full-interior-detail' className='aside-link'>Full Interior Detail</a>.</h4>
@@ -212,7 +210,7 @@ export default function IntCoatings() {
                         </div> */}
 
 
-                    <div style={{padding: '2rem'}} className="service-bkg">
+                    <div style={{padding: '2rem'}} className="service-bkg-lighter">
                         <div className="general-container new-heading-container">
                             <strong className="above-heading">Related Services</strong>
                             <h3 className="new-heading">Services similar to our Interior Coatings.</h3>

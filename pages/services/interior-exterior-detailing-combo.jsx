@@ -236,7 +236,7 @@ export default function Combo() {
             </div> */}
 
 
-            <div className="service-bkg">
+            <div className="service-bkg-lighter">
               {/* <br className='extra-space' /> */}
               <div style={{paddingBottom: '3rem'}} className="general-container new-heading-container">
                 <strong className="above-heading">End Results</strong>

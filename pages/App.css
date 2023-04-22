@@ -800,7 +800,7 @@ option {
   border-radius: 38px;
   background: var(--contact-bkg);
   color: white;
-  padding: 2rem 4rem;
+  padding: 2rem 4rem 3rem 4rem;
   z-index: 5;
 }
 
@@ -2133,6 +2133,12 @@ hr {
 }
 
 .service-bkg {
+  background: #212327;
+  color: white;
+  padding-top: 2rem;
+}
+
+.service-bkg-lighter {
   background: #292B2F;
   color: white;
   padding-top: 2rem;
