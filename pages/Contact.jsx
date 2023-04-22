@@ -65,11 +65,7 @@ export default function Contact() {
             "Paint Correction": formRef.current['Single Stage'].checked ? 'Single Stage' : formRef.current['Two Stage'].checked ? 'Two Stage' : '',
 
             "Monthly Maintenance": e.target['monthly'].checked ? 'Yes' : 'No',
-            "Yearly Maintenance": e.target['yearly'].checked ? 'Yes' : 'No',
-            "Trim re-coating": e.target['trim-recoat'].checked ? 'Yes' : 'No',
-            "Wheel Faces re-coating": e.target['wheel-recoat'].checked ? 'Yes' : 'No',
-            "Fabric re-coating": e.target['fabric-recoat'].checked ? 'Yes' : 'No',
-            "Leather re-coating": e.target['leather-recoat'].checked ? 'Yes' : 'No'
+            "Yearly Maintenance": e.target['yearly'].checked ? 'Yes' : 'No'
         }
 
         const formData = new FormData();
@@ -612,18 +608,6 @@ export default function Contact() {
 
                             <input type="checkbox" name="yearly" id='yearly' className='checkbox-input' />
                             <label htmlFor="yearly" className='checkbox-label'>Yearly Maintenance <span className='special-package italic'>($200-$300)</span></label>
-
-                            <input type="checkbox" name="trim-recoat" id='trim-recoat' className='checkbox-input' />
-                            <label htmlFor="trim-recoat" className='checkbox-label'>Trim Re-coating <span className='special-package italic'>($100)</span></label>
-
-                            <input type="checkbox" name="wheel-recoat" id='wheel-recoat' className='checkbox-input' />
-                            <label htmlFor="wheel-recoat" className='checkbox-label'>Wheel Faces Re-coating <span className='special-package italic'>($150)</span></label>
-
-                            <input type="checkbox" name="fabric-recoat" id='fabric-recoat' className='checkbox-input' />
-                            <label htmlFor="fabric-recoat" className='checkbox-label'>Fabric Re-coating <span className='special-package italic'>($75)</span></label>
-
-                            <input type="checkbox" name="leather-recoat" id='leather-recoat' className='checkbox-input' />
-                            <label htmlFor="leather-recoat" className='checkbox-label'>Leather Re-coating <span className='special-package italic'>($150)</span></label>
                         </div>
                     </div>
 
