@@ -14,11 +14,11 @@ export default function PaintCorrectionGallery() {
         <Metatags
           title='Car Wash Gallery | Dirt-Less Detailing'
           description='Take a look at our showcase of our exterior wash services to get a preview of what we are capable of doing to your car, no matter the current condition!'
-          image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a33a454b-ac45-4972-91f7-3d80eda98900/public'
+          image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/55dcbdac-12df-4f37-2058-f3aaf8a6b600/public'
           canonical='/gallery/dirtless-wash-gallery'
         />
       </Head>
-      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a33a454b-ac45-4972-91f7-3d80eda98900/cover')`}}></div>
+      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/55dcbdac-12df-4f37-2058-f3aaf8a6b600/cover')`}}></div>
       <div className="servicepage-heading">
         <h1>Dirt-Less Wash Gallery</h1>
         <p>This is a showcase of our Dirt-Less Wash service. Take a look at our <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> page for more details and pricing.</p>
