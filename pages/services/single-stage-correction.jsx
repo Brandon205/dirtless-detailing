@@ -5,6 +5,8 @@ import 'react-medium-image-zoom/dist/styles.css';
 import { BiLinkExternal } from 'react-icons/bi';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { MdOutlinePermPhoneMsg } from 'react-icons/md';
+import PricingComponent from '../../utils/PricingComponent';
+import addons from '../../utils/Addons';
 
 const steps = [
   ["Wash Vehicle", "Thorough strip wash top to bottom using 2 bucket method or equivalent, including gas door."],
@@ -97,10 +99,10 @@ export default function SinglePC() {
         </div>
       </div>
 
-      <div className='main-content-container bg-contact'>
+      <div className='main-content-container'>
         <div className="process-container">
-          <div>
-            <main className="service-main">
+          <div style={{width: '100%'}}>
+            <main className="service-main top-service-main">
               <div className="service-explain">
                 <div className="text-left">
                   <h2 className='text-large mt-0'>Single Stage Paint Correction</h2>
@@ -114,9 +116,7 @@ export default function SinglePC() {
               </div>
             </main>
 
-            <br className='extra-space' />
-
-            <h2 className='cleaning-process-title'>Our Single Stage Paint Correction Process</h2>
+            <h2 style={{marginTop: '15vh'}} className='cleaning-process-title'>Our Single Stage Paint Correction Process</h2>
             <ol className='list'>
               {content}
             </ol>
@@ -125,6 +125,15 @@ export default function SinglePC() {
             <br className='extra-space' />
 
             <div>
+              <div className='pricing__heading-container'>
+                <h3 className="pricing__heading">Our Single Stage Correction Pricing</h3>
+                <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
+              </div>
+
+              <PricingComponent prices={['549', '549', '699', '699', '849', '849']} addons={[addons.glass]} />
+            </div>
+
+            {/* <div>
               <h3 className='pricing-title text-white'>Our Single Stage Paint Correction Pricing</h3>
               <p className='subtext'>*Final pricing may vary based on your vehicle condition and size.</p>
               <div className="pricing-container">
@@ -159,48 +168,50 @@ export default function SinglePC() {
                 </div>
               </div>
 
-            </div>
-
-            <br className='extra-space' />
-
-            <h4 className='text-large'>Visual example of different paint defects:</h4>
-            <p className='subtext'>This gives an example of why deeper scratches aren't removable without repainting.</p>
-            <div className="photo-grid">
-              <Zoom>
-                <div aria-label="Paint defects info and depth" role='img' className="card card-tall card-wide" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3c1c25a3-cbab-4f82-91b1-ba2a30626500/public')`}} />
-              </Zoom>
-            </div>
-
-
-            <br className="extra-space" />
-
-            <div>
-              <strong className='text-medium'>We'll help customers from all over get a paint correction on their vehicle, however, most of our customers come to our shop from these areas:</strong>
-              <div style={{ display: 'grid', placeItems: 'center' }}>
-                <ul className='cities-ul'>
-                  <li><a href='/correction/bonney-lake' className='aside-link'>Bonney Lake</a><FaMapMarkerAlt /></li>
-                  <li><a href='/correction/buckley' className='aside-link'>Buckley</a><FaMapMarkerAlt /></li>
-                  <li><a href='/correction/sumner' className='aside-link'>Sumner</a><FaMapMarkerAlt /></li>
-                  <li><a href='/correction/enumclaw' className='aside-link'>Enumclaw</a><FaMapMarkerAlt /></li>
-                  <li><a href='/correction/lake-tapps' className='aside-link'>Lake Tapps</a><FaMapMarkerAlt /></li>
-                  <li><a href='/correction/puyallup' className='aside-link'>Puyallup</a><FaMapMarkerAlt /></li>
-                  <li><a href='/correction/tehaleh' className='aside-link'>Tehaleh</a><FaMapMarkerAlt /></li>
-                  <li><a href='/correction/federal-way' className='aside-link'>Federal Way</a><FaMapMarkerAlt /></li>
-                  <li><a href='/correction/orting' className='aside-link'>Orting</a><FaMapMarkerAlt /></li>
-                  <li><a href='/correction/south-prairie' className='aside-link'>South Prairie</a><FaMapMarkerAlt /></li>
-                  <li><a href='/correction/black-diamond' className='aside-link'>Black Diamond</a><FaMapMarkerAlt /></li>
-                  <li><a href='/correction/milton' className='aside-link'>Milton</a><FaMapMarkerAlt /></li>
-                  <li><a href='/correction/edgewood' className='aside-link'>Edgewood</a><FaMapMarkerAlt /></li>
-                  <li><a href='/correction/graham' className='aside-link'>Graham</a><FaMapMarkerAlt /></li>
-                </ul>
+            </div> */}
+            <div className="service-bkg-lighter">
+              <div className="general-container new-heading-container">
+                <strong className="above-heading">Further Reading</strong>
+                <h3 className="new-heading">Visual example of different paint defects.</h3>
+                <p style={{marginTop: 0, color: '#c0c0c0'}}>This gives a great visual as to why deeper scratches aren't safely removable without repainting.</p>
               </div>
+              <div className="general-container">
+                <div className="photo-grid">
+                  <Zoom>
+                    <div aria-label="Paint defects info and depth" role='img' className="card card-tall card-wide" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3c1c25a3-cbab-4f82-91b1-ba2a30626500/public')`}} />
+                  </Zoom>
+                </div>
+
+                <br className="extra-space" />
+
+                <div>
+                  <strong className='text-medium'>We'll help customers from all over get a paint correction on their vehicle, however, most of our customers come to our shop from these areas:</strong>
+                  <div style={{ display: 'grid', placeItems: 'center' }}>
+                    <ul className='cities-ul'>
+                      <li><a href='/correction/bonney-lake' className='aside-link'>Bonney Lake</a><FaMapMarkerAlt /></li>
+                      <li><a href='/correction/buckley' className='aside-link'>Buckley</a><FaMapMarkerAlt /></li>
+                      <li><a href='/correction/sumner' className='aside-link'>Sumner</a><FaMapMarkerAlt /></li>
+                      <li><a href='/correction/enumclaw' className='aside-link'>Enumclaw</a><FaMapMarkerAlt /></li>
+                      <li><a href='/correction/lake-tapps' className='aside-link'>Lake Tapps</a><FaMapMarkerAlt /></li>
+                      <li><a href='/correction/puyallup' className='aside-link'>Puyallup</a><FaMapMarkerAlt /></li>
+                      <li><a href='/correction/tehaleh' className='aside-link'>Tehaleh</a><FaMapMarkerAlt /></li>
+                      <li><a href='/correction/federal-way' className='aside-link'>Federal Way</a><FaMapMarkerAlt /></li>
+                      <li><a href='/correction/orting' className='aside-link'>Orting</a><FaMapMarkerAlt /></li>
+                      <li><a href='/correction/south-prairie' className='aside-link'>South Prairie</a><FaMapMarkerAlt /></li>
+                      <li><a href='/correction/black-diamond' className='aside-link'>Black Diamond</a><FaMapMarkerAlt /></li>
+                      <li><a href='/correction/milton' className='aside-link'>Milton</a><FaMapMarkerAlt /></li>
+                      <li><a href='/correction/edgewood' className='aside-link'>Edgewood</a><FaMapMarkerAlt /></li>
+                      <li><a href='/correction/graham' className='aside-link'>Graham</a><FaMapMarkerAlt /></li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+
             </div>
           </div>
 
-        </div>
-
-        
-        <br className='extra-space' />
+        </div>        
       </div>
     </section>
   )
