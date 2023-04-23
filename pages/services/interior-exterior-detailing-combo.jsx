@@ -69,7 +69,9 @@ export default function Combo() {
                   <p>Our Combo Service offers a comprehensive package that includes a thorough  <a href="/services/full-interior-detail" className='aside-link'>Full Interior Detail</a> and a <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a>, as well as a <span className="special-package">FREE</span> <a href="/services/add-ons#engine" className='aside-link'>Engine Bay Cleaning</a> to keep your vehicle in top shape. Trust us to leave your car looking and feeling like new with our expert attention to detail and use of high-quality products.</p>
                   <p>If you are after the most thorough interior and exterior detail you can find, or even trying to get the most money when selling your vehicle, this is the package for you!</p>
                 </div>
-                <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3031c630-d6f2-48fc-1bb4-62844fbd5a00/public')`}}></div>
+                <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3031c630-d6f2-48fc-1bb4-62844fbd5a00/public')`}}>
+                  <img style={{visibility: 'hidden'}} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3031c630-d6f2-48fc-1bb4-62844fbd5a00/public" />
+                </div>
               </div>
               <br className='extra-space' />
             </main>

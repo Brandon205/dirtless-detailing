@@ -89,7 +89,9 @@ export default function Bio() {
                   <p>The sooner we can get to it, the easier it is to clean up. Depending on where the accident took place, how much fluid came out, and how long ago the accident happened will determine what we can do.</p>
                   <p>Generally speaking, if there is a smell lingering in the interior due to an accident, the smell should be gone once it is cleaned up.  We also have a state of the art ozone machine to blast away any remaining odors and sanitize the air.</p>
                 </div>
-                <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b1445bc-f69e-44e8-6336-345384ea5700/public')`}}></div>
+                <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b1445bc-f69e-44e8-6336-345384ea5700/public')`}}>
+                  <img style={{visibility: 'hidden'}} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b1445bc-f69e-44e8-6336-345384ea5700/public" />
+                </div>
                 {/* <div className="service-image">
                   <ReactPlayer width={280} height={487} url='https://res.cloudinary.com/brandon205/video/upload/v1674493881/Dirt-Less%20Detailing/Videos/received_1068200607393416_2_ln04go.mp4' loop muted playing />
                 </div> */}

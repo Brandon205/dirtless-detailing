@@ -110,11 +110,15 @@ export default function TwoPC() {
                   <p>Depending on the state of your vehicles paint, age, and quality certain scratches may not completely disappear. Either the clear coat is thinning away too much or the scratches may be too deep to properly remove. (Before we begin, we'll measure the paint.)</p>
                   <p>We'll decide from here what we can safely remove from your paint. It's not only about getting rid of as many flaws as you can. In order to maintain the quality of the paint, it's also important to determine when enough is enough.</p>
                 </div>
-                <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fabb5ba-d12e-4e8a-c3bb-f5901af53e00/public')`}}></div>
+                <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fabb5ba-d12e-4e8a-c3bb-f5901af53e00/public')`}}>
+                  <img style={{visibility: 'hidden'}} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fabb5ba-d12e-4e8a-c3bb-f5901af53e00/public" />
+                </div>
               </div>
 
               <div className="service-explain">
-                <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/08914f28-3d2e-421e-c846-8f15062e0000/public')`}}></div>
+                <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/08914f28-3d2e-421e-c846-8f15062e0000/public')`}}>
+                  <img style={{visibility: 'hidden'}} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/08914f28-3d2e-421e-c846-8f15062e0000/public" />
+                </div>
                 <div className="text-left">
                   <h2 className="text-large mt-0">Maintenance Commitment</h2>
                   <p>You are making a commitment at this point to your vehicle by getting our Level 2 paint correction. After the service is over, you must carefully maintain the vehicle if you want to keep the shine on your paint. After just a few washes, you may easily bring all those swirls and scratches back into your paint if you don't correctly wash and dry the car.</p>

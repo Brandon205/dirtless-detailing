@@ -172,6 +172,8 @@ export default function ExtCoatings() {
                         </div>
                     </div>
 
+                    <br className="extra-space" />
+
                     <div>
                         <div className='pricing__heading-container'>
                             <h3 className="pricing__heading">Our Ceramic Coating Pricing</h3>
@@ -187,11 +189,11 @@ export default function ExtCoatings() {
                         <PricingComponent prices={currPackage === 'Protect' ? ['949', '949', '1,099', '1,099', '1,249', '1,249'] : ['1,399', '1,399', '1,699', '1,699', '1,849', '1,849']} ceramic={true} />
                     </div>
                         
-                    <div className="service-bkg">
+                    <div className="service-bkg-lighter">
                         <div className="general-container new-heading-container">
                             <strong className="above-heading">Further Reading</strong>
                         </div>
-                        <main className="service-main">
+                        <main className="service-main general-container">
                             {/* <div className="service-explain">
                                 <div className="text-left">
                                     <h2 className='text-large'>What is a Ceramic Coating?</h2>
@@ -213,11 +215,15 @@ export default function ExtCoatings() {
                                         <li>Offers unparalleled hydrophobic qualities that keep your vehicle clean and makes washing it simpler, and more fun.</li>
                                     </ul>
                                 </div>
-                                <div className="service-image" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b3d13f8-c7ec-44fc-7750-ab0d466eae00/public')`}}></div>
+                                <div className="service-image" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b3d13f8-c7ec-44fc-7750-ab0d466eae00/public')`}}>
+                                    <img style={{visibility: 'hidden'}} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b3d13f8-c7ec-44fc-7750-ab0d466eae00/public" />
+                                </div>
                             </div>
 
                             <div className="service-explain">
-                                <div className="service-image" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/32aa3e25-1fcb-4e05-760a-eb53f4b18400/public')`, backgroundColor: 'whitesmoke', width: '50%', height: '550px'}}></div>
+                                <div className="service-image" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/32aa3e25-1fcb-4e05-760a-eb53f4b18400/public')`, backgroundColor: 'whitesmoke'}}>
+                                    <img style={{visibility: 'hidden'}} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/32aa3e25-1fcb-4e05-760a-eb53f4b18400/public" />
+                                </div>
                                 <div className="text-left">
                                     <h2 className="text-large">Ceramic Coating Installation Info</h2>
                                     <p>Your car must first be correctly prepared and corrected using one of our <a href="/detailing/correction" className='aside-link'>Paint Correction</a> services before the coating is applied. You won't get the full range of advantages that a ceramic coating can provide if we apply it without doing the necessary preparation work. </p>
@@ -241,7 +247,9 @@ export default function ExtCoatings() {
                                 {/* <div className="example-img">
                                     <ReactPlayer width={280} height={487} url='https://res.cloudinary.com/brandon205/video/upload/v1674493877/Dirt-Less%20Detailing/Videos/received_1200318400918064_3_qteejy.mp4' loop muted playing />
                                 </div> */}
-                                <div className="service-image" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b69dcca1-8d92-414e-32c9-ddfe247fa100/public')`, width: '50%', height: '475px'}}></div>
+                                <div className="service-image" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b69dcca1-8d92-414e-32c9-ddfe247fa100/public')`}}>
+                                    <img style={{visibility: 'hidden'}} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b69dcca1-8d92-414e-32c9-ddfe247fa100/public" />
+                                </div>
                             </div>
 
                             <h2 className='text-large'>Professional Interior Coatings <a href='/services/interior-ceramic-coating' className='aside-link'><BiLinkExternal /></a></h2>
@@ -268,7 +276,10 @@ export default function ExtCoatings() {
                             </div> */}
 
                             <div id='faq'>
-                                <h3 style={{ fontSize: 2 + 'em' }}>Ceramic Coating FAQ</h3>
+                                <div className="new-heading-container">
+                                    <strong className="above-heading">FAQ</strong>
+                                    <h3 className="new-heading">Get your Ceramic Coating Questions answered here.</h3>
+                                </div>
                                 <ul className='faq-ul'>
                                     <li className='faq-li'>How long does it last?</li>
                                     <li className='faq-p'>The paint coating should last 5 years, 50,000 miles, or a Lifetime<span className='special-package'>*</span> with our warranty. The coating on any trim, glass, lights, or wheels will last 1 year approximately.</li>

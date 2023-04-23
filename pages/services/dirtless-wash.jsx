@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import { BiLinkExternal } from 'react-icons/bi';
@@ -15,6 +16,8 @@ const steps = [
 ]
 
 export default function DLWash() {
+  const [slide, setSlide] = useState(50);
+
   const content = steps.map((item, id) => {
     return (
       <li key={id} className="item">
@@ -91,7 +94,9 @@ export default function DLWash() {
                   <p>After the car is washed we will clean the wheels and wheel wells, remove any stubborn tar or sap, and even apply a spray wax for added protection and shine. Once the car is washed, we will dry the vehicle, cleans the door jambs, and dress all plastics, wheel wells, and tires. You can be sure that our Dirt-Less wash is far better than anything you can get in a typical tunnel wash.</p>
                   <p>For those who want an even higher level of care for their vehicle, we also offer an add-on for a clay bar treatment. This treatment involves using a special clay bar to remove any contaminants or impurities from the surface of the car, leaving it with a smooth and clean finish.</p>
                 </div>
-                <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6fb3a112-d77a-41fb-e7ec-728b2185b600/public')`}}></div>
+                <div className="service-image" role="img" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6fb3a112-d77a-41fb-e7ec-728b2185b600/public')`}}>
+                  <img style={{visibility: 'hidden'}} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6fb3a112-d77a-41fb-e7ec-728b2185b600/public" />
+                </div>
               </div>
             </main>
 
@@ -101,6 +106,20 @@ export default function DLWash() {
             </ol>
 
             <br className='extra-space' />
+
+            <p style={{fontSize: '2rem'}}>End Results</p>
+            <h3 className='pricing__heading'>Smooth, Clean, and Picture Perfect Results.</h3>
+            <p>From the wheels to the side mirrors, your car will be shining like never before!</p>
+            <div style={{display: 'grid'}} className='place-center'>
+              <div className='slider-container'>
+                <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/1c18d7f5-2339-40b8-289f-18625dbee300/public')`}} className='slider-img'></div>
+                <div style={{width: 0 + slide + '%', backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/fcc7d28d-1e01-4139-7e73-c7ef6ebe2f00/public')`}} className='slider-img foreground'></div>
+                <input type="range" min="1" max="100" value={slide} onChange={(e) => setSlide(Number(e.target.value))} className="slider-bar" name='slider' id="slider" />
+                <div style={{left: slide - 2.7 + '%'}} className="slider-button"></div>
+              </div>
+            </div>
+
+            <br className="extra-space" />
 
             <div>
               <div className='pricing__heading-container'>
