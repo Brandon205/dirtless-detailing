@@ -115,42 +115,6 @@ export default function IntCoatings() {
                             </div>
                         </div>
                     </div>
-                    {/* <h2 className='coating-heading text-xl'>Fabric Coating</h2>
-                    <p className='package-desc subtext'>The best protection for the fabric inside of your vehicle.</p>
-                    <div className='package-container'>
-                        <div className='package-details'>
-                            <GiRolledCloth className='package-icon' />
-                            <h4>All Interior Fabrics Covered</h4>
-                            <p className='subtext'>Apply IGL Fabric to all carpet and fabric.</p>
-                        </div>
-                        <div className='package-details'>
-                            <GiSpill className='package-icon' />
-                            <h4>Spill Resistance</h4>
-                            <p className='subtext'>Gives you more time to wipe up spills before it seeps into carpets.</p>
-                        </div>
-                    </div>
-
-                    <br className='extra-space' />
-
-                    <h2 className='coating-heading text-xl'>Leather Coating</h2>
-                    <p className='package-desc subtext'>The longest lasting protection for your vehicles leather.</p>
-                    <div className='package-container'>
-                        <div className='package-details'>
-                            <GiCarSeat className='package-icon' />
-                            <h4>All Interior Leather Coated</h4>
-                            <p className='subtext'>Install IGL Ecocoat Leather to all leather in the vehicle.</p>
-                        </div>
-                        <div className='package-details'>
-                            <MdCleaningServices className='package-icon' />
-                            <h4>Even Easier to Clean</h4>
-                            <p className='subtext'>The coating we will put on will create a low surface tension layer that stops spills and other messes from bonding to the materials.</p>
-                        </div>
-                        <div className='package-details'>
-                            <FiSun className='package-icon' />
-                            <h4>Block Harmful Rays</h4>
-                            <p className='subtext'>Coating your interior can help block harmful UV rays that can eventually cause yellowing and fading on leather materials.</p>
-                        </div>
-                    </div> */}
 
                     <br className='extra-space' />
 
@@ -176,42 +140,9 @@ export default function IntCoatings() {
                                     <p className="pricing-price">$149<span className='ninety-nine'>99</span></p>
                                 </div>
                             </div>
-                            {/* <div className="pricing-card">
-                                <strong className='size'>Leather Coating<br /> (Any Size Vehicle)</strong>
-                                <p className="pricing-price">$149<span className='ninety-nine'>99</span></p>
-                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                            </div> */}
                         </div>
                         <br className='extra-space' />
                     </div>
-
-
-                        {/* <h3 className='pricing-title text-white'>Monthly Maintenance Pricing</h3>
-                        <h4 className='subtext'>The goal of our monthly maintenance is to keep your vehicle looking like new year-round. Every month you will get a full <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> and a <a href='/services/full-interior-detail' className='aside-link'>Full Interior Detail</a>.</h4>
-                        <div className='pricing-container text-black'>
-                            <div className="pricing-card">
-                                <strong className='size'>Small</strong>
-                                <p className="pricing-price pricing-border">$129<span className='ninety-nine'>99</span></p>
-                                <p className="example-vehicle pricing-border">2-Door Coupes</p>
-                                <p className="example-vehicle pricing-border">Single/Extended Cabs</p>
-                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                            </div>
-                            <div className="pricing-card">
-                                <strong className='size'>Medium</strong>
-                                <p className="pricing-price pricing-border">$159<span className='ninety-nine'>99</span></p>
-                                <p className="example-vehicle pricing-border">4 Door Vehicles</p>
-                                <p className="example-vehicle pricing-border">Smaller SUV's</p>
-                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                            </div>
-                            <div className="pricing-card">
-                                <strong className='size'>Large</strong>
-                                <p className="pricing-price pricing-border">$189<span className='ninety-nine'>99</span></p>
-                                <p className="example-vehicle pricing-border">Larger Trucks</p>
-                                <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
-                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                            </div>
-                        </div> */}
-
 
                     <div style={{padding: '2rem'}} className="service-bkg-lighter">
                         <div className="general-container new-heading-container">
@@ -248,7 +179,6 @@ export default function IntCoatings() {
                         </div>
                         <br className='extra-space' />
                     </div>
-
 
                 </div>
             </div>

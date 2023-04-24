@@ -299,87 +299,9 @@ export default function ExtCoatings() {
                             </div>
                         </main>
                     </div>
-                    {/* <div>
-                        <h3 className='pricing-title text-white'>Our Ceramic Coating Pricing</h3>
-                        <h4 className='subtext'><span className='special-package'>*</span>Pricing <span className='special-package'>INCLUDES</span> a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</h4>
-                        <div className="pricing-container text-black">
-                            <div className="pricing-card">
-                                <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Single Row Trucks and 2-Door Cars</strong>
-                                <strong className='size'>Protect</strong>
-                                <p className="pricing-price pricing-border">$949<span className='ninety-nine'>99</span></p>
-                                <strong className='size'>Protect<span className="special-package">+</span></strong>
-                                <p className="pricing-price pricing-border">$1,399<span className='ninety-nine'>99</span></p>
-                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                            </div>
-                            <div className="pricing-card">
-                                <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Most Mid-Size SUV's and 4-Door Cars</strong>
-                                <strong className='size'>Protect</strong>
-                                <p className="pricing-price pricing-border">$1,099<span className='ninety-nine'>99</span></p>
-                                <strong className='size'>Protect<span className="special-package">+</span></strong>
-                                <p className="pricing-price pricing-border">$1,699<span className='ninety-nine'>99</span></p>
-                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                            </div>
-                            <div className="pricing-card">
-                                <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>3-Row SUV's, Minivans, and Trucks</strong>
-                                <strong className='size'>Protect</strong>
-                                <p className="pricing-price pricing-border">$1,249<span className='ninety-nine'>99</span></p>
-                                <strong className='size'>Protect<span className="special-package">+</span></strong>
-                                <p className="pricing-price pricing-border">$1,849<span className='ninety-nine'>99</span></p>
-                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                            </div>
-                        </div>
-
-                        <h3 className='pricing-title text-white'>Our Monthly/Yearly Maintenance Pricing</h3>
-                        <h4 style={{fontSize: '1.3em'}} className='subtext'><span style={{fontSize: '1.3em'}} className='special-package'>MONTHLY SERVICE: </span>Keeping up with this service will grant you with our <span className='special-package'>LIFETIME</span> Warranty. The goal of our monthly maintenance is to keep your vehicle looking like new year-round. Every month you will get a <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> and a <a href='/services/full-interior-detail' className='aside-link'>Full Interior Detail</a>.</h4>
-                        <h4 style={{fontSize: '1.3em'}} className='subtext'><span style={{fontSize: '1.3em'}} className='special-package'>YEARLY SERVICE: </span>To qualify for our <span className='special-package'>2-Year</span> (Protect Service) or the <span className='special-package'>5-Year</span> (Protect+ Service) Warranty. Our yearly service needs to go into much more detail, as your car hasn't been seen by us on a monthly basis, so we will: • Wash the entire vehicle • Perform Iron Decontamination treatment • Top the vehicle off with a ceramic booster • Apply a new coat of ceramic to the windshield.</h4>
-                        <div className="pricing-container text-black">
-                            <div className="pricing-card">
-                                <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Single Row Trucks and 2-Door Cars</strong>
-                                <strong className='size'>Monthly</strong>
-                                <p className="pricing-price pricing-border">$129<span className='ninety-nine'>99</span></p>
-                                <strong className='size'>Yearly</strong>
-                                <p className="pricing-price pricing-border">$199<span className='ninety-nine'>99</span></p>
-                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                            </div>
-                            <div className="pricing-card">
-                                <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Most Mid-Size SUV's and 4-Door Cars</strong>
-                                <strong className='size'>Monthly</strong>
-                                <p className="pricing-price pricing-border">$159<span className='ninety-nine'>99</span></p>
-                                <strong className='size'>Yearly</strong>
-                                <p className="pricing-price pricing-border">$249<span className='ninety-nine'>99</span></p>
-                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                            </div>
-                            <div className="pricing-card">
-                                <strong className='size pricing-border' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>3-Row SUV's, Minivans, & Lifted Trucks</strong>
-                                <strong className='size'>Monthly</strong>
-                                <p className="pricing-price pricing-border">$189<span className='ninety-nine'>99</span></p>
-                                <strong className='size'>Yearly</strong>
-                                <p className="pricing-price pricing-border">$299<span className='ninety-nine'>99</span></p>
-                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                            </div>
-                        </div>
-
-                        <h3 className="pricing-title text-white">Exterior Re-coating Options</h3>
-                        <h4 className='subtext'>Our re-coating options if you have had a ceramic coating done through us.</h4>
-                        <div className="pricing-container text-black">
-                            <div className="pricing-card">
-                                <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Re-coat All Vehicle Trim</strong>
-                                <p>Get all exterior vehicle trim re-coated.</p>
-                                <p className="pricing-price pricing-border">$99<span className='ninety-nine'>99</span></p>
-                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                            </div>
-                            <div className="pricing-card">
-                                <strong className='size' style={{ fontSize: 1.4 + 'em', fontWeight: 'bold' }}>Re-coat Wheel Faces</strong>
-                                <p>Re-coat all Wheel Faces.</p>
-                                <p className="pricing-price pricing-border">$149<span className='ninety-nine'>99</span></p>
-                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                            </div>
-                        </div>
-                    </div> */}
-
-                    {/* <br className='extra-space' />
-
-                    <div>
+                    
+                { /*
+                    <div> ADD THIS TO THE PC PAGES TOO
                         <strong className='text-medium'>We'll help customers from all over get a ceramic coating on their vehicle, however, most of our customers come to our shop from these areas:</strong>
                         <div style={{ display: 'grid', placeItems: 'center' }}>
                             <ul className='cities-ul'>

@@ -4,7 +4,6 @@ import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 import PricingComponent from '../../utils/PricingComponent';
 import addons from '../../utils/Addons';
-import { BiLinkExternal } from 'react-icons/bi';
 import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 
 export default function Combo() {
@@ -120,126 +119,7 @@ export default function Combo() {
 
               <PricingComponent prices={['299', '299', '349', '349', '399', '399']} addons={[addons.extraction, addons.hair, addons.headliners, addons.fabric, addons.leather, addons.ozone, addons.glass, addons.waterspot]} />
             </div>
-
-            {/* <div>
-              <h3 className='pricing-title text-white'>Our Combo Deal Pricing</h3>
-              <p className='subtext'>*Final pricing may vary based on your vehicle condition, size, and whether or not you need extraction.</p>
-              <div className="pricing-container">
-                <div className="pricing-card text-black">
-                  <strong className='size pricing-border'>Single Row Trucks and 2-Door Cars</strong>
-                  <strong className='size'>Starting Price</strong>
-                  <p className="pricing-price pricing-border">$374<span className='ninety-nine'>99</span></p>
-                  <div className='additions-container'>
-                    <strong className='size text-addition'>Add Stain Extraction</strong>
-                    <p style={{borderBottom: 'none', paddingBottom: 0}}><span className='special-package'>+</span>$35 (Seats)</p>
-                    <p><span className='special-package'>+</span>$35 (Carpets)</p>
-                  </div>
-                  <div className='additions-container'>
-                    <strong className='size text-addition'>Remove Pet Hair</strong>
-                    <p><span className='special-package'>+</span>$50-$100</p>
-                  </div>
-                  <div className='additions-container'>
-                    <strong className='size text-addition'>Clean Headliners</strong>
-                    <p><span className='special-package'>+</span>$40-$80</p>
-                  </div>
-                  <div className='additions-container'>
-                    <strong className='size text-addition'>Clay Bar Treatment</strong>
-                    <p><span className='special-package'>+</span>$50</p>
-                  </div>
-                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                </div>
-                <div className="pricing-card text-black">
-                  <strong className='size pricing-border'>Most Mid-Size SUV's and 4-Door Cars</strong>
-                  <strong className='size'>Starting Price</strong>
-                  <p className="pricing-price pricing-border">$449<span className='ninety-nine'>99</span></p>
-                  <div className='additions-container'>
-                    <strong className='size text-addition'>Add Stain Extraction</strong>
-                    <p style={{borderBottom: 'none', paddingBottom: 0}}><span className='special-package'>+</span>$50 (Seats)</p>
-                    <p><span className='special-package'>+</span>$50 (Carpets)</p>
-                  </div>
-                  <div className='additions-container'>
-                    <strong className='size text-addition'>Remove Pet Hair</strong>
-                    <p><span className='special-package'>+</span>$50-$100</p>
-                  </div>
-                  <div className='additions-container'>
-                    <strong className='size text-addition'>Clean Headliners</strong>
-                    <p><span className='special-package'>+</span>$40-$80</p>
-                  </div>
-                  <div className='additions-container'>
-                    <strong className='size text-addition'>Clay Bar Treatment</strong>
-                    <p><span className='special-package'>+</span>$50</p>
-                  </div>
-                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                </div>
-                <div className="pricing-card text-black">
-                  <strong className='size pricing-border'>Most 4-Door Trucks</strong>
-                  <strong className='size'>Starting Price</strong>
-                  <p className="pricing-price pricing-border">$474<span className='ninety-nine'>99</span></p>
-                  <div className='additions-container'>
-                    <strong className='size text-addition'>Add Stain Extraction</strong>
-                    <p style={{borderBottom: 'none', paddingBottom: 0}}><span className='special-package'>+</span>$50 (Seats)</p>
-                    <p><span className='special-package'>+</span>$50 (Carpets)</p>
-                  </div>
-                  <div className='additions-container'>
-                    <strong className='size text-addition'>Remove Pet Hair</strong>
-                    <p><span className='special-package'>+</span>$50-$100</p>
-                  </div>
-                  <div className='additions-container'>
-                    <strong className='size text-addition'>Clean Headliners</strong>
-                    <p><span className='special-package'>+</span>$40-$80</p>
-                  </div>
-                  <div className='additions-container'>
-                    <strong className='size text-addition'>Clay Bar Treatment</strong>
-                    <p><span className='special-package'>+</span>$75</p>
-                  </div>
-                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                </div>
-                <div className="pricing-card text-black">
-                  <strong className='size pricing-border'>3-Row SUV's, Minivans, and Lifted Trucks</strong>
-                  <strong className='size'>Starting Price</strong>
-                  <p className="pricing-price pricing-border">$524<span className='ninety-nine'>99</span></p>
-                  <div className='additions-container'>
-                    <strong className=''>Add Stain Extraction</strong>
-                    <p style={{borderBottom: 'none', paddingBottom: 0}} className=""><span className='special-package'>+</span>$75 (Seats)</p>
-                    <p><span className='special-package'>+</span>$75 (Carpets)</p>
-                  </div>
-                  <div className='additions-container'>
-                    <strong className=''>Remove Pet Hair</strong>
-                    <p><span className='special-package'>+</span>$50-$100</p>
-                  </div>
-                  <div className='additions-container'>
-                    <strong className=''>Clean Headliners</strong>
-                    <p><span className='special-package'>+</span>$40-$80</p>
-                  </div>
-                  <div className='additions-container'>
-                    <strong className=''>Clay Bar Treatment</strong>
-                    <p><span className='special-package'>+</span>$75</p>
-                  </div>
-                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                </div>
-              </div>
-
-              <h3 className='pricing-title text-white'>Extra Add-ons <a href='/services/add-ons' className='aside-link'><BiLinkExternal /></a></h3>
-              <p className='subtext'>Add-ons that are most commonly paired with our Combo deal.</p>
-              <div className="pricing-container">
-                <div className="pricing-card text-black">
-                  <strong className='size'>Glass Polishing</strong>
-                  <p>Removes Waterspots and stains from your glass.</p>
-                  <p className="pricing-price pricing-border">$80/hour</p>
-                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                </div>
-                <div className="pricing-card text-black">
-                  <strong className='size'>Waterspot/Overspray Removal</strong>
-                  <p>Remove Waterspots and Overspray from your vehicles paint.</p>
-                  <p className="pricing-price pricing-border">$80/hour</p>
-                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                </div>
-              </div>
-            </div> */}
-
-
             <div className="service-bkg-lighter">
-              {/* <br className='extra-space' /> */}
               <div style={{paddingBottom: '3rem'}} className="general-container new-heading-container">
                 <strong className="above-heading">End Results</strong>
                 <h3 className="new-heading">Another example of our completed combo work.</h3>

@@ -130,66 +130,6 @@ export default function DLWash() {
               <PricingComponent prices={['74', '74', '99', '99', '124', '149']} addons={[addons.claybar, addons.glass, addons.waterspot]} />
             </div>
 
-            {/* <div>
-              <h3 className='pricing-title text-white'>Dirt-Less Wash Pricing</h3>
-              <p className='subtext'>*Final pricing may vary based on your vehicle condition and size.</p>
-              <div className="pricing-container">
-                <div className="pricing-card text-black">
-                  <strong className='size'>Single Row Trucks and 2-Door Cars</strong>
-                  <p className="pricing-price pricing-border">$74<span className='ninety-nine'>99</span></p>
-                  <div className='additions-container'>
-                    <strong className='size text-addition'>Clay Bar Treatment</strong>
-                    <p><span className='special-package'>+</span>$50</p>
-                  </div>
-                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                </div>
-                <div className="pricing-card text-black">
-                  <strong className='size'>Most Mid-Size SUV's and 4-Door Cars</strong>
-                  <p className="pricing-price pricing-border">$99<span className='ninety-nine'>99</span></p>
-                  <div className='additions-container'>
-                    <strong className='size text-addition'>Clay Bar Treatment</strong>
-                    <p><span className='special-package'>+</span>$50</p>
-                  </div>
-                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                </div>
-                <div className="pricing-card text-black">
-                  <strong className='size'>Most 4-Door Trucks</strong>
-                  <p className="pricing-price pricing-border">$124<span className='ninety-nine'>99</span></p>
-                  <div className='additions-container'>
-                    <strong className='size text-addition'>Clay Bar Treatment</strong>
-                    <p><span className='special-package'>+</span>$75</p>
-                  </div>
-                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                </div>
-                <div className="pricing-card text-black">
-                  <strong className='size'>3-Row SUV's and Minivans</strong>
-                  <p className="pricing-price pricing-border">$149<span className='ninety-nine'>99</span></p>
-                  <div className='additions-container'>
-                    <strong className='size text-addition'>Clay Bar Treatment</strong>
-                    <p><span className='special-package'>+</span>$75</p>
-                  </div>
-                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                </div>
-              </div>
-
-              <h3 className='pricing-title text-white'>Extra Add-ons <a href='/services/add-ons' className='aside-link'><BiLinkExternal /></a></h3>
-              <p className='subtext'>Add-ons that typically get paired with either of our exterior wash services</p>
-              <div className="pricing-container">
-                <div className="pricing-card text-black">
-                  <strong className='size'>Glass Polishing</strong>
-                  <p>Remove Waterspots and etching from your vehicles glass.</p>
-                  <p className="pricing-price pricing-border">$80/hour</p>
-                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                </div>
-                <div className="pricing-card text-black">
-                  <strong className='size'>Waterspot/Overspray Removal</strong>
-                  <p>Remove Waterspots and Overspray from your vehicles paint.</p>
-                  <p className="pricing-price pricing-border">$80/hour</p>
-                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                </div>
-              </div>
-
-            </div> */}
           </div>
 
         </div>
@@ -200,10 +140,6 @@ export default function DLWash() {
             <h3 className="new-heading">Our Interior + Exterior + FREE Engine Bay Deal</h3>
           </div>
           <div style={{padding: '2rem 0'}} className="general-container">
-            {/* <h2 className='text-large text-left'>Professional Exterior Coatings <a href='/services/exterior-ceramic-coating' className='aside-link'><BiLinkExternal /></a></h2>
-            <div className="text-left">
-              <p>If you're interested in protecting the exterior of your vehicle including the windshield, wheel faces, and headlights, then you're looking for our Exterior Ceramic Coatings which you can check out <a href='/services/exterior-ceramic-coating' className='aside-link'>here</a>. </p>
-            </div> */}
             <h2 className="text-large text-left">Interior and Exterior Combo Deal <a className="aside-link" href="/services/interior-exterior-detailing-combo"><BiLinkExternal /></a></h2>
             <div className="text-left">
               <p>Get a <span className="special-package">FREE</span> Engine Bay Cleaning when you schedule our Combo Service. This service combines our <a href="/services/full-interior-detail" className="aside-link">Full Interior Detail</a> and this Dirt-Less Wash. It is sure to get your entire vehicle looking like new, even the engine bay which is typically overlooked when washing your car.</p>

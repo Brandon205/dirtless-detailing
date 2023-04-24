@@ -2,7 +2,6 @@ import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
-import { BiLinkExternal } from 'react-icons/bi';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 import PricingComponent from '../../utils/PricingComponent';
@@ -135,42 +134,6 @@ export default function SinglePC() {
               <PricingComponent prices={['549', '549', '699', '699', '849', '849']} addons={[addons.glass]} />
             </div>
 
-            {/* <div>
-              <h3 className='pricing-title text-white'>Our Single Stage Paint Correction Pricing</h3>
-              <p className='subtext'>*Final pricing may vary based on your vehicle condition and size.</p>
-              <div className="pricing-container">
-                <div className="pricing-card text-black">
-                  <strong className='size pricing-border'>Single Row Trucks and 2-Door Cars</strong>
-                  <strong className='size'>Starting Price</strong>
-                  <p className="pricing-price pricing-border">$549<span className='ninety-nine'>99</span></p>
-                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                </div>
-                <div className="pricing-card text-black">
-                  <strong className='size pricing-border'>Most Mid-Size SUV's and 4-Door Cars</strong>
-                  <strong className='size'>Starting Price</strong>
-                  <p className="pricing-price pricing-border">$699<span className='ninety-nine'>99</span></p>
-                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                </div>
-                <div className="pricing-card text-black">
-                  <strong className='size pricing-border'>3-Row SUV's, Minivans, and Trucks</strong>
-                  <strong className='size'>Starting Price</strong>
-                  <p className="pricing-price pricing-border">$849<span className='ninety-nine'>99</span></p>
-                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                </div>
-              </div>
-
-              <h3 className='pricing-title text-white'>Extra Add-ons <a href='/services/add-ons' className='aside-link'><BiLinkExternal /></a></h3>
-              <p className='subtext'>Our current add-ons that are typically paired with a Single Stage Paint Correction.</p>
-              <div className="pricing-container">
-                <div className="pricing-card text-black">
-                  <strong className='size'>Glass Polishing</strong>
-                  <p>Removes Waterspots and stains from your glass.</p>
-                  <p className="pricing-price pricing-border">$80/hour</p>
-                  <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                </div>
-              </div>
-
-            </div> */}
             <div className="service-bkg-lighter">
               <div className="general-container new-heading-container">
                 <strong className="above-heading">Further Reading</strong>
