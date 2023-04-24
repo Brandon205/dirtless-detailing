@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import Zoom from 'react-medium-image-zoom';
@@ -13,6 +14,8 @@ const steps = [
 ]
 
 export default function Bio() {
+  const [slide, setSlide] = useState(50);
+
   const content = steps.map((item, id) => {
     return (
       <li key={id} className="item">
@@ -104,6 +107,20 @@ export default function Bio() {
               {content}
             </ol>
 
+            <br className="extra-space" />
+
+            <p style={{fontSize: '2rem'}}>End Results</p>
+            <h3 className='pricing__heading'>Safe, Disinfected, and Clean</h3>
+            <p>Our biohazard cleaning methods can bring out even the toughest messes!</p>
+            <div style={{display: 'grid'}} className='place-center'>
+              <div className='slider-container'>
+                <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/67382b57-6f54-45bd-91df-651bbdcfb900/public')`}} className='slider-img'></div>
+                <div style={{width: 0 + slide + '%', backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/93875803-3ca1-455f-d927-bfae9928d000/public')`}} className='slider-img foreground'></div>
+                <input type="range" min="1" max="100" value={slide} onChange={(e) => setSlide(Number(e.target.value))} className="slider-bar" name='slider' id="slider" />
+                <div style={{left: slide - 2.7 + '%'}} className="slider-button"></div>
+              </div>
+            </div>
+
             <br className='extra-space' />
 
             <div style={{borderRadius: '38px 38px 0 0'}} className='service-bkg'>
@@ -124,7 +141,7 @@ export default function Bio() {
                   <div>
                     <strong className='size'>Any Size Vehicle</strong>
                     {/* <p className="pricing-price">$74<span className='ninety-nine'>99</span></p> */}
-                    <div>
+                    <div style={{display: 'flex', flexDirection: 'column'}}>
                       <p style={{paddingBottom: 0}} className="pricing-price">$499<span className='ninety-nine'>99</span>-</p>
                       <p className="pricing-price">$999<span className='ninety-nine'>99</span></p>
                     </div>
@@ -140,28 +157,20 @@ export default function Bio() {
                 <h3 className="new-heading">Some extreme examples of our Biohazard cleaning work so far:</h3>
               </div>
               <div className="general-container">
-                <div className="photo-grid place-center">
+                <div className="mini-grid">
                   <Zoom>
-                    <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b1445bc-f69e-44e8-6336-345384ea5700/public')`, width: 400 + 'px', height: 50 + 'vh'}}></div>
+                    <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b1445bc-f69e-44e8-6336-345384ea5700/public')`}}></div>
                   </Zoom>
                   <Zoom>
-                    <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/573ae239-6c34-445b-648b-be2771384600/public')`, width: 400 + 'px', height: 50 + 'vh'}}></div>
+                    <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/573ae239-6c34-445b-648b-be2771384600/public')`}}></div>
                   </Zoom>
                   <Zoom>
-                    <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/94622f27-c613-4daa-6c08-4d0cb31af800/public')`, width: 400 + 'px', height: 50 + 'vh'}}></div>
+                    <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/94622f27-c613-4daa-6c08-4d0cb31af800/public')`}}></div>
                   </Zoom>
                 </div>
               </div>
               <br className='extra-space' />
             </div>
-
-            {/* <h4 className='text-large'>Some extreme examples of our Biohazard cleaning work so far:</h4>
-            <div className="photo-grid">
-              <div className="card card-tall" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b1445bc-f69e-44e8-6336-345384ea5700/public')`}}></div>
-              <div className="card card-tall" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/573ae239-6c34-445b-648b-be2771384600/public')`}}></div>
-              <div className="card card-tall" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/94622f27-c613-4daa-6c08-4d0cb31af800/public')`}}></div>
-            </div>
-            <br className='extra-space' /> */}
           </div>
 
 

@@ -34,7 +34,7 @@ export default function FullIntGallery() {
           <p>Experience the Luxury of a Pristine Interior: Our Interior Detailing Gallery displays the incredible results of our comprehensive detailing services on the many vehicles we've worked on, highlighting our commitment to quality and attention to detail.</p>
         </div>
       </div>
-      <div className="photo-grid">
+      <div className="mini-grid">
         <Zoom>
           <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7e7cbef8-df97-4821-1aa4-13dd0f99d400/public')`}}></div>
         </Zoom>
@@ -70,7 +70,7 @@ export default function FullIntGallery() {
       <br className="extra-space" />
 
       <h2 className="text-large text-white">More Images from our Interior Detailing Services</h2>
-      <div className="photo-grid">
+      <div className="mini-grid">
         <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/07c0720a-4281-4c16-bfb7-01fcc942d100/public')`}}></div>
         </Zoom>

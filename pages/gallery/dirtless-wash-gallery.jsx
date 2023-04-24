@@ -35,7 +35,7 @@ export default function PaintCorrectionGallery() {
           <p>Revive the Shine of Your Ride: Our Exterior Detailing Gallery showcases the stunning results of our meticulous detailing services on a wide range of vehicles.</p>
         </div>
       </div>
-      <div className="photo-grid">
+      <div className="mini-grid">
         <Zoom>
           <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d460cace-e72a-4781-d297-a57c1ae9dc00/public')`}}></div>
         </Zoom>
@@ -50,7 +50,7 @@ export default function PaintCorrectionGallery() {
       <br className="extra-space" />
 
       <h2 className="text-large text-white">More Images from our Dirt-Less Wash Service</h2>
-      <div className="photo-grid">
+      <div className="mini-grid">
         <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5ccc928a-c036-489b-fec8-e674a9d0ae00/public')`}}></div>
         </Zoom>

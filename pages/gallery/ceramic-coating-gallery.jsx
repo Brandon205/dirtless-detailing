@@ -34,7 +34,7 @@ export default function CoatingGallery() {
           <p>Because of the included Paint Correction service with the Ceramic Coating, you can see a difference in the paint condition before we put a ceramic coating on the vehicle.</p>
         </div>
       </div>
-      <div className="photo-grid">
+      <div className="mini-grid">
         <Zoom>
           <div className="card card-wide" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a8430f3-90c0-4f56-1fff-88fcd3b29600/public')`}}></div>
         </Zoom>
@@ -43,7 +43,7 @@ export default function CoatingGallery() {
       <br className="extra-space" />
 
       <h2 className="text-large text-white">More Images from our Ceramic Coating service.</h2>
-      <div style={{marginTop: '1rem'}} className="photo-grid">
+      <div style={{marginTop: '1rem'}} className="mini-grid">
         <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a7cc8a20-819f-4ef2-8b36-d41dc99bc200/public')`}}></div>
         </Zoom>

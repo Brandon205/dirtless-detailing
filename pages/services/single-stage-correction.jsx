@@ -178,7 +178,7 @@ export default function SinglePC() {
                 <p style={{marginTop: 0, color: '#c0c0c0'}}>This gives a great visual as to why deeper scratches aren't safely removable without repainting.</p>
               </div>
               <div className="general-container">
-                <div className="photo-grid">
+                <div className="mini-grid">
                   <Zoom>
                     <div aria-label="Paint defects info and depth" role='img' className="card card-tall card-wide" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3c1c25a3-cbab-4f82-91b1-ba2a30626500/public')`}} />
                   </Zoom>

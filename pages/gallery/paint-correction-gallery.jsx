@@ -34,7 +34,7 @@ export default function PaintCorrectionGallery() {
           <p>Unveil Your Car's True Potential: Our Paint Correction Gallery displays the transformative power of our cutting-edge techniques and tools, restoring the flawless finish of even the most damaged and neglected paint jobs.</p>
         </div>
       </div>
-      <div className="photo-grid">
+      <div className="mini-grid">
         <Zoom>
           <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/9e4d290e-ad89-4cc9-1f10-a1d37790cb00/public')`}}></div>
         </Zoom>
@@ -43,7 +43,7 @@ export default function PaintCorrectionGallery() {
       <br className="extra-space" />
 
       <h2 className="text-large text-white">More Images from our Paint Correction Services</h2>
-      <div className="photo-grid">
+      <div className="mini-grid">
         <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ef4953cd-466a-4752-9d87-12ddba64d700/public')`}}></div>
         </Zoom>

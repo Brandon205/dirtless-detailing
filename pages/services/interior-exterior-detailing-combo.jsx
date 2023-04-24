@@ -245,7 +245,7 @@ export default function Combo() {
                 <h3 className="new-heading">Another example of our completed combo work.</h3>
               </div>
               <div className="general-container">
-                <div className="photo-grid place-center">
+                <div className="mini-grid">
                   <Zoom>
                     <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c537680c-f103-4032-65e3-11370c73d300/public')`, width: 400 + 'px', height: 50 + 'vh'}}></div>
                   </Zoom>

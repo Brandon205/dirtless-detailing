@@ -34,7 +34,7 @@ export default function PaintCorrectionGallery() {
           <p>Unleash the Power Under the Hood: Our Engine Bay Washing Gallery showcases the transformative results of our thorough engine bay washing services on a variety of vehicles.</p>
         </div>
       </div>
-      <div className="photo-grid">
+      <div className="mini-grid">
         <Zoom>
           <div className="card card-wide" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a80696d7-7afb-4d51-6507-614e3757b100/public')`}}></div>
         </Zoom>
@@ -43,7 +43,7 @@ export default function PaintCorrectionGallery() {
       <br className="extra-space" />
 
       <h2 className="text-large text-white">Images from our Engine Bay Washes</h2>
-      <div className="photo-grid">
+      <div className="mini-grid">
         <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5dc233ba-d226-416f-d078-eb45d9185300/public')`}}></div>
         </Zoom>
