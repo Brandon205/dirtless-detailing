@@ -134,7 +134,7 @@ export default function FullIntEx() {
               <PricingComponent prices={['299', '299', '349', '349', '399', '399']} addons={[addons.extraction, addons.hair, addons.headliners, addons.fabric, addons.leather, addons.ozone]} />
             </div>
 
-            <div style={{padding: '2rem'}} className="service-bkg">
+            <div style={{padding: '2rem'}} className="service-bkg-lighter">
               <div className="general-container new-heading-container">
                 <strong className="above-heading">Related Services</strong>
                 <h3 className="new-heading">Services similar to our Interior Cleaning.</h3>

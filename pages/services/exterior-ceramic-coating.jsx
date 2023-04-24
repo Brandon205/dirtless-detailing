@@ -301,7 +301,7 @@ export default function ExtCoatings() {
                     </div>
                     
                 { /*
-                    <div> ADD THIS TO THE PC PAGES TOO
+                    <div>
                         <strong className='text-medium'>We'll help customers from all over get a ceramic coating on their vehicle, however, most of our customers come to our shop from these areas:</strong>
                         <div style={{ display: 'grid', placeItems: 'center' }}>
                             <ul className='cities-ul'>
