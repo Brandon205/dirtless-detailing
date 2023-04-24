@@ -10,7 +10,7 @@ import { FiSun } from 'react-icons/fi';
 
 export default function IntCoatings() {
     return (
-        <section className="service-content-container">
+        <section className="service-content-container bg-contact">
             <Head>
                 <title>Interior Ceramic Coatings | Dirt-Less Detailing</title>
                 <Metatags
@@ -70,20 +70,8 @@ export default function IntCoatings() {
 
             <div className="process-container">
                 <div style={{width: '100%'}}>
-                    <main className="service-main top-service-main">
-                        <div className="service-explain">
-                            <div className="text-left">
-                                <h2 className='text-large'>Professional Interior Ceramic Coating</h2>
-                                <p>Whether it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe the spill up before it seeps in.</p>
-                                <p>Typically both of our interior coatings will protect your vehicle for about a year before they should be reapplied.</p>
-                            </div>
-                            <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a196c77-cb1a-42f9-479b-8fdbe3c14500/public')`}}>
-                                <img style={{visibility: 'hidden'}} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a196c77-cb1a-42f9-479b-8fdbe3c14500/public" />
-                            </div>
-                        </div>
-                    </main>
 
-                    <div style={{marginTop: '15vh'}} className='package-details-container'>
+                    <div className='package-details-container'>
                         <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
                             <h2 style={{fontSize: '3rem', margin: '0 0 1rem 0', width: '40%', textAlign: 'left'}}>Our Ceramic Coating Packages</h2>
                             <p style={{width: '35%'}}>Ceramic coatings are liquid polymers that chemically bond with a vehicle's interior to create a strong, protective layer. This layer resists damage from UV rays, oxidation, small scratches, and contaminants, providing long-lasting protection.</p>
@@ -167,19 +155,32 @@ export default function IntCoatings() {
                     <br className='extra-space' />
 
                     <div style={{marginTop: '5vh', borderRadius: '38px 38px 0 0'}} className='service-bkg'>
-                        <h3 className='pricing-title text-white'>Interior Coating Pricing</h3>
-                        <h4 className='subtext'><span className='special-package'>*</span>Pricing does NOT include an <a href="/services/full-interior-detail" className='aside-link'>Interior Cleaning</a>, which you will want to factor in before getting a coating.</h4>
+                        <h3 className='pricing-title text-white'>Our Interior Coating Pricing</h3>
+                        <h4 className='subtext'><span className='special-package'>*</span>Pricing does <span className='special-package'>NOT</span> include an <a href="/services/full-interior-detail" className='aside-link'>Interior Cleaning</a>, which you will want to factor in before getting a coating.</h4>
                         <div style={{width: '75%'}} className='pricing-container text-black'>
                             <div className="pricing-card">
-                                <strong className='size'>Fabric Coating<br /> (Any Size Vehicle)</strong>
-                                <p className="pricing-price pricing-border">$74<span className='ninety-nine'>99</span></p>
-                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                                <h5>Fabric Coating</h5>
+                                <p>Get all of the fabric in your vehicle professionally coated.</p>
+                                <p>Check <a href="/services/full-interior-detail" className='aside-link'>here</a> for our Interior Detail Pricing</p>
+                                <div>
+                                    <strong className='size'>Any Size Vehicle</strong>
+                                    <p className="pricing-price">$74<span className='ninety-nine'>99</span></p>
+                                </div>
                             </div>
                             <div className="pricing-card">
-                                <strong className='size'>Leather Coating<br /> (Any Size Vehicle)</strong>
-                                <p className="pricing-price pricing-border">$149<span className='ninety-nine'>99</span></p>
-                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                                <h5>Leather Coating</h5>
+                                <p>Get all of the leather in your vehicle professionally coated.</p>
+                                <p>Check <a href="/services/full-interior-detail" className='aside-link'>here</a> for our Interior Detail Pricing</p>
+                                <div>
+                                    <strong className='size'>Any Size Vehicle</strong>
+                                    <p className="pricing-price">$149<span className='ninety-nine'>99</span></p>
+                                </div>
                             </div>
+                            {/* <div className="pricing-card">
+                                <strong className='size'>Leather Coating<br /> (Any Size Vehicle)</strong>
+                                <p className="pricing-price">$149<span className='ninety-nine'>99</span></p>
+                                <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                            </div> */}
                         </div>
                         <br className='extra-space' />
                     </div>
@@ -212,6 +213,27 @@ export default function IntCoatings() {
                         </div> */}
 
 
+                    <div style={{padding: '2rem'}} className="service-bkg-lighter">
+                        <div className="general-container new-heading-container">
+                            <strong className="above-heading">Further Reading</strong>
+                            <h3 className="new-heading">More info on our interior coatings.</h3>
+                        </div>
+                        <div style={{padding: '2rem 0'}} className="general-container">
+
+                            <main className="service-main">
+                                <div className="service-explain">
+                                    <div className="text-left">
+                                        <h2 className='text-large'>Professional Interior Ceramic Coating</h2>
+                                        <p>Whether it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe the spill up before it seeps in.</p>
+                                        <p>Typically both of our interior coatings will protect your vehicle for about a year before they should be reapplied.</p>
+                                    </div>
+                                    <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a196c77-cb1a-42f9-479b-8fdbe3c14500/public')`}}>
+                                        <img style={{visibility: 'hidden'}} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a196c77-cb1a-42f9-479b-8fdbe3c14500/public" />
+                                    </div>
+                                </div>
+                            </main>
+                        </div>
+                    </div>
                     <div style={{padding: '2rem'}} className="service-bkg-lighter">
                         <div className="general-container new-heading-container">
                             <strong className="above-heading">Related Services</strong>

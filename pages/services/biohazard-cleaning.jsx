@@ -7,7 +7,7 @@ import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 
 const steps = [
   ["Determine Products", "We will first determine what products will need to be used to best suit the situation."],
-  ["Disinfect", "Fully disinfect every single surface in the vehicle before we even get started."],
+  ["Disinfect", "Fully disinfect every single surface in the vehicle before we even get started to try to kill any bacteria that could be present."],
   ["Full Interior Cleaning", "Perform our Full Interior Cleaning Process on the vehicle."],
   ["Ozone Treatment", "Perform Ozone air treatment to fill all bacteria, mold spores, and get rid of smells where it's impossible to get to conventionally."]
 ]
@@ -110,12 +110,25 @@ export default function Bio() {
               <h3 className='pricing-title text-white'>Our Biohazard Cleaning Pricing</h3>
               <p className='subtext'>*Final pricing may vary within the ranges below based on your vehicle condition and size.</p>
               <div className="pricing-container">
-                <div className="pricing-card text-black">
+                {/* <div className="pricing-card text-black">
                   <strong className='size'>All Vehicles</strong>
                   <p style={{paddingBottom: 0}} className="pricing-price">$499<span className='ninety-nine'>99</span>-</p>
                   <p className="pricing-price pricing-border">$999<span className='ninety-nine'>99</span></p>
                   <p className="example-vehicle pricing-border">Any Size Vehicle</p>
                   <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+                </div> */}
+                <div className="pricing-card text-black">
+                  <h5>Biohazard Cleaning</h5>
+                  <p>A complete cleaning of the interior vehicle with extra steps to remove hazardous materials.</p>
+                  <p>Check <a href="/services/full-interior-detail" className='aside-link'>here</a> for our Interior Detail Pricing</p>
+                  <div>
+                    <strong className='size'>Any Size Vehicle</strong>
+                    {/* <p className="pricing-price">$74<span className='ninety-nine'>99</span></p> */}
+                    <div>
+                      <p style={{paddingBottom: 0}} className="pricing-price">$499<span className='ninety-nine'>99</span>-</p>
+                      <p className="pricing-price">$999<span className='ninety-nine'>99</span></p>
+                    </div>
+                  </div>
                 </div>
               </div>
               <br className='extra-space' />

@@ -278,7 +278,7 @@ export default function ExtCoatings() {
                             <div id='faq'>
                                 <div className="new-heading-container">
                                     <strong className="above-heading">FAQ</strong>
-                                    <h3 className="new-heading">Get your Ceramic Coating Questions answered here.</h3>
+                                    <h3 className="new-heading">Our answers to the most commonly asked Ceramic Coating Questions.</h3>
                                 </div>
                                 <ul className='faq-ul'>
                                     <li className='faq-li'>How long does it last?</li>
