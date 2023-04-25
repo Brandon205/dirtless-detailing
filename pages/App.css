@@ -95,7 +95,7 @@ img {
   color: white;
   border-radius: 0.5rem;
   transition: 0.5s;
-  margin-top: 5px;
+  /* margin-top: 5px; */
 }
 
 .nav-quote-btn:hover {
@@ -204,7 +204,7 @@ li span {
   height: 90vh;
   line-height: 2.5;
   background-color: var(--nav-bkg-clr);
-  top: 80px;
+  top: 105px;
   right: 0;
   overflow: scroll;
 }
@@ -212,6 +212,7 @@ li span {
 .main-ul {
   list-style: none;
   padding-left: 0;
+  height: 100%;
 }
 
 .sub-ul {
@@ -238,14 +239,14 @@ li span {
 }
 
 .nav-li {
-  padding: 0 0.75rem 0.75rem 0.75rem;
+  padding: 0 1rem 1rem 1rem;
   border-radius: 0 0 1rem 1rem;
   background-color: var(--nav-bkg-clr);
 }
 
-.nav-li div {
+/* .nav-li div {
   margin-left: 0.75rem;
-}
+} */
 
 .sub-menu-div {
   margin: 0;
@@ -274,7 +275,7 @@ li span {
 
 .sub-menu-header {
   color: #c0c0c0;
-  font-weight: bold;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -2541,6 +2542,10 @@ hr {
     font-size: 3em;
   }
 
+  .service-main {
+    font-size: 1.1em;
+  }
+
   .aside-container {
     position: -webkit-sticky;
     position: sticky;
@@ -2665,7 +2670,7 @@ hr {
     flex: 2;
     padding: 0;
     position: static;
-    height: auto;
+    height: 105px;
     width: 75vw;
     overflow: hidden;
   }
@@ -2683,11 +2688,12 @@ hr {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    height: 100%;
   }
 
   .sub-ul {
     position: fixed;
-    top: 65px;
+    top: 105px;
   }
 
   .menu-bars {

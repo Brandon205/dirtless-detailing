@@ -92,21 +92,21 @@ export default function MyApp({ Component, pageProps }) {
                     <div style={{ display: nav }} className="menu-container">
                         <ul className='main-ul'>
 
-                            <li>
+                            <li className='menu-li'>
                                 <a href="/" className='menu-link'><FaHome /> Home</a>
                             </li>
                             {/* <hr className="nav-hr" /> */}
 
                             <li style={{ position: 'relative' }}>
-                                <div onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('services')}><p className='menu-li'><MdLocalOffer /> All Services</p></div>
+                                <div className='menu-li' onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('services')}><MdLocalOffer /> All Services</div>
                                 <ul className="sub-ul" onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} style={{ opacity: smallScreen ? 1 : services ? 1 : !services ? 0 : 0, pointerEvents: smallScreen ? 'auto' : services ? 'auto' : !services ? 'none' : 'auto' }} >
                                     <li className="nav-li">
-                                        <h4 className='sub-menu-header'>CERAMIC COATING</h4>
+                                        <h4 className='sub-menu-header'>CERAMIC COATINGS</h4>
                                         <div className='sub-menu-div' onClick={() => setNav('none')}>
                                             <a href="/services/exterior-ceramic-coating" className='menu-link'><AiOutlineCar /> Exterior Ceramic Coating</a>
                                         </div>
                                         <div className='sub-menu-div' onClick={() => setNav('none')}>
-                                            <a href="/services/interior-ceramic-coating" className='menu-link'><GiCarSeat /> Interior Coating</a>
+                                            <a href="/services/interior-ceramic-coating" className='menu-link'><GiCarSeat /> Interior Ceramic Coating</a>
                                         </div>
                                         <hr className="nav-hr" />
                                         <h4 className='sub-menu-header'>COMBO DEALS</h4>
@@ -161,14 +161,12 @@ export default function MyApp({ Component, pageProps }) {
                                     </li>
                                 </ul>
                             </li>
-                            <hr className="nav-hr" />
 
-                            <li>
+                            <li className='menu-li'>
                                 <a href="/services/add-ons" className='menu-link' onClick={() => setNav('none')}><AiOutlinePlus /> Addons</a>
                             </li>
-                            <hr className="nav-hr" />
 
-                            <li>
+                            <li className='menu-li'>
                                 <a href="/About" className="menu-link" onClick={() => setNav('none')}><BsFillPersonBadgeFill /> About Us</a>
                             </li>
 

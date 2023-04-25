@@ -137,10 +137,10 @@ export default function FullIntEx() {
             <div style={{padding: '2rem'}} className="service-bkg-lighter">
               <div className="general-container new-heading-container">
                 <strong className="above-heading">Related Services</strong>
-                <h3 className="new-heading">Services similar to our Interior Cleaning.</h3>
+                <h3 className="new-heading">Services similar to our Interior Detailing</h3>
               </div>
               <div style={{padding: '2rem 0'}} className="general-container">
-                <h2 className='text-large text-left'>Biohazard Cleanings <a href='/services/biohazard-cleaning' className='aside-link'><BiLinkExternal /></a></h2>
+                <h2 className='text-large text-left'>Biohazard Cleaning <a href='/services/biohazard-cleaning' className='aside-link'><BiLinkExternal /></a></h2>
                 <div className="text-left">
                   <p>If the interior of your vehicle has things like strong odors, mold, or even bodily fluids we can clean those with our <a href="/services/biohazard-cleaning" className='aside-link'>Biohazard Cleaning</a> service. This will cover a normal interior cleaning and will also include extra things like carpet extraction and ozone treatment depending on the severity of the situation.</p>
                 </div>

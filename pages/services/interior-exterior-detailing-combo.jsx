@@ -65,8 +65,10 @@ export default function Combo() {
               <div className="service-explain">
                 <div className="text-left">
                   <h2 className='text-large'>Interior and Exterior Combo Cleaning</h2>
-                  <p>Our Combo Service offers a comprehensive package that includes a thorough  <a href="/services/full-interior-detail" className='aside-link'>Full Interior Detail</a> and a <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a>, as well as a <span className="special-package">FREE</span> <a href="/services/add-ons#engine" className='aside-link'>Engine Bay Cleaning</a> to keep your vehicle in top shape. Trust us to leave your car looking and feeling like new with our expert attention to detail and use of high-quality products.</p>
-                  <p>If you are after the most thorough interior and exterior detail you can find, or even trying to get the most money when selling your vehicle, this is the package for you!</p>
+                  <p>The <a href="/services/full-interior-detail" className='aside-link'>Full Interior Detail</a> service includes a thorough cleaning of every nook and cranny inside your car. We'll remove all dirt, dust, and debris from your carpets, seats, and upholstery, and make sure your dashboard, door panels, and center console are spotless. We'll also clean your windows, leaving them crystal clear and streak-free.</p>
+                  <p>Our <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> service uses the latest technology to wash your car safely, preventing dirt and grime from sticking to your freshly cleaned car. Not only does this give your car a superior clean, but it's also environmentally friendly.</p>
+                  <p>Finally, our <a href="/services/add-ons#engine" className='aside-link'>Engine Bay Cleaning</a> service will give your engine a thorough cleaning, removing any built-up grime or grease. Not only will your engine bay look great, but a clean engine can also run more efficiently and last longer.</p>
+                  <p>Together, these three services will leave your car looking and feeling like new again, both inside and out. Don't settle for a subpar detailing job - trust our team of experts to give your car the care it deserves. Book your appointment today!</p>
                 </div>
                 <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3031c630-d6f2-48fc-1bb4-62844fbd5a00/public')`}}>
                   <img style={{visibility: 'hidden'}} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3031c630-d6f2-48fc-1bb4-62844fbd5a00/public" />
@@ -122,7 +124,7 @@ export default function Combo() {
             <div className="service-bkg-lighter">
               <div style={{paddingBottom: '3rem'}} className="general-container new-heading-container">
                 <strong className="above-heading">End Results</strong>
-                <h3 className="new-heading">Another example of our completed combo work.</h3>
+                <h3 className="new-heading">Another example of our completed combo work</h3>
               </div>
               <div className="general-container">
                 <div className="mini-grid">

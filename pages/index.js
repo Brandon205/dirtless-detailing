@@ -76,9 +76,9 @@ export default function Home() {
 
                     <div className="header-icons-container">
                         <div>
-                            <FaRegStar className='header-icon' />
-                            <p className="header-desc">Plenty</p>
-                            <span className='header-desc-span'>of 5 Star Reviews</span>
+                            <BiCertification className='header-icon' />
+                            <p className="header-desc">7 Years</p>
+                            <span className='header-desc-span'>Of Experience</span>
                         </div>
                         <div>
                             <MdOutlineLocalCarWash className='header-icon' />
@@ -86,9 +86,9 @@ export default function Home() {
                             <span className='header-desc-span'>Details Completed</span>
                         </div>
                         <div>
-                            <BiCertification className='header-icon' />
-                            <p className="header-desc">7 Years</p>
-                            <span className='header-desc-span'>Of Experience</span>
+                            <FaRegStar className='header-icon' />
+                            <p className="header-desc">Plenty</p>
+                            <span className='header-desc-span'>of 5 Star Reviews</span>
                         </div>
                         <div>
                             <FaMapMarkedAlt className='header-icon' />
