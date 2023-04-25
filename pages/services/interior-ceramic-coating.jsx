@@ -57,11 +57,11 @@ export default function IntCoatings() {
                     }`,
                 }} />
             </Head>
-            <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7a8e321a-6a57-41ea-9736-7bd4849bcf00/public')`}}></div>
+            <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7a8e321a-6a57-41ea-9736-7bd4849bcf00/cover')`}}></div>
 
             <div className="servicepage-header">
                 <h1>Interior Coating</h1>
-                <h2 className='page-subheading'>Let us install an interior ceramic coating in your car to save you time when cleaning up spills and other messes</h2>
+                <h2 className='page-subheading'>Experience the Ultimate in Interior Protection with Our Ceramic Coating Services.</h2>
                 <div className='header-buttons'>
                     <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
                     <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
@@ -72,9 +72,9 @@ export default function IntCoatings() {
                 <div style={{width: '100%'}}>
 
                     <div className='package-details-container'>
-                        <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-                            <h2 style={{fontSize: '3rem', margin: '0 0 1rem 0', width: '40%', textAlign: 'left'}}>Our Ceramic Coating Packages</h2>
-                            <p style={{width: '35%'}}>Ceramic coatings are liquid polymers that chemically bond with a vehicle's interior to create a strong, protective layer. This layer resists damage from UV rays, oxidation, small scratches, and contaminants, providing long-lasting protection.</p>
+                        <div className='package-details-top'>
+                            <h2 style={{fontSize: '3rem', margin: '0 0 1rem 0'}}>Our Interior Coating Packages</h2>
+                            <p>Ceramic coatings are liquid polymers that chemically bond with a vehicle's interior to create a strong, protective layer. This layer resists damage from UV rays, oxidation, and contaminants, providing protection and easy spill cleanup.</p>
                         </div>
 
                         <div className='package-details-bkg'>
@@ -91,6 +91,7 @@ export default function IntCoatings() {
                                     <h4><GiSpill className='star-icon' /> Spill Resistance</h4>
                                     <p>Gives you more time to wipe up spills before it seeps into carpets.</p>
                                 </div>
+                                <div className='package-details'></div>
                             </div>
                         </div>
 
@@ -118,7 +119,7 @@ export default function IntCoatings() {
 
                     <br className='extra-space' />
 
-                    <div style={{marginTop: '5vh', borderRadius: '38px 38px 0 0'}} className='service-bkg'>
+                    {/* <div style={{marginTop: '5vh', borderRadius: '38px 38px 0 0'}} className='service-bkg'>
                         <h3 className='pricing-title text-white'>Our Interior Coating Pricing</h3>
                         <h4 className='subtext'><span className='special-package'>*</span>Pricing does <span className='special-package'>NOT</span> include an <a href="/services/full-interior-detail" className='aside-link'>Interior Cleaning</a>, which you will want to factor in before getting a coating.</h4>
                         <div style={{width: '75%'}} className='pricing-container text-black'>
@@ -142,9 +143,9 @@ export default function IntCoatings() {
                             </div>
                         </div>
                         <br className='extra-space' />
-                    </div>
+                    </div> */}
 
-                    <div style={{padding: '2rem'}} className="service-bkg-lighter">
+                    <div style={{padding: '2rem', marginTop: '5vh'}} className="service-bkg-lighter">
                         <div className="general-container new-heading-container">
                             <strong className="above-heading">Further Reading</strong>
                             <h3 className="new-heading">More info on our interior coatings.</h3>
@@ -155,8 +156,10 @@ export default function IntCoatings() {
                                 <div className="service-explain">
                                     <div className="text-left">
                                         <h2 className='text-large'>Professional Interior Ceramic Coating</h2>
-                                        <p>Whether it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe the spill up before it seeps in.</p>
-                                        <p>Typically both of our interior coatings will protect your vehicle for about a year before they should be reapplied.</p>
+                                        <p>Interior ceramic coatings are a must-have for anyone who wants to keep their car looking and feeling great, even in cars where spills and messes happen often.</p>
+                                        <p>Interior coatings create a protective layer that will give you more time to clean up a spill before it soaks in and stains compared to uncoated materials.</p>
+                                        <p>With an interior ceramic coating, you'll enjoy easy-to-clean surfaces that stay looking like new, making your car feel more luxurious and comfortable.</p>
+                                        <p>Typically both our fabric and leather interior coatings will protect your vehicle for about a year before they should be reapplied.</p>
                                     </div>
                                     <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a196c77-cb1a-42f9-479b-8fdbe3c14500/public')`}}>
                                         <img style={{visibility: 'hidden'}} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a196c77-cb1a-42f9-479b-8fdbe3c14500/public" />
@@ -174,7 +177,7 @@ export default function IntCoatings() {
 
                             <h2 className='text-large text-left'>Professional Exterior Coatings <a href='/services/exterior-ceramic-coating' className='aside-link'><BiLinkExternal /></a></h2>
                             <div className="text-left">
-                                <p>If you're interested in protecting the exterior of your vehicle including the windshield, wheel faces, and headlights, then you're looking for our Exterior Ceramic Coatings which you can check out <a href='/services/exterior-ceramic-coating' className='aside-link'>here</a>. </p>
+                                <p>If you're interested in protecting the exterior of your vehicle including the windshield, wheel faces, and headlights, then you're looking for our Exterior Ceramic Coatings. Check out more info <a href='/services/exterior-ceramic-coating' className='aside-link'>here</a>. </p>
                             </div>
                         </div>
                         <br className='extra-space' />

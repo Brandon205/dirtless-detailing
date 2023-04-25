@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
-// import Zoom from 'react-medium-image-zoom';
-// import 'react-medium-image-zoom/dist/styles.css';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 
 import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 import { BiLinkExternal } from 'react-icons/bi';
@@ -99,7 +99,7 @@ export default function ExtCoatings() {
             <div className="cover" style={{backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/cover)`}}></div>
             <div className="servicepage-header">
                 <h1>Exterior Ceramic Coating</h1>
-                <h2 className='page-subheading'>Get a professionally installed 5 year Ceramic Coating professionally to protect your vehicle year-round.</h2>
+                <h2 className='page-subheading'>Get a professionally installed 5 year Ceramic Coating professionally to protect your vehicle from the Pacific Northwest's unpredictable weather.</h2>
                 <div className='header-buttons'>
                     <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
                     <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
@@ -109,9 +109,9 @@ export default function ExtCoatings() {
             <div className="process-container">
                 <div style={{width: '100%'}}>
                     <div className='package-details-container'>
-                        <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-                            <h2 style={{fontSize: '3rem', margin: '0 0 1rem 0', width: '40%', textAlign: 'left'}}>Our Ceramic Coating Packages</h2>
-                            <p style={{width: '35%'}}>Ceramic coatings are liquid polymers that chemically bond with a vehicle's exterior to create a hard, protective layer. This layer resists damage from UV rays, oxidation, light scratches, and contaminants, providing long-lasting protection and a high-gloss finish.</p>
+                        <div className='package-details-top'>
+                            <h2 style={{fontSize: '3rem', margin: '0 0 1rem 0'}}>Our Ceramic Coating Packages</h2>
+                            <p>Ceramic coatings are liquid polymers that chemically bond with a vehicle's exterior to create a hard, protective layer. This layer resists damage from UV rays, oxidation, light scratches, and contaminants, providing long-lasting protection and a high-gloss finish.</p>
                         </div>
 
                         <div className='package-details-bkg'>
@@ -160,7 +160,7 @@ export default function ExtCoatings() {
 
                     <br className='extra-space' />
 
-                    <p style={{fontSize: '2rem', margin: '2rem 0 0 0'}}>End Results</p>
+                    <p style={{fontSize: '2rem', margin: '2rem 0 0 0', color: '#575757'}}>End Results</p>
                     <h3 className='pricing__heading'>Smooth, Clean, and Picture Perfect Results.</h3>
                     <p>Once we are done water will BEAD off of your car like you've never seen before!</p>
                     <div style={{display: 'grid'}} className='place-center'>
@@ -215,15 +215,19 @@ export default function ExtCoatings() {
                                         <li>Offers unparalleled hydrophobic qualities that keep your vehicle clean and makes washing it simpler, and more fun.</li>
                                     </ul>
                                 </div>
-                                <div className="service-image" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b3d13f8-c7ec-44fc-7750-ab0d466eae00/public')`}}>
-                                    <img style={{visibility: 'hidden'}} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b3d13f8-c7ec-44fc-7750-ab0d466eae00/public" />
-                                </div>
+                                <Zoom>
+                                    <div className="service-image" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b3d13f8-c7ec-44fc-7750-ab0d466eae00/public')`}}>
+                                        <img style={{visibility: 'hidden'}} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b3d13f8-c7ec-44fc-7750-ab0d466eae00/public" />
+                                    </div>
+                                </Zoom>
                             </div>
 
                             <div className="service-explain">
-                                <div className="service-image" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/32aa3e25-1fcb-4e05-760a-eb53f4b18400/public')`, backgroundColor: 'whitesmoke'}}>
-                                    <img style={{visibility: 'hidden'}} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/32aa3e25-1fcb-4e05-760a-eb53f4b18400/public" />
-                                </div>
+                                <Zoom>
+                                    <div className="service-image" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/32aa3e25-1fcb-4e05-760a-eb53f4b18400/public')`, backgroundColor: 'whitesmoke'}}>
+                                        <img style={{visibility: 'hidden'}} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/32aa3e25-1fcb-4e05-760a-eb53f4b18400/public" />
+                                    </div>
+                                </Zoom>
                                 <div className="text-left">
                                     <h2 className="text-large">Ceramic Coating Installation Info</h2>
                                     <p>Your car must first be correctly prepared and corrected using one of our <a href="/detailing/correction" className='aside-link'>Paint Correction</a> services before the coating is applied. You won't get the full range of advantages that a ceramic coating can provide if we apply it without doing the necessary preparation work. </p>
@@ -237,19 +241,21 @@ export default function ExtCoatings() {
                             <div className="service-explain">
                                 <div className="text-left">
                                     <h2 className="text-large">Common Ceramic Coating Myths</h2>
-                                    <p>Yes, coatings are robust and long-lasting. This does not imply that you may abuse your car and assume the coating will keep it safe. </p>
-                                    <p>It has its limitations, and it's critical to be aware of what the ceramic coating is capable of. Customers frequently overestimate the coating's level of protection and are disappointed when swirl marks appear in the paint. </p>
-                                    <p>Your paint will not become scratch-proof due to the coating. We mean very light swirls and scratches when we say the coating will resist light swirls and scratches. </p>
+                                    <p>Yes, coatings are robust and long-lasting. This does not imply that you may abuse your car and assume the coating will keep it safe though.</p>
+                                    <p>It has its limitations, and it's critical to be aware of what the ceramic coating is capable of. Customers frequently overestimate the coating's level of protection and are disappointed when swirl marks appear in the paint.</p>
+                                    <p>Your paint will not become scratch-proof due to the coating. We mean very light swirls and scratches when we say the coating will resist light swirls and scratches.</p>
                                     <p>Your paint isn't protected from rock chips by the coating. No amount of wax or ceramic coating will be able to prevent a rock from striking and potentially damaging your car.</p>
                                     <p>To increase the coating's durability, proper maintenance is needed. If you don't take care of the coating, it will deteriorate over time and not have the intended lifespan, just like many other things in life (like visiting the dentist).</p>
-                                    <p>For best durability, you must <a href="/services/dirtless-wash" className='aside-link'>wash</a>, dry, and preserve the coating appropriately (either through us or by following specific steps provided by us). If not properly maintained, a coating that was designed to last for five years may begin to degrade after two to three years.</p>
+                                    <p>For best durability, you must <a href="/services/dirtless-wash" className='aside-link'>wash</a>, dry, and preserve the coating appropriately (either through us or by following steps and materials recommended by us). If not properly maintained, a coating that was designed to last for five years may begin to degrade after two to three years.</p>
                                 </div>
                                 {/* <div className="example-img">
                                     <ReactPlayer width={280} height={487} url='https://res.cloudinary.com/brandon205/video/upload/v1674493877/Dirt-Less%20Detailing/Videos/received_1200318400918064_3_qteejy.mp4' loop muted playing />
                                 </div> */}
-                                <div className="service-image" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b69dcca1-8d92-414e-32c9-ddfe247fa100/public')`}}>
-                                    <img style={{visibility: 'hidden'}} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b69dcca1-8d92-414e-32c9-ddfe247fa100/public" />
-                                </div>
+                                <Zoom>
+                                    <div className="service-image" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b69dcca1-8d92-414e-32c9-ddfe247fa100/public')`}}>
+                                        <img style={{visibility: 'hidden'}} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b69dcca1-8d92-414e-32c9-ddfe247fa100/public" />
+                                    </div>
+                                </Zoom>
                             </div>
 
                             <h2 className='text-large'>Professional Interior Coatings <a href='/services/interior-ceramic-coating' className='aside-link'><BiLinkExternal /></a></h2>

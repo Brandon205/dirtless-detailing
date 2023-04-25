@@ -29,30 +29,30 @@ export default function MyApp({ Component, pageProps }) {
             setSmallScreen(false);
         }
 
-        document.addEventListener('scroll', handleScroll, { passive: true });
+        // document.addEventListener('scroll', handleScroll, { passive: true });
 
-        return () => {
-            window.removeEventListener('scroll', handleScroll)
-        }
+        // return () => {
+        //     window.removeEventListener('scroll', handleScroll)
+        // }
 
 
     }, [])
 
-    let handleScroll = () => {
-        const pos = window.pageYOffset;
-        if (navBar.current) {
-            console.log(navBar.current)
-            if (pos > 400 || smallScreen) {
-                navBar.current.style.backgroundColor = '#101010'
-                navBar.current.style.backdropFilter = 'none'
-                navBar.current.style.borderRadius = '0'
-                navBar.current.style.transform = 'scale(100%)'
-                navBar.current.style.transition = '0.5s'
-            } else {
-                navBar.current.removeAttribute('style')
-            }
-        }
-    }
+    // let handleScroll = () => {
+    //     const pos = window.pageYOffset;
+    //     if (navBar.current) {
+    //         console.log(navBar.current)
+    //         if (pos > 400 || smallScreen) {
+    //             navBar.current.style.backgroundColor = '#101010'
+    //             navBar.current.style.backdropFilter = 'none'
+    //             navBar.current.style.borderRadius = '0'
+    //             navBar.current.style.transform = 'scale(100%)'
+    //             navBar.current.style.transition = '0.5s'
+    //         } else {
+    //             navBar.current.removeAttribute('style')
+    //         }
+    //     }
+    // }
 
     let changeNav = (changeTo) => {
         switch (changeTo) {
@@ -84,7 +84,7 @@ export default function MyApp({ Component, pageProps }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <header className="App-header">
-                <nav id="nav" className='navigation-small' ref={navBar}>
+                <nav id="nav" ref={navBar}>
                     <a style={{ display: 'flex', justifyContent: 'flex-start', flex: 1 }} href="/" aria-label='Dirt-Less Detailing Logo'>
                         <div className="header-cert" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0a945e76-f4c0-4e29-ef16-463490d0db00/public')`, height: 105 + 'px', width: 140 + 'px' }}></div>
                     </a>
@@ -95,73 +95,72 @@ export default function MyApp({ Component, pageProps }) {
                             <li>
                                 <a href="/" className='menu-link'><FaHome /> Home</a>
                             </li>
-                            <hr className="nav-hr" />
+                            {/* <hr className="nav-hr" /> */}
 
-                            <div style={{ position: 'relative' }}>
-                                <li onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('services')}><p className='menu-li'><MdLocalOffer /> All Services</p></li>
+                            <li style={{ position: 'relative' }}>
+                                <div onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('services')}><p className='menu-li'><MdLocalOffer /> All Services</p></div>
                                 <ul className="sub-ul" onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} style={{ opacity: smallScreen ? 1 : services ? 1 : !services ? 0 : 0, pointerEvents: smallScreen ? 'auto' : services ? 'auto' : !services ? 'none' : 'auto' }} >
-                                    <div className="nav-div">
+                                    <li className="nav-li">
                                         <h4 className='sub-menu-header'>CERAMIC COATING</h4>
-                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                        <div className='sub-menu-div' onClick={() => setNav('none')}>
                                             <a href="/services/exterior-ceramic-coating" className='menu-link'><AiOutlineCar /> Exterior Ceramic Coating</a>
-                                        </li>
-                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                        </div>
+                                        <div className='sub-menu-div' onClick={() => setNav('none')}>
                                             <a href="/services/interior-ceramic-coating" className='menu-link'><GiCarSeat /> Interior Coating</a>
-                                        </li>
+                                        </div>
                                         <hr className="nav-hr" />
                                         <h4 className='sub-menu-header'>COMBO DEALS</h4>
-                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                        <div className='sub-menu-div' onClick={() => setNav('none')}>
                                             <a href="/services/interior-exterior-detailing-combo" className='menu-link'><GiCarKey /> Interior + Exterior Combo</a>
-                                        </li>
+                                        </div>
                                         <hr className="nav-hr" />
                                         <h4 className='sub-menu-header'>INTERIOR CLEANING SERVICES</h4>
-                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                        <div className='sub-menu-div' onClick={() => setNav('none')}>
                                             <a href="/services/full-interior-detail" className='menu-link'><GiSteeringWheel /> Full Interior Cleaning</a>
-                                        </li>
-                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                        </div>
+                                        <div className='sub-menu-div' onClick={() => setNav('none')}>
                                             <a href="/services/biohazard-cleaning" className='menu-link'><FaBiohazard /> Biohazard Cleaning</a>
-                                        </li>
+                                        </div>
                                         <hr className="nav-hr" />
                                         <h4 className='sub-menu-header'>EXTERIOR DETAILING SERVICES</h4>
-                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                        <div className='sub-menu-div' onClick={() => setNav('none')}>
                                             <a href="/services/dirtless-wash" className='menu-link'><FaSoap /> Dirt-Less Wash</a>
-                                        </li>
+                                        </div>
                                         <hr className="nav-hr" />
                                         <h4 className='sub-menu-header'>PAINT CORRECTION SERVICES</h4>
-                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                        <div className='sub-menu-div' onClick={() => setNav('none')}>
                                             <a href="/services/single-stage-correction" className='menu-link'><FaCarSide /> Single Stage Paint Correction</a>
-                                        </li>
-                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                        </div>
+                                        <div className='sub-menu-div' onClick={() => setNav('none')}>
                                             <a href="/services/two-stage-correction" className='menu-link'><HiSparkles /> Two Stage Paint Correction</a>
-                                        </li>
-                                    </div>
+                                        </div>
+                                    </li>
                                 </ul>
-                            </div>
-                            <hr className="nav-hr" />
+                            </li>
 
-                            <div style={{ position: 'relative' }}>
-                                <li className='menu-li' onPointerEnter={() => changeNav('gallery')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('gallery')}><FaImages /> Gallery</li>
+                            <li style={{ position: 'relative' }}>
+                                <div className='menu-li' onPointerEnter={() => changeNav('gallery')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('gallery')}><FaImages /> Gallery</div>
                                 <ul className="sub-ul" onPointerEnter={() => changeNav('gallery')} onPointerLeave={() => changeNav('none')} style={{ opacity: smallScreen ? 1 : gallery ? 1 : !gallery ? 0 : 0, pointerEvents: smallScreen ? 'auto' : gallery ? 'auto' : !gallery ? 'none' : 'auto' }}>
-                                    <div className="nav-div">
+                                    <li className="nav-li">
                                         <h4 className="sub-menu-header">GALLERIES</h4>
-                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                        <div className='sub-menu-div' onClick={() => setNav('none')}>
                                             <a href="/gallery/ceramic-coating-gallery" className='menu-link'><ImFilePicture /> Ceramic Coating Gallery</a>
-                                        </li>
-                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                        </div>
+                                        <div className='sub-menu-div' onClick={() => setNav('none')}>
                                             <a href="/gallery/interior-detail-gallery" className='menu-link'><FaPhotoVideo /> Full Interior Gallery</a>
-                                        </li>
-                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                        </div>
+                                        <div className='sub-menu-div' onClick={() => setNav('none')}>
                                             <a href="/gallery/dirtless-wash-gallery" className='menu-link'><BsFillCameraFill /> Dirt-Less Wash Gallery</a>
-                                        </li>
-                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                        </div>
+                                        <div className='sub-menu-div' onClick={() => setNav('none')}>
                                             <a href="/gallery/engine-bay-gallery" className='menu-link'><TbEngine /> Engine Bay Gallery</a>
-                                        </li>
-                                        <li className='sub-menu-li' onClick={() => setNav('none')}>
+                                        </div>
+                                        <div className='sub-menu-div' onClick={() => setNav('none')}>
                                             <a href="/gallery/paint-correction-gallery" className='menu-link'><FaCameraRetro /> Paint Correction Gallery</a>
-                                        </li>
-                                    </div>
+                                        </div>
+                                    </li>
                                 </ul>
-                            </div>
+                            </li>
                             <hr className="nav-hr" />
 
                             <li>
