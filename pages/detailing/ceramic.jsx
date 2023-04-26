@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
-import Zoom from 'react-medium-image-zoom';
-import 'react-medium-image-zoom/dist/styles.css';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 import PricingComponent from '../../utils/PricingComponent';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 
 export default function ceramic() {
     const [currPackage, setCurrPackage] = useState('Protect');
@@ -110,48 +110,6 @@ export default function ceramic() {
                     <p>Unlike wax, you can't just simply wipe it on and off. The ceramic coating is a semi-permanent barrier that bonds to the vehicle's surface. It is commonly referred to as a “sacrificial” layer of protection. It will take the blow of the weathers elements like rain, dirt, and snow to better protect the paint underneath.</p>
                     <p>As an analogy, think of the Three Little Pigs. Wax is like the straw house, and ceramic coatings are like the brick house. Both offer protection from rain and dust, but one is far superior.</p>
                 </div>
-
-                {/* <br className='extra-space' />
-
-                <h2 className='text-large'>The benefits you get with a coating:</h2>
-                <p className='text-left'>There are a lot of coating companies that make some pretty big claims of what a coating can do. Although there is some truth to these claims, we don't like to oversell the coatings capabilities.</p>
-                <ul className='coating-points'>
-                    <li>Produces the most durable protection possible that lasts 5 years to a lifetime (With proper maintenance through us).</li>
-                    <li>You only need to apply it once. (Not every couple of months like wax).</li>
-                    <li>Creates a deep level of gloss that is not possible with other forms of protection like wax or sealant.</li>
-                    <li>Provides unmatched hydrophobic properties that keeps your car cleaner, making it easier and more fun to wash.</li>
-                </ul>
-
-                <br className='extra-space' />
-
-                <h2 className="text-large">Ceramic Coating Installation Facts</h2>
-                <div className="text-left">
-                    <p>Before the coating is installed, your vehicle must first be properly prepped and corrected with one of our <a href="/detailing/correction" className='aside-link'>Paint Correction</a> services. If we apply the coating without the proper prep work, you won't get all of the benefits a ceramic coating can offer.</p>
-                    <p>This is why you want a professional ceramic coating installer. Additionally, if it's not properly installed, you'll see a ton of smudges across your vehicle. This is what we call “high spots”. You'll see this when the coating was not properly applied and it was left to dry for too long without being wiped off.</p>
-                    <p>As a general rule of thumb, the more durable the coating, the harder it is to install. For instance, a 1 year versus a 5 year coating. You have to understand the weather variables since that can play a major factor in the installation process.</p>
-                    <p>Coatings react differently when it is humid, cold, or hot.  If you've been in Bonney Lake for an extended period of time, you'll notice that the weather is always changing. We do all of our coating installations at our shop location so we can control the working conditions.</p>
-                </div>
-
-                <br className='extra-space' />
-
-                <h2 className="text-large">Common Myths About Ceramic Coatings</h2>
-                <div className="text-left">
-                    <p>Yes, coatings are long-lasting and durable. That doesn't mean you can beat the snot out of your vehicle and think the coating will protect it.</p>
-                    <p>It has its limitations and it's important to understand the limitations of what the ceramic coating can handle. Too many times we see customers overestimate the protection of the coating and are then disappointed when they see swirl marks in the paintwork.</p>
-                    <p>The coating will not make your paint scratch-proof. When we say the coating will resist light swirls and scratches, we really mean very light swirls and scratches.</p>
-                    <p>The coating will not protect your paint from rock chips whatsoever. No matter how many layers you apply of any protection, whether it's wax or ceramic coating, it cannot stop a rock hitting your vehicle.</p>
-                    <p>The coating requires maintenance to prolong the durability. Just like many other things in life (like going to the dentist), if you don't care for the coating, it will degrade over time and not last its intended lifespan.</p>
-                    <p>You have to properly wash, dry, and maintain the coating for maximum durability. A coating that was meant to last for 5 years can start to break down after 2 to 3 years if not maintained properly.</p>
-                </div>
-
-                <br className='extra-space' />
-
-                <h2 className='text-large'>Professional Interior Coatings</h2>
-                <div className="text-left">
-                    <p>Whether it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe any spill up before it seeps in. Get more info on our <a href="/services/interior-ceramic-coating" className='aside-link'>Interior Coating</a> page.</p>
-                </div>
-
-                <br className='extra-space' /> */}
             </main>
 
             <div>
@@ -170,41 +128,6 @@ export default function ceramic() {
             </div>
 
             <div className='service-bkg-lighter'>
-                {/* <h3 className='pricing-title text-white'>Our Ceramic Coating Pricing</h3>
-                <strong className='subtext'>*Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</strong>
-                <div className="pricing-container text-white">
-                    <div className="pricing-card text-black">
-                        <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Small</strong>
-                        <strong className='size'>Protect</strong>
-                        <p className="pricing-price pricing-border">$1,000</p>
-                        <strong className='size'>Protect<span className="special-package">+</span></strong>
-                        <p className="pricing-price pricing-border">$1,500</p>
-                        <p className="example-vehicle pricing-border">2-Door Coupes</p>
-                        <p className="example-vehicle pricing-border">Single/Extended Cabs</p>
-                        <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                    </div>
-                    <div className="pricing-card text-black">
-                        <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Medium</strong>
-                        <strong className='size'>Protect</strong>
-                        <p className="pricing-price pricing-border">$1,200</p>
-                        <strong className='size'>Protect<span className="special-package">+</span></strong>
-                        <p className="pricing-price pricing-border">$1,700</p>
-                        <p className="example-vehicle pricing-border">4 Door Vehicles</p>
-                        <p className="example-vehicle pricing-border">Smaller SUV's</p>
-                        <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                    </div>
-                    <div className="pricing-card text-black">
-                        <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Large</strong>
-                        <strong className='size'>Protect</strong>
-                        <p className="pricing-price pricing-border">$1,400</p>
-                        <strong className='size'>Protect<span className="special-package">+</span></strong>
-                        <p className="pricing-price pricing-border">$1,900</p>
-                        <p className="example-vehicle pricing-border">Larger Trucks</p>
-                        <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
-                        <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                    </div>
-                </div> */}
-                
                 <div>
                     <h3 className='pricing-title text-white'>Our Interior Coating Pricing</h3>
                     <strong className='subtext'>*Pricing does NOT include an <a href="/services/full-interior-detail" className='aside-link'>Interior Cleaning</a>, which you will need to add to get a coating.</strong>
@@ -231,18 +154,6 @@ export default function ceramic() {
                                 </div>
                             </div>
                         </div>
-                        {/* <div className="pricing-card text-black">
-                            <strong className='size'>Fabric Coating</strong>
-                            <p className="pricing-price pricing-border">$75</p>    
-                            <p className="example-vehicle pricing-border">Any Size Vehicle</p>
-                            <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                        </div> */}
-                        {/* <div className="pricing-card text-black">
-                            <strong className='size'>Leather Coating</strong>
-                            <p className="pricing-price pricing-border">$150</p>
-                            <p className="example-vehicle pricing-border">Any Size Vehicle</p>
-                            <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                        </div> */}
                     </div>
 
                 </div>
