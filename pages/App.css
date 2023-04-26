@@ -1037,26 +1037,135 @@ option {
 
 /** Home Page Review CSS **/
 .reviews-container {
-  width: 80%;
+  width: 100%;
 }
 
-.review-carousel {
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.carousel-button {
+  border: 2px solid #55595d;
+  font-size: 1.2em;
+  border-radius: 50%;
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+}
+
+.lower-review {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  font-size: 1.2em;
+  max-width: 700px;
+  padding: 1rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
+.review-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  cursor: default;
+  color: #c0c0c0;
+}
+
+.review-text {
+  font-style: italic;
+  font-size: 0.9em;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: 0.25s;
+}
+
+.review-card:hover>.lower-review>.review-top>.review-text {
+  color: white;
+}
+
+/* .review-text:hover {
+  color: white;
+} */
+
+.review-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.lower-review {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.name {
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.services-p {
+  margin: 0 0 1rem 0;
+  color: #c0c0c0;
+}
+
+.highlight {
+  background-color: #FFD333;
+  color: black;
+}
+
+.star-review {
+  text-decoration: none;
+  margin: 0;
+  font-size: 1.2em;
+  color: gold;
+}
+
+.google-review {
+  display: flex;
+  align-items: center;
+  background-color: var(--contact-bkg);
+  border-radius: 1rem;
+  padding: 0 1rem;
+  box-shadow: 1px 5px 5px black;
+}
+
+.facebook-logo {
+  color: #4267B2;
+}
+
+/* .review-carousel {
   user-select: none;
   padding: 2em;
   font-size: 1.25rem;
   line-height: 1.75;
   width: 100vw;
   padding: 0 5vw;
-}
+} */
 
-.review-carousel div {
+/* .review-carousel div {
   padding: 2rem 0;
-}
+} */
 
-.reviewer {
+/* .reviewer {
   font-size: 1.25em;
   font-weight: bold;
-}
+} */
 
 .mobileservices-container {
   width: 100%;
@@ -2658,6 +2767,10 @@ hr {
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 1fr;
     column-gap: 2rem;
+  }
+
+  .review-bottom {
+    flex-direction: row;
   }
 
   .map {

@@ -6,7 +6,9 @@ import Metatags from '../utils/Metatags';
 import PopularServices from '../utils/PopularServices';
 import OtherServices from '../utils/OtherServices';
 
-import { MdOutlineLocalCarWash } from 'react-icons/md';
+import { MdOutlineLocalCarWash, MdOutlineArrowBackIos, MdOutlineArrowForwardIos } from 'react-icons/md';
+import { FaFacebook } from 'react-icons/fa';
+import { FcGoogle } from 'react-icons/fc';
 import { BiCertification } from 'react-icons/bi';
 import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 import { FaRegStar, FaMapMarkedAlt, FaMapMarkerAlt } from 'react-icons/fa';
@@ -15,6 +17,7 @@ import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 export default function Home() {
     const [smallScreen, setSmallScreen] = useState(null);
+    const [currentSlide, setCurrentSlide] = useState(0);
 
     useEffect(() => {
         if (window.innerWidth < 879) {
@@ -22,7 +25,23 @@ export default function Home() {
         } else {
             setSmallScreen(false);
         }
-    }, [])
+    }, []);
+
+    const next = () => {
+        if (currentSlide >= 5) {
+            setCurrentSlide(0);
+        } else {
+            setCurrentSlide(currentSlide + 1);
+        }
+    }
+
+    const back = () => {
+        if (currentSlide <= 0) {
+            setCurrentSlide(5);
+        } else {
+            setCurrentSlide(currentSlide - 1);
+        }
+    }
 
     return (
         <div className="App">
@@ -129,51 +148,119 @@ export default function Home() {
                 <h3 className='service-title'>REVIEWS</h3>
             </div>
 
-            <article className="reviews-container">
-                <Carousel className="review-carousel" style={styles} infiniteLoop autoPlay stopOnHover showThumbs={false} swipeable showArrows interval={6000} emulateTouch>
-                    <div>
-                        <p className="review">Brenden answered the first phone call gave a quote over the phone, I did not have to bring the car anywhere. He provided a value and was on time and was extremely thorough. Did not attempt to upsell me and increase price, day of the appointment, like another Bonney Lake detailer did. Can't recommend Dirt-Less Detail enough. My wife's Jeep Cherokee looks new!</p>
-                        <p className="reviewer">-Darren B.</p>
+            <div className='service-bkg-lighter'>
+                <div className="reviews-container">
+                    <Carousel className="review-carousel" selectedItem={currentSlide} autoPlay centerSlidePercentage={50} centerMode={smallScreen ? false : true} style={styles} infiniteLoop stopOnHover showThumbs={false} showArrows interval={6000} emulateTouch>
+                        <div className='review-card'>
+                            <div className='lower-review'>
+                                <div className='review-top'>
+                                    <p className='review-text'>Brenden answered the first phone call gave a quote over the phone, I did not have to bring the car anywhere. <span className='highlight'>He provided a value and was on time and was extremely thorough.</span> Did not attempt to upsell me and increase price, day of the appointment, like another Bonney Lake detailer did. Can't recommend Dirt-Less Detail enough. My wife's Jeep Cherokee looks new!</p>
+                                </div>
+                                <div className='review-bottom'>
+                                    <div style={{ textAlign: 'left' }}>
+                                        <strong className='name text-shadow'>Darren B.</strong>
+                                        <p className='services-p'>Interior Detail</p>
+                                    </div>
+                                    <div className='google-review'>
+                                        <FaFacebook className='facebook-logo' />
+                                        <p className='star-review text-shadow'>★★★★★</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='review-card'>
+                            <div className='lower-review'>
+                                <div className='review-top'>
+                                    <p className='review-text'>Had an issue with the interior of a vehicle that had been in a garage for too long. Dirt-Less handled it professionally and quickly. <span className='highlight'>We will definitely keep going back for our needs.</span></p>
+                                </div>
+                                <div className='review-bottom'>
+                                    <div style={{ textAlign: 'left' }}>
+                                        <strong className='name text-shadow'>Jonathon H.</strong>
+                                        <p className='services-p'>Interior Detail</p>
+                                    </div>
+                                    <div className='google-review'>
+                                        <FcGoogle />
+                                        <p className='star-review text-shadow'>★★★★★</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='review-card'>
+                            <div className='lower-review'>
+                                <div className='review-top'>
+                                    <p className='review-text'>My kids left a gal of milk in the back of my car, needless to say the nice warm weather it leaked all over and soon smelled horrid. He did a fantastic job, <span className='highlight'>car smells and looks brand new, even got every hair out from my pups.</span> Very happy I got his number as a referral from a friend.</p>
+                                </div>
+                                <div className='review-bottom'>
+                                    <div style={{ textAlign: 'left' }}>
+                                        <strong className='name text-shadow'>Trisha C.</strong>
+                                        <p className='services-p'>Interior + Extraction</p>
+                                    </div>
+                                    <div className='google-review'>
+                                        <FaFacebook className='facebook-logo' />
+                                        <p className='star-review text-shadow'>★★★★★</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='review-card'>
+                            <div className='lower-review'>
+                                <div className='review-top'>
+                                    <p className='review-text'>Brenden does an amazing job. My car looks amazing. <span className='highlight'>He is super reasonable in his pricing and was very efficient.</span> Will definitely continue to use his service for all our vehicles.</p>
+                                </div>
+                                <div className='review-bottom'>
+                                    <div style={{ textAlign: 'left' }}>
+                                        <strong className='name text-shadow'>Kristi H.</strong>
+                                        <p className='services-p'>The Dirt-Less Combo</p>
+                                    </div>
+                                    <div className='google-review'>
+                                        <FcGoogle />
+                                        <p className='star-review text-shadow'>★★★★★</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='review-card'>
+                            <div className='lower-review'>
+                                <div className='review-top'>
+                                    <p className='review-text'>Brought in my 12 Escalade and he worked his magic on both inside and outside. <span className='highlight'>Brenden is very good at what he does, the vehicle looks amazing. Better than it was when I bought it.</span> Thank you so much for getting me into your schedule. I am Extremely pleased with the outcome of your services.</p>
+                                </div>
+                                <div className='review-bottom'>
+                                    <div style={{ textAlign: 'left' }}>
+                                        <strong className='name text-shadow'>Rob B.</strong>
+                                        <p className='services-p'>The Dirt-Less Combo</p>
+                                    </div>
+                                    <div className='google-review'>
+                                        <FaFacebook className='facebook-logo' />
+                                        <p className='star-review text-shadow'>★★★★★</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='review-card'>
+                            <div className='lower-review'>
+                                <div className='review-top'>
+                                    <p className='review-text'>Had a whole half gallon of almond chocolate milk spilled into my trunk thanks to Walmart pickup.<span className='highlight'> After calling many detailing shops (whom most were rude and not helpful) Brenden at Dirt-Less Detail was very polite and eager to help.</span> Despite his busy schedule he fit me in asap and took care of my weird circumstance. It didn't take long to clean the trunk and because of it he didn't charge me for the cleaning. He just told me to refer him to others which I'll definitely do!! While other people turned me away because it was such a small job or told me they would have to charge me full price anyway… Dirt-Less Detailing stepped up and helped me out of the kindness of their heart. We need more businesses like that around here!! Way to go Brenden at Dirt-Less Detail. Thanks again.</p>
+                                </div>
+                                <div className='review-bottom'>
+                                    <div style={{ textAlign: 'left' }}>
+                                        <strong className='name text-shadow'>Jennifer D.</strong>
+                                        <p className='services-p'>Interior + Extraction</p>
+                                    </div>
+                                    <div className='google-review'>
+                                        <FcGoogle />
+                                        <p className='star-review text-shadow'>★★★★★</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </Carousel>
+                    <div className='carousel-controls'>
+                        <div className='carousel-button' onClick={() => back()}><MdOutlineArrowBackIos /></div>
+                        <div className='carousel-button' onClick={() => next()}><MdOutlineArrowForwardIos /></div>
                     </div>
-                    <div>
-                        <p className="review">Brought in my '12 Escalade and he worked his magic on both inside and outside. Brenden is very good at what he does, the vehicle looks amazing. better than it was when I bought it. Thank you so much for getting me into your schedule. I am Extremely pleased with the outcome of your services.</p>
-                        <p className="reviewer">-Rob B.</p>
-                    </div>
-                    <div>
-                        <p className="review">Bought new/used SUV for my wife and the kids. 2002 Cadillac Escalade it was pretty filthy inside and out. Made an appointment with Dirt-Less for an interior deep cleaning. Also a cut and buff on the exterior. He brought back the original Cadillac elegance of the vehicle. I highly recommend him. I wish I could post the before and after pictures. High end quality work for a fair price. 5 stars for his work</p>
-                        <p className="reviewer">-Jeff W.</p>
-                    </div>
-                    <div>
-                        <p className="review">Brenden has done a few trucks for me including re covering my 07 dodge drivers seat and did an awesome job, I would recommend him to anyone!</p>
-                        <p className="reviewer">-Patrick K.</p>
-                    </div>
-                    <div>
-                        <p className="review">We have been using Dirt-Less detailing for the last year at our office as an employee perk. He comes in once a month on schedule, always performs fantastic work. I highly recommend them.</p>
-                        <p className="reviewer">-Rick E.</p>
-                    </div>
-                    <div>
-                        <p className="review">My kids left a gal of milk in the back of my car, needless to say the nice warm weather it leaked all over and soon smelled horrid. He did a fantastic job, car smells and looks brand new, even got every hair out from my pups. very happy I got his number as a referral from a friend.</p>
-                        <p className="reviewer">-Trisha C.</p>
-                    </div>
-                    <div>
-                        <p className="review">The process was easy. He responded right away when I contacted him about a detail. He showed up when he said he would and was extremely professional.  He did an amazing job on the detail of my car.  Would have him detail my car again.</p>
-                        <p className="reviewer">Barbara G.</p>
-                    </div>
-                    <div>
-                        <p className="review">Brenden is a hard worker, on time, great work and attention to detail. Highly recommend</p>
-                        <p className="reviewer">-Terri E.</p>
-                    </div>
-                    <div>
-                        <p className="review">Without a doubt. Brenden is the MAN! Hands down second to none when it comes to his detailing services. My wifes Fit is as good as new if not better.</p>
-                        <p className="reviewer">-Mike P.</p>
-                    </div>
-                    <div>
-                        <p className="review">Amazing experience amazing Owner had no issues with the work and had amazing time communicating with him my truck turned out beautiful</p>
-                        <p className="reviewer">-Mark B.</p>
-                    </div>
-                </Carousel>
-            </article>
-            <p>Check out more reviews on our <a style={{ color: 'blue' }} target='_blank' rel='noopener' href="https://www.facebook.com/DirtLessDetailing/reviews">Facebook</a> or <a style={{ color: 'blue' }} target='_blank' rel='noopener' href="https://www.google.com/search?client=firefox-b-1-d&q=dirtlessdetailing+&dlnr=1&sei=Lhr1Y8_hCsz99AP82ZLACQ#dlnr=1&lrd=0x5490fbac5ad417c7:0x110d16ccf06cd4a2,1,,,,">Google</a> page.</p>
+                    <p style={{ margin: 0, padding: '1rem 0' }}>Check out more reviews on our <a style={{ color: 'blue' }} target='_blank' rel='noopener' href="https://www.facebook.com/DirtLessDetailing/reviews">Facebook</a> or <a style={{ color: 'blue' }} target='_blank' rel='noopener' href="https://www.google.com/search?client=firefox-b-1-d&q=dirtlessdetailing+&dlnr=1&sei=Lhr1Y8_hCsz99AP82ZLACQ#dlnr=1&lrd=0x5490fbac5ad417c7:0x110d16ccf06cd4a2,1,,,,">Google</a> page.</p>
+                </div>
+            </div>
 
             <section className='mobileservices-container'>
                 {/* <div className="locations">
