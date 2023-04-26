@@ -2,6 +2,8 @@ import React from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import { MdOutlinePermPhoneMsg } from 'react-icons/md';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 
 export default function milton() {
     return (
