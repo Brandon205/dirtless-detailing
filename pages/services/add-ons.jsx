@@ -3,6 +3,10 @@ import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 import { TbEngine } from 'react-icons/tb';
+import { RiCarWashingFill } from 'react-icons/ri';
+import { BsFillArrowUpCircleFill } from 'react-icons/bs';
+import { FaDog } from 'react-icons/fa';
+import { GiPoliceBadge, GiCarSeat, GiCarDoor, GiFallingRocks, GiSmokeBomb, GiRolledCloth, GiSteam, GiCrystalShine } from 'react-icons/gi';
 
 export default function Addons() {
   return (
@@ -104,34 +108,35 @@ export default function Addons() {
 
         <h3 className='addons-subheading' id='exterior'>Exterior Add-ons:</h3>
         <div className="feature-section" id="engine">
-          {/* <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/8ae09f8b-9ace-4f48-265a-5ac051eaf400/public')`}}></div> */}
-          {/* <TbEngine className='feature-icon' /> */}
+          <TbEngine className='feature-icon' />
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Engine Bay Cleaning</p>
             <p className="secondary-text"><span>$79.99</span></p>
-            <p className="service-desc text-white">We will cover sensitive/electronic areas in the bay, clean and wash, then dress the engine bay to have it looking like new!</p>
+            <p className="service-desc text-white">We will cover sensitive/electronic areas in the bay, clean wash, and then dress the engine bay to have it looking like new!</p>
             <div className='internal-links'>
               <a href="/services/dirtless-wash" className="readmore">Dirt-Less Wash</a>
+              <a href="/services/interior-exterior-detailing-combo" className="readmore">The Dirt-Less Combo</a>
             </div>
           </div>
         </div>
         <hr className='contact-border' />
 
         <div className="feature-section" id="engine">
-          <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/8ae09f8b-9ace-4f48-265a-5ac051eaf400/public')`}}></div>
+          <GiFallingRocks className='feature-icon' />
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Clay Bar Treatment</p>
             <p className="secondary-text"><span>$35-$75</span></p>
             <p className="service-desc text-white">Get any small contaminants off of the car to give the paint an even smoother and cleaner shine.</p>
             <div className='internal-links'>
               <a href="/services/dirtless-wash" className="readmore">Dirt-Less Wash</a>
+              <a href="/services/interior-exterior-detailing-combo" className="readmore">The Dirt-Less Combo</a>
             </div>
           </div>
         </div>
         <hr className='contact-border' />
 
         <div className="feature-section" id="glass">
-          <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/53e8e9dc-6fa4-4187-24cd-ccbb08099400/public')`}}></div>
+          <GiCrystalShine className='feature-icon' />
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Glass Polishing</p>
             <p className="secondary-text"><span>$80/hour</span></p>
@@ -145,7 +150,7 @@ export default function Addons() {
         <hr className='contact-border' />
 
         <div className="feature-section" id="waterspot">
-          <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/1e326db9-1061-4626-3e94-f1333c4a2a00/public')`}}></div>
+          <RiCarWashingFill className='feature-icon' />
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Waterspot/Overspray Removal</p>
             <p className="secondary-text"><span>$80/hour</span></p>
@@ -160,8 +165,7 @@ export default function Addons() {
         <hr className='contact-border' />
 
         <div className="feature-section" id="debadge">
-
-          <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/8e6cf3a2-f7da-4ce0-7bd7-00b002b22500/public')`}}></div>
+          <GiPoliceBadge className='feature-icon' />
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Debadging</p>
             <p className="secondary-text"><span>$80/hour</span></p>
@@ -177,7 +181,7 @@ export default function Addons() {
 
         <h3 className='addons-subheading' id='interior'>Interior Add-ons:</h3>
         <div className="feature-section" id="ozone">
-          <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/1da88e3b-77d3-43da-6f00-e7af4b914000/public')`}}></div>
+          <GiSmokeBomb className='feature-icon' />
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Ozone Treatment</p>
             <p className="secondary-text"><span>$99.99</span></p>
@@ -190,11 +194,25 @@ export default function Addons() {
         </div>
         <hr className='contact-border' />
 
+        <div className="feature-section" id="ozone">
+          <BsFillArrowUpCircleFill className='feature-icon' />
+          <div className="feature-desc-area">
+            <p className='service-heading-subtitle'>Headliners</p>
+            <p className="secondary-text"><span>$40-$80</span></p>
+            <p className="service-desc text-white">Headliners are tricky to clean and improper handling can cause them to sag, we'll pick the right products for the job to clean them while keeping them intact.</p>
+            <div className='internal-links'>
+              <a href="/services/full-interior-detail" className="readmore">Full Interior Cleaning</a>
+              <a href="/services/biohazard-cleaning" className="readmore">Biohazard Cleaning</a>
+            </div>
+          </div>
+        </div>
+        <hr className='contact-border' />
+
         <div className="feature-section" id="fabric">
-          <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c537680c-f103-4032-65e3-11370c73d300/public')`}}></div>
+          <GiRolledCloth className='feature-icon' />
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Fabric Coating</p>
-            <p className="secondary-text"><span>$74.99</span></p>
+            <p className="secondary-text"><span>$75</span></p>
             <p className="service-desc text-white">Though Ceramic Coatings are typically applied to vehicles' exteriors ceramic coatings can also be applied to the fabric of a vehicle's interior, providing a range of benefits that can help to keep the interior looking clean and well-maintained.</p>
             <div className='internal-links'>
               <a href="/services/full-interior-detail" className="readmore">Full Interior Cleaning</a>
@@ -205,10 +223,10 @@ export default function Addons() {
         <hr className='contact-border' />
 
         <div className="feature-section" id="leather">
-          <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a196c77-cb1a-42f9-479b-8fdbe3c14500/public')`}}></div>
+          <GiCarSeat className='feature-icon' />
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Leather Coating</p>
-            <p className="secondary-text"><span>$149.99</span></p>
+            <p className="secondary-text"><span>$150</span></p>
             <p className="service-desc text-white">Ceramic coating can also be a great option for anyone who wants to protect the leather in their vehicle from stains, UV damage, and make it easier to clean.</p>
             <div className='internal-links'>
               <a href="/services/full-interior-detail" className="readmore">Full Interior Cleaning</a>

@@ -80,7 +80,7 @@ export default function IntCoatings() {
                         <div className='package-details-bkg'>
                             <div className='package-container-header'>
                                 <h2 className='coating-heading text-shadow'><span className='special-package'>Fabric</span> Coating</h2>
-                                <p>Price: <span className='pricing__pricecard-price'>$74.99</span></p>
+                                <p>Price: <span className='pricing__pricecard-price'>$75</span></p>
                             </div>
                             <div className='package-container'>
                                 <div className='package-details'>
@@ -130,7 +130,7 @@ export default function IntCoatings() {
                                 <p>Check <a href="/services/full-interior-detail" className='aside-link'>here</a> for our Interior Detail Pricing</p>
                                 <div>
                                     <strong className='size'>Any Size Vehicle</strong>
-                                    <p className="pricing-price">$74<span className='ninety-nine'>99</span></p>
+                                    <p className="pricing-price">$75</p>
                                 </div>
                             </div>
                             <div className="pricing-card">
@@ -139,7 +139,7 @@ export default function IntCoatings() {
                                 <p>Check <a href="/services/full-interior-detail" className='aside-link'>here</a> for our Interior Detail Pricing</p>
                                 <div>
                                     <strong className='size'>Any Size Vehicle</strong>
-                                    <p className="pricing-price">$149<span className='ninety-nine'>99</span></p>
+                                    <p className="pricing-price">$150</p>
                                 </div>
                             </div>
                         </div>

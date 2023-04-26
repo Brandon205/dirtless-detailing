@@ -12,7 +12,7 @@ export default function OtherServices() {
                     <div className="otherservices-desc">
                         <div>
                             <a href='/services/interior-ceramic-coating' className='service-heading-link'>Interior Ceramic Coatings</a>
-                            <p className="secondary-text">Starting at: <span>$74.99</span></p>
+                            <p className="secondary-text">Starting at: <span>$75</span></p>
                         </div>
                         <p className="service-desc">Did you know you could ceramic coat the interior of your car? Well you can, and it provides many of the benefits of a normal exterior coating like ease of maintenance/cleaning, but to the interior of your car!</p>
 

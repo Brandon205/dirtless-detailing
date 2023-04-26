@@ -160,7 +160,7 @@ export default function puyallup() {
                         <div style={{display: 'flex', alignItems: 'center'}}>
                             <strong className='size'>Any Size Vehicle</strong>
                             <div style={{display: 'flex', flexDirection: 'column'}}>
-                                <p style={{paddingBottom: 0}} className="pricing-price">$74<span className='ninety-nine'>99</span></p>
+                                <p style={{paddingBottom: 0}} className="pricing-price">$75</p>
                             </div>
                         </div>
                     </div>
@@ -171,7 +171,7 @@ export default function puyallup() {
                         <div style={{display: 'flex', alignItems: 'center'}}>
                             <strong className='size'>Any Size Vehicle</strong>
                             <div style={{display: 'flex', flexDirection: 'column'}}>
-                                <p style={{paddingBottom: 0}} className="pricing-price">$149<span className='ninety-nine'>99</span></p>
+                                <p style={{paddingBottom: 0}} className="pricing-price">$150</p>
                             </div>
                         </div>
                     </div>
