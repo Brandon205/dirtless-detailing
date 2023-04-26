@@ -2574,6 +2574,11 @@ hr {
 
   .service-main {
     font-size: 1.1em;
+    padding: 0;
+  }
+
+  .top-service-main {
+    padding: 2rem 4rem 0 4rem;
   }
 
   .aside-container {
