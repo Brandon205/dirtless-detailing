@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
-import Zoom from 'react-medium-image-zoom';
-import 'react-medium-image-zoom/dist/styles.css';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { MdOutlinePermPhoneMsg } from 'react-icons/md';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 import PricingComponent from '../../utils/PricingComponent';
 import addons from '../../utils/Addons';
 
 export default function correction() {
-    const [currPackage, setCurrPackage] = useState('Single');
+    const [currPackage, setCurrPackage] = useState('single');
 
     return (
         <div className='bg-contact'>
@@ -261,42 +261,7 @@ export default function correction() {
 
               <PricingComponent prices={currPackage === 'single' ? ['549', '549', '699', '699', '849', '849'] : ['699', '699', '849', '849', '999', '999']} addons={[addons.glass]} />
             </div>
-            {/* <div>
-                <h3 className='pricing-title text-white'>Our Paint Correction Pricing</h3>
-                <strong className='subtext'>*Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</strong>
-                <div className="pricing-container text-white">
-                    <div className="pricing-card text-black">
-                        <strong className="size" style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Small</strong>
-                        <strong className='size'>Single Stage</strong>
-                        <p className="pricing-price pricing-border">$300- $450</p>
-                        <strong className='size'>Two Stage</strong>
-                        <p className="pricing-price pricing-border">$450- $600</p>
-                        <p className="example-vehicle pricing-border">2-Door Coupes</p>
-                        <p className="example-vehicle pricing-border">Single/Extended Cabs</p>
-                        <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                    </div>
-                    <div className="pricing-card text-black">
-                        <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Medium</strong>
-                        <strong className='size'>Single Stage</strong>
-                        <p className="pricing-price pricing-border">$450- $600</p>
-                        <strong className='size'>Two Stage</strong>
-                        <p className="pricing-price pricing-border">$600- $850</p>
-                        <p className="example-vehicle pricing-border">4 Door Vehicles</p>
-                        <p className="example-vehicle pricing-border">Smaller SUV's</p>
-                        <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                    </div>
-                    <div className="pricing-card text-black">
-                        <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Large</strong>
-                        <strong className='size'>Single Stage</strong>
-                        <p className="pricing-price pricing-border">$600- $850</p>
-                        <strong className='size'>Two Stage</strong>
-                        <p className="pricing-price pricing-border">$800- $1,100</p>
-                        <p className="example-vehicle pricing-border">Larger Trucks</p>
-                        <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
-                        <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                    </div>
-                </div>
-            </div> */}
+
             <div className="service-bkg-lighter">
                 <h4 className='text-large'>Visual example of different paint defects:</h4>
                 <strong className='subtext'>This gives an example of why deeper scratches aren't removable without repainting.</strong>

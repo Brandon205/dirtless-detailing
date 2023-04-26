@@ -134,44 +134,6 @@ export default function blackDiamond() {
                 <br className='extra-space' />
             </main>
 
-            {/* <div className='only-bg'>
-                <h3 className='pricing-title text-white'>Our Ceramic Coating Pricing</h3>
-                <strong className='subtext'>*Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</strong>
-                <div className="pricing-container text-white">
-                    <div className="pricing-card text-black">
-                        <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Small</strong>
-                        <strong className='size'>Protect</strong>
-                        <p className="pricing-price pricing-border">$1,000</p>
-                        <strong className='size'>Protect<span className="special-package">+</span></strong>
-                        <p className="pricing-price pricing-border">$1,500</p>
-                        <p className="example-vehicle pricing-border">2-Door Coupes</p>
-                        <p className="example-vehicle pricing-border">Single/Extended Cabs</p>
-                        <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                    </div>
-                    <div className="pricing-card text-black">
-                        <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Medium</strong>
-                        <strong className='size'>Protect</strong>
-                        <p className="pricing-price pricing-border">$1,200</p>
-                        <strong className='size'>Protect<span className="special-package">+</span></strong>
-                        <p className="pricing-price pricing-border">$1,700</p>
-                        <p className="example-vehicle pricing-border">4 Door Vehicles</p>
-                        <p className="example-vehicle pricing-border">Smaller SUV's</p>
-                        <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                    </div>
-                    <div className="pricing-card text-black">
-                        <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Large</strong>
-                        <strong className='size'>Protect</strong>
-                        <p className="pricing-price pricing-border">$1,400</p>
-                        <strong className='size'>Protect<span className="special-package">+</span></strong>
-                        <p className="pricing-price pricing-border">$1,900</p>
-                        <p className="example-vehicle pricing-border">Larger Trucks</p>
-                        <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
-                        <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                    </div>
-                </div>
-                <strong className='subtext'>For more detailed information check out our main <a href="/detailing/ceramic" className='aside-link'>Ceramic</a> page.</strong>
-            </div> */}
-
             <div>
                 <div className='pricing__heading-container'>
                     <h3 className="pricing__heading">Our Ceramic Coating Pricing</h3>

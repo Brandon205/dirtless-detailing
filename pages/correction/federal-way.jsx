@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState }  from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import { MdOutlinePermPhoneMsg } from 'react-icons/md';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
+import PricingComponent from '../../utils/PricingComponent';
+import addons from '../../utils/Addons';
 
 export default function federalWay() {
+    const [currPackage, setCurrPackage] = useState('single');
+
     return (
         <div className='bg-contact'>
             <Head>
@@ -233,53 +239,45 @@ export default function federalWay() {
 
             <br className='extra-space' />
 
-            <div className='only-bg'>
-                <h3 className='pricing-title text-white'>Our Paint Correction Pricing</h3>
-                <strong className='subtext'>*Final pricing may vary based on your vehicle condition and size.</strong>
-                <div className="pricing-container text-white">
-                    <div className="pricing-card text-black">
-                        <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Small</strong>
-                        <strong className='size'>Single Stage</strong>
-                        <p className="pricing-price pricing-border">$300- $450</p>
-                        <strong className='size'>Two Stage</strong>
-                        <p className="pricing-price pricing-border">$450- $600</p>
-                        <p className="example-vehicle pricing-border">2-Door Coupes</p>
-                        <p className="example-vehicle pricing-border">Single/Extended Cabs</p>
-                        <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                    </div>
-                    <div className="pricing-card text-black">
-                        <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Medium</strong>
-                        <strong className='size'>Single Stage</strong>
-                        <p className="pricing-price pricing-border">$450- $600</p>
-                        <strong className='size'>Two Stage</strong>
-                        <p className="pricing-price pricing-border">$600- $850</p>
-                        <p className="example-vehicle pricing-border">4 Door Vehicles</p>
-                        <p className="example-vehicle pricing-border">Smaller SUV's</p>
-                        <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                    </div>
-                    <div className="pricing-card text-black">
-                        <strong className='size' style={{fontSize: 1.4 + 'em', fontWeight: 'bold'}}>Large</strong>
-                        <strong className='size'>Single Stage</strong>
-                        <p className="pricing-price pricing-border">$600- $850</p>
-                        <strong className='size'>Two Stage</strong>
-                        <p className="pricing-price pricing-border">$800- $1,100</p>
-                        <p className="example-vehicle pricing-border">Larger Trucks</p>
-                        <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
-                        <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
+            <div>
+                <div className='pricing__heading-container'>
+                    <h3 className="pricing__heading">Our Correction Pricing</h3>
+                    <strong className="pricing__subheading">Select the package and vehicle size below to get a quick price estimate for your vehicle.</strong>
+                    <div style={{margin: '0 auto'}}>
+                        <select className='text-input pricing__select' name="package" id="package" onChange={(e) => setCurrPackage(e.target.value)}>
+                            <option value="single">Single Stage</option>
+                            <option value="two">Two Stage</option>
+                        </select>
                     </div>
                 </div>
+
+              <PricingComponent prices={currPackage === 'single' ? ['549', '549', '699', '699', '849', '849'] : ['699', '699', '849', '849', '999', '999']} addons={[addons.glass]} />
             </div>
 
             <div>
                 <h3 className='text-large'>Some of the results from our Paint Correction service:</h3>
                 <div className="mini-grid">
-                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a88a5723-312c-4d9f-7e44-6751373ccc00/public')`}}></div>
-                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/05a03dc9-11c9-4ad8-a8a3-eba28b243e00/public')`}}></div>
-                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/fbae254b-fd19-4fb9-2af7-7fa74e753c00/public')`}}></div>
-                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2e52fbef-fad5-4867-9c02-157690455900/public')`}}></div>
-                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a1962dba-9065-4a4e-9c99-792960ba5f00/public')`}}></div>
-                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/42bf45ce-c76d-4614-817b-7f4b5a55b200/public')`}}></div>
-                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/816ccafc-084b-4d7d-8735-8da8117a4700/public')`}}></div>
+                    <Zoom>
+                        <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a88a5723-312c-4d9f-7e44-6751373ccc00/public')`}}></div>
+                    </Zoom>
+                    <Zoom>
+                        <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/05a03dc9-11c9-4ad8-a8a3-eba28b243e00/public')`}}></div>
+                    </Zoom>
+                    <Zoom>
+                        <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/fbae254b-fd19-4fb9-2af7-7fa74e753c00/public')`}}></div>
+                    </Zoom>
+                    <Zoom>
+                        <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2e52fbef-fad5-4867-9c02-157690455900/public')`}}></div>
+                    </Zoom>
+                    <Zoom>
+                        <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a1962dba-9065-4a4e-9c99-792960ba5f00/public')`}}></div>
+                    </Zoom>
+                    <Zoom>
+                        <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/42bf45ce-c76d-4614-817b-7f4b5a55b200/public')`}}></div>
+                    </Zoom>
+                    <Zoom>
+                        <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/816ccafc-084b-4d7d-8735-8da8117a4700/public')`}}></div>
+                    </Zoom>
                 </div>
             </div>
             <h3>See more in our <a href="/gallery/paint-correction-gallery" className='aside-link'>Paint Correction Gallery</a>.</h3>
