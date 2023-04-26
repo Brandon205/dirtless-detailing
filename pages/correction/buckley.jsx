@@ -271,7 +271,7 @@ export default function buckley() {
 
             <div>
                 <h3 className='text-large'>Some of the results from our Paint Correction service:</h3>
-                <div className="photo-grid">
+                <div className="mini-grid">
                     <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a88a5723-312c-4d9f-7e44-6751373ccc00/public')`}}></div>
                     <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/05a03dc9-11c9-4ad8-a8a3-eba28b243e00/public')`}}></div>
                     <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/fbae254b-fd19-4fb9-2af7-7fa74e753c00/public')`}}></div>

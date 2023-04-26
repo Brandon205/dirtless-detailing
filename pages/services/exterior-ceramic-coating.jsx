@@ -269,7 +269,7 @@ export default function ExtCoatings() {
 
                             <h4 className='text-large'>Informational photos from IGL:</h4>
                             <strong className='subtext'>Check out more from our Ceramic Coating provider <a href='https://iglcoatingsusa.com/' target='_blank' rel='noopener' className='aside-link'>IGL</a>.</strong>
-                            <div className="photo-grid">
+                            <div className="mini-grid">
                                 <Zoom>
                                     <div aria-label="What an IGL Coating can protect your paint from" role='img' className="card card-tall" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b69dcca1-8d92-414e-32c9-ddfe247fa100/public')`}} />
                                 </Zoom>

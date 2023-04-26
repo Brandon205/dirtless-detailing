@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { MdOutlinePermPhoneMsg } from 'react-icons/md';
+import PricingComponent from '../../utils/PricingComponent';
 
 export default function ceramic() {
+    const [currPackage, setCurrPackage] = useState('Protect');
+
     return (
         <div className='bg-contact'>
             <Head>
@@ -91,8 +94,8 @@ export default function ceramic() {
             </Head>
             <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/cfc8823e-d28e-4ccc-255a-afa3fa5ad400/cover')`}}></div>
             <div className="servicepage-header">
-                <h1>Interior / Exterior Ceramic Coatings</h1>
-                <h2>IGL Graphene Coatings</h2>
+                <h1>Our Interior & Exterior Ceramic Coatings</h1>
+                <h2>Professionally installed IGL Graphene Coatings</h2>
                 <div className='header-buttons'>
                     <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
                     <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
@@ -108,7 +111,7 @@ export default function ceramic() {
                     <p>As an analogy, think of the Three Little Pigs. Wax is like the straw house, and ceramic coatings are like the brick house. Both offer protection from rain and dust, but one is far superior.</p>
                 </div>
 
-                <br className='extra-space' />
+                {/* <br className='extra-space' />
 
                 <h2 className='text-large'>The benefits you get with a coating:</h2>
                 <p className='text-left'>There are a lot of coating companies that make some pretty big claims of what a coating can do. Although there is some truth to these claims, we don't like to oversell the coatings capabilities.</p>
@@ -148,11 +151,26 @@ export default function ceramic() {
                     <p>Whether it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe any spill up before it seeps in. Get more info on our <a href="/services/interior-ceramic-coating" className='aside-link'>Interior Coating</a> page.</p>
                 </div>
 
-                <br className='extra-space' />
+                <br className='extra-space' /> */}
             </main>
 
-            <div className='only-bg'>
-                <h3 className='pricing-title text-white'>Our Ceramic Coating Pricing</h3>
+            <div>
+                <div className='pricing__heading-container'>
+                    <h3 className="pricing__heading">Our Ceramic Coating Pricing</h3>
+                    <strong className="pricing__subheading">Select the package and vehicle size below to get a quick price estimate for your vehicle.</strong>
+                    <div style={{margin: '0 auto'}}>
+                        <select className='text-input pricing__select' name="package" id="package" onChange={(e) => setCurrPackage(e.target.value)}>
+                            <option value="Protect">Protect</option>
+                            <option value="Protect+">Protect+</option>
+                        </select>
+                    </div>
+                </div>
+
+                <PricingComponent prices={currPackage === 'Protect' ? ['949', '949', '1,099', '1,099', '1,249', '1,249'] : ['1,399', '1,399', '1,699', '1,699', '1,849', '1,849']} ceramic={true} />
+            </div>
+
+            <div className='service-bkg-lighter'>
+                {/* <h3 className='pricing-title text-white'>Our Ceramic Coating Pricing</h3>
                 <strong className='subtext'>*Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</strong>
                 <div className="pricing-container text-white">
                     <div className="pricing-card text-black">
@@ -185,24 +203,46 @@ export default function ceramic() {
                         <p className="example-vehicle pricing-border">Extra Large Vehicles</p>
                         <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                     </div>
-                </div>
+                </div> */}
                 
                 <div>
                     <h3 className='pricing-title text-white'>Our Interior Coating Pricing</h3>
                     <strong className='subtext'>*Pricing does NOT include an <a href="/services/full-interior-detail" className='aside-link'>Interior Cleaning</a>, which you will need to add to get a coating.</strong>
                     <div className='pricing-container text-white'>
                         <div className="pricing-card text-black">
+                            <h5>Fabric Coating</h5>
+                            <p>We will completely cover all fabric in your vehicle with a durable ceramic coating.</p>
+                            <p>This includes carpets, seats, and other fabric spots on the interior of the vehicle.</p>
+                            <div style={{display: 'flex', alignItems: 'center'}}>
+                                <strong className='size'>Any Size Vehicle</strong>
+                                <div style={{display: 'flex', flexDirection: 'column'}}>
+                                    <p style={{paddingBottom: 0}} className="pricing-price">$74<span className='ninety-nine'>99</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="pricing-card text-black">
+                            <h5>Leather Coating</h5>
+                            <p>We will completely cover all leather in your vehicle with a durable ceramic coating.</p>
+                            <p>This includes seats, door panels, and other leather spots on the interior of the vehicle.</p>
+                            <div style={{display: 'flex', alignItems: 'center'}}>
+                                <strong className='size'>Any Size Vehicle</strong>
+                                <div style={{display: 'flex', flexDirection: 'column'}}>
+                                    <p style={{paddingBottom: 0}} className="pricing-price">$149<span className='ninety-nine'>99</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        {/* <div className="pricing-card text-black">
                             <strong className='size'>Fabric Coating</strong>
                             <p className="pricing-price pricing-border">$75</p>    
                             <p className="example-vehicle pricing-border">Any Size Vehicle</p>
                             <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                        </div>
-                        <div className="pricing-card text-black">
+                        </div> */}
+                        {/* <div className="pricing-card text-black">
                             <strong className='size'>Leather Coating</strong>
                             <p className="pricing-price pricing-border">$150</p>
                             <p className="example-vehicle pricing-border">Any Size Vehicle</p>
                             <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
-                        </div>
+                        </div> */}
                     </div>
 
                 </div>
@@ -233,7 +273,7 @@ export default function ceramic() {
 
             <h4 className='text-large'>Informational photos from IGL:</h4>
             <strong className='subtext'>Check out more from our Ceramic Coating provider <a href='https://iglcoatingsusa.com/' target='_blank' rel='noopener' className='aside-link'>IGL</a>.</strong>
-            <div style={{marginTop: '1rem'}} className="photo-grid">
+            <div style={{marginTop: '1rem'}} className="mini-grid">
                 <Zoom>
                     <div aria-label="What an IGL Coating can protect your paint from" role='img' className="card card-tall" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b69dcca1-8d92-414e-32c9-ddfe247fa100/public')`}} />
                 </Zoom>
@@ -249,15 +289,31 @@ export default function ceramic() {
 
             <div>
                 <h3 className='text-large'>Check out some of the results from our interior and exterior Ceramic services.</h3>
-                <div className="photo-grid">
-                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5b0798e5-2648-4845-168b-98e7ff013100/public')`}}></div>
-                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3e71dbba-b8c6-4c21-7d4c-edc497331100/public')`}}></div>
-                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/43a02c30-4982-435d-7f91-6d81fd11a000/public')`}}></div>
-                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/fdce3625-66ac-4ea8-68e5-9f2e9e94c500/public')`}}></div>
-                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c8855b02-88e3-47c6-f8ab-835cead38f00/public')`}}></div>
-                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/eef9854b-8f53-4f66-fa7f-d7c97fc71e00/public')`}}></div>
-                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ab68bfcc-17a0-4468-539b-fded52edc500/public')`}}></div>
-                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a30c288d-c816-4a42-e313-d7fa80e04200/public')`}}></div>
+                <div className="mini-grid">
+                    <Zoom>
+                        <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5b0798e5-2648-4845-168b-98e7ff013100/public')`}}></div>
+                    </Zoom>
+                    <Zoom>
+                        <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3e71dbba-b8c6-4c21-7d4c-edc497331100/public')`}}></div>
+                    </Zoom>
+                    <Zoom>
+                        <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/43a02c30-4982-435d-7f91-6d81fd11a000/public')`}}></div>
+                    </Zoom>
+                    <Zoom>
+                        <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/fdce3625-66ac-4ea8-68e5-9f2e9e94c500/public')`}}></div>
+                    </Zoom>
+                    <Zoom>
+                        <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c8855b02-88e3-47c6-f8ab-835cead38f00/public')`}}></div>
+                    </Zoom>
+                    <Zoom>
+                        <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/eef9854b-8f53-4f66-fa7f-d7c97fc71e00/public')`}}></div>
+                    </Zoom>
+                    <Zoom>
+                        <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ab68bfcc-17a0-4468-539b-fded52edc500/public')`}}></div>
+                    </Zoom>
+                    <Zoom>
+                        <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a30c288d-c816-4a42-e313-d7fa80e04200/public')`}}></div>
+                    </Zoom>
                 </div>
             </div>
 

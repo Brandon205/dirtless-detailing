@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { MdOutlinePermPhoneMsg } from 'react-icons/md';
+import PricingComponent from '../../utils/PricingComponent';
+import addons from '../../utils/Addons';
 
 export default function correction() {
+    const [currPackage, setCurrPackage] = useState('Single');
+
     return (
         <div className='bg-contact'>
             <Head>
@@ -244,6 +248,20 @@ export default function correction() {
             </div>
 
             <div>
+                <div className='pricing__heading-container'>
+                    <h3 className="pricing__heading">Our Correction Pricing</h3>
+                    <strong className="pricing__subheading">Select the package and vehicle size below to get a quick price estimate for your vehicle.</strong>
+                    <div style={{margin: '0 auto'}}>
+                        <select className='text-input pricing__select' name="package" id="package" onChange={(e) => setCurrPackage(e.target.value)}>
+                            <option value="single">Single Stage</option>
+                            <option value="two">Two Stage</option>
+                        </select>
+                    </div>
+                </div>
+
+              <PricingComponent prices={currPackage === 'single' ? ['549', '549', '699', '699', '849', '849'] : ['699', '699', '849', '849', '999', '999']} addons={[addons.glass]} />
+            </div>
+            {/* <div>
                 <h3 className='pricing-title text-white'>Our Paint Correction Pricing</h3>
                 <strong className='subtext'>*Pricing INCLUDES a Single Stage Paint Correction that we do before the coating, as long as the vehicle doesn't need extra correction beyond that.</strong>
                 <div className="pricing-container text-white">
@@ -278,54 +296,68 @@ export default function correction() {
                         <a href="/Contact" className="pricing-quote-btn">Contact Us</a>
                     </div>
                 </div>
-            </div>
-
-            <h4 className='text-large'>Visual example of different paint defects:</h4>
-            <strong className='subtext'>This gives an example of why deeper scratches aren't removable without repainting.</strong>
-            <div className="photo-grid">
-              <Zoom>
-                <div aria-label="Paint defects info and depth" role='img' className="card card-tall card-wide" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3c1c25a3-cbab-4f82-91b1-ba2a30626500/public')`}} />
-              </Zoom>
-            </div>
-
-            <div>
-                <h3 className='text-large'>Check out some of the results from our Paint Correction service</h3>
-                <div className="photo-grid">
-                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a88a5723-312c-4d9f-7e44-6751373ccc00/public')`}}></div>
-                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/05a03dc9-11c9-4ad8-a8a3-eba28b243e00/public')`}}></div>
-                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/fbae254b-fd19-4fb9-2af7-7fa74e753c00/public')`}}></div>
-                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2e52fbef-fad5-4867-9c02-157690455900/public')`}}></div>
-                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a1962dba-9065-4a4e-9c99-792960ba5f00/public')`}}></div>
-                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/42bf45ce-c76d-4614-817b-7f4b5a55b200/public')`}}></div>
-                    <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/816ccafc-084b-4d7d-8735-8da8117a4700/public')`}}></div>
+            </div> */}
+            <div className="service-bkg-lighter">
+                <h4 className='text-large'>Visual example of different paint defects:</h4>
+                <strong className='subtext'>This gives an example of why deeper scratches aren't removable without repainting.</strong>
+                <div className="mini-grid">
+                <Zoom>
+                    <div aria-label="Paint defects info and depth" role='img' className="card card-tall card-wide" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3c1c25a3-cbab-4f82-91b1-ba2a30626500/public')`}} />
+                </Zoom>
                 </div>
-            </div>
-            <h3>See more on our <a href="/gallery/paint-correction-gallery" className='aside-link'>Paint Correction Gallery</a> page.</h3>
 
-            <br className="extra-space" />
-
-            <div style={{width: 80 + 'vw', margin: '0 auto'}}>
-                <strong className='text-medium'>We'll help customers from all over get a paint correction on their vehicle, however, most of our customers come to our shop from these areas:</strong>
-                <div style={{ display: 'grid', placeItems: 'center' }}>
-                    <ul className='cities-ul'>
-                    <li><a href='/correction/bonney-lake' className='aside-link'>Bonney Lake</a><FaMapMarkerAlt /></li>
-                    <li><a href='/correction/buckley' className='aside-link'>Buckley</a><FaMapMarkerAlt /></li>
-                    <li><a href='/correction/sumner' className='aside-link'>Sumner</a><FaMapMarkerAlt /></li>
-                    <li><a href='/correction/enumclaw' className='aside-link'>Enumclaw</a><FaMapMarkerAlt /></li>
-                    <li><a href='/correction/puyallup' className='aside-link'>Puyallup</a><FaMapMarkerAlt /></li>
-                    <li><a href='/correction/federal-way' className='aside-link'>Federal Way</a><FaMapMarkerAlt /></li>
-                    <li><a href='/correction/orting' className='aside-link'>Orting</a><FaMapMarkerAlt /></li>
-                    <li><a href='/correction/south-prairie' className='aside-link'>South Prairie</a><FaMapMarkerAlt /></li>
-                    <li><a href='/correction/black-diamond' className='aside-link'>Black Diamond</a><FaMapMarkerAlt /></li>
-                    <li><a href='/correction/milton' className='aside-link'>Milton</a><FaMapMarkerAlt /></li>
-                    <li><a href='/correction/edgewood' className='aside-link'>Edgewood</a><FaMapMarkerAlt /></li>
-                    <li><a href='/correction/graham' className='aside-link'>Graham</a><FaMapMarkerAlt /></li>
-                    </ul>
+                <div>
+                    <h3 className='text-large'>Check out some of the results from our Paint Correction service</h3>
+                    <div className="mini-grid">
+                        <Zoom>
+                            <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a88a5723-312c-4d9f-7e44-6751373ccc00/public')`}}></div>
+                        </Zoom>
+                        <Zoom>
+                            <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/05a03dc9-11c9-4ad8-a8a3-eba28b243e00/public')`}}></div>
+                        </Zoom>
+                        <Zoom>
+                            <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/fbae254b-fd19-4fb9-2af7-7fa74e753c00/public')`}}></div>
+                        </Zoom>
+                        <Zoom>
+                            <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2e52fbef-fad5-4867-9c02-157690455900/public')`}}></div>
+                        </Zoom>
+                        <Zoom>
+                            <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a1962dba-9065-4a4e-9c99-792960ba5f00/public')`}}></div>
+                        </Zoom>
+                        <Zoom>
+                            <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/42bf45ce-c76d-4614-817b-7f4b5a55b200/public')`}}></div>
+                        </Zoom>
+                        <Zoom>
+                            <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/816ccafc-084b-4d7d-8735-8da8117a4700/public')`}}></div>
+                        </Zoom>
+                    </div>
                 </div>
-            </div>
-            <br className='extra-space' />
-            <a href="/Contact" className="quote-btn">Get A Free Quote Today!</a>
+                <h3>See more on our <a href="/gallery/paint-correction-gallery" className='aside-link'>Paint Correction Gallery</a> page.</h3>
 
+                <br className="extra-space" />
+
+                <div style={{width: 80 + 'vw', margin: '0 auto'}}>
+                    <strong className='text-medium'>We'll help customers from all over get a paint correction on their vehicle, however, most of our customers come to our shop from these areas:</strong>
+                    <div style={{ display: 'grid', placeItems: 'center' }}>
+                        <ul className='cities-ul'>
+                        <li><a href='/correction/bonney-lake' className='aside-link'>Bonney Lake</a><FaMapMarkerAlt /></li>
+                        <li><a href='/correction/buckley' className='aside-link'>Buckley</a><FaMapMarkerAlt /></li>
+                        <li><a href='/correction/sumner' className='aside-link'>Sumner</a><FaMapMarkerAlt /></li>
+                        <li><a href='/correction/enumclaw' className='aside-link'>Enumclaw</a><FaMapMarkerAlt /></li>
+                        <li><a href='/correction/puyallup' className='aside-link'>Puyallup</a><FaMapMarkerAlt /></li>
+                        <li><a href='/correction/federal-way' className='aside-link'>Federal Way</a><FaMapMarkerAlt /></li>
+                        <li><a href='/correction/orting' className='aside-link'>Orting</a><FaMapMarkerAlt /></li>
+                        <li><a href='/correction/south-prairie' className='aside-link'>South Prairie</a><FaMapMarkerAlt /></li>
+                        <li><a href='/correction/black-diamond' className='aside-link'>Black Diamond</a><FaMapMarkerAlt /></li>
+                        <li><a href='/correction/milton' className='aside-link'>Milton</a><FaMapMarkerAlt /></li>
+                        <li><a href='/correction/edgewood' className='aside-link'>Edgewood</a><FaMapMarkerAlt /></li>
+                        <li><a href='/correction/graham' className='aside-link'>Graham</a><FaMapMarkerAlt /></li>
+                        </ul>
+                    </div>
+                </div>
+                <br className='extra-space' />
+                <a href="/Contact" className="quote-btn">Get A Free Quote Today!</a>
+            </div>
         </div> 
     )
 }
