@@ -303,6 +303,7 @@ export default function ExtCoatings() {
                                     <li className='faq-p'>Your vehicles paint coating is guaranteed for life as long as you are on our monthly maintenance schedule. If you ever wish to cancel monthly maintenance, the remainder of your 5 year 50,000 mile warranty you had before takes effect.</li>
                                 </ul>
                             </div>
+                            <a href="/Contact" className="new-contact-btn">Contact Us</a>
                         </main>
                     </div>
                     

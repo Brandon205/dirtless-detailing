@@ -175,7 +175,7 @@ export default function Home() {
             </article>
             <p>Check out more reviews on our <a style={{ color: 'blue' }} target='_blank' rel='noopener' href="https://www.facebook.com/DirtLessDetailing/reviews">Facebook</a> or <a style={{ color: 'blue' }} target='_blank' rel='noopener' href="https://www.google.com/search?client=firefox-b-1-d&q=dirtlessdetailing+&dlnr=1&sei=Lhr1Y8_hCsz99AP82ZLACQ#dlnr=1&lrd=0x5490fbac5ad417c7:0x110d16ccf06cd4a2,1,,,,">Google</a> page.</p>
 
-            <section className='mobileservices-container'>
+            {/* <section className='mobileservices-container'>
                 <div className="locations">
                     <h3>We currently provide mobile services to the following cities:</h3>
                     <div style={{ width: 100 + '%', display: 'flex', justifyContent: 'center' }}>
@@ -202,7 +202,7 @@ export default function Home() {
                 <div className='map'>
                     <iframe title="Map of Dirt-Less Detailing location" width={smallScreen ? '250' : '500'} height={smallScreen ? '300' : '400'} style={{ border: 0 }} loading="lazy" src={`https://www.google.com/maps/embed/v1/place?zoom=15&q=place_id:ChIJxxfUWqz7kFQRotRs8MwWDRE&key=${process.env.GOOGLE_MAPS}`}></iframe>
                 </div>
-            </section>
+            </section> */}
         </div>
     )
 }

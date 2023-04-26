@@ -115,6 +115,7 @@ export default function IntCoatings() {
                                 </div>
                             </div>
                         </div>
+                        <a href="/Contact" style={{margin: '0 auto'}} className="new-contact-btn">Contact Us</a>
                     </div>
 
                     <br className='extra-space' />

@@ -159,7 +159,7 @@ export default function TwoPC() {
 
                 <br className='extra-space' />
 
-                <div>
+                {/* <div>
                   <strong className='text-medium'>We'll help customers from all over get a paint correction on their vehicle, however, most of our customers come to our shop from these areas:</strong>
                   <div style={{ display: 'grid', placeItems: 'center' }}>
                     <ul className='cities-ul'>
@@ -179,7 +179,7 @@ export default function TwoPC() {
                       <li><a href='/correction/graham' className='aside-link'>Graham</a><FaMapMarkerAlt /></li>
                     </ul>
                   </div>
-                </div>
+                </div> */}
 
               </div>
             </div>
