@@ -7,6 +7,11 @@ import { BsFillArrowUpCircleFill } from 'react-icons/bs';
 import { RiCarWashingFill } from 'react-icons/ri';
 import { TbEngine } from 'react-icons/tb';
 
+import dynamic from "next/dynamic";
+const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
+  ssr: false,
+});
+
 const imagesArr = [
     '22039636-a6ef-4ea7-f9c0-12beaeb19900',
     'cfc9ecbb-fd60-40e5-988b-ecbe28ac3c00',
@@ -45,7 +50,7 @@ export default function PricingComponent({prices = props.prices, ceramic = false
                 </div>
                 <div className="addon-addbutton"></div>
                 <div className="addon-price">
-                    <strong>{item.cost[currVal]}</strong>
+                    <strong>${item.cost[currVal]}</strong>
                 </div>
             </div>
         ))
@@ -131,7 +136,14 @@ export default function PricingComponent({prices = props.prices, ceramic = false
             <div className="pricing__pricecard">
                 <p>Your Price Estimate:</p>
                 <div className='pricing__pricecard-container'>
-                    <strong className='pricing__pricecard-pricebox'><span className='pricing__pricecard-price'>${prices[currVal]}.99</span></strong>
+                    <strong className='pricing__pricecard-pricebox'>
+                        <span className='pricing__pricecard-price'>
+                            $
+                            <AnimatedNumbers includeComma animateToNumber={prices[currVal] + '.99'} configs={[
+                                { mass: 1, tension: 320, friction: 100 },
+                            ]}></AnimatedNumbers>
+                        </span>
+                    </strong>
                     <p>+Desired Add-ons <ImPointDown /></p>
                 </div>
             </div>

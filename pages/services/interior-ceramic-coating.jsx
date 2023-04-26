@@ -98,7 +98,7 @@ export default function IntCoatings() {
                         <div className='package-details-bkg'>
                             <div className='package-container-header'>
                                 <h2 className='coating-heading text-shadow'><span className='special-package'>Leather</span> Package</h2>
-                                <p>Price: <span className='pricing__pricecard-price'>$149.99</span></p>
+                                <p>Price: <span className='pricing__pricecard-price'>$150</span></p>
                             </div>
                             <div className='package-container'>
                                 <div className='package-details'>

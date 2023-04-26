@@ -2170,13 +2170,19 @@ hr {
 
 .pricing__pricecard-pricebox {
   background-color: var(--contact-bkg-lighter);
+  display: flex;
   padding: 1rem;
   border-radius: 16px;
+}
+
+.animated-container {
+  margin: 0 auto !important;
 }
 
 .pricing__pricecard-price {
   position: relative;
   font-size: 2.5rem;
+  display: flex;
 }
 
 .pricing__pricecard-container {

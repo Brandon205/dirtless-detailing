@@ -186,7 +186,7 @@ export default function ExtCoatings() {
                             </div>
                         </div>
 
-                        <PricingComponent prices={currPackage === 'Protect' ? ['949', '949', '1,099', '1,099', '1,249', '1,249'] : ['1,399', '1,399', '1,699', '1,699', '1,849', '1,849']} ceramic={true} />
+                        <PricingComponent prices={currPackage === 'Protect' ? ['949', '949', '1099', '1099', '1249', '1249'] : ['1399', '1399', '1699', '1699', '1849', '1849']} ceramic={true} />
                     </div>
                         
                     <div className="service-bkg-lighter" style={{paddingBottom: '2.5rem'}}>
@@ -194,16 +194,6 @@ export default function ExtCoatings() {
                             <strong className="above-heading">Further Reading</strong>
                         </div>
                         <main className="service-main general-container">
-                            {/* <div className="service-explain">
-                                <div className="text-left">
-                                    <h2 className='text-large'>What is a Ceramic Coating?</h2>
-                                    <p>It is the absolute best way to protect your vehicle from the harsh weather we experience in Bonney Lake. Back in the day, wax was the cutting edge choice to enhance your vehicle's shine. It also protected your paint from external elements like rain, bird poop, dirt, tree sap, etc.</p>
-                                    <p>Now, with modern day technology, we have a far more durable and superior form of protection: ceramic/graphene coatings.</p>
-                                    <p>Unlike wax, you can't just simply wipe it on and off. The ceramic coating adheres to the surface of the car and creates a semi-permanent barrier. It is frequently described as a "sacrificial" layer of protection. Rain, debris, and other weather conditions will be absorbed by it, better protecting the paint underneath.</p>
-                                    <p>As an analogy, think of the Three Little Pigs. No after wash product is like the straw house, wax is like the stick house, and ceramic coatings are like the brick house. Both the wax and ceramic offer protection from rain and dust, but one is far stronger.</p>
-                                </div>
-                                <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5b0798e5-2648-4845-168b-98e7ff013100/public')`}}></div>
-                            </div> */}
                             <div className="service-explain">
                                 <div className="text-left">
                                     <h2 className='text-large'>The benefits you get with a coating:</h2>

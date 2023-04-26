@@ -115,7 +115,7 @@ export default function Addons() {
             <p className="service-desc text-white">We will cover sensitive/electronic areas in the bay, clean wash, and then dress the engine bay to have it looking like new!</p>
             <div className='internal-links'>
               <a href="/services/dirtless-wash" className="readmore">Dirt-Less Wash</a>
-              <a href="/services/interior-exterior-detailing-combo" className="readmore">The Dirt-Less Combo</a>
+              <a href="/services/interior-exterior-detailing-combo" className="readmore">The Dirt-Less Detail</a>
             </div>
           </div>
         </div>
@@ -129,14 +129,14 @@ export default function Addons() {
             <p className="service-desc text-white">Get any small contaminants off of the car to give the paint an even smoother and cleaner shine.</p>
             <div className='internal-links'>
               <a href="/services/dirtless-wash" className="readmore">Dirt-Less Wash</a>
-              <a href="/services/interior-exterior-detailing-combo" className="readmore">The Dirt-Less Combo</a>
+              <a href="/services/interior-exterior-detailing-combo" className="readmore">The Dirt-Less Detail</a>
             </div>
           </div>
         </div>
         <hr className='contact-border' />
 
         <div className="feature-section" id="glass">
-          <GiCrystalShine className='feature-icon' />
+          <GiCarDoor className='feature-icon' />
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Glass Polishing</p>
             <p className="secondary-text"><span>$80/hour</span></p>
@@ -180,15 +180,32 @@ export default function Addons() {
         <hr className='contact-border' />
 
         <h3 className='addons-subheading' id='interior'>Interior Add-ons:</h3>
+
         <div className="feature-section" id="ozone">
-          <GiSmokeBomb className='feature-icon' />
+          <GiSteam className='feature-icon' />
           <div className="feature-desc-area">
-            <p className='service-heading-subtitle'>Ozone Treatment</p>
-            <p className="secondary-text"><span>$99.99</span></p>
-            <p className="service-desc text-white">Ozone treatment is the use of O3 (gas ozone) to remove bacteria, viruses, and odors from your vehicle. This can be added to any of our Interior cleanings when contacting us.</p>
+            <p className='service-heading-subtitle'>Steam Extraction</p>
+            <p className="secondary-text"><span>$35-$75</span></p>
+            <p className="service-desc text-white">A quick steam extraction is the best way to remove stains, spills, and embedded dirt that normal vacuuming can't get easily.</p>
             <div className='internal-links'>
               <a href="/services/full-interior-detail" className="readmore">Full Interior Cleaning</a>
               <a href="/services/biohazard-cleaning" className="readmore">Biohazard Cleaning</a>
+              <a href="/services/interior-exterior-detailing-combo" className="readmore">The Dirt-Less Detail</a>
+            </div>
+          </div>
+        </div>
+        <hr className='contact-border' />
+
+        <div className="feature-section" id="ozone">
+          <FaDog className='feature-icon' />
+          <div className="feature-desc-area">
+            <p className='service-heading-subtitle'>Pet Hair Removal</p>
+            <p className="secondary-text"><span>$50-$100</span></p>
+            <p className="service-desc text-white">Pet hair can be a pain to remove from carpets, luckily we have the tools to get the job done.</p>
+            <div className='internal-links'>
+              <a href="/services/full-interior-detail" className="readmore">Full Interior Cleaning</a>
+              <a href="/services/biohazard-cleaning" className="readmore">Biohazard Cleaning</a>
+              <a href="/services/interior-exterior-detailing-combo" className="readmore">The Dirt-Less Detail</a>
             </div>
           </div>
         </div>
@@ -200,6 +217,20 @@ export default function Addons() {
             <p className='service-heading-subtitle'>Headliners</p>
             <p className="secondary-text"><span>$40-$80</span></p>
             <p className="service-desc text-white">Headliners are tricky to clean and improper handling can cause them to sag, we'll pick the right products for the job to clean them while keeping them intact.</p>
+            <div className='internal-links'>
+              <a href="/services/full-interior-detail" className="readmore">Full Interior Cleaning</a>
+              <a href="/services/biohazard-cleaning" className="readmore">Biohazard Cleaning</a>
+            </div>
+          </div>
+        </div>
+        <hr className='contact-border' />
+
+        <div className="feature-section" id="ozone">
+          <GiSmokeBomb className='feature-icon' />
+          <div className="feature-desc-area">
+            <p className='service-heading-subtitle'>Ozone Treatment</p>
+            <p className="secondary-text"><span>$99.99</span></p>
+            <p className="service-desc text-white">Ozone treatment is the use of O3 (gas ozone) to remove bacteria, viruses, and odors from your vehicle. This can be added to any of our Interior cleanings when contacting us.</p>
             <div className='internal-links'>
               <a href="/services/full-interior-detail" className="readmore">Full Interior Cleaning</a>
               <a href="/services/biohazard-cleaning" className="readmore">Biohazard Cleaning</a>

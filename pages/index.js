@@ -210,7 +210,7 @@ export default function Home() {
                                 <div className='review-bottom'>
                                     <div style={{ textAlign: 'left' }}>
                                         <strong className='name text-shadow'>Kristi H.</strong>
-                                        <p className='services-p'>The Dirt-Less Combo</p>
+                                        <p className='services-p'>The Dirt-Less Detail</p>
                                     </div>
                                     <div className='google-review'>
                                         <FcGoogle />
@@ -227,7 +227,7 @@ export default function Home() {
                                 <div className='review-bottom'>
                                     <div style={{ textAlign: 'left' }}>
                                         <strong className='name text-shadow'>Rob B.</strong>
-                                        <p className='services-p'>The Dirt-Less Combo</p>
+                                        <p className='services-p'>The Dirt-Less Detail</p>
                                     </div>
                                     <div className='google-review'>
                                         <FaFacebook className='facebook-logo' />
