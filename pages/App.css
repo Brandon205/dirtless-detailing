@@ -1051,7 +1051,7 @@ option {
   border: 2px solid #55595d;
   font-size: 1.2em;
   border-radius: 50%;
-  padding: 0.8rem 1rem;
+  padding: 1rem 1rem;
   cursor: pointer;
 }
 
@@ -1065,7 +1065,7 @@ option {
 .review-card {
   display: flex;
   flex-direction: column;
-  background-color: black;
+  background-color: white;
   font-size: 1.2em;
   max-width: 700px;
   padding: 1rem;
@@ -1084,6 +1084,7 @@ option {
 
 .review-text {
   font-style: italic;
+  color: black;
   font-size: 0.9em;
   line-height: 1.2;
   font-weight: 500;
@@ -1092,12 +1093,8 @@ option {
 }
 
 .review-card:hover>.lower-review>.review-top>.review-text {
-  color: white;
+  color: black;
 }
-
-/* .review-text:hover {
-  color: white;
-} */
 
 .review-bottom {
   display: flex;
@@ -1117,11 +1114,12 @@ option {
 .name {
   font-size: 1.3em;
   font-weight: 500;
+  color: black;
 }
 
 .services-p {
   margin: 0 0 1rem 0;
-  color: #c0c0c0;
+  color: #575757;
 }
 
 .highlight {
@@ -1131,41 +1129,26 @@ option {
 
 .star-review {
   text-decoration: none;
+  font-size: 18px;
   margin: 0;
   font-size: 1.2em;
   color: gold;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .google-review {
   display: flex;
   align-items: center;
-  background-color: var(--contact-bkg);
+  gap: 0.5rem;
+  background-color: #D9D9D9;
   border-radius: 1rem;
   padding: 0 1rem;
-  box-shadow: 1px 5px 5px black;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
 }
 
 .facebook-logo {
   color: #4267B2;
 }
-
-/* .review-carousel {
-  user-select: none;
-  padding: 2em;
-  font-size: 1.25rem;
-  line-height: 1.75;
-  width: 100vw;
-  padding: 0 5vw;
-} */
-
-/* .review-carousel div {
-  padding: 2rem 0;
-} */
-
-/* .reviewer {
-  font-size: 1.25em;
-  font-weight: bold;
-} */
 
 .mobileservices-container {
   width: 100%;
@@ -2777,6 +2760,10 @@ hr {
 
   .review-bottom {
     flex-direction: row;
+  }
+
+  .review-text {
+    color: #575757;
   }
 
   .map {

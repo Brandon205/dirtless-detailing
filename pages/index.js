@@ -150,7 +150,7 @@ export default function Home() {
 
             <div className='service-bkg-lighter'>
                 <div className="reviews-container">
-                    <Carousel className="review-carousel" selectedItem={currentSlide} autoPlay centerSlidePercentage={50} centerMode={smallScreen ? false : true} style={styles} infiniteLoop stopOnHover showThumbs={false} showArrows interval={6000} emulateTouch>
+                    <Carousel className="review-carousel" selectedItem={currentSlide} autoPlay={smallScreen ? false : true} centerSlidePercentage={50} centerMode={smallScreen ? false : true} style={styles} infiniteLoop stopOnHover showThumbs={false} showArrows interval={6000} emulateTouch>
                         <div className='review-card'>
                             <div className='lower-review'>
                                 <div className='review-top'>
@@ -158,12 +158,12 @@ export default function Home() {
                                 </div>
                                 <div className='review-bottom'>
                                     <div style={{ textAlign: 'left' }}>
-                                        <strong className='name text-shadow'>Darren B.</strong>
+                                        <strong className='name'>Darren B.</strong>
                                         <p className='services-p'>Interior Detail</p>
                                     </div>
                                     <div className='google-review'>
                                         <FaFacebook className='facebook-logo' />
-                                        <p className='star-review text-shadow'>★★★★★</p>
+                                        <p className='star-review'>★★★★★</p>
                                     </div>
                                 </div>
                             </div>
@@ -175,12 +175,12 @@ export default function Home() {
                                 </div>
                                 <div className='review-bottom'>
                                     <div style={{ textAlign: 'left' }}>
-                                        <strong className='name text-shadow'>Jonathon H.</strong>
+                                        <strong className='name'>Jonathon H.</strong>
                                         <p className='services-p'>Interior Detail</p>
                                     </div>
                                     <div className='google-review'>
                                         <FcGoogle />
-                                        <p className='star-review text-shadow'>★★★★★</p>
+                                        <p className='star-review'>★★★★★</p>
                                     </div>
                                 </div>
                             </div>
@@ -192,12 +192,12 @@ export default function Home() {
                                 </div>
                                 <div className='review-bottom'>
                                     <div style={{ textAlign: 'left' }}>
-                                        <strong className='name text-shadow'>Trisha C.</strong>
+                                        <strong className='name'>Trisha C.</strong>
                                         <p className='services-p'>Interior + Extraction</p>
                                     </div>
                                     <div className='google-review'>
                                         <FaFacebook className='facebook-logo' />
-                                        <p className='star-review text-shadow'>★★★★★</p>
+                                        <p className='star-review'>★★★★★</p>
                                     </div>
                                 </div>
                             </div>
@@ -209,12 +209,12 @@ export default function Home() {
                                 </div>
                                 <div className='review-bottom'>
                                     <div style={{ textAlign: 'left' }}>
-                                        <strong className='name text-shadow'>Kristi H.</strong>
+                                        <strong className='name'>Kristi H.</strong>
                                         <p className='services-p'>The Dirt-Less Detail</p>
                                     </div>
                                     <div className='google-review'>
                                         <FcGoogle />
-                                        <p className='star-review text-shadow'>★★★★★</p>
+                                        <p className='star-review'>★★★★★</p>
                                     </div>
                                 </div>
                             </div>
@@ -226,12 +226,12 @@ export default function Home() {
                                 </div>
                                 <div className='review-bottom'>
                                     <div style={{ textAlign: 'left' }}>
-                                        <strong className='name text-shadow'>Rob B.</strong>
+                                        <strong className='name'>Rob B.</strong>
                                         <p className='services-p'>The Dirt-Less Detail</p>
                                     </div>
                                     <div className='google-review'>
                                         <FaFacebook className='facebook-logo' />
-                                        <p className='star-review text-shadow'>★★★★★</p>
+                                        <p className='star-review'>★★★★★</p>
                                     </div>
                                 </div>
                             </div>
@@ -243,12 +243,12 @@ export default function Home() {
                                 </div>
                                 <div className='review-bottom'>
                                     <div style={{ textAlign: 'left' }}>
-                                        <strong className='name text-shadow'>Jennifer D.</strong>
+                                        <strong className='name'>Jennifer D.</strong>
                                         <p className='services-p'>Interior + Extraction</p>
                                     </div>
                                     <div className='google-review'>
                                         <FcGoogle />
-                                        <p className='star-review text-shadow'>★★★★★</p>
+                                        <p className='star-review'>★★★★★</p>
                                     </div>
                                 </div>
                             </div>
@@ -258,7 +258,7 @@ export default function Home() {
                         <div className='carousel-button' onClick={() => back()}><MdOutlineArrowBackIos /></div>
                         <div className='carousel-button' onClick={() => next()}><MdOutlineArrowForwardIos /></div>
                     </div>
-                    <p style={{ margin: 0, padding: '1rem 0' }}>Check out more reviews on our <a style={{ color: 'blue' }} target='_blank' rel='noopener' href="https://www.facebook.com/DirtLessDetailing/reviews">Facebook</a> or <a style={{ color: 'blue' }} target='_blank' rel='noopener' href="https://www.google.com/search?client=firefox-b-1-d&q=dirtlessdetailing+&dlnr=1&sei=Lhr1Y8_hCsz99AP82ZLACQ#dlnr=1&lrd=0x5490fbac5ad417c7:0x110d16ccf06cd4a2,1,,,,">Google</a> page.</p>
+                    <p style={{ margin: 0, padding: '1rem 0' }}>Check out more reviews on our <a style={{ color: 'dodgerblue' }} target='_blank' rel='noopener' href="https://www.facebook.com/DirtLessDetailing/reviews">Facebook</a> or <a style={{ color: 'dodgerblue' }} target='_blank' rel='noopener' href="https://www.google.com/localservices/prolist?g2lbs=ADZRdktLAaGKKobG3aZn2_Qd9tpM-f3ifTKQp4hXsZnMmVk1USpK7Ha4kZIeLdSCTp26Z3uD8UBdDwRY7Zqn7XZatg-9z1GI86mqJXoiFQCA1rCg0Vis_yQK9JiR9qrRMObWwAegw9aPUbKd01T05_4R3o4ry_qhHA%3D%3D&hl=en-US&gl=us&cs=1&ssta=1&q=dirtless%20detailing&oq=dirtless%20detailing&slp=MgA6HENoTUlxZVd0Nkl2SV9nSVY2UTZ0QmgyZWJnaVJSAggCYAB6-gFDaEprYVhKMGJHVnpjeUJrWlhSaGFXeHBibWRJNnZqVDFhcTRnSUFJV2h3UUFCQUJHQUFZQVNJU1pHbHlkR3hsYzNNZ1pHVjBZV2xzYVc1bmtnRVZZMkZ5WDJSbGRHRnBiR2x1WjE5elpYSjJhV05sbWdFa1EyaGtSRk5WYUU1TlJ6bHVVekJXU2xFd1JtNVRWVkpEV2pKYVNHTnVhRzVTVWtGQ3FnRTZFQUV5SGhBQklocEZwOXktNVEwdWdLbGRqT2pnOEdvLWlaQlZ5NUdlSjh3QjV6SVdFQUlpRW1ScGNuUnNaWE56SUdSbGRHRnBiR2x1Wi1BQkFBkgG0AgoNL2cvMTFzYnBjOV8zYgoNL2cvMTFmcDJwN3dtbgoNL2cvMTFrMndndnhyegoNL2cvMTFzbXZfbm13MQoLL2cvMXRmM2I3bHQKDS9nLzExZ2w0dDJkY20KDC9nLzEyNjBieGxoNgoNL2cvMTFwMTN5MnQ4cQoNL2cvMTFjbnpuX3p3agoNL2cvMTFqcTlwcGtfNwoNL2cvMTFneTRsejU5aAoNL2cvMTF0ZDhjN195NQoNL2cvMTFrNDVzNzVmcwoNL2cvMTFnMnhjbHBxMwoNL2cvMTFzNTFrN2YzdAoNL2cvMTFzM2YwMHZzcAoML2cvMTFnem44M3diCg0vZy8xMW5uMGhzanF2Cg0vZy8xMWZxcXoxdmdwCg0vZy8xMXQ0ZmprMDltEgQSAggBEgQKAggB&src=2&spp=Cg0vZy8xMXNicGM5XzNiOtABV2h3UUFCQUJHQUFZQVNJU1pHbHlkR3hsYzNNZ1pHVjBZV2xzYVc1bmtnRVZZMkZ5WDJSbGRHRnBiR2x1WjE5elpYSjJhV05sbWdFa1EyaGtSRk5WYUU1TlJ6bHVVekJXU2xFd1JtNVRWVkpEV2pKYVNHTnVhRzVTVWtGQ3FnRTZFQUV5SGhBQklocEZwOXktNVEwdWdLbGRqT2pnOEdvLWlaQlZ5NUdlSjh3QjV6SVdFQUlpRW1ScGNuUnNaWE56SUdSbGRHRnBiR2x1Wnc9PQ%3D%3D&serdesk=1&lrlstt=1682530844021&ved=2ahUKEwiSvKHoi8j-AhWfHjQIHT0kD2MQvS56BAgwEAE&scp=ChpnY2lkOmNhcl9kZXRhaWxpbmdfc2VydmljZRJgEhIJeUAf2e38kFQRVTQwKEuFSMMiMkRpcnQtTGVzcyBEZXRhaWxpbmcsIDkzMDUgMjA1dGggQXZlIEUsIEJvbm5leSBMYWtlKhQNCAEeHBXFWjC3HQgBHhwlxVowtzAAGhJkaXJ0bGVzcyBkZXRhaWxpbmciEmRpcnRsZXNzIGRldGFpbGluZyoVQ2FyIGRldGFpbGluZyBzZXJ2aWNl#ts=3">Google</a> page.</p>
                 </div>
             </div>
 
