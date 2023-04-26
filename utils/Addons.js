@@ -39,7 +39,7 @@ const addons = {
         name: 'Clay Bar',
         icon: 'claybar',
         desc: "Get any small contaminants off of the car to give the paint an even smoother and cleaner shine.",
-        cost: ['$50', '$50', '$50', '$50', '$75', '$75']
+        cost: ['$35', '$35', '$50', '$50', '$75', '$75']
     },
     'glass': {
         name: 'Glass Polishing',
@@ -48,7 +48,7 @@ const addons = {
         cost: ['$80/hour', '$80/hour', '$80/hour', '$80/hour', '$80/hour', '$80/hour']
     },
     'waterspot': {
-        name: 'Waterspot/Overspray Removal',
+        name: 'Waterspot / Overspray Removal',
         icon: 'waterspot',
         desc: "Remove all overspray and waterspots we safely can.",
         cost: ['$80/hour', '$80/hour', '$80/hour', '$80/hour', '$80/hour', '$80/hour']

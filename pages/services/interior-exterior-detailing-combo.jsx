@@ -119,7 +119,7 @@ export default function Combo() {
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
 
-              <PricingComponent prices={['299', '299', '349', '349', '399', '399']} addons={[addons.extraction, addons.hair, addons.headliners, addons.fabric, addons.leather, addons.ozone, addons.glass, addons.waterspot]} />
+              <PricingComponent prices={['299', '299', '349', '349', '399', '399']} addons={[addons.extraction, addons.hair, addons.headliners, addons.fabric, addons.leather, addons.ozone, addons.claybar, addons.glass, addons.waterspot]} />
             </div>
             <div className="service-bkg-lighter">
               <div style={{paddingBottom: '3rem'}} className="general-container new-heading-container">
@@ -129,13 +129,13 @@ export default function Combo() {
               <div className="general-container">
                 <div className="mini-grid">
                   <Zoom>
-                    <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c537680c-f103-4032-65e3-11370c73d300/public')`, width: 400 + 'px', height: 50 + 'vh'}}></div>
+                    <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c537680c-f103-4032-65e3-11370c73d300/public')`}}></div>
                   </Zoom>
                   <Zoom>
-                    <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/42b27e69-bb43-40d4-55c0-4be942f7a300/public')`, width: 400 + 'px', height: 50 + 'vh'}}></div>
+                    <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/42b27e69-bb43-40d4-55c0-4be942f7a300/public')`}}></div>
                   </Zoom>
                   <Zoom>
-                    <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6fb3a112-d77a-41fb-e7ec-728b2185b600/public')`, width: 400 + 'px', height: 50 + 'vh'}}></div>
+                    <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6fb3a112-d77a-41fb-e7ec-728b2185b600/public')`}}></div>
                   </Zoom>
                 </div>
               </div>

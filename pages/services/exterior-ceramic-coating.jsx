@@ -111,7 +111,7 @@ export default function ExtCoatings() {
                     <div className='package-details-container'>
                         <div className='package-details-top'>
                             <h2 style={{fontSize: '3rem', margin: '0 0 1rem 0'}}>Our Ceramic Coating Packages</h2>
-                            <p>Ceramic coatings are liquid polymers that chemically bond with a vehicle's exterior to create a hard, protective layer. This layer resists damage from UV rays, oxidation, light scratches, and contaminants, providing long-lasting protection and a high-gloss finish.</p>
+                            <p>Ceramic coatings are nano chemicals that chemically bond with a vehicle's exterior to create a hard, protective layer. This layer resists damage from UV rays, oxidation, light scratches, and contaminants, providing long-lasting protection and a high-gloss finish.</p>
                         </div>
 
                         <div className='package-details-bkg'>
@@ -189,7 +189,7 @@ export default function ExtCoatings() {
                         <PricingComponent prices={currPackage === 'Protect' ? ['949', '949', '1,099', '1,099', '1,249', '1,249'] : ['1,399', '1,399', '1,699', '1,699', '1,849', '1,849']} ceramic={true} />
                     </div>
                         
-                    <div className="service-bkg-lighter">
+                    <div className="service-bkg-lighter" style={{paddingBottom: '2.5rem'}}>
                         <div className="general-container new-heading-container">
                             <strong className="above-heading">Further Reading</strong>
                         </div>
@@ -288,7 +288,7 @@ export default function ExtCoatings() {
                                 </div>
                                 <ul className='faq-ul'>
                                     <li className='faq-li'>How long does it last?</li>
-                                    <li className='faq-p'>The paint coating should last 5 years, 50,000 miles, or a Lifetime<span className='special-package'>*</span> with our warranty. The coating on any trim, glass, lights, or wheels will last 1 year approximately.</li>
+                                    <li className='faq-p'>The paint coating should last 2-5 years, 50,000 miles, or a Lifetime<span className='special-package'>*</span> with our warranty. The coating on any trim, glass, lights, or wheels will last 1 year approximately.</li>
 
                                     <li className='faq-li'>Can I still go through car washes?</li>
                                     <li className='faq-p'>If you want to keep the ceramic coat in good condition and have it last as long as possible, you won't want to go through any car washes even the touch-less ones.</li>
@@ -297,14 +297,14 @@ export default function ExtCoatings() {
                                     <li className='faq-p'>For washing your coated vehicle you have a couple of options. We recommend scheduling monthly maintenance through us especially if you get our Protect+ Package. Or we can give you a run down on our techniques and recommend you some products to use to prolong the life of your ceramic coating!</li>
 
                                     <li className='faq-li'>How does the 5 year warranty work?</li>
-                                    <li className='faq-p'>If we do our yearly maintenance on the vehicle we guarantee that the ceramic coat will last 5 years or more.</li>
+                                    <li className='faq-p'>For the 2 year (Protect) or the 5 year (Protect+) coating warranty, you will have to get our Ceramic Maintenance Package every 6 months to 1 year.</li>
 
                                     <li className='faq-li'>How does the Lifetime warranty work?</li>
-                                    <li className='faq-p'>Your vehicles paint coating is guaranteed for life as long as you are on our monthly maintenance schedule. If you ever wish to cancel monthly maintenance, the remainder of your 5 year 50,000 mile warranty you had before takes effect.</li>
+                                    <li className='faq-p'>For the Lifetime (Protect+) warranty your vehicle needs to be on our Monthly Maintenance Program.<br /> *Feel free to ask us for more information on either of our Ceramic Maintenance Packages!</li>
                                 </ul>
                             </div>
-                            <a href="/Contact" className="new-contact-btn">Contact Us</a>
                         </main>
+                        <a href="/Contact" className="new-contact-btn">Contact Us</a>
                     </div>
                     
                 { /*

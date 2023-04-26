@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { GiPoliceBadge, GiSteam, GiCarDoor, GiFallingRocks, GiSmokeBomb, GiCarSeat, GiRolledCloth } from 'react-icons/gi';
 import { AiFillClockCircle, AiFillCalendar } from 'react-icons/ai';
 import { FaDog } from 'react-icons/fa';
-import { HiInformationCircle } from 'react-icons/hi';
+import { ImPointDown } from 'react-icons/im';
 import { BsFillArrowUpCircleFill } from 'react-icons/bs';
 import { RiCarWashingFill } from 'react-icons/ri';
 import { TbEngine } from 'react-icons/tb';
@@ -32,7 +32,7 @@ const iconArr = {
 
 {/* <PricingComponent title='Ceramic Coating' prices={['949', '949', '1099', '1099', '1249', '1249']} addons={[{}]} labels={['label1', 'label2', 'needs to have 6 labels...']} /> */}
 export default function PricingComponent({prices = props.prices, ceramic = false, addons = [], labels = ['2-Door Cars', 'Quarter Ton Trucks', '4-Door Cars', "Mid-Size SUV's", '4-Door Trucks', "3-Row SUV's, Minivans"]}) {
-    const [currVal, setCurrVal] = useState(0);
+    const [currVal, setCurrVal] = useState(2);
 
     let content = '';
     if (addons.length > 0) {
@@ -117,7 +117,7 @@ export default function PricingComponent({prices = props.prices, ceramic = false
         <div className='pricing__container'>
             <div className="pricing__img" style={{backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/${imagesArr[currVal]}/cover)`}}></div>
             <div className='pricing__range-container'>
-                <input className='pricing__range' type="range" defaultValue='1' name="size" id="size" min='1' max='6' steps='1' list="values" onChange={(e) => setCurrVal(e.target.value - 1)} />
+                <input className='pricing__range' type="range" value={currVal + 1} name="size" id="size" min='1' max='6' steps='1' list="values" onChange={(e) => setCurrVal(e.target.value - 1)} />
                 <ul className='pricing__labels'>
                     <li className={`${currVal > 0 ? 'pricing__active' : ''} ${currVal === 0 ? 'pricing__selected' : ''}`}>{labels[0]}</li>
                     <li className={`${currVal > 1 ? 'pricing__active' : ''} ${currVal === 1 ? 'pricing__selected' : ''}`}>{labels[1]}</li>
@@ -130,7 +130,10 @@ export default function PricingComponent({prices = props.prices, ceramic = false
 
             <div className="pricing__pricecard">
                 <p>Your Price Estimate:</p>
-                <strong><span className='pricing__pricecard-price'>${prices[currVal]}.99</span></strong>
+                <div className='pricing__pricecard-container'>
+                    <strong className='pricing__pricecard-pricebox'><span className='pricing__pricecard-price'>${prices[currVal]}.99</span></strong>
+                    <p>+Desired Add-ons <ImPointDown /></p>
+                </div>
             </div>
 
             <hr className="pricing__hr" />

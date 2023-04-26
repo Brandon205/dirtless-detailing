@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import { MdOutlinePermPhoneMsg } from 'react-icons/md';
+import { TbEngine } from 'react-icons/tb';
 
 export default function Addons() {
   return (
@@ -103,12 +104,25 @@ export default function Addons() {
 
         <h3 className='addons-subheading' id='exterior'>Exterior Add-ons:</h3>
         <div className="feature-section" id="engine">
-          <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/8ae09f8b-9ace-4f48-265a-5ac051eaf400/public')`}}></div>
-
+          {/* <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/8ae09f8b-9ace-4f48-265a-5ac051eaf400/public')`}}></div> */}
+          {/* <TbEngine className='feature-icon' /> */}
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Engine Bay Cleaning</p>
             <p className="secondary-text"><span>$79.99</span></p>
             <p className="service-desc text-white">We will cover sensitive/electronic areas in the bay, clean and wash, then dress the engine bay to have it looking like new!</p>
+            <div className='internal-links'>
+              <a href="/services/dirtless-wash" className="readmore">Dirt-Less Wash</a>
+            </div>
+          </div>
+        </div>
+        <hr className='contact-border' />
+
+        <div className="feature-section" id="engine">
+          <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/8ae09f8b-9ace-4f48-265a-5ac051eaf400/public')`}}></div>
+          <div className="feature-desc-area">
+            <p className='service-heading-subtitle'>Clay Bar Treatment</p>
+            <p className="secondary-text"><span>$35-$75</span></p>
+            <p className="service-desc text-white">Get any small contaminants off of the car to give the paint an even smoother and cleaner shine.</p>
             <div className='internal-links'>
               <a href="/services/dirtless-wash" className="readmore">Dirt-Less Wash</a>
             </div>
@@ -146,6 +160,7 @@ export default function Addons() {
         <hr className='contact-border' />
 
         <div className="feature-section" id="debadge">
+
           <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/8e6cf3a2-f7da-4ce0-7bd7-00b002b22500/public')`}}></div>
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Debadging</p>
