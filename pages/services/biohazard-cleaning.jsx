@@ -114,10 +114,10 @@ export default function Bio() {
             <p>Our biohazard cleaning methods can bring out even the toughest messes!</p>
             <div style={{display: 'grid'}} className='place-center'>
               <div className='slider-container'>
-                <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/67382b57-6f54-45bd-91df-651bbdcfb900/public')`}} className='slider-img'></div>
-                <div style={{width: 0 + slide + '%', backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/93875803-3ca1-455f-d927-bfae9928d000/public')`}} className='slider-img foreground'></div>
+                <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d09c52dc-c233-4cbd-c347-07de1c945d00/public')`}} className='slider-img'></div>
+                <div style={{width: 0 + slide + '%', backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/becac15f-105d-47fe-e372-643278009900/public')`}} className='slider-img foreground'></div>
                 <input type="range" min="1" max="100" value={slide} onChange={(e) => setSlide(Number(e.target.value))} className="slider-bar" name='slider' id="slider" />
-                <div style={{left: slide - 2.7 + '%'}} className="slider-button"></div>
+                <div style={{left: slide - 4 + '%'}} className="slider-button"></div>
               </div>
             </div>
 
@@ -129,9 +129,9 @@ export default function Bio() {
               <div className="pricing-container">
                 <div className="pricing-card text-black">
                   <h5>Biohazard Cleaning</h5>
-                  <p>A complete cleaning of the interior vehicle with extra steps to remove hazardous materials.</p>
-                  <p>Check <a href="/services/full-interior-detail" className='aside-link'>here</a> for our Interior Detail Pricing</p>
-                  <div>
+                  <p>A complete <a href="/services/full-interior-detail" className='aside-link'>full interior detailing</a> (included) to clean the vehicle completely.</p>
+                  <p>Extra steps to clean the biohazard whether that be odor, mold, or spills.</p>
+                  <div style={{display: 'flex', alignItems: 'center'}}>
                     <strong className='size'>Any Size Vehicle</strong>
                     <div style={{display: 'flex', flexDirection: 'column'}}>
                       <p style={{paddingBottom: 0}} className="pricing-price">$499<span className='ninety-nine'>99</span>-</p>
@@ -140,6 +140,7 @@ export default function Bio() {
                   </div>
                 </div>
               </div>
+              <a href="/Contact" className="new-contact-btn">Contact Us</a>
               <br className='extra-space' />
             </div>
 

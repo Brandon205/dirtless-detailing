@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { GiPoliceBadge, GiSteam, GiCarDoor, GiFallingRocks, GiSmokeBomb, GiCarSeat, GiRolledCloth } from 'react-icons/gi';
 import { AiFillClockCircle, AiFillCalendar } from 'react-icons/ai';
 import { FaDog } from 'react-icons/fa';
+import { HiInformationCircle } from 'react-icons/hi';
 import { BsFillArrowUpCircleFill } from 'react-icons/bs';
 import { RiCarWashingFill } from 'react-icons/ri';
 import { TbEngine } from 'react-icons/tb';
@@ -154,6 +155,7 @@ export default function PricingComponent({prices = props.prices, ceramic = false
                 {content}
                 {ceramicContent}
             </div>
+            <a href="/Contact" className="new-contact-btn">Contact Us</a>
         </div>
     )
 }

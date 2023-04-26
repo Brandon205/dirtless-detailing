@@ -168,7 +168,7 @@ export default function ExtCoatings() {
                             <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a2d79f4f-82e7-488d-deaf-7b0f7136a400/public')`}} className='slider-img'></div>
                             <div style={{width: 0 + slide + '%', backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d80fdd8a-40cd-4481-91cf-c80025e68a00/public')`}} className='slider-img foreground'></div>
                             <input type="range" min="1" max="100" value={slide} onChange={(e) => setSlide(Number(e.target.value))} className="slider-bar" name='slider' id="slider" />
-                            <div style={{left: slide - 2.7 + '%'}} className="slider-button"></div>
+                            <div style={{left: slide - 4 + '%'}} className="slider-button"></div>
                         </div>
                     </div>
 

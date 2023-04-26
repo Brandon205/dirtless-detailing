@@ -113,9 +113,9 @@ export default function DLWash() {
             <div style={{display: 'grid'}} className='place-center'>
               <div className='slider-container'>
                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/1c18d7f5-2339-40b8-289f-18625dbee300/public')`}} className='slider-img'></div>
-                <div style={{width: 0 + slide + '%', backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/fcc7d28d-1e01-4139-7e73-c7ef6ebe2f00/public')`}} className='slider-img foreground'></div>
+                <div style={{width: 0 + slide + '%', backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4ba5023b-8340-4cc5-baa0-6738a31b7100/public')`}} className='slider-img foreground'></div>
                 <input type="range" min="1" max="100" value={slide} onChange={(e) => setSlide(Number(e.target.value))} className="slider-bar" name='slider' id="slider" />
-                <div style={{left: slide - 2.7 + '%'}} className="slider-button"></div>
+                <div style={{left: slide - 4 + '%'}} className="slider-button"></div>
               </div>
             </div>
 

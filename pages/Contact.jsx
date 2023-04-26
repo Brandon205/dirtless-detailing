@@ -601,13 +601,14 @@ export default function Contact() {
                     </div>
 
                     <div className="form-section">
-                        <p className="form-section-heading">Maintenance Options <a href='/services/exterior-ceramic-coating' className='aside-link'><BiLinkExternal /></a></p>
+                        <p className="form-section-heading">VIP Options <a href='/services/exterior-ceramic-coating' className='aside-link'><BiLinkExternal /></a></p>
+                        <p style={{ marginTop: 0 }}>(For Ceramic Coating Maintenance)</p>
                         <div>
                             <input type="checkbox" name="monthly" id='monthly' className='checkbox-input' />
-                            <label htmlFor="monthly" className='checkbox-label'>Monthly Maintenance <span className='special-package italic'>($130-$190)</span></label>
+                            <label htmlFor="monthly" className='checkbox-label'>Monthly VIP <span className='special-package italic'>($130-$190)</span></label>
 
                             <input type="checkbox" name="yearly" id='yearly' className='checkbox-input' />
-                            <label htmlFor="yearly" className='checkbox-label'>Yearly Maintenance <span className='special-package italic'>($200-$300)</span></label>
+                            <label htmlFor="yearly" className='checkbox-label'>Yearly VIP <span className='special-package italic'>($200-$300)</span></label>
                         </div>
                     </div>
 

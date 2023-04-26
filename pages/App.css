@@ -180,6 +180,40 @@ img {
   background-color: var(--main-clr)
 }
 
+.new-contact-btn {
+  font-size: 1.25em;
+  font-weight: 500;
+  padding: 0.75em 2em;
+  border-radius: 100px;
+  background-color: var(--main-clr);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.25s;
+}
+
+.new-contact-btn:hover {
+  background-color: #d34103;
+  box-shadow: 0px 2px 5px black;
+}
+
+/* .new-contact-btn {
+  font-size: 1.25em;
+  font-weight: 400;
+  padding: 0.75em 1.75em;
+  border: 2px solid white;
+  border-radius: 100px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.new-contact-btn:hover {
+  background-color: #c83e033d;
+  border: 2px solid darkgray;
+} */
+
 /** Navigation CSS **/
 nav {
   width: 100%;
@@ -2183,7 +2217,7 @@ hr {
 .service-bkg {
   background: #212327;
   color: white;
-  padding-top: 2rem;
+  padding: 2rem 0;
 }
 
 .service-bkg-lighter {
