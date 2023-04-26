@@ -95,7 +95,6 @@ export default function MyApp({ Component, pageProps }) {
                             <li className='menu-li'>
                                 <a href="/" className='menu-link'><FaHome /> Home</a>
                             </li>
-                            {/* <hr className="nav-hr" /> */}
 
                             <li style={{ position: 'relative' }}>
                                 <div className='menu-li' onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('services')}><MdLocalOffer /> All Services</div>
