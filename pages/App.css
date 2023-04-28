@@ -38,7 +38,7 @@ section {
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 div [data-rmiz-modal-overlay="visible"] {
@@ -113,14 +113,16 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
   gap: 0.5rem;
   padding: 0.75rem;
-  font-size: 1.5rem;
   text-decoration: none;
   background-color: var(--main-clr);
   color: white;
   border: 2px solid var(--main-clr);
-  border-radius: 0.5rem;
+  border-radius: 100px;
   margin: 0 auto;
   transition: 0.5s;
   max-width: 260px;
@@ -223,7 +225,7 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--nav-bkg-clr);
+  background-color: var(--contact-bkg);
 }
 
 li span {
@@ -237,7 +239,7 @@ li span {
   width: 350px;
   height: 90vh;
   line-height: 2.5;
-  background-color: var(--nav-bkg-clr);
+  background-color: var(--contact-bkg);
   top: 105px;
   right: 0;
   overflow: scroll;
@@ -317,7 +319,7 @@ header h1 {
 
 .home-header {
   position: relative;
-  color: white;
+  /* background-color: var(--contact-bkg) */
 }
 
 .landing-div {
@@ -325,7 +327,7 @@ header h1 {
   flex-direction: column;
   align-items: center;
   font-size: 0.9rem;
-  padding-top: 1.5rem;
+  padding-top: 105px;
   min-height: 90vh;
 }
 
@@ -334,6 +336,11 @@ header h1 {
   flex-direction: column;
   align-items: center;
   margin-top: 1rem;
+  background-color: #41444ac4;
+  border: 2px solid #d9d9d9;
+  padding: 2em;
+  color: white;
+  border-radius: 32px;
 }
 
 .header-icons-container div {
@@ -342,9 +349,17 @@ header h1 {
   grid-template-columns: auto auto;
   grid-template-areas: "icon desc"
     "icon myspan";
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   width: 190px;
   text-align: left;
+}
+
+.header-icons-container a {
+  color: black;
+  padding: 1em 2em;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 16px;
 }
 
 .header-icon {
@@ -355,7 +370,7 @@ header h1 {
 }
 
 .header-desc {
-  font-size: 2em;
+  font-size: 1.8em;
   margin: 0;
   display: inline;
   grid-area: desc
@@ -366,11 +381,27 @@ header h1 {
   grid-area: myspan
 }
 
-.title-top {
+/* .title-top {
   margin-top: 4.5rem;
   font-size: 2.5em;
   font-weight: 300;
   color: var(--heading-clr1);
+} */
+
+.main-title {
+  font-size: 4em;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+.main-title span {
+  display: block;
+  padding: 0;
+  margin: 0;
+  line-height: 90%;
+  color: var(--main-clr);
 }
 
 .title-bottom {
@@ -386,6 +417,8 @@ header h1 {
   background-size: cover;
   height: 90vh;
   width: 100%;
+  /* margin: 0 auto;
+  border-radius: 32px; */
   z-index: -5;
 }
 
@@ -920,14 +953,13 @@ option {
   line-height: 1.5;
 }
 
-.otherservices-container {
+.otherservices-container {}
+
+.otherservices-container-div {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  /* flex: 1; */
   gap: 0.5rem;
-}
-
-.otherservices-container h1 {
   font-size: 2em;
   text-decoration: underline;
 }
@@ -2633,7 +2665,6 @@ hr {
   }
 
   .landing-div {
-    padding-left: 1.5rem;
     justify-content: space-around;
     align-items: center;
     height: 90vh;

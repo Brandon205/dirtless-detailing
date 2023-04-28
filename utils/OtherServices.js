@@ -3,52 +3,54 @@ import React from 'react';
 export default function OtherServices() {
     return (
         <div>
-            <div className='separator-container'>
-                <h2 className='service-title'>CERAMIC COATING <span className='new-offer'>NEW</span></h2>
-            </div>
+            {/* <div className='separator-container'>
+            </div> */}
             <section className="otherservices-container">
-                <div className="service-card">
-                    <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3e71dbba-b8c6-4c21-7d4c-edc497331100/public')` }}></div>
-                    <div className="otherservices-desc">
-                        <div>
-                            <a href='/services/interior-ceramic-coating' className='service-heading-link'>Interior Ceramic Coatings</a>
-                            <p className="secondary-text">Starting at: <span>$75</span></p>
-                        </div>
-                        <p className="service-desc">Did you know you could ceramic coat the interior of your car? Well you can, and it provides many of the benefits of a normal exterior coating like ease of maintenance/cleaning, but to the interior of your car!</p>
+                <h2 className='service-title'>Exterior Services</h2>
+                <div className='otherservices-container-div'>
+                    <div className="service-card">
+                        <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3e71dbba-b8c6-4c21-7d4c-edc497331100/public')` }}></div>
+                        <div className="otherservices-desc">
+                            <div>
+                                <a href='/services/interior-ceramic-coating' className='service-heading-link'>Interior Ceramic Coatings</a>
+                                <p className="secondary-text">Starting at: <span>$75</span></p>
+                            </div>
+                            <p className="service-desc">Did you know you could ceramic coat the interior of your car? Well you can, and it provides many of the benefits of a normal exterior coating like ease of maintenance/cleaning, but to the interior of your car!</p>
 
-                        <a href="/services/interior-ceramic-coating" className="popular-readmore">Interior Coating Details</a>
+                            <a href="/services/interior-ceramic-coating" className="popular-readmore">Interior Coating Details</a>
+                        </div>
                     </div>
-                </div>
 
-                <div className="service-card">
-                    <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a30c288d-c816-4a42-e313-d7fa80e04200/public')` }}></div>
-                    <div className="otherservices-desc">
-                        <div>
-                            <a href='/services/exterior-ceramic-coating' className='service-heading-link'>Exterior Ceramic Coatings</a>
-                            <p className="secondary-text">Starting at: <span>$949.99</span></p>
+                    <div className="service-card">
+                        <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a30c288d-c816-4a42-e313-d7fa80e04200/public')` }}></div>
+                        <div className="otherservices-desc">
+                            <div>
+                                <a href='/services/exterior-ceramic-coating' className='service-heading-link'>Exterior Ceramic Coatings</a>
+                                <p className="secondary-text">Starting at: <span>$949.99</span></p>
+                            </div>
+                            <p className="service-desc">With a professionally installed IGL Ceramic coating from us, your vehicle will be clean and protected. We are a licensed and certified coating installer through IGL and are happy to give your car that extra layer of protection it deserves</p>
+
+                            <a href="/services/exterior-ceramic-coating" className="popular-readmore">Exterior Coating Details</a>
                         </div>
-                        <p className="service-desc">With a professionally installed IGL Ceramic coating from us, your vehicle will be clean and protected. We are a licensed and certified coating installer through IGL and are happy to give your car that extra layer of protection it deserves</p>
-
-                        <a href="/services/exterior-ceramic-coating" className="popular-readmore">Exterior Coating Details</a>
                     </div>
-                </div>
 
-                <div className="service-card">
-                    <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/public')` }}></div>
-                    <div className="otherservices-desc text-center">
-                        <div>
-                            <a href='/gallery/ceramic-coating-gallery' className='service-heading-link'>CERAMIC COATING GALLERY</a>
+                    <div className="service-card">
+                        <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/public')` }}></div>
+                        <div className="otherservices-desc text-center">
+                            <div>
+                                <a href='/gallery/ceramic-coating-gallery' className='service-heading-link'>CERAMIC COATING GALLERY</a>
+                            </div>
+                            <p className="service-desc">Take a look at some of the results we've had after our Ceramic Details.</p>
+                            <p className="service-desc">Starting with our Single Stage Paint Correction before applying our Ceramics ensures the best covering of your vehicle possible, giving the absolute best results and longevity.</p>
+
+                            <a href='/gallery/ceramic-coating-gallery' className="popular-readmore text-center">Ceramic Coating Gallery</a>
                         </div>
-                        <p className="service-desc">Take a look at some of the results we've had after our Ceramic Details.</p>
-                        <p className="service-desc">Starting with our Single Stage Paint Correction before applying our Ceramics ensures the best covering of your vehicle possible, giving the absolute best results and longevity.</p>
-
-                        <a href='/gallery/ceramic-coating-gallery' className="popular-readmore text-center">Ceramic Coating Gallery</a>
                     </div>
                 </div>
             </section>
             <a href="/Contact" className="quote-btn main-quote-btn">Get A Free Quote</a>
 
-            <div className='separator-container'>
+            {/* <div className='separator-container'>
                 <h3 className='service-title'>COMBO DEAL <span className='new-offer'>NEW</span></h3>
             </div>
 
@@ -67,9 +69,9 @@ export default function OtherServices() {
                     </div>
                 </div>
             </section>
-            <a href="/Contact" className="quote-btn main-quote-btn">Get A Free Quote</a>
+            <a href="/Contact" className="quote-btn main-quote-btn">Get A Free Quote</a> */}
 
-            <div className='separator-container'>
+            {/* <div className='separator-container'>
                 <h2 className='service-title'>INTERIOR CLEANING SERVICES</h2>
             </div>
             <section className="otherservices-container">
@@ -191,7 +193,7 @@ export default function OtherServices() {
                     </div>
                 </div>
             </section>
-            <a href="/Contact" className="quote-btn main-quote-btn">Get A Free Quote</a>
+            <a href="/Contact" className="quote-btn main-quote-btn">Get A Free Quote</a> */}
         </div>
     )
 }

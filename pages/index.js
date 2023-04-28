@@ -9,11 +9,13 @@ import OtherServices from '../utils/OtherServices';
 import { MdOutlineLocalCarWash, MdOutlineArrowBackIos, MdOutlineArrowForwardIos } from 'react-icons/md';
 import { FaFacebook } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
+import { BsCalendarCheck } from 'react-icons/bs';
 import { BiCertification } from 'react-icons/bi';
 import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 import { FaRegStar, FaMapMarkedAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { HiOutlineClipboardCheck } from 'react-icons/hi';
 
 export default function Home() {
     const [smallScreen, setSmallScreen] = useState(null);
@@ -88,12 +90,22 @@ export default function Home() {
                     }`,
                 }} />
             </Head>
-            <div className="maincover" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover')` }}></div>
             <header className="home-header">
+                <div className="maincover" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover')` }}></div>
                 <div className='landing-div'>
-                    <h1 className='title-top'>Your Bonney Lake <br /><span className='title-bottom'>Detailing & Ceramic Coating Specialists</span></h1>
+                    {/* <h1 className='title-top'>Your Bonney Lake <br /><span className='title-bottom'>Detailing & Ceramic Coating Specialists</span></h1> */}
+                    <h1 className='main-title'>Your Bonney Lake
+                        <span>Auto Detailing</span>
+                        <span>&</span>
+                        <span>Ceramic Coating</span>
+                        Specialists
+                    </h1>
+                    <div style={{ display: 'flex', gap: 1 + 'rem' }}>
+                        <a href="/Contact" className='quote-btn'><HiOutlineClipboardCheck />Get a Free Quote</a>
+                        <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
+                    </div>
 
-                    <div className="header-icons-container">
+                    <div style={{ display: smallScreen ? 'none' : 'flex' }} className="header-icons-container">
                         <div>
                             <BiCertification className='header-icon' />
                             <p className="header-desc">7 Years</p>
@@ -102,7 +114,7 @@ export default function Home() {
                         <div>
                             <MdOutlineLocalCarWash className='header-icon' />
                             <p className="header-desc">1000+</p>
-                            <span className='header-desc-span'>Details Completed</span>
+                            <span className='header-desc-span'>Details Done</span>
                         </div>
                         <div>
                             <FaRegStar className='header-icon' />
@@ -114,9 +126,14 @@ export default function Home() {
                             <p className="header-desc">Mobile</p>
                             <span className='header-desc-span'>Services</span>
                         </div>
+                        <a href="/Contact"><BsCalendarCheck className='header-icon' /><br />Book Now</a>
+                        {/* <div>
+                            <BsCalendarCheck className='header-icon' />
+                            <a href="/Contact"> </a>
+                        </div> */}
                     </div>
 
-                    <div style={{ display: smallScreen ? 'none' : 'flex', alignItems: 'center', gap: 32 }}>
+                    {/* <div style={{ display: smallScreen ? 'none' : 'flex', alignItems: 'center', gap: 32 }}>
                         <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="noopener">
                             <div className="header-cert" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/242a2248-1f41-4edf-b2c5-d508a10bef00/public')`, height: 134 + 'px', width: 134 + 'px' }}></div>
                         </a>
@@ -124,172 +141,151 @@ export default function Home() {
                         <a href="https://iglcoatingsusa.com/" target="_blank" rel="noopener">
                             <div className="header-cert" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/833088d3-ca7b-41b9-561f-21f8517f3300/public')`, height: 165 + 'px', width: 145 + 'px' }}></div>
                         </a>
-                    </div>
+                    </div> */}
 
-                    <div style={{ display: 'flex', gap: 1 + 'rem' }}>
-                        <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
-                        <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
-                    </div>
 
                 </div>
             </header>
 
-            <div id="popular-services" className='separator-container'>
+            {/* <div id="popular-services" className='separator-container'>
                 <h2 className="service-title">POPULAR DETAILING SERVICES</h2>
-            </div>
-
-            <PopularServices />
-
-            <a href="/Contact" className="quote-btn main-quote-btn popular-quote-btn">Get A Free Quote</a>
-
-            <OtherServices />
-
-            <div className='separator-container'>
-                <h3 className='service-title'>REVIEWS</h3>
-            </div>
-
-            <div className='service-bkg-lighter'>
-                <div className="reviews-container">
-                    <Carousel className="review-carousel" selectedItem={currentSlide} autoPlay={smallScreen ? false : true} centerSlidePercentage={50} centerMode={smallScreen ? false : true} style={styles} infiniteLoop stopOnHover showThumbs={false} showArrows interval={6000} emulateTouch>
-                        <div className='review-card'>
-                            <div className='lower-review'>
-                                <div className='review-top'>
-                                    <p className='review-text'>Brenden answered the first phone call gave a quote over the phone, I did not have to bring the car anywhere. <span className='highlight'>He provided a value and was on time and was extremely thorough.</span> Did not attempt to upsell me and increase price, day of the appointment, like another Bonney Lake detailer did. Can't recommend Dirt-Less Detail enough. My wife's Jeep Cherokee looks new!</p>
-                                </div>
-                                <div className='review-bottom'>
-                                    <div style={{ textAlign: 'left' }}>
-                                        <strong className='name'>Darren B.</strong>
-                                        <p className='services-p'>Interior Detail</p>
-                                    </div>
-                                    <div className='google-review'>
-                                        <FaFacebook className='facebook-logo' />
-                                        <p className='star-review'>★★★★★</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='review-card'>
-                            <div className='lower-review'>
-                                <div className='review-top'>
-                                    <p className='review-text'>Had an issue with the interior of a vehicle that had been in a garage for too long. Dirt-Less handled it professionally and quickly. <span className='highlight'>We will definitely keep going back for our needs.</span></p>
-                                </div>
-                                <div className='review-bottom'>
-                                    <div style={{ textAlign: 'left' }}>
-                                        <strong className='name'>Jonathon H.</strong>
-                                        <p className='services-p'>Interior Detail</p>
-                                    </div>
-                                    <div className='google-review'>
-                                        <FcGoogle />
-                                        <p className='star-review'>★★★★★</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='review-card'>
-                            <div className='lower-review'>
-                                <div className='review-top'>
-                                    <p className='review-text'>My kids left a gal of milk in the back of my car, needless to say the nice warm weather it leaked all over and soon smelled horrid. He did a fantastic job, <span className='highlight'>car smells and looks brand new, even got every hair out from my pups.</span> Very happy I got his number as a referral from a friend.</p>
-                                </div>
-                                <div className='review-bottom'>
-                                    <div style={{ textAlign: 'left' }}>
-                                        <strong className='name'>Trisha C.</strong>
-                                        <p className='services-p'>Interior + Extraction</p>
-                                    </div>
-                                    <div className='google-review'>
-                                        <FaFacebook className='facebook-logo' />
-                                        <p className='star-review'>★★★★★</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='review-card'>
-                            <div className='lower-review'>
-                                <div className='review-top'>
-                                    <p className='review-text'>Brenden does an amazing job. My car looks amazing. <span className='highlight'>He is super reasonable in his pricing and was very efficient.</span> Will definitely continue to use his service for all our vehicles.</p>
-                                </div>
-                                <div className='review-bottom'>
-                                    <div style={{ textAlign: 'left' }}>
-                                        <strong className='name'>Kristi H.</strong>
-                                        <p className='services-p'>The Dirt-Less Detail</p>
-                                    </div>
-                                    <div className='google-review'>
-                                        <FcGoogle />
-                                        <p className='star-review'>★★★★★</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='review-card'>
-                            <div className='lower-review'>
-                                <div className='review-top'>
-                                    <p className='review-text'>Brought in my 12 Escalade and he worked his magic on both inside and outside. <span className='highlight'>Brenden is very good at what he does, the vehicle looks amazing. Better than it was when I bought it.</span> Thank you so much for getting me into your schedule. I am Extremely pleased with the outcome of your services.</p>
-                                </div>
-                                <div className='review-bottom'>
-                                    <div style={{ textAlign: 'left' }}>
-                                        <strong className='name'>Rob B.</strong>
-                                        <p className='services-p'>The Dirt-Less Detail</p>
-                                    </div>
-                                    <div className='google-review'>
-                                        <FaFacebook className='facebook-logo' />
-                                        <p className='star-review'>★★★★★</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='review-card'>
-                            <div className='lower-review'>
-                                <div className='review-top'>
-                                    <p className='review-text'>Had a whole half gallon of almond chocolate milk spilled into my trunk thanks to Walmart pickup.<span className='highlight'> After calling many detailing shops (whom most were rude and not helpful) Brenden at Dirt-Less Detail was very polite and eager to help.</span> Despite his busy schedule he fit me in asap and took care of my weird circumstance. It didn't take long to clean the trunk and because of it he didn't charge me for the cleaning. He just told me to refer him to others which I'll definitely do!! While other people turned me away because it was such a small job or told me they would have to charge me full price anyway… Dirt-Less Detailing stepped up and helped me out of the kindness of their heart. We need more businesses like that around here!! Way to go Brenden at Dirt-Less Detail. Thanks again.</p>
-                                </div>
-                                <div className='review-bottom'>
-                                    <div style={{ textAlign: 'left' }}>
-                                        <strong className='name'>Jennifer D.</strong>
-                                        <p className='services-p'>Interior + Extraction</p>
-                                    </div>
-                                    <div className='google-review'>
-                                        <FcGoogle />
-                                        <p className='star-review'>★★★★★</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </Carousel>
-                    <div className='carousel-controls'>
-                        <div className='carousel-button' onClick={() => back()}><MdOutlineArrowBackIos /></div>
-                        <div className='carousel-button' onClick={() => next()}><MdOutlineArrowForwardIos /></div>
-                    </div>
-                    <p style={{ margin: 0, padding: '1rem 0' }}>Check out more reviews on our <a style={{ color: 'dodgerblue' }} target='_blank' rel='noopener' href="https://www.facebook.com/DirtLessDetailing/reviews">Facebook</a> or <a style={{ color: 'dodgerblue' }} target='_blank' rel='noopener' href="https://www.google.com/localservices/prolist?g2lbs=ADZRdktLAaGKKobG3aZn2_Qd9tpM-f3ifTKQp4hXsZnMmVk1USpK7Ha4kZIeLdSCTp26Z3uD8UBdDwRY7Zqn7XZatg-9z1GI86mqJXoiFQCA1rCg0Vis_yQK9JiR9qrRMObWwAegw9aPUbKd01T05_4R3o4ry_qhHA%3D%3D&hl=en-US&gl=us&cs=1&ssta=1&q=dirtless%20detailing&oq=dirtless%20detailing&slp=MgA6HENoTUlxZVd0Nkl2SV9nSVY2UTZ0QmgyZWJnaVJSAggCYAB6-gFDaEprYVhKMGJHVnpjeUJrWlhSaGFXeHBibWRJNnZqVDFhcTRnSUFJV2h3UUFCQUJHQUFZQVNJU1pHbHlkR3hsYzNNZ1pHVjBZV2xzYVc1bmtnRVZZMkZ5WDJSbGRHRnBiR2x1WjE5elpYSjJhV05sbWdFa1EyaGtSRk5WYUU1TlJ6bHVVekJXU2xFd1JtNVRWVkpEV2pKYVNHTnVhRzVTVWtGQ3FnRTZFQUV5SGhBQklocEZwOXktNVEwdWdLbGRqT2pnOEdvLWlaQlZ5NUdlSjh3QjV6SVdFQUlpRW1ScGNuUnNaWE56SUdSbGRHRnBiR2x1Wi1BQkFBkgG0AgoNL2cvMTFzYnBjOV8zYgoNL2cvMTFmcDJwN3dtbgoNL2cvMTFrMndndnhyegoNL2cvMTFzbXZfbm13MQoLL2cvMXRmM2I3bHQKDS9nLzExZ2w0dDJkY20KDC9nLzEyNjBieGxoNgoNL2cvMTFwMTN5MnQ4cQoNL2cvMTFjbnpuX3p3agoNL2cvMTFqcTlwcGtfNwoNL2cvMTFneTRsejU5aAoNL2cvMTF0ZDhjN195NQoNL2cvMTFrNDVzNzVmcwoNL2cvMTFnMnhjbHBxMwoNL2cvMTFzNTFrN2YzdAoNL2cvMTFzM2YwMHZzcAoML2cvMTFnem44M3diCg0vZy8xMW5uMGhzanF2Cg0vZy8xMWZxcXoxdmdwCg0vZy8xMXQ0ZmprMDltEgQSAggBEgQKAggB&src=2&spp=Cg0vZy8xMXNicGM5XzNiOtABV2h3UUFCQUJHQUFZQVNJU1pHbHlkR3hsYzNNZ1pHVjBZV2xzYVc1bmtnRVZZMkZ5WDJSbGRHRnBiR2x1WjE5elpYSjJhV05sbWdFa1EyaGtSRk5WYUU1TlJ6bHVVekJXU2xFd1JtNVRWVkpEV2pKYVNHTnVhRzVTVWtGQ3FnRTZFQUV5SGhBQklocEZwOXktNVEwdWdLbGRqT2pnOEdvLWlaQlZ5NUdlSjh3QjV6SVdFQUlpRW1ScGNuUnNaWE56SUdSbGRHRnBiR2x1Wnc9PQ%3D%3D&serdesk=1&lrlstt=1682530844021&ved=2ahUKEwiSvKHoi8j-AhWfHjQIHT0kD2MQvS56BAgwEAE&scp=ChpnY2lkOmNhcl9kZXRhaWxpbmdfc2VydmljZRJgEhIJeUAf2e38kFQRVTQwKEuFSMMiMkRpcnQtTGVzcyBEZXRhaWxpbmcsIDkzMDUgMjA1dGggQXZlIEUsIEJvbm5leSBMYWtlKhQNCAEeHBXFWjC3HQgBHhwlxVowtzAAGhJkaXJ0bGVzcyBkZXRhaWxpbmciEmRpcnRsZXNzIGRldGFpbGluZyoVQ2FyIGRldGFpbGluZyBzZXJ2aWNl#ts=3">Google</a> page.</p>
+            </div> */}
+            <div className="service-bkg">
+                <div className="general-container new-heading-container">
+                    <h3 className="new-heading">Our Most Popular Services</h3>
                 </div>
-            </div>
 
-            <section className='mobileservices-container'>
-                {/* <div className="locations">
-                    <h3>We currently provide mobile services to the following cities:</h3>
-                    <div style={{ width: 100 + '%', display: 'flex', justifyContent: 'center' }}>
-                        <ul className='cities-ul'>
-                            <li><a href='/location/bonney-lake' className='aside-link'>Bonney Lake</a><FaMapMarkerAlt /></li>
-                            <li><a href='/location/buckley' className='aside-link'>Buckley</a><FaMapMarkerAlt /></li>
-                            <li><a href='/location/sumner' className='aside-link'>Sumner</a><FaMapMarkerAlt /></li>
-                            <li><a href='/location/lake-tapps' className='aside-link'>Lake Tapps</a><FaMapMarkerAlt /></li>
-                            <li><a href='/location/enumclaw' className='aside-link'>Enumclaw</a><FaMapMarkerAlt /></li>
-                            <li><a href='/location/puyallup' className='aside-link'>Puyallup</a><FaMapMarkerAlt /></li>
-                            <li><a href='/location/tehaleh' className='aside-link'>Tehaleh</a><FaMapMarkerAlt /></li>
-                            <li><a href='/location/federal-way' className='aside-link'>Federal Way</a><FaMapMarkerAlt /></li>
-                            <li><a href='/location/orting' className='aside-link'>Orting</a><FaMapMarkerAlt /></li>
-                            <li><a href='/location/south-prairie' className='aside-link'>South Prairie</a><FaMapMarkerAlt /></li>
-                            <li><a href='/location/black-diamond' className='aside-link'>Black Diamond</a><FaMapMarkerAlt /></li>
-                            <li><a href='/location/milton' className='aside-link'>Milton</a><FaMapMarkerAlt /></li>
-                            <li><a href='/location/edgewood' className='aside-link'>Edgewood</a><FaMapMarkerAlt /></li>
-                            <li><a href='/location/graham' className='aside-link'>Graham</a><FaMapMarkerAlt /></li>
-                        </ul>
-                    </div>
-                    <h3>As part of our simple and hassle free service, you can come to us or we can come to you with select services!</h3>
-                    <p style={{ marginTop: 0 }}>*Services totalling less than $200 will have a $1/mile from our shop fee.</p>
-                </div> */}
-                <div className='map'>
-                    <iframe title="Map of Dirt-Less Detailing location" width={smallScreen ? '250' : '500'} height={smallScreen ? '300' : '400'} style={{ border: 0 }} loading="lazy" src={`https://www.google.com/maps/embed/v1/place?zoom=15&q=place_id:ChIJxxfUWqz7kFQRotRs8MwWDRE&key=${process.env.GOOGLE_MAPS}`}></iframe>
+                <PopularServices />
+
+                <a href="/Contact" className="quote-btn main-quote-btn popular-quote-btn">Get A Free Quote</a>
+
+                <OtherServices />
+
+                <div className='separator-container'>
+                    <h3 className='service-title'>REVIEWS</h3>
                 </div>
-            </section>
+
+                <div className='service-bkg-lighter'>
+                    <div className="reviews-container">
+                        <Carousel className="review-carousel" selectedItem={currentSlide} autoPlay={smallScreen ? false : true} centerSlidePercentage={50} centerMode={smallScreen ? false : true} style={styles} infiniteLoop stopOnHover showThumbs={false} showArrows interval={6000} emulateTouch>
+                            <div className='review-card'>
+                                <div className='lower-review'>
+                                    <div className='review-top'>
+                                        <p className='review-text'>Brenden answered the first phone call gave a quote over the phone, I did not have to bring the car anywhere. <span className='highlight'>He provided a value and was on time and was extremely thorough.</span> Did not attempt to upsell me and increase price, day of the appointment, like another Bonney Lake detailer did. Can't recommend Dirt-Less Detail enough. My wife's Jeep Cherokee looks new!</p>
+                                    </div>
+                                    <div className='review-bottom'>
+                                        <div style={{ textAlign: 'left' }}>
+                                            <strong className='name'>Darren B.</strong>
+                                            <p className='services-p'>Interior Detail</p>
+                                        </div>
+                                        <div className='google-review'>
+                                            <FaFacebook className='facebook-logo' />
+                                            <p className='star-review'>★★★★★</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='review-card'>
+                                <div className='lower-review'>
+                                    <div className='review-top'>
+                                        <p className='review-text'>Had an issue with the interior of a vehicle that had been in a garage for too long. Dirt-Less handled it professionally and quickly. <span className='highlight'>We will definitely keep going back for our needs.</span></p>
+                                    </div>
+                                    <div className='review-bottom'>
+                                        <div style={{ textAlign: 'left' }}>
+                                            <strong className='name'>Jonathon H.</strong>
+                                            <p className='services-p'>Interior Detail</p>
+                                        </div>
+                                        <div className='google-review'>
+                                            <FcGoogle />
+                                            <p className='star-review'>★★★★★</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='review-card'>
+                                <div className='lower-review'>
+                                    <div className='review-top'>
+                                        <p className='review-text'>My kids left a gal of milk in the back of my car, needless to say the nice warm weather it leaked all over and soon smelled horrid. He did a fantastic job, <span className='highlight'>car smells and looks brand new, even got every hair out from my pups.</span> Very happy I got his number as a referral from a friend.</p>
+                                    </div>
+                                    <div className='review-bottom'>
+                                        <div style={{ textAlign: 'left' }}>
+                                            <strong className='name'>Trisha C.</strong>
+                                            <p className='services-p'>Interior + Extraction</p>
+                                        </div>
+                                        <div className='google-review'>
+                                            <FaFacebook className='facebook-logo' />
+                                            <p className='star-review'>★★★★★</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='review-card'>
+                                <div className='lower-review'>
+                                    <div className='review-top'>
+                                        <p className='review-text'>Brenden does an amazing job. My car looks amazing. <span className='highlight'>He is super reasonable in his pricing and was very efficient.</span> Will definitely continue to use his service for all our vehicles.</p>
+                                    </div>
+                                    <div className='review-bottom'>
+                                        <div style={{ textAlign: 'left' }}>
+                                            <strong className='name'>Kristi H.</strong>
+                                            <p className='services-p'>The Dirt-Less Detail</p>
+                                        </div>
+                                        <div className='google-review'>
+                                            <FcGoogle />
+                                            <p className='star-review'>★★★★★</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='review-card'>
+                                <div className='lower-review'>
+                                    <div className='review-top'>
+                                        <p className='review-text'>Brought in my 12 Escalade and he worked his magic on both inside and outside. <span className='highlight'>Brenden is very good at what he does, the vehicle looks amazing. Better than it was when I bought it.</span> Thank you so much for getting me into your schedule. I am Extremely pleased with the outcome of your services.</p>
+                                    </div>
+                                    <div className='review-bottom'>
+                                        <div style={{ textAlign: 'left' }}>
+                                            <strong className='name'>Rob B.</strong>
+                                            <p className='services-p'>The Dirt-Less Detail</p>
+                                        </div>
+                                        <div className='google-review'>
+                                            <FaFacebook className='facebook-logo' />
+                                            <p className='star-review'>★★★★★</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='review-card'>
+                                <div className='lower-review'>
+                                    <div className='review-top'>
+                                        <p className='review-text'>Had a whole half gallon of almond chocolate milk spilled into my trunk thanks to Walmart pickup.<span className='highlight'> After calling many detailing shops (whom most were rude and not helpful) Brenden at Dirt-Less Detail was very polite and eager to help.</span> Despite his busy schedule he fit me in asap and took care of my weird circumstance. It didn't take long to clean the trunk and because of it he didn't charge me for the cleaning. He just told me to refer him to others which I'll definitely do!! While other people turned me away because it was such a small job or told me they would have to charge me full price anyway… Dirt-Less Detailing stepped up and helped me out of the kindness of their heart. We need more businesses like that around here!! Way to go Brenden at Dirt-Less Detail. Thanks again.</p>
+                                    </div>
+                                    <div className='review-bottom'>
+                                        <div style={{ textAlign: 'left' }}>
+                                            <strong className='name'>Jennifer D.</strong>
+                                            <p className='services-p'>Interior + Extraction</p>
+                                        </div>
+                                        <div className='google-review'>
+                                            <FcGoogle />
+                                            <p className='star-review'>★★★★★</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </Carousel>
+                        <div className='carousel-controls'>
+                            <div className='carousel-button' onClick={() => back()}><MdOutlineArrowBackIos /></div>
+                            <div className='carousel-button' onClick={() => next()}><MdOutlineArrowForwardIos /></div>
+                        </div>
+                        <p style={{ margin: 0, padding: '1rem 0' }}>Check out more reviews on our <a style={{ color: 'dodgerblue' }} target='_blank' rel='noopener' href="https://www.facebook.com/DirtLessDetailing/reviews">Facebook</a> or <a style={{ color: 'dodgerblue' }} target='_blank' rel='noopener' href="https://www.google.com/localservices/prolist?g2lbs=ADZRdktLAaGKKobG3aZn2_Qd9tpM-f3ifTKQp4hXsZnMmVk1USpK7Ha4kZIeLdSCTp26Z3uD8UBdDwRY7Zqn7XZatg-9z1GI86mqJXoiFQCA1rCg0Vis_yQK9JiR9qrRMObWwAegw9aPUbKd01T05_4R3o4ry_qhHA%3D%3D&hl=en-US&gl=us&cs=1&ssta=1&q=dirtless%20detailing&oq=dirtless%20detailing&slp=MgA6HENoTUlxZVd0Nkl2SV9nSVY2UTZ0QmgyZWJnaVJSAggCYAB6-gFDaEprYVhKMGJHVnpjeUJrWlhSaGFXeHBibWRJNnZqVDFhcTRnSUFJV2h3UUFCQUJHQUFZQVNJU1pHbHlkR3hsYzNNZ1pHVjBZV2xzYVc1bmtnRVZZMkZ5WDJSbGRHRnBiR2x1WjE5elpYSjJhV05sbWdFa1EyaGtSRk5WYUU1TlJ6bHVVekJXU2xFd1JtNVRWVkpEV2pKYVNHTnVhRzVTVWtGQ3FnRTZFQUV5SGhBQklocEZwOXktNVEwdWdLbGRqT2pnOEdvLWlaQlZ5NUdlSjh3QjV6SVdFQUlpRW1ScGNuUnNaWE56SUdSbGRHRnBiR2x1Wi1BQkFBkgG0AgoNL2cvMTFzYnBjOV8zYgoNL2cvMTFmcDJwN3dtbgoNL2cvMTFrMndndnhyegoNL2cvMTFzbXZfbm13MQoLL2cvMXRmM2I3bHQKDS9nLzExZ2w0dDJkY20KDC9nLzEyNjBieGxoNgoNL2cvMTFwMTN5MnQ4cQoNL2cvMTFjbnpuX3p3agoNL2cvMTFqcTlwcGtfNwoNL2cvMTFneTRsejU5aAoNL2cvMTF0ZDhjN195NQoNL2cvMTFrNDVzNzVmcwoNL2cvMTFnMnhjbHBxMwoNL2cvMTFzNTFrN2YzdAoNL2cvMTFzM2YwMHZzcAoML2cvMTFnem44M3diCg0vZy8xMW5uMGhzanF2Cg0vZy8xMWZxcXoxdmdwCg0vZy8xMXQ0ZmprMDltEgQSAggBEgQKAggB&src=2&spp=Cg0vZy8xMXNicGM5XzNiOtABV2h3UUFCQUJHQUFZQVNJU1pHbHlkR3hsYzNNZ1pHVjBZV2xzYVc1bmtnRVZZMkZ5WDJSbGRHRnBiR2x1WjE5elpYSjJhV05sbWdFa1EyaGtSRk5WYUU1TlJ6bHVVekJXU2xFd1JtNVRWVkpEV2pKYVNHTnVhRzVTVWtGQ3FnRTZFQUV5SGhBQklocEZwOXktNVEwdWdLbGRqT2pnOEdvLWlaQlZ5NUdlSjh3QjV6SVdFQUlpRW1ScGNuUnNaWE56SUdSbGRHRnBiR2x1Wnc9PQ%3D%3D&serdesk=1&lrlstt=1682530844021&ved=2ahUKEwiSvKHoi8j-AhWfHjQIHT0kD2MQvS56BAgwEAE&scp=ChpnY2lkOmNhcl9kZXRhaWxpbmdfc2VydmljZRJgEhIJeUAf2e38kFQRVTQwKEuFSMMiMkRpcnQtTGVzcyBEZXRhaWxpbmcsIDkzMDUgMjA1dGggQXZlIEUsIEJvbm5leSBMYWtlKhQNCAEeHBXFWjC3HQgBHhwlxVowtzAAGhJkaXJ0bGVzcyBkZXRhaWxpbmciEmRpcnRsZXNzIGRldGFpbGluZyoVQ2FyIGRldGFpbGluZyBzZXJ2aWNl#ts=3">Google</a> page.</p>
+                    </div>
+                </div>
+
+                <section className='mobileservices-container'>
+                    <div className='map'>
+                        <iframe title="Map of Dirt-Less Detailing location" width={smallScreen ? '250' : '500'} height={smallScreen ? '300' : '400'} style={{ border: 0 }} loading="lazy" src={`https://www.google.com/maps/embed/v1/place?zoom=15&q=place_id:ChIJxxfUWqz7kFQRotRs8MwWDRE&key=${process.env.GOOGLE_MAPS}`}></iframe>
+                    </div>
+                </section>
+
+            </div>
         </div>
     )
 }
