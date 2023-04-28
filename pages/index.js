@@ -9,13 +9,15 @@ import OtherServices from '../utils/OtherServices';
 import { MdOutlineLocalCarWash, MdOutlineArrowBackIos, MdOutlineArrowForwardIos } from 'react-icons/md';
 import { FaFacebook } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
-import { BsCalendarCheck } from 'react-icons/bs';
+import { BsCalendarCheck, BsHourglassSplit } from 'react-icons/bs';
 import { BiCertification } from 'react-icons/bi';
+import { GiChemicalDrop, GiSpray } from 'react-icons/gi';
 import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 import { FaRegStar, FaMapMarkedAlt } from 'react-icons/fa';
+import { AiOutlineUnorderedList  } from 'react-icons/ai';
+import { HiOutlineClipboardCheck } from 'react-icons/hi';
 
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
-import { HiOutlineClipboardCheck } from 'react-icons/hi';
 
 export default function Home() {
     const [smallScreen, setSmallScreen] = useState(null);
@@ -151,13 +153,40 @@ export default function Home() {
             </div> */}
             <div className="service-bkg">
                 <div className="general-container new-heading-container">
-                    <h3 className="new-heading">Our Most Popular Services</h3>
+                    <h3 className="new-heading new-heading-center">Our Most Popular Services</h3>
                 </div>
 
                 <PopularServices />
 
                 {/* <a href="/Contact" className="quote-btn main-quote-btn popular-quote-btn">Get A Free Quote</a> */}
                 <br className="extra-space" />
+
+                <div className="reasons-container">
+                    <div className="reason">
+                        <AiOutlineUnorderedList className="reason-icon" />
+                        <h4 className="reason-title">Personalized Options</h4>
+                        <p className="reason-desc">We have plenty of options to fit all needs and budgets, from our quick but thorough washes all the way up to our 2-day Ceramic Coating service.</p>
+                    </div>
+                    <div className="reason">
+                        <BsHourglassSplit className="reason-icon" />
+                        <h4 className="reason-title">Time Saving</h4>
+                        <p className="reason-desc">Detailing is time-consuming, we will handle that while you do things that you need done.</p>
+                    </div>
+                    <div className="reason">
+                        <GiChemicalDrop className="reason-icon" />
+                        <h4 className="reason-title">Researched Chemicals</h4>
+                        <p className="reason-desc">Not only have we done our part finding chemicals that work well, but ones that are also safe for the materials that we use them on.</p>
+                    </div>
+                    <div className="reason">
+                        <GiSpray className="reason-icon" />
+                        <h4 className="reason-title">Fully Equipped</h4>
+                        <p className="reason-desc">With the latest and greatest tools and techniques, we’ll get your car to 100% every time.</p>
+                    </div>
+                </div>
+
+                <div className="general-container new-heading-container">
+                    <h3 className="new-heading new-heading-center">All Services</h3>
+                </div>
 
                 <OtherServices />
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function OtherServices() {
     return (
-        <div style={{display: 'flex', flexDirection: 'column', gap: '4em'}}>
+        <div style={{display: 'flex', flexDirection: 'column', gap: '4em', paddingTop: '3rem'}}>
             <section className="otherservices-container">
                 <h2 className='service-title'>Exterior Services</h2>
                 <p>Need an exterior detail? We've got you covered here!</p>
@@ -53,6 +53,7 @@ export default function OtherServices() {
                         </div>
                     </div>
                 </div>
+                <a href="/Contact" className="otherservices-readmore">Get in Touch!</a>
             </section>
 
             <section className="otherservices-container">
@@ -105,6 +106,7 @@ export default function OtherServices() {
                         </div>
                     </div>
                 </div>
+                <a href="/Contact" className="otherservices-readmore">Get in Touch!</a>
             </section>
 
             <section className="otherservices-container">
@@ -157,6 +159,7 @@ export default function OtherServices() {
                         </div>
                     </div>
                 </div>
+                <a href="/Contact" className="otherservices-readmore">Get in Touch!</a>
             </section>
 
             {/* <a href="/Contact" className="quote-btn main-quote-btn">Get A Free Quote</a> */}

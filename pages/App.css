@@ -739,7 +739,7 @@ option {
 .popular-container {
   padding-top: 7vh;
   width: 100%;
-  padding: 7vh 5vw;
+  padding: 7vh 5vw 0 5vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1016,6 +1016,7 @@ option {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 .otherservices-image {
@@ -1466,8 +1467,62 @@ hr {
 .new-heading {
   margin: 0 auto 0 0;
   text-align: left;
+  font-family: 'Oswald', sans-serif;
   font-size: 2em;
   width: 100%;
+}
+
+.new-heading-center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.reasons-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: var(--contact-bkg-lighter);
+  padding: 2rem;
+  border-radius: 32px;
+  margin-bottom: 5vh;
+}
+
+.reason {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "icon title title"
+    "desc desc desc";
+}
+
+.reason-icon {
+  grid-area: icon;
+  font-size: 3em;
+  place-self: center;
+}
+
+.reason-title {
+  grid-area: title;
+  font-family: 'Oswald';
+  font-size: 32px;
+  margin: 0;
+  font-weight: bold;
+  text-align: left;
+  justify-self: flex-start;
+  align-self: center;
+}
+
+.reason-desc {
+  grid-area: desc;
+  font-size: 16px;
+  text-align: left;
+  color: var(--secondary-text-light);
+  width: 80%;
+  margin: 0 auto;
 }
 
 .servicepage-heading {
@@ -2729,6 +2784,21 @@ hr {
     align-items: center;
     height: 90vh;
     font-size: 1.2rem;
+  }
+
+  .reasons-container {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .reason-icon {
+    justify-self: center;
+    align-self: center;
+  }
+
+  .reason-desc {
+    margin: 0.75rem auto 0 auto;
+    width: 100%;
   }
 
   .dd-desc {
