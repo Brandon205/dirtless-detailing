@@ -7,21 +7,55 @@ export default function OtherServices() {
             </div> */}
             <section className="otherservices-container">
                 <h2 className='service-title'>Exterior Services</h2>
-                <div className='otherservices-container-div'>
+                <p>Need an exterior detail? We've got you covered here!</p>
+                <div className='otherservices-subcontainer'>
                     <div className="service-card">
-                        <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3e71dbba-b8c6-4c21-7d4c-edc497331100/public')` }}></div>
+                        <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d7e1e319-7f78-4ac6-907a-9b100171ca00/public')` }}></div>
                         <div className="otherservices-desc">
                             <div>
-                                <a href='/services/interior-ceramic-coating' className='service-heading-link'>Interior Ceramic Coatings</a>
-                                <p className="secondary-text">Starting at: <span>$75</span></p>
+                                <a href='/services/interior-ceramic-coating' className='service-heading-link'>Dirt-Less Wash</a>
+                                <p className="secondary-text">Starting at: <span>$74.99</span></p>
                             </div>
-                            <p className="service-desc">Did you know you could ceramic coat the interior of your car? Well you can, and it provides many of the benefits of a normal exterior coating like ease of maintenance/cleaning, but to the interior of your car!</p>
+                            <p className="service-desc">Our Dirt-Less Wash will thoroughly clean the exterior of your vehicle with our tried and true cleaning process. We even apply a layer of wax to give your vehicle a strong layer of protection.</p>
 
-                            <a href="/services/interior-ceramic-coating" className="popular-readmore">Interior Coating Details</a>
+                            <div className="otherservices-links">
+                                <a href="/services/dirtless-wash" className="otherservices-readmore">Learn More</a>
+                                <a href="/gallery/dirtless-wash-gallery" className='otherservices-readmore'>See Gallery</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="service-card">
+                        <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f7c127be-d17d-4563-48c3-809289e8bc00/public')` }}></div>
+                        <div className="otherservices-desc">
+                            <div>
+                                <a href='/services/interior-ceramic-coating' className='service-heading-link'>Single Stage Paint Correction</a>
+                                <p className="secondary-text">Starting at: <span>$549.99</span></p>
+                            </div>
+                            <p className="service-desc">Our Single Stage Paint Correction can fix 60%-70% of minor damage and scratches and will leave your vehicle looking shinier than ever.</p>
+
+                            <div className="otherservices-links">
+                                <a href="/services/single-stage-correction" className="otherservices-readmore">Learn More</a>
+                                <a href="/gallery/paint-correction-gallery" className='otherservices-readmore'>See Gallery</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="service-card">
+                        <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fabb5ba-d12e-4e8a-c3bb-f5901af53e00/public')` }}></div>
+                        <div className="otherservices-desc">
+                            <div>
+                                <a href='/services/interior-ceramic-coating' className='service-heading-link'>Two Stage Paint Correction</a>
+                                <p className="secondary-text">Starting at: <span>$699.99</span></p>
+                            </div>
+                            <p className="service-desc">Our 2 stage paint correction is great for getting your car's paint to a close to perfect state. This is great for show cars need that extra time and effort to get to that showroom shine.</p>
+
+                            <div className="otherservices-links">
+                                <a href="/services/two-stage-correction" className="otherservices-readmore">Learn More</a>
+                                <a href="/gallery/paint-correction-gallery" className='otherservices-readmore'>See Gallery</a>
+                            </div>
                         </div>
                     </div>
 
-                    <div className="service-card">
+                    {/* <div className="service-card">
                         <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a30c288d-c816-4a42-e313-d7fa80e04200/public')` }}></div>
                         <div className="otherservices-desc">
                             <div>
@@ -45,10 +79,10 @@ export default function OtherServices() {
 
                             <a href='/gallery/ceramic-coating-gallery' className="popular-readmore text-center">Ceramic Coating Gallery</a>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </section>
-            <a href="/Contact" className="quote-btn main-quote-btn">Get A Free Quote</a>
+            {/* <a href="/Contact" className="quote-btn main-quote-btn">Get A Free Quote</a> */}
 
             {/* <div className='separator-container'>
                 <h3 className='service-title'>COMBO DEAL <span className='new-offer'>NEW</span></h3>
