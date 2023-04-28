@@ -965,9 +965,7 @@ option {
 .otherservices-subcontainer {
   display: flex;
   flex-direction: column;
-  flex: 1;
   gap: 0.5rem;
-  font-size: 2em;
 }
 
 .otherservices-image {
@@ -975,7 +973,7 @@ option {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 250px;
+  padding-bottom: 56%;
 }
 
 .otherservices-desc {
@@ -995,7 +993,7 @@ option {
 
 .otherservices-readmore {
   /* padding: 1em; */
-  padding: 0.25em 0.5em;
+  padding: 0.25rem 1.75rem;
   font-family: 'Oswald', sans-serif;
   font-weight: bold;
   font-size: 24px;
@@ -1008,7 +1006,13 @@ option {
 
 .otherservices-readmore+.otherservices-readmore {
   background-color: rgba(0, 0, 0, 0);
+  color: var(--secondary-text-light);
   border: 2px solid var(--main-clr);
+}
+
+.otherservices-readmore+.otherservices-readmore:hover {
+  color: white;
+  background-color: #c83e0312;
 }
 
 .separator-container {
@@ -1030,7 +1034,7 @@ option {
 .service-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   text-align: left;
   /* box-shadow: 0 0 10px 5px var(--boxshadow-clr); */
   border: 2px solid var(--main-clr);
@@ -2612,7 +2616,7 @@ hr {
   } */
 
   .service-card {
-    max-width: 360px;
+    max-width: 400px;
   }
 
   .gallery-container {
@@ -2738,11 +2742,28 @@ hr {
 
   .otherservices-container {
     border: 2px solid var(--main-clr);
+    width: 90%;
+    margin: 0 auto
+  }
+
+  .service-title {
+    text-align: left;
+    padding-left: 1.5rem;
+  }
+
+  .service-title+p {
+    text-align: left;
+    padding-left: 1.5rem;
   }
 
   .otherservices-subcontainer {
     flex-direction: row;
     width: 100%;
+  }
+
+  .otherservices-links {
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .title-top {
@@ -2902,12 +2923,12 @@ hr {
     width: 55vw;
   }
 
-  .service-card {
+  /* .service-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
-  }
+  } */
 
   .addon-content-container {
     flex-wrap: wrap;
