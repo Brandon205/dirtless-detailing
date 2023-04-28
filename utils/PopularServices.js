@@ -1,139 +1,154 @@
 import React from 'react';
 
-import { BsCheck2Circle } from 'react-icons/bs';
+import { AiFillCheckCircle } from 'react-icons/ai';
+import { FaArrowRight } from 'react-icons/fa';
 
 export default function PopularServices() {
     return (
         <section className="popular-container">
-            <div className="popular-services-card">
-                <div className="popular-services-header">
-                    <a href='/services/full-interior-detail' className="service-heading-link popular-service-title">Full Interior Cleaning</a>
-                    <p className="price">Starting at: <span>$299.99</span></p>
+
+            <div className='popular-services-card'>
+                <div className='popular-img' style={{backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/be771e29-71fe-47b0-8fa3-0419d7991800/tallHD)`}}>
                 </div>
-                <div className="popular-img" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4f5cb5ee-45a7-4123-acaf-586335420600/public')` }}></div>
-
-
-                <div className="popular-desc">
-                    <ul className="checklist">
-                        <li className="checklist-item">
-                            <BsCheck2Circle className='checkcircle' />
-                            <p>Blow out the Interior with a Vortex Blowgun</p>
-                        </li>
-                        <li className="checklist-item">
-                            <BsCheck2Circle className='checkcircle' />
-                            <p>Hot Water Extraction (Only if Added)</p>
-                        </li>
-                        <li className="checklist-item">
-                            <BsCheck2Circle className='checkcircle' />
-                            <p>Vacuum out the Entire Interior</p>
-                        </li>
-                        <li className="checklist-item">
-                            <BsCheck2Circle className='checkcircle' />
-                            <p>Clean ALL Plastics/Leather</p>
-                        </li>
-                        <li className="checklist-item">
-                            <BsCheck2Circle className='checkcircle' />
-                            <p>Dress Vinyl/Leather</p>
-                        </li>
-                        <li className="checklist-item">
-                            <BsCheck2Circle className='checkcircle' />
-                            <p>Clean Door Jambs</p>
-                        </li>
-                        <li className="checklist-item">
-                            <BsCheck2Circle className='checkcircle' />
-                            <p>Clean Windows</p>
-                        </li>
-                    </ul>
+                <div className='popular-header'>
+                    <h3>Full Interior Detail</h3>
                 </div>
+                <a href="/Contact" className='choose-package'>Choose this Service <FaArrowRight /></a>
 
-                <a href='/services/full-interior-detail' className='popular-readmore'>Interior Cleaning Details</a>
+                <ul className='checklist'>
+                    <li className='checklist-item'>
+                        <AiFillCheckCircle className='check-circle' />
+                        <p>Blow out interior with a vortex blowgun</p>
+                    </li>
+                    <li className='checklist-item'>
+                        <AiFillCheckCircle className='check-circle' />
+                        <p>Steam extraction (If added/needed)</p>
+                    </li>
+                    <li className='checklist-item'>
+                        <AiFillCheckCircle className='check-circle' />
+                        <p>Vacuum out entire interior</p>
+                    </li>
+                    <li className='checklist-item'>
+                        <AiFillCheckCircle className='check-circle' />
+                        <p>Clean ALL plastics/leather</p>
+                    </li>
+                    <li className='checklist-item'>
+                        <AiFillCheckCircle className='check-circle' />
+                        <p>Dress any vinyl/leathers</p>
+                    </li>
+                    <li className='checklist-item'>
+                        <AiFillCheckCircle className='check-circle' />
+                        <p>Clean door jambs</p>
+                    </li>
+                    <li className='checklist-item'>
+                        <AiFillCheckCircle className='check-circle' />
+                        <p>Clean ALL windows/glass</p>
+                    </li>
+                </ul>
+
+                <div className='popular-link-container'>
+                    <div>
+                        <p style={{marginBottom: 0, color: '#c0c0c0', textAlign: 'left'}}>Starting At:</p>
+                        <p className='popular-pricing-price'>$299.99</p>
+                    </div>
+                    <a href="/services/full-interior-detail" className='popular-readmore'>Learn More</a>
+                </div>
             </div>
 
-            <div className="popular-services-card">
-                <div className="popular-services-header">
-                    <a href='/services/interior-exterior-detailing-combo' className="service-heading-link popular-service-title">Full Interior + Exterior + Engine Bay Combo</a>
-                    <p className="price">Starting at: <span>$374.99</span></p>
+            <div className='popular-services-card'>
+                <div className='popular-img' style={{backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/de5ece74-66af-46cb-8460-7e0246257b00/tallHD)`}}>
                 </div>
-                <div className="popular-img" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/de5ece74-66af-46cb-8460-7e0246257b00/public')` }}></div>
-
-
-                <div className="popular-desc">
-                    <ul className="checklist">
-                        <li className="checklist-item">
-                            <BsCheck2Circle className='checkcircle' />
-                            <p>Vortex Blowgun to remove loose dirt/debris</p>
-                        </li>
-                        <li className="checklist-item">
-                            <BsCheck2Circle className='checkcircle' />
-                            <p>Vacuum out the interior</p>
-                        </li>
-                        <li className="checklist-item">
-                            <BsCheck2Circle className='checkcircle' />
-                            <p>Wipe Down and dress the interior</p>
-                        </li>
-                        <li className="checklist-item">
-                            <BsCheck2Circle className='checkcircle' />
-                            <p>Full Vehicle Strip Wash</p>
-                        </li>
-                        <li className="checklist-item">
-                            <BsCheck2Circle className='checkcircle' />
-                            <p>Remove Tar and Sap</p>
-                        </li>
-                        <li className="checklist-item">
-                            <BsCheck2Circle className='checkcircle' />
-                            <p>Apply Ceramic Spray Sealant</p>
-                        </li>
-                        <li className="checklist-item">
-                            <BsCheck2Circle className='checkcircle' />
-                            <p>Clean and dress the entire Engine Bay for <span className='special-package'>FREE</span></p>
-                        </li>
-                    </ul>
+                <div className='popular-header'>
+                    <h3>The Dirt-Less Detail</h3>
                 </div>
+                <a href="/Contact" className='choose-package'>Choose this Service <FaArrowRight /></a>
 
-                <a href="/services/interior-exterior-detailing-combo" className="popular-readmore">Combo Deal Details</a>
+                <ul className='checklist'>
+                    <li className='checklist-item'>
+                        <AiFillCheckCircle className='check-circle' />
+                        <p>Blow out interior with a vortex blowgun</p>
+                    </li>
+                    <li className='checklist-item'>
+                        <AiFillCheckCircle className='check-circle' />
+                        <p>Vacuum out the interior</p>
+                    </li>
+                    <li className='checklist-item'>
+                        <AiFillCheckCircle className='check-circle' />
+                        <p>Wipe down and dress the interior</p>
+                    </li>
+                    <li className='checklist-item'>
+                        <AiFillCheckCircle className='check-circle' />
+                        <p>Full vehicle strip wash</p>
+                    </li>
+                    <li className='checklist-item'>
+                        <AiFillCheckCircle className='check-circle' />
+                        <p>Remove any tar and sap</p>
+                    </li>
+                    <li className='checklist-item'>
+                        <AiFillCheckCircle className='check-circle' />
+                        <p>Apply Ceramic Spray Sealant</p>
+                    </li>
+                    <li className='checklist-item'>
+                        <AiFillCheckCircle className='check-circle' />
+                        <p>Clean and dress the entire engine bay for <span className='special-package text-shadow'>FREE</span></p>
+                    </li>
+                </ul>
+
+                <div className='popular-link-container'>
+                    <div>
+                        <p style={{marginBottom: 0, color: '#c0c0c0', textAlign: 'left'}}>Starting At:</p>
+                        <p className='popular-pricing-price'>$374.99</p>
+                    </div>
+                    <a href="/services/interior-exterior-detailing-combo" className='popular-readmore'>Learn More</a>
+                </div>
             </div>
 
-            <div className="popular-services-card">
-                <div className="popular-services-header">
-                    <a href='/services/exterior-ceramic-coating' className="service-heading-link popular-service-title">Ceramic Coating <br />(Protect Package)</a>
-                    <p className="price">Starting at: <span>$949.99</span></p>
+            <div className='popular-services-card'>
+                <div className='popular-img' style={{backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7c93452e-cf47-4898-a618-e427e19a0e00/tallHD)`}}>
                 </div>
-                <div className="popular-img" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7c93452e-cf47-4898-a618-e427e19a0e00/public')` }}></div>
-
-                <div className="popular-desc">
-                    <ul className="checklist">
-                        <li className="checklist-item">
-                            <BsCheck2Circle className='checkcircle' />
-                            <p>Full Vehicle Strip Wash</p>
-                        </li>
-                        <li className="checklist-item">
-                            <BsCheck2Circle className='checkcircle' />
-                            <p>Full Single Stage Paint Correction Service</p>
-                        </li>
-                        <li className="checklist-item">
-                            <BsCheck2Circle className='checkcircle' />
-                            <p>Clay Bar Treatment</p>
-                        </li>
-                        <li className="checklist-item">
-                            <BsCheck2Circle className='checkcircle' />
-                            <p>Iron Decontamination Treatment</p>
-                        </li>
-                        <li className="checklist-item">
-                            <BsCheck2Circle className='checkcircle' />
-                            <p>Dress all Plastics and Tires</p>
-                        </li>
-                        <li className="checklist-item">
-                            <BsCheck2Circle className='checkcircle' />
-                            <p>Coat Paint with IGL's Kenzo Quartz Ceramic 9H Coating</p>
-                        </li>
-                        <li className="checklist-item">
-                            <BsCheck2Circle className='checkcircle' />
-                            <p>Coat Windshield and Lights as well</p>
-                        </li>
-                    </ul>
+                <div className='popular-header'>
+                    <h3>Ceramic Coating</h3>
                 </div>
+                <a href="/Contact" className='choose-package'>Choose this Service <FaArrowRight /></a>
 
-                <a href="/services/exterior-ceramic-coating" className="popular-readmore">Ceramic Coating Details</a>
+                <ul className='checklist'>
+                    <li className='checklist-item'>
+                        <AiFillCheckCircle className='check-circle' />
+                        <p>Full vehicle strip wash</p>
+                    </li>
+                    <li className='checklist-item'>
+                        <AiFillCheckCircle className='check-circle' />
+                        <p>Single stage paint correction</p>
+                    </li>
+                    <li className='checklist-item'>
+                        <AiFillCheckCircle className='check-circle' />
+                        <p>Clay bar treatment</p>
+                    </li>
+                    <li className='checklist-item'>
+                        <AiFillCheckCircle className='check-circle' />
+                        <p>Iron decontamination treatment</p>
+                    </li>
+                    <li className='checklist-item'>
+                        <AiFillCheckCircle className='check-circle' />
+                        <p>Dress all plastics and tires</p>
+                    </li>
+                    <li className='checklist-item'>
+                        <AiFillCheckCircle className='check-circle' />
+                        <p>Coat paint with IGL's Quartz Ceramic 9H Coating</p>
+                    </li>
+                    <li className='checklist-item'>
+                        <AiFillCheckCircle className='check-circle' />
+                        <p>Coat windshield and lights</p>
+                    </li>
+                </ul>
+
+                <div className='popular-link-container'>
+                    <div>
+                        <p style={{marginBottom: 0, color: '#c0c0c0', textAlign: 'left'}}>Starting At:</p>
+                        <p className='popular-pricing-price'>$949.99</p>
+                    </div>
+                    <a href="/services/exterior-ceramic-coating" className='popular-readmore'>Learn More</a>
+                </div>
             </div>
         </section>
     )

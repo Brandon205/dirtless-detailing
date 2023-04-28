@@ -737,33 +737,122 @@ option {
 
 /** Home Page Services CSS **/
 .popular-container {
+  padding-top: 7vh;
+  width: 100%;
+  padding: 7vh 5vw;
   display: flex;
   flex-direction: column;
-  flex: 1;
-  margin-top: 3rem;
+  align-items: center;
+  gap: 1rem;
 }
 
 .popular-services-card {
-  box-shadow: 0 0 10px 5px var(--boxshadow-clr);
+  background-color: var(--contact-bkg-lighter);
   width: 90%;
   z-index: 0;
-  border-radius: 1rem;
-  margin: 1em auto;
   position: relative;
+  border: 3px solid var(--main-clr);
+  font-size: 1.1em;
+  height: 100%
 }
 
-.popular-services-card h2 {
-  margin: 1rem auto 0 auto;
-  letter-spacing: 2;
-  font-weight: 600;
+.popular-img {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 100%;
 }
 
-.popular-services-header {
-  position: absolute;
+.popular-link-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+
+.popular-readmore {
+  display: inline-block;
+  padding: 0.5em 5%;
+  background-color: var(--main-clr);
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.25s;
+  box-shadow: 1px 4px 7px black;
+  border-radius: 100px;
+}
+
+.popular-readmore:hover {
+  background-color: var(--main-clr-hover);
+}
+
+.popular-header {
   width: 100%;
-  background-color: #636364c4;
-  top: 1rem;
-  z-index: 5;
+  display: flex;
+  justify-content: center;
+  padding: 0 0.75rem;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.popular-header h3 {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 800;
+  font-size: 3em;
+  text-shadow: 1px 4px 5px #00000083;
+}
+
+.popular-header a {
+  font-size: 0.9em;
+  text-decoration: none;
+  color: var(--funnelMain);
+  margin: 0 auto;
+}
+
+.choose-package {
+  text-align: left;
+  display: block;
+  color: var(--secondary-text-light);
+  padding-left: 1rem;
+  text-shadow: 1px 4px 5px #00000083;
+}
+
+.choose-package:hover {
+  color: white;
+}
+
+.check-circle {
+  color: var(--main-clr);
+  margin-right: 0.5rem;
+}
+
+.checklist {
+  list-style: none;
+  flex-grow: 1;
+  display: inline-block;
+  padding-left: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  width: 100%;
+}
+
+.checklist-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 7px
+}
+
+.checklist-item p {
+  display: inline-block;
+  margin: 0;
+  text-align: left;
 }
 
 .service-heading-subtitle {
@@ -785,28 +874,6 @@ option {
 
 .service-heading-link:hover {
   color: gray;
-}
-
-.popular-service-title {
-  padding-top: 0.25rem;
-  color: white;
-}
-
-.popular-service-title:hover {
-  color: lightgray;
-}
-
-.popular-desc {
-  padding: 0 1em;
-}
-
-.popular-img {
-  position: relative;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 1rem 1rem 0 0;
-  height: 350px;
 }
 
 .page-subheading {
@@ -913,28 +980,6 @@ option {
   gap: 2rem;
 }
 
-.checklist {
-  list-style: none;
-  display: inline-block;
-  padding-left: 0;
-  font-size: 1.1rem;
-  font-weight: 300;
-  width: 95%;
-}
-
-.checklist-item {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 7px
-}
-
-.checklist-item p {
-  display: inline-block;
-  margin: 0;
-  text-align: left;
-}
-
 .checkcircle {
   color: var(--main-clr);
   flex: 0 0 auto;
@@ -997,7 +1042,6 @@ option {
 }
 
 .otherservices-readmore {
-  /* padding: 1em; */
   padding: 0.25rem 1.75rem;
   font-family: 'Oswald', sans-serif;
   font-weight: bold;
@@ -1072,7 +1116,7 @@ option {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   color: white;
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 
 .readmore {
@@ -1092,22 +1136,6 @@ option {
 
 .readmore p {
   margin: 0;
-}
-
-.popular-readmore {
-  display: inline-block;
-  padding: 0.75em 10%;
-  margin-bottom: 0.75rem;
-  background-color: var(--main-clr);
-  border-radius: 0.5rem;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.popular-readmore:hover {
-  background-color: var(--main-clr-hover);
 }
 
 /** Home Page Review CSS **/
@@ -1936,6 +1964,21 @@ hr {
   padding: 0;
 }
 
+.popular-pricing-price {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+  overflow-wrap: break-word;
+  hyphens: manual;
+  padding: 0 0 2.5rem 0;
+  padding-bottom: 0;
+  text-shadow: 1px 4px 7px black;
+}
+
 .additions-container {
   display: flex;
   justify-content: space-between;
@@ -2395,15 +2438,6 @@ hr {
   margin-left: 0.5rem;
 }
 
-.checklist-title {
-  margin: 0;
-  font-size: 1.4em;
-  padding: 0.5rem;
-  background-color: var(--main-clr);
-  color: white;
-  width: 100% border-radius 1rem 1rem 0 0;
-}
-
 .service-bkg {
   background: #212327;
   color: white;
@@ -2593,34 +2627,17 @@ hr {
   }
 
   .popular-container {
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
   }
 
-  .popular-img {
-    height: 375px;
-  }
-
-  .popular-services-card {
-    max-width: 360px;
-  }
-
-  /* .otherservices-container {
-    flex-wrap: wrap;
+  .popular-link-container {
     flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-  } */
+  }
 
-  /* .navigation-small {
-    backdrop-filter: saturate(180%) blur(20px);
-    background-color: var(--nav-bkg-clr-transparent);
-    transform: scale(90%);
-    border-radius: 15px;
-    transition: 0.4s;
-  } */
+  .popular-readmore {
+    padding: 0.55em 10%;
+  }
 
   .service-card {
     max-width: 400px;
@@ -2885,30 +2902,6 @@ hr {
     font-size: 3em;
   }
 
-  .popular-img {
-    height: 450px;
-  }
-
-  .popular-container {
-    justify-content: space-around;
-  }
-
-  .popular-desc {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .popular-services-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-
-  .popular-readmore {
-    margin: 0 auto 1rem auto;
-  }
-
   .service-aside {
     display: flex;
   }
@@ -2929,13 +2922,6 @@ hr {
   .combo-container {
     width: 55vw;
   }
-
-  /* .service-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
-  } */
 
   .addon-content-container {
     flex-wrap: wrap;
@@ -3051,11 +3037,6 @@ hr {
   .contact-information {
     max-width: 800px;
   }
-
-  /* .slider-container {
-    width: 600px;
-    height: 800px;
-  } */
 
   .sidebyside {
     width: 100vw;
