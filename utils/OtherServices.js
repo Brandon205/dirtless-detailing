@@ -2,9 +2,7 @@ import React from 'react';
 
 export default function OtherServices() {
     return (
-        <div style={{}}>
-            {/* <div className='separator-container'>
-            </div> */}
+        <div style={{display: 'flex', flexDirection: 'column', gap: '4em'}}>
             <section className="otherservices-container">
                 <h2 className='service-title'>Exterior Services</h2>
                 <p>Need an exterior detail? We've got you covered here!</p>

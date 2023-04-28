@@ -320,11 +320,11 @@ header h1 {
 
 .home-header {
   position: relative;
-  /* background-color: var(--contact-bkg) */
 }
 
 .landing-div {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   font-size: 0.9rem;
@@ -370,6 +370,13 @@ header h1 {
   grid-area: icon;
 }
 
+.header-link-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
 .header-desc {
   font-size: 1.8em;
   margin: 0;
@@ -390,7 +397,7 @@ header h1 {
 } */
 
 .main-title {
-  font-size: 4em;
+  font-size: 3em;
   font-weight: bold;
   color: white;
   margin: 0;
@@ -418,8 +425,6 @@ header h1 {
   background-size: cover;
   height: 90vh;
   width: 100%;
-  /* margin: 0 auto;
-  border-radius: 32px; */
   z-index: -5;
 }
 
@@ -1000,6 +1005,7 @@ option {
   background-color: var(--main-clr);
   border-radius: 100px;
   text-decoration: none;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.515);
   color: white;
   text-align: center;
 }
@@ -1034,6 +1040,7 @@ option {
 .service-card {
   display: flex;
   flex-direction: column;
+  box-shadow: 0 4px 6px #0000007c;
   /* justify-content: space-between; */
   text-align: left;
   /* box-shadow: 0 0 10px 5px var(--boxshadow-clr); */
@@ -3021,6 +3028,16 @@ hr {
 
   .header-icons-container {
     gap: 10rem;
+  }
+
+  .header-link-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+  }
+
+  .main-title {
+    font-size: 4em;
   }
 
   .servicepage-heading {

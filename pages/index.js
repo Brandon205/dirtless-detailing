@@ -12,7 +12,7 @@ import { FcGoogle } from 'react-icons/fc';
 import { BsCalendarCheck } from 'react-icons/bs';
 import { BiCertification } from 'react-icons/bi';
 import { MdOutlinePermPhoneMsg } from 'react-icons/md';
-import { FaRegStar, FaMapMarkedAlt, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaRegStar, FaMapMarkedAlt } from 'react-icons/fa';
 
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { HiOutlineClipboardCheck } from 'react-icons/hi';
@@ -93,14 +93,13 @@ export default function Home() {
             <header className="home-header">
                 <div className="maincover" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover')` }}></div>
                 <div className='landing-div'>
-                    {/* <h1 className='title-top'>Your Bonney Lake <br /><span className='title-bottom'>Detailing & Ceramic Coating Specialists</span></h1> */}
                     <h1 className='main-title'>Your Bonney Lake
                         <span>Auto Detailing</span>
                         <span>&</span>
                         <span>Ceramic Coating</span>
                         Specialists
                     </h1>
-                    <div style={{ display: 'flex', gap: 1 + 'rem' }}>
+                    <div className='header-link-container'>
                         <a href="/Contact" className='quote-btn'><HiOutlineClipboardCheck />Get a Free Quote</a>
                         <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
                     </div>
