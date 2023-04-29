@@ -38,12 +38,14 @@ const iconArr = {
 
 {/* <PricingComponent title='Ceramic Coating' prices={['949', '949', '1099', '1099', '1249', '1249']} addons={[{}]} labels={['label1', 'label2', 'needs to have 6 labels...']} /> */}
 export default function PricingComponent({prices = props.prices, ceramic = false, addons = [], labels = ['2-Door Cars', 'Quarter Ton Trucks', '4-Door Cars', "Mid-Size SUV's", '4-Door Trucks', "3-Row SUV's, Minivans"]}) {
-    const [currVal, setCurrVal] = useState(1);
-    const [currPrice, setCurrPrice] = useState(0);
+    const [currVal, setCurrVal] = useState(2);
+    const [animate, setAnimate] = useState(false);
     
     useEffect(() => {
-        setCurrPrice(prices[currVal])
-    }, [currVal])
+        setTimeout(() => {
+            setAnimate(true)
+        }, 1500)
+    }, [])
 
     let content = '';
     if (addons.length > 0) {
@@ -144,10 +146,12 @@ export default function PricingComponent({prices = props.prices, ceramic = false
                 <div className='pricing__pricecard-container'>
                     <strong className='pricing__pricecard-pricebox'>
                         <span className='pricing__pricecard-price'>
-                            $
-                            <AnimatedNumbers includeComma animateToNumber={currPrice + '.99'} configs={[
-                                { mass: 1, tension: 320, friction: 100 },
-                            ]}></AnimatedNumbers>
+                            ${animate ? 
+                                <AnimatedNumbers includeComma animateToNumber={prices[currVal] + '.99'} configs={[
+                                    { mass: 1, tension: 320, friction: 100 },
+                                ]}></AnimatedNumbers> : 
+                                prices[currVal] + '.99'
+                            }
                         </span>
                     </strong>
                     <p>+Desired Add-ons <ImPointDown /></p>
