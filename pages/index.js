@@ -190,17 +190,23 @@ export default function Home() {
 
                 <OtherServices />
 
-                <div className='separator-container'>
+                {/* <div className='separator-container'>
                     <h3 className='service-title'>REVIEWS</h3>
+                </div> */}
+                <div className="general-container new-heading-container" style={{margin: '7vh auto'}}>
+                    <strong className="above-heading">Testimonials</strong>
+                    <h3 className="new-heading">Read some of the reviews from our valued customers!</h3>
+                    <p style={{ margin: 0, padding: '1rem 0' }}>Check out more reviews on our <a style={{ color: 'dodgerblue' }} target='_blank' rel='noopener' href="https://www.facebook.com/DirtLessDetailing/reviews">Facebook</a> or <a style={{ color: 'dodgerblue' }} target='_blank' rel='noopener' href="https://www.google.com/localservices/prolist?g2lbs=ADZRdktLAaGKKobG3aZn2_Qd9tpM-f3ifTKQp4hXsZnMmVk1USpK7Ha4kZIeLdSCTp26Z3uD8UBdDwRY7Zqn7XZatg-9z1GI86mqJXoiFQCA1rCg0Vis_yQK9JiR9qrRMObWwAegw9aPUbKd01T05_4R3o4ry_qhHA%3D%3D&hl=en-US&gl=us&cs=1&ssta=1&q=dirtless%20detailing&oq=dirtless%20detailing&slp=MgA6HENoTUlxZVd0Nkl2SV9nSVY2UTZ0QmgyZWJnaVJSAggCYAB6-gFDaEprYVhKMGJHVnpjeUJrWlhSaGFXeHBibWRJNnZqVDFhcTRnSUFJV2h3UUFCQUJHQUFZQVNJU1pHbHlkR3hsYzNNZ1pHVjBZV2xzYVc1bmtnRVZZMkZ5WDJSbGRHRnBiR2x1WjE5elpYSjJhV05sbWdFa1EyaGtSRk5WYUU1TlJ6bHVVekJXU2xFd1JtNVRWVkpEV2pKYVNHTnVhRzVTVWtGQ3FnRTZFQUV5SGhBQklocEZwOXktNVEwdWdLbGRqT2pnOEdvLWlaQlZ5NUdlSjh3QjV6SVdFQUlpRW1ScGNuUnNaWE56SUdSbGRHRnBiR2x1Wi1BQkFBkgG0AgoNL2cvMTFzYnBjOV8zYgoNL2cvMTFmcDJwN3dtbgoNL2cvMTFrMndndnhyegoNL2cvMTFzbXZfbm13MQoLL2cvMXRmM2I3bHQKDS9nLzExZ2w0dDJkY20KDC9nLzEyNjBieGxoNgoNL2cvMTFwMTN5MnQ4cQoNL2cvMTFjbnpuX3p3agoNL2cvMTFqcTlwcGtfNwoNL2cvMTFneTRsejU5aAoNL2cvMTF0ZDhjN195NQoNL2cvMTFrNDVzNzVmcwoNL2cvMTFnMnhjbHBxMwoNL2cvMTFzNTFrN2YzdAoNL2cvMTFzM2YwMHZzcAoML2cvMTFnem44M3diCg0vZy8xMW5uMGhzanF2Cg0vZy8xMWZxcXoxdmdwCg0vZy8xMXQ0ZmprMDltEgQSAggBEgQKAggB&src=2&spp=Cg0vZy8xMXNicGM5XzNiOtABV2h3UUFCQUJHQUFZQVNJU1pHbHlkR3hsYzNNZ1pHVjBZV2xzYVc1bmtnRVZZMkZ5WDJSbGRHRnBiR2x1WjE5elpYSjJhV05sbWdFa1EyaGtSRk5WYUU1TlJ6bHVVekJXU2xFd1JtNVRWVkpEV2pKYVNHTnVhRzVTVWtGQ3FnRTZFQUV5SGhBQklocEZwOXktNVEwdWdLbGRqT2pnOEdvLWlaQlZ5NUdlSjh3QjV6SVdFQUlpRW1ScGNuUnNaWE56SUdSbGRHRnBiR2x1Wnc9PQ%3D%3D&serdesk=1&lrlstt=1682530844021&ved=2ahUKEwiSvKHoi8j-AhWfHjQIHT0kD2MQvS56BAgwEAE&scp=ChpnY2lkOmNhcl9kZXRhaWxpbmdfc2VydmljZRJgEhIJeUAf2e38kFQRVTQwKEuFSMMiMkRpcnQtTGVzcyBEZXRhaWxpbmcsIDkzMDUgMjA1dGggQXZlIEUsIEJvbm5leSBMYWtlKhQNCAEeHBXFWjC3HQgBHhwlxVowtzAAGhJkaXJ0bGVzcyBkZXRhaWxpbmciEmRpcnRsZXNzIGRldGFpbGluZyoVQ2FyIGRldGFpbGluZyBzZXJ2aWNl#ts=3">Google</a> page.</p>
                 </div>
 
-                <div className='service-bkg-lighter'>
+                <div className='service-bkg'>
                     <div className="reviews-container">
-                        <Carousel className="review-carousel" selectedItem={currentSlide} autoPlay={smallScreen ? false : true} centerSlidePercentage={50} centerMode={smallScreen ? false : true} style={styles} infiniteLoop stopOnHover showThumbs={false} showArrows interval={6000} emulateTouch>
+                        <Carousel className="review-carousel" selectedItem={currentSlide} centerSlidePercentage={50} autoPlay={smallScreen ? false : true} centerMode={smallScreen ? false : true} style={styles} infiniteLoop stopOnHover showThumbs={false} showArrows interval={6000} emulateTouch>
                             <div className='review-card'>
                                 <div className='lower-review'>
                                     <div className='review-top'>
                                         <p className='review-text'>Brenden answered the first phone call gave a quote over the phone, I did not have to bring the car anywhere. <span className='highlight'>He provided a value and was on time and was extremely thorough.</span> Did not attempt to upsell me and increase price, day of the appointment, like another Bonney Lake detailer did. Can't recommend Dirt-Less Detail enough. My wife's Jeep Cherokee looks new!</p>
+                                        <hr className="review-hr" />
                                     </div>
                                     <div className='review-bottom'>
                                         <div style={{ textAlign: 'left' }}>
@@ -218,6 +224,7 @@ export default function Home() {
                                 <div className='lower-review'>
                                     <div className='review-top'>
                                         <p className='review-text'>Had an issue with the interior of a vehicle that had been in a garage for too long. Dirt-Less handled it professionally and quickly. <span className='highlight'>We will definitely keep going back for our needs.</span></p>
+                                        <hr className="review-hr" />
                                     </div>
                                     <div className='review-bottom'>
                                         <div style={{ textAlign: 'left' }}>
@@ -235,6 +242,7 @@ export default function Home() {
                                 <div className='lower-review'>
                                     <div className='review-top'>
                                         <p className='review-text'>My kids left a gal of milk in the back of my car, needless to say the nice warm weather it leaked all over and soon smelled horrid. He did a fantastic job, <span className='highlight'>car smells and looks brand new, even got every hair out from my pups.</span> Very happy I got his number as a referral from a friend.</p>
+                                        <hr className="review-hr" />
                                     </div>
                                     <div className='review-bottom'>
                                         <div style={{ textAlign: 'left' }}>
@@ -252,6 +260,7 @@ export default function Home() {
                                 <div className='lower-review'>
                                     <div className='review-top'>
                                         <p className='review-text'>Brenden does an amazing job. My car looks amazing. <span className='highlight'>He is super reasonable in his pricing and was very efficient.</span> Will definitely continue to use his service for all our vehicles.</p>
+                                        <hr className="review-hr" />
                                     </div>
                                     <div className='review-bottom'>
                                         <div style={{ textAlign: 'left' }}>
@@ -269,6 +278,7 @@ export default function Home() {
                                 <div className='lower-review'>
                                     <div className='review-top'>
                                         <p className='review-text'>Brought in my 12 Escalade and he worked his magic on both inside and outside. <span className='highlight'>Brenden is very good at what he does, the vehicle looks amazing. Better than it was when I bought it.</span> Thank you so much for getting me into your schedule. I am Extremely pleased with the outcome of your services.</p>
+                                        <hr className="review-hr" />
                                     </div>
                                     <div className='review-bottom'>
                                         <div style={{ textAlign: 'left' }}>
@@ -285,7 +295,8 @@ export default function Home() {
                             <div className='review-card'>
                                 <div className='lower-review'>
                                     <div className='review-top'>
-                                        <p className='review-text'>Had a whole half gallon of almond chocolate milk spilled into my trunk thanks to Walmart pickup.<span className='highlight'> After calling many detailing shops (whom most were rude and not helpful) Brenden at Dirt-Less Detail was very polite and eager to help.</span> Despite his busy schedule he fit me in asap and took care of my weird circumstance. It didn't take long to clean the trunk and because of it he didn't charge me for the cleaning. He just told me to refer him to others which I'll definitely do!! While other people turned me away because it was such a small job or told me they would have to charge me full price anyway… Dirt-Less Detailing stepped up and helped me out of the kindness of their heart. We need more businesses like that around here!! Way to go Brenden at Dirt-Less Detail. Thanks again.</p>
+                                        <p className='review-text'>Had a whole half gallon of almond chocolate milk spilled into my trunk thanks to Walmart pickup.<span className='highlight'> After calling many detailing shops (whom most were rude and not helpful) Brenden at Dirt-Less Detail was very polite and eager to help.</span> Despite his busy schedule he fit me in asap and took care of my weird circumstance. It didn't take long to clean the trunk and because of it he didn't charge me for the cleaning. Way to go Brenden at Dirt-Less Detail. Thanks again.</p>
+                                        <hr className="review-hr" />
                                     </div>
                                     <div className='review-bottom'>
                                         <div style={{ textAlign: 'left' }}>
@@ -304,11 +315,30 @@ export default function Home() {
                             <div className='carousel-button' onClick={() => back()}><MdOutlineArrowBackIos /></div>
                             <div className='carousel-button' onClick={() => next()}><MdOutlineArrowForwardIos /></div>
                         </div>
-                        <p style={{ margin: 0, padding: '1rem 0' }}>Check out more reviews on our <a style={{ color: 'dodgerblue' }} target='_blank' rel='noopener' href="https://www.facebook.com/DirtLessDetailing/reviews">Facebook</a> or <a style={{ color: 'dodgerblue' }} target='_blank' rel='noopener' href="https://www.google.com/localservices/prolist?g2lbs=ADZRdktLAaGKKobG3aZn2_Qd9tpM-f3ifTKQp4hXsZnMmVk1USpK7Ha4kZIeLdSCTp26Z3uD8UBdDwRY7Zqn7XZatg-9z1GI86mqJXoiFQCA1rCg0Vis_yQK9JiR9qrRMObWwAegw9aPUbKd01T05_4R3o4ry_qhHA%3D%3D&hl=en-US&gl=us&cs=1&ssta=1&q=dirtless%20detailing&oq=dirtless%20detailing&slp=MgA6HENoTUlxZVd0Nkl2SV9nSVY2UTZ0QmgyZWJnaVJSAggCYAB6-gFDaEprYVhKMGJHVnpjeUJrWlhSaGFXeHBibWRJNnZqVDFhcTRnSUFJV2h3UUFCQUJHQUFZQVNJU1pHbHlkR3hsYzNNZ1pHVjBZV2xzYVc1bmtnRVZZMkZ5WDJSbGRHRnBiR2x1WjE5elpYSjJhV05sbWdFa1EyaGtSRk5WYUU1TlJ6bHVVekJXU2xFd1JtNVRWVkpEV2pKYVNHTnVhRzVTVWtGQ3FnRTZFQUV5SGhBQklocEZwOXktNVEwdWdLbGRqT2pnOEdvLWlaQlZ5NUdlSjh3QjV6SVdFQUlpRW1ScGNuUnNaWE56SUdSbGRHRnBiR2x1Wi1BQkFBkgG0AgoNL2cvMTFzYnBjOV8zYgoNL2cvMTFmcDJwN3dtbgoNL2cvMTFrMndndnhyegoNL2cvMTFzbXZfbm13MQoLL2cvMXRmM2I3bHQKDS9nLzExZ2w0dDJkY20KDC9nLzEyNjBieGxoNgoNL2cvMTFwMTN5MnQ4cQoNL2cvMTFjbnpuX3p3agoNL2cvMTFqcTlwcGtfNwoNL2cvMTFneTRsejU5aAoNL2cvMTF0ZDhjN195NQoNL2cvMTFrNDVzNzVmcwoNL2cvMTFnMnhjbHBxMwoNL2cvMTFzNTFrN2YzdAoNL2cvMTFzM2YwMHZzcAoML2cvMTFnem44M3diCg0vZy8xMW5uMGhzanF2Cg0vZy8xMWZxcXoxdmdwCg0vZy8xMXQ0ZmprMDltEgQSAggBEgQKAggB&src=2&spp=Cg0vZy8xMXNicGM5XzNiOtABV2h3UUFCQUJHQUFZQVNJU1pHbHlkR3hsYzNNZ1pHVjBZV2xzYVc1bmtnRVZZMkZ5WDJSbGRHRnBiR2x1WjE5elpYSjJhV05sbWdFa1EyaGtSRk5WYUU1TlJ6bHVVekJXU2xFd1JtNVRWVkpEV2pKYVNHTnVhRzVTVWtGQ3FnRTZFQUV5SGhBQklocEZwOXktNVEwdWdLbGRqT2pnOEdvLWlaQlZ5NUdlSjh3QjV6SVdFQUlpRW1ScGNuUnNaWE56SUdSbGRHRnBiR2x1Wnc9PQ%3D%3D&serdesk=1&lrlstt=1682530844021&ved=2ahUKEwiSvKHoi8j-AhWfHjQIHT0kD2MQvS56BAgwEAE&scp=ChpnY2lkOmNhcl9kZXRhaWxpbmdfc2VydmljZRJgEhIJeUAf2e38kFQRVTQwKEuFSMMiMkRpcnQtTGVzcyBEZXRhaWxpbmcsIDkzMDUgMjA1dGggQXZlIEUsIEJvbm5leSBMYWtlKhQNCAEeHBXFWjC3HQgBHhwlxVowtzAAGhJkaXJ0bGVzcyBkZXRhaWxpbmciEmRpcnRsZXNzIGRldGFpbGluZyoVQ2FyIGRldGFpbGluZyBzZXJ2aWNl#ts=3">Google</a> page.</p>
                     </div>
                 </div>
 
+                <hr className="pricing__hr" />
+
+                <div className="general-container new-heading-container">
+                    <h3 className="new-heading new-heading-center">Our shop location and mobile services</h3>
+                </div>
                 <section className='mobileservices-container'>
+                    <div className='mobileservices-details'>
+                        <h4>Mobile Service Information:</h4>
+                        <ul>
+                            <li>We can come to you to perform our details with most of our services as long as the weather cooperates. Some services that you will need to come to us for are:</li>
+                            <ul>
+                                <li>Paint Correction (Single and Two Stage)</li>
+                                <li>Ceramic Coatings</li>
+                            </ul>
+                            <li>For our mobile services we currently travel out to the following cities:</li>
+                            <ul>
+                                <li>Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Lake Tapps, Federal Way, Orting, South Prairie Tehaleh, Black Diamond, Milton, Edgewood, and Graham</li>
+                            </ul>
+                            <li><span className="special-package">Note:</span> For Services totaling less than $200 we do charge a small $1/mile from our shop location fee.</li>
+                        </ul>
+                    </div>
                     <div className='map'>
                         <iframe title="Map of Dirt-Less Detailing location" width={smallScreen ? '250' : '500'} height={smallScreen ? '300' : '400'} style={{ border: 0 }} loading="lazy" src={`https://www.google.com/maps/embed/v1/place?zoom=15&q=place_id:ChIJxxfUWqz7kFQRotRs8MwWDRE&key=${process.env.GOOGLE_MAPS}`}></iframe>
                     </div>
