@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { GiPoliceBadge, GiSteam, GiCarDoor, GiFallingRocks, GiSmokeBomb, GiCarSeat, GiRolledCloth } from 'react-icons/gi';
 import { AiFillClockCircle, AiFillCalendar } from 'react-icons/ai';
 import { FaDog } from 'react-icons/fa';
@@ -6,6 +6,7 @@ import { ImPointDown } from 'react-icons/im';
 import { BsFillArrowUpCircleFill } from 'react-icons/bs';
 import { RiCarWashingFill } from 'react-icons/ri';
 import { TbEngine } from 'react-icons/tb';
+// import AnimatedNumbers from 'react-animated-numbers';
 
 import dynamic from "next/dynamic";
 const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
@@ -37,7 +38,12 @@ const iconArr = {
 
 {/* <PricingComponent title='Ceramic Coating' prices={['949', '949', '1099', '1099', '1249', '1249']} addons={[{}]} labels={['label1', 'label2', 'needs to have 6 labels...']} /> */}
 export default function PricingComponent({prices = props.prices, ceramic = false, addons = [], labels = ['2-Door Cars', 'Quarter Ton Trucks', '4-Door Cars', "Mid-Size SUV's", '4-Door Trucks', "3-Row SUV's, Minivans"]}) {
-    const [currVal, setCurrVal] = useState(2);
+    const [currVal, setCurrVal] = useState(1);
+    const [currPrice, setCurrPrice] = useState(0);
+    
+    useEffect(() => {
+        setCurrPrice(prices[currVal])
+    }, [currVal])
 
     let content = '';
     if (addons.length > 0) {
@@ -139,7 +145,7 @@ export default function PricingComponent({prices = props.prices, ceramic = false
                     <strong className='pricing__pricecard-pricebox'>
                         <span className='pricing__pricecard-price'>
                             $
-                            <AnimatedNumbers includeComma animateToNumber={prices[currVal] + '.99'} configs={[
+                            <AnimatedNumbers includeComma animateToNumber={currPrice + '.99'} configs={[
                                 { mass: 1, tension: 320, friction: 100 },
                             ]}></AnimatedNumbers>
                         </span>
