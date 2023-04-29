@@ -110,7 +110,7 @@ export default function MyApp({ Component, pageProps }) {
                                         <hr className="nav-hr" />
                                         <h4 className='sub-menu-header'>COMBO DEALS</h4>
                                         <div className='sub-menu-div' onClick={() => setNav('none')}>
-                                            <a href="/services/interior-exterior-detailing-combo" className='menu-link'><GiCarKey /> Interior + Exterior Combo</a>
+                                            <a href="/services/interior-exterior-detailing-combo" className='menu-link'><GiCarKey /> The Dirt-Less Detail</a>
                                         </div>
                                         <hr className="nav-hr" />
                                         <h4 className='sub-menu-header'>INTERIOR CLEANING SERVICES</h4>
@@ -194,12 +194,12 @@ export default function MyApp({ Component, pageProps }) {
                     <h3>INTERIOR</h3>
                     <a href="/services/full-interior-detail" className='footer-link'>Full Interior Cleaning</a>
                     <a href="/services/biohazard-cleaning" className='footer-link'>Smoke / Biohazard / Mold Removal</a>
-                    <a href="/services/interior-exterior-detailing-combo" className='footer-link'>Interior + Exterior Combo</a>
+                    <a href="/services/interior-exterior-detailing-combo" className='footer-link'>The Dirt-Less Detail</a>
                 </div>
                 <div className="footer-content-card">
                     <h3>EXTERIOR</h3>
                     <a href="/services/dirtless-wash" className='footer-link'>Dirt-Less Wash</a>
-                    <a href="/services/interior-exterior-detailing-combo" className='footer-link'>Interior + Exterior Combo</a>
+                    <a href="/services/interior-exterior-detailing-combo" className='footer-link'>The Dirt-Less Detail</a>
                 </div>
                 <div className="footer-content-card">
                     <h3>CORRECTION SERVICES</h3>

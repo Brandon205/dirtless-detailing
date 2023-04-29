@@ -50,7 +50,7 @@ export default function Combo() {
       </Head>
       <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2f40a30b-c1c1-4dba-3b4b-9f3521eaa800/cover')`}}></div>
       <div className="servicepage-header">
-        <h1>Full Interior and Exterior Combo</h1>
+        <h1>The Dirt-Less Detail</h1>
         <h2 className='page-subheading'>Full Interior Cleaning, Dirt-Less Wash, and an Engine Bay Cleaning on us!</h2>
         <div className='header-buttons'>
           <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
@@ -78,7 +78,7 @@ export default function Combo() {
             </main>
 
             <div style={{backgroundColor: 'white', color: 'black', paddingTop: '14vh'}}>
-              <h2 className='cleaning-process-title text-xl'>Our Combo Cleaning Process</h2>
+              <h2 className='cleaning-process-title text-xl'>The Dirt-Less Detail Cleaning Process</h2>
               <ol className='list'>
                 <li className="item">
                   <div className="step-number-container">

@@ -498,7 +498,7 @@ export default function Contact() {
                         <p style={{ marginTop: 0 }}>(Includes a Full Interior With Extraction, Dirt-Less Wash, and a <span className='special-package'>FREE</span> Engine Bay Cleaning!)</p>
                         <div>
                             <input type="checkbox" name="combo" id='combo' className='checkbox-input' onClick={() => handleIntSelect()} />
-                            <label htmlFor="combo" className='checkbox-label'>Full Interior and Exterior Combo <span className='special-package italic'>($350-$700)</span></label>
+                            <label htmlFor="combo" className='checkbox-label'>The Dirt-Less Detail <span className='special-package italic'>($350-$700)</span></label>
                         </div>
                     </div>
 
