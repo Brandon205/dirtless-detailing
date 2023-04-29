@@ -112,7 +112,7 @@ export default function SinglePC() {
                   <p>Want to compare this to our Two Stage Paint Correction? Check out our <a href='/detailing/correction' className='aside-link'>comparison</a> page for more details.</p>
                 </div>
                 <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/9ad6bfa1-52e8-4349-db4c-646a0a51f000/public')`}}>
-                  <img style={{visibility: 'hidden'}} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/9ad6bfa1-52e8-4349-db4c-646a0a51f000/public" />
+                  <img style={{visibility: 'hidden'}} alt="Side view of a Ford F350 after our paint correction service" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/9ad6bfa1-52e8-4349-db4c-646a0a51f000/public" />
                 </div>
               </div>
             </main>

@@ -110,13 +110,13 @@ export default function TwoPC() {
                   <p>We'll decide from here what we can safely remove from your paint. It's not only about getting rid of as many flaws as you can. In order to maintain the quality of the paint, it's also important to determine when enough is enough.</p>
                 </div>
                 <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fabb5ba-d12e-4e8a-c3bb-f5901af53e00/public')`}}>
-                  <img style={{visibility: 'hidden'}} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fabb5ba-d12e-4e8a-c3bb-f5901af53e00/public" />
+                  <img style={{visibility: 'hidden'}} alt="Side view of a truck after our 2 stage paint correction" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fabb5ba-d12e-4e8a-c3bb-f5901af53e00/public" />
                 </div>
               </div>
 
               <div className="service-explain">
                 <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/08914f28-3d2e-421e-c846-8f15062e0000/public')`}}>
-                  <img style={{visibility: 'hidden'}} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/08914f28-3d2e-421e-c846-8f15062e0000/public" />
+                  <img style={{visibility: 'hidden'}} alt="corner view of a car after our two stage paint correction" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/08914f28-3d2e-421e-c846-8f15062e0000/public" />
                 </div>
                 <div className="text-left">
                   <h2 className="text-large mt-0">Maintenance Commitment</h2>

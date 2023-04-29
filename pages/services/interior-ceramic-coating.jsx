@@ -163,7 +163,7 @@ export default function IntCoatings() {
                                         <p>Typically both our fabric and leather interior coatings will protect your vehicle for about a year before they should be reapplied.</p>
                                     </div>
                                     <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a196c77-cb1a-42f9-479b-8fdbe3c14500/public')`}}>
-                                        <img style={{visibility: 'hidden'}} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a196c77-cb1a-42f9-479b-8fdbe3c14500/public" />
+                                        <img style={{visibility: 'hidden'}} alt="Cleaned and coated seat of an Infiniti" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a196c77-cb1a-42f9-479b-8fdbe3c14500/public" />
                                     </div>
                                 </div>
                             </main>

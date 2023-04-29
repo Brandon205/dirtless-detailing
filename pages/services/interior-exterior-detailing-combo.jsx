@@ -71,7 +71,7 @@ export default function Combo() {
                   <p>Together, these three services will leave your car looking and feeling like new again, both inside and out. Don't settle for a subpar detailing job - trust our team of experts to give your car the care it deserves. Book your appointment today!</p>
                 </div>
                 <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3031c630-d6f2-48fc-1bb4-62844fbd5a00/public')`}}>
-                  <img style={{visibility: 'hidden'}} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3031c630-d6f2-48fc-1bb4-62844fbd5a00/public" />
+                  <img style={{visibility: 'hidden'}} alt="cleaned drivers seat area of a Mazda, clean engine bay area of Mazda, and the cleaned exterior of the Mazda" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3031c630-d6f2-48fc-1bb4-62844fbd5a00/public" />
                 </div>
               </div>
               <br className='extra-space' />

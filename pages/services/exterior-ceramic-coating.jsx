@@ -207,7 +207,7 @@ export default function ExtCoatings() {
                                 </div>
                                 <Zoom>
                                     <div className="service-image" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b3d13f8-c7ec-44fc-7750-ab0d466eae00/public')`}}>
-                                        <img style={{visibility: 'hidden'}} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b3d13f8-c7ec-44fc-7750-ab0d466eae00/public" />
+                                        <img style={{visibility: 'hidden'}} alt="what to expect from an IGL Coating" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b3d13f8-c7ec-44fc-7750-ab0d466eae00/public" />
                                     </div>
                                 </Zoom>
                             </div>
@@ -215,7 +215,7 @@ export default function ExtCoatings() {
                             <div className="service-explain">
                                 <Zoom>
                                     <div className="service-image" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/32aa3e25-1fcb-4e05-760a-eb53f4b18400/public')`, backgroundColor: 'whitesmoke'}}>
-                                        <img style={{visibility: 'hidden'}} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/32aa3e25-1fcb-4e05-760a-eb53f4b18400/public" />
+                                        <img style={{visibility: 'hidden'}} alt="info on paint layers and what IGL coatings can protect from" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/32aa3e25-1fcb-4e05-760a-eb53f4b18400/public" />
                                     </div>
                                 </Zoom>
                                 <div className="text-left">
@@ -243,7 +243,7 @@ export default function ExtCoatings() {
                                 </div> */}
                                 <Zoom>
                                     <div className="service-image" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b69dcca1-8d92-414e-32c9-ddfe247fa100/public')`}}>
-                                        <img style={{visibility: 'hidden'}} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b69dcca1-8d92-414e-32c9-ddfe247fa100/public" />
+                                        <img style={{visibility: 'hidden'}} alt="More info on what IGL Coatings protect exterior vehicle paint from" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b69dcca1-8d92-414e-32c9-ddfe247fa100/public" />
                                     </div>
                                 </Zoom>
                             </div>

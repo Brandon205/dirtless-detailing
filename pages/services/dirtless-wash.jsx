@@ -95,7 +95,7 @@ export default function DLWash() {
                   <p>For those who want an even higher level of care for their vehicle, we also offer an add-on for a clay bar treatment. This treatment involves using a special clay bar to remove any contaminants or impurities from the surface of the car, leaving it with a smooth and clean finish.</p>
                 </div>
                 <div className="service-image" role="img" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6fb3a112-d77a-41fb-e7ec-728b2185b600/public')`}}>
-                  <img style={{visibility: 'hidden'}} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6fb3a112-d77a-41fb-e7ec-728b2185b600/public" />
+                  <img style={{visibility: 'hidden'}} alt="Red mazdaspeed 3 after a dirt-less wash" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6fb3a112-d77a-41fb-e7ec-728b2185b600/public" />
                 </div>
               </div>
             </main>
