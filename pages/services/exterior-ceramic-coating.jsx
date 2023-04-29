@@ -286,7 +286,7 @@ export default function ExtCoatings() {
                                     <li className='faq-li'>How should I wash my car then?</li>
                                     <li className='faq-p'>For washing your coated vehicle you have a couple of options. We recommend scheduling monthly maintenance through us especially if you get our Protect+ Package. Or we can give you a run down on our techniques and recommend you some products to use to prolong the life of your ceramic coating!</li>
 
-                                    <li className='faq-li'>How does the 5 year warranty work?</li>
+                                    <li className='faq-li'>How do the 2 and 5 year warranties work?</li>
                                     <li className='faq-p'>For the 2 year (Protect) or the 5 year (Protect+) coating warranty, you will have to get our Ceramic Maintenance Package every 6 months to 1 year.</li>
 
                                     <li className='faq-li'>How does the Lifetime warranty work?</li>

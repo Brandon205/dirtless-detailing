@@ -280,7 +280,6 @@ li span {
   padding: 0 1rem 1rem 1rem;
   border-radius: 0 0 1rem 1rem;
   background-color: var(--contact-bkg);
-  box-shadow: 0 5px 7px #0000007f;
 }
 
 .sub-menu-div {
@@ -303,6 +302,7 @@ li span {
   text-decoration: none;
   color: white;
   height: 100%;
+  border-bottom: 2px solid #d9d9d9;
 }
 
 .menu-link:hover {
@@ -806,7 +806,7 @@ option {
   margin: 0;
   font-family: 'Oswald', sans-serif;
   font-weight: 800;
-  font-size: 3em;
+  font-size: 2em;
   text-shadow: 1px 4px 5px #00000083;
 }
 
@@ -940,7 +940,7 @@ option {
   border-radius: 38px;
   background: var(--contact-bkg);
   color: white;
-  padding: 2rem 4rem 3rem 4rem;
+  padding: 2rem 2rem 3rem 2rem;
   z-index: 5;
 }
 
@@ -1280,7 +1280,7 @@ option {
 }
 
 .mobileservices-details {
-  width: 50%;
+  width: 100%;
   text-align: left;
 }
 
@@ -2342,8 +2342,9 @@ hr {
 
 .pricing__pricecard {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 
   width: 90%;
   max-width: 700px;
@@ -2720,14 +2721,10 @@ hr {
     line-height: 2;
   }
 
-  .popular-container {
+  /* .popular-container {
     flex-direction: row;
     justify-content: center;
-  }
-
-  .popular-link-container {
-    flex-direction: row;
-  }
+  } */
 
   .popular-readmore {
     padding: 0.55em 10%;
@@ -2787,6 +2784,14 @@ hr {
 
   .nav-hr {
     display: none;
+  }
+
+  .menu-link {
+    border-bottom: none;
+  }
+
+  .nav-li {
+    box-shadow: 0 5px 7px #0000007f;
   }
 
   .coating-points {
@@ -2856,6 +2861,20 @@ hr {
     justify-content: center;
     max-width: 500px;
     gap: 1rem;
+  }
+
+  .package-details-container {
+    padding: 2rem 4rem 3rem 4rem;
+    border-radius: 0;
+  }
+
+  .popular-container {
+    flex-direction: row;
+  }
+
+  .pricing__pricecard {
+    flex-direction: row;
+    align-items: flex-start;
   }
 
   .package-details-top {
@@ -2960,6 +2979,10 @@ hr {
     padding: 3rem 1rem;
     justify-content: space-around;
     gap: 4rem;
+  }
+
+  .mobileservices-details {
+    width: 50%;
   }
 
   .locations {
@@ -3133,6 +3156,14 @@ hr {
 
   .main-title {
     font-size: 4em;
+  }
+
+  .popular-header h3 {
+    font-size: 3em;
+  }
+
+  .popular-link-container {
+    flex-direction: row;
   }
 
   .servicepage-heading {

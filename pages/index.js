@@ -20,15 +20,11 @@ import { HiOutlineClipboardCheck } from 'react-icons/hi';
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 export default function Home() {
-    const [smallScreen, setSmallScreen] = useState(null);
+    const [screenWidth, setScreenWidth] = useState(null);
     const [currentSlide, setCurrentSlide] = useState(0);
 
     useEffect(() => {
-        if (window.innerWidth < 879) {
-            setSmallScreen(true);
-        } else {
-            setSmallScreen(false);
-        }
+        setScreenWidth(window.innerWidth);
     }, []);
 
     const next = () => {
@@ -106,7 +102,7 @@ export default function Home() {
                         <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
                     </div>
 
-                    <div style={{ display: smallScreen ? 'none' : 'flex' }} className="header-icons-container">
+                    <div style={{ display: screenWidth < 1350 ? 'none' : 'flex' }} className="header-icons-container">
                         <div>
                             <BiCertification className='header-icon' />
                             <p className="header-desc">7 Years</p>
@@ -134,7 +130,7 @@ export default function Home() {
                         </div> */}
                     </div>
 
-                    {/* <div style={{ display: smallScreen ? 'none' : 'flex', alignItems: 'center', gap: 32 }}>
+                    {/* <div style={{ display: screenWidth < 879 ? 'none' : 'flex', alignItems: 'center', gap: 32 }}>
                         <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="noopener">
                             <div className="header-cert" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/242a2248-1f41-4edf-b2c5-d508a10bef00/public')`, height: 134 + 'px', width: 134 + 'px' }}></div>
                         </a>
@@ -201,7 +197,7 @@ export default function Home() {
 
                 <div className='service-bkg'>
                     <div className="reviews-container">
-                        <Carousel className="review-carousel" selectedItem={currentSlide} centerSlidePercentage={50} autoPlay={smallScreen ? false : true} centerMode={smallScreen ? false : true} style={styles} infiniteLoop stopOnHover showThumbs={false} showArrows interval={6000} emulateTouch>
+                        <Carousel className="review-carousel" selectedItem={currentSlide} centerSlidePercentage={50} autoPlay={screenWidth < 879 ? false : true} centerMode={screenWidth < 879 ? false : true} style={styles} infiniteLoop stopOnHover showThumbs={false} showArrows interval={6000} emulateTouch>
                             <div className='review-card'>
                                 <div className='lower-review'>
                                     <div className='review-top'>
@@ -340,7 +336,7 @@ export default function Home() {
                         </ul>
                     </div>
                     <div className='map'>
-                        <iframe title="Map of Dirt-Less Detailing location" width={smallScreen ? '250' : '500'} height={smallScreen ? '300' : '400'} style={{ border: 0 }} loading="lazy" src={`https://www.google.com/maps/embed/v1/place?zoom=15&q=place_id:ChIJxxfUWqz7kFQRotRs8MwWDRE&key=${process.env.GOOGLE_MAPS}`}></iframe>
+                        <iframe title="Map of Dirt-Less Detailing location" width={screenWidth < 879 ? '250' : '500'} height={screenWidth < 879 ? '300' : '400'} style={{ border: 0 }} loading="lazy" src={`https://www.google.com/maps/embed/v1/place?zoom=15&q=place_id:ChIJxxfUWqz7kFQRotRs8MwWDRE&key=${process.env.GOOGLE_MAPS}`}></iframe>
                     </div>
                 </section>
 
