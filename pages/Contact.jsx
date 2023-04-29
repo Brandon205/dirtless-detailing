@@ -52,8 +52,8 @@ export default function Contact() {
             "Fabric Coating": e.target['fabric'].checked ? 'Yes' : 'No',
             "Leather Coating": e.target['leather'].checked ? 'Yes' : 'No',
             "Ozone": e.target['ozone'].checked ? 'Yes' : 'No',
-            "Dirtiness": formRef.current['Pretty Clean'].checked ? 'Pretty Clean' : formRef.current['Normal Use'].checked ? 'Normal Use' : formRef.current['Very Dirty'].checked ? 'Very Dirty' : '',
-            "Dog Hair": formRef.current['Little to None'].checked ? 'Little to None' : formRef.current['Medium Hair'].checked ? 'Medium Hair' : formRef.current['Lots of Hair'].checked ? 'Lots of Hair' : '',
+            "Dirtiness": formRef.current['Pretty Clean'].checked ? 'Pretty Clean' : formRef.current['Normal Use'].checked ? 'Normal Use' : formRef.current['Extremely Dirty'].checked ? 'Extremely Dirty' : '',
+            "Dog Hair": formRef.current['Little to None'].checked ? 'Little to None' : formRef.current['Medium Amount'].checked ? 'Medium Amount' : formRef.current['Lots of Hair'].checked ? 'Lots of Hair' : '',
 
             "Exterior Wash": formRef.current['Dirt-Less Wash'].checked ? 'Dirt-Less Wash' : '',
             "Clay Bar": e.target['claybar'].checked ? 'Yes' : 'No',
@@ -92,14 +92,14 @@ export default function Contact() {
                     progress: undefined
                 })
             } else {
-                finalSubmit(formData);
+                finalSubmit(formData, e);
             }
         } else if (!intSelected || dirtiness !== '' && dogHair !== '') {
-            finalSubmit(formData)
+            finalSubmit(formData, e)
         }
     };
 
-    const finalSubmit = (formData) => {
+    const finalSubmit = (formData, e) => {
         fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
             method: "POST",
             body: formData
@@ -113,9 +113,18 @@ export default function Contact() {
                 draggable: true,
                 progress: undefined
             })
-            e.target.reset()
-        setPhoneNumber('')
-            window.scrollTo(0, 0)
+            e.target.reset();
+            setPhoneNumber('');
+            setPaintCorrection('');
+            setExteriorWash('');
+            setInteriorCleaning('');
+            setExteriorCoating('');
+            setDirtiness('');
+            setDogHair('');
+            setIntSelected(false);
+            setCoatingSelected(false);
+            window.scrollTo(0, 0);
+
         }).catch(error => {
             toast.error("An error occurred, please try again." + error, {
                 position: "bottom-center",
@@ -247,7 +256,7 @@ export default function Contact() {
                     <h3 style={{ marginBottom: 0 }}>Need us to come to you?</h3>
                     <p className="hours-p" style={{ marginBottom: 0 }}>We can perform mobile detailing in the following cities:</p>
                     <p className="hours-p"><span style={{ fontWeight: 'bold', color: '#9f9f9f' }}> Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Tehaleh, Black Diamond, Milton, Edgewood, and Graham.</span></p>
-                    <p className='subtext italic'>*Note: If the total of the services you choose is less than $200, there is a $1/mile from our shop fee to cover travel costs.</p>
+                    <p className='subtext italic'><span className='special-package'>*Note:</span> If the total of the services you choose is less than $200, there is a $1/mile from our shop fee to cover travel costs.</p>
                     <hr className="contact-border" />
                     <div className="contact-icon-container">
                         <FaClock className='contact-icon' />

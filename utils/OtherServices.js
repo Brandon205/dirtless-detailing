@@ -11,7 +11,7 @@ export default function OtherServices() {
                         <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d7e1e319-7f78-4ac6-907a-9b100171ca00/public')` }}></div>
                         <div className="otherservices-desc">
                             <div>
-                                <a href='/services/interior-ceramic-coating' className='service-heading-link'>Dirt-Less Wash</a>
+                                <a href='/services/dirtless-wash' className='service-heading-link'>Dirt-Less Wash</a>
                                 <p className="secondary-text">Starting at: <br /><span>$74.99</span></p>
                             </div>
                             <p className="service-desc">Our Dirt-Less Wash will thoroughly clean the exterior of your vehicle with our tried and true cleaning process. We even apply a layer of wax to give your vehicle a strong layer of protection.</p>
@@ -26,7 +26,7 @@ export default function OtherServices() {
                         <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f7c127be-d17d-4563-48c3-809289e8bc00/public')` }}></div>
                         <div className="otherservices-desc">
                             <div>
-                                <a href='/services/interior-ceramic-coating' className='service-heading-link'>Single Stage Paint Correction</a>
+                                <a href='/services/single-stage-correction' className='service-heading-link'>Single Stage Paint Correction</a>
                                 <p className="secondary-text">Starting at: <br /><span>$549.99</span></p>
                             </div>
                             <p className="service-desc">Our Single Stage Paint Correction can fix 60%-70% of minor damage and scratches and will leave your vehicle looking shinier than ever.</p>
@@ -41,7 +41,7 @@ export default function OtherServices() {
                         <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fabb5ba-d12e-4e8a-c3bb-f5901af53e00/public')` }}></div>
                         <div className="otherservices-desc">
                             <div>
-                                <a href='/services/interior-ceramic-coating' className='service-heading-link'>Two Stage Paint Correction</a>
+                                <a href='/services/two-stage-correction' className='service-heading-link'>Two Stage Paint Correction</a>
                                 <p className="secondary-text">Starting at: <br /><span>$699.99</span></p>
                             </div>
                             <p className="service-desc">Our 2 stage paint correction is great for getting your car's paint to a close to perfect state. This is great for show cars need that extra time and effort to get to that showroom shine.</p>
@@ -64,10 +64,10 @@ export default function OtherServices() {
                         <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/907d2e8b-5d24-40bf-387e-90be139c2d00/public')` }}></div>
                         <div className="otherservices-desc">
                             <div>
-                                <a href='/services/interior-ceramic-coating' className='service-heading-link'>Full Interior Detail</a>
+                                <a href='/services/full-interior-detail' className='service-heading-link'>Full Interior Detail</a>
                                 <p className="secondary-text">Starting at: <br /><span>$299.99</span></p>
                             </div>
-                            <p className="service-desc">With our plenty tested methods we can clean any interior, even the dirtiest of them. Check out our Full Interior Detail page for more details!</p>
+                            <p className="service-desc">With our array of tested methods and cleaners we can fix up any interior, even the dirtiest of them. Check out our Full Interior Detail page for more details!</p>
 
                             <div className="otherservices-links">
                                 <a href="/services/full-interior-detail" className="otherservices-readmore">Learn More</a>
@@ -79,7 +79,7 @@ export default function OtherServices() {
                         <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b5859464-3c0e-4fcf-8332-17155eb86d00/public')` }}></div>
                         <div className="otherservices-desc">
                             <div>
-                                <a href='/services/interior-ceramic-coating' className='service-heading-link'>The Dirt-Less Detail</a>
+                                <a href='/services/interior-exterior-detailing-combo' className='service-heading-link'>The Dirt-Less Detail</a>
                                 <p className="secondary-text">Starting at: <br /><span>$374.99</span></p>
                             </div>
                             <p className="service-desc">Our Interior and Exterior Package, to get your whole vehicle back to new. We start with our full interior service, then clean and dress the engine bay up (for free), then  finish off with our Dirt-Less Wash.</p>
@@ -94,10 +94,10 @@ export default function OtherServices() {
                         <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d09c52dc-c233-4cbd-c347-07de1c945d00/public')` }}></div>
                         <div className="otherservices-desc">
                             <div>
-                                <a href='/services/interior-ceramic-coating' className='service-heading-link'>Biohazard Cleaning</a>
+                                <a href='/services/biohazard-cleaning' className='service-heading-link'>Biohazard Cleaning</a>
                                 <p className="secondary-text">Starting at: <br /><span>$399.99</span></p>
                             </div>
-                            <p className="service-desc">Smoke, odors, or even mold making your vehicle unpleasant to drive in? We've got the tools to bring your car back to how it was!</p>
+                            <p className="service-desc">Smoke, odors, or even mold making your vehicle unpleasant to drive in? We've got the tools to bring your car back to how it should be!</p>
 
                             <div className="otherservices-links">
                                 <a href="/services/biohazard-cleaning" className="otherservices-readmore">Learn More</a>
@@ -117,7 +117,7 @@ export default function OtherServices() {
                         <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/public')` }}></div>
                         <div className="otherservices-desc">
                             <div>
-                                <a href='/services/interior-ceramic-coating' className='service-heading-link'>Protect Ceramic Coating</a>
+                                <a href='/services/exterior-ceramic-coating' className='service-heading-link'>Protect Ceramic Coating</a>
                                 <p className="secondary-text">Starting at: <br /><span>$949.99</span></p>
                             </div>
                             <p className="service-desc">This Protect Ceramic Coating package gives you an included Dirt-Less Wash and Single Stage Paint Correction before applying IGL's 9H Quartz Ceramic Coating, giving you 2 years of protection with good maintenance practices. Ask us more about our maintenance packages to hear about our warranties.</p>
@@ -132,10 +132,10 @@ export default function OtherServices() {
                         <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f7c127be-d17d-4563-48c3-809289e8bc00/public')` }}></div>
                         <div className="otherservices-desc">
                             <div>
-                                <a href='/services/interior-ceramic-coating' className='service-heading-link'>Single Stage Paint Correction</a>
+                                <a href='/services/exterior-ceramic-coating' className='service-heading-link'>Protect+ Ceramic Coating</a>
                                 <p className="secondary-text">Starting at: <br /><span>$1,399.99</span></p>
                             </div>
-                            <p className="service-desc">Our Protect+ Ceramic Coating package gives you a full included Dirt-Less Wash and Single Stage Paint Correction, as well as tops your cars paint with a few coats of IGL's 10H Kenzo Ceramic Coating for 5 years of protection. Lifetime coating warranties also available with our maintenance packages.</p>
+                            <p className="service-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, debitis vero repudiandae consectetur minus dolores corrupti architecto voluptatibus illum aperiam iusto pariatur, magnam deleniti! Ipsum.</p>
 
                             <div className="otherservices-links">
                                 <a href="/services/exterior-ceramic-coating" className="otherservices-readmore">Learn More</a>
@@ -150,7 +150,7 @@ export default function OtherServices() {
                                 <a href='/services/interior-ceramic-coating' className='service-heading-link'>Interior Ceramic Coatings</a>
                                 <p className="secondary-text">Starting at: <br /><span>$74.99</span></p>
                             </div>
-                            <p className="service-desc">Our Interior Coatings are great for protecting the inside of your vehicle from spills and messes, giving you more time to clean them up before they soak in.</p>
+                            <p className="service-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi eligendi tempora consequuntur officiis dolorem! Incidunt illo laboriosam vel dicta ratione obcaecati excepturi nam dolores vitae.</p>
 
                             <div className="otherservices-links">
                                 <a href="/services/interior-ceramic-coating" className="otherservices-readmore">Learn More</a>
