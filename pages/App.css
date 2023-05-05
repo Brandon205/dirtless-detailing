@@ -755,7 +755,8 @@ option {
   position: relative;
   border: 3px solid var(--main-clr);
   font-size: 1.1em;
-  height: 100%
+  height: 100%;
+  border-radius: 32px;
 }
 
 .popular-img {
@@ -764,6 +765,7 @@ option {
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 100%;
+  border-radius: 32px 32px 0 0;
 }
 
 .popular-link-container {
