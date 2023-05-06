@@ -9,10 +9,10 @@ export default function graham() {
     return (
         <div className='location-container bg-contact'>
             <Head>
-                <title>Vehicle Detailing in Graham | Dirt-Less Detailing</title>
+                <title>Auto Detailing in Graham | Dirt-Less Detailing</title>
                 <Metatags
-                    title='Vehicle Detailing in Graham | Dirt-Less Detailing'
-                    description='Interior • Exterior • Ceramic Coating • Paint Correction. Check out our top auto detailing services for Graham Washington'
+                    title='Auto Detailing in Graham | Dirt-Less Detailing'
+                    description='Our detailing services include everything from interior cleanings to paint corrections, ensuring that your car looks its best both inside and out.'
                     image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/public'
                     canonical='/location/graham'
                 />
@@ -44,15 +44,15 @@ export default function graham() {
                         "aggregateRating": {
                             "@type": "AggregateRating",
                             "ratingValue": 5,
-                            "reviewCount": 4
+                            "reviewCount": 14
                         }
                     }`,
                 }} />
             </Head>
             <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/cover')`}}></div>
             <div className="servicepage-header">
-                <h1>Mobile Detailing in Graham Washington</h1>
-                <h2>Ceramic Coating • Interior • Exterior • Paint Correction</h2>
+                <h1>Auto Detailing in Graham</h1>
+                <h2>Our detailing services include everything from interior cleanings to paint corrections, ensuring that your car looks its best both inside and out.</h2>
                 <div className='header-buttons'>
                     <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
                     <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>

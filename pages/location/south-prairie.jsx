@@ -9,10 +9,10 @@ export default function southPrairie() {
     return (
         <div className='location-container bg-contact'>
             <Head>
-                <title>Vehicle Detailing in South Prairie | Dirt-Less Detailing</title>
+                <title>South Prairie Detailing Services | Dirt-Less Detailing</title>
                 <Metatags
-                    title='Vehicle Detailing in South Prairie | Dirt-Less Detailing'
-                    description='Interior • Exterior • Ceramic Coating • Paint Correction. Check out our top auto detailing services for South Prairie Washington'
+                    title='South Prairie Detailing Services | Dirt-Less Detailing'
+                    description='Exterior Washes • Interior Cleaning • Ceramic Coatings. Come see our detailing offers for South Prairie Washington'
                     image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/public'
                     canonical='/location/south-prairie'
                 />
@@ -44,15 +44,15 @@ export default function southPrairie() {
                         "aggregateRating": {
                             "@type": "AggregateRating",
                             "ratingValue": 5,
-                            "reviewCount": 4
+                            "reviewCount": 14
                         }
                     }`,
                 }} />
             </Head>
             <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/cover')`}}></div>
             <div className="servicepage-header">
-                <h1>Mobile Detailing in South Prairie Washington</h1>
-                <h2>Ceramic Coating • Interior • Exterior • Paint Correction</h2>
+                <h1>South Prairie Detailing Services</h1>
+                <h2>Exterior Washes • Interior Cleaning • Ceramic Coatings. Come see our detailing offers for South Prairie Washington</h2>
                 <div className='header-buttons'>
                     <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
                     <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>

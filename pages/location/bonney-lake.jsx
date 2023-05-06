@@ -9,10 +9,10 @@ export default function bonneyLake() {
     return (
         <div className='location-container bg-contact'>
             <Head>
-                <title>Vehicle Detailing in Bonney Lake | Dirt-Less Detailing</title>
+                <title>Auto Detailing in Bonney Lake | Dirt-Less Detailing</title>
                 <Metatags
-                    title='Vehicle Detailing in Bonney Lake | Dirt-Less Detailing'
-                    description='Interior • Exterior • Ceramic Coating • Paint Correction. Check out our top auto detailing services for Bonney Lake Washington'
+                    title='Auto Detailing in Bonney Lake | Dirt-Less Detailing'
+                    description="Protect your car's paint with our ceramic coatings and keep your interior looking brand new with our interior cleaning services."
                     image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b441cde-1d0f-45d9-665f-e44bfce0d800/public'
                     canonical='/location/bonney-lake'
                 />
@@ -44,15 +44,15 @@ export default function bonneyLake() {
                         "aggregateRating": {
                             "@type": "AggregateRating",
                             "ratingValue": 5,
-                            "reviewCount": 4
+                            "reviewCount": 14
                         }
                     }`,
                 }} />
             </Head>
             <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/65eea438-142c-4422-24fe-16ec7eac3700/cover')`}}></div>
             <div className="servicepage-header">
-                <h1>Mobile Detailing in Bonney Lake Washington</h1>
-                <h2>Ceramic Coating • Interior • Exterior • Paint Correction</h2>
+                <h1>Auto Detailing in Bonney Lake</h1>
+                <h2>Protect your car's paint with our ceramic coatings and keep your interior looking brand new with our interior cleaning services.</h2>
                 <div className='header-buttons'>
                     <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
                     <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>

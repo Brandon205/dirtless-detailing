@@ -9,10 +9,10 @@ export default function Tehaleh() {
     return (
         <div className='location-container bg-contact'>
             <Head>
-                <title>Vehicle Detailing in Tehaleh | Dirt-Less Detailing</title>
+                <title>Tehaleh Vehicle Detailing Services | Dirt-Less Detailing</title>
                 <Metatags
-                    title='Vehicle Detailing in Tehaleh | Dirt-Less Detailing'
-                    description='Interior • Exterior • Ceramic Coating • Paint Correction. Check out our top auto detailing services for Tehaleh Washington'
+                    title='Tehaleh Vehicle Detailing Services | Dirt-Less Detailing'
+                    description='Ceramic Coatings • Interior • Exterior • Paint Correction. See our services offered in Tehaleh Washington'
                     image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/public'
                     canonical='/location/tehaleh'
                 />
@@ -44,15 +44,15 @@ export default function Tehaleh() {
                         "aggregateRating": {
                             "@type": "AggregateRating",
                             "ratingValue": 5,
-                            "reviewCount": 4
+                            "reviewCount": 14
                         }
                     }`,
                 }} />
             </Head>
             <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/cover')`}}></div>
             <div className="servicepage-header">
-                <h1>Mobile Detailing in Tehaleh Washington</h1>
-                <h2>Ceramic Coating • Interior • Exterior • Paint Correction</h2>
+                <h1>Tehaleh Vehicle Detailing Services</h1>
+                <h2>Ceramic Coatings • Interior • Exterior • Paint Correction. See our services offered in Tehaleh Washington</h2>
                 <div className='header-buttons'>
                     <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
                     <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
@@ -60,7 +60,7 @@ export default function Tehaleh() {
             </div>
 
             <main className="location-main">
-                <h2 className='text-large'>Professional Detailing Services in Tehaleh Washington.</h2>
+                <h2 className='text-large'>Our Detailing Services offered in Tehaleh Washington.</h2>
                 <div className="text-left">
                     <p>Getting a car detailed in Tehaleh is no problem with our mobile service. We can come to you and perform most of our services at your home or work. If we have permission to detail in the location then we can do it.</p>
                     <p>Some of our most complicated services will need a more controlled environment. Services like our <a href="/detailing/ceramic" className='aside-link'>Ceramic Coating</a> and <a href="/detailing/correction" className='aside-link'>Paint Correction</a> will benefit if done at our shop. There we have lighting and heating where we can get the conditions just right for the service.</p>

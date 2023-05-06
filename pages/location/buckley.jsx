@@ -9,10 +9,10 @@ export default function buckley() {
     return (
         <div className='location-container bg-contact'>
             <Head>
-                <title>Vehicle Detailing in Buckley | Dirt-Less Detailing</title>
+                <title>Mobile Vehicle Detailing Buckley | Dirt-Less Detailing</title>
                 <Metatags
-                    title='Vehicle Detailing in Buckley | Dirt-Less Detailing'
-                    description='Interior • Exterior • Ceramic Coating • Paint Correction. Check out our top auto detailing services for Buckley Washington'
+                    title='Mobile Vehicle Detailing Buckley | Dirt-Less Detailing'
+                    description='Give your car the ultimate makeover with our exterior washes and paint corrections, and ensure long-lasting protection with our ceramic coatings.'
                     image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/public'
                     canonical='/location/buckley'
                 />
@@ -44,15 +44,15 @@ export default function buckley() {
                         "aggregateRating": {
                             "@type": "AggregateRating",
                             "ratingValue": 5,
-                            "reviewCount": 4
+                            "reviewCount": 14
                         }
                     }`,
                 }} />
             </Head>
             <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/cover')`}}></div>
             <div className="servicepage-header">
-                <h1>Mobile Detailing in Buckley Washington</h1>
-                <h2>Ceramic Coating • Interior • Exterior • Paint Correction</h2>
+                <h1>Mobile Vehicle Detailing Buckley</h1>
+                <h2>Give your car the ultimate makeover with our exterior washes and paint corrections, and ensure long-lasting protection with our ceramic coatings.</h2>
                 <div className='header-buttons'>
                     <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
                     <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>

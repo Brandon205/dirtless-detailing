@@ -9,10 +9,10 @@ export default function enumclaw() {
     return (
         <div className='location-container bg-contact'>
             <Head>
-                <title>Vehicle Detailing in Enumclaw | Dirt-Less Detailing</title>
+                <title>Enumclaw Mobile Detailing | Dirt-Less Detailing</title>
                 <Metatags
-                    title='Vehicle Detailing in Enumclaw | Dirt-Less Detailing'
-                    description='Interior • Exterior • Ceramic Coating • Paint Correction. Check out our top auto detailing services for Enumclaw Washington'
+                    title='Enumclaw Mobile Detailing | Dirt-Less Detailing'
+                    description="Restore your car's shine with our paint corrections and maintain its pristine appearance with our ceramic coatings."
                     image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/public'
                     canonical='/location/enumclaw'
                 />
@@ -44,15 +44,15 @@ export default function enumclaw() {
                         "aggregateRating": {
                             "@type": "AggregateRating",
                             "ratingValue": 5,
-                            "reviewCount": 4
+                            "reviewCount": 14
                         }
                     }`,
                 }} />
             </Head>
             <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/cover')`}}></div>
             <div className="servicepage-header">
-                <h1>Mobile Detailing in Enumclaw Washington</h1>
-                <h2>Ceramic Coating • Interior • Exterior • Paint Correction</h2>
+                <h1>Enumclaw Mobile Detailing</h1>
+                <h2>Restore your car's shine with our paint corrections and maintain its pristine appearance with our ceramic coatings.</h2>
                 <div className='header-buttons'>
                     <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
                     <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>

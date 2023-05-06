@@ -9,10 +9,10 @@ export default function milton() {
     return (
         <div className='location-container bg-contact'>
             <Head>
-                <title>Vehicle Detailing in Milton | Dirt-Less Detailing</title>
+                <title>Milton Detailing Services | Dirt-Less Detailing</title>
                 <Metatags
-                    title='Vehicle Detailing in Milton | Dirt-Less Detailing'
-                    description='Interior • Exterior • Ceramic Coating • Paint Correction. Check out our top auto detailing services for Milton Washington'
+                    title='Milton Detailing Services | Dirt-Less Detailing'
+                    description="Say goodbye to paint imperfections with our paint correction services, and protect your car's finish with our ceramic coatings."
                     image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/public'
                     canonical='/location/milton'
                 />
@@ -44,15 +44,15 @@ export default function milton() {
                         "aggregateRating": {
                             "@type": "AggregateRating",
                             "ratingValue": 5,
-                            "reviewCount": 4
+                            "reviewCount": 14
                         }
                     }`,
                 }} />
             </Head>
             <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/cover')`}}></div>
             <div className="servicepage-header">
-                <h1>Mobile Detailing in Milton Washington</h1>
-                <h2>Ceramic Coating • Interior • Exterior • Paint Correction</h2>
+                <h1>Milton Detailing Services</h1>
+                <h2>Say goodbye to paint imperfections with our paint correction services, and protect your car's finish with our ceramic coatings.</h2>
                 <div className='header-buttons'>
                     <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
                     <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>

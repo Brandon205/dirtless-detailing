@@ -9,10 +9,10 @@ export default function blackDiamond() {
     return (
         <div className='location-container bg-contact'>
             <Head>
-                <title>Vehicle Detailing in Black Diamond | Dirt-Less Detailing</title>
+                <title>Black Diamond Detailing Services | Dirt-Less Detailing</title>
                 <Metatags
-                    title='Vehicle Detailing in Black Diamond | Dirt-Less Detailing'
-                    description='Interior • Exterior • Ceramic Coating • Paint Correction. Check out our top auto detailing services for Black Diamond Washington'
+                    title='Black Diamond Detailing Services | Dirt-Less Detailing'
+                    description='From removing scratches to removing stains we will have your car cleaner than ever before! Check out our top auto detailing services for Black Diamond Washington'
                     image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b441cde-1d0f-45d9-665f-e44bfce0d800/public'
                     canonical='/location/black-diamond'
                 />
@@ -44,15 +44,15 @@ export default function blackDiamond() {
                         "aggregateRating": {
                             "@type": "AggregateRating",
                             "ratingValue": 5,
-                            "reviewCount": 4
+                            "reviewCount": 14
                         }
                     }`,
                 }} />
             </Head>
             <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/cover')`}}></div>
             <div className="servicepage-header">
-                <h1>Mobile Detailing in Black Diamond Washington</h1>
-                <h2>Ceramic Coating • Interior • Exterior • Paint Correction</h2>
+                <h1>Black Diamond Detailing Services</h1>
+                <h2>From removing scratches to removing stains we will have your car cleaner than ever before! Check out our top auto detailing services for Black Diamond Washington</h2>
                 <div className='header-buttons'>
                     <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
                     <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>

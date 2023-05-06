@@ -9,9 +9,9 @@ export default function puyallup() {
     return (
         <div className='location-container bg-contact'>
             <Head>
-                <title>Vehicle Detailing in Puyallup | Dirt-Less Detailing</title>
+                <title>Mobile Vehicle Detailing in Puyallup | Dirt-Less Detailing</title>
                 <Metatags
-                    title='Vehicle Detailing in Puyallup | Dirt-Less Detailing'
+                    title='Mobile Vehicle Detailing in Puyallup | Dirt-Less Detailing'
                     description='Interior • Exterior • Ceramic Coating • Paint Correction. Check out our top auto detailing services for Puyallup Washington'
                     image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/public'
                     canonical='/location/puyallup'
@@ -44,15 +44,15 @@ export default function puyallup() {
                         "aggregateRating": {
                             "@type": "AggregateRating",
                             "ratingValue": 5,
-                            "reviewCount": 4
+                            "reviewCount": 14
                         }
                     }`,
                 }} />
             </Head>
             <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/cover')`}}></div>
             <div className="servicepage-header">
-                <h1>Mobile Detailing in Puyallup Washington</h1>
-                <h2>Ceramic Coating • Interior • Exterior • Paint Correction</h2>
+                <h1>Mobile Vehicle Detailing in Puyallup</h1>
+                <h2>Interior • Exterior • Ceramic Coating • Paint Correction. Check out our top auto detailing services for Puyallup Washington</h2>
                 <div className='header-buttons'>
                     <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
                     <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
@@ -62,9 +62,10 @@ export default function puyallup() {
             <main className="location-main">
                 <h2 className='text-large'>Professional Detailing Services in Puyallup Washington.</h2>
                 <div className="text-left">
-                    <p>Getting a car detailed in Puyallup is no problem with our mobile service. We can come to you and perform most of our services at your home or work. If we have permission to detail in the location then we can do it.</p>
-                    <p>Some of our most complicated services will need a more controlled environment. Services like our <a href="/detailing/ceramic" className='aside-link'>Ceramic Coating</a> and <a href="/detailing/correction" className='aside-link'>Paint Correction</a> will benefit if done at our shop. There we have lighting and heating where we can get the conditions just right for the service.</p>
-                    <p>If you need one of our more extensive details then our <a href="/location/bonney-lake" className='aside-link'>shop</a> is about 20 minutes away from Puyallup in Bonney Lake. We can set up an appointment to have you drop it off and once you do you are free to stay or go while we do our work.</p>
+                    <p>Our mobile auto detailing services in Puyallup provide you with a convenient and efficient way to keep your car looking its best without ever having to leave your home or office. Our skilled technicians use top-of-the-line equipment and products to ensure that every inch of your vehicle is thoroughly cleaned and detailed.</p>
+                    <p>For those who want to protect their vehicle from the elements, we offer <a href="/detailing/ceramic" className='aside-link'>ceramic coatings</a> that provide long-lasting protection from Washington's weather. Our <a href="/detailing/correction" className='aside-link'>paint correction</a> services can help restore your vehicle's paint to its original shine and luster, removing any unsightly swirls, scratches, or other imperfections.</p>
+                    <p>We also offer a wide range of interior cleaning services and add-ons, including deep cleaning, stain removal, and odor elimination. Our team of professionals will work tirelessly to ensure that your car's interior is free of dirt, grime, and other unwanted substances.</p>
+                    <p>Whether you're looking for a quick exterior wash or a full detailing package, our mobile auto detailing services in Puyallup have you covered. Contact us today to schedule an appointment and experience the ultimate in mobile detailing services.</p>
                 </div>
 
                 <br className='extra-space' />
@@ -123,17 +124,12 @@ export default function puyallup() {
             <div className='locationpage-section no-bg'>
                 <div className='location-gallery-container'>
                     <h3 className='text-large'>Our Gallery Pages:</h3>
-                    <div className="text-left">
-                        <a href="/gallery/interior-detail-gallery" className='aside-link text-medium'>Interior Cleaning Gallery</a>
-                        <p className='mt-0'>Come check out some of the photos we have of what we have been able to do for our customers interiors!</p>
-                        <a href="/gallery/dirtless-wash-gallery" className='aside-link text-medium'>Exterior Wash Gallery</a>
-                        <p className='mt-0'>We have easily washed hundreds of vehicles and have our process optimized from the tires to the headlights, leaving every vehicle in great condition every time.</p>
-                        <a href="/gallery/paint-correction-gallery" className='aside-link text-medium'>Paint Correction Gallery</a>
-                        <p className='mt-0'>These vehicles have all been through the whole process from completely washing, to taping off, all the way to the paint correction itself.</p>
-                        <a href="/gallery/ceramic-coating-gallery" className='aside-link text-medium'>Ceramic Coating Gallery</a>
-                        <p className='mt-0'>A gallery of our work so far applying ceramic coatings.</p>
+                    <div className="">
+                        <a href="/gallery/interior-detail-gallery" className='aside-link text-medium'>Interior Cleaning Gallery</a><br />
+                        <a href="/gallery/dirtless-wash-gallery" className='aside-link text-medium'>Exterior Wash Gallery</a><br />
+                        <a href="/gallery/paint-correction-gallery" className='aside-link text-medium'>Paint Correction Gallery</a><br />
+                        <a href="/gallery/ceramic-coating-gallery" className='aside-link text-medium'>Ceramic Coating Gallery</a><br />
                         <a href="/gallery/engine-bay-gallery" className='aside-link text-medium'>Engine Bay Gallery</a>
-                        <p className='mt-0'>Take a look at some of the results we've gotten from our engine bay cleaning service.</p>
                     </div>
                 </div>
             </div>
