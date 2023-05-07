@@ -352,7 +352,6 @@ header h1 {
   grid-template-columns: auto auto;
   grid-template-areas: "icon desc"
     "icon myspan";
-  /* margin-bottom: 2rem; */
   width: 190px;
   text-align: left;
 }
@@ -1089,6 +1088,7 @@ option {
   display: flex;
   flex-direction: column;
   box-shadow: 0 4px 6px #0000007c;
+  background-color: var(--contact-bkg);
   /* justify-content: space-between; */
   text-align: left;
   /* box-shadow: 0 0 10px 5px var(--boxshadow-clr); */
@@ -3145,10 +3145,6 @@ hr {
 
 @media screen and (min-width: 1350px) {
 
-  .header-icons-container {
-    gap: 10rem;
-  }
-
   .header-link-container {
     display: flex;
     flex-direction: row;
@@ -3208,6 +3204,10 @@ hr {
 }
 
 @media screen and (min-width: 2000px) {
+  .header-icons-container {
+    gap: 10rem;
+  }
+  
   .pricing-container {
     gap: 4rem
   }

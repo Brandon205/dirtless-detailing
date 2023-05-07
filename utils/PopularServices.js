@@ -90,7 +90,7 @@ export default function PopularServices() {
                     </li>
                     <li className='checklist-item'>
                         <AiFillCheckCircle className='check-circle' />
-                        <p>Clean and dress the entire engine bay for <span className='special-package text-shadow'>FREE</span></p>
+                        <p><span className='special-package text-shadow'>Included</span> engine bay cleaning</p>
                     </li>
                 </ul>
 

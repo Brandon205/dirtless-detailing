@@ -44,7 +44,7 @@ export default function OtherServices() {
                                 <a href='/services/two-stage-correction' className='service-heading-link'>Two Stage Paint Correction</a>
                                 <p className="secondary-text">Starting at: <br /><span>$699.99</span></p>
                             </div>
-                            <p className="service-desc">Our 2 stage paint correction is great for getting your car's paint to a close to perfect state. This is great for show cars need that extra time and effort to get to that showroom shine.</p>
+                            <p className="service-desc">Our 2 stage paint correction is great for getting your car's paint to a near perfect state. This is great for show cars need that extra time and effort to get to that showroom shine.</p>
 
                             <div className="otherservices-links">
                                 <a href="/services/two-stage-correction" className="otherservices-readmore">Learn More</a>
@@ -135,7 +135,7 @@ export default function OtherServices() {
                                 <a href='/services/exterior-ceramic-coating' className='service-heading-link'>Protect+ Ceramic Coating</a>
                                 <p className="secondary-text">Starting at: <br /><span>$1,399.99</span></p>
                             </div>
-                            <p className="service-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, debitis vero repudiandae consectetur minus dolores corrupti architecto voluptatibus illum aperiam iusto pariatur, magnam deleniti! Ipsum.</p>
+                            <p className="service-desc">Our Protect+ Ceramic Coating package includes all that our Protect package does, a Full Dirt-Less Wash, Single Stage Paint Correction, and then we give you 3 coats of IGL's 10H Kenzo Graphene giving you 5 years of protection with good maintenance practices.</p>
 
                             <div className="otherservices-links">
                                 <a href="/services/exterior-ceramic-coating" className="otherservices-readmore">Learn More</a>
@@ -150,7 +150,7 @@ export default function OtherServices() {
                                 <a href='/services/interior-ceramic-coating' className='service-heading-link'>Interior Ceramic Coatings</a>
                                 <p className="secondary-text">Starting at: <br /><span>$74.99</span></p>
                             </div>
-                            <p className="service-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi eligendi tempora consequuntur officiis dolorem! Incidunt illo laboriosam vel dicta ratione obcaecati excepturi nam dolores vitae.</p>
+                            <p className="service-desc">Interior ceramic coatings offer a number of benefits for your car's interior, including protection against spills, stains, and UV damage. These coatings also make cleaning and maintenance much easier, allowing you to keep your car looking and feeling like new for longer.</p>
 
                             <div className="otherservices-links">
                                 <a href="/services/interior-ceramic-coating" className="otherservices-readmore">Learn More</a>

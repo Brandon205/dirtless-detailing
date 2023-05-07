@@ -102,7 +102,7 @@ export default function Home() {
                         <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
                     </div>
 
-                    <div style={{ display: screenWidth < 1350 ? 'none' : 'flex' }} className="header-icons-container">
+                    <div style={{ display: screenWidth < 1450 ? 'none' : 'flex' }} className="header-icons-container">
                         <div>
                             <BiCertification className='header-icon' />
                             <p className="header-desc">7 Years</p>
@@ -176,7 +176,7 @@ export default function Home() {
                     <div className="reason">
                         <GiSpray className="reason-icon" />
                         <h4 className="reason-title">Fully Equipped</h4>
-                        <p className="reason-desc">With the latest and greatest tools and techniques, we’ll get your car to 100% every time.</p>
+                        <p className="reason-desc">With the latest and greatest tools and techniques, we'll get your car to 100% every time.</p>
                     </div>
                 </div>
 
