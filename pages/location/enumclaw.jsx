@@ -62,23 +62,30 @@ export default function enumclaw() {
             <main className="location-main">
                 <h2 className='text-large'>Professional Detailing Services in Enumclaw Washington.</h2>
                 <div className="text-left">
-                    <p>Getting a car detailed in Enumclaw is no problem with our mobile service. We can come to you and perform most of our services at your home or work. If we have permission to detail in the location then we can do it.</p>
-                    <p>Some of our most complicated services will need a more controlled environment. Services like our <a href="/detailing/ceramic" className='aside-link'>Ceramic Coating</a> and <a href="/detailing/correction" className='aside-link'>Paint Correction</a> will benefit if done at our shop. There we have lighting and heating where we can get the conditions just right for the service.</p>
-                    <p>If you need one of our more extensive details then our <a href="/location/bonney-lake" className='aside-link'>shop</a> is about 20 minutes away from Enumclaw in Bonney Lake. We can set up an appointment to have you drop it off and once you do you are free to stay or go while we do our work.</p>
+                    <p>Our mobile auto detailing services in Enumclaw, Washington, provide top-notch car detailing at your convenience.</p>
+                    <p>We offer a range of services including interior cleaning, exterior washes, ceramic coatings, and paint corrections.</p>
+                    <p>We are equipped with the latest tools and techniques to ensure your car is thoroughly cleaned and protected.</p>
+                    <p>Whether you need a quick wash or a full detailing service, we have you covered. Contact us today to schedule an appointment and give your car the care it deserves.</p>
                 </div>
 
                 <br className='extra-space' />
             </main>
-            <div className='locationpage-section no-bg'>
-                <div>
-                    <h3 className='text-large'>Services offered in Enumclaw:</h3>
-                    <div className="text-left">
-                        <a href="/detailing/ceramic" className='aside-link text-medium'>Ceramic Coating</a>
-                        <p className='mt-0'>Our 5 year Ceramic Coatings will not only keep your vehicle looking great, but they will also keep your paint protected. A full <a href="/services/single-stage-correction" className='aside-link'>Single Stage Paint Correction</a> is performed before the coating to give it a nice even surface to be applied to. Our exterior Ceramic Coatings will have to be performed at our shop in Bonney Lake. Interior coatings are also available to protect interior fabrics or leather too. Get more info on our <a href="/services/interior-ceramic-coating" className='aside-link'>Interior Coating</a> page.</p>
+            <div className='service-bkg-lighter'>
+                <div style={{paddingBottom: '2rem'}} className='general-container'>
+                    <h3 className='text-large'>Mobile Services offered in Enumclaw:</h3>
+                    <div style={{paddingBottom: '2rem'}} className="text-left">
                         <a href="/services/full-interior-detail" className='aside-link text-medium'>Interior Cleaning</a>
                         <p className='mt-0'>A full interior detail will clean every crack and crevice of your vehicles interior to a like-new condition. Optionally we can also do a hot water extraction to the carpets of your vehicle to get out the deeper stains and dirt. A <a href="/services/biohazard-cleaning" className='aside-link'>Biohazard</a> cleaning is also available for mold, spills and unwanted odor removal.</p>
                         <a href="/services/dirtless-wash" className='aside-link text-medium'>Dirt-Less Wash</a>
                         <p className='mt-0'>Our Dirt-Less Wash will thoroughly clean the exterior of your vehicle with our tried and true cleaning processes. Topped off with a spray wax for an extra layer of protection and shine. Combine this with our Interior Cleaning service and get an Engine Bay Cleaning on us through our <a href="/services/interior-exterior-detailing-combo" className='aside-link'>Dirt-Less Detail</a> deal!</p>
+                        <a href="/services/interior-exterior-detailing-combo" className='aside-link text-medium'>The Dirt-Less Detail</a>
+                        <p className='mt-0'>If your whole car needs a makeover check out our Dirt-Less Detail. With it you get a full interior cleaning, Dirt-Less Wash, and a FREE included Engine bay cleaning to top it off!</p>
+                    </div>
+                    
+                    <h3 className='text-large'>Services offered at our shop in Bonney Lake:</h3>
+                    <div className='text-left'>
+                        <a href="/detailing/ceramic" className='aside-link text-medium'>Ceramic Coating</a>
+                        <p className='mt-0'>Our 5 year Ceramic Coatings will not only keep your vehicle looking great, but they will also keep your paint protected. A full <a href="/services/single-stage-correction" className='aside-link'>Single Stage Paint Correction</a> is performed before the coating to give it a nice even surface to be applied to. Our exterior Ceramic Coatings will have to be performed at our shop in Bonney Lake. Interior coatings are also available to protect interior fabrics or leather too. Get more info on our <a href="/services/interior-ceramic-coating" className='aside-link'>Interior Coating</a> page.</p>
                         <a href="/detailing/correction" className='aside-link text-medium'>Paint Correction</a>
                         <p className='mt-0'>Our paint correction services can fix roughly 60%-90% of minor damage and scratches and will leave your vehicle looking shinier and feeling smoother than ever.</p>
                     </div>
@@ -88,7 +95,7 @@ export default function enumclaw() {
             </div>
 
             <div>
-                <h3 className='text-large'>Check out some of the results from our services</h3>
+                <h3 style={{marginTop: '3rem'}} className='text-large'>Check out some of the results from our services</h3>
                 <div className="mini-grid">
                     <Zoom>
                         <div className="card" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5c7fc46a-ada8-4ee1-a95f-3faaf47ded00/public')`}}></div>
@@ -123,17 +130,12 @@ export default function enumclaw() {
             <div className='locationpage-section no-bg'>
                 <div className='location-gallery-container'>
                     <h3 className='text-large'>Our Gallery Pages:</h3>
-                    <div className="text-left">
-                        <a href="/gallery/interior-detail-gallery" className='aside-link text-medium'>Interior Cleaning Gallery</a>
-                        <p className='mt-0'>Come check out some of the photos we have of what we have been able to do for our customers interiors!</p>
-                        <a href="/gallery/dirtless-wash-gallery" className='aside-link text-medium'>Exterior Wash Gallery</a>
-                        <p className='mt-0'>We have easily washed hundreds of vehicles and have our process optimized from the tires to the headlights, leaving every vehicle in great condition every time.</p>
-                        <a href="/gallery/paint-correction-gallery" className='aside-link text-medium'>Paint Correction Gallery</a>
-                        <p className='mt-0'>These vehicles have all been through the whole process from completely washing, to taping off, all the way to the paint correction itself.</p>
-                        <a href="/gallery/ceramic-coating-gallery" className='aside-link text-medium'>Ceramic Coating Gallery</a>
-                        <p className='mt-0'>A gallery of our work so far applying ceramic coatings.</p>
+                    <div>
+                        <a href="/gallery/interior-detail-gallery" className='aside-link text-medium'>Interior Cleaning Gallery</a><br />
+                        <a href="/gallery/dirtless-wash-gallery" className='aside-link text-medium'>Exterior Wash Gallery</a><br />
+                        <a href="/gallery/paint-correction-gallery" className='aside-link text-medium'>Paint Correction Gallery</a><br />
+                        <a href="/gallery/ceramic-coating-gallery" className='aside-link text-medium'>Ceramic Coating Gallery</a><br />
                         <a href="/gallery/engine-bay-gallery" className='aside-link text-medium'>Engine Bay Gallery</a>
-                        <p className='mt-0'>Take a look at some of the results we've gotten from our engine bay cleaning service.</p>
                     </div>
                 </div>
             </div>
