@@ -181,7 +181,7 @@ export default function Home() {
                 </div>
 
                 <div className="general-container new-heading-container">
-                    <h3 className="new-heading new-heading-center">All Services</h3>
+                    <h3 className="new-heading new-heading-center">Our Services</h3>
                 </div>
 
                 <OtherServices />

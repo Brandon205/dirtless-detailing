@@ -2,10 +2,10 @@ import React from 'react';
 
 export default function OtherServices() {
     return (
-        <div style={{display: 'flex', flexDirection: 'column', gap: '4em', paddingTop: '3rem'}}>
+        <div className="service-bkg-lighter" style={{display: 'flex', flexDirection: 'column', gap: '4em', paddingTop: '3rem'}}>
             <section className="otherservices-container">
                 <h2 className='service-title'>Exterior Services</h2>
-                <p>Need an exterior detail? We've got you covered here!</p>
+                <p>Discover Our Exceptional Exterior Auto Detailing Services.</p>
                 <div className='otherservices-subcontainer'>
                     <div className="service-card">
                         <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d7e1e319-7f78-4ac6-907a-9b100171ca00/public')` }}></div>
@@ -55,6 +55,8 @@ export default function OtherServices() {
                 </div>
                 <a href="/Contact" className="otherservices-readmore">Get in Touch!</a>
             </section>
+
+            <hr className='otherservices-hr' />
 
             <section className="otherservices-container">
                 <h2 className='service-title'>Interior Services</h2>
@@ -108,6 +110,8 @@ export default function OtherServices() {
                 </div>
                 <a href="/Contact" className="otherservices-readmore">Get in Touch!</a>
             </section>
+
+            <hr className='otherservices-hr' />
 
             <section className="otherservices-container">
                 <h2 className='service-title'>Ceramic Coating Services</h2>
