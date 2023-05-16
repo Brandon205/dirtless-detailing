@@ -1584,10 +1584,6 @@ hr {
   width: auto;
 }
 
-.process-container {
-  padding-top: 2rem;
-}
-
 .content-container {
   display: flex;
   flex-direction: column;
@@ -2558,7 +2554,7 @@ hr {
 }
 
 .service-main {
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
   line-height: 2;
   text-align: center;
@@ -2567,12 +2563,12 @@ hr {
 
 .top-service-main {
   position: relative;
-  margin: -10vh auto;
   background: var(--contact-bkg);
   padding: 2rem 4rem 0 4rem;
   z-index: 5;
+  width: 100%;
   color: white;
-  border-radius: 38px;
+  border-radius: 0 0 38px 38px;
 }
 
 .service-explain {

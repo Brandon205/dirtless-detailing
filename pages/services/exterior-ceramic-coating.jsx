@@ -160,7 +160,7 @@ export default function ExtCoatings() {
 
                     <br className='extra-space' />
 
-                    <p style={{fontSize: '2rem', margin: '2rem 0 0 0', color: '#575757'}}>End Results</p>
+                    <p style={{fontSize: '2rem', margin: '3rem 0 0 0', color: '#575757'}}>End Results</p>
                     <h3 className='pricing__heading'>Smooth, Clean, and Picture Perfect Results.</h3>
                     <p>Once we are done water will BEAD off of your car like you've never seen before!</p>
                     <div style={{display: 'grid'}} className='place-center'>
@@ -190,7 +190,7 @@ export default function ExtCoatings() {
                     </div>
                         
                     <div className="service-bkg-lighter" style={{paddingBottom: '2.5rem'}}>
-                        <div className="general-container new-heading-container">
+                        <div className="general-container new-heading-container" style={{width: '95%'}}>
                             <strong className="above-heading">Further Reading</strong>
                         </div>
                         <main className="service-main general-container">

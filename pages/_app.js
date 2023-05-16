@@ -138,7 +138,7 @@ export default function MyApp({ Component, pageProps }) {
                             </li>
 
                             <li style={{ position: 'relative' }}>
-                                <div className='menu-li' onPointerEnter={() => changeNav('gallery')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('gallery')}><FaImages /> Gallery</div>
+                                <div className='menu-li' onPointerEnter={() => changeNav('gallery')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('gallery')}><FaImages /> Galleries</div>
                                 <ul className="sub-ul" onPointerEnter={() => changeNav('gallery')} onPointerLeave={() => changeNav('none')} style={{ opacity: smallScreen ? 1 : gallery ? 1 : !gallery ? 0 : 0, pointerEvents: smallScreen ? 'auto' : gallery ? 'auto' : !gallery ? 'none' : 'auto' }}>
                                     <li className="nav-li">
                                         <h4 className="sub-menu-header">GALLERIES</h4>
