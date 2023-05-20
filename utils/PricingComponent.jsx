@@ -6,7 +6,6 @@ import { ImPointDown } from 'react-icons/im';
 import { BsFillArrowUpCircleFill } from 'react-icons/bs';
 import { RiCarWashingFill } from 'react-icons/ri';
 import { TbEngine } from 'react-icons/tb';
-// import AnimatedNumbers from 'react-animated-numbers';
 
 import dynamic from "next/dynamic";
 const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {

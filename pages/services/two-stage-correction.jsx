@@ -3,7 +3,6 @@ import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
-// import { FaMapMarkerAlt } from 'react-icons/fa';
 import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 import PricingComponent from '../../utils/PricingComponent';
 import addons from '../../utils/Addons';

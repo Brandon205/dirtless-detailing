@@ -2587,6 +2587,7 @@ hr {
 .location-container {
   width: 100vw;
   min-height: 100%;
+  padding-bottom: 2rem;
 }
 
 .location-main {
