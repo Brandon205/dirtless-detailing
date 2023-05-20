@@ -29,7 +29,7 @@ export default function FullIntGallery() {
       </div>
 
       <div style={{width: '90vw', margin: '0 auto'}} className="service-explain text-white">
-        <div className="text-left">
+        <div className="text-left" style={{paddingTop: '2.5rem'}}>
           <h2 className="text-large">Interior Before and After photos</h2>
           <p>Experience the Luxury of a Pristine Interior: Our Interior Detailing Gallery displays the incredible results of our comprehensive detailing services on the many vehicles we've worked on, highlighting our commitment to quality and attention to detail.</p>
         </div>

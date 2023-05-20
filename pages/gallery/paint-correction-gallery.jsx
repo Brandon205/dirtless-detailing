@@ -29,7 +29,7 @@ export default function PaintCorrectionGallery() {
       </div>
 
       <div style={{width: '90vw', margin: '0 auto'}} className="service-explain text-white">
-        <div className="text-left">
+        <div className="text-left" style={{paddingTop: '2.5rem'}}>
           <h2 className="text-large">Paint Correction Before and After Photos</h2>
           <p>Unveil Your Car's True Potential: Our Paint Correction Gallery displays the transformative power of our cutting-edge techniques and tools, restoring the flawless finish of even the most damaged and neglected paint jobs.</p>
         </div>
@@ -37,6 +37,12 @@ export default function PaintCorrectionGallery() {
       <div className="mini-grid">
         <Zoom>
           <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/9e4d290e-ad89-4cc9-1f10-a1d37790cb00/public')`}}></div>
+        </Zoom>
+        <Zoom>
+          <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/25b95e2a-4285-4234-6e96-22b6a21ff600/public')`}}></div>
+        </Zoom>
+        <Zoom>
+          <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e234f506-abd5-498a-eecb-3250d8774200/public')`}}></div>
         </Zoom>
       </div>
 
@@ -61,6 +67,9 @@ export default function PaintCorrectionGallery() {
         </Zoom>
         <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3f7c3a25-9e62-4b00-c38d-4a1bbc201200/public')`}}></div>
+        </Zoom>
+        <Zoom>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/1e3ad3ed-f7bb-4bea-b301-762a80f19500/public')`}}></div>
         </Zoom>
         <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7ace7ab9-4738-4721-9236-01acfd057d00/public')`}}></div>

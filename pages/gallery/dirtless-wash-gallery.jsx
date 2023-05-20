@@ -30,20 +30,23 @@ export default function PaintCorrectionGallery() {
       </div>
 
       <div style={{width: '90vw', margin: '0 auto'}} className="service-explain text-white">
-        <div className="text-left">
+        <div className="text-left" style={{paddingTop: '2.5rem'}}>
           <h2 className="text-large">Exterior Before and After photos</h2>
           <p>Revive the Shine of Your Ride: Our Exterior Detailing Gallery showcases the stunning results of our meticulous detailing services on a wide range of vehicles.</p>
         </div>
       </div>
       <div className="mini-grid">
         <Zoom>
-          <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d460cace-e72a-4781-d297-a57c1ae9dc00/public')`}}></div>
+          <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c1f9dd58-15c4-4d33-c33d-d5c5bece0400/public')`}}></div>
         </Zoom>
         <Zoom>
           <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f33cbb52-1621-49e7-7656-ba47d7ff2700/public')`}}></div>
         </Zoom>
         <Zoom>
           <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3924445d-d294-4c5c-4a8f-1e608144bb00/public')`}}></div>
+        </Zoom>
+        <Zoom>
+          <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/80c839d6-2d5c-4650-e5b1-08cc22e8cb00/public')`}}></div>
         </Zoom>
       </div>
 
@@ -79,6 +82,9 @@ export default function PaintCorrectionGallery() {
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/df5ba5d7-e0e6-4868-ec67-6fcdcfbf3900/public')`}}></div>
         </Zoom>
         <Zoom>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b814f739-3846-4796-3093-c34675a32c00/public')`}}></div>
+        </Zoom>
+        <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/bb93d530-727a-488e-cbd1-0d600322b200/public')`}}></div>
         </Zoom>
         <Zoom>
@@ -98,6 +104,9 @@ export default function PaintCorrectionGallery() {
         </Zoom>
         <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/926e9a72-211b-4d26-e627-f76660e35100/public')`}}></div>
+        </Zoom>
+        <Zoom>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/19257a98-2e8c-45ef-70c2-44748a5d7600/public')`}}></div>
         </Zoom>
         <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/19226e28-a8ae-45a7-4743-1dd8b11c4900/public')`}}></div>

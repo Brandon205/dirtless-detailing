@@ -29,7 +29,7 @@ export default function PaintCorrectionGallery() {
       </div>
 
       <div style={{width: '90vw', margin: '0 auto'}} className="service-explain text-white">
-        <div className="text-left">
+        <div className="text-left" style={{paddingTop: '2.5rem'}}>
           <h2 className="text-large">Engine Bay Before and After</h2>
           <p>Unleash the Power Under the Hood: Our Engine Bay Washing Gallery showcases the transformative results of our thorough engine bay washing services on a variety of vehicles.</p>
         </div>

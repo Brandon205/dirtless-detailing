@@ -29,7 +29,7 @@ export default function CoatingGallery() {
       </div>
 
       <div style={{width: '90vw', margin: '0 auto'}} className="service-explain text-white">
-        <div className="text-left">
+        <div className="text-left" style={{paddingTop: '2.5rem'}}>
           <h2 className="text-large">Ceramic Coating Before and After</h2>
           <p>Because of the included Paint Correction service with the Ceramic Coating, you can see a difference in the paint condition before we put a ceramic coating on the vehicle.</p>
         </div>
@@ -37,6 +37,9 @@ export default function CoatingGallery() {
       <div className="mini-grid">
         <Zoom>
           <div className="card card-wide" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a8430f3-90c0-4f56-1fff-88fcd3b29600/public')`}}></div>
+        </Zoom>
+        <Zoom>
+          <div className="card card-wide" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/04cc5cf0-3dc1-404f-b9c5-9981825e2e00/public')`}}></div>
         </Zoom>
       </div>
 
@@ -69,6 +72,39 @@ export default function CoatingGallery() {
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/318b00ed-4a02-4f43-7fdb-1d407d7b0100/public')`}}></div>
         </Zoom>
         <Zoom>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/8c1574b9-7517-4c50-6b36-133352ab0a00/public')`}}></div>
+        </Zoom>
+        <Zoom>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5b0798e5-2648-4845-168b-98e7ff013100/public')`}}></div>
+        </Zoom>
+        <Zoom>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/fdce3625-66ac-4ea8-68e5-9f2e9e94c500/public')`}}></div>
+        </Zoom>
+        <Zoom>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/74e3cbf9-f5d7-458f-14c3-5367bc903e00/public')`}}></div>
+        </Zoom>
+        <Zoom>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ab68bfcc-17a0-4468-539b-fded52edc500/public')`}}></div>
+        </Zoom>
+        <Zoom>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/92eba802-0109-4a56-f3ae-cd929116ea00/public')`}}></div>
+        </Zoom>
+        <Zoom>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/eef9854b-8f53-4f66-fa7f-d7c97fc71e00/public')`}}></div>
+        </Zoom>
+        <Zoom>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/45779246-97c3-4442-85d6-be09aabad900/public')`}}></div>
+        </Zoom>
+        <Zoom>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/eae5ca9b-08ef-42e8-494a-6af297615e00/public')`}}></div>
+        </Zoom>
+        <Zoom>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c36a4199-45b3-43d4-9c24-0493603b8f00/public')`}}></div>
+        </Zoom>
+        <Zoom>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/90b30e78-2aa7-4451-936f-acf21580bd00/public')`}}></div>
+        </Zoom>
+        <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3c484dfb-5247-428e-1735-1b31f3efd600/public')`}}></div>
         </Zoom>
         <Zoom>
@@ -87,34 +123,19 @@ export default function CoatingGallery() {
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/fdaa6115-35ea-45f4-e7f2-acec67e40a00/public')`}}></div>
         </Zoom>
         <Zoom>
-          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/fdce3625-66ac-4ea8-68e5-9f2e9e94c500/public')`}}></div>
-        </Zoom>
-        <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e30050eb-d6a4-45c9-bb0c-c5070cd86700/public')`}}></div>
         </Zoom>
         <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/171029c2-9bcd-46da-fa7d-b45f5e6e9800/public')`}}></div>
         </Zoom>
         <Zoom>
-          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/74e3cbf9-f5d7-458f-14c3-5367bc903e00/public')`}}></div>
-        </Zoom>
-        <Zoom>
-          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ab68bfcc-17a0-4468-539b-fded52edc500/public')`}}></div>
-        </Zoom>
-        <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/48ede291-7184-49d8-d6b4-cee59b767c00/public')`}}></div>
-        </Zoom>
-        <Zoom>
-          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/92eba802-0109-4a56-f3ae-cd929116ea00/public')`}}></div>
         </Zoom>
         <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/611a9397-5a44-416d-03f6-491aae2bde00/public')`}}></div>
         </Zoom>
         <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c8855b02-88e3-47c6-f8ab-835cead38f00/public')`}}></div>
-        </Zoom>
-        <Zoom>
-          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/eef9854b-8f53-4f66-fa7f-d7c97fc71e00/public')`}}></div>
         </Zoom>
         <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/dd8a4ba8-beaa-4361-cbc9-f50e9bda3f00/public')`}}></div>
@@ -124,12 +145,6 @@ export default function CoatingGallery() {
         </Zoom>
         <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0debc625-8006-4be7-1ae8-4fe3d43ae700/public')`}}></div>
-        </Zoom>
-        <Zoom>
-          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/8c1574b9-7517-4c50-6b36-133352ab0a00/public')`}}></div>
-        </Zoom>
-        <Zoom>
-          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5b0798e5-2648-4845-168b-98e7ff013100/public')`}}></div>
         </Zoom>
         <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a5260bdd-11e9-4e31-74ec-c1d75787e000/public')`}}></div>

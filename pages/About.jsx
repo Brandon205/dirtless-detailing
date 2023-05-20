@@ -104,7 +104,9 @@ export default function About() {
             <p>At Dirt-Less Detailing, we are passionate about providing top-notch auto detailing services to our valued clients. With our comprehensive range of services, including interior and exterior detailing, ceramic coatings, paint corrections, and engine bay cleanings, we strive to keep your vehicle looking and performing its best. Trust us to provide the care and attention to detail that your car deserves.</p>
             <p>Our main shop location is right in <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className='aside-link' target="_blank" rel='noopener'>Bonney Lake</a> off State Route 410.</p>
           </div>
-          <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/public')`}}></div>
+          <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/public')`}}>
+            <img style={{visibility: 'hidden'}} alt="moldy biohazard van before and after" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/public" />
+          </div>
         </div>
 
         <h3>FAQ</h3>
