@@ -740,6 +740,7 @@ option {
 .popular-container {
   padding-top: 7vh;
   width: 100%;
+  height: auto;
   padding: 7vh 5vw 0 5vw;
   display: flex;
   flex-direction: column;
@@ -752,7 +753,7 @@ option {
   width: 90%;
   z-index: 0;
   position: relative;
-  border: 3px solid var(--main-clr);
+  /* border: 3px solid var(--main-clr); */
   font-size: 1.1em;
   height: 100%;
   border-radius: 32px;
@@ -809,6 +810,7 @@ option {
   font-weight: 800;
   font-size: 2em;
   text-shadow: 1px 4px 5px #00000083;
+  text-align: left;
 }
 
 .popular-header a {
@@ -983,12 +985,6 @@ option {
   gap: 2rem;
 }
 
-.checkcircle {
-  color: var(--main-clr);
-  flex: 0 0 auto;
-  margin-right: 0.5rem;
-}
-
 .price {
   color: lightgray;
   display: inline-block;
@@ -1102,7 +1098,7 @@ option {
   /* justify-content: space-between; */
   text-align: left;
   /* box-shadow: 0 0 10px 5px var(--boxshadow-clr); */
-  border: 2px solid var(--main-clr);
+  /* border: 2px solid var(--main-clr); */
   border-radius: 12px;
   width: 90%;
   margin: 1rem auto;
@@ -1130,7 +1126,7 @@ option {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   color: white;
-  font-size: 1.7em;
+  font-size: 2em;
 }
 
 .readmore {
@@ -1224,7 +1220,7 @@ option {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .lower-review {
@@ -1526,7 +1522,7 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 2.5rem;
   background-color: var(--contact-bkg-lighter);
   padding: 2rem;
   border-radius: 32px;
@@ -1540,6 +1536,7 @@ hr {
   grid-template-areas:
     "icon title title"
     "desc desc desc";
+    width: 100%;
 }
 
 .reason-icon {
@@ -2844,7 +2841,7 @@ hr {
   }
 
   .reason-icon {
-    justify-self: center;
+    justify-self: left;
     align-self: center;
   }
 
@@ -2920,7 +2917,7 @@ hr {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     gap: 0;
   }
@@ -3162,6 +3159,10 @@ hr {
     margin-top: 0;
   }
 
+  .header-icons-container {
+    padding: 1rem;
+  }
+
   .main-title {
     font-size: 4em;
   }
@@ -3216,6 +3217,7 @@ hr {
 
 @media screen and (min-width: 2000px) {
   .header-icons-container {
+    padding: 2em;
     gap: 10rem;
   }
   

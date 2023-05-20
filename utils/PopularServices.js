@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { AiFillCheckCircle } from 'react-icons/ai';
+import { FcCheckmark } from 'react-icons/fc';
 import { FaArrowRight } from 'react-icons/fa';
 
 export default function PopularServices() {
@@ -13,35 +14,35 @@ export default function PopularServices() {
                 <div className='popular-header'>
                     <h3>Full Interior Detail</h3>
                 </div>
-                <a href="/Contact" className='choose-package'>Choose this Service <FaArrowRight /></a>
+                <a href="/Contact" className='choose-package'>Get in Touch <FaArrowRight /></a>
 
                 <ul className='checklist'>
                     <li className='checklist-item'>
-                        <AiFillCheckCircle className='check-circle' />
+                        <FcCheckmark className='check-circle' />
                         <p>Blow out interior with a vortex blowgun</p>
                     </li>
                     <li className='checklist-item'>
-                        <AiFillCheckCircle className='check-circle' />
+                        <FcCheckmark className='check-circle' />
                         <p>Steam extraction (If added/needed)</p>
                     </li>
                     <li className='checklist-item'>
-                        <AiFillCheckCircle className='check-circle' />
+                        <FcCheckmark className='check-circle' />
                         <p>Vacuum out entire interior</p>
                     </li>
                     <li className='checklist-item'>
-                        <AiFillCheckCircle className='check-circle' />
+                        <FcCheckmark className='check-circle' />
                         <p>Clean ALL plastics/leather</p>
                     </li>
                     <li className='checklist-item'>
-                        <AiFillCheckCircle className='check-circle' />
+                        <FcCheckmark className='check-circle' />
                         <p>Dress any vinyl/leathers</p>
                     </li>
                     <li className='checklist-item'>
-                        <AiFillCheckCircle className='check-circle' />
+                        <FcCheckmark className='check-circle' />
                         <p>Clean door jambs</p>
                     </li>
                     <li className='checklist-item'>
-                        <AiFillCheckCircle className='check-circle' />
+                        <FcCheckmark className='check-circle' />
                         <p>Clean ALL windows/glass</p>
                     </li>
                 </ul>
@@ -61,36 +62,36 @@ export default function PopularServices() {
                 <div className='popular-header'>
                     <h3>The Dirt-Less Detail</h3>
                 </div>
-                <a href="/Contact" className='choose-package'>Choose this Service <FaArrowRight /></a>
+                <a href="/Contact" className='choose-package'>Get in Touch <FaArrowRight /></a>
 
                 <ul className='checklist'>
                     <li className='checklist-item'>
-                        <AiFillCheckCircle className='check-circle' />
-                        <p>Blow out interior with a vortex blowgun</p>
+                        <FcCheckmark className='check-circle' />
+                        <p>Our Full Interior and Exterior Cleaning Treatment</p>
                     </li>
                     <li className='checklist-item'>
-                        <AiFillCheckCircle className='check-circle' />
-                        <p>Vacuum out the interior</p>
+                        <FcCheckmark className='check-circle' />
+                        <p>Blow out and vacuum the interior</p>
                     </li>
                     <li className='checklist-item'>
-                        <AiFillCheckCircle className='check-circle' />
+                        <FcCheckmark className='check-circle' />
                         <p>Wipe down and dress the interior</p>
                     </li>
                     <li className='checklist-item'>
-                        <AiFillCheckCircle className='check-circle' />
+                        <FcCheckmark className='check-circle' />
                         <p>Full vehicle strip wash</p>
                     </li>
                     <li className='checklist-item'>
-                        <AiFillCheckCircle className='check-circle' />
+                        <FcCheckmark className='check-circle' />
                         <p>Remove any tar and sap</p>
                     </li>
                     <li className='checklist-item'>
-                        <AiFillCheckCircle className='check-circle' />
+                        <FcCheckmark className='check-circle' />
                         <p>Apply Ceramic Spray Sealant</p>
                     </li>
                     <li className='checklist-item'>
-                        <AiFillCheckCircle className='check-circle' />
-                        <p><span className='special-package underline'>Included</span> engine bay cleaning</p>
+                        <FcCheckmark className='check-circle' />
+                        <p><span className='underline'>Included</span> engine bay cleaning</p>
                     </li>
                 </ul>
 
@@ -109,35 +110,35 @@ export default function PopularServices() {
                 <div className='popular-header'>
                     <h3>Ceramic Coating</h3>
                 </div>
-                <a href="/Contact" className='choose-package'>Choose this Service <FaArrowRight /></a>
+                <a href="/Contact" className='choose-package'>Get in Touch <FaArrowRight /></a>
 
                 <ul className='checklist'>
                     <li className='checklist-item'>
-                        <AiFillCheckCircle className='check-circle' />
+                        <FcCheckmark className='check-circle' />
                         <p>Full vehicle strip wash</p>
                     </li>
                     <li className='checklist-item'>
-                        <AiFillCheckCircle className='check-circle' />
+                        <FcCheckmark className='check-circle' />
                         <p>Single stage paint correction</p>
                     </li>
                     <li className='checklist-item'>
-                        <AiFillCheckCircle className='check-circle' />
+                        <FcCheckmark className='check-circle' />
                         <p>Clay bar treatment</p>
                     </li>
                     <li className='checklist-item'>
-                        <AiFillCheckCircle className='check-circle' />
+                        <FcCheckmark className='check-circle' />
                         <p>Iron decontamination treatment</p>
                     </li>
                     <li className='checklist-item'>
-                        <AiFillCheckCircle className='check-circle' />
+                        <FcCheckmark className='check-circle' />
                         <p>Dress all plastics and tires</p>
                     </li>
                     <li className='checklist-item'>
-                        <AiFillCheckCircle className='check-circle' />
+                        <FcCheckmark className='check-circle' />
                         <p>Coat paint with IGL's Quartz Ceramic 9H Coating</p>
                     </li>
                     <li className='checklist-item'>
-                        <AiFillCheckCircle className='check-circle' />
+                        <FcCheckmark className='check-circle' />
                         <p>Coat windshield and lights</p>
                     </li>
                 </ul>

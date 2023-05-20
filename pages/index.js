@@ -124,10 +124,6 @@ export default function Home() {
                             <span className='header-desc-span'>Services</span>
                         </div>
                         <a href="/Contact"><BsCalendarCheck className='header-icon' /><br />Book Now</a>
-                        {/* <div>
-                            <BsCalendarCheck className='header-icon' />
-                            <a href="/Contact"> </a>
-                        </div> */}
                     </div>
 
                     {/* <div style={{ display: screenWidth < 879 ? 'none' : 'flex', alignItems: 'center', gap: 32 }}>
@@ -144,9 +140,6 @@ export default function Home() {
                 </div>
             </header>
 
-            {/* <div id="popular-services" className='separator-container'>
-                <h2 className="service-title">POPULAR DETAILING SERVICES</h2>
-            </div> */}
             <div className="service-bkg">
                 <div className="general-container new-heading-container">
                     <h3 className="new-heading new-heading-center">Our Most Popular Services</h3>
@@ -154,7 +147,6 @@ export default function Home() {
 
                 <PopularServices />
 
-                {/* <a href="/Contact" className="quote-btn main-quote-btn popular-quote-btn">Get A Free Quote</a> */}
                 <br className="extra-space" />
 
                 <div className="reasons-container">
@@ -171,7 +163,7 @@ export default function Home() {
                     <div className="reason">
                         <GiChemicalDrop className="reason-icon" />
                         <h4 className="reason-title">Researched Chemicals</h4>
-                        <p className="reason-desc">Not only have we done our part finding chemicals that work well, but ones that are also safe for the materials that we use them on.</p>
+                        <p className="reason-desc">Not only have we done our part finding chemicals that work well, but ones that are also safe for your vehicle and ceramic coatings.</p>
                     </div>
                     <div className="reason">
                         <GiSpray className="reason-icon" />
@@ -186,9 +178,6 @@ export default function Home() {
 
                 <OtherServices />
 
-                {/* <div className='separator-container'>
-                    <h3 className='service-title'>REVIEWS</h3>
-                </div> */}
                 <div className="general-container new-heading-container" style={{margin: '7vh auto'}}>
                     <strong className="above-heading">Testimonials</strong>
                     <h3 className="new-heading">Read some of the reviews from our valued customers!</h3>
@@ -197,7 +186,7 @@ export default function Home() {
 
                 <div className='service-bkg'>
                     <div className="reviews-container">
-                        <Carousel className="review-carousel" selectedItem={currentSlide} centerSlidePercentage={50} autoPlay={screenWidth < 879 ? false : true} centerMode={screenWidth < 879 ? false : true} style={styles} infiniteLoop stopOnHover showThumbs={false} showArrows interval={6000} emulateTouch>
+                        <Carousel className="review-carousel" selectedItem={currentSlide} centerSlidePercentage={50} autoPlay={false} centerMode={screenWidth < 879 ? false : true} style={styles} swipeable={false} infiniteLoop stopOnHover showThumbs={false} showArrows interval={6000} emulateTouch>
                             <div className='review-card'>
                                 <div className='lower-review'>
                                     <div className='review-top'>

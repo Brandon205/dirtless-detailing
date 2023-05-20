@@ -5,7 +5,7 @@ export default function OtherServices() {
         <div className="service-bkg-lighter" style={{display: 'flex', flexDirection: 'column', gap: '4em', paddingTop: '3rem'}}>
             <section className="otherservices-container">
                 <h2 className='service-title'>Exterior Services</h2>
-                <p>Discover Our Exceptional Exterior Auto Detailing Services.</p>
+                <p>Unleash Your Car's Hidden Shine: Discover Our Exceptional Exterior Auto Detailing Services.</p>
                 <div className='otherservices-subcontainer'>
                     <div className="service-card">
                         <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d7e1e319-7f78-4ac6-907a-9b100171ca00/public')` }}></div>
@@ -60,7 +60,7 @@ export default function OtherServices() {
 
             <section className="otherservices-container">
                 <h2 className='service-title'>Interior Services</h2>
-                <p>Need an interior detail? We've got you covered here!</p>
+                <p>Unleash the Beauty Within: Explore Our Professional Interior Auto Detailing Services</p>
                 <div className='otherservices-subcontainer'>
                     <div className="service-card">
                         <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/907d2e8b-5d24-40bf-387e-90be139c2d00/public')` }}></div>
@@ -152,7 +152,7 @@ export default function OtherServices() {
                         <div className="otherservices-desc">
                             <div>
                                 <a href='/services/interior-ceramic-coating' className='service-heading-link'>Interior Ceramic Coatings</a>
-                                <p className="secondary-text">Starting at: <br /><span>$74.99</span></p>
+                                <p className="secondary-text">Starting at: <br /><span>$75.00</span></p>
                             </div>
                             <p className="service-desc">Interior ceramic coatings offer a number of benefits for your car's interior, including protection against spills, stains, and UV damage. These coatings also make cleaning and maintenance much easier, allowing you to keep your car looking and feeling like new for longer.</p>
 
