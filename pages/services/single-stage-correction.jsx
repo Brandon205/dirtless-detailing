@@ -1,8 +1,8 @@
+import React, { useState } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
-// import { FaMapMarkerAlt } from 'react-icons/fa';
 import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 import PricingComponent from '../../utils/PricingComponent';
 import addons from '../../utils/Addons';
@@ -23,6 +23,8 @@ const steps = [
 ]
 
 export default function SinglePC() {
+  const [slide, setSlide] = useState(50);
+
   const content = steps.map((item, id) => {
     return (
       <li key={id} className="item">
@@ -121,7 +123,21 @@ export default function SinglePC() {
             <ol className='list'>
               {content}
             </ol>
-            <p>**For Ceramic Coating details check <a className='aside-link' href="/services/exterior-ceramic-coating">here</a>.</p>
+            <p>**For the strongest protection check out our <a className='aside-link' href="/services/exterior-ceramic-coating">Ceramic Coating</a> offers.</p>
+
+            <br className='extra-space' />
+
+            <p style={{fontSize: '2rem'}}>End Results</p>
+            <h3 className='pricing__heading'>Streak, Swirl, and Scratch Free Results.</h3>
+            <p>You will be amazed after seeing the difference in the paint on even the most scratched parts of your car!</p>
+            <div style={{display: 'grid'}} className='place-center'>
+              <div className='slider-container'>
+                <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0dd3f5f7-4b32-4741-5f97-e832e1e6da00/public')`}} className='slider-img'></div>
+                <div style={{width: 0 + slide + '%', backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/678c6dd0-559e-4e9e-b9b7-c04afa16f300/public')`}} className='slider-img foreground'></div>
+                <input type="range" min="1" max="100" value={slide} onChange={(e) => setSlide(Number(e.target.value))} className="slider-bar" name='slider' id="slider" />
+                <div style={{left: slide - 4 + '%'}} className="slider-button"></div>
+              </div>
+            </div>
 
             <br className='extra-space' />
 
