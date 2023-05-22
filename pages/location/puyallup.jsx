@@ -8,9 +8,9 @@ import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 
 export default function puyallup() {
-    const [currPackage, setCurrPackage] = useState('Interior')
-    const [currLink, setCurrLink] = useState('full-interior-detail')
-    const [currComponent, setCurrComponent] = useState(<PricingComponent prices={['299', '299', '349', '349', '399', '399']} addons={[addons.extraction, addons.hair, addons.headliners, addons.fabric, addons.leather, addons.ozone]} />)
+    const [currPackage, setCurrPackage] = useState('2-Year Ceramic Coating')
+    const [currLink, setCurrLink] = useState('exterior-ceramic-coating')
+    const [currComponent, setCurrComponent] = useState(<PricingComponent prices={['949', '949', '1099', '1099', '1249', '1249']} addons={[addons.glass]} />)
 
     useEffect(() => {
         if (currPackage === 'Interior') {
@@ -25,9 +25,15 @@ export default function puyallup() {
         } else if (currPackage === '2-Year Ceramic Coating') {
             setCurrComponent(<PricingComponent prices={['949', '949', '1099', '1099', '1249', '1249']} ceramic={true} />)
             setCurrLink('exterior-ceramic-coating')
+        } else if (currPackage === '5-Year Ceramic Coating') {
+            setCurrComponent(<PricingComponent prices={['1399', '1399', '1699', '1699', '1849', '1849']} ceramic={true} />)
+            setCurrLink('exterior-ceramic-coating')
         } else if (currPackage === 'Single Stage Paint Correction') {
             setCurrComponent(<PricingComponent prices={['549', '549', '699', '699', '849', '849']} addons={[addons.glass]} />)
             setCurrLink('single-stage-correction')
+        } else if (currPackage === 'Two Stage Paint Correction') {
+            setCurrComponent(<PricingComponent prices={['699', '699', '849', '849', '999', '999']} addons={[addons.glass]} />)
+            setCurrLink('two-stage-correction')
         }
     }, [currPackage])
 
@@ -125,11 +131,13 @@ export default function puyallup() {
                     <strong className="pricing__subheading">Select the package and vehicle size below to get a quick price estimate for your vehicle.</strong>
                     <div style={{margin: '0 auto'}}>
                         <select className='text-input pricing__select' name="package" id="package" onChange={(e) => setCurrPackage(e.target.value)}>
+                            <option value="2-Year Ceramic Coating">2-Year Ceramic Coating</option>
+                            <option value="5-Year Ceramic Coating">5-Year Ceramic Coating</option>
+                            <option value="Combo">The Dirt-Less Detail</option>
                             <option value="Interior">Full Interior Detail</option>
                             <option value="Dirt-Less Wash">Dirt-Less Wash</option>
-                            <option value="Combo">The Dirt-Less Detail</option>
-                            <option value="2-Year Ceramic Coating">2-Year Ceramic Coating</option>
                             <option value="Single Stage Paint Correction">Single Stage Paint Correction</option>
+                            <option value="Two Stage Paint Correction">Two Stage Paint Correction</option>
                         </select>
                     </div>
                 </div>

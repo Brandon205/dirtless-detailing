@@ -1,11 +1,42 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import { MdOutlinePermPhoneMsg } from 'react-icons/md';
+import PricingComponent from '../../utils/PricingComponent';
+import addons from '../../utils/Addons';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 
 export default function graham() {
+    const [currPackage, setCurrPackage] = useState('2-Year Ceramic Coating')
+    const [currLink, setCurrLink] = useState('exterior-ceramic-coating')
+    const [currComponent, setCurrComponent] = useState(<PricingComponent prices={['949', '949', '1099', '1099', '1249', '1249']} addons={[addons.glass]} />)
+
+    useEffect(() => {
+        if (currPackage === 'Interior') {
+            setCurrComponent(<PricingComponent prices={['299', '299', '349', '349', '399', '399']} addons={[addons.extraction, addons.hair, addons.headliners, addons.fabric, addons.leather, addons.ozone]} />)
+            setCurrLink('full-interior-detail')
+        } else if (currPackage === 'Dirt-Less Wash') {
+            setCurrComponent(<PricingComponent prices={['74', '74', '99', '99', '124', '149']} addons={[addons.claybar, addons.glass, addons.waterspot]} />)
+            setCurrLink('dirtless-wash')
+        } else if (currPackage === 'Combo') {
+            setCurrComponent(<PricingComponent prices={['374', '374', '449', '449', '474', '524']} addons={[addons.extraction, addons.hair, addons.headliners, addons.fabric, addons.leather, addons.ozone, addons.claybar, addons.glass, addons.waterspot]} />)
+            setCurrLink('interior-exterior-detailing-combo')
+        } else if (currPackage === '2-Year Ceramic Coating') {
+            setCurrComponent(<PricingComponent prices={['949', '949', '1099', '1099', '1249', '1249']} ceramic={true} />)
+            setCurrLink('exterior-ceramic-coating')
+        } else if (currPackage === '5-Year Ceramic Coating') {
+            setCurrComponent(<PricingComponent prices={['1399', '1399', '1699', '1699', '1849', '1849']} ceramic={true} />)
+            setCurrLink('exterior-ceramic-coating')
+        } else if (currPackage === 'Single Stage Paint Correction') {
+            setCurrComponent(<PricingComponent prices={['549', '549', '699', '699', '849', '849']} addons={[addons.glass]} />)
+            setCurrLink('single-stage-correction')
+        } else if (currPackage === 'Two Stage Paint Correction') {
+            setCurrComponent(<PricingComponent prices={['699', '699', '849', '849', '999', '999']} addons={[addons.glass]} />)
+            setCurrLink('two-stage-correction')
+        }
+    }, [currPackage])
+
     return (
         <div className='location-container bg-contact'>
             <Head>
@@ -91,6 +122,28 @@ export default function graham() {
 
                     <a href="/Contact" className="quote-btn location-quote-btn">Get A Free Quote</a>
                 </div>
+            </div>
+
+            <div>
+                <div className='pricing__heading-container'>
+                    <h3 className="pricing__heading">Our {currPackage} Pricing</h3>
+                    <strong className="pricing__subheading">Select the package and vehicle size below to get a quick price estimate for your vehicle.</strong>
+                    <div style={{margin: '0 auto'}}>
+                        <select className='text-input pricing__select' name="package" id="package" onChange={(e) => setCurrPackage(e.target.value)}>
+                            <option value="2-Year Ceramic Coating">2-Year Ceramic Coating</option>
+                            <option value="5-Year Ceramic Coating">5-Year Ceramic Coating</option>
+                            <option value="Combo">The Dirt-Less Detail</option>
+                            <option value="Interior">Full Interior Detail</option>
+                            <option value="Dirt-Less Wash">Dirt-Less Wash</option>
+                            <option value="Single Stage Paint Correction">Single Stage Paint Correction</option>
+                            <option value="Two Stage Paint Correction">Two Stage Paint Correction</option>
+                        </select>
+                    </div>
+                </div>
+
+                {currComponent}
+
+                <p className='text-medium'>See more details about our {currPackage} service <a href={`/services/${currLink}`} className='aside-link'>here</a></p>
             </div>
 
             <div>
