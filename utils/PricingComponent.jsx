@@ -15,7 +15,7 @@ const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
 const imagesArr = [
     '22039636-a6ef-4ea7-f9c0-12beaeb19900',
     'cfc9ecbb-fd60-40e5-988b-ecbe28ac3c00',
-    '31265123-5fa7-4f81-af49-d224e86beb00',
+    'c36a4199-45b3-43d4-9c24-0493603b8f00',
     'de5ece74-66af-46cb-8460-7e0246257b00',
     '89cde8ad-b8a8-4d15-5a65-786ad9772d00',
     'a205f097-f145-41b5-8af5-98a046dca700',

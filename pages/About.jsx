@@ -11,7 +11,7 @@ export default function About() {
         <Metatags
           title='About Us / FAQ | Dirt-Less Detailing'
           description='Find out a little more about us here, and check out our FAQ for to get answers to our most frequently asked questions.'
-          image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/public'
+          image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a7b4af9c-97db-42dc-3b72-452a6221aa00/public'
           canonical='/About'
         />
         <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
@@ -86,7 +86,7 @@ export default function About() {
           }`,
         }} />
       </Head>
-      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover')`}}></div>
+      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a7b4af9c-97db-42dc-3b72-452a6221aa00/cover')`}}></div>
       <div className="servicepage-header">
         <h1>About Us/FAQ</h1>
         <h2 className='page-subheading'>Learn a little about us, and see our most commonly asked questions here</h2>
@@ -96,7 +96,7 @@ export default function About() {
         </div>
       </div>
 
-      <section style={{marginTop: 10 + 'vh', lineHeight: '2', fontSize: '1.2em'}} className="about-container">
+      <section style={{lineHeight: '2', fontSize: '1.2em'}} className="about-container">
         <div className="service-explain">
           <div className="text-left">
             <h2 className="text-large">Who Are We?</h2>
@@ -104,8 +104,8 @@ export default function About() {
             <p>At Dirt-Less Detailing, we are passionate about providing top-notch auto detailing services to our valued clients. With our comprehensive range of services, including interior and exterior detailing, ceramic coatings, paint corrections, and engine bay cleanings, we strive to keep your vehicle looking and performing its best. Trust us to provide the care and attention to detail that your car deserves.</p>
             <p>Our main shop location is right in <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className='aside-link' target="_blank" rel='noopener'>Bonney Lake</a> off State Route 410.</p>
           </div>
-          <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/public')`}}>
-            <img style={{visibility: 'hidden'}} alt="moldy biohazard van before and after" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/public" />
+          <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/public')`}}>
+            <img style={{visibility: 'hidden'}} alt="moldy biohazard van before and after" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/public" />
           </div>
         </div>
 

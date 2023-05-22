@@ -1521,7 +1521,7 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 2.5rem;
+  gap: 2rem;
   background-color: var(--contact-bkg-lighter);
   padding: 2rem;
   border-radius: 32px;
@@ -1530,7 +1530,7 @@ hr {
 
 .reason {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 80px 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "icon title title"
@@ -1956,7 +1956,6 @@ hr {
   align-items: center;
   width: 100%;
   max-width: 1350px;
-  /* margin: 0 auto; */
 }
 
 .feature-img-container {
@@ -2837,7 +2836,7 @@ hr {
 
   .reasons-container {
     flex-direction: row;
-    gap: 1rem;
+    gap: 4rem;
   }
 
   .reason-icon {
