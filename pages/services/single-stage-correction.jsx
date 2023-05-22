@@ -132,8 +132,8 @@ export default function SinglePC() {
             <p>You will be amazed after seeing the difference in the paint on even the most scratched parts of your car!</p>
             <div style={{display: 'grid'}} className='place-center'>
               <div className='slider-container'>
-                <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0dd3f5f7-4b32-4741-5f97-e832e1e6da00/public')`}} className='slider-img'></div>
-                <div style={{width: 0 + slide + '%', backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/678c6dd0-559e-4e9e-b9b7-c04afa16f300/public')`}} className='slider-img foreground'></div>
+                <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/45d009e6-f3eb-4ad6-9875-6c1ce6355200/public')`}} className='slider-img'></div>
+                <div style={{width: 0 + slide + '%', backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/27fe91c7-587c-4a0e-dee6-b1d004fde000/public')`, backgroundPosition: '-120px 50%'}} className='slider-img foreground'></div>
                 <input type="range" min="1" max="100" value={slide} onChange={(e) => setSlide(Number(e.target.value))} className="slider-bar" name='slider' id="slider" />
                 <div style={{left: slide - 4 + '%'}} className="slider-button"></div>
               </div>

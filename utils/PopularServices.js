@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { AiFillCheckCircle } from 'react-icons/ai';
 import { FcCheckmark } from 'react-icons/fc';
 import { FaArrowRight } from 'react-icons/fa';
 
@@ -9,7 +8,7 @@ export default function PopularServices() {
         <section className="popular-container">
 
             <div className='popular-services-card'>
-                <div className='popular-img' style={{backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/be771e29-71fe-47b0-8fa3-0419d7991800/tallHD)`}}>
+                <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/be771e29-71fe-47b0-8fa3-0419d7991800/tallHD)` }}>
                 </div>
                 <div className='popular-header'>
                     <h3>Full Interior Detail</h3>
@@ -49,7 +48,7 @@ export default function PopularServices() {
 
                 <div className='popular-link-container'>
                     <div>
-                        <p style={{marginBottom: 0, color: '#c0c0c0', textAlign: 'left'}}>Starting At:</p>
+                        <p style={{ marginBottom: 0, color: '#c0c0c0', textAlign: 'left' }}>Starting At:</p>
                         <p className='popular-pricing-price'>$299.99</p>
                     </div>
                     <a href="/services/full-interior-detail" className='popular-readmore'>Learn More</a>
@@ -57,7 +56,7 @@ export default function PopularServices() {
             </div>
 
             <div className='popular-services-card'>
-                <div className='popular-img' style={{backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/de5ece74-66af-46cb-8460-7e0246257b00/tallHD)`}}>
+                <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/de5ece74-66af-46cb-8460-7e0246257b00/tallHD)` }}>
                 </div>
                 <div className='popular-header'>
                     <h3>The Dirt-Less Detail</h3>
@@ -97,7 +96,7 @@ export default function PopularServices() {
 
                 <div className='popular-link-container'>
                     <div>
-                        <p style={{marginBottom: 0, color: '#c0c0c0', textAlign: 'left'}}>Starting At:</p>
+                        <p style={{ marginBottom: 0, color: '#c0c0c0', textAlign: 'left' }}>Starting At:</p>
                         <p className='popular-pricing-price'>$374.99</p>
                     </div>
                     <a href="/services/interior-exterior-detailing-combo" className='popular-readmore'>Learn More</a>
@@ -105,7 +104,7 @@ export default function PopularServices() {
             </div>
 
             <div className='popular-services-card'>
-                <div className='popular-img' style={{backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7c93452e-cf47-4898-a618-e427e19a0e00/tallHD)`}}>
+                <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7c93452e-cf47-4898-a618-e427e19a0e00/tallHD)` }}>
                 </div>
                 <div className='popular-header'>
                     <h3>Ceramic Coating</h3>
@@ -145,7 +144,7 @@ export default function PopularServices() {
 
                 <div className='popular-link-container'>
                     <div>
-                        <p style={{marginBottom: 0, color: '#c0c0c0', textAlign: 'left'}}>Starting At:</p>
+                        <p style={{ marginBottom: 0, color: '#c0c0c0', textAlign: 'left' }}>Starting At:</p>
                         <p className='popular-pricing-price'>$949.99</p>
                     </div>
                     <a href="/services/exterior-ceramic-coating" className='popular-readmore'>Learn More</a>

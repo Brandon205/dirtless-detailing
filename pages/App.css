@@ -114,7 +114,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-size: 24px;
   font-weight: bold;
   gap: 0.5rem;
@@ -402,7 +402,7 @@ header h1 {
   font-weight: bold;
   color: white;
   margin: 0;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .main-title span {
@@ -780,7 +780,7 @@ option {
   padding: 0.5em 5%;
   background-color: var(--main-clr);
   color: white;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
@@ -805,8 +805,8 @@ option {
 
 .popular-header h3 {
   margin: 0;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 800;
+  font-family: 'Titillium Web', sans-serif;
+  /* font-weight: 800; */
   font-size: 2em;
   text-shadow: 1px 4px 5px #00000083;
   text-align: left;
@@ -1041,7 +1041,7 @@ option {
 
 .otherservices-readmore {
   padding: 0.25rem 1.75rem;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-weight: bold;
   font-size: 24px;
   background-color: var(--main-clr);
@@ -1294,7 +1294,7 @@ option {
   font-size: 2.5em;
   margin: 0;
   font-weight: bold;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .mobileservices-details ul {
@@ -1505,7 +1505,7 @@ hr {
 .new-heading {
   margin: 0 auto 0 0;
   text-align: left;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-size: 2em;
   width: 100%;
 }
@@ -1546,7 +1546,7 @@ hr {
 
 .reason-title {
   grid-area: title;
-  font-family: 'Oswald';
+  font-family: 'Titillium Web', sans-serif;
   font-size: 32px;
   margin: 0;
   font-weight: bold;
