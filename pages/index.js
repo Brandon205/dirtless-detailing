@@ -98,7 +98,7 @@ export default function Home() {
                         Specialists
                     </h1>
                     <div className='header-link-container'>
-                        <a href="/Contact" className='quote-btn'><HiOutlineClipboardCheck />Get a Free Quote</a>
+                        <a href="/Contact" className='quote-btn' style={{fontSize: '1.65em'}}><HiOutlineClipboardCheck />Get a Free Quote</a>
                         <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
                     </div>
 
