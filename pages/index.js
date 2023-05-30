@@ -313,14 +313,14 @@ export default function Home() {
                         <h4>Mobile Service Information:</h4>
                         <ul>
                             <li>We can come to you to perform our details with most of our services as long as the weather cooperates. Some services that you will need to come to us for are:</li>
-                            <li>
+                            <li className='no-list'>
                                 <ul>
                                     <li>Paint Correction (Single and Two Stage)</li>
                                     <li>Ceramic Coatings</li>
                                 </ul>
                             </li>
                             <li>For our mobile services we currently travel out to the following cities:</li>
-                            <li>
+                            <li className='no-list'>
                                 <ul>
                                     <li>Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Lake Tapps, Federal Way, Orting, South Prairie Tehaleh, Black Diamond, Milton, Edgewood, and Graham</li>
                                 </ul>
