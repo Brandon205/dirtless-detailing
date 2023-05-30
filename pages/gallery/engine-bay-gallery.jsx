@@ -38,6 +38,9 @@ export default function PaintCorrectionGallery() {
         <Zoom>
           <div className="card card-wide" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a80696d7-7afb-4d51-6507-614e3757b100/public')`}}></div>
         </Zoom>
+        <Zoom>
+          <div className="card card-wide" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/894dc2de-4f19-4630-df46-ba533c677d00/public')`}}></div>
+        </Zoom>
       </div>
 
       <br className="extra-space" />
