@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function OtherServices() {
     return (
-        <div className="service-bkg-lighter" style={{display: 'flex', flexDirection: 'column', gap: '4em', paddingTop: '3rem'}}>
+        <div className="service-bkg-lighter" style={{ display: 'flex', flexDirection: 'column', gap: '4em', paddingTop: '3rem' }}>
             <section className="otherservices-container">
                 <h2 className='service-title'>Exterior Services</h2>
                 <p>Unleash Your Car's Hidden Shine: Discover Our Exceptional Exterior Auto Detailing Services.</p>
@@ -17,7 +17,7 @@ export default function OtherServices() {
                             <p className="service-desc">Our Dirt-Less Wash will thoroughly clean the exterior of your vehicle with our tried and true cleaning process. We even apply a layer of wax to give your vehicle a strong layer of protection.</p>
 
                             <div className="otherservices-links">
-                                <a href="/services/dirtless-wash" className="otherservices-readmore">Learn More</a>
+                                <a href="/services/dirtless-wash" className="otherservices-readmore" aria-label='Dirt-Less Wash Info'>Learn More</a>
                                 <a href="/gallery/dirtless-wash-gallery" className='otherservices-readmore'>See Gallery</a>
                             </div>
                         </div>
@@ -32,7 +32,7 @@ export default function OtherServices() {
                             <p className="service-desc">Our Single Stage Paint Correction can fix 60%-70% of minor damage and scratches and will leave your vehicle looking shinier than ever.</p>
 
                             <div className="otherservices-links">
-                                <a href="/services/single-stage-correction" className="otherservices-readmore">Learn More</a>
+                                <a href="/services/single-stage-correction" className="otherservices-readmore" aria-label='Single Stage Paint Correction Info'>Learn More</a>
                                 <a href="/gallery/paint-correction-gallery" className='otherservices-readmore'>See Gallery</a>
                             </div>
                         </div>
@@ -47,7 +47,7 @@ export default function OtherServices() {
                             <p className="service-desc">Our 2 stage paint correction is great for getting your car's paint to a near perfect state. This is great for show cars need that extra time and effort to get to that showroom shine.</p>
 
                             <div className="otherservices-links">
-                                <a href="/services/two-stage-correction" className="otherservices-readmore">Learn More</a>
+                                <a href="/services/two-stage-correction" className="otherservices-readmore" aria-label='Two Stage Paint Correction Info'>Learn More</a>
                                 <a href="/gallery/paint-correction-gallery" className='otherservices-readmore'>See Gallery</a>
                             </div>
                         </div>
@@ -72,7 +72,7 @@ export default function OtherServices() {
                             <p className="service-desc">With our array of tested methods and cleaners we can fix up any interior, even the dirtiest of them. Check out our Full Interior Detail page for more details!</p>
 
                             <div className="otherservices-links">
-                                <a href="/services/full-interior-detail" className="otherservices-readmore">Learn More</a>
+                                <a href="/services/full-interior-detail" className="otherservices-readmore" aria-label='Full Interior Detailing Info'>Learn More</a>
                                 <a href="/gallery/interior-detail-gallery" className='otherservices-readmore'>See Gallery</a>
                             </div>
                         </div>
@@ -87,7 +87,7 @@ export default function OtherServices() {
                             <p className="service-desc">Our Interior and Exterior Package, to get your whole vehicle back to new. We start with our full interior service, then clean and dress the engine bay up (for free), then  finish off with our Dirt-Less Wash.</p>
 
                             <div className="otherservices-links">
-                                <a href="/services/interior-exterior-detailing-combo" className="otherservices-readmore">Learn More</a>
+                                <a href="/services/interior-exterior-detailing-combo" className="otherservices-readmore" aria-label='Interior and Exterior Detailing Combo Info'>Learn More</a>
                                 <a href="/gallery/interior-detail-gallery" className='otherservices-readmore'>See Gallery</a>
                             </div>
                         </div>
@@ -102,7 +102,7 @@ export default function OtherServices() {
                             <p className="service-desc">Smoke, odors, or even mold making your vehicle unpleasant to drive in? We've got the tools to bring your car back to how it should be!</p>
 
                             <div className="otherservices-links">
-                                <a href="/services/biohazard-cleaning" className="otherservices-readmore">Learn More</a>
+                                <a href="/services/biohazard-cleaning" className="otherservices-readmore" aria-label='Biohazard Cleaning Info'>Learn More</a>
                                 <a href="/gallery/interior-detail-gallery" className='otherservices-readmore'>See Gallery</a>
                             </div>
                         </div>
@@ -127,7 +127,7 @@ export default function OtherServices() {
                             <p className="service-desc">This Protect Ceramic Coating package gives you an included Dirt-Less Wash and Single Stage Paint Correction before applying IGL's 9H Quartz Ceramic Coating, giving you 2 years of protection with good maintenance practices. Ask us more about our maintenance packages to hear about our warranties.</p>
 
                             <div className="otherservices-links">
-                                <a href="/services/exterior-ceramic-coating" className="otherservices-readmore">Learn More</a>
+                                <a href="/services/exterior-ceramic-coating" className="otherservices-readmore" aria-label='Protect Package Info'>Learn More</a>
                                 <a href="/gallery/ceramic-coating-gallery" className='otherservices-readmore'>See Gallery</a>
                             </div>
                         </div>
@@ -142,7 +142,7 @@ export default function OtherServices() {
                             <p className="service-desc">Our Protect+ Ceramic Coating package includes all that our Protect package does, a Full Dirt-Less Wash, Single Stage Paint Correction, and then we give you 3 coats of IGL's 10H Kenzo Graphene giving you 5 years of protection with good maintenance practices.</p>
 
                             <div className="otherservices-links">
-                                <a href="/services/exterior-ceramic-coating" className="otherservices-readmore">Learn More</a>
+                                <a href="/services/exterior-ceramic-coating" className="otherservices-readmore" aria-label='Protect Plus Package info'>Learn More</a>
                                 <a href="/gallery/ceramic-coating-gallery" className='otherservices-readmore'>See Gallery</a>
                             </div>
                         </div>
@@ -157,7 +157,7 @@ export default function OtherServices() {
                             <p className="service-desc">Interior ceramic coatings offer a number of benefits for your car's interior, including protection against spills, stains, and UV damage. These coatings also make cleaning and maintenance much easier, allowing you to keep your car looking and feeling like new for longer.</p>
 
                             <div className="otherservices-links">
-                                <a href="/services/interior-ceramic-coating" className="otherservices-readmore">Learn More</a>
+                                <a href="/services/interior-ceramic-coating" className="otherservices-readmore" aria-label='Interior Coating Info'>Learn More</a>
                                 <a href="/gallery/ceramic-coating-gallery" className='otherservices-readmore'>See Gallery</a>
                             </div>
                         </div>

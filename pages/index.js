@@ -142,7 +142,7 @@ export default function Home() {
 
             <div className="service-bkg">
                 <div className="general-container new-heading-container">
-                    <h3 className="new-heading new-heading-center">Our Most Popular Services</h3>
+                    <h2 className="new-heading new-heading-center">Our Most Popular Services</h2>
                 </div>
 
                 <PopularServices />
@@ -313,15 +313,19 @@ export default function Home() {
                         <h4>Mobile Service Information:</h4>
                         <ul>
                             <li>We can come to you to perform our details with most of our services as long as the weather cooperates. Some services that you will need to come to us for are:</li>
-                            <ul>
-                                <li>Paint Correction (Single and Two Stage)</li>
-                                <li>Ceramic Coatings</li>
-                            </ul>
+                            <li>
+                                <ul>
+                                    <li>Paint Correction (Single and Two Stage)</li>
+                                    <li>Ceramic Coatings</li>
+                                </ul>
+                            </li>
                             <li>For our mobile services we currently travel out to the following cities:</li>
-                            <ul>
-                                <li>Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Lake Tapps, Federal Way, Orting, South Prairie Tehaleh, Black Diamond, Milton, Edgewood, and Graham</li>
-                            </ul>
-                            <li><span className="special-package">Note:</span> For Services totaling less than $200 we do charge a small $1/mile from our shop location fee.</li>
+                            <li>
+                                <ul>
+                                    <li>Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Lake Tapps, Federal Way, Orting, South Prairie Tehaleh, Black Diamond, Milton, Edgewood, and Graham</li>
+                                </ul>
+                            </li>
+                            <li>*Note: For Services totaling less than $200 we do charge a small $1/mile from our shop location fee.</li>
                         </ul>
                     </div>
                     <div className='map'>

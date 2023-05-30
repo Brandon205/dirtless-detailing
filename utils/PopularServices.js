@@ -51,7 +51,7 @@ export default function PopularServices() {
                         <p style={{ marginBottom: 0, color: '#c0c0c0', textAlign: 'left' }}>Starting At:</p>
                         <p className='popular-pricing-price'>$299.99</p>
                     </div>
-                    <a href="/services/full-interior-detail" className='popular-readmore'>Learn More</a>
+                    <a href="/services/full-interior-detail" className='popular-readmore' aria-label='Full Interior Detail Info'>Learn More</a>
                 </div>
             </div>
 
@@ -99,7 +99,7 @@ export default function PopularServices() {
                         <p style={{ marginBottom: 0, color: '#c0c0c0', textAlign: 'left' }}>Starting At:</p>
                         <p className='popular-pricing-price'>$374.99</p>
                     </div>
-                    <a href="/services/interior-exterior-detailing-combo" className='popular-readmore'>Learn More</a>
+                    <a href="/services/interior-exterior-detailing-combo" className='popular-readmore' aria-label='Interior and Exterior Detailing Combo'>Learn More</a>
                 </div>
             </div>
 
@@ -147,7 +147,7 @@ export default function PopularServices() {
                         <p style={{ marginBottom: 0, color: '#c0c0c0', textAlign: 'left' }}>Starting At:</p>
                         <p className='popular-pricing-price'>$949.99</p>
                     </div>
-                    <a href="/services/exterior-ceramic-coating" className='popular-readmore'>Learn More</a>
+                    <a href="/services/exterior-ceramic-coating" className='popular-readmore' aria-label='Ceramic Coating Info'>Learn More</a>
                 </div>
             </div>
         </section>
