@@ -153,7 +153,7 @@ export default function Home() {
                     <div className="reason">
                         <AiOutlineUnorderedList className="reason-icon" />
                         <h4 className="reason-title">Personalized Options</h4>
-                        <p className="reason-desc">We have plenty of options to fit all needs and budgets, from our quick but thorough washes all the way up to our 2-day Ceramic Coating service.</p>
+                        <p className="reason-desc">We have plenty of options and add-ons to fit all needs and budgets, from our quick but thorough washes all the way up to our 2-day Ceramic Coating service.</p>
                     </div>
                     <div className="reason">
                         <BsHourglassSplit className="reason-icon" />

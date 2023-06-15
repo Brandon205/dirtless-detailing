@@ -6,7 +6,8 @@
   --nav-bkg-clr-hover: #c0c0c0;
   --nav-color: #636364;
   --boxshadow-clr: rgb(213, 213, 213);
-  --footer-bkg: #060606;
+  /* --footer-bkg: #212327; */
+  --footer-bkg: #41444A;
 
   --contact-bkg: #212327;
   --contact-bkg-lighter: #41444A;
@@ -749,19 +750,20 @@ option {
 
 /** Home Page Services CSS **/
 .popular-container {
-  padding-top: 7vh;
-  width: 100%;
+  /* width: 100%; */
   height: auto;
   padding: 7vh 5vw 0 5vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  margin: 0 auto;
 }
 
 .popular-services-card {
   background-color: var(--contact-bkg-lighter);
   width: 90%;
+  max-width: 550px;
   z-index: 0;
   position: relative;
   font-size: 1.1em;
@@ -1370,7 +1372,8 @@ footer {
   flex-direction: column;
   text-align: left;
   padding: 15px 15px 0 15px;
-  background-color: var(--contact-bkg-clr);
+  background-color: var(--footer-bkg);
+  box-shadow: 0 -3px 7px rgba(0, 0, 0, 0.544);
   color: white;
 }
 
@@ -2736,11 +2739,6 @@ hr {
     line-height: 2;
   }
 
-  /* .popular-container {
-    flex-direction: row;
-    justify-content: center;
-  } */
-
   .popular-readmore {
     padding: 0.55em 10%;
   }
@@ -2885,6 +2883,7 @@ hr {
 
   .popular-container {
     flex-direction: row;
+    justify-content: center;
   }
 
   .pricing__pricecard {

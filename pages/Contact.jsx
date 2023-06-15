@@ -292,7 +292,7 @@ export default function Contact() {
 
             <div className='contact-container-right'>
                 <h2>Or Email us by filling out our form:</h2>
-                <p style={{ marginTop: 0 }}><span className='special-package'>*</span>Pricing is approximate and may vary inside of the listed ranges based on vehicle size and condition.</p>
+                <p style={{ marginTop: 0 }}><span className='special-package'>*</span>The pricing here is approximate and may vary inside of the listed ranges based on vehicle size and condition.</p>
                 <form className="form" ref={formRef} autoComplete="on" onSubmit={(e) => formSubmit(e)}>
                     <div className="form-section form-top-section">
                         <div>
@@ -590,7 +590,7 @@ export default function Contact() {
                             <label htmlFor="glassEx" className='checkbox-label'>Glass Polishing <span className='special-package italic'>($80/hour)</span></label>
 
                             <input type="checkbox" id='waterspotEx' name="waterspot" className='checkbox-input' />
-                            <label htmlFor="waterspotEx" className='checkbox-label'>Waterspot/Overspray Removal <span className='special-package italic'>($80/hour)</span></label>
+                            <label htmlFor="waterspotEx" className='checkbox-label'>Waterspot, Overspray, or Road Paint Removal <span className='special-package italic'>($80/hour)</span></label>
 
                             <input type="checkbox" id='debadge' name="debadge" className='checkbox-input' />
                             <label htmlFor="debadge" className='checkbox-label'>Debadging <span className='special-package italic'>($80/hour)</span></label>
@@ -621,7 +621,8 @@ export default function Contact() {
                         </div>
                     </div>
 
-                    <button className='submit-button'>Submit Quote Form!</button>
+                    <button className='submit-button'>Submit Form!</button>
+                    <p style={{marginTop: 0}}>We will be in touch with you via text shortly after you submit the form!</p>
 
                     <ToastContainer position="bottom-center"
                         autoClose={5000}
@@ -635,7 +636,7 @@ export default function Contact() {
                     />
                 </form>
 
-                <form style={{marginTop: 10 + 'vh'}} action="https://dirtlessdetailing.us9.list-manage.com/subscribe/post?u=752a73821b38b96d23f195a09&amp;id=d2a4976ed6&amp;f_id=00e011e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" noValidate>
+                {/* <form style={{marginTop: 10 + 'vh'}} action="https://dirtlessdetailing.us9.list-manage.com/subscribe/post?u=752a73821b38b96d23f195a09&amp;id=d2a4976ed6&amp;f_id=00e011e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" noValidate>
                     <div className="form-section form-top-section">
                         <h2 style={{marginBottom: 0}}>Subscribe to us!</h2><br />
                         <p style={{marginTop: 0}}>Get news about Dirt-Less Detailing, along with special offers, deals and tips!</p>
@@ -657,7 +658,7 @@ export default function Contact() {
                         </div>
                         <input type="submit" name="subscribe" id="mc-embedded-subscribe" className="submit-button" />
                     </div>
-                </form>
+                </form> */}
             </div>
         </section>
     )

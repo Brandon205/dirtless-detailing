@@ -60,8 +60,8 @@ export default function Addons() {
                 "availability": "http://schema.org/InStock",
                 "itemOffered": {
                   "@type": "Service",
-                  "name": "Waterspot/Overspray Removal Service",
-                  "serviceType": "Waterspot/Overspray Removal",
+                  "name": "Waterspot / Overspray / Road Paint Removal Service",
+                  "serviceType": "Waterspot / Overspray / Road Paint Removal",
                   "providerMobility": "dynamic"
                 }
               },
@@ -152,9 +152,9 @@ export default function Addons() {
         <div className="feature-section" id="waterspot">
           <RiCarWashingFill className='feature-icon' />
           <div className="feature-desc-area">
-            <p className='service-heading-subtitle'>Waterspot/Overspray Removal</p>
+            <p className='service-heading-subtitle'>Waterspot, Overspray, or Road Paint Removal</p>
             <p className="secondary-text"><span>$80/hour</span></p>
-            <p className="service-desc text-white">Remove all overspray and waterspots we can. This can be added onto any of our Exterior Washes or either of our Paint Correction Services when contacting us.</p>
+            <p className="service-desc text-white">Remove all overspray, waterspots, or road paint that we can. This can be added onto any of our Exterior Washes or either of our Paint Correction Services when contacting us.</p>
             <div className='internal-links'>
               <a href="/services/dirtless-wash" className="readmore">Dirt-Less Wash</a>
               <a href="/services/single-stage-correction" className="readmore">Single Stage Paint Correction</a>
