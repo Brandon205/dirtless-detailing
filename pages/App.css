@@ -629,6 +629,17 @@ option {
   margin-top: 0.25rem;
 }
 
+.newsletter-label {
+  display: inline-block;
+  /* text-indent: 50px; */
+}
+
+.newsletter-checkbox {
+  display: inline !important;
+  font-size: 1.5em;
+  vertical-align: bottom;
+}
+
 .dirty-label {
   position: relative;
   z-index: 5;

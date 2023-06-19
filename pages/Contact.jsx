@@ -24,6 +24,7 @@ export default function Contact() {
     const [exteriorCoating, setExteriorCoating] = useState('');
     const [dirtiness, setDirtiness] = useState('');
     const [dogHair, setDogHair] = useState('');
+    const [newsletter, setNewsletter] = useState(true);
 
     const [nameVal, setNameVal] = useState('');
     const [emailVal, setEmailVal] = useState('');
@@ -42,6 +43,7 @@ export default function Contact() {
             "Year": e.target['year'].value,
             "Make": e.target['make'].value,
             "Model": e.target['model'].value,
+            "Newsletter": e.target['newsletter'].checked ? 'Yes' : 'No',
             "Message": e.target['message'].value,
 
             "Exterior Coating": formRef.current['Protect'].checked ? 'Protect' : formRef.current['Protect+'].checked ? 'Protect+' : '',
@@ -70,7 +72,7 @@ export default function Contact() {
 
         const formData = new FormData();
         Object.entries(formInfo).forEach(([key, value]) => {
-            if (key === "Name" || key === "Email" || key === "Message" || key === "Phone" || key === "Year" || key === "Make" || key === "Model" || key === "Exterior Coating" || key === "Interior Cleaning" || key === "Dirtiness" || key === "Dog Hair" || key === "Exterior Wash" || key === "Paint Correction" || key === "Dirtiness" || key === "Dog Hair") {
+            if (key === "Name" || key === "Email" || key === "Message" || key === "Phone" || key === "Year" || key === "Make" || key === "Model" || key === "Exterior Coating" || key === "Interior Cleaning" || key === "Dirtiness" || key === "Dog Hair" || key === "Exterior Wash" || key === "Paint Correction" || key === "Dirtiness" || key === "Dog Hair" || key === 'Newsletter') {
                 if (value !== '') {
                     formData.append(key, value);
                 }
@@ -472,6 +474,13 @@ export default function Contact() {
                             <div className='select-field'>
                                 <label htmlFor="model" className='text-input-label'>Model<span className='special-package'>*</span></label>
                                 <input type="text" id="model" name="model" className='text-input model-input' placeholder="Model" required />
+                            </div>
+
+                            <div style={{width: '100%', padding: '1rem 0', textAlign: 'left'}} className='select-field'>
+                                <h3 style={{}}>Sign Up For Our Newletter</h3>
+                                <label htmlFor="newsletter" className='newsletter-label' >
+                                    <input type="checkbox" name="newsletter" id='newsletter' checked={newsletter} onChange={() => setNewsletter(!newsletter)} className='newsletter-checkbox' />Receive our short emails on our offers and updates, you'll only get 1-3 emails per month and you will be the first to know about our newest offers! Unsubscribe at any time!
+                                </label>
                             </div>
 
                             <div style={{ width: 100 + '%' }}>
