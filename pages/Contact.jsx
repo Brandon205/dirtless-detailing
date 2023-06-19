@@ -258,7 +258,8 @@ export default function Contact() {
                     <h3 style={{ marginBottom: 0 }}>Need us to come to you?</h3>
                     <p className="hours-p" style={{ marginBottom: 0 }}>We can perform mobile detailing in the following cities:</p>
                     <p className="hours-p"><span style={{ fontWeight: 'bold', color: '#9f9f9f' }}> Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Tehaleh, Black Diamond, Milton, Edgewood, and Graham.</span></p>
-                    <p className='subtext italic'><span className='special-package'>*Note:</span> If the total of the services you choose is less than $200, there is a $1/mile from our shop fee to cover travel costs.</p>
+                    <p>Overnight Detailing: For drop offs we have a safe lockable garage, so if it's more convenient for you feel free to drop your car off the night before! We can usually also do our details at night so you can drop your car off and have it done in the morning! </p>
+                    <p className='subtext italic'><span className='special-package'>*Note:</span> If the total of the mobile services you choose is less than $200, there is a $1/mile from our shop fee to cover travel costs.</p>
                     <hr className="contact-border" />
                     <div className="contact-icon-container">
                         <FaClock className='contact-icon' />
@@ -287,7 +288,7 @@ export default function Contact() {
                     <hr className="contact-border" />
                     <div className='contact-icon-container'>
                         <AiFillGift className='contact-icon' />
-                        <p>Looking to get a gift for someone? All of our services can be bought as a gift certificate, just select "For Someone Else" below!</p>
+                        <p style={{textAlign: 'left'}}>Looking to get a gift for someone? All of our services can be bought as a gift certificate, just select "For Someone Else" below!</p>
                     </div>
                 </div>
             </div>

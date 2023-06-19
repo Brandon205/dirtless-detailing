@@ -325,7 +325,7 @@ export default function Home() {
                                     <li>Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Lake Tapps, Federal Way, Orting, South Prairie Tehaleh, Black Diamond, Milton, Edgewood, and Graham</li>
                                 </ul>
                             </li>
-                            <li>*Note: For Services totaling less than $200 we do charge a small $1/mile from our shop location fee.</li>
+                            <li>*Note: For Mobile Services totaling less than $200 we do charge a small $1/mile from our shop location fee.</li>
                         </ul>
                     </div>
                     <div className='map'>

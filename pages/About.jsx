@@ -60,6 +60,14 @@ export default function About() {
             }, 
             {
               "@type": "Question",
+              "name": "Do you detail boats?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, however, currently we are only doing boat interiors and washes and no polishing for now. Call or text us to get a quote!"
+              }
+            }, 
+            {
+              "@type": "Question",
               "name": "Are you licensed and insured?",
               "acceptedAnswer": {
                 "@type": "Answer",
@@ -71,7 +79,7 @@ export default function About() {
               "name": "What cities do you service?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text":"With our mobile service we can go out to: Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham."
+                "text":"With our mobile service we can go out to: Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Lake Tapps, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham."
               }
             },
             {
@@ -117,20 +125,26 @@ export default function About() {
           <li className='faq-li'>How long will the detail take?</li>
           <li className='faq-p'>Every job will take a different amount of time, but once we know the condition of the car and the services requested we can give a good estimate as to how long it will take.</li>
 
+          <li className='faq-li'>What forms of payment do you take?</li>
+          <li className='faq-p'>Currently you can pay by check, cash, or card.</li>
+
+          <li className='faq-li'>Can I drop my car off overnight?</li>
+          <li className='faq-p'>Yes! We have a completely safe locked garage to store your vehicle, and we can usually even do the detail job overnight so that your car is ready by the morning!</li>
+
+          <li className='faq-li'>Do you detail boats?</li>
+          <li className='faq-p'>Yes, however, currently we are only doing boat interiors and washes and no polishing for now. Call or text us to get a quote!</li>
+
           <li className='faq-li'>Can you come to my apartment or workplace?</li>
-          <li className='faq-p'>It will depend on the amount of space and access if we can or not.</li>
+          <li className='faq-p'>It will depend on the amount of space and water/electrical access if we can or not.</li>
 
           <li className='faq-li'>Do you offer gift cards or gift certificates?</li>
           <li className='faq-p'>Yes we do! Any of our services can be bought as a gift certificate. On the <a href="/Contact" className='aside-link'>Contact</a> page choose the "For Someone Else" option.</li>
-
-          <li className='faq-li'>What forms of payment do you take?</li>
-          <li className='faq-p'>Currently you can pay by check, cash, card, or Facebook pay.</li>
 
           <li className='faq-li'>Are you licensed and insured?</li>
           <li className='faq-p'>We are 100% licensed and insured!</li>
 
           <li className='faq-li'>What cities do you service?</li>
-          <li className='faq-p'>With our mobile service we can go out to: Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham.<br /> *Note: Mobile service is free only if the total cost of your service is more than $200, otherwise there is a $1/mile fee.</li>
+          <li className='faq-p'>With our mobile service we can go out to: Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Lake Tapps, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham.<br /> *Note: Mobile service is free only if the total cost of your service is more than $200, otherwise there is a $1/mile fee.</li>
 
           <li className='faq-li'>Do I have to be there the whole time you're working on my car?</li>
           <li className='faq-p'>Absolutely not! You are free to go do whatever you need to do while we are working.</li>

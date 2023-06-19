@@ -166,7 +166,7 @@ export default function MyApp({ Component, pageProps }) {
                             </li>
 
                             <li className='menu-li'>
-                                <a href="/About" className="menu-link" onClick={() => setNav('none')}><BsFillPersonBadgeFill /> About Us</a>
+                                <a href="/About" className="menu-link" onClick={() => setNav('none')}><BsFillPersonBadgeFill /> About / FAQ</a>
                             </li>
 
                             <li className="menu-li quote-li">
