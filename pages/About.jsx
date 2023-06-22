@@ -149,8 +149,8 @@ export default function About() {
           <li className='faq-li'>Do I have to be there the whole time you're working on my car?</li>
           <li className='faq-p'>Absolutely not! You are free to go do whatever you need to do while we are working.</li>
 
-          <li className='faq-li'>I have questions about taking care of my car after getting a ceramic coating?</li>
-          <li className='faq-p'>Check out our <a href="/services/exterior-ceramic-coating#faq" className="aside-link">Ceramic Coating FAQ</a> to get your questions answered!</li>
+          <li className='faq-li'>How would you recommend I wash my car on my own?</li>
+          <li className='faq-p'>We have a guide on the steps and products we recommend on our <a href="/products/ceramic-coating" className='aside-link'>Ceramic Coating Maintenance</a> page. All the products are perfectly fine to use whether your car is ceramic coated or not!</li>
         </ul>
       </section>
     </div>

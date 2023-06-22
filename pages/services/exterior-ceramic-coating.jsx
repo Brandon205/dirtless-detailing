@@ -255,22 +255,6 @@ export default function ExtCoatings() {
 
                             <br className="extra-space" />
 
-                            {/* <br className='extra-space' />
-
-                            <h4 className='text-large'>Informational photos from IGL:</h4>
-                            <strong className='subtext'>Check out more from our Ceramic Coating provider <a href='https://iglcoatingsusa.com/' target='_blank' rel='noopener' className='aside-link'>IGL</a>.</strong>
-                            <div className="mini-grid">
-                                <Zoom>
-                                    <div aria-label="What an IGL Coating can protect your paint from" role='img' className="card card-tall" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b69dcca1-8d92-414e-32c9-ddfe247fa100/public')`}} />
-                                </Zoom>
-                                <Zoom>
-                                    <div aria-label="Paint layers explained" role='img' className="card card-tall" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/32aa3e25-1fcb-4e05-760a-eb53f4b18400/public')`}} />
-                                </Zoom>
-                                <Zoom>
-                                    <div aria-label="What to expect from an IGL Coating" role='img' className="card card-tall" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b3d13f8-c7ec-44fc-7750-ab0d466eae00/public')`}} />
-                                </Zoom>
-                            </div> */}
-
                             <div id='faq'>
                                 <div className="new-heading-container">
                                     <strong className="above-heading">FAQ</strong>
@@ -278,13 +262,13 @@ export default function ExtCoatings() {
                                 </div>
                                 <ul className='faq-ul'>
                                     <li className='faq-li'>How long does it last?</li>
-                                    <li className='faq-p'>The paint coating should last 2-5 years, 50,000 miles, or a Lifetime<span className='special-package'>*</span> with our warranty. The coating on any trim, glass, lights, or wheels will last 1 year approximately.</li>
+                                    <li className='faq-p'>The paint coating should last 2-5 years, 50,000 miles, or a Lifetime<span className='special-package'>*</span> with our warranty. The coating on any trim, glass, lights, or wheels will last approximately 1 year.</li>
 
                                     <li className='faq-li'>Can I still go through car washes?</li>
-                                    <li className='faq-p'>If you want to keep the ceramic coat in good condition and have it last as long as possible, you won't want to go through any car washes even the touch-less ones.</li>
+                                    <li className='faq-p'>If you want to keep the ceramic coating in good condition and have it last as long as possible, you won't want to go through any car washes even the touch-less ones.</li>
 
                                     <li className='faq-li'>How should I wash my car then?</li>
-                                    <li className='faq-p'>For washing your coated vehicle you have a couple of options. We recommend scheduling monthly maintenance through us especially if you get our Protect+ Package. Or we can give you a run down on our techniques and recommend you some products to use to prolong the life of your ceramic coating!</li>
+                                    <li className='faq-p'>You can check out our new <a href="/products/ceramic-coating" className='aside-link'>Ceramic Coating Maintenance</a> page for a inexpensive DIY kit and washing method that's safe for your new coating! For washing your coated vehicle you have a couple of options. Or we also highly recommend either scheduling monthly maintenance through us especially if you get our Protect+ Package. </li>
 
                                     <li className='faq-li'>How do the 2 and 5 year warranties work?</li>
                                     <li className='faq-p'>For the 2 year (Protect) or the 5 year (Protect+) coating warranty, you will have to get our Ceramic Maintenance Package every 6 months to 1 year.</li>
