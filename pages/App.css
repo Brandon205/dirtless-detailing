@@ -240,6 +240,10 @@ li span {
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.544);
 }
 
+.nav-logo {
+  flex-grow: 1
+}
+
 .menu-container {
   position: absolute;
   text-align: left;
@@ -354,13 +358,14 @@ header h1 {
 .header-icons-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-top: 1rem;
+  margin: 0 auto;
   background-color: #41444ac4;
-  border: 2px solid #d9d9d9;
-  padding: 2em;
+  /* border: 2px solid #d9d9d9; */
+  padding: 4em;
   color: white;
-  border-radius: 32px;
+  border-radius: 0 0 1rem 1rem;
 }
 
 .header-icons-container div {
@@ -765,10 +770,38 @@ option {
 }
 
 /** Home Page Services CSS **/
+.service-type-container {
+  display: grid;
+  place-items: center;
+  grid-auto-flow: row;
+  gap: 2rem;
+  margin: 0 auto 7vh auto;
+}
+
+.service-type-card {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  padding: 1rem 2rem;
+  max-width: 300px;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.service-type-card:hover {
+  box-shadow: 5px 12px 10px black !important;
+}
+
+.service-type-icon {
+  margin: 0 auto;
+  font-size: 3em;
+  margin-bottom: 2rem; 
+}
+
 .popular-container {
-  /* width: 100%; */
+  width: 100%;
   height: auto;
-  padding: 7vh 5vw 0 5vw;
+  padding: 0 5vw 7vh 5vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2840,6 +2873,10 @@ hr {
     font-size: 1.1em;
   }
 
+  .nav-logo {
+    flex-grow: 0.2
+  }
+
   .nav-div {
     padding: 1.5rem;
   }
@@ -2917,8 +2954,11 @@ hr {
 
   .header-icons-container {
     flex-direction: row;
-    justify-content: flex-start;
     gap: 4rem;
+  }
+
+  .service-type-container {
+    grid-template-columns: 1fr 1fr;
   }
 
   .header-buttons {
@@ -2967,12 +3007,12 @@ hr {
 
   .service-title {
     text-align: left;
-    padding-left: 1.5rem;
+    /* padding-left: 1.5rem; */
   }
 
   .service-title+p {
     text-align: left;
-    padding-left: 1.5rem;
+    /* padding-left: 1.5rem; */
   }
 
   .otherservices-subcontainer {
@@ -3228,6 +3268,15 @@ hr {
 }
 
 @media screen and (min-width: 1350px) {
+
+  .service-type-container { 
+    grid-template-columns: none;
+    grid-auto-flow: column;
+  }
+
+  .nav-logo {
+    flex-grow: 0.65;
+  }
 
   .header-link-container {
     display: flex;

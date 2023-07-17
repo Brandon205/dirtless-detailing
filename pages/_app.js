@@ -86,7 +86,7 @@ export default function MyApp({ Component, pageProps }) {
             </Head>
             <header className="App-header">
                 <nav id="nav" ref={navBar}>
-                    <a style={{ display: 'flex', justifyContent: 'flex-start', flexGrow: 0.4 }} href="/" aria-label='Dirt-Less Detailing Logo'>
+                    <a style={{ display: 'flex', justifyContent: 'flex-start'}} className='nav-logo' href="/" aria-label='Dirt-Less Detailing Logo'>
                         <div className="header-cert" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0a945e76-f4c0-4e29-ef16-463490d0db00/public')`, height: 105 + 'px', width: 140 + 'px' }}></div>
                     </a>
                     <FaBars className="menu-bars" onClick={() => setNav(nav === 'block' ? 'none' : 'block')} />

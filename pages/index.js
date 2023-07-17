@@ -7,12 +7,12 @@ import PopularServices from '../utils/PopularServices';
 import OtherServices from '../utils/OtherServices';
 
 import { MdOutlineLocalCarWash, MdOutlineArrowBackIos, MdOutlineArrowForwardIos } from 'react-icons/md';
-import { FaFacebook } from 'react-icons/fa';
+import { FaFacebook, FaCarSide } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
 import { BsCalendarCheck, BsHourglassSplit } from 'react-icons/bs';
 import { BiCertification } from 'react-icons/bi';
-import { GiChemicalDrop, GiSpray } from 'react-icons/gi';
-import { MdOutlinePermPhoneMsg } from 'react-icons/md';
+import { GiChemicalDrop, GiSpray, GiCarSeat } from 'react-icons/gi';
+import { MdOutlinePermPhoneMsg, MdLeaderboard } from 'react-icons/md';
 import { FaRegStar, FaMapMarkedAlt } from 'react-icons/fa';
 import { AiOutlineUnorderedList  } from 'react-icons/ai';
 import { HiOutlineClipboardCheck } from 'react-icons/hi';
@@ -22,6 +22,7 @@ import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 export default function Home() {
     const [screenWidth, setScreenWidth] = useState(null);
     const [currentSlide, setCurrentSlide] = useState(0);
+    const [currentService, setCurrentService] = useState('popular');
 
     useEffect(() => {
         setScreenWidth(window.innerWidth);
@@ -41,6 +42,13 @@ export default function Home() {
         } else {
             setCurrentSlide(currentSlide - 1);
         }
+    }
+
+    let handleServiceChange = (service) => {
+        let scrollEl = document.getElementById('service-hyperlink');
+
+        scrollEl.scrollIntoView({behavior: 'smooth'})
+        setCurrentService(service);
     }
 
     return (
@@ -102,30 +110,6 @@ export default function Home() {
                         <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
                     </div>
 
-                    {/* <div style={{ display: screenWidth < 1450 ? 'none' : 'flex' }} className="header-icons-container">
-                        <div>
-                            <BiCertification className='header-icon' />
-                            <p className="header-desc">7 Years</p>
-                            <span className='header-desc-span'>Of Experience</span>
-                        </div>
-                        <div>
-                            <MdOutlineLocalCarWash className='header-icon' />
-                            <p className="header-desc">1000+</p>
-                            <span className='header-desc-span'>Details Done</span>
-                        </div>
-                        <div>
-                            <FaRegStar className='header-icon' />
-                            <p className="header-desc">Plenty</p>
-                            <span className='header-desc-span'>of 5 Star Reviews</span>
-                        </div>
-                        <div>
-                            <FaMapMarkedAlt className='header-icon' />
-                            <p className="header-desc">Mobile</p>
-                            <span className='header-desc-span'>Services</span>
-                        </div>
-                        <a href="/Contact"><BsCalendarCheck className='header-icon' /><br />Book Now</a>
-                    </div> */}
-
                     {/* <div style={{ display: screenWidth < 879 ? 'none' : 'flex', alignItems: 'center', gap: 32 }}>
                         <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="noopener">
                             <div className="header-cert" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/242a2248-1f41-4edf-b2c5-d508a10bef00/public')`, height: 134 + 'px', width: 134 + 'px' }}></div>
@@ -140,14 +124,69 @@ export default function Home() {
                 </div>
             </header>
 
-            <div className="service-bkg">
-                <div className="general-container new-heading-container">
-                    <h2 className="new-heading new-heading-center">Our Most Popular Services</h2>
+            <div className="service-bkg" style={{paddingTop: 0}}>
+                <div style={{display: screenWidth < 879 ? 'none' : 'flex'}} className="header-icons-container">
+                    <div>
+                        <BiCertification className='header-icon' />
+                        <p className="header-desc">7 Years</p>
+                        <span className='header-desc-span'>Of Experience</span>
+                    </div>
+                    <div>
+                        <MdOutlineLocalCarWash className='header-icon' />
+                        <p className="header-desc">1000+</p>
+                        <span className='header-desc-span'>Details Done</span>
+                    </div>
+                    <div>
+                        <FaRegStar className='header-icon' />
+                        <p className="header-desc">Raving</p>
+                        <span className='header-desc-span'>5 Star Reviews</span>
+                    </div>
+                    <div>
+                        <FaMapMarkedAlt className='header-icon' />
+                        <p className="header-desc">Mobile</p>
+                        <span className='header-desc-span'>Services</span>
+                    </div>
+                    {/* <a href="/Contact"><BsCalendarCheck className='header-icon' /><br />Book Now</a> */}
                 </div>
 
-                <PopularServices />
+                <div className="general-container new-heading-container">
+                    <h2 className="new-heading new-heading-center">Our Services</h2>
+                </div>
 
-                <br className="extra-space" />
+                <div className="service-type-container">
+                    <div style={{boxShadow: currentService === 'popular' ? '5px 12px 10px black' : '2px 6px 5px black'}} className="service-type-card" onClick={() => handleServiceChange('popular')}>
+                        <MdLeaderboard className='service-type-icon' />
+                        <strong>Our Most Popular Details</strong>
+                        <p>The details we perform the most often due to the high demand from them, these are our bread and butter.</p>
+                    </div>
+                    <div style={{boxShadow: currentService === 'interior' ? '5px 12px 10px black' : '2px 3px 3px black'}} className="service-type-card" onClick={() => handleServiceChange('interior')}>
+                        <GiCarSeat className='service-type-icon' />
+                        <strong>Interior Details</strong>
+                        <p>All of our Interior services ranging from simple cleanings all the way to Extreme Biohazard removal.</p>
+                    </div>
+                    <div style={{boxShadow: currentService === 'exterior' ? '5px 12px 10px black' : '2px 6px 5px black'}} className="service-type-card" onClick={() => handleServiceChange('exterior')}>
+                        <MdOutlineLocalCarWash className='service-type-icon' />
+                        <strong>Exterior Details</strong>
+                        <p>Every exterior service from our simplest washes to our most detail oriented paint correction services that remove scratches and swirls.</p>
+                    </div>
+                    <div style={{boxShadow: currentService === 'ceramic' ? '5px 12px 10px black' : '2px 6px 5px black'}} className="service-type-card" onClick={() => handleServiceChange('ceramic')}>
+                        <FaCarSide className='service-type-icon' />
+                        <strong>Ceramic Coatings</strong>
+                        <p>Our best exterior paint protection offer! If you want you paint to look good, be protected, and shine for years to come this is the option for you.</p>
+                    </div>
+                </div>
+
+                <br style={{margin: '1.5rem auto'}} id='service-hyperlink' />
+            
+                {currentService === 'popular' ? 
+                    <PopularServices smallScreen={screenWidth < 879} /> : ''
+                }
+                {currentService !== 'popular' ? 
+                    <OtherServices service={currentService} /> : ''
+                }
+
+
+                {/* <br className="extra-space" />
 
                 <div className="reasons-container">
                     <div className="reason">
@@ -174,9 +213,9 @@ export default function Home() {
 
                 <div className="general-container new-heading-container">
                     <h3 className="new-heading new-heading-center">Our Services</h3>
-                </div>
+                </div> */}
 
-                <OtherServices />
+                {/* <OtherServices /> */}
 
                 <div className="general-container new-heading-container" style={{margin: '7vh auto'}}>
                     <strong className="above-heading">Testimonials</strong>

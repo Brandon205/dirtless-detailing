@@ -1,63 +1,10 @@
 import React from 'react';
 
-export default function OtherServices() {
-    return (
-        <div className="service-bkg-lighter" style={{ display: 'flex', flexDirection: 'column', gap: '4em', paddingTop: '3rem' }}>
-            <section className="otherservices-container">
-                <h2 className='service-title'>Exterior Services</h2>
-                <p>Unleash Your Car's Hidden Shine: Discover Our Exceptional Exterior Auto Detailing Services.</p>
-                <div className='otherservices-subcontainer'>
-                    <div className="service-card">
-                        <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d7e1e319-7f78-4ac6-907a-9b100171ca00/public')` }}></div>
-                        <div className="otherservices-desc">
-                            <div>
-                                <a href='/services/dirtless-wash' className='service-heading-link'>Dirt-Less Wash</a>
-                                <p className="secondary-text">Starting at: <br /><span>$74.99</span></p>
-                            </div>
-                            <p className="service-desc">Our Dirt-Less Wash will thoroughly clean the exterior of your vehicle with our tried and true cleaning process. We even apply a layer of wax to give your vehicle a strong layer of protection.</p>
+export default function OtherServices(props) {
 
-                            <div className="otherservices-links">
-                                <a href="/services/dirtless-wash" className="otherservices-readmore" aria-label='Dirt-Less Wash Info'>Learn More</a>
-                                <a href="/gallery/dirtless-wash-gallery" className='otherservices-readmore'>See Gallery</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="service-card">
-                        <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f7c127be-d17d-4563-48c3-809289e8bc00/public')` }}></div>
-                        <div className="otherservices-desc">
-                            <div>
-                                <a href='/services/single-stage-correction' className='service-heading-link'>Single Stage Paint Correction</a>
-                                <p className="secondary-text">Starting at: <br /><span>$549.99</span></p>
-                            </div>
-                            <p className="service-desc">Our Single Stage Paint Correction can fix 60%-70% of minor damage and scratches and will leave your vehicle looking shinier than ever.</p>
-
-                            <div className="otherservices-links">
-                                <a href="/services/single-stage-correction" className="otherservices-readmore" aria-label='Single Stage Paint Correction Info'>Learn More</a>
-                                <a href="/gallery/paint-correction-gallery" className='otherservices-readmore'>See Gallery</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="service-card">
-                        <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fabb5ba-d12e-4e8a-c3bb-f5901af53e00/public')` }}></div>
-                        <div className="otherservices-desc">
-                            <div>
-                                <a href='/services/two-stage-correction' className='service-heading-link'>Two Stage Paint Correction</a>
-                                <p className="secondary-text">Starting at: <br /><span>$699.99</span></p>
-                            </div>
-                            <p className="service-desc">Our 2 stage paint correction is great for getting your car's paint to a near perfect state. This is great for show cars need that extra time and effort to get to that showroom shine.</p>
-
-                            <div className="otherservices-links">
-                                <a href="/services/two-stage-correction" className="otherservices-readmore" aria-label='Two Stage Paint Correction Info'>Learn More</a>
-                                <a href="/gallery/paint-correction-gallery" className='otherservices-readmore'>See Gallery</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="/Contact" className="otherservices-readmore">Get in Touch!</a>
-            </section>
-
-            <hr className='otherservices-hr' />
-
+    let content;
+    if (props.service === 'interior') {
+        content = (
             <section className="otherservices-container">
                 <h2 className='service-title'>Interior Services</h2>
                 <p>Unleash the Beauty Within: Explore Our Professional Interior Auto Detailing Services</p>
@@ -110,9 +57,64 @@ export default function OtherServices() {
                 </div>
                 <a href="/Contact" className="otherservices-readmore">Get in Touch!</a>
             </section>
+        )
+    } else if (props.service === 'exterior') {
+        content = (
+            <section className="otherservices-container">
+                <h2 className='service-title'>Exterior Services</h2>
+                <p>Unleash Your Car's Hidden Shine: Discover Our Exceptional Exterior Auto Detailing Services.</p>
+                <div className='otherservices-subcontainer'>
+                    <div className="service-card">
+                        <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d7e1e319-7f78-4ac6-907a-9b100171ca00/public')` }}></div>
+                        <div className="otherservices-desc">
+                            <div>
+                                <a href='/services/dirtless-wash' className='service-heading-link'>Dirt-Less Wash</a>
+                                <p className="secondary-text">Starting at: <br /><span>$74.99</span></p>
+                            </div>
+                            <p className="service-desc">Our Dirt-Less Wash will thoroughly clean the exterior of your vehicle with our tried and true cleaning process. We even apply a layer of wax to give your vehicle a strong layer of protection.</p>
 
-            <hr className='otherservices-hr' />
+                            <div className="otherservices-links">
+                                <a href="/services/dirtless-wash" className="otherservices-readmore" aria-label='Dirt-Less Wash Info'>Learn More</a>
+                                <a href="/gallery/dirtless-wash-gallery" className='otherservices-readmore'>See Gallery</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="service-card">
+                        <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f7c127be-d17d-4563-48c3-809289e8bc00/public')` }}></div>
+                        <div className="otherservices-desc">
+                            <div>
+                                <a href='/services/single-stage-correction' className='service-heading-link'>Single Stage Paint Correction</a>
+                                <p className="secondary-text">Starting at: <br /><span>$549.99</span></p>
+                            </div>
+                            <p className="service-desc">Our Single Stage Paint Correction can fix 60%-70% of minor damage and scratches and will leave your vehicle looking shinier than ever.</p>
 
+                            <div className="otherservices-links">
+                                <a href="/services/single-stage-correction" className="otherservices-readmore" aria-label='Single Stage Paint Correction Info'>Learn More</a>
+                                <a href="/gallery/paint-correction-gallery" className='otherservices-readmore'>See Gallery</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="service-card">
+                        <div className="otherservices-image" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fabb5ba-d12e-4e8a-c3bb-f5901af53e00/public')` }}></div>
+                        <div className="otherservices-desc">
+                            <div>
+                                <a href='/services/two-stage-correction' className='service-heading-link'>Two Stage Paint Correction</a>
+                                <p className="secondary-text">Starting at: <br /><span>$699.99</span></p>
+                            </div>
+                            <p className="service-desc">Our 2 stage paint correction is great for getting your car's paint to a near perfect state. This is great for show cars need that extra time and effort to get to that showroom shine.</p>
+
+                            <div className="otherservices-links">
+                                <a href="/services/two-stage-correction" className="otherservices-readmore" aria-label='Two Stage Paint Correction Info'>Learn More</a>
+                                <a href="/gallery/paint-correction-gallery" className='otherservices-readmore'>See Gallery</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="/Contact" className="otherservices-readmore">Get in Touch!</a>
+            </section>
+        )
+    } else if (props.service === 'ceramic') {
+        content = (
             <section className="otherservices-container">
                 <h2 className='service-title'>Ceramic Coating Services</h2>
                 <p>Want an extra layer of protection inside or outside of your car? Check out our ceramic coating services!</p>
@@ -165,6 +167,14 @@ export default function OtherServices() {
                 </div>
                 <a href="/Contact" className="otherservices-readmore">Get in Touch!</a>
             </section>
+        )
+    }
+
+    return (
+        <div className="service-bkg-lighter" style={{ display: 'flex', flexDirection: 'column', gap: '4em', paddingTop: 0 }}>
+            
+            {content}
+            
         </div>
     )
 }
