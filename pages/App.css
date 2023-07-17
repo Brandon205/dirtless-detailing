@@ -782,14 +782,16 @@ option {
   display: flex;
   flex-direction: column; 
   justify-content: center;
+  /* background-color: var(--contact-bkg-lighter); */
   padding: 1rem 2rem;
   max-width: 300px;
   transition: 0.3s ease-in;
   cursor: pointer;
+  height: 100%;
 }
 
 .service-type-card:hover {
-  box-shadow: 5px 12px 10px black !important;
+  box-shadow: 5px 6px 10px black !important;
 }
 
 .service-type-icon {
