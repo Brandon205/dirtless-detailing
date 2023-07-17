@@ -91,12 +91,12 @@ img {
   display: flex;
   align-items: center;
   gap: 0.25rem;
-  padding: 0 0.35rem;
+  padding: 0 1rem;
   text-decoration: none;
   background-color: var(--main-clr);
   color: white;
-  border-radius: 0.5rem;
-  transition: 0.5s;
+  border-radius: 50px;
+  transition: 0.4s;
   /* margin-top: 5px; */
 }
 
@@ -127,7 +127,7 @@ img {
   border-radius: 100px;
   margin: 0 auto;
   transition: 0.5s;
-  max-width: 300px;
+  max-width: 350px;
 }
 
 .quote-btn:hover {
@@ -227,12 +227,17 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.544);
-  background-color: var(--contact-bkg);
+  transition: 0.4s ease-in-out;
+  /* background-color: var(--contact-bkg); */
 }
 
 li span {
   padding: 0 3px 0 2px;
+}
+
+.normal-nav {
+  background-color: var(--contact-bkg);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.544);
 }
 
 .menu-container {
@@ -308,7 +313,7 @@ li span {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  font-size: 1.2em;
+  font-size: 1em;
   gap: 0.5rem;
   margin: 0;
   text-decoration: none;
@@ -812,6 +817,7 @@ option {
   transition: 0.25s;
   box-shadow: 1px 4px 7px black;
   border-radius: 100px;
+  width: 90%;
 }
 
 .popular-readmore:hover {
@@ -830,7 +836,6 @@ option {
 .popular-header h3 {
   margin: 0;
   font-family: 'Titillium Web', sans-serif;
-  /* font-weight: 800; */
   font-size: 2em;
   text-shadow: 1px 4px 5px #00000083;
   text-align: left;
@@ -1189,10 +1194,11 @@ option {
 }
 
 .carousel-button {
+  display: flex;
   border: 2px solid #55595d;
   font-size: 1.2em;
   border-radius: 50%;
-  padding: 1rem 1rem;
+  padding: 0.75rem;
   cursor: pointer;
 }
 
@@ -2787,7 +2793,7 @@ hr {
   }
 
   .popular-readmore {
-    padding: 0.55em 10%;
+    padding: 0.3em;
   }
 
   .service-card {
@@ -3144,11 +3150,12 @@ hr {
   /** Nav CSS **/
   .menu-container {
     display: inline-block !important;
+    background-color: rgba(0, 0, 0, 0);
     flex: 2;
     padding: 0;
     position: static;
     height: 105px;
-    width: 75vw;
+    width: 80vw;
     overflow: hidden;
   }
 
@@ -3236,14 +3243,6 @@ hr {
     font-size: 4em;
   }
 
-  .popular-header h3 {
-    font-size: 3em;
-  }
-
-  .popular-link-container {
-    flex-direction: row;
-  }
-
   .servicepage-heading {
     font-size: 1.5em;
   }
@@ -3288,6 +3287,10 @@ hr {
   .header-icons-container {
     padding: 2em;
     gap: 10rem;
+  }
+
+  .popular-link-container {
+    flex-direction: row;
   }
 
   .pricing-container {

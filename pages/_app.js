@@ -29,30 +29,31 @@ export default function MyApp({ Component, pageProps }) {
             setSmallScreen(false);
         }
 
-        // document.addEventListener('scroll', handleScroll, { passive: true });
+        document.addEventListener('scroll', handleScroll, { passive: true });
 
-        // return () => {
-        //     window.removeEventListener('scroll', handleScroll)
-        // }
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
 
 
     }, [])
 
-    // let handleScroll = () => {
-    //     const pos = window.pageYOffset;
-    //     if (navBar.current) {
-    //         console.log(navBar.current)
-    //         if (pos > 400 || smallScreen) {
-    //             navBar.current.style.backgroundColor = '#101010'
-    //             navBar.current.style.backdropFilter = 'none'
-    //             navBar.current.style.borderRadius = '0'
-    //             navBar.current.style.transform = 'scale(100%)'
-    //             navBar.current.style.transition = '0.5s'
-    //         } else {
-    //             navBar.current.removeAttribute('style')
-    //         }
-    //     }
-    // }
+    let handleScroll = () => {
+        const pos = window.pageYOffset;
+        if (navBar.current) {
+            // console.log(navBar.current)
+            if (pos > 0 || smallScreen) {
+                navBar.current.classList.add('normal-nav')
+                // navBar.current.style.backgroundColor = '#101010'
+                // navBar.current.style.backdropFilter = 'none'
+                // navBar.current.style.borderRadius = '0'
+                // navBar.current.style.transform = 'scale(100%)'
+                // navBar.current.style.transition = '0.5s'
+            } else {
+                navBar.current.classList.remove('normal-nav')
+            }
+        }
+    }
 
     let changeNav = (changeTo) => {
         switch (changeTo) {
@@ -85,19 +86,21 @@ export default function MyApp({ Component, pageProps }) {
             </Head>
             <header className="App-header">
                 <nav id="nav" ref={navBar}>
-                    <a style={{ display: 'flex', justifyContent: 'flex-start', flex: 1 }} href="/" aria-label='Dirt-Less Detailing Logo'>
+                    <a style={{ display: 'flex', justifyContent: 'flex-start', flexGrow: 0.4 }} href="/" aria-label='Dirt-Less Detailing Logo'>
                         <div className="header-cert" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0a945e76-f4c0-4e29-ef16-463490d0db00/public')`, height: 105 + 'px', width: 140 + 'px' }}></div>
                     </a>
                     <FaBars className="menu-bars" onClick={() => setNav(nav === 'block' ? 'none' : 'block')} />
                     <div style={{ display: nav }} className="menu-container">
                         <ul className='main-ul'>
 
+                            {/* <FaHome /> */}
                             <li className='menu-li'>
-                                <a href="/" className='menu-link'><FaHome /> Home</a>
+                                <a href="/" className='menu-link'>Home</a>
                             </li>
 
+                            {/* <MdLocalOffer /> */}
                             <li style={{ position: 'relative' }}>
-                                <div className='menu-li' onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('services')}><a href="#" className='menu-link no-click'><MdLocalOffer /> All Services</a></div>
+                                <div className='menu-li' onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('services')}><a href="#" className='menu-link no-click'>All Services</a></div>
                                 <ul className="sub-ul" onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} style={{ opacity: smallScreen ? 1 : services ? 1 : !services ? 0 : 0, pointerEvents: smallScreen ? 'auto' : services ? 'auto' : !services ? 'none' : 'auto' }} >
                                     <li className="nav-li">
                                         <h4 className='sub-menu-header'>CERAMIC COATINGS</h4>
@@ -137,8 +140,9 @@ export default function MyApp({ Component, pageProps }) {
                                 </ul>
                             </li>
 
+                            {/* <FaImages />  */}
                             <li style={{ position: 'relative' }}>
-                                <div className='menu-li' onPointerEnter={() => changeNav('gallery')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('gallery')}><a href="#" className='menu-link no-click'><FaImages /> Galleries</a></div>
+                                <div className='menu-li' onPointerEnter={() => changeNav('gallery')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('gallery')}><a href="#" className='menu-link no-click'>Galleries</a></div>
                                 <ul className="sub-ul" onPointerEnter={() => changeNav('gallery')} onPointerLeave={() => changeNav('none')} style={{ opacity: smallScreen ? 1 : gallery ? 1 : !gallery ? 0 : 0, pointerEvents: smallScreen ? 'auto' : gallery ? 'auto' : !gallery ? 'none' : 'auto' }}>
                                     <li className="nav-li">
                                         <h4 className="sub-menu-header">GALLERIES</h4>
@@ -161,16 +165,19 @@ export default function MyApp({ Component, pageProps }) {
                                 </ul>
                             </li>
 
+                            {/* <AiOutlinePlus /> */}
                             <li className='menu-li'>
-                                <a href="/services/add-ons" className='menu-link' onClick={() => setNav('none')}><AiOutlinePlus /> Addons</a>
+                                <a href="/services/add-ons" className='menu-link' onClick={() => setNav('none')}>Addons</a>
                             </li>
 
+                            {/* <BsFillPersonBadgeFill />  */}
                             <li className='menu-li'>
-                                <a href="/About" className="menu-link" onClick={() => setNav('none')}><BsFillPersonBadgeFill /> About / FAQ</a>
+                                <a href="/About" className="menu-link" onClick={() => setNav('none')}>About / FAQ</a>
                             </li>
 
+                            {/* <HiInformationCircle /> */}
                             <li className="menu-li quote-li">
-                                <a href="/Contact" className="nav-quote-btn" onClick={() => setNav('none')}><HiInformationCircle /> Get Started</a>
+                                <a href="/Contact" className="nav-quote-btn" onClick={() => setNav('none')}>Contact Us</a>
                             </li>
                         </ul>
                     </div>
