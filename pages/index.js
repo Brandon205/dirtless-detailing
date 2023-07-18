@@ -149,9 +149,35 @@ export default function Home() {
                     {/* <a href="/Contact"><BsCalendarCheck className='header-icon' /><br />Book Now</a> */}
                 </div>
 
-                <div className="general-container new-heading-container">
-                    <h2 className="new-heading new-heading-center">Our Services</h2>
+                <div className="reasons-container">
+                    <h3>Your ticket to getting your car looking great again</h3>
+                    <div className="reason">
+                        <AiOutlineUnorderedList className="reason-icon" />
+                        <h4 className="reason-title">Personalized Options</h4>
+                        <p className="reason-desc">We have plenty of options and add-ons to fit all needs and budgets, from our quick but thorough washes all the way up to our 2-day Ceramic Coating service.</p>
+                    </div>
+                    <div className="reason">
+                        <BsHourglassSplit className="reason-icon" />
+                        <h4 className="reason-title">Time Saving</h4>
+                        <p className="reason-desc">Detailing is time-consuming, we will handle that while you do things that you need done.</p>
+                    </div>
+                    <div className="reason">
+                        <GiChemicalDrop className="reason-icon" />
+                        <h4 className="reason-title">Researched Chemicals</h4>
+                        <p className="reason-desc">Not only have we done our part finding chemicals that work well, but ones that are also safe for your vehicle and ceramic coatings.</p>
+                    </div>
+                    <div className="reason">
+                        <GiSpray className="reason-icon" />
+                        <h4 className="reason-title">Fully Equipped</h4>
+                        <p className="reason-desc">With the latest and greatest tools and techniques, we'll get your car to 100% every time.</p>
+                    </div>
                 </div>
+
+                <div className="general-container new-heading-container">
+                    <h2 className="new-heading new-heading-center">Our Service Categories</h2>
+                </div>
+
+                <br className="extra-space" />
 
                 <div className="service-type-container">
                     <div style={{boxShadow: currentService === 'popular' ? '5px 6px 10px black' : '2px 2px 5px black'}} className="service-type-card" onClick={() => handleServiceChange('popular')}>
@@ -186,36 +212,8 @@ export default function Home() {
                 }
 
 
-                {/* <br className="extra-space" />
+                <br className="extra-space" />
 
-                <div className="reasons-container">
-                    <div className="reason">
-                        <AiOutlineUnorderedList className="reason-icon" />
-                        <h4 className="reason-title">Personalized Options</h4>
-                        <p className="reason-desc">We have plenty of options and add-ons to fit all needs and budgets, from our quick but thorough washes all the way up to our 2-day Ceramic Coating service.</p>
-                    </div>
-                    <div className="reason">
-                        <BsHourglassSplit className="reason-icon" />
-                        <h4 className="reason-title">Time Saving</h4>
-                        <p className="reason-desc">Detailing is time-consuming, we will handle that while you do things that you need done.</p>
-                    </div>
-                    <div className="reason">
-                        <GiChemicalDrop className="reason-icon" />
-                        <h4 className="reason-title">Researched Chemicals</h4>
-                        <p className="reason-desc">Not only have we done our part finding chemicals that work well, but ones that are also safe for your vehicle and ceramic coatings.</p>
-                    </div>
-                    <div className="reason">
-                        <GiSpray className="reason-icon" />
-                        <h4 className="reason-title">Fully Equipped</h4>
-                        <p className="reason-desc">With the latest and greatest tools and techniques, we'll get your car to 100% every time.</p>
-                    </div>
-                </div>
-
-                <div className="general-container new-heading-container">
-                    <h3 className="new-heading new-heading-center">Our Services</h3>
-                </div> */}
-
-                {/* <OtherServices /> */}
 
                 <div className="general-container new-heading-container" style={{margin: '7vh auto'}}>
                     <strong className="above-heading">Testimonials</strong>
