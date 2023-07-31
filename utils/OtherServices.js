@@ -174,6 +174,8 @@ export default function OtherServices(props) {
         <div className="service-bkg-lighter" style={{ display: 'flex', flexDirection: 'column', gap: '4em', paddingTop: 0 }}>
             
             {content}
+
+            <p>Tap a service category above these cards to see what we offer for that category of service.</p>
             
         </div>
     )
