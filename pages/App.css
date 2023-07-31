@@ -119,7 +119,7 @@ img {
   font-size: 24px;
   font-weight: bold;
   gap: 0.5rem;
-  padding: 0.75rem;
+  padding: 0.5rem 0.75rem;
   text-decoration: none;
   background-color: var(--main-clr);
   color: white;
@@ -347,8 +347,8 @@ header h1 {
 
 .landing-div {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  /* justify-content: center; */
   align-items: center;
   font-size: 0.9rem;
   padding-top: 105px;
@@ -362,7 +362,6 @@ header h1 {
   align-items: center;
   margin: 0 auto;
   background-color: #41444ac4;
-  /* border: 2px solid #d9d9d9; */
   padding: 4em;
   color: white;
   border-radius: 0 0 1rem 1rem;
@@ -422,17 +421,29 @@ header h1 {
 .main-title {
   font-size: 3em;
   font-weight: bold;
+  line-height: 1.2;
   color: white;
   margin: 0;
   font-family: 'Titillium Web', sans-serif;
 }
 
-.main-title span {
+.main-desc {
+  color: white;
+  max-width: 90%;
+  margin: 1.5rem auto;
+  text-align: center;
+}
+
+/* .main-title span {
   display: block;
   padding: 0;
   margin: 0;
   line-height: 90%;
   color: var(--main-clr);
+} */
+
+.cert-desc {
+  color: white;
 }
 
 .title-bottom {
@@ -449,6 +460,8 @@ header h1 {
   height: 90vh;
   width: 100%;
   z-index: -5;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 .cover {
@@ -1581,33 +1594,50 @@ hr {
   text-align: center;
 }
 
+.reasons-section {
+  background-color: white;
+  width: 100%;
+  color: black;
+  padding-top: 1rem;
+}
+
+.reasons-section h3 {
+  font-size: 2em;
+}
+
 .reasons-container {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 2rem;
-  background-color: var(--contact-bkg-lighter);
   padding: 2rem;
-  border-radius: 32px;
   margin-bottom: 5vh;
 }
 
 .reason {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 4px 7px rgba(0,0,0,0.25);
+  padding: 1rem 1rem 3rem 1rem;
+  border-radius: 50px;
+  width: 100%;
+  /* display: grid;
   grid-template-columns: 80px 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "icon title title"
-    "desc desc desc";
-  width: 100%;
+    "desc desc desc"; */
 }
 
 .reason-icon {
   grid-area: icon;
-  font-size: 3em;
+  font-size: 4em;
   place-self: center;
+  color: var(--main-clr);
+  margin-bottom: 1.5rem;
 }
 
 .reason-title {
@@ -1616,7 +1646,6 @@ hr {
   font-size: 32px;
   margin: 0;
   font-weight: bold;
-  text-align: left;
   justify-self: flex-start;
   align-self: center;
 }
@@ -1625,9 +1654,9 @@ hr {
   grid-area: desc;
   font-size: 16px;
   text-align: left;
-  color: var(--secondary-text-light);
+  color: var(--secondary-text);
   width: 80%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .servicepage-heading {
@@ -2895,6 +2924,20 @@ hr {
     border-bottom: none;
   }
 
+  .main-title {
+    text-align: left;
+  }
+
+  .main-desc {
+    max-width: 40%;
+    text-align: left;
+    margin: 0;
+  }
+
+  .reasons-section {
+    padding-bottom: 1rem;
+  }
+
   .nav-li {
     box-shadow: 0 5px 7px #0000007f;
   }
@@ -2929,10 +2972,16 @@ hr {
   }
 
   .landing-div {
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
     height: 90vh;
     font-size: 1.2rem;
+    margin-left: 7vw;
+  }
+
+  .reason {
+    width: 50%;
   }
 
   .reasons-container {
@@ -2941,13 +2990,19 @@ hr {
   }
 
   .reason-icon {
+    font-size: 5em;
+    margin-bottom: 3rem;
     justify-self: left;
     align-self: center;
   }
 
   .reason-desc {
-    margin: 0.75rem auto 0 auto;
+    margin: 0.75rem 0 0 0;
     width: 100%;
+  }
+
+  .reason-title {
+    text-align: left;
   }
 
   .dd-desc {
@@ -3291,7 +3346,7 @@ hr {
   }
 
   .main-title {
-    font-size: 4em;
+    font-size: 3.5em;
   }
 
   .servicepage-heading {

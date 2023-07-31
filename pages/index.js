@@ -99,26 +99,29 @@ export default function Home() {
             <header className="home-header">
                 <div className="maincover" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover')` }}></div>
                 <div className='landing-div'>
-                    <h1 className='main-title'>Your Bonney Lake
+                    <h1 className='main-title'>Bonney Lake's Top<br />Auto Detailing Specialists</h1>
+                    {/* <h1 className='main-title'>Your Bonney Lake
                         <span>Auto Detailing</span>
                         <span>&</span>
                         <span>Ceramic Coating</span>
                         Specialists
-                    </h1>
+                    </h1> */}
+
+                    <p className='main-desc'>Anything from a simple interior cleaning to the most detail oriented Ceramic Coating jobs, you can trust Dirt-Less Detailing to do the job right.</p>
                     <div className='header-link-container'>
-                        <a href="/Contact" className='quote-btn' style={{fontSize: '1.5em'}}><HiOutlineClipboardCheck />Get a Free Quote Now</a>
+                        <a href="/Contact" className='quote-btn'><HiOutlineClipboardCheck />Get a Free Quote</a>
                         <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
                     </div>
 
-                    {/* <div style={{ display: screenWidth < 879 ? 'none' : 'flex', alignItems: 'center', gap: 32 }}>
-                        <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="noopener">
-                            <div className="header-cert" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/242a2248-1f41-4edf-b2c5-d508a10bef00/public')`, height: 134 + 'px', width: 134 + 'px' }}></div>
-                        </a>
-
+                    <div style={{ display: screenWidth < 879 ? 'none' : 'flex', alignItems: 'center', gap: 32 }}>
                         <a href="https://iglcoatingsusa.com/" target="_blank" rel="noopener">
-                            <div className="header-cert" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/833088d3-ca7b-41b9-561f-21f8517f3300/public')`, height: 165 + 'px', width: 145 + 'px' }}></div>
+                            <div className="header-cert" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/833088d3-ca7b-41b9-561f-21f8517f3300/public')`, height: 120 + 'px', width: 110 + 'px' }}></div>
                         </a>
-                    </div> */}
+                        <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="noopener">
+                            <div className="header-cert" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/242a2248-1f41-4edf-b2c5-d508a10bef00/public')`, height: 90 + 'px', width: 90 + 'px' }}></div>
+                        </a>
+                        <p className='cert-desc'>Ceramic Coating Certified and a BBB Trusted Business</p>
+                    </div>
 
 
                 </div>
@@ -149,30 +152,6 @@ export default function Home() {
                     {/* <a href="/Contact"><BsCalendarCheck className='header-icon' /><br />Book Now</a> */}
                 </div>
 
-                <div className="reasons-container">
-                    <h3>Your ticket to getting your car looking great again</h3>
-                    <div className="reason">
-                        <AiOutlineUnorderedList className="reason-icon" />
-                        <h4 className="reason-title">Personalized Options</h4>
-                        <p className="reason-desc">We have plenty of options and add-ons to fit all needs and budgets, from our quick but thorough washes all the way up to our 2-day Ceramic Coating service.</p>
-                    </div>
-                    <div className="reason">
-                        <BsHourglassSplit className="reason-icon" />
-                        <h4 className="reason-title">Time Saving</h4>
-                        <p className="reason-desc">Detailing is time-consuming, we will handle that while you do things that you need done.</p>
-                    </div>
-                    <div className="reason">
-                        <GiChemicalDrop className="reason-icon" />
-                        <h4 className="reason-title">Researched Chemicals</h4>
-                        <p className="reason-desc">Not only have we done our part finding chemicals that work well, but ones that are also safe for your vehicle and ceramic coatings.</p>
-                    </div>
-                    <div className="reason">
-                        <GiSpray className="reason-icon" />
-                        <h4 className="reason-title">Fully Equipped</h4>
-                        <p className="reason-desc">With the latest and greatest tools and techniques, we'll get your car to 100% every time.</p>
-                    </div>
-                </div>
-
                 <div className="general-container new-heading-container">
                     <h2 className="new-heading new-heading-center">Our Service Categories</h2>
                 </div>
@@ -183,7 +162,7 @@ export default function Home() {
                     <div style={{boxShadow: currentService === 'popular' ? '5px 6px 10px black' : '2px 2px 5px black'}} className="service-type-card" onClick={() => handleServiceChange('popular')}>
                         <MdLeaderboard style={{color: currentService === 'popular' ? '#c83f03' : 'white'}} className='service-type-icon' />
                         <strong style={{color: currentService === 'popular' ? '#c83f03' : 'white', textShadow: currentService === 'popular' ? '2px 2px 5px black' : 'none'}}>Our Most Popular Details</strong>
-                        <p>The details we perform the most often due to the high demand from them, these are our bread and butter.</p>
+                        <p>Our bread and butter details, these are the details we perform the most often due to the high demand for them.</p>
                     </div>
                     <div style={{boxShadow: currentService === 'interior' ? '5px 6px 10px black' : '2px 2px 5px black'}} className="service-type-card" onClick={() => handleServiceChange('interior')}>
                         <GiCarSeat style={{color: currentService === 'interior' ? '#c83f03' : 'white'}} className='service-type-icon' />
@@ -193,7 +172,7 @@ export default function Home() {
                     <div style={{boxShadow: currentService === 'exterior' ? '5px 6px 10px black' : '2px 2px 5px black'}} className="service-type-card" onClick={() => handleServiceChange('exterior')}>
                         <MdOutlineLocalCarWash style={{color: currentService === 'exterior' ? '#c83f03' : 'white'}} className='service-type-icon' />
                         <strong style={{color: currentService === 'exterior' ? '#c83f03' : 'white', textShadow: currentService === 'exterior' ? '2px 2px 5px black' : 'none'}}>Exterior Details</strong>
-                        <p>Every exterior service from our simplest washes to our most detail oriented paint correction services that remove scratches and swirls.</p>
+                        <p>Every exterior service from our car washes to our most detail oriented paint correction services that will remove scratches and swirls.</p>
                     </div>
                     <div style={{boxShadow: currentService === 'ceramic' ? '5px 6px 10px black' : '2px 2px 5px black'}} className="service-type-card" onClick={() => handleServiceChange('ceramic')}>
                         <FaCarSide style={{color: currentService === 'ceramic' ? '#c83f03' : 'white'}} className='service-type-icon' />
@@ -211,8 +190,31 @@ export default function Home() {
                     <OtherServices service={currentService} /> : ''
                 }
 
-
-                <br className="extra-space" />
+                <div className="reasons-section">
+                    <h3>Your ticket to an amazing looking car</h3>
+                    <div className="reasons-container">
+                        <div className="reason">
+                            <AiOutlineUnorderedList className="reason-icon" />
+                            <h4 className="reason-title">Personalized Options</h4>
+                            <p className="reason-desc">We have plenty of options and add-ons to fit all needs and budgets, from our quick but thorough washes all the way up to our 2-day Ceramic Coating service.</p>
+                        </div>
+                        <div className="reason">
+                            <BsHourglassSplit className="reason-icon" />
+                            <h4 className="reason-title">Time Saving</h4>
+                            <p className="reason-desc">Detailing is time-consuming, we will handle that while you do things that you need done.</p>
+                        </div>
+                        <div className="reason">
+                            <GiChemicalDrop className="reason-icon" />
+                            <h4 className="reason-title">Researched Chemicals</h4>
+                            <p className="reason-desc">Not only have we done our part finding chemicals that work well, but ones that are also safe for your vehicle and ceramic coatings.</p>
+                        </div>
+                        <div className="reason">
+                            <GiSpray className="reason-icon" />
+                            <h4 className="reason-title">Fully Equipped</h4>
+                            <p className="reason-desc">With the latest and greatest tools and techniques, we'll get your car to 100% every time.</p>
+                        </div>
+                    </div>
+                </div>
 
 
                 <div className="general-container new-heading-container" style={{margin: '7vh auto'}}>

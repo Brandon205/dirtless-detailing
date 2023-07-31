@@ -108,7 +108,7 @@ export default function PopularServices(props) {
                 </div>
 
                 <div className='popular-services-card'>
-                    <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7c93452e-cf47-4898-a618-e427e19a0e00/tallHD)` }}>
+                    <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c15b8a02-2b0e-4d0f-c313-a2d66bb6bb00/tallHD)` }}>
                     </div>
                     <div className='popular-header'>
                         <h3>Ceramic Coating</h3>
