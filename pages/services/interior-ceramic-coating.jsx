@@ -32,23 +32,11 @@ export default function IntCoatings() {
                             {
                                 "@type": "Offer",
                                 "priceCurrency": "USD",
-                                "price": "75"
-                                "availability": "http://schema.org/InStock",
-                                "itemOffered": {
-                                    "@type": "Service",
-                                    "name": "Interior Fabric Ceramic Coating",
-                                    "serviceType": "Ceramic Coating",
-                                    "providerMobility": "dynamic"
-                                }
-                            },
-                            {
-                                "@type": "Offer",
-                                "priceCurrency": "USD",
                                 "price": "150"
                                 "availability": "http://schema.org/InStock",
                                 "itemOffered": {
                                     "@type": "Service",
-                                    "name": "Interior Leather Ceramic Coating",
+                                    "name": "Interior Ceramic Coating",
                                     "serviceType": "Ceramic Coating",
                                     "providerMobility": "dynamic"
                                 }
@@ -60,82 +48,48 @@ export default function IntCoatings() {
             <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7a8e321a-6a57-41ea-9736-7bd4849bcf00/cover')`}}></div>
 
             <div className="servicepage-header">
-                <h1>Interior Coating</h1>
-                <h2 className='page-subheading'>Experience the Ultimate in Interior Protection with Our Ceramic Coating Services.</h2>
+                <h1>Interior Ceramic Coating</h1>
+                <h2 className='page-subheading'>Experience the Best in Interior Protection with Our Interior Ceramic Coating Services.</h2>
                 <div className='header-buttons'>
-                    <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
-                    <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
+                    <a href="/Contact" className='top-quote-btn'>Get a Free Quote</a>
+                    <a href="tel:2532529758" className='top-quote-btn btn-secondary'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
                 </div>
             </div>
 
             <div className="process-container">
                 <div style={{width: '100%'}}>
 
-                    <div className='package-details-container'>
-                        <div className='package-details-top'>
-                            <h2 style={{fontSize: '3rem', margin: '0 0 1rem 0'}}>Our Interior Coating Packages</h2>
+                    <h2 style={{fontSize: '2rem', margin: '2rem 0 3rem 0'}} className='new-heading-center'>Why get an interior ceramic coating?</h2>
+                    <div className="service-type-container">
+                        <div className="service-type-card no-grow">
+                            <img src='../assets/icons/question.png' alt="popularity graph" className='icon-96' />
+                            <strong>What is an Interior Ceramic Coating?</strong>
                             <p>Ceramic coatings are liquid polymers that chemically bond with a vehicle's interior to create a strong, protective layer. This layer resists damage from UV rays, oxidation, and contaminants, providing protection and easy spill cleanup.</p>
                         </div>
-
-                        <div className='package-details-bkg'>
-                            <div className='package-container-header'>
-                                <h2 className='coating-heading text-shadow'><span className='special-package'>Fabric</span> Coating</h2>
-                                <p>Price: <span className='pricing__pricecard-price'>$75</span></p>
-                            </div>
-                            <div className='package-container'>
-                                <div className='package-details'>
-                                    <h4><GiRolledCloth className='star-icon' /> All Interior Fabrics Coated</h4>
-                                    <p>Apply IGL Fabric to all carpet and fabric.</p>
-                                </div>
-                                <div className='package-details'>
-                                    <h4><GiSpill className='star-icon' /> Spill Resistance</h4>
-                                    <p>Gives you more time to wipe up spills before it seeps into carpets.</p>
-                                </div>
-                                <div className='package-details'></div>
-                            </div>
+                        <div className="service-type-card no-grow">
+                            <img src='../assets/icons/layers.png' alt="popularity graph" className='icon-96' />
+                            <strong>All Interior Materials Get Coated</strong>
+                            <p>Because of the new products that we recently switched to we are able to cover ALL of the interior materials, where before it was just the leather or fabric. So now is a great time to get an interior coating!</p>
                         </div>
-
-                        <div className='package-details-bkg'>
-                            <div className='package-container-header'>
-                                <h2 className='coating-heading text-shadow'><span className='special-package'>Leather</span> Package</h2>
-                                <p>Price: <span className='pricing__pricecard-price'>$150</span></p>
-                            </div>
-                            <div className='package-container'>
-                                <div className='package-details'>
-                                    <h4><GiCarSeat className='star-icon' /> All Interior Leather Coated</h4>
-                                    <p>Install IGL Ecocoat Leather to all leather in the vehicle</p>
-                                </div>
-                                <div className='package-details'>
-                                    <h4><MdCleaningServices className='star-icon' /> Even Easier to Clean</h4>
-                                    <p>The coating we will put on will create a low surface tension layer that stops spills and other messes from bonding to the materials.</p>
-                                </div>
-                                <div className='package-details'>
-                                    <h4><FiSun className='star-icon' /> Block Harmful Rays</h4>
-                                    <p>Coating your interior can help block harmful UV rays that can eventually cause yellowing and fading on leather materials.</p>
-                                </div>
-                            </div>
+                        <div className="service-type-card no-grow">
+                            <img src='../assets/icons/spill.png' alt="popularity graph" className='icon-96' />
+                            <strong>Even Easier to Clean</strong>
+                            <p>The coating we will put on will create a low surface tension layer that stops spills and other messes from bonding to the materials.</p>
                         </div>
-                        <a href="/Contact" style={{margin: '0 auto'}} className="new-contact-btn">Contact Us</a>
+                        <div className="service-type-card no-grow">
+                            <img src='../assets/icons/sun.png' alt="popularity graph" className='icon-96' />
+                            <strong>Block Harmful Rays</strong>
+                            <p>Coating your interior can help block harmful UV rays that can eventually cause yellowing and fading on leather materials.</p>
+                        </div>
                     </div>
 
-                    <br className='extra-space' />
-
-                    {/* <div style={{marginTop: '5vh', borderRadius: '38px 38px 0 0'}} className='service-bkg'>
+                    <div style={{marginTop: '5vh', borderRadius: '38px 38px 0 0'}} className='service-bkg'>
                         <h3 className='pricing-title text-white'>Our Interior Coating Pricing</h3>
                         <h4 className='subtext'><span className='special-package'>*</span>Pricing does <span className='special-package'>NOT</span> include an <a href="/services/full-interior-detail" className='aside-link'>Interior Cleaning</a>, which you will want to factor in before getting a coating.</h4>
                         <div style={{width: '75%'}} className='pricing-container text-black'>
                             <div className="pricing-card">
-                                <h5>Fabric Coating</h5>
-                                <p>Get all of the fabric in your vehicle professionally coated.</p>
-                                <p>Check <a href="/services/full-interior-detail" className='aside-link'>here</a> for our Interior Detail Pricing</p>
-                                <div>
-                                    <strong className='size'>Any Size Vehicle</strong>
-                                    <p className="pricing-price">$75</p>
-                                </div>
-                            </div>
-                            <div className="pricing-card">
-                                <h5>Leather Coating</h5>
-                                <p>Get all of the leather in your vehicle professionally coated.</p>
+                                <h5>Interior Ceramic Coating</h5>
+                                <p>Gets your whole interior coated with a ~1 year Ceramic Coating.</p>
                                 <p>Check <a href="/services/full-interior-detail" className='aside-link'>here</a> for our Interior Detail Pricing</p>
                                 <div>
                                     <strong className='size'>Any Size Vehicle</strong>
@@ -144,7 +98,7 @@ export default function IntCoatings() {
                             </div>
                         </div>
                         <br className='extra-space' />
-                    </div> */}
+                    </div>
 
                     <div style={{padding: '2rem', marginTop: '5vh'}} className="service-bkg-lighter">
                         <div className="general-container new-heading-container">
@@ -156,11 +110,12 @@ export default function IntCoatings() {
                             <main className="service-main">
                                 <div className="service-explain">
                                     <div className="text-left">
-                                        <h2 className='text-large'>Professional Interior Ceramic Coating</h2>
+                                        <h2 className='text-large'>Professional Interior Ceramic Coating for $150</h2>
                                         <p>Interior ceramic coatings are a must-have for anyone who wants to keep their car looking and feeling great, even in cars where spills and messes happen often.</p>
                                         <p>Interior coatings create a protective layer that will give you more time to clean up a spill before it soaks in and stains compared to uncoated materials.</p>
                                         <p>With an interior ceramic coating, you'll enjoy easy-to-clean surfaces that stay looking like new, making your car feel more luxurious and comfortable.</p>
-                                        <p>Typically both our fabric and leather interior coatings will protect your vehicle for about a year before they should be reapplied.</p>
+                                        <p>Typically our interior coatings will protect your vehicle for about a year before they should be reapplied.</p>
+                                        <p><span className="special-package">*Note:</span> You will need to have an <a href="/services/full-interior-detail" className="aside-link">Interior Detail</a> performed before getting a coating applied, this ensures there is no dirt that we are trap underneath the coating.</p>
                                     </div>
                                     <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a196c77-cb1a-42f9-479b-8fdbe3c14500/public')`}}>
                                         <img style={{visibility: 'hidden'}} alt="Cleaned and coated seat of an Infiniti" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a196c77-cb1a-42f9-479b-8fdbe3c14500/public" />
@@ -172,7 +127,7 @@ export default function IntCoatings() {
                     <div style={{padding: '2rem'}} className="service-bkg-lighter">
                         <div className="general-container new-heading-container">
                             <strong className="above-heading">Related Services</strong>
-                            <h3 className="new-heading">Services similar to our Interior Coatings.</h3>
+                            <h3 className="new-heading">Services similar to our Interior Coating.</h3>
                         </div>
                         <div style={{padding: '2rem 0'}} className="general-container">
 

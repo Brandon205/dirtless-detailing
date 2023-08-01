@@ -182,27 +182,23 @@ export default function Home() {
 
                 <div className="service-type-container">
                     <div style={{boxShadow: currentService === 'popular' ? '5px 6px 10px black ' : '2px 2px 5px black', transform: currentService === 'popular' ? 'scale(1.05)' : 'none'}} className="service-type-card" onClick={() => handleServiceChange('popular')}>
-                        {/* <MdLeaderboard style={{color: currentService === 'popular' ? '#c83f03' : 'black'}} className='service-type-icon' /> */}
                         <img src='../assets/icons/graph.png' alt="popularity graph" className='icon-96' />
-                        <strong style={{color: currentService === 'popular' ? '#c83f03' : 'black'}}>Our Most Popular Details</strong>
+                        <strong style={{color: currentService === 'popular' ? '#c83f03' : 'white'}}>Our Most Popular Details</strong>
                         <p>Our bread and butter details, these are the details we perform the most often due to the high demand for them.</p>
                     </div>
                     <div style={{boxShadow: currentService === 'interior' ? '5px 6px 10px black' : '2px 2px 5px black', transform: currentService === 'interior' ? 'scale(1.05)' : 'none'}} className="service-type-card" onClick={() => handleServiceChange('interior')}>
-                        {/* <GiCarSeat style={{color: currentService === 'interior' ? '#c83f03' : 'black'}} className='service-type-icon' /> */}
                         <img src='../assets/icons/carSeat.png' alt="car seat" className='icon-96' />
-                        <strong style={{color: currentService === 'interior' ? '#c83f03' : 'black'}}>Interior Services</strong>
+                        <strong style={{color: currentService === 'interior' ? '#c83f03' : 'white'}}>Interior Services</strong>
                         <p>All of our Interior services ranging from simple cleanings all the way to the most extreme Biohazard removal jobs.</p>
                     </div>
                     <div style={{boxShadow: currentService === 'exterior' ? '5px 6px 10px black' : '2px 2px 5px black', transform: currentService === 'exterior' ? 'scale(1.05)' : 'none'}} className="service-type-card" onClick={() => handleServiceChange('exterior')}>
-                        {/* <MdOutlineLocalCarWash style={{color: currentService === 'exterior' ? '#c83f03' : 'black'}} className='service-type-icon' /> */}
                         <img src='../assets/icons/carWash.png' alt="car wash" className='icon-96' />
-                        <strong style={{color: currentService === 'exterior' ? '#c83f03' : 'black'}}>Exterior Services</strong>
+                        <strong style={{color: currentService === 'exterior' ? '#c83f03' : 'white'}}>Exterior Services</strong>
                         <p>Every exterior service from our car washes to our most detail oriented paint correction services that will remove scratches and swirls.</p>
                     </div>
                     <div style={{boxShadow: currentService === 'ceramic' ? '5px 6px 10px black' : '2px 2px 5px black', transform: currentService === 'ceramic' ? 'scale(1.05)' : 'none'}} className="service-type-card" onClick={() => handleServiceChange('ceramic')}>
-                        {/* <FaCarSide style={{color: currentService === 'ceramic' ? '#c83f03' : 'black'}} className='service-type-icon' /> */}
                         <img src='../assets/icons/teslaX.png' alt="expensive car" className='icon-96' />
-                        <strong style={{color: currentService === 'ceramic' ? '#c83f03' : 'black'}}>Ceramic Coatings</strong>
+                        <strong style={{color: currentService === 'ceramic' ? '#c83f03' : 'white'}}>Ceramic Coatings</strong>
                         <p>Our best exterior paint protection offers! If you want you paint to look good, be protected, and shine for years to come this is the option for you.</p>
                     </div>
                 </div>

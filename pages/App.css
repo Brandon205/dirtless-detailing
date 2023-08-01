@@ -821,10 +821,10 @@ option {
   display: flex;
   flex-direction: column; 
   justify-content: center;
-  background-color: white;
+  background-color: #282a2e;
   box-shadow: 8px 8px 8px 0 rgba(0,0,0,0.25);
   border-radius: 1rem;
-  color: black;
+  /* color: black; */
   padding: 1rem 2rem;
   max-width: 375px;
   transition: 0.3s ease-in;
@@ -842,7 +842,11 @@ option {
 .service-type-card strong {
   font-weight: 600;
   font-size: 20px;
-  color: black;
+  color: white;
+}
+
+.no-grow {
+  cursor: default;
 }
 
 .icon-96 {
@@ -2762,6 +2766,10 @@ hr {
   background-repeat: no-repeat;
 }
 
+.explain-container {
+  
+}
+
 /** LOCATION PAGE CSS **/
 
 .location-container {
@@ -3394,6 +3402,10 @@ hr {
   .service-type-card {
     height: 140%;
     width: 100%;
+  }
+
+  .no-grow {
+    height: 100%;
   }
 
   .nav-logo {
