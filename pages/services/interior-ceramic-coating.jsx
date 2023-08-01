@@ -32,7 +32,14 @@ export default function IntCoatings() {
                             {
                                 "@type": "Offer",
                                 "priceCurrency": "USD",
-                                "price": "150"
+                                "price": "150",
+                                "priceSpecification": {
+                                    "@type": "PriceSpecification",
+                                    "priceCurrency": "USD",
+                                    "price": "150",
+                                    "minPrice": "150",
+                                    "maxPrice": "150"
+                                },
                                 "availability": "http://schema.org/InStock",
                                 "itemOffered": {
                                     "@type": "Service",
@@ -40,7 +47,7 @@ export default function IntCoatings() {
                                     "serviceType": "Ceramic Coating",
                                     "providerMobility": "dynamic"
                                 }
-                            }
+                            },
                         ]
                     }`,
                 }} />

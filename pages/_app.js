@@ -232,6 +232,7 @@ export default function MyApp({ Component, pageProps }) {
                         <a href="https://www.facebook.com/DirtLessDetailing/" className="socials" target="_blank" rel="noopener" aria-label="Facebook"><FaFacebook /></a>
                         <a href="https://www.instagram.com/dirtlessdetailing/" className="socials" target="_blank" rel="noopener" aria-label="Instagram"><FaInstagram /></a>
                         <a href="https://www.youtube.com/channel/UCsoqP5s4hwkQd_Sd-TVv-jg" className="socials" target="_blank" rel="noopener" aria-label="Youtube"><FaYoutube /></a>
+                        <p>Icons provided by <a target="_blank" rel='noopener' href="https://icons8.com" className='aside-link'>Icons8</a></p>
                     </div>
                 </div>
             </footer>
