@@ -146,7 +146,7 @@ img {
   text-decoration: none;
   background-color: var(--main-clr);
   border-radius: 6px;
-  padding: 1rem 2rem;
+  padding: 0.7rem 1.3rem;
   font-weight: 600;
 }
 
@@ -2914,7 +2914,7 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    max-width: 540px;
+    max-width: 620px;
     gap: 1rem;
   }
 

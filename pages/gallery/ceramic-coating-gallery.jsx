@@ -3,7 +3,6 @@ import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
-import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 
 export default function CoatingGallery() {
   return (
@@ -23,8 +22,8 @@ export default function CoatingGallery() {
         <p>Check out the gallery below to see the results of a freshly applied IGL Ceramic Coating. Take a look at our <a href="/services/interior-ceramic-coating" className='aside-link' >Interior Coatings</a> page or our <a href="/detailing/ceramic" className='aside-link' >Ceramic Coating</a> page to learn more about these services.</p>
 
         <div className='header-buttons'>
-          <a href="/Contact" className='top-quote-btn'>Get a Free Quote</a>
-          <a href="tel:2532529758" className='top-quote-btn btn-secondary'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
+          <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Get a Free Quote</a>
+          <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
         </div>
       </div>
 

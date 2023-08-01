@@ -3,8 +3,6 @@ import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
-// import ReactPlayer from 'react-player/lazy';
-import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 
 const steps = [
   ["Determine Products", "We will first determine what products will need to be used to best suit the situation."],
@@ -76,8 +74,8 @@ export default function Bio() {
         <h1>Biohazard Cleaning</h1>
         <h2 className='page-subheading'>Mold, odors, or other mildly hazardous spills in your vehicle? Look no further than our biohazard cleaning.</h2>
         <div className='header-buttons'>
-          <a href="/Contact" className='top-quote-btn'>Get a Free Quote</a>
-          <a href="tel:2532529758" className='top-quote-btn btn-secondary'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
+          <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Get a Free Quote</a>
+          <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
         </div>
       </div>
 

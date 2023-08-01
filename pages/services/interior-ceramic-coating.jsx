@@ -1,12 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
-import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 
 import { BiLinkExternal } from 'react-icons/bi';
-import { GiCarSeat, GiRolledCloth, GiSpill } from 'react-icons/gi';
-import { MdCleaningServices } from 'react-icons/md';
-import { FiSun } from 'react-icons/fi';
 
 export default function IntCoatings() {
     return (
@@ -58,8 +54,8 @@ export default function IntCoatings() {
                 <h1>Interior Ceramic Coating</h1>
                 <h2 className='page-subheading'>Experience the Best in Interior Protection with Our Interior Ceramic Coating Services.</h2>
                 <div className='header-buttons'>
-                    <a href="/Contact" className='top-quote-btn'>Get a Free Quote</a>
-                    <a href="tel:2532529758" className='top-quote-btn btn-secondary'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
+                    <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Get a Free Quote</a>
+                    <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
                 </div>
             </div>
 

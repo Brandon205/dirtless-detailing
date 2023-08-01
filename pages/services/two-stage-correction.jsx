@@ -3,7 +3,6 @@ import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
-import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 import PricingComponent from '../../utils/PricingComponent';
 import addons from '../../utils/Addons';
 
@@ -95,8 +94,8 @@ export default function TwoPC() {
         <h1>Two Stage Paint Correction</h1>
         <h2 className='page-subheading'>Go the extra mile and remove years of scratches and swirls with our Two Stage Paint Correction service.</h2>
         <div className='header-buttons'>
-          <a href="/Contact" className='top-quote-btn'>Get a Free Quote</a>
-          <a href="tel:2532529758" className='top-quote-btn btn-secondary'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
+          <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Get a Free Quote</a>
+         <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
         </div>
       </div>
 

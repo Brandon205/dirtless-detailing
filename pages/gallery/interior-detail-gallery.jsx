@@ -3,7 +3,6 @@ import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
-import { MdOutlinePermPhoneMsg } from 'react-icons/md';
 
 export default function FullIntGallery() {
   return (
@@ -23,8 +22,8 @@ export default function FullIntGallery() {
         <p>We have cleaned it all, even the worst of interiors. Check out the Gallery below. Take a look at our <a href="/services/full-interior-detail" className='aside-link' >Full Interior Cleaning</a> page to find out more.</p>
 
         <div className='header-buttons'>
-          <a href="/Contact" className='top-quote-btn'>Get a Free Quote</a>
-          <a href="tel:2532529758" className='top-quote-btn btn-secondary'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
+          <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Get a Free Quote</a>
+          <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
         </div>
       </div>
 

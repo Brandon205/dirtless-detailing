@@ -1,12 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
-import { MdOutlinePermPhoneMsg } from 'react-icons/md';
-import { TbEngine } from 'react-icons/tb';
-import { RiCarWashingFill } from 'react-icons/ri';
-import { BsFillArrowUpCircleFill } from 'react-icons/bs';
-import { FaDog } from 'react-icons/fa';
-import { GiPoliceBadge, GiCarSeat, GiCarDoor, GiFallingRocks, GiSmokeBomb, GiRolledCloth, GiSteam, GiCrystalShine } from 'react-icons/gi';
 
 export default function Addons() {
   return (
@@ -98,8 +92,8 @@ export default function Addons() {
         <h1>Dirt-Less Detailing Add-ons</h1>
         <h2 className='page-subheading'>Engine Bay Cleaning • Debadging • Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment • Interior Ceramic Coatings.</h2>
         <div className='header-buttons'>
-          <a href="/Contact" className='top-quote-btn'>Get a Free Quote</a>
-          <a href="tel:2532529758" className='top-quote-btn btn-secondary'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
+          <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Get a Free Quote</a>
+          <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
         </div>
       </div>
 
@@ -108,7 +102,6 @@ export default function Addons() {
 
         <h3 className='addons-subheading' id='exterior'>Exterior Add-ons:</h3>
         <div className="feature-section" id="engine">
-          {/* <TbEngine className='feature-icon' /> */}
           <img src='../assets/icons/engine.png' className='icon-96' alt="engine" />
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Engine Bay Cleaning</p>
@@ -123,7 +116,6 @@ export default function Addons() {
         <hr className='contact-border' />
 
         <div className="feature-section" id="claybar">
-          {/* <GiFallingRocks className='feature-icon' /> */}
           <img src='../assets/icons/dirt.png' className='icon-96' alt="dirt particles" />
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Clay Bar Treatment</p>
@@ -138,7 +130,6 @@ export default function Addons() {
         <hr className='contact-border' />
 
         <div className="feature-section" id="glass">
-          {/* <GiCarDoor className='feature-icon' /> */}
           <img src='../assets/icons/windscreen.png' className='icon-96' alt="front windshield" />
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Glass Polishing</p>
@@ -153,7 +144,6 @@ export default function Addons() {
         <hr className='contact-border' />
 
         <div className="feature-section" id="waterspot">
-          {/* <RiCarWashingFill className='feature-icon' /> */}
           <img src='../assets/icons/water.png' className='icon-96' alt="water drop" />
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Waterspot, Overspray, or Road Paint Removal</p>
@@ -169,7 +159,6 @@ export default function Addons() {
         <hr className='contact-border' />
 
         <div className="feature-section" id="debadge">
-          {/* <GiPoliceBadge className='feature-icon' /> */}
           <img src='../assets/icons/bmw.png' className='icon-96' alt="bmw badge" />
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Debadging</p>
@@ -187,7 +176,6 @@ export default function Addons() {
         <h3 className='addons-subheading' id='interior'>Interior Add-ons:</h3>
 
         <div className="feature-section" id="extraction">
-          {/* <GiSteam className='feature-icon' /> */}
           <img src='../assets/icons/steam.png' className='icon-96' alt="steam" />
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Steam Extraction</p>
@@ -203,7 +191,6 @@ export default function Addons() {
         <hr className='contact-border' />
 
         <div className="feature-section" id="pet-hair">
-          {/* <FaDog className='feature-icon' /> */}
           <img src='../assets/icons/dog.png' className='icon-96' alt="dog walking" />
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Pet Hair Removal</p>
