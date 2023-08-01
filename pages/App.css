@@ -3069,15 +3069,11 @@ hr {
   .header-icons-container {
     flex-direction: row;
     gap: 4rem;
+    padding: 1rem;
   }
 
   .service-type-container {
     grid-template-columns: 1fr 1fr;
-  }
-
-  .service-type-card {
-    height: 140%;
-    width: 100%;
   }
 
   .header-buttons {
@@ -3389,8 +3385,15 @@ hr {
 @media screen and (min-width: 1350px) {
 
   .service-type-container { 
+    margin-top: 2rem;
+    width: 95%;
     grid-template-columns: none;
     grid-auto-flow: column;
+  }
+
+  .service-type-card {
+    height: 140%;
+    width: 100%;
   }
 
   .nav-logo {

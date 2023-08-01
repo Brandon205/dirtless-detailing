@@ -113,7 +113,7 @@ export default function Home() {
                         <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="noopener">
                             <div className="header-cert" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/242a2248-1f41-4edf-b2c5-d508a10bef00/public')`, height: 90 + 'px', width: 90 + 'px' }}></div>
                         </a>
-                        <p className='cert-desc'>We are Ceramic Coating Certified and a BBB Trusted Business</p>
+                        {/* <p className='cert-desc'>We are Ceramic Coating Certified and a BBB Trusted Business</p> */}
                     </div>
 
                 </div>
@@ -175,6 +175,7 @@ export default function Home() {
 
                 <div className="general-container new-heading-container">
                     <h2 className="new-heading new-heading-center">Our Service Categories</h2>
+                    <p className='new-heading-center'>Tap a service category below to see our current offers for that category of service.</p>
                 </div>
 
                 <br className="extra-space" />
@@ -182,7 +183,7 @@ export default function Home() {
                 <div className="service-type-container">
                     <div style={{boxShadow: currentService === 'popular' ? '5px 6px 10px black ' : '2px 2px 5px black', transform: currentService === 'popular' ? 'scale(1.05)' : 'none'}} className="service-type-card" onClick={() => handleServiceChange('popular')}>
                         {/* <MdLeaderboard style={{color: currentService === 'popular' ? '#c83f03' : 'black'}} className='service-type-icon' /> */}
-                        <img src='../assets/icons/analytics.png' alt="popularity graph" className='icon-96' />
+                        <img src='../assets/icons/graph.png' alt="popularity graph" className='icon-96' />
                         <strong style={{color: currentService === 'popular' ? '#c83f03' : 'black'}}>Our Most Popular Details</strong>
                         <p>Our bread and butter details, these are the details we perform the most often due to the high demand for them.</p>
                     </div>
