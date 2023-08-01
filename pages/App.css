@@ -152,7 +152,7 @@ img {
 }
 
 .top-quote-btn:hover {
-  transform: translate(0, -3px);
+  transform: translate(0, -4px);
   transition: transform ease 0.3s;
 }
 
@@ -1265,7 +1265,7 @@ option {
 }
 
 .readmore:hover {
-  color: var(--main-clr-hover);
+  opacity: 0.5;
 }
 
 .readmore p {

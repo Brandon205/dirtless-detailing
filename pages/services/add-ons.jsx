@@ -15,7 +15,7 @@ export default function Addons() {
         <title>Dirt-Less Add-ons | Dirt-Less Detailing</title>
         <Metatags
           title='Dirt-Less Add-ons | Dirt-Less Detailing'
-          description='Engine Bay Cleaning • Debadging • Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment • Fabric / Leather Ceramic Coatings.'
+          description='Engine Bay Cleaning • Debadging • Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment • Interior Ceramic Coatings.'
           image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ddb3cc29-1d60-4676-48d8-f86bdcfc5c00/public'
           canonical='/services/add-ons'
         />
@@ -96,10 +96,10 @@ export default function Addons() {
       <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ddb3cc29-1d60-4676-48d8-f86bdcfc5c00/cover')`}}></div>
       <div className="servicepage-header">
         <h1>Dirt-Less Detailing Add-ons</h1>
-        <h2 className='page-subheading'>Engine Bay Cleaning • Debadging • Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment • Fabric / Leather Ceramic Coatings.</h2>
+        <h2 className='page-subheading'>Engine Bay Cleaning • Debadging • Glass Polishing • Waterspot / Overspray Removal • Ozone Treatment • Interior Ceramic Coatings.</h2>
         <div className='header-buttons'>
-          <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
-          <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
+          <a href="/Contact" className='top-quote-btn'>Get a Free Quote</a>
+          <a href="tel:2532529758" className='top-quote-btn btn-secondary'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
         </div>
       </div>
 
@@ -108,7 +108,8 @@ export default function Addons() {
 
         <h3 className='addons-subheading' id='exterior'>Exterior Add-ons:</h3>
         <div className="feature-section" id="engine">
-          <TbEngine className='feature-icon' />
+          {/* <TbEngine className='feature-icon' /> */}
+          <img src='../assets/icons/engine.png' className='icon-96' alt="engine" />
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Engine Bay Cleaning</p>
             <p className="secondary-text"><span>$79.99</span></p>
@@ -121,8 +122,9 @@ export default function Addons() {
         </div>
         <hr className='contact-border' />
 
-        <div className="feature-section" id="engine">
-          <GiFallingRocks className='feature-icon' />
+        <div className="feature-section" id="claybar">
+          {/* <GiFallingRocks className='feature-icon' /> */}
+          <img src='../assets/icons/dirt.png' className='icon-96' alt="dirt particles" />
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Clay Bar Treatment</p>
             <p className="secondary-text"><span>$35-$75</span></p>
@@ -136,7 +138,8 @@ export default function Addons() {
         <hr className='contact-border' />
 
         <div className="feature-section" id="glass">
-          <GiCarDoor className='feature-icon' />
+          {/* <GiCarDoor className='feature-icon' /> */}
+          <img src='../assets/icons/windscreen.png' className='icon-96' alt="front windshield" />
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Glass Polishing</p>
             <p className="secondary-text"><span>$80/hour</span></p>
@@ -150,7 +153,8 @@ export default function Addons() {
         <hr className='contact-border' />
 
         <div className="feature-section" id="waterspot">
-          <RiCarWashingFill className='feature-icon' />
+          {/* <RiCarWashingFill className='feature-icon' /> */}
+          <img src='../assets/icons/water.png' className='icon-96' alt="water drop" />
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Waterspot, Overspray, or Road Paint Removal</p>
             <p className="secondary-text"><span>$80/hour</span></p>
@@ -165,7 +169,8 @@ export default function Addons() {
         <hr className='contact-border' />
 
         <div className="feature-section" id="debadge">
-          <GiPoliceBadge className='feature-icon' />
+          {/* <GiPoliceBadge className='feature-icon' /> */}
+          <img src='../assets/icons/bmw.png' className='icon-96' alt="bmw badge" />
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Debadging</p>
             <p className="secondary-text"><span>$80/hour</span></p>
@@ -181,8 +186,9 @@ export default function Addons() {
 
         <h3 className='addons-subheading' id='interior'>Interior Add-ons:</h3>
 
-        <div className="feature-section" id="ozone">
-          <GiSteam className='feature-icon' />
+        <div className="feature-section" id="extraction">
+          {/* <GiSteam className='feature-icon' /> */}
+          <img src='../assets/icons/steam.png' className='icon-96' alt="steam" />
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Steam Extraction</p>
             <p className="secondary-text"><span>$35-$75</span></p>
@@ -196,8 +202,9 @@ export default function Addons() {
         </div>
         <hr className='contact-border' />
 
-        <div className="feature-section" id="ozone">
-          <FaDog className='feature-icon' />
+        <div className="feature-section" id="pet-hair">
+          {/* <FaDog className='feature-icon' /> */}
+          <img src='../assets/icons/dog.png' className='icon-96' alt="dog walking" />
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Pet Hair Removal</p>
             <p className="secondary-text"><span>$50-$100</span></p>
@@ -211,8 +218,8 @@ export default function Addons() {
         </div>
         <hr className='contact-border' />
 
-        <div className="feature-section" id="ozone">
-          <BsFillArrowUpCircleFill className='feature-icon' />
+        <div className="feature-section" id="headliners">
+          <img src='../assets/icons/up.png' className='icon-96' alt="up arrow" />
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Headliners</p>
             <p className="secondary-text"><span>$40-$80</span></p>
@@ -226,7 +233,7 @@ export default function Addons() {
         <hr className='contact-border' />
 
         <div className="feature-section" id="ozone">
-          <GiSmokeBomb className='feature-icon' />
+          <img src='../assets/icons/ozone.png' className='icon-96' alt="air filter in use" />
           <div className="feature-desc-area">
             <p className='service-heading-subtitle'>Ozone Treatment</p>
             <p className="secondary-text"><span>$99.99</span></p>
@@ -239,26 +246,12 @@ export default function Addons() {
         </div>
         <hr className='contact-border' />
 
-        <div className="feature-section" id="fabric">
-          <GiRolledCloth className='feature-icon' />
+        <div className="feature-section" id="interior-coating">
+          <img src='../assets/icons/steeringWheel.png' className='icon-96' alt="engine" />
           <div className="feature-desc-area">
-            <p className='service-heading-subtitle'>Fabric Coating</p>
-            <p className="secondary-text"><span>$75</span></p>
-            <p className="service-desc text-white">Though Ceramic Coatings are typically applied to vehicles' exteriors ceramic coatings can also be applied to the fabric of a vehicle's interior, providing a range of benefits that can help to keep the interior looking clean and well-maintained.</p>
-            <div className='internal-links'>
-              <a href="/services/full-interior-detail" className="readmore">Full Interior Cleaning</a>
-              <a href="/services/biohazard-cleaning" className="readmore">Biohazard Cleaning</a>
-            </div>
-          </div>
-        </div>
-        <hr className='contact-border' />
-
-        <div className="feature-section" id="leather">
-          <GiCarSeat className='feature-icon' />
-          <div className="feature-desc-area">
-            <p className='service-heading-subtitle'>Leather Coating</p>
+            <p className='service-heading-subtitle'>Interior Ceramic Coating</p>
             <p className="secondary-text"><span>$150</span></p>
-            <p className="service-desc text-white">Ceramic coating can also be a great option for anyone who wants to protect the leather in their vehicle from stains, UV damage, and make it easier to clean.</p>
+            <p className="service-desc text-white">Ceramic coating can also be a great option for anyone who wants to protect the materials in their vehicle from stains, UV damage, and to make it easier to clean.</p>
             <div className='internal-links'>
               <a href="/services/full-interior-detail" className="readmore">Full Interior Cleaning</a>
               <a href="/services/biohazard-cleaning" className="readmore">Biohazard Cleaning</a>
