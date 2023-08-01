@@ -23,8 +23,8 @@ export default function FullIntGallery() {
         <p>We have cleaned it all, even the worst of interiors. Check out the Gallery below. Take a look at our <a href="/services/full-interior-detail" className='aside-link' >Full Interior Cleaning</a> page to find out more.</p>
 
         <div className='header-buttons'>
-          <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
-          <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
+          <a href="/Contact" className='top-quote-btn'>Get a Free Quote</a>
+          <a href="tel:2532529758" className='top-quote-btn btn-secondary'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
         </div>
       </div>
 

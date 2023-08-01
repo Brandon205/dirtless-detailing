@@ -49,7 +49,6 @@ export default function PricingComponent({prices = props.prices, ceramic = false
     if (addons.length > 0) {
         content = addons.map((item, id) => (
             <div className="pricing__addon" key={id}>
-                {console.log(item.icon)}
                 {iconArr[item.icon]}
                 <div className="addon-content">
                     <h4>{item.name}</h4>

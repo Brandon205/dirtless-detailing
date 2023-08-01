@@ -5,7 +5,7 @@ import { FaArrowRight } from 'react-icons/fa';
 
 export default function PopularServices(props) {
     return (
-        <div className='service-bkg-lighter'>
+        <div className='service-bkg'>
             <h2 style={{marginLeft: props.smallScreen ? '0' : '5%'}} className='service-title'>Our Most Popular Services</h2>
             <p style={{marginLeft: props.smallScreen ? '0' : '5%'}}>From combo deals to ceramic coatings these are services you'll see us doing the most.</p>
             <section className="popular-container">

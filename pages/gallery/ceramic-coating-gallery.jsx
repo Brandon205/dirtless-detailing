@@ -23,8 +23,8 @@ export default function CoatingGallery() {
         <p>Check out the gallery below to see the results of a freshly applied IGL Ceramic Coating. Take a look at our <a href="/services/interior-ceramic-coating" className='aside-link' >Interior Coatings</a> page or our <a href="/detailing/ceramic" className='aside-link' >Ceramic Coating</a> page to learn more about these services.</p>
 
         <div className='header-buttons'>
-          <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
-          <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
+          <a href="/Contact" className='top-quote-btn'>Get a Free Quote</a>
+          <a href="tel:2532529758" className='top-quote-btn btn-secondary'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
         </div>
       </div>
 

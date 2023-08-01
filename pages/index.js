@@ -5,43 +5,16 @@ import Metatags from '../utils/Metatags';
 import PopularServices from '../utils/PopularServices';
 import OtherServices from '../utils/OtherServices';
 
-import { MdOutlineLocalCarWash, MdOutlineArrowBackIos, MdOutlineArrowForwardIos } from 'react-icons/md';
-import { FaFacebook, FaCarSide } from 'react-icons/fa';
+import { FaFacebook } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
-import { BsCalendarCheck, BsHourglassSplit } from 'react-icons/bs';
-import { BiCertification } from 'react-icons/bi';
-import { GiChemicalDrop, GiSpray, GiCarSeat } from 'react-icons/gi';
-import { MdOutlinePermPhoneMsg, MdLeaderboard } from 'react-icons/md';
-import { FaRegStar, FaMapMarkedAlt } from 'react-icons/fa';
-import { AiOutlineUnorderedList  } from 'react-icons/ai';
-import { HiOutlineClipboardCheck } from 'react-icons/hi';
-
-// import carWash from '../assets/icons/carWash.png';
 
 export default function Home() {
     const [screenWidth, setScreenWidth] = useState(null);
-    const [currentSlide, setCurrentSlide] = useState(0);
     const [currentService, setCurrentService] = useState('popular');
 
     useEffect(() => {
         setScreenWidth(window.innerWidth);
     }, []);
-
-    const next = () => {
-        if (currentSlide >= 5) {
-            setCurrentSlide(0);
-        } else {
-            setCurrentSlide(currentSlide + 1);
-        }
-    }
-
-    const back = () => {
-        if (currentSlide <= 0) {
-            setCurrentSlide(5);
-        } else {
-            setCurrentSlide(currentSlide - 1);
-        }
-    }
 
     let handleServiceChange = (service) => {
         let scrollEl = document.getElementById('service-hyperlink');
@@ -102,8 +75,8 @@ export default function Home() {
                     <p className='main-desc'>Anything from a simple interior cleaning to the most detail oriented Ceramic Coating jobs, you can trust Dirt-Less Detailing to do the job right.</p>
 
                     <div className='header-link-container'>
-                        <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Get a Free Quote</a>
-                        <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
+                        <a href="/Contact" className='home-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Get a Free Quote</a>
+                        <a href="tel:2532529758" className='home-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
                     </div>
 
                     <div style={{ display: screenWidth < 879 ? 'none' : 'flex', alignItems: 'center', gap: 32 }}>
@@ -113,7 +86,6 @@ export default function Home() {
                         <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="noopener">
                             <div className="header-cert" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/242a2248-1f41-4edf-b2c5-d508a10bef00/public')`, height: 90 + 'px', width: 90 + 'px' }}></div>
                         </a>
-                        {/* <p className='cert-desc'>We are Ceramic Coating Certified and a BBB Trusted Business</p> */}
                     </div>
 
                 </div>
@@ -127,51 +99,21 @@ export default function Home() {
                         <span className='header-desc-span'>Of Experience</span>
                     </div>
                     <div>
-                        {/* <MdOutlineLocalCarWash className='header-icon' /> */}
                         <img src='../assets/icons/car.png' alt='calendar' className='header-icon' />
                         <p className="header-desc">1000+</p>
                         <span className='header-desc-span'>Details Done</span>
                     </div>
                     <div>
-                        {/* <FaRegStar className='header-icon' /> */}
                         <img src='../assets/icons/star.png' alt='calendar' className='header-icon' />
                         <p className="header-desc">Raving</p>
                         <span className='header-desc-span'>5 Star Reviews</span>
                     </div>
                     <div>
-                        {/* <FaMapMarkedAlt className='header-icon' /> */}
                         <img src='../assets/icons/location.png' alt='map with location marker' className='header-icon' />
                         <p className="header-desc">Mobile</p>
                         <span className='header-desc-span'>Services</span>
                     </div>
-                    {/* <a href="/Contact"><BsCalendarCheck className='header-icon' /><br />Book Now</a> */}
                 </div>
-
-                {/* <div className="reasons-section">
-                    <h3>Your ticket to an amazing looking car</h3>
-                    <div className="reasons-container">
-                        <div className="reason">
-                            <AiOutlineUnorderedList className="reason-icon" />
-                            <h4 className="reason-title">Personalized Options</h4>
-                            <p className="reason-desc">We have plenty of options and add-ons to fit all needs and budgets, from our quick but thorough washes all the way up to our 2-day Ceramic Coating service.</p>
-                        </div>
-                        <div className="reason">
-                            <BsHourglassSplit className="reason-icon" />
-                            <h4 className="reason-title">Time Saving</h4>
-                            <p className="reason-desc">Detailing is time-consuming, we will handle that while you do things that you need done.</p>
-                        </div>
-                        <div className="reason">
-                            <GiChemicalDrop className="reason-icon" />
-                            <h4 className="reason-title">Researched Chemicals</h4>
-                            <p className="reason-desc">Not only have we done our part finding chemicals that work well, but ones that are also safe for your vehicle and ceramic coatings.</p>
-                        </div>
-                        <div className="reason">
-                            <GiSpray className="reason-icon" />
-                            <h4 className="reason-title">Fully Equipped</h4>
-                            <p className="reason-desc">With the latest and greatest tools and techniques, we'll get your car to 100% every time.</p>
-                        </div>
-                    </div>
-                </div> */}
 
                 <div className="general-container new-heading-container">
                     <h2 className="new-heading new-heading-center">Our Service Categories</h2>
@@ -212,14 +154,12 @@ export default function Home() {
                     <OtherServices service={currentService} /> : ''
                 }
 
-
-                <div className="general-container new-heading-container" style={{margin: '7vh auto 0 auto'}}>
-                    <strong className="above-heading">Testimonials</strong>
-                    <h3 className="new-heading">Read some of the reviews from our valued customers!</h3>
-                    <p style={{ margin: 0, padding: '1rem 0' }}>See all of the reviews from our customers on our <a style={{ color: 'dodgerblue' }} target='_blank' rel='noopener' href="https://www.facebook.com/DirtLessDetailing/reviews">Facebook</a> or <a style={{ color: 'dodgerblue' }} target='_blank' rel='noopener' href="https://www.google.com/localservices/prolist?g2lbs=ADZRdktLAaGKKobG3aZn2_Qd9tpM-f3ifTKQp4hXsZnMmVk1USpK7Ha4kZIeLdSCTp26Z3uD8UBdDwRY7Zqn7XZatg-9z1GI86mqJXoiFQCA1rCg0Vis_yQK9JiR9qrRMObWwAegw9aPUbKd01T05_4R3o4ry_qhHA%3D%3D&hl=en-US&gl=us&cs=1&ssta=1&q=dirtless%20detailing&oq=dirtless%20detailing&slp=MgA6HENoTUlxZVd0Nkl2SV9nSVY2UTZ0QmgyZWJnaVJSAggCYAB6-gFDaEprYVhKMGJHVnpjeUJrWlhSaGFXeHBibWRJNnZqVDFhcTRnSUFJV2h3UUFCQUJHQUFZQVNJU1pHbHlkR3hsYzNNZ1pHVjBZV2xzYVc1bmtnRVZZMkZ5WDJSbGRHRnBiR2x1WjE5elpYSjJhV05sbWdFa1EyaGtSRk5WYUU1TlJ6bHVVekJXU2xFd1JtNVRWVkpEV2pKYVNHTnVhRzVTVWtGQ3FnRTZFQUV5SGhBQklocEZwOXktNVEwdWdLbGRqT2pnOEdvLWlaQlZ5NUdlSjh3QjV6SVdFQUlpRW1ScGNuUnNaWE56SUdSbGRHRnBiR2x1Wi1BQkFBkgG0AgoNL2cvMTFzYnBjOV8zYgoNL2cvMTFmcDJwN3dtbgoNL2cvMTFrMndndnhyegoNL2cvMTFzbXZfbm13MQoLL2cvMXRmM2I3bHQKDS9nLzExZ2w0dDJkY20KDC9nLzEyNjBieGxoNgoNL2cvMTFwMTN5MnQ4cQoNL2cvMTFjbnpuX3p3agoNL2cvMTFqcTlwcGtfNwoNL2cvMTFneTRsejU5aAoNL2cvMTF0ZDhjN195NQoNL2cvMTFrNDVzNzVmcwoNL2cvMTFnMnhjbHBxMwoNL2cvMTFzNTFrN2YzdAoNL2cvMTFzM2YwMHZzcAoML2cvMTFnem44M3diCg0vZy8xMW5uMGhzanF2Cg0vZy8xMWZxcXoxdmdwCg0vZy8xMXQ0ZmprMDltEgQSAggBEgQKAggB&src=2&spp=Cg0vZy8xMXNicGM5XzNiOtABV2h3UUFCQUJHQUFZQVNJU1pHbHlkR3hsYzNNZ1pHVjBZV2xzYVc1bmtnRVZZMkZ5WDJSbGRHRnBiR2x1WjE5elpYSjJhV05sbWdFa1EyaGtSRk5WYUU1TlJ6bHVVekJXU2xFd1JtNVRWVkpEV2pKYVNHTnVhRzVTVWtGQ3FnRTZFQUV5SGhBQklocEZwOXktNVEwdWdLbGRqT2pnOEdvLWlaQlZ5NUdlSjh3QjV6SVdFQUlpRW1ScGNuUnNaWE56SUdSbGRHRnBiR2x1Wnc9PQ%3D%3D&serdesk=1&lrlstt=1682530844021&ved=2ahUKEwiSvKHoi8j-AhWfHjQIHT0kD2MQvS56BAgwEAE&scp=ChpnY2lkOmNhcl9kZXRhaWxpbmdfc2VydmljZRJgEhIJeUAf2e38kFQRVTQwKEuFSMMiMkRpcnQtTGVzcyBEZXRhaWxpbmcsIDkzMDUgMjA1dGggQXZlIEUsIEJvbm5leSBMYWtlKhQNCAEeHBXFWjC3HQgBHhwlxVowtzAAGhJkaXJ0bGVzcyBkZXRhaWxpbmciEmRpcnRsZXNzIGRldGFpbGluZyoVQ2FyIGRldGFpbGluZyBzZXJ2aWNl#ts=3">Google</a> page.</p>
-                </div>
-
-                <div className='service-bkg'>
+                <div className='service-bkg-lighter' style={{paddingBottom: '5rem'}}>
+                    <div className="general-container new-heading-container" style={{margin: '5vh auto 2rem auto'}}>
+                        <strong className="above-heading">Testimonials</strong>
+                        <h3 className="new-heading">Read some of the reviews from our valued customers!</h3>
+                        <p style={{ margin: 0, padding: '1rem 0' }}>See all of the reviews from our customers on our <a style={{ color: 'dodgerblue' }} target='_blank' rel='noopener' href="https://www.facebook.com/DirtLessDetailing/reviews">Facebook</a> or <a style={{ color: 'dodgerblue' }} target='_blank' rel='noopener' href="https://www.google.com/localservices/prolist?g2lbs=ADZRdktLAaGKKobG3aZn2_Qd9tpM-f3ifTKQp4hXsZnMmVk1USpK7Ha4kZIeLdSCTp26Z3uD8UBdDwRY7Zqn7XZatg-9z1GI86mqJXoiFQCA1rCg0Vis_yQK9JiR9qrRMObWwAegw9aPUbKd01T05_4R3o4ry_qhHA%3D%3D&hl=en-US&gl=us&cs=1&ssta=1&q=dirtless%20detailing&oq=dirtless%20detailing&slp=MgA6HENoTUlxZVd0Nkl2SV9nSVY2UTZ0QmgyZWJnaVJSAggCYAB6-gFDaEprYVhKMGJHVnpjeUJrWlhSaGFXeHBibWRJNnZqVDFhcTRnSUFJV2h3UUFCQUJHQUFZQVNJU1pHbHlkR3hsYzNNZ1pHVjBZV2xzYVc1bmtnRVZZMkZ5WDJSbGRHRnBiR2x1WjE5elpYSjJhV05sbWdFa1EyaGtSRk5WYUU1TlJ6bHVVekJXU2xFd1JtNVRWVkpEV2pKYVNHTnVhRzVTVWtGQ3FnRTZFQUV5SGhBQklocEZwOXktNVEwdWdLbGRqT2pnOEdvLWlaQlZ5NUdlSjh3QjV6SVdFQUlpRW1ScGNuUnNaWE56SUdSbGRHRnBiR2x1Wi1BQkFBkgG0AgoNL2cvMTFzYnBjOV8zYgoNL2cvMTFmcDJwN3dtbgoNL2cvMTFrMndndnhyegoNL2cvMTFzbXZfbm13MQoLL2cvMXRmM2I3bHQKDS9nLzExZ2w0dDJkY20KDC9nLzEyNjBieGxoNgoNL2cvMTFwMTN5MnQ4cQoNL2cvMTFjbnpuX3p3agoNL2cvMTFqcTlwcGtfNwoNL2cvMTFneTRsejU5aAoNL2cvMTF0ZDhjN195NQoNL2cvMTFrNDVzNzVmcwoNL2cvMTFnMnhjbHBxMwoNL2cvMTFzNTFrN2YzdAoNL2cvMTFzM2YwMHZzcAoML2cvMTFnem44M3diCg0vZy8xMW5uMGhzanF2Cg0vZy8xMWZxcXoxdmdwCg0vZy8xMXQ0ZmprMDltEgQSAggBEgQKAggB&src=2&spp=Cg0vZy8xMXNicGM5XzNiOtABV2h3UUFCQUJHQUFZQVNJU1pHbHlkR3hsYzNNZ1pHVjBZV2xzYVc1bmtnRVZZMkZ5WDJSbGRHRnBiR2x1WjE5elpYSjJhV05sbWdFa1EyaGtSRk5WYUU1TlJ6bHVVekJXU2xFd1JtNVRWVkpEV2pKYVNHTnVhRzVTVWtGQ3FnRTZFQUV5SGhBQklocEZwOXktNVEwdWdLbGRqT2pnOEdvLWlaQlZ5NUdlSjh3QjV6SVdFQUlpRW1ScGNuUnNaWE56SUdSbGRHRnBiR2x1Wnc9PQ%3D%3D&serdesk=1&lrlstt=1682530844021&ved=2ahUKEwiSvKHoi8j-AhWfHjQIHT0kD2MQvS56BAgwEAE&scp=ChpnY2lkOmNhcl9kZXRhaWxpbmdfc2VydmljZRJgEhIJeUAf2e38kFQRVTQwKEuFSMMiMkRpcnQtTGVzcyBEZXRhaWxpbmcsIDkzMDUgMjA1dGggQXZlIEUsIEJvbm5leSBMYWtlKhQNCAEeHBXFWjC3HQgBHhwlxVowtzAAGhJkaXJ0bGVzcyBkZXRhaWxpbmciEmRpcnRsZXNzIGRldGFpbGluZyoVQ2FyIGRldGFpbGluZyBzZXJ2aWNl#ts=3">Google</a> page.</p>
+                    </div>
                     <div className="reviews-container">
                         <div className='review-card'>
                             <div className='review-top'>

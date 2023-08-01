@@ -24,8 +24,8 @@ export default function PaintCorrectionGallery() {
         <p>This is a showcase of our Dirt-Less Wash service. Take a look at our <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> page for more details and pricing.</p>
 
         <div className='header-buttons'>
-          <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
-          <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
+          <a href="/Contact" className='top-quote-btn'>Get a Free Quote</a>
+          <a href="tel:2532529758" className='top-quote-btn btn-secondary'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
         </div>
       </div>
 

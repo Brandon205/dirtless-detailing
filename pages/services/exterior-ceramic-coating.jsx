@@ -101,8 +101,8 @@ export default function ExtCoatings() {
                 <h1>Exterior Ceramic Coating</h1>
                 <h2 className='page-subheading'>Get a professionally installed 5 year Ceramic Coating professionally to protect your vehicle from the Pacific Northwest's unpredictable weather.</h2>
                 <div className='header-buttons'>
-                    <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
-                    <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
+                    <a href="/Contact" className='top-quote-btn'>Get a Free Quote</a>
+                    <a href="tel:2532529758" className='top-quote-btn btn-secondary'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
                 </div>
             </div>
 

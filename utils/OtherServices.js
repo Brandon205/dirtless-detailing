@@ -171,7 +171,7 @@ export default function OtherServices(props) {
     }
 
     return (
-        <div className="service-bkg-lighter" style={{ display: 'flex', flexDirection: 'column', gap: '4em', paddingTop: 0 }}>
+        <div className="service-bkg" style={{ display: 'flex', flexDirection: 'column', gap: '4em', paddingTop: 0 }}>
             
             {content}
 
