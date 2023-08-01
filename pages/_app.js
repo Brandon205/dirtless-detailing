@@ -2,14 +2,14 @@ import React, { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
 import 'react-toastify/dist/ReactToastify.css';
 
-import { AiOutlineCar, AiOutlinePlus } from "react-icons/ai";
-import { BsFillCameraFill, BsFillPersonBadgeFill } from "react-icons/bs";
+import { AiOutlineCar } from "react-icons/ai";
+import { BsFillCameraFill } from "react-icons/bs";
 import { FaBars, FaFacebook, FaInstagram, FaPhoneAlt, FaCarSide, FaPhotoVideo, FaBiohazard, FaCameraRetro, FaHome, FaImages, FaSoap, FaYoutube } from 'react-icons/fa';
 import { GiSteeringWheel, GiCarKey, GiCarSeat } from 'react-icons/gi';
 import { GoLocation } from "react-icons/go";
 import { CgClose } from "react-icons/cg";
-import { HiSparkles, HiInformationCircle } from 'react-icons/hi';
-import { MdOutlineEmail, MdLocalOffer } from 'react-icons/md';
+import { HiSparkles } from 'react-icons/hi';
+import { MdOutlineEmail } from 'react-icons/md';
 import { TbEngine } from 'react-icons/tb';
 import { ImFilePicture } from 'react-icons/im';
 import './App.css';
@@ -42,14 +42,8 @@ export default function MyApp({ Component, pageProps }) {
     let handleScroll = () => {
         const pos = window.pageYOffset;
         if (navBar.current) {
-            // console.log(navBar.current)
             if (pos > 0 || smallScreen) {
                 navBar.current.classList.add('normal-nav')
-                // navBar.current.style.backgroundColor = '#101010'
-                // navBar.current.style.backdropFilter = 'none'
-                // navBar.current.style.borderRadius = '0'
-                // navBar.current.style.transform = 'scale(100%)'
-                // navBar.current.style.transition = '0.5s'
             } else {
                 navBar.current.classList.remove('normal-nav')
             }
@@ -87,23 +81,20 @@ export default function MyApp({ Component, pageProps }) {
             </Head>
             <header className="App-header">
                 <nav id="nav" ref={navBar}>
-                    <a style={{ display: 'flex', justifyContent: 'flex-start'}} className='nav-logo' href="/" aria-label='Dirt-Less Detailing Logo'>
+                    <a style={{ display: 'flex', justifyContent: 'flex-start' }} className='nav-logo' href="/" aria-label='Dirt-Less Detailing Logo'>
                         <div className="header-cert" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0a945e76-f4c0-4e29-ef16-463490d0db00/public')`, height: 105 + 'px', width: 140 + 'px' }}></div>
                     </a>
-                    {nav === 'none' ? 
-                        <FaBars className="menu-bars" onClick={() => setNav('block')} /> : 
+                    {nav === 'none' ?
+                        <FaBars className="menu-bars" onClick={() => setNav('block')} /> :
                         <CgClose className="menu-bars" onClick={() => setNav('none')} />
                     }
-                    {/* {test} */}
                     <div style={{ display: nav }} className="menu-container">
                         <ul className='main-ul'>
 
-                            {/* <FaHome /> */}
                             <li className='menu-li'>
                                 <a href="/" className='menu-link'>Home</a>
                             </li>
 
-                            {/* <MdLocalOffer /> */}
                             <li style={{ position: 'relative' }}>
                                 <div className='menu-li' onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('services')}><a href="#" className='menu-link no-click'>All Services</a></div>
                                 <ul className="sub-ul" onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} style={{ opacity: smallScreen ? 1 : services ? 1 : !services ? 0 : 0, pointerEvents: smallScreen ? 'auto' : services ? 'auto' : !services ? 'none' : 'auto' }} >
@@ -145,7 +136,6 @@ export default function MyApp({ Component, pageProps }) {
                                 </ul>
                             </li>
 
-                            {/* <FaImages />  */}
                             <li style={{ position: 'relative' }}>
                                 <div className='menu-li' onPointerEnter={() => changeNav('gallery')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('gallery')}><a href="#" className='menu-link no-click'>Galleries</a></div>
                                 <ul className="sub-ul" onPointerEnter={() => changeNav('gallery')} onPointerLeave={() => changeNav('none')} style={{ opacity: smallScreen ? 1 : gallery ? 1 : !gallery ? 0 : 0, pointerEvents: smallScreen ? 'auto' : gallery ? 'auto' : !gallery ? 'none' : 'auto' }}>
@@ -170,17 +160,14 @@ export default function MyApp({ Component, pageProps }) {
                                 </ul>
                             </li>
 
-                            {/* <AiOutlinePlus /> */}
                             <li className='menu-li'>
                                 <a href="/services/add-ons" className='menu-link' onClick={() => setNav('none')}>Addons</a>
                             </li>
 
-                            {/* <BsFillPersonBadgeFill />  */}
                             <li className='menu-li'>
                                 <a href="/About" className="menu-link" onClick={() => setNav('none')}>About / FAQ</a>
                             </li>
 
-                            {/* <HiInformationCircle /> */}
                             <li className="menu-li quote-li">
                                 <a href="/Contact" className="nav-quote-btn" onClick={() => setNav('none')}>CONTACT US</a>
                             </li>

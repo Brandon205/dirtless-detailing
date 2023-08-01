@@ -108,6 +108,16 @@ export default function Combo() {
                     <p className='step-desc'>After cleaning and dressing the engine bay, we will finally move onto the exterior as the last step. We will perform our Dirt-Less Wash procedure on your vehicle. For more details check out our <a href='/services/dirtless-wash' className='aside-link'>Dirt-Less Wash</a> page.</p>
                   </div>
                 </li>
+
+                <li className="item">
+                  <div className="step-number-container">
+                    <h3 className='step-number'>4</h3><div className="vertical-rule"></div>
+                  </div>
+                  <div className="step-container">
+                    <h4 className="step-title">Dress/Coat Interior</h4>
+                    <p className='step-desc'>Finally we will perform some final touches including applying a dressing or even a <a href="/services/interior-ceramic-coating" className='aside-link'>Ceramic Coating</a> on the interior if desired.</p>
+                  </div>
+                </li>
               </ol>
               <br className='extra-space' />
             </div>

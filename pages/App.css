@@ -1,6 +1,6 @@
 :root {
-  /* --main-clr: #c83f03; */  
-  
+  /* --main-clr: #c83f03; */
+
   /* NEW COLORS:  */
   --main-clr: #fab638;
   --secondary-clr: #0f0e0a;
@@ -782,10 +782,10 @@ option {
 
 .service-type-card {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
   background-color: #282a2e;
-  box-shadow: 8px 8px 8px 0 rgba(0,0,0,0.25);
+  box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.25);
   border-radius: 1rem;
   /* color: black; */
   padding: 1rem 2rem;
@@ -822,7 +822,7 @@ option {
 .service-type-icon {
   margin: 0 auto;
   font-size: 3em;
-  margin-bottom: 2rem; 
+  margin-bottom: 2rem;
 }
 
 .popular-container {
@@ -1585,7 +1585,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 4px 4px 7px rgba(0,0,0,0.25);
+  box-shadow: 0 4px 4px 7px rgba(0, 0, 0, 0.25);
   padding: 1rem 1rem 3rem 1rem;
   border-radius: 50px;
   width: 100%;
@@ -2320,7 +2320,7 @@ hr {
   border-radius: 100px;
   background: var(--main-clr);
   background-image: linear-gradient(to right, #fab638, #fc9c19, #fe7f00, #ff5c00, #ff2600);
-  
+
 }
 
 .pricing__range::-ms-track {
@@ -3206,16 +3206,11 @@ hr {
 
 @media screen and (min-width: 1350px) {
 
-  .service-type-container { 
+  .service-type-container {
     margin-top: 2rem;
     width: 95%;
     grid-template-columns: none;
     grid-auto-flow: column;
-  }
-
-  .service-type-card {
-    height: 140%;
-    width: 100%;
   }
 
   .no-grow {
@@ -3284,6 +3279,11 @@ hr {
   .header-icons-container {
     padding: 2em;
     gap: 10rem;
+  }
+
+  .service-type-card {
+    height: 140%;
+    width: 100%;
   }
 
   .popular-link-container {
