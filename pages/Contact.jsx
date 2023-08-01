@@ -51,8 +51,7 @@ export default function Contact() {
             "Combo": e.target['combo'].checked ? 'Yes' : 'No',
 
             "Interior Cleaning": formRef.current['FullInt'].checked ? 'Full Interior Without Extraction' : formRef.current['FullIntEx'].checked ? 'Full Interior With Extraction' : formRef.current['Bio'].checked ? 'Biohazard Cleaning' : '',
-            "Fabric Coating": e.target['fabric'].checked ? 'Yes' : 'No',
-            "Leather Coating": e.target['leather'].checked ? 'Yes' : 'No',
+            "Interior Coating": e.target['intcoating'].checked ? 'Yes' : 'No',
             "Ozone": e.target['ozone'].checked ? 'Yes' : 'No',
             "Dirtiness": formRef.current['Pretty Clean'].checked ? 'Pretty Clean' : formRef.current['Normal Use'].checked ? 'Normal Use' : formRef.current['Extremely Dirty'].checked ? 'Extremely Dirty' : '',
             "Dog Hair": formRef.current['Little to None'].checked ? 'Little to None' : formRef.current['Medium Amount'].checked ? 'Medium Amount' : formRef.current['Lots of Hair'].checked ? 'Lots of Hair' : '',
@@ -149,8 +148,7 @@ export default function Contact() {
 
         // Interior Cleaning selected check
         if (!currForm['interiorCleaning'][0].checked && !currForm['interiorCleaning'][1].checked && !currForm['interiorCleaning'][2].checked && !currForm['combo'].checked) {
-            currForm['fabric'].checked = false;
-            currForm['leather'].checked = false;
+            currForm['intcoating'].checked = false;
             setIntSelected(false);
         } else {
             setIntSelected(true);
@@ -528,11 +526,8 @@ export default function Contact() {
                         <p className="form-section-heading">Interior Add-ons <a href='/services/add-ons#interior' className='aside-link'><BiLinkExternal /></a></p>
                         <p style={{ marginTop: 0}}>(Coatings need a Full Interior Cleaning service selected)</p>
                         <div>
-                            <input type="checkbox" name="fabric" id='fabric' className={'checkbox-input'} disabled={!intSelected ? "disabled" : ""} />
-                            <label title="Need to have an Interior Cleaning option selected." htmlFor="fabric" className='checkbox-label'>Fabric Coating <span className='special-package italic'>($75)</span></label>
-
-                            <input type="checkbox" name="leather" id='leather' className={'checkbox-input'} disabled={!intSelected ? "disabled" : ""} />
-                            <label title="Need to have an Interior Cleaning option selected." htmlFor="leather" className='checkbox-label'>Leather Coating <span className='special-package italic'>($150)</span></label>
+                            <input type="checkbox" name="intcoating" id='intcoating' className={'checkbox-input'} disabled={!intSelected ? "disabled" : ""} />
+                            <label title="Need to have an Interior Cleaning option selected." htmlFor="intcoating" className='checkbox-label'>Interior Ceramic Coating <span className='special-package italic'>($150)</span></label>
 
                             <input type="checkbox" id='ozone' name="ozone" className='checkbox-input' />
                             <label htmlFor="ozone" className='checkbox-label'>Ozone Treatment <span className='special-package italic'>($100)</span></label>

@@ -25,8 +25,7 @@ const iconArr = {
     'extraction': <GiSteam className='addon-icon' />,
     'hair': <FaDog className='addon-icon' />,
     'headliners': <BsFillArrowUpCircleFill className='addon-icon' />,
-    'fabric': <GiRolledCloth className='addon-icon' />,
-    'leather': <GiCarSeat className='addon-icon' />,
+    'intcoating': <GiRolledCloth className='addon-icon' />,
     'ozone': <GiSmokeBomb className='addon-icon' />,
     'claybar': <GiFallingRocks className='addon-icon' />,
     'glass': <GiCarDoor className='addon-icon' />,
@@ -50,6 +49,7 @@ export default function PricingComponent({prices = props.prices, ceramic = false
     if (addons.length > 0) {
         content = addons.map((item, id) => (
             <div className="pricing__addon" key={id}>
+                {console.log(item.icon)}
                 {iconArr[item.icon]}
                 <div className="addon-content">
                     <h4>{item.name}</h4>

@@ -17,16 +17,10 @@ const addons = {
         desc: "Headliners are tricky to clean and improper handling can cause them to sag, we'll pick the right products for the job to clean them while keeping them intact.",
         cost: ['40-80', '40-80', '40-80', '40-80', '40-80', '40-80']
     },
-    'fabric': {
-        name: 'Fabric Ceramic Coating',
-        icon: 'fabric',
-        desc: "Get a ceramic coating on all of the fabric in your vehicle to give it an extra layer of protection against spills and other messes.",
-        cost: [75, 75, 75, 75, 75, 75,]
-    },
-    'leather': {
-        name: 'Leather Ceramic Coating',
-        icon: 'leather',
-        desc: "Ceramic coating can also be a great option for anyone who wants to protect the leather in their vehicle from stains, UV damage, and make it easier to clean.",
+    'intcoating': {
+        name: 'Interior Ceramic Coating',
+        icon: 'intcoating',
+        desc: "Ceramic coating can also be a great option for anyone who wants to protect the materials in their vehicle from stains, UV damage, and to make it easier to clean.",
         cost: [150, 150, 150, 150, 150, 150]
     },
     'ozone': {

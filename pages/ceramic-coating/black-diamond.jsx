@@ -146,39 +146,27 @@ export default function blackDiamond() {
                     </div>
                 </div>
 
-                <PricingComponent prices={currPackage === 'Protect' ? ['949', '949', '1,099', '1,099', '1,249', '1,249'] : ['1,399', '1,399', '1,699', '1,699', '1,849', '1,849']} ceramic={true} />
+                <PricingComponent prices={currPackage === 'Protect' ? ['949', '949', '1099', '1099', '1249', '1249'] : ['1399', '1399', '1699', '1699', '1849', '1849']} ceramic={true} />
             </div>
 
-            <div className='only-bg'>
+            <div style={{marginTop: '5vh', borderRadius: '38px 38px 0 0'}} className='service-bkg'>
                 <h3 className='pricing-title text-white'>Our Interior Coating Pricing</h3>
-                <strong className='subtext'>*Pricing does NOT include an <a href="/services/full-interior-detail" className='aside-link'>Interior Cleaning</a>, which you will need to add to get a coating.</strong>
-                <div className='pricing-container text-white'>
-                    <div className="pricing-card text-black">
-                        <h5>Fabric Coating</h5>
-                        <p>We will completely cover all fabric in your vehicle with a durable ceramic coating.</p>
-                        <p>This includes carpets, seats, and other fabric spots on the interior of the vehicle.</p>
-                        <div style={{display: 'flex', alignItems: 'center'}}>
+                <h4 className='subtext'><span className='special-package'>*</span>Pricing does <span className='special-package'>NOT</span> include an <a href="/services/full-interior-detail" className='aside-link'>Interior Cleaning</a>, which you will want to factor in before getting a coating.</h4>
+                <div style={{width: '75%'}} className='pricing-container text-black'>
+                    <div className="pricing-card">
+                        <h5>Interior Ceramic Coating</h5>
+                        <p>Gets your whole interior coated with a ~1 year Ceramic Coating.</p>
+                        <p>Check <a href="/services/full-interior-detail" className='aside-link'>here</a> for our Interior Detail Pricing</p>
+                        <div>
                             <strong className='size'>Any Size Vehicle</strong>
-                            <div style={{display: 'flex', flexDirection: 'column'}}>
-                                <p style={{paddingBottom: 0}} className="pricing-price">$75</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="pricing-card text-black">
-                        <h5>Leather Coating</h5>
-                        <p>We will completely cover all leather in your vehicle with a durable ceramic coating.</p>
-                        <p>This includes seats, door panels, and other leather spots on the interior of the vehicle.</p>
-                        <div style={{display: 'flex', alignItems: 'center'}}>
-                            <strong className='size'>Any Size Vehicle</strong>
-                            <div style={{display: 'flex', flexDirection: 'column'}}>
-                                <p style={{paddingBottom: 0}} className="pricing-price">$150</p>
-                            </div>
+                            <p className="pricing-price">$150</p>
                         </div>
                     </div>
                 </div>
+                <br className='extra-space' />
             </div>
 
-            <div className='locationpage-section no-bg'>
+            <div className='locationpage-section service-bkg-lighter'>
                 <div>
                     <h3 className='text-large'>Exterior Ceramic Coating FAQ</h3>
                     <ul className='faq-ul'>
@@ -200,7 +188,7 @@ export default function blackDiamond() {
                 </div>
             </div>
 
-            <div>
+            <div style={{marginTop: '2rem'}}>
                 <h3 className='text-large'>Check out some of the results from our Interior and Exterior Ceramic services.</h3>
                 <div className="mini-grid">
                     <Zoom>

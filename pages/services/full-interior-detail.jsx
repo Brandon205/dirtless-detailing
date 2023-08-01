@@ -131,7 +131,7 @@ export default function FullIntEx() {
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
 
-              <PricingComponent prices={[299, 299, 349, 349, 399, 399]} addons={[addons.extraction, addons.hair, addons.headliners, addons.fabric, addons.leather, addons.ozone]} />
+              <PricingComponent prices={[299, 299, 349, 349, 399, 399]} addons={[addons.extraction, addons.hair, addons.headliners, addons.intcoating, addons.ozone]} />
             </div>
 
             <div style={{padding: '2rem'}} className="service-bkg-lighter">

@@ -97,8 +97,8 @@ export default function ceramic() {
                 <h1>Our Interior & Exterior Ceramic Coatings</h1>
                 <h2>Professionally installed IGL Graphene Coatings</h2>
                 <div className='header-buttons'>
-                    <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
-                    <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
+                    <a href="/Contact" className='top-quote-btn'>Get a Free Quote</a>
+                    <a href="tel:2532529758" className='top-quote-btn btn-secondary'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
                 </div>
             </div>
             
@@ -127,40 +127,26 @@ export default function ceramic() {
                 <PricingComponent prices={currPackage === 'Protect' ? ['949', '949', '1,099', '1,099', '1,249', '1,249'] : ['1,399', '1,399', '1,699', '1,699', '1,849', '1,849']} ceramic={true} />
             </div>
 
-            <div className='service-bkg-lighter'>
-                <div>
+            <div className='service-bkg'>
+                <div style={{marginTop: '5vh', borderRadius: '38px 38px 0 0'}} className='service-bkg'>
                     <h3 className='pricing-title text-white'>Our Interior Coating Pricing</h3>
-                    <strong className='subtext'>*Pricing does NOT include an <a href="/services/full-interior-detail" className='aside-link'>Interior Cleaning</a>, which you will need to add to get a coating.</strong>
-                    <div className='pricing-container text-white'>
-                        <div className="pricing-card text-black">
-                            <h5>Fabric Coating</h5>
-                            <p>We will completely cover all fabric in your vehicle with a durable ceramic coating.</p>
-                            <p>This includes carpets, seats, and other fabric spots on the interior of the vehicle.</p>
-                            <div style={{display: 'flex', alignItems: 'center'}}>
+                    <h4 className='subtext'><span className='special-package'>*</span>Pricing does <span className='special-package'>NOT</span> include an <a href="/services/full-interior-detail" className='aside-link'>Interior Cleaning</a>, which you will want to factor in before getting a coating.</h4>
+                    <div style={{width: '75%'}} className='pricing-container text-black'>
+                        <div className="pricing-card">
+                            <h5>Interior Ceramic Coating</h5>
+                            <p>Gets your whole interior coated with a ~1 year Ceramic Coating.</p>
+                            <p>Check <a href="/services/full-interior-detail" className='aside-link'>here</a> for our Interior Detail Pricing</p>
+                            <div>
                                 <strong className='size'>Any Size Vehicle</strong>
-                                <div style={{display: 'flex', flexDirection: 'column'}}>
-                                    <p style={{paddingBottom: 0}} className="pricing-price">$75</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="pricing-card text-black">
-                            <h5>Leather Coating</h5>
-                            <p>We will completely cover all leather in your vehicle with a durable ceramic coating.</p>
-                            <p>This includes seats, door panels, and other leather spots on the interior of the vehicle.</p>
-                            <div style={{display: 'flex', alignItems: 'center'}}>
-                                <strong className='size'>Any Size Vehicle</strong>
-                                <div style={{display: 'flex', flexDirection: 'column'}}>
-                                    <p style={{paddingBottom: 0}} className="pricing-price">$150</p>
-                                </div>
+                                <p className="pricing-price">$150</p>
                             </div>
                         </div>
                     </div>
-
+                    <br className='extra-space' />
                 </div>
-
             </div>
 
-            <div className='locationpage-section no-bg'>
+            <div className='locationpage-section service-bkg-lighter'>
                 <div>
                     <h3 className='text-large'>Exterior Ceramic Coating FAQ</h3>
                     <ul className='faq-ul'>
@@ -182,7 +168,7 @@ export default function ceramic() {
                 </div>
             </div>
 
-            <h4 className='text-large'>Informational photos from IGL:</h4>
+            <h4 className='text-large' style={{marginTop: '2rem'}}>Informational photos from IGL:</h4>
             <strong className='subtext'>Check out more from our Ceramic Coating provider <a href='https://iglcoatingsusa.com/' target='_blank' rel='noopener' className='aside-link'>IGL</a>.</strong>
             <div style={{marginTop: '1rem'}} className="mini-grid">
                 <Zoom>

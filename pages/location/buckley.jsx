@@ -14,13 +14,13 @@ export default function buckley() {
 
     useEffect(() => {
         if (currPackage === 'Interior') {
-            setCurrComponent(<PricingComponent prices={['299', '299', '349', '349', '399', '399']} addons={[addons.extraction, addons.hair, addons.headliners, addons.fabric, addons.leather, addons.ozone]} />)
+            setCurrComponent(<PricingComponent prices={['299', '299', '349', '349', '399', '399']} addons={[addons.extraction, addons.hair, addons.headliners, addons.intcoating, addons.ozone]} />)
             setCurrLink('full-interior-detail')
         } else if (currPackage === 'Dirt-Less Wash') {
             setCurrComponent(<PricingComponent prices={['74', '74', '99', '99', '124', '149']} addons={[addons.claybar, addons.glass, addons.waterspot]} />)
             setCurrLink('dirtless-wash')
         } else if (currPackage === 'Combo') {
-            setCurrComponent(<PricingComponent prices={['374', '374', '449', '449', '474', '524']} addons={[addons.extraction, addons.hair, addons.headliners, addons.fabric, addons.leather, addons.ozone, addons.claybar, addons.glass, addons.waterspot]} />)
+            setCurrComponent(<PricingComponent prices={['374', '374', '449', '449', '474', '524']} addons={[addons.extraction, addons.hair, addons.headliners, addons.intcoating, addons.ozone, addons.claybar, addons.glass, addons.waterspot]} />)
             setCurrLink('interior-exterior-detailing-combo')
         } else if (currPackage === '2-Year Ceramic Coating') {
             setCurrComponent(<PricingComponent prices={['949', '949', '1099', '1099', '1249', '1249']} ceramic={true} />)
@@ -85,8 +85,8 @@ export default function buckley() {
                 <h1>Mobile Vehicle Detailing Buckley</h1>
                 <h2>Give your car the ultimate makeover with our exterior washes and paint corrections, and ensure long-lasting protection with our ceramic coatings.</h2>
                 <div className='header-buttons'>
-                    <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
-                    <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
+                    <a href="/Contact" className='top-quote-btn'>Get a Free Quote</a>
+                    <a href="tel:2532529758" className='top-quote-btn btn-secondary'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
                 </div>
             </div>
 
@@ -116,7 +116,7 @@ export default function buckley() {
                     <h3 className='text-large'>Services offered at our shop in Bonney Lake:</h3>
                     <div className='text-left'>
                         <a href="/detailing/ceramic" className='aside-link text-medium'>Ceramic Coating</a>
-                        <p className='mt-0'>Our 5 year Ceramic Coatings will not only keep your vehicle looking great, but they will also keep your paint protected. A full <a href="/services/single-stage-correction" className='aside-link'>Single Stage Paint Correction</a> is performed before the coating to give it a nice even surface to be applied to. Our exterior Ceramic Coatings will have to be performed at our shop in Bonney Lake. Interior coatings are also available to protect interior fabrics or leather too. Get more info on our <a href="/services/interior-ceramic-coating" className='aside-link'>Interior Coating</a> page.</p>
+                        <p className='mt-0'>Our 5 year Ceramic Coatings will not only keep your vehicle looking great, but they will also keep your paint protected. A full <a href="/services/single-stage-correction" className='aside-link'>Single Stage Paint Correction</a> is performed before the coating to give it a nice even surface to be applied to. Our exterior Ceramic Coatings will have to be performed at our shop in Bonney Lake. Interior coatings are also available to protect interior materials too. Get more info on our <a href="/services/interior-ceramic-coating" className='aside-link'>Interior Coating</a> page.</p>
                         <a href="/detailing/correction" className='aside-link text-medium'>Paint Correction</a>
                         <p className='mt-0'>Our paint correction services can fix roughly 60%-90% of minor damage and scratches and will leave your vehicle looking shinier and feeling smoother than ever.</p>
                     </div>

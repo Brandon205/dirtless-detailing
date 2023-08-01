@@ -2721,19 +2721,6 @@ hr {
   margin-left: 0.5rem;
 }
 
-.service-bkg {
-  background: #212327;
-  color: white;
-  padding: 2rem 0;
-}
-
-.service-bkg-lighter {
-  /* background: #292B2F; */
-  background: #282a2e;
-  color: white;
-  padding-top: 2rem;
-}
-
 .service-main {
   width: 95%;
   margin: 0 auto;
@@ -2766,10 +2753,6 @@ hr {
   background-repeat: no-repeat;
 }
 
-.explain-container {
-  
-}
-
 /** LOCATION PAGE CSS **/
 
 .location-container {
@@ -2800,14 +2783,27 @@ hr {
   margin: 0 auto;
 }
 
+.service-bkg {
+  background: #212327;
+  color: white;
+  padding: 2rem 0;
+}
+
+.service-bkg-lighter {
+  background: #282a2e;
+  color: white;
+  padding-top: 2rem;
+}
+
 .location-quote-btn {
   padding: 0.5rem;
-  margin: 0 auto;
+  margin: 2rem auto 0 auto;
 }
 
 .bg-contact {
   background-color: var(--contact-bkg);
   color: white;
+  padding-bottom: 1rem;
 }
 
 .extra-space {
