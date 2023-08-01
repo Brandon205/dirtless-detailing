@@ -16,6 +16,8 @@ import { FaRegStar, FaMapMarkedAlt } from 'react-icons/fa';
 import { AiOutlineUnorderedList  } from 'react-icons/ai';
 import { HiOutlineClipboardCheck } from 'react-icons/hi';
 
+// import carWash from '../assets/icons/carWash.png';
+
 export default function Home() {
     const [screenWidth, setScreenWidth] = useState(null);
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -100,8 +102,8 @@ export default function Home() {
                     <p className='main-desc'>Anything from a simple interior cleaning to the most detail oriented Ceramic Coating jobs, you can trust Dirt-Less Detailing to do the job right.</p>
 
                     <div className='header-link-container'>
-                        <a href="/Contact" className='quote-btn'><HiOutlineClipboardCheck /> Get a Free Quote</a>
-                        <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
+                        <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Get a Free Quote</a>
+                        <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
                     </div>
 
                     <div style={{ display: screenWidth < 879 ? 'none' : 'flex', alignItems: 'center', gap: 32 }}>
@@ -111,7 +113,7 @@ export default function Home() {
                         <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="noopener">
                             <div className="header-cert" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/242a2248-1f41-4edf-b2c5-d508a10bef00/public')`, height: 90 + 'px', width: 90 + 'px' }}></div>
                         </a>
-                        <p className='cert-desc'>Ceramic Coating Certified and a BBB Trusted Business</p>
+                        <p className='cert-desc'>We are Ceramic Coating Certified and a BBB Trusted Business</p>
                     </div>
 
                 </div>
@@ -120,22 +122,25 @@ export default function Home() {
             <div className="service-bkg" style={{paddingTop: 0}}>
                 <div style={{display: screenWidth < 879 ? 'none' : 'flex'}} className="header-icons-container">
                     <div>
-                        <BiCertification className='header-icon' />
-                        <p className="header-desc">7 Years</p>
+                        <img src='../assets/icons/calendar.png' alt='calendar' className='header-icon' />
+                        <p className="header-desc">8 Years</p>
                         <span className='header-desc-span'>Of Experience</span>
                     </div>
                     <div>
-                        <MdOutlineLocalCarWash className='header-icon' />
+                        {/* <MdOutlineLocalCarWash className='header-icon' /> */}
+                        <img src='../assets/icons/car.png' alt='calendar' className='header-icon' />
                         <p className="header-desc">1000+</p>
                         <span className='header-desc-span'>Details Done</span>
                     </div>
                     <div>
-                        <FaRegStar className='header-icon' />
+                        {/* <FaRegStar className='header-icon' /> */}
+                        <img src='../assets/icons/star.png' alt='calendar' className='header-icon' />
                         <p className="header-desc">Raving</p>
                         <span className='header-desc-span'>5 Star Reviews</span>
                     </div>
                     <div>
-                        <FaMapMarkedAlt className='header-icon' />
+                        {/* <FaMapMarkedAlt className='header-icon' /> */}
+                        <img src='../assets/icons/location.png' alt='map with location marker' className='header-icon' />
                         <p className="header-desc">Mobile</p>
                         <span className='header-desc-span'>Services</span>
                     </div>
@@ -176,22 +181,26 @@ export default function Home() {
 
                 <div className="service-type-container">
                     <div style={{boxShadow: currentService === 'popular' ? '5px 6px 10px black ' : '2px 2px 5px black', transform: currentService === 'popular' ? 'scale(1.05)' : 'none'}} className="service-type-card" onClick={() => handleServiceChange('popular')}>
-                        <MdLeaderboard style={{color: currentService === 'popular' ? '#c83f03' : 'black'}} className='service-type-icon' />
+                        {/* <MdLeaderboard style={{color: currentService === 'popular' ? '#c83f03' : 'black'}} className='service-type-icon' /> */}
+                        <img src='../assets/icons/analytics.png' alt="popularity graph" className='icon-96' />
                         <strong style={{color: currentService === 'popular' ? '#c83f03' : 'black'}}>Our Most Popular Details</strong>
                         <p>Our bread and butter details, these are the details we perform the most often due to the high demand for them.</p>
                     </div>
                     <div style={{boxShadow: currentService === 'interior' ? '5px 6px 10px black' : '2px 2px 5px black', transform: currentService === 'interior' ? 'scale(1.05)' : 'none'}} className="service-type-card" onClick={() => handleServiceChange('interior')}>
-                        <GiCarSeat style={{color: currentService === 'interior' ? '#c83f03' : 'black'}} className='service-type-icon' />
+                        {/* <GiCarSeat style={{color: currentService === 'interior' ? '#c83f03' : 'black'}} className='service-type-icon' /> */}
+                        <img src='../assets/icons/carSeat.png' alt="car seat" className='icon-96' />
                         <strong style={{color: currentService === 'interior' ? '#c83f03' : 'black'}}>Interior Services</strong>
                         <p>All of our Interior services ranging from simple cleanings all the way to the most extreme Biohazard removal jobs.</p>
                     </div>
                     <div style={{boxShadow: currentService === 'exterior' ? '5px 6px 10px black' : '2px 2px 5px black', transform: currentService === 'exterior' ? 'scale(1.05)' : 'none'}} className="service-type-card" onClick={() => handleServiceChange('exterior')}>
-                        <MdOutlineLocalCarWash style={{color: currentService === 'exterior' ? '#c83f03' : 'black'}} className='service-type-icon' />
+                        {/* <MdOutlineLocalCarWash style={{color: currentService === 'exterior' ? '#c83f03' : 'black'}} className='service-type-icon' /> */}
+                        <img src='../assets/icons/carWash.png' alt="car wash" className='icon-96' />
                         <strong style={{color: currentService === 'exterior' ? '#c83f03' : 'black'}}>Exterior Services</strong>
                         <p>Every exterior service from our car washes to our most detail oriented paint correction services that will remove scratches and swirls.</p>
                     </div>
                     <div style={{boxShadow: currentService === 'ceramic' ? '5px 6px 10px black' : '2px 2px 5px black', transform: currentService === 'ceramic' ? 'scale(1.05)' : 'none'}} className="service-type-card" onClick={() => handleServiceChange('ceramic')}>
-                        <FaCarSide style={{color: currentService === 'ceramic' ? '#c83f03' : 'black'}} className='service-type-icon' />
+                        {/* <FaCarSide style={{color: currentService === 'ceramic' ? '#c83f03' : 'black'}} className='service-type-icon' /> */}
+                        <img src='../assets/icons/teslaX.png' alt="expensive car" className='icon-96' />
                         <strong style={{color: currentService === 'ceramic' ? '#c83f03' : 'black'}}>Ceramic Coatings</strong>
                         <p>Our best exterior paint protection offers! If you want you paint to look good, be protected, and shine for years to come this is the option for you.</p>
                     </div>

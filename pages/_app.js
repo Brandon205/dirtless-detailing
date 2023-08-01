@@ -177,7 +177,7 @@ export default function MyApp({ Component, pageProps }) {
 
                             {/* <HiInformationCircle /> */}
                             <li className="menu-li quote-li">
-                                <a href="/Contact" className="nav-quote-btn" onClick={() => setNav('none')}>Contact Us</a>
+                                <a href="/Contact" className="nav-quote-btn" onClick={() => setNav('none')}>CONTACT US</a>
                             </li>
                         </ul>
                     </div>

@@ -13,10 +13,14 @@
   --contact-bkg-lighter: #41444A;
 
   /** Button colors **/
-  --main-clr: #c83f03;
+  --main-clr: #fab638;
+  /* --main-clr: #c83f03; */
   --main-clr-hover: #91350e;
   --main-clr-lighter: #ff975a;
   --quote-clr: #1D96ED;
+
+  --secondary-clr: #0f0e0a;
+  --accent: #ff2600;
 
   /** Text and smaller colors **/
   --supporting-text: #bbb;
@@ -135,13 +139,30 @@ img {
 }
 
 .top-quote-btn {
-  background-color: rgba(0, 0, 0, 0);
-  border: 2px solid var(--main-clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
+  font-size: 22px;
+  text-decoration: none;
+  background-color: var(--main-clr);
+  border-radius: 6px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
 }
 
 .top-quote-btn:hover {
-  background-color: var(--main-clr);
+  transform: translate(0, -3px);
+  transition: transform ease 0.3s;
+}
+
+.btn-icon {
+  font-size: 1.2em;
+  margin-right: 0.5rem;
+}
+
+.btn-secondary {
+  background-color: #040a15;
 }
 
 .main-quote-btn {
@@ -375,6 +396,7 @@ header h1 {
     "icon myspan";
   width: 190px;
   text-align: left;
+  place-items: center;
 }
 
 .header-icons-container a {
@@ -386,9 +408,11 @@ header h1 {
 }
 
 .header-icon {
-  color: var(--main-clr);
+  /* color: var(--main-clr);
   font-size: 3em;
-  display: inline;
+  display: inline; */
+  width: 48px;
+  height: 48px;
   grid-area: icon;
 }
 
@@ -444,6 +468,7 @@ header h1 {
 } */
 
 .cert-desc {
+  font-size: 20px;
   color: white;
 }
 
@@ -810,14 +835,21 @@ option {
 }
 
 .service-type-card:hover {
-  transform: scale(1.01);
-  box-shadow: 5px 6px 10px black !important;
+  /* transform: scale(1.05); */
+  box-shadow: 12px 15px 12px black !important;
 }
 
 .service-type-card strong {
   font-weight: 600;
   font-size: 20px;
   color: black;
+}
+
+.icon-96 {
+  margin-bottom: 2rem;
+  place-self: center;
+  width: 96px;
+  height: 96px;
 }
 
 .service-type-icon {
@@ -2692,7 +2724,8 @@ hr {
 }
 
 .service-bkg-lighter {
-  background: #292B2F;
+  /* background: #292B2F; */
+  background: #282a2e;
   color: white;
   padding-top: 2rem;
 }
@@ -2952,6 +2985,7 @@ hr {
   }
 
   .main-desc {
+    font-size: 20px;
     max-width: 40%;
     text-align: left;
     margin: 0;
