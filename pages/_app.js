@@ -20,7 +20,7 @@ export default function MyApp({ Component, pageProps }) {
     const [gallery, setGallery] = useState(false);
     const [smallScreen, setSmallScreen] = useState(null);
 
-    const navBar = useRef(null)
+    const navBar = useRef(null);
 
     useEffect(() => {
 

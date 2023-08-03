@@ -231,7 +231,6 @@ nav {
   align-items: center;
   justify-content: space-between;
   transition: 0.4s ease-in-out;
-  /* background-color: var(--contact-bkg); */
 }
 
 li span {
@@ -838,6 +837,7 @@ option {
 
 .popular-services-card {
   background-color: var(--contact-bkg-lighter);
+  box-shadow: 2px 2px 5px black;
   width: 90%;
   max-width: 550px;
   z-index: 0;
@@ -861,7 +861,7 @@ option {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 1rem 2rem 1rem;
 }
 
 .popular-readmore {
@@ -2931,7 +2931,7 @@ hr {
 
   .popular-container {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .pricing__pricecard {
@@ -3284,6 +3284,10 @@ hr {
   .service-type-card {
     height: 140%;
     width: 100%;
+  }
+
+  .popular-container {
+    justify-content: space-around;
   }
 
   .popular-link-container {
