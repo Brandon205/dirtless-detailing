@@ -444,7 +444,7 @@ header h1 {
 }
 
 .maincover {
-  filter: brightness(20%) grayscale(65%);
+  filter: brightness(50%) grayscale(20%);
   position: absolute;
   background-position: center;
   background-repeat: no-repeat;
@@ -2205,7 +2205,6 @@ hr {
   max-width: 600px;
   height: 35vh;
   border-radius: 24px;
-
   background: var(--contact-bkg-lighter);
   background-position: center;
   background-size: cover;
@@ -2237,11 +2236,11 @@ hr {
 
 .pricing__range::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 28px;
   margin: -8px 0 0 0;
-  border-radius: 50%;
-  background: var(--main-clr);
+  border-radius: 4px;
+  background: #FF3764;
   cursor: pointer;
   border: 0 !important;
   z-index: 5;
@@ -2258,10 +2257,10 @@ hr {
 /*                            MOZILLA THUMB                            */
 
 .pricing__range::-moz-range-thumb {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background: var(--main-clr);
+  width: 18px;
+  height: 28px;
+  border-radius: 4px;
+  background: #FF3764;
   cursor: pointer;
   border: 0 !important;
   z-index: 5;
@@ -2278,10 +2277,10 @@ hr {
 /*                            MS THUMB                            */
 
 .pricing__range::-ms-thumb {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background: var(--main-clr);
+  width: 12px;
+  height: 28px;
+  border-radius: 4px;
+  background: var(--accent);
   cursor: pointer;
   border: 0 !important;
   z-index: 5;
@@ -2302,8 +2301,7 @@ hr {
   height: 12px;
   border-radius: 100px;
   cursor: pointer;
-  background: var(--main-clr);
-  background-image: linear-gradient(to right, #fab638, #fc9c19, #fe7f00, #ff5c00, #ff2600);
+  background: #d0d0d981;
 }
 
 .pricing__range::-moz-range-track {
@@ -2311,16 +2309,7 @@ hr {
   height: 12px;
   border-radius: 100px;
   cursor: pointer;
-  background: #ff26006d;
-  background-image: linear-gradient(to left, #fab63880, #fc9d1980, #fe7f0080, #ff5e0080, #ff260080);
-}
-
-.pricing__range::-moz-range-progress {
-  height: 10px;
-  border-radius: 100px;
-  background: var(--main-clr);
-  background-image: linear-gradient(to right, #fab638, #fc9c19, #fe7f00, #ff5c00, #ff2600);
-
+  background: #d0d0d981;
 }
 
 .pricing__range::-ms-track {
@@ -2328,7 +2317,7 @@ hr {
   height: 12px;
   border-radius: 100px;
   cursor: pointer;
-  background: #c83e037a;
+  background: #d0d0d981;
 }
 
 .pricing__range::-ms-track {
@@ -2375,19 +2364,14 @@ hr {
 .pricing__labels li::before {
   content: "";
   position: absolute;
-  top: -16px;
+  top: -19px;
   right: 0;
   left: 0;
   margin: 0 auto;
-  width: 6px;
-  height: 6px;
-  background: var(--main-clr);
+  width: 11px;
+  height: 11px;
+  background: #FF3764;
   border-radius: 50%;
-}
-
-.pricing__active::before {
-  z-index: 0;
-  background: #c0c0c0 !important;
 }
 
 .pricing__selected::before {
