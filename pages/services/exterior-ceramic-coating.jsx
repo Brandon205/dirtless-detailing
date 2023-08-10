@@ -263,13 +263,13 @@ export default function ExtCoatings() {
                                     <li className='faq-p'>The paint coating should last 2-5 years, 50,000 miles, or a Lifetime<span className='special-package'>*</span> with our warranty. The coating on any trim, glass, lights, or wheels will last approximately 1 year.</li>
 
                                     <li className='faq-li'>Can I still go through car washes?</li>
-                                    <li className='faq-p'>If you want to keep the ceramic coating in good condition and have it last as long as possible, you won't want to go through any car washes even the touch-less ones.</li>
+                                    <li className='faq-p'>To get the most longevity out of your coating you shouldn't, but if you are in need of a quick wash though we would recommend avoiding the normal ones and only going through touch-less car washes. In fact, the touch-less car washes will work better on ceramic coated vehicles because the chemicals from it will have an easier time breaking through and removing all of the dirt and grime from your car!</li>
 
                                     <li className='faq-li'>How should I wash my car then?</li>
                                     <li className='faq-p'>You can check out our new <a href="/products/ceramic-coating" className='aside-link'>Ceramic Coating Maintenance</a> page for a inexpensive DIY kit and washing method that's safe for your new coating! For washing your coated vehicle you have a couple of options. Or we also highly recommend either scheduling monthly maintenance through us especially if you get our Protect+ Package. </li>
 
                                     <li className='faq-li'>How do the 2 and 5 year warranties work?</li>
-                                    <li className='faq-p'>For the 2 year (Protect) or the 5 year (Protect+) coating warranty, you will have to get our Ceramic Maintenance Package every 6 months to 1 year.</li>
+                                    <li className='faq-p'>For the 2 year (Protect) or the 5 year (Protect+) coating warranty, you will have to get our <a href="/services/exterior-ceramic-coating" className='aside-link'>VIP Ceramic Coating Maintenance</a> every 6 months to 1 year.</li>
 
                                     <li className='faq-li'>How does the Lifetime warranty work?</li>
                                     <li className='faq-p'>For the Lifetime (Protect+) warranty your vehicle needs to be on our Monthly Maintenance Program.<br /> *Feel free to ask us for more information on either of our Ceramic Maintenance Packages!</li>

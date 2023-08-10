@@ -167,7 +167,7 @@ export default function PricingComponent({prices = props.prices, ceramic = false
             }
 
             {ceramic ? 
-                <div className="general-container new-heading-container">
+                <div id='vip' className="general-container new-heading-container">
                     <strong className="above-heading"><span className='special-package'>VIP</span> Packages</strong>
                     <h3 className="new-heading">To Maintain that New Car Shine</h3>
                     <p style={{marginTop: 0, color: '#c0c0c0'}}>*Prices based on vehicle size selected above, any price ranges are determined by us based on the condition of the vehicle.</p>
