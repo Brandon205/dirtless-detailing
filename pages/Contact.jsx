@@ -299,7 +299,7 @@ export default function Contact() {
                 <form className="form" ref={formRef} autoComplete="on" onSubmit={(e) => formSubmit(e)}>
                     <div className="form-section form-top-section">
                         <div>
-                            <div>
+                            <div style={{margin: '0 auto'}}>
                                 <input type="checkbox" name="myself" id='myself' className='checkbox-input' onChange={() => handleGiftSelect(false)} checked={gift ? false : true} />
                                 <label htmlFor="myself" className='checkbox-label'>For Myself</label>
                                 <input type="checkbox" name="someone" id='someone' className='checkbox-input' onChange={() => handleGiftSelect(true)} checked={gift ? true : false} />

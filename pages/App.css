@@ -537,9 +537,9 @@ option {
 }
 
 .contact-container {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
   width: 100%;
   color: white;
   background-color: var(--contact-bkg);
