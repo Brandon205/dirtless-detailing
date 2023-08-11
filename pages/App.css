@@ -464,7 +464,7 @@ header h1 {
   background-position: center;
   background-attachment: fixed;
   position: relative;
-  height: 90vh;
+  height: 60vh;
   width: 100%;
   z-index: 0;
 }
@@ -688,7 +688,10 @@ option {
 }
 
 .contact-information-container {
-  padding-top: 15rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4rem;
+  gap: 2rem;
 }
 
 .contact-information {
@@ -699,14 +702,22 @@ option {
   background-color: var(--contact-bkg-lighter);
   width: 90vw;
   max-width: 360px;
-  border-radius: 1rem;
+  border-radius: 6px;
   margin: 0 auto;
   padding: 2rem 0.75rem;
 }
 
-.contact-information h1 {
-  text-decoration: underline;
+.contact-information h2 {
+  font-size: 1.2em;
   margin-top: 0;
+}
+
+.contact-info-cards {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .contact-border {
@@ -725,10 +736,13 @@ option {
   display: flex;
   align-items: center;
   gap: 1rem;
+  background-color: #282A2E;
+  padding: 1rem;
 }
 
-.contact-icon-container p {
-  flex-shrink: 5;
+.contact-icon-container p,
+.contact-icon-container a {
+  font-size: 1.2em;
 }
 
 .contact-icon {
@@ -810,6 +824,10 @@ option {
 
 .no-grow {
   cursor: default;
+}
+
+.icon-48 {
+  width: 48px;
 }
 
 .icon-96 {
@@ -1508,7 +1526,7 @@ hr {
   position: absolute;
   color: var(--heading-clr1);
   width: 100%;
-  transform: translate(0, -70vh);
+  transform: translate(0, -45vh);
   z-index: 1;
 }
 
@@ -1625,7 +1643,7 @@ hr {
   margin: 0 auto;
   padding: 2rem;
   font-size: 1.25em;
-  transform: translate(0, 25vh);
+  transform: translate(0, 16vh);
   z-index: 1;
 }
 
@@ -2951,7 +2969,6 @@ hr {
 
   .service-title+p {
     text-align: left;
-    /* padding-left: 1.5rem; */
   }
 
   .otherservices-subcontainer {
@@ -2973,8 +2990,22 @@ hr {
     line-height: 2;
   }
 
+  .contact-information-container {
+    width: 75%;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+
+  .contact-info-cards {
+    width: 30%;
+    gap: 0;
+    justify-content: space-around;
+  }
+
   .contact-information {
-    max-width: 650px;
+    width: 70%;
+    margin: 0;
+    max-width: none;
   }
 
   .contact-container-right {
@@ -3225,10 +3256,6 @@ hr {
   }
 
   .contact-container-right {
-    max-width: 800px;
-  }
-
-  .contact-information {
     max-width: 800px;
   }
 

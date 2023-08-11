@@ -249,45 +249,47 @@ export default function Contact() {
                 />
             </Head>
 
+            <div className="cover" style={{backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover)`}}></div>
+            <div className="servicepage-header">
+                <h1>Get In Touch</h1>
+                <h2 className='page-subheading'>Feel free to contact us anytime to get a free quote, ask questions, or book an appointment!</h2>
+                <div className='header-buttons'>
+                    <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Get a Free Quote</a>
+                    <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
+                </div>
+            </div>
+
             <div className="contact-information-container">
+                <div className='contact-info-cards'>
+                    <div className="contact-icon-container">
+                        <img src='../assets/icons/clock.png' alt='clock' className='icon-48' />
+                        <p className="hours-p">Monday - Sunday: 7 AM - 7 PM</p>
+                    </div>
+                    <div className='contact-icon-container'>
+                        <img src='../assets/icons/placeMarker.png' alt='place marker' className='icon-48' />
+                        <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link location-link" target="_blank" rel='noopener'>9305 205th Ave E, Bonney Lake, Washington 98391</a>
+                    </div>
+                    <div className='contact-icon-container'>
+                        <img src='../assets/icons/phoneMessage.png' alt='phone message' className='icon-48' />
+                        <a className='contact-link location-link' href="tel:2532529758" target="_blank" rel="noopener">(253) 252-9758</a><p> Text or Call</p>
+                    </div>
+                    <div className='contact-icon-container'>
+                        <img src='../assets/icons/post.png' alt='post' className='icon-48' />
+                        <a className='contact-link location-link' href="mailto:brenden@dirtlessdetailing.com?subject = Schedule a Detail!" target="_blank" rel="noopener">brenden@dirtlessdetailing.com</a>
+                    </div>
+                    <div className='contact-icon-container'>
+                        <img src='../assets/icons/gift.png' alt='gift' className='icon-48' />
+                        <p style={{textAlign: 'left'}}>We offer gift certificates for all of our services!</p>
+                    </div>
+                </div>
                 <div className="contact-information">
-                    <h1 style={{fontSize: '1.75em'}}>Our Contact Information</h1>
+                    <h2 style={{fontSize: '1.75em'}}>Our Contact Information</h2>
                     <hr className="contact-border" />
                     <h3 style={{ marginBottom: 0 }}>Need us to come to you?</h3>
                     <p className="hours-p" style={{ marginBottom: 0 }}>We can perform mobile detailing in the following cities:</p>
                     <p className="hours-p"><span style={{ fontWeight: 'bold', color: '#9f9f9f' }}> Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Tehaleh, Black Diamond, Milton, Edgewood, and Graham.</span></p>
                     <p>Overnight Detailing: For drop offs we have a safe lockable garage, so if it's more convenient for you feel free to drop your car off the night before! We can usually also do our details at night so you can drop your car off and have it done in the morning! </p>
                     <p className='subtext italic'><span className='special-package'>*Note:</span> If the total of the mobile services you choose is less than $200, there is a $1/mile from our shop fee to cover travel costs.</p>
-                    <hr className="contact-border" />
-                    <div className="contact-icon-container">
-                        <FaClock className='contact-icon' />
-                        <p className="hours-p">Monday - Sunday: 7 AM - 7 PM</p>
-                    </div>
-                    <hr className="contact-border" />
-                    <div className='contact-icon-container'>
-                        <GoLocation className='contact-icon' />
-                        <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link location-link" target="_blank" rel='noopener'>9305 205th Ave E, Bonney Lake, Washington 98391</a>
-                    </div>
-                    <hr className="contact-border" />
-                    <div className='contact-icon-container'>
-                        <FaFacebookMessenger className='contact-icon' />
-                        <a href="https://www.facebook.com/DirtLessDetailing/" className="contact-link location-link" target="_blank" rel="noopener">Facebook Messenger</a>
-                    </div>
-                    <hr className="contact-border" />
-                    <div className='contact-icon-container'>
-                        <MdOutlinePermPhoneMsg className='contact-icon' />
-                        <a className='contact-link location-link' href="tel:2532529758" target="_blank" rel="noopener">(253) 252-9758</a><p style={{ display: 'inline' }}> (Text or Call)</p>
-                    </div>
-                    <hr className="contact-border" />
-                    <div className='contact-icon-container'>
-                        <MdOutlineEmail className='contact-icon' />
-                        <a className='contact-link location-link' href="mailto:brenden@dirtlessdetailing.com?subject = Schedule a Dirt-Less Detail" target="_blank" rel="noopener">brenden@dirtlessdetailing.com</a>
-                    </div>
-                    <hr className="contact-border" />
-                    <div className='contact-icon-container'>
-                        <AiFillGift className='contact-icon' />
-                        <p style={{textAlign: 'left'}}>Looking to get a gift for someone? All of our services can be bought as a gift certificate, just select "For Someone Else" below!</p>
-                    </div>
                 </div>
             </div>
 
