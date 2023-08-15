@@ -4,12 +4,10 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import { AiOutlineCar } from "react-icons/ai";
 import { BsFillCameraFill } from "react-icons/bs";
-import { FaBars, FaFacebook, FaInstagram, FaPhoneAlt, FaCarSide, FaPhotoVideo, FaBiohazard, FaCameraRetro, FaHome, FaImages, FaSoap, FaYoutube } from 'react-icons/fa';
+import { FaBars, FaCarSide, FaPhotoVideo, FaBiohazard, FaCameraRetro, FaSoap } from 'react-icons/fa';
 import { GiSteeringWheel, GiCarKey, GiCarSeat } from 'react-icons/gi';
-import { GoLocation } from "react-icons/go";
 import { CgClose } from "react-icons/cg";
 import { HiSparkles } from 'react-icons/hi';
-import { MdOutlineEmail } from 'react-icons/md';
 import { TbEngine } from 'react-icons/tb';
 import { ImFilePicture } from 'react-icons/im';
 import './App.css';
@@ -179,6 +177,13 @@ export default function MyApp({ Component, pageProps }) {
             <Component {...pageProps} />
 
             <footer>
+                <div className="footer-content-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                    <a href="/"><img src='../assets/icons/logoCircle.png' alt='Dirt-Less Detailing' style={{ width: '125px', marginTop: '24px' }} /></a>
+                    <div>
+                        <h3 style={{ margin: '1rem 0 0 0' }}>Dirt-Less Detailing</h3>
+                        <p style={{ maxWidth: '300px' }}>After 8 years in the auto detailing industry you can trust us to take the best care of your vehicle, returning it to you looking better than ever every time.</p>
+                    </div>
+                </div>
                 <div className="footer-content-card">
                     <h3>COMPANY</h3>
                     <a href="/" className='footer-link'>Home</a>
@@ -189,42 +194,43 @@ export default function MyApp({ Component, pageProps }) {
                     <a href="/services/exterior-ceramic-coating" className='footer-link'>Exterior Ceramic Coating</a>
                     <a href="/services/interior-ceramic-coating" className='footer-link'>Interior Ceramic Coating</a>
                 </div>
-                <div className="footer-content-card">
-                    <h3>INTERIOR</h3>
-                    <a href="/services/full-interior-detail" className='footer-link'>Full Interior Cleaning</a>
-                    <a href="/services/biohazard-cleaning" className='footer-link'>Smoke / Biohazard / Mold Removal</a>
+                <div className="footer-content-card" style={{ paddingBottom: '2rem' }}>
+                    <h3>SERVICES</h3>
                     <a href="/services/interior-exterior-detailing-combo" className='footer-link'>The Dirt-Less Detail</a>
-                </div>
-                <div className="footer-content-card">
-                    <h3>EXTERIOR</h3>
+                    <a href="/services/full-interior-detail" className='footer-link'>Full Interior Cleaning</a>
+                    <a href="/services/biohazard-cleaning" className='footer-link'>Biohazard Removal</a>
                     <a href="/services/dirtless-wash" className='footer-link'>Dirt-Less Wash</a>
                     <a href="/services/interior-exterior-detailing-combo" className='footer-link'>The Dirt-Less Detail</a>
-                </div>
-                <div className="footer-content-card">
-                    <h3>CORRECTION SERVICES</h3>
                     <a href="/services/single-stage-correction" className='footer-link'>Single Stage Paint Correction</a>
                     <a href="/services/two-stage-correction" className='footer-link'>Two Stage Paint Correction</a>
                 </div>
-                <div className="footer-content-card footer-contact-card" id="contact">
-                    <h3>CONTACT US</h3>
-                    <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener"><FaPhoneAlt /> (253) 252-9758</a>
-                    <a href="mailto:brenden@dirtlessdetailing.com?subject = Schedule a Dirt-Less Detail" className="contact-link footer-contact-link" target="_blank" rel="noopener"><MdOutlineEmail /> brenden@dirtlessdetailing.com</a>
-                    <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link footer-contact-link" target="_blank" rel="noopener"><GoLocation /> 9305 205th Ave E, Bonney Lake, Wa 98391</a><br />
+                {/* <div className="footer-content-card">
+                    <h3>EXTERIOR</h3>
                 </div>
-                <div className='bbb-footer'>
+                <div className="footer-content-card">
+                    <h3>CORRECTION SERVICES</h3>
+                </div> */}
+                <div className="footer-content-card footer-contact-card" id="contact">
+                    <h3>CONTACT</h3>
+                    <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener"><img src='../assets/icons/phoneMessageColor.png' alt='Phone call / message' className='icon-24' /> (253) 252-9758</a>
+                    <a href="mailto:brenden@dirtlessdetailing.com?subject = Schedule a Dirt-Less Detail" className="contact-link footer-contact-link" target="_blank" rel="noopener"><img src='../assets/icons/post.png' alt='email' className='icon-24' /> brenden@dirtlessdetailing.com</a>
+                    <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link footer-contact-link" target="_blank" rel="noopener"><img src='../assets/icons/placeMarker.png' alt='place marker' className='icon-24' /> 9305 205th Ave E, Bonney Lake, Wa 98391</a><br />
+                </div>
+                {/* <div className='bbb-footer'>
                     <p>Mobile services offered in:<span style={{ color: 'lightgray' }}> Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Lake Tapps, Federal Way, Orting, South Prairie, Tehaleh, Black Diamond, Milton, Edgewood, and Graham.</span></p>
                     <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="noopener" aria-label='Dirt-Less Detailing on Better Business Bureau'>
                         <div className="header-cert" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/1f42d129-8657-4246-7297-ab33dc24c000/public')`, width: 147 + 'px', height: 75 + 'px' }}></div>
                     </a>
-                </div>
-                <hr />
+                </div> */}
                 <div className='socials-container'>
-                    <h4 style={{ fontSize: 1.3 + 'em' }}>Dirt-Less Detailing 2023</h4>
                     <div>
-                        <a href="https://www.facebook.com/DirtLessDetailing/" className="socials" target="_blank" rel="noopener" aria-label="Facebook"><FaFacebook /></a>
-                        <a href="https://www.instagram.com/dirtlessdetailing/" className="socials" target="_blank" rel="noopener" aria-label="Instagram"><FaInstagram /></a>
-                        <a href="https://www.youtube.com/channel/UCsoqP5s4hwkQd_Sd-TVv-jg" className="socials" target="_blank" rel="noopener" aria-label="Youtube"><FaYoutube /></a>
+                        <h4 style={{ fontSize: '1.3em', margin: '1rem auto' }}>©Dirt-Less Detailing 2023</h4>
                         <p>Icons made by <a target="_blank" rel='noopener' href="https://icons8.com" className='aside-link'>Icons8</a></p>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/DirtLessDetailing/" className="socials" target="_blank" rel="noopener" aria-label="Facebook"><img src='../assets/icons/facebook.png' alt='facebook' className='icon-48' /></a>
+                        <a href="https://www.instagram.com/dirtlessdetailing/" className="socials" target="_blank" rel="noopener" aria-label="Instagram"><img src='../assets/icons/instagram.png' alt='instagram' className='icon-48' /></a>
+                        <a href="https://www.youtube.com/channel/UCsoqP5s4hwkQd_Sd-TVv-jg" className="socials" target="_blank" rel="noopener" aria-label="Youtube"><img src='../assets/icons/youtube.png' alt='youtube' className='icon-48' /></a>
                     </div>
                 </div>
             </footer>
