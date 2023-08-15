@@ -445,7 +445,7 @@ header h1 {
 }
 
 .maincover {
-  filter: brightness(50%) grayscale(20%);
+  filter: brightness(30%) grayscale(20%);
   position: absolute;
   background-position: center;
   background-repeat: no-repeat;

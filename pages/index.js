@@ -81,10 +81,10 @@ export default function Home() {
 
                     <div style={{ display: screenWidth < 879 ? 'none' : 'flex', alignItems: 'center', gap: 32 }}>
                         <a href="https://iglcoatingsusa.com/" target="_blank" rel="noopener">
-                            <div className="header-cert" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/833088d3-ca7b-41b9-561f-21f8517f3300/public')`, height: 120 + 'px', width: 110 + 'px' }}></div>
+                            <div className="header-cert" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/833088d3-ca7b-41b9-561f-21f8517f3300/public')`, width: '110px', height: '105px', }}></div>
                         </a>
-                        <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="noopener">
-                            <div className="header-cert" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/242a2248-1f41-4edf-b2c5-d508a10bef00/public')`, height: 90 + 'px', width: 90 + 'px' }}></div>
+                        <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="noopener" aria-label='Dirt-Less Detailing on Better Business Bureau'>
+                            <div className="header-cert" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/1f42d129-8657-4246-7297-ab33dc24c000/public')`, width: '175px', height: '100px' }}></div>
                         </a>
                     </div>
 
