@@ -154,7 +154,7 @@ export default function OtherServices(props) {
                         <div className="otherservices-desc">
                             <div>
                                 <a href='/services/interior-ceramic-coating' className='service-heading-link'>Interior Ceramic Coatings</a>
-                                <p className="secondary-text">Starting at: <br /><span>$75.00</span></p>
+                                <p className="secondary-text">Starting at: <br /><span>$150.00</span></p>
                             </div>
                             <p className="service-desc">Interior ceramic coatings offer a number of benefits for your car's interior, including protection against spills, stains, and UV damage. These coatings also make cleaning and maintenance much easier, allowing you to keep your car looking and feeling like new for longer.</p>
 
@@ -172,11 +172,11 @@ export default function OtherServices(props) {
 
     return (
         <div className="service-bkg" style={{ display: 'flex', flexDirection: 'column', gap: '4em', paddingTop: 0 }}>
-            
+
             {content}
 
             <p>Tap a service category above these cards to see what we offer for that category of service.</p>
-            
+
         </div>
     )
 }

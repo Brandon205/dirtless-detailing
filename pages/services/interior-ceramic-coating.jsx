@@ -6,7 +6,7 @@ import { BiLinkExternal } from 'react-icons/bi';
 
 export default function IntCoatings() {
     return (
-        <section className="service-content-container bg-contact">
+        <section className="service-content-container bg-contact" style={{paddingBottom: 0}}>
             <Head>
                 <title>Interior Ceramic Coatings | Dirt-Less Detailing</title>
                 <Metatags
