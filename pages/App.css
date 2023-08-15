@@ -162,7 +162,7 @@ img {
 }
 
 .btn-secondary {
-  background-color: #040a15;
+  background-color: var(--contact-bkg);
 }
 
 .main-quote-btn {
@@ -782,7 +782,7 @@ option {
 }
 
 .location-link {
-  line-height: 1.5s;
+  text-align: left;
 }
 
 /** Home Page Services CSS **/
@@ -824,6 +824,10 @@ option {
 
 .no-grow {
   cursor: default;
+}
+
+.icon-20 {
+  width: 20px;
 }
 
 .icon-48 {
@@ -989,10 +993,7 @@ option {
 }
 
 .page-subheading {
-  font-size: 1.5rem;
-  width: 90vw;
-  font-weight: 400;
-  margin: 0 auto 2rem auto;
+  display: none;
 }
 
 .coating-contact-container {
@@ -3103,6 +3104,11 @@ hr {
   }
 
   .page-subheading {
+    display: block;
+    font-size: 1.5rem;
+    width: 90vw;
+    font-weight: 400;
+    margin: 0 auto 2rem auto;
     width: 70vw;
   }
 

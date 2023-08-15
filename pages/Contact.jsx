@@ -275,7 +275,7 @@ export default function Contact() {
                     </div>
                     <div className='contact-icon-container'>
                         <img src='../assets/icons/post.png' alt='post' className='icon-48' />
-                        <a className='contact-link location-link' href="mailto:brenden@dirtlessdetailing.com?subject = Schedule a Detail!" target="_blank" rel="noopener">brenden@dirtlessdetailing.com</a>
+                        <a className='contact-link location-link' href="mailto:brenden@dirtlessdetailing.com?subject = Schedule a Detail!" target="_blank" rel="noopener" style={{overflow: 'auto', overflowWrap: 'anywhere'}}>brenden@dirtlessdetailing.com</a>
                     </div>
                     <div className='contact-icon-container'>
                         <img src='../assets/icons/gift.png' alt='gift' className='icon-48' />

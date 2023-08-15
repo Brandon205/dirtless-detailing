@@ -51,7 +51,7 @@ export default function IntCoatings() {
             <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7a8e321a-6a57-41ea-9736-7bd4849bcf00/cover')`}}></div>
 
             <div className="servicepage-header">
-                <h1>Interior Ceramic Coating</h1>
+                <h1>Interior Ceramic Coatings</h1>
                 <h2 className='page-subheading'>Experience the Best in Interior Protection with Our Interior Ceramic Coating Services.</h2>
                 <div className='header-buttons'>
                     <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Get a Free Quote</a>
@@ -103,7 +103,7 @@ export default function IntCoatings() {
                         <br className='extra-space' />
                     </div>
 
-                    <div style={{padding: '2rem', marginTop: '5vh'}} className="service-bkg-lighter">
+                    <div style={{marginTop: '5vh'}} className="service-bkg-lighter">
                         <div className="general-container new-heading-container">
                             <strong className="above-heading">Further Reading</strong>
                             <h3 className="new-heading">More info on our interior coatings.</h3>

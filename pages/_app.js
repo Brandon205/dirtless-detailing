@@ -96,7 +96,7 @@ export default function MyApp({ Component, pageProps }) {
                             </li>
 
                             <li style={{ position: 'relative' }}>
-                                <div className='menu-li' onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('services')}><a href="#" className='menu-link no-click'>All Services</a></div>
+                                <div className='menu-li' onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('services')}><a href="#" className='menu-link no-click'>All Services <img src='../assets/icons/downArrow.png' alt='down caret' className='icon-20' /></a></div>
                                 <ul className="sub-ul" onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} style={{ opacity: smallScreen ? 1 : services ? 1 : !services ? 0 : 0, pointerEvents: smallScreen ? 'auto' : services ? 'auto' : !services ? 'none' : 'auto' }} >
                                     <li className="nav-li">
                                         <h4 className='sub-menu-header'>CERAMIC COATINGS</h4>
@@ -137,7 +137,7 @@ export default function MyApp({ Component, pageProps }) {
                             </li>
 
                             <li style={{ position: 'relative' }}>
-                                <div className='menu-li' onPointerEnter={() => changeNav('gallery')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('gallery')}><a href="#" className='menu-link no-click'>Galleries</a></div>
+                                <div className='menu-li' onPointerEnter={() => changeNav('gallery')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('gallery')}><a href="#" className='menu-link no-click'>Galleries <img src='../assets/icons/downArrow.png' alt='down caret' className='icon-20' /></a></div>
                                 <ul className="sub-ul" onPointerEnter={() => changeNav('gallery')} onPointerLeave={() => changeNav('none')} style={{ opacity: smallScreen ? 1 : gallery ? 1 : !gallery ? 0 : 0, pointerEvents: smallScreen ? 'auto' : gallery ? 'auto' : !gallery ? 'none' : 'auto' }}>
                                     <li className="nav-li">
                                         <h4 className="sub-menu-header">GALLERIES</h4>
