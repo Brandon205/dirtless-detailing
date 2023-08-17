@@ -126,7 +126,7 @@ export default function DLWash() {
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
 
-              <PricingComponent prices={['74', '74', '99', '99', '124', '149']} addons={[addons.claybar, addons.glass, addons.waterspot]} />
+              <PricingComponent prices={['74', '74', '74', '99', '149', '124']} addons={[addons.claybar, addons.glass, addons.waterspot]} />
             </div>
 
           </div>

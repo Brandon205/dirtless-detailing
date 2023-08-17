@@ -146,7 +146,7 @@ export default function SinglePC() {
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
 
-              <PricingComponent prices={['549', '549', '699', '699', '849', '849']} addons={[addons.glass]} />
+              <PricingComponent prices={['499', '499', '499', '599', '799', '749']} addons={[addons.glass]} />
             </div>
 
             <div className="service-bkg-lighter">

@@ -156,7 +156,7 @@ export default function TwoPC() {
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
 
-              <PricingComponent prices={['699', '699', '849', '849', '999', '999']} addons={[addons.glass]} />
+              <PricingComponent prices={['649', '649', '649', '749', '899', '849']} addons={[addons.glass]} />
             </div>
 
             <div className="service-bkg-lighter">

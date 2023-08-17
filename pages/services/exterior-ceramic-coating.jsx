@@ -184,7 +184,7 @@ export default function ExtCoatings() {
                             </div>
                         </div>
 
-                        <PricingComponent prices={currPackage === 'Protect' ? ['949', '949', '1099', '1099', '1249', '1249'] : ['1399', '1399', '1699', '1699', '1849', '1849']} ceramic={true} />
+                        <PricingComponent prices={currPackage === 'Protect' ? ['899', '899', '899', '999', '1199', '1149'] : ['1349', '1349', '1499', '1599', '1799', '1749']} ceramic={true} />
                     </div>
                         
                     <div className="service-bkg-lighter" style={{paddingBottom: '2.5rem'}}>
