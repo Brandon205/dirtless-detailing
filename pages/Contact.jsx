@@ -33,6 +33,7 @@ export default function Contact() {
     // State for new pricing estimate
     const [currentPrice, setCurrentPrice] = useState('0');
     const [alteringPrice, setAlteringPrice] = useState(false); // If the user chooses an option that has an hourly rate or conditionally varying price
+    const [vehicle, setVehicle] = useState(0);
 
     let formRef = useRef();
 
@@ -55,7 +56,7 @@ export default function Contact() {
 
             "Combo": e.target['combo'].checked ? 'Yes' : 'No',
 
-            "Interior Cleaning": formRef.current['FullInt'].checked ? 'Full Interior Without Extraction' : formRef.current['FullIntEx'].checked ? 'Full Interior With Extraction' : formRef.current['Bio'].checked ? 'Biohazard Cleaning' : '',
+            "Interior Cleaning": formRef.current['FullInt'].checked ? 'Full Interior Cleaning' : '',
             "Interior Coating": e.target['intcoating'].checked ? 'Yes' : 'No',
             "Ozone": e.target['ozone'].checked ? 'Yes' : 'No',
             "Dirtiness": formRef.current['Pretty Clean'].checked ? 'Pretty Clean' : formRef.current['Normal Use'].checked ? 'Normal Use' : formRef.current['Extremely Dirty'].checked ? 'Extremely Dirty' : '',
@@ -205,9 +206,11 @@ export default function Contact() {
     let handleRadioClick = (e, button) => {
         if (button === "interiorCleaning") { // INTERIOR
             if (e.target.id === interiorCleaning) {
-                setInteriorCleaning('')
+                setInteriorCleaning('');
+                setCurrentPrice(currentPrice + prices['full interior'].cost[vehicle])
             } else {
                 setInteriorCleaning(e.target.id)
+                setCurrentPrice(currentPrice - prices['full interior'].cost[vehicle])
             }
             
         } else if (button === "exteriorCoating") { // COATING
@@ -304,186 +307,194 @@ export default function Contact() {
             <div className='contact-container-right'>
                 <h2>Or Email us by filling out our form:</h2>
                 <p style={{ marginTop: 0 }}><span className='special-package'>*</span>The pricing here is approximate and may vary inside of the listed ranges based on vehicle size and condition.</p>
-                <form className="form" ref={formRef} autoComplete="on" onSubmit={(e) => formSubmit(e)}>
+                <form className="form" ref={formRef} autoComplete="on" onSubmit={(e) => formSubmit(e)} onChange={(e) => console.log(e.target.attributes)}>
                     <div className="form-section form-top-section">
                         <div>
                             <strong className="contact-heading">Basic Information</strong>
+                            <p style={{display: gift ? 'block' : 'none'}} className='contact-subheading'>*When buying a gift certificate for someone else fill out YOUR contact information, but THEIR vehicle information (or as much as you know about their vehicle). We'll then get in contact with you to get the gift card to you!</p>
                             <div style={{margin: '0 auto'}}>
                                 <input type="checkbox" name="myself" id='myself' className='checkbox-input' onChange={() => handleGiftSelect(false)} checked={gift ? false : true} />
                                 <label htmlFor="myself" className='checkbox-label'>For Myself</label>
                                 <input type="checkbox" name="someone" id='someone' className='checkbox-input' onChange={() => handleGiftSelect(true)} checked={gift ? true : false} />
                                 <label htmlFor="someone" className='checkbox-label'>For Someone Else</label>
                             </div>
-                            <p style={{textAlign: 'left', marginTop: 0, display: gift ? 'block' : 'none'}}>* When buying a gift certificate for someone else fill out YOUR contact information, but THEIR vehicle information (or as much as you know about their vehicle). We'll then get in contact with you to get the gift card to you!</p>
                             
-                            <div>
-                                <label htmlFor="name" className='text-input-label'>Name<span className='special-package'>*</span></label>
-                                <input type="text" id="name" name="name" className='text-input' placeholder="Name" required />
-                                <label htmlFor="email" className='text-input-label'>Email<span className='special-package'>*</span></label>
-                                <input type="email" id="email" name="email" className='text-input' placeholder="Email" required />
-                                <label htmlFor="phone" className='text-input-label'>Phone Number<span className='special-package'>*</span></label>
-                                <input type="tel" id="phone" name="phone" pattern="\(\d{3}\) \d{3}-\d{4}" value={phoneNumber} onChange={(e) => handlePhoneNumber(e)} className='text-input' placeholder="Ex. (111) 111-1111" required />
+                            <div className='basic-info-container'>
+                                <div style={{position: 'relative'}}>
+                                    <label htmlFor="name" className='text-input-label'>Name<span className='special-package'>*</span></label>
+                                    <input type="text" id="name" name="name" className='text-input' placeholder="Name" required />
+                                </div>
+                                <div style={{position: 'relative'}}>
+                                    <label htmlFor="email" className='text-input-label'>Email<span className='special-package'>*</span></label>
+                                    <input type="email" id="email" name="email" className='text-input' placeholder="Email" required />
+                                </div>
+                                <div style={{position: 'relative'}}>
+                                    <label htmlFor="phone" className='text-input-label'>Phone Number<span className='special-package'>*</span></label>
+                                    <input type="tel" id="phone" name="phone" pattern="\(\d{3}\) \d{3}-\d{4}" value={phoneNumber} onChange={(e) => handlePhoneNumber(e)} className='text-input' placeholder="Ex. (111) 111-1111" required />
+                                </div>
                             </div>
 
-                            <div className='select-field'>
-                                <label htmlFor="year" className='text-input-label'>Year<span className='special-package'>*</span></label>
-                                <select id="year" name="year" className='text-input year-input' placeholder="Year" required>
-                                    <option>Year</option>
-                                    <option>2023</option>
-                                    <option>2022</option>
-                                    <option>2021</option>
-                                    <option>2020</option>
-                                    <option>2019</option>
-                                    <option>2018</option>
-                                    <option>2017</option>
-                                    <option>2016</option>
-                                    <option>2015</option>
-                                    <option>2014</option>
-                                    <option>2013</option>
-                                    <option>2012</option>
-                                    <option>2011</option>
-                                    <option>2010</option>
-                                    <option>2009</option>
-                                    <option>2008</option>
-                                    <option>2007</option>
-                                    <option>2006</option>
-                                    <option>2005</option>
-                                    <option>2004</option>
-                                    <option>2003</option>
-                                    <option>2002</option>
-                                    <option>2001</option>
-                                    <option>2000</option>
-                                    <option>1999</option>
-                                    <option>1998</option>
-                                    <option>1997</option>
-                                    <option>1996</option>
-                                    <option>1995</option>
-                                    <option>1994</option>
-                                    <option>1993</option>
-                                    <option>1992</option>
-                                    <option>1991</option>
-                                    <option>1990</option>
-                                    <option>1989</option>
-                                    <option>1988</option>
-                                    <option>1987</option>
-                                    <option>1986</option>
-                                    <option>1985</option>
-                                    <option>1984</option>
-                                    <option>1983</option>
-                                    <option>1982</option>
-                                    <option>1981</option>
-                                    <option>1980</option>
-                                    <option>1979</option>
-                                    <option>1978</option>
-                                    <option>1977</option>
-                                    <option>1976</option>
-                                    <option>1975</option>
-                                    <option>1974</option>
-                                    <option>1973</option>
-                                    <option>1972</option>
-                                    <option>1971</option>
-                                    <option>1970</option>
-                                    <option>1969</option>
-                                    <option>1968</option>
-                                    <option>1967</option>
-                                    <option>1966</option>
-                                    <option>1965</option>
-                                    <option>1964</option>
-                                    <option>1963</option>
-                                    <option>1962</option>
-                                    <option>1961</option>
-                                    <option>1960</option>
-                                </select>
-                            </div>
-                            <div className='select-field'>
-                                <label htmlFor="make" className='text-input-label'>Make<span className='special-package'>*</span></label>
-                                <select id="make" name="make" className='text-input make-input' placeholder="Make" required>
-                                    <option>Make</option>
-                                    <option>Acura</option>
-                                    <option>Airstream</option>
-                                    <option>Alfa Romeo</option>
-                                    <option>American Coach</option>
-                                    <option>Aston Martin</option>
-                                    <option>Audi</option>
-                                    <option>Autocar</option>
-                                    <option>Bentley</option>
-                                    <option>Blue Bird</option>
-                                    <option>BMW</option>
-                                    <option>Bugatti</option>
-                                    <option>Buick</option>
-                                    <option>Cadillac</option>
-                                    <option>Capacity</option>
-                                    <option>Chevrolet</option>
-                                    <option>Chrysler</option>
-                                    <option>Coach House</option>
-                                    <option>Coachmen</option>
-                                    <option>Crane Carrier</option>
-                                    <option>Dodge</option>
-                                    <option>Dynamax Corp</option>
-                                    <option>E-One</option>
-                                    <option>El Dorado</option>
-                                    <option>Entegra Coach</option>
-                                    <option>Ferrari</option>
-                                    <option>Fiat</option>
-                                    <option>Ford</option>
-                                    <option>Freightliner</option>
-                                    <option>Genesis</option>
-                                    <option>Gillig</option>
-                                    <option>GMC</option>
-                                    <option>Grande West</option>
-                                    <option>Hino</option>
-                                    <option>Honda</option>
-                                    <option>Hyundai</option>
-                                    <option>IC Co</option>
-                                    <option>Infiniti</option>
-                                    <option>International</option>
-                                    <option>Isuzu</option>
-                                    <option>Jaguar</option>
-                                    <option>Jeep</option>
-                                    <option>Kalmar</option>
-                                    <option>Karma</option>
-                                    <option>Kenworth</option>
-                                    <option>Kia</option>
-                                    <option>Lamborghini</option>
-                                    <option>Land Rover</option>
-                                    <option>Lexus</option>
-                                    <option>Lincoln</option>
-                                    <option>Lotus</option>
-                                    <option>Mack</option>
-                                    <option>Maserati</option>
-                                    <option>Mazda</option>
-                                    <option>MCI</option>
-                                    <option>McLaren</option>
-                                    <option>Mercedes Benz</option>
-                                    <option>Mini</option>
-                                    <option>Mitsubishi</option>
-                                    <option>New Flyer</option>
-                                    <option>Nissan/Datsun</option>
-                                    <option>Nova Bus</option>
-                                    <option>Peterbilt</option>
-                                    <option>Polestar</option>
-                                    <option>Porsche</option>
-                                    <option>Prevost</option>
-                                    <option>Rolls Royce</option>
-                                    <option>Rosenbauer Am</option>
-                                    <option>Spartan</option>
-                                    <option>Subaru</option>
-                                    <option>Temsa Bus</option>
-                                    <option>Terex</option>
-                                    <option>Tesla</option>
-                                    <option>Thomas Built</option>
-                                    <option>Tiffin</option>
-                                    <option>Toyota</option>
-                                    <option>Van Hool</option>
-                                    <option>Volkswagen</option>
-                                    <option>Volvo</option>
-                                    <option>Western Star</option>
-                                    <option>Winnebago</option>
-                                </select>
-                            </div>
-                            <div className='select-field'>
-                                <label htmlFor="model" className='text-input-label'>Model<span className='special-package'>*</span></label>
-                                <input type="text" id="model" name="model" className='text-input model-input' placeholder="Model" required />
+                            <div className='basic-info-container'>
+                                <div className='select-field'>
+                                    <label htmlFor="year" className='text-input-label'>Year<span className='special-package'>*</span></label>
+                                    <select id="year" name="year" className='text-input year-input' placeholder="Year" required>
+                                        <option>Year</option>
+                                        <option>2023</option>
+                                        <option>2022</option>
+                                        <option>2021</option>
+                                        <option>2020</option>
+                                        <option>2019</option>
+                                        <option>2018</option>
+                                        <option>2017</option>
+                                        <option>2016</option>
+                                        <option>2015</option>
+                                        <option>2014</option>
+                                        <option>2013</option>
+                                        <option>2012</option>
+                                        <option>2011</option>
+                                        <option>2010</option>
+                                        <option>2009</option>
+                                        <option>2008</option>
+                                        <option>2007</option>
+                                        <option>2006</option>
+                                        <option>2005</option>
+                                        <option>2004</option>
+                                        <option>2003</option>
+                                        <option>2002</option>
+                                        <option>2001</option>
+                                        <option>2000</option>
+                                        <option>1999</option>
+                                        <option>1998</option>
+                                        <option>1997</option>
+                                        <option>1996</option>
+                                        <option>1995</option>
+                                        <option>1994</option>
+                                        <option>1993</option>
+                                        <option>1992</option>
+                                        <option>1991</option>
+                                        <option>1990</option>
+                                        <option>1989</option>
+                                        <option>1988</option>
+                                        <option>1987</option>
+                                        <option>1986</option>
+                                        <option>1985</option>
+                                        <option>1984</option>
+                                        <option>1983</option>
+                                        <option>1982</option>
+                                        <option>1981</option>
+                                        <option>1980</option>
+                                        <option>1979</option>
+                                        <option>1978</option>
+                                        <option>1977</option>
+                                        <option>1976</option>
+                                        <option>1975</option>
+                                        <option>1974</option>
+                                        <option>1973</option>
+                                        <option>1972</option>
+                                        <option>1971</option>
+                                        <option>1970</option>
+                                        <option>1969</option>
+                                        <option>1968</option>
+                                        <option>1967</option>
+                                        <option>1966</option>
+                                        <option>1965</option>
+                                        <option>1964</option>
+                                        <option>1963</option>
+                                        <option>1962</option>
+                                        <option>1961</option>
+                                        <option>1960</option>
+                                    </select>
+                                </div>
+                                <div className='select-field'>
+                                    <label htmlFor="make" className='text-input-label'>Make<span className='special-package'>*</span></label>
+                                    <select id="make" name="make" className='text-input make-input' placeholder="Make" required>
+                                        <option>Make</option>
+                                        <option>Acura</option>
+                                        <option>Airstream</option>
+                                        <option>Alfa Romeo</option>
+                                        <option>American Coach</option>
+                                        <option>Aston Martin</option>
+                                        <option>Audi</option>
+                                        <option>Autocar</option>
+                                        <option>Bentley</option>
+                                        <option>Blue Bird</option>
+                                        <option>BMW</option>
+                                        <option>Bugatti</option>
+                                        <option>Buick</option>
+                                        <option>Cadillac</option>
+                                        <option>Capacity</option>
+                                        <option>Chevrolet</option>
+                                        <option>Chrysler</option>
+                                        <option>Coach House</option>
+                                        <option>Coachmen</option>
+                                        <option>Crane Carrier</option>
+                                        <option>Dodge</option>
+                                        <option>Dynamax Corp</option>
+                                        <option>E-One</option>
+                                        <option>El Dorado</option>
+                                        <option>Entegra Coach</option>
+                                        <option>Ferrari</option>
+                                        <option>Fiat</option>
+                                        <option>Ford</option>
+                                        <option>Freightliner</option>
+                                        <option>Genesis</option>
+                                        <option>Gillig</option>
+                                        <option>GMC</option>
+                                        <option>Grande West</option>
+                                        <option>Hino</option>
+                                        <option>Honda</option>
+                                        <option>Hyundai</option>
+                                        <option>IC Co</option>
+                                        <option>Infiniti</option>
+                                        <option>International</option>
+                                        <option>Isuzu</option>
+                                        <option>Jaguar</option>
+                                        <option>Jeep</option>
+                                        <option>Kalmar</option>
+                                        <option>Karma</option>
+                                        <option>Kenworth</option>
+                                        <option>Kia</option>
+                                        <option>Lamborghini</option>
+                                        <option>Land Rover</option>
+                                        <option>Lexus</option>
+                                        <option>Lincoln</option>
+                                        <option>Lotus</option>
+                                        <option>Mack</option>
+                                        <option>Maserati</option>
+                                        <option>Mazda</option>
+                                        <option>MCI</option>
+                                        <option>McLaren</option>
+                                        <option>Mercedes Benz</option>
+                                        <option>Mini</option>
+                                        <option>Mitsubishi</option>
+                                        <option>New Flyer</option>
+                                        <option>Nissan/Datsun</option>
+                                        <option>Nova Bus</option>
+                                        <option>Peterbilt</option>
+                                        <option>Polestar</option>
+                                        <option>Porsche</option>
+                                        <option>Prevost</option>
+                                        <option>Rolls Royce</option>
+                                        <option>Rosenbauer Am</option>
+                                        <option>Spartan</option>
+                                        <option>Subaru</option>
+                                        <option>Temsa Bus</option>
+                                        <option>Terex</option>
+                                        <option>Tesla</option>
+                                        <option>Thomas Built</option>
+                                        <option>Tiffin</option>
+                                        <option>Toyota</option>
+                                        <option>Van Hool</option>
+                                        <option>Volkswagen</option>
+                                        <option>Volvo</option>
+                                        <option>Western Star</option>
+                                        <option>Winnebago</option>
+                                    </select>
+                                </div>
+                                <div style={{position: 'relative'}} className='select-field'>
+                                    <label htmlFor="model" className='text-input-label'>Model<span className='special-package'>*</span></label>
+                                    <input type="text" id="model" name="model" className='text-input model-input' placeholder="Model" required />
+                                </div>
                             </div>
 
                             {/* <div style={{width: '100%', padding: '1rem 0', textAlign: 'left'}} className='select-field'>
@@ -493,9 +504,22 @@ export default function Contact() {
                                 </label>
                             </div> */}
 
-                            <div style={{ width: 100 + '%' }}>
-                                <label htmlFor="message" className='text-input-label'>Additional Information:</label>
+                            <div style={{ width: 100 + '%', position: 'relative', marginTop: '2rem'}}>
+                                <label htmlFor="message" style={{bottom: '130px'}} className='text-input-label'>Additional Information:</label>
                                 <textarea type="textarea" name="message" id='message' className='textarea' placeholder='Do you want our mobile service or to schedule a drop off? Do you have any other questions/concerns?' />
+                            </div>
+
+                            <strong className="contact-heading">Vehicle Size/Classification</strong>
+                            <p className="contact-subheading">(Needed for the Price Estimation to work)</p>
+                            <div className="basic-info-container">
+                                <select name="vehicle size" id="vehicle size" className='text-input make-input' placeholder='Vehicle Size' onChange={(e) => setVehicle(e.target.value)}>
+                                    <option value="0">2 Door Cars</option>
+                                    <option value="1">Quarter Ton Trucks</option>
+                                    <option value="2">4-Door Cars</option>
+                                    <option value="3">Mid-Size SUV's</option>
+                                    <option value="4">4-Door Trucks</option>
+                                    <option value="5">3-Row SUV's</option>
+                                </select>
                             </div>
 
                         </div>
@@ -506,9 +530,9 @@ export default function Contact() {
                         <p style={{ marginTop: 0 }}>(Both Coating services also include a Wash, Paint Correction, and Engine Bay Wash)</p>
                         <div>
                             <input type="checkbox" name="exteriorCoating" id="Protect" value="Protect" className='radio-button' onChange={(e) => {handleRadioClick(e, 'exteriorCoating'); handleIntSelect()}} checked={exteriorCoating === "Protect"} />
-                            <label htmlFor="Protect" className='checkbox-label'>Protect <span className='special-package italic'>($900-$1,200)</span></label>
+                            <label htmlFor="Protect" className='checkbox-label'>Protect <span className='special-package italic'>(${prices['protect'].cost[vehicle]})</span></label>
                             <input type="checkbox" name="exteriorCoating" id="Protect+" value="Protect+" className='radio-button' onChange={(e) => {handleRadioClick(e, 'exteriorCoating'); handleIntSelect()}} checked={exteriorCoating === "Protect+"} />
-                            <label htmlFor="Protect+" className='checkbox-label'>Protect+ <span className='special-package italic'>($1,350-$1,800)</span></label>
+                            <label htmlFor="Protect+" className='checkbox-label'>Protect+ <span className='special-package italic'>(${prices['protect+'].cost[vehicle]})</span></label>
                         </div>
                     </div>
 
@@ -517,19 +541,17 @@ export default function Contact() {
                         <p style={{ marginTop: 0 }}>(Includes a Full Interior With Extraction, Dirt-Less Wash, and a <span className='special-package'>FREE</span> Engine Bay Cleaning!)</p>
                         <div>
                             <input type="checkbox" name="combo" id='combo' className='checkbox-input' onClick={() => handleIntSelect()} />
-                            <label htmlFor="combo" className='checkbox-label'>The Dirt-Less Detail <span className='special-package italic'>($375-$500)</span></label>
+                            <label htmlFor="combo" className='checkbox-label'>The Dirt-Less Detail <span className='special-package italic'>(${prices['dirt-less detail'].cost[vehicle]})</span></label>
                         </div>
                     </div>
 
                     <div className="form-section">
                         <p className='form-section-heading'>Interior Cleaning Services <a href='/services/full-interior-detail' className='aside-link'><BiLinkExternal /></a></p>
                         <div>
-                            <input type="checkbox" name="interiorCleaning" id="FullInt" value="Full Interior Without Extraction" className='radio-button' onChange={(e) => {handleRadioClick(e, 'interiorCleaning'); handleIntSelect()}} checked={interiorCleaning === "FullInt"} />
-                            <label htmlFor="FullInt" className='checkbox-label'>Full Interior Without Extraction <span className='special-package italic'>($300-$375)</span></label>
-                            <input type="checkbox" name="interiorCleaning" id="FullIntEx" value="Full Interior With Extraction" className='radio-button' onChange={(e) => {handleRadioClick(e, 'interiorCleaning'); handleIntSelect()}} checked={interiorCleaning === "FullIntEx"} />
-                            <label htmlFor="FullIntEx" className='checkbox-label'>Full Interior With Extraction <span className='special-package italic'>($335-$475)</span></label>     
+                            <input type="checkbox" name="interiorCleaning" id="FullInt" value="Full Interior Cleaning" className='radio-button' onChange={(e) => {handleRadioClick(e, 'interiorCleaning'); handleIntSelect()}} checked={interiorCleaning === "FullInt"} />
+                            <label htmlFor="FullInt" className='checkbox-label'>Full Interior Cleaning <span className='special-package italic'>(${prices['full interior'].cost[vehicle]})</span></label>    
                             <input type="checkbox" name="interiorCleaning" id="Bio" value="Biohazard Cleaning" className='radio-button' onChange={(e) => {handleRadioClick(e, 'interiorCleaning'); handleIntSelect()}} checked={interiorCleaning === "Bio"} />
-                            <label htmlFor="Bio" className='checkbox-label'>Biohazard Cleaning <span className='special-package italic'>($500-$1,000)</span></label>
+                            <label htmlFor="Bio" className='checkbox-label'>Biohazard Cleaning <span className='special-package italic'>($500-$1000)</span></label>
 
                         </div>
                         <hr className="contact-border" />
@@ -591,16 +613,16 @@ export default function Contact() {
                         <p className='form-section-heading'>Exterior Cleaning Services <a href='/services/dirtless-wash' className='aside-link'><BiLinkExternal /></a></p>
                         <div>
                             <input type="checkbox" name="exteriorWash" id="Dirt-Less Wash" value="Dirt-Less Wash" className='radio-button' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => handleRadioClick(e, 'exteriorWash')} checked={exteriorWash === 'Dirt-Less Wash'} />
-                            <label htmlFor="Dirt-Less Wash" className='checkbox-label'>Dirt-Less Wash <span className='special-package italic'>($75-$150)</span></label>
+                            <label htmlFor="Dirt-Less Wash" className='checkbox-label'>Dirt-Less Wash <span className='special-package italic'>(${prices['dirt-less wash'].cost[vehicle]})</span></label>
                         </div>
                         <hr className="contact-border" />
 
                         <p className="form-section-heading">Exterior Add-ons <a href='/services/add-ons#exterior' className='aside-link'><BiLinkExternal /></a></p>
                         <div>
                             <input type="checkbox" id='claybar' name="claybar" className='checkbox-input' disabled={!coatingSelected ? "" : "disabled"} />
-                            <label htmlFor="claybar" className='checkbox-label' style={{ marginBottom: 16 }}>Clay Bar Treatment <span className='special-package italic'>($50-$75)</span></label>
+                            <label htmlFor="claybar" className='checkbox-label' style={{ marginBottom: 16 }}>Clay Bar Treatment <span className='special-package italic'>(${prices['clay bar'].cost[vehicle]})</span></label>
                             <input type="checkbox" id='engine' name="engine" className='checkbox-input' disabled={!coatingSelected ? "" : "disabled"} />
-                            <label htmlFor="engine" className='checkbox-label' style={{ marginBottom: 16 }}>Engine Bay <span className='special-package italic'>($80)</span></label>
+                            <label htmlFor="engine" className='checkbox-label' style={{ marginBottom: 16 }}>Engine Bay <span className='special-package italic'>(${prices['engine'].cost[vehicle]})</span></label>
 
                             <input type="checkbox" id='glassEx' name="glass" className='checkbox-input' />
                             <label htmlFor="glassEx" className='checkbox-label'>Glass Polishing <span className='special-package italic'>($80/hour)</span></label>
@@ -618,9 +640,9 @@ export default function Contact() {
                         <p style={{ marginTop: 0 }}>(The exterior add-ons above go great with our Paint Correction Services too!)</p>
                         <div>
                             <input type="checkbox" name="paintCorrection" id="Single Stage" value="Single Stage" className='radio-button' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => handleRadioClick(e, 'paintCorrection')} checked={paintCorrection === 'Single Stage'} />
-                            <label htmlFor="Single Stage" className='checkbox-label'>Single Stage Paint Correction <span className='special-package italic'>($500-$750)</span></label>
+                            <label htmlFor="Single Stage" className='checkbox-label'>Single Stage Paint Correction <span className='special-package italic'>(${prices['single stage'].cost[vehicle]})</span></label>
                             <input type="checkbox" name="paintCorrection" id="Two Stage" value="Two Stage" className='radio-button' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => handleRadioClick(e, 'paintCorrection')} checked={paintCorrection === 'Two Stage'} />
-                            <label htmlFor="Two Stage" className='checkbox-label'>Two Stage Paint Correction <span className='special-package italic'>($650-$850)</span></label>
+                            <label htmlFor="Two Stage" className='checkbox-label'>Two Stage Paint Correction <span className='special-package italic'>(${prices['two stage'].cost[vehicle]})</span></label>
                         </div>
                         <input type="hidden" name="_gotcha" style={{ display: 'none !important' }} />
                     </div>
@@ -630,10 +652,10 @@ export default function Contact() {
                         <p style={{ marginTop: 0 }}>(For Ceramic Coating Maintenance)</p>
                         <div>
                             <input type="checkbox" name="monthly" id='monthly' className='checkbox-input' />
-                            <label htmlFor="monthly" className='checkbox-label'>Monthly VIP <span className='special-package italic'>($130-$190)</span></label>
+                            <label htmlFor="monthly" className='checkbox-label'>Monthly VIP <span className='special-package italic'>(${prices['monthly'].cost[vehicle]})</span></label>
 
                             <input type="checkbox" name="yearly" id='yearly' className='checkbox-input' />
-                            <label htmlFor="yearly" className='checkbox-label'>Yearly VIP <span className='special-package italic'>($200-$300)</span></label>
+                            <label htmlFor="yearly" className='checkbox-label'>Yearly VIP <span className='special-package italic'>(${prices['yearly'].cost[vehicle]})</span></label>
                         </div>
                     </div>
 
@@ -652,7 +674,7 @@ export default function Contact() {
                     />
                 </form>
 
-                <form style={{marginTop: 10 + 'vh'}} action="https://dirtlessdetailing.us9.list-manage.com/subscribe/post?u=752a73821b38b96d23f195a09&amp;id=d2a4976ed6&amp;f_id=00e011e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" noValidate>
+                {/* <form style={{marginTop: 10 + 'vh'}} action="https://dirtlessdetailing.us9.list-manage.com/subscribe/post?u=752a73821b38b96d23f195a09&amp;id=d2a4976ed6&amp;f_id=00e011e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" noValidate>
                     <div className="form-section form-top-section">
                         <h2 style={{marginBottom: 0}}>Subscribe to us!</h2><br />
                         <p style={{marginTop: 0}}>Get news about Dirt-Less Detailing, along with special offers, deals and tips!</p>
@@ -674,7 +696,7 @@ export default function Contact() {
                         </div>
                         <input type="submit" name="subscribe" id="mc-embedded-subscribe" className="submit-button" />
                     </div>
-                </form>
+                </form> */}
             </div>
         </section>
     )

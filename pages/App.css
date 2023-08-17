@@ -588,6 +588,18 @@ option {
   margin-bottom: 0.5rem;
 }
 
+.contact-heading {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 2em;
+}
+
+.contact-subheading {
+  width: 100%;
+  margin: 0 auto 1rem auto;
+  text-align: center;
+}
+
 .text-input {
   background-color: #2A2631;
   border: 1px solid black;
@@ -595,7 +607,8 @@ option {
   border-radius: 5px;
   padding: 0.5rem 0.75rem;
   text-align: left;
-  width: 100%;
+  margin-top: 1rem;
+  /* width: 100%; */
 }
 
 .textarea {
@@ -609,12 +622,22 @@ option {
 }
 
 .text-input-label {
+  position: absolute;
+  bottom: 34px;
   margin-top: 1rem;
+}
+
+.basic-info-container {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .select-field {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .year-input {
