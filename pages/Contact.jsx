@@ -2,13 +2,14 @@ import React, { useRef, useState } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import Head from 'next/head';
 import Metatags from '../utils/Metatags';
+import prices from '../utils/Prices';
 import 'react-toastify/dist/ReactToastify.css';
 
-import { FaFacebookMessenger, FaClock } from 'react-icons/fa';
-import { MdOutlinePermPhoneMsg } from 'react-icons/md';
-import { AiFillGift } from "react-icons/ai";
-import { GoLocation } from "react-icons/go";
-import { MdOutlineEmail } from 'react-icons/md';
+import dynamic from "next/dynamic";
+const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
+  ssr: false,
+});
+
 import { BiLinkExternal } from 'react-icons/bi';
 
 export default function Contact() {
@@ -17,7 +18,7 @@ export default function Contact() {
     const [gift, setGift] = useState(false);
     const [phoneNumber, setPhoneNumber] = useState('');
 
-    //State for the "Radio" buttons
+    // State for the "Radio" buttons
     const [paintCorrection, setPaintCorrection] = useState('');
     const [exteriorWash, setExteriorWash] = useState('');
     const [interiorCleaning, setInteriorCleaning] = useState('');
@@ -28,6 +29,10 @@ export default function Contact() {
 
     const [nameVal, setNameVal] = useState('');
     const [emailVal, setEmailVal] = useState('');
+    
+    // State for new pricing estimate
+    const [currentPrice, setCurrentPrice] = useState('0');
+    const [alteringPrice, setAlteringPrice] = useState(false); // If the user chooses an option that has an hourly rate or conditionally varying price
 
     let formRef = useRef();
 
@@ -66,7 +71,9 @@ export default function Contact() {
             "Paint Correction": formRef.current['Single Stage'].checked ? 'Single Stage' : formRef.current['Two Stage'].checked ? 'Two Stage' : '',
 
             "Monthly Maintenance": e.target['monthly'].checked ? 'Yes' : 'No',
-            "Yearly Maintenance": e.target['yearly'].checked ? 'Yes' : 'No'
+            "Yearly Maintenance": e.target['yearly'].checked ? 'Yes' : 'No',
+
+            "Price Estimate": currentPrice
         }
 
         const formData = new FormData();
@@ -101,42 +108,43 @@ export default function Contact() {
     };
 
     const finalSubmit = (formData, e) => {
-        fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
-            method: "POST",
-            body: formData
-        }).then((test) => {
-            toast.success("Form submitted! Expect a text response from us soon!", {
-                position: "bottom-center",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined
-            })
-            e.target.reset();
-            setPhoneNumber('');
-            setPaintCorrection('');
-            setExteriorWash('');
-            setInteriorCleaning('');
-            setExteriorCoating('');
-            setDirtiness('');
-            setDogHair('');
-            setIntSelected(false);
-            setCoatingSelected(false);
-            window.scrollTo(0, 0);
+        console.log(formData)
+        // fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
+        //     method: "POST",
+        //     body: formData
+        // }).then((test) => {
+        //     toast.success("Form submitted! Expect a text response from us soon!", {
+        //         position: "bottom-center",
+        //         autoClose: 5000,
+        //         hideProgressBar: false,
+        //         closeOnClick: true,
+        //         pauseOnHover: true,
+        //         draggable: true,
+        //         progress: undefined
+        //     })
+        //     e.target.reset();
+        //     setPhoneNumber('');
+        //     setPaintCorrection('');
+        //     setExteriorWash('');
+        //     setInteriorCleaning('');
+        //     setExteriorCoating('');
+        //     setDirtiness('');
+        //     setDogHair('');
+        //     setIntSelected(false);
+        //     setCoatingSelected(false);
+        //     window.scrollTo(0, 0);
 
-        }).catch(error => {
-            toast.error("An error occurred, please try again." + error, {
-                position: "bottom-center",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined
-            })
-        });
+        // }).catch(error => {
+        //     toast.error("An error occurred, please try again." + error, {
+        //         position: "bottom-center",
+        //         autoClose: 5000,
+        //         hideProgressBar: false,
+        //         closeOnClick: true,
+        //         pauseOnHover: true,
+        //         draggable: true,
+        //         progress: undefined
+        //     })
+        // });
     }
 
     let handleGiftSelect = (giftButton) => {
@@ -299,6 +307,7 @@ export default function Contact() {
                 <form className="form" ref={formRef} autoComplete="on" onSubmit={(e) => formSubmit(e)}>
                     <div className="form-section form-top-section">
                         <div>
+                            <strong className="contact-heading">Basic Information</strong>
                             <div style={{margin: '0 auto'}}>
                                 <input type="checkbox" name="myself" id='myself' className='checkbox-input' onChange={() => handleGiftSelect(false)} checked={gift ? false : true} />
                                 <label htmlFor="myself" className='checkbox-label'>For Myself</label>
@@ -477,12 +486,12 @@ export default function Contact() {
                                 <input type="text" id="model" name="model" className='text-input model-input' placeholder="Model" required />
                             </div>
 
-                            <div style={{width: '100%', padding: '1rem 0', textAlign: 'left'}} className='select-field'>
+                            {/* <div style={{width: '100%', padding: '1rem 0', textAlign: 'left'}} className='select-field'>
                                 <h3 style={{}}>Sign Up For Our Newletter</h3>
                                 <label htmlFor="newsletter" className='newsletter-label' >
                                     <input type="checkbox" name="newsletter" id='newsletter' checked={newsletter} onChange={() => setNewsletter(!newsletter)} className='newsletter-checkbox' />Receive our short emails on our offers and updates, you'll only get 1-3 emails per month and you will be the first to know about our newest offers! Unsubscribe at any time!
                                 </label>
-                            </div>
+                            </div> */}
 
                             <div style={{ width: 100 + '%' }}>
                                 <label htmlFor="message" className='text-input-label'>Additional Information:</label>

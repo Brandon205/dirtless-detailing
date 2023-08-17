@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { GiPoliceBadge, GiSteam, GiCarDoor, GiFallingRocks, GiSmokeBomb, GiCarSeat, GiRolledCloth } from 'react-icons/gi';
+import { GiPoliceBadge, GiSteam, GiCarDoor, GiFallingRocks, GiSmokeBomb, GiRolledCloth } from 'react-icons/gi';
 import { AiFillClockCircle, AiFillCalendar } from 'react-icons/ai';
 import { FaDog } from 'react-icons/fa';
 import { ImPointDown } from 'react-icons/im';

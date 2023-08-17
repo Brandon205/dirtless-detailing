@@ -3,7 +3,7 @@ const addons = {
         name: 'Steam Extraction',
         icon: 'extraction',
         desc: "A quick steam extraction is the best way to remove stains, spills, and embedded dirt that normal vacuuming can't get easily.",
-        cost: [35, 35, 50, 50, 50, 75]
+        cost: ['35', '35', '50', '50', '50', '75']
     },
     'hair': {
         name: 'Pet Hair',
@@ -21,19 +21,19 @@ const addons = {
         name: 'Interior Ceramic Coating',
         icon: 'intcoating',
         desc: "Ceramic coating can also be a great option for anyone who wants to protect the materials in their vehicle from stains, UV damage, and to make it easier to clean.",
-        cost: [150, 150, 150, 150, 150, 150]
+        cost: ['150', '150', '150', '150', '150', '150']
     },
     'ozone': {
         name: 'Ozone Treatment',
         icon: 'ozone',
         desc: "Ozone treatment is the use of O3 (gas ozone) to remove bacteria, viruses, and odors from your vehicle.",
-        cost: [100, 100, 100, 100, 100, 100]
+        cost: ['100', '100', '100', '100', '100', '100']
     },
     'claybar': {
         name: 'Clay Bar',
         icon: 'claybar',
         desc: "Get any small contaminants off of the car to give the paint an even smoother and cleaner shine.",
-        cost: [35, 35, 50, 50, 75, 75]
+        cost: ['35', '35', '50', '50', '75', '75']
     },
     'glass': {
         name: 'Glass Polishing',
@@ -51,7 +51,7 @@ const addons = {
         name: 'Engine Bay Cleaning',
         icon: 'engine',
         desc: "We will cover sensitive/electronic areas in the bay, clean and wash, then dress the engine bay to have it looking like new!",
-        cost: [80, 80, 80, 80, 80, 80]
+        cost: ['80', '80', '80', '80', '80', '80']
     },
     'debadge': {
         name: 'Debadging',
