@@ -6,8 +6,8 @@ import { FaArrowRight } from 'react-icons/fa';
 export default function PopularServices(props) {
     return (
         <div className='service-bkg'>
-            <h2 style={{marginLeft: props.smallScreen ? '0' : '5%'}} className='service-title'>Our Most Popular Services</h2>
-            <p style={{marginLeft: props.smallScreen ? '0' : '5%'}}>From combo deals to ceramic coatings these are services you'll see us doing the most.</p>
+            <h2 style={{ marginLeft: props.smallScreen ? '0' : '5%' }} className='service-title'>Our Most Popular Services</h2>
+            <p style={{ marginLeft: props.smallScreen ? '0' : '5%' }}>From combo deals to ceramic coatings these are services you'll see us doing the most.</p>
             <section className="popular-container">
 
 
@@ -149,7 +149,7 @@ export default function PopularServices(props) {
                     <div className='popular-link-container'>
                         <div>
                             <p style={{ marginBottom: 0, color: '#c0c0c0', textAlign: 'left' }}>Starting At:</p>
-                            <p className='popular-pricing-price'>$949.99</p>
+                            <p className='popular-pricing-price'>$899.99</p>
                         </div>
                         <a href="/services/exterior-ceramic-coating" className='popular-readmore' aria-label='Ceramic Coating Info'>Learn More</a>
                     </div>

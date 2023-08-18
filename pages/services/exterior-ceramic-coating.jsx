@@ -115,7 +115,7 @@ export default function ExtCoatings() {
                         <div className='package-details-bkg'>
                             <div className='package-container-header'>
                                 <h2 className='coating-heading text-shadow'><span className='special-package'>Protect</span> Package</h2>
-                                <p>Starting at: <span className='pricing__pricecard-price'>$949.99</span></p>
+                                <p>Starting at: <span className='pricing__pricecard-price'>$899.99</span></p>
                             </div>
                             <div className='package-container'>
                                 <div className='package-details'>
@@ -136,7 +136,7 @@ export default function ExtCoatings() {
                         <div className='package-details-bkg'>
                             <div className='package-container-header'>
                                 <h2 className='coating-heading text-shadow'><span className='special-package'>Protect+</span> Package</h2>
-                                <p>Starting at: <span className='pricing__pricecard-price'>$1,399.99</span></p>
+                                <p>Starting at: <span className='pricing__pricecard-price'>$1,349.99</span></p>
                             </div>
                             <div className='package-container'>
                                 <div className='package-details'>

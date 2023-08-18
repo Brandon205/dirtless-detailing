@@ -25,14 +25,14 @@ export default function Contact() {
     const [exteriorCoating, setExteriorCoating] = useState('');
     const [dirtiness, setDirtiness] = useState('');
     const [dogHair, setDogHair] = useState('');
-    const [newsletter, setNewsletter] = useState(true);
-
+    
+    //State for the newletter form
     const [nameVal, setNameVal] = useState('');
     const [emailVal, setEmailVal] = useState('');
+    const [newsletter, setNewsletter] = useState(true);
     
     // State for new pricing estimate
     const [currentPrice, setCurrentPrice] = useState('0');
-    const [alteringPrice, setAlteringPrice] = useState(false); // If the user chooses an option that has an hourly rate or conditionally varying price
     const [vehicle, setVehicle] = useState(0);
     const [animate, setAnimate] = useState(false);
     
@@ -343,11 +343,11 @@ export default function Contact() {
 
             <div className='contact-container-right'>
                 <h2>Or Email us by filling out our form:</h2>
-                <p style={{ marginTop: 0 }}><span className='special-package'>*</span>The pricing here is approximate and may vary inside of the listed ranges based on vehicle size and condition.</p>
+                <p className='contact-subheading'><span className='special-package'>*</span>The pricing here is approximate and may vary inside of the listed ranges based on vehicle size and condition.</p>
                 <form className="form" ref={formRef} autoComplete="on" onSubmit={(e) => formSubmit(e)}>
                     <div className="form-section form-top-section">
-                        <div>
-                            <strong className="contact-heading">Basic Information</strong>
+                        <div style={{marginBottom: 0}}>
+                            <strong style={{marginBottom: '2rem'}} className="contact-heading">Basic Information</strong>
                             <p style={{display: gift ? 'block' : 'none'}} className='contact-subheading'>*When buying a gift certificate for someone else fill out YOUR contact information, but THEIR vehicle information (or as much as you know about their vehicle). We'll then get in contact with you to get the gift card to you!</p>
                             <div style={{margin: '0 auto'}}>
                                 <input type="checkbox" name="myself" id='myself' className='checkbox-input' onChange={() => handleGiftSelect(false)} checked={gift ? false : true} />
@@ -356,7 +356,7 @@ export default function Contact() {
                                 <label htmlFor="someone" className='checkbox-label'>For Someone Else</label>
                             </div>
                             
-                            <div className='basic-info-container'>
+                            <div style={{marginBottom: 0}} className='basic-info-container'>
                                 <div style={{position: 'relative'}}>
                                     <label htmlFor="name" className='text-input-label'>Name<span className='special-package'>*</span></label>
                                     <input type="text" id="name" name="name" className='text-input' placeholder="Name" required />
@@ -371,7 +371,7 @@ export default function Contact() {
                                 </div>
                             </div>
 
-                            <div className='basic-info-container'>
+                            <div style={{marginBottom: 0}} className='basic-info-container'>
                                 <div className='select-field'>
                                     <label htmlFor="year" className='text-input-label'>Year<span className='special-package'>*</span></label>
                                     <select id="year" name="year" className='text-input year-input' placeholder="Year" required>
@@ -546,10 +546,10 @@ export default function Contact() {
                                 <textarea type="textarea" name="message" id='message' className='textarea' placeholder='Do you want our mobile service or to schedule a drop off? Do you have any other questions/concerns?' />
                             </div>
 
-                            <strong className="contact-heading">Vehicle Size/Classification</strong>
-                            <p className="contact-subheading">(Needed for the Price Estimation to work)</p>
-                            <div className="basic-info-container">
-                                <select name="vehicle size" id="vehicle size" className='text-input make-input' placeholder='Vehicle Size' onChange={(e) => setVehicle(e.target.value)}>
+                            <strong style={{marginTop: '2rem'}} className="contact-heading">Vehicle Size/Classification</strong>
+                            <p style={{marginBottom: 0}} className="contact-subheading">(Needed for the Price Estimation to work)</p>
+                            <div style={{marginTop: 0}} className='basic-info-container'>
+                                <select name="vehicle size" id="vehicle size" style={{fontSize: '1.2em'}} className='text-input make-input' placeholder='Vehicle Size' onChange={(e) => setVehicle(e.target.value)}>
                                     <option value="0">2 Door Cars</option>
                                     <option value="1">Quarter Ton Trucks</option>
                                     <option value="2">4-Door Cars</option>
@@ -563,19 +563,30 @@ export default function Contact() {
                     </div>
 
                     <div className="form-section">
-                        <p className='form-section-heading'>Ceramic Coating Services <a href='/services/exterior-ceramic-coating' className='aside-link'><BiLinkExternal /></a></p>
-                        <p style={{ marginTop: 0 }}>(Both Coating services also include a Wash, Paint Correction, and Engine Bay Wash)</p>
+                        <p className='contact-heading'>Ceramic Coating Services <a href='/services/exterior-ceramic-coating' className='aside-link'><BiLinkExternal /></a></p>
+                        <p className='contact-subheading'>(Both Coating services also include a Wash, Paint Correction, and Engine Bay Wash)</p>
                         <div>
                             <input type="checkbox" name="exteriorCoating" id="Protect" value="Protect" className='radio-button' onChange={(e) => {handleRadioClick(e, 'exteriorCoating'); handleIntSelect()}} checked={exteriorCoating === "Protect"} />
                             <label htmlFor="Protect" className='checkbox-label'>Protect <span className='special-package italic'>(${prices['protect'].cost[vehicle]})</span></label>
                             <input type="checkbox" name="exteriorCoating" id="Protect+" value="Protect+" className='radio-button' onChange={(e) => {handleRadioClick(e, 'exteriorCoating1'); handleIntSelect()}} checked={exteriorCoating === "Protect+"} />
                             <label htmlFor="Protect+" className='checkbox-label'>Protect+ <span className='special-package italic'>(${prices['protect+'].cost[vehicle]})</span></label>
                         </div>
+                        <hr className="contact-border" />
+
+                        <p style={{paddingTop: '2rem'}} className="contact-heading">VIP Options <a href='/services/exterior-ceramic-coating' className='aside-link'><BiLinkExternal /></a></p>
+                        <p className='contact-subheading'>(For Ceramic Coating Maintenance)</p>
+                        <div>
+                            <input type="checkbox" name="monthly" id='monthly' className='checkbox-input' onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['monthly'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['monthly'].cost[vehicle])} />
+                            <label htmlFor="monthly" className='checkbox-label'>Monthly VIP <span className='special-package italic'>(${prices['monthly'].cost[vehicle]})</span></label>
+
+                            <input type="checkbox" name="yearly" id='yearly' className='checkbox-input' onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['yearly'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['yearly'].cost[vehicle])} />
+                            <label htmlFor="yearly" className='checkbox-label'>Yearly VIP <span className='special-package italic'>(${prices['yearly'].cost[vehicle]})</span></label>
+                        </div>
                     </div>
 
                     <div className="form-section">
-                        <p className='form-section-heading'>Combo Deal <a href='/services/interior-exterior-detailing-combo' className='aside-link'><BiLinkExternal /></a></p>
-                        <p style={{ marginTop: 0 }}>(Includes a Full Interior With Extraction, Dirt-Less Wash, and a <span className='special-package'>FREE</span> Engine Bay Cleaning!)</p>
+                        <p className='contact-heading'>Combo Deal <a href='/services/interior-exterior-detailing-combo' className='aside-link'><BiLinkExternal /></a></p>
+                        <p className='contact-subheading'>(Includes a Full Interior With Extraction, Dirt-Less Wash, and a <span className='special-package'>FREE</span> Engine Bay Cleaning!)</p>
                         <div>
                             <input type="checkbox" name="combo" id='combo' className='checkbox-input' onClick={(e) => {handleIntSelect(); e.target.checked ? setCurrentPrice(currentPrice + prices['dirt-less detail'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['dirt-less detail'].cost[vehicle])}} />
                             <label htmlFor="combo" className='checkbox-label'>The Dirt-Less Detail <span className='special-package italic'>(${prices['dirt-less detail'].cost[vehicle]})</span></label>
@@ -583,7 +594,7 @@ export default function Contact() {
                     </div>
 
                     <div className="form-section">
-                        <p className='form-section-heading'>Interior Cleaning Services <a href='/services/full-interior-detail' className='aside-link'><BiLinkExternal /></a></p>
+                        <p style={{marginBottom: '2rem'}} className='contact-heading'>Interior Cleaning Services <a href='/services/full-interior-detail' className='aside-link'><BiLinkExternal /></a></p>
                         <div>
                             <input type="checkbox" name="interiorCleaning" id="FullInt" value="Full Interior Cleaning" className='radio-button' onChange={(e) => {handleRadioClick(e, 'interiorCleaning'); handleIntSelect()}} checked={interiorCleaning === "FullInt"} />
                             <label htmlFor="FullInt" className='checkbox-label'>Full Interior Cleaning <span className='special-package italic'>(${prices['full interior'].cost[vehicle]})</span></label>    
@@ -593,7 +604,7 @@ export default function Contact() {
                         </div>
                         <hr className="contact-border" />
 
-                        <p className="form-section-heading">Interior Add-ons <a href='/services/add-ons#interior' className='aside-link'><BiLinkExternal /></a></p>
+                        <p className="contact-heading">Interior Add-ons <a href='/services/add-ons#interior' className='aside-link'><BiLinkExternal /></a></p>
                         <p style={{ marginTop: 0}}>(Coatings need a Full Interior Cleaning service selected)</p>
                         <div>
                             <input type="checkbox" name="intcoating" id='intcoating' className={'checkbox-input'} disabled={!intSelected ? "disabled" : ""} onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['interior ceramic'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['interior ceramic'].cost[vehicle])} />
@@ -604,8 +615,8 @@ export default function Contact() {
                         </div>
                         <hr className="contact-border" />
 
-                        <p className="form-section-heading">Vehicle Interior Dirtiness{intSelected ? <span className='special-package'>*</span> : ''}</p>
-                        <p style={{ marginTop: 0 }}>(Only required when an Interior Cleaning is selected)</p>
+                        <p className="contact-heading">Vehicle Interior Dirtiness{intSelected ? <span className='special-package'>*</span> : ''}</p>
+                        <p className='contact-subheading'>(Only required when an Interior Cleaning is selected)</p>
                         <div style={{display: 'flex', justifyContent: 'center', gap: '1rem'}}>
                             <div className="label-container">
                                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d69dedc8-dfb3-47bd-80f3-8e76256dfb00/public')`}} className="label-image"></div>
@@ -624,8 +635,8 @@ export default function Contact() {
                             </div>
                         </div>
 
-                        <p className="form-section-heading">Interior Dog Hair Amount{intSelected ? <span className='special-package'>*</span> : ''}</p>
-                        <p style={{ marginTop: 0 }}>(Only required when an Interior Cleaning is selected)</p>
+                        <p className="contact-heading">Interior Dog Hair Amount{intSelected ? <span className='special-package'>*</span> : ''}</p>
+                        <p className='contact-subheading'>(Only required when an Interior Cleaning is selected)</p>
                         <div style={{display: 'flex', justifyContent: 'center', gap: '1rem'}}>
                             <div className="label-container">
                                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/264a9c3b-d6cd-4575-132a-80d4450cdc00/public')`}} className="label-image"></div>
@@ -647,19 +658,24 @@ export default function Contact() {
                     </div>
 
                     <div className="form-section">
-                        <p className='form-section-heading'>Exterior Cleaning Services <a href='/services/dirtless-wash' className='aside-link'><BiLinkExternal /></a></p>
+                        <p className='contact-heading'>Exterior Services <a href='/services/dirtless-wash' className='aside-link'><BiLinkExternal /></a></p>
+                        <p className='contact-subheading'>Our services that are focused on the outside of the vehicle, whether it's just a wash or a full paint correction</p>
                         <div>
                             <input type="checkbox" name="exteriorWash" id="Dirt-Less Wash" value="Dirt-Less Wash" className='radio-button' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => handleRadioClick(e, 'exteriorWash')} checked={exteriorWash === 'Dirt-Less Wash'} />
                             <label htmlFor="Dirt-Less Wash" className='checkbox-label'>Dirt-Less Wash <span className='special-package italic'>(${prices['dirt-less wash'].cost[vehicle]})</span></label>
+                            <input type="checkbox" name="paintCorrection" id="Single Stage" value="Single Stage" className='radio-button' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => handleRadioClick(e, 'paintCorrection')} checked={paintCorrection === 'Single Stage'} />
+                            <label htmlFor="Single Stage" className='checkbox-label'>Single Stage Paint Correction <span className='special-package italic'>(${prices['single stage'].cost[vehicle]})</span></label>
+                            <input type="checkbox" name="paintCorrection" id="Two Stage" value="Two Stage" className='radio-button' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => handleRadioClick(e, 'paintCorrection1')} checked={paintCorrection === 'Two Stage'} />
+                            <label htmlFor="Two Stage" className='checkbox-label'>Two Stage Paint Correction <span className='special-package italic'>(${prices['two stage'].cost[vehicle]})</span></label>
                         </div>
                         <hr className="contact-border" />
 
-                        <p className="form-section-heading">Exterior Add-ons <a href='/services/add-ons#exterior' className='aside-link'><BiLinkExternal /></a></p>
+                        <p className="contact-heading">Exterior Add-ons <a href='/services/add-ons#exterior' className='aside-link'><BiLinkExternal /></a></p>
                         <div>
                             <input type="checkbox" id='claybar' name="claybar" className='checkbox-input' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['clay bar'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['clay bar'].cost[vehicle])} />
-                            <label htmlFor="claybar" className='checkbox-label' style={{ marginBottom: 16 }}>Clay Bar Treatment <span className='special-package italic'>(${prices['clay bar'].cost[vehicle]})</span></label>
+                            <label htmlFor="claybar" className='checkbox-label'>Clay Bar Treatment <span className='special-package italic'>(${prices['clay bar'].cost[vehicle]})</span></label>
                             <input type="checkbox" id='engine' name="engine" className='checkbox-input' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['engine'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['engine'].cost[vehicle])} />
-                            <label htmlFor="engine" className='checkbox-label' style={{ marginBottom: 16 }}>Engine Bay <span className='special-package italic'>(${prices['engine'].cost[vehicle]})</span></label>
+                            <label htmlFor="engine" className='checkbox-label'>Engine Bay <span className='special-package italic'>(${prices['engine'].cost[vehicle]})</span></label>
 
                             <input type="checkbox" id='glassEx' name="glass" className='checkbox-input' onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['glass'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['glass'].cost[vehicle])} />
                             <label htmlFor="glassEx" className='checkbox-label'>Glass Polishing <span className='special-package italic'>($80/hour)</span></label>
@@ -669,30 +685,8 @@ export default function Contact() {
 
                             <input type="checkbox" id='debadge' name="debadge" className='checkbox-input' onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['debadging'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['debadging'].cost[vehicle])} />
                             <label htmlFor="debadge" className='checkbox-label'>Debadging <span className='special-package italic'>($80/hour)</span></label>
-                        </div>
-                    </div>
 
-                    <div className="form-section">
-                        <p className='form-section-heading'>Paint Correction Services <a href='/services/single-stage-correction' className='aside-link'><BiLinkExternal /></a></p>
-                        <p style={{ marginTop: 0 }}>(The exterior add-ons above go great with our Paint Correction Services too!)</p>
-                        <div>
-                            <input type="checkbox" name="paintCorrection" id="Single Stage" value="Single Stage" className='radio-button' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => handleRadioClick(e, 'paintCorrection')} checked={paintCorrection === 'Single Stage'} />
-                            <label htmlFor="Single Stage" className='checkbox-label'>Single Stage Paint Correction <span className='special-package italic'>(${prices['single stage'].cost[vehicle]})</span></label>
-                            <input type="checkbox" name="paintCorrection" id="Two Stage" value="Two Stage" className='radio-button' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => handleRadioClick(e, 'paintCorrection1')} checked={paintCorrection === 'Two Stage'} />
-                            <label htmlFor="Two Stage" className='checkbox-label'>Two Stage Paint Correction <span className='special-package italic'>(${prices['two stage'].cost[vehicle]})</span></label>
-                        </div>
-                        <input type="hidden" name="_gotcha" style={{ display: 'none !important' }} />
-                    </div>
-
-                    <div className="form-section">
-                        <p className="form-section-heading">VIP Options <a href='/services/exterior-ceramic-coating' className='aside-link'><BiLinkExternal /></a></p>
-                        <p style={{ marginTop: 0 }}>(For Ceramic Coating Maintenance)</p>
-                        <div>
-                            <input type="checkbox" name="monthly" id='monthly' className='checkbox-input' onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['monthly'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['monthly'].cost[vehicle])} />
-                            <label htmlFor="monthly" className='checkbox-label'>Monthly VIP <span className='special-package italic'>(${prices['monthly'].cost[vehicle]})</span></label>
-
-                            <input type="checkbox" name="yearly" id='yearly' className='checkbox-input' onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['yearly'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['yearly'].cost[vehicle])} />
-                            <label htmlFor="yearly" className='checkbox-label'>Yearly VIP <span className='special-package italic'>(${prices['yearly'].cost[vehicle]})</span></label>
+                            <input type="hidden" name="_gotcha" style={{ display: 'none !important' }} />
                         </div>
                     </div>
 

@@ -566,8 +566,8 @@ option {
   padding: 0.75rem;
   margin-top: 0.5rem;
   border-radius: 1rem;
-  text-align: left;
-  box-shadow: 0 0 4px white;
+  /* text-align: left; */
+  /* box-shadow: 0 0 4px white; */
 }
 
 .form-top-section {
@@ -577,26 +577,29 @@ option {
 .form-section div,
 .form-section form {
   display: flex;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 0.25rem;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .form-section-heading {
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
 .contact-heading {
   width: 100%;
-  margin: 0 auto;
+  margin: 1rem auto 0 auto;
   font-size: 2em;
 }
 
 .contact-subheading {
   width: 100%;
-  margin: 0 auto 1rem auto;
+  font-size: 14px;
+  margin: 0 auto 2rem auto;
   text-align: center;
 }
 
@@ -608,7 +611,6 @@ option {
   padding: 0.5rem 0.75rem;
   text-align: left;
   margin-top: 1rem;
-  /* width: 100%; */
 }
 
 .textarea {
@@ -645,7 +647,7 @@ option {
 }
 
 .make-input {
-  width: 125px;
+  width: auto;
 }
 
 .model-input {
@@ -656,9 +658,10 @@ option {
   transition: all 500ms ease;
   color: black;
   cursor: pointer;
-  border-radius: 50px;
+  border-radius: 4px;
   background-color: #fff;
-  border: solid 2px #7d7d7d;
+  font-weight: 500;
+  font-size: 20px;
   padding: 0.5rem 1.5rem;
   display: inline-block;
   margin-top: 0.25rem;
@@ -3293,7 +3296,7 @@ hr {
   }
 
   .contact-container-right {
-    max-width: 800px;
+    max-width: 1000px;
   }
 
   .sidebyside {

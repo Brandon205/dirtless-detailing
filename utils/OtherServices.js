@@ -84,7 +84,7 @@ export default function OtherServices(props) {
                         <div className="otherservices-desc">
                             <div>
                                 <a href='/services/single-stage-correction' className='service-heading-link'>Single Stage Paint Correction</a>
-                                <p className="secondary-text">Starting at: <br /><span>$549.99</span></p>
+                                <p className="secondary-text">Starting at: <br /><span>$499.99</span></p>
                             </div>
                             <p className="service-desc">Our Single Stage Paint Correction can fix 60%-70% of minor damage and scratches and will leave your vehicle looking shinier than ever.</p>
 
@@ -99,7 +99,7 @@ export default function OtherServices(props) {
                         <div className="otherservices-desc">
                             <div>
                                 <a href='/services/two-stage-correction' className='service-heading-link'>Two Stage Paint Correction</a>
-                                <p className="secondary-text">Starting at: <br /><span>$699.99</span></p>
+                                <p className="secondary-text">Starting at: <br /><span>$649.99</span></p>
                             </div>
                             <p className="service-desc">Our 2 stage paint correction is great for getting your car's paint to a near perfect state. This is great for show cars need that extra time and effort to get to that showroom shine.</p>
 
@@ -124,7 +124,7 @@ export default function OtherServices(props) {
                         <div className="otherservices-desc">
                             <div>
                                 <a href='/services/exterior-ceramic-coating' className='service-heading-link'>Protect Ceramic Coating</a>
-                                <p className="secondary-text">Starting at: <br /><span>$949.99</span></p>
+                                <p className="secondary-text">Starting at: <br /><span>$899.99</span></p>
                             </div>
                             <p className="service-desc">This Protect Ceramic Coating package gives you an included Dirt-Less Wash and Single Stage Paint Correction before applying IGL's 9H Quartz Ceramic Coating, giving you 2 years of protection with good maintenance practices. Ask us more about our maintenance packages to hear about our warranties.</p>
 
@@ -139,7 +139,7 @@ export default function OtherServices(props) {
                         <div className="otherservices-desc">
                             <div>
                                 <a href='/services/exterior-ceramic-coating' className='service-heading-link'>Protect+ Ceramic Coating</a>
-                                <p className="secondary-text">Starting at: <br /><span>$1,399.99</span></p>
+                                <p className="secondary-text">Starting at: <br /><span>$1,349.99</span></p>
                             </div>
                             <p className="service-desc">Our Protect+ Ceramic Coating package includes all that our Protect package does, a Full Dirt-Less Wash, Single Stage Paint Correction, and then we give you 3 coats of IGL's 10H Kenzo Graphene giving you 5 years of protection with good maintenance practices.</p>
 
