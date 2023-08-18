@@ -18,7 +18,6 @@ export default function Contact() {
 
     // State for the "Radio" buttons
     const [paintCorrection, setPaintCorrection] = useState('');
-    const [exteriorWash, setExteriorWash] = useState('');
     const [interiorCleaning, setInteriorCleaning] = useState('');
     const [exteriorCoating, setExteriorCoating] = useState('');
     const [dirtiness, setDirtiness] = useState('');
@@ -132,7 +131,6 @@ export default function Contact() {
             e.target.reset();
             setPhoneNumber('');
             setPaintCorrection('');
-            setExteriorWash('');
             setInteriorCleaning('');
             setExteriorCoating('');
             setDirtiness('');
@@ -248,7 +246,6 @@ export default function Contact() {
                 setCurrentPrice(currentPrice - prices[e.target.id.toLowerCase()].cost[vehicle])
                 setPaintCorrection('');
             } else {
-                console.log('hhefh')
                 if (paintCorrection === 'Single Stage') {
                     setCurrentPrice(currentPrice - prices['single stage'].cost[vehicle] + prices[e.target.id.toLowerCase()].cost[vehicle])
                     setPaintCorrection(e.target.id);
@@ -281,8 +278,22 @@ export default function Contact() {
     }
 
     let changeVehicle = (e) => {
+        let currForm = formRef.current;
+
+        currForm['monthly'].checked = false;
+        currForm['yearly'].checked = false;
+        currForm['combo'].checked = false;
+        currForm['intcoating'].checked = false;
+        currForm['ozone'].checked = false;
+        currForm['headliners'].checked = false;
+        currForm['extraction'].checked = false;
+        currForm['claybar'].checked = false;
+        currForm['engine'].checked = false;
+        currForm['glassEx'].checked = false;
+        currForm['waterspotEx'].checked = false;
+        currForm['debadge'].checked = false;
+
         setPaintCorrection('');
-        setExteriorWash('');
         setInteriorCleaning('');
         setExteriorCoating('');
         setDirtiness('');
@@ -290,7 +301,7 @@ export default function Contact() {
         setIntSelected(false);
         setCoatingSelected(false);
         setCurrentPrice(0)
-        setVehicle(e.target.value)
+        setVehicle(e.target.value);
     }
 
     return (
@@ -557,7 +568,7 @@ export default function Contact() {
                             <p style={{marginTop: '2rem'}} className="contact-heading">Vehicle Size/Classification</p>
                             <p style={{marginBottom: 0}} className="contact-subheading">Change this to get accurate price estimates for your vehicle (changing this will reset any selected options below, but not the information above).</p>
                             <div style={{marginTop: 0}} className='basic-info-container'>
-                                <select name="vehicle size" id="vehicle size" style={{fontSize: '1.2em'}} className='text-input make-input' placeholder='Vehicle Size' onChange={(e) => changeVehicle()}>
+                                <select name="vehicle size" id="vehicle size" style={{fontSize: '1.2em'}} className='text-input make-input' placeholder='Vehicle Size' onChange={(e) => changeVehicle(e)}>
                                     <option value="0">2 Door Cars</option>
                                     <option value="1">Quarter Ton Trucks</option>
                                     <option value="2">4-Door Cars</option>
@@ -630,8 +641,8 @@ export default function Contact() {
                         </div>
                         <hr className="contact-border" />
 
-                        <p style={{display: intSelected ? 'flex' : 'none'}} className="contact-heading">Vehicle Interior Dirtiness{intSelected ? <span className='special-package'>*</span> : ''}</p>
-                        <p style={{display: intSelected ? 'flex' : 'none'}} className='contact-subheading'><span className='special-package'>Note: </span>Only required when an Interior Cleaning is selected.</p>
+                        <p style={{display: intSelected ? 'block' : 'none'}} className="contact-heading">Vehicle Interior Dirtiness{intSelected ? <span className='special-package'>*</span> : ''}</p>
+                        <p style={{display: intSelected ? 'block' : 'none'}} className='contact-subheading'><span className='special-package'>Note: </span>Only required when an Interior Cleaning is selected.</p>
                         <div style={{display: intSelected ? 'flex' : 'none', justifyContent: 'center', gap: '1rem'}}>
                             <div className="label-container">
                                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d69dedc8-dfb3-47bd-80f3-8e76256dfb00/public')`}} className="label-image"></div>
@@ -650,8 +661,8 @@ export default function Contact() {
                             </div>
                         </div>
 
-                        <p style={{display: intSelected ? 'flex' : 'none'}} className="contact-heading">Interior Dog Hair Amount{intSelected ? <span className='special-package'>*</span> : ''}</p>
-                        <p style={{display: intSelected ? 'flex' : 'none'}} className='contact-subheading'><span className='special-package'>Note: </span>Only required when an Interior Cleaning is selected.</p>
+                        <p style={{display: intSelected ? 'block' : 'none'}} className="contact-heading">Interior Dog Hair Amount{intSelected ? <span className='special-package'>*</span> : ''}</p>
+                        <p style={{display: intSelected ? 'block' : 'none'}} className='contact-subheading'><span className='special-package'>Note: </span>Only required when an Interior Cleaning is selected.</p>
                         <div style={{display: intSelected ? 'flex' : 'none', justifyContent: 'center', gap: '1rem'}}>
                             <div className="label-container">
                                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/264a9c3b-d6cd-4575-132a-80d4450cdc00/public')`}} className="label-image"></div>
