@@ -27,12 +27,12 @@ export default function Contact() {
     const [dogHair, setDogHair] = useState('');
     
     //State for the newletter form
-    const [nameVal, setNameVal] = useState('');
-    const [emailVal, setEmailVal] = useState('');
-    const [newsletter, setNewsletter] = useState(true);
+    // const [nameVal, setNameVal] = useState('');
+    // const [emailVal, setEmailVal] = useState('');
+    // const [newsletter, setNewsletter] = useState(true);
     
     // State for new pricing estimate
-    const [currentPrice, setCurrentPrice] = useState('0');
+    const [currentPrice, setCurrentPrice] = useState(0);
     const [vehicle, setVehicle] = useState(0);
     const [animate, setAnimate] = useState(false);
     
@@ -347,9 +347,9 @@ export default function Contact() {
                 <form className="form" ref={formRef} autoComplete="on" onSubmit={(e) => formSubmit(e)}>
                     <div className="form-section form-top-section">
                         <div style={{marginBottom: 0}}>
-                            <strong style={{marginBottom: '2rem'}} className="contact-heading">Basic Information</strong>
+                            <p className="contact-heading">Basic Information</p>
                             <p style={{display: gift ? 'block' : 'none'}} className='contact-subheading'>*When buying a gift certificate for someone else fill out YOUR contact information, but THEIR vehicle information (or as much as you know about their vehicle). We'll then get in contact with you to get the gift card to you!</p>
-                            <div style={{margin: '0 auto'}}>
+                            <div style={{margin: '0 auto'}} className='basic-info-container'>
                                 <input type="checkbox" name="myself" id='myself' className='checkbox-input' onChange={() => handleGiftSelect(false)} checked={gift ? false : true} />
                                 <label htmlFor="myself" className='checkbox-label'>For Myself</label>
                                 <input type="checkbox" name="someone" id='someone' className='checkbox-input' onChange={() => handleGiftSelect(true)} checked={gift ? true : false} />
@@ -357,21 +357,21 @@ export default function Contact() {
                             </div>
                             
                             <div style={{marginBottom: 0}} className='basic-info-container'>
-                                <div style={{position: 'relative'}}>
+                                <div style={{position: 'relative', display: 'flex', justifyContent: 'flex-start'}}>
                                     <label htmlFor="name" className='text-input-label'>Name<span className='special-package'>*</span></label>
                                     <input type="text" id="name" name="name" className='text-input' placeholder="Name" required />
                                 </div>
-                                <div style={{position: 'relative'}}>
+                                <div style={{position: 'relative', display: 'flex', justifyContent: 'flex-start'}}>
                                     <label htmlFor="email" className='text-input-label'>Email<span className='special-package'>*</span></label>
                                     <input type="email" id="email" name="email" className='text-input' placeholder="Email" required />
                                 </div>
-                                <div style={{position: 'relative'}}>
+                                <div style={{position: 'relative', display: 'flex', justifyContent: 'flex-start'}}>
                                     <label htmlFor="phone" className='text-input-label'>Phone Number<span className='special-package'>*</span></label>
                                     <input type="tel" id="phone" name="phone" pattern="\(\d{3}\) \d{3}-\d{4}" value={phoneNumber} onChange={(e) => handlePhoneNumber(e)} className='text-input' placeholder="Ex. (111) 111-1111" required />
                                 </div>
                             </div>
 
-                            <div style={{marginBottom: 0}} className='basic-info-container'>
+                            <div style={{marginBottom: '2rem'}} className='basic-info-container'>
                                 <div className='select-field'>
                                     <label htmlFor="year" className='text-input-label'>Year<span className='special-package'>*</span></label>
                                     <select id="year" name="year" className='text-input year-input' placeholder="Year" required>
@@ -528,7 +528,7 @@ export default function Contact() {
                                         <option>Winnebago</option>
                                     </select>
                                 </div>
-                                <div style={{position: 'relative'}} className='select-field'>
+                                <div style={{position: 'relative', display: 'flex', justifyContent: 'flex-start'}} className='select-field'>
                                     <label htmlFor="model" className='text-input-label'>Model<span className='special-package'>*</span></label>
                                     <input type="text" id="model" name="model" className='text-input model-input' placeholder="Model" required />
                                 </div>
@@ -546,8 +546,8 @@ export default function Contact() {
                                 <textarea type="textarea" name="message" id='message' className='textarea' placeholder='Do you want our mobile service or to schedule a drop off? Do you have any other questions/concerns?' />
                             </div>
 
-                            <strong style={{marginTop: '2rem'}} className="contact-heading">Vehicle Size/Classification</strong>
-                            <p style={{marginBottom: 0}} className="contact-subheading">(Needed for the Price Estimation to work)</p>
+                            <p style={{marginTop: '2rem'}} className="contact-heading">Vehicle Size/Classification</p>
+                            <p style={{marginBottom: 0}} className="contact-subheading">(Fill this out to get accurate price estimation for your vehicle)</p>
                             <div style={{marginTop: 0}} className='basic-info-container'>
                                 <select name="vehicle size" id="vehicle size" style={{fontSize: '1.2em'}} className='text-input make-input' placeholder='Vehicle Size' onChange={(e) => setVehicle(e.target.value)}>
                                     <option value="0">2 Door Cars</option>
@@ -564,7 +564,7 @@ export default function Contact() {
 
                     <div className="form-section">
                         <p className='contact-heading'>Ceramic Coating Services <a href='/services/exterior-ceramic-coating' className='aside-link'><BiLinkExternal /></a></p>
-                        <p className='contact-subheading'>(Both Coating services also include a Wash, Paint Correction, and Engine Bay Wash)</p>
+                        <p className='contact-subheading'>Both Coating services also include a Wash, Paint Correction, and Engine Bay Wash</p>
                         <div>
                             <input type="checkbox" name="exteriorCoating" id="Protect" value="Protect" className='radio-button' onChange={(e) => {handleRadioClick(e, 'exteriorCoating'); handleIntSelect()}} checked={exteriorCoating === "Protect"} />
                             <label htmlFor="Protect" className='checkbox-label'>Protect <span className='special-package italic'>(${prices['protect'].cost[vehicle]})</span></label>
@@ -586,7 +586,7 @@ export default function Contact() {
 
                     <div className="form-section">
                         <p className='contact-heading'>Combo Deal <a href='/services/interior-exterior-detailing-combo' className='aside-link'><BiLinkExternal /></a></p>
-                        <p className='contact-subheading'>(Includes a Full Interior With Extraction, Dirt-Less Wash, and a <span className='special-package'>FREE</span> Engine Bay Cleaning!)</p>
+                        <p className='contact-subheading'>Includes a Full Interior With Extraction, Dirt-Less Wash, and a <span className='special-package'>FREE</span> Engine Bay Cleaning!</p>
                         <div>
                             <input type="checkbox" name="combo" id='combo' className='checkbox-input' onClick={(e) => {handleIntSelect(); e.target.checked ? setCurrentPrice(currentPrice + prices['dirt-less detail'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['dirt-less detail'].cost[vehicle])}} />
                             <label htmlFor="combo" className='checkbox-label'>The Dirt-Less Detail <span className='special-package italic'>(${prices['dirt-less detail'].cost[vehicle]})</span></label>
@@ -594,13 +594,13 @@ export default function Contact() {
                     </div>
 
                     <div className="form-section">
-                        <p style={{marginBottom: '2rem'}} className='contact-heading'>Interior Cleaning Services <a href='/services/full-interior-detail' className='aside-link'><BiLinkExternal /></a></p>
+                        <p className='contact-heading'>Interior Cleaning Services <a href='/services/full-interior-detail' className='aside-link'><BiLinkExternal /></a></p>
+                        <p className='contact-subheading'>All the possible add-ons that we offer for the interior of your vehicle.</p>
                         <div>
                             <input type="checkbox" name="interiorCleaning" id="FullInt" value="Full Interior Cleaning" className='radio-button' onChange={(e) => {handleRadioClick(e, 'interiorCleaning'); handleIntSelect()}} checked={interiorCleaning === "FullInt"} />
                             <label htmlFor="FullInt" className='checkbox-label'>Full Interior Cleaning <span className='special-package italic'>(${prices['full interior'].cost[vehicle]})</span></label>    
                             <input type="checkbox" name="interiorCleaning" id="Bio" value="Biohazard Cleaning" className='radio-button' onChange={(e) => {handleRadioClick(e, 'interiorCleaning1'); handleIntSelect()}} checked={interiorCleaning === "Bio"} />
-                            <label htmlFor="Bio" className='checkbox-label'>Biohazard Cleaning <span className='special-package italic'>($500-$1000)</span></label>
-
+                            <label htmlFor="Bio" className='checkbox-label'>Biohazard Cleaning<span className='special-package'>**</span> <span className='special-package italic'>($500-$1000)</span></label>
                         </div>
                         <hr className="contact-border" />
 
@@ -672,6 +672,7 @@ export default function Contact() {
 
                         <p className="contact-heading">Exterior Add-ons <a href='/services/add-ons#exterior' className='aside-link'><BiLinkExternal /></a></p>
                         <div>
+                            <p className='contact-subheading'>All the possible add-ons that we offer for the exterior of your vehicle.</p>
                             <input type="checkbox" id='claybar' name="claybar" className='checkbox-input' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['clay bar'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['clay bar'].cost[vehicle])} />
                             <label htmlFor="claybar" className='checkbox-label'>Clay Bar Treatment <span className='special-package italic'>(${prices['clay bar'].cost[vehicle]})</span></label>
                             <input type="checkbox" id='engine' name="engine" className='checkbox-input' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['engine'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['engine'].cost[vehicle])} />
@@ -690,17 +691,23 @@ export default function Contact() {
                         </div>
                     </div>
 
-                    <div>
-                        <p>Current Price Estimate:</p>
-                            <span className='pricing__pricecard-price'>          
-                                ${animate ? 
-                                    <AnimatedNumbers includeComma animateToNumber={currentPrice} configs={[
-                                        { mass: 1, tension: 320, friction: 100 },
-                                    ]}></AnimatedNumbers> : 
-                                    currentPrice
-                                }
-                            </span>
-                        <div onClick={() => setCurrentPrice('0')}>Reset counter</div>
+                    <div className='submit-info-container'>
+                        <div>
+                            <p style={{margin: 0}}>Current Price Estimate:</p>
+                            <div className='pricing__pricecard-container'>
+                                <strong style={{backgroundColor: '#c0c0c000'}} className='pricing__pricecard-pricebox'>
+                                    <span className='pricing__pricecard-price'>
+                                        ${animate ? 
+                                            <AnimatedNumbers includeComma animateToNumber={currentPrice} configs={[
+                                                { mass: 1, tension: 320, friction: 100 },
+                                            ]}></AnimatedNumbers> : 
+                                            currentPrice
+                                        }
+                                    </span>
+                                </strong>
+                            </div>
+                        </div>
+                        {/* <div onClick={() => setCurrentPrice('0')}>Reset counter</div> */}
                         <button className='submit-button'>Submit Form!</button>
                     </div>
                     <p style={{marginTop: 0}}>We will be in touch with you via text shortly after you submit the form!</p>

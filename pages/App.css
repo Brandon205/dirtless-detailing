@@ -537,9 +537,6 @@ option {
 }
 
 .contact-container {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
   width: 100%;
   color: white;
   background-color: var(--contact-bkg);
@@ -558,7 +555,7 @@ option {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .form-section {
@@ -566,8 +563,6 @@ option {
   padding: 0.75rem;
   margin-top: 0.5rem;
   border-radius: 1rem;
-  /* text-align: left; */
-  /* box-shadow: 0 0 4px white; */
 }
 
 .form-top-section {
@@ -607,6 +602,7 @@ option {
   background-color: #2A2631;
   border: 1px solid black;
   color: white;
+  font-size: 1.1em;
   border-radius: 5px;
   padding: 0.5rem 0.75rem;
   text-align: left;
@@ -625,8 +621,19 @@ option {
 
 .text-input-label {
   position: absolute;
-  bottom: 34px;
+  bottom: 43px;
   margin-top: 1rem;
+}
+
+.submit-info-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-info-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .basic-info-container {
@@ -634,11 +641,13 @@ option {
   width: 100%;
   display: flex;
   justify-content: center;
+  /* gap: 1rem; */
 }
 
 .select-field {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   position: relative;
 }
 
@@ -1943,7 +1952,7 @@ hr {
   flex-direction: column;
   width: 100%;
   flex-wrap: wrap;
-  row-gap: 1rem;
+  column-gap: 1rem;
 }
 
 .product {
@@ -3289,6 +3298,10 @@ hr {
 
   .main-title {
     font-size: 3.5em;
+  }
+
+  .textarea {
+    width: 60%;
   }
 
   .servicepage-heading {
