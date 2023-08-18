@@ -593,18 +593,18 @@ option {
 
 .contact-subheading {
   width: 100%;
-  font-size: 14px;
+  font-size: 16px;
   margin: 0 auto 2rem auto;
   text-align: center;
 }
 
 .text-input {
-  background-color: #2A2631;
-  border: 1px solid black;
-  color: white;
+  background-color: white;
+  border: none;
+  color: black;
   font-size: 1.1em;
   border-radius: 5px;
-  padding: 0.5rem 0.75rem;
+  padding: 0.75rem 0.75rem;
   text-align: left;
   margin-top: 1rem;
 }
@@ -621,7 +621,7 @@ option {
 
 .text-input-label {
   position: absolute;
-  bottom: 43px;
+  bottom: 50px;
   margin-top: 1rem;
 }
 
@@ -671,7 +671,7 @@ option {
   background-color: #fff;
   font-weight: 500;
   font-size: 20px;
-  padding: 0.5rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   display: inline-block;
   margin-top: 0.25rem;
 }
@@ -790,12 +790,12 @@ option {
 }
 
 .submit-button {
-  padding: 0.75rem 2rem;
+  padding: 0.5rem 3rem;
   font-size: 1.3em;
   background-color: var(--contact-bkg-lighter);
   color: white;
   border: solid 2px var(--main-clr);
-  border-radius: 15px;
+  border-radius: 12px;
   margin-top: 0.5rem;
   transition: 0.5s ease;
   cursor: pointer;
@@ -869,6 +869,10 @@ option {
 
 .icon-24 {
   width: 24px;
+}
+
+.icon-36 {
+  width: 36px;
 }
 
 .icon-48 {

@@ -140,6 +140,7 @@ export default function Contact() {
         //     setDogHair('');
         //     setIntSelected(false);
         //     setCoatingSelected(false);
+        //     setCurrentPrice(0)
         //     window.scrollTo(0, 0);
 
         // }).catch(error => {
@@ -227,7 +228,7 @@ export default function Contact() {
                 setInteriorCleaning(e.target.id);
                 setCurrentPrice(currentPrice + prices['biohazard'].cost[vehicle])
             }
-        } else if (button === "exteriorCoating") { // COATING
+        } else if (button === "exteriorCoating") { // Protect
             if (e.target.id === exteriorCoating) {
                 setExteriorCoating('');
                 setCurrentPrice(currentPrice - prices['protect'].cost[vehicle])
@@ -235,7 +236,7 @@ export default function Contact() {
                 setExteriorCoating(e.target.id);
                 setCurrentPrice(currentPrice + prices['protect'].cost[vehicle])
             }
-        } else if (button === "exteriorCoating1") { // COATING
+        } else if (button === "exteriorCoating1") { // Protect+
             if (e.target.id === exteriorCoating) {
                 setExteriorCoating('');
                 setCurrentPrice(currentPrice - prices['protect+'].cost[vehicle])
@@ -300,9 +301,9 @@ export default function Contact() {
             <div className="cover" style={{backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover)`}}></div>
             <div className="servicepage-header">
                 <h1>Get In Touch</h1>
-                <h2 className='page-subheading'>Feel free to contact us anytime to get a free quote, ask questions, or book an appointment!</h2>
+                <h2 className='page-subheading'>Be sure to check out our new Price Estimator below for a quick free quote, or feel free to contact us with any questions!</h2>
                 <div className='header-buttons'>
-                    <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Get a Free Quote</a>
+                    <a href="#form" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Get a Free Quote</a>
                     <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
                 </div>
             </div>
@@ -342,9 +343,9 @@ export default function Contact() {
             </div>
 
             <div className='contact-container-right'>
-                <h2>Or Email us by filling out our form:</h2>
-                <p className='contact-subheading'><span className='special-package'>*</span>The pricing here is approximate and may vary inside of the listed ranges based on vehicle size and condition.</p>
-                <form className="form" ref={formRef} autoComplete="on" onSubmit={(e) => formSubmit(e)}>
+                <h2>Or Reach Out to Us By Filling Out Our Form:</h2>
+                <p className='contact-subheading'><span className='special-package'>Note: </span>The Pricing Estimate here is approximate and some services are hourly or based on vehicle condition. Final prices may vary slightly.</p>
+                <form className="form" id="form" ref={formRef} autoComplete="on" onSubmit={(e) => formSubmit(e)}>
                     <div className="form-section form-top-section">
                         <div style={{marginBottom: 0}}>
                             <p className="contact-heading">Basic Information</p>
@@ -563,8 +564,8 @@ export default function Contact() {
                     </div>
 
                     <div className="form-section">
-                        <p className='contact-heading'>Ceramic Coating Services <a href='/services/exterior-ceramic-coating' className='aside-link'><BiLinkExternal /></a></p>
-                        <p className='contact-subheading'>Both Coating services also include a Wash, Paint Correction, and Engine Bay Wash</p>
+                        <p className='contact-heading'>Ceramic Coating Services <a href='/services/exterior-ceramic-coating' className='aside-link'><img src='../assets/icons/linking.png' alt='external link' className='icon-36' /></a></p>
+                        <p className='contact-subheading'><span className='special-package'>Note: </span>Both Ceramic Coatings also include our Dirt-Less Wash, Paint Correction, and Engine Bay Wash</p>
                         <div>
                             <input type="checkbox" name="exteriorCoating" id="Protect" value="Protect" className='radio-button' onChange={(e) => {handleRadioClick(e, 'exteriorCoating'); handleIntSelect()}} checked={exteriorCoating === "Protect"} />
                             <label htmlFor="Protect" className='checkbox-label'>Protect <span className='special-package italic'>(${prices['protect'].cost[vehicle]})</span></label>
@@ -573,8 +574,8 @@ export default function Contact() {
                         </div>
                         <hr className="contact-border" />
 
-                        <p style={{paddingTop: '2rem'}} className="contact-heading">VIP Options <a href='/services/exterior-ceramic-coating' className='aside-link'><BiLinkExternal /></a></p>
-                        <p className='contact-subheading'>(For Ceramic Coating Maintenance)</p>
+                        <p style={{paddingTop: '2rem'}} className="contact-heading">VIP Options <a href='/services/exterior-ceramic-coating' className='aside-link'><img src='../assets/icons/linking.png' alt='external link' className='icon-36' /></a></p>
+                        <p className='contact-subheading'>To keep your Ceramic Coating Warranties. (You can ask us about these later too!)</p>
                         <div>
                             <input type="checkbox" name="monthly" id='monthly' className='checkbox-input' onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['monthly'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['monthly'].cost[vehicle])} />
                             <label htmlFor="monthly" className='checkbox-label'>Monthly VIP <span className='special-package italic'>(${prices['monthly'].cost[vehicle]})</span></label>
@@ -585,8 +586,8 @@ export default function Contact() {
                     </div>
 
                     <div className="form-section">
-                        <p className='contact-heading'>Combo Deal <a href='/services/interior-exterior-detailing-combo' className='aside-link'><BiLinkExternal /></a></p>
-                        <p className='contact-subheading'>Includes a Full Interior With Extraction, Dirt-Less Wash, and a <span className='special-package'>FREE</span> Engine Bay Cleaning!</p>
+                        <p className='contact-heading'>Interior + Exterior Combo <a href='/services/interior-exterior-detailing-combo' className='aside-link'><img src='../assets/icons/linking.png' alt='external link' className='icon-36' /></a></p>
+                        <p className='contact-subheading'>Includes a Full Interior Cleaning, our Dirt-Less Wash, and a <span className='special-package'>FREE</span> Engine Bay Cleaning!</p>
                         <div>
                             <input type="checkbox" name="combo" id='combo' className='checkbox-input' onClick={(e) => {handleIntSelect(); e.target.checked ? setCurrentPrice(currentPrice + prices['dirt-less detail'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['dirt-less detail'].cost[vehicle])}} />
                             <label htmlFor="combo" className='checkbox-label'>The Dirt-Less Detail <span className='special-package italic'>(${prices['dirt-less detail'].cost[vehicle]})</span></label>
@@ -594,8 +595,8 @@ export default function Contact() {
                     </div>
 
                     <div className="form-section">
-                        <p className='contact-heading'>Interior Cleaning Services <a href='/services/full-interior-detail' className='aside-link'><BiLinkExternal /></a></p>
-                        <p className='contact-subheading'>All the possible add-ons that we offer for the interior of your vehicle.</p>
+                        <p className='contact-heading'>Interior Cleaning Services <a href='/services/full-interior-detail' className='aside-link'><img src='../assets/icons/linking.png' alt='external link' className='icon-36' /></a></p>
+                        <p className='contact-subheading'><span className='special-package'>**</span>Biohazard cleaning priced based on the condition of the vehicle, selecting it here adds the base price of $500 to the Price Estimator.</p>
                         <div>
                             <input type="checkbox" name="interiorCleaning" id="FullInt" value="Full Interior Cleaning" className='radio-button' onChange={(e) => {handleRadioClick(e, 'interiorCleaning'); handleIntSelect()}} checked={interiorCleaning === "FullInt"} />
                             <label htmlFor="FullInt" className='checkbox-label'>Full Interior Cleaning <span className='special-package italic'>(${prices['full interior'].cost[vehicle]})</span></label>    
@@ -604,11 +605,18 @@ export default function Contact() {
                         </div>
                         <hr className="contact-border" />
 
-                        <p className="contact-heading">Interior Add-ons <a href='/services/add-ons#interior' className='aside-link'><BiLinkExternal /></a></p>
-                        <p style={{ marginTop: 0}}>(Coatings need a Full Interior Cleaning service selected)</p>
+                        <p className="contact-heading">Interior Add-ons <a href='/services/add-ons#interior' className='aside-link'><img src='../assets/icons/linking.png' alt='external link' className='icon-36' /></a></p>
+                        <p style={{marginBottom: '0.5rem'}} className='contact-subheading'><span className='special-package'>Note: </span>Extraction and Interior Coatings needs either our Full Interior or Biohazard cleaning service selected.</p>
+                        <p className='contact-subheading'><span className='special-package'>**</span>Headliner cleaning is based on condition, selecting it here adds the base price of $35 to the Price Estimator.</p>
                         <div>
+                            <input type="checkbox" name="extraction" id='extraction' className={'checkbox-input'} disabled={!intSelected ? "disabled" : ""} onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['extraction'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['extraction'].cost[vehicle])} />
+                            <label title="Need to have an Interior Cleaning option selected." htmlFor="extraction" className='checkbox-label'>Extraction <span className='special-package italic'>${prices['extraction'].cost[vehicle]}</span></label>
+
                             <input type="checkbox" name="intcoating" id='intcoating' className={'checkbox-input'} disabled={!intSelected ? "disabled" : ""} onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['interior ceramic'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['interior ceramic'].cost[vehicle])} />
                             <label title="Need to have an Interior Cleaning option selected." htmlFor="intcoating" className='checkbox-label'>Interior Ceramic Coating <span className='special-package italic'>($150)</span></label>
+
+                            <input type="checkbox" name="headliners" id='headliners' className={'checkbox-input'} onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['headliners'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['headliners'].cost[vehicle])} />
+                            <label htmlFor="headliners" className='checkbox-label'>Headliners <span className='special-package italic'>$35-$80</span></label>
 
                             <input type="checkbox" id='ozone' name="ozone" className='checkbox-input' onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['ozone'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['ozone'].cost[vehicle])} />
                             <label htmlFor="ozone" className='checkbox-label'>Ozone Treatment <span className='special-package italic'>($100)</span></label>
@@ -616,7 +624,7 @@ export default function Contact() {
                         <hr className="contact-border" />
 
                         <p className="contact-heading">Vehicle Interior Dirtiness{intSelected ? <span className='special-package'>*</span> : ''}</p>
-                        <p className='contact-subheading'>(Only required when an Interior Cleaning is selected)</p>
+                        <p className='contact-subheading'><span className='special-package'>Note: </span>Only required when an Interior Cleaning is selected.</p>
                         <div style={{display: 'flex', justifyContent: 'center', gap: '1rem'}}>
                             <div className="label-container">
                                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d69dedc8-dfb3-47bd-80f3-8e76256dfb00/public')`}} className="label-image"></div>
@@ -636,7 +644,7 @@ export default function Contact() {
                         </div>
 
                         <p className="contact-heading">Interior Dog Hair Amount{intSelected ? <span className='special-package'>*</span> : ''}</p>
-                        <p className='contact-subheading'>(Only required when an Interior Cleaning is selected)</p>
+                        <p className='contact-subheading'><span className='special-package'>Note: </span>Only required when an Interior Cleaning is selected.</p>
                         <div style={{display: 'flex', justifyContent: 'center', gap: '1rem'}}>
                             <div className="label-container">
                                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/264a9c3b-d6cd-4575-132a-80d4450cdc00/public')`}} className="label-image"></div>
@@ -658,8 +666,8 @@ export default function Contact() {
                     </div>
 
                     <div className="form-section">
-                        <p className='contact-heading'>Exterior Services <a href='/services/dirtless-wash' className='aside-link'><BiLinkExternal /></a></p>
-                        <p className='contact-subheading'>Our services that are focused on the outside of the vehicle, whether it's just a wash or a full paint correction</p>
+                        <p className='contact-heading'>Exterior Services <a href='/services/dirtless-wash' className='aside-link'><img src='../assets/icons/linking.png' alt='external link' className='icon-36' /></a></p>
+                        <p className='contact-subheading'>Our services that are focused on the outside of the vehicle, whether it's just a wash or a full paint correction.</p>
                         <div>
                             <input type="checkbox" name="exteriorWash" id="Dirt-Less Wash" value="Dirt-Less Wash" className='radio-button' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => handleRadioClick(e, 'exteriorWash')} checked={exteriorWash === 'Dirt-Less Wash'} />
                             <label htmlFor="Dirt-Less Wash" className='checkbox-label'>Dirt-Less Wash <span className='special-package italic'>(${prices['dirt-less wash'].cost[vehicle]})</span></label>
@@ -670,9 +678,9 @@ export default function Contact() {
                         </div>
                         <hr className="contact-border" />
 
-                        <p className="contact-heading">Exterior Add-ons <a href='/services/add-ons#exterior' className='aside-link'><BiLinkExternal /></a></p>
+                        <p className="contact-heading">Exterior Add-ons <a href='/services/add-ons#exterior' className='aside-link'><img src='../assets/icons/linking.png' alt='external link' className='icon-36' /></a></p>
+                        <p className='contact-subheading'><span className='special-package'>Note: </span>All exterior add-ons besides debadging and engine bay cleaning will require our Dirt-Less Wash service.</p>
                         <div>
-                            <p className='contact-subheading'>All the possible add-ons that we offer for the exterior of your vehicle.</p>
                             <input type="checkbox" id='claybar' name="claybar" className='checkbox-input' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['clay bar'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['clay bar'].cost[vehicle])} />
                             <label htmlFor="claybar" className='checkbox-label'>Clay Bar Treatment <span className='special-package italic'>(${prices['clay bar'].cost[vehicle]})</span></label>
                             <input type="checkbox" id='engine' name="engine" className='checkbox-input' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['engine'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['engine'].cost[vehicle])} />
@@ -710,7 +718,7 @@ export default function Contact() {
                         {/* <div onClick={() => setCurrentPrice('0')}>Reset counter</div> */}
                         <button className='submit-button'>Submit Form!</button>
                     </div>
-                    <p style={{marginTop: 0}}>We will be in touch with you via text shortly after you submit the form!</p>
+                    <p>We will be in touch with you via text shortly after you submit the form!</p>
 
                     <ToastContainer position="bottom-center"
                         autoClose={5000}
