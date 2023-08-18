@@ -10,8 +10,6 @@ const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
   ssr: false,
 });
 
-import { BiLinkExternal } from 'react-icons/bi';
-
 export default function Contact() {
     const [intSelected, setIntSelected] = useState(false);
     const [coatingSelected, setCoatingSelected] = useState(false);
@@ -56,7 +54,7 @@ export default function Contact() {
             "Year": e.target['year'].value,
             "Make": e.target['make'].value,
             "Model": e.target['model'].value,
-            "Newsletter": e.target['newsletter'].checked ? 'Yes' : 'No',
+            // "Newsletter": e.target['newsletter'].checked ? 'Yes' : 'No',
             "Message": e.target['message'].value,
 
             "Exterior Coating": formRef.current['Protect'].checked ? 'Protect' : formRef.current['Protect+'].checked ? 'Protect+' : '',
@@ -65,6 +63,8 @@ export default function Contact() {
 
             "Interior Cleaning": formRef.current['FullInt'].checked ? 'Full Interior Cleaning' : '',
             "Interior Coating": e.target['intcoating'].checked ? 'Yes' : 'No',
+            "Extraction": e.target['extraction'].checked ? 'Yes' : 'No',
+            "Headliners": e.target['headliners'].checked ? 'Yes' : 'No',
             "Ozone": e.target['ozone'].checked ? 'Yes' : 'No',
             "Dirtiness": formRef.current['Pretty Clean'].checked ? 'Pretty Clean' : formRef.current['Normal Use'].checked ? 'Normal Use' : formRef.current['Extremely Dirty'].checked ? 'Extremely Dirty' : '',
             "Dog Hair": formRef.current['Little to None'].checked ? 'Little to None' : formRef.current['Medium Amount'].checked ? 'Medium Amount' : formRef.current['Lots of Hair'].checked ? 'Lots of Hair' : '',
@@ -86,7 +86,7 @@ export default function Contact() {
 
         const formData = new FormData();
         Object.entries(formInfo).forEach(([key, value]) => {
-            if (key === "Name" || key === "Email" || key === "Message" || key === "Phone" || key === "Year" || key === "Make" || key === "Model" || key === "Exterior Coating" || key === "Interior Cleaning" || key === "Dirtiness" || key === "Dog Hair" || key === "Exterior Wash" || key === "Paint Correction" || key === "Dirtiness" || key === "Dog Hair" || key === 'Newsletter') {
+            if (key === "Name" || key === "Email" || key === "Message" || key === "Phone" || key === "Year" || key === "Make" || key === "Model" || key === "Exterior Coating" || key === "Interior Cleaning" || key === "Dirtiness" || key === "Dog Hair" || key === "Exterior Wash" || key === "Paint Correction" || key === "Dirtiness" || key === "Dog Hair" || key === 'Newsletter' || key === 'Price Estimate') {
                 if (value !== '') {
                     formData.append(key, value);
                 }
@@ -116,44 +116,43 @@ export default function Contact() {
     };
 
     const finalSubmit = (formData, e) => {
-        console.log(formData)
-        // fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
-        //     method: "POST",
-        //     body: formData
-        // }).then((test) => {
-        //     toast.success("Form submitted! Expect a text response from us soon!", {
-        //         position: "bottom-center",
-        //         autoClose: 5000,
-        //         hideProgressBar: false,
-        //         closeOnClick: true,
-        //         pauseOnHover: true,
-        //         draggable: true,
-        //         progress: undefined
-        //     })
-        //     e.target.reset();
-        //     setPhoneNumber('');
-        //     setPaintCorrection('');
-        //     setExteriorWash('');
-        //     setInteriorCleaning('');
-        //     setExteriorCoating('');
-        //     setDirtiness('');
-        //     setDogHair('');
-        //     setIntSelected(false);
-        //     setCoatingSelected(false);
-        //     setCurrentPrice(0)
-        //     window.scrollTo(0, 0);
+        fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
+            method: "POST",
+            body: formData
+        }).then((test) => {
+            toast.success("Form submitted! Expect a text response from us soon!", {
+                position: "bottom-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined
+            })
+            e.target.reset();
+            setPhoneNumber('');
+            setPaintCorrection('');
+            setExteriorWash('');
+            setInteriorCleaning('');
+            setExteriorCoating('');
+            setDirtiness('');
+            setDogHair('');
+            setIntSelected(false);
+            setCoatingSelected(false);
+            setCurrentPrice(0)
+            window.scrollTo(0, 0);
 
-        // }).catch(error => {
-        //     toast.error("An error occurred, please try again." + error, {
-        //         position: "bottom-center",
-        //         autoClose: 5000,
-        //         hideProgressBar: false,
-        //         closeOnClick: true,
-        //         pauseOnHover: true,
-        //         draggable: true,
-        //         progress: undefined
-        //     })
-        // });
+        }).catch(error => {
+            toast.error("An error occurred, please try again." + error, {
+                position: "bottom-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined
+            })
+        });
     }
 
     let handleGiftSelect = (giftButton) => {
@@ -175,7 +174,7 @@ export default function Contact() {
         if (!currForm['exteriorCoating'][0].checked && !currForm['exteriorCoating'][1].checked) {
             setCoatingSelected(false);
         } else {
-            setPaintCorrection('')
+            setPaintCorrection('');
             setCoatingSelected(true);
         }
     }
@@ -212,78 +211,86 @@ export default function Contact() {
     }
 
     let handleRadioClick = (e, button) => {
-        if (button === "interiorCleaning") { // INTERIOR
+        if (button === "interiorCleaning") { // Interior Cleaning
             if (e.target.id === interiorCleaning) {
+                setCurrentPrice(currentPrice - prices[e.target.id.toLowerCase()].cost[vehicle])
                 setInteriorCleaning('');
-                setCurrentPrice(currentPrice - prices['full interior'].cost[vehicle])
             } else {
-                setInteriorCleaning(e.target.id);
-                setCurrentPrice(currentPrice + prices['full interior'].cost[vehicle])
-            }
-        } else if (button === "interiorCleaning1") { // COATING
-            if (e.target.id === interiorCleaning) {
-                setInteriorCleaning('');
-                setCurrentPrice(currentPrice - prices['biohazard'].cost[vehicle])
-            } else {
-                setInteriorCleaning(e.target.id);
-                setCurrentPrice(currentPrice + prices['biohazard'].cost[vehicle])
+                if (interiorCleaning === 'FullInt') {
+                    setCurrentPrice(currentPrice - prices['fullint'].cost[vehicle] + prices['bio'].cost[vehicle])
+                    setInteriorCleaning(e.target.id);
+                } else if (interiorCleaning === 'Bio') {
+                    setCurrentPrice(currentPrice - prices['bio'].cost[vehicle] + prices['fullint'].cost[vehicle])
+                    setInteriorCleaning(e.target.id);
+                } else {
+                    setInteriorCleaning(e.target.id);
+                    setCurrentPrice(currentPrice + prices[e.target.id.toLowerCase()].cost[vehicle]);
+                }
             }
         } else if (button === "exteriorCoating") { // Protect
-            if (e.target.id === exteriorCoating) {
+            if (e.target.id === exteriorCoating) { // exteriorCoating is equal to either "Protect" or "Protect+" so reset it
+                setCurrentPrice(currentPrice - prices[e.target.id.toLowerCase()].cost[vehicle])
                 setExteriorCoating('');
-                setCurrentPrice(currentPrice - prices['protect'].cost[vehicle])
-            } else {
-                setExteriorCoating(e.target.id);
-                setCurrentPrice(currentPrice + prices['protect'].cost[vehicle])
+            } else { // exteriorCoating != the value of the checkbox pressed so figure out if it's '' or 
+                if (exteriorCoating === 'Protect') {
+                    setCurrentPrice(currentPrice - prices['protect'].cost[vehicle] + prices['protect+'].cost[vehicle])
+                    setExteriorCoating(e.target.id);
+                } else if (exteriorCoating === 'Protect+') {
+                    setCurrentPrice(currentPrice - prices['protect+'].cost[vehicle] + prices['protect'].cost[vehicle])
+                    setExteriorCoating(e.target.id);
+                } else {
+                    setExteriorCoating(e.target.id);
+                    setCurrentPrice(currentPrice + prices[e.target.id.toLowerCase()].cost[vehicle]);
+                }
             }
-        } else if (button === "exteriorCoating1") { // Protect+
-            if (e.target.id === exteriorCoating) {
-                setExteriorCoating('');
-                setCurrentPrice(currentPrice - prices['protect+'].cost[vehicle])
-            } else {
-                setExteriorCoating(e.target.id);
-                setCurrentPrice(currentPrice + prices['protect+'].cost[vehicle])
-            }
-        } else if (button === "exteriorWash") { // EXTERIOR
-            if (e.target.id === exteriorWash) {
-                setExteriorWash('');
-                setCurrentPrice(currentPrice - prices['dirt-less wash'].cost[vehicle])
-            } else {
-                setExteriorWash(e.target.id);
-                setCurrentPrice(currentPrice + prices['dirt-less wash'].cost[vehicle])
-            }
-
-        } else if (button === "paintCorrection") { // PAINT CORRECTION
+        } else if (button === "paintCorrection") { // Exterior Services
             if (e.target.id === paintCorrection) {
+                setCurrentPrice(currentPrice - prices[e.target.id.toLowerCase()].cost[vehicle])
                 setPaintCorrection('');
-                setCurrentPrice(currentPrice - prices['single stage'].cost[vehicle])
             } else {
-                setPaintCorrection(e.target.id);
-                setCurrentPrice(currentPrice + prices['single stage'].cost[vehicle])
+                console.log('hhefh')
+                if (paintCorrection === 'Single Stage') {
+                    setCurrentPrice(currentPrice - prices['single stage'].cost[vehicle] + prices[e.target.id.toLowerCase()].cost[vehicle])
+                    setPaintCorrection(e.target.id);
+                } else if (paintCorrection === 'Two Stage') {
+                    setCurrentPrice(currentPrice - prices['two stage'].cost[vehicle] + prices[e.target.id.toLowerCase()].cost[vehicle])
+                    setPaintCorrection(e.target.id);
+                } else if (paintCorrection === 'Dirt-Less Wash') {
+                    setCurrentPrice(currentPrice - prices['dirt-less wash'].cost[vehicle] + prices[e.target.id.toLowerCase()].cost[vehicle])
+                    setPaintCorrection(e.target.id);
+                } else {
+                    setPaintCorrection(e.target.id);
+                    setCurrentPrice(currentPrice + prices[e.target.id.toLowerCase()].cost[vehicle]);
+                }
             }
-        } else if (button === "paintCorrection1") { // PAINT CORRECTION
-            if (e.target.id === paintCorrection) {
-                setPaintCorrection('');
-                setCurrentPrice(currentPrice - prices['two stage'].cost[vehicle])
-            } else {
-                setPaintCorrection(e.target.id);
-                setCurrentPrice(currentPrice + prices['two stage'].cost[vehicle])
-            }
-        } else if (button === "dirtiness") { // DIRTINESS
+        } else if (button === "dirtiness") { // Dirtiness
             if (e.target.id === dirtiness) {
                 setDirtiness('');
             } else {
                 setDirtiness(e.target.id);
             }
-        } else if (button === "dogHair") { // DOG HAIR
+        } else if (button === "dogHair") { // Dog Hair
             if (e.target.id === dogHair) {
+                setCurrentPrice(currentPrice - prices['dog hair'].cost[dogHair])
                 setDogHair('');
-                setCurrentPrice(currentPrice - prices['pet hair'].cost[vehicle])
             } else {
+                setCurrentPrice(currentPrice - prices['dog hair'].cost[dogHair ? dogHair : 'Little to None'] + prices['dog hair'].cost[e.target.id]);
                 setDogHair(e.target.id);
-                setCurrentPrice(currentPrice + prices['pet hair'].cost[vehicle])
             }
         }
+    }
+
+    let changeVehicle = (e) => {
+        setPaintCorrection('');
+        setExteriorWash('');
+        setInteriorCleaning('');
+        setExteriorCoating('');
+        setDirtiness('');
+        setDogHair('');
+        setIntSelected(false);
+        setCoatingSelected(false);
+        setCurrentPrice(0)
+        setVehicle(e.target.value)
     }
 
     return (
@@ -548,9 +555,9 @@ export default function Contact() {
                             </div>
 
                             <p style={{marginTop: '2rem'}} className="contact-heading">Vehicle Size/Classification</p>
-                            <p style={{marginBottom: 0}} className="contact-subheading">(Fill this out to get accurate price estimation for your vehicle)</p>
+                            <p style={{marginBottom: 0}} className="contact-subheading">Change this to get accurate price estimates for your vehicle (changing this will reset any selected options below, but not the information above).</p>
                             <div style={{marginTop: 0}} className='basic-info-container'>
-                                <select name="vehicle size" id="vehicle size" style={{fontSize: '1.2em'}} className='text-input make-input' placeholder='Vehicle Size' onChange={(e) => setVehicle(e.target.value)}>
+                                <select name="vehicle size" id="vehicle size" style={{fontSize: '1.2em'}} className='text-input make-input' placeholder='Vehicle Size' onChange={(e) => changeVehicle()}>
                                     <option value="0">2 Door Cars</option>
                                     <option value="1">Quarter Ton Trucks</option>
                                     <option value="2">4-Door Cars</option>
@@ -569,7 +576,7 @@ export default function Contact() {
                         <div>
                             <input type="checkbox" name="exteriorCoating" id="Protect" value="Protect" className='radio-button' onChange={(e) => {handleRadioClick(e, 'exteriorCoating'); handleIntSelect()}} checked={exteriorCoating === "Protect"} />
                             <label htmlFor="Protect" className='checkbox-label'>Protect <span className='special-package italic'>(${prices['protect'].cost[vehicle]})</span></label>
-                            <input type="checkbox" name="exteriorCoating" id="Protect+" value="Protect+" className='radio-button' onChange={(e) => {handleRadioClick(e, 'exteriorCoating1'); handleIntSelect()}} checked={exteriorCoating === "Protect+"} />
+                            <input type="checkbox" name="exteriorCoating" id="Protect+" value="Protect+" className='radio-button' onChange={(e) => {handleRadioClick(e, 'exteriorCoating'); handleIntSelect()}} checked={exteriorCoating === "Protect+"} />
                             <label htmlFor="Protect+" className='checkbox-label'>Protect+ <span className='special-package italic'>(${prices['protect+'].cost[vehicle]})</span></label>
                         </div>
                         <hr className="contact-border" />
@@ -599,8 +606,8 @@ export default function Contact() {
                         <p className='contact-subheading'><span className='special-package'>**</span>Biohazard cleaning priced based on the condition of the vehicle, selecting it here adds the base price of $500 to the Price Estimator.</p>
                         <div>
                             <input type="checkbox" name="interiorCleaning" id="FullInt" value="Full Interior Cleaning" className='radio-button' onChange={(e) => {handleRadioClick(e, 'interiorCleaning'); handleIntSelect()}} checked={interiorCleaning === "FullInt"} />
-                            <label htmlFor="FullInt" className='checkbox-label'>Full Interior Cleaning <span className='special-package italic'>(${prices['full interior'].cost[vehicle]})</span></label>    
-                            <input type="checkbox" name="interiorCleaning" id="Bio" value="Biohazard Cleaning" className='radio-button' onChange={(e) => {handleRadioClick(e, 'interiorCleaning1'); handleIntSelect()}} checked={interiorCleaning === "Bio"} />
+                            <label htmlFor="FullInt" className='checkbox-label'>Full Interior Cleaning <span className='special-package italic'>(${prices['fullint'].cost[vehicle]})</span></label>    
+                            <input type="checkbox" name="interiorCleaning" id="Bio" value="Biohazard Cleaning" className='radio-button' onChange={(e) => {handleRadioClick(e, 'interiorCleaning'); handleIntSelect()}} checked={interiorCleaning === "Bio"} />
                             <label htmlFor="Bio" className='checkbox-label'>Biohazard Cleaning<span className='special-package'>**</span> <span className='special-package italic'>($500-$1000)</span></label>
                         </div>
                         <hr className="contact-border" />
@@ -616,16 +623,16 @@ export default function Contact() {
                             <label title="Need to have an Interior Cleaning option selected." htmlFor="intcoating" className='checkbox-label'>Interior Ceramic Coating <span className='special-package italic'>($150)</span></label>
 
                             <input type="checkbox" name="headliners" id='headliners' className={'checkbox-input'} onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['headliners'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['headliners'].cost[vehicle])} />
-                            <label htmlFor="headliners" className='checkbox-label'>Headliners <span className='special-package italic'>$35-$80</span></label>
+                            <label htmlFor="headliners" className='checkbox-label'><span className='special-package'>**</span>Headliners <span className='special-package italic'>$35-$80</span></label>
 
                             <input type="checkbox" id='ozone' name="ozone" className='checkbox-input' onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['ozone'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['ozone'].cost[vehicle])} />
                             <label htmlFor="ozone" className='checkbox-label'>Ozone Treatment <span className='special-package italic'>($100)</span></label>
                         </div>
                         <hr className="contact-border" />
 
-                        <p className="contact-heading">Vehicle Interior Dirtiness{intSelected ? <span className='special-package'>*</span> : ''}</p>
-                        <p className='contact-subheading'><span className='special-package'>Note: </span>Only required when an Interior Cleaning is selected.</p>
-                        <div style={{display: 'flex', justifyContent: 'center', gap: '1rem'}}>
+                        <p style={{display: intSelected ? 'flex' : 'none'}} className="contact-heading">Vehicle Interior Dirtiness{intSelected ? <span className='special-package'>*</span> : ''}</p>
+                        <p style={{display: intSelected ? 'flex' : 'none'}} className='contact-subheading'><span className='special-package'>Note: </span>Only required when an Interior Cleaning is selected.</p>
+                        <div style={{display: intSelected ? 'flex' : 'none', justifyContent: 'center', gap: '1rem'}}>
                             <div className="label-container">
                                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d69dedc8-dfb3-47bd-80f3-8e76256dfb00/public')`}} className="label-image"></div>
                                 <input type="checkbox" name="dirtiness" id="Pretty Clean" value="Pretty Clean" className='radio-button' onChange={(e) => handleRadioClick(e, 'dirtiness')} checked={dirtiness === "Pretty Clean"} />
@@ -643,9 +650,9 @@ export default function Contact() {
                             </div>
                         </div>
 
-                        <p className="contact-heading">Interior Dog Hair Amount{intSelected ? <span className='special-package'>*</span> : ''}</p>
-                        <p className='contact-subheading'><span className='special-package'>Note: </span>Only required when an Interior Cleaning is selected.</p>
-                        <div style={{display: 'flex', justifyContent: 'center', gap: '1rem'}}>
+                        <p style={{display: intSelected ? 'flex' : 'none'}} className="contact-heading">Interior Dog Hair Amount{intSelected ? <span className='special-package'>*</span> : ''}</p>
+                        <p style={{display: intSelected ? 'flex' : 'none'}} className='contact-subheading'><span className='special-package'>Note: </span>Only required when an Interior Cleaning is selected.</p>
+                        <div style={{display: intSelected ? 'flex' : 'none', justifyContent: 'center', gap: '1rem'}}>
                             <div className="label-container">
                                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/264a9c3b-d6cd-4575-132a-80d4450cdc00/public')`}} className="label-image"></div>
                                 <input type="checkbox" name="dogHair" id="Little to None" value="Little to None" className='radio-button' onChange={(e) => handleRadioClick(e, 'dogHair')} checked={dogHair === "Little to None"} />
@@ -669,17 +676,18 @@ export default function Contact() {
                         <p className='contact-heading'>Exterior Services <a href='/services/dirtless-wash' className='aside-link'><img src='../assets/icons/linking.png' alt='external link' className='icon-36' /></a></p>
                         <p className='contact-subheading'>Our services that are focused on the outside of the vehicle, whether it's just a wash or a full paint correction.</p>
                         <div>
-                            <input type="checkbox" name="exteriorWash" id="Dirt-Less Wash" value="Dirt-Less Wash" className='radio-button' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => handleRadioClick(e, 'exteriorWash')} checked={exteriorWash === 'Dirt-Less Wash'} />
+                            <input type="checkbox" name="exteriorWash" id="Dirt-Less Wash" value="Dirt-Less Wash" className='radio-button' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => handleRadioClick(e, 'paintCorrection')} checked={paintCorrection === 'Dirt-Less Wash'} />
                             <label htmlFor="Dirt-Less Wash" className='checkbox-label'>Dirt-Less Wash <span className='special-package italic'>(${prices['dirt-less wash'].cost[vehicle]})</span></label>
                             <input type="checkbox" name="paintCorrection" id="Single Stage" value="Single Stage" className='radio-button' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => handleRadioClick(e, 'paintCorrection')} checked={paintCorrection === 'Single Stage'} />
                             <label htmlFor="Single Stage" className='checkbox-label'>Single Stage Paint Correction <span className='special-package italic'>(${prices['single stage'].cost[vehicle]})</span></label>
-                            <input type="checkbox" name="paintCorrection" id="Two Stage" value="Two Stage" className='radio-button' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => handleRadioClick(e, 'paintCorrection1')} checked={paintCorrection === 'Two Stage'} />
+                            <input type="checkbox" name="paintCorrection" id="Two Stage" value="Two Stage" className='radio-button' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => handleRadioClick(e, 'paintCorrection')} checked={paintCorrection === 'Two Stage'} />
                             <label htmlFor="Two Stage" className='checkbox-label'>Two Stage Paint Correction <span className='special-package italic'>(${prices['two stage'].cost[vehicle]})</span></label>
                         </div>
                         <hr className="contact-border" />
 
                         <p className="contact-heading">Exterior Add-ons <a href='/services/add-ons#exterior' className='aside-link'><img src='../assets/icons/linking.png' alt='external link' className='icon-36' /></a></p>
                         <p className='contact-subheading'><span className='special-package'>Note: </span>All exterior add-ons besides debadging and engine bay cleaning will require our Dirt-Less Wash service.</p>
+                        <p className='contact-subheading'><span className='special-package'>**</span>Services that are charged by the hour, $80 or one hour worth of work is added to the Price Estimator, the amount of time it takes us to perform these services can vary</p>
                         <div>
                             <input type="checkbox" id='claybar' name="claybar" className='checkbox-input' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['clay bar'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['clay bar'].cost[vehicle])} />
                             <label htmlFor="claybar" className='checkbox-label'>Clay Bar Treatment <span className='special-package italic'>(${prices['clay bar'].cost[vehicle]})</span></label>
@@ -687,13 +695,13 @@ export default function Contact() {
                             <label htmlFor="engine" className='checkbox-label'>Engine Bay <span className='special-package italic'>(${prices['engine'].cost[vehicle]})</span></label>
 
                             <input type="checkbox" id='glassEx' name="glass" className='checkbox-input' onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['glass'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['glass'].cost[vehicle])} />
-                            <label htmlFor="glassEx" className='checkbox-label'>Glass Polishing <span className='special-package italic'>($80/hour)</span></label>
+                            <label htmlFor="glassEx" className='checkbox-label'><span className='special-package'>**</span>Glass Polishing <span className='special-package italic'>($80/hour)</span></label>
 
                             <input type="checkbox" id='waterspotEx' name="waterspot" className='checkbox-input' onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['waterspot'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['waterspot'].cost[vehicle])} />
-                            <label htmlFor="waterspotEx" className='checkbox-label'>Waterspot, Overspray, or Road Paint Removal <span className='special-package italic'>($80/hour)</span></label>
+                            <label htmlFor="waterspotEx" className='checkbox-label'><span className='special-package'>**</span>Waterspot, Overspray, or Road Paint Removal <span className='special-package italic'>($80/hour)</span></label>
 
                             <input type="checkbox" id='debadge' name="debadge" className='checkbox-input' onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['debadging'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['debadging'].cost[vehicle])} />
-                            <label htmlFor="debadge" className='checkbox-label'>Debadging <span className='special-package italic'>($80/hour)</span></label>
+                            <label htmlFor="debadge" className='checkbox-label'><span className='special-package'>**</span>Debadging <span className='special-package italic'>($80/hour)</span></label>
 
                             <input type="hidden" name="_gotcha" style={{ display: 'none !important' }} />
                         </div>
@@ -715,7 +723,6 @@ export default function Contact() {
                                 </strong>
                             </div>
                         </div>
-                        {/* <div onClick={() => setCurrentPrice('0')}>Reset counter</div> */}
                         <button className='submit-button'>Submit Form!</button>
                     </div>
                     <p>We will be in touch with you via text shortly after you submit the form!</p>

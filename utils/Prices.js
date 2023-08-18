@@ -11,10 +11,10 @@ const prices = {
     'dirt-less detail': {
         'cost': [375, 375, 450, 450, 475, 500]
     },
-    'full interior': {
+    'fullint': {
         'cost': [300, 300, 350, 350, 350, 375]
     },
-    'biohazard': {
+    'bio': {
         'cost': [500, 500, 500, 500, 500, 500]
     },
     'dirt-less wash': {
@@ -44,8 +44,12 @@ const prices = {
     'extraction': {
         'cost': [35, 35, 50, 50, 50, 75]
     },
-    'pet hair': {
-        'cost': [0, 0, 50, 50, 100, 100]
+    'dog hair': {
+        'cost': {
+            "Little to None": 0,
+            "Medium Amount": 50,
+            "Lots of Hair": 100
+        }
     },
     'headliners': {
         'cost': [35, 35, 35, 35, 35, 35]
@@ -57,7 +61,7 @@ const prices = {
         'cost': [130, 130, 145, 160, 190, 190]
     },
     'yearly': {
-        'cost': [130, 200, 200, 250, 300, 290]
+        'cost': [200, 200, 200, 250, 300, 290]
     },
 }
 
