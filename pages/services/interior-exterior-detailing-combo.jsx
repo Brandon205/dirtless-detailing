@@ -128,7 +128,7 @@ export default function Combo() {
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
 
-              <PricingComponent prices={['374', '374', '424', '449', '499', '599']} addons={[addons.extraction, addons.hair, addons.headliners, addons.intcoating, addons.ozone, addons.claybar, addons.glass, addons.waterspot]} />
+              <PricingComponent prices={['374', '374', '424', '449', '499', '499']} addons={[addons.extraction, addons.hair, addons.headliners, addons.intcoating, addons.ozone, addons.claybar, addons.glass, addons.waterspot]} />
             </div>
             <div className="service-bkg-lighter">
               <div style={{paddingBottom: '3rem'}} className="general-container new-heading-container">

@@ -53,6 +53,7 @@ export default function Contact() {
             "Year": e.target['year'].value,
             "Make": e.target['make'].value,
             "Model": e.target['model'].value,
+            "Vehicle Size": e.target['vehicle size'].value,
             // "Newsletter": e.target['newsletter'].checked ? 'Yes' : 'No',
             "Message": e.target['message'].value,
 
@@ -85,7 +86,7 @@ export default function Contact() {
 
         const formData = new FormData();
         Object.entries(formInfo).forEach(([key, value]) => {
-            if (key === "Name" || key === "Email" || key === "Message" || key === "Phone" || key === "Year" || key === "Make" || key === "Model" || key === "Exterior Coating" || key === "Interior Cleaning" || key === "Dirtiness" || key === "Dog Hair" || key === "Exterior Wash" || key === "Paint Correction" || key === "Dirtiness" || key === "Dog Hair" || key === 'Newsletter' || key === 'Price Estimate') {
+            if (key === "Name" || key === "Email" || key === "Message" || key === "Phone" || key === "Year" || key === "Make" || key === "Model" || key === "Exterior Coating" || key === "Interior Cleaning" || key === "Dirtiness" || key === "Dog Hair" || key === "Exterior Wash" || key === "Paint Correction" || key === "Dirtiness" || key === "Dog Hair" || key === 'Newsletter' || key === 'Price Estimate' || key === 'Vehicle Size') {
                 if (value !== '') {
                     formData.append(key, value);
                 }
