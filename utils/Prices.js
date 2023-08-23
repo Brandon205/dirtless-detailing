@@ -1,66 +1,66 @@
 const prices = {
-    'protect': {
+    'Protect': {
         'cost': [900, 900, 900, 1000, 1200, 1150]
     },
-    'protect+': {
+    'Protect+': {
         'cost': [1350, 1350, 1500, 1600, 1800, 1750]
     },
-    'interior ceramic': {
+    'Interior Ceramic': {
         'cost': [150, 150, 150, 150, 150, 150]
     },
-    'dirt-less detail': {
+    'Dirt-Less Detail': {
         'cost': [375, 375, 450, 450, 475, 500]
     },
-    'fullint': {
+    'Full Interior': {
         'cost': [300, 300, 350, 350, 350, 375]
     },
-    'bio': {
+    'Bio': {
         'cost': [500, 500, 500, 500, 500, 500]
     },
-    'dirt-less wash': {
+    'Dirt-Less Wash': {
         'cost': [75, 75, 75, 100, 150, 125]
     },
-    'single stage': {
+    'Single Stage': {
         'cost': [500, 500, 500, 600, 800, 750]
     },
-    'two stage': {
+    'Two Stage': {
         'cost': [650, 650, 650, 750, 900, 850]
     },
-    'engine': {
+    'Engine': {
         'cost': [80, 80, 80, 80, 80, 80]
     },
-    'clay bar': {
+    'Clay Bar': {
         'cost': [35, 35, 50, 50, 75, 75]
     },
-    'glass': {
+    'Glass': {
         'cost': [80, 80, 80, 80, 80, 80]
     },
-    'waterspot': {
+    'Waterspot': {
         'cost': [80, 80, 80, 80, 80, 80]
     },
-    'debadging': {
+    'Debadging': {
         'cost': [80, 80, 80, 80, 80, 80]
     },
-    'extraction': {
+    'Extraction': {
         'cost': [35, 35, 50, 50, 50, 75]
     },
-    'dog hair': {
+    'Dog Hair': {
         'cost': {
             "Little to None": 0,
             "Medium Amount": 50,
             "Lots of Hair": 100
         }
     },
-    'headliners': {
+    'Headliners': {
         'cost': [35, 35, 35, 35, 35, 35]
     },
-    'ozone': {
+    'Ozone': {
         'cost': [100, 100, 100, 100, 100, 100]
     },
-    'monthly': {
+    'Monthly': {
         'cost': [130, 130, 145, 160, 190, 190]
     },
-    'yearly': {
+    'Yearly': {
         'cost': [200, 200, 200, 250, 300, 290]
     },
 }
