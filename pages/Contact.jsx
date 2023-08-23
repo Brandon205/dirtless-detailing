@@ -11,15 +11,15 @@ const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
 });
 
 export default function Contact() {
-    const [intSelected, setIntSelected] = useState(false);
-    const [coatingSelected, setCoatingSelected] = useState(false);
+    // const [intSelected, setIntSelected] = useState(false);
+    // const [coatingSelected, setCoatingSelected] = useState(false);
     const [gift, setGift] = useState('Myself');
     const [phoneNumber, setPhoneNumber] = useState('');
 
     // State for the "Radio" buttons
-    const [paintCorrection, setPaintCorrection] = useState('');
-    const [interiorCleaning, setInteriorCleaning] = useState('');
-    const [exteriorCoating, setExteriorCoating] = useState('');
+    // const [paintCorrection, setPaintCorrection] = useState('');
+    // const [interiorCleaning, setInteriorCleaning] = useState('');
+    // const [exteriorCoating, setExteriorCoating] = useState('');
 
     const [exteriorService, setExteriorService] = useState('');
     const [interiorService, setInteriorService] = useState('');
@@ -313,13 +313,8 @@ export default function Contact() {
         currForm['waterspotEx'].checked = false;
         currForm['debadge'].checked = false;
 
-        setPaintCorrection('');
-        setInteriorCleaning('');
-        setExteriorCoating('');
         setDirtiness('');
         setDogHair('');
-        setIntSelected(false);
-        setCoatingSelected(false);
         setCurrentPrice(0)
         setVehicle(e.target.value);
     }
@@ -327,11 +322,11 @@ export default function Contact() {
     let handleOptionClick = (e, button, service) => {
         console.log(button, service)
         // start by checking if e.target.checked is true if it is then add prices[service] else subtract
-        if (e.target.checked) {
-            setCurrentPrice(currentPrice + prices[service].cost[vehicle])
-        } else {
-            setCurrentPrice(currentPrice - prices[service].cost[vehicle])
-        }
+        // if (button !== 'Dog Hair' && e.target.checked) {
+        //     setCurrentPrice(currentPrice + prices[service].cost[vehicle])
+        // } else if (button !== 'Dog Hair' && !e.target.checked) {
+        //     setCurrentPrice(currentPrice - prices[service].cost[vehicle])
+        // }
 
         // then start doing the edgework based on the service selected and e.target.checked, if checked then included things will need to be disabled, else enabled
 
@@ -346,7 +341,7 @@ export default function Contact() {
                 setExteriorService(service);
             }
 
-            if (e.target.checked) {
+            if (!e.target.checked) {
                 // In here is where the removal of prices will happen if needed
             }
         } else if (button === 'interior') {
@@ -357,8 +352,11 @@ export default function Contact() {
                 setCurrentPrice(currentPrice - prices[interiorService].cost[vehicle] + prices[service].cost[vehicle]);
                 setInteriorService(service);
             } else {
+                setCurrentPrice(currentPrice + prices[service].cost[vehicle])
                 setInteriorService(service);
             }
+
+            // Will have to loop through the intAddons array when !e.target.checked, and then remove prices from each item respectively
         } else if (button === 'exteriorAddon') {
             let tempArr = [...exteriorAddons]
             if (tempArr.includes(service)) {
@@ -390,7 +388,7 @@ export default function Contact() {
                 setDogHair(service);
             } else {
                 setCurrentPrice(currentPrice + prices['Dog Hair'].cost[service]);
-                setDogHair('');
+                setDogHair(service);
             }
         } else if (button === 'vip') {
             if (service === vip) {
@@ -778,46 +776,46 @@ export default function Contact() {
                         <p style={{marginBottom: '0.5rem'}} className='contact-subheading'><span className='special-package'>Note: </span>Extraction and Interior Coatings needs either our Full Interior or Biohazard cleaning service selected.</p>
                         <p className='contact-subheading'><span className='special-package'>**</span>Headliner cleaning is based on condition, selecting it here adds the base price of $35 to the Price Estimator.</p>
                         <div>
-                            <input type="checkbox" name="interiorAddon" id='extraction' className={'checkbox-input'} onChange={(e) => handleOptionClick(e, 'interiorAddon', 'Extraction')} />
+                            <input type="checkbox" name="interiorAddon" id='extraction' className={'checkbox-input'} onChange={(e) => handleOptionClick(e, 'interiorAddon', 'Extraction')} disabled={interiorService.length == 0 || combo.length == 0} title='An Interior Service must be selected.' />
                             <label htmlFor="extraction" className='checkbox-label'>Extraction <span className='special-package italic'>(${prices['Extraction'].cost[vehicle]})</span></label>
 
-                            <input type="checkbox" name="interiorAddon" id='intcoating' className={'checkbox-input'} onChange={(e) => handleOptionClick(e, 'interiorAddon', 'Interior Coating')} />
+                            <input type="checkbox" name="interiorAddon" id='intcoating' className={'checkbox-input'} onChange={(e) => handleOptionClick(e, 'interiorAddon', 'Interior Coating')} disabled={interiorService.length == 0 || combo.length == 0} title='An Interior Service must be selected.' />
                             <label htmlFor="intcoating" className='checkbox-label'>Interior Ceramic Coating <span className='special-package italic'>(${prices['Interior Coating'].cost[vehicle]})</span></label>
 
-                            <input type="checkbox" name="interiorAddon" id='headliners' className={'checkbox-input'} onChange={(e) => handleOptionClick(e, 'interiorAddon', 'Headliners')} />
+                            <input type="checkbox" name="interiorAddon" id='headliners' className={'checkbox-input'} onChange={(e) => handleOptionClick(e, 'interiorAddon', 'Headliners')} disabled={interiorService.length == 0 || combo.length == 0} title='An Interior Service must be selected.' />
                             <label htmlFor="headliners" className='checkbox-label'><span className='special-package'>**</span>Headliners <span className='special-package italic'>(${prices['Headliners'].cost[vehicle]})</span></label>
 
-                            <input type="checkbox" name="interiorAddon" id='ozone' className='checkbox-input' onChange={(e) => handleOptionClick(e, 'interiorAddon', 'Ozone')} />
+                            <input type="checkbox" name="interiorAddon" id='ozone' className='checkbox-input' onChange={(e) => handleOptionClick(e, 'interiorAddon', 'Ozone')} disabled={interiorService.length == 0 || combo.length == 0} title='An Interior Service must be selected.' />
                             <label htmlFor="ozone" className='checkbox-label'>Ozone Treatment <span className='special-package italic'>(${prices['Ozone'].cost[vehicle]})</span></label>
                         </div>
                         <hr className="contact-border" />
 
-                        <p style={{display: intSelected ? 'block' : 'none'}} className="contact-heading">Vehicle Interior Dirtiness{intSelected ? <span className='special-package'>*</span> : ''}</p>
-                        <p style={{display: intSelected ? 'block' : 'none'}} className='contact-subheading'><span className='special-package'>Note: </span>Only required when an Interior Cleaning is selected. Does not raise cost, just gives us a basic idea of what we'll be dealing with.</p>
-                        <div style={{display: intSelected ? 'flex' : 'none', justifyContent: 'center', gap: '1rem'}}>
+                        <p style={{display: interiorService.length > 0 ? 'block' : 'none'}} className="contact-heading">Vehicle Interior Dirtiness<span className='special-package'>*</span></p>
+                        <p style={{display: interiorService.length > 0 ? 'block' : 'none'}} className='contact-subheading'><span className='special-package'>Note: </span>Only required when an Interior Cleaning is selected. Does not raise cost, just gives us a basic idea of what we'll be dealing with.</p>
+                        <div style={{display: interiorService.length > 0 ? 'flex' : 'none', justifyContent: 'center', gap: '1rem'}}>
                             <div className="label-container">
                                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d69dedc8-dfb3-47bd-80f3-8e76256dfb00/public')`}} className="label-image"></div>
-                                <input type="checkbox" name="dirtiness" id="pretty clean" value="Pretty Clean" className='radio-button' onChange={() => setDirtiness('Pretty Clean')} checked={dirtiness === "Pretty Clean"} />
+                                <input type="checkbox" name="dirtiness" id="pretty clean" value="Pretty Clean" className='radio-button' onChange={(e) => {e.target.checked ? setDirtiness('Pretty Clean') : setDirtiness('')}} checked={dirtiness === "Pretty Clean"} />
                                 <label htmlFor="pretty clean" className='dirty-label' style={{color: 'green'}}>Pretty Clean</label>
                             </div>
                             <div className='label-container'>
                                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7ab9a475-7d86-4a02-22d8-086cdf595200/public')`}} className="label-image"></div>
-                                <input type="checkbox" name="dirtiness" id="normal use" value="Normal Use" className='radio-button' onChange={() => setDirtiness('Normal Use')} checked={dirtiness === "Normal Use"} />
+                                <input type="checkbox" name="dirtiness" id="normal use" value="Normal Use" className='radio-button' onChange={(e) => {e.target.checked ? setDirtiness('Normal Use') : setDirtiness('')}} checked={dirtiness === "Normal Use"} />
                                 <label htmlFor="normal use" className='dirty-label' style={{color: 'yellow'}}>Normal Use</label>
                             </div>
                             <div className="label-container">
                                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f06c6b85-4960-420b-0948-e14d69910a00/public')`}} className="label-image"></div>
-                                <input type="checkbox" name="dirtiness" id="extremely dirty" value="Extremely Dirty" className='radio-button' onChange={() => setDirtiness('Extremely Dirty')} checked={dirtiness === "Extremely Dirty"} />
+                                <input type="checkbox" name="dirtiness" id="extremely dirty" value="Extremely Dirty" className='radio-button' onChange={(e) => {e.target.checked ? setDirtiness('Extremely Dirty') : setDirtiness('')}} checked={dirtiness === "Extremely Dirty"} />
                                 <label htmlFor="extremely dirty" className='dirty-label' style={{color: 'red'}}>Extremely Dirty</label>
                             </div>
                         </div>
 
-                        <p style={{display: intSelected ? 'block' : 'none'}} className="contact-heading">Interior Dog Hair Amount{intSelected ? <span className='special-package'>*</span> : ''}</p>
-                        <p style={{display: intSelected ? 'block' : 'none'}} className='contact-subheading'><span className='special-package'>Note: </span>Only required when an Interior Cleaning is selected.</p>
-                        <div style={{display: intSelected ? 'flex' : 'none', justifyContent: 'center', gap: '1rem'}}>
+                        <p style={{display: interiorService.length > 0 ? 'block' : 'none'}} className="contact-heading">Interior Dog Hair Amount<span className='special-package'>*</span></p>
+                        <p style={{display: interiorService.length > 0 ? 'block' : 'none'}} className='contact-subheading'><span className='special-package'>Note: </span>Only required when an Interior Cleaning is selected.</p>
+                        <div style={{display: interiorService.length > 0 ? 'flex' : 'none', justifyContent: 'center', gap: '1rem'}}>
                             <div className="label-container">
                                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/264a9c3b-d6cd-4575-132a-80d4450cdc00/public')`}} className="label-image"></div>
-                                <input type="checkbox" name="dogHair" id="little or none" value="Little or None" className='radio-button' onChange={(e) => handleOptionClick(e, 'dogHair', 'Little or None')} checked={dogHair === "Little to None"} />
+                                <input type="checkbox" name="dogHair" id="little or none" value="Little or None" className='radio-button' onChange={(e) => handleOptionClick(e, 'dogHair', 'Little or None')} checked={dogHair === "Little or None"} />
                                 <label htmlFor="little or none" className='dirty-label' style={{color: 'green'}}>Little or None</label>
                             </div>
                             <div className="label-container">
