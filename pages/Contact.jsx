@@ -13,7 +13,7 @@ const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
 export default function Contact() {
     const [intSelected, setIntSelected] = useState(false);
     const [coatingSelected, setCoatingSelected] = useState(false);
-    const [gift, setGift] = useState(false);
+    const [gift, setGift] = useState('Myself');
     const [phoneNumber, setPhoneNumber] = useState('');
 
     // State for the "Radio" buttons
@@ -23,7 +23,7 @@ export default function Contact() {
     const [dirtiness, setDirtiness] = useState('');
     const [dogHair, setDogHair] = useState('');
     
-    //State for the newletter form
+    // State for the newletter form
     // const [nameVal, setNameVal] = useState('');
     // const [emailVal, setEmailVal] = useState('');
     // const [newsletter, setNewsletter] = useState(true);
@@ -44,9 +44,49 @@ export default function Contact() {
     const formSubmit = (e) => {
         e.preventDefault();
 
+        // const formInfo = {
+        //     "For Myself": e.target['myself'].checked ? 'Yes' : 'No',
+        //     "Gift Card": e.target['someone'].checked ? 'Yes' : 'No',
+        //     "Name": e.target['name'].value,
+        //     "Email": e.target['email'].value,
+        //     "Phone": phoneNumber,
+        //     "Year": e.target['year'].value,
+        //     "Make": e.target['make'].value,
+        //     "Model": e.target['model'].value,
+        //     "Vehicle Size": e.target['vehicle size'].value,
+        //     // "Newsletter": e.target['newsletter'].checked ? 'Yes' : 'No',
+        //     "Message": e.target['message'].value,
+
+        //     "Exterior Coating": formRef.current['Protect'].checked ? 'Protect' : formRef.current['Protect+'].checked ? 'Protect+' : '',
+
+        //     "Combo": e.target['combo'].checked ? 'Yes' : 'No',
+
+        //     "Interior Cleaning": formRef.current['FullInt'].checked ? 'Full Interior Cleaning' : '',
+        //     "Interior Coating": e.target['intcoating'].checked ? 'Yes' : 'No',
+        //     "Extraction": e.target['extraction'].checked ? 'Yes' : 'No',
+        //     "Headliners": e.target['headliners'].checked ? 'Yes' : 'No',
+        //     "Ozone": e.target['ozone'].checked ? 'Yes' : 'No',
+        //     "Dirtiness": formRef.current['Pretty Clean'].checked ? 'Pretty Clean' : formRef.current['Normal Use'].checked ? 'Normal Use' : formRef.current['Extremely Dirty'].checked ? 'Extremely Dirty' : '',
+        //     "Dog Hair": formRef.current['Little to None'].checked ? 'Little to None' : formRef.current['Medium Amount'].checked ? 'Medium Amount' : formRef.current['Lots of Hair'].checked ? 'Lots of Hair' : '',
+
+        //     "Exterior Wash": formRef.current['Dirt-Less Wash'].checked ? 'Dirt-Less Wash' : '',
+        //     "Clay Bar": e.target['claybar'].checked ? 'Yes' : 'No',
+        //     "Engine Bay": e.target['engine'].checked ? 'Yes' : 'No',
+        //     "Glass Polishing": e.target['glassEx'].checked ? 'Yes' : 'No',
+        //     "Waterspot Removal": e.target['waterspotEx'].checked ? 'Yes' : 'No',
+        //     "Debadging": e.target['debadge'].checked ? 'Yes' : 'No',
+
+        //     "Paint Correction": formRef.current['Single Stage'].checked ? 'Single Stage' : formRef.current['Two Stage'].checked ? 'Two Stage' : '',
+
+        //     "Monthly Maintenance": e.target['monthly'].checked ? 'Yes' : 'No',
+        //     "Yearly Maintenance": e.target['yearly'].checked ? 'Yes' : 'No',
+
+        //     "Price Estimate": currentPrice
+        // }
+        console.log(e.target['gift'].value);
+
         const formInfo = {
-            "For Myself": e.target['myself'].checked ? 'Yes' : 'No',
-            "Gift Card": e.target['someone'].checked ? 'Yes' : 'No',
+            "Who's it for?:": e.target['gift'].value,
             "Name": e.target['name'].value,
             "Email": e.target['email'].value,
             "Phone": phoneNumber,
@@ -54,34 +94,7 @@ export default function Contact() {
             "Make": e.target['make'].value,
             "Model": e.target['model'].value,
             "Vehicle Size": e.target['vehicle size'].value,
-            // "Newsletter": e.target['newsletter'].checked ? 'Yes' : 'No',
             "Message": e.target['message'].value,
-
-            "Exterior Coating": formRef.current['Protect'].checked ? 'Protect' : formRef.current['Protect+'].checked ? 'Protect+' : '',
-
-            "Combo": e.target['combo'].checked ? 'Yes' : 'No',
-
-            "Interior Cleaning": formRef.current['FullInt'].checked ? 'Full Interior Cleaning' : '',
-            "Interior Coating": e.target['intcoating'].checked ? 'Yes' : 'No',
-            "Extraction": e.target['extraction'].checked ? 'Yes' : 'No',
-            "Headliners": e.target['headliners'].checked ? 'Yes' : 'No',
-            "Ozone": e.target['ozone'].checked ? 'Yes' : 'No',
-            "Dirtiness": formRef.current['Pretty Clean'].checked ? 'Pretty Clean' : formRef.current['Normal Use'].checked ? 'Normal Use' : formRef.current['Extremely Dirty'].checked ? 'Extremely Dirty' : '',
-            "Dog Hair": formRef.current['Little to None'].checked ? 'Little to None' : formRef.current['Medium Amount'].checked ? 'Medium Amount' : formRef.current['Lots of Hair'].checked ? 'Lots of Hair' : '',
-
-            "Exterior Wash": formRef.current['Dirt-Less Wash'].checked ? 'Dirt-Less Wash' : '',
-            "Clay Bar": e.target['claybar'].checked ? 'Yes' : 'No',
-            "Engine Bay": e.target['engine'].checked ? 'Yes' : 'No',
-            "Glass Polishing": e.target['glassEx'].checked ? 'Yes' : 'No',
-            "Waterspot Removal": e.target['waterspotEx'].checked ? 'Yes' : 'No',
-            "Debadging": e.target['debadge'].checked ? 'Yes' : 'No',
-
-            "Paint Correction": formRef.current['Single Stage'].checked ? 'Single Stage' : formRef.current['Two Stage'].checked ? 'Two Stage' : '',
-
-            "Monthly Maintenance": e.target['monthly'].checked ? 'Yes' : 'No',
-            "Yearly Maintenance": e.target['yearly'].checked ? 'Yes' : 'No',
-
-            "Price Estimate": currentPrice
         }
 
         const formData = new FormData();
@@ -96,87 +109,86 @@ export default function Contact() {
         });
 
         
-        if (intSelected) {
-            if (dirtiness === '' || dogHair === '') {
-                toast.error("Please fill out the Interior Dirtiness and Dog Hair Sections.", {
-                    position: "bottom-center",
-                    autoClose: 5000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined
-                })
-            } else {
-                finalSubmit(formData, e);
-            }
-        } else if (!intSelected || dirtiness !== '' && dogHair !== '') {
-            finalSubmit(formData, e)
-        }
+        // if (intSelected) {
+        //     if (dirtiness === '' || dogHair === '') {
+        //         toast.error("Please fill out the Interior Dirtiness and Dog Hair Sections.", {
+        //             position: "bottom-center",
+        //             autoClose: 5000,
+        //             hideProgressBar: false,
+        //             closeOnClick: true,
+        //             pauseOnHover: true,
+        //             draggable: true,
+        //             progress: undefined
+        //         })
+        //     } else {
+        //         finalSubmit(formData, e);
+        //     }
+        // } else if (!intSelected || dirtiness !== '' && dogHair !== '') {
+        //     finalSubmit(formData, e)
+        // }
     };
 
     const finalSubmit = (formData, e) => {
-        fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
-            method: "POST",
-            body: formData
-        }).then((test) => {
-            toast.success("Form submitted! Expect a text response from us soon!", {
-                position: "bottom-center",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined
-            })
-            e.target.reset();
-            setPhoneNumber('');
-            setPaintCorrection('');
-            setInteriorCleaning('');
-            setExteriorCoating('');
-            setDirtiness('');
-            setDogHair('');
-            setIntSelected(false);
-            setCoatingSelected(false);
-            setCurrentPrice(0)
-            window.scrollTo(0, 0);
+        console.log(formData);
+        // fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
+        //     method: "POST",
+        //     body: formData
+        // }).then((test) => {
+        //     toast.success("Form submitted! Expect a text response from us soon!", {
+        //         position: "bottom-center",
+        //         autoClose: 5000,
+        //         hideProgressBar: false,
+        //         closeOnClick: true,
+        //         pauseOnHover: true,
+        //         draggable: true,
+        //         progress: undefined
+        //     })
+        //     e.target.reset();
+        //     setPhoneNumber('');
+        //     setPaintCorrection('');
+        //     setInteriorCleaning('');
+        //     setExteriorCoating('');
+        //     setDirtiness('');
+        //     setDogHair('');
+        //     setIntSelected(false);
+        //     setCoatingSelected(false);
+        //     setCurrentPrice(0)
+        //     window.scrollTo(0, 0);
 
-        }).catch(error => {
-            toast.error("An error occurred, please try again." + error, {
-                position: "bottom-center",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined
-            })
-        });
+        // }).catch(error => {
+        //     toast.error("An error occurred, please try again." + error, {
+        //         position: "bottom-center",
+        //         autoClose: 5000,
+        //         hideProgressBar: false,
+        //         closeOnClick: true,
+        //         pauseOnHover: true,
+        //         draggable: true,
+        //         progress: undefined
+        //     })
+        // });
     }
 
     let handleGiftSelect = (giftButton) => {
         setGift(giftButton)
     }
 
-    let handleIntSelect = () => {
-        let currForm = formRef.current;
+    // let handleIntSelect = () => {
+    //     let currForm = formRef.current;
 
-        // Interior Cleaning selected check
-        if (!currForm['interiorCleaning'][0].checked && !currForm['interiorCleaning'][1].checked && !currForm['combo'].checked) {
-            currForm['intcoating'].checked = false;
-            setIntSelected(false);
-        } else {
-            setIntSelected(true);
-        }
+    //     if (!currForm['interiorCleaning'][0].checked && !currForm['interiorCleaning'][1].checked && !currForm['combo'].checked) {
+    //         currForm['intcoating'].checked = false;
+    //         setIntSelected(false);
+    //     } else {
+    //         setIntSelected(true);
+    //     }
 
-        // Coating selected check
-        if (!currForm['exteriorCoating'][0].checked && !currForm['exteriorCoating'][1].checked) {
-            setCoatingSelected(false);
-        } else {
-            setPaintCorrection('');
-            setCoatingSelected(true);
-        }
-    }
+    //     if (!currForm['exteriorCoating'][0].checked && !currForm['exteriorCoating'][1].checked) {
+    //         setCoatingSelected(false);
+    //     } else {
+    //         setPaintCorrection('');
+    //         setCoatingSelected(true);
+    //     }
+    // }
 
     function formatPhoneNumber(value) {
         // if input value is falsy eg if the user deletes the input, then just return
@@ -305,6 +317,13 @@ export default function Contact() {
         setVehicle(e.target.value);
     }
 
+    let handleOptionClick = (e, button, service) => {
+        // start by checking if e.target.checked is true if it is then add prices[service] else subtract
+
+        // then start doing the edgework based on the service selected and e.target.checked, if checked then included things will need to be disabled, else enabled
+
+    }
+
     return (
         <section className="contact-container" id="contact">
             <Head>
@@ -356,7 +375,7 @@ export default function Contact() {
                     <h3 style={{ marginBottom: 0 }}>Need us to come to you?</h3>
                     <p className="hours-p" style={{ marginBottom: 0 }}>We can perform mobile detailing in the following cities:</p>
                     <p className="hours-p"><span style={{ fontWeight: 'bold', color: '#9f9f9f' }}> Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Tehaleh, Black Diamond, Milton, Edgewood, and Graham.</span></p>
-                    <p>Overnight Detailing: For drop offs we have a safe lockable garage, so if it's more convenient for you feel free to drop your car off the night before! We can usually also do our details at night so you can drop your car off and have it done in the morning! </p>
+                    <p> <span className="bold">Overnight Detailing:</span> For drop offs we have a safe lockable garage, so if it's more convenient for you feel free to drop your car off the night before! We can usually also do our details at night so you can drop your car off and have it done in the morning! </p>
                     <p className='subtext italic'><span className='special-package'>*Note:</span> If the total of the mobile services you choose is less than $200, there is a $1/mile from our shop fee to cover travel costs.</p>
                 </div>
             </div>
@@ -370,10 +389,15 @@ export default function Contact() {
                             <p className="contact-heading">Basic Information</p>
                             <p style={{display: gift ? 'block' : 'none'}} className='contact-subheading'>*When buying a gift certificate for someone else fill out YOUR contact information, but THEIR vehicle information (or as much as you know about their vehicle). We'll then get in contact with you to get the gift card to you!</p>
                             <div style={{margin: '0 auto'}} className='basic-info-container'>
-                                <input type="checkbox" name="myself" id='myself' className='checkbox-input' onChange={() => handleGiftSelect(false)} checked={gift ? false : true} />
+                                <input type="radio" name="gift" id='myself' value='Myself' onChange={(e) => setGift(e.target.value)} checked={gift === 'Myself'} className='radio-button' />
                                 <label htmlFor="myself" className='checkbox-label'>For Myself</label>
-                                <input type="checkbox" name="someone" id='someone' className='checkbox-input' onChange={() => handleGiftSelect(true)} checked={gift ? true : false} />
-                                <label htmlFor="someone" className='checkbox-label'>For Someone Else</label>
+
+                                <input type="radio" name="gift" id='card' value='Gift Card' onChange={(e) => setGift(e.target.value)} checked={gift === 'Gift Card'} className='radio-button' />
+                                <label htmlFor="card" className='checkbox-label'>Gift Card</label>
+                                {/* <input type="radio" name="gift" id='myself' className='checkbox-input' onChange={() => handleGiftSelect(false)} checked={gift ? false : true} />
+                                <label htmlFor="myself" className='checkbox-label'>For Myself</label>
+                                <input type="radio" name="gift" id='someone' className='checkbox-input' onChange={() => handleGiftSelect(true)} checked={gift ? true : false} />
+                                <label htmlFor="someone" className='checkbox-label'>For Someone Else</label> */}
                             </div>
                             
                             <div style={{marginBottom: 0}} className='basic-info-container'>
@@ -583,13 +607,46 @@ export default function Contact() {
                     </div>
 
                     <div className="form-section">
-                        <p className='contact-heading'>Ceramic Coating Services <a href='/services/exterior-ceramic-coating' className='aside-link'><img src='../assets/icons/linking.png' alt='external link' className='icon-36' /></a></p>
-                        <p className='contact-subheading'><span className='special-package'>Note: </span>Both Ceramic Coatings also include our Dirt-Less Wash, Paint Correction, and Engine Bay Wash</p>
+                        <p className='contact-heading'>Exterior Services <a href='/services/dirtless-wash' className='aside-link'><img src='../assets/icons/linking.png' alt='external link' className='icon-36' /></a></p>
+                        <p className='contact-subheading'>Our services that are focused on the outside of the vehicle, whether it's just a wash or a full paint correction.</p>
                         <div>
-                            <input type="checkbox" name="exteriorCoating" id="Protect" value="Protect" className='radio-button' onChange={(e) => {handleRadioClick(e, 'exteriorCoating'); handleIntSelect()}} checked={exteriorCoating === "Protect"} />
+                            <input type="checkbox" name="exterior" id="Protect" value="Protect" className='radio-button' checked={exteriorCoating === "Protect"} />
                             <label htmlFor="Protect" className='checkbox-label'>Protect <span className='special-package italic'>(${prices['protect'].cost[vehicle]})</span></label>
-                            <input type="checkbox" name="exteriorCoating" id="Protect+" value="Protect+" className='radio-button' onChange={(e) => {handleRadioClick(e, 'exteriorCoating'); handleIntSelect()}} checked={exteriorCoating === "Protect+"} />
+
+                            <input type="checkbox" name="exterior" id="Protect+" value="Protect+" className='radio-button' checked={exteriorCoating === "Protect+"} />
                             <label htmlFor="Protect+" className='checkbox-label'>Protect+ <span className='special-package italic'>(${prices['protect+'].cost[vehicle]})</span></label>
+
+                            <input type="checkbox" name="exterior" id="Dirt-Less Wash" value="Dirt-Less Wash" className='radio-button' disabled={!coatingSelected ? "" : "disabled"} checked={paintCorrection === 'Dirt-Less Wash'} />
+                            <label htmlFor="Dirt-Less Wash" className='checkbox-label'>Dirt-Less Wash <span className='special-package italic'>(${prices['dirt-less wash'].cost[vehicle]})</span></label>
+
+                            <input type="checkbox" name="exterior" id="Single Stage" value="Single Stage" className='radio-button' disabled={!coatingSelected ? "" : "disabled"} checked={paintCorrection === 'Single Stage'} />
+                            <label htmlFor="Single Stage" className='checkbox-label'>Single Stage Paint Correction <span className='special-package italic'>(${prices['single stage'].cost[vehicle]})</span></label>
+
+                            <input type="checkbox" name="exterior" id="Two Stage" value="Two Stage" className='radio-button' disabled={!coatingSelected ? "" : "disabled"} checked={paintCorrection === 'Two Stage'} />
+                            <label htmlFor="Two Stage" className='checkbox-label'>Two Stage Paint Correction <span className='special-package italic'>(${prices['two stage'].cost[vehicle]})</span></label>
+                        </div>
+                        <hr className="contact-border" />
+
+                        <p className="contact-heading">Exterior Add-ons <a href='/services/add-ons#exterior' className='aside-link'><img src='../assets/icons/linking.png' alt='external link' className='icon-36' /></a></p>
+                        <p className='contact-subheading'><span className='special-package'>Note: </span>All exterior add-ons besides debadging and engine bay cleaning will require our Dirt-Less Wash service.</p>
+                        <p className='contact-subheading'><span className='special-package'>**</span>Services that are charged by the hour, $80 or one hour worth of work is added to the Price Estimator, the amount of time it takes us to perform these services can vary</p>
+                        <div>
+                            <input type="checkbox" id='claybar' name="claybar" className='checkbox-input' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['clay bar'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['clay bar'].cost[vehicle])} />
+                            <label htmlFor="claybar" className='checkbox-label'>Clay Bar Treatment <span className='special-package italic'>(${prices['clay bar'].cost[vehicle]})</span></label>
+
+                            <input type="checkbox" id='engine' name="engine" className='checkbox-input' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['engine'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['engine'].cost[vehicle])} />
+                            <label htmlFor="engine" className='checkbox-label'>Engine Bay <span className='special-package italic'>(${prices['engine'].cost[vehicle]})</span></label>
+
+                            <input type="checkbox" id='glassEx' name="glass" className='checkbox-input' onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['glass'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['glass'].cost[vehicle])} />
+                            <label htmlFor="glassEx" className='checkbox-label'><span className='special-package'>**</span>Glass Polishing <span className='special-package italic'>($80/hour)</span></label>
+
+                            <input type="checkbox" id='waterspotEx' name="waterspot" className='checkbox-input' onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['waterspot'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['waterspot'].cost[vehicle])} />
+                            <label htmlFor="waterspotEx" className='checkbox-label'><span className='special-package'>**</span>Waterspot, Overspray, or Road Paint Removal <span className='special-package italic'>($80/hour)</span></label>
+
+                            <input type="checkbox" id='debadge' name="debadge" className='checkbox-input' onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['debadging'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['debadging'].cost[vehicle])} />
+                            <label htmlFor="debadge" className='checkbox-label'><span className='special-package'>**</span>Debadging <span className='special-package italic'>($80/hour)</span></label>
+
+                            <input type="hidden" name="_gotcha" style={{ display: 'none !important' }} />
                         </div>
                         <hr className="contact-border" />
 
@@ -608,8 +665,10 @@ export default function Contact() {
                         <p className='contact-heading'>Interior + Exterior Combo <a href='/services/interior-exterior-detailing-combo' className='aside-link'><img src='../assets/icons/linking.png' alt='external link' className='icon-36' /></a></p>
                         <p className='contact-subheading'>Includes a Full Interior Cleaning, our Dirt-Less Wash, and a <span className='special-package'>FREE</span> Engine Bay Cleaning!</p>
                         <div>
-                            <input type="checkbox" name="combo" id='combo' className='checkbox-input' onClick={(e) => {handleIntSelect(); e.target.checked ? setCurrentPrice(currentPrice + prices['dirt-less detail'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['dirt-less detail'].cost[vehicle])}} />
+                            <input type="checkbox" name="combo" id='combo' className='checkbox-input' />
                             <label htmlFor="combo" className='checkbox-label'>The Dirt-Less Detail <span className='special-package italic'>(${prices['dirt-less detail'].cost[vehicle]})</span></label>
+                            {/* <input type="checkbox" name="combo" id='combo' className='checkbox-input' onClick={(e) => {handleIntSelect(); e.target.checked ? setCurrentPrice(currentPrice + prices['dirt-less detail'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['dirt-less detail'].cost[vehicle])}} />
+                            <label htmlFor="combo" className='checkbox-label'>The Dirt-Less Detail <span className='special-package italic'>(${prices['dirt-less detail'].cost[vehicle]})</span></label> */}
                         </div>
                     </div>
 
@@ -617,9 +676,9 @@ export default function Contact() {
                         <p className='contact-heading'>Interior Cleaning Services <a href='/services/full-interior-detail' className='aside-link'><img src='../assets/icons/linking.png' alt='external link' className='icon-36' /></a></p>
                         <p className='contact-subheading'><span className='special-package'>**</span>Biohazard cleaning priced based on the condition of the vehicle, selecting it here adds the base price of $500 to the Price Estimator.</p>
                         <div>
-                            <input type="checkbox" name="interiorCleaning" id="FullInt" value="Full Interior Cleaning" className='radio-button' onChange={(e) => {handleRadioClick(e, 'interiorCleaning'); handleIntSelect()}} checked={interiorCleaning === "FullInt"} />
+                            <input type="checkbox" name="interiorCleaning" id="FullInt" value="Full Interior Cleaning" className='radio-button' checked={interiorCleaning === "FullInt"} />
                             <label htmlFor="FullInt" className='checkbox-label'>Full Interior Cleaning <span className='special-package italic'>(${prices['fullint'].cost[vehicle]})</span></label>    
-                            <input type="checkbox" name="interiorCleaning" id="Bio" value="Biohazard Cleaning" className='radio-button' onChange={(e) => {handleRadioClick(e, 'interiorCleaning'); handleIntSelect()}} checked={interiorCleaning === "Bio"} />
+                            <input type="checkbox" name="interiorCleaning" id="Bio" value="Biohazard Cleaning" className='radio-button' checked={interiorCleaning === "Bio"} />
                             <label htmlFor="Bio" className='checkbox-label'>Biohazard Cleaning<span className='special-package'>**</span> <span className='special-package italic'>($500-$1000)</span></label>
                         </div>
                         <hr className="contact-border" />
@@ -647,17 +706,17 @@ export default function Contact() {
                         <div style={{display: intSelected ? 'flex' : 'none', justifyContent: 'center', gap: '1rem'}}>
                             <div className="label-container">
                                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d69dedc8-dfb3-47bd-80f3-8e76256dfb00/public')`}} className="label-image"></div>
-                                <input type="checkbox" name="dirtiness" id="Pretty Clean" value="Pretty Clean" className='radio-button' onChange={(e) => handleRadioClick(e, 'dirtiness')} checked={dirtiness === "Pretty Clean"} />
+                                <input type="checkbox" name="dirtiness" id="Pretty Clean" value="Pretty Clean" className='radio-button' checked={dirtiness === "Pretty Clean"} />
                                 <label htmlFor="Pretty Clean" className='dirty-label' style={{color: 'green'}}>Pretty Clean</label>
                             </div>
                             <div className='label-container'>
                                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7ab9a475-7d86-4a02-22d8-086cdf595200/public')`}} className="label-image"></div>
-                                <input type="checkbox" name="dirtiness" id="Normal Use" value="Normal Use" className='radio-button' onChange={(e) => handleRadioClick(e, 'dirtiness')} checked={dirtiness === "Normal Use"} />
+                                <input type="checkbox" name="dirtiness" id="Normal Use" value="Normal Use" className='radio-button' checked={dirtiness === "Normal Use"} />
                                 <label htmlFor="Normal Use" className='dirty-label' style={{color: 'yellow'}}>Normal Use</label>
                             </div>
                             <div className="label-container">
                                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f06c6b85-4960-420b-0948-e14d69910a00/public')`}} className="label-image"></div>
-                                <input type="checkbox" name="dirtiness" id="Extremely Dirty" value="Extremely Dirty" className='radio-button' onChange={(e) => handleRadioClick(e, 'dirtiness')} checked={dirtiness === "Extremely Dirty"} />
+                                <input type="checkbox" name="dirtiness" id="Extremely Dirty" value="Extremely Dirty" className='radio-button' checked={dirtiness === "Extremely Dirty"} />
                                 <label htmlFor="Extremely Dirty" className='dirty-label' style={{color: 'red'}}>Extremely Dirty</label>
                             </div>
                         </div>
@@ -667,56 +726,21 @@ export default function Contact() {
                         <div style={{display: intSelected ? 'flex' : 'none', justifyContent: 'center', gap: '1rem'}}>
                             <div className="label-container">
                                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/264a9c3b-d6cd-4575-132a-80d4450cdc00/public')`}} className="label-image"></div>
-                                <input type="checkbox" name="dogHair" id="Little to None" value="Little to None" className='radio-button' onChange={(e) => handleRadioClick(e, 'dogHair')} checked={dogHair === "Little to None"} />
+                                <input type="checkbox" name="dogHair" id="Little to None" value="Little to None" className='radio-button' checked={dogHair === "Little to None"} />
                                 <label htmlFor="Little to None" className='dirty-label' style={{color: 'green'}}>Little to None</label>
                             </div>
                             <div className="label-container">
                                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/53860f31-e2a6-409d-fc5f-018eb1580e00/public')`}} className="label-image"></div>
-                                <input type="checkbox" name="dogHair" id="Medium Amount" value="Medium Amount" className='radio-button' onChange={(e) => handleRadioClick(e, 'dogHair')} checked={dogHair === "Medium Amount"} />
+                                <input type="checkbox" name="dogHair" id="Medium Amount" value="Medium Amount" className='radio-button' checked={dogHair === "Medium Amount"} />
                                 <label htmlFor="Medium Amount" className='dirty-label' style={{color: 'yellow'}}>Medium Amount</label>
                             </div>
                             <div className="label-container">
                                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5153d5b2-eae0-4675-361f-5d761349b500/public')`}} className="label-image"></div>
-                                <input type="checkbox" name="dogHair" id="Lots of Hair" value="Lots of Hair" className='radio-button' onChange={(e) => handleRadioClick(e, 'dogHair')} checked={dogHair === "Lots of Hair"} />
+                                <input type="checkbox" name="dogHair" id="Lots of Hair" value="Lots of Hair" className='radio-button' checked={dogHair === "Lots of Hair"} />
                                 <label htmlFor="Lots of Hair" className='dirty-label' style={{color: 'red'}}>Plenty of Hair</label>
                             </div>
                         </div>
 
-                    </div>
-
-                    <div className="form-section">
-                        <p className='contact-heading'>Exterior Services <a href='/services/dirtless-wash' className='aside-link'><img src='../assets/icons/linking.png' alt='external link' className='icon-36' /></a></p>
-                        <p className='contact-subheading'>Our services that are focused on the outside of the vehicle, whether it's just a wash or a full paint correction.</p>
-                        <div>
-                            <input type="checkbox" name="exteriorWash" id="Dirt-Less Wash" value="Dirt-Less Wash" className='radio-button' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => handleRadioClick(e, 'paintCorrection')} checked={paintCorrection === 'Dirt-Less Wash'} />
-                            <label htmlFor="Dirt-Less Wash" className='checkbox-label'>Dirt-Less Wash <span className='special-package italic'>(${prices['dirt-less wash'].cost[vehicle]})</span></label>
-                            <input type="checkbox" name="paintCorrection" id="Single Stage" value="Single Stage" className='radio-button' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => handleRadioClick(e, 'paintCorrection')} checked={paintCorrection === 'Single Stage'} />
-                            <label htmlFor="Single Stage" className='checkbox-label'>Single Stage Paint Correction <span className='special-package italic'>(${prices['single stage'].cost[vehicle]})</span></label>
-                            <input type="checkbox" name="paintCorrection" id="Two Stage" value="Two Stage" className='radio-button' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => handleRadioClick(e, 'paintCorrection')} checked={paintCorrection === 'Two Stage'} />
-                            <label htmlFor="Two Stage" className='checkbox-label'>Two Stage Paint Correction <span className='special-package italic'>(${prices['two stage'].cost[vehicle]})</span></label>
-                        </div>
-                        <hr className="contact-border" />
-
-                        <p className="contact-heading">Exterior Add-ons <a href='/services/add-ons#exterior' className='aside-link'><img src='../assets/icons/linking.png' alt='external link' className='icon-36' /></a></p>
-                        <p className='contact-subheading'><span className='special-package'>Note: </span>All exterior add-ons besides debadging and engine bay cleaning will require our Dirt-Less Wash service.</p>
-                        <p className='contact-subheading'><span className='special-package'>**</span>Services that are charged by the hour, $80 or one hour worth of work is added to the Price Estimator, the amount of time it takes us to perform these services can vary</p>
-                        <div>
-                            <input type="checkbox" id='claybar' name="claybar" className='checkbox-input' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['clay bar'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['clay bar'].cost[vehicle])} />
-                            <label htmlFor="claybar" className='checkbox-label'>Clay Bar Treatment <span className='special-package italic'>(${prices['clay bar'].cost[vehicle]})</span></label>
-                            <input type="checkbox" id='engine' name="engine" className='checkbox-input' disabled={!coatingSelected ? "" : "disabled"} onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['engine'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['engine'].cost[vehicle])} />
-                            <label htmlFor="engine" className='checkbox-label'>Engine Bay <span className='special-package italic'>(${prices['engine'].cost[vehicle]})</span></label>
-
-                            <input type="checkbox" id='glassEx' name="glass" className='checkbox-input' onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['glass'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['glass'].cost[vehicle])} />
-                            <label htmlFor="glassEx" className='checkbox-label'><span className='special-package'>**</span>Glass Polishing <span className='special-package italic'>($80/hour)</span></label>
-
-                            <input type="checkbox" id='waterspotEx' name="waterspot" className='checkbox-input' onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['waterspot'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['waterspot'].cost[vehicle])} />
-                            <label htmlFor="waterspotEx" className='checkbox-label'><span className='special-package'>**</span>Waterspot, Overspray, or Road Paint Removal <span className='special-package italic'>($80/hour)</span></label>
-
-                            <input type="checkbox" id='debadge' name="debadge" className='checkbox-input' onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['debadging'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['debadging'].cost[vehicle])} />
-                            <label htmlFor="debadge" className='checkbox-label'><span className='special-package'>**</span>Debadging <span className='special-package italic'>($80/hour)</span></label>
-
-                            <input type="hidden" name="_gotcha" style={{ display: 'none !important' }} />
-                        </div>
                     </div>
 
                     <div className='submit-info-container'>
