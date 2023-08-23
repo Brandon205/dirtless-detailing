@@ -20,13 +20,15 @@ export default function Contact() {
     const [paintCorrection, setPaintCorrection] = useState('');
     const [interiorCleaning, setInteriorCleaning] = useState('');
     const [exteriorCoating, setExteriorCoating] = useState('');
-    const [dirtiness, setDirtiness] = useState('');
-    const [dogHair, setDogHair] = useState('');
 
     const [exteriorService, setExteriorService] = useState('');
     const [interiorService, setInteriorService] = useState('');
+    const [combo, setCombo] = useState('');
     const [exteriorAddons, setExteriorAddons] = useState([]);
     const [interiorAddons, setInteriorAddons] = useState([]);
+    const [dirtiness, setDirtiness] = useState('');
+    const [dogHair, setDogHair] = useState('');
+    const [vip, setVip] = useState('');
     
     // State for the newletter form
     // const [nameVal, setNameVal] = useState('');
@@ -343,6 +345,10 @@ export default function Contact() {
             } else {
                 setExteriorService(service);
             }
+
+            if (e.target.checked) {
+                // In here is where the removal of prices will happen if needed
+            }
         } else if (button === 'interior') {
             if (interiorService === service) {
                 setCurrentPrice(currentPrice - prices[interiorService].cost[vehicle]);
@@ -374,6 +380,36 @@ export default function Contact() {
                 tempArr.push(service)
                 setCurrentPrice(currentPrice + prices[service].cost[vehicle])
                 setInteriorAddons(tempArr)
+            }
+        } else if (button === 'dogHair') {
+            if (dogHair === service) {
+                setCurrentPrice(currentPrice - prices['Dog Hair'].cost[service]);
+                setDogHair('');
+            } else if (dogHair.length > 0) {
+                setCurrentPrice(currentPrice - prices['Dog Hair'].cost[dogHair] + prices['Dog Hair'].cost[service]);
+                setDogHair(service);
+            } else {
+                setCurrentPrice(currentPrice + prices['Dog Hair'].cost[service]);
+                setDogHair('');
+            }
+        } else if (button === 'vip') {
+            if (service === vip) {
+                setCurrentPrice(currentPrice - prices[service].cost[vehicle]);
+                setVip('');
+            } else if (vip.length > 0) {
+                setCurrentPrice(currentPrice - prices[vip].cost[vehicle] + prices[service].cost[vehicle]);
+                setVip(service);
+            } else {
+                setCurrentPrice(currentPrice + prices[service].cost[vehicle]);
+                setVip(service);
+            }
+        } else if (button === 'Combo') {
+            if (combo.length > 0) {
+                setCurrentPrice(currentPrice - prices['Dirt-Less Detail'].cost[vehicle]);
+                setCombo('');
+            } else {
+                setCurrentPrice(currentPrice + prices['Dirt-Less Detail'].cost[vehicle]);
+                setCombo('Combo');
             }
         }
     }
@@ -707,10 +743,10 @@ export default function Contact() {
                         <p style={{paddingTop: '2rem'}} className="contact-heading">VIP Options <a href='/services/exterior-ceramic-coating' className='aside-link'><img src='../assets/icons/linking.png' alt='external link' className='icon-36' /></a></p>
                         <p className='contact-subheading'>To keep your Ceramic Coating Warranties. (You can ask us about these later too!)</p>
                         <div>
-                            <input type="checkbox" name="monthly" id='monthly' className='checkbox-input' onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['monthly'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['monthly'].cost[vehicle])} />
+                            <input type="checkbox" name="vip" id='monthly' className='checkbox-input' onChange={(e) => handleOptionClick(e, 'vip', 'Monthly')} checked={vip === 'Monthly'} />
                             <label htmlFor="monthly" className='checkbox-label'>Monthly VIP <span className='special-package italic'>(${prices['Monthly'].cost[vehicle]})</span></label>
 
-                            <input type="checkbox" name="yearly" id='yearly' className='checkbox-input' onChange={(e) => e.target.checked ? setCurrentPrice(currentPrice + prices['yearly'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['yearly'].cost[vehicle])} />
+                            <input type="checkbox" name="vip" id='yearly' className='checkbox-input' onChange={(e) => handleOptionClick(e, 'vip', 'Yearly')} checked={vip === 'Yearly'} />
                             <label htmlFor="yearly" className='checkbox-label'>Yearly VIP <span className='special-package italic'>(${prices['Yearly'].cost[vehicle]})</span></label>
                         </div>
                     </div>
@@ -719,7 +755,7 @@ export default function Contact() {
                         <p className='contact-heading'>Interior + Exterior Combo <a href='/services/interior-exterior-detailing-combo' className='aside-link'><img src='../assets/icons/linking.png' alt='external link' className='icon-36' /></a></p>
                         <p className='contact-subheading'>Includes a Full Interior Cleaning, our Dirt-Less Wash, and a <span className='special-package'>FREE</span> Engine Bay Cleaning!</p>
                         <div>
-                            <input type="checkbox" name="combo" id='combo' className='checkbox-input' />
+                            <input type="checkbox" name="combo" id='combo' value='Dirt-Less Detail' className='checkbox-input' onChange={(e) => handleOptionClick(e, 'Combo', 'Dirt-Less Detail')} />
                             <label htmlFor="combo" className='checkbox-label'>The Dirt-Less Detail <span className='special-package italic'>(${prices['Dirt-Less Detail'].cost[vehicle]})</span></label>
                             {/* <input type="checkbox" name="combo" id='combo' className='checkbox-input' onClick={(e) => {handleIntSelect(); e.target.checked ? setCurrentPrice(currentPrice + prices['dirt-less detail'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['dirt-less detail'].cost[vehicle])}} />
                             <label htmlFor="combo" className='checkbox-label'>The Dirt-Less Detail <span className='special-package italic'>(${prices['dirt-less detail'].cost[vehicle]})</span></label> */}
@@ -757,22 +793,22 @@ export default function Contact() {
                         <hr className="contact-border" />
 
                         <p style={{display: intSelected ? 'block' : 'none'}} className="contact-heading">Vehicle Interior Dirtiness{intSelected ? <span className='special-package'>*</span> : ''}</p>
-                        <p style={{display: intSelected ? 'block' : 'none'}} className='contact-subheading'><span className='special-package'>Note: </span>Only required when an Interior Cleaning is selected.</p>
+                        <p style={{display: intSelected ? 'block' : 'none'}} className='contact-subheading'><span className='special-package'>Note: </span>Only required when an Interior Cleaning is selected. Does not raise cost, just gives us a basic idea of what we'll be dealing with.</p>
                         <div style={{display: intSelected ? 'flex' : 'none', justifyContent: 'center', gap: '1rem'}}>
                             <div className="label-container">
                                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d69dedc8-dfb3-47bd-80f3-8e76256dfb00/public')`}} className="label-image"></div>
-                                <input type="checkbox" name="dirtiness" id="Pretty Clean" value="Pretty Clean" className='radio-button' checked={dirtiness === "Pretty Clean"} />
-                                <label htmlFor="Pretty Clean" className='dirty-label' style={{color: 'green'}}>Pretty Clean</label>
+                                <input type="checkbox" name="dirtiness" id="pretty clean" value="Pretty Clean" className='radio-button' onChange={() => setDirtiness('Pretty Clean')} checked={dirtiness === "Pretty Clean"} />
+                                <label htmlFor="pretty clean" className='dirty-label' style={{color: 'green'}}>Pretty Clean</label>
                             </div>
                             <div className='label-container'>
                                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7ab9a475-7d86-4a02-22d8-086cdf595200/public')`}} className="label-image"></div>
-                                <input type="checkbox" name="dirtiness" id="Normal Use" value="Normal Use" className='radio-button' checked={dirtiness === "Normal Use"} />
-                                <label htmlFor="Normal Use" className='dirty-label' style={{color: 'yellow'}}>Normal Use</label>
+                                <input type="checkbox" name="dirtiness" id="normal use" value="Normal Use" className='radio-button' onChange={() => setDirtiness('Normal Use')} checked={dirtiness === "Normal Use"} />
+                                <label htmlFor="normal use" className='dirty-label' style={{color: 'yellow'}}>Normal Use</label>
                             </div>
                             <div className="label-container">
                                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f06c6b85-4960-420b-0948-e14d69910a00/public')`}} className="label-image"></div>
-                                <input type="checkbox" name="dirtiness" id="Extremely Dirty" value="Extremely Dirty" className='radio-button' checked={dirtiness === "Extremely Dirty"} />
-                                <label htmlFor="Extremely Dirty" className='dirty-label' style={{color: 'red'}}>Extremely Dirty</label>
+                                <input type="checkbox" name="dirtiness" id="extremely dirty" value="Extremely Dirty" className='radio-button' onChange={() => setDirtiness('Extremely Dirty')} checked={dirtiness === "Extremely Dirty"} />
+                                <label htmlFor="extremely dirty" className='dirty-label' style={{color: 'red'}}>Extremely Dirty</label>
                             </div>
                         </div>
 
@@ -781,18 +817,18 @@ export default function Contact() {
                         <div style={{display: intSelected ? 'flex' : 'none', justifyContent: 'center', gap: '1rem'}}>
                             <div className="label-container">
                                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/264a9c3b-d6cd-4575-132a-80d4450cdc00/public')`}} className="label-image"></div>
-                                <input type="checkbox" name="dogHair" id="Little to None" value="Little to None" className='radio-button' checked={dogHair === "Little to None"} />
-                                <label htmlFor="Little to None" className='dirty-label' style={{color: 'green'}}>Little to None</label>
+                                <input type="checkbox" name="dogHair" id="little or none" value="Little or None" className='radio-button' onChange={(e) => handleOptionClick(e, 'dogHair', 'Little or None')} checked={dogHair === "Little to None"} />
+                                <label htmlFor="little or none" className='dirty-label' style={{color: 'green'}}>Little or None</label>
                             </div>
                             <div className="label-container">
                                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/53860f31-e2a6-409d-fc5f-018eb1580e00/public')`}} className="label-image"></div>
-                                <input type="checkbox" name="dogHair" id="Medium Amount" value="Medium Amount" className='radio-button' checked={dogHair === "Medium Amount"} />
-                                <label htmlFor="Medium Amount" className='dirty-label' style={{color: 'yellow'}}>Medium Amount</label>
+                                <input type="checkbox" name="dogHair" id="medium amount" value="Medium Amount" className='radio-button' onChange={(e) => handleOptionClick(e, 'dogHair', 'Medium Amount')} checked={dogHair === "Medium Amount"} />
+                                <label htmlFor="medium amount" className='dirty-label' style={{color: 'yellow'}}>Medium Amount</label>
                             </div>
                             <div className="label-container">
                                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5153d5b2-eae0-4675-361f-5d761349b500/public')`}} className="label-image"></div>
-                                <input type="checkbox" name="dogHair" id="Lots of Hair" value="Lots of Hair" className='radio-button' checked={dogHair === "Lots of Hair"} />
-                                <label htmlFor="Lots of Hair" className='dirty-label' style={{color: 'red'}}>Plenty of Hair</label>
+                                <input type="checkbox" name="dogHair" id="lots of hair" value="Lots of Hair" className='radio-button' onChange={(e) => handleOptionClick(e, 'dogHair', 'Lots of Hair')} checked={dogHair === "Lots of Hair"} />
+                                <label htmlFor="lots of hair" className='dirty-label' style={{color: 'red'}}>Plenty of Hair</label>
                             </div>
                         </div>
 

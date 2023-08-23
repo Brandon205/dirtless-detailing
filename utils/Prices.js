@@ -46,7 +46,7 @@ const prices = {
     },
     'Dog Hair': {
         'cost': {
-            "Little to None": 0,
+            "Little or None": 0,
             "Medium Amount": 50,
             "Lots of Hair": 100
         }
