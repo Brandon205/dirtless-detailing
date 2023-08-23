@@ -11,15 +11,8 @@ const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
 });
 
 export default function Contact() {
-    // const [intSelected, setIntSelected] = useState(false);
-    // const [coatingSelected, setCoatingSelected] = useState(false);
     const [gift, setGift] = useState('Myself');
     const [phoneNumber, setPhoneNumber] = useState('');
-
-    // State for the "Radio" buttons
-    // const [paintCorrection, setPaintCorrection] = useState('');
-    // const [interiorCleaning, setInteriorCleaning] = useState('');
-    // const [exteriorCoating, setExteriorCoating] = useState('');
 
     const [exteriorService, setExteriorService] = useState('');
     const [interiorService, setInteriorService] = useState('');
@@ -29,11 +22,6 @@ export default function Contact() {
     const [dirtiness, setDirtiness] = useState('');
     const [dogHair, setDogHair] = useState('');
     const [vip, setVip] = useState('');
-    
-    // State for the newletter form
-    // const [nameVal, setNameVal] = useState('');
-    // const [emailVal, setEmailVal] = useState('');
-    // const [newsletter, setNewsletter] = useState(true);
     
     // State for new pricing estimate
     const [currentPrice, setCurrentPrice] = useState(0);
@@ -50,46 +38,6 @@ export default function Contact() {
 
     const formSubmit = (e) => {
         e.preventDefault();
-
-        // const formInfo = {
-        //     "For Myself": e.target['myself'].checked ? 'Yes' : 'No',
-        //     "Gift Card": e.target['someone'].checked ? 'Yes' : 'No',
-        //     "Name": e.target['name'].value,
-        //     "Email": e.target['email'].value,
-        //     "Phone": phoneNumber,
-        //     "Year": e.target['year'].value,
-        //     "Make": e.target['make'].value,
-        //     "Model": e.target['model'].value,
-        //     "Vehicle Size": e.target['vehicle size'].value,
-        //     // "Newsletter": e.target['newsletter'].checked ? 'Yes' : 'No',
-        //     "Message": e.target['message'].value,
-
-        //     "Exterior Coating": formRef.current['Protect'].checked ? 'Protect' : formRef.current['Protect+'].checked ? 'Protect+' : '',
-
-        //     "Combo": e.target['combo'].checked ? 'Yes' : 'No',
-
-        //     "Interior Cleaning": formRef.current['FullInt'].checked ? 'Full Interior Cleaning' : '',
-        //     "Interior Coating": e.target['intcoating'].checked ? 'Yes' : 'No',
-        //     "Extraction": e.target['extraction'].checked ? 'Yes' : 'No',
-        //     "Headliners": e.target['headliners'].checked ? 'Yes' : 'No',
-        //     "Ozone": e.target['ozone'].checked ? 'Yes' : 'No',
-        //     "Dirtiness": formRef.current['Pretty Clean'].checked ? 'Pretty Clean' : formRef.current['Normal Use'].checked ? 'Normal Use' : formRef.current['Extremely Dirty'].checked ? 'Extremely Dirty' : '',
-        //     "Dog Hair": formRef.current['Little to None'].checked ? 'Little to None' : formRef.current['Medium Amount'].checked ? 'Medium Amount' : formRef.current['Lots of Hair'].checked ? 'Lots of Hair' : '',
-
-        //     "Exterior Wash": formRef.current['Dirt-Less Wash'].checked ? 'Dirt-Less Wash' : '',
-        //     "Clay Bar": e.target['claybar'].checked ? 'Yes' : 'No',
-        //     "Engine Bay": e.target['engine'].checked ? 'Yes' : 'No',
-        //     "Glass Polishing": e.target['glassEx'].checked ? 'Yes' : 'No',
-        //     "Waterspot Removal": e.target['waterspotEx'].checked ? 'Yes' : 'No',
-        //     "Debadging": e.target['debadge'].checked ? 'Yes' : 'No',
-
-        //     "Paint Correction": formRef.current['Single Stage'].checked ? 'Single Stage' : formRef.current['Two Stage'].checked ? 'Two Stage' : '',
-
-        //     "Monthly Maintenance": e.target['monthly'].checked ? 'Yes' : 'No',
-        //     "Yearly Maintenance": e.target['yearly'].checked ? 'Yes' : 'No',
-
-        //     "Price Estimate": currentPrice
-        // }
         let classification;
         switch (vehicle) {
             case 0:
@@ -164,13 +112,6 @@ export default function Contact() {
             } else if (key === 'Price Estimate') {
                 formData.append(key, value);
             }
-            // if (key === "Name" || key === "Email" || key === "Message" || key === "Phone" || key === "Year" || key === "Make" || key === "Model" || key === "Exterior Coating" || key === "Interior Cleaning" || key === "Dirtiness" || key === "Dog Hair" || key === "Exterior Wash" || key === "Paint Correction" || key === "Dirtiness" || key === "Dog Hair" || key === 'Newsletter' || key === 'Price Estimate' || key === 'Vehicle Size') {
-            //     if (value !== '') {
-            //         formData.append(key, value);
-            //     }
-            // } else if (value === 'Yes') {
-            //     formData.append(key, value);
-            // }
         });
         
         if (interiorService.length > 0) {
@@ -194,42 +135,45 @@ export default function Contact() {
 
     const finalSubmit = (formData, e) => {
         console.log(formData);
-        // fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
-        //     method: "POST",
-        //     body: formData
-        // }).then((test) => {
-        //     toast.success("Form submitted! Expect a text response from us soon!", {
-        //         position: "bottom-center",
-        //         autoClose: 5000,
-        //         hideProgressBar: false,
-        //         closeOnClick: true,
-        //         pauseOnHover: true,
-        //         draggable: true,
-        //         progress: undefined
-        //     })
-        //     e.target.reset();
-        //     setPhoneNumber('');
-        //     setPaintCorrection('');
-        //     setInteriorCleaning('');
-        //     setExteriorCoating('');
-        //     setDirtiness('');
-        //     setDogHair('');
-        //     setIntSelected(false);
-        //     setCoatingSelected(false);
-        //     setCurrentPrice(0)
-        //     window.scrollTo(0, 0);
+        fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
+            method: "POST",
+            body: formData
+        }).then((test) => {
+            toast.success("Form submitted! Expect a text response from us soon!", {
+                position: "bottom-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined
+            })
+            e.target.reset();
+            setPhoneNumber('');
+            setDirtiness('');
+            setDogHair('');
+            setExteriorService('');
+            setExteriorAddons([]);
+            setInteriorService('');
+            setInteriorAddons([]);
+            setCombo('');
+            setVip('');
+            setVehicle(0);
+            setGift('Myself');
+            setCurrentPrice(0);
+            window.scrollTo(0, 0);
 
-        // }).catch(error => {
-        //     toast.error("An error occurred, please try again." + error, {
-        //         position: "bottom-center",
-        //         autoClose: 5000,
-        //         hideProgressBar: false,
-        //         closeOnClick: true,
-        //         pauseOnHover: true,
-        //         draggable: true,
-        //         progress: undefined
-        //     })
-        // });
+        }).catch(error => {
+            toast.error("An error occurred, please try again." + error, {
+                position: "bottom-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined
+            })
+        });
     }
 
     function formatPhoneNumber(value) {
@@ -281,7 +225,14 @@ export default function Contact() {
 
         setDirtiness('');
         setDogHair('');
-        setCurrentPrice(0)
+        setExteriorService('');
+        setExteriorAddons([]);
+        setInteriorService('');
+        setInteriorAddons([]);
+        setCombo('');
+        setVip('');
+        setGift('Myself');
+        setCurrentPrice(0);
         setVehicle(e.target.value);
     }
 
@@ -496,7 +447,7 @@ export default function Contact() {
                     <div className="form-section form-top-section">
                         <div style={{marginBottom: 0}}>
                             <p className="contact-heading">Basic Information</p>
-                            <p style={{display: gift ? 'block' : 'none'}} className='contact-subheading'>*When buying a gift certificate for someone else fill out YOUR contact information, but THEIR vehicle information (or as much as you know about their vehicle). We'll then get in contact with you to get the gift card to you!</p>
+                            <p style={{display: gift === 'Myself' ? 'none' : 'block'}} className='contact-subheading'>*When buying a gift certificate for someone else fill out YOUR contact information, but THEIR vehicle information (or as much as you know about their vehicle). We'll then get in contact with you to get the gift card to you!</p>
                             <div style={{margin: '0 auto'}} className='basic-info-container'>
                                 <input type="radio" name="gift" id='myself' value='Myself' onChange={(e) => setGift(e.target.value)} checked={gift === 'Myself'} className='radio-button' />
                                 <label htmlFor="myself" className='checkbox-label'>For Myself</label>
@@ -692,11 +643,11 @@ export default function Contact() {
 
                             <div style={{ width: 100 + '%', position: 'relative', marginTop: '2rem'}}>
                                 <label htmlFor="message" style={{bottom: '130px'}} className='text-input-label'>Additional Information:</label>
-                                <textarea type="textarea" name="message" id='message' className='textarea' placeholder='Do you want our mobile service or to schedule a drop off? Do you have any other questions/concerns?' />
+                                <textarea type="textarea" name="message" id='message' className='textarea' placeholder='Do you want our mobile service or to schedule a drop off at our shop? Do you have any other questions/concerns for us?' />
                             </div>
 
                             <p style={{marginTop: '2rem'}} className="contact-heading">Vehicle Size/Classification</p>
-                            <p style={{marginBottom: 0}} className="contact-subheading">Change this to get accurate price estimates for your vehicle (changing this will reset any selected options below, but not the information above).</p>
+                            <p style={{marginBottom: 0}} className="contact-subheading">Change this to match your vehicle's size to get accurate price estimates (<span className='special-package'>NOTE: </span>Changing this does reset the options below, but not the information above).</p>
                             <div style={{marginTop: 0}} className='basic-info-container'>
                                 <select name="vehicle size" id="vehicle size" style={{fontSize: '1.2em'}} className='text-input make-input' placeholder='Vehicle Size' onChange={(e) => changeVehicle(e)}>
                                     <option value="0">2 Door Cars</option>
@@ -713,13 +664,13 @@ export default function Contact() {
 
                     <div className="form-section">
                         <p className='contact-heading'>Exterior Services</p>
-                        <p className='contact-subheading'>Our services that are focused on the outside of the vehicle, whether it's just a wash or a full paint correction.</p>
+                        <p className='contact-subheading'>All of our exterior services from a simple wash all the way up to a 5 Year Ceramic Coating.</p>
                         <div>
                             <input type="checkbox" name="exterior" id="protect" value="Protect" className='radio-button' checked={exteriorService === "Protect"} onChange={(e) => handleOptionClick(e, 'exterior', 'Protect')} disabled={combo === 'Combo'} />
-                            <label htmlFor="protect" className='checkbox-label'>Protect <span className='special-package italic'>(${prices['Protect'].cost[vehicle]})</span></label>
+                            <label htmlFor="protect" className='checkbox-label'>Protect Ceramic Coating <span className='special-package italic'>(${prices['Protect'].cost[vehicle]})</span></label>
 
                             <input type="checkbox" name="exterior" id="protect+" value="Protect+" className='radio-button' checked={exteriorService === "Protect+"} onChange={(e) => handleOptionClick(e, 'exterior', 'Protect+')} disabled={combo === 'Combo'} />
-                            <label htmlFor="protect+" className='checkbox-label'>Protect+ <span className='special-package italic'>(${prices['Protect+'].cost[vehicle]})</span></label>
+                            <label htmlFor="protect+" className='checkbox-label'>Protect+ Ceramic Coating <span className='special-package italic'>(${prices['Protect+'].cost[vehicle]})</span></label>
 
                             <input type="checkbox" name="exterior" id="wash" value="Dirt-Less Wash" className='radio-button' checked={exteriorService === 'Dirt-Less Wash'} onChange={(e) => handleOptionClick(e, 'exterior', 'Dirt-Less Wash')} disabled={combo === 'Combo'} />
                             <label htmlFor="wash" title={combo === 'Combo' ? 'Our Dirt-Less Wash is already included in The Dirt-Less Detail' : ''} className='checkbox-label'>Dirt-Less Wash <span className='special-package italic'>(${prices['Dirt-Less Wash'].cost[vehicle]})</span></label>
@@ -733,8 +684,8 @@ export default function Contact() {
                         <hr className="contact-border" />
 
                         <p className="contact-heading">Exterior Add-ons <a href='/services/add-ons#exterior' className='aside-link'><img src='../assets/icons/linking.png' alt='external link' className='icon-36' /></a></p>
-                        <p className='contact-subheading'><span className='special-package'>Note: </span>All exterior add-ons besides debadging and engine bay cleaning will require our Dirt-Less Wash service.</p>
-                        <p className='contact-subheading'><span className='special-package'>**</span>Services that are charged by the hour, $80 or one hour worth of work is added to the Price Estimator, the amount of time it takes us to perform these services can vary</p>
+                        <p style={{marginBottom: '0.5rem'}} className='contact-subheading'><span className='special-package'>Note: </span>Most of our exterior add-ons require an exterior service to be selected.</p>
+                        <p className='contact-subheading'><span className='special-package'>**</span>For services billed hourly, the Price Estimator includes the equivalent of one hour's work.</p>
                         <div>
                             <input type="checkbox" name="exteriorAddon" id='claybar' className='checkbox-input' onChange={(e) => handleOptionClick(e, 'exteriorAddon', 'Clay Bar')} checked={exteriorAddons.includes('Clay Bar')} disabled={exteriorService.length == 0 && combo.length == 0 || exteriorService.includes('Protect') || exteriorService.includes('Stage')} />
                             <label htmlFor="claybar" className='checkbox-label' title={exteriorService.includes('Protect') || exteriorService.includes('Stage') ? `Clay Bar treatment is already included with our ${exteriorService} service.` : 'An Exterior Service must be selected.'} >Clay Bar Treatment <span className='special-package italic'>(${prices['Clay Bar'].cost[vehicle]})</span></label>
@@ -756,7 +707,7 @@ export default function Contact() {
                         <hr className="contact-border" />
 
                         <p style={{paddingTop: '2rem'}} className="contact-heading">VIP Options <a href='/services/exterior-ceramic-coating' className='aside-link'><img src='../assets/icons/linking.png' alt='external link' className='icon-36' /></a></p>
-                        <p className='contact-subheading'>To keep your Ceramic Coating Warranties. (You can set this up with us later too!)</p>
+                        <p className='contact-subheading'>Our maintenance options that also keep your Ceramic Coating Warranties. (You can set this up with us later too!)</p>
                         <div>
                             <input type="checkbox" name="vip" id='monthly' className='checkbox-input' onChange={(e) => handleOptionClick(e, 'vip', 'Monthly')} checked={vip === 'Monthly'} />
                             <label htmlFor="monthly" className='checkbox-label'>Monthly VIP <span className='special-package italic'>(${prices['Monthly'].cost[vehicle]})</span></label>
@@ -777,7 +728,7 @@ export default function Contact() {
 
                     <div className="form-section">
                         <p className='contact-heading'>Interior Services <a href='/services/full-interior-detail' className='aside-link'><img src='../assets/icons/linking.png' alt='external link' className='icon-36' /></a></p>
-                        <p className='contact-subheading'><span className='special-package'>**</span>Biohazard cleaning priced based on the condition of the vehicle, selecting it here adds the base price of $500 to the Price Estimator.</p>
+                        <p className='contact-subheading'><span className='special-package'>**</span>Biohazard cleaning is priced based on the condition of the vehicle, selecting it here adds the base price of $500 to the Price Estimator.</p>
                         <div>
                             <input type="checkbox" name="interior" id="fullint" value="Full Interior" className='radio-button' checked={interiorService === "Full Interior"} onChange={(e) => handleOptionClick(e, 'interior', 'Full Interior')} disabled={combo === 'Combo'} />
                             <label htmlFor="fullint" title={combo === 'Combo' ? 'Full Interior Cleaning is included in The Dirt-Less Detail' : ''} className='checkbox-label'>Full Interior Cleaning <span className='special-package italic'>(${prices['Full Interior'].cost[vehicle]})</span></label>    
@@ -788,7 +739,7 @@ export default function Contact() {
                         <hr className="contact-border" />
 
                         <p className="contact-heading">Interior Add-ons <a href='/services/add-ons#interior' className='aside-link'><img src='../assets/icons/linking.png' alt='external link' className='icon-36' /></a></p>
-                        <p style={{marginBottom: '0.5rem'}} className='contact-subheading'><span className='special-package'>Note: </span>Extraction and Interior Coatings needs either our Full Interior or Biohazard cleaning service selected.</p>
+                        <p style={{marginBottom: '0.5rem'}} className='contact-subheading'><span className='special-package'>Note: </span>All add-ons need an Interior Service selected.</p>
                         <p className='contact-subheading'><span className='special-package'>**</span>Headliner cleaning is based on condition, selecting it here adds the base price of $35 to the Price Estimator.</p>
                         <div>
                             <input type="checkbox" name="interiorAddon" id='extraction' className={'checkbox-input'} onChange={(e) => handleOptionClick(e, 'interiorAddon', 'Extraction')} checked={interiorAddons.includes('Extraction')} disabled={interiorService.length == 0 && combo.length == 0 || interiorService === 'Bio'} />
