@@ -442,7 +442,7 @@ export default function Contact() {
 
             <div className='contact-container-right'>
                 <h2>Or Reach Out to Us By Filling Out Our Form:</h2>
-                <p className='contact-subheading'><span className='special-package'>Note: </span>The Pricing Estimate here is approximate and some services are hourly or based on vehicle condition. Final prices may vary slightly.</p>
+                <p className='contact-subheading'><span className='special-package'>Note: </span>The Pricing Estimate below is approximate and some services are hourly or based on vehicle condition. Final prices may vary slightly.</p>
                 <form className="form" id="form" ref={formRef} autoComplete="on" onSubmit={(e) => formSubmit(e)}>
                     <div className="form-section form-top-section">
                         <div style={{marginBottom: 0}}>
@@ -685,7 +685,7 @@ export default function Contact() {
 
                         <p className="contact-heading">Exterior Add-ons <a href='/services/add-ons#exterior' className='aside-link'><img src='../assets/icons/linking.png' alt='external link' className='icon-36' /></a></p>
                         <p style={{marginBottom: '0.5rem'}} className='contact-subheading'><span className='special-package'>Note: </span>Most of our exterior add-ons require an exterior service to be selected.</p>
-                        <p className='contact-subheading'><span className='special-package'>**</span>For services billed hourly, the Price Estimator includes the equivalent of one hour's work.</p>
+                        <p className='contact-subheading'><span className='special-package'>*</span>For services billed hourly, the Price Estimator includes the equivalent of one hour's work.</p>
                         <div>
                             <input type="checkbox" name="exteriorAddon" id='claybar' className='checkbox-input' onChange={(e) => handleOptionClick(e, 'exteriorAddon', 'Clay Bar')} checked={exteriorAddons.includes('Clay Bar')} disabled={exteriorService.length == 0 && combo.length == 0 || exteriorService.includes('Protect') || exteriorService.includes('Stage')} />
                             <label htmlFor="claybar" className='checkbox-label' title={exteriorService.includes('Protect') || exteriorService.includes('Stage') ? `Clay Bar treatment is already included with our ${exteriorService} service.` : 'An Exterior Service must be selected.'} >Clay Bar Treatment <span className='special-package italic'>(${prices['Clay Bar'].cost[vehicle]})</span></label>
@@ -694,13 +694,13 @@ export default function Contact() {
                             <label htmlFor="engine" className='checkbox-label' title={combo === 'Combo' ? 'Our Engine Bay Cleaning is included in The Dirt-Less Detail.' : ''}>Engine Bay <span className='special-package italic'>(${prices['Engine'].cost[vehicle]})</span></label>
 
                             <input type="checkbox" name="exteriorAddon" id='glass' className='checkbox-input' onChange={(e) => handleOptionClick(e, 'exteriorAddon', 'Glass')} checked={exteriorAddons.includes('Glass')} disabled={exteriorService.length == 0 && combo.length == 0 || exteriorService.includes('Protect') || exteriorService.includes('Stage')} />
-                            <label htmlFor="glass" className='checkbox-label' title={exteriorService.includes('Protect') || exteriorService.includes('Stage') ? `Glass Polishing is already included with our ${exteriorService} service.` : 'An Exterior Service must be selected.'} ><span className='special-package'>**</span>Glass Polishing <span className='special-package italic'>($80/hour)</span></label>
+                            <label htmlFor="glass" className='checkbox-label' title={exteriorService.includes('Protect') || exteriorService.includes('Stage') ? `Glass Polishing is already included with our ${exteriorService} service.` : 'An Exterior Service must be selected.'} ><span className='special-package'>*</span>Glass Polishing <span className='special-package italic'>($80/hour)</span></label>
 
                             <input type="checkbox" name="exteriorAddon" id='waterspot' className='checkbox-input' onChange={(e) => handleOptionClick(e, 'exteriorAddon', 'Waterspot')} checked={exteriorAddons.includes('Waterspot')} disabled={exteriorService.length == 0 && combo.length == 0} />
-                            <label htmlFor="waterspot" className='checkbox-label' title='An Exterior Service must be selected.'><span className='special-package'>**</span>Waterspot, Overspray, or Road Paint Removal <span className='special-package italic'>($80/hour)</span></label>
+                            <label htmlFor="waterspot" className='checkbox-label' title='An Exterior Service must be selected.'><span className='special-package'>*</span>Waterspot, Overspray, or Road Paint Removal <span className='special-package italic'>($80/hour)</span></label>
 
                             <input type="checkbox" name="exteriorAddon" id='debadge' className='checkbox-input' onChange={(e) => handleOptionClick(e, 'exteriorAddon', 'Debadging')} checked={exteriorAddons.includes('Debadging')} />
-                            <label htmlFor="debadge" className='checkbox-label'><span className='special-package'>**</span>Debadging <span className='special-package italic'>($80/hour)</span></label>
+                            <label htmlFor="debadge" className='checkbox-label'><span className='special-package'>*</span>Debadging <span className='special-package italic'>($80/hour)</span></label>
 
                             <input type="hidden" name="_gotcha" style={{ display: 'none !important' }} />
                         </div>
@@ -798,24 +798,25 @@ export default function Contact() {
 
                     </div>
 
-                    <div className='submit-info-container'>
-                        <div>
-                            <p style={{margin: 0}}>Current Price Estimate:</p>
-                            <div className='pricing__pricecard-container'>
-                                <strong style={{backgroundColor: '#c0c0c000'}} className='pricing__pricecard-pricebox'>
-                                    <span className='pricing__pricecard-price'>
-                                        ${animate ? 
-                                            <AnimatedNumbers includeComma animateToNumber={currentPrice} configs={[
-                                                { mass: 1, tension: 320, friction: 100 },
-                                            ]}></AnimatedNumbers> : 
-                                            currentPrice
-                                        }
-                                    </span>
-                                </strong>
-                            </div>
+                    <div className='pricing__positioner'>
+                        <p style={{margin: 0}}>Price Estimate:</p>
+                        <div className='pricing__pricecard-container'>
+                            <strong style={{backgroundColor: '#c0c0c000'}} className='pricing__pricecard-pricebox'>
+                                <span className='pricing__pricecard-price'>
+                                    ${animate ? 
+                                        <AnimatedNumbers includeComma animateToNumber={currentPrice} configs={[
+                                            { mass: 1, tension: 320, friction: 100 },
+                                        ]}></AnimatedNumbers> : 
+                                        currentPrice
+                                    }
+                                </span>
+                            </strong>
                         </div>
+                    </div>
+                    <div className='submit-info-container'>
                         <button className='submit-button'>Submit Form!</button>
                     </div>
+                    <p style={{marginBottom: 0}}><span className='special-package'>NOTE: </span>The price estimate that you get here may vary from the final price especially if hourly* or conditional** options are selected, but does give a good ballpark as to what to expect!</p>
                     <p>We will be in touch with you via text shortly after you submit the form!</p>
 
                     <ToastContainer position="bottom-center"
