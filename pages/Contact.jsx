@@ -349,9 +349,9 @@ export default function Contact() {
                     setExteriorAddons([]);
                 }
 
-                if (vip.length > 0) {
-                    tempPrice -= prices[vip].cost[vehicle]
-                }
+                // if (vip.length > 0) {
+                //     tempPrice -= prices[vip].cost[vehicle]
+                // }
 
                 setCurrentPrice(currentPrice + tempPrice);
                 setExteriorService('');
@@ -464,21 +464,15 @@ export default function Contact() {
                     tempArr.forEach(item => {
                         tempPrice -= prices[item].cost[vehicle]
                     })
-                    console.log(tempPrice);
     
                     setCurrentPrice(currentPrice - tempPrice);
                     setExteriorAddons([]);
-                }
-
-                if (vip.length > 0) {
-                    tempPrice -= prices[vip].cost[vehicle]
                 }
 
                 setDirtiness('');
                 setInteriorService('');
                 setExteriorService('');
                 setCombo('');
-                setVip('');
                 setCurrentPrice(currentPrice + tempPrice);
             } else {
                 setCurrentPrice(currentPrice + prices['Dirt-Less Detail'].cost[vehicle]);
@@ -773,19 +767,19 @@ export default function Contact() {
                         <p className='contact-heading'>Exterior Services</p>
                         <p className='contact-subheading'>Our services that are focused on the outside of the vehicle, whether it's just a wash or a full paint correction.</p>
                         <div>
-                            <input type="checkbox" name="exterior" id="protect" value="Protect" className='radio-button' checked={exteriorService === "Protect"} onChange={(e) => handleOptionClick(e, 'exterior', 'Protect')} />
+                            <input type="checkbox" name="exterior" id="protect" value="Protect" className='radio-button' checked={exteriorService === "Protect"} onChange={(e) => handleOptionClick(e, 'exterior', 'Protect')} disabled={combo === 'Combo'} />
                             <label htmlFor="protect" className='checkbox-label'>Protect <span className='special-package italic'>(${prices['Protect'].cost[vehicle]})</span></label>
 
-                            <input type="checkbox" name="exterior" id="protect+" value="Protect+" className='radio-button' checked={exteriorService === "Protect+"} onChange={(e) => handleOptionClick(e, 'exterior', 'Protect+')} />
+                            <input type="checkbox" name="exterior" id="protect+" value="Protect+" className='radio-button' checked={exteriorService === "Protect+"} onChange={(e) => handleOptionClick(e, 'exterior', 'Protect+')} disabled={combo === 'Combo'} />
                             <label htmlFor="protect+" className='checkbox-label'>Protect+ <span className='special-package italic'>(${prices['Protect+'].cost[vehicle]})</span></label>
 
-                            <input type="checkbox" name="exterior" id="wash" value="Dirt-Less Wash" className='radio-button' checked={exteriorService === 'Dirt-Less Wash'} onChange={(e) => handleOptionClick(e, 'exterior', 'Dirt-Less Wash')} />
-                            <label htmlFor="wash" className='checkbox-label'>Dirt-Less Wash <span className='special-package italic'>(${prices['Dirt-Less Wash'].cost[vehicle]})</span></label>
+                            <input type="checkbox" name="exterior" id="wash" value="Dirt-Less Wash" className='radio-button' checked={exteriorService === 'Dirt-Less Wash'} onChange={(e) => handleOptionClick(e, 'exterior', 'Dirt-Less Wash')} disabled={combo === 'Combo'} />
+                            <label htmlFor="wash" title={combo === 'Combo' ? 'Our Dirt-Less Wash is already included in The Dirt-Less Detail' : ''} className='checkbox-label'>Dirt-Less Wash <span className='special-package italic'>(${prices['Dirt-Less Wash'].cost[vehicle]})</span></label>
 
-                            <input type="checkbox" name="exterior" id="single stage" value="Single Stage" className='radio-button' checked={exteriorService === 'Single Stage'} onChange={(e) => handleOptionClick(e, 'exterior', 'Single Stage')} />
+                            <input type="checkbox" name="exterior" id="single stage" value="Single Stage" className='radio-button' checked={exteriorService === 'Single Stage'} onChange={(e) => handleOptionClick(e, 'exterior', 'Single Stage')} disabled={combo === 'Combo'} />
                             <label htmlFor="single stage" className='checkbox-label'>Single Stage Paint Correction <span className='special-package italic'>(${prices['Single Stage'].cost[vehicle]})</span></label>
 
-                            <input type="checkbox" name="exterior" id="two stage" value="Two Stage" className='radio-button' checked={exteriorService === 'Two Stage'} onChange={(e) => handleOptionClick(e, 'exterior', 'Two Stage')} />
+                            <input type="checkbox" name="exterior" id="two stage" value="Two Stage" className='radio-button' checked={exteriorService === 'Two Stage'} onChange={(e) => handleOptionClick(e, 'exterior', 'Two Stage')} disabled={combo === 'Combo'} />
                             <label htmlFor="two stage" className='checkbox-label'>Two Stage Paint Correction <span className='special-package italic'>(${prices['Two Stage'].cost[vehicle]})</span></label>
                         </div>
                         <hr className="contact-border" />
@@ -794,19 +788,19 @@ export default function Contact() {
                         <p className='contact-subheading'><span className='special-package'>Note: </span>All exterior add-ons besides debadging and engine bay cleaning will require our Dirt-Less Wash service.</p>
                         <p className='contact-subheading'><span className='special-package'>**</span>Services that are charged by the hour, $80 or one hour worth of work is added to the Price Estimator, the amount of time it takes us to perform these services can vary</p>
                         <div>
-                            <input type="checkbox" name="exteriorAddon" id='claybar' className='checkbox-input' onChange={(e) => handleOptionClick(e, 'exteriorAddon', 'Clay Bar')} checked={exteriorAddons.includes('Clay Bar')} disabled={exteriorService.length == 0 && combo.length == 0} title='An Exterior Service must be selected.' />
-                            <label htmlFor="claybar" className='checkbox-label'>Clay Bar Treatment <span className='special-package italic'>(${prices['Clay Bar'].cost[vehicle]})</span></label>
+                            <input type="checkbox" name="exteriorAddon" id='claybar' className='checkbox-input' onChange={(e) => handleOptionClick(e, 'exteriorAddon', 'Clay Bar')} checked={exteriorAddons.includes('Clay Bar')} disabled={exteriorService.length == 0 && combo.length == 0 || exteriorService.includes('Protect') || exteriorService.includes('Stage')} />
+                            <label htmlFor="claybar" className='checkbox-label' title={exteriorService.includes('Protect') || exteriorService.includes('Stage') ? `Clay Bar treatment is already included with our ${exteriorService} service.` : 'An Exterior Service must be selected.'} >Clay Bar Treatment <span className='special-package italic'>(${prices['Clay Bar'].cost[vehicle]})</span></label>
 
-                            <input type="checkbox" name="exteriorAddon" id='engine' className='checkbox-input' onChange={(e) => handleOptionClick(e, 'exteriorAddon', 'Engine')} checked={exteriorAddons.includes('Engine')} disabled={exteriorService.length == 0 && combo.length == 0} title='An Exterior Service must be selected.' />
-                            <label htmlFor="engine" className='checkbox-label'>Engine Bay <span className='special-package italic'>(${prices['Engine'].cost[vehicle]})</span></label>
+                            <input type="checkbox" name="exteriorAddon" id='engine' className='checkbox-input' onChange={(e) => handleOptionClick(e, 'exteriorAddon', 'Engine')} checked={exteriorAddons.includes('Engine')} disabled={combo === 'Combo'} />
+                            <label htmlFor="engine" className='checkbox-label' title={combo === 'Combo' ? 'Our Engine Bay Cleaning is included in The Dirt-Less Detail.' : ''}>Engine Bay <span className='special-package italic'>(${prices['Engine'].cost[vehicle]})</span></label>
 
-                            <input type="checkbox" name="exteriorAddon" id='glass' className='checkbox-input' onChange={(e) => handleOptionClick(e, 'exteriorAddon', 'Glass')} checked={exteriorAddons.includes('Glass')} disabled={exteriorService.length == 0 && combo.length == 0} title='An Exterior Service must be selected.' />
-                            <label htmlFor="glass" className='checkbox-label'><span className='special-package'>**</span>Glass Polishing <span className='special-package italic'>($80/hour)</span></label>
+                            <input type="checkbox" name="exteriorAddon" id='glass' className='checkbox-input' onChange={(e) => handleOptionClick(e, 'exteriorAddon', 'Glass')} checked={exteriorAddons.includes('Glass')} disabled={exteriorService.length == 0 && combo.length == 0 || exteriorService.includes('Protect') || exteriorService.includes('Stage')} />
+                            <label htmlFor="glass" className='checkbox-label' title={exteriorService.includes('Protect') || exteriorService.includes('Stage') ? `Glass Polishing is already included with our ${exteriorService} service.` : 'An Exterior Service must be selected.'} ><span className='special-package'>**</span>Glass Polishing <span className='special-package italic'>($80/hour)</span></label>
 
-                            <input type="checkbox" name="exteriorAddon" id='waterspot' className='checkbox-input' onChange={(e) => handleOptionClick(e, 'exteriorAddon', 'Waterspot')} checked={exteriorAddons.includes('Waterspot')} disabled={exteriorService.length == 0 && combo.length == 0} title='An Exterior Service must be selected.' />
-                            <label htmlFor="waterspot" className='checkbox-label'><span className='special-package'>**</span>Waterspot, Overspray, or Road Paint Removal <span className='special-package italic'>($80/hour)</span></label>
+                            <input type="checkbox" name="exteriorAddon" id='waterspot' className='checkbox-input' onChange={(e) => handleOptionClick(e, 'exteriorAddon', 'Waterspot')} checked={exteriorAddons.includes('Waterspot')} disabled={exteriorService.length == 0 && combo.length == 0} />
+                            <label htmlFor="waterspot" className='checkbox-label' title='An Exterior Service must be selected.'><span className='special-package'>**</span>Waterspot, Overspray, or Road Paint Removal <span className='special-package italic'>($80/hour)</span></label>
 
-                            <input type="checkbox" name="exteriorAddon" id='debadge' className='checkbox-input' onChange={(e) => handleOptionClick(e, 'exteriorAddon', 'Debadging')} checked={exteriorAddons.includes('Debadging')} disabled={exteriorService.length == 0 && combo.length == 0} title='An Exterior Service must be selected.' />
+                            <input type="checkbox" name="exteriorAddon" id='debadge' className='checkbox-input' onChange={(e) => handleOptionClick(e, 'exteriorAddon', 'Debadging')} checked={exteriorAddons.includes('Debadging')} />
                             <label htmlFor="debadge" className='checkbox-label'><span className='special-package'>**</span>Debadging <span className='special-package italic'>($80/hour)</span></label>
 
                             <input type="hidden" name="_gotcha" style={{ display: 'none !important' }} />
@@ -814,12 +808,12 @@ export default function Contact() {
                         <hr className="contact-border" />
 
                         <p style={{paddingTop: '2rem'}} className="contact-heading">VIP Options <a href='/services/exterior-ceramic-coating' className='aside-link'><img src='../assets/icons/linking.png' alt='external link' className='icon-36' /></a></p>
-                        <p className='contact-subheading'>To keep your Ceramic Coating Warranties. (You can ask us about these later too!)</p>
+                        <p className='contact-subheading'>To keep your Ceramic Coating Warranties. (You can set this up with us later too!)</p>
                         <div>
-                            <input type="checkbox" name="vip" id='monthly' className='checkbox-input' onChange={(e) => handleOptionClick(e, 'vip', 'Monthly')} checked={vip === 'Monthly'} disabled={exteriorService.length == 0 && combo.length == 0} title='An Exterior Service must be selected.' />
+                            <input type="checkbox" name="vip" id='monthly' className='checkbox-input' onChange={(e) => handleOptionClick(e, 'vip', 'Monthly')} checked={vip === 'Monthly'} />
                             <label htmlFor="monthly" className='checkbox-label'>Monthly VIP <span className='special-package italic'>(${prices['Monthly'].cost[vehicle]})</span></label>
 
-                            <input type="checkbox" name="vip" id='yearly' className='checkbox-input' onChange={(e) => handleOptionClick(e, 'vip', 'Yearly')} checked={vip === 'Yearly'} disabled={exteriorService.length == 0 && combo.length == 0} title='An Exterior Service must be selected.' />
+                            <input type="checkbox" name="vip" id='yearly' className='checkbox-input' onChange={(e) => handleOptionClick(e, 'vip', 'Yearly')} checked={vip === 'Yearly'} />
                             <label htmlFor="yearly" className='checkbox-label'>Yearly VIP <span className='special-package italic'>(${prices['Yearly'].cost[vehicle]})</span></label>
                         </div>
                     </div>
@@ -830,8 +824,6 @@ export default function Contact() {
                         <div>
                             <input type="checkbox" name="combo" id='combo' value='Dirt-Less Detail' className='checkbox-input' onChange={(e) => handleOptionClick(e, 'Combo', 'Dirt-Less Detail')} />
                             <label htmlFor="combo" className='checkbox-label'>The Dirt-Less Detail <span className='special-package italic'>(${prices['Dirt-Less Detail'].cost[vehicle]})</span></label>
-                            {/* <input type="checkbox" name="combo" id='combo' className='checkbox-input' onClick={(e) => {handleIntSelect(); e.target.checked ? setCurrentPrice(currentPrice + prices['dirt-less detail'].cost[vehicle]) : setCurrentPrice(currentPrice - prices['dirt-less detail'].cost[vehicle])}} />
-                            <label htmlFor="combo" className='checkbox-label'>The Dirt-Less Detail <span className='special-package italic'>(${prices['dirt-less detail'].cost[vehicle]})</span></label> */}
                         </div>
                     </div>
 
@@ -839,10 +831,10 @@ export default function Contact() {
                         <p className='contact-heading'>Interior Services <a href='/services/full-interior-detail' className='aside-link'><img src='../assets/icons/linking.png' alt='external link' className='icon-36' /></a></p>
                         <p className='contact-subheading'><span className='special-package'>**</span>Biohazard cleaning priced based on the condition of the vehicle, selecting it here adds the base price of $500 to the Price Estimator.</p>
                         <div>
-                            <input type="checkbox" name="interior" id="fullint" value="Full Interior" className='radio-button' checked={interiorService === "Full Interior"} onChange={(e) => handleOptionClick(e, 'interior', 'Full Interior')} />
-                            <label htmlFor="fullint" className='checkbox-label'>Full Interior Cleaning <span className='special-package italic'>(${prices['Full Interior'].cost[vehicle]})</span></label>    
+                            <input type="checkbox" name="interior" id="fullint" value="Full Interior" className='radio-button' checked={interiorService === "Full Interior"} onChange={(e) => handleOptionClick(e, 'interior', 'Full Interior')} disabled={combo === 'Combo'} />
+                            <label htmlFor="fullint" title={combo === 'Combo' ? 'Full Interior Cleaning is included in The Dirt-Less Detail' : ''} className='checkbox-label'>Full Interior Cleaning <span className='special-package italic'>(${prices['Full Interior'].cost[vehicle]})</span></label>    
 
-                            <input type="checkbox" name="interior" id="Bio" value="Biohazard Cleaning" className='radio-button' checked={interiorService === "Bio"} onChange={(e) => handleOptionClick(e, 'interior', 'Bio')} />
+                            <input type="checkbox" name="interior" id="Bio" value="Biohazard Cleaning" className='radio-button' checked={interiorService === "Bio"} onChange={(e) => handleOptionClick(e, 'interior', 'Bio')} disabled={combo === 'Combo'} />
                             <label htmlFor="Bio" className='checkbox-label'>Biohazard Cleaning<span className='special-package'>**</span> <span className='special-package italic'>($500-$1000)</span></label>
                         </div>
                         <hr className="contact-border" />
@@ -851,17 +843,17 @@ export default function Contact() {
                         <p style={{marginBottom: '0.5rem'}} className='contact-subheading'><span className='special-package'>Note: </span>Extraction and Interior Coatings needs either our Full Interior or Biohazard cleaning service selected.</p>
                         <p className='contact-subheading'><span className='special-package'>**</span>Headliner cleaning is based on condition, selecting it here adds the base price of $35 to the Price Estimator.</p>
                         <div>
-                            <input type="checkbox" name="interiorAddon" id='extraction' className={'checkbox-input'} onChange={(e) => handleOptionClick(e, 'interiorAddon', 'Extraction')} checked={interiorAddons.includes('Extraction')} disabled={interiorService.length == 0 && combo.length == 0} title='An Interior Service must be selected.' />
-                            <label htmlFor="extraction" className='checkbox-label'>Extraction <span className='special-package italic'>(${prices['Extraction'].cost[vehicle]})</span></label>
+                            <input type="checkbox" name="interiorAddon" id='extraction' className={'checkbox-input'} onChange={(e) => handleOptionClick(e, 'interiorAddon', 'Extraction')} checked={interiorAddons.includes('Extraction')} disabled={interiorService.length == 0 && combo.length == 0 || interiorService === 'Bio'} />
+                            <label htmlFor="extraction" className='checkbox-label' title={interiorService === 'Bio' ? 'Extraction is already included with Biohazard Cleaning' : 'An Interior Service must be selected.'}>Extraction <span className='special-package italic'>(${prices['Extraction'].cost[vehicle]})</span></label>
 
-                            <input type="checkbox" name="interiorAddon" id='intcoating' className={'checkbox-input'} onChange={(e) => handleOptionClick(e, 'interiorAddon', 'Interior Coating')} checked={interiorAddons.includes('Interior Coating')} disabled={interiorService.length == 0 && combo.length == 0} title='An Interior Service must be selected.' />
-                            <label htmlFor="intcoating" className='checkbox-label'>Interior Ceramic Coating <span className='special-package italic'>(${prices['Interior Coating'].cost[vehicle]})</span></label>
+                            <input type="checkbox" name="interiorAddon" id='intcoating' className={'checkbox-input'} onChange={(e) => handleOptionClick(e, 'interiorAddon', 'Interior Coating')} checked={interiorAddons.includes('Interior Coating')} disabled={interiorService.length == 0 && combo.length == 0} />
+                            <label htmlFor="intcoating" className='checkbox-label' title='An Interior Service must be selected.'>Interior Ceramic Coating <span className='special-package italic'>(${prices['Interior Coating'].cost[vehicle]})</span></label>
 
-                            <input type="checkbox" name="interiorAddon" id='headliners' className={'checkbox-input'} onChange={(e) => handleOptionClick(e, 'interiorAddon', 'Headliners')} checked={interiorAddons.includes('Headliners')} disabled={interiorService.length == 0 && combo.length == 0} title='An Interior Service must be selected.' />
-                            <label htmlFor="headliners" className='checkbox-label'><span className='special-package'>**</span>Headliners <span className='special-package italic'>(${prices['Headliners'].cost[vehicle]})</span></label>
+                            <input type="checkbox" name="interiorAddon" id='headliners' className={'checkbox-input'} onChange={(e) => handleOptionClick(e, 'interiorAddon', 'Headliners')} checked={interiorAddons.includes('Headliners')} disabled={interiorService.length == 0 && combo.length == 0 || interiorService === 'Bio'} />
+                            <label htmlFor="headliners" className='checkbox-label' title={interiorService === 'Bio' ? 'Headliner cleaning is already included with Biohazard Cleaning' : 'An Interior Service must be selected.'}><span className='special-package'>**</span>Headliners <span className='special-package italic'>(${prices['Headliners'].cost[vehicle]})</span></label>
 
-                            <input type="checkbox" name="interiorAddon" id='ozone' className='checkbox-input' onChange={(e) => handleOptionClick(e, 'interiorAddon', 'Ozone')} checked={interiorAddons.includes('Ozone')} disabled={interiorService.length == 0 && combo.length == 0} title='An Interior Service must be selected.' />
-                            <label htmlFor="ozone" className='checkbox-label'>Ozone Treatment <span className='special-package italic'>(${prices['Ozone'].cost[vehicle]})</span></label>
+                            <input type="checkbox" name="interiorAddon" id='ozone' className='checkbox-input' onChange={(e) => handleOptionClick(e, 'interiorAddon', 'Ozone')} checked={interiorAddons.includes('Ozone')} disabled={interiorService.length == 0 && combo.length == 0 || interiorService === 'Bio'} />
+                            <label htmlFor="ozone" className='checkbox-label' title={interiorService === 'Bio' ? 'Ozone Treatment is already included with Biohazard Cleaning' : 'An Interior Service must be selected.'}>Ozone Treatment <span className='special-package italic'>(${prices['Ozone'].cost[vehicle]})</span></label>
                         </div>
                         <hr style={{display: interiorService.length > 0 || combo.length > 0 ? 'block' : 'none'}} className="contact-border" />
 
