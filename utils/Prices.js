@@ -5,7 +5,7 @@ const prices = {
     'Protect+': {
         'cost': [1350, 1350, 1500, 1600, 1800, 1750]
     },
-    'Interior Ceramic': {
+    'Interior Coating': {
         'cost': [150, 150, 150, 150, 150, 150]
     },
     'Dirt-Less Detail': {
