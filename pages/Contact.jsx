@@ -90,49 +90,106 @@ export default function Contact() {
 
         //     "Price Estimate": currentPrice
         // }
-        console.log(e.target['gift'].value);
+        let classification;
+        switch (vehicle) {
+            case 0:
+                classification = '2 Door Car';
+                break;
+            case 1:
+                classification = 'Quarter Ton Truck';
+                break;
+            case 2:
+                classification = '4 Door Car';
+                break;
+            case 3:
+                classification = 'Mid-Size SUV';
+                break;
+            case 4:
+                classification = '4 Door Truck';
+                break;
+            case 5:
+                classification = '3 Row SUV';
+                break;
+            default:
+                classification = '2 Door Car';
+        }
 
         const formInfo = {
-            "Who's it for?:": e.target['gift'].value,
+            "Who's it for?:": gift,
             "Name": e.target['name'].value,
             "Email": e.target['email'].value,
             "Phone": phoneNumber,
             "Year": e.target['year'].value,
             "Make": e.target['make'].value,
             "Model": e.target['model'].value,
-            "Vehicle Size": e.target['vehicle size'].value,
-            "Message": e.target['message'].value,
+            "Vehicle Size": classification,
+
+            "Exterior Service": exteriorService,
+            "Exterior Addons": exteriorAddons,
+            "Interior Service": interiorService,
+            "Interior Addons": interiorAddons,
+            "Combo": combo === 'Combo' ? 'Yes' : '',
+            "Dirtiness": dirtiness,
+            "Dog Hair": dogHair,
+            "VIP": vip,
+            "Price Estimate": currentPrice
         }
 
         const formData = new FormData();
         Object.entries(formInfo).forEach(([key, value]) => {
-            if (key === "Name" || key === "Email" || key === "Message" || key === "Phone" || key === "Year" || key === "Make" || key === "Model" || key === "Exterior Coating" || key === "Interior Cleaning" || key === "Dirtiness" || key === "Dog Hair" || key === "Exterior Wash" || key === "Paint Correction" || key === "Dirtiness" || key === "Dog Hair" || key === 'Newsletter' || key === 'Price Estimate' || key === 'Vehicle Size') {
-                if (value !== '') {
-                    formData.append(key, value);
+            if (value.length > 0) {
+                if (key === 'Interior Addons') {
+                    let addonStr = '';
+                    interiorAddons.forEach((item, id) => {
+                        if (id === 0) {
+                            addonStr += item;
+                        } else {
+                            addonStr += ', ' + item
+                        }
+                    })
+                    formData.append(key, addonStr);
+                } else if (key === 'Exterior Addons') {
+                    let addonStr = '';
+                    exteriorAddons.forEach((item, id) => {
+                        if (id === 0) {
+                            addonStr += item;
+                        } else {
+                            addonStr += ', ' + item
+                        }
+                    })
+                    formData.append(key, addonStr);
+                } else {
+                    formData.append(key, value)
                 }
-            } else if (value === 'Yes') {
+            } else if (key === 'Price Estimate') {
                 formData.append(key, value);
             }
+            // if (key === "Name" || key === "Email" || key === "Message" || key === "Phone" || key === "Year" || key === "Make" || key === "Model" || key === "Exterior Coating" || key === "Interior Cleaning" || key === "Dirtiness" || key === "Dog Hair" || key === "Exterior Wash" || key === "Paint Correction" || key === "Dirtiness" || key === "Dog Hair" || key === 'Newsletter' || key === 'Price Estimate' || key === 'Vehicle Size') {
+            //     if (value !== '') {
+            //         formData.append(key, value);
+            //     }
+            // } else if (value === 'Yes') {
+            //     formData.append(key, value);
+            // }
         });
-
         
-        // if (intSelected) {
-        //     if (dirtiness === '' || dogHair === '') {
-        //         toast.error("Please fill out the Interior Dirtiness and Dog Hair Sections.", {
-        //             position: "bottom-center",
-        //             autoClose: 5000,
-        //             hideProgressBar: false,
-        //             closeOnClick: true,
-        //             pauseOnHover: true,
-        //             draggable: true,
-        //             progress: undefined
-        //         })
-        //     } else {
-        //         finalSubmit(formData, e);
-        //     }
-        // } else if (!intSelected || dirtiness !== '' && dogHair !== '') {
-        //     finalSubmit(formData, e)
-        // }
+        if (interiorService.length > 0) {
+            if (dirtiness === '' || dogHair === '') {
+                toast.error("Please fill out the Interior Dirtiness and Dog Hair Sections.", {
+                    position: "bottom-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined
+                })
+            } else {
+                finalSubmit(formData, e);
+            }
+        } else if (interiorService.length === 0) {
+            finalSubmit(formData, e)
+        }
     };
 
     const finalSubmit = (formData, e) => {
@@ -175,28 +232,6 @@ export default function Contact() {
         // });
     }
 
-    let handleGiftSelect = (giftButton) => {
-        setGift(giftButton)
-    }
-
-    // let handleIntSelect = () => {
-    //     let currForm = formRef.current;
-
-    //     if (!currForm['interiorCleaning'][0].checked && !currForm['interiorCleaning'][1].checked && !currForm['combo'].checked) {
-    //         currForm['intcoating'].checked = false;
-    //         setIntSelected(false);
-    //     } else {
-    //         setIntSelected(true);
-    //     }
-
-    //     if (!currForm['exteriorCoating'][0].checked && !currForm['exteriorCoating'][1].checked) {
-    //         setCoatingSelected(false);
-    //     } else {
-    //         setPaintCorrection('');
-    //         setCoatingSelected(true);
-    //     }
-    // }
-
     function formatPhoneNumber(value) {
         // if input value is falsy eg if the user deletes the input, then just return
         if (!value) return value;
@@ -228,75 +263,6 @@ export default function Contact() {
         setPhoneNumber(formattedPhoneNumber)
     }
 
-    // let handleRadioClick = (e, button) => {
-    //     if (button === "interiorCleaning") { // Interior Cleaning
-    //         if (e.target.id === interiorCleaning) {
-    //             setCurrentPrice(currentPrice - prices[e.target.id].cost[vehicle])
-    //             setInteriorCleaning('');
-    //         } else {
-    //             if (interiorCleaning === 'FullInt') {
-    //                 setCurrentPrice(currentPrice - prices['Full Interior'].cost[vehicle] + prices['bio'].cost[vehicle])
-    //                 setInteriorCleaning(e.target.id);
-    //             } else if (interiorCleaning === 'Bio') {
-    //                 setCurrentPrice(currentPrice - prices['bio'].cost[vehicle] + prices['fullint'].cost[vehicle])
-    //                 setInteriorCleaning(e.target.id);
-    //             } else {
-    //                 setInteriorCleaning(e.target.id);
-    //                 setCurrentPrice(currentPrice + prices[e.target.id.toLowerCase()].cost[vehicle]);
-    //             }
-    //         }
-    //     } else if (button === "exteriorCoating") { // Protect
-    //         if (e.target.id === exteriorCoating) { // exteriorCoating is equal to either "Protect" or "Protect+" so reset it
-    //             setCurrentPrice(currentPrice - prices[e.target.id.toLowerCase()].cost[vehicle])
-    //             setExteriorCoating('');
-    //         } else { // exteriorCoating != the value of the checkbox pressed so figure out if it's '' or 
-    //             if (exteriorCoating === 'Protect') {
-    //                 setCurrentPrice(currentPrice - prices['protect'].cost[vehicle] + prices['protect+'].cost[vehicle])
-    //                 setExteriorCoating(e.target.id);
-    //             } else if (exteriorCoating === 'Protect+') {
-    //                 setCurrentPrice(currentPrice - prices['protect+'].cost[vehicle] + prices['protect'].cost[vehicle])
-    //                 setExteriorCoating(e.target.id);
-    //             } else {
-    //                 setExteriorCoating(e.target.id);
-    //                 setCurrentPrice(currentPrice + prices[e.target.id.toLowerCase()].cost[vehicle]);
-    //             }
-    //         }
-    //     } else if (button === "paintCorrection") { // Exterior Services
-    //         if (e.target.id === paintCorrection) {
-    //             setCurrentPrice(currentPrice - prices[e.target.id.toLowerCase()].cost[vehicle])
-    //             setPaintCorrection('');
-    //         } else {
-    //             if (paintCorrection === 'Single Stage') {
-    //                 setCurrentPrice(currentPrice - prices['single stage'].cost[vehicle] + prices[e.target.id.toLowerCase()].cost[vehicle])
-    //                 setPaintCorrection(e.target.id);
-    //             } else if (paintCorrection === 'Two Stage') {
-    //                 setCurrentPrice(currentPrice - prices['two stage'].cost[vehicle] + prices[e.target.id.toLowerCase()].cost[vehicle])
-    //                 setPaintCorrection(e.target.id);
-    //             } else if (paintCorrection === 'Dirt-Less Wash') {
-    //                 setCurrentPrice(currentPrice - prices['dirt-less wash'].cost[vehicle] + prices[e.target.id.toLowerCase()].cost[vehicle])
-    //                 setPaintCorrection(e.target.id);
-    //             } else {
-    //                 setPaintCorrection(e.target.id);
-    //                 setCurrentPrice(currentPrice + prices[e.target.id.toLowerCase()].cost[vehicle]);
-    //             }
-    //         }
-    //     } else if (button === "dirtiness") { // Dirtiness
-    //         if (e.target.id === dirtiness) {
-    //             setDirtiness('');
-    //         } else {
-    //             setDirtiness(e.target.id);
-    //         }
-    //     } else if (button === "dogHair") { // Dog Hair
-    //         if (e.target.id === dogHair) {
-    //             setCurrentPrice(currentPrice - prices['dog hair'].cost[dogHair])
-    //             setDogHair('');
-    //         } else {
-    //             setCurrentPrice(currentPrice - prices['dog hair'].cost[dogHair ? dogHair : 'Little to None'] + prices['dog hair'].cost[e.target.id]);
-    //             setDogHair(e.target.id);
-    //         }
-    //     }
-    // }
-
     let changeVehicle = (e) => {
         let currForm = formRef.current;
 
@@ -320,16 +286,6 @@ export default function Contact() {
     }
 
     let handleOptionClick = (e, button, service) => {
-        console.log(button, service)
-        // start by checking if e.target.checked is true if it is then add prices[service] else subtract
-        // if (button !== 'Dog Hair' && e.target.checked) {
-        //     setCurrentPrice(currentPrice + prices[service].cost[vehicle])
-        // } else if (button !== 'Dog Hair' && !e.target.checked) {
-        //     setCurrentPrice(currentPrice - prices[service].cost[vehicle])
-        // }
-
-        // then start doing the edgework based on the service selected and e.target.checked, if checked then included things will need to be disabled, else enabled
-
         if (button === 'exterior') { // Exterior Service Selected
             if (exteriorService === service) { // Fires when the currently selected item is selected again
 
@@ -348,10 +304,6 @@ export default function Contact() {
                     setCurrentPrice(currentPrice - tempPrice);
                     setExteriorAddons([]);
                 }
-
-                // if (vip.length > 0) {
-                //     tempPrice -= prices[vip].cost[vehicle]
-                // }
 
                 setCurrentPrice(currentPrice + tempPrice);
                 setExteriorService('');
@@ -551,10 +503,6 @@ export default function Contact() {
 
                                 <input type="radio" name="gift" id='card' value='Gift Card' onChange={(e) => setGift(e.target.value)} checked={gift === 'Gift Card'} className='radio-button' />
                                 <label htmlFor="card" className='checkbox-label'>Gift Card</label>
-                                {/* <input type="radio" name="gift" id='myself' className='checkbox-input' onChange={() => handleGiftSelect(false)} checked={gift ? false : true} />
-                                <label htmlFor="myself" className='checkbox-label'>For Myself</label>
-                                <input type="radio" name="gift" id='someone' className='checkbox-input' onChange={() => handleGiftSelect(true)} checked={gift ? true : false} />
-                                <label htmlFor="someone" className='checkbox-label'>For Someone Else</label> */}
                             </div>
                             
                             <div style={{marginBottom: 0}} className='basic-info-container'>
