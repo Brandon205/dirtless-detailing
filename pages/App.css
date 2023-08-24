@@ -2546,10 +2546,12 @@ hr {
 }
 
 .addon-icon {
-  font-size: 75px;
+  /* font-size: 75px;
   background: #d9d9d9;
   padding: 0.75rem;
-  border-radius: 16px;
+  border-radius: 16px; */
+  width: 48px;
+  margin: 0 auto;
 }
 
 .addon-content {
@@ -3069,7 +3071,7 @@ hr {
   }
 
   .contact-info-cards {
-    width: 30%;
+    width: 40%;
     gap: 0;
     justify-content: space-around;
   }

@@ -1,11 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { GiPoliceBadge, GiSteam, GiCarDoor, GiFallingRocks, GiSmokeBomb, GiRolledCloth } from 'react-icons/gi';
-import { AiFillClockCircle, AiFillCalendar } from 'react-icons/ai';
-import { FaDog } from 'react-icons/fa';
 import { ImPointDown } from 'react-icons/im';
-import { BsFillArrowUpCircleFill } from 'react-icons/bs';
-import { RiCarWashingFill } from 'react-icons/ri';
-import { TbEngine } from 'react-icons/tb';
 
 import dynamic from "next/dynamic";
 const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
@@ -22,16 +16,16 @@ const imagesArr = [
 ]
 
 const iconArr = {
-    'extraction': <GiSteam className='addon-icon' />,
-    'hair': <FaDog className='addon-icon' />,
-    'headliners': <BsFillArrowUpCircleFill className='addon-icon' />,
-    'intcoating': <GiRolledCloth className='addon-icon' />,
-    'ozone': <GiSmokeBomb className='addon-icon' />,
-    'claybar': <GiFallingRocks className='addon-icon' />,
-    'glass': <GiCarDoor className='addon-icon' />,
-    'waterspot': <RiCarWashingFill className='addon-icon' />,
-    'engine': <TbEngine className='addon-icon' />,
-    'debadge': <GiPoliceBadge className='addon-icon' />
+    'extraction': <img src='../assets/icons/steam.png' className='addon-icon' alt="steam" />,
+    'hair': <img src='../assets/icons/dog.png' className='addon-icon' alt="dog walking" />,
+    'headliners': <img src='../assets/icons/up.png' className='addon-icon' alt="up arrow" />,
+    'intcoating': <img src='../assets/icons/steeringWheel.png' className='addon-icon' alt="engine" />,
+    'ozone': <img src='../assets/icons/ozone.png' className='addon-icon' alt="air filter in use" />,
+    'claybar': <img src='../assets/icons/dirt.png' className='addon-icon' alt="dirt particles" />,
+    'glass': <img src='../assets/icons/windscreen.png' className='addon-icon' alt="front windshield" />,
+    'waterspot': <img src='../assets/icons/water.png' className='addon-icon' alt="steam" />,
+    'engine': <img src='../assets/icons/engine.png' className='addon-icon' alt="engine" />,
+    'debadge': <img src='../assets/icons/bmw.png' className='addon-icon' alt="bmw badge" />
 }
 
 {/* <PricingComponent title='Ceramic Coating' prices={['949', '949', '1099', '1099', '1249', '1249']} addons={[{}]} labels={['label1', 'label2', 'needs to have 6 labels...']} /> */}
@@ -99,7 +93,7 @@ export default function PricingComponent({prices = props.prices, ceramic = false
         ceramicContent = (
             <div className="vip-container general-container">
                 <div className="pricing__addon">
-                    <AiFillClockCircle className='addon-icon' />
+                    <img src='../assets/icons/clock.png' className='addon-icon' alt="calendar" />
                     <div className="addon-content">
                         <h4>Monthly <span className='special-package'>VIP</span></h4>
                         <p>Every month we will perform a full exterior wash, and we will top off/boost ceramic coating if needed,  this will keep your vehicle in pristine condition year-round. Keeping up with this service qualifies you for our LIFETIME WARRANTY.</p>
@@ -110,7 +104,7 @@ export default function PricingComponent({prices = props.prices, ceramic = false
                     </div>
                 </div>
                 <div className="pricing__addon">
-                    <AiFillCalendar className='addon-icon' />
+                    <img src='../assets/icons/calendar.png' className='addon-icon' alt="calendar" />
                     <div className="addon-content">
                         <h4>Yearly <span className='special-package'>VIP</span></h4>
                         <p>Every 6 months to a year we will perform a full exterior wash, and we will top off/boost ceramic coating if needed. Keeping up with this service qualifies you for our 2-year, 20,000 mile warranty (Protect), or our 5-year 50,000 mile warranty (Protect+).</p>
@@ -152,7 +146,7 @@ export default function PricingComponent({prices = props.prices, ceramic = false
                             }
                         </span>
                     </strong>
-                    <p>+Desired Add-ons <ImPointDown /></p>
+                    <p>+Desired Add-ons <img src='../assets/icons/handDown.png' className='icon-20' alt="down arrow" /></p>
                 </div>
             </div>
 
