@@ -13,7 +13,7 @@ export default function MyApp({ Component, pageProps }) {
 
     useEffect(() => {
 
-        if (window.innerWidth < 879) {
+        if (window.innerWidth < 979) {
             setSmallScreen(true);
         } else {
             setSmallScreen(false);
@@ -155,7 +155,7 @@ export default function MyApp({ Component, pageProps }) {
                                 <a href="/services/add-ons" className='menu-link' onClick={() => setNav('none')}>Addons</a>
                             </li>
 
-                            <li className='menu-li'>
+                            <li className='menu-li' style={{paddingBottom: smallScreen ? '2rem' : 0}}>
                                 <a href="/About" className="menu-link" onClick={() => setNav('none')}>About / FAQ</a>
                             </li>
 

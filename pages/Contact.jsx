@@ -459,15 +459,15 @@ export default function Contact() {
                             <div style={{marginBottom: 0}} className='basic-info-container'>
                                 <div style={{position: 'relative', display: 'flex', justifyContent: 'flex-start'}}>
                                     <label htmlFor="name" className='text-input-label'>Name<span className='special-package'>*</span></label>
-                                    <input type="text" id="name" name="name" className='text-input' placeholder="Name" required />
+                                    <input type="text" id="name" name="name" autoComplete='on' className='text-input' placeholder="Name" required />
                                 </div>
                                 <div style={{position: 'relative', display: 'flex', justifyContent: 'flex-start'}}>
                                     <label htmlFor="email" className='text-input-label'>Email<span className='special-package'>*</span></label>
-                                    <input type="email" id="email" name="email" className='text-input' placeholder="Email" required />
+                                    <input type="email" id="email" autoComplete='email' name="email" className='text-input' placeholder="Email" required />
                                 </div>
                                 <div style={{position: 'relative', display: 'flex', justifyContent: 'flex-start'}}>
                                     <label htmlFor="phone" className='text-input-label'>Phone Number<span className='special-package'>*</span></label>
-                                    <input type="tel" id="phone" name="phone" pattern="\(\d{3}\) \d{3}-\d{4}" value={phoneNumber} onChange={(e) => handlePhoneNumber(e)} className='text-input' placeholder="Ex. (111) 111-1111" required />
+                                    <input type="tel" id="phone" name="phone" autoComplete='tel' pattern="\(\d{3}\) \d{3}-\d{4}" value={phoneNumber} onChange={(e) => handlePhoneNumber(e)} className='text-input' placeholder="Ex. (111) 111-1111" required />
                                 </div>
                             </div>
 
@@ -721,8 +721,8 @@ export default function Contact() {
                         <p className='contact-heading'>Interior + Exterior Combo <a href='/services/interior-exterior-detailing-combo' className='aside-link'><img src='../assets/icons/linking.png' alt='external link' className='icon-36' /></a></p>
                         <p className='contact-subheading'>Includes a Full Interior Cleaning, our Dirt-Less Wash, and a <span className='special-package'>FREE</span> Engine Bay Cleaning!</p>
                         <div>
-                            <input type="checkbox" name="combo" id='combo' value='Dirt-Less Detail' className='checkbox-input' onChange={(e) => handleOptionClick(e, 'Combo', 'Dirt-Less Detail')} />
-                            <label htmlFor="combo" className='checkbox-label'>The Dirt-Less Detail <span className='special-package italic'>(${prices['Dirt-Less Detail'].cost[vehicle]})</span></label>
+                            <input type="checkbox" name="combo" id='combo' value='Dirt-Less Detail' className='checkbox-input' onChange={(e) => handleOptionClick(e, 'Combo', 'Dirt-Less Detail')} disabled={interiorService.length > 0 || exteriorService.length > 0} />
+                            <label htmlFor="combo" title={interiorService.length > 0 || exteriorService.length > 0 ? `Can't have an interior or exterior service selected before selecting the Dirt-Less Detail` : ''} className='checkbox-label'>The Dirt-Less Detail <span className='special-package italic'>(${prices['Dirt-Less Detail'].cost[vehicle]})</span></label>
                         </div>
                     </div>
 

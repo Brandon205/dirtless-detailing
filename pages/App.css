@@ -1358,16 +1358,15 @@ option {
   text-decoration: none;
   font-size: 20px;
   margin: 0;
-  font-size: 1.2em;
+  font-size: 1.4em;
   color: gold;
-  text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.501);
 }
 
 .google-review {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 0.5rem;
-  background-color: #D9D9D9;
+  background-color: white;
   font-size: 24px;
   border-radius: 1rem;
   padding: 0.25rem 1.25rem;
@@ -1582,7 +1581,7 @@ hr {
 .header-buttons {
   display: flex;
   flex-direction: column;
-  max-width: 250px;
+  max-width: 260px;
   gap: 1rem;
   margin: 0 auto;
 }
@@ -2849,7 +2848,7 @@ hr {
   }
 }
 
-@media screen and (min-width: 880px) {
+@media screen and (min-width: 980px) {
   body {
     font-size: 1.1em;
   }
