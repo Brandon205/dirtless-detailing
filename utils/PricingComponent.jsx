@@ -62,31 +62,31 @@ export default function PricingComponent({prices = props.prices, ceramic = false
         switch (currVal){
             case 0:
                 monthlyCost = '$129';
-                yearlyCost = '$199'
+                yearlyCost = '$274'
                 break;
             case 1:
                 monthlyCost = '$129';
-                yearlyCost = '$199'
+                yearlyCost = '$274'
                 break;
             case 2:
                 monthlyCost = '$144';
-                yearlyCost = '$199'
+                yearlyCost = '$324'
                 break;
             case 3:
                 monthlyCost = '$159';
-                yearlyCost = '$249'
+                yearlyCost = '$324'
                 break;
             case 4:
                 monthlyCost = '$189';
-                yearlyCost = '$299'
+                yearlyCost = '$374'
                 break;
             case 5:
                 monthlyCost = '$189';
-                yearlyCost = '$289'
+                yearlyCost = '$374'
                 break;
             default:
                 monthlyCost = '$129';
-                yearlyCost = '$199';       
+                yearlyCost = '$274';       
         }
 
         ceramicContent = (
