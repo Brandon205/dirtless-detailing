@@ -1,15 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
 import 'react-toastify/dist/ReactToastify.css';
-
-import { AiOutlineCar } from "react-icons/ai";
-import { BsFillCameraFill } from "react-icons/bs";
-import { FaBars, FaCarSide, FaPhotoVideo, FaBiohazard, FaCameraRetro, FaSoap } from 'react-icons/fa';
-import { GiSteeringWheel, GiCarKey, GiCarSeat } from 'react-icons/gi';
-import { CgClose } from "react-icons/cg";
-import { HiSparkles } from 'react-icons/hi';
-import { TbEngine } from 'react-icons/tb';
-import { ImFilePicture } from 'react-icons/im';
 import './App.css';
 
 export default function MyApp({ Component, pageProps }) {
@@ -83,8 +74,10 @@ export default function MyApp({ Component, pageProps }) {
                         <div className="header-cert" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0a945e76-f4c0-4e29-ef16-463490d0db00/public')`, height: 105 + 'px', width: 140 + 'px' }}></div>
                     </a>
                     {nav === 'none' ?
-                        <FaBars className="menu-bars" onClick={() => setNav('block')} /> :
-                        <CgClose className="menu-bars" onClick={() => setNav('none')} />
+                        // <FaBars className="menu-bars" onClick={() => setNav('block')} /> :
+                        // <CgClose className="menu-bars" onClick={() => setNav('none')} />
+                        <img src='../assets/icons/menuBars.png' alt='menu bars' className='menu-bars' onClick={() => setNav('block')} /> :
+                        <img src='../assets/icons/close.png' alt='close' className='menu-bars' onClick={() => setNav('none')} />
                     }
                     <div style={{ display: nav }} className="menu-container">
                         <ul className='main-ul'>
@@ -204,24 +197,12 @@ export default function MyApp({ Component, pageProps }) {
                     <a href="/services/single-stage-correction" className='footer-link'>Single Stage Paint Correction</a>
                     <a href="/services/two-stage-correction" className='footer-link'>Two Stage Paint Correction</a>
                 </div>
-                {/* <div className="footer-content-card">
-                    <h3>EXTERIOR</h3>
-                </div>
-                <div className="footer-content-card">
-                    <h3>CORRECTION SERVICES</h3>
-                </div> */}
                 <div className="footer-content-card footer-contact-card" id="contact">
                     <h3>CONTACT</h3>
                     <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener"><img src='../assets/icons/phoneMessageColor.png' alt='Phone call / message' className='icon-24' /> (253) 252-9758</a>
                     <a href="mailto:brenden@dirtlessdetailing.com?subject = Schedule a Dirt-Less Detail" className="contact-link footer-contact-link" target="_blank" rel="noopener"><img src='../assets/icons/post.png' alt='email' className='icon-24' /> brenden@dirtlessdetailing.com</a>
                     <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link footer-contact-link" target="_blank" rel="noopener"><img src='../assets/icons/placeMarker.png' alt='place marker' className='icon-24' /> 9305 205th Ave E, Bonney Lake, Wa 98391</a><br />
                 </div>
-                {/* <div className='bbb-footer'>
-                    <p>Mobile services offered in:<span style={{ color: 'lightgray' }}> Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Lake Tapps, Federal Way, Orting, South Prairie, Tehaleh, Black Diamond, Milton, Edgewood, and Graham.</span></p>
-                    <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="noopener" aria-label='Dirt-Less Detailing on Better Business Bureau'>
-                        <div className="header-cert" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/1f42d129-8657-4246-7297-ab33dc24c000/public')`, width: 147 + 'px', height: 75 + 'px' }}></div>
-                    </a>
-                </div> */}
                 <div className='socials-container'>
                     <div>
                         <h4 style={{ fontSize: '1.3em', margin: '1rem auto' }}>©Dirt-Less Detailing 2023</h4>

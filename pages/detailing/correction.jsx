@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
-import { FaMapMarkerAlt } from 'react-icons/fa';
-import { MdOutlinePermPhoneMsg } from 'react-icons/md';
+
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 import PricingComponent from '../../utils/PricingComponent';
@@ -98,8 +97,8 @@ export default function correction() {
                 <h1>Paint Correction Services</h1>
                 <h2>Single and Two Stage Paint Correction services</h2>
                 <div className='header-buttons'>
-                    <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
-                    <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
+                    <a href="/Contact" className='top-quote-btn'>Get a Free Quote</a>
+                    <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
                 </div>
             </div>
             
@@ -305,18 +304,18 @@ export default function correction() {
                     <strong className='text-medium'>We'll help customers from all over get a paint correction on their vehicle, however, most of our customers come to our shop from these areas:</strong>
                     <div style={{ display: 'grid', placeItems: 'center' }}>
                         <ul className='cities-ul'>
-                        <li><a href='/correction/bonney-lake' className='aside-link'>Bonney Lake</a><FaMapMarkerAlt /></li>
-                        <li><a href='/correction/buckley' className='aside-link'>Buckley</a><FaMapMarkerAlt /></li>
-                        <li><a href='/correction/sumner' className='aside-link'>Sumner</a><FaMapMarkerAlt /></li>
-                        <li><a href='/correction/enumclaw' className='aside-link'>Enumclaw</a><FaMapMarkerAlt /></li>
-                        <li><a href='/correction/puyallup' className='aside-link'>Puyallup</a><FaMapMarkerAlt /></li>
-                        <li><a href='/correction/federal-way' className='aside-link'>Federal Way</a><FaMapMarkerAlt /></li>
-                        <li><a href='/correction/orting' className='aside-link'>Orting</a><FaMapMarkerAlt /></li>
-                        <li><a href='/correction/south-prairie' className='aside-link'>South Prairie</a><FaMapMarkerAlt /></li>
-                        <li><a href='/correction/black-diamond' className='aside-link'>Black Diamond</a><FaMapMarkerAlt /></li>
-                        <li><a href='/correction/milton' className='aside-link'>Milton</a><FaMapMarkerAlt /></li>
-                        <li><a href='/correction/edgewood' className='aside-link'>Edgewood</a><FaMapMarkerAlt /></li>
-                        <li><a href='/correction/graham' className='aside-link'>Graham</a><FaMapMarkerAlt /></li>
+                        <li><a href='/correction/bonney-lake' className='aside-link'>Bonney Lake</a><img src='../assets/icons/locationPing.png' alt='location ping' className='icon-24' /></li>
+                        <li><a href='/correction/buckley' className='aside-link'>Buckley</a><img src='../assets/icons/locationPing.png' alt='location ping' className='icon-24' /></li>
+                        <li><a href='/correction/sumner' className='aside-link'>Sumner</a><img src='../assets/icons/locationPing.png' alt='location ping' className='icon-24' /></li>
+                        <li><a href='/correction/enumclaw' className='aside-link'>Enumclaw</a><img src='../assets/icons/locationPing.png' alt='location ping' className='icon-24' /></li>
+                        <li><a href='/correction/puyallup' className='aside-link'>Puyallup</a><img src='../assets/icons/locationPing.png' alt='location ping' className='icon-24' /></li>
+                        <li><a href='/correction/federal-way' className='aside-link'>Federal Way</a><img src='../assets/icons/locationPing.png' alt='location ping' className='icon-24' /></li>
+                        <li><a href='/correction/orting' className='aside-link'>Orting</a><img src='../assets/icons/locationPing.png' alt='location ping' className='icon-24' /></li>
+                        <li><a href='/correction/south-prairie' className='aside-link'>South Prairie</a><img src='../assets/icons/locationPing.png' alt='location ping' className='icon-24' /></li>
+                        <li><a href='/correction/black-diamond' className='aside-link'>Black Diamond</a><img src='../assets/icons/locationPing.png' alt='location ping' className='icon-24' /></li>
+                        <li><a href='/correction/milton' className='aside-link'>Milton</a><img src='../assets/icons/locationPing.png' alt='location ping' className='icon-24' /></li>
+                        <li><a href='/correction/edgewood' className='aside-link'>Edgewood</a><img src='../assets/icons/locationPing.png' alt='location ping' className='icon-24' /></li>
+                        <li><a href='/correction/graham' className='aside-link'>Graham</a><img src='../assets/icons/locationPing.png' alt='location ping' className='icon-24' /></li>
                         </ul>
                     </div>
                 </div>

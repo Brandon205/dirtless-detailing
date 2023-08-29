@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
-import { MdOutlinePermPhoneMsg } from 'react-icons/md';
+
 import PricingComponent from '../../utils/PricingComponent';
 import addons from '../../utils/Addons';
 import Zoom from 'react-medium-image-zoom';
@@ -86,7 +86,7 @@ export default function blackDiamond() {
                 <h2>From removing scratches to removing stains we will have your car cleaner than ever before! Check out our top auto detailing services for Black Diamond Washington</h2>
                 <div className='header-buttons'>
                     <a href="/Contact" className='top-quote-btn'>Get a Free Quote</a>
-                    <a href="tel:2532529758" className='top-quote-btn btn-secondary'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
+                    <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
                 </div>
             </div>
 

@@ -3,9 +3,6 @@ import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
-
-import { BiLinkExternal } from 'react-icons/bi';
-import { AiOutlineStar } from 'react-icons/ai';
 import PricingComponent from '../../utils/PricingComponent';
 
 export default function ExtCoatings() {
@@ -119,15 +116,15 @@ export default function ExtCoatings() {
                             </div>
                             <div className='package-container'>
                                 <div className='package-details'>
-                                    <h4><AiOutlineStar className='star-icon' /> All Paint Covered</h4>
+                                    <h4><img src='../assets/icons/star.png' alt='star' className='icon-24' /> All Paint Covered</h4>
                                     <p>All exterior paint on the vehicle will be coated with IGL's Quartz Ceramic 9H Coating.</p>
                                 </div>
                                 <div className='package-details'>
-                                    <h4><AiOutlineStar className='star-icon' /> Coat Windshield, Lights, and Trim</h4>
+                                    <h4><img src='../assets/icons/star.png' alt='star' className='icon-24' /> Coat Windshield, Lights, and Trim</h4>
                                     <p>The next most important parts of the vehicle to coat are the Windshield, Lights, and the Trim. All of those essentials will be covered in this Protect Package as well.</p>
                                 </div>
                                 <div className='package-details'>
-                                    <h4><AiOutlineStar className='star-icon' /> 2-year, 20,000 mile, or Lifetime Warranty<span className='special-package'>*</span></h4>
+                                    <h4><img src='../assets/icons/star.png' alt='star' className='icon-24' /> 2-year, 20,000 mile, or Lifetime Warranty*</h4>
                                     <p>After your first coating, following through with proper maintenance can qualify you for up to our Lifetime Warranty! See details below.</p>
                                 </div>
                             </div>
@@ -140,15 +137,15 @@ export default function ExtCoatings() {
                             </div>
                             <div className='package-container'>
                                 <div className='package-details'>
-                                    <h4><AiOutlineStar className='star-icon' /> All Paint Covered</h4>
+                                    <h4><img src='../assets/icons/star.png' alt='star' className='icon-24' /> All Paint Covered</h4>
                                     <p>All exterior paint on the vehicle will be coated with IGL's Kenzo Graphene Ceramic 10H Coating.</p>
                                 </div>
                                 <div className='package-details'>
-                                    <h4><AiOutlineStar className='star-icon' /> Coat Trim, Glass, Lights, and Wheel Faces</h4>
+                                    <h4><img src='../assets/icons/star.png' alt='star' className='icon-24' /> Coat Trim, Glass, Lights, and Wheel Faces</h4>
                                     <p>We will cover nearly the entire exterior of your vehicle, ensuring that it is completely protected all around.</p>
                                 </div>
                                 <div className='package-details'>
-                                    <h4><AiOutlineStar className='star-icon' /> 5-year, 50,000 mile, or Lifetime Warranty<span className='special-package'>*</span></h4>
+                                    <h4><img src='../assets/icons/star.png' alt='star' className='icon-24' /> 5-year, 50,000 mile, or Lifetime Warranty*</h4>
                                     <p>After your first coating, following through with proper maintenance can qualify you for up to our Lifetime Warranty! See details below.</p>
                                 </div>
                             </div>
@@ -246,7 +243,7 @@ export default function ExtCoatings() {
                                 </Zoom>
                             </div>
 
-                            <h2 className='text-large'>Professional Interior Coatings <a href='/services/interior-ceramic-coating' className='aside-link'><BiLinkExternal /></a></h2>
+                            <h2 className='text-large'>Professional Interior Coatings <a href='/services/interior-ceramic-coating' className='aside-link'><img src='../assets/icons/linking.png' alt='external link' className='icon-36' /></a></h2>
                             <div className="text-left">
                                 <p>Whether it's your kid spilling juice, or you spilling your morning coffee, we have all been there. Our interior coatings provide a barrier of protection and allow you time to wipe any spill up before it seeps in. Get more info on our <a href="/services/interior-ceramic-coating" className='aside-link'>Interior Coating</a> page.</p>
                             </div>

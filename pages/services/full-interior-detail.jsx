@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
-import { BiLinkExternal } from 'react-icons/bi';
 import PricingComponent from '../../utils/PricingComponent';
 import addons from '../../utils/Addons';
 
@@ -139,14 +138,14 @@ export default function FullIntEx() {
                 <h3 className="new-heading">Services similar to our Interior Detailing</h3>
               </div>
               <div style={{padding: '2rem 0'}} className="general-container">
-                <h2 className='text-large text-left'>Biohazard Cleaning <a href='/services/biohazard-cleaning' className='aside-link'><BiLinkExternal /></a></h2>
+                <h2 className='text-large text-left'>Biohazard Cleaning <a href='/services/biohazard-cleaning' className='aside-link'><img src='../assets/icons/linking.png' alt='external link' className='icon-36' /></a></h2>
                 <div className="text-left">
                   <p>If the interior of your vehicle has things like strong odors, mold, or even bodily fluids we can clean those with our <a href="/services/biohazard-cleaning" className='aside-link'>Biohazard Cleaning</a> service. This will cover a normal interior cleaning and will also include extra things like carpet extraction and ozone treatment depending on the severity of the situation.</p>
                 </div>
 
                 <br className='extra-space' />
 
-                <h2 className='text-large text-left'>The Dirt-Less Detail <a href='/services/interior-exterior-detailing-combo' className='aside-link'><BiLinkExternal /></a></h2>
+                <h2 className='text-large text-left'>The Dirt-Less Detail <a href='/services/interior-exterior-detailing-combo' className='aside-link'><img src='../assets/icons/linking.png' alt='external link' className='icon-36' /></a></h2>
                 <div className="text-left">
                   <p>Get a <span className="special-package">FREE</span> Engine Bay Cleaning when you schedule our Dirt-Less Detail service. This service combines our <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> and this Full Interior Detail. It is sure to get your entire vehicle looking like new, even the engine bay which is typically overlooked when washing your car.</p>
                 </div>

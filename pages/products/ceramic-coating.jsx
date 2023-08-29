@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
-import { MdOutlinePermPhoneMsg } from 'react-icons/md';
+
 
 export default function products() {
     return (
@@ -21,7 +21,7 @@ export default function products() {
                 <h2 className='page-subheading'>Check out how you can easily keep your car clean yourself without damaging your new ceramic coating with these simple products and methods!</h2>
                 <div className='header-buttons'>
                     <a href="/Contact" className='top-quote-btn'>Get a Free Quote</a>
-                    <a href="tel:2532529758" className='top-quote-btn btn-secondary'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
+                    <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
                 </div>
             </div>
 

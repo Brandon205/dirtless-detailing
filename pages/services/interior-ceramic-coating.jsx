@@ -2,8 +2,6 @@ import React from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 
-import { BiLinkExternal } from 'react-icons/bi';
-
 export default function IntCoatings() {
     return (
         <section className="service-content-container bg-contact" style={{paddingBottom: 0}}>
@@ -134,7 +132,7 @@ export default function IntCoatings() {
                         </div>
                         <div style={{padding: '2rem 0'}} className="general-container">
 
-                            <h2 className='text-large text-left'>Professional Exterior Coatings <a href='/services/exterior-ceramic-coating' className='aside-link'><BiLinkExternal /></a></h2>
+                            <h2 className='text-large text-left'>Professional Exterior Coatings <a href='/services/exterior-ceramic-coating' className='aside-link'><img src='../assets/icons/linking.png' alt='external link' className='icon-36' /></a></h2>
                             <div className="text-left">
                                 <p>If you're interested in protecting the exterior of your vehicle including the windshield, wheel faces, and headlights, then you're looking for our Exterior Ceramic Coatings. Check out more info <a href='/services/exterior-ceramic-coating' className='aside-link'>here</a>. </p>
                             </div>

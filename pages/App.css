@@ -65,8 +65,7 @@ img {
 
 .menu-bars {
   color: white;
-  margin-right: .5em;
-  font-size: 1.5rem;
+  margin-right: 20px;
 }
 
 .dd-desc {
@@ -991,8 +990,8 @@ option {
 }
 
 .check-circle {
-  color: var(--main-clr);
-  margin-right: 0.5rem;
+  width: 24px;
+  margin-right: 8px;
 }
 
 .checklist {
@@ -1378,10 +1377,6 @@ option {
 .google-review svg {
   font-size: 30px;
   align-self: center;
-}
-
-.facebook-logo {
-  color: #4267B2;
 }
 
 .mobileservices-container {

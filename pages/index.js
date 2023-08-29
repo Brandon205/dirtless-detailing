@@ -5,9 +5,6 @@ import Metatags from '../utils/Metatags';
 import PopularServices from '../utils/PopularServices';
 import OtherServices from '../utils/OtherServices';
 
-import { FaFacebook } from 'react-icons/fa';
-import { FcGoogle } from 'react-icons/fc';
-
 export default function Home() {
     const [screenWidth, setScreenWidth] = useState(null);
     const [currentService, setCurrentService] = useState('popular');
@@ -94,17 +91,17 @@ export default function Home() {
             <div className="service-bkg" style={{paddingTop: 0}}>
                 <div style={{display: screenWidth < 879 ? 'none' : 'flex'}} className="header-icons-container">
                     <div>
-                        <img src='../assets/icons/calendar.png' alt='calendar' className='header-icon' />
+                        <img src='../assets/icons/calendar.png' alt='star' className='header-icon' />
                         <p className="header-desc">8 Years</p>
                         <span className='header-desc-span'>Of Experience</span>
                     </div>
                     <div>
-                        <img src='../assets/icons/car.png' alt='calendar' className='header-icon' />
+                        <img src='../assets/icons/car.png' alt='car' className='header-icon' />
                         <p className="header-desc">1000+</p>
                         <span className='header-desc-span'>Details Done</span>
                     </div>
                     <div>
-                        <img src='../assets/icons/star.png' alt='calendar' className='header-icon' />
+                        <img src='../assets/icons/star.png' alt='star' className='header-icon' />
                         <p className="header-desc">Raving</p>
                         <span className='header-desc-span'>5 Star Reviews</span>
                     </div>
@@ -171,7 +168,7 @@ export default function Home() {
                                     <p className='services-p'>Interior Detail</p>
                                 </div>
                                 <div className='google-review'>
-                                    <FaFacebook className='facebook-logo' />
+                                    <img src='../assets/icons/facebook.png' alt='facebook logo' className='icon-36' />
                                     <p className='star-review'>★★★★★</p>
                                 </div>
                             </div>
@@ -186,7 +183,7 @@ export default function Home() {
                                     <p className='services-p'>Interior Detail</p>
                                 </div>
                                 <div className='google-review'>
-                                    <FcGoogle />
+                                    <img src='../assets/icons/google.png' alt='google logo' className='icon-36' />
                                     <p className='star-review'>★★★★★</p>
                                 </div>
                             </div>
@@ -201,7 +198,7 @@ export default function Home() {
                                     <p className='services-p'>Interior + Extraction</p>
                                 </div>
                                 <div className='google-review'>
-                                    <FaFacebook className='facebook-logo' />
+                                    <img src='../assets/icons/facebook.png' alt='facebook logo' className='icon-36' />
                                     <p className='star-review'>★★★★★</p>
                                 </div>
                             </div>
@@ -216,7 +213,7 @@ export default function Home() {
                                     <p className='services-p'>Interior + Extraction</p>
                                 </div>
                                 <div className='google-review'>
-                                    <FcGoogle />
+                                    <img src='../assets/icons/google.png' alt='google logo' className='icon-36' />
                                     <p className='star-review'>★★★★★</p>
                                 </div>
                             </div>
@@ -231,7 +228,7 @@ export default function Home() {
                                     <p className='services-p'>The Dirt-Less Detail</p>
                                 </div>
                                 <div className='google-review'>
-                                    <FcGoogle />
+                                    <img src='../assets/icons/google.png' alt='google logo' className='icon-36' />
                                     <p className='star-review'>★★★★★</p>
                                 </div>
                             </div>
@@ -246,7 +243,7 @@ export default function Home() {
                                     <p className='services-p'>The Dirt-Less Detail</p>
                                 </div>
                                 <div className='google-review'>
-                                    <FaFacebook className='facebook-logo' />
+                                    <img src='../assets/icons/facebook.png' alt='facebook logo' className='icon-36' />
                                     <p className='star-review'>★★★★★</p>
                                 </div>
                             </div>

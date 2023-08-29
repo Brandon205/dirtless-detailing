@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
-import { BiLinkExternal } from 'react-icons/bi';
 import PricingComponent from '../../utils/PricingComponent';
 import addons from '../../utils/Addons';
 
@@ -139,7 +138,7 @@ export default function DLWash() {
             <h3 className="new-heading">Our Interior + Exterior + FREE Engine Bay Deal</h3>
           </div>
           <div style={{padding: '2rem 0'}} className="general-container">
-            <h2 className="text-large text-left">The Dirt-Less Detail <a className="aside-link" href="/services/interior-exterior-detailing-combo"><BiLinkExternal /></a></h2>
+            <h2 className="text-large text-left">The Dirt-Less Detail <a className="aside-link" href="/services/interior-exterior-detailing-combo"><img src='../assets/icons/linking.png' alt='external link' className='icon-36' /></a></h2>
             <div className="text-left">
               <p>Get a <span className="special-package">FREE</span> Engine Bay Cleaning when you schedule our Dirt-Less Detail service. This service combines our <a href="/services/full-interior-detail" className="aside-link">Full Interior Detail</a> and this Dirt-Less Wash. It is sure to get your entire vehicle looking like new, even the engine bay which is typically overlooked when washing your car.</p>
             </div>

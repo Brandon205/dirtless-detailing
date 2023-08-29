@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
-import { MdOutlinePermPhoneMsg } from 'react-icons/md';
+
 import PricingComponent from '../../utils/PricingComponent';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
@@ -97,7 +97,7 @@ export default function bonneyLake() {
                 <h2>5-year IGL Graphene Coatings</h2>
                 <div className='header-buttons'>
                     <a href="/Contact" className='top-quote-btn'>Get a Free Quote</a>
-                    <a href="tel:2532529758" className='top-quote-btn btn-secondary'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
+                    <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
                 </div>
             </div>
             

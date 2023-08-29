@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
-import { MdOutlinePermPhoneMsg } from 'react-icons/md';
+
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 import PricingComponent from '../../utils/PricingComponent';
@@ -98,7 +98,7 @@ export default function Tehaleh() {
                 <h2>Single and Two Stage Paint Correction services</h2>
                 <div className='header-buttons'>
                     <a href="/Contact" className='quote-btn'>Get a Free Quote</a>
-                    <a href="tel:2532529758" className='quote-btn top-quote-btn'><MdOutlinePermPhoneMsg className='call-icon' /> (253) 252-9758</a>
+                    <a href="tel:2532529758" className='quote-btn top-quote-btn'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
                 </div>
             </div>
             
