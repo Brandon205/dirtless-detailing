@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { ImPointDown } from 'react-icons/im';
 
 import dynamic from "next/dynamic";
 const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {

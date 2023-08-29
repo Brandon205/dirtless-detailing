@@ -43,7 +43,7 @@ export default function blackDiamond() {
                 <title>Black Diamond Detailing Services | Dirt-Less Detailing</title>
                 <Metatags
                     title='Black Diamond Detailing Services | Dirt-Less Detailing'
-                    description='From removing scratches to removing stains we will have your car cleaner than ever before! Check out our top auto detailing services for Black Diamond Washington'
+                    description='From removing scratches to removing stains we will have your car looking like new! Check out our auto detailing services for Black Diamond Washington.'
                     image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b441cde-1d0f-45d9-665f-e44bfce0d800/public'
                     canonical='/location/black-diamond'
                 />
