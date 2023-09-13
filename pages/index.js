@@ -114,7 +114,7 @@ export default function Home() {
 
                 <div className="general-container new-heading-container">
                     <h2 className="new-heading new-heading-center">Our Service Categories</h2>
-                    <p className='new-heading-center'>Tap a service category below to see our current offers for that category of service.</p>
+                    <p className='new-heading-center'>Tap a service category below to see our current offers for that type of service!</p>
                 </div>
 
                 <br className="extra-space" />

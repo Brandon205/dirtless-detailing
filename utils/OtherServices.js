@@ -175,7 +175,7 @@ export default function OtherServices(props) {
 
             {content}
 
-            <p>Tap a service category above these cards to see what we offer for that category of service.</p>
+            <p>Tap a service category above these cards to see our offers for that category of service.</p>
 
         </div>
     )
