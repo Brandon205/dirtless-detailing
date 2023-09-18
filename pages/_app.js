@@ -155,7 +155,7 @@ export default function MyApp({ Component, pageProps }) {
                                 <a href="/services/add-ons" className='menu-link' onClick={() => setNav('none')}>Addons</a>
                             </li>
 
-                            <li className='menu-li' style={{paddingBottom: smallScreen ? '2rem' : 0}}>
+                            <li className='menu-li' style={{ paddingBottom: smallScreen ? '2rem' : 0 }}>
                                 <a href="/About" className="menu-link" onClick={() => setNav('none')}>About / FAQ</a>
                             </li>
 
@@ -210,7 +210,7 @@ export default function MyApp({ Component, pageProps }) {
                     </div>
                     <div>
                         <a href="https://www.facebook.com/DirtLessDetailing/" className="socials" target="_blank" rel="noopener" aria-label="Facebook"><img src='../assets/icons/facebook.png' alt='facebook' className='icon-48' /></a>
-                        <a href="https://www.instagram.com/dirtlessdetailing/" className="socials" target="_blank" rel="noopener" aria-label="Instagram"><img src='../assets/icons/instagram.png' alt='instagram' className='icon-48' /></a>
+                        <a href="https://www.instagram.com/dirt_less_detailing/" className="socials" target="_blank" rel="noopener" aria-label="Instagram"><img src='../assets/icons/instagram.png' alt='instagram' className='icon-48' /></a>
                         <a href="https://www.youtube.com/channel/UCsoqP5s4hwkQd_Sd-TVv-jg" className="socials" target="_blank" rel="noopener" aria-label="Youtube"><img src='../assets/icons/youtube.png' alt='youtube' className='icon-48' /></a>
                     </div>
                 </div>
