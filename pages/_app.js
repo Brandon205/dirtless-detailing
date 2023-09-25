@@ -74,8 +74,6 @@ export default function MyApp({ Component, pageProps }) {
                         <div className="header-cert" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0a945e76-f4c0-4e29-ef16-463490d0db00/public')`, height: 105 + 'px', width: 140 + 'px' }}></div>
                     </a>
                     {nav === 'none' ?
-                        // <FaBars className="menu-bars" onClick={() => setNav('block')} /> :
-                        // <CgClose className="menu-bars" onClick={() => setNav('none')} />
                         <img src='../assets/icons/menuBars.png' alt='menu bars' className='menu-bars' onClick={() => setNav('block')} /> :
                         <img src='../assets/icons/close.png' alt='close' className='menu-bars' onClick={() => setNav('none')} />
                     }
