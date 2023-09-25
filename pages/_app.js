@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
 import 'react-toastify/dist/ReactToastify.css';
-import './App.css';
+import './App.scss';
 
 export default function MyApp({ Component, pageProps }) {
     const [nav, setNav] = useState('none');
