@@ -11,6 +11,19 @@ $secondary-text: #575757;
 $secondary-text-light: #c0c0c0;
 $heading-clr1: #fff;
 $text-blue: #3b9eff;
+$pricing-clr: #39974b;
+
+@mixin justify-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@mixin column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 *,
 *::before,
@@ -887,6 +900,13 @@ option {
   margin-bottom: 2rem;
 }
 
+.home-service-container {
+  @include column-center;
+  width: 90%;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
 .popular-container {
   width: 100%;
   height: auto;
@@ -899,14 +919,13 @@ option {
 }
 
 .popular-services-card {
+  display: flex;
+  flex-direction: column;
   background-color: $contact-bkg-lighter;
   box-shadow: 2px 2px 5px black;
   width: 90%;
-  max-width: 550px;
-  z-index: 0;
-  position: relative;
+  max-width: 450px;
   font-size: 1.1em;
-  height: 100%;
   border-radius: 32px;
 }
 
@@ -915,8 +934,9 @@ option {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-bottom: 100%;
-  border-radius: 32px 32px 0 0;
+  padding-bottom: 50%;
+  border-radius: 24px;
+  margin: 0.5rem;
 }
 
 .popular-link-container {
@@ -925,6 +945,16 @@ option {
   justify-content: space-around;
   align-items: center;
   padding: 1rem 1rem 2rem 1rem;
+
+  div {
+    display: flex;
+    flex-direction: column;
+
+    a:last-child {
+      padding-top: 0.5rem;
+      text-decoration: none;
+    }
+  }
 }
 
 .popular-readmore {
@@ -940,7 +970,7 @@ option {
   transition: 0.25s;
   box-shadow: 1px 4px 7px black;
   border-radius: 100px;
-  width: 90%;
+  width: 175px;
 }
 
 .popular-readmore:hover {
@@ -1151,11 +1181,11 @@ option {
   line-height: 1.5;
 }
 
-.otherservices-container {
-  width: 100%;
-  padding: 2rem 0 0 0;
-  border-radius: 32px;
-}
+// .otherservices-container {
+//   width: 100%;
+//   padding: 2rem 0 0 0;
+//   border-radius: 32px;
+// }
 
 .otherservices-subcontainer {
   display: flex;
@@ -1584,6 +1614,21 @@ hr {
   width: 90%;
   max-width: 1750px;
   margin: 0 auto;
+}
+
+.home-heading-container {
+  width: 100%;
+  text-align: center;
+
+  h2 {
+    font-size: 2em;
+    margin-bottom: 0;
+  }
+
+  p {
+    max-width: 75%;
+    margin: 0 auto 2rem auto;
+  }
 }
 
 .new-heading-container {
@@ -2184,6 +2229,7 @@ hr {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  color: $pricing-clr;
   font-family: 'Oswald', sans-serif;
   font-size: 2.5em;
   font-weight: bold;
@@ -2878,7 +2924,7 @@ hr {
 
   .main-desc {
     font-size: 20px;
-    max-width: 40%;
+    max-width: 49%;
     text-align: left;
     margin: 0;
   }
@@ -3315,7 +3361,7 @@ hr {
   }
 
   .main-title {
-    font-size: 3.5em;
+    font-size: 3.75em;
   }
 
   .textarea {
@@ -3362,6 +3408,16 @@ hr {
   }
 }
 
+@media screen and (min-width: 1500px) {
+  .interior-heading {
+    width: 33%;
+  }
+
+  .popular-link-container {
+    flex-direction: row;
+  }
+}
+
 @media screen and (min-width: 2000px) {
   .header-icons-container {
     padding: 2em;
@@ -3375,10 +3431,6 @@ hr {
 
   .popular-container {
     justify-content: space-around;
-  }
-
-  .popular-link-container {
-    flex-direction: row;
   }
 
   .pricing-container {

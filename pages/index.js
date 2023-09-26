@@ -112,14 +112,14 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="general-container new-heading-container">
+                {/* <div className="general-container new-heading-container">
                     <h2 className="new-heading new-heading-center">Our Service Categories</h2>
                     <p className='new-heading-center'>Tap a service category below to see our current offers for that type of service!</p>
-                </div>
+                </div> */}
 
-                <br className="extra-space" />
+                {/* <br className="extra-space" /> */}
 
-                <div className="service-type-container">
+                {/* <div className="service-type-container">
                     <div style={{boxShadow: currentService === 'popular' ? '5px 6px 10px black ' : '2px 2px 5px black', transform: currentService === 'popular' ? 'scale(1.05)' : 'none'}} className="service-type-card" onClick={() => handleServiceChange('popular')}>
                         <img src='../assets/icons/graph.png' alt="popularity graph" className='icon-96' />
                         <strong style={{color: currentService === 'popular' ? '#ff2600' : 'white'}}>Our Most Popular Details</strong>
@@ -140,16 +140,250 @@ export default function Home() {
                         <strong style={{color: currentService === 'ceramic' ? '#ff2600' : 'white'}}>Ceramic Coatings</strong>
                         <p>Our best exterior paint protection offers! If you want you paint to look good, be protected, and shine for years to come this is the option for you.</p>
                     </div>
-                </div>
+                </div> */}
 
-                <br style={{margin: '1.5rem auto'}} id='service-hyperlink' />
+                {/* <br style={{margin: '1.5rem auto'}} id='service-hyperlink' />
             
                 {currentService === 'popular' ? 
                     <PopularServices smallScreen={screenWidth < 979} /> : ''
                 }
                 {currentService !== 'popular' ? 
                     <OtherServices service={currentService} /> : ''
-                }
+                } */}
+                
+                <div className="otherservices-subcontainer">
+                {/* <div className="home-service-container"> */}
+                    <div className="interior-heading">
+                        <h2>Professional Interior Services</h2>
+                        <p>
+                            Transform your vehicle's interior with our premium Auto Detailing services. Experience a cleaner, 
+                            fresher, and more comfortable driving environment while also enhancing the value of your vehicle. 
+                            Our comprehensive interior detailing packages are designed to rejuvenate your car's interior, from 
+                            extracting all fabrics to protecting the surfaces against any spills.
+                        </p>
+                    </div>
+                    <div className='popular-services-card'>
+                        <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/907d2e8b-5d24-40bf-387e-90be139c2d00/public)` }}></div>
+                        <div className='popular-header'>
+                            <h3>Full Interior</h3>
+                        </div>
+
+                        <ul className='checklist'>
+                            <li className='checklist-item'>
+                                <img src='../assets/icons/checkmark1.png' alt='checkmark' className='check-circle' />
+                                <p>Hidden dirt/debris removed with our vortex blowgun</p>
+                            </li>
+                            <li className='checklist-item'>
+                                <img src='../assets/icons/checkmark1.png' alt='checkmark' className='check-circle' />
+                                <p>Steam extraction/carpet shampooing</p>
+                            </li>
+                            <li className='checklist-item'>
+                                <img src='../assets/icons/checkmark1.png' alt='checkmark' className='check-circle' />
+                                <p>Door jambs cleaned</p>
+                            </li>
+                            <li className='checklist-item'>
+                                <img src='../assets/icons/checkmark1.png' alt='checkmark' className='check-circle' />
+                                <p>All Leathers and plastics cleaned</p>
+                            </li>
+                            <li className='checklist-item'>
+                                <img src='../assets/icons/checkmark1.png' alt='checkmark' className='check-circle' />
+                                <p>All interior windows and glass cleaned</p>
+                            </li>
+                        </ul>
+
+                        <div className='popular-link-container'>
+                            <div>
+                                <p style={{ marginBottom: 0, color: '#c0c0c0', textAlign: 'left' }}>Starting At:</p>
+                                <p className='popular-pricing-price'>$300</p>
+                            </div>
+                            <div>
+                                <a href="/Contact" className='popular-readmore'>Book Now!</a>
+                                <a href="/services/interior" className='aside-link'>Learn More &gt;&gt;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='popular-services-card'>
+                        <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d09c52dc-c233-4cbd-c347-07de1c945d00/public)` }}></div>
+                        <div className='popular-header'>
+                            <h3>Full Interior with Spill Guard</h3>
+                        </div>
+
+                        <ul className='checklist'>
+                            <li className='checklist-item'>
+                                <img src='../assets/icons/checkmark1.png' alt='checkmark' className='check-circle' />
+                                <p>Hidden dirt/debris removed with our vortex blowgun</p>
+                            </li>
+                            <li className='checklist-item'>
+                                <img src='../assets/icons/checkmark1.png' alt='checkmark' className='check-circle' />
+                                <p>Steam extraction/carpet shampooing</p>
+                            </li>
+                            <li className='checklist-item'>
+                                <img src='../assets/icons/checkmark1.png' alt='checkmark' className='check-circle' />
+                                <p>Door jambs cleaned</p>
+                            </li>
+                            <li className='checklist-item'>
+                                <img src='../assets/icons/checkmark1.png' alt='checkmark' className='check-circle' />
+                                <p>All Leathers and plastics cleaned</p>
+                            </li>
+                            <li className='checklist-item'>
+                                <img src='../assets/icons/checkmark1.png' alt='checkmark' className='check-circle' />
+                                <p>All interior windows and glass cleaned</p>
+                            </li>
+                            <li className='checklist-item'>
+                                <img src='../assets/icons/checkmark1.png' alt='checkmark' className='check-circle' />
+                                <p>Apply an Interior Ceramic Coating to the vehicle</p>
+                            </li>
+                        </ul>
+
+                        <div className='popular-link-container'>
+                            <div>
+                                <p style={{ marginBottom: 0, color: '#c0c0c0', textAlign: 'left' }}>Starting At:</p>
+                                <p className='popular-pricing-price'>$450</p>
+                            </div>
+                            <div>
+                                <a href="/Contact" className='popular-readmore'>Book Now!</a>
+                                <a href="/services/interior-spill" className='aside-link'>Learn More &gt;&gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br className="extra-space" />
+
+                <div className="home-heading-container">
+                    <h2>Professional Exterior Services</h2>
+                    <p>
+                        Elevate the appearance and protection of your vehicle's exterior with our range of Auto Detailing services. From the basics of a thorough 
+                        wash to the pinnacle of perfection with our expert paint correction, we offer a comprehensive suite of options to cater to your specific needs. 
+                        Our exterior detailing packages are designed to enhance your vehicle's aesthetics while safeguarding its finish from the elements.
+                    </p>
+                </div>
+
+                <div className="otherservices-subcontainer">
+                    <div className='popular-services-card'>
+                        <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b5859464-3c0e-4fcf-8332-17155eb86d00/public)` }}></div>
+                        <div className='popular-header'>
+                            <h3>Exterior Decon Wash</h3>
+                        </div>
+
+                        <ul className='checklist'>
+                            <li className='checklist-item'>
+                                <img src='../assets/icons/checkmark1.png' alt='checkmark' className='check-circle' />
+                                <p>Strong and thorough wheel and tire cleaning</p>
+                            </li>
+                            <li className='checklist-item'>
+                                <img src='../assets/icons/checkmark1.png' alt='checkmark' className='check-circle' />
+                                <p>Full vehicle Rinse-less Wash</p>
+                            </li>
+                            <li className='checklist-item'>
+                                <img src='../assets/icons/checkmark1.png' alt='checkmark' className='check-circle' />
+                                <p>Ceramic Spray applied to the whole vehicle</p>
+                            </li>
+                        </ul>
+
+                        <div className='popular-link-container'>
+                            <div>
+                                <p style={{ marginBottom: 0, color: '#c0c0c0', textAlign: 'left' }}>Starting At:</p>
+                                <p className='popular-pricing-price'>$100</p>
+                            </div>
+                            <div>
+                                <a href="/Contact" className='popular-readmore'>Book Now!</a>
+                                <a href="/services/exterior" className='aside-link'>Learn More &gt;&gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='popular-services-card'>
+                        <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/public)` }}></div>
+                        <div className='popular-header'>
+                            <h3>Exterior Seal and Shine</h3>
+                        </div>
+                        <a href="/Contact" className='choose-package'>Get in Touch <img src='../assets/icons/rightArrow.png' alt='right arrow' className='icon-24' /></a>
+
+                        <ul className='checklist'>
+                            <li className='checklist-item'>
+                                <img src='../assets/icons/checkmark1.png' alt='checkmark' className='check-circle' />
+                                <p>Strong and thorough wheel and tire cleaning</p>
+                            </li>
+                            <li className='checklist-item'>
+                                <img src='../assets/icons/checkmark1.png' alt='checkmark' className='check-circle' />
+                                <p>Full vehicle strip wash (removes contaminants)</p>
+                            </li>
+                            <li className='checklist-item'>
+                                <img src='../assets/icons/checkmark1.png' alt='checkmark' className='check-circle' />
+                                <p>Light polish with an IGL product to remove small swirls and watermarks</p>
+                            </li>
+                            <li className='checklist-item'>
+                                <img src='../assets/icons/checkmark1.png' alt='checkmark' className='check-circle' />
+                                <p>Coat and restore all trim</p>
+                            </li>
+                            <li className='checklist-item'>
+                                <img src='../assets/icons/checkmark1.png' alt='checkmark' className='check-circle' />
+                                <p>Windshield Coating (you won't even need your windshield wipers anymore!)</p>
+                            </li>
+                            <li className='checklist-item'>
+                                <img src='../assets/icons/checkmark1.png' alt='checkmark' className='check-circle' />
+                                <p>IGL Premier on top of everything (adds up to a total protection of 1 year!)</p>
+                            </li>
+                        </ul>
+
+                        <div className='popular-link-container'>
+                            <div>
+                                <p style={{ marginBottom: 0, color: '#c0c0c0', textAlign: 'left' }}>Starting At:</p>
+                                <p className='popular-pricing-price'>$300</p>
+                            </div>
+                            <div>
+                                <a href="/Contact" className='popular-readmore'>Book Now!</a>
+                                <a href="/services/exterior-seal" className='aside-link'>Learn More &gt;&gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='popular-services-card'>
+                        <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fabb5ba-d12e-4e8a-c3bb-f5901af53e00/public)` }}></div>
+                        <div className='popular-header'>
+                            <h3>Exterior Correct and Protect</h3>
+                        </div>
+                        <a href="/Contact" className='choose-package'>Get in Touch <img src='../assets/icons/rightArrow.png' alt='right arrow' className='icon-24' /></a>
+
+                        <ul className='checklist'>
+                            <li className='checklist-item'>
+                                <img src='../assets/icons/checkmark1.png' alt='checkmark' className='check-circle' />
+                                <p>Strong and thorough wheel and tire cleaning</p>
+                            </li>
+                            <li className='checklist-item'>
+                                <img src='../assets/icons/checkmark1.png' alt='checkmark' className='check-circle' />
+                                <p>Full vehicle strip wash (removes contaminants)</p>
+                            </li>
+                            <li className='checklist-item'>
+                                <img src='../assets/icons/checkmark1.png' alt='checkmark' className='check-circle' />
+                                <p>Our full paint correction process (Removes ALL waterspots and 85%-100% of scratching)</p>
+                            </li>
+                            <li className='checklist-item'>
+                                <img src='../assets/icons/checkmark1.png' alt='checkmark' className='check-circle' />
+                                <p>Coat and restore all trim</p>
+                            </li>
+                            <li className='checklist-item'>
+                                <img src='../assets/icons/checkmark1.png' alt='checkmark' className='check-circle' />
+                                <p>Windshield Coating (you won't even need your windshield wipers anymore!)</p>
+                            </li>
+                            <li className='checklist-item'>
+                                <img src='../assets/icons/checkmark1.png' alt='checkmark' className='check-circle' />
+                                <p>Full Ceramic Coating (5 years of protection!)</p>
+                            </li>
+                        </ul>
+
+                        <div className='popular-link-container'>
+                            <div>
+                                <p style={{ marginBottom: 0, color: '#c0c0c0', textAlign: 'left' }}>Starting At:</p>
+                                <p className='popular-pricing-price'>$1,300</p>
+                            </div>
+                            <div>
+                                <a href="/Contact" className='popular-readmore'>Book Now!</a>
+                                <a href="/services/exterior-correct" className='aside-link'>Learn More &gt;&gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div className='service-bkg-lighter' style={{paddingBottom: '5rem'}}>
                     <div className="general-container new-heading-container" style={{margin: '5vh auto 2rem auto'}}>
