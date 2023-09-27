@@ -1,17 +1,24 @@
 /* MAIN COLORS:  */
 $main-clr: #fab638;
 $accent: #ff2600;
-$contact-bkg: #212327;
-$contact-bkg-lighter: #282a2e;
+$contact-bkg: #1b1b1b;
+$contact-bkg-lighter: #1f1f1f;
+$contact-border-clr: #2f2f2f;
+// $contact-bkg: #212327;
+// $contact-bkg-lighter: #282a2e;
 $footer-bkg: #2B2E33;
 
 /** Text and smaller colors **/
 $supporting-text: #bbb;
-$secondary-text: #575757;
+// $secondary-text: #575757;
+$secondary-text: #aaa;
 $secondary-text-light: #c0c0c0;
 $heading-clr1: #fff;
-$text-blue: #3b9eff;
-$pricing-clr: #39974b;
+$link-text: #3b9eff;
+$pricing-clr: #2f9e44;
+$accent-blue: #0b84f3;
+$accent-orange: #fd764a;
+$accent-purple: #6741d9;
 
 @mixin justify-center {
   display: flex;
@@ -23,6 +30,11 @@ $pricing-clr: #39974b;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@mixin card-border {
+  border-radius: 1rem;
+  box-shadow: 0 1px 8px rgba(255, 255, 255, 0.2);
 }
 
 *,
@@ -374,7 +386,7 @@ header h1 {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  background-color: #41444ac4;
+  background-color: $contact-bkg-lighter;
   padding: 4em;
   color: white;
   border-radius: 0 0 1rem 1rem;
@@ -927,7 +939,8 @@ option {
   flex-direction: column;
   position: relative;
   background-color: $contact-bkg-lighter;
-  box-shadow: 2px 2px 5px black;
+  // box-shadow: 2px 2px 5px black;
+  @include card-border;
   width: 90%;
   max-width: 450px;
   font-size: 1.1em;
@@ -950,40 +963,36 @@ option {
   justify-content: space-around;
   align-items: center;
   padding: 1rem 1rem 2rem 1rem;
-
-  div {
-    display: flex;
-    flex-direction: column;
-
-    a:last-child {
-      padding-top: 0.5rem;
-      text-decoration: none;
-    }
-  }
-
-  div:first-child {
-    align-items: flex-end;
-  }
 }
 
-.popular-readmore {
+@mixin popular-btn {
   display: inline-block;
   padding: 0.5em 5%;
-  background-color: $main-clr;
-  color: white;
   font-family: 'Titillium Web', sans-serif;
+  cursor: pointer;
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
-  cursor: pointer;
   transition: 0.25s;
-  box-shadow: 1px 4px 7px black;
-  border-radius: 100px;
+  border-radius: 12px;
   width: 175px;
+}
+
+.popular-readmore {
+  @include popular-btn;
+  background-color: $main-clr;
+  color: black;
 }
 
 .popular-readmore:hover {
   opacity: 0.5;
+}
+
+.popular-readmore-secondary {
+  @include popular-btn;
+  color: white;
+  width: auto;
+  outline: 1px solid $main-clr;
 }
 
 .popular-header {
@@ -993,14 +1002,24 @@ option {
   padding: 0 0.75rem;
   flex-direction: column;
   align-items: flex-start;
-}
 
-.popular-header h3 {
-  margin: 0;
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 2em;
-  text-shadow: 1px 4px 5px #00000083;
-  text-align: left;
+  h3 {
+    margin: 0 auto;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 2em;
+    text-shadow: 1px 4px 5px #00000083;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+
+    p:first-child {
+      color: $secondary-text;
+      margin: 0 2rem 0 0;
+    }
+  }
 }
 
 .popular-header a {
@@ -1036,19 +1055,23 @@ option {
   font-weight: 400;
   width: 100%;
   margin: 0;
+
+  hr {
+    width: 40px;
+    height: 1px;
+  }
+}
+
+.long-hr {
+  width: 100%;
 }
 
 .checklist-item {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 7px
-}
-
-.checklist-item p {
-  display: inline-block;
-  margin: 0;
-  text-align: left;
+  // display: flex;
+  // justify-content: flex-start;
+  // align-items: center;
+  padding: 7px;
+  text-align: center;
 }
 
 .service-heading-subtitle {
@@ -1448,7 +1471,7 @@ option {
 }
 
 .cities-ul li {
-  color: $text-blue;
+  color: $link-text;
   padding: 0.75rem;
   display: flex;
   justify-content: space-between;
@@ -2068,7 +2091,7 @@ hr {
 }
 
 .aside-link {
-  color: $text-blue;
+  color: $link-text;
 }
 
 .contact-aside {
@@ -2090,7 +2113,7 @@ hr {
 }
 
 .text-blue {
-  color: $text-blue;
+  color: $link-text;
 }
 
 .m-0 {
@@ -2237,7 +2260,7 @@ hr {
   justify-content: center;
   color: $pricing-clr;
   font-family: 'Oswald', sans-serif;
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: bold;
   margin: 0;
   overflow-wrap: break-word;
@@ -2736,7 +2759,7 @@ hr {
 }
 
 .service-bkg {
-  background: #212327;
+  background: $contact-bkg;
   color: white;
   padding: 2rem 0;
 }
@@ -2851,9 +2874,9 @@ hr {
 
 @media screen and (min-width: 450px) {
 
-  .popular-readmore {
-    padding: 0.3em;
-  }
+  // .popular-readmore {
+  //   padding: 0.3em;
+  // }
 
   .service-card {
     max-width: 400px;
@@ -3457,9 +3480,9 @@ hr {
     gap: 4rem
   }
 
-  .popular-readmore {
-    max-width: 200px;
-  }
+  // .popular-readmore {
+  //   max-width: 200px;
+  // }
 
   .extra-space {
     margin: 3rem auto
@@ -3472,4 +3495,16 @@ hr {
   .text-xl {
     font-size: 2.5em;
   }
+}
+
+.accent-blue {
+  color: $accent-blue;
+}
+
+.accent-orange {
+  color: $accent-orange;
+}
+
+.accent-purple {
+  color: $accent-purple;
 }
