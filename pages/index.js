@@ -150,14 +150,20 @@ export default function Home() {
                 {currentService !== 'popular' ? 
                     <OtherServices service={currentService} /> : ''
                 } */}
+
+                <div style={{margin: '1rem auto 5rem auto'}} className="general-container new-heading-container">
+                    <h2 style={{fontSize: '3rem'}} className="new-heading new-heading-center">Our Services</h2>
+                    <p className='new-heading-center'>Our new simple packages make it easier than ever to book with us!</p>
+                </div>
                 
                 <div className="otherservices-subcontainer">
-                {/* <div className="home-service-container"> */}
                     <div className="interior-heading">
                         <h2>Professional Interior Services</h2>
                         <p>
                             Transform your vehicle's interior with our premium Auto Detailing services. Experience a cleaner, 
                             fresher, and more comfortable driving environment while also enhancing the value of your vehicle. 
+                        </p>
+                        <p>
                             Our comprehensive interior detailing packages are designed to rejuvenate your car's interior, from 
                             extracting all fabrics to protecting the surfaces against any spills.
                         </p>
@@ -171,7 +177,7 @@ export default function Home() {
                         <ul className='checklist'>
                             <li className='checklist-item'>
                                 <img src='../assets/icons/checkmark1.png' alt='checkmark' className='check-circle' />
-                                <p>Hidden dirt/debris removed with our vortex blowgun</p>
+                                <p>Remove hidden dirt/debris with our vortex blowgun</p>
                             </li>
                             <li className='checklist-item'>
                                 <img src='../assets/icons/checkmark1.png' alt='checkmark' className='check-circle' />
@@ -206,7 +212,7 @@ export default function Home() {
                     <div className='popular-services-card'>
                         <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d09c52dc-c233-4cbd-c347-07de1c945d00/public)` }}></div>
                         <div className='popular-header'>
-                            <h3>Full Interior with Spill Guard</h3>
+                            <h3>Full Interior +  Spill Guard</h3>
                         </div>
 
                         <ul className='checklist'>
@@ -254,13 +260,11 @@ export default function Home() {
                 <div className="home-heading-container">
                     <h2>Professional Exterior Services</h2>
                     <p>
-                        Elevate the appearance and protection of your vehicle's exterior with our range of Auto Detailing services. From the basics of a thorough 
-                        wash to the pinnacle of perfection with our expert paint correction, we offer a comprehensive suite of options to cater to your specific needs. 
-                        Our exterior detailing packages are designed to enhance your vehicle's aesthetics while safeguarding its finish from the elements.
+                        Whether you're looking for a quick refresh or a complete paint correction, our exterior services have you covered!
                     </p>
                 </div>
 
-                <div className="otherservices-subcontainer">
+                <div style={{paddingBottom: '3rem'}} className="otherservices-subcontainer">
                     <div className='popular-services-card'>
                         <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b5859464-3c0e-4fcf-8332-17155eb86d00/public)` }}></div>
                         <div className='popular-header'>
@@ -274,7 +278,7 @@ export default function Home() {
                             </li>
                             <li className='checklist-item'>
                                 <img src='../assets/icons/checkmark1.png' alt='checkmark' className='check-circle' />
-                                <p>Full vehicle Rinse-less Wash</p>
+                                <p>Full vehicle Rinse-less Decontamination Wash</p>
                             </li>
                             <li className='checklist-item'>
                                 <img src='../assets/icons/checkmark1.png' alt='checkmark' className='check-circle' />
@@ -298,7 +302,6 @@ export default function Home() {
                         <div className='popular-header'>
                             <h3>Exterior Seal and Shine</h3>
                         </div>
-                        <a href="/Contact" className='choose-package'>Get in Touch <img src='../assets/icons/rightArrow.png' alt='right arrow' className='icon-24' /></a>
 
                         <ul className='checklist'>
                             <li className='checklist-item'>
@@ -343,7 +346,6 @@ export default function Home() {
                         <div className='popular-header'>
                             <h3>Exterior Correct and Protect</h3>
                         </div>
-                        <a href="/Contact" className='choose-package'>Get in Touch <img src='../assets/icons/rightArrow.png' alt='right arrow' className='icon-24' /></a>
 
                         <ul className='checklist'>
                             <li className='checklist-item'>
@@ -385,6 +387,8 @@ export default function Home() {
                     </div>
                 </div>
 
+                <br className="extra-space" />
+
                 <div className='service-bkg-lighter' style={{paddingBottom: '5rem'}}>
                     <div className="general-container new-heading-container" style={{margin: '5vh auto 2rem auto'}}>
                         <strong className="above-heading">Testimonials</strong>
@@ -392,7 +396,7 @@ export default function Home() {
                         <p style={{ margin: 0, padding: '1rem 0' }}>See all of the reviews from our customers on our <a style={{ color: 'dodgerblue' }} target='_blank' rel='noopener' href="https://www.facebook.com/DirtLessDetailing/reviews">Facebook</a> or <a style={{ color: 'dodgerblue' }} target='_blank' rel='noopener' href="https://www.google.com/localservices/prolist?g2lbs=ADZRdktLAaGKKobG3aZn2_Qd9tpM-f3ifTKQp4hXsZnMmVk1USpK7Ha4kZIeLdSCTp26Z3uD8UBdDwRY7Zqn7XZatg-9z1GI86mqJXoiFQCA1rCg0Vis_yQK9JiR9qrRMObWwAegw9aPUbKd01T05_4R3o4ry_qhHA%3D%3D&hl=en-US&gl=us&cs=1&ssta=1&q=dirtless%20detailing&oq=dirtless%20detailing&slp=MgA6HENoTUlxZVd0Nkl2SV9nSVY2UTZ0QmgyZWJnaVJSAggCYAB6-gFDaEprYVhKMGJHVnpjeUJrWlhSaGFXeHBibWRJNnZqVDFhcTRnSUFJV2h3UUFCQUJHQUFZQVNJU1pHbHlkR3hsYzNNZ1pHVjBZV2xzYVc1bmtnRVZZMkZ5WDJSbGRHRnBiR2x1WjE5elpYSjJhV05sbWdFa1EyaGtSRk5WYUU1TlJ6bHVVekJXU2xFd1JtNVRWVkpEV2pKYVNHTnVhRzVTVWtGQ3FnRTZFQUV5SGhBQklocEZwOXktNVEwdWdLbGRqT2pnOEdvLWlaQlZ5NUdlSjh3QjV6SVdFQUlpRW1ScGNuUnNaWE56SUdSbGRHRnBiR2x1Wi1BQkFBkgG0AgoNL2cvMTFzYnBjOV8zYgoNL2cvMTFmcDJwN3dtbgoNL2cvMTFrMndndnhyegoNL2cvMTFzbXZfbm13MQoLL2cvMXRmM2I3bHQKDS9nLzExZ2w0dDJkY20KDC9nLzEyNjBieGxoNgoNL2cvMTFwMTN5MnQ4cQoNL2cvMTFjbnpuX3p3agoNL2cvMTFqcTlwcGtfNwoNL2cvMTFneTRsejU5aAoNL2cvMTF0ZDhjN195NQoNL2cvMTFrNDVzNzVmcwoNL2cvMTFnMnhjbHBxMwoNL2cvMTFzNTFrN2YzdAoNL2cvMTFzM2YwMHZzcAoML2cvMTFnem44M3diCg0vZy8xMW5uMGhzanF2Cg0vZy8xMWZxcXoxdmdwCg0vZy8xMXQ0ZmprMDltEgQSAggBEgQKAggB&src=2&spp=Cg0vZy8xMXNicGM5XzNiOtABV2h3UUFCQUJHQUFZQVNJU1pHbHlkR3hsYzNNZ1pHVjBZV2xzYVc1bmtnRVZZMkZ5WDJSbGRHRnBiR2x1WjE5elpYSjJhV05sbWdFa1EyaGtSRk5WYUU1TlJ6bHVVekJXU2xFd1JtNVRWVkpEV2pKYVNHTnVhRzVTVWtGQ3FnRTZFQUV5SGhBQklocEZwOXktNVEwdWdLbGRqT2pnOEdvLWlaQlZ5NUdlSjh3QjV6SVdFQUlpRW1ScGNuUnNaWE56SUdSbGRHRnBiR2x1Wnc9PQ%3D%3D&serdesk=1&lrlstt=1682530844021&ved=2ahUKEwiSvKHoi8j-AhWfHjQIHT0kD2MQvS56BAgwEAE&scp=ChpnY2lkOmNhcl9kZXRhaWxpbmdfc2VydmljZRJgEhIJeUAf2e38kFQRVTQwKEuFSMMiMkRpcnQtTGVzcyBEZXRhaWxpbmcsIDkzMDUgMjA1dGggQXZlIEUsIEJvbm5leSBMYWtlKhQNCAEeHBXFWjC3HQgBHhwlxVowtzAAGhJkaXJ0bGVzcyBkZXRhaWxpbmciEmRpcnRsZXNzIGRldGFpbGluZyoVQ2FyIGRldGFpbGluZyBzZXJ2aWNl#ts=3">Google</a> page.</p>
                     </div>
                     <div className="reviews-container">
-                        <div style={{display: screenWidth > 880 ? 'flex' : 'none'}} className='review-card'>
+                        {/* <div style={{display: screenWidth > 880 ? 'flex' : 'none'}} className='review-card'>
                             <div className='review-top'>
                                 <p className='review-text'>Brenden answered the first phone call gave a quote over the phone, I did not have to bring the car anywhere. <span className='highlight'>He provided a value and was on time and was extremely thorough.</span> Did not attempt to upsell me and increase price, day of the appointment, like another Bonney Lake detailer did. Can't recommend Dirt-Less Detail enough. My wife's Jeep Cherokee looks new!</p>
                             </div>
@@ -406,7 +410,22 @@ export default function Home() {
                                     <p className='star-review'>★★★★★</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
+                        {/* <div style={{display: screenWidth > 880 ? 'flex' : 'none'}} className='review-card'>
+                            <div className='review-top'>
+                            <p className='review-text'>My kids left a gal of milk in the back of my car, needless to say the nice warm weather it leaked all over and soon smelled horrid. He did a fantastic job, <span className='highlight'>car smells and looks brand new, even got every hair out from my pups.</span> Very happy I got his number as a referral from a friend.</p>
+                            </div>
+                            <div className='review-bottom'>
+                            <div style={{ textAlign: 'left' }}>
+                            <strong className='name'>Trisha C.</strong>
+                            <p className='services-p'>Interior + Extraction</p>
+                            </div>
+                            <div className='google-review'>
+                            <img src='../assets/icons/facebook.png' alt='facebook logo' className='icon-36' />
+                            <p className='star-review'>★★★★★</p>
+                            </div>
+                            </div>
+                        </div> */}
                         <div className='review-card'>
                             <div className='review-top'>
                                 <p className='review-text'>Had an issue with the interior of a vehicle that had been in a garage for too long. Dirt-Less handled it professionally and quickly. <span className='highlight'>We will definitely keep going back for our needs.</span></p>
@@ -422,17 +441,17 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div style={{display: screenWidth > 880 ? 'flex' : 'none'}} className='review-card'>
+                        <div className='review-card'>
                             <div className='review-top'>
-                                <p className='review-text'>My kids left a gal of milk in the back of my car, needless to say the nice warm weather it leaked all over and soon smelled horrid. He did a fantastic job, <span className='highlight'>car smells and looks brand new, even got every hair out from my pups.</span> Very happy I got his number as a referral from a friend.</p>
+                                <p className='review-text'>Brenden does an amazing job. My car looks amazing. <span className='highlight'>He is super reasonable in his pricing and was very efficient.</span> Will definitely continue to use his service for all our vehicles.</p>
                             </div>
                             <div className='review-bottom'>
                                 <div style={{ textAlign: 'left' }}>
-                                    <strong className='name'>Trisha C.</strong>
-                                    <p className='services-p'>Interior + Extraction</p>
+                                    <strong className='name'>Kristi H.</strong>
+                                    <p className='services-p'>The Dirt-Less Detail</p>
                                 </div>
                                 <div className='google-review'>
-                                    <img src='../assets/icons/facebook.png' alt='facebook logo' className='icon-36' />
+                                    <img src='../assets/icons/google.png' alt='google logo' className='icon-36' />
                                     <p className='star-review'>★★★★★</p>
                                 </div>
                             </div>
@@ -445,21 +464,6 @@ export default function Home() {
                                 <div style={{ textAlign: 'left' }}>
                                     <strong className='name'>Jennifer D.</strong>
                                     <p className='services-p'>Interior + Extraction</p>
-                                </div>
-                                <div className='google-review'>
-                                    <img src='../assets/icons/google.png' alt='google logo' className='icon-36' />
-                                    <p className='star-review'>★★★★★</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='review-card'>
-                            <div className='review-top'>
-                                <p className='review-text'>Brenden does an amazing job. My car looks amazing. <span className='highlight'>He is super reasonable in his pricing and was very efficient.</span> Will definitely continue to use his service for all our vehicles.</p>
-                            </div>
-                            <div className='review-bottom'>
-                                <div style={{ textAlign: 'left' }}>
-                                    <strong className='name'>Kristi H.</strong>
-                                    <p className='services-p'>The Dirt-Less Detail</p>
                                 </div>
                                 <div className='google-review'>
                                     <img src='../assets/icons/google.png' alt='google logo' className='icon-36' />
