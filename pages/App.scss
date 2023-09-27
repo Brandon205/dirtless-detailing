@@ -308,7 +308,11 @@ li span {
 .nav-li {
   padding: 0 1rem 1rem 1rem;
   border-radius: 0 0 1rem 1rem;
-  background-color: $contact-bkg;
+  background-color: $contact-bkg-lighter;
+}
+
+.nav-icon {
+  width: 36px;
 }
 
 .sub-menu-div {
@@ -337,7 +341,7 @@ li span {
 
 .menu-link:hover {
   color: $main-clr;
-  background-color: $contact-bkg-lighter;
+  background-color: $contact-bkg;
 }
 
 .sub-menu-header {

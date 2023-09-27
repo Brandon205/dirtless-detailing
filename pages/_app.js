@@ -88,57 +88,45 @@ export default function MyApp({ Component, pageProps }) {
                                 <div className='menu-li' onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('services')}><a href="#" className='menu-link no-click'>All Services <img src='../assets/icons/downArrow.png' alt='down caret' className='icon-20' /></a></div>
                                 <ul className="sub-ul" onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} style={{ opacity: smallScreen ? 1 : services ? 1 : !services ? 0 : 0, pointerEvents: smallScreen ? 'auto' : services ? 'auto' : !services ? 'none' : 'auto' }} >
                                     <li className="nav-li">
-                                        {/* <h4 className='sub-menu-header'>CERAMIC COATINGS</h4>
-                                        <div className='sub-menu-div' onClick={() => setNav('none')}>
-                                            <a href="/services/exterior-ceramic-coating" className='menu-link'><img src='../assets/icons/coating.png' alt='ceramic coating on car' className='icon-20' /> Exterior Ceramic Coating</a>
-                                        </div>
-                                        <div className='sub-menu-div' onClick={() => setNav('none')}>
-                                            <a href="/services/interior-ceramic-coating" className='menu-link'><img src='../assets/icons/carSeat.png' alt='car seat' className='icon-20' /> Interior Ceramic Coating</a>
-                                        </div>
-                                        <hr className="nav-hr" />
-                                        <h4 className='sub-menu-header'>COMBO DEALS</h4>
-                                        <div className='sub-menu-div' onClick={() => setNav('none')}>
-                                            <a href="/services/interior-exterior-detailing-combo" className='menu-link'><img src='../assets/icons/keys.png' alt='keys' className='icon-20' /> The Dirt-Less Detail</a>
-                                        </div>
-                                        <hr className="nav-hr" />
-                                        <h4 className='sub-menu-header'>INTERIOR CLEANING SERVICES</h4>
-                                        <div className='sub-menu-div' onClick={() => setNav('none')}>
-                                            <a href="/services/full-interior-detail" className='menu-link'><img src='../assets/icons/steeringWheel.png' alt='car seat' className='icon-20' /> Full Interior Cleaning</a>
-                                        </div>
-                                        <div className='sub-menu-div' onClick={() => setNav('none')}>
-                                        <a href="/services/biohazard-cleaning" className='menu-link'><img src='../assets/icons/biohazard.png' alt='biohazard' className='icon-20' /> Biohazard Cleaning</a>
-                                        </div>
-                                        <hr className="nav-hr" />
-                                        <h4 className='sub-menu-header'>EXTERIOR DETAILING SERVICES</h4>
-                                        <div className='sub-menu-div' onClick={() => setNav('none')}>
-                                        <a href="/services/dirtless-wash" className='menu-link'><img src='../assets/icons/soapBucket.png' alt='soapy bucket' className='icon-20' /> Dirt-Less Wash</a>
-                                        </div>
-                                        <hr className="nav-hr" />
-                                        <h4 className='sub-menu-header'>PAINT CORRECTION SERVICES</h4>
-                                        <div className='sub-menu-div' onClick={() => setNav('none')}>
-                                        <a href="/services/single-stage-correction" className='menu-link'><img src='../assets/icons/microfiber.png' alt='microfiber towel' className='icon-20' /> Single Stage Paint Correction</a>
-                                        </div>
-                                        <div className='sub-menu-div' onClick={() => setNav('none')}>
-                                        <a href="/services/two-stage-correction" className='menu-link'><img src='../assets/icons/polisher.png' alt='handheld polisher' className='icon-20' /> Two Stage Paint Correction</a>
-                                    </div> */}
-                                        <h4 className='sub-menu-header'>INTERIOR CLEANING SERVICES</h4>
-                                        <div className='sub-menu-div' onClick={() => setNav('none')}>
-                                            <a href="/services/full-interior" className='menu-link'><img src='../assets/icons/steeringWheel.png' alt='steering wheel' className='icon-20' /> Full Interior</a>
-                                        </div>
-                                        <div className='sub-menu-div' onClick={() => setNav('none')}>
-                                            <a href="/services/full-interior-seal" className='menu-link'><img src='../assets/icons/carSeat.png' alt='car seat' className='icon-20' /> Full Interior with Spill Guard</a>
+                                        <div>
+                                            <h4 className='sub-menu-header'>INTERIOR CLEANING SERVICES</h4>
+                                            <div className='sub-menu-div' onClick={() => setNav('none')}>
+                                                <a href="/services/full-interior" className='menu-link'><img src='../assets/icons/steeringWheel.png' alt='steering wheel' className='nav-icon' /> Full Interior</a>
+                                            </div>
+                                            <div className='sub-menu-div' onClick={() => setNav('none')}>
+                                                <a href="/services/full-interior-seal" className='menu-link'><img src='../assets/icons/carSeat.png' alt='car seat' className='nav-icon' /> Full Interior with Spill Guard</a>
+                                            </div>
+                                            {/* <a href="/services/full-interior" className='menu-link'>
+                                                <div>
+                                                    <img src='../assets/icons/steeringWheel.png' alt='steering wheel' className='nav-icon' />
+                                                </div>
+                                                <div>
+                                                    <strong>Full Interior</strong>
+                                                    <p>Base Interior Cleaning</p>
+                                                </div>
+                                            </a>
+                                            <a href="/services/full-interior-seal" className='menu-link'>
+                                                <div>
+                                                    <img src='../assets/icons/carSeat.png' alt='car seat' className='nav-icon' />
+                                                </div>
+                                                <div>
+                                                    <strong>Full Interior + Spill Guard</strong>
+                                                    <p>Base Cleaning + Interior Ceramic Coating</p>
+                                                </div>
+                                            </a> */}
                                         </div>
 
-                                        <hr className="nav-hr" />
-                                        <h4 className='sub-menu-header'>EXTERIOR SERVICES</h4>
-                                        <div className='sub-menu-div' onClick={() => setNav('none')}>
-                                            <a href="/services/exterior" className='menu-link'><img src='../assets/icons/soapBucket.png' alt='soap bucket' className='icon-20' /> Exterior Wash</a>
-                                        </div>
-                                        <div className='sub-menu-div' onClick={() => setNav('none')}>
-                                            <a href="/services/exterior-seal" className='menu-link'><img src='../assets/icons/microfiber.png' alt='microfiber' className='icon-20' /> Exterior Seal and Shine</a>
-                                        </div>
-                                        <div className='sub-menu-div' onClick={() => setNav('none')}>
-                                            <a href="/services/exterior-correct" className='menu-link'><img src='../assets/icons/polisher.png' alt='polisher' className='icon-20' /> Exterior Correct and Protect</a>
+                                        <div>
+                                            <h4 className='sub-menu-header'>EXTERIOR SERVICES</h4>
+                                            <div className='sub-menu-div' onClick={() => setNav('none')}>
+                                                <a href="/services/exterior" className='menu-link'><img src='../assets/icons/soapBucket.png' alt='soap bucket' className='nav-icon' /> Exterior Wash</a>
+                                            </div>
+                                            <div className='sub-menu-div' onClick={() => setNav('none')}>
+                                                <a href="/services/exterior-seal" className='menu-link'><img src='../assets/icons/microfiber.png' alt='microfiber' className='nav-icon' /> Exterior Seal and Shine</a>
+                                            </div>
+                                            <div className='sub-menu-div' onClick={() => setNav('none')}>
+                                                <a href="/services/exterior-correct" className='menu-link'><img src='../assets/icons/polisher.png' alt='polisher' className='nav-icon' /> Exterior Correct and Protect</a>
+                                            </div>
                                         </div>
 
                                     </li>
@@ -151,16 +139,16 @@ export default function MyApp({ Component, pageProps }) {
                                     <li className="nav-li">
                                         <h4 className="sub-menu-header">GALLERIES</h4>
                                         <div className='sub-menu-div' onClick={() => setNav('none')}>
-                                            <a href="/gallery/ceramic-coating-gallery" className='menu-link'><img src='../assets/icons/gallery.png' alt='gallery' className='icon-20' /> Ceramic Coating Gallery</a>
+                                            <a href="/gallery/ceramic-coating-gallery" className='menu-link'><img src='../assets/icons/gallery.png' alt='gallery' className='nav-icon' /> Ceramic Coating Gallery</a>
                                         </div>
                                         <div className='sub-menu-div' onClick={() => setNav('none')}>
-                                            <a href="/gallery/interior-detail-gallery" className='menu-link'><img src='../assets/icons/doorAjar.png' alt='car with doors open' className='icon-20' /> Full Interior Gallery</a>
+                                            <a href="/gallery/interior-detail-gallery" className='menu-link'><img src='../assets/icons/doorAjar.png' alt='car with doors open' className='nav-icon' /> Full Interior Gallery</a>
                                         </div>
                                         <div className='sub-menu-div' onClick={() => setNav('none')}>
-                                            <a href="/gallery/dirtless-wash-gallery" className='menu-link'><img src='../assets/icons/bubbles.png' alt='soap bubbles' className='icon-20' /> Dirt-Less Wash Gallery</a>
+                                            <a href="/gallery/dirtless-wash-gallery" className='menu-link'><img src='../assets/icons/bubbles.png' alt='soap bubbles' className='nav-icon' /> Dirt-Less Wash Gallery</a>
                                         </div>
                                         <div className='sub-menu-div' onClick={() => setNav('none')}>
-                                            <a href="/gallery/paint-correction-gallery" className='menu-link'><img src='../assets/icons/hood.png' alt='car hood' className='icon-20' /> Paint Correction Gallery</a>
+                                            <a href="/gallery/paint-correction-gallery" className='menu-link'><img src='../assets/icons/hood.png' alt='car hood' className='nav-icon' /> Paint Correction Gallery</a>
                                         </div>
                                     </li>
                                 </ul>
