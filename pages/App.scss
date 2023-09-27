@@ -795,7 +795,7 @@ option {
   display: flex;
   align-items: center;
   gap: 1rem;
-  background-color: #282A2E;
+  background-color: $contact-bkg-lighter;
   padding: 1rem;
 }
 
@@ -837,6 +837,13 @@ option {
   margin: 0;
 }
 
+.footer-contact-card {
+  div {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
 .bbb-seal {
   border: 0;
   width: 85%;
@@ -859,7 +866,7 @@ option {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #282a2e;
+  background-color: $contact-bkg-lighter;
   box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.25);
   border-radius: 1rem;
   /* color: black; */
@@ -938,7 +945,7 @@ option {
   display: flex;
   flex-direction: column;
   position: relative;
-  background-color: $contact-bkg-lighter;
+  // background-color: $contact-bkg-lighter;
   // box-shadow: 2px 2px 5px black;
   @include card-border;
   width: 90%;
@@ -1059,6 +1066,7 @@ option {
   hr {
     width: 40px;
     height: 1px;
+    margin: 10px auto;
   }
 }
 
@@ -1515,9 +1523,9 @@ footer {
   flex-direction: column;
   text-align: left;
   position: relative;
-  padding: 1rem 0 0 0;
-  background-color: $footer-bkg;
-  box-shadow: 0 -3px 7px rgba(0, 0, 0, 0.544);
+  padding: 1rem 0;
+  background-color: $contact-bkg-lighter;
+  box-shadow: 0 1px 8px rgba(255, 255, 255, 0.2);
   color: white;
 }
 
@@ -1534,15 +1542,26 @@ hr {
   font-size: 24px;
 }
 
-.socials-container {
-  background-color: #303338;
-  width: 100%;
-  padding: 0.5rem;
-  text-align: center;
+.footer-content-card-left {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: column;
+
+  div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+
+    div h3 {
+      display: block;
+      margin: 0;
+    }
+  }
+
+  div p {
+    margin: 0;
+  }
 }
 
 .socials {
@@ -1552,10 +1571,6 @@ hr {
 
 .socials:hover {
   color: gray;
-}
-
-.socials-container div a {
-  margin-right: 20px;
 }
 
 .footer-link {
@@ -2765,7 +2780,7 @@ hr {
 }
 
 .service-bkg-lighter {
-  background: #282a2e;
+  background: $contact-bkg-lighter;
   color: white;
   padding-top: 2rem;
 }

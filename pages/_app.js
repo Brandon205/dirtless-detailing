@@ -169,11 +169,17 @@ export default function MyApp({ Component, pageProps }) {
             <Component {...pageProps} />
 
             <footer>
-                <div className="footer-content-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                    <a href="/"><img src='../assets/icons/logoCircle.png' alt='Dirt-Less Detailing' style={{ width: '125px', marginTop: '24px' }} /></a>
+                <div className="footer-content-card-left">
                     <div>
-                        <h3 style={{ margin: '1rem 0 0 0' }}>Dirt-Less Detailing</h3>
-                        <p style={{ maxWidth: '300px' }}>After 8 years in the auto detailing industry you can trust us to take the best care of your vehicle, returning it to you looking better than ever every time.</p>
+                        <a href="/"><img src='../assets/icons/logoCircle.png' alt='Dirt-Less Detailing' style={{ width: '88px' }} /></a>
+                        <div>
+                            <h3>Dirt-Less</h3>
+                            <h3>Detailing</h3>
+                        </div>
+                    </div>
+                    <div>
+                        <p>©2023 Dirt-Less Detailing.</p>
+                        <p>Icons made by <a target="_blank" rel='noopener' href="https://icons8.com" className='aside-link'>Icons8</a>.</p>
                     </div>
                 </div>
                 <div className="footer-content-card">
@@ -184,7 +190,7 @@ export default function MyApp({ Component, pageProps }) {
                 <div className="footer-content-card" style={{ paddingBottom: '2rem' }}>
                     <h3>SERVICES</h3>
                     <a href="/services/interior-exterior-detailing-combo" className='footer-link'>Full Interior</a>
-                    <a href="/services/full-interior-detail" className='footer-link'>Full Interior with Spill Guard</a>
+                    <a href="/services/full-interior-detail" className='footer-link'>Full Interior + Spill Guard</a>
                     <a href="/services/biohazard-cleaning" className='footer-link'>Exterior Wash</a>
                     <a href="/services/dirtless-wash" className='footer-link'>Exterior Seal and Shine</a>
                     <a href="/services/interior-exterior-detailing-combo" className='footer-link'>Exterior Correct and Protect</a>
@@ -194,12 +200,6 @@ export default function MyApp({ Component, pageProps }) {
                     <a href="tel:2532529758" className="contact-link footer-contact-link" target="_blank" rel="noopener"><img src='../assets/icons/phoneMessageColor.png' alt='Phone call / message' className='icon-24' /> (253) 252-9758</a>
                     <a href="mailto:brenden@dirtlessdetailing.com?subject = Schedule a Dirt-Less Detail" className="contact-link footer-contact-link" target="_blank" rel="noopener"><img src='../assets/icons/post.png' alt='email' className='icon-24' /> brenden@dirtlessdetailing.com</a>
                     <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className="contact-link footer-contact-link" target="_blank" rel="noopener"><img src='../assets/icons/placeMarker.png' alt='place marker' className='icon-24' /> 9305 205th Ave E, Bonney Lake, Wa 98391</a><br />
-                </div>
-                <div className='socials-container'>
-                    <div>
-                        <h4 style={{ fontSize: '1.3em', margin: '1rem auto' }}>©Dirt-Less Detailing 2023</h4>
-                        <p>Icons made by <a target="_blank" rel='noopener' href="https://icons8.com" className='aside-link'>Icons8</a></p>
-                    </div>
                     <div>
                         <a href="https://www.facebook.com/DirtLessDetailing/" className="socials" target="_blank" rel="noopener" aria-label="Facebook"><img src='../assets/icons/facebook.png' alt='facebook' className='icon-48' /></a>
                         <a href="https://www.instagram.com/dirt_less_detailing/" className="socials" target="_blank" rel="noopener" aria-label="Instagram"><img src='../assets/icons/instagram.png' alt='instagram' className='icon-48' /></a>

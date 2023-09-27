@@ -276,7 +276,7 @@ export default function Home() {
                             <hr className="accent-blue" />
                             <li className='checklist-item'>Coat and restore all trim</li>
                             <hr className="accent-blue" />
-                            <li className='checklist-item'>Windshield Coating (you won't even need your windshield wipers anymore!)</li>
+                            <li className='checklist-item'>Windshield Coating (you won't even need to use your wipers anymore!)</li>
                             <hr className="accent-blue" />
                             <li className='checklist-item'>IGL Premier on top of everything (adds up to a total protection of 1 year!)</li>
                         </ul>
@@ -299,13 +299,9 @@ export default function Home() {
                         <hr className="long-hr accent-purple" />
 
                         <ul className='checklist'>
-                            <li className='checklist-item'><span className="bold">EVERYTHING</span> from our Exterior Decon Service</li>
+                            <li className='checklist-item'><span className="bold">EVERYTHING</span> from our Exterior Seal and Shine Service</li>
                             <hr className="accent-purple" />
                             <li className='checklist-item'>Our full paint correction process (Removes ALL waterspots and 85%-100% of scratching)</li>
-                            <hr className="accent-purple" />
-                            <li className='checklist-item'>Coat and restore all trim</li>
-                            <hr className="accent-purple" />
-                            <li className='checklist-item'>Windshield Coating (you won't even need your windshield wipers anymore!)</li>
                             <hr className="accent-purple" />
                             <li className='checklist-item'>Full Ceramic Coating (5 years of protection!)</li>
                         </ul>
