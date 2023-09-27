@@ -91,29 +91,11 @@ export default function MyApp({ Component, pageProps }) {
                                         <div>
                                             <h4 className='sub-menu-header'>INTERIOR CLEANING SERVICES</h4>
                                             <div className='sub-menu-div' onClick={() => setNav('none')}>
-                                                <a href="/services/full-interior" className='menu-link'><img src='../assets/icons/steeringWheel.png' alt='steering wheel' className='nav-icon' /> Full Interior</a>
+                                                <a href="/services/interior" className='menu-link'><img src='../assets/icons/steeringWheel.png' alt='steering wheel' className='nav-icon' /> Full Interior</a>
                                             </div>
                                             <div className='sub-menu-div' onClick={() => setNav('none')}>
-                                                <a href="/services/full-interior-seal" className='menu-link'><img src='../assets/icons/carSeat.png' alt='car seat' className='nav-icon' /> Full Interior with Spill Guard</a>
+                                                <a href="/services/interior-seal" className='menu-link'><img src='../assets/icons/carSeat.png' alt='car seat' className='nav-icon' /> Full Interior with Spill Guard</a>
                                             </div>
-                                            {/* <a href="/services/full-interior" className='menu-link'>
-                                                <div>
-                                                    <img src='../assets/icons/steeringWheel.png' alt='steering wheel' className='nav-icon' />
-                                                </div>
-                                                <div>
-                                                    <strong>Full Interior</strong>
-                                                    <p>Base Interior Cleaning</p>
-                                                </div>
-                                            </a>
-                                            <a href="/services/full-interior-seal" className='menu-link'>
-                                                <div>
-                                                    <img src='../assets/icons/carSeat.png' alt='car seat' className='nav-icon' />
-                                                </div>
-                                                <div>
-                                                    <strong>Full Interior + Spill Guard</strong>
-                                                    <p>Base Cleaning + Interior Ceramic Coating</p>
-                                                </div>
-                                            </a> */}
                                         </div>
 
                                         <div>

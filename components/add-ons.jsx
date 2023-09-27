@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import Metatags from '../../utils/Metatags';
+import Metatags from '../utils/Metatags';
 
 export default function Addons() {
   return (

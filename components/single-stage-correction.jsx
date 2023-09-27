@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
-import Metatags from '../../utils/Metatags';
+import Metatags from '../utils/Metatags';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
-import PricingComponent from '../../utils/PricingComponent';
-import addons from '../../utils/Addons';
+import PricingComponent from '../utils/PricingComponent';
+import addons from '../utils/Addons';
 
 const steps = [
   ["Wash Vehicle", "Thorough strip wash top to bottom using 2 bucket method or equivalent, including gas door."],

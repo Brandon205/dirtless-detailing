@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
-import Metatags from '../../utils/Metatags';
-import PricingComponent from '../../utils/PricingComponent';
-import addons from '../../utils/Addons';
+import Metatags from '../utils/Metatags';
+import PricingComponent from '../utils/PricingComponent';
+import addons from '../utils/Addons';
 
 const steps = [
   ["Expose Hidden Dirt", "Use drill brushes and our Tornador Vortex Blowgun which uses compressed air to blow out every spot a vacuum can't reach. Using these also extracts sand and loose soil from carpeting."],

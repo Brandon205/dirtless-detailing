@@ -159,7 +159,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: black;
   font-size: 22px;
   text-decoration: none;
   background-color: $main-clr;
@@ -179,7 +179,7 @@ img {
 }
 
 .btn-secondary {
-  background-color: $contact-bkg;
+  background-color: $accent-blue;
 }
 
 .main-quote-btn {
@@ -486,9 +486,10 @@ header h1 {
   background-position: center;
   background-attachment: fixed;
   position: relative;
-  height: 60vh;
+  height: 75vh;
   width: 100%;
   z-index: 0;
+  box-shadow: 0 -1px 8px rgba(255, 255, 255, 0.2);
 }
 
 .coating-cover {
@@ -1609,11 +1610,27 @@ footer {
 
 /** SIDE PAGE CSS **/
 .servicepage-header {
+  display: flex;
+  justify-content: space-around;
   position: absolute;
-  color: $heading-clr1;
-  width: 100%;
-  transform: translate(0, -45vh);
+  color: white;
+  width: 90%;
+  transform: translate(5%, -47vh);
   z-index: 1;
+
+  div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h1 {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      margin-bottom: 5vh
+    }
+  }
 }
 
 .servicepage-header h1 {
@@ -1623,9 +1640,7 @@ footer {
 .header-buttons {
   display: flex;
   flex-direction: column;
-  max-width: 260px;
   gap: 1rem;
-  margin: 0 auto;
 }
 
 .general-container {
@@ -1954,7 +1969,7 @@ footer {
 
 .service-content-container {
   width: 100%;
-  background-color: #f7f7ff
+  background-color: $contact-bkg;
 }
 
 .list {
@@ -2683,35 +2698,37 @@ footer {
 }
 
 .service-main {
-  width: 95%;
+  width: 85%;
+  color: white;
   margin: 0 auto;
   line-height: 2;
   text-align: center;
   padding: 1rem;
 }
 
-.top-service-main {
-  position: relative;
-  background: $contact-bkg;
-  padding: 2rem 4rem 0 4rem;
-  z-index: 5;
-  width: 100%;
-  color: white;
-  border-radius: 0 0 38px 38px;
-}
+// .top-service-main {
+//   position: relative;
+//   background: $contact-bkg;
+//   padding: 2rem 4rem 0 4rem;
+//   z-index: 5;
+//   width: 100%;
+//   color: white;
+//   border-radius: 0 0 38px 38px;
+// }
 
 .service-explain {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding-bottom: 4rem;
+  display: grid;
+  grid-template-columns: minmax(auto, 1fr) minmax(auto, 1fr);
+  grid-auto-columns: 20px;
+  color: white;
+
+  p {
+    text-align: left;
+  }
 }
 
 .service-image {
-  align-self: center;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  display: none;
 }
 
 /** LOCATION PAGE CSS **/
@@ -2952,6 +2969,11 @@ footer {
     box-shadow: 0 5px 7px #0000007f;
   }
 
+  .cover {
+    height: 60vh;
+
+  }
+
   .coating-points {
     text-align: left;
     columns: 2;
@@ -3153,10 +3175,6 @@ footer {
     padding: 0;
   }
 
-  .top-service-main {
-    padding: 2rem 4rem 0 4rem;
-  }
-
   .feature-icon {
     font-size: 5em;
   }
@@ -3222,10 +3240,8 @@ footer {
   .page-subheading {
     display: block;
     font-size: 1.5rem;
-    width: 90vw;
     font-weight: 400;
-    margin: 0 auto 2rem auto;
-    width: 70vw;
+    // margin: 0 auto 2rem auto;
   }
 
   .servicepage-header h1 {
@@ -3349,6 +3365,17 @@ footer {
     width: 95%;
     grid-template-columns: none;
     grid-auto-flow: column;
+  }
+
+  .service-image {
+    display: inline-block;
+    align-self: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 350px;
+    border-radius: 12px;
   }
 
   .no-grow {
