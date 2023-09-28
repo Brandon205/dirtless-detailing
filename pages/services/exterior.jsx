@@ -13,7 +13,7 @@ export default function Exterior() {
         <Metatags
           title='Exterior Decon Wash | Dirt-Less Detailing'
           description='Get a car wash like never before with our Exterior Decon Wash. Where we go in depth to get all corners and remove any paint contaminants.'
-          image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/public'
+          image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/da3f5734-319b-4301-43c9-7af958fd5600/public'
           canonical='/services/exterior'
         />
         <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
@@ -23,7 +23,7 @@ export default function Exterior() {
             "name": "Exterior Decon Wash",
             "brand": "Dirt-Less Detailing",
             "description": "Get a car wash like never before with our Exterior Decon Wash. Where we go in depth to get all corners and remove any paint contaminants.",
-            "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/public",
+            "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/da3f5734-319b-4301-43c9-7af958fd5600/public",
             "url": "https://www.dirtlessdetailing.com/services/exterior/",
             "offers": {
               "@type": "Offer",
@@ -47,7 +47,7 @@ export default function Exterior() {
           }`,
         }} />
       </Head>
-      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/cover')`}}></div>
+      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/da3f5734-319b-4301-43c9-7af958fd5600/cover')`}}></div>
       <div className="servicepage-header">
         <div>
           <h1><span className='accent-orange bold'>Exterior Decon Wash</span></h1>
@@ -57,8 +57,8 @@ export default function Exterior() {
             <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
           </div>
         </div>
-        <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a40931e-dd21-407c-dd03-86fd43b05200/public')`}}>
-          <img style={{visibility: 'hidden'}} alt="Clean drivers seat interior of a Subaru" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a40931e-dd21-407c-dd03-86fd43b05200/public" />
+        <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/939afebd-2188-47d8-fd50-328291b2a300/public')`}}>
+          <img style={{visibility: 'hidden'}} alt="Before and after of a Ford Tailgate with tar on it" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/939afebd-2188-47d8-fd50-328291b2a300/public" />
         </div>
       </div>
 
@@ -151,8 +151,8 @@ export default function Exterior() {
             <p className='pricing__subtext'>Your car, washed, without the unnecessary scratching and missed corners.</p>
             <div style={{display: 'grid', marginBottom: '10vh'}} className='place-center'>
               <div className='slider-container'>
-                <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b814f739-3846-4796-3093-c34675a32c00/public')`}} className='slider-img'></div>
-                <div style={{width: slide + '%', backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4d98c1bc-645c-46fa-2232-d1f735bb2300/public')`}} className='slider-img foreground'></div>
+                <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/74d7cbdb-782e-4a5b-dde5-ac078af06700/public')`}} className='slider-img'></div>
+                <div style={{width: slide + '%', backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4aad5d50-ca20-4973-59d6-47e9ebe24100/public')`}} className='slider-img foreground'></div>
                 <input type="range" min="1" max="100" value={slide} onChange={(e) => setSlide(Number(e.target.value))} className="slider-bar" name='slider' id="slider" />
                 <div style={{left: slide - 4 + '%'}} className="slider-button"></div>
               </div>

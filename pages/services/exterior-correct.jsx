@@ -13,7 +13,7 @@ export default function ExteriorCorrect() {
         <Metatags
           title='Exterior Correct and Protect | Dirt-Less Detailing'
           description="Elevate your vehicle's appearance and protection with our Correct and Protect service, leaving your car with a mirror-like shine and defense."
-          image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/public'
+          image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2bd5c3dd-6677-466a-e348-8495945c4700/public'
           canonical='/services/exterior-correct'
         />
         <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
@@ -23,7 +23,7 @@ export default function ExteriorCorrect() {
             "name": "Exterior Correct and Protect",
             "brand": "Dirt-Less Detailing",
             "description": "Elevate your vehicle's appearance and protection with our Correct and Protect service, leaving your car with a mirror-like shine and defense.",
-            "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/public",
+            "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2bd5c3dd-6677-466a-e348-8495945c4700/public",
             "url": "https://www.dirtlessdetailing.com/services/exterior-correct/",
             "offers": {
               "@type": "Offer",
@@ -47,7 +47,7 @@ export default function ExteriorCorrect() {
           }`,
         }} />
       </Head>
-      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/cover')`}}></div>
+      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2bd5c3dd-6677-466a-e348-8495945c4700/cover')`}}></div>
       <div className="servicepage-header">
         <div>
           <h1><span className='accent-purple bold'>Exterior Correct and Protect</span></h1>
@@ -57,8 +57,8 @@ export default function ExteriorCorrect() {
             <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
           </div>
         </div>
-        <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a40931e-dd21-407c-dd03-86fd43b05200/public')`}}>
-          <img style={{visibility: 'hidden'}} alt="Clean drivers seat interior of a Subaru" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a40931e-dd21-407c-dd03-86fd43b05200/public" />
+        <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/1834d275-3102-4f88-a06c-92c07b9b5e00/public')`}}>
+          <img style={{visibility: 'hidden'}} alt="Before and After of a very scratched up door panel" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/1834d275-3102-4f88-a06c-92c07b9b5e00/public" />
         </div>
       </div>
 
@@ -151,8 +151,8 @@ export default function ExteriorCorrect() {
             <p className='pricing__subtext'>Not just a complete exterior refresh, but now your vehicle has protection against the elements that Washington throws at us.</p>
             <div style={{display: 'grid', marginBottom: '10vh'}} className='place-center'>
               <div className='slider-container'>
-                <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b814f739-3846-4796-3093-c34675a32c00/public')`}} className='slider-img'></div>
-                <div style={{width: slide + '%', backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4d98c1bc-645c-46fa-2232-d1f735bb2300/public')`}} className='slider-img foreground'></div>
+                <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2b933f30-bbff-4f91-8b88-1c83f75a4500/public')`}} className='slider-img'></div>
+                <div style={{width: slide + '%', backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d2eabed6-d867-43e8-f60e-d9d95a983600/public')`}} className='slider-img foreground'></div>
                 <input type="range" min="1" max="100" value={slide} onChange={(e) => setSlide(Number(e.target.value))} className="slider-bar" name='slider' id="slider" />
                 <div style={{left: slide - 4 + '%'}} className="slider-button"></div>
               </div>

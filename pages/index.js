@@ -259,7 +259,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className='popular-services-card'>
-                        <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/public)` }}></div>
+                        <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/da3f5734-319b-4301-43c9-7af958fd5600/public)` }}></div>
                         <div className='popular-header'>
                             <h3 className="accent-blue">Exterior Seal and Shine</h3>
                             <div>
@@ -288,7 +288,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className='popular-services-card'>
-                        <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fabb5ba-d12e-4e8a-c3bb-f5901af53e00/public)` }}></div>
+                        <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4ce4f977-365c-4211-a7f9-68c5ec6d7a00/public)` }}></div>
                         <div className='popular-header'>
                             <h3 className="accent-purple">Correct and Protect</h3>
                             <div>

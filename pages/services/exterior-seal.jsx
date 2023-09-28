@@ -13,7 +13,7 @@ export default function ExteriorSeal() {
         <Metatags
           title='Exterior Seal and Shine | Dirt-Less Detailing'
           description='Experience a showroom shine and unparalleled protection with our Exterior Seal and Shine, ensuring your car gleams like new while safeguarding its finish.'
-          image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/public'
+          image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/public'
           canonical='/services/exterior-seal'
         />
         <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
@@ -23,7 +23,7 @@ export default function ExteriorSeal() {
             "name": "Exterior Seal and Shine",
             "brand": "Dirt-Less Detailing",
             "description": "Experience a showroom shine and unparalleled protection with our Exterior Seal and Shine, ensuring your car gleams like new while safeguarding its finish.",
-            "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/public",
+            "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/public",
             "url": "https://www.dirtlessdetailing.com/services/exterior-seal/",
             "offers": {
               "@type": "Offer",
@@ -47,7 +47,7 @@ export default function ExteriorSeal() {
           }`,
         }} />
       </Head>
-      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/cover')`}}></div>
+      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/cover')`}}></div>
       <div className="servicepage-header">
         <div>
           <h1><span className='accent-blue bold'>Exterior Seal and Shine</span></h1>
@@ -57,8 +57,8 @@ export default function ExteriorSeal() {
             <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
           </div>
         </div>
-        <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a40931e-dd21-407c-dd03-86fd43b05200/public')`}}>
-          <img style={{visibility: 'hidden'}} alt="Clean drivers seat interior of a Subaru" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a40931e-dd21-407c-dd03-86fd43b05200/public" />
+        <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c4bc3845-d897-4dcc-9401-f7feca96a200/public')`}}>
+          <img style={{visibility: 'hidden'}} alt="Before and after of a Ford Truck from the side" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c4bc3845-d897-4dcc-9401-f7feca96a200/public" />
         </div>
       </div>
 
