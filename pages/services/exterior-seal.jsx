@@ -111,13 +111,22 @@ export default function ExteriorSeal() {
                   <h3 className='step-number'>4</h3>
                 </div>
                 <div className='step-container'>
-                  <h4 className="step-title">Protect Paint</h4>
-                  <p className='step-desc'>Apply our mix of Ceramic Spray (gives the whole vehicle 3 months of protection).</p>
+                  <h4 className="step-title">Remove scratches and watermarks</h4>
+                  <p className='step-desc'>Perform our Polishing Procedure removing many of the lighter scratches and swirls from your paint. This also removes all watermarks on the vehicle, even on the glass as we go over that as well.</p>
                 </div>
               </li>
               <li className="item">
                 <div className='step-number-container'>
                   <h3 className='step-number'>5</h3>
+                </div>
+                <div className='step-container'>
+                  <h4 className="step-title">Protect Vehicle</h4>
+                  <p className='step-desc'>Apply IGL Premier to the whole vehicle giving you 6 more months of protection on top of the protection from the polish! At this stage we'll also apply our windshield and trim coatings to cover the rest of your vehicle!</p>
+                </div>
+              </li>
+              <li className="item">
+                <div className='step-number-container'>
+                  <h3 className='step-number'>6</h3>
                 </div>
                 <div className='step-container'>
                   <h4 className="step-title">Dry Vehicle</h4>
@@ -126,7 +135,7 @@ export default function ExteriorSeal() {
               </li>
               <li className="item">
                 <div className='step-number-container'>
-                  <h3 className='step-number'>6</h3>
+                  <h3 className='step-number'>7</h3>
                 </div>
                 <div className='step-container'>
                   <h4 className="step-title">Final Touches</h4>
@@ -135,7 +144,7 @@ export default function ExteriorSeal() {
               </li>
               <li className="item item-disabled">
                 <div className='step-number-container'>
-                  <h3 className='step-number'>7</h3>
+                  <h3 className='step-number'>8</h3>
                 </div>
                 <div className='step-container'>
                   <h4 className="step-title">All this and more!</h4>

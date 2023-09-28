@@ -2562,7 +2562,7 @@ footer {
 }
 
 .pricing__pricecard-pricebox {
-  background-color: $contact-bkg-lighter;
+  background-color: $contact-bkg;
   display: flex;
   padding: 1rem;
   border-radius: 16px;
@@ -3265,6 +3265,8 @@ footer {
     display: block;
     font-size: 1.5rem;
     font-weight: 400;
+    text-align: left;
+    max-width: 80%;
   }
 
   .servicepage-header {
