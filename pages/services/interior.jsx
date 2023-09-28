@@ -13,7 +13,7 @@ export default function FullIntEx() {
         <Metatags
           title='Full Interior Cleaning | Dirt-Less Detailing'
           description='Our Full Interior cleaning is our most sought after service, and for good reason, it will completely renew your cars interior!'
-          image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/public'
+          image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/270a9710-a253-4522-ff8a-691ad0cb2d00/public'
           canonical='/services/interior'
         />
         <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
@@ -23,8 +23,8 @@ export default function FullIntEx() {
             "name": "Full Interior Cleaning",
             "brand": "Dirt-Less Detailing",
             "description": "Get your car's interior looking brand new with our full interior detailing service. We offer thorough cleaning and conditioning of all surfaces, including the dashboard, seats, and carpets. Contact us to schedule your appointment today.",
-            "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/public",
-            "url": "https://www.dirtlessdetailing.com/services/full-interior-detail/",
+            "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/270a9710-a253-4522-ff8a-691ad0cb2d00/public",
+            "url": "https://www.dirtlessdetailing.com/services/interior/",
             "offers": {
               "@type": "Offer",
               "priceCurrency": "USD",
@@ -47,7 +47,7 @@ export default function FullIntEx() {
           }`,
         }} />
       </Head>
-      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/cover')`}}></div>
+      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/270a9710-a253-4522-ff8a-691ad0cb2d00/cover')`}}></div>
       <div className="servicepage-header">
         <div>
           <h1><span className='accent-orange bold'>Full Interior Cleaning</span></h1>
@@ -57,8 +57,8 @@ export default function FullIntEx() {
             <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
           </div>
         </div>
-        <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a40931e-dd21-407c-dd03-86fd43b05200/public')`}}>
-          <img style={{visibility: 'hidden'}} alt="Clean drivers seat interior of a Subaru" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a40931e-dd21-407c-dd03-86fd43b05200/public" />
+        <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/270a9710-a253-4522-ff8a-691ad0cb2d00/public')`}}>
+          <img style={{visibility: 'hidden'}} alt="Clean drivers seat interior of a Subaru" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/270a9710-a253-4522-ff8a-691ad0cb2d00/public" />
         </div>
       </div>
 
@@ -85,7 +85,7 @@ export default function FullIntEx() {
                 </div>
                 <div className='step-container'>
                   <h4 className="step-title">Expose Hidden Dirt</h4>
-                  <p className='step-desc'>Use drill brushes and our Tornador Vortex Blowgun which uses compressed air to blow out loose soil and any spots that are hard to reach with a vacuum.</p>
+                  <p className='step-desc'>Use drill brushes and our Tornador Vortex Blowgun which uses compressed air to blow out any loose soil and gets areas that are hard to reach with a vacuum.</p>
                 </div>
               </li>
               <li className="item">
@@ -111,8 +111,8 @@ export default function FullIntEx() {
                   <h3 className='step-number'>4</h3>
                 </div>
                 <div className='step-container'>
-                  <h4 className="step-title">Wipe Down Plastics and Leathers</h4>
-                  <p className='step-desc'>We will clean, steam, and degrease all plastics and leather seats.</p>
+                  <h4 className="step-title">Door Jambs</h4>
+                  <p className='step-desc'>Clean all of the door jambs.</p>
                 </div>
               </li>
               <li className="item">
@@ -120,8 +120,8 @@ export default function FullIntEx() {
                   <h3 className='step-number'>5</h3>
                 </div>
                 <div className='step-container'>
-                  <h4 className="step-title">Door Jambs</h4>
-                  <p className='step-desc'>Clean all of the door jambs.</p>
+                  <h4 className="step-title">Wipe Down Plastics and Leathers</h4>
+                  <p className='step-desc'>We will clean, steam, and degrease all plastics and leather seats.</p>
                 </div>
               </li>
               <li className="item">

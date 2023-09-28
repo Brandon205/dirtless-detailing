@@ -259,7 +259,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className='popular-services-card'>
-                        <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/da3f5734-319b-4301-43c9-7af958fd5600/public)` }}></div>
+                        <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/public)` }}></div>
                         <div className='popular-header'>
                             <h3 className="accent-blue">Exterior Seal and Shine</h3>
                             <div>

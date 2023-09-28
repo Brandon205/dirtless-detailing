@@ -13,7 +13,7 @@ export default function InteriorSpill() {
         <Metatags
           title='Interior with Spill Guard | Dirt-Less Detailing'
           description='Our Full Interior cleaning process with an interior ceramic coating, perfect for protecting all surfaces in your vehicle.'
-          image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/public'
+          image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a196c77-cb1a-42f9-479b-8fdbe3c14500/public'
           canonical='/services/interior-spill'
         />
         <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
@@ -23,7 +23,7 @@ export default function InteriorSpill() {
             "name": "Full Interior with Spill Guard",
             "brand": "Dirt-Less Detailing",
             "description": "Get your car's interior looking brand new with our full interior detailing service, topped off with a ceramic coating to protect your vehicle from day to day use! Contact us to schedule your appointment today.",
-            "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/public",
+            "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a196c77-cb1a-42f9-479b-8fdbe3c14500/public",
             "url": "https://www.dirtlessdetailing.com/services/interior-spill/",
             "offers": {
               "@type": "Offer",
@@ -57,8 +57,8 @@ export default function InteriorSpill() {
             <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
           </div>
         </div>
-        <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a40931e-dd21-407c-dd03-86fd43b05200/public')`}}>
-          <img style={{visibility: 'hidden'}} alt="Clean drivers seat interior of a Subaru" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a40931e-dd21-407c-dd03-86fd43b05200/public" />
+        <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a196c77-cb1a-42f9-479b-8fdbe3c14500/public')`}}>
+          <img style={{visibility: 'hidden'}} alt="Clean drivers seat interior of a Subaru" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a196c77-cb1a-42f9-479b-8fdbe3c14500/public" />
         </div>
       </div>
 
@@ -69,10 +69,10 @@ export default function InteriorSpill() {
               <h2 style={{marginBottom: 0}} className='text-large'>Full Interior + Spill Guard</h2>
               <hr style={{margin: '0 auto 3rem auto'}} />
               <div className="service-explain">
-                <p>CHANGE THESE LATER!!!! The goal of the Full Interior Cleaning package is to restore your interior to its best condition. Your carpet, seats, floor mats, plastics, windows, and all other interior fixtures will be meticulously cleaned.</p>
-                <p>While we will attempt to remove 100% of stains many stains could prove to be more challenging to remove or might not be completely removed. Some won't completely disappear depending on the kind of stain, how long it has been sitting, and the material the stain is on. </p>
-                <p>Taking us by surprise is difficult. Please don't think that your interior is too dirty. We've seen hundreds of different interiors and have all the necessary tools to attempt to remove any kind of stain or mess.</p>
-                <p>Is your whole car a mess, inside and out? Simply book an interior and exterior service, we'll do the hard work to get your car back to 100%! Check out our exterior offers <a href="/services/exterior" className='aside-link'>here</a>.</p>
+                <p>If your car's interior is often put under heavy use by kids, food, drinks, and even animals then this is the best choice for you. Not only will we remove the past few months of dirt, french fries, and who knows what else, but we'll also protect your interior from the next few months of use!</p>
+                <p>With this Spill Guard option you'll get a layer of ceramic coating applied to all materials of your vehicle, even the fabric! Now cleanup from life's accidents will be far easier as the coating will act as a protective layer and will give you more time to clean up before things soak in.</p>
+                <p>And don't worry, the coating doesn't act like the cheap conditioners that you can buy either, where they shine things for a week and make all surfaces slippery. Your car will feel similar, look brighter, and you won't be sliding around in your seat when you drive.</p>
+                <p>Do you need the outside of your car washed too? Feel free to book an interior and exterior detail, it's the best way to get your whole vehicle brought back to life! Check out our base exterior cleaning <a href="/services/exterior" className='aside-link'>here</a>, starting at only <span className='bold'>$75</span>!</p>
               </div>
             </main>
             <br className='extra-space' />
@@ -85,7 +85,7 @@ export default function InteriorSpill() {
                 </div>
                 <div className='step-container'>
                   <h4 className="step-title">Expose Hidden Dirt</h4>
-                  <p className='step-desc'>Use drill brushes and our Tornador Vortex Blowgun which uses compressed air to blow out loose soil and any spots that are hard to reach with a vacuum.</p>
+                  <p className='step-desc'>Use drill brushes and our Tornador Vortex Blowgun which uses compressed air to blow out any loose soil and gets areas that are hard to reach with a vacuum.</p>
                 </div>
               </li>
               <li className="item">
@@ -111,8 +111,8 @@ export default function InteriorSpill() {
                   <h3 className='step-number'>4</h3>
                 </div>
                 <div className='step-container'>
-                  <h4 className="step-title">Wipe Down Plastics and Leathers</h4>
-                  <p className='step-desc'>We will clean, steam, and degrease all plastics and leather seats.</p>
+                  <h4 className="step-title">Door Jambs</h4>
+                  <p className='step-desc'>Clean all of the door jambs.</p>
                 </div>
               </li>
               <li className="item">
@@ -120,8 +120,8 @@ export default function InteriorSpill() {
                   <h3 className='step-number'>5</h3>
                 </div>
                 <div className='step-container'>
-                  <h4 className="step-title">Door Jambs</h4>
-                  <p className='step-desc'>Clean all of the door jambs.</p>
+                  <h4 className="step-title">Wipe Down Plastics and Leathers</h4>
+                  <p className='step-desc'>We will clean, steam, and degrease all plastics and leather seats.</p>
                 </div>
               </li>
               <li className="item">
