@@ -12,7 +12,7 @@ export default function Exterior() {
         <title>Exterior Decon Wash | Dirt-Less Detailing</title>
         <Metatags
           title='Exterior Decon Wash | Dirt-Less Detailing'
-          description='Experience a showroom shine and unparalleled protection with our Exterior Decon Wash, ensuring your car gleams like new while safeguarding its finish.'
+          description='Get a car wash like never before with our Exterior Decon Wash. Where we go in depth to get all corners and remove any paint contaminants.'
           image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/public'
           canonical='/services/exterior'
         />
@@ -22,7 +22,7 @@ export default function Exterior() {
             "@type": "Product",
             "name": "Exterior Decon Wash",
             "brand": "Dirt-Less Detailing",
-            "description": "Experience a showroom shine and unparalleled protection with our Exterior Decon Wash, ensuring your car gleams like new while safeguarding its finish.",
+            "description": "Get a car wash like never before with our Exterior Decon Wash. Where we go in depth to get all corners and remove any paint contaminants.",
             "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/public",
             "url": "https://www.dirtlessdetailing.com/services/exterior/",
             "offers": {
