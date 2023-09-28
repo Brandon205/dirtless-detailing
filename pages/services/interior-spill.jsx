@@ -160,10 +160,10 @@ export default function InteriorSpill() {
 
             <div>
               <div className='pricing__heading-container'>
-                <h3 className="pricing__heading"><span className='accent-blue bold'>Full Interior</span> Pricing</h3>
+                <h3 className="pricing__heading"><span className='accent-blue bold'>Full Interior + Spill Guard</span> Pricing</h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
-              <PricingComponent prices={[300, 300, 335, 335, 375, 375]} />
+              <PricingComponent prices={[450, 450, 500, 500, 575, 575]} />
             </div>
 
           </div>
