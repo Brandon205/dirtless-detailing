@@ -2,34 +2,9 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import PricingComponent from '../../utils/PricingComponent';
-import addons from '../../utils/Addons';
-
-const steps = [
-  ["Expose Hidden Dirt", "Use drill brushes and our Tornador Vortex Blowgun which uses compressed air to blow out every spot a vacuum can't reach. Using these also extracts sand and loose soil from carpeting."],
-  ["Vacuum Vehicle", "Thoroughly vacuum every crack and crevice of the vehicle."],
-  ["Hot Water Extraction", "We use a professional hot water extractor and professional flex stain remover and alkaline floor rinse to keep floors at a neutral PH level. We will be sure to get all carpets, floor mats, and cloth seats."],
-  ["Wipe Down Plastics and Leathers", "We will clean, steam, and degrease all plastics and leather seats."],
-  ["Dress Interior", "Dress or Coat Interior**"],
-  ["Door Jambs", "Clean all of the door jambs."],
-  ["Window Cleaning", "Clean windows."]
-]
 
 export default function FullIntEx() {
   const [slide, setSlide] = useState(50);
-
-  const content = steps.map((item, id) => {
-    return (
-      <li key={id} className="item">
-        <div className='step-number-container'>
-          <h3 className='step-number'>{id + 1}</h3><div className="vertical-rule"></div>
-        </div>
-        <div className='step-container'>
-          <h4 className="step-title">{item[0]}{id === 2 ? <span className='special-package'>*</span> : ""}</h4>
-          <p className='step-desc'>{item[1]}</p>
-        </div>
-      </li>
-    )
-  })
 
   return (
     <section className='service-content-container'>
@@ -75,7 +50,7 @@ export default function FullIntEx() {
       <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/cover')`}}></div>
       <div className="servicepage-header">
         <div>
-          <h1>Full Interior Cleaning</h1>
+          <h1><span className='accent-orange bold'>Full Interior Cleaning</span></h1>
           <h2 className='page-subheading'>Our easy and hassle-free Interior Cleaning Service.</h2>
           <div className='header-buttons'>
             <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</a>
@@ -91,7 +66,8 @@ export default function FullIntEx() {
         <div className='process-container'>
           <div style={{width: '100%'}}>
             <main className="service-main">
-              <h2 className='text-large'>Professional Interior Detailing</h2>
+              <h2 style={{marginBottom: 0}} className='text-large'>Our Full Interior Cleaning Service</h2>
+              <hr style={{margin: '0 auto 3rem auto'}} />
               <div className="service-explain">
                 <p>The goal of the Full Interior Cleaning package is to restore your interior to its best condition. Your carpet, seats, floor mats, plastics, windows, and all other interior fixtures will be meticulously cleaned.</p>
                 <p>While we will attempt to remove 100% of stains many stains could prove to be more challenging to remove or might not be completely removed. Some won't completely disappear depending on the kind of stain, how long it has been sitting, and the material the stain is on. </p>
@@ -101,16 +77,78 @@ export default function FullIntEx() {
             </main>
             <br className='extra-space' />
 
-            <h2 style={{margin: '15vh auto 2rem auto'}} className='cleaning-process-title text-xl'>Our Interior Cleaning Process</h2>
+            <h2 className='cleaning-process-title text-xl'>Our Interior Cleaning Process</h2>
             <ol className='list'>
-              {content}
+              <li className="item">
+                <div className='step-number-container'>
+                  <h3 className='step-number'>1</h3>
+                </div>
+                <div className='step-container'>
+                  <h4 className="step-title">Expose Hidden Dirt</h4>
+                  <p className='step-desc'>Use drill brushes and our Tornador Vortex Blowgun which uses compressed air to blow out loose soil and any spots that are hard to reach with a vacuum.</p>
+                </div>
+              </li>
+              <li className="item">
+                <div className='step-number-container'>
+                  <h3 className='step-number'>2</h3>
+                </div>
+                <div className='step-container'>
+                  <h4 className="step-title">Vacuum Vehicle</h4>
+                  <p className='step-desc'>Thoroughly vacuum every crack and crevice of the vehicle.</p>
+                </div>
+              </li>
+              <li className="item">
+                <div className='step-number-container'>
+                  <h3 className='step-number'>3</h3>
+                </div>
+                <div className='step-container'>
+                  <h4 className="step-title">Hot Water Extraction (if needed)</h4>
+                  <p className='step-desc'>We use a professional grade hot water extractor and professional flex stain remover and alkaline floor rinse to keep floors at a neutral PH level. We will be sure to get all carpets, floor mats, and cloth seats.</p>
+                </div>
+              </li>
+              <li className="item">
+                <div className='step-number-container'>
+                  <h3 className='step-number'>4</h3>
+                </div>
+                <div className='step-container'>
+                  <h4 className="step-title">Wipe Down Plastics and Leathers</h4>
+                  <p className='step-desc'>We will clean, steam, and degrease all plastics and leather seats.</p>
+                </div>
+              </li>
+              <li className="item">
+                <div className='step-number-container'>
+                  <h3 className='step-number'>5</h3>
+                </div>
+                <div className='step-container'>
+                  <h4 className="step-title">Door Jambs</h4>
+                  <p className='step-desc'>Clean all of the door jambs.</p>
+                </div>
+              </li>
+              <li className="item">
+                <div className='step-number-container'>
+                  <h3 className='step-number'>6</h3>
+                </div>
+                <div className='step-container'>
+                  <h4 className="step-title">Window Cleaning</h4>
+                  <p className='step-desc'>Clean all windows and other glass, removing any streaking possibly left behind from the previous steps.</p>
+                </div>
+              </li>
+              <li className="item item-disabled">
+                <div className='step-number-container'>
+                  <h3 className='step-number'>7</h3>
+                </div>
+                <div className='step-container'>
+                  <h4 className="step-title">Interior Spill Guard Coating</h4>
+                  <p className='step-desc'>Upgrade to our Spill Guard Service to have us apply a 1 year interior ceramic coating to all surfaces in the vehicle. This is PERFECT for cars with kids, pets, or daily coffee trips with the occasional spills as  cleaning it will now be 10x easier.</p>
+                </div>
+              </li>
             </ol>
 
             <br className='extra-space' />
 
-            <p style={{fontSize: '2rem', margin: 0}}>End Results</p>
+            <p style={{fontSize: '2rem', margin: 0, color: 'white'}}>End Results</p>
             <h3 className='pricing__heading'>Fresh, Clean, and Stunning Results.</h3>
-            <p>Once we are done you won't want to see your car dirty ever again!</p>
+            <p className='pricing__subtext'>Once we are done you won't want to see your car dirty ever again!</p>
             <div style={{display: 'grid', marginBottom: '10vh'}} className='place-center'>
               <div className='slider-container'>
                 <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/907d2e8b-5d24-40bf-387e-90be139c2d00/public')`}} className='slider-img'></div>
@@ -122,10 +160,10 @@ export default function FullIntEx() {
 
             <div>
               <div className='pricing__heading-container'>
-                <h3 className="pricing__heading">Our Interior Service Prices</h3>
+                <h3 className="pricing__heading"><span className='accent-orange bold'>Full Interior</span> Pricing</h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
-              <PricingComponent prices={[299, 299, 349, 349, 349, 374]} />
+              <PricingComponent prices={[300, 300, 335, 335, 375, 375]} />
             </div>
 
           </div>

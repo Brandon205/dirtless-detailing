@@ -28,7 +28,7 @@ const iconArr = {
 }
 
 {/* <PricingComponent title='Ceramic Coating' prices={['949', '949', '1099', '1099', '1249', '1249']} addons={[{}]} labels={['label1', 'label2', 'needs to have 6 labels...']} /> */}
-export default function PricingComponent({prices = props.prices, ceramic = false, addons = [], labels = ['2-Door Cars', 'Quarter Ton Trucks', '4-Door Cars', "Mid-Size SUV's", '4-Door Trucks', "3-Row SUV's, Minivans"]}) {
+export default function PricingComponent({prices = props.prices, addons = [], labels = ['2-Door Cars', 'Quarter Ton Trucks', '4-Door Cars', "Mid-Size SUV's", '4-Door Trucks', "3-Row SUV's, Minivans"]}) {
     const [currVal, setCurrVal] = useState(2);
     const [animate, setAnimate] = useState(false);
     
@@ -55,68 +55,6 @@ export default function PricingComponent({prices = props.prices, ceramic = false
         ))
     }
 
-    let monthlyCost;
-    let yearlyCost;
-    let ceramicContent = '';
-    if (ceramic) {
-        switch (currVal){
-            case 0:
-                monthlyCost = '$129';
-                yearlyCost = '$274'
-                break;
-            case 1:
-                monthlyCost = '$129';
-                yearlyCost = '$274'
-                break;
-            case 2:
-                monthlyCost = '$144';
-                yearlyCost = '$324'
-                break;
-            case 3:
-                monthlyCost = '$159';
-                yearlyCost = '$324'
-                break;
-            case 4:
-                monthlyCost = '$189';
-                yearlyCost = '$374'
-                break;
-            case 5:
-                monthlyCost = '$189';
-                yearlyCost = '$374'
-                break;
-            default:
-                monthlyCost = '$129';
-                yearlyCost = '$274';       
-        }
-
-        ceramicContent = (
-            <div className="vip-container general-container">
-                <div className="pricing__addon">
-                    <img src='../assets/icons/clock.png' className='addon-icon' alt="calendar" />
-                    <div className="addon-content">
-                        <h4>Monthly <span className='special-package'>VIP</span></h4>
-                        <p>Every month we will perform a full exterior wash, and we will top off/boost ceramic coating if needed,  this will keep your vehicle in pristine condition year-round. Keeping up with this service qualifies you for our LIFETIME WARRANTY.</p>
-                    </div>
-                    <div className="addon-addbutton"></div>
-                    <div className="addon-price">
-                        <strong>{monthlyCost}.99</strong>
-                    </div>
-                </div>
-                <div className="pricing__addon">
-                    <img src='../assets/icons/calendar.png' className='addon-icon' alt="calendar" />
-                    <div className="addon-content">
-                        <h4>Yearly <span className='special-package'>VIP</span></h4>
-                        <p>Every 6 months to a year we will perform a full exterior wash, and we will top off/boost ceramic coating if needed. Keeping up with this service qualifies you for our 2-year, 20,000 mile warranty (Protect), or our 5-year 50,000 mile warranty (Protect+).</p>
-                    </div>
-                    <div className="addon-addbutton"></div>
-                    <div className="addon-price">
-                        <strong>{yearlyCost}.99</strong>
-                    </div>
-                </div>
-            </div>
-        )
-    }
-
     return (
         <div className='pricing__container'>
             <div className="pricing__img" style={{backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/${imagesArr[currVal]}/cover)`}}></div>
@@ -138,18 +76,18 @@ export default function PricingComponent({prices = props.prices, ceramic = false
                     <strong className='pricing__pricecard-pricebox'>
                         <span className='pricing__pricecard-price'>
                             ${animate ? 
-                                <AnimatedNumbers includeComma animateToNumber={prices[currVal] + '.99'} configs={[
+                                <AnimatedNumbers includeComma animateToNumber={prices[currVal]} configs={[
                                     { mass: 1, tension: 320, friction: 100 },
                                 ]}></AnimatedNumbers> : 
-                                prices[currVal] + '.99'
+                                prices[currVal]
                             }
                         </span>
                     </strong>
-                    <p>+Desired Add-ons <img src='../assets/icons/handDown.png' className='icon-20' alt="down arrow" /></p>
+                    {/* <p>+Desired Add-ons <img src='../assets/icons/handDown.png' className='icon-20' alt="down arrow" /></p> */}
                 </div>
             </div>
 
-            <hr className="pricing__hr" />
+            {/* <hr className="pricing__hr" /> */}
 
             {addons.length > 0 ?
                 <div className="general-container new-heading-container">
@@ -159,17 +97,8 @@ export default function PricingComponent({prices = props.prices, ceramic = false
                 </div> : ''
             }
 
-            {ceramic ? 
-                <div id='vip' className="general-container new-heading-container">
-                    <strong className="above-heading"><span className='special-package'>VIP</span> Packages</strong>
-                    <h3 className="new-heading">To Maintain that New Car Shine</h3>
-                    <p style={{marginTop: 0, color: '#c0c0c0'}}>*Prices based on vehicle size selected above, any price ranges are determined by us based on the condition of the vehicle.</p>
-                </div> : ''
-            }
-
             <div className="pricing__addons-container">
                 {content}
-                {ceramicContent}
             </div>
             <a href="/Contact" className="new-contact-btn">Contact Us</a>
         </div>

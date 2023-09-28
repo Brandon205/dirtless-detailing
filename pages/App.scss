@@ -489,7 +489,7 @@ header h1 {
   height: 75vh;
   width: 100%;
   z-index: 0;
-  box-shadow: 0 -1px 8px rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid white;
 }
 
 .coating-cover {
@@ -1615,16 +1615,18 @@ footer {
   position: absolute;
   color: white;
   width: 90%;
-  transform: translate(5%, -47vh);
+  transform: translate(5%, -57vh);
   z-index: 1;
 
   div:first-child {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    gap: 1rem;
 
     h1 {
       margin-bottom: 0;
+      font-size: 3em;
     }
 
     h2 {
@@ -1984,9 +1986,16 @@ footer {
   background-color: $contact-bkg-lighter;
   display: flex;
   padding: 1rem;
-  margin-bottom: 1rem;
   color: white;
   border-radius: 0.5em;
+  border: 2px solid $main-clr;
+  margin-bottom: 1rem;
+  margin-left: 40px;
+}
+
+.item-disabled {
+  border: 2px solid $secondary-text;
+  color: $secondary-text;
 }
 
 .product-item {
@@ -1997,30 +2006,40 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.step-number {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 50%;
+  text-align: center;
+  width: 65px;
+  height: 65px;
+  left: -70px;
+  top: -7%;
+  font-size: 2em;
+  margin: 0;
 }
 
 .step-container {
   display: flex;
   align-items: flex-start;
-  text-align: left;
-
   flex-direction: column;
-}
-
-.step-number {
-  display: inline;
-  font-size: 2em;
-  margin: 0.5rem;
+  text-align: left;
 }
 
 .step-title {
-  font-size: 1.2em;
-  line-height: 1.2;
+  font-size: 1.3em;
   margin: 0.5rem 0 0 0;
 }
 
 .step-desc {
   display: inline;
+  line-height: 1.2;
   font-weight: 300;
 }
 
@@ -2059,13 +2078,7 @@ footer {
 .cleaning-process-title {
   font-size: 2em;
   margin-top: 0;
-}
-
-.vertical-rule {
-  display: inline;
-  outline: 2px solid white;
-  height: 100%;
-  margin-right: 10px;
+  color: white;
 }
 
 .main-content-container {
@@ -2308,10 +2321,20 @@ footer {
 /* NEW PRICING STYLING */
 
 .pricing__heading-container {
-  background-color: $contact-bkg;
+  background-color: $contact-bkg-lighter;
   border-radius: 38px 38px 0 0;
   color: white;
   padding: 2rem;
+}
+
+.pricing__heading {
+  font-size: 2.5em;
+  margin: 1.5rem auto 0 auto;
+  color: white;
+}
+
+.pricing__subtext {
+  color: $secondary-text;
 }
 
 .pricing__positioner {
@@ -2321,13 +2344,8 @@ footer {
   z-index: 1000;
 }
 
-.pricing__heading {
-  font-size: 3em;
-  margin: 1em auto 0 auto;
-}
-
 .pricing__subheading {
-  font-size: 1.5em;
+  font-size: 1em;
   color: #c0c0c0;
 }
 
@@ -2344,7 +2362,7 @@ footer {
   align-items: center;
   gap: 5vh;
   padding: 5rem 0;
-  background-color: $contact-bkg;
+  background-color: $contact-bkg-lighter;
   color: white;
 }
 
@@ -2706,25 +2724,9 @@ footer {
   padding: 1rem;
 }
 
-// .top-service-main {
-//   position: relative;
-//   background: $contact-bkg;
-//   padding: 2rem 4rem 0 4rem;
-//   z-index: 5;
-//   width: 100%;
-//   color: white;
-//   border-radius: 0 0 38px 38px;
-// }
-
 .service-explain {
   display: grid;
-  grid-template-columns: minmax(auto, 1fr) minmax(auto, 1fr);
-  grid-auto-columns: 20px;
-  color: white;
-
-  p {
-    text-align: left;
-  }
+  grid-template-columns: auto;
 }
 
 .service-image {
@@ -3052,6 +3054,28 @@ footer {
     margin: 0
   }
 
+  .service-explain {
+    grid-template-columns: minmax(auto, 1fr) minmax(auto, 1fr);
+    grid-auto-columns: 20px;
+    color: white;
+
+    p {
+      text-align: left;
+    }
+  }
+
+  .pricing__heading {
+    font-size: 3em;
+  }
+
+  .pricing__subheading {
+    font-size: 1.5em;
+  }
+
+  .cleaning-process-title {
+    margin-top: 15vh;
+  }
+
   .header-icons-container {
     flex-direction: row;
     gap: 4rem;
@@ -3219,7 +3243,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 1fr;
-    column-gap: 2rem;
+    column-gap: 4rem;
   }
 
   .review-bottom {
@@ -3242,6 +3266,10 @@ footer {
     font-size: 1.5rem;
     font-weight: 400;
     // margin: 0 auto 2rem auto;
+  }
+
+  .servicepage-header {
+    transform: translate(5%, -47vh);
   }
 
   .servicepage-header h1 {
@@ -3376,6 +3404,13 @@ footer {
     width: 500px;
     height: 350px;
     border-radius: 12px;
+  }
+
+  .servicepage-header {
+    div:first-child {
+      align-items: flex-start;
+      gap: 0;
+    }
   }
 
   .no-grow {
