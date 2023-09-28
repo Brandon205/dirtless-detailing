@@ -12,9 +12,9 @@ export default function FullIntEx() {
         <title>Full Interior Cleaning | Dirt-Less Detailing</title>
         <Metatags
           title='Full Interior Cleaning | Dirt-Less Detailing'
-          description='Our Full Interior cleaning is the most sought after service, and for good reason, it will completely renew your cars interior!'
+          description='Our Full Interior cleaning is our most sought after service, and for good reason, it will completely renew your cars interior!'
           image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/public'
-          canonical='/services/full-interior-detail'
+          canonical='/services/interior'
         />
         <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
           __html: `{

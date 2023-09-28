@@ -94,7 +94,7 @@ export default function MyApp({ Component, pageProps }) {
                                                 <a href="/services/interior" className='menu-link'><img src='../assets/icons/steeringWheel.png' alt='steering wheel' className='nav-icon' /> Full Interior</a>
                                             </div>
                                             <div className='sub-menu-div' onClick={() => setNav('none')}>
-                                                <a href="/services/interior-seal" className='menu-link'><img src='../assets/icons/carSeat.png' alt='car seat' className='nav-icon' /> Full Interior with Spill Guard</a>
+                                                <a href="/services/interior-spill" className='menu-link'><img src='../assets/icons/carSeat.png' alt='car seat' className='nav-icon' /> Full Interior with Spill Guard</a>
                                             </div>
                                         </div>
 
