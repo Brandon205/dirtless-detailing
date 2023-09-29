@@ -10,6 +10,34 @@ export default function Home() {
         setScreenWidth(window.innerWidth);
     }, []);
 
+    const leftParent = {
+        visible: {
+            opacity: 1, 
+            transition: {
+                when: 'beforeChildren',
+                delay: 1,
+                staggerChildren: 0.2
+            }
+        },
+        hidden: {
+            opacity: 0, 
+            transition: {
+                when: 'afterChildren',
+                staggerChildren: 0
+            }
+        }
+    }
+
+    const leftChild = {
+        visible: {opacity: 1, x: 0},
+        hidden: {opacity: 0, x: '-10%'}
+    }
+
+    const leftChildDiff = {
+        visible: {opacity: 1, x: 0},
+        hidden: {opacity: 0, x: '10%'}
+    }
+
     return (
         <div className="App">
             <Head>
@@ -121,26 +149,26 @@ export default function Home() {
                     </div>
                     <div className='popular-services-card'>
                         <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/907d2e8b-5d24-40bf-387e-90be139c2d00/public)` }}></div>
-                        <motion.div animate="visible" initial="hidden" variants={{ visible: {opacity: 1}, hidden: {opacity: 0} }} viewport={{ once: false }} className='popular-header'>
-                            <motion.h3 variants={{visible: { opacity: 1, x: 0 }, hidden: {opacity: 0, x: -100}}} className='accent-orange'>Full Interior</motion.h3>
+                        <div className='popular-header'>
+                            <h3 className='accent-orange'>Full Interior</h3>
                             <div>
                                 <p>Starting At:</p>
                                 <p className='popular-pricing-price'>$300</p>
                             </div>
-                        </motion.div>
+                        </div>
                         <hr className="long-hr accent-orange" />
                         
-                        <ul className='checklist'>
-                            <li className='checklist-item'>Remove hidden dirt/debris with our vortex blowgun</li>
-                            <hr className='accent-orange' />
-                            <li className='checklist-item'>Steam extraction/carpet shampooing</li>
-                            <hr className='accent-orange' />
-                            <li className='checklist-item'>Door jambs cleaned</li>
-                            <hr className='accent-orange' />
-                            <li className='checklist-item'>All Leathers and plastics cleaned</li>
-                            <hr className='accent-orange' />
-                            <li className='checklist-item'>All interior windows and glass cleaned</li>
-                        </ul>
+                        <motion.ul whileInView='visible' animate='visible' initial='hidden' variants={leftParent} className='checklist'>
+                            <motion.li variants={leftChild} className='checklist-item'>Remove hidden dirt/debris with our vortex blowgun</motion.li>
+                            <motion.hr variants={leftChildDiff} className='accent-orange' />
+                            <motion.li variants={leftChild} className='checklist-item'>Steam extraction/carpet shampooing</motion.li>
+                            <motion.hr variants={leftChildDiff} className='accent-orange' />
+                            <motion.li variants={leftChild} className='checklist-item'>Door jambs cleaned</motion.li>
+                            <motion.hr variants={leftChildDiff} className='accent-orange' />
+                            <motion.li variants={leftChild} className='checklist-item'>All Leathers and plastics cleaned</motion.li>
+                            <motion.hr variants={leftChildDiff} className='accent-orange' />
+                            <motion.li variants={leftChild} className='checklist-item'>All interior windows and glass cleaned</motion.li>
+                        </motion.ul>
 
                         <hr className="long-hr accent-orange" />
                         <div className='popular-link-container'>
