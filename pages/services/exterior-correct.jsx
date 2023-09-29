@@ -50,7 +50,7 @@ export default function ExteriorCorrect() {
       <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2bd5c3dd-6677-466a-e348-8495945c4700/cover')`}}></div>
       <div className="servicepage-header">
         <div>
-          <h1><span className='accent-purple bold'>Exterior Correct and Protect</span></h1>
+          <h1><span className='accent-purple bold text-shadow'>Exterior Correct and Protect</span></h1>
           <h2 className='page-subheading'>The best of our Decon Wash and Seal and Shine packages, plus an in depth paint correction and 5 year ceramic coating.</h2>
           <div className='header-buttons'>
             <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</a>
@@ -69,10 +69,10 @@ export default function ExteriorCorrect() {
               <h2 style={{marginBottom: 0}} className='text-large'>Exterior Correct and Protect</h2>
               <hr style={{margin: '0 auto 3rem auto'}} />
               <div className="service-explain">
-                <p>CHANGE THESE LATER!!!! The goal of the Full Interior Cleaning package is to restore your interior to its best condition. Your carpet, seats, floor mats, plastics, windows, and all other interior fixtures will be meticulously cleaned.</p>
-                <p>Bring up something about the tire cleaning process here</p>
-                <p>Bring up what Correct and Protect even means somewhere in here too</p>
-                <p>Is your whole car a mess, inside and out? Simply book an interior and exterior service, we'll do the hard work to get your car back to 100%! Check out our exterior offers <a href="/services/exterior" className='aside-link'>here</a>.</p>
+                <p>This is our top of the line exterior service. If you want to remove the swirls and scratches in your paint from years of wear and damage then this is the service for you. On top of that we apply a 5 year coating which will protect your vehicle for years to come.</p>
+                <p><span className='special-package'>Note:</span> This is one of the services that we require you to bring and drop off your car for, most likely overnight as the ceramic coating has a cure time before it's ready to be exposed to the elements. Also our shop has proper lighting to ensure that we don't miss any spots on the paint.</p>
+                <p>Proper maintenance is vital to keep your coating in good condition. This is why we give you a bottle of IGL Enhancer to use after you wash your car from now on. We offer maintenance services if you want feel free to let us know! If you wan a more DIY solution then we've got a list of products and steps that we recommend <a href="/products/ceramic-coating" className='aside-link'>here</a>.</p>
+                <p>If you want the full experience make sure to book a <a href="/services/interior" className='aside-link'>Full Interior</a> detail as well! It's only one extra step for you, but it will completely revamp your interior!</p>
               </div>
             </main>
             <br className='extra-space' />

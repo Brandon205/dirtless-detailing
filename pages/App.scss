@@ -37,6 +37,10 @@ $accent-purple: #6741d9;
   box-shadow: 0 1px 8px rgba(255, 255, 255, 0.2);
 }
 
+@mixin textShadow {
+  text-shadow: 1px 3px 5px black;
+}
+
 *,
 *::before,
 *::after {
@@ -721,7 +725,7 @@ option {
   cursor: pointer;
   font-weight: 600;
   font-size: 1.25em;
-  text-shadow: 1px 3px 5px black
+  @include textShadow;
 }
 
 .label-container {
@@ -1012,7 +1016,7 @@ option {
     margin: 0 auto;
     font-family: 'Titillium Web', sans-serif;
     font-size: 2em;
-    text-shadow: 1px 4px 5px #00000083;
+    @include textShadow;
   }
 
   div {
@@ -1039,7 +1043,7 @@ option {
   display: block;
   color: $secondary-text-light;
   padding-left: 1rem;
-  text-shadow: 1px 4px 5px #00000083;
+  @include textShadow;
 }
 
 .choose-package:hover {
@@ -2285,7 +2289,7 @@ footer {
   hyphens: manual;
   padding: 0 0 2.5rem 0;
   padding-bottom: 0;
-  text-shadow: 1px 4px 7px black;
+  @include textShadow;
 }
 
 .additions-container {
@@ -2803,7 +2807,7 @@ footer {
 }
 
 .text-shadow {
-  text-shadow: 1px 4px 7px #000;
+  @include textShadow;
 }
 
 .text-left {

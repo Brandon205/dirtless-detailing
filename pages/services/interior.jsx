@@ -13,7 +13,7 @@ export default function FullIntEx() {
         <Metatags
           title='Full Interior Cleaning | Dirt-Less Detailing'
           description='Our Full Interior cleaning is our most sought after service, and for good reason, it will completely renew your cars interior!'
-          image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/270a9710-a253-4522-ff8a-691ad0cb2d00/public'
+          image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/public'
           canonical='/services/interior'
         />
         <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
@@ -23,7 +23,7 @@ export default function FullIntEx() {
             "name": "Full Interior Cleaning",
             "brand": "Dirt-Less Detailing",
             "description": "Get your car's interior looking brand new with our full interior detailing service. We offer thorough cleaning and conditioning of all surfaces, including the dashboard, seats, and carpets. Contact us to schedule your appointment today.",
-            "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/270a9710-a253-4522-ff8a-691ad0cb2d00/public",
+            "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/public",
             "url": "https://www.dirtlessdetailing.com/services/interior/",
             "offers": {
               "@type": "Offer",
@@ -47,10 +47,10 @@ export default function FullIntEx() {
           }`,
         }} />
       </Head>
-      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/270a9710-a253-4522-ff8a-691ad0cb2d00/cover')`}}></div>
+      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/cover')`}}></div>
       <div className="servicepage-header">
         <div>
-          <h1><span className='accent-orange bold'>Full Interior Cleaning</span></h1>
+          <h1><span className='accent-orange bold text-shadow'>Full Interior Cleaning</span></h1>
           <h2 className='page-subheading'>Our easy and hassle-free Interior Cleaning Service.</h2>
           <div className='header-buttons'>
             <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</a>

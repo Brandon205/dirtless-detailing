@@ -50,7 +50,7 @@ export default function InteriorSpill() {
       <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/cover')`}}></div>
       <div className="servicepage-header">
         <div>
-          <h1><span className='accent-blue bold'>Full Interior + Spill Guard</span></h1>
+          <h1><span className='accent-blue bold text-shadow'>Full Interior + Spill Guard</span></h1>
           <h2 className='page-subheading'>Our highly rated interior service topped with an interior ceramic coating.</h2>
           <div className='header-buttons'>
             <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</a>

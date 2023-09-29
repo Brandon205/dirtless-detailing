@@ -50,7 +50,7 @@ export default function Exterior() {
       <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/da3f5734-319b-4301-43c9-7af958fd5600/cover')`}}></div>
       <div className="servicepage-header">
         <div>
-          <h1><span className='accent-orange bold'>Exterior Decon Wash</span></h1>
+          <h1><span className='accent-orange bold text-shadow'>Exterior Decon Wash</span></h1>
           <h2 className='page-subheading'>Get a complete car wash, down to even the smallest dots of tar removed.</h2>
           <div className='header-buttons'>
             <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</a>
@@ -69,10 +69,10 @@ export default function Exterior() {
               <h2 style={{marginBottom: 0}} className='text-large'>Exterior Decon Wash</h2>
               <hr style={{margin: '0 auto 3rem auto'}} />
               <div className="service-explain">
-                <p>CHANGE THESE LATER!!!! The goal of the Full Interior Cleaning package is to restore your interior to its best condition. Your carpet, seats, floor mats, plastics, windows, and all other interior fixtures will be meticulously cleaned.</p>
-                <p>Bring up something about the tire cleaning process here</p>
-                <p>Bring up what decon wash even means somewhere in here too</p>
-                <p>Is your whole car a mess, inside and out? Simply book an interior and exterior service, we'll do the hard work to get your car back to 100%! Check out our exterior offers <a href="/services/exterior" className='aside-link'>here</a>.</p>
+                <p>This is our base wash service, designed to give the outside of your vehicle a thorough cleaning and even top it off with a 3 month ceramic spray to protect it for some time to come.</p>
+                <p>Wheels and tires can easily be one of the dirtiest parts of a car without you even realizing it, and brake dust is no joke once it's been on there for a while. That's why we have a wide array of chemicals and products to best clean even the dirtiest wheels.</p>
+                <p>In our Decon Wash our goal is not to just give your car a quick mitt wash and call it good, we want to make sure that the paint itself it even clean. A Decon Wash is what your car needs to remove all contaminants including Iron, Tar, and road film.</p>
+                <p>And while we're at it, how's the interior of your car doing? We'd be more than happy to clean it out as well, no matter the condition! Check out our interior offers <a href="/services/interior" className='aside-link'>here</a>.</p>
               </div>
             </main>
             <br className='extra-space' />

@@ -50,7 +50,7 @@ export default function ExteriorSeal() {
       <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/cover')`}}></div>
       <div className="servicepage-header">
         <div>
-          <h1><span className='accent-blue bold'>Exterior Seal and Shine</span></h1>
+          <h1><span className='accent-blue bold text-shadow'>Exterior Seal and Shine</span></h1>
           <h2 className='page-subheading'>Our tried and true wash with a corrective polish, and even stronger Ceramic Spray coating.</h2>
           <div className='header-buttons'>
             <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</a>
@@ -69,10 +69,10 @@ export default function ExteriorSeal() {
               <h2 style={{marginBottom: 0}} className='text-large'>Exterior Seal and Shine</h2>
               <hr style={{margin: '0 auto 3rem auto'}} />
               <div className="service-explain">
-                <p>CHANGE THESE LATER!!!! The goal of the Full Interior Cleaning package is to restore your interior to its best condition. Your carpet, seats, floor mats, plastics, windows, and all other interior fixtures will be meticulously cleaned.</p>
-                <p>Bring up something about the tire cleaning process here</p>
-                <p>Bring up what Seal and Shine even means somewhere in here too</p>
-                <p>Is your whole car a mess, inside and out? Simply book an interior and exterior service, we'll do the hard work to get your car back to 100%! Check out our exterior offers <a href="/services/exterior" className='aside-link'>here</a>.</p>
+                <p>This service comes with everything from our base tier Wash Service, including the deep wheel cleaning and decon wash. However it adds steps after those that will truely transform your vehicles paint.</p>
+                <p>The "Seal" part of this service comes from a product made by IGL which we polish onto the paint restoring the shine while removing scratches. Wiping down the vehicle with IGL Premier ensures an unmatched shine and protection.</p>
+                <p>Drive confidently year-round with our Exterior Seal and Shine service, combining the power of a thorough decontamination wash, precision polishing, and IGL Premier coating, ensuring your car remains protected and shines like it just rolled off the showroom floor.</p>
+                <p>Now's the perfect time to book a interior cleaning as well if you need it. Check out our current offers and pricing on our base interior service <a href="/services/interior" className='aside-link'>here</a>.</p>
               </div>
             </main>
             <br className='extra-space' />
