@@ -159,8 +159,8 @@ export default function ExteriorSeal() {
             <h3 className='pricing__heading'>Clean, Shiny, and Protected.</h3>
             <p className='pricing__subtext'>With light scratches removed and a year of protection applied your car will shine like never before!</p>
             <div style={{display: 'grid', marginBottom: '10vh'}} className='place-center'>
-              <div className='slider-container'>
-                <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b814f739-3846-4796-3093-c34675a32c00/public')`}} className='slider-img'></div>
+              <div style={{overflow: 'hidden'}} className='slider-container'>
+                <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b814f739-3846-4796-3093-c34675a32c00/public')`, transform: 'scale(1.35)'}} className='slider-img'></div>
                 <div style={{width: slide + '%', backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4d98c1bc-645c-46fa-2232-d1f735bb2300/public')`}} className='slider-img foreground'></div>
                 <input type="range" min="1" max="100" value={slide} onChange={(e) => setSlide(Number(e.target.value))} className="slider-bar" name='slider' id="slider" />
                 <div style={{left: slide - 4 + '%'}} className="slider-button"></div>
