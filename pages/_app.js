@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
 import 'react-toastify/dist/ReactToastify.css';
+import { motion, AnimatePresence } from 'framer-motion';
 import './App.scss';
 
 export default function MyApp({ Component, pageProps }) {
@@ -27,6 +28,16 @@ export default function MyApp({ Component, pageProps }) {
 
 
     }, [])
+
+    useEffect(() => {
+        if (nav === 'block') {
+            setServices(true)
+            setGallery(true)
+        } else {
+            setServices(false)
+            setGallery(false)
+        }
+    }, [nav])
 
     let handleScroll = () => {
         const pos = window.pageYOffset;
@@ -58,6 +69,21 @@ export default function MyApp({ Component, pageProps }) {
         }
     }
 
+    const navParent = {
+        open: { opacity: 1 },
+        closed: { opacity: 0 }
+    }
+
+    const navChild = {
+        open: { x: 0, opacity: 1 },
+        closed: { x: '-8%', opacity: 0 }
+    }
+
+    const navChildDiff = {
+        open: { x: 0, opacity: 1 },
+        closed: { x: '8%', opacity: 0 }
+    }
+
     return (
         <div className="App">
             <Head>
@@ -85,54 +111,61 @@ export default function MyApp({ Component, pageProps }) {
                             </li>
 
                             <li style={{ position: 'relative' }}>
-                                <div className='menu-li' onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('services')}><a href="#" className='menu-link no-click'>All Services <img src='../assets/icons/downArrow.png' alt='down caret' className='icon-20' /></a></div>
-                                <ul className="sub-ul" onPointerEnter={() => changeNav('services')} onPointerLeave={() => changeNav('none')} style={{ opacity: smallScreen ? 1 : services ? 1 : !services ? 0 : 0, pointerEvents: smallScreen ? 'auto' : services ? 'auto' : !services ? 'none' : 'auto' }} >
-                                    <li className="nav-li">
-                                        <div>
-                                            <h4 className='sub-menu-header'>INTERIOR CLEANING SERVICES</h4>
-                                            <div className='sub-menu-div' onClick={() => setNav('none')}>
-                                                <a href="/services/interior" className='menu-link'><img src='../assets/icons/steeringWheel.png' alt='steering wheel' className='nav-icon' /> Full Interior</a>
-                                            </div>
-                                            <div className='sub-menu-div' onClick={() => setNav('none')}>
-                                                <a href="/services/interior-spill" className='menu-link'><img src='../assets/icons/carSeat.png' alt='car seat' className='nav-icon' /> Full Interior with Spill Guard</a>
-                                            </div>
-                                        </div>
+                                <div className='menu-li' onPointerEnter={() => { nav !== 'block' ? setServices(true) : null }} onPointerLeave={() => { nav !== 'block' ? setServices(false) : null }}><a href="#" className='menu-link no-click'>All Services <img src='../assets/icons/downArrow.png' alt='down caret' className='icon-20' /></a></div>
+                                <ul className="sub-ul" onPointerEnter={() => { nav !== 'block' ? setServices(true) : null }} onPointerLeave={() => { nav !== 'block' ? setServices(false) : null }} >
+                                    <AnimatePresence >
+                                        {services && (
+                                            <motion.li animate='open' initial='closed' exit='closed' transition={{ ease: "easeInOut", duration: 0.2 }} variants={navParent} className="nav-li">
+                                                <div>
+                                                    <h4 className='sub-menu-header'>INTERIOR CLEANING SERVICES</h4>
+                                                    <motion.div variants={navChild} className='sub-menu-div' onClick={() => setNav('none')}>
+                                                        <a href="/services/interior" className='menu-link'><img src='../assets/icons/steeringWheel.png' alt='steering wheel' className='nav-icon' /> Full Interior</a>
+                                                    </motion.div>
+                                                    <motion.div variants={navChildDiff} className='sub-menu-div' onClick={() => setNav('none')}>
+                                                        <a href="/services/interior-spill" className='menu-link'><img src='../assets/icons/carSeat.png' alt='car seat' className='nav-icon' /> Full Interior with Spill Guard</a>
+                                                    </motion.div>
+                                                </div>
 
-                                        <div>
-                                            <h4 className='sub-menu-header'>EXTERIOR SERVICES</h4>
-                                            <div className='sub-menu-div' onClick={() => setNav('none')}>
-                                                <a href="/services/exterior" className='menu-link'><img src='../assets/icons/soapBucket.png' alt='soap bucket' className='nav-icon' /> Exterior Wash</a>
-                                            </div>
-                                            <div className='sub-menu-div' onClick={() => setNav('none')}>
-                                                <a href="/services/exterior-seal" className='menu-link'><img src='../assets/icons/microfiber.png' alt='microfiber' className='nav-icon' /> Exterior Seal and Shine</a>
-                                            </div>
-                                            <div className='sub-menu-div' onClick={() => setNav('none')}>
-                                                <a href="/services/exterior-correct" className='menu-link'><img src='../assets/icons/polisher.png' alt='polisher' className='nav-icon' /> Exterior Correct and Protect</a>
-                                            </div>
-                                        </div>
-
-                                    </li>
+                                                <div>
+                                                    <h4 className='sub-menu-header'>EXTERIOR SERVICES</h4>
+                                                    <motion.div variants={navChildDiff} className='sub-menu-div' onClick={() => setNav('none')}>
+                                                        <a href="/services/exterior" className='menu-link'><img src='../assets/icons/soapBucket.png' alt='soap bucket' className='nav-icon' /> Exterior Wash</a>
+                                                    </motion.div>
+                                                    <motion.div variants={navChild} className='sub-menu-div' onClick={() => setNav('none')}>
+                                                        <a href="/services/exterior-seal" className='menu-link'><img src='../assets/icons/microfiber.png' alt='microfiber' className='nav-icon' /> Exterior Seal and Shine</a>
+                                                    </motion.div>
+                                                    <motion.div variants={navChildDiff} className='sub-menu-div' onClick={() => setNav('none')}>
+                                                        <a href="/services/exterior-correct" className='menu-link'><img src='../assets/icons/polisher.png' alt='polisher' className='nav-icon' /> Exterior Correct and Protect</a>
+                                                    </motion.div>
+                                                </div>
+                                            </motion.li>
+                                        )}
+                                    </AnimatePresence>
                                 </ul>
                             </li>
 
                             <li style={{ position: 'relative' }}>
-                                <div className='menu-li' onPointerEnter={() => changeNav('gallery')} onPointerLeave={() => changeNav('none')} onClick={() => changeNav('gallery')}><a href="#" className='menu-link no-click'>Galleries <img src='../assets/icons/downArrow.png' alt='down caret' className='icon-20' /></a></div>
-                                <ul className="sub-ul" onPointerEnter={() => changeNav('gallery')} onPointerLeave={() => changeNav('none')} style={{ opacity: smallScreen ? 1 : gallery ? 1 : !gallery ? 0 : 0, pointerEvents: smallScreen ? 'auto' : gallery ? 'auto' : !gallery ? 'none' : 'auto' }}>
-                                    <li className="nav-li">
-                                        <h4 className="sub-menu-header">GALLERIES</h4>
-                                        <div className='sub-menu-div' onClick={() => setNav('none')}>
-                                            <a href="/gallery/ceramic-coating-gallery" className='menu-link'><img src='../assets/icons/gallery.png' alt='gallery' className='nav-icon' /> Ceramic Coating Gallery</a>
-                                        </div>
-                                        <div className='sub-menu-div' onClick={() => setNav('none')}>
-                                            <a href="/gallery/interior-detail-gallery" className='menu-link'><img src='../assets/icons/doorAjar.png' alt='car with doors open' className='nav-icon' /> Full Interior Gallery</a>
-                                        </div>
-                                        <div className='sub-menu-div' onClick={() => setNav('none')}>
-                                            <a href="/gallery/dirtless-wash-gallery" className='menu-link'><img src='../assets/icons/bubbles.png' alt='soap bubbles' className='nav-icon' /> Dirt-Less Wash Gallery</a>
-                                        </div>
-                                        <div className='sub-menu-div' onClick={() => setNav('none')}>
-                                            <a href="/gallery/paint-correction-gallery" className='menu-link'><img src='../assets/icons/hood.png' alt='car hood' className='nav-icon' /> Paint Correction Gallery</a>
-                                        </div>
-                                    </li>
+                                <div className='menu-li' onPointerEnter={() => { nav !== 'block' ? setGallery(true) : null }} onPointerLeave={() => { nav !== 'block' ? setGallery(false) : null }}><a href="#" className='menu-link no-click'>Galleries <img src='../assets/icons/downArrow.png' alt='down caret' className='icon-20' /></a></div>
+                                <ul className="sub-ul" onPointerEnter={() => { nav !== 'block' ? setGallery(true) : null }} onPointerLeave={() => { nav !== 'block' ? setGallery(false) : null }}>
+                                    <AnimatePresence>
+                                        {gallery && (
+                                            <motion.li animate='open' initial='closed' exit='closed' transition={{ ease: "easeInOut", duration: 0.3 }} variants={navParent} className="nav-li">
+                                                <h4 className="sub-menu-header">GALLERIES</h4>
+                                                <motion.div variants={navChild} className='sub-menu-div' onClick={() => setNav('none')}>
+                                                    <a href="/gallery/ceramic-coating-gallery" className='menu-link'><img src='../assets/icons/gallery.png' alt='gallery' className='nav-icon' /> Ceramic Coating Gallery</a>
+                                                </motion.div>
+                                                <motion.div variants={navChildDiff} className='sub-menu-div' onClick={() => setNav('none')}>
+                                                    <a href="/gallery/interior-detail-gallery" className='menu-link'><img src='../assets/icons/doorAjar.png' alt='car with doors open' className='nav-icon' /> Full Interior Gallery</a>
+                                                </motion.div>
+                                                <motion.div variants={navChild} className='sub-menu-div' onClick={() => setNav('none')}>
+                                                    <a href="/gallery/dirtless-wash-gallery" className='menu-link'><img src='../assets/icons/bubbles.png' alt='soap bubbles' className='nav-icon' /> Dirt-Less Wash Gallery</a>
+                                                </motion.div>
+                                                <motion.div variants={navChildDiff} className='sub-menu-div' onClick={() => setNav('none')}>
+                                                    <a href="/gallery/paint-correction-gallery" className='menu-link'><img src='../assets/icons/hood.png' alt='car hood' className='nav-icon' /> Paint Correction Gallery</a>
+                                                </motion.div>
+                                            </motion.li>
+                                        )}
+                                    </AnimatePresence>
                                 </ul>
                             </li>
 

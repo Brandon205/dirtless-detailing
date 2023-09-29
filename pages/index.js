@@ -1,24 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Metatags from '../utils/Metatags';
-
-import PopularServices from '../utils/PopularServices';
-import OtherServices from '../utils/OtherServices';
+import { motion } from 'framer-motion';
 
 export default function Home() {
     const [screenWidth, setScreenWidth] = useState(null);
-    const [currentService, setCurrentService] = useState('popular');
 
     useEffect(() => {
         setScreenWidth(window.innerWidth);
     }, []);
-
-    let handleServiceChange = (service) => {
-        let scrollEl = document.getElementById('service-hyperlink');
-
-        scrollEl.scrollIntoView({behavior: 'smooth'});
-        setCurrentService(service);
-    }
 
     return (
         <div className="App">
@@ -112,46 +102,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                {/* <div className="general-container new-heading-container">
-                    <h2 className="new-heading new-heading-center">Our Service Categories</h2>
-                    <p className='new-heading-center'>Tap a service category below to see our current offers for that type of service!</p>
-                </div> */}
-
-                {/* <br className="extra-space" /> */}
-
-                {/* <div className="service-type-container">
-                    <div style={{boxShadow: currentService === 'popular' ? '5px 6px 10px black ' : '2px 2px 5px black', transform: currentService === 'popular' ? 'scale(1.05)' : 'none'}} className="service-type-card" onClick={() => handleServiceChange('popular')}>
-                        <img src='../assets/icons/graph.png' alt="popularity graph" className='icon-96' />
-                        <strong style={{color: currentService === 'popular' ? '#ff2600' : 'white'}}>Our Most Popular Details</strong>
-                        <p>Our bread and butter details, these are the details we perform the most often due to the high demand for them.</p>
-                    </div>
-                    <div style={{boxShadow: currentService === 'interior' ? '5px 6px 10px black' : '2px 2px 5px black', transform: currentService === 'interior' ? 'scale(1.05)' : 'none'}} className="service-type-card" onClick={() => handleServiceChange('interior')}>
-                        <img src='../assets/icons/carSeat.png' alt="car seat" className='icon-96' />
-                        <strong style={{color: currentService === 'interior' ? '#ff2600' : 'white'}}>Interior Services</strong>
-                        <p>All of our Interior services ranging from simple cleanings all the way to the most extreme Biohazard removal jobs.</p>
-                    </div>
-                    <div style={{boxShadow: currentService === 'exterior' ? '5px 6px 10px black' : '2px 2px 5px black', transform: currentService === 'exterior' ? 'scale(1.05)' : 'none'}} className="service-type-card" onClick={() => handleServiceChange('exterior')}>
-                        <img src='../assets/icons/carWash.png' alt="car wash" className='icon-96' />
-                        <strong style={{color: currentService === 'exterior' ? '#ff2600' : 'white'}}>Exterior Services</strong>
-                        <p>Every exterior service from our car washes to our most detail oriented paint correction services that will remove scratches and swirls.</p>
-                    </div>
-                    <div style={{boxShadow: currentService === 'ceramic' ? '5px 6px 10px black' : '2px 2px 5px black', transform: currentService === 'ceramic' ? 'scale(1.05)' : 'none'}} className="service-type-card" onClick={() => handleServiceChange('ceramic')}>
-                        <img src='../assets/icons/teslaX.png' alt="expensive car" className='icon-96' />
-                        <strong style={{color: currentService === 'ceramic' ? '#ff2600' : 'white'}}>Ceramic Coatings</strong>
-                        <p>Our best exterior paint protection offers! If you want you paint to look good, be protected, and shine for years to come this is the option for you.</p>
-                    </div>
-                </div> */}
-
-                {/* <br style={{margin: '1.5rem auto'}} id='service-hyperlink' />
-            
-                {currentService === 'popular' ? 
-                    <PopularServices smallScreen={screenWidth < 979} /> : ''
-                }
-                {currentService !== 'popular' ? 
-                    <OtherServices service={currentService} /> : ''
-                } */}
-
-                <div style={{margin: '1rem auto 5rem auto'}} className="general-container new-heading-container">
+                <div style={{margin: '0 auto 5rem auto'}} className="general-container new-heading-container">
                     <h2 style={{fontSize: '3rem'}} className="new-heading new-heading-center">Our Services</h2>
                     <p className='new-heading-center'>Our new simple packages make it easier than ever to book with us!</p>
                 </div>
@@ -170,13 +121,13 @@ export default function Home() {
                     </div>
                     <div className='popular-services-card'>
                         <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/907d2e8b-5d24-40bf-387e-90be139c2d00/public)` }}></div>
-                        <div className='popular-header'>
-                            <h3 className='accent-orange'>Full Interior</h3>
+                        <motion.div animate="visible" initial="hidden" variants={{ visible: {opacity: 1}, hidden: {opacity: 0} }} viewport={{ once: false }} className='popular-header'>
+                            <motion.h3 variants={{visible: { opacity: 1, x: 0 }, hidden: {opacity: 0, x: -100}}} className='accent-orange'>Full Interior</motion.h3>
                             <div>
                                 <p>Starting At:</p>
                                 <p className='popular-pricing-price'>$300</p>
                             </div>
-                        </div>
+                        </motion.div>
                         <hr className="long-hr accent-orange" />
                         
                         <ul className='checklist'>
