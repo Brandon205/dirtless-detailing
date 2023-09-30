@@ -6,15 +6,15 @@ export function SizeAndType({vehicleSize, serviceType, updateFields}) {
         <div className="form-section">
             <p className='contact-heading'>Vehicle Size/Service Info</p>
             <p style={{marginTop: '2rem'}} className="contact-heading">Vehicle Size/Classification</p>
-            <p style={{marginBottom: 0}} className="contact-subheading">Change this to match your vehicle's size to get accurate price estimates (<span className='special-package'>NOTE: </span>Changing this does reset the options below, but not the information above).</p>
+            <p style={{marginBottom: 0}} className="contact-subheading">Change this to match your vehicle's size to get accurate price estimates.</p>
             <div style={{marginTop: 0}} className='basic-info-container'>
                 <select name="vehicle size" id="vehicle size" style={{fontSize: '1.2em'}} className='text-input make-input' placeholder='Vehicle Size' value={vehicleSize} onChange={(e) => changeVehicle(e)}>
-                    <option value="0">2 Door Cars</option>
-                    <option value="1">Quarter Ton Trucks</option>
-                    <option value="2">4-Door Cars</option>
-                    <option value="3">Mid-Size SUV's</option>
-                    <option value="4">4-Door Trucks</option>
-                    <option value="5">3-Row SUV's</option>
+                    <option value="2 Door">2 Door Cars</option>
+                    <option value="Quarter Ton">Quarter Ton Trucks</option>
+                    <option value="4 Door">4-Door Cars</option>
+                    <option value="Mid Size">Mid-Size SUV's</option>
+                    <option value="Trucks">4-Door Trucks</option>
+                    <option value="3 Row">3-Row SUV's</option>
                 </select>
             </div>
             <div>

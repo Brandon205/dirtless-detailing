@@ -31,21 +31,10 @@ const INITIAL_DATA = {
 }
 
 export default function Contact() {
-    // const [gift, setGift] = useState('Myself');
-    // const [phoneNumber, setPhoneNumber] = useState('');
-
-    // const [exteriorService, setExteriorService] = useState('');
-    // const [interiorService, setInteriorService] = useState('');
-    // const [combo, setCombo] = useState('');
-    // const [exteriorAddons, setExteriorAddons] = useState([]);
-    // const [interiorAddons, setInteriorAddons] = useState([]);
     // const [dirtiness, setDirtiness] = useState('');
     // const [dogHair, setDogHair] = useState('');
-    // const [vip, setVip] = useState('');
-    // const [vehicle, setVehicle] = useState(0);
 
     const [data, setData] = useState(INITIAL_DATA);
-    const [currStep, setCurrStep] = useState(0);
     
     // State for pricing section
     const [currentPrice, setCurrentPrice] = useState(0);
@@ -57,34 +46,47 @@ export default function Contact() {
         }, 1500)
     }, [])
 
+    useEffect(() => {
+        updatePrices()
+    }, [data])
+
+    function updatePrices() {
+        console.log(data);
+    }
+
     function updateFields(fields) {
         setData(prev => {
-            console.log({...prev}, {...fields}, {...prev, ...fields})
+            if (fields.addons) { // For adding/removing addons from the addons array
+                let tempArr = [...prev.addons];
+
+                if (prev.serviceType === 'Both' && tempArr.length > 0) { // The "Both" serviceType can have both of the addons selected
+                    if (tempArr.includes(fields.addons)) {
+                        tempArr.splice(tempArr.indexOf(fields.addons), 1)
+                    } else {
+                        tempArr.push(fields.addons)
+                    }
+                } else { // If not both then only one addon can be selected
+                    if (prev.addons.includes(fields.addons)) {
+                        tempArr = []
+                    } else {
+                        tempArr = []
+                        tempArr.push(fields.addons)
+                    }
+                }
+
+                fields.addons = tempArr
+            }
+
             return { ...prev, ...fields }
         })
     }
 
-    function next() {
-        setCurrStep(i => {
-            if (i >= steps.length - 1) return i;
-            return i + 1;
-        })
-    }
-
-    function back() {
-        setCurrStep(i => {
-            if (i <= 0) return i;
-            return i - 1;
-        })
-    }
-
-    const { steps, currentStepIndex, step, isFirstStep, isLastStep } =
+    const { steps, currentStepIndex, step, isFirstStep, isLastStep, next, back } =
     useMultistepForm([
         <SizeAndType {...data} updateFields={updateFields} />,
         <ServiceType {...data} updateFields={updateFields} />,
         <BasicInfo {...data} updateFields={updateFields} />,
-    ], currStep)
-
+    ])
 
     // let formRef = useRef();
 
@@ -187,8 +189,34 @@ export default function Contact() {
 
     function formSubmit(e) {
         e.preventDefault();
-        if (!isLastStep) return next();
+        if (!isLastStep) {
+            if (currentStepIndex === 0 && data.serviceType.length === 0) {
+                return toast.error('Please select a service type!', {
+                    position: "bottom-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined
+                })
+            } else if (currentStepIndex === 1 && data.interior === "" && data.exterior === "" ) {
+                return toast.error('Please select a service!', {
+                    position: "bottom-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined
+                })
+            } else {
+                return next();
+            }
+            return next();
+        };
         alert("Successful submit!!!")
+        console.log(data)
     }
 
     // const finalSubmit = (formData, e) => {
@@ -233,7 +261,6 @@ export default function Contact() {
     //         })
     //     });
     // }
-
 
     return (
         <section className="contact-container" id="contact">
@@ -294,18 +321,19 @@ export default function Contact() {
             <div className='contact-container-right'>
                 <h2>Or Reach Out to Us By Filling Out Our Form:</h2>
                 <p className='contact-subheading'><span className='special-package'>Note: </span>The Pricing Estimate below is approximate and some services are hourly or based on vehicle condition. Final prices may vary slightly.</p>
-                <p>{currentStepIndex + 1} / {steps.length} | {currentStepIndex}</p>
+                <p>{currentStepIndex + 1} / {steps.length}</p>
                 <form className="form" id="form" onSubmit={(e) => formSubmit(e)}>
 
                     <div>
                         {step}
+                        {/* steps[currStep] */}
                     </div>
 
                     <div className="form-controls-container">
                         {!isFirstStep && (
                             <button type="button" onClick={back}>Back</button>
                             )}
-                        <button type="submit" onClick={back}>{isLastStep ? "Finish" : "Next"}</button>
+                        <button type="submit">{isLastStep ? "Finish" : "Next"}</button>
 
                     </div>
 
