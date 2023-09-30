@@ -22,12 +22,12 @@ const INITIAL_DATA = {
     make: "",
     model: "",
     gift: "Myself",
-    vehicleSize: "",
+    message: "",
     serviceType: "",
+    vehicleSize: "2 Door",
     interior: "",
     exterior: "",
     addons: [],
-    message: "",
 }
 
 export default function Contact() {
@@ -48,10 +48,28 @@ export default function Contact() {
 
     useEffect(() => {
         updatePrices()
-    }, [data])
+    }, [data.vehicleSize, data.interior, data.exterior, data.addons])
 
     function updatePrices() {
-        console.log(data);
+        let tempPrice = 0;
+        let dataArr = {interior: data.interior, exterior: data.exterior, addons: data.addons, vehicleSize: data.vehicleSize};
+
+        if (dataArr.interior.length > 0) {
+            let tempService = dataArr.interior.replace(/\s/g, '').toLowerCase()
+            tempPrice += prices[dataArr.vehicleSize].interior[tempService]
+        }
+        if (dataArr.exterior.length > 0) {
+            let tempService = dataArr.exterior.replace(/\s/g, '').toLowerCase()
+            console.log(tempService)
+            tempPrice += prices[dataArr.vehicleSize].exterior[tempService]
+        }
+        if (dataArr.addons.length > 0) {
+            dataArr.addons.forEach(addon => {
+                tempPrice += prices.addons[addon]
+            })
+        }
+
+        setCurrentPrice(tempPrice)
     }
 
     function updateFields(fields) {
@@ -211,9 +229,15 @@ export default function Contact() {
                     progress: undefined
                 })
             } else {
+                if (data.serviceType !== "Both") {
+                    if (data.serviceType === "Interior") {
+                        updateFields({exterior: ""})
+                    } else if (data.serviceType === "Exterior") {
+                        updateFields({interior: ""})
+                    }
+                }
                 return next();
             }
-            return next();
         };
         alert("Successful submit!!!")
         console.log(data)
@@ -337,7 +361,7 @@ export default function Contact() {
 
                     </div>
 
-                    {/* <div className='pricing__positioner'>
+                    <div className='pricing__positioner'>
                         <p style={{margin: 0}}>Price Estimate:</p>
                         <div className='pricing__pricecard-container'>
                             <strong style={{backgroundColor: '#c0c0c000'}} className='pricing__pricecard-pricebox'>
@@ -351,7 +375,7 @@ export default function Contact() {
                                 </span>
                             </strong>
                         </div>
-                    </div> */}
+                    </div>
 
                     {/* <div className='submit-info-container'>
                         <button type="submit" className='submit-button'>Submit Form!</button>

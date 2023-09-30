@@ -1,14 +1,14 @@
 export function SizeAndType({vehicleSize, serviceType, updateFields}) {
-    let changeVehicle = (e) => {
-        updateFields({vehicleSize: e.target.value})
-    }
+    // let changeVehicle = (e) => {
+    //     updateFields({vehicleSize: e.target.value})
+    // }
     return (
         <div className="form-section">
             <p className='contact-heading'>Vehicle Size/Service Info</p>
             <p style={{marginTop: '2rem'}} className="contact-heading">Vehicle Size/Classification</p>
             <p style={{marginBottom: 0}} className="contact-subheading">Change this to match your vehicle's size to get accurate price estimates.</p>
             <div style={{marginTop: 0}} className='basic-info-container'>
-                <select name="vehicle size" id="vehicle size" style={{fontSize: '1.2em'}} className='text-input make-input' placeholder='Vehicle Size' value={vehicleSize} onChange={(e) => changeVehicle(e)}>
+                <select name="vehicle size" id="vehicle size" style={{fontSize: '1.2em'}} className='text-input make-input' placeholder='Vehicle Size' value={vehicleSize} onChange={(e) => updateFields({vehicleSize: e.target.value})}>
                     <option value="2 Door">2 Door Cars</option>
                     <option value="Quarter Ton">Quarter Ton Trucks</option>
                     <option value="4 Door">4-Door Cars</option>
