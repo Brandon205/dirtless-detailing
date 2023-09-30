@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import PricingComponent from '../../utils/PricingComponent';
+import addons from '../../utils/Addons';
 
 export default function ExteriorSeal() {
   const [slide, setSlide] = useState(50);
@@ -172,7 +173,7 @@ export default function ExteriorSeal() {
                 <h3 className="pricing__heading"><span className='accent-blue bold'>Exterior Seal and Shine</span> Pricing</h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
-              <PricingComponent prices={[300, 300, 350, 350, 400, 400]} />
+              <PricingComponent prices={[300, 300, 350, 350, 400, 400]} addons={[addons.engine]} />
             </div>
 
           </div>

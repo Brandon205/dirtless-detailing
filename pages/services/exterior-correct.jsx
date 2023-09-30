@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import PricingComponent from '../../utils/PricingComponent';
+import addons from '../../utils/Addons';
 
 export default function ExteriorCorrect() {
   const [slide, setSlide] = useState(50);
@@ -163,7 +164,7 @@ export default function ExteriorCorrect() {
                 <h3 className="pricing__heading"><span className='accent-purple bold'>Correct and Protect</span> Pricing</h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
-              <PricingComponent prices={[1300, 1300, 1500, 1500, 1700, 1700]} />
+              <PricingComponent prices={[1300, 1300, 1500, 1500, 1700, 1700]} addons={[addons.engine]} />
             </div>
 
           </div>

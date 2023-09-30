@@ -105,105 +105,6 @@ export default function Contact() {
         <BasicInfo {...data} updateFields={updateFields} />,
     ])
 
-    // let formRef = useRef();
-
-    // const formSubmit = (e) => {
-    //     e.preventDefault();
-    //     let classification;
-    //     switch (vehicle) {
-    //         case 0:
-    //             classification = '2 Door Car';
-    //             break;
-    //         case 1:
-    //             classification = 'Quarter Ton Truck';
-    //             break;
-    //         case 2:
-    //             classification = '4 Door Car';
-    //             break;
-    //         case 3:
-    //             classification = 'Mid-Size SUV';
-    //             break;
-    //         case 4:
-    //             classification = '4 Door Truck';
-    //             break;
-    //         case 5:
-    //             classification = '3 Row SUV';
-    //             break;
-    //         default:
-    //             classification = '2 Door Car';
-    //     }
-
-    //     const formInfo = {
-    //         "Who's it for?:": gift,
-    //         "Name": e.target['name'].value,
-    //         "Email": e.target['email'].value,
-    //         "Phone": phoneNumber,
-    //         "Year": e.target['year'].value,
-    //         "Make": e.target['make'].value,
-    //         "Model": e.target['model'].value,
-    //         "Vehicle Size": classification,
-
-    //         "Exterior Service": exteriorService,
-    //         "Exterior Addons": exteriorAddons,
-    //         "Interior Service": interiorService,
-    //         "Interior Addons": interiorAddons,
-    //         "Combo": combo === 'Combo' ? 'Yes' : '',
-    //         "Dirtiness": dirtiness,
-    //         "Dog Hair": dogHair,
-    //         "VIP": vip,
-    //         "Price Estimate": currentPrice
-    //     }
-
-    //     const formData = new FormData();
-    //     Object.entries(formInfo).forEach(([key, value]) => {
-    //         if (value.length > 0) {
-    //             if (key === 'Interior Addons') {
-    //                 let addonStr = '';
-    //                 interiorAddons.forEach((item, id) => {
-    //                     if (id === 0) {
-    //                         addonStr += item;
-    //                     } else {
-    //                         addonStr += ', ' + item
-    //                     }
-    //                 })
-    //                 formData.append(key, addonStr);
-    //             } else if (key === 'Exterior Addons') {
-    //                 let addonStr = '';
-    //                 exteriorAddons.forEach((item, id) => {
-    //                     if (id === 0) {
-    //                         addonStr += item;
-    //                     } else {
-    //                         addonStr += ', ' + item
-    //                     }
-    //                 })
-    //                 formData.append(key, addonStr);
-    //             } else {
-    //                 formData.append(key, value)
-    //             }
-    //         } else if (key === 'Price Estimate') {
-    //             formData.append(key, value);
-    //         }
-    //     });
-        
-    //     if (interiorService.length > 0) {
-    //         if (dirtiness === '' || dogHair === '') {
-    //             toast.error("Please fill out the Interior Dirtiness and Dog Hair Sections.", {
-    //                 position: "bottom-center",
-    //                 autoClose: 5000,
-    //                 hideProgressBar: false,
-    //                 closeOnClick: true,
-    //                 pauseOnHover: true,
-    //                 draggable: true,
-    //                 progress: undefined
-    //             })
-    //         } else {
-    //             finalSubmit(formData, e);
-    //         }
-    //     } else if (interiorService.length === 0) {
-    //         finalSubmit(formData, e)
-    //     }
-    // };
-
     function formSubmit(e) {
         e.preventDefault();
         if (!isLastStep) {
@@ -363,7 +264,6 @@ export default function Contact() {
 
                     <div>
                         {step}
-                        {/* steps[currStep] */}
                     </div>
 
                     <div className="form-controls-container">
@@ -390,12 +290,6 @@ export default function Contact() {
                         </div>
                     </div>
 
-                    {/* <div className='submit-info-container'>
-                        <button type="submit" className='submit-button'>Submit Form!</button>
-                    </div> */}
-                    {/* <p style={{marginBottom: 0}}><span className='special-package'>NOTE: </span>The price estimate that you get here may vary from the final price especially if hourly* or conditional** options are selected, but does give a good ballpark as to what to expect!</p>
-                    <p>We will be in touch with you via text shortly after you submit the form!</p> */}
-
                 </form>
                 <ToastContainer position="bottom-center"
                     autoClose={5000}
@@ -407,30 +301,6 @@ export default function Contact() {
                     draggable
                     pauseOnHover
                 />
-
-                {/* <form style={{marginTop: 10 + 'vh'}} action="https://dirtlessdetailing.us9.list-manage.com/subscribe/post?u=752a73821b38b96d23f195a09&amp;id=d2a4976ed6&amp;f_id=00e011e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" noValidate>
-                    <div className="form-section form-top-section">
-                        <h2 style={{marginBottom: 0}}>Subscribe to us!</h2><br />
-                        <p style={{marginTop: 0}}>Get news about Dirt-Less Detailing, along with special offers, deals and tips!</p>
-
-                        <div className="mc-field-group">
-                            <label htmlFor="mce-FNAME"  className='text-input-label'>First Name<span className="special-package">*</span></label>
-                            <input type="text" value={nameVal} onChange={() => setNameVal()} name="FNAME" className="text-input" id="mce-FNAME" />
-                        </div>
-                        <div className="mc-field-group">
-                            <label htmlFor="mce-EMAIL" className='text-input-label'>Email Address<span className="special-package">*</span></label>
-                            <input type="email" value={emailVal} onChange={() => setEmailVal()} className="text-input" name="EMAIL" id="mce-EMAIL" required />
-                        </div>
-                        <div id="mce-responses" className="clear foot">
-                            <div className="response" id="mce-error-response" style={{display: 'none'}}></div>
-                            <div className="response" id="mce-success-response" style={{display: 'none'}}></div>
-                        </div>
-                        <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true">
-                            <input type="text" name="b_752a73821b38b96d23f195a09_d2a4976ed6" tabIndex="-1" />
-                        </div>
-                        <input type="submit" name="subscribe" id="mc-embedded-subscribe" className="submit-button" />
-                    </div>
-                </form> */}
             </div>
         </section>
     )

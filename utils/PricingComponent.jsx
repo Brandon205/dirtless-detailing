@@ -83,19 +83,16 @@ export default function PricingComponent({prices = props.prices, addons = [], la
                             }
                         </span>
                     </strong>
-                    {/* <p>+Desired Add-ons <img src='../assets/icons/handDown.png' className='icon-20' alt="down arrow" /></p> */}
+                    <p>+Desired Add-ons <img src='../assets/icons/handDown.png' className='icon-20' alt="down arrow" /></p>
                 </div>
             </div>
 
-            {/* <hr className="pricing__hr" /> */}
+            <hr className="pricing__hr" />
 
-            {addons.length > 0 ?
-                <div className="general-container new-heading-container">
-                    <strong className="above-heading">Add-ons</strong>
-                    <h3 className="new-heading">Get the most out of your service with these popular add-ons.</h3>
-                    <p style={{marginTop: 0, color: '#c0c0c0'}}>*Prices based on vehicle size selected above, any price ranges are determined by us based on the condition of the vehicle.</p>
-                </div> : ''
-            }
+            <div className="general-container new-heading-container">
+                <strong className="above-heading">Add-ons</strong>
+                <h3 className="new-heading">Get even more out of your service with these popular add-ons.</h3>
+            </div>
 
             <div className="pricing__addons-container">
                 {content}

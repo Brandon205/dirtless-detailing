@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import PricingComponent from '../../utils/PricingComponent';
+import addons from '../../utils/Addons';
 
 export default function FullIntEx() {
   const [slide, setSlide] = useState(50);
@@ -163,7 +164,7 @@ export default function FullIntEx() {
                 <h3 className="pricing__heading"><span className='accent-orange bold'>Full Interior</span> Pricing</h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
-              <PricingComponent prices={[300, 300, 335, 335, 375, 375]} />
+              <PricingComponent prices={[300, 300, 335, 335, 375, 375]} addons={[addons.ozone]} />
             </div>
 
           </div>
