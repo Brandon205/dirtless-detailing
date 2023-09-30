@@ -194,34 +194,6 @@ img {
   color: white
 }
 
-@keyframes serviceButton {
-  0% {
-    font-size: 1.5rem;
-    padding: 0.6rem
-  }
-
-  50% {
-    font-size: 1.8rem;
-    padding: 1rem;
-  }
-
-  100% {
-    font-size: 1.5rem;
-    padding: 0.75rem
-  }
-}
-
-.service-page-quote-btn {
-  margin: 0 2.5rem;
-  animation: 2s ease-in-out serviceButton;
-  background-color: rgba(0, 0, 0, 0);
-  color: white;
-}
-
-.service-page-quote-btn:hover {
-  background-color: $main-clr
-}
-
 .new-contact-btn {
   font-size: 1.25em;
   font-weight: 500;
@@ -2663,13 +2635,60 @@ footer {
   border-radius: 8px;
 }
 
-/*                            PRICING CARD VIP STYLING                            */
-.vip-container {
+/*                           Preview Image gallery styling                           */
+.preview-container {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 2em;
+  flex-direction: column;
+  background-color: $contact-bkg-lighter;
+  padding: 1rem
 }
+
+.preview-content {
+  color: white;
+  
+  h4 {
+    font-size: 2em;
+    text-align: left;
+  }
+
+  p {
+    text-align: left;
+  }
+}
+
+.gallery-preview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 550px;
+  cursor: pointer;
+  position: relative;
+
+  img:nth-child(1) {
+    grid-column: 1/2;
+  }
+  img:nth-child(2) {
+    grid-column: -1/2;
+  }
+  
+  img:nth-child(3) {
+    grid-column: 1/2;
+  }
+  img:nth-child(4) {
+    grid-column: -1/2;
+    transform: translate(-20px, 10px);
+  }
+}
+
+.preview-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100px;
+  border-radius: 12px;
+}
+
 
 .example-vehicle {
   padding: 1rem;

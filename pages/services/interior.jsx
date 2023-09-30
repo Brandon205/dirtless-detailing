@@ -3,9 +3,66 @@ import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import PricingComponent from '../../utils/PricingComponent';
 import addons from '../../utils/Addons';
+import { motion } from 'framer-motion';
 
 export default function FullIntEx() {
   const [slide, setSlide] = useState(50);
+
+  const parentVariation = {
+    rest: {
+      x: 0,
+      y: 0,
+    },
+    hover: {
+      x: 0,
+      y: 0,
+      transition: {
+        when: 'beforeChildren',
+        staggerChildren: 0.1
+      }
+    }
+  }
+
+  const imgVariation1 = {
+    rest: {
+      x: 0,
+      y: 0,
+    },
+    hover: {
+      x: '-10px',
+      y: '-10px',
+    }
+  }
+  const imgVariation2 = {
+    rest: {
+      x: '-40px',
+      y: '25px',
+    },
+    hover: {
+      x: '10px',
+      y: '-10px',
+    }
+  }
+  const imgVariation3 = {
+    rest: {
+      x: '20px',
+      y: '-20px',
+    },
+    hover: {
+      x: '-10px',
+      y: '10px',
+    }
+  }
+  const imgVariation4 = {
+    rest: {
+      x: '-20px',
+      y: '10px',
+    },
+    hover: {
+      x: '10px',
+      y: '10px',
+    }
+  }
 
   return (
     <section className='service-content-container'>
@@ -165,6 +222,21 @@ export default function FullIntEx() {
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
               <PricingComponent prices={[300, 300, 335, 335, 375, 375]} addons={[addons.ozone]} />
+            </div>
+
+            <div className="preview-container">
+              {/* <a href="/gallery/interior"> */}
+                <motion.a initial='rest' whileHover='hover' variants={parentVariation} href="/gallery/interior" className="gallery-preview">
+                  <motion.img variants={imgVariation1} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/907d2e8b-5d24-40bf-387e-90be139c2d00/public" alt="preview" className='preview-img' />
+                  <motion.img initial='rest' variants={imgVariation2} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/70e54f6b-a9f8-48aa-a9af-893776082400/public" alt="preview" className='preview-img' />
+                  <motion.img initial='rest' variants={imgVariation3} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/public" alt="preview" className='preview-img' />
+                  <motion.img initial='rest' variants={imgVariation4} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/74d7cbdb-782e-4a5b-dde5-ac078af06700/public" alt="preview" className='preview-img' />
+                </motion.a>
+              {/* </a> */}
+              <div className="preview-content">
+                <h4>See Examples</h4>
+                <p>Our Gallery page has a large collection of interior images including before and after pictures! Check it out <a href="/gallery/interior" className='aside-link'>here</a>.</p>
+              </div>
             </div>
 
           </div>
