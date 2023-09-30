@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import { useMultistepForm } from '../utils/UseMultistepForm';
 import { BasicInfo } from '../utils/BasicInfo';
@@ -31,10 +31,9 @@ const INITIAL_DATA = {
 }
 
 export default function Contact() {
+    const [data, setData] = useState(INITIAL_DATA);
     // const [dirtiness, setDirtiness] = useState('');
     // const [dogHair, setDogHair] = useState('');
-
-    const [data, setData] = useState(INITIAL_DATA);
     
     // State for pricing section
     const [currentPrice, setCurrentPrice] = useState(0);
@@ -60,7 +59,6 @@ export default function Contact() {
         }
         if (dataArr.exterior.length > 0) {
             let tempService = dataArr.exterior.replace(/\s/g, '').toLowerCase()
-            console.log(tempService)
             tempPrice += prices[dataArr.vehicleSize].exterior[tempService]
         }
         if (dataArr.addons.length > 0) {
@@ -76,8 +74,9 @@ export default function Contact() {
         setData(prev => {
             if (fields.addons) { // For adding/removing addons from the addons array
                 let tempArr = [...prev.addons];
-
-                if (prev.serviceType === 'Both' && tempArr.length > 0) { // The "Both" serviceType can have both of the addons selected
+                if (fields.addons === 'Delete') {
+                    tempArr = []
+                } else if (prev.serviceType === 'Both' && tempArr.length > 0) { // The "Both" serviceType can have both of the addons selected
                     if (tempArr.includes(fields.addons)) {
                         tempArr.splice(tempArr.indexOf(fields.addons), 1)
                     } else {
@@ -94,7 +93,7 @@ export default function Contact() {
 
                 fields.addons = tempArr
             }
-
+            console.log({...prev}, {...fields}, {...prev, ...fields})
             return { ...prev, ...fields }
         })
     }
@@ -232,59 +231,73 @@ export default function Contact() {
                 if (data.serviceType !== "Both") {
                     if (data.serviceType === "Interior") {
                         updateFields({exterior: ""})
+                        updateFields({addons: 'Delete'})
                     } else if (data.serviceType === "Exterior") {
                         updateFields({interior: ""})
+                        updateFields({addons: 'Delete'})
                     }
                 }
                 return next();
             }
         };
-        alert("Successful submit!!!")
-        console.log(data)
+
+        const formInfo = {
+            "Who's it for?:": data.gift,
+            "Name": data.name,
+            "Email": data.email,
+            "Phone": data.phone,
+            "Year": data.year,
+            "Make": data.make,
+            "Model": data.model,
+            "Vehicle Size": data.vehicleSize,
+
+            "Interior Service": data.interior.length > 0 ? data.interior : "None",
+            "Exterior Service": data.exterior.length > 0 ? data.exterior : "None",
+            "Addons": data.addons.toString(),
+            "Price Estimate": currentPrice
+        }
+
+        const formData = new FormData();
+        Object.entries(formInfo).forEach(([key, value]) => {
+            if (value.length > 0) {
+                formData.append(key, value)
+            }
+        });
+
+        finalSubmit(formData, e)
     }
 
-    // const finalSubmit = (formData, e) => {
-    //     console.log(formData);
-    //     fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
-    //         method: "POST",
-    //         body: formData
-    //     }).then((test) => {
-    //         toast.success("Form submitted! Expect a text response from us soon!", {
-    //             position: "bottom-center",
-    //             autoClose: 5000,
-    //             hideProgressBar: false,
-    //             closeOnClick: true,
-    //             pauseOnHover: true,
-    //             draggable: true,
-    //             progress: undefined
-    //         })
-    //         e.target.reset();
-    //         setPhoneNumber('');
-    //         setDirtiness('');
-    //         setDogHair('');
-    //         setExteriorService('');
-    //         setExteriorAddons([]);
-    //         setInteriorService('');
-    //         setInteriorAddons([]);
-    //         setCombo('');
-    //         setVip('');
-    //         setVehicle(0);
-    //         setGift('Myself');
-    //         setCurrentPrice(0);
-    //         window.scrollTo(0, 0);
+    const finalSubmit = (formData, e) => {
+        console.log(formData);
+        // fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
+        //     method: "POST",
+        //     body: formData
+        // }).then(() => {
+        //     toast.success("Form submitted! Expect a text response from us soon!", {
+        //         position: "bottom-center",
+        //         autoClose: 5000,
+        //         hideProgressBar: false,
+        //         closeOnClick: true,
+        //         pauseOnHover: true,
+        //         draggable: true,
+        //         progress: undefined
+        //     })
+        //     e.target.reset();
+        //     setData(INITIAL_DATA)
+        //     window.scrollTo(0, 0);
 
-    //     }).catch(error => {
-    //         toast.error("An error occurred, please try again." + error, {
-    //             position: "bottom-center",
-    //             autoClose: 5000,
-    //             hideProgressBar: false,
-    //             closeOnClick: true,
-    //             pauseOnHover: true,
-    //             draggable: true,
-    //             progress: undefined
-    //         })
-    //     });
-    // }
+        // }).catch(error => {
+        //     toast.error("An error occurred, please try again." + error, {
+        //         position: "bottom-center",
+        //         autoClose: 5000,
+        //         hideProgressBar: false,
+        //         closeOnClick: true,
+        //         pauseOnHover: true,
+        //         draggable: true,
+        //         progress: undefined
+        //     })
+        // });
+    }
 
     return (
         <section className="contact-container" id="contact">

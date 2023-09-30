@@ -6,7 +6,7 @@ export function ServiceType({serviceType, interior, exterior, addons, updateFiel
                 <input type="checkbox" name="interior" id="interior" value="Interior" className='radio-button' checked={interior === "Interior"} onChange={(e) => updateFields({interior: e.target.value})} />
                 <label htmlFor="interior" className='checkbox-label'>Full Interior</label>
 
-                <input type="checkbox" name="interior" id="interior-spill" value="Interior Spill" className='radio-button' checked={interior === "Interior + Spill"} onChange={(e) => updateFields({interior: e.target.value})} />
+                <input type="checkbox" name="interior" id="interior-spill" value="Interior Spill" className='radio-button' checked={interior === "Interior Spill"} onChange={(e) => updateFields({interior: e.target.value})} />
                 <label htmlFor="interior-spill" className='checkbox-label'>Interior + Spill Guard</label>
 
                 <h3>Add-ons</h3>
@@ -38,7 +38,7 @@ export function ServiceType({serviceType, interior, exterior, addons, updateFiel
                 <input type="checkbox" name="interior" id="interior" value="Interior" className='radio-button' checked={interior === "Interior"} onChange={(e) => updateFields({interior: e.target.value})} />
                 <label htmlFor="interior" className='checkbox-label'>Full Interior</label>
 
-                <input type="checkbox" name="interior" id="interior-spill" value="Interior Spill" className='radio-button' checked={interior === "Interior + Spill"} onChange={(e) => updateFields({interior: e.target.value})} />
+                <input type="checkbox" name="interior" id="interior-spill" value="Interior Spill" className='radio-button' checked={interior === "Interior Spill"} onChange={(e) => updateFields({interior: e.target.value})} />
                 <label htmlFor="interior-spill" className='checkbox-label'>Interior + Spill Guard</label>
 
                 <h3>Exterior Services (Choose one):</h3>
