@@ -1,4 +1,4 @@
-export function BasicInfo({name, email, phone, year, make, model, message, updateFields}) {
+export function BasicInfo({name, email, phone, year, make, model, gift, message, updateFields}) {
 
     function formatPhoneNumber(value) {
         // if input value is falsy eg if the user deletes the input, then just return
@@ -224,19 +224,6 @@ export function BasicInfo({name, email, phone, year, make, model, message, updat
             <div style={{ width: 100 + '%', position: 'relative', marginTop: '2rem'}}>
                 <label htmlFor="message" style={{bottom: '130px'}} className='text-input-label'>Additional Information:</label>
                 <textarea type="textarea" name="message" id='message' className='textarea' value={message} onChange={e => updateFields({ message: e.target.value })} placeholder='Do you want our mobile service or to schedule a drop off at our shop? Do you have any other questions/concerns for us?' />
-            </div>
-
-            <p style={{marginTop: '2rem'}} className="contact-heading">Vehicle Size/Classification</p>
-            <p style={{marginBottom: 0}} className="contact-subheading">Change this to match your vehicle's size to get accurate price estimates (<span className='special-package'>NOTE: </span>Changing this does reset the options below, but not the information above).</p>
-            <div style={{marginTop: 0}} className='basic-info-container'>
-                <select name="vehicle size" id="vehicle size" style={{fontSize: '1.2em'}} className='text-input make-input' placeholder='Vehicle Size' value={vehicle} onChange={(e) => changeVehicle(e)}>
-                    <option value="0">2 Door Cars</option>
-                    <option value="1">Quarter Ton Trucks</option>
-                    <option value="2">4-Door Cars</option>
-                    <option value="3">Mid-Size SUV's</option>
-                    <option value="4">4-Door Trucks</option>
-                    <option value="5">3-Row SUV's</option>
-                </select>
             </div>
 
         </div>

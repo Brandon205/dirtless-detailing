@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
-import { useMultiStepForm } from '../utils/UseMultiStepForm';
+import { useMultistepForm } from '../utils/UseMultistepForm';
 import { BasicInfo } from '../utils/BasicInfo';
 import { SizeAndType } from '../utils/SizeAndType';
 import { ServiceType } from '../utils/ServiceType';
@@ -21,6 +21,7 @@ const INITIAL_DATA = {
     year: "",
     make: "",
     model: "",
+    gift: "Myself",
     vehicleSize: "",
     serviceType: "",
     interior: "",
@@ -44,6 +45,7 @@ export default function Contact() {
     // const [vehicle, setVehicle] = useState(0);
 
     const [data, setData] = useState(INITIAL_DATA);
+    const [currStep, setCurrStep] = useState(0);
     
     // State for pricing section
     const [currentPrice, setCurrentPrice] = useState(0);
@@ -62,12 +64,27 @@ export default function Contact() {
         })
     }
 
-    const { steps, currentStepIndex, step, isFirstStep, isLastStep, back, next } =
-    useMultiStepForm([
+    function next() {
+        setCurrStep(i => {
+            if (i >= steps.length - 1) return i;
+            return i + 1;
+        })
+    }
+
+    function back() {
+        setCurrStep(i => {
+            if (i <= 0) return i;
+            return i - 1;
+        })
+    }
+
+    const { steps, currentStepIndex, step, isFirstStep, isLastStep } =
+    useMultistepForm([
         <SizeAndType {...data} updateFields={updateFields} />,
         <ServiceType {...data} updateFields={updateFields} />,
-        <BasicInfo {...data} updateFields={updateFields} />
-    ])
+        <BasicInfo {...data} updateFields={updateFields} />,
+    ], currStep)
+
 
     // let formRef = useRef();
 
@@ -277,8 +294,8 @@ export default function Contact() {
             <div className='contact-container-right'>
                 <h2>Or Reach Out to Us By Filling Out Our Form:</h2>
                 <p className='contact-subheading'><span className='special-package'>Note: </span>The Pricing Estimate below is approximate and some services are hourly or based on vehicle condition. Final prices may vary slightly.</p>
-                <p>{currentStepIndex + 1} / {steps.length}</p>
-                <form className="form" id="form" autoComplete="on" onSubmit={(e) => formSubmit(e)}>
+                <p>{currentStepIndex + 1} / {steps.length} | {currentStepIndex}</p>
+                <form className="form" id="form" onSubmit={(e) => formSubmit(e)}>
 
                     <div>
                         {step}
