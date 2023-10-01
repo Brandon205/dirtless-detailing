@@ -253,10 +253,10 @@ li span {
   list-style: none;
   padding-left: 0;
   height: 100%;
+  margin: 2rem auto;
 }
 
 .sub-ul {
-  // opacity: 0;
   list-style: none;
   padding-left: 0;
 }
@@ -270,10 +270,6 @@ li span {
   color: white;
   font-size: 1.2em;
   margin: 0;
-}
-
-.menu-li:hover {
-  opacity: 0.5;
 }
 
 .no-click {
@@ -320,12 +316,15 @@ li span {
   text-decoration: none;
   color: #c0c0c0;
   height: 100%;
-  border-bottom: 2px solid #d9d9d9;
+}
+
+.smaller-line-height {
+  line-height: 1.4;
+  margin-bottom: 1rem;
 }
 
 .menu-link:hover {
   color: $main-clr;
-  background-color: $contact-bkg;
 }
 
 .sub-menu-header {
@@ -2976,7 +2975,6 @@ footer {
 
   .menu-link {
     color: white;
-    border-bottom: none;
   }
 
   .main-title {
