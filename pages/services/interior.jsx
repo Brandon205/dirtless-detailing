@@ -138,11 +138,11 @@ export default function FullIntEx() {
               </li>
               <li className="item item-disabled">
                 <div className='step-number-container'>
-                  <h3 className='step-number'>7</h3>
+                  <h3 className='step-number' style={{border: '2px solid #aaa'}}>7</h3>
                 </div>
                 <div className='step-container'>
-                  <h4 className="step-title">Interior Spill Guard Coating</h4>
-                  <p className='step-desc'>Upgrade to our Spill Guard Service to have us apply a 1 year interior ceramic coating to all surfaces in the vehicle. This is PERFECT for cars with kids, pets, or daily coffee trips with the occasional spills as  cleaning it will now be 10x easier.</p>
+                  <h4 className="step-title">Interior Spill Guard Coating <a href="/services/interior-spill"><img src='../assets/icons/linking.png' alt='external link' className='icon-24' /></a></h4>
+                  <p className='step-desc'>Upgrade to our Spill Guard Service to have us apply a 1 year interior ceramic coating to all surfaces in the vehicle. This is PERFECT for cars with kids, pets, or daily coffee trips with the occasional spills as cleaning it will now be 10x easier. See more info <a href="/services/interior-spill" className='aside-link'>here</a>.</p>
                 </div>
               </li>
             </ol>

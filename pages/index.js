@@ -16,7 +16,7 @@ export default function Home() {
             transition: {
                 when: 'beforeChildren',
                 delay: 1,
-                staggerChildren: 0.2
+                staggerChildren: 0.5
             }
         },
         hidden: {
@@ -95,11 +95,11 @@ export default function Home() {
                     </div>
 
                     <div style={{ display: screenWidth < 979 ? 'none' : 'flex', alignItems: 'center', gap: 32 }}>
-                        <a href="https://iglcoatingsusa.com/" target="_blank" rel="noopener">
-                            <div className="header-cert" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/833088d3-ca7b-41b9-561f-21f8517f3300/public')`, width: '110px', height: '105px', }}></div>
-                        </a>
                         <a href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick" target="_blank" rel="noopener" aria-label='Dirt-Less Detailing on Better Business Bureau'>
                             <div className="header-cert" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/1f42d129-8657-4246-7297-ab33dc24c000/public')`, width: '175px', height: '100px' }}></div>
+                        </a>
+                        <a href="https://iglcoatingsusa.com/" target="_blank" rel="noopener">
+                            <div className="header-cert" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/833088d3-ca7b-41b9-561f-21f8517f3300/public')`, width: '110px', height: '105px', }}></div>
                         </a>
                     </div>
 
@@ -130,18 +130,12 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div style={{margin: '0 auto 5rem auto'}} className="general-container new-heading-container">
-                    <h2 style={{fontSize: '3rem'}} className="new-heading new-heading-center">Our Services</h2>
-                    <p className='new-heading-center'>Our new simple packages make it easier than ever to book with us!</p>
-                </div>
-
                 <div className="home-heading-container">
-                    <h2>Professional Interior Services</h2>
+                    <h2>Our Interior Services</h2>
                     <p>Transform your vehicle's interior with our premium Auto Detailing services. Experience a cleaner, fresher, and more comfortable driving environment while also enhancing the value of your vehicle. </p>
                 </div>
                 
-                <div className="otherservices-subcontainer">
-                    <div></div>
+                <div className="otherservices-subcontainer" style={{justifyContent: 'space-around'}}>
                     <div className='popular-services-card'>
                         <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/907d2e8b-5d24-40bf-387e-90be139c2d00/public)` }}></div>
                         <div className='popular-header'>
@@ -195,14 +189,12 @@ export default function Home() {
                             <a href="/services/interior-spill" className='popular-readmore-secondary'>Learn More </a>
                         </div>
                     </div>
-
-                    <div></div>
                 </div>
 
                 <br className="extra-space" />
 
                 <div className="home-heading-container">
-                    <h2>Professional Exterior Services</h2>
+                    <h2>Our Exterior Services</h2>
                     <p>
                         Whether you're looking for a quick refresh or a complete paint correction, our exterior services have you covered!
                     </p>
@@ -275,9 +267,13 @@ export default function Home() {
                         <hr className="long-hr accent-purple" />
 
                         <ul className='checklist'>
-                            <li className='checklist-item'><span className="bold">EVERYTHING</span> from our Exterior Seal and Shine Service</li>
+                            <li className='checklist-item'><span className="bold">EVERYTHING</span> from our Exterior Decon Wash Service</li>
                             <hr className="accent-purple" />
-                            <li className='checklist-item'>Our full paint correction process (Removes ALL waterspots and 85%-100% of scratching)</li>
+                            <li className='checklist-item'>Our full paint correction process (Removes ALL waterspots and 80%-90% of scratching)</li>
+                            <hr className="accent-purple" />
+                            <li className='checklist-item'>Coat and restore all trim</li>
+                            <hr className="accent-purple" />
+                            <li className='checklist-item'>Windshield Coating (you won't even need to use your wipers anymore!)</li>
                             <hr className="accent-purple" />
                             <li className='checklist-item'>Full Ceramic Coating (5 years of protection!)</li>
                         </ul>
@@ -310,7 +306,7 @@ export default function Home() {
                                 </div>
                                 <div className='google-review'>
                                     <img src='../assets/icons/star.png' alt="5 stars" className='icon-36' />
-                                    <p className='star-review'>5</p>
+                                    <p className='star-review'>5.0</p>
                                 </div>
                             </div>
                         </div>
@@ -325,7 +321,7 @@ export default function Home() {
                                 </div>
                                 <div className='google-review'>
                                     <img src='../assets/icons/star.png' alt="5 stars" className='icon-36' />
-                                    <p className='star-review'>5</p>
+                                    <p className='star-review'>5.0</p>
                                 </div>
                             </div>
                         </div>
@@ -340,7 +336,7 @@ export default function Home() {
                                 </div>
                                 <div className='google-review'>
                                     <img src='../assets/icons/star.png' alt="5 stars" className='icon-36' />
-                                    <p className='star-review'>5</p>
+                                    <p className='star-review'>5.0</p>
                                 </div>
                             </div>
                         </div>
@@ -355,7 +351,7 @@ export default function Home() {
                                 </div>
                                 <div className='google-review'>
                                     <img src='../assets/icons/star.png' alt="5 stars" className='icon-36' />
-                                    <p className='star-review'>5</p>
+                                    <p className='star-review'>5.0</p>
                                 </div>
                             </div>
                         </div>

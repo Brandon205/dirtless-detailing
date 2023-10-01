@@ -147,11 +147,11 @@ export default function ExteriorSeal() {
               </li>
               <li className="item item-disabled">
                 <div className='step-number-container'>
-                  <h3 className='step-number'>8</h3>
+                  <h3 className='step-number' style={{border: '2px solid #aaa'}}>8</h3>
                 </div>
                 <div className='step-container'>
-                  <h4 className="step-title">All this and more!</h4>
-                  <p className='step-desc'>If you opt for our Exterior Correct and Protect package you get all of these services, a full vehicle Paint Correction (more in depth than a polish), and a 5 year Ceramic Coating, leaving you with 4 more years of protection with correct maintenance!</p>
+                  <h4 className="step-title">All this and more! <a href="/services/exterior-correct"><img src='../assets/icons/linking.png' alt='external link' className='icon-24' /></a></h4>
+                  <p className='step-desc'>If you opt for our Exterior Correct and Protect package you get all of these services, a full vehicle Paint Correction (more in depth than a polish), and a 5 year Ceramic Coating, leaving you with 4 more years of protection with correct maintenance! See more info <a href="/services/exterior-seal" className='aside-link'>here</a>.</p>
                 </div>
               </li>
             </ol>

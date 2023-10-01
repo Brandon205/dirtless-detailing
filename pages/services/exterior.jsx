@@ -138,11 +138,11 @@ export default function Exterior() {
               </li>
               <li className="item item-disabled">
                 <div className='step-number-container'>
-                  <h3 className='step-number'>7</h3>
+                  <h3 className='step-number' style={{border: '2px solid #aaa'}}>7</h3>
                 </div>
                 <div className='step-container'>
-                  <h4 className="step-title">All this and more!</h4>
-                  <p className='step-desc'>If you opt for our Exterior Seal and Shine package you get all of these services, a full vehicle polish, specialized windshield and trim coatings, and a top coating of IGL Premier, leaving you with 1 year of total protection!</p>
+                  <h4 className="step-title">All this and more! <a href="/services/exterior-seal"><img src='../assets/icons/linking.png' alt='external link' className='icon-24' /></a></h4>
+                  <p className='step-desc'>If you opt for our Exterior Seal and Shine package you get all of these services, a full vehicle polish, specialized windshield and trim coatings, and a top coating of IGL Premier, leaving you with 1 year of total protection! See more info <a href="/services/exterior-seal" className='aside-link'>here</a>.</p>
                 </div>
               </li>
             </ol>

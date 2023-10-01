@@ -11,10 +11,6 @@ $secondary-text: #aaa;
 $secondary-text-light: #c0c0c0;
 $heading-clr1: #fff;
 $link-text: #3b9eff;
-$pricing-clr: #2f9e44;
-// $accent-blue: #0b84f3;
-// $accent-orange: #fd764a;
-// $accent-purple: #6741d9;
 $accent-blue: #00c0ff;
 $accent-orange: #fab638;
 $accent-purple: #c500ff;
@@ -31,9 +27,9 @@ $accent-purple: #c500ff;
   align-items: center;
 }
 
-@mixin card-border {
+@mixin card-border($col: rgba(255, 255, 255, 0.2)) {
   border-radius: 1rem;
-  box-shadow: 0 1px 8px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 8px $col;
 }
 
 @mixin textShadow {
@@ -952,11 +948,23 @@ option {
   display: flex;
   flex-direction: column;
   position: relative;
-  @include card-border;
   width: 90%;
   max-width: 450px;
   font-size: 1.1em;
-  border-radius: 32px;
+  border-radius: 24px;
+  background-color: #2b2b2b;
+
+  &:nth-child(1) {
+    @include card-border($main-clr);
+  }
+
+  &:nth-child(2) {
+    @include card-border($accent-blue);
+  }
+
+  &:nth-child(3) {
+    @include card-border($accent-purple);
+  }
 }
 
 .popular-img {
@@ -1357,6 +1365,8 @@ option {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
   gap: 2rem;
 }
 
@@ -1813,10 +1823,11 @@ footer {
 
 .card {
   width: 80vw;
-  max-width: 500px;
+  max-width: 175px;
   padding-bottom: 56%;
   background-position: center;
   background-size: cover;
+  aspect-ratio: 9/16;
 }
 
 .card-tall {
@@ -1858,6 +1869,7 @@ footer {
   }
 
   .card {
+    max-width: 250px;
     border-radius: 1rem;
   }
 
@@ -2022,7 +2034,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid white;
+  background-color: black;
+  border: 2px solid $main-clr;
   border-radius: 50%;
   text-align: center;
   width: 65px;
@@ -2284,7 +2297,7 @@ footer {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  color: $pricing-clr;
+  color: white;
   font-family: 'Oswald', sans-serif;
   font-size: 2em;
   font-weight: bold;
