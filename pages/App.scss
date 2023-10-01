@@ -182,7 +182,7 @@ img {
 }
 
 .btn-secondary {
-  background-color: $accent-blue;
+  background-color: $contact-bkg-lighter;
 }
 
 .main-quote-btn {
@@ -3597,10 +3597,6 @@ footer {
     gap: 4rem
   }
 
-  // .popular-readmore {
-  //   max-width: 200px;
-  // }
-
   .extra-space {
     margin: 3rem auto
   }
@@ -3616,12 +3612,15 @@ footer {
 
 .accent-blue {
   color: $accent-blue;
+  border-color: $accent-blue;
 }
 
 .accent-orange {
   color: $accent-orange;
+  border-color: $accent-orange;
 }
 
 .accent-purple {
   color: $accent-purple;
+  border-color: $accent-purple;
 }
