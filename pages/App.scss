@@ -3097,6 +3097,16 @@ footer {
     font-size: 1.5em;
   }
 
+  // Preview image styling
+
+  .preview-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 7%;
+    padding: 2rem 2rem 5rem 2rem;
+    margin: 0 auto;
+  }
+
   .cleaning-process-title {
     margin-top: 15vh;
   }

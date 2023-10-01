@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import PricingComponent from '../../utils/PricingComponent';
+import animationVariations from '../../utils/animationVariations';
+import { motion } from 'framer-motion';
 import addons from '../../utils/Addons';
 
 export default function Exterior() {
@@ -165,6 +167,19 @@ export default function Exterior() {
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
               <PricingComponent prices={[100, 100, 125, 125, 150, 150]} addons={[addons.engine]} />
+            </div>
+
+            <div className="preview-container">
+              <motion.a initial='rest' whileHover='hover' variants={animationVariations.previewParentVariation} href="/gallery/exterior" className="gallery-preview">
+                <motion.img variants={animationVariations.imgVariation1} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5ccc928a-c036-489b-fec8-e674a9d0ae00/public" alt="preview" className='preview-img' />
+                <motion.img variants={animationVariations.imgVariation2} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c274c919-595c-4283-2d10-c5a47e569700/public" alt="preview" className='preview-img' />
+                <motion.img variants={animationVariations.imgVariation3} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6649be49-1ef8-475a-6610-695cc8619a00/public" alt="preview" className='preview-img' />
+                <motion.img variants={animationVariations.imgVariation4} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3a1a1e74-854b-4aa9-ae8e-06816ec80200/public" alt="preview" className='preview-img' />
+              </motion.a>
+              <div className="preview-content">
+                <h4>See examples of our <a href="/gallery/exterior" className='aside-link'>work <img src='../assets/icons/linking.png' style={{marginLeft: '0.5rem'}} alt='external link' className='icon-36' /></a></h4>
+                <p>Check out our exterior gallery page, showing off some of the great results we've gotten over the years! See it <a href="/gallery/exterior" className='aside-link'>here</a>.</p>
+              </div>
             </div>
 
           </div>

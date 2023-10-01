@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import PricingComponent from '../../utils/PricingComponent';
+import animationVariations from '../../utils/animationVariations';
+import { motion } from 'framer-motion';
 import addons from '../../utils/Addons';
 
 export default function InteriorSpill() {
@@ -165,6 +167,19 @@ export default function InteriorSpill() {
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
               <PricingComponent prices={[450, 450, 500, 500, 575, 575]} addons={[addons.ozone]} />
+            </div>
+
+            <div className="preview-container">
+              <motion.a initial='rest' whileHover='hover' variants={animationVariations.previewParentVariation} href="/gallery/interior" className="gallery-preview">
+                <motion.img variants={animationVariations.imgVariation1} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f6170666-70f6-487c-4db8-26125453df00/public" alt="preview" className='preview-img' />
+                <motion.img variants={animationVariations.imgVariation2} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5cba81f3-c606-430c-4d2b-4b90409ed600/public" alt="preview" className='preview-img' />
+                <motion.img variants={animationVariations.imgVariation3} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a196c77-cb1a-42f9-479b-8fdbe3c14500/public" alt="preview" className='preview-img' />
+                <motion.img variants={animationVariations.imgVariation4} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/878bae8f-0568-46c7-ba04-9a1025e24300/public" alt="preview" className='preview-img' />
+              </motion.a>
+              <div className="preview-content">
+                <h4>See examples of our interior <a href="/gallery/interior" className='aside-link'>work <img src='../assets/icons/linking.png' style={{marginLeft: '0.5rem'}} alt='external link' className='icon-36' /></a></h4>
+                <p>Our interior gallery page has a large collection of interior images including before and after pictures! Check it out <a href="/gallery/interior" className='aside-link'>here</a>.</p>
+              </div>
             </div>
 
           </div>

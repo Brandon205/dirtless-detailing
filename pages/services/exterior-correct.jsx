@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import PricingComponent from '../../utils/PricingComponent';
+import animationVariations from '../../utils/animationVariations';
+import { motion } from 'framer-motion';
 import addons from '../../utils/Addons';
 
 export default function ExteriorCorrect() {
@@ -165,6 +167,19 @@ export default function ExteriorCorrect() {
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
               <PricingComponent prices={[1300, 1300, 1500, 1500, 1700, 1700]} addons={[addons.engine]} />
+            </div>
+
+            <div className="preview-container">
+              <motion.a initial='rest' whileHover='hover' variants={animationVariations.previewParentVariation} href="/gallery/exterior-correct" className="gallery-preview">
+                <motion.img variants={animationVariations.imgVariation1} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/38857e90-6d35-4abe-b7de-d3934d621800/public" alt="preview" className='preview-img' />
+                <motion.img variants={animationVariations.imgVariation2} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a7cc8a20-819f-4ef2-8b36-d41dc99bc200/public" alt="preview" className='preview-img' />
+                <motion.img variants={animationVariations.imgVariation3} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/43a02c30-4982-435d-7f91-6d81fd11a000/public" alt="preview" className='preview-img' />
+                <motion.img variants={animationVariations.imgVariation4} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2bd5c3dd-6677-466a-e348-8495945c4700/public" alt="preview" className='preview-img' />
+              </motion.a>
+              <div className="preview-content">
+                <h4>See examples of our <a href="/gallery/exterior-correct" className='aside-link'>work <img src='../assets/icons/linking.png' style={{marginLeft: '0.5rem'}} alt='external link' className='icon-36' /></a></h4>
+                <p>See the stunning results that you'll get from our Correct and Protect service, water will be beading straigh off of your whole car! Check it out <a href="/gallery/exterior-correct" className='aside-link'>here</a>.</p>
+              </div>
             </div>
 
           </div>

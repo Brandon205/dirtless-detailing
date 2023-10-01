@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import PricingComponent from '../../utils/PricingComponent';
+import animationVariations from '../../utils/animationVariations';
+import { motion } from 'framer-motion';
 import addons from '../../utils/Addons';
 
 export default function ExteriorSeal() {
@@ -174,6 +176,19 @@ export default function ExteriorSeal() {
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
               <PricingComponent prices={[300, 300, 350, 350, 400, 400]} addons={[addons.engine]} />
+            </div>
+
+            <div className="preview-container">
+              <motion.a initial='rest' whileHover='hover' variants={animationVariations.previewParentVariation} href="/gallery/exterior-seal" className="gallery-preview">
+                <motion.img variants={animationVariations.imgVariation1} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/807bb532-5e08-48ef-61d7-7b3392f2ae00/public" alt="preview" className='preview-img' />
+                <motion.img variants={animationVariations.imgVariation2} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ff2d836c-23d3-43fe-4f5c-844e5fb2a100/public" alt="preview" className='preview-img' />
+                <motion.img variants={animationVariations.imgVariation3} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ef4953cd-466a-4752-9d87-12ddba64d700/public" alt="preview" className='preview-img' />
+                <motion.img variants={animationVariations.imgVariation4} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/42bf45ce-c76d-4614-817b-7f4b5a55b200/public" alt="preview" className='preview-img' />
+              </motion.a>
+              <div className="preview-content">
+                <h4>See examples of our <a href="/gallery/exterior-seal" className='aside-link'>work <img src='../assets/icons/linking.png' style={{marginLeft: '0.5rem'}} alt='external link' className='icon-36' /></a></h4>
+                <p>Check out our exterior gallery page, showing off some of the great results we've gotten over the years! See it <a href="/gallery/exterior-seal" className='aside-link'>here</a>.</p>
+              </div>
             </div>
 
           </div>
