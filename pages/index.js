@@ -134,19 +134,14 @@ export default function Home() {
                     <h2 style={{fontSize: '3rem'}} className="new-heading new-heading-center">Our Services</h2>
                     <p className='new-heading-center'>Our new simple packages make it easier than ever to book with us!</p>
                 </div>
+
+                <div className="home-heading-container">
+                    <h2>Professional Interior Services</h2>
+                    <p>Transform your vehicle's interior with our premium Auto Detailing services. Experience a cleaner, fresher, and more comfortable driving environment while also enhancing the value of your vehicle. </p>
+                </div>
                 
                 <div className="otherservices-subcontainer">
-                    <div className="interior-heading">
-                        <h2>Professional Interior Services</h2>
-                        <p>
-                            Transform your vehicle's interior with our premium Auto Detailing services. Experience a cleaner, 
-                            fresher, and more comfortable driving environment while also enhancing the value of your vehicle. 
-                        </p>
-                        <p>
-                            Our comprehensive interior detailing packages are designed to rejuvenate your car's interior, from 
-                            extracting all fabrics to protecting the surfaces against any spills.
-                        </p>
-                    </div>
+                    <div></div>
                     <div className='popular-services-card'>
                         <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/907d2e8b-5d24-40bf-387e-90be139c2d00/public)` }}></div>
                         <div className='popular-header'>
@@ -200,6 +195,8 @@ export default function Home() {
                             <a href="/services/interior-spill" className='popular-readmore-secondary'>Learn More </a>
                         </div>
                     </div>
+
+                    <div></div>
                 </div>
 
                 <br className="extra-space" />

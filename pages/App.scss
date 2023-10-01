@@ -12,9 +12,12 @@ $secondary-text-light: #c0c0c0;
 $heading-clr1: #fff;
 $link-text: #3b9eff;
 $pricing-clr: #2f9e44;
-$accent-blue: #0b84f3;
-$accent-orange: #fd764a;
-$accent-purple: #6741d9;
+// $accent-blue: #0b84f3;
+// $accent-orange: #fd764a;
+// $accent-purple: #6741d9;
+$accent-blue: #00c0ff;
+$accent-orange: #fab638;
+$accent-purple: #c500ff;
 
 @mixin justify-center {
   display: flex;
