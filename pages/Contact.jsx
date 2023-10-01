@@ -261,18 +261,18 @@ export default function Contact() {
             <div className='contact-container-right'>
                 <h2>Or Reach Out to Us By Filling Out Our Form:</h2>
                 <p className='contact-subheading'><span className='special-package'>Note: </span>The Pricing Estimate below is approximate and some services are hourly or based on vehicle condition. Final prices may vary slightly.</p>
-                <p>{currentStepIndex + 1} / {steps.length}</p>
                 <form className="form" id="form" onSubmit={(e) => formSubmit(e)}>
 
                     <div>
+                        <p style={{position: 'absolute', padding: '0.5rem 0 0 1rem'}}>{currentStepIndex + 1} / {steps.length}</p>
                         {step}
                     </div>
 
                     <div className="form-controls-container">
                         {!isFirstStep && (
-                            <button type="button" onClick={back}>Back</button>
+                            <button type="button" className="form-btn" onClick={back}>Back</button>
                             )}
-                        <button type="submit">{isLastStep ? "Finish" : "Next"}</button>
+                        <button type="submit" className="form-btn">{isLastStep ? "Finish" : "Next"}</button>
 
                     </div>
 

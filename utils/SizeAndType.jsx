@@ -1,11 +1,7 @@
 export function SizeAndType({vehicleSize, serviceType, updateFields}) {
-    // let changeVehicle = (e) => {
-    //     updateFields({vehicleSize: e.target.value})
-    // }
     return (
         <div className="form-section">
-            <p className='contact-heading'>Vehicle Size/Service Info</p>
-            <p style={{marginTop: '2rem'}} className="contact-heading">Vehicle Size/Classification</p>
+            <p className='contact-heading'>Vehicle Size<span className='special-package'>*</span></p>
             <p style={{marginBottom: 0}} className="contact-subheading">Change this to match your vehicle's size to get accurate price estimates.</p>
             <div style={{marginTop: 0}} className='basic-info-container'>
                 <select name="vehicle size" id="vehicle size" style={{fontSize: '1.2em'}} className='text-input make-input' placeholder='Vehicle Size' value={vehicleSize} onChange={(e) => updateFields({vehicleSize: e.target.value})}>
@@ -17,6 +13,9 @@ export function SizeAndType({vehicleSize, serviceType, updateFields}) {
                     <option value="3 Row">3-Row SUV's</option>
                 </select>
             </div>
+
+            <p className='contact-heading'>Service Type<span className='special-package'>*</span></p>
+            <p style={{marginBottom: '1rem'}} className="contact-subheading">Choose one service type to get started.</p>
             <div>
                 <input type="checkbox" name="service" id="interior" value="Interior" className='radio-button' checked={serviceType === 'Interior'} onChange={(e) => updateFields({serviceType: e.target.value})} />
                 <label htmlFor="interior" className='checkbox-label'>Interior Service</label>
