@@ -7,6 +7,7 @@ const addons = {
     },
     'engine': {
         name: 'Engine Bay Cleaning',
+        icon: 'engine',
         desc: "We will cover sensitive/electronic areas in the bay, clean and wash, then dress the engine bay to have it looking like new!",
         cost: ['75', '75', '75', '75', '75', '75']
     }

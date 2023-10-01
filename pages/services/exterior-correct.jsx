@@ -178,8 +178,28 @@ export default function ExteriorCorrect() {
               </motion.a>
               <div className="preview-content">
                 <h4>See examples of our <a href="/gallery/exterior-correct" className='aside-link'>work <img src='../assets/icons/linking.png' style={{marginLeft: '0.5rem'}} alt='external link' className='icon-36' /></a></h4>
-                <p>See the stunning results that you'll get from our Correct and Protect service, water will be beading straigh off of your whole car! Check it out <a href="/gallery/exterior-correct" className='aside-link'>here</a>.</p>
+                <p>See the stunning results that you'll get from our Correct and Protect service, water will be beading straight off of your whole car! Check it out <a href="/gallery/exterior-correct" className='aside-link'>here</a>.</p>
               </div>
+            </div>
+
+            <div id='faq' style={{width: '90%', margin: '0 auto', paddingTop: '2rem'}}>
+              <div className="new-heading-container text-white">
+                <strong className="above-heading">FAQ</strong>
+                <h3 className="new-heading">Answers for the most commonly asked Ceramic Coating Questions.</h3>
+              </div>
+              <ul className='faq-ul text-white'>
+                <li className='faq-li'>How long does it last?</li>
+                <li className='faq-p'>The paint coating should last 2-5 years, 50,000 miles, or a Lifetime<span className='special-package'>*</span> with our warranty. The coating on any trim, glass, lights, or wheels will last approximately 1 year.</li>
+
+                <li className='faq-li'>Can I still go through car washes?</li>
+                <li className='faq-p'>To get the most longevity out of your coating you shouldn't, but if you are in need of a quick wash though we would recommend avoiding the normal ones and only going through touch-less car washes. In fact, the touch-less car washes will work better on ceramic coated vehicles because the chemicals from it will have an easier time breaking through and removing all of the dirt and grime from your car!</li>
+
+                <li className='faq-li'>How should I wash my car then?</li>
+                <li className='faq-p'>You can check out our new <a href="/products/ceramic-coating" className='aside-link'>Ceramic Coating Maintenance</a> page for a inexpensive DIY kit and washing method that's safe for your new coating! For washing your coated vehicle you have a couple of options. Or we also highly recommend either scheduling monthly maintenance through us especially if you get our Protect+ Package. </li>
+
+                <li className='faq-li'>How does the 5 year warranty work?</li>
+                <li className='faq-p'>In order to qualify for our 5 year warranty on your ceramic coating we require that you stick with us and schedule 6-month or 1-year services. This is so that we can not only clean your car but also apply enhancers and ensure your coating is still going strong. Ask us for pricing on our Maintenance services if you're interested! Typically costs run from $130 to $200, and we essentially perform our whole Exterior <a href="/services/exterior-seal" className='aside-link'>Seal and Shine</a> process on it!</li>
+              </ul>
             </div>
 
           </div>
