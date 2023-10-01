@@ -2,7 +2,6 @@ import React from 'react';
 import Head from 'next/head';
 import Metatags from '../utils/Metatags';
 
-
 export default function About() {
   return (
     <div className='App bg-contact'>
@@ -96,11 +95,13 @@ export default function About() {
       </Head>
       <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a7b4af9c-97db-42dc-3b72-452a6221aa00/cover')`}}></div>
       <div className="servicepage-header">
-        <h1>About Us/FAQ</h1>
-        <h2 className='page-subheading'>Learn a little about us, and see our most commonly asked questions here</h2>
-        <div className='header-buttons'>
-          <a href="/Contact" className='top-quote-btn'>Get a Free Quote</a>
-          <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
+        <div style={{alignItems: 'center'}}>
+          <h1><span className='accent-orange bold text-shadow'>About Us & FAQ</span></h1>
+          <h2 className='page-subheading' style={{textAlign: 'center'}}>Learn a little more about us, and get answers to our most commonly asked questions here.</h2>
+          <div className='header-buttons'>
+            <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</a>
+            <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
+          </div>
         </div>
       </div>
 
