@@ -214,11 +214,13 @@ export default function Contact() {
 
             <div className="cover" style={{backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover)`}}></div>
             <div className="servicepage-header">
-                <h1>Get In Touch</h1>
-                <h2 className='page-subheading'>Be sure to check out our new Price Estimator below for a quick free quote, or feel free to contact us with any questions!</h2>
-                <div className='header-buttons'>
-                    <a href="#form" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Get a Free Quote</a>
-                    <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
+                <div style={{alignItems: 'center'}}>
+                    <h1><span className='accent-orange bold text-shadow'>Get In Touch!</span></h1>
+                    <h2 className='page-subheading' style={{textAlign: 'center'}}>Be sure to check out our new Price Estimator below for a quick free quote, or feel free to contact us with any questions!</h2>
+                    <div className='header-buttons'>
+                        <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</a>
+                        <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
+                    </div>
                 </div>
             </div>
 
