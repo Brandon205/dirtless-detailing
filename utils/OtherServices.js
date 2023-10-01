@@ -20,7 +20,7 @@ export default function OtherServices(props) {
 
                             <div className="otherservices-links">
                                 <a href="/services/full-interior-detail" className="otherservices-readmore" aria-label='Full Interior Detailing Info'>Learn More</a>
-                                <a href="/gallery/interior-detail-gallery" className='otherservices-readmore'>See Gallery</a>
+                                <a href="/gallery/interior" className='otherservices-readmore'>See Gallery</a>
                             </div>
                         </div>
                     </div>
@@ -35,7 +35,7 @@ export default function OtherServices(props) {
 
                             <div className="otherservices-links">
                                 <a href="/services/interior-exterior-detailing-combo" className="otherservices-readmore" aria-label='Interior and Exterior Detailing Combo Info'>Learn More</a>
-                                <a href="/gallery/interior-detail-gallery" className='otherservices-readmore'>See Gallery</a>
+                                <a href="/gallery/interior" className='otherservices-readmore'>See Gallery</a>
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,7 @@ export default function OtherServices(props) {
 
                             <div className="otherservices-links">
                                 <a href="/services/biohazard-cleaning" className="otherservices-readmore" aria-label='Biohazard Cleaning Info'>Learn More</a>
-                                <a href="/gallery/interior-detail-gallery" className='otherservices-readmore'>See Gallery</a>
+                                <a href="/gallery/interior" className='otherservices-readmore'>See Gallery</a>
                             </div>
                         </div>
                     </div>
@@ -75,7 +75,7 @@ export default function OtherServices(props) {
 
                             <div className="otherservices-links">
                                 <a href="/services/dirtless-wash" className="otherservices-readmore" aria-label='Dirt-Less Wash Info'>Learn More</a>
-                                <a href="/gallery/dirtless-wash-gallery" className='otherservices-readmore'>See Gallery</a>
+                                <a href="/gallery/exterior" className='otherservices-readmore'>See Gallery</a>
                             </div>
                         </div>
                     </div>
@@ -90,7 +90,7 @@ export default function OtherServices(props) {
 
                             <div className="otherservices-links">
                                 <a href="/services/single-stage-correction" className="otherservices-readmore" aria-label='Single Stage Paint Correction Info'>Learn More</a>
-                                <a href="/gallery/paint-correction-gallery" className='otherservices-readmore'>See Gallery</a>
+                                <a href="/gallery/seal" className='otherservices-readmore'>See Gallery</a>
                             </div>
                         </div>
                     </div>
@@ -105,7 +105,7 @@ export default function OtherServices(props) {
 
                             <div className="otherservices-links">
                                 <a href="/services/two-stage-correction" className="otherservices-readmore" aria-label='Two Stage Paint Correction Info'>Learn More</a>
-                                <a href="/gallery/paint-correction-gallery" className='otherservices-readmore'>See Gallery</a>
+                                <a href="/gallery/seal" className='otherservices-readmore'>See Gallery</a>
                             </div>
                         </div>
                     </div>
@@ -130,7 +130,7 @@ export default function OtherServices(props) {
 
                             <div className="otherservices-links">
                                 <a href="/services/exterior-ceramic-coating" className="otherservices-readmore" aria-label='Protect Package Info'>Learn More</a>
-                                <a href="/gallery/ceramic-coating-gallery" className='otherservices-readmore'>See Gallery</a>
+                                <a href="/gallery/correct" className='otherservices-readmore'>See Gallery</a>
                             </div>
                         </div>
                     </div>
@@ -145,7 +145,7 @@ export default function OtherServices(props) {
 
                             <div className="otherservices-links">
                                 <a href="/services/exterior-ceramic-coating" className="otherservices-readmore" aria-label='Protect Plus Package info'>Learn More</a>
-                                <a href="/gallery/ceramic-coating-gallery" className='otherservices-readmore'>See Gallery</a>
+                                <a href="/gallery/correct" className='otherservices-readmore'>See Gallery</a>
                             </div>
                         </div>
                     </div>
@@ -160,7 +160,7 @@ export default function OtherServices(props) {
 
                             <div className="otherservices-links">
                                 <a href="/services/interior-ceramic-coating" className="otherservices-readmore" aria-label='Interior Coating Info'>Learn More</a>
-                                <a href="/gallery/ceramic-coating-gallery" className='otherservices-readmore'>See Gallery</a>
+                                <a href="/gallery/correct" className='otherservices-readmore'>See Gallery</a>
                             </div>
                         </div>
                     </div>

@@ -152,16 +152,16 @@ export default function MyApp({ Component, pageProps }) {
                                             <motion.li animate='open' initial='closed' exit='closed' transition={{ ease: "easeInOut", duration: 0.3 }} variants={navParent} className="nav-li">
                                                 <h4 className="sub-menu-header">GALLERIES</h4>
                                                 <motion.div variants={navChild} className='sub-menu-div' onClick={() => setNav('none')}>
-                                                    <a href="/gallery/ceramic-coating-gallery" className='menu-link'><img src='../assets/icons/gallery.png' alt='gallery' className='nav-icon' /> Ceramic Coating Gallery</a>
+                                                    <a href="/gallery/interior" className='menu-link'><img src='../assets/icons/doorAjar.png' alt='car with doors open' className='nav-icon' /> Full Interior Gallery</a>
                                                 </motion.div>
                                                 <motion.div variants={navChildDiff} className='sub-menu-div' onClick={() => setNav('none')}>
-                                                    <a href="/gallery/interior-detail-gallery" className='menu-link'><img src='../assets/icons/doorAjar.png' alt='car with doors open' className='nav-icon' /> Full Interior Gallery</a>
+                                                    <a href="/gallery/exterior" className='menu-link'><img src='../assets/icons/bubbles.png' alt='soap bubbles' className='nav-icon' /> Exterior Wash Gallery</a>
                                                 </motion.div>
                                                 <motion.div variants={navChild} className='sub-menu-div' onClick={() => setNav('none')}>
-                                                    <a href="/gallery/dirtless-wash-gallery" className='menu-link'><img src='../assets/icons/bubbles.png' alt='soap bubbles' className='nav-icon' /> Dirt-Less Wash Gallery</a>
+                                                    <a href="/gallery/seal" className='menu-link'><img src='../assets/icons/hood.png' alt='car hood' className='nav-icon' /> Seal & Shine Gallery</a>
                                                 </motion.div>
                                                 <motion.div variants={navChildDiff} className='sub-menu-div' onClick={() => setNav('none')}>
-                                                    <a href="/gallery/paint-correction-gallery" className='menu-link'><img src='../assets/icons/hood.png' alt='car hood' className='nav-icon' /> Paint Correction Gallery</a>
+                                                    <a href="/gallery/correct" className='menu-link'><img src='../assets/icons/gallery.png' alt='gallery' className='nav-icon' /> Correct & Protect Gallery</a>
                                                 </motion.div>
                                             </motion.li>
                                         )}

@@ -13,26 +13,22 @@ export default function CoatingGallery() {
           title='Dirt-Less Detailing | Ceramic Coating Gallery'
           description='A gallery of photos that we have taken showing off some of the vehicles that we have coated and protected!'
           image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/8c1574b9-7517-4c50-6b36-133352ab0a00/public'
-          canonical='/gallery/ceramic-coating-gallery'
+          canonical='/gallery/correct'
         />
       </Head>
       <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2bd5c3dd-6677-466a-e348-8495945c4700/cover')`}}></div>
-      <div className="servicepage-heading">
-        <h1>Ceramic Coating Gallery</h1>
-        <p>Check out the gallery below to see the results of a freshly applied IGL Ceramic Coating. Take a look at our <a href="/services/interior-ceramic-coating" className='aside-link' >Interior Coatings</a> page or our <a href="/detailing/ceramic" className='aside-link' >Ceramic Coating</a> page to learn more about these services.</p>
-
-        <div className='header-buttons'>
-          <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Get a Free Quote</a>
-          <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
+      <div className="servicepage-header" style={{transform: 'translate(7%, 10vh)'}}>
+        <div style={{alignItems: 'center'}}>
+          <h1><span className='accent-orange bold text-shadow'>Exterior Correct & Protect Gallery</span></h1>
+          <h2 className='page-subheading' style={{textAlign: 'center'}}>Check out the gallery below to see the results and capabilities of a freshly applied Ceramic Coating. Take a look at our <a href="/services/exterior-correct" className='aside-link' >Exterior Correct & Protect</a> page to learn more about this service!</h2>
+          <div className='header-buttons'>
+            <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</a>
+            <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
+          </div>
         </div>
       </div>
 
-      <div style={{width: '90vw', margin: '0 auto'}} className="service-explain text-white">
-        <div className="text-left" style={{paddingTop: '2.5rem'}}>
-          <h2 className="text-large">Ceramic Coating Before and After</h2>
-          <p>Because of the included Paint Correction service with the Ceramic Coating, you can see a difference in the paint condition before we put a ceramic coating on the vehicle.</p>
-        </div>
-      </div>
+      <br className="extra-space" />
       <div className="mini-grid">
         <Zoom>
           <div className="card card-wide" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a8430f3-90c0-4f56-1fff-88fcd3b29600/public')`}}></div>

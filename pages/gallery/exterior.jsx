@@ -14,35 +14,31 @@ export default function PaintCorrectionGallery() {
           title='Car Wash Gallery | Dirt-Less Detailing'
           description='Take a look at our showcase of our exterior wash services to get a preview of what we are capable of doing to your car, no matter the current condition!'
           image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/55dcbdac-12df-4f37-2058-f3aaf8a6b600/public'
-          canonical='/gallery/dirtless-wash-gallery'
+          canonical='/gallery/exterior'
         />
       </Head>
       <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/55dcbdac-12df-4f37-2058-f3aaf8a6b600/cover')`}}></div>
-      <div className="servicepage-heading">
-        <h1>Dirt-Less Wash Gallery</h1>
-        <p>This is a showcase of our Dirt-Less Wash service. Take a look at our <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> page for more details and pricing.</p>
-
-        <div className='header-buttons'>
-          <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Get a Free Quote</a>
-          <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
+      <div className="servicepage-header" style={{transform: 'translate(7%, 10vh)'}}>
+        <div style={{alignItems: 'center'}}>
+          <h1><span className='accent-orange bold text-shadow'>Exterior Wash Gallery</span></h1>
+          <h2 className='page-subheading' style={{textAlign: 'center'}}>This is a showcase of our Exterior Wash service. Take a look at our <a href="/services/exterior" className='aside-link'>Exterior Decon Wash</a> page for more details and pricing.</h2>
+          <div className='header-buttons'>
+            <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</a>
+            <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
+          </div>
         </div>
       </div>
 
-      <div style={{width: '90vw', margin: '0 auto'}} className="service-explain text-white">
-        <div className="text-left" style={{paddingTop: '2.5rem'}}>
-          <h2 className="text-large">Exterior Before and After photos</h2>
-          <p>Revive the Shine of Your Ride: Our Exterior Detailing Gallery showcases the stunning results of our meticulous detailing services on a wide range of vehicles.</p>
-        </div>
-      </div>
+      <br className="extra-space" />
       <div className="mini-grid">
         <Zoom>
-          <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c1f9dd58-15c4-4d33-c33d-d5c5bece0400/public')`}}></div>
+          <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3924445d-d294-4c5c-4a8f-1e608144bb00/public')`}}></div>
         </Zoom>
         <Zoom>
           <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f33cbb52-1621-49e7-7656-ba47d7ff2700/public')`}}></div>
         </Zoom>
         <Zoom>
-          <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3924445d-d294-4c5c-4a8f-1e608144bb00/public')`}}></div>
+          <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/894dc2de-4f19-4630-df46-ba533c677d00/public')`}}></div>
         </Zoom>
         <Zoom>
           <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/80c839d6-2d5c-4650-e5b1-08cc22e8cb00/public')`}}></div>
@@ -69,19 +65,19 @@ export default function PaintCorrectionGallery() {
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b5859464-3c0e-4fcf-8332-17155eb86d00/public')`}}></div>
         </Zoom>
         <Zoom>
-          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/8da33934-bc23-47f5-9b0a-2b5264566600/public')`}}></div>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6649be49-1ef8-475a-6610-695cc8619a00/public')`}}></div>
         </Zoom>
         <Zoom>
-          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/25415411-9612-4dcc-0b93-9d577a42f400/public')`}}></div>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/196dd0db-52b4-4ece-8e28-47723f548b00/public')`}}></div>
         </Zoom>
         <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e7077cc3-0548-4eea-4846-c76ee44d2200/public')`}}></div>
         </Zoom>
         <Zoom>
-          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5c7fc46a-ada8-4ee1-a95f-3faaf47ded00/public')`}}></div>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/9137fff7-f82e-4335-cba8-cc069f79d000/public')`}}></div>
         </Zoom>
         <Zoom>
-          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/df5ba5d7-e0e6-4868-ec67-6fcdcfbf3900/public')`}}></div>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e4f03bb9-3976-4e00-e94d-89ee3a375f00/public')`}}></div>
         </Zoom>
         <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b814f739-3846-4796-3093-c34675a32c00/public')`}}></div>
@@ -96,7 +92,7 @@ export default function PaintCorrectionGallery() {
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b380fa7c-bc37-4936-3090-e699be40c300/public')`}}></div>
         </Zoom>
         <Zoom>
-          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2b512f99-95ee-41b6-e409-f263be54aa00/public')`}}></div>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/eafb50f4-8027-4c5b-8f25-8a3f4e68bd00/public')`}}></div>
         </Zoom>
         <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/de7d3d63-8a46-4909-181f-7e3560be1d00/public')`}}></div>
@@ -114,7 +110,7 @@ export default function PaintCorrectionGallery() {
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/19226e28-a8ae-45a7-4743-1dd8b11c4900/public')`}}></div>
         </Zoom>
         <Zoom>
-          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/be00dc2c-44a8-432d-2ab8-7ef901b08100/public')`}}></div>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ae28b372-25f1-498b-5a24-c05774ffb500/public')`}}></div>
         </Zoom>
         <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/1388f951-7a9b-49da-526b-39d8ccdbbe00/public')`}}></div>
@@ -267,7 +263,7 @@ export default function PaintCorrectionGallery() {
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/29eb684e-a1c5-4590-6aa1-e3bd5f7f5d00/public')`}}></div>
         </Zoom>
         <Zoom>
-          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f2fc5016-bb6c-4051-69e9-d533d51b8600/public')`}}></div>
+          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ//public')`}}></div>
         </Zoom>
         <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b94c976f-1d15-43bb-2370-2a11cae79d00/public')`}}></div>

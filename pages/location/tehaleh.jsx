@@ -183,10 +183,10 @@ export default function Tehaleh() {
                 <div className='location-gallery-container'>
                     <h3 className='text-large'>Our Gallery Pages:</h3>
                     <div>
-                        <a href="/gallery/interior-detail-gallery" className='aside-link text-medium'>Interior Cleaning Gallery</a><br />
-                        <a href="/gallery/dirtless-wash-gallery" className='aside-link text-medium'>Exterior Wash Gallery</a><br />
-                        <a href="/gallery/paint-correction-gallery" className='aside-link text-medium'>Paint Correction Gallery</a><br />
-                        <a href="/gallery/ceramic-coating-gallery" className='aside-link text-medium'>Ceramic Coating Gallery</a><br />
+                        <a href="/gallery/interior" className='aside-link text-medium'>Interior Cleaning Gallery</a><br />
+                        <a href="/gallery/exterior" className='aside-link text-medium'>Exterior Wash Gallery</a><br />
+                        <a href="/gallery/seal" className='aside-link text-medium'>Paint Correction Gallery</a><br />
+                        <a href="/gallery/correct" className='aside-link text-medium'>Ceramic Coating Gallery</a><br />
                         <a href="/gallery/engine-bay-gallery" className='aside-link text-medium'>Engine Bay Gallery</a>
                     </div>
                 </div>

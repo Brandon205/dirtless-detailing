@@ -13,26 +13,22 @@ export default function PaintCorrectionGallery() {
           title='Paint Correction Gallery | Dirt-Less Detailing'
           description='Paint Correction Photos • Here are some examples from both our Single and Two Stage Paint Correction services!'
           image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/dcfb9b5c-1867-4678-8ae3-2d88d1286300/public'
-          canonical='/gallery/paint-correction-gallery'
+          canonical='/gallery/seal'
         />
       </Head>
       <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/dcfb9b5c-1867-4678-8ae3-2d88d1286300/cover')`}}></div>
-      <div className="servicepage-heading">
-        <h1>Paint Correction Gallery</h1>
-        <p>Check out the gallery below to see what we can do to correct your paint problems. Take a look at our <a href='/detailing/correction' className='aside-link'>Paint Correction</a> page for more details on both of the correction services we offer.</p>
-
-        <div className='header-buttons'>
-          <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Get a Free Quote</a>
-          <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
+      <div className="servicepage-header" style={{transform: 'translate(7%, 10vh)'}}>
+        <div style={{alignItems: 'center'}}>
+          <h1><span className='accent-orange bold text-shadow'>Exterior Seal & Shine Gallery</span></h1>
+          <h2 className='page-subheading' style={{textAlign: 'center'}}>Check out the gallery below to see just what we are able to do with a simple polish and ceramic spray. Take a look at our <a href='/services/exterior-seal' className='aside-link'>Exterior Seal & Shine</a> page for more details and pricing.</h2>
+          <div className='header-buttons'>
+            <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</a>
+            <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
+          </div>
         </div>
       </div>
 
-      <div style={{width: '90vw', margin: '0 auto'}} className="service-explain text-white">
-        <div className="text-left" style={{paddingTop: '2.5rem'}}>
-          <h2 className="text-large">Paint Correction Before and After Photos</h2>
-          <p>Unveil Your Car's True Potential: Our Paint Correction Gallery displays the transformative power of our cutting-edge techniques and tools, restoring the flawless finish of even the most damaged and neglected paint jobs.</p>
-        </div>
-      </div>
+      <br className="extra-space" />
       <div className="mini-grid">
         <Zoom>
           <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/9e4d290e-ad89-4cc9-1f10-a1d37790cb00/public')`}}></div>

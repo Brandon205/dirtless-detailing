@@ -296,7 +296,7 @@ export default function correction() {
                         </Zoom>
                     </div>
                 </div>
-                <h3>See more on our <a href="/gallery/paint-correction-gallery" className='aside-link'>Paint Correction Gallery</a> page.</h3>
+                <h3>See more on our <a href="/gallery/seal" className='aside-link'>Paint Correction Gallery</a> page.</h3>
 
                 <br className="extra-space" />
 
