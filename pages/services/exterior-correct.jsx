@@ -170,15 +170,15 @@ export default function ExteriorCorrect() {
             </div>
 
             <div className="preview-container">
-              <motion.a initial='rest' whileHover='hover' variants={animationVariations.previewParentVariation} href="/gallery/exterior-correct" className="gallery-preview">
+              <motion.a initial='rest' whileHover='hover' variants={animationVariations.previewParentVariation} href="/gallery/correct" className="gallery-preview">
                 <motion.img variants={animationVariations.imgVariation1} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/38857e90-6d35-4abe-b7de-d3934d621800/public" alt="preview" className='preview-img' />
                 <motion.img variants={animationVariations.imgVariation2} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a7cc8a20-819f-4ef2-8b36-d41dc99bc200/public" alt="preview" className='preview-img' />
                 <motion.img variants={animationVariations.imgVariation3} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/43a02c30-4982-435d-7f91-6d81fd11a000/public" alt="preview" className='preview-img' />
                 <motion.img variants={animationVariations.imgVariation4} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2bd5c3dd-6677-466a-e348-8495945c4700/public" alt="preview" className='preview-img' />
               </motion.a>
               <div className="preview-content">
-                <h4>See examples of our <a href="/gallery/exterior-correct" className='aside-link'>work <img src='../assets/icons/linking.png' style={{marginLeft: '0.5rem'}} alt='external link' className='icon-36' /></a></h4>
-                <p>See the stunning results that you'll get from our Correct and Protect service, water will be beading straight off of your whole car! Check it out <a href="/gallery/exterior-correct" className='aside-link'>here</a>.</p>
+                <h4>See examples of our <a href="/gallery/correct" className='aside-link'>work <img src='../assets/icons/linking.png' style={{marginLeft: '0.5rem'}} alt='external link' className='icon-36' /></a></h4>
+                <p>See the stunning results that you'll get from our Correct and Protect service, water will be beading straight off of your whole car! Check it out <a href="/gallery/correct" className='aside-link'>here</a>.</p>
               </div>
             </div>
 
