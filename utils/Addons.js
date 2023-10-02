@@ -27,7 +27,7 @@ const addons = {
         name: 'Ozone Treatment',
         icon: 'ozone',
         desc: "Ozone treatment is the use of O3 (gas ozone) to remove bacteria, viruses, and odors from your vehicle.",
-        cost: ['100', '100', '100', '100', '100', '100']
+        cost: ['75', '75', '75', '75', '75', '75']
     },
     'claybar': {
         name: 'Clay Bar',
@@ -51,7 +51,7 @@ const addons = {
         name: 'Engine Bay Cleaning',
         icon: 'engine',
         desc: "We will cover sensitive/electronic areas in the bay, clean and wash, then dress the engine bay to have it looking like new!",
-        cost: ['80', '80', '80', '80', '80', '80']
+        cost: ['75', '75', '75', '75', '75', '75']
     },
     'debadge': {
         name: 'Debadging',

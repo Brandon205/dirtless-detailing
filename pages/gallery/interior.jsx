@@ -13,26 +13,22 @@ export default function FullIntGallery() {
           title='Full Interior Gallery | Dirt-Less Detailing'
           description="Our Full Interior Gallery shows off some of our hard work cleaning vehicle interiors. We've cleaned everything from spilled drinks to crumbs everywhere!"
           image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/213e3fa9-1def-44b2-3031-1901432b9a00/public'
-          canonical='/gallery/interior-detail-gallery'
+          canonical='/gallery/interior'
         />
       </Head>
       <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/213e3fa9-1def-44b2-3031-1901432b9a00/cover')`}}></div>
-      <div className="servicepage-heading">
-        <h1>Full Interior Cleaning Gallery</h1>
-        <p>We have cleaned it all, even the worst of interiors. Check out the Gallery below. Take a look at our <a href="/services/full-interior-detail" className='aside-link' >Full Interior Cleaning</a> page to find out more.</p>
-
-        <div className='header-buttons'>
-          <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Get a Free Quote</a>
-          <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
+      <div className="servicepage-header" style={{transform: 'translate(7%, 10vh)'}}>
+        <div style={{alignItems: 'center'}}>
+          <h1><span className='accent-orange bold text-shadow'>Full Interior Cleaning Gallery</span></h1>
+          <h2 className='page-subheading' style={{textAlign: 'center'}}>We have cleaned it all, even the worst of interiors. Check out the Gallery below. Take a look at our <a href="/services/interior" className='aside-link'>Full Interior</a> page to find out more.</h2>
+          <div className='header-buttons'>
+            <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</a>
+            <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
+          </div>
         </div>
       </div>
 
-      <div style={{width: '90vw', margin: '0 auto'}} className="service-explain text-white">
-        <div className="text-left" style={{paddingTop: '2.5rem'}}>
-          <h2 className="text-large">Interior Before and After photos</h2>
-          <p>Experience the Luxury of a Pristine Interior: Our Interior Detailing Gallery displays the incredible results of our comprehensive detailing services on the many vehicles we've worked on, highlighting our commitment to quality and attention to detail.</p>
-        </div>
-      </div>
+      <br className="extra-space" />
       <div className="mini-grid">
         <Zoom>
           <div className="card card-tall" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7e7cbef8-df97-4821-1aa4-13dd0f99d400/public')`}}></div>
@@ -68,7 +64,7 @@ export default function FullIntGallery() {
 
       <br className="extra-space" />
 
-      <h2 className="text-large text-white">More Images from our Interior Detailing Services</h2>
+      <h2 className="text-large text-white">More iamges from our <span className='accent-orange'>Full Interior</span> and <span className='accent-blue'>Full Interior + Spill Guard</span> Services</h2>
       <div className="mini-grid">
         <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/07c0720a-4281-4c16-bfb7-01fcc942d100/public')`}}></div>
@@ -338,7 +334,7 @@ export default function FullIntGallery() {
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/public')`}}></div>
         </Zoom>
       </div>
-      <h2 style={{ color: 'white' }}>Check out our <a href="/services/full-interior-detail" className='aside-link' >Full Interior Cleaning</a> page for more details!</h2>
+      <h2 style={{ color: 'white' }}>Check out our <a href="/services/interior" className='aside-link' >Full Interior Cleaning</a> page or our <a href="/services/interior-spill" className='aside-link' >Full Interior + Spill Guard </a> page for more details!</h2>
     </section>
   )
 }
