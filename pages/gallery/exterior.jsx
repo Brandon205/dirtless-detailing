@@ -20,7 +20,7 @@ export default function PaintCorrectionGallery() {
       <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/55dcbdac-12df-4f37-2058-f3aaf8a6b600/cover')`}}></div>
       <div className="servicepage-header" style={{transform: 'translate(7%, 10vh)'}}>
         <div style={{alignItems: 'center'}}>
-          <h1><span className='accent-orange bold text-shadow'>Exterior Wash Gallery</span></h1>
+          <h1><span className='accent-orange bold text-shadow'>Exterior Decon Wash Gallery</span></h1>
           <h2 className='page-subheading' style={{textAlign: 'center'}}>This is a showcase of our Exterior Wash service. Take a look at our <a href="/services/exterior" className='aside-link'>Exterior Decon Wash</a> page for more details and pricing.</h2>
           <div className='header-buttons'>
             <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</a>
@@ -50,7 +50,7 @@ export default function PaintCorrectionGallery() {
 
       <br className="extra-space" />
 
-      <h2 className="text-large text-white">More Images from our Dirt-Less Wash Service</h2>
+      <h2 className="text-large text-white">More Images from our <span className='accent-orange'>Exterior Decon Wash</span> Service</h2>
       <div className="mini-grid">
         <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5ccc928a-c036-489b-fec8-e674a9d0ae00/public')`}}></div>
@@ -263,9 +263,6 @@ export default function PaintCorrectionGallery() {
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/29eb684e-a1c5-4590-6aa1-e3bd5f7f5d00/public')`}}></div>
         </Zoom>
         <Zoom>
-          <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ//public')`}}></div>
-        </Zoom>
-        <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b94c976f-1d15-43bb-2370-2a11cae79d00/public')`}}></div>
         </Zoom>
         <Zoom>
@@ -332,7 +329,7 @@ export default function PaintCorrectionGallery() {
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b097bffc-4ed9-48c6-63ee-f1fa12f7bf00/public')`}}></div>
         </Zoom>
       </div>
-      <h2 style={{ color: 'white' }}>Check out our <a href="/services/dirtless-wash" className='aside-link'>Dirt-Less Wash</a> page for more details!</h2>
+      <h2 style={{ color: 'white' }}>Check out our <a href="/services/exterior" className='aside-link'>Exterior Decon Wash</a> page for more details!</h2>
     </section>
   )
 }

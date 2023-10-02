@@ -204,11 +204,11 @@ export default function MyApp({ Component, pageProps }) {
                 </div>
                 <div className="footer-content-card" style={{ paddingBottom: '2rem' }}>
                     <h3>SERVICES</h3>
-                    <a href="/services/interior-exterior-detailing-combo" className='footer-link'>Full Interior</a>
-                    <a href="/services/full-interior-detail" className='footer-link'>Full Interior + Spill Guard</a>
-                    <a href="/services/biohazard-cleaning" className='footer-link'>Exterior Wash</a>
-                    <a href="/services/dirtless-wash" className='footer-link'>Exterior Seal and Shine</a>
-                    <a href="/services/interior-exterior-detailing-combo" className='footer-link'>Exterior Correct and Protect</a>
+                    <a href="/services/interior" className='footer-link'>Full Interior</a>
+                    <a href="/services/interior-spill" className='footer-link'>Full Interior + Spill Guard</a>
+                    <a href="/services/exterior" className='footer-link'>Exterior Wash</a>
+                    <a href="/services/exterior-seal" className='footer-link'>Exterior Seal & Shine</a>
+                    <a href="/services/exterior-correct" className='footer-link'>Exterior Correct & Protect</a>
                 </div>
                 <div className="footer-content-card footer-contact-card" id="contact">
                     <h3>CONTACT</h3>

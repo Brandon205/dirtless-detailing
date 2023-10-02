@@ -19,7 +19,7 @@ export default function CoatingGallery() {
       <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2bd5c3dd-6677-466a-e348-8495945c4700/cover')`}}></div>
       <div className="servicepage-header" style={{transform: 'translate(7%, 10vh)'}}>
         <div style={{alignItems: 'center'}}>
-          <h1><span className='accent-orange bold text-shadow'>Exterior Correct & Protect Gallery</span></h1>
+          <h1><span className='accent-purple bold text-shadow'>Exterior Correct & Protect Gallery</span></h1>
           <h2 className='page-subheading' style={{textAlign: 'center'}}>Check out the gallery below to see the results and capabilities of a freshly applied Ceramic Coating. Take a look at our <a href="/services/exterior-correct" className='aside-link' >Exterior Correct & Protect</a> page to learn more about this service!</h2>
           <div className='header-buttons'>
             <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</a>
@@ -40,7 +40,7 @@ export default function CoatingGallery() {
 
       <br className="extra-space" />
 
-      <h2 className="text-large text-white">More Images from our Ceramic Coating service.</h2>
+      <h2 className="text-large text-white">More images from our <span className='accent-purple'>Correct & Protect</span> service.</h2>
       <div style={{marginTop: '1rem'}} className="mini-grid">
         <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a7cc8a20-819f-4ef2-8b36-d41dc99bc200/public')`}}></div>
@@ -163,7 +163,7 @@ export default function CoatingGallery() {
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a196c77-cb1a-42f9-479b-8fdbe3c14500/public')`}}></div>
         </Zoom>
       </div>
-      <h2 style={{ color: 'white' }}>Check out our <a href="/services/interior-ceramic-coating" className='aside-link' >Interior Coatings</a> page or our <a href="/detailing/ceramic" className='aside-link' >Ceramic Coating</a> page for more details!</h2>
+      <h2 style={{ color: 'white' }}>Check out our <a href="/services/exterior-correct" className='aside-link' >Correct & Protect</a> page for more details!</h2>
     </section>
   )
 }

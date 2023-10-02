@@ -19,7 +19,7 @@ export default function PaintCorrectionGallery() {
       <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/dcfb9b5c-1867-4678-8ae3-2d88d1286300/cover')`}}></div>
       <div className="servicepage-header" style={{transform: 'translate(7%, 10vh)'}}>
         <div style={{alignItems: 'center'}}>
-          <h1><span className='accent-orange bold text-shadow'>Exterior Seal & Shine Gallery</span></h1>
+          <h1><span className='accent-blue bold text-shadow'>Exterior Seal & Shine Gallery</span></h1>
           <h2 className='page-subheading' style={{textAlign: 'center'}}>Check out the gallery below to see just what we are able to do with a simple polish and ceramic spray. Take a look at our <a href='/services/exterior-seal' className='aside-link'>Exterior Seal & Shine</a> page for more details and pricing.</h2>
           <div className='header-buttons'>
             <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</a>
@@ -43,7 +43,7 @@ export default function PaintCorrectionGallery() {
 
       <br className="extra-space" />
 
-      <h2 className="text-large text-white">More Images from our Paint Correction Services</h2>
+      <h2 className="text-large text-white">More Images from our <span className='accent-blue'>Seal & Shine</span> Service</h2>
       <div className="mini-grid">
         <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ef4953cd-466a-4752-9d87-12ddba64d700/public')`}}></div>
@@ -211,7 +211,7 @@ export default function PaintCorrectionGallery() {
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f7c127be-d17d-4563-48c3-809289e8bc00/public')`}}></div>
         </Zoom>
       </div>
-      <h2 style={{ color: 'white' }}>Check out our <a href="/services/single-stage-correction" className='aside-link' >Single Stage Paint Correction</a> page or our <a href="/services/two-stage-correction" className='aside-link' >Two Stage Paint Correction</a> page for more details!</h2>
+      <h2 style={{ color: 'white' }}>Check out our <a href="/services/exterior-seal" className='aside-link' >Exterior Seal & Shine</a> page for more details!</h2>
     </section>
   )
 }

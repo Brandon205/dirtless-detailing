@@ -64,7 +64,7 @@ export default function FullIntGallery() {
 
       <br className="extra-space" />
 
-      <h2 className="text-large text-white">More Images from our Interior Detailing Services</h2>
+      <h2 className="text-large text-white">More iamges from our <span className='accent-orange'>Full Interior</span> and <span className='accent-blue'>Full Interior + Spill Guard</span> Services</h2>
       <div className="mini-grid">
         <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/07c0720a-4281-4c16-bfb7-01fcc942d100/public')`}}></div>
@@ -334,7 +334,7 @@ export default function FullIntGallery() {
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/public')`}}></div>
         </Zoom>
       </div>
-      <h2 style={{ color: 'white' }}>Check out our <a href="/services/full-interior-detail" className='aside-link' >Full Interior Cleaning</a> page for more details!</h2>
+      <h2 style={{ color: 'white' }}>Check out our <a href="/services/interior" className='aside-link' >Full Interior Cleaning</a> page or our <a href="/services/interior-spill" className='aside-link' >Full Interior + Spill Guard </a> page for more details!</h2>
     </section>
   )
 }
