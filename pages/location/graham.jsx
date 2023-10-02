@@ -8,32 +8,26 @@ import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 
 export default function graham() {
-    const [currPackage, setCurrPackage] = useState('2-Year Ceramic Coating')
-    const [currLink, setCurrLink] = useState('exterior-ceramic-coating')
-    const [currComponent, setCurrComponent] = useState(<PricingComponent prices={['949', '949', '1099', '1099', '1249', '1249']} addons={[addons.glass]} />)
+    const [currPackage, setCurrPackage] = useState('Interior');
+    const [currLink, setCurrLink] = useState('interior');
+    const [currComponent, setCurrComponent] = useState(<PricingComponent prices={['300', '300', '335', '335', '375', '375']} addons={[addons.ozone]} />)
 
     useEffect(() => {
         if (currPackage === 'Interior') {
-            setCurrComponent(<PricingComponent prices={['299', '299', '349', '349', '399', '399']} addons={[addons.extraction, addons.hair, addons.headliners, addons.intcoating, addons.ozone]} />)
-            setCurrLink('full-interior-detail')
-        } else if (currPackage === 'Dirt-Less Wash') {
-            setCurrComponent(<PricingComponent prices={['74', '74', '99', '99', '124', '149']} addons={[addons.claybar, addons.glass, addons.waterspot]} />)
-            setCurrLink('dirtless-wash')
-        } else if (currPackage === 'Combo') {
-            setCurrComponent(<PricingComponent prices={['374', '374', '449', '449', '474', '524']} addons={[addons.extraction, addons.hair, addons.headliners, addons.intcoating, addons.ozone, addons.claybar, addons.glass, addons.waterspot]} />)
-            setCurrLink('interior-exterior-detailing-combo')
-        } else if (currPackage === '2-Year Ceramic Coating') {
-            setCurrComponent(<PricingComponent prices={['949', '949', '1099', '1099', '1249', '1249']} ceramic={true} />)
-            setCurrLink('exterior-ceramic-coating')
-        } else if (currPackage === '5-Year Ceramic Coating') {
-            setCurrComponent(<PricingComponent prices={['1399', '1399', '1699', '1699', '1849', '1849']} ceramic={true} />)
-            setCurrLink('exterior-ceramic-coating')
-        } else if (currPackage === 'Single Stage Paint Correction') {
-            setCurrComponent(<PricingComponent prices={['549', '549', '699', '699', '849', '849']} addons={[addons.glass]} />)
-            setCurrLink('single-stage-correction')
-        } else if (currPackage === 'Two Stage Paint Correction') {
-            setCurrComponent(<PricingComponent prices={['699', '699', '849', '849', '999', '999']} addons={[addons.glass]} />)
-            setCurrLink('two-stage-correction')
+            setCurrComponent(<PricingComponent prices={[300, 300, 335, 335, 375, 375]} addons={[addons.ozone]} />)
+            setCurrLink('interior')
+        } else if (currPackage === 'Interior Spill') {
+            setCurrComponent(<PricingComponent prices={[450, 450, 500, 500, 575, 575]} addons={[addons.ozone]} />)
+            setCurrLink('interior-spill')
+        } else if (currPackage === 'Exterior Wash') {
+            setCurrComponent(<PricingComponent prices={[100, 100, 125, 125, 150, 150]} addons={[addons.engine]} />)
+            setCurrLink('exterior')
+        } else if (currPackage === 'Exterior Seal') {
+            setCurrComponent(<PricingComponent prices={[300, 300, 350, 350, 400, 400]} addons={[addons.engine]} />)
+            setCurrLink('exterior-seal')
+        } else if (currPackage === 'Exterior Correct') {
+            setCurrComponent(<PricingComponent prices={[1300, 1300, 1500, 1500, 1700, 1700]} addons={[addons.engine]} />)
+            setCurrLink('exterior-correct')
         }
     }, [currPackage])
 
@@ -82,19 +76,21 @@ export default function graham() {
             </Head>
             <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/cover')`}}></div>
             <div className="servicepage-header">
-                <h1>Auto Detailing in Graham</h1>
-                <h2>Our detailing services include everything from interior cleanings to paint corrections, ensuring that your car looks its best both inside and out.</h2>
-                <div className='header-buttons'>
-                    <a href="/Contact" className='top-quote-btn'>Get a Free Quote</a>
-                    <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
+                <div style={{alignItems: 'center'}}>
+                    <h1><span className='accent-orange bold text-shadow'>Auto Detailing in Graham</span></h1>
+                    <h2 className='page-subheading' style={{textAlign: 'center'}}>Our detailing services include everything from interior cleanings to paint corrections, ensuring that your car looks its best both inside and out.</h2>
+                    <div className='header-buttons'>
+                        <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</a>
+                        <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
+                    </div>
                 </div>
             </div>
 
             <main className="location-main">
                 <h2 className='text-large'>Professional Detailing Services in Graham Washington.</h2>
                 <div className="text-left">
-                    <p>Looking for top-notch mobile auto detailing services in Graham? Look no further than our team of experts! We offer a wide range of services to keep your vehicle in tip-top condition, including interior cleaning, exterior washes, ceramic coatings, and paint corrections.</p>
-                    <p>At Dirt-Less Detialing we use only the highest quality products and equipment to deliver exceptional results every time. Whether you need a quick wash and wax or a full detail, we've got you covered. Plus, our mobile services make it easy and convenient to get your car looking its best no matter where you are in Graham.</p>
+                    <p>Looking for top-notch mobile auto detailing services in Graham? Look no further than our team at Dirt-Less Detailing! We offer a wide range of services to keep your vehicle in tip-top condition, including interior cleaning, exterior washes, ceramic coatings, and paint corrections.</p>
+                    <p>At Dirt-Less Detailing we use only the highest quality products and equipment to deliver exceptional results every time. Whether you need a quick wash and wax or a full detail, we've got you covered. Plus, our mobile services make it easy and convenient to get your car looking its best no matter where you are in Graham.</p>
                     <p>So why wait? Give us a call today to schedule your appointment and see for yourself why we're the top choice for mobile auto detailing in Graham!</p>
                 </div>
 
@@ -104,20 +100,20 @@ export default function graham() {
                 <div style={{paddingBottom: '2rem'}} className='general-container'>
                     <h3 className='text-large'>Mobile Services offered in Graham:</h3>
                     <div style={{paddingBottom: '2rem'}} className="text-left">
-                        <a href="/services/full-interior-detail" className='aside-link text-medium'>Interior Cleaning</a>
-                        <p className='mt-0'>A full interior detail will clean every crack and crevice of your vehicles interior to a like-new condition. Optionally we can also do a hot water extraction to the carpets of your vehicle to get out the deeper stains and dirt. A <a href="/services/biohazard-cleaning" className='aside-link'>Biohazard</a> cleaning is also available for mold, spills and unwanted odor removal.</p>
-                        <a href="/services/dirtless-wash" className='aside-link text-medium'>Dirt-Less Wash</a>
-                        <p className='mt-0'>Our Dirt-Less Wash will thoroughly clean the exterior of your vehicle with our tried and true cleaning processes. Topped off with a spray wax for an extra layer of protection and shine. Combine this with our Interior Cleaning service and get an Engine Bay Cleaning on us through our <a href="/services/interior-exterior-detailing-combo" className='aside-link'>Dirt-Less Detail</a> deal!</p>
-                        <a href="/services/interior-exterior-detailing-combo" className='aside-link text-medium'>The Dirt-Less Detail</a>
-                        <p className='mt-0'>If your whole car needs a makeover check out our Dirt-Less Detail. With it you get a full interior cleaning, Dirt-Less Wash, and a FREE included Engine bay cleaning to top it off!</p>
+                        <a href="/services/interior" className='aside-link text-medium'>Full Interior Cleaning</a>
+                        <p className='mt-0'>A full interior detail will clean every crack and crevice of your vehicles interior to a like-new condition. If needed we include a hot water extraction to the carpets and fabric of your vehicle to get out the deeper stains and dirt. For mold, smoke smell, and other unwanted odor removal we recommend getting our Ozone Treatment addon to fully remove unwanted smells.</p>
+                        <a href="/services/interior-spill" className='aside-link text-medium'>Full Interior + Spill Guard</a>
+                        <p className='mt-0'>If your cars interior gets heavy use by means of spills, wet animals, or even just messy kids, we have you covered. With our Full Interior + Spill Guard service you will be getting our Full Interior service to clean up all of the mess, but we will also make future messes less of an issue with our Interior Ceramic Coating leaving a layer of protection between messes and any surface in your vehicle!</p>
+                        <a href="/services/exterior" className='aside-link text-medium'>Exterior Decon Wash</a>
+                        <p className='mt-0'>Our Exterior Decon Wash will thoroughly clean the exterior of your vehicle with our tried and true cleaning processes. Topped off with a ceramic spray for an extra layer of protection and shine. Combine this with our Interior Cleaning service to get a full revamp on your car!</p>
                     </div>
                     
                     <h3 className='text-large'>Services offered at our shop in Bonney Lake:</h3>
                     <div className='text-left'>
-                        <a href="/detailing/ceramic" className='aside-link text-medium'>Ceramic Coating</a>
-                        <p className='mt-0'>Our 5 year Ceramic Coatings will not only keep your vehicle looking great, but they will also keep your paint protected. A full <a href="/services/single-stage-correction" className='aside-link'>Single Stage Paint Correction</a> is performed before the coating to give it a nice even surface to be applied to. Our exterior Ceramic Coatings will have to be performed at our shop in Bonney Lake. Interior coatings are also available to protect interior materials too. Get more info on our <a href="/services/interior-ceramic-coating" className='aside-link'>Interior Coating</a> page.</p>
-                        <a href="/detailing/correction" className='aside-link text-medium'>Paint Correction</a>
-                        <p className='mt-0'>Our paint correction services can fix roughly 60%-90% of minor damage and scratches and will leave your vehicle looking shinier and feeling smoother than ever.</p>
+                        <a href="/services/exterior-seal" className='aside-link text-medium'>Exterior Seal & Shine</a>
+                        <p className='mt-0'>Our Seal and Shine service offers everything from our Exterior Decon Wash, a full vehicle polish, windshield coating, and 6 month ceramic spray. This really is the best deal if you want light scratches removed from your vehicle, and a full year of protection! The results from this service have been stunning us as well as our customers ever since we introduced it!</p>
+                        <a href="/services/exterior-correct" className='aside-link text-medium'>Exterior Correct & Protect</a>
+                        <p className='mt-0'>Our most involved and detailed exterior service that we offer. If you truly want the best shine and protection from your car then this is the package to choose. Everything from our Exterior Decon Wash, the windshield coating from our Exterior Seal & Shine, a full vehicle Single Stage paint correction, all topped off with a 5 year ceramic coating. The process takes up to 2 days and we take great pride in the results from it, taking our time at every edge and corner making sure everything turns out as good as possible!</p>
                     </div>
 
                     <a href="/Contact" className="quote-btn location-quote-btn">Get A Free Quote</a>
@@ -130,13 +126,11 @@ export default function graham() {
                     <strong className="pricing__subheading">Select the package and vehicle size below to get a quick price estimate for your vehicle.</strong>
                     <div style={{margin: '0 auto'}}>
                         <select className='text-input pricing__select' name="package" id="package" onChange={(e) => setCurrPackage(e.target.value)}>
-                            <option value="2-Year Ceramic Coating">2-Year Ceramic Coating</option>
-                            <option value="5-Year Ceramic Coating">5-Year Ceramic Coating</option>
-                            <option value="Combo">The Dirt-Less Detail</option>
-                            <option value="Interior">Full Interior Detail</option>
-                            <option value="Dirt-Less Wash">Dirt-Less Wash</option>
-                            <option value="Single Stage Paint Correction">Single Stage Paint Correction</option>
-                            <option value="Two Stage Paint Correction">Two Stage Paint Correction</option>
+                            <option value="Interior">Full Interior</option>
+                            <option value="Interior Spill">Interior + Spill Guard</option>
+                            <option value="Exterior Wash">Exterior Decon Wash</option>
+                            <option value="Exterior Seal">Exterior Seal & Shine</option>
+                            <option value="Exterior Correct">Exterior Correct & Protect</option>
                         </select>
                     </div>
                 </div>
@@ -183,11 +177,10 @@ export default function graham() {
                 <div className='location-gallery-container'>
                     <h3 className='text-large'>Our Gallery Pages:</h3>
                     <div>
-                        <a href="/gallery/interior" className='aside-link text-medium'>Interior Cleaning Gallery</a><br />
+                        <a href="/gallery/interior" className='aside-link text-medium'>Full Interior Gallery</a><br />
                         <a href="/gallery/exterior" className='aside-link text-medium'>Exterior Wash Gallery</a><br />
-                        <a href="/gallery/seal" className='aside-link text-medium'>Paint Correction Gallery</a><br />
-                        <a href="/gallery/correct" className='aside-link text-medium'>Ceramic Coating Gallery</a><br />
-                        <a href="/gallery/engine-bay-gallery" className='aside-link text-medium'>Engine Bay Gallery</a>
+                        <a href="/gallery/seal" className='aside-link text-medium'>Seal & Shine Gallery</a><br />
+                        <a href="/gallery/correct" className='aside-link text-medium'>Correct & Protect Gallery</a><br />
                     </div>
                 </div>
             </div>
