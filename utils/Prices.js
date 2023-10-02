@@ -135,7 +135,12 @@ const prices = {
     "addons": {
         "Ozone Treatment": 75,
         "Engine Bay": 75
-    }
+    },
+    'dogHair': {
+        "Little or None": 0,
+        "Medium Amount": 50,
+        "Lots of Hair": 100
+    },
 }
 
 export default prices;

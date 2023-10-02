@@ -28,12 +28,13 @@ const INITIAL_DATA = {
     interior: "",
     exterior: "",
     addons: [],
+    dirtiness: "",
+    dogHair: "",
+    mobile: "",
 }
 
 export default function Contact() {
     const [data, setData] = useState(INITIAL_DATA);
-    // const [dirtiness, setDirtiness] = useState('');
-    // const [dogHair, setDogHair] = useState('');
     
     // State for pricing section
     const [currentPrice, setCurrentPrice] = useState(0);
@@ -47,11 +48,11 @@ export default function Contact() {
 
     useEffect(() => {
         updatePrices()
-    }, [data.vehicleSize, data.interior, data.exterior, data.addons])
+    }, [data.vehicleSize, data.interior, data.exterior, data.addons, data.dogHair])
 
     function updatePrices() {
         let tempPrice = 0;
-        let dataArr = {interior: data.interior, exterior: data.exterior, addons: data.addons, vehicleSize: data.vehicleSize};
+        let dataArr = {interior: data.interior, exterior: data.exterior, addons: data.addons, vehicleSize: data.vehicleSize, dogHair: data.dogHair};
 
         if (dataArr.interior.length > 0) {
             let tempService = dataArr.interior.replace(/\s/g, '').toLowerCase()
@@ -66,11 +67,15 @@ export default function Contact() {
                 tempPrice += prices.addons[addon]
             })
         }
+        if (dataArr.dogHair.length > 0) {
+            tempPrice += prices.dogHair[dataArr.dogHair]
+        }
 
         setCurrentPrice(tempPrice)
     }
 
     function updateFields(fields) {
+        console.log('update fields ran: ', fields)
         setData(prev => {
             if (fields.addons) { // For adding/removing addons from the addons array
                 let tempArr = [...prev.addons];
@@ -93,7 +98,7 @@ export default function Contact() {
 
                 fields.addons = tempArr
             }
-            console.log({...prev}, {...fields}, {...prev, ...fields})
+            // console.log({...prev}, {...fields}, {...prev, ...fields})
             return { ...prev, ...fields }
         })
     }
@@ -108,8 +113,8 @@ export default function Contact() {
     function formSubmit(e) {
         e.preventDefault();
         if (!isLastStep) {
-            if (currentStepIndex === 0 && data.serviceType.length === 0) {
-                return toast.error('Please select a service type!', {
+            if (currentStepIndex === 0 && data.serviceType.length === 0 || data.mobile === "") {
+                return toast.error('Please select a service and a service location!', {
                     position: "bottom-center",
                     autoClose: 5000,
                     hideProgressBar: false,
@@ -118,23 +123,65 @@ export default function Contact() {
                     draggable: true,
                     progress: undefined
                 })
-            } else if (currentStepIndex === 1 && data.interior === "" && data.exterior === "" ) {
-                return toast.error('Please select a service!', {
-                    position: "bottom-center",
-                    autoClose: 5000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined
-                })
+            } else if (currentStepIndex === 1) {
+                console.log(currentStepIndex === 1, data.dogHair, data.dirtiness)
+                if (data.serviceType === "Interior") {
+                    if (data.interior === "" || data.dogHair === "" || data.dirtiness === "") {
+                        return toast.error('Please fill out all required fields! (Ones marked with a *)', {
+                            position: "bottom-center",
+                            autoClose: 5000,
+                            hideProgressBar: false,
+                            closeOnClick: true,
+                            pauseOnHover: true,
+                            draggable: true,
+                            progress: undefined
+                        })
+                    } else {
+                        return next();
+                    }
+                } else if (data.serviceType === "Exterior" && data.exterior === "") {
+                    return toast.error('Please fill out all exterior fields! (Ones marked with a *)', {
+                        position: "bottom-center",
+                        autoClose: 5000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined
+                    })
+                } else if (data.serviceType === 'Both') {
+                    if (!data.interior || !data.dogHair || !data.dirtiness || !data.exterior) {
+                        return toast.error('Please fill out all exterior fields! (Ones marked with a *)', {
+                            position: "bottom-center",
+                            autoClose: 5000,
+                            hideProgressBar: false,
+                            closeOnClick: true,
+                            pauseOnHover: true,
+                            draggable: true,
+                            progress: undefined
+                        })
+                    } else {
+                        return next();
+                    }
+                } else {
+                    if (data.serviceType !== "Both") {
+                        if (data.serviceType === "Interior") {
+                            updateFields({exterior: ""})
+                            updateFields({addons: 'Delete'})
+                        } else if (data.serviceType === "Exterior") {
+                            updateFields({interior: "", dirtiness: "", dogHair: ""})
+                            updateFields({addons: 'Delete'})
+                        }
+                    }
+                    return next();
+                }
             } else {
                 if (data.serviceType !== "Both") {
                     if (data.serviceType === "Interior") {
                         updateFields({exterior: ""})
                         updateFields({addons: 'Delete'})
                     } else if (data.serviceType === "Exterior") {
-                        updateFields({interior: ""})
+                        updateFields({interior: "", dirtiness: "", dogHair: ""})
                         updateFields({addons: 'Delete'})
                     }
                 }
@@ -151,16 +198,19 @@ export default function Contact() {
             "Make": data.make,
             "Model": data.model,
             "Vehicle Size": data.vehicleSize,
+            "Mobile": data.mobile,
 
             "Interior Service": data.interior.length > 0 ? data.interior : "None",
             "Exterior Service": data.exterior.length > 0 ? data.exterior : "None",
+            "Dog Hair": data.dogHair,
+            "Dirtiness": data.dirtiness,
             "Addons": data.addons.toString(),
-            "Price Estimate": currentPrice
+            "Price Estimate": currentPrice,
         }
 
         const formData = new FormData();
         Object.entries(formInfo).forEach(([key, value]) => {
-            if (value.length > 0) {
+            if (value) {
                 formData.append(key, value)
             }
         });
@@ -276,7 +326,7 @@ export default function Contact() {
 
                     </div>
 
-                    <div className='pricing__positioner'>
+                    <div style={{display: currentPrice === 0 ? 'none' : 'inline-block'}} className='pricing__positioner'>
                         <p style={{margin: 0}}>Price Estimate:</p>
                         <div className='pricing__pricecard-container'>
                             <strong style={{backgroundColor: '#c0c0c000'}} className='pricing__pricecard-pricebox'>

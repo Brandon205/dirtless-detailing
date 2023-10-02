@@ -1,4 +1,4 @@
-export function SizeAndType({vehicleSize, serviceType, updateFields}) {
+export function SizeAndType({vehicleSize, serviceType, mobile, updateFields}) {
     return (
         <div className="form-section">
             <p className='contact-heading'>Vehicle Size<span className='special-package'>*</span></p>
@@ -25,6 +25,16 @@ export function SizeAndType({vehicleSize, serviceType, updateFields}) {
 
                 <input type="checkbox" name="service" id="both-service" value="Both" className='radio-button' checked={serviceType === 'Both'} onChange={(e) => updateFields({serviceType: e.target.value})} />
                 <label htmlFor="both-service" className='checkbox-label'>Both Services</label>
+            </div>
+
+            <p className='contact-heading'>Mobile or Shop based service?<span className='special-package'>*</span></p>
+            <p style={{marginBottom: '1rem'}} className="contact-subheading">There are <span className="bold">no</span> additional charges if you are within 30 minutes from our shop! (We'll get your address from you later)</p>
+            <div>
+                <input type="checkbox" name="mobile" id="shop" value="Shop" className='radio-button' checked={mobile === 'Shop'} onChange={(e) => updateFields({mobile: e.target.value})} />
+                <label htmlFor="shop" className='checkbox-label'>Shop</label>
+
+                <input type="checkbox" name="mobile" id="mobile" value="Mobile" className='radio-button' checked={mobile === 'Mobile'} onChange={(e) => updateFields({mobile: e.target.value})} />
+                <label htmlFor="mobile" className='checkbox-label'>Mobile</label>
             </div>
         </div>
     )

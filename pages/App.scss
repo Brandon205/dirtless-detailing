@@ -577,6 +577,7 @@ option {
   padding: 0.75rem;
   margin-top: 0.5rem;
   border-radius: 1rem;
+  @include card-border;
 }
 
 .form-top-section {
@@ -3056,14 +3057,15 @@ footer {
 
   .pricing__positioner {
     position: fixed;
-    bottom: 0;
+    bottom: 2rem;
     top: auto;
     right: 2rem;
     left: auto;
     background-color: $contact-bkg-lighter;
-    padding: 1.5rem;
-    box-shadow: 0 -5px 12px #000;
-    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 1rem;
+    @include card-border;
+    // box-shadow: 0 -5px 12px #000;
+    border-radius: 12px;
   }
 
   .cities-ul {
