@@ -216,6 +216,10 @@ export default function Contact() {
     }
 
     const finalSubmit = (formData, e) => {
+        const dataObject = {
+            "event": "Form Submitted"
+        }
+        window.dataLayer.push(dataObject)
         fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
             method: "POST",
             body: formData
