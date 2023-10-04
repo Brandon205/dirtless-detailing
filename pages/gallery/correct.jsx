@@ -19,7 +19,7 @@ export default function CoatingGallery() {
       <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2bd5c3dd-6677-466a-e348-8495945c4700/cover')`}}></div>
       <div className="servicepage-header" style={{transform: 'translate(7%, 10vh)'}}>
         <div style={{alignItems: 'center'}}>
-          <h1><span className='accent-purple bold text-shadow'>Exterior Correct & Protect Gallery</span></h1>
+          <h1><span className='accent-orange bold text-shadow'>Exterior Correct & Protect Gallery</span></h1>
           <h2 className='page-subheading' style={{textAlign: 'center'}}>Check out the gallery below to see the results and capabilities of a freshly applied Ceramic Coating. Take a look at our <a href="/services/exterior-correct" className='aside-link' >Exterior Correct & Protect</a> page to learn more about this service!</h2>
           <div className='header-buttons'>
             <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</a>
@@ -40,7 +40,7 @@ export default function CoatingGallery() {
 
       <br className="extra-space" />
 
-      <h2 className="text-large text-white">More images from our <span className='accent-purple'>Correct & Protect</span> service.</h2>
+      <h2 className="text-large text-white">More images from our <span className='accent-orange'>Correct & Protect</span> service.</h2>
       <div style={{marginTop: '1rem'}} className="mini-grid">
         <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a7cc8a20-819f-4ef2-8b36-d41dc99bc200/public')`}}></div>

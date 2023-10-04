@@ -79,6 +79,14 @@ export default function Exterior() {
               </div>
             </main>
             <br className='extra-space' />
+    
+            <div>
+              <div className='pricing__heading-container'>
+                <h3 className="pricing__heading"><span className='accent-orange bold'>Exterior Decon Wash</span> Pricing</h3>
+                <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
+              </div>
+              <PricingComponent prices={[100, 100, 125, 125, 150, 150]} addons={[addons.engine]} />
+            </div>
 
             <h2 className='cleaning-process-title text-xl'>Our Exterior Decon Wash Process</h2>
             <ol className='list'>
@@ -159,14 +167,6 @@ export default function Exterior() {
                 <input type="range" min="1" max="100" value={slide} onChange={(e) => setSlide(Number(e.target.value))} className="slider-bar" name='slider' id="slider" />
                 <div style={{left: slide - 4 + '%'}} className="slider-button"></div>
               </div>
-            </div>
-
-            <div>
-              <div className='pricing__heading-container'>
-                <h3 className="pricing__heading"><span className='accent-orange bold'>Exterior Decon Wash</span> Pricing</h3>
-                <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
-              </div>
-              <PricingComponent prices={[100, 100, 125, 125, 150, 150]} addons={[addons.engine]} />
             </div>
 
             <div className="preview-container">

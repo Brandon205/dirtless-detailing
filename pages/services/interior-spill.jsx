@@ -50,18 +50,18 @@ export default function InteriorSpill() {
           }`,
         }} />
       </Head>
-      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/cover')`}}></div>
+      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f6170666-70f6-487c-4db8-26125453df00/cover')`}}></div>
       <div className="servicepage-header">
         <div>
-          <h1><span className='accent-blue bold text-shadow'>Full Interior + Spill Guard</span></h1>
+          <h1><span className='accent-orange bold text-shadow'>Full Interior + Spill Guard</span></h1>
           <h2 className='page-subheading'>Our highly rated interior service topped with an interior ceramic coating.</h2>
           <div className='header-buttons'>
             <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</a>
             <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
           </div>
         </div>
-        <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a196c77-cb1a-42f9-479b-8fdbe3c14500/public')`}}>
-          <img style={{visibility: 'hidden'}} alt="Clean drivers seat interior of a Subaru" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a196c77-cb1a-42f9-479b-8fdbe3c14500/public" />
+        <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e2d544ec-b25c-4d22-53c2-bdf651767200/public')`}}>
+          <img style={{visibility: 'hidden'}} alt="Clean drivers seat interior of a Subaru" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e2d544ec-b25c-4d22-53c2-bdf651767200/public" />
         </div>
       </div>
 
@@ -79,6 +79,14 @@ export default function InteriorSpill() {
               </div>
             </main>
             <br className='extra-space' />
+
+            <div>
+              <div className='pricing__heading-container'>
+                <h3 className="pricing__heading"><span className='accent-orange bold'>Full Interior + Spill Guard</span> Pricing</h3>
+                <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
+              </div>
+              <PricingComponent prices={[450, 450, 500, 500, 575, 575]} addons={[addons.ozone]} />
+            </div>
 
             <h2 className='cleaning-process-title text-xl'>Our Interior + Spill Guard Process</h2>
             <ol className='list'>
@@ -159,14 +167,6 @@ export default function InteriorSpill() {
                 <input type="range" min="1" max="100" value={slide} onChange={(e) => setSlide(Number(e.target.value))} className="slider-bar" name='slider' id="slider" />
                 <div style={{left: slide - 4 + '%'}} className="slider-button"></div>
               </div>
-            </div>
-
-            <div>
-              <div className='pricing__heading-container'>
-                <h3 className="pricing__heading"><span className='accent-blue bold'>Full Interior + Spill Guard</span> Pricing</h3>
-                <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
-              </div>
-              <PricingComponent prices={[450, 450, 500, 500, 575, 575]} addons={[addons.ozone]} />
             </div>
 
             <div className="preview-container">

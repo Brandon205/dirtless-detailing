@@ -50,18 +50,18 @@ export default function ExteriorCorrect() {
           }`,
         }} />
       </Head>
-      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2bd5c3dd-6677-466a-e348-8495945c4700/cover')`}}></div>
+      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/1d5eccf3-e4ec-47db-c652-fb40f808c800/cover')`, backgroundPositionY: '-316px'}}></div>
       <div className="servicepage-header">
         <div>
-          <h1><span className='accent-purple bold text-shadow'>Exterior Correct and Protect</span></h1>
+          <h1><span className='accent-orange bold text-shadow'>Exterior Correct and Protect</span></h1>
           <h2 className='page-subheading'>The best of our Decon Wash and Seal and Shine packages, plus an in depth paint correction and 5 year ceramic coating.</h2>
           <div className='header-buttons'>
             <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</a>
             <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
           </div>
         </div>
-        <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/1834d275-3102-4f88-a06c-92c07b9b5e00/public')`}}>
-          <img style={{visibility: 'hidden'}} alt="Before and After of a very scratched up door panel" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/1834d275-3102-4f88-a06c-92c07b9b5e00/public" />
+        <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f7c127be-d17d-4563-48c3-809289e8bc00/public')`}}>
+          <img style={{visibility: 'hidden'}} alt="Before and After of a very scratched up door panel" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f7c127be-d17d-4563-48c3-809289e8bc00/public" />
         </div>
       </div>
 
@@ -79,6 +79,14 @@ export default function ExteriorCorrect() {
               </div>
             </main>
             <br className='extra-space' />
+
+            <div>
+              <div className='pricing__heading-container'>
+                <h3 className="pricing__heading"><span className='accent-orange bold'>Correct and Protect</span> Pricing</h3>
+                <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
+              </div>
+              <PricingComponent prices={[1300, 1300, 1500, 1500, 1700, 1700]} addons={[addons.engine]} />
+            </div>
 
             <h2 className='cleaning-process-title text-xl'>Our Exterior Correct and Protect Process</h2>
             <ol className='list'>
@@ -159,14 +167,6 @@ export default function ExteriorCorrect() {
                 <input type="range" min="1" max="100" value={slide} onChange={(e) => setSlide(Number(e.target.value))} className="slider-bar" name='slider' id="slider" />
                 <div style={{left: slide - 4 + '%'}} className="slider-button"></div>
               </div>
-            </div>
-
-            <div>
-              <div className='pricing__heading-container'>
-                <h3 className="pricing__heading"><span className='accent-purple bold'>Correct and Protect</span> Pricing</h3>
-                <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
-              </div>
-              <PricingComponent prices={[1300, 1300, 1500, 1500, 1700, 1700]} addons={[addons.engine]} />
             </div>
 
             <div className="preview-container">

@@ -15,16 +15,8 @@ const imagesArr = [
 ]
 
 const iconArr = {
-    'extraction': <img src='../assets/icons/steam.png' className='addon-icon' alt="steam" />,
-    'hair': <img src='../assets/icons/dog.png' className='addon-icon' alt="dog walking" />,
-    'headliners': <img src='../assets/icons/up.png' className='addon-icon' alt="up arrow" />,
-    'intcoating': <img src='../assets/icons/steeringWheel.png' className='addon-icon' alt="engine" />,
     'ozone': <img src='../assets/icons/ozone.png' className='addon-icon' alt="air filter in use" />,
-    'claybar': <img src='../assets/icons/dirt.png' className='addon-icon' alt="dirt particles" />,
-    'glass': <img src='../assets/icons/windscreen.png' className='addon-icon' alt="front windshield" />,
-    'waterspot': <img src='../assets/icons/water.png' className='addon-icon' alt="steam" />,
-    'engine': <img src='../assets/icons/engine.png' className='addon-icon' alt="engine" />,
-    'debadge': <img src='../assets/icons/bmw.png' className='addon-icon' alt="bmw badge" />
+    'engine': <img src='../assets/icons/engineBay.png' className='addon-icon' alt="engine bay getting cleaned" />,
 }
 
 {/* <PricingComponent title='Ceramic Coating' prices={['949', '949', '1099', '1099', '1249', '1249']} addons={[{}]} labels={['label1', 'label2', 'needs to have 6 labels...']} /> */}

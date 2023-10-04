@@ -53,7 +53,7 @@ export default function ExteriorSeal() {
       <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/cover')`}}></div>
       <div className="servicepage-header">
         <div>
-          <h1><span className='accent-blue bold text-shadow'>Exterior Seal and Shine</span></h1>
+          <h1><span className='accent-orange bold text-shadow'>Exterior Seal and Shine</span></h1>
           <h2 className='page-subheading'>Our tried and true wash with a corrective polish, and even stronger Ceramic Spray coating.</h2>
           <div className='header-buttons'>
             <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</a>
@@ -79,6 +79,14 @@ export default function ExteriorSeal() {
               </div>
             </main>
             <br className='extra-space' />
+
+            <div>
+              <div className='pricing__heading-container'>
+                <h3 className="pricing__heading"><span className='accent-orange bold'>Exterior Seal and Shine</span> Pricing</h3>
+                <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
+              </div>
+              <PricingComponent prices={[300, 300, 350, 350, 400, 400]} addons={[addons.engine]} />
+            </div>
 
             <h2 className='cleaning-process-title text-xl'>Our Exterior Seal and Shine Process</h2>
             <ol className='list'>
@@ -168,14 +176,6 @@ export default function ExteriorSeal() {
                 <input type="range" min="1" max="100" value={slide} onChange={(e) => setSlide(Number(e.target.value))} className="slider-bar" name='slider' id="slider" />
                 <div style={{left: slide - 4 + '%'}} className="slider-button"></div>
               </div>
-            </div>
-
-            <div>
-              <div className='pricing__heading-container'>
-                <h3 className="pricing__heading"><span className='accent-blue bold'>Exterior Seal and Shine</span> Pricing</h3>
-                <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
-              </div>
-              <PricingComponent prices={[300, 300, 350, 350, 400, 400]} addons={[addons.engine]} />
             </div>
 
             <div className="preview-container">

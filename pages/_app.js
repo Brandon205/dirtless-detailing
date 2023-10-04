@@ -119,23 +119,23 @@ export default function MyApp({ Component, pageProps }) {
                                                 <div>
                                                     <h4 className='sub-menu-header'>INTERIOR CLEANING SERVICES</h4>
                                                     <motion.div variants={navChild} className='sub-menu-div' onClick={() => setNav('none')}>
-                                                        <a href="/services/interior" className='menu-link smaller-line-height'><img src='../assets/icons/steeringWheel.png' alt='steering wheel' className='nav-icon' /> Full Interior</a>
+                                                        <a href="/services/interior" className='menu-link smaller-line-height'><img src='../assets/icons/steering1.png' alt='steering wheel' className='nav-icon' /> Full Interior</a>
                                                     </motion.div>
                                                     <motion.div variants={navChildDiff} className='sub-menu-div' onClick={() => setNav('none')}>
-                                                        <a href="/services/interior-spill" className='menu-link smaller-line-height'><img src='../assets/icons/carSeat.png' alt='car seat' className='nav-icon' /> Full Interior with Spill Guard</a>
+                                                        <a href="/services/interior-spill" className='menu-link smaller-line-height'><img src='../assets/icons/steeringLock.png' alt='steering wheel with lock' className='nav-icon' /> Full Interior with Spill Guard</a>
                                                     </motion.div>
                                                 </div>
 
                                                 <div>
                                                     <h4 className='sub-menu-header'>EXTERIOR SERVICES</h4>
                                                     <motion.div variants={navChildDiff} className='sub-menu-div' onClick={() => setNav('none')}>
-                                                        <a href="/services/exterior" className='menu-link smaller-line-height'><img src='../assets/icons/soapBucket.png' alt='soap bucket' className='nav-icon' /> Exterior Wash</a>
+                                                        <a href="/services/exterior" className='menu-link smaller-line-height'><img src='../assets/icons/carWash.png' alt='car with bubbles' className='nav-icon' /> Exterior Wash</a>
                                                     </motion.div>
                                                     <motion.div variants={navChild} className='sub-menu-div' onClick={() => setNav('none')}>
-                                                        <a href="/services/exterior-seal" className='menu-link smaller-line-height'><img src='../assets/icons/microfiber.png' alt='microfiber' className='nav-icon' /> Exterior Seal and Shine</a>
+                                                        <a href="/services/exterior-seal" className='menu-link smaller-line-height'><img src='../assets/icons/carPolish.png' alt='microfiber' className='nav-icon' /> Exterior Seal and Shine</a>
                                                     </motion.div>
                                                     <motion.div variants={navChildDiff} className='sub-menu-div' onClick={() => setNav('none')}>
-                                                        <a href="/services/exterior-correct" className='menu-link smaller-line-height'><img src='../assets/icons/polisher.png' alt='polisher' className='nav-icon' /> Exterior Correct and Protect</a>
+                                                        <a href="/services/exterior-correct" className='menu-link smaller-line-height'><img src='../assets/icons/correctProtect.png' alt='polisher' className='nav-icon' /> Exterior Correct and Protect</a>
                                                     </motion.div>
                                                 </div>
                                             </motion.li>
@@ -152,16 +152,16 @@ export default function MyApp({ Component, pageProps }) {
                                             <motion.li animate='open' initial='closed' exit='closed' transition={{ ease: "easeInOut", duration: 0.3 }} variants={navParent} className="nav-li">
                                                 <h4 className="sub-menu-header">GALLERIES</h4>
                                                 <motion.div variants={navChild} className='sub-menu-div' onClick={() => setNav('none')}>
-                                                    <a href="/gallery/interior" className='menu-link smaller-line-height'><img src='../assets/icons/doorAjar.png' alt='car with doors open' className='nav-icon' /> Full Interior Gallery</a>
+                                                    <a href="/gallery/interior" className='menu-link smaller-line-height'><img src='../assets/icons/steering1.png' alt='car with doors open' className='nav-icon' /> Full Interior Gallery</a>
                                                 </motion.div>
                                                 <motion.div variants={navChildDiff} className='sub-menu-div' onClick={() => setNav('none')}>
-                                                    <a href="/gallery/exterior" className='menu-link smaller-line-height'><img src='../assets/icons/bubbles.png' alt='soap bubbles' className='nav-icon' /> Exterior Wash Gallery</a>
+                                                    <a href="/gallery/exterior" className='menu-link smaller-line-height'><img src='../assets/icons/carWash.png' alt='soap bubbles' className='nav-icon' /> Exterior Wash Gallery</a>
                                                 </motion.div>
                                                 <motion.div variants={navChild} className='sub-menu-div' onClick={() => setNav('none')}>
-                                                    <a href="/gallery/seal" className='menu-link smaller-line-height'><img src='../assets/icons/hood.png' alt='car hood' className='nav-icon' /> Seal & Shine Gallery</a>
+                                                    <a href="/gallery/seal" className='menu-link smaller-line-height'><img src='../assets/icons/carPolish.png' alt='car hood' className='nav-icon' /> Seal & Shine Gallery</a>
                                                 </motion.div>
                                                 <motion.div variants={navChildDiff} className='sub-menu-div' onClick={() => setNav('none')}>
-                                                    <a href="/gallery/correct" className='menu-link smaller-line-height'><img src='../assets/icons/gallery.png' alt='gallery' className='nav-icon' /> Correct & Protect Gallery</a>
+                                                    <a href="/gallery/correct" className='menu-link smaller-line-height'><img src='../assets/icons/correctProtect.png' alt='gallery' className='nav-icon' /> Correct & Protect Gallery</a>
                                                 </motion.div>
                                             </motion.li>
                                         )}
@@ -206,6 +206,7 @@ export default function MyApp({ Component, pageProps }) {
                     <h3>SERVICES</h3>
                     <a href="/services/interior" className='footer-link'>Full Interior</a>
                     <a href="/services/interior-spill" className='footer-link'>Full Interior + Spill Guard</a>
+                    <hr style={{ marginTop: '1.5rem' }} />
                     <a href="/services/exterior" className='footer-link'>Exterior Wash</a>
                     <a href="/services/exterior-seal" className='footer-link'>Exterior Seal & Shine</a>
                     <a href="/services/exterior-correct" className='footer-link'>Exterior Correct & Protect</a>
@@ -219,6 +220,7 @@ export default function MyApp({ Component, pageProps }) {
                         <a href="https://www.facebook.com/DirtLessDetailing/" className="socials" target="_blank" rel="noopener" aria-label="Facebook"><img src='../assets/icons/facebook.png' alt='facebook' className='icon-48' /></a>
                         <a href="https://www.instagram.com/dirt_less_detailing/" className="socials" target="_blank" rel="noopener" aria-label="Instagram"><img src='../assets/icons/instagram.png' alt='instagram' className='icon-48' /></a>
                         <a href="https://www.youtube.com/channel/UCsoqP5s4hwkQd_Sd-TVv-jg" className="socials" target="_blank" rel="noopener" aria-label="Youtube"><img src='../assets/icons/youtube.png' alt='youtube' className='icon-48' /></a>
+                        <a href="https://www.tiktok.com/@brendenflower" className="socials" target="_blank" rel="noopener" aria-label="TikTok"><img src='../assets/icons/tiktok.svg' alt='tiktok' className='icon-48' /></a>
                     </div>
                 </div>
             </footer>

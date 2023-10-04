@@ -20,11 +20,12 @@ export function SizeAndType({vehicleSize, serviceType, mobile, updateFields}) {
                 <input type="checkbox" name="service" id="interior" value="Interior" className='radio-button' checked={serviceType === 'Interior'} onChange={(e) => updateFields({serviceType: e.target.value})} />
                 <label htmlFor="interior" className='checkbox-label'>Interior Service</label>
 
+                <input type="checkbox" name="service" id="both-service" value="Both" className='radio-button' checked={serviceType === 'Both'} onChange={(e) => updateFields({serviceType: e.target.value})} />
+                <label style={{marginBottom: '20px'}} htmlFor="both-service" className='checkbox-label'>Both Services</label>
+
                 <input type="checkbox" name="service" id="exterior-service" value="Exterior" className='radio-button' checked={serviceType === 'Exterior'} onChange={(e) => updateFields({serviceType: e.target.value})} />
                 <label htmlFor="exterior-service" className='checkbox-label'>Exterior Service</label>
 
-                <input type="checkbox" name="service" id="both-service" value="Both" className='radio-button' checked={serviceType === 'Both'} onChange={(e) => updateFields({serviceType: e.target.value})} />
-                <label htmlFor="both-service" className='checkbox-label'>Both Services</label>
             </div>
 
             <p className='contact-heading'>Mobile or Shop based service?<span className='special-package'>*</span></p>
