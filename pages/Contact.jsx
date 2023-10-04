@@ -75,7 +75,6 @@ export default function Contact() {
     }
 
     function updateFields(fields) {
-        console.log('update fields ran: ', fields)
         setData(prev => {
             if (fields.addons) { // For adding/removing addons from the addons array
                 let tempArr = [...prev.addons];
@@ -98,7 +97,6 @@ export default function Contact() {
 
                 fields.addons = tempArr
             }
-            // console.log({...prev}, {...fields}, {...prev, ...fields})
             return { ...prev, ...fields }
         })
     }
@@ -124,7 +122,6 @@ export default function Contact() {
                     progress: undefined
                 })
             } else if (currentStepIndex === 1) {
-                console.log(currentStepIndex === 1, data.dogHair, data.dirtiness)
                 if (data.serviceType === "Interior") {
                     if (data.interior === "" || data.dogHair === "" || data.dirtiness === "") {
                         return toast.error('Please fill out all required fields! (Ones marked with a *)', {
@@ -219,7 +216,6 @@ export default function Contact() {
     }
 
     const finalSubmit = (formData, e) => {
-        console.log(formData);
         fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
             method: "POST",
             body: formData

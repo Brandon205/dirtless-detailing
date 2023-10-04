@@ -8,8 +8,8 @@ const animationVariants = {
             x: 0,
             y: 0,
             transition: {
-            when: 'beforeChildren',
-            staggerChildren: 0.1
+                when: 'beforeChildren',
+                staggerChildren: 0.1
             }
         }
     },
@@ -68,6 +68,31 @@ const animationVariants = {
             border: '2px solid #6741d9',
             filter: 'blur(0)'
         }
+    },
+    leftParent: {
+        visible: {
+            opacity: 1,
+            transition: {
+                when: 'beforeChildren',
+                delay: 1,
+                staggerChildren: 0.5
+            }
+        },
+        hidden: {
+            opacity: 0,
+            transition: {
+                when: 'afterChildren',
+                staggerChildren: 0
+            }
+        }
+    },
+    leftChild: {
+        visible: { opacity: 1, x: 0 },
+        hidden: { opacity: 0, x: '-10%' }
+    },
+    leftChildDiff: {
+        visible: { opacity: 1, x: 0 },
+        hidden: { opacity: 0, x: '10%' }
     }
 }
 

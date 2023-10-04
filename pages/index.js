@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Metatags from '../utils/Metatags';
-import { motion } from 'framer-motion';
+// import animationVariants from '../utils/animationVariations';
+// import { motion } from 'framer-motion';
 
 export default function Home() {
     const [screenWidth, setScreenWidth] = useState(null);
@@ -10,33 +11,7 @@ export default function Home() {
         setScreenWidth(window.innerWidth);
     }, []);
 
-    const leftParent = {
-        visible: {
-            opacity: 1, 
-            transition: {
-                when: 'beforeChildren',
-                delay: 1,
-                staggerChildren: 0.5
-            }
-        },
-        hidden: {
-            opacity: 0, 
-            transition: {
-                when: 'afterChildren',
-                staggerChildren: 0
-            }
-        }
-    }
-
-    const leftChild = {
-        visible: {opacity: 1, x: 0},
-        hidden: {opacity: 0, x: '-10%'}
-    }
-
-    const leftChildDiff = {
-        visible: {opacity: 1, x: 0},
-        hidden: {opacity: 0, x: '10%'}
-    }
+    console.log(screenWidth)
 
     return (
         <div className="App">
@@ -135,7 +110,7 @@ export default function Home() {
                     <p>Transform your vehicle's interior with our premium Auto Detailing services. Experience a cleaner, fresher, and more comfortable driving environment while also enhancing the value of your vehicle. </p>
                 </div>
                 
-                <div className="otherservices-subcontainer" style={{justifyContent: 'space-around'}}>
+                <div className="otherservices-subcontainer">
                     <div className='popular-services-card'>
                         <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/907d2e8b-5d24-40bf-387e-90be139c2d00/public)` }}></div>
                         <div className='popular-header'>
@@ -147,17 +122,28 @@ export default function Home() {
                         </div>
                         <hr className="long-hr accent-orange" />
                         
-                        <motion.ul whileInView='visible' animate='visible' initial='hidden' variants={leftParent} className='checklist'>
-                            <motion.li variants={leftChild} className='checklist-item'>Remove hidden dirt/debris with our vortex blowgun</motion.li>
-                            <motion.hr variants={leftChildDiff} className='accent-orange' />
-                            <motion.li variants={leftChild} className='checklist-item'>Steam extraction/carpet shampooing</motion.li>
-                            <motion.hr variants={leftChildDiff} className='accent-orange' />
-                            <motion.li variants={leftChild} className='checklist-item'>Door jambs cleaned</motion.li>
-                            <motion.hr variants={leftChildDiff} className='accent-orange' />
-                            <motion.li variants={leftChild} className='checklist-item'>All Leathers and plastics cleaned</motion.li>
-                            <motion.hr variants={leftChildDiff} className='accent-orange' />
-                            <motion.li variants={leftChild} className='checklist-item'>All interior windows and glass cleaned</motion.li>
-                        </motion.ul>
+                        {/* <motion.ul whileInView='visible' animate='visible' initial='hidden' variants={animationValeftParent} className='checklist'>
+                            <motion.li variants={animationVariants.leftChild} className='checklist-item'>Remove hidden dirt/debris with our vortex blowgun</motion.li>
+                            <motion.hr variants={animationVariants.leftChildDiff} className='accent-orange' />
+                            <motion.li variants={animationVariants.leftChild} className='checklist-item'>Steam extraction/carpet shampooing</motion.li>
+                            <motion.hr variants={animationVariants.leftChildDiff} className='accent-orange' />
+                            <motion.li variants={animationVariants.leftChild} className='checklist-item'>Door jambs cleaned</motion.li>
+                            <motion.hr variants={animationVariants.leftChildDiff} className='accent-orange' />
+                            <motion.li variants={animationVariants.leftChild} className='checklist-item'>All Leathers and plastics cleaned</motion.li>
+                            <motion.hr variants={animationVariants.leftChildDiff} className='accent-orange' />
+                            <motion.li variants={animationVariants.leftChild} className='checklist-item'>All interior windows and glass cleaned</motion.li>
+                        </motion.ul> */}
+                        <ul className='checklist'>
+                            <li className='checklist-item'>Remove hidden dirt/debris with our vortex blowgun</li>
+                            <hr className='accent-orange' />
+                            <li className='checklist-item'>Steam extraction/carpet shampooing</li>
+                            <hr className='accent-orange' />
+                            <li className='checklist-item'>Door jambs cleaned</li>
+                            <hr className='accent-orange' />
+                            <li className='checklist-item'>All Leathers and plastics cleaned</li>
+                            <hr className='accent-orange' />
+                            <li className='checklist-item'>All interior windows and glass cleaned</li>
+                        </ul>
 
                         <hr className="long-hr accent-orange" />
                         <div className='popular-link-container'>
@@ -169,7 +155,7 @@ export default function Home() {
                     <div className='popular-services-card'>
                         <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d09c52dc-c233-4cbd-c347-07de1c945d00/public)` }}></div>
                         <div className='popular-header'>
-                            <h3 className='accent-blue'>Full Interior +  Spill Guard</h3>
+                            <h3 className='accent-blue'>Interior +  Spill Guard</h3>
                             <div>
                                 <p>Starting At:</p>
                                 <p className='popular-pricing-price'>$450</p>
@@ -200,7 +186,7 @@ export default function Home() {
                     </p>
                 </div>
 
-                <div style={{paddingBottom: '3rem'}} className="otherservices-subcontainer">
+                <div style={{paddingBottom: '3rem', gap: '4rem'}} className="otherservices-subcontainer">
                     <div className='popular-services-card'>
                         <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b5859464-3c0e-4fcf-8332-17155eb86d00/public)` }}></div>
                         <div className='popular-header'>
@@ -340,7 +326,7 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className='review-card'>
+                        <div className='review-card' style={{display: screenWidth >= 1750 && screenWidth <= 2300 ? 'none' : 'flex'}}>
                             <div className='review-top'>
                                 <p className='review-text'>"Brought in my 12 Escalade and he worked his magic on both inside and outside. <span className='highlight'>Brenden is very good at what he does, the vehicle looks amazing. Better than it was when I bought it.</span> Thank you so much for getting me into your schedule. I am Extremely pleased with the outcome of your services."</p>
                             </div>
