@@ -220,34 +220,34 @@ export default function Contact() {
             "event": "Form Submitted"
         }
         window.dataLayer.push(dataObject)
-        fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
-            method: "POST",
-            body: formData
-        }).then(() => {
-            toast.success("Form submitted! Expect a text response from us soon!", {
-                position: "bottom-center",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined
-            })
-            e.target.reset();
-            setData(INITIAL_DATA)
-            window.scrollTo(0, 0);
+        // fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
+        //     method: "POST",
+        //     body: formData
+        // }).then(() => {
+        //     toast.success("Form submitted! Expect a text response from us soon!", {
+        //         position: "bottom-center",
+        //         autoClose: 5000,
+        //         hideProgressBar: false,
+        //         closeOnClick: true,
+        //         pauseOnHover: true,
+        //         draggable: true,
+        //         progress: undefined
+        //     })
+        //     e.target.reset();
+        //     setData(INITIAL_DATA)
+        //     window.scrollTo(0, 0);
 
-        }).catch(error => {
-            toast.error("An error occurred, please try again." + error, {
-                position: "bottom-center",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined
-            })
-        });
+        // }).catch(error => {
+        //     toast.error("An error occurred, please try again." + error, {
+        //         position: "bottom-center",
+        //         autoClose: 5000,
+        //         hideProgressBar: false,
+        //         closeOnClick: true,
+        //         pauseOnHover: true,
+        //         draggable: true,
+        //         progress: undefined
+        //     })
+        // });
     }
 
     return (
