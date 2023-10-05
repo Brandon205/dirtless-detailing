@@ -122,23 +122,23 @@ export default function Home() {
                         
                         <ul className='checklist'>
                             <li>
-                                <img src='../assets/icons/checkmark1.png' alt='steering wheel' className='icon-36' />
+                                <img src='../assets/icons/checkmark.svg' alt='steering wheel' className='icon-36' />
                                 <p className='checklist-item'>Blow out all dirt/debris</p>
                             </li>
                             <li>
-                                <img src='../assets/icons/checkmark1.png' alt='steering wheel' className='icon-36' />
+                                <img src='../assets/icons/checkmark.svg' alt='steering wheel' className='icon-36' />
                                 <p className='checklist-item'>Steam extraction/carpet shampooing</p>
                             </li>
                             <li>
-                                <img src='../assets/icons/checkmark1.png' alt='steering wheel' className='icon-36' />
+                                <img src='../assets/icons/checkmark.svg' alt='steering wheel' className='icon-36' />
                                 <p className='checklist-item'>Door jambs cleaned</p>
                             </li>
                             <li>
-                                <img src='../assets/icons/checkmark1.png' alt='steering wheel' className='icon-36' />
+                                <img src='../assets/icons/checkmark.svg' alt='steering wheel' className='icon-36' />
                                 <p className='checklist-item'>All Leathers and plastics cleaned</p>
                             </li>
                             <li>
-                                <img src='../assets/icons/checkmark1.png' alt='steering wheel' className='icon-36' />
+                                <img src='../assets/icons/checkmark.svg' alt='steering wheel' className='icon-36' />
                                 <p className='checklist-item'>All interior windows and glass cleaned</p>
                             </li>
                         </ul>
@@ -163,11 +163,11 @@ export default function Home() {
 
                         <ul className='checklist'>
                             <li>
-                                <img src='../assets/icons/checkmark1.png' alt='steering wheel' className='icon-36' style={{marginTop: '5px'}} />
+                                <img src='../assets/icons/checkmark.svg' alt='steering wheel' className='icon-36' style={{marginTop: '5px'}} />
                                 <p className='checklist-item'><span className="bold">EVERYTHING</span> from our Full Interior Service</p>
                             </li>
                             <li>
-                                <img src='../assets/icons/checkmark1.png' alt='steering wheel' className='icon-36' style={{marginTop: '5px'}} />
+                                <img src='../assets/icons/checkmark.svg' alt='steering wheel' className='icon-36' style={{marginTop: '5px'}} />
                                 <p className='checklist-item'>Interior Ceramic Coating applied on all surfaces</p>
                             </li>
                         </ul>
@@ -203,19 +203,19 @@ export default function Home() {
 
                         <ul className='checklist'>
                             <li>
-                                <img src='../assets/icons/checkmark1.png' alt='steering wheel' className='icon-36' style={{marginTop: '5px'}} />
+                                <img src='../assets/icons/checkmark.svg' alt='steering wheel' className='icon-36' style={{marginTop: '5px'}} />
                                 <p className='checklist-item'>Full vehicle strip wash (to remove any embedded contaminants, tar, and sap)</p>
                             </li>
                             <li>
-                                <img src='../assets/icons/checkmark1.png' alt='steering wheel' className='icon-36' style={{marginTop: '5px'}} />
+                                <img src='../assets/icons/checkmark.svg' alt='steering wheel' className='icon-36' style={{marginTop: '5px'}} />
                                 <p className='checklist-item'>Thoroughly wash tires, wheels, wheel barrels and wells</p>
                             </li>
                             <li>
-                                <img src='../assets/icons/checkmark1.png' alt='steering wheel' className='icon-36' />
+                                <img src='../assets/icons/checkmark.svg' alt='steering wheel' className='icon-36' />
                                 <p className='checklist-item'>Clean door jambs and the gas door</p>
                             </li>
                             <li>
-                                <img src='../assets/icons/checkmark1.png' alt='steering wheel' className='icon-36' />
+                                <img src='../assets/icons/checkmark.svg' alt='steering wheel' className='icon-36' />
                                 <p className='checklist-item'>Ceramic protection applied to paint (lasts up to 1 year)</p>
                             </li>
                         </ul>
@@ -239,23 +239,23 @@ export default function Home() {
 
                         <ul className='checklist'>
                             <li>
-                                <img src='../assets/icons/checkmark1.png' alt='steering wheel' className='icon-36' style={{marginTop: '5px'}} />
+                                <img src='../assets/icons/checkmark.svg' alt='steering wheel' className='icon-36' style={{marginTop: '5px'}} />
                                 <p className='checklist-item'><span className="bold">EVERYTHING</span> from our Exterior Decon Service</p>
                             </li>
                             <li>
-                                <img src='../assets/icons/checkmark1.png' alt='steering wheel' className='icon-36' style={{marginTop: '5px'}} />
+                                <img src='../assets/icons/checkmark.svg' alt='steering wheel' className='icon-36' style={{marginTop: '5px'}} />
                                 <p className='checklist-item'>Light polish to remove minor swirls and waterspots</p>
                             </li>
                             <li>
-                                <img src='../assets/icons/checkmark1.png' alt='steering wheel' className='icon-36' />
+                                <img src='../assets/icons/checkmark.svg' alt='steering wheel' className='icon-36' />
                                 <p className='checklist-item'>Restore and ceramic coat all trim</p>
                             </li>
                             <li>
-                                <img src='../assets/icons/checkmark1.png' alt='steering wheel' className='icon-36' style={{marginTop: '5px'}} />
+                                <img src='../assets/icons/checkmark.svg' alt='steering wheel' className='icon-36' style={{marginTop: '5px'}} />
                                 <p className='checklist-item'>Windshield Coating (you won't even need to use your wipers anymore!)</p>
                             </li>
                             <li>
-                                <img src='../assets/icons/checkmark1.png' alt='steering wheel' className='icon-36' style={{marginTop: '5px'}} />
+                                <img src='../assets/icons/checkmark.svg' alt='steering wheel' className='icon-36' style={{marginTop: '5px'}} />
                                 <p className='checklist-item'>Ceramic protection applied on paint (lasts up to 1 year)</p>
                             </li>
                         </ul>
@@ -279,27 +279,27 @@ export default function Home() {
 
                         <ul className='checklist'>
                             <li>
-                                <img src='../assets/icons/checkmark1.png' alt='steering wheel' className='icon-36' style={{marginTop: '5px'}} />
+                                <img src='../assets/icons/checkmark.svg' alt='steering wheel' className='icon-36' style={{marginTop: '5px'}} />
                                 <p className='checklist-item'><span className="bold">EVERYTHING</span> from our Exterior Decon Service</p>
                             </li>
                             <li>
-                                <img src='../assets/icons/checkmark1.png' alt='steering wheel' className='icon-36' style={{marginTop: '5px'}} />
+                                <img src='../assets/icons/checkmark.svg' alt='steering wheel' className='icon-36' style={{marginTop: '5px'}} />
                                 <p className='checklist-item'>Our full paint correction process (Removes 80%-90% of scratching)</p>
                             </li>
                             <li>
-                                <img src='../assets/icons/checkmark1.png' alt='steering wheel' className='icon-36' />
+                                <img src='../assets/icons/checkmark.svg' alt='steering wheel' className='icon-36' />
                                 <p className='checklist-item'>Restore and ceramic coat all trim</p>
                             </li>
                             <li>
-                                <img src='../assets/icons/checkmark1.png' alt='steering wheel' className='icon-36' style={{marginTop: '5px'}} />
+                                <img src='../assets/icons/checkmark.svg' alt='steering wheel' className='icon-36' style={{marginTop: '5px'}} />
                                 <p className='checklist-item'>Windshield Coating (you won't even need to use your wipers anymore!)</p>
                             </li>
                             <li>
-                                <img src='../assets/icons/checkmark1.png' alt='steering wheel' className='icon-36' style={{marginTop: '5px'}} />
+                                <img src='../assets/icons/checkmark.svg' alt='steering wheel' className='icon-36' style={{marginTop: '5px'}} />
                                 <p className='checklist-item'>Ceramic coat wheel faces</p>
                             </li>
                             <li>
-                                <img src='../assets/icons/checkmark1.png' alt='steering wheel' className='icon-36' style={{marginTop: '5px'}} />
+                                <img src='../assets/icons/checkmark.svg' alt='steering wheel' className='icon-36' style={{marginTop: '5px'}} />
                                 <p className='checklist-item'>Ceramic coating applied to paint (Lasts up to 5 years!)</p>
                             </li>
                         </ul>
