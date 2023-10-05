@@ -85,7 +85,7 @@ export default function ExteriorSeal() {
                 <h3 className="pricing__heading"><span className='accent-orange bold'>Exterior Seal and Shine</span> Pricing</h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
-              <PricingComponent prices={[300, 300, 350, 350, 400, 400]} addons={[addons.engine]} />
+              <PricingComponent prices={[300, 300, 300, 350, 400, 400]} addons={[addons.engine]} />
             </div>
 
             <h2 className='cleaning-process-title text-xl'>Our Exterior Seal and Shine Process</h2>
@@ -96,7 +96,7 @@ export default function ExteriorSeal() {
                 </div>
                 <div className='step-container'>
                   <h4 className="step-title">Wash Vehicle</h4>
-                  <p className='step-desc'>Thorough 2 bucket or equivalent top to bottom wash including the inside of the gas door.</p>
+                  <p className='step-desc'>Thorough top to bottom wash including the the gas door.</p>
                 </div>
               </li>
               <li className="item">
@@ -122,8 +122,8 @@ export default function ExteriorSeal() {
                   <h3 className='step-number'>4</h3>
                 </div>
                 <div className='step-container'>
-                  <h4 className="step-title">Remove scratches and watermarks</h4>
-                  <p className='step-desc'>Perform our Polishing Procedure removing many of the lighter scratches and swirls from your paint. This also removes all watermarks on the vehicle, even on the glass as we go over that as well.</p>
+                  <h4 className="step-title">Dry Vehicle</h4>
+                  <p className='step-desc'>Dry the whole vehicle with drying towels and air blowers.</p>
                 </div>
               </li>
               <li className="item">
@@ -131,8 +131,8 @@ export default function ExteriorSeal() {
                   <h3 className='step-number'>5</h3>
                 </div>
                 <div className='step-container'>
-                  <h4 className="step-title">Protect Vehicle</h4>
-                  <p className='step-desc'>Apply IGL Premier to the whole vehicle giving you 6 more months of protection on top of the protection from the polish! At this stage we'll also apply our windshield and trim coatings to cover the rest of your vehicle!</p>
+                  <h4 className="step-title">Remove scratches and watermarks</h4>
+                  <p className='step-desc'>Perform our Polishing Procedure removing many of the lighter scratches and swirls from your paint. This also removes most lighter watermarks from the vehicle, even on the glass as we go over that as well.</p>
                 </div>
               </li>
               <li className="item">
@@ -140,13 +140,22 @@ export default function ExteriorSeal() {
                   <h3 className='step-number'>6</h3>
                 </div>
                 <div className='step-container'>
-                  <h4 className="step-title">Dry Vehicle</h4>
-                  <p className='step-desc'>Dry the whole vehicle with drying towels and air blowers.</p>
+                  <h4 className="step-title">Protect Vehicle</h4>
+                  <p className='step-desc'>Apply ceramic protection, which can last up to a year. At this stage we'll also apply our windshield and trim coatings to cover the rest of your vehicle!</p>
                 </div>
               </li>
               <li className="item">
                 <div className='step-number-container'>
                   <h3 className='step-number'>7</h3>
+                </div>
+                <div className='step-container'>
+                  <h4 className="step-title">Clean Door Jambs</h4>
+                  <p className='step-desc'>Thoroughly wipe down all the cracks and crevices in the door jambs.</p>
+                </div>
+              </li>
+              <li className="item">
+                <div className='step-number-container'>
+                  <h3 className='step-number'>8</h3>
                 </div>
                 <div className='step-container'>
                   <h4 className="step-title">Final Touches</h4>
@@ -155,7 +164,7 @@ export default function ExteriorSeal() {
               </li>
               <li className="item item-disabled">
                 <div className='step-number-container'>
-                  <h3 className='step-number' style={{border: '2px solid #aaa'}}>8</h3>
+                  <h3 className='step-number' style={{border: '2px solid #aaa'}}>9</h3>
                 </div>
                 <div className='step-container'>
                   <h4 className="step-title">All this and more! <a href="/services/exterior-correct"><img src='../assets/icons/linking.png' alt='external link' className='icon-24' /></a></h4>

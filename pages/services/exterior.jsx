@@ -85,7 +85,7 @@ export default function Exterior() {
                 <h3 className="pricing__heading"><span className='accent-orange bold'>Exterior Decon Wash</span> Pricing</h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
-              <PricingComponent prices={[100, 100, 125, 125, 150, 150]} addons={[addons.engine]} />
+              <PricingComponent prices={[100, 100, 100, 125, 150, 150]} addons={[addons.engine]} />
             </div>
 
             <h2 className='cleaning-process-title text-xl'>Our Exterior Decon Wash Process</h2>
@@ -96,7 +96,7 @@ export default function Exterior() {
                 </div>
                 <div className='step-container'>
                   <h4 className="step-title">Wash Vehicle</h4>
-                  <p className='step-desc'>Thorough 2 bucket or equivalent top to bottom wash including the inside of the gas door.</p>
+                  <p className='step-desc'>Thorough top to bottom wash including the inside of the gas door.</p>
                 </div>
               </li>
               <li className="item">
@@ -140,13 +140,22 @@ export default function Exterior() {
                   <h3 className='step-number'>6</h3>
                 </div>
                 <div className='step-container'>
+                  <h4 className="step-title">Clean Door Jambs</h4>
+                  <p className='step-desc'>Thoroughly wipe down all the cracks and crevices in the door jambs.</p>
+                </div>
+              </li>
+              <li className="item">
+                <div className='step-number-container'>
+                  <h3 className='step-number'>7</h3>
+                </div>
+                <div className='step-container'>
                   <h4 className="step-title">Final Touches</h4>
                   <p className='step-desc'>Dress tires, wheel wells and plastics.</p>
                 </div>
               </li>
               <li className="item item-disabled">
                 <div className='step-number-container'>
-                  <h3 className='step-number' style={{border: '2px solid #aaa'}}>7</h3>
+                  <h3 className='step-number' style={{border: '2px solid #aaa'}}>8</h3>
                 </div>
                 <div className='step-container'>
                   <h4 className="step-title">All this and more! <a href="/services/exterior-seal"><img src='../assets/icons/linking.png' alt='external link' className='icon-24' /></a></h4>

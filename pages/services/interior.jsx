@@ -84,7 +84,7 @@ export default function FullIntEx() {
                 <h3 className="pricing__heading"><span className='accent-orange bold'>Full Interior</span> Pricing</h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
-              <PricingComponent prices={[300, 300, 335, 335, 375, 375]} addons={[addons.ozone]} />
+              <PricingComponent prices={[300, 300, 300, 335, 375, 375]} addons={[addons.ozone]} />
             </div>
 
             <h2 className='cleaning-process-title text-xl'>Our Interior Cleaning Process</h2>

@@ -216,7 +216,7 @@ export default function Home() {
                             </li>
                             <li>
                                 <img src='../assets/icons/checkmark.svg' alt='steering wheel' className='icon-36' />
-                                <p className='checklist-item'>Ceramic protection applied to paint (lasts up to 1 year)</p>
+                                <p className='checklist-item'>Ceramic protection applied to paint (lasts up to 3 months)</p>
                             </li>
                         </ul>
 

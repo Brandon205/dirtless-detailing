@@ -74,7 +74,7 @@ export default function ExteriorCorrect() {
               <div className="service-explain">
                 <p>This is our top of the line exterior service. If you want to remove the swirls and scratches in your paint from years of wear and damage then this is the service for you. On top of that we apply a 5 year coating which will protect your vehicle for years to come.</p>
                 <p><span className='special-package'>Note:</span> This is one of the services that we require you to bring and drop off your car for, most likely overnight as the ceramic coating has a cure time before it's ready to be exposed to the elements. Also our shop has proper lighting to ensure that we don't miss any spots on the paint.</p>
-                <p>Proper maintenance is vital to keep your coating in good condition. This is why we give you a bottle of IGL Enhancer to use after you wash your car from now on. We offer maintenance services if you want feel free to let us know! If you wan a more DIY solution then we've got a list of products and steps that we recommend <a href="/products/ceramic-coating" className='aside-link'>here</a>.</p>
+                <p>Proper maintenance is vital to keep your coating in good condition. This is why we give you a bottle of IGL Enhancer to use after you wash your car from now on. We offer maintenance services if you want feel free to let us know! If you want a more DIY solution then we've got a list of products and steps that we recommend <a href="/products/ceramic-coating" className='aside-link'>here</a>.</p>
                 <p>If you want the full experience make sure to book a <a href="/services/interior" className='aside-link'>Full Interior</a> detail as well! It's only one extra step for you, but it will completely revamp your interior!</p>
               </div>
             </main>
@@ -85,7 +85,7 @@ export default function ExteriorCorrect() {
                 <h3 className="pricing__heading"><span className='accent-orange bold'>Correct and Protect</span> Pricing</h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
-              <PricingComponent prices={[1300, 1300, 1500, 1500, 1700, 1700]} addons={[addons.engine]} />
+              <PricingComponent prices={[1300, 1300, 1300, 1500, 1700, 1700]} addons={[addons.engine]} />
             </div>
 
             <h2 className='cleaning-process-title text-xl'>Our Exterior Correct and Protect Process</h2>
@@ -96,7 +96,7 @@ export default function ExteriorCorrect() {
                 </div>
                 <div className='step-container'>
                   <h4 className="step-title">Wash Vehicle</h4>
-                  <p className='step-desc'>Thorough 2 bucket or equivalent top to bottom wash including the inside of the gas door.</p>
+                  <p className='step-desc'>Thorough top to bottom wash including the gas door.</p>
                 </div>
               </li>
               <li className="item">
@@ -122,8 +122,8 @@ export default function ExteriorCorrect() {
                   <h3 className='step-number'>4</h3>
                 </div>
                 <div className='step-container'>
-                  <h4 className="step-title">Remove scratches and watermarks</h4>
-                  <p className='step-desc'>Perform our Paint Correction Procedure removing up to 85% of scratches and greatly reducing the look of deeper scratches. We also go over the glass as well removing any watermarks and some scratches from that.</p>
+                  <h4 className="step-title">Dry Vehicle</h4>
+                  <p className='step-desc'>Dry the whole vehicle with drying towels and air blowers.</p>
                 </div>
               </li>
               <li className="item">
@@ -131,8 +131,8 @@ export default function ExteriorCorrect() {
                   <h3 className='step-number'>5</h3>
                 </div>
                 <div className='step-container'>
-                  <h4 className="step-title">Protect Vehicle</h4>
-                  <p className='step-desc'>Apply a 5 year Ceramic Coating to the paint, our windshield coating to the windshield, and the trim coating to all trim. Now there's no part of your car that's uncoated!</p>
+                  <h4 className="step-title">Remove scratches and watermarks</h4>
+                  <p className='step-desc'>Perform our Paint Correction procedure removing up to 85%-90% of scratches and greatly reducing the look of deeper scratches. We also go over the glass as well removing watermarks and fine scratches.</p>
                 </div>
               </li>
               <li className="item">
@@ -140,8 +140,8 @@ export default function ExteriorCorrect() {
                   <h3 className='step-number'>6</h3>
                 </div>
                 <div className='step-container'>
-                  <h4 className="step-title">Dry Vehicle</h4>
-                  <p className='step-desc'>Dry the whole vehicle with drying towels and air blowers.</p>
+                  <h4 className="step-title">Protect Vehicle</h4>
+                  <p className='step-desc'>Apply our 5 year coating to the paint. At this point we also coat the windshield and the trim. Now there's no part of your car that's uncoated!</p>
                 </div>
               </li>
               <li className="item">
@@ -149,8 +149,17 @@ export default function ExteriorCorrect() {
                   <h3 className='step-number'>7</h3>
                 </div>
                 <div className='step-container'>
+                  <h4 className="step-title">Clean Door Jambs</h4>
+                  <p className='step-desc'>Thoroughly wipe down all the cracks and crevices in the door jambs.</p>
+                </div>
+              </li>
+              <li className="item">
+                <div className='step-number-container'>
+                  <h3 className='step-number'>8</h3>
+                </div>
+                <div className='step-container'>
                   <h4 className="step-title">Final Touches</h4>
-                  <p className='step-desc'>Dress tires, wheel wells and plastics.</p>
+                  <p className='step-desc'>Dress tires with ceramic tire shine, and also dress the wheel wells.</p>
                 </div>
               </li>
             </ol>
