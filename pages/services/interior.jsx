@@ -95,7 +95,7 @@ export default function FullIntEx() {
                 </div>
                 <div className='step-container'>
                   <h4 className="step-title">Expose Hidden Dirt</h4>
-                  <p className='step-desc'>Use drill brushes and our Tornador Vortex Blowgun which uses compressed air to blow out any loose soil and gets areas that are hard to reach with a vacuum.</p>
+                  <p className='step-desc'>Blow out all hidden dirt and debris and gets areas that are hard to reach with a vacuum.</p>
                 </div>
               </li>
               <li className="item">
@@ -112,8 +112,8 @@ export default function FullIntEx() {
                   <h3 className='step-number'>3</h3>
                 </div>
                 <div className='step-container'>
-                  <h4 className="step-title">Hot Water Extraction (if needed)</h4>
-                  <p className='step-desc'>We use a professional grade hot water extractor and professional flex stain remover and alkaline floor rinse to keep floors at a neutral PH level. We will be sure to get all carpets, floor mats, and cloth seats.</p>
+                  <h4 className="step-title">Hot Water Extraction (stain removal)</h4>
+                  <p className='step-desc'>Remove/Extract all stains that we can. We will be sure to get all carpets, floor mats, and cloth seats.</p>
                 </div>
               </li>
               <li className="item">
@@ -149,7 +149,7 @@ export default function FullIntEx() {
                 </div>
                 <div className='step-container'>
                   <h4 className="step-title">Interior Spill Guard Coating <a href="/services/interior-spill"><img src='../assets/icons/linking.png' alt='external link' className='icon-24' /></a></h4>
-                  <p className='step-desc'>Upgrade to our Spill Guard Service to have us apply a 1 year interior ceramic coating to all surfaces in the vehicle. This is PERFECT for cars with kids, pets, or daily coffee trips with the occasional spills as cleaning it will now be 10x easier. See more info <a href="/services/interior-spill" className='aside-link'>here</a>.</p>
+                  <p className='step-desc'>Upgrade to our Spill Guard Service to have us apply a 1 year interior ceramic coating to all surfaces in the vehicle. This is PERFECT for cars with kids, pets, or daily coffee trips with the occasional spills as cleaning it will now be easier. See more info <a href="/services/interior-spill" className='aside-link'>here</a>.</p>
                 </div>
               </li>
             </ol>

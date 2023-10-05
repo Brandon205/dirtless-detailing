@@ -167,7 +167,7 @@ export default function Exterior() {
             <br className='extra-space' />
 
             <p style={{fontSize: '2rem', margin: 0, color: 'white'}}>End Results</p>
-            <h3 className='pricing__heading'>100x Better than a car wash.</h3>
+            <h3 className='pricing__heading'>What a car wash should be.</h3>
             <p className='pricing__subtext'>Your car, washed, without the unnecessary scratching and missed corners.</p>
             <div style={{display: 'grid', marginBottom: '10vh'}} className='place-center'>
               <div className='slider-container'>
