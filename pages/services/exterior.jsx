@@ -72,9 +72,9 @@ export default function Exterior() {
               <h2 style={{marginBottom: 0}} className='text-large'>Exterior Decon Wash</h2>
               <hr style={{margin: '0 auto 3rem auto'}} />
               <div className="service-explain">
-                <p>This is our base wash service, designed to give the outside of your vehicle a thorough cleaning and even top it off with a 3 month ceramic spray to protect it for some time to come.</p>
-                <p>Wheels and tires can easily be one of the dirtiest parts of a car without you even realizing it, and brake dust is no joke once it's been on there for a while. That's why we have a wide array of chemicals and products to best clean even the dirtiest wheels.</p>
-                <p>In our Decon Wash our goal is not to just give your car a quick mitt wash and call it good, we want to make sure that the paint itself it even clean. A Decon Wash is what your car needs to remove all contaminants including Iron, Tar, and road film.</p>
+                <p>This is our base exterior detailing service. It is designed to give the outside of your vehicle a thorough cleaning and decontamination.  We even top it off with a 3 month ceramic spray to protect it for time to come.</p>
+                <p>Wheels and tires can easily be one of the dirtiest parts of a car without you even realizing it, and brake dust is no joke once it's been on there for a while. Thats why we have a wide array of chemicals and products to best clean even the dirtiest wheels.</p>
+                <p>In our Decon Wash, our goal is not to just give your car a quick mitt wash and call it good. A Decon Wash is more in-depth removing all contaminants including iron, tar, artilary fungus etc.</p>
                 <p>And while we're at it, how's the interior of your car doing? We'd be more than happy to clean it out as well, no matter the condition! Check out our interior offers <a href="/services/interior" className='aside-link'>here</a>.</p>
               </div>
             </main>

@@ -72,10 +72,10 @@ export default function InteriorSpill() {
               <h2 style={{marginBottom: 0}} className='text-large'>Full Interior + Spill Guard</h2>
               <hr style={{margin: '0 auto 3rem auto'}} />
               <div className="service-explain">
-                <p>If your car's interior is often put under heavy use by kids, food, drinks, and even animals then this is the best choice for you. Not only will we remove the past few months of dirt, french fries, and who knows what else, but we'll also protect your interior from the next few months of use!</p>
-                <p>With this Spill Guard option you'll get a layer of ceramic coating applied to all materials of your vehicle, even the fabric! Now cleanup from life's accidents will be far easier as the coating will act as a protective layer and will give you more time to clean up before things soak in.</p>
-                <p>And don't worry, the coating doesn't act like the cheap conditioners that you can buy either, where they shine things for a week and make all surfaces slippery. Your car will feel similar, look brighter, and you won't be sliding around in your seat when you drive.</p>
-                <p>Do you need the outside of your car washed too? Feel free to book an interior and exterior detail, it's the best way to get your whole vehicle brought back to life! Check out our base exterior cleaning <a href="/services/exterior" className='aside-link'>here</a>, starting at only <span className='bold'>$75</span>!</p>
+                <p>If your cars interior is often put under heavy use by kids, food, drinks, and even animals, then this is the best choice for you. Not only will we remove the past few months of dirt, french fries, and who knows what else, but we'll also protect your interior for time to come!</p>
+                <p>With the Spill Guard option, you'll get a layer of ceramic coating applied to all materials of your vehicle, even the fabric! Now cleanup from life's accidents will be far easier as the coating will act as a protective layer, which will give you more time to clean up before things soak in.</p>
+                <p>And don't worry, the coating doesn't act like the cheap conditioners, and make all surfaces slippery. All materials will feel similar, look similar, and you won't be sliding around in your seat when you drive like other products.</p>
+                <p>Do you need the outside detailed as well? Feel free to book an interior and exterior detail. It's the best way to get your whole vehicle brought back to life! Check out our base exterior cleaning <a href="/services/exterior" className='aside-link'>here</a>, starting at only <span className='bold'>$100</span>!</p>
               </div>
             </main>
             <br className='extra-space' />

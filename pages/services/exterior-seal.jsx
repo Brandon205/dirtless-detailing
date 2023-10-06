@@ -72,10 +72,10 @@ export default function ExteriorSeal() {
               <h2 style={{marginBottom: 0}} className='text-large'>Exterior Seal and Shine</h2>
               <hr style={{margin: '0 auto 3rem auto'}} />
               <div className="service-explain">
-                <p>This service comes with everything from our base tier Wash Service, including the deep wheel cleaning and decon wash. However it adds steps after those that will truely transform your vehicles paint.</p>
-                <p>The "Seal" part of this service comes from a product made by IGL which we polish onto the paint restoring the shine while removing scratches. Wiping down the vehicle with IGL Premier ensures an unmatched shine and protection.</p>
-                <p>Drive confidently year-round with our Exterior Seal and Shine service, combining the power of a thorough decontamination wash, precision polishing, and IGL Premier coating, ensuring your car remains protected and shines like it just rolled off the showroom floor.</p>
-                <p>Now's the perfect time to book a interior cleaning as well if you need it. Check out our current offers and pricing on our base interior service <a href="/services/interior" className='aside-link'>here</a>.</p>
+                <p>This service comes with everything from our Exterior Decon Wash Service and more! If you are looking to truly brighten your vehicles paint and make it glow, or just get rid of minor swirl marks, this is the package for you.</p>
+                <p>After our decon wash, we clay your paint removing any final embedded contaminates. From there, we refine your paint by doing a light polishing step to increase depth and gloss. Finally, we top all of that goodness with up to 1 year of ceramic protection on your whole vehicle!</p>
+                <p>This is a great service to get yearly on ceramic coated, and non ceramic coated vehicles to refresh your exterior, and always have it looking its best.</p>
+                <p>Now's the perfect time to book a interior cleaning as well. Check out our current offers and pricing on our base interior service <a href="/services/interior" className='aside-link'>here</a>.</p>
               </div>
             </main>
             <br className='extra-space' />

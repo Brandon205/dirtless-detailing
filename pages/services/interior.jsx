@@ -73,9 +73,9 @@ export default function FullIntEx() {
               <hr style={{margin: '0 auto 3rem auto'}} />
               <div className="service-explain">
                 <p>The goal of the Full Interior Cleaning package is to restore your interior to its best condition. Your carpet, seats, floor mats, plastics, windows, and all other interior fixtures will be meticulously cleaned.</p>
-                <p>While we will attempt to remove 100% of stains many stains could prove to be more challenging to remove or might not be completely removed. Some won't completely disappear depending on the kind of stain, how long it has been sitting, and the material the stain is on. </p>
-                <p>Taking us by surprise is difficult. Please don't think that your interior is too dirty. We've seen hundreds of different interiors and have all the necessary tools to attempt to remove any kind of stain or mess.</p>
-                <p>Is your whole car a mess, inside and out? Simply book an interior and exterior service, we'll do the hard work to get your car back to 100%! Check out our exterior offers <a href="/services/exterior" className='aside-link'>here</a>.</p>
+                <p>While we will attempt to remove all stains, many stains could prove to be more challenging to remove, or might not be completely removed. Some won't completely disappear depending on the kind of stain, how long it has been sitting, and the material the stain is on.</p>
+                <p>Taking us by surprise is difficult. We will not think that your interior is too dirty. We've seen hundreds of different interiors, and have all the necessary tools for every situation.</p>
+                <p>Want the outside done as well? Simply book an interior and exterior service, we'll do the hard work to get your car back to its best condition! Check out our exterior offers <a href="/services/exterior" className='aside-link'>here</a>.</p>
               </div>
             </main>
             <br className='extra-space' />
