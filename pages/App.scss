@@ -139,19 +139,6 @@ img {
   background-color: rgba(255, 255, 255, 0);
 }
 
-.home-quote-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 22px;
-  text-decoration: none;
-  background-color: $main-clr;
-  border-radius: 6px;
-  padding: 0.5rem 1.5rem;
-  font-weight: 600;
-}
-
 .top-quote-btn {
   display: flex;
   justify-content: center;
@@ -971,6 +958,7 @@ option {
   align-items: center;
   margin-bottom: 0.5rem;
   padding: 1rem 1rem 2rem 1rem;
+  gap: 1rem;
 }
 
 @mixin popular-btn {
@@ -3301,7 +3289,7 @@ footer {
 
   .service-main {
     font-size: 1.1em;
-    padding: 0;
+    padding: 0 0 3rem 0;
   }
 
   .feature-icon {
@@ -3587,6 +3575,7 @@ footer {
   .popular-link-container {
     flex-direction: row;
     margin-bottom: 0;
+    gap: 0;
   }
 }
 
