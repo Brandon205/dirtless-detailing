@@ -97,7 +97,7 @@ export default function MyApp({ Component, pageProps }) {
             <header className="App-header">
                 <nav id="nav" ref={navBar}>
                     <a style={{ display: 'flex', justifyContent: 'flex-start' }} className='nav-logo' href="/" aria-label='Dirt-Less Detailing Logo'>
-                        <div className="header-cert" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0a945e76-f4c0-4e29-ef16-463490d0db00/public')`, height: 105 + 'px', width: 140 + 'px' }}></div>
+                        <div className="header-cert" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0a945e76-f4c0-4e29-ef16-463490d0db00/public')`, height: 105 + 'px', width: smallScreen ? '140px' : '200px' }}></div>
                     </a>
                     {nav === 'none' ?
                         <img src='../assets/icons/menuBars.png' alt='menu bars' className='menu-bars' onClick={() => setNav('block')} /> :
