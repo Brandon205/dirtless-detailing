@@ -7,8 +7,12 @@ export function ServiceType({serviceType, interior, exterior, addons, dogHair, d
             <div className="service-type-container">
                 <h3 className="contact-heading">Interior Services<span className='special-package'>*</span></h3>
                 <p className="contact-subheading">Pricing based on your vehicle size choice: <span className="special-package italic">({vehicleSize})</span></p>
+
+                <input type="checkbox" name="interior" id="interior-swift" value="Interior Swift" className='radio-button' checked={interior === "Interior Swift"} onChange={(e) => updateFields({interior: e.target.value})} />
+                <label htmlFor="interior-swift" className='checkbox-label'>Swift Interior Detail <span className='special-package italic'>(${prices[vehicleSize].interior.interiorswift})</span></label>
+
                 <input type="checkbox" name="interior" id="interior" value="Interior" className='radio-button' checked={interior === "Interior"} onChange={(e) => updateFields({interior: e.target.value})} />
-                <label htmlFor="interior" className='checkbox-label'>Full Interior <span className='special-package italic'>(${prices[vehicleSize].interior.interior})</span></label>
+                <label htmlFor="interior" className='checkbox-label'>Full Interior Detail <span className='special-package italic'>(${prices[vehicleSize].interior.interior})</span></label>
 
                 <input type="checkbox" name="interior" id="interior-spill" value="Interior Spill" className='radio-button' checked={interior === "Interior Spill"} onChange={(e) => updateFields({interior: e.target.value})} />
                 <label htmlFor="interior-spill" className='checkbox-label'>Interior + Spill Guard <span className='special-package italic'>(${prices[vehicleSize].interior.interiorspill})</span></label>
@@ -81,6 +85,9 @@ export function ServiceType({serviceType, interior, exterior, addons, dogHair, d
             <div className="service-type-container">
                 <h3 className="contact-heading">Interior Services<span className='special-package'>*</span></h3>
                 <p className="contact-subheading">Pricing based on your vehicle size choice: <span className="special-package italic">({vehicleSize})</span></p>
+
+                <input type="checkbox" name="interior" id="interior-swift" value="Interior Swift" className='radio-button' checked={interior === "Interior Swift"} onChange={(e) => updateFields({interior: e.target.value})} />
+                <label htmlFor="interior-swift" className='checkbox-label'>Swift Interior Detail <span className='special-package italic'>(${prices[vehicleSize].interior.interiorswift})</span></label>
 
                 <input type="checkbox" name="interior" id="interior" value="Interior" className='radio-button' checked={interior === "Interior"} onChange={(e) => updateFields({interior: e.target.value})} />
                 <label htmlFor="interior" className='checkbox-label'>Full Interior <span className='special-package italic'>(${prices[vehicleSize].interior.interior})</span></label>

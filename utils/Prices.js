@@ -69,7 +69,8 @@ const prices = {
     "2 Door": {
         "interior": {
             "interior": 300,
-            "interiorspill": 450
+            "interiorspill": 450,
+            "interiorswift": 150
         },
         "exterior": {
             "exteriorwash": 100,
@@ -80,7 +81,8 @@ const prices = {
     "Quarter Ton": {
         "interior": {
             "interior": 300,
-            "interiorspill": 450
+            "interiorspill": 450,
+            "interiorswift": 150
         },
         "exterior": {
             "exteriorwash": 100,
@@ -91,7 +93,8 @@ const prices = {
     "4 Door": {
         "interior": {
             "interior": 335,
-            "interiorspill": 500
+            "interiorspill": 500,
+            "interiorswift": 150
         },
         "exterior": {
             "exteriorwash": 125,
@@ -102,7 +105,8 @@ const prices = {
     "Mid Size": {
         "interior": {
             "interior": 335,
-            "interiorspill": 500
+            "interiorspill": 500,
+            "interiorswift": 175
         },
         "exterior": {
             "exteriorwash": 125,
@@ -113,7 +117,8 @@ const prices = {
     "Trucks": {
         "interior": {
             "interior": 375,
-            "interiorspill": 575
+            "interiorspill": 575,
+            "interiorswift": 175
         },
         "exterior": {
             "exteriorwash": 150,
@@ -124,7 +129,8 @@ const prices = {
     "3 Row": {
         "interior": {
             "interior": 375,
-            "interiorspill": 575
+            "interiorspill": 575,
+            "interiorswift": 200
         },
         "exterior": {
             "exteriorwash": 150,

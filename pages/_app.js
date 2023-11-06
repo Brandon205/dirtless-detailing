@@ -119,9 +119,12 @@ export default function MyApp({ Component, pageProps }) {
                                                 <div>
                                                     <h4 className='sub-menu-header'>INTERIOR CLEANING SERVICES</h4>
                                                     <motion.div variants={navChild} className='sub-menu-div' onClick={() => setNav('none')}>
-                                                        <a href="/services/interior" className='menu-link smaller-line-height'><img src='../assets/icons/steering1.png' alt='steering wheel' className='nav-icon' /> Full Interior</a>
+                                                        <a href="/services/interior-swift" className='menu-link smaller-line-height'><img src='../assets/icons/time-span.png' alt='fast clock' className='nav-icon' /> Swift Interior Detail</a>
                                                     </motion.div>
                                                     <motion.div variants={navChildDiff} className='sub-menu-div' onClick={() => setNav('none')}>
+                                                        <a href="/services/interior" className='menu-link smaller-line-height'><img src='../assets/icons/steering1.png' alt='steering wheel' className='nav-icon' /> Full Interior</a>
+                                                    </motion.div>
+                                                    <motion.div variants={navChild} className='sub-menu-div' onClick={() => setNav('none')}>
                                                         <a href="/services/interior-spill" className='menu-link smaller-line-height'><img src='../assets/icons/steeringLock.png' alt='steering wheel with lock' className='nav-icon' /> Full Interior with Spill Guard</a>
                                                     </motion.div>
                                                 </div>
@@ -204,7 +207,9 @@ export default function MyApp({ Component, pageProps }) {
                 </div>
                 <div className="footer-content-card" style={{ paddingBottom: '2rem' }}>
                     <h3>SERVICES</h3>
-                    <a href="/services/interior" className='footer-link'>Full Interior</a>
+                    <img src='https://utfs.io/f/bc116e4c-88fd-4995-ba13-234bf03046f9-5odyu.png' />
+                    <a href="/services/interior-swift" className='footer-link'>Swift Interior Detail</a>
+                    <a href="/services/interior" className='footer-link'>Full Interior Detail</a>
                     <a href="/services/interior-spill" className='footer-link'>Full Interior + Spill Guard</a>
                     <hr style={{ marginTop: '1.5rem' }} />
                     <a href="/services/exterior" className='footer-link'>Exterior Wash</a>

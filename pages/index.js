@@ -110,9 +110,49 @@ export default function Home() {
                 
                 <div className="otherservices-subcontainer">
                     <div className='popular-services-card'>
-                        <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a40931e-dd21-407c-dd03-86fd43b05200/public)`, transform: '' }}></div>
+                        <div className="new-banner">
+                            <div className='banner'>NEW!</div>
+                        </div>
+                        <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e073e12e-8f0c-4ae5-fa12-4abc9ab9db00/public)` }}></div>
                         <div className='popular-header'>
-                            <h3 className='accent-orange'>Full Interior</h3>
+                            <h3 className='accent-orange'>Swift Interior Detail</h3>
+                            <div>
+                                <p>Starting At:</p>
+                                <p className='popular-pricing-price'>$150</p>
+                            </div>
+                        </div>
+                        <hr className="long-hr accent-orange" />
+                        
+                        <ul className='checklist'>
+                            <li>
+                                <img src='../assets/icons/checkmark.svg' alt='steering wheel' className='icon-36' />
+                                <p className='checklist-item'>Vacuum the entire vehicle</p>
+                            </li>
+                            <li>
+                                <img src='../assets/icons/checkmark.svg' alt='steering wheel' className='icon-36' />
+                                <p className='checklist-item'>Wipe down and condition all surfaces</p>
+                            </li>
+                            <li>
+                                <img src='../assets/icons/checkmark.svg' alt='steering wheel' className='icon-36' />
+                                <p className='checklist-item'>Wash all floormats</p>
+                            </li>
+                            <li>
+                                <img src='../assets/icons/checkmark.svg' alt='steering wheel' className='icon-36' />
+                                <p className='checklist-item'>Clean all windows/glass</p>
+                            </li>
+                        </ul>
+
+                        <hr className="long-hr accent-orange" />
+                        <div className='popular-link-container'>
+                            <a href="/Contact" className='popular-readmore'>Book Now!</a>
+                            <a href="/services/interior-swift" className='popular-readmore-secondary'>Learn More</a>
+                        </div>
+                    </div>
+
+                    <div className='popular-services-card'>
+                        <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a40931e-dd21-407c-dd03-86fd43b05200/public)` }}></div>
+                        <div className='popular-header'>
+                            <h3 className='accent-orange'>Full Interior Detail</h3>
                             <div>
                                 <p>Starting At:</p>
                                 <p className='popular-pricing-price'>$300</p>
@@ -153,7 +193,7 @@ export default function Home() {
                     <div className='popular-services-card'>
                         <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/213e3fa9-1def-44b2-3031-1901432b9a00/public)` }}></div>
                         <div className='popular-header'>
-                            <h3 className='accent-orange'>Interior +  Spill Guard</h3>
+                            <h3 className='accent-orange'>Full Interior +  Spill Guard</h3>
                             <div>
                                 <p>Starting At:</p>
                                 <p className='popular-pricing-price'>$450</p>
@@ -184,12 +224,10 @@ export default function Home() {
 
                 <div className="home-heading-container">
                     <h2>Our Exterior Services</h2>
-                    <p>
-                        Whether you're looking for a quick refresh or a complete paint correction, our exterior services have you covered!
-                    </p>
+                    <p>Whether you're looking for a quick refresh or a complete paint correction, our exterior services have you covered!</p>
                 </div>
 
-                <div style={{paddingBottom: '3rem', gap: '4rem'}} className="otherservices-subcontainer">
+                <div className="otherservices-subcontainer">
                     <div className='popular-services-card'>
                         <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b5859464-3c0e-4fcf-8332-17155eb86d00/public)` }}></div>
                         <div className='popular-header'>
@@ -232,7 +270,7 @@ export default function Home() {
                             <h3 className="accent-orange">Exterior Seal and Shine</h3>
                             <div>
                                 <p style={{ marginBottom: 0, color: '#c0c0c0', textAlign: 'left' }}>Starting At:</p>
-                                <p className='popular-pricing-price'>$300</p>
+                                <p className='popular-pricing-price'>$375</p>
                             </div>
                         </div>
                         <hr className="long-hr accent-orange" />

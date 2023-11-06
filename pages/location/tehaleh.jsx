@@ -100,6 +100,8 @@ export default function Tehaleh() {
                 <div style={{paddingBottom: '2rem'}} className='general-container'>
                     <h3 className='text-large'>Mobile Services offered in Tehaleh:</h3>
                     <div style={{paddingBottom: '2rem'}} className="text-left">
+                        <a href="/services/interior-swift" className='aside-link text-medium'>Swift Interior Detail</a>
+                        <p className='mt-0'>The quickest way to get a clean and conditioned interior without breaking the bank. With this service we use a new all in one revolutionary cleaning and conditioning product that saves us time allowing us to bring down the cost of our interior detail. With our full interior we go way more in depth, and after seeing the condition of your vehicle we may recommend you upgrade to it. This is the perfect option for maintenance or to quickly give the interior of your vehicle a refresh.</p>
                         <a href="/services/interior" className='aside-link text-medium'>Full Interior Cleaning</a>
                         <p className='mt-0'>A full interior detail will clean every crack and crevice of your vehicles interior to a like-new condition. If needed we include a hot water extraction to the carpets and fabric of your vehicle to get out the deeper stains and dirt. For mold, smoke smell, and other unwanted odor removal we recommend getting our Ozone Treatment addon to fully remove unwanted smells.</p>
                         <a href="/services/interior-spill" className='aside-link text-medium'>Full Interior + Spill Guard</a>
