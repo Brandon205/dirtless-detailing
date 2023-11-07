@@ -115,7 +115,7 @@ export default function Home() {
                         </div>
                         <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e073e12e-8f0c-4ae5-fa12-4abc9ab9db00/public)` }}></div>
                         <div className='popular-header'>
-                            <h3 className='accent-orange'>Swift Interior Detail</h3>
+                            <a href='/services/interior-swift' className='accent-orange'>Swift Interior Detail</a>
                             <div>
                                 <p>Starting At:</p>
                                 <p className='popular-pricing-price'>$150</p>
@@ -152,7 +152,7 @@ export default function Home() {
                     <div className='popular-services-card'>
                         <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a40931e-dd21-407c-dd03-86fd43b05200/public)` }}></div>
                         <div className='popular-header'>
-                            <h3 className='accent-orange'>Full Interior Detail</h3>
+                            <a href="/services/interior" className='accent-orange'>Full Interior Detail</a>
                             <div>
                                 <p>Starting At:</p>
                                 <p className='popular-pricing-price'>$300</p>
@@ -193,7 +193,7 @@ export default function Home() {
                     <div className='popular-services-card'>
                         <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/213e3fa9-1def-44b2-3031-1901432b9a00/public)` }}></div>
                         <div className='popular-header'>
-                            <h3 className='accent-orange'>Full Interior +  Spill Guard</h3>
+                            <a href="/services/interior-spill" className='accent-orange'>Full Interior +  Spill Guard</a>
                             <div>
                                 <p>Starting At:</p>
                                 <p className='popular-pricing-price'>$450</p>
@@ -231,7 +231,7 @@ export default function Home() {
                     <div className='popular-services-card'>
                         <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b5859464-3c0e-4fcf-8332-17155eb86d00/public)` }}></div>
                         <div className='popular-header'>
-                            <h3 className="accent-orange">Exterior Decon Wash</h3>
+                            <a href="/services/exterior" className="accent-orange">Exterior Decon Wash</a>
                             <div>
                                 <p style={{ marginBottom: 0, color: '#c0c0c0', textAlign: 'left' }}>Starting At:</p>
                                 <p className='popular-pricing-price'>$100</p>
@@ -267,7 +267,7 @@ export default function Home() {
                     <div className='popular-services-card'>
                         <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/public)` }}></div>
                         <div className='popular-header'>
-                            <h3 className="accent-orange">Exterior Seal and Shine</h3>
+                            <a href="/services/exterior-seal" className="accent-orange">Exterior Seal and Shine</a>
                             <div>
                                 <p style={{ marginBottom: 0, color: '#c0c0c0', textAlign: 'left' }}>Starting At:</p>
                                 <p className='popular-pricing-price'>$375</p>
@@ -307,7 +307,7 @@ export default function Home() {
                     <div className='popular-services-card'>
                         <div className='popular-img' style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4ce4f977-365c-4211-a7f9-68c5ec6d7a00/public)` }}></div>
                         <div className='popular-header'>
-                            <h3 className="accent-orange">Correct and Protect</h3>
+                            <a href="/services/exterior-correct" className="accent-orange">Correct and Protect</a>
                             <div>
                                 <p style={{ marginBottom: 0, color: '#c0c0c0', textAlign: 'left' }}>Starting At:</p>
                                 <p className='popular-pricing-price'>$1,300</p>

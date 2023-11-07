@@ -1005,10 +1005,12 @@ option {
   flex-direction: column;
   align-items: flex-start;
 
-  h3 {
+  a {
     margin: 0 auto;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 2em;
+    font-size: 38px;
+    font-weight: bold;
+    text-decoration: none;
     @include textShadow;
   }
 
@@ -1024,12 +1026,12 @@ option {
   }
 }
 
-.popular-header a {
-  font-size: 0.9em;
-  text-decoration: none;
-  color: var(--funnelMain);
-  margin: 0 auto;
-}
+// .popular-header a {
+//   font-size: 0.9em;
+//   text-decoration: none;
+//   color: var(--funnelMain);
+//   margin: 0 auto;
+// }
 
 .new-banner {
   width: 150px;
@@ -3381,6 +3383,12 @@ footer {
     letter-spacing: 0.75px;
   }
 
+  .header-link-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+  }
+
   .list {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -3562,12 +3570,6 @@ footer {
 
   .nav-logo {
     flex-grow: 0.65;
-  }
-
-  .header-link-container {
-    display: flex;
-    flex-direction: row;
-    margin-top: 0;
   }
 
   .header-icons-container {
