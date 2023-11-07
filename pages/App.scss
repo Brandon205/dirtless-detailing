@@ -430,6 +430,7 @@ header h1 {
   height: 90vh;
   width: 100%;
   z-index: -5;
+  mask-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, #1f1f1fbf 25%, rgba(31,31,31,1) 100%);
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
@@ -443,8 +444,9 @@ header h1 {
   position: relative;
   height: 75vh;
   width: 100%;
+  webkit-mask-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, #1f1f1fbf 15%, rgba(31,31,31,1) 100%);
+  mask-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, #1f1f1fbf 15%, rgba(31,31,31,1) 100%);
   z-index: 0;
-  border-bottom: 2px solid white;
 }
 
 .coating-cover {
@@ -3100,7 +3102,7 @@ footer {
   }
 
   .cover {
-    height: 60vh;
+    height: 70vh;
 
   }
 
@@ -3420,7 +3422,7 @@ footer {
   }
 
   .servicepage-header {
-    transform: translate(5%, -47vh);
+    transform: translate(5%, -57vh);
   }
 
   .servicepage-header h1 {
