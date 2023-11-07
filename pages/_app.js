@@ -207,7 +207,6 @@ export default function MyApp({ Component, pageProps }) {
                 </div>
                 <div className="footer-content-card" style={{ paddingBottom: '2rem' }}>
                     <h3>SERVICES</h3>
-                    <img src='https://utfs.io/f/bc116e4c-88fd-4995-ba13-234bf03046f9-5odyu.png' />
                     <a href="/services/interior-swift" className='footer-link'>Swift Interior Detail</a>
                     <a href="/services/interior" className='footer-link'>Full Interior Detail</a>
                     <a href="/services/interior-spill" className='footer-link'>Full Interior + Spill Guard</a>

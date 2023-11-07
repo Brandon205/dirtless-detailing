@@ -4,6 +4,8 @@ import { useMultistepForm } from '../utils/UseMultistepForm';
 import { BasicInfo } from '../utils/BasicInfo';
 import { SizeAndType } from '../utils/SizeAndType';
 import { ServiceType } from '../utils/ServiceType';
+import { topBtnVariant } from '../utils/animationVariations';
+import { motion } from 'framer-motion';
 import Head from 'next/head';
 import Metatags from '../utils/Metatags';
 import prices from '../utils/Prices';
@@ -269,8 +271,8 @@ export default function Contact() {
                     <h1><span className='accent-orange bold text-shadow'>Get In Touch!</span></h1>
                     <h2 className='page-subheading' style={{textAlign: 'center'}}>Be sure to check out our new Price Estimator below for a quick free quote, or feel free to contact us with any questions!</h2>
                     <div className='header-buttons'>
-                        <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</a>
-                        <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
+                        <motion.a href="/Contact" className='top-quote-btn' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</motion.a>
+                        <motion.a href="tel:2532529758" className='top-quote-btn btn-secondary' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</motion.a>
                     </div>
                 </div>
             </div>

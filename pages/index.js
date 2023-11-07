@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Metatags from '../utils/Metatags';
-// import animationVariants from '../utils/animationVariations';
-// import { motion } from 'framer-motion';
+import { topBtnVariant } from '../utils/animationVariations';
+import { motion } from 'framer-motion';
 
 export default function Home() {
     const [screenWidth, setScreenWidth] = useState(null);
@@ -63,8 +63,8 @@ export default function Home() {
                     <p className='main-desc'>Anything from a simple interior detail, to the most detail oriented paint correction ceramic coating jobs, you can trust Dirt-Less Detailing to get the job done right.</p>
 
                     <div className='header-link-container'>
-                        <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Get a Free Quote</a>
-                        <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
+                        <motion.a href="/Contact" className='top-quote-btn' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Get a Free Quote</motion.a>
+                        <motion.a href="tel:2532529758" className='top-quote-btn btn-secondary' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</motion.a>
                     </div>
 
                     <div style={{ display: screenWidth < 979 ? 'none' : 'flex', alignItems: 'center', gap: 32 }}>

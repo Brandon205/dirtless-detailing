@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import PricingComponent from '../../utils/PricingComponent';
 import addons from '../../utils/Addons';
-import animationVariations from '../../utils/animationVariations';
+import { previewParentVariation, imgVariation1, imgVariation2, imgVariation3, imgVariation4, topBtnVariant } from '../../utils/animationVariations';
 import { motion } from 'framer-motion';
 
 export default function FullIntEx() {
@@ -56,8 +56,8 @@ export default function FullIntEx() {
           <h1><span className='accent-orange bold text-shadow'>Full Interior Cleaning</span></h1>
           <h2 className='page-subheading'>Our easy and hassle-free Interior Cleaning Service.</h2>
           <div className='header-buttons'>
-            <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</a>
-            <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
+                        <motion.a href="/Contact" className='top-quote-btn' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</motion.a>
+                        <motion.a href="tel:2532529758" className='top-quote-btn btn-secondary' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</motion.a>
           </div>
         </div>
         <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/270a9710-a253-4522-ff8a-691ad0cb2d00/public')`}}>
@@ -169,11 +169,11 @@ export default function FullIntEx() {
             </div>
 
             <div className="preview-container">
-              <motion.a initial='rest' whileHover='hover' variants={animationVariations.previewParentVariation} href="/gallery/interior" className="gallery-preview">
-                <motion.img variants={animationVariations.imgVariation1} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0e2bc8e9-28e8-4888-200b-86674d466600/public" alt="preview" className='preview-img' />
-                <motion.img variants={animationVariations.imgVariation2} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/9b9c4f43-bef5-4516-78cf-9fa978743100/public" alt="preview" className='preview-img' />
-                <motion.img variants={animationVariations.imgVariation3} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e7d160ba-aac9-46f5-985d-1a9dc5d0d600/public" alt="preview" className='preview-img' />
-                <motion.img variants={animationVariations.imgVariation4} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b1d716fa-888e-48a1-148d-e2cd896b8500/public" alt="preview" className='preview-img' />
+              <motion.a initial='rest' whileHover='hover' variants={previewParentVariation} href="/gallery/interior" className="gallery-preview">
+                <motion.img variants={imgVariation1} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0e2bc8e9-28e8-4888-200b-86674d466600/public" alt="preview" className='preview-img' />
+                <motion.img variants={imgVariation2} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/9b9c4f43-bef5-4516-78cf-9fa978743100/public" alt="preview" className='preview-img' />
+                <motion.img variants={imgVariation3} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e7d160ba-aac9-46f5-985d-1a9dc5d0d600/public" alt="preview" className='preview-img' />
+                <motion.img variants={imgVariation4} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b1d716fa-888e-48a1-148d-e2cd896b8500/public" alt="preview" className='preview-img' />
               </motion.a>
               <div className="preview-content">
                 <h4>See examples of our interior <a href="/gallery/interior" className='aside-link'>work <img src='../assets/icons/linking.png' style={{marginLeft: '0.5rem'}} alt='external link' className='icon-36' /></a></h4>

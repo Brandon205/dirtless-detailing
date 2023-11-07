@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import PricingComponent from '../../utils/PricingComponent';
-import animationVariations from '../../utils/animationVariations';
+import { previewParentVariation, imgVariation1, imgVariation2, imgVariation3, imgVariation4, topBtnVariant } from '../../utils/animationVariations';
 import { motion } from 'framer-motion';
 import addons from '../../utils/Addons';
 
@@ -56,8 +56,8 @@ export default function ExteriorCorrect() {
           <h1><span className='accent-orange bold text-shadow'>Exterior Correct and Protect</span></h1>
           <h2 className='page-subheading'>The best of our Decon Wash and Seal and Shine packages, plus an in depth paint correction and 5 year ceramic coating.</h2>
           <div className='header-buttons'>
-            <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</a>
-            <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
+            <motion.a href="/Contact" className='top-quote-btn' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</motion.a>
+            <motion.a href="tel:2532529758" className='top-quote-btn btn-secondary' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</motion.a>
           </div>
         </div>
         <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f7c127be-d17d-4563-48c3-809289e8bc00/public')`}}>
@@ -182,11 +182,11 @@ export default function ExteriorCorrect() {
             </div>
 
             <div className="preview-container">
-              <motion.a initial='rest' whileHover='hover' variants={animationVariations.previewParentVariation} href="/gallery/correct" className="gallery-preview">
-                <motion.img variants={animationVariations.imgVariation1} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/38857e90-6d35-4abe-b7de-d3934d621800/public" alt="preview" className='preview-img' />
-                <motion.img variants={animationVariations.imgVariation2} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a7cc8a20-819f-4ef2-8b36-d41dc99bc200/public" alt="preview" className='preview-img' />
-                <motion.img variants={animationVariations.imgVariation3} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/43a02c30-4982-435d-7f91-6d81fd11a000/public" alt="preview" className='preview-img' />
-                <motion.img variants={animationVariations.imgVariation4} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2bd5c3dd-6677-466a-e348-8495945c4700/public" alt="preview" className='preview-img' />
+              <motion.a initial='rest' whileHover='hover' variants={previewParentVariation} href="/gallery/correct" className="gallery-preview">
+                <motion.img variants={imgVariation1} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/38857e90-6d35-4abe-b7de-d3934d621800/public" alt="preview" className='preview-img' />
+                <motion.img variants={imgVariation2} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a7cc8a20-819f-4ef2-8b36-d41dc99bc200/public" alt="preview" className='preview-img' />
+                <motion.img variants={imgVariation3} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/43a02c30-4982-435d-7f91-6d81fd11a000/public" alt="preview" className='preview-img' />
+                <motion.img variants={imgVariation4} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2bd5c3dd-6677-466a-e348-8495945c4700/public" alt="preview" className='preview-img' />
               </motion.a>
               <div className="preview-content">
                 <h4>See examples of our <a href="/gallery/correct" className='aside-link'>work <img src='../assets/icons/linking.png' style={{marginLeft: '0.5rem'}} alt='external link' className='icon-36' /></a></h4>

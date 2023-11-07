@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import PricingComponent from '../../utils/PricingComponent';
-import animationVariations from '../../utils/animationVariations';
+import { previewParentVariation, imgVariation1, imgVariation2, imgVariation3, imgVariation4, topBtnVariant } from '../../utils/animationVariations';
 import { motion } from 'framer-motion';
 import addons from '../../utils/Addons';
 
@@ -56,8 +56,8 @@ export default function Exterior() {
           <h1><span className='accent-orange bold text-shadow'>Exterior Decon Wash</span></h1>
           <h2 className='page-subheading'>Get a complete car wash, down to even the smallest dots of tar removed.</h2>
           <div className='header-buttons'>
-            <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</a>
-            <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
+                        <motion.a href="/Contact" className='top-quote-btn' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</motion.a>
+                        <motion.a href="tel:2532529758" className='top-quote-btn btn-secondary' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</motion.a>
           </div>
         </div>
         <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/939afebd-2188-47d8-fd50-328291b2a300/public')`}}>
@@ -179,11 +179,11 @@ export default function Exterior() {
             </div>
 
             <div className="preview-container">
-              <motion.a initial='rest' whileHover='hover' variants={animationVariations.previewParentVariation} href="/gallery/exterior" className="gallery-preview">
-                <motion.img variants={animationVariations.imgVariation1} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5ccc928a-c036-489b-fec8-e674a9d0ae00/public" alt="preview" className='preview-img' />
-                <motion.img variants={animationVariations.imgVariation2} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c274c919-595c-4283-2d10-c5a47e569700/public" alt="preview" className='preview-img' />
-                <motion.img variants={animationVariations.imgVariation3} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6649be49-1ef8-475a-6610-695cc8619a00/public" alt="preview" className='preview-img' />
-                <motion.img variants={animationVariations.imgVariation4} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3a1a1e74-854b-4aa9-ae8e-06816ec80200/public" alt="preview" className='preview-img' />
+              <motion.a initial='rest' whileHover='hover' variants={previewParentVariation} href="/gallery/exterior" className="gallery-preview">
+                <motion.img variants={imgVariation1} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5ccc928a-c036-489b-fec8-e674a9d0ae00/public" alt="preview" className='preview-img' />
+                <motion.img variants={imgVariation2} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c274c919-595c-4283-2d10-c5a47e569700/public" alt="preview" className='preview-img' />
+                <motion.img variants={imgVariation3} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6649be49-1ef8-475a-6610-695cc8619a00/public" alt="preview" className='preview-img' />
+                <motion.img variants={imgVariation4} src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3a1a1e74-854b-4aa9-ae8e-06816ec80200/public" alt="preview" className='preview-img' />
               </motion.a>
               <div className="preview-content">
                 <h4>See examples of our <a href="/gallery/exterior" className='aside-link'>work <img src='../assets/icons/linking.png' style={{marginLeft: '0.5rem'}} alt='external link' className='icon-36' /></a></h4>

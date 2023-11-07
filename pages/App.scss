@@ -153,8 +153,8 @@ img {
 }
 
 .top-quote-btn:hover {
-  transform: translate(0, -4px);
-  transition: transform ease 0.3s;
+  // transform: translate(0, -4px);
+  // transition: transform ease 0.3s;
 }
 
 .btn-icon {
@@ -1071,6 +1071,8 @@ option {
   background-color: $main-clr;
   color: #fff;
   text-align: center;
+  font-size: 1.1em;
+  font-weight: 600;
   transform: rotate(-45deg) translate(-28%, -35%);
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
   text-transform: uppercase;
@@ -3284,7 +3286,7 @@ footer {
     flex-wrap: wrap;
     width: 90%;
     margin: 0 auto;
-    gap: 12rem;
+    gap: 2rem;
   }
 
   .otherservices-links {

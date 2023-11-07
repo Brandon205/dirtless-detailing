@@ -2,6 +2,8 @@ import React from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import Zoom from 'react-medium-image-zoom';
+import { topBtnVariant } from '../../utils/animationVariations';
+import { motion } from 'framer-motion';
 import 'react-medium-image-zoom/dist/styles.css';
 
 export default function CoatingGallery() {
@@ -22,8 +24,8 @@ export default function CoatingGallery() {
           <h1><span className='accent-orange bold text-shadow'>Exterior Correct & Protect Gallery</span></h1>
           <h2 className='page-subheading' style={{textAlign: 'center'}}>Check out the gallery below to see the results and capabilities of a freshly applied Ceramic Coating. Take a look at our <a href="/services/exterior-correct" className='aside-link' >Exterior Correct & Protect</a> page to learn more about this service!</h2>
           <div className='header-buttons'>
-            <a href="/Contact" className='top-quote-btn'><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</a>
-            <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
+            <motion.a href="/Contact" className='top-quote-btn' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Get a Free Quote</motion.a>
+            <motion.a href="tel:2532529758" className='top-quote-btn btn-secondary' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</motion.a>
           </div>
         </div>
       </div>
