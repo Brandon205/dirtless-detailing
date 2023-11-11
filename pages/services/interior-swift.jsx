@@ -1,4 +1,3 @@
-// import React, { useState } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import PricingComponent from '../../utils/PricingComponent';
@@ -7,7 +6,6 @@ import { previewParentVariation, imgVariation1, imgVariation2, imgVariation3, im
 import { motion } from 'framer-motion';
 
 export default function FullIntEx() {
-  // const [slide, setSlide] = useState(50);
 
   return (
     <section className='service-content-container'>
@@ -15,7 +13,7 @@ export default function FullIntEx() {
         <title>Swift Interior Detail | Dirt-Less Detailing</title>
         <Metatags
           title='Swift Interior Detail | Dirt-Less Detailing'
-          description='Our Swift Interior Detail is the fastest way to get a clean and conditioned interior!'
+          description='Our Swift Interior Detail is our new service tailored to giving you a quick, easy, and budget friendly option to completely revamp your vehicles interior!'
           image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/public'
           canonical='/services/interior-swift'
         />
@@ -25,7 +23,7 @@ export default function FullIntEx() {
             "@type": "Product",
             "name": "Swift Interior Detail",
             "brand": "Dirt-Less Detailing",
-            "description": "Our Swift Interior Detail is the fastest way to get a clean and conditioned interior! Contact us to schedule your appointment today.",
+            "description": "Our Swift Interior Detail is our new service tailored to giving you a quick, easy, and budget friendly option to completely revamp your vehicles interior! Contact us to schedule your appointment today.",
             "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/public",
             "url": "https://www.dirtlessdetailing.com/services/interior-swift/",
             "offers": {
@@ -56,8 +54,8 @@ export default function FullIntEx() {
           <h1><span className='accent-orange bold text-shadow'>Swift Interior Detail</span></h1>
           <h2 className='page-subheading'>Our Swift Interior Detail is the fastest way to get a clean and conditioned interior!</h2>
           <div className='header-buttons'>
-                        <motion.a href="/Contact" className='top-quote-btn' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</motion.a>
-                        <motion.a href="tel:2532529758" className='top-quote-btn btn-secondary' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</motion.a>
+            <motion.a href="/Contact" className='top-quote-btn' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</motion.a>
+            <motion.a href="tel:2532529758" className='top-quote-btn btn-secondary' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</motion.a>
           </div>
         </div>
         <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/07ea2f2e-5908-49b9-21d6-216bad2f8b00/public')`}}>
@@ -128,18 +126,6 @@ export default function FullIntEx() {
             </ol>
 
             <br className='extra-space' />
-
-            {/* <p style={{fontSize: '2rem', margin: 0, color: 'white'}}>End Results</p>
-            <h3 className='pricing__heading'>Incredible Results.</h3>
-            <p className='pricing__subtext'>The Quickest shine you'll ever see!</p>
-            <div style={{display: 'grid', marginBottom: '10vh'}} className='place-center'>
-              <div className='slider-container'>
-                <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/907d2e8b-5d24-40bf-387e-90be139c2d00/public')`}} className='slider-img'></div>
-                <div style={{width: slide + '%', backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/70e54f6b-a9f8-48aa-a9af-893776082400/public')`}} className='slider-img foreground'></div>
-                <input type="range" min="1" max="100" value={slide} onChange={(e) => setSlide(Number(e.target.value))} className="slider-bar" name='slider' id="slider" />
-                <div style={{left: slide - 4 + '%'}} className="slider-button"></div>
-              </div>
-            </div> */}
 
             <div className="preview-container">
               <motion.a initial='rest' whileHover='hover' variants={previewParentVariation} href="/gallery/interior" className="gallery-preview">
