@@ -444,8 +444,8 @@ header h1 {
   position: relative;
   height: 75vh;
   width: 100%;
-  webkit-mask-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, #1f1f1fbf 15%, rgba(31,31,31,1) 100%);
-  mask-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, #1f1f1fbf 15%, rgba(31,31,31,1) 100%);
+  webkit-mask-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #1f1f1fbf 15%, rgba(31, 31, 31, 1) 100%);
+  mask-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #1f1f1fbf 15%, rgba(31, 31, 31, 1) 100%);
   z-index: 0;
 }
 
@@ -1651,11 +1651,6 @@ footer {
   color: white;
 }
 
-.about-container h2,
-.about-container h3 {
-  font-size: 3em;
-}
-
 .header-cert {
   background-size: cover;
   background-position: center;
@@ -2858,6 +2853,64 @@ footer {
 
 .service-image {
   display: none;
+}
+
+.about-explain {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 3rem;
+  gap: 3rem;
+}
+
+.about-image-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about-image {
+  border-radius: 1rem;
+}
+
+.about-testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: $main-clr;
+  color: black;
+  // padding: 1rem;
+}
+
+.testimonial {
+  align-items: center;
+}
+
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+  background-color: #fff;
+  padding: 2rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    margin: 0;
+  }
+}
+
+.customer-icon {
+  background-color: #01579B;
+  border-radius: 50%;
+  padding: 2rem;
+  width: auto;
+  margin: 0 auto;
 }
 
 /** LOCATION PAGE CSS **/

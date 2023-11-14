@@ -82,7 +82,7 @@ export default function Home() {
             <div className="service-bkg" style={{paddingTop: 0}}>
                 <div style={{display: screenWidth < 979 ? 'none' : 'flex'}} className="header-icons-container">
                     <div>
-                        <img src='../assets/icons/calendar.png' alt='star' className='header-icon' />
+                        <img src='../assets/icons/calendar.svg' alt='star' className='header-icon' />
                         <p className="header-desc">8 Years</p>
                         <span className='header-desc-span'>Of Experience</span>
                     </div>
@@ -92,7 +92,7 @@ export default function Home() {
                         <span className='header-desc-span'>Details Done</span>
                     </div>
                     <div>
-                        <img src='../assets/icons/star.png' alt='star' className='header-icon' />
+                        <img src='../assets/icons/star.svg' alt='star' className='header-icon' />
                         <p className="header-desc">Raving</p>
                         <span className='header-desc-span'>5 Star Reviews</span>
                     </div>
@@ -369,7 +369,7 @@ export default function Home() {
                                     <p className='services-p'>Full Interior</p>
                                 </div>
                                 <div className='google-review'>
-                                    <img src='../assets/icons/star.png' alt="5 stars" className='icon-36' />
+                                    <img src='../assets/icons/star.svg' alt="5 stars" className='icon-36' />
                                     <p className='star-review'>5.0</p>
                                 </div>
                             </div>
@@ -384,7 +384,7 @@ export default function Home() {
                                     <p className='services-p'>Full Interior + Exterior Wash</p>
                                 </div>
                                 <div className='google-review'>
-                                    <img src='../assets/icons/star.png' alt="5 stars" className='icon-36' />
+                                    <img src='../assets/icons/star.svg' alt="5 stars" className='icon-36' />
                                     <p className='star-review'>5.0</p>
                                 </div>
                             </div>
@@ -399,7 +399,7 @@ export default function Home() {
                                     <p className='services-p'>Full Interior</p>
                                 </div>
                                 <div className='google-review'>
-                                    <img src='../assets/icons/star.png' alt="5 stars" className='icon-36' />
+                                    <img src='../assets/icons/star.svg' alt="5 stars" className='icon-36' />
                                     <p className='star-review'>5.0</p>
                                 </div>
                             </div>
@@ -414,7 +414,7 @@ export default function Home() {
                                     <p className='services-p'>Full Interior + Exterior Wash</p>
                                 </div>
                                 <div className='google-review'>
-                                    <img src='../assets/icons/star.png' alt="5 stars" className='icon-36' />
+                                    <img src='../assets/icons/star.svg' alt="5 stars" className='icon-36' />
                                     <p className='star-review'>5.0</p>
                                 </div>
                             </div>
