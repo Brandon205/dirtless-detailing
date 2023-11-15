@@ -207,7 +207,7 @@ export default function MyApp({ Component, pageProps }) {
                 </div>
                 <div className="footer-content-card" style={{ paddingBottom: '2rem' }}>
                     <h3>SERVICES</h3>
-                    <a href="/services/interior-swift" className='footer-link'>Swift Interior Detail</a>
+                    <a href="/services/interior-swift" className='footer-link'>Swift Interior Detail - <span className='special-package'>NEW</span></a>
                     <a href="/services/interior" className='footer-link'>Full Interior Detail</a>
                     <a href="/services/interior-spill" className='footer-link'>Full Interior + Spill Guard</a>
                     <hr style={{ marginTop: '1.5rem' }} />
