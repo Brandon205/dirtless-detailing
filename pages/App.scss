@@ -1676,12 +1676,27 @@ footer {
   font-size: 1.2em;
   list-style: none;
   cursor: pointer;
+  padding: 1rem;
+  border-radius: 12px 12px 0 0;
+  background-color: $contact-border-clr;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  div span {
+    display: block;
+    height: 3px;
+    width: 32px;
+    border-radius: 1px;
+    background-color: white;
+  }
 }
 
 .faq-description {
   list-style: none;
   line-height: 2;
-  color: $supporting-text;
+  background-color: $contact-bkg-lighter;
 }
 
 /** SIDE PAGE CSS **/

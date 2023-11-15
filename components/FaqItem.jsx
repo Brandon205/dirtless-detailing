@@ -13,13 +13,19 @@ export default function FaqItem({i, expanded, setExpanded, title, description}) 
         <div key={i}>
             <div className='faq-title' onClick={() => setExpanded(isOpen ? false : i)}>
                 {title}
+
+                <div>
+                    <motion.span animate={{rotateZ: isOpen ? -45 : 45, x: isOpen ? -11 : -22, y: 3}} transition={{duration: 0.4, ease: 'anticipate'}}></motion.span>
+                    <motion.span animate={{rotateZ: isOpen ? 45 : -45, x: isOpen ? -11 : 0}}></motion.span>
+                </div>
             </div>
+
             {isOpen && (
                 <AnimatePresence>
-                    <motion.div className='faq-description' initial="collapsed" animate="open" exit="collapsed" 
+                    <motion.div className='faq-description' initial="collapsed" animate="open" exit="collapse" 
                         variants={openVariants}
-                        transition={{duration: 0.5, ease: [0.04, 0.62, 0.23, 0.98]}}
-                        style={{padding: "0 0 0 2rem"}}
+                        transition={{duration: 0.4}}
+                        style={{padding: "0 1rem"}}
                     >
                         {description}
                     </motion.div>
