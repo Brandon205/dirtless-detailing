@@ -1661,22 +1661,25 @@ footer {
   background-repeat: none;
 }
 
-.faq-ul {
+.faq-container {
   text-align: left;
-  letter-spacing: 1.25px;
   padding: 0 0 8vh 0;
   margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.2em;
 }
 
-.faq-li {
+.faq-title {
   font-weight: bold;
   font-size: 1.2em;
   list-style: none;
+  cursor: pointer;
 }
 
-.faq-p {
+.faq-description {
   list-style: none;
-  margin: 1rem 0 3rem 0;
   line-height: 2;
   color: $supporting-text;
 }

@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Head from 'next/head';
 import { topBtnVariant } from '../utils/animationVariations';
-import { motion, useTransform, useScroll } from 'framer-motion';
+import { motion, useTransform, useScroll, AnimatePresence } from 'framer-motion';
+import FaqItem from '../components/FaqItem';
 import Metatags from '../utils/Metatags';
 
 export default function About() {
+  const [expanded, setExpanded] = useState(false)
   const scrollY = useScroll();
 
   const negativeRotation = useTransform(
@@ -43,7 +45,52 @@ export default function About() {
     [0, 30]
   )
 
-  console.log(scrollY.scrollYProgress)
+  const faqItems = [
+    {
+      title: "What do you need from me when you get here?",
+      description: "All we will need is an electrical outlet, a water spigot, and preferably all/most personal items out of the car."
+    },
+    {
+      title: "How long will the detail take?",
+      description: "Every job will take a different amount of time, but once we know the condition of the car and the services requested we can give a good estimate as to how long it will take."
+    },
+    {
+      title: "What forms of payment do you take?",
+      description: "We prefer card payments as it's easier for us, however, if that's not convenient for you we also accept cash and check."
+    },
+    {
+      title: "Can I drop my car off overnight?",
+      description: "Yes! We have a completely safe locked garage to store your vehicle, and we can usually even do the detail job overnight so that your car is ready by the morning!"
+    },
+    {
+      title: "Do you detail boats?",
+      description: "Yes, however, currently we are only doing boat interiors and washes and no polishing for now. Call or text us to get a quote, price is a flat fee per foot in length!"
+    },
+    {
+      title: "Can you come to my apartment or workplace?",
+      description: "It will depend on the amount of space and water/electrical access if we can or not."
+    },
+    {
+      title: "Do you offer gift cards or gift certificates?",
+      description: 'Yes we do! Any of our services can be bought as a gift certificate. On the Contact page choose the "For Someone Else" option.'
+    },
+    {
+      title: "Are you licensed and insured?",
+      description: "Yes! We are 100% licensed and insured!"
+    },
+    {
+      title: "What cities do you service?",
+      description: "With our mobile service we can go out to: Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Lake Tapps, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham. *Note: Mobile service is free only if the total cost of your service is more than $200, otherwise there is a $1/mile fee."
+    },
+    {
+      title: "Do I have to be there the whole time you're working on my car?",
+      description: "Absolutely not! You are free to go do whatever you need to do while we are working."
+    },
+    {
+      title: "How would you recommend I wash my car on my own?",
+      description: "We have a guide on the steps and products we recommend on our Ceramic Coating Maintenance page. All the products are perfectly fine to use whether your car is ceramic coated or not! If you are in need of a very quick wash we only recommend touch-less car washes as they won't damage your paint as much as a normal car wash."
+    }
+  ]
 
   return (
     <div className='App bg-contact'>
@@ -210,40 +257,13 @@ export default function About() {
           </div>
 
         <h3 style={{fontSize: '2.5em'}}>FAQ</h3>
-        <ul className='faq-ul'>
-          <li className='faq-li'>What do you need from me when you get here?</li>
-          <li className='faq-p'>All we will need is an electrical outlet, a water spigot, and preferably all/most personal items out of the car.</li>
-
-          <li className='faq-li'>How long will the detail take?</li>
-          <li className='faq-p'>Every job will take a different amount of time, but once we know the condition of the car and the services requested we can give a good estimate as to how long it will take.</li>
-
-          <li className='faq-li'>What forms of payment do you take?</li>
-          <li className='faq-p'>Currently you can pay by check, cash, or card.</li>
-
-          <li className='faq-li'>Can I drop my car off overnight?</li>
-          <li className='faq-p'>Yes! We have a completely safe locked garage to store your vehicle, and we can usually even do the detail job overnight so that your car is ready by the morning!</li>
-
-          <li className='faq-li'>Do you detail boats?</li>
-          <li className='faq-p'>Yes, however, currently we are only doing boat interiors and washes and no polishing for now. Call or text us to get a quote!</li>
-
-          <li className='faq-li'>Can you come to my apartment or workplace?</li>
-          <li className='faq-p'>It will depend on the amount of space and water/electrical access if we can or not.</li>
-
-          <li className='faq-li'>Do you offer gift cards or gift certificates?</li>
-          <li className='faq-p'>Yes we do! Any of our services can be bought as a gift certificate. On the <a href="/Contact" className='aside-link'>Contact</a> page choose the "For Someone Else" option.</li>
-
-          <li className='faq-li'>Are you licensed and insured?</li>
-          <li className='faq-p'>We are 100% licensed and insured!</li>
-
-          <li className='faq-li'>What cities do you service?</li>
-          <li className='faq-p'>With our mobile service we can go out to: Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Lake Tapps, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham.<br /> *Note: Mobile service is free only if the total cost of your service is more than $200, otherwise there is a $1/mile fee.</li>
-
-          <li className='faq-li'>Do I have to be there the whole time you're working on my car?</li>
-          <li className='faq-p'>Absolutely not! You are free to go do whatever you need to do while we are working.</li>
-
-          <li className='faq-li'>How would you recommend I wash my car on my own?</li>
-          <li className='faq-p'>We have a guide on the steps and products we recommend on our <a href="/products/ceramic-coating" className='aside-link'>Ceramic Coating Maintenance</a> page. All the products are perfectly fine to use whether your car is ceramic coated or not! If you are in need of a very quick wash we only recommend touch-less car washes as they won't damage your paint as much as a normal car wash.</li>
-        </ul>
+        <div className='faq-container'>
+          {faqItems.map((item, i) => (
+            <AnimatePresence>
+              <FaqItem key={i} i={i} expanded={expanded} setExpanded={setExpanded} title={item.title} description={item.description} />
+            </AnimatePresence>
+          ))}
+        </div>
       </section>
     </div>
   )
