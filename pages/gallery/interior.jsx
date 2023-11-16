@@ -66,7 +66,7 @@ export default function FullIntGallery() {
 
       <br className="extra-space" />
 
-      <h2 className="text-large text-white">More iamges from our <span className='accent-orange'>Full Interior</span> and <span className='accent-orange'>Full Interior + Spill Guard</span> Services</h2>
+      <h2 className="text-large text-white">More images from our <span className='accent-orange'>Full Interior</span> and <span className='accent-orange'>Full Interior + Spill Guard</span> Services</h2>
       <div className="mini-grid">
         <Zoom>
           <div className="card" role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/07c0720a-4281-4c16-bfb7-01fcc942d100/public')`}}></div>
