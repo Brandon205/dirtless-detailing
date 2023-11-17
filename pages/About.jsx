@@ -234,7 +234,7 @@ export default function About() {
               <p>5 Star Reviews</p>
             </div>
             <div className="stat">
-              <img src='../assets/icons/calendar.svg' alt="" className='icon-60' />
+              <img src='../assets/icons/calendar.svg' alt="calendar" className='icon-60' />
               <strong>8+</strong>
               <p>Years in Service</p>
             </div>
