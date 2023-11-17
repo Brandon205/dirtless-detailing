@@ -1,11 +1,21 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
 import Metatags from '../utils/Metatags';
 import { topBtnVariant } from '../utils/animationVariations';
 import { motion } from 'framer-motion';
+import Lottie from 'lottie-react';
+import starJSON from '../public/assets/icons/starJSON.json';
+import calendarJSON from '../public/assets/icons/calendarJSON.json';
+import carJSON from '../public/assets/icons/carJSON.json';
+import mapJSON from '../public/assets/icons/mapJSON.json';
 
 export default function Home() {
     const [screenWidth, setScreenWidth] = useState(null);
+
+    const calendarRef = useRef(null);
+    const carRef = useRef(null);
+    const starRef = useRef(null);
+    const mapRef = useRef(null)
 
     useEffect(() => {
         setScreenWidth(window.innerWidth);
@@ -82,22 +92,31 @@ export default function Home() {
             <div className="service-bkg" style={{paddingTop: 0}}>
                 <div style={{display: screenWidth < 979 ? 'none' : 'flex'}} className="header-icons-container">
                     <div>
-                        <img src='../assets/icons/calendar.svg' alt='star' className='header-icon' />
+                        <Lottie animationData={calendarJSON} lottieRef={calendarRef} style={{width: '70px'}} loop={2}
+                        onMouseEnter={() => {calendarRef.current.stop(); calendarRef.current.play()}} 
+                        onMouseLeave={() => calendarRef.current.goToAndStop(60, true)} />
                         <p className="header-desc">8 Years</p>
                         <span className='header-desc-span'>Of Experience</span>
                     </div>
                     <div>
-                        <img src='../assets/icons/car.png' alt='car' className='header-icon' />
+                        <Lottie animationData={carJSON} lottieRef={carRef} style={{width: '70px'}} loop={2}
+                        onMouseEnter={() => {carRef.current.stop(); carRef.current.play()}} 
+                        onMouseLeave={() => carRef.current.goToAndStop(90, true)} />
                         <p className="header-desc">1000+</p>
                         <span className='header-desc-span'>Details Done</span>
                     </div>
                     <div>
-                        <img src='../assets/icons/star.svg' alt='star' className='header-icon' />
+                        <Lottie animationData={starJSON} lottieRef={starRef} style={{width: '70px'}} loop={2}
+                        onMouseEnter={() => {starRef.current.stop(); starRef.current.play()}} 
+                        onMouseLeave={() => starRef.current.goToAndStop(20, true)} />
                         <p className="header-desc">Raving</p>
                         <span className='header-desc-span'>5 Star Reviews</span>
                     </div>
                     <div>
-                        <img src='../assets/icons/location.png' alt='map with location marker' className='header-icon' />
+                        <Lottie animationData={mapJSON} lottieRef={mapRef} style={{width: '70px'}} loop={0}
+                        onDOMLoaded={() => mapRef.current.playSegments([1, 80], false)}
+                        onMouseEnter={() => {mapRef.current.stop(); mapRef.current.play()}} 
+                        onMouseLeave={() => mapRef.current.goToAndStop(80, true)} />
                         <p className="header-desc">Mobile</p>
                         <span className='header-desc-span'>Services</span>
                     </div>
