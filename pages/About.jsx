@@ -1,13 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Head from 'next/head';
 import { topBtnVariant } from '../utils/animationVariations';
 import { motion, useTransform, useScroll, AnimatePresence } from 'framer-motion';
 import FaqItem from '../components/FaqItem';
 import Metatags from '../utils/Metatags';
+import Lottie from 'lottie-react';
+import starJSON from '../public/assets/icons/starJSON.json';
+import calendarJSON from '../public/assets/icons/calendarJSON.json';
+import carJSON from '../public/assets/icons/carJSON.json';
+import locationJSON from '../public/assets/icons/locationPing.json';
 
 export default function About() {
   const [expanded, setExpanded] = useState(false)
   const scrollY = useScroll();
+  
+  const calendarRef = useRef(null);
+  const carRef = useRef(null);
+  const starRef = useRef(null);
+  const mapRef = useRef(null);
 
   const negativeRotation = useTransform(
     scrollY.scrollYProgress,
@@ -224,24 +234,32 @@ export default function About() {
           </div>
           <div className="stats-container">
             <div className="stat">
-              <img src='../assets/icons/car.png' alt="5 stars" className='icon-60' />
+              <Lottie animationData={carJSON} lottieRef={carRef} style={{width: '70px', height: '70px', gridArea: 'icon'}} loop={0}
+                onMouseEnter={() => {carRef.current.stop(); carRef.current.play()}} 
+                onMouseLeave={() => carRef.current.goToAndStop(90, true)} />
               <strong>1,000+</strong>
               <p>Details Completed</p>
             </div>
             <div className="stat">
-              <img src='../assets/icons/star.svg' width="60px" height="60px" alt="5 stars" />
+              <Lottie animationData={starJSON} lottieRef={starRef} style={{width: '70px', gridArea: 'icon'}} loop={0}
+                onMouseEnter={() => {starRef.current.stop(); starRef.current.play()}} 
+                onMouseLeave={() => starRef.current.goToAndStop(20, true)} />
               <strong>20+</strong>
               <p>5 Star Reviews</p>
             </div>
             <div className="stat">
-              <img src='../assets/icons/calendar.svg' alt="calendar" className='icon-60' />
+              <Lottie animationData={calendarJSON} lottieRef={calendarRef} style={{width: '70px', gridArea: 'icon'}} loop={0}
+                onMouseEnter={() => {calendarRef.current.stop(); calendarRef.current.play()}} 
+                onMouseLeave={() => calendarRef.current.goToAndStop(60, true)} />
               <strong>8+</strong>
               <p>Years in Service</p>
             </div>
             <div className="stat">
-              <img src='../assets/icons/clock.png' alt="time saved" className='icon-60' />
-              <strong>Thousands</strong>
-              <p>of hours saved</p>
+              <Lottie animationData={locationJSON} lottieRef={mapRef} style={{width: '70px', gridArea: 'icon'}} loop={0}
+                onMouseEnter={() => {mapRef.current.stop(); mapRef.current.play()}} 
+                onMouseLeave={() => mapRef.current.goToAndStop(80, true)} />
+              <strong>Mobile</strong>
+              <p>Services</p>
             </div>
           </div>
         </div>
