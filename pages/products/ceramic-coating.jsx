@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
-
+import { motion } from 'framer-motion';
+import { topBtnVariant } from '../../utils/animationVariations';
 
 export default function products() {
     return (
@@ -15,13 +16,24 @@ export default function products() {
                 />
             </Head>
 
-            <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/45779246-97c3-4442-85d6-be09aabad900/cover')`}}></div>
+            {/* <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/45779246-97c3-4442-85d6-be09aabad900/cover')`}}></div>
             <div className="servicepage-header">
                 <h1>Ceramic Coating Maintenance Products</h1>
                 <h2 className='page-subheading'>Check out how you can easily keep your car clean yourself without damaging your new ceramic coating with these simple products and methods!</h2>
                 <div className='header-buttons'>
                     <a href="/Contact" className='top-quote-btn'>Get a Free Quote</a>
                     <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
+                </div>
+            </div> */}
+            <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/45779246-97c3-4442-85d6-be09aabad900/cover')`}}></div>
+            <div className="servicepage-header">
+                <div style={{alignItems: 'center'}}>
+                    <h1><span className='accent-orange bold text-shadow'>Ceramic Coating Maintenance Products</span></h1>
+                    <h2 className='page-subheading' style={{textAlign: 'center'}}>Check out how you can easily keep your car clean yourself without damaging your new ceramic coating with these simple products and methods!</h2>
+                    <div className='header-buttons'>
+                        <motion.a href="/Contact" className='top-quote-btn' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Get a Free Quote</motion.a>
+                        <motion.a href="tel:2532529758" className='top-quote-btn btn-secondary' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</motion.a>
+                    </div>
                 </div>
             </div>
 
