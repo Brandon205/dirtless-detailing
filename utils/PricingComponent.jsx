@@ -19,8 +19,8 @@ const iconArr = {
     'engine': <img src='../assets/icons/engineBay.png' className='addon-icon' alt="engine bay getting cleaned" />,
 }
 
-{/* <PricingComponent title='Ceramic Coating' prices={['949', '949', '1099', '1099', '1249', '1249']} addons={[{}]} labels={['label1', 'label2', 'needs to have 6 labels...']} /> */}
-export default function PricingComponent({prices = props.prices, addons = [], labels = ['2-Door Cars', 'Quarter Ton Trucks', '4-Door Cars', "Mid-Size SUV's", '4-Door Trucks', "3-Row SUV's, Minivans"]}) {
+{/* <PricingComponent title='Ceramic Coating' prices={['949', '949', '1099', '1099', '1249', '1249']} addons='interior' /> */}
+export default function PricingComponent({prices = props.prices, addons = '', labels = ['2-Door Cars', 'Quarter Ton Trucks', '4-Door Cars', "Mid-Size SUV's", '4-Door Trucks', "3-Row SUV's, Minivans"]}) {
     const [currVal, setCurrVal] = useState(2);
     const [animate, setAnimate] = useState(false);
     
@@ -29,23 +29,6 @@ export default function PricingComponent({prices = props.prices, addons = [], la
             setAnimate(true)
         }, 1500)
     }, [])
-
-    let content = '';
-    if (addons.length > 0) {
-        content = addons.map((item, id) => (
-            <div className="pricing__addon" key={id}>
-                {iconArr[item.icon]}
-                <div className="addon-content">
-                    <h4>{item.name}</h4>
-                    <p>{item.desc}</p>
-                </div>
-                <div className="addon-addbutton"></div>
-                <div className="addon-price">
-                    <strong>${item.cost[currVal]}</strong>
-                </div>
-            </div>
-        ))
-    }
 
     return (
         <div className='pricing__container'>
@@ -81,13 +64,20 @@ export default function PricingComponent({prices = props.prices, addons = [], la
 
             <hr className="pricing__hr" />
 
-            <div className="general-container new-heading-container">
-                <strong className="above-heading">Add-ons</strong>
-                <h3 className="new-heading">Get even more out of your service with these popular add-ons.</h3>
-            </div>
+            <h3 style={{fontSize: '2em', margin: 0}} className="text-center">Get even more out of your service with this Add-on.</h3>
 
             <div className="pricing__addons-container">
-                {content}
+                <div className="pricing__addon">
+                    {addons === 'interior' ? iconArr['ozone'] : iconArr['engine']}
+                    <div className="addon-content">
+                        <h4>{addons === 'interior' ? 'Ozone Treatment' : 'Engine Bay Cleaning'}</h4>
+                        <p>{addons === 'interior' ? 'Ozone treatment is the use of O3 (gas ozone) to remove bacteria, viruses, and odors from your vehicle.' : 'We will cover sensitive/electronic areas in the bay, clean and wash, then dress the engine bay to have it looking like new!'}</p>
+                    </div>
+                    <div className="addon-addbutton"></div>
+                    <div className="addon-price">
+                        <strong>$75</strong>
+                    </div>
+                </div>
             </div>
             <a href="/Contact" className="new-contact-btn">Contact Us</a>
         </div>

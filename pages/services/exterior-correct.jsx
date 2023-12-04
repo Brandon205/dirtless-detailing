@@ -9,8 +9,8 @@ import addons from '../../utils/Addons';
 
 const faqItems = [
   {
-    title: "How long does your Ceramic Coating last?",
-    description: <p className='faq-description'>Your paint will be protected for a lifetime, however, over time your coating can get clogged with contaminants and gloss, slickness, and water beading can degrade. If you want to maintain all the benefits of your ceramic coating we recommend getting our <a href="/services/exterior-seal" className="aside-link">Seal and Shine</a> package annually. This package fully decontaminates and refreshes your ceramic coating back to the day you got it.</p>
+    title: "How long will my Ceramic Coating last?",
+    description: <p className='faq-description'>Your paint will be protected for a lifetime as true ceramic coatings don't just wash off, however, over time your coating can get clogged with contaminants and gloss, slickness, and water beading can degrade. If you want to maintain all the benefits of your ceramic coating we recommend getting our <a href="/services/exterior-seal" className="aside-link">Seal and Shine</a> package annually. This package fully decontaminates and refreshes your ceramic coating back to the day you got it.</p>
   },
   {
     title: "Can I still go through car washes?",
@@ -71,7 +71,7 @@ export default function ExteriorCorrect() {
       <div className="servicepage-header">
         <div>
           <h1><span className='accent-orange bold text-shadow'>Exterior Correct and Protect</span></h1>
-          <h2 className='page-subheading'>The best of our Decon Wash and Seal and Shine packages, plus an in depth paint correction and 5 year ceramic coating.</h2>
+          <h2 className='page-subheading'>The Ultimate Exterior Detail & Protection for your vehicle. Our most extensive package with in-depth Paint Correction and a Lifetime Ceramic Coating.</h2>
           <div className='header-buttons'>
             <motion.a href="/Contact" className='top-quote-btn' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</motion.a>
             <motion.a href="tel:2532529758" className='top-quote-btn btn-secondary' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</motion.a>
@@ -89,10 +89,9 @@ export default function ExteriorCorrect() {
               <h2 style={{marginBottom: 0}} className='text-large'>Exterior Correct and Protect</h2>
               <hr style={{margin: '0 auto 3rem auto'}} />
               <div className="service-explain">
-                <p>This is our top of the line exterior service. If you want to remove years of wear and scratching, and provide the best protection available, then this is the service for you. We start off with our exterior decon wash and claybar removing any final contaminates. From there, we refine your paint by performing an in depth polishing step removing as many imperfections we can while still doing it safely.</p>
-                <p><span className='special-package'>Note:</span> This is one of the services that we require you to drop off your car at our shop for. We will most likely need to keep you car overnight as the ceramic coating has a cure time before it's ready to be exposed to the elements. Also, our shop has proper lighting to ensure that we don't miss any spots on the paint. Proper maintenance is vital to keep your coating in good condition. This is why we give you a bottle of IGL Enhancer to use after you wash your car from this point on. We offer maintenance services if you want. Feel free to let us know! If you want a more <a href="/products/ceramic-coating" className='aside-link'>DIY Solution</a>, then we've got a list of products and steps that we recommend.</p>
+                <p>This is our top of the line exterior service. If you want to remove years of wear and scratching, and provide the best protection available, then this is the service for you. We start off with our full <a href="/services/exterior" className='aside-link'>Exterior Decon Wash</a> to remove any contaminants. From there, we refine your paint by performing an in-depth polishing step removing as many imperfections we safely can.</p>
+                <p><span className='special-package'>Note:</span> This is one of the services that we require you to drop off your car at our shop for. We will most likely need to keep you car overnight as the ceramic coating has a cure time before it's ready to be exposed to the elements. Also, our shop has proper lighting to ensure that we don't miss any spots on the paint.</p>
                 <p>Last but not least is the ceramic coating! To provide <span className='bold'>LIFETIME PROTECTION<span className='special-package'>*</span></span> on the paint coating, we coat your whole vehicle with the hardest, most resilient ceramic coatings on the market. This includes paint, trim, lights, glass, and wheels.</p>
-                <p><span className='special-package'>*</span>To keep your Lifetime warranty, our Seal and Shine package must be completed at least once annually. Otherwise, we provide a 5 year warranty on your paint coating.</p>
               </div>
             </main>
             <br className='extra-space' />
@@ -103,7 +102,7 @@ export default function ExteriorCorrect() {
                 <h3 className="pricing__heading"><span className='accent-orange bold'>Correct and Protect</span> Pricing</h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
-              <PricingComponent prices={[1300, 1300, 1300, 1500, 1700, 1700]} addons={[addons.engine]} />
+              <PricingComponent prices={[1300, 1300, 1300, 1500, 1700, 1700]} addons='exterior' />
             </div>
 
             <h2 className='cleaning-process-title text-xl'>Our Exterior Correct and Protect Process</h2>
@@ -159,7 +158,7 @@ export default function ExteriorCorrect() {
                 </div>
                 <div className='step-container'>
                   <h4 className="step-title">Protect Vehicle</h4>
-                  <p className='step-desc'>Apply our 5 year coating to the paint. At this point we also coat the windshield and the trim. Now there's no part of your car that's uncoated!</p>
+                  <p className='step-desc'>Apply our <a href="#faq" className='aside-link'>Lifetime*</a> Ceramic Coating to the paint. At this point we also coat the windshield, wheels, and the trim. Now there's no part of your car that's uncoated!</p>
                 </div>
               </li>
               <li className="item">

@@ -85,7 +85,7 @@ export default function InteriorSpill() {
                 <h3 className="pricing__heading"><span className='accent-orange bold'>Full Interior + Spill Guard</span> Pricing</h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
-              <PricingComponent prices={[450, 450, 450, 500, 575, 575]} addons={[addons.ozone]} />
+              <PricingComponent prices={[450, 450, 450, 500, 575, 575]} addons='interior' />
             </div>
 
             <h2 className='cleaning-process-title text-xl'>Our Interior + Spill Guard Process</h2>

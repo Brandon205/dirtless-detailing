@@ -19,12 +19,6 @@ export default function About() {
   const starRef = useRef(null);
   const mapRef = useRef(null);
 
-  const negativeRotation = useTransform(
-    scrollY.scrollYProgress,
-    [0, 0.32],
-    [0, -5]
-  )
-
   const negativeXMovement = useTransform(
     scrollY.scrollYProgress,
     [0, 0.32],
@@ -35,12 +29,6 @@ export default function About() {
     scrollY.scrollYProgress,
     [0, 0.32],
     [0, -30]
-  )
-
-  const rotation = useTransform(
-    scrollY.scrollYProgress,
-    [0, 0.32],
-    [0, 5]
   )
 
   const xMovement = useTransform(
@@ -66,7 +54,7 @@ export default function About() {
     },
     {
       title: "What forms of payment do you take?",
-      description: "We prefer card payments as it's easier for us, however, if that's not convenient for you we also accept cash and check."
+      description: "We prefer card payments as it's easier for us to process, however, if that's not convenient for you we also accept cash and check."
     },
     {
       title: "Can I drop my car off overnight?",
@@ -98,7 +86,7 @@ export default function About() {
     },
     {
       title: "How would you recommend I wash my car on my own?",
-      description: "We have a guide on the steps and products we recommend on our Ceramic Coating Maintenance page. All the products are perfectly fine to use whether your car is ceramic coated or not! If you are in need of a very quick wash we only recommend touch-less car washes as they won't damage your paint as much as a normal car wash."
+      description: <p className='faq-description'>We have a guide on the steps and products we recommend on our <a href="/products/ceramic-coating" className='aside-link'>DIY Maintenance</a> page. All the products are perfectly fine to use whether your car is ceramic coated or not! If you are in need of a very quick wash we only recommend touch-less car washes as they won't damage your paint as much as a normal car wash.</p>
     }
   ]
 
@@ -207,11 +195,11 @@ export default function About() {
       <section style={{lineHeight: '2', fontSize: '1.2em'}} className="about-container">
         <div className="about-explain">
           <div className='about-image-container'>
-            <motion.div className="about-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3a1a1e74-854b-4aa9-ae8e-06816ec80200/public')`, rotate: negativeRotation, x: negativeXMovement, y: negativeYMovement}}>
+            <motion.div className="about-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3a1a1e74-854b-4aa9-ae8e-06816ec80200/public')`, x: negativeXMovement, y: negativeYMovement}}>
               <img style={{visibility: 'hidden'}} alt="moldy biohazard van before and after" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3a1a1e74-854b-4aa9-ae8e-06816ec80200/public" />
 
             </motion.div>
-            <motion.div className="about-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/499bcf81-1c55-4073-80c5-adb5a247de00/public')`, rotate: rotation, x: xMovement, y: yMovement}}>
+            <motion.div className="about-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/499bcf81-1c55-4073-80c5-adb5a247de00/public')`, x: xMovement, y: yMovement}}>
               <img style={{visibility: 'hidden'}} alt="Drivers side of Silver Dodge Ram" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/499bcf81-1c55-4073-80c5-adb5a247de00/public" />
             </motion.div>
           </div>

@@ -85,7 +85,7 @@ export default function ExteriorSeal() {
                 <h3 className="pricing__heading"><span className='accent-orange bold'>Exterior Seal and Shine</span> Pricing</h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
-              <PricingComponent prices={[375, 375, 375, 475, 575, 575]} addons={[addons.engine]} />
+              <PricingComponent prices={[375, 375, 375, 475, 575, 575]} addons='exterior' />
             </div>
 
             <h2 className='cleaning-process-title text-xl'>Our Exterior Seal and Shine Process</h2>

@@ -10,23 +10,23 @@ import 'react-medium-image-zoom/dist/styles.css';
 export default function orting() {
     const [currPackage, setCurrPackage] = useState('Interior');
     const [currLink, setCurrLink] = useState('interior');
-    const [currComponent, setCurrComponent] = useState(<PricingComponent prices={['300', '300', '335', '335', '375', '375']} addons={[addons.ozone]} />)
+    const [currComponent, setCurrComponent] = useState(<PricingComponent prices={['300', '300', '335', '335', '375', '375']} addons='interior' />)
 
     useEffect(() => {
         if (currPackage === 'Interior') {
-            setCurrComponent(<PricingComponent prices={[300, 300, 335, 335, 375, 375]} addons={[addons.ozone]} />)
+            setCurrComponent(<PricingComponent prices={[300, 300, 335, 335, 375, 375]} addons='interior' />)
             setCurrLink('interior')
         } else if (currPackage === 'Interior Spill') {
-            setCurrComponent(<PricingComponent prices={[450, 450, 500, 500, 575, 575]} addons={[addons.ozone]} />)
+            setCurrComponent(<PricingComponent prices={[450, 450, 500, 500, 575, 575]} addons='interior' />)
             setCurrLink('interior-spill')
         } else if (currPackage === 'Exterior Wash') {
-            setCurrComponent(<PricingComponent prices={[100, 100, 125, 125, 150, 150]} addons={[addons.engine]} />)
+            setCurrComponent(<PricingComponent prices={[100, 100, 125, 125, 150, 150]} addons='exterior' />)
             setCurrLink('exterior')
         } else if (currPackage === 'Exterior Seal') {
-            setCurrComponent(<PricingComponent prices={[300, 300, 350, 350, 400, 400]} addons={[addons.engine]} />)
+            setCurrComponent(<PricingComponent prices={[300, 300, 350, 350, 400, 400]} addons='exterior' />)
             setCurrLink('exterior-seal')
         } else if (currPackage === 'Exterior Correct') {
-            setCurrComponent(<PricingComponent prices={[1300, 1300, 1500, 1500, 1700, 1700]} addons={[addons.engine]} />)
+            setCurrComponent(<PricingComponent prices={[1300, 1300, 1500, 1500, 1700, 1700]} addons='exterior' />)
             setCurrLink('exterior-correct')
         }
     }, [currPackage])

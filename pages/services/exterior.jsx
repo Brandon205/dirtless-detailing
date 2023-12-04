@@ -85,7 +85,7 @@ export default function Exterior() {
                 <h3 className="pricing__heading"><span className='accent-orange bold'>Exterior Decon Wash</span> Pricing</h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
-              <PricingComponent prices={[100, 100, 100, 125, 150, 150]} addons={[addons.engine]} />
+              <PricingComponent prices={[100, 100, 100, 125, 150, 150]} addons='exterior' />
             </div>
 
             <h2 className='cleaning-process-title text-xl'>Our Exterior Decon Wash Process</h2>
