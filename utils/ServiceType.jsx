@@ -18,7 +18,7 @@ export function ServiceType({serviceType, interior, exterior, addons, dogHair, d
                 <label htmlFor="interior-spill" className='checkbox-label'>Interior + Spill Guard <span className='special-package italic'>(${prices[vehicleSize].interior.interiorspill})</span></label>
 
                 <h3 className="contact-heading">Dog Hair Amount<span className='special-package'>*</span></h3>
-                <div style={{justifyContent: 'center', gap: '1rem'}}>
+                <div style={{gap: '1rem'}}>
                     <div className="label-container">
                         <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/264a9c3b-d6cd-4575-132a-80d4450cdc00/public')`}} className="label-image"></div>
                         <input type="checkbox" name="dogHair" id="little or none" value="Little or None" className='radio-button' onChange={(e) => updateFields({dogHair: e.target.value})} checked={dogHair === "Little or None"} />
@@ -37,7 +37,8 @@ export function ServiceType({serviceType, interior, exterior, addons, dogHair, d
                 </div>
 
                 <h3 className="contact-heading">Dirtiness<span className='special-package'>*</span></h3>
-                <div style={{justifyContent: 'center', gap: '1rem'}}>
+                <p className="contact-subheading">No extra charges, just for us to get an idea of the condition of the interior.</p>
+                <div style={{gap: '1rem'}}>
                     <div className="label-container">
                         <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d69dedc8-dfb3-47bd-80f3-8e76256dfb00/public')`}} className="label-image"></div>
                         <input type="checkbox" name="dirtiness" id="pretty clean" value="Pretty Clean" className='radio-button' onChange={(e) => updateFields({dirtiness: e.target.value})} checked={dirtiness === "Pretty Clean"} />
@@ -96,7 +97,7 @@ export function ServiceType({serviceType, interior, exterior, addons, dogHair, d
                 <label htmlFor="interior-spill" className='checkbox-label'>Interior + Spill Guard <span className='special-package italic'>(${prices[vehicleSize].interior.interiorspill})</span></label>
 
                 <h3 className="contact-heading">Dog Hair Amount<span className='special-package'>*</span></h3>
-                <div style={{justifyContent: 'center', gap: '1rem'}}>
+                <div style={{gap: '1rem'}}>
                     <div className="label-container">
                         <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/264a9c3b-d6cd-4575-132a-80d4450cdc00/public')`}} className="label-image"></div>
                         <input type="checkbox" name="dogHair" id="little or none" value="Little or None" className='radio-button' onChange={(e) => updateFields({dogHair: e.target.value})} checked={dogHair === "Little or None"} />
@@ -115,7 +116,7 @@ export function ServiceType({serviceType, interior, exterior, addons, dogHair, d
                 </div>
 
                 <h3 className="contact-heading">Dirtiness<span className='special-package'>*</span></h3>
-                <div style={{justifyContent: 'center', gap: '1rem'}}>
+                <div style={{gap: '1rem'}}>
                     <div className="label-container">
                         <div style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d69dedc8-dfb3-47bd-80f3-8e76256dfb00/public')`}} className="label-image"></div>
                         <input type="checkbox" name="dirtiness" id="pretty clean" value="Pretty Clean" className='radio-button' onChange={(e) => updateFields({dirtiness: e.target.value})} checked={dirtiness === "Pretty Clean"} />
