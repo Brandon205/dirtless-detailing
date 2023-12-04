@@ -4,10 +4,27 @@ import Metatags from '../../utils/Metatags';
 import PricingComponent from '../../utils/PricingComponent';
 import { previewParentVariation, imgVariation1, imgVariation2, imgVariation3, imgVariation4, topBtnVariant } from '../../utils/animationVariations';
 import { motion } from 'framer-motion';
+import FaqItem from '../../components/FaqItem';
 import addons from '../../utils/Addons';
+
+const faqItems = [
+  {
+    title: "How long does your Ceramic Coating last?",
+    description: <p className='faq-description'>Your paint will be protected for a lifetime, however, over time your coating can get clogged with contaminants and gloss, slickness, and water beading can degrade. If you want to maintain all the benefits of your ceramic coating we recommend getting our <a href="/services/exterior-seal" className="aside-link">Seal and Shine</a> package annually. This package fully decontaminates and refreshes your ceramic coating back to the day you got it.</p>
+  },
+  {
+    title: "Can I still go through car washes?",
+    description: <p className='faq-description'>We never recommend going through a car wash as they can reduce the gloss slickness and beading of your coating prematurely. However in a pinch a touchless car wash will suffice. Just make sure to use the cheapest setting, without any wax's. It is also recommended after the wash to dry the whole vehicle with supple towels (We recommend <a href="https://amzn.to/449nFm7" className='aside-link' target="_blank" rel="noopener">The Rag Company's Large Drying Towel</a>) and <a href="https://amzn.to/3uKuqi1" className='aside-link' target="_blank" rel="noopener">Griot's Ceramic Speed Shine</a>!</p>
+  },
+  {
+    title: "How should I wash my car then?",
+    description: <p>You can check out our <a href="/products/ceramic-coating" className='aside-link'>DIY Maintenance</a> page to see all the products and steps that we recommend for a complete wash and decontamination all for under $150. You can also ask us about our maintenance services, they don't cost too much per service plus they include the interior if you have had any one of our Interior Detail services done before!</p>
+  }
+]
 
 export default function ExteriorCorrect() {
   const [slide, setSlide] = useState(50);
+  const [expanded, setExpanded] = useState(false);
 
   return (
     <section className='service-content-container'>
@@ -74,10 +91,8 @@ export default function ExteriorCorrect() {
               <div className="service-explain">
                 <p>This is our top of the line exterior service. If you want to remove years of wear and scratching, and provide the best protection available, then this is the service for you. We start off with our exterior decon wash and claybar removing any final contaminates. From there, we refine your paint by performing an in depth polishing step removing as many imperfections we can while still doing it safely.</p>
                 <p><span className='special-package'>Note:</span> This is one of the services that we require you to drop off your car at our shop for. We will most likely need to keep you car overnight as the ceramic coating has a cure time before it's ready to be exposed to the elements. Also, our shop has proper lighting to ensure that we don't miss any spots on the paint. Proper maintenance is vital to keep your coating in good condition. This is why we give you a bottle of IGL Enhancer to use after you wash your car from this point on. We offer maintenance services if you want. Feel free to let us know! If you want a more <a href="/products/ceramic-coating" className='aside-link'>DIY Solution</a>, then we've got a list of products and steps that we recommend.</p>
-                {/* <p><span className='special-package'>Note:</span> For this service, your car should be dropped off at our shop. It may need to stay overnight due to the curing time required before the ceramic coating is ready to be exposed to the elements. Our well-lit shop also ensures we don't miss anything while doing the paint correction. After the coating proper maintenance is essential, and we provide a bottle of IGL Enhancer for you to use. We also offer maintenance services upon request, or can provide a list of <a href="/products/ceramic-coating" className='aside-link'>recommended products</a> and steps for a DIY approach.</p> */}
                 <p>Last but not least is the ceramic coating! To provide <span className='bold'>LIFETIME PROTECTION<span className='special-package'>*</span></span> on the paint coating, we coat your whole vehicle with the hardest, most resilient ceramic coatings on the market. This includes paint, trim, lights, glass, and wheels.</p>
                 <p><span className='special-package'>*</span>To keep your Lifetime warranty, our Seal and Shine package must be completed at least once annually. Otherwise, we provide a 5 year warranty on your paint coating.</p>
-                {/* <p>If you want the full experience make sure to book a <a href="/services/interior" className='aside-link'>Full Interior</a> detail as well! It's only one extra step for you, but it will completely revamp your interior!</p> */}
               </div>
             </main>
             <br className='extra-space' />
@@ -196,22 +211,14 @@ export default function ExteriorCorrect() {
 
             <div id='faq' style={{width: '90%', margin: '0 auto', paddingTop: '2rem'}}>
               <div className="new-heading-container text-white">
-                <strong className="above-heading">FAQ</strong>
-                <h3 className="new-heading">Answers for the most commonly asked Ceramic Coating Questions.</h3>
+                <strong className="above-heading">Ceramic Coating FAQ</strong>
+                <h3 className="new-heading">Answers for the most commonly asked questions about ceramic coatings.</h3>
               </div>
-              <ul className='faq-ul text-white'>
-                <li className='faq-li'>How long does it last?</li>
-                <li className='faq-p'>The paint coating should last 2-5 years, 50,000 miles, or a Lifetime<span className='special-package'>*</span> with our warranty. The coating on any trim, glass, lights, or wheels will last approximately 1 year.</li>
-
-                <li className='faq-li'>Can I still go through car washes?</li>
-                <li className='faq-p'>To get the most longevity out of your coating you shouldn't, but if you are in need of a quick wash though we would recommend avoiding the normal ones and only going through touch-less car washes. In fact, the touch-less car washes will work better on ceramic coated vehicles because the chemicals from it will have an easier time breaking through and removing all of the dirt and grime from your car!</li>
-
-                <li className='faq-li'>How should I wash my car then?</li>
-                <li className='faq-p'>You can check out our new <a href="/products/ceramic-coating" className='aside-link'>Ceramic Coating Maintenance</a> page for a inexpensive DIY kit and washing method that's safe for your new coating! For washing your coated vehicle you have a couple of options. Or we also highly recommend either scheduling monthly maintenance through us especially if you get our Protect+ Package. </li>
-
-                <li className='faq-li'>How does the 5 year warranty work?</li>
-                <li className='faq-p'>In order to qualify for our 5 year warranty on your ceramic coating we require that you stick with us and schedule 6-month or 1-year services. This is so that we can not only clean your car but also apply enhancers and ensure your coating is still going strong. Ask us for pricing on our Maintenance services if you're interested! Typically costs run from $130 to $200, and we essentially perform our whole Exterior <a href="/services/exterior-seal" className='aside-link'>Seal and Shine</a> process on it!</li>
-              </ul>
+              <div className='faq-container' style={{color: 'white'}}>
+                {faqItems.map((item, i) => (
+                  <FaqItem key={i} i={i} expanded={expanded} setExpanded={setExpanded} title={item.title} description={item.description} />
+                ))}
+              </div>
             </div>
 
           </div>

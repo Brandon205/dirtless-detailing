@@ -16,15 +16,6 @@ export default function products() {
                 />
             </Head>
 
-            {/* <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/45779246-97c3-4442-85d6-be09aabad900/cover')`}}></div>
-            <div className="servicepage-header">
-                <h1>Ceramic Coating Maintenance Products</h1>
-                <h2 className='page-subheading'>Check out how you can easily keep your car clean yourself without damaging your new ceramic coating with these simple products and methods!</h2>
-                <div className='header-buttons'>
-                    <a href="/Contact" className='top-quote-btn'>Get a Free Quote</a>
-                    <a href="tel:2532529758" className='top-quote-btn btn-secondary'><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</a>
-                </div>
-            </div> */}
             <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/45779246-97c3-4442-85d6-be09aabad900/cover')`}}></div>
             <div className="servicepage-header">
                 <div style={{alignItems: 'center'}}>
@@ -39,12 +30,12 @@ export default function products() {
 
             <main style={{marginTop: '4vh'}} className="service-main">
               <div className="service-explain">
-                <div className="service-image" role="img" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/caab7c47-0030-4dd7-b338-e56ce725c300/public')`}}>
+                <div className="service-image" role="img" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/caab7c47-0030-4dd7-b338-e56ce725c300/public')`, width: '90%'}}>
                   <img style={{visibility: 'hidden'}} alt="Washed Subaru" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/caab7c47-0030-4dd7-b338-e56ce725c300/public" />
                 </div>
                 <div className="text-left">
                   <h2 className='text-large mt-0'>Welcome to our DIY Ceramic Maintenance Recommendations</h2>
-                  <p>We at Dirt-Less Detailing are aware of the satisfaction and joy that come from taking care of your car yourself. For all of your DIY vehicle washing needs, we have individually chosen a variety of high-quality supplies that won't break the bank. The products described here, aside from the optional <a href="https://iglcoatingsusa.com/product/ecoshine-enhancer/" target="_blank" rel="noopener" className='aside-link'>IGL Enhancer</a>, can all be easily purchased from Amazon, and some of them can even be purchased in nearby stores, guaranteeing that you have everything you need to produce results that are on par with those of a professional right in the comfort of your own driveway.</p>
+                  <p>We at Dirt-Less Detailing are aware of the satisfaction and joy that come from taking care of your car yourself. For all of your DIY vehicle washing needs, we have individually chosen a variety of high-quality supplies that won't break the bank. The products described here can all be easily purchased from Amazon, and some of them can even be purchased in nearby stores, guaranteeing that you have everything you need to produce results that are on par with those of a professional right in the comfort of your own driveway.</p>
                   <p>With our hand-selected recommendations, we have you covered for anything from soft yet effective car wash soaps to microfiber towels. Our list makes it simple for you to locate and buy the greatest tools and goods because we think every auto enthusiast should have access to them. Explore our guide, discover the products we suggest, and get ready to take your DIY car cleaning to new heights.</p>
                   <p>You can be confident that the products mentioned here are the best of the best in terms of cost-effective consumer grade ceramic safe materials. We have personally owned and used all of these items at some point in our eight years of detailing, and some we even still use to this day. The Amazon links below are affiliate links which don't change the price you pay but give us a small commission if you decide to go through with the purchase.</p>
                 </div>
@@ -180,7 +171,7 @@ export default function products() {
                     </div>
                     <div className='step-container'>
                         <h4 className='step-title'>Enhance and Dry</h4>
-                        <p className='step-desc'>Give about 2-3 sprays of <a href="https://iglcoatingsusa.com/product/ecoshine-enhancer/" target="_blank" rel="noopener" className='aside-link'>IGL Enhancer</a> per panel, and use your preferred drying towel to completely dry off the car. And you're done!</p>
+                        <p className='step-desc'>Give about 2-3 sprays of <a href="https://amzn.to/3uKuqi1" target="_blank" rel="noopener" className='aside-link'>Griots Ceramic Speed Shine</a> per panel, and use your preferred drying towel to completely dry off the car. And you're done!</p>
                     </div>
                 </li>
             </ol>

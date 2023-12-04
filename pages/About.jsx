@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import Head from 'next/head';
 import { topBtnVariant } from '../utils/animationVariations';
-import { motion, useTransform, useScroll, AnimatePresence } from 'framer-motion';
+import { motion, useTransform, useScroll } from 'framer-motion';
 import FaqItem from '../components/FaqItem';
 import Metatags from '../utils/Metatags';
 import Lottie from 'lottie-react';
@@ -269,7 +269,7 @@ export default function About() {
         </div>
         <h2 style={{fontSize: '2.5em', margin: 0}}>Dirt-Less Detailing</h2>
         <div style={{maxWidth: '1200px', margin: '0 auto'}} className="text-left">
-          <p>Dirt-Less Detailing is a premier auto detailing company founded 2 years ago by Brenden (On the right in the picture), an experienced detailer with 8 years of industry knowledge. We specialize in restoring your vehicle's beauty, inside and out. Our mission is simple - to provide you with the best results and customer service that your money can buy. Let us make your car shine like new again!</p>
+          <p>Dirt-Less Detailing is a premier auto detailing company founded 2 years ago by Brenden (on the right in the picture), an experienced detailer with 8 years of industry knowledge. We specialize in restoring your vehicle's beauty, inside and out. Our mission is simple - to provide you with the best results and customer service that your money can buy. Let us make your car shine like new again!</p>
           <p>At Dirt-Less Detailing, we are passionate about providing top-notch auto detailing services to our valued clients. With our comprehensive range of services, including interior and exterior detailing, ceramic coatings, paint corrections, and engine bay cleanings, we strive to keep your vehicle looking and performing its best. Trust us to provide the care and attention to detail that your car deserves.</p>
           <p>Our main shop location is right in <a href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854" className='aside-link' target="_blank" rel='noopener'>Bonney Lake</a> off State Route 410.</p>
         </div>
@@ -277,9 +277,7 @@ export default function About() {
         <h3 style={{fontSize: '2.5em'}}>FAQ</h3>
         <div className='faq-container'>
           {faqItems.map((item, i) => (
-            <AnimatePresence>
-              <FaqItem key={i} i={i} expanded={expanded} setExpanded={setExpanded} title={item.title} description={item.description} />
-            </AnimatePresence>
+            <FaqItem key={i} i={i} expanded={expanded} setExpanded={setExpanded} title={item.title} description={item.description} />
           ))}
         </div>
       </section>

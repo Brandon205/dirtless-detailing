@@ -356,7 +356,7 @@ export default function Home() {
                             </li>
                             <li>
                                 <img src='../assets/icons/checkmark.svg' alt='steering wheel' className='icon-36' style={{marginTop: '5px'}} />
-                                <p className='checklist-item'>Ceramic coating applied to paint (Lasts up to 5 years!)</p>
+                                <p className='checklist-item'>Ceramic coating applied to paint (Lasts a Lifetime*!)</p>
                             </li>
                         </ul>
 
