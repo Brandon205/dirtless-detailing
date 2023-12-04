@@ -1,13 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import PricingComponent from '../../utils/PricingComponent';
 import { previewParentVariation, imgVariation1, imgVariation2, imgVariation3, imgVariation4, topBtnVariant } from '../../utils/animationVariations';
 import { motion } from 'framer-motion';
 import FaqItem from '../../components/FaqItem';
-import addons from '../../utils/Addons';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 
 const faqItems = [
+  {
+    title: "Why should I get a Ceramic Coating?",
+    description: 
+    <div>
+      <ul style={{margin: 0}}>
+        <li>It is the best protection for your paint</li>
+        <li>Ceramic coatings increase the hardness of your paint, making it less likely to scratch while washing</li>
+        <li>Coatings increase the Gloss and Slickness of your paint</li>
+        <li>Self cleaning properties: Ceramic coatings aggressively bead water, dirt gets caught in these beads and will fly off while you're driving!</li>
+        <li>Easier to wash and dry. Dirt washes off easier with less effort, you can also blow dry your vehicle because of the water beading.</li>
+      </ul>
+      <Zoom>
+        <div className='faq-image' role='img' style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/64538f74-3857-42df-3f7c-4a13fa45c900/public')`}}></div>
+      </Zoom>
+    </div>
+  },
+  {
+    title: "Does a ceramic coating make my vehicle scratch proof?",
+    description: <p className='faq-description'>Unfortunately no, but it does noticeably increase resistance against light scratches and swirl marks.</p>
+  },
   {
     title: "How long will my Ceramic Coating last?",
     description: <p className='faq-description'>Your paint will be protected for a lifetime as true ceramic coatings don't just wash off, however, over time your coating can get clogged with contaminants and gloss, slickness, and water beading can degrade. If you want to maintain all the benefits of your ceramic coating we recommend getting our <a href="/services/exterior-seal" className="aside-link">Seal and Shine</a> package annually. This package fully decontaminates and refreshes your ceramic coating back to the day you got it.</p>
@@ -25,6 +46,15 @@ const faqItems = [
 export default function ExteriorCorrect() {
   const [slide, setSlide] = useState(50);
   const [expanded, setExpanded] = useState(false);
+  const [smallScreen, setSmallScreen] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth < 979) {
+      setSmallScreen(true);
+    } else {
+      setSmallScreen(false);
+    }
+  }, [])
 
   return (
     <section className='service-content-container'>
@@ -67,7 +97,7 @@ export default function ExteriorCorrect() {
           }`,
         }} />
       </Head>
-      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/1d5eccf3-e4ec-47db-c652-fb40f808c800/cover')`, backgroundPositionY: '-316px'}}></div>
+      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/1d5eccf3-e4ec-47db-c652-fb40f808c800/cover')`, backgroundPositionY: smallScreen ? '0' : '-316px'}}></div>
       <div className="servicepage-header">
         <div>
           <h1><span className='accent-orange bold text-shadow'>Exterior Correct and Protect</span></h1>
@@ -215,7 +245,7 @@ export default function ExteriorCorrect() {
               </div>
               <div className='faq-container' style={{color: 'white'}}>
                 {faqItems.map((item, i) => (
-                  <FaqItem key={i} i={i} expanded={expanded} setExpanded={setExpanded} title={item.title} description={item.description} />
+                  <FaqItem key={i} i={i} expanded={expanded} setExpanded={setExpanded} title={item.title} description={item.description} isMobile={smallScreen} />
                 ))}
               </div>
             </div>

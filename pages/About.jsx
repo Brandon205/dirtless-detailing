@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Head from 'next/head';
 import { topBtnVariant } from '../utils/animationVariations';
 import { motion, useTransform, useScroll } from 'framer-motion';
@@ -12,12 +12,21 @@ import locationJSON from '../public/assets/icons/locationPing.json';
 
 export default function About() {
   const [expanded, setExpanded] = useState(false)
+  const [smallScreen, setSmallScreen] = useState(false)
   const scrollY = useScroll();
   
   const calendarRef = useRef(null);
   const carRef = useRef(null);
   const starRef = useRef(null);
   const mapRef = useRef(null);
+  
+  useEffect(() => {
+    if (window.innerWidth < 979) {
+      setSmallScreen(true);
+    } else {
+      setSmallScreen(false);
+    }
+  }, [])
 
   const negativeXMovement = useTransform(
     scrollY.scrollYProgress,
@@ -194,15 +203,26 @@ export default function About() {
 
       <section style={{lineHeight: '2', fontSize: '1.2em'}} className="about-container">
         <div className="about-explain">
-          <div className='about-image-container'>
-            <motion.div className="about-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3a1a1e74-854b-4aa9-ae8e-06816ec80200/public')`, x: negativeXMovement, y: negativeYMovement}}>
-              <img style={{visibility: 'hidden'}} alt="moldy biohazard van before and after" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3a1a1e74-854b-4aa9-ae8e-06816ec80200/public" />
-
-            </motion.div>
-            <motion.div className="about-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/499bcf81-1c55-4073-80c5-adb5a247de00/public')`, x: xMovement, y: yMovement}}>
-              <img style={{visibility: 'hidden'}} alt="Drivers side of Silver Dodge Ram" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/499bcf81-1c55-4073-80c5-adb5a247de00/public" />
-            </motion.div>
-          </div>
+            {smallScreen ? (
+              <div className="about-image-container">
+                <div className="about-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3a1a1e74-854b-4aa9-ae8e-06816ec80200/public')`}}>
+                  <img style={{visibility: 'hidden'}} alt="moldy biohazard van before and after" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3a1a1e74-854b-4aa9-ae8e-06816ec80200/public" />
+                </div>
+                <div className="about-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/499bcf81-1c55-4073-80c5-adb5a247de00/public')`}}>
+                  <img style={{visibility: 'hidden'}} alt="Drivers side of Silver Dodge Ram" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/499bcf81-1c55-4073-80c5-adb5a247de00/public" />
+                </div> 
+              </div>
+              ) : (
+                <div className="about-image-container">
+                  <motion.div className="about-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3a1a1e74-854b-4aa9-ae8e-06816ec80200/public')`, x: smallScreen ? '' : negativeXMovement, y: smallScreen ? '' : negativeYMovement}}>
+                    <img style={{visibility: 'hidden'}} alt="moldy biohazard van before and after" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3a1a1e74-854b-4aa9-ae8e-06816ec80200/public" />
+                  </motion.div>
+                  <motion.div className="about-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/499bcf81-1c55-4073-80c5-adb5a247de00/public')`, x: smallScreen ? '' : xMovement, y: smallScreen ? '' : yMovement}}>
+                    <img style={{visibility: 'hidden'}} alt="Drivers side of Silver Dodge Ram" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/499bcf81-1c55-4073-80c5-adb5a247de00/public" />
+                  </motion.div>
+                </div>
+              )              
+            }
           <div className="text-left">
             <h2 className="text-large">You shouldn't have to take time out of your busy day to clean your car.</h2>
             <p>We can do the dirty work for you, leaving you free to do whatever you desire. After hundreds of completed details over the last 8 years we've seen it all, and perfected how we tackle every aspect of it.</p>
@@ -255,7 +275,7 @@ export default function About() {
         <div className="about-large-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/public')`}}>
           <img style={{visibility: 'hidden'}} alt="Me on the right of polished show truck" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/public" />
         </div>
-        <h2 style={{fontSize: '2.5em', margin: 0}}>Dirt-Less Detailing</h2>
+        <h2 style={{fontSize: '2.5em', margin: 0, textAlign: smallScreen ? 'left' : 'center'}}>Dirt-Less Detailing</h2>
         <div style={{maxWidth: '1200px', margin: '0 auto'}} className="text-left">
           <p>Dirt-Less Detailing is a premier auto detailing company founded 2 years ago by Brenden (on the right in the picture), an experienced detailer with 8 years of industry knowledge. We specialize in restoring your vehicle's beauty, inside and out. Our mission is simple - to provide you with the best results and customer service that your money can buy. Let us make your car shine like new again!</p>
           <p>At Dirt-Less Detailing, we are passionate about providing top-notch auto detailing services to our valued clients. With our comprehensive range of services, including interior and exterior detailing, ceramic coatings, paint corrections, and engine bay cleanings, we strive to keep your vehicle looking and performing its best. Trust us to provide the care and attention to detail that your car deserves.</p>
@@ -265,7 +285,7 @@ export default function About() {
         <h3 style={{fontSize: '2.5em'}}>FAQ</h3>
         <div className='faq-container'>
           {faqItems.map((item, i) => (
-            <FaqItem key={i} i={i} expanded={expanded} setExpanded={setExpanded} title={item.title} description={item.description} />
+            <FaqItem key={i} i={i} expanded={expanded} setExpanded={setExpanded} title={item.title} description={item.description} isMobile={smallScreen} />
           ))}
         </div>
       </section>

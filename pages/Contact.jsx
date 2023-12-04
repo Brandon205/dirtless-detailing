@@ -269,7 +269,7 @@ export default function Contact() {
             <div className="servicepage-header">
                 <div style={{alignItems: 'center'}}>
                     <h1><span className='accent-orange bold text-shadow'>Get In Touch!</span></h1>
-                    <h2 className='page-subheading' style={{textAlign: 'center'}}>Be sure to check out our new Price Estimator below for a quick free quote, or feel free to contact us with any questions!</h2>
+                    <h2 className='page-subheading' style={{textAlign: 'center'}}>Be sure to use the form below to check pricing for our different services with our new Price Estimator!</h2>
                     <div className='header-buttons'>
                         <motion.a href="/Contact" className='top-quote-btn' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</motion.a>
                         <motion.a href="tel:2532529758" className='top-quote-btn btn-secondary' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</motion.a>
@@ -317,7 +317,7 @@ export default function Contact() {
                 <form className="form" id="form" onSubmit={(e) => formSubmit(e)}>
 
                     <div>
-                        <p style={{position: 'absolute', padding: '0.5rem 0 0 2rem'}}>{currentStepIndex + 1} / {steps.length}</p>
+                        <p style={{position: 'absolute', padding: '0 0 0 2rem'}}>{currentStepIndex + 1} / {steps.length}</p>
                         {step}
                     </div>
 
