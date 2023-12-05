@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import PricingComponent from '../../utils/PricingComponent';
-import addons from '../../utils/Addons';
-import { previewParentVariation, imgVariation1, imgVariation2, imgVariation3, imgVariation4, topBtnVariant } from '../../utils/animationVariations';
+import HeaderComponent from '../../components/HeaderComponent';
+import { previewParentVariation, imgVariation1, imgVariation2, imgVariation3, imgVariation4 } from '../../utils/animationVariations';
 import { motion } from 'framer-motion';
 
 export default function FullIntEx() {
@@ -50,20 +50,21 @@ export default function FullIntEx() {
           }`,
         }} />
       </Head>
-      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/cover')`}}></div>
+      <HeaderComponent mainUrl={"6d1c1456-97c0-4c35-d58a-ed3c0d576a00"} title="Full Interior Cleaning" description="Our easy and hassle-free Interior Cleaning Service." secondaryUrl={"270a9710-a253-4522-ff8a-691ad0cb2d00"} />
+      {/* <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/cover')`}}></div>
       <div className="servicepage-header">
         <div>
           <h1><span className='accent-orange bold text-shadow'>Full Interior Cleaning</span></h1>
           <h2 className='page-subheading'>Our easy and hassle-free Interior Cleaning Service.</h2>
           <div className='header-buttons'>
-                        <motion.a href="/Contact" className='top-quote-btn' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</motion.a>
-                        <motion.a href="tel:2532529758" className='top-quote-btn btn-secondary' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</motion.a>
+            <motion.a href="/Contact" className='top-quote-btn' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</motion.a>
+            <motion.a href="tel:2532529758" className='top-quote-btn btn-secondary' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</motion.a>
           </div>
         </div>
         <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/270a9710-a253-4522-ff8a-691ad0cb2d00/public')`}}>
           <img style={{visibility: 'hidden'}} alt="Clean drivers seat interior of a Subaru" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/270a9710-a253-4522-ff8a-691ad0cb2d00/public" />
         </div>
-      </div>
+      </div> */}
 
       <div className='main-content-container'>
         <div className='process-container'>
