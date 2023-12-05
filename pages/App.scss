@@ -1423,9 +1423,9 @@ option {
 /** Home Page Review CSS **/
 .reviews-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
-  width: 90%;
+  width: 86%;
   margin: 0 auto;
   gap: 2rem;
 }
@@ -3438,12 +3438,11 @@ footer {
 
   .otherservices-subcontainer {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: stretch;
     flex-wrap: wrap;
     width: 90%;
     margin: 0 auto;
-    gap: 2rem;
   }
 
   .otherservices-links {

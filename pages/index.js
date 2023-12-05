@@ -444,7 +444,7 @@ export default function Home() {
                 <hr className="pricing__hr" />
 
                 <div className="general-container new-heading-container">
-                    <h3 className="new-heading new-heading-center">Our shop location and mobile services</h3>
+                    <h3 style={{margin: 0, width: 'auto'}} className="new-heading new-heading-center">Our shop location and mobile services</h3>
                 </div>
                 <section className='mobileservices-container'>
                     <div className='mobileservices-details'>
