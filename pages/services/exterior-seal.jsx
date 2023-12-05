@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import PricingComponent from '../../utils/PricingComponent';
-import { previewParentVariation, imgVariation1, imgVariation2, imgVariation3, imgVariation4, topBtnVariant } from '../../utils/animationVariations';
+import HeaderComponent from '../../components/HeaderComponent';
+import { previewParentVariation, imgVariation1, imgVariation2, imgVariation3, imgVariation4 } from '../../utils/animationVariations';
 import { motion } from 'framer-motion';
-import addons from '../../utils/Addons';
 
 export default function ExteriorSeal() {
   const [slide, setSlide] = useState(50);
@@ -50,7 +50,8 @@ export default function ExteriorSeal() {
           }`,
         }} />
       </Head>
-      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/cover')`}}></div>
+      <HeaderComponent mainUrl={"977438a8-129b-496b-9845-e55e3198e900"} title="Exterior Seal and Shine" description="Our tried and true wash with a corrective polish, and even stronger Ceramic Spray coating." secondaryUrl={"c4bc3845-d897-4dcc-9401-f7feca96a200"} />
+      {/* <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/cover')`}}></div>
       <div className="servicepage-header">
         <div>
           <h1><span className='accent-orange bold text-shadow'>Exterior Seal and Shine</span></h1>
@@ -63,7 +64,7 @@ export default function ExteriorSeal() {
         <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c4bc3845-d897-4dcc-9401-f7feca96a200/public')`}}>
           <img style={{visibility: 'hidden'}} alt="Before and after of a Ford Truck from the side" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c4bc3845-d897-4dcc-9401-f7feca96a200/public" />
         </div>
-      </div>
+      </div> */}
 
       <div className='main-content-container'>
         <div className='process-container'>

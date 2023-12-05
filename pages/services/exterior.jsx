@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import PricingComponent from '../../utils/PricingComponent';
-import { previewParentVariation, imgVariation1, imgVariation2, imgVariation3, imgVariation4, topBtnVariant } from '../../utils/animationVariations';
+import HeaderComponent from '../../components/HeaderComponent';
+import { previewParentVariation, imgVariation1, imgVariation2, imgVariation3, imgVariation4 } from '../../utils/animationVariations';
 import { motion } from 'framer-motion';
-import addons from '../../utils/Addons';
 
 export default function Exterior() {
   const [slide, setSlide] = useState(50);
@@ -50,20 +50,21 @@ export default function Exterior() {
           }`,
         }} />
       </Head>
-      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/da3f5734-319b-4301-43c9-7af958fd5600/cover')`}}></div>
+      <HeaderComponent mainUrl={"da3f5734-319b-4301-43c9-7af958fd5600"} title="Exterior Decon Wash" description="Get a complete car wash, down to even the smallest dots of tar removed." secondaryUrl={"939afebd-2188-47d8-fd50-328291b2a300"} />
+      {/* <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/da3f5734-319b-4301-43c9-7af958fd5600/cover')`}}></div>
       <div className="servicepage-header">
         <div>
           <h1><span className='accent-orange bold text-shadow'>Exterior Decon Wash</span></h1>
           <h2 className='page-subheading'>Get a complete car wash, down to even the smallest dots of tar removed.</h2>
           <div className='header-buttons'>
-                        <motion.a href="/Contact" className='top-quote-btn' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</motion.a>
-                        <motion.a href="tel:2532529758" className='top-quote-btn btn-secondary' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</motion.a>
+            <motion.a href="/Contact" className='top-quote-btn' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</motion.a>
+            <motion.a href="tel:2532529758" className='top-quote-btn btn-secondary' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</motion.a>
           </div>
         </div>
         <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/939afebd-2188-47d8-fd50-328291b2a300/public')`}}>
           <img style={{visibility: 'hidden'}} alt="Before and after of a Ford Tailgate with tar on it" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/939afebd-2188-47d8-fd50-328291b2a300/public" />
         </div>
-      </div>
+      </div> */}
 
       <div className='main-content-container'>
         <div className='process-container'>

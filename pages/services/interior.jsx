@@ -51,20 +51,6 @@ export default function FullIntEx() {
         }} />
       </Head>
       <HeaderComponent mainUrl={"6d1c1456-97c0-4c35-d58a-ed3c0d576a00"} title="Full Interior Cleaning" description="Our easy and hassle-free Interior Cleaning Service." secondaryUrl={"270a9710-a253-4522-ff8a-691ad0cb2d00"} />
-      {/* <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/cover')`}}></div>
-      <div className="servicepage-header">
-        <div>
-          <h1><span className='accent-orange bold text-shadow'>Full Interior Cleaning</span></h1>
-          <h2 className='page-subheading'>Our easy and hassle-free Interior Cleaning Service.</h2>
-          <div className='header-buttons'>
-            <motion.a href="/Contact" className='top-quote-btn' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</motion.a>
-            <motion.a href="tel:2532529758" className='top-quote-btn btn-secondary' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</motion.a>
-          </div>
-        </div>
-        <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/270a9710-a253-4522-ff8a-691ad0cb2d00/public')`}}>
-          <img style={{visibility: 'hidden'}} alt="Clean drivers seat interior of a Subaru" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/270a9710-a253-4522-ff8a-691ad0cb2d00/public" />
-        </div>
-      </div> */}
 
       <div className='main-content-container'>
         <div className='process-container'>

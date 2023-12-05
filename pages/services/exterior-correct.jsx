@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import PricingComponent from '../../utils/PricingComponent';
-import { previewParentVariation, imgVariation1, imgVariation2, imgVariation3, imgVariation4, topBtnVariant } from '../../utils/animationVariations';
+import { previewParentVariation, imgVariation1, imgVariation2, imgVariation3, imgVariation4 } from '../../utils/animationVariations';
 import { motion } from 'framer-motion';
+import HeaderComponent from '../../components/HeaderComponent';
 import FaqItem from '../../components/FaqItem';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
@@ -97,7 +98,8 @@ export default function ExteriorCorrect() {
           }`,
         }} />
       </Head>
-      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/1d5eccf3-e4ec-47db-c652-fb40f808c800/cover')`, backgroundPositionY: smallScreen ? '0' : '-316px'}}></div>
+      <HeaderComponent mainUrl={"1d5eccf3-e4ec-47db-c652-fb40f808c800"} title="Exterior Correct and Protect" description="The Ultimate Exterior Detail & Protection for your vehicle. Our most extensive package with in-depth Paint Correction and a Lifetime Ceramic Coating." secondaryUrl={"f7c127be-d17d-4563-48c3-809289e8bc00"} />
+      {/* <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/1d5eccf3-e4ec-47db-c652-fb40f808c800/cover')`, backgroundPositionY: smallScreen ? '0' : '-316px'}}></div>
       <div className="servicepage-header">
         <div>
           <h1><span className='accent-orange bold text-shadow'>Exterior Correct and Protect</span></h1>
@@ -110,7 +112,7 @@ export default function ExteriorCorrect() {
         <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f7c127be-d17d-4563-48c3-809289e8bc00/public')`}}>
           <img style={{visibility: 'hidden'}} alt="Before and After of a very scratched up door panel" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f7c127be-d17d-4563-48c3-809289e8bc00/public" />
         </div>
-      </div>
+      </div> */}
 
       <div className='main-content-container'>
         <div className='process-container'>

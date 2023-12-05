@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import Metatags from '../../utils/Metatags';
 import PricingComponent from '../../utils/PricingComponent';
-import addons from '../../utils/Addons';
-import { previewParentVariation, imgVariation1, imgVariation2, imgVariation3, imgVariation4, topBtnVariant } from '../../utils/animationVariations';
+import HeaderComponent from '../../components/HeaderComponent';
+import { previewParentVariation, imgVariation1, imgVariation2, imgVariation3, imgVariation4 } from '../../utils/animationVariations';
 import { motion } from 'framer-motion';
 
 export default function FullIntEx() {
@@ -48,7 +48,8 @@ export default function FullIntEx() {
           }`,
         }} />
       </Head>
-      <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0e2bc8e9-28e8-4888-200b-86674d466600/cover')`}}></div>
+      <HeaderComponent mainUrl={"0e2bc8e9-28e8-4888-200b-86674d466600"} title="Swift Interior Detail" description="Our Swift Interior Detail is the fastest way to get a clean and conditioned interior!" secondaryUrl={"07ea2f2e-5908-49b9-21d6-216bad2f8b00"} />
+      {/* <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0e2bc8e9-28e8-4888-200b-86674d466600/cover')`}}></div>
       <div className="servicepage-header">
         <div>
           <h1><span className='accent-orange bold text-shadow'>Swift Interior Detail</span></h1>
@@ -61,7 +62,7 @@ export default function FullIntEx() {
         <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/07ea2f2e-5908-49b9-21d6-216bad2f8b00/public')`}}>
           <img style={{visibility: 'hidden'}} alt="Clean drivers seat interior of a Subaru" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/07ea2f2e-5908-49b9-21d6-216bad2f8b00/public" />
         </div>
-      </div>
+      </div> */}
 
       <div className='main-content-container'>
         <div className='process-container'>
