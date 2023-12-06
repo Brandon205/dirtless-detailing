@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 import posthog from 'posthog-js';
 import { PostHogProvider } from 'posthog-js/react';
 import 'react-toastify/dist/ReactToastify.css';
@@ -132,7 +133,7 @@ export default function MyApp({ Component, pageProps }) {
                             <ul className='main-ul'>
 
                                 <li className='menu-li'>
-                                    <a href="/" className='menu-link'>Home</a>
+                                    <Link href="/" className='menu-link'>Home</Link>
                                 </li>
 
                                 <li style={{ position: 'relative' }}>
@@ -144,26 +145,26 @@ export default function MyApp({ Component, pageProps }) {
                                                     <div>
                                                         <h4 className='sub-menu-header'>INTERIOR CLEANING SERVICES</h4>
                                                         <motion.div variants={navChild} className='sub-menu-div' onClick={() => setNav('none')}>
-                                                            <a href="/services/interior-swift" className='menu-link smaller-line-height'><img src='../assets/icons/time-span.png' alt='fast clock' className='nav-icon' /> Swift Interior Detail</a>
+                                                            <Link href="/services/interior-swift" className='menu-link smaller-line-height'><img src='../assets/icons/time-span.png' alt='fast clock' className='nav-icon' /> Swift Interior Detail</Link>
                                                         </motion.div>
                                                         <motion.div variants={navChildDiff} className='sub-menu-div' onClick={() => setNav('none')}>
-                                                            <a href="/services/interior" className='menu-link smaller-line-height'><img src='../assets/icons/steering1.png' alt='steering wheel' className='nav-icon' /> Full Interior</a>
+                                                            <Link href="/services/interior" className='menu-link smaller-line-height'><img src='../assets/icons/steering1.png' alt='steering wheel' className='nav-icon' /> Full Interior</Link>
                                                         </motion.div>
                                                         <motion.div variants={navChild} className='sub-menu-div' onClick={() => setNav('none')}>
-                                                            <a href="/services/interior-spill" className='menu-link smaller-line-height'><img src='../assets/icons/steeringLock.png' alt='steering wheel with lock' className='nav-icon' /> Full Interior with Spill Guard</a>
+                                                            <Link href="/services/interior-spill" className='menu-link smaller-line-height'><img src='../assets/icons/steeringLock.png' alt='steering wheel with lock' className='nav-icon' /> Full Interior with Spill Guard</Link>
                                                         </motion.div>
                                                     </div>
 
                                                     <div>
                                                         <h4 className='sub-menu-header'>EXTERIOR SERVICES</h4>
                                                         <motion.div variants={navChildDiff} className='sub-menu-div' onClick={() => setNav('none')}>
-                                                            <a href="/services/exterior" className='menu-link smaller-line-height'><img src='../assets/icons/carWash.png' alt='car with bubbles' className='nav-icon' /> Exterior Wash</a>
+                                                            <Link href="/services/exterior" className='menu-link smaller-line-height'><img src='../assets/icons/carWash.png' alt='car with bubbles' className='nav-icon' /> Exterior Wash</Link>
                                                         </motion.div>
                                                         <motion.div variants={navChild} className='sub-menu-div' onClick={() => setNav('none')}>
-                                                            <a href="/services/exterior-seal" className='menu-link smaller-line-height'><img src='../assets/icons/carPolish.png' alt='microfiber' className='nav-icon' /> Exterior Seal and Shine</a>
+                                                            <Link href="/services/exterior-seal" className='menu-link smaller-line-height'><img src='../assets/icons/carPolish.png' alt='microfiber' className='nav-icon' /> Exterior Seal and Shine</Link>
                                                         </motion.div>
                                                         <motion.div variants={navChildDiff} className='sub-menu-div' onClick={() => setNav('none')}>
-                                                            <a href="/services/exterior-correct" className='menu-link smaller-line-height'><img src='../assets/icons/correctProtect.png' alt='polisher' className='nav-icon' /> Exterior Correct and Protect</a>
+                                                            <Link href="/services/exterior-correct" className='menu-link smaller-line-height'><img src='../assets/icons/correctProtect.png' alt='polisher' className='nav-icon' /> Exterior Correct and Protect</Link>
                                                         </motion.div>
                                                     </div>
                                                 </motion.li>
@@ -180,16 +181,16 @@ export default function MyApp({ Component, pageProps }) {
                                                 <motion.li animate='open' initial='closed' exit='closed' transition={{ ease: "easeInOut", duration: 0.3 }} variants={navParent} className="nav-li">
                                                     <h4 className="sub-menu-header">GALLERIES</h4>
                                                     <motion.div variants={navChild} className='sub-menu-div' onClick={() => setNav('none')}>
-                                                        <a href="/gallery/interior" className='menu-link smaller-line-height'><img src='../assets/icons/steering1.png' alt='car with doors open' className='nav-icon' /> Full Interior Gallery</a>
+                                                        <Link href="/gallery/interior" className='menu-link smaller-line-height'><img src='../assets/icons/steering1.png' alt='car with doors open' className='nav-icon' /> Full Interior Gallery</Link>
                                                     </motion.div>
                                                     <motion.div variants={navChildDiff} className='sub-menu-div' onClick={() => setNav('none')}>
-                                                        <a href="/gallery/exterior" className='menu-link smaller-line-height'><img src='../assets/icons/carWash.png' alt='soap bubbles' className='nav-icon' /> Exterior Wash Gallery</a>
+                                                        <Link href="/gallery/exterior" className='menu-link smaller-line-height'><img src='../assets/icons/carWash.png' alt='soap bubbles' className='nav-icon' /> Exterior Wash Gallery</Link>
                                                     </motion.div>
                                                     <motion.div variants={navChild} className='sub-menu-div' onClick={() => setNav('none')}>
-                                                        <a href="/gallery/seal" className='menu-link smaller-line-height'><img src='../assets/icons/carPolish.png' alt='car hood' className='nav-icon' /> Seal & Shine Gallery</a>
+                                                        <Link href="/gallery/seal" className='menu-link smaller-line-height'><img src='../assets/icons/carPolish.png' alt='car hood' className='nav-icon' /> Seal & Shine Gallery</Link>
                                                     </motion.div>
                                                     <motion.div variants={navChildDiff} className='sub-menu-div' onClick={() => setNav('none')}>
-                                                        <a href="/gallery/correct" className='menu-link smaller-line-height'><img src='../assets/icons/correctProtect.png' alt='gallery' className='nav-icon' /> Correct & Protect Gallery</a>
+                                                        <Link href="/gallery/correct" className='menu-link smaller-line-height'><img src='../assets/icons/correctProtect.png' alt='gallery' className='nav-icon' /> Correct & Protect Gallery</Link>
                                                     </motion.div>
                                                 </motion.li>
                                             )}
@@ -198,11 +199,11 @@ export default function MyApp({ Component, pageProps }) {
                                 </li>
 
                                 <li className='menu-li' style={{ paddingBottom: smallScreen ? '4rem' : 0 }}>
-                                    <a href="/About" className="menu-link" onClick={() => setNav('none')}>About / FAQ</a>
+                                    <Link href="/About" className="menu-link" onClick={() => setNav('none')}>About / FAQ</Link>
                                 </li>
 
                                 <li className="menu-li quote-li">
-                                    <a href="/Contact" className="nav-quote-btn" onClick={() => setNav('none')}>CONTACT US</a>
+                                    <Link href="/Contact" className="nav-quote-btn" onClick={() => setNav('none')}>CONTACT US</Link>
                                 </li>
                             </ul>
                         </div>
@@ -227,18 +228,18 @@ export default function MyApp({ Component, pageProps }) {
                     </div>
                     <div className="footer-content-card">
                         <h3>COMPANY</h3>
-                        <a href="/" className='footer-link'>Home</a>
-                        <a href="/About" className='footer-link'>About Us</a>
+                        <Link href="/" className='footer-link'>Home</Link>
+                        <Link href="/About" className='footer-link'>About Us</Link>
                     </div>
                     <div className="footer-content-card" style={{ paddingBottom: '2rem' }}>
                         <h3>SERVICES</h3>
-                        <a href="/services/interior-swift" className='footer-link'>Swift Interior Detail - <span className='special-package'>NEW</span></a>
-                        <a href="/services/interior" className='footer-link'>Full Interior Detail</a>
-                        <a href="/services/interior-spill" className='footer-link'>Full Interior + Spill Guard</a>
+                        <Link href="/services/interior-swift" className='footer-link'>Swift Interior Detail - <span className='special-package'>NEW</span></Link>
+                        <Link href="/services/interior" className='footer-link'>Full Interior Detail</Link>
+                        <Link href="/services/interior-spill" className='footer-link'>Full Interior + Spill Guard</Link>
                         <hr style={{ marginTop: '1.5rem' }} />
-                        <a href="/services/exterior" className='footer-link'>Exterior Wash</a>
-                        <a href="/services/exterior-seal" className='footer-link'>Exterior Seal & Shine</a>
-                        <a href="/services/exterior-correct" className='footer-link'>Exterior Correct & Protect</a>
+                        <Link href="/services/exterior" className='footer-link'>Exterior Wash</Link>
+                        <Link href="/services/exterior-seal" className='footer-link'>Exterior Seal & Shine</Link>
+                        <Link href="/services/exterior-correct" className='footer-link'>Exterior Correct & Protect</Link>
                     </div>
                     <div className="footer-content-card footer-contact-card" id="contact">
                         <h3>CONTACT</h3>
