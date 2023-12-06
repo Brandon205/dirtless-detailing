@@ -25,7 +25,6 @@ export function SizeAndType({vehicleSize, serviceType, mobile, updateFields}) {
 
                 <input type="checkbox" name="service" id="exterior-service" value="Exterior" className='radio-button' checked={serviceType === 'Exterior'} onChange={(e) => updateFields({serviceType: e.target.value})} />
                 <label htmlFor="exterior-service" className='checkbox-label'>Exterior Service</label>
-
             </div>
 
             <p className='contact-heading'>Mobile or Shop based service?<span className='special-package'>*</span></p>

@@ -218,7 +218,6 @@ export default function Contact() {
     }
 
     const finalSubmit = (formData, e) => {
-        console.log(formData)
         const dataObject = {
             "event": "formSubmission"
         }
