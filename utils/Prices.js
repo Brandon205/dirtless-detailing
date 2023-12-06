@@ -92,8 +92,8 @@ const prices = {
     },
     "4 Door": {
         "interior": {
-            "interior": 335,
-            "interiorspill": 500,
+            "interior": 300,
+            "interiorspill": 450,
             "interiorswift": 150
         },
         "exterior": {
