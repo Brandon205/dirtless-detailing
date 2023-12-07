@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import posthog from 'posthog-js';
 import { PostHogProvider } from 'posthog-js/react';
 import 'react-toastify/dist/ReactToastify.css';
@@ -21,6 +21,7 @@ if (typeof window !== 'undefined') {
             }
         },
         capture_pageleave: false,
+        capture_pageview: true,
     })
 }
 

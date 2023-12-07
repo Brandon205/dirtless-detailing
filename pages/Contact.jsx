@@ -219,44 +219,45 @@ export default function Contact() {
     }
 
     const finalSubmit = (formData, e) => {
-        const dataObject = { // For google tag
-            "event": "formSubmission"
-        }
-        window.dataLayer.push(dataObject)
+        // const dataObject = { // For google tag
+        //     "event": "formSubmission"
+        // }
+        // window.dataLayer.push(dataObject)
 
-        // posthog.capture('Form Submitted', {
-        //     price: currentPrice,
-        //     interior: data.interior ? true : false,
-        //     exterior: data.exterior ? true : false,
-        // })
-        fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
-            method: "POST",
-            body: formData
-        }).then(() => {
-            toast.success("Form submitted! Expect a text response from us soon!", {
-                position: "bottom-center",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined
-            })
-            e.target.reset();
-            setData(INITIAL_DATA)
-            window.scrollTo(0, 0);
+        console.log(currentPrice, data.interior, data.exterior)
+        posthog.capture('Form Submitted', {
+            price: currentPrice,
+            interior: data.interior ? true : false,
+            exterior: data.exterior ? true : false,
+        })
+        // fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
+        //     method: "POST",
+        //     body: formData
+        // }).then(() => {
+        //     toast.success("Form submitted! Expect a text response from us soon!", {
+        //         position: "bottom-center",
+        //         autoClose: 5000,
+        //         hideProgressBar: false,
+        //         closeOnClick: true,
+        //         pauseOnHover: true,
+        //         draggable: true,
+        //         progress: undefined
+        //     })
+        //     e.target.reset();
+        //     setData(INITIAL_DATA)
+        //     window.scrollTo(0, 0);
 
-        }).catch(error => {
-            toast.error("An error occurred, please try again." + error, {
-                position: "bottom-center",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined
-            })
-        });
+        // }).catch(error => {
+        //     toast.error("An error occurred, please try again." + error, {
+        //         position: "bottom-center",
+        //         autoClose: 5000,
+        //         hideProgressBar: false,
+        //         closeOnClick: true,
+        //         pauseOnHover: true,
+        //         draggable: true,
+        //         progress: undefined
+        //     })
+        // });
     }
 
     return (
