@@ -10,6 +10,7 @@ import Head from 'next/head';
 import Metatags from '../utils/Metatags';
 import prices from '../utils/Prices';
 import 'react-toastify/dist/ReactToastify.css';
+import posthog from 'posthog-js';
 
 import dynamic from "next/dynamic";
 const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
@@ -214,14 +215,20 @@ export default function Contact() {
             }
         });
 
-        finalSubmit(formData, e)
+        finalSubmit(formData, e, formInfo)
     }
 
     const finalSubmit = (formData, e) => {
-        const dataObject = {
+        const dataObject = { // For google tag
             "event": "formSubmission"
         }
         window.dataLayer.push(dataObject)
+
+        // posthog.capture('Form Submitted', {
+        //     price: currentPrice,
+        //     interior: data.interior ? true : false,
+        //     exterior: data.exterior ? true : false,
+        // })
         fetch("https://getform.io/f/10015c2d-db32-409b-884d-54c141a3b141", {
             method: "POST",
             body: formData
@@ -315,7 +322,7 @@ export default function Contact() {
                 <p><span className='special-package'>Note: </span>The Pricing Estimates are approximate and some services are based on vehicle condition, because of this final prices may vary slightly.</p>
                 <form className="form" id="form" onSubmit={(e) => formSubmit(e)}>
 
-                    <div>
+                    <div className='ph-no-capture'>
                         <p style={{position: 'absolute', padding: '0 0 0 2rem'}}>{currentStepIndex + 1} / {steps.length}</p>
                         {step}
                     </div>
@@ -323,9 +330,8 @@ export default function Contact() {
                     <div className="form-controls-container">
                         {!isFirstStep && (
                             <button type="button" className="form-btn" onClick={back}>Back</button>
-                            )}
-                        <button type="submit" className="form-btn">{isLastStep ? "Finish" : "Next"}</button>
-
+                        )}
+                        <button type="submit" data-ph={isLastStep ? 'submit' : 'next'} className="form-btn">{isLastStep ? "Finish" : "Next"}</button>
                     </div>
 
                     <div style={{display: currentPrice === 0 ? 'none' : 'inline-block'}} className='pricing__positioner'>

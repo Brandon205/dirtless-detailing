@@ -13,8 +13,14 @@ if (typeof window !== 'undefined') {
         api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://app.posthog.com',
         // Enable debug mode in development
         loaded: (posthog) => {
-            if (process.env.NODE_ENV === 'development') posthog.debug()
-        }
+            if (process.env.NODE_ENV === 'development') {
+                posthog.debug()
+            }
+            if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+                posthog.opt_out_capturing()
+            }
+        },
+        capture_pageleave: false,
     })
 }
 
