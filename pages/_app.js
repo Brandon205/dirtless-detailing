@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import CookieBanner from '../components/CookieBanner';
 import posthog from 'posthog-js';
 import { PostHogProvider } from 'posthog-js/react';
 import 'react-toastify/dist/ReactToastify.css';
@@ -16,9 +17,9 @@ if (typeof window !== 'undefined') {
             if (process.env.NODE_ENV === 'development') {
                 posthog.debug()
             }
-            if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
-                posthog.opt_out_capturing()
-            }
+            // if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+            //     posthog.opt_out_capturing()
+            // }
         },
         capture_pageleave: false,
         capture_pageview: true,
@@ -57,7 +58,6 @@ export default function MyApp({ Component, pageProps }) {
         return () => {
             window.removeEventListener('scroll', handleScroll)
         }
-
 
     }, [])
 
@@ -261,7 +261,7 @@ export default function MyApp({ Component, pageProps }) {
                         </div>
                     </div>
                 </footer>
-
+                <CookieBanner />
             </div>
         </PostHogProvider>
     )

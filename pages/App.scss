@@ -1549,11 +1549,14 @@ option {
   text-decoration: none;
 }
 
-.cookie-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+.cookie-container {
+  position: sticky;
+  right: 0;
+  bottom: 0;
+  background-color: $contact-bkg;
+  color: white;
+  padding: 2rem;
+  z-index: 99;
 }
 
 .cookie-button {
@@ -1929,6 +1932,13 @@ footer {
 
   .checkbox-label {
     width: auto;
+  }
+
+  .cookie-container {
+    max-width: 550px;
+    margin: 0 auto;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: 0 -2px 10px black;
   }
 }
 
@@ -3175,6 +3185,31 @@ footer {
 
   .nav-hr {
     display: none;
+  }
+
+  .cookie-container {
+    margin: 0;
+    max-width: 350px;
+    bottom: 2rem;
+    left: 1rem;
+    border-radius: 1rem;
+  }
+
+  .cookie-banner {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+
+    p {
+      margin: 0
+    }
+
+    button {}
+  }
+
+  .cookie-button:first-of-type {
+    margin-right: 0;
   }
 
   .sub-menu-header {
