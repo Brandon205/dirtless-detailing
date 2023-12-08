@@ -45,8 +45,8 @@ export function BasicInfo({name, email, phone, year, make, model, gift, message,
             
             <div style={{marginBottom: 0}} className='basic-info-container'>
                 <div style={{position: 'relative', display: 'flex', justifyContent: 'flex-start'}}>
-                    <label htmlFor="name" autoFocus className='text-input-label'>Name<span className='special-package'>*</span></label>
-                    <input type="text" id="name" name="name" autoComplete='on' className='text-input' value={name} onChange={e => updateFields({ name: e.target.value })} placeholder="Name" required />
+                    <label htmlFor="name" className='text-input-label'>Name<span className='special-package'>*</span></label>
+                    <input type="text" id="name" name="name" autoComplete='on' className='text-input' autoFocus value={name} onChange={e => updateFields({ name: e.target.value })} placeholder="Name" required />
                 </div>
                 <div style={{position: 'relative', display: 'flex', justifyContent: 'flex-start'}}>
                     <label htmlFor="email" className='text-input-label'>Email<span className='special-package'>*</span></label>
