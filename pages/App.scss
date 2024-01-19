@@ -3137,6 +3137,14 @@ footer {
   }
 }
 
+.screen-flex {
+  display: none;
+}
+
+.review-screen {
+  display: flex;
+}
+
 @media screen and (min-width: 450px) {
   .popular-readmore {
     margin-bottom: 0;
@@ -3750,6 +3758,10 @@ footer {
   .inline {
     display: inline;
   }
+
+  .screen-flex {
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 1350px) {
@@ -3896,6 +3908,10 @@ footer {
       letter-spacing: 0.5px;
     }
   }
+
+  .review-screen {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 2000px) {
@@ -3927,6 +3943,10 @@ footer {
 
   .text-xl {
     font-size: 2.5em;
+  }
+
+  .review-screen {
+    display: flex;
   }
 }
 

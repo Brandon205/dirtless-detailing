@@ -1,133 +1,135 @@
-import React, { useState, useEffect, useRef } from 'react';
-import Head from 'next/head';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import CookieBanner from '../components/CookieBanner';
-import posthog from 'posthog-js';
-import { PostHogProvider } from 'posthog-js/react';
-import 'react-toastify/dist/ReactToastify.css';
-import { motion, AnimatePresence } from 'framer-motion';
-import './App.scss';
+import React, { useState, useEffect, useRef } from "react";
+import Head from "next/head";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import CookieBanner from "../components/CookieBanner";
+import posthog from "posthog-js";
+import { PostHogProvider } from "posthog-js/react";
+import "react-toastify/dist/ReactToastify.css";
+import { motion, AnimatePresence } from "framer-motion";
+import "./App.scss";
+import Nav from "../app/Nav";
+import Footer from "../app/Footer";
 
-if (typeof window !== 'undefined') {
-    posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY, {
-        api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://app.posthog.com',
-        // Enable debug mode in development
-        loaded: (posthog) => {
-            if (process.env.NODE_ENV === 'development') {
-                posthog.debug()
-            }
-            // if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
-            //     posthog.opt_out_capturing()
-            // }
-        },
-        capture_pageleave: false,
-        capture_pageview: true,
-    })
-}
+// if (typeof window !== 'undefined') {
+//     posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY, {
+//         api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://app.posthog.com',
+//         // Enable debug mode in development
+//         loaded: (posthog) => {
+//             if (process.env.NODE_ENV === 'development') {
+//                 posthog.debug()
+//             }
+//             // if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+//             //     posthog.opt_out_capturing()
+//             // }
+//         },
+//         capture_pageleave: false,
+//         capture_pageview: true,
+//     })
+// }
 
 export default function MyApp({ Component, pageProps }) {
-    const [nav, setNav] = useState('none');
-    const [services, setServices] = useState(false);
-    const [gallery, setGallery] = useState(false);
-    const [smallScreen, setSmallScreen] = useState(null);
+  // const [nav, setNav] = useState('none');
+  // const [services, setServices] = useState(false);
+  // const [gallery, setGallery] = useState(false);
+  // const [smallScreen, setSmallScreen] = useState(null);
 
-    const router = useRouter()
+  // const router = useRouter()
 
-    const navBar = useRef(null);
+  // const navBar = useRef(null);
 
-    useEffect(() => {
-        const handleRouteChange = () => posthog?.capture('$pageview')
-        router.events.on('routeChangeComplete', handleRouteChange)
+  // useEffect(() => {
+  //     const handleRouteChange = () => posthog?.capture('$pageview')
+  //     router.events.on('routeChangeComplete', handleRouteChange)
 
-        return () => {
-            router.events.off('routeChangeComplete', handleRouteChange)
-        }
-    }, [])
+  //     return () => {
+  //         router.events.off('routeChangeComplete', handleRouteChange)
+  //     }
+  // }, [])
 
-    useEffect(() => {
+  // useEffect(() => {
 
-        if (window.innerWidth < 979) {
-            setSmallScreen(true);
-        } else {
-            setSmallScreen(false);
-        }
+  //     if (window.innerWidth < 979) {
+  //         setSmallScreen(true);
+  //     } else {
+  //         setSmallScreen(false);
+  //     }
 
-        document.addEventListener('scroll', handleScroll, { passive: true });
+  //     document.addEventListener('scroll', handleScroll, { passive: true });
 
-        return () => {
-            window.removeEventListener('scroll', handleScroll)
-        }
+  //     return () => {
+  //         window.removeEventListener('scroll', handleScroll)
+  //     }
 
-    }, [])
+  // }, [])
 
-    useEffect(() => {
-        if (nav === 'block') {
-            setServices(true)
-            setGallery(true)
-        } else {
-            setServices(false)
-            setGallery(false)
-        }
-    }, [nav])
+  // useEffect(() => {
+  //     if (nav === 'block') {
+  //         setServices(true)
+  //         setGallery(true)
+  //     } else {
+  //         setServices(false)
+  //         setGallery(false)
+  //     }
+  // }, [nav])
 
-    let handleScroll = () => {
-        const pos = window.pageYOffset;
-        if (navBar.current) {
-            if (pos > 0 || smallScreen) {
-                navBar.current.classList.add('normal-nav')
-            } else {
-                navBar.current.classList.remove('normal-nav')
-            }
-        }
-    }
+  // let handleScroll = () => {
+  //     const pos = window.pageYOffset;
+  //     if (navBar.current) {
+  //         if (pos > 0 || smallScreen) {
+  //             navBar.current.classList.add('normal-nav')
+  //         } else {
+  //             navBar.current.classList.remove('normal-nav')
+  //         }
+  //     }
+  // }
 
-    let changeNav = (changeTo) => {
-        switch (changeTo) {
-            case 'services': {
-                setGallery(false);
-                setServices(true);
-            }
-                break;
-            case 'gallery': {
-                setServices(false);
-                setGallery(true);
-            }
-                break;
-            default: {
-                setServices(false);
-                setGallery(false);
-            }
-        }
-    }
+  // let changeNav = (changeTo) => {
+  //     switch (changeTo) {
+  //         case 'services': {
+  //             setGallery(false);
+  //             setServices(true);
+  //         }
+  //             break;
+  //         case 'gallery': {
+  //             setServices(false);
+  //             setGallery(true);
+  //         }
+  //             break;
+  //         default: {
+  //             setServices(false);
+  //             setGallery(false);
+  //         }
+  //     }
+  // }
 
-    const navParent = {
-        open: { opacity: 1 },
-        closed: { opacity: 0 }
-    }
+  // const navParent = {
+  //     open: { opacity: 1 },
+  //     closed: { opacity: 0 }
+  // }
 
-    const navChild = {
-        open: { x: 0, opacity: 1 },
-        closed: { x: '-8%', opacity: 0 }
-    }
+  // const navChild = {
+  //     open: { x: 0, opacity: 1 },
+  //     closed: { x: '-8%', opacity: 0 }
+  // }
 
-    const navChildDiff = {
-        open: { x: 0, opacity: 1 },
-        closed: { x: '8%', opacity: 0 }
-    }
+  // const navChildDiff = {
+  //     open: { x: 0, opacity: 1 },
+  //     closed: { x: '8%', opacity: 0 }
+  // }
 
-    return (
-        <PostHogProvider client={posthog}>
-            <div className="App">
-                <Head>
-                    <meta charSet="utf-8" />
-                    <meta name="viewport" content="width=device-width, initial-scale=1" />
-                    <meta name="apple-mobile-web-app-status-bar" content="#90cdf4" />
-                    <meta name="google-site-verification" content="sq8uUuD_CLtkO1bg33IWhAVFjproB_N6s2Qqll0IxUo" />
+  return (
+    // <PostHogProvider client={posthog}>
+    <div className="App">
+      <Head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="apple-mobile-web-app-status-bar" content="#90cdf4" />
+        <meta name="google-site-verification" content="sq8uUuD_CLtkO1bg33IWhAVFjproB_N6s2Qqll0IxUo" />
 
-                    <link rel="icon" href="/favicon.ico" />
-                </Head>
-                <header className="App-header">
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      {/* <header className="App-header">
                     <nav id="nav" ref={navBar}>
                         <a style={{ display: 'flex', justifyContent: 'flex-start' }} className='nav-logo' href="/" aria-label='Dirt-Less Detailing Logo'>
                             <div className="header-cert" style={{ backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0a945e76-f4c0-4e29-ef16-463490d0db00/public')`, height: 105 + 'px', width: smallScreen ? '140px' : '200px' }}></div>
@@ -215,11 +217,15 @@ export default function MyApp({ Component, pageProps }) {
                             </ul>
                         </div>
                     </nav>
-                </header>
+                </header> */}
 
-                <Component {...pageProps} />
+      <Nav />
 
-                <footer>
+      <Component {...pageProps} />
+
+      <Footer />
+
+      {/* <footer>
                     <div className="footer-content-card-left">
                         <div>
                             <a href="/"><img src='../assets/icons/logoCircle.png' alt='Dirt-Less Detailing' style={{ width: '88px' }} /></a>
@@ -261,8 +267,8 @@ export default function MyApp({ Component, pageProps }) {
                         </div>
                     </div>
                 </footer>
-                <CookieBanner />
-            </div>
-        </PostHogProvider>
-    )
+                <CookieBanner /> */}
+      {/* </PostHogProvider> */}
+    </div>
+  );
 }
