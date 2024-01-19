@@ -1,4 +1,4 @@
-import Benefits from "../src/app/Benefits";
+import Benefits from "./Benefits";
 // import { motion } from "framer-motion";
 
 export default function HomePage() {
@@ -66,7 +66,7 @@ export default function HomePage() {
           </p>
 
           <div className="header-link-container">
-            <motion.a
+            {/* <motion.a
               href="/contact"
               className="top-quote-btn"
               variants={topBtnVariant}
@@ -83,7 +83,7 @@ export default function HomePage() {
               transition={{ duration: 0.25 }}
             >
               <img src="../assets/icons/phoneMessage.png" alt="call or message" className="btn-icon" /> (253) 252-9758
-            </motion.a>
+            </motion.a> */}
           </div>
 
           <div style={{ gap: 32 }} className="screen-flex">
@@ -603,10 +603,7 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            <div
-              className="review-card"
-              style={{ display: screenWidth >= 1750 && screenWidth <= 2300 ? "none" : "flex" }}
-            >
+            <div className="review-card review-screen">
               <div className="review-top">
                 <p className="review-text">
                   "Brought in my 12 Escalade and he worked his magic on both inside and outside.{" "}

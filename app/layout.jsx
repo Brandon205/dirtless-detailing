@@ -2,9 +2,9 @@ import React from "react";
 import CookieBanner from "../components/CookieBanner";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.scss";
-import Nav from "../src/app/Nav";
-import Footer from "../src/app/Footer";
-import { PHProvider } from "../src/app/providers";
+import Nav from "./Nav";
+import Footer from "./Footer";
+import { PHProvider } from "./providers";
 import dynamic from "next/dynamic";
 
 export const metadata = {
@@ -21,7 +21,7 @@ export const metadata = {
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
-const PostHogPageView = dynamic(() => import("../src/app/PostHogPageView"), {
+const PostHogPageView = dynamic(() => import("./PostHogPageView"), {
   ssr: false,
 });
 
