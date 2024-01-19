@@ -68,7 +68,7 @@ export default function Home() {
 
           <div className="header-link-container">
             <motion.a
-              href="/Contact"
+              href="/contact"
               className="top-quote-btn"
               variants={topBtnVariant}
               whileHover="hover"
@@ -172,7 +172,7 @@ export default function Home() {
 
             <hr className="long-hr accent-orange" />
             <div className="popular-link-container">
-              <a href="/Contact" className="popular-readmore">
+              <a href="/contact" className="popular-readmore">
                 Book Now!
               </a>
               <a href="/services/interior-swift" className="popular-readmore-secondary">
@@ -224,7 +224,7 @@ export default function Home() {
 
             <hr className="long-hr accent-orange" />
             <div className="popular-link-container">
-              <a href="/Contact" className="popular-readmore">
+              <a href="/contact" className="popular-readmore">
                 Book Now!
               </a>
               <a href="/services/interior" className="popular-readmore-secondary">
@@ -276,7 +276,7 @@ export default function Home() {
 
             <hr className="long-hr accent-orange" />
             <div className="popular-link-container">
-              <a href="/Contact" className="popular-readmore">
+              <a href="/contact" className="popular-readmore">
                 Book Now!
               </a>
               <a href="/services/interior-spill" className="popular-readmore-secondary">
@@ -347,7 +347,7 @@ export default function Home() {
 
             <hr className="long-hr accent-orange" />
             <div className="popular-link-container">
-              <a href="/Contact" className="popular-readmore">
+              <a href="/contact" className="popular-readmore">
                 Book Now!
               </a>
               <a href="/services/exterior" className="popular-readmore-secondary">
@@ -420,7 +420,7 @@ export default function Home() {
 
             <hr className="long-hr accent-orange" />
             <div className="popular-link-container">
-              <a href="/Contact" className="popular-readmore">
+              <a href="/contact" className="popular-readmore">
                 Book Now!
               </a>
               <a href="/services/exterior-seal" className="popular-readmore-secondary">
@@ -502,7 +502,7 @@ export default function Home() {
 
             <hr className="long-hr accent-orange" />
             <div className="popular-link-container">
-              <a href="/Contact" className="popular-readmore">
+              <a href="/contact" className="popular-readmore">
                 Book Now!
               </a>
               <a href="/services/exterior-correct" className="popular-readmore-secondary">

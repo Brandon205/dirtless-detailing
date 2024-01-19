@@ -277,7 +277,7 @@ export default function Contact() {
           title="Contact Us | Dirt-Less Detailing"
           description="Contact us here! Let us know any additional information we may need to know before your detail. Feel free to reach out with any questions!"
           image="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/public"
-          canonical="/Contact"
+          canonical="/contact"
         />
       </Head>
 

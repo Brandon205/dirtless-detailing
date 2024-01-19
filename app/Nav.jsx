@@ -280,13 +280,13 @@ export default function Nav() {
             </li>
 
             <li className="menu-li" style={{ paddingBottom: smallScreen ? "4rem" : 0 }}>
-              <Link href="/About" className="menu-link" onClick={() => setNav("none")}>
+              <Link href="/about" className="menu-link" onClick={() => setNav("none")}>
                 About / FAQ
               </Link>
             </li>
 
             <li className="menu-li quote-li">
-              <Link href="/Contact" className="nav-quote-btn" onClick={() => setNav("none")}>
+              <Link href="/contact" className="nav-quote-btn" onClick={() => setNav("none")}>
                 CONTACT US
               </Link>
             </li>

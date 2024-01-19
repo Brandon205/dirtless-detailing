@@ -29,7 +29,7 @@ export default function Footer() {
         <Link href="/" className="footer-link">
           Home
         </Link>
-        <Link href="/About" className="footer-link">
+        <Link href="/about" className="footer-link">
           About Us
         </Link>
       </div>

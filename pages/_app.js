@@ -208,11 +208,11 @@ export default function MyApp({ Component, pageProps }) {
                                 </li>
 
                                 <li className='menu-li' style={{ paddingBottom: smallScreen ? '4rem' : 0 }}>
-                                    <Link href="/About" className="menu-link" onClick={() => setNav('none')}>About / FAQ</Link>
+                                    <Link href="/about" className="menu-link" onClick={() => setNav('none')}>About / FAQ</Link>
                                 </li>
 
                                 <li className="menu-li quote-li">
-                                    <Link href="/Contact" className="nav-quote-btn" onClick={() => setNav('none')}>CONTACT US</Link>
+                                    <Link href="/contact" className="nav-quote-btn" onClick={() => setNav('none')}>CONTACT US</Link>
                                 </li>
                             </ul>
                         </div>
@@ -242,7 +242,7 @@ export default function MyApp({ Component, pageProps }) {
                     <div className="footer-content-card">
                         <h3>COMPANY</h3>
                         <Link href="/" className='footer-link'>Home</Link>
-                        <Link href="/About" className='footer-link'>About Us</Link>
+                        <Link href="about" className='footer-link'>About Us</Link>
                     </div>
                     <div className="footer-content-card" style={{ paddingBottom: '2rem' }}>
                         <h3>SERVICES</h3>
