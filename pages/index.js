@@ -1,6 +1,6 @@
 import { topBtnVariant } from "../utils/animationVariations";
 import { motion } from "framer-motion";
-import Benefits from "../app/Benefits";
+import Benefits from "../src/app/Benefits";
 
 export default function Home() {
   return (

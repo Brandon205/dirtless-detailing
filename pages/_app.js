@@ -8,8 +8,8 @@ import { PostHogProvider } from "posthog-js/react";
 import "react-toastify/dist/ReactToastify.css";
 import { motion, AnimatePresence } from "framer-motion";
 import "./App.scss";
-import Nav from "../app/Nav";
-import Footer from "../app/Footer";
+import Nav from "../src/app/Nav";
+import Footer from "../src/app/Footer";
 
 // if (typeof window !== 'undefined') {
 //     posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY, {

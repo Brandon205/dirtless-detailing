@@ -1,10 +1,10 @@
 "use client";
 import { useRef } from "react";
 import Lottie from "lottie-react";
-import starJSON from "../public/assets/icons/starJSON.json";
-import calendarJSON from "../public/assets/icons/calendarJSON.json";
-import carJSON from "../public/assets/icons/carJSON.json";
-import locationJSON from "../public/assets/icons/locationPing.json";
+import starJSON from "../../public/assets/icons/starJSON.json";
+import calendarJSON from "../../public/assets/icons/calendarJSON.json";
+import carJSON from "../../public/assets/icons/carJSON.json";
+import locationJSON from "../../public/assets/icons/locationPing.json";
 
 export default function Benefits() {
   const calendarRef = useRef(null);

@@ -1,13 +1,14 @@
 import React from "react";
-import CookieBanner from "../components/CookieBanner";
-import posthog from "posthog-js";
-import { PostHogProvider } from "posthog-js/react";
+import CookieBanner from "../../components/CookieBanner";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.scss";
 import Nav from "./Nav";
 import Footer from "./Footer";
+import { PHProvider } from "./providers";
+import dynamic from "next/dynamic";
 
 export const metadata = {
+  metadataBase: new URL("https://www.dirtlessdetailing.com"),
   title: {
     default: "Dirt-Less Detailing",
     template: "%s | Dirt-Less Detailing",
@@ -20,19 +21,9 @@ export const metadata = {
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
-if (typeof window !== "undefined") {
-  posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY, {
-    api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST || "https://app.posthog.com",
-    // Enable debug mode in development
-    loaded: (posthog) => {
-      if (process.env.NODE_ENV === "development") {
-        posthog.debug();
-      }
-    },
-    capture_pageleave: false,
-    capture_pageview: true,
-  });
-}
+const PostHogPageView = dynamic(() => import("./PostHogPageView"), {
+  ssr: false,
+});
 
 export default function RootLayout({ children }) {
   return (
@@ -59,15 +50,16 @@ export default function RootLayout({ children }) {
 
         <meta name="theme-color" content="#c83f03" />
       </Head> */}
-      <PostHogProvider client={posthog}>
+      <PHProvider>
         <Nav />
 
+        <PostHogPageView />
         <body>{children}</body>
 
         <Footer />
 
         <CookieBanner />
-      </PostHogProvider>
+      </PHProvider>
     </html>
   );
 }

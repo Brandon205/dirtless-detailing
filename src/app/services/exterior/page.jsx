@@ -1,14 +1,21 @@
-import PricingComponent from "../../utils/PricingComponent";
-import HeaderComponent from "../../components/HeaderComponent";
+import PricingComponent from "../../../../utils/PricingComponent";
+import HeaderComponent from "../../../../components/HeaderComponent";
 import {
   previewParentVariation,
   imgVariation1,
   imgVariation2,
   imgVariation3,
   imgVariation4,
-} from "../../utils/animationVariations";
+} from "../../../../utils/animationVariations";
 import { motion } from "framer-motion";
-import BeforeAfter from "../../../components/BeforeAfter";
+import BeforeAfter from "../../../../components/BeforeAfter";
+
+export const metadata = {
+  title: "Exterior Decon Wash",
+  description:
+    "Bonney Lakes top choice for Ceramic Coating, Paint Correction, and all of your auto detailing needs! Contact us to schedule your appointment today!",
+  alternates: { canonical: "https://www.dirtlessdetailing.com/exterior" },
+};
 
 export default function Exterior() {
   return (

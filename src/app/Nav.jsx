@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
-import { useRouter } from "next/router";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
@@ -10,18 +9,7 @@ export default function Nav() {
   const [gallery, setGallery] = useState(false);
   const [smallScreen, setSmallScreen] = useState(null);
 
-  const router = useRouter();
-
   const navBar = useRef(null);
-
-  useEffect(() => {
-    const handleRouteChange = () => posthog?.capture("$pageview");
-    router.events.on("routeChangeComplete", handleRouteChange);
-
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, []);
 
   useEffect(() => {
     if (window.innerWidth < 979) {
