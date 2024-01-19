@@ -51,7 +51,7 @@ section {
 
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 div [data-rmiz-modal-overlay="visible"] {
@@ -76,7 +76,7 @@ img {
   margin-top: 0;
   font-weight: 300;
   font-size: 1.2em;
-  color: $supporting-text
+  color: $supporting-text;
 }
 
 .logo {
@@ -124,7 +124,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-size: 24px;
   font-weight: bold;
   gap: 0.5rem;
@@ -175,7 +175,7 @@ img {
 }
 
 .side-quote-btn:hover {
-  color: white
+  color: white;
 }
 
 .new-contact-btn {
@@ -217,7 +217,7 @@ li span {
 }
 
 .nav-logo {
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .menu-container {
@@ -351,7 +351,8 @@ header h1 {
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: auto auto;
-  grid-template-areas: "icon desc"
+  grid-template-areas:
+    "icon desc"
     "icon myspan";
   width: 190px;
   text-align: left;
@@ -398,7 +399,7 @@ header h1 {
   line-height: 1.2;
   color: white;
   margin: 0;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .main-desc {
@@ -462,33 +463,33 @@ header h1 {
 
 /** Contact Page CSS **/
 
-input[type='checkbox'] {
+input[type="checkbox"] {
   display: none;
 }
 
-input[type='checkbox']:checked+label:not(.dirty-label) {
+input[type="checkbox"]:checked + label:not(.dirty-label) {
   transition: all 500ms ease;
   background-color: $main-clr;
   color: white;
   border-color: $main-clr;
 }
 
-input[type='checkbox']:checked+.dirty-label {
+input[type="checkbox"]:checked + .dirty-label {
   transition: all 500ms ease;
   color: white;
   border-color: $main-clr;
 }
 
-input[type='checkbox']:checked+label .special-package {
+input[type="checkbox"]:checked + label .special-package {
   color: white;
 }
 
-input[type='checkbox']:disabled+label {
+input[type="checkbox"]:disabled + label {
   color: gray;
   cursor: default;
 }
 
-input[type='radio']:checked+label {
+input[type="radio"]:checked + label {
   transition: all 500ms ease;
   background-color: $main-clr;
   color: white;
@@ -496,11 +497,11 @@ input[type='radio']:checked+label {
   border: 3px solid $main-clr;
 }
 
-input[type='radio']:checked+label .special-package {
+input[type="radio"]:checked + label .special-package {
   color: white;
 }
 
-input[type='radio']:disabled+label {
+input[type="radio"]:disabled + label {
   color: gray;
   cursor: default;
 }
@@ -971,7 +972,7 @@ option {
 @mixin popular-btn {
   display: inline-block;
   padding: 0.5em 5%;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   cursor: pointer;
   font-size: 1.5rem;
   font-weight: bold;
@@ -1013,7 +1014,7 @@ option {
 
   a {
     margin: 0 auto;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-size: 38px;
     font-weight: bold;
     text-decoration: none;
@@ -1328,7 +1329,7 @@ option {
 
 .otherservices-readmore {
   padding: 0.25rem 1.75rem;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-weight: bold;
   font-size: 24px;
   background-color: $main-clr;
@@ -1339,13 +1340,13 @@ option {
   text-align: center;
 }
 
-.otherservices-readmore+.otherservices-readmore {
+.otherservices-readmore + .otherservices-readmore {
   background-color: rgba(0, 0, 0, 0);
   color: white;
   border: 2px solid $main-clr;
 }
 
-.otherservices-readmore+.otherservices-readmore:hover {
+.otherservices-readmore + .otherservices-readmore:hover {
   color: $secondary-text-light;
   background-color: #c83e0312;
 }
@@ -1384,7 +1385,7 @@ option {
   border-top: 1px dashed black;
   border-bottom: none;
   width: 112%;
-  margin-left: -6%
+  margin-left: -6%;
 }
 
 .secondary-text {
@@ -1395,7 +1396,7 @@ option {
 }
 
 .secondary-text span {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   color: white;
   font-size: 2em;
@@ -1461,7 +1462,7 @@ option {
 }
 
 .highlight {
-  background-color: #FFD333;
+  background-color: #ffd333;
   padding: 1px;
   color: black;
 }
@@ -1516,7 +1517,7 @@ option {
   font-size: 2.5em;
   margin: 0;
   font-weight: bold;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .mobileservices-details ul {
@@ -1732,7 +1733,7 @@ footer {
     }
 
     h2 {
-      margin-bottom: 5vh
+      margin-bottom: 5vh;
     }
   }
 }
@@ -1787,11 +1788,11 @@ footer {
 
 .above-heading::before,
 .above-heading::after {
-  content: '---';
+  content: "---";
 }
 
 .new-heading {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-size: 2em;
   width: 100%;
   padding-bottom: 2rem;
@@ -1844,7 +1845,7 @@ footer {
 
 .reason-title {
   grid-area: title;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-size: 32px;
   margin: 0;
   font-weight: bold;
@@ -2036,7 +2037,7 @@ footer {
   width: 100%;
   height: 100%;
   margin: 0;
-  transition: all .2s;
+  transition: all 0.2s;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2066,7 +2067,7 @@ footer {
 }
 
 .slider-button:after {
-  content: '';
+  content: "";
   padding: 3px;
   display: inline-block;
   border: solid #575757;
@@ -2075,7 +2076,7 @@ footer {
 }
 
 .slider-button:before {
-  content: '';
+  content: "";
   padding: 3px;
   display: inline-block;
   border: solid #575757;
@@ -2171,7 +2172,7 @@ footer {
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  background-color: #41444A;
+  background-color: #41444a;
   border-radius: 30px;
   gap: 1rem;
   max-width: 90%;
@@ -2179,7 +2180,7 @@ footer {
 }
 
 .product-title {
-  color: #FF9900;
+  color: #ff9900;
   font-weight: bold;
   font-size: 1.5em;
 }
@@ -2251,7 +2252,7 @@ footer {
 
 .m-0 {
   margin: 0;
-  color: lightgray
+  color: lightgray;
 }
 
 .bold {
@@ -2289,7 +2290,7 @@ footer {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 1rem
+  margin-bottom: 1rem;
 }
 
 .feature-section {
@@ -2371,7 +2372,7 @@ footer {
   margin: 0;
 }
 
-.pricing-card p+p {
+.pricing-card p + p {
   margin-bottom: 1rem;
 }
 
@@ -2392,7 +2393,7 @@ footer {
   align-items: flex-start;
   justify-content: center;
   color: white;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 2em;
   font-weight: bold;
   margin: 0;
@@ -2766,7 +2767,7 @@ footer {
 }
 
 .addon-addbutton {
-  content: '';
+  content: "";
 }
 
 .addon-price {
@@ -2832,7 +2833,6 @@ footer {
   border-radius: 12px;
 }
 
-
 .example-vehicle {
   padding: 1rem;
   margin: 0 auto;
@@ -2846,7 +2846,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  color: black
+  color: black;
 }
 
 .outline-padding {
@@ -2968,7 +2968,7 @@ footer {
 }
 
 .customer-icon {
-  background-color: #01579B;
+  background-color: #01579b;
   border-radius: 50%;
   width: 70px;
   height: 70px;
@@ -2995,7 +2995,7 @@ footer {
 }
 
 .locationpage-section {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   width: 100%;
   padding: 2rem 1rem;
   line-height: 2;
@@ -3122,8 +3122,22 @@ footer {
   height: 410px;
 }
 
-@media screen and (min-width: 450px) {
+.urable-section {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem auto;
+  width: 75%;
+  gap: 2rem;
+  justify-content: space-between;
+  text-align: center;
 
+  a {
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 450px) {
   .popular-readmore {
     margin-bottom: 0;
   }
@@ -3173,7 +3187,7 @@ footer {
   }
 
   .nav-logo {
-    flex-grow: 0.2
+    flex-grow: 0.2;
   }
 
   .nav-div {
@@ -3203,10 +3217,11 @@ footer {
     align-items: center;
 
     p {
-      margin: 0
+      margin: 0;
     }
 
-    button {}
+    button {
+    }
   }
 
   .cookie-button:first-of-type {
@@ -3246,7 +3261,6 @@ footer {
 
   .cover {
     height: 70vh;
-
   }
 
   .coating-points {
@@ -3350,7 +3364,7 @@ footer {
   }
 
   .dd-desc {
-    margin: 0
+    margin: 0;
   }
 
   .faq-title {
@@ -3402,7 +3416,7 @@ footer {
   }
 
   .gallery-preview {
-    margin: 0
+    margin: 0;
   }
 
   .cleaning-process-title {
@@ -3461,14 +3475,14 @@ footer {
 
   .otherservices-container {
     width: 90%;
-    margin: 0 auto
+    margin: 0 auto;
   }
 
   .service-title {
     text-align: left;
   }
 
-  .service-title+p {
+  .service-title + p {
     text-align: left;
   }
 
@@ -3532,11 +3546,11 @@ footer {
   }
 
   .above-heading::before {
-    content: '---';
+    content: "---";
   }
 
   .above-heading::after {
-    content: '';
+    content: "";
   }
 
   .service-main {
@@ -3739,7 +3753,6 @@ footer {
 }
 
 @media screen and (min-width: 1350px) {
-
   .service-type-container {
     width: 95%;
     grid-template-columns: none;
@@ -3854,6 +3867,17 @@ footer {
     margin-bottom: 0;
     gap: 0;
   }
+
+  .urable-section {
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    text-align: left;
+
+    a {
+      justify-content: center;
+    }
+  }
 }
 
 @media screen and (min-width: 1500px) {
@@ -3890,11 +3914,11 @@ footer {
   }
 
   .pricing-container {
-    gap: 4rem
+    gap: 4rem;
   }
 
   .extra-space {
-    margin: 3rem auto
+    margin: 3rem auto;
   }
 
   .text-large {
