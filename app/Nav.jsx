@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 export default function Nav() {
@@ -46,26 +46,26 @@ export default function Nav() {
     }
   };
 
-  let changeNav = (changeTo) => {
-    switch (changeTo) {
-      case "services":
-        {
-          setGallery(false);
-          setServices(true);
-        }
-        break;
-      case "gallery":
-        {
-          setServices(false);
-          setGallery(true);
-        }
-        break;
-      default: {
-        setServices(false);
-        setGallery(false);
-      }
-    }
-  };
+  // let changeNav = (changeTo) => {
+  //   switch (changeTo) {
+  //     case "services":
+  //       {
+  //         setGallery(false);
+  //         setServices(true);
+  //       }
+  //       break;
+  //     case "gallery":
+  //       {
+  //         setServices(false);
+  //         setGallery(true);
+  //       }
+  //       break;
+  //     default: {
+  //       setServices(false);
+  //       setGallery(false);
+  //     }
+  //   }
+  // };
 
   const navParent = {
     open: { opacity: 1 },
@@ -140,7 +140,8 @@ export default function Nav() {
                   nav !== "block" ? setServices(false) : null;
                 }}
               >
-                <AnimatePresence>
+                {/* ANIMATE PRESENSE */}
+                <div>
                   {services && (
                     <motion.li
                       animate="open"
@@ -199,7 +200,7 @@ export default function Nav() {
                       </div>
                     </motion.li>
                   )}
-                </AnimatePresence>
+                </div>
               </ul>
             </li>
 
@@ -226,7 +227,8 @@ export default function Nav() {
                   nav !== "block" ? setGallery(false) : null;
                 }}
               >
-                <AnimatePresence>
+                {/* ANIMATE PRESENSE */}
+                <div>
                   {gallery && (
                     <motion.li
                       animate="open"
@@ -263,7 +265,7 @@ export default function Nav() {
                       </motion.div>
                     </motion.li>
                   )}
-                </AnimatePresence>
+                </div>
               </ul>
             </li>
 
