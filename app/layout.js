@@ -5,6 +5,7 @@ import Nav from "./Nav";
 import Footer from "./Footer";
 import CookieBanner from "./components/CookieBanner";
 import PostHogPageView from "./PostHogPageView";
+import { Suspense } from "react";
 // import dynamic from "next/dynamic";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -31,7 +32,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <PHProvider>
-        <PostHogPageView />
+        <Suspense>
+          <PostHogPageView />
+        </Suspense>
         <body className={inter.className}>
           <Nav />
           {children}
