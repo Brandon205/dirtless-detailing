@@ -1,10 +1,10 @@
 import React from "react";
-import CookieBanner from "../components/CookieBanner";
+// import CookieBanner from "../components/CookieBanner";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.scss";
 import Nav from "./Nav";
 import Footer from "./Footer";
-import { PHProvider } from "./providers";
+// import { PHProvider } from "./providers";
 import dynamic from "next/dynamic";
 
 export const metadata = {
