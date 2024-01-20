@@ -19,7 +19,7 @@
     "react-medium-image-zoom": "^5.1.10",
     "react-toastify": "^10.0.3",
     "sass": "^1.70.0",
-    "update": "^0.7.4",
+    "update": "^0.4.2",
     "web-vitals": "^3.5.1"
   },
   "scripts": {

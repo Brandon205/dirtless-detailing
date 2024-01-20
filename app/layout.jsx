@@ -1,10 +1,10 @@
 import React from "react";
-// import CookieBanner from "../components/CookieBanner";
-import "react-toastify/dist/ReactToastify.css";
+import CookieBanner from "../components/CookieBanner";
+// import "react-toastify/dist/ReactToastify.css";
 import "./App.scss";
 import Nav from "./Nav";
 import Footer from "./Footer";
-// import { PHProvider } from "./providers";
+import { PHProvider } from "./providers";
 import dynamic from "next/dynamic";
 
 export const metadata = {
@@ -50,15 +50,15 @@ export default function RootLayout({ children }) {
 
         <meta name="theme-color" content="#c83f03" />
       </Head> */}
-      {/* <PHProvider> */}
-      {/* <PostHogPageView /> */}
-      <body>
-        <Nav />
-        {children}
-        <Footer />
-        {/* <CookieBanner /> */}
-      </body>
-      {/* </PHProvider> */}
+      <PHProvider>
+        <PostHogPageView />
+        <body>
+          <Nav />
+          {children}
+          <Footer />
+          <CookieBanner />
+        </body>
+      </PHProvider>
     </html>
   );
 }

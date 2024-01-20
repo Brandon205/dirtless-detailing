@@ -48,7 +48,7 @@ export default function HomePage() {
             }`,
         }} />
     </Head> */}
-      <header className="home-header">
+      {/* <header className="home-header">
         <div
           className="maincover"
           style={{
@@ -107,9 +107,9 @@ export default function HomePage() {
             </a>
           </div>
         </div>
-      </header>
+      </header> */}
 
-      <div className="service-bkg" style={{ paddingTop: 0 }}>
+      {/* <div className="service-bkg" style={{ paddingTop: 0 }}>
         <Benefits />
 
         <div className="general-container new-heading-container" style={{ margin: "5vh auto 2vh auto" }}>
@@ -666,7 +666,7 @@ export default function HomePage() {
             ></iframe>
           </div>
         </section>
-      </div>
+      </div> */}
     </div>
   );
 }

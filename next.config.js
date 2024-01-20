@@ -1,21 +1,21 @@
-const withPWA = require('next-pwa')({
-    dest: 'public',
-    register: true
-  })
-  
-  module.exports = withPWA({
-    images: {
-      remotePatterns: [
-        {
-          protocol: 'https',
-          hostname: 'res.cloudinary.com',
-          port: ''
-        },
-        {
-          protocol: 'https',
-          hostname: 'imagedelivery.net',
-          port: ''
-        },
-      ],
-    },
-  })
+const withPWA = require("next-pwa")({
+  dest: "public",
+  register: true,
+});
+
+module.exports = withPWA({
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "imagedelivery.net",
+        port: "",
+      },
+    ],
+  },
+});
