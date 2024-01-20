@@ -1,6 +1,5 @@
-import React from "react";
 import CookieBanner from "../components/CookieBanner";
-// import "react-toastify/dist/ReactToastify.css";
+import "react-toastify/dist/ReactToastify.css";
 import "./App.scss";
 import Nav from "./Nav";
 import Footer from "./Footer";

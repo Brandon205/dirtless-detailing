@@ -1,6 +1,5 @@
 "use client";
 import Benefits from "./Benefits";
-// import { motion } from "framer-motion";
 
 export default function HomePage() {
   return (
@@ -10,12 +9,15 @@ export default function HomePage() {
         <meta property="og:site_name" content="Dirt-Less Detailing" />
         <meta property="og:type" content="website" />
         <Metatags
-            title='Bonney Lakes Auto Detailing & Ceramic Coating Specialists'
-            description='Bonney Lakes top choice for Ceramic Coating, Paint Correction, and all of your auto detailing needs! Contact us to schedule your appointment today!'
-            image={'https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/public'}
-            canonical='/'
+          title="Bonney Lakes Auto Detailing & Ceramic Coating Specialists"
+          description="Bonney Lakes top choice for Ceramic Coating, Paint Correction, and all of your auto detailing needs! Contact us to schedule your appointment today!"
+          image={"https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/public"}
+          canonical="/"
         />
-        <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
+        <script
+          type="application/ld+json"
+          key="product-jsonld"
+          dangerouslySetInnerHTML={{
             __html: `{
                 "@context": "https://schema.org/",
                 "@type": "LocalBusiness",
@@ -46,9 +48,10 @@ export default function HomePage() {
                     "reviewCount": 21
                 }
             }`,
-        }} />
-    </Head> */}
-      {/* <header className="home-header">
+          }}
+        />
+      </Head> */}
+      <header className="home-header">
         <div
           className="maincover"
           style={{
@@ -107,9 +110,9 @@ export default function HomePage() {
             </a>
           </div>
         </div>
-      </header> */}
+      </header>
 
-      {/* <div className="service-bkg" style={{ paddingTop: 0 }}>
+      <div className="service-bkg" style={{ paddingTop: 0 }}>
         <Benefits />
 
         <div className="general-container new-heading-container" style={{ margin: "5vh auto 2vh auto" }}>
@@ -666,7 +669,7 @@ export default function HomePage() {
             ></iframe>
           </div>
         </section>
-      </div> */}
+      </div>
     </div>
   );
 }
