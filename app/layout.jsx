@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import CookieBanner from "../components/CookieBanner";
 import "react-toastify/dist/ReactToastify.css";

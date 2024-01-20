@@ -140,9 +140,8 @@ export default function Nav() {
                   nav !== "block" ? setServices(false) : null;
                 }}
               >
-                {/* ANIMATE PRESENSE */}
                 <div>
-                  {services && (
+                  {/* {services && (
                     <motion.li
                       animate="open"
                       initial="closed"
@@ -199,7 +198,7 @@ export default function Nav() {
                         </motion.div>
                       </div>
                     </motion.li>
-                  )}
+                  )} */}
                 </div>
               </ul>
             </li>
@@ -227,9 +226,8 @@ export default function Nav() {
                   nav !== "block" ? setGallery(false) : null;
                 }}
               >
-                {/* ANIMATE PRESENSE */}
                 <div>
-                  {gallery && (
+                  {/* {gallery && (
                     <motion.li
                       animate="open"
                       initial="closed"
@@ -264,7 +262,7 @@ export default function Nav() {
                         </Link>
                       </motion.div>
                     </motion.li>
-                  )}
+                  )} */}
                 </div>
               </ul>
             </li>
