@@ -1,4 +1,4 @@
-import { Inter } from "next/font/google";
+import { Montserrat, Titillium_Web } from "next/font/google";
 import "./App.scss";
 import { PHProvider } from "./providers";
 import Nav from "./Nav";
@@ -6,9 +6,10 @@ import Footer from "./Footer";
 import CookieBanner from "./components/CookieBanner";
 import PostHogPageView from "./PostHogPageView";
 import { Suspense } from "react";
-// import dynamic from "next/dynamic";
+import { GoogleTagManager } from "@next/third-parties/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"] });
+const titillium = Titillium_Web({ weight: ["200", "300", "400", "600", "700", "900"], subsets: ["latin"] });
 
 export const metadata = {
   metadataBase: new URL("https://www.dirtlessdetailing.com"),
@@ -24,10 +25,6 @@ export const metadata = {
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
-// const PostHogPageView = dynamic(() => import("./PostHogPageView"), {
-//   ssr: false,
-// });
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -35,12 +32,13 @@ export default function RootLayout({ children }) {
         <Suspense>
           <PostHogPageView />
         </Suspense>
-        <body className={inter.className}>
+        <body className={montserrat.className}>
           <Nav />
           {children}
           <Footer />
           <CookieBanner />
         </body>
+        <GoogleTagManager gtmId="GTM-5L5ZZN88" />
       </PHProvider>
     </html>
   );
