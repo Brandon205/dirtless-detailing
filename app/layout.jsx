@@ -50,15 +50,15 @@ export default function RootLayout({ children }) {
 
         <meta name="theme-color" content="#c83f03" />
       </Head> */}
-      <PHProvider>
-        <PostHogPageView />
-        <body>
-          <Nav />
-          {children}
-          <Footer />
-          <CookieBanner />
-        </body>
-      </PHProvider>
+      {/* <PHProvider> */}
+      {/* <PostHogPageView /> */}
+      <body>
+        <Nav />
+        {children}
+        <Footer />
+        {/* <CookieBanner /> */}
+      </body>
+      {/* </PHProvider> */}
     </html>
   );
 }

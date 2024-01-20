@@ -1,3 +1,4 @@
+"use client";
 import Benefits from "./Benefits";
 // import { motion } from "framer-motion";
 
@@ -66,24 +67,12 @@ export default function HomePage() {
           </p>
 
           <div className="header-link-container">
-            {/* <motion.a
-              href="/contact"
-              className="top-quote-btn"
-              variants={topBtnVariant}
-              whileHover="hover"
-              transition={{ duration: 0.25 }}
-            >
+            <a href="/contact" className="top-quote-btn">
               <img src="../assets/icons/clipboard.png" alt="clipboard" className="btn-icon" /> Get a Free Quote
-            </motion.a>
-            <motion.a
-              href="tel:2532529758"
-              className="top-quote-btn btn-secondary"
-              variants={topBtnVariant}
-              whileHover="hover"
-              transition={{ duration: 0.25 }}
-            >
+            </a>
+            <a href="tel:2532529758" className="top-quote-btn btn-secondary">
               <img src="../assets/icons/phoneMessage.png" alt="call or message" className="btn-icon" /> (253) 252-9758
-            </motion.a> */}
+            </a>
           </div>
 
           <div style={{ gap: 32 }} className="screen-flex">

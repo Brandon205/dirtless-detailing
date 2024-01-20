@@ -11,7 +11,7 @@ export default function Nav() {
   const navBar = useRef(null);
 
   useEffect(() => {
-    document.addEventListener("scroll", handleScroll, { passive: true });
+    document.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -30,6 +30,7 @@ export default function Nav() {
 
   let handleScroll = () => {
     const pos = window.scrollY;
+    console.log("ran, ", pos);
     if (navBar.current) {
       if (pos > 0 || window.innerWidth < 979) {
         navBar.current.classList.add("normal-nav");
