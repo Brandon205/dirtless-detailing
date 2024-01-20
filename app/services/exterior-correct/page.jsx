@@ -1,16 +1,16 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import PricingComponent from "../../../utils/PricingComponent";
+import PricingComponent from "@/utils/PricingComponent";
 import {
   previewParentVariation,
   imgVariation1,
   imgVariation2,
   imgVariation3,
   imgVariation4,
-} from "../../../utils/animationVariations";
+} from "@/utils/animationVariations";
 import { motion } from "framer-motion";
-import HeaderComponent from "../../../components/HeaderComponent";
-import FaqItem from "../../../components/FaqItem";
+import HeaderComponent from "../../components/HeaderComponent";
+import FaqItem from "../../components/FaqItem";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 

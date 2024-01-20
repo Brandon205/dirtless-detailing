@@ -1,15 +1,15 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import Head from "next/head";
-import { topBtnVariant } from "../../../utils/animationVariations";
+import { topBtnVariant } from "@/utils/animationVariations";
 import { motion, useTransform, useScroll } from "framer-motion";
-import FaqItem from "../../../components/FaqItem";
-import Metatags from "../../../utils/Metatags";
+import FaqItem from "../components/FaqItem";
+import Metatags from "@/utils/Metatags";
 import Lottie from "lottie-react";
-import starJSON from "../../../public/assets/icons/starJSON.json";
-import calendarJSON from "../../../public/assets/icons/calendarJSON.json";
-import carJSON from "../../../public/assets/icons/carJSON.json";
-import locationJSON from "../../../public/assets/icons/locationPing.json";
+import starJSON from "@/public/assets/icons/starJSON.json";
+import calendarJSON from "@/public/assets/icons/calendarJSON.json";
+import carJSON from "@/public/assets/icons/carJSON.json";
+import locationJSON from "@/public/assets/icons/locationPing.json";
 
 export default function About() {
   const [expanded, setExpanded] = useState(false);

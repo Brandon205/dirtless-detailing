@@ -1,14 +1,14 @@
 "use client";
 import React, { useState } from "react";
-import PricingComponent from "../../../utils/PricingComponent";
-import HeaderComponent from "../../../components/HeaderComponent";
+import PricingComponent from "@/utils/PricingComponent";
+import HeaderComponent from "../../components/HeaderComponent";
 import {
   previewParentVariation,
   imgVariation1,
   imgVariation2,
   imgVariation3,
   imgVariation4,
-} from "../../../utils/animationVariations";
+} from "@/utils/animationVariations";
 import { motion } from "framer-motion";
 
 export default function FullIntEx() {

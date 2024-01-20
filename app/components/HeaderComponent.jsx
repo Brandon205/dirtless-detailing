@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { topBtnVariant } from "../utils/animationVariations";
+import { topBtnVariant } from "@/utils/animationVariations";
 
 export default function HeaderComponent({ mainUrl, title, description, secondaryUrl }) {
   return (

@@ -1,7 +1,7 @@
 "use client";
 import Benefits from "./Benefits";
 
-export default function HomePage() {
+export default function Home() {
   return (
     <div className="App">
       {/* <Head>

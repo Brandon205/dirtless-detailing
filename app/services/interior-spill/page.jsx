@@ -1,17 +1,15 @@
 "use client";
 import React, { useState } from "react";
-// import Head from "next/head";
-// import Metatags from "../../../utils/Metatags";
-import PricingComponent from "../../../utils/PricingComponent";
+import PricingComponent from "@/utils/PricingComponent";
 import {
   previewParentVariation,
   imgVariation1,
   imgVariation2,
   imgVariation3,
   imgVariation4,
-} from "../../../utils/animationVariations";
+} from "@/utils/animationVariations";
 import { motion } from "framer-motion";
-import HeaderComponent from "../../../components/HeaderComponent";
+import HeaderComponent from "../../components/HeaderComponent";
 
 export default function InteriorSpill() {
   const [slide, setSlide] = useState(50);

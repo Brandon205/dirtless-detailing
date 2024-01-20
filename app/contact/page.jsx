@@ -1,13 +1,13 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { toast, ToastContainer } from "react-toastify";
-import { useMultistepForm } from "../../utils/UseMultistepForm";
-import { BasicInfo } from "../../utils/BasicInfo";
-import { SizeAndType } from "../../utils/SizeAndType";
-import { ServiceType } from "../../utils/ServiceType";
-import { topBtnVariant } from "../../utils/animationVariations";
+import { useMultistepForm } from "@/utils/UseMultistepForm";
+import { BasicInfo } from "@/utils/BasicInfo";
+import { SizeAndType } from "@/utils/SizeAndType";
+import { ServiceType } from "@/utils/ServiceType";
+import { topBtnVariant } from "@/utils/animationVariations";
 import { motion } from "framer-motion";
-import prices from "../../utils/Prices";
+import prices from "@/utils/Prices";
 import "react-toastify/dist/ReactToastify.css";
 import posthog from "posthog-js";
 

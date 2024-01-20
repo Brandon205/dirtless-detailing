@@ -1,16 +1,14 @@
 "use client";
 import React, { useState } from "react";
-// import Head from "next/head";
-// import Metatags from "../../../utils/Metatags";
-import PricingComponent from "../../../utils/PricingComponent";
-import HeaderComponent from "../../../components/HeaderComponent";
+import PricingComponent from "@/utils/PricingComponent";
+import HeaderComponent from "../../components/HeaderComponent";
 import {
   previewParentVariation,
   imgVariation1,
   imgVariation2,
   imgVariation3,
   imgVariation4,
-} from "../../../utils/animationVariations";
+} from "@/utils/animationVariations";
 import { motion } from "framer-motion";
 
 export default function ExteriorSeal() {
@@ -67,20 +65,6 @@ export default function ExteriorSeal() {
         description="Our tried and true wash with a corrective polish, and even stronger Ceramic Spray coating."
         secondaryUrl={"c4bc3845-d897-4dcc-9401-f7feca96a200"}
       />
-      {/* <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/cover')`}}></div>
-      <div className="servicepage-header">
-        <div>
-          <h1><span className='accent-orange bold text-shadow'>Exterior Seal and Shine</span></h1>
-          <h2 className='page-subheading'>Our tried and true wash with a corrective polish, and even stronger Ceramic Spray coating.</h2>
-          <div className='header-buttons'>
-            <motion.a href="/contact" className='top-quote-btn' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</motion.a>
-            <motion.a href="tel:2532529758" className='top-quote-btn btn-secondary' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</motion.a>
-          </div>
-        </div>
-        <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c4bc3845-d897-4dcc-9401-f7feca96a200/public')`}}>
-          <img style={{visibility: 'hidden'}} alt="Before and after of a Ford Truck from the side" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c4bc3845-d897-4dcc-9401-f7feca96a200/public" />
-        </div>
-      </div> */}
 
       <div className="main-content-container">
         <div className="process-container">
