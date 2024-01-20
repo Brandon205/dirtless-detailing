@@ -1,23 +1,16 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import Link from "next/link";
 
 export default function Nav() {
   const [nav, setNav] = useState("none");
   const [services, setServices] = useState(false);
   const [gallery, setGallery] = useState(false);
-  const [smallScreen, setSmallScreen] = useState(null);
 
   const navBar = useRef(null);
 
   useEffect(() => {
-    if (window.innerWidth < 979) {
-      setSmallScreen(true);
-    } else {
-      setSmallScreen(false);
-    }
-
     document.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => {
@@ -36,9 +29,9 @@ export default function Nav() {
   }, [nav]);
 
   let handleScroll = () => {
-    const pos = window.pageYOffset;
+    const pos = window.scrollY;
     if (navBar.current) {
-      if (pos > 0 || smallScreen) {
+      if (pos > 0 || window.innerWidth < 979) {
         navBar.current.classList.add("normal-nav");
       } else {
         navBar.current.classList.remove("normal-nav");
@@ -67,20 +60,20 @@ export default function Nav() {
   //   }
   // };
 
-  const navParent = {
-    open: { opacity: 1 },
-    closed: { opacity: 0 },
-  };
+  // const navParent = {
+  //   open: { opacity: 1 },
+  //   closed: { opacity: 0 },
+  // };
 
-  const navChild = {
-    open: { x: 0, opacity: 1 },
-    closed: { x: "-8%", opacity: 0 },
-  };
+  // const navChild = {
+  //   open: { x: 0, opacity: 1 },
+  //   closed: { x: "-8%", opacity: 0 },
+  // };
 
-  const navChildDiff = {
-    open: { x: 0, opacity: 1 },
-    closed: { x: "8%", opacity: 0 },
-  };
+  // const navChildDiff = {
+  //   open: { x: 0, opacity: 1 },
+  //   closed: { x: "8%", opacity: 0 },
+  // };
   return (
     <header className="App-header">
       <nav id="nav" ref={navBar}>
@@ -91,11 +84,10 @@ export default function Nav() {
           aria-label="Dirt-Less Detailing Logo"
         >
           <div
-            className="header-cert"
+            className="header-cert logo-screen"
             style={{
               backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0a945e76-f4c0-4e29-ef16-463490d0db00/public')`,
               height: 105 + "px",
-              width: smallScreen ? "140px" : "200px",
             }}
           ></div>
         </a>
@@ -199,6 +191,57 @@ export default function Nav() {
                       </div>
                     </motion.li>
                   )} */}
+                  {services && (
+                    <li className="nav-li">
+                      <div>
+                        <h4 className="sub-menu-header">INTERIOR CLEANING SERVICES</h4>
+                        <div className="sub-menu-div" onClick={() => setNav("none")}>
+                          <Link href="/services/interior-swift" className="menu-link smaller-line-height">
+                            <img src="../assets/icons/time-span.png" alt="fast clock" className="nav-icon" /> Swift
+                            Interior Detail
+                          </Link>
+                        </div>
+                        <div className="sub-menu-div" onClick={() => setNav("none")}>
+                          <Link href="/services/interior" className="menu-link smaller-line-height">
+                            <img src="../assets/icons/steering1.png" alt="steering wheel" className="nav-icon" /> Full
+                            Interior
+                          </Link>
+                        </div>
+                        <div className="sub-menu-div" onClick={() => setNav("none")}>
+                          <Link href="/services/interior-spill" className="menu-link smaller-line-height">
+                            <img
+                              src="../assets/icons/steeringLock.png"
+                              alt="steering wheel with lock"
+                              className="nav-icon"
+                            />{" "}
+                            Full Interior with Spill Guard
+                          </Link>
+                        </div>
+                      </div>
+
+                      <div>
+                        <h4 className="sub-menu-header">EXTERIOR SERVICES</h4>
+                        <div className="sub-menu-div" onClick={() => setNav("none")}>
+                          <Link href="/services/exterior" className="menu-link smaller-line-height">
+                            <img src="../assets/icons/carWash.png" alt="car with bubbles" className="nav-icon" />{" "}
+                            Exterior Wash
+                          </Link>
+                        </div>
+                        <div className="sub-menu-div" onClick={() => setNav("none")}>
+                          <Link href="/services/exterior-seal" className="menu-link smaller-line-height">
+                            <img src="../assets/icons/carPolish.png" alt="microfiber" className="nav-icon" /> Exterior
+                            Seal and Shine
+                          </Link>
+                        </div>
+                        <div className="sub-menu-div" onClick={() => setNav("none")}>
+                          <Link href="/services/exterior-correct" className="menu-link smaller-line-height">
+                            <img src="../assets/icons/correctProtect.png" alt="polisher" className="nav-icon" />{" "}
+                            Exterior Correct and Protect
+                          </Link>
+                        </div>
+                      </div>
+                    </li>
+                  )}
                 </div>
               </ul>
             </li>
@@ -263,11 +306,40 @@ export default function Nav() {
                       </motion.div>
                     </motion.li>
                   )} */}
+                  {gallery && (
+                    <li className="nav-li">
+                      <h4 className="sub-menu-header">GALLERIES</h4>
+                      <div className="sub-menu-div" onClick={() => setNav("none")}>
+                        <Link href="/gallery/interior" className="menu-link smaller-line-height">
+                          <img src="../assets/icons/steering1.png" alt="car with doors open" className="nav-icon" />{" "}
+                          Full Interior Gallery
+                        </Link>
+                      </div>
+                      <div className="sub-menu-div" onClick={() => setNav("none")}>
+                        <Link href="/gallery/exterior" className="menu-link smaller-line-height">
+                          <img src="../assets/icons/carWash.png" alt="soap bubbles" className="nav-icon" /> Exterior
+                          Wash Gallery
+                        </Link>
+                      </div>
+                      <div className="sub-menu-div" onClick={() => setNav("none")}>
+                        <Link href="/gallery/seal" className="menu-link smaller-line-height">
+                          <img src="../assets/icons/carPolish.png" alt="car hood" className="nav-icon" /> Seal & Shine
+                          Gallery
+                        </Link>
+                      </div>
+                      <div className="sub-menu-div" onClick={() => setNav("none")}>
+                        <Link href="/gallery/correct" className="menu-link smaller-line-height">
+                          <img src="../assets/icons/correctProtect.png" alt="gallery" className="nav-icon" /> Correct &
+                          Protect Gallery
+                        </Link>
+                      </div>
+                    </li>
+                  )}
                 </div>
               </ul>
             </li>
 
-            <li className="menu-li" style={{ paddingBottom: smallScreen ? "4rem" : 0 }}>
+            <li className="menu-li menu-li-screen">
               <Link href="/about" className="menu-link" onClick={() => setNav("none")}>
                 About / FAQ
               </Link>
