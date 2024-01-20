@@ -5,7 +5,7 @@ import PricingComponent from "@/utils/PricingComponent";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-export default function federalWay() {
+export default function FederalWay() {
   const [currPackage, setCurrPackage] = useState("Interior");
   const [currLink, setCurrLink] = useState("interior");
   const [currComponent, setCurrComponent] = useState(

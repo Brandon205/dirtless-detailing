@@ -113,9 +113,9 @@ export default function Contact() {
   }
 
   const { steps, currentStepIndex, step, isFirstStep, isLastStep, next, back } = useMultistepForm([
-    <SizeAndType {...data} updateFields={updateFields} />,
-    <ServiceType {...data} updateFields={updateFields} />,
-    <BasicInfo {...data} updateFields={updateFields} />,
+    <SizeAndType {...data} updateFields={updateFields} key={1} />,
+    <ServiceType {...data} updateFields={updateFields} key={2} />,
+    <BasicInfo {...data} updateFields={updateFields} key={3} />,
   ]);
 
   function formSubmit(e) {
