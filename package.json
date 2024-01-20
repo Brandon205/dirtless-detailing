@@ -3,47 +3,27 @@
   "homepage": "https://dirtlessdetailing.com/",
   "version": "5.4.0",
   "private": true,
-  "dependencies": {
-    "@formkit/auto-animate": "^0.8.1",
-    "@testing-library/jest-dom": "^6.2.0",
-    "@testing-library/react": "^14.1.2",
-    "@testing-library/user-event": "^14.5.2",
-    "gh-pages": "^6.1.1",
-    "lottie-react": "^2.4.0",
-    "next": "^14.1.0",
-    "posthog-js": "^1.100.0",
-    "react": "^18.2.0",
-    "react-animated-numbers": "^0.17.1",
-    "react-dom": "^18.2.0",
-    "react-medium-image-zoom": "^5.1.10",
-    "react-toastify": "^10.0.3",
-    "sass": "^1.70.0",
-    "update": "^0.4.2",
-    "web-vitals": "^3.5.1"
-  },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "dependencies": {
+    "@formkit/auto-animate": "^0.8.1",
+    "framer-motion": "^10.18.0",
+    "lottie-react": "^2.4.0",
+    "next": "14.1.0",
+    "posthog-js": "^1.100.0",
+    "react": "^18",
+    "react-animated-numbers": "^0.17.1",
+    "react-dom": "^18",
+    "react-medium-image-zoom": "^5.1.10",
+    "react-toastify": "^10.0.3",
+    "sass": "^1.70.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0"
   }
 }
