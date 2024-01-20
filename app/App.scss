@@ -3145,6 +3145,10 @@ footer {
   display: flex;
 }
 
+.logo-screen {
+  width: 140px;
+}
+
 @media screen and (min-width: 450px) {
   .popular-readmore {
     margin-bottom: 0;
@@ -3761,6 +3765,10 @@ footer {
 
   .screen-flex {
     display: flex;
+  }
+
+  .logo-screen {
+    width: 140px;
   }
 }
 

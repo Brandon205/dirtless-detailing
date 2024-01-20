@@ -1,56 +1,43 @@
 "use client";
 import Benefits from "./Benefits";
 
+const jsonld = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "Dirt-Less Detailing",
+  image: "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover",
+  url: "https://www.dirtless-detailing.com",
+  telephone: "2532529758",
+  priceRange: "$$$",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "9305 205th Ave E",
+    addressLocality: "Bonney Lake",
+    addressRegion: "WA",
+    postalCode: "98391",
+    addressCountry: "US",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 47.1728314,
+    longitude: -122.1567854,
+  },
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    opens: "07:00",
+    closes: "19:00",
+  },
+  sameAs: [
+    "https://www.instagram.com/dirt_less_detailing/",
+    "https://www.youtube.com/channel/UCsoqP5s4hwkQd_Sd-TVv-jg",
+  ],
+};
+
 export default function Home() {
   return (
     <div className="App">
-      {/* <Head>
-        <title>Bonney Lakes Auto Detailing & Ceramic Coating Specialists</title>
-        <meta property="og:site_name" content="Dirt-Less Detailing" />
-        <meta property="og:type" content="website" />
-        <Metatags
-          title="Bonney Lakes Auto Detailing & Ceramic Coating Specialists"
-          description="Bonney Lakes top choice for Ceramic Coating, Paint Correction, and all of your auto detailing needs! Contact us to schedule your appointment today!"
-          image={"https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/public"}
-          canonical="/"
-        />
-        <script
-          type="application/ld+json"
-          key="product-jsonld"
-          dangerouslySetInnerHTML={{
-            __html: `{
-                "@context": "https://schema.org/",
-                "@type": "LocalBusiness",
-                "name": "Dirt-Less Detailing",
-                "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/public",
-                "currenciesAccepted": "USD",
-                "priceRange": "$$$",
-                "openingHours": ["Mo-Su 7:00-19:00"],
-                "paymentAccepted": "Cash, Credit/Debit Card, Facebook Pay",
-                "url": "https://www.dirtlessdetailing.com",
-                "email": "brenden@dirtlessdetailing.com",
-                "telephone": "(253) 252-9758",
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressLocality": "Bonney Lake",
-                    "addressRegion": "WA",
-                    "postalCode": "99391",
-                    "streetAddress": "9305 205th Ave E"
-                },
-                "geo": {
-                    "@type": "GeoCoordinates",
-                    "latitude": 47.17285149644542,
-                    "longitude": -122.15677457325478
-                },
-                "aggregateRating": {
-                    "@type": "AggregateRating",
-                    "ratingValue": 5,
-                    "reviewCount": 21
-                }
-            }`,
-          }}
-        />
-      </Head> */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
       <header className="home-header">
         <div
           className="maincover"
