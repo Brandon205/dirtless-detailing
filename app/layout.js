@@ -7,6 +7,7 @@ import CookieBanner from "./components/CookieBanner";
 import PostHogPageView from "./PostHogPageView";
 import { Suspense } from "react";
 import { GoogleTagManager } from "@next/third-parties/google";
+import Head from "next/head";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 const titillium = Titillium_Web({ weight: ["200", "300", "400", "600", "700", "900"], subsets: ["latin"] });
@@ -28,6 +29,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="google-site-verification" content="sq8uUuD_CLtkO1bg33IWhAVFjproB_N6s2Qqll0IxUo" />
+      </Head>
       <PHProvider>
         <Suspense>
           <PostHogPageView />

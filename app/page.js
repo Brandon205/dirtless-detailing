@@ -1,5 +1,7 @@
 "use client";
 import Benefits from "./Benefits";
+import { topBtnVariant } from "@/utils/animationVariations";
+import { motion } from "framer-motion";
 
 const jsonld = {
   "@context": "https://schema.org",
@@ -28,10 +30,7 @@ const jsonld = {
     opens: "07:00",
     closes: "19:00",
   },
-  sameAs: [
-    "https://www.instagram.com/dirt_less_detailing/",
-    "https://www.youtube.com/channel/UCsoqP5s4hwkQd_Sd-TVv-jg",
-  ],
+  sameAs: ["https://www.instagram.com/dirt_less_detailing", "https://www.youtube.com/channel/UCsoqP5s4hwkQd_Sd-TVv-jg"],
 };
 
 export default function Home() {
@@ -57,12 +56,30 @@ export default function Home() {
           </p>
 
           <div className="header-link-container">
-            <a href="/contact" className="top-quote-btn">
+            {/* <a href="/contact" className="top-quote-btn">
               <img src="../assets/icons/clipboard.png" alt="clipboard" className="btn-icon" /> Get a Free Quote
             </a>
             <a href="tel:2532529758" className="top-quote-btn btn-secondary">
               <img src="../assets/icons/phoneMessage.png" alt="call or message" className="btn-icon" /> (253) 252-9758
-            </a>
+            </a> */}
+            <motion.a
+              href="/Contact"
+              className="top-quote-btn"
+              variants={topBtnVariant}
+              whileHover="hover"
+              transition={{ duration: 0.25 }}
+            >
+              <img src="../assets/icons/clipboard.png" alt="clipboard" className="btn-icon" /> Get a Free Quote
+            </motion.a>
+            <motion.a
+              href="tel:2532529758"
+              className="top-quote-btn btn-secondary"
+              variants={topBtnVariant}
+              whileHover="hover"
+              transition={{ duration: 0.25 }}
+            >
+              <img src="../assets/icons/phoneMessage.png" alt="call or message" className="btn-icon" /> (253) 252-9758
+            </motion.a>
           </div>
 
           <div style={{ gap: 32 }} className="screen-flex">
