@@ -1,14 +1,13 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
-import Head from "next/head";
-import { topBtnVariant } from "@/utils/animationVariations";
+import { topBtnVariant } from "../../utils/animationVariations";
 import { motion, useTransform, useScroll } from "framer-motion";
 import FaqItem from "../components/FaqItem";
 import Lottie from "lottie-react";
-import starJSON from "@/public/assets/icons/starJSON.json";
-import calendarJSON from "@/public/assets/icons/calendarJSON.json";
-import carJSON from "@/public/assets/icons/carJSON.json";
-import locationJSON from "@/public/assets/icons/locationPing.json";
+import starJSON from "../../public/assets/icons/starJSON.json";
+import calendarJSON from "../../public/assets/icons/calendarJSON.json";
+import carJSON from "../../public/assets/icons/carJSON.json";
+import locationJSON from "../../public/assets/icons/locationPing.json";
 
 export default function About() {
   const [expanded, setExpanded] = useState(false);
@@ -102,7 +101,7 @@ export default function About() {
 
   return (
     <div className="App bg-contact">
-      <Head>
+      {/* <Head>
         <title>About Us / FAQ | Dirt-Less Detailing</title>
         <script
           type="application/ld+json"
@@ -187,7 +186,7 @@ export default function About() {
           }`,
           }}
         />
-      </Head>
+      </Head> */}
       <div
         className="cover"
         style={{
