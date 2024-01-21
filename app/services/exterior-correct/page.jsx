@@ -117,14 +117,7 @@ export default function ExteriorCorrect() {
 
   return (
     <section className="service-content-container">
-      {/* <Head>
-        <title>Exterior Correct and Protect | Dirt-Less Detailing</title>
-        <Metatags
-          title="Exterior Correct and Protect | Dirt-Less Detailing"
-          description="Elevate your vehicle's appearance and protection with our Correct and Protect service, leaving your car with a mirror-like shine and defense."
-          image="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2bd5c3dd-6677-466a-e348-8495945c4700/public"
-          canonical="/services/exterior-correct"
-        />
+      {/*
         <script
           type="application/ld+json"
           key="product-jsonld"

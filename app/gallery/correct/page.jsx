@@ -8,15 +8,6 @@ import "react-medium-image-zoom/dist/styles.css";
 export default function CoatingGallery() {
   return (
     <section className="gallery-content-container">
-      {/* <Head>
-        <title>Dirt-Less Detailing | Ceramic Coating Gallery</title>
-        <Metatags
-          title="Dirt-Less Detailing | Ceramic Coating Gallery"
-          description="A gallery of photos that we have taken showing off some of the vehicles that we have coated and protected!"
-          image="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/8c1574b9-7517-4c50-6b36-133352ab0a00/public"
-          canonical="/gallery/correct"
-        />
-      </Head> */}
       <div
         className="cover"
         style={{

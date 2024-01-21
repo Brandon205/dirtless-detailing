@@ -33,14 +33,7 @@ export default function Tehaleh() {
 
   return (
     <div className="location-container bg-contact">
-      {/* <Head>
-        <title>Tehaleh Vehicle Detailing Services | Dirt-Less Detailing</title>
-        <Metatags
-          title="Tehaleh Vehicle Detailing Services | Dirt-Less Detailing"
-          description="Ceramic Coatings • Interior • Exterior • Paint Correction. See our services offered in Tehaleh Washington"
-          image="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/public"
-          canonical="/location/tehaleh"
-        />
+      {/* 
         <script
           type="application/ld+json"
           key="product-jsonld"

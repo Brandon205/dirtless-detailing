@@ -16,14 +16,7 @@ export default function InteriorSpill() {
 
   return (
     <section className="service-content-container">
-      {/* <Head>
-        <title>Interior with Spill Guard | Dirt-Less Detailing</title>
-        <Metatags
-          title="Interior with Spill Guard | Dirt-Less Detailing"
-          description="Our Full Interior cleaning process with an interior ceramic coating, perfect for protecting all surfaces in your vehicle."
-          image="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a196c77-cb1a-42f9-479b-8fdbe3c14500/public"
-          canonical="/services/interior-spill"
-        />
+      {/* 
         <script
           type="application/ld+json"
           key="product-jsonld"

@@ -8,15 +8,6 @@ import "react-medium-image-zoom/dist/styles.css";
 export default function PaintCorrectionGallery() {
   return (
     <section className="gallery-content-container">
-      {/* <Head>
-        <title>Car Wash Gallery | Dirt-Less Detailing</title>
-        <Metatags
-          title="Car Wash Gallery | Dirt-Less Detailing"
-          description="Take a look at our showcase of our exterior wash services to get a preview of what we are capable of doing to your car, no matter the current condition!"
-          image="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/55dcbdac-12df-4f37-2058-f3aaf8a6b600/public"
-          canonical="/gallery/exterior"
-        />
-      </Head> */}
       <div
         className="cover"
         style={{

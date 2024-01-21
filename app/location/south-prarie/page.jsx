@@ -33,14 +33,7 @@ export default function SouthPrairie() {
 
   return (
     <div className="location-container bg-contact">
-      {/* <Head>
-        <title>South Prairie Detailing Services | Dirt-Less Detailing</title>
-        <Metatags
-          title="South Prairie Detailing Services | Dirt-Less Detailing"
-          description="Exterior Washes • Interior Cleaning • Ceramic Coatings. Come see our detailing offers for South Prairie Washington"
-          image="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/public"
-          canonical="/location/south-prairie"
-        />
+      {/* 
         <script
           type="application/ld+json"
           key="product-jsonld"

@@ -16,14 +16,7 @@ export default function ExteriorSeal() {
 
   return (
     <section className="service-content-container">
-      {/* <Head>
-        <title>Exterior Seal and Shine | Dirt-Less Detailing</title>
-        <Metatags
-          title="Exterior Seal and Shine | Dirt-Less Detailing"
-          description="Experience a showroom shine and unparalleled protection with our Exterior Seal and Shine, ensuring your car gleams like new while safeguarding its finish."
-          image="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/public"
-          canonical="/services/exterior-seal"
-        />
+      {/*
         <script
           type="application/ld+json"
           key="product-jsonld"

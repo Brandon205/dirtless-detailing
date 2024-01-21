@@ -8,15 +8,6 @@ import "react-medium-image-zoom/dist/styles.css";
 export default function FullIntGallery() {
   return (
     <section className="gallery-content-container">
-      {/* <Head>
-        <title>Full Interior Gallery | Dirt-Less Detailing</title>
-        <Metatags
-          title="Full Interior Gallery | Dirt-Less Detailing"
-          description="Our Full Interior Gallery shows off some of our hard work cleaning vehicle interiors. We've cleaned everything from spilled drinks to crumbs everywhere!"
-          image="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/213e3fa9-1def-44b2-3031-1901432b9a00/public"
-          canonical="/gallery/interior"
-        />
-      </Head> */}
       <div
         className="cover"
         style={{

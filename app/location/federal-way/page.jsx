@@ -33,14 +33,7 @@ export default function FederalWay() {
 
   return (
     <div className="location-container bg-contact">
-      {/* <Head>
-        <title>Vehicle Detailing Federal Way | Dirt-Less Detailing</title>
-        <Metatags
-          title="Vehicle Detailing Federal Way | Dirt-Less Detailing"
-          description="Keep your car looking showroom-worthy with our exterior washes and protect it from environmental damage with our ceramic coatings."
-          image="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/public"
-          canonical="/location/federal-way"
-        />
+      {/* 
         <script
           type="application/ld+json"
           key="product-jsonld"

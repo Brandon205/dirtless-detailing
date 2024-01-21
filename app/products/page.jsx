@@ -5,16 +5,6 @@ import { topBtnVariant } from "@/utils/animationVariations";
 export default function products() {
   return (
     <div className="bg-contact">
-      {/* <Head>
-        <title>The Top Ceramic Maintenance Products | Dirt-Less Detailing</title>
-        <Metatags
-          title="The Top Ceramic Maintenance Products | Dirt-Less Detailing"
-          description="See our recommendations for the products and methods that you should be using to wash your car easily!"
-          image="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/45779246-97c3-4442-85d6-be09aabad900/public"
-          canonical="/products/ceramic-coating"
-        />
-      </Head> */}
-
       <div
         className="cover"
         style={{

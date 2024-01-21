@@ -33,14 +33,7 @@ export default function Enumclaw() {
 
   return (
     <div className="location-container bg-contact">
-      {/* <Head>
-        <title>Enumclaw Mobile Detailing | Dirt-Less Detailing</title>
-        <Metatags
-          title="Enumclaw Mobile Detailing | Dirt-Less Detailing"
-          description="Restore your car's shine with our paint corrections and maintain its pristine appearance with our ceramic coatings."
-          image="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/public"
-          canonical="/location/enumclaw"
-        />
+      {/* 
         <script
           type="application/ld+json"
           key="product-jsonld"

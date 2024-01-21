@@ -21,14 +21,7 @@ import BeforeAfter from "../../components/BeforeAfter";
 export default function Exterior() {
   return (
     <section className="service-content-container">
-      {/* <Head>
-        <title>Exterior Decon Wash | Dirt-Less Detailing</title>
-        <Metatags
-          title='Exterior Decon Wash | Dirt-Less Detailing'
-          description='Get a car wash like never before with our Exterior Decon Wash. Where we go in depth to get all corners and remove any paint contaminants.'
-          image='https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/da3f5734-319b-4301-43c9-7af958fd5600/public'
-          canonical='/services/exterior'
-        />
+      {/* 
         <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
           __html: `{
             "@context": "http://schema.org",

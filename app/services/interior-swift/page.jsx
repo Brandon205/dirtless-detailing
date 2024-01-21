@@ -13,14 +13,7 @@ import { motion } from "framer-motion";
 export default function FullIntEx() {
   return (
     <section className="service-content-container">
-      {/* <Head>
-        <title>Swift Interior Detail | Dirt-Less Detailing</title>
-        <Metatags
-          title="Swift Interior Detail | Dirt-Less Detailing"
-          description="Our Swift Interior Detail is our new service tailored to giving you a quick, easy, and budget friendly option to completely revamp your vehicles interior!"
-          image="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/public"
-          canonical="/services/interior-swift"
-        />
+      {/* 
         <script
           type="application/ld+json"
           key="product-jsonld"

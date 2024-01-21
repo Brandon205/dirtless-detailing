@@ -33,14 +33,7 @@ export default function Sumner() {
 
   return (
     <div className="location-container bg-contact">
-      {/* <Head>
-        <title>Auto Detailing in Sumner | Dirt-Less Detailing</title>
-        <Metatags
-          title="Auto Detailing in Sumner | Dirt-Less Detailing"
-          description="Interior Cleaning • Exterior Washes • Paint Correction • Ceramic Coatings. Take a look at our detailing services for Sumner Washington"
-          image="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/public"
-          canonical="/location/sumner"
-        />
+      {/* 
         <script
           type="application/ld+json"
           key="product-jsonld"

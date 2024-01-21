@@ -8,15 +8,6 @@ import "react-medium-image-zoom/dist/styles.css";
 export default function PaintCorrectionGallery() {
   return (
     <section className="gallery-content-container">
-      {/* <Head>
-        <title>Paint Correction Gallery | Dirt-Less Detailing</title>
-        <Metatags
-          title="Paint Correction Gallery | Dirt-Less Detailing"
-          description="Paint Correction Photos • Here are some examples from both our Single and Two Stage Paint Correction services!"
-          image="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/dcfb9b5c-1867-4678-8ae3-2d88d1286300/public"
-          canonical="/gallery/seal"
-        />
-      </Head> */}
       <div
         className="cover"
         style={{

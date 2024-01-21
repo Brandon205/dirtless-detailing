@@ -4,7 +4,6 @@ import Head from "next/head";
 import { topBtnVariant } from "@/utils/animationVariations";
 import { motion, useTransform, useScroll } from "framer-motion";
 import FaqItem from "../components/FaqItem";
-import Metatags from "@/utils/Metatags";
 import Lottie from "lottie-react";
 import starJSON from "@/public/assets/icons/starJSON.json";
 import calendarJSON from "@/public/assets/icons/calendarJSON.json";
@@ -105,12 +104,6 @@ export default function About() {
     <div className="App bg-contact">
       <Head>
         <title>About Us / FAQ | Dirt-Less Detailing</title>
-        <Metatags
-          title="About Us / FAQ | Dirt-Less Detailing"
-          description="Find out a little more about us here, and check out our FAQ for to get answers to our most frequently asked questions."
-          image="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a7b4af9c-97db-42dc-3b72-452a6221aa00/public"
-          canonical="/about"
-        />
         <script
           type="application/ld+json"
           key="product-jsonld"

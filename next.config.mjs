@@ -14,6 +14,10 @@ const nextConfig = {
       },
     ],
   },
+  webpack: (config) => {
+    config.resolve.alias["@"] = path.join(__dirname, "dirtless-detailing");
+    return config;
+  },
 };
 
 export default nextConfig;

@@ -33,14 +33,7 @@ export default function Buckley() {
 
   return (
     <div className="location-container bg-contact">
-      {/* <Head>
-        <title>Mobile Vehicle Detailing Buckley | Dirt-Less Detailing</title>
-        <Metatags
-          title="Mobile Vehicle Detailing Buckley | Dirt-Less Detailing"
-          description="Give your car the ultimate makeover with our exterior washes and paint corrections, and ensure long-lasting protection with our ceramic coatings."
-          image="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/public"
-          canonical="/location/buckley"
-        />
+      {/* 
         <script
           type="application/ld+json"
           key="product-jsonld"

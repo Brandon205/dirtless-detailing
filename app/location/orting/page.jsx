@@ -33,14 +33,7 @@ export default function Orting() {
 
   return (
     <div className="location-container bg-contact">
-      {/* <Head>
-        <title>Orting Auto Detailing | Dirt-Less Detailing</title>
-        <Metatags
-          title="Orting Auto Detailing | Dirt-Less Detailing"
-          description="Our comprehensive detailing services include everything from exterior washes to ceramic coatings, ensuring that your car looks its best from every angle."
-          image="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/public"
-          canonical="/location/orting"
-        />
+      {/* 
         <script
           type="application/ld+json"
           key="product-jsonld"

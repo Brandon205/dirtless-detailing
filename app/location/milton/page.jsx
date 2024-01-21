@@ -33,14 +33,7 @@ export default function Milton() {
 
   return (
     <div className="location-container bg-contact">
-      {/* <Head>
-        <title>Milton Detailing Services | Dirt-Less Detailing</title>
-        <Metatags
-          title="Milton Detailing Services | Dirt-Less Detailing"
-          description="Say goodbye to paint imperfections with our paint correction services, and protect your car's finish with our ceramic coatings."
-          image="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/public"
-          canonical="/location/milton"
-        />
+      {/* 
         <script
           type="application/ld+json"
           key="product-jsonld"

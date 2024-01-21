@@ -33,14 +33,7 @@ export default function BonneyLake() {
 
   return (
     <div className="location-container bg-contact">
-      {/* <Head>
-        <title>Auto Detailing in Bonney Lake | Dirt-Less Detailing</title>
-        <Metatags
-          title="Auto Detailing in Bonney Lake | Dirt-Less Detailing"
-          description="Protect your car's paint with our ceramic coatings and keep your interior looking brand new with our interior cleaning services."
-          image="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0b441cde-1d0f-45d9-665f-e44bfce0d800/public"
-          canonical="/location/bonney-lake"
-        />
+      {/* 
         <script
           type="application/ld+json"
           key="product-jsonld"

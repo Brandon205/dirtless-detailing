@@ -33,14 +33,7 @@ export default function Graham() {
 
   return (
     <div className="location-container bg-contact">
-      {/* <Head>
-        <title>Auto Detailing in Graham | Dirt-Less Detailing</title>
-        <Metatags
-          title="Auto Detailing in Graham | Dirt-Less Detailing"
-          description="Our detailing services include everything from interior cleanings to paint corrections, ensuring that your car looks its best both inside and out."
-          image="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/public"
-          canonical="/location/graham"
-        />
+      {/* 
         <script
           type="application/ld+json"
           key="product-jsonld"

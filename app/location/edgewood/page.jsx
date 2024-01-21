@@ -33,14 +33,7 @@ export default function Edgewood() {
 
   return (
     <div className="location-container bg-contact">
-      {/* <Head>
-        <title>Mobile Detailing in Edgewood | Dirt-Less Detailing</title>
-        <Metatags
-          title="Mobile Detailing in Edgewood | Dirt-Less Detailing"
-          description="From deep cleaning to odor elimination, our detailing services will leave your car looking and smelling fresh."
-          image="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/public"
-          canonical="/location/edgewood"
-        />
+      {/* 
         <script
           type="application/ld+json"
           key="product-jsonld"

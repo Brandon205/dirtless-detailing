@@ -33,14 +33,7 @@ export default function Puyallup() {
 
   return (
     <div className="location-container bg-contact">
-      {/* <Head>
-        <title>Mobile Vehicle Detailing in Puyallup | Dirt-Less Detailing</title>
-        <Metatags
-          title="Mobile Vehicle Detailing in Puyallup | Dirt-Less Detailing"
-          description="Interior • Exterior • Ceramic Coating • Paint Correction. Check out our top auto detailing services for Puyallup Washington"
-          image="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/public"
-          canonical="/location/puyallup"
-        />
+      {/*
         <script
           type="application/ld+json"
           key="product-jsonld"
