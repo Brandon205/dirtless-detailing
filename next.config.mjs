@@ -1,6 +1,4 @@
 /** @type {import('next').NextConfig} */
-const path = require("path");
-
 const nextConfig = {
   images: {
     remotePatterns: [
@@ -15,11 +13,6 @@ const nextConfig = {
         port: "",
       },
     ],
-  },
-  resolve: {
-    alias: {
-      "@/": path.resolve(__dirname, "dirtless-detailing/"),
-    },
   },
 };
 

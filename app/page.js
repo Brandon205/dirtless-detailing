@@ -1,6 +1,6 @@
 "use client";
 import Benefits from "./Benefits";
-import { topBtnVariant } from "@/utils/animationVariations";
+import { topBtnVariant } from "../utils/animationVariations";
 import { motion } from "framer-motion";
 
 const jsonld = {
