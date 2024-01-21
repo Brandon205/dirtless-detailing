@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Zoom from "react-medium-image-zoom";
-import { topBtnVariant } from "@/utils/animationVariations";
+import { topBtnVariant } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
 import "react-medium-image-zoom/dist/styles.css";
 

@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 
-import PricingComponent from "@/utils/PricingComponent";
+import PricingComponent from "../../../utils/PricingComponent";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
