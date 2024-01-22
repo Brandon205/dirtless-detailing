@@ -11,48 +11,30 @@ import {
 import { motion } from "framer-motion";
 import BeforeAfter from "../../components/BeforeAfter";
 
-// export const metadata = {
-//   title: "Exterior Decon Wash",
-//   description:
-//     "Bonney Lakes top choice for Ceramic Coating, Paint Correction, and all of your auto detailing needs! Contact us to schedule your appointment today!",
-//   alternates: { canonical: "https://www.dirtlessdetailing.com/exterior" },
-// };
+const jsonld = {
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  name: "Exterior Decon Wash",
+  image: "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/da3f5734-319b-4301-43c9-7af958fd5600/public",
+  description:
+    "Get a car wash like never before with our Exterior Decon Wash. Where we go in depth to get all corners and remove any paint contaminants.",
+  brand: {
+    "@type": "Brand",
+    name: "Dirt-Less Detailing",
+  },
+  offers: {
+    "@type": "AggregateOffer",
+    url: "https://www.dirtlessdetailing.com/services/exterior",
+    priceCurrency: "USD",
+    lowPrice: "100",
+    highPrice: "150",
+  },
+};
 
 export default function Exterior() {
   return (
     <section className="service-content-container">
-      {/* 
-        <script type="application/ld+json" key="product-jsonld" dangerouslySetInnerHTML={{
-          __html: `{
-            "@context": "http://schema.org",
-            "@type": "Product",
-            "name": "Exterior Decon Wash",
-            "brand": "Dirt-Less Detailing",
-            "description": "Get a car wash like never before with our Exterior Decon Wash. Where we go in depth to get all corners and remove any paint contaminants.",
-            "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/da3f5734-319b-4301-43c9-7af958fd5600/public",
-            "url": "https://www.dirtlessdetailing.com/services/exterior/",
-            "offers": {
-              "@type": "Offer",
-              "priceCurrency": "USD",
-              "price": "100",
-              "priceSpecification": {
-              	"@type": "PriceSpecification",
-                "priceCurrency": "USD",
-                "price": "100",
-                "minPrice": "100",
-                "maxPrice": "150"
-              },
-              "availability": "http://schema.org/InStock",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Exterior Decon Wash",
-                "serviceType": "Exterior Detailing",
-                "providerMobility": "dynamic"
-              }
-            }
-          }`,
-        }} />
-      </Head> */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
       <HeaderComponent
         mainUrl={"da3f5734-319b-4301-43c9-7af958fd5600"}
         title="Exterior Decon Wash"

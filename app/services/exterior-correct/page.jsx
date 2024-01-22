@@ -102,6 +102,26 @@ const faqItems = [
   },
 ];
 
+const jsonld = {
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  name: "Exterior Correct & Protect",
+  image: "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2bd5c3dd-6677-466a-e348-8495945c4700/public",
+  description:
+    "Elevate your vehicle's appearance and protection with our Correct and Protect service, leaving your car with a mirror-like shine and defense.",
+  brand: {
+    "@type": "Brand",
+    name: "Dirt-Less Detailing",
+  },
+  offers: {
+    "@type": "AggregateOffer",
+    url: "https://www.dirtlessdetailing.com/services/exterior-correct",
+    priceCurrency: "USD",
+    lowPrice: "1300",
+    highPrice: "1700",
+  },
+};
+
 export default function ExteriorCorrect() {
   const [slide, setSlide] = useState(50);
   const [expanded, setExpanded] = useState(false);
@@ -117,42 +137,7 @@ export default function ExteriorCorrect() {
 
   return (
     <section className="service-content-container">
-      {/*
-        <script
-          type="application/ld+json"
-          key="product-jsonld"
-          dangerouslySetInnerHTML={{
-            __html: `{
-            "@context": "http://schema.org",
-            "@type": "Product",
-            "name": "Exterior Correct and Protect",
-            "brand": "Dirt-Less Detailing",
-            "description": "Elevate your vehicle's appearance and protection with our Correct and Protect service, leaving your car with a mirror-like shine and defense.",
-            "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2bd5c3dd-6677-466a-e348-8495945c4700/public",
-            "url": "https://www.dirtlessdetailing.com/services/exterior-correct/",
-            "offers": {
-              "@type": "Offer",
-              "priceCurrency": "USD",
-              "price": "1300",
-              "priceSpecification": {
-              	"@type": "PriceSpecification",
-                "priceCurrency": "USD",
-                "price": "1300",
-                "minPrice": "1300",
-                "maxPrice": "1700"
-              },
-              "availability": "http://schema.org/InStock",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Exterior Correct and Protect",
-                "serviceType": "Exterior Detailing",
-                "providerMobility": "dynamic"
-              }
-            }
-          }`,
-          }}
-        />
-      </Head> */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
       <HeaderComponent
         mainUrl={"1d5eccf3-e4ec-47db-c652-fb40f808c800"}
         title="Exterior Correct and Protect"

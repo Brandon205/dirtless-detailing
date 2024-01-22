@@ -11,47 +11,32 @@ import {
 } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
 
+const jsonld = {
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  name: "Full Interior Detail",
+  image: "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/public",
+  description:
+    "Get your car's interior looking brand new with our full interior detailing service. We offer thorough cleaning and conditioning of all surfaces, including the dashboard, seats, and carpets. Contact us to schedule your appointment today.",
+  brand: {
+    "@type": "Brand",
+    name: "Dirt-Less Detailing",
+  },
+  offers: {
+    "@type": "AggregateOffer",
+    url: "https://www.dirtlessdetailing.com/services/interior",
+    priceCurrency: "USD",
+    lowPrice: "300",
+    highPrice: "375",
+  },
+};
+
 export default function FullIntEx() {
   const [slide, setSlide] = useState(50);
 
   return (
     <section className="service-content-container">
-      {/* 
-        <script
-          type="application/ld+json"
-          key="product-jsonld"
-          dangerouslySetInnerHTML={{
-            __html: `{
-            "@context": "http://schema.org",
-            "@type": "Product",
-            "name": "Full Interior Cleaning",
-            "brand": "Dirt-Less Detailing",
-            "description": "Get your car's interior looking brand new with our full interior detailing service. We offer thorough cleaning and conditioning of all surfaces, including the dashboard, seats, and carpets. Contact us to schedule your appointment today.",
-            "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/public",
-            "url": "https://www.dirtlessdetailing.com/services/interior/",
-            "offers": {
-              "@type": "Offer",
-              "priceCurrency": "USD",
-              "price": "300",
-              "priceSpecification": {
-              	"@type": "PriceSpecification",
-                "priceCurrency": "USD",
-                "price": "300",
-                "minPrice": "300",
-                "maxPrice": "375"
-              },
-              "availability": "http://schema.org/InStock",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Full Interior Detailing Service",
-                "serviceType": "Interior Detailing",
-                "providerMobility": "dynamic"
-              }
-            }
-          }`,
-          }}
-        />
-      </Head> */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
       <HeaderComponent
         mainUrl={"6d1c1456-97c0-4c35-d58a-ed3c0d576a00"}
         title="Full Interior Cleaning"

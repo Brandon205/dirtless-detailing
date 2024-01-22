@@ -11,47 +11,32 @@ import {
 } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
 
+const jsonld = {
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  name: "Exterior Seal & Shine",
+  image: "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/public",
+  description:
+    "Experience a showroom shine and unparalleled protection with our Exterior Seal and Shine, ensuring your car gleams like new while safeguarding its finish.",
+  brand: {
+    "@type": "Brand",
+    name: "Dirt-Less Detailing",
+  },
+  offers: {
+    "@type": "AggregateOffer",
+    url: "https://www.dirtlessdetailing.com/services/exterior-seal",
+    priceCurrency: "USD",
+    lowPrice: "375",
+    highPrice: "575",
+  },
+};
+
 export default function ExteriorSeal() {
   const [slide, setSlide] = useState(50);
 
   return (
     <section className="service-content-container">
-      {/*
-        <script
-          type="application/ld+json"
-          key="product-jsonld"
-          dangerouslySetInnerHTML={{
-            __html: `{
-            "@context": "http://schema.org",
-            "@type": "Product",
-            "name": "Exterior Seal and Shine",
-            "brand": "Dirt-Less Detailing",
-            "description": "Experience a showroom shine and unparalleled protection with our Exterior Seal and Shine, ensuring your car gleams like new while safeguarding its finish.",
-            "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/public",
-            "url": "https://www.dirtlessdetailing.com/services/exterior-seal/",
-            "offers": {
-              "@type": "Offer",
-              "priceCurrency": "USD",
-              "price": "100",
-              "priceSpecification": {
-              	"@type": "PriceSpecification",
-                "priceCurrency": "USD",
-                "price": "100",
-                "minPrice": "100",
-                "maxPrice": "150"
-              },
-              "availability": "http://schema.org/InStock",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Exterior Seal and Shine",
-                "serviceType": "Exterior Detailing",
-                "providerMobility": "dynamic"
-              }
-            }
-          }`,
-          }}
-        />
-      </Head> */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
       <HeaderComponent
         mainUrl={"977438a8-129b-496b-9845-e55e3198e900"}
         title="Exterior Seal and Shine"

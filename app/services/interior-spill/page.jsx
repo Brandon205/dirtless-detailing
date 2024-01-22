@@ -11,47 +11,32 @@ import {
 import { motion } from "framer-motion";
 import HeaderComponent from "../../components/HeaderComponent";
 
+const jsonld = {
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  name: "Interior + Spill Guard",
+  image: "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a196c77-cb1a-42f9-479b-8fdbe3c14500/public",
+  description:
+    "et your car's interior looking brand new with our full interior detailing service, topped off with a ceramic coating to protect your vehicle from day to day use! Contact us to schedule your appointment today.",
+  brand: {
+    "@type": "Brand",
+    name: "Dirt-Less Detailing",
+  },
+  offers: {
+    "@type": "AggregateOffer",
+    url: "https://www.dirtlessdetailing.com/services/interior-spill",
+    priceCurrency: "USD",
+    lowPrice: "450",
+    highPrice: "575",
+  },
+};
+
 export default function InteriorSpill() {
   const [slide, setSlide] = useState(50);
 
   return (
     <section className="service-content-container">
-      {/* 
-        <script
-          type="application/ld+json"
-          key="product-jsonld"
-          dangerouslySetInnerHTML={{
-            __html: `{
-            "@context": "http://schema.org",
-            "@type": "Product",
-            "name": "Full Interior with Spill Guard",
-            "brand": "Dirt-Less Detailing",
-            "description": "Get your car's interior looking brand new with our full interior detailing service, topped off with a ceramic coating to protect your vehicle from day to day use! Contact us to schedule your appointment today.",
-            "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a196c77-cb1a-42f9-479b-8fdbe3c14500/public",
-            "url": "https://www.dirtlessdetailing.com/services/interior-spill/",
-            "offers": {
-              "@type": "Offer",
-              "priceCurrency": "USD",
-              "price": "450",
-              "priceSpecification": {
-              	"@type": "PriceSpecification",
-                "priceCurrency": "USD",
-                "price": "450",
-                "minPrice": "450",
-                "maxPrice": "575"
-              },
-              "availability": "http://schema.org/InStock",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Full Interior with Spill Guard",
-                "serviceType": "Interior Detailing",
-                "providerMobility": "dynamic"
-              }
-            }
-          }`,
-          }}
-        />
-      </Head> */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
       <HeaderComponent
         mainUrl={"f6170666-70f6-487c-4db8-26125453df00"}
         title="Full Interior + Spill Guard"

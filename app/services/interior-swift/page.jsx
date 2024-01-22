@@ -10,45 +10,30 @@ import {
 } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
 
+const jsonld = {
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  name: "Swift Interior Detail",
+  image: "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/public",
+  description:
+    "Our Swift Interior Detail is our new service tailored to giving you a quick, easy, and budget friendly option to completely revamp your vehicles interior! Contact us to schedule your appointment today.",
+  brand: {
+    "@type": "Brand",
+    name: "Dirt-Less Detailing",
+  },
+  offers: {
+    "@type": "AggregateOffer",
+    url: "https://www.dirtlessdetailing.com/services/interior-swift",
+    priceCurrency: "USD",
+    lowPrice: "150",
+    highPrice: "201",
+  },
+};
+
 export default function FullIntEx() {
   return (
     <section className="service-content-container">
-      {/* 
-        <script
-          type="application/ld+json"
-          key="product-jsonld"
-          dangerouslySetInnerHTML={{
-            __html: `{
-            "@context": "http://schema.org",
-            "@type": "Product",
-            "name": "Swift Interior Detail",
-            "brand": "Dirt-Less Detailing",
-            "description": "Our Swift Interior Detail is our new service tailored to giving you a quick, easy, and budget friendly option to completely revamp your vehicles interior! Contact us to schedule your appointment today.",
-            "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/public",
-            "url": "https://www.dirtlessdetailing.com/services/interior-swift/",
-            "offers": {
-              "@type": "Offer",
-              "priceCurrency": "USD",
-              "price": "150",
-              "priceSpecification": {
-              	"@type": "PriceSpecification",
-                "priceCurrency": "USD",
-                "price": "150",
-                "minPrice": "150",
-                "maxPrice": "200"
-              },
-              "availability": "http://schema.org/InStock",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Swift Interior Detailing Service",
-                "serviceType": "Interior Detailing",
-                "providerMobility": "dynamic"
-              }
-            }
-          }`,
-          }}
-        />
-      </Head> */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
       <HeaderComponent
         mainUrl={"0e2bc8e9-28e8-4888-200b-86674d466600"}
         title="Swift Interior Detail"
