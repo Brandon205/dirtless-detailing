@@ -2,6 +2,9 @@
 import Benefits from "./Benefits";
 import { topBtnVariant } from "../utils/animationVariations";
 import { motion } from "framer-motion";
+import { Titillium_Web } from "next/font/google";
+
+export const titillium = Titillium_Web({ weight: ["400", "600"], subsets: ["latin"] });
 
 const jsonld = {
   "@context": "https://schema.org",
@@ -45,7 +48,7 @@ export default function Home() {
           }}
         ></div>
         <div className="landing-div">
-          <h1 className="main-title">
+          <h1 className={`${titillium.className} main-title`}>
             Bonney Lake & Pierce County's
             <br />
             Auto Detailing Specialists
@@ -56,12 +59,6 @@ export default function Home() {
           </p>
 
           <div className="header-link-container">
-            {/* <a href="/contact" className="top-quote-btn">
-              <img src="../assets/icons/clipboard.png" alt="clipboard" className="btn-icon" /> Get a Free Quote
-            </a>
-            <a href="tel:2532529758" className="top-quote-btn btn-secondary">
-              <img src="../assets/icons/phoneMessage.png" alt="call or message" className="btn-icon" /> (253) 252-9758
-            </a> */}
             <motion.a
               href="/Contact"
               className="top-quote-btn"

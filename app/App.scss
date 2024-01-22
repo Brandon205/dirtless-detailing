@@ -124,7 +124,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Titillium Web", sans-serif;
   font-size: 24px;
   font-weight: bold;
   gap: 0.5rem;
@@ -399,7 +398,6 @@ header h1 {
   line-height: 1.2;
   color: white;
   margin: 0;
-  font-family: "Titillium Web", sans-serif;
 }
 
 .main-desc {
@@ -972,7 +970,6 @@ option {
 @mixin popular-btn {
   display: inline-block;
   padding: 0.5em 5%;
-  font-family: "Titillium Web", sans-serif;
   cursor: pointer;
   font-size: 1.5rem;
   font-weight: bold;
@@ -1014,7 +1011,6 @@ option {
 
   a {
     margin: 0 auto;
-    font-family: "Titillium Web", sans-serif;
     font-size: 38px;
     font-weight: bold;
     text-decoration: none;
@@ -1329,7 +1325,6 @@ option {
 
 .otherservices-readmore {
   padding: 0.25rem 1.75rem;
-  font-family: "Titillium Web", sans-serif;
   font-weight: bold;
   font-size: 24px;
   background-color: $main-clr;
@@ -1517,7 +1512,6 @@ option {
   font-size: 2.5em;
   margin: 0;
   font-weight: bold;
-  font-family: "Titillium Web", sans-serif;
 }
 
 .mobileservices-details ul {
@@ -1792,7 +1786,6 @@ footer {
 }
 
 .new-heading {
-  font-family: "Titillium Web", sans-serif;
   font-size: 2em;
   width: 100%;
   padding-bottom: 2rem;
@@ -1845,7 +1838,6 @@ footer {
 
 .reason-title {
   grid-area: title;
-  font-family: "Titillium Web", sans-serif;
   font-size: 32px;
   margin: 0;
   font-weight: bold;
@@ -3768,7 +3760,7 @@ footer {
   }
 
   .logo-screen {
-    width: 140px;
+    width: 200px;
   }
 }
 

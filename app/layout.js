@@ -1,4 +1,4 @@
-import { Montserrat, Titillium_Web } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./App.scss";
 import { PHProvider } from "./providers";
 import Nav from "./Nav";
@@ -10,7 +10,6 @@ import { GoogleTagManager } from "@next/third-parties/google";
 import Head from "next/head";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
-const titillium = Titillium_Web({ weight: ["200", "300", "400", "600", "700", "900"], subsets: ["latin"] });
 
 export const metadata = {
   metadataBase: new URL("https://www.dirtlessdetailing.com"),
