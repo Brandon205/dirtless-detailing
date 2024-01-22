@@ -40,20 +40,6 @@ export default function FullIntEx() {
         description="Our Swift Interior Detail is the fastest way to get a clean and conditioned interior!"
         secondaryUrl={"07ea2f2e-5908-49b9-21d6-216bad2f8b00"}
       />
-      {/* <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0e2bc8e9-28e8-4888-200b-86674d466600/cover')`}}></div>
-      <div className="servicepage-header">
-        <div>
-          <h1><span className='accent-orange bold text-shadow'>Swift Interior Detail</span></h1>
-          <h2 className='page-subheading'>Our Swift Interior Detail is the fastest way to get a clean and conditioned interior!</h2>
-          <div className='header-buttons'>
-            <motion.a href="/contact" className='top-quote-btn' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</motion.a>
-            <motion.a href="tel:2532529758" className='top-quote-btn btn-secondary' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</motion.a>
-          </div>
-        </div>
-        <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/07ea2f2e-5908-49b9-21d6-216bad2f8b00/public')`}}>
-          <img style={{visibility: 'hidden'}} alt="Clean drivers seat interior of a Subaru" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/07ea2f2e-5908-49b9-21d6-216bad2f8b00/public" />
-        </div>
-      </div> */}
 
       <div className="main-content-container">
         <div className="process-container">

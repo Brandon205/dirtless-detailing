@@ -16,6 +16,27 @@ const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
   ssr: false,
 });
 
+const jsonld = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Dirt-Less Detailing",
+  url: "https://dirtlessdetailing.com",
+  logo: "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0a945e76-f4c0-4e29-ef16-463490d0db00/public",
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "2532529758",
+    contactType: "sales",
+    contactOption: "TollFree",
+    areaServed: "US",
+    availableLanguage: "en",
+  },
+  sameAs: [
+    "https://www.facebook.com/DirtLessDetailing",
+    "https://www.instagram.com/dirt_less_detailing",
+    "https://www.youtube.com/channel/UCsoqP5s4hwkQd_Sd-TVv-jg",
+  ],
+};
+
 const INITIAL_DATA = {
   name: "",
   email: "",
@@ -270,6 +291,7 @@ export default function Contact() {
 
   return (
     <section className="contact-container" id="contact">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
       <div
         className="cover"
         style={{

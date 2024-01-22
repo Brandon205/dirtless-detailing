@@ -144,20 +144,6 @@ export default function ExteriorCorrect() {
         description="The Ultimate Exterior Detail & Protection for your vehicle. Our most extensive package with in-depth Paint Correction and a Lifetime Ceramic Coating."
         secondaryUrl={"f7c127be-d17d-4563-48c3-809289e8bc00"}
       />
-      {/* <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/1d5eccf3-e4ec-47db-c652-fb40f808c800/cover')`, backgroundPositionY: smallScreen ? '0' : '-316px'}}></div>
-      <div className="servicepage-header">
-        <div>
-          <h1><span className='accent-orange bold text-shadow'>Exterior Correct and Protect</span></h1>
-          <h2 className='page-subheading'>The Ultimate Exterior Detail & Protection for your vehicle. Our most extensive package with in-depth Paint Correction and a Lifetime Ceramic Coating.</h2>
-          <div className='header-buttons'>
-            <motion.a href="/contact" className='top-quote-btn' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</motion.a>
-            <motion.a href="tel:2532529758" className='top-quote-btn btn-secondary' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</motion.a>
-          </div>
-        </div>
-        <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f7c127be-d17d-4563-48c3-809289e8bc00/public')`}}>
-          <img style={{visibility: 'hidden'}} alt="Before and After of a very scratched up door panel" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f7c127be-d17d-4563-48c3-809289e8bc00/public" />
-        </div>
-      </div> */}
 
       <div className="main-content-container">
         <div className="process-container">

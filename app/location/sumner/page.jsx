@@ -1,9 +1,39 @@
 "use client";
 import React, { useEffect, useState } from "react";
-
 import PricingComponent from "../../../utils/PricingComponent";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
+
+const jsonld = {
+  "@context": "https://schema.org/",
+  "@type": "LocalBusiness",
+  name: "Dirt-Less Detailing",
+  image: "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/public",
+  currenciesAccepted: "USD",
+  priceRange: "$$$",
+  openingHours: ["Mo-Su 7:00-19:00"],
+  paymentAccepted: "Credit/Debit Card, Cash",
+  url: "https://www.dirtlessdetailing.com/location/sumner",
+  email: "brenden@dirtlessdetailing.com",
+  telephone: "(253) 252-9758",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Bonney Lake",
+    addressRegion: "WA",
+    postalCode: "99391",
+    streetAddress: "9305 205th Ave E",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 47.17285149644542,
+    longitude: -122.15677457325478,
+  },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: 5,
+    reviewCount: 21,
+  },
+};
 
 export default function Sumner() {
   const [currPackage, setCurrPackage] = useState("Interior");
@@ -33,44 +63,7 @@ export default function Sumner() {
 
   return (
     <div className="location-container bg-contact">
-      {/* 
-        <script
-          type="application/ld+json"
-          key="product-jsonld"
-          dangerouslySetInnerHTML={{
-            __html: `{
-                        "@context": "https://schema.org/",
-                        "@type": "LocalBusiness",
-                        "name": "Dirt-Less Detailing",
-                        "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5fc33d57-709e-4ae0-582d-9cdc42ed0300/public",
-                        "currenciesAccepted": "USD",
-                        "priceRange": "$$$",
-                        "openingHours": ["Mo-Su 7:00-19:00"],
-                        "paymentAccepted": "Cash, Credit/Debit Card, Facebook Pay",
-                        "url": "https://www.dirtlessdetailing.com/location/sumner",
-                        "email": "brenden@dirtlessdetailing.com",
-                        "telephone": "(253) 252-9758",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "addressLocality": "Bonney Lake",
-                            "addressRegion": "WA",
-                            "postalCode": "99391",
-                            "streetAddress": "9305 205th Ave E"
-                        },
-                        "geo": {
-                            "@type": "GeoCoordinates",
-                            "latitude": 47.17285149644542,
-                            "longitude": -122.15677457325478
-                        },
-                        "aggregateRating": {
-                            "@type": "AggregateRating",
-                            "ratingValue": 5,
-                            "reviewCount": 14
-                        }
-                    }`,
-          }}
-        />
-      </Head> */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
       <div
         className="cover"
         style={{

@@ -9,6 +9,61 @@ import calendarJSON from "../../public/assets/icons/calendarJSON.json";
 import carJSON from "../../public/assets/icons/carJSON.json";
 import locationJSON from "../../public/assets/icons/locationPing.json";
 
+const jsonld = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What do you need from me when you get here?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "All we will need is an electrical outlet, a water spigot, and preferably all/most personal items out of the car.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How long will the detail take?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Every job will take a different amount of time, but once we know the condition of the car and the services requested we can give a good estimate as to how long it will take.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can you come to my apartment or workplace?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "It will depend on the amount of space and access if we can or not. Typically apartment complexes can be strict with this type of thing and it's best if you're able to bring your vehicle to us.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you offer gift cards or gift certificates?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: 'Yes we do! Any of our services can be bought as a gift certificate. On the Contact page choose the "For Someone Else" option.',
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What cities do you service?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "With our mobile service we can go out to: Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Lake Tapps, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do I have to be there the whole time you're working on my car?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Absolutely not! You are free to go do whatever you need to do while we are working.",
+      },
+    },
+  ],
+};
+
 export default function About() {
   const [expanded, setExpanded] = useState(false);
   const [smallScreen, setSmallScreen] = useState(false);
@@ -63,7 +118,8 @@ export default function About() {
     },
     {
       title: "Can you come to my apartment or workplace?",
-      description: "It will depend on the amount of space and water/electrical access if we can or not.",
+      description:
+        "It will depend on the amount of space and water/electrical access if we can or not. Typically apartment complexes can be strict with this type of thing and it's best if you're able to bring your vehicle to us.",
     },
     {
       title: "Do you offer gift cards or gift certificates?",
@@ -101,92 +157,7 @@ export default function About() {
 
   return (
     <div className="App bg-contact">
-      {/* <Head>
-        <title>About Us / FAQ | Dirt-Less Detailing</title>
-        <script
-          type="application/ld+json"
-          key="product-jsonld"
-          dangerouslySetInnerHTML={{
-            __html: `{
-            "@context": "https://schema.org/",
-            "@type": "FAQPage",
-            "mainEntity": [{
-              "@type": "Question",
-              "name": "What do you need from me when you get here?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "All we will need is an electrical outlet, a water spigot, and preferably all/most personal items out of the car."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How long will the detail take?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Every job will take a different amount of time, but once we know the condition of the car and the services requested we can give a good estimate as to how long it will take."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Can you come to my apartment or workplace?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "It will depend on the amount of space and access if we can or not."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Do you offer gift cards or gift certificates?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Currently you can pay by card, cash, or Facebook pay."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What forms of payment do you take?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "<p>Yes we do! Any of our services can be bought as a gift certificate. On the <a href=https://www.dirtlessdetailing.com/contact>Contact</a> page choose the For Someone Else option.</p>"
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Do you detail boats?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, however, currently we are only doing boat interiors and washes and no polishing for now. Call or text us to get a quote!"
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Are you licensed and insured?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text":"We are 100% licensed and insured!"
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What cities do you service?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text":"With our mobile service we can go out to: Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Lake Tapps, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Do I have to be there the whole time you're working on my car?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text":"Absolutely not! You are free to go do whatever you need to do while we are working."
-              }
-            }
-          ]
-          }`,
-          }}
-        />
-      </Head> */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
       <div
         className="cover"
         style={{

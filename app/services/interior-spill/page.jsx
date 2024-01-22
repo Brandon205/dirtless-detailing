@@ -43,20 +43,6 @@ export default function InteriorSpill() {
         description="Our highly rated interior service topped with an interior ceramic coating."
         secondaryUrl={"e2d544ec-b25c-4d22-53c2-bdf651767200"}
       />
-      {/* <div className="cover" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f6170666-70f6-487c-4db8-26125453df00/cover')`}}></div>
-      <div className="servicepage-header">
-        <div>
-          <h1><span className='accent-orange bold text-shadow'>Full Interior + Spill Guard</span></h1>
-          <h2 className='page-subheading'>Our highly rated interior service topped with an interior ceramic coating.</h2>
-          <div className='header-buttons'>
-            <motion.a href="/contact" className='top-quote-btn' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/clipboard.png' alt='clipboard' className='btn-icon' /> Book Now!</motion.a>
-            <motion.a href="tel:2532529758" className='top-quote-btn btn-secondary' variants={topBtnVariant} whileHover='hover' transition={{duration: 0.25}}><img src='../assets/icons/phoneMessage.png' alt='call or message' className='btn-icon' /> (253) 252-9758</motion.a>
-          </div>
-        </div>
-        <div className="service-image" style={{backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e2d544ec-b25c-4d22-53c2-bdf651767200/public')`}}>
-          <img style={{visibility: 'hidden'}} alt="Clean drivers seat interior of a Subaru" src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e2d544ec-b25c-4d22-53c2-bdf651767200/public" />
-        </div>
-      </div> */}
 
       <div className="main-content-container">
         <div className="process-container">
