@@ -4,7 +4,7 @@ import { topBtnVariant } from "../utils/animationVariations";
 import { motion } from "framer-motion";
 import { Titillium_Web } from "next/font/google";
 
-export const titillium = Titillium_Web({ weight: ["400", "600"], subsets: ["latin"] });
+const titillium = Titillium_Web({ weight: ["400", "600"], subsets: ["latin"] });
 
 const jsonld = {
   "@context": "https://schema.org",
