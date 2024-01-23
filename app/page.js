@@ -666,7 +666,7 @@ export default function Home() {
               height={"350"}
               style={{ border: 0 }}
               loading="lazy"
-              src={`https://www.google.com/maps/embed/v1/place?zoom=15&q=place_id:ChIJxxfUWqz7kFQRotRs8MwWDRE&key=${process.env.GOOGLE_MAPS}`}
+              src={`https://www.google.com/maps/embed/v1/place?zoom=15&q=place_id:ChIJxxfUWqz7kFQRotRs8MwWDRE&key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS}`}
             ></iframe>
           </div>
         </section>
