@@ -11,7 +11,7 @@ const jsonld = {
   "@type": "LocalBusiness",
   name: "Dirt-Less Detailing",
   image: "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover",
-  url: "https://www.dirtless-detailing.com",
+  url: "https://www.dirtlessdetailing.com",
   telephone: "2532529758",
   priceRange: "$$$",
   address: {
