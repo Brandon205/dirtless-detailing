@@ -60,7 +60,7 @@ export default function Home() {
 
           <div className="header-link-container">
             <motion.a
-              href="/Contact"
+              href="/contact"
               className="top-quote-btn"
               variants={topBtnVariant}
               whileHover="hover"
