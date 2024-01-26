@@ -14,7 +14,7 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 export const metadata = {
   metadataBase: new URL("https://www.dirtlessdetailing.com"),
   title: {
-    default: "Dirt-Less Detailing",
+    default: "Dirt-Less Detailing | Official Site",
     template: "%s | Dirt-Less Detailing",
   },
   description: "Bonney Lakes Auto Detailing & Ceramic Coating Specialists",

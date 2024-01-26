@@ -7,7 +7,7 @@ import "react-medium-image-zoom/dist/styles.css";
 
 export default function CoatingGallery() {
   return (
-    <section className="gallery-content-container">
+    <section className="gallery-content-container text-center">
       <div
         className="cover"
         style={{
@@ -19,14 +19,14 @@ export default function CoatingGallery() {
           <h1>
             <span className="accent-orange bold text-shadow">Exterior Correct & Protect Gallery</span>
           </h1>
-          <h2 className="page-subheading" style={{ textAlign: "center" }}>
+          <strong className="page-subheading" style={{ textAlign: "center" }}>
             Check out the gallery below to see the results and capabilities of a freshly applied Ceramic Coating. Take a
             look at our{" "}
             <a href="/services/exterior-correct" className="aside-link">
               Exterior Correct & Protect
             </a>{" "}
             page to learn more about this service!
-          </h2>
+          </strong>
           <div className="header-buttons">
             <motion.a
               href="/contact"
@@ -439,13 +439,26 @@ export default function CoatingGallery() {
           ></div>
         </Zoom>
       </div>
-      <h2 style={{ color: "white" }}>
+      <strong style={{ color: "white" }}>
         Check out our{" "}
         <a href="/services/exterior-correct" className="aside-link">
           Correct & Protect
         </a>{" "}
         page for more details!
-      </h2>
+      </strong>
+      <div style={{ maxWidth: "750px", margin: "0 auto", lineHeight: 1.5 }}>
+        <p className="text-white">
+          Unleash the ultimate transformation with our Correct and Protect Exterior Package, a comprehensive service
+          designed to elevate your vehicle's exterior to unparalleled heights. Kickstarting the process with our
+          meticulous Exterior Decon Wash, we go beyond conventional cleaning by clay barring and decontaminating the
+          paint, ensuring a pristine canvas. The journey continues with a Full Two Stage Correction, addressing
+          imperfections and restoring the vibrancy of your vehicle's finish. To safeguard this renewed brilliance, we
+          culminate the service with a full 5-year ceramic coating applied to every inch of the paint. Not stopping
+          there, we extend this protective shield to the trim and wheel faces, ensuring your vehicle remains a beacon of
+          perfection for years to come. Experience the Correct and Protect difference - where meticulous care meets
+          lasting brilliance.
+        </p>
+      </div>
     </section>
   );
 }

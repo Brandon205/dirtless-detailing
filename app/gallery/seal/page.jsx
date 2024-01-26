@@ -7,7 +7,7 @@ import "react-medium-image-zoom/dist/styles.css";
 
 export default function PaintCorrectionGallery() {
   return (
-    <section className="gallery-content-container">
+    <section className="gallery-content-container text-center">
       <div
         className="cover"
         style={{
@@ -19,14 +19,14 @@ export default function PaintCorrectionGallery() {
           <h1>
             <span className="accent-orange bold text-shadow">Exterior Seal & Shine Gallery</span>
           </h1>
-          <h2 className="page-subheading" style={{ textAlign: "center" }}>
+          <strong className="page-subheading" style={{ textAlign: "center" }}>
             Check out the gallery below to see just what we are able to do with a simple polish and ceramic spray. Take
             a look at our{" "}
             <a href="/services/exterior-seal" className="aside-link">
               Exterior Seal & Shine
             </a>{" "}
             page for more details and pricing.
-          </h2>
+          </strong>
           <div className="header-buttons">
             <motion.a
               href="/contact"
@@ -583,13 +583,35 @@ export default function PaintCorrectionGallery() {
           ></div>
         </Zoom>
       </div>
-      <h2 style={{ color: "white" }}>
-        Check out our{" "}
+      <h3 style={{ color: "white" }}>
+        Here's a small description of what we do with this package, be sure to check out our{" "}
         <a href="/services/exterior-seal" className="aside-link">
           Exterior Seal & Shine
         </a>{" "}
         page for more details!
-      </h2>
+      </h3>
+      <div style={{ maxWidth: "750px", margin: "0 auto", lineHeight: 1.5 }}>
+        <p className="text-white">
+          Elevate your car's exterior to a new level of brilliance with our Seal and Shine Exterior Package. This
+          comprehensive service begins with our Full Exterior Decontamination, a meticulous process that strips away all
+          contaminants from your vehicle's paint. We go beyond the surface to ensure a pristine canvas for the next
+          steps. Moving seamlessly into the polishing phase, our expert team prepares your car for the spotlight with
+          precision and care.
+        </p>
+        <p className="text-white">
+          The Seal and Shine package includes a one-stage paint correction, designed to enhance and restore the vibrancy
+          of your vehicle's finish. This process addresses minor imperfections, swirls, and scratches, leaving your car
+          looking showroom-worthy. But we don't stop there - the crowning glory of this package is the application of a
+          1-year ceramic coating. This cutting-edge coating not only provides a stunning, long-lasting shine but also
+          acts as a shield, guarding against environmental pollutants, UV rays, and everyday wear and tear.
+        </p>
+        <p className="text-white">
+          With our Seal and Shine Exterior Package, your car isn't just cleaned - it's pampered and protected. We take
+          pride in delivering a transformative experience that not only enhances the aesthetic appeal of your vehicle
+          but also ensures a lasting radiance that stands the test of time. Treat your car to the ultimate exterior
+          care, and let it shine with renewed vitality on the open road.
+        </p>
+      </div>
     </section>
   );
 }

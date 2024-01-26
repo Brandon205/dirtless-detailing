@@ -304,7 +304,7 @@ export default function Contact() {
             <span className="accent-orange bold text-shadow">Get In Touch!</span>
           </h1>
           <h2 className="page-subheading" style={{ textAlign: "center" }}>
-            Be sure to use the form below to check pricing for our different services with our new Price Estimator!
+            Explore Urable instant booking: select service, vehicle size, and day for an instant quote and service date!
           </h2>
           <div className="header-buttons">
             <motion.a
@@ -316,7 +316,7 @@ export default function Contact() {
               rel="noopener"
               target="_blank"
             >
-              <img src="../assets/icons/urable.png" alt="clipboard" className="btn-icon" /> Urable Instant Booking
+              <img src="../assets/icons/urable.png" alt="clipboard" className="btn-icon" /> Urable Instant Booking!
             </motion.a>
             <motion.a
               href="tel:2532529758"
@@ -373,9 +373,9 @@ export default function Contact() {
           </div>
         </div>
         <div className="contact-information">
-          <h2 style={{ fontSize: "1.75em" }}>Our Contact Information</h2>
+          <h3 style={{ fontSize: "1.75em" }}>Our Contact Information</h3>
           <hr className="contact-border" />
-          <h3 style={{ marginBottom: 0 }}>Need us to come to you?</h3>
+          <h4 style={{ marginBottom: 0 }}>Need us to come to you?</h4>
           <p className="hours-p" style={{ marginBottom: 0 }}>
             We can perform mobile detailing in the following cities:
           </p>
@@ -423,7 +423,7 @@ export default function Contact() {
       </div>
 
       <div className="contact-container-right">
-        <h2>Or Reach Out to Us By Filling Out Our Form:</h2>
+        <strong className="text-large">Or Reach Out to Us By Filling Out Our Form:</strong>
         <p>
           <span className="special-package">Note: </span>The Pricing Estimates are approximate and some services are
           based on vehicle condition, because of this final prices may vary slightly.

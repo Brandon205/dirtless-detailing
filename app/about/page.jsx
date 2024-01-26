@@ -170,7 +170,7 @@ export default function About() {
             <span className="accent-orange bold text-shadow">About Us & FAQ</span>
           </h1>
           <h2 className="page-subheading" style={{ textAlign: "center" }}>
-            Learn a little more about us at Dirt-Less Detailing and why we began doing what we do.
+            Learn a little more about us at Dirt-Less Detailing!
           </h2>
           <div className="header-buttons">
             <motion.a
@@ -257,7 +257,7 @@ export default function About() {
             </div>
           )}
           <div className="text-left">
-            <h2 className="text-large">You shouldn't have to take time out of your busy day to clean your car.</h2>
+            <h3 className="text-large">You shouldn't have to take time out of your busy day to clean your car.</h3>
             <p>
               We can do the dirty work for you, leaving you free to do whatever you desire. After hundreds of completed
               details over the last 8 years we've seen it all, and perfected how we tackle every aspect of it.
@@ -367,9 +367,9 @@ export default function About() {
             src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/public"
           />
         </div>
-        <h2 style={{ fontSize: "2.5em", margin: 0, textAlign: smallScreen ? "left" : "center" }}>
+        <h3 style={{ fontSize: "2.5em", margin: 0, textAlign: smallScreen ? "left" : "center" }}>
           Dirt-Less Detailing
-        </h2>
+        </h3>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }} className="text-left">
           <p>
             Dirt-Less Detailing is a premier auto detailing company founded 2 years ago by Brenden (on the right in the

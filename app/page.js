@@ -118,7 +118,7 @@ export default function Home() {
 
         <div className="general-container new-heading-container" style={{ margin: "5vh auto 2vh auto" }}>
           <strong className="above-heading"> Interior Services </strong>
-          <h3 className="new-heading">Transform your vehicle's interior with our Premium Auto Detailing services.</h3>
+          <h2 className="new-heading">Transform your vehicle's interior with our Premium Auto Detailing services.</h2>
         </div>
 
         <div className="otherservices-subcontainer">

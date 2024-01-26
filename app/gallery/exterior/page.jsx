@@ -7,7 +7,7 @@ import "react-medium-image-zoom/dist/styles.css";
 
 export default function PaintCorrectionGallery() {
   return (
-    <section className="gallery-content-container">
+    <section className="gallery-content-container text-center">
       <div
         className="cover"
         style={{
@@ -19,13 +19,13 @@ export default function PaintCorrectionGallery() {
           <h1>
             <span className="accent-orange bold text-shadow">Exterior Decon Wash Gallery</span>
           </h1>
-          <h2 className="page-subheading" style={{ textAlign: "center" }}>
+          <strong className="page-subheading" style={{ textAlign: "center" }}>
             This is a showcase of our Exterior Wash service. Take a look at our{" "}
             <a href="/services/exterior" className="aside-link">
               Exterior Decon Wash
             </a>{" "}
             page for more details and pricing.
-          </h2>
+          </strong>
           <div className="header-buttons">
             <motion.a
               href="/contact"
@@ -933,13 +933,27 @@ export default function PaintCorrectionGallery() {
           ></div>
         </Zoom>
       </div>
-      <h2 style={{ color: "white" }}>
+      <strong style={{ color: "white" }}>
         Check out our{" "}
         <a href="/services/exterior" className="aside-link">
           Exterior Decon Wash
         </a>{" "}
         page for more details!
-      </h2>
+      </strong>
+      <div style={{ maxWidth: "750px", margin: "0 auto", lineHeight: 1.5 }}>
+        <p className="text-white">
+          Experience the pinnacle of exterior cleanliness with our Exterior Decon Wash, a comprehensive and meticulous
+          service that transcends the ordinary car wash. Going beyond the standard, this wash involves a thorough
+          process of clay barring and decontamination, ensuring your vehicle's paint is free from impurities. Our expert
+          team takes the time to remove contaminants, pollutants, and embedded grime, leaving your car with a pristine,
+          refreshed finish.
+        </p>
+        <p className="text-white">
+          This elevated approach to washing not only enhances the aesthetic appeal of your vehicle but also promotes the
+          longevity of your paint. Treat your car to the ultimate exterior care with our Exterior Decon Wash, where
+          perfection meets cleanliness for a truly revitalized and gleaming finish.
+        </p>
+      </div>
     </section>
   );
 }

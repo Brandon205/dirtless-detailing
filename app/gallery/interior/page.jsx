@@ -7,7 +7,7 @@ import "react-medium-image-zoom/dist/styles.css";
 
 export default function FullIntGallery() {
   return (
-    <section className="gallery-content-container">
+    <section className="gallery-content-container text-center">
       <div
         className="cover"
         style={{
@@ -19,13 +19,17 @@ export default function FullIntGallery() {
           <h1>
             <span className="accent-orange bold text-shadow">Full Interior Cleaning Gallery</span>
           </h1>
-          <h2 className="page-subheading" style={{ textAlign: "center" }}>
+          <strong className="page-subheading" style={{ textAlign: "center" }}>
             We have cleaned it all, even the worst of interiors. Check out the Gallery below. Take a look at our{" "}
             <a href="/services/interior" className="aside-link">
               Full Interior
             </a>{" "}
-            page to find out more.
-          </h2>
+            or{" "}
+            <a href="/services/interior-spill" className="aside-link">
+              Full Interior + Spill Guard
+            </a>{" "}
+            to find out more.
+          </strong>
           <div className="header-buttons">
             <motion.a
               href="/contact"
@@ -952,7 +956,7 @@ export default function FullIntGallery() {
           ></div>
         </Zoom>
       </div>
-      <h2 style={{ color: "white" }}>
+      <strong style={{ color: "white" }}>
         Check out our{" "}
         <a href="/services/interior" className="aside-link">
           Full Interior Cleaning
@@ -962,7 +966,23 @@ export default function FullIntGallery() {
           Full Interior + Spill Guard{" "}
         </a>{" "}
         page for more details!
-      </h2>
+      </strong>
+      <div style={{ maxWidth: "750px", margin: "0 auto", lineHeight: 1.5 }}>
+        <p className="text-white">
+          Indulge in the efficiency of our Swift Interior Detail, a swift yet thorough service tailored for those
+          seeking a quick and effective solution. Ideal for maintenance, this service ensures your car remains clean and
+          conditioned without the need for a full detail. For those craving a more extensive interior makeover, our Full
+          Interior Detail goes above and beyond. Covering all corners and offering optional carpet/fabric extraction,
+          this service is designed to elevate your interior to the highest standard.
+        </p>
+        <p className="text-white">
+          Take it a step further with our Full Interior + Spill Guard package, incorporating the perks of the Full
+          Interior Detail and concluding with the application of an interior Ceramic Coating. This additional layer
+          ensures that spills and messes are a breeze to clean up, providing long-lasting protection for your vehicle's
+          interior. At our detailing company, we tailor our services to meet your specific needs, ensuring your car
+          receives the care it deserves, inside and out.
+        </p>
+      </div>
     </section>
   );
 }
