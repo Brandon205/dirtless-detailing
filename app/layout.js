@@ -23,6 +23,10 @@ export const metadata = {
     card: "summary_large_image",
   },
   icons: [{ rel: "icon", url: "/favicon.ico" }],
+  openGraph: {
+    type: "website",
+    url: "https://www.dirtlessdetailing.com",
+  },
 };
 
 export default function RootLayout({ children }) {
