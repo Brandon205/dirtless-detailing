@@ -304,7 +304,8 @@ export default function Contact() {
             <span className="accent-orange bold text-shadow">Get In Touch!</span>
           </h1>
           <h2 className="page-subheading" style={{ textAlign: "center" }}>
-            Explore Urable instant booking: select service, vehicle size, and day for an instant quote and service date!
+            Check out our new booking process through Urable for instant in shop booking. Get a quote and service date
+            immediately!
           </h2>
           <div className="header-buttons">
             <motion.a
@@ -316,7 +317,7 @@ export default function Contact() {
               rel="noopener"
               target="_blank"
             >
-              <img src="../assets/icons/urable.png" alt="clipboard" className="btn-icon" /> Urable Instant Booking!
+              <img src="../assets/icons/urable.png" alt="clipboard" className="btn-icon" /> Urable Instant Booking
             </motion.a>
             <motion.a
               href="tel:2532529758"
@@ -377,7 +378,8 @@ export default function Contact() {
           <hr className="contact-border" />
           <h4 style={{ marginBottom: 0 }}>Need us to come to you?</h4>
           <p className="hours-p" style={{ marginBottom: 0 }}>
-            We can perform mobile detailing in the following cities:
+            We can perform mobile detailing in the following cities if you contact us (Our Urable page won't have mobile
+            booking for now):
           </p>
           <p className="hours-p">
             <span style={{ fontWeight: "bold", color: "#9f9f9f" }}>
@@ -387,9 +389,9 @@ export default function Contact() {
             </span>
           </p>
           <p>
-            <span className="bold">Overnight Detailing:</span> For drop offs we have a safe lockable garage, so if it's
-            more convenient for you feel free to drop your car off the night before! We can usually also do our details
-            at night so you can drop your car off and have it done in the morning!{" "}
+            <span className="bold">Overnight Detailing:</span> For drop offs we have a completely safe lockable garage,
+            so if it's more convenient for you feel free to drop your car off the night before! We can usually also do
+            our details at night so you can drop your car off and have it done the next morning!{" "}
           </p>
           <p className="subtext italic">
             <span className="special-package">*Note:</span> If the total of the mobile services you choose is less than
@@ -401,8 +403,7 @@ export default function Contact() {
       <div className="urable-section">
         <div>
           <strong style={{ fontSize: "2rem" }}>
-            Try our <span style={{ color: "#fab638" }}>NEW</span> Instant Booking Feature through{" "}
-            <span style={{ color: "#2FD2A8" }}>Ur</span>able!
+            Try our <span style={{ color: "#fab638" }}>NEW</span> Instant Booking Feature through Urable!
           </strong>
           <p style={{ fontSize: "1.3rem" }} className="services-p">
             Instant Booking • Price Estimate • Pick a Date and Time that works for you
@@ -411,7 +412,7 @@ export default function Contact() {
         <motion.a
           href="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd"
           style={{ maxWidth: "310px", padding: "0.5rem 1rem" }}
-          className="top-quote-btn"
+          className="top-quote-btn btn-secondary"
           variants={topBtnVariant}
           whileHover="hover"
           transition={{ duration: 0.25 }}
@@ -424,7 +425,7 @@ export default function Contact() {
 
       <div className="contact-container-right">
         <strong className="text-large">Or Reach Out to Us By Filling Out Our Form:</strong>
-        <p>
+        <p style={{ textAlign: "center" }}>
           <span className="special-package">Note: </span>The Pricing Estimates are approximate and some services are
           based on vehicle condition, because of this final prices may vary slightly.
         </p>
