@@ -304,24 +304,40 @@ export default function Contact() {
             <span className="accent-orange bold text-shadow">Get In Touch!</span>
           </h1>
           <h2 className="page-subheading" style={{ textAlign: "center" }}>
-            Check out our new booking process through Urable for instant in shop booking. Get a quote and service date
-            immediately!
+            Check out our new booking process through Urable to get an instant in shop booking. Get a quote and service
+            date immediately!
           </h2>
           <div className="header-buttons">
-            <motion.a
-              href="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd"
-              className="top-quote-btn"
-              variants={topBtnVariant}
-              whileHover="hover"
-              transition={{ duration: 0.25 }}
-              rel="noopener"
-              target="_blank"
-            >
-              <img src="../assets/icons/urable.png" alt="clipboard" className="btn-icon" /> Urable Instant Booking
-            </motion.a>
+            <div className="in-shop-only">
+              <motion.a
+                href="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd"
+                className="top-quote-btn btn-secondary btn-urable"
+                variants={topBtnVariant}
+                whileHover="hover"
+                transition={{ duration: 0.25 }}
+                rel="noopener"
+                target="_blank"
+              >
+                <img src="../assets/icons/urable.png" alt="clipboard" className="btn-icon" />
+                <p style={{ margin: 0 }}>
+                  Urable Instant Booking <p style={{ fontSize: "0.8em", margin: 0 }}>(In shop only)</p>
+                </p>
+              </motion.a>
+              {/* <p
+                style={{
+                  margin: "4px 0 0 0",
+                  display: "flex",
+                  justifyContent: "center",
+                  width: "100%",
+                  fontWeight: "bold",
+                }}
+              >
+                (In Shop Only)
+              </p> */}
+            </div>
             <motion.a
               href="tel:2532529758"
-              className="top-quote-btn btn-secondary"
+              className="top-quote-btn"
               variants={topBtnVariant}
               whileHover="hover"
               transition={{ duration: 0.25 }}
@@ -376,10 +392,10 @@ export default function Contact() {
         <div className="contact-information">
           <h3 style={{ fontSize: "1.75em" }}>Our Contact Information</h3>
           <hr className="contact-border" />
-          <h4 style={{ marginBottom: 0 }}>Need us to come to you?</h4>
+          <h4 style={{ marginBottom: 0, fontSize: "1.5em" }}>Need us to come to you?</h4>
           <p className="hours-p" style={{ marginBottom: 0 }}>
-            We can perform mobile detailing in the following cities if you contact us (Our Urable page won't have mobile
-            booking for now):
+            We can perform mobile detailing in the following cities if you contact us via any method besides Urable for
+            now. (Our Urable page is In Shop Bookings only):
           </p>
           <p className="hours-p">
             <span style={{ fontWeight: "bold", color: "#9f9f9f" }}>

@@ -4,6 +4,7 @@ $accent: #ff2600;
 $contact-bkg: #1b1b1b;
 $contact-bkg-lighter: #1f1f1f;
 $contact-border-clr: #2f2f2f;
+$urable-clr: #2fd2a8;
 
 /** Text and smaller colors **/
 $supporting-text: #bbb;
@@ -163,6 +164,10 @@ img {
 .btn-secondary {
   background-color: transparent;
   outline: 2px solid $main-clr;
+}
+
+.btn-urable {
+  outline-color: $urable-clr;
 }
 
 .main-quote-btn {
@@ -1916,6 +1921,22 @@ footer {
 
 .card-wide {
   width: 50vw;
+}
+
+.special-deal-p {
+  color: white;
+  margin: 0;
+  font-size: 1.2em;
+  max-width: 49%;
+  text-align: left;
+}
+
+.special-deal-colored {
+  color: #fc0fc0;
+}
+
+.in-shop-only {
+  flex-direction: column-reverse;
 }
 
 @media screen and (min-width: 700px) {
