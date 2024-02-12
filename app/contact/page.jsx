@@ -317,6 +317,7 @@ export default function Contact() {
                 transition={{ duration: 0.25 }}
                 rel="noopener"
                 target="_blank"
+                onClick={() => sendGTMEvent({ event: "urableClick", value: "1" })}
               >
                 <img src="../assets/icons/urable.png" alt="clipboard" className="btn-icon" />
                 <p style={{ margin: 0 }}>
