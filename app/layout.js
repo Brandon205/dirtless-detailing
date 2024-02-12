@@ -34,6 +34,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <Head>
         <meta name="google-site-verification" content="sq8uUuD_CLtkO1bg33IWhAVFjproB_N6s2Qqll0IxUo" />
+        <GoogleTagManager gtmId="GTM-5L5ZZN88" />
       </Head>
       <PHProvider>
         <Suspense>

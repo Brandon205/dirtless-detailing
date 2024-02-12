@@ -3,6 +3,7 @@ import Benefits from "./Benefits";
 import { topBtnVariant } from "../utils/animationVariations";
 import { motion } from "framer-motion";
 import { Titillium_Web } from "next/font/google";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 const titillium = Titillium_Web({ weight: ["400", "600"], subsets: ["latin"] });
 
@@ -89,6 +90,7 @@ export default function Home() {
               transition={{ duration: 0.25 }}
               rel="noopener"
               target="_blank"
+              onClick={() => sendGTMEvent({ event: "urableClick", value: "1" })}
             >
               <img src="../assets/icons/urable.png" alt="clipboard" className="btn-icon" /> Urable Instant Booking
             </motion.a>
