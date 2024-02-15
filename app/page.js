@@ -54,14 +54,14 @@ export default function Home() {
             <br />
             Auto Detailing Specialists
           </h1>
-          <p className="special-deal-p">
+          {/* <p className="special-deal-p">
             <span className="special-deal-colored">VALENTINES DAY SPECIAL</span>: Book through Urable below and use code
             <span className="special-deal-colored bold"> VALENTINE10</span> to save 10% on any In Shop Detail!
-          </p>
-          {/* <p className="main-desc">
+          </p> */}
+          <p className="main-desc">
             Anything from a simple interior detail, to the most detail oriented paint correction ceramic coating jobs,
             you can trust Dirt-Less Detailing to get the job done right.
-          </p> */}
+          </p>
 
           <div className="header-link-container">
             <motion.a
