@@ -14,7 +14,7 @@ export default function Footer() {
           </div>
         </div>
         <div>
-          <p>©2023 Dirt-Less Detailing.</p>
+          <p>©2024 Dirt-Less Detailing.</p>
           <p>
             Icons made by{" "}
             <a target="_blank" rel="noopener" href="https://icons8.com" className="aside-link">
