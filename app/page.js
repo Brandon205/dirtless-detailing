@@ -377,7 +377,7 @@ export default function Home() {
               </a>
               <div>
                 <p style={{ marginBottom: 0, color: "#c0c0c0", textAlign: "left" }}>Starting At:</p>
-                <p className="popular-pricing-price">$375</p>
+                <p className="popular-pricing-price">$400</p>
               </div>
             </div>
             <hr className="long-hr accent-orange" />
@@ -450,7 +450,7 @@ export default function Home() {
               </a>
               <div>
                 <p style={{ marginBottom: 0, color: "#c0c0c0", textAlign: "left" }}>Starting At:</p>
-                <p className="popular-pricing-price">$1,300</p>
+                <p className="popular-pricing-price">$1,000</p>
               </div>
             </div>
             <hr className="long-hr accent-orange" />

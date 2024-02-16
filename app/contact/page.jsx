@@ -100,6 +100,8 @@ export default function Contact() {
       tempPrice += prices.dogHair[dataArr.dogHair];
     }
 
+    console.log(tempPrice);
+
     setCurrentPrice(tempPrice);
   }
 
@@ -126,6 +128,8 @@ export default function Contact() {
             tempArr.push(fields.addons);
           }
         }
+
+        console.log("fields ", { ...prev, ...fields });
 
         fields.addons = tempArr;
       }
@@ -321,20 +325,9 @@ export default function Contact() {
               >
                 <img src="../assets/icons/urable.png" alt="clipboard" className="btn-icon" />
                 <p style={{ margin: 0 }}>
-                  Urable Instant Booking <p style={{ fontSize: "0.8em", margin: 0 }}>(In shop only)</p>
+                  Urable Instant Booking <br /> <span style={{ fontSize: "0.8em", margin: 0 }}>(In shop only)</span>
                 </p>
               </motion.a>
-              {/* <p
-                style={{
-                  margin: "4px 0 0 0",
-                  display: "flex",
-                  justifyContent: "center",
-                  width: "100%",
-                  fontWeight: "bold",
-                }}
-              >
-                (In Shop Only)
-              </p> */}
             </div>
             <motion.a
               href="tel:2532529758"

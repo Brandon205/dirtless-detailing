@@ -26,8 +26,8 @@ const jsonld = {
     "@type": "AggregateOffer",
     url: "https://www.dirtlessdetailing.com/services/exterior-seal",
     priceCurrency: "USD",
-    lowPrice: "375",
-    highPrice: "575",
+    lowPrice: "400",
+    highPrice: "600",
   },
 };
 
@@ -88,7 +88,7 @@ export default function ExteriorSeal() {
                   Select your vehicle size below to get a quick price estimate for your vehicle.
                 </strong>
               </div>
-              <PricingComponent prices={[375, 375, 375, 475, 575, 575]} addons="exterior" />
+              <PricingComponent prices={[400, 400, 400, 500, 600, 600]} addons="exterior" />
             </div>
 
             <h2 className="cleaning-process-title text-xl">Our Exterior Seal and Shine Process</h2>

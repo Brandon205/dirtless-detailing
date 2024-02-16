@@ -66,87 +66,87 @@
 // }
 
 const prices = {
-    "2 Door": {
-        "interior": {
-            "interior": 300,
-            "interiorspill": 450,
-            "interiorswift": 150
-        },
-        "exterior": {
-            "exteriorwash": 100,
-            "exteriorseal": 300,
-            "exteriorcorrect": 1300
-        },
+  "2 Door": {
+    interior: {
+      interior: 300,
+      interiorspill: 450,
+      interiorswift: 150,
     },
-    "Quarter Ton": {
-        "interior": {
-            "interior": 300,
-            "interiorspill": 450,
-            "interiorswift": 150
-        },
-        "exterior": {
-            "exteriorwash": 100,
-            "exteriorseal": 300,
-            "exteriorcorrect": 1300
-        },
+    exterior: {
+      exteriorwash: 100,
+      exteriorseal: 400,
+      exteriorcorrect: 1000,
     },
-    "4 Door": {
-        "interior": {
-            "interior": 300,
-            "interiorspill": 450,
-            "interiorswift": 150
-        },
-        "exterior": {
-            "exteriorwash": 125,
-            "exteriorseal": 350,
-            "exteriorcorrect": 1500
-        },
+  },
+  "Quarter Ton": {
+    interior: {
+      interior: 300,
+      interiorspill: 450,
+      interiorswift: 150,
     },
-    "Mid Size": {
-        "interior": {
-            "interior": 335,
-            "interiorspill": 500,
-            "interiorswift": 175
-        },
-        "exterior": {
-            "exteriorwash": 125,
-            "exteriorseal": 350,
-            "exteriorcorrect": 1500
-        },
+    exterior: {
+      exteriorwash: 100,
+      exteriorseal: 400,
+      exteriorcorrect: 1000,
     },
-    "Trucks": {
-        "interior": {
-            "interior": 375,
-            "interiorspill": 575,
-            "interiorswift": 175
-        },
-        "exterior": {
-            "exteriorwash": 150,
-            "exteriorseal": 400,
-            "exteriorcorrect": 1700
-        },
+  },
+  "4 Door": {
+    interior: {
+      interior: 300,
+      interiorspill: 450,
+      interiorswift: 150,
     },
-    "3 Row": {
-        "interior": {
-            "interior": 375,
-            "interiorspill": 575,
-            "interiorswift": 200
-        },
-        "exterior": {
-            "exteriorwash": 150,
-            "exteriorseal": 400,
-            "exteriorcorrect": 1700
-        },
+    exterior: {
+      exteriorwash: 125,
+      exteriorseal: 400,
+      exteriorcorrect: 1000,
     },
-    "addons": {
-        "Ozone Treatment": 75,
-        "Engine Bay": 75
+  },
+  "Mid Size": {
+    interior: {
+      interior: 335,
+      interiorspill: 500,
+      interiorswift: 175,
     },
-    'dogHair': {
-        "Little or None": 0,
-        "Medium Amount": 50,
-        "Lots of Hair": 100
+    exterior: {
+      exteriorwash: 125,
+      exteriorseal: 500,
+      exteriorcorrect: 1250,
     },
-}
+  },
+  Trucks: {
+    interior: {
+      interior: 375,
+      interiorspill: 575,
+      interiorswift: 175,
+    },
+    exterior: {
+      exteriorwash: 150,
+      exteriorseal: 600,
+      exteriorcorrect: 1500,
+    },
+  },
+  "3 Row": {
+    interior: {
+      interior: 375,
+      interiorspill: 575,
+      interiorswift: 200,
+    },
+    exterior: {
+      exteriorwash: 150,
+      exteriorseal: 600,
+      exteriorcorrect: 1500,
+    },
+  },
+  addons: {
+    "Ozone Treatment": 75,
+    "Engine Bay": 75,
+  },
+  dogHair: {
+    "Little or None": 0,
+    "Medium Amount": 50,
+    "Lots of Hair": 100,
+  },
+};
 
 export default prices;
