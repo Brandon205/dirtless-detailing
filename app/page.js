@@ -71,9 +71,9 @@ export default function Home() {
               whileHover="hover"
               transition={{ duration: 0.25 }}
             >
-              <img src="../assets/icons/clipboard.png" alt="clipboard" className="btn-icon" /> Contact Us
+              <img src="../assets/icons/clipboard.png" alt="clipboard" className="btn-icon" /> Book Now!
             </motion.a>
-            {/* <motion.a
+            <motion.a
               href="tel:2532529758"
               className="top-quote-btn btn-secondary"
               variants={topBtnVariant}
@@ -81,18 +81,6 @@ export default function Home() {
               transition={{ duration: 0.25 }}
             >
               <img src="../assets/icons/phoneMessage.png" alt="call or message" className="btn-icon" /> (253) 252-9758
-            </motion.a> */}
-            <motion.a
-              href="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd"
-              className="top-quote-btn btn-secondary btn-urable"
-              variants={topBtnVariant}
-              whileHover="hover"
-              transition={{ duration: 0.25 }}
-              rel="noopener"
-              target="_blank"
-              onClick={() => sendGTMEvent({ event: "urableClick", value: "1" })}
-            >
-              <img src="../assets/icons/urable.png" alt="clipboard" className="btn-icon" /> Urable Instant Booking
             </motion.a>
           </div>
 
