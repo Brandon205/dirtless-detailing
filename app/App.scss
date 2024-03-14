@@ -746,7 +746,7 @@ option {
 .contact-information-container {
   display: flex;
   flex-direction: column;
-  padding-top: 4rem;
+  padding-top: 120px;
   gap: 2rem;
 }
 
@@ -757,7 +757,7 @@ option {
   gap: 0.5rem;
   background-color: $contact-bkg-lighter;
   width: 90vw;
-  max-width: 360px;
+  // max-width: 360px;
   border-radius: 6px;
   margin: 0 auto;
   padding: 2rem 0.75rem;
@@ -3135,19 +3135,39 @@ footer {
   height: 410px;
 }
 
-.urable-section {
-  display: flex;
-  flex-direction: column;
-  margin: 4rem auto;
-  width: 75%;
-  gap: 2rem;
-  justify-content: space-between;
-  text-align: center;
+// .urable-section {
+//   display: flex;
+//   flex-direction: column;
+//   margin: 4rem auto;
+//   width: 75%;
+//   gap: 2rem;
+//   justify-content: space-between;
+//   text-align: center;
 
-  a {
-    justify-content: center;
+//   a {
+//     justify-content: center;
+//     margin: 0 auto;
+//   }
+// }
+
+.urable-container {
+  width: 100%;
+  // margin-bottom: 4rem;
+
+  div {
+    width: 80%;
+    font-size: 16px;
     margin: 0 auto;
+    padding-top: 4rem;
   }
+}
+
+.urable-form-container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 2rem 0 0 0;
+  border: 0;
 }
 
 .screen-flex {
@@ -3539,8 +3559,6 @@ footer {
 
   .contact-info-cards {
     width: 40%;
-    gap: 0;
-    justify-content: space-around;
   }
 
   .contact-information {
