@@ -63,7 +63,7 @@ export default function Exterior() {
                 </p>
                 <p>
                   In our Decon Wash, our goal is not to just give your car a quick mitt wash and call it good. A Decon
-                  Wash is more in-depth removing all contaminants including iron, tar, artilary fungus etc.
+                  Wash is more in-depth removing all contaminants including iron, tar, and tree sap.
                 </p>
                 <p>
                   And while we're at it, how's the interior of your car doing? We'd be more than happy to clean it out

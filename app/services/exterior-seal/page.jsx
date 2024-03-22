@@ -26,8 +26,8 @@ const jsonld = {
     "@type": "AggregateOffer",
     url: "https://www.dirtlessdetailing.com/services/exterior-seal",
     priceCurrency: "USD",
-    lowPrice: "400",
-    highPrice: "600",
+    lowPrice: "500",
+    highPrice: "750",
   },
 };
 
@@ -88,7 +88,7 @@ export default function ExteriorSeal() {
                   Select your vehicle size below to get a quick price estimate for your vehicle.
                 </strong>
               </div>
-              <PricingComponent prices={[400, 400, 400, 500, 600, 600]} addons="exterior" />
+              <PricingComponent prices={[500, 500, 500, 625, 750, 750]} addons="exterior" />
             </div>
 
             <h2 className="cleaning-process-title text-xl">Our Exterior Seal and Shine Process</h2>
@@ -156,8 +156,8 @@ export default function ExteriorSeal() {
                 <div className="step-container">
                   <h4 className="step-title">Protect Vehicle</h4>
                   <p className="step-desc">
-                    Apply ceramic protection, which can last up to a year. At this stage we'll also apply our windshield
-                    and trim coatings to cover the rest of your vehicle!
+                    Apply ceramic protection, which can last up to a year. At this stage we'll also apply our
+                    windshield, trim, headlight, and wheel coatings to protect your entire vehicle!
                   </p>
                 </div>
               </li>
@@ -176,7 +176,7 @@ export default function ExteriorSeal() {
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Final Touches</h4>
-                  <p className="step-desc">Dress tires, wheel wells and plastics.</p>
+                  <p className="step-desc">Dress tires, wheel wells and other plastics.</p>
                 </div>
               </li>
               <li className="item item-disabled">
@@ -194,8 +194,8 @@ export default function ExteriorSeal() {
                   </h4>
                   <p className="step-desc">
                     If you opt for our Exterior Correct and Protect package you get all of these services, a full
-                    vehicle Paint Correction (more in depth than a polish), and a 5 year Ceramic Coating, leaving you
-                    with 4 more years of protection with correct maintenance! See more info{" "}
+                    vehicle Paint Correction (more in depth than a polish), and a 3 year Ceramic Coating, leaving you
+                    with up to 2 extra years of protection! See more info{" "}
                     <a href="/services/exterior-seal" className="aside-link">
                       here
                     </a>

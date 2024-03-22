@@ -56,14 +56,15 @@ const faqItems = [
     title: "How long will my Ceramic Coating last?",
     description: (
       <p className="faq-description">
-        Your paint will be protected for a lifetime as true ceramic coatings don't just wash off, however, over time
-        your coating can get clogged with contaminants and gloss, slickness, and water beading can degrade. If you want
-        to maintain all the benefits of your ceramic coating we recommend getting our{" "}
-        <a href="/services/exterior-seal" className="aside-link">
-          Seal and Shine
+        Unlike waxes true ceramic coatings don't just wash off, however, over time your coating can get clogged with
+        contaminants and gloss, slickness, and water beading can degrade (for this coating it should stay in good
+        quality for up to 3 years). If you want to maintain all the benefits of your ceramic coating we recommend
+        getting our{" "}
+        <a href="/services/exterior" className="aside-link">
+          Exterior Decon Wash
         </a>{" "}
-        package annually. This package fully decontaminates and refreshes your ceramic coating back to the day you got
-        it.
+        package bi-annually or annually. This package fully decontaminates and refreshes your ceramic coating back to
+        the day you got it.
       </p>
     ),
   },
@@ -170,12 +171,9 @@ export default function ExteriorCorrect() {
                   lighting to ensure that we don't miss any spots on the paint.
                 </p>
                 <p>
-                  Last but not least is the ceramic coating! To provide{" "}
-                  <span className="bold">
-                    LIFETIME PROTECTION<span className="special-package">*</span>
-                  </span>{" "}
-                  on the paint coating, we coat your whole vehicle with the hardest, most resilient ceramic coatings on
-                  the market. This includes paint, trim, lights, glass, and wheels.
+                  Last but not least is the ceramic coating! To provide to best protection and coverage on the paint
+                  coating, we coat your whole vehicle with the hardest, most resilient ceramic coatings on the market.
+                  This includes paint, trim, lights, glass, and wheels.
                 </p>
               </div>
             </main>
@@ -258,12 +256,8 @@ export default function ExteriorCorrect() {
                 <div className="step-container">
                   <h4 className="step-title">Protect Vehicle</h4>
                   <p className="step-desc">
-                    Apply our{" "}
-                    <a href="#faq" className="aside-link">
-                      Lifetime*
-                    </a>{" "}
-                    Ceramic Coating to the paint. At this point we also coat the windshield, wheels, and the trim. Now
-                    there's no part of your car that's uncoated!
+                    Apply our 3-year Ceramic Coating to the paint. At this point we also coat the windshield, wheels,
+                    and the trim. Now there's no part of your car that's uncoated!
                   </p>
                 </div>
               </li>
