@@ -11,7 +11,8 @@ const jsonld = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Dirt-Less Detailing",
-  image: "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover",
+  image:
+    "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover",
   url: "https://www.dirtlessdetailing.com",
   telephone: "2532529758",
   priceRange: "$$$",
@@ -30,17 +31,31 @@ const jsonld = {
   },
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",
-    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    dayOfWeek: [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday",
+    ],
     opens: "07:00",
     closes: "19:00",
   },
-  sameAs: ["https://www.instagram.com/dirt_less_detailing", "https://www.youtube.com/channel/UCsoqP5s4hwkQd_Sd-TVv-jg"],
+  sameAs: [
+    "https://www.instagram.com/dirt_less_detailing",
+    "https://www.youtube.com/channel/UCsoqP5s4hwkQd_Sd-TVv-jg",
+  ],
 };
 
 export default function Home() {
   return (
     <div className="App">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }}
+      />
       <header className="home-header">
         <div
           className="maincover"
@@ -59,8 +74,9 @@ export default function Home() {
             <span className="special-deal-colored bold"> VALENTINE10</span> to save 10% on any In Shop Detail!
           </p> */}
           <p className="main-desc">
-            Anything from a simple interior detail, to the most detail oriented paint correction ceramic coating jobs,
-            you can trust Dirt-Less Detailing to get the job done right.
+            Anything from a simple interior detail, to the most detail oriented
+            paint correction ceramic coating jobs, you can trust Dirt-Less
+            Detailing to get the job done right.
           </p>
 
           <div className="header-link-container">
@@ -71,7 +87,12 @@ export default function Home() {
               whileHover="hover"
               transition={{ duration: 0.25 }}
             >
-              <img src="../assets/icons/clipboard.png" alt="clipboard" className="btn-icon" /> Book Now!
+              <img
+                src="../assets/icons/clipboard.png"
+                alt="clipboard"
+                className="btn-icon"
+              />{" "}
+              Book Now!
             </motion.a>
             <motion.a
               href="tel:2532529758"
@@ -80,12 +101,21 @@ export default function Home() {
               whileHover="hover"
               transition={{ duration: 0.25 }}
             >
-              <img src="../assets/icons/phoneMessage.png" alt="call or message" className="btn-icon" /> (253) 252-9758
+              <img
+                src="../assets/icons/phoneMessage.png"
+                alt="call or message"
+                className="btn-icon"
+              />{" "}
+              (253) 252-9758
             </motion.a>
           </div>
 
           <div style={{ gap: 32 }} className="screen-flex">
-            <a href="https://iglcoatingsusa.com/" target="_blank" rel="noopener">
+            <a
+              href="https://iglcoatingsusa.com/"
+              target="_blank"
+              rel="noopener"
+            >
               <div
                 className="header-cert"
                 style={{
@@ -121,9 +151,15 @@ export default function Home() {
       <div className="service-bkg" style={{ paddingTop: 0 }}>
         <Benefits />
 
-        <div className="general-container new-heading-container" style={{ margin: "5vh auto 2vh auto" }}>
+        <div
+          className="general-container new-heading-container"
+          style={{ margin: "5vh auto 2vh auto" }}
+        >
           <strong className="above-heading"> Interior Services </strong>
-          <h2 className="new-heading">Transform your vehicle's interior with our Premium Auto Detailing services.</h2>
+          <h2 className="new-heading">
+            Transform your vehicle's interior with our Premium Auto Detailing
+            services.
+          </h2>
         </div>
 
         <div className="otherservices-subcontainer">
@@ -150,19 +186,37 @@ export default function Home() {
 
             <ul className="checklist">
               <li>
-                <img src="../assets/icons/checkmark.svg" alt="steering wheel" className="icon-36" />
+                <img
+                  src="../assets/icons/checkmark.svg"
+                  alt="steering wheel"
+                  className="icon-36"
+                />
                 <p className="checklist-item">Vacuum the entire vehicle</p>
               </li>
               <li>
-                <img src="../assets/icons/checkmark.svg" alt="steering wheel" className="icon-36" />
-                <p className="checklist-item">Wipe down and condition all surfaces</p>
+                <img
+                  src="../assets/icons/checkmark.svg"
+                  alt="steering wheel"
+                  className="icon-36"
+                />
+                <p className="checklist-item">
+                  Wipe down and condition all surfaces
+                </p>
               </li>
               <li>
-                <img src="../assets/icons/checkmark.svg" alt="steering wheel" className="icon-36" />
+                <img
+                  src="../assets/icons/checkmark.svg"
+                  alt="steering wheel"
+                  className="icon-36"
+                />
                 <p className="checklist-item">Wash all floormats</p>
               </li>
               <li>
-                <img src="../assets/icons/checkmark.svg" alt="steering wheel" className="icon-36" />
+                <img
+                  src="../assets/icons/checkmark.svg"
+                  alt="steering wheel"
+                  className="icon-36"
+                />
                 <p className="checklist-item">Clean all windows/glass</p>
               </li>
             </ul>
@@ -172,7 +226,10 @@ export default function Home() {
               <a href="/contact" className="popular-readmore">
                 Book Now!
               </a>
-              <a href="/services/interior-swift" className="popular-readmore-secondary">
+              <a
+                href="/services/interior-swift"
+                className="popular-readmore-secondary"
+              >
                 Learn More
               </a>
             </div>
@@ -198,24 +255,50 @@ export default function Home() {
 
             <ul className="checklist">
               <li>
-                <img src="../assets/icons/checkmark.svg" alt="steering wheel" className="icon-36" />
+                <img
+                  src="../assets/icons/checkmark.svg"
+                  alt="steering wheel"
+                  className="icon-36"
+                />
                 <p className="checklist-item">Blow out all dirt/debris</p>
               </li>
               <li>
-                <img src="../assets/icons/checkmark.svg" alt="steering wheel" className="icon-36" />
-                <p className="checklist-item">Steam extraction/carpet shampooing</p>
+                <img
+                  src="../assets/icons/checkmark.svg"
+                  alt="steering wheel"
+                  className="icon-36"
+                />
+                <p className="checklist-item">
+                  Steam extraction/carpet shampooing
+                </p>
               </li>
               <li>
-                <img src="../assets/icons/checkmark.svg" alt="steering wheel" className="icon-36" />
+                <img
+                  src="../assets/icons/checkmark.svg"
+                  alt="steering wheel"
+                  className="icon-36"
+                />
                 <p className="checklist-item">Door jambs cleaned</p>
               </li>
               <li>
-                <img src="../assets/icons/checkmark.svg" alt="steering wheel" className="icon-36" />
-                <p className="checklist-item">All Leathers and plastics cleaned</p>
+                <img
+                  src="../assets/icons/checkmark.svg"
+                  alt="steering wheel"
+                  className="icon-36"
+                />
+                <p className="checklist-item">
+                  All Leathers and plastics cleaned
+                </p>
               </li>
               <li>
-                <img src="../assets/icons/checkmark.svg" alt="steering wheel" className="icon-36" />
-                <p className="checklist-item">All interior windows and glass cleaned</p>
+                <img
+                  src="../assets/icons/checkmark.svg"
+                  alt="steering wheel"
+                  className="icon-36"
+                />
+                <p className="checklist-item">
+                  All interior windows and glass cleaned
+                </p>
               </li>
             </ul>
 
@@ -224,7 +307,10 @@ export default function Home() {
               <a href="/contact" className="popular-readmore">
                 Book Now!
               </a>
-              <a href="/services/interior" className="popular-readmore-secondary">
+              <a
+                href="/services/interior"
+                className="popular-readmore-secondary"
+              >
                 Learn More
               </a>
             </div>
@@ -257,7 +343,8 @@ export default function Home() {
                   style={{ marginTop: "5px" }}
                 />
                 <p className="checklist-item">
-                  <span className="bold">EVERYTHING</span> from our Full Interior Service
+                  <span className="bold">EVERYTHING</span> from our Full
+                  Interior Service
                 </p>
               </li>
               <li>
@@ -267,7 +354,9 @@ export default function Home() {
                   className="icon-36"
                   style={{ marginTop: "5px" }}
                 />
-                <p className="checklist-item">Interior Ceramic Coating applied on all surfaces</p>
+                <p className="checklist-item">
+                  Interior Ceramic Coating applied on all surfaces
+                </p>
               </li>
             </ul>
 
@@ -276,7 +365,10 @@ export default function Home() {
               <a href="/contact" className="popular-readmore">
                 Book Now!
               </a>
-              <a href="/services/interior-spill" className="popular-readmore-secondary">
+              <a
+                href="/services/interior-spill"
+                className="popular-readmore-secondary"
+              >
                 Learn More{" "}
               </a>
             </div>
@@ -285,10 +377,14 @@ export default function Home() {
 
         <br className="extra-space" />
 
-        <div className="general-container new-heading-container" style={{ margin: "5vh auto 2vh auto" }}>
+        <div
+          className="general-container new-heading-container"
+          style={{ margin: "5vh auto 2vh auto" }}
+        >
           <strong className="above-heading"> Exterior Services </strong>
           <h3 className="new-heading">
-            From a quick refresh to a complete paint correction, we cover all things exterior.
+            From a quick refresh to a complete paint correction, we cover all
+            things exterior.
           </h3>
         </div>
 
@@ -305,7 +401,15 @@ export default function Home() {
                 Exterior Decon Wash
               </a>
               <div>
-                <p style={{ marginBottom: 0, color: "#c0c0c0", textAlign: "left" }}>Starting At:</p>
+                <p
+                  style={{
+                    marginBottom: 0,
+                    color: "#c0c0c0",
+                    textAlign: "left",
+                  }}
+                >
+                  Starting At:
+                </p>
                 <p className="popular-pricing-price">$100</p>
               </div>
             </div>
@@ -320,7 +424,8 @@ export default function Home() {
                   style={{ marginTop: "5px" }}
                 />
                 <p className="checklist-item">
-                  Full vehicle strip wash (to remove any embedded contaminants, tar, and sap)
+                  Full vehicle strip wash (to remove any embedded contaminants,
+                  tar, and sap)
                 </p>
               </li>
               <li>
@@ -330,15 +435,29 @@ export default function Home() {
                   className="icon-36"
                   style={{ marginTop: "5px" }}
                 />
-                <p className="checklist-item">Thoroughly wash tires, wheels, wheel barrels and wells</p>
+                <p className="checklist-item">
+                  Thoroughly wash tires, wheels, wheel barrels and wells
+                </p>
               </li>
               <li>
-                <img src="../assets/icons/checkmark.svg" alt="steering wheel" className="icon-36" />
-                <p className="checklist-item">Clean door jambs and the gas door</p>
+                <img
+                  src="../assets/icons/checkmark.svg"
+                  alt="steering wheel"
+                  className="icon-36"
+                />
+                <p className="checklist-item">
+                  Clean door jambs and the gas door
+                </p>
               </li>
               <li>
-                <img src="../assets/icons/checkmark.svg" alt="steering wheel" className="icon-36" />
-                <p className="checklist-item">Ceramic protection applied to paint (lasts up to 3 months)</p>
+                <img
+                  src="../assets/icons/checkmark.svg"
+                  alt="steering wheel"
+                  className="icon-36"
+                />
+                <p className="checklist-item">
+                  Ceramic protection applied to paint (lasts up to 3 months)
+                </p>
               </li>
             </ul>
 
@@ -347,7 +466,10 @@ export default function Home() {
               <a href="/contact" className="popular-readmore">
                 Book Now!
               </a>
-              <a href="/services/exterior" className="popular-readmore-secondary">
+              <a
+                href="/services/exterior"
+                className="popular-readmore-secondary"
+              >
                 Learn More{" "}
               </a>
             </div>
@@ -364,7 +486,15 @@ export default function Home() {
                 Exterior Seal and Shine
               </a>
               <div>
-                <p style={{ marginBottom: 0, color: "#c0c0c0", textAlign: "left" }}>Starting At:</p>
+                <p
+                  style={{
+                    marginBottom: 0,
+                    color: "#c0c0c0",
+                    textAlign: "left",
+                  }}
+                >
+                  Starting At:
+                </p>
                 <p className="popular-pricing-price">$400</p>
               </div>
             </div>
@@ -379,7 +509,8 @@ export default function Home() {
                   style={{ marginTop: "5px" }}
                 />
                 <p className="checklist-item">
-                  <span className="bold">EVERYTHING</span> from our Exterior Decon Service
+                  <span className="bold">EVERYTHING</span> from our Exterior
+                  Decon Service
                 </p>
               </li>
               <li>
@@ -389,11 +520,19 @@ export default function Home() {
                   className="icon-36"
                   style={{ marginTop: "5px" }}
                 />
-                <p className="checklist-item">Light polish to remove minor swirls and waterspots</p>
+                <p className="checklist-item">
+                  Light polish to remove minor swirls and waterspots
+                </p>
               </li>
               <li>
-                <img src="../assets/icons/checkmark.svg" alt="steering wheel" className="icon-36" />
-                <p className="checklist-item">Restore and ceramic coat all trim</p>
+                <img
+                  src="../assets/icons/checkmark.svg"
+                  alt="steering wheel"
+                  className="icon-36"
+                />
+                <p className="checklist-item">
+                  Restore and ceramic coat all trim
+                </p>
               </li>
               <li>
                 <img
@@ -402,7 +541,10 @@ export default function Home() {
                   className="icon-36"
                   style={{ marginTop: "5px" }}
                 />
-                <p className="checklist-item">Windshield Coating (you won't even need to use your wipers anymore!)</p>
+                <p className="checklist-item">
+                  Windshield Coating (you won't even need to use your wipers
+                  anymore!)
+                </p>
               </li>
               <li>
                 <img
@@ -411,7 +553,9 @@ export default function Home() {
                   className="icon-36"
                   style={{ marginTop: "5px" }}
                 />
-                <p className="checklist-item">Ceramic protection applied on paint (lasts up to 1 year)</p>
+                <p className="checklist-item">
+                  Ceramic protection applied on paint (lasts up to 1 year)
+                </p>
               </li>
             </ul>
 
@@ -420,7 +564,10 @@ export default function Home() {
               <a href="/contact" className="popular-readmore">
                 Book Now!
               </a>
-              <a href="/services/exterior-seal" className="popular-readmore-secondary">
+              <a
+                href="/services/exterior-seal"
+                className="popular-readmore-secondary"
+              >
                 Learn More{" "}
               </a>
             </div>
@@ -437,7 +584,15 @@ export default function Home() {
                 Correct and Protect
               </a>
               <div>
-                <p style={{ marginBottom: 0, color: "#c0c0c0", textAlign: "left" }}>Starting At:</p>
+                <p
+                  style={{
+                    marginBottom: 0,
+                    color: "#c0c0c0",
+                    textAlign: "left",
+                  }}
+                >
+                  Starting At:
+                </p>
                 <p className="popular-pricing-price">$1,000</p>
               </div>
             </div>
@@ -452,7 +607,8 @@ export default function Home() {
                   style={{ marginTop: "5px" }}
                 />
                 <p className="checklist-item">
-                  <span className="bold">EVERYTHING</span> from our Exterior Decon Service
+                  <span className="bold">EVERYTHING</span> from our Exterior
+                  Decon Service
                 </p>
               </li>
               <li>
@@ -462,11 +618,20 @@ export default function Home() {
                   className="icon-36"
                   style={{ marginTop: "5px" }}
                 />
-                <p className="checklist-item">Our full paint correction process (Removes 80%-90% of scratching)</p>
+                <p className="checklist-item">
+                  Our full paint correction process (Removes 80%-90% of
+                  scratching)
+                </p>
               </li>
               <li>
-                <img src="../assets/icons/checkmark.svg" alt="steering wheel" className="icon-36" />
-                <p className="checklist-item">Restore and ceramic coat all trim</p>
+                <img
+                  src="../assets/icons/checkmark.svg"
+                  alt="steering wheel"
+                  className="icon-36"
+                />
+                <p className="checklist-item">
+                  Restore and ceramic coat all trim
+                </p>
               </li>
               <li>
                 <img
@@ -475,7 +640,10 @@ export default function Home() {
                   className="icon-36"
                   style={{ marginTop: "5px" }}
                 />
-                <p className="checklist-item">Windshield Coating (you won't even need to use your wipers anymore!)</p>
+                <p className="checklist-item">
+                  Windshield Coating (you won't even need to use your wipers
+                  anymore!)
+                </p>
               </li>
               <li>
                 <img
@@ -493,7 +661,9 @@ export default function Home() {
                   className="icon-36"
                   style={{ marginTop: "5px" }}
                 />
-                <p className="checklist-item">Ceramic coating applied to paint (Lasts a Lifetime*!)</p>
+                <p className="checklist-item">
+                  Ceramic coating applied to paint (Lasts a Lifetime*!)
+                </p>
               </li>
             </ul>
 
@@ -502,7 +672,10 @@ export default function Home() {
               <a href="/contact" className="popular-readmore">
                 Book Now!
               </a>
-              <a href="/services/exterior-correct" className="popular-readmore-secondary">
+              <a
+                href="/services/exterior-correct"
+                className="popular-readmore-secondary"
+              >
                 Learn More{" "}
               </a>
             </div>
@@ -512,9 +685,14 @@ export default function Home() {
         <br className="extra-space" />
 
         <div className="service-bkg-lighter" style={{ paddingBottom: "5rem" }}>
-          <div className="general-container new-heading-container" style={{ margin: "5vh auto 2vh auto" }}>
+          <div
+            className="general-container new-heading-container"
+            style={{ margin: "5vh auto 2vh auto" }}
+          >
             <strong className="above-heading">Testimonials</strong>
-            <h3 className="new-heading">Read some of the reviews from our valued customers!</h3>
+            <h3 className="new-heading">
+              Read some of the reviews from our valued customers!
+            </h3>
             <p style={{ margin: 0, padding: "1rem 0" }}>
               See all of the reviews from our customers on our{" "}
               <a
@@ -541,9 +719,13 @@ export default function Home() {
             <div className="review-card">
               <div className="review-top">
                 <p className="review-text">
-                  "Had an issue with the interior of a vehicle that had been in a garage for too long. Dirt-Less handled
-                  it professionally and quickly.{" "}
-                  <span className="highlight">We will definitely keep going back for our needs.</span>"
+                  "Had an issue with the interior of a vehicle that had been in
+                  a garage for too long. Dirt-Less handled it professionally and
+                  quickly.{" "}
+                  <span className="highlight">
+                    We will definitely keep going back for our needs.
+                  </span>
+                  "
                 </p>
               </div>
               <div className="review-bottom">
@@ -552,7 +734,11 @@ export default function Home() {
                   <p className="services-p">Full Interior</p>
                 </div>
                 <div className="google-review">
-                  <img src="../assets/icons/star.svg" alt="5 stars" className="icon-36" />
+                  <img
+                    src="../assets/icons/star.svg"
+                    alt="5 stars"
+                    className="icon-36"
+                  />
                   <p className="star-review">5.0</p>
                 </div>
               </div>
@@ -561,8 +747,12 @@ export default function Home() {
               <div className="review-top">
                 <p className="review-text">
                   "Brenden does an amazing job. My car looks amazing.{" "}
-                  <span className="highlight">He is super reasonable in his pricing and was very efficient.</span> Will
-                  definitely continue to use his service for all our vehicles."
+                  <span className="highlight">
+                    He is super reasonable in his pricing and was very
+                    efficient.
+                  </span>{" "}
+                  Will definitely continue to use his service for all our
+                  vehicles."
                 </p>
               </div>
               <div className="review-bottom">
@@ -571,7 +761,11 @@ export default function Home() {
                   <p className="services-p">Full Interior + Exterior Wash</p>
                 </div>
                 <div className="google-review">
-                  <img src="../assets/icons/star.svg" alt="5 stars" className="icon-36" />
+                  <img
+                    src="../assets/icons/star.svg"
+                    alt="5 stars"
+                    className="icon-36"
+                  />
                   <p className="star-review">5.0</p>
                 </div>
               </div>
@@ -579,15 +773,18 @@ export default function Home() {
             <div className="review-card">
               <div className="review-top">
                 <p className="review-text">
-                  "Had a whole half gallon of almond chocolate milk spilled into my trunk thanks to Walmart pickup.
+                  "Had a whole half gallon of almond chocolate milk spilled into
+                  my trunk thanks to Walmart pickup.
                   <span className="highlight">
                     {" "}
-                    After calling many detailing shops (whom most were rude and not helpful) Brenden at Dirt-Less Detail
-                    was very polite and eager to help.
+                    After calling many detailing shops (whom most were rude and
+                    not helpful) Brenden at Dirt-Less Detail was very polite and
+                    eager to help.
                   </span>{" "}
-                  Despite his busy schedule he fit me in asap and took care of my weird circumstance. It didn't take
-                  long to clean the trunk and because of it he didn't charge me for the cleaning. Way to go Brenden at
-                  Dirt-Less Detail. Thanks again."
+                  Despite his busy schedule he fit me in asap and took care of
+                  my weird circumstance. It didn't take long to clean the trunk
+                  and because of it he didn't charge me for the cleaning. Way to
+                  go Brenden at Dirt-Less Detail. Thanks again."
                 </p>
               </div>
               <div className="review-bottom">
@@ -596,7 +793,11 @@ export default function Home() {
                   <p className="services-p">Full Interior</p>
                 </div>
                 <div className="google-review">
-                  <img src="../assets/icons/star.svg" alt="5 stars" className="icon-36" />
+                  <img
+                    src="../assets/icons/star.svg"
+                    alt="5 stars"
+                    className="icon-36"
+                  />
                   <p className="star-review">5.0</p>
                 </div>
               </div>
@@ -604,13 +805,14 @@ export default function Home() {
             <div className="review-card review-screen">
               <div className="review-top">
                 <p className="review-text">
-                  "Brought in my 12 Escalade and he worked his magic on both inside and outside.{" "}
+                  "Brought in my 12 Escalade and he worked his magic on both
+                  inside and outside.{" "}
                   <span className="highlight">
-                    Brenden is very good at what he does, the vehicle looks amazing. Better than it was when I bought
-                    it.
+                    Brenden is very good at what he does, the vehicle looks
+                    amazing. Better than it was when I bought it.
                   </span>{" "}
-                  Thank you so much for getting me into your schedule. I am Extremely pleased with the outcome of your
-                  services."
+                  Thank you so much for getting me into your schedule. I am
+                  Extremely pleased with the outcome of your services."
                 </p>
               </div>
               <div className="review-bottom">
@@ -619,7 +821,11 @@ export default function Home() {
                   <p className="services-p">Full Interior + Exterior Wash</p>
                 </div>
                 <div className="google-review">
-                  <img src="../assets/icons/star.svg" alt="5 stars" className="icon-36" />
+                  <img
+                    src="../assets/icons/star.svg"
+                    alt="5 stars"
+                    className="icon-36"
+                  />
                   <p className="star-review">5.0</p>
                 </div>
               </div>
@@ -631,7 +837,10 @@ export default function Home() {
         <hr className="pricing__hr" />
 
         <div className="general-container new-heading-container">
-          <h3 style={{ margin: 0, width: "auto" }} className="new-heading new-heading-center">
+          <h3
+            style={{ margin: 0, width: "auto" }}
+            className="new-heading new-heading-center"
+          >
             Our shop location and mobile services
           </h3>
         </div>
@@ -640,8 +849,9 @@ export default function Home() {
             <h4>Mobile Service Information:</h4>
             <ul>
               <li>
-                We can come to you to perform our details with most of our services as long as the weather cooperates.
-                Some services that you will need to come to us for are:
+                We can come to you to perform our details with most of our
+                services as long as the weather cooperates. Some services that
+                you will need to come to us for are:
               </li>
               <li className="no-list">
                 <ul>
@@ -649,18 +859,22 @@ export default function Home() {
                   <li>Exterior Correct & Protect</li>
                 </ul>
               </li>
-              <li>For our mobile services we currently travel out to the following cities:</li>
+              <li>
+                For our mobile services we currently travel out to the following
+                cities:
+              </li>
               <li className="no-list">
                 <ul>
                   <li>
-                    Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Lake Tapps, Federal Way, Orting, South Prairie
-                    Tehaleh, Black Diamond, Milton, Edgewood, and Graham
+                    Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Lake
+                    Tapps, Federal Way, Orting, South Prairie Tehaleh, Black
+                    Diamond, Milton, Edgewood, and Graham
                   </li>
                 </ul>
               </li>
               <li>
-                *Note: For Mobile Services totaling less than $200 we do charge a small $1/mile from our shop location
-                fee.
+                *Note: For Mobile Services totaling less than $200 we do charge
+                a small $1/mile from our shop location fee.
               </li>
             </ul>
           </div>

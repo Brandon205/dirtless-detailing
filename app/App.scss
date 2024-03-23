@@ -432,8 +432,18 @@ header h1 {
   height: 90vh;
   width: 100%;
   z-index: -5;
-  -webkit-mask-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #1f1f1fbf 15%, rgba(31, 31, 31, 1) 100%);
-  mask-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #1f1f1fbf 15%, rgba(31, 31, 31, 1) 100%);
+  -webkit-mask-image: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    #1f1f1fbf 15%,
+    rgba(31, 31, 31, 1) 100%
+  );
+  mask-image: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    #1f1f1fbf 15%,
+    rgba(31, 31, 31, 1) 100%
+  );
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
@@ -447,8 +457,18 @@ header h1 {
   position: relative;
   height: 75vh;
   width: 100%;
-  -webkit-mask-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #1f1f1fbf 15%, rgba(31, 31, 31, 1) 100%);
-  mask-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #1f1f1fbf 15%, rgba(31, 31, 31, 1) 100%);
+  -webkit-mask-image: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    #1f1f1fbf 15%,
+    rgba(31, 31, 31, 1) 100%
+  );
+  mask-image: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    #1f1f1fbf 15%,
+    rgba(31, 31, 31, 1) 100%
+  );
   z-index: 0;
 }
 
@@ -3164,6 +3184,31 @@ footer {
 
 .logo-screen {
   width: 140px;
+}
+
+.confirmation-container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+  padding-top: 105px;
+  padding: 105px 2rem;
+  color: white;
+}
+
+.confirmation-subcontainer {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 550px;
+}
+
+.confirmation-title {
+  font-size: 2.5em;
+}
+
+.confirmation-message {
+  color: #d9d9d9;
 }
 
 @media screen and (min-width: 450px) {
