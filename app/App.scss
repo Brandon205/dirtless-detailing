@@ -432,18 +432,8 @@ header h1 {
   height: 90vh;
   width: 100%;
   z-index: -5;
-  -webkit-mask-image: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 0) 0%,
-    #1f1f1fbf 15%,
-    rgba(31, 31, 31, 1) 100%
-  );
-  mask-image: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 0) 0%,
-    #1f1f1fbf 15%,
-    rgba(31, 31, 31, 1) 100%
-  );
+  -webkit-mask-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #1f1f1fbf 15%, rgba(31, 31, 31, 1) 100%);
+  mask-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #1f1f1fbf 15%, rgba(31, 31, 31, 1) 100%);
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
@@ -457,18 +447,8 @@ header h1 {
   position: relative;
   height: 75vh;
   width: 100%;
-  -webkit-mask-image: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 0) 0%,
-    #1f1f1fbf 15%,
-    rgba(31, 31, 31, 1) 100%
-  );
-  mask-image: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 0) 0%,
-    #1f1f1fbf 15%,
-    rgba(31, 31, 31, 1) 100%
-  );
+  -webkit-mask-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #1f1f1fbf 15%, rgba(31, 31, 31, 1) 100%);
+  mask-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #1f1f1fbf 15%, rgba(31, 31, 31, 1) 100%);
   z-index: 0;
 }
 
@@ -2505,6 +2485,18 @@ footer {
   font-size: 1.5em;
 }
 
+.vehicle__select {
+  margin: 0 auto;
+  padding: 0.25rem;
+  border-radius: 4px;
+  background-color: $contact-bkg;
+  color: white;
+  border: none;
+  box-shadow: 0 5px 10px $contact-border-clr;
+  text-align: center;
+  font-size: 1.5em;
+}
+
 .pricing__container {
   display: flex;
   flex-direction: column;
@@ -2687,6 +2679,10 @@ footer {
   height: 11px;
   background: $main-clr;
   border-radius: 50%;
+}
+
+.pricing__active {
+  color: $main-clr;
 }
 
 .pricing__selected::before {

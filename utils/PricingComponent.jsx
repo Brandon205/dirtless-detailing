@@ -35,14 +35,27 @@ export default function PricingComponent({
     "3-Row SUV's, Minivans",
   ],
 }) {
-  const [currVal, setCurrVal] = useState(2);
+  const [currVal, setCurrVal] = useState(null);
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
       setAnimate(true);
     }, 1500);
+
+    const localValue = localStorage.getItem("dirtlessdetailing-size");
+    if (localValue) {
+      setCurrVal(localValue);
+    } else {
+      setCurrVal(2);
+    }
   }, []);
+
+  function updateValue(e) {
+    localStorage.setItem("dirtlessdetailing-size", e.target.value); // 0-5 will need to
+
+    setCurrVal(e.target.value);
+  }
 
   return (
     <div className="pricing__container">
@@ -50,40 +63,14 @@ export default function PricingComponent({
         className="pricing__img"
         style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/${imagesArr[currVal]}/cover)` }}
       ></div>
-      <div className="pricing__range-container">
-        <input
-          className="pricing__range"
-          type="range"
-          value={currVal + 1}
-          name="size"
-          id="size"
-          min="1"
-          max="6"
-          steps="1"
-          list="values"
-          onChange={(e) => setCurrVal(e.target.value - 1)}
-        />
-        <ul className="pricing__labels">
-          <li className={`${currVal > 0 ? "pricing__active" : ""} ${currVal === 0 ? "pricing__selected" : ""}`}>
-            {labels[0]}
-          </li>
-          <li className={`${currVal > 1 ? "pricing__active" : ""} ${currVal === 1 ? "pricing__selected" : ""}`}>
-            {labels[1]}
-          </li>
-          <li className={`${currVal > 2 ? "pricing__active" : ""} ${currVal === 2 ? "pricing__selected" : ""}`}>
-            {labels[2]}
-          </li>
-          <li className={`${currVal > 3 ? "pricing__active" : ""} ${currVal === 3 ? "pricing__selected" : ""}`}>
-            {labels[3]}
-          </li>
-          <li className={`${currVal > 4 ? "pricing__active" : ""} ${currVal === 4 ? "pricing__selected" : ""}`}>
-            {labels[4]}
-          </li>
-          <li className={`${currVal > 5 ? "pricing__active" : ""} ${currVal === 5 ? "pricing__selected" : ""}`}>
-            {labels[5]}
-          </li>
-        </ul>
-      </div>
+      <select onChange={(e) => updateValue(e)} className="vehicle__select" value={currVal}>
+        <option value="0">2-Door Cars</option>
+        <option value="1">Quarter Ton Trucks</option>
+        <option value="2">4-Door Cars</option>
+        <option value="3">Mid-Size SUV's</option>
+        <option value="4">4 Door Trucks</option>
+        <option value="5">3-Row SUV's & Minivans</option>
+      </select>
 
       <div className="pricing__pricecard">
         <p>Your Price Estimate:</p>
