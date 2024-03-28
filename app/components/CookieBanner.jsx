@@ -4,11 +4,13 @@ import { useState, useEffect } from "react";
 import posthog from "posthog-js";
 
 export default function CookieBanner() {
-  const [showBanner, setShowBanner] = useState(true);
+  const [showBanner, setShowBanner] = useState(null);
 
   useEffect(() => {
     if (posthog.has_opted_in_capturing()) {
       setShowBanner(false);
+    } else {
+      setShowBanner(true);
     }
   }, []);
 
