@@ -9,7 +9,7 @@ import {
   imgVariation4,
 } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
-import BeforeAfter from "../../components/BeforeAfter";
+import ImageSlider from "../../../utils/ImageSlider";
 
 const jsonld = {
   "@context": "https://schema.org/",
@@ -194,9 +194,11 @@ export default function Exterior() {
             <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
             <h3 className="pricing__heading">What a car wash should be.</h3>
             <p className="pricing__subtext">Your car, washed, without the unnecessary scratching and missed corners.</p>
-            <BeforeAfter
-              beforeUrl={"4aad5d50-ca20-4973-59d6-47e9ebe24100"}
-              afterUrl={"74d7cbdb-782e-4a5b-dde5-ac078af06700"}
+            <ImageSlider
+              beforeUrlId={"4aad5d50-ca20-4973-59d6-47e9ebe24100"}
+              afterUrlId={"74d7cbdb-782e-4a5b-dde5-ac078af06700"}
+              beforeOffset={0}
+              afterOffset={0}
             />
 
             <div className="preview-container">
