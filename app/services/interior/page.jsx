@@ -1,6 +1,6 @@
 "use client";
-import React, { useState } from "react";
 import PricingComponent from "../../../utils/PricingComponent";
+import ImageSlider from "../../../utils/ImageSlider";
 import HeaderComponent from "../../components/HeaderComponent";
 import {
   previewParentVariation,
@@ -32,8 +32,6 @@ const jsonld = {
 };
 
 export default function FullIntEx() {
-  const [slide, setSlide] = useState(50);
-
   return (
     <section className="service-content-container">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
@@ -185,34 +183,21 @@ export default function FullIntEx() {
             <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
             <h3 className="pricing__heading">Fresh, Clean, and Stunning Results.</h3>
             <p className="pricing__subtext">Once we are done you won't want to see your car dirty ever again!</p>
-            <div style={{ display: "grid", marginBottom: "10vh" }} className="place-center">
-              <div className="slider-container">
-                <div
-                  style={{
-                    backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/907d2e8b-5d24-40bf-387e-90be139c2d00/public')`,
-                  }}
-                  className="slider-img"
-                ></div>
-                <div
-                  style={{
-                    width: slide + "%",
-                    backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/70e54f6b-a9f8-48aa-a9af-893776082400/public')`,
-                  }}
-                  className="slider-img foreground"
-                ></div>
-                <input
-                  type="range"
-                  min="1"
-                  max="100"
-                  value={slide}
-                  onChange={(e) => setSlide(Number(e.target.value))}
-                  className="slider-bar"
-                  name="slider"
-                  id="slider"
-                />
-                <div style={{ left: slide - 4 + "%" }} className="slider-button"></div>
-              </div>
-            </div>
+            <ImageSlider
+              beforeUrlId="70e54f6b-a9f8-48aa-a9af-893776082400"
+              afterUrlId="907d2e8b-5d24-40bf-387e-90be139c2d00"
+              beforeOffset={0}
+              afterOffset={0}
+            />
+
+            <iframe
+              style={{ width: "80%", height: "700px" }}
+              src="https://www.youtube.com/embed/W5HOGIvRppI"
+              title="Red Genesis SUV Transformation | Revitalizing Brilliance with Professional Detailing"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
 
             <div className="preview-container">
               <motion.a

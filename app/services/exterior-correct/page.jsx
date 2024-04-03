@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import PricingComponent from "../../../utils/PricingComponent";
+import ImageSlider from "../../../utils/ImageSlider";
 import {
   previewParentVariation,
   imgVariation1,
@@ -124,7 +125,6 @@ const jsonld = {
 };
 
 export default function ExteriorCorrect() {
-  const [slide, setSlide] = useState(50);
   const [expanded, setExpanded] = useState(false);
   const [smallScreen, setSmallScreen] = useState(false);
 
@@ -289,7 +289,13 @@ export default function ExteriorCorrect() {
               Not just a complete exterior refresh, but now your vehicle has protection against the elements that
               Washington throws at us.
             </p>
-            <div style={{ display: "grid", marginBottom: "10vh" }} className="place-center">
+            <ImageSlider
+              beforeUrlId="d2eabed6-d867-43e8-f60e-d9d95a983600"
+              afterUrlId="2b933f30-bbff-4f91-8b88-1c83f75a4500"
+              beforeOffset={0}
+              afterOffset={0}
+            />
+            {/* <div style={{ display: "grid", marginBottom: "10vh" }} className="place-center">
               <div className="slider-container">
                 <div
                   style={{
@@ -316,7 +322,7 @@ export default function ExteriorCorrect() {
                 />
                 <div style={{ left: slide - 4 + "%" }} className="slider-button"></div>
               </div>
-            </div>
+            </div> */}
 
             <div className="preview-container">
               <motion.a

@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import PricingComponent from "../../../utils/PricingComponent";
 import HeaderComponent from "../../components/HeaderComponent";
+import ImageSlider from "../../../utils/ImageSlider";
 import {
   previewParentVariation,
   imgVariation1,
@@ -212,7 +213,13 @@ export default function ExteriorSeal() {
             <p className="pricing__subtext">
               With light scratches removed and a year of protection applied your car will shine like never before!
             </p>
-            <div style={{ display: "grid", marginBottom: "10vh" }} className="place-center">
+            <ImageSlider
+              beforeUrlId="4d98c1bc-645c-46fa-2232-d1f735bb2300"
+              afterUrlId="b814f739-3846-4796-3093-c34675a32c00"
+              beforeOffset={0}
+              afterOffset={0}
+            />
+            {/* <div style={{ display: "grid", marginBottom: "10vh" }} className="place-center">
               <div style={{ overflow: "hidden" }} className="slider-container">
                 <div
                   style={{
@@ -240,7 +247,7 @@ export default function ExteriorSeal() {
                 />
                 <div style={{ left: slide - 4 + "%" }} className="slider-button"></div>
               </div>
-            </div>
+            </div> */}
 
             <div className="preview-container">
               <motion.a

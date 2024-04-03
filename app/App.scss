@@ -2025,6 +2025,7 @@ footer {
 
 .slider-container {
   position: relative;
+  overflow: hidden;
   height: 60vh;
   max-height: 1440px;
   width: min(70vh / 1.77, 1440px / 1.77);
@@ -2071,8 +2072,8 @@ footer {
   height: 30px;
   border-radius: 50%;
   background-color: white;
-  left: calc(50% - 18px);
-  top: calc(50% - 18px);
+  left: calc(50%);
+  top: calc(50% - 15px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2516,6 +2517,7 @@ footer {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  box-shadow: 0 2px 15px $main-clr;
 }
 
 .pricing__range-container {
