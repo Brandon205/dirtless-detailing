@@ -82,11 +82,6 @@ export default function Contact() {
               Diamond, Milton, Edgewood, and Graham.
             </span>
           </p>
-          <p>
-            <span className="bold">Overnight Detailing:</span> For drop offs we have a completely safe lockable garage,
-            so if it's more convenient for you feel free to drop your car off the night before! We can usually also do
-            our details at night so you can drop your car off and have it done the next morning!{" "}
-          </p>
           <p className="subtext italic">
             <span className="special-package">*Note:</span> If the total of the mobile services you choose is less than
             $200, there is a $1/mile from our shop fee to cover travel costs.
