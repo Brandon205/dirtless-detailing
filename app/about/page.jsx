@@ -107,11 +107,6 @@ export default function About() {
         "We prefer card payments as it's easier for us to process, however, if that's not convenient for you we also accept cash and check.",
     },
     {
-      title: "Can I drop my car off overnight?",
-      description:
-        "Yes! We have a completely safe locked garage to store your vehicle, and we can usually even do the detail job overnight so that your car is ready by the morning!",
-    },
-    {
       title: "Do you detail boats?",
       description:
         "Yes, however, currently we are only doing boat interiors and washes and no polishing for now. Call or text us to get a quote, price is a flat fee per foot in length!",
