@@ -92,15 +92,6 @@ export default function PaintCorrectionGallery() {
             className="card"
             role="img"
             style={{
-              backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ef4953cd-466a-4752-9d87-12ddba64d700/public')`,
-            }}
-          ></div>
-        </Zoom>
-        <Zoom>
-          <div
-            className="card"
-            role="img"
-            style={{
               backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a205f097-f145-41b5-8af5-98a046dca700/public')`,
             }}
           ></div>
@@ -371,25 +362,7 @@ export default function PaintCorrectionGallery() {
             className="card"
             role="img"
             style={{
-              backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/38fe192b-4e93-4e21-d22c-21a8c8cdf900/public')`,
-            }}
-          ></div>
-        </Zoom>
-        <Zoom>
-          <div
-            className="card"
-            role="img"
-            style={{
               backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4b286353-ec88-4c47-225f-5890ed674000/public')`,
-            }}
-          ></div>
-        </Zoom>
-        <Zoom>
-          <div
-            className="card"
-            role="img"
-            style={{
-              backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4783c255-9fcb-452c-d83f-1b82b6c5e700/public')`,
             }}
           ></div>
         </Zoom>

@@ -424,15 +424,6 @@ export default function PaintCorrectionGallery() {
             className="card"
             role="img"
             style={{
-              backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/65eea438-142c-4422-24fe-16ec7eac3700/public')`,
-            }}
-          ></div>
-        </Zoom>
-        <Zoom>
-          <div
-            className="card"
-            role="img"
-            style={{
               backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c274c919-595c-4283-2d10-c5a47e569700/public')`,
             }}
           ></div>
@@ -658,15 +649,6 @@ export default function PaintCorrectionGallery() {
             className="card"
             role="img"
             style={{
-              backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/de70cff5-0f74-4839-d319-a9d805158c00/public')`,
-            }}
-          ></div>
-        </Zoom>
-        <Zoom>
-          <div
-            className="card"
-            role="img"
-            style={{
               backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/fbacbf21-f27a-4389-de9d-aa470df43000/public')`,
             }}
           ></div>
@@ -811,15 +793,6 @@ export default function PaintCorrectionGallery() {
             className="card"
             role="img"
             style={{
-              backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/fb257dd1-ee29-4721-2d59-ad017238cd00/public')`,
-            }}
-          ></div>
-        </Zoom>
-        <Zoom>
-          <div
-            className="card"
-            role="img"
-            style={{
               backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/907e80c4-04bf-4ce8-92ee-9b2ab22d4000/public')`,
             }}
           ></div>
@@ -911,15 +884,6 @@ export default function PaintCorrectionGallery() {
             role="img"
             style={{
               backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5e5a1366-292c-4c52-3983-98f2e0b2d600/public')`,
-            }}
-          ></div>
-        </Zoom>
-        <Zoom>
-          <div
-            className="card"
-            role="img"
-            style={{
-              backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/8f189b34-d8a0-41de-f607-42ffc20e8600/public')`,
             }}
           ></div>
         </Zoom>

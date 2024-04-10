@@ -214,13 +214,13 @@ export default function About() {
               <div
                 className="about-image"
                 style={{
-                  backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/499bcf81-1c55-4073-80c5-adb5a247de00/public')`,
+                  backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b5859464-3c0e-4fcf-8332-17155eb86d00/public')`,
                 }}
               >
                 <img
                   style={{ visibility: "hidden" }}
                   alt="Drivers side of Silver Dodge Ram"
-                  src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/499bcf81-1c55-4073-80c5-adb5a247de00/public"
+                  src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b5859464-3c0e-4fcf-8332-17155eb86d00/public"
                 />
               </div>
             </div>
@@ -243,7 +243,7 @@ export default function About() {
               <motion.div
                 className="about-image"
                 style={{
-                  backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/499bcf81-1c55-4073-80c5-adb5a247de00/public')`,
+                  backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b5859464-3c0e-4fcf-8332-17155eb86d00/public')`,
                   x: smallScreen ? "" : xMovement,
                   y: smallScreen ? "" : yMovement,
                 }}
@@ -251,7 +251,7 @@ export default function About() {
                 <img
                   style={{ visibility: "hidden" }}
                   alt="Drivers side of Silver Dodge Ram"
-                  src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/499bcf81-1c55-4073-80c5-adb5a247de00/public"
+                  src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b5859464-3c0e-4fcf-8332-17155eb86d00/public"
                 />
               </motion.div>
             </div>
