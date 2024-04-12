@@ -101,9 +101,9 @@ export default function Puyallup() {
           </p>
           <p>
             For those who want to protect their vehicle from the elements, we offer a 5-year ceramic coating that
-            provides long-lasting protection from Washington's weather. Our shop based services can help restore your
-            vehicle's paint to its original shine and luster, removing any unsightly swirls, scratches, or other
-            imperfections.
+            provides long-lasting protection from Washington's weather. Our more in depth exterior detailing services
+            can help restore your vehicle's paint to its original shine and luster, removing any unsightly swirls,
+            scratches, or other imperfections.
           </p>
           <p>
             We also offer a wide range of interior cleaning services and add-ons, including deep cleaning, stain
@@ -161,7 +161,7 @@ export default function Puyallup() {
             </p>
           </div>
 
-          <h3 className="text-large">Services offered at our shop in Bonney Lake:</h3>
+          <h3 className="text-large">Other Services that we offer.</h3>
           <div className="text-left">
             <a href="/services/exterior-seal" className="aside-link text-medium">
               Exterior Seal & Shine

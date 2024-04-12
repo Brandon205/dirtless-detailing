@@ -151,7 +151,7 @@ export default function Milton() {
             </p>
           </div>
 
-          <h3 className="text-large">Services offered at our shop in Bonney Lake:</h3>
+          <h3 className="text-large">Other Services that we offer.</h3>
           <div className="text-left">
             <a href="/services/exterior-seal" className="aside-link text-medium">
               Exterior Seal & Shine

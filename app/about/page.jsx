@@ -104,7 +104,7 @@ export default function About() {
     {
       title: "What forms of payment do you take?",
       description:
-        "We prefer card payments as it's easier for us to process, however, if that's not convenient for you we also accept cash and check.",
+        "We prefer Card/Check payments and can even text invoices to you so that you can pay via card from wherever you are!",
     },
     {
       title: "Do you detail boats?",
@@ -378,7 +378,7 @@ export default function About() {
             coatings, paint corrections, and engine bay cleanings, we strive to keep your vehicle looking and performing
             its best. Trust us to provide the care and attention to detail that your car deserves.
           </p>
-          <p>
+          {/* <p>
             Our main shop location is right in{" "}
             <a
               href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854"
@@ -389,7 +389,7 @@ export default function About() {
               Bonney Lake
             </a>{" "}
             off State Route 410.
-          </p>
+          </p> */}
         </div>
 
         <h3 style={{ fontSize: "2.5em" }}>FAQ</h3>

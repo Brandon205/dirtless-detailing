@@ -41,12 +41,12 @@ export default function Contact() {
               target="_blank"
               rel="noopener"
             >
-              9305 205th Ave E, Bonney Lake, Washington 98391
+              Our HQ Location: 9305 205th Ave E, Bonney Lake, Washington 98391
             </a>
           </div>
           <div className="contact-icon-container">
             <img src="../assets/icons/phoneMessage.png" alt="phone message" className="icon-48" />
-            <a className="contact-link location-link" href="tel:2532529758" target="_blank" rel="noopener">
+            <a className="contact-link location-link underline" href="tel:2532529758" target="_blank" rel="noopener">
               (253) 252-9758
             </a>
             <p> Text or Call</p>
@@ -54,7 +54,7 @@ export default function Contact() {
           <div className="contact-icon-container">
             <img src="../assets/icons/post.png" alt="post" className="icon-48" />
             <a
-              className="contact-link location-link"
+              className="contact-link location-link underline"
               href="mailto:brenden@dirtlessdetailing.com?subject = Schedule a Detail!"
               target="_blank"
               rel="noopener"
@@ -68,7 +68,7 @@ export default function Contact() {
             <p style={{ textAlign: "left" }}>We offer gift certificates for all of our services!</p>
           </div>
         </div>
-        <div className="contact-information">
+        {/* <div className="contact-information">
           <h3 style={{ fontSize: "1.75em" }}>Our Contact Information</h3>
           <hr className="contact-border" />
           <h4 style={{ marginBottom: 0, fontSize: "1.5em" }}>Need us to come to you?</h4>
@@ -77,20 +77,17 @@ export default function Contact() {
             Booking is In Shop only):
           </p>
           <p className="hours-p">
+            <span className="m-0">We can come to you in the following cities: </span>
             <span style={{ fontWeight: "bold", color: "#9f9f9f" }}>
               Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Federal Way, Orting, South Prairie, Tehaleh, Black
               Diamond, Milton, Edgewood, and Graham.
             </span>
           </p>
-          <p className="subtext italic">
-            <span className="special-package">*Note:</span> If the total of the mobile services you choose is less than
-            $200, there is a $1/mile from our shop fee to cover travel costs.
-          </p>
-        </div>
+        </div> */}
       </div>
 
       <div className="urable-container">
-        <div>
+        {/* <div>
           <strong style={{ fontSize: "2rem" }}>
             Try our <span style={{ color: "#fab638" }}>INSTANT</span> In Shop Booking Feature through{" "}
             <span style={{ color: "#2fd2a8" }}>Ur</span>able!
@@ -98,18 +95,16 @@ export default function Contact() {
           <p style={{ fontSize: "1.3rem" }} className="services-p">
             Instant Booking • Price Estimate • Pick any Date and Time
           </p>
-        </div>
-        <fieldset className="urable-form-container">
+        </div> */}
+        {/* <fieldset className="urable-form-container">
           <iframe
             style={{ width: "100%", height: "700px" }}
             src="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd"
             frameborder="0"
           ></iframe>
-        </fieldset>
+        </fieldset> */}
         <div>
-          <strong style={{ fontSize: "2rem" }}>
-            If you need us to come out to you, or you just have questions feel free to reach out to us here!
-          </strong>
+          <strong style={{ fontSize: "2rem" }}>Text, Call, or reach out to us using this form!</strong>
           <p style={{ fontSize: "1.3rem" }} className="services-p">
             Mobile Services • Pricing Quotes • General Questions
           </p>

@@ -164,12 +164,12 @@ export default function ExteriorCorrect() {
                   to remove any contaminants. From there, we refine your paint by performing an in-depth polishing step
                   removing as many imperfections we safely can.
                 </p>
-                <p>
+                {/* <p>
                   <span className="special-package">Note:</span> This is one of the services that we require you to drop
                   off your car at our shop for. We will most likely need to keep you car overnight as the ceramic
                   coating has a cure time before it's ready to be exposed to the elements. Also, our shop has proper
                   lighting to ensure that we don't miss any spots on the paint.
-                </p>
+                </p> */}
                 <p>
                   Last but not least is the ceramic coating! To provide to best protection and coverage on the paint
                   coating, we coat your whole vehicle with the hardest, most resilient ceramic coatings on the market.
