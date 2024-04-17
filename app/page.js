@@ -129,7 +129,7 @@ export default function Home() {
         images={[
           "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover",
           "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/19851827-a8f8-4045-11cf-a6bdef3c4100/cover",
-          // "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a5ae04c4-b5b2-4f20-afa8-d09d029d0700/cover",
+          // "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a5ae04c4-b5b2-4f20-afa8-d09d029d0700/cover", TODO
           "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/16add6ea-28d3-43ab-dc07-584e09e47500/cover",
           "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3a1a1e74-854b-4aa9-ae8e-06816ec80200/cover",
           "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ae30d18b-03c1-4632-e50d-3e047b633400/cover",
@@ -735,6 +735,33 @@ export default function Home() {
               ></iframe> */}
           </div>
         </section>
+
+        <br className="extra-space" />
+        <hr className="pricing__hr" />
+
+        <h4 className="text-4xl font-bold py-6">24/7 ONLINE PRICING & BOOKING</h4>
+        <motion.a
+          href="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd"
+          className="top-quote-btn max-w-max mx-auto"
+          rel="noopener"
+          target="_blank"
+          variants={topBtnVariant}
+          whileHover="hover"
+          transition={{ duration: 0.25 }}
+        >
+          BOOK ONLINE!
+        </motion.a>
+
+        <p className="pt-8 text-2xl">OR submit this form to get in contact with us!</p>
+
+        <fieldset className="urable-form-container">
+          <iframe
+            style={{ height: "800px" }}
+            className="w-full lg:max-w-50%"
+            src="https://app.urable.com/form/pMe0iWXWCBfTL47sDvjd/v5CoHzxM7y2da6KIOp2T"
+            frameborder="0"
+          ></iframe>
+        </fieldset>
       </div>
     </div>
   );
