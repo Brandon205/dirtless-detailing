@@ -1483,37 +1483,37 @@ option {
   gap: 0.5rem;
 }
 
-.mobileservices-container {
-  width: 90%;
-  margin: 0 auto;
-  padding: 1rem;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  background-color: $contact-bkg;
-  color: white;
-}
+// .mobileservices-container {
+//   width: 90%;
+//   margin: 0 auto;
+//   padding: 1rem;
+//   height: auto;
+//   display: flex;
+//   flex-direction: column;
+//   background-color: $contact-bkg;
+//   color: white;
+// }
 
-.mobileservices-details {
-  width: 100%;
-  text-align: left;
-}
+// .mobileservices-details {
+//   width: 100%;
+//   text-align: left;
+// }
 
-.mobileservices-details h4 {
-  font-size: 2.5em;
-  margin: 0;
-  font-weight: bold;
-}
+// .mobileservices-details h4 {
+//   font-size: 2.5em;
+//   margin: 0;
+//   font-weight: bold;
+// }
 
-.mobileservices-details ul {
-  font-size: 20px;
-  line-height: 140%;
-}
+// .mobileservices-details ul {
+//   font-size: 20px;
+//   line-height: 140%;
+// }
 
 .map {
   width: 250px;
   height: 300px;
-  margin: 0 auto;
+  // margin: 0 auto;
 }
 
 .cities-ul {
@@ -3034,7 +3034,6 @@ footer {
 .service-bkg-lighter {
   background: $contact-bkg-lighter;
   color: white;
-  padding-top: 2rem;
 }
 
 .location-quote-btn {
@@ -3616,16 +3615,16 @@ footer {
     margin-bottom: 2rem;
   }
 
-  .mobileservices-container {
-    flex-direction: row;
-    padding: 3rem 1rem;
-    justify-content: space-around;
-    gap: 4rem;
-  }
+  // .mobileservices-container {
+  //   flex-direction: row;
+  //   padding: 3rem 1rem;
+  //   justify-content: space-around;
+  //   gap: 4rem;
+  // }
 
-  .mobileservices-details {
-    width: 50%;
-  }
+  // .mobileservices-details {
+  //   width: 50%;
+  // }
 
   .locations {
     width: 50%;
@@ -3661,7 +3660,7 @@ footer {
 
   .map {
     width: 500px;
-    height: 400px;
+    height: 500px;
   }
 
   .package-container,

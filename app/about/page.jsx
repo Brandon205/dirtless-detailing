@@ -92,34 +92,14 @@ export default function About() {
 
   const faqItems = [
     {
-      title: "What do you need from me when you get here?",
+      title: "Do you detail boats and RV's?",
       description:
-        "All we will need is an electrical outlet, a water spigot, and preferably all/most personal items out of the car.",
-    },
-    {
-      title: "How long will the detail take?",
-      description:
-        "Every job will take a different amount of time, but once we know the condition of the car and the services requested we can give a good estimate as to how long it will take.",
-    },
-    {
-      title: "What forms of payment do you take?",
-      description:
-        "We prefer Card/Check payments and can even text invoices to you so that you can pay via card from wherever you are!",
-    },
-    {
-      title: "Do you detail boats?",
-      description:
-        "Yes, however, currently we are only doing boat interiors and washes and no polishing for now. Call or text us to get a quote, price is a flat fee per foot in length!",
+        "Yes, however, currently we are only doing boat interiors and washes and no polishing for now. Only Washes on RV's if we come to you, we can polish RV's if you can bring it to our shop! Call or text us to get a quote, price is typically a flat fee per foot in length!",
     },
     {
       title: "Can you come to my apartment or workplace?",
       description:
         "It will depend on the amount of space and water/electrical access if we can or not. Typically apartment complexes can be strict with this type of thing and it's best if you're able to bring your vehicle to us.",
-    },
-    {
-      title: "Do you offer gift cards or gift certificates?",
-      description:
-        'Yes we do! Any of our services can be bought as a gift certificate. On the Contact page choose the "For Someone Else" option.',
     },
     {
       title: "Are you licensed and insured?",

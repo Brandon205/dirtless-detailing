@@ -1,9 +1,13 @@
 "use client";
+import { useState, useEffect } from "react";
 // import Benefits from "./Benefits";
 import { HeroSlider } from "./components/hero-slider";
 import { topBtnVariant } from "../utils/animationVariations";
 import { motion } from "framer-motion";
 import { Titillium_Web } from "next/font/google";
+import { InfiniteMovingCards } from "./components/InfiniteMovingCards";
+import FaqItem from "./components/FaqItem";
+import Image from "next/image";
 
 const titillium = Titillium_Web({ weight: ["400", "600"], subsets: ["latin"] });
 
@@ -75,6 +79,49 @@ const jsonld = {
 }
 
 export default function Home() {
+  const [expanded, setExpanded] = useState(false);
+  const [smallScreen, setSmallScreen] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth < 979) {
+      setSmallScreen(true);
+    } else {
+      setSmallScreen(false);
+    }
+  }, []);
+
+  const faqItems = [
+    {
+      title: "What do you need from me when you get here?",
+      description:
+        "All we will need is an electrical outlet, a water spigot, and preferably all/most personal items out of the car.",
+    },
+    {
+      title: "How long will the detail take?",
+      description:
+        "Every job will take a different amount of time, but once we know the condition of the car and the services requested we can give a good estimate as to how long it will take.",
+    },
+    {
+      title: "What forms of payment do you take?",
+      description:
+        "We prefer Card/Check payments and can even text invoices to you so that you can pay via card from wherever you are!",
+    },
+    {
+      title: "Do you offer gift cards or gift certificates?",
+      description:
+        'Yes we do! Any of our services can be bought as a gift certificate. On the Contact page choose the "For Someone Else" option.',
+    },
+    {
+      title: "Are you licensed and insured?",
+      description: "Yes! We are 100% licensed and insured!",
+    },
+    {
+      title: "How does booking with Dirt-Less Detailing work?",
+      description:
+        "Once you have booked an appointment with us you're set (if you booked online through Urable you will see your appointment date and time got accepted). From then you'll hear from us again the day before your detail to ensure that the time you picked still works and at this time we'll give you an estimate when we'll get there! ",
+    },
+  ];
+
   return (
     <div className="App">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
@@ -82,6 +129,12 @@ export default function Home() {
         images={[
           "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover",
           "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/19851827-a8f8-4045-11cf-a6bdef3c4100/cover",
+          // "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a5ae04c4-b5b2-4f20-afa8-d09d029d0700/cover",
+          "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/16add6ea-28d3-43ab-dc07-584e09e47500/cover",
+          "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3a1a1e74-854b-4aa9-ae8e-06816ec80200/cover",
+          "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ae30d18b-03c1-4632-e50d-3e047b633400/cover",
+          "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c259c052-b75c-4e1f-f467-4010d7182d00/cover",
+          "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/15bf1809-0cee-4975-95ed-808adcf12100/cover",
         ]}
       >
         <header className="flex flex-col items-center min-h-[90vh] pt-28 z-50 xl:items-start xl:gap-3 xl:pt-14 text-sm xl:text-lg xl:justify-center">
@@ -506,7 +559,50 @@ export default function Home() {
               page.
             </p>
           </div>
-          <div className="reviews-container">
+          <InfiniteMovingCards
+            items={[
+              {
+                quote: (
+                  <p className="review-text">
+                    "Had an issue with the interior of a vehicle that had been in a garage for too long. Dirt-Less
+                    handled it professionally and quickly.{" "}
+                    <span className="highlight">We will definitely keep going back for our needs.</span>"
+                  </p>
+                ),
+                name: "Jonathon H.",
+                title: "Full Interior Detail",
+              },
+              {
+                quote: (
+                  <p className="review-text">
+                    "Brenden does an amazing job. My car looks amazing.{" "}
+                    <span className="highlight">He is super reasonable in his pricing and was very efficient.</span>{" "}
+                    Will definitely continue to use his service for all our vehicles."
+                  </p>
+                ),
+                name: "Kristi H.",
+                title: "Full Interior Detail",
+              },
+              {
+                quote: (
+                  <p className="review-text">
+                    "Brought in my 12 Escalade and he worked his magic on both inside and outside.{" "}
+                    <span className="highlight">
+                      Brenden is very good at what he does, the vehicle looks amazing. Better than it was when I bought
+                      it.
+                    </span>{" "}
+                    Thank you so much for getting me into your schedule. I am Extremely pleased with the outcome of your
+                    services."
+                  </p>
+                ),
+                name: "Rob B.",
+                title: "Full Interior Detail",
+              },
+            ]}
+            speed="normal"
+            className="w-screen"
+          />
+          {/* <div className="reviews-container">
             <div className="review-card">
               <div className="review-top">
                 <p className="review-text">
@@ -593,44 +689,50 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <br className="extra-space" />
         <hr className="pricing__hr" />
 
-        <div className="general-container new-heading-container">
-          <h3 style={{ margin: 0, width: "auto" }} className="new-heading new-heading-center">
-            Where we are based and Mobile Services
+        <div className="general-container new-heading-container font-bold">
+          <h3 style={{ margin: 0, width: "auto", padding: 0 }} className="new-heading new-heading-center">
+            AUTO DETAILING FAQ's
           </h3>
+          <p className="max-w-[900px] mx-auto text-center my-0 font-normal pb-8">
+            Answers to some of the most common questions that we get when people are booking with us, please reach out
+            if you have other questions!
+          </p>
         </div>
-        <section className="mobileservices-container">
-          <div className="mobileservices-details">
-            <h4>Mobile Service Information:</h4>
-            <ul>
-              <li>
-                We can come to you to perform our details with most of our services as long as the weather cooperates.
-              </li>
-              <li>For our mobile services we currently travel out to the following cities:</li>
-              <li className="no-list">
-                <ul>
-                  <li>
-                    Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Lake Tapps, Federal Way, Orting, South Prairie
-                    Tehaleh, Black Diamond, Milton, Edgewood, and Graham
-                  </li>
-                </ul>
-              </li>
-            </ul>
+        <section className="flex justify-center gap-8 w-2/3">
+          <div className="flex flex-col gap-6 w-[500px] calc text-left">
+            {faqItems.map((item, i) => (
+              <FaqItem
+                key={i}
+                i={i}
+                expanded={expanded}
+                setExpanded={setExpanded}
+                title={item.title}
+                description={item.description}
+                isMobile={smallScreen}
+              />
+            ))}
           </div>
-          <div className="map">
-            <iframe
-              title="Map of Dirt-Less Detailing location"
-              width={"300"}
-              height={"350"}
-              style={{ border: 0 }}
-              loading="lazy"
-              src={`https://www.google.com/maps/embed/v1/place?zoom=15&q=place_id:ChIJxxfUWqz7kFQRotRs8MwWDRE&key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS}`}
-            ></iframe>
+          <div className="map relative">
+            <Image
+              src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/816ccafc-084b-4d7d-8735-8da8117a4700/public"
+              className="h-auto object-cover rounded-lg"
+              fill
+              alt="Image of beautiful ceramic coated car on a foggy morning"
+            />
+            {/* <iframe
+                title="Map of Dirt-Less Detailing location"
+                width={"300"}
+                height={"350"}
+                style={{ border: 0 }}
+                loading="lazy"
+                src={`https://www.google.com/maps/embed/v1/place?zoom=15&q=place_id:ChIJxxfUWqz7kFQRotRs8MwWDRE&key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS}`}
+              ></iframe> */}
           </div>
         </section>
       </div>
