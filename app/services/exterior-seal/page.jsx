@@ -92,7 +92,7 @@ export default function ExteriorSeal() {
               <PricingComponent prices={[500, 500, 500, 625, 750, 750]} addons="exterior" />
             </div>
 
-            <h2 className="cleaning-process-title text-xl">Our Exterior Seal and Shine Process</h2>
+            <h2 className="cleaning-process-title pb-8">Our Exterior Seal and Shine Process</h2>
             <ol className="list">
               <li className="item">
                 <div className="step-number-container">

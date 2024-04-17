@@ -326,22 +326,6 @@ li span {
 }
 
 /** Home Page Header CSS **/
-header h1 {
-  margin: 0;
-}
-
-.home-header {
-  position: relative;
-}
-
-.landing-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 0.9rem;
-  padding-top: 105px;
-  min-height: 90vh;
-}
 
 .header-icons-container {
   display: flex;
@@ -399,14 +383,6 @@ header h1 {
   font-size: 0.8em;
   grid-area: myspan;
   text-align: left;
-}
-
-.main-title {
-  font-size: 3em;
-  font-weight: bold;
-  line-height: 1.2;
-  color: white;
-  margin: 0;
 }
 
 .main-desc {
@@ -954,7 +930,8 @@ option {
   border-radius: 24px;
   background-color: #2b2b2b;
   overflow: hidden;
-  @include card-border($main-clr);
+  border: 1px solid $main-clr;
+  @include card-border(black);
 }
 
 .popular-img {
@@ -964,6 +941,7 @@ option {
   background-repeat: no-repeat;
   padding-bottom: 50%;
   border-radius: 24px 24px 0 0;
+  border-bottom: 1px solid $main-clr;
 }
 
 .popular-link-container {
@@ -990,6 +968,8 @@ option {
 
 .popular-readmore {
   @include popular-btn;
+  width: auto;
+  height: min-content;
   background-color: $main-clr;
   color: black;
   margin-bottom: 1rem;
@@ -1016,7 +996,7 @@ option {
   justify-content: center;
   padding: 0 0.75rem;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 
   a {
     margin: 0 auto;
@@ -1115,6 +1095,8 @@ option {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  padding: 0.5rem 0 0 0.5rem;
   padding-left: 0.5rem;
   font-size: 1.2rem;
   font-weight: 400;
@@ -1125,7 +1107,7 @@ option {
   li {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
 
     p {
       text-align: left;
@@ -2412,7 +2394,7 @@ footer {
   justify-content: center;
   color: white;
   font-family: "Oswald", sans-serif;
-  font-size: 2em;
+  font-size: 1.75em;
   font-weight: bold;
   margin: 0;
   overflow-wrap: break-word;
@@ -3116,10 +3098,6 @@ footer {
   font-size: 1.7em;
 }
 
-.text-xl {
-  font-size: 2em;
-}
-
 .italic {
   font-style: italic;
 }
@@ -3318,10 +3296,6 @@ footer {
     color: white;
   }
 
-  .main-title {
-    text-align: left;
-  }
-
   .main-desc {
     font-size: 24px;
     max-width: 49%;
@@ -3385,16 +3359,6 @@ footer {
   .quote-li {
     position: relative;
     right: auto;
-  }
-
-  .landing-div {
-    justify-content: center;
-    align-items: flex-start;
-    gap: 2rem;
-    height: 90vh;
-    padding-top: 55px;
-    font-size: 1.2rem;
-    margin-left: 7vw;
   }
 
   .reason {
@@ -3616,7 +3580,6 @@ footer {
 
   .new-heading-container {
     padding-left: 0;
-    padding-top: 10vh;
     text-align: left;
   }
 
@@ -3796,11 +3759,6 @@ footer {
 
   /** OTHER CSS **/
 
-  .text-center {
-    text-align: center;
-    padding: 1rem;
-  }
-
   .main-content-container {
     display: flex;
     flex-direction: column;
@@ -3902,10 +3860,6 @@ footer {
 
   .header-icons-container {
     padding: 1rem;
-  }
-
-  .main-title {
-    font-size: 3.75em;
   }
 
   .textarea {
@@ -4018,16 +3972,12 @@ footer {
     font-size: 2em;
   }
 
-  .text-xl {
-    font-size: 2.5em;
-  }
-
   .review-screen {
     display: flex;
   }
 }
 
 .accent-orange {
-  color: $accent-orange;
-  border-color: $accent-orange;
+  color: $main-clr;
+  border-color: $main-clr;
 }

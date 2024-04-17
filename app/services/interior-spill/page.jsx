@@ -92,7 +92,7 @@ export default function InteriorSpill() {
               <PricingComponent prices={[450, 450, 450, 500, 575, 575]} addons="interior" />
             </div>
 
-            <h2 className="cleaning-process-title text-xl">Our Interior + Spill Guard Process</h2>
+            <h2 className="cleaning-process-title pb-8">Our Interior + Spill Guard Process</h2>
             <ol className="list">
               <li className="item">
                 <div className="step-number-container">

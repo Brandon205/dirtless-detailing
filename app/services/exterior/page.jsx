@@ -89,7 +89,7 @@ export default function Exterior() {
               <PricingComponent prices={[100, 100, 100, 125, 150, 150]} addons="exterior" />
             </div>
 
-            <h2 className="cleaning-process-title text-xl">Our Exterior Decon Wash Process</h2>
+            <h2 className="cleaning-process-title pb-8">Our Exterior Decon Wash Process</h2>
             <ol className="list">
               <li className="item">
                 <div className="step-number-container">

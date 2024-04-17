@@ -88,7 +88,7 @@ export default function FullIntEx() {
               <PricingComponent prices={[300, 300, 300, 335, 375, 375]} addons="interior" />
             </div>
 
-            <h2 className="cleaning-process-title text-xl">Our Interior Cleaning Process</h2>
+            <h2 className="cleaning-process-title pb-8">Our Interior Cleaning Process</h2>
             <ol className="list">
               <li className="item">
                 <div className="step-number-container">

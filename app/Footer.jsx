@@ -1,5 +1,39 @@
 import Link from "next/link";
 
+const temp = {
+  /* <div style={{ gap: 32 }} className="screen-flex">
+              <a href="https://iglcoatingsusa.com/" target="_blank" rel="noopener">
+                <div
+                  className="header-cert"
+                  style={{
+                    backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/833088d3-ca7b-41b9-561f-21f8517f3300/public')`,
+                    width: "110px",
+                    height: "105px",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                ></div>
+              </a>
+              <a
+                href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick"
+                target="_blank"
+                rel="noopener"
+                aria-label="Dirt-Less Detailing on Better Business Bureau"
+              >
+                <div
+                  className="header-cert"
+                  style={{
+                    backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/1f42d129-8657-4246-7297-ab33dc24c000/public')`,
+                    width: "175px",
+                    height: "100px",
+                    backgroundPosition: "center",
+                    backgroundSize: "cover",
+                  }}
+                ></div>
+              </a>
+            </div> */
+};
+
 export default function Footer() {
   return (
     <footer>

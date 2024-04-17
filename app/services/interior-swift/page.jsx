@@ -90,7 +90,7 @@ export default function FullIntEx() {
               <PricingComponent prices={[150, 150, 150, 175, 175, 200]} addons="interior" />
             </div>
 
-            <h2 className="cleaning-process-title text-xl">Our Swift Interior Process</h2>
+            <h2 className="cleaning-process-title pb-8">Our Swift Interior Process</h2>
             <ol className="list">
               <li className="item">
                 <div className="step-number-container">
