@@ -34,7 +34,7 @@ const jsonld = {
       name: "Can you come to my apartment or workplace?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "It will depend on the amount of space and access if we can or not. Typically apartment complexes can be strict with this type of thing and it's best if you're able to bring your vehicle to us.",
+        text: "It will depend on the amount of space and access if we can or not. Typically apartment complexes and some workplaces can be strict with this type of thing and we may not be able to come to you.",
       },
     },
     {
@@ -91,15 +91,15 @@ export default function About() {
   const yMovement = useTransform(scrollY.scrollYProgress, [0, 0.32], [0, 30]);
 
   const faqItems = [
-    {
-      title: "Do you detail boats and RV's?",
-      description:
-        "Yes, however, currently we are only doing boat interiors and washes and no polishing for now. Only Washes on RV's if we come to you, we can polish RV's if you can bring it to our shop! Call or text us to get a quote, price is typically a flat fee per foot in length!",
-    },
+    // {
+    //   title: "Do you detail boats and RV's?",
+    //   description:
+    //     "Yes, however, currently we are only doing boat interiors and washes and no polishing for now. Only Washes on RV's if we come to you, we can polish RV's if you can bring it to our shop! Call or text us to get a quote, price is typically a flat fee per foot in length!",
+    // }, TODO
     {
       title: "Can you come to my apartment or workplace?",
       description:
-        "It will depend on the amount of space and water/electrical access if we can or not. Typically apartment complexes can be strict with this type of thing and it's best if you're able to bring your vehicle to us.",
+        "It will depend on the amount of space and water/electrical access if we can or not. Typically apartment complexes can be strict with this type of thing and we may not be able to come to you.",
     },
     {
       title: "Are you licensed and insured?",

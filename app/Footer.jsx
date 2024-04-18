@@ -88,13 +88,13 @@ export default function Footer() {
       </div>
       <div className="footer-content-card footer-contact-card" id="contact">
         <h3>CONTACT</h3>
-        <a href="tel:2532529758" className="contact-link footer-contact-link" rel="noopener">
+        <a href="tel:2532529758" className="contact-link footer-contact-link underline" rel="noopener">
           <img src="../assets/icons/phoneMessageColor.png" alt="Phone call / message" className="icon-24" /> (253)
           252-9758
         </a>
         <a
           href="mailto:brenden@dirtlessdetailing.com?subject = Schedule a Dirt-Less Detail"
-          className="contact-link footer-contact-link"
+          className="contact-link footer-contact-link underline"
           target="_blank"
           rel="noopener"
         >
@@ -102,7 +102,7 @@ export default function Footer() {
         </a>
         <a
           href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854"
-          className="contact-link footer-contact-link"
+          className="contact-link footer-contact-link underline"
           target="_blank"
           rel="noopener"
         >

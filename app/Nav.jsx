@@ -260,8 +260,8 @@ export default function Nav() {
             </li>
 
             <li className="menu-li menu-li-screen">
-              <Link href="/about" className="menu-link" onClick={() => setNav("none")}>
-                About / FAQ
+              <Link href="/about" className="menu-link pb-10 lg:p-0" onClick={() => setNav("none")}>
+                About Us
               </Link>
             </li>
 

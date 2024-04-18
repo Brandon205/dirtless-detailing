@@ -70,7 +70,7 @@ export default function Contact() {
             <p style={{ textAlign: "left" }}>We offer gift certificates for all of our services!</p>
           </div>
         </div>
-        {/* <div className="contact-information">
+        {/* <div className="contact-information"> TODO?
           <h3 style={{ fontSize: "1.75em" }}>Our Contact Information</h3>
           <hr className="contact-border" />
           <h4 style={{ marginBottom: 0, fontSize: "1.5em" }}>Need us to come to you?</h4>
@@ -105,7 +105,7 @@ export default function Contact() {
             frameborder="0"
           ></iframe>
         </fieldset> */}
-        <h4 className="text-4xl font-bold pb-6 pt-20 text-center">24/7 ONLINE PRICING & BOOKING</h4>
+        {/* <h4 className="text-4xl font-bold pb-6 pt-20 text-center">24/7 ONLINE PRICING & BOOKING</h4> TODO
         <motion.a
           href="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd"
           className="top-quote-btn max-w-max mx-auto"
@@ -116,16 +116,16 @@ export default function Contact() {
           transition={{ duration: 0.25 }}
         >
           BOOK ONLINE!
-        </motion.a>
+        </motion.a> */}
         <div className="text-center">
-          <strong style={{ fontSize: "2rem" }}>Or feel free to Text, Call, or reach out to us using this form!</strong>
+          <strong style={{ fontSize: "2rem" }}>Feel free to Text, Call, or reach out using this form!</strong>
           <p style={{ fontSize: "1.3rem" }} className="services-p">
             Mobile Services • Pricing Quotes • General Questions
           </p>
         </div>
         <fieldset className="urable-form-container">
           <iframe
-            style={{ width: "100%", height: "800px" }}
+            className="w-4/5 mx-auto lg:max-w-50% h-[600px] pb-10"
             src="https://app.urable.com/form/pMe0iWXWCBfTL47sDvjd/v5CoHzxM7y2da6KIOp2T"
             frameborder="0"
           ></iframe>

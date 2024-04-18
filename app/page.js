@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-// import Benefits from "./Benefits";
+import Benefits from "./Benefits";
 import { HeroSlider } from "./components/hero-slider";
 import { topBtnVariant } from "../utils/animationVariations";
 import { motion } from "framer-motion";
@@ -40,43 +40,6 @@ const jsonld = {
   },
   sameAs: ["https://www.instagram.com/dirt_less_detailing", "https://www.youtube.com/channel/UCsoqP5s4hwkQd_Sd-TVv-jg"],
 };
-
-{
-  /* <header className="home-header z-10">
-          <div className="landing-div">
-            <h1 className={`${titillium.className} main-title`}>
-              Bonney Lake & Pierce County's
-              <br />
-              Auto Detailing Specialists
-            </h1>
-            <p className="main-desc">
-              Anything from a simple interior detail, to the most detail oriented paint correction ceramic coating jobs,
-              you can trust Dirt-Less Detailing to get the job done right.
-            </p>
-
-            <div className="header-link-container">
-              <motion.a
-                href="/contact"
-                className="top-quote-btn"
-                variants={topBtnVariant}
-                whileHover="hover"
-                transition={{ duration: 0.25 }}
-              >
-                <img src="../assets/icons/clipboard.png" alt="clipboard" className="btn-icon" /> Book Now!
-              </motion.a>
-              <motion.a
-                href="tel:2532529758"
-                className="top-quote-btn btn-secondary"
-                variants={topBtnVariant}
-                whileHover="hover"
-                transition={{ duration: 0.25 }}
-              >
-                <img src="../assets/icons/phoneMessage.png" alt="call or message" className="btn-icon" /> (253) 252-9758
-              </motion.a>
-            </div>
-          </div>
-        </header> */
-}
 
 export default function Home() {
   const [expanded, setExpanded] = useState(false);
@@ -138,7 +101,9 @@ export default function Home() {
         ]}
       >
         <header className="flex flex-col items-center min-h-[90vh] pt-28 z-50 xl:items-start xl:gap-3 xl:pt-14 text-sm xl:text-lg xl:justify-center">
-          <h1 className={`${titillium.className} text-white text-8xl text-left font-bold m-0`}>
+          <h1
+            className={`${titillium.className} text-white text-5xl xl:text-8xl text-center xl:text-left font-bold m-0`}
+          >
             Bonney Lake & Pierce County's
             <br />
             Auto Detailing Specialists
@@ -147,12 +112,12 @@ export default function Home() {
               <span className="special-deal-colored">VALENTINES DAY SPECIAL</span>: Book through Urable below and use code
               <span className="special-deal-colored bold"> VALENTINE10</span> to save 10% on any In Shop Detail!
             </p> */}
-          <p className="text-white max-w-screen-lg text-left m-0 text-lg">
+          <p className="text-white max-w-screen-lg text-left m-0 text-lg hidden xl:block">
             Anything from a simple interior detail, to the most detail oriented paint correction ceramic coating jobs,
             you can trust Dirt-Less Detailing to get the job done right!
           </p>
 
-          <div className="flex gap-10 pt-8">
+          <div className="flex gap-10 pt-8 flex-col lg:flex-row">
             <motion.a
               href="/contact"
               className="top-quote-btn"
@@ -176,7 +141,7 @@ export default function Home() {
       </HeroSlider>
 
       <div className="service-bkg pt-0">
-        {/* <Benefits /> */}
+        <Benefits />
 
         <div className="general-container new-heading-container pt-5">
           <strong className="above-heading"> Interior Services </strong>
@@ -602,94 +567,6 @@ export default function Home() {
             speed="normal"
             className="w-screen"
           />
-          {/* <div className="reviews-container">
-            <div className="review-card">
-              <div className="review-top">
-                <p className="review-text">
-                  "Had an issue with the interior of a vehicle that had been in a garage for too long. Dirt-Less handled
-                  it professionally and quickly.{" "}
-                  <span className="highlight">We will definitely keep going back for our needs.</span>"
-                </p>
-              </div>
-              <div className="review-bottom">
-                <div style={{ textAlign: "left" }}>
-                  <strong className="name">Jonathon H.</strong>
-                  <p className="services-p">Full Interior</p>
-                </div>
-                <div className="google-review">
-                  <img src="../assets/icons/star.svg" alt="5 stars" className="icon-36" />
-                  <p className="star-review">5.0</p>
-                </div>
-              </div>
-            </div>
-            <div className="review-card">
-              <div className="review-top">
-                <p className="review-text">
-                  "Brenden does an amazing job. My car looks amazing.{" "}
-                  <span className="highlight">He is super reasonable in his pricing and was very efficient.</span> Will
-                  definitely continue to use his service for all our vehicles."
-                </p>
-              </div>
-              <div className="review-bottom">
-                <div style={{ textAlign: "left" }}>
-                  <strong className="name">Kristi H.</strong>
-                  <p className="services-p">Full Interior + Exterior Wash</p>
-                </div>
-                <div className="google-review">
-                  <img src="../assets/icons/star.svg" alt="5 stars" className="icon-36" />
-                  <p className="star-review">5.0</p>
-                </div>
-              </div>
-            </div>
-            <div className="review-card">
-              <div className="review-top">
-                <p className="review-text">
-                  "Had a whole half gallon of almond chocolate milk spilled into my trunk thanks to Walmart pickup.
-                  <span className="highlight">
-                    {" "}
-                    After calling many detailing shops (whom most were rude and not helpful) Brenden at Dirt-Less Detail
-                    was very polite and eager to help.
-                  </span>{" "}
-                  Despite his busy schedule he fit me in asap and took care of my weird circumstance. It didn't take
-                  long to clean the trunk and because of it he didn't charge me for the cleaning. Way to go Brenden at
-                  Dirt-Less Detail. Thanks again."
-                </p>
-              </div>
-              <div className="review-bottom">
-                <div style={{ textAlign: "left" }}>
-                  <strong className="name">Jennifer D.</strong>
-                  <p className="services-p">Full Interior</p>
-                </div>
-                <div className="google-review">
-                  <img src="../assets/icons/star.svg" alt="5 stars" className="icon-36" />
-                  <p className="star-review">5.0</p>
-                </div>
-              </div>
-            </div>
-            <div className="review-card review-screen">
-              <div className="review-top">
-                <p className="review-text">
-                  "Brought in my 12 Escalade and he worked his magic on both inside and outside.{" "}
-                  <span className="highlight">
-                    Brenden is very good at what he does, the vehicle looks amazing. Better than it was when I bought
-                    it.
-                  </span>{" "}
-                  Thank you so much for getting me into your schedule. I am Extremely pleased with the outcome of your
-                  services."
-                </p>
-              </div>
-              <div className="review-bottom">
-                <div style={{ textAlign: "left" }}>
-                  <strong className="name">Rob B.</strong>
-                  <p className="services-p">Full Interior + Exterior Wash</p>
-                </div>
-                <div className="google-review">
-                  <img src="../assets/icons/star.svg" alt="5 stars" className="icon-36" />
-                  <p className="star-review">5.0</p>
-                </div>
-              </div>
-            </div>
-          </div> */}
         </div>
 
         <br className="extra-space" />
@@ -704,7 +581,7 @@ export default function Home() {
             if you have other questions!
           </p>
         </div>
-        <section className="flex justify-center gap-8 w-2/3">
+        <section className="flex flex-col items-center xl:flex-row w-11/12 justify-center gap-8 xl:w-2/3">
           <div className="flex flex-col gap-6 w-[500px] calc text-left">
             {faqItems.map((item, i) => (
               <FaqItem
@@ -739,7 +616,7 @@ export default function Home() {
         <br className="extra-space" />
         <hr className="pricing__hr" />
 
-        <h4 className="text-4xl font-bold py-6">24/7 ONLINE PRICING & BOOKING</h4>
+        {/* <h4 className="text-4xl font-bold py-6">24/7 ONLINE PRICING & BOOKING</h4> TODO
         <motion.a
           href="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd"
           className="top-quote-btn max-w-max mx-auto"
@@ -750,14 +627,13 @@ export default function Home() {
           transition={{ duration: 0.25 }}
         >
           BOOK ONLINE!
-        </motion.a>
+        </motion.a> */}
 
-        <p className="pt-8 text-2xl">OR submit this form to get in contact with us!</p>
+        <p className="pt-8 text-2xl">Submit this form to easily get in contact with us!</p>
 
         <fieldset className="urable-form-container">
           <iframe
-            style={{ height: "800px" }}
-            className="w-full lg:max-w-50%"
+            className="w-4/5 mx-auto lg:max-w-50% h-[600px]"
             src="https://app.urable.com/form/pMe0iWXWCBfTL47sDvjd/v5CoHzxM7y2da6KIOp2T"
             frameborder="0"
           ></iframe>
