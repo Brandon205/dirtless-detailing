@@ -102,7 +102,7 @@ export default function Contact() {
           <iframe
             style={{ width: "100%", height: "700px" }}
             src="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd"
-            frameborder="0"
+            frameBorder="0"
           ></iframe>
         </fieldset> */}
         {/* <h4 className="text-4xl font-bold pb-6 pt-20 text-center">24/7 ONLINE PRICING & BOOKING</h4> TODO
@@ -127,7 +127,7 @@ export default function Contact() {
           <iframe
             className="w-4/5 mx-auto lg:max-w-50% h-[600px] pb-10"
             src="https://app.urable.com/form/pMe0iWXWCBfTL47sDvjd/v5CoHzxM7y2da6KIOp2T"
-            frameborder="0"
+            frameBorder="0"
           ></iframe>
         </fieldset>
       </div>

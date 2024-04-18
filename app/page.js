@@ -635,7 +635,7 @@ export default function Home() {
           <iframe
             className="w-4/5 mx-auto lg:max-w-50% h-[600px]"
             src="https://app.urable.com/form/pMe0iWXWCBfTL47sDvjd/v5CoHzxM7y2da6KIOp2T"
-            frameborder="0"
+            frameBorder="0"
           ></iframe>
         </fieldset>
       </div>
