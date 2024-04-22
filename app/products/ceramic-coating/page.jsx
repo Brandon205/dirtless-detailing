@@ -44,7 +44,7 @@ export default function products() {
       </div>
 
       <main style={{ marginTop: "4vh" }} className="service-main">
-        <div className="service-explain">
+        {/* <div className="service-explain">
           <div
             className="service-image"
             role="img"
@@ -82,10 +82,41 @@ export default function products() {
               through with the purchase.
             </p>
           </div>
-        </div>
+        </div> */}
+        <main className="service-main">
+          <h2 style={{ marginBottom: 0 }} className="text-large">
+            DIY Ceramic Maintenance Recommendations
+          </h2>
+          <hr style={{ margin: "0 auto 3rem auto" }} />
+          <div className="service-explain">
+            <p>
+              We at Dirt-Less Detailing are aware of the satisfaction and joy that come from taking care of your car
+              yourself. For all of your DIY vehicle washing needs, we have individually chosen a variety of high-quality
+              supplies that won't break the bank.
+            </p>
+            <p>
+              The products described here can all be easily purchased from Amazon, and some of them can even be
+              purchased in nearby stores, guaranteeing that you have everything you need to produce results that are on
+              par with those of a professional right in the comfort of your own driveway.
+            </p>
+            <p>
+              With our hand-selected recommendations, we have you covered for anything from soft yet effective car wash
+              soaps to microfiber towels. Our list makes it simple for you to locate and buy the greatest tools and
+              goods because we think every auto enthusiast should have access to them. Explore our guide, discover the
+              products we suggest, and get ready to take your DIY car cleaning to new heights.
+            </p>
+            <p>
+              You can be confident that the products mentioned here are the best of the best in terms of cost-effective
+              consumer grade ceramic safe materials. We have personally owned and used all of these items at some point
+              in our eight years of detailing, and some we even still use to this day. The Amazon links below are
+              affiliate links which don't change the price you pay but give us a small commission if you decide to go
+              through with the purchase.
+            </p>
+          </div>
+        </main>
       </main>
 
-      <h1>The Products We Recommend:</h1>
+      <h2 className="text-4xl text-center pb-10">The Products We Recommend:</h2>
       <div className="product-container">
         <div className="product">
           <iframe
@@ -93,7 +124,6 @@ export default function products() {
             style={{ width: "120px", height: "240px" }}
             marginwidth="0"
             marginheight="0"
-            frameBorder="0"
             src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=brandonblack0-20&language=en_US&marketplace=amazon&region=US&placement=B0009IQXFO&asins=B0009IQXFO&linkId=d5ad40cecb3aaf7be8c87246fc5eea6a&show_border=true&link_opens_in_new_window=true"
           ></iframe>
           <div className="product-desc">
@@ -112,7 +142,6 @@ export default function products() {
             style={{ width: "120px", height: "240px" }}
             marginwidth="0"
             marginheight="0"
-            frameBorder="0"
             src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=brandonblack0-20&language=en_US&marketplace=amazon&region=US&placement=B0787JSXX2&asins=B0787JSXX2&linkId=3010892b40311b946b175d627a341cc4&show_border=false&link_opens_in_new_window=true"
           ></iframe>
           <div className="product-desc">
@@ -129,7 +158,6 @@ export default function products() {
           <iframe
             sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin"
             style={{ width: "120px", height: "240px" }}
-            frameBorder="0"
             src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=brandonblack0-20&language=en_US&marketplace=amazon&region=US&placement=B004BFZRCQ&asins=B004BFZRCQ&linkId=7358a4b30236e6af6e92fdc9ccd31ad2&show_border=false&link_opens_in_new_window=true"
           ></iframe>
           <div className="product-desc">
@@ -148,7 +176,6 @@ export default function products() {
             style={{ width: "120px", height: "240px" }}
             marginwidth="0"
             marginheight="0"
-            frameBorder="0"
             src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=brandonblack0-20&language=en_US&marketplace=amazon&region=US&placement=B09S814R5F&asins=B09S814R5F&linkId=0081a54cc3d3a434b0195fbe3452b628&show_border=true&link_opens_in_new_window=true"
           ></iframe>
           <div className="product-desc">
@@ -168,7 +195,6 @@ export default function products() {
             style={{ width: "120px", height: "240px" }}
             marginwidth="0"
             marginheight="0"
-            frameBorder="0"
             src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=brandonblack0-20&language=en_US&marketplace=amazon&region=US&placement=B0BQCTHKT4&asins=B0BQCTHKT4&linkId=214006bd6028a9c806f8618b439a1f2e&show_border=false&link_opens_in_new_window=true"
           ></iframe>
           <div className="product-desc">
@@ -187,7 +213,6 @@ export default function products() {
             style={{ width: "120px", height: "240px" }}
             marginwidth="0"
             marginheight="0"
-            frameBorder="0"
             src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=brandonblack0-20&language=en_US&marketplace=amazon&region=US&placement=B095DTBBVJ&asins=B095DTBBVJ&linkId=43992e4f23c20868fcb4708411c948a1&show_border=false&link_opens_in_new_window=true"
           ></iframe>
           <div className="product-desc">
@@ -207,7 +232,6 @@ export default function products() {
             style={{ width: "120px", height: "240px" }}
             marginwidth="0"
             marginheight="0"
-            frameBorder="0"
             src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=brandonblack0-20&language=en_US&marketplace=amazon&region=US&placement=B0BNVFRV3Z&asins=B0BNVFRV3Z&linkId=ee8f3ecd74f31bd716731063d91f0ae2&show_border=false&link_opens_in_new_window=true"
           ></iframe>
           <div className="product-desc">
@@ -226,7 +250,6 @@ export default function products() {
             style={{ width: "120px", height: "240px" }}
             marginwidth="0"
             marginheight="0"
-            frameBorder="0"
             src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=brandonblack0-20&language=en_US&marketplace=amazon&region=US&placement=B07W6JMK1L&asins=B07W6JMK1L&linkId=a330591c57a4458a09fc10baab17a2d5&show_border=true&link_opens_in_new_window=true"
           ></iframe>
           <div className="product-desc">
@@ -245,7 +268,6 @@ export default function products() {
             style={{ width: "120px", height: "240px" }}
             marginwidth="0"
             marginheight="0"
-            frameBorder="0"
             src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=brandonblack0-20&language=en_US&marketplace=amazon&region=US&placement=B083KPS7QD&asins=B083KPS7QD&linkId=677e37025d7ca22764aea57debd4eed0&show_border=true&link_opens_in_new_window=true"
           ></iframe>
           <div className="product-desc">
@@ -264,7 +286,6 @@ export default function products() {
             style={{ width: "120px", height: "240px" }}
             marginwidth="0"
             marginheight="0"
-            frameBorder="0"
             src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=brandonblack0-20&language=en_US&marketplace=amazon&region=US&placement=B083KNNY2P&asins=B083KNNY2P&linkId=d4cf69183b7a6ad17a5d4d30cd7ff66c&show_border=true&link_opens_in_new_window=true"
           ></iframe>
           <div className="product-desc">
@@ -282,7 +303,7 @@ export default function products() {
 
       <br className="extra-space" />
 
-      <h2 style={{ fontSize: "2.25em" }}>The Process To Follow</h2>
+      <h2 className="text-5xl text-center pb-10">The Process To Follow</h2>
       <ol className="list">
         <li className="item product-item">
           <div className="step-number-container">
