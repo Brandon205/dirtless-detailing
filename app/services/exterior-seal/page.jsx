@@ -89,7 +89,7 @@ export default function ExteriorSeal() {
                   Select your vehicle size below to get a quick price estimate for your vehicle.
                 </strong>
               </div>
-              <PricingComponent prices={[500, 500, 500, 625, 750, 750]} addons="exterior" />
+              <PricingComponent prices={[500, 500, 500, 625, 750, 750]} addons="correction" />
             </div>
 
             <h2 className="cleaning-process-title pb-8">Our Exterior Seal and Shine Process</h2>

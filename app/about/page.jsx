@@ -99,7 +99,7 @@ export default function About() {
     {
       title: "Can you come to my apartment or workplace?",
       description:
-        "It will depend on the amount of space and water/electrical access if we can or not. Typically apartment complexes can be strict with this type of thing and we may not be able to come to you.",
+        "It will depend on the amount of space and water/electrical access if we can or not. Typically apartment complexes and some workplaces can be strict with this type of thing and we may not be able to come to you.",
     },
     {
       title: "Are you licensed and insured?",
@@ -108,7 +108,7 @@ export default function About() {
     {
       title: "What cities do you service?",
       description:
-        "With our mobile service we can go out to: Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Lake Tapps, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham. *Note: Mobile service is free only if the total cost of your service is more than $200, otherwise there is a $1/mile fee.",
+        "With our mobile service we can go out to: Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Lake Tapps, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham.",
     },
     {
       title: "Do I have to be there the whole time you're working on my car?",
@@ -201,7 +201,7 @@ export default function About() {
             </div>
           ) : (
             <div className="about-image-container">
-              <motion.div
+              {/* <motion.div
                 className="about-image"
                 style={{
                   backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3a1a1e74-854b-4aa9-ae8e-06816ec80200/public')`,
@@ -214,11 +214,11 @@ export default function About() {
                   alt="moldy biohazard van before and after"
                   src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3a1a1e74-854b-4aa9-ae8e-06816ec80200/public"
                 />
-              </motion.div>
+              </motion.div> */}
               <motion.div
                 className="about-image"
                 style={{
-                  backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b5859464-3c0e-4fcf-8332-17155eb86d00/public')`,
+                  backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/19851827-a8f8-4045-11cf-a6bdef3c4100/public')`,
                   x: smallScreen ? "" : xMovement,
                   y: smallScreen ? "" : yMovement,
                 }}
@@ -226,7 +226,7 @@ export default function About() {
                 <img
                   style={{ visibility: "hidden" }}
                   alt="Drivers side of Silver Dodge Ram"
-                  src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b5859464-3c0e-4fcf-8332-17155eb86d00/public"
+                  src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/19851827-a8f8-4045-11cf-a6bdef3c4100/public"
                 />
               </motion.div>
             </div>
@@ -294,7 +294,7 @@ export default function About() {
                 }}
                 onMouseLeave={() => starRef.current.goToAndStop(20, true)}
               />
-              <strong>20+</strong>
+              <strong>25+</strong>
               <p>5 Star Reviews</p>
             </div>
             <div className="stat">

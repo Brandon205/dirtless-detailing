@@ -15,13 +15,18 @@ export default function Footer() {
         </div>
         <div>
           <p>©2024 Dirt-Less Detailing.</p>
-          <p>
-            Icons made by{" "}
-            <a target="_blank" rel="noopener" href="https://icons8.com" className="aside-link">
-              Icons8
-            </a>
-            .
-          </p>
+          <a target="_blank" rel="noopener" href="https://icons8.com" className="text-gray-400 hover:underline">
+            Icons made by Icons8.
+          </a>
+          <br />
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://github.com/Brandon205"
+            className="text-gray-400 hover:underline"
+          >
+            Design + Code by Brandon.
+          </a>
         </div>
         <div style={{ gap: 32, paddingTop: "1rem" }} className="screen-flex">
           <a href="https://iglcoatingsusa.com/" target="_blank" rel="noopener">
