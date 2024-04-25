@@ -12,53 +12,59 @@ import locationJSON from "../../public/assets/icons/locationPing.json";
 const jsonld = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  mainEntity: [
+  "url": "https://dirtlessdetailing.com/about",
+  "mainEntity": [
     {
       "@type": "Question",
-      name: "What do you need from me when you get here?",
-      acceptedAnswer: {
+      "name": "What do you need from me when you get here?",
+      "acceptedAnswer": {
         "@type": "Answer",
-        text: "All we will need is an electrical outlet, a water spigot, and preferably all/most personal items out of the car.",
+        "text":
+          "All we will need is an electrical outlet, a water spigot, and preferably all/most personal items out of the car.",
       },
     },
     {
       "@type": "Question",
-      name: "How long will the detail take?",
-      acceptedAnswer: {
+      "name": "How long will the detail take?",
+      "acceptedAnswer": {
         "@type": "Answer",
-        text: "Every job will take a different amount of time, but once we know the condition of the car and the services requested we can give a good estimate as to how long it will take.",
+        "text":
+          "Every job will take a different amount of time, but once we know the condition of the car and the services requested we can give a good estimate as to how long it will take.",
       },
     },
     {
       "@type": "Question",
-      name: "Can you come to my apartment or workplace?",
-      acceptedAnswer: {
+      "name": "Can you come to my apartment or workplace?",
+      "acceptedAnswer": {
         "@type": "Answer",
-        text: "It will depend on the amount of space and access if we can or not. Typically apartment complexes and some workplaces can be strict with this type of thing and we may not be able to come to you.",
+        "text":
+          "It will depend on the amount of space and access if we can or not. Typically apartment complexes and some workplaces can be strict with this type of thing and we may not be able to come to you.",
       },
     },
     {
       "@type": "Question",
-      name: "Do you offer gift cards or gift certificates?",
-      acceptedAnswer: {
+      "name": "Do you offer gift cards or gift certificates?",
+      "acceptedAnswer": {
         "@type": "Answer",
-        text: 'Yes we do! Any of our services can be bought as a gift certificate. On the Contact page choose the "For Someone Else" option.',
+        "text":
+          'Yes we do! Any of our services can be bought as a gift certificate. On the Contact page choose the "For Someone Else" option.',
       },
     },
     {
       "@type": "Question",
-      name: "What cities do you service?",
-      acceptedAnswer: {
+      "name": "What cities do you service?",
+      "acceptedAnswer": {
         "@type": "Answer",
-        text: "With our mobile service we can go out to: Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Lake Tapps, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham.",
+        "text":
+          "With our mobile service we can go out to: Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Lake Tapps, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham.",
       },
     },
     {
       "@type": "Question",
-      name: "Do I have to be there the whole time you're working on my car?",
-      acceptedAnswer: {
+      "name": "Do I have to be there the whole time you're working on my car?",
+      "acceptedAnswer": {
         "@type": "Answer",
-        text: "Absolutely not! You are free to go do whatever you need to do while we are working.",
+        "text": "Absolutely not! You are free to go do whatever you need to do while we are working.",
       },
     },
   ],

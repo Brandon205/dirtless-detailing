@@ -14,21 +14,22 @@ import HeaderComponent from "../../components/HeaderComponent";
 const jsonld = {
   "@context": "https://schema.org/",
   "@type": "Product",
-  name: "Interior + Spill Guard",
-  image: "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a196c77-cb1a-42f9-479b-8fdbe3c14500/public",
-  description:
+  "name": "Interior + Spill Guard",
+  "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a196c77-cb1a-42f9-479b-8fdbe3c14500/public",
+  "description":
     "et your car's interior looking brand new with our full interior detailing service, topped off with a ceramic coating to protect your vehicle from day to day use! Contact us to schedule your appointment today.",
-  brand: {
+  "brand": {
     "@type": "Brand",
-    name: "Dirt-Less Detailing",
+    "name": "Dirt-Less Detailing",
   },
-  offers: {
+  "offers": {
     "@type": "AggregateOffer",
-    url: "https://www.dirtlessdetailing.com/services/interior-spill",
-    priceCurrency: "USD",
-    lowPrice: "450",
-    highPrice: "575",
+    "url": "https://www.dirtlessdetailing.com/services/interior-spill",
+    "priceCurrency": "USD",
+    "lowPrice": "450",
+    "highPrice": "575",
   },
+  "url": "https://www.dirtlessdetailing.com/services/interior-spill",
 };
 
 export default function InteriorSpill() {

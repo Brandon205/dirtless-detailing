@@ -14,21 +14,22 @@ import ImageSlider from "../../../utils/ImageSlider";
 const jsonld = {
   "@context": "https://schema.org/",
   "@type": "Product",
-  name: "Exterior Decon Wash",
-  image: "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/da3f5734-319b-4301-43c9-7af958fd5600/public",
-  description:
+  "name": "Exterior Decon Wash",
+  "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/da3f5734-319b-4301-43c9-7af958fd5600/public",
+  "description":
     "Get a car wash like never before with our Exterior Decon Wash. Where we go in depth to get all corners and remove any paint contaminants.",
-  brand: {
+  "brand": {
     "@type": "Brand",
-    name: "Dirt-Less Detailing",
+    "name": "Dirt-Less Detailing",
   },
-  offers: {
+  "offers": {
     "@type": "AggregateOffer",
-    url: "https://www.dirtlessdetailing.com/services/exterior",
-    priceCurrency: "USD",
-    lowPrice: "100",
-    highPrice: "150",
+    "url": "https://www.dirtlessdetailing.com/services/exterior",
+    "priceCurrency": "USD",
+    "lowPrice": "100",
+    "highPrice": "150",
   },
+  "url": "https://www.dirtlessdetailing.com/services/exterior",
 };
 
 export default function Exterior() {

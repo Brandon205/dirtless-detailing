@@ -13,33 +13,32 @@ import Image from "next/image";
 const titillium = Titillium_Web({ weight: ["400", "600"], subsets: ["latin"] });
 
 const jsonld = {
-  "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "Dirt-Less Detailing",
-  image: "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover",
-  url: "https://www.dirtlessdetailing.com",
-  telephone: "2532529758",
-  priceRange: "$$$",
-  address: {
+  "name": "Dirt-Less Detailing",
+  "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover",
+  "url": "https://www.dirtlessdetailing.com",
+  "telephone": "2532529758",
+  "priceRange": "$$$",
+  "address": {
     "@type": "PostalAddress",
-    streetAddress: "28120 WA-410, Building C6",
-    addressLocality: "Bonney Lake",
-    addressRegion: "WA",
-    postalCode: "98391",
-    addressCountry: "US",
+    "streetAddress": "28120 WA-410, Building C6",
+    "addressLocality": "Buckley",
+    "addressRegion": "WA",
+    "postalCode": "98321",
+    "addressCountry": "US"
   },
-  geo: {
+  "geo": {
     "@type": "GeoCoordinates",
-    latitude: 47.15803435589099,
-    longitude: -122.05283957787773,
+    "latitude": 47.15803435589099,
+    "longitude": -122.05283957787773
   },
-  openingHoursSpecification: {
+  "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
-    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-    opens: "07:00",
-    closes: "19:00",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "opens": "07:00",
+    "closes": "19:00"
   },
-  sameAs: ["https://www.instagram.com/dirt_less_detailing", "https://www.youtube.com/channel/UCsoqP5s4hwkQd_Sd-TVv-jg"],
+  "sameAs": ["https://www.instagram.com/dirt_less_detailing", "https://www.youtube.com/channel/UCsoqP5s4hwkQd_Sd-TVv-jg"]
 };
 
 export default function Home() {
@@ -57,33 +56,30 @@ export default function Home() {
   const faqItems = [
     {
       title: "What do you need from me when you get here?",
-      description:
-        "All we will need is an electrical outlet, a water spigot, and preferably all/most personal items out of the car.",
+      description: "All we will need is an electrical outlet, a water spigot, and preferably all/most personal items out of the car."
     },
     {
       title: "How long will the detail take?",
       description:
-        "Every job will take a different amount of time, but once we know the condition of the car and the services requested we can give a good estimate as to how long it will take.",
+        "Every job will take a different amount of time, but once we know the condition of the car and the services requested we can give a good estimate as to how long it will take."
     },
     {
       title: "What forms of payment do you take?",
-      description:
-        "We prefer Card/Check payments and can even text invoices to you so that you can pay via card from wherever you are!",
+      description: "We prefer Card/Check payments and can even text invoices to you so that you can pay via card from wherever you are!"
     },
     {
       title: "Do you offer gift cards or gift certificates?",
-      description:
-        'Yes we do! Any of our services can be bought as a gift certificate. On the Contact page choose the "For Someone Else" option.',
+      description: 'Yes we do! Any of our services can be bought as a gift certificate. On the Contact page choose the "For Someone Else" option.'
     },
     {
       title: "Are you licensed and insured?",
-      description: "Yes! We are 100% licensed and insured!",
+      description: "Yes! We are 100% licensed and insured!"
     },
     {
       title: "How does booking with Dirt-Less Detailing work?",
       description:
-        "Once you have booked an appointment with us you're set (if you booked online through Urable you will see your appointment date and time got accepted). From then you'll hear from us again the day before your detail to ensure that the time you picked still works and at this time we'll give you an estimate when we'll get there! ",
-    },
+        "Once you have booked an appointment with us you're set (if you booked online through Urable you will see your appointment date and time got accepted). From then you'll hear from us again the day before your detail to ensure that the time you picked still works and at this time we'll give you an estimate when we'll get there! "
+    }
   ];
 
   return (
@@ -97,13 +93,11 @@ export default function Home() {
           "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3a1a1e74-854b-4aa9-ae8e-06816ec80200/cover",
           "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ae30d18b-03c1-4632-e50d-3e047b633400/cover",
           "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c259c052-b75c-4e1f-f467-4010d7182d00/cover",
-          "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/15bf1809-0cee-4975-95ed-808adcf12100/cover",
+          "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/15bf1809-0cee-4975-95ed-808adcf12100/cover"
         ]}
       >
         <header className="flex flex-col items-center h-[90vh] pt-28 z-50 xl:items-start xl:gap-3 xl:pt-14 text-sm xl:text-lg xl:justify-center">
-          <h1
-            className={`${titillium.className} text-white text-5xl xl:text-8xl text-center xl:text-left font-bold m-0`}
-          >
+          <h1 className={`${titillium.className} text-white text-5xl xl:text-8xl text-center xl:text-left font-bold m-0`}>
             Bonney Lake & Pierce County's
             <br />
             Auto Detailing Specialists
@@ -113,27 +107,15 @@ export default function Home() {
               <span className="special-deal-colored bold"> VALENTINE10</span> to save 10% on any In Shop Detail!
             </p> */}
           <p className="text-white max-w-screen-lg text-left m-0 text-lg hidden xl:block">
-            Anything from a simple interior detail, to the most detail oriented paint correction ceramic coating jobs,
-            you can trust Dirt-Less Detailing to get the job done right!
+            Anything from a simple interior detail, to the most detail oriented paint correction ceramic coating jobs, you can trust Dirt-Less Detailing to get
+            the job done right!
           </p>
 
           <div className="flex gap-10 pt-8 flex-col lg:flex-row">
-            <motion.a
-              href="/contact"
-              className="top-quote-btn"
-              variants={topBtnVariant}
-              whileHover="hover"
-              transition={{ duration: 0.25 }}
-            >
+            <motion.a href="/contact" className="top-quote-btn" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
               <img src="../assets/icons/clipboard.png" alt="clipboard" className="btn-icon" /> BOOK NOW!
             </motion.a>
-            <motion.a
-              href="tel:2532529758"
-              className="top-quote-btn btn-secondary"
-              variants={topBtnVariant}
-              whileHover="hover"
-              transition={{ duration: 0.25 }}
-            >
+            <motion.a href="tel:2532529758" className="top-quote-btn btn-secondary" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
               <img src="../assets/icons/phoneMessage.png" alt="call or message" className="btn-icon" /> (253) 252-9758
             </motion.a>
           </div>
@@ -154,7 +136,7 @@ export default function Home() {
             <div
               className="popular-img"
               style={{
-                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e073e12e-8f0c-4ae5-fa12-4abc9ab9db00/public)`,
+                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e073e12e-8f0c-4ae5-fa12-4abc9ab9db00/public)`
               }}
             ></div>
             <div className="popular-header">
@@ -203,7 +185,7 @@ export default function Home() {
             <div
               className="popular-img"
               style={{
-                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a40931e-dd21-407c-dd03-86fd43b05200/public)`,
+                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a40931e-dd21-407c-dd03-86fd43b05200/public)`
               }}
             ></div>
             <div className="popular-header">
@@ -256,7 +238,7 @@ export default function Home() {
             <div
               className="popular-img"
               style={{
-                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/213e3fa9-1def-44b2-3031-1901432b9a00/public)`,
+                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/213e3fa9-1def-44b2-3031-1901432b9a00/public)`
               }}
             ></div>
             <div className="popular-header">
@@ -298,16 +280,14 @@ export default function Home() {
         <br className="extra-space" />
         <div className="general-container new-heading-container" style={{ margin: "5vh auto 2vh auto" }}>
           <strong className="above-heading"> Exterior Services </strong>
-          <h3 className="new-heading">
-            From a quick refresh to a complete paint correction, we cover all things exterior.
-          </h3>
+          <h3 className="new-heading">From a quick refresh to a complete paint correction, we cover all things exterior.</h3>
         </div>
         <div className="otherservices-subcontainer">
           <div className="popular-services-card">
             <div
               className="popular-img"
               style={{
-                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b5859464-3c0e-4fcf-8332-17155eb86d00/public)`,
+                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b5859464-3c0e-4fcf-8332-17155eb86d00/public)`
               }}
             ></div>
             <div className="popular-header">
@@ -320,7 +300,7 @@ export default function Home() {
                   style={{
                     marginBottom: 0,
                     color: "#c0c0c0",
-                    textAlign: "left",
+                    textAlign: "left"
                   }}
                 >
                   From:
@@ -333,9 +313,7 @@ export default function Home() {
             <ul className="checklist">
               <li>
                 <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                <p className="checklist-item">
-                  Full vehicle strip wash (to remove any embedded contaminants, tar, and sap)
-                </p>
+                <p className="checklist-item">Full vehicle strip wash (to remove any embedded contaminants, tar, and sap)</p>
               </li>
               <li>
                 <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
@@ -365,7 +343,7 @@ export default function Home() {
             <div
               className="popular-img"
               style={{
-                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/public)`,
+                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/public)`
               }}
             ></div>
             <div className="popular-header">
@@ -378,7 +356,7 @@ export default function Home() {
                   style={{
                     marginBottom: 0,
                     color: "#c0c0c0",
-                    textAlign: "left",
+                    textAlign: "left"
                   }}
                 >
                   From:
@@ -427,7 +405,7 @@ export default function Home() {
             <div
               className="popular-img"
               style={{
-                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4ce4f977-365c-4211-a7f9-68c5ec6d7a00/public)`,
+                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4ce4f977-365c-4211-a7f9-68c5ec6d7a00/public)`
               }}
             ></div>
             <div className="popular-header">
@@ -440,7 +418,7 @@ export default function Home() {
                   style={{
                     marginBottom: 0,
                     color: "#c0c0c0",
-                    textAlign: "left",
+                    textAlign: "left"
                   }}
                 >
                   From:
@@ -497,12 +475,7 @@ export default function Home() {
             <h3 className="new-heading">Read some of the reviews from our valued customers!</h3>
             <p style={{ margin: 0, padding: "1rem 0" }}>
               See all of the reviews from our customers on our{" "}
-              <a
-                style={{ color: "dodgerblue" }}
-                target="_blank"
-                rel="noopener"
-                href="https://www.facebook.com/DirtLessDetailing/reviews"
-              >
+              <a style={{ color: "dodgerblue" }} target="_blank" rel="noopener" href="https://www.facebook.com/DirtLessDetailing/reviews">
                 Facebook
               </a>{" "}
               or{" "}
@@ -522,40 +495,35 @@ export default function Home() {
               {
                 quote: (
                   <p className="review-text">
-                    "Had an issue with the interior of a vehicle that had been in a garage for too long. Dirt-Less
-                    handled it professionally and quickly.{" "}
+                    "Had an issue with the interior of a vehicle that had been in a garage for too long. Dirt-Less handled it professionally and quickly.{" "}
                     <span className="highlight">We will definitely keep going back for our needs.</span>"
                   </p>
                 ),
                 name: "Jonathon H.",
-                title: "Full Interior Detail",
+                title: "Full Interior Detail"
               },
               {
                 quote: (
                   <p className="review-text">
                     "Brenden does an amazing job. My car looks amazing.{" "}
-                    <span className="highlight">He is super reasonable in his pricing and was very efficient.</span>{" "}
-                    Will definitely continue to use his service for all our vehicles."
+                    <span className="highlight">He is super reasonable in his pricing and was very efficient.</span> Will definitely continue to use his service
+                    for all our vehicles."
                   </p>
                 ),
                 name: "Kristi H.",
-                title: "Full Interior Detail",
+                title: "Full Interior Detail"
               },
               {
                 quote: (
                   <p className="review-text">
                     "Brought in my 12 Escalade and he worked his magic on both inside and outside.{" "}
-                    <span className="highlight">
-                      Brenden is very good at what he does, the vehicle looks amazing. Better than it was when I bought
-                      it.
-                    </span>{" "}
-                    Thank you so much for getting me into your schedule. I am Extremely pleased with the outcome of your
-                    services."
+                    <span className="highlight">Brenden is very good at what he does, the vehicle looks amazing. Better than it was when I bought it.</span>{" "}
+                    Thank you so much for getting me into your schedule. I am Extremely pleased with the outcome of your services."
                   </p>
                 ),
                 name: "Rob B.",
-                title: "Full Interior Detail",
-              },
+                title: "Full Interior Detail"
+              }
             ]}
             speed="normal"
             className="w-screen"
@@ -568,22 +536,13 @@ export default function Home() {
             AUTO DETAILING FAQ's
           </h3>
           <p className="max-w-[900px] mx-auto text-center my-0 font-normal pb-8">
-            Answers to some of the most common questions that we get when people are booking with us, please reach out
-            if you have other questions!
+            Answers to some of the most common questions that we get when people are booking with us, please reach out if you have other questions!
           </p>
         </div>
         <section className="flex flex-col items-center xl:flex-row w-11/12 justify-center gap-8 xl:w-2/3">
           <div className="flex flex-col gap-6 w-[500px] calc text-left">
             {faqItems.map((item, i) => (
-              <FaqItem
-                key={i}
-                i={i}
-                expanded={expanded}
-                setExpanded={setExpanded}
-                title={item.title}
-                description={item.description}
-                isMobile={smallScreen}
-              />
+              <FaqItem key={i} i={i} expanded={expanded} setExpanded={setExpanded} title={item.title} description={item.description} isMobile={smallScreen} />
             ))}
           </div>
           <div className="map relative">

@@ -5,22 +5,22 @@ import { BookingButton } from "../components/BookingButton";
 const jsonld = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "Dirt-Less Detailing",
-  url: "https://dirtlessdetailing.com",
-  logo: "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0a945e76-f4c0-4e29-ef16-463490d0db00/public",
-  contactPoint: {
+  "name": "Dirt-Less Detailing",
+  "url": "https://dirtlessdetailing.com/contact",
+  "logo": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0a945e76-f4c0-4e29-ef16-463490d0db00/public",
+  "contactPoint": {
     "@type": "ContactPoint",
-    telephone: "2532529758",
-    contactType: "sales",
-    contactOption: "TollFree",
-    areaServed: "US",
-    availableLanguage: "en",
+    "telephone": "2532529758",
+    "contactType": "sales",
+    "contactOption": "TollFree",
+    "areaServed": "US",
+    "availableLanguage": "en"
   },
-  sameAs: [
+  "sameAs": [
     "https://www.facebook.com/DirtLessDetailing",
     "https://www.instagram.com/dirt_less_detailing",
-    "https://www.youtube.com/channel/UCsoqP5s4hwkQd_Sd-TVv-jg",
-  ],
+    "https://www.youtube.com/channel/UCsoqP5s4hwkQd_Sd-TVv-jg"
+  ]
 };
 
 export default function Contact() {
@@ -106,7 +106,7 @@ export default function Contact() {
             frameBorder="0"
           ></iframe>
         </fieldset> */}
-        <h4 className="text-4xl font-bold pb-6 pt-20 text-center">24/7 ONLINE PRICING & BOOKING</h4>
+        <h1 className="text-4xl font-bold pb-6 pt-20 text-center">24/7 ONLINE PRICING & BOOKING</h1>
         <div className="grid items-center" style={{ paddingTop: 0 }}>
           <BookingButton title="Book Online" />
         </div>
@@ -117,10 +117,7 @@ export default function Contact() {
           </p>
         </div>
         <fieldset className="urable-form-container">
-          <iframe
-            className="w-4/5 mx-auto lg:max-w-50% h-[600px] pb-10"
-            src="https://app.urable.com/form/pMe0iWXWCBfTL47sDvjd/v5CoHzxM7y2da6KIOp2T"
-          ></iframe>
+          <iframe className="w-4/5 mx-auto lg:max-w-50% h-[600px] pb-10" src="https://app.urable.com/form/pMe0iWXWCBfTL47sDvjd/v5CoHzxM7y2da6KIOp2T"></iframe>
         </fieldset>
       </div>
     </section>

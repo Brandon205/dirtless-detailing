@@ -107,21 +107,22 @@ const faqItems = [
 const jsonld = {
   "@context": "https://schema.org/",
   "@type": "Product",
-  name: "Exterior Correct & Protect",
-  image: "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2bd5c3dd-6677-466a-e348-8495945c4700/public",
-  description:
+  "name": "Exterior Correct & Protect",
+  "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2bd5c3dd-6677-466a-e348-8495945c4700/public",
+  "description":
     "Elevate your vehicle's appearance and protection with our Correct and Protect service, leaving your car with a mirror-like shine and defense.",
-  brand: {
+  "brand": {
     "@type": "Brand",
-    name: "Dirt-Less Detailing",
+    "name": "Dirt-Less Detailing",
   },
-  offers: {
+  "offers": {
     "@type": "AggregateOffer",
-    url: "https://www.dirtlessdetailing.com/services/exterior-correct",
-    priceCurrency: "USD",
-    lowPrice: "1300",
-    highPrice: "1700",
+    "url": "https://www.dirtlessdetailing.com/services/exterior-correct",
+    "priceCurrency": "USD",
+    "lowPrice": "1000",
+    "highPrice": "1500",
   },
+  "url": "https://www.dirtlessdetailing.com/services/exterior-correct",
 };
 
 export default function ExteriorCorrect() {

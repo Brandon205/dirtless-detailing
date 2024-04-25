@@ -15,21 +15,22 @@ import { motion } from "framer-motion";
 const jsonld = {
   "@context": "https://schema.org/",
   "@type": "Product",
-  name: "Exterior Seal & Shine",
-  image: "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/public",
-  description:
+  "name": "Exterior Seal & Shine",
+  "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/public",
+  "description":
     "Experience a showroom shine and unparalleled protection with our Exterior Seal and Shine, ensuring your car gleams like new while safeguarding its finish.",
-  brand: {
+  "brand": {
     "@type": "Brand",
-    name: "Dirt-Less Detailing",
+    "name": "Dirt-Less Detailing",
   },
-  offers: {
+  "offers": {
     "@type": "AggregateOffer",
-    url: "https://www.dirtlessdetailing.com/services/exterior-seal",
-    priceCurrency: "USD",
-    lowPrice: "500",
-    highPrice: "750",
+    "url": "https://www.dirtlessdetailing.com/services/exterior-seal",
+    "priceCurrency": "USD",
+    "lowPrice": "500",
+    "highPrice": "750",
   },
+  "url": "https://www.dirtlessdetailing.com/services/exterior-seal",
 };
 
 export default function ExteriorSeal() {
