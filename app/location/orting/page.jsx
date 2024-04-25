@@ -25,8 +25,8 @@ const jsonld = {
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 47.17285149644542,
-    longitude: -122.15677457325478,
+    latitude: 47.15803435589099,
+    longitude: -122.05283957787773,
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -43,20 +43,23 @@ export default function Orting() {
   );
 
   useEffect(() => {
-    if (currPackage === "Interior") {
-      setCurrComponent(<PricingComponent prices={[300, 300, 335, 335, 375, 375]} addons="interior" />);
+    if (currPackage === "Full Interior") {
+      setCurrComponent(<PricingComponent prices={[300, 300, 300, 335, 375, 375]} addons="interior" />);
       setCurrLink("interior");
-    } else if (currPackage === "Interior Spill") {
-      setCurrComponent(<PricingComponent prices={[450, 450, 500, 500, 575, 575]} addons="interior" />);
+    } else if (currPackage === "Interior + Spill Guard") {
+      setCurrComponent(<PricingComponent prices={[450, 450, 450, 500, 575, 575]} addons="interior" />);
       setCurrLink("interior-spill");
+    } else if (currPackage === "Swift Interior") {
+      setCurrComponent(<PricingComponent prices={[150, 150, 150, 175, 175, 200]} addons="interior" />);
+      setCurrLink("interior-swift");
     } else if (currPackage === "Exterior Wash") {
-      setCurrComponent(<PricingComponent prices={[100, 100, 125, 125, 150, 150]} addons="exterior" />);
+      setCurrComponent(<PricingComponent prices={[100, 100, 100, 125, 150, 150]} addons="exterior" />);
       setCurrLink("exterior");
     } else if (currPackage === "Exterior Seal") {
-      setCurrComponent(<PricingComponent prices={[300, 300, 350, 350, 400, 400]} addons="exterior" />);
+      setCurrComponent(<PricingComponent prices={[500, 500, 500, 625, 750, 750]} addons="correction" />);
       setCurrLink("exterior-seal");
     } else if (currPackage === "Exterior Correct") {
-      setCurrComponent(<PricingComponent prices={[1300, 1300, 1500, 1500, 1700, 1700]} addons="exterior" />);
+      setCurrComponent(<PricingComponent prices={[1000, 1000, 1000, 1250, 1500, 1500]} addons="correction" />);
       setCurrLink("exterior-correct");
     }
   }, [currPackage]);
@@ -153,7 +156,7 @@ export default function Orting() {
             </p>
           </div>
 
-          <h3 className="text-large">Other Services that we offer.</h3>
+          <h3 className="text-large">Other services that we offer at our shop (Buckley).</h3>
           <div className="text-left">
             <a href="/services/exterior-seal" className="aside-link text-medium">
               Exterior Seal & Shine
@@ -184,7 +187,7 @@ export default function Orting() {
       </div>
 
       <div>
-        <div className="pricing__heading-container">
+        <div className="pricing__heading-container text-center">
           <h3 className="pricing__heading">Our {currPackage} Pricing</h3>
           <strong className="pricing__subheading">
             Select the package and vehicle size below to get a quick price estimate for your vehicle.
@@ -196,8 +199,9 @@ export default function Orting() {
               id="package"
               onChange={(e) => setCurrPackage(e.target.value)}
             >
-              <option value="Interior">Full Interior</option>
-              <option value="Interior Spill">Interior + Spill Guard</option>
+              <option value="Swift Interior">Swift Interior</option>
+              <option value="Full Interior">Full Interior</option>
+              <option value="Interior + Spill Guard">Interior + Spill Guard</option>
               <option value="Exterior Wash">Exterior Decon Wash</option>
               <option value="Exterior Seal">Exterior Seal & Shine</option>
               <option value="Exterior Correct">Exterior Correct & Protect</option>
@@ -207,7 +211,7 @@ export default function Orting() {
 
         {currComponent}
 
-        <p className="text-medium">
+        <p className="text-medium text-center">
           See more details about our {currPackage} service{" "}
           <a href={`/services/${currLink}`} className="aside-link">
             here
@@ -216,7 +220,7 @@ export default function Orting() {
       </div>
 
       <div>
-        <h3 style={{ marginTop: "3rem" }} className="text-large">
+        <h3 style={{ marginTop: "3rem" }} className="text-large text-center">
           Check out some of the results from our services
         </h3>
         <div className="mini-grid">

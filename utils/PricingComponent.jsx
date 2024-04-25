@@ -15,12 +15,6 @@ const imagesArr = [
   "a205f097-f145-41b5-8af5-98a046dca700",
 ];
 
-// const iconArr = {
-//   interior: <img src="../assets/icons/ozone.png" className="addon-icon" alt="air filter in use" />,
-//   exterior: <img src="../assets/icons/engineBay.png" className="addon-icon" alt="engine bay getting cleaned" />,
-//   debadging: <img src="../assets/icons/ferrari-logo.png" className="addon-icon" alt="ferrari logo" />,
-// };
-
 const addonsObj = {
   correction: (
     <div className="pricing__addons-container">
@@ -74,7 +68,7 @@ const addonsObj = {
   interior: (
     <div className="pricing__addons-container">
       <div className="pricing__addon">
-        <img src="../assets/icons/ozone.png" className="addon-icon" alt="Air filter in use" />,
+        <img src="../assets/icons/ozone.png" className="addon-icon" alt="Air filter in use" />
         <div className="addon-content">
           <h4>Ozone Treatment</h4>
           <p>Ozone treatment is the use of O3 (gas ozone) to remove bacteria, viruses, and odors from your vehicle.</p>
@@ -91,19 +85,8 @@ const addonsObj = {
 {
   /* <PricingComponent title='Ceramic Coating' prices={['949', '949', '1099', '1099', '1249', '1249']} addons='interior' /> */
 }
-export default function PricingComponent({
-  prices = props.prices,
-  addons = "",
-  labels = [
-    "2-Door Cars",
-    "Quarter Ton Trucks",
-    "4-Door Cars",
-    "Mid-Size SUV's",
-    "4-Door Trucks",
-    "3-Row SUV's, Minivans",
-  ],
-}) {
-  const [currVal, setCurrVal] = useState(null);
+export default function PricingComponent({ prices = props.prices, addons = "" }) {
+  const [currVal, setCurrVal] = useState(undefined);
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
