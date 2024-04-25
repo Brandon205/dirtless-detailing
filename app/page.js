@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Benefits from "./Benefits";
 import { HeroSlider } from "./components/hero-slider";
+import { BookingButton } from "./components/BookingButton";
 import { topBtnVariant } from "../utils/animationVariations";
 import { motion } from "framer-motion";
 import { Titillium_Web } from "next/font/google";
@@ -606,17 +607,9 @@ export default function Home() {
         <br className="extra-space" />
         <hr className="pricing__hr" />
         <h4 className="text-4xl font-bold py-6">24/7 ONLINE PRICING & BOOKING</h4>
-        <motion.a
-          href="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd"
-          className="top-quote-btn max-w-max mx-auto"
-          rel="noopener"
-          target="_blank"
-          variants={topBtnVariant}
-          whileHover="hover"
-          transition={{ duration: 0.25 }}
-        >
-          BOOK ONLINE!
-        </motion.a>
+
+        <BookingButton title="Book Online!" />
+
         <p className="pt-8 text-2xl">Submit this form to easily get in contact with us!</p>
         <fieldset className="urable-form-container">
           <iframe

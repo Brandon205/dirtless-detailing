@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
-import { motion } from "framer-motion";
-import { topBtnVariant } from "../../utils/animationVariations";
+import { BookingButton } from "../components/BookingButton";
 
 const jsonld = {
   "@context": "https://schema.org",
@@ -108,17 +107,9 @@ export default function Contact() {
           ></iframe>
         </fieldset> */}
         <h4 className="text-4xl font-bold pb-6 pt-20 text-center">24/7 ONLINE PRICING & BOOKING</h4>
-        <motion.a
-          href="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd"
-          className="top-quote-btn max-w-max mx-auto"
-          rel="noopener"
-          target="_blank"
-          variants={topBtnVariant}
-          whileHover="hover"
-          transition={{ duration: 0.25 }}
-        >
-          BOOK ONLINE!
-        </motion.a>
+        <div className="grid items-center" style={{ paddingTop: 0 }}>
+          <BookingButton title="Book Online" />
+        </div>
         <div className="text-center">
           <strong style={{ fontSize: "2rem" }}>Feel free to Text, Call, or reach out using this form!</strong>
           <p style={{ fontSize: "1.3rem" }} className="services-p">
@@ -129,7 +120,6 @@ export default function Contact() {
           <iframe
             className="w-4/5 mx-auto lg:max-w-50% h-[600px] pb-10"
             src="https://app.urable.com/form/pMe0iWXWCBfTL47sDvjd/v5CoHzxM7y2da6KIOp2T"
-            frameBorder="0"
           ></iframe>
         </fieldset>
       </div>
