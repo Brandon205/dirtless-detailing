@@ -38,12 +38,12 @@ export default function Contact() {
           <div className="contact-icon-container">
             <img src="../assets/icons/placeMarker.png" alt="place marker" className="icon-48" />
             <a
-              href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854"
+              href="https://www.google.com/maps/place/28120+WA-410,+Buckley,+WA+98321/@47.1585374,-122.052958,19.25z/data=!4m15!1m8!3m7!1s0x5490efc0f14df8db:0xb8ec0b100429182f!2s28238+WA-410,+Buckley,+WA+98321!3b1!8m2!3d47.158566!4d-122.052058!16s%2Fg%2F11csp3kvgh!3m5!1s0x5490efc05b8ec6cf:0xb04a141d669a9924!8m2!3d47.158288!4d-122.0530141!16s%2Fg%2F11c0vpg6p9?entry=ttu"
               className="contact-link location-link"
               target="_blank"
               rel="noopener"
             >
-              Our HQ Location: 9305 205th Ave E, Bonney Lake, Washington 98391
+              Buckley Business Park, 28120 WA-410, Building C6
             </a>
           </div>
           <div className="contact-icon-container">
@@ -70,7 +70,9 @@ export default function Contact() {
             <p style={{ textAlign: "left" }}>We offer gift certificates for all of our services!</p>
           </div>
         </div>
-        {/* <div className="contact-information"> TODO?
+        {/* <div className="contact-information">
+          {" "}
+          TODO?
           <h3 style={{ fontSize: "1.75em" }}>Our Contact Information</h3>
           <hr className="contact-border" />
           <h4 style={{ marginBottom: 0, fontSize: "1.5em" }}>Need us to come to you?</h4>
@@ -105,7 +107,7 @@ export default function Contact() {
             frameBorder="0"
           ></iframe>
         </fieldset> */}
-        {/* <h4 className="text-4xl font-bold pb-6 pt-20 text-center">24/7 ONLINE PRICING & BOOKING</h4> TODO
+        <h4 className="text-4xl font-bold pb-6 pt-20 text-center">24/7 ONLINE PRICING & BOOKING</h4>
         <motion.a
           href="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd"
           className="top-quote-btn max-w-max mx-auto"
@@ -116,7 +118,7 @@ export default function Contact() {
           transition={{ duration: 0.25 }}
         >
           BOOK ONLINE!
-        </motion.a> */}
+        </motion.a>
         <div className="text-center">
           <strong style={{ fontSize: "2rem" }}>Feel free to Text, Call, or reach out using this form!</strong>
           <p style={{ fontSize: "1.3rem" }} className="services-p">

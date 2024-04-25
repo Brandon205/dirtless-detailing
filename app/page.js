@@ -21,7 +21,7 @@ const jsonld = {
   priceRange: "$$$",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "9305 205th Ave E",
+    streetAddress: "28120 WA-410, Building C6",
     addressLocality: "Bonney Lake",
     addressRegion: "WA",
     postalCode: "98391",
@@ -142,12 +142,10 @@ export default function Home() {
 
       <div className="service-bkg pt-0">
         <Benefits />
-
         <div className="general-container new-heading-container pt-5">
           <strong className="above-heading"> Interior Services </strong>
           <h2 className="new-heading">Transform your vehicle's interior with our Premium Auto Detailing services.</h2>
         </div>
-
         <div className="otherservices-subcontainer">
           <div className="popular-services-card">
             <div className="new-banner">
@@ -297,16 +295,13 @@ export default function Home() {
             </div>
           </div>
         </div>
-
         <br className="extra-space" />
-
         <div className="general-container new-heading-container" style={{ margin: "5vh auto 2vh auto" }}>
           <strong className="above-heading"> Exterior Services </strong>
           <h3 className="new-heading">
             From a quick refresh to a complete paint correction, we cover all things exterior.
           </h3>
         </div>
-
         <div className="otherservices-subcontainer">
           <div className="popular-services-card">
             <div
@@ -495,9 +490,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-
         <br className="extra-space" />
-
         <div className="service-bkg-lighter" style={{ paddingBottom: "5rem" }}>
           <div className="general-container new-heading-container" style={{ margin: "5vh auto 2vh auto" }}>
             <strong className="above-heading">Testimonials</strong>
@@ -568,10 +561,8 @@ export default function Home() {
             className="w-screen"
           />
         </div>
-
         <br className="extra-space" />
         <hr className="pricing__hr" />
-
         <div className="general-container new-heading-container font-bold">
           <h3 style={{ margin: 0, width: "auto", padding: 0 }} className="new-heading new-heading-center">
             AUTO DETAILING FAQ's
@@ -612,11 +603,9 @@ export default function Home() {
               ></iframe> */}
           </div>
         </section>
-
         <br className="extra-space" />
         <hr className="pricing__hr" />
-
-        {/* <h4 className="text-4xl font-bold py-6">24/7 ONLINE PRICING & BOOKING</h4> TODO
+        <h4 className="text-4xl font-bold py-6">24/7 ONLINE PRICING & BOOKING</h4>
         <motion.a
           href="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd"
           className="top-quote-btn max-w-max mx-auto"
@@ -627,10 +616,8 @@ export default function Home() {
           transition={{ duration: 0.25 }}
         >
           BOOK ONLINE!
-        </motion.a> */}
-
+        </motion.a>
         <p className="pt-8 text-2xl">Submit this form to easily get in contact with us!</p>
-
         <fieldset className="urable-form-container">
           <iframe
             className="w-4/5 mx-auto lg:max-w-50% h-[600px]"

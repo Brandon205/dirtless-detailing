@@ -106,13 +106,13 @@ export default function Footer() {
           <img src="../assets/icons/post.png" alt="email" className="icon-24" /> brenden@dirtlessdetailing.com
         </a>
         <a
-          href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854"
+          href="https://www.google.com/maps/place/28120+WA-410,+Buckley,+WA+98321/@47.1584945,-122.0528836,19.25z/data=!4m15!1m8!3m7!1s0x5490efc0f14df8db:0xb8ec0b100429182f!2s28238+WA-410,+Buckley,+WA+98321!3b1!8m2!3d47.158566!4d-122.052058!16s%2Fg%2F11csp3kvgh!3m5!1s0x5490efc05b8ec6cf:0xb04a141d669a9924!8m2!3d47.158288!4d-122.0530141!16s%2Fg%2F11c0vpg6p9?entry=ttu"
           className="contact-link footer-contact-link underline"
           target="_blank"
           rel="noopener"
         >
-          <img src="../assets/icons/placeMarker.png" alt="place marker" className="icon-24" /> 9305 205th Ave E, Bonney
-          Lake, Wa 98391
+          <img src="../assets/icons/placeMarker.png" alt="place marker" className="icon-24" /> Buckley Business Park,
+          28120 WA-410, Building C6
         </a>
         <br />
         <div>

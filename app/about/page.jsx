@@ -91,11 +91,11 @@ export default function About() {
   const yMovement = useTransform(scrollY.scrollYProgress, [0, 0.32], [0, 30]);
 
   const faqItems = [
-    // {
-    //   title: "Do you detail boats and RV's?",
-    //   description:
-    //     "Yes, however, currently we are only doing boat interiors and washes and no polishing for now. Only Washes on RV's if we come to you, we can polish RV's if you can bring it to our shop! Call or text us to get a quote, price is typically a flat fee per foot in length!",
-    // }, TODO
+    {
+      title: "Do you detail boats and RV's?",
+      description:
+        "Yes, however, currently we are only doing boat interiors and washes and no polishing for now. Only Washes on RV's if we come to you, we can polish RV's if you can bring it to our shop! Call or text us to get a quote, price is typically a flat fee per foot in length!",
+    },
     {
       title: "Can you come to my apartment or workplace?",
       description:
@@ -358,18 +358,18 @@ export default function About() {
             coatings, paint corrections, and engine bay cleanings, we strive to keep your vehicle looking and performing
             its best. Trust us to provide the care and attention to detail that your car deserves.
           </p>
-          {/* <p>
-            Our main shop location is right in{" "}
+          <p>
+            Our shop location is right in the{" "}
             <a
-              href="https://www.google.com/maps/place/9305+205th+Ave+E,+Bonney+Lake,+WA+98391/@47.172835,-122.1589741,17z/data=!3m1!4b1!4m5!3m4!1s0x5490faeb8aa2e3d7:0xe53c2e7cb4aa7549!8m2!3d47.1728314!4d-122.1567854"
+              href="https://www.google.com/maps/place/28120+WA-410,+Buckley,+WA+98321/@47.1585374,-122.052958,19.25z/data=!4m15!1m8!3m7!1s0x5490efc0f14df8db:0xb8ec0b100429182f!2s28238+WA-410,+Buckley,+WA+98321!3b1!8m2!3d47.158566!4d-122.052058!16s%2Fg%2F11csp3kvgh!3m5!1s0x5490efc05b8ec6cf:0xb04a141d669a9924!8m2!3d47.158288!4d-122.0530141!16s%2Fg%2F11c0vpg6p9?entry=ttu"
               className="aside-link"
               target="_blank"
               rel="noopener"
             >
-              Bonney Lake
+              Buckley Business Park
             </a>{" "}
-            off State Route 410.
-          </p> */}
+            Building C6 off State Route 410.
+          </p>
         </div>
 
         <h3 style={{ fontSize: "2.5em" }}>FAQ</h3>

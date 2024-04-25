@@ -22,7 +22,7 @@ const jsonld = {
     addressLocality: "Bonney Lake",
     addressRegion: "WA",
     postalCode: "99391",
-    streetAddress: "9305 205th Ave E",
+    streetAddress: "28120 WA-410, Building C6",
   },
   geo: {
     "@type": "GeoCoordinates",
