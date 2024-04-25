@@ -93,7 +93,6 @@ export default function Home() {
         images={[
           "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover",
           "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/19851827-a8f8-4045-11cf-a6bdef3c4100/cover",
-          // "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a5ae04c4-b5b2-4f20-afa8-d09d029d0700/cover", TODO
           "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/16add6ea-28d3-43ab-dc07-584e09e47500/cover",
           "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3a1a1e74-854b-4aa9-ae8e-06816ec80200/cover",
           "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ae30d18b-03c1-4632-e50d-3e047b633400/cover",
@@ -101,7 +100,7 @@ export default function Home() {
           "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/15bf1809-0cee-4975-95ed-808adcf12100/cover",
         ]}
       >
-        <header className="flex flex-col items-center min-h-[90vh] pt-28 z-50 xl:items-start xl:gap-3 xl:pt-14 text-sm xl:text-lg xl:justify-center">
+        <header className="flex flex-col items-center h-[90vh] pt-28 z-50 xl:items-start xl:gap-3 xl:pt-14 text-sm xl:text-lg xl:justify-center">
           <h1
             className={`${titillium.className} text-white text-5xl xl:text-8xl text-center xl:text-left font-bold m-0`}
           >
