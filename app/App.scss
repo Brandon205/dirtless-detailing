@@ -906,6 +906,8 @@ option {
 }
 
 .icon-36 {
+  display: inline;
+  margin: auto 0;
   width: 36px;
 }
 
@@ -2250,6 +2252,11 @@ footer {
 
 .aside-link {
   color: $link-text;
+
+  img {
+    display: grid;
+    place-items: center;
+  }
 }
 
 .contact-aside {

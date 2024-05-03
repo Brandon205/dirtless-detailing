@@ -2,13 +2,7 @@
 import PricingComponent from "../../../utils/PricingComponent";
 import ImageSlider from "../../../utils/ImageSlider";
 import HeaderComponent from "../../components/HeaderComponent";
-import {
-  previewParentVariation,
-  imgVariation1,
-  imgVariation2,
-  imgVariation3,
-  imgVariation4,
-} from "../../../utils/animationVariations";
+import { previewParentVariation, imgVariation1, imgVariation2, imgVariation3, imgVariation4 } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
 
 const jsonld = {
@@ -20,16 +14,16 @@ const jsonld = {
     "Get your car's interior looking brand new with our full interior detailing service. We offer thorough cleaning and conditioning of all surfaces, including the dashboard, seats, and carpets. Contact us to schedule your appointment today.",
   "brand": {
     "@type": "Brand",
-    "name": "Dirt-Less Detailing",
+    "name": "Dirt-Less Detailing"
   },
   "offers": {
     "@type": "AggregateOffer",
     "url": "https://www.dirtlessdetailing.com/services/interior",
     "priceCurrency": "USD",
     "lowPrice": "300",
-    "highPrice": "375",
+    "highPrice": "375"
   },
-  "url": "https://www.dirtlessdetailing.com/services/interior",
+  "url": "https://www.dirtlessdetailing.com/services/interior"
 };
 
 export default function FullIntEx() {
@@ -53,22 +47,20 @@ export default function FullIntEx() {
               <hr style={{ margin: "0 auto 3rem auto" }} />
               <div className="service-explain">
                 <p>
-                  The goal of the Full Interior Cleaning package is to restore your interior to its best condition. Your
-                  carpet, seats, floor mats, plastics, windows, and all other interior fixtures will be meticulously
-                  cleaned.
+                  The goal of the Full Interior Cleaning package is to restore your interior to its best condition. Your carpet, seats, floor mats, plastics,
+                  windows, and all other interior fixtures will be meticulously cleaned.
                 </p>
                 <p>
-                  While we will attempt to remove all stains, many stains could prove to be more challenging to remove,
-                  or might not be completely removed. Some won't completely disappear depending on the kind of stain,
-                  how long it has been sitting, and the material the stain is on.
+                  While we will attempt to remove all stains, many stains could prove to be more challenging to remove, or might not be completely removed. Some
+                  won't completely disappear depending on the kind of stain, how long it has been sitting, and the material the stain is on.
                 </p>
                 <p>
-                  Taking us by surprise is difficult. We will not think that your interior is too dirty. We've seen
-                  hundreds of different interiors, and have all the necessary tools for every situation.
+                  Taking us by surprise is difficult. We will not think that your interior is too dirty. We've seen hundreds of different interiors, and have
+                  all the necessary tools for every situation.
                 </p>
                 <p>
-                  Want the outside done as well? Simply book an interior and exterior service, we'll do the hard work to
-                  get your car back to its best condition! Check out our exterior offers{" "}
+                  Want the outside done as well? Simply book an interior and exterior service, we'll do the hard work to get your car back to its best
+                  condition! Check out our exterior offers{" "}
                   <a href="/services/exterior" className="aside-link">
                     here
                   </a>
@@ -82,9 +74,7 @@ export default function FullIntEx() {
                 <h3 className="pricing__heading">
                   <span className="accent-orange bold">Full Interior</span> Pricing
                 </h3>
-                <strong className="pricing__subheading">
-                  Select your vehicle size below to get a quick price estimate for your vehicle.
-                </strong>
+                <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
               <PricingComponent prices={[300, 300, 300, 335, 375, 375]} addons="interior" />
             </div>
@@ -97,9 +87,7 @@ export default function FullIntEx() {
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Expose Hidden Dirt</h4>
-                  <p className="step-desc">
-                    Blow out all hidden dirt and debris and gets areas that are hard to reach with a vacuum.
-                  </p>
+                  <p className="step-desc">Blow out all hidden dirt and debris and gets areas that are hard to reach with a vacuum.</p>
                 </div>
               </li>
               <li className="item">
@@ -117,10 +105,7 @@ export default function FullIntEx() {
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Hot Water Extraction (stain removal)</h4>
-                  <p className="step-desc">
-                    Remove/Extract all stains that we can. We will be sure to get all carpets, floor mats, and cloth
-                    seats.
-                  </p>
+                  <p className="step-desc">Remove/Extract all stains that we can. We will be sure to get all carpets, floor mats, and cloth seats.</p>
                 </div>
               </li>
               <li className="item">
@@ -147,10 +132,7 @@ export default function FullIntEx() {
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Window Cleaning</h4>
-                  <p className="step-desc">
-                    Clean all windows and other glass, removing any streaking possibly left behind from the previous
-                    steps.
-                  </p>
+                  <p className="step-desc">Clean all windows and other glass, removing any streaking possibly left behind from the previous steps.</p>
                 </div>
               </li>
               <li className="item item-disabled">
@@ -160,16 +142,15 @@ export default function FullIntEx() {
                   </h3>
                 </div>
                 <div className="step-container">
-                  <h4 className="step-title">
+                  <h4 className="step-title flex">
                     Interior Spill Guard Coating{" "}
                     <a href="/services/interior-spill">
                       <img src="../assets/icons/linking.png" alt="external link" className="icon-24" />
                     </a>
                   </h4>
                   <p className="step-desc">
-                    Upgrade to our Spill Guard Service to have us apply a 1 year interior ceramic coating to all
-                    surfaces in the vehicle. This is PERFECT for cars with kids, pets, or daily coffee trips with the
-                    occasional spills as cleaning it will now be easier. See more info{" "}
+                    Upgrade to our Spill Guard Service to have us apply a 1 year interior ceramic coating to all surfaces in the vehicle. This is PERFECT for
+                    cars with kids, pets, or daily coffee trips with the occasional spills as cleaning it will now be easier. See more info{" "}
                     <a href="/services/interior-spill" className="aside-link">
                       here
                     </a>
@@ -191,23 +172,17 @@ export default function FullIntEx() {
               afterOffset={0}
             />
 
-            <iframe
+            {/* <iframe
               style={{ width: "80%", height: "700px" }}
               src="https://www.youtube.com/embed/W5HOGIvRppI"
               title="Red Genesis SUV Transformation | Revitalizing Brilliance with Professional Detailing"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
-            ></iframe>
+            ></iframe> */}
 
             <div className="preview-container">
-              <motion.a
-                initial="rest"
-                whileHover="hover"
-                variants={previewParentVariation}
-                href="/gallery/interior"
-                className="gallery-preview"
-              >
+              <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/interior" className="gallery-preview">
                 <motion.img
                   variants={imgVariation1}
                   src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0e2bc8e9-28e8-4888-200b-86674d466600/public"
@@ -236,19 +211,12 @@ export default function FullIntEx() {
               <div className="preview-content">
                 <h4>
                   See examples of our interior{" "}
-                  <a href="/gallery/interior" className="aside-link">
-                    work{" "}
-                    <img
-                      src="../assets/icons/linking.png"
-                      style={{ marginLeft: "0.5rem" }}
-                      alt="external link"
-                      className="icon-36"
-                    />
+                  <a href="/gallery/interior" className="aside-link flex">
+                    work <img src="../assets/icons/linking.png" style={{ marginLeft: "0.5rem" }} alt="external link" className="icon-36 inline" />
                   </a>
                 </h4>
                 <p>
-                  Our interior gallery page has a large collection of interior images including before and after
-                  pictures! Check it out{" "}
+                  Our interior gallery page has a large collection of interior images including before and after pictures! Check it out{" "}
                   <a href="/gallery/interior" className="aside-link">
                     here
                   </a>

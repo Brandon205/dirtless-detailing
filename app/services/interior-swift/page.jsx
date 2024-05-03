@@ -1,13 +1,7 @@
 "use client";
 import PricingComponent from "../../../utils/PricingComponent";
 import HeaderComponent from "../../components/HeaderComponent";
-import {
-  previewParentVariation,
-  imgVariation1,
-  imgVariation2,
-  imgVariation3,
-  imgVariation4,
-} from "../../../utils/animationVariations";
+import { previewParentVariation, imgVariation1, imgVariation2, imgVariation3, imgVariation4 } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
 
 const jsonld = {
@@ -19,16 +13,16 @@ const jsonld = {
     "Our Swift Interior Detail is our new service tailored to giving you a quick, easy, and budget friendly option to completely revamp your vehicles interior! Contact us to schedule your appointment today.",
   "brand": {
     "@type": "Brand",
-    "name": "Dirt-Less Detailing",
+    "name": "Dirt-Less Detailing"
   },
   "offers": {
     "@type": "AggregateOffer",
     "url": "https://www.dirtlessdetailing.com/services/interior-swift",
     "priceCurrency": "USD",
     "lowPrice": "150",
-    "highPrice": "200",
+    "highPrice": "200"
   },
-  "url": "https://www.dirtlessdetailing.com/services/interior-swift",
+  "url": "https://www.dirtlessdetailing.com/services/interior-swift"
 };
 
 export default function FullIntEx() {
@@ -52,25 +46,22 @@ export default function FullIntEx() {
               <hr style={{ margin: "0 auto 3rem auto" }} />
               <div className="service-explain">
                 <p>
-                  Our Swift Interior Detail is a package aimed at refreshing and maintaining your vehicle's interior
-                  without the the cost of ultra deep cleaning from our full interior package. This service starts with
-                  thorough vacuum to eliminate visible dirt and debris, ensuring a tidier and more pleasant interior.
+                  Our Swift Interior Detail is a package aimed at refreshing and maintaining your vehicle's interior without the the cost of ultra deep cleaning
+                  from our full interior package. This service starts with thorough vacuum to eliminate visible dirt and debris, ensuring a tidier and more
+                  pleasant interior.
                 </p>
                 <p>
-                  The Swift Interior Detail also includes all interior surfaces being wiped down thoroughly, such as
-                  dashboards, consoles, and door panels. For this step we use a revolutionary new product that allows us
-                  to clean, and condition all in one step, Saving us time and you money! All your interior surfaces will
-                  look and feel refreshed!
+                  The Swift Interior Detail also includes all interior surfaces being wiped down thoroughly, such as dashboards, consoles, and door panels. For
+                  this step we use a revolutionary new product that allows us to clean, and condition all in one step, Saving us time and you money! All your
+                  interior surfaces will look and feel refreshed!
                 </p>
                 <p>
-                  Additionally, our experts clean the interior windows and mirrors with a streak free finish. The last
-                  step for the swift detail is cleaning you're floor mats! We ensure that your floor mats are thoroughly
-                  cleaned without causing damage, discoloration or a slippery feel.
+                  Additionally, our experts clean the interior windows and mirrors with a streak free finish. The last step for the swift detail is cleaning
+                  you're floor mats! We ensure that your floor mats are thoroughly cleaned without causing damage, discoloration or a slippery feel.
                 </p>
                 <p>
-                  <span className="special-package">NOTE:</span> Please note that this is not a deep cleaning service
-                  but rather a targeted approach to sprucing up your vehicle's interior.If you are looking for a more in
-                  depth thorough interior detailing experience, take a look at our{" "}
+                  <span className="special-package">NOTE:</span> Please note that this is not a deep cleaning service but rather a targeted approach to sprucing
+                  up your vehicle's interior.If you are looking for a more in depth thorough interior detailing experience, take a look at our{" "}
                   <a href="/services/interior" className="aside-link">
                     Full Interior Detail
                   </a>
@@ -84,9 +75,7 @@ export default function FullIntEx() {
                 <h3 className="pricing__heading">
                   <span className="accent-orange bold">Swift Interior</span> Pricing
                 </h3>
-                <strong className="pricing__subheading">
-                  Select your vehicle size below to get a quick price estimate for your vehicle.
-                </strong>
+                <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
               <PricingComponent prices={[150, 150, 150, 175, 175, 200]} addons="interior" />
             </div>
@@ -108,10 +97,7 @@ export default function FullIntEx() {
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Wipe Down</h4>
-                  <p className="step-desc">
-                    Using a revolutionary new cleaning and conditioning product we'll wipe down all surfaces in your
-                    cars interior.
-                  </p>
+                  <p className="step-desc">Using a revolutionary new cleaning and conditioning product we'll wipe down all surfaces in your cars interior.</p>
                 </div>
               </li>
               <li className="item">
@@ -137,13 +123,7 @@ export default function FullIntEx() {
             <br className="extra-space" />
 
             <div className="preview-container">
-              <motion.a
-                initial="rest"
-                whileHover="hover"
-                variants={previewParentVariation}
-                href="/gallery/interior"
-                className="gallery-preview"
-              >
+              <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/interior" className="gallery-preview">
                 <motion.img
                   variants={imgVariation1}
                   src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0e2bc8e9-28e8-4888-200b-86674d466600/public"
@@ -172,14 +152,8 @@ export default function FullIntEx() {
               <div className="preview-content">
                 <h4>
                   See more examples of our interior{" "}
-                  <a href="/gallery/interior" className="aside-link">
-                    work{" "}
-                    <img
-                      src="../assets/icons/linking.png"
-                      style={{ marginLeft: "0.5rem" }}
-                      alt="external link"
-                      className="icon-36"
-                    />
+                  <a href="/gallery/interior" className="aside-link flex">
+                    work <img src="../assets/icons/linking.png" style={{ marginLeft: "0.5rem" }} alt="external link" className="icon-36" />
                   </a>
                 </h4>
                 <p>

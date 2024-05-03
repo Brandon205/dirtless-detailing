@@ -1,13 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import PricingComponent from "../../../utils/PricingComponent";
-import {
-  previewParentVariation,
-  imgVariation1,
-  imgVariation2,
-  imgVariation3,
-  imgVariation4,
-} from "../../../utils/animationVariations";
+import { previewParentVariation, imgVariation1, imgVariation2, imgVariation3, imgVariation4 } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
 import HeaderComponent from "../../components/HeaderComponent";
 
@@ -20,16 +14,16 @@ const jsonld = {
     "et your car's interior looking brand new with our full interior detailing service, topped off with a ceramic coating to protect your vehicle from day to day use! Contact us to schedule your appointment today.",
   "brand": {
     "@type": "Brand",
-    "name": "Dirt-Less Detailing",
+    "name": "Dirt-Less Detailing"
   },
   "offers": {
     "@type": "AggregateOffer",
     "url": "https://www.dirtlessdetailing.com/services/interior-spill",
     "priceCurrency": "USD",
     "lowPrice": "450",
-    "highPrice": "575",
+    "highPrice": "575"
   },
-  "url": "https://www.dirtlessdetailing.com/services/interior-spill",
+  "url": "https://www.dirtlessdetailing.com/services/interior-spill"
 };
 
 export default function InteriorSpill() {
@@ -55,23 +49,21 @@ export default function InteriorSpill() {
               <hr style={{ margin: "0 auto 3rem auto" }} />
               <div className="service-explain">
                 <p>
-                  If your cars interior is often put under heavy use by kids, food, drinks, and even animals, then this
-                  is the best choice for you. Not only will we remove the past few months of dirt, french fries, and who
-                  knows what else, but we'll also protect your interior for time to come!
+                  If your cars interior is often put under heavy use by kids, food, drinks, and even animals, then this is the best choice for you. Not only
+                  will we remove the past few months of dirt, french fries, and who knows what else, but we'll also protect your interior for time to come!
                 </p>
                 <p>
-                  With the Spill Guard option, you'll get a layer of ceramic coating applied to all materials of your
-                  vehicle, even the fabric! Now cleanup from life's accidents will be far easier as the coating will act
-                  as a protective layer, which will give you more time to clean up before things soak in.
+                  With the Spill Guard option, you'll get a layer of ceramic coating applied to all materials of your vehicle, even the fabric! Now cleanup from
+                  life's accidents will be far easier as the coating will act as a protective layer, which will give you more time to clean up before things
+                  soak in.
                 </p>
                 <p>
-                  And don't worry, the coating doesn't act like the cheap conditioners, and make all surfaces slippery.
-                  All materials will feel similar, look similar, and you won't be sliding around in your seat when you
-                  drive like other products.
+                  And don't worry, the coating doesn't act like the cheap conditioners, and make all surfaces slippery. All materials will feel similar, look
+                  similar, and you won't be sliding around in your seat when you drive like other products.
                 </p>
                 <p>
-                  Do you need the outside detailed as well? Feel free to book an interior and exterior detail. It's the
-                  best way to get your whole vehicle brought back to life! Check out our base exterior cleaning{" "}
+                  Do you need the outside detailed as well? Feel free to book an interior and exterior detail. It's the best way to get your whole vehicle
+                  brought back to life! Check out our base exterior cleaning{" "}
                   <a href="/services/exterior" className="aside-link">
                     here
                   </a>
@@ -86,9 +78,7 @@ export default function InteriorSpill() {
                 <h3 className="pricing__heading">
                   <span className="accent-orange bold">Full Interior + Spill Guard</span> Pricing
                 </h3>
-                <strong className="pricing__subheading">
-                  Select your vehicle size below to get a quick price estimate for your vehicle.
-                </strong>
+                <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
               <PricingComponent prices={[450, 450, 450, 500, 575, 575]} addons="interior" />
             </div>
@@ -101,9 +91,7 @@ export default function InteriorSpill() {
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Expose Hidden Dirt</h4>
-                  <p className="step-desc">
-                    Blow out all hidden dirt and debris and gets areas that are hard to reach with a vacuum.
-                  </p>
+                  <p className="step-desc">Blow out all hidden dirt and debris and gets areas that are hard to reach with a vacuum.</p>
                 </div>
               </li>
               <li className="item">
@@ -121,10 +109,7 @@ export default function InteriorSpill() {
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Hot Water Extraction (stain removal)</h4>
-                  <p className="step-desc">
-                    Remove/Extract all stains that we can. We will be sure to get all carpets, floor mats, and cloth
-                    seats.
-                  </p>
+                  <p className="step-desc">Remove/Extract all stains that we can. We will be sure to get all carpets, floor mats, and cloth seats.</p>
                 </div>
               </li>
               <li className="item">
@@ -151,10 +136,7 @@ export default function InteriorSpill() {
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Window Cleaning</h4>
-                  <p className="step-desc">
-                    Clean all windows and other glass, removing any streaking possibly left behind from the previous
-                    steps.
-                  </p>
+                  <p className="step-desc">Clean all windows and other glass, removing any streaking possibly left behind from the previous steps.</p>
                 </div>
               </li>
               <li className="item">
@@ -164,9 +146,8 @@ export default function InteriorSpill() {
                 <div className="step-container">
                   <h4 className="step-title">Interior Spill Guard Coating</h4>
                   <p className="step-desc">
-                    Apply a 1 year interior ceramic coating to all surfaces in the vehicle. This is PERFECT for cars
-                    with kids, pets, or daily coffee trips with the occasional spills, as cleaning it will now be much
-                    easier.
+                    Apply a 1 year interior ceramic coating to all surfaces in the vehicle. This is PERFECT for cars with kids, pets, or daily coffee trips with
+                    the occasional spills, as cleaning it will now be much easier.
                   </p>
                 </div>
               </li>
@@ -176,22 +157,19 @@ export default function InteriorSpill() {
 
             <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
             <h3 className="pricing__heading">Your car like you've never seen it before.</h3>
-            <p className="pricing__subtext">
-              Our interior coating also brings out more color in the plastics and leather without being slippery to the
-              touch.
-            </p>
+            <p className="pricing__subtext">Our interior coating also brings out more color in the plastics and leather without being slippery to the touch.</p>
             <div style={{ display: "grid", marginBottom: "10vh" }} className="place-center">
               <div className="slider-container">
                 <div
                   style={{
-                    backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/907d2e8b-5d24-40bf-387e-90be139c2d00/public')`,
+                    backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/907d2e8b-5d24-40bf-387e-90be139c2d00/public')`
                   }}
                   className="slider-img"
                 ></div>
                 <div
                   style={{
                     width: slide + "%",
-                    backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/70e54f6b-a9f8-48aa-a9af-893776082400/public')`,
+                    backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/70e54f6b-a9f8-48aa-a9af-893776082400/public')`
                   }}
                   className="slider-img foreground"
                 ></div>
@@ -210,13 +188,7 @@ export default function InteriorSpill() {
             </div>
 
             <div className="preview-container">
-              <motion.a
-                initial="rest"
-                whileHover="hover"
-                variants={previewParentVariation}
-                href="/gallery/interior"
-                className="gallery-preview"
-              >
+              <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/interior" className="gallery-preview">
                 <motion.img
                   variants={imgVariation1}
                   src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f6170666-70f6-487c-4db8-26125453df00/public"
@@ -245,19 +217,12 @@ export default function InteriorSpill() {
               <div className="preview-content">
                 <h4>
                   See examples of our interior{" "}
-                  <a href="/gallery/interior" className="aside-link">
-                    work{" "}
-                    <img
-                      src="../assets/icons/linking.png"
-                      style={{ marginLeft: "0.5rem" }}
-                      alt="external link"
-                      className="icon-36"
-                    />
+                  <a href="/gallery/interior" className="aside-link flex">
+                    work <img src="../assets/icons/linking.png" style={{ marginLeft: "0.5rem" }} alt="external link" className="icon-36" />
                   </a>
                 </h4>
                 <p>
-                  Our interior gallery page has a large collection of interior images including before and after
-                  pictures! Check it out{" "}
+                  Our interior gallery page has a large collection of interior images including before and after pictures! Check it out{" "}
                   <a href="/gallery/interior" className="aside-link">
                     here
                   </a>
