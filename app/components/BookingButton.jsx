@@ -2,8 +2,11 @@ import { motion } from "framer-motion";
 
 export function BookingButton({ title }) {
   return (
-    <motion.button
-      initial={{ "--x": "100%", scale: 1 }}
+    <motion.a
+      href="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd"
+      target="_blank"
+      rel="noopener"
+      initial={{ "--x": "100%", "scale": 1 }}
       animate={{ "--x": "-100%" }}
       whileTap={{ scale: 0.97 }}
       transition={{
@@ -18,15 +21,13 @@ export function BookingButton({ title }) {
           type: "spring",
           stiffness: 10,
           damping: 5,
-          mass: 0.1,
-        },
+          mass: 0.1
+        }
       }}
-      className="px-6 py-2 rounded-md relative radial-gradient mx-auto"
+      className="px-6 py-2 rounded-md relative radial-gradient mx-auto inline-block"
     >
-      <span className="text-neutral-100 font-medium tracking-wide h-full text-3xl w-full block relative linear-mask">
-        {title}
-      </span>
+      <span className="text-neutral-100 font-medium tracking-wide h-full text-3xl w-full block relative linear-mask">{title}</span>
       <span className="block absolute inset-0 rounded-md p-[2px] linear-overlay" />
-    </motion.button>
+    </motion.a>
   );
 }

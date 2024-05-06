@@ -1801,10 +1801,10 @@ footer {
   text-align: left;
 }
 
-.above-heading::before,
-.above-heading::after {
-  content: "---";
-}
+// .above-heading::before,
+// .above-heading::after {
+//   content: "---";
+// }
 
 .new-heading {
   font-size: 2em;
@@ -3589,7 +3589,7 @@ footer {
   }
 
   .contact-info-cards {
-    width: 40%;
+    width: 70%;
   }
 
   .contact-information {
@@ -3619,9 +3619,9 @@ footer {
     font-size: 3em;
   }
 
-  .above-heading::before {
-    content: "---";
-  }
+  // .above-heading::before {
+  //   content: "---";
+  // }
 
   .above-heading::after {
     content: "";
