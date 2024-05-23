@@ -125,30 +125,38 @@ export default function Home() {
       <div className="service-bkg pt-0">
         <Benefits />
 
-        <div className="border border-primary relative px-6 pt-2 pb-6 w-5/6 mx-auto rounded-lg mt-12">
-          <div className="border rounded-full absolute -top-6 -left-6 p-4">
+        <div className="border-2 border-primary relative px-6 pt-2 pb-6 w-5/6 mx-auto rounded-lg mt-12">
+          <div className="border-2 border-primary bg-contactBkg rounded-full absolute -top-6 -left-6 p-4">
             <Image src="/assets/icons/locationPing.svg" width={45} height={45} alt="location icon" />
           </div>
-          <strong className="text-3xl italic text-left block mb-8 pl-8">NEW SHOP LOCATION!</strong>
-          <p className="text-left">We are now located in the Buckley Business Park just 5 minutes down 410 from our previous location!</p>
-          <p className="text-left">With 3x more space we can easily get more people in, allowing way more booking availability and flexibility.</p>
-          <div className="flex gap-4 flex-wrap text-left">
-            <a
-              href="https://www.google.com/maps/place/28120+WA-410,+Buckley,+WA+98321/@47.1584945,-122.0528836,19.25z/data=!4m15!1m8!3m7!1s0x5490efc0f14df8db:0xb8ec0b100429182f!2s28238+WA-410,+Buckley,+WA+98321!3b1!8m2!3d47.158566!4d-122.052058!16s%2Fg%2F11csp3kvgh!3m5!1s0x5490efc05b8ec6cf:0xb04a141d669a9924!8m2!3d47.158288!4d-122.0530141!16s%2Fg%2F11c0vpg6p9?entry=ttu"
-              className="contact-link footer-contact-link underline text-blue"
-              target="_blank"
-              rel="noopener"
-            >
-              <img src="../assets/icons/placeMarker.png" alt="place marker" className="icon-24" /> Buckley Business Park, 28120 WA-410, Building C6
-            </a>
-            <a
+          <strong className="text-4xl italic text-left block mb-6 pl-10">NEW LOCATION!</strong>
+          <p className="text-left text-xl">We are now located in the Buckley Business Park just 6 minutes further down 410 from our previous location!</p>
+          <p className="text-left text-xl">
+            With our new larger space we have more availability, can book earlier appointments, and can easily get more people in at a time!
+          </p>
+          <div className="flex gap-4 flex-wrap text-left pt-8">
+            <motion.a
               href="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd"
+              className="top-quote-btn"
+              variants={topBtnVariant}
+              whileHover="hover"
               target="_blank"
               rel="noopener"
-              className="contact-link footer-contact-link underline text-blue"
+              transition={{ duration: 0.25 }}
             >
-              <img src="../assets/icons/clipboard.png" alt="place marker" className="icon-24" /> Book Online Now!
-            </a>
+              <img src="../assets/icons/clipboard.png" alt="clipboard" className="btn-icon" /> Book Online Now!
+            </motion.a>
+            <motion.a
+              href="https://www.google.com/maps/place/28120+WA-410,+Buckley,+WA+98321/@47.1584945,-122.0528836,19.25z/data=!4m15!1m8!3m7!1s0x5490efc0f14df8db:0xb8ec0b100429182f!2s28238+WA-410,+Buckley,+WA+98321!3b1!8m2!3d47.158566!4d-122.052058!16s%2Fg%2F11csp3kvgh!3m5!1s0x5490efc05b8ec6cf:0xb04a141d669a9924!8m2!3d47.158288!4d-122.0530141!16s%2Fg%2F11c0vpg6p9?entry=ttu"
+              className="top-quote-btn btn-secondary"
+              variants={topBtnVariant}
+              whileHover="hover"
+              transition={{ duration: 0.25 }}
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="../assets/icons/google-maps.svg" alt="google maps icon" className="btn-icon" /> View New Location
+            </motion.a>
           </div>
         </div>
 
@@ -200,11 +208,11 @@ export default function Home() {
 
             <hr className="long-hr accent-orange" />
             <div className="popular-link-container">
-              <a href="/contact" className="popular-readmore text-white">
-                Get in Touch!
-              </a>
-              <a href="/services/interior-swift" className="popular-readmore-secondary">
+              <a href="/services/interior-swift" className="popular-readmore text-white">
                 Learn More
+              </a>
+              <a href="/contact" className="popular-readmore-secondary">
+                Get in Touch!
               </a>
             </div>
           </div>
@@ -253,11 +261,11 @@ export default function Home() {
 
             <hr className="long-hr accent-orange" />
             <div className="popular-link-container">
-              <a href="/contact" className="popular-readmore text-white">
-                Get in Touch!
-              </a>
-              <a href="/services/interior" className="popular-readmore-secondary">
+              <a href="/services/interior" className="popular-readmore text-white">
                 Learn More
+              </a>
+              <a href="/contact" className="popular-readmore-secondary">
+                Get in Touch!
               </a>
             </div>
           </div>
@@ -296,11 +304,11 @@ export default function Home() {
 
             <hr className="long-hr accent-orange" />
             <div className="popular-link-container">
-              <a href="/contact" className="popular-readmore text-white">
-                Get in Touch!
+              <a href="/services/interior-spill" className="popular-readmore text-white">
+                Learn More
               </a>
-              <a href="/services/interior-spill" className="popular-readmore-secondary">
-                Learn More{" "}
+              <a href="/contact" className="popular-readmore-secondary">
+                Get in Touch!
               </a>
             </div>
           </div>
@@ -359,11 +367,11 @@ export default function Home() {
 
             <hr className="long-hr accent-orange" />
             <div className="popular-link-container">
-              <a href="/contact" className="popular-readmore text-white">
-                Get in Touch!
+              <a href="/services/exterior" className="popular-readmore text-white">
+                Learn More
               </a>
-              <a href="/services/exterior" className="popular-readmore-secondary">
-                Learn More{" "}
+              <a href="/contact" className="popular-readmore-secondary">
+                Get in Touch!
               </a>
             </div>
           </div>
@@ -421,11 +429,11 @@ export default function Home() {
 
             <hr className="long-hr accent-orange" />
             <div className="popular-link-container">
-              <a href="/contact" className="popular-readmore text-white">
-                Get in Touch!
+              <a href="/services/exterior-seal" className="popular-readmore text-white">
+                Learn More
               </a>
-              <a href="/services/exterior-seal" className="popular-readmore-secondary">
-                Learn More{" "}
+              <a href="/contact" className="popular-readmore-secondary">
+                Get in Touch!
               </a>
             </div>
           </div>
@@ -487,11 +495,11 @@ export default function Home() {
 
             <hr className="long-hr accent-orange" />
             <div className="popular-link-container">
-              <a href="/contact" className="popular-readmore text-white">
-                Get in Touch!
+              <a href="/services/exterior-correct" className="popular-readmore text-white">
+                Learn More
               </a>
-              <a href="/services/exterior-correct" className="popular-readmore-secondary">
-                Learn More{" "}
+              <a href="/contact" className="popular-readmore-secondary">
+                Get in Touch!
               </a>
             </div>
           </div>
