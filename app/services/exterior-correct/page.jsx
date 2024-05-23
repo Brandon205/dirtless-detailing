@@ -345,8 +345,8 @@ export default function ExteriorCorrect() {
 
             <div id="faq" style={{ width: "90%", margin: "0 auto", paddingTop: "2rem" }}>
               <div className="new-heading-container text-white">
-                <strong className="above-heading">Ceramic Coating FAQ</strong>
-                <h3 className="new-heading">Answers for the most commonly asked questions about ceramic coatings.</h3>
+                <strong className="above-heading text-3xl">Ceramic Coating FAQ</strong>
+                <h3 className="new-heading text-xl lg:text-2xl">Answers for the most commonly asked questions about ceramic coatings.</h3>
               </div>
               <div className="faq-container" style={{ color: "white" }}>
                 {faqItems.map((item, i) => (

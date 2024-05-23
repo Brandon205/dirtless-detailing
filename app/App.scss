@@ -1700,12 +1700,13 @@ footer {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 25px;
   align-items: center;
 
   div span {
     display: block;
     height: 3px;
-    width: 16px;
+    width: 32px;
     border-radius: 1px;
     background-color: white;
   }
@@ -1796,18 +1797,11 @@ footer {
 
 .above-heading {
   color: #c0c0c0;
-  font-size: 24px;
   margin: 0 auto 0 0;
   text-align: left;
 }
 
-// .above-heading::before,
-// .above-heading::after {
-//   content: "---";
-// }
-
 .new-heading {
-  font-size: 2em;
   width: 100%;
   padding-bottom: 2rem;
 }
@@ -2176,7 +2170,7 @@ footer {
 
 .step-title {
   font-size: 1.3em;
-  margin: 0.5rem 0 0 0;
+  margin: 0 0 0.5rem 0;
 }
 
 .step-desc {
@@ -2856,6 +2850,7 @@ footer {
   max-width: 550px;
   cursor: pointer;
   position: relative;
+  padding-bottom: 1rem;
 
   img:nth-child(1) {
     grid-column: 1/2;
@@ -3446,14 +3441,6 @@ footer {
 
   .faq-title {
     font-size: 1.2em;
-
-    div span {
-      display: block;
-      height: 3px;
-      width: 32px;
-      border-radius: 1px;
-      background-color: white;
-    }
   }
 
   .faq-image {
@@ -3493,6 +3480,7 @@ footer {
   }
 
   .gallery-preview {
+    padding-bottom: 0;
     margin: 0;
   }
 
@@ -3616,12 +3604,7 @@ footer {
   .new-heading {
     margin: 0 auto 0 0;
     width: 70%;
-    font-size: 3em;
   }
-
-  // .above-heading::before {
-  //   content: "---";
-  // }
 
   .above-heading::after {
     content: "";

@@ -106,9 +106,9 @@ export default function Home() {
               <span className="special-deal-colored">VALENTINES DAY SPECIAL</span>: Book through Urable below and use code
               <span className="special-deal-colored bold"> VALENTINE10</span> to save 10% on any In Shop Detail!
             </p> */}
-          <p className="text-white max-w-screen-lg text-left m-0 text-lg hidden xl:block">
-            Anything from a simple interior detail, to the most detail oriented paint correction ceramic coating jobs, you can trust Dirt-Less Detailing to get
-            the job done right!
+          <p className="text-white max-w-screen-lg text-left m-0 text-xl hidden xl:block">
+            Everything from a simple interior detail, to the most detail oriented paint correction and ceramic coating jobs, you can trust Dirt-Less Detailing
+            to get the job done right!
           </p>
 
           <div className="flex gap-10 pt-8 flex-col lg:flex-row">
@@ -130,7 +130,7 @@ export default function Home() {
             <Image src="/assets/icons/locationPing.svg" width={45} height={45} alt="location icon" />
           </div>
           <strong className="text-4xl italic text-left block mb-6 pl-10">NEW LOCATION!</strong>
-          <p className="text-left text-xl">We are now located in the Buckley Business Park just 6 minutes further down 410 from our previous location!</p>
+          <p className="text-left text-xl pb-4">We are now located in the Buckley Business Park just 6 minutes further down 410 from our previous location!</p>
           <p className="text-left text-xl">
             With our new larger space we have more availability, can book earlier appointments, and can easily get more people in at a time!
           </p>
@@ -155,14 +155,14 @@ export default function Home() {
               target="_blank"
               rel="noopener"
             >
-              <img src="../assets/icons/google-maps.svg" alt="google maps icon" className="btn-icon" /> View New Location
+              <img src="../assets/icons/google-maps.svg" alt="google maps icon" className="btn-icon" /> View Our New Location
             </motion.a>
           </div>
         </div>
 
         <div className="general-container new-heading-container pt-5">
-          <strong className="above-heading"> Interior Services </strong>
-          <h2 className="new-heading">Transform your vehicle's interior with our Premium Auto Detailing services.</h2>
+          <strong className="above-heading text-3xl"> Interior Services </strong>
+          <h2 className="new-heading text-xl lg:text-2xl">Transform your vehicle's interior with our Premium Auto Detailing services.</h2>
         </div>
         <div className="otherservices-subcontainer">
           <div className="popular-services-card">
@@ -315,8 +315,8 @@ export default function Home() {
         </div>
         <br className="extra-space" />
         <div className="general-container new-heading-container" style={{ margin: "5vh auto 2vh auto" }}>
-          <strong className="above-heading"> Exterior Services </strong>
-          <h3 className="new-heading">From a quick refresh to a complete paint correction, we cover all things exterior.</h3>
+          <strong className="above-heading text-3xl"> Exterior Services </strong>
+          <h3 className="new-heading text-xl lg:text-2xl">From a quick refresh to a complete paint correction, we cover all things exterior.</h3>
         </div>
         <div className="otherservices-subcontainer">
           <div className="popular-services-card">
@@ -507,8 +507,8 @@ export default function Home() {
         <br className="extra-space" />
         <div className="service-bkg-lighter" style={{ paddingBottom: "5rem" }}>
           <div className="general-container new-heading-container" style={{ margin: "5vh auto 2vh auto" }}>
-            <strong className="above-heading">Testimonials</strong>
-            <h3 className="new-heading">Read some of the reviews from our valued customers!</h3>
+            <strong className="above-heading text-3xl">Testimonials</strong>
+            <h3 className="new-heading text-xl lg:text-2xl">Read some of the reviews from our valued customers!</h3>
             <p style={{ margin: 0, padding: "1rem 0" }}>
               See all of the reviews from our customers on our{" "}
               <a style={{ color: "dodgerblue" }} target="_blank" rel="noopener" href="https://www.facebook.com/DirtLessDetailing/reviews">
@@ -568,7 +568,7 @@ export default function Home() {
         <br className="extra-space" />
         <hr className="pricing__hr" />
         <div className="general-container new-heading-container font-bold">
-          <h3 style={{ margin: 0, width: "auto", padding: 0 }} className="new-heading new-heading-center">
+          <h3 style={{ margin: 0, width: "auto", padding: 0 }} className="new-heading new-heading-center text-3xl">
             AUTO DETAILING FAQ's
           </h3>
           <p className="max-w-[900px] mx-auto text-center my-0 font-normal pb-8">
