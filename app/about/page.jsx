@@ -322,13 +322,13 @@ export default function About() {
         <div
           className="about-large-image"
           style={{
-            backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/public')`
+            backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6cc30f3c-c722-4674-b2d6-a4736a57bc00/cover')`
           }}
         >
           <img
             style={{ visibility: "hidden" }}
             alt="Me on the right of polished show truck"
-            src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/public"
+            src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6cc30f3c-c722-4674-b2d6-a4736a57bc00/cover"
           />
         </div>
         <h3 style={{ fontSize: "2.5em", margin: 0, textAlign: smallScreen ? "left" : "center" }}>Dirt-Less Detailing</h3>

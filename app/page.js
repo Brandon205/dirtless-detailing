@@ -55,8 +55,8 @@ export default function Home() {
 
   const faqItems = [
     {
-      title: "What do you need from me when you get here?",
-      description: "All we will need is an electrical outlet, a water spigot, and preferably all/most personal items out of the car."
+      title: "What do you need from me when you get to my house?",
+      description: "All we will need is an electrical outlet, a water spigot, and preferably all/most large personal items out of the car."
     },
     {
       title: "How long will the detail take?",
@@ -377,9 +377,10 @@ export default function Home() {
           </div>
           <div className="popular-services-card">
             <div
-              className="popular-img"
+              className="popular-img bg-center"
               style={{
-                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/public)`
+                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7cf447a9-748b-4811-e2a4-173924515c00/public)`,
+                backgroundPositionY: "top"
               }}
             ></div>
             <div className="popular-header">
