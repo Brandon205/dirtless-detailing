@@ -8,7 +8,7 @@ export const InfiniteMovingCards = ({
   direction = "left",
   speed = "fast",
   pauseOnHover = true,
-  className,
+  className
 }: {
   items: {
     quote: React.ReactNode;
@@ -66,10 +66,7 @@ export const InfiniteMovingCards = ({
   return (
     <div
       ref={containerRef}
-      className={cn(
-        "scroller relative z-20 overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
-        className
-      )}
+      className={cn("scroller relative z-20 overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]", className)}
     >
       <ul
         ref={scrollerRef}
@@ -83,14 +80,14 @@ export const InfiniteMovingCards = ({
           <li
             className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex flex-col justify-center flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
             style={{
-              background: "linear-gradient(180deg, var(--gray-700), var(--gray-800)",
+              background: "linear-gradient(180deg, var(--neutral-700), var(--neutral-800)"
             }}
             key={item.name}
           >
             <blockquote>
               <div
                 aria-hidden="true"
-                className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
+                className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)] tracking-wide"
               ></div>
               {item.quote}
               <div className="relative z-20 mt-6 flex flex-row items-center">

@@ -28,6 +28,10 @@ export default function Contact() {
     <section className="contact-container" id="contact">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
 
+      <h1 className="text-4xl font-bold pb-6 pt-32 text-center">24/7 ONLINE PRICING & BOOKING</h1>
+      <div className="grid items-center" style={{ paddingTop: 0 }}>
+        <BookingButton title="Book Online" />
+      </div>
       <div className="contact-information-container">
         <div className="contact-info-cards">
           <div className="contact-icon-container">
@@ -106,10 +110,6 @@ export default function Contact() {
             frameBorder="0"
           ></iframe>
         </fieldset> */}
-        <h1 className="text-4xl font-bold pb-6 pt-20 text-center">24/7 ONLINE PRICING & BOOKING</h1>
-        <div className="grid items-center" style={{ paddingTop: 0 }}>
-          <BookingButton title="Book Online" />
-        </div>
         <div className="text-center">
           <strong style={{ fontSize: "2rem" }}>Feel free to Text, Call, or reach out using this form!</strong>
           <p style={{ fontSize: "1.3rem" }} className="services-p">

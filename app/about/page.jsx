@@ -98,7 +98,7 @@ export default function About() {
     {
       title: "Do you detail boats and RV's?",
       description:
-        "Yes, however, currently we are only doing boat interiors and washes and no polishing for now. Only Washes on RV's if we come to you, we can polish RV's if you can bring it to our shop! Call or text us to get a quote, price is typically a flat fee per foot in length!"
+        "Yes, however, currently we are only doing boat interiors and washes and no polishing for now. Only Washes on RV's/trailers if we come to you, we can polish RV's if you can bring it to our shop! Call or text us to get a quote, price is typically a flat fee per foot in length!"
     },
     {
       title: "Can you come to my apartment or workplace?",
@@ -229,16 +229,12 @@ export default function About() {
               it all, and perfected how we tackle every aspect of it.
             </p>
             <p>
-              Starting almost a decade ago as a detailer at a autobody shop, I started Dirt-Less Detailing to bring all that I learned from then on to everybody
-              near Bonney Lake.
+              Starting almost a decade ago as a detailer at an autobody shop, I started Dirt-Less Detailing to continue doing what I love doing for everyone in
+              Bonney Lake.
             </p>
             <p>
               Since I started detailing I've put about as much time detailing in as I have doing research about the products and procedures I use, and I have
-              seen the benefits from my research pay off in every car that we detail.
-            </p>
-            <p>
-              Whether it's our Swift Interior Detail or a full paint correction and ceramic coating service I can assure you that the differences will be
-              astonishing!
+              seen the benefits from my research pay off in every car that we detail!
             </p>
           </div>
         </div>

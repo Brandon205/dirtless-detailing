@@ -19,13 +19,8 @@ export default function Footer() {
             Icons made by Icons8.
           </a>
           <br />
-          <a
-            target="_blank"
-            rel="noopener"
-            href="https://github.com/Brandon205"
-            className="text-gray-400 hover:underline"
-          >
-            Design + Code by Brandon.
+          <a target="_blank" rel="noopener" href="https://github.com/Brandon205" className="text-gray-400 hover:underline">
+            Website by Brandon.
           </a>
         </div>
         <div style={{ gap: 32, paddingTop: "1rem" }} className="screen-flex">
@@ -37,7 +32,7 @@ export default function Footer() {
                 width: "110px",
                 height: "105px",
                 backgroundSize: "cover",
-                backgroundPosition: "center",
+                backgroundPosition: "center"
               }}
             ></div>
           </a>
@@ -54,7 +49,7 @@ export default function Footer() {
                 width: "175px",
                 height: "100px",
                 backgroundPosition: "center",
-                backgroundSize: "cover",
+                backgroundSize: "cover"
               }}
             ></div>
           </a>
@@ -94,8 +89,7 @@ export default function Footer() {
       <div className="footer-content-card footer-contact-card" id="contact">
         <h3>CONTACT</h3>
         <a href="tel:2532529758" className="contact-link footer-contact-link underline" rel="noopener">
-          <img src="../assets/icons/phoneMessageColor.png" alt="Phone call / message" className="icon-24" /> (253)
-          252-9758
+          <img src="../assets/icons/phoneMessageColor.png" alt="Phone call / message" className="icon-24" /> (253) 252-9758
         </a>
         <a
           href="mailto:brenden@dirtlessdetailing.com?subject = Schedule a Dirt-Less Detail"
@@ -111,45 +105,20 @@ export default function Footer() {
           target="_blank"
           rel="noopener"
         >
-          <img src="../assets/icons/placeMarker.png" alt="place marker" className="icon-24" /> Buckley Business Park,
-          28120 WA-410, Building C6
+          <img src="../assets/icons/placeMarker.png" alt="place marker" className="icon-24" /> Buckley Business Park, 28120 WA-410, Building C6
         </a>
         <br />
         <div>
-          <a
-            href="https://www.facebook.com/DirtLessDetailing/"
-            className="socials"
-            target="_blank"
-            rel="noopener"
-            aria-label="Facebook"
-          >
+          <a href="https://www.facebook.com/DirtLessDetailing/" className="socials" target="_blank" rel="noopener" aria-label="Facebook">
             <img src="../assets/icons/facebook.svg" alt="facebook" className="icon-48" />
           </a>
-          <a
-            href="https://www.instagram.com/dirt_less_detailing/"
-            className="socials"
-            target="_blank"
-            rel="noopener"
-            aria-label="Instagram"
-          >
+          <a href="https://www.instagram.com/dirt_less_detailing/" className="socials" target="_blank" rel="noopener" aria-label="Instagram">
             <img src="../assets/icons/instagram.svg" alt="instagram" className="icon-48" />
           </a>
-          <a
-            href="https://www.youtube.com/channel/UCsoqP5s4hwkQd_Sd-TVv-jg"
-            className="socials"
-            target="_blank"
-            rel="noopener"
-            aria-label="Youtube"
-          >
+          <a href="https://www.youtube.com/channel/UCsoqP5s4hwkQd_Sd-TVv-jg" className="socials" target="_blank" rel="noopener" aria-label="Youtube">
             <img src="../assets/icons/youtube.svg" alt="youtube" className="icon-48" />
           </a>
-          <a
-            href="https://www.tiktok.com/@brendenflower"
-            className="socials"
-            target="_blank"
-            rel="noopener"
-            aria-label="TikTok"
-          >
+          <a href="https://www.tiktok.com/@brendenflower" className="socials" target="_blank" rel="noopener" aria-label="TikTok">
             <img src="../assets/icons/tiktok.svg" alt="tiktok" className="icon-48" />
           </a>
         </div>
