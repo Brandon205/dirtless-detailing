@@ -507,6 +507,20 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        <br className="extra-space" />
+        <div
+          className="general-container new-heading-container flex flex-col lg:flex-row lg:items-center lg:justify-between"
+          style={{ margin: "5vh auto 2vh auto" }}
+        >
+          <div>
+            <strong className="above-heading text-4xl"> Boats/RV's/Trailers </strong>
+            <h3 className="new-heading text-xl lg:text-2xl">Exterior and Interior detailing services for any of your other vehicles.</h3>
+          </div>
+          <a href="/services/recreational" className="popular-readmore-secondary">
+            Learn More
+          </a>
+        </div>
         <br className="extra-space" />
         <div className="service-bkg-lighter" style={{ paddingBottom: "5rem" }}>
           <div className="general-container new-heading-container" style={{ margin: "5vh auto 2vh auto" }}>

@@ -21,6 +21,10 @@ export default function sitemap() {
       lastModified: new Date("January 20, 2024 12:24:00")
     },
     {
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/services/recreational`,
+      lastModified: new Date("June 4, 2024 12:24:00")
+    },
+    {
       url: `${process.env.NEXT_PUBLIC_BASE_URL}/services/exterior-correct`,
       lastModified: new Date("January 20, 2024 12:24:00")
     },
