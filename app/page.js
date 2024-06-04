@@ -106,7 +106,7 @@ export default function Home() {
               <span className="special-deal-colored">VALENTINES DAY SPECIAL</span>: Book through Urable below and use code
               <span className="special-deal-colored bold"> VALENTINE10</span> to save 10% on any In Shop Detail!
             </p> */}
-          <p className="text-white max-w-screen-lg text-left m-0 text-xl hidden xl:block">
+          <p className="text-white max-w-screen-md text-left m-0 text-xl hidden xl:block">
             Everything from a simple interior detail, to the most detail oriented paint correction and ceramic coating jobs, you can trust Dirt-Less Detailing
             to get the job done right!
           </p>
@@ -161,7 +161,7 @@ export default function Home() {
         </div>
 
         <div className="general-container new-heading-container pt-5">
-          <strong className="above-heading text-3xl"> Interior Services </strong>
+          <strong className="above-heading text-4xl"> Interior Services </strong>
           <h2 className="new-heading text-xl lg:text-2xl">Transform your vehicle's interior with our Premium Auto Detailing services.</h2>
         </div>
         <div className="otherservices-subcontainer">
@@ -315,7 +315,7 @@ export default function Home() {
         </div>
         <br className="extra-space" />
         <div className="general-container new-heading-container" style={{ margin: "5vh auto 2vh auto" }}>
-          <strong className="above-heading text-3xl"> Exterior Services </strong>
+          <strong className="above-heading text-4xl"> Exterior Services </strong>
           <h3 className="new-heading text-xl lg:text-2xl">From a quick refresh to a complete paint correction, we cover all things exterior.</h3>
         </div>
         <div className="otherservices-subcontainer">
@@ -379,7 +379,7 @@ export default function Home() {
             <div
               className="popular-img bg-center"
               style={{
-                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/7cf447a9-748b-4811-e2a4-173924515c00/public)`,
+                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/8b440e8d-d3ed-4363-2638-00f164188100/public)`,
                 backgroundPositionY: "top"
               }}
             ></div>
@@ -490,7 +490,7 @@ export default function Home() {
               </li>
               <li>
                 <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                <p className="checklist-item">Ceramic coating applied to paint (Lasts a Lifetime*!)</p>
+                <p className="checklist-item">Ceramic coating applied to paint (Can last a Lifetime*!)</p>
               </li>
             </ul>
 
@@ -508,7 +508,7 @@ export default function Home() {
         <br className="extra-space" />
         <div className="service-bkg-lighter" style={{ paddingBottom: "5rem" }}>
           <div className="general-container new-heading-container" style={{ margin: "5vh auto 2vh auto" }}>
-            <strong className="above-heading text-3xl">Testimonials</strong>
+            <strong className="above-heading text-4xl">Testimonials</strong>
             <h3 className="new-heading text-xl lg:text-2xl">Read some of the reviews from our valued customers!</h3>
             <p style={{ margin: 0, padding: "1rem 0" }}>
               See all of the reviews from our customers on our{" "}
@@ -569,7 +569,7 @@ export default function Home() {
         <br className="extra-space" />
         <hr className="pricing__hr" />
         <div className="general-container new-heading-container font-bold">
-          <h3 style={{ margin: 0, width: "auto", padding: 0 }} className="new-heading new-heading-center text-3xl">
+          <h3 style={{ margin: 0, width: "auto", padding: 0 }} className="new-heading new-heading-center text-4xl">
             AUTO DETAILING FAQ's
           </h3>
           <p className="max-w-[900px] mx-auto text-center my-0 font-normal pb-8">

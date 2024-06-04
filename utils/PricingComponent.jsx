@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 
 import dynamic from "next/dynamic";
 const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
-  ssr: false,
+  ssr: false
 });
 
 const imagesArr = [
@@ -12,7 +12,7 @@ const imagesArr = [
   "c36a4199-45b3-43d4-9c24-0493603b8f00",
   "de5ece74-66af-46cb-8460-7e0246257b00",
   "89cde8ad-b8a8-4d15-5a65-786ad9772d00",
-  "a205f097-f145-41b5-8af5-98a046dca700",
+  "a205f097-f145-41b5-8af5-98a046dca700"
 ];
 
 const addonsObj = {
@@ -22,10 +22,7 @@ const addonsObj = {
         <img src="../assets/icons/engineBay.png" className="addon-icon" alt="engine bay getting cleaned" />
         <div className="addon-content">
           <h4>Engine Bay Cleaning</h4>
-          <p>
-            We will cover sensitive/electronic areas in the bay, clean and wash, then dress the engine bay to have it
-            looking like new!
-          </p>
+          <p>We will cover sensitive/electronic areas in the bay, clean and wash, then dress the engine bay to have it looking like new!</p>
         </div>
         <div className="addon-addbutton"></div>
         <div className="addon-price">
@@ -36,9 +33,7 @@ const addonsObj = {
         <img src="../assets/icons/ferrari-logo.png" className="addon-icon" alt="Ferrari logo" />
         <div className="addon-content">
           <h4>Debadging</h4>
-          <p>
-            This is the perfect time to get any badges/emblems removed off of your car so that we can polish under them!
-          </p>
+          <p>This is the perfect time to get any badges/emblems removed off of your car so that we can polish under them!</p>
         </div>
         <div className="addon-addbutton"></div>
         <div className="addon-price">
@@ -53,10 +48,7 @@ const addonsObj = {
         <img src="../assets/icons/engineBay.png" className="addon-icon" alt="engine bay getting cleaned" />
         <div className="addon-content">
           <h4>Engine Bay Cleaning</h4>
-          <p>
-            We will cover sensitive/electronic areas in the bay, clean and wash, then dress the engine bay to have it
-            looking like new!
-          </p>
+          <p>We will cover sensitive/electronic areas in the bay, clean and wash, then dress the engine bay to have it looking like new!</p>
         </div>
         <div className="addon-addbutton"></div>
         <div className="addon-price">
@@ -79,7 +71,7 @@ const addonsObj = {
         </div>
       </div>
     </div>
-  ),
+  )
 };
 
 {
@@ -110,10 +102,7 @@ export default function PricingComponent({ prices = props.prices, addons = "" })
 
   return (
     <div className="pricing__container">
-      <div
-        className="pricing__img"
-        style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/${imagesArr[currVal]}/cover)` }}
-      ></div>
+      <div className="pricing__img" style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/${imagesArr[currVal]}/cover)` }}></div>
       <select onChange={(e) => updateValue(e)} className="vehicle__select" value={currVal}>
         <option value="0">2-Door Cars</option>
         <option value="1">Quarter Ton Trucks</option>
@@ -130,11 +119,7 @@ export default function PricingComponent({ prices = props.prices, addons = "" })
             <span className="pricing__pricecard-price">
               $
               {animate ? (
-                <AnimatedNumbers
-                  includeComma
-                  animateToNumber={prices[currVal]}
-                  configs={[{ mass: 1, tension: 320, friction: 100 }]}
-                ></AnimatedNumbers>
+                <AnimatedNumbers includeComma animateToNumber={prices[currVal]} configs={[{ mass: 1, tension: 320, friction: 100 }]}></AnimatedNumbers>
               ) : (
                 prices[currVal]
               )}
@@ -149,7 +134,7 @@ export default function PricingComponent({ prices = props.prices, addons = "" })
       <hr className="pricing__hr" />
 
       <h3 style={{ fontSize: "2em", margin: 0 }} className="text-center">
-        Get even more out of your service with our Add-ons!
+        Get even more out of your service with an Add-on!
       </h3>
 
       {addonsObj[addons]}

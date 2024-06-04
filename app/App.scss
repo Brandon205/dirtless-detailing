@@ -1766,7 +1766,7 @@ footer {
 
 .general-container {
   width: 90%;
-  max-width: 1750px;
+  max-width: 1800px;
   margin: 0 auto;
 }
 
@@ -3555,10 +3555,11 @@ footer {
 
   .otherservices-subcontainer {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: stretch;
     flex-wrap: wrap;
     width: 90%;
+    max-width: 1800px;
     margin: 0 auto;
   }
 
@@ -3605,7 +3606,7 @@ footer {
 
   .new-heading {
     margin: 0 auto 0 0;
-    width: 70%;
+    width: 100%;
   }
 
   .above-heading::after {
