@@ -1,34 +1,28 @@
 "use client";
 import PricingComponent from "../../../utils/PricingComponent";
 import HeaderComponent from "../../components/HeaderComponent";
-import {
-  previewParentVariation,
-  imgVariation1,
-  imgVariation2,
-  imgVariation3,
-  imgVariation4,
-} from "../../../utils/animationVariations";
+import { previewParentVariation, imgVariation1, imgVariation2, imgVariation3, imgVariation4 } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
 import ImageSlider from "../../../utils/ImageSlider";
 
 const jsonld = {
   "@context": "https://schema.org/",
   "@type": "Product",
-  name: "Exterior Decon Wash",
-  image: "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/da3f5734-319b-4301-43c9-7af958fd5600/public",
-  description:
-    "Get a car wash like never before with our Exterior Decon Wash. Where we go in depth to get all corners and remove any paint contaminants.",
-  brand: {
+  "name": "Exterior Decon Wash",
+  "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/da3f5734-319b-4301-43c9-7af958fd5600/public",
+  "description": "Get a car wash like never before with our Exterior Decon Wash. Where we go in depth to get all corners and remove any paint contaminants.",
+  "brand": {
     "@type": "Brand",
-    name: "Dirt-Less Detailing",
+    "name": "Dirt-Less Detailing"
   },
-  offers: {
+  "offers": {
     "@type": "AggregateOffer",
-    url: "https://www.dirtlessdetailing.com/services/exterior",
-    priceCurrency: "USD",
-    lowPrice: "100",
-    highPrice: "150",
+    "url": "https://www.dirtlessdetailing.com/services/exterior",
+    "priceCurrency": "USD",
+    "lowPrice": "100",
+    "highPrice": "150"
   },
+  "url": "https://www.dirtlessdetailing.com/services/exterior"
 };
 
 export default function Exterior() {
@@ -52,22 +46,20 @@ export default function Exterior() {
               <hr style={{ margin: "0 auto 3rem auto" }} />
               <div className="service-explain">
                 <p>
-                  This is our base exterior detailing service. It is designed to give the outside of your vehicle a
-                  thorough cleaning and decontamination. We even top it off with a 3 month ceramic spray to protect it
-                  for time to come.
+                  This is our base exterior detailing service. It is designed to give the outside of your vehicle a thorough cleaning and decontamination. We
+                  even top it off with a 3 month ceramic spray to protect it for time to come.
                 </p>
                 <p>
-                  Wheels and tires can easily be one of the dirtiest parts of a car without you even realizing it, and
-                  brake dust is no joke once it's been on there for a while. Thats why we have a wide array of chemicals
-                  and products to best clean even the dirtiest wheels.
+                  Wheels and tires can easily be one of the dirtiest parts of a car without you even realizing it, and brake dust is no joke once it's been on
+                  there for a while. Thats why we have a wide array of chemicals and products to best clean even the dirtiest wheels.
                 </p>
                 <p>
-                  In our Decon Wash, our goal is not to just give your car a quick mitt wash and call it good. A Decon
-                  Wash is more in-depth removing all contaminants including iron, tar, and tree sap.
+                  In our Decon Wash, our goal is not to just give your car a quick mitt wash and call it good. A Decon Wash is more in-depth removing all
+                  contaminants including iron, tar, and tree sap.
                 </p>
                 <p>
-                  And while we're at it, how's the interior of your car doing? We'd be more than happy to clean it out
-                  as well, no matter the condition! Check out our interior offers{" "}
+                  And while we're at it, how's the interior of your car doing? We'd be more than happy to clean it out as well, no matter the condition! Check
+                  out our interior offers{" "}
                   <a href="/services/interior" className="aside-link">
                     here
                   </a>
@@ -82,9 +74,7 @@ export default function Exterior() {
                 <h3 className="pricing__heading">
                   <span className="accent-orange bold">Exterior Decon Wash</span> Pricing
                 </h3>
-                <strong className="pricing__subheading">
-                  Select your vehicle size below to get a quick price estimate for your vehicle.
-                </strong>
+                <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
               <PricingComponent prices={[100, 100, 100, 125, 150, 150]} addons="exterior" />
             </div>
@@ -106,10 +96,7 @@ export default function Exterior() {
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Wheel Cleaning</h4>
-                  <p className="step-desc">
-                    Clean wheels, wheel wells, and wheel barrels with chemicals made for removing brake dust and road
-                    film.
-                  </p>
+                  <p className="step-desc">Clean wheels, wheel wells, and wheel barrels with chemicals made for removing brake dust and road film.</p>
                 </div>
               </li>
               <li className="item">
@@ -119,9 +106,8 @@ export default function Exterior() {
                 <div className="step-container">
                   <h4 className="step-title">Remove tar and sap</h4>
                   <p className="step-desc">
-                    Remove any tar and sap from the exterior. Especially if your car is white, small black dots of tar
-                    appear usually on the lower panels of the car. We have some of the best products to remove all of
-                    it.
+                    Remove any tar and sap from the exterior. Especially if your car is white, small black dots of tar appear usually on the lower panels of the
+                    car. We have some of the best products to remove all of it.
                   </p>
                 </div>
               </li>
@@ -131,9 +117,7 @@ export default function Exterior() {
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Protect Paint</h4>
-                  <p className="step-desc">
-                    Apply our mix of Ceramic Spray (gives the whole vehicle 3 months of protection).
-                  </p>
+                  <p className="step-desc">Apply our mix of Ceramic Spray (gives the whole vehicle 3 months of protection).</p>
                 </div>
               </li>
               <li className="item">
@@ -170,16 +154,15 @@ export default function Exterior() {
                   </h3>
                 </div>
                 <div className="step-container">
-                  <h4 className="step-title">
+                  <h4 className="step-title flex">
                     All this and more!{" "}
                     <a href="/services/exterior-seal">
                       <img src="../assets/icons/linking.png" alt="external link" className="icon-24" />
                     </a>
                   </h4>
                   <p className="step-desc">
-                    If you opt for our Exterior Seal and Shine package you get all of these services, a full vehicle
-                    polish, specialized windshield and trim coatings, and a top coating of IGL Premier, leaving you with
-                    1 year of total protection! See more info{" "}
+                    If you opt for our Exterior Seal and Shine package you get all of these services, a full vehicle polish, specialized windshield and trim
+                    coatings, and a top coating of IGL Premier, leaving you with 1 year of total protection! See more info{" "}
                     <a href="/services/exterior-seal" className="aside-link">
                       here
                     </a>
@@ -202,13 +185,7 @@ export default function Exterior() {
             />
 
             <div className="preview-container">
-              <motion.a
-                initial="rest"
-                whileHover="hover"
-                variants={previewParentVariation}
-                href="/gallery/exterior"
-                className="gallery-preview"
-              >
+              <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/exterior" className="gallery-preview">
                 <motion.img
                   variants={imgVariation1}
                   src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5ccc928a-c036-489b-fec8-e674a9d0ae00/public"
@@ -237,19 +214,12 @@ export default function Exterior() {
               <div className="preview-content">
                 <h4>
                   See examples of our{" "}
-                  <a href="/gallery/exterior" className="aside-link">
-                    work{" "}
-                    <img
-                      src="../assets/icons/linking.png"
-                      style={{ marginLeft: "0.5rem" }}
-                      alt="external link"
-                      className="icon-36"
-                    />
+                  <a href="/gallery/exterior" className="aside-link flex">
+                    work <img src="../assets/icons/linking.png" style={{ marginLeft: "0.5rem" }} alt="external link" className="icon-36" />
                   </a>
                 </h4>
                 <p>
-                  Check out our exterior gallery page, showing off some of the great results we've gotten over the
-                  years! See it{" "}
+                  Check out our exterior gallery page, showing off some of the great results we've gotten over the years! See it{" "}
                   <a href="/gallery/exterior" className="aside-link">
                     here
                   </a>

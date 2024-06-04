@@ -16,19 +16,13 @@ export default function FaqItem({ i, expanded, setExpanded, title, description, 
         {title}
 
         {isMobile ? (
-          <div style={{ paddingLeft: "1rem" }}>
-            <motion.span
-              animate={{ rotateZ: isOpen ? -45 : 45, x: isOpen ? -5 : -10, y: 3 }}
-              transition={{ duration: 0.4, ease: "anticipate" }}
-            ></motion.span>
+          <div>
+            <motion.span animate={{ rotateZ: isOpen ? -45 : 45, x: isOpen ? -5 : -22, y: 3 }} transition={{ duration: 0.4, ease: "anticipate" }}></motion.span>
             <motion.span animate={{ rotateZ: isOpen ? 45 : -45, x: isOpen ? -5 : 0 }}></motion.span>
           </div>
         ) : (
           <div>
-            <motion.span
-              animate={{ rotateZ: isOpen ? -45 : 45, x: isOpen ? -11 : -22, y: 3 }}
-              transition={{ duration: 0.4, ease: "anticipate" }}
-            ></motion.span>
+            <motion.span animate={{ rotateZ: isOpen ? -45 : 45, x: isOpen ? -11 : -22, y: 3 }} transition={{ duration: 0.4, ease: "anticipate" }}></motion.span>
             <motion.span animate={{ rotateZ: isOpen ? 45 : -45, x: isOpen ? -11 : 0 }}></motion.span>
           </div>
         )}

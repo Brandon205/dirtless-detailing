@@ -18,6 +18,10 @@ $heading-clr1: #fff;
 $link-text: #3b9eff;
 $accent-orange: #fab638;
 
+$radial-gradient-background: $main-clr; /*250, 250, 250*/
+$solid-color-background: rgb(31, 31, 31); /*15, 15, 15*/
+$overlay-color: $main-clr; /*255, 255, 255*/
+
 @mixin justify-center {
   display: flex;
   flex-direction: row;
@@ -65,6 +69,31 @@ div [data-rmiz-modal-overlay="visible"] {
 
 img {
   max-width: 100%;
+}
+
+.radial-gradient {
+  background: radial-gradient(circle at 50% 0%, rgba($radial-gradient-background, 0.1) 0%, rgba($radial-gradient-background, 0.1))
+    rgba($solid-color-background, 1);
+  // background: radial-gradient(circle at 50% 0%, rgba($radial-gradient-background, 0.1) 0%, transparent 60%)
+  //   rgba($solid-color-background, 1);
+}
+
+.linear-mask {
+  mask-image: linear-gradient(-75deg, white calc(var(--x) + 20%), transparent calc(var(--x) + 30%), white calc(var(--x) + 100%));
+  -webkit-mask-image: linear-gradient(-75deg, white calc(var(--x) + 20%), transparent calc(var(--x) + 30%), white calc(var(--x) + 100%));
+}
+
+.linear-overlay {
+  background-image: linear-gradient(
+    -75deg,
+    rgba($overlay-color, 0.1) calc(var(--x) + 20%),
+    rgba($overlay-color, 0.5) calc(var(--x) + 25%),
+    rgba($overlay-color, 0.1) calc(var(--x) + 100%)
+  );
+  mask: linear-gradient(black, black) content-box, linear-gradient(black, black);
+  -webkit-mask: linear-gradient(black, black) content-box, linear-gradient(black, black);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
 }
 
 .App {
@@ -877,6 +906,8 @@ option {
 }
 
 .icon-36 {
+  display: inline;
+  margin: auto 0;
   width: 36px;
 }
 
@@ -1439,7 +1470,6 @@ option {
   text-align: left;
   font-style: italic;
   font-size: 0.9em;
-  line-height: 1.2;
   font-weight: 500;
   letter-spacing: 0.02em;
   transition: 0.25s;
@@ -1574,6 +1604,7 @@ footer {
   background-color: $contact-bkg-lighter;
   box-shadow: 0 1px 8px rgba(255, 255, 255, 0.2);
   color: white;
+  gap: 2rem;
 }
 
 .footer-content-card {
@@ -1669,12 +1700,13 @@ footer {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 25px;
   align-items: center;
 
   div span {
     display: block;
     height: 3px;
-    width: 16px;
+    width: 32px;
     border-radius: 1px;
     background-color: white;
   }
@@ -1734,7 +1766,7 @@ footer {
 
 .general-container {
   width: 90%;
-  max-width: 1750px;
+  max-width: 1800px;
   margin: 0 auto;
 }
 
@@ -1765,18 +1797,11 @@ footer {
 
 .above-heading {
   color: #c0c0c0;
-  font-size: 24px;
   margin: 0 auto 0 0;
   text-align: left;
 }
 
-.above-heading::before,
-.above-heading::after {
-  content: "---";
-}
-
 .new-heading {
-  font-size: 2em;
   width: 100%;
   padding-bottom: 2rem;
 }
@@ -2145,7 +2170,7 @@ footer {
 
 .step-title {
   font-size: 1.3em;
-  margin: 0.5rem 0 0 0;
+  margin: 0 0 0.5rem 0;
 }
 
 .step-desc {
@@ -2221,6 +2246,11 @@ footer {
 
 .aside-link {
   color: $link-text;
+
+  img {
+    display: grid;
+    place-items: center;
+  }
 }
 
 .contact-aside {
@@ -2787,6 +2817,7 @@ footer {
   color: white;
   font-size: 1.5em;
   border-radius: 8px;
+  text-align: center;
 }
 
 /*                           Preview Image gallery styling                           */
@@ -2819,6 +2850,7 @@ footer {
   max-width: 550px;
   cursor: pointer;
   position: relative;
+  padding-bottom: 1rem;
 
   img:nth-child(1) {
     grid-column: 1/2;
@@ -2945,7 +2977,8 @@ footer {
 }
 
 .about-large-image {
-  max-width: 1000px;
+  max-width: 800px;
+  max-height: 800px;
   margin: 0 auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -3174,6 +3207,7 @@ footer {
   align-self: center;
   display: flex;
   flex-direction: column;
+  gap: 1rem;
   max-width: 550px;
 }
 
@@ -3215,6 +3249,7 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 0;
   }
 
   .dd-desc {
@@ -3268,9 +3303,6 @@ footer {
 
     p {
       margin: 0;
-    }
-
-    button {
     }
   }
 
@@ -3411,14 +3443,6 @@ footer {
 
   .faq-title {
     font-size: 1.2em;
-
-    div span {
-      display: block;
-      height: 3px;
-      width: 32px;
-      border-radius: 1px;
-      background-color: white;
-    }
   }
 
   .faq-image {
@@ -3458,6 +3482,7 @@ footer {
   }
 
   .gallery-preview {
+    padding-bottom: 0;
     margin: 0;
   }
 
@@ -3530,10 +3555,11 @@ footer {
 
   .otherservices-subcontainer {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: stretch;
     flex-wrap: wrap;
     width: 90%;
+    max-width: 1800px;
     margin: 0 auto;
   }
 
@@ -3554,7 +3580,7 @@ footer {
   }
 
   .contact-info-cards {
-    width: 40%;
+    width: 70%;
   }
 
   .contact-information {
@@ -3580,12 +3606,7 @@ footer {
 
   .new-heading {
     margin: 0 auto 0 0;
-    width: 70%;
-    font-size: 3em;
-  }
-
-  .above-heading::before {
-    content: "---";
+    width: 100%;
   }
 
   .above-heading::after {

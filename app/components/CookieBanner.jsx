@@ -4,14 +4,19 @@ import { useState, useEffect } from "react";
 import posthog from "posthog-js";
 
 export default function CookieBanner() {
-  const [showBanner, setShowBanner] = useState(null);
+  const [showBanner, setShowBanner] = useState(false);
 
   useEffect(() => {
-    if (posthog.has_opted_in_capturing()) {
-      setShowBanner(false);
-    } else {
-      setShowBanner(true);
+    async function getLsData() {
+      let lsCookies = await localStorage.getItem("__ph_opt_in_out_phc_6zuVgx7MjpPq3Jlr4QEi2kLjG2LCDRufmT2PhYVfF9i");
+      if (lsCookies !== null) {
+        setShowBanner(false);
+      } else {
+        setShowBanner(true);
+      }
     }
+
+    getLsData();
   }, []);
 
   function acceptCookies() {

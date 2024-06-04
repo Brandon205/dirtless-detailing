@@ -15,18 +15,18 @@ export const metadata = {
   metadataBase: new URL("https://www.dirtlessdetailing.com"),
   title: {
     default: "Dirt-Less Detailing | Official Site",
-    template: "%s | Dirt-Less Detailing",
+    template: "%s | Dirt-Less Detailing"
   },
-  description: "Bonney Lakes Auto Detailing & Ceramic Coating Specialists",
+  description: "Bonney Lake and Pierce County's Auto Detailing & Ceramic Coating Specialists",
   alternates: { canonical: "https://www.dirtlessdetailing.com/" },
   twitter: {
-    card: "summary_large_image",
+    card: "summary_large_image"
   },
   icons: [{ rel: "icon", url: "/favicon.ico" }],
   openGraph: {
     type: "website",
-    url: "https://www.dirtlessdetailing.com",
-  },
+    url: "https://www.dirtlessdetailing.com"
+  }
 };
 
 export default function RootLayout({ children }) {

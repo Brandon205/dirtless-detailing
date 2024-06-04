@@ -2,43 +2,44 @@
 import { useState, useEffect } from "react";
 import Benefits from "./Benefits";
 import { HeroSlider } from "./components/hero-slider";
+import { BookingButton } from "./components/BookingButton";
 import { topBtnVariant } from "../utils/animationVariations";
 import { motion } from "framer-motion";
 import { Titillium_Web } from "next/font/google";
 import { InfiniteMovingCards } from "./components/InfiniteMovingCards";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./components/Tooltip";
 import FaqItem from "./components/FaqItem";
 import Image from "next/image";
 
 const titillium = Titillium_Web({ weight: ["400", "600"], subsets: ["latin"] });
 
 const jsonld = {
-  "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "Dirt-Less Detailing",
-  image: "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover",
-  url: "https://www.dirtlessdetailing.com",
-  telephone: "2532529758",
-  priceRange: "$$$",
-  address: {
+  "name": "Dirt-Less Detailing",
+  "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover",
+  "url": "https://www.dirtlessdetailing.com",
+  "telephone": "2532529758",
+  "priceRange": "$$$",
+  "address": {
     "@type": "PostalAddress",
-    streetAddress: "9305 205th Ave E",
-    addressLocality: "Bonney Lake",
-    addressRegion: "WA",
-    postalCode: "98391",
-    addressCountry: "US",
+    "streetAddress": "28120 WA-410, Building C6",
+    "addressLocality": "Buckley",
+    "addressRegion": "WA",
+    "postalCode": "98321",
+    "addressCountry": "US"
   },
-  geo: {
+  "geo": {
     "@type": "GeoCoordinates",
-    latitude: 47.1728314,
-    longitude: -122.1567854,
+    "latitude": 47.15803435589099,
+    "longitude": -122.05283957787773
   },
-  openingHoursSpecification: {
+  "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
-    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-    opens: "07:00",
-    closes: "19:00",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "opens": "07:00",
+    "closes": "19:00"
   },
-  sameAs: ["https://www.instagram.com/dirt_less_detailing", "https://www.youtube.com/channel/UCsoqP5s4hwkQd_Sd-TVv-jg"],
+  "sameAs": ["https://www.instagram.com/dirt_less_detailing", "https://www.youtube.com/channel/UCsoqP5s4hwkQd_Sd-TVv-jg"]
 };
 
 export default function Home() {
@@ -55,34 +56,32 @@ export default function Home() {
 
   const faqItems = [
     {
-      title: "What do you need from me when you get here?",
+      title: "What do you need from me when you get to my house?",
+      description: "All we will need is an electrical outlet, a water spigot, and preferably all/most large personal items out of the car."
+    },
+    {
+      title: "How does your vehicle pickup service work?",
       description:
-        "All we will need is an electrical outlet, a water spigot, and preferably all/most personal items out of the car.",
+        "If convenient instead of performing our services mobile at your home there are certain scenarios like weather or dirtier vehicles where we may want to take your vehicle to our shop where we have more facilities and cover to carry out the job. This is offered completely FREE to you and we will bring your vehicle back to you whenever it is done!"
     },
     {
       title: "How long will the detail take?",
       description:
-        "Every job will take a different amount of time, but once we know the condition of the car and the services requested we can give a good estimate as to how long it will take.",
+        "Every job will take a different amount of time, but once we know the condition of the car and the services requested we can give a good estimate as to how long it will take."
     },
     {
       title: "What forms of payment do you take?",
-      description:
-        "We prefer Card/Check payments and can even text invoices to you so that you can pay via card from wherever you are!",
+      description: "We prefer Card/Check payments and can even text or email invoices to you so that you can pay via card from wherever you are!"
     },
     {
       title: "Do you offer gift cards or gift certificates?",
-      description:
-        'Yes we do! Any of our services can be bought as a gift certificate. On the Contact page choose the "For Someone Else" option.',
-    },
-    {
-      title: "Are you licensed and insured?",
-      description: "Yes! We are 100% licensed and insured!",
+      description: 'Yes we do! Any of our services can be bought as a gift certificate. On the Contact page choose the "For Someone Else" option.'
     },
     {
       title: "How does booking with Dirt-Less Detailing work?",
       description:
-        "Once you have booked an appointment with us you're set (if you booked online through Urable you will see your appointment date and time got accepted). From then you'll hear from us again the day before your detail to ensure that the time you picked still works and at this time we'll give you an estimate when we'll get there! ",
-    },
+        "Once you have booked an appointment with us you're set (if you booked online through Urable you will see your appointment date and time got accepted). From then you'll hear from us again the day before your detail to ensure that the time you picked still works and at this time we'll give you an estimate when we'll get there! "
+    }
   ];
 
   return (
@@ -92,18 +91,15 @@ export default function Home() {
         images={[
           "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover",
           "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/19851827-a8f8-4045-11cf-a6bdef3c4100/cover",
-          // "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a5ae04c4-b5b2-4f20-afa8-d09d029d0700/cover", TODO
           "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/16add6ea-28d3-43ab-dc07-584e09e47500/cover",
           "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3a1a1e74-854b-4aa9-ae8e-06816ec80200/cover",
           "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ae30d18b-03c1-4632-e50d-3e047b633400/cover",
           "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c259c052-b75c-4e1f-f467-4010d7182d00/cover",
-          "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/15bf1809-0cee-4975-95ed-808adcf12100/cover",
+          "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/15bf1809-0cee-4975-95ed-808adcf12100/cover"
         ]}
       >
-        <header className="flex flex-col items-center min-h-[90vh] pt-28 z-50 xl:items-start xl:gap-3 xl:pt-14 text-sm xl:text-lg xl:justify-center">
-          <h1
-            className={`${titillium.className} text-white text-5xl xl:text-8xl text-center xl:text-left font-bold m-0`}
-          >
+        <header className="flex flex-col items-center h-[90vh] pt-28 z-50 xl:items-start xl:gap-3 xl:pt-14 text-sm xl:text-lg xl:justify-center">
+          <h1 className={`${titillium.className} text-white text-5xl xl:text-8xl text-center xl:text-left font-bold m-0`}>
             Bonney Lake & Pierce County's
             <br />
             Auto Detailing Specialists
@@ -112,28 +108,16 @@ export default function Home() {
               <span className="special-deal-colored">VALENTINES DAY SPECIAL</span>: Book through Urable below and use code
               <span className="special-deal-colored bold"> VALENTINE10</span> to save 10% on any In Shop Detail!
             </p> */}
-          <p className="text-white max-w-screen-lg text-left m-0 text-lg hidden xl:block">
-            Anything from a simple interior detail, to the most detail oriented paint correction ceramic coating jobs,
-            you can trust Dirt-Less Detailing to get the job done right!
+          <p className="text-white max-w-screen-md text-left m-0 text-xl hidden xl:block">
+            Everything from a simple interior detail, to the most detail oriented paint correction and ceramic coating jobs, you can trust Dirt-Less Detailing
+            to get the job done right!
           </p>
 
           <div className="flex gap-10 pt-8 flex-col lg:flex-row">
-            <motion.a
-              href="/contact"
-              className="top-quote-btn"
-              variants={topBtnVariant}
-              whileHover="hover"
-              transition={{ duration: 0.25 }}
-            >
+            <motion.a href="/contact" className="top-quote-btn" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
               <img src="../assets/icons/clipboard.png" alt="clipboard" className="btn-icon" /> BOOK NOW!
             </motion.a>
-            <motion.a
-              href="tel:2532529758"
-              className="top-quote-btn btn-secondary"
-              variants={topBtnVariant}
-              whileHover="hover"
-              transition={{ duration: 0.25 }}
-            >
+            <motion.a href="tel:2532529758" className="top-quote-btn btn-secondary" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
               <img src="../assets/icons/phoneMessage.png" alt="call or message" className="btn-icon" /> (253) 252-9758
             </motion.a>
           </div>
@@ -143,11 +127,45 @@ export default function Home() {
       <div className="service-bkg pt-0">
         <Benefits />
 
-        <div className="general-container new-heading-container pt-5">
-          <strong className="above-heading"> Interior Services </strong>
-          <h2 className="new-heading">Transform your vehicle's interior with our Premium Auto Detailing services.</h2>
+        <div className="border-2 border-primary relative px-6 pt-2 pb-6 w-5/6 mx-auto rounded-lg mt-12">
+          <div className="border-2 border-primary bg-contactBkg rounded-full absolute -top-6 -left-6 p-4">
+            <Image src="/assets/icons/locationPing.svg" width={45} height={45} alt="location icon" />
+          </div>
+          <strong className="text-4xl italic text-left block mb-6 pl-10">NEW LOCATION!</strong>
+          <p className="text-left text-xl pb-4">We are now located in the Buckley Business Park just 6 minutes further down 410 from our previous location!</p>
+          <p className="text-left text-xl">
+            With our new larger space we have more availability, can book earlier appointments, and can easily get more people in at a time!
+          </p>
+          <div className="flex gap-4 flex-wrap text-left pt-8">
+            <motion.a
+              href="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd"
+              className="top-quote-btn"
+              variants={topBtnVariant}
+              whileHover="hover"
+              target="_blank"
+              rel="noopener"
+              transition={{ duration: 0.25 }}
+            >
+              <img src="../assets/icons/clipboard.png" alt="clipboard" className="btn-icon" /> Book Online Now!
+            </motion.a>
+            <motion.a
+              href="https://www.google.com/maps/place/28120+WA-410,+Buckley,+WA+98321/@47.1584945,-122.0528836,19.25z/data=!4m15!1m8!3m7!1s0x5490efc0f14df8db:0xb8ec0b100429182f!2s28238+WA-410,+Buckley,+WA+98321!3b1!8m2!3d47.158566!4d-122.052058!16s%2Fg%2F11csp3kvgh!3m5!1s0x5490efc05b8ec6cf:0xb04a141d669a9924!8m2!3d47.158288!4d-122.0530141!16s%2Fg%2F11c0vpg6p9?entry=ttu"
+              className="top-quote-btn btn-secondary"
+              variants={topBtnVariant}
+              whileHover="hover"
+              transition={{ duration: 0.25 }}
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="../assets/icons/google-maps.svg" alt="google maps icon" className="btn-icon" /> View Our New Location
+            </motion.a>
+          </div>
         </div>
 
+        <div className="general-container new-heading-container pt-5">
+          <strong className="above-heading text-4xl"> Interior Services </strong>
+          <h2 className="new-heading text-xl lg:text-2xl">Transform your vehicle's interior with our Premium Auto Detailing services.</h2>
+        </div>
         <div className="otherservices-subcontainer">
           <div className="popular-services-card">
             <div className="new-banner">
@@ -156,7 +174,7 @@ export default function Home() {
             <div
               className="popular-img"
               style={{
-                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e073e12e-8f0c-4ae5-fa12-4abc9ab9db00/public)`,
+                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e073e12e-8f0c-4ae5-fa12-4abc9ab9db00/public)`
               }}
             ></div>
             <div className="popular-header">
@@ -192,11 +210,11 @@ export default function Home() {
 
             <hr className="long-hr accent-orange" />
             <div className="popular-link-container">
-              <a href="/contact" className="popular-readmore text-white">
-                Get in Touch!
-              </a>
-              <a href="/services/interior-swift" className="popular-readmore-secondary">
+              <a href="/services/interior-swift" className="popular-readmore text-white">
                 Learn More
+              </a>
+              <a href="/contact" className="popular-readmore-secondary">
+                Get in Touch!
               </a>
             </div>
           </div>
@@ -205,7 +223,7 @@ export default function Home() {
             <div
               className="popular-img"
               style={{
-                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a40931e-dd21-407c-dd03-86fd43b05200/public)`,
+                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a40931e-dd21-407c-dd03-86fd43b05200/public)`
               }}
             ></div>
             <div className="popular-header">
@@ -245,11 +263,11 @@ export default function Home() {
 
             <hr className="long-hr accent-orange" />
             <div className="popular-link-container">
-              <a href="/contact" className="popular-readmore text-white">
-                Get in Touch!
-              </a>
-              <a href="/services/interior" className="popular-readmore-secondary">
+              <a href="/services/interior" className="popular-readmore text-white">
                 Learn More
+              </a>
+              <a href="/contact" className="popular-readmore-secondary">
+                Get in Touch!
               </a>
             </div>
           </div>
@@ -258,7 +276,7 @@ export default function Home() {
             <div
               className="popular-img"
               style={{
-                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/213e3fa9-1def-44b2-3031-1901432b9a00/public)`,
+                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/213e3fa9-1def-44b2-3031-1901432b9a00/public)`
               }}
             ></div>
             <div className="popular-header">
@@ -288,31 +306,26 @@ export default function Home() {
 
             <hr className="long-hr accent-orange" />
             <div className="popular-link-container">
-              <a href="/contact" className="popular-readmore text-white">
-                Get in Touch!
+              <a href="/services/interior-spill" className="popular-readmore text-white">
+                Learn More
               </a>
-              <a href="/services/interior-spill" className="popular-readmore-secondary">
-                Learn More{" "}
+              <a href="/contact" className="popular-readmore-secondary">
+                Get in Touch!
               </a>
             </div>
           </div>
         </div>
-
         <br className="extra-space" />
-
         <div className="general-container new-heading-container" style={{ margin: "5vh auto 2vh auto" }}>
-          <strong className="above-heading"> Exterior Services </strong>
-          <h3 className="new-heading">
-            From a quick refresh to a complete paint correction, we cover all things exterior.
-          </h3>
+          <strong className="above-heading text-4xl"> Exterior Services </strong>
+          <h3 className="new-heading text-xl lg:text-2xl">From a quick refresh to a complete paint correction, we cover all things exterior.</h3>
         </div>
-
         <div className="otherservices-subcontainer">
           <div className="popular-services-card">
             <div
               className="popular-img"
               style={{
-                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b5859464-3c0e-4fcf-8332-17155eb86d00/public)`,
+                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b5859464-3c0e-4fcf-8332-17155eb86d00/public)`
               }}
             ></div>
             <div className="popular-header">
@@ -325,7 +338,7 @@ export default function Home() {
                   style={{
                     marginBottom: 0,
                     color: "#c0c0c0",
-                    textAlign: "left",
+                    textAlign: "left"
                   }}
                 >
                   From:
@@ -338,9 +351,7 @@ export default function Home() {
             <ul className="checklist">
               <li>
                 <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                <p className="checklist-item">
-                  Full vehicle strip wash (to remove any embedded contaminants, tar, and sap)
-                </p>
+                <p className="checklist-item">Full vehicle strip wash (to remove any embedded contaminants, tar, and sap)</p>
               </li>
               <li>
                 <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
@@ -358,19 +369,20 @@ export default function Home() {
 
             <hr className="long-hr accent-orange" />
             <div className="popular-link-container">
-              <a href="/contact" className="popular-readmore text-white">
-                Get in Touch!
+              <a href="/services/exterior" className="popular-readmore text-white">
+                Learn More
               </a>
-              <a href="/services/exterior" className="popular-readmore-secondary">
-                Learn More{" "}
+              <a href="/contact" className="popular-readmore-secondary">
+                Get in Touch!
               </a>
             </div>
           </div>
           <div className="popular-services-card">
             <div
-              className="popular-img"
+              className="popular-img bg-center"
               style={{
-                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/public)`,
+                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/8b440e8d-d3ed-4363-2638-00f164188100/public)`,
+                backgroundPositionY: "top"
               }}
             ></div>
             <div className="popular-header">
@@ -383,7 +395,7 @@ export default function Home() {
                   style={{
                     marginBottom: 0,
                     color: "#c0c0c0",
-                    textAlign: "left",
+                    textAlign: "left"
                   }}
                 >
                   From:
@@ -420,11 +432,11 @@ export default function Home() {
 
             <hr className="long-hr accent-orange" />
             <div className="popular-link-container">
-              <a href="/contact" className="popular-readmore text-white">
-                Get in Touch!
+              <a href="/services/exterior-seal" className="popular-readmore text-white">
+                Learn More
               </a>
-              <a href="/services/exterior-seal" className="popular-readmore-secondary">
-                Learn More{" "}
+              <a href="/contact" className="popular-readmore-secondary">
+                Get in Touch!
               </a>
             </div>
           </div>
@@ -432,7 +444,7 @@ export default function Home() {
             <div
               className="popular-img"
               style={{
-                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4ce4f977-365c-4211-a7f9-68c5ec6d7a00/public)`,
+                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4ce4f977-365c-4211-a7f9-68c5ec6d7a00/public)`
               }}
             ></div>
             <div className="popular-header">
@@ -445,7 +457,7 @@ export default function Home() {
                   style={{
                     marginBottom: 0,
                     color: "#c0c0c0",
-                    textAlign: "left",
+                    textAlign: "left"
                   }}
                 >
                   From:
@@ -480,36 +492,43 @@ export default function Home() {
               </li>
               <li>
                 <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                <p className="checklist-item">Ceramic coating applied to paint (Lasts a Lifetime*!)</p>
+                <p className="checklist-item">Ceramic coating applied to paint (Can last a Lifetime*!)</p>
               </li>
             </ul>
 
             <hr className="long-hr accent-orange" />
             <div className="popular-link-container">
-              <a href="/contact" className="popular-readmore text-white">
-                Get in Touch!
+              <a href="/services/exterior-correct" className="popular-readmore text-white">
+                Learn More
               </a>
-              <a href="/services/exterior-correct" className="popular-readmore-secondary">
-                Learn More{" "}
+              <a href="/contact" className="popular-readmore-secondary">
+                Get in Touch!
               </a>
             </div>
           </div>
         </div>
 
         <br className="extra-space" />
-
+        <div
+          className="general-container new-heading-container flex flex-col lg:flex-row lg:items-center lg:justify-between"
+          style={{ margin: "5vh auto 2vh auto" }}
+        >
+          <div>
+            <strong className="above-heading text-4xl"> Boats/RV's/Trailers </strong>
+            <h3 className="new-heading text-xl lg:text-2xl">Exterior and Interior detailing services for any of your other vehicles.</h3>
+          </div>
+          <a href="/services/recreational" className="popular-readmore-secondary">
+            Learn More
+          </a>
+        </div>
+        <br className="extra-space" />
         <div className="service-bkg-lighter" style={{ paddingBottom: "5rem" }}>
           <div className="general-container new-heading-container" style={{ margin: "5vh auto 2vh auto" }}>
-            <strong className="above-heading">Testimonials</strong>
-            <h3 className="new-heading">Read some of the reviews from our valued customers!</h3>
+            <strong className="above-heading text-4xl">Testimonials</strong>
+            <h3 className="new-heading text-xl lg:text-2xl">Read some of the reviews from our valued customers!</h3>
             <p style={{ margin: 0, padding: "1rem 0" }}>
               See all of the reviews from our customers on our{" "}
-              <a
-                style={{ color: "dodgerblue" }}
-                target="_blank"
-                rel="noopener"
-                href="https://www.facebook.com/DirtLessDetailing/reviews"
-              >
+              <a style={{ color: "dodgerblue" }} target="_blank" rel="noopener" href="https://www.facebook.com/DirtLessDetailing/reviews">
                 Facebook
               </a>{" "}
               or{" "}
@@ -529,75 +548,59 @@ export default function Home() {
               {
                 quote: (
                   <p className="review-text">
-                    "Had an issue with the interior of a vehicle that had been in a garage for too long. Dirt-Less
-                    handled it professionally and quickly.{" "}
+                    "Had an issue with the interior of a vehicle that had been in a garage for too long. Dirt-Less handled it professionally and quickly.{" "}
                     <span className="highlight">We will definitely keep going back for our needs.</span>"
                   </p>
                 ),
                 name: "Jonathon H.",
-                title: "Full Interior Detail",
+                title: "Full Interior Detail"
               },
               {
                 quote: (
                   <p className="review-text">
                     "Brenden does an amazing job. My car looks amazing.{" "}
-                    <span className="highlight">He is super reasonable in his pricing and was very efficient.</span>{" "}
-                    Will definitely continue to use his service for all our vehicles."
+                    <span className="highlight">He is super reasonable in his pricing and was very efficient.</span> Will definitely continue to use his service
+                    for all our vehicles."
                   </p>
                 ),
                 name: "Kristi H.",
-                title: "Full Interior Detail",
+                title: "Full Interior Detail"
               },
               {
                 quote: (
                   <p className="review-text">
                     "Brought in my 12 Escalade and he worked his magic on both inside and outside.{" "}
-                    <span className="highlight">
-                      Brenden is very good at what he does, the vehicle looks amazing. Better than it was when I bought
-                      it.
-                    </span>{" "}
-                    Thank you so much for getting me into your schedule. I am Extremely pleased with the outcome of your
-                    services."
+                    <span className="highlight">Brenden is very good at what he does, the vehicle looks amazing. Better than it was when I bought it.</span>{" "}
+                    Thank you so much for getting me into your schedule. I am Extremely pleased with the outcome of your services."
                   </p>
                 ),
                 name: "Rob B.",
-                title: "Full Interior Detail",
-              },
+                title: "Full Interior Detail"
+              }
             ]}
             speed="normal"
             className="w-screen"
           />
         </div>
-
         <br className="extra-space" />
         <hr className="pricing__hr" />
-
         <div className="general-container new-heading-container font-bold">
-          <h3 style={{ margin: 0, width: "auto", padding: 0 }} className="new-heading new-heading-center">
+          <h3 style={{ margin: 0, width: "auto", padding: 0 }} className="new-heading new-heading-center text-4xl">
             AUTO DETAILING FAQ's
           </h3>
           <p className="max-w-[900px] mx-auto text-center my-0 font-normal pb-8">
-            Answers to some of the most common questions that we get when people are booking with us, please reach out
-            if you have other questions!
+            Answers to some of the most common questions that we get when people are booking with us, please reach out if you have other questions!
           </p>
         </div>
         <section className="flex flex-col items-center xl:flex-row w-11/12 justify-center gap-8 xl:w-2/3">
           <div className="flex flex-col gap-6 w-[500px] calc text-left">
             {faqItems.map((item, i) => (
-              <FaqItem
-                key={i}
-                i={i}
-                expanded={expanded}
-                setExpanded={setExpanded}
-                title={item.title}
-                description={item.description}
-                isMobile={smallScreen}
-              />
+              <FaqItem key={i} i={i} expanded={expanded} setExpanded={setExpanded} title={item.title} description={item.description} isMobile={smallScreen} />
             ))}
           </div>
           <div className="map relative">
             <Image
-              src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/816ccafc-084b-4d7d-8735-8da8117a4700/public"
+              src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0a0db25e-a828-453b-caca-15a792068400/public"
               className="h-auto object-cover rounded-lg"
               fill
               alt="Image of beautiful ceramic coated car on a foggy morning"
@@ -612,31 +615,33 @@ export default function Home() {
               ></iframe> */}
           </div>
         </section>
-
         <br className="extra-space" />
         <hr className="pricing__hr" />
+        <h4 className="text-4xl font-bold py-6">24/7 ONLINE PRICING & BOOKING</h4>
 
-        {/* <h4 className="text-4xl font-bold py-6">24/7 ONLINE PRICING & BOOKING</h4> TODO
-        <motion.a
-          href="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd"
-          className="top-quote-btn max-w-max mx-auto"
-          rel="noopener"
-          target="_blank"
-          variants={topBtnVariant}
-          whileHover="hover"
-          transition={{ duration: 0.25 }}
-        >
-          BOOK ONLINE!
-        </motion.a> */}
+        <BookingButton title="Book Online!" />
+        <p className="text-center lg:max-w-screen-md mx-auto">
+          If you would like to book our mobile services online let us know in the Notes Section of your booking! We may offer our{" "}
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger className="font-bold">Vehicle Pickup Service ⓘ</TooltipTrigger>
+              <TooltipContent>
+                <p className="max-w-xs lg:max-w-[500px] text-left">
+                  With our vehicle pickup service we will (At NO extra charge!) come pickup your vehicle, bring it back to our shop and drop it back off to you
+                  when it's done!
+                </p>
+                <p className="max-w-xs lg:max-w-[500px] text-left">
+                  You can also text us after your booking to let us know and as long as you live within 20 minutes of our shop we will gladly offer the service!
+                </p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>{" "}
+          to ensure we can have access to all of our tools and weather delays don't become an issue!
+        </p>
 
-        <p className="pt-8 text-2xl">Submit this form to easily get in contact with us!</p>
-
+        <p className="pt-8 text-2xl">Or simply submit this form to get in contact with us!</p>
         <fieldset className="urable-form-container">
-          <iframe
-            className="w-4/5 mx-auto lg:max-w-50% h-[600px]"
-            src="https://app.urable.com/form/pMe0iWXWCBfTL47sDvjd/v5CoHzxM7y2da6KIOp2T"
-            frameBorder="0"
-          ></iframe>
+          <iframe className="w-4/5 mx-auto lg:max-w-50% h-[600px]" src="https://app.urable.com/form/pMe0iWXWCBfTL47sDvjd/v5CoHzxM7y2da6KIOp2T"></iframe>
         </fieldset>
       </div>
     </div>
