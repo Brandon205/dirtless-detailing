@@ -62,42 +62,32 @@ export default function Nav() {
 
   const navParent = {
     open: { opacity: 1 },
-    closed: { opacity: 0 },
+    closed: { opacity: 0 }
   };
 
   const navChild = {
     open: { x: 0, opacity: 1 },
-    closed: { x: "-8%", opacity: 0 },
+    closed: { x: "-8%", opacity: 0 }
   };
 
   const navChildDiff = {
     open: { x: 0, opacity: 1 },
-    closed: { x: "8%", opacity: 0 },
+    closed: { x: "8%", opacity: 0 }
   };
   return (
     <header className="App-header">
       <nav id="nav" ref={navBar}>
-        <a
-          style={{ display: "flex", justifyContent: "flex-start" }}
-          className="nav-logo"
-          href="/"
-          aria-label="Dirt-Less Detailing Logo"
-        >
+        <a style={{ display: "flex", justifyContent: "flex-start" }} className="nav-logo" href="/" aria-label="Dirt-Less Detailing Logo">
           <div
             className="header-cert logo-screen"
             style={{
               backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0a945e76-f4c0-4e29-ef16-463490d0db00/public')`,
-              height: 105 + "px",
+              height: 105 + "px"
             }}
           ></div>
         </a>
         {nav === "none" ? (
-          <img
-            src="../assets/icons/menuBars.png"
-            alt="menu bars"
-            className="menu-bars"
-            onClick={() => setNav("block")}
-          />
+          <img src="../assets/icons/menuBars.png" alt="menu bars" className="menu-bars" onClick={() => setNav("block")} />
         ) : (
           <img src="../assets/icons/close.png" alt="close" className="menu-bars" onClick={() => setNav("none")} />
         )}
@@ -146,24 +136,17 @@ export default function Nav() {
                         <h4 className="sub-menu-header">INTERIOR CLEANING SERVICES</h4>
                         <motion.div variants={navChild} className="sub-menu-div" onClick={() => setNav("none")}>
                           <Link href="/services/interior-swift" className="menu-link smaller-line-height">
-                            <img src="../assets/icons/time-span.png" alt="fast clock" className="nav-icon" /> Swift
-                            Interior Detail
+                            <img src="../assets/icons/time-span.png" alt="fast clock" className="nav-icon" /> Swift Interior Detail
                           </Link>
                         </motion.div>
                         <motion.div variants={navChildDiff} className="sub-menu-div" onClick={() => setNav("none")}>
                           <Link href="/services/interior" className="menu-link smaller-line-height">
-                            <img src="../assets/icons/steering1.png" alt="steering wheel" className="nav-icon" /> Full
-                            Interior
+                            <img src="../assets/icons/steering1.png" alt="steering wheel" className="nav-icon" /> Full Interior
                           </Link>
                         </motion.div>
                         <motion.div variants={navChild} className="sub-menu-div" onClick={() => setNav("none")}>
                           <Link href="/services/interior-spill" className="menu-link smaller-line-height">
-                            <img
-                              src="../assets/icons/steeringLock.png"
-                              alt="steering wheel with lock"
-                              className="nav-icon"
-                            />{" "}
-                            Full Interior with Spill Guard
+                            <img src="../assets/icons/steeringLock.png" alt="steering wheel with lock" className="nav-icon" /> Full Interior with Spill Guard
                           </Link>
                         </motion.div>
                       </div>
@@ -172,20 +155,26 @@ export default function Nav() {
                         <h4 className="sub-menu-header">EXTERIOR SERVICES</h4>
                         <motion.div variants={navChildDiff} className="sub-menu-div" onClick={() => setNav("none")}>
                           <Link href="/services/exterior" className="menu-link smaller-line-height">
-                            <img src="../assets/icons/carWash.png" alt="car with bubbles" className="nav-icon" />{" "}
-                            Exterior Wash
+                            <img src="../assets/icons/carWash.png" alt="car with bubbles" className="nav-icon" /> Exterior Wash
                           </Link>
                         </motion.div>
                         <motion.div variants={navChild} className="sub-menu-div" onClick={() => setNav("none")}>
                           <Link href="/services/exterior-seal" className="menu-link smaller-line-height">
-                            <img src="../assets/icons/carPolish.png" alt="microfiber" className="nav-icon" /> Exterior
-                            Seal and Shine
+                            <img src="../assets/icons/carPolish.png" alt="microfiber" className="nav-icon" /> Exterior Seal and Shine
                           </Link>
                         </motion.div>
                         <motion.div variants={navChildDiff} className="sub-menu-div" onClick={() => setNav("none")}>
                           <Link href="/services/exterior-correct" className="menu-link smaller-line-height">
-                            <img src="../assets/icons/correctProtect.png" alt="polisher" className="nav-icon" />{" "}
-                            Exterior Correct and Protect
+                            <img src="../assets/icons/correctProtect.png" alt="polisher" className="nav-icon" /> Exterior Correct and Protect
+                          </Link>
+                        </motion.div>
+                      </div>
+
+                      <div>
+                        <h4 className="sub-menu-header">RECREATIONAL DETAILING</h4>
+                        <motion.div variants={navChildDiff} className="sub-menu-div" onClick={() => setNav("none")}>
+                          <Link href="/services/recreational" className="menu-link smaller-line-height">
+                            <img src="../assets/icons/boat.png" alt="yacht icon" className="nav-icon" /> Boats/RV's/Trailers
                           </Link>
                         </motion.div>
                       </div>
@@ -231,26 +220,22 @@ export default function Nav() {
                       <h4 className="sub-menu-header">GALLERIES</h4>
                       <motion.div variants={navChild} className="sub-menu-div" onClick={() => setNav("none")}>
                         <Link href="/gallery/interior" className="menu-link smaller-line-height">
-                          <img src="../assets/icons/steering1.png" alt="car with doors open" className="nav-icon" />{" "}
-                          Full Interior Gallery
+                          <img src="../assets/icons/steering1.png" alt="car with doors open" className="nav-icon" /> Full Interior Gallery
                         </Link>
                       </motion.div>
                       <motion.div variants={navChildDiff} className="sub-menu-div" onClick={() => setNav("none")}>
                         <Link href="/gallery/exterior" className="menu-link smaller-line-height">
-                          <img src="../assets/icons/carWash.png" alt="soap bubbles" className="nav-icon" /> Exterior
-                          Wash Gallery
+                          <img src="../assets/icons/carWash.png" alt="soap bubbles" className="nav-icon" /> Exterior Wash Gallery
                         </Link>
                       </motion.div>
                       <motion.div variants={navChild} className="sub-menu-div" onClick={() => setNav("none")}>
                         <Link href="/gallery/seal" className="menu-link smaller-line-height">
-                          <img src="../assets/icons/carPolish.png" alt="car hood" className="nav-icon" /> Seal & Shine
-                          Gallery
+                          <img src="../assets/icons/carPolish.png" alt="car hood" className="nav-icon" /> Seal & Shine Gallery
                         </Link>
                       </motion.div>
                       <motion.div variants={navChildDiff} className="sub-menu-div" onClick={() => setNav("none")}>
                         <Link href="/gallery/correct" className="menu-link smaller-line-height">
-                          <img src="../assets/icons/correctProtect.png" alt="gallery" className="nav-icon" /> Correct &
-                          Protect Gallery
+                          <img src="../assets/icons/correctProtect.png" alt="gallery" className="nav-icon" /> Correct & Protect Gallery
                         </Link>
                       </motion.div>
                     </motion.li>

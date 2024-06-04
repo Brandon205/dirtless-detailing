@@ -7,6 +7,7 @@ import { topBtnVariant } from "../utils/animationVariations";
 import { motion } from "framer-motion";
 import { Titillium_Web } from "next/font/google";
 import { InfiniteMovingCards } from "./components/InfiniteMovingCards";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./components/Tooltip";
 import FaqItem from "./components/FaqItem";
 import Image from "next/image";
 
@@ -605,14 +606,28 @@ export default function Home() {
         <h4 className="text-4xl font-bold py-6">24/7 ONLINE PRICING & BOOKING</h4>
 
         <BookingButton title="Book Online!" />
+        <p className="text-center lg:max-w-screen-md mx-auto">
+          If you would like to book our mobile services online let us know in the Notes Section of your booking! We may offer our{" "}
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger className="font-bold">Vehicle Pickup Service ⓘ</TooltipTrigger>
+              <TooltipContent>
+                <p className="max-w-xs lg:max-w-[500px] text-left">
+                  With our vehicle pickup service we will (At NO extra charge!) come pickup your vehicle, bring it back to our shop and drop it back off to you
+                  when it's done!
+                </p>
+                <p className="max-w-xs lg:max-w-[500px] text-left">
+                  You can also text us after your booking to let us know and as long as you live within 20 minutes of our shop we will gladly offer the service!
+                </p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>{" "}
+          to ensure we can have access to all of our tools and weather delays don't become an issue!
+        </p>
 
-        <p className="pt-8 text-2xl">Submit this form to easily get in contact with us!</p>
+        <p className="pt-8 text-2xl">Or simply submit this form to get in contact with us!</p>
         <fieldset className="urable-form-container">
-          <iframe
-            className="w-4/5 mx-auto lg:max-w-50% h-[600px]"
-            src="https://app.urable.com/form/pMe0iWXWCBfTL47sDvjd/v5CoHzxM7y2da6KIOp2T"
-            frameBorder="0"
-          ></iframe>
+          <iframe className="w-4/5 mx-auto lg:max-w-50% h-[600px]" src="https://app.urable.com/form/pMe0iWXWCBfTL47sDvjd/v5CoHzxM7y2da6KIOp2T"></iframe>
         </fieldset>
       </div>
     </div>

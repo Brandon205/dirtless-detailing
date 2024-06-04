@@ -12,6 +12,7 @@
   "dependencies": {
     "@formkit/auto-animate": "^0.8.1",
     "@next/third-parties": "^14.1.0",
+    "@radix-ui/react-tooltip": "^1.0.7",
     "autoprefixer": "^10.4.19",
     "framer-motion": "^10.18.0",
     "lottie-react": "^2.4.0",
