@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import HeaderComponent from "../../components/HeaderComponent";
+import FaqItem from "../../components/FaqItem";
 import dynamic from "next/dynamic";
 const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
   ssr: false
@@ -26,6 +27,23 @@ const jsonld = {
   "url": "https://www.dirtlessdetailing.com/services/recreational"
 };
 
+const faqItems = [
+  {
+    title: "Do you offer polishing for boats and RV's",
+    description:
+      "Not as of right now, only washes and boat interiors. We may add polishing and ceramic coating services for both in the future, so be sure to check back!"
+  },
+  {
+    title: "These are all mobile services right?",
+    description: "Yes! We can easily bring all that we need to you."
+  },
+  {
+    title: "What cities do you service?",
+    description:
+      "With our mobile service we can go out to: Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Lake Tapps, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham."
+  }
+];
+
 const imagesArr = [
   "78e2196e-0484-4ca3-769b-deff51ba1000", // Boat short
   "37508a6b-fed4-42c2-1bc8-cbb422834100", // Boat long
@@ -35,7 +53,7 @@ const imagesArr = [
 const serviceSteps = {
   "Boat Interior Detail": (
     <>
-      <h2 className="cleaning-process-title pb-8">Our Boat Interior Detail Process</h2>
+      <h2 className="cleaning-process-title pb-8 text-center">Our Boat Interior Detail Process</h2>
       <ol className="list">
         <li className="item">
           <div className="step-number-container">
@@ -78,7 +96,7 @@ const serviceSteps = {
   ),
   "Boat Exterior Detail": (
     <>
-      <h2 className="cleaning-process-title pb-8">Our Boat Exterior Detail Process</h2>
+      <h2 className="cleaning-process-title pb-8 text-center">Our Boat Exterior Detail Process</h2>
       <ol className="list">
         <li className="item">
           <div className="step-number-container">
@@ -112,7 +130,7 @@ const serviceSteps = {
   ),
   "RV/Trailer Exterior Detail": (
     <>
-      <h2 className="cleaning-process-title pb-8">Our RV/Trailer Exterior Process</h2>
+      <h2 className="cleaning-process-title pb-8 text-center">Our RV/Trailer Exterior Process</h2>
       <ol className="list">
         <li className="item">
           <div className="step-number-container">
@@ -169,14 +187,24 @@ const serviceSteps = {
 export default function Recreational() {
   const [currService, setCurrService] = useState("Boat Interior Detail");
   const [length, setLength] = useState(15);
+  const [smallScreen, setSmallScreen] = useState(false);
+  const [expanded, setExpanded] = useState(false);
   const [imageIndex, setImageIndex] = useState(2);
+
+  useEffect(() => {
+    if (window.innerWidth < 979) {
+      setSmallScreen(true);
+    } else {
+      setSmallScreen(false);
+    }
+  }, []);
 
   return (
     <section className="service-content-container">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
       <HeaderComponent
         mainUrl={"6848fcc1-eaa2-4c67-7e97-d9ea70b4aa00"}
-        title="Boats/RV's/Trailer Detailing"
+        title="Boats/RV's & Trailer Detailing"
         description="Bring your recreational vehicles back to life with our newly offered detailing services for them!"
         secondaryUrl={"78e2196e-0484-4ca3-769b-deff51ba1000"}
       />
@@ -203,7 +231,34 @@ export default function Recreational() {
         />
       </div>
 
-      <div>{serviceSteps[currService]}</div>
+      <div className="text-center">
+        {serviceSteps[currService]}
+        <br className="extra-space" />
+
+        <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>Stunning Results</p>
+        <h3 className="pricing__heading">{currService !== "RV/Trailer Exterior Detail" ? "Get Your Boat Ready for Summer." : "Ready for Camping."}</h3>
+        <p className="pricing__subtext">
+          {currService !== "RV/Trailer Exterior Detail"
+            ? "Leave it to us to remove the nastiness that builds up over the winter"
+            : "After years of mess from having an RV in Washington we'll be sure to bring it back to life"}
+        </p>
+
+        <div className="slider-container w-full mx-auto rounded-3xl">
+          <div
+            style={{
+              backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/${imagesArr[imageIndex]}/public')`
+            }}
+            className="slider-img"
+          ></div>
+        </div>
+
+        <h3 className="text-3xl lg:text-4xl text-white pb-8 py-16">Frequently Asked Questions</h3>
+        <div className="faq-container text-white w-11/12 max-w-screen-xl mx-auto">
+          {faqItems.map((item, i) => (
+            <FaqItem key={i} i={i} expanded={expanded} setExpanded={setExpanded} title={item.title} description={item.description} isMobile={smallScreen} />
+          ))}
+        </div>
+      </div>
     </section>
   );
 }
@@ -236,75 +291,50 @@ function BoatPricing(props) {
         className="pricing__img"
         style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/${imagesArr[props.imageIndex]}/cover)` }}
       ></div>
-      {props.currService === "Boat Exterior Detail" ? (
-        <select onChange={(e) => props.setLength(e.target.value)} className="vehicle__select" value={props.length}>
-          <option value={5}>5'</option>
-          <option value={6}>6'</option>
-          <option value={7}>7'</option>
-          <option value={8}>8'</option>
-          <option value={9}>9'</option>
-          <option value={10}>10'</option>
-          <option value={11}>11'</option>
-          <option value={12}>12'</option>
-          <option value={13}>13'</option>
-          <option value={14}>14'</option>
-          <option value={15}>15'</option>
-          <option value={16}>16'</option>
-          <option value={17}>17'</option>
-          <option value={18}>18'</option>
-          <option value={19}>19'</option>
-          <option value={20}>20'</option>
-          <option value={21}>21'</option>
-          <option value={22}>22'</option>
-          <option value={23}>23'</option>
-          <option value={24}>24'</option>
-          <option value={25}>25'</option>
-          <option value={26}>26'</option>
-          <option value={27}>27'</option>
-          <option value={28}>28'</option>
-          <option value={29}>29'</option>
-          <option value={30}>30'</option>
-          <option value={31}>31'</option>
-          <option value={32}>32'</option>
-          <option value={33}>33'</option>
-          <option value={34}>34'</option>
-          <option value={35}>35'</option>
-          <option value={36}>36'</option>
-          <option value={37}>37'</option>
-          <option value={38}>38'</option>
-          <option value={39}>39'</option>
-          <option value={40}>40'+</option>
-        </select>
-      ) : (
-        <select onChange={(e) => props.setLength(e.target.value)} className="vehicle__select" value={props.length}>
-          <option value={15}>15'</option>
-          <option value={16}>16'</option>
-          <option value={17}>17'</option>
-          <option value={18}>18'</option>
-          <option value={19}>19'</option>
-          <option value={20}>20'</option>
-          <option value={21}>21'</option>
-          <option value={22}>22'</option>
-          <option value={23}>23'</option>
-          <option value={24}>24'</option>
-          <option value={25}>25'</option>
-          <option value={26}>26'</option>
-          <option value={27}>27'</option>
-          <option value={28}>28'</option>
-          <option value={29}>29'</option>
-          <option value={30}>30'</option>
-          <option value={31}>31'</option>
-          <option value={32}>32'</option>
-          <option value={33}>33'</option>
-          <option value={34}>34'</option>
-          <option value={35}>35'</option>
-          <option value={36}>36'</option>
-          <option value={37}>37'</option>
-          <option value={38}>38'</option>
-          <option value={39}>39'</option>
-          <option value={40}>40'+</option>
-        </select>
-      )}
+      <select onChange={(e) => props.setLength(e.target.value)} className="vehicle__select" value={props.length}>
+        {props.currService === "Boat Exterior Detail" ? (
+          <>
+            <option value={5}>5'</option>
+            <option value={6}>6'</option>
+            <option value={7}>7'</option>
+            <option value={8}>8'</option>
+            <option value={9}>9'</option>
+            <option value={10}>10'</option>
+            <option value={11}>11'</option>
+            <option value={12}>12'</option>
+            <option value={13}>13'</option>
+            <option value={14}>14'</option>
+          </>
+        ) : (
+          ""
+        )}
+        <option value={15}>15'</option>
+        <option value={16}>16'</option>
+        <option value={17}>17'</option>
+        <option value={18}>18'</option>
+        <option value={19}>19'</option>
+        <option value={20}>20'</option>
+        <option value={21}>21'</option>
+        <option value={22}>22'</option>
+        <option value={23}>23'</option>
+        <option value={24}>24'</option>
+        <option value={25}>25'</option>
+        <option value={26}>26'</option>
+        <option value={27}>27'</option>
+        <option value={28}>28'</option>
+        <option value={29}>29'</option>
+        <option value={30}>30'</option>
+        <option value={31}>31'</option>
+        <option value={32}>32'</option>
+        <option value={33}>33'</option>
+        <option value={34}>34'</option>
+        <option value={35}>35'</option>
+        <option value={36}>36'</option>
+        <option value={37}>37'</option>
+        <option value={38}>38'</option>
+        <option value={39}>39'</option>
+        <option value={40}>40'+</option>
+      </select>
 
       <div className="pricing__pricecard">
         <p>Your Price Estimate:</p>

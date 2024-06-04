@@ -96,18 +96,13 @@ export default function About() {
 
   const faqItems = [
     {
-      title: "Do you detail boats and RV's?",
-      description:
-        "Yes, however, currently we are only doing boat interiors and washes and no polishing for now. Only Washes on RV's/trailers if we come to you, we can polish RV's if you can bring it to our shop! Call or text us to get a quote, price is typically a flat fee per foot in length!"
-    },
-    {
       title: "Can you come to my apartment or workplace?",
       description:
         "It will depend on the amount of space and water/electrical access if we can or not. Typically apartment complexes and some workplaces can be strict with this type of thing and we may not be able to come to you."
     },
     {
       title: "Are you licensed and insured?",
-      description: "Yes! We are 100% licensed and insured!"
+      description: "Yes of course! We are fully insured for our vehicle pickup service as well!"
     },
     {
       title: "What cities do you service?",
