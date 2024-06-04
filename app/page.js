@@ -59,21 +59,22 @@ export default function Home() {
       description: "All we will need is an electrical outlet, a water spigot, and preferably all/most large personal items out of the car."
     },
     {
+      title: "How does your vehicle pickup service work?",
+      description:
+        "If convenient instead of performing our services mobile at your home there are certain scenarios like weather or dirtier vehicles where we may want to take your vehicle to our shop where we have more facilities and cover to carry out the job. This is offered completely FREE to you and we will bring your vehicle back to you whenever it is done!"
+    },
+    {
       title: "How long will the detail take?",
       description:
         "Every job will take a different amount of time, but once we know the condition of the car and the services requested we can give a good estimate as to how long it will take."
     },
     {
       title: "What forms of payment do you take?",
-      description: "We prefer Card/Check payments and can even text invoices to you so that you can pay via card from wherever you are!"
+      description: "We prefer Card/Check payments and can even text or email invoices to you so that you can pay via card from wherever you are!"
     },
     {
       title: "Do you offer gift cards or gift certificates?",
       description: 'Yes we do! Any of our services can be bought as a gift certificate. On the Contact page choose the "For Someone Else" option.'
-    },
-    {
-      title: "Are you licensed and insured?",
-      description: "Yes! We are 100% licensed and insured!"
     },
     {
       title: "How does booking with Dirt-Less Detailing work?",
@@ -584,7 +585,7 @@ export default function Home() {
           </div>
           <div className="map relative">
             <Image
-              src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/816ccafc-084b-4d7d-8735-8da8117a4700/public"
+              src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0a0db25e-a828-453b-caca-15a792068400/public"
               className="h-auto object-cover rounded-lg"
               fill
               alt="Image of beautiful ceramic coated car on a foggy morning"

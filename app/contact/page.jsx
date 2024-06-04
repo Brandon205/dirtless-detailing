@@ -31,6 +31,10 @@ export default function Contact() {
       <h1 className="text-4xl font-bold pb-6 pt-32 text-center">24/7 ONLINE PRICING & BOOKING</h1>
       <div className="grid items-center" style={{ paddingTop: 0 }}>
         <BookingButton title="Book Online" />
+        <p className="text-center lg:max-w-screen-md mx-auto">
+          *Pickup Service: For jobs within 20 minutes of our shop we offer FREE vehicle pickup and dropoff back to your house when you book online, if you're
+          interested put it in the booking's notes section or let us know!
+        </p>
       </div>
       <div className="contact-information-container">
         <div className="contact-info-cards">
@@ -42,7 +46,7 @@ export default function Contact() {
             <img src="../assets/icons/placeMarker.png" alt="place marker" className="icon-48" />
             <a
               href="https://www.google.com/maps/place/28120+WA-410,+Buckley,+WA+98321/@47.1585374,-122.052958,19.25z/data=!4m15!1m8!3m7!1s0x5490efc0f14df8db:0xb8ec0b100429182f!2s28238+WA-410,+Buckley,+WA+98321!3b1!8m2!3d47.158566!4d-122.052058!16s%2Fg%2F11csp3kvgh!3m5!1s0x5490efc05b8ec6cf:0xb04a141d669a9924!8m2!3d47.158288!4d-122.0530141!16s%2Fg%2F11c0vpg6p9?entry=ttu"
-              className="contact-link location-link"
+              className="contact-link location-link underline"
               target="_blank"
               rel="noopener"
             >

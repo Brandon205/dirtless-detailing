@@ -50,6 +50,15 @@ export default function CoatingGallery() {
         </Zoom>
         <Zoom>
           <div
+            className="card card-tall"
+            role="img"
+            style={{
+              backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/9e4d290e-ad89-4cc9-1f10-a1d37790cb00/public')`
+            }}
+          ></div>
+        </Zoom>
+        <Zoom>
+          <div
             className="card card-wide"
             role="img"
             style={{
