@@ -17,7 +17,7 @@ export const metadata = {
     default: "Dirt-Less Detailing | Official Site",
     template: "%s | Dirt-Less Detailing"
   },
-  description: "Bonney Lake and Pierce County's Auto Detailing & Ceramic Coating Specialists",
+  description: "Bonney Lake and Pierce County's Auto Detailing & Ceramic Coating Specialists. Book with us today to make your car look like new!",
   alternates: { canonical: "https://www.dirtlessdetailing.com/" },
   twitter: {
     card: "summary_large_image"
@@ -25,7 +25,7 @@ export const metadata = {
   icons: [{ rel: "icon", url: "/favicon.ico" }],
   openGraph: {
     type: "website",
-    url: "https://www.dirtlessdetailing.com"
+    url: "https://www.dirtlessdetailing.com/"
   }
 };
 
