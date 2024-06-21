@@ -3,11 +3,7 @@ const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenCo
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: ["./app/**/*.{js,ts,jsx,tsx,mdx}", "./pages/**/*.{js,ts,jsx,tsx,mdx}", "./components/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
       colors: {
@@ -18,21 +14,21 @@ module.exports = {
         supportingText: "#bbb",
         secondaryText: "#aaa",
         secondaryTextLight: "#c0c0c0",
-        link: "#3b9eff",
+        link: "#3b9eff"
       },
       animation: {
-        scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite"
       },
       keyframes: {
         scroll: {
           to: {
-            transform: "translate(calc(-50% - 0.5rem))",
-          },
-        },
-      },
-    },
+            transform: "translate(calc(-50% - 0.5rem))"
+          }
+        }
+      }
+    }
   },
-  plugins: [addVariablesForColors],
+  plugins: [addVariablesForColors]
 };
 
 function addVariablesForColors({ addBase, theme }: any) {
@@ -40,6 +36,6 @@ function addVariablesForColors({ addBase, theme }: any) {
   let newVars = Object.fromEntries(Object.entries(allColors).map(([key, val]) => [`--${key}`, val]));
 
   addBase({
-    ":root": newVars,
+    ":root": newVars
   });
 }

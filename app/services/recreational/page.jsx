@@ -29,7 +29,7 @@ const jsonld = {
 
 const faqItems = [
   {
-    title: "Do you offer polishing for boats and RV's",
+    title: "Do you offer polishing for boats and RV's?",
     description:
       "Not as of right now, only washes and boat interiors. We may add polishing and ceramic coating services for both in the future, so be sure to check back!"
   },

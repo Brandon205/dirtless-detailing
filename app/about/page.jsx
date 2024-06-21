@@ -114,6 +114,10 @@ export default function About() {
       description: "Absolutely not! You are free to go do whatever you need to do while we are working."
     },
     {
+      title: "Do you install PPF or window tint?",
+      description: "We do not install PPF or window tint at this time, however, just a few bays down from our shop there is a window tint installer!"
+    },
+    {
       title: "How would you recommend I wash my car on my own?",
       description: (
         <p className="faq-description">
