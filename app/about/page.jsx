@@ -340,12 +340,7 @@ export default function About() {
           </p>
           <p>
             Our shop location is right in the{" "}
-            <a
-              href="https://www.google.com/maps/place/28120+WA-410,+Buckley,+WA+98321/@47.1585374,-122.052958,19.25z/data=!4m15!1m8!3m7!1s0x5490efc0f14df8db:0xb8ec0b100429182f!2s28238+WA-410,+Buckley,+WA+98321!3b1!8m2!3d47.158566!4d-122.052058!16s%2Fg%2F11csp3kvgh!3m5!1s0x5490efc05b8ec6cf:0xb04a141d669a9924!8m2!3d47.158288!4d-122.0530141!16s%2Fg%2F11c0vpg6p9?entry=ttu"
-              className="aside-link"
-              target="_blank"
-              rel="noopener"
-            >
+            <a href="https://maps.app.goo.gl/bhPDhjUN4jsSegu48" className="aside-link" target="_blank" rel="noopener">
               Buckley Business Park
             </a>{" "}
             Building C6 off State Route 410.

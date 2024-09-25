@@ -149,7 +149,7 @@ export default function Home() {
               <img src="../assets/icons/clipboard.png" alt="clipboard" className="btn-icon" /> Book Online Now!
             </motion.a>
             <motion.a
-              href="https://www.google.com/maps/place/28120+WA-410,+Buckley,+WA+98321/@47.1584945,-122.0528836,19.25z/data=!4m15!1m8!3m7!1s0x5490efc0f14df8db:0xb8ec0b100429182f!2s28238+WA-410,+Buckley,+WA+98321!3b1!8m2!3d47.158566!4d-122.052058!16s%2Fg%2F11csp3kvgh!3m5!1s0x5490efc05b8ec6cf:0xb04a141d669a9924!8m2!3d47.158288!4d-122.0530141!16s%2Fg%2F11c0vpg6p9?entry=ttu"
+              href="https://maps.app.goo.gl/bhPDhjUN4jsSegu48"
               className="top-quote-btn btn-secondary"
               variants={topBtnVariant}
               whileHover="hover"

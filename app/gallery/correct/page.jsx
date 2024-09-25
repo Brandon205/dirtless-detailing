@@ -44,6 +44,24 @@ export default function CoatingGallery() {
             className="card card-wide"
             role="img"
             style={{
+              backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3e126bde-15da-40ff-63bc-85c658fbe100/public')`
+            }}
+          ></div>
+        </Zoom>
+        <Zoom>
+          <div
+            className="card card-wide"
+            role="img"
+            style={{
+              backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e0a479f3-d315-477c-3b9f-742769eb4200/public')`
+            }}
+          ></div>
+        </Zoom>
+        <Zoom>
+          <div
+            className="card card-wide"
+            role="img"
+            style={{
               backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a8430f3-90c0-4f56-1fff-88fcd3b29600/public')`
             }}
           ></div>
