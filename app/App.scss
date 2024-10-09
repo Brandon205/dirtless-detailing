@@ -960,7 +960,7 @@ option {
   border-radius: 24px;
   background-color: #2b2b2b;
   overflow: hidden;
-  border: 1px solid $main-clr;
+  border: 1px solid white;
   @include card-border(black);
 }
 

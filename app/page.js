@@ -85,7 +85,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="App">
+    <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
       <HeroSlider
         images={[
@@ -98,22 +98,28 @@ export default function Home() {
           "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/15bf1809-0cee-4975-95ed-808adcf12100/cover"
         ]}
       >
-        <header className="flex flex-col items-center h-[90vh] pt-28 z-50 xl:items-start xl:gap-3 xl:pt-14 text-sm xl:text-lg xl:justify-center">
-          <h1 className={`${titillium.className} text-white text-5xl xl:text-8xl text-center xl:text-left font-bold m-0`}>
+        <header className="w-screen flex flex-col h-[90vh] pt-28 z-50 items-center lg:items-start lg:pl-20 xl:gap-3 text-sm xl:text-lg justify-center">
+          {/* <h1 className={`${titillium.className} text-white text-5xl xl:text-8xl text-center xl:text-left font-bold m-0`}>
             Bonney Lake & Pierce County's
             <br />
             Auto Detailing Specialists
-          </h1>
+          </h1> */}
+          <div className="text-center lg:text-left">
+            <strong className="text-gray-300 text-xl">Dirt-Less Detailing</strong>
+            <h1 className={`${titillium.className} text-white text-5xl xl:text-7xl xl:text-left font-bold m-0`}>
+              Your Auto Detailing & <br /> Ceramic Coating Specialists
+            </h1>
+          </div>
           {/* <p className="special-deal-p">
               <span className="special-deal-colored">VALENTINES DAY SPECIAL</span>: Book through Urable below and use code
               <span className="special-deal-colored bold"> VALENTINE10</span> to save 10% on any In Shop Detail!
             </p> */}
-          <p className="text-white max-w-screen-md text-left m-0 text-xl hidden xl:block">
-            Everything from a simple interior detail, to the most detail oriented paint correction and ceramic coating jobs, you can trust Dirt-Less Detailing
-            to get the job done right!
+          <p className="text-gray-300 max-w-screen-md text-left m-0 text-xl hidden xl:block">
+            Everything from removing stains from your interior, to our most detail-oriented paint correction and ceramic coating jobs, you can trust Dirt-Less
+            Detailing to get the job done right!
           </p>
 
-          <div className="flex gap-10 pt-8 flex-col lg:flex-row">
+          <div className="flex gap-10 pt-8 flex-col lg:flex-row max-w-screen-md">
             <motion.a href="/contact" className="top-quote-btn" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
               <img src="../assets/icons/clipboard.png" alt="clipboard" className="btn-icon" /> BOOK NOW!
             </motion.a>
@@ -127,12 +133,12 @@ export default function Home() {
       <div className="service-bkg pt-0">
         <Benefits />
 
-        <div className="border-2 border-primary relative px-6 pt-2 pb-6 w-5/6 mx-auto rounded-lg mt-12">
-          <div className="border-2 border-primary bg-contactBkg rounded-full absolute -top-6 -left-6 p-4">
+        <div className="border-2 border-white relative px-6 pt-2 pb-6 w-5/6 mx-auto rounded-lg mt-12">
+          <div className="border-2 border-white bg-contactBkg rounded-full absolute -top-6 -left-6 p-4">
             <Image src="/assets/icons/locationPing.svg" width={45} height={45} alt="location icon" />
           </div>
-          <strong className="text-4xl italic text-left block mb-6 pl-10">NEW LOCATION!</strong>
-          <p className="text-left text-xl pb-4">We are now located in the Buckley Business Park just 6 minutes further down 410 from our previous location!</p>
+          <strong className="text-4xl italic text-left block mb-6 pl-10">We've Moved!</strong>
+          <p className="text-left text-xl pb-4">We are now located in the Buckley Business Park just 6 minutes away from our previous location!</p>
           <p className="text-left text-xl">
             With our new larger space we have more availability, can book earlier appointments, and can easily get more people in at a time!
           </p>
@@ -146,7 +152,7 @@ export default function Home() {
               rel="noopener"
               transition={{ duration: 0.25 }}
             >
-              <img src="../assets/icons/clipboard.png" alt="clipboard" className="btn-icon" /> Book Online Now!
+              <img src="../assets/icons/clipboard.png" alt="clipboard" className="btn-icon" /> Book Online!
             </motion.a>
             <motion.a
               href="https://maps.app.goo.gl/bhPDhjUN4jsSegu48"
@@ -157,20 +163,17 @@ export default function Home() {
               target="_blank"
               rel="noopener"
             >
-              <img src="../assets/icons/google-maps.svg" alt="google maps icon" className="btn-icon" /> View Our New Location
+              <img src="../assets/icons/google-maps.svg" alt="google maps icon" className="btn-icon" /> See Our New Location
             </motion.a>
           </div>
         </div>
 
         <div className="general-container new-heading-container pt-5">
-          <strong className="above-heading text-4xl"> Interior Services </strong>
+          <strong className="above-heading text-4xl">Interior Services</strong>
           <h2 className="new-heading text-xl lg:text-2xl">Transform your vehicle's interior with our Premium Auto Detailing services.</h2>
         </div>
         <div className="otherservices-subcontainer">
           <div className="popular-services-card">
-            <div className="new-banner">
-              <div className="banner">NEW!</div>
-            </div>
             <div
               className="popular-img"
               style={{
