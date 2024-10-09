@@ -172,8 +172,70 @@ export default function Home() {
           <strong className="above-heading text-4xl">Interior Services</strong>
           <h2 className="new-heading text-xl lg:text-2xl">Transform your vehicle's interior with our Premium Auto Detailing services.</h2>
         </div>
-        <div className="otherservices-subcontainer">
-          <div className="popular-services-card">
+        <div className="flex flex-col lg:flex-row flex-grow flex-1 lg:justify-between lg:items-stretch lg:flex-wrap lg:w-[90%] lg:max-w-screen-2xl lg:my-0 mx-auto justify-center items-center gap-24 mb-8">
+          <div className="flex flex-col relative w-7/8 flex-1 max-w-[475px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden">
+            <div
+              className="relative m-2 bg-center bg-no-repeat bg-cover h-1/3 rounded-2xl border-4 border-black"
+              style={{
+                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e073e12e-8f0c-4ae5-fa12-4abc9ab9db00/public)`
+              }}
+            ></div>
+            <div className="w-full flex justify-center px-3 flex-col items-center gap-2">
+              <motion.a href="/services/interior-swift" className="mx-auto my-0 text-3xl font-bold no-underline">
+                Swift Interior Detail
+              </motion.a>
+              <motion.p className="text-center p-0 text-secondaryText font-semibold mx-auto max-w-[85%]">
+                Our simple interior cleaning, meant to fix small spots and freshen up your interior.
+              </motion.p>
+
+              <ul className="list-none flex-1 flex flex-col items-start text-xl font-normal w-full m-0 gap-4">
+                <li className="flex justify-start items-center text-left">
+                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
+                  <p className="ml-2">Vacuum the entire vehicle</p>
+                </li>
+                <li className="flex justify-start items-center text-left">
+                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
+                  <p className="ml-2">Wipe down and condition all surfaces</p>
+                </li>
+                <li className="flex justify-start items-center text-left">
+                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
+                  <p className="ml-2">Wash all floormats</p>
+                </li>
+                <li className="flex justify-start items-center text-left">
+                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
+                  <p className="ml-2">Clean all windows/glass</p>
+                </li>
+              </ul>
+
+              <div className="flex w-full justify-around gap-4">
+                <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
+                  <p className="text-white m-0">1.5-3</p>
+                  <p className="text-secondaryText">hours</p>
+                </div>
+                <div className="flex bg-contactBkg justify-center items-center font-bold p-2 w-full rounded-2xl">
+                  <p className="text-white">
+                    From <span className="text-2xl">$150</span>
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex w-full justify-around gap-4">
+                <a
+                  href="/services/interior-swift"
+                  className="py-3 text-dm tracking-wide px-[0.9rem] bg-secondaryBtnClr rounded-[40px] font-bold flex-nowrap text-clip w-1/2"
+                >
+                  Learn More
+                </a>
+                <a
+                  href="/contact"
+                  className="py-3 text-dm tracking-wide px-[0.9rem] bg-primary rounded-[40px] w-full font-bold items-center flex justify-center"
+                >
+                  Schedule Today!
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* <div className="popular-services-card">
             <div
               className="popular-img"
               style={{
@@ -220,7 +282,7 @@ export default function Home() {
                 Get in Touch!
               </a>
             </div>
-          </div>
+          </div> */}
 
           <div className="popular-services-card">
             <div

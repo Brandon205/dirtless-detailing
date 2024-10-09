@@ -8,11 +8,13 @@ module.exports = {
     extend: {
       colors: {
         primary: "#fab638",
+        secondaryBkg: "#181b21",
         accent: "#ff2600",
-        contactBkg: "#1b1b1b",
+        secondaryBtnClr: "#47515d",
+        contactBkg: "#07080b", // #1b1b1b
         urableClr: "#2fd2a8",
         supportingText: "#bbb",
-        secondaryText: "#aaa",
+        secondaryText: "#606a7c", // #aaa
         secondaryTextLight: "#c0c0c0",
         link: "#3b9eff"
       },
