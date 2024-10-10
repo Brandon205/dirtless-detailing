@@ -4,11 +4,11 @@ import Benefits from "./Benefits";
 import { HeroSlider } from "./components/hero-slider";
 import { BookingButton } from "./components/BookingButton";
 import { topBtnVariant } from "../utils/animationVariations";
-import { motion } from "framer-motion";
 import { Titillium_Web } from "next/font/google";
 import { InfiniteMovingCards } from "./components/InfiniteMovingCards";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./components/Tooltip";
 import FaqItem from "./components/FaqItem";
+import { ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const titillium = Titillium_Web({ weight: ["400", "600"], subsets: ["latin"] });
@@ -40,6 +40,35 @@ const jsonld = {
     "closes": "19:00"
   },
   "sameAs": ["https://www.instagram.com/dirt_less_detailing", "https://www.youtube.com/channel/UCsoqP5s4hwkQd_Sd-TVv-jg"]
+};
+
+const listItemVariant = {
+  initial: {
+    opacity: 0,
+    x: -100
+  },
+  show: {
+    opacity: 1,
+    x: 0
+  }
+};
+
+const serviceVariant = {
+  initial: { scale: 1 },
+  hover: { scale: 1.05 }
+};
+
+const arrowVariant = {
+  initial: { x: -25, opacity: 0 },
+  hover: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.4,
+      type: "spring",
+      ease: "easeIn"
+    }
+  }
 };
 
 export default function Home() {
@@ -181,41 +210,58 @@ export default function Home() {
               }}
             ></div>
             <div className="w-full flex justify-center px-3 flex-col items-center">
-              <motion.a href="/services/interior-swift" className="mx-auto my-0 text-3xl font-bold no-underline">
+              <motion.a
+                href="/services/interior-swift"
+                className="inline-flex mx-auto my-0 text-3xl font-bold no-underline"
+                variants={serviceVariant}
+                initial="initial"
+                whileHover="hover"
+                animate="initial"
+              >
                 Swift Interior Detail
+                <motion.span className="flex items-center pl-2" variants={arrowVariant}>
+                  <ArrowRight color="white" />
+                </motion.span>
               </motion.a>
               <motion.p className="text-center p-0 text-secondaryText font-semibold mx-auto max-w-[90%]">
                 Our simple interior cleaning, meant to fix small spots and freshen up your interior.
               </motion.p>
 
-              <ul className="list-none flex flex-col items-start text-xl font-normal w-full m-0 gap-4 pt-6 pb-4">
-                <li className="flex justify-start items-center text-left">
+              <motion.ul
+                className="list-none flex flex-col items-start text-xl font-normal w-full m-0 gap-4 pt-6 pb-4"
+                variants={{ initial: {}, show: { transition: { staggerChildren: 0.25 } } }}
+                whileInView="show"
+                initial="initial"
+              >
+                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
                   <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
                   <p className="ml-2">Vacuum the entire vehicle</p>
-                </li>
-                <li className="flex justify-start items-center text-left">
+                </motion.li>
+                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
                   <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
                   <p className="ml-2">Wipe down and condition all surfaces</p>
-                </li>
-                <li className="flex justify-start items-center text-left">
+                </motion.li>
+                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
                   <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
                   <p className="ml-2">Wash all floormats</p>
-                </li>
-                <li className="flex justify-start items-center text-left">
+                </motion.li>
+                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
                   <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
                   <p className="ml-2">Clean all windows/glass</p>
-                </li>
-              </ul>
+                </motion.li>
+              </motion.ul>
 
               <div className="flex w-full justify-around gap-4 py-4">
                 <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
                   <p className="text-white m-0">1.5-3</p>
                   <p className="text-secondaryText text-[14px]">hours</p>
                 </div>
-                <div className="flex bg-contactBkg justify-center items-center font-bold p-2 w-full rounded-2xl">
-                  <p className="text-white">
-                    From <span className="text-2xl">$150</span>
-                  </p>
+                <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
+                  <p className="text-secondaryText text-[14px]">Starting at</p>
+                  <p className="text-white m-0 text-2xl">$150</p>
+                  {/* <p className="text-secondaryText">
+                    From <span className="text-2xl text-white">$150</span>
+                  </p> */}
                 </div>
               </div>
 
