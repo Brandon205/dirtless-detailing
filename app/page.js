@@ -209,29 +209,32 @@ export default function Home() {
                 backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e073e12e-8f0c-4ae5-fa12-4abc9ab9db00/public)`
               }}
             ></div>
-            <div className="w-full flex justify-center px-3 flex-col items-center">
-              <motion.a
-                href="/services/interior-swift"
-                className="inline-flex mx-auto my-0 text-3xl font-bold no-underline"
-                variants={serviceVariant}
-                initial="initial"
-                whileHover="hover"
-                animate="initial"
-              >
-                Swift Interior Detail
-                <motion.span className="flex items-center pl-2" variants={arrowVariant}>
-                  <ArrowRight color="white" />
-                </motion.span>
-              </motion.a>
-              <motion.p className="text-center p-0 text-secondaryText font-semibold mx-auto max-w-[90%]">
-                Our simple interior cleaning, meant to fix small spots and freshen up your interior.
-              </motion.p>
+            <div className="w-full flex justify-between flex-1 px-3 flex-col items-center">
+              <div className="text-center">
+                <motion.a
+                  href="/services/interior-swift"
+                  className="inline-flex mx-auto my-0 text-3xl font-bold no-underline"
+                  variants={serviceVariant}
+                  initial="initial"
+                  whileHover="hover"
+                  animate="initial"
+                >
+                  Swift Interior Detail
+                  <motion.span className="flex items-center pl-2" variants={arrowVariant}>
+                    <ArrowRight color="white" />
+                  </motion.span>
+                </motion.a>
+                <motion.p className="text-center p-0 text-secondaryText font-semibold mx-auto max-w-[90%]">
+                  Our simple interior cleaning, meant to fix small spots and freshen up your interior.
+                </motion.p>
+              </div>
 
               <motion.ul
                 className="list-none flex flex-col items-start text-xl font-normal w-full m-0 gap-4 pt-6 pb-4"
                 variants={{ initial: {}, show: { transition: { staggerChildren: 0.25 } } }}
                 whileInView="show"
                 initial="initial"
+                viewport={{ once: true }}
               >
                 <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
                   <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
@@ -251,178 +254,199 @@ export default function Home() {
                 </motion.li>
               </motion.ul>
 
-              <div className="flex w-full justify-around gap-4 py-4">
-                <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
-                  <p className="text-white m-0">1.5-3</p>
-                  <p className="text-secondaryText text-[14px]">hours</p>
+              <div className="w-full">
+                <div className="flex w-full justify-around gap-4 py-4">
+                  <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
+                    <p className="text-white m-0">1.5-3</p>
+                    <p className="text-secondaryText text-[14px]">hours</p>
+                  </div>
+                  <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
+                    <p className="text-secondaryText text-[14px]">Starting at</p>
+                    <p className="text-white m-0 text-2xl">$150</p>
+                  </div>
                 </div>
-                <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
-                  <p className="text-secondaryText text-[14px]">Starting at</p>
-                  <p className="text-white m-0 text-2xl">$150</p>
-                  {/* <p className="text-secondaryText">
-                    From <span className="text-2xl text-white">$150</span>
-                  </p> */}
-                </div>
-              </div>
 
-              <div className="flex w-full justify-around gap-4 flex-col lg:flex-row">
-                <a
-                  href="/services/interior-swift"
-                  className="py-3 text-dm tracking-wide px-[0.9rem] bg-secondaryBtnClr rounded-[40px] text-center font-bold text-clip lg:w-1/2"
-                >
-                  Learn More
-                </a>
-                <a
-                  href="/contact"
-                  className="py-3 text-dm tracking-wide px-[0.9rem] bg-primary rounded-[40px] w-full font-bold items-center flex justify-center"
-                >
-                  Schedule Today!
-                </a>
+                <div className="flex w-full justify-around gap-4 flex-col lg:flex-row">
+                  <a
+                    href="/services/interior-swift"
+                    className="py-3 text-dm tracking-wide px-[0.9rem] bg-secondaryBtnClr rounded-[40px] text-center font-bold text-clip lg:w-1/2"
+                  >
+                    Learn More
+                  </a>
+                  <a
+                    href="/contact"
+                    className="py-3 text-dm tracking-wide px-[0.9rem] bg-primary rounded-[40px] w-full font-bold items-center flex justify-center"
+                  >
+                    Schedule Today!
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-          {/* <div className="popular-services-card">
+
+          <div className="flex flex-col flex-1 relative w-[90%] max-w-[450px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
             <div
-              className="popular-img"
-              style={{
-                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e073e12e-8f0c-4ae5-fa12-4abc9ab9db00/public)`
-              }}
-            ></div>
-            <div className="popular-header">
-              <a href="/services/interior-swift" className="accent-orange">
-                Swift Interior Detail
-              </a>
-              <p className="text-center p-0">Quick and Affordable Interior Detail</p>
-              <div>
-                <p>From:</p>
-                <p className="popular-pricing-price">$150</p>
-              </div>
-            </div>
-            <hr className="long-hr accent-orange" />
-
-            <ul className="checklist">
-              <li>
-                <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                <p className="checklist-item">Vacuum the entire vehicle</p>
-              </li>
-              <li>
-                <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                <p className="checklist-item">Wipe down and condition all surfaces</p>
-              </li>
-              <li>
-                <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                <p className="checklist-item">Wash all floormats</p>
-              </li>
-              <li>
-                <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                <p className="checklist-item">Clean all windows/glass</p>
-              </li>
-            </ul>
-
-            <hr className="long-hr accent-orange" />
-            <div className="popular-link-container">
-              <a href="/services/interior-swift" className="popular-readmore text-white">
-                Learn More
-              </a>
-              <a href="/contact" className="popular-readmore-secondary">
-                Get in Touch!
-              </a>
-            </div>
-          </div> */}
-
-          <div className="popular-services-card">
-            <div
-              className="popular-img"
+              className="relative m-2 bg-center bg-no-repeat bg-cover h-[200px] lg:h-[250px] rounded-2xl border-2 border-black"
               style={{
                 backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a40931e-dd21-407c-dd03-86fd43b05200/public)`
               }}
             ></div>
-            <div className="popular-header">
-              <a href="/services/interior" className="accent-orange">
-                Full Interior Detail
-              </a>
-              <p className="text-center p-0">Thorough Interior Cleaning</p>
-              <div>
-                <p>From:</p>
-                <p className="popular-pricing-price">$300</p>
+            <div className="w-full flex justify-between flex-1 px-3 flex-col items-center">
+              <div className="text-center">
+                <motion.a
+                  href="/services/interior-swift"
+                  className="inline-flex mx-auto my-0 text-3xl font-bold no-underline"
+                  variants={serviceVariant}
+                  initial="initial"
+                  whileHover="hover"
+                  animate="initial"
+                >
+                  Full Interior Detail
+                  <motion.span className="flex items-center pl-2" variants={arrowVariant}>
+                    <ArrowRight color="white" />
+                  </motion.span>
+                </motion.a>
+                <motion.p className="text-center p-0 text-secondaryText font-semibold mx-auto max-w-[90%]">
+                  Our Thorough interior cleaning, best for car with staining, lots of dog hair/dirt, or ones that haven't been cleaned out in a long time.
+                </motion.p>
               </div>
-            </div>
-            <hr className="long-hr accent-orange text-pretty" />
 
-            <ul className="checklist">
-              <li>
-                <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                <p className="checklist-item">Blow out all dirt/debris</p>
-              </li>
-              <li>
-                <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                <p className="checklist-item">Steam extraction/carpet shampooing</p>
-              </li>
-              <li>
-                <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                <p className="checklist-item">Door jambs cleaned</p>
-              </li>
-              <li>
-                <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                <p className="checklist-item">All Leathers and plastics cleaned</p>
-              </li>
-              <li>
-                <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                <p className="checklist-item">All interior windows and glass cleaned</p>
-              </li>
-            </ul>
+              <motion.ul
+                className="list-none flex flex-col items-start text-xl font-normal w-full m-0 gap-4 pt-6 pb-4"
+                variants={{ initial: {}, show: { transition: { staggerChildren: 0.25, delayChildren: 1 } } }}
+                whileInView="show"
+                initial="initial"
+                viewport={{ once: true }}
+              >
+                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
+                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
+                  <p className="ml-2">Blow Out & Vacuum all Dirt/Debris</p>
+                </motion.li>
+                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
+                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
+                  <p className="ml-2">Steam Extraction/Carpet Shampooing</p>
+                </motion.li>
+                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
+                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
+                  <p className="ml-2">Wash Out Door Jambs</p>
+                </motion.li>
+                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
+                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
+                  <p className="ml-2">All Leathers and Plastics Cleaned</p>
+                </motion.li>
+                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
+                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
+                  <p className="ml-2">Interior & Exterior Glass Cleaned</p>
+                </motion.li>
+              </motion.ul>
 
-            <hr className="long-hr accent-orange" />
-            <div className="popular-link-container">
-              <a href="/services/interior" className="popular-readmore text-white">
-                Learn More
-              </a>
-              <a href="/contact" className="popular-readmore-secondary">
-                Get in Touch!
-              </a>
+              <div className="w-full">
+                <div className="flex w-full justify-around gap-4 py-4">
+                  <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
+                    <p className="text-white m-0">3-6+</p>
+                    <p className="text-secondaryText text-[14px]">hours</p>
+                  </div>
+                  <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
+                    <p className="text-secondaryText text-[14px]">Starting at</p>
+                    <p className="text-white m-0 text-2xl">$300</p>
+                  </div>
+                </div>
+
+                <div className="flex w-full justify-around gap-4 flex-col lg:flex-row">
+                  <a
+                    href="/services/interior"
+                    className="py-3 text-dm tracking-wide px-[0.9rem] bg-secondaryBtnClr rounded-[40px] text-center font-bold text-clip lg:w-1/2"
+                  >
+                    Learn More
+                  </a>
+                  <a
+                    href="/contact"
+                    className="py-3 text-dm tracking-wide px-[0.9rem] bg-primary rounded-[40px] w-full font-bold items-center flex justify-center"
+                  >
+                    Schedule Today!
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div className="popular-services-card">
+          <div className="flex flex-col flex-1 relative w-[90%] max-w-[450px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
             <div
-              className="popular-img"
+              className="relative m-2 bg-center bg-no-repeat bg-cover h-[200px] lg:h-[250px] rounded-2xl border-2 border-black"
               style={{
-                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/213e3fa9-1def-44b2-3031-1901432b9a00/public)`
+                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e073e12e-8f0c-4ae5-fa12-4abc9ab9db00/public)`
               }}
             ></div>
-            <div className="popular-header">
-              <a href="/services/interior-spill" className="accent-orange">
-                Full Interior + Spill Guard
-              </a>
-              <p className="text-center p-0">Cleaned, Conditioned, and Protected</p>
-              <div>
-                <p>From:</p>
-                <p className="popular-pricing-price">$450</p>
+            <div className="w-full flex justify-between flex-1 px-3 flex-col items-center">
+              <div className="text-center">
+                <motion.a
+                  href="/services/interior-swift"
+                  className="inline-flex mx-auto my-0 text-3xl font-bold no-underline"
+                  variants={serviceVariant}
+                  initial="initial"
+                  whileHover="hover"
+                  animate="initial"
+                >
+                  Full Interior + Spill Guard
+                  <motion.span className="flex items-center pl-2" variants={arrowVariant}>
+                    <ArrowRight color="white" />
+                  </motion.span>
+                </motion.a>
+                <motion.p className="text-center p-0 text-secondaryText font-semibold mx-auto max-w-[90%]">
+                  Our Full Interior Service topped with a interior ceramic spray on all surfaces, designed to make any future cleaning a breeze.
+                </motion.p>
               </div>
-            </div>
-            <hr className="long-hr accent-orange" />
 
-            <ul className="checklist">
-              <li>
-                <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                <p className="checklist-item">
-                  <span className="bold">EVERYTHING</span> from our Full Interior Service
-                </p>
-              </li>
-              <li>
-                <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                <p className="checklist-item">Interior Ceramic Coating applied on all surfaces</p>
-              </li>
-            </ul>
+              <motion.ul
+                className="list-none flex flex-col items-start text-xl font-normal w-full m-0 gap-4 pt-6 pb-4"
+                variants={{ initial: {}, show: { transition: { staggerChildren: 0.25, delayChildren: 2.25 } } }}
+                whileInView="show"
+                initial="initial"
+                viewport={{ once: true }}
+              >
+                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
+                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
+                  <p className="ml-2">
+                    <span>EVERYTHING</span> From our Full Interior Service
+                  </p>
+                </motion.li>
+                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
+                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
+                  <p className="ml-2">All Leathers Conditioned</p>
+                </motion.li>
+                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
+                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
+                  <p className="ml-2">Interior Ceramic Coating Applied To All Surfaces (Even Carpets!)</p>
+                </motion.li>
+              </motion.ul>
 
-            <hr className="long-hr accent-orange" />
-            <div className="popular-link-container">
-              <a href="/services/interior-spill" className="popular-readmore text-white">
-                Learn More
-              </a>
-              <a href="/contact" className="popular-readmore-secondary">
-                Get in Touch!
-              </a>
+              <div className="w-full">
+                <div className="flex w-full justify-around gap-4 py-4">
+                  <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
+                    <p className="text-white m-0">4.5-7+</p>
+                    <p className="text-secondaryText text-[14px]">hours</p>
+                  </div>
+                  <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
+                    <p className="text-secondaryText text-[14px]">Starting at</p>
+                    <p className="text-white m-0 text-2xl">$450</p>
+                  </div>
+                </div>
+
+                <div className="flex w-full justify-around gap-4 flex-col lg:flex-row">
+                  <a
+                    href="/services/interior-spill"
+                    className="py-3 text-dm tracking-wide px-[0.9rem] bg-secondaryBtnClr rounded-[40px] text-center font-bold text-clip lg:w-1/2"
+                  >
+                    Learn More
+                  </a>
+                  <a
+                    href="/contact"
+                    className="py-3 text-dm tracking-wide px-[0.9rem] bg-primary rounded-[40px] w-full font-bold items-center flex justify-center"
+                  >
+                    Schedule Today!
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
