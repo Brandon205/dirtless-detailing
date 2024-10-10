@@ -172,23 +172,23 @@ export default function Home() {
           <strong className="above-heading text-4xl">Interior Services</strong>
           <h2 className="new-heading text-xl lg:text-2xl">Transform your vehicle's interior with our Premium Auto Detailing services.</h2>
         </div>
-        <div className="flex flex-col lg:flex-row flex-grow flex-1 lg:justify-between lg:items-stretch lg:flex-wrap lg:w-[90%] lg:max-w-screen-2xl lg:my-0 mx-auto justify-center items-center gap-24 mb-8">
-          <div className="flex flex-col relative w-7/8 flex-1 max-w-[475px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden">
+        <div className="flex flex-col lg:flex-row flex-grow lg:justify-between lg:items-stretch lg:flex-wrap lg:w-[90%] lg:max-w-screen-2xl lg:my-0 mx-auto justify-center items-center gap-24 mb-8">
+          <div className="flex flex-col flex-1 relative w-[90%] max-w-[450px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
             <div
-              className="relative m-2 bg-center bg-no-repeat bg-cover h-1/3 rounded-2xl border-4 border-black"
+              className="relative m-2 bg-center bg-no-repeat bg-cover h-[200px] lg:h-[250px] rounded-2xl border-2 border-black"
               style={{
                 backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e073e12e-8f0c-4ae5-fa12-4abc9ab9db00/public)`
               }}
             ></div>
-            <div className="w-full flex justify-center px-3 flex-col items-center gap-2">
+            <div className="w-full flex justify-center px-3 flex-col items-center">
               <motion.a href="/services/interior-swift" className="mx-auto my-0 text-3xl font-bold no-underline">
                 Swift Interior Detail
               </motion.a>
-              <motion.p className="text-center p-0 text-secondaryText font-semibold mx-auto max-w-[85%]">
+              <motion.p className="text-center p-0 text-secondaryText font-semibold mx-auto max-w-[90%]">
                 Our simple interior cleaning, meant to fix small spots and freshen up your interior.
               </motion.p>
 
-              <ul className="list-none flex-1 flex flex-col items-start text-xl font-normal w-full m-0 gap-4">
+              <ul className="list-none flex flex-col items-start text-xl font-normal w-full m-0 gap-4 pt-6 pb-4">
                 <li className="flex justify-start items-center text-left">
                   <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
                   <p className="ml-2">Vacuum the entire vehicle</p>
@@ -207,10 +207,10 @@ export default function Home() {
                 </li>
               </ul>
 
-              <div className="flex w-full justify-around gap-4">
+              <div className="flex w-full justify-around gap-4 py-4">
                 <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
                   <p className="text-white m-0">1.5-3</p>
-                  <p className="text-secondaryText">hours</p>
+                  <p className="text-secondaryText text-[14px]">hours</p>
                 </div>
                 <div className="flex bg-contactBkg justify-center items-center font-bold p-2 w-full rounded-2xl">
                   <p className="text-white">
@@ -219,10 +219,10 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex w-full justify-around gap-4">
+              <div className="flex w-full justify-around gap-4 flex-col lg:flex-row">
                 <a
                   href="/services/interior-swift"
-                  className="py-3 text-dm tracking-wide px-[0.9rem] bg-secondaryBtnClr rounded-[40px] font-bold flex-nowrap text-clip w-1/2"
+                  className="py-3 text-dm tracking-wide px-[0.9rem] bg-secondaryBtnClr rounded-[40px] text-center font-bold text-clip lg:w-1/2"
                 >
                   Learn More
                 </a>
@@ -664,12 +664,12 @@ export default function Home() {
             ))}
           </div>
           <div className="map relative">
-            <Image
+            {/* <Image
               src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0a0db25e-a828-453b-caca-15a792068400/public"
               className="h-auto object-cover rounded-lg"
               fill
               alt="Image of beautiful ceramic coated car on a foggy morning"
-            />
+            /> */}
             {/* <iframe
                 title="Map of Dirt-Less Detailing location"
                 width={"300"}
@@ -678,15 +678,25 @@ export default function Home() {
                 loading="lazy"
                 src={`https://www.google.com/maps/embed/v1/place?zoom=15&q=place_id:ChIJxxfUWqz7kFQRotRs8MwWDRE&key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS}`}
               ></iframe> */}
+            <iframe
+              width="600"
+              height="450"
+              style={{ border: 0 }}
+              loading="lazy"
+              allowFullScreen
+              src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJxxfUWqz7kFQRotRs8MwWDRE&key=AIzaSyCabi1i-5RcG2qNysx_bZNQnYUMmT_l6YU"
+            ></iframe>
           </div>
         </section>
         <br className="extra-space" />
         <hr className="pricing__hr" />
-        <h4 className="text-4xl font-bold py-6">24/7 ONLINE PRICING & BOOKING</h4>
+        <div className="text-center">
+          <h4 className="text-4xl font-bold py-6">24/7 ONLINE PRICING & BOOKING</h4>
 
-        <BookingButton title="Book Online!" />
+          <BookingButton title="Book Online!" />
 
-        <p className="pt-8 text-2xl">Or simply submit this form to get in contact with us!</p>
+          <p className="pt-8 text-2xl">Or simply submit this form to get in contact with us!</p>
+        </div>
         <fieldset className="urable-form-container">
           <iframe className="w-4/5 mx-auto lg:max-w-50% h-[600px]" src="https://app.urable.com/form/pMe0iWXWCBfTL47sDvjd/v5CoHzxM7y2da6KIOp2T"></iframe>
         </fieldset>
