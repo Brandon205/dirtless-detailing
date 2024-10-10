@@ -128,11 +128,6 @@ export default function Home() {
         ]}
       >
         <header className="w-screen flex flex-col h-[90vh] pt-28 z-50 items-center lg:items-start lg:pl-20 xl:gap-3 text-sm xl:text-lg justify-center">
-          {/* <h1 className={`${titillium.className} text-white text-5xl xl:text-8xl text-center xl:text-left font-bold m-0`}>
-            Bonney Lake & Pierce County's
-            <br />
-            Auto Detailing Specialists
-          </h1> */}
           <div className="text-center lg:text-left">
             <strong className="text-gray-300 text-xl">Dirt-Less Detailing</strong>
             <h1 className={`${titillium.className} text-white text-5xl xl:text-7xl xl:text-left font-bold m-0`}>
@@ -201,8 +196,8 @@ export default function Home() {
           <strong className="above-heading text-4xl">Interior Services</strong>
           <h2 className="new-heading text-xl lg:text-2xl">Transform your vehicle's interior with our Premium Auto Detailing services.</h2>
         </div>
-        <div className="flex flex-col lg:flex-row flex-grow lg:justify-between lg:items-stretch lg:flex-wrap lg:w-[90%] lg:max-w-screen-2xl lg:my-0 mx-auto justify-center items-center gap-24 mb-8">
-          <div className="flex flex-col flex-1 relative w-[90%] max-w-[450px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
+        <div className="flex flex-col lg:flex-row flex-grow lg:justify-between lg:items-stretch lg:flex-wrap lg:w-[90%] lg:my-0 mx-auto justify-center items-center gap-24 mb-8">
+          <div className="flex flex-col flex-1 relative w-[90%] max-w-[475px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
             <div
               className="relative m-2 bg-center bg-no-repeat bg-cover h-[200px] lg:h-[250px] rounded-2xl border-2 border-black"
               style={{
@@ -238,19 +233,19 @@ export default function Home() {
               >
                 <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
                   <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">Vacuum the entire vehicle</p>
+                  <p className="ml-2">Vacuum the Entire Vehicle</p>
                 </motion.li>
                 <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
                   <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">Wipe down and condition all surfaces</p>
+                  <p className="ml-2">Wipe Down and Condition All Surfaces</p>
                 </motion.li>
                 <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
                   <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">Wash all floormats</p>
+                  <p className="ml-2">Wash All Floormats</p>
                 </motion.li>
                 <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
                   <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">Clean all windows/glass</p>
+                  <p className="ml-2">Clean All Interior Windows/Glass</p>
                 </motion.li>
               </motion.ul>
 
@@ -267,24 +262,28 @@ export default function Home() {
                 </div>
 
                 <div className="flex w-full justify-around gap-4 flex-col lg:flex-row">
-                  <a
+                  <motion.a
                     href="/services/interior-swift"
                     className="py-3 text-dm tracking-wide px-[0.9rem] bg-secondaryBtnClr rounded-[40px] text-center font-bold text-clip lg:w-1/2"
+                    initial={{ scale: 1 }}
+                    whileHover={{ scale: 1.05 }}
                   >
                     Learn More
-                  </a>
-                  <a
+                  </motion.a>
+                  <motion.a
                     href="/contact"
                     className="py-3 text-dm tracking-wide px-[0.9rem] bg-primary rounded-[40px] w-full font-bold items-center flex justify-center"
+                    initial={{ scale: 1 }}
+                    whileHover={{ scale: 1.05 }}
                   >
                     Schedule Today!
-                  </a>
+                  </motion.a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="flex flex-col flex-1 relative w-[90%] max-w-[450px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
+          <div className="flex flex-col flex-1 relative w-[90%] max-w-[475px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
             <div
               className="relative m-2 bg-center bg-no-repeat bg-cover h-[200px] lg:h-[250px] rounded-2xl border-2 border-black"
               style={{
@@ -307,7 +306,7 @@ export default function Home() {
                   </motion.span>
                 </motion.a>
                 <motion.p className="text-center p-0 text-secondaryText font-semibold mx-auto max-w-[90%]">
-                  Our Thorough interior cleaning, best for car with staining, lots of dog hair/dirt, or ones that haven't been cleaned out in a long time.
+                  Our thorough interior cleaning, best for car with staining, lots of dog hair/dirt, or ones that haven't been cleaned out in a long time.
                 </motion.p>
               </div>
 
@@ -353,24 +352,28 @@ export default function Home() {
                 </div>
 
                 <div className="flex w-full justify-around gap-4 flex-col lg:flex-row">
-                  <a
+                  <motion.a
                     href="/services/interior"
                     className="py-3 text-dm tracking-wide px-[0.9rem] bg-secondaryBtnClr rounded-[40px] text-center font-bold text-clip lg:w-1/2"
+                    initial={{ scale: 1 }}
+                    whileHover={{ scale: 1.05 }}
                   >
                     Learn More
-                  </a>
-                  <a
+                  </motion.a>
+                  <motion.a
                     href="/contact"
                     className="py-3 text-dm tracking-wide px-[0.9rem] bg-primary rounded-[40px] w-full font-bold items-center flex justify-center"
+                    initial={{ scale: 1 }}
+                    whileHover={{ scale: 1.05 }}
                   >
                     Schedule Today!
-                  </a>
+                  </motion.a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="flex flex-col flex-1 relative w-[90%] max-w-[450px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
+          <div className="flex flex-col flex-1 relative w-[90%] max-w-[475px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
             <div
               className="relative m-2 bg-center bg-no-repeat bg-cover h-[200px] lg:h-[250px] rounded-2xl border-2 border-black"
               style={{
@@ -433,18 +436,22 @@ export default function Home() {
                 </div>
 
                 <div className="flex w-full justify-around gap-4 flex-col lg:flex-row">
-                  <a
+                  <motion.a
                     href="/services/interior-spill"
                     className="py-3 text-dm tracking-wide px-[0.9rem] bg-secondaryBtnClr rounded-[40px] text-center font-bold text-clip lg:w-1/2"
+                    initial={{ scale: 1 }}
+                    whileHover={{ scale: 1.05 }}
                   >
                     Learn More
-                  </a>
-                  <a
+                  </motion.a>
+                  <motion.a
                     href="/contact"
                     className="py-3 text-dm tracking-wide px-[0.9rem] bg-primary rounded-[40px] w-full font-bold items-center flex justify-center"
+                    initial={{ scale: 1 }}
+                    whileHover={{ scale: 1.05 }}
                   >
                     Schedule Today!
-                  </a>
+                  </motion.a>
                 </div>
               </div>
             </div>
