@@ -77,7 +77,7 @@ export default function Footer() {
         </Link>
         <hr style={{ marginTop: "1.5rem" }} />
         <Link href="/services/exterior" className="footer-link">
-          Exterior Wash
+          Exterior Decon Wash
         </Link>
         <Link href="/services/exterior-seal" className="footer-link">
           Exterior Seal & Shine

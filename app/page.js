@@ -7,7 +7,7 @@ import { topBtnVariant } from "../utils/animationVariations";
 import { Titillium_Web } from "next/font/google";
 import { InfiniteMovingCards } from "./components/InfiniteMovingCards";
 import FaqItem from "./components/FaqItem";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -85,31 +85,28 @@ export default function Home() {
 
   const faqItems = [
     {
-      title: "What do you need from me when you get to my house?",
-      description: "All we will need is an electrical outlet, a water spigot, and preferably all/most large personal items out of the car."
+      title: "Do you need water/electrical for mobile services?",
+      description: "Yes, all we will need is an electrical outlet, a water spigot, and preferably any large personal items out of the car."
     },
     {
-      title: "How does your vehicle pickup service work?",
+      title: "I won't have a ride back to my house, what are my options?",
       description:
-        "If convenient instead of performing our services mobile at your home there are certain scenarios like weather or dirtier vehicles where we may want to take your vehicle to our shop where we have more facilities and cover to carry out the job. This is offered completely FREE to you and we will bring your vehicle back to you whenever it is done!"
-    },
-    {
-      title: "How long will the detail take?",
-      description:
-        "Every job will take a different amount of time, but once we know the condition of the car and the services requested we can give a good estimate as to how long it will take."
+        "No worries, it happens all the time! We have done everything from bringing people back home, picking their car up and dropping it off later, we've even had customers order an Uber straight from our shop. If your service won't take too long and don't mind waiting for a bit we do have an office you can wait in as well."
     },
     {
       title: "What forms of payment do you take?",
-      description: "We prefer Card/Check payments and can even text or email invoices to you so that you can pay via card from wherever you are!"
+      description:
+        "We can take payment via any widely accepted debit/credit card companies. We also accept checks and can text/email you an invoice to pay online if needed as well."
     },
     {
       title: "Do you offer gift cards or gift certificates?",
-      description: 'Yes we do! Any of our services can be bought as a gift certificate. On the Contact page choose the "For Someone Else" option.'
+      description:
+        "Yes we do! Any of our services can be bought as a gift certificate. Use the Book Online button below to purchase one, or reach out to us via call/text to get one!"
     },
     {
       title: "How does booking with Dirt-Less Detailing work?",
       description:
-        "Once you have booked an appointment with us you're set (if you booked online through Urable you will see your appointment date and time got accepted). From then you'll hear from us again the day before your detail to ensure that the time you picked still works and at this time we'll give you an estimate when we'll get there! "
+        "Once you have booked an appointment with us you're set (if you booked online through Urable you will see your appointment date and time got accepted). From then expect a text the day before your detail to ensure that the time you picked still works. Once confirmed we will see you for your detail the next day!"
     }
   ];
 
@@ -138,18 +135,29 @@ export default function Home() {
               <span className="special-deal-colored">VALENTINES DAY SPECIAL</span>: Book through Urable below and use code
               <span className="special-deal-colored bold"> VALENTINE10</span> to save 10% on any In Shop Detail!
             </p> */}
-          <p className="text-gray-300 max-w-screen-md text-left m-0 text-xl hidden xl:block">
-            Everything from removing stains from your interior, to our most detail-oriented paint correction and ceramic coating jobs, you can trust Dirt-Less
-            Detailing to get the job done right!
-          </p>
+          <div>
+            <p className="text-gray-300 max-w-screen-md text-left m-0 text-xl hidden xl:block">
+              Everything from removing stains from your interior, to our most detail-oriented paint correction and ceramic coating jobs, you can trust Dirt-Less
+              Detailing to get the job done right!
+            </p>
+            <a href="https://maps.app.goo.gl/bhPDhjUN4jsSegu48" className="contact-link footer-contact-link no-underline" target="_blank" rel="noopener">
+              <MapPin /> Buckley Business Park C6 <span className="text-primary no-underline">(Our New Location)</span>
+            </a>
 
-          <div className="flex gap-10 pt-8 flex-col lg:flex-row max-w-screen-md">
-            <motion.a href="/contact" className="top-quote-btn" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
-              <img src="../assets/icons/clipboard.png" alt="clipboard" className="btn-icon" /> BOOK NOW!
-            </motion.a>
-            <motion.a href="tel:2532529758" className="top-quote-btn btn-secondary" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
-              <img src="../assets/icons/phoneMessage.png" alt="call or message" className="btn-icon" /> (253) 252-9758
-            </motion.a>
+            <div className="flex gap-10 pt-8 flex-col lg:flex-row max-w-screen-md">
+              <motion.a href="/contact" className="top-quote-btn" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
+                <img src="../assets/icons/clipboard.png" alt="clipboard" className="btn-icon" /> BOOK NOW!
+              </motion.a>
+              <motion.a
+                href="tel:2532529758"
+                className="top-quote-btn btn-secondary"
+                variants={topBtnVariant}
+                whileHover="hover"
+                transition={{ duration: 0.25 }}
+              >
+                <img src="../assets/icons/phoneMessage.png" alt="call or message" className="btn-icon" /> (253) 252-9758
+              </motion.a>
+            </div>
           </div>
         </header>
       </HeroSlider>
@@ -157,7 +165,7 @@ export default function Home() {
       <div className="service-bkg pt-0">
         <Benefits />
 
-        <div className="border-2 border-white relative px-6 pt-2 pb-6 w-5/6 mx-auto rounded-lg mt-12">
+        {/* <div className="border-2 border-white relative px-6 pt-2 pb-6 w-5/6 mx-auto rounded-lg mt-12">
           <div className="border-2 border-white bg-contactBkg rounded-full absolute -top-6 -left-6 p-4">
             <Image src="/assets/icons/locationPing.svg" width={45} height={45} alt="location icon" />
           </div>
@@ -190,7 +198,7 @@ export default function Home() {
               <img src="../assets/icons/google-maps.svg" alt="google maps icon" className="btn-icon" /> See Our New Location
             </motion.a>
           </div>
-        </div>
+        </div> */}
 
         <div className="general-container new-heading-container pt-5">
           <strong className="above-heading text-4xl">Interior Services</strong>
@@ -312,7 +320,7 @@ export default function Home() {
 
               <motion.ul
                 className="list-none flex flex-col items-start text-xl font-normal w-full m-0 gap-4 pt-6 pb-4"
-                variants={{ initial: {}, show: { transition: { staggerChildren: 0.25, delayChildren: 1 } } }}
+                variants={{ initial: {}, show: { transition: { staggerChildren: 0.25 } } }}
                 whileInView="show"
                 initial="initial"
                 viewport={{ once: true }}
@@ -402,7 +410,7 @@ export default function Home() {
 
               <motion.ul
                 className="list-none flex flex-col items-start text-xl font-normal w-full m-0 gap-4 pt-6 pb-4"
-                variants={{ initial: {}, show: { transition: { staggerChildren: 0.25, delayChildren: 2.25 } } }}
+                variants={{ initial: {}, show: { transition: { staggerChildren: 0.25 } } }}
                 whileInView="show"
                 initial="initial"
                 viewport={{ once: true }}
@@ -580,7 +588,7 @@ export default function Home() {
 
               <motion.ul
                 className="list-none flex flex-col items-start text-xl font-normal w-full m-0 gap-4 pt-6 pb-4"
-                variants={{ initial: {}, show: { transition: { staggerChildren: 0.25, delayChildren: 1 } } }}
+                variants={{ initial: {}, show: { transition: { staggerChildren: 0.25 } } }}
                 whileInView="show"
                 initial="initial"
                 viewport={{ once: true }}
@@ -673,7 +681,7 @@ export default function Home() {
 
               <motion.ul
                 className="list-none flex flex-col items-start text-xl font-normal w-full m-0 gap-4 pt-6 pb-4"
-                variants={{ initial: {}, show: { transition: { staggerChildren: 0.25, delayChildren: 2.25 } } }}
+                variants={{ initial: {}, show: { transition: { staggerChildren: 0.25 } } }}
                 whileInView="show"
                 initial="initial"
                 viewport={{ once: true }}
@@ -740,193 +748,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* <div className="otherservices-subcontainer">
-          <div className="popular-services-card">
-            <div
-              className="popular-img"
-              style={{
-                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b5859464-3c0e-4fcf-8332-17155eb86d00/public)`
-              }}
-            ></div>
-            <div className="popular-header">
-              <a href="/services/exterior" className="accent-orange">
-                Exterior Decon Wash
-              </a>
-              <p className="text-center p-0">Quick Wash & Decontamination</p>
-              <div>
-                <p
-                  style={{
-                    marginBottom: 0,
-                    color: "#c0c0c0",
-                    textAlign: "left"
-                  }}
-                >
-                  From:
-                </p>
-                <p className="popular-pricing-price">$100</p>
-              </div>
-            </div>
-            <hr className="long-hr accent-orange" />
-
-            <ul className="checklist">
-              <li>
-                <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                <p className="checklist-item">Full vehicle strip wash (to remove any embedded contaminants, tar, and sap)</p>
-              </li>
-              <li>
-                <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                <p className="checklist-item">Thoroughly wash tires, wheels, wheel barrels and wells</p>
-              </li>
-              <li>
-                <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                <p className="checklist-item">Clean door jambs and the gas door</p>
-              </li>
-              <li>
-                <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                <p className="checklist-item">Ceramic protection applied to paint (lasts up to 3 months)</p>
-              </li>
-            </ul>
-
-            <hr className="long-hr accent-orange" />
-            <div className="popular-link-container">
-              <a href="/services/exterior" className="popular-readmore text-white">
-                Learn More
-              </a>
-              <a href="/contact" className="popular-readmore-secondary">
-                Get in Touch!
-              </a>
-            </div>
-          </div>
-          <div className="popular-services-card">
-            <div
-              className="popular-img bg-center"
-              style={{
-                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/8b440e8d-d3ed-4363-2638-00f164188100/public)`,
-                backgroundPositionY: "top"
-              }}
-            ></div>
-            <div className="popular-header">
-              <a href="/services/exterior-seal" className="accent-orange">
-                Exterior Seal & Shine
-              </a>
-              <p className="text-center p-0">Wash, Polish, and Paint Coating</p>
-              <div>
-                <p
-                  style={{
-                    marginBottom: 0,
-                    color: "#c0c0c0",
-                    textAlign: "left"
-                  }}
-                >
-                  From:
-                </p>
-                <p className="popular-pricing-price">$500</p>
-              </div>
-            </div>
-            <hr className="long-hr accent-orange" />
-
-            <ul className="checklist">
-              <li>
-                <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                <p className="checklist-item">
-                  <span className="bold">EVERYTHING</span> from our Exterior Decon Service
-                </p>
-              </li>
-              <li>
-                <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                <p className="checklist-item">Light polish to remove minor swirls and waterspots</p>
-              </li>
-              <li>
-                <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                <p className="checklist-item">Restore and ceramic coat all trim</p>
-              </li>
-              <li>
-                <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                <p className="checklist-item">Windshield Coating (you won't even need to use your wipers anymore!)</p>
-              </li>
-              <li>
-                <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                <p className="checklist-item">Ceramic protection applied on paint (lasts up to 1 year)</p>
-              </li>
-            </ul>
-
-            <hr className="long-hr accent-orange" />
-            <div className="popular-link-container">
-              <a href="/services/exterior-seal" className="popular-readmore text-white">
-                Learn More
-              </a>
-              <a href="/contact" className="popular-readmore-secondary">
-                Get in Touch!
-              </a>
-            </div>
-          </div>
-          <div className="popular-services-card">
-            <div
-              className="popular-img"
-              style={{
-                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4ce4f977-365c-4211-a7f9-68c5ec6d7a00/public)`
-              }}
-            ></div>
-            <div className="popular-header">
-              <a href="/services/exterior-correct" className="accent-orange">
-                Correct and Protect
-              </a>
-              <p className="text-center p-0">Wash, 2 Stage Paint Correction, and Ceramic Coating</p>
-              <div>
-                <p
-                  style={{
-                    marginBottom: 0,
-                    color: "#c0c0c0",
-                    textAlign: "left"
-                  }}
-                >
-                  From:
-                </p>
-                <p className="popular-pricing-price">$1,000</p>
-              </div>
-            </div>
-            <hr className="long-hr accent-orange" />
-
-            <ul className="checklist">
-              <li>
-                <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                <p className="checklist-item">
-                  <span className="bold">EVERYTHING</span> from our Exterior Decon Service
-                </p>
-              </li>
-              <li>
-                <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                <p className="checklist-item">Our full paint correction process (Removes 80%-90% of scratching)</p>
-              </li>
-              <li>
-                <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                <p className="checklist-item">Restore and ceramic coat all trim</p>
-              </li>
-              <li>
-                <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                <p className="checklist-item">Windshield Coating (you won't even need to use your wipers anymore!)</p>
-              </li>
-              <li>
-                <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                <p className="checklist-item">Ceramic coat wheel faces</p>
-              </li>
-              <li>
-                <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                <p className="checklist-item">Ceramic coating applied to paint (Can last a Lifetime*!)</p>
-              </li>
-            </ul>
-
-            <hr className="long-hr accent-orange" />
-            <div className="popular-link-container">
-              <a href="/services/exterior-correct" className="popular-readmore text-white">
-                Learn More
-              </a>
-              <a href="/contact" className="popular-readmore-secondary">
-                Get in Touch!
-              </a>
-            </div>
-          </div>
-        </div> */}
 
         <br className="extra-space" />
         <div
@@ -934,8 +755,10 @@ export default function Home() {
           style={{ margin: "5vh auto 2vh auto" }}
         >
           <div>
-            <strong className="above-heading text-4xl"> Boats/RV's/Trailers </strong>
-            <h3 className="new-heading text-xl lg:text-2xl">Exterior and Interior detailing services for any of your other vehicles.</h3>
+            <strong className="above-heading text-4xl"> Boats/RV's/Trailers/ & ORV's </strong>
+            <h3 className="new-heading text-xl lg:text-2xl">
+              Exterior and Interior detailing services for <span className="font-bold">any</span> of your other vehicles.
+            </h3>
           </div>
           <a href="/services/recreational" className="popular-readmore-secondary">
             Learn More
@@ -1002,8 +825,9 @@ export default function Home() {
             className="w-screen"
           />
         </div>
+
         <br className="extra-space" />
-        <hr className="pricing__hr" />
+
         <div className="general-container new-heading-container font-bold">
           <h3 style={{ margin: 0, width: "auto", padding: 0 }} className="new-heading new-heading-center text-4xl">
             AUTO DETAILING FAQ's
@@ -1018,25 +842,11 @@ export default function Home() {
               <FaqItem key={i} i={i} expanded={expanded} setExpanded={setExpanded} title={item.title} description={item.description} isMobile={smallScreen} />
             ))}
           </div>
-          <div className="map relative">
-            {/* <Image
-              src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0a0db25e-a828-453b-caca-15a792068400/public"
-              className="h-auto object-cover rounded-lg"
-              fill
-              alt="Image of beautiful ceramic coated car on a foggy morning"
-            /> */}
-            {/* <iframe
-                title="Map of Dirt-Less Detailing location"
-                width={"300"}
-                height={"350"}
-                style={{ border: 0 }}
-                loading="lazy"
-                src={`https://www.google.com/maps/embed/v1/place?zoom=15&q=place_id:ChIJxxfUWqz7kFQRotRs8MwWDRE&key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS}`}
-              ></iframe> */}
+          <div>
             <iframe
-              width="600"
-              height="450"
-              style={{ border: 0 }}
+              width={"300"}
+              height={"350"}
+              style={{ border: 0, margin: "16 auto" }}
               loading="lazy"
               allowFullScreen
               src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJxxfUWqz7kFQRotRs8MwWDRE&key=AIzaSyCabi1i-5RcG2qNysx_bZNQnYUMmT_l6YU"
