@@ -293,7 +293,7 @@ export default function Home() {
             <div className="w-full flex justify-between flex-1 px-3 flex-col items-center">
               <div className="text-center">
                 <motion.a
-                  href="/services/interior-swift"
+                  href="/services/interior"
                   className="inline-flex mx-auto my-0 text-3xl font-bold no-underline"
                   variants={serviceVariant}
                   initial="initial"
@@ -383,7 +383,7 @@ export default function Home() {
             <div className="w-full flex justify-between flex-1 px-3 flex-col items-center">
               <div className="text-center">
                 <motion.a
-                  href="/services/interior-swift"
+                  href="/services/interior-spill"
                   className="inline-flex mx-auto my-0 text-3xl font-bold no-underline"
                   variants={serviceVariant}
                   initial="initial"
@@ -457,12 +457,290 @@ export default function Home() {
             </div>
           </div>
         </div>
+
         <br className="extra-space" />
+
         <div className="general-container new-heading-container" style={{ margin: "5vh auto 2vh auto" }}>
           <strong className="above-heading text-4xl"> Exterior Services </strong>
           <h3 className="new-heading text-xl lg:text-2xl">From a quick refresh to a complete paint correction, we cover all things exterior.</h3>
         </div>
-        <div className="otherservices-subcontainer">
+        <div className="flex flex-col lg:flex-row flex-grow lg:justify-between lg:items-stretch lg:flex-wrap lg:w-[90%] lg:my-0 mx-auto justify-center items-center gap-24 mb-8">
+          <div className="flex flex-col flex-1 relative w-[90%] max-w-[475px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
+            <div
+              className="relative m-2 bg-center bg-no-repeat bg-cover h-[200px] lg:h-[250px] rounded-2xl border-2 border-black"
+              style={{
+                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b5859464-3c0e-4fcf-8332-17155eb86d00/public)`
+              }}
+            ></div>
+            <div className="w-full flex justify-between flex-1 px-3 flex-col items-center">
+              <div className="text-center">
+                <motion.a
+                  href="/services/exterior"
+                  className="inline-flex mx-auto my-0 text-3xl font-bold no-underline"
+                  variants={serviceVariant}
+                  initial="initial"
+                  whileHover="hover"
+                  animate="initial"
+                >
+                  Exterior Decon Wash
+                  <motion.span className="flex items-center pl-2" variants={arrowVariant}>
+                    <ArrowRight color="white" />
+                  </motion.span>
+                </motion.a>
+                <motion.p className="text-center p-0 text-secondaryText font-semibold mx-auto max-w-[90%]">
+                  The detailers car wash - one that goes far beyond what an auto car wash can do. Your wheels, tires, and even paint will be cleaner than ever!
+                </motion.p>
+              </div>
+
+              <motion.ul
+                className="list-none flex flex-col items-start text-xl font-normal w-full m-0 gap-4 pt-6 pb-4"
+                variants={{ initial: {}, show: { transition: { staggerChildren: 0.25 } } }}
+                whileInView="show"
+                initial="initial"
+                viewport={{ once: true }}
+              >
+                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
+                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
+                  <p className="ml-2">Full Vehicle Strip Wash (to remove any embedded contaminants, tar, and sap)</p>
+                </motion.li>
+                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
+                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
+                  <p className="ml-2">Thoroughly Wash the Tires, Wheels, Wheel Barrels, and Wells</p>
+                </motion.li>
+                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
+                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
+                  <p className="ml-2">Clean Out All Door Jambs and the Gas Door</p>
+                </motion.li>
+                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
+                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
+                  <p className="ml-2">Apply a Ceramic Protectant On All Surfaces (lasts up to 3 months)</p>
+                </motion.li>
+              </motion.ul>
+
+              <div className="w-full">
+                <div className="flex w-full justify-around gap-4 py-4">
+                  <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
+                    <p className="text-white m-0">1-2.5</p>
+                    <p className="text-secondaryText text-[14px]">hours</p>
+                  </div>
+                  <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
+                    <p className="text-secondaryText text-[14px]">Starting at</p>
+                    <p className="text-white m-0 text-2xl">$100</p>
+                  </div>
+                </div>
+
+                <div className="flex w-full justify-around gap-4 flex-col lg:flex-row">
+                  <motion.a
+                    href="/services/exterior"
+                    className="py-3 text-dm tracking-wide px-[0.9rem] bg-secondaryBtnClr rounded-[40px] text-center font-bold text-clip lg:w-1/2"
+                    initial={{ scale: 1 }}
+                    whileHover={{ scale: 1.05 }}
+                  >
+                    Learn More
+                  </motion.a>
+                  <motion.a
+                    href="/contact"
+                    className="py-3 text-dm tracking-wide px-[0.9rem] bg-primary rounded-[40px] w-full font-bold items-center flex justify-center"
+                    initial={{ scale: 1 }}
+                    whileHover={{ scale: 1.05 }}
+                  >
+                    Schedule Today!
+                  </motion.a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col flex-1 relative w-[90%] max-w-[475px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
+            <div
+              className="relative m-2 bg-center bg-no-repeat bg-cover h-[200px] lg:h-[250px] rounded-2xl border-2 border-black"
+              style={{
+                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/8b440e8d-d3ed-4363-2638-00f164188100/public)`
+              }}
+            ></div>
+            <div className="w-full flex justify-between flex-1 px-3 flex-col items-center">
+              <div className="text-center">
+                <motion.a
+                  href="/services/exterior-seal"
+                  className="inline-flex mx-auto my-0 text-3xl font-bold no-underline"
+                  variants={serviceVariant}
+                  initial="initial"
+                  whileHover="hover"
+                  animate="initial"
+                >
+                  Seal & Shine
+                  <motion.span className="flex items-center pl-2" variants={arrowVariant}>
+                    <ArrowRight color="white" />
+                  </motion.span>
+                </motion.a>
+                <motion.p className="text-center p-0 text-secondaryText font-semibold mx-auto max-w-[90%]">
+                  The best service to get the benefits of a ceramic coating and make your vehicle shine like new!
+                </motion.p>
+              </div>
+
+              <motion.ul
+                className="list-none flex flex-col items-start text-xl font-normal w-full m-0 gap-4 pt-6 pb-4"
+                variants={{ initial: {}, show: { transition: { staggerChildren: 0.25, delayChildren: 1 } } }}
+                whileInView="show"
+                initial="initial"
+                viewport={{ once: true }}
+              >
+                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
+                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
+                  <p className="ml-2">
+                    <span>EVERYTHING</span> From our Exterior Decon Service
+                  </p>
+                </motion.li>
+                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
+                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
+                  <p className="ml-2">Light Polish To Remove Minor Swirls and Waterspots</p>
+                </motion.li>
+                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
+                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
+                  <p className="ml-2">Restore and Ceramic Coat All Trim</p>
+                </motion.li>
+                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
+                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
+                  <p className="ml-2">Coat the Windshield (You'll barely need to use your wipers anymore!)</p>
+                </motion.li>
+                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
+                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
+                  <p className="ml-2">Apply a 1-Year Ceramic Coating to the Paint</p>
+                </motion.li>
+              </motion.ul>
+
+              <div className="w-full">
+                <div className="flex w-full justify-around gap-4 py-4">
+                  <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
+                    <p className="text-white m-0">5-8</p>
+                    <p className="text-secondaryText text-[14px]">hours</p>
+                  </div>
+                  <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
+                    <p className="text-secondaryText text-[14px]">Starting at</p>
+                    <p className="text-white m-0 text-2xl">$500</p>
+                  </div>
+                </div>
+
+                <div className="flex w-full justify-around gap-4 flex-col lg:flex-row">
+                  <motion.a
+                    href="/services/exterior-seal"
+                    className="py-3 text-dm tracking-wide px-[0.9rem] bg-secondaryBtnClr rounded-[40px] text-center font-bold text-clip lg:w-1/2"
+                    initial={{ scale: 1 }}
+                    whileHover={{ scale: 1.05 }}
+                  >
+                    Learn More
+                  </motion.a>
+                  <motion.a
+                    href="/contact"
+                    className="py-3 text-dm tracking-wide px-[0.9rem] bg-primary rounded-[40px] w-full font-bold items-center flex justify-center"
+                    initial={{ scale: 1 }}
+                    whileHover={{ scale: 1.05 }}
+                  >
+                    Schedule Today!
+                  </motion.a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col flex-1 relative w-[90%] max-w-[475px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
+            <div
+              className="relative m-2 bg-center bg-no-repeat bg-cover h-[200px] lg:h-[250px] rounded-2xl border-2 border-black"
+              style={{
+                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4ce4f977-365c-4211-a7f9-68c5ec6d7a00/public)`
+              }}
+            ></div>
+            <div className="w-full flex justify-between flex-1 px-3 flex-col items-center">
+              <div className="text-center">
+                <motion.a
+                  href="/services/interior-swift"
+                  className="inline-flex mx-auto my-0 text-3xl font-bold no-underline"
+                  variants={serviceVariant}
+                  initial="initial"
+                  whileHover="hover"
+                  animate="initial"
+                >
+                  Correct & Protect
+                  <motion.span className="flex items-center pl-2" variants={arrowVariant}>
+                    <ArrowRight color="white" />
+                  </motion.span>
+                </motion.a>
+                <motion.p className="text-center p-0 text-secondaryText font-semibold mx-auto max-w-[90%]">
+                  Our top of the line exterior package. A 2 stage paint correction topped with a 3-year ceramic coating (See why we think 3 years is the most
+                  you'll need from a coating).
+                </motion.p>
+              </div>
+
+              <motion.ul
+                className="list-none flex flex-col items-start text-xl font-normal w-full m-0 gap-4 pt-6 pb-4"
+                variants={{ initial: {}, show: { transition: { staggerChildren: 0.25, delayChildren: 2.25 } } }}
+                whileInView="show"
+                initial="initial"
+                viewport={{ once: true }}
+              >
+                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
+                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
+                  <p className="ml-2">
+                    <span>EVERYTHING</span> From our Exterior Decon Service
+                  </p>
+                </motion.li>
+                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
+                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
+                  <p className="ml-2">Our Full Paint Correction Process (Removes 80%-90% of scratches)</p>
+                </motion.li>
+                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
+                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
+                  <p className="ml-2">Restore and Ceramic Coat All Trim</p>
+                </motion.li>
+                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
+                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
+                  <p className="ml-2">Coat the Windshield (You'll barely need to use your wipers anymore!)</p>
+                </motion.li>
+                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
+                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
+                  <p className="ml-2">Ceramic Coat All Wheel Faces</p>
+                </motion.li>
+                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
+                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
+                  <p className="ml-2">Apply a 3-Year Ceramic Coating to the Paint</p>
+                </motion.li>
+              </motion.ul>
+
+              <div className="w-full">
+                <div className="flex w-full justify-around gap-4 py-4">
+                  <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
+                    <p className="text-white m-0">10-15+</p>
+                    <p className="text-secondaryText text-[14px]">hours</p>
+                  </div>
+                  <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
+                    <p className="text-secondaryText text-[14px]">Starting at</p>
+                    <p className="text-white m-0 text-2xl">$1,000</p>
+                  </div>
+                </div>
+
+                <div className="flex w-full justify-around gap-4 flex-col lg:flex-row">
+                  <motion.a
+                    href="/services/exterior-correct"
+                    className="py-3 text-dm tracking-wide px-[0.9rem] bg-secondaryBtnClr rounded-[40px] text-center font-bold text-clip lg:w-1/2"
+                    initial={{ scale: 1 }}
+                    whileHover={{ scale: 1.05 }}
+                  >
+                    Learn More
+                  </motion.a>
+                  <motion.a
+                    href="/contact"
+                    className="py-3 text-dm tracking-wide px-[0.9rem] bg-primary rounded-[40px] w-full font-bold items-center flex justify-center"
+                    initial={{ scale: 1 }}
+                    whileHover={{ scale: 1.05 }}
+                  >
+                    Schedule Today!
+                  </motion.a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <div className="otherservices-subcontainer">
           <div className="popular-services-card">
             <div
               className="popular-img"
@@ -648,7 +926,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <br className="extra-space" />
         <div
