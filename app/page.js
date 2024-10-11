@@ -205,7 +205,7 @@ export default function Home() {
           <h2 className="new-heading text-xl lg:text-2xl">Transform your vehicle's interior with our Premium Auto Detailing services.</h2>
         </div>
         <div className="flex flex-col lg:flex-row flex-grow lg:justify-between lg:items-stretch lg:flex-wrap lg:w-[90%] lg:my-0 mx-auto justify-center items-center gap-24 mb-8">
-          <div className="flex flex-col flex-1 relative w-[90%] max-w-[475px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
+          <div className="flex flex-col flex-1 relative w-[90%] min-w-[400px] max-w-[475px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
             <div
               className="relative m-2 bg-center bg-no-repeat bg-cover h-[200px] lg:h-[250px] rounded-2xl border-2 border-black"
               style={{
@@ -291,7 +291,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex flex-col flex-1 relative w-[90%] max-w-[475px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
+          <div className="flex flex-col flex-1 relative w-[90%] min-w-[400px] max-w-[475px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
             <div
               className="relative m-2 bg-center bg-no-repeat bg-cover h-[200px] lg:h-[250px] rounded-2xl border-2 border-black"
               style={{
@@ -381,7 +381,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex flex-col flex-1 relative w-[90%] max-w-[475px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
+          <div className="flex flex-col flex-1 relative w-[90%] min-w-[400px] max-w-[475px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
             <div
               className="relative m-2 bg-center bg-no-repeat bg-cover h-[200px] lg:h-[250px] rounded-2xl border-2 border-black"
               style={{
@@ -473,7 +473,7 @@ export default function Home() {
           <h3 className="new-heading text-xl lg:text-2xl">From a quick refresh to a complete paint correction, we cover all things exterior.</h3>
         </div>
         <div className="flex flex-col lg:flex-row flex-grow lg:justify-between lg:items-stretch lg:flex-wrap lg:w-[90%] lg:my-0 mx-auto justify-center items-center gap-24 mb-8">
-          <div className="flex flex-col flex-1 relative w-[90%] max-w-[475px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
+          <div className="flex flex-col flex-1 relative w-[90%] min-w-[400px] max-w-[475px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
             <div
               className="relative m-2 bg-center bg-no-repeat bg-cover h-[200px] lg:h-[250px] rounded-2xl border-2 border-black"
               style={{
@@ -559,7 +559,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex flex-col flex-1 relative w-[90%] max-w-[475px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
+          <div className="flex flex-col flex-1 relative w-[90%] min-w-[400px] max-w-[475px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
             <div
               className="relative m-2 bg-center bg-no-repeat bg-cover h-[200px] lg:h-[250px] rounded-2xl border-2 border-black"
               style={{
@@ -651,7 +651,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex flex-col flex-1 relative w-[90%] max-w-[475px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
+          <div className="flex flex-col flex-1 relative w-[90%] min-w-[400px] max-w-[475px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
             <div
               className="relative m-2 bg-center bg-no-repeat bg-cover h-[200px] lg:h-[250px] rounded-2xl border-2 border-black"
               style={{
@@ -829,7 +829,7 @@ export default function Home() {
         <br className="extra-space" />
 
         <div className="general-container new-heading-container font-bold">
-          <h3 style={{ margin: 0, width: "auto", padding: 0 }} className="new-heading new-heading-center text-4xl">
+          <h3 style={{ margin: 0, width: "auto", padding: 0 }} className="new-heading new-heading-center text-4xl lg:text-5xl">
             AUTO DETAILING FAQ's
           </h3>
           <p className="max-w-[900px] mx-auto text-center my-0 font-normal pb-8">
@@ -842,11 +842,9 @@ export default function Home() {
               <FaqItem key={i} i={i} expanded={expanded} setExpanded={setExpanded} title={item.title} description={item.description} isMobile={smallScreen} />
             ))}
           </div>
-          <div>
+          <div className="map">
             <iframe
-              width={"300"}
-              height={"350"}
-              style={{ border: 0, margin: "16 auto" }}
+              style={{ border: 0, margin: "16 auto", width: "100%", height: "100%" }}
               loading="lazy"
               allowFullScreen
               src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJxxfUWqz7kFQRotRs8MwWDRE&key=AIzaSyCabi1i-5RcG2qNysx_bZNQnYUMmT_l6YU"

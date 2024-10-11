@@ -1766,7 +1766,6 @@ footer {
 
 .general-container {
   width: 90%;
-  max-width: 1800px;
   margin: 0 auto;
 }
 
@@ -2528,7 +2527,7 @@ footer {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 0 2px 15px $main-clr;
+  box-shadow: 4px 8px 15px black;
 }
 
 .pricing__range-container {

@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "../app/components/Select";
 
 import dynamic from "next/dynamic";
 const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
@@ -103,14 +104,22 @@ export default function PricingComponent({ prices = props.prices, addons = "" })
   return (
     <div className="pricing__container">
       <div className="pricing__img" style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/${imagesArr[currVal]}/cover)` }}></div>
-      <select onChange={(e) => updateValue(e)} className="vehicle__select" value={currVal}>
-        <option value="0">2-Door Cars</option>
-        <option value="1">Quarter Ton Trucks</option>
-        <option value="2">4-Door Cars</option>
-        <option value="3">Mid-Size SUV's</option>
-        <option value="4">4 Door Trucks</option>
-        <option value="5">3-Row SUV's & Minivans</option>
-      </select>
+      <Select value={currVal} onChange={(e) => updateValue(e)}>
+        <SelectTrigger className="w-[180px]">
+          <SelectValue placeholder="Select a vehicle size." />
+        </SelectTrigger>
+        <SelectContent>
+          <SelectGroup>
+            <SelectLabel>Sizes</SelectLabel>
+            <SelectItem value="0">2-Door Cars</SelectItem>
+            <SelectItem value="1">Quarter Ton Trucks</SelectItem>
+            <SelectItem value="2">4-Door Sedans</SelectItem>
+            <SelectItem value="3">Mid-Size SUV's</SelectItem>
+            <SelectItem value="4">4-Door Trucks</SelectItem>
+            <SelectItem value="5">3-Row SUV's & Minivans</SelectItem>
+          </SelectGroup>
+        </SelectContent>
+      </Select>
 
       <div className="pricing__pricecard">
         <p>Your Price Estimate:</p>
