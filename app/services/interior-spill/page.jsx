@@ -80,7 +80,7 @@ export default function InteriorSpill() {
                 </h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
-              <PricingComponent prices={[450, 450, 450, 500, 575, 575]} addons="interior" />
+              <PricingComponent prices={[450, 450, 450, 500, 575, 575]} addons="fullInterior" />
             </div>
 
             <h2 className="cleaning-process-title pb-8">Our Interior + Spill Guard Process</h2>

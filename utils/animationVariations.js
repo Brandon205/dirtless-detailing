@@ -79,3 +79,40 @@ export const topBtnVariant = {
     scale: 1.05
   }
 };
+
+export const containerVariant = {
+  // Side pages process section
+  initial: {},
+  whileInView: {
+    transition: {
+      staggerChildren: 0.25
+    }
+  }
+};
+
+export const oddVariant = {
+  // Side pages process section
+  initial: {
+    opacity: 0,
+    x: -100
+  },
+  whileInView: {
+    opacity: 1,
+    x: 0
+  }
+};
+
+export const evenVariant = {
+  // Side pages process section
+  initial: {
+    opacity: 0,
+    x: 100
+  },
+  whileInView: {
+    opacity: 1,
+    x: 0
+  },
+  transition: {
+    duration: 1
+  }
+};

@@ -77,7 +77,7 @@ export default function FullIntEx() {
                 </h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
-              <PricingComponent prices={[150, 150, 150, 175, 175, 200]} addons="interior" />
+              <PricingComponent prices={[150, 150, 150, 175, 175, 200]} addons="interiorSwift" />
             </div>
 
             <h2 className="cleaning-process-title pb-8">Our Swift Interior Process</h2>
