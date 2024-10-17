@@ -585,7 +585,7 @@ export default function Home() {
               <div className="w-full">
                 <div className="flex w-full justify-around gap-4 py-4">
                   <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
-                    <p className="text-white m-0">5-8</p>
+                    <p className="text-white m-0">6-9</p>
                     <p className="text-secondaryText text-[14px]">hours</p>
                   </div>
                   <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
