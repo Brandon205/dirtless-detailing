@@ -2,9 +2,17 @@
 import PricingComponent from "../../../utils/PricingComponent";
 import ImageSlider from "../../../utils/ImageSlider";
 import HeaderComponent from "../../components/HeaderComponent";
-import { previewParentVariation, imgVariation1, imgVariation2, imgVariation3, imgVariation4 } from "../../../utils/animationVariations";
+import {
+  previewParentVariation,
+  imgVariation1,
+  imgVariation2,
+  imgVariation3,
+  imgVariation4,
+  containerVariant,
+  oddVariant,
+  evenVariant
+} from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
-import { containerVariant, oddVariant, evenVariant } from "../../../utils/animationVariations";
 
 const jsonld = {
   "@context": "https://schema.org/",

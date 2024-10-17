@@ -2,7 +2,16 @@
 import React, { useState, useEffect } from "react";
 import PricingComponent from "../../../utils/PricingComponent";
 import ImageSlider from "../../../utils/ImageSlider";
-import { previewParentVariation, imgVariation1, imgVariation2, imgVariation3, imgVariation4 } from "../../../utils/animationVariations";
+import {
+  previewParentVariation,
+  imgVariation1,
+  imgVariation2,
+  imgVariation3,
+  imgVariation4,
+  containerVariant,
+  oddVariant,
+  evenVariant
+} from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
 import HeaderComponent from "../../components/HeaderComponent";
 import FaqItem from "../../components/FaqItem";
@@ -172,8 +181,8 @@ export default function ExteriorCorrect() {
             </div>
 
             <h2 className="cleaning-process-title pb-8">Our Exterior Correct and Protect Process</h2>
-            <ol className="list">
-              <li className="item">
+            <motion.ol className="list" variants={containerVariant} initial="initial" whileInView="whileInView" viewport={{ once: true }}>
+              <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">1</h3>
                 </div>
@@ -181,8 +190,8 @@ export default function ExteriorCorrect() {
                   <h4 className="step-title">Wash Vehicle</h4>
                   <p className="step-desc">Thorough top to bottom wash including the gas door.</p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={evenVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">2</h3>
                 </div>
@@ -190,8 +199,8 @@ export default function ExteriorCorrect() {
                   <h4 className="step-title">Wheel Cleaning</h4>
                   <p className="step-desc">Clean wheels, wheel wells, and wheel barrels with chemicals made for removing brake dust and road film.</p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">3</h3>
                 </div>
@@ -202,8 +211,8 @@ export default function ExteriorCorrect() {
                     car. We have some of the best products to remove all of it.
                   </p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={evenVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">4</h3>
                 </div>
@@ -211,8 +220,8 @@ export default function ExteriorCorrect() {
                   <h4 className="step-title">Dry Vehicle</h4>
                   <p className="step-desc">Dry the whole vehicle with drying towels and air blowers.</p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">5</h3>
                 </div>
@@ -223,8 +232,8 @@ export default function ExteriorCorrect() {
                     over the glass as well removing watermarks and fine scratches.
                   </p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={evenVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">6</h3>
                 </div>
@@ -235,8 +244,8 @@ export default function ExteriorCorrect() {
                     car that's uncoated!
                   </p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">7</h3>
                 </div>
@@ -244,8 +253,8 @@ export default function ExteriorCorrect() {
                   <h4 className="step-title">Clean Door Jambs</h4>
                   <p className="step-desc">Thoroughly wipe down all the cracks and crevices in the door jambs.</p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={evenVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">8</h3>
                 </div>
@@ -253,8 +262,8 @@ export default function ExteriorCorrect() {
                   <h4 className="step-title">Final Touches</h4>
                   <p className="step-desc">Dress tires with ceramic tire shine, and also dress the wheel wells.</p>
                 </div>
-              </li>
-            </ol>
+              </motion.li>
+            </motion.ol>
 
             <br className="extra-space" />
 

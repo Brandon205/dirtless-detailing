@@ -1,7 +1,16 @@
 "use client";
 import PricingComponent from "../../../utils/PricingComponent";
 import HeaderComponent from "../../components/HeaderComponent";
-import { previewParentVariation, imgVariation1, imgVariation2, imgVariation3, imgVariation4 } from "../../../utils/animationVariations";
+import {
+  previewParentVariation,
+  imgVariation1,
+  imgVariation2,
+  imgVariation3,
+  imgVariation4,
+  containerVariant,
+  oddVariant,
+  evenVariant
+} from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
 import ImageSlider from "../../../utils/ImageSlider";
 
@@ -80,8 +89,8 @@ export default function Exterior() {
             </div>
 
             <h2 className="cleaning-process-title pb-8">Our Exterior Decon Wash Process</h2>
-            <ol className="list">
-              <li className="item">
+            <motion.ol className="list" variants={containerVariant} initial="initial" whileInView="whileInView" viewport={{ once: true }}>
+              <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">1</h3>
                 </div>
@@ -89,8 +98,8 @@ export default function Exterior() {
                   <h4 className="step-title">Wash Vehicle</h4>
                   <p className="step-desc">Thorough top to bottom wash including the inside of the gas door.</p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={evenVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">2</h3>
                 </div>
@@ -98,8 +107,8 @@ export default function Exterior() {
                   <h4 className="step-title">Wheel Cleaning</h4>
                   <p className="step-desc">Clean wheels, wheel wells, and wheel barrels with chemicals made for removing brake dust and road film.</p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">3</h3>
                 </div>
@@ -110,8 +119,8 @@ export default function Exterior() {
                     car. We have some of the best products to remove all of it.
                   </p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={evenVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">4</h3>
                 </div>
@@ -119,8 +128,8 @@ export default function Exterior() {
                   <h4 className="step-title">Protect Paint</h4>
                   <p className="step-desc">Apply our mix of Ceramic Spray (gives the whole vehicle 3 months of protection).</p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">5</h3>
                 </div>
@@ -128,8 +137,8 @@ export default function Exterior() {
                   <h4 className="step-title">Dry Vehicle</h4>
                   <p className="step-desc">Dry the whole vehicle with drying towels and air blowers.</p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={evenVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">6</h3>
                 </div>
@@ -137,8 +146,8 @@ export default function Exterior() {
                   <h4 className="step-title">Clean Door Jambs</h4>
                   <p className="step-desc">Thoroughly wipe down all the cracks and crevices in the door jambs.</p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">7</h3>
                 </div>
@@ -146,8 +155,8 @@ export default function Exterior() {
                   <h4 className="step-title">Final Touches</h4>
                   <p className="step-desc">Dress tires, wheel wells and plastics.</p>
                 </div>
-              </li>
-              <li className="item item-disabled">
+              </motion.li>
+              <motion.li className="item item-disabled" variants={evenVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number" style={{ border: "2px solid #aaa" }}>
                     8
@@ -169,8 +178,8 @@ export default function Exterior() {
                     .
                   </p>
                 </div>
-              </li>
-            </ol>
+              </motion.li>
+            </motion.ol>
 
             <br className="extra-space" />
 

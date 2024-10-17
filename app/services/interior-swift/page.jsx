@@ -1,7 +1,16 @@
 "use client";
 import PricingComponent from "../../../utils/PricingComponent";
 import HeaderComponent from "../../components/HeaderComponent";
-import { previewParentVariation, imgVariation1, imgVariation2, imgVariation3, imgVariation4 } from "../../../utils/animationVariations";
+import {
+  previewParentVariation,
+  imgVariation1,
+  imgVariation2,
+  imgVariation3,
+  imgVariation4,
+  containerVariant,
+  oddVariant,
+  evenVariant
+} from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
 
 const jsonld = {
@@ -81,8 +90,8 @@ export default function FullIntEx() {
             </div>
 
             <h2 className="cleaning-process-title pb-8">Our Swift Interior Process</h2>
-            <ol className="list">
-              <li className="item">
+            <motion.ol className="list" variants={containerVariant} initial="initial" whileInView="whileInView" viewport={{ once: true }}>
+              <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">1</h3>
                 </div>
@@ -90,8 +99,8 @@ export default function FullIntEx() {
                   <h4 className="step-title">Vacuum Everything</h4>
                   <p className="step-desc">Thoroughly vacuum every crack and crevice of the vehicle.</p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={evenVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">2</h3>
                 </div>
@@ -99,8 +108,8 @@ export default function FullIntEx() {
                   <h4 className="step-title">Wipe Down</h4>
                   <p className="step-desc">Using a revolutionary new cleaning and conditioning product we'll wipe down all surfaces in your cars interior.</p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">3</h3>
                 </div>
@@ -108,8 +117,8 @@ export default function FullIntEx() {
                   <h4 className="step-title">Floormats</h4>
                   <p className="step-desc">We'll vacuum any carpeted floormats, and scrub any plastic floormats.</p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={evenVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">4</h3>
                 </div>
@@ -117,8 +126,8 @@ export default function FullIntEx() {
                   <h4 className="step-title">Clean Windows</h4>
                   <p className="step-desc">Clean windows to a streak free finish</p>
                 </div>
-              </li>
-            </ol>
+              </motion.li>
+            </motion.ol>
 
             <br className="extra-space" />
 

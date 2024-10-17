@@ -2474,6 +2474,7 @@ footer {
 }
 
 .pricing__subtext {
+  padding-bottom: 2rem;
   color: $secondary-text;
 }
 
@@ -3486,7 +3487,8 @@ footer {
   }
 
   .cleaning-process-title {
-    margin-top: 15vh;
+    font-size: 2.5em;
+    margin-top: 5vh;
   }
 
   .header-icons-container {

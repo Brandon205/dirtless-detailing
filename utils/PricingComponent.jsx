@@ -202,7 +202,10 @@ const FullInterior = () => {
         <img src="../assets/icons/ozone.png" className="addon-icon" alt="Air filter in use" />
         <div className="addon-content">
           <h4>Ozone Treatment</h4>
-          <p>Ozone treatment is the use of O3 (ozone gas) to remove odors, bacteria, and viruses from everywhere in the vehicle.</p>
+          <p>
+            Ozone treatment is the use of O3 (ozone gas) to remove odors, bacteria, and viruses from everywhere in the vehicle. Recommended on ALL mold and
+            smoke odor jobs.
+          </p>
         </div>
         <div className="addon-addbutton"></div>
         <div className="addon-price">
