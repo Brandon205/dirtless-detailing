@@ -177,7 +177,7 @@ export default function ExteriorCorrect() {
                 </h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
-              <PricingComponent prices={[1000, 1000, 1000, 1250, 1500, 1500]} addons="correction" />
+              <PricingComponent shortTitle="exteriorcorrect" serviceType="exterior" addons="correction" />
             </div>
 
             <h2 className="cleaning-process-title pb-8">Our Exterior Correct and Protect Process</h2>

@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import prices from "./Prices";
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "../app/components/Select";
 
 import dynamic from "next/dynamic";
@@ -16,11 +17,21 @@ const imagesArr = [
   "a205f097-f145-41b5-8af5-98a046dca700"
 ];
 
+const sizesArr = {
+  // prices[sizesArr[currVal]][serviceType][shortTitle]
+  0: "2 Door",
+  1: "Quarter Ton",
+  2: "4 Door",
+  3: "Mid Size",
+  4: "Trucks",
+  5: "3 Row"
+};
+
 {
-  /* <PricingComponent title='Ceramic Coating' prices={['949', '949', '1099', '1099', '1249', '1249']} addons='interior' /> */
+  /* <PricingComponent title='Ceramic Coating' shortTitle="interiorswift" addons='interior' /> */
 }
-export default function PricingComponent({ prices = props.prices, addons = "" }) {
-  const [currVal, setCurrVal] = useState(undefined);
+export default function PricingComponent(props) {
+  const [currVal, setCurrVal] = useState(2);
   const [animate, setAnimate] = useState(false);
   const [addonSection, setAddonSection] = useState("undefined");
 
@@ -29,7 +40,7 @@ export default function PricingComponent({ prices = props.prices, addons = "" })
       setAnimate(true);
     }, 1500);
 
-    switch (addons) {
+    switch (props.addons) {
       case "interiorSwift":
         setAddonSection(<InteriorSwift />);
         break;
@@ -100,9 +111,13 @@ export default function PricingComponent({ prices = props.prices, addons = "" })
             <span className="pricing__pricecard-price">
               $
               {animate ? (
-                <AnimatedNumbers includeComma animateToNumber={prices[currVal]} configs={[{ mass: 1, tension: 320, friction: 100 }]}></AnimatedNumbers>
+                <AnimatedNumbers
+                  includeComma
+                  animateToNumber={prices[sizesArr[currVal]][props.serviceType][props.shortTitle]}
+                  configs={[{ mass: 1, tension: 320, friction: 100 }]}
+                ></AnimatedNumbers>
               ) : (
-                prices[currVal]
+                prices[sizesArr[currVal]][props.serviceType][props.shortTitle]
               )}
             </span>
           </strong>

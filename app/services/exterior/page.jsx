@@ -85,7 +85,7 @@ export default function Exterior() {
                 </h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
-              <PricingComponent prices={[100, 100, 100, 125, 150, 150]} addons="exterior" />
+              <PricingComponent shortTitle="exteriorwash" serviceType="exterior" addons="exterior" />
             </div>
 
             <h2 className="cleaning-process-title pb-8">Our Exterior Decon Wash Process</h2>

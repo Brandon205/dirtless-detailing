@@ -68,85 +68,80 @@
 const prices = {
   "2 Door": {
     interior: {
-      interior: 300,
-      interiorspill: 450,
-      interiorswift: 150,
+      interiorswift: 175,
+      interior: 335,
+      interiorspill: 500
     },
     exterior: {
-      exteriorwash: 100,
-      exteriorseal: 400,
-      exteriorcorrect: 1000,
-    },
+      exteriorwash: 125,
+      exteriorseal: 600,
+      exteriorcorrect: 1250
+    }
   },
   "Quarter Ton": {
     interior: {
-      interior: 300,
-      interiorspill: 450,
-      interiorswift: 150,
+      interiorswift: 175,
+      interior: 335,
+      interiorspill: 500
     },
     exterior: {
-      exteriorwash: 100,
-      exteriorseal: 400,
-      exteriorcorrect: 1000,
-    },
+      exteriorwash: 125,
+      exteriorseal: 600,
+      exteriorcorrect: 1250
+    }
   },
   "4 Door": {
     interior: {
-      interior: 300,
-      interiorspill: 450,
-      interiorswift: 150,
+      interiorswift: 175,
+      interior: 375,
+      interiorspill: 500
     },
     exterior: {
       exteriorwash: 125,
-      exteriorseal: 400,
-      exteriorcorrect: 1000,
-    },
+      exteriorseal: 600,
+      exteriorcorrect: 1250
+    }
   },
   "Mid Size": {
     interior: {
-      interior: 335,
-      interiorspill: 500,
-      interiorswift: 175,
-    },
-    exterior: {
-      exteriorwash: 125,
-      exteriorseal: 500,
-      exteriorcorrect: 1250,
-    },
-  },
-  Trucks: {
-    interior: {
+      interiorswift: 200,
       interior: 375,
-      interiorspill: 575,
-      interiorswift: 175,
+      interiorspill: 550
     },
     exterior: {
       exteriorwash: 150,
-      exteriorseal: 600,
-      exteriorcorrect: 1500,
+      exteriorseal: 775,
+      exteriorcorrect: 1500
+    }
+  },
+  "Trucks": {
+    interior: {
+      interiorswift: 200,
+      interior: 375,
+      interiorspill: 550
     },
+    exterior: {
+      exteriorwash: 175,
+      exteriorseal: 925,
+      exteriorcorrect: 1750
+    }
   },
   "3 Row": {
     interior: {
-      interior: 375,
-      interiorspill: 575,
-      interiorswift: 200,
+      interiorswift: 225,
+      interior: 425,
+      interiorspill: 600
     },
     exterior: {
-      exteriorwash: 150,
-      exteriorseal: 600,
-      exteriorcorrect: 1500,
-    },
+      exteriorwash: 175,
+      exteriorseal: 925,
+      exteriorcorrect: 1750
+    }
   },
-  addons: {
+  "addons": {
     "Ozone Treatment": 75,
-    "Engine Bay": 75,
-  },
-  dogHair: {
-    "Little or None": 0,
-    "Medium Amount": 50,
-    "Lots of Hair": 100,
-  },
+    "Engine Bay": 75
+  }
 };
 
 export default prices;

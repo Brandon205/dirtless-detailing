@@ -155,17 +155,17 @@ export default function Nav() {
                         <h4 className="sub-menu-header">EXTERIOR SERVICES</h4>
                         <motion.div variants={navChildDiff} className="sub-menu-div" onClick={() => setNav("none")}>
                           <Link href="/services/exterior" className="menu-link smaller-line-height">
-                            <img src="../assets/icons/carWash.png" alt="car with bubbles" className="nav-icon" /> Exterior Wash
+                            <img src="../assets/icons/carWash.png" alt="car with bubbles" className="nav-icon" /> Exterior Decon Wash
                           </Link>
                         </motion.div>
                         <motion.div variants={navChild} className="sub-menu-div" onClick={() => setNav("none")}>
                           <Link href="/services/exterior-seal" className="menu-link smaller-line-height">
-                            <img src="../assets/icons/carPolish.png" alt="microfiber" className="nav-icon" /> Exterior Seal and Shine
+                            <img src="../assets/icons/carPolish.png" alt="microfiber" className="nav-icon" /> Seal and Shine
                           </Link>
                         </motion.div>
                         <motion.div variants={navChildDiff} className="sub-menu-div" onClick={() => setNav("none")}>
                           <Link href="/services/exterior-correct" className="menu-link smaller-line-height">
-                            <img src="../assets/icons/correctProtect.png" alt="polisher" className="nav-icon" /> Exterior Correct and Protect
+                            <img src="../assets/icons/correctProtect.png" alt="polisher" className="nav-icon" /> Correct and Protect
                           </Link>
                         </motion.div>
                       </div>
@@ -174,7 +174,7 @@ export default function Nav() {
                         <h4 className="sub-menu-header">RECREATIONAL DETAILING</h4>
                         <motion.div variants={navChildDiff} className="sub-menu-div" onClick={() => setNav("none")}>
                           <Link href="/services/recreational" className="menu-link smaller-line-height">
-                            <img src="../assets/icons/boat.png" alt="yacht icon" className="nav-icon" /> Boats/RV's/Trailers
+                            <img src="../assets/icons/boat.png" alt="yacht icon" className="nav-icon" /> Boats/RV's/Trailers & ORV's
                           </Link>
                         </motion.div>
                       </div>

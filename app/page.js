@@ -4,12 +4,12 @@ import Benefits from "./Benefits";
 import { HeroSlider } from "./components/hero-slider";
 import { BookingButton } from "./components/BookingButton";
 import { topBtnVariant } from "../utils/animationVariations";
+import prices from "../utils/Prices";
 import { Titillium_Web } from "next/font/google";
 import { InfiniteMovingCards } from "./components/InfiniteMovingCards";
 import FaqItem from "./components/FaqItem";
 import { ArrowRight, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 const titillium = Titillium_Web({ weight: ["400", "600"], subsets: ["latin"] });
 
@@ -165,41 +165,6 @@ export default function Home() {
       <div className="service-bkg pt-0">
         <Benefits />
 
-        {/* <div className="border-2 border-white relative px-6 pt-2 pb-6 w-5/6 mx-auto rounded-lg mt-12">
-          <div className="border-2 border-white bg-contactBkg rounded-full absolute -top-6 -left-6 p-4">
-            <Image src="/assets/icons/locationPing.svg" width={45} height={45} alt="location icon" />
-          </div>
-          <strong className="text-4xl italic text-left block mb-6 pl-10">We've Moved!</strong>
-          <p className="text-left text-xl pb-4">We are now located in the Buckley Business Park just 6 minutes away from our previous location!</p>
-          <p className="text-left text-xl">
-            With our new larger space we have more availability, can book earlier appointments, and can easily get more people in at a time!
-          </p>
-          <div className="flex gap-4 flex-wrap text-left pt-8">
-            <motion.a
-              href="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd"
-              className="top-quote-btn"
-              variants={topBtnVariant}
-              whileHover="hover"
-              target="_blank"
-              rel="noopener"
-              transition={{ duration: 0.25 }}
-            >
-              <img src="../assets/icons/clipboard.png" alt="clipboard" className="btn-icon" /> Book Online!
-            </motion.a>
-            <motion.a
-              href="https://maps.app.goo.gl/bhPDhjUN4jsSegu48"
-              className="top-quote-btn btn-secondary"
-              variants={topBtnVariant}
-              whileHover="hover"
-              transition={{ duration: 0.25 }}
-              target="_blank"
-              rel="noopener"
-            >
-              <img src="../assets/icons/google-maps.svg" alt="google maps icon" className="btn-icon" /> See Our New Location
-            </motion.a>
-          </div>
-        </div> */}
-
         <div className="general-container new-heading-container pt-5">
           <strong className="above-heading text-4xl">Interior Services</strong>
           <h2 className="new-heading text-xl lg:text-2xl">Transform your vehicle's interior with our Premium Auto Detailing services.</h2>
@@ -265,7 +230,7 @@ export default function Home() {
                   </div>
                   <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
                     <p className="text-secondaryText text-[14px]">Starting at</p>
-                    <p className="text-white m-0 text-2xl">$150</p>
+                    <p className="text-white m-0 text-2xl">${prices["2 Door"]["interior"]["interiorswift"]}</p>
                   </div>
                 </div>
 
@@ -355,7 +320,7 @@ export default function Home() {
                   </div>
                   <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
                     <p className="text-secondaryText text-[14px]">Starting at</p>
-                    <p className="text-white m-0 text-2xl">$300</p>
+                    <p className="text-white m-0 text-2xl">${prices["2 Door"]["interior"]["interior"]}</p>
                   </div>
                 </div>
 
@@ -439,7 +404,7 @@ export default function Home() {
                   </div>
                   <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
                     <p className="text-secondaryText text-[14px]">Starting at</p>
-                    <p className="text-white m-0 text-2xl">$450</p>
+                    <p className="text-white m-0 text-2xl">${prices["2 Door"]["interior"]["interiorspill"]}</p>
                   </div>
                 </div>
 
@@ -533,7 +498,7 @@ export default function Home() {
                   </div>
                   <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
                     <p className="text-secondaryText text-[14px]">Starting at</p>
-                    <p className="text-white m-0 text-2xl">$100</p>
+                    <p className="text-white m-0 text-2xl">${prices["2 Door"]["exterior"]["exteriorwash"]}</p>
                   </div>
                 </div>
 
@@ -625,7 +590,7 @@ export default function Home() {
                   </div>
                   <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
                     <p className="text-secondaryText text-[14px]">Starting at</p>
-                    <p className="text-white m-0 text-2xl">$500</p>
+                    <p className="text-white m-0 text-2xl">${prices["2 Door"]["exterior"]["exteriorseal"]}</p>
                   </div>
                 </div>
 
@@ -722,7 +687,7 @@ export default function Home() {
                   </div>
                   <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
                     <p className="text-secondaryText text-[14px]">Starting at</p>
-                    <p className="text-white m-0 text-2xl">$1,000</p>
+                    <p className="text-white m-0 text-2xl">${prices["2 Door"]["exterior"]["exteriorcorrect"]}</p>
                   </div>
                 </div>
 
