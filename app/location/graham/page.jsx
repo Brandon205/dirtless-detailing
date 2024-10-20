@@ -38,26 +38,26 @@ const jsonld = {
 export default function Graham() {
   const [currPackage, setCurrPackage] = useState("Interior");
   const [currLink, setCurrLink] = useState("interior");
-  const [currComponent, setCurrComponent] = useState(<PricingComponent prices={["300", "300", "335", "335", "375", "375"]} addons="interior" />);
+  const [currComponent, setCurrComponent] = useState(<PricingComponent shortTitle="interior" serviceType="interior" addons="fullInterior" />);
 
   useEffect(() => {
     if (currPackage === "Full Interior") {
-      setCurrComponent(<PricingComponent prices={[300, 300, 300, 335, 375, 375]} addons="interior" />);
+      setCurrComponent(<PricingComponent shortTitle="interior" serviceType="interior" addons="fullInterior" />);
       setCurrLink("interior");
     } else if (currPackage === "Interior + Spill Guard") {
-      setCurrComponent(<PricingComponent prices={[450, 450, 450, 500, 575, 575]} addons="interior" />);
+      setCurrComponent(<PricingComponent shortTitle="interiorspill" serviceType="interior" addons="fullInterior" />);
       setCurrLink("interior-spill");
     } else if (currPackage === "Swift Interior") {
-      setCurrComponent(<PricingComponent prices={[150, 150, 150, 175, 175, 200]} addons="interior" />);
+      setCurrComponent(<PricingComponent shortTitle="interiorswift" serviceType="interior" addons="interiorSwift" />);
       setCurrLink("interior-swift");
     } else if (currPackage === "Exterior Wash") {
-      setCurrComponent(<PricingComponent prices={[100, 100, 100, 125, 150, 150]} addons="exterior" />);
+      setCurrComponent(<PricingComponent shortTitle="exteriorwash" serviceType="exterior" addons="exterior" />);
       setCurrLink("exterior");
     } else if (currPackage === "Exterior Seal") {
-      setCurrComponent(<PricingComponent prices={[500, 500, 500, 625, 750, 750]} addons="correction" />);
+      setCurrComponent(<PricingComponent shortTitle="exteriorseal" serviceType="exterior" addons="correction" />);
       setCurrLink("exterior-seal");
     } else if (currPackage === "Exterior Correct") {
-      setCurrComponent(<PricingComponent prices={[1000, 1000, 1000, 1250, 1500, 1500]} addons="correction" />);
+      setCurrComponent(<PricingComponent shortTitle="exteriorcorrect" serviceType="exterior" addons="correction" />);
       setCurrLink("exterior-correct");
     }
   }, [currPackage]);
@@ -109,7 +109,7 @@ export default function Graham() {
 
         <br className="extra-space" />
       </main>
-      <div className="service-bkg-lighter">
+      <div className="service-bkg">
         <div style={{ paddingBottom: "2rem" }} className="general-container">
           <h3 className="text-large">Mobile Services offered in Graham:</h3>
           <div style={{ paddingBottom: "2rem" }} className="text-left">
