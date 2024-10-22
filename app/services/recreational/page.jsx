@@ -14,7 +14,7 @@ const jsonld = {
   "@type": "Product",
   "name": "Boat/RV/Trailer Detailing",
   "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6848fcc1-eaa2-4c67-7e97-d9ea70b4aa00/public",
-  "description": "At Dirt-Less Detailing we aren't limited to just cars and trucks! Book any of your recreational vehicles for a detail today!",
+  "description": "At Dirt-Less Detailing we aren't limited to just cars and trucks! Book any boats, RV's, Trailers, or ORV's for a detail today!",
   "brand": {
     "@type": "Brand",
     "name": "Dirt-Less Detailing"
@@ -24,7 +24,7 @@ const jsonld = {
     "url": "https://www.dirtlessdetailing.com/services/recreational",
     "priceCurrency": "USD",
     "lowPrice": "50",
-    "highPrice": "500"
+    "highPrice": "700"
   },
   "url": "https://www.dirtlessdetailing.com/services/recreational"
 };

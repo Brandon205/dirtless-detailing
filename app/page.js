@@ -549,7 +549,7 @@ export default function Home() {
                   </motion.span>
                 </motion.a>
                 <motion.p className="text-center p-0 text-secondaryText font-semibold mx-auto max-w-[90%]">
-                  Get the benefits of a ceramic coating and make your vehicle shine like new!
+                  Our exterior decon wash, plus a full vehicle polish, topped with a 1-year ceramic coating!
                 </motion.p>
               </div>
 
@@ -628,7 +628,7 @@ export default function Home() {
             <div className="w-full flex justify-between flex-1 px-3 flex-col items-center">
               <div className="text-center">
                 <motion.a
-                  href="/services/interior-swift"
+                  href="/services/exterior-correct"
                   className="inline-flex mx-auto my-0 text-3xl font-bold no-underline"
                   variants={serviceVariant}
                   initial="initial"
@@ -641,7 +641,7 @@ export default function Home() {
                   </motion.span>
                 </motion.a>
                 <motion.p className="text-center p-0 text-secondaryText font-semibold mx-auto max-w-[90%]">
-                  Our top of the line exterior package. A 2-stage paint correction topped with a 3-year ceramic coating (Click Learn More to see why we think 3
+                  Our top of the line exterior package. A 2-stage paint correction with with a 3-year ceramic coating (Click Learn More to see why we think 3
                   years is ideal over 5-10 year coatings).
                 </motion.p>
               </div>
@@ -724,7 +724,7 @@ export default function Home() {
           <div>
             <strong className="above-heading text-4xl"> Boats/RV's/Trailers/ & ORV's </strong>
             <h3 className="new-heading text-xl lg:text-2xl">
-              Exterior and Interior detailing services for <span className="font-bold">any</span> of your other vehicles.
+              Interior and Exterior detailing services for <span className="font-bold">any</span> of your other vehicles.
             </h3>
           </div>
           <a href="/services/recreational" className="popular-readmore-secondary">

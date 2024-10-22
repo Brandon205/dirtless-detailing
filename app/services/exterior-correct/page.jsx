@@ -24,12 +24,13 @@ const faqItems = [
     title: "Why should I get a Ceramic Coating?",
     description: (
       <div>
-        <ul style={{ margin: 0 }}>
-          <li>It is the best protection for your paint</li>
-          <li>Ceramic coatings increase the hardness of your paint, making it less likely to scratch while washing</li>
+        <ul style={{ margin: 0, marginLeft: "1rem" }} className="list-disc">
+          <li>
+            It is the best protection for your paint, Ceramic coatings increase the hardness of your paint, making it less likely to scratch while washing
+          </li>
           <li>Coatings increase the Gloss and Slickness of your paint</li>
-          <li>Self cleaning properties: Ceramic coatings aggressively bead water, dirt gets caught in these beads and will fly off while you're driving!</li>
-          <li>Easier to wash and dry. Dirt washes off easier with less effort, you can also blow dry your vehicle because of the water beading.</li>
+          <li>Self cleaning properties: Ceramic coatings easily bead water, dirt gets caught in these beads and will fly off while you're driving!</li>
+          <li>Easier to wash and dry. Dirt will wash off with less effort, you can also blow dry 90% of your vehicle because of the water beading.</li>
         </ul>
         <Zoom>
           <div
@@ -53,7 +54,7 @@ const faqItems = [
       <p className="faq-description">
         Unlike waxes true ceramic coatings don't just wash off, however, over time your coating can get clogged with contaminants and gloss, slickness, and
         water beading can degrade (for this coating it should stay in good quality for up to 3 years). If you want to maintain all the benefits of your ceramic
-        coating we recommend getting our{" "}
+        coating we recommend getting at least our{" "}
         <a href="/services/exterior" className="aside-link">
           Exterior Decon Wash
         </a>{" "}
@@ -66,8 +67,8 @@ const faqItems = [
     description: (
       <p className="faq-description">
         We never recommend going through a car wash as they can reduce the gloss slickness and beading of your coating prematurely. However in a pinch a
-        touchless car wash will suffice. Just make sure to use the cheapest setting, without any wax's. It is also recommended after the wash to dry the whole
-        vehicle with supple towels (We recommend{" "}
+        touch-less car wash will suffice. Just make sure to use the cheapest setting, without any wax's. It is also recommended after the wash to dry the whole
+        vehicle with high quality drying towels (We recommend{" "}
         <a href="https://amzn.to/449nFm7" className="aside-link" target="_blank" rel="noopener">
           The Rag Company's Large Drying Towel
         </a>
@@ -85,7 +86,7 @@ const faqItems = [
       <p>
         You can check out our{" "}
         <a href="/products/ceramic-coating" className="aside-link">
-          DIY Maintenance
+          DIY Ceramic Maintenance
         </a>{" "}
         page to see all the products and steps that we recommend for a complete wash and decontamination all for under $150. You can also ask us about our
         maintenance services, they don't cost too much per service plus they include the interior if you have had any one of our Interior Detail services done
@@ -110,8 +111,8 @@ const jsonld = {
     "@type": "AggregateOffer",
     "url": "https://www.dirtlessdetailing.com/services/exterior-correct",
     "priceCurrency": "USD",
-    "lowPrice": "1000",
-    "highPrice": "1500"
+    "lowPrice": "1250",
+    "highPrice": "1750"
   },
   "url": "https://www.dirtlessdetailing.com/services/exterior-correct"
 };
@@ -156,15 +157,22 @@ export default function ExteriorCorrect() {
                   to remove any contaminants. From there, we refine your paint by performing an in-depth polishing step removing as many imperfections we safely
                   can.
                 </p>
-                {/* <p>
-                  <span className="special-package">Note:</span> This is one of the services that we require you to drop
-                  off your car at our shop for. We will most likely need to keep you car overnight as the ceramic
-                  coating has a cure time before it's ready to be exposed to the elements. Also, our shop has proper
-                  lighting to ensure that we don't miss any spots on the paint.
-                </p> */}
                 <p>
-                  Last but not least is the ceramic coating! To provide to best protection and coverage on the paint coating, we coat your whole vehicle with
-                  the hardest, most resilient ceramic coatings on the market. This includes paint, trim, lights, glass, and wheels.
+                  The it's time for the ceramic coating! To provide to best protection and coverage on the paint coating, we coat your whole vehicle with the
+                  hardest, most resilient ceramic coatings on the market. This includes paint, trim, lights, glass, and wheels.
+                </p>
+                <p>
+                  Feel free to contact us to get any of your questions answered, ceramic coatings are somewhat new so not everyone knows all that they can do.
+                  Give us a call or check out our{" "}
+                  <a href="#faq" className="aside-link">
+                    FAQ
+                  </a>{" "}
+                  section at the bottom of this page to get your questions answered!
+                </p>
+                <p>
+                  <span className="special-package">Note:</span> This is one of the services that we require you to drop off your car at our shop for. We will
+                  most likely need to keep you car overnight as the ceramic coating has a cure time before it's ready to be exposed to the elements. Also, our
+                  shop has proper lighting to ensure that we don't miss any spots on the paint.
                 </p>
               </div>
             </main>
@@ -189,7 +197,7 @@ export default function ExteriorCorrect() {
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Wash Vehicle</h4>
-                  <p className="step-desc">Thorough top to bottom wash including the gas door.</p>
+                  <p className="step-desc">Thorough top to bottom wash including inside the gas door.</p>
                 </div>
               </motion.li>
               <motion.li className="item" variants={evenVariant}>
@@ -198,7 +206,9 @@ export default function ExteriorCorrect() {
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Wheel Cleaning</h4>
-                  <p className="step-desc">Clean wheels, wheel wells, and wheel barrels with chemicals made for removing brake dust and road film.</p>
+                  <p className="step-desc">
+                    Clean wheels, wheel wells, and wheel barrels with specialized chemicals made for removing brake dust and road film.
+                  </p>
                 </div>
               </motion.li>
               <motion.li className="item" variants={oddVariant}>
@@ -206,16 +216,25 @@ export default function ExteriorCorrect() {
                   <h3 className="step-number">3</h3>
                 </div>
                 <div className="step-container">
+                  <h4 className="step-title">Clean Door Jambs</h4>
+                  <p className="step-desc">Thoroughly clean and rinse out all cracks and crevices in the door jambs.</p>
+                </div>
+              </motion.li>
+              <motion.li className="item" variants={oddVariant}>
+                <div className="step-number-container">
+                  <h3 className="step-number">4</h3>
+                </div>
+                <div className="step-container">
                   <h4 className="step-title">Remove tar and sap</h4>
                   <p className="step-desc">
-                    Remove any tar and sap from the exterior. Especially if your car is white, small black dots of tar appear usually on the lower panels of the
-                    car. We have some of the best products to remove all of it.
+                    Remove any tar and sap from the exterior. Tar typically builds up on the lower panels of the vehicle, we have strong chemicals that can
+                    safely remove it.
                   </p>
                 </div>
               </motion.li>
               <motion.li className="item" variants={evenVariant}>
                 <div className="step-number-container">
-                  <h3 className="step-number">4</h3>
+                  <h3 className="step-number">5</h3>
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Dry Vehicle</h4>
@@ -224,35 +243,26 @@ export default function ExteriorCorrect() {
               </motion.li>
               <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
-                  <h3 className="step-number">5</h3>
+                  <h3 className="step-number">6</h3>
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Remove scratches and watermarks</h4>
                   <p className="step-desc">
-                    Perform our Paint Correction procedure removing up to 85%-90% of scratches and greatly reducing the look of deeper scratches. We also go
-                    over the glass as well removing watermarks and fine scratches.
+                    Perform a 2-stage paint correction removing up to 85%-90% of scratches and greatly reducing if not removing the look of deeper scratches. We
+                    also go over the glass as well removing watermarks and light scratches.
                   </p>
                 </div>
               </motion.li>
               <motion.li className="item" variants={evenVariant}>
                 <div className="step-number-container">
-                  <h3 className="step-number">6</h3>
+                  <h3 className="step-number">7</h3>
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Protect Vehicle</h4>
                   <p className="step-desc">
-                    Apply our 3-year Ceramic Coating to the paint. At this point we also coat the windshield, wheels, and the trim. Now there's no part of your
-                    car that's uncoated!
+                    Apply our 3-year Ceramic Coating to the paint. At this point we also coat the windshield, wheels, and the trim. Leaving no part of your car
+                    that's uncoated!
                   </p>
-                </div>
-              </motion.li>
-              <motion.li className="item" variants={oddVariant}>
-                <div className="step-number-container">
-                  <h3 className="step-number">7</h3>
-                </div>
-                <div className="step-container">
-                  <h4 className="step-title">Clean Door Jambs</h4>
-                  <p className="step-desc">Thoroughly wipe down all the cracks and crevices in the door jambs.</p>
                 </div>
               </motion.li>
               <motion.li className="item" variants={evenVariant}>

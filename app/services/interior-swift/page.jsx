@@ -29,8 +29,8 @@ const jsonld = {
     "@type": "AggregateOffer",
     "url": "https://www.dirtlessdetailing.com/services/interior-swift",
     "priceCurrency": "USD",
-    "lowPrice": "150",
-    "highPrice": "200"
+    "lowPrice": "175",
+    "highPrice": "225"
   },
   "url": "https://www.dirtlessdetailing.com/services/interior-swift"
 };
@@ -56,7 +56,7 @@ export default function FullIntEx() {
               <hr style={{ margin: "0 auto 3rem auto" }} />
               <div className="service-explain">
                 <p>
-                  Our Swift Interior Detail is a package aimed at vehicles that just need simple maintenance, or vehicles that you don't need to be perfect
+                  Our Swift Interior Detail is a package aimed at vehicles that just need a simple maintenance, or vehicles that you don't want to be perfect
                   without the cost of ultra deep cleaning from our full interior package. This service starts with us blowing out the hard to reach areas then
                   giving the interior a good vacuuming.
                 </p>
@@ -66,11 +66,12 @@ export default function FullIntEx() {
                   will look and feel refreshed!
                 </p>
                 <p>
-                  If there are minor stains or just a few spots don't worry! We won't charge you extra, just let us know any problem areas you want us to target
-                  and we'll get them taken care of!
+                  If there are minor stains or just a couple of spots don't worry! We won't charge you any extra, just let us know any problem areas you want us
+                  to target and we'll get them taken care of!
                 </p>
                 <p>
-                  <span className="special-package">NOTE:</span> If you are looking for a more in depth interior detailing experience, take a look at our{" "}
+                  <span className="special-package">NOTE:</span> If you are looking for (or need) a more in depth interior detailing experience, take a look at
+                  our{" "}
                   <a href="/services/interior" className="aside-link">
                     Full Interior Detail
                   </a>
@@ -90,7 +91,7 @@ export default function FullIntEx() {
             </div>
 
             <h2 className="cleaning-process-title pb-8">Our Swift Interior Process</h2>
-            <motion.ol className="list overflow-hidden" variants={containerVariant} initial="initial" whileInView="whileInView" viewport={{ once: true }}>
+            <motion.ol className="list" variants={containerVariant} initial="initial" whileInView="whileInView" viewport={{ once: true }}>
               <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">1</h3>

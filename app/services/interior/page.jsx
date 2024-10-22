@@ -30,8 +30,8 @@ const jsonld = {
     "@type": "AggregateOffer",
     "url": "https://www.dirtlessdetailing.com/services/interior",
     "priceCurrency": "USD",
-    "lowPrice": "300",
-    "highPrice": "375"
+    "lowPrice": "335",
+    "highPrice": "425"
   },
   "url": "https://www.dirtlessdetailing.com/services/interior"
 };
@@ -52,7 +52,7 @@ export default function FullIntEx() {
           <div style={{ width: "100%" }}>
             <main className="service-main">
               <h2 style={{ marginBottom: 0 }} className="text-large">
-                Our Full Interior Cleaning Service
+                Our Interior Deep Cleaning
               </h2>
               <hr style={{ margin: "0 auto 3rem auto" }} />
               <div className="service-explain">
@@ -69,8 +69,8 @@ export default function FullIntEx() {
                   all the necessary tools for every situation.
                 </p>
                 <p>
-                  Want the outside done as well? Simply book an interior and exterior service, we'll do the hard work to get your car back to its best
-                  condition! Check out our exterior offers{" "}
+                  Need the exterior done as well? Feel free to book an interior and exterior detail, we will get your vehicle looking like new in just one day!
+                  Check out our exterior decon wash{" "}
                   <a href="/services/exterior" className="aside-link">
                     here
                   </a>
@@ -97,7 +97,7 @@ export default function FullIntEx() {
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Expose Hidden Dirt</h4>
-                  <p className="step-desc">Blow out all hidden dirt and debris and gets areas that are hard to reach with a vacuum.</p>
+                  <p className="step-desc">Blow out all hidden dirt and debris to get areas that are hard to reach with a vacuum.</p>
                 </div>
               </motion.li>
               <motion.li className="item" variants={evenVariant}>
@@ -114,8 +114,8 @@ export default function FullIntEx() {
                   <h3 className="step-number">3</h3>
                 </div>
                 <div className="step-container">
-                  <h4 className="step-title">Hot Water Extraction (stain removal)</h4>
-                  <p className="step-desc">Remove/Extract all stains that we can. We will be sure to get all carpets, floor mats, and cloth seats.</p>
+                  <h4 className="step-title">Carpet Reconditioning</h4>
+                  <p className="step-desc">Using our wide array of carpet cleaning chemicals, remove & extract all of stains that we can.</p>
                 </div>
               </motion.li>
               <motion.li className="item" variants={evenVariant}>
@@ -124,7 +124,7 @@ export default function FullIntEx() {
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Door Jambs</h4>
-                  <p className="step-desc">Clean all of the door jambs.</p>
+                  <p className="step-desc">Thoroughly clean and rinse out all cracks and crevices in the door jambs.</p>
                 </div>
               </motion.li>
               <motion.li className="item" variants={oddVariant}>
@@ -133,7 +133,7 @@ export default function FullIntEx() {
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Wipe Down Plastics and Leathers</h4>
-                  <p className="step-desc">We will clean, steam, and degrease all plastics and leather seats.</p>
+                  <p className="step-desc">We will clean and degrease all plastics and leather seats.</p>
                 </div>
               </motion.li>
               <motion.li className="item" variants={evenVariant}>
@@ -159,7 +159,7 @@ export default function FullIntEx() {
                     </a>
                   </h4>
                   <p className="step-desc">
-                    Upgrade to our Spill Guard Service to have us apply a 1 year interior ceramic coating to all surfaces in the vehicle. This is PERFECT for
+                    Upgrade to our Spill Guard Service to have us apply a 1-year interior ceramic coating to all surfaces in the vehicle. This is PERFECT for
                     cars with kids, pets, or daily coffee trips with the occasional spills as cleaning it will now be easier. See more info{" "}
                     <a href="/services/interior-spill" className="aside-link">
                       here

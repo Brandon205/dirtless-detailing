@@ -8,35 +8,22 @@ export default function products() {
       <div
         className="cover"
         style={{
-          backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/45779246-97c3-4442-85d6-be09aabad900/cover')`,
+          backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/45779246-97c3-4442-85d6-be09aabad900/cover')`
         }}
       ></div>
       <div className="servicepage-header">
         <div style={{ alignItems: "center" }}>
           <h1>
-            <span className="accent-orange bold text-shadow">Ceramic Coating Maintenance Products</span>
+            <span className="accent-orange bold text-shadow">Ceramic Coating Maintenance</span>
           </h1>
           <h2 className="page-subheading" style={{ textAlign: "center" }}>
-            Check out how you can easily keep your car clean yourself without damaging your new ceramic coating with
-            these simple products and methods!
+            Check out our how-to on keeping your car clean yourself without damaging your new ceramic coating with these simple products and methods!
           </h2>
           <div className="header-buttons">
-            <motion.a
-              href="/contact"
-              className="top-quote-btn"
-              variants={topBtnVariant}
-              whileHover="hover"
-              transition={{ duration: 0.25 }}
-            >
+            <motion.a href="/contact" className="top-quote-btn" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
               <img src="../assets/icons/clipboard.png" alt="clipboard" className="btn-icon" /> Get a Free Quote
             </motion.a>
-            <motion.a
-              href="tel:2532529758"
-              className="top-quote-btn btn-secondary"
-              variants={topBtnVariant}
-              whileHover="hover"
-              transition={{ duration: 0.25 }}
-            >
+            <motion.a href="tel:2532529758" className="top-quote-btn btn-secondary" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
               <img src="../assets/icons/phoneMessage.png" alt="call or message" className="btn-icon" /> (253) 252-9758
             </motion.a>
           </div>
@@ -89,28 +76,21 @@ export default function products() {
           </h2>
           <hr style={{ margin: "0 auto 3rem auto" }} />
           <div className="service-explain">
+            {/* <p>
+              We at Dirt-Less Detailing are aware of the satisfaction and joy that come from taking care of your car yourself. For all of your DIY vehicle
+              washing needs, we have individually chosen a variety of high-quality supplies that won't break the bank.
+            </p> */}
+            {/* <p>
+              The products described here can all be easily purchased from Amazon, and some of them can even be purchased in nearby stores, guaranteeing that
+              you have everything you need to produce results that are on par with those of a professional right in the comfort of your own driveway.
+            </p> */}
             <p>
-              We at Dirt-Less Detailing are aware of the satisfaction and joy that come from taking care of your car
-              yourself. For all of your DIY vehicle washing needs, we have individually chosen a variety of high-quality
-              supplies that won't break the bank.
+              We have personally owned and used all of these items at some point in our nine years of detailing, and some we even still use to this day. Most
+              Amazon links below are affiliate links which won't change the price you pay, but will give us a small commission.
             </p>
             <p>
-              The products described here can all be easily purchased from Amazon, and some of them can even be
-              purchased in nearby stores, guaranteeing that you have everything you need to produce results that are on
-              par with those of a professional right in the comfort of your own driveway.
-            </p>
-            <p>
-              With our hand-selected recommendations, we have you covered for anything from soft yet effective car wash
-              soaps to microfiber towels. Our list makes it simple for you to locate and buy the greatest tools and
-              goods because we think every auto enthusiast should have access to them. Explore our guide, discover the
-              products we suggest, and get ready to take your DIY car cleaning to new heights.
-            </p>
-            <p>
-              You can be confident that the products mentioned here are the best of the best in terms of cost-effective
-              consumer grade ceramic safe materials. We have personally owned and used all of these items at some point
-              in our eight years of detailing, and some we even still use to this day. The Amazon links below are
-              affiliate links which don't change the price you pay but give us a small commission if you decide to go
-              through with the purchase.
+              This list should make it simple for you to create a simple and safe washing procedure that you can complete at home. A video guide for these steps
+              is coming soon!
             </p>
           </div>
         </main>
@@ -131,8 +111,8 @@ export default function products() {
               Meguiar's Car Wash Soap
             </a>
             <p>
-              Meguiar's has a number of excellent options for consumer-grade, reasonably priced car soaps. We suggest
-              purchasing the Gold Class version to be the easiest on the ceramic coating.
+              Meguiar's has a number of excellent options for consumer-grade, reasonably priced car soaps. We suggest purchasing the Gold Class version to be
+              the easiest on the ceramic coating.
             </p>
           </div>
         </div>
@@ -149,8 +129,8 @@ export default function products() {
               CarCarez Wash Microfiber Towels
             </a>
             <p>
-              We wanted some microfibers that had a little bit more fluff than a standard microfiber towel as they will
-              be the ones you use for the wash. These ones from CarCarez are perfect for that.
+              We wanted some microfibers that had a little bit more fluff than a standard microfiber towel as they will be the ones you use for the wash. These
+              ones from CarCarez are perfect for that.
             </p>
           </div>
         </div>
@@ -165,8 +145,8 @@ export default function products() {
               3D Bug Remover
             </a>
             <p>
-              The Bug Remover from 3D, which is safe to use on all surfaces, including ceramic coatings, is an excellent
-              tool for cleaning bugs off the front of your car.
+              The Bug Remover from 3D, which is safe to use on all surfaces, including ceramic coatings, is an excellent tool for cleaning bugs off the front of
+              your car.
             </p>
           </div>
         </div>
@@ -183,9 +163,8 @@ export default function products() {
               Griot's Tar and Sap Remover
             </a>
             <p>
-              One of our primary stops for our chemicals, rags, and other detailing supplies is Griots Garage. With
-              their Tar and Sap Remover you will be able to watch any tar and sap melt away in a matter of seconds
-              thanks to one of the best Tar and Sap removers we've tried so far!
+              One of our primary stops for our chemicals, rags, and other detailing supplies is Griots Garage. With their Tar and Sap Remover you will be able
+              to watch any tar and sap melt away in a matter of seconds thanks to one of the best Tar and Sap removers we've tried so far!
             </p>
           </div>
         </div>
@@ -202,8 +181,8 @@ export default function products() {
               Griot's Wheel, Tire, and Mat Cleaner
             </a>
             <p>
-              This Griot's Garage product is an amazing 3-in-1 product. This will remove layers of dirt and grime that
-              you wouldn't have even realized were there.
+              This Griot's Garage product is an amazing 3-in-1 product. This will remove layers of dirt and grime that you wouldn't have even realized were
+              there.
             </p>
           </div>
         </div>
@@ -220,9 +199,8 @@ export default function products() {
               Chemical Guys Wheel Brush
             </a>
             <p>
-              We don't advise using microfibers on tires in particular because they can trap a lot of dirt and
-              deteriorate the fibers. Instead, to scrub and thoroughly clean the wheels, we advise using a brush similar
-              to this one.
+              We don't advise using microfibers on tires in particular because they can trap a lot of dirt and deteriorate the fibers. Instead, to scrub and
+              thoroughly clean the wheels, we advise using a brush similar to this one.
             </p>
           </div>
         </div>
@@ -239,8 +217,8 @@ export default function products() {
               Cobee Detailing Brush Set
             </a>
             <p>
-              It is convenient to have a good selection of brushes so that you can quickly reach and clean every area on
-              the exterior of your car, especially smaller areas like the front grill and side mirrors.
+              It is convenient to have a good selection of brushes so that you can quickly reach and clean every area on the exterior of your car, especially
+              smaller areas like the front grill and side mirrors.
             </p>
           </div>
         </div>
@@ -257,8 +235,8 @@ export default function products() {
               The Rag Company Microfiber Towels
             </a>
             <p>
-              We recommend this pack of 10 edgeless microfibers from The Rag Company is recommended if you need
-              high-quality microfibers for small-area touch-ups or cleaning.
+              We recommend this pack of 10 edgeless microfibers from The Rag Company is recommended if you need high-quality microfibers for small-area
+              touch-ups or cleaning.
             </p>
           </div>
         </div>
@@ -275,8 +253,8 @@ export default function products() {
               The Rag Company Large Drying Towel
             </a>
             <p>
-              The Rag Company produces some of the best drying towels that we have found so far. If you prefer one large
-              drying towel than several smaller ones, this is the larger option.
+              The Rag Company produces some of the best drying towels that we have found so far. If you prefer one large drying towel than several smaller ones,
+              this is the larger option.
             </p>
           </div>
         </div>
@@ -293,9 +271,8 @@ export default function products() {
               The Rag Company Drying Towels
             </a>
             <p>
-              Alternatively, for roughly the same cost, you can purchase this 3-pack of towels from The Rag Company in
-              place of the single large towel; it all depends on your personal preference, we switch between the 2
-              options all of the time.
+              Alternatively, for roughly the same cost, you can purchase this 3-pack of towels from The Rag Company in place of the single large towel; it all
+              depends on your personal preference, we switch between the 2 options all of the time.
             </p>
           </div>
         </div>
@@ -313,8 +290,8 @@ export default function products() {
           <div className="step-container">
             <h4 className="step-title">Set Up</h4>
             <p className="step-desc">
-              Put 4-5oz (a good amount) of Meguiar's Gold Class Soap into a bucket and then fill the bucket about
-              halfway with water. Then put all the microfibers in the bucket as well.
+              Put 4-5oz (a good amount) of Meguiar's Gold Class Soap into a bucket and then fill the bucket about halfway with water. Then put all the
+              microfibers in the bucket as well.
             </p>
           </div>
         </li>
@@ -326,9 +303,8 @@ export default function products() {
           <div className="step-container">
             <h4 className="step-title">Initial Rinse</h4>
             <p className="step-desc">
-              Use your hose to give your car a good rinse, this will get all large contaminants off of the car as well
-              as wets down the vehicle for the next steps. If you plan on using the 3D Bug Remover or Griots Tar and Sap
-              Remover, read the instructions on how to use them and use them now.
+              Use your hose to give your car a good rinse, this will get all large contaminants off of the car as well as wets down the vehicle for the next
+              steps. If you plan on using the 3D Bug Remover or Griots Tar and Sap Remover, read the instructions on how to use them and use them now.
             </p>
           </div>
         </li>
@@ -340,10 +316,9 @@ export default function products() {
           <div className="step-container">
             <h4 className="step-title">Wash the car</h4>
             <p className="step-desc">
-              Grab a microfiber out of the bucket and fold it in 1/4ths (2 folds), then go panel by panel folding the
-              towel to a new side each time you move to the next one. You should get about 8 panels per towel. This
-              ensures no dirt is carried over to the next panel, and the least amount of new scratches are made on your
-              paint.
+              Grab a microfiber out of the bucket and fold it in 1/4ths (2 folds), then go panel by panel folding the towel to a new side each time you move to
+              the next one. You should get about 8 panels per towel. This ensures no dirt is carried over to the next panel, and the least amount of new
+              scratches are made on your paint.
             </p>
           </div>
         </li>
@@ -355,8 +330,8 @@ export default function products() {
           <div className="step-container">
             <h4 className="step-title">Scrub Wheels </h4>
             <p className="step-desc">
-              Use the Wheel Brush and spray on the Griot's Wheel Tire and Mat cleaner to clean off any tough to remove
-              dirt. You can use the smaller brushes to reach into smaller grooves like the lug nuts if needed.
+              Use the Wheel Brush and spray on the Griot's Wheel Tire and Mat cleaner to clean off any tough to remove dirt. You can use the smaller brushes to
+              reach into smaller grooves like the lug nuts if needed.
             </p>
           </div>
         </li>
@@ -368,8 +343,7 @@ export default function products() {
           <div className="step-container">
             <h4 className="step-title">Final Rinse</h4>
             <p className="step-desc">
-              Rinse off the entire vehicle. Make sure to get in all the cracks where smaller debris likes to get stuck,
-              and try to leave no soap behind.
+              Rinse off the entire vehicle. Make sure to get in all the cracks where smaller debris likes to get stuck, and try to leave no soap behind.
             </p>
           </div>
         </li>

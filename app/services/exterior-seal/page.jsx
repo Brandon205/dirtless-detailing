@@ -31,8 +31,8 @@ const jsonld = {
     "@type": "AggregateOffer",
     "url": "https://www.dirtlessdetailing.com/services/exterior-seal",
     "priceCurrency": "USD",
-    "lowPrice": "500",
-    "highPrice": "750"
+    "lowPrice": "600",
+    "highPrice": "825"
   },
   "url": "https://www.dirtlessdetailing.com/services/exterior-seal"
 };
@@ -100,7 +100,7 @@ export default function ExteriorSeal() {
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Wash Vehicle</h4>
-                  <p className="step-desc">Thorough top to bottom wash including the the gas door.</p>
+                  <p className="step-desc">Thorough top to bottom wash including inside the gas door.</p>
                 </div>
               </motion.li>
               <motion.li className="item" variants={evenVariant}>
@@ -109,7 +109,9 @@ export default function ExteriorSeal() {
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Wheel Cleaning</h4>
-                  <p className="step-desc">Clean wheels, wheel wells, and wheel barrels with chemicals made for removing brake dust and road film.</p>
+                  <p className="step-desc">
+                    Clean wheels, wheel wells, and wheel barrels with specialized chemicals made for removing brake dust and road film.
+                  </p>
                 </div>
               </motion.li>
               <motion.li className="item" variants={oddVariant}>
@@ -117,16 +119,25 @@ export default function ExteriorSeal() {
                   <h3 className="step-number">3</h3>
                 </div>
                 <div className="step-container">
+                  <h4 className="step-title">Clean Door Jambs</h4>
+                  <p className="step-desc">Thoroughly clean and rinse out all cracks and crevices in the door jambs.</p>
+                </div>
+              </motion.li>
+              <motion.li className="item" variants={oddVariant}>
+                <div className="step-number-container">
+                  <h3 className="step-number">4</h3>
+                </div>
+                <div className="step-container">
                   <h4 className="step-title">Remove tar and sap</h4>
                   <p className="step-desc">
-                    Remove any tar and sap from the exterior. Especially if your car is white, small black dots of tar appear usually on the lower panels of the
-                    car. We have some of the best products to remove all of it.
+                    Remove any tar and sap from the exterior. Tar typically builds up on the lower panels of the vehicle, we have strong chemicals that can
+                    safely remove it.
                   </p>
                 </div>
               </motion.li>
               <motion.li className="item" variants={evenVariant}>
                 <div className="step-number-container">
-                  <h3 className="step-number">4</h3>
+                  <h3 className="step-number">5</h3>
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Dry Vehicle</h4>
@@ -135,35 +146,26 @@ export default function ExteriorSeal() {
               </motion.li>
               <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
-                  <h3 className="step-number">5</h3>
+                  <h3 className="step-number">6</h3>
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Remove scratches and watermarks</h4>
                   <p className="step-desc">
-                    Perform our Polishing Procedure removing many of the lighter scratches and swirls from your paint. This also removes most lighter watermarks
-                    from the vehicle, even on the glass as we go over that as well.
+                    Perform our polishing procedure removing many lighter scratches and swirls from your paint. We also go over all of the glass to remove any
+                    watermarks that have built up.
                   </p>
                 </div>
               </motion.li>
               <motion.li className="item" variants={evenVariant}>
                 <div className="step-number-container">
-                  <h3 className="step-number">6</h3>
+                  <h3 className="step-number">7</h3>
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Protect Vehicle</h4>
                   <p className="step-desc">
-                    Apply ceramic protection, which can last up to a year. At this stage we'll also apply our windshield, trim, headlight, and wheel coatings to
-                    protect your entire vehicle!
+                    Apply the 1-year ceramic coating. At this stage we'll also apply our windshield, trim, headlight, and wheel coatings to protect your entire
+                    vehicle!
                   </p>
-                </div>
-              </motion.li>
-              <motion.li className="item" variants={oddVariant}>
-                <div className="step-number-container">
-                  <h3 className="step-number">7</h3>
-                </div>
-                <div className="step-container">
-                  <h4 className="step-title">Clean Door Jambs</h4>
-                  <p className="step-desc">Thoroughly wipe down all the cracks and crevices in the door jambs.</p>
                 </div>
               </motion.li>
               <motion.li className="item" variants={evenVariant}>
@@ -172,7 +174,7 @@ export default function ExteriorSeal() {
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Final Touches</h4>
-                  <p className="step-desc">Dress tires, wheel wells and other plastics.</p>
+                  <p className="step-desc">Dress the tires and wheel wells</p>
                 </div>
               </motion.li>
               <motion.li className="item item-disabled" variants={oddVariant}>
@@ -189,9 +191,9 @@ export default function ExteriorSeal() {
                     </a>
                   </h4>
                   <p className="step-desc">
-                    If you opt for our Exterior Correct and Protect package you get all of these services, a full vehicle Paint Correction (more in depth than a
-                    polish), and a 3 year Ceramic Coating, leaving you with up to 2 extra years of protection! See more info{" "}
-                    <a href="/services/exterior-seal" className="aside-link">
+                    If you opt for our Exterior Correct and Protect package you get all of these services, a 2-stage paint correction (removes more & deeper
+                    scratches), and a 3 year Ceramic Coating, leaving you with up to 2 extra years of protection! See more info{" "}
+                    <a href="/services/exterior-correct" className="aside-link">
                       here
                     </a>
                     .

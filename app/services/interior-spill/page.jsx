@@ -30,8 +30,8 @@ const jsonld = {
     "@type": "AggregateOffer",
     "url": "https://www.dirtlessdetailing.com/services/interior-spill",
     "priceCurrency": "USD",
-    "lowPrice": "450",
-    "highPrice": "575"
+    "lowPrice": "500",
+    "highPrice": "600"
   },
   "url": "https://www.dirtlessdetailing.com/services/interior-spill"
 };
