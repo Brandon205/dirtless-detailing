@@ -12,6 +12,7 @@ import {
   evenVariant
 } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
+import { SquareArrowOutUpRight } from "lucide-react";
 import ImageSlider from "../../../utils/ImageSlider";
 
 const jsonld = {
@@ -223,8 +224,8 @@ export default function Exterior() {
               <div className="preview-content">
                 <h4>
                   See examples of our{" "}
-                  <a href="/gallery/exterior" className="aside-link flex">
-                    work <img src="../assets/icons/linking.png" style={{ marginLeft: "0.5rem" }} alt="external link" className="icon-36" />
+                  <a href="/gallery/exterior" className="aside-link inline-block">
+                    work <SquareArrowOutUpRight className="inline-block" />
                   </a>
                 </h4>
                 <p>

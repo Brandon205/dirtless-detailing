@@ -13,6 +13,7 @@ import {
   oddVariant,
   evenVariant
 } from "../../../utils/animationVariations";
+import { SquareArrowOutUpRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 const jsonld = {
@@ -210,35 +211,6 @@ export default function ExteriorSeal() {
               beforeOffset={0}
               afterOffset={0}
             />
-            {/* <div style={{ display: "grid", marginBottom: "10vh" }} className="place-center">
-              <div style={{ overflow: "hidden" }} className="slider-container">
-                <div
-                  style={{
-                    backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b814f739-3846-4796-3093-c34675a32c00/public')`,
-                    transform: "scale(1.35)",
-                  }}
-                  className="slider-img"
-                ></div>
-                <div
-                  style={{
-                    width: slide + "%",
-                    backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4d98c1bc-645c-46fa-2232-d1f735bb2300/public')`,
-                  }}
-                  className="slider-img foreground"
-                ></div>
-                <input
-                  type="range"
-                  min="1"
-                  max="100"
-                  value={slide}
-                  onChange={(e) => setSlide(Number(e.target.value))}
-                  className="slider-bar"
-                  name="slider"
-                  id="slider"
-                />
-                <div style={{ left: slide - 4 + "%" }} className="slider-button"></div>
-              </div>
-            </div> */}
 
             <div className="preview-container">
               <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/seal" className="gallery-preview">
@@ -269,13 +241,13 @@ export default function ExteriorSeal() {
               </motion.a>
               <div className="preview-content">
                 <h4>
-                  See examples of our{" "}
-                  <a href="/gallery/seal" className="aside-link flex">
-                    work <img src="../assets/icons/linking.png" style={{ marginLeft: "0.5rem" }} alt="external link" className="icon-36" />
+                  See the finished{" "}
+                  <a href="/gallery/seal" className="aside-link inline-block">
+                    results <SquareArrowOutUpRight className="inline-block" />
                   </a>
                 </h4>
                 <p>
-                  Check out our exterior gallery page, showing off some of the great results we've gotten over the years! See it{" "}
+                  Check out our Seal & Shine gallery page, showing off some of the great results we've gotten over the years! See it{" "}
                   <a href="/gallery/seal" className="aside-link">
                     here
                   </a>

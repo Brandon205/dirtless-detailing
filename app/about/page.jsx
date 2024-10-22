@@ -223,17 +223,17 @@ export default function About() {
           )}
           <div className="text-left">
             <h3 className="text-large">You shouldn't have to take time out of your busy day to clean your car.</h3>
-            <p>
-              We can do the dirty work for you, leaving you free to do whatever you desire. After hundreds of completed details over the last 8 years we've seen
+            <p className="pb-4">
+              We can do the dirty work for you, leaving you free to do whatever you desire. After hundreds of completed details over the last 9 years we've seen
               it all, and perfected how we tackle every aspect of it.
             </p>
-            <p>
+            <p className="pb-4">
               Starting almost a decade ago as a detailer at an autobody shop, I started Dirt-Less Detailing to continue doing what I love doing for everyone in
               Bonney Lake.
             </p>
             <p>
-              Since I started detailing I've put about as much time detailing in as I have doing research about the products and procedures I use, and I have
-              seen the benefits from my research pay off in every car that we detail!
+              Since I started I've spent about as much time detailing as I have doing research about the products and procedures we use, and I have seen the
+              benefits from my research pay off in every car that we detail!
             </p>
           </div>
         </div>
@@ -263,7 +263,7 @@ export default function About() {
                 }}
                 onMouseLeave={() => carRef.current.goToAndStop(90, true)}
               />
-              <strong>1,000+</strong>
+              <strong>1,500+</strong>
               <p>Details Completed</p>
             </div>
             <div className="stat">
@@ -278,7 +278,7 @@ export default function About() {
                 }}
                 onMouseLeave={() => starRef.current.goToAndStop(20, true)}
               />
-              <strong>25+</strong>
+              <strong>30+</strong>
               <p>5 Star Reviews</p>
             </div>
             <div className="stat">
@@ -293,7 +293,7 @@ export default function About() {
                 }}
                 onMouseLeave={() => calendarRef.current.goToAndStop(60, true)}
               />
-              <strong>8+</strong>
+              <strong>9+</strong>
               <p>Years in Service</p>
             </div>
             <div className="stat">

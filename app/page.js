@@ -193,7 +193,7 @@ export default function Home() {
                   </motion.span>
                 </motion.a>
                 <motion.p className="text-center p-0 text-secondaryText font-semibold mx-auto max-w-[90%]">
-                  Our simple interior cleaning, meant to fix small spots and freshen up your interior.
+                  Our simple interior cleaning, best for maintenance or to quickly freshen up your interior.
                 </motion.p>
               </div>
 
@@ -206,7 +206,7 @@ export default function Home() {
               >
                 <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
                   <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">Vacuum the Entire Vehicle</p>
+                  <p className="ml-2">Blow Out & Vacuum the Vehicle</p>
                 </motion.li>
                 <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
                   <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
@@ -214,11 +214,11 @@ export default function Home() {
                 </motion.li>
                 <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
                   <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">Wash All Floormats</p>
+                  <p className="ml-2">Wash/Clean the Floormats</p>
                 </motion.li>
                 <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
                   <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">Clean All Interior Windows/Glass</p>
+                  <p className="ml-2">Clean Interior Windows & Glass</p>
                 </motion.li>
               </motion.ul>
 
@@ -279,7 +279,7 @@ export default function Home() {
                   </motion.span>
                 </motion.a>
                 <motion.p className="text-center p-0 text-secondaryText font-semibold mx-auto max-w-[90%]">
-                  Our thorough interior cleaning, best for car with staining, lots of dog hair/dirt, or ones that haven't been cleaned out in a long time.
+                  Our thorough interior cleaning, best for cars with staining, lots of dog hair/dirt, or ones that haven't been cleaned out in a long time.
                 </motion.p>
               </div>
 
@@ -369,7 +369,7 @@ export default function Home() {
                   </motion.span>
                 </motion.a>
                 <motion.p className="text-center p-0 text-secondaryText font-semibold mx-auto max-w-[90%]">
-                  Our Full Interior Service topped with a interior ceramic spray on all surfaces, designed to make any future cleaning a breeze.
+                  Our Full Interior Service topped with a interior ceramic spray on all surfaces, perfect for making any future cleaning a breeze.
                 </motion.p>
               </div>
 
@@ -435,7 +435,9 @@ export default function Home() {
 
         <div className="general-container new-heading-container" style={{ margin: "5vh auto 2vh auto" }}>
           <strong className="above-heading text-4xl"> Exterior Services </strong>
-          <h3 className="new-heading text-xl lg:text-2xl">From a quick refresh to a complete paint correction, we cover all things exterior.</h3>
+          <h3 className="new-heading text-xl lg:text-2xl">
+            From a quick wash to a complete paint correction and ceramic coating, we cover all things exterior!
+          </h3>
         </div>
         <div className="flex flex-col lg:flex-row flex-grow lg:justify-between lg:items-stretch lg:flex-wrap lg:w-[90%] lg:my-0 mx-auto justify-center items-center gap-24 mb-8">
           <div className="flex flex-col flex-1 relative w-[90%] min-w-[400px] max-w-[475px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
@@ -478,7 +480,7 @@ export default function Home() {
                 </motion.li>
                 <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
                   <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">Thoroughly Wash the Tires, Wheels, Wheel Barrels, and Wells</p>
+                  <p className="ml-2">Scrub & Wash the Tires, Wheels, Wheel Barrels, and Wells</p>
                 </motion.li>
                 <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
                   <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
@@ -486,7 +488,7 @@ export default function Home() {
                 </motion.li>
                 <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
                   <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">Apply a Ceramic Protectant On All Surfaces (lasts up to 3 months)</p>
+                  <p className="ml-2">Apply a Ceramic Protectant on All Surfaces (lasts 3-6 months)</p>
                 </motion.li>
               </motion.ul>
 
@@ -547,7 +549,7 @@ export default function Home() {
                   </motion.span>
                 </motion.a>
                 <motion.p className="text-center p-0 text-secondaryText font-semibold mx-auto max-w-[90%]">
-                  The best service to get the benefits of a ceramic coating and make your vehicle shine like new!
+                  Get the benefits of a ceramic coating and make your vehicle shine like new!
                 </motion.p>
               </div>
 
@@ -639,8 +641,8 @@ export default function Home() {
                   </motion.span>
                 </motion.a>
                 <motion.p className="text-center p-0 text-secondaryText font-semibold mx-auto max-w-[90%]">
-                  Our top of the line exterior package. A 2 stage paint correction topped with a 3-year ceramic coating (See why we think 3 years is the most
-                  you'll need from a coating).
+                  Our top of the line exterior package. A 2-stage paint correction topped with a 3-year ceramic coating (Click Learn More to see why we think 3
+                  years is ideal over 5-10 year coatings).
                 </motion.p>
               </div>
 

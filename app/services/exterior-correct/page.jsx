@@ -16,6 +16,7 @@ import { motion } from "framer-motion";
 import HeaderComponent from "../../components/HeaderComponent";
 import FaqItem from "../../components/FaqItem";
 import Zoom from "react-medium-image-zoom";
+import { SquareArrowOutUpRight } from "lucide-react";
 import "react-medium-image-zoom/dist/styles.css";
 
 const faqItems = [
@@ -278,34 +279,6 @@ export default function ExteriorCorrect() {
               beforeOffset={0}
               afterOffset={0}
             />
-            {/* <div style={{ display: "grid", marginBottom: "10vh" }} className="place-center">
-              <div className="slider-container">
-                <div
-                  style={{
-                    backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2b933f30-bbff-4f91-8b88-1c83f75a4500/public')`,
-                  }}
-                  className="slider-img"
-                ></div>
-                <div
-                  style={{
-                    width: slide + "%",
-                    backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d2eabed6-d867-43e8-f60e-d9d95a983600/public')`,
-                  }}
-                  className="slider-img foreground"
-                ></div>
-                <input
-                  type="range"
-                  min="1"
-                  max="100"
-                  value={slide}
-                  onChange={(e) => setSlide(Number(e.target.value))}
-                  className="slider-bar"
-                  name="slider"
-                  id="slider"
-                />
-                <div style={{ left: slide - 4 + "%" }} className="slider-button"></div>
-              </div>
-            </div> */}
 
             <div className="preview-container">
               <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/correct" className="gallery-preview">
@@ -337,8 +310,8 @@ export default function ExteriorCorrect() {
               <div className="preview-content">
                 <h4>
                   See examples of our{" "}
-                  <a href="/gallery/correct" className="aside-link flex">
-                    work <img src="../assets/icons/linking.png" style={{ marginLeft: "0.5rem" }} alt="external link" className="icon-36" />
+                  <a href="/gallery/correct" className="aside-link inline-block">
+                    work <SquareArrowOutUpRight className="inline-block" />
                   </a>
                 </h4>
                 <p>

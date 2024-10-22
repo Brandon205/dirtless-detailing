@@ -12,6 +12,7 @@ import {
   oddVariant,
   evenVariant
 } from "../../../utils/animationVariations";
+import { SquareArrowOutUpRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 const jsonld = {
@@ -220,8 +221,8 @@ export default function FullIntEx() {
               <div className="preview-content">
                 <h4>
                   See examples of our interior{" "}
-                  <a href="/gallery/interior" className="aside-link flex">
-                    work <img src="../assets/icons/linking.png" style={{ marginLeft: "0.5rem" }} alt="external link" className="icon-36 inline" />
+                  <a href="/gallery/interior" className="aside-link inline-block">
+                    work <SquareArrowOutUpRight className="inline-block" />
                   </a>
                 </h4>
                 <p>
