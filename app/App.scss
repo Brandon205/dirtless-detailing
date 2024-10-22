@@ -5,8 +5,8 @@
 /* MAIN COLORS:  */
 $main-clr: #fab638;
 $accent: #ff2600;
-$contact-bkg: #1b1b1b;
-$contact-bkg-lighter: #1f1f1f;
+$contact-bkg: #07080b; // #1b1b1b
+$contact-bkg-lighter: #181b21; // #1f1f1f
 $contact-border-clr: #2f2f2f;
 $urable-clr: #2fd2a8;
 
@@ -1696,7 +1696,7 @@ footer {
   cursor: pointer;
   padding: 1rem;
   border-radius: 12px 12px 0 0;
-  background-color: $contact-border-clr;
+  background-color: $contact-bkg-lighter;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -1724,7 +1724,7 @@ footer {
   list-style: none;
   line-height: 2;
   margin: 0;
-  background-color: $contact-bkg-lighter;
+  background-color: #14171c;
 }
 
 /** SIDE PAGE CSS **/
@@ -1766,7 +1766,6 @@ footer {
 
 .general-container {
   width: 90%;
-  max-width: 1800px;
   margin: 0 auto;
 }
 
@@ -2106,6 +2105,7 @@ footer {
 
 .service-content-container {
   width: 100%;
+  overflow-x: hidden;
   background-color: $contact-bkg;
 }
 
@@ -2475,6 +2475,7 @@ footer {
 }
 
 .pricing__subtext {
+  padding-bottom: 2rem;
   color: $secondary-text;
 }
 
@@ -2528,7 +2529,7 @@ footer {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 0 2px 15px $main-clr;
+  box-shadow: 4px 8px 15px black;
 }
 
 .pricing__range-container {
@@ -3487,7 +3488,8 @@ footer {
   }
 
   .cleaning-process-title {
-    margin-top: 15vh;
+    font-size: 2.5em;
+    margin-top: 5vh;
   }
 
   .header-icons-container {

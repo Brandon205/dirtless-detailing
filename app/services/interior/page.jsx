@@ -2,7 +2,17 @@
 import PricingComponent from "../../../utils/PricingComponent";
 import ImageSlider from "../../../utils/ImageSlider";
 import HeaderComponent from "../../components/HeaderComponent";
-import { previewParentVariation, imgVariation1, imgVariation2, imgVariation3, imgVariation4 } from "../../../utils/animationVariations";
+import {
+  previewParentVariation,
+  imgVariation1,
+  imgVariation2,
+  imgVariation3,
+  imgVariation4,
+  containerVariant,
+  oddVariant,
+  evenVariant
+} from "../../../utils/animationVariations";
+import { SquareArrowOutUpRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 const jsonld = {
@@ -20,8 +30,8 @@ const jsonld = {
     "@type": "AggregateOffer",
     "url": "https://www.dirtlessdetailing.com/services/interior",
     "priceCurrency": "USD",
-    "lowPrice": "300",
-    "highPrice": "375"
+    "lowPrice": "335",
+    "highPrice": "425"
   },
   "url": "https://www.dirtlessdetailing.com/services/interior"
 };
@@ -42,7 +52,7 @@ export default function FullIntEx() {
           <div style={{ width: "100%" }}>
             <main className="service-main">
               <h2 style={{ marginBottom: 0 }} className="text-large">
-                Our Full Interior Cleaning Service
+                Our Interior Deep Cleaning
               </h2>
               <hr style={{ margin: "0 auto 3rem auto" }} />
               <div className="service-explain">
@@ -59,8 +69,8 @@ export default function FullIntEx() {
                   all the necessary tools for every situation.
                 </p>
                 <p>
-                  Want the outside done as well? Simply book an interior and exterior service, we'll do the hard work to get your car back to its best
-                  condition! Check out our exterior offers{" "}
+                  Need the exterior done as well? Feel free to book an interior and exterior detail, we will get your vehicle looking like new in just one day!
+                  Check out our exterior decon wash{" "}
                   <a href="/services/exterior" className="aside-link">
                     here
                   </a>
@@ -76,21 +86,21 @@ export default function FullIntEx() {
                 </h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
-              <PricingComponent prices={[300, 300, 300, 335, 375, 375]} addons="interior" />
+              <PricingComponent shortTitle="interior" serviceType="interior" addons="fullInterior" />
             </div>
 
             <h2 className="cleaning-process-title pb-8">Our Interior Cleaning Process</h2>
-            <ol className="list">
-              <li className="item">
+            <motion.ol className="list" variants={containerVariant} initial="initial" whileInView="whileInView" viewport={{ once: true }}>
+              <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">1</h3>
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Expose Hidden Dirt</h4>
-                  <p className="step-desc">Blow out all hidden dirt and debris and gets areas that are hard to reach with a vacuum.</p>
+                  <p className="step-desc">Blow out all hidden dirt and debris to get areas that are hard to reach with a vacuum.</p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={evenVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">2</h3>
                 </div>
@@ -98,35 +108,35 @@ export default function FullIntEx() {
                   <h4 className="step-title">Vacuum Vehicle</h4>
                   <p className="step-desc">Thoroughly vacuum every crack and crevice of the vehicle.</p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">3</h3>
                 </div>
                 <div className="step-container">
-                  <h4 className="step-title">Hot Water Extraction (stain removal)</h4>
-                  <p className="step-desc">Remove/Extract all stains that we can. We will be sure to get all carpets, floor mats, and cloth seats.</p>
+                  <h4 className="step-title">Carpet Reconditioning</h4>
+                  <p className="step-desc">Using our wide array of carpet cleaning chemicals, remove & extract all of stains that we can.</p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={evenVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">4</h3>
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Door Jambs</h4>
-                  <p className="step-desc">Clean all of the door jambs.</p>
+                  <p className="step-desc">Thoroughly clean and rinse out all cracks and crevices in the door jambs.</p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">5</h3>
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Wipe Down Plastics and Leathers</h4>
-                  <p className="step-desc">We will clean, steam, and degrease all plastics and leather seats.</p>
+                  <p className="step-desc">We will clean and degrease all plastics and leather seats.</p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={evenVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">6</h3>
                 </div>
@@ -134,8 +144,8 @@ export default function FullIntEx() {
                   <h4 className="step-title">Window Cleaning</h4>
                   <p className="step-desc">Clean all windows and other glass, removing any streaking possibly left behind from the previous steps.</p>
                 </div>
-              </li>
-              <li className="item item-disabled">
+              </motion.li>
+              <motion.li className="item item-disabled" variants={oddVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number" style={{ border: "2px solid #aaa" }}>
                     7
@@ -149,7 +159,7 @@ export default function FullIntEx() {
                     </a>
                   </h4>
                   <p className="step-desc">
-                    Upgrade to our Spill Guard Service to have us apply a 1 year interior ceramic coating to all surfaces in the vehicle. This is PERFECT for
+                    Upgrade to our Spill Guard Service to have us apply a 1-year interior ceramic coating to all surfaces in the vehicle. This is PERFECT for
                     cars with kids, pets, or daily coffee trips with the occasional spills as cleaning it will now be easier. See more info{" "}
                     <a href="/services/interior-spill" className="aside-link">
                       here
@@ -157,8 +167,8 @@ export default function FullIntEx() {
                     .
                   </p>
                 </div>
-              </li>
-            </ol>
+              </motion.li>
+            </motion.ol>
 
             <br className="extra-space" />
 
@@ -211,8 +221,8 @@ export default function FullIntEx() {
               <div className="preview-content">
                 <h4>
                   See examples of our interior{" "}
-                  <a href="/gallery/interior" className="aside-link flex">
-                    work <img src="../assets/icons/linking.png" style={{ marginLeft: "0.5rem" }} alt="external link" className="icon-36 inline" />
+                  <a href="/gallery/interior" className="aside-link inline-block">
+                    work <SquareArrowOutUpRight className="inline-block" />
                   </a>
                 </h4>
                 <p>

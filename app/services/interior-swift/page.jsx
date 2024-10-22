@@ -1,7 +1,17 @@
 "use client";
 import PricingComponent from "../../../utils/PricingComponent";
 import HeaderComponent from "../../components/HeaderComponent";
-import { previewParentVariation, imgVariation1, imgVariation2, imgVariation3, imgVariation4 } from "../../../utils/animationVariations";
+import {
+  previewParentVariation,
+  imgVariation1,
+  imgVariation2,
+  imgVariation3,
+  imgVariation4,
+  containerVariant,
+  oddVariant,
+  evenVariant
+} from "../../../utils/animationVariations";
+import { SquareArrowOutUpRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 const jsonld = {
@@ -19,8 +29,8 @@ const jsonld = {
     "@type": "AggregateOffer",
     "url": "https://www.dirtlessdetailing.com/services/interior-swift",
     "priceCurrency": "USD",
-    "lowPrice": "150",
-    "highPrice": "200"
+    "lowPrice": "175",
+    "highPrice": "225"
   },
   "url": "https://www.dirtlessdetailing.com/services/interior-swift"
 };
@@ -41,27 +51,27 @@ export default function FullIntEx() {
           <div style={{ width: "100%" }}>
             <main className="service-main">
               <h2 style={{ marginBottom: 0 }} className="text-large">
-                Our Swift Interior Detail Service
+                Quick and Easy Interior Detailing
               </h2>
               <hr style={{ margin: "0 auto 3rem auto" }} />
               <div className="service-explain">
                 <p>
-                  Our Swift Interior Detail is a package aimed at refreshing and maintaining your vehicle's interior without the the cost of ultra deep cleaning
-                  from our full interior package. This service starts with thorough vacuum to eliminate visible dirt and debris, ensuring a tidier and more
-                  pleasant interior.
+                  Our Swift Interior Detail is a package aimed at vehicles that just need a simple maintenance, or vehicles that you don't want to be perfect
+                  without the cost of ultra deep cleaning from our full interior package. This service starts with us blowing out the hard to reach areas then
+                  giving the interior a good vacuuming.
                 </p>
                 <p>
                   The Swift Interior Detail also includes all interior surfaces being wiped down thoroughly, such as dashboards, consoles, and door panels. For
-                  this step we use a revolutionary new product that allows us to clean, and condition all in one step, Saving us time and you money! All your
-                  interior surfaces will look and feel refreshed!
+                  this step we use a product that allows us to clean, and condition all in one step, saving us time and you money! All your interior surfaces
+                  will look and feel refreshed!
                 </p>
                 <p>
-                  Additionally, our experts clean the interior windows and mirrors with a streak free finish. The last step for the swift detail is cleaning
-                  you're floor mats! We ensure that your floor mats are thoroughly cleaned without causing damage, discoloration or a slippery feel.
+                  If there are minor stains or just a couple of spots don't worry! We won't charge you any extra, just let us know any problem areas you want us
+                  to target and we'll get them taken care of!
                 </p>
                 <p>
-                  <span className="special-package">NOTE:</span> Please note that this is not a deep cleaning service but rather a targeted approach to sprucing
-                  up your vehicle's interior.If you are looking for a more in depth thorough interior detailing experience, take a look at our{" "}
+                  <span className="special-package">NOTE:</span> If you are looking for (or need) a more in depth interior detailing experience, take a look at
+                  our{" "}
                   <a href="/services/interior" className="aside-link">
                     Full Interior Detail
                   </a>
@@ -77,48 +87,48 @@ export default function FullIntEx() {
                 </h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
-              <PricingComponent prices={[150, 150, 150, 175, 175, 200]} addons="interior" />
+              <PricingComponent shortTitle="interiorswift" serviceType="interior" addons="interiorSwift" />
             </div>
 
             <h2 className="cleaning-process-title pb-8">Our Swift Interior Process</h2>
-            <ol className="list">
-              <li className="item">
+            <motion.ol className="list" variants={containerVariant} initial="initial" whileInView="whileInView" viewport={{ once: true }}>
+              <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">1</h3>
                 </div>
                 <div className="step-container">
-                  <h4 className="step-title">Vacuum Everything</h4>
-                  <p className="step-desc">Thoroughly vacuum every crack and crevice of the vehicle.</p>
+                  <h4 className="step-title">Blow Out & Vacuum</h4>
+                  <p className="step-desc">Thoroughly blow out and vacuum every crack and crevice of the vehicle.</p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={evenVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">2</h3>
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Wipe Down</h4>
-                  <p className="step-desc">Using a revolutionary new cleaning and conditioning product we'll wipe down all surfaces in your cars interior.</p>
+                  <p className="step-desc">Using a one-step cleaning and conditioning product we'll wipe down all interior surfaces.</p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">3</h3>
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Floormats</h4>
-                  <p className="step-desc">We'll vacuum any carpeted floormats, and scrub any plastic floormats.</p>
+                  <p className="step-desc">We'll vacuum any carpeted floormats, and scrub/wash any rubber floormats.</p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={evenVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">4</h3>
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Clean Windows</h4>
-                  <p className="step-desc">Clean windows to a streak free finish</p>
+                  <p className="step-desc">Clean windows to a streak-free finish.</p>
                 </div>
-              </li>
-            </ol>
+              </motion.li>
+            </motion.ol>
 
             <br className="extra-space" />
 
@@ -152,8 +162,8 @@ export default function FullIntEx() {
               <div className="preview-content">
                 <h4>
                   See more examples of our interior{" "}
-                  <a href="/gallery/interior" className="aside-link flex">
-                    work <img src="../assets/icons/linking.png" style={{ marginLeft: "0.5rem" }} alt="external link" className="icon-36" />
+                  <a href="/gallery/interior" className="aside-link inline-block">
+                    work <SquareArrowOutUpRight className="inline-block" />
                   </a>
                 </h4>
                 <p>

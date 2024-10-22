@@ -26,7 +26,7 @@ export default function Benefits() {
           }}
           onMouseLeave={() => calendarRef.current.goToAndStop(60, true)}
         />
-        <p className="header-desc">8 Years</p>
+        <p className="header-desc">9 Years</p>
         <span className="header-desc-span">Of Experience</span>
       </div>
       <div>
@@ -41,7 +41,7 @@ export default function Benefits() {
           }}
           onMouseLeave={() => carRef.current.goToAndStop(90, true)}
         />
-        <p className="header-desc">1000+</p>
+        <p className="header-desc">1500+</p>
         <span className="header-desc-span">Details Done</span>
       </div>
       <div>
@@ -56,7 +56,7 @@ export default function Benefits() {
           }}
           onMouseLeave={() => starRef.current.goToAndStop(20, true)}
         />
-        <p className="header-desc">Raving</p>
+        <p className="header-desc text-left">30+</p>
         <span className="header-desc-span">5 Star Reviews</span>
       </div>
       <div>
@@ -71,8 +71,8 @@ export default function Benefits() {
           }}
           onMouseLeave={() => mapRef.current.goToAndStop(80, true)}
         />
-        <p className="header-desc">Mobile</p>
-        <span className="header-desc-span">Services</span>
+        <p className="header-desc text-left">Mobile</p>
+        <span className="header-desc-span text-left">or Shop Based Services</span>
       </div>
     </div>
   );

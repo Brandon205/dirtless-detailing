@@ -10,7 +10,7 @@ export const HeroSlider = ({
   overlayClassName,
   className,
   autoplay = true,
-  direction = "up",
+  direction = "up"
 }: {
   images: string[];
   children: React.ReactNode;
@@ -83,7 +83,7 @@ export const HeroSlider = ({
     initial: {
       scale: 0,
       opacity: 0,
-      rotateX: 45,
+      rotateX: 45
     },
     visible: {
       scale: 1,
@@ -91,32 +91,32 @@ export const HeroSlider = ({
       opacity: 1,
       transition: {
         duration: 0.5,
-        ease: [0.645, 0.045, 0.355, 1.0],
-      },
+        ease: [0.645, 0.045, 0.355, 1.0]
+      }
     },
     upExit: {
       opacity: 1,
       y: "-150%",
       transition: {
-        duration: 1,
-      },
+        duration: 1
+      }
     },
     downExit: {
       opacity: 1,
       y: "150%",
       transition: {
-        duration: 1,
-      },
-    },
+        duration: 1
+      }
+    }
   };
 
   const areImagesLoaded = loadedImages.length > 0;
 
   return (
     <div
-      className={cn("overflow-hidden h-[90vh] w-full relative flex items-center justify-center", className)}
+      className={cn("overflow-hidden h-[90vh] w-full relative flex items-center", className)}
       style={{
-        perspective: "1000px",
+        perspective: "1000px"
       }}
     >
       {areImagesLoaded && children}

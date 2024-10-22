@@ -1,8 +1,18 @@
 "use client";
 import PricingComponent from "../../../utils/PricingComponent";
 import HeaderComponent from "../../components/HeaderComponent";
-import { previewParentVariation, imgVariation1, imgVariation2, imgVariation3, imgVariation4 } from "../../../utils/animationVariations";
+import {
+  previewParentVariation,
+  imgVariation1,
+  imgVariation2,
+  imgVariation3,
+  imgVariation4,
+  containerVariant,
+  oddVariant,
+  evenVariant
+} from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
+import { SquareArrowOutUpRight } from "lucide-react";
 import ImageSlider from "../../../utils/ImageSlider";
 
 const jsonld = {
@@ -19,8 +29,8 @@ const jsonld = {
     "@type": "AggregateOffer",
     "url": "https://www.dirtlessdetailing.com/services/exterior",
     "priceCurrency": "USD",
-    "lowPrice": "100",
-    "highPrice": "150"
+    "lowPrice": "125",
+    "highPrice": "175"
   },
   "url": "https://www.dirtlessdetailing.com/services/exterior"
 };
@@ -46,8 +56,8 @@ export default function Exterior() {
               <hr style={{ margin: "0 auto 3rem auto" }} />
               <div className="service-explain">
                 <p>
-                  This is our base exterior detailing service. It is designed to give the outside of your vehicle a thorough cleaning and decontamination. We
-                  even top it off with a 3 month ceramic spray to protect it for time to come.
+                  This is our base exterior detailing service. It is designed to give the outside of your vehicle a thorough wash and decontamination. We even
+                  top it off with a 3 month ceramic spray for protection.
                 </p>
                 <p>
                   Wheels and tires can easily be one of the dirtiest parts of a car without you even realizing it, and brake dust is no joke once it's been on
@@ -76,78 +86,80 @@ export default function Exterior() {
                 </h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
-              <PricingComponent prices={[100, 100, 100, 125, 150, 150]} addons="exterior" />
+              <PricingComponent shortTitle="exteriorwash" serviceType="exterior" addons="exterior" />
             </div>
 
             <h2 className="cleaning-process-title pb-8">Our Exterior Decon Wash Process</h2>
-            <ol className="list">
-              <li className="item">
+            <motion.ol className="list" variants={containerVariant} initial="initial" whileInView="whileInView" viewport={{ once: true }}>
+              <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">1</h3>
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Wash Vehicle</h4>
-                  <p className="step-desc">Thorough top to bottom wash including the inside of the gas door.</p>
+                  <p className="step-desc">Thorough top to bottom wash including inside the gas door.</p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={evenVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">2</h3>
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Wheel Cleaning</h4>
-                  <p className="step-desc">Clean wheels, wheel wells, and wheel barrels with chemicals made for removing brake dust and road film.</p>
+                  <p className="step-desc">
+                    Clean wheels, wheel wells, and wheel barrels with specialized chemicals made for removing brake dust and road film.
+                  </p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={evenVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">3</h3>
                 </div>
                 <div className="step-container">
-                  <h4 className="step-title">Remove tar and sap</h4>
-                  <p className="step-desc">
-                    Remove any tar and sap from the exterior. Especially if your car is white, small black dots of tar appear usually on the lower panels of the
-                    car. We have some of the best products to remove all of it.
-                  </p>
+                  <h4 className="step-title">Clean Door Jambs</h4>
+                  <p className="step-desc">Thoroughly clean and rinse out all cracks and crevices in the door jambs.</p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">4</h3>
                 </div>
                 <div className="step-container">
-                  <h4 className="step-title">Protect Paint</h4>
-                  <p className="step-desc">Apply our mix of Ceramic Spray (gives the whole vehicle 3 months of protection).</p>
+                  <h4 className="step-title">Remove tar and sap</h4>
+                  <p className="step-desc">
+                    Remove any tar and sap from the exterior. Tar typically builds up on the lower panels of the vehicle, we have strong chemicals that can
+                    safely remove it.
+                  </p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={evenVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">5</h3>
+                </div>
+                <div className="step-container">
+                  <h4 className="step-title">Protect Paint</h4>
+                  <p className="step-desc">Apply a Ceramic Spray before drying (gives the entire vehicle 3 months of protection).</p>
+                </div>
+              </motion.li>
+              <motion.li className="item" variants={oddVariant}>
+                <div className="step-number-container">
+                  <h3 className="step-number">6</h3>
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Dry Vehicle</h4>
                   <p className="step-desc">Dry the whole vehicle with drying towels and air blowers.</p>
                 </div>
-              </li>
-              <li className="item">
-                <div className="step-number-container">
-                  <h3 className="step-number">6</h3>
-                </div>
-                <div className="step-container">
-                  <h4 className="step-title">Clean Door Jambs</h4>
-                  <p className="step-desc">Thoroughly wipe down all the cracks and crevices in the door jambs.</p>
-                </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">7</h3>
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Final Touches</h4>
-                  <p className="step-desc">Dress tires, wheel wells and plastics.</p>
+                  <p className="step-desc">Dress the tires and wheel wells.</p>
                 </div>
-              </li>
-              <li className="item item-disabled">
+              </motion.li>
+              <motion.li className="item item-disabled" variants={evenVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number" style={{ border: "2px solid #aaa" }}>
                     8
@@ -161,25 +173,25 @@ export default function Exterior() {
                     </a>
                   </h4>
                   <p className="step-desc">
-                    If you opt for our Exterior Seal and Shine package you get all of these services, a full vehicle polish, specialized windshield and trim
-                    coatings, and a top coating of IGL Premier, leaving you with 1 year of total protection! See more info{" "}
+                    If you opt for our Exterior Seal and Shine package you get all of these benefits plus: a full vehicle polish, specialized windshield and
+                    trim coatings, and a 1-year ceramic coating on all paint! See more info{" "}
                     <a href="/services/exterior-seal" className="aside-link">
                       here
                     </a>
                     .
                   </p>
                 </div>
-              </li>
-            </ol>
+              </motion.li>
+            </motion.ol>
 
             <br className="extra-space" />
 
             <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
             <h3 className="pricing__heading">What a car wash should be.</h3>
-            <p className="pricing__subtext">Your car, washed, without the unnecessary scratching and missed corners.</p>
+            <p className="pricing__subtext">Your car, washed, without the unnecessary scratching or missed corners.</p>
             <ImageSlider
-              beforeUrlId={"4aad5d50-ca20-4973-59d6-47e9ebe24100"}
-              afterUrlId={"74d7cbdb-782e-4a5b-dde5-ac078af06700"}
+              beforeUrlId={"3fce3784-7776-4d2e-c789-8ad7b61bc200"}
+              afterUrlId={"92366fb8-85e9-4d24-c41e-f5e48585d500"}
               beforeOffset={0}
               afterOffset={0}
             />
@@ -214,8 +226,8 @@ export default function Exterior() {
               <div className="preview-content">
                 <h4>
                   See examples of our{" "}
-                  <a href="/gallery/exterior" className="aside-link flex">
-                    work <img src="../assets/icons/linking.png" style={{ marginLeft: "0.5rem" }} alt="external link" className="icon-36" />
+                  <a href="/gallery/exterior" className="aside-link inline-block">
+                    work <SquareArrowOutUpRight className="inline-block" />
                   </a>
                 </h4>
                 <p>

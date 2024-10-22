@@ -67,7 +67,7 @@ export default function Footer() {
       <div className="footer-content-card" style={{ paddingBottom: "2rem" }}>
         <h3>SERVICES</h3>
         <Link href="/services/interior-swift" className="footer-link">
-          Swift Interior Detail - <span className="special-package">NEW</span>
+          Swift Interior Detail
         </Link>
         <Link href="/services/interior" className="footer-link">
           Full Interior Detail
@@ -77,7 +77,7 @@ export default function Footer() {
         </Link>
         <hr style={{ marginTop: "1.5rem" }} />
         <Link href="/services/exterior" className="footer-link">
-          Exterior Wash
+          Exterior Decon Wash
         </Link>
         <Link href="/services/exterior-seal" className="footer-link">
           Exterior Seal & Shine

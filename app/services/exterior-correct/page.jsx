@@ -2,11 +2,21 @@
 import React, { useState, useEffect } from "react";
 import PricingComponent from "../../../utils/PricingComponent";
 import ImageSlider from "../../../utils/ImageSlider";
-import { previewParentVariation, imgVariation1, imgVariation2, imgVariation3, imgVariation4 } from "../../../utils/animationVariations";
+import {
+  previewParentVariation,
+  imgVariation1,
+  imgVariation2,
+  imgVariation3,
+  imgVariation4,
+  containerVariant,
+  oddVariant,
+  evenVariant
+} from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
 import HeaderComponent from "../../components/HeaderComponent";
 import FaqItem from "../../components/FaqItem";
 import Zoom from "react-medium-image-zoom";
+import { SquareArrowOutUpRight } from "lucide-react";
 import "react-medium-image-zoom/dist/styles.css";
 
 const faqItems = [
@@ -14,12 +24,13 @@ const faqItems = [
     title: "Why should I get a Ceramic Coating?",
     description: (
       <div>
-        <ul style={{ margin: 0 }}>
-          <li>It is the best protection for your paint</li>
-          <li>Ceramic coatings increase the hardness of your paint, making it less likely to scratch while washing</li>
+        <ul style={{ margin: 0, marginLeft: "1rem" }} className="list-disc">
+          <li>
+            It is the best protection for your paint, Ceramic coatings increase the hardness of your paint, making it less likely to scratch while washing
+          </li>
           <li>Coatings increase the Gloss and Slickness of your paint</li>
-          <li>Self cleaning properties: Ceramic coatings aggressively bead water, dirt gets caught in these beads and will fly off while you're driving!</li>
-          <li>Easier to wash and dry. Dirt washes off easier with less effort, you can also blow dry your vehicle because of the water beading.</li>
+          <li>Self cleaning properties: Ceramic coatings easily bead water, dirt gets caught in these beads and will fly off while you're driving!</li>
+          <li>Easier to wash and dry. Dirt will wash off with less effort, you can also blow dry 90% of your vehicle because of the water beading.</li>
         </ul>
         <Zoom>
           <div
@@ -43,7 +54,7 @@ const faqItems = [
       <p className="faq-description">
         Unlike waxes true ceramic coatings don't just wash off, however, over time your coating can get clogged with contaminants and gloss, slickness, and
         water beading can degrade (for this coating it should stay in good quality for up to 3 years). If you want to maintain all the benefits of your ceramic
-        coating we recommend getting our{" "}
+        coating we recommend getting at least our{" "}
         <a href="/services/exterior" className="aside-link">
           Exterior Decon Wash
         </a>{" "}
@@ -56,8 +67,8 @@ const faqItems = [
     description: (
       <p className="faq-description">
         We never recommend going through a car wash as they can reduce the gloss slickness and beading of your coating prematurely. However in a pinch a
-        touchless car wash will suffice. Just make sure to use the cheapest setting, without any wax's. It is also recommended after the wash to dry the whole
-        vehicle with supple towels (We recommend{" "}
+        touch-less car wash will suffice. Just make sure to use the cheapest setting, without any wax's. It is also recommended after the wash to dry the whole
+        vehicle with high quality drying towels (We recommend{" "}
         <a href="https://amzn.to/449nFm7" className="aside-link" target="_blank" rel="noopener">
           The Rag Company's Large Drying Towel
         </a>
@@ -75,7 +86,7 @@ const faqItems = [
       <p>
         You can check out our{" "}
         <a href="/products/ceramic-coating" className="aside-link">
-          DIY Maintenance
+          DIY Ceramic Maintenance
         </a>{" "}
         page to see all the products and steps that we recommend for a complete wash and decontamination all for under $150. You can also ask us about our
         maintenance services, they don't cost too much per service plus they include the interior if you have had any one of our Interior Detail services done
@@ -100,8 +111,8 @@ const jsonld = {
     "@type": "AggregateOffer",
     "url": "https://www.dirtlessdetailing.com/services/exterior-correct",
     "priceCurrency": "USD",
-    "lowPrice": "1000",
-    "highPrice": "1500"
+    "lowPrice": "1250",
+    "highPrice": "1750"
   },
   "url": "https://www.dirtlessdetailing.com/services/exterior-correct"
 };
@@ -146,15 +157,22 @@ export default function ExteriorCorrect() {
                   to remove any contaminants. From there, we refine your paint by performing an in-depth polishing step removing as many imperfections we safely
                   can.
                 </p>
-                {/* <p>
-                  <span className="special-package">Note:</span> This is one of the services that we require you to drop
-                  off your car at our shop for. We will most likely need to keep you car overnight as the ceramic
-                  coating has a cure time before it's ready to be exposed to the elements. Also, our shop has proper
-                  lighting to ensure that we don't miss any spots on the paint.
-                </p> */}
                 <p>
-                  Last but not least is the ceramic coating! To provide to best protection and coverage on the paint coating, we coat your whole vehicle with
-                  the hardest, most resilient ceramic coatings on the market. This includes paint, trim, lights, glass, and wheels.
+                  The it's time for the ceramic coating! To provide to best protection and coverage on the paint coating, we coat your whole vehicle with the
+                  hardest, most resilient ceramic coatings on the market. This includes paint, trim, lights, glass, and wheels.
+                </p>
+                <p>
+                  Feel free to contact us to get any of your questions answered, ceramic coatings are somewhat new so not everyone knows all that they can do.
+                  Give us a call or check out our{" "}
+                  <a href="#faq" className="aside-link">
+                    FAQ
+                  </a>{" "}
+                  section at the bottom of this page to get your questions answered!
+                </p>
+                <p>
+                  <span className="special-package">Note:</span> This is one of the services that we require you to drop off your car at our shop for. We will
+                  most likely need to keep you car overnight as the ceramic coating has a cure time before it's ready to be exposed to the elements. Also, our
+                  shop has proper lighting to ensure that we don't miss any spots on the paint.
                 </p>
               </div>
             </main>
@@ -168,84 +186,86 @@ export default function ExteriorCorrect() {
                 </h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
-              <PricingComponent prices={[1000, 1000, 1000, 1250, 1500, 1500]} addons="correction" />
+              <PricingComponent shortTitle="exteriorcorrect" serviceType="exterior" addons="correction" />
             </div>
 
             <h2 className="cleaning-process-title pb-8">Our Exterior Correct and Protect Process</h2>
-            <ol className="list">
-              <li className="item">
+            <motion.ol className="list" variants={containerVariant} initial="initial" whileInView="whileInView" viewport={{ once: true }}>
+              <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">1</h3>
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Wash Vehicle</h4>
-                  <p className="step-desc">Thorough top to bottom wash including the gas door.</p>
+                  <p className="step-desc">Thorough top to bottom wash including inside the gas door.</p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={evenVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">2</h3>
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Wheel Cleaning</h4>
-                  <p className="step-desc">Clean wheels, wheel wells, and wheel barrels with chemicals made for removing brake dust and road film.</p>
+                  <p className="step-desc">
+                    Clean wheels, wheel wells, and wheel barrels with specialized chemicals made for removing brake dust and road film.
+                  </p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">3</h3>
                 </div>
                 <div className="step-container">
-                  <h4 className="step-title">Remove tar and sap</h4>
-                  <p className="step-desc">
-                    Remove any tar and sap from the exterior. Especially if your car is white, small black dots of tar appear usually on the lower panels of the
-                    car. We have some of the best products to remove all of it.
-                  </p>
+                  <h4 className="step-title">Clean Door Jambs</h4>
+                  <p className="step-desc">Thoroughly clean and rinse out all cracks and crevices in the door jambs.</p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">4</h3>
+                </div>
+                <div className="step-container">
+                  <h4 className="step-title">Remove tar and sap</h4>
+                  <p className="step-desc">
+                    Remove any tar and sap from the exterior. Tar typically builds up on the lower panels of the vehicle, we have strong chemicals that can
+                    safely remove it.
+                  </p>
+                </div>
+              </motion.li>
+              <motion.li className="item" variants={evenVariant}>
+                <div className="step-number-container">
+                  <h3 className="step-number">5</h3>
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Dry Vehicle</h4>
                   <p className="step-desc">Dry the whole vehicle with drying towels and air blowers.</p>
                 </div>
-              </li>
-              <li className="item">
-                <div className="step-number-container">
-                  <h3 className="step-number">5</h3>
-                </div>
-                <div className="step-container">
-                  <h4 className="step-title">Remove scratches and watermarks</h4>
-                  <p className="step-desc">
-                    Perform our Paint Correction procedure removing up to 85%-90% of scratches and greatly reducing the look of deeper scratches. We also go
-                    over the glass as well removing watermarks and fine scratches.
-                  </p>
-                </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">6</h3>
                 </div>
                 <div className="step-container">
-                  <h4 className="step-title">Protect Vehicle</h4>
+                  <h4 className="step-title">Remove scratches and watermarks</h4>
                   <p className="step-desc">
-                    Apply our 3-year Ceramic Coating to the paint. At this point we also coat the windshield, wheels, and the trim. Now there's no part of your
-                    car that's uncoated!
+                    Perform a 2-stage paint correction removing up to 85%-90% of scratches and greatly reducing if not removing the look of deeper scratches. We
+                    also go over the glass as well removing watermarks and light scratches.
                   </p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={evenVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">7</h3>
                 </div>
                 <div className="step-container">
-                  <h4 className="step-title">Clean Door Jambs</h4>
-                  <p className="step-desc">Thoroughly wipe down all the cracks and crevices in the door jambs.</p>
+                  <h4 className="step-title">Protect Vehicle</h4>
+                  <p className="step-desc">
+                    Apply our 3-year Ceramic Coating to the paint. At this point we also coat the windshield, wheels, and the trim. Leaving no part of your car
+                    that's uncoated!
+                  </p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={evenVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">8</h3>
                 </div>
@@ -253,8 +273,8 @@ export default function ExteriorCorrect() {
                   <h4 className="step-title">Final Touches</h4>
                   <p className="step-desc">Dress tires with ceramic tire shine, and also dress the wheel wells.</p>
                 </div>
-              </li>
-            </ol>
+              </motion.li>
+            </motion.ol>
 
             <br className="extra-space" />
 
@@ -269,34 +289,6 @@ export default function ExteriorCorrect() {
               beforeOffset={0}
               afterOffset={0}
             />
-            {/* <div style={{ display: "grid", marginBottom: "10vh" }} className="place-center">
-              <div className="slider-container">
-                <div
-                  style={{
-                    backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2b933f30-bbff-4f91-8b88-1c83f75a4500/public')`,
-                  }}
-                  className="slider-img"
-                ></div>
-                <div
-                  style={{
-                    width: slide + "%",
-                    backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/d2eabed6-d867-43e8-f60e-d9d95a983600/public')`,
-                  }}
-                  className="slider-img foreground"
-                ></div>
-                <input
-                  type="range"
-                  min="1"
-                  max="100"
-                  value={slide}
-                  onChange={(e) => setSlide(Number(e.target.value))}
-                  className="slider-bar"
-                  name="slider"
-                  id="slider"
-                />
-                <div style={{ left: slide - 4 + "%" }} className="slider-button"></div>
-              </div>
-            </div> */}
 
             <div className="preview-container">
               <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/correct" className="gallery-preview">
@@ -328,8 +320,8 @@ export default function ExteriorCorrect() {
               <div className="preview-content">
                 <h4>
                   See examples of our{" "}
-                  <a href="/gallery/correct" className="aside-link flex">
-                    work <img src="../assets/icons/linking.png" style={{ marginLeft: "0.5rem" }} alt="external link" className="icon-36" />
+                  <a href="/gallery/correct" className="aside-link inline-block">
+                    work <SquareArrowOutUpRight className="inline-block" />
                   </a>
                 </h4>
                 <p>

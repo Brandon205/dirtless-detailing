@@ -1,8 +1,18 @@
 "use client";
 import React, { useState } from "react";
 import PricingComponent from "../../../utils/PricingComponent";
-import { previewParentVariation, imgVariation1, imgVariation2, imgVariation3, imgVariation4 } from "../../../utils/animationVariations";
+import {
+  previewParentVariation,
+  imgVariation1,
+  imgVariation2,
+  imgVariation3,
+  imgVariation4,
+  containerVariant,
+  oddVariant,
+  evenVariant
+} from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
+import { SquareArrowOutUpRight } from "lucide-react";
 import HeaderComponent from "../../components/HeaderComponent";
 
 const jsonld = {
@@ -20,8 +30,8 @@ const jsonld = {
     "@type": "AggregateOffer",
     "url": "https://www.dirtlessdetailing.com/services/interior-spill",
     "priceCurrency": "USD",
-    "lowPrice": "450",
-    "highPrice": "575"
+    "lowPrice": "500",
+    "highPrice": "600"
   },
   "url": "https://www.dirtlessdetailing.com/services/interior-spill"
 };
@@ -53,21 +63,21 @@ export default function InteriorSpill() {
                   will we remove the past few months of dirt, french fries, and who knows what else, but we'll also protect your interior for time to come!
                 </p>
                 <p>
-                  With the Spill Guard option, you'll get a layer of ceramic coating applied to all materials of your vehicle, even the fabric! Now cleanup from
-                  life's accidents will be far easier as the coating will act as a protective layer, which will give you more time to clean up before things
-                  soak in.
+                  With the Spill Guard coating, you'll get a layer of ceramic coating applied to all materials of your vehicle, even the fabric! Now cleanup
+                  from life's accidents will be far easier as the coating will act as a protective layer, which will give you more time to clean up before
+                  things soak in.
                 </p>
                 <p>
                   And don't worry, the coating doesn't act like the cheap conditioners, and make all surfaces slippery. All materials will feel similar, look
                   similar, and you won't be sliding around in your seat when you drive like other products.
                 </p>
                 <p>
-                  Do you need the outside detailed as well? Feel free to book an interior and exterior detail. It's the best way to get your whole vehicle
-                  brought back to life! Check out our base exterior cleaning{" "}
+                  Do you need the exterior detailed as well? Feel free to book an interior and exterior detail. It's the best way to get your whole vehicle
+                  brought back to life! Check out our exterior decon wash{" "}
                   <a href="/services/exterior" className="aside-link">
                     here
                   </a>
-                  , starting at only <span className="bold">$100</span>!
+                  , starting at only <span className="bold">$125</span>!
                 </p>
               </div>
             </main>
@@ -80,12 +90,12 @@ export default function InteriorSpill() {
                 </h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
-              <PricingComponent prices={[450, 450, 450, 500, 575, 575]} addons="interior" />
+              <PricingComponent shortTitle="interiorspill" serviceType="interior" addons="fullInterior" />
             </div>
 
             <h2 className="cleaning-process-title pb-8">Our Interior + Spill Guard Process</h2>
-            <ol className="list">
-              <li className="item">
+            <motion.ol className="list" variants={containerVariant} initial="initial" whileInView="whileInView" viewport={{ once: true }}>
+              <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">1</h3>
                 </div>
@@ -93,8 +103,8 @@ export default function InteriorSpill() {
                   <h4 className="step-title">Expose Hidden Dirt</h4>
                   <p className="step-desc">Blow out all hidden dirt and debris and gets areas that are hard to reach with a vacuum.</p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={evenVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">2</h3>
                 </div>
@@ -102,8 +112,8 @@ export default function InteriorSpill() {
                   <h4 className="step-title">Vacuum Vehicle</h4>
                   <p className="step-desc">Thoroughly vacuum every crack and crevice of the vehicle.</p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">3</h3>
                 </div>
@@ -111,8 +121,8 @@ export default function InteriorSpill() {
                   <h4 className="step-title">Hot Water Extraction (stain removal)</h4>
                   <p className="step-desc">Remove/Extract all stains that we can. We will be sure to get all carpets, floor mats, and cloth seats.</p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={evenVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">4</h3>
                 </div>
@@ -120,8 +130,8 @@ export default function InteriorSpill() {
                   <h4 className="step-title">Door Jambs</h4>
                   <p className="step-desc">Clean all of the door jambs.</p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">5</h3>
                 </div>
@@ -129,8 +139,8 @@ export default function InteriorSpill() {
                   <h4 className="step-title">Wipe Down Plastics and Leathers</h4>
                   <p className="step-desc">We will clean, steam, and degrease all plastics and leather seats.</p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={evenVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">6</h3>
                 </div>
@@ -138,8 +148,8 @@ export default function InteriorSpill() {
                   <h4 className="step-title">Window Cleaning</h4>
                   <p className="step-desc">Clean all windows and other glass, removing any streaking possibly left behind from the previous steps.</p>
                 </div>
-              </li>
-              <li className="item">
+              </motion.li>
+              <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">7</h3>
                 </div>
@@ -150,8 +160,8 @@ export default function InteriorSpill() {
                     the occasional spills, as cleaning it will now be much easier.
                   </p>
                 </div>
-              </li>
-            </ol>
+              </motion.li>
+            </motion.ol>
 
             <br className="extra-space" />
 
@@ -217,8 +227,8 @@ export default function InteriorSpill() {
               <div className="preview-content">
                 <h4>
                   See examples of our interior{" "}
-                  <a href="/gallery/interior" className="aside-link flex">
-                    work <img src="../assets/icons/linking.png" style={{ marginLeft: "0.5rem" }} alt="external link" className="icon-36" />
+                  <a href="/gallery/interior" className="aside-link inline-block">
+                    work <SquareArrowOutUpRight className="inline-block" />
                   </a>
                 </h4>
                 <p>
