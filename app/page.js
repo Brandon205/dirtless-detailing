@@ -131,10 +131,9 @@ export default function Home() {
               Your Auto Detailing & <br /> Ceramic Coating Specialists
             </h1>
           </div>
-          {/* <p className="special-deal-p">
-              <span className="special-deal-colored">VALENTINES DAY SPECIAL</span>: Book through Urable below and use code
-              <span className="special-deal-colored bold"> VALENTINE10</span> to save 10% on any In Shop Detail!
-            </p> */}
+          <p className="special-deal-p">
+            <span className="text-[#3c8d0d] bold">GIFT CARDS AVAILABLE ONLINE</span>: Give the gift of a clean car with our new gift card offers!
+          </p>
           <div>
             <p className="text-gray-300 max-w-screen-md text-left m-0 text-xl hidden xl:block">
               Everything from removing stains from your interior, to our most detail-oriented paint correction and ceramic coating jobs, you can trust Dirt-Less
