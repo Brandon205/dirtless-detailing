@@ -29,7 +29,10 @@ export default function Contact() {
     <section className="contact-container" id="contact">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
 
-      <h1 className="text-4xl font-bold pb-6 pt-32 text-center">24/7 ONLINE PRICING & BOOKING</h1>
+      <h1 className="text-4xl font-bold pt-32 text-center">24/7 ONLINE PRICING & BOOKING</h1>
+      <p className="text-center mb-10">
+        <span className="text-[#3c8d0d] bold">GIFT CARDS AVAILABLE ONLINE!</span>: Give the gift of a clean car with our new gift card offers!
+      </p>
       <div className="grid items-center" style={{ paddingTop: 0 }}>
         <BookingButton title="Book Online!" />
       </div>

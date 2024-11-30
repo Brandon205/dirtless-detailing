@@ -132,7 +132,7 @@ export default function Home() {
             </h1>
           </div>
           <p className="special-deal-p">
-            <span className="text-[#3c8d0d] bold">GIFT CARDS AVAILABLE ONLINE</span>: Give the gift of a clean car with our new gift card offers!
+            <span className="text-[#3c8d0d] bold">GIFT CARDS AVAILABLE ONLINE!</span>: Give the gift of a clean car with our new gift card offers!
           </p>
           <div>
             <p className="text-gray-300 max-w-screen-md text-left m-0 text-xl hidden xl:block">
