@@ -131,18 +131,14 @@ export default function Home() {
               Your Auto Detailing & <br /> Ceramic Coating Specialists
             </h1>
           </div>
-          <p className="special-deal-p">
-            <span className="text-[#3c8d0d] bold">GIFT CARDS AVAILABLE ONLINE!</span>: Give the gift of a clean car this holiday season!
-          </p>
           <div>
             <p className="text-gray-300 max-w-screen-md text-left m-0 text-xl hidden xl:block">
               Everything from removing stains from your interior, to our most detail-oriented paint correction and ceramic coating jobs, you can trust Dirt-Less
               Detailing to get the job done right!
             </p>
             <a href="https://maps.app.goo.gl/bhPDhjUN4jsSegu48" className="contact-link footer-contact-link no-underline" target="_blank" rel="noopener">
-              <MapPin /> Buckley Business Park C6 <span className="text-primary no-underline">(Our New Location)</span>
+              <MapPin /> Buckley Business Park C6 <span className="text-primary no-underline">(New Shop Location!)</span>
             </a>
-
             <div className="flex gap-10 pt-8 flex-col lg:flex-row max-w-screen-md">
               <motion.a href="/contact" className="top-quote-btn" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
                 <img src="../assets/icons/clipboard.png" alt="clipboard" className="btn-icon" /> BOOK NOW!
@@ -157,6 +153,7 @@ export default function Home() {
                 <img src="../assets/icons/phoneMessage.png" alt="call or message" className="btn-icon" /> (253) 252-9758
               </motion.a>
             </div>
+            <span className="text-white bold leading-none">Gift Cards Available Now!</span>
           </div>
         </header>
       </HeroSlider>

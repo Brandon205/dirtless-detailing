@@ -27,7 +27,7 @@ export default function Benefits() {
           onMouseLeave={() => calendarRef.current.goToAndStop(60, true)}
         />
         <p className="header-desc">9 Years</p>
-        <span className="header-desc-span">Of Experience</span>
+        <span className="header-desc-span">Detailing</span>
       </div>
       <div>
         <Lottie
@@ -71,8 +71,8 @@ export default function Benefits() {
           }}
           onMouseLeave={() => mapRef.current.goToAndStop(80, true)}
         />
-        <p className="header-desc text-left">Mobile</p>
-        <span className="header-desc-span text-left">or Shop Based Services</span>
+        <p className="header-desc text-left">In-Shop</p>
+        <span className="header-desc-span text-left">or Mobile Services</span>
       </div>
     </div>
   );
