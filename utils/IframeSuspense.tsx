@@ -1,18 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const IframeSuspense = ({ src, title }) => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
 
-  const handleLoad = () => {
-    setIsLoading(false);
-  };
+  useEffect(() => {
+    const iframe = document.createElement("iframe");
+    iframe.src = src;
+    iframe.onload = () => setLoading(false);
+    document.body.appendChild(iframe);
 
-  return (
-    <div>
-      {isLoading && <div>Loading...</div>}
-      <iframe src={src} title={title} onLoad={handleLoad} style={{ display: isLoading ? "none" : "block", width: "100%", height: "500px" }} />
-    </div>
-  );
+    return () => {
+      document.body.removeChild(iframe);
+    };
+  }, [src]);
+
+  if (loading) {
+    throw new Promise((resolve) => {
+      setTimeout(resolve, 1000); // Simulate loading delay
+    });
+  }
+
+  return <iframe src={src} title={title} />;
 };
 
 export default IframeSuspense;
