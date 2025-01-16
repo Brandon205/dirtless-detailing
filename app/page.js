@@ -10,6 +10,7 @@ import { InfiniteMovingCards } from "./components/InfiniteMovingCards";
 import FaqItem from "./components/FaqItem";
 import { ArrowRight, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
+import IframeSuspense from "../utils/IframeSuspense";
 
 const titillium = Titillium_Web({ weight: ["400", "600"], subsets: ["latin"] });
 
@@ -806,12 +807,17 @@ export default function Home() {
             ))}
           </div>
           <div className="map">
-            <iframe
+            <IframeSuspense
+              src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJxxfUWqz7kFQRotRs8MwWDRE&key=AIzaSyCabi1i-5RcG2qNysx_bZNQnYUMmT_l6YU"
+              title="Google Maps"
+              className="border-0 h-full w-full my-4 mx-auto"
+            />
+            {/* <iframe
               style={{ border: 0, margin: "16 auto", width: "100%", height: "100%" }}
               loading="lazy"
               allowFullScreen
-              src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJxxfUWqz7kFQRotRs8MwWDRE&key=AIzaSyCabi1i-5RcG2qNysx_bZNQnYUMmT_l6YU"
-            ></iframe>
+              src=
+            ></iframe> */}
           </div>
         </section>
         <br className="extra-space" />
@@ -824,7 +830,13 @@ export default function Home() {
           <p className="pt-8 text-2xl">Or simply submit this form to get in contact with us!</p>
         </div>
         <fieldset className="urable-form-container">
-          <iframe className="w-4/5 mx-auto lg:max-w-50% h-[600px]" src="https://app.urable.com/form/pMe0iWXWCBfTL47sDvjd/v5CoHzxM7y2da6KIOp2T"></iframe>
+          <IframeSuspense
+            src="https://app.urable.com/form/pMe0iWXWCBfTL47sDvjd/v5CoHzxM7y2da6KIOp2T"
+            title="Contact Form"
+            // height="600px"
+            // className="w-4/5 mx-auto lg:max-w-50%"
+          />
+          {/* <iframe className="w-4/5 mx-auto lg:max-w-50% h-[600px]" src="https://app.urable.com/form/pMe0iWXWCBfTL47sDvjd/v5CoHzxM7y2da6KIOp2T"></iframe> */}
         </fieldset>
       </div>
     </div>
