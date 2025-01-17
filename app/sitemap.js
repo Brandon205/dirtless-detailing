@@ -59,62 +59,6 @@ export default function sitemap() {
     {
       url: `${process.env.NEXT_PUBLIC_BASE_URL}/gallery/correct`,
       lastModified: new Date("October 20, 2024 12:00:00")
-    },
-    {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/location/black-diamond`,
-      lastModified: new Date("October 20, 2024 12:00:00")
-    },
-    {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/location/bonney-lake`,
-      lastModified: new Date("October 20, 2024 12:00:00")
-    },
-    {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/location/buckley`,
-      lastModified: new Date("October 20, 2024 12:00:00")
-    },
-    {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/location/edgewood`,
-      lastModified: new Date("October 20, 2024 12:00:00")
-    },
-    {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/location/enumclaw`,
-      lastModified: new Date("October 20, 2024 12:00:00")
-    },
-    {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/location/federal-way`,
-      lastModified: new Date("October 20, 2024 12:00:00")
-    },
-    {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/location/graham`,
-      lastModified: new Date("October 20, 2024 12:00:00")
-    },
-    {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/location/lake-tapps`,
-      lastModified: new Date("October 20, 2024 12:00:00")
-    },
-    {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/location/milton`,
-      lastModified: new Date("October 20, 2024 12:00:00")
-    },
-    {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/location/orting`,
-      lastModified: new Date("October 20, 2024 12:00:00")
-    },
-    {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/location/puyallup`,
-      lastModified: new Date("October 20, 2024 12:00:00")
-    },
-    {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/location/south-prairie`,
-      lastModified: new Date("October 20, 2024 12:00:00")
-    },
-    {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/location/sumner`,
-      lastModified: new Date("October 20, 2024 12:00:00")
-    },
-    {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/location/tehaleh`,
-      lastModified: new Date("October 20, 2024 12:00:00")
     }
   ];
 }
