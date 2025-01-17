@@ -806,18 +806,12 @@ export default function Home() {
               <FaqItem key={i} i={i} expanded={expanded} setExpanded={setExpanded} title={item.title} description={item.description} isMobile={smallScreen} />
             ))}
           </div>
-          <div className="map">
-            {/* <IframeSuspense
+          <div className="map relative">
+            <IframeSuspense
               src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJxxfUWqz7kFQRotRs8MwWDRE&key=AIzaSyCabi1i-5RcG2qNysx_bZNQnYUMmT_l6YU"
-              title="Google Maps"
-              className="border-0 h-full w-full my-4 mx-auto"
-            /> */}
-            {/* <iframe
-              style={{ border: 0, margin: "16 auto", width: "100%", height: "100%" }}
-              loading="lazy"
-              allowFullScreen
-              src=
-            ></iframe> */}
+              title="Google Maps Location"
+              classes="border-0 h-full w-full my-4 mx-auto"
+            />
           </div>
         </section>
         <br className="extra-space" />
@@ -830,15 +824,11 @@ export default function Home() {
           <p className="pt-8 text-2xl">Or simply submit this form to get in contact with us!</p>
         </div>
         <fieldset className="urable-form-container">
-          <Suspense fallback={<div>Loading...</div>}>
-            <IframeSuspense
-              src="https://app.urable.com/form/pMe0iWXWCBfTL47sDvjd/v5CoHzxM7y2da6KIOp2T"
-              title="Contact Form"
-              // height="600px"
-              // className="w-4/5 mx-auto lg:max-w-50%"
-            />
-          </Suspense>
-          {/* <iframe className="w-4/5 mx-auto lg:max-w-50% h-[600px]" src="https://app.urable.com/form/pMe0iWXWCBfTL47sDvjd/v5CoHzxM7y2da6KIOp2T"></iframe> */}
+          <IframeSuspense
+            src="https://app.urable.com/form/pMe0iWXWCBfTL47sDvjd/v5CoHzxM7y2da6KIOp2T"
+            title="Contact Form"
+            classes="w-4/5 mx-auto lg:max-w-50% h-[600px]"
+          />
         </fieldset>
       </div>
     </div>

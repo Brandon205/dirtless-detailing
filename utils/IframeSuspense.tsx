@@ -1,26 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { Suspense, useState } from "react";
 
-const IframeSuspense = ({ src, title }) => {
-  const [loading, setLoading] = useState(true);
+const IFrameFallback = () => (
+  <div className="w-full h-full flex items-center justify-center bg-gray-100">
+    <h1 className="text-gray-900 text-lg ml-2">Loading...</h1>
+  </div>
+);
 
-  useEffect(() => {
-    const iframe = document.createElement("iframe");
-    iframe.src = src;
-    iframe.onload = () => setLoading(false);
-    document.body.appendChild(iframe);
+export default function IFrameSuspense({ src, title, classes = "" }) {
+  const [isLoading, setIsLoading] = useState(true);
 
-    return () => {
-      document.body.removeChild(iframe);
-    };
-  }, [src]);
-
-  if (loading) {
-    throw new Promise((resolve) => {
-      setTimeout(resolve, 1000); // Simulate loading delay
-    });
-  }
-
-  return <iframe src={src} title={title} />;
-};
-
-export default IframeSuspense;
+  return (
+    <Suspense fallback={IFrameFallback()}>
+      <iframe src={src} title={title} className={`relative ${classes}`} loading="lazy" onLoad={() => setIsLoading(false)} />
+    </Suspense>
+  );
+}

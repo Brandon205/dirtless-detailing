@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { BookingButton } from "../components/BookingButton";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "../components/Tooltip";
+import IframeSuspense from "../../utils/IframeSuspense";
 
 const jsonld = {
   "@context": "https://schema.org",
@@ -93,30 +93,18 @@ export default function Contact() {
       </div>
 
       <div className="urable-container">
-        {/* <div>
-          <strong style={{ fontSize: "2rem" }}>
-            Try our <span style={{ color: "#fab638" }}>INSTANT</span> In Shop Booking Feature through{" "}
-            <span style={{ color: "#2fd2a8" }}>Ur</span>able!
-          </strong>
-          <p style={{ fontSize: "1.3rem" }} className="services-p">
-            Instant Booking • Price Estimate • Pick any Date and Time
-          </p>
-        </div> */}
-        {/* <fieldset className="urable-form-container">
-          <iframe
-            style={{ width: "100%", height: "700px" }}
-            src="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd"
-            frameBorder="0"
-          ></iframe>
-        </fieldset> */}
         <div className="text-center">
-          <strong style={{ fontSize: "2rem" }}>Feel free to Text, Call, or reach out using this form!</strong>
+          <strong style={{ fontSize: "2rem" }}>OR feel free to reach out via this form!</strong>
           <p style={{ fontSize: "1.3rem" }} className="services-p">
             Mobile Services • Pricing Quotes • General Questions
           </p>
         </div>
         <fieldset className="urable-form-container">
-          <iframe className="w-4/5 mx-auto lg:max-w-50% h-[600px] pb-10" src="https://app.urable.com/form/pMe0iWXWCBfTL47sDvjd/v5CoHzxM7y2da6KIOp2T"></iframe>
+          <IframeSuspense
+            src="https://app.urable.com/form/pMe0iWXWCBfTL47sDvjd/v5CoHzxM7y2da6KIOp2T"
+            title="Contact Form"
+            classes="w-4/5 mx-auto lg:max-w-50% h-[600px]"
+          />
         </fieldset>
       </div>
     </section>
