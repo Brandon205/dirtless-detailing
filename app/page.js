@@ -11,6 +11,7 @@ import FaqItem from "./components/FaqItem";
 import { ArrowRight, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 import IframeSuspense from "../utils/IframeSuspense";
+import HomePageCard from "./components/HomePageCard";
 
 const titillium = Titillium_Web({ weight: ["400", "600"], subsets: ["latin"] });
 
@@ -41,35 +42,6 @@ const jsonld = {
     "closes": "19:00"
   },
   "sameAs": ["https://www.instagram.com/dirt_less_detailing", "https://www.youtube.com/channel/UCsoqP5s4hwkQd_Sd-TVv-jg"]
-};
-
-const listItemVariant = {
-  initial: {
-    opacity: 0,
-    x: -100
-  },
-  show: {
-    opacity: 1,
-    x: 0
-  }
-};
-
-const serviceVariant = {
-  initial: { scale: 1 },
-  hover: { scale: 1.05 }
-};
-
-const arrowVariant = {
-  initial: { x: -25, opacity: 0 },
-  hover: {
-    x: 0,
-    opacity: 1,
-    transition: {
-      duration: 0.4,
-      type: "spring",
-      ease: "easeIn"
-    }
-  }
 };
 
 export default function Home() {
@@ -167,265 +139,42 @@ export default function Home() {
           <h2 className="new-heading text-xl lg:text-2xl">Transform your vehicle's interior with our Premium Auto Detailing services.</h2>
         </div>
         <div className="flex flex-col lg:flex-row flex-grow lg:justify-between lg:items-stretch lg:flex-wrap lg:w-[90%] lg:my-0 mx-auto justify-center items-center gap-24 mb-8">
-          <div className="flex flex-col flex-1 relative w-[90%] min-w-[400px] max-w-[475px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
-            <div
-              className="relative m-2 bg-center bg-no-repeat bg-cover h-[200px] lg:h-[250px] rounded-2xl border-2 border-black"
-              style={{
-                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e073e12e-8f0c-4ae5-fa12-4abc9ab9db00/public)`
-              }}
-            ></div>
-            <div className="w-full flex justify-between flex-1 px-3 flex-col items-center">
-              <div className="text-center">
-                <motion.a
-                  href="/services/interior-swift"
-                  className="inline-flex mx-auto my-0 text-3xl font-bold no-underline"
-                  variants={serviceVariant}
-                  initial="initial"
-                  whileHover="hover"
-                  animate="initial"
-                >
-                  Swift Interior Detail
-                  <motion.span className="flex items-center pl-2" variants={arrowVariant}>
-                    <ArrowRight color="white" />
-                  </motion.span>
-                </motion.a>
-                <motion.p className="text-center p-0 text-secondaryText font-semibold mx-auto max-w-[90%]">
-                  Our simple interior cleaning, best for maintenance or to quickly freshen up your interior.
-                </motion.p>
-              </div>
+          <HomePageCard
+            title="Swift Interior Detail"
+            imageUrl="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e073e12e-8f0c-4ae5-fa12-4abc9ab9db00/public"
+            description="Our simple interior cleaning, best for maintenance or to quickly freshen up your interior."
+            steps={["Blow Out & Vacuum the Vehicle", "Wipe Down and Condition All Surfaces", "Wash/Clean the Floormats", "Clean Interior Windows & Glass"]}
+            hours="1.5-3"
+            linkUrl="/services/interior-swift"
+          />
 
-              <motion.ul
-                className="list-none flex flex-col items-start text-xl font-normal w-full m-0 gap-4 pt-6 pb-4"
-                variants={{ initial: {}, show: { transition: { staggerChildren: 0.25 } } }}
-                whileInView="show"
-                initial="initial"
-                viewport={{ once: true }}
-              >
-                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
-                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">Blow Out & Vacuum the Vehicle</p>
-                </motion.li>
-                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
-                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">Wipe Down and Condition All Surfaces</p>
-                </motion.li>
-                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
-                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">Wash/Clean the Floormats</p>
-                </motion.li>
-                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
-                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">Clean Interior Windows & Glass</p>
-                </motion.li>
-              </motion.ul>
+          <HomePageCard
+            title="Full Interior Detail"
+            imageUrl="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a40931e-dd21-407c-dd03-86fd43b05200/public"
+            description="Our thorough interior cleaning, best for cars with staining, lots of dog hair/dirt, or ones that haven't been cleaned out in a long time."
+            steps={[
+              "Blow Out & Vacuum all Dirt/Debris",
+              "Steam Extraction/Carpet Shampooing",
+              "Wash Out Door Jambs",
+              "All Leathers and Plastics Cleaned",
+              "Interior & Exterior Glass Cleaned"
+            ]}
+            hours="3-6+"
+            linkUrl="/services/interior"
+          />
 
-              <div className="w-full">
-                <div className="flex w-full justify-around gap-4 py-4">
-                  <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
-                    <p className="text-white m-0">1.5-3</p>
-                    <p className="text-secondaryText text-[14px]">hours</p>
-                  </div>
-                  <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
-                    <p className="text-secondaryText text-[14px]">Starting at</p>
-                    <p className="text-white m-0 text-2xl">${prices["2 Door"]["interior"]["interiorswift"]}</p>
-                  </div>
-                </div>
-
-                <div className="flex w-full justify-around gap-4 flex-col lg:flex-row">
-                  <motion.a
-                    href="/services/interior-swift"
-                    className="py-3 text-dm tracking-wide px-[0.9rem] bg-secondaryBtnClr rounded-[40px] text-center font-bold text-clip lg:w-1/2"
-                    initial={{ scale: 1 }}
-                    whileHover={{ scale: 1.05 }}
-                  >
-                    Learn More
-                  </motion.a>
-                  <motion.a
-                    href="/contact"
-                    className="py-3 text-dm tracking-wide px-[0.9rem] bg-primary rounded-[40px] w-full font-bold items-center flex justify-center"
-                    initial={{ scale: 1 }}
-                    whileHover={{ scale: 1.05 }}
-                  >
-                    Schedule Today!
-                  </motion.a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-col flex-1 relative w-[90%] min-w-[400px] max-w-[475px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
-            <div
-              className="relative m-2 bg-center bg-no-repeat bg-cover h-[200px] lg:h-[250px] rounded-2xl border-2 border-black"
-              style={{
-                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a40931e-dd21-407c-dd03-86fd43b05200/public)`
-              }}
-            ></div>
-            <div className="w-full flex justify-between flex-1 px-3 flex-col items-center">
-              <div className="text-center">
-                <motion.a
-                  href="/services/interior"
-                  className="inline-flex mx-auto my-0 text-3xl font-bold no-underline"
-                  variants={serviceVariant}
-                  initial="initial"
-                  whileHover="hover"
-                  animate="initial"
-                >
-                  Full Interior Detail
-                  <motion.span className="flex items-center pl-2" variants={arrowVariant}>
-                    <ArrowRight color="white" />
-                  </motion.span>
-                </motion.a>
-                <motion.p className="text-center p-0 text-secondaryText font-semibold mx-auto max-w-[90%]">
-                  Our thorough interior cleaning, best for cars with staining, lots of dog hair/dirt, or ones that haven't been cleaned out in a long time.
-                </motion.p>
-              </div>
-
-              <motion.ul
-                className="list-none flex flex-col items-start text-xl font-normal w-full m-0 gap-4 pt-6 pb-4"
-                variants={{ initial: {}, show: { transition: { staggerChildren: 0.25 } } }}
-                whileInView="show"
-                initial="initial"
-                viewport={{ once: true }}
-              >
-                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
-                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">Blow Out & Vacuum all Dirt/Debris</p>
-                </motion.li>
-                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
-                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">Steam Extraction/Carpet Shampooing</p>
-                </motion.li>
-                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
-                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">Wash Out Door Jambs</p>
-                </motion.li>
-                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
-                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">All Leathers and Plastics Cleaned</p>
-                </motion.li>
-                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
-                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">Interior & Exterior Glass Cleaned</p>
-                </motion.li>
-              </motion.ul>
-
-              <div className="w-full">
-                <div className="flex w-full justify-around gap-4 py-4">
-                  <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
-                    <p className="text-white m-0">3-6+</p>
-                    <p className="text-secondaryText text-[14px]">hours</p>
-                  </div>
-                  <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
-                    <p className="text-secondaryText text-[14px]">Starting at</p>
-                    <p className="text-white m-0 text-2xl">${prices["2 Door"]["interior"]["interior"]}</p>
-                  </div>
-                </div>
-
-                <div className="flex w-full justify-around gap-4 flex-col lg:flex-row">
-                  <motion.a
-                    href="/services/interior"
-                    className="py-3 text-dm tracking-wide px-[0.9rem] bg-secondaryBtnClr rounded-[40px] text-center font-bold text-clip lg:w-1/2"
-                    initial={{ scale: 1 }}
-                    whileHover={{ scale: 1.05 }}
-                  >
-                    Learn More
-                  </motion.a>
-                  <motion.a
-                    href="/contact"
-                    className="py-3 text-dm tracking-wide px-[0.9rem] bg-primary rounded-[40px] w-full font-bold items-center flex justify-center"
-                    initial={{ scale: 1 }}
-                    whileHover={{ scale: 1.05 }}
-                  >
-                    Schedule Today!
-                  </motion.a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-col flex-1 relative w-[90%] min-w-[400px] max-w-[475px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
-            <div
-              className="relative m-2 bg-center bg-no-repeat bg-cover h-[200px] lg:h-[250px] rounded-2xl border-2 border-black"
-              style={{
-                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e073e12e-8f0c-4ae5-fa12-4abc9ab9db00/public)`
-              }}
-            ></div>
-            <div className="w-full flex justify-between flex-1 px-3 flex-col items-center">
-              <div className="text-center">
-                <motion.a
-                  href="/services/interior-spill"
-                  className="inline-flex mx-auto my-0 text-3xl font-bold no-underline"
-                  variants={serviceVariant}
-                  initial="initial"
-                  whileHover="hover"
-                  animate="initial"
-                >
-                  Full Interior + Spill Guard
-                  <motion.span className="flex items-center pl-2" variants={arrowVariant}>
-                    <ArrowRight color="white" />
-                  </motion.span>
-                </motion.a>
-                <motion.p className="text-center p-0 text-secondaryText font-semibold mx-auto max-w-[90%]">
-                  Our Full Interior Service topped with a interior ceramic spray on all surfaces, perfect for making any future cleaning a breeze.
-                </motion.p>
-              </div>
-
-              <motion.ul
-                className="list-none flex flex-col items-start text-xl font-normal w-full m-0 gap-4 pt-6 pb-4"
-                variants={{ initial: {}, show: { transition: { staggerChildren: 0.25 } } }}
-                whileInView="show"
-                initial="initial"
-                viewport={{ once: true }}
-              >
-                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
-                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">
-                    <span>EVERYTHING</span> From our Full Interior Service
-                  </p>
-                </motion.li>
-                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
-                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">All Leathers Conditioned</p>
-                </motion.li>
-                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
-                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">Interior Ceramic Coating Applied To All Surfaces (Even Carpets!)</p>
-                </motion.li>
-              </motion.ul>
-
-              <div className="w-full">
-                <div className="flex w-full justify-around gap-4 py-4">
-                  <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
-                    <p className="text-white m-0">4.5-7+</p>
-                    <p className="text-secondaryText text-[14px]">hours</p>
-                  </div>
-                  <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
-                    <p className="text-secondaryText text-[14px]">Starting at</p>
-                    <p className="text-white m-0 text-2xl">${prices["2 Door"]["interior"]["interiorspill"]}</p>
-                  </div>
-                </div>
-
-                <div className="flex w-full justify-around gap-4 flex-col lg:flex-row">
-                  <motion.a
-                    href="/services/interior-spill"
-                    className="py-3 text-dm tracking-wide px-[0.9rem] bg-secondaryBtnClr rounded-[40px] text-center font-bold text-clip lg:w-1/2"
-                    initial={{ scale: 1 }}
-                    whileHover={{ scale: 1.05 }}
-                  >
-                    Learn More
-                  </motion.a>
-                  <motion.a
-                    href="/contact"
-                    className="py-3 text-dm tracking-wide px-[0.9rem] bg-primary rounded-[40px] w-full font-bold items-center flex justify-center"
-                    initial={{ scale: 1 }}
-                    whileHover={{ scale: 1.05 }}
-                  >
-                    Schedule Today!
-                  </motion.a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <HomePageCard
+            title="Interior + Spill Guard"
+            imageUrl="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e073e12e-8f0c-4ae5-fa12-4abc9ab9db00/public"
+            description="Our Full Interior Service topped with a interior ceramic spray on all surfaces, perfect for making any future cleaning a breeze."
+            steps={[
+              "EVERYTHING From our Full Interior Service",
+              "All Leathers Conditioned",
+              "Interior Ceramic Coating Applied To All Surfaces (Even Carpets!)"
+            ]}
+            hours="4.5-7+"
+            linkUrl="/services/interior-spill"
+          />
         </div>
 
         <br className="extra-space" />
@@ -437,280 +186,51 @@ export default function Home() {
           </h3>
         </div>
         <div className="flex flex-col lg:flex-row flex-grow lg:justify-between lg:items-stretch lg:flex-wrap lg:w-[90%] lg:my-0 mx-auto justify-center items-center gap-24 mb-8">
-          <div className="flex flex-col flex-1 relative w-[90%] min-w-[400px] max-w-[475px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
-            <div
-              className="relative m-2 bg-center bg-no-repeat bg-cover h-[200px] lg:h-[250px] rounded-2xl border-2 border-black"
-              style={{
-                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b5859464-3c0e-4fcf-8332-17155eb86d00/public)`
-              }}
-            ></div>
-            <div className="w-full flex justify-between flex-1 px-3 flex-col items-center">
-              <div className="text-center">
-                <motion.a
-                  href="/services/exterior"
-                  className="inline-flex mx-auto my-0 text-3xl font-bold no-underline"
-                  variants={serviceVariant}
-                  initial="initial"
-                  whileHover="hover"
-                  animate="initial"
-                >
-                  Exterior Decon Wash
-                  <motion.span className="flex items-center pl-2" variants={arrowVariant}>
-                    <ArrowRight color="white" />
-                  </motion.span>
-                </motion.a>
-                <motion.p className="text-center p-0 text-secondaryText font-semibold mx-auto max-w-[90%]">
-                  The detailers car wash - one that goes far beyond what an auto car wash can do. Your wheels, tires, and even paint will be cleaner than ever!
-                </motion.p>
-              </div>
+          <HomePageCard
+            title="Exterior Decon Wash"
+            imageUrl="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b5859464-3c0e-4fcf-8332-17155eb86d00/public"
+            description="The detailers car wash - one that goes far beyond what an auto car wash can do. Your wheels, tires, and even paint will be cleaner than ever!"
+            steps={[
+              "Full Vehicle Strip Wash (to remove any embedded contaminants, tar, and sap)",
+              "Scrub & Wash the Tires, Wheels, Wheel Barrels, and Wells",
+              "Clean Out All Door Jambs and the Gas Door",
+              "Apply a Ceramic Protectant on All Surfaces (lasts 3-6 months)"
+            ]}
+            hours="4.5-7+"
+            linkUrl="/services/exterior"
+          />
 
-              <motion.ul
-                className="list-none flex flex-col items-start text-xl font-normal w-full m-0 gap-4 pt-6 pb-4"
-                variants={{ initial: {}, show: { transition: { staggerChildren: 0.25 } } }}
-                whileInView="show"
-                initial="initial"
-                viewport={{ once: true }}
-              >
-                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
-                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">Full Vehicle Strip Wash (to remove any embedded contaminants, tar, and sap)</p>
-                </motion.li>
-                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
-                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">Scrub & Wash the Tires, Wheels, Wheel Barrels, and Wells</p>
-                </motion.li>
-                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
-                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">Clean Out All Door Jambs and the Gas Door</p>
-                </motion.li>
-                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
-                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">Apply a Ceramic Protectant on All Surfaces (lasts 3-6 months)</p>
-                </motion.li>
-              </motion.ul>
+          <HomePageCard
+            title="Seal & Shine"
+            imageUrl="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/8b440e8d-d3ed-4363-2638-00f164188100/public"
+            description="Our exterior decon wash, plus a full vehicle polish, topped with a 1-year ceramic coating!"
+            steps={[
+              "EVERYTHING From our Exterior Decon Service",
+              "Light Polish To Remove Minor Swirls and Waterspots",
+              "Restore and Ceramic Coat All Trim",
+              "Coat the Windshield (You'll barely need to use your wipers anymore!)",
+              "Apply a 1-Year Ceramic Coating to the Paint"
+            ]}
+            hours="6-9"
+            linkUrl="/services/exterior-seal"
+          />
 
-              <div className="w-full">
-                <div className="flex w-full justify-around gap-4 py-4">
-                  <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
-                    <p className="text-white m-0">1-2.5</p>
-                    <p className="text-secondaryText text-[14px]">hours</p>
-                  </div>
-                  <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
-                    <p className="text-secondaryText text-[14px]">Starting at</p>
-                    <p className="text-white m-0 text-2xl">${prices["2 Door"]["exterior"]["exteriorwash"]}</p>
-                  </div>
-                </div>
-
-                <div className="flex w-full justify-around gap-4 flex-col lg:flex-row">
-                  <motion.a
-                    href="/services/exterior"
-                    className="py-3 text-dm tracking-wide px-[0.9rem] bg-secondaryBtnClr rounded-[40px] text-center font-bold text-clip lg:w-1/2"
-                    initial={{ scale: 1 }}
-                    whileHover={{ scale: 1.05 }}
-                  >
-                    Learn More
-                  </motion.a>
-                  <motion.a
-                    href="/contact"
-                    className="py-3 text-dm tracking-wide px-[0.9rem] bg-primary rounded-[40px] w-full font-bold items-center flex justify-center"
-                    initial={{ scale: 1 }}
-                    whileHover={{ scale: 1.05 }}
-                  >
-                    Schedule Today!
-                  </motion.a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-col flex-1 relative w-[90%] min-w-[400px] max-w-[475px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
-            <div
-              className="relative m-2 bg-center bg-no-repeat bg-cover h-[200px] lg:h-[250px] rounded-2xl border-2 border-black"
-              style={{
-                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/8b440e8d-d3ed-4363-2638-00f164188100/public)`
-              }}
-            ></div>
-            <div className="w-full flex justify-between flex-1 px-3 flex-col items-center">
-              <div className="text-center">
-                <motion.a
-                  href="/services/exterior-seal"
-                  className="inline-flex mx-auto my-0 text-3xl font-bold no-underline"
-                  variants={serviceVariant}
-                  initial="initial"
-                  whileHover="hover"
-                  animate="initial"
-                >
-                  Seal & Shine
-                  <motion.span className="flex items-center pl-2" variants={arrowVariant}>
-                    <ArrowRight color="white" />
-                  </motion.span>
-                </motion.a>
-                <motion.p className="text-center p-0 text-secondaryText font-semibold mx-auto max-w-[90%]">
-                  Our exterior decon wash, plus a full vehicle polish, topped with a 1-year ceramic coating!
-                </motion.p>
-              </div>
-
-              <motion.ul
-                className="list-none flex flex-col items-start text-xl font-normal w-full m-0 gap-4 pt-6 pb-4"
-                variants={{ initial: {}, show: { transition: { staggerChildren: 0.25 } } }}
-                whileInView="show"
-                initial="initial"
-                viewport={{ once: true }}
-              >
-                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
-                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">
-                    <span>EVERYTHING</span> From our Exterior Decon Service
-                  </p>
-                </motion.li>
-                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
-                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">Light Polish To Remove Minor Swirls and Waterspots</p>
-                </motion.li>
-                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
-                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">Restore and Ceramic Coat All Trim</p>
-                </motion.li>
-                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
-                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">Coat the Windshield (You'll barely need to use your wipers anymore!)</p>
-                </motion.li>
-                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
-                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">Apply a 1-Year Ceramic Coating to the Paint</p>
-                </motion.li>
-              </motion.ul>
-
-              <div className="w-full">
-                <div className="flex w-full justify-around gap-4 py-4">
-                  <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
-                    <p className="text-white m-0">6-9</p>
-                    <p className="text-secondaryText text-[14px]">hours</p>
-                  </div>
-                  <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
-                    <p className="text-secondaryText text-[14px]">Starting at</p>
-                    <p className="text-white m-0 text-2xl">${prices["2 Door"]["exterior"]["exteriorseal"]}</p>
-                  </div>
-                </div>
-
-                <div className="flex w-full justify-around gap-4 flex-col lg:flex-row">
-                  <motion.a
-                    href="/services/exterior-seal"
-                    className="py-3 text-dm tracking-wide px-[0.9rem] bg-secondaryBtnClr rounded-[40px] text-center font-bold text-clip lg:w-1/2"
-                    initial={{ scale: 1 }}
-                    whileHover={{ scale: 1.05 }}
-                  >
-                    Learn More
-                  </motion.a>
-                  <motion.a
-                    href="/contact"
-                    className="py-3 text-dm tracking-wide px-[0.9rem] bg-primary rounded-[40px] w-full font-bold items-center flex justify-center"
-                    initial={{ scale: 1 }}
-                    whileHover={{ scale: 1.05 }}
-                  >
-                    Schedule Today!
-                  </motion.a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-col flex-1 relative w-[90%] min-w-[400px] max-w-[475px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
-            <div
-              className="relative m-2 bg-center bg-no-repeat bg-cover h-[200px] lg:h-[250px] rounded-2xl border-2 border-black"
-              style={{
-                backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4ce4f977-365c-4211-a7f9-68c5ec6d7a00/public)`
-              }}
-            ></div>
-            <div className="w-full flex justify-between flex-1 px-3 flex-col items-center">
-              <div className="text-center">
-                <motion.a
-                  href="/services/exterior-correct"
-                  className="inline-flex mx-auto my-0 text-3xl font-bold no-underline"
-                  variants={serviceVariant}
-                  initial="initial"
-                  whileHover="hover"
-                  animate="initial"
-                >
-                  Correct & Protect
-                  <motion.span className="flex items-center pl-2" variants={arrowVariant}>
-                    <ArrowRight color="white" />
-                  </motion.span>
-                </motion.a>
-                <motion.p className="text-center p-0 text-secondaryText font-semibold mx-auto max-w-[90%]">
-                  Our top of the line exterior package. A 2-stage paint correction with with a 3-year ceramic coating (Click Learn More to see why we think 3
-                  years is ideal over 5-10 year coatings).
-                </motion.p>
-              </div>
-
-              <motion.ul
-                className="list-none flex flex-col items-start text-xl font-normal w-full m-0 gap-4 pt-6 pb-4"
-                variants={{ initial: {}, show: { transition: { staggerChildren: 0.25 } } }}
-                whileInView="show"
-                initial="initial"
-                viewport={{ once: true }}
-              >
-                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
-                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">
-                    <span>EVERYTHING</span> From our Exterior Decon Service
-                  </p>
-                </motion.li>
-                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
-                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">Our Full Paint Correction Process (Removes 80%-90% of scratches)</p>
-                </motion.li>
-                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
-                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">Restore and Ceramic Coat All Trim</p>
-                </motion.li>
-                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
-                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">Coat the Windshield (You'll barely need to use your wipers anymore!)</p>
-                </motion.li>
-                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
-                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">Ceramic Coat All Wheel Faces</p>
-                </motion.li>
-                <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
-                  <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
-                  <p className="ml-2">Apply a 3-Year Ceramic Coating to the Paint</p>
-                </motion.li>
-              </motion.ul>
-
-              <div className="w-full">
-                <div className="flex w-full justify-around gap-4 py-4">
-                  <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
-                    <p className="text-white m-0">10-15+</p>
-                    <p className="text-secondaryText text-[14px]">hours</p>
-                  </div>
-                  <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
-                    <p className="text-secondaryText text-[14px]">Starting at</p>
-                    <p className="text-white m-0 text-2xl">${prices["2 Door"]["exterior"]["exteriorcorrect"]}</p>
-                  </div>
-                </div>
-
-                <div className="flex w-full justify-around gap-4 flex-col lg:flex-row">
-                  <motion.a
-                    href="/services/exterior-correct"
-                    className="py-3 text-dm tracking-wide px-[0.9rem] bg-secondaryBtnClr rounded-[40px] text-center font-bold text-clip lg:w-1/2"
-                    initial={{ scale: 1 }}
-                    whileHover={{ scale: 1.05 }}
-                  >
-                    Learn More
-                  </motion.a>
-                  <motion.a
-                    href="/contact"
-                    className="py-3 text-dm tracking-wide px-[0.9rem] bg-primary rounded-[40px] w-full font-bold items-center flex justify-center"
-                    initial={{ scale: 1 }}
-                    whileHover={{ scale: 1.05 }}
-                  >
-                    Schedule Today!
-                  </motion.a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <HomePageCard
+            title="Correct & Protect"
+            imageUrl="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4ce4f977-365c-4211-a7f9-68c5ec6d7a00/public"
+            description="Our top of the line exterior package. A 2-stage paint correction with with a 3-year ceramic coating (Click Learn More to see why we think 3
+                  years is ideal over 5-10 year coatings)."
+            steps={[
+              "EVERYTHING From our Exterior Decon Service",
+              "Our Full Paint Correction Process (Removes 80%-90% of scratches)",
+              "Restore and Ceramic Coat All Trim",
+              "Coat the Windshield (You'll barely need to use your wipers anymore!)",
+              "Ceramic Coat All Wheel Faces",
+              "Apply a 3-Year Ceramic Coating to the Paint"
+            ]}
+            hours="10-15+"
+            linkUrl="/services/exterior-correct"
+          />
         </div>
 
         <br className="extra-space" />
