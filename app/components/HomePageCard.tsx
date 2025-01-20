@@ -50,7 +50,6 @@ export default function HomePageCard({ title, imageUrl, description, steps, hour
   const serviceName = match2 ? match2[1] : null;
 
   const specificService = serviceType + serviceName;
-  console.log(specificService, linkUrl);
 
   return (
     <div className="flex flex-col flex-1 relative w-[90%] min-w-[400px] max-w-[475px] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
