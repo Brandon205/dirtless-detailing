@@ -2,6 +2,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { topBtnVariant } from "../../utils/animationVariations";
 import { motion, useTransform, useScroll } from "framer-motion";
+import Image from "next/image";
 import FaqItem from "../components/FaqItem";
 import Lottie from "lottie-react";
 import starJSON from "../../public/assets/icons/starJSON.json";
@@ -135,12 +136,9 @@ export default function About() {
   return (
     <div className="App bg-contact">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
-      <div
-        className="cover"
-        style={{
-          backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a7b4af9c-97db-42dc-3b72-452a6221aa00/cover')`
-        }}
-      ></div>
+      <div className="cover">
+        <Image src="/assets/images/correction/teslafoam.jpg" alt="Dirt-Less Detailing" fill objectFit="cover" />
+      </div>
       <div className="servicepage-header">
         <div style={{ alignItems: "center" }}>
           <h1>
@@ -164,60 +162,22 @@ export default function About() {
         <div className="about-explain">
           {smallScreen ? (
             <div className="about-image-container">
-              <div
-                className="about-image"
-                style={{
-                  backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3a1a1e74-854b-4aa9-ae8e-06816ec80200/public')`
-                }}
-              >
-                <img
-                  style={{ visibility: "hidden" }}
-                  alt="moldy biohazard van before and after"
+              <div className="about-image w-full max-w-[400px] h-[225px]">
+                <Image
                   src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3a1a1e74-854b-4aa9-ae8e-06816ec80200/public"
+                  alt="Clean Ford GT in a garage"
+                  fill
+                  objectFit="cover"
                 />
               </div>
-              <div
-                className="about-image"
-                style={{
-                  backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b5859464-3c0e-4fcf-8332-17155eb86d00/public')`
-                }}
-              >
-                <img
-                  style={{ visibility: "hidden" }}
-                  alt="Drivers side of Silver Dodge Ram"
-                  src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b5859464-3c0e-4fcf-8332-17155eb86d00/public"
-                />
+              <div className="about-image w-full max-w-[400px] h-[225px]">
+                <Image src="/assets/images/showcase/worktruckGriots.jpg" alt="Our worktruck in front of Griots Garage in Tacoma" fill objectFit="cover" />
               </div>
             </div>
           ) : (
             <div className="about-image-container">
-              {/* <motion.div
-                className="about-image"
-                style={{
-                  backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3a1a1e74-854b-4aa9-ae8e-06816ec80200/public')`,
-                  x: smallScreen ? "" : negativeXMovement,
-                  y: smallScreen ? "" : negativeYMovement,
-                }}
-              >
-                <img
-                  style={{ visibility: "hidden" }}
-                  alt="moldy biohazard van before and after"
-                  src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3a1a1e74-854b-4aa9-ae8e-06816ec80200/public"
-                />
-              </motion.div> */}
-              <motion.div
-                className="about-image"
-                style={{
-                  backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/19851827-a8f8-4045-11cf-a6bdef3c4100/public')`,
-                  x: smallScreen ? "" : xMovement,
-                  y: smallScreen ? "" : yMovement
-                }}
-              >
-                <img
-                  style={{ visibility: "hidden" }}
-                  alt="Drivers side of Silver Dodge Ram"
-                  src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/19851827-a8f8-4045-11cf-a6bdef3c4100/public"
-                />
+              <motion.div style={{ x: smallScreen ? "" : xMovement, y: smallScreen ? "" : yMovement }} className="about-image w-[450px] h-[300px]">
+                <Image src="/assets/images/exterior/fordGTBack.jpg" alt="Clean Ford GT in a garage" className="rounded-lg" fill objectFit="cover" />
               </motion.div>
             </div>
           )}
@@ -314,7 +274,7 @@ export default function About() {
           </div>
         </div>
 
-        <div
+        {/* <div
           className="about-large-image"
           style={{
             backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6cc30f3c-c722-4674-b2d6-a4736a57bc00/cover')`
@@ -325,6 +285,9 @@ export default function About() {
             alt="Me on the right of polished show truck"
             src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6cc30f3c-c722-4674-b2d6-a4736a57bc00/cover"
           />
+        </div> */}
+        <div className="about-image w-full max-w-[800px] h-[375px] mx-auto">
+          <Image src="/assets/images/showcase/porscheFront.jpg" alt="Dirt-Less Detailing Owner" fill objectFit="cover" />
         </div>
         <h3 style={{ fontSize: "2.5em", margin: 0, textAlign: smallScreen ? "left" : "center" }}>Dirt-Less Detailing</h3>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }} className="text-left">

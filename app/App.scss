@@ -2956,6 +2956,7 @@ footer {
 }
 
 .about-image {
+  position: relative;
   border-radius: 1rem;
   background-position: center;
   background-repeat: no-repeat;
@@ -2963,7 +2964,7 @@ footer {
 }
 
 .about-review {
-  padding: 1rem 2rem;
+  padding: 1rem;
   margin: 0;
 }
 

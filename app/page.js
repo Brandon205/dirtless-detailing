@@ -88,13 +88,13 @@ export default function Home() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
       <HeroSlider
         images={[
-          "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover",
-          "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/19851827-a8f8-4045-11cf-a6bdef3c4100/cover",
-          "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/16add6ea-28d3-43ab-dc07-584e09e47500/cover",
-          "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3a1a1e74-854b-4aa9-ae8e-06816ec80200/cover",
-          "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ae30d18b-03c1-4632-e50d-3e047b633400/cover",
-          "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c259c052-b75c-4e1f-f467-4010d7182d00/cover",
-          "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/15bf1809-0cee-4975-95ed-808adcf12100/cover"
+          "/assets/images/exterior/range-rover-left.jpg",
+          "/assets/images/correction/ceramicBeads1.jpg",
+          "/assets/images/exterior/3doorFordRight.jpg",
+          "/assets/images/correction/wiping.jpg",
+          "/assets/images/exterior/fordGTBack.jpg",
+          "/assets/images/interior/driverNewLexus.jpg",
+          "/assets/images/exterior/archCoTruck.jpg"
         ]}
       >
         <header className="w-screen flex flex-col h-[90vh] pt-28 z-50 items-center lg:items-start lg:pl-20 xl:gap-3 text-sm xl:text-lg justify-center">

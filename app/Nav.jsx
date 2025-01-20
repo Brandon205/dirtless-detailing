@@ -2,6 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Nav() {
   const [nav, setNav] = useState("none");
@@ -78,13 +79,7 @@ export default function Nav() {
     <header className="App-header">
       <nav id="nav" ref={navBar}>
         <a style={{ display: "flex", justifyContent: "flex-start" }} className="nav-logo" href="/" aria-label="Dirt-Less Detailing Logo">
-          <div
-            className="header-cert logo-screen"
-            style={{
-              backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0a945e76-f4c0-4e29-ef16-463490d0db00/public')`,
-              height: 105 + "px"
-            }}
-          ></div>
+          <Image src="/assets/images/showcase/homepage-logo.png" alt="Dirt-Less Detailing Logo" width={150} height={108} />
         </a>
         {nav === "none" ? (
           <img src="../assets/icons/menuBars.png" alt="menu bars" className="menu-bars" onClick={() => setNav("block")} />
