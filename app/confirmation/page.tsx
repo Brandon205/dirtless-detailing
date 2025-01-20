@@ -7,7 +7,7 @@ export default function Confirmation() {
   return (
     <div className="confirmation-container">
       <Image
-        src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f6bd7bf5-5164-4576-5687-037fc7095000/cover"
+        src="/assets/images/exterior/range-rover-right.jpg"
         alt="range rover on the right"
         fill
         style={{ objectFit: "cover", opacity: "25%", zIndex: -5 }}
