@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import PricingComponent from "../../../utils/PricingComponent";
 import HeaderComponent from "../../components/HeaderComponent";
-import ImageSlider from "../../../utils/ImageSlider";
+import BeforeAfterSlider from "../../components/ImageSlider";
 import {
   previewParentVariation,
   imgVariation1,
@@ -207,12 +207,13 @@ export default function ExteriorSeal() {
             <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
             <h3 className="pricing__heading">Clean, Shiny, and Protected.</h3>
             <p className="pricing__subtext">With light scratches removed and a year of protection applied your car will shine like never before!</p>
-            <ImageSlider
-              beforeUrlId="4d98c1bc-645c-46fa-2232-d1f735bb2300"
-              afterUrlId="b814f739-3846-4796-3093-c34675a32c00"
-              beforeOffset={0}
-              afterOffset={0}
-            />
+            <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
+              <BeforeAfterSlider
+                beforeImage="/assets/images/before&afters/fordExteriorBefore.jpg"
+                afterImage="/assets/images/before&afters/fordExteriorAfter.jpg"
+                aspectRatio="16/9"
+              />
+            </div>
 
             <div className="preview-container">
               <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/seal" className="gallery-preview">

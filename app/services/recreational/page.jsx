@@ -1,10 +1,12 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import HeaderComponent from "../../components/HeaderComponent";
+import BeforeAfterSlider from "../../components/ImageSlider";
 import FaqItem from "../../components/FaqItem";
 import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import { containerVariant, oddVariant, evenVariant } from "../../../utils/animationVariations";
+import Image from "next/image";
 const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
   ssr: false
 });
@@ -51,11 +53,17 @@ const faqItems = [
   }
 ];
 
+// const imagesArr = [
+//   "78e2196e-0484-4ca3-769b-deff51ba1000", // Jet Skis
+//   "37508a6b-fed4-42c2-1bc8-cbb422834100", // Boat
+//   "6848fcc1-eaa2-4c67-7e97-d9ea70b4aa00", // RV
+//   "8fd0fff7-3594-4f13-33bd-175dd5546f00" // ORV
+// ];
 const imagesArr = [
-  "78e2196e-0484-4ca3-769b-deff51ba1000", // Jet Skis
-  "37508a6b-fed4-42c2-1bc8-cbb422834100", // Boat
-  "6848fcc1-eaa2-4c67-7e97-d9ea70b4aa00", // RV
-  "8fd0fff7-3594-4f13-33bd-175dd5546f00" // ORV
+  "/assets/images/showcase/jetskisRPortrait.jpeg", // Jet Skis
+  "/assets/images/showcase/unsplash-boat-interior.jpg", // Boat
+  "/assets/images/sealshine/rv-finished.jpg", // RV
+  "/assets/images/exterior/sidexside.png" // ORV
 ];
 
 const serviceSteps = {
@@ -326,14 +334,27 @@ export default function Recreational() {
             : "Leave it to us to remove the nastiness that builds up over the winter."}
         </p>
 
-        <div className="slider-container w-full mx-auto rounded-3xl">
-          <div
-            style={{
-              backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/${imagesArr[imageIndex]}/public')`
-            }}
-            className="slider-img"
-          ></div>
-        </div>
+        {currService === "ORV Detail" ? (
+          <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
+            <BeforeAfterSlider
+              beforeImage="/assets/images/before&afters/sideBySideBefore.jpg"
+              afterImage="/assets/images/before&afters/sideBySideAfter.jpg"
+              aspectRatio="16/9"
+            />
+          </div>
+        ) : currService === "RV/Trailer Exterior Detail" ? (
+          <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
+            <BeforeAfterSlider
+              beforeImage="/assets/images/before&afters/winnebagoB.jpg"
+              afterImage="/assets/images/before&afters/winnebagoA.jpg"
+              aspectRatio="16/9"
+            />
+          </div>
+        ) : (
+          <div className="slider-container w-full mx-auto">
+            <Image src={imagesArr[imageIndex]} alt="Boat Detailing" fill className="object-cover rounded-3xl" />
+          </div>
+        )}
 
         <h3 className="text-3xl lg:text-4xl text-white pb-8 py-16">Frequently Asked Questions</h3>
         <div className="faq-container text-white w-11/12 max-w-screen-xl mx-auto">
@@ -375,10 +396,9 @@ function BoatPricing(props) {
 
   return (
     <div className="pricing__container">
-      <div
-        className="pricing__img"
-        style={{ backgroundImage: `url(https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/${imagesArr[props.imageIndex]}/cover)` }}
-      ></div>
+      <div className="pricing__img">
+        <Image src={imagesArr[props.imageIndex]} alt="Dirt-Less Detailing sizing" fill className="object-cover rounded-3xl" />
+      </div>
       {props.currService === "ORV Detail" ? (
         ""
       ) : (

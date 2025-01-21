@@ -1,6 +1,6 @@
 "use client";
 import PricingComponent from "../../../utils/PricingComponent";
-import ImageSlider from "../../../utils/ImageSlider";
+import BeforeAfterSlider from "../../components/ImageSlider";
 import HeaderComponent from "../../components/HeaderComponent";
 import {
   previewParentVariation,
@@ -175,12 +175,13 @@ export default function FullIntEx() {
             <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
             <h3 className="pricing__heading">Fresh, Clean, and Stunning Results.</h3>
             <p className="pricing__subtext">Once we are done you won't want to see your car dirty ever again!</p>
-            <ImageSlider
-              beforeUrlId="70e54f6b-a9f8-48aa-a9af-893776082400"
-              afterUrlId="907d2e8b-5d24-40bf-387e-90be139c2d00"
-              beforeOffset={0}
-              afterOffset={0}
-            />
+            <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
+              <BeforeAfterSlider
+                beforeImage="/assets/images/before&afters/nastykiapassfloormatB.jpg"
+                afterImage="/assets/images/before&afters/nastykiapassfloormatA.jpg"
+                aspectRatio="16/9"
+              />
+            </div>
 
             <div className="preview-container">
               <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/interior" className="gallery-preview">

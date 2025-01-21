@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import PricingComponent from "../../../utils/PricingComponent";
-import ImageSlider from "../../../utils/ImageSlider";
+import BeforeAfterSlider from "../../components/ImageSlider";
 import {
   previewParentVariation,
   imgVariation1,
@@ -275,12 +275,13 @@ export default function ExteriorCorrect() {
             <p className="pricing__subtext">
               Not just a complete exterior refresh, but now your vehicle has protection against the elements that Washington throws at us.
             </p>
-            <ImageSlider
-              beforeUrlId="d2eabed6-d867-43e8-f60e-d9d95a983600"
-              afterUrlId="2b933f30-bbff-4f91-8b88-1c83f75a4500"
-              beforeOffset={0}
-              afterOffset={0}
-            />
+            <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
+              <BeforeAfterSlider
+                beforeImage="/assets/images/before&afters/scratchesBefore.jpg"
+                afterImage="/assets/images/before&afters/scratchesAfter.jpg"
+                aspectRatio="16/9"
+              />
+            </div>
 
             <div className="preview-container">
               <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/correct" className="gallery-preview">

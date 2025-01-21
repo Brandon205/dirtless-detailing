@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import PricingComponent from "../../../utils/PricingComponent";
 import {
   previewParentVariation,
@@ -11,6 +11,7 @@ import {
   oddVariant,
   evenVariant
 } from "../../../utils/animationVariations";
+import BeforeAfterSlider from "../../components/ImageSlider";
 import { motion } from "framer-motion";
 import { SquareArrowOutUpRight } from "lucide-react";
 import HeaderComponent from "../../components/HeaderComponent";
@@ -37,8 +38,6 @@ const jsonld = {
 };
 
 export default function InteriorSpill() {
-  const [slide, setSlide] = useState(50);
-
   return (
     <section className="service-content-container">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
@@ -168,33 +167,12 @@ export default function InteriorSpill() {
             <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
             <h3 className="pricing__heading">Your car like you've never seen it before.</h3>
             <p className="pricing__subtext">Our interior coating also brings out more color in the plastics and leather without being slippery to the touch.</p>
-            <div style={{ display: "grid", marginBottom: "10vh" }} className="place-center">
-              <div className="slider-container">
-                <div
-                  style={{
-                    backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/907d2e8b-5d24-40bf-387e-90be139c2d00/public')`
-                  }}
-                  className="slider-img"
-                ></div>
-                <div
-                  style={{
-                    width: slide + "%",
-                    backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/70e54f6b-a9f8-48aa-a9af-893776082400/public')`
-                  }}
-                  className="slider-img foreground"
-                ></div>
-                <input
-                  type="range"
-                  min="1"
-                  max="100"
-                  value={slide}
-                  onChange={(e) => setSlide(Number(e.target.value))}
-                  className="slider-bar"
-                  name="slider"
-                  id="slider"
-                />
-                <div style={{ left: slide - 4 + "%" }} className="slider-button"></div>
-              </div>
+            <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto mb-24">
+              <BeforeAfterSlider
+                beforeImage="/assets/images/before&afters/nastykiadriversB.jpg"
+                afterImage="/assets/images/before&afters/nastykiadriverA.jpg"
+                aspectRatio="16/9"
+              />
             </div>
 
             <div className="preview-container">

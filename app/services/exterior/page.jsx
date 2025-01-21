@@ -1,6 +1,7 @@
 "use client";
 import PricingComponent from "../../../utils/PricingComponent";
 import HeaderComponent from "../../components/HeaderComponent";
+import BeforeAfterSlider from "../../components/ImageSlider";
 import {
   previewParentVariation,
   imgVariation1,
@@ -13,7 +14,6 @@ import {
 } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
 import { SquareArrowOutUpRight } from "lucide-react";
-import ImageSlider from "../../../utils/ImageSlider";
 
 const jsonld = {
   "@context": "https://schema.org/",
@@ -189,12 +189,13 @@ export default function Exterior() {
             <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
             <h3 className="pricing__heading">What a car wash should be.</h3>
             <p className="pricing__subtext">Your car, washed, without the unnecessary scratching or missed corners.</p>
-            <ImageSlider
-              beforeUrlId={"3fce3784-7776-4d2e-c789-8ad7b61bc200"}
-              afterUrlId={"92366fb8-85e9-4d24-c41e-f5e48585d500"}
-              beforeOffset={0}
-              afterOffset={0}
-            />
+            <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
+              <BeforeAfterSlider
+                beforeImage="/assets/images/before&afters/teslawashBFR.jpg"
+                afterImage="/assets/images/before&afters/teslawashAFR.jpg"
+                aspectRatio="16/9"
+              />
+            </div>
 
             <div className="preview-container">
               <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/exterior" className="gallery-preview">
