@@ -44,10 +44,10 @@ export default function ExteriorSeal() {
     <section className="service-content-container">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
       <HeaderComponent
-        imageUrl="assets/images/correction/teslaclean.jpg"
+        imageUrl="/assets/images/correction/teslaclean.jpg"
         title="Exterior Seal and Shine"
         description="Our tried and true wash with a corrective polish, and even stronger Ceramic Spray coating."
-        secondaryUrl="assets/images/before&afters/WashBADiagonal.png"
+        secondaryUrl="/assets/images/before&afters/WashBADiagonal.png"
       />
 
       <div className="main-content-container">
@@ -218,27 +218,27 @@ export default function ExteriorSeal() {
               <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/seal" className="gallery-preview">
                 <motion.img
                   variants={imgVariation1}
-                  src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/807bb532-5e08-48ef-61d7-7b3392f2ae00/public"
-                  alt="preview"
-                  className="preview-img"
+                  src="/assets/images/sealshine/sprinter6.jpg"
+                  alt="Sprinter van after our Seal and Shine service"
+                  className="w-full h-[100px] object-cover rounded-xl"
                 />
                 <motion.img
                   variants={imgVariation2}
-                  src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ff2d836c-23d3-43fe-4f5c-844e5fb2a100/public"
-                  alt="preview"
-                  className="preview-img"
+                  src="/assets/images/sealshine/audiSeal3.jpg"
+                  alt="Audi S4 with a fresh 1 year coating and polish"
+                  className="w-full h-[100px] object-cover rounded-xl"
                 />
                 <motion.img
                   variants={imgVariation3}
-                  src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/ef4953cd-466a-4752-9d87-12ddba64d700/public"
-                  alt="preview"
-                  className="preview-img"
+                  src="/assets/images/sealshine/beamer1.jpg"
+                  alt="BMW on a foggy morning"
+                  className="w-full h-[100px] object-cover rounded-xl"
                 />
                 <motion.img
                   variants={imgVariation4}
-                  src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/42bf45ce-c76d-4614-817b-7f4b5a55b200/public"
-                  alt="preview"
-                  className="preview-img"
+                  src="/assets/images/sealshine/porscheRearL.jpg"
+                  alt="Porsche from the read left"
+                  className="w-full h-[100px] object-cover rounded-xl"
                 />
               </motion.a>
               <div className="preview-content">

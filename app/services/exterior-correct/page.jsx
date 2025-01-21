@@ -15,9 +15,9 @@ import {
 import { motion } from "framer-motion";
 import HeaderComponent from "../../components/HeaderComponent";
 import FaqItem from "../../components/FaqItem";
-import Zoom from "react-medium-image-zoom";
 import { SquareArrowOutUpRight } from "lucide-react";
 import "react-medium-image-zoom/dist/styles.css";
+import ImageGallery from "../../components/ImageGallery";
 
 const faqItems = [
   {
@@ -32,15 +32,7 @@ const faqItems = [
           <li>Self cleaning properties: Ceramic coatings easily bead water, dirt gets caught in these beads and will fly off while you're driving!</li>
           <li>Easier to wash and dry. Dirt will wash off with less effort, you can also blow dry 90% of your vehicle because of the water beading.</li>
         </ul>
-        <Zoom>
-          <div
-            className="faq-image"
-            role="img"
-            style={{
-              backgroundImage: `/assets/images/showcase/iglcircle.jpg`
-            }}
-          ></div>
-        </Zoom>
+        <ImageGallery images={["/assets/images/showcase/iglcircle.jpg"]} />
       </div>
     )
   },
@@ -133,10 +125,10 @@ export default function ExteriorCorrect() {
     <section className="service-content-container">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
       <HeaderComponent
-        imageUrl="assets/images/correction/genesis3.jpeg"
+        imageUrl="/assets/images/correction/genesis3.jpeg"
         title="Exterior Correct and Protect"
         description="The Ultimate Exterior Detail & Protection for your vehicle. Our most extensive package with in-depth Paint Correction and a Lifetime Ceramic Coating."
-        secondaryUrl="assets/images/correction/ferrariBadge.jpg"
+        secondaryUrl="/assets/images/correction/ferrariBadge.jpg"
       />
 
       <div className="main-content-container">
@@ -294,27 +286,27 @@ export default function ExteriorCorrect() {
               <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/correct" className="gallery-preview">
                 <motion.img
                   variants={imgVariation1}
-                  src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/38857e90-6d35-4abe-b7de-d3934d621800/public"
-                  alt="preview"
-                  className="preview-img"
+                  src="/assets/images/correction/goodguystruck.jpg"
+                  alt="Truck we polished that won at the Good Guys car show"
+                  className="w-full h-[100px] object-cover rounded-xl"
                 />
                 <motion.img
                   variants={imgVariation2}
-                  src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/a7cc8a20-819f-4ef2-8b36-d41dc99bc200/public"
-                  alt="preview"
-                  className="preview-img"
+                  src="/assets/images/correction/ceramicBeads1.jpg"
+                  alt="Water beading on ceramic coated glass"
+                  className="w-full h-[100px] object-cover rounded-xl"
                 />
                 <motion.img
                   variants={imgVariation3}
-                  src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/43a02c30-4982-435d-7f91-6d81fd11a000/public"
-                  alt="preview"
-                  className="preview-img"
+                  src="/assets/images/correction/waterbeading1.jpg"
+                  alt="Water beading on a ceramic coated car"
+                  className="w-full h-[100px] object-cover rounded-xl"
                 />
                 <motion.img
                   variants={imgVariation4}
-                  src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2bd5c3dd-6677-466a-e348-8495945c4700/public"
-                  alt="preview"
-                  className="preview-img"
+                  src="/assets/images/correction/genesis2.jpeg"
+                  alt="Infinity Genesis with Ceramic Coating"
+                  className="w-full h-[100px] object-cover rounded-xl"
                 />
               </motion.a>
               <div className="preview-content">

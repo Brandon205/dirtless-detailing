@@ -182,40 +182,31 @@ export default function FullIntEx() {
               afterOffset={0}
             />
 
-            {/* <iframe
-              style={{ width: "80%", height: "700px" }}
-              src="https://www.youtube.com/embed/W5HOGIvRppI"
-              title="Red Genesis SUV Transformation | Revitalizing Brilliance with Professional Detailing"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            ></iframe> */}
-
             <div className="preview-container">
               <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/interior" className="gallery-preview">
                 <motion.img
                   variants={imgVariation1}
-                  src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0e2bc8e9-28e8-4888-200b-86674d466600/public"
-                  alt="preview"
-                  className="preview-img"
+                  src="/assets/images/interior/door1.jpg"
+                  alt="Clean door panel of a car"
+                  className="w-full h-[100px] object-cover rounded-xl"
                 />
                 <motion.img
                   variants={imgVariation2}
-                  src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/9b9c4f43-bef5-4516-78cf-9fa978743100/public"
-                  alt="preview"
-                  className="preview-img"
+                  src="/assets/images/interior/driver5.jpg"
+                  alt="Clean Mazda interior from the drivers side"
+                  className="w-full h-[100px] object-cover rounded-xl"
                 />
                 <motion.img
                   variants={imgVariation3}
-                  src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e7d160ba-aac9-46f5-985d-1a9dc5d0d600/public"
-                  alt="preview"
-                  className="preview-img"
+                  src="/assets/images/interior/doorRenegade.jpg"
+                  alt="The door panel of a cleaned jeep renegade"
+                  className="w-full h-[100px] object-cover rounded-xl"
                 />
                 <motion.img
                   variants={imgVariation4}
-                  src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b1d716fa-888e-48a1-148d-e2cd896b8500/public"
-                  alt="preview"
-                  className="preview-img"
+                  src="/assets/images/interior/driver16.jpg"
+                  alt="View inside the drivers side of a cleaned jeep renegade"
+                  className="w-full h-[100px] object-cover rounded-xl"
                 />
               </motion.a>
               <div className="preview-content">

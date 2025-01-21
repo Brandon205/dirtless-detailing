@@ -43,10 +43,10 @@ export default function InteriorSpill() {
     <section className="service-content-container">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
       <HeaderComponent
-        imageUrl="assets/images/interior/accO.jpg"
+        imageUrl="/assets/images/interior/accO.jpg"
         title="Full Interior + Spill Guard"
         description="Our highly rated interior service topped with an interior ceramic coating."
-        secondaryUrl="assets/images/interior/center3.jpg"
+        secondaryUrl="/assets/images/interior/center3.jpg"
       />
 
       <div className="main-content-container">
@@ -201,27 +201,27 @@ export default function InteriorSpill() {
               <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/interior" className="gallery-preview">
                 <motion.img
                   variants={imgVariation1}
-                  src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/f6170666-70f6-487c-4db8-26125453df00/public"
-                  alt="preview"
-                  className="preview-img"
+                  src="/assets/images/interior/door1.jpg"
+                  alt="Clean door panel of a car"
+                  className="w-full h-[100px] object-cover rounded-xl"
                 />
                 <motion.img
                   variants={imgVariation2}
-                  src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5cba81f3-c606-430c-4d2b-4b90409ed600/public"
-                  alt="preview"
-                  className="preview-img"
+                  src="/assets/images/interior/driver5.jpg"
+                  alt="Clean Mazda interior from the drivers side"
+                  className="w-full h-[100px] object-cover rounded-xl"
                 />
                 <motion.img
                   variants={imgVariation3}
-                  src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a196c77-cb1a-42f9-479b-8fdbe3c14500/public"
-                  alt="preview"
-                  className="preview-img"
+                  src="/assets/images/interior/doorRenegade.jpg"
+                  alt="The door panel of a cleaned jeep renegade"
+                  className="w-full h-[100px] object-cover rounded-xl"
                 />
                 <motion.img
                   variants={imgVariation4}
-                  src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/878bae8f-0568-46c7-ba04-9a1025e24300/public"
-                  alt="preview"
-                  className="preview-img"
+                  src="/assets/images/interior/driver16.jpg"
+                  alt="View inside the drivers side of a cleaned jeep renegade"
+                  className="w-full h-[100px] object-cover rounded-xl"
                 />
               </motion.a>
               <div className="preview-content">

@@ -200,27 +200,27 @@ export default function Exterior() {
               <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/exterior" className="gallery-preview">
                 <motion.img
                   variants={imgVariation1}
-                  src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/5ccc928a-c036-489b-fec8-e674a9d0ae00/public"
-                  alt="preview"
-                  className="preview-img"
+                  src="/assets/images/exterior/amg.jpg"
+                  alt="Mercedes AMG with a clean exterior"
+                  className="w-full h-[100px] object-cover rounded-xl"
                 />
                 <motion.img
                   variants={imgVariation2}
-                  src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/c274c919-595c-4283-2d10-c5a47e569700/public"
-                  alt="preview"
-                  className="preview-img"
+                  src="/assets/images/exterior/ironwheel1.jpg"
+                  alt="Purple runoff from iron decontamination on a wheel"
+                  className="w-full h-[100px] object-cover rounded-xl"
                 />
                 <motion.img
                   variants={imgVariation3}
-                  src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6649be49-1ef8-475a-6610-695cc8619a00/public"
-                  alt="preview"
-                  className="preview-img"
+                  src="/assets/images/exterior/sideofsilverram.jpg"
+                  alt="Side view of a washed silver dodge ram"
+                  className="w-full h-[100px] object-cover rounded-xl"
                 />
                 <motion.img
                   variants={imgVariation4}
-                  src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3a1a1e74-854b-4aa9-ae8e-06816ec80200/public"
-                  alt="preview"
-                  className="preview-img"
+                  src="/assets/images/exterior/engine5c77.jpg"
+                  alt="Washed engine bay of a BMW"
+                  className="w-full h-[100px] object-cover rounded-xl"
                 />
               </motion.a>
               <div className="preview-content">

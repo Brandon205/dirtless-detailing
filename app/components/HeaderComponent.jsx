@@ -7,7 +7,7 @@ export default function HeaderComponent({ imageUrl, title, description, secondar
   return (
     <>
       <div className="cover">
-        <Image src={imageUrl} alt="Dirt-Less Detailing" fill objectFit="cover" />
+        <Image src={imageUrl} alt="Dirt-Less Detailing" fill className="object-cover" />
       </div>
       <div className="servicepage-header">
         <div>
@@ -25,7 +25,7 @@ export default function HeaderComponent({ imageUrl, title, description, secondar
           </div>
         </div>
         <div className="service-image">
-          <Image src={secondaryUrl} alt="showcase of service" fill objectFit="cover" />
+          <Image src={secondaryUrl} alt="showcase of service" fill className="object-cover rounded-lg" />
         </div>
       </div>
     </>

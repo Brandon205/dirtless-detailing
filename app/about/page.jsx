@@ -137,7 +137,7 @@ export default function About() {
     <div className="App bg-contact">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
       <div className="cover">
-        <Image src="/assets/images/correction/teslafoam.jpg" alt="Dirt-Less Detailing" fill objectFit="cover" />
+        <Image src="/assets/images/correction/teslafoam.jpg" alt="Dirt-Less Detailing" fill className="object-cover" />
       </div>
       <div className="servicepage-header">
         <div style={{ alignItems: "center" }}>
@@ -167,17 +167,22 @@ export default function About() {
                   src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3a1a1e74-854b-4aa9-ae8e-06816ec80200/public"
                   alt="Clean Ford GT in a garage"
                   fill
-                  objectFit="cover"
+                  className="object-cover"
                 />
               </div>
               <div className="about-image w-full max-w-[400px] h-[225px]">
-                <Image src="/assets/images/showcase/worktruckGriots.jpg" alt="Our worktruck in front of Griots Garage in Tacoma" fill objectFit="cover" />
+                <Image
+                  src="/assets/images/showcase/worktruckGriots.jpg"
+                  alt="Our worktruck in front of Griots Garage in Tacoma"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
           ) : (
             <div className="about-image-container">
               <motion.div style={{ x: smallScreen ? "" : xMovement, y: smallScreen ? "" : yMovement }} className="about-image w-[450px] h-[300px]">
-                <Image src="/assets/images/exterior/fordGTBack.jpg" alt="Clean Ford GT in a garage" className="rounded-lg" fill objectFit="cover" />
+                <Image src="/assets/images/exterior/fordGTBack.jpg" alt="Clean Ford GT in a garage" className="rounded-lg object-cover" fill />
               </motion.div>
             </div>
           )}
@@ -275,7 +280,7 @@ export default function About() {
         </div>
 
         <div className="about-image w-full max-w-[800px] h-[375px] mx-auto">
-          <Image src="/assets/images/showcase/porscheFront.jpg" alt="Dirt-Less Detailing Owner" fill objectFit="cover" />
+          <Image src="/assets/images/showcase/porscheFront.jpg" alt="Dirt-Less Detailing Owner" fill className="object-cover" />
         </div>
         <h3 style={{ fontSize: "2.5em", margin: 0, textAlign: smallScreen ? "left" : "center" }}>Dirt-Less Detailing</h3>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }} className="text-left">
