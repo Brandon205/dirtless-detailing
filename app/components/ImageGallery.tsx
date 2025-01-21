@@ -24,7 +24,7 @@ const ImageGallery = ({ images }) => {
             <div className="relative w-full pt-[100%]">
               <Image
                 src={image.src}
-                alt={image.alt || "Gallery image"}
+                alt={image.alt || `Gallery ${index + 1}`}
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
                 sizes="(max-width: 640px) 100vw, 
