@@ -41,10 +41,10 @@ export default function FullIntEx() {
     <section className="service-content-container">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
       <HeaderComponent
-        mainUrl={"6d1c1456-97c0-4c35-d58a-ed3c0d576a00"}
+        imageUrl="/assets/images/interior/driver16.jpg"
         title="Full Interior Cleaning"
         description="Our easy and hassle-free Interior Cleaning Service."
-        secondaryUrl={"270a9710-a253-4522-ff8a-691ad0cb2d00"}
+        secondaryUrl="/assets/images/before&afters/badInteriorBA.png"
       />
 
       <div className="main-content-container">

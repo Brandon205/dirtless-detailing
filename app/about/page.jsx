@@ -274,18 +274,6 @@ export default function About() {
           </div>
         </div>
 
-        {/* <div
-          className="about-large-image"
-          style={{
-            backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6cc30f3c-c722-4674-b2d6-a4736a57bc00/cover')`
-          }}
-        >
-          <img
-            style={{ visibility: "hidden" }}
-            alt="Me on the right of polished show truck"
-            src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6cc30f3c-c722-4674-b2d6-a4736a57bc00/cover"
-          />
-        </div> */}
         <div className="about-image w-full max-w-[800px] h-[375px] mx-auto">
           <Image src="/assets/images/showcase/porscheFront.jpg" alt="Dirt-Less Detailing Owner" fill objectFit="cover" />
         </div>

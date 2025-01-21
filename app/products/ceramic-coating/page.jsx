@@ -5,12 +5,9 @@ import { topBtnVariant } from "../../../utils/animationVariations";
 export default function products() {
   return (
     <div className="bg-contact">
-      <div
-        className="cover"
-        style={{
-          backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/45779246-97c3-4442-85d6-be09aabad900/cover')`
-        }}
-      ></div>
+      <div className="cover">
+        <Image src="/assets/images/correction/teslafoam.jpg" alt="Dirt-Less Detailing" fill objectFit="cover" />
+      </div>
       <div className="servicepage-header">
         <div style={{ alignItems: "center" }}>
           <h1>
@@ -31,59 +28,12 @@ export default function products() {
       </div>
 
       <main style={{ marginTop: "4vh" }} className="service-main">
-        {/* <div className="service-explain">
-          <div
-            className="service-image"
-            role="img"
-            style={{
-              backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/caab7c47-0030-4dd7-b338-e56ce725c300/public')`,
-              width: "90%",
-            }}
-          >
-            <img
-              style={{ visibility: "hidden" }}
-              alt="Washed Subaru"
-              src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/caab7c47-0030-4dd7-b338-e56ce725c300/public"
-            />
-          </div>
-          <div className="text-left">
-            <h2 className="text-large mt-0">Welcome to our DIY Ceramic Maintenance Recommendations</h2>
-            <p>
-              We at Dirt-Less Detailing are aware of the satisfaction and joy that come from taking care of your car
-              yourself. For all of your DIY vehicle washing needs, we have individually chosen a variety of high-quality
-              supplies that won't break the bank. The products described here can all be easily purchased from Amazon,
-              and some of them can even be purchased in nearby stores, guaranteeing that you have everything you need to
-              produce results that are on par with those of a professional right in the comfort of your own driveway.
-            </p>
-            <p>
-              With our hand-selected recommendations, we have you covered for anything from soft yet effective car wash
-              soaps to microfiber towels. Our list makes it simple for you to locate and buy the greatest tools and
-              goods because we think every auto enthusiast should have access to them. Explore our guide, discover the
-              products we suggest, and get ready to take your DIY car cleaning to new heights.
-            </p>
-            <p>
-              You can be confident that the products mentioned here are the best of the best in terms of cost-effective
-              consumer grade ceramic safe materials. We have personally owned and used all of these items at some point
-              in our eight years of detailing, and some we even still use to this day. The Amazon links below are
-              affiliate links which don't change the price you pay but give us a small commission if you decide to go
-              through with the purchase.
-            </p>
-          </div>
-        </div> */}
         <main className="service-main">
           <h2 style={{ marginBottom: 0 }} className="text-large">
             DIY Ceramic Maintenance Recommendations
           </h2>
           <hr style={{ margin: "0 auto 3rem auto" }} />
           <div className="service-explain">
-            {/* <p>
-              We at Dirt-Less Detailing are aware of the satisfaction and joy that come from taking care of your car yourself. For all of your DIY vehicle
-              washing needs, we have individually chosen a variety of high-quality supplies that won't break the bank.
-            </p> */}
-            {/* <p>
-              The products described here can all be easily purchased from Amazon, and some of them can even be purchased in nearby stores, guaranteeing that
-              you have everything you need to produce results that are on par with those of a professional right in the comfort of your own driveway.
-            </p> */}
             <p>
               We have personally owned and used all of these items at some point in our nine years of detailing, and some we even still use to this day. Most
               Amazon links below are affiliate links which won't change the price you pay, but will give us a small commission.

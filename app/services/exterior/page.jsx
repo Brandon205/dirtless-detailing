@@ -40,10 +40,10 @@ export default function Exterior() {
     <section className="service-content-container">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
       <HeaderComponent
-        mainUrl={"da3f5734-319b-4301-43c9-7af958fd5600"}
+        imageUrl="/assets/images/exterior/subaruWashed.jpg"
         title="Exterior Decon Wash"
         description="Get a complete car wash, down to even the smallest dots of tar removed."
-        secondaryUrl={"939afebd-2188-47d8-fd50-328291b2a300"}
+        secondaryUrl="/assets/images/before&afters/TruckTarBA.png"
       />
 
       <div className="main-content-container">

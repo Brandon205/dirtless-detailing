@@ -44,10 +44,10 @@ export default function ExteriorSeal() {
     <section className="service-content-container">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
       <HeaderComponent
-        mainUrl={"977438a8-129b-496b-9845-e55e3198e900"}
+        imageUrl="assets/images/correction/teslaclean.jpg"
         title="Exterior Seal and Shine"
         description="Our tried and true wash with a corrective polish, and even stronger Ceramic Spray coating."
-        secondaryUrl={"c4bc3845-d897-4dcc-9401-f7feca96a200"}
+        secondaryUrl="assets/images/before&afters/WashBADiagonal.png"
       />
 
       <div className="main-content-container">

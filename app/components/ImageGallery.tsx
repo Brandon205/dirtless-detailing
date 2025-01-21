@@ -37,13 +37,10 @@ const ImageGallery = ({ images }) => {
         ))}
       </div>
 
-      {/* Animated Modal */}
       {selectedImage && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4" onClick={closeModal}>
-          {/* Backdrop with fade */}
           <div className="absolute inset-0 bg-black transition-opacity duration-300 ease-in-out opacity-75" />
 
-          {/* Modal content with scale and fade */}
           <div className="relative w-full max-w-6xl flex items-center justify-center h-[90vh] animate-in fade-in zoom-in duration-300">
             <button onClick={closeModal} className="z-50 absolute top-8 right-4 text-white hover:text-gray-300 transition-colors">
               <X size={32} />

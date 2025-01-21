@@ -43,10 +43,10 @@ export default function InteriorSpill() {
     <section className="service-content-container">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
       <HeaderComponent
-        mainUrl={"f6170666-70f6-487c-4db8-26125453df00"}
+        imageUrl="assets/images/interior/accO.jpg"
         title="Full Interior + Spill Guard"
         description="Our highly rated interior service topped with an interior ceramic coating."
-        secondaryUrl={"e2d544ec-b25c-4d22-53c2-bdf651767200"}
+        secondaryUrl="assets/images/interior/center3.jpg"
       />
 
       <div className="main-content-container">

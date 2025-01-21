@@ -37,7 +37,7 @@ const faqItems = [
             className="faq-image"
             role="img"
             style={{
-              backgroundImage: `url('https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/64538f74-3857-42df-3f7c-4a13fa45c900/public')`
+              backgroundImage: `/assets/images/showcase/iglcircle.jpg`
             }}
           ></div>
         </Zoom>
@@ -133,10 +133,10 @@ export default function ExteriorCorrect() {
     <section className="service-content-container">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
       <HeaderComponent
-        mainUrl={"1d5eccf3-e4ec-47db-c652-fb40f808c800"}
+        imageUrl="assets/images/correction/genesis3.jpeg"
         title="Exterior Correct and Protect"
         description="The Ultimate Exterior Detail & Protection for your vehicle. Our most extensive package with in-depth Paint Correction and a Lifetime Ceramic Coating."
-        secondaryUrl={"f7c127be-d17d-4563-48c3-809289e8bc00"}
+        secondaryUrl="assets/images/correction/ferrariBadge.jpg"
       />
 
       <div className="main-content-container">

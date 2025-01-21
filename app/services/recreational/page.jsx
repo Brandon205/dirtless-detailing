@@ -277,10 +277,10 @@ export default function Recreational() {
     <section className="service-content-container">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
       <HeaderComponent
-        mainUrl={"6848fcc1-eaa2-4c67-7e97-d9ea70b4aa00"}
+        imageUrl="/assets/images/sealshine/rv-finished.jpg"
         title="Boats, RV's, Trailer, and ORV Detailing"
         description="Bring any of your recreational vehicles back to life with our new detailing services for them!"
-        secondaryUrl={"78e2196e-0484-4ca3-769b-deff51ba1000"}
+        secondaryUrl="/assets/images/showcase/jetskisRPortrait.jpeg"
       />
 
       <div className="main-content-container">
