@@ -8,7 +8,7 @@ const jsonld = {
   "@type": "Organization",
   "name": "Dirt-Less Detailing",
   "url": "https://dirtlessdetailing.com/contact",
-  "logo": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0a945e76-f4c0-4e29-ef16-463490d0db00/public",
+  "logo": "/assets/icons/logoCircle.png",
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "2532529758",

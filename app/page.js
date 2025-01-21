@@ -1,14 +1,13 @@
 "use client";
-import { useState, useEffect, Suspense } from "react";
+import { useState, useEffect } from "react";
 import Benefits from "./Benefits";
 import { HeroSlider } from "./components/hero-slider";
 import { BookingButton } from "./components/BookingButton";
 import { topBtnVariant } from "../utils/animationVariations";
-import prices from "../utils/Prices";
 import { Titillium_Web } from "next/font/google";
 import { InfiniteMovingCards } from "./components/InfiniteMovingCards";
 import FaqItem from "./components/FaqItem";
-import { ArrowRight, MapPin } from "lucide-react";
+import { MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 import IframeSuspense from "../utils/IframeSuspense";
 import HomePageCard from "./components/HomePageCard";
@@ -18,7 +17,7 @@ const titillium = Titillium_Web({ weight: ["400", "600"], subsets: ["latin"] });
 const jsonld = {
   "@type": "LocalBusiness",
   "name": "Dirt-Less Detailing",
-  "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/0d30edc6-6afe-4162-1f9e-4b57f8e85300/cover",
+  "image": "/assets/images/showcase/homepage-main.webp",
   "url": "https://www.dirtlessdetailing.com",
   "telephone": "2532529758",
   "priceRange": "$$$",
@@ -141,7 +140,7 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row flex-grow lg:justify-between lg:items-stretch lg:flex-wrap lg:w-[90%] lg:my-0 mx-auto justify-center items-center gap-24 mb-8">
           <HomePageCard
             title="Swift Interior Detail"
-            imageUrl="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e073e12e-8f0c-4ae5-fa12-4abc9ab9db00/public"
+            imageUrl="/assets/images/interior/driver3.jpg"
             description="Our simple interior cleaning, best for maintenance or to quickly freshen up your interior."
             steps={["Blow Out & Vacuum the Vehicle", "Wipe Down and Condition All Surfaces", "Wash/Clean the Floormats", "Clean Interior Windows & Glass"]}
             hours="1.5-3"
@@ -150,7 +149,7 @@ export default function Home() {
 
           <HomePageCard
             title="Full Interior Detail"
-            imageUrl="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a40931e-dd21-407c-dd03-86fd43b05200/public"
+            imageUrl="/assets/images/interior/driver5.jpg"
             description="Our thorough interior cleaning, best for cars with staining, lots of dog hair/dirt, or ones that haven't been cleaned out in a long time."
             steps={[
               "Blow Out & Vacuum all Dirt/Debris",
@@ -165,7 +164,7 @@ export default function Home() {
 
           <HomePageCard
             title="Interior + Spill Guard"
-            imageUrl="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/e073e12e-8f0c-4ae5-fa12-4abc9ab9db00/public"
+            imageUrl="/assets/images/interior/driver12.jpg"
             description="Our Full Interior Service topped with a interior ceramic spray on all surfaces, perfect for making any future cleaning a breeze."
             steps={[
               "EVERYTHING From our Full Interior Service",
@@ -188,7 +187,7 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row flex-grow lg:justify-between lg:items-stretch lg:flex-wrap lg:w-[90%] lg:my-0 mx-auto justify-center items-center gap-24 mb-8">
           <HomePageCard
             title="Exterior Decon Wash"
-            imageUrl="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/b5859464-3c0e-4fcf-8332-17155eb86d00/public"
+            imageUrl="/assets/images/exterior/jeepRenegade.jpg"
             description="The detailers car wash - one that goes far beyond what an auto car wash can do. Your wheels, tires, and even paint will be cleaner than ever!"
             steps={[
               "Full Vehicle Strip Wash (to remove any embedded contaminants, tar, and sap)",
@@ -202,7 +201,7 @@ export default function Home() {
 
           <HomePageCard
             title="Seal & Shine"
-            imageUrl="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/8b440e8d-d3ed-4363-2638-00f164188100/public"
+            imageUrl="/assets/images/sealshine/seal-shine.jpg"
             description="Our exterior decon wash, plus a full vehicle polish, topped with a 1-year ceramic coating!"
             steps={[
               "EVERYTHING From our Exterior Decon Service",
@@ -217,7 +216,7 @@ export default function Home() {
 
           <HomePageCard
             title="Correct & Protect"
-            imageUrl="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/4ce4f977-365c-4211-a7f9-68c5ec6d7a00/public"
+            imageUrl="/assets/images/correction/genesis1.jpeg"
             description="Our top of the line exterior package. A 2-stage paint correction with with a 3-year ceramic coating (Click Learn More to see why we think 3
                   years is ideal over 5-10 year coatings)."
             steps={[

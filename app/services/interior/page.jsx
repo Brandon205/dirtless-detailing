@@ -19,7 +19,7 @@ const jsonld = {
   "@context": "https://schema.org/",
   "@type": "Product",
   "name": "Full Interior Detail",
-  "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/6d1c1456-97c0-4c35-d58a-ed3c0d576a00/public",
+  "image": "/assets/images/interior/driver16.jpg",
   "description":
     "Get your car's interior looking brand new with our full interior detailing service. We offer thorough cleaning and conditioning of all surfaces, including the dashboard, seats, and carpets. Contact us to schedule your appointment today.",
   "brand": {

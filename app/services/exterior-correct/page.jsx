@@ -92,7 +92,7 @@ const jsonld = {
   "@context": "https://schema.org/",
   "@type": "Product",
   "name": "Exterior Correct & Protect",
-  "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2bd5c3dd-6677-466a-e348-8495945c4700/public",
+  "image": "/assets/images/correction/genesis2.jpeg",
   "description":
     "Elevate your vehicle's appearance and protection with our Correct and Protect service, leaving your car with a mirror-like shine and defense.",
   "brand": {

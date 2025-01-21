@@ -20,7 +20,7 @@ const jsonld = {
   "@context": "https://schema.org/",
   "@type": "Product",
   "name": "Exterior Seal & Shine",
-  "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/977438a8-129b-496b-9845-e55e3198e900/public",
+  "image": "/assets/images/correction/teslaclean.jpg",
   "description":
     "Experience a showroom shine and unparalleled protection with our Exterior Seal and Shine, ensuring your car gleams like new while safeguarding its finish.",
   "brand": {

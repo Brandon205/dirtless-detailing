@@ -20,9 +20,9 @@ const jsonld = {
   "@context": "https://schema.org/",
   "@type": "Product",
   "name": "Interior + Spill Guard",
-  "image": "https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/2a196c77-cb1a-42f9-479b-8fdbe3c14500/public",
+  "image": "/assets/images/showcase/ceramic1285.jpg",
   "description":
-    "et your car's interior looking brand new with our full interior detailing service, topped off with a ceramic coating to protect your vehicle from day to day use! Contact us to schedule your appointment today.",
+    "Get your car's interior looking brand new with our full interior detailing service, topped off with a ceramic coating to protect your vehicle from day to day use! Contact us to schedule your appointment today.",
   "brand": {
     "@type": "Brand",
     "name": "Dirt-Less Detailing"

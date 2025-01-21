@@ -163,12 +163,7 @@ export default function About() {
           {smallScreen ? (
             <div className="about-image-container">
               <div className="about-image w-full max-w-[400px] h-[225px]">
-                <Image
-                  src="https://imagedelivery.net/6ELuAqAYnn_KvYt8QhJosQ/3a1a1e74-854b-4aa9-ae8e-06816ec80200/public"
-                  alt="Clean Ford GT in a garage"
-                  fill
-                  className="object-cover"
-                />
+                <Image src="/assets/images/exterior/fordGTBack.jpg" alt="Clean Ford GT in a garage" fill className="object-cover" />
               </div>
               <div className="about-image w-full max-w-[400px] h-[225px]">
                 <Image
