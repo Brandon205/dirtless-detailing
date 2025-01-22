@@ -6,6 +6,19 @@ import { topBtnVariant } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
 import "react-medium-image-zoom/dist/styles.css";
 
+const baImages = [
+  { src: "/assets/images/before&afters/rearBA2.jpg" },
+  { src: "/assets/images/before&afters/toyotaEngineBA.jpg" },
+  { src: "/assets/images/before&afters/doorJambsBA.jpg" },
+  { src: "/assets/images/before&afters/wheelsBA.jpg" },
+  { src: "/assets/images/before&afters/wheelsBA2.jpg" },
+  { src: "/assets/images/before&afters/sideBA.jpg" },
+  { src: "/assets/images/before&afters/wheelsBA3.jpg" },
+  { src: "/assets/images/before&afters/fordTarBA.jpg" },
+  { src: "/assets/images/before&afters/teslaExteriorBA.jpg" },
+  { src: "/assets/images/before&afters/WashBADiagonal.png" }
+];
+
 const images = [
   { src: "/assets/images/exterior/3doorFord.jpg" },
   { src: "/assets/images/exterior/3doorFordRight.jpg" },
@@ -143,6 +156,10 @@ export default function PaintCorrectionGallery() {
           </div>
         </div>
       </div>
+      <h2 className="text-4xl text-white text-center font-bold mt-16">Before & After Results</h2>
+      <ImageGallery images={baImages} />
+
+      <h3 className="text-4xl text-white font-bold text-center">Finished Results</h3>
       <ImageGallery images={images} />
 
       <div className="max-w-90% lg:max-w-[60%] mx-auto text-center">

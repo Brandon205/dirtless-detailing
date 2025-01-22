@@ -6,6 +6,12 @@ import { motion } from "framer-motion";
 import "react-medium-image-zoom/dist/styles.css";
 import ImageGallery from "../../components/ImageGallery";
 
+const baImages = [
+  { src: "/assets/images/before&afters/daytonaBA.jpg" },
+  { src: "/assets/images/before&afters/headlightBA.jpg" },
+  { src: "/assets/images/before&afters/winnebagoBA.jpg" }
+];
+
 const images = [
   { src: "/assets/images/sealshine/36 plymouth.jpg" },
   { src: "/assets/images/sealshine/36 plymouthFL.jpg" },
@@ -77,6 +83,10 @@ export default function PaintCorrectionGallery() {
           </div>
         </div>
       </div>
+      <h2 className="text-4xl text-white text-center font-bold mt-16">Before & After Results</h2>
+      <ImageGallery images={baImages} />
+
+      <h3 className="text-4xl text-white font-bold text-center">Finished Results</h3>
       <ImageGallery images={images} />
 
       <div className="max-w-90% lg:max-w-[60%] mx-auto text-center">

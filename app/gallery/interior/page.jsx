@@ -6,6 +6,19 @@ import "react-medium-image-zoom/dist/styles.css";
 import { topBtnVariant } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
 
+const baImages = [
+  { src: "/assets/images/before&afters/intBa1281.jpg" },
+  { src: "/assets/images/before&afters/intBa1280.jpg" },
+  { src: "/assets/images/before&afters/cupholderBA.jpg" },
+  { src: "/assets/images/before&afters/trunkBA2.jpg" },
+  { src: "/assets/images/before&afters/floorBA.jpg" },
+  { src: "/assets/images/before&afters/doorPanelBA.jpg" },
+  { src: "/assets/images/before&afters/trunkBA.jpg" },
+  { src: "/assets/images/before&afters/dogHairBA.jpg" },
+  { src: "/assets/images/before&afters/seatsBA.jpg" },
+  { src: "/assets/images/before&afters/badInteriorBA.png" }
+];
+
 const images = [
   { src: "/assets/images/interior/accO.jpg" },
   { src: "/assets/images/interior/bio1281.jpg" },
@@ -120,6 +133,10 @@ export default function FullIntGallery() {
           </div>
         </div>
       </div>
+      <h2 className="text-4xl text-white text-center font-bold mt-16">Before & After Results</h2>
+      <ImageGallery images={baImages} />
+
+      <h3 className="text-4xl text-white font-bold text-center">Finished Results</h3>
       <ImageGallery images={images} />
 
       <div className="max-w-90% lg:max-w-[60%] mx-auto text-center">
