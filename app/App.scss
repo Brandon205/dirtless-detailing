@@ -374,7 +374,7 @@ li span {
   grid-template-areas:
     "icon desc"
     "icon myspan";
-  width: 190px;
+  width: 200px;
   text-align: left;
   place-items: center;
 }
@@ -1740,7 +1740,7 @@ footer {
   div:first-child {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
     gap: 1rem;
 
     h1 {
@@ -3506,7 +3506,7 @@ footer {
   .header-buttons {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    // justify-content: center;
     max-width: 620px;
     gap: 1rem;
   }

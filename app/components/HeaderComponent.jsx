@@ -11,16 +11,18 @@ export default function HeaderComponent({ imageUrl, title, description, secondar
       </div>
       <div className="servicepage-header">
         <div>
-          <h1>
+          <h1 className="text-center">
             <span className="accent-orange bold text-shadow">{title}</span>
           </h1>
           <h2 className="page-subheading">{description}</h2>
           <div className="header-buttons">
             <motion.a href="/contact" className="top-quote-btn" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
-              <img src="../assets/icons/clipboard.png" alt="clipboard" className="btn-icon" /> Book Now!
+              <Image src="/assets/icons/clipboard.svg" alt="clipboard" className="btn-icon text-white" width={36} height={36} />
+              BOOK NOW!
             </motion.a>
             <motion.a href="tel:2532529758" className="top-quote-btn btn-secondary" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
-              <img src="../assets/icons/phoneMessage.png" alt="call or message" className="btn-icon" /> (253) 252-9758
+              <Image src="/assets/icons/phone-call-message.svg" alt="call or message" className="btn-icon text-white" width={36} height={36} />
+              (253) 252-9758
             </motion.a>
           </div>
         </div>

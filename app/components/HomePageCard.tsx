@@ -108,6 +108,7 @@ export default function HomePageCard({ title, imageUrl, description, steps, hour
               className="py-3 text-dm tracking-wide px-[0.9rem] bg-secondaryBtnClr rounded-[40px] text-center font-bold text-clip lg:w-1/2"
               initial={{ scale: 1 }}
               whileHover={{ scale: 1.05 }}
+              aria-label={`Learn More about our ${title} service.`}
             >
               Learn More
             </motion.a>

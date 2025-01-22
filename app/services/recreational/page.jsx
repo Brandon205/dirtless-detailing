@@ -53,12 +53,6 @@ const faqItems = [
   }
 ];
 
-// const imagesArr = [
-//   "78e2196e-0484-4ca3-769b-deff51ba1000", // Jet Skis
-//   "37508a6b-fed4-42c2-1bc8-cbb422834100", // Boat
-//   "6848fcc1-eaa2-4c67-7e97-d9ea70b4aa00", // RV
-//   "8fd0fff7-3594-4f13-33bd-175dd5546f00" // ORV
-// ];
 const imagesArr = [
   "/assets/images/showcase/jetskisRPortrait.jpeg", // Jet Skis
   "/assets/images/showcase/unsplash-boat-interior.jpg", // Boat
@@ -352,7 +346,7 @@ export default function Recreational() {
           </div>
         ) : (
           <div className="slider-container w-full mx-auto">
-            <Image src={imagesArr[imageIndex]} alt="Boat Detailing" fill className="object-cover rounded-3xl" />
+            <Image src="/assets/images/showcase/detailed-boat.jpg" alt="Detailed Boat" fill className="object-cover rounded-3xl" />
           </div>
         )}
 

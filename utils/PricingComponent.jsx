@@ -63,12 +63,12 @@ export default function PricingComponent(props) {
     if (localValue) {
       setCurrVal(localValue);
     } else {
-      setCurrVal(2);
+      setCurrVal("2");
     }
   }, []);
 
   function updateValue(e) {
-    localStorage.setItem("dirtlessdetailing-size", e); // 0-5 will need to
+    localStorage.setItem("dirtlessdetailing-size", e); // 0-5
 
     setCurrVal(e);
   }

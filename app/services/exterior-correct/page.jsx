@@ -32,7 +32,7 @@ const faqItems = [
           <li>Self cleaning properties: Ceramic coatings easily bead water, dirt gets caught in these beads and will fly off while you're driving!</li>
           <li>Easier to wash and dry. Dirt will wash off with less effort, you can also blow dry 90% of your vehicle because of the water beading.</li>
         </ul>
-        <ImageGallery images={["/assets/images/showcase/iglcircle.jpg"]} />
+        <ImageGallery images={[{ src: "/assets/images/showcase/iglcircle.jpg" }]} />
       </div>
     )
   },

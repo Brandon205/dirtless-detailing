@@ -10,7 +10,6 @@ const images = [
   { src: "/assets/images/correction/carwashtruckBA.jpg" },
   { src: "/assets/images/correction/carwashTruckFull.png" },
   { src: "/assets/images/correction/carWashTruckOutside.jpg" },
-  { src: "/assets/images/correction/ceramicb528.jpg" },
   { src: "/assets/images/correction/ceramicBeads1.jpg" },
   { src: "/assets/images/correction/ceramicBeads2.jpg" },
   { src: "/assets/images/correction/ceramicBeads3.jpg" },
@@ -46,6 +45,7 @@ const images = [
   { src: "/assets/images/correction/teslapolishing.jpg" },
   { src: "/assets/images/correction/teslaRL.jpg" },
   { src: "/assets/images/correction/teslaRR.jpg" },
+  { src: "/assets/images/correction/ceramicb528.jpg" },
   { src: "/assets/images/correction/waterbeading1.jpg" },
   { src: "/assets/images/correction/waterbeading2.jpg" },
   { src: "/assets/images/correction/wheelBeading.jpg" },
@@ -71,7 +71,7 @@ export default function CoatingGallery() {
       </div>
       <div className="servicepage-header">
         <div style={{ alignItems: "center" }}>
-          <h1>
+          <h1 className="text-center lg:text-left">
             <span className="accent-orange bold text-shadow">Exterior Correct & Protect Gallery</span>
           </h1>
           <strong className="page-subheading" style={{ textAlign: "center" }}>
@@ -86,7 +86,8 @@ export default function CoatingGallery() {
               <img src="../assets/icons/clipboard.png" alt="clipboard" className="btn-icon" /> Get a Free Quote
             </motion.a>
             <motion.a href="tel:2532529758" className="top-quote-btn btn-secondary" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
-              <img src="../assets/icons/phoneMessage.png" alt="call or message" className="btn-icon" /> (253) 252-9758
+              <Image src="/assets/icons/phone-call-message.svg" alt="call or message" className="btn-icon text-white" width={36} height={36} />
+              (253) 252-9758
             </motion.a>
           </div>
         </div>

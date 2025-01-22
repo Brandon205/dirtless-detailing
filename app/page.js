@@ -6,6 +6,7 @@ import { BookingButton } from "./components/BookingButton";
 import { topBtnVariant } from "../utils/animationVariations";
 import { Titillium_Web } from "next/font/google";
 import { InfiniteMovingCards } from "./components/InfiniteMovingCards";
+import Image from "next/image";
 import FaqItem from "./components/FaqItem";
 import { MapPin } from "lucide-react";
 import { motion } from "framer-motion";
@@ -98,7 +99,7 @@ export default function Home() {
       >
         <header className="w-screen flex flex-col h-[90vh] pt-28 z-50 items-center lg:items-start lg:pl-20 xl:gap-3 text-sm xl:text-lg justify-center">
           <div className="text-center lg:text-left">
-            <strong className="text-gray-300 text-xl">Dirt-Less Detailing</strong>
+            <strong className="text-gray-300 text-md lg:text-xl">Dirt-Less Detailing</strong>
             <h1 className={`${titillium.className} text-white text-5xl xl:text-7xl xl:text-left font-bold m-0`}>
               Your Auto Detailing & <br /> Ceramic Coating Specialists
             </h1>
@@ -113,7 +114,8 @@ export default function Home() {
             </a>
             <div className="flex gap-10 pt-8 flex-col lg:flex-row max-w-screen-md">
               <motion.a href="/contact" className="top-quote-btn" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
-                <img src="../assets/icons/clipboard.png" alt="clipboard" className="btn-icon" /> BOOK NOW!
+                <Image src="/assets/icons/clipboard.svg" alt="clipboard" className="btn-icon text-white" width={36} height={36} />
+                BOOK NOW!
               </motion.a>
               <motion.a
                 href="tel:2532529758"
@@ -122,7 +124,8 @@ export default function Home() {
                 whileHover="hover"
                 transition={{ duration: 0.25 }}
               >
-                <img src="../assets/icons/phoneMessage.png" alt="call or message" className="btn-icon" /> (253) 252-9758
+                <Image src="/assets/icons/phone-call-message.svg" alt="call or message" className="btn-icon text-white" width={36} height={36} />
+                (253) 252-9758
               </motion.a>
             </div>
             <span className="text-white bold leading-none">Gift Cards Available Now!</span>
@@ -243,7 +246,7 @@ export default function Home() {
               Interior and Exterior detailing services for <span className="font-bold">any</span> of your other vehicles.
             </h3>
           </div>
-          <a href="/services/recreational" className="popular-readmore-secondary">
+          <a href="/services/recreational" className="popular-readmore-secondary" aria-label="Learn more about our offers on recreational vehicles.">
             Learn More
           </a>
         </div>

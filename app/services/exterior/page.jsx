@@ -19,7 +19,7 @@ const jsonld = {
   "@context": "https://schema.org/",
   "@type": "Product",
   "name": "Exterior Decon Wash",
-  "image": "assets/images/exterior/subaruWashed.jpg",
+  "image": "assets/images/exterior/subaruWashed.jpeg",
   "description": "Get a car wash like never before with our Exterior Decon Wash. Where we go in depth to get all corners and remove any paint contaminants.",
   "brand": {
     "@type": "Brand",
@@ -40,7 +40,7 @@ export default function Exterior() {
     <section className="service-content-container">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
       <HeaderComponent
-        imageUrl="/assets/images/exterior/subaruWashed.jpg"
+        imageUrl="/assets/images/exterior/subaruWashed.jpeg"
         title="Exterior Decon Wash"
         description="Get a complete car wash, down to even the smallest dots of tar removed."
         secondaryUrl="/assets/images/before&afters/TruckTarBA.png"
