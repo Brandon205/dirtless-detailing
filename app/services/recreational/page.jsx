@@ -372,7 +372,6 @@ function BoatPricing(props) {
 
   useEffect(() => {
     // Boat Exterior Detail, Boat Interior Detail, RV/Trailer Exterior Detail, ORV Detail
-    console.log(props.currService);
     if (props.currService === "Boat Exterior Detail" || (props.currService === "Boat Interior Detail" && props.length >= 15)) {
       // Longer boat image
       props.setImageIndex(1);
@@ -385,6 +384,10 @@ function BoatPricing(props) {
     } else if (props.currService === "ORV Detail") {
       // Side by Side Image
       props.setImageIndex(3);
+    }
+
+    if (props.currService === "Boat Interior Detail" && props.length < 15) {
+      props.setLength(15);
     }
   }, [props.length, props.currService]);
 
