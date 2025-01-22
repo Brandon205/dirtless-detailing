@@ -215,6 +215,8 @@ export default function ExteriorSeal() {
               />
             </div>
 
+            <br className="extra-space" />
+
             <div className="preview-container">
               <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/seal" className="gallery-preview">
                 <motion.img
@@ -242,6 +244,7 @@ export default function ExteriorSeal() {
                   className="w-full h-[100px] object-cover rounded-xl"
                 />
               </motion.a>
+
               <div className="preview-content">
                 <h4>
                   See the finished{" "}

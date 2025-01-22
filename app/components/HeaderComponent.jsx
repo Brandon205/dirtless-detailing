@@ -27,7 +27,13 @@ export default function HeaderComponent({ imageUrl, title, description, secondar
           </div>
         </div>
         <div className="service-image">
-          <Image src={secondaryUrl} alt="showcase of service" fill className="object-cover rounded-lg" />
+          <Image
+            src={secondaryUrl}
+            sizes="(max-width: 1349px) 0, (min-width: 1350px) 500px"
+            alt="showcase of service"
+            fill
+            className="object-cover rounded-lg"
+          />
         </div>
       </div>
     </>

@@ -104,13 +104,13 @@ export default function Home() {
       >
         <header className="w-screen flex flex-col h-[90vh] pt-28 z-50 items-center lg:items-start lg:pl-20 xl:gap-3 text-sm xl:text-lg justify-center">
           <div className="text-center lg:text-left">
-            <strong className="text-gray-300 text-md lg:text-xl">Dirt-Less Detailing</strong>
+            <strong className="text-gray-400 text-md lg:text-xl">Dirt-Less Detailing</strong>
             <h1 className={`${titillium.className} text-white text-5xl xl:text-7xl xl:text-left font-bold m-0 lg:max-w-[60%]`}>
               Your Auto Detailing & Ceramic Coating Specialists
             </h1>
           </div>
           <div className="text-center lg:text-left">
-            <p className="text-gray-800 max-w-screen-md font-semibold text-left m-0 text-xl hidden xl:block">
+            <p className="text-gray-200 max-w-screen-md font-semibold text-left m-0 text-xl hidden xl:block">
               Everything from removing stains from your interior, to our most detail-oriented paint correction and ceramic coating jobs, you can trust Dirt-Less
               Detailing to get the job done right!
             </p>

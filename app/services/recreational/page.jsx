@@ -33,7 +33,7 @@ const jsonld = {
 
 const faqItems = [
   {
-    title: "What does your ORV Detailing package include?",
+    title: "What does your ORV detailing package include?",
     description:
       "Our ORV Detailing will include cleaning/washing the full interior and exterior, using foaming chemicals that are safe to use on all surfaces that's still strong enough to ensure no dirt survives!"
   },
@@ -43,7 +43,7 @@ const faqItems = [
       "Not as of right now, only washes and boat interiors. We may add polishing and ceramic coating services for both in the future, so be sure to check back!"
   },
   {
-    title: "These are all mobile services right?",
+    title: "Can you come to me for these services?",
     description: "Yes! We can perform all of these services at your home, all we will need is an electrical outlet and water spigot."
   },
   {

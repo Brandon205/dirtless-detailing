@@ -64,7 +64,7 @@ export default function Nav() {
           <Image
             src="/assets/icons/hamburger-menu.svg"
             alt="close"
-            className="btn-icon text-white cursor-pointer"
+            className={`${nav === "block" ? "block" : "hidden"} btn-icon text-white cursor-pointer`}
             width={48}
             height={48}
             onClick={() => setNav("block")}
