@@ -4,7 +4,8 @@ export const metadata = {
   alternates: { canonical: "https://www.dirtlessdetailing.com/services/exterior-correct" },
   openGraph: {
     type: "website",
-    url: "https://www.dirtlessdetailing.com/services/exterior-correct"
+    url: "https://www.dirtlessdetailing.com/services/exterior-correct",
+    image: "/assets/images/correction/genesis2.jpeg"
   }
 };
 

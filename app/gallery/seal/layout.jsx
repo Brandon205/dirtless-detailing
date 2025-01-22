@@ -4,7 +4,8 @@ export const metadata = {
   alternates: { canonical: "https://www.dirtlessdetailing.com/gallery/seal" },
   openGraph: {
     type: "website",
-    url: "https://www.dirtlessdetailing.com/gallery/seal"
+    url: "https://www.dirtlessdetailing.com/gallery/seal",
+    image: "/assets/images/sealshine/36 plymouth.jpg"
   }
 };
 

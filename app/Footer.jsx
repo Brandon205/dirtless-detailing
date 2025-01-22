@@ -26,7 +26,13 @@ export default function Footer() {
         </div>
         <div style={{ gap: 32, paddingTop: "1rem" }} className="screen-flex">
           <a href="https://iglcoatingsusa.com/" target="_blank" rel="noopener">
-            <Image src="/assets/images/showcase/homepage-kenzo-nobkg.png" alt="IGL Kenzo Coatings certified" width={110} height={105} />
+            <Image
+              src="/assets/images/showcase/homepage-kenzo-nobkg.png"
+              alt="IGL Kenzo Coatings certified"
+              className="w-auto h-auto"
+              width={110}
+              height={105}
+            />
           </a>
           <a
             href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick"
@@ -34,7 +40,13 @@ export default function Footer() {
             rel="noopener"
             aria-label="Dirt-Less Detailing on Better Business Bureau"
           >
-            <Image src="/assets/images/showcase/homepage-bbb-large.png" alt="Better Business Bureau A+ rating" width={200} height={100} />
+            <Image
+              src="/assets/images/showcase/homepage-bbb-large.png"
+              alt="Better Business Bureau A+ rating"
+              className="w-auto h-auto"
+              width={200}
+              height={100}
+            />
           </a>
         </div>
       </div>

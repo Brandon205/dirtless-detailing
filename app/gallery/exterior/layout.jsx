@@ -4,7 +4,8 @@ export const metadata = {
   alternates: { canonical: "https://www.dirtlessdetailing.com/gallery/exterior" },
   openGraph: {
     type: "website",
-    url: "https://www.dirtlessdetailing.com/gallery/exterior"
+    url: "https://www.dirtlessdetailing.com/gallery/exterior",
+    image: "/assets/images/exterior/sideofsilverram.jpg"
   }
 };
 

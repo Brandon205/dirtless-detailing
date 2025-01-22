@@ -4,7 +4,8 @@ export const metadata = {
   alternates: { canonical: "https://www.dirtlessdetailing.com/products/ceramic-coating" },
   openGraph: {
     type: "website",
-    url: "https://www.dirtlessdetailing.com/products/ceramic-coating"
+    url: "https://www.dirtlessdetailing.com/products/ceramic-coating",
+    image: "/assets/images/correction/teslafoam.jpg"
   }
 };
 

@@ -58,6 +58,11 @@ export default function Home() {
 
   const faqItems = [
     {
+      title: "What areas do you service?",
+      description:
+        "We currently have our main shop location in Buckley, Washington. For our mobile services we will go typically as far north as Kent, and as far south as Graham. Contact us if you have specific questions on your location!"
+    },
+    {
       title: "Do you need water/electrical for mobile services?",
       description: "Yes, all we will need is an electrical outlet, a water spigot, and preferably any large personal items out of the car."
     },
@@ -100,18 +105,19 @@ export default function Home() {
         <header className="w-screen flex flex-col h-[90vh] pt-28 z-50 items-center lg:items-start lg:pl-20 xl:gap-3 text-sm xl:text-lg justify-center">
           <div className="text-center lg:text-left">
             <strong className="text-gray-300 text-md lg:text-xl">Dirt-Less Detailing</strong>
-            <h1 className={`${titillium.className} text-white text-5xl xl:text-7xl xl:text-left font-bold m-0`}>
-              Your Auto Detailing & <br /> Ceramic Coating Specialists
+            <h1 className={`${titillium.className} text-white text-5xl xl:text-7xl xl:text-left font-bold m-0 lg:max-w-[60%]`}>
+              Your Auto Detailing & Ceramic Coating Specialists
             </h1>
           </div>
-          <div>
-            <p className="text-gray-300 max-w-screen-md text-left m-0 text-xl hidden xl:block">
+          <div className="text-center lg:text-left">
+            <p className="text-gray-800 max-w-screen-md font-semibold text-left m-0 text-xl hidden xl:block">
               Everything from removing stains from your interior, to our most detail-oriented paint correction and ceramic coating jobs, you can trust Dirt-Less
               Detailing to get the job done right!
             </p>
-            <a href="https://maps.app.goo.gl/bhPDhjUN4jsSegu48" className="contact-link footer-contact-link no-underline" target="_blank" rel="noopener">
-              <MapPin /> Buckley Business Park C6 <span className="text-primary no-underline">(New Shop Location!)</span>
+            {/* <a href="https://maps.app.goo.gl/bhPDhjUN4jsSegu48" className="contact-link footer-contact-link no-underline" target="_blank" rel="noopener">
+              <MapPin /> Buckley Business Park C6
             </a>
+            <span className="text-primary no-underline block">(New Shop Location!)</span> */}
             <div className="flex gap-10 pt-8 flex-col lg:flex-row max-w-screen-md">
               <motion.a href="/contact" className="top-quote-btn" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
                 <Image src="/assets/icons/clipboard.svg" alt="clipboard" className="btn-icon text-white" width={36} height={36} />

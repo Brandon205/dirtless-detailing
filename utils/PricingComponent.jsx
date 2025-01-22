@@ -76,7 +76,13 @@ export default function PricingComponent(props) {
   return (
     <div className="pricing__container">
       <div className="pricing__img">
-        <Image src={imagesArr[currVal]} alt="Dirt-Less Detailing sizing" fill className="object-cover rounded-3xl" />
+        <Image
+          src={imagesArr[currVal]}
+          alt="Dirt-Less Detailing sizing"
+          fill
+          sizes="(max-width: 1350px) 600px, (min-width: 1351px) 800px"
+          className="object-cover rounded-3xl"
+        />
       </div>
       <Select value={currVal} onValueChange={(e) => updateValue(e)} defaultValue="2">
         <SelectTrigger className="text-2xl w-[250px]">

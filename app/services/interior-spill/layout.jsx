@@ -4,7 +4,8 @@ export const metadata = {
   alternates: { canonical: "https://www.dirtlessdetailing.com/services/interior-spill" },
   openGraph: {
     type: "website",
-    url: "https://www.dirtlessdetailing.com/services/interior-spill"
+    url: "https://www.dirtlessdetailing.com/services/interior-spill",
+    image: "/assets/images/showcase/ceramic1285.jpg"
   }
 };
 

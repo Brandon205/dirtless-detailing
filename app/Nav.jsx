@@ -40,27 +40,6 @@ export default function Nav() {
     }
   };
 
-  // let changeNav = (changeTo) => {
-  //   switch (changeTo) {
-  //     case "services":
-  //       {
-  //         setGallery(false);
-  //         setServices(true);
-  //       }
-  //       break;
-  //     case "gallery":
-  //       {
-  //         setServices(false);
-  //         setGallery(true);
-  //       }
-  //       break;
-  //     default: {
-  //       setServices(false);
-  //       setGallery(false);
-  //     }
-  //   }
-  // };
-
   const navParent = {
     open: { opacity: 1 },
     closed: { opacity: 0 }
@@ -79,19 +58,18 @@ export default function Nav() {
     <header className="App-header">
       <nav id="nav" ref={navBar}>
         <a style={{ display: "flex", justifyContent: "flex-start" }} className="nav-logo" href="/" aria-label="Dirt-Less Detailing Logo">
-          <Image src="/assets/images/showcase/homepage-logo.png" alt="Dirt-Less Detailing Logo" width={150} height={108} />
+          <Image src="/assets/images/showcase/homepage-logo.png" alt="Dirt-Less Detailing Logo" className="w-auto h-auto" priority width={150} height={108} />
         </a>
         {nav === "none" ? (
-          ""
+          <Image
+            src="/assets/icons/hamburger-menu.svg"
+            alt="close"
+            className="btn-icon text-white cursor-pointer"
+            width={48}
+            height={48}
+            onClick={() => setNav("block")}
+          />
         ) : (
-          // <Image
-          //   src="/assets/icons/hamburger-menu.svg"
-          //   alt="Menu bars"
-          //   className="btn-icon text-white cursor-pointer"
-          //   width={48}
-          //   height={48}
-          //   onClick={() => setNav("block")}
-          // />
           <Image
             src="/assets/icons/close.svg"
             alt="close"

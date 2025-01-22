@@ -5,7 +5,8 @@ export const metadata = {
   alternates: { canonical: "https://www.dirtlessdetailing.com/services/interior-swift" },
   openGraph: {
     type: "website",
-    url: "https://www.dirtlessdetailing.com/services/interior-swift"
+    url: "https://www.dirtlessdetailing.com/services/interior-swift",
+    image: "/assets/images/interior/driver3.jpg"
   }
 };
 

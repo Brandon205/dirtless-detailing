@@ -4,16 +4,11 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "res.cloudinary.com",
-        port: "",
-      },
-      {
-        protocol: "https",
-        hostname: "imagedelivery.net",
-        port: "",
-      },
-    ],
-  },
+        hostname: "dirtlessdetailing.com",
+        port: ""
+      }
+    ]
+  }
 };
 
 export default nextConfig;

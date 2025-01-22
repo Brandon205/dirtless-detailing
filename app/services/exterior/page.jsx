@@ -19,7 +19,7 @@ const jsonld = {
   "@context": "https://schema.org/",
   "@type": "Product",
   "name": "Exterior Decon Wash",
-  "image": "assets/images/exterior/subaruWashed.jpeg",
+  "image": "/assets/images/exterior/subaruWashed.jpeg",
   "description": "Get a car wash like never before with our Exterior Decon Wash. Where we go in depth to get all corners and remove any paint contaminants.",
   "brand": {
     "@type": "Brand",

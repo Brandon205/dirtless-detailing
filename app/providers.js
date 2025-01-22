@@ -8,11 +8,11 @@ if (typeof window !== "undefined") {
     // Enable debug mode in development
     loaded: (posthog) => {
       if (process.env.NODE_ENV === "development") {
-        posthog.debug();
+        posthog.debug(false);
       }
     },
     capture_pageleave: false,
-    capture_pageview: true,
+    capture_pageview: true
   });
 }
 

@@ -137,7 +137,7 @@ export default function About() {
     <div className="App bg-contact">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
       <div className="cover">
-        <Image src="/assets/images/correction/teslafoam.jpg" alt="Dirt-Less Detailing" fill className="object-cover" />
+        <Image src="/assets/images/correction/teslafoam.jpg" alt="Dirt-Less Detailing" priority fill className="object-cover" />
       </div>
       <div className="servicepage-header">
         <div style={{ alignItems: "center" }}>
@@ -164,13 +164,20 @@ export default function About() {
           {smallScreen ? (
             <div className="about-image-container">
               <div className="about-image w-full max-w-[400px] h-[225px]">
-                <Image src="/assets/images/exterior/fordGTBack.jpg" alt="Clean Ford GT in a garage" fill className="object-cover" />
+                <Image
+                  src="/assets/images/exterior/fordGTBack.jpg"
+                  alt="Clean Ford GT in a garage"
+                  sizes="(max-width: 979px) 400px, (min-width: 980px) 450px"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div className="about-image w-full max-w-[400px] h-[225px]">
                 <Image
                   src="/assets/images/showcase/worktruckGriots.jpg"
                   alt="Our worktruck in front of Griots Garage in Tacoma"
                   fill
+                  sizes="(max-width: 979px) 400px, (min-width: 980px) 450px"
                   className="object-cover"
                 />
               </div>
@@ -276,7 +283,13 @@ export default function About() {
         </div>
 
         <div className="about-image w-full max-w-[800px] h-[375px] mx-auto">
-          <Image src="/assets/images/showcase/porscheFront.jpg" alt="Dirt-Less Detailing Owner" fill className="object-cover" />
+          <Image
+            src="/assets/images/showcase/porscheFront.jpg"
+            alt="Dirt-Less Detailing Owner"
+            sizes="(max-width: 979px) 100vw, (min-width: 980px) 800px"
+            fill
+            className="object-cover"
+          />
         </div>
         <h3 style={{ fontSize: "2.5em", margin: 0, textAlign: smallScreen ? "left" : "center" }}>Dirt-Less Detailing</h3>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }} className="text-left">

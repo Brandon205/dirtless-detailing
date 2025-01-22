@@ -122,11 +122,6 @@ export const HeroSlider = ({
       {areImagesLoaded && children}
       {areImagesLoaded && overlay && <div className={cn("absolute inset-0 bg-black/60 z-40", overlayClassName)} />}
 
-      {/* {loading && (
-        <div className="h-[90vh]">
-          <h1 className="text-white">Hello, loading</h1>
-        </div>
-      )} */}
       {areImagesLoaded && (
         <AnimatePresence>
           <motion.img

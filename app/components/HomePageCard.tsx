@@ -55,7 +55,7 @@ export default function HomePageCard({ title, imageUrl, description, steps, hour
   return (
     <div className="flex flex-col flex-1 relative w-[90%] min-w-[200px] lg:min-w-[400px] max-w-[95%] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
       <div className="relative m-[2%] bg-center bg-no-repeat bg-cover h-[200px] w-[96%] lg:h-[250px] rounded-2xl flex justify-center">
-        <Image src={imageUrl} alt={title} className="rounded-2xl object-cover" priority layout="fill" />
+        <Image src={imageUrl} alt={title} className="rounded-2xl object-cover" priority fill sizes="(max-width: 1550px) 80vw, (min-width: 1551px) 33vw" />
       </div>
       <div className="w-full flex justify-between flex-1 px-3 flex-col items-center">
         <div className="text-center">

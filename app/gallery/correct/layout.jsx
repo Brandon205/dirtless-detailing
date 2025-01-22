@@ -4,7 +4,8 @@ export const metadata = {
   alternates: { canonical: "https://www.dirtlessdetailing.com/gallery/correct" },
   openGraph: {
     type: "website",
-    url: "https://www.dirtlessdetailing.com/gallery/correct"
+    url: "https://www.dirtlessdetailing.com/gallery/correct",
+    image: "/assets/images/correction/ceramicBeads1.jpg"
   }
 };
 

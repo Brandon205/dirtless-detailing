@@ -180,6 +180,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
   color: white;
   font-size: 22px;
   text-decoration: none;
@@ -3273,6 +3274,9 @@ footer {
     font-size: 1.1em;
   }
 
+  .top-quote-btn {
+    margin: 0 0;
+  }
   .nav-logo {
     flex-grow: 0.2;
   }
