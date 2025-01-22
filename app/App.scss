@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* MAIN COLORS:  */
-$main-clr: #fab638;
+$main-clr: #fea41c;
 $accent: #ff2600;
 $contact-bkg: #07080b; // #1b1b1b
 $contact-bkg-lighter: #181b21; // #1f1f1f
@@ -147,7 +147,8 @@ img {
   color: white;
   font-size: 22px;
   text-decoration: none;
-  background-color: $main-clr;
+  border: 2px solid $main-clr;
+  background-color: $contact-bkg-lighter;
   border-radius: 6px;
   padding: 0.7rem 1.3rem;
   font-weight: 600;
@@ -160,7 +161,9 @@ img {
 
 .btn-secondary {
   background-color: transparent;
-  outline: 2px solid $main-clr;
+  border: 2px solid $contact-bkg;
+  background: $contact-bkg-lighter;
+  // outline: 2px solid $main-clr;
 }
 
 .new-contact-btn {
@@ -373,71 +376,11 @@ li span {
 
 /** Contact Page CSS **/
 
-// input[type="checkbox"] {
-//   display: none;
-// }
-
-// input[type="checkbox"]:checked + label:not(.dirty-label) {
-//   transition: all 500ms ease;
-//   background-color: $main-clr;
-//   color: white;
-//   border-color: $main-clr;
-// }
-
-// input[type="checkbox"]:checked + .dirty-label {
-//   transition: all 500ms ease;
-//   color: white;
-//   border-color: $main-clr;
-// }
-
-// input[type="checkbox"]:checked + label .special-package {
-//   color: white;
-// }
-
-// input[type="checkbox"]:disabled + label {
-//   color: gray;
-//   cursor: default;
-// }
-
-// input[type="radio"]:checked + label {
-//   transition: all 500ms ease;
-//   background-color: $main-clr;
-//   color: white;
-//   border-color: $main-clr;
-//   border: 3px solid $main-clr;
-// }
-
-// input[type="radio"]:checked + label .special-package {
-//   color: white;
-// }
-
-// input[type="radio"]:disabled + label {
-//   color: gray;
-//   cursor: default;
-// }
-
-// datalist {
-//   display: flex;
-//   justify-content: space-between;
-//   width: 200px;
-// }
-
-// option {
-//   padding: 0;
-// }
-
 .contact-container {
   width: 100%;
   color: white;
   background-color: $contact-bkg;
 }
-
-// .form {
-//   width: 100%;
-//   display: flex;
-//   flex-direction: column;
-//   gap: 2rem;
-// }
 
 .text-input {
   background-color: white;

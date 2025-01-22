@@ -72,7 +72,7 @@ export default function HomePageCard({ title, imageUrl, description, steps, hour
               <ArrowRight color="white" />
             </motion.span>
           </motion.a>
-          <motion.p className="text-center p-0 text-secondaryText font-semibold mx-auto max-w-[90%]">{description}</motion.p>
+          <motion.p className="text-center p-0 text-gray-400 font-semibold mx-auto max-w-[90%]">{description}</motion.p>
         </div>
 
         <motion.ul
@@ -94,10 +94,10 @@ export default function HomePageCard({ title, imageUrl, description, steps, hour
           <div className="flex w-full justify-around gap-4 py-4">
             <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
               <p className="text-white m-0">{hours}</p>
-              <p className="text-secondaryText text-[14px]">hours</p>
+              <p className="text-gray-400 text-[14px]">hours</p>
             </div>
             <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
-              <p className="text-secondaryText text-[14px]">Starting at</p>
+              <p className="text-gray-400 text-[14px]">Starting at</p>
               <p className="text-white m-0 text-2xl">${prices["2 Door"][serviceType][specificService]}</p>
             </div>
           </div>
@@ -114,7 +114,7 @@ export default function HomePageCard({ title, imageUrl, description, steps, hour
             </motion.a>
             <motion.a
               href="/contact"
-              className="py-3 text-dm tracking-wide px-[0.9rem] bg-primary rounded-[40px] w-full font-bold items-center flex justify-center"
+              className="py-3 text-dm tracking-wide px-[0.9rem] bg-primary text-black rounded-[40px] w-full font-bold items-center flex justify-center"
               initial={{ scale: 1 }}
               whileHover={{ scale: 1.05 }}
             >

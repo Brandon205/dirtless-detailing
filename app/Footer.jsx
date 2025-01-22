@@ -16,11 +16,11 @@ export default function Footer() {
         </div>
         <div>
           <p>©2025 Dirt-Less Detailing.</p>
-          <a target="_blank" rel="noopener" href="https://icons8.com" className="text-gray-400 hover:underline">
+          <a target="_blank" rel="noopener" href="https://icons8.com" className="text-gray-400 underline">
             Icons made by Icons8.
           </a>
           <br />
-          <a target="_blank" rel="noopener" href="https://github.com/Brandon205" className="text-gray-400 hover:underline">
+          <a target="_blank" rel="noopener" href="https://www.brandonblack.dev" className="text-gray-400 underline">
             Website by Brandon.
           </a>
         </div>
