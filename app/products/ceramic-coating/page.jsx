@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { topBtnVariant } from "../../../utils/animationVariations";
 
 export default function products() {
