@@ -3,7 +3,6 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { X } from "lucide-react";
 
 export default function Nav() {
   const [nav, setNav] = useState("none");
@@ -83,16 +82,16 @@ export default function Nav() {
           <Image src="/assets/images/showcase/homepage-logo.png" alt="Dirt-Less Detailing Logo" width={150} height={108} />
         </a>
         {nav === "none" ? (
-          // <img src="../assets/icons/menuBars.png" alt="menu bars" className="menu-bars" onClick={() => setNav("block")} />
-          <Image
-            src="/assets/icons/hamburger-menu.svg"
-            alt="Menu bars"
-            className="btn-icon text-white cursor-pointer"
-            width={48}
-            height={48}
-            onClick={() => setNav("block")}
-          />
+          ""
         ) : (
+          // <Image
+          //   src="/assets/icons/hamburger-menu.svg"
+          //   alt="Menu bars"
+          //   className="btn-icon text-white cursor-pointer"
+          //   width={48}
+          //   height={48}
+          //   onClick={() => setNav("block")}
+          // />
           <Image
             src="/assets/icons/close.svg"
             alt="close"
@@ -101,7 +100,6 @@ export default function Nav() {
             height={48}
             onClick={() => setNav("none")}
           />
-          // <img src="../assets/icons/close.png" alt="close" className="menu-bars" onClick={() => setNav("none")} />
         )}
         <div style={{ display: nav }} className="menu-container">
           <ul className="main-ul">
