@@ -204,10 +204,6 @@ li span {
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.544);
 }
 
-.nav-logo {
-  flex-grow: 1;
-}
-
 .menu-container {
   position: absolute;
   text-align: left;
@@ -1555,9 +1551,6 @@ footer {
   .top-quote-btn {
     margin: 0 0;
   }
-  .nav-logo {
-    flex-grow: 0.2;
-  }
 
   .nav-div {
     padding: 1.5rem;
@@ -1792,7 +1785,6 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     margin: 0;
-    width: 100%;
   }
 
   .menu-li {
@@ -1873,10 +1865,6 @@ footer {
   .stats-container {
     width: 100%;
     justify-content: space-around;
-  }
-
-  .nav-logo {
-    flex-grow: 0.65;
   }
 
   .header-icons-container {

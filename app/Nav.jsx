@@ -57,14 +57,14 @@ export default function Nav() {
   return (
     <header className="App-header">
       <nav id="nav" ref={navBar}>
-        <a style={{ display: "flex", justifyContent: "flex-start" }} className="nav-logo" href="/" aria-label="Dirt-Less Detailing Logo">
-          <Image src="/assets/images/showcase/homepage-logo.png" alt="Dirt-Less Detailing Logo" className="w-auto h-auto" priority width={150} height={108} />
+        <a className="nav-logo relative w-[150px] h-[105px] lg:w-[175px] lg:h-[115px]" href="/" aria-label="Dirt-Less Detailing Logo">
+          <Image src="/assets/images/showcase/homepage-logo.png" alt="Dirt-Less Detailing Logo" className="object-cover" priority fill />
         </a>
         {nav === "none" ? (
           <Image
             src="/assets/icons/hamburger-menu.svg"
             alt="close"
-            className={`${nav === "block" ? "block" : "hidden"} btn-icon text-white cursor-pointer`}
+            className="lg:hidden inline-block btn-icon text-white cursor-pointer"
             width={48}
             height={48}
             onClick={() => setNav("block")}
@@ -79,8 +79,9 @@ export default function Nav() {
             onClick={() => setNav("none")}
           />
         )}
-        <div style={{ display: nav }} className="menu-container">
-          <ul className="main-ul">
+        <div style={{ display: nav }} className="menu-container flex-shrink">
+          <div className="flex-grow"></div>
+          <ul className="main-ul justify-end">
             <li className="menu-li">
               <Link href="/" className="menu-link">
                 Home
@@ -118,7 +119,7 @@ export default function Nav() {
                       exit="closed"
                       transition={{ ease: "easeInOut", duration: 0.2 }}
                       variants={navParent}
-                      className="nav-li"
+                      className="nav-li lg:mt-2"
                     >
                       <div>
                         <h4 className="sub-menu-header">INTERIOR CLEANING SERVICES</h4>
@@ -203,7 +204,7 @@ export default function Nav() {
                       exit="closed"
                       transition={{ ease: "easeInOut", duration: 0.3 }}
                       variants={navParent}
-                      className="nav-li"
+                      className="nav-li lg:mt-2"
                     >
                       <h4 className="sub-menu-header">GALLERIES</h4>
                       <motion.div variants={navChild} className="sub-menu-div" onClick={() => setNav("none")}>

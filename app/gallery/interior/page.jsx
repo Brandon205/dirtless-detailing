@@ -7,8 +7,7 @@ import { topBtnVariant } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
 
 const baImages = [
-  { src: "/assets/images/before&afters/intBa1281.jpg" },
-  { src: "/assets/images/before&afters/intBa1280.jpg" },
+  { src: "/assets/images/before&afters/badInteriorBA.png" },
   { src: "/assets/images/before&afters/cupholderBA.jpg" },
   { src: "/assets/images/before&afters/trunkBA2.jpg" },
   { src: "/assets/images/before&afters/floorBA.jpg" },

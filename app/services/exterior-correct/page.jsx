@@ -283,6 +283,8 @@ export default function ExteriorCorrect() {
               />
             </div>
 
+            <br className="extra-space" />
+
             <div className="preview-container">
               <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/correct" className="gallery-preview">
                 <motion.img

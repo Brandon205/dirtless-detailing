@@ -129,6 +129,7 @@ export const HeroSlider = ({
             src={loadedImages[currentIndex]}
             initial="initial"
             animate="visible"
+            alt={"Homepage " + currentIndex}
             exit={direction === "up" ? "upExit" : "downExit"}
             variants={slideVariants}
             className="image h-full w-full absolute inset-0 object-cover object-center"

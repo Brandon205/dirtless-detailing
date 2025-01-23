@@ -56,7 +56,7 @@ export default function Benefits() {
           }}
           onMouseLeave={() => starRef.current.goToAndStop(20, true)}
         />
-        <p className="header-desc text-left">30+</p>
+        <p className="header-desc text-left">40+</p>
         <span className="header-desc-span">5 Star Reviews</span>
       </div>
       <div>

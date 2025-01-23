@@ -8,7 +8,6 @@ import { Titillium_Web } from "next/font/google";
 import { InfiniteMovingCards } from "./components/InfiniteMovingCards";
 import Image from "next/image";
 import FaqItem from "./components/FaqItem";
-import { MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 import IframeSuspense from "../utils/IframeSuspense";
 import HomePageCard from "./components/HomePageCard";
@@ -93,13 +92,13 @@ export default function Home() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
       <HeroSlider
         images={[
-          "/assets/images/exterior/range-rover-left.jpg",
-          "/assets/images/correction/ceramicBeads1.jpg",
-          "/assets/images/exterior/3doorFordRight.jpg",
-          "/assets/images/correction/wiping.jpg",
-          "/assets/images/exterior/fordGTBack.jpg",
-          "/assets/images/interior/driverNewLexus.jpg",
-          "/assets/images/exterior/archCoTruck.jpg"
+          "/assets/images/showcase/range-rover-left.webp",
+          "/assets/images/showcase/ceramicBeads1.webp",
+          "/assets/images/showcase/3doorFordRight.webp",
+          "/assets/images/showcase/wiping.webp",
+          "/assets/images/showcase/fordGTBack.webp",
+          "/assets/images/showcase/driverNewLexus.webp",
+          "/assets/images/showcase/archCoTruck.webp"
         ]}
       >
         <header className="w-screen flex flex-col h-[90vh] pt-28 z-50 items-center lg:items-start lg:pl-20 xl:gap-3 text-sm xl:text-lg justify-center">
@@ -329,7 +328,7 @@ export default function Home() {
           </p>
         </div>
         <section className="flex flex-col items-center xl:flex-row w-11/12 justify-center gap-8 xl:w-2/3">
-          <div className="flex flex-col gap-6 w-[500px] calc text-left">
+          <div className="flex flex-col gap-6 w-[500px] w-full calc text-left">
             {faqItems.map((item, i) => (
               <FaqItem key={i} i={i} expanded={expanded} setExpanded={setExpanded} title={item.title} description={item.description} isMobile={smallScreen} />
             ))}
