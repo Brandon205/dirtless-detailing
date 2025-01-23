@@ -148,7 +148,7 @@ img {
   font-size: 22px;
   text-decoration: none;
   border: 2px solid $main-clr;
-  background-color: $contact-bkg-lighter;
+  background-color: $main-clr;
   border-radius: 6px;
   padding: 0.7rem 1.3rem;
   font-weight: 600;
@@ -161,9 +161,7 @@ img {
 
 .btn-secondary {
   background-color: transparent;
-  border: 2px solid $contact-bkg;
-  background: $contact-bkg-lighter;
-  // outline: 2px solid $main-clr;
+  border: 2px solid $main-clr;
 }
 
 .new-contact-btn {
@@ -1783,8 +1781,9 @@ footer {
   .main-ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin: 0;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin: 0 1rem 0 0;
   }
 
   .menu-li {

@@ -19,19 +19,6 @@ const serviceVariant = {
   hover: { scale: 1.05 }
 };
 
-const arrowVariant = {
-  initial: { x: -25, opacity: 0 },
-  hover: {
-    x: 0,
-    opacity: 1,
-    transition: {
-      duration: 0.4,
-      type: "spring",
-      ease: "easeIn"
-    }
-  }
-};
-
 // <HomePageCard
 // title="Interior Swift"
 // imageUrl="../assets/images/interior-swift.jpg"
@@ -68,9 +55,6 @@ export default function HomePageCard({ title, imageUrl, description, steps, hour
             animate="initial"
           >
             {title}
-            <motion.span className="flex items-center pl-2" variants={arrowVariant}>
-              <ArrowRight color="white" />
-            </motion.span>
           </motion.a>
           <motion.p className="text-center p-0 text-gray-400 font-semibold mx-auto max-w-[90%]">{description}</motion.p>
         </div>
@@ -114,7 +98,7 @@ export default function HomePageCard({ title, imageUrl, description, steps, hour
             </motion.a>
             <motion.a
               href="/contact"
-              className="py-3 text-dm tracking-wide px-[0.9rem] bg-primary text-black rounded-[40px] w-full font-bold items-center flex justify-center"
+              className="py-3 text-dm tracking-wide px-[0.9rem] bg-primary rounded-[40px] w-full font-bold items-center flex justify-center"
               initial={{ scale: 1 }}
               whileHover={{ scale: 1.05 }}
             >

@@ -79,9 +79,8 @@ export default function Nav() {
             onClick={() => setNav("none")}
           />
         )}
-        <div style={{ display: nav }} className="menu-container flex-shrink">
-          <div className="flex-grow"></div>
-          <ul className="main-ul justify-end">
+        <div style={{ display: nav }} className="menu-container">
+          <ul className="main-ul">
             <li className="menu-li">
               <Link href="/" className="menu-link">
                 Home
