@@ -130,7 +130,7 @@ export default function PaintCorrectionGallery() {
   return (
     <div className="pb-8">
       <div className="cover">
-        <Image src="/assets/images/exterior/sideofsilverram.jpg" alt="Side of silver dodge ram" priority fill className="object-cover" />
+        <Image src="/assets/images/exterior/sideofsilverram.jpg" alt="Side of silver dodge ram" quality={50} priority fill className="object-cover" />
       </div>
       <div className="servicepage-header">
         <div style={{ alignItems: "center" }}>

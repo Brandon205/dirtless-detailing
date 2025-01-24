@@ -7,7 +7,8 @@ const nextConfig = {
         hostname: "dirtlessdetailing.com",
         port: ""
       }
-    ]
+    ],
+    formats: ["image/avif", "image/webp"]
   }
 };
 

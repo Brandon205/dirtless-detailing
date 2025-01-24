@@ -102,7 +102,14 @@ export default function FullIntGallery() {
   return (
     <div className="pb-8">
       <div className="cover">
-        <Image src="/assets/images/interior/driverNewLexus.jpg" alt="Cleaned Interior of a 2024 Lexus SUV" priority fill className="object-cover" />
+        <Image
+          src="/assets/images/interior/driverNewLexus.jpg"
+          alt="Cleaned Interior of a 2024 Lexus SUV"
+          quality={50}
+          priority
+          fill
+          className="object-cover"
+        />
       </div>
       <div className="servicepage-header">
         <div style={{ alignItems: "center" }}>
