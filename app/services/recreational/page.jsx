@@ -361,7 +361,14 @@ export default function Recreational() {
   );
 }
 
-function BoatPricing(props) {
+// length={length}
+//           setLength={setLength}
+//           currService={currService}
+//           setCurrService={setCurrService}
+//           imageIndex={imageIndex}
+//           setImageIndex={setImageIndex}
+
+function BoatPricing({ length, setLength, currService, setCurrService, imageIndex, setImageIndex }) {
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
@@ -372,35 +379,35 @@ function BoatPricing(props) {
 
   useEffect(() => {
     // Boat Exterior Detail, Boat Interior Detail, RV/Trailer Exterior Detail, ORV Detail
-    if (props.currService === "Boat Exterior Detail" || (props.currService === "Boat Interior Detail" && props.length >= 15)) {
+    if (currService === "Boat Exterior Detail" || (currService === "Boat Interior Detail" && length >= 15)) {
       // Longer boat image
-      props.setImageIndex(1);
-    } else if (props.currService === "Boat Exterior Detail" || props.currService === "Boat Interior Detail") {
+      setImageIndex(1);
+    } else if (currService === "Boat Exterior Detail" || currService === "Boat Interior Detail") {
       // Jet ski image
-      props.setImageIndex(0);
-    } else if (props.currService === "RV/Trailer Exterior Detail") {
+      setImageIndex(0);
+    } else if (currService === "RV/Trailer Exterior Detail") {
       // RV Image
-      props.setImageIndex(2);
-    } else if (props.currService === "ORV Detail") {
+      setImageIndex(2);
+    } else if (currService === "ORV Detail") {
       // Side by Side Image
-      props.setImageIndex(3);
+      setImageIndex(3);
     }
 
-    if (props.currService === "Boat Interior Detail" && props.length < 15) {
-      props.setLength(15);
+    if (currService === "Boat Interior Detail" && length < 15) {
+      setLength(15);
     }
-  }, [props.length, props.currService]);
+  }, [length, currService]);
 
   return (
     <div className="pricing__container">
       <div className="pricing__img">
-        <Image src={imagesArr[props.imageIndex]} alt="Dirt-Less Detailing sizing" fill className="object-cover rounded-3xl" />
+        <Image src={imagesArr[imageIndex]} alt="Dirt-Less Detailing sizing" fill className="object-cover rounded-3xl" />
       </div>
-      {props.currService === "ORV Detail" ? (
+      {currService === "ORV Detail" ? (
         ""
       ) : (
-        <select onChange={(e) => props.setLength(e.target.value)} className="vehicle__select" value={props.length}>
-          {props.currService === "Boat Exterior Detail" ? (
+        <select onChange={(e) => setLength(e.target.value)} className="vehicle__select" value={length}>
+          {currService === "Boat Exterior Detail" ? (
             <>
               <option value={5}>5'</option>
               <option value={6}>6'</option>
@@ -454,17 +461,17 @@ function BoatPricing(props) {
               {animate ? (
                 <AnimatedNumbers
                   includeComma
-                  animateToNumber={props.currService === "ORV Detail" ? 250 : 10 * props.length}
+                  animateToNumber={currService === "ORV Detail" ? 250 : 10 * length}
                   configs={[{ mass: 1, tension: 320, friction: 100 }]}
                 ></AnimatedNumbers>
-              ) : props.currService === "ORV Detail" ? (
+              ) : currService === "ORV Detail" ? (
                 250
               ) : (
-                10 * props.length
+                10 * length
               )}
             </span>
           </strong>
-          <p className="flex">{props.currService === "ORV Detail" ? "*Pricing may vary, contact us!" : "Pricing is $10/foot"}</p>
+          <p className="flex">{currService === "ORV Detail" ? "*Pricing may vary, contact us!" : "Pricing is $10/foot"}</p>
         </div>
       </div>
 

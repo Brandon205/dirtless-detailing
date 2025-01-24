@@ -44,7 +44,7 @@ const BeforeAfterSlider = ({ beforeImage, afterImage, aspectRatio = "16/9" }) =>
       document.removeEventListener("mouseup", handleMouseUp);
       document.removeEventListener("mousemove", handleMouseMove);
     };
-  }, [isDragging]);
+  }, [isDragging, handleMouseMove]);
 
   return (
     <div

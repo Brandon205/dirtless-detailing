@@ -32,10 +32,6 @@ export const HeroSlider = ({
     setCurrentIndex((prevIndex) => (prevIndex - 1 < 0 ? images.length - 1 : prevIndex - 1));
   };
 
-  useEffect(() => {
-    loadImages();
-  }, []);
-
   const loadImages = () => {
     setLoading(true);
     const loadPromises = images.map((image) => {
@@ -54,6 +50,11 @@ export const HeroSlider = ({
       })
       .catch((error) => console.error("Failed to load images", error));
   };
+
+  useEffect(() => {
+    loadImages();
+  }, [loadImages]);
+
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "ArrowRight") {
@@ -77,7 +78,7 @@ export const HeroSlider = ({
       window.removeEventListener("keydown", handleKeyDown);
       clearInterval(interval);
     };
-  }, []);
+  }, [handleNext, handlePrevious, autoplay]);
 
   const slideVariants = {
     initial: {
