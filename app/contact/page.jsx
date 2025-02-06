@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { BookingButton } from "../components/BookingButton";
 import { Clock, MapPin, Smartphone, Mail, Gift } from "lucide-react";
 import IframeSuspense from "../../utils/IframeSuspense";
@@ -34,6 +35,16 @@ export default function Contact() {
       <p className="text-center mb-10">
         <span className="text-[#3c8d0d] bold">Gift cards now available online!</span>
       </p>
+      <div className="flex gap-2 lg:gap-8 items-center justify-center py-4 flex-col lg:flex-row max-w-[90%] mx-auto lg:mx-0">
+        <Image src="/assets/icons/valentinesGift.svg" alt="valentines gift box" width={48} height={48} />
+        <div>
+          <p className="text-[#dd9fc0] font-medium text-2xl text-center lg:text-left">
+            <span className="text-[#dd9fc0] font-extrabold text-2xl">10% OFF </span>
+            all details and Gift Cards with code: <span className="text-[#dd9fc0] font-extrabold text-2xl">VALENTINE10</span>
+          </p>
+          <p className="text-white text-lg w-1/2 text-center lg:text-left lg:w-full mx-auto">Valid until 2/14/25 on any Online Booking!</p>
+        </div>
+      </div>
       <div className="grid items-center" style={{ paddingTop: 0 }}>
         <BookingButton title="Book Online!" />
       </div>

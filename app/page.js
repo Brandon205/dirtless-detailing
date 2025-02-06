@@ -113,10 +113,16 @@ export default function Home() {
               Everything from removing stains from your interior, to our most detail-oriented paint correction and ceramic coating jobs, you can trust Dirt-Less
               Detailing to get the job done right!
             </p>
-            {/* <a href="https://maps.app.goo.gl/bhPDhjUN4jsSegu48" className="contact-link footer-contact-link no-underline" target="_blank" rel="noopener">
-              <MapPin /> Buckley Business Park C6
-            </a>
-            <span className="text-primary no-underline block">(New Shop Location!)</span> */}
+            <div className="flex gap-2 lg:gap-8 items-center py-4 flex-col lg:flex-row max-w-[90%] mx-auto lg:mx-0">
+              <Image src="/assets/icons/valentinesGift.svg" alt="valentines gift box" width={48} height={48} />
+              <div>
+                <p className="text-[#dd9fc0] font-medium text-2xl">
+                  <span className="text-[#dd9fc0] font-extrabold text-2xl">10% OFF </span>
+                  all details and Gift Cards with code: <span className="text-[#dd9fc0] font-extrabold text-2xl">VALENTINE10</span>
+                </p>
+                <p className="text-white text-lg w-1/2 lg:w-full mx-auto">Valid until 2/14/25 on any Online Booking!</p>
+              </div>
+            </div>
             <div className="flex gap-10 pt-8 flex-col lg:flex-row max-w-screen-md">
               <motion.a href="/contact" className="top-quote-btn" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
                 <Image src="/assets/icons/clipboard.svg" alt="clipboard" className="btn-icon text-white" width={36} height={36} />

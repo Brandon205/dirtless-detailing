@@ -53,7 +53,7 @@ export const HeroSlider = ({
 
   useEffect(() => {
     loadImages();
-  }, [loadImages]);
+  }, []);
 
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {

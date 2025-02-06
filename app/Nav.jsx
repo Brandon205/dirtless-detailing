@@ -58,7 +58,7 @@ export default function Nav() {
     <header className="App-header">
       <nav id="nav" ref={navBar}>
         <a className="nav-logo relative w-[150px] h-[105px] lg:w-[175px] lg:h-[115px]" href="/" aria-label="Dirt-Less Detailing Logo">
-          <Image src="/assets/images/showcase/homepage-logo.png" alt="Dirt-Less Detailing Logo" className="object-cover" priority fill />
+          <Image src="/assets/images/showcase/homepage-logo.png" alt="Dirt-Less Detailing Logo" className="object-cover" sizes="33vw" priority fill />
         </a>
         {nav === "none" ? (
           <Image
