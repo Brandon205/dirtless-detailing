@@ -113,7 +113,7 @@ export default function Home() {
               Everything from removing stains from your interior, to our most detail-oriented paint correction and ceramic coating jobs, you can trust Dirt-Less
               Detailing to get the job done right!
             </p>
-            <div className="flex gap-2 lg:gap-8 items-center py-4 flex-col lg:flex-row max-w-[90%] mx-auto lg:mx-0">
+            {/* <div className="flex gap-2 lg:gap-8 items-center py-4 flex-col lg:flex-row max-w-[90%] mx-auto lg:mx-0">
               <Image src="/assets/icons/valentinesGift.svg" alt="valentines gift box" width={48} height={48} />
               <div>
                 <p className="text-[#dd9fc0] font-medium text-2xl">
@@ -122,7 +122,7 @@ export default function Home() {
                 </p>
                 <p className="text-white text-lg w-1/2 lg:w-full mx-auto">Valid until 2/14/25 on any Online Booking!</p>
               </div>
-            </div>
+            </div> */}
             <div className="flex gap-10 pt-8 flex-col lg:flex-row max-w-screen-md">
               <motion.a href="/contact" className="top-quote-btn" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
                 <Image src="/assets/icons/clipboard.svg" alt="clipboard" className="btn-icon text-white" width={36} height={36} />
