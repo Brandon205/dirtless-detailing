@@ -60,7 +60,7 @@ export default function HomePageCard({ title, imageUrl, description, steps, hour
         </div>
 
         <motion.ul
-          className="list-none flex flex-col items-start text-xl font-normal w-full m-0 gap-4 pt-6 pb-4"
+          className="list-none flex flex-col justify-start items-start text-xl font-normal w-full m-0 gap-4 pt-6 pb-4"
           variants={{ initial: {}, show: { transition: { staggerChildren: 0.25 } } }}
           whileInView="show"
           initial="initial"

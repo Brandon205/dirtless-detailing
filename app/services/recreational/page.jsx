@@ -15,7 +15,7 @@ const jsonld = {
   "@context": "https://schema.org/",
   "@type": "Product",
   "name": "Boat/RV/Trailer Detailing",
-  "image": "/assets/images/sealshine/rv-finished.jpg",
+  "image": "/assets/images/showcase/RVWash.jpg",
   "description": "At Dirt-Less Detailing we aren't limited to just cars and trucks! Book any boats, RV's, Trailers, or ORV's for a detail today!",
   "brand": {
     "@type": "Brand",
@@ -35,12 +35,12 @@ const faqItems = [
   {
     title: "What does your ORV detailing package include?",
     description:
-      "Our ORV Detailing will include cleaning/washing the full interior and exterior, using foaming chemicals that are safe to use on all surfaces that's still strong enough to ensure no dirt survives!"
+      "Our ORV Detailing will include cleaning/washing the full interior and exterior, using foaming chemicals that are safe to use on all surfaces that's still strong enough to ensure no dirt sticks behind!"
   },
   {
     title: "Do you offer polishing for boats and RV's?",
     description:
-      "Not as of right now, only washes and boat interiors. We may add polishing and ceramic coating services for both in the future, so be sure to check back!"
+      "Not usually as of right now, only washes and boat interiors. We have done it in the past though as you can see, so give us a call and we might be able to work something out. Our typical pricing for that is starting around $120/ft. We may formally offer polishing and ceramic coating services for both in the future, so be sure to check back!"
   },
   {
     title: "Can you come to me for these services?",
@@ -56,7 +56,7 @@ const faqItems = [
 const imagesArr = [
   "/assets/images/showcase/jetskisRPortrait.jpeg", // Jet Skis
   "/assets/images/showcase/unsplash-boat-interior.jpg", // Boat
-  "/assets/images/sealshine/rv-finished.jpg", // RV
+  "/assets/images/showcase/rvfoamed.jpg", // RV
   "/assets/images/exterior/sidexside.png" // ORV
 ];
 
@@ -279,10 +279,10 @@ export default function Recreational() {
     <section className="service-content-container">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
       <HeaderComponent
-        imageUrl="/assets/images/sealshine/rv-finished.jpg"
+        imageUrl="/assets/images/showcase/RVWash.jpg"
         title="Boats, RV's, Trailer, and ORV Detailing"
         description="Bring any of your recreational vehicles back to life with our new detailing services for them!"
-        secondaryUrl="/assets/images/showcase/jetskisRPortrait.jpeg"
+        secondaryUrl="/assets/images/exterior/sidexside.png"
       />
 
       <div className="main-content-container">

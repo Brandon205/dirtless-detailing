@@ -156,7 +156,12 @@ export default function Home() {
             title="Swift Interior Detail"
             imageUrl="/assets/images/interior/driver3.jpg"
             description="Our simple interior cleaning, best for maintenance or to quickly freshen up your interior."
-            steps={["Blow Out & Vacuum the Vehicle", "Wipe Down and Condition All Surfaces", "Wash/Clean the Floormats", "Clean Interior Windows & Glass"]}
+            steps={[
+              "Complete vehicle vacuuming",
+              "Light/small stain spot treatment",
+              "Clean and condition all leather and plastics",
+              "Clean interior glass to a streak-free finish"
+            ]}
             hours="1.5-3"
             linkUrl="/services/interior-swift"
           />
@@ -166,11 +171,12 @@ export default function Home() {
             imageUrl="/assets/images/interior/driver5.jpg"
             description="Our thorough interior cleaning, best for cars with staining, lots of dog hair/dirt, or ones that haven't been cleaned out in a long time."
             steps={[
-              "Blow Out & Vacuum all Dirt/Debris",
-              "Steam Extraction/Carpet Shampooing",
-              "Wash Out Door Jambs",
-              "All Leathers and Plastics Cleaned",
-              "Interior & Exterior Glass Cleaned"
+              "Thorough blow-out and vacuum to remove all dirt and debris",
+              "Stain removal and extraction of all fabrics + headliner",
+              "Wash all of the door jambs",
+              "Deep cleaning & conditioning of all leather and plastics",
+              "Wash/clean all floor mats",
+              "Clean interior glass to a streak-free finish"
             ]}
             hours="3-6+"
             linkUrl="/services/interior"
@@ -182,8 +188,8 @@ export default function Home() {
             description="Our Full Interior Service topped with a interior ceramic spray on all surfaces, perfect for making any future cleaning a breeze."
             steps={[
               "EVERYTHING From our Full Interior Service",
-              "All Leathers Conditioned",
-              "Interior Ceramic Coating Applied To All Surfaces (Even Carpets!)"
+              "All Leathers/plastics conditioned with an interior ceramic coating",
+              "All Carpet coated and brushed with our interior ceramic coating"
             ]}
             hours="4.5-7+"
             linkUrl="/services/interior-spill"
@@ -204,10 +210,10 @@ export default function Home() {
             imageUrl="/assets/images/exterior/jeepRenegade.jpg"
             description="The detailers car wash - one that goes far beyond what an auto car wash can do. Your wheels, tires, and even paint will be cleaner than ever!"
             steps={[
-              "Full Vehicle Strip Wash (to remove any embedded contaminants, tar, and sap)",
-              "Scrub & Wash the Tires, Wheels, Wheel Barrels, and Wells",
-              "Clean Out All Door Jambs and the Gas Door",
-              "Apply a Ceramic Protectant on All Surfaces (lasts 3-6 months)"
+              "Full vehicle hand wash, with tar/sap remover applied in spots with sap and tar",
+              "Scrub & wash the tires, wheels, wheel barrels, and wells",
+              "Clean out all door jambs and the gas door",
+              "Apply a ceramic spray on all surfaces (lasts 3-6 months)"
             ]}
             hours="4.5-7+"
             linkUrl="/services/exterior"
@@ -219,10 +225,10 @@ export default function Home() {
             description="Our exterior decon wash, plus a full vehicle polish, topped with a 1-year ceramic coating!"
             steps={[
               "EVERYTHING From our Exterior Decon Service",
-              "Light Polish To Remove Minor Swirls and Waterspots",
-              "Restore and Ceramic Coat All Trim",
-              "Coat the Windshield (You'll barely need to use your wipers anymore!)",
-              "Apply a 1-Year Ceramic Coating to the Paint"
+              "Single-stage polish to remove light scratches and swirls",
+              "Restore and ceramic coat all trim",
+              "Coat the windshield (most detailers charge extra for this!)",
+              "Apply a 1-year ceramic coating to the paint"
             ]}
             hours="6-9"
             linkUrl="/services/exterior-seal"
@@ -235,11 +241,11 @@ export default function Home() {
                   years is ideal over 5-10 year coatings)."
             steps={[
               "EVERYTHING From our Exterior Decon Service",
-              "Our Full Paint Correction Process (Removes 80%-90% of scratches)",
-              "Restore and Ceramic Coat All Trim",
-              "Coat the Windshield (You'll barely need to use your wipers anymore!)",
-              "Ceramic Coat All Wheel Faces",
-              "Apply a 3-Year Ceramic Coating to the Paint"
+              "Our full paint correction process (removes 80%-90% of scratches)",
+              "Restore and ceramic coat all trim",
+              "Coat the windshield (you'll barely need to use your wipers anymore!)",
+              "Ceramic coat all wheel faces (usually not included in most detail packages!)",
+              "Apply a 3-year ceramic coating to the paint"
             ]}
             hours="10-15+"
             linkUrl="/services/exterior-correct"
