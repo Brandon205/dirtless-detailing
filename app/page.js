@@ -68,7 +68,7 @@ export default function Home() {
     {
       title: "I won't have a ride back to my house, what are my options?",
       description:
-        "No worries, it happens all the time! We have done everything from bringing people back home, picking their car up and dropping it off later, we've even had customers order an Uber straight from our shop. If your service won't take too long and don't mind waiting for a bit we do have an office you can wait in as well."
+        "No worries, it happens all the time! We have done everything from bringing people back home, picking their car up and dropping it off later, we've even had customers order an Uber straight from our shop."
     },
     {
       title: "What forms of payment do you take?",
