@@ -14,6 +14,7 @@ import {
   evenVariant
 } from "../../../utils/animationVariations";
 import { SquareArrowOutUpRight } from "lucide-react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const jsonld = {
@@ -219,30 +220,46 @@ export default function ExteriorSeal() {
 
             <div className="preview-container">
               <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/seal" className="gallery-preview">
-                <motion.img
-                  variants={imgVariation1}
-                  src="/assets/images/sealshine/sprinter6.jpg"
-                  alt="Sprinter van after our Seal and Shine service"
-                  className="w-full h-[100px] object-cover rounded-xl"
-                />
-                <motion.img
-                  variants={imgVariation2}
-                  src="/assets/images/sealshine/audiSeal3.jpg"
-                  alt="Audi S4 with a fresh 1 year coating and polish"
-                  className="w-full h-[100px] object-cover rounded-xl"
-                />
-                <motion.img
-                  variants={imgVariation3}
-                  src="/assets/images/sealshine/beamer1.jpg"
-                  alt="BMW on a foggy morning"
-                  className="w-full h-[100px] object-cover rounded-xl"
-                />
-                <motion.img
-                  variants={imgVariation4}
-                  src="/assets/images/sealshine/porscheRearL.jpg"
-                  alt="Porsche from the read left"
-                  className="w-full h-[100px] object-cover rounded-xl"
-                />
+                <motion.div variants={imgVariation1} className="relative w-full h-[100px] rounded-xl">
+                  <Image
+                    variants={imgVariation1}
+                    src="/assets/images/sealshine/sprinter6.jpg"
+                    alt="Sprinter van after our Seal and Shine service"
+                    fill
+                    sizes="275px"
+                    className="object-cover rounded-xl"
+                  />
+                </motion.div>
+                <motion.div variants={imgVariation2} className="relative w-full h-[100px] rounded-xl">
+                  <Image
+                    variants={imgVariation2}
+                    src="/assets/images/sealshine/audiSeal3.jpg"
+                    alt="Audi S4 with a fresh 1 year coating and polish"
+                    fill
+                    sizes="275px"
+                    className="object-cover rounded-xl"
+                  />
+                </motion.div>
+                <motion.div variants={imgVariation3} className="relative w-full h-[100px] rounded-xl">
+                  <Image
+                    variants={imgVariation3}
+                    src="/assets/images/sealshine/beamer1.jpg"
+                    alt="BMW on a foggy morning with our ozone machine running"
+                    fill
+                    sizes="275px"
+                    className="object-cover rounded-xl"
+                  />
+                </motion.div>
+                <motion.div variants={imgVariation4} className="relative w-full h-[100px] rounded-xl">
+                  <Image
+                    variants={imgVariation4}
+                    src="/assets/images/sealshine/porscheRearL.jpg"
+                    alt="Porsche from the rear left"
+                    fill
+                    sizes="275px"
+                    className="object-cover rounded-xl"
+                  />
+                </motion.div>
               </motion.a>
 
               <div className="preview-content">

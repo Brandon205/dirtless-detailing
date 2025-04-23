@@ -14,6 +14,7 @@ import {
 } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
 import { SquareArrowOutUpRight } from "lucide-react";
+import Image from "next/image";
 
 const jsonld = {
   "@context": "https://schema.org/",
@@ -199,36 +200,52 @@ export default function Exterior() {
 
             <div className="preview-container">
               <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/exterior" className="gallery-preview">
-                <motion.img
-                  variants={imgVariation1}
-                  src="/assets/images/exterior/amg.jpg"
-                  alt="Mercedes AMG with a clean exterior"
-                  className="w-full h-[100px] object-cover rounded-xl"
-                />
-                <motion.img
-                  variants={imgVariation2}
-                  src="/assets/images/exterior/ironwheel1.jpg"
-                  alt="Purple runoff from iron decontamination on a wheel"
-                  className="w-full h-[100px] object-cover rounded-xl"
-                />
-                <motion.img
-                  variants={imgVariation3}
-                  src="/assets/images/exterior/sideofsilverram.jpg"
-                  alt="Side view of a washed silver dodge ram"
-                  className="w-full h-[100px] object-cover rounded-xl"
-                />
-                <motion.img
-                  variants={imgVariation4}
-                  src="/assets/images/exterior/engine5c77.jpg"
-                  alt="Washed engine bay of a BMW"
-                  className="w-full h-[100px] object-cover rounded-xl"
-                />
+                <motion.div variants={imgVariation1} className="relative w-full h-[100px] rounded-xl">
+                  <Image
+                    variants={imgVariation1}
+                    src="/assets/images/exterior/amg.jpg"
+                    alt="Mercedes AMG with a clean exterior"
+                    fill
+                    sizes="275px"
+                    className="object-cover rounded-xl"
+                  />
+                </motion.div>
+                <motion.div variants={imgVariation2} className="relative w-full h-[100px] rounded-xl">
+                  <Image
+                    variants={imgVariation2}
+                    src="/assets/images/exterior/ironwheel1.jpg"
+                    alt="Purple runoff from iron decontamination on a wheel"
+                    fill
+                    sizes="275px"
+                    className="object-cover rounded-xl"
+                  />
+                </motion.div>
+                <motion.div variants={imgVariation3} className="relative w-full h-[100px] rounded-xl">
+                  <Image
+                    variants={imgVariation3}
+                    src="/assets/images/exterior/sideofsilverram.jpg"
+                    alt="Side view of a washed silver dodge ram"
+                    fill
+                    sizes="275px"
+                    className="object-cover rounded-xl"
+                  />
+                </motion.div>
+                <motion.div variants={imgVariation4} className="relative w-full h-[100px] rounded-xl">
+                  <Image
+                    variants={imgVariation4}
+                    src="/assets/images/exterior/engine5c77.jpg"
+                    alt="Washed engine bay of a BMW"
+                    fill
+                    sizes="275px"
+                    className="object-cover rounded-xl"
+                  />
+                </motion.div>
               </motion.a>
               <div className="preview-content">
                 <h4>
-                  See examples of our{" "}
+                  Check out our{" "}
                   <a href="/gallery/exterior" className="aside-link inline-block">
-                    work <SquareArrowOutUpRight className="inline-block" />
+                    Exterior Gallery <SquareArrowOutUpRight className="inline-block" />
                   </a>
                 </h4>
                 <p>

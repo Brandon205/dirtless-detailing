@@ -13,6 +13,7 @@ import {
   evenVariant
 } from "../../../utils/animationVariations";
 import { SquareArrowOutUpRight } from "lucide-react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const jsonld = {
@@ -185,30 +186,46 @@ export default function FullIntEx() {
 
             <div className="preview-container">
               <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/interior" className="gallery-preview">
-                <motion.img
-                  variants={imgVariation1}
-                  src="/assets/images/interior/door1.jpg"
-                  alt="Clean door panel of a car"
-                  className="w-full h-[100px] object-cover rounded-xl"
-                />
-                <motion.img
-                  variants={imgVariation2}
-                  src="/assets/images/interior/driver5.jpg"
-                  alt="Clean Mazda interior from the drivers side"
-                  className="w-full h-[100px] object-cover rounded-xl"
-                />
-                <motion.img
-                  variants={imgVariation3}
-                  src="/assets/images/interior/doorRenegade.jpg"
-                  alt="The door panel of a cleaned jeep renegade"
-                  className="w-full h-[100px] object-cover rounded-xl"
-                />
-                <motion.img
-                  variants={imgVariation4}
-                  src="/assets/images/interior/driver16.jpg"
-                  alt="View inside the drivers side of a cleaned jeep renegade"
-                  className="w-full h-[100px] object-cover rounded-xl"
-                />
+                <motion.div variants={imgVariation1} className="relative w-full h-[100px] rounded-xl">
+                  <Image
+                    variants={imgVariation1}
+                    src="/assets/images/interior/driver5.jpg"
+                    alt="Clean Mazda interior from the drivers side"
+                    fill
+                    sizes="275px"
+                    className="object-cover rounded-xl"
+                  />
+                </motion.div>
+                <motion.div variants={imgVariation2} className="relative w-full h-[100px] rounded-xl">
+                  <Image
+                    variants={imgVariation2}
+                    src="/assets/images/interior/door1.jpg"
+                    alt="Clean door panel of a car"
+                    fill
+                    sizes="275px"
+                    className="object-cover rounded-xl"
+                  />
+                </motion.div>
+                <motion.div variants={imgVariation3} className="relative w-full h-[100px] rounded-xl">
+                  <Image
+                    variants={imgVariation3}
+                    src="/assets/images/interior/doorRenegade.jpg"
+                    alt="The door panel of a cleaned jeep renegade"
+                    fill
+                    sizes="275px"
+                    className="object-cover rounded-xl"
+                  />
+                </motion.div>
+                <motion.div variants={imgVariation4} className="relative w-full h-[100px] rounded-xl">
+                  <Image
+                    variants={imgVariation4}
+                    src="/assets/images/interior/driver16.jpg"
+                    alt="View inside the drivers side of a cleaned jeep renegade"
+                    fill
+                    sizes="275px"
+                    className="object-cover rounded-xl"
+                  />
+                </motion.div>
               </motion.a>
               <div className="preview-content">
                 <h4>

@@ -13,6 +13,7 @@ import {
   evenVariant
 } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import HeaderComponent from "../../components/HeaderComponent";
 import FaqItem from "../../components/FaqItem";
 import { SquareArrowOutUpRight } from "lucide-react";
@@ -287,30 +288,46 @@ export default function ExteriorCorrect() {
 
             <div className="preview-container">
               <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/correct" className="gallery-preview">
-                <motion.img
-                  variants={imgVariation1}
-                  src="/assets/images/correction/goodguystruck.jpg"
-                  alt="Truck we polished that won at the Good Guys car show"
-                  className="w-full h-[100px] object-cover rounded-xl"
-                />
-                <motion.img
-                  variants={imgVariation2}
-                  src="/assets/images/correction/ceramicBeads1.jpg"
-                  alt="Water beading on ceramic coated glass"
-                  className="w-full h-[100px] object-cover rounded-xl"
-                />
-                <motion.img
-                  variants={imgVariation3}
-                  src="/assets/images/correction/waterbeading1.jpg"
-                  alt="Water beading on a ceramic coated car"
-                  className="w-full h-[100px] object-cover rounded-xl"
-                />
-                <motion.img
-                  variants={imgVariation4}
-                  src="/assets/images/correction/genesis2.jpeg"
-                  alt="Infinity Genesis with Ceramic Coating"
-                  className="w-full h-[100px] object-cover rounded-xl"
-                />
+                <motion.div variants={imgVariation1} className="relative w-full h-[100px] rounded-xl">
+                  <Image
+                    variants={imgVariation1}
+                    src="/assets/images/correction/goodguystruck.jpg"
+                    alt="Truck we polished that won at the Good Guys car show"
+                    fill
+                    sizes="275px"
+                    className="object-cover rounded-xl"
+                  />
+                </motion.div>
+                <motion.div variants={imgVariation2} className="relative w-full h-[100px] rounded-xl">
+                  <Image
+                    variants={imgVariation2}
+                    src="/assets/images/correction/ceramicBeads1.jpg"
+                    alt="Water beading on ceramic coated glass"
+                    fill
+                    sizes="275px"
+                    className="object-cover rounded-xl"
+                  />
+                </motion.div>
+                <motion.div variants={imgVariation3} className="relative w-full h-[100px] rounded-xl">
+                  <Image
+                    variants={imgVariation3}
+                    src="/assets/images/correction/waterbeading1.jpg"
+                    alt="Water beading on a ceramic coated car"
+                    fill
+                    sizes="275px"
+                    className="object-cover rounded-xl"
+                  />
+                </motion.div>
+                <motion.div variants={imgVariation4} className="relative w-full h-[100px] rounded-xl">
+                  <Image
+                    variants={imgVariation4}
+                    src="/assets/images/correction/genesis2.jpeg"
+                    alt="Infinity Genesis with Ceramic Coating"
+                    fill
+                    sizes="275px"
+                    className="object-cover rounded-xl"
+                  />
+                </motion.div>
               </motion.a>
               <div className="preview-content">
                 <h4>
