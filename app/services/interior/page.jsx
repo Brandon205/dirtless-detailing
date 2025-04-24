@@ -12,7 +12,7 @@ import {
   oddVariant,
   evenVariant
 } from "../../../utils/animationVariations";
-import { SquareArrowOutUpRight, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -231,7 +231,7 @@ export default function FullIntEx() {
                 <h4>
                   See examples of our interior{" "}
                   <a href="/gallery/interior" className="text-blue-500 inline-block">
-                    work <SquareArrowOutUpRight className="inline-block" />
+                    work <ExternalLink className="inline-block" />
                   </a>
                 </h4>
                 <p>

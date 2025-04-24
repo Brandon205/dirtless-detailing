@@ -6,9 +6,9 @@ import { BookingButton } from "./components/BookingButton";
 import { topBtnVariant } from "../utils/animationVariations";
 import { Titillium_Web } from "next/font/google";
 import { InfiniteMovingCards } from "./components/InfiniteMovingCards";
-import Image from "next/image";
 import FaqItem from "./components/FaqItem";
 import { motion } from "framer-motion";
+import { ClipboardCheck, PhoneCall } from "lucide-react";
 import IframeSuspense from "../utils/IframeSuspense";
 import HomePageCard from "./components/HomePageCard";
 
@@ -125,7 +125,7 @@ export default function Home() {
             </div> */}
             <div className="flex gap-10 pt-8 flex-col lg:flex-row max-w-screen-md">
               <motion.a href="/contact" className="top-quote-btn" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
-                <Image src="/assets/icons/clipboard.svg" alt="clipboard" className="btn-icon text-white" width={36} height={36} />
+                <ClipboardCheck color="#ffffff" className="mr-2" size={36} />
                 BOOK NOW!
               </motion.a>
               <motion.a
@@ -135,7 +135,7 @@ export default function Home() {
                 whileHover="hover"
                 transition={{ duration: 0.25 }}
               >
-                <Image src="/assets/icons/phone-call-message.svg" alt="call or message" className="btn-icon text-white" width={36} height={36} />
+                <PhoneCall color="#ffffff" className="mr-2" size={36} />
                 (253) 252-9758
               </motion.a>
             </div>

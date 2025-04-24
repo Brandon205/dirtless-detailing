@@ -16,7 +16,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import HeaderComponent from "../../components/HeaderComponent";
 import FaqItem from "../../components/FaqItem";
-import { SquareArrowOutUpRight } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import "react-medium-image-zoom/dist/styles.css";
 import ImageGallery from "../../components/ImageGallery";
 
@@ -333,7 +333,7 @@ export default function ExteriorCorrect() {
                 <h4>
                   See examples of our{" "}
                   <a href="/gallery/correct" className="text-blue-500 inline-block">
-                    work <SquareArrowOutUpRight className="inline-block" />
+                    work <ExternalLink className="inline-block" />
                   </a>
                 </h4>
                 <p>

@@ -13,7 +13,7 @@ import {
 } from "../../../utils/animationVariations";
 import BeforeAfterSlider from "../../components/ImageSlider";
 import { motion } from "framer-motion";
-import { SquareArrowOutUpRight } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import HeaderComponent from "../../components/HeaderComponent";
 
@@ -223,7 +223,7 @@ export default function InteriorSpill() {
                 <h4>
                   See examples of our interior{" "}
                   <a href="/gallery/interior" className="text-blue-500 inline-block">
-                    work <SquareArrowOutUpRight className="inline-block" />
+                    work <ExternalLink className="inline-block" />
                   </a>
                 </h4>
                 <p>

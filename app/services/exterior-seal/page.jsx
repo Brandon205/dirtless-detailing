@@ -13,7 +13,7 @@ import {
   oddVariant,
   evenVariant
 } from "../../../utils/animationVariations";
-import { SquareArrowOutUpRight, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -266,7 +266,7 @@ export default function ExteriorSeal() {
                 <h4>
                   See the finished{" "}
                   <a href="/gallery/seal" className="text-blue-500 inline-block">
-                    results <SquareArrowOutUpRight className="inline-block" />
+                    results <ExternalLink className="inline-block" />
                   </a>
                 </h4>
                 <p>

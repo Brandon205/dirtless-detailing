@@ -4,6 +4,7 @@ import Image from "next/image";
 import ImageGallery from "../../components/ImageGallery";
 import "react-medium-image-zoom/dist/styles.css";
 import { topBtnVariant } from "../../../utils/animationVariations";
+import { PhoneCall, ClipboardCheck } from "lucide-react";
 import { motion } from "framer-motion";
 
 const baImages = [
@@ -129,11 +130,11 @@ export default function FullIntGallery() {
           </strong>
           <div className="header-buttons">
             <motion.a href="/contact" className="top-quote-btn" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
-              <Image src="/assets/icons/clipboard.svg" alt="clipboard" className="btn-icon text-white" width={36} height={36} />
+              <ClipboardCheck color="#ffffff" className="mr-2" size={36} />
               BOOK NOW!
             </motion.a>
             <motion.a href="tel:2532529758" className="top-quote-btn btn-secondary" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
-              <Image src="/assets/icons/phone-call-message.svg" alt="call or message" className="btn-icon text-white" width={36} height={36} />
+              <PhoneCall color="#ffffff" className="mr-2" size={36} />
               (253) 252-9758
             </motion.a>
           </div>

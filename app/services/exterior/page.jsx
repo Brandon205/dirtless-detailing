@@ -13,7 +13,7 @@ import {
   evenVariant
 } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
-import { SquareArrowOutUpRight, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 
 const jsonld = {
@@ -245,7 +245,7 @@ export default function Exterior() {
                 <h4>
                   Check out our{" "}
                   <a href="/gallery/exterior" className="text-blue-500 inline-block">
-                    Exterior Gallery <SquareArrowOutUpRight className="inline-block" />
+                    Exterior Gallery <ExternalLink className="inline-block" />
                   </a>
                 </h4>
                 <p>
