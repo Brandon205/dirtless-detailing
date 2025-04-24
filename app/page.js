@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import Benefits from "./Benefits";
+// import Benefits from "./Benefits";
 import { HeroSlider } from "./components/hero-slider";
 import { BookingButton } from "./components/BookingButton";
 import { topBtnVariant } from "../utils/animationVariations";
@@ -145,7 +145,7 @@ export default function Home() {
       </HeroSlider>
 
       <div className="service-bkg pt-0">
-        <Benefits />
+        {/* {!smallScreen && <Benefits />} */}
 
         <div className="general-container new-heading-container pt-5">
           <strong className="above-heading text-4xl">Interior Services</strong>
