@@ -156,7 +156,7 @@ const Correction = () => {
   return (
     <div className="pricing__addons-container">
       <div className="pricing__addon">
-        <Image src="/assets/icons/engineBay.png" width={48} height={48} className="my-0 mx-auto" alt="engine bay getting cleaned" />
+        {/* <Image src="/assets/icons/engineBay.png" width={48} height={48} className="my-0 mx-auto" alt="engine bay getting cleaned" /> */}
         <div className="addon-content">
           <h4>Engine Bay Cleaning</h4>
           <p>We will cover sensitive/electronic areas in the bay, clean and wash, then dress the engine bay to have it looking like new!</p>
@@ -184,16 +184,14 @@ const Correction = () => {
 const Exterior = () => {
   return (
     <div className="pricing__addons-container">
-      <div className="pricing__addon">
-        <Image src="/assets/icons/engineBay.png" width={48} height={48} className="my-0 mx-auto" alt="engine bay getting cleaned" />
-        <div className="addon-content">
-          <h4>Engine Bay Cleaning</h4>
-          <p>We will cover sensitive/electronic areas in the bay, clean and wash, then dress the engine bay to have it looking like new!</p>
+      <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4">
+        <div className="w-full flex flex-col items-center gap-2 justify-center mb-4">
+          <h4 className="text-2xl font-semibold">Engine Bay Cleaning</h4>
+          <p className="text-xl text-gray-800">
+            We will cover sensitive/electronic areas in the bay, clean and wash, then dress the engine bay to have it looking like new!
+          </p>
         </div>
-        <div className="addon-addbutton"></div>
-        <div className="addon-price">
-          <strong>$75</strong>
-        </div>
+        <p className="bg-amber-500 w-1/2 mx-auto py-2 rounded-lg text-xl font-medium">$75</p>
       </div>
     </div>
   );
