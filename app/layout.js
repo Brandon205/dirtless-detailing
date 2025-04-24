@@ -28,7 +28,17 @@ export const metadata = {
   },
   verification: {
     google: "sq8uUuD_CLtkO1bg33IWhAVFjproB_N6s2Qqll0IxUo"
-  }
+  },
+  keywords: [
+    "Dirt-Less Detailing",
+    "Auto Detailing",
+    "Ceramic Coating",
+    "Bonney Lake",
+    "Pierce County",
+    "Paint Correction",
+    "Mobile Detailing",
+    "Interior Detailing"
+  ]
 };
 
 export default function RootLayout({ children }) {

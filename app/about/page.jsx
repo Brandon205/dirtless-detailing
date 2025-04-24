@@ -314,7 +314,7 @@ export default function About() {
         </div>
 
         <h3 style={{ fontSize: "2.5em" }}>FAQ</h3>
-        <div className="faq-container">
+        <div className="faq-container" itemScope itemType="https://schema.org/FAQPage">
           {faqItems.map((item, i) => (
             <FaqItem key={i} i={i} expanded={expanded} setExpanded={setExpanded} title={item.title} description={item.description} isMobile={smallScreen} />
           ))}

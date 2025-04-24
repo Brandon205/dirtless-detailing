@@ -11,8 +11,8 @@ export default function FaqItem({ i, expanded, setExpanded, title, description, 
   }, [parent]);
 
   return (
-    <div key={i} ref={parent}>
-      <div className="faq-title" onClick={() => setExpanded(isOpen ? false : i)}>
+    <div key={i} ref={parent} itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+      <div className="faq-title" itemProp="name" onClick={() => setExpanded(isOpen ? false : i)}>
         {title}
 
         {isMobile ? (
@@ -29,7 +29,7 @@ export default function FaqItem({ i, expanded, setExpanded, title, description, 
       </div>
 
       {isOpen && (
-        <div className="faq-description" style={{ padding: "2rem 1rem" }}>
+        <div className="faq-description" itemProp="acceptedAnswer" style={{ padding: "2rem 1rem" }}>
           {description}
         </div>
       )}

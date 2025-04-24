@@ -351,7 +351,7 @@ export default function Recreational() {
         )}
 
         <h3 className="text-3xl lg:text-4xl text-white pb-8 py-16">Frequently Asked Questions</h3>
-        <div className="faq-container text-white w-11/12 max-w-screen-xl mx-auto">
+        <div className="faq-container text-white w-11/12 max-w-screen-xl mx-auto" itemScope itemType="https://schema.org/FAQPage">
           {faqItems.map((item, i) => (
             <FaqItem key={i} i={i} expanded={expanded} setExpanded={setExpanded} title={item.title} description={item.description} isMobile={smallScreen} />
           ))}
@@ -361,7 +361,7 @@ export default function Recreational() {
   );
 }
 
-// length={length}
+//            length={length}
 //           setLength={setLength}
 //           currService={currService}
 //           setCurrService={setCurrService}

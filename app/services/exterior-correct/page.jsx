@@ -352,7 +352,7 @@ export default function ExteriorCorrect() {
                 <strong className="above-heading text-3xl">Ceramic Coating FAQ</strong>
                 <h3 className="new-heading text-xl lg:text-2xl">Answers for the most commonly asked questions about ceramic coatings.</h3>
               </div>
-              <div className="faq-container" style={{ color: "white" }}>
+              <div className="faq-container" style={{ color: "white" }} itemScope itemType="https://schema.org/FAQPage">
                 {faqItems.map((item, i) => (
                   <FaqItem
                     key={i}

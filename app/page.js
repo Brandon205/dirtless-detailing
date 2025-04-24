@@ -11,37 +11,9 @@ import { motion } from "framer-motion";
 import { ClipboardCheck, PhoneCall } from "lucide-react";
 import IframeSuspense from "../utils/IframeSuspense";
 import HomePageCard from "./components/HomePageCard";
+import HomePageSchema from "./jsonSchemas/HomePageSchema";
 
 const titillium = Titillium_Web({ weight: ["400", "600"], subsets: ["latin"] });
-
-const jsonld = {
-  "@type": "LocalBusiness",
-  "name": "Dirt-Less Detailing",
-  "image": "/assets/images/showcase/homepage-main.webp",
-  "url": "https://www.dirtlessdetailing.com",
-  "telephone": "2532529758",
-  "priceRange": "$$$",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "28120 WA-410, Building C6",
-    "addressLocality": "Buckley",
-    "addressRegion": "WA",
-    "postalCode": "98321",
-    "addressCountry": "US"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 47.15803435589099,
-    "longitude": -122.05283957787773
-  },
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-    "opens": "07:00",
-    "closes": "19:00"
-  },
-  "sameAs": ["https://www.instagram.com/dirt_less_detailing", "https://www.youtube.com/channel/UCsoqP5s4hwkQd_Sd-TVv-jg"]
-};
 
 export default function Home() {
   const [expanded, setExpanded] = useState(false);
@@ -89,7 +61,7 @@ export default function Home() {
 
   return (
     <div>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
+      <HomePageSchema />
       <HeroSlider
         images={[
           "/assets/images/showcase/range-rover-left.webp",
