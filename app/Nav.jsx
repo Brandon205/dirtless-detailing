@@ -45,24 +45,21 @@ export default function Nav() {
   const dropdowns = {
     services: [
       {
-        title: "INTERIOR CLEANING SERVICES",
+        title: "INTERIOR DETAILING SERVICES",
         items: [
           {
             name: "Swift Interior Detail",
             href: "/services/interior-swift",
-            icon: "/assets/icons/time-span.png",
             bgImage: "/assets/images/interior/driver12.jpg"
           },
           {
-            name: "Full Interior",
+            name: "Full Interior Detail",
             href: "/services/interior",
-            icon: "/assets/icons/steering1.png",
             bgImage: "/assets/images/interior/driver16.jpg"
           },
           {
             name: "Full Interior with Spill Guard",
             href: "/services/interior-spill",
-            icon: "/assets/icons/steeringLock.png",
             bgImage: "/assets/images/interior/accO.jpg"
           }
         ]
@@ -73,19 +70,16 @@ export default function Nav() {
           {
             name: "Exterior Decon Wash",
             href: "/services/exterior",
-            icon: "/assets/icons/carWash.png",
             bgImage: "/assets/images/exterior/subaruWashed.jpeg"
           },
           {
             name: "Seal and Shine",
             href: "/services/exterior-seal",
-            icon: "/assets/icons/carPolish.png",
             bgImage: "/assets/images/correction/teslaclean.jpg"
           },
           {
             name: "Correct and Protect",
             href: "/services/exterior-correct",
-            icon: "/assets/icons/correctProtect.png",
             bgImage: "/assets/images/correction/genesis3.jpeg"
           }
         ]
@@ -96,7 +90,6 @@ export default function Nav() {
           {
             name: "Boats/RV's/Trailers & ORV's",
             href: "/services/recreational",
-            icon: "/assets/icons/boat.png",
             bgImage: "/assets/images/showcase/RVWash.jpg"
           }
         ]
@@ -109,25 +102,21 @@ export default function Nav() {
           {
             name: "Full Interior Gallery",
             href: "/gallery/interior",
-            icon: "/assets/icons/steering1.png",
             bgImage: "/assets/images/interior/driverNewLexus.jpg"
           },
           {
             name: "Exterior Wash Gallery",
             href: "/gallery/exterior",
-            icon: "/assets/icons/carWash.png",
             bgImage: "/assets/images/exterior/sideofsilverram.jpg"
           },
           {
             name: "Seal & Shine Gallery",
             href: "/gallery/seal",
-            icon: "/assets/icons/carPolish.png",
             bgImage: "/assets/images/sealshine/porscheHeadOn.jpg"
           },
           {
             name: "Correct & Protect Gallery",
             href: "/gallery/correct",
-            icon: "/assets/icons/correctProtect.png",
             bgImage: "/assets/images/correction/genesis2.jpeg"
           }
         ]
@@ -191,7 +180,6 @@ export default function Nav() {
                               >
                                 {/* Background Image */}
                                 <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-all z-10"></div>
-                                {/* <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${item.bgImage})` }}> */}
                                 <div className="absolute inset-0">
                                   <Image
                                     src={item.bgImage}
@@ -303,15 +291,6 @@ export default function Nav() {
                 <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
-                {/* {mobileMenuOpen ? (
-                  <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                ) : (
-                  <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
-                )} */}
               </button>
             </div>
           </div>
@@ -369,20 +348,19 @@ export default function Nav() {
                   }`}
                 >
                   {dropdowns.services.map((section, index) => (
-                    <div key={index} className="mb-6">
-                      <h3 className="text-sm font-semibold text-gray-400 tracking-wider mb-3 uppercase">{section.title}</h3>
-                      <ul className="space-y-2">
+                    <div key={index} className="mb-6 text-center">
+                      <h3 className="text-lg font-semibold text-gray-100 tracking-wider mb-3 uppercase">{section.title}</h3>
+                      <ul className="space-y-2 text-center">
                         {section.items.map((item, idx) => (
                           <li key={idx}>
                             <Link
                               href={item.href}
-                              className="flex items-center px-3 py-2 text-lg text-gray-100 hover:text-amber-300 transition-colors"
+                              className="flex items-center justify-center px-3 py-2 text-lg text-gray-400 hover:text-amber-300 transition-colors"
                               onClick={(e) => {
                                 e.stopPropagation();
                                 closeMenu();
                               }}
                             >
-                              <Image src={item.icon} alt="" width={20} height={20} className="mr-3 flex-shrink-0" />
                               <span>{item.name}</span>
                             </Link>
                           </li>
@@ -420,19 +398,18 @@ export default function Nav() {
                 >
                   {dropdowns.gallery.map((section, index) => (
                     <div key={index} className="mb-6">
-                      <h3 className="text-sm font-semibold text-gray-400 tracking-wider mb-3 uppercase">{section.title}</h3>
+                      {/* <h3 className="text-md font-semibold text-gray-100 tracking-wider mb-3 uppercase">{section.title}</h3> */}
                       <ul className="space-y-2">
                         {section.items.map((item, idx) => (
                           <li key={idx}>
                             <Link
                               href={item.href}
-                              className="flex items-center px-3 py-2 text-lg text-gray-100 hover:text-amber-300 transition-colors"
+                              className="flex items-center justify-center px-3 py-2 text-lg text-gray-400 hover:text-amber-300 transition-colors"
                               onClick={(e) => {
                                 e.stopPropagation();
                                 closeMenu();
                               }}
                             >
-                              <Image src={item.icon} alt="" width={20} height={20} className="mr-3 flex-shrink-0" />
                               <span>{item.name}</span>
                             </Link>
                           </li>

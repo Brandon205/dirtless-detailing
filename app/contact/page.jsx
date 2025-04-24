@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import { BookingButton } from "../components/BookingButton";
 import { Clock, MapPin, Smartphone, Mail, Gift } from "lucide-react";
 import IframeSuspense from "../../utils/IframeSuspense";
@@ -45,30 +44,46 @@ export default function Contact() {
           <p className="text-white text-lg w-1/2 text-center lg:text-left lg:w-full mx-auto">Valid until 2/14/25 on any Online Booking!</p>
         </div>
       </div> */}
+
+      {/* <motion.li className="flex justify-start items-center text-left" variants={listItemVariant} key={index}>
+        <div className="flex-shrink-0 w-[36px] h-[36px]">
+          <Check color="#1ca55d" size={36} />
+        </div>
+        <p className="ml-2">{step}</p>
+      </motion.li> */}
       <div className="grid items-center" style={{ paddingTop: 0 }}>
         <BookingButton title="Book Online!" />
       </div>
       <div className="contact-information-container">
         <div className="contact-info-cards">
-          <div className="contact-icon-container">
-            <Clock className="icon-48" />
-            <p className="hours-p">Monday - Sunday: 8 AM - 8 PM</p>
+          <div className="flex items-center gap-4 bg-zinc-800 p-4">
+            {/* This line */}
+            <div className="flex-shrink-0 w-[28px] h-[28px]">
+              <Clock size={28} />
+            </div>
+            <p>Monday - Sunday: 8 AM - 8 PM</p>
           </div>
-          <div className="contact-icon-container">
-            <MapPin className="icon-48" />
+          <div className="flex items-center gap-4 bg-zinc-800 p-4">
+            <div className="flex-shrink-0 w-[28px] h-[28px]">
+              <MapPin size={28} />
+            </div>
             <a href="https://maps.app.goo.gl/bhPDhjUN4jsSegu48" className="contact-link location-link underline" target="_blank" rel="noopener">
               Buckley Business Park, 28120 WA-410, Building C6
             </a>
           </div>
-          <div className="contact-icon-container">
-            <Smartphone className="icon-48" />
+          <div className="flex items-center gap-4 bg-zinc-800 p-4">
+            <div className="flex-shrink-0 w-[28px] h-[28px]">
+              <Smartphone size={28} />
+            </div>
             <a className="contact-link location-link underline" href="tel:2532529758" target="_blank" rel="noopener">
               (253) 252-9758
             </a>
             <p> Text or Call</p>
           </div>
-          <div className="contact-icon-container">
-            <Mail className="icon-48" />
+          <div className="flex items-center gap-4 bg-zinc-800 p-4">
+            <div className="flex-shrink-0 w-[28px] h-[28px]">
+              <Mail size={28} />
+            </div>
             <a
               className="contact-link location-link underline"
               href="mailto:brenden@dirtlessdetailing.com?subject = Schedule a Detail!"
@@ -79,8 +94,10 @@ export default function Contact() {
               brenden@dirtlessdetailing.com
             </a>
           </div>
-          <div className="contact-icon-container">
-            <Gift className="icon-48" />
+          <div className="flex items-center gap-4 bg-zinc-800 p-4">
+            <div className="flex-shrink-0 w-[28px] h-[28px]">
+              <Gift size={28} />
+            </div>
             <p style={{ textAlign: "left" }}>We offer gift cards in person and online!</p>
           </div>
         </div>

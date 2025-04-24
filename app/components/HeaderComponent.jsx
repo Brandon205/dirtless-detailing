@@ -12,7 +12,7 @@ export default function HeaderComponent({ imageUrl, title, description, secondar
       </div>
       <div className="servicepage-header">
         <div>
-          <h1>
+          <h1 className="text-center lg:text-left">
             <span className="text-amber-500 bold text-shadow">{title}</span>
           </h1>
           <h2 className="page-subheading">{description}</h2>
