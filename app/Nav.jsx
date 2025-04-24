@@ -191,7 +191,18 @@ export default function Nav() {
                               >
                                 {/* Background Image */}
                                 <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-all z-10"></div>
-                                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${item.bgImage})` }}></div>
+                                {/* <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${item.bgImage})` }}> */}
+                                <div className="absolute inset-0">
+                                  <Image
+                                    src={item.bgImage}
+                                    alt={item.name}
+                                    fill
+                                    sizes="(min-width: 1024px) 215px, 0px"
+                                    className="object-cover"
+                                    quality={50}
+                                    priority
+                                  />
+                                </div>
 
                                 {/* Text Content */}
                                 <div className="z-20 text-center">
@@ -245,7 +256,17 @@ export default function Nav() {
                               >
                                 {/* Background Image */}
                                 <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-all z-10"></div>
-                                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${item.bgImage})` }}></div>
+                                <div className="absolute inset-0">
+                                  <Image
+                                    src={item.bgImage}
+                                    alt={item.name}
+                                    fill
+                                    sizes="(min-width: 1024px) 215px, 0px"
+                                    className="object-cover"
+                                    quality={50}
+                                    priority
+                                  />
+                                </div>
 
                                 {/* Text Content */}
                                 <div className="z-20 text-center">
