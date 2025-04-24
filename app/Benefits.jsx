@@ -1,16 +1,32 @@
 "use client";
-import { useRef } from "react";
-import Lottie from "lottie-react";
+import { useState, useEffect, useRef } from "react";
+import dynamic from "next/dynamic";
 import starJSON from "../public/assets/icons/starJSON.json";
 import calendarJSON from "../public/assets/icons/calendarJSON.json";
 import carJSON from "../public/assets/icons/carJSON.json";
 import locationJSON from "../public/assets/icons/locationPing.json";
+
+// Import Lottie dynamically with SSR disabled
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 export default function Benefits() {
   const calendarRef = useRef(null);
   const carRef = useRef(null);
   const starRef = useRef(null);
   const mapRef = useRef(null);
+
+  // Add state to track if we're in the browser
+  const [isBrowser, setIsBrowser] = useState(false);
+
+  // Set isBrowser to true once component mounts (client-side only)
+  useEffect(() => {
+    setIsBrowser(true);
+  }, []);
+
+  // Only render the component on the client side
+  if (!isBrowser) {
+    return null; // Return null during server-side rendering
+  }
 
   return (
     <div className="header-icons-container screen-flex">
