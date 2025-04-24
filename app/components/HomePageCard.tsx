@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
 import Image from "next/image";
 import prices from "../../utils/Prices";
 
@@ -68,7 +68,9 @@ export default function HomePageCard({ title, imageUrl, description, steps, hour
         >
           {steps.map((step, index) => (
             <motion.li className="flex justify-start items-center text-left" variants={listItemVariant} key={index}>
-              <img src="../assets/icons/checkmark.svg" alt="checkmark" className="icon-36" />
+              <div className="flex-shrink-0 w-[36px] h-[36px]">
+                <Check color="#1ca55d" size={36} />
+              </div>
               <p className="ml-2">{step}</p>
             </motion.li>
           ))}

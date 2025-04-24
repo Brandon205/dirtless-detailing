@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import prices from "./Prices";
+import { CornerRightDown } from "lucide-react";
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "../app/components/Select";
 
 import dynamic from "next/dynamic";
@@ -131,7 +132,7 @@ export default function PricingComponent(props) {
             </span>
           </strong>
           <p className="flex">
-            +Desired Add-ons <img src="../assets/icons/handDown.png" className="icon-20" alt="down arrow" />
+            +Desired Add-ons <CornerRightDown color="#ffffff" size={20} />
           </p>
         </div>
       </div>
@@ -155,7 +156,7 @@ const Correction = () => {
   return (
     <div className="pricing__addons-container">
       <div className="pricing__addon">
-        <img src="../assets/icons/engineBay.png" className="addon-icon" alt="engine bay getting cleaned" />
+        <Image src="/assets/icons/engineBay.png" width={48} height={48} className="my-0 mx-auto" alt="engine bay getting cleaned" />
         <div className="addon-content">
           <h4>Engine Bay Cleaning</h4>
           <p>We will cover sensitive/electronic areas in the bay, clean and wash, then dress the engine bay to have it looking like new!</p>
@@ -166,7 +167,7 @@ const Correction = () => {
         </div>
       </div>
       <div className="pricing__addon">
-        <img src="../assets/icons/ferrari-logo.png" className="addon-icon" alt="Ferrari logo" />
+        <Image src="/assets/icons/ferrari-logo.png" width={48} height={48} className="my-0 mx-auto" alt="Ferrari logo" />
         <div className="addon-content">
           <h4>Debadging</h4>
           <p>This is the perfect time to get any badges/emblems removed off of your car so that we can polish under them!</p>
@@ -184,7 +185,7 @@ const Exterior = () => {
   return (
     <div className="pricing__addons-container">
       <div className="pricing__addon">
-        <img src="../assets/icons/engineBay.png" className="addon-icon" alt="engine bay getting cleaned" />
+        <Image src="/assets/icons/engineBay.png" width={48} height={48} className="my-0 mx-auto" alt="engine bay getting cleaned" />
         <div className="addon-content">
           <h4>Engine Bay Cleaning</h4>
           <p>We will cover sensitive/electronic areas in the bay, clean and wash, then dress the engine bay to have it looking like new!</p>
@@ -202,7 +203,7 @@ const InteriorSwift = () => {
   return (
     <div className="pricing__addons-container">
       <div className="pricing__addon">
-        <img src="../assets/icons/ozone.png" className="addon-icon" alt="Air filter in use" />
+        <Image src="/assets/icons/ozone.png" width={48} height={48} className="my-0 mx-auto" alt="Air filter in use" />
         <div className="addon-content">
           <h4>Ozone Treatment</h4>
           <p>
@@ -223,7 +224,7 @@ const FullInterior = () => {
   return (
     <div className="pricing__addons-container">
       <div className="pricing__addon">
-        <img src="../assets/icons/ozone.png" className="addon-icon" alt="Air filter in use" />
+        <Image src="/assets/icons/ozone.png" width={48} height={48} className="my-0 mx-auto" alt="Air filter in use" />
         <div className="addon-content">
           <h4>Ozone Treatment</h4>
           <p>

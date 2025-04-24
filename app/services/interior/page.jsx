@@ -12,7 +12,7 @@ import {
   oddVariant,
   evenVariant
 } from "../../../utils/animationVariations";
-import { SquareArrowOutUpRight } from "lucide-react";
+import { SquareArrowOutUpRight, ExternalLink } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -156,7 +156,7 @@ export default function FullIntEx() {
                   <h4 className="step-title flex">
                     Interior Spill Guard Coating{" "}
                     <a href="/services/interior-spill">
-                      <img src="../assets/icons/linking.png" alt="external link" className="icon-24" />
+                      <ExternalLink color="#3b82f6" size={24} className="mt-1 ml-1" />
                     </a>
                   </h4>
                   <p className="step-desc">
