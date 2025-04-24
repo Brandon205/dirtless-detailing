@@ -12,7 +12,7 @@ export default function products() {
       <div className="servicepage-header">
         <div style={{ alignItems: "center" }}>
           <h1>
-            <span className="accent-orange bold text-shadow">Ceramic Coating Maintenance</span>
+            <span className="text-amber-500 bold text-shadow">Ceramic Coating Maintenance</span>
           </h1>
           <h2 className="page-subheading" style={{ textAlign: "center" }}>
             Check out our how-to on keeping your car clean yourself without damaging your new ceramic coating with these simple products and methods!
@@ -308,7 +308,7 @@ export default function products() {
             <h4 className="step-title">Enhance and Dry</h4>
             <p className="step-desc">
               Give about 2-3 sprays of{" "}
-              <a href="https://amzn.to/3uKuqi1" target="_blank" rel="noopener" className="aside-link">
+              <a href="https://amzn.to/3uKuqi1" target="_blank" rel="noopener" className="text-blue-500">
                 Griots Ceramic Speed Shine
               </a>{" "}
               per panel, and use your preferred drying towel to completely dry off the car. And you're done!

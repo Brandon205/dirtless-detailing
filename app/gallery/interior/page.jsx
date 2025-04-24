@@ -114,15 +114,15 @@ export default function FullIntGallery() {
       <div className="servicepage-header">
         <div style={{ alignItems: "center" }}>
           <h1 className="text-center lg:text-left">
-            <span className="accent-orange bold text-shadow">Full Interior Cleaning Gallery</span>
+            <span className="text-amber-500 bold text-shadow">Full Interior Cleaning Gallery</span>
           </h1>
           <strong className="page-subheading" style={{ textAlign: "center" }}>
             We have cleaned it all, even the worst of interiors. Check out the Gallery below. Take a look at our{" "}
-            <a href="/services/interior" className="aside-link">
+            <a href="/services/interior" className="text-blue-500">
               Full Interior
             </a>{" "}
             or{" "}
-            <a href="/services/interior-spill" className="aside-link">
+            <a href="/services/interior-spill" className="text-blue-500">
               Full Interior + Spill Guard
             </a>{" "}
             to find out more.
@@ -148,11 +148,11 @@ export default function FullIntGallery() {
       <div className="max-w-90% lg:max-w-[60%] mx-auto text-center">
         <strong className="text-white text-3xl lg:text-4xl">
           Check out our{" "}
-          <a href="/services/interior" className="aside-link">
+          <a href="/services/interior" className="text-blue-500">
             Full Interior Cleaning
           </a>{" "}
           page or our{" "}
-          <a href="/services/interior-spill" className="aside-link">
+          <a href="/services/interior-spill" className="text-blue-500">
             Full Interior + Spill Guard{" "}
           </a>{" "}
           page for more details!

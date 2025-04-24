@@ -48,7 +48,7 @@ const faqItems = [
         Unlike waxes true ceramic coatings don't just wash off, however, over time your coating can get clogged with contaminants and gloss, slickness, and
         water beading can degrade (for this coating it should stay in good quality for up to 3 years). If you want to maintain all the benefits of your ceramic
         coating we recommend getting at least our{" "}
-        <a href="/services/exterior" className="aside-link">
+        <a href="/services/exterior" className="text-blue-500">
           Exterior Decon Wash
         </a>{" "}
         package bi-annually or annually. This package fully decontaminates and refreshes your ceramic coating back to the day you got it.
@@ -62,11 +62,11 @@ const faqItems = [
         We never recommend going through a car wash as they can reduce the gloss slickness and beading of your coating prematurely. However in a pinch a
         touch-less car wash will suffice. Just make sure to use the cheapest setting, without any wax's. It is also recommended after the wash to dry the whole
         vehicle with high quality drying towels (We recommend{" "}
-        <a href="https://amzn.to/449nFm7" className="aside-link" target="_blank" rel="noopener">
+        <a href="https://amzn.to/449nFm7" className="text-blue-500" target="_blank" rel="noopener">
           The Rag Company's Large Drying Towel
         </a>
         ) and{" "}
-        <a href="https://amzn.to/3uKuqi1" className="aside-link" target="_blank" rel="noopener">
+        <a href="https://amzn.to/3uKuqi1" className="text-blue-500" target="_blank" rel="noopener">
           Griot's Ceramic Speed Shine
         </a>
         !
@@ -78,7 +78,7 @@ const faqItems = [
     description: (
       <p>
         You can check out our{" "}
-        <a href="/products/ceramic-coating" className="aside-link">
+        <a href="/products/ceramic-coating" className="text-blue-500">
           DIY Ceramic Maintenance
         </a>{" "}
         page to see all the products and steps that we recommend for a complete wash and decontamination all for under $150. You can also ask us about our
@@ -144,7 +144,7 @@ export default function ExteriorCorrect() {
                 <p>
                   This is our top of the line exterior service. If you want to remove years of wear and scratching, and provide the best protection available,
                   then this is the service for you. We start off with our full{" "}
-                  <a href="/services/exterior" className="aside-link">
+                  <a href="/services/exterior" className="text-blue-500">
                     Exterior Decon Wash
                   </a>{" "}
                   to remove any contaminants. From there, we refine your paint by performing an in-depth polishing step removing as many imperfections we safely
@@ -157,7 +157,7 @@ export default function ExteriorCorrect() {
                 <p>
                   Feel free to contact us to get any of your questions answered, ceramic coatings are somewhat new so not everyone knows all that they can do.
                   Give us a call or check out our{" "}
-                  <a href="#faq" className="aside-link">
+                  <a href="#faq" className="text-blue-500">
                     FAQ
                   </a>{" "}
                   section at the bottom of this page to get your questions answered!
@@ -175,7 +175,7 @@ export default function ExteriorCorrect() {
             <div>
               <div className="pricing__heading-container">
                 <h3 className="pricing__heading">
-                  <span className="accent-orange bold">Correct and Protect</span> Pricing
+                  <span className="text-amber-500 bold">Correct and Protect</span> Pricing
                 </h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
@@ -332,14 +332,14 @@ export default function ExteriorCorrect() {
               <div className="preview-content">
                 <h4>
                   See examples of our{" "}
-                  <a href="/gallery/correct" className="aside-link inline-block">
+                  <a href="/gallery/correct" className="text-blue-500 inline-block">
                     work <SquareArrowOutUpRight className="inline-block" />
                   </a>
                 </h4>
                 <p>
                   See the stunning results that you'll get from our Correct and Protect service, water will be beading straight off of your whole car! Check it
                   out{" "}
-                  <a href="/gallery/correct" className="aside-link">
+                  <a href="/gallery/correct" className="text-blue-500">
                     here
                   </a>
                   .

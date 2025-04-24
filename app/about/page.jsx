@@ -123,7 +123,7 @@ export default function About() {
       description: (
         <p className="faq-description">
           We have a guide on the steps and products we recommend on our{" "}
-          <a href="/products/ceramic-coating" className="aside-link">
+          <a href="/products/ceramic-coating" className="text-blue-500">
             DIY Maintenance
           </a>{" "}
           page. All the products are perfectly fine to use whether your car is ceramic coated or not! If you are in need of a very quick wash we only recommend
@@ -142,7 +142,7 @@ export default function About() {
       <div className="servicepage-header">
         <div style={{ alignItems: "center" }}>
           <h1>
-            <span className="accent-orange bold text-shadow">About Us & FAQ</span>
+            <span className="text-amber-500 bold text-shadow">About Us & FAQ</span>
           </h1>
           <h2 className="page-subheading" style={{ textAlign: "center" }}>
             Learn a little more about Dirt-Less Detailing!
@@ -305,7 +305,7 @@ export default function About() {
           </p>
           <p>
             Our shop location is right in the{" "}
-            <a href="https://maps.app.goo.gl/bhPDhjUN4jsSegu48" className="aside-link" target="_blank" rel="noopener">
+            <a href="https://maps.app.goo.gl/bhPDhjUN4jsSegu48" className="text-blue-500" target="_blank" rel="noopener">
               Buckley Business Park
             </a>{" "}
             Building C6 off State Route 410.

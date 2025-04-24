@@ -3,21 +3,17 @@
 @tailwind utilities;
 
 /* MAIN COLORS:  */
-$main-clr: #fea41c;
-$accent: #ff2600;
-$contact-bkg: #07080b; // #1b1b1b
-$contact-bkg-lighter: #181b21; // #1f1f1f
-$contact-border-clr: #2f2f2f;
-$urable-clr: #2fd2a8;
+$main-clr: #f59e0b; // OLD: #fea41c TAILWIND: bg-amber-500
+$contact-bkg: #18181b; // OLD: #07080b TAILWIND bg-zinc-900
+$contact-bkg-lighter: #27272a; // OLD: #181b21 TAILWIND: bg-zinc-800
 
 /** Text and smaller colors **/
-$supporting-text: #bbb;
-$secondary-text: #aaa;
-$secondary-text-light: #c0c0c0;
-$heading-clr1: #fff;
-$link-text: #3b9eff;
-$accent-orange: #fab638;
+$secondary-text: #9ca3af; // OLD: #aaa TAILWIND: text-gray-400
 
+// $accent: #ff2600; OLD
+// $link-text: #3b9eff; OLD TAILWIND: text-blue-500
+
+// For the book online button
 $radial-gradient-background: $main-clr; /*250, 250, 250*/
 $solid-color-background: rgb(31, 31, 31); /*15, 15, 15*/
 $overlay-color: $main-clr; /*255, 255, 255*/
@@ -68,8 +64,6 @@ img {
 .radial-gradient {
   background: radial-gradient(circle at 50% 0%, rgba($radial-gradient-background, 0.1) 0%, rgba($radial-gradient-background, 0.1))
     rgba($solid-color-background, 1);
-  // background: radial-gradient(circle at 50% 0%, rgba($radial-gradient-background, 0.1) 0%, transparent 60%)
-  //   rgba($solid-color-background, 1);
 }
 
 .linear-mask {
@@ -448,11 +442,6 @@ li span {
   font-size: 1.5em;
 }
 
-.contact-link {
-  color: white;
-  margin: 0.25em;
-}
-
 .submit-button {
   padding: 0.5rem 3rem;
   font-size: 1.3em;
@@ -468,13 +457,6 @@ li span {
 .submit-button:hover {
   background-color: $contact-bkg;
   border: 2px solid gray;
-}
-
-.footer-contact-link {
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
-  margin: 0;
 }
 
 .footer-contact-card {
@@ -614,20 +596,6 @@ li span {
   color: white;
 }
 
-.secondary-text {
-  display: inline-block;
-  color: $secondary-text-light;
-  padding: 0;
-  margin: 0;
-}
-
-.secondary-text span {
-  font-family: "Oswald", sans-serif;
-  font-weight: 700;
-  color: white;
-  font-size: 2em;
-}
-
 .readmore {
   display: inline-block;
   color: $main-clr;
@@ -754,15 +722,6 @@ footer {
   }
 }
 
-.socials {
-  font-size: 2em;
-  color: white;
-}
-
-.socials:hover {
-  color: gray;
-}
-
 .footer-link {
   display: block;
   text-decoration: none;
@@ -773,10 +732,6 @@ footer {
 .footer-link:hover {
   color: rgb(246, 246, 246);
   text-decoration: underline;
-}
-
-.footer-contact-link {
-  margin-top: 1.25rem;
 }
 
 /** ABOUT US CSS **/
@@ -821,7 +776,8 @@ footer {
   list-style: none;
   line-height: 2;
   margin: 0;
-  background-color: #14171c;
+  background-color: $contact-bkg-lighter;
+  border-top: 1px solid white;
 }
 
 /** SIDE PAGE CSS **/
@@ -1064,15 +1020,6 @@ footer {
   text-align: center;
 }
 
-.aside-link {
-  color: $link-text;
-
-  img {
-    display: grid;
-    place-items: center;
-  }
-}
-
 .bold {
   font-weight: bold;
 }
@@ -1139,7 +1086,7 @@ footer {
   background-color: $contact-bkg;
   color: white;
   border: none;
-  box-shadow: 0 5px 10px $contact-border-clr;
+  box-shadow: 0 5px 10px $contact-bkg-lighter;
   text-align: center;
   font-size: 1.5em;
 }
@@ -1164,7 +1111,7 @@ footer {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 4px 8px 15px black;
+  box-shadow: 4px 8px 15px $contact-bkg;
 }
 
 .pricing__pricecard {
@@ -1901,9 +1848,4 @@ footer {
   .text-large {
     font-size: 2em;
   }
-}
-
-.accent-orange {
-  color: $main-clr;
-  border-color: $main-clr;
 }

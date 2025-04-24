@@ -7,16 +7,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#fea41c",
-        secondaryBkg: "#181b21",
-        accent: "#ff2600",
-        secondaryBtnClr: "#47515d",
-        contactBkg: "#07080b", // #1b1b1b
-        urableClr: "#2fd2a8",
-        supportingText: "#bbb",
-        secondaryText: "#606a7c", // #aaa
-        secondaryTextLight: "#c0c0c0",
-        link: "#3b9eff"
+        primary: "#f59e0b", // OLD: #fea41c
+        accent: "#f59e0b"
       },
       animation: {
         scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite"

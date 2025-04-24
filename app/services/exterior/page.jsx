@@ -71,7 +71,7 @@ export default function Exterior() {
                 <p>
                   And while we're at it, how's the interior of your car doing? We'd be more than happy to clean it out as well, no matter the condition! Check
                   out our interior offers{" "}
-                  <a href="/services/interior" className="aside-link">
+                  <a href="/services/interior" className="text-blue-500">
                     here
                   </a>
                   .
@@ -83,7 +83,7 @@ export default function Exterior() {
             <div>
               <div className="pricing__heading-container">
                 <h3 className="pricing__heading">
-                  <span className="accent-orange bold">Exterior Decon Wash</span> Pricing
+                  <span className="text-amber-500 bold">Exterior Decon Wash</span> Pricing
                 </h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
@@ -176,7 +176,7 @@ export default function Exterior() {
                   <p className="step-desc">
                     If you opt for our Exterior Seal and Shine package you get all of these benefits plus: a full vehicle polish, specialized windshield and
                     trim coatings, and a 1-year ceramic coating on all paint! See more info{" "}
-                    <a href="/services/exterior-seal" className="aside-link">
+                    <a href="/services/exterior-seal" className="text-blue-500">
                       here
                     </a>
                     .
@@ -244,13 +244,13 @@ export default function Exterior() {
               <div className="preview-content">
                 <h4>
                   Check out our{" "}
-                  <a href="/gallery/exterior" className="aside-link inline-block">
+                  <a href="/gallery/exterior" className="text-blue-500 inline-block">
                     Exterior Gallery <SquareArrowOutUpRight className="inline-block" />
                   </a>
                 </h4>
                 <p>
                   Check out our exterior gallery page, showing off some of the great results we've gotten over the years! See it{" "}
-                  <a href="/gallery/exterior" className="aside-link">
+                  <a href="/gallery/exterior" className="text-blue-500">
                     here
                   </a>
                   .

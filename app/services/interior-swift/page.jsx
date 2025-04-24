@@ -73,7 +73,7 @@ export default function FullIntEx() {
                 <p>
                   <span className="special-package">NOTE:</span> If you are looking for (or need) a more in depth interior detailing experience, take a look at
                   our{" "}
-                  <a href="/services/interior" className="aside-link">
+                  <a href="/services/interior" className="text-blue-500">
                     Full Interior Detail
                   </a>
                   !
@@ -84,7 +84,7 @@ export default function FullIntEx() {
             <div>
               <div className="pricing__heading-container">
                 <h3 className="pricing__heading">
-                  <span className="accent-orange bold">Swift Interior</span> Pricing
+                  <span className="text-amber-500 bold">Swift Interior</span> Pricing
                 </h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
@@ -179,13 +179,13 @@ export default function FullIntEx() {
               <div className="preview-content">
                 <h4>
                   See more examples of our interior{" "}
-                  <a href="/gallery/interior" className="aside-link inline-block">
+                  <a href="/gallery/interior" className="text-blue-500 inline-block">
                     work <SquareArrowOutUpRight className="inline-block" />
                   </a>
                 </h4>
                 <p>
                   To see more examples of our completed interior work, check out our{" "}
-                  <a href="/gallery/interior" className="aside-link">
+                  <a href="/gallery/interior" className="text-blue-500">
                     Interior Gallery
                   </a>{" "}
                   page.

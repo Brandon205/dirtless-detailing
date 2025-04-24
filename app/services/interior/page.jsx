@@ -72,7 +72,7 @@ export default function FullIntEx() {
                 <p>
                   Need the exterior done as well? Feel free to book an interior and exterior detail, we will get your vehicle looking like new in just one day!
                   Check out our exterior decon wash{" "}
-                  <a href="/services/exterior" className="aside-link">
+                  <a href="/services/exterior" className="text-blue-500">
                     here
                   </a>
                   .
@@ -83,7 +83,7 @@ export default function FullIntEx() {
             <div>
               <div className="pricing__heading-container">
                 <h3 className="pricing__heading">
-                  <span className="accent-orange bold">Full Interior</span> Pricing
+                  <span className="text-amber-500 bold">Full Interior</span> Pricing
                 </h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
@@ -162,7 +162,7 @@ export default function FullIntEx() {
                   <p className="step-desc">
                     Upgrade to our Spill Guard Service to have us apply a 1-year interior ceramic coating to all surfaces in the vehicle. This is PERFECT for
                     cars with kids, pets, or daily coffee trips with the occasional spills as cleaning it will now be easier. See more info{" "}
-                    <a href="/services/interior-spill" className="aside-link">
+                    <a href="/services/interior-spill" className="text-blue-500">
                       here
                     </a>
                     .
@@ -230,13 +230,13 @@ export default function FullIntEx() {
               <div className="preview-content">
                 <h4>
                   See examples of our interior{" "}
-                  <a href="/gallery/interior" className="aside-link inline-block">
+                  <a href="/gallery/interior" className="text-blue-500 inline-block">
                     work <SquareArrowOutUpRight className="inline-block" />
                   </a>
                 </h4>
                 <p>
                   Our interior gallery page has a large collection of interior images including before and after pictures! Check it out{" "}
-                  <a href="/gallery/interior" className="aside-link">
+                  <a href="/gallery/interior" className="text-blue-500">
                     here
                   </a>
                   .

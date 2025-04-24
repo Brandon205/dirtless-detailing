@@ -40,7 +40,7 @@ export default function HomePageCard({ title, imageUrl, description, steps, hour
   const specificService = serviceType + serviceName;
 
   return (
-    <div className="flex flex-col flex-1 relative w-[90%] min-w-[200px] lg:min-w-[400px] max-w-[95%] gap-2 rounded-2xl pb-8 bg-secondaryBkg overflow-hidden shadow-lg">
+    <div className="flex flex-col flex-1 relative w-[90%] min-w-[200px] lg:min-w-[400px] max-w-[95%] gap-2 rounded-2xl pb-8 bg-zinc-800 overflow-hidden shadow-lg">
       <div className="relative m-[2%] bg-center bg-no-repeat bg-cover h-[200px] w-[96%] lg:h-[250px] rounded-2xl flex justify-center">
         <Image src={imageUrl} alt={title} className="rounded-2xl object-cover" priority fill sizes="(max-width: 1550px) 80vw, (min-width: 1551px) 33vw" />
       </div>
@@ -76,11 +76,11 @@ export default function HomePageCard({ title, imageUrl, description, steps, hour
 
         <div className="w-full">
           <div className="flex w-full justify-around gap-4 py-4">
-            <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
+            <div className="flex flex-col items-center p-2 bg-zinc-900 w-full rounded-2xl font-bold">
               <p className="text-white m-0">{hours}</p>
               <p className="text-gray-400 text-[14px]">hours</p>
             </div>
-            <div className="flex flex-col items-center p-2 bg-contactBkg w-full rounded-2xl font-bold">
+            <div className="flex flex-col items-center p-2 bg-zinc-900 w-full rounded-2xl font-bold">
               <p className="text-gray-400 text-[14px]">Starting at</p>
               <p className="text-white m-0 text-2xl">${prices["2 Door"][serviceType][specificService]}</p>
             </div>
@@ -89,7 +89,7 @@ export default function HomePageCard({ title, imageUrl, description, steps, hour
           <div className="flex w-full justify-around gap-4 flex-col lg:flex-row">
             <motion.a
               href={linkUrl}
-              className="py-3 text-dm tracking-wide px-[0.9rem] bg-secondaryBtnClr rounded-[40px] text-center font-bold text-clip lg:w-1/2"
+              className="py-3 text-dm tracking-wide px-[0.9rem] bg-gray-500 rounded-[40px] text-center font-bold text-clip lg:w-1/2"
               initial={{ scale: 1 }}
               whileHover={{ scale: 1.05 }}
               aria-label={`Learn More about our ${title} service.`}

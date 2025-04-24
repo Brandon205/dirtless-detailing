@@ -74,7 +74,7 @@ export default function ExteriorSeal() {
                 </p>
                 <p>
                   Now's the perfect time to book a interior cleaning as well. Check out our current offers and pricing on our base interior service{" "}
-                  <a href="/services/interior" className="aside-link">
+                  <a href="/services/interior" className="text-blue-500">
                     here
                   </a>
                   .
@@ -86,7 +86,7 @@ export default function ExteriorSeal() {
             <div>
               <div className="pricing__heading-container">
                 <h3 className="pricing__heading">
-                  <span className="accent-orange bold">Exterior Seal and Shine</span> Pricing
+                  <span className="text-amber-500 bold">Exterior Seal and Shine</span> Pricing
                 </h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
@@ -194,7 +194,7 @@ export default function ExteriorSeal() {
                   <p className="step-desc">
                     If you opt for our Exterior Correct and Protect package you get all of these services, a 2-stage paint correction (removes more & deeper
                     scratches), and a 3 year Ceramic Coating, leaving you with up to 2 extra years of protection! See more info{" "}
-                    <a href="/services/exterior-correct" className="aside-link">
+                    <a href="/services/exterior-correct" className="text-blue-500">
                       here
                     </a>
                     .
@@ -265,13 +265,13 @@ export default function ExteriorSeal() {
               <div className="preview-content">
                 <h4>
                   See the finished{" "}
-                  <a href="/gallery/seal" className="aside-link inline-block">
+                  <a href="/gallery/seal" className="text-blue-500 inline-block">
                     results <SquareArrowOutUpRight className="inline-block" />
                   </a>
                 </h4>
                 <p>
                   Check out our Seal & Shine gallery page, showing off some of the great results we've gotten over the years! See it{" "}
-                  <a href="/gallery/seal" className="aside-link">
+                  <a href="/gallery/seal" className="text-blue-500">
                     here
                   </a>
                   .
