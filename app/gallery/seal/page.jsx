@@ -4,6 +4,7 @@ import Image from "next/image";
 import { topBtnVariant } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
 import "react-medium-image-zoom/dist/styles.css";
+import { ClipboardCheck, PhoneCall } from "lucide-react";
 import ImageGallery from "../../components/ImageGallery";
 
 const baImages = [
