@@ -154,11 +154,11 @@ export default function PricingComponent(props) {
 
 const Correction = () => {
   return (
-    <div className="pricing__addons-container">
-      <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4">
+    <div className="flex justify-center w-[90vw] mb-4 flex-wrap mx-auto my-0 gap-4 lg:flex-row">
+      <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4 max-w-[500px]">
         <div className="w-full flex flex-col items-center gap-2 justify-center mb-4">
           <h4 className="text-2xl font-semibold">Engine Bay Cleaning</h4>
-          <p className="text-xl text-gray-800">
+          <p className="text-xl text-gray-300">
             We will cover sensitive/electronic areas in the bay, clean and wash, then dress the engine bay to have it looking like new!
           </p>
         </div>
@@ -166,10 +166,10 @@ const Correction = () => {
           <p>$75</p>
         </div>
       </div>
-      <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4">
+      <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4 max-w-[500px]">
         <div className="w-full flex flex-col items-center gap-2 justify-center mb-4">
           <h4 className="text-2xl font-semibold">Debadging</h4>
-          <p className="text-xl text-gray-800">
+          <p className="text-xl text-gray-300">
             Since we are polishing the rest of your vehicle this is the perfect time to get any badges/emblems removed off of your car so that we can polish
             under them too! <span className="text-gray-400">(Typically 30 minutes - 1 hour depending on the badges)</span>
           </p>
@@ -184,11 +184,11 @@ const Correction = () => {
 
 const Exterior = () => {
   return (
-    <div className="pricing__addons-container">
-      <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4">
+    <div className="flex justify-center w-[90vw] mb-4 flex-wrap mx-auto my-0 gap-4 lg:flex-row">
+      <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4 max-w-[500px]">
         <div className="w-full flex flex-col items-center gap-2 justify-center mb-4">
           <h4 className="text-2xl font-semibold">Engine Bay Cleaning</h4>
-          <p className="text-xl text-gray-800">
+          <p className="text-xl text-gray-300">
             We will cover sensitive/electronic areas in the bay, clean and wash, then dress the engine bay to have it looking like new!
           </p>
         </div>
@@ -202,11 +202,11 @@ const Exterior = () => {
 
 const InteriorSwift = () => {
   return (
-    <div className="pricing__addons-container">
-      <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4">
+    <div className="flex justify-center w-[90vw] mb-4 flex-wrap mx-auto my-0 gap-4 lg:flex-row">
+      <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4 max-w-[500px]">
         <div className="w-full flex flex-col items-center gap-2 justify-center mb-4">
           <h4 className="text-2xl font-semibold">Ozone Treatment</h4>
-          <p className="text-xl text-gray-800">
+          <p className="text-xl text-gray-300">
             Ozone treatment is the use of O3 (ozone gas) to remove odors, bacteria, and viruses from everywhere in the vehicle. Recommended on ALL mold and
             smoke odor jobs.
           </p>
@@ -221,17 +221,17 @@ const InteriorSwift = () => {
 
 const FullInterior = () => {
   return (
-    <div className="pricing__addons-container">
-      <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4">
+    <div className="flex justify-center w-[90vw] mb-4 flex-wrap mx-auto my-0 gap-4 lg:flex-row">
+      <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4 max-w-[500px]">
         <div className="w-full flex flex-col items-center gap-2 justify-center mb-4">
           <h4 className="text-2xl font-semibold">Ozone Treatment</h4>
-          <p className="text-xl text-gray-800">
+          <p className="text-xl text-gray-300">
             Ozone treatment is the use of O3 (ozone gas) to remove odors, bacteria, and viruses from everywhere in the vehicle. Recommended on ALL mold and
             smoke odor jobs.
           </p>
         </div>
-        <div className="addon-price">
-          <strong>$75</strong>
+        <div className="bg-primary w-1/2 py-2 rounded-lg text-xl font-medium">
+          <p>$75</p>
         </div>
       </div>
     </div>
