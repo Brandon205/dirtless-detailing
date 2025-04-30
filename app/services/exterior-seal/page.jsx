@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import PricingComponent from "../../../utils/PricingComponent";
 import HeaderComponent from "../../components/HeaderComponent";
 import BeforeAfterSlider from "../../components/ImageSlider";
@@ -16,34 +16,25 @@ import {
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-
-const jsonld = {
-  "@context": "https://schema.org/",
-  "@type": "Product",
-  "name": "Exterior Seal & Shine",
-  "image": "/assets/images/correction/teslaclean.jpg",
-  "description":
-    "Experience a showroom shine and unparalleled protection with our Exterior Seal and Shine, ensuring your car gleams like new while safeguarding its finish.",
-  "brand": {
-    "@type": "Brand",
-    "name": "Dirt-Less Detailing"
-  },
-  "offers": {
-    "@type": "AggregateOffer",
-    "url": "https://www.dirtlessdetailing.com/services/exterior-seal",
-    "priceCurrency": "USD",
-    "lowPrice": "600",
-    "highPrice": "825"
-  },
-  "url": "https://www.dirtlessdetailing.com/services/exterior-seal"
-};
+import BaseSchema from "../../jsonSchemas/BaseSchema";
 
 export default function ExteriorSeal() {
-  const [slide, setSlide] = useState(50);
-
   return (
     <section className="service-content-container">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
+      <BaseSchema
+        serviceImage="/assets/images/correction/teslaclean.jpg"
+        makesOffer={{
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Seal & Shine",
+            "description":
+              "Experience a showroom shine and unparalleled protection with our Exterior Seal and Shine, ensuring your car gleams like new while safeguarding its finish.",
+            "areaServed": "Buckley, Bonney Lake, and surrounding areas.",
+            "serviceType": "Paint Correction and Ceramic Coating"
+          }
+        }}
+      />
       <HeaderComponent
         imageUrl="/assets/images/correction/teslaclean.jpg"
         title="Exterior Seal and Shine"

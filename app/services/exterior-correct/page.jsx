@@ -19,6 +19,7 @@ import FaqItem from "../../components/FaqItem";
 import { ExternalLink } from "lucide-react";
 import "react-medium-image-zoom/dist/styles.css";
 import ImageGallery from "../../components/ImageGallery";
+import BaseSchema from "../../jsonSchemas/BaseSchema";
 
 const faqItems = [
   {
@@ -89,27 +90,6 @@ const faqItems = [
   }
 ];
 
-const jsonld = {
-  "@context": "https://schema.org/",
-  "@type": "Product",
-  "name": "Exterior Correct & Protect",
-  "image": "/assets/images/correction/genesis2.jpeg",
-  "description":
-    "Elevate your vehicle's appearance and protection with our Correct and Protect service, leaving your car with a mirror-like shine and defense.",
-  "brand": {
-    "@type": "Brand",
-    "name": "Dirt-Less Detailing"
-  },
-  "offers": {
-    "@type": "AggregateOffer",
-    "url": "https://www.dirtlessdetailing.com/services/exterior-correct",
-    "priceCurrency": "USD",
-    "lowPrice": "1250",
-    "highPrice": "1750"
-  },
-  "url": "https://www.dirtlessdetailing.com/services/exterior-correct"
-};
-
 export default function ExteriorCorrect() {
   const [expanded, setExpanded] = useState(false);
   const [smallScreen, setSmallScreen] = useState(false);
@@ -124,7 +104,20 @@ export default function ExteriorCorrect() {
 
   return (
     <section className="service-content-container">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
+      <BaseSchema
+        serviceImage="/assets/images/correction/genesis3.jpeg"
+        makesOffer={{
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Correct & Protect",
+            "description":
+              "Elevate your vehicle's appearance and protection with our Correct and Protect service, leaving your car with a mirror-like shine and defense.",
+            "areaServed": "Buckley, Bonney Lake, and surrounding areas.",
+            "serviceType": "Paint Correction and Ceramic Coating"
+          }
+        }}
+      />
       <HeaderComponent
         imageUrl="/assets/images/correction/genesis3.jpeg"
         title="Exterior Correct and Protect"

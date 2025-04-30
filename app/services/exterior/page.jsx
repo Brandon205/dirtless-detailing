@@ -17,26 +17,6 @@ import { ExternalLink } from "lucide-react";
 import BaseSchema from "../../jsonSchemas/BaseSchema";
 import Image from "next/image";
 
-const jsonld = {
-  "@context": "https://schema.org/",
-  "@type": "Product",
-  "name": "Exterior Decon Wash",
-  "image": "/assets/images/exterior/subaruWashed.jpeg",
-  "description": "Get a car wash like never before with our Exterior Decon Wash. Where we go in depth to get all corners and remove any paint contaminants.",
-  "brand": {
-    "@type": "Brand",
-    "name": "Dirt-Less Detailing"
-  },
-  "offers": {
-    "@type": "AggregateOffer",
-    "url": "https://www.dirtlessdetailing.com/services/exterior",
-    "priceCurrency": "USD",
-    "lowPrice": "125",
-    "highPrice": "175"
-  },
-  "url": "https://www.dirtlessdetailing.com/services/exterior"
-};
-
 export default function Exterior() {
   return (
     <section className="service-content-container">
@@ -50,11 +30,10 @@ export default function Exterior() {
             "description":
               "Get a car wash like never before with our Exterior Decon Wash. Where we go in depth to get all corners and remove any paint contaminants.",
             "areaServed": "Buckley, Bonney Lake, and surrounding areas.",
-            "serviceType": "Exterior Decon Wash"
+            "serviceType": "Car Wash"
           }
         }}
       />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
       <HeaderComponent
         imageUrl="/assets/images/exterior/subaruWashed.jpeg"
         title="Exterior Decon Wash"

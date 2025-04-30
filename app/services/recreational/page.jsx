@@ -7,29 +7,10 @@ import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import { containerVariant, oddVariant, evenVariant } from "../../../utils/animationVariations";
 import Image from "next/image";
+import BaseSchema from "../../jsonSchemas/BaseSchema";
 const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
   ssr: false
 });
-
-const jsonld = {
-  "@context": "https://schema.org/",
-  "@type": "Product",
-  "name": "Boat/RV/Trailer Detailing",
-  "image": "/assets/images/showcase/RVWash.jpg",
-  "description": "At Dirt-Less Detailing we aren't limited to just cars and trucks! Book any boats, RV's, Trailers, or ORV's for a detail today!",
-  "brand": {
-    "@type": "Brand",
-    "name": "Dirt-Less Detailing"
-  },
-  "offers": {
-    "@type": "AggregateOffer",
-    "url": "https://www.dirtlessdetailing.com/services/recreational",
-    "priceCurrency": "USD",
-    "lowPrice": "50",
-    "highPrice": "700"
-  },
-  "url": "https://www.dirtlessdetailing.com/services/recreational"
-};
 
 const faqItems = [
   {
@@ -277,7 +258,19 @@ export default function Recreational() {
 
   return (
     <section className="service-content-container">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
+      <BaseSchema
+        serviceImage="/assets/images/showcase/RVWash.jpg"
+        makesOffer={{
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Rv/Trailer and Boat Detailing",
+            "description": "At Dirt-Less Detailing we aren't limited to just cars and trucks! Book any boats, RV's, Trailers, or ORV's for a detail today!",
+            "areaServed": "Buckley, Bonney Lake, and surrounding areas.",
+            "serviceType": "Rv/Trailer and Boat Detailing"
+          }
+        }}
+      />
       <HeaderComponent
         imageUrl="/assets/images/showcase/RVWash.jpg"
         title="Boats, RV's, Trailer, and ORV Detailing"

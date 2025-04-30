@@ -16,32 +16,25 @@ import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import HeaderComponent from "../../components/HeaderComponent";
-
-const jsonld = {
-  "@context": "https://schema.org/",
-  "@type": "Product",
-  "name": "Interior + Spill Guard",
-  "image": "/assets/images/showcase/ceramic1285.jpg",
-  "description":
-    "Get your car's interior looking brand new with our full interior detailing service, topped off with a ceramic coating to protect your vehicle from day to day use! Contact us to schedule your appointment today.",
-  "brand": {
-    "@type": "Brand",
-    "name": "Dirt-Less Detailing"
-  },
-  "offers": {
-    "@type": "AggregateOffer",
-    "url": "https://www.dirtlessdetailing.com/services/interior-spill",
-    "priceCurrency": "USD",
-    "lowPrice": "500",
-    "highPrice": "600"
-  },
-  "url": "https://www.dirtlessdetailing.com/services/interior-spill"
-};
+import BaseSchema from "../../jsonSchemas/BaseSchema";
 
 export default function InteriorSpill() {
   return (
     <section className="service-content-container">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
+      <BaseSchema
+        serviceImage="/assets/images/interior/accO.jpg"
+        makesOffer={{
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Full Interior + Spill Guard",
+            "description":
+              "Get your car's interior looking brand new with our full interior detailing service, topped off with a ceramic coating to protect your vehicle from day to day use! Contact us to schedule your appointment today.",
+            "areaServed": "Buckley, Bonney Lake, and surrounding areas.",
+            "serviceType": "Interior Detailing + Ceramic Coating"
+          }
+        }}
+      />
       <HeaderComponent
         imageUrl="/assets/images/interior/accO.jpg"
         title="Full Interior + Spill Guard"

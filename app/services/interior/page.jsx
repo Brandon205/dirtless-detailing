@@ -15,6 +15,7 @@ import {
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import BaseSchema from "../../jsonSchemas/BaseSchema";
 
 const jsonld = {
   "@context": "https://schema.org/",
@@ -40,7 +41,20 @@ const jsonld = {
 export default function FullIntEx() {
   return (
     <section className="service-content-container">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
+      <BaseSchema
+        serviceImage="/assets/images/interior/driver16.jpg"
+        makesOffer={{
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Full Interior Detail",
+            "description":
+              "Get your car's interior looking brand new with our full interior detailing service. This is our thorough cleaning and conditioning package where we try to bring your vehicle as close to perfection as we can get it. Contact us to schedule your appointment today.",
+            "areaServed": "Buckley, Bonney Lake, and surrounding areas.",
+            "serviceType": "Interior Detailing"
+          }
+        }}
+      />
       <HeaderComponent
         imageUrl="/assets/images/interior/driver16.jpg"
         title="Full Interior Cleaning"

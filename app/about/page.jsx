@@ -88,9 +88,9 @@ export default function About() {
     }
   }, []);
 
-  const negativeXMovement = useTransform(scrollY.scrollYProgress, [0, 0.32], [0, -90]);
+  // const negativeXMovement = useTransform(scrollY.scrollYProgress, [0, 0.32], [0, -90]);
 
-  const negativeYMovement = useTransform(scrollY.scrollYProgress, [0, 0.32], [0, -30]);
+  // const negativeYMovement = useTransform(scrollY.scrollYProgress, [0, 0.32], [0, -30]);
 
   const xMovement = useTransform(scrollY.scrollYProgress, [0, 0.32], [0, 80]);
 

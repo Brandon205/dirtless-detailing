@@ -14,32 +14,25 @@ import {
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-
-const jsonld = {
-  "@context": "https://schema.org/",
-  "@type": "Product",
-  "name": "Swift Interior Detail",
-  "image": "/assets/images/interior/driver3.jpg",
-  "description":
-    "Our Swift Interior Detail is our new service tailored to giving you a quick, easy, and budget friendly option to completely revamp your vehicles interior! Contact us to schedule your appointment today.",
-  "brand": {
-    "@type": "Brand",
-    "name": "Dirt-Less Detailing"
-  },
-  "offers": {
-    "@type": "AggregateOffer",
-    "url": "https://www.dirtlessdetailing.com/services/interior-swift",
-    "priceCurrency": "USD",
-    "lowPrice": "175",
-    "highPrice": "225"
-  },
-  "url": "https://www.dirtlessdetailing.com/services/interior-swift"
-};
+import BaseSchema from "../../jsonSchemas/BaseSchema";
 
 export default function FullIntEx() {
   return (
     <section className="service-content-container">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
+      <BaseSchema
+        serviceImage="/assets/images/interior/driver12.jpg"
+        makesOffer={{
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Swift Interior Detail",
+            "description":
+              "Our Swift Interior Detail is our new service tailored to giving you a quick, easy, and budget friendly option to completely revamp your vehicles interior! Contact us to schedule your appointment today.",
+            "areaServed": "Buckley, Bonney Lake, and surrounding areas.",
+            "serviceType": "Interior Detailing"
+          }
+        }}
+      />
       <HeaderComponent
         imageUrl="/assets/images/interior/driver12.jpg"
         title="Swift Interior Detail"

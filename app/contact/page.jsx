@@ -3,32 +3,25 @@ import React from "react";
 import { BookingButton } from "../components/BookingButton";
 import { Clock, MapPin, Smartphone, Mail, Gift } from "lucide-react";
 import IframeSuspense from "../../utils/IframeSuspense";
-
-const jsonld = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Dirt-Less Detailing",
-  "url": "https://dirtlessdetailing.com/contact",
-  "logo": "/assets/icons/logoCircle.png",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "2532529758",
-    "contactType": "sales",
-    "contactOption": "TollFree",
-    "areaServed": "US",
-    "availableLanguage": "en"
-  },
-  "sameAs": [
-    "https://www.facebook.com/DirtLessDetailing",
-    "https://www.instagram.com/dirt_less_detailing",
-    "https://www.youtube.com/channel/UCsoqP5s4hwkQd_Sd-TVv-jg"
-  ]
-};
+import BaseSchema from "../jsonSchemas/BaseSchema";
 
 export default function Contact() {
   return (
     <section className="contact-container" id="contact">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
+      <BaseSchema
+        serviceImage="/assets/images/interior/driver16.jpg"
+        makesOffer={{
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Auto Detailing",
+            "description":
+              "Contact us here! Let us know any additional information we may need to know before your detail. Feel free to reach out with any questions!",
+            "areaServed": "Buckley, Bonney Lake, and surrounding areas.",
+            "serviceType": "Auto Detailing"
+          }
+        }}
+      />
 
       <h1 className="text-4xl font-bold pt-32 lg:pt-64 text-center">24/7 ONLINE PRICING & BOOKING</h1>
       <p className="text-center mb-10">
