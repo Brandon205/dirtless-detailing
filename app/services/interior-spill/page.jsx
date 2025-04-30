@@ -45,37 +45,6 @@ export default function InteriorSpill() {
       <div className="main-content-container">
         <div className="process-container">
           <div style={{ width: "100%" }}>
-            <main className="service-main">
-              <h2 style={{ marginBottom: 0 }} className="text-large">
-                Full Interior + Spill Guard
-              </h2>
-              <hr style={{ margin: "0 auto 3rem auto" }} />
-              <div className="service-explain">
-                <p>
-                  If your cars interior is often put under heavy use by kids, food, drinks, and even animals, then this is the best choice for you. Not only
-                  will we remove the past few months of dirt, french fries, and who knows what else, but we'll also protect your interior for time to come!
-                </p>
-                <p>
-                  With the Spill Guard coating, you'll get a layer of ceramic coating applied to all materials of your vehicle, even the fabric! Now cleanup
-                  from life's accidents will be far easier as the coating will act as a protective layer, which will give you more time to clean up before
-                  things soak in.
-                </p>
-                <p>
-                  And don't worry, the coating doesn't act like the cheap conditioners, and make all surfaces slippery. All materials will feel similar, look
-                  similar, and you won't be sliding around in your seat when you drive like other products.
-                </p>
-                <p>
-                  Do you need the exterior detailed as well? Feel free to book an interior and exterior detail. It's the best way to get your whole vehicle
-                  brought back to life! Check out our exterior decon wash{" "}
-                  <a href="/services/exterior" className="text-blue-500">
-                    here
-                  </a>
-                  , starting at only <span className="bold">$125</span>!
-                </p>
-              </div>
-            </main>
-            <br className="extra-space" />
-
             <div>
               <div className="pricing__heading-container">
                 <h3 className="pricing__heading">
@@ -156,6 +125,37 @@ export default function InteriorSpill() {
               </motion.li>
             </motion.ol>
 
+            <br className="extra-space" />
+
+            <main className="service-main">
+              <h2 style={{ marginBottom: 0 }} className="text-large">
+                Full Interior + Spill Guard
+              </h2>
+              <hr style={{ margin: "0 auto 3rem auto" }} />
+              <div className="service-explain">
+                <p>
+                  If your cars interior is often put under heavy use by kids, food, drinks, and even animals, then this is the best choice for you. Not only
+                  will we remove the past few months of dirt, french fries, and who knows what else, but we'll also protect your interior for time to come!
+                </p>
+                <p>
+                  With the Spill Guard coating, you'll get a layer of ceramic coating applied to all materials of your vehicle, even the fabric! Now cleanup
+                  from life's accidents will be far easier as the coating will act as a protective layer, which will give you more time to clean up before
+                  things soak in.
+                </p>
+                <p>
+                  And don't worry, the coating doesn't act like the cheap conditioners, and make all surfaces slippery. All materials will feel similar, look
+                  similar, and you won't be sliding around in your seat when you drive like other products.
+                </p>
+                <p>
+                  Do you need the exterior detailed as well? Feel free to book an interior and exterior detail. It's the best way to get your whole vehicle
+                  brought back to life! Check out our exterior decon wash{" "}
+                  <a href="/services/exterior" className="text-blue-500">
+                    here
+                  </a>
+                  , starting at only <span className="bold">$125</span>!
+                </p>
+              </div>
+            </main>
             <br className="extra-space" />
 
             <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>

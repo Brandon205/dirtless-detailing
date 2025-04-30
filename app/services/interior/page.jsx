@@ -17,27 +17,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import BaseSchema from "../../jsonSchemas/BaseSchema";
 
-const jsonld = {
-  "@context": "https://schema.org/",
-  "@type": "Product",
-  "name": "Full Interior Detail",
-  "image": "/assets/images/interior/driver16.jpg",
-  "description":
-    "Get your car's interior looking brand new with our full interior detailing service. We offer thorough cleaning and conditioning of all surfaces, including the dashboard, seats, and carpets. Contact us to schedule your appointment today.",
-  "brand": {
-    "@type": "Brand",
-    "name": "Dirt-Less Detailing"
-  },
-  "offers": {
-    "@type": "AggregateOffer",
-    "url": "https://www.dirtlessdetailing.com/services/interior",
-    "priceCurrency": "USD",
-    "lowPrice": "335",
-    "highPrice": "425"
-  },
-  "url": "https://www.dirtlessdetailing.com/services/interior"
-};
-
 export default function FullIntEx() {
   return (
     <section className="service-content-container">
@@ -65,35 +44,6 @@ export default function FullIntEx() {
       <div className="main-content-container">
         <div className="process-container">
           <div style={{ width: "100%" }}>
-            <main className="service-main">
-              <h2 style={{ marginBottom: 0 }} className="text-large">
-                Our Interior Deep Cleaning
-              </h2>
-              <hr style={{ margin: "0 auto 3rem auto" }} />
-              <div className="service-explain">
-                <p>
-                  The goal of the Full Interior Cleaning package is to restore your interior to its best condition. Your carpet, seats, floor mats, plastics,
-                  windows, and all other interior fixtures will be meticulously cleaned.
-                </p>
-                <p>
-                  While we will attempt to remove all stains, many stains could prove to be more challenging to remove, or might not be completely removed. Some
-                  won't completely disappear depending on the kind of stain, how long it has been sitting, and the material the stain is on.
-                </p>
-                <p>
-                  Taking us by surprise is difficult. We will not think that your interior is too dirty. We've seen hundreds of different interiors, and have
-                  all the necessary tools for every situation.
-                </p>
-                <p>
-                  Need the exterior done as well? Feel free to book an interior and exterior detail, we will get your vehicle looking like new in just one day!
-                  Check out our exterior decon wash{" "}
-                  <a href="/services/exterior" className="text-blue-500">
-                    here
-                  </a>
-                  .
-                </p>
-              </div>
-            </main>
-            <br className="extra-space" />
             <div>
               <div className="pricing__heading-container">
                 <h3 className="pricing__heading">
@@ -185,6 +135,36 @@ export default function FullIntEx() {
               </motion.li>
             </motion.ol>
 
+            <br className="extra-space" />
+
+            <main className="service-main">
+              <h2 style={{ marginBottom: 0 }} className="text-large">
+                Our Interior Deep Cleaning
+              </h2>
+              <hr style={{ margin: "0 auto 3rem auto" }} />
+              <div className="service-explain">
+                <p>
+                  The goal of the Full Interior Cleaning package is to restore your interior to its best condition. Your carpet, seats, floor mats, plastics,
+                  windows, and all other interior fixtures will be meticulously cleaned.
+                </p>
+                <p>
+                  While we will attempt to remove all stains, many stains could prove to be more challenging to remove, or might not be completely removed. Some
+                  won't completely disappear depending on the kind of stain, how long it has been sitting, and the material the stain is on.
+                </p>
+                <p>
+                  Taking us by surprise is difficult. We will not think that your interior is too dirty. We've seen hundreds of different interiors, and have
+                  all the necessary tools for every situation.
+                </p>
+                <p>
+                  Need the exterior done as well? Feel free to book an interior and exterior detail, we will get your vehicle looking like new in just one day!
+                  Check out our exterior decon wash{" "}
+                  <a href="/services/exterior" className="text-blue-500">
+                    here
+                  </a>
+                  .
+                </p>
+              </div>
+            </main>
             <br className="extra-space" />
 
             <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>

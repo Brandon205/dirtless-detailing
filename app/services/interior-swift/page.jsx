@@ -43,37 +43,6 @@ export default function FullIntEx() {
       <div className="main-content-container">
         <div className="process-container">
           <div style={{ width: "100%" }}>
-            <main className="service-main">
-              <h2 style={{ marginBottom: 0 }} className="text-large">
-                Quick and Easy Interior Detailing
-              </h2>
-              <hr style={{ margin: "0 auto 3rem auto" }} />
-              <div className="service-explain">
-                <p>
-                  Our Swift Interior Detail is a package aimed at vehicles that just need a simple maintenance, or vehicles that you don't want to be perfect
-                  without the cost of ultra deep cleaning from our full interior package. This service starts with us blowing out the hard to reach areas then
-                  giving the interior a good vacuuming.
-                </p>
-                <p>
-                  The Swift Interior Detail also includes all interior surfaces being wiped down thoroughly, such as dashboards, consoles, and door panels. For
-                  this step we use a product that allows us to clean, and condition all in one step, saving us time and you money! All your interior surfaces
-                  will look and feel refreshed!
-                </p>
-                <p>
-                  If there are minor stains or just a couple of spots don't worry! We won't charge you any extra, just let us know any problem areas you want us
-                  to target and we'll get them taken care of!
-                </p>
-                <p>
-                  <span className="special-package">NOTE:</span> If you are looking for (or need) a more in depth interior detailing experience, take a look at
-                  our{" "}
-                  <a href="/services/interior" className="text-blue-500">
-                    Full Interior Detail
-                  </a>
-                  !
-                </p>
-              </div>
-            </main>
-            <br className="extra-space" />
             <div>
               <div className="pricing__heading-container">
                 <h3 className="pricing__heading">
@@ -124,6 +93,38 @@ export default function FullIntEx() {
               </motion.li>
             </motion.ol>
 
+            <br className="extra-space" />
+
+            <main className="service-main">
+              <h2 style={{ marginBottom: 0 }} className="text-large">
+                Quick and Easy Interior Detailing
+              </h2>
+              <hr style={{ margin: "0 auto 3rem auto" }} />
+              <div className="service-explain">
+                <p>
+                  Our Swift Interior Detail is a package aimed at vehicles that just need a simple maintenance, or vehicles that you don't want to be perfect
+                  without the cost of ultra deep cleaning from our full interior package. This service starts with us blowing out the hard to reach areas then
+                  giving the interior a good vacuuming.
+                </p>
+                <p>
+                  The Swift Interior Detail also includes all interior surfaces being wiped down thoroughly, such as dashboards, consoles, and door panels. For
+                  this step we use a product that allows us to clean, and condition all in one step, saving us time and you money! All your interior surfaces
+                  will look and feel refreshed!
+                </p>
+                <p>
+                  If there are minor stains or just a couple of spots don't worry! We won't charge you any extra, just let us know any problem areas you want us
+                  to target and we'll get them taken care of!
+                </p>
+                <p>
+                  <span className="special-package">NOTE:</span> If you are looking for (or need) a more in depth interior detailing experience, take a look at
+                  our{" "}
+                  <a href="/services/interior" className="text-blue-500">
+                    Full Interior Detail
+                  </a>
+                  !
+                </p>
+              </div>
+            </main>
             <br className="extra-space" />
 
             <div className="preview-container">

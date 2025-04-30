@@ -45,35 +45,6 @@ export default function ExteriorSeal() {
       <div className="main-content-container">
         <div className="process-container">
           <div style={{ width: "100%" }}>
-            <main className="service-main">
-              <h2 style={{ marginBottom: 0 }} className="text-large">
-                Exterior Seal and Shine
-              </h2>
-              <hr style={{ margin: "0 auto 3rem auto" }} />
-              <div className="service-explain">
-                <p>
-                  This service comes with everything from our Exterior Decon Wash Service and more! If you are looking to truly brighten your vehicles paint and
-                  make it glow, or just get rid of minor swirl marks, this is the package for you.
-                </p>
-                <p>
-                  After our decon wash, we clay your paint removing any final embedded contaminates. From there, we refine your paint by doing a light polishing
-                  step to increase depth and gloss. Finally, we top all of that goodness with up to 1 year of ceramic protection on your whole vehicle!
-                </p>
-                <p>
-                  This is a great service to get yearly on ceramic coated, and non ceramic coated vehicles to refresh your exterior, and always have it looking
-                  its best.
-                </p>
-                <p>
-                  Now's the perfect time to book a interior cleaning as well. Check out our current offers and pricing on our base interior service{" "}
-                  <a href="/services/interior" className="text-blue-500">
-                    here
-                  </a>
-                  .
-                </p>
-              </div>
-            </main>
-            <br className="extra-space" />
-
             <div>
               <div className="pricing__heading-container">
                 <h3 className="pricing__heading">
@@ -194,6 +165,35 @@ export default function ExteriorSeal() {
               </motion.li>
             </motion.ol>
 
+            <br className="extra-space" />
+
+            <main className="service-main">
+              <h2 style={{ marginBottom: 0 }} className="text-large">
+                Exterior Seal and Shine
+              </h2>
+              <hr style={{ margin: "0 auto 3rem auto" }} />
+              <div className="service-explain">
+                <p>
+                  This service comes with everything from our Exterior Decon Wash Service and more! If you are looking to truly brighten your vehicles paint and
+                  make it glow, or just get rid of minor swirl marks, this is the package for you.
+                </p>
+                <p>
+                  After our decon wash, we clay your paint removing any final embedded contaminates. From there, we refine your paint by doing a light polishing
+                  step to increase depth and gloss. Finally, we top all of that goodness with up to 1 year of ceramic protection on your whole vehicle!
+                </p>
+                <p>
+                  This is a great service to get yearly on ceramic coated, and non ceramic coated vehicles to refresh your exterior, and always have it looking
+                  its best.
+                </p>
+                <p>
+                  Now's the perfect time to book a interior cleaning as well. Check out our current offers and pricing on our base interior service{" "}
+                  <a href="/services/interior" className="text-blue-500">
+                    here
+                  </a>
+                  .
+                </p>
+              </div>
+            </main>
             <br className="extra-space" />
 
             <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>

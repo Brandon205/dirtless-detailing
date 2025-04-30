@@ -44,7 +44,7 @@ export default function Exterior() {
       <div className="main-content-container">
         <div className="process-container">
           <div style={{ width: "100%" }}>
-            <main className="service-main">
+            {/* <main className="service-main">
               <h2 style={{ marginBottom: 0 }} className="text-large">
                 Exterior Decon Wash
               </h2>
@@ -72,7 +72,7 @@ export default function Exterior() {
                 </p>
               </div>
             </main>
-            <br className="extra-space" />
+            <br className="extra-space" /> */}
 
             <div>
               <div className="pricing__heading-container">
@@ -179,6 +179,36 @@ export default function Exterior() {
               </motion.li>
             </motion.ol>
 
+            <br className="extra-space" />
+
+            <main className="service-main">
+              <h2 style={{ marginBottom: 0 }} className="text-large">
+                Exterior Decon Wash
+              </h2>
+              <hr style={{ margin: "0 auto 3rem auto" }} />
+              <div className="service-explain">
+                <p>
+                  This is our base exterior detailing service. It is designed to give the outside of your vehicle a thorough wash and decontamination. We even
+                  top it off with a 3 month ceramic spray for protection.
+                </p>
+                <p>
+                  Wheels and tires can easily be one of the dirtiest parts of a car without you even realizing it, and brake dust is no joke once it's been on
+                  there for a while. Thats why we have a wide array of chemicals and products to best clean even the dirtiest wheels.
+                </p>
+                <p>
+                  In our Decon Wash, our goal is not to just give your car a quick mitt wash and call it good. A Decon Wash is more in-depth removing all
+                  contaminants including iron, tar, and tree sap.
+                </p>
+                <p>
+                  And while we're at it, how's the interior of your car doing? We'd be more than happy to clean it out as well, no matter the condition! Check
+                  out our interior offers{" "}
+                  <a href="/services/interior" className="text-blue-500">
+                    here
+                  </a>
+                  .
+                </p>
+              </div>
+            </main>
             <br className="extra-space" />
 
             <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>

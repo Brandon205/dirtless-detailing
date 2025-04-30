@@ -327,12 +327,12 @@ export default function Home() {
         </section>
         <br className="extra-space" />
         <hr className="pricing__hr" />
-        <div className="text-center">
+        <div className="text-center w-[95vw] lg:w-full mx-auto">
           <h4 className="text-4xl font-bold py-6">24/7 ONLINE PRICING & BOOKING</h4>
 
           <BookingButton title="Book Online!" />
 
-          <p className="pt-8 text-2xl">Or simply submit this form to get in contact with us!</p>
+          <p className="pt-8 text-2xl w-[95vw] lg:w-full">Or simply submit this form to get in contact with us!</p>
         </div>
         <fieldset className="urable-form-container">
           <IframeSuspense

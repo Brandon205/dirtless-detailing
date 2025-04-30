@@ -128,47 +128,10 @@ export default function ExteriorCorrect() {
       <div className="main-content-container">
         <div className="process-container">
           <div style={{ width: "100%" }}>
-            <main className="service-main">
-              <h2 style={{ marginBottom: 0 }} className="text-large">
-                Exterior Correct and Protect
-              </h2>
-              <hr style={{ margin: "0 auto 3rem auto" }} />
-              <div className="service-explain">
-                <p>
-                  This is our top of the line exterior service. If you want to remove years of wear and scratching, and provide the best protection available,
-                  then this is the service for you. We start off with our full{" "}
-                  <a href="/services/exterior" className="text-blue-500">
-                    Exterior Decon Wash
-                  </a>{" "}
-                  to remove any contaminants. From there, we refine your paint by performing an in-depth polishing step removing as many imperfections we safely
-                  can.
-                </p>
-                <p>
-                  The it's time for the ceramic coating! To provide to best protection and coverage on the paint coating, we coat your whole vehicle with the
-                  hardest, most resilient ceramic coatings on the market. This includes paint, trim, lights, glass, and wheels.
-                </p>
-                <p>
-                  Feel free to contact us to get any of your questions answered, ceramic coatings are somewhat new so not everyone knows all that they can do.
-                  Give us a call or check out our{" "}
-                  <a href="#faq" className="text-blue-500">
-                    FAQ
-                  </a>{" "}
-                  section at the bottom of this page to get your questions answered!
-                </p>
-                <p>
-                  <span className="special-package">Note:</span> This is one of the services that we require you to drop off your car at our shop for. We will
-                  most likely need to keep you car overnight as the ceramic coating has a cure time before it's ready to be exposed to the elements. Also, our
-                  shop has proper lighting to ensure that we don't miss any spots on the paint.
-                </p>
-              </div>
-            </main>
-            <br className="extra-space" />
-            <br className="extra-space" />
-
             <div>
               <div className="pricing__heading-container">
                 <h3 className="pricing__heading">
-                  <span className="text-amber-500 bold">Correct and Protect</span> Pricing
+                  <span className="text-amber-500 bold">Correct & Protect</span> Pricing
                 </h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
@@ -262,6 +225,42 @@ export default function ExteriorCorrect() {
               </motion.li>
             </motion.ol>
 
+            <br className="extra-space" />
+
+            <main className="service-main">
+              <h2 style={{ marginBottom: 0 }} className="text-large">
+                Exterior Correct and Protect
+              </h2>
+              <hr style={{ margin: "0 auto 3rem auto" }} />
+              <div className="service-explain">
+                <p>
+                  This is our top of the line exterior service. If you want to remove years of wear and scratching, and provide the best protection available,
+                  then this is the service for you. We start off with our full{" "}
+                  <a href="/services/exterior" className="text-blue-500">
+                    Exterior Decon Wash
+                  </a>{" "}
+                  to remove any contaminants. From there, we refine your paint by performing an in-depth polishing step removing as many imperfections we safely
+                  can.
+                </p>
+                <p>
+                  The it's time for the ceramic coating! To provide to best protection and coverage on the paint coating, we coat your whole vehicle with the
+                  hardest, most resilient ceramic coatings on the market. This includes paint, trim, lights, glass, and wheels.
+                </p>
+                <p>
+                  Feel free to contact us to get any of your questions answered, ceramic coatings are somewhat new so not everyone knows all that they can do.
+                  Give us a call or check out our{" "}
+                  <a href="#faq" className="text-blue-500">
+                    FAQ
+                  </a>{" "}
+                  section at the bottom of this page to get your questions answered!
+                </p>
+                <p>
+                  <span className="special-package">Note:</span> This is one of the services that we require you to drop off your car at our shop for. We will
+                  most likely need to keep you car overnight as the ceramic coating has a cure time before it's ready to be exposed to the elements. Also, our
+                  shop has proper lighting to ensure that we don't miss any spots on the paint.
+                </p>
+              </div>
+            </main>
             <br className="extra-space" />
 
             <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
