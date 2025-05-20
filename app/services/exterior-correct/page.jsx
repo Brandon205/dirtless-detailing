@@ -23,16 +23,23 @@ import BaseSchema from "../../jsonSchemas/BaseSchema";
 
 const faqItems = [
   {
-    title: "Why should I get a Ceramic Coating?",
+    title: "What is a Ceramic Coating and why should I get one?",
     description: (
       <div>
         <ul style={{ margin: 0, marginLeft: "1rem" }} className="list-disc">
           <li>
-            It is the best protection for your paint, Ceramic coatings increase the hardness of your paint, making it less likely to scratch while washing
+            Besides PPF it is the best protection for your paint, ceramic coatings increase the hardness of your paint, making it less likely to scratch while
+            washing.
           </li>
-          <li>Coatings increase the Gloss and Slickness of your paint</li>
-          <li>Self cleaning properties: Ceramic coatings easily bead water, dirt gets caught in these beads and will fly off while you're driving!</li>
-          <li>Easier to wash and dry. Dirt will wash off with less effort, you can also blow dry 90% of your vehicle because of the water beading.</li>
+          <li>
+            Coatings increase the Gloss and Slickness of your paint, which can help remove dirt before it gets trapped under your wash mitts while washing
+            leading to scratches.
+          </li>
+          <li>
+            Self cleaning properties: ceramic coatings easily bead water, dirt gets caught in these beads and will fly off while you're driving! Your windshield
+            will bead water like never before as well!
+          </li>
+          <li>Far easier to wash and dry your car. Dirt will wash off with less effort, you can also blow dry 90% of your vehicle.</li>
         </ul>
         <ImageGallery images={[{ src: "/assets/images/showcase/iglcircle.jpg" }]} />
       </div>
@@ -243,7 +250,7 @@ export default function ExteriorCorrect() {
                   can.
                 </p>
                 <p>
-                  The it's time for the ceramic coating! To provide to best protection and coverage on the paint coating, we coat your whole vehicle with the
+                  Then it's time for the ceramic coating! To provide to best protection and coverage on the paint coating, we coat your whole vehicle with the
                   hardest, most resilient ceramic coatings on the market. This includes paint, trim, lights, glass, and wheels.
                 </p>
                 <p>
@@ -252,7 +259,7 @@ export default function ExteriorCorrect() {
                   <a href="#faq" className="text-blue-500">
                     FAQ
                   </a>{" "}
-                  section at the bottom of this page to get your questions answered!
+                  section at the bottom of this page!
                 </p>
                 <p>
                   <span className="special-package">Note:</span> This is one of the services that we require you to drop off your car at our shop for. We will
