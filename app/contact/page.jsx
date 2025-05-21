@@ -54,7 +54,7 @@ export default function Contact() {
             <div className="flex-shrink-0 w-[28px] h-[28px]">
               <Clock size={28} />
             </div>
-            <p>Monday - Sunday: 8 AM - 8 PM</p>
+            <p>Monday - Sunday: 7 AM - 7 PM</p>
           </div>
           <div className="flex items-center gap-4 bg-zinc-800 p-4">
             <div className="flex-shrink-0 w-[28px] h-[28px]">

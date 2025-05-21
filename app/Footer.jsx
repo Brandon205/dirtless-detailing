@@ -8,12 +8,8 @@ export default function Footer() {
       <div className="footer-content-card-left">
         <div>
           <a href="/">
-            <Image src="/assets/icons/logoCircle.png" alt="Dirt-Less Detailing" width={88} height={88} />
+            <Image src="/assets/images/showcase/newLogoLeft2.png" alt="Dirt-Less Detailing" width={200} height={200} />
           </a>
-          <div>
-            <h3>Dirt-Less</h3>
-            <h3>Detailing</h3>
-          </div>
         </div>
         <div>
           <p>©2025 Dirt-Less Detailing.</p>
