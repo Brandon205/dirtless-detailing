@@ -12,12 +12,20 @@ interface MakesOffer {
   };
 }
 
-export default function BaseSchema({ serviceImage = "/assets/images/archCoTruck.webp", makesOffer }: { serviceImage?: string; makesOffer: MakesOffer }) {
+export default function BaseSchema({
+  serviceImage = "/assets/images/archCoTruck.webp",
+  makesOffer,
+  url = "https://www.dirtlessdetailing.com"
+}: {
+  serviceImage?: string;
+  makesOffer: MakesOffer;
+  url?: string;
+}) {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Dirt-Less Detailing",
-    "url": "https://www.dirtlessdetailing.com",
+    "url": url,
     "image": serviceImage,
     "telephone": "+12532529758",
     "email": "brenden@dirtlessdetailing.com",

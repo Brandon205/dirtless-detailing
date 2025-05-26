@@ -23,6 +23,7 @@ export default function ExteriorSeal() {
     <section className="service-content-container">
       <BaseSchema
         serviceImage="/assets/images/correction/teslaclean.jpg"
+        url="https://dirtlessdetailing.com/services/exterior-seal"
         makesOffer={{
           "@type": "Offer",
           "itemOffered": {

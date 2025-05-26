@@ -21,6 +21,7 @@ export default function FullIntEx() {
     <section className="service-content-container">
       <BaseSchema
         serviceImage="/assets/images/interior/driver12.jpg"
+        url="https://dirtlessdetailing.com/services/interior-swift"
         makesOffer={{
           "@type": "Offer",
           "itemOffered": {

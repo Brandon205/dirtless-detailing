@@ -10,65 +10,66 @@ import starJSON from "../../public/assets/icons/starJSON.json";
 import calendarJSON from "../../public/assets/icons/calendarJSON.json";
 import carJSON from "../../public/assets/icons/carJSON.json";
 import locationJSON from "../../public/assets/icons/locationPing.json";
+import BaseSchema from "../jsonSchemas/BaseSchema";
 
-const jsonld = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "url": "https://dirtlessdetailing.com/about",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What do you need from me when you get here?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "All we will need is an electrical outlet, a water spigot, and preferably all/most personal items out of the car."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long will the detail take?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text":
-          "Every job will take a different amount of time, but once we know the condition of the car and the services requested we can give a good estimate as to how long it will take."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can you come to my apartment or workplace?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text":
-          "It will depend on the amount of space and access if we can or not. Typically apartment complexes and some workplaces can be strict with this type of thing and we may not be able to come to you. Let us know if you need a ride back to your house while we detail your vehicle, we give out rides all the time!"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you offer gift cards or gift certificates?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": 'Yes we do! Any of our services can be bought as a gift certificate. On the Contact page choose the "For Someone Else" option.'
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What cities do you service?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text":
-          "With our mobile service we can go out to: Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Lake Tapps, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I have to be there the whole time you're working on my car?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Absolutely not! You are free to go do whatever you need to do while we are working."
-      }
-    }
-  ]
-};
+// const jsonld = {
+//   "@context": "https://schema.org",
+//   "@type": "FAQPage",
+//   "url": "https://dirtlessdetailing.com/about",
+//   "mainEntity": [
+//     {
+//       "@type": "Question",
+//       "name": "What do you need from me when you get here?",
+//       "acceptedAnswer": {
+//         "@type": "Answer",
+//         "text": "All we will need is an electrical outlet, a water spigot, and preferably all/most personal items out of the car."
+//       }
+//     },
+//     {
+//       "@type": "Question",
+//       "name": "How long will the detail take?",
+//       "acceptedAnswer": {
+//         "@type": "Answer",
+//         "text":
+//           "Every job will take a different amount of time, but once we know the condition of the car and the services requested we can give a good estimate as to how long it will take."
+//       }
+//     },
+//     {
+//       "@type": "Question",
+//       "name": "Can you come to my apartment or workplace?",
+//       "acceptedAnswer": {
+//         "@type": "Answer",
+//         "text":
+//           "It will depend on the amount of space and access if we can or not. Typically apartment complexes and some workplaces can be strict with this type of thing and we may not be able to come to you. Let us know if you need a ride back to your house while we detail your vehicle, we give out rides all the time!"
+//       }
+//     },
+//     {
+//       "@type": "Question",
+//       "name": "Do you offer gift cards or gift certificates?",
+//       "acceptedAnswer": {
+//         "@type": "Answer",
+//         "text": 'Yes we do! Any of our services can be bought as a gift certificate. On the Contact page choose the "For Someone Else" option.'
+//       }
+//     },
+//     {
+//       "@type": "Question",
+//       "name": "What cities do you service?",
+//       "acceptedAnswer": {
+//         "@type": "Answer",
+//         "text":
+//           "With our mobile service we can go out to: Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Lake Tapps, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham."
+//       }
+//     },
+//     {
+//       "@type": "Question",
+//       "name": "Do I have to be there the whole time you're working on my car?",
+//       "acceptedAnswer": {
+//         "@type": "Answer",
+//         "text": "Absolutely not! You are free to go do whatever you need to do while we are working."
+//       }
+//     }
+//   ]
+// };
 
 export default function About() {
   const [expanded, setExpanded] = useState(false);
@@ -136,7 +137,22 @@ export default function About() {
 
   return (
     <div className="App bg-contact">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} />
+      <BaseSchema
+        serviceImage="/assets/images/interior/driver16.jpg"
+        url="https://dirtlessdetailing.com/about"
+        makesOffer={{
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Auto Detailing",
+            "description":
+              "Learn more about us and why Dirt-Less Detailing was founded, and check out our FAQ for to get answers to our most frequently asked questions.",
+            "areaServed": "Buckley, Bonney Lake, and surrounding areas.",
+            "serviceType": "Auto Detailing"
+          }
+        }}
+      />
+      {/* <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} /> */}
       <div className="cover">
         <Image src="/assets/images/correction/teslafoam.jpg" alt="Dirt-Less Detailing" priority fill quality={50} className="object-cover" />
       </div>

@@ -23,6 +23,7 @@ export default function InteriorSpill() {
     <section className="service-content-container">
       <BaseSchema
         serviceImage="/assets/images/interior/accO.jpg"
+        url="https://dirtlessdetailing.com/services/interior-spill"
         makesOffer={{
           "@type": "Offer",
           "itemOffered": {
