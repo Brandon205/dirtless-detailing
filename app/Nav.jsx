@@ -132,7 +132,7 @@ export default function Nav() {
             {/* Logo */}
             <div className="flex-shrink-0 absolute left-0 ml-4 lg:ml-8">
               <Link href="/" className="block relative w-[150px] h-[80px] lg:w-[175px] lg:h-[90px]">
-                <Image src="/assets/images/showcase/homepage-logo.png" alt="Dirt-Less Detailing Logo" className="object-cover" sizes="33vw" priority fill />
+                <Image src="/assets/images/showcase/wordingLogo.png" alt="Dirt-Less Detailing Logo" className="object-cover" sizes="33vw" priority fill />
               </Link>
             </div>
 
