@@ -102,9 +102,9 @@ export default function ProductsPage() {
         <div className="mb-8">
           <h2 className="text-xl font-medium mb-4">Filter by Category</h2>
           <div className="flex flex-wrap gap-2">
-            {categories.map((category) => (
+            {categories.map((category, id) => (
               <button
-                key={category}
+                key={id}
                 onClick={() => setSelectedCategory(category)}
                 className={`px-4 py-2 rounded-md transition ${
                   selectedCategory === category ? "bg-amber-500 text-black font-medium" : "bg-zinc-800 hover:bg-zinc-700"
@@ -169,7 +169,9 @@ export default function ProductsPage() {
                     </div>
                     <div className="flex items-center flex-wrap text-sm text-gray-300 mb-3 gap-2">
                       {product.category.map((cat, i) => (
-                        <span className="bg-gray-700 px-2 py-1 rounded">{cat}</span>
+                        <span className="bg-gray-700 px-2 py-1 rounded" key={i}>
+                          {cat}
+                        </span>
                       ))}
                       <div className="flex items-center ml-auto">
                         <Star size={16} className="text-[#fea41c] mr-1" fill="#fea41c" />
