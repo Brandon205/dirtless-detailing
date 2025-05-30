@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { ChevronDown, ShoppingCart, Star, Filter } from "lucide-react";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 
 const products = [
   {
@@ -152,56 +153,58 @@ export default function ProductsPage() {
           </div>
 
           {/* Products grid */}
-          <div className="flex-1">
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-              {sortedProducts.map((product, id) => (
-                <div key={id} className="bg-zinc-800 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-[1.02] hover:shadow-xl">
-                  <div className="h-48 bg-white relative">
-                    <Image src={product.image} alt={product.name} width={400} height={300} className="w-full h-full object-contain" />
-                    {product.featured && (
-                      <div className="absolute top-2 right-2 bg-[#fea41c] text-black px-2 py-1 rounded-md text-xs font-medium">Featured</div>
-                    )}
-                  </div>
-                  <div className="p-4">
-                    <div className="flex justify-between items-start mb-2">
-                      <h3 className="text-lg font-medium">{product.name}</h3>
-                      <span className="font-semibold text-[#fea41c]">${product.price}</span>
+          <Suspense fallback={<div className="text-center text-gray-400">Loading products...</div>}>
+            <div className="flex-1">
+              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                {sortedProducts.map((product, id) => (
+                  <div key={id} className="bg-zinc-800 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-[1.02] hover:shadow-xl">
+                    <div className="h-48 bg-white relative">
+                      <Image src={product.image} alt={product.name} width={400} height={300} className="w-full h-full object-contain" />
+                      {product.featured && (
+                        <div className="absolute top-2 right-2 bg-[#fea41c] text-black px-2 py-1 rounded-md text-xs font-medium">Featured</div>
+                      )}
                     </div>
-                    <div className="flex items-center flex-wrap text-sm text-gray-300 mb-3 gap-2">
-                      {product.category.map((cat, i) => (
-                        <span className="bg-gray-700 px-2 py-1 rounded" key={i}>
-                          {cat}
-                        </span>
-                      ))}
-                      <div className="flex items-center ml-auto">
-                        <Star size={16} className="text-[#fea41c] mr-1" fill="#fea41c" />
-                        <span>{product.rating}</span>
+                    <div className="p-4">
+                      <div className="flex justify-between items-start mb-2">
+                        <h3 className="text-lg font-medium">{product.name}</h3>
+                        <span className="font-semibold text-[#fea41c]">${product.price}</span>
                       </div>
+                      <div className="flex items-center flex-wrap text-sm text-gray-300 mb-3 gap-2">
+                        {product.category.map((cat, i) => (
+                          <span className="bg-gray-700 px-2 py-1 rounded" key={i}>
+                            {cat}
+                          </span>
+                        ))}
+                        <div className="flex items-center ml-auto">
+                          <Star size={16} className="text-[#fea41c] mr-1" fill="#fea41c" />
+                          <span>{product.rating}</span>
+                        </div>
+                      </div>
+                      <p className="text-gray-400 text-sm mb-4">{product.description}</p>
+                      <a
+                        href={product.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full bg-[#fea41c] hover:bg-[#e89210] text-black font-medium py-2 rounded-md flex items-center justify-center gap-2 transition-colors"
+                      >
+                        <ShoppingCart size={18} />
+                        View on Amazon
+                      </a>
                     </div>
-                    <p className="text-gray-400 text-sm mb-4">{product.description}</p>
-                    <a
-                      href={product.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-full bg-[#fea41c] hover:bg-[#e89210] text-black font-medium py-2 rounded-md flex items-center justify-center gap-2 transition-colors"
-                    >
-                      <ShoppingCart size={18} />
-                      View on Amazon
-                    </a>
                   </div>
-                </div>
-              ))}
-            </div>
-
-            {sortedProducts.length === 0 && (
-              <div className="bg-[#181b21] p-8 rounded-lg text-center">
-                <p className="text-lg">No products found matching your criteria.</p>
-                <button onClick={() => setSelectedCategory("All")} className="mt-4 text-[#fea41c] hover:underline">
-                  View all products
-                </button>
+                ))}
               </div>
-            )}
-          </div>
+
+              {sortedProducts.length === 0 && (
+                <div className="bg-[#181b21] p-8 rounded-lg text-center">
+                  <p className="text-lg">No products found matching your criteria.</p>
+                  <button onClick={() => setSelectedCategory("All")} className="mt-4 text-[#fea41c] hover:underline">
+                    View all products
+                  </button>
+                </div>
+              )}
+            </div>
+          </Suspense>
         </div>
       </div>
     </div>
