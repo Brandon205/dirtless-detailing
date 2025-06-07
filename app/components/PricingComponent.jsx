@@ -1,8 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import prices from "./Prices";
+import prices from "../../utils/Prices";
 import { CornerRightDown } from "lucide-react";
-import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "../app/components/Select";
+import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "./Select";
 
 import dynamic from "next/dynamic";
 import Image from "next/image";
@@ -115,7 +115,14 @@ export default function PricingComponent(props) {
       </Select>
 
       <div className="pricing__pricecard">
-        <p>Your Price Estimate:</p>
+        <div className="flex flex-col items-start mb-4 w-1/2">
+          <p className="text-2xl">Starting At:</p>
+          {props.shortTitle == "exteriorcorrect" || props.shortTitle == "exteriorseal" ? (
+            <p className="text-gray-400 text-sm text-left">*Correction services can be priced per hour depending on the level of correction that you want*</p>
+          ) : (
+            ""
+          )}
+        </div>
         <div className="pricing__pricecard-container">
           <strong className="pricing__pricecard-pricebox">
             <span className="pricing__pricecard-price">

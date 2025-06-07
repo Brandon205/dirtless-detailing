@@ -51,21 +51,6 @@ export default function Contact() {
       <div className="contact-information-container">
         <div className="contact-info-cards">
           <div className="flex items-center gap-4 bg-zinc-800 p-4">
-            {/* This line */}
-            <div className="flex-shrink-0 w-[28px] h-[28px]">
-              <Clock size={28} />
-            </div>
-            <p>Monday - Sunday: 7 AM - 7 PM</p>
-          </div>
-          <div className="flex items-center gap-4 bg-zinc-800 p-4">
-            <div className="flex-shrink-0 w-[28px] h-[28px]">
-              <MapPin size={28} />
-            </div>
-            <a href="https://maps.app.goo.gl/bhPDhjUN4jsSegu48" className="contact-link location-link underline" target="_blank" rel="noopener">
-              Buckley Business Park, 28120 WA-410, Building C6
-            </a>
-          </div>
-          <div className="flex items-center gap-4 bg-zinc-800 p-4">
             <div className="flex-shrink-0 w-[28px] h-[28px]">
               <Smartphone size={28} />
             </div>
@@ -86,6 +71,21 @@ export default function Contact() {
               style={{ overflow: "auto", overflowWrap: "anywhere" }}
             >
               brenden@dirtlessdetailing.com
+            </a>
+          </div>
+          <div className="flex items-center gap-4 bg-zinc-800 p-4">
+            {/* This line */}
+            <div className="flex-shrink-0 w-[28px] h-[28px]">
+              <Clock size={28} />
+            </div>
+            <p>Monday - Sunday: 8 AM - 5 PM</p>
+          </div>
+          <div className="flex items-center gap-4 bg-zinc-800 p-4">
+            <div className="flex-shrink-0 w-[28px] h-[28px]">
+              <MapPin size={28} />
+            </div>
+            <a href="https://maps.app.goo.gl/bhPDhjUN4jsSegu48" className="contact-link location-link underline" target="_blank" rel="noopener">
+              Buckley Business Park, 28120 WA-410, Building C6
             </a>
           </div>
           <div className="flex items-center gap-4 bg-zinc-800 p-4">

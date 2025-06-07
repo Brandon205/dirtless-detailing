@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import PricingComponent from "../../../utils/PricingComponent";
+import PricingComponent from "../../components/PricingComponent";
 import BeforeAfterSlider from "../../components/ImageSlider";
 import {
   previewParentVariation,

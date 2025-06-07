@@ -129,9 +129,10 @@ export default function Home() {
             imageUrl="/assets/images/interior/driver3.jpg"
             description="Our simple interior cleaning, best for maintenance or to quickly freshen up your interior."
             steps={[
-              "Complete vehicle vacuuming",
+              "Vacuum entire interior",
               "Light/small stain spot treatment",
-              "Clean and condition all leather and plastics",
+              "Clean all leather and plastics",
+              "Wash/clean all floor mats",
               "Clean interior glass to a streak-free finish"
             ]}
             hours="1.5-3"
@@ -161,7 +162,8 @@ export default function Home() {
             steps={[
               "EVERYTHING From our Full Interior Service",
               "All Leathers/plastics conditioned with an interior ceramic coating",
-              "All Carpet coated and brushed with our interior ceramic coating"
+              "Plastic and leather restoration (can restore faded plastics and leathers)",
+              "All carpets brushed and coated"
             ]}
             hours="4.5-7+"
             linkUrl="/services/interior-spill"
@@ -182,12 +184,12 @@ export default function Home() {
             imageUrl="/assets/images/exterior/jeepRenegade.jpg"
             description="The detailers car wash - one that goes far beyond what an auto car wash can do. Your wheels, tires, and even paint will be cleaner than ever!"
             steps={[
-              "Full vehicle hand wash, with tar/sap remover applied in spots with sap and tar",
+              "Full vehicle hand wash, with tar/sap remover applied where needed",
               "Scrub & wash the tires, wheels, wheel barrels, and wells",
               "Clean out all door jambs and the gas door",
               "Apply a ceramic spray on all surfaces (lasts 3-6 months)"
             ]}
-            hours="4.5-7+"
+            hours="1-2"
             linkUrl="/services/exterior"
           />
 
@@ -196,7 +198,7 @@ export default function Home() {
             imageUrl="/assets/images/sealshine/seal-shine.jpg"
             description="Our exterior decon wash, plus a full vehicle polish, topped with a 1-year ceramic coating!"
             steps={[
-              "EVERYTHING From our Exterior Decon Service",
+              "EVERYTHING from our Exterior Decon Service",
               "Single-stage polish to remove light scratches and swirls",
               "Restore and ceramic coat all trim",
               "Coat the windshield (most detailers charge extra for this!)",

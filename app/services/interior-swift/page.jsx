@@ -1,5 +1,5 @@
 "use client";
-import PricingComponent from "../../../utils/PricingComponent";
+import PricingComponent from "../../components/PricingComponent";
 import HeaderComponent from "../../components/HeaderComponent";
 import {
   previewParentVariation,

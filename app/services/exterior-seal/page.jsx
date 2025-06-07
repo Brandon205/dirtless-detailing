@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import PricingComponent from "../../../utils/PricingComponent";
+import PricingComponent from "../../components/PricingComponent";
 import HeaderComponent from "../../components/HeaderComponent";
 import BeforeAfterSlider from "../../components/ImageSlider";
 import {
@@ -53,7 +53,7 @@ export default function ExteriorSeal() {
                 </h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
-              <PricingComponent shortTitle="exteriorseal" serviceType="exterior" addons="correction" />
+              <PricingComponent serviceType="exterior" shortTitle="exteriorseal" addons="correction" />
             </div>
 
             <h2 className="cleaning-process-title pb-8">Our Exterior Seal and Shine Process</h2>

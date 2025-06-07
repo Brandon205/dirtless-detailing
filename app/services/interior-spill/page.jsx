@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import PricingComponent from "../../../utils/PricingComponent";
+import PricingComponent from "../../components/PricingComponent";
 import {
   previewParentVariation,
   imgVariation1,
