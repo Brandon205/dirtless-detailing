@@ -124,7 +124,7 @@ export default function Home() {
           <h2 className="new-heading text-xl lg:text-2xl">Transform your vehicle's interior with our Premium Auto Detailing services.</h2>
         </div>
         <div className="flex flex-col lg:flex-row flex-grow lg:justify-between lg:items-stretch lg:flex-wrap lg:w-[90%] lg:my-0 mx-auto justify-center items-center gap-24 mb-8">
-          <HomePageCard
+          {/* <HomePageCard
             title="Swift Interior Detail"
             imageUrl="/assets/images/interior/driver3.jpg"
             description="Our simple interior cleaning, best for maintenance or to quickly freshen up your interior."
@@ -137,7 +137,7 @@ export default function Home() {
             ]}
             hours="1.5-3"
             linkUrl="/services/interior-swift"
-          />
+          /> */}
 
           <HomePageCard
             title="Full Interior Detail"

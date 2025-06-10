@@ -87,7 +87,7 @@ export default function Benefits() {
           }}
           onMouseLeave={() => mapRef.current.goToAndStop(80, true)}
         />
-        <p className="header-desc text-left">In-Shop</p>
+        <p className="header-desc text-left">In Shop</p>
         <span className="header-desc-span text-left">or Mobile Services</span>
       </div>
     </div>

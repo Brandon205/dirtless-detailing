@@ -101,7 +101,7 @@ export default function Contact() {
         <div className="text-center">
           <strong style={{ fontSize: "2rem" }}>OR feel free to reach out via this form!</strong>
           <p style={{ fontSize: "1.3rem" }} className="services-p">
-            Mobile Services • Pricing Quotes • General Questions
+            In-Shop Services • Pricing Quotes • General Questions
           </p>
         </div>
         <fieldset className="urable-form-container">

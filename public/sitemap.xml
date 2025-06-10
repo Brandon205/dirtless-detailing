@@ -24,12 +24,12 @@
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
-  <url>
+  <!-- <url>
     <loc>https://www.dirtlessdetailing.com/services/interior-swift</loc>
     <lastmod>2024-04-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
-  </url>
+  </url> -->
   <url>
     <loc>https://www.dirtlessdetailing.com/services/interior-spill</loc>
     <lastmod>2024-04-27</lastmod>

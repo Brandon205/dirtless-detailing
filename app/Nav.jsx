@@ -47,11 +47,11 @@ export default function Nav() {
       {
         title: "INTERIOR DETAILING SERVICES",
         items: [
-          {
-            name: "Swift Interior Detail",
-            href: "/services/interior-swift",
-            bgImage: "/assets/images/interior/driver12.jpg"
-          },
+          // {
+          //   name: "Swift Interior Detail",
+          //   href: "/services/interior-swift",
+          //   bgImage: "/assets/images/interior/driver12.jpg"
+          // },
           {
             name: "Full Interior Detail",
             href: "/services/interior",

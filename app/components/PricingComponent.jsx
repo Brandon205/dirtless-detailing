@@ -43,9 +43,9 @@ export default function PricingComponent(props) {
     }, 1500);
 
     switch (props.addons) {
-      case "interiorSwift":
-        setAddonSection(<InteriorSwift />);
-        break;
+      // case "interiorSwift":
+      //   setAddonSection(<InteriorSwift />);
+      //   break;
       case "fullInterior":
         setAddonSection(<FullInterior />);
         break;
@@ -113,12 +113,13 @@ export default function PricingComponent(props) {
           </SelectGroup>
         </SelectContent>
       </Select>
-
       <div className="pricing__pricecard">
         <div className="flex flex-col items-start mb-4 w-1/2">
           <p className="text-2xl">Starting At:</p>
           {props.shortTitle == "exteriorcorrect" || props.shortTitle == "exteriorseal" ? (
-            <p className="text-gray-400 text-sm text-left">*Correction services can be priced per hour depending on the level of correction that you want*</p>
+            <p className="text-gray-400 text-sm text-left">
+              *Correction services will be priced per hour (~$150/hour) depending on the condition of your paint and the result you want!
+            </p>
           ) : (
             ""
           )}
@@ -128,11 +129,14 @@ export default function PricingComponent(props) {
             <span className="pricing__pricecard-price">
               $
               {animate ? (
-                <AnimatedNumbers
-                  includeComma
-                  animateToNumber={prices[sizesArr[currVal]][props.serviceType][props.shortTitle]}
-                  configs={[{ mass: 1, tension: 320, friction: 100 }]}
-                ></AnimatedNumbers>
+                <>
+                  <AnimatedNumbers
+                    includeComma
+                    animateToNumber={prices[sizesArr[currVal]][props.serviceType][props.shortTitle]}
+                    configs={[{ mass: 1, tension: 320, friction: 100 }]}
+                  ></AnimatedNumbers>
+                  {props.shortTitle == "exteriorcorrect" || props.shortTitle == "exteriorseal" ? "*" : ""}
+                </>
               ) : (
                 prices[sizesArr[currVal]][props.serviceType][props.shortTitle]
               )}
@@ -143,15 +147,11 @@ export default function PricingComponent(props) {
           </p>
         </div>
       </div>
-
       <hr className="pricing__hr" />
-
       <h3 style={{ fontSize: "2em", margin: 0 }} className="text-center">
         Get even more out of your service with an Add-on!
       </h3>
-
       {addonSection}
-
       <a href="/contact" className="new-contact-btn">
         Contact Us
       </a>
@@ -207,24 +207,24 @@ const Exterior = () => {
   );
 };
 
-const InteriorSwift = () => {
-  return (
-    <div className="flex justify-center w-[90vw] mb-4 flex-wrap mx-auto my-0 gap-4 lg:flex-row">
-      <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4 max-w-[500px]">
-        <div className="w-full flex flex-col items-center gap-2 justify-center mb-4">
-          <h4 className="text-2xl font-semibold">Ozone Treatment</h4>
-          <p className="text-xl text-gray-300">
-            Ozone treatment is the use of O3 (ozone gas) to remove odors, bacteria, and viruses from everywhere in the vehicle. Recommended on ALL mold and
-            smoke odor jobs.
-          </p>
-        </div>
-        <div className="bg-primary w-1/2 py-2 rounded-lg text-xl font-medium">
-          <p>$75</p>
-        </div>
-      </div>
-    </div>
-  );
-};
+// const InteriorSwift = () => {
+//   return (
+//     <div className="flex justify-center w-[90vw] mb-4 flex-wrap mx-auto my-0 gap-4 lg:flex-row">
+//       <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4 max-w-[500px]">
+//         <div className="w-full flex flex-col items-center gap-2 justify-center mb-4">
+//           <h4 className="text-2xl font-semibold">Ozone Treatment</h4>
+//           <p className="text-xl text-gray-300">
+//             Ozone treatment is the use of O3 (ozone gas) to remove odors, bacteria, and viruses from everywhere in the vehicle. Recommended on ALL mold and
+//             smoke odor jobs.
+//           </p>
+//         </div>
+//         <div className="bg-primary w-1/2 py-2 rounded-lg text-xl font-medium">
+//           <p>$75</p>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
 
 const FullInterior = () => {
   return (
