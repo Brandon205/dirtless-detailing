@@ -48,6 +48,39 @@ const products = [
     featured: false,
     image: "/assets/images/products/chemguystirebrush.jpg",
     link: "https://amzn.to/45tFfFb"
+  },
+  {
+    name: "Chemical Guys Wheel Brush",
+    price: 10.99,
+    category: ["Accessories", "Wheels", "Equipment"],
+    rating: 4.6,
+    description:
+      "",
+    featured: false,
+    image: "/assets/images/products/chemguystirebrush.jpg",
+    link: "https://amzn.to/45tFfFb"
+  },
+  {
+    name: "", // TODO add the 3 products here listed on tasks
+    price: 10.99,
+    category: ["Accessories", "Wheels", "Equipment"],
+    rating: 4.6,
+    description:
+      "",
+    featured: false,
+    image: "/assets/images/products/chemguystirebrush.jpg",
+    link: "https://amzn.to/45tFfFb"
+  },
+  {
+    name: "",
+    price: 10.99,
+    category: ["Accessories", "Wheels", "Equipment"],
+    rating: 4.6,
+    description:
+      "",
+    featured: false,
+    image: "/assets/images/products/chemguystirebrush.jpg",
+    link: "https://amzn.to/45tFfFb"
   }
 ];
 

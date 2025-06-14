@@ -108,9 +108,13 @@ export default function About() {
       description: "Yes of course! We are fully insured for our vehicle pickup service as well!"
     },
     {
+      title: "What types of payment do you accept?",
+      description: "We can take cash, check, and all major debit/credit cards!"
+    },
+    {
       title: "What cities do you service?",
       description:
-        "With our mobile service we can go out to: Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Lake Tapps, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham."
+        "With our mobile service we can go out to: Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Lake Tapps, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham. Our current mobile fee is $50, this helps us cover the packing, travel, setup, and takedown time for our services."
     },
     {
       title: "Do I have to be there the whole time you're working on my car?",
@@ -118,7 +122,8 @@ export default function About() {
     },
     {
       title: "Do you install PPF or window tint?",
-      description: "We do not install PPF or window tint at this time, however, just a few bays down from our shop there is a window tint installer!"
+      description:
+        "We do not install PPF or window tint at this time. If you are looking for window tinting just a few bays down from our shop we have an installer that we recommend!"
     },
     {
       title: "How would you recommend I wash my car on my own?",

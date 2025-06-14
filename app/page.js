@@ -77,7 +77,7 @@ export default function Home() {
           <div className="text-center lg:text-left">
             <strong className="text-gray-400 text-md lg:text-xl">Dirt-Less Detailing</strong>
             <h1 className={`${titillium.className} text-white text-5xl xl:text-7xl xl:text-left font-bold m-0 lg:max-w-[60%]`}>
-              Your Auto Detailing & Ceramic Coating Specialists
+              Your Ceramic Coating & Auto Detailing Specialists
             </h1>
           </div>
           <div className="text-center lg:text-left">
