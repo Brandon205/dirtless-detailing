@@ -5,7 +5,14 @@ export const metadata = {
   openGraph: {
     type: "website",
     url: "https://www.dirtlessdetailing.com/services/interior",
-    image: "/assets/images/interior/driver16.jpg"
+    images: [
+      {
+        url: "/assets/images/interior/driver16.jpg",
+        width: 1200,
+        height: 630,
+        alt: "The drivers side interior of a car after our Full Interior Detail service"
+      }
+    ]
   }
 };
 

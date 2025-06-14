@@ -5,7 +5,14 @@ export const metadata = {
   openGraph: {
     type: "website",
     url: "https://www.dirtlessdetailing.com/services/interior-spill",
-    image: "/assets/images/showcase/ceramic1285.jpg"
+    images: [
+      {
+        url: "/assets/images/showcase/ceramic1285.jpg",
+        width: 1200,
+        height: 630,
+        alt: "The seat of an Infiniti after putting out interior ceramic coating on it"
+      }
+    ]
   }
 };
 

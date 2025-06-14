@@ -5,7 +5,14 @@ export const metadata = {
   openGraph: {
     type: "website",
     url: "https://www.dirtlessdetailing.com/gallery/seal",
-    image: "/assets/images/sealshine/36 plymouth.jpg"
+    images: [
+      {
+        url: "/assets/images/sealshine/36 plymouth.jpg",
+        width: 1200,
+        height: 630,
+        alt: "A beautiful red 1936 Plymouth after our Seal & Shine Service."
+      }
+    ]
   }
 };
 

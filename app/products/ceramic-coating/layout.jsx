@@ -5,7 +5,14 @@ export const metadata = {
   openGraph: {
     type: "website",
     url: "https://www.dirtlessdetailing.com/products/ceramic-coating",
-    image: "/assets/images/correction/teslafoam.jpg"
+    images: [
+      {
+        url: "/assets/images/correction/teslafoam.jpg",
+        width: 1200,
+        height: 630,
+        alt: "A Tesla Model 3 with a nice layer of foam on it while getting washed"
+      }
+    ]
   }
 };
 

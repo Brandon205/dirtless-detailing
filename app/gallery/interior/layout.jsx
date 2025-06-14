@@ -6,7 +6,14 @@ export const metadata = {
   openGraph: {
     type: "website",
     url: "https://www.dirtlessdetailing.com/gallery/interior",
-    image: "/assets/images/interior/driverNewLexus.jpg"
+    images: [
+      {
+        url: "/assets/images/interior/driverNewLexus.jpg",
+        width: 1200,
+        height: 630,
+        alt: "The drivers side interior of a new Lexus."
+      }
+    ]
   }
 };
 

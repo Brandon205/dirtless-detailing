@@ -6,7 +6,14 @@ export const metadata = {
   openGraph: {
     type: "website",
     url: "https://www.dirtlessdetailing.com/services/exterior-seal",
-    image: "/assets/images/correction/teslaclean.jpg"
+    images: [
+      {
+        url: "/assets/images/correction/teslaclean.jpg",
+        width: 1200,
+        height: 630,
+        alt: "A clean Tesla Model 3 after our Exterior Seal and Shine service"
+      }
+    ]
   }
 };
 

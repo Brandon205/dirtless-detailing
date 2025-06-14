@@ -6,7 +6,14 @@ export const metadata = {
   openGraph: {
     type: "website",
     url: "https://www.dirtlessdetailing.com/services/exterior",
-    image: "/assets/images/exterior/subaruWashed.jpeg"
+    images: [
+      {
+        url: "/assets/images/exterior/subaruWashed.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Shiny black subaru WRX after a decontamination wash"
+      }
+    ]
   }
 };
 

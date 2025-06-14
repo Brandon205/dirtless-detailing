@@ -5,7 +5,14 @@ export const metadata = {
   openGraph: {
     type: "website",
     url: "https://www.dirtlessdetailing.com/services/exterior-correct",
-    image: "/assets/images/correction/genesis2.jpeg"
+    images: [
+      {
+        url: "/assets/images/correction/genesis2.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "A beautiful Genesis after our Correct and Protect service"
+      }
+    ]
   }
 };
 
