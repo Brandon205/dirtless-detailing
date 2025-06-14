@@ -156,7 +156,7 @@ export default function Home() {
           />
 
           <HomePageCard
-            title="Interior + Spill Guard"
+            title="Full Interior + Spill Guard"
             imageUrl="/assets/images/interior/driver12.jpg"
             description="Our Full Interior Service topped with a interior ceramic spray on all surfaces, perfect for making any future cleaning a breeze."
             steps={[
@@ -196,15 +196,15 @@ export default function Home() {
           <HomePageCard
             title="Seal & Shine"
             imageUrl="/assets/images/sealshine/seal-shine.jpg"
-            description="Our exterior decon wash, plus a full vehicle polish, topped with a 1-year ceramic coating!"
+            description="Our exterior decon wash, plus a single-stage paint correction, topped with a 1-year ceramic coating!"
             steps={[
-              "EVERYTHING from our Exterior Decon Service",
-              "Single-stage polish to remove light scratches and swirls",
+              "EVERYTHING from our Exterior Decon Service + Clay Bar Treatment",
+              "Single-stage paint correction to remove light scratches and swirls",
               "Restore and ceramic coat all trim",
               "Coat the windshield (most detailers charge extra for this!)",
-              "Apply a 1-year ceramic coating to the paint"
+              "Apply a 1-year ceramic coating to the entire vehicle"
             ]}
-            hours="6-9"
+            hours="6-9+"
             linkUrl="/services/exterior-seal"
           />
 
@@ -214,7 +214,7 @@ export default function Home() {
             description="Our top of the line exterior package. A 2-stage paint correction with with a 3-year ceramic coating (Click Learn More to see why we think 3
                   years is ideal over 5-10 year coatings)."
             steps={[
-              "EVERYTHING From our Exterior Decon Service",
+              "EVERYTHING From our Exterior Decon Service + Clay Bar Treatment",
               "Our full paint correction process (removes 80%-90% of scratches)",
               "Restore and ceramic coat all trim",
               "Coat the windshield (you'll barely need to use your wipers anymore!)",

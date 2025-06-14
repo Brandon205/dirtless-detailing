@@ -1095,23 +1095,6 @@ footer {
   box-shadow: 4px 8px 15px $contact-bkg;
 }
 
-.pricing__pricecard {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-
-  width: 90%;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-// .pricing__pricecard p {
-//   margin: 1rem 0 0 0;
-//   font-size: 1.5rem;
-//   color: #c0c0c0;
-// }
-
 .pricing__pricecard-pricebox {
   background-color: $contact-bkg;
   display: flex;
@@ -1580,11 +1563,6 @@ footer {
     flex-direction: row;
     max-width: 620px;
     gap: 1rem;
-  }
-
-  .pricing__pricecard {
-    flex-direction: row;
-    align-items: flex-start;
   }
 
   .contact-information-container {

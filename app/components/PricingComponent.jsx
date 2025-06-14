@@ -113,12 +113,19 @@ export default function PricingComponent(props) {
           </SelectGroup>
         </SelectContent>
       </Select>
-      <div className="pricing__pricecard">
+      <div className="flex flex-col justify-between items-center w-[90%] my-0 mx-auto max-w-[700px] lg:flex-row">
         <div className="flex flex-col items-start mb-4 w-1/2">
           <p className="text-2xl">Starting At:</p>
           {props.shortTitle == "exteriorcorrect" || props.shortTitle == "exteriorseal" ? (
             <p className="text-gray-400 text-sm text-left">
               *Correction services will be priced per hour (~$150/hour) depending on the condition of your paint and the result you want!
+            </p>
+          ) : (
+            ""
+          )}
+          {props.shortTitle == "interior" || props.shortTitle == "interior-spill" ? (
+            <p className="text-gray-400 text-sm text-left">
+              *This will be the final pricing for most interiors, however, in rare cases, we may need to charge more depending on the condition of the interior.
             </p>
           ) : (
             ""
@@ -149,7 +156,7 @@ export default function PricingComponent(props) {
       </div>
       <hr className="pricing__hr" />
       <h3 style={{ fontSize: "2em", margin: 0 }} className="text-center">
-        Get even more out of your service with an Add-on!
+        Get even more out of your service with one of our add-ons!
       </h3>
       {addonSection}
       <a href="/contact" className="new-contact-btn">

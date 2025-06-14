@@ -202,8 +202,8 @@ export default function ExteriorSeal() {
             <p className="pricing__subtext">With light scratches removed and a year of protection applied your car will shine like never before!</p>
             <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
               <BeforeAfterSlider
-                beforeImage="/assets/images/before&afters/fordExteriorBefore.jpg"
-                afterImage="/assets/images/before&afters/fordExteriorAfter.jpg"
+                beforeImage="/assets/images/before&afters/beforeMazda3.jpg"
+                afterImage="/assets/images/before&afters/afterMazda3.jpg"
                 aspectRatio="16/9"
               />
             </div>

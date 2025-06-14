@@ -32,14 +32,17 @@ const faqItems = [
             washing.
           </li>
           <li>
-            Coatings increase the Gloss and Slickness of your paint, which can help remove dirt before it gets trapped under your wash mitts while washing
-            leading to scratches.
+            Coatings increase the Gloss and Slickness of your paint, which can help remove dirt before it gets trapped under your wash mitts leading to
+            scratches.
           </li>
           <li>
             Self cleaning properties: ceramic coatings easily bead water, dirt gets caught in these beads and will fly off while you're driving! Your windshield
             will bead water like never before as well!
           </li>
-          <li>Far easier to wash and dry your car. Dirt will wash off with less effort, you can also blow dry 90% of your vehicle.</li>
+          <li>
+            It will be far easier to wash and dry your car. Dirt will wash off with less effort, you can also blow dry 90% of your vehicle when you're done
+            washing.
+          </li>
         </ul>
         <ImageGallery images={[{ src: "/assets/images/showcase/iglcircle.jpg" }]} />
       </div>
@@ -145,6 +148,23 @@ export default function ExteriorCorrect() {
               </div>
               <PricingComponent shortTitle="exteriorcorrect" serviceType="exterior" addons="correction" />
             </div>
+
+            <br className="extra-space" />
+
+            <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>The End Result</p>
+            <h3 className="pricing__heading">A brand new look and feel.</h3>
+            <p className="pricing__subtext">
+              Not just a complete exterior refresh, but now your vehicle has protection against the elements that Washington will throw at it.
+            </p>
+            <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
+              <BeforeAfterSlider
+                beforeImage="/assets/images/before&afters/scratchesBefore.jpg"
+                afterImage="/assets/images/before&afters/scratchesAfter.jpg"
+                aspectRatio="16/9"
+              />
+            </div>
+
+            <br className="extra-space" />
 
             <h2 className="cleaning-process-title pb-8">Our Exterior Correct and Protect Process</h2>
             <motion.ol className="list" variants={containerVariant} initial="initial" whileInView="whileInView" viewport={{ once: true }}>
@@ -269,22 +289,28 @@ export default function ExteriorCorrect() {
                 </p>
               </div>
             </main>
+
             <br className="extra-space" />
 
-            <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
-            <h3 className="pricing__heading">A brand new look and feel.</h3>
-            <p className="pricing__subtext">
-              Not just a complete exterior refresh, but now your vehicle has protection against the elements that Washington throws at us.
-            </p>
-            <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
-              <BeforeAfterSlider
-                beforeImage="/assets/images/before&afters/scratchesBefore.jpg"
-                afterImage="/assets/images/before&afters/scratchesAfter.jpg"
-                aspectRatio="16/9"
-              />
+            <div id="faq" style={{ width: "90%", margin: "0 auto", paddingTop: "2rem" }}>
+              <div className="new-heading-container text-white">
+                <strong className="above-heading text-3xl">Ceramic Coating FAQ</strong>
+                <h3 className="new-heading text-xl lg:text-2xl">Answers for the most commonly asked questions about ceramic coatings.</h3>
+              </div>
+              <div className="faq-container" style={{ color: "white" }} itemScope itemType="https://schema.org/FAQPage">
+                {faqItems.map((item, i) => (
+                  <FaqItem
+                    key={i}
+                    i={i}
+                    expanded={expanded}
+                    setExpanded={setExpanded}
+                    title={item.title}
+                    description={item.description}
+                    isMobile={smallScreen}
+                  />
+                ))}
+              </div>
             </div>
-
-            <br className="extra-space" />
 
             <div className="preview-container">
               <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/correct" className="gallery-preview">
@@ -331,39 +357,19 @@ export default function ExteriorCorrect() {
               </motion.a>
               <div className="preview-content">
                 <h4>
-                  See examples of our{" "}
+                  See more examples of our{" "}
                   <a href="/gallery/correct" className="text-blue-500 inline-block">
                     work <ExternalLink className="inline-block" />
                   </a>
                 </h4>
                 <p>
-                  See the stunning results that you'll get from our Correct and Protect service, water will be beading straight off of your whole car! Check it
+                  See the stunning results that you'll get from our Correct & Protect service, water will be beading straight off of your whole car! Check them
                   out{" "}
                   <a href="/gallery/correct" className="text-blue-500">
                     here
                   </a>
-                  .
+                  !
                 </p>
-              </div>
-            </div>
-
-            <div id="faq" style={{ width: "90%", margin: "0 auto", paddingTop: "2rem" }}>
-              <div className="new-heading-container text-white">
-                <strong className="above-heading text-3xl">Ceramic Coating FAQ</strong>
-                <h3 className="new-heading text-xl lg:text-2xl">Answers for the most commonly asked questions about ceramic coatings.</h3>
-              </div>
-              <div className="faq-container" style={{ color: "white" }} itemScope itemType="https://schema.org/FAQPage">
-                {faqItems.map((item, i) => (
-                  <FaqItem
-                    key={i}
-                    i={i}
-                    expanded={expanded}
-                    setExpanded={setExpanded}
-                    title={item.title}
-                    description={item.description}
-                    isMobile={smallScreen}
-                  />
-                ))}
               </div>
             </div>
           </div>

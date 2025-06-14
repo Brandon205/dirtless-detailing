@@ -90,7 +90,7 @@ export default function FullIntEx() {
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Door Jambs</h4>
-                  <p className="step-desc">Thoroughly clean and rinse out all cracks and crevices in the door jambs.</p>
+                  <p className="step-desc">Thoroughly clean and rinse out all door jambs.</p>
                 </div>
               </motion.li>
               <motion.li className="item" variants={oddVariant}>
@@ -145,20 +145,20 @@ export default function FullIntEx() {
               <hr style={{ margin: "0 auto 3rem auto" }} />
               <div className="service-explain">
                 <p>
-                  The goal of the Full Interior Cleaning package is to restore your interior to its best condition. Your carpet, seats, floor mats, plastics,
-                  windows, and all other interior fixtures will be meticulously cleaned.
+                  The goal of the Full Interior Detail is to restore your interior to its best condition. Your carpet, seats, floor mats, plastics, windows, and
+                  all other interior fixtures will be thoroughly cleaned.
                 </p>
                 <p>
                   While we will attempt to remove all stains, many stains could prove to be more challenging to remove, or might not be completely removed. Some
                   won't completely disappear depending on the kind of stain, how long it has been sitting, and the material the stain is on.
                 </p>
                 <p>
-                  Taking us by surprise is difficult. We will not think that your interior is too dirty. We've seen hundreds of different interiors, and have
-                  all the necessary tools for every situation.
+                  Taking us by surprise is difficult. We will not think that your interior is too dirty, trust us. We've seen hundreds of different interiors,
+                  and have all the necessary tools for every situation.
                 </p>
                 <p>
-                  Need the exterior done as well? Feel free to book an interior and exterior detail, we will get your vehicle looking like new in just one day!
-                  Check out our exterior decon wash{" "}
+                  Need the exterior done as well? Feel free to book an interior and exterior detail, we will get your entire vehicle looking like new in just
+                  one day! Check out our exterior decon wash{" "}
                   <a href="/services/exterior" className="text-blue-500">
                     here
                   </a>

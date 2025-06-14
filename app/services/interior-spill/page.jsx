@@ -112,9 +112,21 @@ export default function InteriorSpill() {
                   <p className="step-desc">Clean all windows and other glass, removing any streaking possibly left behind from the previous steps.</p>
                 </div>
               </motion.li>
-              <motion.li className="item" variants={oddVariant}>
+              <motion.li className="item" variants={evenVariant}>
                 <div className="step-number-container">
                   <h3 className="step-number">7</h3>
+                </div>
+                <div className="step-container">
+                  <h4 className="step-title">Leather & Plastic Restoration</h4>
+                  <p className="step-desc">
+                    Use a specialized cleaner to attempt to restore faded plastics, and a different chemical to try to rejuvenate leathers. The chemical makeup
+                    of both of these does an amazing job at preventing future UV damage and wear as well.
+                  </p>
+                </div>
+              </motion.li>
+              <motion.li className="item" variants={evenVariant}>
+                <div className="step-number-container">
+                  <h3 className="step-number">8</h3>
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Interior Spill Guard Coating</h4>
@@ -144,8 +156,8 @@ export default function InteriorSpill() {
                   things soak in.
                 </p>
                 <p>
-                  And don't worry, the coating doesn't act like the cheap conditioners, and make all surfaces slippery. All materials will feel similar, look
-                  similar, and you won't be sliding around in your seat when you drive like other products.
+                  And don't worry, the coating doesn't act like cheap conditioners, and make all surfaces slippery. All materials will feel similar, look
+                  similar, and you won't be sliding around in your seat when you get in like with other conditioners.
                 </p>
                 <p>
                   Do you need the exterior detailed as well? Feel free to book an interior and exterior detail. It's the best way to get your whole vehicle

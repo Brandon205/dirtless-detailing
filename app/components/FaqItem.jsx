@@ -14,9 +14,9 @@ export default function FaqItem({ i, expanded, setExpanded, title, description, 
     <div key={i} ref={parent} itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
       <div className="faq-title" itemProp="name" onClick={() => setExpanded(isOpen ? false : i)}>
         {title}
-        <p className="hidden" itemProp="acceptedAnswer" style={{ display: "none" }}>
+        <div className="hidden" itemProp="acceptedAnswer" style={{ display: "none" }}>
           {description}
-        </p>
+        </div>
 
         {isMobile ? (
           <div>
