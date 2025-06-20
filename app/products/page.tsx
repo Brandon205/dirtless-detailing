@@ -50,37 +50,26 @@ const products = [
     link: "https://amzn.to/45tFfFb"
   },
   {
-    name: "Chemical Guys Wheel Brush",
-    price: 10.99,
-    category: ["Accessories", "Wheels", "Equipment"],
-    rating: 4.6,
+    name: "ADS Amplify Ceramic Spray",
+    price: 19.99,
+    category: ["Ceramic", "Exterior"],
+    rating: 4.7,
     description:
-      "",
-    featured: false,
-    image: "/assets/images/products/chemguystirebrush.jpg",
+      "We use this ceramic detailer all the time for our washes. It's very easy to use, leaves less streaks than others even in the sun, and smells great! We recommend using it as a topper during a rinseless wash by spraying it on right before drying.",
+    featured: true,
+    image: "/assets/images/products/amplify.jpg",
     link: "https://amzn.to/45tFfFb"
   },
   {
-    name: "", // TODO add the 3 products here listed on tasks
-    price: 10.99,
-    category: ["Accessories", "Wheels", "Equipment"],
-    rating: 4.6,
+    name: "ADS Hero Rinseless Wash",
+    price: 21.99,
+    category: ["Exterior", "Ceramic"],
+    rating: 4.8,
     description:
-      "",
+      "Rinseless washes are our recommended method for washing your car, especially after getting a ceramic coating. You can do them anywhere, don't need to worry about water spots, and it will encapsulate dirt and grime so that it doesn't scratch while washing.",
     featured: false,
-    image: "/assets/images/products/chemguystirebrush.jpg",
-    link: "https://amzn.to/45tFfFb"
-  },
-  {
-    name: "",
-    price: 10.99,
-    category: ["Accessories", "Wheels", "Equipment"],
-    rating: 4.6,
-    description:
-      "",
-    featured: false,
-    image: "/assets/images/products/chemguystirebrush.jpg",
-    link: "https://amzn.to/45tFfFb"
+    image: "/assets/images/products/hero.jpg",
+    link: "https://amzn.to/4kUTZ4M"
   }
 ];
 
@@ -128,13 +117,15 @@ function ProductsPage() {
   return (
     <div className="min-h-screen bg-zinc-900 text-white">
       {/* Hero section */}
-      <div className="relative h-80 bg-zinc-800 overflow-hidden">
+      <div className="relative h-96 bg-zinc-800 overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center">
           <Image src="/assets/images/showcase/worktruckSunrise.jpg" alt="Auto detailing products" layout="fill" objectFit="cover" className="opacity-40" />
         </div>
         <div className="relative flex flex-col items-center justify-center h-full px-4 text-center">
           <h1 className="text-4xl font-bold mb-2">Professional Detailing Products</h1>
-          <p className="text-lg text-gray-300 max-w-2xl">Everything you need to keep your vehicle looking showroom-ready</p>
+          <p className="text-lg text-gray-300 max-w-2xl">
+            See some of the products and equipment we use, and what we recommend for you to keep your car as clean as the day you picked it up from us!
+          </p>
         </div>
       </div>
 

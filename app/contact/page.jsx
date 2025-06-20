@@ -74,7 +74,6 @@ export default function Contact() {
             </a>
           </div>
           <div className="flex items-center gap-4 bg-zinc-800 p-4">
-            {/* This line */}
             <div className="flex-shrink-0 w-[28px] h-[28px]">
               <Clock size={28} />
             </div>
