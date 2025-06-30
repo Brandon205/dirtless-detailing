@@ -1,6 +1,7 @@
 export const metadata = {
   title: "Contact Us",
   description: "Contact us here! Let us know any additional information we may need to know before your detail. Feel free to reach out with any questions!",
+  alternates: { canonical: "https://www.dirtlessdetailing.com/contact" },
   robots: {
     index: true,
     follow: true
@@ -11,7 +12,7 @@ export const metadata = {
     url: "https://www.dirtlessdetailing.com/contact",
     images: [
       {
-        url: "/assets/images/showcase/homepage-main.webp", // Consider using office or branded image
+        url: "/assets/images/showcase/homepage-main.webp",
         width: 1200,
         height: 630,
         alt: "Our shop is located in Buckley, Wa"
