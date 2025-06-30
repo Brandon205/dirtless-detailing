@@ -260,7 +260,7 @@ export default function Recreational() {
     <section className="service-content-container">
       <BaseSchema
         serviceImage="/assets/images/showcase/RVWash.jpg"
-        url="https://dirtlessdetailing.com/services/recreational"
+        url="https://www.dirtlessdetailing.com/services/recreational"
         makesOffer={{
           "@type": "Offer",
           "itemOffered": {

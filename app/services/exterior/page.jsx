@@ -22,7 +22,7 @@ export default function Exterior() {
     <section className="service-content-container">
       <BaseSchema
         serviceImage="/assets/images/exterior/subaruWashed.jpeg"
-        url="https://dirtlessdetailing.com/services/exterior"
+        url="https://www.dirtlessdetailing.com/services/exterior"
         makesOffer={{
           "@type": "Offer",
           "itemOffered": {

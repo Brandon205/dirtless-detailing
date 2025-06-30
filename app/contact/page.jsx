@@ -10,7 +10,7 @@ export default function Contact() {
     <section className="contact-container" id="contact">
       <BaseSchema
         serviceImage="/assets/images/interior/driver16.jpg"
-        url="https://dirtlessdetailing.com/contact"
+        url="https://www.dirtlessdetailing.com/contact"
         makesOffer={{
           "@type": "Offer",
           "itemOffered": {

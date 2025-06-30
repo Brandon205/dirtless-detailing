@@ -116,7 +116,7 @@ export default function ExteriorCorrect() {
     <section className="service-content-container">
       <BaseSchema
         serviceImage="/assets/images/correction/genesis3.jpeg"
-        url="https://dirtlessdetailing.com/services/exterior-correct"
+        url="https://www.dirtlessdetailing.com/services/exterior-correct"
         makesOffer={{
           "@type": "Offer",
           "itemOffered": {
