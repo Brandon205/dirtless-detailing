@@ -45,6 +45,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <GoogleTagManager gtmId="GTM-5L5ZZN88" />
+      <GoogleTagManager gtmId="AW-11020140573" />
       <PHProvider>
         <Suspense>
           <PostHogPageView />
@@ -55,7 +56,6 @@ export default function RootLayout({ children }) {
           <Footer />
           <CookieBanner />
         </body>
-        <GoogleTagManager gtmId="GTM-5L5ZZN88" />
       </PHProvider>
     </html>
   );
