@@ -34,8 +34,16 @@ export default function Home() {
         "We currently have our main shop location in Buckley, Washington. For our mobile services we will go typically as far north as Kent, and as far south as Graham. Contact us if you have specific questions on your location!"
     },
     {
-      title: "Do you need water/electrical for mobile services?",
-      description: "Yes, all we will need is an electrical outlet, a water spigot, and preferably any large personal items out of the car."
+      title: "How do I maintain my Ceramic Coating?",
+      description: (
+        <div>
+          We have a full Ceramic Coating Maintenance Guide available on our{" "}
+          <a href="/products?category=ceramic" className="text-blue-500 hover:underline">
+            Products page
+          </a>
+          , which includes everything you need to know about maintaining your ceramic coating, including recommended products and techniques!
+        </div>
+      )
     },
     {
       title: "I won't have a ride back to my house, what are my options?",

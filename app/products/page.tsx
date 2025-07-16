@@ -24,7 +24,7 @@ const products = [
     rating: 3.9,
     description:
       "One of our primary stops for our chemicals, rags, and other detailing supplies is Griots Garage. With their Tar and Sap Remover you will be able to watch any tar and sap melt away in a matter of seconds thanks to one of the best Tar and Sap removers we've tried so far!",
-    featured: true,
+    featured: false,
     image: "/assets/images/products/griotstarandsap.jpg",
     link: "https://amzn.to/4kAyKVx"
   },
@@ -70,6 +70,17 @@ const products = [
     featured: false,
     image: "/assets/images/products/hero.jpg",
     link: "https://amzn.to/4kUTZ4M"
+  },
+  {
+    name: "Gyeon Eco Wash",
+    price: 31.99,
+    category: ["Exterior", "Ceramic"],
+    rating: 5.0,
+    description:
+      "An amazing 3-in-1 product that can be used as a Rinseless, Waterless, and drying aid. Though it's only 1000ml, this should last a whole year for most people!",
+    featured: true,
+    image: "/assets/images/products/gyeonecoWash.jpg",
+    link: "https://amzn.to/4lZC513"
   }
 ];
 
@@ -237,6 +248,110 @@ function ProductsPage() {
           </div>
         </div>
       </div>
+      {/* Ceramic Maintenance Section - only shows when "Ceramic" category is selected */}
+      {selectedCategory === "Ceramic" && (
+        <div className="mt-16 bg-zinc-800 rounded-lg p-8 mb-8">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-white mb-6 text-center">Ceramic Coating Maintenance Guide</h2>
+            <p className="text-lg text-gray-300 mb-8 text-center">
+              Follow these steps to properly maintain your ceramic coating and keep your vehicle looking pristine without causing damage or scratches.
+            </p>
+
+            <div className="space-y-8">
+              {/* Step 1 */}
+              <div className="border-l-4 border-amber-500 pl-6">
+                <h3 className="text-xl font-semibold text-white mb-3">Step 1: Pre-Wash Preparation</h3>
+                <p className="text-gray-300 mb-4">
+                  Before touching your vehicle, remove any heavy contamination like bugs, tar, or sap. This prevents dragging these contaminants across your
+                  ceramic coating during the wash process, which could cause scratches or marring.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <a href="#" className="bg-slate-700 hover:bg-slate-600 text-white px-3 py-1 rounded-full text-sm transition-colors">
+                    Bug Remover
+                  </a>
+                  <a href="#" className="bg-slate-700 hover:bg-slate-600 text-white px-3 py-1 rounded-full text-sm transition-colors">
+                    Tar and Sap Remover
+                  </a>
+                </div>
+              </div>
+
+              {/* Step 2 */}
+              <div className="border-l-4 border-amber-500 pl-6">
+                <h3 className="text-xl font-semibold text-white mb-3">Step 2: Wheel and Tire Cleaning</h3>
+                <p className="text-gray-300 mb-4">
+                  Clean your wheels and tires first to avoid splashing dirty water onto your freshly washed paint. Use a dedicated wheel brush to safely clean
+                  intricate wheel designs without scratching the finish.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <a href="#" className="bg-slate-700 hover:bg-slate-600 text-white px-3 py-1 rounded-full text-sm transition-colors">
+                    Wheel & Tire Cleaner
+                  </a>
+                  <a href="#" className="bg-slate-700 hover:bg-slate-600 text-white px-3 py-1 rounded-full text-sm transition-colors">
+                    Wheel Brush
+                  </a>
+                </div>
+              </div>
+
+              {/* Step 3 */}
+              <div className="border-l-4 border-amber-500 pl-6">
+                <h3 className="text-xl font-semibold text-white mb-3">Step 3: Rinseless Wash Application</h3>
+                <p className="text-gray-300 mb-4">
+                  Mix your Gyeon Eco Wash according to the manufacturer's instructions. This product serves as both a rinseless wash and waterless wash, making
+                  it perfect for ceramic coating maintenance. Work panel by panel, using the proper technique to avoid introducing scratches.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <a href="#" className="bg-slate-700 hover:bg-slate-600 text-white px-3 py-1 rounded-full text-sm transition-colors">
+                    Gyeon Eco Wash
+                  </a>
+                </div>
+              </div>
+
+              {/* Step 4 */}
+              <div className="border-l-4 border-amber-500 pl-6">
+                <h3 className="text-xl font-semibold text-white mb-3">Step 4: Drying Process</h3>
+                <p className="text-gray-300 mb-4">
+                  Use a high-quality drying towel to safely remove moisture without scratching your ceramic coating. If washing in direct sunlight, consider
+                  using a dedicated drying aid to prevent streaking, as the Gyeon Eco Wash can be prone to streaking in hot conditions.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <a href="#" className="bg-slate-700 hover:bg-slate-600 text-white px-3 py-1 rounded-full text-sm transition-colors">
+                    Drying Towel
+                  </a>
+                  <a href="#" className="bg-slate-700 hover:bg-slate-600 text-white px-3 py-1 rounded-full text-sm transition-colors">
+                    Drying Aid
+                  </a>
+                </div>
+              </div>
+
+              {/* Pro Tips */}
+              <div className="bg-slate-900 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold text-white mb-4 flex items-center">
+                  <span className="bg-amber-500 text-black px-2 py-1 rounded text-sm font-medium mr-3">PRO TIPS</span>
+                  Additional Maintenance Tips
+                </h3>
+                <ul className="space-y-3 text-gray-300">
+                  <li className="flex items-start">
+                    <span className="text-amber-500 mr-2">•</span>
+                    Always work in shade when possible to prevent products from drying too quickly
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-amber-500 mr-2">•</span>
+                    Use the two-bucket method even with rinseless washes for maximum safety
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-amber-500 mr-2">•</span>
+                    Replace your wash media frequently to avoid cross-contamination
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-amber-500 mr-2">•</span>
+                    Regular maintenance washing every 1-2 weeks will keep your ceramic coating performing at its best
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
