@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import PricingComponent from "../../components/PricingComponent";
 import HeaderComponent from "../../components/HeaderComponent";
 import BeforeAfterSlider from "../../components/ImageSlider";
@@ -15,10 +15,37 @@ import {
 } from "../../../utils/animationVariations";
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
+import FaqItem from "../../components/FaqItem";
 import { motion } from "framer-motion";
 import BaseSchema from "../../jsonSchemas/BaseSchema";
 
 export default function ExteriorSeal() {
+  const [expanded, setExpanded] = useState(false);
+  const [smallScreen, setSmallScreen] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth < 979) {
+      setSmallScreen(true);
+    } else {
+      setSmallScreen(false);
+    }
+  }, []);
+
+  const faqItems = [
+    {
+      title: "How do I maintain my Ceramic Coating?",
+      description: (
+        <div>
+          We have a full Ceramic Coating Maintenance Guide available on our{" "}
+          <a href="/products?category=Ceramic" className="text-blue-500 hover:underline">
+            Products page
+          </a>
+          , which includes everything you need to know about maintaining your ceramic coating, including recommended products and techniques!
+        </div>
+      )
+    }
+  ];
+
   return (
     <section className="service-content-container">
       <BaseSchema
@@ -40,7 +67,7 @@ export default function ExteriorSeal() {
         imageUrl="/assets/images/correction/teslaclean.jpg"
         title="Exterior Seal and Shine"
         description="Our tried and true wash with a corrective polish, and even stronger Ceramic Spray coating."
-        secondaryUrl="/assets/images/before&afters/WashBADiagonal.png"
+        secondaryUrl="/assets/images/before&afters/f150SealShineBA.jpg"
       />
 
       <div className="main-content-container">
@@ -54,6 +81,17 @@ export default function ExteriorSeal() {
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
               <PricingComponent serviceType="exterior" shortTitle="exteriorseal" addons="correction" />
+            </div>
+
+            <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
+            <h3 className="pricing__heading">Clean, Shiny, and Protected.</h3>
+            <p className="pricing__subtext">With light scratches removed and a year of protection applied your car will shine like never before!</p>
+            <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
+              <BeforeAfterSlider
+                beforeImage="/assets/images/before&afters/beforeMazda3.jpg"
+                afterImage="/assets/images/before&afters/afterMazda3.jpg"
+                aspectRatio="16/9"
+              />
             </div>
 
             <h2 className="cleaning-process-title pb-8">Our Exterior Seal and Shine Process</h2>
@@ -195,18 +233,32 @@ export default function ExteriorSeal() {
                 </p>
               </div>
             </main>
+
             <br className="extra-space" />
 
-            <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
-            <h3 className="pricing__heading">Clean, Shiny, and Protected.</h3>
-            <p className="pricing__subtext">With light scratches removed and a year of protection applied your car will shine like never before!</p>
-            <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
-              <BeforeAfterSlider
-                beforeImage="/assets/images/before&afters/beforeMazda3.jpg"
-                afterImage="/assets/images/before&afters/afterMazda3.jpg"
-                aspectRatio="16/9"
-              />
+            <div className="general-container new-heading-container font-bold text-white">
+              <h3 style={{ margin: 0, width: "auto", padding: 0 }} className="new-heading new-heading-center text-4xl lg:text-5xl">
+                Seal & Shine FAQ's
+              </h3>
+              <p className="max-w-[500px] mx-auto text-center my-0 font-normal pb-8">
+                Answers to the questions we most commonly get about this service, please reach out if you have other questions!
+              </p>
             </div>
+            <section className="flex flex-col items-center xl:flex-row w-11/12 justify-center gap-8 xl:w-2/3">
+              <div className="flex flex-col gap-6 w-full calc text-left text-white">
+                {faqItems.map((item, i) => (
+                  <FaqItem
+                    key={i}
+                    i={i}
+                    expanded={expanded}
+                    setExpanded={setExpanded}
+                    title={item.title}
+                    description={item.description}
+                    isMobile={smallScreen}
+                  />
+                ))}
+              </div>
+            </section>
 
             <br className="extra-space" />
 
@@ -256,7 +308,7 @@ export default function ExteriorSeal() {
 
               <div className="preview-content">
                 <h4>
-                  See the finished{" "}
+                  See more finished{" "}
                   <a href="/gallery/seal" className="text-blue-500 inline-block">
                     results <ExternalLink className="inline-block" />
                   </a>

@@ -38,7 +38,7 @@ export default function Home() {
       description: (
         <div>
           We have a full Ceramic Coating Maintenance Guide available on our{" "}
-          <a href="/products?category=ceramic" className="text-blue-500 hover:underline">
+          <a href="/products?category=Ceramic" className="text-blue-500 hover:underline">
             Products page
           </a>
           , which includes everything you need to know about maintaining your ceramic coating, including recommended products and techniques!
@@ -317,12 +317,12 @@ export default function Home() {
           <h3 style={{ margin: 0, width: "auto", padding: 0 }} className="new-heading new-heading-center text-4xl lg:text-5xl">
             AUTO DETAILING FAQ's
           </h3>
-          <p className="max-w-[900px] mx-auto text-center my-0 font-normal pb-8">
+          <p className="max-w-[500px] mx-auto text-center my-0 font-normal pb-8">
             Answers to some of the most common questions that we get when people are booking with us, please reach out if you have other questions!
           </p>
         </div>
         <section className="flex flex-col items-center xl:flex-row w-11/12 justify-center gap-8 xl:w-2/3">
-          <div className="flex flex-col gap-6 w-[500px] w-full calc text-left">
+          <div className="flex flex-col gap-6 w-full calc text-left">
             {faqItems.map((item, i) => (
               <FaqItem key={i} i={i} expanded={expanded} setExpanded={setExpanded} title={item.title} description={item.description} isMobile={smallScreen} />
             ))}

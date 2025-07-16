@@ -49,6 +49,18 @@ const faqItems = [
     )
   },
   {
+    title: "How do I wash/maintain a Ceramic Coating?",
+    description: (
+      <div>
+        We have a full Ceramic Coating Maintenance Guide available on our{" "}
+        <a href="/products?category=Ceramic" className="text-blue-500 hover:underline">
+          Products page
+        </a>
+        , which includes everything you need to know about maintaining your ceramic coating, including recommended products and techniques!
+      </div>
+    )
+  },
+  {
     title: "Does a ceramic coating make my vehicle scratch proof?",
     description: <p className="faq-description">Unfortunately no, but it does noticeably increase resistance against light scratches and swirl marks.</p>
   },
@@ -81,20 +93,6 @@ const faqItems = [
           Griot's Ceramic Speed Shine
         </a>
         !
-      </p>
-    )
-  },
-  {
-    title: "How should I wash my car then?",
-    description: (
-      <p>
-        You can check out our{" "}
-        <a href="/products/ceramic-coating" className="text-blue-500">
-          DIY Ceramic Maintenance
-        </a>{" "}
-        page to see all the products and steps that we recommend for a complete wash and decontamination all for under $150. You can also ask us about our
-        maintenance services, they don't cost too much per service plus they include the interior if you have had any one of our Interior Detail services done
-        before!
       </p>
     )
   }
@@ -133,7 +131,7 @@ export default function ExteriorCorrect() {
         imageUrl="/assets/images/correction/genesis3.jpeg"
         title="Exterior Correct and Protect"
         description="The Ultimate Exterior Detail & Protection for your vehicle. Our most extensive package with in-depth Paint Correction and a Lifetime Ceramic Coating."
-        secondaryUrl="/assets/images/correction/ferrariBadge.jpg"
+        secondaryUrl="/assets/images/before&afters/scratchesBA.png"
       />
 
       <div className="main-content-container">

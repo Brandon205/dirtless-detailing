@@ -118,7 +118,7 @@ export default function PricingComponent(props) {
           <p className="text-2xl">Starting At:</p>
           {props.shortTitle == "exteriorcorrect" || props.shortTitle == "exteriorseal" ? (
             <p className="text-gray-400 text-sm text-left">
-              *Correction services will be priced per hour (~$150/hour) depending on the condition of your paint and the result you want!
+              *Additional correction is priced per hour (~$150/hour) depending on the condition of your paint and the results that you want!
             </p>
           ) : (
             ""
