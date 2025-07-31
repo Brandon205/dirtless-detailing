@@ -17,6 +17,10 @@ export default function Footer() {
           <a target="_blank" rel="noopener" href="https://www.brandonblack.dev" className="text-gray-400 underline">
             Website made by Brandon.
           </a>
+          <br />
+          <a href="/privacy" className="text-gray-400 underline">
+            Privacy Policy
+          </a>
         </div>
         <div style={{ gap: 32, paddingTop: "1rem" }} className="screen-flex">
           <a href="https://iglcoatingsusa.com/" target="_blank" rel="noopener">
