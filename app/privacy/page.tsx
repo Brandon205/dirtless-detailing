@@ -11,10 +11,6 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicy() {
   return (
-    // <div className="min-h-screen bg-[#18181b] py-12">
-    //   <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
-    //     <div className="bg-[#27272a] shadow-sm rounded-lg overflow-hidden">
-    //       <div className="px-6 py-8 sm:px-8 sm:py-12">
     <div className="py-24 w-screen bg-[#18181b]">
       <div className=" bg-[#27272a] py-4 mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}

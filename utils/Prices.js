@@ -1,7 +1,6 @@
 const prices = {
   "2 Door": {
     interior: {
-      interiorswift: 175,
       interior: 335,
       interiorspill: 500
     },
@@ -13,7 +12,6 @@ const prices = {
   },
   "Quarter Ton": {
     interior: {
-      interiorswift: 175,
       interior: 335,
       interiorspill: 500
     },
@@ -25,7 +23,6 @@ const prices = {
   },
   "4 Door": {
     interior: {
-      interiorswift: 175,
       interior: 375,
       interiorspill: 500
     },
@@ -37,7 +34,6 @@ const prices = {
   },
   "Mid Size": {
     interior: {
-      interiorswift: 200,
       interior: 375,
       interiorspill: 550
     },
@@ -49,7 +45,6 @@ const prices = {
   },
   "Trucks": {
     interior: {
-      interiorswift: 200,
       interior: 375,
       interiorspill: 550
     },
@@ -61,7 +56,6 @@ const prices = {
   },
   "3 Row": {
     interior: {
-      interiorswift: 225,
       interior: 425,
       interiorspill: 600
     },

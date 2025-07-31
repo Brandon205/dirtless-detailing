@@ -62,9 +62,6 @@ export default function Footer() {
       <div className="footer-content-card" style={{ paddingBottom: "2rem" }}>
         <h3 className="font-medium">SERVICES</h3>
         <div className="flex flex-col gap-4 mt-4">
-          {/* <Link href="/services/interior-swift" className="no-underline text-gray-400 hover:underline hover:text-gray-300">
-            Swift Interior Detail
-          </Link> */}
           <Link href="/services/interior" className="no-underline text-gray-400 hover:underline hover:text-gray-300">
             Full Interior Detail
           </Link>

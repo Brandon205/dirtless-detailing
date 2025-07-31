@@ -29,9 +29,6 @@ const sizesArr = {
   5: "3 Row"
 };
 
-{
-  /* <PricingComponent title='Ceramic Coating' shortTitle="interiorswift" addons='interior' /> */
-}
 export default function PricingComponent(props) {
   const [currVal, setCurrVal] = useState(2);
   const [animate, setAnimate] = useState(false);
@@ -43,9 +40,6 @@ export default function PricingComponent(props) {
     }, 1500);
 
     switch (props.addons) {
-      // case "interiorSwift":
-      //   setAddonSection(<InteriorSwift />);
-      //   break;
       case "fullInterior":
         setAddonSection(<FullInterior />);
         break;
@@ -213,25 +207,6 @@ const Exterior = () => {
     </div>
   );
 };
-
-// const InteriorSwift = () => {
-//   return (
-//     <div className="flex justify-center w-[90vw] mb-4 flex-wrap mx-auto my-0 gap-4 lg:flex-row">
-//       <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4 max-w-[500px]">
-//         <div className="w-full flex flex-col items-center gap-2 justify-center mb-4">
-//           <h4 className="text-2xl font-semibold">Ozone Treatment</h4>
-//           <p className="text-xl text-gray-300">
-//             Ozone treatment is the use of O3 (ozone gas) to remove odors, bacteria, and viruses from everywhere in the vehicle. Recommended on ALL mold and
-//             smoke odor jobs.
-//           </p>
-//         </div>
-//         <div className="bg-primary w-1/2 py-2 rounded-lg text-xl font-medium">
-//           <p>$75</p>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
 
 const FullInterior = () => {
   return (

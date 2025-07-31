@@ -19,15 +19,6 @@ const serviceVariant = {
   hover: { scale: 1.05 }
 };
 
-// <HomePageCard
-// title="Interior Swift"
-// imageUrl="../assets/images/interior-swift.jpg"
-// description="Our simple interior cleaning, best for maintenance or to quickly freshen up your interior."
-// steps={["Blow Out & Vacuum the Vehicle", "Wipe Down and Condition All Surfaces", "Wash/Clean the Floormats", "Clean Interior Windows & Glass"]}
-// hours="1-2"
-// linkUrl="/services/interior-swift"
-//  />
-
 export default function HomePageCard({ title, imageUrl, description, steps, hours, linkUrl }) {
   const typeRegex = /\/services\/(interior|exterior)/;
   const typeMatch = linkUrl.match(typeRegex);
