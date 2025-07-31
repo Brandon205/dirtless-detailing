@@ -3,10 +3,10 @@ export default function robots() {
     rules: [
       {
         userAgent: "*",
-        disallow: "/confirmation",
-        allow: "/",
-      },
+        disallow: ["/confirmation", "/privacy"],
+        allow: "/"
+      }
     ],
-    sitemap: `${process.env.NEXT_PUBLIC_BASE_URL}/sitemap.xml`,
+    sitemap: `${process.env.NEXT_PUBLIC_BASE_URL}/sitemap.xml`
   };
 }
