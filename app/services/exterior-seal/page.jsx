@@ -76,12 +76,14 @@ export default function ExteriorSeal() {
             <div>
               <div className="pricing__heading-container">
                 <h3 className="pricing__heading">
-                  <span className="text-amber-500 bold">Exterior Seal and Shine</span> Pricing
+                  <span className="text-amber-500 bold">Exterior Seal & Shine</span> Pricing
                 </h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
               <PricingComponent serviceType="exterior" shortTitle="exteriorseal" addons="correction" />
             </div>
+
+            <br className="extra-space" />
 
             <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
             <h3 className="pricing__heading">Clean, Shiny, and Protected.</h3>
@@ -94,7 +96,77 @@ export default function ExteriorSeal() {
               />
             </div>
 
-            <h2 className="cleaning-process-title pb-8">Our Exterior Seal and Shine Process</h2>
+            <br className="extra-space" />
+
+            <main className="w-full text-white my-0 mx-auto text-center p-4">
+              <h2 style={{ marginBottom: 0 }} className="text-large">
+                Our Exterior Seal & Shine Service
+              </h2>
+              <hr style={{ margin: "0 auto 3rem auto" }} />
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
+                  <h3 className="text-lg font-semibold mb-3">
+                    <span className="text-accent font-bold text-2xl">More Than Just a Wash and Wax</span>
+                  </h3>
+                  <p className="leading-relaxed">
+                    This service bridges the gap between basic washing and full paint correction. If your paint has lost its glow or developed light swirl
+                    marks, this is where we bring it back to life. After our thorough decon wash, we clay your paint to remove embedded contaminants, then
+                    perform light polishing to restore depth and gloss. Finally, we top it with up to a year of ceramic protection that makes future maintenance
+                    easier.
+                  </p>
+                </div>
+
+                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
+                  <h3 className="text-lg font-semibold mb-3">
+                    <span className="text-accent font-bold text-2xl">The Right Approach for Most Cars</span>
+                  </h3>
+                  <p className="leading-relaxed">
+                    Not every car needs aggressive paint correction, but every car benefits from proper preparation and protection. Our light polishing step
+                    removes minor imperfections and swirl marks while preparing the surface for coating adhesion. We've learned from some of the best in the
+                    business - including Jason Killmer, who's worked with us and confirmed our prep work and application techniques are on point.
+                  </p>
+                </div>
+
+                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
+                  <h3 className="text-lg font-semibold mb-3">
+                    <span className="text-accent font-bold text-2xl">Ceramic Coating Done Right</span>
+                  </h3>
+                  <p className="leading-relaxed">
+                    Anyone can slap on a coating, but proper application requires clean paint, correct technique, and quality products. We don't cut corners on
+                    prep work because we know it's the foundation of long-lasting results. Our year-long ceramic coating makes your car easier to wash, more
+                    resistant to water spots, and better protected against environmental damage. Plus, we coat your windshield, wheels, and trim - not just the
+                    paint.
+                  </p>
+                </div>
+
+                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
+                  <h3 className="text-lg font-semibold mb-3">
+                    <span className="text-accent font-bold text-2xl">Annual Maintenance That Works</span>
+                  </h3>
+                  <p className="leading-relaxed">
+                    This is the perfect yearly refresh for any vehicle, whether it's previously been coated or not. It removes the wear and contamination that
+                    builds up over time while adding fresh protection for the year ahead. Your car will look better, stay cleaner longer, and be easier to
+                    maintain. It's honest value from people who care more about results than making the biggest possible sale.
+                  </p>
+                </div>
+              </div>
+
+              {/* Call-to-action section */}
+              <div className="mt-8 p-3 lg:p-6 bg-zinc-800 rounded-lg border border-zinc-900">
+                <p className="text-center">
+                  Now's the perfect time to book a interior cleaning as well. Check out our current offers and pricing on our full interior detail{" "}
+                  <a href="/services/interior" className="text-blue-600 hover:text-blue-700 font-medium underline">
+                    here
+                  </a>
+                  !
+                </p>
+              </div>
+            </main>
+
+            <br className="extra-space" />
+
+            <h2 className="cleaning-process-title pb-8">Our Exterior Seal & Shine Process</h2>
             <motion.ol className="list" variants={containerVariant} initial="initial" whileInView="whileInView" viewport={{ once: true }}>
               <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
@@ -203,36 +275,6 @@ export default function ExteriorSeal() {
                 </div>
               </motion.li>
             </motion.ol>
-
-            <br className="extra-space" />
-
-            <main className="service-main">
-              <h2 style={{ marginBottom: 0 }} className="text-large">
-                Exterior Seal and Shine
-              </h2>
-              <hr style={{ margin: "0 auto 3rem auto" }} />
-              <div className="service-explain">
-                <p>
-                  This service comes with everything from our Exterior Decon Wash Service and more! If you are looking to truly brighten your vehicles paint and
-                  make it glow, or just get rid of minor swirl marks, this is the package for you.
-                </p>
-                <p>
-                  After our decon wash, we clay your paint removing any final embedded contaminates. From there, we refine your paint by doing a light polishing
-                  step to increase depth and gloss. Finally, we top all of that goodness with up to 1 year of ceramic protection on your whole vehicle!
-                </p>
-                <p>
-                  This is a great service to get yearly on ceramic coated, and non ceramic coated vehicles to refresh your exterior, and always have it looking
-                  its best.
-                </p>
-                <p>
-                  Now's the perfect time to book a interior cleaning as well. Check out our current offers and pricing on our base interior service{" "}
-                  <a href="/services/interior" className="text-blue-500">
-                    here
-                  </a>
-                  .
-                </p>
-              </div>
-            </main>
 
             <br className="extra-space" />
 

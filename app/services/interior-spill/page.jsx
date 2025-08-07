@@ -56,6 +56,74 @@ export default function InteriorSpill() {
               <PricingComponent shortTitle="interiorspill" serviceType="interior" addons="fullInterior" />
             </div>
 
+            <main className="w-full text-white my-0 mx-auto text-center p-4">
+              <h2 style={{ marginBottom: 0 }} className="text-large">
+                The Full Interior + Spill Guard Service
+              </h2>
+              <hr style={{ margin: "0 auto 3rem auto" }} />
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
+                  <h3 className="text-lg font-semibold mb-3">
+                    <span className="text-accent font-bold text-2xl">Protection That Makes Sense</span>
+                  </h3>
+                  <p className="leading-relaxed">
+                    If your car sees heavy use from kids, pets, food, drinks, or just daily life, this service is built for you. We don't just clean up the mess
+                    that's already there - we prevent future messes from becoming permanent problems. Our interior ceramic coating creates a protective barrier
+                    that gives you time to clean up spills before they soak in and become stains.
+                  </p>
+                </div>
+
+                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
+                  <h3 className="text-lg font-semibold mb-3">
+                    <span className="text-accent font-bold text-2xl">Deep Cleaning First, Protection Second</span>
+                  </h3>
+                  <p className="leading-relaxed">
+                    Before any coating goes on, we do the deep work. Using our extensive collection of specialized interior chemicals, we remove months or years
+                    of built-up grime, stains, and odors. Our carpet extraction process pulls out embedded dirt, while our bonneting technique handles
+                    surface-level problems and freshens the entire interior. Only after everything is perfectly clean do we apply the protective coating.
+                  </p>
+                </div>
+
+                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
+                  <h3 className="text-lg font-semibold mb-3">
+                    <span className="text-accent font-bold text-2xl">Ceramic Coating That Actually Works</span>
+                  </h3>
+                  <p className="leading-relaxed">
+                    Our interior ceramic coating isn't like those slippery conditioners that make you slide around in your seat. This coating feels natural
+                    while providing serious protection. Spilled coffee wipes up instead of soaking in. Pet accidents clean up easier. Food crumbs don't grind
+                    into fabric. All materials will feel and look similar, but cleanup becomes dramatically easier.
+                  </p>
+                </div>
+
+                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
+                  <h3 className="text-lg font-semibold mb-3">
+                    <span className="text-accent font-bold text-2xl">Long-Term Value</span>
+                  </h3>
+                  <p className="leading-relaxed">
+                    This isn't just about today's cleaning - it's about making every future cleanup easier for the next year. Kids spill things. Pets have
+                    accidents. Life happens. With proper protection in place, these inevitable messes become minor inconveniences instead of permanent damage.
+                    Your interior stays cleaner longer and requires less aggressive cleaning to maintain, which means it lasts longer and looks better
+                    throughout its life.
+                  </p>
+                </div>
+              </div>
+
+              {/* Call-to-action section */}
+              <div className="mt-8 p-3 lg:p-6 bg-zinc-800 rounded-lg border border-zinc-900">
+                <p className="text-center">
+                  Want the exterior done as well? Feel free to book an interior and exterior detail, we will get your entire vehicle looking like new in just
+                  one day! Check out our exterior decon wash{" "}
+                  <a href="/services/exterior" className="text-blue-600 hover:text-blue-700 font-medium underline">
+                    here
+                  </a>
+                  !
+                </p>
+              </div>
+            </main>
+
+            <br className="extra-space" />
+
             <h2 className="cleaning-process-title pb-8">Our Interior + Spill Guard Process</h2>
             <motion.ol className="list" variants={containerVariant} initial="initial" whileInView="whileInView" viewport={{ once: true }}>
               <motion.li className="item" variants={oddVariant}>
@@ -140,35 +208,6 @@ export default function InteriorSpill() {
 
             <br className="extra-space" />
 
-            <main className="service-main">
-              <h2 style={{ marginBottom: 0 }} className="text-large">
-                Full Interior + Spill Guard
-              </h2>
-              <hr style={{ margin: "0 auto 3rem auto" }} />
-              <div className="service-explain">
-                <p>
-                  If your cars interior is often put under heavy use by kids, food, drinks, and even animals, then this is the best choice for you. Not only
-                  will we remove the past few months of dirt, french fries, and who knows what else, but we'll also protect your interior for time to come!
-                </p>
-                <p>
-                  With the Spill Guard coating, you'll get a layer of ceramic coating applied to all materials of your vehicle, even the fabric! Now cleanup
-                  from life's accidents will be far easier as the coating will act as a protective layer, which will give you more time to clean up before
-                  things soak in.
-                </p>
-                <p>
-                  And don't worry, the coating doesn't act like cheap conditioners, and make all surfaces slippery. All materials will feel similar, look
-                  similar, and you won't be sliding around in your seat when you get in like with other conditioners.
-                </p>
-                <p>
-                  Do you need the exterior detailed as well? Feel free to book an interior and exterior detail. It's the best way to get your whole vehicle
-                  brought back to life! Check out our exterior decon wash{" "}
-                  <a href="/services/exterior" className="text-blue-500">
-                    here
-                  </a>
-                  , starting at only <span className="bold">$125</span>!
-                </p>
-              </div>
-            </main>
             <br className="extra-space" />
 
             <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>

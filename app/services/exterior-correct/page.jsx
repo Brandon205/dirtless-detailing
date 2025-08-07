@@ -164,7 +164,75 @@ export default function ExteriorCorrect() {
 
             <br className="extra-space" />
 
-            <h2 className="cleaning-process-title pb-8">Our Exterior Correct and Protect Process</h2>
+            <main className="w-full text-white my-0 mx-auto text-center p-4">
+              <h2 style={{ marginBottom: 0 }} className="text-large">
+                Our Exterior Correct & Protect Service
+              </h2>
+              <hr style={{ margin: "0 auto 3rem auto" }} />
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
+                  <h3 className="text-lg font-semibold mb-3">
+                    <span className="text-accent font-bold text-2xl">Paint Correction Done by People Who Know What They're Doing</span>
+                  </h3>
+                  <p className="leading-relaxed">
+                    This is our top-tier exterior service because paint correction requires real skill, not just expensive equipment. We've learned from Jason
+                    Killmer, one of the most respected names in paint correction and wet sanding, who's spent time at our shop and been impressed enough to keep
+                    coming back. When someone of his caliber tells you that you should be charging more for your work, you know you're doing something right.
+                  </p>
+                </div>
+
+                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
+                  <h3 className="text-lg font-semibold mb-3">
+                    <span className="text-accent font-bold text-2xl">The Expertise Behind the Results</span>
+                  </h3>
+                  <p className="leading-relaxed">
+                    Jason visited our shop and spent hours sharing advanced techniques, teaching wet sanding methods, and discussing the craft with fellow
+                    enthusiasts. He was initially skeptical about our chemical selection - wondering why anyone needs 52 feet of chemical shelves - but after
+                    seeing our work and understanding our process, he gets it. This level of attention to detail isn't excessive when the results speak for
+                    themselves.
+                  </p>
+                </div>
+
+                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
+                  <h3 className="text-lg font-semibold mb-3">
+                    <span className="text-accent font-bold text-2xl">Two-Stage Correction That Delivers</span>
+                  </h3>
+                  <p className="leading-relaxed">
+                    Our full paint correction process removes 80-90% of scratches and swirl marks through careful two-stage polishing. We don't just make bold
+                    claims - we have the skills, equipment, and techniques to back them up. Every panel gets individual attention, and we know when to push
+                    harder and when to stop before causing damage. Your paint isn't practice material - it deserves someone who knows what they're doing.
+                  </p>
+                </div>
+
+                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
+                  <h3 className="text-lg font-semibold mb-3">
+                    <span className="text-accent font-bold text-2xl">Three-Year Protection That Makes Sense</span>
+                  </h3>
+                  <p className="leading-relaxed">
+                    We could sell you a 5 or 10-year coating, but we won't. After three years, coatings naturally degrade and your paint benefits from fresh
+                    preparation anyway. A 3-year coating performs consistently throughout its lifespan and costs less to maintain. We coat everything - paint,
+                    trim, lights, glass, and wheels - because partial protection doesn't make sense. This is about honest advice and real results, not just
+                    making a bigger sale.
+                  </p>
+                </div>
+              </div>
+
+              {/* Call-to-action section */}
+              <div className="mt-8 p-3 lg:p-6 bg-zinc-800 rounded-lg border border-zinc-900">
+                <p className="text-center">
+                  Now's the perfect time to book a interior cleaning as well. Check out our current offers and pricing on our full interior detail{" "}
+                  <a href="/services/interior" className="text-blue-600 hover:text-blue-700 font-medium underline">
+                    here
+                  </a>
+                  !
+                </p>
+              </div>
+            </main>
+
+            <br className="extra-space" />
+
+            <h2 className="cleaning-process-title pb-8">Our Exterior Correct & Protect Process</h2>
             <motion.ol className="list" variants={containerVariant} initial="initial" whileInView="whileInView" viewport={{ once: true }}>
               <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
@@ -252,41 +320,6 @@ export default function ExteriorCorrect() {
             </motion.ol>
 
             <br className="extra-space" />
-
-            <main className="service-main">
-              <h2 style={{ marginBottom: 0 }} className="text-large">
-                Exterior Correct and Protect
-              </h2>
-              <hr style={{ margin: "0 auto 3rem auto" }} />
-              <div className="service-explain">
-                <p>
-                  This is our top of the line exterior service. If you want to remove years of wear and scratching, and provide the best protection available,
-                  then this is the service for you. We start off with our full{" "}
-                  <a href="/services/exterior" className="text-blue-500">
-                    Exterior Decon Wash
-                  </a>{" "}
-                  to remove any contaminants. From there, we refine your paint by performing an in-depth polishing step removing as many imperfections we safely
-                  can.
-                </p>
-                <p>
-                  Then it's time for the ceramic coating! To provide to best protection and coverage on the paint coating, we coat your whole vehicle with the
-                  hardest, most resilient ceramic coatings on the market. This includes paint, trim, lights, glass, and wheels.
-                </p>
-                <p>
-                  Feel free to contact us to get any of your questions answered, ceramic coatings are somewhat new so not everyone knows all that they can do.
-                  Give us a call or check out our{" "}
-                  <a href="#faq" className="text-blue-500">
-                    FAQ
-                  </a>{" "}
-                  section at the bottom of this page!
-                </p>
-                <p>
-                  <span className="special-package">Note:</span> This is one of the services that we require you to drop off your car at our shop for. We will
-                  most likely need to keep you car overnight as the ceramic coating has a cure time before it's ready to be exposed to the elements. Also, our
-                  shop has proper lighting to ensure that we don't miss any spots on the paint.
-                </p>
-              </div>
-            </main>
 
             <br className="extra-space" />
 

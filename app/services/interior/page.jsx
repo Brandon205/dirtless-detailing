@@ -37,8 +37,8 @@ export default function FullIntEx() {
       />
       <HeaderComponent
         imageUrl="/assets/images/interior/driver16.jpg"
-        title="Full Interior Cleaning"
-        description="Our easy and hassle-free Interior Cleaning Service."
+        title="Full Interior Detail"
+        description="Our hassle-free and thorough Interior Detailing Service."
         secondaryUrl="/assets/images/before&afters/badInteriorBA.png"
       />
 
@@ -54,6 +54,77 @@ export default function FullIntEx() {
               </div>
               <PricingComponent shortTitle="interior" serviceType="interior" addons="fullInterior" />
             </div>
+
+            <br className="extra-space" />
+
+            <main className="w-full text-white my-0 mx-auto text-center p-4">
+              <h2 style={{ marginBottom: 0 }} className="text-large">
+                Our Interior Deep Cleaning
+              </h2>
+              <hr style={{ margin: "0 auto 3rem auto" }} />
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
+                  <h3 className="text-lg font-semibold mb-3">
+                    <span className="text-accent font-bold text-2xl">Why Your Interior Needs More Than Surface Cleaning</span>
+                  </h3>
+                  <p className="leading-relaxed">
+                    Most people think a quick vacuum and wipe-down counts as interior cleaning. We've spent years researching and testing hundreds of different
+                    chemicals to find exactly what works best for every surface and every type of mess. From coffee stains to pet accidents, from embedded dirt
+                    to mystery odors - we don't just mask problems, we eliminate them with the right chemical for each specific situation.
+                  </p>
+                </div>
+
+                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
+                  <h3 className="text-lg font-semibold mb-3">
+                    <span className="text-accent font-bold text-2xl">The Science Behind Our Chemical Arsenal</span>
+                  </h3>
+                  <p className="leading-relaxed">
+                    Those 52 feet of chemical shelves aren't just for show. Every cleaner, every conditioner, every stain remover has earned its place through
+                    testing and results. We've developed our own carpet bonneting technique that removes light staining and embedded odors while loosening hair,
+                    dirt, and debris that regular extraction can't touch. For deeper problems, our extraction process uses targeted chemicals that break down
+                    stains at the molecular level without damaging your interior materials.
+                  </p>
+                </div>
+
+                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
+                  <h3 className="text-lg font-semibold mb-3">
+                    <span className="text-accent font-bold text-2xl">Carpet Treatment That Actually Works</span>
+                  </h3>
+                  <p className="leading-relaxed">
+                    Your carpet takes the worst beating of any surface in your car, so we treat it with the respect it deserves. Our treatment arsenal covers
+                    everything from deep extraction for serious stains to our signature light bonneting procedure for maintenance cleaning. We don't use generic
+                    all-purpose cleaners - we match specific solutions to specific problems. Dog hair embedded in fabric? Mud ground into fibers? Mystery stains
+                    from last year? We've seen it all and have the right approach for each situation.
+                  </p>
+                </div>
+
+                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
+                  <h3 className="text-lg font-semibold mb-3">
+                    <span className="text-accent font-bold text-2xl">What Makes the Difference</span>
+                  </h3>
+                  <p className="leading-relaxed">
+                    Taking us by surprise is difficult. We've cleaned hundreds of interiors and have the tools, chemicals, and techniques for every situation.
+                    While we'll attempt to remove all stains, some may prove more challenging depending on what it is, how long it's been there, and what
+                    surface it's on. But our extensive chemical research and specialized techniques mean we can tackle problems that other shops would give up
+                    on. Your interior won't just look clean - it'll be actually clean.
+                  </p>
+                </div>
+              </div>
+
+              {/* Call-to-action section */}
+              <div className="mt-8 p-3 lg:p-6 bg-zinc-800 rounded-lg border border-zinc-900">
+                <p className="text-center">
+                  Want the exterior done as well? Feel free to book an interior and exterior detail, we will get your entire vehicle looking like new in just
+                  one day! Check out our exterior decon wash{" "}
+                  <a href="/services/exterior" className="text-blue-600 hover:text-blue-700 font-medium underline">
+                    here
+                  </a>
+                  !
+                </p>
+              </div>
+            </main>
+            <br className="extra-space" />
 
             <h2 className="cleaning-process-title pb-8">Our Interior Cleaning Process</h2>
             <motion.ol className="list" variants={containerVariant} initial="initial" whileInView="whileInView" viewport={{ once: true }}>
@@ -138,36 +209,6 @@ export default function FullIntEx() {
 
             <br className="extra-space" />
 
-            <main className="service-main">
-              <h2 style={{ marginBottom: 0 }} className="text-large">
-                Our Interior Deep Cleaning
-              </h2>
-              <hr style={{ margin: "0 auto 3rem auto" }} />
-              <div className="service-explain">
-                <p>
-                  The goal of the Full Interior Detail is to restore your interior to its best condition. Your carpet, seats, floor mats, plastics, windows, and
-                  all other interior fixtures will be thoroughly cleaned.
-                </p>
-                <p>
-                  While we will attempt to remove all stains, many stains could prove to be more challenging to remove, or might not be completely removed. Some
-                  won't completely disappear depending on the kind of stain, how long it has been sitting, and the material the stain is on.
-                </p>
-                <p>
-                  Taking us by surprise is difficult. We will not think that your interior is too dirty, trust us. We've seen hundreds of different interiors,
-                  and have all the necessary tools for every situation.
-                </p>
-                <p>
-                  Need the exterior done as well? Feel free to book an interior and exterior detail, we will get your entire vehicle looking like new in just
-                  one day! Check out our exterior decon wash{" "}
-                  <a href="/services/exterior" className="text-blue-500">
-                    here
-                  </a>
-                  .
-                </p>
-              </div>
-            </main>
-            <br className="extra-space" />
-
             <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
             <h3 className="pricing__heading">Fresh, Clean, and Stunning Results.</h3>
             <p className="pricing__subtext">Once we are done you won't want to see your car dirty ever again!</p>
@@ -178,6 +219,8 @@ export default function FullIntEx() {
                 aspectRatio="16/9"
               />
             </div>
+
+            <br className="extra-space" />
 
             <div className="preview-container">
               <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/interior" className="gallery-preview">
@@ -229,13 +272,7 @@ export default function FullIntEx() {
                     work <ExternalLink className="inline-block" />
                   </a>
                 </h4>
-                <p>
-                  Our interior gallery page has a large collection of interior images including before and after pictures! Check it out{" "}
-                  <a href="/gallery/interior" className="text-blue-500">
-                    here
-                  </a>
-                  .
-                </p>
+                <p>Our interior gallery page has a large collection of interior images including before and after pictures!</p>
               </div>
             </div>
           </div>

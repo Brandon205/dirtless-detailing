@@ -1034,7 +1034,7 @@ footer {
   background-color: $contact-bkg-lighter;
   border-radius: 38px 38px 0 0;
   color: white;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .pricing__heading {
@@ -1228,7 +1228,7 @@ footer {
 }
 
 .service-main {
-  width: 85%;
+  width: 95%;
   color: white;
   margin: 0 auto;
   line-height: 2;
@@ -1526,6 +1526,10 @@ footer {
 
   .pricing__heading {
     font-size: 3em;
+  }
+
+  .pricing__heading-container {
+    padding: 2rem;
   }
 
   .pricing__subheading {

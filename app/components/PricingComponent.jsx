@@ -108,7 +108,7 @@ export default function PricingComponent(props) {
         </SelectContent>
       </Select>
       <div className="flex flex-col justify-between items-center w-[90%] my-0 mx-auto max-w-[700px] lg:flex-row">
-        <div className="flex flex-col items-start mb-4 w-1/2">
+        <div className="flex flex-col items-start mb-4 w-full lg:w-1/2">
           <p className="text-2xl">Starting At:</p>
           {props.shortTitle == "exteriorcorrect" || props.shortTitle == "exteriorseal" ? (
             <p className="text-gray-400 text-sm text-left">

@@ -45,36 +45,6 @@ export default function Exterior() {
       <div className="main-content-container">
         <div className="process-container">
           <div style={{ width: "100%" }}>
-            {/* <main className="service-main">
-              <h2 style={{ marginBottom: 0 }} className="text-large">
-                Exterior Decon Wash
-              </h2>
-              <hr style={{ margin: "0 auto 3rem auto" }} />
-              <div className="service-explain">
-                <p>
-                  This is our base exterior detailing service. It is designed to give the outside of your vehicle a thorough wash and decontamination. We even
-                  top it off with a 3 month ceramic spray for protection.
-                </p>
-                <p>
-                  Wheels and tires can easily be one of the dirtiest parts of a car without you even realizing it, and brake dust is no joke once it's been on
-                  there for a while. Thats why we have a wide array of chemicals and products to best clean even the dirtiest wheels.
-                </p>
-                <p>
-                  In our Decon Wash, our goal is not to just give your car a quick mitt wash and call it good. A Decon Wash is more in-depth removing all
-                  contaminants including iron, tar, and tree sap.
-                </p>
-                <p>
-                  And while we're at it, how's the interior of your car doing? We'd be more than happy to clean it out as well, no matter the condition! Check
-                  out our interior offers{" "}
-                  <a href="/services/interior" className="text-blue-500">
-                    here
-                  </a>
-                  .
-                </p>
-              </div>
-            </main>
-            <br className="extra-space" /> */}
-
             <div>
               <div className="pricing__heading-container">
                 <h3 className="pricing__heading">
@@ -84,6 +54,75 @@ export default function Exterior() {
               </div>
               <PricingComponent shortTitle="exterior" serviceType="exterior" addons="exterior" />
             </div>
+
+            <main className="w-full text-white my-0 mx-auto text-center p-4">
+              <h2 style={{ marginBottom: 0 }} className="text-large">
+                Our Exterior Decontamination Wash
+              </h2>
+              <hr style={{ margin: "0 auto 3rem auto" }} />
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
+                  <h3 className="text-lg font-semibold mb-3">
+                    <span className="text-accent font-bold text-2xl">More Than Just Another Car Wash</span>
+                  </h3>
+                  <p className="leading-relaxed">
+                    Most car washes focus on making your car look clean without actually removing the contaminants that cause long-term damage. Our decon wash
+                    is built around the idea that truly clean means contaminate-free. We don't just rinse off the surface dirt - we actively remove iron
+                    particles, tar buildup, tree sap, and other embedded contaminants that regular washing can't touch. It's the foundation that every other
+                    service builds on.
+                  </p>
+                </div>
+
+                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
+                  <h3 className="text-lg font-semibold mb-3">
+                    <span className="text-accent font-bold text-2xl">Wheels That Get the Attention They Deserve</span>
+                  </h3>
+                  <p className="leading-relaxed">
+                    Your wheels take more abuse than any other part of your car, collecting brake dust, road grime, and iron particles that bond to the surface.
+                    We stock a wide array of specialized wheel chemicals because generic cleaners don't cut it when brake dust has been baking on there for
+                    months. That purple runoff you see in our photos? That's iron contamination being safely dissolved and removed - something you'll never get
+                    from a drive-through car wash.
+                  </p>
+                </div>
+
+                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
+                  <h3 className="text-lg font-semibold mb-3">
+                    <span className="text-accent font-bold text-2xl">Decontamination That Actually Works</span>
+                  </h3>
+                  <p className="leading-relaxed">
+                    The word "decon" gets thrown around a lot in our industry, but we mean it literally. Our process includes iron removal that pulls metallic
+                    particles from your paint, tar removal for those stubborn spots on lower panels, and sap removal that won't damage your clear coat. We even
+                    clean areas most places skip - door jambs, gas doors, and all the hidden spots where dirt loves to hide. Every step has a purpose.
+                  </p>
+                </div>
+
+                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
+                  <h3 className="text-lg font-semibold mb-3">
+                    <span className="text-accent font-bold text-2xl">Protection That Makes Maintenance Easier</span>
+                  </h3>
+                  <p className="leading-relaxed">
+                    We finish every decon wash with a ceramic spray that provides 3 months of protection. This isn't just about making your car look good today
+                    - it's about making it easier to keep clean tomorrow. That ceramic layer helps repel water, reduces dirt adhesion, and makes your next wash
+                    more effective. It's the difference between cleaning your car and actually maintaining it.
+                  </p>
+                </div>
+              </div>
+
+              {/* Call-to-action section */}
+              <div className="mt-8 p-3 lg:p-6 bg-zinc-800 rounded-lg border border-zinc-900">
+                <p className="text-center">
+                  Complete the detail! While your car is with us now's the best time to get that interior back in shape! Check out our current offers and
+                  pricing on our full interior detail{" "}
+                  <a href="/services/exterior" className="text-blue-600 hover:text-blue-700 font-medium underline">
+                    here
+                  </a>
+                  !
+                </p>
+              </div>
+            </main>
+
+            <br className="extra-space" />
 
             <h2 className="cleaning-process-title pb-8">Our Exterior Decon Wash Process</h2>
             <motion.ol className="list" variants={containerVariant} initial="initial" whileInView="whileInView" viewport={{ once: true }}>
@@ -180,36 +219,6 @@ export default function Exterior() {
               </motion.li>
             </motion.ol>
 
-            <br className="extra-space" />
-
-            <main className="service-main">
-              <h2 style={{ marginBottom: 0 }} className="text-large">
-                Exterior Decon Wash
-              </h2>
-              <hr style={{ margin: "0 auto 3rem auto" }} />
-              <div className="service-explain">
-                <p>
-                  This is our base exterior detailing service. It is designed to give the outside of your vehicle a thorough wash and decontamination. We even
-                  top it off with a 3 month ceramic spray for protection.
-                </p>
-                <p>
-                  Wheels and tires can easily be one of the dirtiest parts of a car without you even realizing it, and brake dust is no joke once it's been on
-                  there for a while. Thats why we have a wide array of chemicals and products to best clean even the dirtiest wheels.
-                </p>
-                <p>
-                  In our Decon Wash, our goal is not to just give your car a quick mitt wash and call it good. A Decon Wash is more in-depth removing all
-                  contaminants including iron, tar, and tree sap.
-                </p>
-                <p>
-                  And while we're at it, how's the interior of your car doing? We'd be more than happy to clean it out as well, no matter the condition! Check
-                  out our interior offers{" "}
-                  <a href="/services/interior" className="text-blue-500">
-                    here
-                  </a>
-                  .
-                </p>
-              </div>
-            </main>
             <br className="extra-space" />
 
             <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
