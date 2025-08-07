@@ -135,7 +135,7 @@ export default function Home() {
           <HomePageCard
             title="Full Interior Detail"
             imageUrl="/assets/images/interior/driver5.jpg"
-            description="Our thorough interior cleaning, best for cars with staining, lots of dog hair/dirt, or ones that haven't been cleaned out in a long time."
+            description="Our thorough interior cleaning uses extensively researched chemicals and proven techniques, perfect for cars with staining, pet hair, or ones that haven't been properly cleaned in ages."
             steps={[
               "Thorough blow-out and vacuum to remove all dirt and debris",
               "Stain removal and extraction of all fabrics + headliner",
@@ -151,7 +151,7 @@ export default function Home() {
           <HomePageCard
             title="Full Interior + Spill Guard"
             imageUrl="/assets/images/interior/driver12.jpg"
-            description="Our Full Interior Service topped with a interior ceramic spray on all surfaces, perfect for making any future cleaning a breeze."
+            description="Our Full Interior Service topped with interior ceramic coating on all surfaces - the perfect protection for families with kids, pets, or anyone who wants to make future cleanups effortless."
             steps={[
               "EVERYTHING From our Full Interior Service",
               "All Leathers/plastics conditioned with an interior ceramic coating",
@@ -189,7 +189,7 @@ export default function Home() {
           <HomePageCard
             title="Seal & Shine"
             imageUrl="/assets/images/sealshine/seal-shine.jpg"
-            description="Our exterior decon wash, plus a single-stage paint correction, topped with a 1-year ceramic coating!"
+            description="Our top exterior package featuring 2-stage paint correction and 3-year ceramic coating - using skills refined through training with industry expert Jason Killmer."
             steps={[
               "EVERYTHING from our Exterior Decon Service + Clay Bar Treatment",
               "Single-stage paint correction to remove light scratches and swirls",

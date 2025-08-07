@@ -30,10 +30,6 @@ export default function About() {
     }
   }, []);
 
-  // const negativeXMovement = useTransform(scrollY.scrollYProgress, [0, 0.32], [0, -90]);
-
-  // const negativeYMovement = useTransform(scrollY.scrollYProgress, [0, 0.32], [0, -30]);
-
   const xMovement = useTransform(scrollY.scrollYProgress, [0, 0.32], [0, 80]);
 
   const yMovement = useTransform(scrollY.scrollYProgress, [0, 0.32], [0, 30]);
@@ -274,6 +270,36 @@ export default function About() {
             Building C6 off State Route 410.
           </p>
         </div>
+
+        <br className="extra-space" />
+
+        <div className="text-center">
+          <h3 className="text-3xl font-bold">Learning from the Best: Our Connection with Jason Killmer</h3>
+
+          <p className="max-w-[1200px] mx-auto text-lg mt-4">
+            Sometimes the automotive world feels surprisingly small. We're located in the same Buckley Business Park where Jason Killmer started his career
+            years ago, and recently we met Tyler from Reeves Auto Detailing, who brought Jason over for a visit. What was supposed to be a quick introduction
+            turned into an 8-hour session of talking shop, sharing techniques, and nerding out over every aspect of detailing.
+          </p>
+          <p className="max-w-[1200px] mx-auto text-lg mt-4">
+            Jason was impressed enough to come back the next day, where he taught us advanced wet sanding techniques, showed us rotary polishing methods we
+            hadn't seen before, and just enjoyed spending time with fellow detailing enthusiasts. Since then, he's stopped by multiple times and has become
+            genuinely impressed with Brenden's chemical knowledge - though he admits he was initially skeptical about why anyone would need{" "}
+            <span className="italic">52 feet </span> of chemical shelves.
+          </p>
+          <p className="max-w-[1200px] mx-auto text-lg mt-4">
+            The validation from someone of Jason's caliber means everything in this industry. When he told us we should be charging more for what we were doing,
+            it confirmed we were already doing high-level work. But more importantly, his willingness to share knowledge and keep coming back shows that this
+            relationship is about more than business - it's about pushing the craft forward and ensuring every customer gets the best possible results.
+          </p>
+          <p className="max-w-[1200px] mx-auto text-lg mt-4">
+            Having Jason's input has refined our already solid processes, but it also reinforced something crucial: we were doing professional-grade work before
+            we met him. His expertise just helped us perfect what we were already passionate about. It's the kind of continuous learning that separates good
+            detailers from great ones.
+          </p>
+        </div>
+
+        <br className="extra-space" />
 
         <h3 style={{ fontSize: "2.5em" }}>FAQ</h3>
         <div className="faq-container" itemScope itemType="https://schema.org/FAQPage">
