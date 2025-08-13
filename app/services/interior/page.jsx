@@ -38,7 +38,7 @@ export default function FullIntEx() {
       <HeaderComponent
         imageUrl="/assets/images/interior/driver16.jpg"
         title="Full Interior Detail"
-        description="Our hassle-free and thorough Interior Detailing Service."
+        description="Our full interior detail service is designed to bring your vehicle's interior back to life. From deep cleaning carpets to conditioning leather, we cover it all."
         secondaryUrl="/assets/images/before&afters/badInteriorBA.png"
       />
 
@@ -92,10 +92,10 @@ export default function FullIntEx() {
                     <span className="text-accent font-bold text-2xl">Carpet Treatment That Actually Works</span>
                   </h3>
                   <p className="leading-relaxed">
-                    Your carpet takes the worst beating of any surface in your car, so we treat it with the respect it deserves. Our treatment arsenal covers
-                    everything from deep extraction for serious stains to our signature light bonneting procedure for maintenance cleaning. We don't use generic
-                    all-purpose cleaners - we match specific solutions to specific problems. Dog hair embedded in fabric? Mud ground into fibers? Mystery stains
-                    from last year? We've seen it all and have the right approach for each situation.
+                    Your carpet takes the worst beating of any surface in your car, so we treat it with the respect it deserves. Our carpet treatment solutions
+                    cover everything from deep extraction for serious stains to our signature light bonneting procedure for maintenance cleaning. We match
+                    specific products to specific problems ensuring the best possible outcome. Dog hair embedded in fabric? Mud ground into fibers? Mystery
+                    stains from last year? We've seen it all and have the right approach for each situation.
                   </p>
                 </div>
 
@@ -151,7 +151,7 @@ export default function FullIntEx() {
                   <h3 className="step-number">3</h3>
                 </div>
                 <div className="step-container">
-                  <h4 className="step-title">Carpet Reconditioning</h4>
+                  <h4 className="step-title">Carpet Reconditioning/Extraction</h4>
                   <p className="step-desc">Using our wide array of carpet cleaning chemicals, remove & extract all of stains that we can.</p>
                 </div>
               </motion.li>
@@ -189,7 +189,7 @@ export default function FullIntEx() {
                   </h3>
                 </div>
                 <div className="step-container">
-                  <h4 className="step-title flex">
+                  <h4 className="step-title flex line-through">
                     Interior Spill Guard Coating{" "}
                     <a href="/services/interior-spill">
                       <ExternalLink color="#3b82f6" size={24} className="mt-1 ml-1" />

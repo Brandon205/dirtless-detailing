@@ -110,10 +110,9 @@ export default function ExteriorSeal() {
                     <span className="text-accent font-bold text-2xl">More Than Just a Wash and Wax</span>
                   </h3>
                   <p className="leading-relaxed">
-                    This service bridges the gap between basic washing and full paint correction. If your paint has lost its glow or developed light swirl
-                    marks, this is where we bring it back to life. After our thorough decon wash, we clay your paint to remove embedded contaminants, then
-                    perform light polishing to restore depth and gloss. Finally, we top it with up to a year of ceramic protection that makes future maintenance
-                    easier.
+                    This service is right between a basic wash and full paint correction. If your paint has lost its glow or developed light swirl marks, this
+                    is where we bring it back to life. After our thorough decon wash, we clay your paint to remove embedded contaminants, then perform light
+                    polishing to restore depth and gloss. Finally, we top it with up to a year of ceramic protection that makes future maintenance easier.
                   </p>
                 </div>
 
@@ -147,7 +146,8 @@ export default function ExteriorSeal() {
                   <p className="leading-relaxed">
                     This is the perfect yearly refresh for any vehicle, whether it's previously been coated or not. It removes the wear and contamination that
                     builds up over time while adding fresh protection for the year ahead. Your car will look better, stay cleaner longer, and be easier to
-                    maintain. It's honest value from people who care more about results than making the biggest possible sale.
+                    maintain. If you had us coat your car in the past, give us a call and we'll figure out a price and plan to maintain the coating the best we
+                    can!
                   </p>
                 </div>
               </div>
@@ -258,7 +258,7 @@ export default function ExteriorSeal() {
                   </h3>
                 </div>
                 <div className="step-container">
-                  <h4 className="step-title flex">
+                  <h4 className="step-title flex line-through">
                     All this and more!{" "}
                     <a href="/services/exterior-correct">
                       <ExternalLink color="#3b82f6" size={24} className="mt-1 ml-1" />

@@ -210,10 +210,13 @@ export default function ExteriorCorrect() {
                     <span className="text-accent font-bold text-2xl">Three-Year Protection That Makes Sense</span>
                   </h3>
                   <p className="leading-relaxed">
-                    We could sell you a 5 or 10-year coating, but we won't. After three years, coatings naturally degrade and your paint benefits from fresh
-                    preparation anyway. A 3-year coating performs consistently throughout its lifespan and costs less to maintain. We coat everything - paint,
-                    trim, lights, glass, and wheels - because partial protection doesn't make sense. This is about honest advice and real results, not just
-                    making a bigger sale.
+                    We could sell you a 5 or 10-year coating, but we won't. We coat everything - paint, trim, lights, glass, and wheels. And after three years,
+                    chances are you will have collected some scratches and swirls or plastics may start fading again. For yearly maintenance we'd recommend
+                    getting in touch with us and we'll plan a yearly modified version of our{" "}
+                    <a href="/services/exterior-seal" className="text-blue-600 hover:text-blue-700 font-medium underline">
+                      Seal & Shine
+                    </a>{" "}
+                    package where we'll go in, check on the coating, polish any areas that need fixing up, and re-coat them.
                   </p>
                 </div>
               </div>
@@ -221,7 +224,7 @@ export default function ExteriorCorrect() {
               {/* Call-to-action section */}
               <div className="mt-8 p-3 lg:p-6 bg-zinc-800 rounded-lg border border-zinc-900">
                 <p className="text-center">
-                  Now's the perfect time to book a interior cleaning as well. Check out our current offers and pricing on our full interior detail{" "}
+                  Now's the perfect time to book a interior cleaning as well. Check out our current offers and pricing on our Full Interior Detail{" "}
                   <a href="/services/interior" className="text-blue-600 hover:text-blue-700 font-medium underline">
                     here
                   </a>

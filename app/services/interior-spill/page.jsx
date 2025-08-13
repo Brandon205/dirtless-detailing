@@ -39,7 +39,7 @@ export default function InteriorSpill() {
       <HeaderComponent
         imageUrl="/assets/images/interior/accO.jpg"
         title="Full Interior + Spill Guard"
-        description="Our highly rated interior service topped with an interior ceramic coating."
+        description="Our highly rated interior service topped with an interior ceramic coating, helping protect your vehicle from life's spills and stains."
         secondaryUrl="/assets/images/interior/center3.jpg"
       />
 
@@ -81,7 +81,7 @@ export default function InteriorSpill() {
                   <p className="leading-relaxed">
                     Before any coating goes on, we do the deep work. Using our extensive collection of specialized interior chemicals, we remove months or years
                     of built-up grime, stains, and odors. Our carpet extraction process pulls out embedded dirt, while our bonneting technique handles
-                    surface-level problems and freshens the entire interior. Only after everything is perfectly clean do we apply the protective coating.
+                    surface-level problems and freshens the entire interior. Then, after everything is perfectly clean we apply the protective coating.
                   </p>
                 </div>
 
@@ -91,8 +91,8 @@ export default function InteriorSpill() {
                   </h3>
                   <p className="leading-relaxed">
                     Our interior ceramic coating isn't like those slippery conditioners that make you slide around in your seat. This coating feels natural
-                    while providing serious protection. Spilled coffee wipes up instead of soaking in. Pet accidents clean up easier. Food crumbs don't grind
-                    into fabric. All materials will feel and look similar, but cleanup becomes dramatically easier.
+                    while providing protection. Spilled coffee wipes up instead of soaking in. Pet accidents clean up easier. Food crumbs don't grind into
+                    fabric. All materials will feel and look similar, but cleanup becomes dramatically easier.
                   </p>
                 </div>
 

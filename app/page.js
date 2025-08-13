@@ -189,7 +189,7 @@ export default function Home() {
           <HomePageCard
             title="Seal & Shine"
             imageUrl="/assets/images/sealshine/seal-shine.jpg"
-            description="Our top exterior package featuring 2-stage paint correction and 3-year ceramic coating - using skills refined through training with industry expert Jason Killmer."
+            description="Our top exterior package featuring single-stage paint correction and a 1-year ceramic coating "
             steps={[
               "EVERYTHING from our Exterior Decon Service + Clay Bar Treatment",
               "Single-stage paint correction to remove light scratches and swirls",
@@ -204,15 +204,13 @@ export default function Home() {
           <HomePageCard
             title="Correct & Protect"
             imageUrl="/assets/images/correction/genesis1.jpeg"
-            description="Our top of the line exterior package. A 2-stage paint correction with with a 3-year ceramic coating (Click Learn More to see why we think 3
-                  years is ideal over 5-10 year coatings)."
+            description="A full 2-stage paint correction (or more) topped with a 3-year ceramic coating - using skills refined through working with industry expert Jason Killmer!"
             steps={[
               "EVERYTHING From our Exterior Decon Service + Clay Bar Treatment",
-              "Our full paint correction process (removes 80%-90% of scratches)",
+              "Our 2-stage paint correction process (removes 80%-90% of scratches)",
               "Restore and ceramic coat all trim",
-              "Coat the windshield (you'll barely need to use your wipers anymore!)",
-              "Ceramic coat all wheel faces (usually not included in most detail packages!)",
-              "Apply a 3-year ceramic coating to the paint"
+              "Ceramic coat the windshield & all wheel faces (usually not included in most detailers packages!)",
+              "Apply a 3-year ceramic coating to the paint (Click Learn More to see why we think 3 years is ideal over 5-10 year coatings)"
             ]}
             hours="10-15+"
             linkUrl="/services/exterior-correct"

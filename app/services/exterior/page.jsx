@@ -38,7 +38,7 @@ export default function Exterior() {
       <HeaderComponent
         imageUrl="/assets/images/exterior/subaruWashed.jpeg"
         title="Exterior Decon Wash"
-        description="Get a complete car wash, down to even the smallest dots of tar removed."
+        description="The detailers car wash. We focus on the parts that get missed, removing contaminants, and protecting your paint."
         secondaryUrl="/assets/images/before&afters/TruckTarBA.png"
       />
 
@@ -91,9 +91,10 @@ export default function Exterior() {
                     <span className="text-accent font-bold text-2xl">Decontamination That Actually Works</span>
                   </h3>
                   <p className="leading-relaxed">
-                    The word "decon" gets thrown around a lot in our industry, but we mean it literally. Our process includes iron removal that pulls metallic
-                    particles from your paint, tar removal for those stubborn spots on lower panels, and sap removal that won't damage your clear coat. We even
-                    clean areas most places skip - door jambs, gas doors, and all the hidden spots where dirt loves to hide. Every step has a purpose.
+                    The word "decon" gets thrown around a lot in the detailing industry, here we decontaminate your paint as safely as we can. Our process
+                    includes iron removal that pulls metallic particles from your paint, tar removal for those stubborn spots on lower panels, and sap removal
+                    that won't damage your clear coat. We even clean areas most places skip - door jambs, gas doors, and all the hidden spots where dirt loves
+                    to hide. Every step has a purpose.
                   </p>
                 </div>
 
@@ -102,9 +103,9 @@ export default function Exterior() {
                     <span className="text-accent font-bold text-2xl">Protection That Makes Maintenance Easier</span>
                   </h3>
                   <p className="leading-relaxed">
-                    We finish every decon wash with a ceramic spray that provides 3 months of protection. This isn't just about making your car look good today
-                    - it's about making it easier to keep clean tomorrow. That ceramic layer helps repel water, reduces dirt adhesion, and makes your next wash
-                    more effective. It's the difference between cleaning your car and actually maintaining it.
+                    We finish every decon wash with a ceramic spray that provides at least 3 months of protection. This isn't just about making your car look
+                    good today - it's about making it easier to keep clean tomorrow. That ceramic layer helps repel water, reduces dirt adhesion, and makes your
+                    next wash more effective. You'll thank us later!
                   </p>
                 </div>
               </div>
@@ -112,8 +113,8 @@ export default function Exterior() {
               {/* Call-to-action section */}
               <div className="mt-8 p-3 lg:p-6 bg-zinc-800 rounded-lg border border-zinc-900">
                 <p className="text-center">
-                  Complete the detail! While your car is with us now's the best time to get that interior back in shape! Check out our current offers and
-                  pricing on our full interior detail{" "}
+                  Complete the detail! While your car is with us now's the best time to get that neglected interior back in shape! Check out our current offers
+                  and pricing on our full interior detail{" "}
                   <a href="/services/exterior" className="text-blue-600 hover:text-blue-700 font-medium underline">
                     here
                   </a>
@@ -201,7 +202,7 @@ export default function Exterior() {
                   </h3>
                 </div>
                 <div className="step-container">
-                  <h4 className="step-title flex">
+                  <h4 className="step-title flex line-through">
                     All this and more!{" "}
                     <a href="/services/exterior-seal">
                       <ExternalLink color="#3b82f6" size={24} className="mt-1 ml-1" />
