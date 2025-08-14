@@ -253,7 +253,7 @@ export default function About() {
         <h3 style={{ fontSize: "2.5em", margin: 0, textAlign: smallScreen ? "left" : "center" }}>Dirt-Less Detailing</h3>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }} className="text-left">
           <p>
-            Dirt-Less Detailing is a premier auto detailing company founded 2 years ago by Brenden (on the right in the picture), an experienced detailer with 8
+            Dirt-Less Detailing is a premier auto detailing company founded 3 years ago by Brenden (on the right in the picture), an experienced detailer with 9
             years of industry knowledge. We specialize in restoring your vehicle's beauty, inside and out. Our mission is simple - to provide you with the best
             results and customer service that your money can buy. Let us make your car shine like new again!
           </p>
@@ -271,9 +271,9 @@ export default function About() {
           </p>
         </div>
 
-        <br className="extra-space" />
+        {/* <br className="extra-space" /> */}
 
-        <div className="text-center">
+        {/* <div className="text-center">
           <h3 className="text-3xl font-bold">Learning from the Best: Our Connection with Jason Killmer</h3>
 
           <p className="max-w-[1200px] mx-auto text-lg mt-4">
@@ -297,7 +297,7 @@ export default function About() {
             we met him. His expertise just helped us perfect what we were already passionate about. It's the kind of continuous learning that separates good
             detailers from great ones.
           </p>
-        </div>
+        </div> */}
 
         <br className="extra-space" />
 

@@ -80,10 +80,11 @@ export default function FullIntEx() {
                     <span className="text-accent font-bold text-2xl">The Science Behind Our Chemical Arsenal</span>
                   </h3>
                   <p className="leading-relaxed">
-                    Those 52 feet of chemical shelves aren't just for show. Every cleaner, every conditioner, every stain remover has earned its place through
-                    testing and results. We've developed our own carpet bonneting technique that removes light staining and embedded odors while loosening hair,
-                    dirt, and debris that regular extraction can't touch. For deeper problems, our extraction process uses targeted chemicals that break down
-                    stains at the molecular level without damaging your interior materials.
+                    The 52 feet of chemical shelves at our shop aren't just for show. Every cleaner, every conditioner, every stain remover that we've tested is
+                    on those shelves. After lots of testing an research we've developed our own carpet bonneting technique that removes light staining and
+                    embedded odors while loosening hair, dirt, and debris that leaves the carpet just as clean without needing to soak the carpet with full
+                    extraction. For deeper problems, our extraction process uses targeted chemicals that break down stains at the molecular level without
+                    damaging your interior materials.
                   </p>
                 </div>
 
