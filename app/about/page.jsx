@@ -14,7 +14,7 @@ import BaseSchema from "../jsonSchemas/BaseSchema";
 
 export default function About() {
   const [expanded, setExpanded] = useState(false);
-  const [smallScreen, setSmallScreen] = useState(false);
+  // const [smallScreen, setSmallScreen] = useState(false);
   const scrollY = useScroll();
 
   const calendarRef = useRef(null);
@@ -22,13 +22,13 @@ export default function About() {
   const starRef = useRef(null);
   const mapRef = useRef(null);
 
-  useEffect(() => {
-    if (window.innerWidth < 979) {
-      setSmallScreen(true);
-    } else {
-      setSmallScreen(false);
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (window.innerWidth < 979) {
+  //     setSmallScreen(true);
+  //   } else {
+  //     setSmallScreen(false);
+  //   }
+  // }, []);
 
   const xMovement = useTransform(scrollY.scrollYProgress, [0, 0.32], [0, 80]);
 
@@ -120,34 +120,14 @@ export default function About() {
 
       <section style={{ lineHeight: "2", fontSize: "1.2em" }} className="about-container">
         <div className="about-explain">
-          {smallScreen ? (
-            <div className="about-image-container">
-              <div className="about-image w-full max-w-[400px] h-[225px]">
-                <Image
-                  src="/assets/images/exterior/fordGTBack.jpg"
-                  alt="Clean Ford GT in a garage"
-                  sizes="(max-width: 979px) 400px, (min-width: 980px) 450px"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="about-image w-full max-w-[400px] h-[225px]">
-                <Image
-                  src="/assets/images/showcase/worktruckGriots.jpg"
-                  alt="Our worktruck in front of Griots Garage in Tacoma"
-                  fill
-                  sizes="(max-width: 979px) 400px, (min-width: 980px) 450px"
-                  className="object-cover"
-                />
-              </div>
-            </div>
-          ) : (
-            <div className="about-image-container">
-              <motion.div style={{ x: smallScreen ? "" : xMovement, y: smallScreen ? "" : yMovement }} className="about-image w-[450px] h-[300px]">
+          <div className="about-image-container">
+            {/* <motion.div style={{ x: smallScreen ? "" : xMovement, y: smallScreen ? "" : yMovement }} className="about-image w-[450px] h-[300px]">
                 <Image src="/assets/images/exterior/fordGTBack.jpg" alt="Clean Ford GT in a garage" className="rounded-lg object-cover" fill />
-              </motion.div>
+              </motion.div> */}
+            <div className="about-image w-full h-[160px] lg:w-[450px] lg:h-[300px]">
+              <Image src="/assets/images/exterior/fordGTBack.jpg" alt="Clean Ford GT in a garage" className="rounded-lg object-cover" fill />
             </div>
-          )}
+          </div>
           <div className="text-left">
             <h3 className="text-large">You shouldn't have to take time out of your busy day to clean your car.</h3>
             <p className="pb-4">
@@ -250,7 +230,7 @@ export default function About() {
             className="object-cover"
           />
         </div>
-        <h3 style={{ fontSize: "2.5em", margin: 0, textAlign: smallScreen ? "left" : "center" }}>Dirt-Less Detailing</h3>
+        <h3 className="text-2xl m-0 text-left lg:text-center">Dirt-Less Detailing</h3>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }} className="text-left">
           <p>
             Dirt-Less Detailing is a premier auto detailing company founded 3 years ago by Brenden (on the right in the picture), an experienced detailer with 9
@@ -304,7 +284,7 @@ export default function About() {
         <h3 style={{ fontSize: "2.5em" }}>FAQ</h3>
         <div className="faq-container" itemScope itemType="https://schema.org/FAQPage">
           {faqItems.map((item, i) => (
-            <FaqItem key={i} i={i} expanded={expanded} setExpanded={setExpanded} title={item.title} description={item.description} isMobile={smallScreen} />
+            <FaqItem key={i} i={i} expanded={expanded} setExpanded={setExpanded} title={item.title} description={item.description} isMobile={true} />
           ))}
         </div>
       </section>
