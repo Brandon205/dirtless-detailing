@@ -14,7 +14,7 @@ import BaseSchema from "../jsonSchemas/BaseSchema";
 
 export default function About() {
   const [expanded, setExpanded] = useState(false);
-  // const [smallScreen, setSmallScreen] = useState(false);
+  const [smallScreen, setSmallScreen] = useState(false);
   const scrollY = useScroll();
 
   const calendarRef = useRef(null);
@@ -22,13 +22,13 @@ export default function About() {
   const starRef = useRef(null);
   const mapRef = useRef(null);
 
-  // useEffect(() => {
-  //   if (window.innerWidth < 979) {
-  //     setSmallScreen(true);
-  //   } else {
-  //     setSmallScreen(false);
-  //   }
-  // }, []);
+  useEffect(() => {
+    if (window.innerWidth < 979) {
+      setSmallScreen(true);
+    } else {
+      setSmallScreen(false);
+    }
+  }, []);
 
   const xMovement = useTransform(scrollY.scrollYProgress, [0, 0.32], [0, 80]);
 

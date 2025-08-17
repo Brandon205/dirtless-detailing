@@ -9,7 +9,7 @@ export const metadata = {
     url: "https://www.dirtlessdetailing.com/about",
     images: [
       {
-        url: "/assets/images/showcase/homepage-main.webp", // Consider using a team photo or company image
+        url: "/assets/images/showcase/homepage-main.webp",
         width: 1200,
         height: 630,
         alt: "A photo in front of the truck that won at Good Guys Car Show that year"
