@@ -176,9 +176,10 @@ export default function ExteriorCorrect() {
                     <span className="text-accent font-bold text-2xl">Paint Correction Done by People Who Know What They're Doing</span>
                   </h3>
                   <p className="leading-relaxed">
-                    This is our top-tier exterior service because paint correction requires real skill, not just expensive equipment. We've learned from Jason
-                    Killmer, one of the most respected names in paint correction and wet sanding, who's spent time at our shop and been impressed enough to keep
-                    coming back. When someone of his caliber tells you that you should be charging more for your work, you know you're doing something right.
+                    This is our top-tier exterior service because paint correction requires real skill, not just expensive equipment. We've invested countless
+                    hours learning advanced techniques and understanding how different paints respond to correction. Our results speak for themselves - we
+                    consistently deliver the kind of paint correction that other shops struggle to achieve because we understand both the science and the art
+                    behind it.
                   </p>
                 </div>
 
@@ -187,10 +188,9 @@ export default function ExteriorCorrect() {
                     <span className="text-accent font-bold text-2xl">The Expertise Behind the Results</span>
                   </h3>
                   <p className="leading-relaxed">
-                    Jason visited our shop and spent hours sharing advanced techniques, teaching wet sanding methods, and discussing the craft with fellow
-                    enthusiasts. He was initially skeptical about our chemical selection - wondering why anyone needs 52 feet of chemical shelves - but after
-                    seeing our work and understanding our process, he gets it. This level of attention to detail isn't excessive when the results speak for
-                    themselves.
+                    Paint correction is about reading the paint, adjusting technique mid-process, and knowing when to stop before causing damage. Our extensive
+                    chemical selection - those 52 feet of shelves - might seem excessive to some, but every product has earned its place through testing and
+                    results. This level of attention to detail isn't overkill when you see the difference it makes in the final outcome.
                   </p>
                 </div>
 

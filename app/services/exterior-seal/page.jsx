@@ -122,8 +122,8 @@ export default function ExteriorSeal() {
                   </h3>
                   <p className="leading-relaxed">
                     Not every car needs aggressive paint correction, but every car benefits from proper preparation and protection. Our light polishing step
-                    removes minor imperfections and swirl marks while preparing the surface for coating adhesion. We've learned from some of the best in the
-                    business - including Jason Killmer, who's worked with us and confirmed our prep work and application techniques are on point.
+                    removes minor imperfections and swirl marks while preparing the surface for coating adhesion. We've spent years perfecting our prep work and
+                    application techniques because we know that proper foundation is everything when it comes to long-lasting results.
                   </p>
                 </div>
 

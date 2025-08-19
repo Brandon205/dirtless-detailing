@@ -204,7 +204,7 @@ export default function Home() {
           <HomePageCard
             title="Correct & Protect"
             imageUrl="/assets/images/correction/genesis1.jpeg"
-            description="A full 2-stage paint correction (or more) topped with a 3-year ceramic coating - using skills refined through working with industry expert Jason Killmer!"
+            description="A full 2-stage paint correction (or more) topped with a 3-year ceramic coating - using skills refined through years of polishing experience!"
             steps={[
               "EVERYTHING From our Exterior Decon Service + Clay Bar Treatment",
               "Our 2-stage paint correction process (removes 80%-90% of scratches)",
