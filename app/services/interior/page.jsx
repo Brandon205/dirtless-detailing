@@ -81,7 +81,7 @@ export default function FullIntEx() {
                   </h3>
                   <p className="leading-relaxed">
                     The 52 feet of chemical shelves at our shop aren't just for show. Every cleaner, every conditioner, every stain remover that we've tested is
-                    on those shelves. After lots of testing an research we've developed our own carpet bonneting technique that removes light staining and
+                    on those shelves. After lots of testing and research we've developed our own carpet bonneting technique that removes light staining and
                     embedded odors while loosening hair, dirt, and debris that leaves the carpet just as clean without needing to soak the carpet with full
                     extraction. For deeper problems, our extraction process uses targeted chemicals that break down stains at the molecular level without
                     damaging your interior materials.
