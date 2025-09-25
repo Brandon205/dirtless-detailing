@@ -244,7 +244,7 @@ export default function About() {
           </p>
           <p>
             Our shop location is right in the{" "}
-            <a href="https://maps.app.goo.gl/bhPDhjUN4jsSegu48" className="text-blue-500" target="_blank" rel="noopener">
+            <a href="https://maps.app.goo.gl/bhPDhjUN4jsSegu48" className="text-blue-500" target="_blank" rel="noopener noreferrer">
               Buckley Business Park
             </a>{" "}
             Building C6 off State Route 410.

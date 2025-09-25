@@ -54,7 +54,7 @@ export default function Contact() {
             <div className="flex-shrink-0 w-[28px] h-[28px]">
               <Smartphone size={28} />
             </div>
-            <a className="contact-link location-link underline" href="tel:2532529758" target="_blank" rel="noopener">
+            <a className="contact-link location-link underline" href="tel:2532529758" target="_blank" rel="noopener noreferrer">
               (253) 252-9758
             </a>
             <p> Text or Call</p>
@@ -67,7 +67,7 @@ export default function Contact() {
               className="contact-link location-link underline"
               href="mailto:brenden@dirtlessdetailing.com?subject = Schedule a Detail!"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
               style={{ overflow: "auto", overflowWrap: "anywhere" }}
             >
               brenden@dirtlessdetailing.com
@@ -83,7 +83,7 @@ export default function Contact() {
             <div className="flex-shrink-0 w-[28px] h-[28px]">
               <MapPin size={28} />
             </div>
-            <a href="https://maps.app.goo.gl/bhPDhjUN4jsSegu48" className="contact-link location-link underline" target="_blank" rel="noopener">
+            <a href="https://maps.app.goo.gl/bhPDhjUN4jsSegu48" className="contact-link location-link underline" target="_blank" rel="noopener noreferrer">
               Buckley Business Park, 28120 WA-410, Building C6
             </a>
           </div>

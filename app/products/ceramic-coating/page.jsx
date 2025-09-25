@@ -60,7 +60,7 @@ export default function products() {
             src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=brandonblack0-20&language=en_US&marketplace=amazon&region=US&placement=B0009IQXFO&asins=B0009IQXFO&linkId=d5ad40cecb3aaf7be8c87246fc5eea6a&show_border=true&link_opens_in_new_window=true"
           ></iframe>
           <div className="product-desc">
-            <a href="https://amzn.to/3NGbUht" className="product-title" target="_blank" rel="noopener">
+            <a href="https://amzn.to/3NGbUht" className="product-title" target="_blank" rel="noopener noreferrer">
               Meguiar's Car Wash Soap
             </a>
             <p>
@@ -78,7 +78,7 @@ export default function products() {
             src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=brandonblack0-20&language=en_US&marketplace=amazon&region=US&placement=B0787JSXX2&asins=B0787JSXX2&linkId=3010892b40311b946b175d627a341cc4&show_border=false&link_opens_in_new_window=true"
           ></iframe>
           <div className="product-desc">
-            <a href="https://amzn.to/446GPsE" className="product-title" target="_blank" rel="noopener">
+            <a href="https://amzn.to/446GPsE" className="product-title" target="_blank" rel="noopener noreferrer">
               CarCarez Wash Microfiber Towels
             </a>
             <p>
@@ -94,7 +94,7 @@ export default function products() {
             src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=brandonblack0-20&language=en_US&marketplace=amazon&region=US&placement=B004BFZRCQ&asins=B004BFZRCQ&linkId=7358a4b30236e6af6e92fdc9ccd31ad2&show_border=false&link_opens_in_new_window=true"
           ></iframe>
           <div className="product-desc">
-            <a href="https://amzn.to/4475vBo" className="product-title" target="_blank" rel="noopener">
+            <a href="https://amzn.to/4475vBo" className="product-title" target="_blank" rel="noopener noreferrer">
               3D Bug Remover
             </a>
             <p>
@@ -112,7 +112,7 @@ export default function products() {
             src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=brandonblack0-20&language=en_US&marketplace=amazon&region=US&placement=B09S814R5F&asins=B09S814R5F&linkId=0081a54cc3d3a434b0195fbe3452b628&show_border=true&link_opens_in_new_window=true"
           ></iframe>
           <div className="product-desc">
-            <a href="https://amzn.to/3CHqWgP" className="product-title" target="_blank" rel="noopener">
+            <a href="https://amzn.to/3CHqWgP" className="product-title" target="_blank" rel="noopener noreferrer">
               Griot's Tar and Sap Remover
             </a>
             <p>
@@ -130,7 +130,7 @@ export default function products() {
             src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=brandonblack0-20&language=en_US&marketplace=amazon&region=US&placement=B0BQCTHKT4&asins=B0BQCTHKT4&linkId=214006bd6028a9c806f8618b439a1f2e&show_border=false&link_opens_in_new_window=true"
           ></iframe>
           <div className="product-desc">
-            <a href="https://amzn.to/3Xjqizu" className="product-title" target="_blank" rel="noopener">
+            <a href="https://amzn.to/3Xjqizu" className="product-title" target="_blank" rel="noopener noreferrer">
               Griot's Wheel, Tire, and Mat Cleaner
             </a>
             <p>
@@ -148,7 +148,7 @@ export default function products() {
             src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=brandonblack0-20&language=en_US&marketplace=amazon&region=US&placement=B095DTBBVJ&asins=B095DTBBVJ&linkId=43992e4f23c20868fcb4708411c948a1&show_border=false&link_opens_in_new_window=true"
           ></iframe>
           <div className="product-desc">
-            <a href="https://amzn.to/43N2jLw" className="product-title" target="_blank" rel="noopener">
+            <a href="https://amzn.to/43N2jLw" className="product-title" target="_blank" rel="noopener noreferrer">
               Chemical Guys Wheel Brush
             </a>
             <p>
@@ -166,7 +166,7 @@ export default function products() {
             src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=brandonblack0-20&language=en_US&marketplace=amazon&region=US&placement=B0BNVFRV3Z&asins=B0BNVFRV3Z&linkId=ee8f3ecd74f31bd716731063d91f0ae2&show_border=false&link_opens_in_new_window=true"
           ></iframe>
           <div className="product-desc">
-            <a href="https://amzn.to/3NIHJWU" className="product-title" target="_blank" rel="noopener">
+            <a href="https://amzn.to/3NIHJWU" className="product-title" target="_blank" rel="noopener noreferrer">
               Cobee Detailing Brush Set
             </a>
             <p>
@@ -184,7 +184,7 @@ export default function products() {
             src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=brandonblack0-20&language=en_US&marketplace=amazon&region=US&placement=B07W6JMK1L&asins=B07W6JMK1L&linkId=a330591c57a4458a09fc10baab17a2d5&show_border=true&link_opens_in_new_window=true"
           ></iframe>
           <div className="product-desc">
-            <a href="https://amzn.to/3PpObn3" className="product-title" target="_blank" rel="noopener">
+            <a href="https://amzn.to/3PpObn3" className="product-title" target="_blank" rel="noopener noreferrer">
               The Rag Company Microfiber Towels
             </a>
             <p>
@@ -202,7 +202,7 @@ export default function products() {
             src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=brandonblack0-20&language=en_US&marketplace=amazon&region=US&placement=B083KPS7QD&asins=B083KPS7QD&linkId=677e37025d7ca22764aea57debd4eed0&show_border=true&link_opens_in_new_window=true"
           ></iframe>
           <div className="product-desc">
-            <a href="https://amzn.to/449nFm7" className="product-title" target="_blank" rel="noopener">
+            <a href="https://amzn.to/449nFm7" className="product-title" target="_blank" rel="noopener noreferrer">
               The Rag Company Large Drying Towel
             </a>
             <p>
@@ -220,7 +220,7 @@ export default function products() {
             src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=brandonblack0-20&language=en_US&marketplace=amazon&region=US&placement=B083KNNY2P&asins=B083KNNY2P&linkId=d4cf69183b7a6ad17a5d4d30cd7ff66c&show_border=true&link_opens_in_new_window=true"
           ></iframe>
           <div className="product-desc">
-            <a href="https://amzn.to/3JrSbzB" className="product-title" target="_blank" rel="noopener">
+            <a href="https://amzn.to/3JrSbzB" className="product-title" target="_blank" rel="noopener noreferrer">
               The Rag Company Drying Towels
             </a>
             <p>
@@ -309,7 +309,7 @@ export default function products() {
             <h4 className="step-title">Enhance and Dry</h4>
             <p className="step-desc">
               Give about 2-3 sprays of{" "}
-              <a href="https://amzn.to/3uKuqi1" target="_blank" rel="noopener" className="text-blue-500">
+              <a href="https://amzn.to/3uKuqi1" target="_blank" rel="noopener noreferrer" className="text-blue-500">
                 Griots Ceramic Speed Shine
               </a>{" "}
               per panel, and use your preferred drying towel to completely dry off the car. And you're done!

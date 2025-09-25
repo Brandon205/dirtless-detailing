@@ -85,11 +85,11 @@ const faqItems = [
         We never recommend going through a car wash as they can reduce the gloss slickness and beading of your coating prematurely. However in a pinch a
         touch-less car wash will suffice. Just make sure to use the cheapest setting, without any wax's. It is also recommended after the wash to dry the whole
         vehicle with high quality drying towels (We recommend{" "}
-        <a href="https://amzn.to/449nFm7" className="text-blue-500" target="_blank" rel="noopener">
+        <a href="https://amzn.to/449nFm7" className="text-blue-500" target="_blank" rel="noopener noreferrer">
           The Rag Company's Large Drying Towel
         </a>
         ) and{" "}
-        <a href="https://amzn.to/3uKuqi1" className="text-blue-500" target="_blank" rel="noopener">
+        <a href="https://amzn.to/3uKuqi1" className="text-blue-500" target="_blank" rel="noopener noreferrer">
           Griot's Ceramic Speed Shine
         </a>
         !
