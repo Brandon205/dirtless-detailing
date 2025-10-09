@@ -112,16 +112,17 @@ export default function ExteriorSeal() {
                   <p className="leading-relaxed">
                     This service is right between a basic wash and full paint correction. If your paint has lost its glow or developed light swirl marks, this
                     is where we bring it back to life. After our thorough decon wash, we clay your paint to remove embedded contaminants, then perform light
-                    polishing to restore depth and gloss. Finally, we top it with up to a year of ceramic protection that makes future maintenance easier.
+                    polishing to restore depth and gloss. Finally, we top it with up to a year of ceramic protection that makes future maintenance easier for
+                    you.
                   </p>
                 </div>
 
                 <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
                   <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">The Right Approach for Most Cars</span>
+                    <span className="text-accent font-bold text-2xl">The Perfect Approach for Daily Drivers</span>
                   </h3>
                   <p className="leading-relaxed">
-                    Not every car needs aggressive paint correction, but every car benefits from proper preparation and protection. Our light polishing step
+                    Not every car needs in depth paint correction, but every car benefits from proper preparation and protection. Our light polishing step
                     removes minor imperfections and swirl marks while preparing the surface for coating adhesion. We've spent years perfecting our prep work and
                     application techniques because we know that proper foundation is everything when it comes to long-lasting results.
                   </p>
@@ -129,13 +130,11 @@ export default function ExteriorSeal() {
 
                 <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
                   <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">Ceramic Coating Done Right</span>
+                    <span className="text-accent font-bold text-2xl">Get All the Ceramic Coating Benefits</span>
                   </h3>
                   <p className="leading-relaxed">
-                    Anyone can slap on a coating, but proper application requires clean paint, correct technique, and quality products. We don't cut corners on
-                    prep work because we know it's the foundation of long-lasting results. Our year-long ceramic coating makes your car easier to wash, more
-                    resistant to water spots, and better protected against environmental damage. Plus, we coat your windshield, wheels, and trim - not just the
-                    paint.
+                    Our year-long ceramic coating makes your car easier to wash, more resistant to water spots, and better protected against environmental
+                    damage. Plus, we coat your windshield, wheels, and trim - not just the paint providing all these benefits on the entire vehicle.
                   </p>
                 </div>
 
@@ -146,8 +145,7 @@ export default function ExteriorSeal() {
                   <p className="leading-relaxed">
                     This is the perfect yearly refresh for any vehicle, whether it's previously been coated or not. It removes the wear and contamination that
                     builds up over time while adding fresh protection for the year ahead. Your car will look better, stay cleaner longer, and be easier to
-                    maintain. If you had us coat your car in the past, give us a call and we'll figure out a price and plan to maintain the coating the best we
-                    can!
+                    maintain. <br /> If you had us coat your car in the past, give us a call and we'll figure out a price and plan to maintain your coating!
                   </p>
                 </div>
               </div>

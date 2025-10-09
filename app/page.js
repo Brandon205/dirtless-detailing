@@ -177,7 +177,7 @@ export default function Home() {
             imageUrl="/assets/images/exterior/jeepRenegade.jpg"
             description="The detailers car wash - one that goes far beyond what an auto car wash can do. Your wheels, tires, and even paint will be cleaner than ever!"
             steps={[
-              "Full vehicle hand wash, with tar/sap remover applied where needed",
+              "Full vehicle top to bottom wash, with tar and sap remover applied where needed",
               "Scrub & wash the tires, wheels, wheel barrels, and wells",
               "Clean out all door jambs and the gas door",
               "Apply a ceramic spray on all surfaces (lasts 3-6 months)"
@@ -191,10 +191,10 @@ export default function Home() {
             imageUrl="/assets/images/sealshine/seal-shine.jpg"
             description="Our top exterior package featuring single-stage paint correction and a 1-year ceramic coating "
             steps={[
-              "EVERYTHING from our Exterior Decon Service + Clay Bar Treatment",
-              "Single-stage paint correction to remove light scratches and swirls",
+              "Our Exterior Decon Wash + clay bar treatment",
+              "A full vehicle polish to remove light scratches and swirls",
               "Restore and ceramic coat all trim",
-              "Coat the windshield (most detailers charge extra for this!)",
+              "Ceramic coat the windshield (lasts 6-12 months)",
               "Apply a 1-year ceramic coating to the entire vehicle"
             ]}
             hours="6-9+"
@@ -206,11 +206,11 @@ export default function Home() {
             imageUrl="/assets/images/correction/genesis1.jpeg"
             description="A full 2-stage paint correction (or more) topped with a 3-year ceramic coating - using skills refined through years of polishing experience!"
             steps={[
-              "EVERYTHING From our Exterior Decon Service + Clay Bar Treatment",
-              "Our 2-stage paint correction process (removes 80%-90% of scratches)",
+              "Our Exterior Decon Wash + clay bar treatment",
+              "A 2-stage paint correction (removes 80%-90% of scratches)",
               "Restore and ceramic coat all trim",
-              "Ceramic coat the windshield & all wheel faces (usually not included in most detailers packages!)",
-              "Apply a 3-year ceramic coating to the paint (Click Learn More to see why we think 3 years is ideal over 5-10 year coatings)"
+              "Ceramic coat the windshield & all wheel faces (usually an extra cost, we include it free!)",
+              "Apply a 3-year ceramic coating to the paint"
             ]}
             hours="10-15+"
             linkUrl="/services/exterior-correct"

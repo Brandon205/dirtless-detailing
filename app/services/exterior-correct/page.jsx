@@ -173,24 +173,23 @@ export default function ExteriorCorrect() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
                 <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
                   <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">Paint Correction Done by People Who Know What They're Doing</span>
+                    <span className="text-accent font-bold text-2xl">Expert Paint Correction Services</span>
                   </h3>
                   <p className="leading-relaxed">
-                    This is our top-tier exterior service because paint correction requires real skill, not just expensive equipment. We've invested countless
-                    hours learning advanced techniques and understanding how different paints respond to correction. Our results speak for themselves - we
-                    consistently deliver the kind of paint correction that other shops struggle to achieve because we understand both the science and the art
-                    behind it.
+                    This is our top-tier exterior service because paint correction requires real skill, not just expensive equipment. We've spent countless
+                    hours learning advanced techniques and understanding how different paints respond to different products and pads. Our results speak for
+                    themselves - we consistently deliver the kind of paint correction that other shops can struggle to achieve.
                   </p>
                 </div>
 
                 <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
                   <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">The Expertise Behind the Results</span>
+                    <span className="text-accent font-bold text-2xl">The Results You Want</span>
                   </h3>
                   <p className="leading-relaxed">
-                    Paint correction is about reading the paint, adjusting technique mid-process, and knowing when to stop before causing damage. Our extensive
-                    chemical selection - those 52 feet of shelves - might seem excessive to some, but every product has earned its place through testing and
-                    results. This level of attention to detail isn't overkill when you see the difference it makes in the final outcome.
+                    We understand that every vehicle is different, and everyone's desired outcome is different. Some want a deep, mirror-like shine, while other
+                    people may just want to remove light scratches and swirls. We tailor our paint correction process to your specific goals, ensuring you get
+                    the results you want for a price you're willing to pay.
                   </p>
                 </div>
 
@@ -199,24 +198,28 @@ export default function ExteriorCorrect() {
                     <span className="text-accent font-bold text-2xl">Two-Stage Correction That Delivers</span>
                   </h3>
                   <p className="leading-relaxed">
-                    Our full paint correction process removes 80-90% of scratches and swirl marks through careful two-stage polishing. We don't just make bold
+                    {/* Our full paint correction process removes 80-90% of scratches and swirl marks through careful two-stage polishing. We don't just make bold
                     claims - we have the skills, equipment, and techniques to back them up. Every panel gets individual attention, and we know when to push
-                    harder and when to stop before causing damage. Your paint isn't practice material - it deserves someone who knows what they're doing.
+                    harder and when to stop before causing damage. Your paint isn't practice material - it deserves someone who knows what they're doing. */}
+                    As well as honing in our own skills, we've also met and worked with some of the best in the industry learning from them and refining our
+                    techniques even further. Our full paint correction process can remove 80-90% of scratches and swirl marks leaving your paint looking
+                    stunning. Topped with the ceramic coating it's sure to have a glass and shine like never before!
                   </p>
                 </div>
 
                 <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
                   <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">Three-Year Protection That Makes Sense</span>
+                    <span className="text-accent font-bold text-2xl">Why Only a 3-Year Coating?</span>
                   </h3>
                   <p className="leading-relaxed">
-                    We could sell you a 5 or 10-year coating, but we won't. We coat everything - paint, trim, lights, glass, and wheels. And after three years,
-                    chances are you will have collected some scratches and swirls or plastics may start fading again. For yearly maintenance we'd recommend
-                    getting in touch with us and we'll plan a yearly modified version of our{" "}
+                    We could sell you a 5 or 10-year coating, but we know that typically after three years, chances are you will have collected some scratches
+                    and swirls or plastics may start fading again. For yearly maintenance on your coating we'd recommend getting in touch with us and we'll plan
+                    a yearly modified version of our{" "}
                     <a href="/services/exterior-seal" className="text-blue-600 hover:text-blue-700 font-medium underline">
                       Seal & Shine
                     </a>{" "}
-                    package where we'll go in, check on the coating, polish any areas that need fixing up, and re-coat them.
+                    package where we'll go in, check on the coating, polish any areas that need fixing up, and re-coat them for less than the cost of a Seal &
+                    Shine Service.
                   </p>
                 </div>
               </div>
