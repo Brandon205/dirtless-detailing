@@ -64,57 +64,56 @@ export default function FullIntEx() {
               <hr style={{ margin: "0 auto 3rem auto" }} />
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
+                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 lg:px-12 hover:shadow-md transition-shadow duration-200">
                   <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">Why Your Interior Needs More Than Surface Cleaning</span>
+                    <span className="text-accent font-bold text-2xl">Much More Than Just A Surface Cleaning</span>
                   </h3>
                   <p className="leading-relaxed">
-                    Most people think a quick vacuum and wipe-down counts as interior cleaning. We've spent years researching and testing hundreds of different
-                    chemicals to find exactly what works best for every surface and every type of mess. From coffee stains to pet accidents, from embedded dirt
-                    to mystery odors - we don't just mask problems, we eliminate them with the right chemical for each specific situation.
+                    This service is perfect for when your vehicle has gotten past the point that you can give it the quick rundown and have it looking nice.
+                    We've spent years researching and testing hundreds of different chemicals to find exactly what works best for every surface and every type
+                    of mess. From coffee stains to pet accidents, from embedded dirt to mystery odors - we don't just mask problems, we eliminate them with the
+                    right chemical for each specific situation.
                   </p>
                 </div>
 
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
+                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 lg:px-12 hover:shadow-md transition-shadow duration-200">
                   <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">The Science Behind Our Chemical Arsenal</span>
+                    <span className="text-accent font-bold text-2xl">We've Spent Too Much Time Looking For the Best Carpet Solutions</span>
                   </h3>
                   <p className="leading-relaxed">
-                    The 52 feet of chemical shelves at our shop aren't just for show. Every cleaner, every conditioner, every stain remover that we've tested is
-                    on those shelves. After lots of testing and research we've developed our own carpet bonneting technique that removes light staining and
-                    embedded odors while loosening hair, dirt, and debris that leaves the carpet just as clean without needing to soak the carpet with full
-                    extraction. For deeper problems, our extraction process uses targeted chemicals that break down stains at the molecular level without
-                    damaging your interior materials.
+                    Our research goes beyond just what we use for the plastics and interior materials, we've also spent hours looking into different carpet
+                    cleaning techniques and products, tested them, and developed our own carpet bonneting technique that removes light staining and embedded
+                    odors while loosening hair, dirt, and debris that leaves the carpet just as clean without needing to soak the carpet with full extraction.
                   </p>
                 </div>
 
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
+                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 lg:px-12 hover:shadow-md transition-shadow duration-200">
                   <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">Carpet Treatment That Actually Works</span>
+                    <span className="text-accent font-bold text-2xl">The Right Carpet Solution For Each Job</span>
                   </h3>
                   <p className="leading-relaxed">
-                    Your carpet takes the worst beating of any surface in your car, so we treat it with the respect it deserves. Our carpet treatment solutions
-                    cover everything from deep extraction for serious stains to our signature light bonneting procedure for maintenance cleaning. We match
-                    specific products to specific problems ensuring the best possible outcome. Dog hair embedded in fabric? Mud ground into fibers? Mystery
-                    stains from last year? We've seen it all and have the right approach for each situation.
+                    Though we have the bonneting technique for light maintenance cleaning, we also have a wide array of carpet cleaning chemicals and extraction
+                    equipment for when the situation calls for it. We will match specific products to specific problems ensuring the best possible outcome. Dog
+                    hair embedded in fabric? Mud ground into fibers? Mystery stains from last year? We've seen it all and have the right approach for each
+                    situation.
                   </p>
                 </div>
 
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
+                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 lg:px-12 hover:shadow-md transition-shadow duration-200">
                   <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">What Makes the Difference</span>
+                    <span className="text-accent font-bold text-2xl">We've Seen It All</span>
                   </h3>
                   <p className="leading-relaxed">
                     Taking us by surprise is difficult. We've cleaned hundreds of interiors and have the tools, chemicals, and techniques for every situation.
-                    While we'll attempt to remove all stains, some may prove more challenging depending on what it is, how long it's been there, and what
-                    surface it's on. But our extensive chemical research and specialized techniques mean we can tackle problems that other shops would give up
-                    on. Your interior won't just look clean - it'll be actually clean.
+                    Now there may be some stains that have been there too long or have set in to the carpet especially in lighter carpeting that may be
+                    impossible to get out. But our extensive chemical research and specialized techniques mean we can tackle problems that other shops would
+                    give up on. Your interior won't just look clean - it'll be as clean as possible.
                   </p>
                 </div>
               </div>
 
               {/* Call-to-action section */}
-              <div className="mt-8 p-3 lg:p-6 bg-zinc-800 rounded-lg border border-zinc-900">
+              <div className="mt-8 p-3 lg:p-6 lg:px-12 bg-zinc-800 rounded-lg border border-zinc-900">
                 <p className="text-center">
                   Want the exterior done as well? Feel free to book an interior and exterior detail, we will get your entire vehicle looking like new in just
                   one day! Check out our exterior decon wash{" "}
