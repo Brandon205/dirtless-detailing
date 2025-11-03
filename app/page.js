@@ -29,12 +29,7 @@ export default function Home() {
 
   const faqItems = [
     {
-      title: "What areas do you service?",
-      description:
-        "We currently have our main shop location in Buckley, Washington. For our mobile services we will go typically as far north as Kent, and as far south as Graham. Contact us if you have specific questions on your location!"
-    },
-    {
-      title: "How do I maintain my Ceramic Coating?",
+      title: "How do I wash/maintain a Ceramic Coating?",
       description: (
         <div>
           We have a full Ceramic Coating Maintenance Guide available on our{" "}
@@ -46,9 +41,14 @@ export default function Home() {
       )
     },
     {
-      title: "I won't have a ride back to my house, what are my options?",
+      title: "After dropping off I won't have a ride back to my house, what are my options?",
       description:
         "No worries, it happens all the time! We have done everything from bringing people back home, picking their car up and dropping it off later, we've even had customers order an Uber straight from our shop."
+    },
+    {
+      title: "What areas do you service?",
+      description:
+        "We currently have our main shop location in Buckley, Washington. For our mobile services we will go typically as far north as Kent, and as far south as Graham. Contact us if you have specific questions on your location!"
     },
     {
       title: "What forms of payment do you take?",
@@ -312,7 +312,7 @@ export default function Home() {
           </div>
           <div className="map relative">
             <IframeSuspense
-              src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJxxfUWqz7kFQRotRs8MwWDRE&key=AIzaSyCabi1i-5RcG2qNysx_bZNQnYUMmT_l6YU"
+              src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJxxfUWqz7kFQRotRs8MwWDRE&key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS}`}
               title="Google Maps Location"
               classes="border-0 h-full w-full my-4 mx-auto"
             />
