@@ -218,7 +218,7 @@ export default function Home() {
           <HomePageCard
             title="Correct & Protect"
             imageUrl="/assets/images/correction/genesis1.jpeg"
-            description="A full 2-stage paint correction (or more) topped with a 3-year ceramic coating - using skills refined through years of polishing experience!"
+            description="A full 2-stage paint correction topped with a 3-year ceramic coating - using skills refined through our years of experience!"
             steps={[
               "Our Exterior Decon Wash + clay bar treatment",
               "A 2-stage paint correction (removes 80%-90% of scratches)",

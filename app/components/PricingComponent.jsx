@@ -160,16 +160,12 @@ export default function PricingComponent(props) {
         <div className="flex flex-col items-start mb-4 w-full lg:w-1/2">
           <p className="text-2xl">Starting At:</p>
           {props.shortTitle == "exteriorcorrect" || props.shortTitle == "exteriorseal" ? (
-            <p className="text-gray-400 text-sm text-left">
-              *Additional correction is priced per hour (~$150/hour) depending on the condition of your paint and the results that you want!
-            </p>
+            <p className="text-gray-400 text-sm text-left">*Additional Correction (e.g., wet sanding, touchup painting) is available at $150/hour.</p>
           ) : (
             ""
           )}
           {props.shortTitle == "interior" || props.shortTitle == "interior-spill" ? (
-            <p className="text-gray-400 text-sm text-left">
-              *This will be the final pricing for most interiors, however, in rare cases, we may need to charge more depending on the condition of the interior.
-            </p>
+            <p className="text-gray-400 text-sm text-left">*This is the final price for most interiors; extreme cases may require an additional charge.</p>
           ) : (
             ""
           )}
