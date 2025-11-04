@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import prices from "../../utils/Prices";
+import salePrices from "../../utils/SalePrices";
 import { CornerRightDown } from "lucide-react";
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "./Select";
 
@@ -63,9 +64,57 @@ export default function PricingComponent(props) {
   }, []);
 
   function updateValue(e) {
-    localStorage.setItem("dirtlessdetailing-size", e); // 0-5
+    localStorage.setItem("dirtlessdetailing-size", e); // returns 0-5
 
     setCurrVal(e);
+  }
+
+  // <div className="">
+  //           HERE
+  //         <strong className="pricing__pricecard-pricebox">
+  //           <span className="pricing__pricecard-price">{content}</span> << HERE
+  //         </strong>
+  //         <p className="flex">
+  //           +Desired Add-ons <CornerRightDown color="#ffffff" size={20} />
+  //         </p>
+  //       </div>
+
+  let content;
+  if (salePrices["active"]) {
+    // CURRENT SALE ACTIVE
+    if (animate) {
+      content = (
+        <>
+          <span className="text-green-500">$</span>
+          <AnimatedNumbers
+            includeComma
+            animateToNumber={salePrices[sizesArr[currVal]][props.serviceType][props.shortTitle]}
+            configs={[{ mass: 1, tension: 320, friction: 100 }]}
+            className="text-green-500"
+          ></AnimatedNumbers>
+          <span className="text-green-500">{props.shortTitle == "exteriorcorrect" || props.shortTitle == "exteriorseal" ? "*" : ""}</span>
+        </>
+      );
+    } else {
+      content = <span className="text-green-500">salePrices[sizesArr[currVal]][props.serviceType][props.shortTitle];</span>;
+    }
+  } else {
+    // NO CURRENT SALE
+    if (animate) {
+      content = (
+        <>
+          $
+          <AnimatedNumbers
+            includeComma
+            animateToNumber={prices[sizesArr[currVal]][props.serviceType][props.shortTitle]}
+            configs={[{ mass: 1, tension: 320, friction: 100 }]}
+          ></AnimatedNumbers>
+          {props.shortTitle == "exteriorcorrect" || props.shortTitle == "exteriorseal" ? "*" : ""}
+        </>
+      );
+    } else {
+      content = prices[sizesArr[currVal]][props.serviceType][props.shortTitle];
+    }
   }
 
   return (
@@ -125,25 +174,21 @@ export default function PricingComponent(props) {
             ""
           )}
         </div>
-        <div className="pricing__pricecard-container">
-          <strong className="pricing__pricecard-pricebox">
-            <span className="pricing__pricecard-price">
-              $
-              {animate ? (
-                <>
-                  <AnimatedNumbers
-                    includeComma
-                    animateToNumber={prices[sizesArr[currVal]][props.serviceType][props.shortTitle]}
-                    configs={[{ mass: 1, tension: 320, friction: 100 }]}
-                  ></AnimatedNumbers>
-                  {props.shortTitle == "exteriorcorrect" || props.shortTitle == "exteriorseal" ? "*" : ""}
-                </>
-              ) : (
-                prices[sizesArr[currVal]][props.serviceType][props.shortTitle]
-              )}
-            </span>
-          </strong>
-          <p className="flex">
+        <div className="flex flex-col items-center gap-2">
+          <div className="flex items-center">
+            {salePrices["active"] ? (
+              <span className="text-3xl font-bold line-through text-red-500 mr-2 mt-8">${prices[sizesArr[currVal]][props.serviceType][props.shortTitle]}</span>
+            ) : (
+              ""
+            )}
+            <div className="flex flex-col items-center">
+              {salePrices["active"] ? <span className="text-xl text-right text-green-500 font-semibold">{salePrices["saleName"]}!</span> : ""}
+              <strong className="pricing__pricecard-pricebox">
+                <span className="pricing__pricecard-price">{content}</span>
+              </strong>
+            </div>
+          </div>
+          <p className="flex m-0 text-base">
             +Desired Add-ons <CornerRightDown color="#ffffff" size={20} />
           </p>
         </div>

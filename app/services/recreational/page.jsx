@@ -448,7 +448,7 @@ function BoatPricing({ length, setLength, currService, setCurrService, imageInde
 
       <div className="flex flex-col justify-between items-center w-[90%] my-0 mx-auto max-w-[700px] lg:flex-row">
         <p className="text-2xl">Your Price Estimate:</p>
-        <div className="pricing__pricecard-container">
+        <div className="flex flex-col items-center gap-4">
           <strong className="pricing__pricecard-pricebox">
             <span className="pricing__pricecard-price">
               $

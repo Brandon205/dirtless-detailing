@@ -18,6 +18,14 @@
       }
     ]
   },
-  "include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx", "app/services/recreational/layout.jsx", "app/services/recreational/page.jsx"],
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "app/services/recreational/layout.jsx",
+    "app/services/recreational/page.jsx",
+    "app/components/PricingComponent.jsx"
+  ],
   "exclude": ["node_modules"]
 }
