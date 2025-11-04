@@ -8,7 +8,7 @@ import { Titillium_Web } from "next/font/google";
 import { InfiniteMovingCards } from "./components/InfiniteMovingCards";
 import FaqItem from "./components/FaqItem";
 import { motion } from "framer-motion";
-import { ClipboardCheck, PhoneCall } from "lucide-react";
+import { ClipboardCheck, PhoneCall, TreePine } from "lucide-react";
 import IframeSuspense from "../utils/IframeSuspense";
 import HomePageCard from "./components/HomePageCard";
 import HomePageSchema from "./jsonSchemas/HomePageSchema";
@@ -82,6 +82,13 @@ export default function Home() {
         ]}
       >
         <header className="w-screen flex flex-col h-[90vh] pt-28 z-50 items-center lg:items-start lg:pl-20 xl:gap-3 text-sm xl:text-lg justify-center">
+          <strong
+            className="bg-accent font-bold text-3xl px-4 py-2 rounded-lg mb-4 flex items-center gap-2 text-white shadow-lg ring-1 ring-black/20 drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]"
+            style={{ textShadow: "0 2px 6px rgba(0,0,0,0.6)" }}
+          >
+            <TreePine style={{ filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5))" }} size={36} className="text-green-500" /> Winter Sale: 20% Off Our Main
+            Services!
+          </strong>
           <div className="text-center lg:text-left">
             <strong className="text-gray-400 text-md lg:text-xl">Dirt-Less Detailing</strong>
             <h1 className={`${titillium.className} text-white text-5xl xl:text-7xl xl:text-left font-bold m-0 lg:max-w-[60%]`}>
@@ -104,8 +111,15 @@ export default function Home() {
               </div>
             </div> */}
             <div className="flex gap-10 pt-8 flex-col lg:flex-row max-w-screen-md">
-              <motion.a href="/contact" className="top-quote-btn" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
-                <ClipboardCheck color="#ffffff" className="mr-2" size={36} />
+              <motion.a
+                href="/contact"
+                className="top-quote-btn shadow-lg"
+                variants={topBtnVariant}
+                whileHover="hover"
+                transition={{ duration: 0.25 }}
+                style={{ textShadow: "0 2px 6px rgba(0,0,0,0.6)" }}
+              >
+                <ClipboardCheck style={{ filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5))" }} color="#ffffff" className="mr-2" size={36} />
                 BOOK NOW!
               </motion.a>
               <motion.a

@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Check } from "lucide-react";
 import Image from "next/image";
 import prices from "../../utils/Prices";
+import salePrices from "../../utils/SalePrices";
 
 const listItemVariant = {
   initial: {
@@ -32,6 +33,11 @@ export default function HomePageCard({ title, imageUrl, description, steps, hour
 
   return (
     <div className="flex flex-col flex-1 relative w-[90%] min-w-[200px] lg:min-w-[400px] max-w-[95%] lg:max-w-full gap-2 rounded-2xl pb-8 bg-zinc-800 overflow-hidden shadow-lg">
+      {/* Diagonal sale banner */}
+      <div className="absolute top-10 right-[-36px] z-20 rotate-45 bg-gradient-to-r from-rose-600 to-red-500 text-white px-6 py-1 shadow-lg uppercase font-bold text-lg tracking-tight pointer-events-none max-w-[200px] text-center overflow-hidden whitespace-nowrap leading-none">
+        Winter Sale
+      </div>
+
       <div className="relative m-[2%] bg-center bg-no-repeat bg-cover h-[200px] w-[96%] lg:h-[250px] rounded-2xl flex justify-center">
         <Image src={imageUrl} alt={title} className="rounded-2xl object-cover" priority fill sizes="(max-width: 1550px) 80vw, (min-width: 1551px) 33vw" />
       </div>
@@ -75,7 +81,10 @@ export default function HomePageCard({ title, imageUrl, description, steps, hour
             </div>
             <div className="flex flex-col items-center p-2 bg-zinc-900 w-full rounded-2xl font-bold">
               <p className="text-gray-400 text-[14px]">Starting at</p>
-              <p className="text-white m-0 text-2xl">${prices["2 Door"][serviceType][specificService]}</p>
+              <div className="flex flex-col lg:flex-row">
+                <p className="text-2xl font-bold line-through text-red-500 mr-2 m-0">${prices["2 Door"][serviceType][specificService]}</p>
+                <p className="text-green-500 m-0 text-2xl">${salePrices["2 Door"][serviceType][specificService]}</p>
+              </div>
             </div>
           </div>
 
