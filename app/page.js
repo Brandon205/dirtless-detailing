@@ -8,7 +8,7 @@ import { Titillium_Web } from "next/font/google";
 import { InfiniteMovingCards } from "./components/InfiniteMovingCards";
 import FaqItem from "./components/FaqItem";
 import { motion } from "framer-motion";
-import { ClipboardCheck, PhoneCall, TreePine } from "lucide-react";
+import { ClipboardCheck, PhoneCall, Snowflake } from "lucide-react";
 import IframeSuspense from "../utils/IframeSuspense";
 import HomePageCard from "./components/HomePageCard";
 import HomePageSchema from "./jsonSchemas/HomePageSchema";
@@ -86,7 +86,7 @@ export default function Home() {
             className="bg-accent font-bold text-3xl px-4 py-2 rounded-lg mb-4 flex items-center gap-2 text-white shadow-lg ring-1 ring-black/20 drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]"
             style={{ textShadow: "0 2px 6px rgba(0,0,0,0.6)" }}
           >
-            <TreePine style={{ filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5))" }} size={36} className="text-green-500" /> Winter Sale: 20% Off Our Main
+            <Snowflake style={{ filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5))" }} size={36} className="text-white" /> Winter Sale: 20% Off Our Main
             Services!
           </strong>
           <div className="text-center lg:text-left">

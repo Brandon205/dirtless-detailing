@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { BookingButton } from "../components/BookingButton";
-import { Clock, MapPin, Smartphone, Mail, Gift } from "lucide-react";
+import { Clock, MapPin, Smartphone, Mail, Gift, Snowflake } from "lucide-react";
 import IframeSuspense from "../../utils/IframeSuspense";
 import BaseSchema from "../jsonSchemas/BaseSchema";
 
@@ -52,12 +52,18 @@ export default function Contact() {
         <div className="contact-info-cards">
           <div className="flex items-center gap-4 bg-zinc-800 p-4">
             <div className="flex-shrink-0 w-[28px] h-[28px]">
+              <Snowflake size={28} className="text-[#3c8d0d]" />
+            </div>
+            <p className="bold text-xl">Winter Sale live now! Get 20% off our main services online and in person!</p>
+          </div>
+          <div className="flex items-center gap-4 bg-zinc-800 p-4">
+            <div className="flex-shrink-0 w-[28px] h-[28px]">
               <Smartphone size={28} />
             </div>
             <a className="contact-link location-link underline" href="tel:2532529758" target="_blank" rel="noopener noreferrer">
               (253) 252-9758
             </a>
-            <p> Text or Call</p>
+            <p>Text or Call</p>
           </div>
           <div className="flex items-center gap-4 bg-zinc-800 p-4">
             <div className="flex-shrink-0 w-[28px] h-[28px]">
