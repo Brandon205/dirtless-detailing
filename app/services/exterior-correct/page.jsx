@@ -176,9 +176,9 @@ export default function ExteriorCorrect() {
                     <span className="text-accent font-bold text-2xl">Expert Paint Correction Services</span>
                   </h3>
                   <p className="leading-relaxed">
-                    This is our top-tier exterior service because paint correction requires real skill, not just expensive equipment. We've spent countless
-                    hours learning advanced techniques and understanding how different paints respond to different products and pads. Our results speak for
-                    themselves - we consistently deliver the kind of paint correction that other shops can struggle to achieve.
+                    This is our top-tier exterior service. We've spent countless hours learning advanced techniques and understanding how different paints
+                    respond to different products and pads. Our results speak for themselves - we consistently deliver the kind of paint correction that other
+                    shops can struggle to achieve.
                   </p>
                 </div>
 
