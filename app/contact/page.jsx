@@ -50,11 +50,13 @@ export default function Contact() {
       </div>
       <div className="contact-information-container">
         <div className="contact-info-cards">
-          <div className="flex items-center gap-4 bg-zinc-800 p-4">
+          <div className="flex items-center gap-4 bg-white text-black p-4">
             <div className="flex-shrink-0 w-[28px] h-[28px]">
               <Snowflake size={28} className="text-[#3c8d0d]" />
             </div>
-            <p className="bold text-xl">Winter Sale live now! Get 20% off our main services online and in person!</p>
+            <p className="bold text-xl">
+              <span className="text-[#3c8d0d]">Winter Sale</span> is on now! Save 20% on our main services online and in person!
+            </p>
           </div>
           <div className="flex items-center gap-4 bg-zinc-800 p-4">
             <div className="flex-shrink-0 w-[28px] h-[28px]">
@@ -102,7 +104,7 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="urable-container">
+      <div className="urable-container pb-8">
         <div className="text-center">
           <strong style={{ fontSize: "2rem" }}>OR feel free to reach out via this form!</strong>
           <p style={{ fontSize: "1.3rem" }} className="services-p">

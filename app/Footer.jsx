@@ -89,7 +89,7 @@ export default function Footer() {
           </a>
           <a
             href="mailto:brenden@dirtlessdetailing.com?subject = Schedule a Detail with Dirt-Less Detailing"
-            className="underline text-gray-400 flex gap-2 hover:underline hover:text-gray-300"
+            className="underline text-gray-400 flex gap-2 hover:underline hover:text-gray-300 break-all"
             target="_blank"
             rel="noopener noreferrer"
           >

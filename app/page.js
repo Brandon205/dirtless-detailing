@@ -83,7 +83,7 @@ export default function Home() {
       >
         <header className="w-screen flex flex-col h-[90vh] pt-28 z-50 items-center lg:items-start lg:pl-20 xl:gap-3 text-sm xl:text-lg justify-center">
           <strong
-            className="bg-accent font-bold text-3xl px-4 py-2 rounded-lg mb-4 flex items-center gap-2 text-white shadow-lg ring-1 ring-black/20 drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]"
+            className="bg-accent font-bold text-xl lg:text-3xl px-4 py-2 rounded-lg mb-4 flex items-center gap-2 text-white shadow-lg ring-1 ring-black/20 drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]"
             style={{ textShadow: "0 2px 6px rgba(0,0,0,0.6)" }}
           >
             <Snowflake style={{ filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5))" }} size={36} className="text-white" /> Winter Sale: 20% Off Our Main
@@ -110,7 +110,7 @@ export default function Home() {
                 <p className="text-white text-lg w-1/2 lg:w-full mx-auto">Valid until 2/14/25 on any Online Booking!</p>
               </div>
             </div> */}
-            <div className="flex gap-10 pt-8 flex-col lg:flex-row max-w-screen-md">
+            <div className="flex gap-4 lg:gap-10 pt-8 flex-col lg:flex-row max-w-screen-md">
               <motion.a
                 href="/contact"
                 className="top-quote-btn shadow-lg"

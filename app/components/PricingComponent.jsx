@@ -79,7 +79,7 @@ export default function PricingComponent(props) {
   //         </p>
   //       </div>
 
-  let content;
+  let content = 100;
   if (salePrices["active"]) {
     // CURRENT SALE ACTIVE
     if (animate) {
@@ -103,7 +103,7 @@ export default function PricingComponent(props) {
     if (animate) {
       content = (
         <>
-          $
+          <span>$</span>
           <AnimatedNumbers
             includeComma
             animateToNumber={prices[sizesArr[currVal]][props.serviceType][props.shortTitle]}

@@ -26,7 +26,7 @@ const salePrices = {
   "4 Door": {
     interior: {
       interior: 300,
-      interiorspill: 400
+      interiorspill: 440
     },
     exterior: {
       exterior: 100,

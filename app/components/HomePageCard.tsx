@@ -41,7 +41,7 @@ export default function HomePageCard({ title, imageUrl, description, steps, hour
       <div className="relative m-[2%] bg-center bg-no-repeat bg-cover h-[200px] w-[96%] lg:h-[250px] rounded-2xl flex justify-center">
         <Image src={imageUrl} alt={title} className="rounded-2xl object-cover" priority fill sizes="(max-width: 1550px) 80vw, (min-width: 1551px) 33vw" />
       </div>
-      <div className="w-full flex justify-between flex-1 px-3 flex-col items-center">
+      <div className="w-full flex justify-between flex-1 px-1 lg:px-3 flex-col items-center">
         <div className="text-center">
           <motion.a
             href={linkUrl}
@@ -81,8 +81,8 @@ export default function HomePageCard({ title, imageUrl, description, steps, hour
             </div>
             <div className="flex flex-col items-center p-2 bg-zinc-900 w-full rounded-2xl font-bold">
               <p className="text-gray-400 text-[14px]">Starting at</p>
-              <div className="flex flex-col lg:flex-row">
-                <p className="text-2xl font-bold line-through text-red-500 mr-2 m-0">${prices["2 Door"][serviceType][specificService]}</p>
+              <div className="flex flex-col lg:flex-row items-center">
+                <p className="text-2xl font-bold line-through text-red-500 lg:mr-2 m-0">${prices["2 Door"][serviceType][specificService]}</p>
                 <p className="text-green-500 m-0 text-2xl">${salePrices["2 Door"][serviceType][specificService]}</p>
               </div>
             </div>
