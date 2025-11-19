@@ -56,12 +56,13 @@ export default function PricingComponent(props) {
     const localValue = localStorage.getItem("dirtlessdetailing-size");
     if (localValue) {
       if (localValue > 4) {
-        localStorage.setItem("dirtlessdetailing-size", "4");
+        localStorage.setItem("dirtlessdetailing-size", 4);
+        setCurrVal(4);
       } else {
         setCurrVal(localValue);
       }
     } else {
-      setCurrVal("2");
+      setCurrVal(2);
     }
   }, []);
 
