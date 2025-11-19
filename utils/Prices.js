@@ -1,16 +1,5 @@
 const prices = {
-  "2 Door": {
-    interior: {
-      interior: 335,
-      interiorspill: 500
-    },
-    exterior: {
-      exterior: 125,
-      exteriorseal: 600,
-      exteriorcorrect: 1250
-    }
-  },
-  "Quarter Ton": {
+  "Any 2-Door Vehicle": {
     interior: {
       interior: 335,
       interiorspill: 500

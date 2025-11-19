@@ -82,8 +82,8 @@ export default function HomePageCard({ title, imageUrl, description, steps, hour
             <div className="flex flex-col items-center p-2 bg-zinc-900 w-full rounded-2xl font-bold">
               <p className="text-gray-400 text-[14px]">Starting at</p>
               <div className="flex flex-col lg:flex-row items-center">
-                <p className="text-2xl font-bold line-through text-red-500 lg:mr-2 m-0">${prices["2 Door"][serviceType][specificService]}</p>
-                <p className="text-green-500 m-0 text-2xl">${salePrices["2 Door"][serviceType][specificService]}</p>
+                <p className="text-2xl font-bold line-through text-red-500 lg:mr-2 m-0">${prices["Any 2-Door Vehicle"][serviceType][specificService]}</p>
+                <p className="text-green-500 m-0 text-2xl">${salePrices["Any 2-Door Vehicle"][serviceType][specificService]}</p>
               </div>
             </div>
           </div>

@@ -13,7 +13,6 @@ const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
 
 const imagesArr = [
   "/assets/images/sealshine/seal-shine.jpg",
-  "/assets/images/exterior/worktruckgarage.jpeg",
   "/assets/images/exterior/subaruWashed.jpeg",
   "/assets/images/exterior/jeepRenegade.jpg",
   "/assets/images/exterior/archCoTruck.jpg",
@@ -22,12 +21,11 @@ const imagesArr = [
 
 const sizesArr = {
   // prices[sizesArr[currVal]][serviceType][shortTitle]
-  0: "2 Door",
-  1: "Quarter Ton",
-  2: "4 Door",
-  3: "Mid Size",
-  4: "Trucks",
-  5: "3 Row"
+  0: "Any 2-Door Vehicle",
+  1: "4 Door",
+  2: "Mid Size",
+  3: "Trucks",
+  4: "3 Row"
 };
 
 export default function PricingComponent(props) {
@@ -68,16 +66,6 @@ export default function PricingComponent(props) {
 
     setCurrVal(e);
   }
-
-  // <div className="">
-  //           HERE
-  //         <strong className="pricing__pricecard-pricebox">
-  //           <span className="pricing__pricecard-price">{content}</span> << HERE
-  //         </strong>
-  //         <p className="flex">
-  //           +Desired Add-ons <CornerRightDown color="#ffffff" size={20} />
-  //         </p>
-  //       </div>
 
   let content = 100;
   if (salePrices["active"]) {
@@ -136,21 +124,18 @@ export default function PricingComponent(props) {
           <SelectGroup className="text-2xl text-white">
             <SelectLabel className="text-2xl">Sizes</SelectLabel>
             <SelectItem className="text-2xl" value="0">
-              2-Door Cars
+              Any 2-Door Vehicle
             </SelectItem>
             <SelectItem className="text-2xl" value="1">
-              Quarter Ton Trucks
-            </SelectItem>
-            <SelectItem className="text-2xl" value="2">
               4-Door Sedans
             </SelectItem>
-            <SelectItem className="text-2xl" value="3">
+            <SelectItem className="text-2xl" value="2">
               Mid-Size SUV's
             </SelectItem>
-            <SelectItem className="text-2xl" value="4">
+            <SelectItem className="text-2xl" value="3">
               4-Door Trucks
             </SelectItem>
-            <SelectItem className="text-2xl" value="5">
+            <SelectItem className="text-2xl" value="4">
               3-Row SUV's & Minivans
             </SelectItem>
           </SelectGroup>

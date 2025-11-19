@@ -1,18 +1,7 @@
 const salePrices = {
   "active": true,
   "saleName": "Winter Sale",
-  "2 Door": {
-    interior: {
-      interior: 268,
-      interiorspill: 400
-    },
-    exterior: {
-      exterior: 100,
-      exteriorseal: 480,
-      exteriorcorrect: 1000
-    }
-  },
-  "Quarter Ton": {
+  "Any 2-Door Vehicle": {
     interior: {
       interior: 268,
       interiorspill: 400
