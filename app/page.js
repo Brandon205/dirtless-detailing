@@ -8,7 +8,7 @@ import { Titillium_Web } from "next/font/google";
 import { InfiniteMovingCards } from "./components/InfiniteMovingCards";
 import FaqItem from "./components/FaqItem";
 import { motion } from "framer-motion";
-import { ClipboardCheck, PhoneCall, Snowflake } from "lucide-react";
+import { ClipboardCheck, PhoneCall, Snowflake, Laptop } from "lucide-react";
 import IframeSuspense from "../utils/IframeSuspense";
 import HomePageCard from "./components/HomePageCard";
 import HomePageSchema from "./jsonSchemas/HomePageSchema";
@@ -81,16 +81,16 @@ export default function Home() {
           "/assets/images/showcase/archCoTruck.webp"
         ]}
       >
-        <header className="w-screen flex flex-col h-[90vh] pt-28 z-50 items-center lg:items-start lg:pl-20 xl:gap-3 text-sm xl:text-lg justify-center">
+        <header className="w-screen flex flex-col h-[90vh] pt-20 z-50 items-center lg:items-start lg:pl-20 xl:gap-3 text-sm xl:text-lg justify-center">
           <strong
-            className="bg-accent font-bold text-xl lg:text-3xl px-4 py-2 rounded-lg mb-4 flex items-center gap-2 text-white shadow-lg ring-1 ring-black/20 drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]"
+            className="bg-accent font-bold text-xl lg:text-3xl max-w-[95vw] px-4 py-2 rounded-lg mb-4 flex items-center gap-2 text-white shadow-lg ring-1 ring-black/20 drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]"
             style={{ textShadow: "0 2px 6px rgba(0,0,0,0.6)" }}
           >
             <Snowflake style={{ filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5))" }} size={36} className="text-white" /> Winter Sale: 20% Off Our Main
             Services!
           </strong>
           <div className="text-center lg:text-left">
-            <strong className="text-gray-400 text-md lg:text-xl">Dirt-Less Detailing</strong>
+            <strong className="text-gray-400 text-lg lg:text-xl">Dirt-Less Detailing</strong>
             <h1 className={`${titillium.className} text-white text-5xl xl:text-7xl xl:text-left font-bold m-0 lg:max-w-[60%]`}>
               Your Ceramic Coating & Auto Detailing Specialists
             </h1>
@@ -110,10 +110,10 @@ export default function Home() {
                 <p className="text-white text-lg w-1/2 lg:w-full mx-auto">Valid until 2/14/25 on any Online Booking!</p>
               </div>
             </div> */}
-            <div className="flex gap-4 lg:gap-10 pt-8 flex-col lg:flex-row max-w-screen-md">
+            <div className="flex gap-4 lg:gap-10 pt-8 flex-col lg:flex-row max-w-screen-md w-full">
               <motion.a
                 href="/contact"
-                className="top-quote-btn shadow-lg"
+                className="top-quote-btn shadow-lg w-full lg:w-auto"
                 variants={topBtnVariant}
                 whileHover="hover"
                 transition={{ duration: 0.25 }}
@@ -124,7 +124,7 @@ export default function Home() {
               </motion.a>
               <motion.a
                 href="tel:2532529758"
-                className="top-quote-btn btn-secondary"
+                className="top-quote-btn btn-secondary w-full lg:w-auto"
                 variants={topBtnVariant}
                 whileHover="hover"
                 transition={{ duration: 0.25 }}
@@ -132,8 +132,24 @@ export default function Home() {
                 <PhoneCall color="#ffffff" className="mr-2" size={36} />
                 (253) 252-9758
               </motion.a>
+              <motion.a
+                href="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="top-quote-btn btn-secondary w-full lg:w-auto"
+                variants={topBtnVariant}
+                whileHover="hover"
+                transition={{ duration: 0.25 }}
+              >
+                <Laptop color="#ffffff" className="mr-2" size={36} />
+                Book Online
+              </motion.a>
             </div>
-            <span className="text-white bold leading-none">Gift Cards Available Now!</span>
+            <span className="text-white bold leading-none">
+              <span className="text-primary">Gift Cards</span> Available Now!
+            </span>
+            <br />
+            <span className="text-sm text-gray-300 bold leading-none">Hit Book Online &gt; Gift Cards!</span>
           </div>
         </header>
       </HeroSlider>

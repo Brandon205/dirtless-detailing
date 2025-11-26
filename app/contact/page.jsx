@@ -24,9 +24,15 @@ export default function Contact() {
         }}
       />
 
-      <h1 className="text-4xl font-bold pt-32 lg:pt-64 text-center">24/7 ONLINE PRICING & BOOKING</h1>
+      <h1 className="text-4xl font-bold pt-32 lg:pt-64 text-center">
+        <span className="text-primary">24/7</span> ONLINE PRICING & BOOKING
+      </h1>
       <p className="text-center mb-10">
-        <span className="text-[#3c8d0d] bold">Gift cards now available online!</span>
+        <span className="text-white bold leading-none">
+          <span className="text-primary">Online Gift Cards</span> Available Now!
+        </span>
+        <br />
+        <span className="text-sm text-gray-300 bold leading-none">Hit Book Online &gt; Gift Cards!</span>
       </p>
       {/* <div className="flex gap-2 lg:gap-8 items-center justify-center py-4 flex-col lg:flex-row max-w-[90%] mx-auto lg:mx-0">
         <Image src="/assets/icons/valentinesGift.svg" alt="valentines gift box" width={48} height={48} />
@@ -55,7 +61,8 @@ export default function Contact() {
               <Snowflake size={28} className="text-[#3c8d0d]" />
             </div>
             <p className="bold text-xl">
-              <span className="text-[#3c8d0d]">Winter Sale</span> is on now! Save 20% on our main services online and in person!
+              <span className="text-[#3c8d0d]">Winter Sale</span> is on now! Get <span className="text-[#3c8d0d]">20%</span> off our main services and{" "}
+              <span className="text-[#3c8d0d]">10%</span> off all Gift Cards!
             </p>
           </div>
           <div className="flex items-center gap-4 bg-zinc-800 p-4">
@@ -106,7 +113,7 @@ export default function Contact() {
 
       <div className="urable-container pb-8">
         <div className="text-center">
-          <strong style={{ fontSize: "2rem" }}>OR feel free to reach out via this form!</strong>
+          <strong style={{ fontSize: "2rem" }}>Feel free to reach out via this form!</strong>
           <p style={{ fontSize: "1.3rem" }} className="services-p">
             In-Shop Services • Pricing Quotes • General Questions
           </p>
