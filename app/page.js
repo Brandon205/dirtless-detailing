@@ -110,7 +110,7 @@ export default function Home() {
                 <p className="text-white text-lg w-1/2 lg:w-full mx-auto">Valid until 2/14/25 on any Online Booking!</p>
               </div>
             </div> */}
-            <div className="flex gap-4 lg:gap-10 pt-8 flex-col lg:flex-row max-w-screen-md w-full">
+            <div className="flex gap-4 lg:gap-10 pt-6 flex-col lg:flex-row max-w-screen-lg w-full">
               <motion.a
                 href="/contact"
                 className="top-quote-btn shadow-lg w-full lg:w-auto"
