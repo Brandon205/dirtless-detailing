@@ -101,7 +101,7 @@ export default function About() {
       <div className="servicepage-header">
         <div style={{ alignItems: "center" }}>
           <h1>
-            <span className="text-amber-500 bold text-shadow">About Us & FAQ</span>
+            <span className="text-accent bold text-shadow">About Us & FAQ</span>
           </h1>
           <h2 className="page-subheading" style={{ textAlign: "center" }}>
             Learn a little more about Dirt-Less Detailing!

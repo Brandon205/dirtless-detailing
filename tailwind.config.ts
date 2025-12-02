@@ -8,7 +8,8 @@ module.exports = {
     extend: {
       colors: {
         primary: "#f59e0b", // OLD: #fea41c
-        accent: "#f59e0b"
+        accent: "#f59e0b",
+        accentDarker: "#d97706"
       },
       animation: {
         scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite"

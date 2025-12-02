@@ -115,7 +115,7 @@ export default function FullIntGallery() {
       <div className="servicepage-header">
         <div style={{ alignItems: "center" }}>
           <h1 className="text-center lg:text-left">
-            <span className="text-amber-500 bold text-shadow">Full Interior Cleaning Gallery</span>
+            <span className="text-accent bold text-shadow">Full Interior Cleaning Gallery</span>
           </h1>
           <strong className="page-subheading" style={{ textAlign: "center" }}>
             We have cleaned it all, even the worst of interiors. Check out the Gallery below. Take a look at our{" "}

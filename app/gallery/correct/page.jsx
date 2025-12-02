@@ -80,7 +80,7 @@ export default function CoatingGallery() {
       <div className="servicepage-header">
         <div style={{ alignItems: "center" }}>
           <h1 className="text-center lg:text-left">
-            <span className="text-amber-500 bold text-shadow">Exterior Correct & Protect Gallery</span>
+            <span className="text-accent bold text-shadow">Exterior Correct & Protect Gallery</span>
           </h1>
           <strong className="page-subheading" style={{ textAlign: "center" }}>
             Check out the gallery below to see the results and capabilities of a freshly applied Ceramic Coating. Take a look at our{" "}

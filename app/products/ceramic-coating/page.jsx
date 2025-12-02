@@ -13,7 +13,7 @@ export default function products() {
       <div className="servicepage-header">
         <div style={{ alignItems: "center" }}>
           <h1>
-            <span className="text-amber-500 bold text-shadow">Ceramic Coating Maintenance</span>
+            <span className="text-accent bold text-shadow">Ceramic Coating Maintenance</span>
           </h1>
           <h2 className="page-subheading" style={{ textAlign: "center" }}>
             Check out our how-to on keeping your car clean yourself without damaging your new ceramic coating with these simple products and methods!

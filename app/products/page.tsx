@@ -74,7 +74,7 @@ function ProductsPage() {
                 key={id}
                 onClick={() => setSelectedCategory(category)}
                 className={`px-4 py-2 rounded-md transition ${
-                  selectedCategory === category ? "bg-amber-500 text-black font-medium" : "bg-zinc-800 hover:bg-zinc-700"
+                  selectedCategory === category ? "bg-accent text-black font-medium" : "bg-zinc-800 hover:bg-zinc-700"
                 }`}
               >
                 {category}
@@ -108,7 +108,7 @@ function ProductsPage() {
                     key={option.value}
                     onClick={() => setSortOption(option.value)}
                     className={`block w-full text-left px-3 py-2 rounded-md transition ${
-                      sortOption === option.value ? "bg-amber-500 text-black font-medium" : "hover:bg-zinc-700"
+                      sortOption === option.value ? "bg-accent text-black font-medium" : "hover:bg-zinc-700"
                     }`}
                   >
                     {option.label}
@@ -249,16 +249,16 @@ function ProductsPage() {
               {/* Pro Tips */}
               <div className="bg-slate-900 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold text-white mb-4 flex items-center">
-                  <span className="bg-amber-500 text-black px-2 py-1 rounded text-sm font-medium mr-3">PRO TIPS</span>
+                  <span className="bg-accent text-black px-2 py-1 rounded text-sm font-medium mr-3">PRO TIPS</span>
                   Additional Maintenance Tips
                 </h3>
                 <ul className="space-y-3 text-gray-300">
                   <li className="flex items-start">
-                    <span className="text-amber-500 mr-2">•</span>
+                    <span className="text-accent mr-2">•</span>
                     Always work in shade when possible to prevent products from drying too quickly
                   </li>
                   <li className="flex items-start">
-                    <span className="text-amber-500 mr-2">•</span>
+                    <span className="text-accent mr-2">•</span>
                     If you need to work in the sun:
                   </li>
                   <li className="ml-8 list-disc">
@@ -267,7 +267,7 @@ function ProductsPage() {
                   </li>
                   <li className="ml-8 list-disc">Go panel by panel - you won't have to worry about areas drying at all!</li>
                   <li className="flex items-start">
-                    <span className="text-amber-500 mr-2">•</span>
+                    <span className="text-accent mr-2">•</span>
                     Regular maintenance washing every 2-4 weeks will keep your ceramic coating performing at its best
                   </li>
                 </ul>

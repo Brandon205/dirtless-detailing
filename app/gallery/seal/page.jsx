@@ -63,7 +63,7 @@ export default function PaintCorrectionGallery() {
       <div className="servicepage-header">
         <div className="items-center">
           <h1 className="text-center lg:text-left">
-            <span className="text-amber-500 bold text-shadow">Exterior Seal & Shine Gallery</span>
+            <span className="text-accent bold text-shadow">Exterior Seal & Shine Gallery</span>
           </h1>
           <strong className="page-subheading" style={{ textAlign: "center" }}>
             Check out the gallery below to see just what we are able to do with a simple polish and ceramic spray. Take a look at our{" "}

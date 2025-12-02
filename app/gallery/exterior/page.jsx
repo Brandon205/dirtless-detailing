@@ -136,7 +136,7 @@ export default function PaintCorrectionGallery() {
       <div className="servicepage-header">
         <div style={{ alignItems: "center" }}>
           <h1 className="text-center lg:text-left">
-            <span className="text-amber-500 bold text-shadow">Exterior Decon Wash Gallery</span>
+            <span className="text-accent bold text-shadow">Exterior Decon Wash Gallery</span>
           </h1>
           <strong className="page-subheading" style={{ textAlign: "center" }}>
             This is a showcase of our Exterior Wash service. Take a look at our{" "}

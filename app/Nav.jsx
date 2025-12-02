@@ -271,7 +271,7 @@ export default function Nav() {
             </div>
             <Link
               href="/contact"
-              className="hidden lg:inline-flex absolute right-0 mr-4 lg:mr-8 items-center justify-center px-6 py-2.5 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-amber-700 hover:bg-amber-600 transition-colors"
+              className="hidden lg:inline-flex absolute right-0 mr-4 lg:mr-8 items-center justify-center px-6 py-2.5 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-accent hover:bg-accentDarker transition-colors"
             >
               CONTACT US
             </Link>
@@ -421,7 +421,7 @@ export default function Nav() {
 
               <Link
                 href="/contact"
-                className="block w-full text-center px-6 py-4 mt-6 text-xl font-medium text-white bg-amber-700 hover:bg-amber-600 rounded-md transition-colors"
+                className="block w-full text-center px-6 py-4 mt-6 text-xl font-medium text-white bg-accent hover:bg-accentDarker rounded-md transition-colors"
                 onClick={closeMenu}
               >
                 CONTACT US
