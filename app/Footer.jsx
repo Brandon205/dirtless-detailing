@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="footer-content-card-left">
         <div>
           <a href="/">
-            <Image src="/assets/images/showcase/newLogoLeft2.png" alt="Dirt-Less Detailing" width={200} height={200} />
+            <Image src="/assets/images/showcase/splatTextLeft.png" alt="Dirt-Less Detailing" width={200} height={200} />
           </a>
         </div>
         <div>
