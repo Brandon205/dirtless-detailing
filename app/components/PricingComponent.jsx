@@ -122,7 +122,7 @@ export default function PricingComponent(props) {
         />
       </div>
       <Select value={currVal} onValueChange={(e) => updateValue(e)} defaultValue="2">
-        <SelectTrigger className="text-2xl w-[250px]">
+        <SelectTrigger className="text-2xl w-[275px]">
           <SelectValue placeholder="Select a vehicle size." />
         </SelectTrigger>
         <SelectContent>

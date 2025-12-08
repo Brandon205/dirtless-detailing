@@ -8,7 +8,7 @@ export default function products() {
   return (
     <div className="bg-contact">
       <div className="cover">
-        <Image src="/assets/images/correction/teslafoam.jpg" alt="Dirt-Less Detailing" quality={50} fill priority className="object-cover" />
+        <Image src="/assets/images/correction/teslafoam.jpg" alt="Dirt-Less Detailing" quality={70} fill priority className="object-cover" />
       </div>
       <div className="servicepage-header">
         <div style={{ alignItems: "center" }}>

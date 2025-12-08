@@ -96,7 +96,7 @@ export default function About() {
       />
       {/* <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} /> */}
       <div className="cover">
-        <Image src="/assets/images/correction/teslafoam.jpg" alt="Dirt-Less Detailing" priority fill quality={50} className="object-cover" />
+        <Image src="/assets/images/correction/teslafoam.jpg" alt="Dirt-Less Detailing" priority fill quality={70} className="object-cover" />
       </div>
       <div className="servicepage-header">
         <div style={{ alignItems: "center" }}>

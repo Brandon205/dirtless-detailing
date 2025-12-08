@@ -8,7 +8,7 @@ export default function HeaderComponent({ imageUrl, title, description, secondar
   return (
     <>
       <div className="cover">
-        <Image src={imageUrl} alt="Dirt-Less Detailing" quality={50} priority fill className="object-cover" />
+        <Image src={imageUrl} alt="Dirt-Less Detailing" quality={70} priority fill className="object-cover" />
       </div>
       <div className="servicepage-header">
         <div>

@@ -58,7 +58,7 @@ export default function PaintCorrectionGallery() {
   return (
     <div className="pb-8">
       <div className="cover">
-        <Image src="/assets/images/sealshine/36 plymouth.jpg" alt="Polished 1936 Plymouth" quality={50} priority fill className="object-cover" />
+        <Image src="/assets/images/sealshine/36 plymouth.jpg" alt="Polished 1936 Plymouth" quality={70} priority fill className="object-cover" />
       </div>
       <div className="servicepage-header">
         <div className="items-center">

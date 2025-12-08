@@ -52,7 +52,7 @@ function ProductsPage() {
       {/* Hero section */}
       <div className="relative h-96 bg-zinc-800 overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center">
-          <Image src="/assets/images/showcase/worktruckSunrise.jpg" alt="Auto detailing products" layout="fill" objectFit="cover" className="opacity-40" />
+          <Image src="/assets/images/showcase/worktruckSunrise.jpg" alt="Auto detailing products" fill style={{ objectFit: "cover" }} className="opacity-40" />
         </div>
         <div className="relative flex flex-col items-center justify-center h-full px-4 text-center">
           <h1 className="text-4xl font-bold mb-2">Professional Detailing Products</h1>

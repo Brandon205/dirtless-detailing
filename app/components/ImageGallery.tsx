@@ -27,7 +27,7 @@ const ImageGallery = ({ images }) => {
                 alt={image.alt || `Gallery ${index + 1}`}
                 fill
                 priority={index < 4}
-                quality={50}
+                quality={70}
                 className="object-cover hover:scale-105 transition-transform duration-300"
                 sizes="(max-width: 640px) 100vw, 
                        (max-width: 768px) 50vw,
