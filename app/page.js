@@ -91,7 +91,7 @@ export default function Home() {
           </strong>
           <div className="text-center lg:text-left">
             <strong className="text-gray-400 text-lg lg:text-xl">Dirt-Less Detailing</strong>
-            <h1 className={`${titillium.className} text-white text-5xl xl:text-7xl xl:text-left font-bold m-0 lg:max-w-[60%]`}>
+            <h1 className={`${titillium.className} text-white text-4xl xl:text-7xl xl:text-left font-bold m-0 lg:max-w-[60%] px-2`}>
               Your Ceramic Coating & Auto Detailing Specialists
             </h1>
           </div>
@@ -110,7 +110,7 @@ export default function Home() {
                 <p className="text-white text-lg w-1/2 lg:w-full mx-auto">Valid until 2/14/25 on any Online Booking!</p>
               </div>
             </div> */}
-            <div className="flex gap-4 lg:gap-10 pt-6 flex-col lg:flex-row max-w-screen-lg w-full">
+            <div className="flex gap-2 lg:gap-10 pt-6 flex-col lg:flex-row max-w-screen-lg w-full">
               <motion.a
                 href="/contact"
                 className="top-quote-btn shadow-lg w-full lg:w-auto"
@@ -119,8 +119,13 @@ export default function Home() {
                 transition={{ duration: 0.25 }}
                 style={{ textShadow: "0 2px 6px rgba(0,0,0,0.6)" }}
               >
-                <ClipboardCheck style={{ filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5))" }} color="#ffffff" className="mr-2" size={36} />
-                BOOK NOW!
+                <ClipboardCheck
+                  style={{ filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5))" }}
+                  color="#ffffff"
+                  className="mr-2"
+                  size={smallScreen ? 24 : 36}
+                />
+                Contact Us
               </motion.a>
               <motion.a
                 href="tel:2532529758"
@@ -129,7 +134,7 @@ export default function Home() {
                 whileHover="hover"
                 transition={{ duration: 0.25 }}
               >
-                <PhoneCall color="#ffffff" className="mr-2" size={36} />
+                <PhoneCall color="#ffffff" className="mr-2" size={smallScreen ? 24 : 36} />
                 (253) 252-9758
               </motion.a>
               <motion.a
@@ -141,7 +146,7 @@ export default function Home() {
                 whileHover="hover"
                 transition={{ duration: 0.25 }}
               >
-                <Laptop color="#ffffff" className="mr-2" size={36} />
+                <Laptop color="#ffffff" className="mr-2" size={smallScreen ? 24 : 36} />
                 Book Online
               </motion.a>
             </div>
