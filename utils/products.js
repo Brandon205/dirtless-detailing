@@ -1,4 +1,4 @@
-// Categories Exterior, Ceramic, Interior, Wheels, Accessories, Equipment, Video
+// Categories Exterior, Ceramic, Interior, Wheels, Accessories, Equipment, Showcase
 // Ceramic category will be the ceramic maintenance products specifically for coated vehicles
 
 const products = [
@@ -27,7 +27,7 @@ const products = [
   {
     name: "Griots 3-in-1 Wheel, Tire and Mat Cleaner",
     price: 11.99,
-    category: ["Wheels", "Interior"],
+    category: ["Wheels", "Interior", "Showcase"],
     rating: 4.8,
     description: "Professional-grade cleaner that removes road grime from wheels and tires.",
     featured: false,

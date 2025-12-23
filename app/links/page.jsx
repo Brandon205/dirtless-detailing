@@ -78,7 +78,7 @@ export default function LinksPage() {
             variant="secondary"
           />
 
-          <LinkButton href="/products?category=Equipment" Icon={Tv} title="Products Showcased on YouTube" subtext="As seen in our videos" variant="secondary" />
+          <LinkButton href="/products?category=Showcase" Icon={Tv} title="Products Showcased on YouTube" subtext="As seen in our videos" variant="secondary" />
 
           <LinkButton
             href="/products?category=Equipment"

@@ -57,6 +57,9 @@ export default function Footer() {
           <Link href="/about" className="no-underline text-gray-400 hover:underline hover:text-gray-200">
             About Us
           </Link>
+          <Link href="/products" className="no-underline text-gray-400 hover:underline hover:text-gray-200">
+            Product Recommendations
+          </Link>
           <Link href="/links" className="no-underline text-gray-400 hover:underline hover:text-gray-200">
             Our Links
           </Link>

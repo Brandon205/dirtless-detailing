@@ -7,7 +7,7 @@ import { Suspense } from "react";
 import products from "../../utils/products.js";
 
 // Categories - can easily be updated when needed
-const categories = ["All", "Ceramic Maintenance", "Equipment", "Exterior", "Interior", "Wheels", "Glass", "Shown in Videos"];
+const categories = ["All", "Ceramic Maintenance", "Equipment", "Exterior", "Interior", "Wheels", "Glass", "Showcase"];
 
 export default function ProductsPageWrapper() {
   return (
@@ -177,7 +177,8 @@ function ProductsPage() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-white mb-6 text-center">Ceramic Coating Maintenance Guide</h2>
             <p className="text-lg text-gray-300 mb-8 text-center">
-              Follow these steps to properly maintain your ceramic coating and keep your vehicle looking pristine without causing damage or scratches.
+              Follow these steps to properly wash your vehicle after getting a ceramic coating. Or use this as a guide for our simple wash procedure that we
+              recommend to everyone.
             </p>
 
             <div className="space-y-8">
@@ -185,8 +186,8 @@ function ProductsPage() {
               <div className="border-l-4 border-amber-500 pl-6">
                 <h3 className="text-xl font-semibold text-white mb-3">Step 1: Pre-Wash Preparation</h3>
                 <p className="text-gray-300 mb-4">
-                  Before touching your vehicle, remove any heavy contamination like bugs, tar, or sap. This prevents dragging these contaminants across your
-                  ceramic coating during the wash process, which could cause scratches or marring.
+                  Before touching your vehicle, remove any heavy contamination like bugs, tar, or sap. Typically a pressure washer is very helpful here but a
+                  hose can suffice if needed. This prevents dragging these contaminants across your paint.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <a href="#" className="bg-slate-700 hover:bg-slate-600 text-white px-3 py-1 rounded-full text-sm transition-colors">
@@ -202,8 +203,8 @@ function ProductsPage() {
               <div className="border-l-4 border-amber-500 pl-6">
                 <h3 className="text-xl font-semibold text-white mb-3">Step 2: Wheel and Tire Cleaning</h3>
                 <p className="text-gray-300 mb-4">
-                  Clean your wheels and tires first to avoid splashing dirty water onto your freshly washed paint. Use a dedicated wheel brush to safely clean
-                  intricate wheel designs without scratching the finish.
+                  Clean your wheels and tires first to avoid splashing dirty water onto your freshly washed paint. Use a dedicated wheel brush and a pressure
+                  washer/hose to safely clean intricate wheel designs without scratching the finish.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <a href="#" className="bg-slate-700 hover:bg-slate-600 text-white px-3 py-1 rounded-full text-sm transition-colors">
