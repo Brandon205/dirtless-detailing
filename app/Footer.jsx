@@ -57,6 +57,9 @@ export default function Footer() {
           <Link href="/about" className="no-underline text-gray-400 hover:underline hover:text-gray-200">
             About Us
           </Link>
+          <Link href="/links" className="no-underline text-gray-400 hover:underline hover:text-gray-200">
+            Our Links
+          </Link>
         </div>
       </div>
       <div className="footer-content-card" style={{ paddingBottom: "2rem" }}>

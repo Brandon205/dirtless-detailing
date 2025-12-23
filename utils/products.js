@@ -1,11 +1,11 @@
-// Categories Exterior, Ceramic, Interior, Wheels, Accessories, Equipment
+// Categories Exterior, Ceramic, Interior, Wheels, Accessories, Equipment, Video
 // Ceramic category will be the ceramic maintenance products specifically for coated vehicles
 
 const products = [
   {
     name: "The Rag Company Gauntlet Drying Towel",
     price: 28.95,
-    category: ["Exterior", "Ceramic"],
+    category: ["Exterior", "Ceramic Maintenance"],
     rating: 4.7,
     description:
       "The Rag Company produces some of the best drying towels that we have found so far. If you prefer one large drying towel than several smaller ones, this is the larger option.",
@@ -70,7 +70,7 @@ const products = [
   {
     name: "Gyeon Eco Wash",
     price: 31.99,
-    category: ["Exterior", "Ceramic"],
+    category: ["Exterior", "Ceramic Maintenance"],
     rating: 5.0,
     description:
       "An amazing 3-in-1 product that can be used as a Rinseless, Waterless, and drying aid. Though it's only 1000ml, this should last a whole year for most people!",

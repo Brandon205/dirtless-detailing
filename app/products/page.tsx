@@ -7,7 +7,7 @@ import { Suspense } from "react";
 import products from "../../utils/products.js";
 
 // Categories - can easily be updated when needed
-const categories = ["All", "Ceramic", "Equipment", "Exterior", "Interior", "Wheels", "Glass"];
+const categories = ["All", "Ceramic Maintenance", "Equipment", "Exterior", "Interior", "Wheels", "Glass", "Shown in Videos"];
 
 export default function ProductsPageWrapper() {
   return (
@@ -172,7 +172,7 @@ function ProductsPage() {
         </div>
       </div>
       {/* Ceramic Maintenance Section - only shows when "Ceramic" category is selected */}
-      {selectedCategory === "Ceramic" && (
+      {selectedCategory === "Ceramic Maintenance" && (
         <div className="mt-16 bg-zinc-800 rounded-lg p-8 mb-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-white mb-6 text-center">Ceramic Coating Maintenance Guide</h2>

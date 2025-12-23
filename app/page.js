@@ -33,7 +33,7 @@ export default function Home() {
       description: (
         <div>
           We have a full Ceramic Coating Maintenance Guide available on our{" "}
-          <a href="/products?category=Ceramic" className="text-blue-500 hover:underline">
+          <a href="/products?category=Ceramic Maintenance" className="text-blue-500 hover:underline">
             Products page
           </a>
           , which includes everything you need to know about maintaining your ceramic coating, including recommended products and techniques!
@@ -268,7 +268,7 @@ export default function Home() {
           </a>
         </div>
         <br className="extra-space" />
-        <div className="service-bkg-lighter" style={{ paddingBottom: "5rem" }}>
+        <div className="service-bkg-lighter pb-20">
           <div className="general-container new-heading-container" style={{ margin: "5vh auto 2vh auto" }}>
             <strong className="above-heading text-4xl">Testimonials</strong>
             <h3 className="new-heading text-xl lg:text-2xl">Read some of the reviews from our valued customers!</h3>
