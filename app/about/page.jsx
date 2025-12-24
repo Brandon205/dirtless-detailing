@@ -101,7 +101,7 @@ export default function About() {
       <div className="servicepage-header">
         <div style={{ alignItems: "center" }}>
           <h1>
-            <span className="text-accent bold text-shadow">About Us & FAQ</span>
+            <span className="text-accent bold text-shadow font-heading">About Us & FAQ</span>
           </h1>
           <h2 className="page-subheading" style={{ textAlign: "center" }}>
             Learn a little more about Dirt-Less Detailing!
@@ -230,7 +230,7 @@ export default function About() {
             className="object-cover"
           />
         </div>
-        <h3 className="text-2xl m-0 text-left lg:text-center">Dirt-Less Detailing</h3>
+        <h3 className="text-4xl py-8 text-left font-heading font-bold lg:text-center">Dirt-Less Detailing</h3>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }} className="text-left">
           <p>
             Dirt-Less Detailing is a premier auto detailing company founded 3 years ago by Brenden (on the right in the picture), an experienced detailer with 9

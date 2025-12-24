@@ -49,7 +49,7 @@ const LinkButton = ({ href, Icon, iconSrc, title, subtext, variant = "primary" }
 
 export default function LinksPage() {
   return (
-    <main className={`min-h-screen w-full bg-gradient-to-b ${titillium.className} bg-zinc-900 text-white flex flex-col items-center py-12 px-4 pt-24`}>
+    <main className="min-h-screen w-full bg-gradient-to-b bg-zinc-900 text-white flex flex-col items-center py-12 px-4 pt-24">
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -67,6 +67,14 @@ export default function LinksPage() {
           <LinkButton href="/products" Icon={ShoppingCart} title="Shop Detailing Products" subtext="Our recommended supplies" variant="primary" />
 
           <LinkButton
+            href="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd"
+            iconSrc="/assets/icons/urable.png"
+            title="Book Online through Urable"
+            subtext="All services, Addons, and Gift Cards"
+            variant="secondary"
+          />
+
+          <LinkButton
             href="/products?category=Ceramic"
             Icon={ShieldCheck}
             title="Ceramic Maintenance Guide"
@@ -75,20 +83,12 @@ export default function LinksPage() {
           />
 
           <LinkButton href="/products?category=Showcase" Icon={Tv} title="Products Showcased on YouTube" subtext="As seen in our videos" variant="secondary" />
-
-          <LinkButton
-            href="/products?category=Equipment"
-            iconSrc="/assets/icons/urable.png"
-            title="Book Online"
-            subtext="All services, Addons, and Gift Cards"
-            variant="secondary"
-          />
         </div>
 
         {/* Divider */}
         <motion.div variants={itemVariants} className="flex items-center gap-4 my-4 opacity-50">
           <div className="h-[1px] bg-zinc-500 flex-grow"></div>
-          <span className="text-xs uppercase tracking-widest">Connect</span>
+          <span className="text-xs uppercase tracking-widest">SOCIALS</span>
           <div className="h-[1px] bg-zinc-500 flex-grow"></div>
         </motion.div>
 

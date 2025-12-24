@@ -24,7 +24,7 @@ export default function Contact() {
         }}
       />
 
-      <h1 className="text-4xl font-bold pt-32 lg:pt-64 text-center">
+      <h1 className="text-4xl font-bold pt-32 lg:pt-64 text-center font-heading">
         <span className="text-primary">24/7</span> ONLINE PRICING & BOOKING
       </h1>
       <p className="text-center mb-10">

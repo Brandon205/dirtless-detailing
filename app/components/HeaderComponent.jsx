@@ -12,7 +12,7 @@ export default function HeaderComponent({ imageUrl, title, description, secondar
       </div>
       <div className="servicepage-header">
         <div>
-          <h1 className="text-center lg:text-left text-accent bold text-shadow">{title}</h1>
+          <h1 className="text-center lg:text-left text-accent bold text-shadow font-heading">{title}</h1>
           <h2 className="page-subheading lg:max-w-[550px]">{description}</h2>
           <div className="header-buttons">
             <motion.a href="/contact" className="top-quote-btn" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>

@@ -56,10 +56,10 @@ function ProductsPage() {
           <Image src="/assets/images/showcase/worktruckSunrise.jpg" alt="Auto detailing products" fill style={{ objectFit: "cover" }} className="opacity-40" />
         </div>
         <div className="relative flex flex-col items-center justify-center h-full px-4 text-center">
-          <h1 className="text-4xl font-bold mb-2">Professional Detailing Products</h1>
+          <h1 className="text-4xl font-bold mb-2">[WIP] Professional Detailing Products</h1>
           <p className="text-lg text-gray-300 max-w-2xl">
-            See some of the products and equipment we use, and what we recommend for you to keep your car as clean as the day you picked it up from us! Some
-            links here are affiliate links, we may receive a small commission at no extra cost to you.
+            See some of the products and equipment we use, and what we recommend for you to keep your car as clean as the day you picked it up from us! This
+            list is a Work In Progress, check back for more products, tips, and guides!
           </p>
         </div>
       </div>
