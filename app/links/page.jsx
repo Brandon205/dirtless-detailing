@@ -1,12 +1,8 @@
 "use client";
 import Image from "next/image";
-import { Titillium_Web } from "next/font/google";
 import { motion } from "framer-motion";
 import { ShoppingCart, ShieldCheck, Tv, Globe } from "lucide-react";
 import Link from "next/link";
-
-// Initialize Font
-const titillium = Titillium_Web({ weight: ["400", "600", "700"], subsets: ["latin"] });
 
 // Animation Variants
 const containerVariants = {

@@ -20,6 +20,10 @@ module.exports = {
             transform: "translate(calc(-50% - 0.5rem))"
           }
         }
+      },
+      fontFamily: {
+        sans: ["var(--font-montserrat)"], // Overwrites default sans
+        heading: ["var(--font-titillium-web)"] // idk what this does
       }
     }
   },

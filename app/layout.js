@@ -1,4 +1,3 @@
-import { Montserrat } from "next/font/google";
 import "./App.scss";
 import { PHProvider } from "./providers";
 import Nav from "./Nav";
@@ -7,8 +6,10 @@ import CookieBanner from "./components/CookieBanner";
 import PostHogPageView from "./PostHogPageView";
 import { Suspense } from "react";
 import { GoogleTagManager } from "@next/third-parties/google";
+import { Titillium_Web, Montserrat } from "next/font/google";
 
-const montserrat = Montserrat({ subsets: ["latin"] });
+const titillium = Titillium_Web({ weight: ["400", "600", "700"], subsets: ["latin"], variable: "--font-titillium-web" });
+const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-montserrat" });
 
 export const metadata = {
   metadataBase: new URL("https://www.dirtlessdetailing.com"),
@@ -43,14 +44,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${titillium.variable} ${montserrat.variable}`}>
       <GoogleTagManager gtmId="GTM-5L5ZZN88" />
       <GoogleTagManager gtmId="AW-11020140573" />
       <PHProvider>
         <Suspense>
           <PostHogPageView />
         </Suspense>
-        <body className={montserrat.className}>
+        <body>
           <Nav />
           {children}
           <Footer />

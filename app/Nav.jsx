@@ -133,13 +133,13 @@ export default function Nav() {
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex lg:items-center lg:space-x-8">
-              <Link href="/" className="text-gray-100 hover:text-amber-300 px-3 py-2 font-medium transition-colors">
+              <Link href="/" className="text-gray-100 hover:text-amber-300 px-3 py-2 font-bold transition-colors">
                 Home
               </Link>
 
               <div className="relative" ref={servicesRef}>
                 <button
-                  className="group text-gray-100 hover:text-amber-300 px-3 py-2 font-medium inline-flex items-center transition-colors"
+                  className="group text-gray-100 hover:text-amber-300 px-3 py-2 font-bold inline-flex items-center transition-colors"
                   onClick={() => toggleDropdown("services")}
                 >
                   All Services
@@ -203,7 +203,7 @@ export default function Nav() {
 
               <div className="relative p-0" ref={galleriesRef}>
                 <button
-                  className="group text-gray-100 hover:text-amber-300 px-3 py-2 font-medium inline-flex items-center transition-colors"
+                  className="group text-gray-100 hover:text-amber-300 px-3 py-2 font-bold inline-flex items-center transition-colors"
                   onClick={() => toggleDropdown("gallery")}
                 >
                   Galleries
@@ -265,7 +265,7 @@ export default function Nav() {
                 )}
               </div>
 
-              <Link href="/about" className="text-gray-100 hover:text-amber-300 px-3 py-2 font-medium transition-colors">
+              <Link href="/about" className="text-gray-100 hover:text-amber-300 px-3 py-2 font-bold transition-colors">
                 About Us
               </Link>
             </div>

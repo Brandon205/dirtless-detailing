@@ -4,7 +4,6 @@ import Benefits from "./Benefits";
 import { HeroSlider } from "./components/hero-slider";
 import { BookingButton } from "./components/BookingButton";
 import { topBtnVariant } from "../utils/animationVariations";
-import { Titillium_Web } from "next/font/google";
 import { InfiniteMovingCards } from "./components/InfiniteMovingCards";
 import FaqItem from "./components/FaqItem";
 import { motion } from "framer-motion";
@@ -12,8 +11,6 @@ import { ClipboardCheck, PhoneCall, Snowflake, Laptop } from "lucide-react";
 import IframeSuspense from "../utils/IframeSuspense";
 import HomePageCard from "./components/HomePageCard";
 import HomePageSchema from "./jsonSchemas/HomePageSchema";
-
-const titillium = Titillium_Web({ weight: ["400", "600"], subsets: ["latin"] });
 
 export default function Home() {
   const [expanded, setExpanded] = useState(false);
@@ -43,7 +40,7 @@ export default function Home() {
     {
       title: "After dropping off I won't have a ride back to my house, what are my options?",
       description:
-        "No worries, it happens all the time! We have done everything from bringing people back home, picking their car up and dropping it off later, we've even had customers order an Uber straight from our shop."
+        "No worries, it happens all the time! We have done everything from bringing people back home, picking their car up and dropping it off later, we've even had customers order an Uber straight from our shop. All of these are included, as long as you are within 20 minutes of our shop. Let us know which one of these options work best for you!"
     },
     {
       title: "What areas do you service?",
@@ -91,7 +88,7 @@ export default function Home() {
           </strong>
           <div className="text-center lg:text-left">
             <strong className="text-gray-400 text-lg lg:text-xl">Dirt-Less Detailing</strong>
-            <h1 className={`${titillium.className} text-white text-4xl xl:text-7xl xl:text-left font-bold m-0 lg:max-w-[60%] px-2`}>
+            <h1 className="text-white font-heading text-4xl xl:text-7xl xl:text-left font-bold m-0 lg:max-w-[60%] px-2">
               Your Ceramic Coating & Auto Detailing Specialists
             </h1>
           </div>
@@ -267,6 +264,20 @@ export default function Home() {
             Learn More
           </a>
         </div>
+        {/* <div
+          className="general-container new-heading-container flex flex-col lg:flex-row lg:items-center lg:justify-between"
+          style={{ margin: "5vh auto 2vh auto" }}
+        >
+          <div>
+            <strong className="above-heading text-4xl">Product Recommendations</strong>
+            <h3 className="new-heading text-xl lg:text-2xl lg:max-w-[60%]">
+              See the products and methods that we recommend for your own maintenance, and many of the products that we use on every vehicle we detail.
+            </h3>
+          </div>
+          <a href="/products" className="popular-readmore-secondary text-nowrap" aria-label="Learn more about our product recommendations.">
+            Learn More
+          </a>
+        </div> */}
         <br className="extra-space" />
         <div className="service-bkg-lighter pb-20">
           <div className="general-container new-heading-container" style={{ margin: "5vh auto 2vh auto" }}>
