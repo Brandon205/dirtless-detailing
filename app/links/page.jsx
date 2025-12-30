@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ShoppingCart, ShieldCheck, Tv, Globe } from "lucide-react";
+import { YouTubeEmbed } from "@next/third-parties/google";
 import Link from "next/link";
 
 // Animation Variants
@@ -100,6 +101,14 @@ export default function LinksPage() {
           <LinkButton href="https://www.facebook.com/DirtLessDetailing/" iconSrc="/assets/icons/facebook.svg" title="Facebook" variant="secondary" />
 
           <LinkButton href="https://www.tiktok.com/@brendenflower" iconSrc="/assets/icons/tiktok.svg" title="TikTok" variant="secondary" />
+        </div>
+
+        <strong className="text-gray-400 text-center">Our Latest Video</strong>
+        <h2 className="mt-0 text-2xl font-bold text-center">From Filthy to Factory Clean: Extreme Chevy Truck Detail</h2>
+        <div className="mx-auto w-full max-w-4xl px-4">
+          <div className="aspect-video w-full overflow-hidden rounded-xl shadow-lg">
+            <YouTubeEmbed videoid="aeLztM3ng54" style="height: 100%; width: 100%;" />
+          </div>
         </div>
 
         <motion.div variants={itemVariants} className="mt-12 text-center text-zinc-500 text-sm">
