@@ -7,6 +7,7 @@ import PostHogPageView from "./PostHogPageView";
 import { Suspense } from "react";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { Titillium_Web, Montserrat } from "next/font/google";
+import { MetaPixel } from "./components/MetaPixel";
 
 const titillium = Titillium_Web({ weight: ["400", "600", "700"], subsets: ["latin"], variable: "--font-titillium-web" });
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-montserrat" });
@@ -50,6 +51,7 @@ export default function RootLayout({ children }) {
       <PHProvider>
         <Suspense>
           <PostHogPageView />
+          <MetaPixel />
         </Suspense>
         <body>
           <Nav />
