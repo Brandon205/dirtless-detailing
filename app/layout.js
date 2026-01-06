@@ -51,9 +51,11 @@ export default function RootLayout({ children }) {
       <PHProvider>
         <Suspense>
           <PostHogPageView />
-          <MetaPixel />
         </Suspense>
         <body>
+          <Suspense>
+            <MetaPixel />
+          </Suspense>
           <Nav />
           {children}
           <Footer />
