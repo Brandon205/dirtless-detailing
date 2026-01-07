@@ -6,7 +6,6 @@ import { usePathname, useSearchParams } from "next/navigation";
 import Script from "next/script";
 import { useEffect } from "react";
 
-// Add this declaration to satisfy TypeScript
 declare global {
   interface Window {
     fbq: (...args: any[]) => void;

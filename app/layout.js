@@ -29,7 +29,10 @@ export const metadata = {
     url: "https://www.dirtlessdetailing.com/"
   },
   verification: {
-    google: "sq8uUuD_CLtkO1bg33IWhAVFjproB_N6s2Qqll0IxUo"
+    google: "sq8uUuD_CLtkO1bg33IWhAVFjproB_N6s2Qqll0IxUo",
+    other: {
+      "facebook-domain-verification": "a7nk5udpxrok2j63oxhfj743bdopim"
+    }
   },
   keywords: [
     "Dirt-Less Detailing",
