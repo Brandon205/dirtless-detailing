@@ -6,6 +6,13 @@ import { usePathname, useSearchParams } from "next/navigation";
 import Script from "next/script";
 import { useEffect } from "react";
 
+// Add this declaration to satisfy TypeScript
+declare global {
+  interface Window {
+    fbq: (...args: any[]) => void;
+  }
+}
+
 const FB_PIXEL_ID = process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID;
 
 export const MetaPixel = () => {
