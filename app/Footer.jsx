@@ -12,7 +12,7 @@ export default function Footer() {
           </a>
         </div>
         <div>
-          <p>©2025 Dirt-Less Detailing.</p>
+          <p>2026 Dirt-Less Detailing.</p>
           <p>All rights reserved.</p>
           <a target="_blank" rel="noopener noreferrer" href="https://www.brandonblack.dev" className="text-gray-400 underline">
             Website made by Brandon.

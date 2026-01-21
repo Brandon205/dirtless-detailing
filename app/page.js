@@ -380,6 +380,23 @@ export default function Home() {
             classes="w-4/5 mx-auto lg:max-w-50% h-[600px]"
           />
         </fieldset>
+
+        <br className="extra-space" />
+        <div className="w-[90%] text-center mx-auto my-0 pt-[5vh] lg:pl-0" style={{ margin: "5vh auto 2vh auto" }}>
+          <strong className="text-[#c0c0c0] text-center text-4xl">Lastest Video</strong>
+          <h3 className="new-heading text-xl lg:text-2xl pb-8">Check out the latest video we've posted to our YouTube Channel!</h3>
+          <div className="w-full max-w-4xl mx-auto px-4 pt-8">
+            <iframe
+              className="w-full aspect-video rounded-2xl shadow-xl border-0" // For shorts use aspect-[9/16]
+              src="https://www.youtube-nocookie.com/embed/tCHIwrw5aJ4" // Make sure to use the nocookie url
+              title="Testing Primer Polishes: Dr. Beasley&#39;s CoreCut vs. Shine Supply Burnout Head-to-Head | Part 1"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              loading="lazy"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
       </div>
     </div>
   );
