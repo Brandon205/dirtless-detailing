@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { ChevronDown, ShoppingCart, Star, Filter } from "lucide-react";
+import { ChevronDown, ShoppingCart, Star, Filter, MonitorPlay } from "lucide-react";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
@@ -120,39 +120,57 @@ function ProductsPage() {
           <div className="flex-1">
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
               {sortedProducts.map((product, id) => (
-                <div key={id} className="bg-zinc-800 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-[1.02] hover:shadow-xl">
+                <div
+                  key={id}
+                  className="bg-zinc-800 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-[1.02] hover:shadow-xl flex flex-col h-full"
+                >
                   <div className="h-48 bg-white relative">
                     <Image src={product.image} alt={product.name} width={400} height={300} className="w-full h-full object-contain" />
                     {product.featured && (
                       <div className="absolute top-2 right-2 bg-[#fea41c] text-black px-2 py-1 rounded-md text-xs font-medium">Featured</div>
                     )}
                   </div>
-                  <div className="p-4">
-                    <div className="flex justify-between items-start mb-2">
-                      <h3 className="text-lg font-medium">{product.name}</h3>
-                      <span className="font-semibold text-[#fea41c]">${product.price}</span>
-                    </div>
-                    <div className="flex items-center flex-wrap text-sm text-gray-300 mb-3 gap-2">
-                      {product.category.map((cat, i) => (
-                        <span className="bg-gray-700 px-2 py-1 rounded" key={i}>
-                          {cat}
-                        </span>
-                      ))}
-                      <div className="flex items-center ml-auto">
-                        <Star size={16} className="text-[#fea41c] mr-1" fill="#fea41c" />
-                        <span>{product.rating}</span>
+                  <div className="p-4 flex flex-col flex-grow">
+                    <div className="flex justify-between gap-4 mb-4">
+                      <div className="flex flex-col flex-wrap text-sm text-gray-300 gap-2 flex-grow min-w-0">
+                        <h3 className="text-lg font-medium break-words">{product.name}</h3>
+                        <div className="flex gap-1 flex-wrap">
+                          {product.category.map((cat, i) => (
+                            <span className="bg-gray-700 px-2 py-1 rounded text-xs" key={i}>
+                              {cat}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                      <div className="flex flex-col gap-2 flex-shrink-0">
+                        <span className="font-semibold text-[#fea41c] text-right">${product.price}</span>
+                        <div className="flex items-center">
+                          <Star size={16} className="text-[#fea41c] mr-1" fill="#fea41c" />
+                          <span className="text-sm">{product.rating}</span>
+                        </div>
                       </div>
                     </div>
-                    <p className="text-gray-400 text-sm mb-4">{product.description}</p>
+                    <p className="text-gray-400 text-sm mb-4 flex-grow">{product.description}</p>
                     <a
                       href={product.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full bg-[#fea41c] hover:bg-[#e89210] text-black font-medium py-2 rounded-md flex items-center justify-center gap-2 transition-colors"
+                      className="w-full mb-2 bg-[#fea41c] hover:bg-[#e89210] text-black font-medium py-2 rounded-md flex items-center justify-center gap-2 transition-colors"
                     >
                       <ShoppingCart size={18} />
                       View on Amazon
                     </a>
+                    {product.video && (
+                      <a
+                        href={product.video}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full bg-[#fea41c] hover:bg-[#e89210] text-black font-medium py-2 rounded-md flex items-center justify-center gap-2 transition-colors"
+                      >
+                        <MonitorPlay size={18} />
+                        View on YouTube
+                      </a>
+                    )}
                   </div>
                 </div>
               ))}

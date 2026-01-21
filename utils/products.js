@@ -65,7 +65,8 @@ const products = [
       "GLICO is a patented glycolic acid-based cleaner for fabrics and upholstery. It removes inorganic residues, minerals, and stubborn stains while restoring softness and color. Its unique Luminol Effect highlights hidden spots, ensuring a flawless finish every time.",
     featured: false,
     image: "/assets/images/products/glico.webp",
-    link: "https://www.labocosmetica.store/products/labocosmetica-glico?ref=DIRTLESS&variant=51346489213229"
+    link: "https://www.labocosmetica.store/products/labocosmetica-glico?ref=DIRTLESS&variant=51346489213229",
+    video: "https://youtu.be/aeLztM3ng54"
   },
   {
     name: "Labocosmetica Ductile",
@@ -76,7 +77,8 @@ const products = [
       "DUCTILE is a highly concentrated All Purpose Cleaner for interiors and exteriors, safe even on delicate materials like Alcantara®. It removes stubborn stains, neutralizes odors, and leaves fabrics soft, making it ideal for both reconditioning and maintenance cleaning.",
     featured: false,
     image: "/assets/images/products/ductile.webp",
-    link: "https://www.labocosmetica.store/products/labocosmetica-ductile?ref=DIRTLESS&variant=51346489344301"
+    link: "https://www.labocosmetica.store/products/labocosmetica-ductile?ref=DIRTLESS&variant=51346489344301",
+    video: "https://youtu.be/aeLztM3ng54"
   },
   {
     name: "Labocosmetica Sidero",
@@ -87,7 +89,8 @@ const products = [
       "SIDERO is a highly concentrated, scented iron remover gel with anti-limescale action. Its innovative F.R.G. technology ensures strong adhesion to vertical surfaces, making it ideal for safe, effective decontamination of bodywork, rims, and glass.",
     featured: false,
     image: "/assets/images/products/sidero.webp",
-    link: "https://www.labocosmetica.store/products/labocosmetica-sidero?ref=DIRTLESS&variant=51346487771437"
+    link: "https://www.labocosmetica.store/products/labocosmetica-sidero?ref=DIRTLESS&variant=51346487771437",
+    video: "https://www.youtube.com/shorts/pFCBIsbPjNA?feature=share"
   },
   {
     name: "Shine Supply Clutch",
@@ -98,7 +101,8 @@ const products = [
       "Clutch is a Silica-based spray designed to provide 6 months of protection on paint, trim, glass, and more. You've seen us use it on faded blacks to try to restore their color a little bit too, or even applying it after cleaning interiors to provide extra protection and gloss.",
     featured: false,
     image: "/assets/images/products/clutch.webp",
-    link: "https://www.detailedimage.com/wax.php?id=138663&url=detailedimage.com/Shine-Supply-M132/Clutch-P2941/16-oz-S1/"
+    link: "https://www.detailedimage.com/wax.php?id=138663&url=detailedimage.com/Shine-Supply-M132/Clutch-P2941/16-oz-S1/",
+    video: "https://www.youtube.com/shorts/oXGw-YSnEms?feature=share"
   },
   {
     name: "Tornador Vacuum",
@@ -109,7 +113,8 @@ const products = [
       "This is an amazing attachment for a vacuum that combines the power of a tornador and immediately sucks everything that the tornador would normally blows around. An amazing tool on many interiors with stubborn carpet, pet hair, or dirt embedded deep down.",
     featured: false,
     image: "/assets/images/products/tornVacuum.jpg",
-    link: "https://amzn.to/3L6f6V9"
+    link: "https://amzn.to/3L6f6V9",
+    video: "https://youtu.be/aeLztM3ng54"
   },
   {
     name: "Tornador Foam Gun",
@@ -120,7 +125,8 @@ const products = [
       "A foam gun we bought just to test out, mainly for when we want to do waterless washes that still have strong cleaning power. This allows you to put your chemical of choice in and it will foam it out somewhat as if using a foam cannon, without much liquid, overall pretty cool.",
     featured: false,
     image: "/assets/images/products/tornFoam.jpg",
-    link: "https://amzn.to/3Zs5yHy"
+    link: "https://amzn.to/3Zs5yHy",
+    video: "https://www.youtube.com/shorts/ulS4mPSYAFg?feature=share"
   },
   //   {
   //     name: "ADS Amplify Ceramic Spray",
