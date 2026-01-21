@@ -8,7 +8,7 @@ import products from "../../utils/products.js";
 import CategoryManager from "./components/CategoryManager";
 
 // Categories - can easily be updated when needed
-const categories = ["All", "Ceramic Maintenance", "Equipment", "Exterior", "Interior", "Wheels", "Glass", "Showcase"];
+const categories = ["All", "Ceramic Maintenance", "Equipment", "Exterior", "Interior", "Wheels", "Glass", "As Seen On Our Channel"];
 
 export default function ProductsPageWrapper() {
   return (
@@ -42,8 +42,6 @@ function ProductsPage() {
       return a.price - b.price;
     } else if (sortOption === "priceDesc") {
       return b.price - a.price;
-    } else if (sortOption === "rating") {
-      return b.rating - a.rating;
     }
     return 0;
   });
@@ -102,8 +100,7 @@ function ProductsPage() {
                 {[
                   { value: "featured", label: "Featured" },
                   { value: "priceAsc", label: "Price: Low to High" },
-                  { value: "priceDesc", label: "Price: High to Low" },
-                  { value: "rating", label: "Highest Rated" }
+                  { value: "priceDesc", label: "Price: High to Low" }
                 ].map((option) => (
                   <button
                     key={option.value}
