@@ -19,7 +19,7 @@ import FaqItem from "../../components/FaqItem";
 import { motion } from "framer-motion";
 import BaseSchema from "../../jsonSchemas/BaseSchema";
 
-export default function ExteriorSeal() {
+export default function ExteriorPolish() {
   const [expanded, setExpanded] = useState(false);
   const [smallScreen, setSmallScreen] = useState(false);
 
@@ -50,22 +50,22 @@ export default function ExteriorSeal() {
     <section className="service-content-container">
       <BaseSchema
         serviceImage="/assets/images/correction/teslaclean.jpg"
-        url="https://www.dirtlessdetailing.com/services/exterior-seal"
+        url="https://www.dirtlessdetailing.com/services/polish-coat"
         makesOffer={{
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Seal & Shine",
+            "name": "Polish & Coat",
             "description":
-              "Experience a showroom shine and unparalleled protection with our Exterior Seal and Shine, ensuring your car gleams like new while safeguarding its finish.",
+              "Experience a showroom shine and unparalleled protection with our Exterior Polish & Coat service, ensuring your car gleams like new while safeguarding its finish.",
             "areaServed": "Buckley, Bonney Lake, and surrounding areas.",
-            "serviceType": "Paint Correction and Ceramic Coating"
+            "serviceType": "Paint Polishing and Ceramic Coating"
           }
         }}
       />
       <HeaderComponent
         imageUrl="/assets/images/correction/teslaclean.jpg"
-        title="Exterior Seal and Shine"
+        title="Exterior Polish & Coat"
         description="Our tried and true wash with a corrective polish, and even stronger Ceramic Spray coating."
         secondaryUrl="/assets/images/before&afters/f150SealShineBA.jpg"
       />
@@ -76,11 +76,11 @@ export default function ExteriorSeal() {
             <div>
               <div className="pricing__heading-container">
                 <h3 className="pricing__heading">
-                  <span className="text-accent bold">Exterior Seal & Shine</span> Pricing
+                  <span className="text-accent bold">Polish & Coat</span> Pricing
                 </h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
-              <PricingComponent serviceType="exterior" shortTitle="exteriorseal" addons="correction" />
+              <PricingComponent serviceType="exterior" shortTitle="extPolish" addons="correction" />
             </div>
 
             <br className="extra-space" />
@@ -100,7 +100,7 @@ export default function ExteriorSeal() {
 
             <main className="w-full text-white my-0 mx-auto text-center p-4">
               <h2 style={{ marginBottom: 0 }} className="text-large">
-                Our Exterior Seal & Shine Service
+                Our Exterior Polish & Coat Service
               </h2>
               <hr style={{ margin: "0 auto 3rem auto" }} />
 
@@ -164,7 +164,7 @@ export default function ExteriorSeal() {
 
             <br className="extra-space" />
 
-            <h2 className="cleaning-process-title pb-8">Our Exterior Seal & Shine Process</h2>
+            <h2 className="cleaning-process-title pb-8">Our Exterior Polish & Coat Process</h2>
             <motion.ol className="list" variants={containerVariant} initial="initial" whileInView="whileInView" viewport={{ once: true }}>
               <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
@@ -278,7 +278,7 @@ export default function ExteriorSeal() {
 
             <div className="general-container new-heading-container font-bold text-white">
               <h3 style={{ margin: 0, width: "auto", padding: 0 }} className="new-heading new-heading-center text-4xl lg:text-5xl">
-                Seal & Shine FAQ's
+                Polish & Coat FAQ's
               </h3>
               <p className="max-w-[500px] mx-auto text-center my-0 font-normal pb-8">
                 Answers to the questions we most commonly get about this service, please reach out if you have other questions!
@@ -303,12 +303,12 @@ export default function ExteriorSeal() {
             <br className="extra-space" />
 
             <div className="preview-container">
-              <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/seal" className="gallery-preview">
+              <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/polish" className="gallery-preview">
                 <motion.div variants={imgVariation1} className="relative w-full h-[100px] rounded-xl">
                   <Image
                     variants={imgVariation1}
                     src="/assets/images/sealshine/sprinter6.jpg"
-                    alt="Sprinter van after our Seal and Shine service"
+                    alt="Sprinter van after our Polish and Coat service"
                     fill
                     sizes="275px"
                     className="object-cover rounded-xl"
@@ -349,13 +349,13 @@ export default function ExteriorSeal() {
               <div className="preview-content">
                 <h4>
                   See more finished{" "}
-                  <a href="/gallery/seal" className="text-blue-500 inline-block">
+                  <a href="/gallery/polish" className="text-blue-500 inline-block">
                     results <ExternalLink className="inline-block" />
                   </a>
                 </h4>
                 <p>
-                  Check out our Seal & Shine gallery page, showing off some of the great results we've gotten over the years! See it{" "}
-                  <a href="/gallery/seal" className="text-blue-500">
+                  Check out our Polish & Coat gallery, showing off some of the great results we've gotten over the years! See it{" "}
+                  <a href="/gallery/polish" className="text-blue-500">
                     here
                   </a>
                   .

@@ -8,8 +8,8 @@ const prices = {
     exterior: {
       extDecon: 125,
       extWashCoat: 500,
-      extPolishCoat: 1000,
-      extCorrectCoat: 1500
+      extPolish: 1000,
+      extCorrect: 1500
     }
   },
   "4 Door": {
@@ -21,8 +21,8 @@ const prices = {
     exterior: {
       extDecon: 125,
       extWashCoat: 500,
-      extPolishCoat: 1000,
-      extCorrectCoat: 1500
+      extPolish: 1000,
+      extCorrect: 1500
     }
   },
   "Mid Size": {
@@ -34,8 +34,8 @@ const prices = {
     exterior: {
       extDecon: 125,
       extWashCoat: 625,
-      extPolishCoat: 1250,
-      extCorrectCoat: 1875
+      extPolish: 1250,
+      extCorrect: 1875
     }
   },
   "Trucks": {
@@ -47,8 +47,8 @@ const prices = {
     exterior: {
       extDecon: 125,
       extWashCoat: 750,
-      extPolishCoat: 1500,
-      extCorrectCoat: 2250
+      extPolish: 1500,
+      extCorrect: 2250
     }
   },
   "3 Row": {
@@ -60,8 +60,8 @@ const prices = {
     exterior: {
       extDecon: 125,
       extWashCoat: 750,
-      extPolishCoat: 1500,
-      extCorrectCoat: 2250
+      extPolish: 1500,
+      extCorrect: 2250
     }
   },
   "addons": {

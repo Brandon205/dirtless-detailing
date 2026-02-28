@@ -1,10 +1,10 @@
 export const metadata = {
   title: "Paint Correction Gallery",
   description: "Paint Correction Photos • Here are some examples from both our Single and Two Stage Paint Correction services!",
-  alternates: { canonical: "https://www.dirtlessdetailing.com/gallery/seal" },
+  alternates: { canonical: "https://www.dirtlessdetailing.com/gallery/polish" },
   openGraph: {
     type: "website",
-    url: "https://www.dirtlessdetailing.com/gallery/seal",
+    url: "https://www.dirtlessdetailing.com/gallery/polish",
     images: [
       {
         url: "/assets/images/sealshine/36 plymouth.jpg",

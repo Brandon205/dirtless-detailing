@@ -106,7 +106,7 @@ export default function Nav() {
           },
           {
             name: "Seal & Shine Gallery",
-            href: "/gallery/seal",
+            href: "/gallery/polish",
             bgImage: "/assets/images/sealshine/porscheHeadOn.jpg"
           },
           {
