@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import prices from "../../utils/Prices";
 import salePrices from "../../utils/SalePrices";
 import { CornerRightDown } from "lucide-react";

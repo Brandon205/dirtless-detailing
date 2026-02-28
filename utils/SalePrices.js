@@ -1,5 +1,5 @@
 const salePrices = {
-  "active": true,
+  "active": false,
   "saleName": "Winter Sale",
   "Any 2-Door Vehicle": {
     interior: {
