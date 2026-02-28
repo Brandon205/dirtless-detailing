@@ -208,8 +208,6 @@ export default function InteriorSpill() {
 
             <br className="extra-space" />
 
-            <br className="extra-space" />
-
             <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
             <h3 className="pricing__heading">Your car like you've never seen it before.</h3>
             <p className="pricing__subtext">Our interior coating also brings out more color in the plastics and leather without being slippery to the touch.</p>
@@ -219,6 +217,19 @@ export default function InteriorSpill() {
                 afterImage="/assets/images/before&afters/nastykiadriverA.jpg"
                 aspectRatio="16/9"
               />
+            </div>
+
+            <div className="mt-12 p-6 lg:p-8 bg-gradient-to-r from-zinc-800 to-zinc-700 rounded-lg border border-accent border-opacity-30 text-center">
+              <h3 className="text-2xl lg:text-3xl font-bold text-white mb-3">Is your car in need of a Restoration?</h3>
+              <p className="text-gray-300 mb-6 text-lg">
+                Have questions or want a quote on our Interior Restoration Service? Want to book an appointment? Get in touch with us today!
+              </p>
+              <a
+                href="/contact"
+                className="inline-block px-8 py-3 bg-accent hover:bg-accent/90 text-white font-semibold rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-accent/50"
+              >
+                Get Started
+              </a>
             </div>
 
             <div className="preview-container">
