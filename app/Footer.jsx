@@ -68,21 +68,27 @@ export default function Footer() {
       <div className="footer-content-card" style={{ paddingBottom: "2rem" }}>
         <h3 className="font-medium">SERVICES</h3>
         <div className="flex flex-col gap-4 mt-4">
+          <Link href="/services/interior-refresh" className="no-underline text-gray-400 hover:underline hover:text-gray-300">
+            Interior Refresh
+          </Link>
           <Link href="/services/interior" className="no-underline text-gray-400 hover:underline hover:text-gray-300">
             Full Interior Detail
           </Link>
-          <Link href="/services/interior-spill" className="no-underline text-gray-400 hover:underline hover:text-gray-300">
-            Full Interior + Spill Guard
+          <Link href="/services/interior-restore" className="no-underline text-gray-400 hover:underline hover:text-gray-300">
+            Interior Restoration
           </Link>
           <hr style={{ marginTop: "1.5rem" }} />
           <Link href="/services/exterior" className="no-underline text-gray-400 hover:underline hover:text-gray-300">
             Exterior Decon Wash
           </Link>
-          <Link href="/services/exterior-seal" className="no-underline text-gray-400 hover:underline hover:text-gray-300">
-            Exterior Seal & Shine
+          <Link href="/services/wash-coat" className="no-underline text-gray-400 hover:underline hover:text-gray-300">
+            Exterior Wash & Coat
           </Link>
-          <Link href="/services/exterior-correct" className="no-underline text-gray-400 hover:underline hover:text-gray-300">
-            Exterior Correct & Protect
+          <Link href="/services/polish" className="no-underline text-gray-400 hover:underline hover:text-gray-300">
+            Exterior Polish & Coat
+          </Link>
+          <Link href="/services/correct" className="no-underline text-gray-400 hover:underline hover:text-gray-300">
+            Exterior Correct & Coat
           </Link>
         </div>
       </div>

@@ -48,14 +48,19 @@ export default function Nav() {
         title: "INTERIOR DETAILING SERVICES",
         items: [
           {
+            name: "Interior Refresh",
+            href: "/services/interior-refresh",
+            bgImage: "/assets/images/interior/driver15.jpg"
+          },
+          {
             name: "Full Interior Detail",
             href: "/services/interior",
             bgImage: "/assets/images/interior/driver16.jpg"
           },
           {
-            name: "Full Interior with Spill Guard",
-            href: "/services/interior-spill",
-            bgImage: "/assets/images/interior/accO.jpg"
+            name: "Interior Restoration",
+            href: "/services/interior-restore",
+            bgImage: "/assets/images/before&afters/badInteriorBA.png"
           }
         ]
       },
@@ -68,13 +73,18 @@ export default function Nav() {
             bgImage: "/assets/images/exterior/subaruWashed.jpeg"
           },
           {
-            name: "Seal and Shine",
-            href: "/services/exterior-seal",
+            name: "Wash & Coat",
+            href: "/services/wash-coat",
+            bgImage: "/assets/images/exterior/crTesla.jpg"
+          },
+          {
+            name: "Polish & Coat",
+            href: "/services/polish",
             bgImage: "/assets/images/correction/teslaclean.jpg"
           },
           {
-            name: "Correct and Protect",
-            href: "/services/exterior-correct",
+            name: "Correct & Coat",
+            href: "/services/correct",
             bgImage: "/assets/images/correction/genesis3.jpeg"
           }
         ]

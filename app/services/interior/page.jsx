@@ -39,7 +39,7 @@ export default function FullIntEx() {
         imageUrl="/assets/images/interior/driver16.jpg"
         title="Full Interior Detail"
         description="Our full interior detail service is designed to bring your vehicle's interior back to life. From deep cleaning carpets to conditioning leather, we cover it all."
-        secondaryUrl="/assets/images/before&afters/badInteriorBA.png"
+        secondaryUrl="/assets/images/before&afters/FordInteriorBA.jpg"
       />
 
       <div className="main-content-container">
