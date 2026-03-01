@@ -79,13 +79,13 @@ export default function Home() {
         ]}
       >
         <header className="w-screen flex flex-col h-[90vh] pt-20 z-50 items-center lg:items-start lg:pl-20 xl:gap-3 text-sm xl:text-lg justify-center">
-          <strong
+          {/* <strong
             className="bg-accent font-bold text-xl lg:text-3xl max-w-[95vw] px-4 py-2 rounded-lg mb-4 flex items-center gap-2 text-white shadow-lg ring-1 ring-black/20 drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]"
             style={{ textShadow: "0 2px 6px rgba(0,0,0,0.6)" }}
           >
             <Snowflake style={{ filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5))" }} size={36} className="text-white" /> Winter Sale: 20% Off Our Main
             Services!
-          </strong>
+          </strong> */}
           <div className="text-center lg:text-left">
             <strong className="text-gray-400 text-lg lg:text-xl">Dirt-Less Detailing</strong>
             <h1 className="text-white font-heading text-4xl xl:text-7xl xl:text-left font-bold m-0 lg:max-w-[60%] px-2">

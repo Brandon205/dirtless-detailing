@@ -56,7 +56,7 @@ export default function Contact() {
       </div>
       <div className="contact-information-container">
         <div className="contact-info-cards">
-          <div className="flex items-center gap-4 bg-white text-black p-4">
+          {/* <div className="flex items-center gap-4 bg-white text-black p-4">
             <div className="flex-shrink-0 w-[28px] h-[28px]">
               <Snowflake size={28} className="text-[#3c8d0d]" />
             </div>
@@ -64,7 +64,7 @@ export default function Contact() {
               <span className="text-[#3c8d0d]">Winter Sale</span> is on now! Get <span className="text-[#3c8d0d]">20%</span> off our main services and{" "}
               <span className="text-[#3c8d0d]">10%</span> off all Gift Cards!
             </p>
-          </div>
+          </div> */}
           <div className="flex items-center gap-4 bg-zinc-800 p-4">
             <div className="flex-shrink-0 w-[28px] h-[28px]">
               <Smartphone size={28} />
