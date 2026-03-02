@@ -59,7 +59,7 @@ export default function Nav() {
           },
           {
             name: "Interior Restoration",
-            href: "/services/interior-restore",
+            href: "/services/interior-restoration",
             bgImage: "/assets/images/before&afters/badInteriorBA.png"
           }
         ]

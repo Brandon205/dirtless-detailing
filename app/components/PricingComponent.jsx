@@ -51,7 +51,7 @@ export default function PricingComponent(props) {
       case "intRefresh":
         setAddonSection(<InteriorRefresh />);
         break;
-      case "intRestore":
+      case "intRest":
         setAddonSection(<InteriorRestore />);
         break;
       default:
@@ -160,8 +160,10 @@ export default function PricingComponent(props) {
           ) : (
             ""
           )}
-          {props.shortTitle == "interior" || props.shortTitle == "interior-spill" ? (
-            <p className="text-gray-400 text-sm text-left">*This is the final price for most interiors; extreme cases may require an additional charge.</p>
+          {props.shortTitle == "interior" || props.shortTitle == "intRest" ? (
+            <p className="text-gray-400 text-sm text-left">
+              *Pricing varies greatly depending on condition. Free quotes are always available, just stop by or call!
+            </p>
           ) : (
             ""
           )}
@@ -314,8 +316,8 @@ const InteriorRestore = () => {
         <div className="w-full flex flex-col items-center gap-2 justify-center mb-4">
           <h4 className="text-2xl font-semibold">Interior Ceramic</h4>
           <p className="text-xl text-gray-300">
-            Our Interior Ceramic Coating is a great way to protect your interior from stains and spills. Perfect for families with kids, pets, or anyone who
-            wants to keep their interior looking like new for longer.
+            Our Interior Ceramic Coating is a great way to protect your interior from stains and spills. Perfect to keep the interior from getting back to what
+            it was before the restoration.
           </p>
         </div>
         <div className="bg-primary w-1/2 py-2 rounded-lg text-xl font-medium">

@@ -18,29 +18,29 @@ import Image from "next/image";
 import HeaderComponent from "../../components/HeaderComponent";
 import BaseSchema from "../../jsonSchemas/BaseSchema";
 
-export default function InteriorSpill() {
+export default function InteriorRestoration() {
   return (
     <section className="service-content-container">
       <BaseSchema
-        serviceImage="/assets/images/interior/accO.jpg"
-        url="https://www.dirtlessdetailing.com/services/interior-spill"
+        serviceImage="/assets/images/before&afters/badInteriorBA.png"
+        url="https://www.dirtlessdetailing.com/services/interior-restoration"
         makesOffer={{
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Full Interior + Spill Guard",
+            "name": "Interior Restoration",
             "description":
-              "Get your car's interior looking brand new with our full interior detailing service, topped off with a ceramic coating to protect your vehicle from day to day use! Contact us to schedule your appointment today.",
+              "Our Interior Restoration service is a service designed for vehicles that have been neglected beyond what our Full Interior Detail can handle. If your interior has heavy odors, mold, or is extremely dirty, and you need it back to acceptable, this is the service for you.",
             "areaServed": "Buckley, Bonney Lake, and surrounding areas.",
-            "serviceType": "Interior Detailing + Ceramic Coating"
+            "serviceType": "Interior Restoration"
           }
         }}
       />
       <HeaderComponent
-        imageUrl="/assets/images/interior/accO.jpg"
-        title="Full Interior + Spill Guard"
-        description="Our highly rated interior service topped with an interior ceramic coating, helping protect your vehicle from life's spills and stains."
-        secondaryUrl="/assets/images/interior/center3.jpg"
+        imageUrl="/assets/images/before&afters/nastykiadriverA.jpg"
+        title="Interior Restoration"
+        description="The service that can bring life back into heavily neglected interiors. If your interior has heavy odors, mold, or is extremely dirty, this is the service for you."
+        secondaryUrl="/assets/images/before&afters/badInteriorBA.png"
       />
 
       <div className="main-content-container">
@@ -49,62 +49,65 @@ export default function InteriorSpill() {
             <div>
               <div className="pricing__heading-container">
                 <h3 className="pricing__heading">
-                  <span className="text-accent bold">Full Interior + Spill Guard</span> Pricing
+                  <span className="text-accent bold">Interior Restoration</span> Pricing
                 </h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
-              <PricingComponent shortTitle="interiorspill" serviceType="interior" addons="fullInterior" />
+              <PricingComponent shortTitle="intRest" serviceType="interior" addons="intRest" />
             </div>
 
             <main className="w-full text-white my-0 mx-auto text-center p-4">
               <h2 style={{ marginBottom: 0 }} className="text-large">
-                The Full Interior + Spill Guard Service
+                The Interior Restoration Service
               </h2>
               <hr style={{ margin: "0 auto 3rem auto" }} />
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
                 <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
                   <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">Protection That Makes Sense</span>
+                    <span className="text-accent font-bold text-2xl">Beyond Detailing: Full Interior Recovery</span>
                   </h3>
                   <p className="leading-relaxed">
-                    If your car sees heavy use from kids, pets, food, drinks, or just daily life, this service is built for you. We don't just clean up the mess
-                    that's already there - we prevent future messes from becoming permanent problems. Our interior ceramic coating creates a protective barrier
-                    that gives you time to clean up spills before they soak in and become stains.
+                    There is a level of "mess" that a standard interior detail simply can't solve. Whether you've purchased a neglected used vehicle, dealt with
+                    a major spill, or are facing the aftermath of a long winter, our Recovery service is designed for the extreme. We don't just surface-clean;
+                    we disassemble what is necessary to reach the source of the problem. If a seat needs to come out or a console needs to be cleared to reach a
+                    hidden biohazard or deep-seated grime, we do what it takes to reclaim your cabin.
                   </p>
                 </div>
 
                 <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
                   <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">Deep Cleaning First, Protection Second</span>
+                    <span className="text-accent font-bold text-2xl">Scientific Odor & Mold Elimination</span>
                   </h3>
                   <p className="leading-relaxed">
-                    Before any coating goes on, we do the deep work. Using our extensive collection of specialized interior chemicals, we remove months or years
-                    of built-up grime, stains, and odors. Our carpet extraction process pulls out embedded dirt, while our bonneting technique handles
-                    surface-level problems and freshens the entire interior. Then, after everything is perfectly clean we apply the protective coating.
+                    Foul odors and mold spores don't just sit on the surface—they live in the air, the headliner, and deep within your ventilation system. To
+                    combat this, we utilize professional-grade Ozone therapy. This process creates a reactive gas that permeates every square inch of the
+                    interior, molecularly breaking down odors and killing mold at the source. It reaches the places no brush or vacuum ever could, ensuring that
+                    when we're done, the vehicle isn't just "scented"—it's sanitized.
                   </p>
                 </div>
 
                 <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
                   <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">Ceramic Coating That Actually Works</span>
+                    <span className="text-accent font-bold text-2xl">Aggressive Extraction for the Toughest Cases</span>
                   </h3>
                   <p className="leading-relaxed">
-                    Our interior ceramic coating isn't like those slippery conditioners that make you slide around in your seat. This coating feels natural
-                    while providing protection. Spilled coffee wipes up instead of soaking in. Pet accidents clean up easier. Food crumbs don't grind into
-                    fabric. All materials will feel and look similar, but cleanup becomes dramatically easier.
+                    While our standard services focus on "bonneting" to keep carpets dry, this heavy-duty service brings out the big guns. We utilize high-heat
+                    extraction and specific enzyme-based cleaners to break down organic matter, heavy mud, and years of ground-in debris. We match our most
+                    aggressive (yet safe) chemicals to your specific disaster, working through multiple stages of agitation and vacuuming to pull the
+                    "impossible" out of your fabric and upholstery.
                   </p>
                 </div>
 
                 <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
                   <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">Long-Term Value</span>
+                    <span className="text-accent font-bold text-2xl">The "As Good As It Gets" Guarantee</span>
                   </h3>
                   <p className="leading-relaxed">
-                    This isn't just about today's cleaning - it's about making every future cleanup easier for the next year. Kids spill things. Pets have
-                    accidents. Life happens. With proper protection in place, these inevitable messes become minor inconveniences instead of permanent damage.
-                    Your interior stays cleaner longer and requires less aggressive cleaning to maintain, which means it lasts longer and looks better
-                    throughout its life.
+                    We pride ourselves on being the shop that tackles the jobs others turn away. However, we also believe in being 100% transparent: when a
+                    vehicle has reached a certain level of neglect, some permanent wear, deep staining, or physical damage may remain. Our goal isn't to promise
+                    a brand-new car, but to provide the absolute best possible outcome that modern chemistry and hard work can achieve. Your interior won't just
+                    be "cleaned"—it will be restored to its highest possible standard of safety and comfort.
                   </p>
                 </div>
               </div>
@@ -124,7 +127,7 @@ export default function InteriorSpill() {
 
             <br className="extra-space" />
 
-            <h2 className="cleaning-process-title pb-8">Our Interior + Spill Guard Process</h2>
+            <h2 className="cleaning-process-title pb-8">Our Interior Restoration Process</h2>
             <motion.ol className="list" variants={containerVariant} initial="initial" whileInView="whileInView" viewport={{ once: true }}>
               <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
@@ -209,8 +212,8 @@ export default function InteriorSpill() {
             <br className="extra-space" />
 
             <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
-            <h3 className="pricing__heading">Your car like you've never seen it before.</h3>
-            <p className="pricing__subtext">Our interior coating also brings out more color in the plastics and leather without being slippery to the touch.</p>
+            <h3 className="pricing__heading">The way your car should be.</h3>
+            <p className="pricing__subtext">A car that you aren't scared or ashamed of to be driving anymore!</p>
             <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto mb-24">
               <BeforeAfterSlider
                 beforeImage="/assets/images/before&afters/nastykiadriversB.jpg"
@@ -222,7 +225,7 @@ export default function InteriorSpill() {
             <div className="mt-12 p-6 lg:p-8 bg-gradient-to-r from-zinc-800 to-zinc-700 rounded-lg border border-accent border-opacity-30 text-center">
               <h3 className="text-2xl lg:text-3xl font-bold text-white mb-3">Is your car in need of a Restoration?</h3>
               <p className="text-gray-300 mb-6 text-lg">
-                Have questions or want a quote on our Interior Restoration Service? Want to book an appointment? Get in touch with us today!
+                Have questions or want a free quote on our Interior Restoration Service? Want to book an appointment? Get in touch with us today!
               </p>
               <a
                 href="/contact"

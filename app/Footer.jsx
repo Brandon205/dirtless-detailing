@@ -74,7 +74,7 @@ export default function Footer() {
           <Link href="/services/interior" className="no-underline text-gray-400 hover:underline hover:text-gray-300">
             Full Interior Detail
           </Link>
-          <Link href="/services/interior-restore" className="no-underline text-gray-400 hover:underline hover:text-gray-300">
+          <Link href="/services/interior-restoration" className="no-underline text-gray-400 hover:underline hover:text-gray-300">
             Interior Restoration
           </Link>
           <hr style={{ marginTop: "1.5rem" }} />
