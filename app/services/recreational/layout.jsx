@@ -10,7 +10,7 @@ export const metadata = {
         url: "/assets/images/sealshine/rv-finished.jpg",
         width: 1200,
         height: 630,
-        alt: "A nice clean RV after giving it a nice wash and seal"
+        alt: "A nice clean RV after giving it a nice wash and ceramic spray"
       }
     ]
   }

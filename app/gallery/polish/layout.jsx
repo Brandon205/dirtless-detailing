@@ -10,7 +10,7 @@ export const metadata = {
         url: "/assets/images/sealshine/36 plymouth.jpg",
         width: 1200,
         height: 630,
-        alt: "A beautiful red 1936 Plymouth after our Seal & Shine Service."
+        alt: "A beautiful red 1936 Plymouth after our Polish & Coat Service."
       }
     ]
   }

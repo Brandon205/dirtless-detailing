@@ -80,12 +80,12 @@ export default function CoatingGallery() {
       <div className="servicepage-header">
         <div style={{ alignItems: "center" }}>
           <h1 className="text-center lg:text-left">
-            <span className="text-accent bold text-shadow">Exterior Correct & Protect Gallery</span>
+            <span className="text-accent bold text-shadow">Exterior Correct & Coat Gallery</span>
           </h1>
           <strong className="page-subheading" style={{ textAlign: "center" }}>
             Check out the gallery below to see the results and capabilities of a freshly applied Ceramic Coating. Take a look at our{" "}
-            <a href="/services/exterior-correct" className="text-blue-500">
-              Exterior Correct & Protect
+            <a href="/services/correct" className="text-blue-500">
+              Exterior Correct & Coat
             </a>{" "}
             page to learn more about this service!
           </strong>
@@ -109,8 +109,8 @@ export default function CoatingGallery() {
       <div className="max-w-90% lg:max-w-[60%] mx-auto text-center">
         <strong className="text-white text-3xl lg:text-4xl">
           Be sure to check out our{" "}
-          <a href="/services/exterior-correct" className="text-blue-500">
-            Correct & Protect
+          <a href="/services/correct" className="text-blue-500">
+            Correct & Coat
           </a>{" "}
           page for more details!
         </strong>

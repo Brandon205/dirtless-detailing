@@ -115,12 +115,12 @@ export default function Nav() {
             bgImage: "/assets/images/exterior/sideofsilverram.jpg"
           },
           {
-            name: "Seal & Shine Gallery",
+            name: "Polish & Coat Gallery",
             href: "/gallery/polish",
             bgImage: "/assets/images/sealshine/porscheHeadOn.jpg"
           },
           {
-            name: "Correct & Protect Gallery",
+            name: "Correct & Coat Gallery",
             href: "/gallery/correct",
             bgImage: "/assets/images/correction/genesis2.jpeg"
           }

@@ -83,16 +83,16 @@ const faqItems = [
     description: (
       <p className="faq-description">
         We never recommend going through a car wash as they can reduce the gloss slickness and beading of your coating prematurely. However in a pinch a
-        touch-less car wash will suffice. Just make sure to use the cheapest setting, without any wax's. It is also recommended after the wash to dry the whole
+        touch-less car wash will suffice. Just make sure to use the cheapest setting, without any waxes. It is also recommended after the wash to dry the whole
         vehicle with high quality drying towels (We recommend{" "}
         <a href="https://amzn.to/449nFm7" className="text-blue-500" target="_blank" rel="noopener noreferrer">
           The Rag Company's Large Drying Towel
         </a>
-        ) and{" "}
+        and{" "}
         <a href="https://amzn.to/3uKuqi1" className="text-blue-500" target="_blank" rel="noopener noreferrer">
           Griot's Ceramic Speed Shine
         </a>
-        !
+        )!
       </p>
     )
   }
@@ -114,7 +114,7 @@ export default function ExteriorCorrect() {
     <section className="service-content-container">
       <BaseSchema
         serviceImage="/assets/images/correction/genesis3.jpeg"
-        url="https://www.dirtlessdetailing.com/services/exterior-correct"
+        url="https://www.dirtlessdetailing.com/services/correct"
         makesOffer={{
           "@type": "Offer",
           "itemOffered": {
@@ -215,11 +215,11 @@ export default function ExteriorCorrect() {
                     We could sell you a 5 or 10-year coating, but we know that typically after three years, chances are you will have collected some scratches
                     and swirls or plastics may start fading again. For yearly maintenance on your coating we'd recommend getting in touch with us and we'll plan
                     a yearly modified version of our{" "}
-                    <a href="/services/exterior-seal" className="text-blue-600 hover:text-blue-700 font-medium underline">
-                      Seal & Shine
+                    <a href="/services/polish" className="text-blue-600 hover:text-blue-700 font-medium underline">
+                      Polish & Coat
                     </a>{" "}
-                    package where we'll go in, check on the coating, polish any areas that need fixing up, and re-coat them for less than the cost of a Seal &
-                    Shine Service.
+                    package where we'll go in, check on the coating, polish any areas that need fixing up, and re-coat them for less than the cost of a Polish &
+                    Coat Service.
                   </p>
                 </div>
               </div>
@@ -307,7 +307,7 @@ export default function ExteriorCorrect() {
                   <h3 className="step-number">7</h3>
                 </div>
                 <div className="step-container">
-                  <h4 className="step-title">Protect Vehicle</h4>
+                  <h4 className="step-title">Coat Vehicle</h4>
                   <p className="step-desc">
                     Apply our 3-year Ceramic Coating to the paint. At this point we also coat the windshield, wheels, and the trim. Leaving no part of your car
                     that's uncoated!

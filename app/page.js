@@ -165,6 +165,23 @@ export default function Home() {
         </div>
         <div className="flex flex-col lg:flex-row flex-grow lg:justify-between lg:items-stretch lg:flex-wrap lg:w-[90%] lg:my-0 mx-auto justify-center items-center gap-24 mb-8">
           <HomePageCard
+            title="Interior Refresh"
+            imageUrl="/assets/images/interior/driver11.jpg"
+            description="Our Interior Refresh service is designed for those who have had our interior service within the past year, or for cars that need a quick refresh to get it back to that like-new feel."
+            steps={[
+              "Thorough blow-out and vacuum to remove all dirt and debris",
+              "Clean and condition all leather and plastics",
+              "Quick wipe of all door jambs",
+              "Wash/clean all floor mats",
+              "Clean interior glass to a streak-free finish"
+            ]}
+            hours="2-4"
+            linkUrl="/services/interior-refresh"
+            serviceType="interior"
+            specificService="intRefresh"
+          />
+
+          <HomePageCard
             title="Full Interior Detail"
             imageUrl="/assets/images/interior/driver5.jpg"
             description="Our thorough interior cleaning uses extensively researched chemicals and proven techniques, perfect for cars with staining, pet hair, or ones that haven't been properly cleaned in ages."
@@ -178,20 +195,24 @@ export default function Home() {
             ]}
             hours="3-6+"
             linkUrl="/services/interior"
+            serviceType="interior"
+            specificService="intFull"
           />
 
           <HomePageCard
-            title="Full Interior + Spill Guard"
-            imageUrl="/assets/images/interior/driver12.jpg"
+            title="Interior Restoration"
+            imageUrl="/assets/images/before&afters/badInteriorBA.png"
             description="Our Full Interior Service topped with interior ceramic coating on all surfaces - the perfect protection for families with kids, pets, or anyone who wants to make future cleanups effortless."
             steps={[
               "EVERYTHING From our Full Interior Service",
-              "All Leathers/plastics conditioned with an interior ceramic coating",
+              "All leathers/plastics conditioned with an interior ceramic coating",
               "Plastic and leather restoration (can restore faded plastics and leathers)",
               "All carpets brushed and coated"
             ]}
             hours="4.5-7+"
-            linkUrl="/services/interior-spill"
+            linkUrl="/services/interior-restoration"
+            serviceType="interior"
+            specificService="intRest"
           />
         </div>
 
@@ -203,7 +224,7 @@ export default function Home() {
             From a quick wash to a complete paint correction and ceramic coating, we cover all things exterior!
           </h3>
         </div>
-        <div className="flex flex-col lg:flex-row flex-grow lg:justify-between lg:items-stretch lg:flex-wrap lg:w-[90%] lg:my-0 mx-auto justify-center items-center gap-24 mb-8">
+        <div className="flex flex-col lg:flex-row flex-grow lg:justify-center lg:items-stretch lg:flex-wrap lg:w-[90%] lg:my-0 mx-auto justify-center items-center gap-24 mb-8">
           <HomePageCard
             title="Exterior Decon Wash"
             imageUrl="/assets/images/exterior/jeepRenegade.jpg"
@@ -216,25 +237,44 @@ export default function Home() {
             ]}
             hours="1-2"
             linkUrl="/services/exterior"
+            serviceType="exterior"
+            specificService="extDecon"
+          />
+          <HomePageCard
+            title="Wash & Coat"
+            imageUrl="/assets/images/exterior/hondaFront.jpg"
+            description="Our top of the line coating, installed without the cost or need for paint correction."
+            steps={[
+              "Full vehicle top to bottom wash, with tar and sap remover applied where needed",
+              "Scrub & wash the tires, wheels, wheel barrels, and wells",
+              "Clean out all door jambs and the gas door",
+              "Apply a ceramic spray on all surfaces (lasts 3-6 months)"
+            ]}
+            hours="5-8"
+            linkUrl="/services/wash-coat"
+            serviceType="exterior"
+            specificService="extWashCoat"
           />
 
           <HomePageCard
-            title="Seal & Shine"
+            title="Polish & Coat"
             imageUrl="/assets/images/sealshine/seal-shine.jpg"
-            description="Our top exterior package featuring single-stage paint correction and a 1-year ceramic coating "
+            description="Our top exterior package featuring single-stage paint correction and a 3-year ceramic coating "
             steps={[
               "Our Exterior Decon Wash + clay bar treatment",
               "A full vehicle polish to remove light scratches and swirls",
               "Restore and ceramic coat all trim",
               "Ceramic coat the windshield (lasts 6-12 months)",
-              "Apply a 1-year ceramic coating to the entire vehicle"
+              "Apply a 3-year ceramic coating to the entire vehicle"
             ]}
             hours="6-9+"
-            linkUrl="/services/exterior-seal"
+            linkUrl="/services/polish"
+            serviceType="exterior"
+            specificService="extPolish"
           />
 
           <HomePageCard
-            title="Correct & Protect"
+            title="Correct & Coat"
             imageUrl="/assets/images/correction/genesis1.jpeg"
             description="A full 2-stage paint correction topped with a 3-year ceramic coating - using skills refined through our years of experience!"
             steps={[
@@ -245,7 +285,9 @@ export default function Home() {
               "Apply a 3-year ceramic coating to the paint"
             ]}
             hours="10-15+"
-            linkUrl="/services/exterior-correct"
+            linkUrl="/services/correct"
+            serviceType="exterior"
+            specificService="extCorrect"
           />
         </div>
 

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Check } from "lucide-react";
+import { Check } from "lucide-react";
 import Image from "next/image";
 import prices from "../../utils/Prices";
 import salePrices from "../../utils/SalePrices";
@@ -20,19 +20,10 @@ const serviceVariant = {
   hover: { scale: 1.05 }
 };
 
-export default function HomePageCard({ title, imageUrl, description, steps, hours, linkUrl }) {
-  const typeRegex = /\/services\/(interior|exterior)/;
-  const typeMatch = linkUrl.match(typeRegex);
-  const serviceType = typeMatch ? typeMatch[1] : null;
-
-  const serviceRegex = /\/services\/(?:interior|exterior)-?(.*)/;
-  const match2 = linkUrl.match(serviceRegex);
-  const serviceName = match2 ? match2[1] : null;
-
-  const specificService = serviceType + serviceName;
-
+export default function HomePageCard({ title, imageUrl, description, steps, hours, linkUrl, serviceType, specificService }) {
+  console.log("prices", prices["Any 2-Door Vehicle"][serviceType][specificService]);
   return (
-    <div className="flex flex-col flex-1 relative w-[90%] min-w-[200px] lg:min-w-[400px] max-w-[95%] lg:max-w-full gap-2 rounded-2xl pb-8 bg-zinc-800 overflow-hidden shadow-lg">
+    <div className="flex flex-col flex-1 relative w-[90%] min-w-[200px] lg:min-w-[400px] max-w-[95%] lg:max-w-[1030px] gap-2 rounded-2xl pb-8 bg-zinc-800 overflow-hidden shadow-lg">
       {/* Diagonal sale banner */}
       {/* <div className="absolute top-10 right-[-36px] z-20 rotate-45 bg-gradient-to-r from-rose-600 to-red-500 text-white px-6 py-1 shadow-lg uppercase font-bold text-lg tracking-tight pointer-events-none max-w-[200px] text-center overflow-hidden whitespace-nowrap leading-none">
         Winter Sale

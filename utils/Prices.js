@@ -3,7 +3,7 @@ const prices = {
     interior: {
       intRefresh: 225,
       intFull: 335,
-      intRest: 445
+      intRestoration: 445
     },
     exterior: {
       extDecon: 125,
@@ -16,7 +16,7 @@ const prices = {
     interior: {
       intRefresh: 255,
       intFull: 375,
-      intRest: 500
+      intRestoration: 500
     },
     exterior: {
       extDecon: 125,
@@ -29,7 +29,7 @@ const prices = {
     interior: {
       intRefresh: 255,
       intFull: 375,
-      intRest: 500
+      intRestoration: 500
     },
     exterior: {
       extDecon: 125,
@@ -42,7 +42,7 @@ const prices = {
     interior: {
       intRefresh: 255,
       intFull: 375,
-      intRest: 500
+      intRestoration: 500
     },
     exterior: {
       extDecon: 125,
@@ -55,7 +55,7 @@ const prices = {
     interior: {
       intRefresh: 285,
       intFull: 425,
-      intRest: 555
+      intRestoration: 555
     },
     exterior: {
       extDecon: 125,

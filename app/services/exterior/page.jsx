@@ -52,7 +52,7 @@ export default function Exterior() {
                 </h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
-              <PricingComponent shortTitle="exterior" serviceType="exterior" addons="exterior" />
+              <PricingComponent shortTitle="extDecon" serviceType="exterior" addons="exterior" />
             </div>
 
             <main className="w-full text-white my-0 mx-auto text-center p-4">
@@ -204,14 +204,14 @@ export default function Exterior() {
                 <div className="step-container">
                   <h4 className="step-title flex line-through">
                     All this and more!{" "}
-                    <a href="/services/exterior-seal">
+                    <a href="/services/polish">
                       <ExternalLink color="#3b82f6" size={24} className="mt-1 ml-1" />
                     </a>
                   </h4>
                   <p className="step-desc">
-                    If you opt for our Exterior Seal and Shine package you get all of these benefits plus: a full vehicle polish, specialized windshield and
-                    trim coatings, and a 1-year ceramic coating on all paint! See more info{" "}
-                    <a href="/services/exterior-seal" className="text-blue-500">
+                    If you opt for our Exterior Polish & Coat package you get all of these benefits plus: a full vehicle polish, specialized windshield and trim
+                    coatings, and a 1-year ceramic coating on all paint! See more info{" "}
+                    <a href="/services/polish" className="text-blue-500">
                       here
                     </a>
                     .

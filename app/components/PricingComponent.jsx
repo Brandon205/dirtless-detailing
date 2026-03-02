@@ -51,7 +51,7 @@ export default function PricingComponent(props) {
       case "intRefresh":
         setAddonSection(<InteriorRefresh />);
         break;
-      case "intRest":
+      case "intRestoration":
         setAddonSection(<InteriorRestore />);
         break;
       default:
@@ -91,7 +91,7 @@ export default function PricingComponent(props) {
             configs={[{ mass: 1, tension: 320, friction: 100 }]}
             className="text-green-500"
           ></AnimatedNumbers>
-          <span className="text-green-500">{props.shortTitle == "exteriorcorrect" || props.shortTitle == "exteriorseal" ? "*" : ""}</span>
+          <span className="text-green-500">{props.shortTitle == "extCorrect" || props.shortTitle == "extPolish" ? "*" : ""}</span>
         </>
       );
     } else {
@@ -108,7 +108,7 @@ export default function PricingComponent(props) {
             animateToNumber={prices[sizesArr[currVal]][props.serviceType][props.shortTitle]}
             configs={[{ mass: 1, tension: 320, friction: 100 }]}
           ></AnimatedNumbers>
-          {props.shortTitle == "exteriorcorrect" || props.shortTitle == "exteriorseal" ? "*" : ""}
+          {props.shortTitle == "extCorrect" || props.shortTitle == "extPolish" ? "*" : ""}
         </>
       );
     } else {
@@ -155,12 +155,12 @@ export default function PricingComponent(props) {
       <div className="flex flex-col justify-between items-center w-[90%] my-0 mx-auto max-w-[700px] lg:flex-row">
         <div className="flex flex-col items-start mb-4 w-full lg:w-1/2">
           <p className="text-2xl">Starting At:</p>
-          {props.shortTitle == "exteriorcorrect" || props.shortTitle == "exteriorseal" ? (
+          {props.shortTitle == "extCorrect" || props.shortTitle == "extPolish" ? (
             <p className="text-gray-400 text-sm text-left">*Additional Correction (e.g., wet sanding, touchup painting) is available at $150/hour.</p>
           ) : (
             ""
           )}
-          {props.shortTitle == "interior" || props.shortTitle == "intRest" ? (
+          {props.shortTitle == "intFull" || props.shortTitle == "intRestoration" ? (
             <p className="text-gray-400 text-sm text-left">
               *Pricing varies greatly depending on condition. Free quotes are always available, just stop by or call!
             </p>

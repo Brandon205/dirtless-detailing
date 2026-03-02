@@ -233,7 +233,7 @@ export default function ExteriorPolish() {
                   <h3 className="step-number">7</h3>
                 </div>
                 <div className="step-container">
-                  <h4 className="step-title">Protect Vehicle</h4>
+                  <h4 className="step-title">Coat Vehicle</h4>
                   <p className="step-desc">
                     Apply the 1-year ceramic coating. At this stage we'll also apply our windshield, trim, headlight, and wheel coatings to protect your entire
                     vehicle!
@@ -258,14 +258,14 @@ export default function ExteriorPolish() {
                 <div className="step-container">
                   <h4 className="step-title flex line-through">
                     All this and more!{" "}
-                    <a href="/services/exterior-correct">
+                    <a href="/services/correct">
                       <ExternalLink color="#3b82f6" size={24} className="mt-1 ml-1" />
                     </a>
                   </h4>
                   <p className="step-desc">
-                    If you opt for our Exterior Correct and Protect package you get all of these services, a 2-stage paint correction (removes more & deeper
+                    If you opt for our Exterior Correct & Coat package you get all of these services, a 2-stage paint correction (removes more & deeper
                     scratches), and a 3 year Ceramic Coating, leaving you with up to 2 extra years of protection! See more info{" "}
-                    <a href="/services/exterior-correct" className="text-blue-500">
+                    <a href="/services/correct" className="text-blue-500">
                       here
                     </a>
                     .

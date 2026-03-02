@@ -52,7 +52,7 @@ export default function FullIntEx() {
                 </h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
-              <PricingComponent shortTitle="interior" serviceType="interior" addons="fullInterior" />
+              <PricingComponent shortTitle="intFull" serviceType="interior" addons="fullInterior" />
             </div>
 
             <br className="extra-space" />

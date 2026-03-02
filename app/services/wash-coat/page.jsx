@@ -204,7 +204,7 @@ export default function Exterior() {
                 <div className="step-container">
                   <h4 className="step-title flex">
                     Want a Polish or Paint Correction?
-                    <a href="/services/exterior-seal">
+                    <a href="/services/polish">
                       <ExternalLink color="#3b82f6" size={24} className="mt-1 ml-1" />
                     </a>
                   </h4>

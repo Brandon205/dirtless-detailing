@@ -53,7 +53,7 @@ export default function InteriorRestoration() {
                 </h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
-              <PricingComponent shortTitle="intRest" serviceType="interior" addons="intRest" />
+              <PricingComponent shortTitle="intRestoration" serviceType="interior" addons="intRest" />
             </div>
 
             <main className="w-full text-white my-0 mx-auto text-center p-4">
