@@ -27,19 +27,19 @@ export default function Exterior() {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Exterior Decon Wash",
+            "name": "Wash & Coat",
             "description":
-              "Get a car wash like never before with our Exterior Decon Wash. Where we go in depth to get all corners and remove any paint contaminants.",
+              "Our full Decontamination Wash plus a ceramic coating that provides 3 years of protection for your paint. The best way to keep your car looking great with regular maintenance washes.",
             "areaServed": "Buckley, Bonney Lake, and surrounding areas.",
-            "serviceType": "Car Wash"
+            "serviceType": "Car Wash & Ceramic Coating"
           }
         }}
       />
       <HeaderComponent
-        imageUrl="/assets/images/exterior/subaruWashed.jpeg"
-        title="Exterior Decon Wash"
-        description="The detailers car wash. We focus on the parts that get missed, removing contaminants, and protecting your paint."
-        secondaryUrl="/assets/images/before&afters/TruckTarBA.png"
+        imageUrl="/assets/images/exterior/hondaFront.jpg"
+        title="Wash & Coat"
+        description="Our full Decontamination Wash plus a ceramic coating that provides 3 years of protection for your paint. The best way to keep your car looking great with regular maintenance washes."
+        secondaryUrl="/assets/images/exterior/porscheMacan2.jpg"
       />
 
       <div className="main-content-container">
@@ -48,64 +48,64 @@ export default function Exterior() {
             <div>
               <div className="pricing__heading-container">
                 <h3 className="pricing__heading">
-                  <span className="text-accent bold">Exterior Decon Wash</span> Pricing
+                  <span className="text-accent bold">Wash & Coat</span> Pricing
                 </h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
-              <PricingComponent shortTitle="exterior" serviceType="exterior" addons="exterior" />
+              <PricingComponent shortTitle="extWashCoat" serviceType="exterior" addons="exterior" />
             </div>
 
             <main className="w-full text-white my-0 mx-auto text-center p-4">
               <h2 style={{ marginBottom: 0 }} className="text-large">
-                Our Exterior Decontamination Wash
+                Our Wash & Coat Service
               </h2>
               <hr style={{ margin: "0 auto 3rem auto" }} />
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
                 <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
                   <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">More Than Just Another Car Wash</span>
+                    <span className="text-accent font-bold text-2xl">The Ultimate "New Car" Reset</span>
                   </h3>
                   <p className="leading-relaxed">
-                    Most car washes focus on making your car look clean without actually removing the contaminants that cause long-term damage. Our decon wash
-                    is built around the idea that truly clean means contaminate-free. We don't just rinse off the surface dirt - we actively remove iron
-                    particles, tar buildup, tree sap, and other embedded contaminants that regular washing can't touch. It's the foundation that every other
-                    service builds on.
+                    Whether your vehicle just rolled off the dealership lot or you're looking to refresh your daily driver, our Wash & Coat service provides a
+                    professional-grade baseline. We bridge the gap between a standard wash and a multi-day restoration. This package is specifically designed
+                    for vehicles with paint in good condition that need elite protection, or for owners who prioritize long-term surface integrity and ease of
+                    maintenance over removing every microscopic swirl mark.
                   </p>
                 </div>
 
                 <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
                   <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">Wheels That Get the Attention They Deserve</span>
+                    <span className="text-accent font-bold text-2xl">Decon Meets Durable Protection</span>
                   </h3>
                   <p className="leading-relaxed">
-                    Your wheels take more abuse than any other part of your car, collecting brake dust, road grime, and iron particles that bond to the surface.
-                    We stock a wide array of specialized wheel chemicals because generic cleaners don't cut it when brake dust has been baking on there for
-                    months. That purple runoff you see in our photos? That's iron contamination being safely dissolved and removed - something you'll never get
-                    from a drive-through car wash.
+                    We start with our signature Exterior Decon Wash—removing the iron, tar, and industrial fallout that standard soaps leave behind. But we
+                    don't stop there. Once the surface is truly surgically clean, we perform a dedicated paint prep to ensure the surface is chemically bare.
+                    This allows our 3-year ceramic coating to bond directly to your clear coat at a molecular level, providing a layer of defense that no wax or
+                    "spray sealant" can match.
                   </p>
                 </div>
 
                 <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
                   <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">Decontamination That Actually Works</span>
+                    <span className="text-accent font-bold text-2xl">Professional Results, Accessible Value</span>
                   </h3>
                   <p className="leading-relaxed">
-                    The word "decon" gets thrown around a lot in the detailing industry, here we decontaminate your paint as safely as we can. Our process
-                    includes iron removal that pulls metallic particles from your paint, tar removal for those stubborn spots on lower panels, and sap removal
-                    that won't damage your clear coat. We even clean areas most places skip - door jambs, gas doors, and all the hidden spots where dirt loves
-                    to hide. Every step has a purpose.
+                    The biggest hurdle to ceramic coatings is often the cost of paint correction. By focusing on the decontamination and the coating application
+                    itself, we're able to offer a high-performance 3-year shield at a fraction of the cost of our multi-year packages. It's the perfect solution
+                    for the practical owner who wants the incredible gloss, extreme water beading, and UV protection of a ceramic coating without the intensive
+                    labor of a full machine polish.
                   </p>
                 </div>
 
                 <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
                   <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">Protection That Makes Maintenance Easier</span>
+                    <span className="text-accent font-bold text-2xl">Simplify Your Washes for the Next 12 Months</span>
                   </h3>
                   <p className="leading-relaxed">
-                    We finish every decon wash with a ceramic spray that provides at least 3 months of protection. This isn't just about making your car look
-                    good today - it's about making it easier to keep clean tomorrow. That ceramic layer helps repel water, reduces dirt adhesion, and makes your
-                    next wash more effective. You'll thank us later!
+                    The real magic of the Wash & Coat happens every time it rains or you go to wash your car. For the next year, your paint will be incredibly
+                    "slick," meaning dirt and road grime struggle to stick to the surface. Maintenance washes become faster and easier, and your car stays
+                    cleaner for longer. You aren't just paying for a shiny car today; you're investing in a year of effortless maintenance and peace of mind.
                   </p>
                 </div>
               </div>
@@ -125,7 +125,7 @@ export default function Exterior() {
 
             <br className="extra-space" />
 
-            <h2 className="cleaning-process-title pb-8">Our Exterior Decon Wash Process</h2>
+            <h2 className="cleaning-process-title pb-8">Our Wash & Coat Process</h2>
             <motion.ol className="list" variants={containerVariant} initial="initial" whileInView="whileInView" viewport={{ once: true }}>
               <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
@@ -161,25 +161,16 @@ export default function Exterior() {
                   <h3 className="step-number">4</h3>
                 </div>
                 <div className="step-container">
-                  <h4 className="step-title">Remove tar and sap</h4>
+                  <h4 className="step-title">Remove tar, sap, iron, and clay bar if needed</h4>
                   <p className="step-desc">
-                    Remove any tar and sap from the exterior. Tar typically builds up on the lower panels of the vehicle, we have strong chemicals that can
-                    safely remove it.
+                    Remove any tar, sap, and iron from the exterior. If the paint is rough to the touch after washing, we will also perform a clay bar treatment
+                    to remove any remaining contaminants from the paint.
                   </p>
-                </div>
-              </motion.li>
-              <motion.li className="item" variants={evenVariant}>
-                <div className="step-number-container">
-                  <h3 className="step-number">5</h3>
-                </div>
-                <div className="step-container">
-                  <h4 className="step-title">Protect Paint</h4>
-                  <p className="step-desc">Apply a Ceramic Spray before drying (gives the entire vehicle 3 months of protection).</p>
                 </div>
               </motion.li>
               <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
-                  <h3 className="step-number">6</h3>
+                  <h3 className="step-number">5</h3>
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Dry Vehicle</h4>
@@ -188,11 +179,20 @@ export default function Exterior() {
               </motion.li>
               <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
+                  <h3 className="step-number">6</h3>
+                </div>
+                <div className="step-container">
+                  <h4 className="step-title">Apply Primer Polish</h4>
+                  <p className="step-desc">Apply Primer Polish to Ensure proper bonding.</p>
+                </div>
+              </motion.li>
+              <motion.li className="item" variants={oddVariant}>
+                <div className="step-number-container">
                   <h3 className="step-number">7</h3>
                 </div>
                 <div className="step-container">
-                  <h4 className="step-title">Final Touches</h4>
-                  <p className="step-desc">Dress the tires and wheel wells.</p>
+                  <h4 className="step-title">Apply 3-Year Ceramic Coating</h4>
+                  <p className="step-desc">Apply our 3-Year Ceramic Coating for long-lasting protection and shine.</p>
                 </div>
               </motion.li>
               <motion.li className="item item-disabled" variants={evenVariant}>
@@ -202,19 +202,22 @@ export default function Exterior() {
                   </h3>
                 </div>
                 <div className="step-container">
-                  <h4 className="step-title flex line-through">
-                    All this and more!{" "}
+                  <h4 className="step-title flex">
+                    Want a Polish or Paint Correction?
                     <a href="/services/exterior-seal">
                       <ExternalLink color="#3b82f6" size={24} className="mt-1 ml-1" />
                     </a>
                   </h4>
                   <p className="step-desc">
-                    If you opt for our Exterior Seal and Shine package you get all of these benefits plus: a full vehicle polish, specialized windshield and
-                    trim coatings, and a 1-year ceramic coating on all paint! See more info{" "}
-                    <a href="/services/exterior-seal" className="text-blue-500">
-                      here
-                    </a>
-                    .
+                    Check out our Polish & Coat{" "}
+                    <a href="/services/polish" className="text-blue-500">
+                      Polish & Coat
+                    </a>{" "}
+                    service for a polish before the coating, or our{" "}
+                    <a href="/services/correct" className="text-blue-500">
+                      Correct & Coat
+                    </a>{" "}
+                    service for a full paint correction before a 3-year ceramic coating .
                   </p>
                 </div>
               </motion.li>
@@ -223,8 +226,8 @@ export default function Exterior() {
             <br className="extra-space" />
 
             <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
-            <h3 className="pricing__heading">What a car wash should be.</h3>
-            <p className="pricing__subtext">Your car, washed, without the unnecessary scratching or missed corners.</p>
+            <h3 className="pricing__heading">Brand New Look, with Next-Level Protection</h3>
+            <p className="pricing__subtext">Set yourself up for easier future maintenance and long-term protection on your vehicle.</p>
             <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
               <BeforeAfterSlider
                 beforeImage="/assets/images/before&afters/teslawashBFR.jpg"

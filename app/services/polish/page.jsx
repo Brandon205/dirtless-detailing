@@ -66,7 +66,7 @@ export default function ExteriorPolish() {
       <HeaderComponent
         imageUrl="/assets/images/correction/teslaclean.jpg"
         title="Exterior Polish & Coat"
-        description="Our tried and true wash with a corrective polish, and even stronger Ceramic Spray coating."
+        description="An even more thorough wash with clay bar decontamination, a corrective polish, and a high-quality ceramic coating."
         secondaryUrl="/assets/images/before&afters/f150SealShineBA.jpg"
       />
 

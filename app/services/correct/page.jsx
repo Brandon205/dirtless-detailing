@@ -119,9 +119,9 @@ export default function ExteriorCorrect() {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Correct & Protect",
+            "name": "Correct & Coat",
             "description":
-              "Elevate your vehicle's appearance and protection with our Correct and Protect service, leaving your car with a mirror-like shine and defense.",
+              "Elevate your vehicle's appearance and protection with our Correct & Coat service, leaving your car with a mirror-like shine and defense.",
             "areaServed": "Buckley, Bonney Lake, and surrounding areas.",
             "serviceType": "Paint Correction and Ceramic Coating"
           }
@@ -129,8 +129,8 @@ export default function ExteriorCorrect() {
       />
       <HeaderComponent
         imageUrl="/assets/images/correction/genesis3.jpeg"
-        title="Exterior Correct and Protect"
-        description="The Ultimate Exterior Detail & Protection for your vehicle. Our most extensive package with in-depth Paint Correction and a Lifetime Ceramic Coating."
+        title="Exterior Correct & Coat"
+        description="The Ultimate Exterior Detail & Protection for your vehicle. Our most extensive package with extra in-depth Paint Correction and a Lifetime Ceramic Coating."
         secondaryUrl="/assets/images/before&afters/scratchesBA.png"
       />
 
@@ -140,11 +140,11 @@ export default function ExteriorCorrect() {
             <div>
               <div className="pricing__heading-container">
                 <h3 className="pricing__heading">
-                  <span className="text-accent bold">Correct & Protect</span> Pricing
+                  <span className="text-accent bold">Correct & Coat</span> Pricing
                 </h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
-              <PricingComponent shortTitle="exteriorcorrect" serviceType="exterior" addons="correction" />
+              <PricingComponent shortTitle="extCorrect" serviceType="exterior" addons="correction" />
             </div>
 
             <br className="extra-space" />
@@ -166,7 +166,7 @@ export default function ExteriorCorrect() {
 
             <main className="w-full text-white my-0 mx-auto text-center p-4">
               <h2 style={{ marginBottom: 0 }} className="text-large">
-                Our Exterior Correct & Protect Service
+                Our Exterior Correct & Coat Service
               </h2>
               <hr style={{ margin: "0 auto 3rem auto" }} />
 
@@ -238,7 +238,7 @@ export default function ExteriorCorrect() {
 
             <br className="extra-space" />
 
-            <h2 className="cleaning-process-title pb-8">Our Exterior Correct & Protect Process</h2>
+            <h2 className="cleaning-process-title pb-8">Our Exterior Correct & Coat Process</h2>
             <motion.ol className="list" variants={containerVariant} initial="initial" whileInView="whileInView" viewport={{ once: true }}>
               <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
@@ -400,8 +400,7 @@ export default function ExteriorCorrect() {
                   </a>
                 </h4>
                 <p>
-                  See the stunning results that you'll get from our Correct & Protect service, water will be beading straight off of your whole car! Check them
-                  out{" "}
+                  See the stunning results that you'll get from our Correct & Coat service, water will be beading straight off of your whole car! Check them out{" "}
                   <a href="/gallery/correct" className="text-blue-500">
                     here
                   </a>
