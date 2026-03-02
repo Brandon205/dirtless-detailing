@@ -34,9 +34,9 @@ export default function HomePageCard({ title, imageUrl, description, steps, hour
   return (
     <div className="flex flex-col flex-1 relative w-[90%] min-w-[200px] lg:min-w-[400px] max-w-[95%] lg:max-w-full gap-2 rounded-2xl pb-8 bg-zinc-800 overflow-hidden shadow-lg">
       {/* Diagonal sale banner */}
-      <div className="absolute top-10 right-[-36px] z-20 rotate-45 bg-gradient-to-r from-rose-600 to-red-500 text-white px-6 py-1 shadow-lg uppercase font-bold text-lg tracking-tight pointer-events-none max-w-[200px] text-center overflow-hidden whitespace-nowrap leading-none">
+      {/* <div className="absolute top-10 right-[-36px] z-20 rotate-45 bg-gradient-to-r from-rose-600 to-red-500 text-white px-6 py-1 shadow-lg uppercase font-bold text-lg tracking-tight pointer-events-none max-w-[200px] text-center overflow-hidden whitespace-nowrap leading-none">
         Winter Sale
-      </div>
+      </div> */}
 
       <div className="relative m-[2%] bg-center bg-no-repeat bg-cover h-[200px] w-[96%] lg:h-[250px] rounded-2xl flex justify-center">
         <Image src={imageUrl} alt={title} className="rounded-2xl object-cover" priority fill sizes="(max-width: 1550px) 80vw, (min-width: 1551px) 33vw" />
@@ -82,8 +82,8 @@ export default function HomePageCard({ title, imageUrl, description, steps, hour
             <div className="flex flex-col items-center p-2 bg-zinc-900 w-full rounded-2xl font-bold">
               <p className="text-gray-400 text-[14px]">Starting at</p>
               <div className="flex flex-col lg:flex-row items-center">
-                <p className="text-2xl font-bold line-through text-red-500 lg:mr-2 m-0">${prices["Any 2-Door Vehicle"][serviceType][specificService]}</p>
-                <p className="text-green-500 m-0 text-2xl">${salePrices["Any 2-Door Vehicle"][serviceType][specificService]}</p>
+                <p className="text-2xl font-bold lg:mr-2 m-0">${prices["Any 2-Door Vehicle"][serviceType][specificService]}</p>
+                {/* <p className="text-green-500 m-0 text-2xl">${salePrices["Any 2-Door Vehicle"][serviceType][specificService]}</p> */}
               </div>
             </div>
           </div>
