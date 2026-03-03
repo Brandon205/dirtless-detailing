@@ -183,7 +183,7 @@ export default function Exterior() {
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Apply Primer Polish</h4>
-                  <p className="step-desc">Apply Primer Polish to Ensure proper bonding.</p>
+                  <p className="step-desc">Apply a Primer Polish to ensure proper bonding.</p>
                 </div>
               </motion.li>
               <motion.li className="item" variants={oddVariant}>

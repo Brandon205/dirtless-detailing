@@ -169,7 +169,7 @@ export default function Home() {
             imageUrl="/assets/images/interior/driver11.jpg"
             description="Our Interior Refresh service is designed for those who have had our interior service within the past year, or for cars that need a quick refresh to get it back to that like-new feel."
             steps={[
-              "Thorough blow-out and vacuum to remove all dirt and debris",
+              "Blow-out and vacuum to remove dirt and debris",
               "Clean and condition all leather and plastics",
               "Quick wipe of all door jambs",
               "Wash/clean all floor mats",
@@ -193,7 +193,7 @@ export default function Home() {
               "Wash/clean all floor mats",
               "Clean interior glass to a streak-free finish"
             ]}
-            hours="3-6+"
+            hours="3-6"
             linkUrl="/services/interior"
             serviceType="interior"
             specificService="intFull"
@@ -202,17 +202,17 @@ export default function Home() {
           <HomePageCard
             title="Interior Restoration"
             imageUrl="/assets/images/before&afters/badInteriorBA.png"
-            description="Our Full Interior Service topped with interior ceramic coating on all surfaces - the perfect protection for families with kids, pets, or anyone who wants to make future cleanups effortless."
+            description="For cars with heavy staining, strong odors, mold, or ones that have been neglected beyond what our Full Interior Detail can handle, our Interior Restoration service is for you."
             steps={[
               "EVERYTHING From our Full Interior Service",
-              "All leathers/plastics conditioned with an interior ceramic coating",
-              "Plastic and leather restoration (can restore faded plastics and leathers)",
-              "All carpets brushed and coated"
+              "Extra time and chemicals spent on heavy stains",
+              "Full fabric/carpet extraction to pull out deep dirt and odors",
+              "Ozone Treatment included to eliminate odors and kill mold spores"
             ]}
-            hours="4.5-7+"
+            hours="4.5-8+"
             linkUrl="/services/interior-restoration"
             serviceType="interior"
-            specificService="intRest"
+            specificService="intRestoration"
           />
         </div>
 
@@ -245,10 +245,10 @@ export default function Home() {
             imageUrl="/assets/images/exterior/hondaFront.jpg"
             description="Our top of the line coating, installed without the cost or need for paint correction."
             steps={[
-              "Full vehicle top to bottom wash, with tar and sap remover applied where needed",
-              "Scrub & wash the tires, wheels, wheel barrels, and wells",
-              "Clean out all door jambs and the gas door",
-              "Apply a ceramic spray on all surfaces (lasts 3-6 months)"
+              "Our Exterior Decon Wash + clay bar treatment",
+              "Apply a Primer Polish to ensure proper bonding",
+              "Apply a specialized coating on the windshield",
+              "Apply our 3-Year Ceramic Coating to the rest of the vehicle."
             ]}
             hours="5-8"
             linkUrl="/services/wash-coat"
@@ -262,7 +262,7 @@ export default function Home() {
             description="Our top exterior package featuring single-stage paint correction and a 3-year ceramic coating "
             steps={[
               "Our Exterior Decon Wash + clay bar treatment",
-              "A full vehicle polish to remove light scratches and swirls",
+              "A full vehicle polish to remove light scratches and swirl marks",
               "Restore and ceramic coat all trim",
               "Ceramic coat the windshield (lasts 6-12 months)",
               "Apply a 3-year ceramic coating to the entire vehicle"

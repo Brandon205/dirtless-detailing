@@ -74,7 +74,7 @@ export default function CoatingGallery() {
           fill
           priority
           className="object-cover"
-          quality={70}
+          quality={75}
         />
       </div>
       <div className="servicepage-header">

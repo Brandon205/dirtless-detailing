@@ -106,7 +106,7 @@ export default function FullIntGallery() {
         <Image
           src="/assets/images/interior/driverNewLexus.jpg"
           alt="Cleaned Interior of a 2024 Lexus SUV"
-          quality={70}
+          quality={75}
           priority
           fill
           className="object-cover"

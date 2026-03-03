@@ -38,7 +38,7 @@ export default function InteriorRefresh() {
       <HeaderComponent
         imageUrl="/assets/images/interior/driver15.jpg"
         title="Interior Refresh"
-        description="For vehicles that are already clean. A maintenance-focused interior detail that keeps your interior looking like new."
+        description="For vehicles that are already nearly clean. A maintenance-focused interior detail that keeps your interior looking like new."
         secondaryUrl="/assets/images/before&afters/floorBA.jpg"
       />
 

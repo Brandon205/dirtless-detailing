@@ -160,7 +160,7 @@ export default function PricingComponent(props) {
           ) : (
             ""
           )}
-          {props.shortTitle == "intFull" || props.shortTitle == "intRestoration" ? (
+          {props.shortTitle == "intRestoration" ? (
             <p className="text-gray-400 text-sm text-left">
               *Pricing varies greatly depending on condition. Free quotes are always available, just stop by or call!
             </p>
@@ -255,6 +255,18 @@ const Exterior = () => {
           <p>$80/hour</p>
         </div>
       </div>
+      <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4 max-w-[500px]">
+        <div className="w-full flex flex-col items-center gap-2 justify-center mb-4">
+          <h4 className="text-2xl font-semibold">Trim Restoration</h4>
+          <p className="text-xl text-gray-300">
+            If your trim is fading or oxidized, this is the perfect add-on to get it looking like new again! We will prep and restore all exterior trim on the
+            vehicle to bring back that deep black color and protect it from future fading. (Typically takes 30 minutes - 1 hour)
+          </p>
+        </div>
+        <div className="bg-primary w-1/2 py-2 rounded-lg text-xl font-medium">
+          <p>$80/hour</p>
+        </div>
+      </div>
     </div>
   );
 };
@@ -266,8 +278,8 @@ const FullInterior = () => {
         <div className="w-full flex flex-col items-center gap-2 justify-center mb-4">
           <h4 className="text-2xl font-semibold">Ozone Treatment</h4>
           <p className="text-xl text-gray-300">
-            Ozone treatment is the use of O3 (ozone gas) to remove odors, bacteria, and viruses from everywhere in the vehicle. Recommended on ALL mold and
-            smoke odor jobs.
+            Ozone treatment is the use of O3 (ozone gas) to remove odors, bacteria, and viruses from everywhere in the vehicle. Recommended on ALL strong odor,
+            mold, and smokers car jobs.
           </p>
         </div>
         <div className="bg-primary w-1/2 py-2 rounded-lg text-xl font-medium">

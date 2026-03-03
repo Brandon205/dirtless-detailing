@@ -192,7 +192,7 @@ export default function Nav() {
                                     fill
                                     sizes="(min-width: 1024px) 215px, 0px"
                                     className="object-cover"
-                                    quality={70}
+                                    quality={75}
                                     priority
                                   />
                                 </div>
@@ -256,7 +256,7 @@ export default function Nav() {
                                     fill
                                     sizes="(min-width: 1024px) 215px, 0px"
                                     className="object-cover"
-                                    quality={70}
+                                    quality={75}
                                     priority
                                   />
                                 </div>

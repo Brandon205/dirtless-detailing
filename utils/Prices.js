@@ -68,7 +68,8 @@ const prices = {
     "Ozone Treatment": 75,
     "Engine Bay": 75,
     "Interior Ceramic": 75,
-    "Ceramic Maintenance": 75
+    "Ceramic Maintenance": 75,
+    "Trim Restoration": 75
   }
 };
 
