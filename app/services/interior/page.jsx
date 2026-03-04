@@ -214,8 +214,8 @@ export default function FullIntEx() {
             <p className="pricing__subtext">Once we are done you won't want to see your car dirty ever again!</p>
             <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
               <BeforeAfterSlider
-                beforeImage="/assets/images/before&afters/nastykiapassfloormatB.jpg"
-                afterImage="/assets/images/before&afters/nastykiapassfloormatA.jpg"
+                beforeImage="/assets/images/before&afters/nastykiadriversB.jpg"
+                afterImage="/assets/images/before&afters/nastykiadriverA.jpg"
                 aspectRatio="16/9"
               />
             </div>

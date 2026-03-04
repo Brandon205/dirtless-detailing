@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import Image from "next/image";
 import prices from "../../utils/Prices";
-import salePrices from "../../utils/SalePrices";
+// import salePrices from "../../utils/SalePrices";
 
 const listItemVariant = {
   initial: {
@@ -21,7 +21,6 @@ const serviceVariant = {
 };
 
 export default function HomePageCard({ title, imageUrl, description, steps, hours, linkUrl, serviceType, specificService }) {
-  console.log("prices", prices["Any 2-Door Vehicle"][serviceType][specificService]);
   return (
     <div className="flex flex-col flex-1 relative w-[90%] min-w-[200px] lg:min-w-[400px] max-w-[95%] lg:max-w-[1030px] gap-2 rounded-2xl pb-8 bg-zinc-800 overflow-hidden shadow-lg">
       {/* Diagonal sale banner */}

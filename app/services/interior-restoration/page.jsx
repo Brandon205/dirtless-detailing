@@ -46,7 +46,7 @@ export default function InteriorRestoration() {
       <div className="main-content-container">
         <div className="process-container">
           <div style={{ width: "100%" }}>
-            <div>
+            {/* <div>
               <div className="pricing__heading-container">
                 <h3 className="pricing__heading">
                   <span className="text-accent bold">Interior Restoration</span> Pricing
@@ -54,6 +54,103 @@ export default function InteriorRestoration() {
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
               <PricingComponent shortTitle="intRestoration" serviceType="interior" addons="intRestoration" />
+            </div> */}
+            <div className="flex justify-center gap-8 flex-col lg:flex-row">
+              <div className="max-w-[450px] w-full bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-6 mb-8">
+                <h3 className="font-bold text-2xl text-primary">DEEP REVIVE:</h3>
+                <p className="font-bold text-2xl text-primary">HEAVY USE & PET HAIR</p>
+                <div className="w-auto h-[250px] relative my-4">
+                  <Image
+                    src="/assets/images/before&afters/badInteriorBA.png"
+                    alt="Before and after of a heavily neglected interior"
+                    fill
+                    objectFit="cover"
+                    className="mb-4 rounded-lg"
+                  />
+                </div>
+                <strong className="font-bold text-2xl text-primary">$350 - $650+</strong>
+                <p className="text-sm text-gray-400">*depending on size/condition</p>
+                <p className="text-left">
+                  Perfect for daily drivers, family cars, and vehicles with embedded dirt, spills, and extensive pet hair removal. Includes deep extraction,
+                  scrubbing, and sanitization.
+                </p>
+              </div>
+              <div className="max-w-[400px] w-full bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-6 mb-8">
+                <h3 className="font-bold text-2xl text-primary">SAFETY & HEALTH:</h3>
+                <p className="font-bold text-2xl text-primary">MOLD & BIOHAZARD</p>
+                <div className="w-auto h-[250px] relative my-4">
+                  <Image
+                    src="/assets/images/before&afters/bio1278.webp"
+                    alt="Moldy rear van seat before and after"
+                    fill
+                    objectFit="cover"
+                    className="mb-4 rounded-lg"
+                  />
+                </div>
+                <strong className="font-bold text-2xl text-primary">$600-$1200+</strong>
+                <p className="text-sm text-gray-400">*depending on size/condition</p>
+                <p className="text-left">
+                  If there's just a small spot or a little mold, it's included in our Full Interior Service, but if there's more than one area or the mold is
+                  very bad, this is the service for you. We use Mmultiple idfferent stages and chemicals all with the ability to kill mold, and end it off with
+                  a complete ozone treatment to get the places no one can reach.
+                </p>
+              </div>
+              <div className="max-w-[400px] w-full bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-6 mb-8">
+                <h3 className="font-bold text-2xl text-primary">ULTIMATE RESTORATION:</h3>
+                <p className="font-bold text-2xl text-primary">OLD VEHICLE/BARN FINDS</p>
+                <div className="w-auto h-[250px] relative my-4">
+                  <Image
+                    src="/assets/images/before&afters/badInteriorBA.png"
+                    alt="Before and after of a heavily neglected interior"
+                    fill
+                    objectFit="cover"
+                    className="mb-4 rounded-lg"
+                  />
+                </div>
+                <strong className="font-bold text-2xl text-primary">QUOTE REQUIRED*</strong>
+                <p className="text-sm text-gray-400">*depending on size/condition</p>
+                <p className="text-left">
+                  For typically older vehicles that have sun damage, fading plastics and leathers, and varying levels of wear, this is the service for you. We
+                  will use specialized cleaners to rejuvenate plastics and leathers, and do our best to restore the interior to its best possible condition,
+                  while protecting it from further damage with UV inhibitors and a durable interior dressing.
+                </p>
+              </div>
+            </div>
+
+            <div className="w-full bg-zinc-800 flex text-white rounded-lg shadow-sm border border-zinc-900 p-6 mb-8 max-w-[1200px] mx-auto text-left gap-4 flex-col lg:flex-row justify-center lg:justify-start">
+              <div className="w-full h-full relative">
+                <Image
+                  src="/assets/images/before&afters/badInteriorBA.png"
+                  alt="Before and after of a heavily neglected interior"
+                  // width={250}
+                  // height={250}
+                  fill
+                  objectFit="cover"
+                  className="mb-4 object-cover"
+                />
+              </div>
+              <div>
+                <h3 className="font-semibold text-2xl text-primary mb-2">BUDGET CONSCIOUS RESTORATION: OPT FOR CAPPED HOURLY DETAIL</h3>
+                <p>
+                  Choose this option for these services at an hourly rate ($125-$150/hour). Set a specific time limit (e.g., a 4 or 6 hour block). We prioritize
+                  your biggest concerns and get through the most important steps for you before the time is up without extra things you may not be as worried
+                  about. Ideal for making a huge impact without needing a "Full Restoration"{" "}
+                </p>
+                <div className="flex justify-start gap-8 mt-4 flex-col lg:flex-row">
+                  <a
+                    href="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd"
+                    className="text-white hover:underline text-xl font-semibold flex items-center gap-1 mt-2 bg-primary py-2 px-6 rounded-lg w-max"
+                  >
+                    <span>Book Hourly Block Online ($150/hour)</span>
+                  </a>
+                  <a
+                    href="sms:+12532529758"
+                    className="text-white border-primary border-2 hover:underline text-xl font-semibold flex items-center gap-1 mt-2 py-2 px-6 rounded-lg w-max"
+                  >
+                    <span>Text Photos for an Estimate (252) 252-9758</span>
+                  </a>
+                </div>
+              </div>
             </div>
 
             <main className="w-full text-white my-0 mx-auto text-center p-4">
@@ -125,9 +222,9 @@ export default function InteriorRestoration() {
               </div>
             </main>
 
-            <br className="extra-space" />
+            {/* <br className="extra-space" /> */}
 
-            <h2 className="cleaning-process-title pb-8">Our Interior Restoration Process</h2>
+            {/* <h2 className="cleaning-process-title pb-8">Our Interior Restoration Process</h2>
             <motion.ol className="list" variants={containerVariant} initial="initial" whileInView="whileInView" viewport={{ once: true }}>
               <motion.li className="item" variants={oddVariant}>
                 <div className="step-number-container">
@@ -207,7 +304,7 @@ export default function InteriorRestoration() {
                   </p>
                 </div>
               </motion.li>
-            </motion.ol>
+            </motion.ol> */}
 
             <br className="extra-space" />
 
@@ -216,8 +313,8 @@ export default function InteriorRestoration() {
             <p className="pricing__subtext">A car that you aren't scared or ashamed of to be driving anymore!</p>
             <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto mb-24">
               <BeforeAfterSlider
-                beforeImage="/assets/images/before&afters/nastykiadriversB.jpg"
-                afterImage="/assets/images/before&afters/nastykiadriverA.jpg"
+                beforeImage="/assets/images/before&afters/nastykiapassfloormatB.jpg"
+                afterImage="/assets/images/before&afters/nastykiapassfloormatA.jpg"
                 aspectRatio="16/9"
               />
             </div>
