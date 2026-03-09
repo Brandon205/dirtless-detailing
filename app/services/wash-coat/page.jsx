@@ -44,8 +44,8 @@ export default function Exterior() {
 
       <div className="main-content-container">
         <div className="process-container">
-          <div style={{ width: "100%" }}>
-            <div>
+          <div className="w-full">
+            <div className="w-full bg-zinc-800 pb-8">
               <div className="pricing__heading-container">
                 <h3 className="pricing__heading">
                   <span className="text-accent bold">Wash & Coat</span> Pricing

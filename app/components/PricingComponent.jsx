@@ -117,84 +117,90 @@ export default function PricingComponent(props) {
   }
 
   return (
-    <div className="pricing__container">
-      <div className="pricing__img">
-        <Image
-          src={imagesArr[currVal]}
-          alt="Dirt-Less Detailing sizing"
-          fill
-          sizes="(max-width: 1350px) 600px, (min-width: 1351px) 800px"
-          className="object-cover rounded-3xl"
-        />
-      </div>
-      <Select value={currVal} onValueChange={(e) => updateValue(e)} defaultValue="2">
-        <SelectTrigger className="text-2xl w-[275px]">
-          <SelectValue placeholder="Select a vehicle size." />
-        </SelectTrigger>
-        <SelectContent>
-          <SelectGroup className="text-2xl text-white">
-            <SelectLabel className="text-2xl">Sizes</SelectLabel>
-            <SelectItem className="text-2xl" value="0">
-              Any 2-Door Vehicle
-            </SelectItem>
-            <SelectItem className="text-2xl" value="1">
-              4-Door Sedans
-            </SelectItem>
-            <SelectItem className="text-2xl" value="2">
-              Mid-Size SUV's
-            </SelectItem>
-            <SelectItem className="text-2xl" value="3">
-              4-Door Trucks
-            </SelectItem>
-            <SelectItem className="text-2xl" value="4">
-              3-Row SUV's & Minivans
-            </SelectItem>
-          </SelectGroup>
-        </SelectContent>
-      </Select>
-      <div className="flex flex-col justify-between items-center w-[90%] my-0 mx-auto max-w-[700px] lg:flex-row">
-        <div className="flex flex-col items-start mb-4 w-full lg:w-1/2">
-          <p className="text-2xl">Starting At:</p>
-          {props.shortTitle == "extCorrect" || props.shortTitle == "extPolish" ? (
-            <p className="text-gray-400 text-sm text-left">*Additional Correction (e.g., wet sanding, touchup painting) is available at $150/hour.</p>
-          ) : (
-            ""
-          )}
-          {props.shortTitle == "intRestoration" ? (
-            <p className="text-gray-400 text-sm text-left">
-              *Pricing varies greatly depending on condition. Free quotes are always available, just stop by or call!
-            </p>
-          ) : (
-            ""
-          )}
+    <div className="w-full text-white">
+      <div className="flex flex-col lg:flex-row items-center gap-[5vh] px-20 py-0 mb-20 w-3/4 mx-auto">
+        <div className="relative w-[90vw] h-[35vh] max-w-[600px] rounded-xl bg-center bg-cover bg-no-repeat lg:max-w-[800px]">
+          <Image
+            src={imagesArr[currVal]}
+            alt="Dirt-Less Detailing sizing"
+            fill
+            sizes="(max-width: 1350px) 600px, (min-width: 1351px) 800px"
+            className="object-cover rounded-3xl"
+          />
         </div>
-        <div className="flex flex-col items-center gap-2">
-          <div className="flex items-center">
-            {salePrices["active"] ? (
-              <span className="text-3xl font-bold line-through text-red-500 mr-2 mt-8">${prices[sizesArr[currVal]][props.serviceType][props.shortTitle]}</span>
-            ) : (
-              ""
-            )}
-            <div className="flex flex-col items-center">
-              {salePrices["active"] ? <span className="text-xl text-right text-green-500 font-semibold">{salePrices["saleName"]}!</span> : ""}
-              <strong className="pricing__pricecard-pricebox">
-                <span className="pricing__pricecard-price">{content}</span>
-              </strong>
+        <div className="flex flex-col lg:w-1/2 gap-8">
+          <Select value={currVal} onValueChange={(e) => updateValue(e)} defaultValue="2">
+            <SelectTrigger className="text-2xl w-[275px] lg:w-[375px] lg:mx-auto">
+              <SelectValue placeholder="Select a vehicle size." />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectGroup className="text-2xl text-white">
+                <SelectLabel className="text-2xl">Sizes</SelectLabel>
+                <SelectItem className="text-2xl" value="0">
+                  Any 2-Door Vehicle
+                </SelectItem>
+                <SelectItem className="text-2xl" value="1">
+                  4-Door Sedans
+                </SelectItem>
+                <SelectItem className="text-2xl" value="2">
+                  Mid-Size SUV's
+                </SelectItem>
+                <SelectItem className="text-2xl" value="3">
+                  4-Door Trucks
+                </SelectItem>
+                <SelectItem className="text-2xl" value="4">
+                  3-Row SUV's & Minivans
+                </SelectItem>
+              </SelectGroup>
+            </SelectContent>
+          </Select>
+          <div className="flex flex-col justify-between items-center w-[90%] my-0 mx-auto max-w-[700px] lg:flex-row">
+            <div className="flex flex-col items-start mb-4 w-full lg:w-1/2">
+              <p className="text-2xl mx-auto lg:mx-0">Starting At:</p>
+              {props.shortTitle == "extCorrect" || props.shortTitle == "extPolish" ? (
+                <p className="text-gray-400 text-sm text-left">*Additional Correction (e.g., wet sanding, touchup painting) is available at $150/hour.</p>
+              ) : (
+                ""
+              )}
+              {props.shortTitle == "intRestoration" ? (
+                <p className="text-gray-400 text-sm text-left">
+                  *Pricing varies greatly depending on condition. Free quotes are always available, just stop by or call!
+                </p>
+              ) : (
+                ""
+              )}
+            </div>
+            <div className="flex flex-col items-center gap-2">
+              <div className="flex items-center">
+                {salePrices["active"] ? (
+                  <span className="text-3xl font-bold line-through text-red-500 mr-2 mt-8">
+                    ${prices[sizesArr[currVal]][props.serviceType][props.shortTitle]}
+                  </span>
+                ) : (
+                  ""
+                )}
+                <div className="flex flex-col items-center">
+                  {salePrices["active"] ? <span className="text-xl text-right text-green-500 font-semibold">{salePrices["saleName"]}!</span> : ""}
+                  <strong className="pricing__pricecard-pricebox border-white border-2">
+                    <span className="pricing__pricecard-price">{content}</span>
+                  </strong>
+                </div>
+              </div>
+              <p className="flex m-0 text-base">
+                +Desired Add-ons <CornerRightDown color="#ffffff" size={20} />
+              </p>
             </div>
           </div>
-          <p className="flex m-0 text-base">
-            +Desired Add-ons <CornerRightDown color="#ffffff" size={20} />
-          </p>
         </div>
       </div>
-      <hr className="pricing__hr" />
-      <h3 style={{ fontSize: "2em", margin: 0 }} className="text-center">
-        Get even more out of your service with one of our add-ons!
-      </h3>
-      {addonSection}
-      <a href="/contact" className="new-contact-btn">
-        Contact Us
-      </a>
+      <div className="w-[100vw]">
+        <hr className="pricing__hr" />
+        <h3 className="text-center text-3xl font-semibold my-8">Get even more out of your service with our add-ons!</h3>
+        {addonSection}
+        <a href="/contact" className="new-contact-btn">
+          Contact Us
+        </a>
+      </div>
     </div>
   );
 }

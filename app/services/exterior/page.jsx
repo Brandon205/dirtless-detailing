@@ -44,21 +44,19 @@ export default function Exterior() {
 
       <div className="main-content-container">
         <div className="process-container">
-          <div style={{ width: "100%" }}>
-            <div>
+          <div className="w-full">
+            <div className="w-full bg-zinc-800 pb-8">
               <div className="pricing__heading-container">
                 <h3 className="pricing__heading">
                   <span className="text-accent bold">Exterior Decon Wash</span> Pricing
                 </h3>
-                <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
+                <strong className="pricing__subheading">Select your vehicle size below to get a starting price estimate.</strong>
               </div>
               <PricingComponent shortTitle="extDecon" serviceType="exterior" addons="exterior" />
             </div>
 
             <main className="w-full text-white my-0 mx-auto text-center p-4">
-              <h2 style={{ marginBottom: 0 }} className="text-large">
-                Our Exterior Decontamination Wash
-              </h2>
+              <h2 className="text-large mb-0">Our Exterior Decontamination Wash</h2>
               <hr style={{ margin: "0 auto 3rem auto" }} />
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">

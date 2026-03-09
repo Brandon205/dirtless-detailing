@@ -1,16 +1,7 @@
 "use client";
 import React from "react";
 import PricingComponent from "../../components/PricingComponent";
-import {
-  previewParentVariation,
-  imgVariation1,
-  imgVariation2,
-  imgVariation3,
-  imgVariation4,
-  containerVariant,
-  oddVariant,
-  evenVariant
-} from "../../../utils/animationVariations";
+import { previewParentVariation, imgVariation1, imgVariation2, imgVariation3, imgVariation4 } from "../../../utils/animationVariations";
 import BeforeAfterSlider from "../../components/ImageSlider";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
@@ -45,7 +36,7 @@ export default function InteriorRestoration() {
 
       <div className="main-content-container">
         <div className="process-container">
-          <div style={{ width: "100%" }}>
+          <div className="w-full">
             {/* <div>
               <div className="pricing__heading-container">
                 <h3 className="pricing__heading">
@@ -91,8 +82,8 @@ export default function InteriorRestoration() {
                 <p className="text-sm text-gray-400">*depending on size/condition</p>
                 <p className="text-left">
                   If there's just a small spot or a little mold, it's included in our Full Interior Service, but if there's more than one area or the mold is
-                  very bad, this is the service for you. We use Mmultiple idfferent stages and chemicals all with the ability to kill mold, and end it off with
-                  a complete ozone treatment to get the places no one can reach.
+                  very bad, this is the service for you. We use multiple different stages and chemicals all with the ability to kill mold, and end it off with a
+                  complete ozone treatment to get the places no one can reach.
                 </p>
               </div>
               <div className="max-w-[400px] w-full bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-6 mb-8">
@@ -110,15 +101,15 @@ export default function InteriorRestoration() {
                 <strong className="font-bold text-2xl text-primary">QUOTE REQUIRED*</strong>
                 <p className="text-sm text-gray-400">*depending on size/condition</p>
                 <p className="text-left">
-                  For typically older vehicles that have sun damage, fading plastics and leathers, and varying levels of wear, this is the service for you. We
-                  will use specialized cleaners to rejuvenate plastics and leathers, and do our best to restore the interior to its best possible condition,
-                  while protecting it from further damage with UV inhibitors and a durable interior dressing.
+                  Typically for older vehicles that have sun damage, fading plastics and leathers, and varying levels of wear. We will use specialized cleaners
+                  to rejuvenate plastics and leathers, and do our best to restore the interior to its best possible condition, while protecting it from further
+                  damage with UV inhibitors and a durable interior dressing.
                 </p>
               </div>
             </div>
 
-            <div className="w-full bg-zinc-800 flex text-white rounded-lg shadow-sm border border-zinc-900 p-6 mb-8 max-w-[1200px] mx-auto text-left gap-4 flex-col lg:flex-row justify-center lg:justify-start">
-              <div className="w-full h-full relative">
+            <div className="w-full bg-zinc-800 flex text-white rounded-lg shadow-sm border border-zinc-900 p-6 mb-8 max-w-[1315px] mx-auto text-left gap-4 flex-col lg:flex-row justify-center lg:justify-start">
+              <div className="w-full h-[250px] relative">
                 <Image
                   src="/assets/images/before&afters/badInteriorBA.png"
                   alt="Before and after of a heavily neglected interior"
@@ -130,7 +121,7 @@ export default function InteriorRestoration() {
                 />
               </div>
               <div>
-                <h3 className="font-semibold text-2xl text-primary mb-2">BUDGET CONSCIOUS RESTORATION: OPT FOR CAPPED HOURLY DETAIL</h3>
+                <h3 className="font-semibold text-2xl text-primary mb-2">BUDGET CONSCIOUS RESTORATION: OPT FOR A CAPPED HOURLY DETAIL</h3>
                 <p>
                   Choose this option for these services at an hourly rate ($125-$150/hour). Set a specific time limit (e.g., a 4 or 6 hour block). We prioritize
                   your biggest concerns and get through the most important steps for you before the time is up without extra things you may not be as worried
@@ -309,7 +300,7 @@ export default function InteriorRestoration() {
             <br className="extra-space" />
 
             <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
-            <h3 className="pricing__heading">The way your car should be.</h3>
+            <h3 className="pricing__heading">Back to the way your car should be.</h3>
             <p className="pricing__subtext">A car that you aren't scared or ashamed of to be driving anymore!</p>
             <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto mb-24">
               <BeforeAfterSlider
