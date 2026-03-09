@@ -160,7 +160,7 @@ export default function Home() {
         {!smallScreen && <Benefits />}
 
         <div className="general-container new-heading-container pt-5">
-          <strong className="above-heading text-4xl">Interior Services</strong>
+          <strong className="above-heading text-4xl">INTERIOR SERVICES</strong>
           <h2 className="new-heading text-xl lg:text-2xl">Transform your vehicle's interior with our Premium Auto Detailing services.</h2>
         </div>
         <div className="flex flex-col lg:flex-row flex-grow lg:justify-between lg:items-stretch lg:flex-wrap lg:w-[90%] lg:my-0 mx-auto justify-center items-center gap-24 mb-8">
@@ -219,7 +219,7 @@ export default function Home() {
         <br className="extra-space" />
 
         <div className="general-container new-heading-container" style={{ margin: "5vh auto 2vh auto" }}>
-          <strong className="above-heading text-4xl"> Exterior Services </strong>
+          <strong className="above-heading text-4xl">EXTERIOR SERVICES</strong>
           <h3 className="new-heading text-xl lg:text-2xl">
             From a quick wash to a complete paint correction and ceramic coating, we cover all things exterior!
           </h3>

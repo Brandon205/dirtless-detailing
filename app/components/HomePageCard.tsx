@@ -20,9 +20,22 @@ const serviceVariant = {
   hover: { scale: 1.05 }
 };
 
-export default function HomePageCard({ title, imageUrl, description, steps, hours, linkUrl, serviceType, specificService }) {
+// colors: {bgMain: "zinc-800", bgLight: "zinc-500", bgHighlight: "zinc-300"}
+export default function HomePageCard({
+  title,
+  imageUrl,
+  description,
+  steps,
+  hours,
+  linkUrl,
+  serviceType,
+  specificService,
+  colors = { bgMain: "bg-red-500", bgLight: "bg-zinc-500", bgHighlight: "bg-zinc-300", borderColor: "border-gray-300" }
+}) {
   return (
-    <div className="flex flex-col flex-1 relative w-[90%] min-w-[200px] lg:min-w-[400px] max-w-[95%] lg:max-w-[1030px] gap-2 rounded-2xl pb-8 bg-zinc-800 overflow-hidden shadow-lg">
+    <div
+      className={`flex flex-col flex-1 relative w-[90%] min-w-[200px] lg:min-w-[400px] max-w-[95%] lg:max-w-[1030px] gap-2 rounded-2xl pb-8 ${colors.bgMain} overflow-hidden shadow-lg`}
+    >
       {/* Diagonal sale banner */}
       {/* <div className="absolute top-10 right-[-36px] z-20 rotate-45 bg-gradient-to-r from-rose-600 to-red-500 text-white px-6 py-1 shadow-lg uppercase font-bold text-lg tracking-tight pointer-events-none max-w-[200px] text-center overflow-hidden whitespace-nowrap leading-none">
         Winter Sale
@@ -64,15 +77,16 @@ export default function HomePageCard({ title, imageUrl, description, steps, hour
         </motion.ul>
 
         <div className="w-full">
-          <div className="flex w-full justify-around gap-4 py-4">
-            <div className="flex flex-col items-center p-2 bg-zinc-900 w-full rounded-2xl font-bold">
-              <p className="text-white m-0">{hours}</p>
-              <p className="text-gray-400 text-[14px]">hours</p>
+          <div className="flex w-full justify-around gap-4 py-2 bg-zinc-900 rounded-2xl mb-4 flex-col lg:flex-row">
+            <div className="flex flex-col items-center p-2  w-full rounded-2xl font-bold">
+              <p className="text-gray-300 text-[14px] font-medium">EST. TIME:</p>
+              <p className="text-white text-2xl m-0">{hours} hrs</p>
             </div>
-            <div className="flex flex-col items-center p-2 bg-zinc-900 w-full rounded-2xl font-bold">
-              <p className="text-gray-400 text-[14px]">Starting at</p>
+            <div className="w-px bg-gray-300"></div>
+            <div className="flex flex-col items-center p-2 w-full rounded-2xl font-bold">
+              <p className="text-gray-300 text-[14px] font-medium">FROM:</p>
               <div className="flex flex-col lg:flex-row items-center">
-                <p className="text-2xl font-bold lg:mr-2 m-0">${prices["Any 2-Door Vehicle"][serviceType][specificService]}</p>
+                <p className="text-2xl font-bold m-0">${prices["Any 2-Door Vehicle"][serviceType][specificService]}</p>
                 {/* <p className="text-green-500 m-0 text-2xl">${salePrices["Any 2-Door Vehicle"][serviceType][specificService]}</p> */}
               </div>
             </div>
@@ -81,12 +95,12 @@ export default function HomePageCard({ title, imageUrl, description, steps, hour
           <div className="flex w-full justify-around gap-4 flex-col lg:flex-row">
             <motion.a
               href={linkUrl}
-              className="py-3 text-dm tracking-wide px-[0.9rem] bg-gray-500 rounded-[40px] text-center font-bold text-clip lg:w-1/2"
+              className="py-3 text-dm tracking-wide px-[0.9rem]  rounded-[40px] text-center font-bold text-clip lg:w-1/2 border-2 border-gray-300"
               initial={{ scale: 1 }}
               whileHover={{ scale: 1.05 }}
               aria-label={`Learn More about our ${title} service.`}
             >
-              Learn More
+              MORE INFO
             </motion.a>
             <motion.a
               href="/contact"
@@ -94,7 +108,7 @@ export default function HomePageCard({ title, imageUrl, description, steps, hour
               initial={{ scale: 1 }}
               whileHover={{ scale: 1.05 }}
             >
-              Schedule Today!
+              SCHEDULE NOW
             </motion.a>
           </div>
         </div>
