@@ -160,63 +160,54 @@ export default function Home() {
         {!smallScreen && <Benefits />}
 
         <div className="general-container new-heading-container pt-5">
-          <strong className="above-heading text-4xl">INTERIOR SERVICES</strong>
+          <strong className="above-heading text-4xl">PREMIUM INTERIOR SERVICES</strong>
           <h2 className="new-heading text-xl lg:text-2xl">Transform your vehicle's interior with our Premium Auto Detailing services.</h2>
         </div>
-        <div className="flex flex-col lg:flex-row flex-grow lg:justify-between lg:items-stretch lg:flex-wrap lg:w-[90%] lg:my-0 mx-auto justify-center items-center gap-24 mb-8">
+        <div className="flex flex-col lg:flex-row flex-grow lg:justify-between lg:items-stretch lg:flex-wrap lg:w-[90%] mx-auto justify-center items-center gap-24 mt-8 mb-8">
           <HomePageCard
             title="Interior Refresh"
             imageUrl="/assets/images/interior/driver11.jpg"
-            description="Our Interior Refresh service is designed for those who have had our interior service within the past year, or for cars that need a quick refresh to get it back to that like-new feel."
-            steps={[
-              "Blow-out and vacuum to remove dirt and debris",
-              "Clean and condition all leather and plastics",
-              "Quick wipe of all door jambs",
-              "Wash/clean all floor mats",
-              "Clean interior glass to a streak-free finish"
-            ]}
+            description="Best for vehicles maintained within the last year or cars needing a light refresh to restore that like-new feel."
+            stepHeadline="KEY FEATURES"
+            steps={["Quick air blow-out", "Clean & condition surfaces", "Quick wipe door jambs"]}
             hours="2-4"
             linkUrl="/services/interior-refresh"
             serviceType="interior"
             specificService="intRefresh"
+            colors={{ bgMain: "bg-slate-950", bgLight: "bg-slate-900", bgHighlight: "bg-sky-500", borderColor: "border-cyan-400" }}
           />
 
           <HomePageCard
             title="Full Interior Detail"
             imageUrl="/assets/images/interior/driver5.jpg"
-            description="Our thorough interior cleaning uses extensively researched chemicals and proven techniques, perfect for cars with staining, pet hair, or ones that haven't been properly cleaned in ages."
+            description="A deeper clean targeting stains, pet hair, and heavy grime. Ideal for vehicles needing a complete interior reset."
+            stepHeadline="KEY ADDITIONS OVER INTERIOR REFRESH"
             steps={[
-              "Thorough blow-out and vacuum to remove all dirt and debris",
-              "Stain removal and extraction of all fabrics + headliner",
-              "Wash all of the door jambs",
-              "Deep cleaning & conditioning of all leather and plastics",
-              "Wash/clean all floor mats",
-              "Clean interior glass to a streak-free finish"
+              "Thorough blow-out and vacuum",
+              "Stain Extraction + Headliner Cleaning",
+              "Wash out all door jambs"
+              // "Deep cleaning & conditioning of surfaces"
             ]}
             hours="3-6"
             linkUrl="/services/interior"
             serviceType="interior"
             specificService="intFull"
+            colors={{ bgMain: "bg-slate-950", bgLight: "bg-slate-900", bgHighlight: "bg-teal-500", borderColor: "border-teal-600" }}
           />
 
           <HomePageCard
             title="Interior Restoration"
             imageUrl="/assets/images/before&afters/badInteriorBA.png"
-            description="For cars with heavy staining, strong odors, mold, or ones that have been neglected beyond what our Full Interior Detail can handle, our Interior Restoration service is for you."
-            steps={[
-              "EVERYTHING From our Full Interior Service",
-              "Extra time and chemicals spent on heavy stains",
-              "Full fabric/carpet extraction to pull out deep dirt and odors",
-              "Ozone Treatment included to eliminate odors and kill mold spores"
-            ]}
+            description="Specialized care for mold, smoke odors, or extreme neglect. We restore interiors that standard detailing can't handle."
+            stepHeadline="KEY ADDITIONS OVER THE FULL INTERIOR DETAIL"
+            steps={["Comprehensive odor removal", "Extra time & chemicals spent on heavy stains", "Ozone Treatment included"]}
             hours="4.5-8+"
             linkUrl="/services/interior-restoration"
             serviceType="interior"
             specificService="intRestoration"
+            colors={{ bgMain: "bg-slate-950", bgLight: "bg-slate-900", bgHighlight: "bg-violet-600", borderColor: "border-purple-500" }}
           />
         </div>
-
-        <br className="extra-space" />
 
         <div className="general-container new-heading-container" style={{ margin: "5vh auto 2vh auto" }}>
           <strong className="above-heading text-4xl">EXTERIOR SERVICES</strong>
@@ -228,66 +219,68 @@ export default function Home() {
           <HomePageCard
             title="Exterior Decon Wash"
             imageUrl="/assets/images/exterior/jeepRenegade.jpg"
-            description="The detailers car wash - one that goes far beyond what an auto car wash can do. Your wheels, tires, and even paint will be cleaner than ever!"
+            description="A professional-grade deep clean for your paint and wheels that an automatic car wash simply can't touch."
+            stepHeadline="KEY FEATURES"
             steps={[
-              "Full vehicle top to bottom wash, with tar and sap remover applied where needed",
+              "Full vehicle top to bottom wash",
               "Scrub & wash the tires, wheels, wheel barrels, and wells",
-              "Clean out all door jambs and the gas door",
-              "Apply a ceramic spray on all surfaces (lasts 3-6 months)"
+              "Wash all door jambs & gas door",
+              "3-6 month ceramic spray sealant"
             ]}
             hours="1-2"
             linkUrl="/services/exterior"
             serviceType="exterior"
             specificService="extDecon"
+            colors={{ bgMain: "bg-slate-950", bgLight: "bg-slate-900", bgHighlight: "bg-sky-500", borderColor: "border-cyan-400" }}
           />
           <HomePageCard
             title="Wash & Coat"
             imageUrl="/assets/images/exterior/hondaFront.jpg"
-            description="Our top of the line coating, installed without the cost or need for paint correction."
-            steps={[
-              "Our Exterior Decon Wash + clay bar treatment",
-              "Apply a Primer Polish to ensure proper bonding",
-              "Apply a specialized coating on the windshield",
-              "Apply our 3-Year Ceramic Coating to the rest of the vehicle."
-            ]}
+            description="Premium ceramic protection for your paint and wheels without the cost or time of paint correction."
+            stepHeadline="KEY ADDITIONS OVER OUR DECON WASH"
+            steps={["A thorough 3-step wash process", "Coating prep with a primer polish", "3-Year Ceramic Coating + Windshield Coating Application"]}
             hours="5-8"
             linkUrl="/services/wash-coat"
             serviceType="exterior"
             specificService="extWashCoat"
+            colors={{ bgMain: "bg-slate-950", bgLight: "bg-slate-900", bgHighlight: "bg-teal-500", borderColor: "border-teal-600" }}
           />
 
           <HomePageCard
             title="Polish & Coat"
             imageUrl="/assets/images/sealshine/seal-shine.jpg"
-            description="Our top exterior package featuring single-stage paint correction and a 3-year ceramic coating "
+            description="Single-stage paint correction and a 3-year ceramic coating for drastic gloss enhancement and protection."
+            stepHeadline="KEY ADDITIONS OVER OUR DECON WASH"
             steps={[
-              "Our Exterior Decon Wash + clay bar treatment",
-              "A full vehicle polish to remove light scratches and swirl marks",
-              "Restore and ceramic coat all trim",
-              "Ceramic coat the windshield (lasts 6-12 months)",
-              "Apply a 3-year ceramic coating to the entire vehicle"
+              "A thorough 3-step wash process",
+              "Included clay bar treatment",
+              "A single-stage polish",
+              "3-Year Ceramic Coating + Windshield Coating Application"
             ]}
             hours="6-9+"
             linkUrl="/services/polish"
             serviceType="exterior"
             specificService="extPolish"
+            colors={{ bgMain: "bg-slate-950", bgLight: "bg-slate-900", bgHighlight: "bg-violet-600", borderColor: "border-purple-500" }}
           />
 
           <HomePageCard
             title="Correct & Coat"
             imageUrl="/assets/images/correction/genesis1.jpeg"
-            description="A full 2-stage paint correction topped with a 3-year ceramic coating - using skills refined through our years of experience!"
+            description="Our ultimate package: 2-stage paint correction and a 3-year ceramic coating for a flawless, mirror-like finish."
+            stepHeadline="KEY ADDITIONS OVER OUR DECON WASH"
             steps={[
-              "Our Exterior Decon Wash + clay bar treatment",
-              "A 2-stage paint correction (removes 80%-90% of scratches)",
+              "A thorough 3-step wash process",
+              "Included clay bar treatment",
+              "A 2-stage paint correction (can remove 70-95% of swirls and scratches)",
               "Restore and ceramic coat all trim",
-              "Ceramic coat the windshield & all wheel faces (usually an extra cost, we include it free!)",
-              "Apply a 3-year ceramic coating to the paint"
+              "Apply our 3-Year Ceramic Coating, our Windshield Coating, and coat the wheel faces"
             ]}
             hours="10-15+"
             linkUrl="/services/correct"
             serviceType="exterior"
             specificService="extCorrect"
+            colors={{ bgMain: "bg-slate-950", bgLight: "bg-slate-900", bgHighlight: "bg-amber-600", borderColor: "border-rose-400" }}
           />
         </div>
 

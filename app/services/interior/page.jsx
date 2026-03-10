@@ -190,15 +190,15 @@ export default function FullIntEx() {
                 </div>
                 <div className="step-container">
                   <h4 className="step-title flex line-through">
-                    Interior Spill Guard Coating{" "}
-                    <a href="/services/interior-spill">
+                    Interior Restoration{" "}
+                    <a href="/services/interior-restoration">
                       <ExternalLink color="#3b82f6" size={24} className="mt-1 ml-1" />
                     </a>
                   </h4>
                   <p className="step-desc">
-                    Upgrade to our Spill Guard Service to have us apply a 1-year interior ceramic coating to all surfaces in the vehicle. This is PERFECT for
-                    cars with kids, pets, or daily coffee trips with the occasional spills as cleaning it will now be easier. See more info{" "}
-                    <a href="/services/interior-spill" className="text-blue-500">
+                    If you are looking for a more extensive interior detailing service to bring a car that has really been through it, you may need to consider
+                    our Interior Restoration option. See more info{" "}
+                    <a href="/services/interior-restoration" className="text-blue-500">
                       here
                     </a>
                     .

@@ -20,7 +20,8 @@ const serviceVariant = {
   hover: { scale: 1.05 }
 };
 
-// colors: {bgMain: "zinc-800", bgLight: "zinc-500", bgHighlight: "zinc-300"}
+// colors: {bgMain: "zinc-800", bgLight: "zinc-500", bgHighlight: "zinc-300", borderColor: "gray-300"}
+// bgMain: background the card, bgLight: background for the second layer cards, bgHighlight: for the main button and the NEW span, borderColor: for the border of everything
 export default function HomePageCard({
   title,
   imageUrl,
@@ -30,11 +31,12 @@ export default function HomePageCard({
   linkUrl,
   serviceType,
   specificService,
-  colors = { bgMain: "bg-red-500", bgLight: "bg-zinc-500", bgHighlight: "bg-zinc-300", borderColor: "border-gray-300" }
+  stepHeadline,
+  colors = { bgMain: "bg-gray-200", bgLight: "bg-zinc-500", bgHighlight: "bg-zinc-300", borderColor: "border-gray-300" }
 }) {
   return (
     <div
-      className={`flex flex-col flex-1 relative w-[90%] min-w-[200px] lg:min-w-[400px] max-w-[95%] lg:max-w-[1030px] gap-2 rounded-2xl pb-8 ${colors.bgMain} overflow-hidden shadow-lg`}
+      className={`flex flex-col flex-1 relative w-[90%] min-w-[200px] min-h-[950px] lg:min-w-[400px] max-w-[95%] lg:max-w-[1030px] gap-2 rounded-2xl pb-8 ${colors.bgMain} ${colors.borderColor} border-2 overflow-hidden shadow-[0_0_15px_rgba(59,130,246,0.5)]`}
     >
       {/* Diagonal sale banner */}
       {/* <div className="absolute top-10 right-[-36px] z-20 rotate-45 bg-gradient-to-r from-rose-600 to-red-500 text-white px-6 py-1 shadow-lg uppercase font-bold text-lg tracking-tight pointer-events-none max-w-[200px] text-center overflow-hidden whitespace-nowrap leading-none">
@@ -59,25 +61,30 @@ export default function HomePageCard({
           <motion.p className="text-center p-0 text-gray-400 font-semibold mx-auto max-w-[90%]">{description}</motion.p>
         </div>
 
-        <motion.ul
-          className="list-none flex flex-col justify-start items-start text-xl font-normal w-full m-0 gap-4 pt-6 pb-4"
-          variants={{ initial: {}, show: { transition: { staggerChildren: 0.25 } } }}
-          whileInView="show"
-          initial="initial"
-          viewport={{ once: true }}
-        >
-          {steps.map((step, index) => (
-            <motion.li className="flex justify-start items-center text-left" variants={listItemVariant} key={index}>
-              <div className="flex-shrink-0 w-[36px] h-[36px]">
-                <Check color="#1ca55d" size={36} />
-              </div>
-              <p className="ml-2">{step}</p>
+        <div className={`${colors.borderColor} ${colors.bgLight} border-2 rounded-2xl w-full p-4`}>
+          <p className="text-2xl px-2 font-semibold my-4">{stepHeadline}</p>
+          <motion.ul
+            className={`list-disc list-inside pl-5 text-xl space-y-1 font-normal ${colors.bgLight} w-full gap-4 pb-4 rounded-b-2xl ${colors.borderColor} border-t-0`}
+            variants={{ initial: {}, show: { transition: { staggerChildren: 0.25 } } }}
+            whileInView="show"
+            initial="initial"
+            viewport={{ once: true }}
+          >
+            {steps.map((step, index) => (
+              <motion.li className="text-left" variants={listItemVariant} key={index}>
+                {step}
+              </motion.li>
+            ))}
+            <motion.li className="flex justify-start items-center text-left" variants={listItemVariant}>
+              <p className="text-md font-medium text-gray-400">
+                + More! Click <span className="text-gray-300">More Info</span> below for details
+              </p>
             </motion.li>
-          ))}
-        </motion.ul>
+          </motion.ul>
+        </div>
 
         <div className="w-full">
-          <div className="flex w-full justify-around gap-4 py-2 bg-zinc-900 rounded-2xl mb-4 flex-col lg:flex-row">
+          <div className={`flex w-full justify-around gap-4 py-2 ${colors.bgLight} rounded-2xl mb-4 flex-col lg:flex-row`}>
             <div className="flex flex-col items-center p-2  w-full rounded-2xl font-bold">
               <p className="text-gray-300 text-[14px] font-medium">EST. TIME:</p>
               <p className="text-white text-2xl m-0">{hours} hrs</p>
@@ -104,7 +111,7 @@ export default function HomePageCard({
             </motion.a>
             <motion.a
               href="/contact"
-              className="py-3 text-dm tracking-wide px-[0.9rem] bg-primary rounded-[40px] w-full font-bold items-center flex justify-center"
+              className={`py-3 text-dm tracking-wide px-[0.9rem] ${colors.bgHighlight} rounded-[40px] w-full font-bold items-center flex justify-center`}
               initial={{ scale: 1 }}
               whileHover={{ scale: 1.05 }}
             >
