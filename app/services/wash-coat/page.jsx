@@ -52,7 +52,7 @@ export default function Exterior() {
                 </h3>
                 <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
               </div>
-              <PricingComponent shortTitle="extWashCoat" serviceType="exterior" addons="exterior" />
+              <PricingComponent shortTitle="extWashCoat" serviceType="exterior" addons="washCoat" />
             </div>
 
             <main className="w-full text-white my-0 mx-auto text-center p-4">

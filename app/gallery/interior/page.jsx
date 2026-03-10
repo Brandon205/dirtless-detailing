@@ -123,8 +123,8 @@ export default function FullIntGallery() {
               Full Interior
             </a>{" "}
             or{" "}
-            <a href="/services/interior-spill" className="text-blue-500">
-              Full Interior + Spill Guard
+            <a href="/services/interior-restoration" className="text-blue-500">
+              Interior Restoration
             </a>{" "}
             to find out more.
           </strong>
@@ -153,8 +153,8 @@ export default function FullIntGallery() {
             Full Interior Cleaning
           </a>{" "}
           page or our{" "}
-          <a href="/services/interior-spill" className="text-blue-500">
-            Full Interior + Spill Guard{" "}
+          <a href="/services/interior-restoration" className="text-blue-500">
+            Interior Restoration{" "}
           </a>{" "}
           page for more details!
         </strong>

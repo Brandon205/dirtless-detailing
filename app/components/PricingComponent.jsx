@@ -48,6 +48,9 @@ export default function PricingComponent(props) {
       case "exterior":
         setAddonSection(<Exterior />);
         break;
+      case "washCoat":
+        setAddonSection(<WashCoat />);
+        break;
       case "intRefresh":
         setAddonSection(<InteriorRefresh />);
         break;
@@ -258,7 +261,7 @@ const Exterior = () => {
           </p>
         </div>
         <div className="bg-primary w-1/2 py-2 rounded-lg text-xl font-medium">
-          <p>$80/hour</p>
+          <p>$75</p>
         </div>
       </div>
       <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4 max-w-[500px]">
@@ -270,7 +273,36 @@ const Exterior = () => {
           </p>
         </div>
         <div className="bg-primary w-1/2 py-2 rounded-lg text-xl font-medium">
-          <p>$80/hour</p>
+          <p>$75</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+const WashCoat = () => {
+  return (
+    <div className="flex justify-center w-[90vw] mb-4 flex-wrap mx-auto my-0 gap-4 lg:flex-row">
+      <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4 max-w-[500px]">
+        <div className="w-full flex flex-col items-center gap-2 justify-center mb-4">
+          <h4 className="text-2xl font-semibold">Engine Bay Cleaning</h4>
+          <p className="text-xl text-gray-300">
+            We will cover sensitive/electronic areas in the bay, clean and wash, then dress the engine bay to have it looking like new!
+          </p>
+        </div>
+        <div className="bg-primary w-1/2 py-2 rounded-lg text-xl font-medium">
+          <p>$75</p>
+        </div>
+      </div>
+      <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4 max-w-[500px]">
+        <div className="w-full flex flex-col items-center gap-2 justify-center mb-4">
+          <h4 className="text-2xl font-semibold">Trim Restoration</h4>
+          <p className="text-xl text-gray-300">
+            If your trim is fading or oxidized, this is the perfect add-on to get it looking like new again! We will prep and restore all exterior trim on the
+            vehicle to bring back that deep black color and protect it from future fading. (Typically takes 30 minutes - 1 hour)
+          </p>
+        </div>
+        <div className="bg-primary w-1/2 py-2 rounded-lg text-xl font-medium">
+          <p>$75</p>
         </div>
       </div>
     </div>
