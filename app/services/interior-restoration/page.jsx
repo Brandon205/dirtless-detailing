@@ -42,7 +42,7 @@ export default function InteriorRestoration() {
                 <h3 className="pricing__heading">
                   <span className="text-accent bold">Interior Restoration</span> Pricing
                 </h3>
-                <strong className="pricing__subheading">Select your vehicle size below to get a quick price estimate for your vehicle.</strong>
+                <strong className="pricing__subheading">Select your vehicle size for an estimate.</strong>
               </div>
               <PricingComponent shortTitle="intRestoration" serviceType="interior" addons="intRestoration" />
             </div> */}

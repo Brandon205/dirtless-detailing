@@ -131,7 +131,7 @@ export default function Nav() {
 
   return (
     <header className="relative z-50">
-      <nav className={`w-full fixed transition-all duration-300 ${isScrolled || mobileMenuOpen ? "bg-zinc-800 shadow-md" : "bg-zinc-900/90"}`}>
+      <nav className={`w-full fixed transition-all duration-300 ${isScrolled || mobileMenuOpen ? "bg-zinc-800 shadow-xl" : "bg-zinc-900/90"}`}>
         <div className="max-w-7xl mx-0 lg:mx-auto px-4 sm:px-6 lg:px-8 ml-auto">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
@@ -281,7 +281,7 @@ export default function Nav() {
             </div>
             <Link
               href="/contact"
-              className="hidden lg:inline-flex absolute right-0 mr-4 lg:mr-8 items-center justify-center px-6 py-2.5 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-accent hover:bg-accentDarker transition-colors"
+              className="hidden lg:inline-flex absolute right-0 mr-4 lg:mr-8 items-center justify-center px-6 py-2.5 border border-transparent rounded-md shadow-md text-base font-medium text-white bg-accent hover:bg-accentDarker transition-colors"
             >
               CONTACT US
             </Link>

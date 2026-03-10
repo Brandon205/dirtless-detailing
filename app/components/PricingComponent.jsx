@@ -133,7 +133,7 @@ export default function PricingComponent(props) {
         </div>
         <div className="flex flex-col lg:w-1/2 gap-8">
           <Select value={currVal} onValueChange={(e) => updateValue(e)} defaultValue="2">
-            <SelectTrigger className="text-2xl w-[275px] lg:w-[375px] lg:mx-auto">
+            <SelectTrigger className="text-2xl w-[275px] lg:w-[375px] lg:mx-auto shadow-[0_0_15px_rgb(0,0,0)]">
               <SelectValue placeholder="Select a vehicle size." />
             </SelectTrigger>
             <SelectContent>
