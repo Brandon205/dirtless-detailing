@@ -13,7 +13,7 @@ import {
   evenVariant
 } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
-import { ExternalLink } from "lucide-react";
+import { Brush, ExternalLink, Sparkles } from "lucide-react";
 import BaseSchema from "../../jsonSchemas/BaseSchema";
 import Image from "next/image";
 
@@ -56,62 +56,49 @@ export default function InteriorRefresh() {
             </div>
 
             <main className="w-full text-white my-0 mx-auto text-center p-4">
-              <h2 style={{ marginBottom: 0 }} className="text-large">
+              {/* <h2 style={{ marginBottom: 0 }} className="text-large">
                 Our Interior Refresh Service
               </h2>
-              <hr style={{ margin: "0 auto 3rem auto" }} />
+              <hr style={{ margin: "0 auto 3rem auto" }} /> */}
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
-                  <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">Is Your Car Already Clean?</span>
-                  </h3>
-                  <p className="leading-relaxed">
-                    The Interior Refresh service is designed for vehicles that are already in good condition. If your car doesn't need deep stain extraction,
-                    extensive pet hair removal, or your interior hasn't been neglected too bad, the Interior Refresh is perfect for you. This service keeps your
-                    interior looking fresh and protected without the comprehensive work of our full interior detail. It's ideal for maintenance and touch-ups on
-                    already well-maintained vehicles.
-                  </p>
+              <div className="flex flex-col w-full gap-4 lg:w-5/6 mx-auto border-2 border-zinc-500 rounded-lg p-6 lg:p-8">
+                <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center mb-4">
+                  <div className="relative flex flex-grow justify-center rounded-2xl w-full h-[450px] lg:h-[550px] shadow-[0_0_20px_-5px_rgba(217,119,6,0.5)]">
+                    <Image src="/assets/images/interior/driver15.jpg" alt="Interior Refresh" className="rounded-2xl" objectFit="cover" fill />
+                  </div>
+
+                  <div className="flex flex-col w-full justify-between h-[475px] lg:h-[550px]">
+                    <div className="flex flex-col items-start">
+                      <h2 className="text-4xl font-bold">Our Interior Refresh Service</h2>
+                      <strong className="text-primary text-bold text-2xl">Maintenance-based Interior Detail</strong>
+                    </div>
+                    <div className="flex items-center">
+                      <Brush color="#f59e0b" size={156} className="mr-4" />
+                      <p className="leading-relaxed text-left text-md">
+                        Our Interior Refresh is designed for vehicles already in good condition that don't require intensive stain removal or heavy pet hair
+                        extraction. It's the perfect maintenance choice if you've had your vehicle detailed within the last year to keep your cabin looking
+                        sharp and protected without the extra cost of a deep clean.
+                      </p>
+                    </div>
+                    <div className="flex items-center">
+                      <Sparkles color="#f59e0b" size={156} className="mr-4" />
+                      <p className="leading-relaxed text-left text-md">
+                        We perform a thorough top-to-bottom cleaning of all surfaces, including seats, carpets, dashboards, and vents. While doing that we use
+                        products made to clean and condition, saving us time and you money while still giving the benefits of protected and conditioned surfaces
+                        (without a greasy finish)
+                      </p>
+                    </div>
+                    <div className="w-full p-4 bg-zinc-800 rounded-lg border border-zinc-600">
+                      <ul className="lg:max-h-[120px] list-disc list-inside leading-relaxed text-left w-full flex flex-wrap justify-between text-md">
+                        <li className="basis-1/2">Expert Chemical Research</li>
+                        <li className="basis-1/2">Specialized Carpet Methods</li>
+                        <li className="basis-1/2">Safe, Efficient, and Effective</li>
+                        <li className="basis-1/2">Targeted Odor Elimination</li>
+                        <li className="basis-1/2">Embedded Dirt & Stain Removal</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
-                  <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">Who Qualifies for Interior Refresh?</span>
-                  </h3>
-                  <p className="leading-relaxed">
-                    The Interior Refresh is the right choice if your vehicle is already pretty clean and doesn't require carpet or stain extraction. It's also
-                    perfect if you've had our Full Interior Service within the past year and want to maintain those results. If your car has heavy pet hair,
-                    stubborn stains, or a neglected interior, you'll want our Full Interior Service or for extremely bad ones our Interior Restoration Service.
-                    Interior Refresh is truly maintenance for the already-clean car.
-                  </p>
-                </div>
-
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
-                  <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">Comprehensive Cleaning for Clean Interiors</span>
-                  </h3>
-                  <p className="leading-relaxed">
-                    We thoroughly vacuum and clean all surfaces of your interior - seats, carpets, dashboard, door panels, windows, and vents. We don't use
-                    aggressive extraction or spot treatment that would be needed for heavily stained carpets. Instead, we focus on deep cleaning already-clean
-                    areas, removing dust and light soil that accumulates with normal use. Every step is designed to refresh without overdoing it.
-                  </p>
-                </div>
-
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
-                  <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">Protection and Conditioning That Lasts</span>
-                  </h3>
-                  <p className="leading-relaxed">
-                    We apply protectants and conditioners to keep your interior looking and feeling fresh. Leather gets conditioned to prevent cracking and
-                    maintain that supple feel while not getting that over the top shiny and greasy feel (we hate that!) Surfaces get protected from UV damage
-                    and dust adhesion. We use quality products that provide lasting protection, so your interior stays looking new longer. Maintenance has never
-                    been easier!
-                  </p>
-                </div>
-              </div>
-
-              {/* Call-to-action section */}
-              <div className="mt-8 p-3 lg:p-6 bg-zinc-800 rounded-lg border border-zinc-900">
                 <p className="text-center">
                   Need something more intensive? If your interior needs deep cleaning, stain extraction, or heavy pet hair removal, check out our Full Interior
                   Service{" "}

@@ -169,7 +169,7 @@ export default function Home() {
             imageUrl="/assets/images/interior/driver11.jpg"
             description="Best for vehicles maintained within the last year or cars needing a light refresh to restore that like-new feel."
             stepHeadline="KEY FEATURES"
-            steps={["Quick air blow-out", "Clean & condition surfaces", "Quick wipe door jambs"]}
+            steps={["Quick air blow-out & vacuum", "Clean & condition surfaces", "Quick wipe door jambs"]}
             hours="2-4"
             linkUrl="/services/interior-refresh"
             serviceType="interior"
