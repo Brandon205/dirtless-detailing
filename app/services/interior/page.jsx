@@ -2,18 +2,9 @@
 import PricingComponent from "../../components/PricingComponent";
 import BeforeAfterSlider from "../../components/ImageSlider";
 import HeaderComponent from "../../components/HeaderComponent";
-import {
-  previewParentVariation,
-  imgVariation1,
-  imgVariation2,
-  imgVariation3,
-  imgVariation4,
-  containerVariant,
-  oddVariant,
-  evenVariant
-} from "../../../utils/animationVariations";
-import { ExternalLink } from "lucide-react";
-import Image from "next/image";
+import MosaicGallery from "../../components/MosaicGallery";
+import { containerVariant, oddVariant, evenVariant } from "../../../utils/animationVariations";
+import { ExternalLink, Brush } from "lucide-react";
 import { motion } from "framer-motion";
 import BaseSchema from "../../jsonSchemas/BaseSchema";
 
@@ -58,62 +49,56 @@ export default function FullIntEx() {
             <br className="extra-space" />
 
             <main className="w-full text-white my-0 mx-auto text-center p-4">
-              <h2 style={{ marginBottom: 0 }} className="text-large">
+              {/* <h2 style={{ marginBottom: 0 }} className="text-large">
                 Our Interior Deep Cleaning
               </h2>
-              <hr style={{ margin: "0 auto 3rem auto" }} />
+              <hr style={{ margin: "0 auto 3rem auto" }} /> */}
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 lg:px-12 hover:shadow-md transition-shadow duration-200">
-                  <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">Much More Than Just A Surface Cleaning</span>
-                  </h3>
-                  <p className="leading-relaxed">
-                    This service is perfect for when your vehicle has gotten past the point that you can give it the quick rundown and have it looking nice.
-                    We've spent years researching and testing hundreds of different chemicals to find exactly what works best for every surface and every type
-                    of mess. From coffee stains to pet accidents, from embedded dirt to mystery odors - we don't just mask problems, we eliminate them with the
-                    right chemical for each specific situation.
-                  </p>
+              <div className="flex flex-col w-full gap-4 lg:w-5/6 mx-auto border-2 border-zinc-500 rounded-lg p-6 lg:p-8">
+                <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center mb-4">
+                  {/* <div className="relative flex flex-grow justify-center rounded-2xl w-full h-[450px] lg:h-[550px] shadow-[0_0_20px_-5px_rgba(217,119,6,0.5)]">
+                    <Image src="/assets/images/interior/driver15.jpg" alt="Interior Refresh" className="rounded-2xl" objectFit="cover" fill />
+                  </div> */}
+                  <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
+                    <BeforeAfterSlider
+                      beforeImage="/assets/images/before&afters/subPassB.jpg"
+                      afterImage="/assets/images/before&afters/subPassA.jpg"
+                      aspectRatio="16/9"
+                    />
+                  </div>
+
+                  <div className="flex flex-col w-full justify-between h-[475px] lg:h-[550px]">
+                    <div className="flex flex-col items-start">
+                      <h2 className="text-4xl font-bold">Our Full Interior Detail</h2>
+                      <strong className="text-primary text-bold text-2xl">Thorough Cleaning and Conditioning</strong>
+                    </div>
+                    <div className="flex items-center">
+                      <Brush color="#f59e0b" size={156} className="mr-4" />
+                      <p className="leading-relaxed text-left text-md">
+                        When your vehicle has reached the point where a simple vacuuming isn't enough, the Full Interior detail is the reset you need. We've
+                        spent years researching chemicals to find exactly what works for every mess—from coffee spills and pet accidents to embedded dirt and
+                        mystery odors. We don't just mask problems; we utilize specific chemistry to eliminate them at the source.
+                      </p>
+                    </div>
+                    <div className="flex items-center">
+                      <Brush color="#f59e0b" size={156} className="mr-4" />
+                      <p className="leading-relaxed text-left text-md">
+                        We match our techniques to your specific situation, using our specialized "carpet bonneting" to remove light stains and odors without
+                        unnecessarily soaking your floors. For tougher cases, we utilize high-grade extraction and agitation to pull mud and debris from deep
+                        within the fibers. Your interior won't just look clean—it will be as clean as modern detailing chemistry allows.
+                      </p>
+                    </div>
+                    <div className="w-full p-4 bg-zinc-800 rounded-lg border border-zinc-600">
+                      <ul className="lg:max-h-[120px] list-disc list-inside leading-relaxed text-left w-full flex flex-wrap justify-between text-md">
+                        <li className="basis-1/2">Expert Chemical Research</li>
+                        <li className="basis-1/2">Specialized Carpet Methods</li>
+                        <li className="basis-1/2">Safe, Efficient, and Effective</li>
+                        <li className="basis-1/2">Targeted Odor Elimination</li>
+                        <li className="basis-1/2">Embedded Dirt & Stain Removal</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 lg:px-12 hover:shadow-md transition-shadow duration-200">
-                  <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">We've Spent Too Much Time Looking For the Best Carpet Solutions</span>
-                  </h3>
-                  <p className="leading-relaxed">
-                    Our research goes beyond just what we use for the plastics and interior materials, we've also spent hours looking into different carpet
-                    cleaning techniques and products, tested them, and developed our own carpet bonneting technique that removes light staining and embedded
-                    odors while loosening hair, dirt, and debris that leaves the carpet just as clean without needing to soak the carpet with full extraction.
-                  </p>
-                </div>
-
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 lg:px-12 hover:shadow-md transition-shadow duration-200">
-                  <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">The Right Carpet Solution For Each Job</span>
-                  </h3>
-                  <p className="leading-relaxed">
-                    Though we have the bonneting technique for light maintenance cleaning, we also have a wide array of carpet cleaning chemicals and extraction
-                    equipment for when the situation calls for it. We will match specific products to specific problems ensuring the best possible outcome. Dog
-                    hair embedded in fabric? Mud ground into fibers? Mystery stains from last year? We've seen it all and have the right approach for each
-                    situation.
-                  </p>
-                </div>
-
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 lg:px-12 hover:shadow-md transition-shadow duration-200">
-                  <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">We've Seen It All</span>
-                  </h3>
-                  <p className="leading-relaxed">
-                    Taking us by surprise is difficult. We've cleaned hundreds of interiors and have the tools, chemicals, and techniques for every situation.
-                    Now there may be some stains that have been there too long or have set in to the carpet especially in lighter carpeting that may be
-                    impossible to get out. But our extensive chemical research and specialized techniques mean we can tackle problems that other shops would
-                    give up on. Your interior won't just look clean - it'll be as clean as possible.
-                  </p>
-                </div>
-              </div>
-
-              {/* Call-to-action section */}
-              <div className="mt-8 p-3 lg:p-6 lg:px-12 bg-zinc-800 rounded-lg border border-zinc-900">
                 <p className="text-center">
                   Want the exterior done as well? Feel free to book an interior and exterior detail, we will get your entire vehicle looking like new in just
                   one day! Check out our exterior decon wash{" "}
@@ -212,13 +197,6 @@ export default function FullIntEx() {
             <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
             <h3 className="pricing__heading">Fresh, Clean, and Stunning Results.</h3>
             <p className="pricing__subtext">Once we are done you won't want to see your car dirty ever again!</p>
-            <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
-              <BeforeAfterSlider
-                beforeImage="/assets/images/before&afters/nastykiadriversB.jpg"
-                afterImage="/assets/images/before&afters/nastykiadriverA.jpg"
-                aspectRatio="16/9"
-              />
-            </div>
 
             <div className="mt-12 p-6 lg:p-8 bg-gradient-to-r from-zinc-800 to-zinc-700 rounded-lg border border-accent border-opacity-30 text-center">
               <h3 className="text-2xl lg:text-3xl font-bold text-white mb-3">Want us to bring your car back to new?</h3>
@@ -235,7 +213,22 @@ export default function FullIntEx() {
 
             <br className="extra-space" />
 
-            <div className="preview-container">
+            <div>
+              <MosaicGallery
+                images={[
+                  { src: "/assets/images/before&afters/seatsBA.jpg", alt: "Car seats before and after" },
+                  { src: "/assets/images/interior/bio1281.jpg", alt: "Interior detail" },
+                  { src: "/assets/images/interior/centerOldMercedes.jpg", alt: "Center console detail" },
+                  { src: "/assets/images/interior/doorRenegade.jpg", alt: "Door panel detail" },
+                  { src: "/assets/images/interior/driver11.jpg", alt: "Driver side view" },
+                  { src: "/assets/images/interior/driver21.jpg", alt: "Driver side view" },
+                  { src: "/assets/images/interior/jamb4.jpg", alt: "Door jamb detail" },
+                  { src: "/assets/images/interior/rear15.jpg", alt: "Rear interior" },
+                  { src: "/assets/images/interior/trunk1.jpg", alt: "Trunk detail" }
+                ]}
+              />
+            </div>
+            {/* <div className="preview-container">
               <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/interior" className="gallery-preview">
                 <motion.div variants={imgVariation1} className="relative w-full h-[100px] rounded-xl">
                   <Image
@@ -287,7 +280,7 @@ export default function FullIntEx() {
                 </h4>
                 <p>Our interior gallery page has a large collection of interior images including before and after pictures!</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

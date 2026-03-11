@@ -56,11 +56,6 @@ export default function InteriorRefresh() {
             </div>
 
             <main className="w-full text-white my-0 mx-auto text-center p-4">
-              {/* <h2 style={{ marginBottom: 0 }} className="text-large">
-                Our Interior Refresh Service
-              </h2>
-              <hr style={{ margin: "0 auto 3rem auto" }} /> */}
-
               <div className="flex flex-col w-full gap-4 lg:w-5/6 mx-auto border-2 border-zinc-500 rounded-lg p-6 lg:p-8">
                 <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center mb-4">
                   <div className="relative flex flex-grow justify-center rounded-2xl w-full h-[450px] lg:h-[550px] shadow-[0_0_20px_-5px_rgba(217,119,6,0.5)]">
@@ -90,11 +85,11 @@ export default function InteriorRefresh() {
                     </div>
                     <div className="w-full p-4 bg-zinc-800 rounded-lg border border-zinc-600">
                       <ul className="lg:max-h-[120px] list-disc list-inside leading-relaxed text-left w-full flex flex-wrap justify-between text-md">
-                        <li className="basis-1/2">Expert Chemical Research</li>
-                        <li className="basis-1/2">Specialized Carpet Methods</li>
-                        <li className="basis-1/2">Safe, Efficient, and Effective</li>
-                        <li className="basis-1/2">Targeted Odor Elimination</li>
-                        <li className="basis-1/2">Embedded Dirt & Stain Removal</li>
+                        <li className="basis-1/2">Perfect for Maintenance</li>
+                        <li className="basis-1/2">Time-Efficient</li>
+                        <li className="basis-1/2">Cost-Effective</li>
+                        <li className="basis-1/2">Maintains Fresh Appearance</li>
+                        <li className="basis-1/2">Protects Interior Surfaces</li>
                       </ul>
                     </div>
                   </div>
