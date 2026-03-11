@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
-import PricingComponent from "../../components/PricingComponent";
 import { previewParentVariation, imgVariation1, imgVariation2, imgVariation3, imgVariation4 } from "../../../utils/animationVariations";
 import BeforeAfterSlider from "../../components/ImageSlider";
+import MosaicGallery from "../../components/MosaicGallery";
 import { motion } from "framer-motion";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Brush } from "lucide-react";
 import Image from "next/image";
 import HeaderComponent from "../../components/HeaderComponent";
 import BaseSchema from "../../jsonSchemas/BaseSchema";
@@ -37,15 +37,6 @@ export default function InteriorRestoration() {
       <div className="main-content-container">
         <div className="process-container">
           <div className="w-full">
-            {/* <div>
-              <div className="pricing__heading-container">
-                <h3 className="pricing__heading">
-                  <span className="text-accent bold">Interior Restoration</span> Pricing
-                </h3>
-                <strong className="pricing__subheading">Select your vehicle size for an estimate.</strong>
-              </div>
-              <PricingComponent shortTitle="intRestoration" serviceType="interior" addons="intRestoration" />
-            </div> */}
             <div className="flex justify-center gap-8 flex-col lg:flex-row">
               <div className="max-w-[450px] w-full bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-6 mb-8">
                 <h3 className="font-bold text-2xl text-primary">DEEP REVIVE:</h3>
@@ -145,63 +136,48 @@ export default function InteriorRestoration() {
             </div>
 
             <main className="w-full text-white my-0 mx-auto text-center p-4">
-              <h2 style={{ marginBottom: 0 }} className="text-large">
-                The Interior Restoration Service
-              </h2>
-              <hr style={{ margin: "0 auto 3rem auto" }} />
+              <div className="flex flex-col w-full gap-4 lg:w-5/6 mx-auto border-2 border-zinc-500 rounded-lg p-6 lg:p-8">
+                <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center mb-4">
+                  <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
+                    <BeforeAfterSlider
+                      beforeImage="/assets/images/before&afters/subDriveB.jpg"
+                      afterImage="/assets/images/before&afters/subDriveA.jpg"
+                      aspectRatio="16/9"
+                    />
+                  </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
-                  <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">Beyond Detailing: Full Interior Recovery</span>
-                  </h3>
-                  <p className="leading-relaxed">
-                    There is a level of "mess" that a standard interior detail simply can't solve. Whether you've purchased a neglected used vehicle, dealt with
-                    a major spill, or are facing the aftermath of a long winter, our Recovery service is designed for the extreme. We don't just surface-clean;
-                    we disassemble what is necessary to reach the source of the problem. If a seat needs to come out or a console needs to be cleared to reach a
-                    hidden biohazard or deep-seated grime, we do what it takes to reclaim your cabin.
-                  </p>
+                  <div className="flex flex-col w-full justify-between h-[475px] lg:h-[550px]">
+                    <div className="flex flex-col items-start">
+                      <h2 className="text-4xl font-bold">Our Full Interior Detail</h2>
+                      <strong className="text-primary text-bold text-2xl">Thorough Cleaning and Conditioning</strong>
+                    </div>
+                    <div className="flex items-center">
+                      <Brush color="#f59e0b" size={156} className="mr-4" />
+                      <p className="leading-relaxed text-left text-md">
+                        This is a full recovery service for vehicles facing extreme conditions that standard detailing simply cannot solve. We go beyond surface
+                        cleaning, making sure to get hidden biohazards or deep-seated grime. Whether you're dealing with a major water damage, a neglected used
+                        car, or a "disaster" vehicle, we do what it takes to restore your interior.
+                      </p>
+                    </div>
+                    <div className="flex items-center">
+                      <Brush color="#f59e0b" size={156} className="mr-4" />
+                      <p className="leading-relaxed text-left text-md">
+                        On all Interior Restoration vehicles that need it we run our professional grade Ozone machine to remove odors and mold spores that we
+                        can't reach. Combined with high-heat extraction and aggressive enzyme-based sanitization, we tackle the jobs other shops turn away. Our
+                        goal is to provide the absolute best possible outcome, restoring your interior to its highest possible standard.
+                      </p>
+                    </div>
+                    <div className="w-full p-4 bg-zinc-800 rounded-lg border border-zinc-600">
+                      <ul className="lg:max-h-[120px] list-disc list-inside leading-relaxed text-left w-full flex flex-wrap justify-between text-md">
+                        <li className="basis-1/2">Professional Ozone Treatment</li>
+                        <li className="basis-1/2">High-Heat Extraction</li>
+                        <li className="basis-1/2">Aggressive Enzyme-Based Sanitization</li>
+                        <li className="basis-1/2">Deep-Seated Grime Removal</li>
+                        <li className="basis-1/2">Mold Spore Elimination</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
-                  <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">Scientific Odor & Mold Elimination</span>
-                  </h3>
-                  <p className="leading-relaxed">
-                    Foul odors and mold spores don't just sit on the surface—they live in the air, the headliner, and deep within your ventilation system. To
-                    combat this, we utilize professional-grade Ozone therapy. This process creates a reactive gas that permeates every square inch of the
-                    interior, molecularly breaking down odors and killing mold at the source. It reaches the places no brush or vacuum ever could, ensuring that
-                    when we're done, the vehicle isn't just "scented"—it's sanitized.
-                  </p>
-                </div>
-
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
-                  <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">Aggressive Extraction for the Toughest Cases</span>
-                  </h3>
-                  <p className="leading-relaxed">
-                    While our standard services focus on "bonneting" to keep carpets dry, this heavy-duty service brings out the big guns. We utilize high-heat
-                    extraction and specific enzyme-based cleaners to break down organic matter, heavy mud, and years of ground-in debris. We match our most
-                    aggressive (yet safe) chemicals to your specific disaster, working through multiple stages of agitation and vacuuming to pull the
-                    "impossible" out of your fabric and upholstery.
-                  </p>
-                </div>
-
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
-                  <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">The "As Good As It Gets" Guarantee</span>
-                  </h3>
-                  <p className="leading-relaxed">
-                    We pride ourselves on being the shop that tackles the jobs others turn away. However, we also believe in being 100% transparent: when a
-                    vehicle has reached a certain level of neglect, some permanent wear, deep staining, or physical damage may remain. Our goal isn't to promise
-                    a brand-new car, but to provide the absolute best possible outcome that modern chemistry and hard work can achieve. Your interior won't just
-                    be "cleaned"—it will be restored to its highest possible standard of safety and comfort.
-                  </p>
-                </div>
-              </div>
-
-              {/* Call-to-action section */}
-              <div className="mt-8 p-3 lg:p-6 bg-zinc-800 rounded-lg border border-zinc-900">
                 <p className="text-center">
                   Want the exterior done as well? Feel free to book an interior and exterior detail, we will get your entire vehicle looking like new in just
                   one day! Check out our exterior decon wash{" "}
@@ -212,19 +188,6 @@ export default function InteriorRestoration() {
                 </p>
               </div>
             </main>
-
-            <br className="extra-space" />
-
-            <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
-            <h3 className="pricing__heading">Back to the way your car should be.</h3>
-            <p className="pricing__subtext">A car that you aren't scared or ashamed of to be driving anymore!</p>
-            <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto mb-24">
-              <BeforeAfterSlider
-                beforeImage="/assets/images/before&afters/nastykiapassfloormatB.jpg"
-                afterImage="/assets/images/before&afters/nastykiapassfloormatA.jpg"
-                aspectRatio="16/9"
-              />
-            </div>
 
             <div className="mt-12 p-6 lg:p-8 bg-gradient-to-r from-zinc-800 to-zinc-700 rounded-lg border border-accent border-opacity-30 text-center">
               <h3 className="text-2xl lg:text-3xl font-bold text-white mb-3">Is your car in need of a Restoration?</h3>
@@ -238,65 +201,38 @@ export default function InteriorRestoration() {
                 Get Started
               </a>
             </div>
+            <br className="extra-space" />
 
-            <div className="preview-container">
-              <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/interior" className="gallery-preview">
-                <motion.div variants={imgVariation1} className="relative w-full h-[100px] rounded-xl">
-                  <Image
-                    variants={imgVariation1}
-                    src="/assets/images/interior/door1.jpg"
-                    alt="Clean door panel of a car"
-                    fill
-                    sizes="275px"
-                    className="object-cover rounded-xl"
-                  />
-                </motion.div>
-                <motion.div variants={imgVariation2} className="relative w-full h-[100px] rounded-xl">
-                  <Image
-                    variants={imgVariation2}
-                    src="/assets/images/interior/driver5.jpg"
-                    alt="Clean Mazda interior from the drivers side"
-                    fill
-                    sizes="275px"
-                    className="object-cover rounded-xl"
-                  />
-                </motion.div>
-                <motion.div variants={imgVariation3} className="relative w-full h-[100px] rounded-xl">
-                  <Image
-                    variants={imgVariation3}
-                    src="/assets/images/interior/doorRenegade.jpg"
-                    alt="The door panel of a cleaned jeep renegade"
-                    fill
-                    sizes="275px"
-                    className="object-cover rounded-xl"
-                  />
-                </motion.div>
-                <motion.div variants={imgVariation4} className="relative w-full h-[100px] rounded-xl">
-                  <Image
-                    variants={imgVariation4}
-                    src="/assets/images/interior/driver16.jpg"
-                    alt="View inside the drivers side of a cleaned jeep renegade"
-                    fill
-                    sizes="275px"
-                    className="object-cover rounded-xl"
-                  />
-                </motion.div>
-              </motion.a>
-              <div className="preview-content">
-                <h4>
-                  See examples of our interior{" "}
-                  <a href="/gallery/interior" className="text-blue-500 inline-block">
-                    work <ExternalLink className="inline-block" />
-                  </a>
-                </h4>
-                <p>
-                  Our interior gallery page has a large collection of interior images including before and after pictures! Check it out{" "}
-                  <a href="/gallery/interior" className="text-blue-500">
-                    here
-                  </a>
-                  .
-                </p>
-              </div>
+            <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
+            <h3 className="pricing__heading">Back to the way your car should be.</h3>
+            <p className="pricing__subtext">A car that you aren't scared or ashamed of to be driving anymore!</p>
+            <div>
+              <MosaicGallery
+                images={[
+                  { src: "/assets/images/before&afters/seatsBA.jpg", alt: "Car seats before and after" },
+                  { src: "/assets/images/interior/bio1281.jpg", alt: "Interior detail" },
+                  { src: "/assets/images/interior/centerOldMercedes.jpg", alt: "Center console detail" },
+                  { src: "/assets/images/interior/doorRenegade.jpg", alt: "Door panel detail" },
+                  { src: "/assets/images/interior/driver11.jpg", alt: "Driver side view" },
+                  { src: "/assets/images/interior/driver21.jpg", alt: "Driver side view" }
+                ]}
+              />
+            </div>
+
+            <div className="p-8 text-center flex flex-col items-center text-white ">
+              <h4 className="text-3xl text-left">
+                See more examples of our interior{" "}
+                <a href="/gallery/interior" className="text-blue-500 inline-block">
+                  work <ExternalLink className="inline-block" />
+                </a>
+              </h4>
+              <p className="text-left">
+                Our interior gallery page has a large collection of interior images including before and after pictures! Check it out{" "}
+                <a href="/gallery/interior" className="text-blue-500">
+                  here
+                </a>
+                .
+              </p>
             </div>
           </div>
         </div>

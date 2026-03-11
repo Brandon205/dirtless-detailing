@@ -1,17 +1,8 @@
 "use client";
 import PricingComponent from "../../components/PricingComponent";
 import HeaderComponent from "../../components/HeaderComponent";
-import BeforeAfterSlider from "../../components/ImageSlider";
-import {
-  previewParentVariation,
-  imgVariation1,
-  imgVariation2,
-  imgVariation3,
-  imgVariation4,
-  containerVariant,
-  oddVariant,
-  evenVariant
-} from "../../../utils/animationVariations";
+import MosaicGallery from "../../components/MosaicGallery";
+import { containerVariant, oddVariant, evenVariant } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
 import { Brush, ExternalLink, Sparkles } from "lucide-react";
 import BaseSchema from "../../jsonSchemas/BaseSchema";
@@ -213,64 +204,40 @@ export default function InteriorRefresh() {
               </a>
             </div>
 
-            <div className="preview-container">
-              <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/interior" className="gallery-preview">
-                <motion.div variants={imgVariation1} className="relative w-full h-[100px] rounded-xl">
-                  <Image
-                    variants={imgVariation1}
-                    src="/assets/images/interior/driver5.jpg"
-                    alt="Clean Mazda interior from the drivers side"
-                    fill
-                    sizes="275px"
-                    className="object-cover rounded-xl"
-                  />
-                </motion.div>
-                <motion.div variants={imgVariation2} className="relative w-full h-[100px] rounded-xl">
-                  <Image
-                    variants={imgVariation2}
-                    src="/assets/images/interior/door1.jpg"
-                    alt="Clean door panel of a car"
-                    fill
-                    sizes="275px"
-                    className="object-cover rounded-xl"
-                  />
-                </motion.div>
-                <motion.div variants={imgVariation3} className="relative w-full h-[100px] rounded-xl">
-                  <Image
-                    variants={imgVariation3}
-                    src="/assets/images/interior/doorRenegade.jpg"
-                    alt="The door panel of a cleaned jeep renegade"
-                    fill
-                    sizes="275px"
-                    className="object-cover rounded-xl"
-                  />
-                </motion.div>
-                <motion.div variants={imgVariation4} className="relative w-full h-[100px] rounded-xl">
-                  <Image
-                    variants={imgVariation4}
-                    src="/assets/images/interior/driver16.jpg"
-                    alt="View inside the drivers side of a cleaned jeep renegade"
-                    fill
-                    sizes="275px"
-                    className="object-cover rounded-xl"
-                  />
-                </motion.div>
-              </motion.a>
-              <div className="preview-content">
-                <h4>
-                  Check out our{" "}
-                  <a href="/gallery/interior" className="text-blue-500 inline-block">
-                    Interior Gallery <ExternalLink className="inline-block" />
-                  </a>
-                </h4>
-                <p>
-                  Check out our interior gallery page, showing off some of the great results we've gotten over the years! See it{" "}
-                  <a href="/gallery/interior" className="text-blue-500">
-                    here
-                  </a>
-                  .
-                </p>
-              </div>
+            <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
+            <h3 className="pricing__heading">Back to the way that it should be</h3>
+            <p className="pricing__subtext">And the way that you wish it could stay forever.</p>
+
+            <div>
+              <MosaicGallery
+                images={[
+                  { src: "/assets/images/before&afters/seatsBA.jpg", alt: "Car seats before and after" },
+                  { src: "/assets/images/interior/bio1281.jpg", alt: "Interior detail" },
+                  { src: "/assets/images/interior/centerOldMercedes.jpg", alt: "Center console detail" },
+                  { src: "/assets/images/interior/doorRenegade.jpg", alt: "Door panel detail" },
+                  { src: "/assets/images/interior/driver11.jpg", alt: "Driver side view" },
+                  { src: "/assets/images/interior/driver21.jpg", alt: "Driver side view" },
+                  { src: "/assets/images/interior/jamb4.jpg", alt: "Door jamb detail" },
+                  { src: "/assets/images/interior/rear15.jpg", alt: "Rear interior" },
+                  { src: "/assets/images/interior/trunk1.jpg", alt: "Trunk detail" }
+                ]}
+              />
+            </div>
+
+            <div className="p-8 text-center flex flex-col items-center text-white ">
+              <h4 className="text-3xl text-left">
+                See more examples of our interior{" "}
+                <a href="/gallery/interior" className="text-blue-500 inline-block">
+                  work <ExternalLink className="inline-block" />
+                </a>
+              </h4>
+              <p className="text-left">
+                Our interior gallery page has a large collection of interior images including before and after pictures! Check it out{" "}
+                <a href="/gallery/interior" className="text-blue-500">
+                  here
+                </a>
+                .
+              </p>
             </div>
           </div>
         </div>

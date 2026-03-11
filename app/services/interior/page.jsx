@@ -56,9 +56,6 @@ export default function FullIntEx() {
 
               <div className="flex flex-col w-full gap-4 lg:w-5/6 mx-auto border-2 border-zinc-500 rounded-lg p-6 lg:p-8">
                 <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center mb-4">
-                  {/* <div className="relative flex flex-grow justify-center rounded-2xl w-full h-[450px] lg:h-[550px] shadow-[0_0_20px_-5px_rgba(217,119,6,0.5)]">
-                    <Image src="/assets/images/interior/driver15.jpg" alt="Interior Refresh" className="rounded-2xl" objectFit="cover" fill />
-                  </div> */}
                   <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
                     <BeforeAfterSlider
                       beforeImage="/assets/images/before&afters/subPassB.jpg"
@@ -192,12 +189,6 @@ export default function FullIntEx() {
               </motion.li>
             </motion.ol>
 
-            <br className="extra-space" />
-
-            <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
-            <h3 className="pricing__heading">Fresh, Clean, and Stunning Results.</h3>
-            <p className="pricing__subtext">Once we are done you won't want to see your car dirty ever again!</p>
-
             <div className="mt-12 p-6 lg:p-8 bg-gradient-to-r from-zinc-800 to-zinc-700 rounded-lg border border-accent border-opacity-30 text-center">
               <h3 className="text-2xl lg:text-3xl font-bold text-white mb-3">Want us to bring your car back to new?</h3>
               <p className="text-gray-300 mb-6 text-lg">
@@ -210,8 +201,11 @@ export default function FullIntEx() {
                 Get Started
               </a>
             </div>
-
             <br className="extra-space" />
+
+            <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
+            <h3 className="pricing__heading">Fresh, Clean, and Stunning Results.</h3>
+            <p className="pricing__subtext">Once we are done you won't want to see your car dirty ever again!</p>
 
             <div>
               <MosaicGallery
@@ -228,59 +222,22 @@ export default function FullIntEx() {
                 ]}
               />
             </div>
-            {/* <div className="preview-container">
-              <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/interior" className="gallery-preview">
-                <motion.div variants={imgVariation1} className="relative w-full h-[100px] rounded-xl">
-                  <Image
-                    variants={imgVariation1}
-                    src="/assets/images/interior/driver5.jpg"
-                    alt="Clean Mazda interior from the drivers side"
-                    fill
-                    sizes="275px"
-                    className="object-cover rounded-xl"
-                  />
-                </motion.div>
-                <motion.div variants={imgVariation2} className="relative w-full h-[100px] rounded-xl">
-                  <Image
-                    variants={imgVariation2}
-                    src="/assets/images/interior/door1.jpg"
-                    alt="Clean door panel of a car"
-                    fill
-                    sizes="275px"
-                    className="object-cover rounded-xl"
-                  />
-                </motion.div>
-                <motion.div variants={imgVariation3} className="relative w-full h-[100px] rounded-xl">
-                  <Image
-                    variants={imgVariation3}
-                    src="/assets/images/interior/doorRenegade.jpg"
-                    alt="The door panel of a cleaned jeep renegade"
-                    fill
-                    sizes="275px"
-                    className="object-cover rounded-xl"
-                  />
-                </motion.div>
-                <motion.div variants={imgVariation4} className="relative w-full h-[100px] rounded-xl">
-                  <Image
-                    variants={imgVariation4}
-                    src="/assets/images/interior/driver16.jpg"
-                    alt="View inside the drivers side of a cleaned jeep renegade"
-                    fill
-                    sizes="275px"
-                    className="object-cover rounded-xl"
-                  />
-                </motion.div>
-              </motion.a>
-              <div className="preview-content">
-                <h4>
-                  See examples of our interior{" "}
-                  <a href="/gallery/interior" className="text-blue-500 inline-block">
-                    work <ExternalLink className="inline-block" />
-                  </a>
-                </h4>
-                <p>Our interior gallery page has a large collection of interior images including before and after pictures!</p>
-              </div>
-            </div> */}
+
+            <div className="p-8 text-center flex flex-col items-center text-white ">
+              <h4 className="text-3xl text-left">
+                See more examples of our interior{" "}
+                <a href="/gallery/interior" className="text-blue-500 inline-block">
+                  work <ExternalLink className="inline-block" />
+                </a>
+              </h4>
+              <p className="text-left">
+                Our interior gallery page has a large collection of interior images including before and after pictures! Check it out{" "}
+                <a href="/gallery/interior" className="text-blue-500">
+                  here
+                </a>
+                .
+              </p>
+            </div>
           </div>
         </div>
       </div>
