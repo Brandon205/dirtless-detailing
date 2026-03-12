@@ -1,6 +1,7 @@
 "use client";
 import PricingComponent from "../../components/PricingComponent";
 import HeaderComponent from "../../components/HeaderComponent";
+import MosaicGallery from "../../components/MosaicGallery";
 import BeforeAfterSlider from "../../components/ImageSlider";
 import {
   previewParentVariation,
@@ -13,7 +14,7 @@ import {
   evenVariant
 } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Brush } from "lucide-react";
 import BaseSchema from "../../jsonSchemas/BaseSchema";
 import Image from "next/image";
 
@@ -56,64 +57,48 @@ export default function Exterior() {
             </div>
 
             <main className="w-full text-white my-0 mx-auto text-center p-4">
-              <h2 className="text-large mb-0">Our Exterior Decontamination Wash</h2>
-              <hr style={{ margin: "0 auto 3rem auto" }} />
+              <div className="flex flex-col w-full gap-4 lg:w-5/6 mx-auto border-2 border-zinc-500 rounded-lg p-6 lg:p-8">
+                <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center mb-4">
+                  <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
+                    <BeforeAfterSlider
+                      beforeImage="/assets/images/before&afters/teslawashBFR.jpg"
+                      afterImage="/assets/images/before&afters/teslawashAFR.jpg"
+                      aspectRatio="16/9"
+                    />
+                  </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
-                  <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">More Than Just Another Car Wash</span>
-                  </h3>
-                  <p className="leading-relaxed">
-                    Most car washes focus on making your car look clean without actually removing the contaminants that cause long-term damage. Our decon wash
-                    is built around the idea that truly clean means contaminate-free. We don't just rinse off the surface dirt - we actively remove iron
-                    particles, tar buildup, tree sap, and other embedded contaminants that regular washing can't touch. It's the foundation that every other
-                    service builds on.
-                  </p>
+                  <div className="flex flex-col w-full justify-between h-[475px] lg:h-[550px]">
+                    <div className="flex flex-col items-start">
+                      <h2 className="text-4xl font-bold">Our Exterior Decon Wash</h2>
+                      <strong className="text-primary text-bold text-2xl">The Detailer's Car Wash</strong>
+                    </div>
+                    <div className="flex items-center">
+                      <Brush color="#f59e0b" size={156} className="mr-4" />
+                      <p className="leading-relaxed text-left text-md">
+                        Our Exterior Decon Wash is the "detailer's car wash"—built on the principle that truly clean means contaminant-free. We go far beyond
+                        the surface to actively dissolve iron particles, tar, and tree sap that automatic washes simply cannot touch. By focusing on areas often
+                        skipped—like door jambs and gas doors—we ensure your paint and wheels are surgically clean and protected from the elements.
+                      </p>
+                    </div>
+                    <div className="flex items-center">
+                      <Brush color="#f59e0b" size={156} className="mr-4" />
+                      <p className="leading-relaxed text-left text-md">
+                        We finish every wash with a high-grade ceramic spray that provides at least 3 months of protection. This layer isn't just for a
+                        mirror-like shine; it creates a slick surface that repels water and prevents dirt from sticking, making your next wash faster and more
+                        effective. It is the essential foundation for maintaining any vehicle's long-term surface integrity.
+                      </p>
+                    </div>
+                    <div className="w-full p-4 bg-zinc-800 rounded-lg border border-zinc-600">
+                      <p className="text-left">
+                        <span className="font-bold text-md">Ideal for:</span> Vehicles needing a deep season reset or a foundation professional cleaning.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
-                  <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">Wheels That Get the Attention They Deserve</span>
-                  </h3>
-                  <p className="leading-relaxed">
-                    Your wheels take more abuse than any other part of your car, collecting brake dust, road grime, and iron particles that bond to the surface.
-                    We stock a wide array of specialized wheel chemicals because generic cleaners don't cut it when brake dust has been baking on there for
-                    months. That purple runoff you see in our photos? That's iron contamination being safely dissolved and removed - something you'll never get
-                    from a drive-through car wash.
-                  </p>
-                </div>
-
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
-                  <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">Decontamination That Actually Works</span>
-                  </h3>
-                  <p className="leading-relaxed">
-                    The word "decon" gets thrown around a lot in the detailing industry, here we decontaminate your paint as safely as we can. Our process
-                    includes iron removal that pulls metallic particles from your paint, tar removal for those stubborn spots on lower panels, and sap removal
-                    that won't damage your clear coat. We even clean areas most places skip - door jambs, gas doors, and all the hidden spots where dirt loves
-                    to hide. Every step has a purpose.
-                  </p>
-                </div>
-
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
-                  <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">Protection That Makes Maintenance Easier</span>
-                  </h3>
-                  <p className="leading-relaxed">
-                    We finish every decon wash with a ceramic spray that provides at least 3 months of protection. This isn't just about making your car look
-                    good today - it's about making it easier to keep clean tomorrow. That ceramic layer helps repel water, reduces dirt adhesion, and makes your
-                    next wash more effective. You'll thank us later!
-                  </p>
-                </div>
-              </div>
-
-              {/* Call-to-action section */}
-              <div className="mt-8 p-3 lg:p-6 bg-zinc-800 rounded-lg border border-zinc-900">
                 <p className="text-center">
-                  Complete the detail! While your car is with us now's the best time to get that neglected interior back in shape! Check out our current offers
+                  Complete the detail! While your car is with us now is the best time to get that neglected interior back in shape! Check out our current offers
                   and pricing on our full interior detail{" "}
-                  <a href="/services/exterior" className="text-blue-600 hover:text-blue-700 font-medium underline">
+                  <a href="/services/interior" className="text-blue-600 hover:text-blue-700 font-medium underline">
                     here
                   </a>
                   !
@@ -223,72 +208,33 @@ export default function Exterior() {
             <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
             <h3 className="pricing__heading">What a car wash should be.</h3>
             <p className="pricing__subtext">Your car, washed, without the unnecessary scratching or missed corners.</p>
-            <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
-              <BeforeAfterSlider
-                beforeImage="/assets/images/before&afters/teslawashBFR.jpg"
-                afterImage="/assets/images/before&afters/teslawashAFR.jpg"
-                aspectRatio="16/9"
+            <div>
+              <MosaicGallery
+                images={[
+                  { src: "/assets/images/before&afters/seatsBA.jpg", alt: "Car seats before and after" },
+                  { src: "/assets/images/interior/bio1281.jpg", alt: "Interior detail" },
+                  { src: "/assets/images/interior/centerOldMercedes.jpg", alt: "Center console detail" },
+                  { src: "/assets/images/interior/doorRenegade.jpg", alt: "Door panel detail" },
+                  { src: "/assets/images/interior/driver11.jpg", alt: "Driver side view" },
+                  { src: "/assets/images/interior/driver21.jpg", alt: "Driver side view" }
+                ]}
               />
             </div>
 
-            <div className="preview-container">
-              <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/exterior" className="gallery-preview">
-                <motion.div variants={imgVariation1} className="relative w-full h-[100px] rounded-xl">
-                  <Image
-                    variants={imgVariation1}
-                    src="/assets/images/exterior/amg.jpg"
-                    alt="Mercedes AMG with a clean exterior"
-                    fill
-                    sizes="275px"
-                    className="object-cover rounded-xl"
-                  />
-                </motion.div>
-                <motion.div variants={imgVariation2} className="relative w-full h-[100px] rounded-xl">
-                  <Image
-                    variants={imgVariation2}
-                    src="/assets/images/exterior/ironwheel1.jpg"
-                    alt="Purple runoff from iron decontamination on a wheel"
-                    fill
-                    sizes="275px"
-                    className="object-cover rounded-xl"
-                  />
-                </motion.div>
-                <motion.div variants={imgVariation3} className="relative w-full h-[100px] rounded-xl">
-                  <Image
-                    variants={imgVariation3}
-                    src="/assets/images/exterior/sideofsilverram.jpg"
-                    alt="Side view of a washed silver dodge ram"
-                    fill
-                    sizes="275px"
-                    className="object-cover rounded-xl"
-                  />
-                </motion.div>
-                <motion.div variants={imgVariation4} className="relative w-full h-[100px] rounded-xl">
-                  <Image
-                    variants={imgVariation4}
-                    src="/assets/images/exterior/engine5c77.jpg"
-                    alt="Washed engine bay of a BMW"
-                    fill
-                    sizes="275px"
-                    className="object-cover rounded-xl"
-                  />
-                </motion.div>
-              </motion.a>
-              <div className="preview-content">
-                <h4>
-                  Check out our{" "}
-                  <a href="/gallery/exterior" className="text-blue-500 inline-block">
-                    Exterior Gallery <ExternalLink className="inline-block" />
-                  </a>
-                </h4>
-                <p>
-                  Check out our exterior gallery page, showing off some of the great results we've gotten over the years! See it{" "}
-                  <a href="/gallery/exterior" className="text-blue-500">
-                    here
-                  </a>
-                  .
-                </p>
-              </div>
+            <div className="p-8 text-center flex flex-col items-center text-white ">
+              <h4 className="text-3xl text-left">
+                Check out our{" "}
+                <a href="/gallery/exterior" className="text-blue-500 inline-block">
+                  Exterior Gallery <ExternalLink className="inline-block" />
+                </a>
+              </h4>
+              <p className="text-left">
+                Check out our exterior gallery page, showing off some of the great results we've gotten over the years! See it{" "}
+                <a href="/gallery/exterior" className="text-blue-500">
+                  here
+                </a>
+                .
+              </p>
             </div>
           </div>
         </div>

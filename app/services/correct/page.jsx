@@ -1,22 +1,13 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import PricingComponent from "../../components/PricingComponent";
+import MosaicGallery from "../../components/MosaicGallery";
 import BeforeAfterSlider from "../../components/ImageSlider";
-import {
-  previewParentVariation,
-  imgVariation1,
-  imgVariation2,
-  imgVariation3,
-  imgVariation4,
-  containerVariant,
-  oddVariant,
-  evenVariant
-} from "../../../utils/animationVariations";
+import { containerVariant, oddVariant, evenVariant } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import HeaderComponent from "../../components/HeaderComponent";
 import FaqItem from "../../components/FaqItem";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Brush } from "lucide-react";
 import "react-medium-image-zoom/dist/styles.css";
 import ImageGallery from "../../components/ImageGallery";
 import BaseSchema from "../../jsonSchemas/BaseSchema";
@@ -149,79 +140,57 @@ export default function ExteriorCorrect() {
 
             <br className="extra-space" />
 
-            <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>The End Result</p>
-            <h3 className="pricing__heading">A brand new look and feel.</h3>
-            <p className="pricing__subtext">
-              Not just a complete exterior refresh, but now your vehicle has protection against the elements that Washington will throw at it.
-            </p>
-            <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
-              <BeforeAfterSlider
-                beforeImage="/assets/images/before&afters/scratchesBefore.jpg"
-                afterImage="/assets/images/before&afters/scratchesAfter.jpg"
-                aspectRatio="16/9"
-              />
-            </div>
-
             <br className="extra-space" />
 
             <main className="w-full text-white my-0 mx-auto text-center p-4">
-              <h2 style={{ marginBottom: 0 }} className="text-large">
-                Our Exterior Correct & Coat Service
-              </h2>
-              <hr style={{ margin: "0 auto 3rem auto" }} />
+              <div className="flex flex-col w-full gap-4 lg:w-5/6 mx-auto border-2 border-zinc-500 rounded-lg p-6 lg:p-8">
+                <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center mb-4">
+                  <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
+                    <BeforeAfterSlider
+                      beforeImage="/assets/images/before&afters/scratchesBefore.jpg"
+                      afterImage="/assets/images/before&afters/scratchesAfter.jpg"
+                      aspectRatio="16/9"
+                    />
+                  </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
-                  <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">Expert Paint Correction Services</span>
-                  </h3>
-                  <p className="leading-relaxed">
-                    This is our top-tier exterior service. We've spent countless hours learning advanced techniques and understanding how different paints
-                    respond to different products and pads. Our results speak for themselves - we consistently deliver the kind of paint correction that other
-                    shops can struggle to achieve.
-                  </p>
+                  <div className="flex flex-col w-full justify-between h-[475px] lg:h-[550px]">
+                    <div className="flex flex-col items-start">
+                      <h2 className="text-4xl font-bold">Our Correct & Coat Service</h2>
+                      <strong className="text-primary text-bold text-2xl">The Ultimate Exterior Detail & Protection</strong>
+                    </div>
+                    <div className="flex items-center">
+                      <Brush color="#f59e0b" size={156} className="mr-4" />
+                      <p className="leading-relaxed text-left text-md">
+                        Correct & Coat is our premier exterior service, utilizing a rigorous 2-stage paint correction process to remove 75-90% of scratches,
+                        swirls, and imperfections. We've spent years mastering how different paints respond to specialized pads and chemicals, allowing us to
+                        reveal a level of gloss and clarity that other shops often struggle to achieve. We tailor this intensive process to your specific goals,
+                        ensuring you get the exact results you want for your investment.
+                      </p>
+                    </div>
+                    <div className="flex items-center">
+                      <Brush color="#f59e0b" size={156} className="mr-4" />
+                      <p className="leading-relaxed text-left text-md">
+                        The restored paint is then locked in with a professional 3-year ceramic coating, providing a glass-like shine and the best protection
+                        against Washington's weather. We choose a 3-year coating specifically because it aligns with a realistic maintenance schedule, allowing
+                        us to check in and refresh the surface before new swirls can accumulate. It's not just a detail; it's a total exterior transformation.
+                      </p>
+                    </div>
+                    <div className="w-full p-4 bg-zinc-800 rounded-lg border border-zinc-600">
+                      <p className="text-left">
+                        <span className="font-bold text-md">Ideal for:</span>Owners seeking a flawless, mirror-like finish and the highest level of scratch
+                        removal.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
-                  <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">The Results You Want</span>
-                  </h3>
-                  <p className="leading-relaxed">
-                    We understand that every vehicle is different, and everyone's desired outcome is different. Some want a deep, mirror-like shine, while other
-                    people may just want to remove light scratches and swirls. We tailor our paint correction process to your specific goals, ensuring you get
-                    the results you want for a price you're willing to pay.
-                  </p>
-                </div>
-
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
-                  <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">Two-Stage Correction That Delivers</span>
-                  </h3>
-                  <p className="leading-relaxed">
-                    {/* Our full paint correction process removes 80-90% of scratches and swirl marks through careful two-stage polishing. We don't just make bold
-                    claims - we have the skills, equipment, and techniques to back them up. Every panel gets individual attention, and we know when to push
-                    harder and when to stop before causing damage. Your paint isn't practice material - it deserves someone who knows what they're doing. */}
-                    As well as honing in our own skills, we've also met and worked with some of the best in the industry learning from them and refining our
-                    techniques even further. Our full paint correction process can remove 80-90% of scratches and swirl marks leaving your paint looking
-                    stunning. Topped with the ceramic coating it's sure to have a glass and shine like never before!
-                  </p>
-                </div>
-
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
-                  <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">Why Only a 3-Year Coating?</span>
-                  </h3>
-                  <p className="leading-relaxed">
-                    We could sell you a 5 or 10-year coating, but we know that typically after three years, chances are you will have collected some scratches
-                    and swirls or plastics may start fading again. For yearly maintenance on your coating we'd recommend getting in touch with us and we'll plan
-                    a yearly modified version of our{" "}
-                    <a href="/services/polish" className="text-blue-600 hover:text-blue-700 font-medium underline">
-                      Polish & Coat
-                    </a>{" "}
-                    package where we'll go in, check on the coating, polish any areas that need fixing up, and re-coat them for less than the cost of a Polish &
-                    Coat Service.
-                  </p>
-                </div>
+                <p className="text-center">
+                  Complete the detail! While your car is with us now is the best time to get that neglected interior back in shape! Check out our current offers
+                  and pricing on our full interior detail{" "}
+                  <a href="/services/interior" className="text-blue-600 hover:text-blue-700 font-medium underline">
+                    here
+                  </a>
+                  !
+                </p>
               </div>
 
               {/* Call-to-action section */}
@@ -327,8 +296,6 @@ export default function ExteriorCorrect() {
 
             <br className="extra-space" />
 
-            <br className="extra-space" />
-
             <div id="faq" style={{ width: "90%", margin: "0 auto", paddingTop: "2rem" }}>
               <div className="new-heading-container text-white">
                 <strong className="above-heading text-3xl">Ceramic Coating FAQ</strong>
@@ -349,64 +316,38 @@ export default function ExteriorCorrect() {
               </div>
             </div>
 
-            <div className="preview-container">
-              <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/correct" className="gallery-preview">
-                <motion.div variants={imgVariation1} className="relative w-full h-[100px] rounded-xl">
-                  <Image
-                    variants={imgVariation1}
-                    src="/assets/images/correction/goodguystruck.jpg"
-                    alt="Truck we polished that won at the Good Guys car show"
-                    fill
-                    sizes="275px"
-                    className="object-cover rounded-xl"
-                  />
-                </motion.div>
-                <motion.div variants={imgVariation2} className="relative w-full h-[100px] rounded-xl">
-                  <Image
-                    variants={imgVariation2}
-                    src="/assets/images/correction/ceramicBeads1.jpg"
-                    alt="Water beading on ceramic coated glass"
-                    fill
-                    sizes="275px"
-                    className="object-cover rounded-xl"
-                  />
-                </motion.div>
-                <motion.div variants={imgVariation3} className="relative w-full h-[100px] rounded-xl">
-                  <Image
-                    variants={imgVariation3}
-                    src="/assets/images/correction/waterbeading1.jpg"
-                    alt="Water beading on a ceramic coated car"
-                    fill
-                    sizes="275px"
-                    className="object-cover rounded-xl"
-                  />
-                </motion.div>
-                <motion.div variants={imgVariation4} className="relative w-full h-[100px] rounded-xl">
-                  <Image
-                    variants={imgVariation4}
-                    src="/assets/images/correction/genesis2.jpeg"
-                    alt="Infinity Genesis with Ceramic Coating"
-                    fill
-                    sizes="275px"
-                    className="object-cover rounded-xl"
-                  />
-                </motion.div>
-              </motion.a>
-              <div className="preview-content">
-                <h4>
-                  See more examples of our{" "}
-                  <a href="/gallery/correct" className="text-blue-500 inline-block">
-                    work <ExternalLink className="inline-block" />
-                  </a>
-                </h4>
-                <p>
-                  See the stunning results that you'll get from our Correct & Coat service, water will be beading straight off of your whole car! Check them out{" "}
-                  <a href="/gallery/correct" className="text-blue-500">
-                    here
-                  </a>
-                  !
-                </p>
-              </div>
+            <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>The End Result</p>
+            <h3 className="pricing__heading">A brand new look and feel.</h3>
+            <p className="pricing__subtext">
+              Not just a complete exterior refresh, but now your vehicle has protection against the elements that Washington will throw at it.
+            </p>
+            <div>
+              <MosaicGallery
+                images={[
+                  { src: "/assets/images/before&afters/seatsBA.jpg", alt: "Car seats before and after" },
+                  { src: "/assets/images/interior/bio1281.jpg", alt: "Interior detail" },
+                  { src: "/assets/images/interior/centerOldMercedes.jpg", alt: "Center console detail" },
+                  { src: "/assets/images/interior/doorRenegade.jpg", alt: "Door panel detail" },
+                  { src: "/assets/images/interior/driver11.jpg", alt: "Driver side view" },
+                  { src: "/assets/images/interior/driver21.jpg", alt: "Driver side view" }
+                ]}
+              />
+            </div>
+
+            <div className="p-8 text-center flex flex-col items-center text-white ">
+              <h4 className="text-3xl text-left">
+                Check out our{" "}
+                <a href="/gallery/exterior" className="text-blue-500 inline-block">
+                  Exterior Gallery <ExternalLink className="inline-block" />
+                </a>
+              </h4>
+              <p className="text-left">
+                Check out our exterior gallery page, showing off some of the great results we've gotten over the years! See it{" "}
+                <a href="/gallery/exterior" className="text-blue-500">
+                  here
+                </a>
+                .
+              </p>
             </div>
           </div>
         </div>

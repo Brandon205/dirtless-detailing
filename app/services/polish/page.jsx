@@ -2,19 +2,10 @@
 import React, { useState, useEffect } from "react";
 import PricingComponent from "../../components/PricingComponent";
 import HeaderComponent from "../../components/HeaderComponent";
+import MosaicGallery from "../../components/MosaicGallery";
 import BeforeAfterSlider from "../../components/ImageSlider";
-import {
-  previewParentVariation,
-  imgVariation1,
-  imgVariation2,
-  imgVariation3,
-  imgVariation4,
-  containerVariant,
-  oddVariant,
-  evenVariant
-} from "../../../utils/animationVariations";
-import { ExternalLink } from "lucide-react";
-import Image from "next/image";
+import { containerVariant, oddVariant, evenVariant } from "../../../utils/animationVariations";
+import { ExternalLink, Brush } from "lucide-react";
 import FaqItem from "../../components/FaqItem";
 import { motion } from "framer-motion";
 import BaseSchema from "../../jsonSchemas/BaseSchema";
@@ -85,73 +76,45 @@ export default function ExteriorPolish() {
 
             <br className="extra-space" />
 
-            <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
-            <h3 className="pricing__heading">Clean, Shiny, and Protected.</h3>
-            <p className="pricing__subtext">With light scratches removed and a year of protection applied your car will shine like never before!</p>
-            <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
-              <BeforeAfterSlider
-                beforeImage="/assets/images/before&afters/beforeMazda3.jpg"
-                afterImage="/assets/images/before&afters/afterMazda3.jpg"
-                aspectRatio="16/9"
-              />
-            </div>
-
-            <br className="extra-space" />
-
             <main className="w-full text-white my-0 mx-auto text-center p-4">
-              <h2 style={{ marginBottom: 0 }} className="text-large">
-                Our Exterior Polish & Coat Service
-              </h2>
-              <hr style={{ margin: "0 auto 3rem auto" }} />
+              <div className="flex flex-col w-full gap-4 lg:w-5/6 mx-auto border-2 border-zinc-500 rounded-lg p-6 lg:p-8">
+                <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center mb-4">
+                  <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
+                    <BeforeAfterSlider
+                      beforeImage="/assets/images/before&afters/beforeMazda3.jpg"
+                      afterImage="/assets/images/before&afters/afterMazda3.jpg"
+                      aspectRatio="16/9"
+                    />
+                  </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
-                  <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">More Than Just a Wash and Wax</span>
-                  </h3>
-                  <p className="leading-relaxed">
-                    This service is right between a basic wash and full paint correction. If your paint has lost its glow or developed light swirl marks, this
-                    is where we bring it back to life. After our thorough decon wash, we clay your paint to remove embedded contaminants, then perform light
-                    polishing to restore depth and gloss. Finally, we top it with up to a year of ceramic protection that makes future maintenance easier for
-                    you.
-                  </p>
+                  <div className="flex flex-col w-full justify-between h-[475px] lg:h-[550px]">
+                    <div className="flex flex-col items-start">
+                      <h2 className="text-4xl font-bold">Our Exterior Polish & Coat Service</h2>
+                      <strong className="text-primary text-bold text-2xl">The Perfect Exterior Middle Ground Refreshment</strong>
+                    </div>
+                    <div className="flex items-center">
+                      <Brush color="#f59e0b" size={156} className="mr-4" />
+                      <p className="leading-relaxed text-left text-md">
+                        This service is the perfect middle ground for vehicles that have developed light swirl marks and a dull appearance. After a thorough
+                        decontamination and clay bar treatment, we perform a light machine polishing step to restore depth and clarity to your clear coat.
+                      </p>
+                    </div>
+                    <div className="flex items-center">
+                      <Brush color="#f59e0b" size={156} className="mr-4" />
+                      <p className="leading-relaxed text-left text-md">
+                        We top the restored surface with our 3-year ceramic coating that acts as a durable barrier against environmental damage and water spots.
+                        We also give your windshield, exterior glass, and trim that same coating, protecting your entire vehicle. Your car will look better,
+                        stay cleaner for longer, and be significantly easier to maintain until the next time you visit.
+                      </p>
+                    </div>
+                    <div className="w-full p-4 bg-zinc-800 rounded-lg border border-zinc-600">
+                      <p className="text-left">
+                        <span className="font-bold text-md">Ideal for:</span> Daily drivers with light swirl marks or paint that has lost its original depth and
+                        "glow."
+                      </p>
+                    </div>
+                  </div>
                 </div>
-
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
-                  <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">The Perfect Approach for Daily Drivers</span>
-                  </h3>
-                  <p className="leading-relaxed">
-                    Not every car needs in depth paint correction, but every car benefits from proper preparation and protection. Our light polishing step
-                    removes minor imperfections and swirl marks while preparing the surface for coating adhesion. We've spent years perfecting our prep work and
-                    application techniques because we know that proper foundation is everything when it comes to long-lasting results.
-                  </p>
-                </div>
-
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
-                  <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">Get All the Ceramic Coating Benefits</span>
-                  </h3>
-                  <p className="leading-relaxed">
-                    Our year-long ceramic coating makes your car easier to wash, more resistant to water spots, and better protected against environmental
-                    damage. Plus, we coat your windshield, wheels, and trim - not just the paint providing all these benefits on the entire vehicle.
-                  </p>
-                </div>
-
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
-                  <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">Annual Maintenance That Works</span>
-                  </h3>
-                  <p className="leading-relaxed">
-                    This is the perfect yearly refresh for any vehicle, whether it's previously been coated or not. It removes the wear and contamination that
-                    builds up over time while adding fresh protection for the year ahead. Your car will look better, stay cleaner longer, and be easier to
-                    maintain. <br /> If you had us coat your car in the past, give us a call and we'll figure out a price and plan to maintain your coating!
-                  </p>
-                </div>
-              </div>
-
-              {/* Call-to-action section */}
-              <div className="mt-8 p-3 lg:p-6 bg-zinc-800 rounded-lg border border-zinc-900">
                 <p className="text-center">
                   Now's the perfect time to book a interior cleaning as well. Check out our current offers and pricing on our full interior detail{" "}
                   <a href="/services/interior" className="text-blue-600 hover:text-blue-700 font-medium underline">
@@ -274,7 +237,18 @@ export default function ExteriorPolish() {
               </motion.li>
             </motion.ol>
 
-            <br className="extra-space" />
+            <div className="mt-12 p-6 lg:p-8 bg-gradient-to-r from-zinc-800 to-zinc-700 rounded-lg border border-accent border-opacity-30 text-center">
+              <h3 className="text-2xl lg:text-3xl font-bold text-white mb-3">Ready to shine-up your car?</h3>
+              <p className="text-gray-300 mb-6 text-lg">
+                Have questions about our Polish & Coat Service? Want to book an appointment? Get in touch with us today!
+              </p>
+              <a
+                href="/contact"
+                className="inline-block px-8 py-3 bg-accent hover:bg-accent/90 text-white font-semibold rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-accent/50"
+              >
+                Get Started
+              </a>
+            </div>
 
             <div className="general-container new-heading-container font-bold text-white">
               <h3 style={{ margin: 0, width: "auto", padding: 0 }} className="new-heading new-heading-center text-4xl lg:text-5xl">
@@ -300,80 +274,40 @@ export default function ExteriorPolish() {
               </div>
             </section>
 
-            <div className="mt-12 p-6 lg:p-8 bg-gradient-to-r from-zinc-800 to-zinc-700 rounded-lg border border-accent border-opacity-30 text-center">
-              <h3 className="text-2xl lg:text-3xl font-bold text-white mb-3">Ready to shine-up your car?</h3>
-              <p className="text-gray-300 mb-6 text-lg">
-                Have questions about our Polish & Coat Service? Want to book an appointment? Get in touch with us today!
-              </p>
-              <a
-                href="/contact"
-                className="inline-block px-8 py-3 bg-accent hover:bg-accent/90 text-white font-semibold rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-accent/50"
-              >
-                Get Started
-              </a>
+            <br className="extra-space" />
+
+            <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
+            <h3 className="pricing__heading">Clean, Shiny, and Protected.</h3>
+            <p className="pricing__subtext">With light scratches removed and a year of protection applied your car will shine like never before!</p>
+            <div>
+              <MosaicGallery
+                images={[
+                  { src: "/assets/images/before&afters/seatsBA.jpg", alt: "Car seats before and after" },
+                  { src: "/assets/images/interior/bio1281.jpg", alt: "Interior detail" },
+                  { src: "/assets/images/interior/centerOldMercedes.jpg", alt: "Center console detail" },
+                  { src: "/assets/images/interior/doorRenegade.jpg", alt: "Door panel detail" },
+                  { src: "/assets/images/interior/driver11.jpg", alt: "Driver side view" },
+                  { src: "/assets/images/interior/driver21.jpg", alt: "Driver side view" }
+                ]}
+              />
             </div>
 
             <br className="extra-space" />
 
-            <div className="preview-container">
-              <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/polish" className="gallery-preview">
-                <motion.div variants={imgVariation1} className="relative w-full h-[100px] rounded-xl">
-                  <Image
-                    variants={imgVariation1}
-                    src="/assets/images/sealshine/sprinter6.jpg"
-                    alt="Sprinter van after our Polish and Coat service"
-                    fill
-                    sizes="275px"
-                    className="object-cover rounded-xl"
-                  />
-                </motion.div>
-                <motion.div variants={imgVariation2} className="relative w-full h-[100px] rounded-xl">
-                  <Image
-                    variants={imgVariation2}
-                    src="/assets/images/sealshine/audiSeal3.jpg"
-                    alt="Audi S4 with a fresh 1 year coating and polish"
-                    fill
-                    sizes="275px"
-                    className="object-cover rounded-xl"
-                  />
-                </motion.div>
-                <motion.div variants={imgVariation3} className="relative w-full h-[100px] rounded-xl">
-                  <Image
-                    variants={imgVariation3}
-                    src="/assets/images/sealshine/beamer1.jpg"
-                    alt="BMW on a foggy morning with our ozone machine running"
-                    fill
-                    sizes="275px"
-                    className="object-cover rounded-xl"
-                  />
-                </motion.div>
-                <motion.div variants={imgVariation4} className="relative w-full h-[100px] rounded-xl">
-                  <Image
-                    variants={imgVariation4}
-                    src="/assets/images/sealshine/porscheRearL.jpg"
-                    alt="Porsche from the rear left"
-                    fill
-                    sizes="275px"
-                    className="object-cover rounded-xl"
-                  />
-                </motion.div>
-              </motion.a>
-
-              <div className="preview-content">
-                <h4>
-                  See more finished{" "}
-                  <a href="/gallery/polish" className="text-blue-500 inline-block">
-                    results <ExternalLink className="inline-block" />
-                  </a>
-                </h4>
-                <p>
-                  Check out our Polish & Coat gallery, showing off some of the great results we've gotten over the years! See it{" "}
-                  <a href="/gallery/polish" className="text-blue-500">
-                    here
-                  </a>
-                  .
-                </p>
-              </div>
+            <div className="p-8 text-center flex flex-col items-center text-white ">
+              <h4 className="text-3xl text-left">
+                Check out our{" "}
+                <a href="/gallery/exterior" className="text-blue-500 inline-block">
+                  Exterior Gallery <ExternalLink className="inline-block" />
+                </a>
+              </h4>
+              <p className="text-left">
+                Check out our exterior gallery page, showing off some of the great results we've gotten over the years! See it{" "}
+                <a href="/gallery/exterior" className="text-blue-500">
+                  here
+                </a>
+                .
+              </p>
             </div>
           </div>
         </div>

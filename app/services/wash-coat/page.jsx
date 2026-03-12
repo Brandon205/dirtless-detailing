@@ -2,20 +2,11 @@
 import PricingComponent from "../../components/PricingComponent";
 import HeaderComponent from "../../components/HeaderComponent";
 import BeforeAfterSlider from "../../components/ImageSlider";
-import {
-  previewParentVariation,
-  imgVariation1,
-  imgVariation2,
-  imgVariation3,
-  imgVariation4,
-  containerVariant,
-  oddVariant,
-  evenVariant
-} from "../../../utils/animationVariations";
+import MosaicGallery from "../../components/MosaicGallery";
+import { containerVariant, oddVariant, evenVariant } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Brush } from "lucide-react";
 import BaseSchema from "../../jsonSchemas/BaseSchema";
-import Image from "next/image";
 
 export default function Exterior() {
   return (
@@ -55,63 +46,47 @@ export default function Exterior() {
               <PricingComponent shortTitle="extWashCoat" serviceType="exterior" addons="washCoat" />
             </div>
 
+            <br className="extra-space" />
+
             <main className="w-full text-white my-0 mx-auto text-center p-4">
-              <h2 style={{ marginBottom: 0 }} className="text-large">
-                Our Wash & Coat Service
-              </h2>
-              <hr style={{ margin: "0 auto 3rem auto" }} />
+              <div className="flex flex-col w-full gap-4 lg:w-5/6 mx-auto border-2 border-zinc-500 rounded-lg p-6 lg:p-8">
+                <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center mb-4">
+                  <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
+                    <BeforeAfterSlider
+                      beforeImage="/assets/images/before&afters/teslawashBFR.jpg"
+                      afterImage="/assets/images/before&afters/teslawashAFR.jpg"
+                      aspectRatio="16/9"
+                    />
+                  </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
-                  <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">The Ultimate "New Car" Reset</span>
-                  </h3>
-                  <p className="leading-relaxed">
-                    Whether your vehicle just rolled off the dealership lot or you're looking to refresh your daily driver, our Wash & Coat service provides a
-                    professional-grade baseline. We bridge the gap between a standard wash and a multi-day restoration. This package is specifically designed
-                    for vehicles with paint in good condition that need elite protection, or for owners who prioritize long-term surface integrity and ease of
-                    maintenance over removing every microscopic swirl mark.
-                  </p>
+                  <div className="flex flex-col w-full justify-between h-[475px] lg:h-[550px]">
+                    <div className="flex flex-col items-start">
+                      <h2 className="text-4xl font-bold">Our Wash & Coat Service</h2>
+                      <strong className="text-primary text-bold text-2xl">The easiest way to get your car protected.</strong>
+                    </div>
+                    <div className="flex items-center">
+                      <Brush color="#f59e0b" size={156} className="mr-4" />
+                      <p className="leading-relaxed text-left text-md">
+                        The Wash & Coat package is the ultimate "New Car" reset, designed for owners who prioritize surface protection and ease of maintenance.
+                        You get the extreme water beading and UV resistance of a ceramic shield at a fraction of the cost of our correction packages.
+                      </p>
+                    </div>
+                    <div className="flex items-center">
+                      <Brush color="#f59e0b" size={156} className="mr-4" />
+                      <p className="leading-relaxed text-left text-md">
+                        Once the surface is surgically decontaminated, we perform a dedicated paint prep to ensure our 3-year ceramic coating bonds at a
+                        molecular level. This creates a durable defense that no wax can match. For the next several years, your paint will be incredibly slick,
+                        meaning road grime struggles to stick and your maintenance washes become almost effortless.
+                      </p>
+                    </div>
+                    <div className="w-full p-4 bg-zinc-800 rounded-lg border border-zinc-600">
+                      <p className="text-left">
+                        <span className="font-bold text-md">Ideal for:</span> New cars or well-maintained daily drivers needing elite protection without the
+                        cost of polishing.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
-                  <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">Decon Meets Durable Protection</span>
-                  </h3>
-                  <p className="leading-relaxed">
-                    We start with our signature Exterior Decon Wash—removing the iron, tar, and industrial fallout that standard soaps leave behind. But we
-                    don't stop there. Once the surface is truly surgically clean, we perform a dedicated paint prep to ensure the surface is chemically bare.
-                    This allows our 3-year ceramic coating to bond directly to your clear coat at a molecular level, providing a layer of defense that no wax or
-                    "spray sealant" can match.
-                  </p>
-                </div>
-
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
-                  <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">Professional Results, Accessible Value</span>
-                  </h3>
-                  <p className="leading-relaxed">
-                    The biggest hurdle to ceramic coatings is often the cost of paint correction. By focusing on the decontamination and the coating application
-                    itself, we're able to offer a high-performance 3-year shield at a fraction of the cost of our multi-year packages. It's the perfect solution
-                    for the practical owner who wants the incredible gloss, extreme water beading, and UV protection of a ceramic coating without the intensive
-                    labor of a full machine polish.
-                  </p>
-                </div>
-
-                <div className="bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-3 lg:p-6 hover:shadow-md transition-shadow duration-200">
-                  <h3 className="text-lg font-semibold mb-3">
-                    <span className="text-accent font-bold text-2xl">Simplify Your Washes for the Next 12 Months</span>
-                  </h3>
-                  <p className="leading-relaxed">
-                    The real magic of the Wash & Coat happens every time it rains or you go to wash your car. For the next year, your paint will be incredibly
-                    "slick," meaning dirt and road grime struggle to stick to the surface. Maintenance washes become faster and easier, and your car stays
-                    cleaner for longer. You aren't just paying for a shiny car today; you're investing in a year of effortless maintenance and peace of mind.
-                  </p>
-                </div>
-              </div>
-
-              {/* Call-to-action section */}
-              <div className="mt-8 p-3 lg:p-6 bg-zinc-800 rounded-lg border border-zinc-900">
                 <p className="text-center">
                   Complete the detail! While your car is with us now's the best time to get that neglected interior back in shape! Check out our current offers
                   and pricing on our full interior detail{" "}
@@ -228,72 +203,33 @@ export default function Exterior() {
             <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
             <h3 className="pricing__heading">Brand New Look, with Next-Level Protection</h3>
             <p className="pricing__subtext">Set yourself up for easier future maintenance and long-term protection on your vehicle.</p>
-            <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
-              <BeforeAfterSlider
-                beforeImage="/assets/images/before&afters/teslawashBFR.jpg"
-                afterImage="/assets/images/before&afters/teslawashAFR.jpg"
-                aspectRatio="16/9"
+            <div>
+              <MosaicGallery
+                images={[
+                  { src: "/assets/images/before&afters/seatsBA.jpg", alt: "Car seats before and after" },
+                  { src: "/assets/images/interior/bio1281.jpg", alt: "Interior detail" },
+                  { src: "/assets/images/interior/centerOldMercedes.jpg", alt: "Center console detail" },
+                  { src: "/assets/images/interior/doorRenegade.jpg", alt: "Door panel detail" },
+                  { src: "/assets/images/interior/driver11.jpg", alt: "Driver side view" },
+                  { src: "/assets/images/interior/driver21.jpg", alt: "Driver side view" }
+                ]}
               />
             </div>
 
-            <div className="preview-container">
-              <motion.a initial="rest" whileHover="hover" variants={previewParentVariation} href="/gallery/exterior" className="gallery-preview">
-                <motion.div variants={imgVariation1} className="relative w-full h-[100px] rounded-xl">
-                  <Image
-                    variants={imgVariation1}
-                    src="/assets/images/exterior/amg.jpg"
-                    alt="Mercedes AMG with a clean exterior"
-                    fill
-                    sizes="275px"
-                    className="object-cover rounded-xl"
-                  />
-                </motion.div>
-                <motion.div variants={imgVariation2} className="relative w-full h-[100px] rounded-xl">
-                  <Image
-                    variants={imgVariation2}
-                    src="/assets/images/exterior/ironwheel1.jpg"
-                    alt="Purple runoff from iron decontamination on a wheel"
-                    fill
-                    sizes="275px"
-                    className="object-cover rounded-xl"
-                  />
-                </motion.div>
-                <motion.div variants={imgVariation3} className="relative w-full h-[100px] rounded-xl">
-                  <Image
-                    variants={imgVariation3}
-                    src="/assets/images/exterior/sideofsilverram.jpg"
-                    alt="Side view of a washed silver dodge ram"
-                    fill
-                    sizes="275px"
-                    className="object-cover rounded-xl"
-                  />
-                </motion.div>
-                <motion.div variants={imgVariation4} className="relative w-full h-[100px] rounded-xl">
-                  <Image
-                    variants={imgVariation4}
-                    src="/assets/images/exterior/engine5c77.jpg"
-                    alt="Washed engine bay of a BMW"
-                    fill
-                    sizes="275px"
-                    className="object-cover rounded-xl"
-                  />
-                </motion.div>
-              </motion.a>
-              <div className="preview-content">
-                <h4>
-                  Check out our{" "}
-                  <a href="/gallery/exterior" className="text-blue-500 inline-block">
-                    Exterior Gallery <ExternalLink className="inline-block" />
-                  </a>
-                </h4>
-                <p>
-                  Check out our exterior gallery page, showing off some of the great results we've gotten over the years! See it{" "}
-                  <a href="/gallery/exterior" className="text-blue-500">
-                    here
-                  </a>
-                  .
-                </p>
-              </div>
+            <div className="p-8 text-center flex flex-col items-center text-white ">
+              <h4 className="text-3xl text-left">
+                Check out our{" "}
+                <a href="/gallery/exterior" className="text-blue-500 inline-block">
+                  Exterior Gallery <ExternalLink className="inline-block" />
+                </a>
+              </h4>
+              <p className="text-left">
+                Check out our exterior gallery page, showing off some of the great results we've gotten over the years! See it{" "}
+                <a href="/gallery/exterior" className="text-blue-500">
+                  here
+                </a>
+                .
+              </p>
             </div>
           </div>
         </div>
