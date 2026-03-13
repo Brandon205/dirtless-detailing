@@ -137,7 +137,7 @@ export default function InteriorRestoration() {
 
             <main className="w-full text-white my-0 mx-auto text-center p-4">
               <div className="flex flex-col w-full gap-4 lg:w-5/6 mx-auto border-2 border-zinc-500 rounded-lg p-6 lg:p-8">
-                <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center mb-4">
+                <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center mb-0 lg:mb-4">
                   <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
                     <BeforeAfterSlider
                       beforeImage="/assets/images/before&afters/subDriveB.jpg"
@@ -146,12 +146,12 @@ export default function InteriorRestoration() {
                     />
                   </div>
 
-                  <div className="flex flex-col w-full justify-between h-[475px] lg:h-[550px]">
+                  <div className="flex flex-col w-full justify-between min-h-[475px] lg:h-[550px] py-4">
                     <div className="flex flex-col items-start">
                       <h2 className="text-4xl font-bold">Our Full Interior Detail</h2>
                       <strong className="text-primary text-bold text-2xl">Thorough Cleaning and Conditioning</strong>
                     </div>
-                    <div className="flex items-center">
+                    <div className="flex items-center my-4">
                       <Brush color="#f59e0b" size={156} className="mr-4" />
                       <p className="leading-relaxed text-left text-md">
                         This is a full recovery service for vehicles facing extreme conditions that standard detailing simply cannot solve. We go beyond surface
@@ -159,7 +159,7 @@ export default function InteriorRestoration() {
                         car, or a "disaster" vehicle, we do what it takes to restore your interior.
                       </p>
                     </div>
-                    <div className="flex items-center">
+                    <div className="flex items-center mb-4">
                       <Brush color="#f59e0b" size={156} className="mr-4" />
                       <p className="leading-relaxed text-left text-md">
                         On all Interior Restoration vehicles that need it we run our professional grade Ozone machine to remove odors and mold spores that we
@@ -196,7 +196,7 @@ export default function InteriorRestoration() {
               </p>
               <a
                 href="/contact"
-                className="inline-block px-8 py-3 bg-accent hover:bg-accent/90 text-white font-semibold rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-accent/50"
+                className="inline-block px-8 py-3 bg-accent hover:bg-accent/90 text-black font-semibold rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-accent/50"
               >
                 Get Started
               </a>

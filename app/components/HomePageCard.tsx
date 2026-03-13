@@ -111,7 +111,7 @@ export default function HomePageCard({
             </motion.a>
             <motion.a
               href="/contact"
-              className={`py-3 text-dm tracking-wide px-[0.9rem] ${colors.bgHighlight} rounded-[40px] w-full font-bold items-center flex justify-center`}
+              className={`py-3 text-md tracking-wide px-[0.9rem] ${colors.bgHighlight} rounded-[40px] w-full font-bold items-center flex justify-center`}
               initial={{ scale: 1 }}
               whileHover={{ scale: 1.05 }}
             >

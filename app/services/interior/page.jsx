@@ -49,13 +49,8 @@ export default function FullIntEx() {
             <br className="extra-space" />
 
             <main className="w-full text-white my-0 mx-auto text-center p-4">
-              {/* <h2 style={{ marginBottom: 0 }} className="text-large">
-                Our Interior Deep Cleaning
-              </h2>
-              <hr style={{ margin: "0 auto 3rem auto" }} /> */}
-
               <div className="flex flex-col w-full gap-4 lg:w-5/6 mx-auto border-2 border-zinc-500 rounded-lg p-6 lg:p-8">
-                <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center mb-4">
+                <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center mb-0 lg:mb-4">
                   <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
                     <BeforeAfterSlider
                       beforeImage="/assets/images/before&afters/subPassB.jpg"
@@ -64,12 +59,12 @@ export default function FullIntEx() {
                     />
                   </div>
 
-                  <div className="flex flex-col w-full justify-between h-[475px] lg:h-[550px]">
+                  <div className="flex flex-col w-full justify-between min-h-[475px] lg:h-[550px] py-4">
                     <div className="flex flex-col items-start">
                       <h2 className="text-4xl font-bold">Our Full Interior Detail</h2>
                       <strong className="text-primary text-bold text-2xl">Thorough Cleaning and Conditioning</strong>
                     </div>
-                    <div className="flex items-center">
+                    <div className="flex items-center my-4">
                       <Brush color="#f59e0b" size={156} className="mr-4" />
                       <p className="leading-relaxed text-left text-md">
                         When your vehicle has reached the point where a simple vacuuming isn't enough, the Full Interior detail is the reset you need. We've
@@ -77,7 +72,7 @@ export default function FullIntEx() {
                         mystery odors. We don't just mask problems; we utilize specific chemistry to eliminate them at the source.
                       </p>
                     </div>
-                    <div className="flex items-center">
+                    <div className="flex items-center mb-4">
                       <Brush color="#f59e0b" size={156} className="mr-4" />
                       <p className="leading-relaxed text-left text-md">
                         We match our techniques to your specific situation, using our specialized "carpet bonneting" to remove light stains and odors without
@@ -196,7 +191,7 @@ export default function FullIntEx() {
               </p>
               <a
                 href="/contact"
-                className="inline-block px-8 py-3 bg-accent hover:bg-accent/90 text-white font-semibold rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-accent/50"
+                className="inline-block px-8 py-3 bg-accent hover:bg-accent/90 text-black font-semibold rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-accent/50"
               >
                 Get Started
               </a>

@@ -48,17 +48,17 @@ export default function InteriorRefresh() {
 
             <main className="w-full text-white my-0 mx-auto text-center p-4">
               <div className="flex flex-col w-full gap-4 lg:w-5/6 mx-auto border-2 border-zinc-500 rounded-lg p-6 lg:p-8">
-                <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center mb-4">
+                <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center mb-0 lg:mb-4">
                   <div className="relative flex flex-grow justify-center rounded-2xl w-full h-[450px] lg:h-[550px] shadow-[0_0_20px_-5px_rgba(217,119,6,0.5)]">
                     <Image src="/assets/images/interior/driver15.jpg" alt="Interior Refresh" className="rounded-2xl" objectFit="cover" fill />
                   </div>
 
-                  <div className="flex flex-col w-full justify-between h-[475px] lg:h-[550px]">
+                  <div className="flex flex-col w-full justify-between min-h-[475px] lg:h-[550px] py-4">
                     <div className="flex flex-col items-start">
                       <h2 className="text-4xl font-bold">Our Interior Refresh Service</h2>
                       <strong className="text-primary text-bold text-2xl">Maintenance-based Interior Detail</strong>
                     </div>
-                    <div className="flex items-center">
+                    <div className="flex items-center my-4">
                       <Brush color="#f59e0b" size={156} className="mr-4" />
                       <p className="leading-relaxed text-left text-md">
                         Our Interior Refresh is designed for vehicles already in good condition that don't require intensive stain removal or heavy pet hair
@@ -66,7 +66,7 @@ export default function InteriorRefresh() {
                         sharp and protected without the extra cost of a deep clean.
                       </p>
                     </div>
-                    <div className="flex items-center">
+                    <div className="flex items-center mb-4">
                       <Sparkles color="#f59e0b" size={156} className="mr-4" />
                       <p className="leading-relaxed text-left text-md">
                         We perform a thorough top-to-bottom cleaning of all surfaces, including seats, carpets, dashboards, and vents. While doing that we use
@@ -191,14 +191,14 @@ export default function InteriorRefresh() {
 
             <br className="extra-space" />
 
-            <div className="mt-12 p-6 lg:p-8 bg-gradient-to-r from-zinc-800 to-zinc-700 rounded-lg border border-accent border-opacity-30 text-center">
+            <div className="mt-12 mb-6 p-6 lg:p-8 bg-gradient-to-r from-zinc-800 to-zinc-700 rounded-lg border border-accent border-opacity-30 text-center">
               <h3 className="text-2xl lg:text-3xl font-bold text-white mb-3">Ready to Refresh Your Interior?</h3>
               <p className="text-gray-300 mb-6 text-lg">
                 Have questions about our Interior Refresh service? Want to book an appointment? Get in touch with us today!
               </p>
               <a
                 href="/contact"
-                className="inline-block px-8 py-3 bg-accent hover:bg-accent/90 text-white font-semibold rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-accent/50"
+                className="inline-block px-8 py-3 bg-accent hover:bg-accent/90 text-black font-semibold rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-accent/50"
               >
                 Get Started
               </a>

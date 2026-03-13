@@ -58,7 +58,7 @@ export default function Exterior() {
 
             <main className="w-full text-white my-0 mx-auto text-center p-4">
               <div className="flex flex-col w-full gap-4 lg:w-5/6 mx-auto border-2 border-zinc-500 rounded-lg p-6 lg:p-8">
-                <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center mb-4">
+                <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center mb-0 lg:mb-4">
                   <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
                     <BeforeAfterSlider
                       beforeImage="/assets/images/before&afters/teslawashBFR.jpg"
@@ -67,12 +67,12 @@ export default function Exterior() {
                     />
                   </div>
 
-                  <div className="flex flex-col w-full justify-between h-[475px] lg:h-[550px]">
+                  <div className="flex flex-col w-full justify-between min-h-[475px] lg:h-[550px] py-4">
                     <div className="flex flex-col items-start">
                       <h2 className="text-4xl font-bold">Our Exterior Decon Wash</h2>
                       <strong className="text-primary text-bold text-2xl">The Detailer's Car Wash</strong>
                     </div>
-                    <div className="flex items-center">
+                    <div className="flex items-center my-4">
                       <Brush color="#f59e0b" size={156} className="mr-4" />
                       <p className="leading-relaxed text-left text-md">
                         Our Exterior Decon Wash is the "detailer's car wash"—built on the principle that truly clean means contaminant-free. We go far beyond
@@ -80,7 +80,7 @@ export default function Exterior() {
                         skipped—like door jambs and gas doors—we ensure your paint and wheels are surgically clean and protected from the elements.
                       </p>
                     </div>
-                    <div className="flex items-center">
+                    <div className="flex items-center mb-4">
                       <Brush color="#f59e0b" size={156} className="mr-4" />
                       <p className="leading-relaxed text-left text-md">
                         We finish every wash with a high-grade ceramic spray that provides at least 3 months of protection. This layer isn't just for a

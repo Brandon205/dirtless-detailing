@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import prices from "../../utils/Prices";
 import salePrices from "../../utils/SalePrices";
-import { CornerRightDown } from "lucide-react";
+import { CornerRightDown, ArrowRight } from "lucide-react";
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "./Select";
 
 import dynamic from "next/dynamic";
@@ -121,7 +121,7 @@ export default function PricingComponent(props) {
 
   return (
     <div className="w-full text-white">
-      <div className="flex flex-col lg:flex-row items-center gap-[5vh] px-20 py-0 mb-20 w-3/4 mx-auto">
+      <div className="flex flex-col items-center lg:flex-row gap-[5vh] px-4 lg:px-20 mb-20 w-full mx-auto lg:w-5/6 border-2 bg-zinc-900 border-zinc-500 rounded-2xl p-6 lg:p-8">
         <div className="relative w-[90vw] h-[35vh] max-w-[600px] rounded-xl bg-center bg-cover bg-no-repeat lg:max-w-[800px]">
           <Image
             src={imagesArr[currVal]}
@@ -131,34 +131,38 @@ export default function PricingComponent(props) {
             className="object-cover rounded-3xl"
           />
         </div>
-        <div className="flex flex-col lg:w-1/2 gap-8">
-          <Select value={currVal} onValueChange={(e) => updateValue(e)} defaultValue="2">
-            <SelectTrigger className="text-2xl w-[275px] lg:w-[375px] lg:mx-auto shadow-[0_0_15px_rgb(0,0,0)]">
-              <SelectValue placeholder="Select a vehicle size." />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectGroup className="text-2xl text-white">
-                <SelectLabel className="text-2xl">Sizes</SelectLabel>
-                <SelectItem className="text-2xl" value="0">
-                  Any 2-Door Vehicle
-                </SelectItem>
-                <SelectItem className="text-2xl" value="1">
-                  4-Door Sedans
-                </SelectItem>
-                <SelectItem className="text-2xl" value="2">
-                  Mid-Size SUV's
-                </SelectItem>
-                <SelectItem className="text-2xl" value="3">
-                  4-Door Trucks
-                </SelectItem>
-                <SelectItem className="text-2xl" value="4">
-                  3-Row SUV's & Minivans
-                </SelectItem>
-              </SelectGroup>
-            </SelectContent>
-          </Select>
-          <div className="flex flex-col justify-between items-center w-[90%] my-0 mx-auto max-w-[700px] lg:flex-row">
-            <div className="flex flex-col items-start mb-4 w-full lg:w-1/2">
+        <div className="w-full lg:w-px h-px bg-gray-300 lg:h-[450px]"></div>
+        <div className="flex flex-col justify-between w-full lg:w-1/2 gap-8 py-4">
+          <div>
+            <Select value={currVal} onValueChange={(e) => updateValue(e)} defaultValue="2">
+              <SelectTrigger className="text-3xl lg:w-full lg:mx-auto shadow-[0_0_15px_rgb(0,0,0)] mb-12 py-8 bg-zinc-700">
+                <SelectValue placeholder="Select a vehicle size." />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectGroup className="text-2xl text-white">
+                  <SelectLabel className="text-2xl">Sizes</SelectLabel>
+                  <SelectItem className="text-2xl" value="0">
+                    Any 2-Door Vehicle
+                  </SelectItem>
+                  <SelectItem className="text-2xl" value="1">
+                    4-Door Sedans
+                  </SelectItem>
+                  <SelectItem className="text-2xl" value="2">
+                    Mid-Size SUV's
+                  </SelectItem>
+                  <SelectItem className="text-2xl" value="3">
+                    4-Door Trucks
+                  </SelectItem>
+                  <SelectItem className="text-2xl" value="4">
+                    3-Row SUV's & Minivans
+                  </SelectItem>
+                </SelectGroup>
+              </SelectContent>
+            </Select>
+            <div className="w-full h-px bg-gray-300"></div>
+          </div>
+          <div className="flex flex-col justify-between items-center w-full my-0 mx-auto max-w-[700px] lg:flex-row">
+            <div className="flex flex-col items-start mb-4 w-full">
               <p className="text-2xl mx-auto lg:mx-0">Starting At:</p>
               {props.shortTitle == "extCorrect" || props.shortTitle == "extPolish" ? (
                 <p className="text-gray-400 text-sm text-left">*Additional Correction (e.g., wet sanding, touchup painting) is available at $150/hour.</p>
@@ -184,7 +188,7 @@ export default function PricingComponent(props) {
                 )}
                 <div className="flex flex-col items-center">
                   {salePrices["active"] ? <span className="text-xl text-right text-green-500 font-semibold">{salePrices["saleName"]}!</span> : ""}
-                  <strong className="pricing__pricecard-pricebox border-white border-2">
+                  <strong className="pricing__pricecard-pricebox border-gray-300 border-2 bg-zinc-700">
                     <span className="pricing__pricecard-price">{content}</span>
                   </strong>
                 </div>
@@ -194,15 +198,21 @@ export default function PricingComponent(props) {
               </p>
             </div>
           </div>
+          <div>
+            <a
+              href="/contact"
+              className="py-3 text-black text-xl tracking-wide px-[0.9rem] bg-primary rounded-xl w-full font-bold items-center flex justify-center"
+            >
+              SCHEDULE NOW!
+              <ArrowRight color="#000" />
+            </a>
+          </div>
         </div>
       </div>
       <div className="w-[100vw]">
         <hr className="pricing__hr" />
         <h3 className="text-center text-3xl font-semibold my-8">Get even more out of your service with our add-ons!</h3>
         {addonSection}
-        <a href="/contact" className="new-contact-btn">
-          Contact Us
-        </a>
       </div>
     </div>
   );
@@ -219,7 +229,7 @@ const Correction = () => {
           </p>
         </div>
         <div className="bg-primary w-1/2 py-2 rounded-lg text-xl font-medium">
-          <p>$75</p>
+          <p className="text-black">$75</p>
         </div>
       </div>
       <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4 max-w-[500px]">
@@ -231,7 +241,7 @@ const Correction = () => {
           </p>
         </div>
         <div className="bg-primary w-1/2 py-2 rounded-lg text-xl font-medium">
-          <p>$80/hour</p>
+          <p className="text-black">$80/hour</p>
         </div>
       </div>
     </div>
@@ -249,7 +259,7 @@ const Exterior = () => {
           </p>
         </div>
         <div className="bg-primary w-1/2 py-2 rounded-lg text-xl font-medium">
-          <p>$75</p>
+          <p className="text-black">$75</p>
         </div>
       </div>
       <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4 max-w-[500px]">
@@ -261,7 +271,7 @@ const Exterior = () => {
           </p>
         </div>
         <div className="bg-primary w-1/2 py-2 rounded-lg text-xl font-medium">
-          <p>$75</p>
+          <p className="text-black">$75</p>
         </div>
       </div>
       <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4 max-w-[500px]">
@@ -273,7 +283,7 @@ const Exterior = () => {
           </p>
         </div>
         <div className="bg-primary w-1/2 py-2 rounded-lg text-xl font-medium">
-          <p>$75</p>
+          <p className="text-black">$75</p>
         </div>
       </div>
     </div>
@@ -290,7 +300,7 @@ const WashCoat = () => {
           </p>
         </div>
         <div className="bg-primary w-1/2 py-2 rounded-lg text-xl font-medium">
-          <p>$75</p>
+          <p className="text-black">$75</p>
         </div>
       </div>
       <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4 max-w-[500px]">
@@ -302,7 +312,7 @@ const WashCoat = () => {
           </p>
         </div>
         <div className="bg-primary w-1/2 py-2 rounded-lg text-xl font-medium">
-          <p>$75</p>
+          <p className="text-black">$75</p>
         </div>
       </div>
     </div>
@@ -321,7 +331,7 @@ const FullInterior = () => {
           </p>
         </div>
         <div className="bg-primary w-1/2 py-2 rounded-lg text-xl font-medium">
-          <p>$75</p>
+          <p className="text-black">$75</p>
         </div>
       </div>
       <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4 max-w-[500px]">
@@ -333,7 +343,7 @@ const FullInterior = () => {
           </p>
         </div>
         <div className="bg-primary w-1/2 py-2 rounded-lg text-xl font-medium">
-          <p>$75</p>
+          <p className="text-black">$75</p>
         </div>
       </div>
     </div>
@@ -352,7 +362,7 @@ const InteriorRefresh = () => {
           </p>
         </div>
         <div className="bg-primary w-1/2 py-2 rounded-lg text-xl font-medium">
-          <p>$75</p>
+          <p className="text-black">$75</p>
         </div>
       </div>
     </div>
@@ -371,7 +381,7 @@ const InteriorRestore = () => {
           </p>
         </div>
         <div className="bg-primary w-1/2 py-2 rounded-lg text-xl font-medium">
-          <p>$75</p>
+          <p className="text-black">$75</p>
         </div>
       </div>
     </div>

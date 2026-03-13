@@ -140,11 +140,9 @@ export default function ExteriorCorrect() {
 
             <br className="extra-space" />
 
-            <br className="extra-space" />
-
             <main className="w-full text-white my-0 mx-auto text-center p-4">
               <div className="flex flex-col w-full gap-4 lg:w-5/6 mx-auto border-2 border-zinc-500 rounded-lg p-6 lg:p-8">
-                <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center mb-4">
+                <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center mb-0 lg:mb-4">
                   <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
                     <BeforeAfterSlider
                       beforeImage="/assets/images/before&afters/scratchesBefore.jpg"
@@ -153,12 +151,12 @@ export default function ExteriorCorrect() {
                     />
                   </div>
 
-                  <div className="flex flex-col w-full justify-between h-[475px] lg:h-[550px]">
+                  <div className="flex flex-col w-full justify-between min-h-[475px] lg:h-[550px] py-4">
                     <div className="flex flex-col items-start">
                       <h2 className="text-4xl font-bold">Our Correct & Coat Service</h2>
                       <strong className="text-primary text-bold text-2xl">The Ultimate Exterior Detail & Protection</strong>
                     </div>
-                    <div className="flex items-center">
+                    <div className="flex items-center my-4">
                       <Brush color="#f59e0b" size={156} className="mr-4" />
                       <p className="leading-relaxed text-left text-md">
                         Correct & Coat is our premier exterior service, utilizing a rigorous 2-stage paint correction process to remove 75-90% of scratches,
@@ -167,7 +165,7 @@ export default function ExteriorCorrect() {
                         ensuring you get the exact results you want for your investment.
                       </p>
                     </div>
-                    <div className="flex items-center">
+                    <div className="flex items-center mb-4">
                       <Brush color="#f59e0b" size={156} className="mr-4" />
                       <p className="leading-relaxed text-left text-md">
                         The restored paint is then locked in with a professional 3-year ceramic coating, providing a glass-like shine and the best protection

@@ -78,7 +78,7 @@ export default function ExteriorPolish() {
 
             <main className="w-full text-white my-0 mx-auto text-center p-4">
               <div className="flex flex-col w-full gap-4 lg:w-5/6 mx-auto border-2 border-zinc-500 rounded-lg p-6 lg:p-8">
-                <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center mb-4">
+                <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center mb-0 lg:mb-4">
                   <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
                     <BeforeAfterSlider
                       beforeImage="/assets/images/before&afters/beforeMazda3.jpg"
@@ -87,19 +87,19 @@ export default function ExteriorPolish() {
                     />
                   </div>
 
-                  <div className="flex flex-col w-full justify-between h-[475px] lg:h-[550px]">
+                  <div className="flex flex-col w-full justify-between min-h-[475px] lg:h-[550px] py-4">
                     <div className="flex flex-col items-start">
                       <h2 className="text-4xl font-bold">Our Exterior Polish & Coat Service</h2>
                       <strong className="text-primary text-bold text-2xl">The Perfect Exterior Middle Ground Refreshment</strong>
                     </div>
-                    <div className="flex items-center">
+                    <div className="flex items-center my-4">
                       <Brush color="#f59e0b" size={156} className="mr-4" />
                       <p className="leading-relaxed text-left text-md">
                         This service is the perfect middle ground for vehicles that have developed light swirl marks and a dull appearance. After a thorough
                         decontamination and clay bar treatment, we perform a light machine polishing step to restore depth and clarity to your clear coat.
                       </p>
                     </div>
-                    <div className="flex items-center">
+                    <div className="flex items-center mb-4">
                       <Brush color="#f59e0b" size={156} className="mr-4" />
                       <p className="leading-relaxed text-left text-md">
                         We top the restored surface with our 3-year ceramic coating that acts as a durable barrier against environmental damage and water spots.
@@ -244,7 +244,7 @@ export default function ExteriorPolish() {
               </p>
               <a
                 href="/contact"
-                className="inline-block px-8 py-3 bg-accent hover:bg-accent/90 text-white font-semibold rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-accent/50"
+                className="inline-block px-8 py-3 bg-accent hover:bg-accent/90 text-black font-semibold rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-accent/50"
               >
                 Get Started
               </a>

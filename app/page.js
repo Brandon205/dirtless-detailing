@@ -254,7 +254,7 @@ export default function Home() {
             steps={[
               "A thorough 3-step wash process",
               "Included clay bar treatment",
-              "A single-stage polish",
+              "A single-stage polish & waterspot removal on glass",
               "3-Year Ceramic Coating + Windshield Coating Application"
             ]}
             hours="6-9+"
