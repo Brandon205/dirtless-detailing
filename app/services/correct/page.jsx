@@ -5,6 +5,8 @@ import MosaicGallery from "../../components/MosaicGallery";
 import BeforeAfterSlider from "../../components/ImageSlider";
 import { containerVariant, oddVariant, evenVariant } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
+import { FaLock } from "react-icons/fa";
+import { GiSquareBottle } from "react-icons/gi";
 import HeaderComponent from "../../components/HeaderComponent";
 import FaqItem from "../../components/FaqItem";
 import { ExternalLink, Brush } from "lucide-react";
@@ -157,20 +159,19 @@ export default function ExteriorCorrect() {
                       <strong className="text-primary text-bold text-2xl">The Ultimate Exterior Detail & Protection</strong>
                     </div>
                     <div className="flex items-center my-4">
-                      <Brush color="#f59e0b" size={156} className="mr-4" />
+                      <FaLock color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
                       <p className="leading-relaxed text-left text-md">
                         Correct & Coat is our premier exterior service, utilizing a rigorous 2-stage paint correction process to remove 75-90% of scratches,
-                        swirls, and imperfections. We've spent years mastering how different paints respond to specialized pads and chemicals, allowing us to
-                        reveal a level of gloss and clarity that other shops often struggle to achieve. We tailor this intensive process to your specific goals,
-                        ensuring you get the exact results you want for your investment.
+                        swirls, and imperfections. We tailor this intensive process to your specific goals, ensuring you get the exact results you want for your
+                        investment.
                       </p>
                     </div>
                     <div className="flex items-center mb-4">
-                      <Brush color="#f59e0b" size={156} className="mr-4" />
+                      <GiSquareBottle color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
                       <p className="leading-relaxed text-left text-md">
                         The restored paint is then locked in with a professional 3-year ceramic coating, providing a glass-like shine and the best protection
                         against Washington's weather. We choose a 3-year coating specifically because it aligns with a realistic maintenance schedule, allowing
-                        us to check in and refresh the surface before new swirls can accumulate. It's not just a detail; it's a total exterior transformation.
+                        us to check in and refresh the surface before new swirls can accumulate.
                       </p>
                     </div>
                     <div className="w-full p-4 bg-zinc-800 rounded-lg border border-zinc-600">

@@ -5,7 +5,9 @@ import HeaderComponent from "../../components/HeaderComponent";
 import MosaicGallery from "../../components/MosaicGallery";
 import BeforeAfterSlider from "../../components/ImageSlider";
 import { containerVariant, oddVariant, evenVariant } from "../../../utils/animationVariations";
-import { ExternalLink, Brush } from "lucide-react";
+import { ExternalLink } from "lucide-react";
+import { GiClayBrick } from "react-icons/gi";
+import { FaCarOn } from "react-icons/fa6";
 import FaqItem from "../../components/FaqItem";
 import { motion } from "framer-motion";
 import BaseSchema from "../../jsonSchemas/BaseSchema";
@@ -93,14 +95,14 @@ export default function ExteriorPolish() {
                       <strong className="text-primary text-bold text-2xl">The Perfect Exterior Middle Ground Refreshment</strong>
                     </div>
                     <div className="flex items-center my-4">
-                      <Brush color="#f59e0b" size={156} className="mr-4" />
+                      <GiClayBrick color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
                       <p className="leading-relaxed text-left text-md">
                         This service is the perfect middle ground for vehicles that have developed light swirl marks and a dull appearance. After a thorough
                         decontamination and clay bar treatment, we perform a light machine polishing step to restore depth and clarity to your clear coat.
                       </p>
                     </div>
                     <div className="flex items-center mb-4">
-                      <Brush color="#f59e0b" size={156} className="mr-4" />
+                      <FaCarOn color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
                       <p className="leading-relaxed text-left text-md">
                         We top the restored surface with our 3-year ceramic coating that acts as a durable barrier against environmental damage and water spots.
                         We also give your windshield, exterior glass, and trim that same coating, protecting your entire vehicle. Your car will look better,

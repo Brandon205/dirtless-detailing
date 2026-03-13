@@ -5,7 +5,9 @@ import BeforeAfterSlider from "../../components/ImageSlider";
 import MosaicGallery from "../../components/MosaicGallery";
 import { containerVariant, oddVariant, evenVariant } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
-import { ExternalLink, Brush } from "lucide-react";
+import { FaShieldAlt } from "react-icons/fa";
+import { RiResetLeftLine } from "react-icons/ri";
+import { ExternalLink } from "lucide-react";
 import BaseSchema from "../../jsonSchemas/BaseSchema";
 
 export default function Exterior() {
@@ -65,18 +67,18 @@ export default function Exterior() {
                       <strong className="text-primary text-bold text-2xl">The easiest way to get your car protected.</strong>
                     </div>
                     <div className="flex items-center my-4">
-                      <Brush color="#f59e0b" size={156} className="mr-4" />
+                      <FaShieldAlt color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
                       <p className="leading-relaxed text-left text-md">
                         The Wash & Coat package is the ultimate "New Car" reset, designed for owners who prioritize surface protection and ease of maintenance.
                         You get the extreme water beading and UV resistance of a ceramic shield at a fraction of the cost of our correction packages.
                       </p>
                     </div>
                     <div className="flex items-center mb-4">
-                      <Brush color="#f59e0b" size={156} className="mr-4" />
+                      <RiResetLeftLine color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
                       <p className="leading-relaxed text-left text-md">
-                        Once the surface is surgically decontaminated, we perform a dedicated paint prep to ensure our 3-year ceramic coating bonds at a
-                        molecular level. This creates a durable defense that no wax can match. For the next several years, your paint will be incredibly slick,
-                        meaning road grime struggles to stick and your maintenance washes become almost effortless.
+                        Once the surface is decontaminated, we perform a dedicated paint prep to ensure our 3-year ceramic coating can bond properly. This
+                        creates a durable defense that no wax can match. Now your paint will be incredibly slick, meaning road grime struggles to stick and your
+                        maintenance washes become almost effortless.
                       </p>
                     </div>
                     <div className="w-full p-4 bg-zinc-800 rounded-lg border border-zinc-600">

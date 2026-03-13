@@ -3,20 +3,12 @@ import PricingComponent from "../../components/PricingComponent";
 import HeaderComponent from "../../components/HeaderComponent";
 import MosaicGallery from "../../components/MosaicGallery";
 import BeforeAfterSlider from "../../components/ImageSlider";
-import {
-  previewParentVariation,
-  imgVariation1,
-  imgVariation2,
-  imgVariation3,
-  imgVariation4,
-  containerVariant,
-  oddVariant,
-  evenVariant
-} from "../../../utils/animationVariations";
+import { containerVariant, oddVariant, evenVariant } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
-import { ExternalLink, Brush } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import BaseSchema from "../../jsonSchemas/BaseSchema";
-import Image from "next/image";
+import { MdLocalCarWash } from "react-icons/md";
+import { PiSprayBottleFill } from "react-icons/pi";
 
 export default function Exterior() {
   return (
@@ -73,15 +65,15 @@ export default function Exterior() {
                       <strong className="text-primary text-bold text-2xl">The Detailer's Car Wash</strong>
                     </div>
                     <div className="flex items-center my-4">
-                      <Brush color="#f59e0b" size={156} className="mr-4" />
+                      <MdLocalCarWash color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
                       <p className="leading-relaxed text-left text-md">
                         Our Exterior Decon Wash is the "detailer's car wash"—built on the principle that truly clean means contaminant-free. We go far beyond
                         the surface to actively dissolve iron particles, tar, and tree sap that automatic washes simply cannot touch. By focusing on areas often
-                        skipped—like door jambs and gas doors—we ensure your paint and wheels are surgically clean and protected from the elements.
+                        skipped—like door jambs and gas doors—we ensure your paint and wheels are clean and protected from the elements.
                       </p>
                     </div>
                     <div className="flex items-center mb-4">
-                      <Brush color="#f59e0b" size={156} className="mr-4" />
+                      <PiSprayBottleFill color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
                       <p className="leading-relaxed text-left text-md">
                         We finish every wash with a high-grade ceramic spray that provides at least 3 months of protection. This layer isn't just for a
                         mirror-like shine; it creates a slick surface that repels water and prevents dirt from sticking, making your next wash faster and more

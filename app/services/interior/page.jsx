@@ -4,7 +4,8 @@ import BeforeAfterSlider from "../../components/ImageSlider";
 import HeaderComponent from "../../components/HeaderComponent";
 import MosaicGallery from "../../components/MosaicGallery";
 import { containerVariant, oddVariant, evenVariant } from "../../../utils/animationVariations";
-import { ExternalLink, Brush } from "lucide-react";
+import { ExternalLink } from "lucide-react";
+import { GiSpill, GiVacuumCleaner } from "react-icons/gi";
 import { motion } from "framer-motion";
 import BaseSchema from "../../jsonSchemas/BaseSchema";
 
@@ -65,7 +66,7 @@ export default function FullIntEx() {
                       <strong className="text-primary text-bold text-2xl">Thorough Cleaning and Conditioning</strong>
                     </div>
                     <div className="flex items-center my-4">
-                      <Brush color="#f59e0b" size={156} className="mr-4" />
+                      <GiVacuumCleaner color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
                       <p className="leading-relaxed text-left text-md">
                         When your vehicle has reached the point where a simple vacuuming isn't enough, the Full Interior detail is the reset you need. We've
                         spent years researching chemicals to find exactly what works for every mess—from coffee spills and pet accidents to embedded dirt and
@@ -73,7 +74,7 @@ export default function FullIntEx() {
                       </p>
                     </div>
                     <div className="flex items-center mb-4">
-                      <Brush color="#f59e0b" size={156} className="mr-4" />
+                      <GiSpill color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
                       <p className="leading-relaxed text-left text-md">
                         We match our techniques to your specific situation, using our specialized "carpet bonneting" to remove light stains and odors without
                         unnecessarily soaking your floors. For tougher cases, we utilize high-grade extraction and agitation to pull mud and debris from deep

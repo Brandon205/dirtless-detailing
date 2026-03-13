@@ -4,7 +4,7 @@ import HeaderComponent from "../../components/HeaderComponent";
 import MosaicGallery from "../../components/MosaicGallery";
 import { containerVariant, oddVariant, evenVariant } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
-import { Brush, ExternalLink, Sparkles } from "lucide-react";
+import { Flame, ExternalLink, Sparkles } from "lucide-react";
 import BaseSchema from "../../jsonSchemas/BaseSchema";
 import Image from "next/image";
 
@@ -59,7 +59,7 @@ export default function InteriorRefresh() {
                       <strong className="text-primary text-bold text-2xl">Maintenance-based Interior Detail</strong>
                     </div>
                     <div className="flex items-center my-4">
-                      <Brush color="#f59e0b" size={156} className="mr-4" />
+                      <Sparkles color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
                       <p className="leading-relaxed text-left text-md">
                         Our Interior Refresh is designed for vehicles already in good condition that don't require intensive stain removal or heavy pet hair
                         extraction. It's the perfect maintenance choice if you've had your vehicle detailed within the last year to keep your cabin looking
@@ -67,11 +67,11 @@ export default function InteriorRefresh() {
                       </p>
                     </div>
                     <div className="flex items-center mb-4">
-                      <Sparkles color="#f59e0b" size={156} className="mr-4" />
+                      <Flame color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
                       <p className="leading-relaxed text-left text-md">
                         We perform a thorough top-to-bottom cleaning of all surfaces, including seats, carpets, dashboards, and vents. While doing that we use
                         products made to clean and condition, saving us time and you money while still giving the benefits of protected and conditioned surfaces
-                        (without a greasy finish)
+                        (without a greasy finish).
                       </p>
                     </div>
                     <div className="w-full p-4 bg-zinc-800 rounded-lg border border-zinc-600">
