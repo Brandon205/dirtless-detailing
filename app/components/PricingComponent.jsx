@@ -279,7 +279,7 @@ const Exterior = () => {
           <h4 className="text-2xl font-semibold">Trim Restoration</h4>
           <p className="text-xl text-gray-300">
             If your trim is fading or oxidized, this is the perfect add-on to get it looking like new again! We will prep and restore all exterior trim on the
-            vehicle to bring back that deep black color and protect it from future fading. (Typically takes 30 minutes - 1 hour)
+            vehicle to bring back that deep black color and protect it from future fading.
           </p>
         </div>
         <div className="bg-primary w-1/2 py-2 rounded-lg text-xl font-medium">

@@ -83,8 +83,8 @@ export default function ExteriorPolish() {
                 <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center mb-0 lg:mb-4">
                   <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
                     <BeforeAfterSlider
-                      beforeImage="/assets/images/before&afters/beforeMazda3.jpg"
-                      afterImage="/assets/images/before&afters/afterMazda3.jpg"
+                      beforeImage="/assets/images/before&afters/polishhoodB.jpg"
+                      afterImage="/assets/images/before&afters/polishhoodA.jpg"
                       aspectRatio="16/9"
                     />
                   </div>
@@ -284,12 +284,12 @@ export default function ExteriorPolish() {
             <div>
               <MosaicGallery
                 images={[
-                  { src: "/assets/images/before&afters/seatsBA.jpg", alt: "Car seats before and after" },
-                  { src: "/assets/images/interior/bio1281.jpg", alt: "Interior detail" },
-                  { src: "/assets/images/interior/centerOldMercedes.jpg", alt: "Center console detail" },
-                  { src: "/assets/images/interior/doorRenegade.jpg", alt: "Door panel detail" },
-                  { src: "/assets/images/interior/driver11.jpg", alt: "Driver side view" },
-                  { src: "/assets/images/interior/driver21.jpg", alt: "Driver side view" }
+                  { src: "/assets/images/sealshine/rubiconA.jpg", alt: "After our Polish & Coat service" },
+                  { src: "/assets/images/sealshine/porscheFrontSign.jpg", alt: "After our Polish & Coat service" },
+                  { src: "/assets/images/sealshine/terryBroncoOutside.jpg", alt: "After our Polish & Coat service" },
+                  { src: "/assets/images/sealshine/fjCruiserOutside2.jpg", alt: "After our Polish & Coat service" },
+                  { src: "/assets/images/sealshine/audiSeal3.jpg", alt: "After our Polish & Coat service" },
+                  { src: "/assets/images/sealshine/sprinter5.jpg", alt: "After our Polish & Coat service" }
                 ]}
               />
             </div>
@@ -299,16 +299,16 @@ export default function ExteriorPolish() {
             <div className="p-8 text-center flex flex-col items-center text-white ">
               <h4 className="text-3xl text-left">
                 Check out our{" "}
-                <a href="/gallery/exterior" className="text-blue-500 inline-block">
-                  Exterior Gallery <ExternalLink className="inline-block" />
+                <a href="/gallery/polish" className="text-blue-500 inline-block">
+                  Polish & Coat Gallery <ExternalLink className="inline-block" />
                 </a>
               </h4>
               <p className="text-left">
-                Check out our exterior gallery page, showing off some of the great results we've gotten over the years! See it{" "}
-                <a href="/gallery/exterior" className="text-blue-500">
+                We've gotten some great results from just polishing vehicles, check them out{" "}
+                <a href="/gallery/polish" className="text-blue-500">
                   here
                 </a>
-                .
+                !
               </p>
             </div>
           </div>

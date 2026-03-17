@@ -88,7 +88,7 @@ export default function Home() {
           </strong> */}
           <div className="text-center lg:text-left">
             <strong className="text-gray-400 text-lg lg:text-xl">Dirt-Less Detailing</strong>
-            <h1 className="text-white font-heading text-4xl xl:text-7xl xl:text-left font-bold m-0 lg:max-w-[60%] px-2">
+            <h1 className="text-white font-heading text-4xl xl:text-7xl xl:text-left font-bold m-0 lg:max-w-[60%]">
               Your Ceramic Coating & Auto Detailing Specialists
             </h1>
           </div>
@@ -210,7 +210,7 @@ export default function Home() {
         </div>
 
         <div className="general-container new-heading-container" style={{ margin: "5vh auto 2vh auto" }}>
-          <strong className="above-heading text-4xl">EXTERIOR SERVICES</strong>
+          <strong className="above-heading text-4xl">OUR EXTERIOR SERVICES</strong>
           <h3 className="new-heading text-xl lg:text-2xl">
             From a quick wash to a complete paint correction and ceramic coating, we cover all things exterior!
           </h3>
