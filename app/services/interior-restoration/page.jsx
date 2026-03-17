@@ -28,10 +28,10 @@ export default function InteriorRestoration() {
         }}
       />
       <HeaderComponent
-        imageUrl="/assets/images/before&afters/nastykiadriverA.jpg"
+        imageUrl="/assets/images/interior/passfordGT.jpg"
         title="Interior Restoration"
         description="The service that can bring life back into heavily neglected interiors. If your interior has heavy odors, mold, or is extremely dirty, this is the service for you."
-        secondaryUrl="/assets/images/before&afters/badInteriorBA.png"
+        secondaryUrl="/assets/images/before&afters/badVanBA.jpg"
       />
 
       <div className="main-content-container">
@@ -53,8 +53,9 @@ export default function InteriorRestoration() {
                 <strong className="font-bold text-2xl text-primary">$350 - $650+</strong>
                 <p className="text-sm text-gray-400">*depending on size/condition</p>
                 <p className="text-left">
-                  Perfect for daily drivers, family cars, and vehicles with embedded dirt, spills, and extensive pet hair removal. Includes deep extraction,
-                  scrubbing, and sanitization.
+                  Perfect for heavily used daily drivers, family cars, and vehicles with embedded dirt, spills, or strong smoke/musty odors. Includes deep
+                  extraction, scrubbing, and sanitization. Most odors should be gone afterwards, we utilize zinc encapsulation after extracting to trap and
+                  neutralize any odors that somehow survive extraction. Then our Ozone Treatment (included) gets even more odors past that point.
                 </p>
               </div>
               <div className="max-w-[400px] w-full bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-6 mb-8">
@@ -82,8 +83,8 @@ export default function InteriorRestoration() {
                 <p className="font-bold text-2xl text-primary">OLD VEHICLE/BARN FINDS</p>
                 <div className="w-auto h-[250px] relative my-4">
                   <Image
-                    src="/assets/images/before&afters/badInteriorBA.png"
-                    alt="Before and after of a heavily neglected interior"
+                    src="/assets/images/interior/ferrariInt.jpg"
+                    alt="Photo of the interior of an old Ferrari Interior"
                     fill
                     objectFit="cover"
                     className="mb-4 rounded-lg"
@@ -102,10 +103,8 @@ export default function InteriorRestoration() {
             <div className="w-full bg-zinc-800 flex text-white rounded-lg shadow-sm border border-zinc-900 p-6 mb-8 max-w-[1315px] mx-auto text-left gap-4 flex-col lg:flex-row justify-center lg:justify-start">
               <div className="w-full h-[250px] relative">
                 <Image
-                  src="/assets/images/before&afters/badInteriorBA.png"
+                  src="/assets/images/before&afters/badVanBA.jpg"
                   alt="Before and after of a heavily neglected interior"
-                  // width={250}
-                  // height={250}
                   fill
                   objectFit="cover"
                   className="mb-4 object-cover"
@@ -114,9 +113,9 @@ export default function InteriorRestoration() {
               <div>
                 <h3 className="font-semibold text-2xl text-primary mb-2">BUDGET CONSCIOUS RESTORATION: OPT FOR A CAPPED HOURLY DETAIL</h3>
                 <p>
-                  Choose this option for these services at an hourly rate ($125-$150/hour). Set a specific time limit (e.g., a 4 or 6 hour block). We prioritize
-                  your biggest concerns and get through the most important steps for you before the time is up without extra things you may not be as worried
-                  about. Ideal for making a huge impact without needing a "Full Restoration"{" "}
+                  Choose this option for these services at our hourly rate ($125-$150/hour). Set a specific time limit (e.g., a 4 or 6 hour block). We
+                  prioritize your biggest concerns and get through the most important steps for you before the time is up without extra things you may not be as
+                  worried about. Ideal for making a huge impact without needing a "Full Restoration".
                 </p>
                 <div className="flex justify-start gap-8 mt-4 flex-col lg:flex-row">
                   <a
@@ -148,7 +147,7 @@ export default function InteriorRestoration() {
 
                   <div className="flex flex-col w-full justify-between min-h-[475px] lg:h-[550px] py-4">
                     <div className="flex flex-col items-start">
-                      <h2 className="text-4xl font-bold">Our Full Interior Detail</h2>
+                      <h2 className="text-4xl font-bold">Our Interior Restoration Service</h2>
                       <strong className="text-primary text-bold text-2xl">Thorough Cleaning and Conditioning</strong>
                     </div>
                     <div className="flex items-center my-4">
@@ -190,7 +189,7 @@ export default function InteriorRestoration() {
             </main>
 
             <div className="mt-12 p-6 lg:p-8 bg-gradient-to-r from-zinc-800 to-zinc-700 rounded-lg border border-accent border-opacity-30 text-center">
-              <h3 className="text-2xl lg:text-3xl font-bold text-white mb-3">Is your car in need of a Restoration?</h3>
+              <h3 className="text-2xl lg:text-3xl font-bold text-white mb-3">Is your car in need of a restoration?</h3>
               <p className="text-gray-300 mb-6 text-lg">
                 Have questions or want a free quote on our Interior Restoration Service? Want to book an appointment? Get in touch with us today!
               </p>
@@ -209,30 +208,23 @@ export default function InteriorRestoration() {
             <div>
               <MosaicGallery
                 images={[
-                  { src: "/assets/images/before&afters/seatsBA.jpg", alt: "Car seats before and after" },
-                  { src: "/assets/images/interior/bio1281.jpg", alt: "Interior detail" },
-                  { src: "/assets/images/interior/centerOldMercedes.jpg", alt: "Center console detail" },
-                  { src: "/assets/images/interior/doorRenegade.jpg", alt: "Door panel detail" },
-                  { src: "/assets/images/interior/driver11.jpg", alt: "Driver side view" },
-                  { src: "/assets/images/interior/driver21.jpg", alt: "Driver side view" }
+                  { src: "/assets/images/interior/ferrariInt.jpg", alt: "Vehicle Interior after our extensive Interior Restoration service" },
+                  { src: "/assets/images/interior/bio1281.jpg", alt: "Vehicle during our ozone treatment with the machine pumping ozone into the cabin" },
+                  { src: "/assets/images/before&afters/badMobileIntBA.jpg", alt: "Vehicle Interior after our extensive Interior Restoration service" },
+                  { src: "/assets/images/before&afters/bio1279.webp", alt: "Vehicle Interior after our extensive Interior Restoration service" },
+                  { src: "/assets/images/before&afters/dogHairBA.jpg", alt: "Vehicle Interior after our extensive Interior Restoration service" },
+                  { src: "/assets/images/before&afters/fordVinylBA.jpg", alt: "Vehicle Interior after our extensive Interior Restoration service" }
                 ]}
               />
             </div>
 
-            <div className="p-8 text-center flex flex-col items-center text-white ">
+            <div className="pb-8 text-center flex flex-col items-center text-white ">
               <h4 className="text-3xl text-left">
-                See more examples of our interior{" "}
+                See more examples of our interior work{" "}
                 <a href="/gallery/interior" className="text-blue-500 inline-block">
-                  work <ExternalLink className="inline-block" />
+                  here <ExternalLink className="inline-block" />
                 </a>
               </h4>
-              <p className="text-left">
-                Our interior gallery page has a large collection of interior images including before and after pictures! Check it out{" "}
-                <a href="/gallery/interior" className="text-blue-500">
-                  here
-                </a>
-                .
-              </p>
             </div>
           </div>
         </div>

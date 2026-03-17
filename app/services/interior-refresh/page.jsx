@@ -12,7 +12,7 @@ export default function InteriorRefresh() {
   return (
     <section className="service-content-container">
       <BaseSchema
-        serviceImage="/assets/images/interior/driver15.jpg"
+        serviceImage="/assets/images/interior/pass1.jpg"
         url="https://www.dirtlessdetailing.com/services/interior-refresh"
         makesOffer={{
           "@type": "Offer",
@@ -27,7 +27,7 @@ export default function InteriorRefresh() {
         }}
       />
       <HeaderComponent
-        imageUrl="/assets/images/interior/driver15.jpg"
+        imageUrl="/assets/images/interior/pass1.jpg"
         title="Interior Refresh"
         description="For vehicles that are already nearly clean. A maintenance-focused interior detail that keeps your interior looking like new."
         secondaryUrl="/assets/images/before&afters/floorBA.jpg"
@@ -50,7 +50,7 @@ export default function InteriorRefresh() {
               <div className="flex flex-col w-full gap-4 lg:w-5/6 mx-auto border-2 border-zinc-500 rounded-lg p-6 lg:p-8">
                 <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center mb-0 lg:mb-4">
                   <div className="relative flex flex-grow justify-center rounded-2xl w-full h-[450px] lg:h-[550px] shadow-[0_0_20px_-5px_rgba(217,119,6,0.5)]">
-                    <Image src="/assets/images/interior/driver15.jpg" alt="Interior Refresh" className="rounded-2xl" objectFit="cover" fill />
+                    <Image src="/assets/images/interior/driverModelX.jpg" alt="Interior Refresh" className="rounded-2xl" objectFit="cover" fill />
                   </div>
 
                   <div className="flex flex-col w-full justify-between min-h-[475px] lg:h-[550px] py-4">
@@ -211,33 +211,23 @@ export default function InteriorRefresh() {
             <div>
               <MosaicGallery
                 images={[
-                  { src: "/assets/images/before&afters/seatsBA.jpg", alt: "Car seats before and after" },
-                  { src: "/assets/images/interior/bio1281.jpg", alt: "Interior detail" },
-                  { src: "/assets/images/interior/centerOldMercedes.jpg", alt: "Center console detail" },
-                  { src: "/assets/images/interior/doorRenegade.jpg", alt: "Door panel detail" },
-                  { src: "/assets/images/interior/driver11.jpg", alt: "Driver side view" },
-                  { src: "/assets/images/interior/driver21.jpg", alt: "Driver side view" },
-                  { src: "/assets/images/interior/jamb4.jpg", alt: "Door jamb detail" },
-                  { src: "/assets/images/interior/rear15.jpg", alt: "Rear interior" },
-                  { src: "/assets/images/interior/trunk1.jpg", alt: "Trunk detail" }
+                  { src: "/assets/images/interior/passfordGT.jpg", alt: "Interior after our Interior Refresh Service" },
+                  { src: "/assets/images/interior/rear13.jpg", alt: "Interior after our Interior Refresh Service" },
+                  { src: "/assets/images/interior/doorRenegade.jpg", alt: "Interior after our Interior Refresh Service" },
+                  { src: "/assets/images/interior/trunkLexus.jpg", alt: "Interior after our Interior Refresh Service" },
+                  { src: "/assets/images/interior/driver15.jpg", alt: "Interior after our Interior Refresh Service" },
+                  { src: "/assets/images/interior/door1.jpg", alt: "Interior after our Interior Refresh Service" }
                 ]}
               />
             </div>
 
-            <div className="p-8 text-center flex flex-col items-center text-white ">
+            <div className="pb-8 text-center flex flex-col items-center text-white ">
               <h4 className="text-3xl text-left">
-                See more examples of our interior{" "}
+                See more examples of our interior work{" "}
                 <a href="/gallery/interior" className="text-blue-500 inline-block">
-                  work <ExternalLink className="inline-block" />
+                  here <ExternalLink className="inline-block" />
                 </a>
               </h4>
-              <p className="text-left">
-                Our interior gallery page has a large collection of interior images including before and after pictures! Check it out{" "}
-                <a href="/gallery/interior" className="text-blue-500">
-                  here
-                </a>
-                .
-              </p>
             </div>
           </div>
         </div>

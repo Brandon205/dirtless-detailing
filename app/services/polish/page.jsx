@@ -284,32 +284,24 @@ export default function ExteriorPolish() {
             <div>
               <MosaicGallery
                 images={[
-                  { src: "/assets/images/sealshine/rubiconA.jpg", alt: "After our Polish & Coat service" },
-                  { src: "/assets/images/sealshine/porscheFrontSign.jpg", alt: "After our Polish & Coat service" },
-                  { src: "/assets/images/sealshine/terryBroncoOutside.jpg", alt: "After our Polish & Coat service" },
-                  { src: "/assets/images/sealshine/fjCruiserOutside2.jpg", alt: "After our Polish & Coat service" },
-                  { src: "/assets/images/sealshine/audiSeal3.jpg", alt: "After our Polish & Coat service" },
-                  { src: "/assets/images/sealshine/sprinter5.jpg", alt: "After our Polish & Coat service" }
+                  { src: "/assets/images/sealshine/36 plymouth.jpg", alt: "Exterior after our Polish & Coat Service" },
+                  { src: "/assets/images/sealshine/audiSeal2.jpg", alt: "Exterior after our Polish & Coat Service" },
+                  { src: "/assets/images/sealshine/beamer2.jpg", alt: "Exterior after our Polish & Coat Service" },
+                  { src: "/assets/images/sealshine/mustangFL.jpg", alt: "Exterior after our Polish & Coat Service" },
+                  { src: "/assets/images/sealshine/redFordPolishers.jpg", alt: "Exterior during our Polish & Coat Service" },
+                  { src: "/assets/images/sealshine/sprinter6.jpg", alt: "Exterior after our Polish & Coat Service" }
                 ]}
               />
             </div>
 
-            <br className="extra-space" />
-
-            <div className="p-8 text-center flex flex-col items-center text-white ">
+            <div className="pb-8 text-center flex flex-col items-center text-white ">
               <h4 className="text-3xl text-left">
                 Check out our{" "}
                 <a href="/gallery/polish" className="text-blue-500 inline-block">
                   Polish & Coat Gallery <ExternalLink className="inline-block" />
-                </a>
+                </a>{" "}
+                for more images.
               </h4>
-              <p className="text-left">
-                We've gotten some great results from just polishing vehicles, check them out{" "}
-                <a href="/gallery/polish" className="text-blue-500">
-                  here
-                </a>
-                !
-              </p>
             </div>
           </div>
         </div>

@@ -166,8 +166,8 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row flex-grow lg:justify-between lg:items-stretch lg:flex-wrap lg:w-[90%] mx-auto justify-center items-center gap-24 mt-8 mb-8">
           <HomePageCard
             title="Interior Refresh"
-            imageUrl="/assets/images/interior/driver11.jpg"
-            description="Best for vehicles maintained within the last year or cars needing a light refresh to restore that like-new feel."
+            imageUrl="/assets/images/interior/driverRedFord.jpg"
+            description="Best for new cars, pretty clean vehicles, or ones detailed within the last year. We'll give them a refresh to restore that like-new feel."
             stepHeadline="KEY FEATURES"
             steps={["Quick air blow-out & vacuum", "Clean & condition surfaces", "Quick wipe door jambs"]}
             hours="2-4"
@@ -199,7 +199,7 @@ export default function Home() {
             title="Interior Restoration"
             imageUrl="/assets/images/before&afters/badInteriorBA.png"
             description="Specialized care for mold, smoke odors, or extreme neglect. We restore interiors that standard detailing can't handle."
-            stepHeadline="KEY ADDITIONS OVER THE FULL INTERIOR DETAIL"
+            stepHeadline="KEY ADDITIONS OVER OUR FULL INTERIOR DETAIL"
             steps={["Comprehensive odor removal", "Extra time & chemicals spent on heavy stains", "Ozone Treatment included"]}
             hours="4.5-8+"
             linkUrl="/services/interior-restoration"
@@ -235,7 +235,7 @@ export default function Home() {
           />
           <HomePageCard
             title="Wash & Coat"
-            imageUrl="/assets/images/exterior/hondaFront.jpg"
+            imageUrl="/assets/images/exterior/archCoTruck.jpg"
             description="Premium ceramic protection for your paint and wheels without the cost or time of paint correction."
             stepHeadline="KEY ADDITIONS OVER OUR DECON WASH"
             steps={["A thorough 3-step wash process", "Coating prep with a primer polish", "3-Year Ceramic Coating + Windshield Coating Application"]}
@@ -250,9 +250,8 @@ export default function Home() {
             title="Polish & Coat"
             imageUrl="/assets/images/sealshine/seal-shine.jpg"
             description="Single-stage paint correction and a 3-year ceramic coating for drastic gloss enhancement and protection."
-            stepHeadline="KEY ADDITIONS OVER OUR DECON WASH"
+            stepHeadline="KEY ADDITIONS OVER WASH & COAT"
             steps={[
-              "A thorough 3-step wash process",
               "Included clay bar treatment",
               "A single-stage polish & waterspot removal on glass",
               "3-Year Ceramic Coating + Windshield Coating Application"
@@ -266,15 +265,13 @@ export default function Home() {
 
           <HomePageCard
             title="Correct & Coat"
-            imageUrl="/assets/images/correction/genesis1.jpeg"
+            imageUrl="/assets/images/correction/bmwCorrect2.jpg"
             description="Our ultimate package: 2-stage paint correction and a 3-year ceramic coating for a flawless, mirror-like finish."
-            stepHeadline="KEY ADDITIONS OVER OUR DECON WASH"
+            stepHeadline="KEY ADDITIONS OVER POLISH & COAT"
             steps={[
-              "A thorough 3-step wash process",
-              "Included clay bar treatment",
               "A 2-stage paint correction (can remove 70-95% of swirls and scratches)",
-              "Restore and ceramic coat all trim",
-              "Apply our 3-Year Ceramic Coating, our Windshield Coating, and coat the wheel faces"
+              "Included trim restoration",
+              "3-Year Ceramic Coating applied to the wheel faces"
             ]}
             hours="10-15+"
             linkUrl="/services/correct"

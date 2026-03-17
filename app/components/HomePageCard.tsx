@@ -36,7 +36,7 @@ export default function HomePageCard({
 }) {
   return (
     <div
-      className={`flex flex-col flex-1 relative w-[90%] min-w-[200px] min-h-[950px] lg:min-w-[400px] max-w-[95%] lg:max-w-[1030px] gap-2 rounded-2xl pb-8 ${colors.bgMain} ${colors.borderColor} border-2 overflow-hidden shadow-[0_0_15px_rgba(59,130,246,0.5)]`}
+      className={`flex flex-col flex-1 relative w-[90%] min-w-[200px] min-h-[950px] lg:min-w-[400px] max-w-[560px] gap-2 rounded-2xl pb-8 ${colors.bgMain} ${colors.borderColor} border-2 overflow-hidden shadow-[0_0_15px_rgba(59,130,246,0.5)]`}
     >
       {/* Diagonal sale banner */}
       {/* <div className="absolute top-10 right-[-36px] z-20 rotate-45 bg-gradient-to-r from-rose-600 to-red-500 text-white px-6 py-1 shadow-lg uppercase font-bold text-lg tracking-tight pointer-events-none max-w-[200px] text-center overflow-hidden whitespace-nowrap leading-none">
@@ -61,7 +61,7 @@ export default function HomePageCard({
           <motion.p className="text-center p-0 text-gray-400 font-semibold mx-auto max-w-[90%]">{description}</motion.p>
         </div>
 
-        <div className={`${colors.borderColor} ${colors.bgLight} border-2 rounded-2xl w-full p-4`}>
+        <div className={`${colors.borderColor} ${colors.bgLight} border-2 rounded-2xl w-full p-4 my-4`}>
           <p className="text-2xl px-2 font-semibold my-4">{stepHeadline}</p>
           <motion.ul
             className={`list-disc list-inside pl-5 text-xl space-y-1 font-normal ${colors.bgLight} w-full gap-4 pb-4 rounded-b-2xl ${colors.borderColor} border-t-0`}
@@ -89,7 +89,7 @@ export default function HomePageCard({
               <p className="text-gray-300 text-[14px] font-medium">EST. TIME:</p>
               <p className="text-white text-2xl m-0">{hours} hrs</p>
             </div>
-            <div className="w-px bg-gray-300"></div>
+            <div className="w-[2px] bg-gray-300 flex-shrink-0"></div>
             <div className="flex flex-col items-center p-2 w-full rounded-2xl font-bold">
               <p className="text-gray-300 text-[14px] font-medium">FROM:</p>
               <div className="flex flex-col lg:flex-row items-center">

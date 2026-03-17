@@ -206,33 +206,26 @@ export default function FullIntEx() {
             <div>
               <MosaicGallery
                 images={[
-                  { src: "/assets/images/before&afters/seatsBA.jpg", alt: "Car seats before and after" },
-                  { src: "/assets/images/interior/bio1281.jpg", alt: "Interior detail" },
-                  { src: "/assets/images/interior/centerOldMercedes.jpg", alt: "Center console detail" },
-                  { src: "/assets/images/interior/doorRenegade.jpg", alt: "Door panel detail" },
-                  { src: "/assets/images/interior/driver11.jpg", alt: "Driver side view" },
-                  { src: "/assets/images/interior/driver21.jpg", alt: "Driver side view" },
-                  { src: "/assets/images/interior/jamb4.jpg", alt: "Door jamb detail" },
-                  { src: "/assets/images/interior/rear15.jpg", alt: "Rear interior" },
-                  { src: "/assets/images/interior/trunk1.jpg", alt: "Trunk detail" }
+                  { src: "/assets/images/interior/driver6.jpg", alt: "Interior after our Full Interior Service" },
+                  { src: "/assets/images/interior/driverTesla.jpg", alt: "Interior after our Full Interior Service" },
+                  { src: "/assets/images/interior/rear10.jpg", alt: "Interior after our Full Interior Service" },
+                  { src: "/assets/images/interior/doorRenegade.jpg", alt: "Interior after our Full Interior Service" },
+                  { src: "/assets/images/interior/rear4.jpg", alt: "Interior after our Full Interior Service" },
+                  { src: "/assets/images/interior/driver21.jpg", alt: "Interior after our Full Interior Service" },
+                  { src: "/assets/images/interior/jamb4.jpg", alt: "Interior after our Full Interior Service" },
+                  { src: "/assets/images/interior/driverNewLexus.jpg", alt: "Interior after our Full Interior Service" },
+                  { src: "/assets/images/interior/trunk3.jpg", alt: "Interior after our Full Interior Service" }
                 ]}
               />
             </div>
 
-            <div className="p-8 text-center flex flex-col items-center text-white ">
+            <div className="pb-8 text-center flex flex-col items-center text-white ">
               <h4 className="text-3xl text-left">
-                See more examples of our interior{" "}
+                See more examples of our interior work{" "}
                 <a href="/gallery/interior" className="text-blue-500 inline-block">
-                  work <ExternalLink className="inline-block" />
+                  here <ExternalLink className="inline-block" />
                 </a>
               </h4>
-              <p className="text-left">
-                Our interior gallery page has a large collection of interior images including before and after pictures! Check it out{" "}
-                <a href="/gallery/interior" className="text-blue-500">
-                  here
-                </a>
-                .
-              </p>
             </div>
           </div>
         </div>

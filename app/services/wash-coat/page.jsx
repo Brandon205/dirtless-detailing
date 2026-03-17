@@ -126,7 +126,7 @@ export default function Exterior() {
         }}
       />
       <HeaderComponent
-        imageUrl="/assets/images/exterior/hondaFront.jpg"
+        imageUrl="/assets/images/exterior/newLexusSuv.jpg"
         title="Wash & Coat"
         description="Our full Decon Wash plus a ceramic coating that provides 3 years of protection for your paint. The best way to keep your car looking great with regular maintenance washes."
         secondaryUrl="/assets/images/exterior/porscheMacan2.jpg"
@@ -152,8 +152,8 @@ export default function Exterior() {
                 <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center mb-0 lg:mb-4">
                   <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
                     <BeforeAfterSlider
-                      beforeImage="/assets/images/before&afters/teslawashBFR.jpg"
-                      afterImage="/assets/images/before&afters/teslawashAFR.jpg"
+                      beforeImage="/assets/images/before&afters/fordExteriorBefore.jpg"
+                      afterImage="/assets/images/before&afters/fordExteriorAfter.jpg"
                       aspectRatio="16/9"
                     />
                   </div>

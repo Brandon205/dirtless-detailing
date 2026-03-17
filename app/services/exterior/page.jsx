@@ -203,12 +203,12 @@ export default function Exterior() {
             <div>
               <MosaicGallery
                 images={[
-                  { src: "/assets/images/before&afters/seatsBA.jpg", alt: "Car seats before and after" },
-                  { src: "/assets/images/interior/bio1281.jpg", alt: "Interior detail" },
-                  { src: "/assets/images/interior/centerOldMercedes.jpg", alt: "Center console detail" },
-                  { src: "/assets/images/interior/doorRenegade.jpg", alt: "Door panel detail" },
-                  { src: "/assets/images/interior/driver11.jpg", alt: "Driver side view" },
-                  { src: "/assets/images/interior/driver21.jpg", alt: "Driver side view" }
+                  { src: "/assets/images/exterior/subaruSoap.jpeg", alt: "Exterior after our Exterior Decon Wash" },
+                  { src: "/assets/images/exterior/engine5c77.jpg", alt: "Engine bay after our Engine Bay Cleaning addon" },
+                  { src: "/assets/images/exterior/exterior10c6.jpg", alt: "Exterior after our Exterior Decon Wash" },
+                  { src: "/assets/images/exterior/lexusMobile.jpg", alt: "Exterior after our Exterior Decon Wash" },
+                  { src: "/assets/images/exterior/showTruck3.jpg", alt: "Exterior after our Exterior Decon Wash" },
+                  { src: "/assets/images/exterior/slamry.jpg", alt: "Exterior after our Exterior Decon Wash" }
                 ]}
               />
             </div>
@@ -218,15 +218,9 @@ export default function Exterior() {
                 Check out our{" "}
                 <a href="/gallery/exterior" className="text-blue-500 inline-block">
                   Exterior Gallery <ExternalLink className="inline-block" />
-                </a>
+                </a>{" "}
+                to see more!
               </h4>
-              <p className="text-left">
-                Check out our exterior gallery page, showing off some of the great results we've gotten over the years! See it{" "}
-                <a href="/gallery/exterior" className="text-blue-500">
-                  here
-                </a>
-                .
-              </p>
             </div>
           </div>
         </div>
