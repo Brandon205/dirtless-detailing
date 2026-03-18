@@ -108,7 +108,7 @@ const images = [
   { src: "/assets/images/exterior/showtruckext.jpg" },
   { src: "/assets/images/exterior/sideBySideSuspension.jpg" },
   { src: "/assets/images/exterior/sideofsilverram.jpg" },
-  { src: "/assets/images/exterior/sidexside.png" },
+  { src: "/assets/images/recreational/sidexside.png" },
   { src: "/assets/images/exterior/slamry.jpg" },
   { src: "/assets/images/exterior/slamryatShow.jpg" },
   { src: "/assets/images/exterior/subaruFinished.jpg" },

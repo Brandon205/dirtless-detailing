@@ -95,7 +95,7 @@ export default function Nav() {
           {
             name: "Boats/RV's/Trailers & ORV's",
             href: "/services/recreational",
-            bgImage: "/assets/images/showcase/RVWash.jpg"
+            bgImage: "/assets/images/recreational/RVWash.jpg"
           }
         ]
       }

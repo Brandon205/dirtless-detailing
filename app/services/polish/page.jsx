@@ -239,6 +239,31 @@ export default function ExteriorPolish() {
               </motion.li>
             </motion.ol>
 
+            <div className="mt-12 mb-6 p-6 lg:p-8 bg-gradient-to-r from-zinc-800 to-zinc-700 rounded-lg border border-accent border-opacity-30 text-center">
+              <h3 className="text-2xl lg:text-3xl font-bold text-white mb-3">Not sure if this is the service you need?</h3>
+              <p className="text-gray-300 mb-6 text-lg">
+                Come by our shop in Buckley, or get in touch with us today, and for no cost at all we can answer your questions.
+              </p>
+              <p className="text-gray-300 mb-6 text-lg">
+                We'll take a look assess what you want and even show you test spots vs our other services on your car so you can see what each service entails
+                and the results.
+              </p>
+              <div className="flex flex-col lg:flex-row gap-8 justify-center">
+                <a
+                  href="/contact"
+                  className="text-white hover:underline text-xl font-semibold flex items-center gap-1 mt-2 bg-primary py-2 px-6 rounded-lg w-max"
+                >
+                  <span>Contact Page</span>
+                </a>
+                <a
+                  href="sms:+12532529758"
+                  className="text-white border-primary border-2 hover:underline text-xl font-semibold flex items-center gap-1 mt-2 py-2 px-6 rounded-lg w-max"
+                >
+                  <span>Call or Text for a consultation: (252) 252-9758</span>
+                </a>
+              </div>
+            </div>
+
             <div className="mt-12 p-6 lg:p-8 bg-gradient-to-r from-zinc-800 to-zinc-700 rounded-lg border border-accent border-opacity-30 text-center">
               <h3 className="text-2xl lg:text-3xl font-bold text-white mb-3">Ready to shine-up your car?</h3>
               <p className="text-gray-300 mb-6 text-lg">
