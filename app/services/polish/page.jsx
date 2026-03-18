@@ -60,7 +60,7 @@ export default function ExteriorPolish() {
         imageUrl="/assets/images/correction/teslaclean.jpg"
         title="Exterior Polish & Coat"
         description="An even more thorough wash with clay bar decontamination, a corrective polish, and a high-quality ceramic coating."
-        secondaryUrl="/assets/images/before&afters/f150SealShineBA.jpg"
+        secondaryUrl="/assets/images/before&afters/f150polishBA.jpg"
       />
 
       <div className="main-content-container">
@@ -309,12 +309,12 @@ export default function ExteriorPolish() {
             <div>
               <MosaicGallery
                 images={[
-                  { src: "/assets/images/sealshine/36 plymouth.jpg", alt: "Exterior after our Polish & Coat Service" },
-                  { src: "/assets/images/sealshine/audiSeal2.jpg", alt: "Exterior after our Polish & Coat Service" },
-                  { src: "/assets/images/sealshine/beamer2.jpg", alt: "Exterior after our Polish & Coat Service" },
-                  { src: "/assets/images/sealshine/mustangFL.jpg", alt: "Exterior after our Polish & Coat Service" },
-                  { src: "/assets/images/sealshine/redFordPolishers.jpg", alt: "Exterior during our Polish & Coat Service" },
-                  { src: "/assets/images/sealshine/sprinter6.jpg", alt: "Exterior after our Polish & Coat Service" }
+                  { src: "/assets/images/polish/36 plymouth.jpg", alt: "Exterior after our Polish & Coat Service" },
+                  { src: "/assets/images/polish/audiSeal2.jpg", alt: "Exterior after our Polish & Coat Service" },
+                  { src: "/assets/images/polish/beamer2.jpg", alt: "Exterior after our Polish & Coat Service" },
+                  { src: "/assets/images/polish/mustangFL.jpg", alt: "Exterior after our Polish & Coat Service" },
+                  { src: "/assets/images/polish/redFordPolishers.jpg", alt: "Exterior during our Polish & Coat Service" },
+                  { src: "/assets/images/polish/sprinter6.jpg", alt: "Exterior after our Polish & Coat Service" }
                 ]}
               />
             </div>

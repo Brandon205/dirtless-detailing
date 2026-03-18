@@ -7,7 +7,7 @@ export const metadata = {
     url: "https://www.dirtlessdetailing.com/gallery/polish",
     images: [
       {
-        url: "/assets/images/sealshine/36 plymouth.jpg",
+        url: "/assets/images/polish/36 plymouth.jpg",
         width: 1200,
         height: 630,
         alt: "A beautiful red 1936 Plymouth after our Polish & Coat Service."

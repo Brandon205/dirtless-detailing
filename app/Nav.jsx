@@ -117,7 +117,7 @@ export default function Nav() {
           {
             name: "Polish & Coat Gallery",
             href: "/gallery/polish",
-            bgImage: "/assets/images/sealshine/porscheHeadOn.jpg"
+            bgImage: "/assets/images/polish/porscheHeadOn.jpg"
           },
           {
             name: "Correct & Coat Gallery",
