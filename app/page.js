@@ -248,7 +248,7 @@ export default function Home() {
 
           <HomePageCard
             title="Polish & Coat"
-            imageUrl="/assets/images/polish/seal-shine.jpg"
+            imageUrl="/assets/images/polish/porscheFL.jpg"
             description="Single-stage paint correction and a 3-year ceramic coating for drastic gloss enhancement and protection."
             stepHeadline="KEY ADDITIONS OVER WASH & COAT"
             steps={[

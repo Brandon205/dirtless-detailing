@@ -92,7 +92,7 @@ export default function ExteriorPolish() {
                   <div className="flex flex-col w-full justify-between min-h-[475px] lg:h-[550px] py-4">
                     <div className="flex flex-col items-start">
                       <h2 className="text-4xl font-bold">Our Exterior Polish & Coat Service</h2>
-                      <strong className="text-primary text-bold text-2xl">The Perfect Exterior Middle Ground Refreshment</strong>
+                      <strong className="text-primary text-bold text-2xl">The Perfect Exterior Middle Ground</strong>
                     </div>
                     <div className="flex items-center my-4">
                       <GiClayBrick color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
@@ -165,10 +165,10 @@ export default function ExteriorPolish() {
                   <h3 className="step-number">4</h3>
                 </div>
                 <div className="step-container">
-                  <h4 className="step-title">Remove tar and sap</h4>
+                  <h4 className="step-title">Remove tar, sap, iron, and clay bar if needed</h4>
                   <p className="step-desc">
-                    Remove any tar and sap from the exterior. Tar typically builds up on the lower panels of the vehicle, we have strong chemicals that can
-                    safely remove it.
+                    Remove any tar, sap, and iron from the exterior. If the paint is rough to the touch after washing, we will also perform a clay bar treatment
+                    to remove any remaining contaminants from the paint.
                   </p>
                 </div>
               </motion.li>
@@ -186,7 +186,7 @@ export default function ExteriorPolish() {
                   <h3 className="step-number">6</h3>
                 </div>
                 <div className="step-container">
-                  <h4 className="step-title">Remove scratches and watermarks</h4>
+                  <h4 className="step-title">Remove scratches, swirl marks, and waterspots</h4>
                   <p className="step-desc">
                     Perform our polishing procedure removing many lighter scratches and swirls from your paint. We also go over all of the glass to remove any
                     watermarks that have built up.
@@ -200,7 +200,7 @@ export default function ExteriorPolish() {
                 <div className="step-container">
                   <h4 className="step-title">Coat Vehicle</h4>
                   <p className="step-desc">
-                    Apply the 1-year ceramic coating. At this stage we'll also apply our windshield, trim, headlight, and wheel coatings to protect your entire
+                    Apply the 3-year ceramic coating. At this stage we'll also apply our windshield, trim, headlight, and wheel coatings to protect your entire
                     vehicle!
                   </p>
                 </div>
@@ -262,19 +262,6 @@ export default function ExteriorPolish() {
                   <span>Call or Text for a consultation: (252) 252-9758</span>
                 </a>
               </div>
-            </div>
-
-            <div className="mt-12 p-6 lg:p-8 bg-gradient-to-r from-zinc-800 to-zinc-700 rounded-lg border border-accent border-opacity-30 text-center">
-              <h3 className="text-2xl lg:text-3xl font-bold text-white mb-3">Ready to shine-up your car?</h3>
-              <p className="text-gray-300 mb-6 text-lg">
-                Have questions about our Polish & Coat Service? Want to book an appointment? Get in touch with us today!
-              </p>
-              <a
-                href="/contact"
-                className="inline-block px-8 py-3 bg-accent hover:bg-accent/90 text-black font-semibold rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-accent/50"
-              >
-                Get Started
-              </a>
             </div>
 
             <div className="general-container new-heading-container font-bold text-white">

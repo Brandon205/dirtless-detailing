@@ -54,7 +54,7 @@ export default function InteriorRestoration() {
                 <p className="text-sm text-gray-400">*depending on size/condition</p>
                 <p className="text-left">
                   Perfect for heavily used daily drivers, family cars, and vehicles with embedded dirt, spills, or strong smoke/musty odors. Includes deep
-                  extraction, scrubbing, and sanitization. Most odors should be gone afterwards, we utilize zinc encapsulation after extracting to trap and
+                  extraction, scrubbing, and sanitization. Most odors should be gone afterwards, we utilize zinc odor neutralizers after extracting to trap and
                   neutralize any odors that somehow survive extraction. Then our Ozone Treatment (included) gets even more odors past that point.
                 </p>
               </div>
@@ -115,7 +115,7 @@ export default function InteriorRestoration() {
                 <p>
                   Choose this option for these services at our hourly rate ($125-$150/hour). Set a specific time limit (e.g., a 4 or 6 hour block). We
                   prioritize your biggest concerns and get through the most important steps for you before the time is up without extra things you may not be as
-                  worried about. Ideal for making a huge impact without needing a "Full Restoration".
+                  worried about. Ideal for making a huge impact without spending more money.
                 </p>
                 <div className="flex justify-start gap-8 mt-4 flex-col lg:flex-row">
                   <a
@@ -162,17 +162,18 @@ export default function InteriorRestoration() {
                       <LuAirVent color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
                       <p className="leading-relaxed text-left text-md">
                         On all Interior Restoration vehicles that need it we run our professional grade Ozone machine to remove odors and mold spores that we
-                        can't reach. Combined with high-heat extraction and aggressive enzyme-based sanitization, we tackle the jobs other shops turn away. Our
-                        goal is to provide the absolute best possible outcome, restoring your interior to its highest possible standard.
+                        can't reach. Combined with heated carpet/fabric extraction and EPA Registered Disinfectants, we tackle the jobs other shops turn away.
+                        Our goal is to provide the absolute best possible outcome, restoring your interior to its highest possible standard.
                       </p>
                     </div>
                     <div className="w-full p-4 bg-zinc-800 rounded-lg border border-zinc-600">
                       <ul className="lg:max-h-[120px] list-disc list-inside leading-relaxed text-left w-full flex flex-wrap justify-between text-md">
-                        <li className="basis-1/2">Professional Ozone Treatment</li>
-                        <li className="basis-1/2">High-Heat Extraction</li>
-                        <li className="basis-1/2">Aggressive Enzyme-Based Sanitization</li>
-                        <li className="basis-1/2">Deep-Seated Grime Removal</li>
+                        <li className="basis-1/2">HEPA Vacuum</li>
+                        <li className="basis-1/2">Embedded Grime Removal</li>
+                        <li className="basis-1/2">Heated Extraction</li>
+                        <li className="basis-1/2">EPA Registered Disinfectants</li>
                         <li className="basis-1/2">Mold Spore Elimination</li>
+                        <li className="basis-1/2">Professional Ozone Treatment</li>
                       </ul>
                     </div>
                   </div>

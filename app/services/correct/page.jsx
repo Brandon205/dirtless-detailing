@@ -123,7 +123,7 @@ export default function ExteriorCorrect() {
       <HeaderComponent
         imageUrl="/assets/images/correction/genesis3.jpeg"
         title="Exterior Correct & Coat"
-        description="The Ultimate Exterior Detail & Protection for your vehicle. Our most extensive package with extra in-depth Paint Correction and a Lifetime Ceramic Coating."
+        description="The Ultimate Exterior Detail & Protection for your vehicle. Our most extensive exterior package with extra in-depth Paint Correction and a Lifetime Ceramic Coating."
         secondaryUrl="/assets/images/before&afters/scratchesBA.png"
       />
 
@@ -161,7 +161,7 @@ export default function ExteriorCorrect() {
                     <div className="flex items-center my-4">
                       <FaLock color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
                       <p className="leading-relaxed text-left text-md">
-                        Correct & Coat is our premier exterior service, utilizing a rigorous 2-stage paint correction process to remove 75-90% of scratches,
+                        Correct & Coat is our premier exterior service, utilizing a rigorous 2-stage paint correction process to remove 70-95% of scratches,
                         swirls, and imperfections. We tailor this intensive process to your specific goals, ensuring you get the exact results you want for your
                         investment.
                       </p>
@@ -176,15 +176,15 @@ export default function ExteriorCorrect() {
                     </div>
                     <div className="w-full p-4 bg-zinc-800 rounded-lg border border-zinc-600">
                       <p className="text-left">
-                        <span className="font-bold text-md">Ideal for:</span>Owners seeking a flawless, mirror-like finish and the highest level of scratch
+                        <span className="font-bold text-md">Ideal for:</span> Owners seeking a flawless, mirror-like finish and the highest level of scratch
                         removal.
                       </p>
                     </div>
                   </div>
                 </div>
                 <p className="text-center">
-                  Complete the detail! While your car is with us now is the best time to get that neglected interior back in shape! Check out our current offers
-                  and pricing on our full interior detail{" "}
+                  Complete the detail! While your car is with us now is the best time to get that interior you've been meaning to do back in shape! Check out
+                  our current offers and pricing on our full interior detail{" "}
                   <a href="/services/interior" className="text-blue-600 hover:text-blue-700 font-medium underline">
                     here
                   </a>
@@ -242,10 +242,10 @@ export default function ExteriorCorrect() {
                   <h3 className="step-number">4</h3>
                 </div>
                 <div className="step-container">
-                  <h4 className="step-title">Remove tar and sap</h4>
+                  <h4 className="step-title">Remove tar, sap, iron, and clay bar if needed</h4>
                   <p className="step-desc">
-                    Remove any tar and sap from the exterior. Tar typically builds up on the lower panels of the vehicle, we have strong chemicals that can
-                    safely remove it.
+                    Remove any tar, sap, and iron from the exterior. If the paint is rough to the touch after washing, we will also perform a clay bar treatment
+                    to remove any remaining contaminants from the paint.
                   </p>
                 </div>
               </motion.li>
@@ -265,7 +265,7 @@ export default function ExteriorCorrect() {
                 <div className="step-container">
                   <h4 className="step-title">Remove scratches and watermarks</h4>
                   <p className="step-desc">
-                    Perform a 2-stage paint correction removing up to 85%-90% of scratches and greatly reducing if not removing the look of deeper scratches. We
+                    Perform a 2-stage paint correction removing up to 70-95% of scratches and greatly reducing if not removing the look of deeper scratches. We
                     also go over the glass as well removing watermarks and light scratches.
                   </p>
                 </div>

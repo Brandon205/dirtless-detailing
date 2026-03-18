@@ -173,7 +173,7 @@ export default function Exterior() {
                     <div className="flex items-center mb-4">
                       <RiResetLeftLine color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
                       <p className="leading-relaxed text-left text-md">
-                        Once the surface is decontaminated, we perform a dedicated paint prep to ensure our 3-year ceramic coating can bond properly. This
+                        Once everything is decontaminated, we perform a dedicated paint prep to ensure our 3-year ceramic coating can bond properly. This
                         creates a durable defense that no wax can match. Now your paint will be incredibly slick, meaning road grime struggles to stick and your
                         maintenance washes become almost effortless.
                       </p>
@@ -245,8 +245,8 @@ export default function Exterior() {
                   <h3 className="step-number">5</h3>
                 </div>
                 <div className="step-container">
-                  <h4 className="step-title">Dry Vehicle</h4>
-                  <p className="step-desc">Dry the whole vehicle with drying towels and air blowers.</p>
+                  <h4 className="step-title">Dry Vehicle and Dress Tires</h4>
+                  <p className="step-desc">Dry the whole vehicle making sure to blow out the cracks. We'll also dress the tires at this point if desired.</p>
                 </div>
               </motion.li>
               <motion.li className="item" variants={oddVariant}>

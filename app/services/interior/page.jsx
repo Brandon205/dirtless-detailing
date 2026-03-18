@@ -31,7 +31,7 @@ export default function FullIntEx() {
         imageUrl="/assets/images/interior/driver16.jpg"
         title="Full Interior Detail"
         description="Our full interior detail service is designed to bring your vehicle's interior back to life. From deep cleaning carpets to conditioning leather, we cover it all."
-        secondaryUrl="/assets/images/before&afters/FordInteriorBA.jpg"
+        secondaryUrl="/assets/images/interior/driverRedFord.jpg"
       />
 
       <div className="main-content-container">
@@ -76,7 +76,7 @@ export default function FullIntEx() {
                     <div className="flex items-center mb-4">
                       <GiSpill color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
                       <p className="leading-relaxed text-left text-md">
-                        We match our techniques to your specific situation, using our specialized "carpet bonneting" to remove light stains and odors without
+                        We match our techniques to your specific situation, using a "carpet encapsulation" process to remove light stains and odors without
                         unnecessarily soaking your floors. For tougher cases, we utilize high-grade extraction and agitation to pull mud and debris from deep
                         within the fibers. Your interior won't just look clean—it will be as clean as modern detailing chemistry allows.
                       </p>

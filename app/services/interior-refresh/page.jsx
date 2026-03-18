@@ -30,7 +30,7 @@ export default function InteriorRefresh() {
         imageUrl="/assets/images/interior/pass1.jpg"
         title="Interior Refresh"
         description="For vehicles that are already nearly clean. A maintenance-focused interior detail that keeps your interior looking like new."
-        secondaryUrl="/assets/images/before&afters/floorBA.jpg"
+        secondaryUrl="/assets/images/interior/driver5.jpg"
       />
 
       <div className="main-content-container">
@@ -125,9 +125,9 @@ export default function InteriorRefresh() {
                   <h3 className="step-number">3</h3>
                 </div>
                 <div className="step-container">
-                  <h4 className="step-title">Clean Seats and Upholstery</h4>
+                  <h4 className="step-title">Spot Clean Seats & Upholstery</h4>
                   <p className="step-desc">
-                    Deep clean all seats and fabric surfaces with specialized cleaners appropriate for already-clean upholstery, leaving them fresh and vibrant.
+                    Clean all seats and fabric surfaces with specialized cleaners appropriate for already-clean upholstery, leaving them fresh and vibrant.
                   </p>
                 </div>
               </motion.li>
@@ -159,8 +159,8 @@ export default function InteriorRefresh() {
                 <div className="step-container">
                   <h4 className="step-title">Door Jamb Wipe down</h4>
                   <p className="step-desc">
-                    Do a quick wipe down of the door jambs to remove any dust and dirt that has accumulated there. We don't do a full deep clean of the jambs
-                    with our interior refresh, but we like to give them a quick wipe down to keep them looking fresh.
+                    Do a quick wipe down of the door jambs to remove any dust/dirt that has accumulated there. We don't do a full deep clean of the jambs with
+                    our interior refresh.
                   </p>
                 </div>
               </motion.li>
@@ -172,14 +172,14 @@ export default function InteriorRefresh() {
                 </div>
                 <div className="step-container">
                   <h4 className="step-title flex line-through">
-                    Need Something More Intensive?{" "}
+                    Need Something More In Depth?{" "}
                     <a href="/services/interior">
                       <ExternalLink color="#3b82f6" size={24} className="mt-1 ml-1" />
                     </a>
                   </h4>
                   <p className="step-desc">
-                    If your interior needs deep stain extraction, extensive pet hair removal, or carpet restoration, check out our Full Interior Service for
-                    more comprehensive detailing. See more info{" "}
+                    If your interior needs deep stain extraction, pet hair removal, or carpet restoration, check out our Full Interior Service for more
+                    comprehensive detailing. See more info{" "}
                     <a href="/services/interior" className="text-blue-500">
                       here
                     </a>
