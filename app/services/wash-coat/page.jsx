@@ -108,6 +108,7 @@ export default function Exterior() {
       )
     }
   ];
+
   return (
     <section className="service-content-container">
       <BaseSchema
@@ -339,7 +340,7 @@ export default function Exterior() {
                   href="sms:+12532529758"
                   className="text-white border-primary border-2 hover:underline text-xl font-semibold flex items-center gap-1 mt-2 py-2 px-6 rounded-lg w-max"
                 >
-                  <span>Call or Text for a consultation: (252) 252-9758</span>
+                  <span>Call or Text to setup a consultation: (252) 252-9758</span>
                 </a>
               </div>
             </div>

@@ -29,10 +29,10 @@ export default function Exterior() {
         }}
       />
       <HeaderComponent
-        imageUrl="/assets/images/exterior/subaruWashed.jpeg"
+        imageUrl="/assets/images/exterior/corvetteWash.jpg"
         title="Exterior Decon Wash"
         description="The detailers car wash. We focus on the parts that get missed, removing contaminants, and protecting your paint."
-        secondaryUrl="/assets/images/before&afters/TruckTarBA.png"
+        secondaryUrl="/assets/images/before&afters/rangeRoverRearBA.jpg"
       />
 
       <div className="main-content-container">
@@ -206,9 +206,11 @@ export default function Exterior() {
                   { src: "/assets/images/exterior/subaruSoap.jpeg", alt: "Exterior after our Exterior Decon Wash" },
                   { src: "/assets/images/exterior/engine5c77.jpg", alt: "Engine bay after our Engine Bay Cleaning addon" },
                   { src: "/assets/images/exterior/exterior10c6.jpg", alt: "Exterior after our Exterior Decon Wash" },
-                  { src: "/assets/images/exterior/lexusMobile.jpg", alt: "Exterior after our Exterior Decon Wash" },
                   { src: "/assets/images/exterior/showTruck3.jpg", alt: "Exterior after our Exterior Decon Wash" },
-                  { src: "/assets/images/exterior/slamry.jpg", alt: "Exterior after our Exterior Decon Wash" }
+                  { src: "/assets/images/exterior/lexusMobile.jpg", alt: "Exterior after our Exterior Decon Wash" },
+                  { src: "/assets/images/exterior/terryRam.jpg", alt: "Exterior after our Exterior Decon Wash" },
+                  { src: "/assets/images/exterior/slamry.jpg", alt: "Exterior after our Exterior Decon Wash" },
+                  { src: "/assets/images/exterior/fordOutside.jpg", alt: "Exterior after our Exterior Decon Wash" }
                 ]}
               />
             </div>

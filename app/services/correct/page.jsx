@@ -287,7 +287,10 @@ export default function ExteriorCorrect() {
                 </div>
                 <div className="step-container">
                   <h4 className="step-title">Final Touches</h4>
-                  <p className="step-desc">Dress tires with ceramic tire shine, and also dress the wheel wells.</p>
+                  <p className="step-desc">
+                    Dress the tires if desired, dress the wheel wells, and touch up all around removing polishing compound from corners and anything else we
+                    see.
+                  </p>
                 </div>
               </motion.li>
             </motion.ol>
@@ -314,7 +317,7 @@ export default function ExteriorCorrect() {
                   href="sms:+12532529758"
                   className="text-white border-primary border-2 hover:underline text-xl font-semibold flex items-center gap-1 mt-2 py-2 px-6 rounded-lg w-max"
                 >
-                  <span>Call or Text for a consultation: (252) 252-9758</span>
+                  <span>Call or Text to setup a consultation: (252) 252-9758</span>
                 </a>
               </div>
             </div>
@@ -348,11 +351,11 @@ export default function ExteriorCorrect() {
               <ImageGallery
                 images={[
                   { src: "/assets/images/correction/correction1280.jpg", alt: "Exterior after our Correct & Coat Service" },
-                  { src: "/assets/images/correction/modelXOutside2.jpg", alt: "Exterior after our Correct & Coat Service" },
+                  { src: "/assets/images/correction/ram1.jpg", alt: "Exterior after our Correct & Coat Service" },
                   { src: "/assets/images/correction/goodguystruck.jpg", alt: "Exterior after our Correct & Coat Service" },
                   { src: "/assets/images/correction/ferrariBadge.jpg", alt: "Exterior after our Correct & Coat Service" },
                   { src: "/assets/images/correction/teslafoam.jpg", alt: "Exterior during our Correct & Coat Service" },
-                  { src: "/assets/images/correction/tanTruck4.jpg", alt: "trunk lid during our Correct & Coat Service" },
+                  { src: "/assets/images/correction/sanding.jpg", alt: "trunk lid during our Correct & Coat Service" },
                   { src: "/assets/images/correction/ceramicBeads1.jpg", alt: "Exterior after our Correct & Coat Service" },
                   { src: "/assets/images/correction/old-chevy.jpg", alt: "Exterior after our Correct & Coat Service" },
                   { src: "/assets/images/correction/wheelFaces.jpg", alt: "trunk lid during our Correct & Coat Service" }

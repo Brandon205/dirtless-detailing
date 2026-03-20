@@ -36,6 +36,76 @@ export default function ExteriorPolish() {
           , which includes everything you need to know about maintaining your ceramic coating, including recommended products and techniques!
         </div>
       )
+    },
+    {
+      title: "What is a Ceramic Coating and why should I get one?",
+      description: (
+        <div>
+          <ul style={{ margin: 0, marginLeft: "1rem" }} className="list-disc">
+            <li>
+              Besides PPF it is the best protection for your paint, ceramic coatings increase the hardness of your paint, making it less likely to scratch while
+              washing.
+            </li>
+            <li>
+              Coatings increase the Gloss and Slickness of your paint, which can help remove dirt before it gets trapped under your wash mitts leading to
+              scratches.
+            </li>
+            <li>
+              Self cleaning properties: ceramic coatings easily bead water, dirt gets caught in these beads and will fly off while you're driving! Your
+              windshield will bead water like never before as well!
+            </li>
+            <li>
+              It will be far easier to wash and dry your car. Dirt will wash off with less effort, you can also blow dry 90% of your vehicle when you're done
+              washing.
+            </li>
+          </ul>
+          <ImageGallery images={[{ src: "/assets/images/showcase/iglcircle.jpg" }]} />
+        </div>
+      )
+    },
+    {
+      title: "How do I wash/maintain a Ceramic Coating?",
+      description: (
+        <div>
+          We have a full Ceramic Coating Maintenance Guide available at the bottom of our{" "}
+          <a href="/products?category=Ceramic" className="text-blue-500 hover:underline">
+            Ceramic Products Page
+          </a>
+          , which includes everything you need to know about maintaining your ceramic coating, including recommended products and techniques!
+        </div>
+      )
+    },
+    {
+      title: "Does a ceramic coating make my vehicle scratch proof?",
+      description: <p className="faq-description">Unfortunately no, but it does noticeably increase resistance against light scratches and swirl marks.</p>
+    },
+    {
+      title: "How long will my Ceramic Coating last?",
+      description: (
+        <p className="faq-description">
+          Unlike waxes true ceramic coatings don't just wash off, however, over time your coating can get clogged with contaminants and gloss, slickness, and
+          water beading can degrade (for this coating it should stay in good quality for up to 3 years). We recommend getting at least our{" "}
+          <a href="/services/exterior" className="text-blue-500">
+            Exterior Decon Wash
+          </a>{" "}
+          service with the <strong>Ceramic Maintenance Addon</strong> done bi-annually or annually. This package fully decontaminates and refreshes your ceramic
+          coating as well as has us top any spots that might be wearing down if needed.
+        </p>
+      )
+    },
+    {
+      title: "Can I still go through car washes?",
+      description: (
+        <p className="faq-description">
+          We never recommend going through a car wash as they can reduce the gloss slickness and beading of your coating prematurely. However in a pinch a
+          touch-less car wash will suffice. Just make sure to use the cheapest setting, without any waxes. We also recommend to make sure that all the edges and
+          corners are blown out and dried (We recommend{" "}
+          <a href="https://amzn.to/41db9SY" className="text-blue-500" target="_blank" rel="noopener noreferrer">
+            The Rag Company's Large Drying Towel
+          </a>
+          ).
+        </p>
+      )
     }
   ];
 
@@ -177,8 +247,8 @@ export default function ExteriorPolish() {
                   <h3 className="step-number">5</h3>
                 </div>
                 <div className="step-container">
-                  <h4 className="step-title">Dry Vehicle</h4>
-                  <p className="step-desc">Dry the whole vehicle with drying towels and air blowers.</p>
+                  <h4 className="step-title">Dry Vehicle and Dress Tires</h4>
+                  <p className="step-desc">Dry the whole vehicle with drying towels and air blowers, and then dress the tires if desired.</p>
                 </div>
               </motion.li>
               <motion.li className="item" variants={oddVariant}>
@@ -259,7 +329,7 @@ export default function ExteriorPolish() {
                   href="sms:+12532529758"
                   className="text-white border-primary border-2 hover:underline text-xl font-semibold flex items-center gap-1 mt-2 py-2 px-6 rounded-lg w-max"
                 >
-                  <span>Call or Text for a consultation: (252) 252-9758</span>
+                  <span>Call or Text to setup a consultation: (252) 252-9758</span>
                 </a>
               </div>
             </div>
@@ -297,11 +367,13 @@ export default function ExteriorPolish() {
               <ImageGallery
                 images={[
                   { src: "/assets/images/polish/36 plymouth.jpg", alt: "Exterior after our Polish & Coat Service" },
-                  { src: "/assets/images/polish/audiSeal2.jpg", alt: "Exterior after our Polish & Coat Service" },
-                  { src: "/assets/images/polish/beamer2.jpg", alt: "Exterior after our Polish & Coat Service" },
-                  { src: "/assets/images/polish/mustangFL.jpg", alt: "Exterior after our Polish & Coat Service" },
+                  { src: "/assets/images/polish/bMustang1.jpg", alt: "Exterior after our Polish & Coat Service" },
+                  { src: "/assets/images/polish/jaguar.jpg", alt: "Exterior after our Polish & Coat Service" },
+                  { src: "/assets/images/polish/thatmustang.jpg", alt: "Exterior after our Polish & Coat Service" },
                   { src: "/assets/images/polish/redFordPolishers.jpg", alt: "Exterior during our Polish & Coat Service" },
-                  { src: "/assets/images/polish/sprinter6.jpg", alt: "Exterior after our Polish & Coat Service" }
+                  { src: "/assets/images/polish/fjCruiserOutside2.jpg", alt: "Exterior after our Polish & Coat Service" },
+                  { src: "/assets/images/polish/rivianDuring.jpg", alt: "Exterior after our Polish & Coat Service" },
+                  { src: "/assets/images/polish/blueRav4.jpg", alt: "Exterior after our Polish & Coat Service" }
                 ]}
               />
             </div>

@@ -211,7 +211,6 @@ export default function FullIntEx() {
                   { src: "/assets/images/interior/rear10.jpg", alt: "Interior after our Full Interior Service" },
                   { src: "/assets/images/interior/doorRenegade.jpg", alt: "Interior after our Full Interior Service" },
                   { src: "/assets/images/interior/rear4.jpg", alt: "Interior after our Full Interior Service" },
-                  { src: "/assets/images/interior/driver21.jpg", alt: "Interior after our Full Interior Service" },
                   { src: "/assets/images/interior/jamb4.jpg", alt: "Interior after our Full Interior Service" },
                   { src: "/assets/images/interior/driverNewLexus.jpg", alt: "Interior after our Full Interior Service" },
                   { src: "/assets/images/interior/trunk3.jpg", alt: "Interior after our Full Interior Service" }

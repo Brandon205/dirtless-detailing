@@ -265,7 +265,7 @@ export default function Home() {
 
           <HomePageCard
             title="Correct & Coat"
-            imageUrl="/assets/images/correction/bmwCorrect2.jpg"
+            imageUrl="/assets/images/correction/truckBeadsNight.jpg"
             description="Our ultimate package: 2-stage paint correction and a 3-year ceramic coating for a flawless, mirror-like finish."
             stepHeadline="KEY ADDITIONS OVER POLISH & COAT"
             steps={[

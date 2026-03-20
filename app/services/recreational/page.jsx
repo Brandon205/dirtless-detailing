@@ -176,7 +176,7 @@ export default function Recreational() {
           <div id="faq" style={{ width: "90%", margin: "0 auto", paddingTop: "2rem" }}>
             <div className="new-heading-container text-white">
               <strong className="above-heading text-3xl">Recreational Detailing FAQ</strong>
-              <h3 className="new-heading text-xl lg:text-2xl">Answers for the most commonly asked questions about ceramic coatings.</h3>
+              <h3 className="new-heading text-xl lg:text-2xl">Answers for the most commonly asked questions we get before our recreational details.</h3>
             </div>
             <div className="faq-container" style={{ color: "white" }} itemScope itemType="https://schema.org/FAQPage">
               {faqItems.map((item, i) => (
@@ -185,7 +185,6 @@ export default function Recreational() {
             </div>
           </div>
 
-          {/* <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p> */}
           <h3 className="pricing__heading">End Results</h3>
           <p className="pricing__subtext">Whether it's taken far on the road, or far off the road, we've got you covered!</p>
           <div>

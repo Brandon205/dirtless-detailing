@@ -213,8 +213,9 @@ export default function InteriorRestoration() {
                   { src: "/assets/images/interior/bio1281.jpg", alt: "Vehicle during our ozone treatment with the machine pumping ozone into the cabin" },
                   { src: "/assets/images/before&afters/badMobileIntBA.jpg", alt: "Vehicle Interior after our extensive Interior Restoration service" },
                   { src: "/assets/images/before&afters/bio1279.webp", alt: "Vehicle Interior after our extensive Interior Restoration service" },
-                  { src: "/assets/images/before&afters/dogHairBA.jpg", alt: "Vehicle Interior after our extensive Interior Restoration service" },
-                  { src: "/assets/images/before&afters/fordVinylBA.jpg", alt: "Vehicle Interior after our extensive Interior Restoration service" }
+                  { src: "/assets/images/before&afters/traegerDriverBA.jpg", alt: "Vehicle Interior after our extensive Interior Restoration service" },
+                  { src: "/assets/images/before&afters/traegerCenterBA.jpg", alt: "Vehicle Interior after our extensive Interior Restoration service" },
+                  { src: "/assets/images/interior/wranglerIntCeramic.jpg", alt: "Vehicle Interior after our extensive Interior Restoration service" }
                 ]}
               />
             </div>
