@@ -107,7 +107,7 @@ export default function Recreational() {
               <h3 className="font-bold text-2xl text-primary">ORV DETAILING</h3>
               <div className="w-auto h-[250px] relative my-4">
                 <Image
-                  src="/assets/images/recreational/sidexside.png"
+                  src="/assets/images/before&afters/sideBySideAfter.jpg"
                   alt="Photo of the interior of an old Ferrari Interior"
                   fill
                   objectFit="cover"

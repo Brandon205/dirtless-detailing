@@ -358,7 +358,8 @@ export default function ExteriorCorrect() {
                   { src: "/assets/images/correction/sanding.jpg", alt: "trunk lid during our Correct & Coat Service" },
                   { src: "/assets/images/correction/ceramicBeads1.jpg", alt: "Exterior after our Correct & Coat Service" },
                   { src: "/assets/images/correction/old-chevy.jpg", alt: "Exterior after our Correct & Coat Service" },
-                  { src: "/assets/images/correction/wheelFaces.jpg", alt: "trunk lid during our Correct & Coat Service" }
+                  { src: "/assets/images/correction/wheelFaces.jpg", alt: "trunk lid during our Correct & Coat Service" },
+                  { src: "/assets/images/correction/carwashtruckBA.jpg", alt: "trunk lid during our Correct & Coat Service" }
                 ]}
               />
             </div>
