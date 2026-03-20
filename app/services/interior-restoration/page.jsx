@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
 import BeforeAfterSlider from "../../components/ImageSlider";
-import MosaicGallery from "../../components/MosaicGallery";
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import { PiBiohazardBold } from "react-icons/pi";
 import { LuAirVent } from "react-icons/lu";
 import HeaderComponent from "../../components/HeaderComponent";
 import BaseSchema from "../../jsonSchemas/BaseSchema";
+import ImageGallery from "../../components/ImageGallery";
 
 export default function InteriorRestoration() {
   return (
@@ -145,7 +145,7 @@ export default function InteriorRestoration() {
                     />
                   </div>
 
-                  <div className="flex flex-col w-full justify-between min-h-[475px] lg:h-[550px] py-4">
+                  <div className="flex flex-col w-full justify-between min-h-[475px] py-4">
                     <div className="flex flex-col items-start">
                       <h2 className="text-4xl font-bold">Our Interior Restoration Service</h2>
                       <strong className="text-primary text-bold text-2xl">Thorough Cleaning and Conditioning</strong>
@@ -207,7 +207,7 @@ export default function InteriorRestoration() {
             <h3 className="pricing__heading">Back to the way your car should be.</h3>
             <p className="pricing__subtext">A car that you aren't scared or ashamed of to be driving anymore!</p>
             <div>
-              <MosaicGallery
+              <ImageGallery
                 images={[
                   { src: "/assets/images/interior/ferrariInt.jpg", alt: "Vehicle Interior after our extensive Interior Restoration service" },
                   { src: "/assets/images/interior/bio1281.jpg", alt: "Vehicle during our ozone treatment with the machine pumping ozone into the cabin" },

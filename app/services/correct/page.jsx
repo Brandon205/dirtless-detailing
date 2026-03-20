@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import PricingComponent from "../../components/PricingComponent";
-import MosaicGallery from "../../components/MosaicGallery";
 import BeforeAfterSlider from "../../components/ImageSlider";
 import { containerVariant, oddVariant, evenVariant } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
@@ -153,7 +152,7 @@ export default function ExteriorCorrect() {
                     />
                   </div>
 
-                  <div className="flex flex-col w-full justify-between min-h-[475px] lg:h-[550px] py-4">
+                  <div className="flex flex-col w-full justify-between min-h-[475px] py-4">
                     <div className="flex flex-col items-start">
                       <h2 className="text-4xl font-bold">Our Correct & Coat Service</h2>
                       <strong className="text-primary text-bold text-2xl">The Ultimate Exterior Detail & Protection</strong>
@@ -346,7 +345,7 @@ export default function ExteriorCorrect() {
               Not just a complete exterior refresh, but now your vehicle has protection against the elements that Washington will throw at it.
             </p>
             <div>
-              <MosaicGallery
+              <ImageGallery
                 images={[
                   { src: "/assets/images/correction/correction1280.jpg", alt: "Exterior after our Correct & Coat Service" },
                   { src: "/assets/images/correction/modelXOutside2.jpg", alt: "Exterior after our Correct & Coat Service" },

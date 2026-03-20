@@ -1,7 +1,7 @@
 "use client";
 import PricingComponent from "../../components/PricingComponent";
 import HeaderComponent from "../../components/HeaderComponent";
-import MosaicGallery from "../../components/MosaicGallery";
+import ImageGallery from "../../components/ImageGallery";
 import { containerVariant, oddVariant, evenVariant } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
 import { Flame, ExternalLink, Sparkles } from "lucide-react";
@@ -47,13 +47,13 @@ export default function InteriorRefresh() {
             </div>
 
             <main className="w-full text-white my-0 mx-auto text-center p-4">
-              <div className="flex flex-col w-full gap-4 lg:w-5/6 mx-auto border-2 border-zinc-500 rounded-lg p-6 lg:p-8">
+              <div className="flex flex-col w-full gap-4 lg:w-[90%] mx-auto border-2 border-zinc-500 rounded-lg p-6 lg:p-8">
                 <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center mb-0 lg:mb-4">
                   <div className="relative flex flex-grow justify-center rounded-2xl w-full h-[450px] lg:h-[550px] shadow-[0_0_20px_-5px_rgba(217,119,6,0.5)]">
                     <Image src="/assets/images/interior/driverModelX.jpg" alt="Interior Refresh" className="rounded-2xl" objectFit="cover" fill />
                   </div>
 
-                  <div className="flex flex-col w-full justify-between min-h-[475px] lg:h-[550px] py-4">
+                  <div className="flex flex-col w-full justify-between min-h-[475px] py-4">
                     <div className="flex flex-col items-start">
                       <h2 className="text-4xl font-bold">Our Interior Refresh Service</h2>
                       <strong className="text-primary text-bold text-2xl">Maintenance-based Interior Detail</strong>
@@ -209,7 +209,7 @@ export default function InteriorRefresh() {
             <p className="pricing__subtext">And the way that you wish it could stay forever.</p>
 
             <div>
-              <MosaicGallery
+              <ImageGallery
                 images={[
                   { src: "/assets/images/interior/passfordGT.jpg", alt: "Interior after our Interior Refresh Service" },
                   { src: "/assets/images/interior/rear13.jpg", alt: "Interior after our Interior Refresh Service" },

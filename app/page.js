@@ -71,8 +71,8 @@ export default function Home() {
         images={[
           "/assets/images/showcase/range-rover-left.webp",
           "/assets/images/showcase/ceramicBeads1.webp",
-          "/assets/images/showcase/3doorFordRight.webp",
-          "/assets/images/showcase/wiping.webp",
+          "/assets/images/showcase/redGTRWipe.jpg",
+          "/assets/images/showcase/brandonBMW.jpg",
           "/assets/images/showcase/fordGTBack.webp",
           "/assets/images/showcase/driverNewLexus.webp",
           "/assets/images/showcase/archCoTruck.webp"

@@ -18,7 +18,7 @@ const ImageGallery = ({ images }) => {
 
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 py-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 py-16 lg:max-w-6xl mx-auto">
         {images.map((image, index) => (
           <Card key={index} className="overflow-hidden cursor-pointer" onClick={() => openModal(image)}>
             <div className="relative w-full pt-[100%]">
@@ -27,7 +27,7 @@ const ImageGallery = ({ images }) => {
                 alt={image.alt || `Gallery ${index + 1}`}
                 fill
                 priority={index < 4}
-                quality={75}
+                quality={50}
                 className="object-cover hover:scale-105 transition-transform duration-300"
                 sizes="(max-width: 640px) 100vw, 
                        (max-width: 768px) 50vw,
@@ -55,7 +55,6 @@ const ImageGallery = ({ images }) => {
                 fill
                 className="object-contain"
                 sizes="90vw"
-                priority
                 onClick={(e) => e.stopPropagation()}
               />
             </div>

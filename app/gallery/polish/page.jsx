@@ -42,7 +42,7 @@ const images = [
   { src: "/assets/images/polish/porscheTaped.jpg" },
   { src: "/assets/images/polish/redFordPlatinum.jpg" },
   { src: "/assets/images/polish/rv-finished.jpg" },
-  { src: "/assets/images/polish/seal-shine.jpg" },
+  { src: "/assets/images/polish/porscheFL.jpg" },
   { src: "/assets/images/polish/sprinter3.jpg" },
   { src: "/assets/images/polish/sprinter6.jpg" },
   { src: "/assets/images/polish/tealJeep.jpg" },

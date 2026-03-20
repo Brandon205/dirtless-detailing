@@ -158,7 +158,7 @@ export default function Exterior() {
                     />
                   </div>
 
-                  <div className="flex flex-col w-full justify-between min-h-[475px] lg:h-[550px] py-4">
+                  <div className="flex flex-col w-full justify-between min-h-[475px] py-4">
                     <div className="flex flex-col items-start">
                       <h2 className="text-4xl font-bold">Our Wash & Coat Service</h2>
                       <strong className="text-primary text-bold text-2xl">The easiest way to get your car protected.</strong>

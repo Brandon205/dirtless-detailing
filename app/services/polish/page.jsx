@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import PricingComponent from "../../components/PricingComponent";
 import HeaderComponent from "../../components/HeaderComponent";
-import MosaicGallery from "../../components/MosaicGallery";
+import ImageGallery from "../../components/ImageGallery";
 import BeforeAfterSlider from "../../components/ImageSlider";
 import { containerVariant, oddVariant, evenVariant } from "../../../utils/animationVariations";
 import { ExternalLink } from "lucide-react";
@@ -89,7 +89,7 @@ export default function ExteriorPolish() {
                     />
                   </div>
 
-                  <div className="flex flex-col w-full justify-between min-h-[475px] lg:h-[550px] py-4">
+                  <div className="flex flex-col w-full justify-between min-h-[475px] py-4">
                     <div className="flex flex-col items-start">
                       <h2 className="text-4xl font-bold">Our Exterior Polish & Coat Service</h2>
                       <strong className="text-primary text-bold text-2xl">The Perfect Exterior Middle Ground</strong>
@@ -294,7 +294,7 @@ export default function ExteriorPolish() {
             <h3 className="pricing__heading">Clean, Shiny, and Protected.</h3>
             <p className="pricing__subtext">With light scratches removed and a year of protection applied your car will shine like never before!</p>
             <div>
-              <MosaicGallery
+              <ImageGallery
                 images={[
                   { src: "/assets/images/polish/36 plymouth.jpg", alt: "Exterior after our Polish & Coat Service" },
                   { src: "/assets/images/polish/audiSeal2.jpg", alt: "Exterior after our Polish & Coat Service" },

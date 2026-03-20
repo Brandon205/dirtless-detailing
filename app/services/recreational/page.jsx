@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import HeaderComponent from "../../components/HeaderComponent";
 import FaqItem from "../../components/FaqItem";
-import MosaicGallery from "../../components/MosaicGallery";
+import ImageGallery from "../../components/ImageGallery";
 import Image from "next/image";
 import BaseSchema from "../../jsonSchemas/BaseSchema";
 
@@ -189,7 +189,7 @@ export default function Recreational() {
           <h3 className="pricing__heading">End Results</h3>
           <p className="pricing__subtext">Whether it's taken far on the road, or far off the road, we've got you covered!</p>
           <div>
-            <MosaicGallery
+            <ImageGallery
               images={[
                 { src: "/assets/images/recreational/nautiqueInt.jpg", alt: "" },
                 { src: "/assets/images/recreational/rvRoofDuring.jpg", alt: "" },

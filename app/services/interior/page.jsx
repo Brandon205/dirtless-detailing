@@ -2,7 +2,7 @@
 import PricingComponent from "../../components/PricingComponent";
 import BeforeAfterSlider from "../../components/ImageSlider";
 import HeaderComponent from "../../components/HeaderComponent";
-import MosaicGallery from "../../components/MosaicGallery";
+import ImageGallery from "../../components/ImageGallery";
 import { containerVariant, oddVariant, evenVariant } from "../../../utils/animationVariations";
 import { ExternalLink } from "lucide-react";
 import { GiSpill, GiVacuumCleaner } from "react-icons/gi";
@@ -60,7 +60,7 @@ export default function FullIntEx() {
                     />
                   </div>
 
-                  <div className="flex flex-col w-full justify-between min-h-[475px] lg:h-[550px] py-4">
+                  <div className="flex flex-col w-full justify-between min-h-[475px] py-4">
                     <div className="flex flex-col items-start">
                       <h2 className="text-4xl font-bold">Our Full Interior Detail</h2>
                       <strong className="text-primary text-bold text-2xl">Thorough Cleaning and Conditioning</strong>
@@ -204,7 +204,7 @@ export default function FullIntEx() {
             <p className="pricing__subtext">Once we are done you won't want to see your car dirty ever again!</p>
 
             <div>
-              <MosaicGallery
+              <ImageGallery
                 images={[
                   { src: "/assets/images/interior/driver6.jpg", alt: "Interior after our Full Interior Service" },
                   { src: "/assets/images/interior/driverTesla.jpg", alt: "Interior after our Full Interior Service" },

@@ -12,7 +12,7 @@ const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
 });
 
 const imagesArr = [
-  "/assets/images/polish/seal-shine.jpg",
+  "/assets/images/polish/porscheFL.jpg",
   "/assets/images/exterior/subaruWashed.jpeg",
   "/assets/images/exterior/jeepRenegade.jpg",
   "/assets/images/exterior/archCoTruck.jpg",

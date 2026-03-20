@@ -1,7 +1,7 @@
 "use client";
 import PricingComponent from "../../components/PricingComponent";
 import HeaderComponent from "../../components/HeaderComponent";
-import MosaicGallery from "../../components/MosaicGallery";
+import ImageGallery from "../../components/ImageGallery";
 import BeforeAfterSlider from "../../components/ImageSlider";
 import { containerVariant, oddVariant, evenVariant } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
@@ -59,7 +59,7 @@ export default function Exterior() {
                     />
                   </div>
 
-                  <div className="flex flex-col w-full justify-between min-h-[475px] lg:h-[550px] py-4">
+                  <div className="flex flex-col w-full justify-between min-h-[475px] py-4">
                     <div className="flex flex-col items-start">
                       <h2 className="text-4xl font-bold">Our Exterior Decon Wash</h2>
                       <strong className="text-primary text-bold text-2xl">The Detailer's Car Wash</strong>
@@ -201,7 +201,7 @@ export default function Exterior() {
             <h3 className="pricing__heading">What a car wash should be.</h3>
             <p className="pricing__subtext">Your car, washed, without the unnecessary scratching or missed corners.</p>
             <div>
-              <MosaicGallery
+              <ImageGallery
                 images={[
                   { src: "/assets/images/exterior/subaruSoap.jpeg", alt: "Exterior after our Exterior Decon Wash" },
                   { src: "/assets/images/exterior/engine5c77.jpg", alt: "Engine bay after our Engine Bay Cleaning addon" },
