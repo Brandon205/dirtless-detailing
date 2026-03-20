@@ -20,7 +20,7 @@ const ImageGallery = ({ images }) => {
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 py-16 lg:max-w-6xl mx-auto">
         {images.map((image, index) => (
-          <Card key={index} className="overflow-hidden cursor-pointer" onClick={() => openModal(image)}>
+          <Card key={index} className="overflow-hidden cursor-pointer border-px border-white" onClick={() => openModal(image)}>
             <div className="relative w-full pt-[100%]">
               <Image
                 src={image.src}
@@ -44,7 +44,7 @@ const ImageGallery = ({ images }) => {
           <div className="absolute inset-0 bg-black transition-opacity duration-300 ease-in-out opacity-75" />
 
           <div className="relative w-full max-w-6xl flex items-center justify-center h-[90vh] animate-in fade-in zoom-in duration-300">
-            <button onClick={closeModal} className="z-50 absolute top-8 right-4 text-white hover:text-gray-300 transition-colors">
+            <button onClick={closeModal} className="z-50 absolute top-8 right-4 text-white hover:text-gray-300 transition-colors cursor-pointer">
               <X size={32} />
             </button>
 

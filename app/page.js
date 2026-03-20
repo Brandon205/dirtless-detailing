@@ -75,7 +75,7 @@ export default function Home() {
           "/assets/images/showcase/brandonBMW.jpg",
           "/assets/images/showcase/fordGTBack.webp",
           "/assets/images/showcase/driverNewLexus.webp",
-          "/assets/images/showcase/archCoTruck.webp"
+          "/assets/images/correction/bPressure.jpg"
         ]}
       >
         <header className="w-screen flex flex-col h-[90vh] pt-20 z-50 items-center lg:items-start lg:pl-20 xl:gap-3 text-sm xl:text-lg justify-center">
@@ -244,6 +244,7 @@ export default function Home() {
             serviceType="exterior"
             specificService="extWashCoat"
             colors={{ bgMain: "bg-slate-950", bgLight: "bg-slate-900", bgHighlight: "bg-teal-500", borderColor: "border-teal-600" }}
+            newService={true}
           />
 
           <HomePageCard
@@ -265,7 +266,7 @@ export default function Home() {
 
           <HomePageCard
             title="Correct & Coat"
-            imageUrl="/assets/images/correction/truckBeadsNight.jpg"
+            imageUrl="/assets/images/correction/bMustang1.jpg"
             description="Our ultimate package: 2-stage paint correction and a 3-year ceramic coating for a flawless, mirror-like finish."
             stepHeadline="KEY ADDITIONS OVER POLISH & COAT"
             steps={[
@@ -382,7 +383,7 @@ export default function Home() {
             Answers to some of the most common questions that we get when people are booking with us, please reach out if you have other questions!
           </p>
         </div>
-        <section className="flex flex-col items-center xl:flex-row w-11/12 justify-center gap-8 xl:w-2/3">
+        <section className="flex flex-col items-center xl:flex-row w-11/12 justify-center gap-8 xl:w-2/3 max-w-[1500px]">
           <div className="flex flex-col gap-6 w-full calc text-left">
             {faqItems.map((item, i) => (
               <FaqItem key={i} i={i} expanded={expanded} setExpanded={setExpanded} title={item.title} description={item.description} isMobile={smallScreen} />

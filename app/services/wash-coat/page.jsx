@@ -329,7 +329,7 @@ export default function Exterior() {
                 We'll take a look assess what you want and even show you test spots vs our other services on your car so you can see what each service entails
                 and the results.
               </p>
-              <div className="flex flex-col lg:flex-row gap-8 justify-center">
+              <div className="flex flex-col items-center lg:items-start lg:flex-row gap-8 justify-center">
                 <a
                   href="/contact"
                   className="text-white hover:underline text-xl font-semibold flex items-center gap-1 mt-2 bg-primary py-2 px-6 rounded-lg w-max"
@@ -338,7 +338,7 @@ export default function Exterior() {
                 </a>
                 <a
                   href="sms:+12532529758"
-                  className="text-white border-primary border-2 hover:underline text-xl font-semibold flex items-center gap-1 mt-2 py-2 px-6 rounded-lg w-max"
+                  className="text-white border-primary border-2 hover:underline text-xl font-semibold flex items-center gap-1 mt-2 py-2 px-6 rounded-lg"
                 >
                   <span>Call or Text to setup a consultation: (252) 252-9758</span>
                 </a>

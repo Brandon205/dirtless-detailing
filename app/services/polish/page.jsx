@@ -327,7 +327,7 @@ export default function ExteriorPolish() {
                 </a>
                 <a
                   href="sms:+12532529758"
-                  className="text-white border-primary border-2 hover:underline text-xl font-semibold flex items-center gap-1 mt-2 py-2 px-6 rounded-lg w-max"
+                  className="text-white border-primary border-2 hover:underline text-xl font-semibold flex items-center gap-1 mt-2 py-2 px-6 rounded-lg"
                 >
                   <span>Call or Text to setup a consultation: (252) 252-9758</span>
                 </a>

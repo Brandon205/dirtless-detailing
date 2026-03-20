@@ -1,6 +1,22 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "tailwindcss-animate";
+
+@theme {
+  --color-primary: #f59e0b;
+  --color-accent: #f59e0b;
+  --color-accent-darker: #d97706;
+
+  --font-sans: var(--font-montserrat);
+  --font-heading: var(--font-titillium-web);
+
+  --animate-scroll: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
+
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+}
 
 /* MAIN COLORS:  */
 $main-clr: #f59e0b; // OLD: #fea41c TAILWIND: bg-amber-500
