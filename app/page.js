@@ -166,9 +166,9 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row flex-grow lg:justify-between lg:items-stretch lg:flex-wrap lg:w-[90%] mx-auto justify-center items-center gap-24 mt-8 mb-8">
           <HomePageCard
             title="Interior Refresh"
-            imageUrl="/assets/images/interior/driver15.jpg"
+            imageUrl="/assets/images/interior/driver12.jpg"
             description="Best for new cars, pretty clean vehicles, or ones detailed within the last year. We'll give them a refresh to restore that like-new feel."
-            stepHeadline="KEY FEATURES"
+            stepHeadline="KEY FEATURES:"
             steps={["Quick air blow-out & vacuum", "Clean & condition surfaces", "Quick wipe door jambs"]}
             hours="2-4"
             linkUrl="/services/interior-refresh"
@@ -179,9 +179,9 @@ export default function Home() {
 
           <HomePageCard
             title="Full Interior Detail"
-            imageUrl="/assets/images/interior/driver5.jpg"
+            imageUrl="/assets/images/interior/driverCivic.jpg"
             description="A deeper clean targeting stains, pet hair, and heavy grime. Ideal for vehicles needing a complete interior reset."
-            stepHeadline="KEY ADDITIONS OVER INTERIOR REFRESH"
+            stepHeadline="KEY ADDITIONS OVER INTERIOR REFRESH:"
             steps={["Thorough blow-out and vacuum", "Stain Extraction + Headliner Cleaning", "Wash out all door jambs"]}
             hours="3-6"
             linkUrl="/services/interior"
@@ -194,7 +194,7 @@ export default function Home() {
             title="Interior Restoration"
             imageUrl="/assets/images/before&afters/badInteriorBA.png"
             description="Specialized care for mold, smoke odors, or extreme neglect. We restore interiors that standard detailing can't handle."
-            stepHeadline="KEY ADDITIONS OVER OUR FULL INTERIOR DETAIL"
+            stepHeadline="KEY ADDITIONS OVER OUR FULL INTERIOR DETAIL:"
             steps={["Comprehensive odor removal", "Extra time & chemicals spent on heavy stains", "Ozone Treatment included"]}
             hours="4.5-8+"
             linkUrl="/services/interior-restoration"
@@ -215,7 +215,7 @@ export default function Home() {
             title="Exterior Decon Wash"
             imageUrl="/assets/images/exterior/jeepRenegade.jpg"
             description="A professional-grade deep clean for your paint and wheels that an automatic car wash simply can't touch."
-            stepHeadline="KEY FEATURES"
+            stepHeadline="WHAT WE DO:"
             steps={[
               "Full vehicle top to bottom wash",
               "Scrub & wash the tires, wheels, wheel barrels, and wells",
@@ -232,8 +232,12 @@ export default function Home() {
             title="Wash & Coat"
             imageUrl="/assets/images/exterior/archCoTruck.jpg"
             description="Premium ceramic protection for your paint and wheels without the cost or time of paint correction."
-            stepHeadline="KEY ADDITIONS OVER OUR DECON WASH"
-            steps={["A thorough 3-step wash process", "Coating prep with a primer polish", "3-Year Ceramic Coating + Windshield Coating Application"]}
+            stepHeadline="WHAT WE DO:"
+            steps={[
+              "Our Exterior Decon Wash + Clay Bar Treatment",
+              "Use a primer polish to prep the vehicle",
+              "Apply a 3-Year Ceramic Coating everywhere on your car"
+            ]}
             hours="5-8"
             linkUrl="/services/wash-coat"
             serviceType="exterior"
@@ -246,11 +250,11 @@ export default function Home() {
             title="Polish & Coat"
             imageUrl="/assets/images/polish/porscheFL.jpg"
             description="Single-stage paint correction and a 3-year ceramic coating for drastic gloss enhancement and protection."
-            stepHeadline="KEY ADDITIONS OVER WASH & COAT"
+            stepHeadline="WHAT WE DO:"
             steps={[
-              "Included clay bar treatment",
-              "A single-stage polish & waterspot removal on glass",
-              "3-Year Ceramic Coating + Windshield Coating Application"
+              "Our Exterior Decon Wash + Clay Bar Treatment",
+              "A single-stage polish (removes around 50% of swirls and scratches)",
+              "Apply a 3-Year Ceramic Coating everywhere on your car"
             ]}
             hours="6-9+"
             linkUrl="/services/polish"
@@ -263,11 +267,11 @@ export default function Home() {
             title="Correct & Coat"
             imageUrl="/assets/images/correction/bMustang1.jpg"
             description="Our ultimate package: 2-stage paint correction and a 3-year ceramic coating for a flawless, mirror-like finish."
-            stepHeadline="KEY ADDITIONS OVER POLISH & COAT"
+            stepHeadline="WHAT WE DO:"
             steps={[
-              "A 2-stage paint correction (can remove 70-95% of swirls and scratches)",
-              "Included trim restoration",
-              "3-Year Ceramic Coating applied to the wheel faces"
+              "Our Exterior Decon Wash + Clay Bar Treatment",
+              "A thorough 2-stage paint correction (can remove 70-95% of swirls and scratches)",
+              "Apply a 3-Year Ceramic Coating everywhere on your car"
             ]}
             hours="10-15+"
             linkUrl="/services/correct"

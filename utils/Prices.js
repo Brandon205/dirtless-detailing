@@ -69,7 +69,8 @@ const prices = {
     "Engine Bay": 75,
     "Interior Ceramic": 75,
     "Ceramic Maintenance": 75,
-    "Trim Restoration": 75
+    "Trim Restoration": 75,
+    "Clay Bar Treatment": 50
   }
 };
 

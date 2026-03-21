@@ -11,7 +11,7 @@ const baImages = [
   { src: "/assets/images/before&afters/daytonaBA.jpg" },
   { src: "/assets/images/before&afters/headlightBA.jpg" },
   { src: "/assets/images/before&afters/winnebagoBA.jpg" },
-  { src: "/assets/images/before&afters/f150SealShineBA.jpg" }
+  { src: "/assets/images/before&afters/f150PolishBA.jpg" }
 ];
 
 const images = [

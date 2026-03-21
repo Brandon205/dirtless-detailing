@@ -42,8 +42,8 @@ export default function Benefits() {
           }}
           onMouseLeave={() => calendarRef.current.goToAndStop(60, true)}
         />
-        <p className="header-desc">9 Years</p>
-        <span className="header-desc-span">Detailing</span>
+        <p className="header-desc">10 Years</p>
+        <span className="header-desc-span">of Experience</span>
       </div>
       <div>
         <Lottie
@@ -58,7 +58,7 @@ export default function Benefits() {
           onMouseLeave={() => carRef.current.goToAndStop(90, true)}
         />
         <p className="header-desc">1500+</p>
-        <span className="header-desc-span">Details Done</span>
+        <span className="header-desc-span">Details Completed</span>
       </div>
       <div>
         <Lottie

@@ -131,8 +131,8 @@ export default function About() {
           <div className="text-left">
             <h3 className="text-large">You shouldn't have to take time out of your busy day to clean your car.</h3>
             <p className="pb-4">
-              We can do the dirty work for you, leaving you free to do whatever you desire. After hundreds of completed details over the last 9 years we've seen
-              it all, and perfected how we tackle every aspect of it.
+              We can do the dirty work for you, leaving you free to do whatever you desire. After hundreds of completed details over the last 10 years we've
+              seen it all, and perfected how we tackle every aspect of it.
             </p>
             <p className="pb-4">
               Starting almost a decade ago as a detailer at an autobody shop, I started Dirt-Less Detailing to continue doing what I love doing for everyone in

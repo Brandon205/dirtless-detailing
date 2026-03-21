@@ -264,6 +264,18 @@ const Exterior = () => {
       </div>
       <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4 max-w-[500px]">
         <div className="w-full flex flex-col items-center gap-2 justify-center mb-4">
+          <h4 className="text-2xl font-semibold">Clay Bar Treatment</h4>
+          <p className="text-xl text-gray-300">
+            If your paint (especially lower sections) are gritty or bumpy even after a good wash then our clay bar treatment is for you. With a clay bar we can
+            get rid of a lot of the contamination that is causing the paint to feel less smooth to the touch.
+          </p>
+        </div>
+        <div className="bg-primary w-1/2 py-2 rounded-lg text-xl font-medium">
+          <p className="text-black">$50</p>
+        </div>
+      </div>
+      <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4 max-w-[500px]">
+        <div className="w-full flex flex-col items-center gap-2 justify-center mb-4">
           <h4 className="text-2xl font-semibold">Ceramic Maintenance</h4>
           <p className="text-xl text-gray-300">
             Our recommended addon for a Decon Wash, this is best done every 6-12 months after your coating, we'll check in see how the coating is holding up and

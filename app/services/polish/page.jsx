@@ -130,7 +130,7 @@ export default function ExteriorPolish() {
         imageUrl="/assets/images/correction/teslaclean.jpg"
         title="Exterior Polish & Coat"
         description="An even more thorough wash with clay bar decontamination, a corrective polish, and a high-quality ceramic coating."
-        secondaryUrl="/assets/images/before&afters/f150polishBA.jpg"
+        secondaryUrl="/assets/images/before&afters/f150PolishBA.jpg"
       />
 
       <div className="main-content-container">
@@ -153,8 +153,8 @@ export default function ExteriorPolish() {
                 <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center mb-0 lg:mb-4">
                   <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
                     <BeforeAfterSlider
-                      beforeImage="/assets/images/before&afters/polishhoodB.jpg"
-                      afterImage="/assets/images/before&afters/polishhoodA.jpg"
+                      beforeImage="/assets/images/before&afters/polishHoodB.jpg"
+                      afterImage="/assets/images/before&afters/polishHoodA.jpg"
                       aspectRatio="16/9"
                     />
                   </div>
