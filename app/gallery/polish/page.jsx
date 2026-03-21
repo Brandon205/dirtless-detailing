@@ -31,7 +31,6 @@ const images = [
   { src: "/assets/images/polish/blueRav4.jpg" },
   { src: "/assets/images/polish/bMustang1.jpg" },
   { src: "/assets/images/polish/correction86ce.jpg" },
-  { src: "/assets/images/polish/fjCruiserFL.jpg" },
   { src: "/assets/images/polish/fjCruiserOutside2.jpg" },
   { src: "/assets/images/polish/fordSuv.jpg" },
   { src: "/assets/images/polish/hondaSeal2.jpg" },

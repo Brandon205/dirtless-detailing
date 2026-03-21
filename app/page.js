@@ -166,7 +166,7 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row flex-grow lg:justify-between lg:items-stretch lg:flex-wrap lg:w-[90%] mx-auto justify-center items-center gap-24 mt-8 mb-8">
           <HomePageCard
             title="Interior Refresh"
-            imageUrl="/assets/images/interior/driverRedFord.jpg"
+            imageUrl="/assets/images/interior/driver15.jpg"
             description="Best for new cars, pretty clean vehicles, or ones detailed within the last year. We'll give them a refresh to restore that like-new feel."
             stepHeadline="KEY FEATURES"
             steps={["Quick air blow-out & vacuum", "Clean & condition surfaces", "Quick wipe door jambs"]}
@@ -182,12 +182,7 @@ export default function Home() {
             imageUrl="/assets/images/interior/driver5.jpg"
             description="A deeper clean targeting stains, pet hair, and heavy grime. Ideal for vehicles needing a complete interior reset."
             stepHeadline="KEY ADDITIONS OVER INTERIOR REFRESH"
-            steps={[
-              "Thorough blow-out and vacuum",
-              "Stain Extraction + Headliner Cleaning",
-              "Wash out all door jambs"
-              // "Deep cleaning & conditioning of surfaces"
-            ]}
+            steps={["Thorough blow-out and vacuum", "Stain Extraction + Headliner Cleaning", "Wash out all door jambs"]}
             hours="3-6"
             linkUrl="/services/interior"
             serviceType="interior"
