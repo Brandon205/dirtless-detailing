@@ -61,6 +61,7 @@ export default function LinksPage() {
           <Image src="/assets/images/showcase/homepage-logo.png" alt="Dirt-Less Detailing" width="124" height="124" className="w-full h-full object-contain" />
         </div>
       </motion.div>
+      <h1 className="text-2xl font-bold text-center mb-8">Links to all things Dirt-Less Detailing</h1>
 
       {/* Links Container */}
       <motion.div variants={containerVariants} initial="hidden" animate="visible" className="w-full max-w-md flex flex-col gap-4">

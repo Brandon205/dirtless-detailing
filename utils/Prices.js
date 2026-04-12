@@ -32,7 +32,7 @@ const prices = {
       intRestoration: 500
     },
     exterior: {
-      extDecon: 125,
+      extDecon: 150,
       extWashCoat: 625,
       extPolish: 1250,
       extCorrect: 1875
@@ -45,7 +45,7 @@ const prices = {
       intRestoration: 500
     },
     exterior: {
-      extDecon: 125,
+      extDecon: 175,
       extWashCoat: 750,
       extPolish: 1500,
       extCorrect: 2250
@@ -58,7 +58,7 @@ const prices = {
       intRestoration: 555
     },
     exterior: {
-      extDecon: 125,
+      extDecon: 175,
       extWashCoat: 750,
       extPolish: 1500,
       extCorrect: 2250

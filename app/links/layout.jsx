@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Dirt-Less Detailing - Links to everything you need",
+  title: "Links to everything you need",
   description: "All the links to our socials media pages, products we've showcased, our ceramic maintenance page, and more.",
   alternates: { canonical: "https://www.dirtlessdetailing.com/links" },
   openGraph: {

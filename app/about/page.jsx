@@ -67,7 +67,7 @@ export default function About() {
       description: (
         <p className="faq-description">
           We have a guide on the steps and products we recommend on our{" "}
-          <a href="/products/ceramic-coating" className="text-blue-500">
+          <a href="/products?category=Ceramic Maintenance8" className="text-blue-500">
             DIY Maintenance
           </a>{" "}
           page. All the products are perfectly fine to use whether your car is ceramic coated or not! If you are in need of a very quick wash we only recommend
