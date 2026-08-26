@@ -1,7 +1,8 @@
 "use client";
 import { cn } from "../../utils/cn";
 import { motion, AnimatePresence, easeInOut } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
+import Image from "next/image";
 
 export const HeroSlider = ({
   images,
@@ -21,39 +22,14 @@ export const HeroSlider = ({
   direction?: "up" | "down";
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [loading, setLoading] = useState(false);
-  const [loadedImages, setLoadedImages] = useState<string[]>([]);
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex + 1 === images.length ? 0 : prevIndex + 1));
-  };
+  }, [images.length]);
 
-  const handlePrevious = () => {
+  const handlePrevious = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 < 0 ? images.length - 1 : prevIndex - 1));
-  };
-
-  const loadImages = () => {
-    setLoading(true);
-    const loadPromises = images.map((image) => {
-      return new Promise((resolve, reject) => {
-        const img = new Image();
-        img.src = image;
-        img.onload = () => resolve(image);
-        img.onerror = reject;
-      });
-    });
-
-    Promise.all(loadPromises)
-      .then((loadedImages) => {
-        setLoadedImages(loadedImages as string[]);
-        setLoading(false);
-      })
-      .catch((error) => console.error("Failed to load images", error));
-  };
-
-  useEffect(() => {
-    loadImages();
-  }, []);
+  }, [images.length]);
 
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
@@ -66,7 +42,6 @@ export const HeroSlider = ({
 
     window.addEventListener("keydown", handleKeyDown);
 
-    // autoplay
     let interval: any;
     if (autoplay) {
       interval = setInterval(() => {
@@ -111,8 +86,6 @@ export const HeroSlider = ({
     }
   };
 
-  const areImagesLoaded = loadedImages.length > 0;
-
   return (
     <div
       className={cn("overflow-hidden h-[90vh] w-full relative flex items-center", className)}
@@ -120,23 +93,29 @@ export const HeroSlider = ({
         perspective: "1000px"
       }}
     >
-      {areImagesLoaded && children}
-      {areImagesLoaded && overlay && <div className={cn("absolute inset-0 bg-black/60 z-40", overlayClassName)} />}
+      {children}
+      {overlay && <div className={cn("absolute inset-0 bg-black/60 z-40", overlayClassName)} />}
 
-      {areImagesLoaded && (
-        <AnimatePresence>
-          <motion.img
-            key={currentIndex}
-            src={loadedImages[currentIndex]}
-            initial="initial"
-            animate="visible"
-            alt={"Homepage " + currentIndex}
-            exit={direction === "up" ? "upExit" : "downExit"}
-            variants={slideVariants}
-            className="image h-full w-full absolute inset-0 object-cover object-center"
+      <AnimatePresence>
+        <motion.div
+          key={currentIndex}
+          initial="initial"
+          animate="visible"
+          exit={direction === "up" ? "upExit" : "downExit"}
+          variants={slideVariants}
+          className="image h-full w-full absolute inset-0"
+        >
+          <Image
+            src={images[currentIndex]}
+            alt={`Dirt-Less Detailing showcase ${currentIndex + 1}`}
+            fill
+            priority={currentIndex === 0}
+            sizes="100vw"
+            quality={75}
+            className="object-cover object-center"
           />
-        </AnimatePresence>
-      )}
+        </motion.div>
+      </AnimatePresence>
     </div>
   );
 };

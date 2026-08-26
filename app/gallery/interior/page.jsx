@@ -81,6 +81,7 @@ export default function FullIntGallery() {
           quality={75}
           priority
           fill
+          sizes="100vw"
           className="object-cover"
         />
       </div>

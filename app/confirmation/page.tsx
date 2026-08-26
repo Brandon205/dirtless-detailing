@@ -7,7 +7,7 @@ import { House, PhoneCall } from "lucide-react";
 export default function Confirmation() {
   return (
     <div className="confirmation-container">
-      <Image src="/assets/images/exterior/range-rover-right.jpg" priority alt="range rover on the right" fill className="object-cover opacity-25 z-[-5]" />
+      <Image src="/assets/images/exterior/range-rover-right.jpg" priority alt="range rover on the right" fill sizes="100vw" className="object-cover opacity-25 z-[-5]" />
       <div className="confirmation-subcontainer">
         <h1 className="confirmation-title">Thank You for Booking With Us!</h1>
         <p className="confirmation-message text-xl tracking-wide leading-8">

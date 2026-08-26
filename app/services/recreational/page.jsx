@@ -71,10 +71,10 @@ export default function Recreational() {
               <div className="w-auto h-[250px] relative my-4">
                 <Image
                   src="/assets/images/recreational/toyHaulerAfter.jpg"
-                  alt="Before and after of a heavily neglected interior"
+                  alt="Detailed RV toy hauler interior"
                   fill
-                  objectFit="cover"
-                  className="mb-4 rounded-lg"
+                  sizes="(max-width: 768px) 100vw, 450px"
+                  className="mb-4 rounded-lg object-cover"
                 />
               </div>
               <strong className="font-bold text-2xl text-primary">$10/foot</strong>
@@ -89,10 +89,10 @@ export default function Recreational() {
               <div className="w-auto h-[250px] relative my-4">
                 <Image
                   src="/assets/images/recreational/Boatinterior.jpg"
-                  alt="Moldy rear van seat before and after"
+                  alt="Clean boat interior after detailing"
                   fill
-                  objectFit="cover"
-                  className="mb-4 rounded-lg"
+                  sizes="(max-width: 768px) 100vw, 450px"
+                  className="mb-4 rounded-lg object-cover"
                 />
               </div>
               <strong className="font-bold text-2xl text-primary">$10/foot</strong>
@@ -108,10 +108,10 @@ export default function Recreational() {
               <div className="w-auto h-[250px] relative my-4">
                 <Image
                   src="/assets/images/before&afters/sideBySideAfter.jpg"
-                  alt="Photo of the interior of an old Ferrari Interior"
+                  alt="Side-by-side ORV clean after detailing"
                   fill
-                  objectFit="cover"
-                  className="mb-4 rounded-lg"
+                  sizes="(max-width: 768px) 100vw, 450px"
+                  className="mb-4 rounded-lg object-cover"
                 />
               </div>
               <strong className="font-bold text-2xl text-primary">QUOTE REQUIRED*</strong>
@@ -131,7 +131,7 @@ export default function Recreational() {
                 src="/assets/images/recreational/motorcycleFoam.jpg"
                 alt="Motorcycle during a wash with foam on it"
                 fill
-                objectFit="cover"
+                sizes="(max-width: 1024px) 100vw, 600px"
                 className="mb-4 object-cover"
               />
             </div>

@@ -96,7 +96,7 @@ export default function About() {
       />
       {/* <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} /> */}
       <div className="cover">
-        <Image src="/assets/images/correction/teslafoam.jpg" alt="Dirt-Less Detailing" priority fill quality={75} className="object-cover" />
+        <Image src="/assets/images/correction/teslafoam.jpg" alt="Dirt-Less Detailing" priority fill sizes="100vw" quality={75} className="object-cover" />
       </div>
       <div className="servicepage-header">
         <div style={{ alignItems: "center" }}>
@@ -121,11 +121,8 @@ export default function About() {
       <section style={{ lineHeight: "2", fontSize: "1.2em" }} className="about-container">
         <div className="about-explain">
           <div className="about-image-container">
-            {/* <motion.div style={{ x: smallScreen ? "" : xMovement, y: smallScreen ? "" : yMovement }} className="about-image w-[450px] h-[300px]">
-                <Image src="/assets/images/exterior/fordGTBack.jpg" alt="Clean Ford GT in a garage" className="rounded-lg object-cover" fill />
-              </motion.div> */}
             <div className="about-image w-full h-[160px] lg:w-[450px] lg:h-[300px]">
-              <Image src="/assets/images/exterior/fordGTBack.jpg" alt="Clean Ford GT in a garage" className="rounded-lg object-cover" fill />
+              <Image src="/assets/images/exterior/fordGTBack.jpg" alt="Clean Ford GT in a garage" sizes="(max-width: 1024px) 100vw, 450px" className="rounded-lg object-cover" fill />
             </div>
           </div>
           <div className="text-left">
