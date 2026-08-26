@@ -113,7 +113,7 @@ export default function ExteriorPolish() {
     <section className="service-content-container">
       <BaseSchema
         serviceImage="/assets/images/correction/teslaclean.jpg"
-        url="https://www.dirtlessdetailing.com/services/polish-coat"
+        url="https://www.dirtlessdetailing.com/services/polish"
         makesOffer={{
           "@type": "Offer",
           "itemOffered": {
@@ -329,7 +329,7 @@ export default function ExteriorPolish() {
                   href="sms:+12532529758"
                   className="text-white border-primary border-2 hover:underline text-xl font-semibold flex items-center gap-1 mt-2 py-2 px-6 rounded-lg"
                 >
-                  <span>Call or Text to setup a consultation: (252) 252-9758</span>
+                  <span>Call or Text to setup a consultation: (253) 252-9758</span>
                 </a>
               </div>
             </div>

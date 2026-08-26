@@ -1,18 +1,29 @@
 export const metadata = {
-  title: "Car Wash Gallery",
-  description: "See our top picks/recommendations for the products and methods that you should be using to wash your car easily while staying in budget!",
+  title: "Exterior Decon Wash Gallery",
+  description:
+    "View before-and-after photos and finished results from our Exterior Decon Wash details across Buckley, Bonney Lake, and Pierce County.",
   alternates: { canonical: "https://www.dirtlessdetailing.com/gallery/exterior" },
   openGraph: {
     type: "website",
+    title: "Exterior Decon Wash Gallery | Dirt-Less Detailing",
+    description:
+      "View before-and-after photos and finished results from our Exterior Decon Wash details across Buckley, Bonney Lake, and Pierce County.",
     url: "https://www.dirtlessdetailing.com/gallery/exterior",
     images: [
       {
         url: "/assets/images/exterior/sideofsilverram.jpg",
         width: 1200,
         height: 630,
-        alt: "A silver dodge ram truck parked on a driveway, showing off the shine from a wash and wax."
+        alt: "Silver Dodge Ram showing clean finish after Exterior Decon Wash"
       }
     ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Exterior Decon Wash Gallery | Dirt-Less Detailing",
+    description:
+      "View before-and-after photos and finished results from our Exterior Decon Wash details across Buckley, Bonney Lake, and Pierce County.",
+    images: ["/assets/images/exterior/sideofsilverram.jpg"]
   }
 };
 

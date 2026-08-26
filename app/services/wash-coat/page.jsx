@@ -113,7 +113,7 @@ export default function Exterior() {
     <section className="service-content-container">
       <BaseSchema
         serviceImage="/assets/images/exterior/subaruWashed.jpeg"
-        url="https://www.dirtlessdetailing.com/services/exterior"
+        url="https://www.dirtlessdetailing.com/services/wash-coat"
         makesOffer={{
           "@type": "Offer",
           "itemOffered": {
@@ -190,7 +190,7 @@ export default function Exterior() {
                 <p className="text-center">
                   Complete the detail! While your car is with us now's the best time to get that neglected interior back in shape! Check out our current offers
                   and pricing on our full interior detail{" "}
-                  <a href="/services/exterior" className="text-blue-600 hover:text-blue-700 font-medium underline">
+                  <a href="/services/interior" className="text-blue-600 hover:text-blue-700 font-medium underline">
                     here
                   </a>
                   !
@@ -282,7 +282,7 @@ export default function Exterior() {
                     </a>
                   </h4>
                   <p className="step-desc">
-                    Check out our Polish & Coat{" "}
+                    Check out our{" "}
                     <a href="/services/polish" className="text-blue-500">
                       Polish & Coat
                     </a>{" "}
@@ -340,7 +340,7 @@ export default function Exterior() {
                   href="sms:+12532529758"
                   className="text-white border-primary border-2 hover:underline text-xl font-semibold flex items-center gap-1 mt-2 py-2 px-6 rounded-lg"
                 >
-                  <span>Call or Text to setup a consultation: (252) 252-9758</span>
+                  <span>Call or Text to setup a consultation: (253) 252-9758</span>
                 </a>
               </div>
             </div>

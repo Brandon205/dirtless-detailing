@@ -88,7 +88,7 @@ export default function About() {
             "@type": "Service",
             "name": "Auto Detailing",
             "description":
-              "Learn more about us and why Dirt-Less Detailing was founded, and check out our FAQ for to get answers to our most frequently asked questions.",
+              "Learn more about us and why Dirt-Less Detailing was founded, and check out our FAQ to get answers to our most frequently asked questions.",
             "areaServed": "Buckley, Bonney Lake, and surrounding areas.",
             "serviceType": "Auto Detailing"
           }

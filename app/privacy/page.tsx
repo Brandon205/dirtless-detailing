@@ -1,8 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Dirt-Less Detailing",
+  title: "Privacy Policy",
   description: "Our privacy policy and how we protect your personal information.",
+  alternates: { canonical: "https://www.dirtlessdetailing.com/privacy" },
   robots: {
     index: false,
     follow: false

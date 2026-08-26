@@ -2,86 +2,104 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.dirtlessdetailing.com/</loc>
-    <lastmod>2025-04-27</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.dirtlessdetailing.com/products</loc>
-    <lastmod>2025-04-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.dirtlessdetailing.com/services/recreational</loc>
-    <lastmod>2025-04-27</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.dirtlessdetailing.com/services/interior</loc>
-    <lastmod>2025-04-27</lastmod>
-    <changefreq>yearly</changefreq>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.dirtlessdetailing.com/services/interior-spill</loc>
-    <lastmod>2025-04-27</lastmod>
-    <changefreq>yearly</changefreq>
+    <loc>https://www.dirtlessdetailing.com/services/interior-refresh</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dirtlessdetailing.com/services/interior-restoration</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.dirtlessdetailing.com/services/exterior</loc>
-    <lastmod>2025-04-27</lastmod>
-    <changefreq>yearly</changefreq>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.dirtlessdetailing.com/services/wash-coat</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.dirtlessdetailing.com/services/polish</loc>
-    <lastmod>2025-04-27</lastmod>
-    <changefreq>yearly</changefreq>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.dirtlessdetailing.com/services/correct</loc>
-    <lastmod>2025-04-27</lastmod>
-    <changefreq>yearly</changefreq>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.dirtlessdetailing.com/services/recreational</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.dirtlessdetailing.com/gallery/exterior</loc>
-    <lastmod>2025-04-27</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.dirtlessdetailing.com/gallery/interior</loc>
-    <lastmod>2025-04-27</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.dirtlessdetailing.com/gallery/polish</loc>
-    <lastmod>2025-04-27</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.dirtlessdetailing.com/gallery/correct</loc>
-    <lastmod>2025-04-27</lastmod>
-    <changefreq>yearly</changefreq>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.dirtlessdetailing.com/products</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.dirtlessdetailing.com/links</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.dirtlessdetailing.com/contact</loc>
-    <lastmod>2025-04-27</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.dirtlessdetailing.com/about</loc>
-    <lastmod>2025-04-27</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

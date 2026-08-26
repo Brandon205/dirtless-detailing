@@ -1,16 +1,5 @@
 import ProductsPage from "./components/ProductsPage";
 import { Suspense } from "react";
-import { Metadata } from "next";
-
-export async function generateMetadata(): Promise<Metadata> {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://yourdomain.com";
-
-  return {
-    alternates: {
-      canonical: `${baseUrl}/products`
-    }
-  };
-}
 
 export default function ProductsPageWrapper() {
   return (

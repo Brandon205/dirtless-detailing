@@ -1,18 +1,29 @@
 export const metadata = {
-  title: "Links to everything you need",
-  description: "All the links to our socials media pages, products we've showcased, our ceramic maintenance page, and more.",
+  title: "Quick Links & Resources",
+  description:
+    "All official Dirt-Less Detailing links in one place: online booking, recommended car care products, YouTube videos, maintenance guides, and social media channels.",
   alternates: { canonical: "https://www.dirtlessdetailing.com/links" },
   openGraph: {
     type: "website",
+    title: "Quick Links & Resources | Dirt-Less Detailing",
+    description:
+      "All official Dirt-Less Detailing links in one place: online booking, recommended car care products, YouTube videos, maintenance guides, and social media channels.",
     url: "https://www.dirtlessdetailing.com/links",
     images: [
       {
         url: "/assets/images/interior/driverTesla.jpg",
         width: 1200,
         height: 630,
-        alt: "A Tesla Model 3 driver side interior"
+        alt: "Dirt-Less Detailing quick links and detailing resources"
       }
     ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Quick Links & Resources | Dirt-Less Detailing",
+    description:
+      "All official Dirt-Less Detailing links in one place: online booking, recommended car care products, YouTube videos, maintenance guides, and social media channels.",
+    images: ["/assets/images/interior/driverTesla.jpg"]
   }
 };
 
