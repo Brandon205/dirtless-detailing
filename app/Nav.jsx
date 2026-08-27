@@ -147,7 +147,7 @@ export default function Nav() {
                 Home
               </Link>
 
-              <div className="relative" ref={servicesRef}>
+              <div className="relative cursor-pointer" ref={servicesRef}>
                 <button
                   className="group text-gray-100 hover:text-amber-300 px-3 py-2 font-bold inline-flex items-center transition-colors"
                   onClick={() => toggleDropdown("services")}
@@ -213,7 +213,7 @@ export default function Nav() {
 
               <div className="relative p-0" ref={galleriesRef}>
                 <button
-                  className="group text-gray-100 hover:text-amber-300 px-3 py-2 font-bold inline-flex items-center transition-colors"
+                  className="group text-gray-100 hover:text-amber-300 px-3 py-2 font-bold inline-flex items-center transition-colors cursor-pointer"
                   onClick={() => toggleDropdown("gallery")}
                 >
                   Galleries
@@ -303,9 +303,8 @@ export default function Nav() {
 
         {/* Mobile menu */}
         <div
-          className={`lg:hidden fixed inset-0 bg-zinc-900 z-50 transition-all duration-300 ease-in-out ${
-            mobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
-          }`}
+          className={`lg:hidden fixed inset-0 bg-zinc-900 z-50 transition-all duration-300 ease-in-out ${mobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+            }`}
         >
           {/* Close button */}
           <div className="absolute top-6 right-6">
@@ -327,9 +326,9 @@ export default function Nav() {
                 Home
               </Link>
 
-              <div className="py-3">
+              <div className="py-3 cursor-pointer">
                 <button
-                  className="w-full flex items-center justify-center text-2xl font-medium text-white hover:text-amber-300 transition-colors"
+                  className="w-full flex items-center justify-center text-2xl font-medium text-white hover:text-amber-300 transition-colors cursor-pointer"
                   onClick={() => toggleDropdown("mobileServices")}
                 >
                   <span>All Services</span>
@@ -348,9 +347,8 @@ export default function Nav() {
                 </button>
 
                 <div
-                  className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                    activeDropdown === "mobileServices" ? "max-h-screen opacity-100 mt-4" : "max-h-0 opacity-0"
-                  }`}
+                  className={`transition-all duration-300 ease-in-out overflow-hidden ${activeDropdown === "mobileServices" ? "max-h-screen opacity-100 mt-4" : "max-h-0 opacity-0"
+                    }`}
                 >
                   {dropdowns.services.map((section, index) => (
                     <div key={index} className="mb-6 text-center">
@@ -397,9 +395,8 @@ export default function Nav() {
                 </button>
 
                 <div
-                  className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                    activeDropdown === "mobileGallery" ? "max-h-screen opacity-100 mt-4" : "max-h-0 opacity-0"
-                  }`}
+                  className={`transition-all duration-300 ease-in-out overflow-hidden ${activeDropdown === "mobileGallery" ? "max-h-screen opacity-100 mt-4" : "max-h-0 opacity-0"
+                    }`}
                 >
                   {dropdowns.gallery.map((section, index) => (
                     <div key={index} className="mb-6">
