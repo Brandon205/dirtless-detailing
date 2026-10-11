@@ -9,8 +9,6 @@ export const metadata = {
     images: [
       {
         url: "/assets/images/exterior/subaruWashed.jpeg",
-        width: 1200,
-        height: 630,
         alt: "Shiny black subaru WRX after a decontamination wash"
       }
     ]

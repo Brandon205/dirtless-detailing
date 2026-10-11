@@ -113,7 +113,7 @@ export default function ExteriorPolish() {
     <section className="service-content-container">
       <BaseSchema
         serviceImage="/assets/images/correction/teslaclean.jpg"
-        url="https://www.dirtlessdetailing.com/services/polish-coat"
+        url="https://www.dirtlessdetailing.com/services/polish"
         makesOffer={{
           "@type": "Offer",
           "itemOffered": {

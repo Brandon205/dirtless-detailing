@@ -1,5 +1,4 @@
 import React from "react";
-import Script from "next/script";
 
 interface MakesOffer {
   "@type": "Offer";
@@ -13,7 +12,7 @@ interface MakesOffer {
 }
 
 export default function BaseSchema({
-  serviceImage = "/assets/images/archCoTruck.webp",
+  serviceImage = "/assets/images/exterior/archCoTruck.jpg",
   makesOffer,
   url = "https://www.dirtlessdetailing.com"
 }: {
@@ -26,12 +25,13 @@ export default function BaseSchema({
     "@type": "LocalBusiness",
     "name": "Dirt-Less Detailing",
     "url": url,
-    "image": serviceImage,
+    "image": new URL(serviceImage, "https://www.dirtlessdetailing.com").href,
     "telephone": "+12532529758",
     "email": "brenden@dirtlessdetailing.com",
     "priceRange": "$$$",
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "28120 WA-410 C6",
       "addressLocality": "Buckley",
       "addressRegion": "WA",
       "postalCode": "98321",
@@ -115,9 +115,9 @@ export default function BaseSchema({
       "ratingValue": "5",
       "ratingCount": "41",
       "bestRating": "5",
-      "worstRating": "5"
+      "worstRating": "1"
     }
   };
 
-  return <Script id="schema-data" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />;
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />;
 }

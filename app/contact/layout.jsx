@@ -2,10 +2,6 @@ export const metadata = {
   title: "Contact Us",
   description: "Contact us here! Let us know any additional information we may need to know before your detail. Feel free to reach out with any questions!",
   alternates: { canonical: "https://www.dirtlessdetailing.com/contact" },
-  robots: {
-    index: true,
-    follow: true
-  },
   openGraph: {
     title: "Contact Dirt-Less Detailing - Get a Free Quote Today",
     description: "Contact us here! Let us know any additional information we may need to know before your detail. Feel free to reach out with any questions!",
@@ -13,16 +9,14 @@ export const metadata = {
     images: [
       {
         url: "/assets/images/showcase/homepage-main.webp",
-        width: 1200,
-        height: 630,
-        alt: "Our shop is located in Buckley, Wa"
+        alt: "The Dirt-Less Detailing team in front of a classic Chevy truck"
       }
     ],
     type: "website"
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Us | Dirt-Less Detailing",
+    title: "Contact Dirt-Less Detailing - Get a Free Quote Today",
     description: "Reach out for any questions or to book your detail today!",
     images: ["/assets/images/showcase/homepage-main.webp"]
   }

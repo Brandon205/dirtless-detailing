@@ -8,8 +8,6 @@ export const metadata = {
     images: [
       {
         url: "/assets/images/showcase/worktruckGriots.jpg",
-        width: 1200,
-        height: 630,
         alt: "Our work truck in front of the Griots Garage Store in Tacoma, WA"
       }
     ]

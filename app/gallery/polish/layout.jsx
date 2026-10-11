@@ -1,6 +1,6 @@
 export const metadata = {
   title: "Paint Correction Gallery",
-  description: "Paint Correction Photos • Here are some examples from both our Single and Two Stage Paint Correction services!",
+  description: "Paint correction photos from our single-stage Polish & Coat and two-stage Correct & Coat services, including before and afters.",
   alternates: { canonical: "https://www.dirtlessdetailing.com/gallery/polish" },
   openGraph: {
     type: "website",
@@ -8,8 +8,6 @@ export const metadata = {
     images: [
       {
         url: "/assets/images/polish/36 plymouth.jpg",
-        width: 1200,
-        height: 630,
         alt: "A beautiful red 1936 Plymouth after our Polish & Coat Service."
       }
     ]

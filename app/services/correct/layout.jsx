@@ -8,8 +8,6 @@ export const metadata = {
     images: [
       {
         url: "/assets/images/correction/genesis2.jpeg",
-        width: 1200,
-        height: 630,
         alt: "A beautiful Genesis after our Correct & Coat service"
       }
     ]

@@ -9,8 +9,6 @@ export const metadata = {
     images: [
       {
         url: "/assets/images/correction/teslaclean.jpg",
-        width: 1200,
-        height: 630,
         alt: "A clean Tesla Model 3 after our Polish & Coat service"
       }
     ]

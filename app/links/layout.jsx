@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Links to everything you need",
-  description: "All the links to our socials media pages, products we've showcased, our ceramic maintenance page, and more.",
+  title: "Links",
+  description: "All the links to our social media pages, products we've showcased, our ceramic maintenance page, and more.",
   alternates: { canonical: "https://www.dirtlessdetailing.com/links" },
   openGraph: {
     type: "website",
@@ -8,8 +8,6 @@ export const metadata = {
     images: [
       {
         url: "/assets/images/interior/driverTesla.jpg",
-        width: 1200,
-        height: 630,
         alt: "A Tesla Model 3 driver side interior"
       }
     ]

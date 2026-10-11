@@ -8,8 +8,6 @@ export const metadata = {
     images: [
       {
         url: "/assets/images/correction/ceramicBeads1.jpg",
-        width: 1200,
-        height: 630,
         alt: "Beads of water on a ceramic coated car"
       }
     ]

@@ -1,16 +1,13 @@
-import Script from "next/script";
-
 export default function HomePageSchema() {
   return (
-    <Script
-      id="json-ld-homepage"
+    <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LocalBusiness", // or more specific: HomeAndConstructionBusiness, ProfessionalService, etc.
           "name": "Dirt-Less Detailing",
-          "image": "/assets/icons/logoCircle.png",
+          "image": "https://www.dirtlessdetailing.com/assets/icons/logoCircle.png",
           "@id": "https://www.dirtlessdetailing.com",
           "url": "https://www.dirtlessdetailing.com",
           "telephone": "+1-253-252-9758",

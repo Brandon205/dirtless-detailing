@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Interior Restoration",
   description:
-    "Our Interior Restoration service is a service designed for vehicles that have been neglected beyond what our Full Interior Detail can handle. If your interior has heavy odors, mold, or is extremely dirty, and you need it back to acceptable, this is the service for you.",
+    "For neglected interiors beyond a standard detail. We tackle heavy odors, mold, pet hair, and extreme grime to bring your vehicle back to clean.",
   alternates: { canonical: "https://www.dirtlessdetailing.com/services/interior-restoration" },
   openGraph: {
     type: "website",
@@ -9,8 +9,6 @@ export const metadata = {
     images: [
       {
         url: "/assets/images/before&afters/badInteriorBA.png",
-        width: 1200,
-        height: 630,
         alt: "Before and after of a vehicle's interior restoration"
       }
     ]
