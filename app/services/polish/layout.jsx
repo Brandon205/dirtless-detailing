@@ -1,17 +1,12 @@
 export const metadata = {
   title: "Paint Polish & Ceramic Coating in Buckley & Bonney Lake",
   description:
-    "Experience a showroom shine and unparalleled protection with our Polish & Coat, ensuring your car gleams like new while safeguarding its finish.",
+    "Single-stage paint enhancement polishing and 3-year ceramic coating in Pierce County. Removes light swirls, restores paint depth, and delivers durable protection.",
   alternates: { canonical: "https://www.dirtlessdetailing.com/services/polish" },
   openGraph: {
     type: "website",
     url: "https://www.dirtlessdetailing.com/services/polish",
-    images: [
-      {
-        url: "/assets/images/correction/teslaclean.jpg",
-        alt: "A clean Tesla Model 3 after our Polish & Coat service"
-      }
-    ]
+    images: [{ url: "/assets/images/correction/teslaclean.jpg", alt: "Tesla Model 3 after our Polish & Coat service" }]
   }
 };
 

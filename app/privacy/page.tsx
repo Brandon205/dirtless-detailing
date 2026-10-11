@@ -4,6 +4,7 @@ import { CallLink } from "../components/CallTracking";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description: "Our privacy policy and how we protect your personal information.",
+  alternates: { canonical: "https://www.dirtlessdetailing.com/privacy" },
   robots: {
     index: false,
     follow: false

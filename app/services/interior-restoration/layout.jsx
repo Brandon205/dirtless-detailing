@@ -1,17 +1,12 @@
 export const metadata = {
   title: "Interior Restoration in Buckley & Bonney Lake",
   description:
-    "For neglected interiors beyond a standard detail. We tackle heavy odors, mold, pet hair, and extreme grime to bring your vehicle back to clean.",
+    "Heavy-duty vehicle interior restoration in Buckley & Bonney Lake. Specialized cleaning for mold removal, smoke odor elimination, severe stains, and biohazards.",
   alternates: { canonical: "https://www.dirtlessdetailing.com/services/interior-restoration" },
   openGraph: {
     type: "website",
     url: "https://www.dirtlessdetailing.com/services/interior-restoration",
-    images: [
-      {
-        url: "/assets/images/before&afters/badInteriorBA.png",
-        alt: "Before and after of a vehicle's interior restoration"
-      }
-    ]
+    images: [{ url: "/assets/images/before&afters/badInteriorBA.png", alt: "Before and after of a vehicle interior restoration" }]
   }
 };
 

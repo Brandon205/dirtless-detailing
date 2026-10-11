@@ -42,7 +42,7 @@ export default function ProductsPage() {
       {/* Hero section */}
       <div className="relative h-96 bg-zinc-800 overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center">
-          <Image src="/assets/images/showcase/worktruckSunrise.jpg" alt="Auto detailing products" fill style={{ objectFit: "cover" }} className="opacity-40" />
+          <Image src="/assets/images/showcase/worktruckSunrise.jpg" alt="Auto detailing products" fill sizes="100vw" style={{ objectFit: "cover" }} className="opacity-40" />
         </div>
         <div className="relative flex flex-col items-center justify-center h-full px-4 text-center">
           <span className="mb-3 rounded-full border border-amber-400/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-amber-300">Work in progress</span>

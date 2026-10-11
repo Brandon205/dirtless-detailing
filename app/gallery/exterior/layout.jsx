@@ -1,16 +1,12 @@
 export const metadata = {
   title: "Exterior Decon Wash Gallery",
-  description: "Before and after photos from our Exterior Decon Wash: deep-cleaned paint, wheels, door jambs, and engine bays on cars and trucks we've detailed.",
+  description:
+    "View before-and-after photos and finished results from our Exterior Decon Wash details across Buckley, Bonney Lake, and Pierce County.",
   alternates: { canonical: "https://www.dirtlessdetailing.com/gallery/exterior" },
   openGraph: {
     type: "website",
     url: "https://www.dirtlessdetailing.com/gallery/exterior",
-    images: [
-      {
-        url: "/assets/images/exterior/sideofsilverram.jpg",
-        alt: "A silver dodge ram truck parked on a driveway, showing off the shine from a wash and wax."
-      }
-    ]
+    images: [{ url: "/assets/images/exterior/sideofsilverram.jpg", alt: "Silver Dodge Ram showing clean finish after Exterior Decon Wash" }]
   }
 };
 

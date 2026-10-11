@@ -1,17 +1,12 @@
 export const metadata = {
   title: "Wash & Ceramic Coating in Buckley & Bonney Lake",
   description:
-    "Ceramic coating protection without the cost of paint correction: a full decon wash and paint prep, then a 1-year ceramic coating for deep gloss.",
+    "Professional decontamination wash and 1-year ceramic coating without the expense of paint correction. Long-lasting shine and protection in Pierce County, WA.",
   alternates: { canonical: "https://www.dirtlessdetailing.com/services/wash-coat" },
   openGraph: {
     type: "website",
     url: "https://www.dirtlessdetailing.com/services/wash-coat",
-    images: [
-      {
-        url: "/assets/images/exterior/crTesla.jpg",
-        alt: "Shiny black Tesla after a decontamination wash and ceramic coating application"
-      }
-    ]
+    images: [{ url: "/assets/images/exterior/crTesla.jpg", alt: "Black Tesla after decontamination wash and ceramic coating" }]
   }
 };
 

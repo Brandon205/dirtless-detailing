@@ -66,6 +66,7 @@ export default function CoatingGallery() {
           alt="Front Right view of Ceramic Coated Infinity Genesis in the sun"
           fill
           priority
+          sizes="100vw"
           className="object-cover"
           quality={75}
         />

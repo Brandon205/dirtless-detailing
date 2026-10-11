@@ -1,17 +1,12 @@
 export const metadata = {
-  title: "Full Interior Gallery",
+  title: "Full Interior Detailing Gallery",
   description:
-    "Our Full Interior Gallery shows off some of our hard work cleaning vehicle interiors. We've cleaned everything from spilled drinks to crumbs everywhere!",
+    "Browse before-and-after photos of our deep interior detailing, stain extraction, pet hair removal, and leather conditioning results.",
   alternates: { canonical: "https://www.dirtlessdetailing.com/gallery/interior" },
   openGraph: {
     type: "website",
     url: "https://www.dirtlessdetailing.com/gallery/interior",
-    images: [
-      {
-        url: "/assets/images/interior/driverNewLexus.jpg",
-        alt: "The drivers side interior of a new Lexus."
-      }
-    ]
+    images: [{ url: "/assets/images/interior/driverNewLexus.jpg", alt: "Driver side interior of a Lexus detailed by Dirt-Less Detailing" }]
   }
 };
 

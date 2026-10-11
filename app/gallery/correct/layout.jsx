@@ -1,16 +1,12 @@
 export const metadata = {
-  title: "Ceramic Coating Gallery",
-  description: "A gallery of photos that we have taken showing off some of the vehicles that we have coated and protected!",
+  title: "Paint Correction & Ceramic Coating Gallery",
+  description:
+    "Explore results from our multi-stage paint correction and 3-year ceramic coating services. See real swirl removal, deep gloss, and hydrophobic water beading.",
   alternates: { canonical: "https://www.dirtlessdetailing.com/gallery/correct" },
   openGraph: {
     type: "website",
     url: "https://www.dirtlessdetailing.com/gallery/correct",
-    images: [
-      {
-        url: "/assets/images/correction/ceramicBeads1.jpg",
-        alt: "Beads of water on a ceramic coated car"
-      }
-    ]
+    images: [{ url: "/assets/images/correction/ceramicBeads1.jpg", alt: "Hydrophobic water beading on a ceramic coated car" }]
   }
 };
 

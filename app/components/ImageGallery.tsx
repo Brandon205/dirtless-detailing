@@ -29,12 +29,9 @@ const ImageGallery = ({ images, altLabel = "Gallery" }) => {
                 alt={altFor(image, index)}
                 fill
                 priority={index < 4}
-                quality={50}
+                quality={80}
                 className="object-cover hover:scale-105 transition-transform duration-300"
-                sizes="(max-width: 640px) 100vw, 
-                       (max-width: 768px) 50vw,
-                       (max-width: 1024px) 33vw,
-                       25vw"
+                sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 288px"
               />
             </div>
           </Card>
@@ -55,8 +52,9 @@ const ImageGallery = ({ images, altLabel = "Gallery" }) => {
                 src={selectedImage.src}
                 alt={selectedImage.alt || "Expanded gallery image"}
                 fill
+                quality={75}
                 className="object-contain"
-                sizes="90vw"
+                sizes="(max-width: 1152px) 90vw, 1152px"
                 onClick={(e) => e.stopPropagation()}
               />
             </div>

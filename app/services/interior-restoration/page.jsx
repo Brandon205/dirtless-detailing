@@ -46,8 +46,8 @@ export default function InteriorRestoration() {
                     src="/assets/images/before&afters/badInteriorBA.png"
                     alt="Before and after of a heavily neglected interior"
                     fill
-                    objectFit="cover"
-                    className="mb-4 rounded-lg"
+                    sizes="(max-width: 768px) 100vw, 450px"
+                    className="mb-4 rounded-lg object-cover"
                   />
                 </div>
                 <strong className="font-bold text-2xl text-primary">$350 - $650+</strong>
@@ -66,8 +66,8 @@ export default function InteriorRestoration() {
                     src="/assets/images/before&afters/bio1278.webp"
                     alt="Moldy rear van seat before and after"
                     fill
-                    objectFit="cover"
-                    className="mb-4 rounded-lg"
+                    sizes="(max-width: 768px) 100vw, 450px"
+                    className="mb-4 rounded-lg object-cover"
                   />
                 </div>
                 <strong className="font-bold text-2xl text-primary">$600-$1200+</strong>
@@ -86,8 +86,8 @@ export default function InteriorRestoration() {
                     src="/assets/images/interior/ferrariInt.jpg"
                     alt="Photo of the interior of an old Ferrari Interior"
                     fill
-                    objectFit="cover"
-                    className="mb-4 rounded-lg"
+                    sizes="(max-width: 768px) 100vw, 450px"
+                    className="mb-4 rounded-lg object-cover"
                   />
                 </div>
                 <strong className="font-bold text-2xl text-primary">QUOTE REQUIRED*</strong>
@@ -106,7 +106,7 @@ export default function InteriorRestoration() {
                   src="/assets/images/before&afters/badVanBA.jpg"
                   alt="Before and after of a heavily neglected interior"
                   fill
-                  objectFit="cover"
+                  sizes="(max-width: 1024px) 100vw, 600px"
                   className="mb-4 object-cover"
                 />
               </div>

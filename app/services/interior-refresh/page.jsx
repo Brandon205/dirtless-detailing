@@ -50,7 +50,7 @@ export default function InteriorRefresh() {
               <div className="flex flex-col w-full gap-4 lg:w-[90%] mx-auto border-2 border-zinc-500 rounded-lg p-6 lg:p-8">
                 <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center mb-0 lg:mb-4">
                   <div className="relative flex flex-grow justify-center rounded-2xl w-full h-[450px] lg:h-[550px] shadow-[0_0_20px_-5px_rgba(217,119,6,0.5)]">
-                    <Image src="/assets/images/interior/driverModelX.jpg" alt="Interior Refresh" className="rounded-2xl" objectFit="cover" fill />
+                    <Image src="/assets/images/interior/driverModelX.jpg" alt="Interior Refresh" className="rounded-2xl object-cover" sizes="(max-width: 1024px) 100vw, 550px" fill />
                   </div>
 
                   <div className="flex flex-col w-full justify-between min-h-[475px] py-4">

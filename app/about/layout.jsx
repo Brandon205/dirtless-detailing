@@ -1,26 +1,12 @@
 export const metadata = {
   title: "About Us & FAQ",
-  description: "Learn more about us and why Dirt-Less Detailing was founded, and check out our FAQ to get answers to our most frequently asked questions.",
+  description:
+    "Learn about Dirt-Less Detailing, our story, and our passion for auto care. Read our FAQ for answers on mobile and shop detailing in Pierce County, WA.",
   alternates: { canonical: "https://www.dirtlessdetailing.com/about" },
   openGraph: {
-    title: "About Dirt-Less Detailing - Our Story & Small Team",
-    description:
-      "Learn more about us and why Dirt-Less Detailing was founded, and check out our FAQ to get answers to our most frequently asked questions.",
+    type: "website",
     url: "https://www.dirtlessdetailing.com/about",
-    images: [
-      {
-        url: "/assets/images/showcase/homepage-main.webp",
-        alt: "The Dirt-Less Detailing team in front of the truck that won at the Goodguys car show"
-      }
-    ],
-    type: "website"
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "About Dirt-Less Detailing - Our Story & Small Team",
-    description:
-      "Learn more about us and why Dirt-Less Detailing was founded, and check out our FAQ to get answers to our most frequently asked questions.",
-    images: ["/assets/images/showcase/homepage-main.webp"]
+    images: [{ url: "/assets/images/showcase/homepage-main.webp", alt: "The Dirt-Less Detailing team in front of the truck that won at the Goodguys car show" }]
   }
 };
 

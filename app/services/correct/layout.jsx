@@ -1,16 +1,12 @@
 export const metadata = {
   title: "Paint Correction & Ceramic Coating in Buckley & Bonney Lake",
-  description: "Elevate your vehicle's appearance and protection with our Correct & Coat service, leaving your car with a mirror-like shine and defense.",
+  description:
+    "Multi-stage paint correction and 3-year ceramic coating in Buckley & Bonney Lake, WA. Removes 70-95% of swirls and scratches for a flawless mirror finish.",
   alternates: { canonical: "https://www.dirtlessdetailing.com/services/correct" },
   openGraph: {
     type: "website",
     url: "https://www.dirtlessdetailing.com/services/correct",
-    images: [
-      {
-        url: "/assets/images/correction/genesis2.jpeg",
-        alt: "A beautiful Genesis after our Correct & Coat service"
-      }
-    ]
+    images: [{ url: "/assets/images/correction/genesis2.jpeg", alt: "Genesis after our Correct & Coat paint correction and ceramic coating" }]
   }
 };
 
