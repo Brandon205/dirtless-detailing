@@ -4,6 +4,7 @@ import { BookingButton } from "../components/BookingButton";
 import { Clock, MapPin, Smartphone, Mail, Gift, Snowflake } from "lucide-react";
 import IframeSuspense from "../../utils/IframeSuspense";
 import BaseSchema from "../jsonSchemas/BaseSchema";
+import { CallLink } from "../components/CallTracking";
 
 export default function Contact() {
   return (
@@ -69,9 +70,9 @@ export default function Contact() {
             <div className="flex-shrink-0 w-[28px] h-[28px]">
               <Smartphone size={28} />
             </div>
-            <a className="contact-link location-link underline" href="tel:2532529758" target="_blank" rel="noopener noreferrer">
+            <CallLink className="contact-link location-link underline" target="_blank" rel="noopener noreferrer">
               (253) 252-9758
-            </a>
+            </CallLink>
             <p>Text or Call</p>
           </div>
           <div className="flex items-center gap-4 bg-zinc-800 p-4">

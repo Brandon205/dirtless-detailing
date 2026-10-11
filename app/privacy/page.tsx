@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { CallLink } from "../components/CallTracking";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Dirt-Less Detailing",
@@ -270,9 +271,9 @@ export default function PrivacyPolicy() {
                 </p>
                 <p>
                   Phone:{" "}
-                  <a href="tel:253-252-9758" className="text-blue-300 hover:text-blue-200">
+                  <CallLink className="text-blue-300 hover:text-blue-200">
                     253-252-9758
-                  </a>
+                  </CallLink>
                 </p>
                 <p>Address: [your-business-address]</p>
               </div>

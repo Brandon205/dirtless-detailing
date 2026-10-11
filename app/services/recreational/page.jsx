@@ -148,7 +148,7 @@ export default function Recreational() {
                   href="sms:+12532529758"
                   className="text-white hover:underline text-xl font-semibold flex items-center gap-1 mt-2 bg-primary py-2 px-6 rounded-lg w-max"
                 >
-                  <span>Call/Text any questions: (252) 252-9758</span>
+                  <span>Call/Text any questions: (253) 252-9758</span>
                 </a>
                 <a
                   href="/contact"

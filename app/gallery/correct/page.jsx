@@ -5,6 +5,7 @@ import ImageGallery from "../../components/ImageGallery";
 import { PhoneCall, ClipboardCheck } from "lucide-react";
 import { topBtnVariant } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
+import { CallLink } from "../../components/CallTracking";
 import "react-medium-image-zoom/dist/styles.css";
 
 const baImages = [
@@ -133,10 +134,10 @@ export default function CoatingGallery() {
             <motion.a href="/contact" className="top-quote-btn" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
               <ClipboardCheck color="#ffffff" className="mr-2" size={36} /> Get a Free Quote
             </motion.a>
-            <motion.a href="tel:2532529758" className="top-quote-btn btn-secondary" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
+            <CallLink as={motion.a} className="top-quote-btn btn-secondary" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
               <PhoneCall color="#ffffff" className="mr-2" size={36} />
               (253) 252-9758
-            </motion.a>
+            </CallLink>
           </div>
         </div>
       </div>

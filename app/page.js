@@ -11,6 +11,7 @@ import { ClipboardCheck, PhoneCall, Snowflake, Laptop } from "lucide-react";
 import IframeSuspense from "../utils/IframeSuspense";
 import HomePageCard from "./components/HomePageCard";
 import HomePageSchema from "./jsonSchemas/HomePageSchema";
+import { CallLink } from "./components/CallTracking";
 
 export default function Home() {
   const [expanded, setExpanded] = useState(false);
@@ -124,8 +125,8 @@ export default function Home() {
                 />
                 Contact Us
               </motion.a>
-              <motion.a
-                href="tel:2532529758"
+              <CallLink
+                as={motion.a}
                 className="top-quote-btn btn-secondary w-full lg:w-auto"
                 variants={topBtnVariant}
                 whileHover="hover"
@@ -133,7 +134,7 @@ export default function Home() {
               >
                 <PhoneCall color="#ffffff" className="mr-2" size={smallScreen ? 24 : 36} />
                 (253) 252-9758
-              </motion.a>
+              </CallLink>
               <motion.a
                 href="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd"
                 target="_blank"

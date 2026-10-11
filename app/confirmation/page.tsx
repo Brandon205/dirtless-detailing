@@ -3,6 +3,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { topBtnVariant } from "../../utils/animationVariations";
 import { House, PhoneCall } from "lucide-react";
+import { CallLink } from "../components/CallTracking";
 
 export default function Confirmation() {
   return (
@@ -22,10 +23,10 @@ export default function Confirmation() {
           <motion.a href="/" className="top-quote-btn" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
             <House color="#ffffff" className="mr-2" size={36} /> Return Home
           </motion.a>
-          <motion.a href="tel:2532529758" className="top-quote-btn btn-secondary" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
+          <CallLink as={motion.a} className="top-quote-btn btn-secondary" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
             <PhoneCall color="#ffffff" className="mr-2" size={36} />
             (253) 252-9758
-          </motion.a>
+          </CallLink>
         </div>
       </div>
     </div>

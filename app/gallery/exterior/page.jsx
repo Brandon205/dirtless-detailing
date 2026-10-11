@@ -6,6 +6,7 @@ import { topBtnVariant } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
 import { PhoneCall, ClipboardCheck } from "lucide-react";
 import "react-medium-image-zoom/dist/styles.css";
+import { CallLink } from "../../components/CallTracking";
 
 const baImages = [
   { src: "/assets/images/before&afters/rearBA2.jpg" },
@@ -99,11 +100,11 @@ export default function PaintCorrectionGallery() {
               <ClipboardCheck color="#ffffff" className="mr-2" size={36} />
               BOOK NOW!
             </motion.a>
-            <motion.a href="tel:2532529758" className="top-quote-btn btn-secondary" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
+            <CallLink as={motion.a} className="top-quote-btn btn-secondary" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
               {/* <Image src="/assets/icons/phone-call-message.svg" alt="call or message" className="btn-icon text-white" width={36} height={36} /> */}
               <PhoneCall color="#ffffff" className="mr-2" size={36} />
               (253) 252-9758
-            </motion.a>
+            </CallLink>
           </div>
         </div>
       </div>

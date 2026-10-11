@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { topBtnVariant } from "../../utils/animationVariations";
 import { PhoneCall, ClipboardCheck } from "lucide-react";
 import Image from "next/image";
+import { CallLink } from "./CallTracking";
 
 export default function HeaderComponent({ imageUrl, title, description, secondaryUrl }) {
   return (
@@ -19,10 +20,10 @@ export default function HeaderComponent({ imageUrl, title, description, secondar
               <ClipboardCheck color="#ffffff" className="mr-2" size={36} />
               BOOK NOW!
             </motion.a>
-            <motion.a href="tel:2532529758" className="top-quote-btn btn-secondary" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
+            <CallLink as={motion.a} className="top-quote-btn btn-secondary" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
               <PhoneCall color="#ffffff" className="mr-2" size={36} />
               (253) 252-9758
-            </motion.a>
+            </CallLink>
           </div>
         </div>
         <div className="service-image">

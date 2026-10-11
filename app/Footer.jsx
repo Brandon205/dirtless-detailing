@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { PhoneCall, Mail, MapPin } from "lucide-react";
 import Link from "next/link";
+import { CallLink } from "./components/CallTracking";
 
 export default function Footer() {
   return (
@@ -96,9 +97,9 @@ export default function Footer() {
         <h3 className="font-medium">CONTACT</h3>
 
         <div className="flex flex-col gap-4 mt-4">
-          <a href="tel:2532529758" className="underline text-gray-400 flex gap-2 hover:underline hover:text-gray-300" rel="noopener noreferrer">
+          <CallLink className="underline text-gray-400 flex gap-2 hover:underline hover:text-gray-300" rel="noopener noreferrer">
             <PhoneCall color="white" /> (253) 252-9758
-          </a>
+          </CallLink>
           <a
             href="mailto:brenden@dirtlessdetailing.com?subject = Schedule a Detail with Dirt-Less Detailing"
             className="underline text-gray-400 flex gap-2 hover:underline hover:text-gray-300 break-all"
