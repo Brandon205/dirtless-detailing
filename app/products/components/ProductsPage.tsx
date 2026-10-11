@@ -45,7 +45,8 @@ export default function ProductsPage() {
           <Image src="/assets/images/showcase/worktruckSunrise.jpg" alt="Auto detailing products" fill style={{ objectFit: "cover" }} className="opacity-40" />
         </div>
         <div className="relative flex flex-col items-center justify-center h-full px-4 text-center">
-          <h1 className="text-4xl font-bold mb-2">[WIP] Professional Detailing Products</h1>
+          <span className="mb-3 rounded-full border border-amber-400/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-amber-300">Work in progress</span>
+          <h1 className="text-4xl font-bold mb-2">Professional Detailing Products</h1>
           <p className="text-lg text-gray-300 max-w-2xl">
             See some of the products and equipment we use, and what we recommend for you to keep your car as clean as the day you picked it up from us! This
             list is a Work In Progress, check back for more products, tips, and guides!

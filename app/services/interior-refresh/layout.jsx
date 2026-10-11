@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Interior Refresh Service",
+  title: "Interior Refresh Detail in Buckley & Bonney Lake",
   description:
     "A maintenance interior detail for cars that are already fairly clean or were detailed by us in the past year, restoring that like-new feel.",
   alternates: { canonical: "https://www.dirtlessdetailing.com/services/interior-refresh" },

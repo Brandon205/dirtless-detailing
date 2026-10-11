@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Wash & Coat",
+  title: "Wash & Ceramic Coating in Buckley & Bonney Lake",
   description:
-    "Ceramic coating protection without the cost of paint correction: a full decon wash and paint prep, then a 3-year ceramic coating for deep gloss.",
+    "Ceramic coating protection without the cost of paint correction: a full decon wash and paint prep, then a 1-year ceramic coating for deep gloss.",
   alternates: { canonical: "https://www.dirtlessdetailing.com/services/wash-coat" },
   openGraph: {
     type: "website",

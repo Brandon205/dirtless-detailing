@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Full Interior Detail",
+  title: "Full Interior Detailing in Buckley & Bonney Lake",
   description: "Our Full Interior cleaning is our most sought after service, and for good reason, it will completely renew your cars interior!",
   alternates: { canonical: "https://www.dirtlessdetailing.com/services/interior" },
   openGraph: {

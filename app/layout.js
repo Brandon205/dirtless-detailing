@@ -16,7 +16,7 @@ const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-montserrat
 export const metadata = {
   metadataBase: new URL("https://www.dirtlessdetailing.com"),
   title: {
-    default: "Dirt-Less Detailing | Official Site",
+    default: "Auto Detailing & Ceramic Coating in Buckley, WA | Dirt-Less Detailing",
     template: "%s | Dirt-Less Detailing"
   },
   description: "Bonney Lake and Pierce County's Auto Detailing & Ceramic Coating Specialists. Book with us today to make your car look like new!",

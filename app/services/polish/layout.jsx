@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Exterior Polish & Coat",
+  title: "Paint Polish & Ceramic Coating in Buckley & Bonney Lake",
   description:
     "Experience a showroom shine and unparalleled protection with our Polish & Coat, ensuring your car gleams like new while safeguarding its finish.",
   alternates: { canonical: "https://www.dirtlessdetailing.com/services/polish" },

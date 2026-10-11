@@ -237,7 +237,7 @@ export default function Home() {
             steps={[
               "Our Exterior Decon Wash + Clay Bar Treatment",
               "Use a primer polish to prep the vehicle",
-              "Apply a 3-Year Ceramic Coating everywhere on your car"
+              "Apply a 1-Year Ceramic Coating everywhere on your car"
             ]}
             hours="5-8"
             linkUrl="/services/wash-coat"

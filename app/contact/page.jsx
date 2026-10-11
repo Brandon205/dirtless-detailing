@@ -25,9 +25,10 @@ export default function Contact() {
         }}
       />
 
-      <h1 className="text-4xl font-bold pt-32 lg:pt-64 text-center font-heading">
+      <h1 className="text-4xl font-bold pt-32 lg:pt-64 text-center font-heading">Contact & Book Your Auto Detail</h1>
+      <p className="text-2xl font-bold text-center font-heading mt-2">
         <span className="text-primary">24/7</span> ONLINE PRICING & BOOKING
-      </h1>
+      </p>
       <p className="text-center mb-10">
         <span className="text-white bold leading-none">
           <span className="text-primary">Online Gift Cards</span> Available Now!
@@ -93,14 +94,14 @@ export default function Contact() {
             <div className="flex-shrink-0 w-[28px] h-[28px]">
               <Clock size={28} />
             </div>
-            <p>Monday - Sunday: 8 AM - 5 PM</p>
+            <p>Monday - Sunday: 8 AM - 7 PM</p>
           </div>
           <div className="flex items-center gap-4 bg-zinc-800 p-4">
             <div className="flex-shrink-0 w-[28px] h-[28px]">
               <MapPin size={28} />
             </div>
             <a href="https://maps.app.goo.gl/bhPDhjUN4jsSegu48" className="contact-link location-link underline" target="_blank" rel="noopener noreferrer">
-              Buckley Business Park, 28120 WA-410, Building C6
+              Buckley Business Park, 28120 WA-410, Unit C6
             </a>
           </div>
           <div className="flex items-center gap-4 bg-zinc-800 p-4">

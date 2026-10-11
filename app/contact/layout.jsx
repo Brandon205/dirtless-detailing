@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Contact Us",
+  title: "Contact Us & Book Online",
   description: "Contact us here! Let us know any additional information we may need to know before your detail. Feel free to reach out with any questions!",
   alternates: { canonical: "https://www.dirtlessdetailing.com/contact" },
   openGraph: {

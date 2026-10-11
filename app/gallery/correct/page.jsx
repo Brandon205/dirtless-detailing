@@ -1,12 +1,11 @@
 "use client";
-import React from "react";
-import Image from "next/image";
-import ImageGallery from "../../components/ImageGallery";
-import { PhoneCall, ClipboardCheck } from "lucide-react";
-import { topBtnVariant } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
-import { CallLink } from "../../components/CallTracking";
+import { ClipboardCheck, PhoneCall } from "lucide-react";
+import Image from "next/image";
 import "react-medium-image-zoom/dist/styles.css";
+import { topBtnVariant } from "../../../utils/animationVariations";
+import { CallLink } from "../../components/CallTracking";
+import ImageGallery from "../../components/ImageGallery";
 
 const baImages = [
   { src: "/assets/images/before&afters/carwashTruckBA.jpg" },
@@ -56,53 +55,6 @@ const images = [
   { src: "/assets/images/correction/waterbeading1.jpg" },
   { src: "/assets/images/correction/waterbeading2.jpg" },
   { src: "/assets/images/correction/wheelFaces.jpg" }
-  // { src: "/assets/images/correction/carwashTruckFull.png" },
-  // { src: "/assets/images/correction/carWashTruckOutside.jpg" },
-  // { src: "/assets/images/correction/ceramicBeads1.jpg" },
-  // { src: "/assets/images/correction/ceramicBeads2.jpg" },
-  // { src: "/assets/images/correction/ceramicBeads3.jpg" },
-  // { src: "/assets/images/correction/correction1280.jpg" },
-  // { src: "/assets/images/correction/correction1282.jpg" },
-  // { src: "/assets/images/correction/ferrariBadge.jpg" },
-  // { src: "/assets/images/correction/ferrariFL.jpg" },
-  // { src: "/assets/images/correction/ferrariPolishing.jpg" },
-  // { src: "/assets/images/correction/ferrariRear.jpg" },
-  // { src: "/assets/images/correction/genesis1.jpeg" },
-  // { src: "/assets/images/correction/genesis2.jpeg" },
-  // { src: "/assets/images/correction/genesis3.jpeg" },
-  // { src: "/assets/images/correction/genesis4.jpeg" },
-  // { src: "/assets/images/correction/genesisBeads.jpg" },
-  // { src: "/assets/images/correction/genesisclose.jpg" },
-  // { src: "/assets/images/correction/glassBeads.jpg" },
-  // { src: "/assets/images/correction/goodguystruck.jpg" },
-  // { src: "/assets/images/correction/goodguystruck2.jpg" },
-  // { src: "/assets/images/correction/goodguystruck3.jpg" },
-  // { src: "/assets/images/correction/modelXOutside.jpg" },
-  // { src: "/assets/images/correction/modelXOutside2.jpg" },
-  // { src: "/assets/images/correction/old-chevy.jpg" },
-  // { src: "/assets/images/correction/ponyDually.jpg" },
-  // { src: "/assets/images/correction/tantruck2.jpg" },
-  // { src: "/assets/images/correction/tantruck3.jpg" },
-  // { src: "/assets/images/correction/tantruck4.jpg" },
-  // { src: "/assets/images/correction/teslaclean.jpg" },
-  // { src: "/assets/images/correction/teslafinished.jpeg" },
-  // { src: "/assets/images/correction/teslafoam.jpg" },
-  // { src: "/assets/images/correction/teslahood.jpg" },
-  // { src: "/assets/images/correction/teslaparking.jpg" },
-  // { src: "/assets/images/correction/teslaparkinghood.jpg" },
-  // { src: "/assets/images/correction/teslapolishing.jpg" },
-  // { src: "/assets/images/correction/teslaRL.jpg" },
-  // { src: "/assets/images/correction/teslaRR.jpg" },
-  // { src: "/assets/images/correction/ceramicb528.jpg" },
-  // { src: "/assets/images/correction/waterbeading1.jpg" },
-  // { src: "/assets/images/correction/waterbeading2.jpg" },
-  // { src: "/assets/images/correction/wheelBeading.jpg" },
-  // { src: "/assets/images/correction/wheelFaces.jpg" },
-  // { src: "/assets/images/correction/wiping.jpg" },
-  // { src: "/assets/images/correction/wtbeads2.jpg" },
-  // { src: "/assets/images/correction/wtbeads4.jpg" },
-  // { src: "/assets/images/correction/wtbeads5.jpg" },
-  // { src: "/assets/images/correction/wtbeads6.jpg" }
 ];
 
 export default function CoatingGallery() {
@@ -142,10 +94,10 @@ export default function CoatingGallery() {
         </div>
       </div>
       <h2 className="text-4xl text-white text-center font-bold mt-16">Before & After Results</h2>
-      <ImageGallery images={baImages} />
+      <ImageGallery images={baImages} altLabel="Exterior Correct & Coat before and after" />
 
       <h3 className="text-4xl text-white font-bold text-center">Finished Results</h3>
-      <ImageGallery images={images} />
+      <ImageGallery images={images} altLabel="Exterior Correct & Coat finished results" />
 
       <div className="max-w-90% lg:max-w-[60%] mx-auto text-center">
         <strong className="text-white text-3xl lg:text-4xl">

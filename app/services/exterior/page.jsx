@@ -185,7 +185,7 @@ export default function Exterior() {
                   </h4>
                   <p className="step-desc">
                     If you opt for our Exterior Polish & Coat package you get all of these benefits plus: a full vehicle polish, specialized windshield and trim
-                    coatings, and a 1-year ceramic coating on all paint! See more info{" "}
+                    coatings, and a 3-year ceramic coating on all paint! See more info{" "}
                     <a href="/services/polish" className="text-blue-500">
                       here
                     </a>

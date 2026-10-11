@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Interior Restoration",
+  title: "Interior Restoration in Buckley & Bonney Lake",
   description:
     "For neglected interiors beyond a standard detail. We tackle heavy odors, mold, pet hair, and extreme grime to bring your vehicle back to clean.",
   alternates: { canonical: "https://www.dirtlessdetailing.com/services/interior-restoration" },

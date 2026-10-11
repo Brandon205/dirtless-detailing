@@ -3,8 +3,10 @@ import Image from "next/image";
 import { Card } from "./Card";
 import { X } from "lucide-react";
 
-const ImageGallery = ({ images }) => {
+const ImageGallery = ({ images, altLabel = "Gallery" }) => {
   const [selectedImage, setSelectedImage] = useState(null);
+
+  const altFor = (image, index) => image.alt || `${altLabel}, photo ${index + 1}`;
 
   const openModal = (image) => {
     setSelectedImage(image);
@@ -20,11 +22,11 @@ const ImageGallery = ({ images }) => {
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 py-16 lg:max-w-6xl mx-auto">
         {images.map((image, index) => (
-          <Card key={index} className="overflow-hidden cursor-pointer border-px border-white" onClick={() => openModal(image)}>
+          <Card key={index} className="overflow-hidden cursor-pointer border-px border-white" onClick={() => openModal({ ...image, alt: altFor(image, index) })}>
             <div className="relative w-full pt-[100%]">
               <Image
                 src={image.src}
-                alt={image.alt || `Gallery ${index + 1}`}
+                alt={altFor(image, index)}
                 fill
                 priority={index < 4}
                 quality={50}

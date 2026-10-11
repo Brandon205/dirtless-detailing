@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Boat, RV & Trailer Detailing",
+  title: "Boat, RV & Trailer Detailing in Buckley & Bonney Lake",
   description: "At Dirt-Less Detailing we aren't limited to just cars and trucks! Book your boat, RV, trailer, or ORV for a detail today!",
   alternates: { canonical: "https://www.dirtlessdetailing.com/services/recreational" },
   openGraph: {

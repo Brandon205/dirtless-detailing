@@ -59,7 +59,7 @@ export default function Exterior() {
               washing.
             </li>
           </ul>
-          <ImageGallery images={[{ src: "/assets/images/showcase/iglcircle.jpg" }]} />
+          <ImageGallery images={[{ src: "/assets/images/showcase/iglcircle.jpg", alt: "Benefits of IGL high solids ceramic coatings" }]} />
         </div>
       )
     },
@@ -84,7 +84,7 @@ export default function Exterior() {
       description: (
         <p className="faq-description">
           Unlike waxes true ceramic coatings don't just wash off, however, over time your coating can get clogged with contaminants and gloss, slickness, and
-          water beading can degrade (for this coating it should stay in good quality for up to 3 years). We recommend getting at least our{" "}
+          water beading can degrade (for this coating it should stay in good quality for up to 1 year). We recommend getting at least our{" "}
           <a href="/services/exterior" className="text-blue-500">
             Exterior Decon Wash
           </a>{" "}
@@ -120,7 +120,7 @@ export default function Exterior() {
             "@type": "Service",
             "name": "Wash & Coat",
             "description":
-              "Our full Decon Wash plus a ceramic coating that provides 3 years of protection for your paint. The best way to keep your car looking great with regular maintenance washes.",
+              "Our full Decon Wash plus a ceramic coating that provides 1 year of protection for your paint. The best way to keep your car looking great with regular maintenance washes.",
             "areaServed": "Buckley, Bonney Lake, and surrounding areas.",
             "serviceType": "Car Wash & Ceramic Coating"
           }
@@ -129,7 +129,7 @@ export default function Exterior() {
       <HeaderComponent
         imageUrl="/assets/images/exterior/newLexusSuv.jpg"
         title="Wash & Coat"
-        description="Our full Decon Wash plus a ceramic coating that provides 3 years of protection for your paint. The best way to keep your car looking great with regular maintenance washes."
+        description="Our full Decon Wash plus a ceramic coating that provides 1 year of protection for your paint. The best way to keep your car looking great with regular maintenance washes."
         secondaryUrl="/assets/images/exterior/porscheMacan2.jpg"
       />
 
@@ -174,7 +174,7 @@ export default function Exterior() {
                     <div className="flex items-center mb-4">
                       <RiResetLeftLine color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
                       <p className="leading-relaxed text-left text-md">
-                        Once everything is decontaminated, we perform a dedicated paint prep to ensure our 3-year ceramic coating can bond properly. This
+                        Once everything is decontaminated, we perform a dedicated paint prep to ensure our 1-year ceramic coating can bond properly. This
                         creates a durable defense that no wax can match. Now your paint will be incredibly slick, meaning road grime struggles to stick and your
                         maintenance washes become almost effortless.
                       </p>
@@ -264,8 +264,8 @@ export default function Exterior() {
                   <h3 className="step-number">7</h3>
                 </div>
                 <div className="step-container">
-                  <h4 className="step-title">Apply 3-Year Ceramic Coating</h4>
-                  <p className="step-desc">Apply our 3-Year Ceramic Coating for long-lasting protection and shine.</p>
+                  <h4 className="step-title">Apply 1-Year Ceramic Coating</h4>
+                  <p className="step-desc">Apply our 1-Year Ceramic Coating for lasting protection and shine.</p>
                 </div>
               </motion.li>
               <motion.li className="item item-disabled" variants={evenVariant}>
@@ -282,15 +282,15 @@ export default function Exterior() {
                     </a>
                   </h4>
                   <p className="step-desc">
-                    Check out our Polish & Coat{" "}
+                    Check out our{" "}
                     <a href="/services/polish" className="text-blue-500">
                       Polish & Coat
                     </a>{" "}
-                    service for a polish before the coating, or our{" "}
+                    service for a polish, or our{" "}
                     <a href="/services/correct" className="text-blue-500">
                       Correct & Coat
                     </a>{" "}
-                    service for a full paint correction before a 3-year ceramic coating .
+                    service for a full paint correction. Both include our longer-lasting 3-year ceramic coating.
                   </p>
                 </div>
               </motion.li>

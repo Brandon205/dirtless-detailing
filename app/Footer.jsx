@@ -114,7 +114,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <MapPin color="white" /> Buckley Business Park, 28120 WA-410, Building C6
+            <MapPin color="white" /> Buckley Business Park, 28120 WA-410, Unit C6
           </a>
         </div>
 

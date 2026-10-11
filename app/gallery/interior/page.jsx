@@ -114,10 +114,10 @@ export default function FullIntGallery() {
         </div>
       </div>
       <h2 className="text-4xl text-white text-center font-bold mt-16">Before & After Results</h2>
-      <ImageGallery images={baImages} />
+      <ImageGallery images={baImages} altLabel="Full Interior Detail before and after" />
 
       <h3 className="text-4xl text-white font-bold text-center">Finished Results</h3>
-      <ImageGallery images={images} />
+      <ImageGallery images={images} altLabel="Full Interior Detail finished results" />
 
       <div className="max-w-90% lg:max-w-[60%] mx-auto text-center">
         <strong className="text-white text-3xl lg:text-4xl">

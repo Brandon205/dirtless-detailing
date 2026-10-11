@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Exterior Decon Wash",
+  title: "Exterior Decon Wash in Buckley & Bonney Lake",
   description:
     "Get a car wash like never before with our Exterior Decontamination Wash. Where we go in depth to get all corners and remove any paint contaminants.",
   alternates: { canonical: "https://www.dirtlessdetailing.com/services/exterior" },

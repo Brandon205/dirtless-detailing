@@ -36,7 +36,7 @@ const faqItems = [
             washing.
           </li>
         </ul>
-        <ImageGallery images={[{ src: "/assets/images/showcase/iglcircle.jpg" }]} />
+        <ImageGallery images={[{ src: "/assets/images/showcase/iglcircle.jpg", alt: "Benefits of IGL high solids ceramic coatings" }]} />
       </div>
     )
   },
@@ -122,7 +122,7 @@ export default function ExteriorCorrect() {
       <HeaderComponent
         imageUrl="/assets/images/correction/genesis3.jpeg"
         title="Exterior Correct & Coat"
-        description="The Ultimate Exterior Detail & Protection for your vehicle. Our most extensive exterior package with extra in-depth Paint Correction and a Lifetime Ceramic Coating."
+        description="The Ultimate Exterior Detail & Protection for your vehicle. Our most extensive exterior package with extra in-depth Paint Correction and a 3-Year Ceramic Coating."
         secondaryUrl="/assets/images/before&afters/scratchesBA.png"
       />
 

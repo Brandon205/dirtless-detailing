@@ -190,12 +190,12 @@ export default function Recreational() {
           <div>
             <ImageGallery
               images={[
-                { src: "/assets/images/recreational/nautiqueInt.jpg", alt: "" },
-                { src: "/assets/images/recreational/rvRoofDuring.jpg", alt: "" },
-                { src: "/assets/images/recreational/RVPolishBA.jpg", alt: "" },
-                { src: "/assets/images/recreational/jetskis.jpeg", alt: "" },
-                { src: "/assets/images/recreational/RBoat.jpg", alt: "" },
-                { src: "/assets/images/recreational/rvInt.png", alt: "" }
+                { src: "/assets/images/recreational/nautiqueInt.jpg", alt: "Clean Nautique boat interior and deck after detailing" },
+                { src: "/assets/images/recreational/rvRoofDuring.jpg", alt: "RV roof partway through cleaning, showing removed dirt" },
+                { src: "/assets/images/recreational/RVPolishBA.jpg", alt: "Before and after of an RV exterior polish" },
+                { src: "/assets/images/recreational/jetskis.jpeg", alt: "Two jet skis on a trailer in the Dirt-Less Detailing shop" },
+                { src: "/assets/images/recreational/RBoat.jpg", alt: "Detailed pontoon boat docked on the lake" },
+                { src: "/assets/images/recreational/rvInt.png", alt: "Cleaned RV interior living area" }
               ]}
             />
           </div>

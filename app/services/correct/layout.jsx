@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Exterior Correct & Coat",
+  title: "Paint Correction & Ceramic Coating in Buckley & Bonney Lake",
   description: "Elevate your vehicle's appearance and protection with our Correct & Coat service, leaving your car with a mirror-like shine and defense.",
   alternates: { canonical: "https://www.dirtlessdetailing.com/services/correct" },
   openGraph: {

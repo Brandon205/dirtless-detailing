@@ -59,7 +59,7 @@ export default function ExteriorPolish() {
               washing.
             </li>
           </ul>
-          <ImageGallery images={[{ src: "/assets/images/showcase/iglcircle.jpg" }]} />
+          <ImageGallery images={[{ src: "/assets/images/showcase/iglcircle.jpg", alt: "Benefits of IGL high solids ceramic coatings" }]} />
         </div>
       )
     },
@@ -299,7 +299,7 @@ export default function ExteriorPolish() {
                   </h4>
                   <p className="step-desc">
                     If you opt for our Exterior Correct & Coat package you get all of these services, a 2-stage paint correction (removes more & deeper
-                    scratches), and a 3 year Ceramic Coating, leaving you with up to 2 extra years of protection! See more info{" "}
+                    scratches), for an even deeper gloss and a flawless, mirror-like finish! See more info{" "}
                     <a href="/services/correct" className="text-blue-500">
                       here
                     </a>
@@ -362,7 +362,7 @@ export default function ExteriorPolish() {
 
             <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
             <h3 className="pricing__heading">Clean, Shiny, and Protected.</h3>
-            <p className="pricing__subtext">With light scratches removed and a year of protection applied your car will shine like never before!</p>
+            <p className="pricing__subtext">With light scratches removed and 3 years of protection applied your car will shine like never before!</p>
             <div>
               <ImageGallery
                 images={[

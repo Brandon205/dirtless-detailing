@@ -62,61 +62,7 @@ export default function BaseSchema({
         "name": "Insurance",
         "value": "Fully Insured"
       }
-    ],
-    "review": [
-      {
-        "@type": "Review",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5",
-          "bestRating": "5"
-        },
-        "author": {
-          "@type": "Person",
-          "name": "Gentry Stretz."
-        },
-        "datePublished": "2025-02-07",
-        "reviewBody":
-          "Scratched the heck out of my GMC truck taking it down jeep trails this past hunting season over in Entiat. I contacted Brenden to see what he thought he'd be able to do. He was confident he could remove most all the scratches and make it look good again. He definitely did! It looks great. Very impressed with his knowledge, skill and customer service. I highly recommend Brenden and Dirt-Less Detailing."
-      },
-      {
-        "@type": "Review",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5",
-          "bestRating": "5"
-        },
-        "author": {
-          "@type": "Person",
-          "name": "Kyle R."
-        },
-        "datePublished": "2024-02-02",
-        "reviewBody":
-          "Could not be happier with the job Brenden and his team did with my truck. Had it looking like it just came off the showroom floor. Interior/exterior and engine bay looked phenomenal. I can tell he takes pride in what he does with the level of detail displayed. Great customer service and reasonably priced. Highly recommend!!"
-      },
-      {
-        "@type": "Review",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5",
-          "bestRating": "5"
-        },
-        "author": {
-          "@type": "Person",
-          "name": "Kayla H."
-        },
-        "datePublished": "2024-02-01",
-        "reviewBody":
-          "I had an amazing experience at Dirt-Less Detailing I had a pee stain on my car seat that I thought would never come out, but they worked wonders! They shampooed the seat and completely got rid of the smell. The service was incredibly professional, and the staff was friendly and helpful. They went above and beyond to make sure I was satisfied with the results. I would highly recommend them to anyone in need of car detailing services. I’ll definitely be back!"
-      }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "ratingCount": "41",
-      "bestRating": "5",
-      "worstRating": "1"
-    }
+    ]
   };
 
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />;
