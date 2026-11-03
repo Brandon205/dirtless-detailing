@@ -4,8 +4,8 @@ import { headers } from "next/headers";
 // below is never sent to the browser. The CRM checks it, re-prices everything, checks the slot
 // and the service area, and handles the deposit through Stripe.
 
-const CRM_API_URL = (process.env.CRM_API_URL || "https://app.dirtlessdetailing.com").replace(/\/$/, "");
-const CRM_API_KEY = process.env.CRM_API_KEY || "";
+const CRM_API_URL = (process.env.CRM_API_URL || "https://app.dirtlessdetailing.com").trim().replace(/\/$/, "");
+const CRM_API_KEY = (process.env.CRM_API_KEY || "").trim();
 
 /** `data` is set when ok; `error` (and maybe the `field` to fix) when not. */
 export type CrmResult<T> = { ok: boolean; data?: T; error?: string; field?: string };
@@ -30,7 +30,12 @@ export async function crmPost<T>(path: string, body: unknown): Promise<CrmResult
       cache: "no-store",
     });
     const json = await res.json().catch(() => ({}));
-    if (!res.ok) return { ok: false, error: json.error || "Something went wrong. Please call or text us.", field: json.field };
+    if (!res.ok) {
+      // Shows in Vercel's logs; 401 means CRM_API_KEY doesn't match the CRM's BOOKING_API_KEY.
+      console.error(`CRM ${path} answered ${res.status}:`, json.error);
+      if (res.status === 401) return { ok: false, error: "Online booking isn't connected right now. Please call or text us." };
+      return { ok: false, error: json.error || "Something went wrong. Please call or text us.", field: json.field };
+    }
     return { ok: true, data: json as T };
   } catch {
     return { ok: false, error: "We couldn't reach our booking system. Please try again, or call or text us." };
@@ -42,8 +47,10 @@ export async function crmCatalog(): Promise<Catalog | null> {
   if (!CRM_API_KEY) return null;
   try {
     const res = await fetch(`${CRM_API_URL}/api/public/catalog`, { headers: { "x-dirtless-key": CRM_API_KEY }, next: { revalidate: 300 } });
+    if (!res.ok) console.error(`CRM catalog answered ${res.status} (401 means CRM_API_KEY doesn't match the CRM's BOOKING_API_KEY)`);
     return res.ok ? ((await res.json()) as Catalog) : null;
-  } catch {
+  } catch (e) {
+    console.error("Couldn't reach the CRM at", CRM_API_URL, e);
     return null;
   }
 }
