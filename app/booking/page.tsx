@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default async function BookingPage({ searchParams }: { searchParams: Promise<{ canceled?: string }> }) {
   const [catalog, { canceled }] = await Promise.all([crmCatalog(), searchParams]);
   return (
-    <section className="mx-auto w-full max-w-3xl px-4 pt-32 pb-16 text-white lg:pt-44">
+    <div className="mx-auto w-full max-w-3xl px-4 pt-32 pb-16 text-white lg:pt-44">
       <h1 className="font-heading text-center text-4xl font-bold">Book Your Detail</h1>
       <p className="mt-2 mb-8 text-center text-lg text-gray-300">
         Pick your vehicle and services, choose an open time, and hold it with a small deposit. Questions first?{" "}
@@ -28,6 +28,6 @@ export default async function BookingPage({ searchParams }: { searchParams: Prom
           Online booking is down for a moment. Please <CallLink className="text-primary underline">call or text (253) 252-9758</CallLink> and we&apos;ll get you scheduled.
         </p>
       )}
-    </section>
+    </div>
   );
 }

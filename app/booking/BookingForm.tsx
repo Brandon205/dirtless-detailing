@@ -548,7 +548,7 @@ function Label({ children }: { children: React.ReactNode }) {
 }
 
 function Section({ children, dim }: { children: React.ReactNode; dim?: boolean }) {
-  return <section className={cn("flex w-full flex-col gap-4 rounded-xl bg-zinc-800 p-5 transition-opacity", dim && "opacity-60")}>{children}</section>;
+  return <div className={cn("flex w-full flex-col gap-4 rounded-xl bg-zinc-800 p-5 transition-opacity", dim && "opacity-60")}>{children}</div>;
 }
 
 function Choice({ selected, disabled, onClick, className, children }: { selected: boolean; disabled?: boolean; onClick: () => void; className?: string; children: React.ReactNode }) {
