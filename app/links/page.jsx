@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ShoppingCart, ShieldCheck, Tv, Globe } from "lucide-react";
+import { ShoppingCart, ShieldCheck, Tv, Globe, CalendarCheck, MessageCircleQuestion } from "lucide-react";
 import { YouTubeEmbed } from "@next/third-parties/google";
 import Link from "next/link";
 
@@ -68,13 +68,11 @@ export default function LinksPage() {
         <div className="w-full flex flex-col gap-4">
           <LinkButton href="/products" Icon={ShoppingCart} title="Shop Detailing Products" subtext="Our recommended supplies" variant="primary" />
 
-          <LinkButton
-            href="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd"
-            iconSrc="/assets/icons/urable.png"
-            title="Book Online through Urable"
-            subtext="All services, Addons, and Gift Cards"
-            variant="secondary"
-          />
+          <LinkButton href="/booking" Icon={CalendarCheck} title="Book Online" subtext="All services and add-ons, open times and prices" variant="secondary" />
+
+          <LinkButton href="/inquiry" Icon={MessageCircleQuestion} title="Ask a Question" subtext="Quotes, in-shop services, anything else" variant="secondary" />
+
+          <LinkButton href="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd" iconSrc="/assets/icons/urable.png" title="Buy a Gift Card" subtext="Online gift cards through Urable" variant="secondary" />
 
           <LinkButton
             href="/products?category=Ceramic"

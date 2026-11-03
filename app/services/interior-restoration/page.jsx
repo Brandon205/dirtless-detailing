@@ -119,7 +119,7 @@ export default function InteriorRestoration() {
                 </p>
                 <div className="flex justify-start gap-8 mt-4 flex-col lg:flex-row">
                   <a
-                    href="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd"
+                    href="/booking"
                     className="text-white hover:underline text-xl font-semibold flex items-center gap-1 mt-2 bg-primary py-2 px-6 rounded-lg w-max"
                   >
                     <span>Book Hourly Block Online ($150/hour)</span>

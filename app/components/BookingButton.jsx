@@ -3,9 +3,7 @@ import { motion } from "framer-motion";
 export function BookingButton({ title }) {
   return (
     <motion.a
-      href="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd"
-      target="_blank"
-      rel="noopener noreferrer"
+      href="/booking"
       initial={{ "--x": "100%", "scale": 1 }}
       animate={{ "--x": "-100%" }}
       whileTap={{ scale: 0.97 }}

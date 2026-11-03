@@ -136,9 +136,7 @@ export default function Home() {
                 (253) 252-9758
               </CallLink>
               <motion.a
-                href="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/booking"
                 className="top-quote-btn btn-secondary w-full lg:w-auto"
                 variants={topBtnVariant}
                 whileHover="hover"
@@ -404,15 +402,11 @@ export default function Home() {
 
           <BookingButton title="Book Online!" />
 
-          <p className="pt-8 text-2xl w-[95vw] lg:w-full">Or simply submit this form to get in contact with us!</p>
+          <p className="pt-8 text-2xl w-[95vw] lg:w-full">Have a question first? Send us a message!</p>
+          <a href="/inquiry" className="mt-4 inline-block rounded-lg border-2 border-primary px-6 py-3 text-xl font-semibold hover:bg-primary hover:text-zinc-950">
+            Ask a question
+          </a>
         </div>
-        <fieldset className="urable-form-container">
-          <IframeSuspense
-            src="https://app.urable.com/form/pMe0iWXWCBfTL47sDvjd/v5CoHzxM7y2da6KIOp2T"
-            title="Contact Form"
-            classes="w-4/5 mx-auto lg:max-w-50% h-[600px]"
-          />
-        </fieldset>
 
         <br className="extra-space" />
         <div className="w-[90%] text-center mx-auto my-0 pt-[5vh] lg:pl-0" style={{ margin: "5vh auto 2vh auto" }}>

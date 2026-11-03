@@ -2,7 +2,6 @@
 import React from "react";
 import { BookingButton } from "../components/BookingButton";
 import { Clock, MapPin, Smartphone, Mail, Gift, Snowflake } from "lucide-react";
-import IframeSuspense from "../../utils/IframeSuspense";
 import BaseSchema from "../jsonSchemas/BaseSchema";
 import { CallLink } from "../components/CallTracking";
 
@@ -34,7 +33,9 @@ export default function Contact() {
           <span className="text-primary">Online Gift Cards</span> Available Now!
         </span>
         <br />
-        <span className="text-sm text-gray-300 bold leading-none">Hit Book Online &gt; Gift Cards!</span>
+        <a href="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-300 bold leading-none underline">
+          Buy a gift card online
+        </a>
       </p>
       {/* <div className="flex gap-2 lg:gap-8 items-center justify-center py-4 flex-col lg:flex-row max-w-[90%] mx-auto lg:mx-0">
         <Image src="/assets/icons/valentinesGift.svg" alt="valentines gift box" width={48} height={48} />
@@ -120,13 +121,11 @@ export default function Contact() {
             In-Shop Services • Pricing Quotes • General Questions
           </p>
         </div>
-        <fieldset className="urable-form-container">
-          <IframeSuspense
-            src="https://app.urable.com/form/pMe0iWXWCBfTL47sDvjd/v5CoHzxM7y2da6KIOp2T"
-            title="Contact Form"
-            classes="w-4/5 mx-auto lg:max-w-50% h-[600px]"
-          />
-        </fieldset>
+        <div className="flex justify-center pt-6">
+          <a href="/inquiry" className="rounded-lg bg-primary px-8 py-4 text-xl font-bold text-zinc-950 hover:bg-accent-darker">
+            Send us a question
+          </a>
+        </div>
       </div>
     </section>
   );
