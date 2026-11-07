@@ -34,3 +34,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local redesign notes
+REDESIGN_PLAN.md
+docs/css-audit.md
