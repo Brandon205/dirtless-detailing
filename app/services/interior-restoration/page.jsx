@@ -122,13 +122,13 @@ export default function InteriorRestoration() {
                     href="/booking"
                     className="text-white hover:underline text-xl font-semibold flex items-center gap-1 mt-2 bg-primary py-2 px-6 rounded-lg w-max"
                   >
-                    <span>Book Hourly Block Online ($150/hour)</span>
+                    <span>Book Hourly Block Online ($125-$150/hour)</span>
                   </a>
                   <a
                     href="sms:+12532529758"
                     className="text-white border-primary border-2 hover:underline text-xl font-semibold flex items-center gap-1 mt-2 py-2 px-6 rounded-lg w-max"
                   >
-                    <span>Text Photos for an Estimate (252) 252-9758</span>
+                    <span>Text Photos for an Estimate (253) 252-9758</span>
                   </a>
                 </div>
               </div>
