@@ -6,11 +6,10 @@ import CookieBanner from "./components/CookieBanner";
 import PostHogPageView from "./PostHogPageView";
 import { Suspense } from "react";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
-import { Titillium_Web, Montserrat } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import { MetaPixel } from "./components/MetaPixel";
 import { CallTracking } from "./components/CallTracking";
 
-const titillium = Titillium_Web({ weight: ["400", "600", "700"], subsets: ["latin"], variable: "--font-titillium-web" });
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-montserrat" });
 
 export const metadata = {
@@ -52,7 +51,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${titillium.variable} ${montserrat.variable}`}>
+    <html lang="en" className={montserrat.variable}>
       <GoogleTagManager gtmId="GTM-5L5ZZN88" />
       <GoogleAnalytics gaId="AW-11020140573" />
       <PHProvider>

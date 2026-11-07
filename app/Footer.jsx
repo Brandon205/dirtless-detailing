@@ -15,11 +15,11 @@ export default function Footer() {
         <div>
           <p>2026 Dirt-Less Detailing.</p>
           <p>All rights reserved.</p>
-          <a target="_blank" rel="noopener noreferrer" href="https://www.brandonblack.dev" className="text-gray-400 underline">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.brandonblack.dev" className="text-zinc-400 underline">
             Website made by Brandon.
           </a>
           <br />
-          <a href="/privacy" className="text-gray-400 underline">
+          <a href="/privacy" className="text-zinc-400 underline">
             Privacy Policy
           </a>
         </div>
@@ -52,16 +52,16 @@ export default function Footer() {
       <div className="footer-content-card">
         <h3 className="font-medium">COMPANY</h3>
         <div className="flex flex-col gap-4 mt-4">
-          <Link href="/" className="no-underline text-gray-400 hover:underline hover:text-gray-200">
+          <Link href="/" className="no-underline text-zinc-400 hover:underline hover:text-zinc-200">
             Home
           </Link>
-          <Link href="/about" className="no-underline text-gray-400 hover:underline hover:text-gray-200">
+          <Link href="/about" className="no-underline text-zinc-400 hover:underline hover:text-zinc-200">
             About Us
           </Link>
-          <Link href="/products" className="no-underline text-gray-400 hover:underline hover:text-gray-200">
+          <Link href="/products" className="no-underline text-zinc-400 hover:underline hover:text-zinc-200">
             Product Recommendations
           </Link>
-          <Link href="/links" className="no-underline text-gray-400 hover:underline hover:text-gray-200">
+          <Link href="/links" className="no-underline text-zinc-400 hover:underline hover:text-zinc-200">
             Our Links
           </Link>
         </div>
@@ -69,26 +69,26 @@ export default function Footer() {
       <div className="footer-content-card" style={{ paddingBottom: "2rem" }}>
         <h3 className="font-medium">SERVICES</h3>
         <div className="flex flex-col gap-4 mt-4">
-          <Link href="/services/interior-refresh" className="no-underline text-gray-400 hover:underline hover:text-gray-300">
+          <Link href="/services/interior-refresh" className="no-underline text-zinc-400 hover:underline hover:text-zinc-300">
             Interior Refresh
           </Link>
-          <Link href="/services/interior" className="no-underline text-gray-400 hover:underline hover:text-gray-300">
+          <Link href="/services/interior" className="no-underline text-zinc-400 hover:underline hover:text-zinc-300">
             Full Interior Detail
           </Link>
-          <Link href="/services/interior-restoration" className="no-underline text-gray-400 hover:underline hover:text-gray-300">
+          <Link href="/services/interior-restoration" className="no-underline text-zinc-400 hover:underline hover:text-zinc-300">
             Interior Restoration
           </Link>
           <hr style={{ marginTop: "1.5rem" }} />
-          <Link href="/services/exterior" className="no-underline text-gray-400 hover:underline hover:text-gray-300">
+          <Link href="/services/exterior" className="no-underline text-zinc-400 hover:underline hover:text-zinc-300">
             Exterior Decon Wash
           </Link>
-          <Link href="/services/wash-coat" className="no-underline text-gray-400 hover:underline hover:text-gray-300">
+          <Link href="/services/wash-coat" className="no-underline text-zinc-400 hover:underline hover:text-zinc-300">
             Exterior Wash & Coat
           </Link>
-          <Link href="/services/polish" className="no-underline text-gray-400 hover:underline hover:text-gray-300">
+          <Link href="/services/polish" className="no-underline text-zinc-400 hover:underline hover:text-zinc-300">
             Exterior Polish & Coat
           </Link>
-          <Link href="/services/correct" className="no-underline text-gray-400 hover:underline hover:text-gray-300">
+          <Link href="/services/correct" className="no-underline text-zinc-400 hover:underline hover:text-zinc-300">
             Exterior Correct & Coat
           </Link>
         </div>
@@ -97,12 +97,12 @@ export default function Footer() {
         <h3 className="font-medium">CONTACT</h3>
 
         <div className="flex flex-col gap-4 mt-4">
-          <CallLink className="underline text-gray-400 flex gap-2 hover:underline hover:text-gray-300" rel="noopener noreferrer">
+          <CallLink className="underline text-zinc-400 flex gap-2 hover:underline hover:text-zinc-300" rel="noopener noreferrer">
             <PhoneCall color="white" /> (253) 252-9758
           </CallLink>
           <a
             href="mailto:brenden@dirtlessdetailing.com?subject = Schedule a Detail with Dirt-Less Detailing"
-            className="underline text-gray-400 flex gap-2 hover:underline hover:text-gray-300 break-all"
+            className="underline text-zinc-400 flex gap-2 hover:underline hover:text-zinc-300 break-all"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -110,7 +110,7 @@ export default function Footer() {
           </a>
           <a
             href="https://maps.app.goo.gl/bhPDhjUN4jsSegu48"
-            className="underline text-gray-400 flex gap-2 hover:underline hover:text-gray-300"
+            className="underline text-zinc-400 flex gap-2 hover:underline hover:text-zinc-300"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -21,8 +21,8 @@ export default function ConfirmationView({ booking }: { booking: BookingSummary 
               {booking.day} at {booking.time}
             </p>
             <p>{booking.locationType === "mobile" ? "At your address" : "At our shop: Buckley Business Park, 28120 WA-410, Unit C6"}</p>
-            <p className="text-gray-300">{booking.services.join(", ")}</p>
-            <p className="mt-2 text-gray-300">
+            <p className="text-zinc-300">{booking.services.join(", ")}</p>
+            <p className="mt-2 text-zinc-300">
               Booking #{booking.number}
               {booking.depositCents > 0 &&
                 (booking.depositPaid
@@ -35,7 +35,7 @@ export default function ConfirmationView({ booking }: { booking: BookingSummary 
           We will confirm your appointment soon! Expect a text from us the night before to confirm the date you selected still works! Feel free to give us a
           call or text if you have more questions.
         </p>
-        <p className="confirmation-message text-md">
+        <p className="confirmation-message">
           <span className="special-package">NOTE:</span> We have a 72 hour cancellation policy, get a full refund on your deposit if we're notified 3 days
           before your appointment.
         </p>

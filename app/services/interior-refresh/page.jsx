@@ -49,33 +49,33 @@ export default function InteriorRefresh() {
             <main className="w-full text-white my-0 mx-auto text-center p-4">
               <div className="flex flex-col w-full gap-4 lg:w-[90%] mx-auto border-2 border-zinc-500 rounded-lg p-6 lg:p-8">
                 <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center mb-0 lg:mb-4">
-                  <div className="relative flex flex-grow justify-center rounded-2xl w-full h-[450px] lg:h-[550px] shadow-[0_0_20px_-5px_rgba(217,119,6,0.5)]">
+                  <div className="relative flex flex-grow justify-center rounded-2xl w-full h-[450px] lg:h-[550px] shadow-lg">
                     <Image src="/assets/images/interior/driverModelX.jpg" alt="Interior Refresh" className="rounded-2xl object-cover" sizes="(max-width: 1024px) 100vw, 550px" fill />
                   </div>
 
                   <div className="flex flex-col w-full justify-between min-h-[475px] py-4">
                     <div className="flex flex-col items-start">
                       <h2 className="text-4xl font-bold">Our Interior Refresh Service</h2>
-                      <strong className="text-primary text-bold text-2xl">Maintenance-based Interior Detail</strong>
+                      <strong className="text-primary font-bold text-2xl">Maintenance-based Interior Detail</strong>
                     </div>
                     <div className="flex items-center my-4">
-                      <Sparkles color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
-                      <p className="leading-relaxed text-left text-md">
+                      <Sparkles size={48} className="text-accent mr-4 hidden lg:block flex-shrink-0" />
+                      <p className="leading-relaxed text-left">
                         Our Interior Refresh is designed for vehicles already in good condition that don't require intensive stain removal or heavy pet hair
                         extraction. It's the perfect maintenance choice if you've had your vehicle detailed within the last year to keep your cabin looking
                         sharp and protected without the extra cost of a deep clean.
                       </p>
                     </div>
                     <div className="flex items-center mb-4">
-                      <Flame color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
-                      <p className="leading-relaxed text-left text-md">
+                      <Flame size={48} className="text-accent mr-4 hidden lg:block flex-shrink-0" />
+                      <p className="leading-relaxed text-left">
                         We perform a thorough top-to-bottom cleaning of all surfaces, including seats, carpets, dashboards, and vents. While doing that we use
                         products made to clean and condition, saving us time and you money while still giving the benefits of protected and conditioned surfaces
                         (without a greasy finish).
                       </p>
                     </div>
                     <div className="w-full p-4 bg-zinc-800 rounded-lg border border-zinc-600">
-                      <ul className="lg:max-h-[120px] list-disc list-inside leading-relaxed text-left w-full flex flex-wrap justify-between text-md">
+                      <ul className="lg:max-h-[120px] list-disc list-inside leading-relaxed text-left w-full flex flex-wrap justify-between">
                         <li className="basis-1/2">Perfect for Maintenance</li>
                         <li className="basis-1/2">Time-Efficient</li>
                         <li className="basis-1/2">Cost-Effective</li>
@@ -88,7 +88,7 @@ export default function InteriorRefresh() {
                 <p className="text-center">
                   Need something more intensive? If your interior needs deep cleaning, stain extraction, or heavy pet hair removal, check out our Full Interior
                   Service{" "}
-                  <a href="/services/interior" className="text-blue-600 hover:text-blue-700 font-medium underline">
+                  <a href="/services/interior" className="text-accent-hover hover:text-accent font-medium underline">
                     here
                   </a>
                   !
@@ -166,7 +166,7 @@ export default function InteriorRefresh() {
               </motion.li>
               <motion.li className="item item-disabled" variants={evenVariant}>
                 <div className="step-number-container">
-                  <h3 className="step-number" style={{ border: "2px solid #aaa" }}>
+                  <h3 className="step-number" style={{ borderColor: "var(--color-muted)" }}>
                     8
                   </h3>
                 </div>
@@ -174,13 +174,13 @@ export default function InteriorRefresh() {
                   <h4 className="step-title flex line-through">
                     Need Something More In Depth?{" "}
                     <a href="/services/interior">
-                      <ExternalLink color="#3b82f6" size={24} className="mt-1 ml-1" />
+                      <ExternalLink size={24} className="text-accent-hover mt-1 ml-1" />
                     </a>
                   </h4>
                   <p className="step-desc">
                     If your interior needs deep stain extraction, pet hair removal, or carpet restoration, check out our Full Interior Service for more
                     comprehensive detailing. See more info{" "}
-                    <a href="/services/interior" className="text-blue-500">
+                    <a href="/services/interior" className="text-accent-hover">
                       here
                     </a>
                     .
@@ -191,9 +191,9 @@ export default function InteriorRefresh() {
 
             <br className="extra-space" />
 
-            <div className="mt-12 mb-6 p-6 lg:p-8 bg-gradient-to-r from-zinc-800 to-zinc-700 rounded-lg border border-accent border-opacity-30 text-center">
+            <div className="mt-12 mb-6 p-6 lg:p-8 bg-gradient-to-r from-zinc-800 to-zinc-700 rounded-lg border border-accent/30 text-center">
               <h3 className="text-2xl lg:text-3xl font-bold text-white mb-3">Ready to Refresh Your Interior?</h3>
-              <p className="text-gray-300 mb-6 text-lg">
+              <p className="text-zinc-300 mb-6 text-lg">
                 Have questions about our Interior Refresh service? Want to book an appointment? Get in touch with us today!
               </p>
               <a
@@ -224,7 +224,7 @@ export default function InteriorRefresh() {
             <div className="pb-8 text-center flex flex-col items-center text-white ">
               <h4 className="text-3xl text-left">
                 See more examples of our interior work{" "}
-                <a href="/gallery/interior" className="text-blue-500 inline-block">
+                <a href="/gallery/interior" className="text-accent-hover inline-block">
                   here <ExternalLink className="inline-block" />
                 </a>
               </h4>

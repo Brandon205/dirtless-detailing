@@ -93,11 +93,11 @@ export default function FullIntGallery() {
           </h1>
           <strong className="page-subheading" style={{ textAlign: "center" }}>
             We have cleaned it all, even the worst of interiors. Check out the Gallery below. Take a look at our{" "}
-            <a href="/services/interior" className="text-blue-500">
+            <a href="/services/interior" className="text-accent-hover">
               Full Interior
             </a>{" "}
             or{" "}
-            <a href="/services/interior-restoration" className="text-blue-500">
+            <a href="/services/interior-restoration" className="text-accent-hover">
               Interior Restoration
             </a>{" "}
             to find out more.
@@ -120,14 +120,14 @@ export default function FullIntGallery() {
       <h3 className="text-4xl text-white font-bold text-center">Finished Results</h3>
       <ImageGallery images={images} altLabel="Full Interior Detail finished results" />
 
-      <div className="max-w-90% lg:max-w-[60%] mx-auto text-center">
+      <div className="max-w-[90%] lg:max-w-[60%] mx-auto text-center">
         <strong className="text-white text-3xl lg:text-4xl">
           Check out our{" "}
-          <a href="/services/interior" className="text-blue-500">
+          <a href="/services/interior" className="text-accent-hover">
             Full Interior Cleaning
           </a>{" "}
           page or our{" "}
-          <a href="/services/interior-restoration" className="text-blue-500">
+          <a href="/services/interior-restoration" className="text-accent-hover">
             Interior Restoration{" "}
           </a>{" "}
           page for more details!

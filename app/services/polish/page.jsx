@@ -30,7 +30,7 @@ export default function ExteriorPolish() {
       description: (
         <div>
           We have a full Ceramic Coating Maintenance Guide available on our{" "}
-          <a href="/products?category=Ceramic" className="text-blue-500 hover:underline">
+          <a href="/products?category=Ceramic" className="text-accent-hover hover:underline">
             Products page
           </a>
           , which includes everything you need to know about maintaining your ceramic coating, including recommended products and techniques!
@@ -68,7 +68,7 @@ export default function ExteriorPolish() {
       description: (
         <div>
           We have a full Ceramic Coating Maintenance Guide available at the bottom of our{" "}
-          <a href="/products?category=Ceramic" className="text-blue-500 hover:underline">
+          <a href="/products?category=Ceramic" className="text-accent-hover hover:underline">
             Ceramic Products Page
           </a>
           , which includes everything you need to know about maintaining your ceramic coating, including recommended products and techniques!
@@ -85,7 +85,7 @@ export default function ExteriorPolish() {
         <p className="faq-description">
           Unlike waxes true ceramic coatings don't just wash off, however, over time your coating can get clogged with contaminants and gloss, slickness, and
           water beading can degrade (for this coating it should stay in good quality for up to 3 years). We recommend getting at least our{" "}
-          <a href="/services/exterior" className="text-blue-500">
+          <a href="/services/exterior" className="text-accent-hover">
             Exterior Decon Wash
           </a>{" "}
           service with the <strong>Ceramic Maintenance Addon</strong> done bi-annually or annually. This package fully decontaminates and refreshes your ceramic
@@ -100,7 +100,7 @@ export default function ExteriorPolish() {
           We never recommend going through a car wash as they can reduce the gloss slickness and beading of your coating prematurely. However in a pinch a
           touch-less car wash will suffice. Just make sure to use the cheapest setting, without any waxes. We also recommend to make sure that all the edges and
           corners are blown out and dried (We recommend{" "}
-          <a href="https://amzn.to/41db9SY" className="text-blue-500" target="_blank" rel="noopener noreferrer">
+          <a href="https://amzn.to/41db9SY" className="text-accent-hover" target="_blank" rel="noopener noreferrer">
             The Rag Company's Large Drying Towel
           </a>
           ).
@@ -162,18 +162,18 @@ export default function ExteriorPolish() {
                   <div className="flex flex-col w-full justify-between min-h-[475px] py-4">
                     <div className="flex flex-col items-start">
                       <h2 className="text-4xl font-bold">Our Exterior Polish & Coat Service</h2>
-                      <strong className="text-primary text-bold text-2xl">The Perfect Exterior Middle Ground</strong>
+                      <strong className="text-primary font-bold text-2xl">The Perfect Exterior Middle Ground</strong>
                     </div>
                     <div className="flex items-center my-4">
-                      <GiClayBrick color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
-                      <p className="leading-relaxed text-left text-md">
+                      <GiClayBrick size={48} className="text-accent mr-4 hidden lg:block flex-shrink-0" />
+                      <p className="leading-relaxed text-left">
                         This service is the perfect middle ground for vehicles that have developed light swirl marks and a dull appearance. After a thorough
                         decontamination and clay bar treatment, we perform a light machine polishing step to restore depth and clarity to your clear coat.
                       </p>
                     </div>
                     <div className="flex items-center mb-4">
-                      <FaCarOn color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
-                      <p className="leading-relaxed text-left text-md">
+                      <FaCarOn size={48} className="text-accent mr-4 hidden lg:block flex-shrink-0" />
+                      <p className="leading-relaxed text-left">
                         We top the restored surface with our 3-year ceramic coating that acts as a durable barrier against environmental damage and water spots.
                         We also give your windshield, exterior glass, and trim that same coating, protecting your entire vehicle. Your car will look better,
                         stay cleaner for longer, and be significantly easier to maintain until the next time you visit.
@@ -181,7 +181,7 @@ export default function ExteriorPolish() {
                     </div>
                     <div className="w-full p-4 bg-zinc-800 rounded-lg border border-zinc-600">
                       <p className="text-left">
-                        <span className="font-bold text-md">Ideal for:</span> Daily drivers with light swirl marks or paint that has lost its original depth and
+                        <span className="font-bold">Ideal for:</span> Daily drivers with light swirl marks or paint that has lost its original depth and
                         "glow."
                       </p>
                     </div>
@@ -189,7 +189,7 @@ export default function ExteriorPolish() {
                 </div>
                 <p className="text-center">
                   Now's the perfect time to book a interior cleaning as well. Check out our current offers and pricing on our full interior detail{" "}
-                  <a href="/services/interior" className="text-blue-600 hover:text-blue-700 font-medium underline">
+                  <a href="/services/interior" className="text-accent-hover hover:text-accent font-medium underline">
                     here
                   </a>
                   !
@@ -286,7 +286,7 @@ export default function ExteriorPolish() {
               </motion.li>
               <motion.li className="item item-disabled" variants={oddVariant}>
                 <div className="step-number-container">
-                  <h3 className="step-number" style={{ border: "2px solid #aaa" }}>
+                  <h3 className="step-number" style={{ borderColor: "var(--color-muted)" }}>
                     9
                   </h3>
                 </div>
@@ -294,13 +294,13 @@ export default function ExteriorPolish() {
                   <h4 className="step-title flex line-through">
                     All this and more!{" "}
                     <a href="/services/correct">
-                      <ExternalLink color="#3b82f6" size={24} className="mt-1 ml-1" />
+                      <ExternalLink size={24} className="text-accent-hover mt-1 ml-1" />
                     </a>
                   </h4>
                   <p className="step-desc">
                     If you opt for our Exterior Correct & Coat package you get all of these services, a 2-stage paint correction (removes more & deeper
                     scratches), for an even deeper gloss and a flawless, mirror-like finish! See more info{" "}
-                    <a href="/services/correct" className="text-blue-500">
+                    <a href="/services/correct" className="text-accent-hover">
                       here
                     </a>
                     .
@@ -309,12 +309,12 @@ export default function ExteriorPolish() {
               </motion.li>
             </motion.ol>
 
-            <div className="mt-12 mb-6 p-6 lg:p-8 bg-gradient-to-r from-zinc-800 to-zinc-700 rounded-lg border border-accent border-opacity-30 text-center">
+            <div className="mt-12 mb-6 p-6 lg:p-8 bg-gradient-to-r from-zinc-800 to-zinc-700 rounded-lg border border-accent/30 text-center">
               <h3 className="text-2xl lg:text-3xl font-bold text-white mb-3">Not sure if this is the service you need?</h3>
-              <p className="text-gray-300 mb-6 text-lg">
+              <p className="text-zinc-300 mb-6 text-lg">
                 Come by our shop in Buckley, or get in touch with us today, and for no cost at all we can answer your questions.
               </p>
-              <p className="text-gray-300 mb-6 text-lg">
+              <p className="text-zinc-300 mb-6 text-lg">
                 We'll take a look assess what you want and even show you test spots vs our other services on your car so you can see what each service entails
                 and the results.
               </p>
@@ -342,8 +342,8 @@ export default function ExteriorPolish() {
                 Answers to the questions we most commonly get about this service, please reach out if you have other questions!
               </p>
             </div>
-            <section className="flex flex-col items-center xl:flex-row w-11/12 justify-center gap-8 xl:w-2/3">
-              <div className="flex flex-col gap-6 w-full calc text-left text-white">
+            <section className="flex flex-col items-center xl:flex-row w-[95vw] mx-auto justify-center gap-8">
+              <div className="flex flex-col gap-6 w-full text-left text-white">
                 {faqItems.map((item, i) => (
                   <FaqItem
                     key={i}
@@ -381,7 +381,7 @@ export default function ExteriorPolish() {
             <div className="pb-8 text-center flex flex-col items-center text-white ">
               <h4 className="text-3xl text-left">
                 Check out our{" "}
-                <a href="/gallery/polish" className="text-blue-500 inline-block">
+                <a href="/gallery/polish" className="text-accent-hover inline-block">
                   Polish & Coat Gallery <ExternalLink className="inline-block" />
                 </a>{" "}
                 for more images.

@@ -14,7 +14,7 @@ export default async function BookingPage({ searchParams }: { searchParams: Prom
   return (
     <div className="mx-auto w-full max-w-3xl px-4 pt-32 pb-16 text-white lg:pt-44">
       <h1 className="font-heading text-center text-4xl font-bold">Book Your Detail</h1>
-      <p className="mt-2 mb-8 text-center text-lg text-gray-300">
+      <p className="mt-2 mb-8 text-center text-lg text-zinc-300">
         Pick your vehicle and services, choose an open time, and hold it with a small deposit. Questions first?{" "}
         <a href="/inquiry" className="text-primary underline">
           Ask us here

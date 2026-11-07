@@ -6,19 +6,8 @@ import Image from "next/image";
 export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
-  const [isScrolled, setIsScrolled] = useState(false);
   const servicesRef = useRef(null);
   const galleriesRef = useRef(null);
-
-  // Handle scroll effect
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   // Handle click outside to close dropdown
   useEffect(() => {
@@ -131,7 +120,7 @@ export default function Nav() {
 
   return (
     <header className="relative z-50">
-      <nav className={`w-full fixed transition-all duration-300 ${isScrolled || mobileMenuOpen ? "bg-zinc-800 shadow-xl" : "bg-zinc-900/90"}`}>
+      <nav className={`absolute flex w-full flex-row items-center justify-between pl-5 transition-all duration-300 ${mobileMenuOpen ? "bg-zinc-800 shadow-xl" : "bg-zinc-900/90"}`}>
         <div className="max-w-7xl mx-0 lg:mx-auto px-4 sm:px-6 lg:px-8 ml-auto">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
@@ -143,13 +132,13 @@ export default function Nav() {
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex lg:items-center lg:space-x-8">
-              <Link href="/" className="text-gray-100 hover:text-amber-300 px-3 py-2 font-bold transition-colors">
+              <Link href="/" className="text-zinc-100 hover:text-amber-300 px-3 py-2 font-bold transition-colors">
                 Home
               </Link>
 
               <div className="relative cursor-pointer" ref={servicesRef}>
                 <button
-                  className="group text-gray-100 hover:text-amber-300 px-3 py-2 font-bold inline-flex items-center transition-colors"
+                  className="group text-zinc-100 hover:text-amber-300 px-3 py-2 font-bold inline-flex items-center transition-colors"
                   onClick={() => toggleDropdown("services")}
                 >
                   All Services
@@ -171,7 +160,7 @@ export default function Nav() {
                   <div className="absolute left-0 mt-2 w-screen max-w-3xl bg-zinc-800 shadow-lg rounded-lg py-4 z-10 grid grid-cols-3 gap-4 transform transition-all duration-300 origin-top-left">
                     {dropdowns.services.map((section, index) => (
                       <div key={index} className="px-4">
-                        <h3 className="text-xs font-semibold text-gray-300 tracking-wider mb-3">{section.title}</h3>
+                        <h3 className="text-xs font-semibold text-zinc-300 tracking-wider mb-3">{section.title}</h3>
                         <ul className="space-y-4">
                           {section.items.map((item, idx) => (
                             <li key={idx} className="h-32">
@@ -213,7 +202,7 @@ export default function Nav() {
 
               <div className="relative p-0" ref={galleriesRef}>
                 <button
-                  className="group text-gray-100 hover:text-amber-300 px-3 py-2 font-bold inline-flex items-center transition-colors cursor-pointer"
+                  className="group text-zinc-100 hover:text-amber-300 px-3 py-2 font-bold inline-flex items-center transition-colors cursor-pointer"
                   onClick={() => toggleDropdown("gallery")}
                 >
                   Galleries
@@ -235,7 +224,7 @@ export default function Nav() {
                   <div className="absolute left-0 mt-2 w-96 bg-zinc-800 shadow-lg rounded-lg py-4 z-10 transform transition-all duration-300 origin-top-left">
                     {dropdowns.gallery.map((section, index) => (
                       <div key={index} className="px-4">
-                        <h3 className="text-xs font-semibold text-gray-300 tracking-wider mb-3">{section.title}</h3>
+                        <h3 className="text-xs font-semibold text-zinc-300 tracking-wider mb-3">{section.title}</h3>
                         <ul className="grid grid-cols-2 gap-4">
                           {section.items.map((item, idx) => (
                             <li key={idx} className="h-32">
@@ -275,13 +264,13 @@ export default function Nav() {
                 )}
               </div>
 
-              <Link href="/about" className="text-gray-100 hover:text-amber-300 px-3 py-2 font-bold transition-colors">
+              <Link href="/about" className="text-zinc-100 hover:text-amber-300 px-3 py-2 font-bold transition-colors">
                 About Us
               </Link>
             </div>
             <Link
               href="/contact"
-              className="hidden lg:inline-flex absolute right-0 mr-4 lg:mr-8 items-center justify-center px-6 py-2.5 border border-transparent rounded-md shadow-md text-base font-medium text-white bg-accent hover:bg-accentDarker transition-colors"
+              className="hidden lg:inline-flex absolute right-0 mr-4 lg:mr-8 items-center justify-center px-6 py-2.5 border border-transparent rounded-md shadow-md text-base font-medium text-white bg-accent hover:bg-accent-darker transition-colors"
             >
               CONTACT US
             </Link>
@@ -290,7 +279,7 @@ export default function Nav() {
             <div className="lg:hidden flex items-center justify-self-end">
               <button
                 type="button"
-                className="inline-flex items-center justify-center p-2 rounded-md text-gray-200 hover:text-white focus:outline-none"
+                className="inline-flex items-center justify-center p-2 rounded-md text-zinc-200 hover:text-white focus:outline-none"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               >
                 <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -310,7 +299,7 @@ export default function Nav() {
           <div className="absolute top-6 right-6">
             <button
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-200 hover:text-white"
+              className="inline-flex items-center justify-center p-2 rounded-md text-zinc-200 hover:text-white"
               onClick={() => setMobileMenuOpen(false)}
             >
               <svg className="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -352,13 +341,13 @@ export default function Nav() {
                 >
                   {dropdowns.services.map((section, index) => (
                     <div key={index} className="mb-6 text-center">
-                      <h3 className="text-lg font-semibold text-gray-100 tracking-wider mb-3 uppercase">{section.title}</h3>
+                      <h3 className="text-lg font-semibold text-zinc-100 tracking-wider mb-3 uppercase">{section.title}</h3>
                       <ul className="space-y-2 text-center">
                         {section.items.map((item, idx) => (
                           <li key={idx}>
                             <Link
                               href={item.href}
-                              className="flex items-center justify-center px-3 py-2 text-lg text-gray-400 hover:text-amber-300 transition-colors"
+                              className="flex items-center justify-center px-3 py-2 text-lg text-zinc-400 hover:text-amber-300 transition-colors"
                               onClick={(e) => {
                                 e.stopPropagation();
                                 closeMenu();
@@ -400,13 +389,13 @@ export default function Nav() {
                 >
                   {dropdowns.gallery.map((section, index) => (
                     <div key={index} className="mb-6">
-                      {/* <h3 className="text-md font-semibold text-gray-100 tracking-wider mb-3 uppercase">{section.title}</h3> */}
+                      {/* <h3 className="font-semibold text-zinc-100 tracking-wider mb-3 uppercase">{section.title}</h3> */}
                       <ul className="space-y-2">
                         {section.items.map((item, idx) => (
                           <li key={idx}>
                             <Link
                               href={item.href}
-                              className="flex items-center justify-center px-3 py-2 text-lg text-gray-400 hover:text-amber-300 transition-colors"
+                              className="flex items-center justify-center px-3 py-2 text-lg text-zinc-400 hover:text-amber-300 transition-colors"
                               onClick={(e) => {
                                 e.stopPropagation();
                                 closeMenu();
@@ -428,7 +417,7 @@ export default function Nav() {
 
               <Link
                 href="/contact"
-                className="block w-full text-center px-6 py-4 mt-6 text-xl font-medium text-white bg-accent hover:bg-accentDarker rounded-md transition-colors"
+                className="block w-full text-center px-6 py-4 mt-6 text-xl font-medium text-white bg-accent hover:bg-accent-darker rounded-md transition-colors"
                 onClick={closeMenu}
               >
                 CONTACT US

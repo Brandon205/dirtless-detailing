@@ -78,7 +78,7 @@ export default function CoatingGallery() {
           </h1>
           <strong className="page-subheading" style={{ textAlign: "center" }}>
             Check out the gallery below to see the results and capabilities of a freshly applied Ceramic Coating. Take a look at our{" "}
-            <a href="/services/correct" className="text-blue-500">
+            <a href="/services/correct" className="text-accent-hover">
               Exterior Correct & Coat
             </a>{" "}
             page to learn more about this service!
@@ -100,10 +100,10 @@ export default function CoatingGallery() {
       <h3 className="text-4xl text-white font-bold text-center">Finished Results</h3>
       <ImageGallery images={images} altLabel="Exterior Correct & Coat finished results" />
 
-      <div className="max-w-90% lg:max-w-[60%] mx-auto text-center">
+      <div className="max-w-[90%] lg:max-w-[60%] mx-auto text-center">
         <strong className="text-white text-3xl lg:text-4xl">
           Be sure to check out our{" "}
-          <a href="/services/correct" className="text-blue-500">
+          <a href="/services/correct" className="text-accent-hover">
             Correct & Coat
           </a>{" "}
           page for more details!

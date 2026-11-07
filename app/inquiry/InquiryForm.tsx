@@ -40,7 +40,7 @@ export default function InquiryForm({ services }: { services: string[] }) {
           <Check size={32} />
         </span>
         <h2 className="font-heading text-2xl font-bold">Thanks, {f.name.split(" ")[0]}!</h2>
-        <p className="text-lg text-gray-300">We got your message and will get back to you soon, usually the same day.</p>
+        <p className="text-lg text-zinc-300">We got your message and will get back to you soon, usually the same day.</p>
         <a href="/booking" className="mt-2 rounded-lg bg-primary px-6 py-3 text-lg font-bold text-zinc-950 hover:bg-accent-darker">
           See prices and book online
         </a>
@@ -66,7 +66,7 @@ export default function InquiryForm({ services }: { services: string[] }) {
       </div>
       {services.length > 0 && (
         <fieldset className="flex flex-col gap-2">
-          <legend className="mb-1.5 text-sm font-semibold uppercase tracking-wide text-gray-400">Services you&apos;re interested in</legend>
+          <legend className="mb-1.5 text-sm font-semibold uppercase tracking-wide text-zinc-400">Services you&apos;re interested in</legend>
           <div className="flex flex-wrap gap-2">
             {services.map((s) => {
               const on = picked.includes(s);
@@ -109,7 +109,7 @@ export default function InquiryForm({ services }: { services: string[] }) {
 function Field({ label, className, children }: { label: string; className?: string; children: React.ReactNode }) {
   return (
     <label className={cn("flex flex-col gap-1.5", className)}>
-      <span className="text-sm font-semibold uppercase tracking-wide text-gray-400">{label}</span>
+      <span className="text-sm font-semibold uppercase tracking-wide text-zinc-400">{label}</span>
       {children}
     </label>
   );

@@ -33,7 +33,7 @@ export default function Contact() {
           <span className="text-primary">Online Gift Cards</span> Available Now!
         </span>
         <br />
-        <a href="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-300 bold leading-none underline">
+        <a href="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd" target="_blank" rel="noopener noreferrer" className="text-sm text-zinc-300 bold leading-none underline">
           Buy a gift card online
         </a>
       </p>
@@ -72,7 +72,7 @@ export default function Contact() {
             <div className="flex-shrink-0 w-[28px] h-[28px]">
               <Smartphone size={28} />
             </div>
-            <CallLink className="contact-link location-link underline" target="_blank" rel="noopener noreferrer">
+            <CallLink className="location-link underline" target="_blank" rel="noopener noreferrer">
               (253) 252-9758
             </CallLink>
             <p>Text or Call</p>
@@ -82,7 +82,7 @@ export default function Contact() {
               <Mail size={28} />
             </div>
             <a
-              className="contact-link location-link underline"
+              className="location-link underline"
               href="mailto:brenden@dirtlessdetailing.com?subject = Schedule a Detail!"
               target="_blank"
               rel="noopener noreferrer"
@@ -101,7 +101,7 @@ export default function Contact() {
             <div className="flex-shrink-0 w-[28px] h-[28px]">
               <MapPin size={28} />
             </div>
-            <a href="https://maps.app.goo.gl/bhPDhjUN4jsSegu48" className="contact-link location-link underline" target="_blank" rel="noopener noreferrer">
+            <a href="https://maps.app.goo.gl/bhPDhjUN4jsSegu48" className="location-link underline" target="_blank" rel="noopener noreferrer">
               Buckley Business Park, 28120 WA-410, Unit C6
             </a>
           </div>

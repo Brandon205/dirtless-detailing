@@ -13,12 +13,12 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicy() {
   return (
-    <div className="py-24 w-screen bg-[#18181b]">
-      <div className=" bg-[#27272a] py-4 mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="py-24 w-screen bg-surface">
+      <div className=" bg-line py-4 mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-white mb-4">Privacy Policy</h1>
-          <div className="text-sm text-gray-100 space-y-1">
+          <div className="text-sm text-zinc-100 space-y-1">
             <p>
               <strong>Effective Date:</strong> 1st January 2025
             </p>
@@ -33,7 +33,7 @@ export default function PrivacyPolicy() {
           {/* Introduction */}
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-white mb-4">Introduction</h2>
-            <p className="text-gray-200 leading-relaxed">
+            <p className="text-zinc-200 leading-relaxed">
               Dirt-Less Detailing is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your
               information when you visit our website or use our car detailing services.
             </p>
@@ -45,14 +45,14 @@ export default function PrivacyPolicy() {
 
             <div className="mb-6">
               <h3 className="text-xl font-medium text-white mb-3">Personal Information</h3>
-              <p className="text-gray-200 mb-3">We may collect the following personal information when you:</p>
-              <ul className="list-disc pl-6 text-gray-200 space-y-1 mb-4">
+              <p className="text-zinc-200 mb-3">We may collect the following personal information when you:</p>
+              <ul className="list-disc pl-6 text-zinc-200 space-y-1 mb-4">
                 <li>Request a quote or book our services</li>
                 <li>Contact us through our website or phone</li>
                 <li>Subscribe to our newsletter or marketing communications</li>
               </ul>
-              <p className="text-gray-200 mb-3">This information may include:</p>
-              <ul className="list-disc pl-6 text-gray-200 space-y-1">
+              <p className="text-zinc-200 mb-3">This information may include:</p>
+              <ul className="list-disc pl-6 text-zinc-200 space-y-1">
                 <li>Name and contact information (email address, phone number, mailing address)</li>
                 <li>Payment information (processed securely through third-party payment processors)</li>
                 <li>Communication preferences and service history</li>
@@ -61,8 +61,8 @@ export default function PrivacyPolicy() {
 
             <div>
               <h3 className="text-xl font-medium text-white mb-3">Automatically Collected Information</h3>
-              <p className="text-gray-200 mb-3">We may automatically collect certain information about your device and usage of our website, including:</p>
-              <ul className="list-disc pl-6 text-gray-200 space-y-1">
+              <p className="text-zinc-200 mb-3">We may automatically collect certain information about your device and usage of our website, including:</p>
+              <ul className="list-disc pl-6 text-zinc-200 space-y-1">
                 <li>IP address and browser type</li>
                 <li>Pages visited and time spent on our site</li>
                 <li>Referring website information</li>
@@ -74,8 +74,8 @@ export default function PrivacyPolicy() {
           {/* How We Use Your Information */}
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-white mb-4">How We Use Your Information</h2>
-            <p className="text-gray-200 mb-3">We use your information to:</p>
-            <ul className="list-disc pl-6 text-gray-200 space-y-1">
+            <p className="text-zinc-200 mb-3">We use your information to:</p>
+            <ul className="list-disc pl-6 text-zinc-200 space-y-1">
               <li>Provide and improve our car detailing services</li>
               <li>Process bookings and communicate about appointments</li>
               <li>Send service reminders and follow-up communications</li>
@@ -92,8 +92,8 @@ export default function PrivacyPolicy() {
 
             <div className="mb-6">
               <h3 className="text-xl font-medium text-white mb-3">Third-Party Service Providers</h3>
-              <p className="text-gray-200 mb-3">We share your information with trusted third-party service providers who assist us in:</p>
-              <ul className="list-disc pl-6 text-gray-200 space-y-1 mb-4">
+              <p className="text-zinc-200 mb-3">We share your information with trusted third-party service providers who assist us in:</p>
+              <ul className="list-disc pl-6 text-zinc-200 space-y-1 mb-4">
                 <li>
                   <strong>Payment processing</strong> (credit card processors, payment gateways)
                 </li>
@@ -119,14 +119,14 @@ export default function PrivacyPolicy() {
 
             <div className="mb-4">
               <h3 className="text-xl font-medium text-white mb-3">Legal Requirements</h3>
-              <p className="text-gray-200">
+              <p className="text-zinc-200">
                 We may disclose your information if required by law, court order, or government regulation, or to protect our rights, property, or safety.
               </p>
             </div>
 
             <div>
               <h3 className="text-xl font-medium text-white mb-3">Business Transfers</h3>
-              <p className="text-gray-200">
+              <p className="text-zinc-200">
                 In the event of a merger, acquisition, or sale of our business, your information may be transferred to the new owner.
               </p>
             </div>
@@ -138,7 +138,7 @@ export default function PrivacyPolicy() {
 
             <div className="mb-6">
               <h3 className="text-xl font-medium text-white mb-3">Consent for Information Sharing</h3>
-              <p className="text-gray-200">
+              <p className="text-zinc-200">
                 By using our services, you consent to our sharing of your information with third-party service providers for the purposes described in this
                 policy, including advertising measurement services, where legally permissible.
               </p>
@@ -146,8 +146,8 @@ export default function PrivacyPolicy() {
 
             <div>
               <h3 className="text-xl font-medium text-white mb-3">Your Rights</h3>
-              <p className="text-gray-200 mb-3">Depending on your location, you may have the right to:</p>
-              <ul className="list-disc pl-6 text-gray-200 space-y-1 mb-4">
+              <p className="text-zinc-200 mb-3">Depending on your location, you may have the right to:</p>
+              <ul className="list-disc pl-6 text-zinc-200 space-y-1 mb-4">
                 <li>Access the personal information we hold about you</li>
                 <li>Request correction of inaccurate information</li>
                 <li>Request deletion of your information</li>
@@ -155,14 +155,14 @@ export default function PrivacyPolicy() {
                 <li>Withdraw consent for marketing communications</li>
                 <li>Request data portability</li>
               </ul>
-              <p className="text-gray-200">To exercise these rights, please contact us using the information provided below.</p>
+              <p className="text-zinc-200">To exercise these rights, please contact us using the information provided below.</p>
             </div>
           </section>
 
           {/* Data Security */}
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-white mb-4">Data Security</h2>
-            <p className="text-gray-200">
+            <p className="text-zinc-200">
               We implement appropriate technical and organizational security measures to protect your information against unauthorized access, alteration,
               disclosure, or destruction. However, no internet transmission is completely secure, and we cannot guarantee absolute security.
             </p>
@@ -171,7 +171,7 @@ export default function PrivacyPolicy() {
           {/* Data Retention */}
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-white mb-4">Data Retention</h2>
-            <p className="text-gray-200">
+            <p className="text-zinc-200">
               We retain your personal information only as long as necessary to fulfill the purposes outlined in this policy, comply with legal obligations,
               resolve disputes, and enforce our agreements.
             </p>
@@ -180,7 +180,7 @@ export default function PrivacyPolicy() {
           {/* Children's Privacy */}
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-white mb-4">Children's Privacy</h2>
-            <p className="text-gray-200">
+            <p className="text-zinc-200">
               Our services are not intended for individuals under the age of 13. We do not knowingly collect personal information from children under 13. If we
               discover that we have collected information from a child under 13, we will promptly delete such information.
             </p>
@@ -189,7 +189,7 @@ export default function PrivacyPolicy() {
           {/* International Data Transfers */}
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-white mb-4">International Data Transfers</h2>
-            <p className="text-gray-200">
+            <p className="text-zinc-200">
               If you are located outside the United States, please note that your information may be transferred to and processed in the United States, where
               data protection laws may differ from those in your country.
             </p>
@@ -198,29 +198,29 @@ export default function PrivacyPolicy() {
           {/* EU User Consent */}
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-white mb-4">EU User Consent (GDPR Compliance)</h2>
-            <p className="text-gray-200 mb-3">
+            <p className="text-zinc-200 mb-3">
               For users in the European Union, we comply with the General Data Protection Regulation (GDPR) and obtain appropriate consent for:
             </p>
-            <ul className="list-disc pl-6 text-gray-200 space-y-1 mb-4">
+            <ul className="list-disc pl-6 text-zinc-200 space-y-1 mb-4">
               <li>Processing your personal data</li>
               <li>Sharing information with third parties for advertising purposes</li>
               <li>Using cookies and tracking technologies</li>
               <li>Sending marketing communications</li>
             </ul>
-            <p className="text-gray-200">You may withdraw your consent at any time by contacting us.</p>
+            <p className="text-zinc-200">You may withdraw your consent at any time by contacting us.</p>
           </section>
 
           {/* Cookies */}
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-white mb-4">Cookies and Tracking Technologies</h2>
-            <p className="text-gray-200 mb-3">Our website uses cookies and similar tracking technologies to:</p>
-            <ul className="list-disc pl-6 text-gray-200 space-y-1 mb-4">
+            <p className="text-zinc-200 mb-3">Our website uses cookies and similar tracking technologies to:</p>
+            <ul className="list-disc pl-6 text-zinc-200 space-y-1 mb-4">
               <li>Remember your preferences and settings</li>
               <li>Analyze website traffic and usage patterns</li>
               <li>Provide targeted advertising</li>
               <li>Improve website functionality</li>
             </ul>
-            <p className="text-gray-200">
+            <p className="text-zinc-200">
               You can control cookie settings through your browser preferences. Please note that disabling cookies may affect website functionality.
             </p>
           </section>
@@ -228,15 +228,15 @@ export default function PrivacyPolicy() {
           {/* Marketing Communications */}
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-white mb-4">Marketing Communications</h2>
-            <p className="text-gray-200 mb-3">With your consent, we may send you:</p>
-            <ul className="list-disc pl-6 text-gray-200 space-y-1 mb-4">
+            <p className="text-zinc-200 mb-3">With your consent, we may send you:</p>
+            <ul className="list-disc pl-6 text-zinc-200 space-y-1 mb-4">
               <li>Service reminders and appointment confirmations</li>
               <li>Promotional offers and special deals</li>
               <li>Company news and updates</li>
               <li>Customer satisfaction surveys</li>
             </ul>
-            <p className="text-gray-200 mb-3">You can opt out of marketing communications at any time by:</p>
-            <ul className="list-disc pl-6 text-gray-200 space-y-1">
+            <p className="text-zinc-200 mb-3">You can opt out of marketing communications at any time by:</p>
+            <ul className="list-disc pl-6 text-zinc-200 space-y-1">
               <li>Clicking the unsubscribe link in our emails</li>
               <li>Contacting us directly</li>
               <li>Updating your preferences in your account settings</li>
@@ -246,8 +246,8 @@ export default function PrivacyPolicy() {
           {/* Policy Updates */}
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-white mb-4">Updates to This Policy</h2>
-            <p className="text-gray-200 mb-3">We may update this Privacy Policy from time to time. We will notify you of any material changes by:</p>
-            <ul className="list-disc pl-6 text-gray-200 space-y-1">
+            <p className="text-zinc-200 mb-3">We may update this Privacy Policy from time to time. We will notify you of any material changes by:</p>
+            <ul className="list-disc pl-6 text-zinc-200 space-y-1">
               <li>Posting the updated policy on our website</li>
               <li>Sending an email notification (if you have provided your email address)</li>
               <li>Displaying a notice on our website</li>
@@ -257,10 +257,10 @@ export default function PrivacyPolicy() {
           {/* Contact Information */}
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-white mb-4">Contact Information</h2>
-            <p className="text-gray-200 mb-4">If you have any questions about this Privacy Policy or our privacy practices, please contact us:</p>
+            <p className="text-zinc-200 mb-4">If you have any questions about this Privacy Policy or our privacy practices, please contact us:</p>
 
             <div className="bg-blue-900/50 p-6 rounded-lg border border-blue-700/30">
-              <div className="space-y-2 text-gray-200">
+              <div className="space-y-2 text-zinc-200">
                 <p>
                   <strong>Dirt-Less Detailing</strong>
                 </p>
@@ -282,7 +282,7 @@ export default function PrivacyPolicy() {
           </section>
 
           {/* Footer Message */}
-          <section className="pt-6 border-t border-gray-600">
+          <section className="pt-6 border-t border-zinc-600">
             <div className="bg-blue-900/50 p-6 rounded-lg border border-blue-700/30">
               <p className="text-blue-200 font-medium text-center">
                 Your Privacy Matters: We are committed to protecting your privacy and handling your information responsibly. This policy is designed to be

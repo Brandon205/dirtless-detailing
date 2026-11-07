@@ -66,7 +66,7 @@ export const InfiniteMovingCards = ({
   return (
     <div
       ref={containerRef}
-      className={cn("scroller relative z-20 overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]", className)}
+      className={cn("relative z-20 overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]", className)}
     >
       <ul
         ref={scrollerRef}
@@ -88,13 +88,13 @@ export const InfiniteMovingCards = ({
             <blockquote>
               <div
                 aria-hidden="true"
-                className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)] tracking-wide"
+                className="select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)] tracking-wide"
               ></div>
               {item.quote}
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 <span className="flex flex-col gap-1">
-                  <span className="text-sm leading-[1.6] text-gray-400 font-bold text-left">{item.name}</span>
-                  <span className="text-sm leading-[1.6] text-gray-400 font-bold">{item.title}</span>
+                  <span className="text-sm leading-[1.6] text-zinc-400 font-bold text-left">{item.name}</span>
+                  <span className="text-sm leading-[1.6] text-zinc-400 font-bold">{item.title}</span>
                 </span>
               </div>
             </blockquote>

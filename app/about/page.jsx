@@ -68,7 +68,7 @@ export default function About() {
       description: (
         <p className="faq-description">
           We have a guide on the steps and products we recommend on our{" "}
-          <a href="/products?category=Ceramic Maintenance8" className="text-blue-500">
+          <a href="/products?category=Ceramic Maintenance8" className="text-accent-hover">
             DIY Maintenance
           </a>{" "}
           page. All the products are perfectly fine to use whether your car is ceramic coated or not! If you are in need of a very quick wash we only recommend
@@ -119,7 +119,7 @@ export default function About() {
         </div>
       </div>
 
-      <section style={{ lineHeight: "2", fontSize: "1.2em" }} className="about-container">
+      <section style={{ lineHeight: "2", fontSize: "1.2em" }} className="about-container w-[95vw] mx-auto">
         <div className="about-explain">
           <div className="about-image-container">
             <div className="about-image w-full h-[160px] lg:w-[450px] lg:h-[300px]">
@@ -242,7 +242,7 @@ export default function About() {
           </p>
           <p>
             Our shop location is right in the{" "}
-            <a href="https://maps.app.goo.gl/bhPDhjUN4jsSegu48" className="text-blue-500" target="_blank" rel="noopener noreferrer">
+            <a href="https://maps.app.goo.gl/bhPDhjUN4jsSegu48" className="text-accent-hover" target="_blank" rel="noopener noreferrer">
               Buckley Business Park
             </a>{" "}
             Unit C6 off State Route 410.

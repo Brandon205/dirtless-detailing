@@ -108,7 +108,7 @@ export default function LinksPage() {
           <LinkButton href="https://www.tiktok.com/@brendenflower" iconSrc="/assets/icons/tiktok.svg" title="TikTok" variant="secondary" />
         </div>
 
-        <strong className="text-gray-400 text-center">Our Latest Video</strong>
+        <strong className="text-zinc-400 text-center">Our Latest Video</strong>
         <h2 className="mt-0 text-2xl font-bold text-center">From Filthy to Factory Clean: Extreme Chevy Truck Detail</h2>
         <div className="mx-auto w-full max-w-4xl px-4">
           <div className="aspect-video w-full overflow-hidden rounded-xl shadow-lg">

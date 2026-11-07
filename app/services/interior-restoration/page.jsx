@@ -51,7 +51,7 @@ export default function InteriorRestoration() {
                   />
                 </div>
                 <strong className="font-bold text-2xl text-primary">$350 - $650+</strong>
-                <p className="text-sm text-gray-400">*depending on size/condition</p>
+                <p className="text-sm text-zinc-400">*depending on size/condition</p>
                 <p className="text-left">
                   Perfect for heavily used daily drivers, family cars, and vehicles with embedded dirt, spills, or strong smoke/musty odors. Includes deep
                   extraction, scrubbing, and sanitization. Most odors should be gone afterwards, we utilize zinc odor neutralizers after extracting to trap and
@@ -71,7 +71,7 @@ export default function InteriorRestoration() {
                   />
                 </div>
                 <strong className="font-bold text-2xl text-primary">$600-$1200+</strong>
-                <p className="text-sm text-gray-400">*depending on size/condition</p>
+                <p className="text-sm text-zinc-400">*depending on size/condition</p>
                 <p className="text-left">
                   If there's just a small spot or a little mold, it's included in our Full Interior Service, but if there's more than one area or the mold is
                   very bad, this is the service for you. We use multiple different stages and chemicals all with the ability to kill mold, and end it off with a
@@ -91,7 +91,7 @@ export default function InteriorRestoration() {
                   />
                 </div>
                 <strong className="font-bold text-2xl text-primary">QUOTE REQUIRED*</strong>
-                <p className="text-sm text-gray-400">*depending on size/condition</p>
+                <p className="text-sm text-zinc-400">*depending on size/condition</p>
                 <p className="text-left">
                   Typically for older vehicles that have sun damage, fading plastics and leathers, and varying levels of wear. We will use specialized cleaners
                   to rejuvenate plastics and leathers, and do our best to restore the interior to its best possible condition, while protecting it from further
@@ -148,26 +148,26 @@ export default function InteriorRestoration() {
                   <div className="flex flex-col w-full justify-between min-h-[475px] py-4">
                     <div className="flex flex-col items-start">
                       <h2 className="text-4xl font-bold">Our Interior Restoration Service</h2>
-                      <strong className="text-primary text-bold text-2xl">Thorough Cleaning and Conditioning</strong>
+                      <strong className="text-primary font-bold text-2xl">Thorough Cleaning and Conditioning</strong>
                     </div>
                     <div className="flex items-center my-4">
-                      <PiBiohazardBold color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
-                      <p className="leading-relaxed text-left text-md">
+                      <PiBiohazardBold size={48} className="text-accent mr-4 hidden lg:block flex-shrink-0" />
+                      <p className="leading-relaxed text-left">
                         This is a full recovery service for vehicles facing extreme conditions that standard detailing simply cannot solve. We go beyond surface
                         cleaning, making sure to get hidden biohazards or deep-seated grime. Whether you're dealing with a major water damage, a neglected used
                         car, or a "disaster" vehicle, we do what it takes to restore your interior.
                       </p>
                     </div>
                     <div className="flex items-center mb-4">
-                      <LuAirVent color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
-                      <p className="leading-relaxed text-left text-md">
+                      <LuAirVent size={48} className="text-accent mr-4 hidden lg:block flex-shrink-0" />
+                      <p className="leading-relaxed text-left">
                         On all Interior Restoration vehicles that need it we run our professional grade Ozone machine to remove odors and mold spores that we
                         can't reach. Combined with heated carpet/fabric extraction and EPA Registered Disinfectants, we tackle the jobs other shops turn away.
                         Our goal is to provide the absolute best possible outcome, restoring your interior to its highest possible standard.
                       </p>
                     </div>
                     <div className="w-full p-4 bg-zinc-800 rounded-lg border border-zinc-600">
-                      <ul className="lg:max-h-[120px] list-disc list-inside leading-relaxed text-left w-full flex flex-wrap justify-between text-md">
+                      <ul className="lg:max-h-[120px] list-disc list-inside leading-relaxed text-left w-full flex flex-wrap justify-between">
                         <li className="basis-1/2">HEPA Vacuum</li>
                         <li className="basis-1/2">Embedded Grime Removal</li>
                         <li className="basis-1/2">Heated Extraction</li>
@@ -181,7 +181,7 @@ export default function InteriorRestoration() {
                 <p className="text-center">
                   Want the exterior done as well? Feel free to book an interior and exterior detail, we will get your entire vehicle looking like new in just
                   one day! Check out our exterior decon wash{" "}
-                  <a href="/services/exterior" className="text-blue-600 hover:text-blue-700 font-medium underline">
+                  <a href="/services/exterior" className="text-accent-hover hover:text-accent font-medium underline">
                     here
                   </a>
                   !
@@ -189,9 +189,9 @@ export default function InteriorRestoration() {
               </div>
             </main>
 
-            <div className="mt-12 p-6 lg:p-8 bg-gradient-to-r from-zinc-800 to-zinc-700 rounded-lg border border-accent border-opacity-30 text-center">
+            <div className="mt-12 p-6 lg:p-8 bg-gradient-to-r from-zinc-800 to-zinc-700 rounded-lg border border-accent/30 text-center">
               <h3 className="text-2xl lg:text-3xl font-bold text-white mb-3">Is your car in need of a restoration?</h3>
-              <p className="text-gray-300 mb-6 text-lg">
+              <p className="text-zinc-300 mb-6 text-lg">
                 Have questions or want a free quote on our Interior Restoration Service? Want to book an appointment? Get in touch with us today!
               </p>
               <a
@@ -223,7 +223,7 @@ export default function InteriorRestoration() {
             <div className="pb-8 text-center flex flex-col items-center text-white ">
               <h4 className="text-3xl text-left">
                 See more examples of our interior work{" "}
-                <a href="/gallery/interior" className="text-blue-500 inline-block">
+                <a href="/gallery/interior" className="text-accent-hover inline-block">
                   here <ExternalLink className="inline-block" />
                 </a>
               </h4>

@@ -63,26 +63,26 @@ export default function FullIntEx() {
                   <div className="flex flex-col w-full justify-between min-h-[475px] py-4">
                     <div className="flex flex-col items-start">
                       <h2 className="text-4xl font-bold">Our Full Interior Detail</h2>
-                      <strong className="text-primary text-bold text-2xl">Thorough Cleaning and Conditioning</strong>
+                      <strong className="text-primary font-bold text-2xl">Thorough Cleaning and Conditioning</strong>
                     </div>
                     <div className="flex items-center my-4">
-                      <GiVacuumCleaner color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
-                      <p className="leading-relaxed text-left text-md">
+                      <GiVacuumCleaner size={48} className="text-accent mr-4 hidden lg:block flex-shrink-0" />
+                      <p className="leading-relaxed text-left">
                         When your vehicle has reached the point where a simple vacuuming isn't enough, the Full Interior detail is the reset you need. We've
                         spent years researching chemicals to find exactly what works for every mess—from coffee spills and pet accidents to embedded dirt and
                         mystery odors. We don't just mask problems; we utilize specific chemistry to eliminate them at the source.
                       </p>
                     </div>
                     <div className="flex items-center mb-4">
-                      <GiSpill color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
-                      <p className="leading-relaxed text-left text-md">
+                      <GiSpill size={48} className="text-accent mr-4 hidden lg:block flex-shrink-0" />
+                      <p className="leading-relaxed text-left">
                         We match our techniques to your specific situation, using a "carpet encapsulation" process to remove light stains and odors without
                         unnecessarily soaking your floors. For tougher cases, we utilize high-grade extraction and agitation to pull mud and debris from deep
                         within the fibers. Your interior won't just look clean—it will be as clean as modern detailing chemistry allows.
                       </p>
                     </div>
                     <div className="w-full p-4 bg-zinc-800 rounded-lg border border-zinc-600">
-                      <ul className="lg:max-h-[120px] list-disc list-inside leading-relaxed text-left w-full flex flex-wrap justify-between text-md">
+                      <ul className="lg:max-h-[120px] list-disc list-inside leading-relaxed text-left w-full flex flex-wrap justify-between">
                         <li className="basis-1/2">Expert Chemical Research</li>
                         <li className="basis-1/2">Specialized Carpet Methods</li>
                         <li className="basis-1/2">Safe, Efficient, and Effective</li>
@@ -95,7 +95,7 @@ export default function FullIntEx() {
                 <p className="text-center">
                   Want the exterior done as well? Feel free to book an interior and exterior detail, we will get your entire vehicle looking like new in just
                   one day! Check out our exterior decon wash{" "}
-                  <a href="/services/exterior" className="text-blue-600 hover:text-blue-700 font-medium underline">
+                  <a href="/services/exterior" className="text-accent-hover hover:text-accent font-medium underline">
                     here
                   </a>
                   !
@@ -162,7 +162,7 @@ export default function FullIntEx() {
               </motion.li>
               <motion.li className="item item-disabled" variants={oddVariant}>
                 <div className="step-number-container">
-                  <h3 className="step-number" style={{ border: "2px solid #aaa" }}>
+                  <h3 className="step-number" style={{ borderColor: "var(--color-muted)" }}>
                     7
                   </h3>
                 </div>
@@ -170,13 +170,13 @@ export default function FullIntEx() {
                   <h4 className="step-title flex line-through">
                     Interior Restoration{" "}
                     <a href="/services/interior-restoration">
-                      <ExternalLink color="#3b82f6" size={24} className="mt-1 ml-1" />
+                      <ExternalLink size={24} className="text-accent-hover mt-1 ml-1" />
                     </a>
                   </h4>
                   <p className="step-desc">
                     If you are looking for a more extensive interior detailing service to bring a car that has really been through it, you may need to consider
                     our Interior Restoration option. See more info{" "}
-                    <a href="/services/interior-restoration" className="text-blue-500">
+                    <a href="/services/interior-restoration" className="text-accent-hover">
                       here
                     </a>
                     .
@@ -185,9 +185,9 @@ export default function FullIntEx() {
               </motion.li>
             </motion.ol>
 
-            <div className="mt-12 p-6 lg:p-8 bg-gradient-to-r from-zinc-800 to-zinc-700 rounded-lg border border-accent border-opacity-30 text-center">
+            <div className="mt-12 p-6 lg:p-8 bg-gradient-to-r from-zinc-800 to-zinc-700 rounded-lg border border-accent/30 text-center">
               <h3 className="text-2xl lg:text-3xl font-bold text-white mb-3">Want us to bring your car back to new?</h3>
-              <p className="text-gray-300 mb-6 text-lg">
+              <p className="text-zinc-300 mb-6 text-lg">
                 Have questions about our Full Interior Service? Want to book an appointment? Get in touch with us today!
               </p>
               <a
@@ -221,7 +221,7 @@ export default function FullIntEx() {
             <div className="pb-8 text-center flex flex-col items-center text-white ">
               <h4 className="text-3xl text-left">
                 See more examples of our interior work{" "}
-                <a href="/gallery/interior" className="text-blue-500 inline-block">
+                <a href="/gallery/interior" className="text-accent-hover inline-block">
                   here <ExternalLink className="inline-block" />
                 </a>
               </h4>

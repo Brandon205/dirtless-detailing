@@ -67,7 +67,7 @@ export default function PaintCorrectionGallery() {
           </h1>
           <strong className="page-subheading" style={{ textAlign: "center" }}>
             Check out the gallery below to see just what we are able to do with a simple polish and ceramic spray. Take a look at our{" "}
-            <a href="/services/polish" className="text-blue-500">
+            <a href="/services/polish" className="text-accent-hover">
               Exterior Polish & Coat
             </a>{" "}
             page for more details and pricing.
@@ -90,10 +90,10 @@ export default function PaintCorrectionGallery() {
       <h3 className="text-4xl text-white font-bold text-center">Finished Results</h3>
       <ImageGallery images={images} altLabel="Exterior Polish & Coat finished results" />
 
-      <div className="max-w-90% lg:max-w-[60%] mx-auto text-center">
-        <strong className="text-white text-3xl lg:text-4xl max-w-90% lg:max-w-[60%] mx-auto my-8">
+      <div className="max-w-[90%] lg:max-w-[60%] mx-auto text-center">
+        <strong className="text-white text-3xl lg:text-4xl max-w-[90%] lg:max-w-[60%] mx-auto my-8">
           To see more about the services pictured above be sure to check out our{" "}
-          <a href="/services/polish" className="text-blue-500">
+          <a href="/services/polish" className="text-accent-hover">
             Exterior Polish & Coat
           </a>{" "}
           page for more details!

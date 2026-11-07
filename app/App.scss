@@ -3,12 +3,25 @@
 @plugin "tailwindcss-animate";
 
 @theme {
-  --color-primary: #f59e0b;
-  --color-accent: #f59e0b;
+  /* Design tokens. Use these instead of raw colors. */
+  --color-page: #09090b; /* zinc-950: page background */
+  --color-surface: #18181b; /* zinc-900: cards, alternating sections */
+  --color-line: #27272a; /* zinc-800: card borders, section hairlines */
+  --color-line-strong: #3f3f46; /* zinc-700: inputs, secondary button outline */
+  --color-muted: #a1a1aa; /* zinc-400: secondary copy */
+  --color-ink: #fafafa; /* zinc-50: headings and body */
+  --color-accent: #f59e0b; /* amber-500: primary buttons, badges, eyebrows */
+  --color-accent-hover: #fbbf24; /* amber-400: hover states and text links */
+  --color-on-accent: #18181b; /* zinc-900: text on amber */
+  --color-danger: #f87171; /* red-400: form errors only */
+  --color-success: #4ade80; /* green-400: open booking slots, confirmations only */
+
+  /* Older names, still used across the site */
+  --color-primary: #f59e0b; /* same as accent */
   --color-accent-darker: #d97706;
 
   --font-sans: var(--font-montserrat);
-  --font-heading: var(--font-titillium-web);
+  --font-heading: var(--font-montserrat);
 
   --animate-scroll: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
 
@@ -25,7 +38,7 @@ $contact-bkg: #18181b; // OLD: #07080b TAILWIND bg-zinc-900
 $contact-bkg-lighter: #27272a; // OLD: #181b21 TAILWIND: bg-zinc-800
 
 /** Text and smaller colors **/
-$secondary-text: #9ca3af; // OLD: #aaa TAILWIND: text-gray-400
+$secondary-text: #a1a1aa; // OLD: #9ca3af TAILWIND: text-zinc-400
 
 // $accent: #ff2600; OLD
 // $link-text: #3b9eff; OLD TAILWIND: text-blue-500
@@ -34,11 +47,6 @@ $secondary-text: #9ca3af; // OLD: #aaa TAILWIND: text-gray-400
 $radial-gradient-background: $main-clr; /*250, 250, 250*/
 $solid-color-background: rgb(31, 31, 31); /*15, 15, 15*/
 $overlay-color: $main-clr; /*255, 255, 255*/
-
-@theme inline {
-  --font-sans: var(--font-titillium-web);
-  --font-heading: var(--font-montserrat);
-}
 
 @layer base {
   body {
@@ -71,14 +79,8 @@ html {
   background-color: $contact-bkg-lighter;
 }
 
-section {
-  width: 95vw;
-  margin: auto;
-}
-
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
 }
 
 div [data-rmiz-modal-overlay="visible"] {
@@ -208,17 +210,6 @@ img {
 }
 
 /** Navigation CSS **/
-nav {
-  width: 100%;
-  padding-left: 1.25rem;
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  transition: 0.4s ease-in-out;
-}
-
 li span {
   padding: 0 3px 0 2px;
 }
@@ -642,7 +633,7 @@ li span {
 }
 
 .highlight {
-  background-color: #ffd333;
+  background-color: $main-clr;
   padding: 1px;
   color: black;
 }
@@ -1365,10 +1356,6 @@ footer {
   @include textShadow;
 }
 
-.inline {
-  display: block;
-}
-
 .text-large {
   margin-top: 0;
   font-size: 1.7em;
@@ -1727,10 +1714,6 @@ footer {
 
   .large {
     font-size: 2em;
-  }
-
-  .inline {
-    display: inline;
   }
 
   .screen-flex {

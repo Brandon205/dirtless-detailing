@@ -76,10 +76,10 @@ const BeforeAfterSlider = ({ beforeImage, afterImage, aspectRatio = "16/9" }) =>
         {/* Slider Handle with Arrows */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white rounded-full shadow-lg flex items-center justify-center">
           <div className="absolute left-1 -translate-x-1">
-            <ChevronLeft size={16} className="text-gray-600" />
+            <ChevronLeft size={16} className="text-zinc-600" />
           </div>
           <div className="absolute right-1 translate-x-1">
-            <ChevronRight size={16} className="text-gray-600" />
+            <ChevronRight size={16} className="text-zinc-600" />
           </div>
         </div>
       </div>

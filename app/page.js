@@ -31,7 +31,7 @@ export default function Home() {
       description: (
         <div>
           We have a full Ceramic Coating Maintenance Guide available on our{" "}
-          <a href="/products?category=Ceramic Maintenance" className="text-blue-500 hover:underline">
+          <a href="/products?category=Ceramic Maintenance" className="text-accent-hover hover:underline">
             Products page
           </a>
           , which includes everything you need to know about maintaining your ceramic coating, including recommended products and techniques!
@@ -88,13 +88,13 @@ export default function Home() {
             Services!
           </strong> */}
           <div className="text-center lg:text-left">
-            <strong className="text-gray-400 text-lg lg:text-xl">Dirt-Less Detailing</strong>
+            <strong className="text-zinc-400 text-lg lg:text-xl">Dirt-Less Detailing</strong>
             <h1 className="text-white font-heading text-4xl xl:text-7xl xl:text-left font-bold m-0 lg:max-w-[60%]">
               Your Ceramic Coating & Auto Detailing Specialists
             </h1>
           </div>
           <div className="text-center lg:text-left">
-            <p className="text-gray-200 max-w-screen-md font-semibold text-left m-0 text-xl hidden xl:block">
+            <p className="text-zinc-200 max-w-screen-md font-semibold text-left m-0 text-xl hidden xl:block">
               Everything from removing stains from your interior, to our most detail-oriented paint correction and ceramic coating jobs, you can trust Dirt-Less
               Detailing to get the job done right!
             </p>
@@ -150,7 +150,7 @@ export default function Home() {
               <span className="text-primary">Gift Cards</span> Available Now!
             </span>
             <br />
-            <span className="text-sm text-gray-300 bold leading-none">Hit Book Online &gt; Gift Cards!</span>
+            <span className="text-sm text-zinc-300 bold leading-none">Hit Book Online &gt; Gift Cards!</span>
           </div>
         </header>
       </HeroSlider>
@@ -316,12 +316,12 @@ export default function Home() {
             <h3 className="new-heading text-xl lg:text-2xl">Read some of the reviews from our valued customers!</h3>
             <p style={{ margin: 0, padding: "1rem 0" }}>
               See all of the reviews from our customers on our{" "}
-              <a style={{ color: "dodgerblue" }} target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/DirtLessDetailing/reviews">
+              <a className="text-accent-hover" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/DirtLessDetailing/reviews">
                 Facebook
               </a>{" "}
               or{" "}
               <a
-                style={{ color: "dodgerblue" }}
+                className="text-accent-hover"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.google.com/localservices/prolist?g2lbs=ADZRdktLAaGKKobG3aZn2_Qd9tpM-f3ifTKQp4hXsZnMmVk1USpK7Ha4kZIeLdSCTp26Z3uD8UBdDwRY7Zqn7XZatg-9z1GI86mqJXoiFQCA1rCg0Vis_yQK9JiR9qrRMObWwAegw9aPUbKd01T05_4R3o4ry_qhHA%3D%3D&hl=en-US&gl=us&cs=1&ssta=1&q=dirtless%20detailing&oq=dirtless%20detailing&slp=MgA6HENoTUlxZVd0Nkl2SV9nSVY2UTZ0QmgyZWJnaVJSAggCYAB6-gFDaEprYVhKMGJHVnpjeUJrWlhSaGFXeHBibWRJNnZqVDFhcTRnSUFJV2h3UUFCQUJHQUFZQVNJU1pHbHlkR3hsYzNNZ1pHVjBZV2xzYVc1bmtnRVZZMkZ5WDJSbGRHRnBiR2x1WjE5elpYSjJhV05sbWdFa1EyaGtSRk5WYUU1TlJ6bHVVekJXU2xFd1JtNVRWVkpEV2pKYVNHTnVhRzVTVWtGQ3FnRTZFQUV5SGhBQklocEZwOXktNVEwdWdLbGRqT2pnOEdvLWlaQlZ5NUdlSjh3QjV6SVdFQUlpRW1ScGNuUnNaWE56SUdSbGRHRnBiR2x1Wi1BQkFBkgG0AgoNL2cvMTFzYnBjOV8zYgoNL2cvMTFmcDJwN3dtbgoNL2cvMTFrMndndnhyegoNL2cvMTFzbXZfbm13MQoLL2cvMXRmM2I3bHQKDS9nLzExZ2w0dDJkY20KDC9nLzEyNjBieGxoNgoNL2cvMTFwMTN5MnQ4cQoNL2cvMTFjbnpuX3p3agoNL2cvMTFqcTlwcGtfNwoNL2cvMTFneTRsejU5aAoNL2cvMTF0ZDhjN195NQoNL2cvMTFrNDVzNzVmcwoNL2cvMTFnMnhjbHBxMwoNL2cvMTFzNTFrN2YzdAoNL2cvMTFzM2YwMHZzcAoML2cvMTFnem44M3diCg0vZy8xMW5uMGhzanF2Cg0vZy8xMWZxcXoxdmdwCg0vZy8xMXQ0ZmprMDltEgQSAggBEgQKAggB&src=2&spp=Cg0vZy8xMXNicGM5XzNiOtABV2h3UUFCQUJHQUFZQVNJU1pHbHlkR3hsYzNNZ1pHVjBZV2xzYVc1bmtnRVZZMkZ5WDJSbGRHRnBiR2x1WjE5elpYSjJhV05sbWdFa1EyaGtSRk5WYUU1TlJ6bHVVekJXU2xFd1JtNVRWVkpEV2pKYVNHTnVhRzVTVWtGQ3FnRTZFQUV5SGhBQklocEZwOXktNVEwdWdLbGRqT2pnOEdvLWlaQlZ5NUdlSjh3QjV6SVdFQUlpRW1ScGNuUnNaWE56SUdSbGRHRnBiR2x1Wnc9PQ%3D%3D&serdesk=1&lrlstt=1682530844021&ved=2ahUKEwiSvKHoi8j-AhWfHjQIHT0kD2MQvS56BAgwEAE&scp=ChpnY2lkOmNhcl9kZXRhaWxpbmdfc2VydmljZRJgEhIJeUAf2e38kFQRVTQwKEuFSMMiMkRpcnQtTGVzcyBEZXRhaWxpbmcsIDkzMDUgMjA1dGggQXZlIEUsIEJvbm5leSBMYWtlKhQNCAEeHBXFWjC3HQgBHhwlxVowtzAAGhJkaXJ0bGVzcyBkZXRhaWxpbmciEmRpcnRsZXNzIGRldGFpbGluZyoVQ2FyIGRldGFpbGluZyBzZXJ2aWNl#ts=3"
@@ -381,8 +381,8 @@ export default function Home() {
             Answers to some of the most common questions that we get when people are booking with us, please reach out if you have other questions!
           </p>
         </div>
-        <section className="flex flex-col items-center xl:flex-row w-11/12 justify-center gap-8 xl:w-2/3 max-w-[1500px]">
-          <div className="flex flex-col gap-6 w-full calc text-left">
+        <section className="flex flex-col items-center xl:flex-row w-[95vw] mx-auto justify-center gap-8 max-w-[1500px]">
+          <div className="flex flex-col gap-6 w-full text-left">
             {faqItems.map((item, i) => (
               <FaqItem key={i} i={i} expanded={expanded} setExpanded={setExpanded} title={item.title} description={item.description} isMobile={smallScreen} />
             ))}
@@ -410,7 +410,7 @@ export default function Home() {
 
         <br className="extra-space" />
         <div className="w-[90%] text-center mx-auto my-0 pt-[5vh] lg:pl-0" style={{ margin: "5vh auto 2vh auto" }}>
-          <strong className="text-[#c0c0c0] text-center text-4xl">Lastest Video</strong>
+          <strong className="text-zinc-300 text-center text-4xl">Lastest Video</strong>
           <h3 className="new-heading text-xl lg:text-2xl pb-8">Check out the latest video we've posted to our YouTube Channel!</h3>
           <div className="w-full max-w-4xl mx-auto px-4 pt-8">
             <iframe

@@ -45,7 +45,7 @@ const faqItems = [
     description: (
       <div>
         We have a full Ceramic Coating Maintenance Guide available on our{" "}
-        <a href="/products?category=Ceramic" className="text-blue-500 hover:underline">
+        <a href="/products?category=Ceramic" className="text-accent-hover hover:underline">
           Products page
         </a>
         , which includes everything you need to know about maintaining your ceramic coating, including recommended products and techniques!
@@ -63,7 +63,7 @@ const faqItems = [
         Unlike waxes true ceramic coatings don't just wash off, however, over time your coating can get clogged with contaminants and gloss, slickness, and
         water beading can degrade (for this coating it should stay in good quality for up to 3 years). If you want to maintain all the benefits of your ceramic
         coating we recommend getting at least our{" "}
-        <a href="/services/exterior" className="text-blue-500">
+        <a href="/services/exterior" className="text-accent-hover">
           Exterior Decon Wash
         </a>{" "}
         package bi-annually or annually. This package fully decontaminates and refreshes your ceramic coating back to the day you got it.
@@ -77,11 +77,11 @@ const faqItems = [
         We never recommend going through a car wash as they can reduce the gloss slickness and beading of your coating prematurely. However in a pinch a
         touch-less car wash will suffice. Just make sure to use the cheapest setting, without any waxes. It is also recommended after the wash to dry the whole
         vehicle with high quality drying towels (We recommend{" "}
-        <a href="https://amzn.to/449nFm7" className="text-blue-500" target="_blank" rel="noopener noreferrer">
+        <a href="https://amzn.to/449nFm7" className="text-accent-hover" target="_blank" rel="noopener noreferrer">
           The Rag Company's Large Drying Towel
         </a>
         and{" "}
-        <a href="https://amzn.to/3uKuqi1" className="text-blue-500" target="_blank" rel="noopener noreferrer">
+        <a href="https://amzn.to/3uKuqi1" className="text-accent-hover" target="_blank" rel="noopener noreferrer">
           Griot's Ceramic Speed Shine
         </a>
         )!
@@ -155,19 +155,19 @@ export default function ExteriorCorrect() {
                   <div className="flex flex-col w-full justify-between min-h-[475px] py-4">
                     <div className="flex flex-col items-start">
                       <h2 className="text-4xl font-bold">Our Correct & Coat Service</h2>
-                      <strong className="text-primary text-bold text-2xl">The Ultimate Exterior Detail & Protection</strong>
+                      <strong className="text-primary font-bold text-2xl">The Ultimate Exterior Detail & Protection</strong>
                     </div>
                     <div className="flex items-center my-4">
-                      <FaLock color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
-                      <p className="leading-relaxed text-left text-md">
+                      <FaLock size={48} className="text-accent mr-4 hidden lg:block flex-shrink-0" />
+                      <p className="leading-relaxed text-left">
                         Correct & Coat is our premier exterior service, utilizing a rigorous 2-stage paint correction process to remove 70-95% of scratches,
                         swirls, and imperfections. We tailor this intensive process to your specific goals, ensuring you get the exact results you want for your
                         investment.
                       </p>
                     </div>
                     <div className="flex items-center mb-4">
-                      <GiSquareBottle color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
-                      <p className="leading-relaxed text-left text-md">
+                      <GiSquareBottle size={48} className="text-accent mr-4 hidden lg:block flex-shrink-0" />
+                      <p className="leading-relaxed text-left">
                         The restored paint is then locked in with a professional 3-year ceramic coating, providing a glass-like shine and the best protection
                         against Washington's weather. We choose a 3-year coating specifically because it aligns with a realistic maintenance schedule, allowing
                         us to check in and refresh the surface before new swirls can accumulate.
@@ -175,7 +175,7 @@ export default function ExteriorCorrect() {
                     </div>
                     <div className="w-full p-4 bg-zinc-800 rounded-lg border border-zinc-600">
                       <p className="text-left">
-                        <span className="font-bold text-md">Ideal for:</span> Owners seeking a flawless, mirror-like finish and the highest level of scratch
+                        <span className="font-bold">Ideal for:</span> Owners seeking a flawless, mirror-like finish and the highest level of scratch
                         removal.
                       </p>
                     </div>
@@ -184,7 +184,7 @@ export default function ExteriorCorrect() {
                 <p className="text-center">
                   Complete the detail! While your car is with us now is the best time to get that interior you've been meaning to do back in shape! Check out
                   our current offers and pricing on our full interior detail{" "}
-                  <a href="/services/interior" className="text-blue-600 hover:text-blue-700 font-medium underline">
+                  <a href="/services/interior" className="text-accent-hover hover:text-accent font-medium underline">
                     here
                   </a>
                   !
@@ -195,7 +195,7 @@ export default function ExteriorCorrect() {
               <div className="mt-8 p-3 lg:p-6 bg-zinc-800 rounded-lg border border-zinc-900">
                 <p className="text-center">
                   Now's the perfect time to book a interior cleaning as well. Check out our current offers and pricing on our Full Interior Detail{" "}
-                  <a href="/services/interior" className="text-blue-600 hover:text-blue-700 font-medium underline">
+                  <a href="/services/interior" className="text-accent-hover hover:text-accent font-medium underline">
                     here
                   </a>
                   !
@@ -297,12 +297,12 @@ export default function ExteriorCorrect() {
 
             <br className="extra-space" />
 
-            <div className="mt-12 mb-6 p-6 lg:p-8 bg-gradient-to-r from-zinc-800 to-zinc-700 rounded-lg border border-accent border-opacity-30 text-center">
+            <div className="mt-12 mb-6 p-6 lg:p-8 bg-gradient-to-r from-zinc-800 to-zinc-700 rounded-lg border border-accent/30 text-center">
               <h3 className="text-2xl lg:text-3xl font-bold text-white mb-3">Not sure if this is the service you need?</h3>
-              <p className="text-gray-300 mb-6 text-lg">
+              <p className="text-zinc-300 mb-6 text-lg">
                 Come by our shop in Buckley, or get in touch with us today, and for no cost at all we can answer your questions.
               </p>
-              <p className="text-gray-300 mb-6 text-lg">
+              <p className="text-zinc-300 mb-6 text-lg">
                 We'll take a look assess what you want and even show you test spots vs our other services on your car so you can see what each service entails
                 and the results.
               </p>
@@ -367,7 +367,7 @@ export default function ExteriorCorrect() {
             <div className="pb-8 text-center flex flex-col items-center text-white ">
               <h4 className="text-3xl text-left">
                 See more images on our{" "}
-                <a href="/gallery/exterior" className="text-blue-500 inline-block">
+                <a href="/gallery/exterior" className="text-accent-hover inline-block">
                   Exterior Gallery <ExternalLink className="inline-block" />
                 </a>
               </h4>

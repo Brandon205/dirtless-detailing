@@ -62,19 +62,19 @@ export default function Exterior() {
                   <div className="flex flex-col w-full justify-between min-h-[475px] py-4">
                     <div className="flex flex-col items-start">
                       <h2 className="text-4xl font-bold">Our Exterior Decon Wash</h2>
-                      <strong className="text-primary text-bold text-2xl">The Detailer's Car Wash</strong>
+                      <strong className="text-primary font-bold text-2xl">The Detailer's Car Wash</strong>
                     </div>
                     <div className="flex items-center my-4">
-                      <MdLocalCarWash color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
-                      <p className="leading-relaxed text-left text-md">
+                      <MdLocalCarWash size={48} className="text-accent mr-4 hidden lg:block flex-shrink-0" />
+                      <p className="leading-relaxed text-left">
                         Our Exterior Decon Wash is the "detailer's car wash"—built on the principle that truly clean means contaminant-free. We go far beyond
                         the surface to actively dissolve iron particles, tar, and tree sap that automatic washes simply cannot touch. By focusing on areas often
                         skipped—like door jambs and gas doors—we ensure your paint and wheels are clean and protected from the elements.
                       </p>
                     </div>
                     <div className="flex items-center mb-4">
-                      <PiSprayBottleFill color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
-                      <p className="leading-relaxed text-left text-md">
+                      <PiSprayBottleFill size={48} className="text-accent mr-4 hidden lg:block flex-shrink-0" />
+                      <p className="leading-relaxed text-left">
                         We finish every wash with a high-grade ceramic spray that provides at least 3 months of protection. This layer isn't just for a
                         mirror-like shine; it creates a slick surface that repels water and prevents dirt from sticking, making your next wash faster and more
                         effective. It is the essential foundation for maintaining any vehicle's long-term surface integrity.
@@ -82,7 +82,7 @@ export default function Exterior() {
                     </div>
                     <div className="w-full p-4 bg-zinc-800 rounded-lg border border-zinc-600">
                       <p className="text-left">
-                        <span className="font-bold text-md">Ideal for:</span> Vehicles needing a deep season reset or a foundation professional cleaning.
+                        <span className="font-bold">Ideal for:</span> Vehicles needing a deep season reset or a foundation professional cleaning.
                       </p>
                     </div>
                   </div>
@@ -90,7 +90,7 @@ export default function Exterior() {
                 <p className="text-center">
                   Complete the detail! While your car is with us now is the best time to get that neglected interior back in shape! Check out our current offers
                   and pricing on our full interior detail{" "}
-                  <a href="/services/interior" className="text-blue-600 hover:text-blue-700 font-medium underline">
+                  <a href="/services/interior" className="text-accent-hover hover:text-accent font-medium underline">
                     here
                   </a>
                   !
@@ -172,7 +172,7 @@ export default function Exterior() {
               </motion.li>
               <motion.li className="item item-disabled" variants={evenVariant}>
                 <div className="step-number-container">
-                  <h3 className="step-number" style={{ border: "2px solid #aaa" }}>
+                  <h3 className="step-number" style={{ borderColor: "var(--color-muted)" }}>
                     8
                   </h3>
                 </div>
@@ -180,13 +180,13 @@ export default function Exterior() {
                   <h4 className="step-title flex line-through">
                     All this and more!{" "}
                     <a href="/services/polish">
-                      <ExternalLink color="#3b82f6" size={24} className="mt-1 ml-1" />
+                      <ExternalLink size={24} className="text-accent-hover mt-1 ml-1" />
                     </a>
                   </h4>
                   <p className="step-desc">
                     If you opt for our Exterior Polish & Coat package you get all of these benefits plus: a full vehicle polish, specialized windshield and trim
                     coatings, and a 3-year ceramic coating on all paint! See more info{" "}
-                    <a href="/services/polish" className="text-blue-500">
+                    <a href="/services/polish" className="text-accent-hover">
                       here
                     </a>
                     .
@@ -218,7 +218,7 @@ export default function Exterior() {
             <div className="p-8 text-center flex flex-col items-center text-white ">
               <h4 className="text-3xl text-left">
                 Check out our{" "}
-                <a href="/gallery/exterior" className="text-blue-500 inline-block">
+                <a href="/gallery/exterior" className="text-accent-hover inline-block">
                   Exterior Gallery <ExternalLink className="inline-block" />
                 </a>{" "}
                 to see more!

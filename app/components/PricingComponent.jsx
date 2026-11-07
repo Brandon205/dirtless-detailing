@@ -131,11 +131,11 @@ export default function PricingComponent(props) {
             className="object-cover rounded-3xl"
           />
         </div>
-        <div className="w-full lg:w-px h-px bg-gray-300 lg:h-[450px]"></div>
+        <div className="w-full lg:w-px h-px bg-zinc-300 lg:h-[450px]"></div>
         <div className="flex flex-col justify-between w-full lg:w-1/2 gap-8 py-4">
           <div>
             <Select value={currVal} onValueChange={(e) => updateValue(e)} defaultValue="2">
-              <SelectTrigger className="text-3xl lg:w-full lg:mx-auto shadow-[0_0_15px_rgb(0,0,0)] mb-12 py-8 bg-zinc-700">
+              <SelectTrigger className="text-3xl lg:w-full lg:mx-auto shadow-lg mb-12 py-8 bg-zinc-700">
                 <SelectValue placeholder="Select a vehicle size." />
               </SelectTrigger>
               <SelectContent>
@@ -159,18 +159,18 @@ export default function PricingComponent(props) {
                 </SelectGroup>
               </SelectContent>
             </Select>
-            <div className="w-full h-px bg-gray-300"></div>
+            <div className="w-full h-px bg-zinc-300"></div>
           </div>
           <div className="flex flex-col justify-between items-center w-full my-0 mx-auto max-w-[700px] lg:flex-row">
             <div className="flex flex-col items-start mb-4 w-full">
               <p className="text-2xl mx-auto lg:mx-0">Starting At:</p>
               {props.shortTitle == "extCorrect" || props.shortTitle == "extPolish" ? (
-                <p className="text-gray-400 text-sm text-left">*Additional Correction (e.g., wet sanding, touchup painting) is available at $150/hour.</p>
+                <p className="text-zinc-400 text-sm text-left">*Additional Correction (e.g., wet sanding, touchup painting) is available at $150/hour.</p>
               ) : (
                 ""
               )}
               {props.shortTitle == "intRestoration" ? (
-                <p className="text-gray-400 text-sm text-left">
+                <p className="text-zinc-400 text-sm text-left">
                   *Pricing varies greatly depending on condition. Free quotes are always available, just stop by or call!
                 </p>
               ) : (
@@ -188,7 +188,7 @@ export default function PricingComponent(props) {
                 )}
                 <div className="flex flex-col items-center">
                   {salePrices["active"] ? <span className="text-xl text-right text-green-500 font-semibold">{salePrices["saleName"]}!</span> : ""}
-                  <strong className="pricing__pricecard-pricebox border-gray-300 border-2 bg-zinc-700">
+                  <strong className="pricing__pricecard-pricebox border-zinc-300 border-2 bg-zinc-700">
                     <span className="pricing__pricecard-price">{content}</span>
                   </strong>
                 </div>
@@ -224,7 +224,7 @@ const Correction = () => {
       <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4 max-w-[500px]">
         <div className="w-full flex flex-col items-center gap-2 justify-center mb-4">
           <h4 className="text-2xl font-semibold">Engine Bay Cleaning</h4>
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-zinc-300">
             We will cover sensitive/electronic areas in the bay, clean and wash, then dress the engine bay to have it looking like new!
           </p>
         </div>
@@ -235,9 +235,9 @@ const Correction = () => {
       <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4 max-w-[500px]">
         <div className="w-full flex flex-col items-center gap-2 justify-center mb-4">
           <h4 className="text-2xl font-semibold">Debadging</h4>
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-zinc-300">
             Since we are polishing the rest of your vehicle this is the perfect time to get any badges/emblems removed off of your car so that we can polish
-            under them too! <span className="text-gray-400">(Typically 30 minutes - 1 hour depending on the badges)</span>
+            under them too! <span className="text-zinc-400">(Typically 30 minutes - 1 hour depending on the badges)</span>
           </p>
         </div>
         <div className="bg-primary w-1/2 py-2 rounded-lg text-xl font-medium">
@@ -254,7 +254,7 @@ const Exterior = () => {
       <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4 max-w-[500px]">
         <div className="w-full flex flex-col items-center gap-2 justify-center mb-4">
           <h4 className="text-2xl font-semibold">Engine Bay Cleaning</h4>
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-zinc-300">
             We will cover sensitive/electronic areas in the bay, clean and wash, then dress the engine bay to have it looking like new!
           </p>
         </div>
@@ -265,7 +265,7 @@ const Exterior = () => {
       <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4 max-w-[500px]">
         <div className="w-full flex flex-col items-center gap-2 justify-center mb-4">
           <h4 className="text-2xl font-semibold">Clay Bar Treatment</h4>
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-zinc-300">
             If your paint (especially lower sections) are gritty or bumpy even after a good wash then our clay bar treatment is for you. With a clay bar we can
             get rid of a lot of the contamination that is causing the paint to feel less smooth to the touch.
           </p>
@@ -277,7 +277,7 @@ const Exterior = () => {
       <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4 max-w-[500px]">
         <div className="w-full flex flex-col items-center gap-2 justify-center mb-4">
           <h4 className="text-2xl font-semibold">Ceramic Maintenance</h4>
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-zinc-300">
             Our recommended addon for a Decon Wash, this is best done every 6-12 months after your coating, we'll check in see how the coating is holding up and
             add a topper in areas that may need it.
           </p>
@@ -289,7 +289,7 @@ const Exterior = () => {
       <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4 max-w-[500px]">
         <div className="w-full flex flex-col items-center gap-2 justify-center mb-4">
           <h4 className="text-2xl font-semibold">Trim Restoration</h4>
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-zinc-300">
             If your trim is fading or oxidized, this is the perfect add-on to get it looking like new again! We will prep and restore all exterior trim on the
             vehicle to bring back that deep black color and protect it from future fading.
           </p>
@@ -307,7 +307,7 @@ const WashCoat = () => {
       <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4 max-w-[500px]">
         <div className="w-full flex flex-col items-center gap-2 justify-center mb-4">
           <h4 className="text-2xl font-semibold">Engine Bay Cleaning</h4>
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-zinc-300">
             We will cover sensitive/electronic areas in the bay, clean and wash, then dress the engine bay to have it looking like new!
           </p>
         </div>
@@ -318,7 +318,7 @@ const WashCoat = () => {
       <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4 max-w-[500px]">
         <div className="w-full flex flex-col items-center gap-2 justify-center mb-4">
           <h4 className="text-2xl font-semibold">Trim Restoration</h4>
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-zinc-300">
             If your trim is fading or oxidized, this is the perfect add-on to get it looking like new again! We will prep and restore all exterior trim on the
             vehicle to bring back that deep black color and protect it from future fading. (Typically takes 30 minutes - 1 hour)
           </p>
@@ -337,7 +337,7 @@ const FullInterior = () => {
       <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4 max-w-[500px]">
         <div className="w-full flex flex-col items-center gap-2 justify-center mb-4">
           <h4 className="text-2xl font-semibold">Ozone Treatment</h4>
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-zinc-300">
             Ozone treatment is the use of O3 (ozone gas) to remove odors, bacteria, and viruses from everywhere in the vehicle. Recommended on ALL strong odor,
             mold, and smokers car jobs.
           </p>
@@ -349,7 +349,7 @@ const FullInterior = () => {
       <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4 max-w-[500px]">
         <div className="w-full flex flex-col items-center gap-2 justify-center mb-4">
           <h4 className="text-2xl font-semibold">Interior Ceramic</h4>
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-zinc-300">
             Our Interior Ceramic Coating is a great way to protect your interior from stains and spills. Perfect for families with kids, pets, or anyone who
             wants to keep their interior looking like new for longer.
           </p>
@@ -368,7 +368,7 @@ const InteriorRefresh = () => {
       <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4 max-w-[500px]">
         <div className="w-full flex flex-col items-center gap-2 justify-center mb-4">
           <h4 className="text-2xl font-semibold">Interior Ceramic</h4>
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-zinc-300">
             Our Interior Ceramic Coating is a great way to protect your interior from stains and spills. Perfect for families with kids, pets, or anyone who
             wants to keep their interior looking like new for longer.
           </p>
@@ -387,7 +387,7 @@ const InteriorRestore = () => {
       <div className="bg-zinc-900 p-4 rounded-lg flex flex-col gap-4 items-center justify-between mb-4 max-w-[500px]">
         <div className="w-full flex flex-col items-center gap-2 justify-center mb-4">
           <h4 className="text-2xl font-semibold">Interior Ceramic</h4>
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-zinc-300">
             Our Interior Ceramic Coating is a great way to protect your interior from stains and spills. Perfect to keep the interior from getting back to what
             it was before the restoration.
           </p>

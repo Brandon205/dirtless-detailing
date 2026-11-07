@@ -78,7 +78,7 @@ export default function Recreational() {
                 />
               </div>
               <strong className="font-bold text-2xl text-primary">$10/foot</strong>
-              <p className="text-sm text-gray-400">$10/foot Interior, $10/foot Exterior</p>
+              <p className="text-sm text-zinc-400">$10/foot Interior, $10/foot Exterior</p>
               <p className="text-left">
                 Perfect for right after you are getting it out for the year after a couple of months sitting in storage, or right before going into storage to
                 make sure that nothing that's on it now eats into the materials.
@@ -96,7 +96,7 @@ export default function Recreational() {
                 />
               </div>
               <strong className="font-bold text-2xl text-primary">$10/foot</strong>
-              <p className="text-sm text-gray-400">$10/foot Interior, $10/foot Exterior</p>
+              <p className="text-sm text-zinc-400">$10/foot Interior, $10/foot Exterior</p>
               <p className="text-left">
                 Get your boat ready for the summer with our Boat Detailing Services. With our simple $10/foot pricing we'll vacuum, blow, and clean out all main
                 compartments and protect them with our specialized cleaners. On the exterior side of things we'll give it a thorough wash and top it with a
@@ -115,7 +115,7 @@ export default function Recreational() {
                 />
               </div>
               <strong className="font-bold text-2xl text-primary">QUOTE REQUIRED*</strong>
-              <p className="text-sm text-gray-400">*depending on size/condition</p>
+              <p className="text-sm text-zinc-400">*depending on size/condition</p>
               <p className="text-left">
                 We're in the perfect area of Washington to own Dirtbikes, Quads, Side by Sides and other ORV's so we've washed many of them, and know that to
                 get everything takes a ton of attention to detail, and the right chemicals. We can do the interior and exterior and always top it with a ceramic
@@ -160,9 +160,9 @@ export default function Recreational() {
             </div>
           </div>
 
-          <div className="mt-12 p-6 lg:p-8 bg-gradient-to-r from-zinc-800 to-zinc-700 rounded-lg border border-accent border-opacity-30 text-center">
+          <div className="mt-12 p-6 lg:p-8 bg-gradient-to-r from-zinc-800 to-zinc-700 rounded-lg border border-accent/30 text-center">
             <h3 className="text-2xl lg:text-3xl font-bold text-white mb-3">Have something that needs a good detail?</h3>
-            <p className="text-gray-300 mb-6 text-lg">
+            <p className="text-zinc-300 mb-6 text-lg">
               If you have any questions or want a free quote on our Recreational detailing services click Get Started to get in touch!
             </p>
             <a

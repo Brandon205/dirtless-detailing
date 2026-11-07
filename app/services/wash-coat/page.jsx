@@ -30,7 +30,7 @@ export default function Exterior() {
       description: (
         <div>
           We have a full Ceramic Coating Maintenance Guide available on our{" "}
-          <a href="/products?category=Ceramic" className="text-blue-500 hover:underline">
+          <a href="/products?category=Ceramic" className="text-accent-hover hover:underline">
             Products page
           </a>
           , which includes everything you need to know about maintaining your ceramic coating, including recommended products and techniques!
@@ -68,7 +68,7 @@ export default function Exterior() {
       description: (
         <div>
           We have a full Ceramic Coating Maintenance Guide available at the bottom of our{" "}
-          <a href="/products?category=Ceramic" className="text-blue-500 hover:underline">
+          <a href="/products?category=Ceramic" className="text-accent-hover hover:underline">
             Ceramic Products Page
           </a>
           , which includes everything you need to know about maintaining your ceramic coating, including recommended products and techniques!
@@ -85,7 +85,7 @@ export default function Exterior() {
         <p className="faq-description">
           Unlike waxes true ceramic coatings don't just wash off, however, over time your coating can get clogged with contaminants and gloss, slickness, and
           water beading can degrade (for this coating it should stay in good quality for up to 1 year). We recommend getting at least our{" "}
-          <a href="/services/exterior" className="text-blue-500">
+          <a href="/services/exterior" className="text-accent-hover">
             Exterior Decon Wash
           </a>{" "}
           service with the <strong>Ceramic Maintenance Addon</strong> done bi-annually or annually. This package fully decontaminates and refreshes your ceramic
@@ -100,7 +100,7 @@ export default function Exterior() {
           We never recommend going through a car wash as they can reduce the gloss slickness and beading of your coating prematurely. However in a pinch a
           touch-less car wash will suffice. Just make sure to use the cheapest setting, without any waxes. We also recommend to make sure that all the edges and
           corners are blown out and dried (We recommend{" "}
-          <a href="https://amzn.to/41db9SY" className="text-blue-500" target="_blank" rel="noopener noreferrer">
+          <a href="https://amzn.to/41db9SY" className="text-accent-hover" target="_blank" rel="noopener noreferrer">
             The Rag Company's Large Drying Towel
           </a>
           ).
@@ -162,18 +162,18 @@ export default function Exterior() {
                   <div className="flex flex-col w-full justify-between min-h-[475px] py-4">
                     <div className="flex flex-col items-start">
                       <h2 className="text-4xl font-bold">Our Wash & Coat Service</h2>
-                      <strong className="text-primary text-bold text-2xl">The easiest way to get your car protected.</strong>
+                      <strong className="text-primary font-bold text-2xl">The easiest way to get your car protected.</strong>
                     </div>
                     <div className="flex items-center my-4">
-                      <FaShieldAlt color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
-                      <p className="leading-relaxed text-left text-md">
+                      <FaShieldAlt size={48} className="text-accent mr-4 hidden lg:block flex-shrink-0" />
+                      <p className="leading-relaxed text-left">
                         The Wash & Coat package is the ultimate "New Car" reset, designed for owners who prioritize surface protection and ease of maintenance.
                         You get the extreme water beading and UV resistance of a ceramic shield at a fraction of the cost of our correction packages.
                       </p>
                     </div>
                     <div className="flex items-center mb-4">
-                      <RiResetLeftLine color="#f59e0b" size={48} className="mr-4 hidden lg:block flex-shrink-0" />
-                      <p className="leading-relaxed text-left text-md">
+                      <RiResetLeftLine size={48} className="text-accent mr-4 hidden lg:block flex-shrink-0" />
+                      <p className="leading-relaxed text-left">
                         Once everything is decontaminated, we perform a dedicated paint prep to ensure our 1-year ceramic coating can bond properly. This
                         creates a durable defense that no wax can match. Now your paint will be incredibly slick, meaning road grime struggles to stick and your
                         maintenance washes become almost effortless.
@@ -181,7 +181,7 @@ export default function Exterior() {
                     </div>
                     <div className="w-full p-4 bg-zinc-800 rounded-lg border border-zinc-600">
                       <p className="text-left">
-                        <span className="font-bold text-md">Ideal for:</span> New cars or well-maintained daily drivers needing elite protection without the
+                        <span className="font-bold">Ideal for:</span> New cars or well-maintained daily drivers needing elite protection without the
                         cost of polishing.
                       </p>
                     </div>
@@ -190,7 +190,7 @@ export default function Exterior() {
                 <p className="text-center">
                   Complete the detail! While your car is with us now's the best time to get that neglected interior back in shape! Check out our current offers
                   and pricing on our full interior detail{" "}
-                  <a href="/services/interior" className="text-blue-600 hover:text-blue-700 font-medium underline">
+                  <a href="/services/interior" className="text-accent-hover hover:text-accent font-medium underline">
                     here
                   </a>
                   !
@@ -270,7 +270,7 @@ export default function Exterior() {
               </motion.li>
               <motion.li className="item item-disabled" variants={evenVariant}>
                 <div className="step-number-container">
-                  <h3 className="step-number" style={{ border: "2px solid #aaa" }}>
+                  <h3 className="step-number" style={{ borderColor: "var(--color-muted)" }}>
                     8
                   </h3>
                 </div>
@@ -278,16 +278,16 @@ export default function Exterior() {
                   <h4 className="step-title flex">
                     Want a Polish or Paint Correction?
                     <a href="/services/polish">
-                      <ExternalLink color="#3b82f6" size={24} className="mt-1 ml-1" />
+                      <ExternalLink size={24} className="text-accent-hover mt-1 ml-1" />
                     </a>
                   </h4>
                   <p className="step-desc">
                     Check out our{" "}
-                    <a href="/services/polish" className="text-blue-500">
+                    <a href="/services/polish" className="text-accent-hover">
                       Polish & Coat
                     </a>{" "}
                     service for a polish, or our{" "}
-                    <a href="/services/correct" className="text-blue-500">
+                    <a href="/services/correct" className="text-accent-hover">
                       Correct & Coat
                     </a>{" "}
                     service for a full paint correction. Both include our longer-lasting 3-year ceramic coating.
@@ -304,8 +304,8 @@ export default function Exterior() {
                 Answers to the questions we most commonly get about this service, please reach out if you have other questions!
               </p>
             </div>
-            <section className="flex flex-col items-center xl:flex-row w-11/12 justify-center gap-8 xl:w-2/3 mb-8">
-              <div className="flex flex-col gap-6 w-full calc text-left text-white">
+            <section className="flex flex-col items-center xl:flex-row w-[95vw] mx-auto justify-center gap-8 mb-8">
+              <div className="flex flex-col gap-6 w-full text-left text-white">
                 {faqItems.map((item, i) => (
                   <FaqItem
                     key={i}
@@ -320,12 +320,12 @@ export default function Exterior() {
               </div>
             </section>
 
-            <div className="mt-12 mb-6 p-6 lg:p-8 bg-gradient-to-r from-zinc-800 to-zinc-700 rounded-lg border border-accent border-opacity-30 text-center">
+            <div className="mt-12 mb-6 p-6 lg:p-8 bg-gradient-to-r from-zinc-800 to-zinc-700 rounded-lg border border-accent/30 text-center">
               <h3 className="text-2xl lg:text-3xl font-bold text-white mb-3">Not sure if this is the service you need?</h3>
-              <p className="text-gray-300 mb-6 text-lg">
+              <p className="text-zinc-300 mb-6 text-lg">
                 Come by our shop in Buckley, or get in touch with us today, and for no cost at all we can answer your questions.
               </p>
-              <p className="text-gray-300 mb-6 text-lg">
+              <p className="text-zinc-300 mb-6 text-lg">
                 We'll take a look assess what you want and even show you test spots vs our other services on your car so you can see what each service entails
                 and the results.
               </p>

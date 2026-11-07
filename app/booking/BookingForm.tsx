@@ -204,7 +204,7 @@ export default function BookingForm({ catalog, canceledRef }: { catalog: Catalog
       {/* 2. Services */}
       <Section dim={!vehicleReady}>
         {step(2, "Services", lines.length > 0)}
-        {!vehicleReady && <p className="text-gray-400">Pick your vehicle {kind === "car" ? "size" : "length"} first to see prices.</p>}
+        {!vehicleReady && <p className="text-zinc-400">Pick your vehicle {kind === "car" ? "size" : "length"} first to see prices.</p>}
         {vehicleReady && (
           <>
             {groupBy(mains).map(([category, list]) => (
@@ -220,7 +220,7 @@ export default function BookingForm({ catalog, canceledRef }: { catalog: Catalog
                 <Label>Add-ons</Label>
                 {addons.map((s) =>
                   addonState(s.id) === "included" ? (
-                    <div key={s.id} className="flex items-center justify-between rounded-lg border-2 border-zinc-700 px-4 py-3 text-gray-400">
+                    <div key={s.id} className="flex items-center justify-between rounded-lg border-2 border-zinc-700 px-4 py-3 text-zinc-400">
                       <span>{s.name}</span>
                       <span className="text-sm">Included</span>
                     </div>
@@ -242,13 +242,13 @@ export default function BookingForm({ catalog, canceledRef }: { catalog: Catalog
             <span className="flex items-center gap-2 font-semibold">
               <Store size={20} /> At our shop
             </span>
-            <span className="text-sm text-gray-400">Buckley Business Park, 28120 WA-410, Unit C6</span>
+            <span className="text-sm text-zinc-400">Buckley Business Park, 28120 WA-410, Unit C6</span>
           </Choice>
           <Choice selected={where === "mobile"} onClick={() => setWhere("mobile")} className="flex-col items-start gap-1">
             <span className="flex items-center gap-2 font-semibold">
               <MapPin size={20} /> We come to you
             </span>
-            <span className="text-sm text-gray-400">
+            <span className="text-sm text-zinc-400">
               +{money(settings.mobileFeeCents)} mobile fee, within {settings.serviceRadiusMiles} miles of Buckley
             </span>
           </Choice>
@@ -272,7 +272,7 @@ export default function BookingForm({ catalog, canceledRef }: { catalog: Catalog
       <Section dim={!lines.length}>
         {step(4, "When", !!day && !!time)}
         {!lines.length ? (
-          <p className="text-gray-400">Pick your services first; how long they take decides which times are open.</p>
+          <p className="text-zinc-400">Pick your services first; how long they take decides which times are open.</p>
         ) : (
           <>
             <div className="flex items-center justify-between">
@@ -286,7 +286,7 @@ export default function BookingForm({ catalog, canceledRef }: { catalog: Catalog
             </div>
             {slotsError && <p className="text-red-400">{slotsError}</p>}
             {!days && !slotsError && (
-              <p className="flex items-center gap-2 text-gray-400">
+              <p className="flex items-center gap-2 text-zinc-400">
                 <Loader2 className="animate-spin" size={18} /> Checking open times…
               </p>
             )}
@@ -298,10 +298,10 @@ export default function BookingForm({ catalog, canceledRef }: { catalog: Catalog
                   {daySlots.map((s) => (
                     <Choice key={s.time} selected={time === s.time} disabled={s.state !== "open"} onClick={() => setTime(s.time)} className="flex-col items-center">
                       <span className={cn("text-lg font-semibold", s.state !== "open" && "line-through")}>{s.label}</span>
-                      <span className="text-sm text-gray-400">{s.state === "open" ? (where === "shop" ? "Drop-off" : "Arrival") : s.state === "booked" ? "Booked" : "Not available"}</span>
+                      <span className="text-sm text-zinc-400">{s.state === "open" ? (where === "shop" ? "Drop-off" : "Arrival") : s.state === "booked" ? "Booked" : "Not available"}</span>
                     </Choice>
                   ))}
-                  {daySlots.length === 0 && <p className="text-gray-400">We're closed for online booking that day.</p>}
+                  {daySlots.length === 0 && <p className="text-zinc-400">We're closed for online booking that day.</p>}
                 </div>
               </div>
             )}
@@ -343,7 +343,7 @@ export default function BookingForm({ catalog, canceledRef }: { catalog: Catalog
       <Section>
         {step(6, "Review and pay deposit", false)}
         {lines.length === 0 ? (
-          <p className="text-gray-400">Your services and total show up here.</p>
+          <p className="text-zinc-400">Your services and total show up here.</p>
         ) : (
           <div className="flex flex-col gap-1 text-lg">
             {lines.map((l) => (
@@ -353,7 +353,7 @@ export default function BookingForm({ catalog, canceledRef }: { catalog: Catalog
             <div className="mt-2 border-t border-zinc-600 pt-2">
               <Row label={<strong>Estimated total</strong>} value={<strong>{money(subtotal)}</strong>} />
             </div>
-            <p className="text-sm text-gray-400">Plus WA sales tax. Final price may change if the vehicle needs more work than expected.</p>
+            <p className="text-sm text-zinc-400">Plus WA sales tax. Final price may change if the vehicle needs more work than expected.</p>
           </div>
         )}
         {day && time && (
@@ -361,7 +361,7 @@ export default function BookingForm({ catalog, canceledRef }: { catalog: Catalog
             <CalendarDays className="text-primary" /> {dayTitle(day)} at {daySlots.find((s) => s.time === time)?.label}, {where === "shop" ? "at our shop" : "at your address"}
           </p>
         )}
-        <div className="rounded-lg bg-zinc-900 p-4 text-gray-300">
+        <div className="rounded-lg bg-zinc-900 p-4 text-zinc-300">
           A <strong className="text-white">{settings.depositPercent}% deposit</strong> holds your spot; you&apos;ll see the exact amount on the secure Stripe payment page. The rest is due
           after the detail. Cancel at least {settings.depositRefundDays} days ahead for a full deposit refund. We&apos;ll text you to confirm.
         </div>
@@ -408,10 +408,10 @@ function ServiceRow({ service: s, price, selected, onToggle }: { service: Servic
       </button>
       {s.description && (
         <div className="px-4 pb-3 pl-13">
-          <button type="button" onClick={() => setOpen((o) => !o)} className="text-sm text-gray-400 underline">
+          <button type="button" onClick={() => setOpen((o) => !o)} className="text-sm text-zinc-400 underline">
             {open ? "Hide details" : "What's included"}
           </button>
-          {open && <p className="mt-2 whitespace-pre-line text-sm text-gray-300">{s.description}</p>}
+          {open && <p className="mt-2 whitespace-pre-line text-sm text-zinc-300">{s.description}</p>}
         </div>
       )}
     </div>
@@ -422,7 +422,7 @@ function MonthGrid({ month, days, selected, onSelect }: { month: string; days: D
   const keys = Object.keys(days);
   return (
     <div className="flex flex-col gap-2">
-      <div className="grid grid-cols-7 gap-1 text-center text-sm font-semibold text-gray-400">
+      <div className="grid grid-cols-7 gap-1 text-center text-sm font-semibold text-zinc-400">
         {["S", "M", "T", "W", "T", "F", "S"].map((d, i) => (
           <span key={i}>{d}</span>
         ))}
@@ -464,7 +464,7 @@ function MonthGrid({ month, days, selected, onSelect }: { month: string; days: D
           );
         })}
       </div>
-      <div className="flex gap-4 text-sm text-gray-400">
+      <div className="flex gap-4 text-sm text-zinc-400">
         <span className="flex items-center gap-1.5">
           <span className="h-1.5 w-2.5 rounded-full bg-green-400" /> Open
         </span>
@@ -516,7 +516,7 @@ function AddressField({ value, onChange, onPick, invalid }: { value: string; onC
                   }}
                   className="flex w-full items-center gap-2 px-3 py-3 text-left hover:bg-zinc-700"
                 >
-                  <MapPin size={16} className="shrink-0 text-gray-400" />
+                  <MapPin size={16} className="shrink-0 text-zinc-400" />
                   {a.label}
                 </button>
               </li>
@@ -544,7 +544,7 @@ function Field({ label, className, children }: { label: string; className?: stri
 }
 
 function Label({ children }: { children: React.ReactNode }) {
-  return <span className="text-sm font-semibold uppercase tracking-wide text-gray-400">{children}</span>;
+  return <span className="text-sm font-semibold uppercase tracking-wide text-zinc-400">{children}</span>;
 }
 
 function Section({ children, dim }: { children: React.ReactNode; dim?: boolean }) {

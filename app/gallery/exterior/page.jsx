@@ -90,7 +90,7 @@ export default function PaintCorrectionGallery() {
           </h1>
           <strong className="page-subheading" style={{ textAlign: "center" }}>
             This is a showcase of our Exterior Wash service. Take a look at our{" "}
-            <a href="/services/exterior" className="text-blue-500">
+            <a href="/services/exterior" className="text-accent-hover">
               Exterior Decon Wash
             </a>{" "}
             page for more details and pricing.
@@ -114,10 +114,10 @@ export default function PaintCorrectionGallery() {
       <h3 className="text-4xl text-white font-bold text-center">Finished Results</h3>
       <ImageGallery images={images} altLabel="Exterior Decon Wash finished results" />
 
-      <div className="max-w-90% lg:max-w-[60%] mx-auto text-center">
+      <div className="max-w-[90%] lg:max-w-[60%] mx-auto text-center">
         <strong className="text-white text-3xl lg:text-4xl">
           Check out our{" "}
-          <a href="/services/exterior" className="text-blue-500">
+          <a href="/services/exterior" className="text-accent-hover">
             Exterior Decon Wash
           </a>{" "}
           page for more details!
