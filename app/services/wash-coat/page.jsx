@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import PricingComponent from "../../components/PricingComponent";
 import HeaderComponent from "../../components/HeaderComponent";
 import BeforeAfterSlider from "../../components/ImageSlider";
 import ImageGallery from "../../components/ImageGallery";
@@ -12,6 +11,10 @@ import { RiResetLeftLine } from "react-icons/ri";
 import { ExternalLink } from "lucide-react";
 import BaseSchema from "../../jsonSchemas/BaseSchema";
 import { Button } from "../../components/ui/Button";
+import { PricingEstimator } from "../../components/PricingEstimator";
+import { Section } from "../../components/ui/Section";
+import { SectionHeader } from "../../components/ui/SectionHeader";
+import { serviceBySlug } from "../../../utils/services";
 
 export default function Exterior() {
   const [expanded, setExpanded] = useState(false);
@@ -137,15 +140,10 @@ export default function Exterior() {
       <div className="main-content-container">
         <div className="process-container">
           <div className="w-full">
-            <div className="w-full bg-zinc-800 pb-8">
-              <div className="pricing__heading-container">
-                <h3 className="pricing__heading">
-                  <span className="text-accent bold">Wash & Coat</span> Pricing
-                </h3>
-                <strong className="pricing__subheading">Select your vehicle size for an estimate.</strong>
-              </div>
-              <PricingComponent shortTitle="extWashCoat" serviceType="exterior" addons="washCoat" />
-            </div>
+            <Section tone="surface" className="text-left">
+              <SectionHeader eyebrow="Pricing" title={`${serviceBySlug("wash-coat").name} pricing`} lead="Pick your vehicle size and any add-ons for an estimate." />
+              <PricingEstimator slug="wash-coat" />
+            </Section>
 
             <br className="extra-space" />
 

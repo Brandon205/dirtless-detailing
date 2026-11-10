@@ -1,6 +1,5 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import PricingComponent from "../../components/PricingComponent";
 import BeforeAfterSlider from "../../components/ImageSlider";
 import { containerVariant, oddVariant, evenVariant } from "../../../utils/animationVariations";
 import { motion } from "framer-motion";
@@ -13,6 +12,10 @@ import "react-medium-image-zoom/dist/styles.css";
 import ImageGallery from "../../components/ImageGallery";
 import BaseSchema from "../../jsonSchemas/BaseSchema";
 import { Button } from "../../components/ui/Button";
+import { PricingEstimator } from "../../components/PricingEstimator";
+import { Section } from "../../components/ui/Section";
+import { SectionHeader } from "../../components/ui/SectionHeader";
+import { serviceBySlug } from "../../../utils/services";
 
 const faqItems = [
   {
@@ -130,15 +133,10 @@ export default function ExteriorCorrect() {
       <div className="main-content-container">
         <div className="process-container">
           <div className="w-full">
-            <div className="w-full bg-zinc-800 pb-8">
-              <div className="pricing__heading-container">
-                <h3 className="pricing__heading">
-                  <span className="text-accent bold">Correct & Coat</span> Pricing
-                </h3>
-                <strong className="pricing__subheading">Select your vehicle size for an estimate.</strong>
-              </div>
-              <PricingComponent shortTitle="extCorrect" serviceType="exterior" addons="correction" />
-            </div>
+            <Section tone="surface" className="text-left">
+              <SectionHeader eyebrow="Pricing" title={`${serviceBySlug("correct").name} pricing`} lead="Pick your vehicle size and any add-ons for an estimate." />
+              <PricingEstimator slug="correct" />
+            </Section>
 
             <br className="extra-space" />
 

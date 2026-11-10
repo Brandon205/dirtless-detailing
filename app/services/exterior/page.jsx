@@ -1,5 +1,4 @@
 "use client";
-import PricingComponent from "../../components/PricingComponent";
 import HeaderComponent from "../../components/HeaderComponent";
 import ImageGallery from "../../components/ImageGallery";
 import BeforeAfterSlider from "../../components/ImageSlider";
@@ -9,6 +8,10 @@ import { ExternalLink } from "lucide-react";
 import BaseSchema from "../../jsonSchemas/BaseSchema";
 import { MdLocalCarWash } from "react-icons/md";
 import { PiSprayBottleFill } from "react-icons/pi";
+import { PricingEstimator } from "../../components/PricingEstimator";
+import { Section } from "../../components/ui/Section";
+import { SectionHeader } from "../../components/ui/SectionHeader";
+import { serviceBySlug } from "../../../utils/services";
 
 export default function Exterior() {
   return (
@@ -38,15 +41,10 @@ export default function Exterior() {
       <div className="main-content-container">
         <div className="process-container">
           <div className="w-full">
-            <div className="w-full bg-zinc-800 pb-8">
-              <div className="pricing__heading-container">
-                <h3 className="pricing__heading">
-                  <span className="text-accent bold">Exterior Decon Wash</span> Pricing
-                </h3>
-                <strong className="pricing__subheading">Select your vehicle size below to get a starting price estimate.</strong>
-              </div>
-              <PricingComponent shortTitle="extDecon" serviceType="exterior" addons="exterior" />
-            </div>
+            <Section tone="surface" className="text-left">
+              <SectionHeader eyebrow="Pricing" title={`${serviceBySlug("exterior").name} pricing`} lead="Pick your vehicle size and any add-ons for an estimate." />
+              <PricingEstimator slug="exterior" />
+            </Section>
 
             <main className="w-full text-white my-0 mx-auto text-center p-4">
               <div className="flex flex-col w-full gap-4 lg:w-5/6 mx-auto border-2 border-zinc-500 rounded-lg p-6 lg:p-8">

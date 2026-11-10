@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { CallLink } from "../components/CallTracking";
 import { crmCatalog } from "../../utils/crm";
 import BookingForm from "./BookingForm";
+import { preselectFromParams } from "./preselect";
 
 export const metadata: Metadata = {
   title: "Book Online",
@@ -9,8 +10,10 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.dirtlessdetailing.com/booking" },
 };
 
-export default async function BookingPage({ searchParams }: { searchParams: Promise<{ canceled?: string }> }) {
-  const [catalog, { canceled }] = await Promise.all([crmCatalog(), searchParams]);
+type Params = { canceled?: string; service?: string; size?: string; addons?: string };
+
+export default async function BookingPage({ searchParams }: { searchParams: Promise<Params> }) {
+  const [catalog, params] = await Promise.all([crmCatalog(), searchParams]);
   return (
     <div className="mx-auto w-full max-w-3xl px-4 pt-32 pb-16 text-white lg:pt-44">
       <h1 className="font-heading text-center text-4xl font-bold">Book Your Detail</h1>
@@ -22,7 +25,7 @@ export default async function BookingPage({ searchParams }: { searchParams: Prom
         or <CallLink className="text-primary underline">call or text (253) 252-9758</CallLink>.
       </p>
       {catalog ? (
-        <BookingForm catalog={catalog} canceledRef={canceled ?? null} />
+        <BookingForm catalog={catalog} canceledRef={params.canceled ?? null} preselect={preselectFromParams(catalog, params)} />
       ) : (
         <p className="rounded-xl bg-zinc-800 p-6 text-center text-lg">
           Online booking is down for a moment. Please <CallLink className="text-primary underline">call or text (253) 252-9758</CallLink> and we&apos;ll get you scheduled.

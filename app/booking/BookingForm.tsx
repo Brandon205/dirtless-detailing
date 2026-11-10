@@ -6,6 +6,7 @@ import type { AddressSuggestion, Catalog, DaySlots, Service } from "../../utils/
 import { cn } from "../../utils/cn";
 import { Turnstile } from "../components/Turnstile";
 import { getAvailability, releaseBooking, submitBooking, suggestAddresses } from "./actions";
+import type { Preselect } from "./preselect";
 
 // The online booking form. Prices shown here are estimates for the customer; the CRM prices the
 // booking again on submit, checks the time is still open, and takes the deposit through Stripe.
@@ -37,18 +38,18 @@ function priceOf(s: Service, sizeClassId: string | null, lengthFt: number | null
   return { cents: p.cents, durationMin: p.durationMin ?? s.durationMin ?? 0 };
 }
 
-export default function BookingForm({ catalog, canceledRef }: { catalog: Catalog; canceledRef: string | null }) {
+export default function BookingForm({ catalog, canceledRef, preselect }: { catalog: Catalog; canceledRef: string | null; preselect?: Preselect | null }) {
   const { sizes, services, rules, settings } = catalog;
   const [kind, setKind] = useState<Kind>("car");
-  const [sizeId, setSizeId] = useState<string | null>(null);
+  const [sizeId, setSizeId] = useState<string | null>(preselect?.sizeId ?? null);
   const [length, setLength] = useState("");
-  const [picked, setPicked] = useState<string[]>([]);
+  const [picked, setPicked] = useState<string[]>(preselect?.picked ?? []);
   const [where, setWhere] = useState<"shop" | "mobile">("shop");
   const [address, setAddress] = useState({ line1: "", city: "", zip: "" });
   const [month, setMonth] = useState(todayKey().slice(0, 7));
   const [day, setDay] = useState("");
   const [time, setTime] = useState("");
-  const [contact, setContact] = useState({ name: "", phone: "", email: "", vehicle: "", heardAbout: "", notes: "" });
+  const [contact, setContact] = useState({ name: "", phone: "", email: "", vehicle: "", heardAbout: "", notes: preselect?.notes ?? "" });
   const [token, setToken] = useState("");
   const [tokenKey, setTokenKey] = useState(0);
   const [error, setError] = useState<{ message: string; field?: string } | null>(null);

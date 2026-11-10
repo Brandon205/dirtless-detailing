@@ -9,7 +9,7 @@ const stats = [
 export function StatsStrip() {
   return (
     <div className="border-y border-line bg-surface">
-      <dl className="mx-auto grid max-w-[1280px] gap-px bg-line sm:grid-cols-2 lg:grid-cols-4">
+      <dl className="mx-auto grid max-w-[1280px] gap-px bg-line sm:grid-cols-2 lg:grid-cols-4 2xl:max-w-[1536px]">
         {stats.map(({ value, label }) => (
           <div key={label} className="flex flex-col-reverse justify-end bg-surface px-6 py-7 lg:py-9">
             <dt className="mt-1 text-sm text-muted">{label}</dt>

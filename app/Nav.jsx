@@ -5,6 +5,7 @@ import Image from "next/image";
 import { ChevronDown, Menu, Phone, X } from "lucide-react";
 import { CallLink, REAL_PHONE_DISPLAY } from "./components/CallTracking";
 import { Button, buttonClasses } from "./components/ui/Button";
+import { containerClass } from "./components/ui/Section";
 import { servicesIn } from "../utils/services";
 
 const navItems = (category) => servicesIn(category).map((s) => ({ name: s.name, href: s.href, image: s.navImage }));
@@ -89,7 +90,7 @@ export default function Nav() {
   return (
     <header className="relative z-50">
       <nav className="absolute inset-x-0 top-0 bg-zinc-900/90" aria-label="Main">
-        <div className="mx-auto flex h-20 max-w-[1280px] items-center justify-between gap-4 px-6">
+        <div className={`${containerClass} flex h-20 items-center justify-between gap-4`}>
           <Link href="/" className="relative block h-[70px] w-[140px] shrink-0 lg:h-[80px] lg:w-[160px]" onClick={close}>
             <Image src="/assets/images/showcase/homepage-logo.png" alt="Dirt-Less Detailing home" className="object-cover" sizes="160px" priority fill />
           </Link>

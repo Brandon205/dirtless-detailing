@@ -1,8 +1,8 @@
 import type { ReactNode } from "react";
 import { cn } from "../../../utils/cn";
 
-/** The page container: 1280px wide at most, with 24px side padding. */
-export const containerClass = "mx-auto w-full max-w-[1280px] px-6";
+/** The page container: 1280px wide, growing to 1536px on very large screens, with 24px side padding. */
+export const containerClass = "mx-auto w-full max-w-[1280px] px-6 2xl:max-w-[1536px]";
 
 type Props = {
   tone?: "base" | "surface";
