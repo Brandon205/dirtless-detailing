@@ -2,16 +2,14 @@
 import { useState, useEffect } from "react";
 import Benefits from "./Benefits";
 import { HeroSlider } from "./components/hero-slider";
-import { BookingButton } from "./components/BookingButton";
-import { topBtnVariant } from "../utils/animationVariations";
+
 import { InfiniteMovingCards } from "./components/InfiniteMovingCards";
 import FaqItem from "./components/FaqItem";
-import { motion } from "framer-motion";
-import { ClipboardCheck, PhoneCall, Snowflake, Laptop } from "lucide-react";
+import { Snowflake } from "lucide-react";
 import IframeSuspense from "../utils/IframeSuspense";
 import HomePageCard from "./components/HomePageCard";
 import HomePageSchema from "./jsonSchemas/HomePageSchema";
-import { CallLink } from "./components/CallTracking";
+import { Button } from "./components/ui/Button";
 
 export default function Home() {
   const [expanded, setExpanded] = useState(false);
@@ -108,43 +106,13 @@ export default function Home() {
                 <p className="text-white text-lg w-1/2 lg:w-full mx-auto">Valid until 2/14/25 on any Online Booking!</p>
               </div>
             </div> */}
-            <div className="flex gap-2 lg:gap-10 pt-6 flex-col lg:flex-row max-w-screen-lg w-full">
-              <motion.a
-                href="/contact"
-                className="top-quote-btn shadow-lg w-full lg:w-auto"
-                variants={topBtnVariant}
-                whileHover="hover"
-                transition={{ duration: 0.25 }}
-                style={{ textShadow: "0 2px 6px rgba(0,0,0,0.6)" }}
-              >
-                <ClipboardCheck
-                  style={{ filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5))" }}
-                  color="#ffffff"
-                  className="mr-2"
-                  size={smallScreen ? 24 : 36}
-                />
-                Contact Us
-              </motion.a>
-              <CallLink
-                as={motion.a}
-                className="top-quote-btn btn-secondary w-full lg:w-auto"
-                variants={topBtnVariant}
-                whileHover="hover"
-                transition={{ duration: 0.25 }}
-              >
-                <PhoneCall color="#ffffff" className="mr-2" size={smallScreen ? 24 : 36} />
-                (253) 252-9758
-              </CallLink>
-              <motion.a
-                href="/booking"
-                className="top-quote-btn btn-secondary w-full lg:w-auto"
-                variants={topBtnVariant}
-                whileHover="hover"
-                transition={{ duration: 0.25 }}
-              >
-                <Laptop color="#ffffff" className="mr-2" size={smallScreen ? 24 : 36} />
+            <div className="flex gap-4 pt-6 flex-col lg:flex-row max-w-screen-lg w-full">
+              <Button href="/booking" size="lg">
                 Book Online
-              </motion.a>
+              </Button>
+              <Button href="/inquiry" variant="secondary" size="lg" className="bg-zinc-950/40">
+                Send an Inquiry
+              </Button>
             </div>
             <span className="text-white bold leading-none">
               <span className="text-primary">Gift Cards</span> Available Now!
@@ -291,9 +259,9 @@ export default function Home() {
               Interior and Exterior detailing services for <span className="font-bold">any</span> of your other vehicles.
             </h3>
           </div>
-          <a href="/services/recreational" className="popular-readmore-secondary" aria-label="Learn more about our offers on recreational vehicles.">
-            Learn More
-          </a>
+          <Button href="/services/recreational" variant="secondary">
+            Explore recreational services
+          </Button>
         </div>
         {/* <div
           className="general-container new-heading-container flex flex-col lg:flex-row lg:items-center lg:justify-between"
@@ -400,12 +368,14 @@ export default function Home() {
         <div className="text-center w-[95vw] lg:w-full mx-auto">
           <h4 className="text-4xl font-bold py-6">24/7 ONLINE PRICING & BOOKING</h4>
 
-          <BookingButton title="Book Online!" />
+          <Button href="/booking" size="lg">
+            Book Online
+          </Button>
 
           <p className="pt-8 text-2xl w-[95vw] lg:w-full">Have a question first? Send us a message!</p>
-          <a href="/inquiry" className="mt-4 inline-block rounded-lg border-2 border-primary px-6 py-3 text-xl font-semibold hover:bg-primary hover:text-zinc-950">
-            Ask a question
-          </a>
+          <Button href="/inquiry" variant="secondary" size="lg" className="mt-4">
+            Send an Inquiry
+          </Button>
         </div>
 
         <br className="extra-space" />

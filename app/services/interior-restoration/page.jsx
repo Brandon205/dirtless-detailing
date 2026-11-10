@@ -8,6 +8,7 @@ import { LuAirVent } from "react-icons/lu";
 import HeaderComponent from "../../components/HeaderComponent";
 import BaseSchema from "../../jsonSchemas/BaseSchema";
 import ImageGallery from "../../components/ImageGallery";
+import { Button } from "../../components/ui/Button";
 
 export default function InteriorRestoration() {
   return (
@@ -118,18 +119,12 @@ export default function InteriorRestoration() {
                   worried about. Ideal for making a huge impact without spending more money.
                 </p>
                 <div className="flex justify-start gap-8 mt-4 flex-col lg:flex-row">
-                  <a
-                    href="/booking"
-                    className="text-white hover:underline text-xl font-semibold flex items-center gap-1 mt-2 bg-primary py-2 px-6 rounded-lg w-max"
-                  >
-                    <span>Book Hourly Block Online ($125-$150/hour)</span>
-                  </a>
-                  <a
-                    href="sms:+12532529758"
-                    className="text-white border-primary border-2 hover:underline text-xl font-semibold flex items-center gap-1 mt-2 py-2 px-6 rounded-lg w-max"
-                  >
-                    <span>Text Photos for an Estimate (253) 252-9758</span>
-                  </a>
+                  <Button href="/booking" size="lg">
+                    Book an Hourly Block
+                  </Button>
+                  <Button href="sms:+12532529758" variant="secondary" size="lg">
+                  Text photos for an estimate: (253) 252-9758
+                </Button>
                 </div>
               </div>
             </div>
@@ -194,12 +189,9 @@ export default function InteriorRestoration() {
               <p className="text-zinc-300 mb-6 text-lg">
                 Have questions or want a free quote on our Interior Restoration Service? Want to book an appointment? Get in touch with us today!
               </p>
-              <a
-                href="/contact"
-                className="inline-block px-8 py-3 bg-accent hover:bg-accent/90 text-black font-semibold rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-accent/50"
-              >
-                Get Started
-              </a>
+              <Button href="/booking" size="lg">
+                  Book Online
+                </Button>
             </div>
             <br className="extra-space" />
 

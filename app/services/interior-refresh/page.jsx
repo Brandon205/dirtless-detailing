@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { Flame, ExternalLink, Sparkles } from "lucide-react";
 import BaseSchema from "../../jsonSchemas/BaseSchema";
 import Image from "next/image";
+import { Button } from "../../components/ui/Button";
 
 export default function InteriorRefresh() {
   return (
@@ -196,12 +197,9 @@ export default function InteriorRefresh() {
               <p className="text-zinc-300 mb-6 text-lg">
                 Have questions about our Interior Refresh service? Want to book an appointment? Get in touch with us today!
               </p>
-              <a
-                href="/contact"
-                className="inline-block px-8 py-3 bg-accent hover:bg-accent/90 text-black font-semibold rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-accent/50"
-              >
-                Get Started
-              </a>
+              <Button href="/booking" size="lg">
+                  Book Online
+                </Button>
             </div>
 
             <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>

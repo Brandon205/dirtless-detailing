@@ -1,9 +1,10 @@
 "use client";
 import React from "react";
-import { BookingButton } from "../components/BookingButton";
+
 import { Clock, MapPin, Smartphone, Mail, Gift, Snowflake } from "lucide-react";
 import BaseSchema from "../jsonSchemas/BaseSchema";
 import { CallLink } from "../components/CallTracking";
+import { Button } from "../components/ui/Button";
 
 export default function Contact() {
   return (
@@ -33,7 +34,7 @@ export default function Contact() {
           <span className="text-primary">Online Gift Cards</span> Available Now!
         </span>
         <br />
-        <a href="https://app.urable.com/virtual-shop/pMe0iWXWCBfTL47sDvjd" target="_blank" rel="noopener noreferrer" className="text-sm text-zinc-300 bold leading-none underline">
+        <a href="/booking" className="text-sm text-zinc-300 bold leading-none underline">
           Buy a gift card online
         </a>
       </p>
@@ -55,7 +56,9 @@ export default function Contact() {
         <p className="ml-2">{step}</p>
       </motion.li> */}
       <div className="grid items-center" style={{ paddingTop: 0 }}>
-        <BookingButton title="Book Online!" />
+        <Button href="/booking" size="lg" className="mx-auto">
+          Book Online
+        </Button>
       </div>
       <div className="contact-information-container">
         <div className="contact-info-cards">
@@ -122,9 +125,9 @@ export default function Contact() {
           </p>
         </div>
         <div className="flex justify-center pt-6">
-          <a href="/inquiry" className="rounded-lg bg-primary px-8 py-4 text-xl font-bold text-zinc-950 hover:bg-accent-darker">
-            Send us a question
-          </a>
+          <Button href="/inquiry" variant="secondary" size="lg">
+            Send an Inquiry
+          </Button>
         </div>
       </div>
     </section>

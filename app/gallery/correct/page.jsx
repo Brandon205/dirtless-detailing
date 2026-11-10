@@ -1,11 +1,8 @@
 "use client";
-import { motion } from "framer-motion";
-import { ClipboardCheck, PhoneCall } from "lucide-react";
 import Image from "next/image";
 import "react-medium-image-zoom/dist/styles.css";
-import { topBtnVariant } from "../../../utils/animationVariations";
-import { CallLink } from "../../components/CallTracking";
 import ImageGallery from "../../components/ImageGallery";
+import { Button } from "../../components/ui/Button";
 
 const baImages = [
   { src: "/assets/images/before&afters/carwashTruckBA.jpg" },
@@ -84,13 +81,12 @@ export default function CoatingGallery() {
             page to learn more about this service!
           </strong>
           <div className="header-buttons">
-            <motion.a href="/contact" className="top-quote-btn" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
-              <ClipboardCheck color="#ffffff" className="mr-2" size={36} /> Get a Free Quote
-            </motion.a>
-            <CallLink as={motion.a} className="top-quote-btn btn-secondary" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
-              <PhoneCall color="#ffffff" className="mr-2" size={36} />
-              (253) 252-9758
-            </CallLink>
+            <Button href="/booking" size="lg">
+              Book Online
+            </Button>
+            <Button href="/inquiry" variant="secondary" size="lg" className="bg-zinc-950/40">
+              Send an Inquiry
+            </Button>
           </div>
         </div>
       </div>

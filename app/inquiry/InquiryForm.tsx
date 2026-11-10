@@ -5,6 +5,7 @@ import { Check, Loader2 } from "lucide-react";
 import { cn } from "../../utils/cn";
 import { Turnstile } from "../components/Turnstile";
 import { submitInquiry } from "./actions";
+import { Button } from "../components/ui/Button";
 
 const inputClass = "w-full rounded-md border border-zinc-600 bg-zinc-900 px-3 py-3 text-lg text-white outline-none focus:border-primary";
 
@@ -41,9 +42,9 @@ export default function InquiryForm({ services }: { services: string[] }) {
         </span>
         <h2 className="font-heading text-2xl font-bold">Thanks, {f.name.split(" ")[0]}!</h2>
         <p className="text-lg text-zinc-300">We got your message and will get back to you soon, usually the same day.</p>
-        <a href="/booking" className="mt-2 rounded-lg bg-primary px-6 py-3 text-lg font-bold text-zinc-950 hover:bg-accent-darker">
-          See prices and book online
-        </a>
+        <Button href="/booking" size="lg" className="mt-2">
+          Book Online
+        </Button>
       </div>
     );
   }

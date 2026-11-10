@@ -7,6 +7,7 @@ import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrig
 
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import { serviceByPriceKey } from "../../utils/services";
 const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
   ssr: false
 });
@@ -200,11 +201,11 @@ export default function PricingComponent(props) {
           </div>
           <div>
             <a
-              href="/contact"
+              href="/booking"
               className="py-3 text-black text-xl tracking-wide px-[0.9rem] bg-primary rounded-xl w-full font-bold items-center flex justify-center"
             >
-              SCHEDULE NOW!
-              <ArrowRight color="#000" />
+              Book {serviceByPriceKey(props.shortTitle)?.name}
+              <ArrowRight aria-hidden="true" />
             </a>
           </div>
         </div>

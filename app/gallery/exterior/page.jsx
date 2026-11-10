@@ -2,11 +2,8 @@
 import React from "react";
 import ImageGallery from "../../components/ImageGallery";
 import Image from "next/image";
-import { topBtnVariant } from "../../../utils/animationVariations";
-import { motion } from "framer-motion";
-import { PhoneCall, ClipboardCheck } from "lucide-react";
 import "react-medium-image-zoom/dist/styles.css";
-import { CallLink } from "../../components/CallTracking";
+import { Button } from "../../components/ui/Button";
 
 const baImages = [
   { src: "/assets/images/before&afters/rearBA2.jpg" },
@@ -96,15 +93,12 @@ export default function PaintCorrectionGallery() {
             page for more details and pricing.
           </strong>
           <div className="header-buttons">
-            <motion.a href="/contact" className="top-quote-btn" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
-              <ClipboardCheck color="#ffffff" className="mr-2" size={36} />
-              BOOK NOW!
-            </motion.a>
-            <CallLink as={motion.a} className="top-quote-btn btn-secondary" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
-              {/* <Image src="/assets/icons/phone-call-message.svg" alt="call or message" className="btn-icon text-white" width={36} height={36} /> */}
-              <PhoneCall color="#ffffff" className="mr-2" size={36} />
-              (253) 252-9758
-            </CallLink>
+            <Button href="/booking" size="lg">
+              Book Online
+            </Button>
+            <Button href="/inquiry" variant="secondary" size="lg" className="bg-zinc-950/40">
+              Send an Inquiry
+            </Button>
           </div>
         </div>
       </div>

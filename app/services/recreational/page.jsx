@@ -5,6 +5,7 @@ import FaqItem from "../../components/FaqItem";
 import ImageGallery from "../../components/ImageGallery";
 import Image from "next/image";
 import BaseSchema from "../../jsonSchemas/BaseSchema";
+import { Button } from "../../components/ui/Button";
 
 const faqItems = [
   {
@@ -144,18 +145,12 @@ export default function Recreational() {
                 text and we'll see if we can work something out!
               </p>
               <div className="flex justify-start gap-8 mt-4 flex-col lg:flex-row">
-                <a
-                  href="sms:+12532529758"
-                  className="text-white hover:underline text-xl font-semibold flex items-center gap-1 mt-2 bg-primary py-2 px-6 rounded-lg w-max"
-                >
-                  <span>Call/Text any questions: (253) 252-9758</span>
-                </a>
-                <a
-                  href="/contact"
-                  className="text-white border-primary border-2 hover:underline text-xl font-semibold flex items-center gap-1 mt-2 py-2 px-6 rounded-lg w-max"
-                >
-                  <span>Contact Us</span>
-                </a>
+                <Button href="/inquiry" size="lg">
+                  Send an Inquiry
+                </Button>
+                <Button href="sms:+12532529758" variant="secondary" size="lg">
+                  Call or text (253) 252-9758
+                </Button>
               </div>
             </div>
           </div>
@@ -163,14 +158,11 @@ export default function Recreational() {
           <div className="mt-12 p-6 lg:p-8 bg-gradient-to-r from-zinc-800 to-zinc-700 rounded-lg border border-accent/30 text-center">
             <h3 className="text-2xl lg:text-3xl font-bold text-white mb-3">Have something that needs a good detail?</h3>
             <p className="text-zinc-300 mb-6 text-lg">
-              If you have any questions or want a free quote on our Recreational detailing services click Get Started to get in touch!
+              If you have any questions or want a free quote on our Recreational detailing services send us an inquiry!
             </p>
-            <a
-              href="/contact"
-              className="inline-block px-8 py-3 bg-accent hover:bg-accent/90 text-black font-semibold rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-accent/50"
-            >
-              Get Started
-            </a>
+            <Button href="/inquiry" size="lg">
+              Send an Inquiry
+            </Button>
           </div>
 
           <div id="faq" style={{ width: "90%", margin: "0 auto", paddingTop: "2rem" }}>

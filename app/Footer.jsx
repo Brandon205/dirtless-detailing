@@ -2,6 +2,7 @@ import Image from "next/image";
 import { PhoneCall, Mail, MapPin } from "lucide-react";
 import Link from "next/link";
 import { CallLink } from "./components/CallTracking";
+import { servicesIn } from "../utils/services";
 
 export default function Footer() {
   return (
@@ -69,28 +70,17 @@ export default function Footer() {
       <div className="footer-content-card" style={{ paddingBottom: "2rem" }}>
         <h3 className="font-medium">SERVICES</h3>
         <div className="flex flex-col gap-4 mt-4">
-          <Link href="/services/interior-refresh" className="no-underline text-zinc-400 hover:underline hover:text-zinc-300">
-            Interior Refresh
-          </Link>
-          <Link href="/services/interior" className="no-underline text-zinc-400 hover:underline hover:text-zinc-300">
-            Full Interior Detail
-          </Link>
-          <Link href="/services/interior-restoration" className="no-underline text-zinc-400 hover:underline hover:text-zinc-300">
-            Interior Restoration
-          </Link>
+          {servicesIn("interior").map((s) => (
+            <Link key={s.slug} href={s.href} className="no-underline text-zinc-400 hover:underline hover:text-zinc-300">
+              {s.name}
+            </Link>
+          ))}
           <hr style={{ marginTop: "1.5rem" }} />
-          <Link href="/services/exterior" className="no-underline text-zinc-400 hover:underline hover:text-zinc-300">
-            Exterior Decon Wash
-          </Link>
-          <Link href="/services/wash-coat" className="no-underline text-zinc-400 hover:underline hover:text-zinc-300">
-            Exterior Wash & Coat
-          </Link>
-          <Link href="/services/polish" className="no-underline text-zinc-400 hover:underline hover:text-zinc-300">
-            Exterior Polish & Coat
-          </Link>
-          <Link href="/services/correct" className="no-underline text-zinc-400 hover:underline hover:text-zinc-300">
-            Exterior Correct & Coat
-          </Link>
+          {servicesIn("exterior").map((s) => (
+            <Link key={s.slug} href={s.href} className="no-underline text-zinc-400 hover:underline hover:text-zinc-300">
+              {s.name}
+            </Link>
+          ))}
         </div>
       </div>
       <div className="footer-content-card footer-contact-card" id="contact">

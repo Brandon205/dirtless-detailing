@@ -109,15 +109,15 @@ export default function HomePageCard({
               whileHover={{ scale: 1.05 }}
               aria-label={`Learn More about our ${title} service.`}
             >
-              MORE INFO
+              Details
             </motion.a>
             <motion.a
-              href="/contact"
+              href="/booking"
               className={`py-3 tracking-wide px-[0.9rem] ${colors.bgHighlight} rounded-[40px] w-full font-bold items-center flex justify-center`}
               initial={{ scale: 1 }}
               whileHover={{ scale: 1.05 }}
             >
-              SCHEDULE NOW
+              Book
             </motion.a>
           </div>
         </div>

@@ -11,6 +11,7 @@ import { FaShieldAlt } from "react-icons/fa";
 import { RiResetLeftLine } from "react-icons/ri";
 import { ExternalLink } from "lucide-react";
 import BaseSchema from "../../jsonSchemas/BaseSchema";
+import { Button } from "../../components/ui/Button";
 
 export default function Exterior() {
   const [expanded, setExpanded] = useState(false);
@@ -330,18 +331,12 @@ export default function Exterior() {
                 and the results.
               </p>
               <div className="flex flex-col items-center lg:items-start lg:flex-row gap-8 justify-center">
-                <a
-                  href="/contact"
-                  className="text-white hover:underline text-xl font-semibold flex items-center gap-1 mt-2 bg-primary py-2 px-6 rounded-lg w-max"
-                >
-                  <span>Contact Page</span>
-                </a>
-                <a
-                  href="sms:+12532529758"
-                  className="text-white border-primary border-2 hover:underline text-xl font-semibold flex items-center gap-1 mt-2 py-2 px-6 rounded-lg"
-                >
-                  <span>Call or Text to setup a consultation: (253) 252-9758</span>
-                </a>
+                <Button href="/inquiry" size="lg">
+                  Send an Inquiry
+                </Button>
+                <Button href="sms:+12532529758" variant="secondary" size="lg">
+                  Call or text (253) 252-9758
+                </Button>
               </div>
             </div>
           </div>

@@ -2,6 +2,12 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { Phone } from "lucide-react";
+import { CallLink, REAL_PHONE_DISPLAY } from "./components/CallTracking";
+import { Button, buttonClasses } from "./components/ui/Button";
+import { servicesIn } from "../utils/services";
+
+const navItems = (category) => servicesIn(category).map((s) => ({ name: s.name, href: s.href, bgImage: s.navImage }));
 
 export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -33,61 +39,9 @@ export default function Nav() {
 
   const dropdowns = {
     services: [
-      {
-        title: "INTERIOR DETAILING SERVICES",
-        items: [
-          {
-            name: "Interior Refresh",
-            href: "/services/interior-refresh",
-            bgImage: "/assets/images/interior/driver15.jpg"
-          },
-          {
-            name: "Full Interior Detail",
-            href: "/services/interior",
-            bgImage: "/assets/images/interior/driver16.jpg"
-          },
-          {
-            name: "Interior Restoration",
-            href: "/services/interior-restoration",
-            bgImage: "/assets/images/before&afters/badInteriorBA.png"
-          }
-        ]
-      },
-      {
-        title: "EXTERIOR SERVICES",
-        items: [
-          {
-            name: "Exterior Decon Wash",
-            href: "/services/exterior",
-            bgImage: "/assets/images/exterior/subaruWashed.jpeg"
-          },
-          {
-            name: "Wash & Coat",
-            href: "/services/wash-coat",
-            bgImage: "/assets/images/exterior/crTesla.jpg"
-          },
-          {
-            name: "Polish & Coat",
-            href: "/services/polish",
-            bgImage: "/assets/images/correction/teslaclean.jpg"
-          },
-          {
-            name: "Correct & Coat",
-            href: "/services/correct",
-            bgImage: "/assets/images/correction/genesis3.jpeg"
-          }
-        ]
-      },
-      {
-        title: "RECREATIONAL DETAILING",
-        items: [
-          {
-            name: "Boats/RV's/Trailers & ORV's",
-            href: "/services/recreational",
-            bgImage: "/assets/images/recreational/RVWash.jpg"
-          }
-        ]
-      }
+      { title: "INTERIOR DETAILING SERVICES", items: navItems("interior") },
+      { title: "EXTERIOR SERVICES", items: navItems("exterior") },
+      { title: "RECREATIONAL DETAILING", items: navItems("recreational") }
     ],
     gallery: [
       {
@@ -131,7 +85,7 @@ export default function Nav() {
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex lg:items-center lg:space-x-8">
+            <div className="hidden lg:flex lg:items-center lg:space-x-2 xl:space-x-4 2xl:space-x-8">
               <Link href="/" className="text-zinc-100 hover:text-amber-300 px-3 py-2 font-bold transition-colors">
                 Home
               </Link>
@@ -267,16 +221,23 @@ export default function Nav() {
               <Link href="/about" className="text-zinc-100 hover:text-amber-300 px-3 py-2 font-bold transition-colors">
                 About Us
               </Link>
+              <Link href="/contact" className="text-zinc-100 hover:text-amber-300 px-3 py-2 font-bold transition-colors">
+                Contact
+              </Link>
             </div>
-            <Link
-              href="/contact"
-              className="hidden lg:inline-flex absolute right-0 mr-4 lg:mr-8 items-center justify-center px-6 py-2.5 border border-transparent rounded-md shadow-md text-base font-medium text-white bg-accent hover:bg-accent-darker transition-colors"
-            >
-              CONTACT US
-            </Link>
+            <div className="hidden lg:flex absolute right-0 mr-4 lg:mr-8 items-center gap-5">
+              <CallLink className="hidden min-[1400px]:inline font-bold text-zinc-100 hover:text-amber-300 transition-colors">{REAL_PHONE_DISPLAY}</CallLink>
+              <Button href="/booking">Book Online</Button>
+            </div>
 
             {/* Mobile menu button */}
-            <div className="lg:hidden flex items-center justify-self-end">
+            <div className="lg:hidden flex items-center gap-1 justify-self-end">
+              <CallLink
+                aria-label={`Call or text ${REAL_PHONE_DISPLAY}`}
+                className="inline-flex size-11 items-center justify-center rounded-md text-zinc-200 hover:text-white"
+              >
+                <Phone aria-hidden="true" className="h-6 w-6" />
+              </CallLink>
               <button
                 type="button"
                 className="inline-flex items-center justify-center p-2 rounded-md text-zinc-200 hover:text-white focus:outline-none"
@@ -415,13 +376,16 @@ export default function Nav() {
                 About Us
               </Link>
 
-              <Link
-                href="/contact"
-                className="block w-full text-center px-6 py-4 mt-6 text-xl font-medium text-white bg-accent hover:bg-accent-darker rounded-md transition-colors"
-                onClick={closeMenu}
-              >
-                CONTACT US
+              <Link href="/contact" className="block text-center text-2xl font-medium text-white hover:text-amber-300 py-3 transition-colors" onClick={closeMenu}>
+                Contact
               </Link>
+
+              <Button href="/booking" size="lg" className="mt-6 w-full" onClick={closeMenu}>
+                Book Online
+              </Button>
+              <CallLink className={buttonClasses({ variant: "secondary", size: "lg", className: "w-full" })} onClick={closeMenu}>
+                Call or text {REAL_PHONE_DISPLAY}
+              </CallLink>
             </div>
           </div>
         </div>

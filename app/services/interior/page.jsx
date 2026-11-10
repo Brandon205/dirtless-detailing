@@ -8,6 +8,7 @@ import { ExternalLink } from "lucide-react";
 import { GiSpill, GiVacuumCleaner } from "react-icons/gi";
 import { motion } from "framer-motion";
 import BaseSchema from "../../jsonSchemas/BaseSchema";
+import { Button } from "../../components/ui/Button";
 
 export default function FullIntEx() {
   return (
@@ -190,12 +191,9 @@ export default function FullIntEx() {
               <p className="text-zinc-300 mb-6 text-lg">
                 Have questions about our Full Interior Service? Want to book an appointment? Get in touch with us today!
               </p>
-              <a
-                href="/contact"
-                className="inline-block px-8 py-3 bg-accent hover:bg-accent/90 text-black font-semibold rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-accent/50"
-              >
-                Get Started
-              </a>
+              <Button href="/booking" size="lg">
+                  Book Online
+                </Button>
             </div>
             <br className="extra-space" />
 

@@ -1,9 +1,6 @@
 "use client";
-import { motion } from "framer-motion";
-import { topBtnVariant } from "../../utils/animationVariations";
-import { PhoneCall, ClipboardCheck } from "lucide-react";
 import Image from "next/image";
-import { CallLink } from "./CallTracking";
+import { Button } from "./ui/Button";
 
 export default function HeaderComponent({ imageUrl, title, description, secondaryUrl }) {
   return (
@@ -16,14 +13,12 @@ export default function HeaderComponent({ imageUrl, title, description, secondar
           <h1 className="text-center lg:text-left text-accent bold text-shadow font-heading">{title}</h1>
           <h2 className="page-subheading lg:max-w-[550px]">{description}</h2>
           <div className="header-buttons">
-            <motion.a href="/contact" className="top-quote-btn" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
-              <ClipboardCheck color="#ffffff" className="mr-2" size={36} />
-              BOOK NOW!
-            </motion.a>
-            <CallLink as={motion.a} className="top-quote-btn btn-secondary" variants={topBtnVariant} whileHover="hover" transition={{ duration: 0.25 }}>
-              <PhoneCall color="#ffffff" className="mr-2" size={36} />
-              (253) 252-9758
-            </CallLink>
+            <Button href="/booking" size="lg">
+              Book Online
+            </Button>
+            <Button href="/inquiry" variant="secondary" size="lg" className="bg-zinc-950/40">
+              Send an Inquiry
+            </Button>
           </div>
         </div>
         <div className="service-image">
