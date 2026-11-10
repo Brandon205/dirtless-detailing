@@ -29,7 +29,7 @@ export const services: Service[] = [
     href: "/services/interior-refresh",
     name: "Interior Refresh",
     category: "interior",
-    description: "For newer or fairly clean vehicles, or ones detailed in the last year. Restores that like-new feel.",
+    description: "For newer or fairly clean vehicles, or ones detailed in the last 6 months - 1 year. Restores that like-new feel.",
     bullets: ["Air blow-out and vacuum", "Surfaces cleaned and conditioned", "Door jambs wiped down"],
     hours: "2-4",
     priceKey: { type: "interior", key: "intRefresh" },

@@ -1,400 +1,250 @@
-"use client";
-import { useState, useEffect } from "react";
-import Benefits from "./Benefits";
+import Image from "next/image";
+import Link from "next/link";
 import { HeroSlider } from "./components/hero-slider";
-
-import { InfiniteMovingCards } from "./components/InfiniteMovingCards";
-import FaqItem from "./components/FaqItem";
-import { Snowflake } from "lucide-react";
-import IframeSuspense from "../utils/IframeSuspense";
-import HomePageCard from "./components/HomePageCard";
 import HomePageSchema from "./jsonSchemas/HomePageSchema";
+import { StatsStrip } from "./components/StatsStrip";
+import { VideoEmbed } from "./components/VideoEmbed";
+import { Badge } from "./components/ui/Badge";
 import { Button } from "./components/ui/Button";
+import { CtaBand } from "./components/ui/CtaBand";
+import { Faq } from "./components/ui/Faq";
+import { Section, containerClass } from "./components/ui/Section";
+import { SectionHeader } from "./components/ui/SectionHeader";
+import { ServiceCard } from "./components/ui/ServiceCard";
+import { serviceBySlug, servicesIn } from "../utils/services";
+
+const GOOGLE_REVIEWS = "https://www.google.com/localservices/prolist?g2lbs=ADZRdktLAaGKKobG3aZn2_Qd9tpM-f3ifTKQp4hXsZnMmVk1USpK7Ha4kZIeLdSCTp26Z3uD8UBdDwRY7Zqn7XZatg-9z1GI86mqJXoiFQCA1rCg0Vis_yQK9JiR9qrRMObWwAegw9aPUbKd01T05_4R3o4ry_qhHA%3D%3D&hl=en-US&gl=us&cs=1&ssta=1&q=dirtless%20detailing&oq=dirtless%20detailing&slp=MgA6HENoTUlxZVd0Nkl2SV9nSVY2UTZ0QmgyZWJnaVJSAggCYAB6-gFDaEprYVhKMGJHVnpjeUJrWlhSaGFXeHBibWRJNnZqVDFhcTRnSUFJV2h3UUFCQUJHQUFZQVNJU1pHbHlkR3hsYzNNZ1pHVjBZV2xzYVc1bmtnRVZZMkZ5WDJSbGRHRnBiR2x1WjE5elpYSjJhV05sbWdFa1EyaGtSRk5WYUU1TlJ6bHVVekJXU2xFd1JtNVRWVkpEV2pKYVNHTnVhRzVTVWtGQ3FnRTZFQUV5SGhBQklocEZwOXktNVEwdWdLbGRqT2pnOEdvLWlaQlZ5NUdlSjh3QjV6SVdFQUlpRW1ScGNuUnNaWE56SUdSbGRHRnBiR2x1Wi1BQkFBkgG0AgoNL2cvMTFzYnBjOV8zYgoNL2cvMTFmcDJwN3dtbgoNL2cvMTFrMndndnhyegoNL2cvMTFzbXZfbm13MQoLL2cvMXRmM2I3bHQKDS9nLzExZ2w0dDJkY20KDC9nLzEyNjBieGxoNgoNL2cvMTFwMTN5MnQ4cQoNL2cvMTFjbnpuX3p3agoNL2cvMTFqcTlwcGtfNwoNL2cvMTFneTRsejU5aAoNL2cvMTF0ZDhjN195NQoNL2cvMTFrNDVzNzVmcwoNL2cvMTFnMnhjbHBxMwoNL2cvMTFzNTFrN2YzdAoNL2cvMTFzM2YwMHZzcAoML2cvMTFnem44M3diCg0vZy8xMW5uMGhzanF2Cg0vZy8xMWZxcXoxdmdwCg0vZy8xMXQ0ZmprMDltEgQSAggBEgQKAggB&src=2&spp=Cg0vZy8xMXNicGM5XzNiOtABV2h3UUFCQUJHQUFZQVNJU1pHbHlkR3hsYzNNZ1pHVjBZV2xzYVc1bmtnRVZZMkZ5WDJSbGRHRnBiR2x1WjE5elpYSjJhV05sbWdFa1EyaGtSRk5WYUU1TlJ6bHVVekJXU2xFd1JtNVRWVkpEV2pKYVNHTnVhRzVTVWtGQ3FnRTZFQUV5SGhBQklocEZwOXktNVEwdWdLbGRqT2pnOEdvLWlaQlZ5NUdlSjh3QjV6SVdFQUlpRW1ScGNuUnNaWE56SUdSbGRHRnBiR2x1Wnc9PQ%3D%3D&serdesk=1&lrlstt=1682530844021&ved=2ahUKEwiSvKHoi8j-AhWfHjQIHT0kD2MQvS56BAgwEAE&scp=ChpnY2lkOmNhcl9kZXRhaWxpbmdfc2VydmljZRJgEhIJeUAf2e38kFQRVTQwKEuFSMMiMkRpcnQtTGVzcyBEZXRhaWxpbmcsIDkzMDUgMjA1dGggQXZlIEUsIEJvbm5leSBMYWtlKhQNCAEeHBXFWjC3HQgBHhwlxVowtzAAGhJkaXJ0bGVzcyBkZXRhaWxpbmciEmRpcnRsZXNzIGRldGFpbGluZyoVQ2FyIGRldGFpbGluZyBzZXJ2aWNl#ts=3";
+const FACEBOOK_REVIEWS = "https://www.facebook.com/DirtLessDetailing/reviews";
+
+const heroImages = [
+  "/assets/images/showcase/range-rover-left.webp",
+  "/assets/images/showcase/ceramicBeads1.webp",
+  "/assets/images/showcase/redGTRWipe.jpg",
+  "/assets/images/showcase/brandonBMW.jpg",
+  "/assets/images/showcase/fordGTBack.webp",
+  "/assets/images/showcase/driverNewLexus.webp",
+  "/assets/images/correction/bPressure.jpg"
+];
+
+// `highlight` is the sentence shown in white semibold.
+const reviews = [
+  {
+    before: "Had an issue with the interior of a vehicle that had been in a garage for too long. Dirt-Less handled it professionally and quickly.",
+    highlight: "We will definitely keep going back for our needs.",
+    after: "",
+    name: "Jonathon H.",
+    service: "Full Interior Detail"
+  },
+  {
+    before: "Brenden does an amazing job. My car looks amazing.",
+    highlight: "He is super reasonable in his pricing and was very efficient.",
+    after: "Will definitely continue to use his service for all our vehicles.",
+    name: "Kristi H.",
+    service: "Full Interior Detail"
+  },
+  {
+    before: "Brought in my 12 Escalade and he worked his magic on both inside and outside.",
+    highlight: "Brenden is very good at what he does, the vehicle looks amazing. Better than it was when I bought it.",
+    after: "Thank you so much for getting me into your schedule. I am Extremely pleased with the outcome of your services.",
+    name: "Rob B.",
+    service: "Full Interior Detail"
+  }
+];
+
+const faqs = [
+  {
+    question: "How do I wash and maintain a ceramic coating?",
+    answer: (
+      <>
+        Our full Ceramic Coating Maintenance Guide is on our{" "}
+        <Link href="/products?category=Ceramic Maintenance" className="font-semibold text-accent-hover hover:underline">
+          Products page
+        </Link>
+        . It covers everything you need to know, including the products and techniques we recommend.
+      </>
+    ),
+    answerText:
+      "Our full Ceramic Coating Maintenance Guide is on our Products page. It covers everything you need to know, including the products and techniques we recommend."
+  },
+  {
+    question: "After dropping off I won't have a ride home. What are my options?",
+    answerText:
+      "No worries, it happens all the time! We've brought people back home, picked their car up and dropped it off later, and we've even had customers order an Uber straight from our shop. All of these are included as long as you're within 20 minutes of our shop. Let us know which option works best for you!"
+  },
+  {
+    question: "What areas do you service?",
+    answerText:
+      "Our shop is in Buckley, Washington. For mobile services we typically go as far north as Kent and as far south as Graham. Contact us if you have questions about your location!"
+  },
+  {
+    question: "What forms of payment do you take?",
+    answerText:
+      "We take all widely accepted debit and credit cards. We also accept checks, and can text or email you an invoice to pay online if needed."
+  },
+  {
+    question: "Do you offer gift cards?",
+    answerText: "Yes! Any of our services can be bought as a gift card. Get one through our online booking page, or call or text us."
+  },
+  {
+    question: "How does booking with Dirt-Less Detailing work?",
+    answerText:
+      "Pick your services and an open time on our booking page, then hold it with a small deposit. Expect a text from us the day before your detail to make sure the time still works, and we'll see you then!"
+  }
+].map((f) => ({ ...f, answer: f.answer ?? f.answerText }));
 
 export default function Home() {
-  const [expanded, setExpanded] = useState(false);
-  const [smallScreen, setSmallScreen] = useState(false);
-
-  useEffect(() => {
-    if (window.innerWidth < 979) {
-      setSmallScreen(true);
-    } else {
-      setSmallScreen(false);
-    }
-  }, []);
-
-  const faqItems = [
-    {
-      title: "How do I wash/maintain a Ceramic Coating?",
-      description: (
-        <div>
-          We have a full Ceramic Coating Maintenance Guide available on our{" "}
-          <a href="/products?category=Ceramic Maintenance" className="text-accent-hover hover:underline">
-            Products page
-          </a>
-          , which includes everything you need to know about maintaining your ceramic coating, including recommended products and techniques!
-        </div>
-      )
-    },
-    {
-      title: "After dropping off I won't have a ride back to my house, what are my options?",
-      description:
-        "No worries, it happens all the time! We have done everything from bringing people back home, picking their car up and dropping it off later, we've even had customers order an Uber straight from our shop. All of these are included, as long as you are within 20 minutes of our shop. Let us know which one of these options work best for you!"
-    },
-    {
-      title: "What areas do you service?",
-      description:
-        "We currently have our main shop location in Buckley, Washington. For our mobile services we will go typically as far north as Kent, and as far south as Graham. Contact us if you have specific questions on your location!"
-    },
-    {
-      title: "What forms of payment do you take?",
-      description:
-        "We can take payment via any widely accepted debit/credit card companies. We also accept checks and can text/email you an invoice to pay online if needed as well."
-    },
-    {
-      title: "Do you offer gift cards or gift certificates?",
-      description:
-        "Yes we do! Any of our services can be bought as a gift certificate. Use the Book Online button below to purchase one, or reach out to us via call/text to get one!"
-    },
-    {
-      title: "How does booking with Dirt-Less Detailing work?",
-      description:
-        "Once you have booked an appointment with us you're set (if you booked online through Urable you will see your appointment date and time got accepted). From then expect a text the day before your detail to ensure that the time you picked still works. Once confirmed we will see you for your detail the next day!"
-    }
-  ];
+  const recreational = serviceBySlug("recreational");
 
   return (
-    <div>
+    <div className="bg-page text-ink">
       <HomePageSchema />
-      <HeroSlider
-        images={[
-          "/assets/images/showcase/range-rover-left.webp",
-          "/assets/images/showcase/ceramicBeads1.webp",
-          "/assets/images/showcase/redGTRWipe.jpg",
-          "/assets/images/showcase/brandonBMW.jpg",
-          "/assets/images/showcase/fordGTBack.webp",
-          "/assets/images/showcase/driverNewLexus.webp",
-          "/assets/images/correction/bPressure.jpg"
-        ]}
-      >
-        <header className="w-screen flex flex-col h-[90vh] pt-20 z-50 items-center lg:items-start lg:pl-20 xl:gap-3 text-sm xl:text-lg justify-center">
-          {/* <strong
-            className="bg-accent font-bold text-xl lg:text-3xl max-w-[95vw] px-4 py-2 rounded-lg mb-4 flex items-center gap-2 text-white shadow-lg ring-1 ring-black/20 drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]"
-            style={{ textShadow: "0 2px 6px rgba(0,0,0,0.6)" }}
+
+      <HeroSlider images={heroImages} overlayClassName="bg-black/55" className="h-auto min-h-[640px] lg:h-[90vh] lg:min-h-[680px]">
+        <div className={`${containerClass} relative z-50 py-32 lg:py-24`}>
+          <p className="text-eyebrow font-bold uppercase text-accent">Buckley, WA · Mobile from Kent to Graham</p>
+          <h1 className="mt-4 max-w-4xl text-balance text-hero-sm font-extrabold text-white md:text-hero">Your Ceramic Coating & Auto Detailing Specialists</h1>
+          <p className="mt-6 max-w-2xl text-lead text-zinc-200">
+            Everything from removing stains from your interior to our most detail-oriented paint correction and ceramic coating jobs. You can trust Dirt-Less
+            Detailing to get the job done right.
+          </p>
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <Button href="/booking" size="lg">
+              Book Online
+            </Button>
+            <Button href="/inquiry" variant="secondary" size="lg" className="bg-zinc-950/40">
+              Send an Inquiry
+            </Button>
+          </div>
+          <Link
+            href="/booking"
+            className="group mt-8 inline-flex items-center gap-3 rounded-full border border-white/15 bg-zinc-950/50 py-1.5 pl-1.5 pr-4 text-sm font-semibold text-white transition-colors hover:border-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           >
-            <Snowflake style={{ filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5))" }} size={36} className="text-white" /> Winter Sale: 20% Off Our Main
-            Services!
-          </strong> */}
-          <div className="text-center lg:text-left">
-            <strong className="text-zinc-400 text-lg lg:text-xl">Dirt-Less Detailing</strong>
-            <h1 className="text-white font-heading text-4xl xl:text-7xl xl:text-left font-bold m-0 lg:max-w-[60%]">
-              Your Ceramic Coating & Auto Detailing Specialists
-            </h1>
-          </div>
-          <div className="text-center lg:text-left">
-            <p className="text-zinc-200 max-w-screen-md font-semibold text-left m-0 text-xl hidden xl:block">
-              Everything from removing stains from your interior, to our most detail-oriented paint correction and ceramic coating jobs, you can trust Dirt-Less
-              Detailing to get the job done right!
-            </p>
-            {/* <div className="flex gap-2 lg:gap-8 items-center py-4 flex-col lg:flex-row max-w-[90%] mx-auto lg:mx-0">
-              <Image src="/assets/icons/valentinesGift.svg" alt="valentines gift box" width={48} height={48} />
-              <div>
-                <p className="text-[#dd9fc0] font-medium text-2xl">
-                  <span className="text-[#dd9fc0] font-extrabold text-2xl">10% OFF </span>
-                  all details and Gift Cards with code: <span className="text-[#dd9fc0] font-extrabold text-2xl">VALENTINE10</span>
-                </p>
-                <p className="text-white text-lg w-1/2 lg:w-full mx-auto">Valid until 2/14/25 on any Online Booking!</p>
-              </div>
-            </div> */}
-            <div className="flex gap-4 pt-6 flex-col lg:flex-row max-w-screen-lg w-full">
-              <Button href="/booking" size="lg">
-                Book Online
-              </Button>
-              <Button href="/inquiry" variant="secondary" size="lg" className="bg-zinc-950/40">
-                Send an Inquiry
-              </Button>
-            </div>
-            <span className="text-white bold leading-none">
-              <span className="text-primary">Gift Cards</span> Available Now!
+            <Badge variant="featured">Gift cards</Badge>
+            Give a detail this season
+            <span aria-hidden="true" className="text-accent-hover transition-transform group-hover:translate-x-0.5">
+              →
             </span>
-            <br />
-            <span className="text-sm text-zinc-300 bold leading-none">Hit Book Online &gt; Gift Cards!</span>
-          </div>
-        </header>
+          </Link>
+        </div>
       </HeroSlider>
 
-      <div className="service-bkg pt-0">
-        {!smallScreen && <Benefits />}
+      <StatsStrip />
 
-        <div className="general-container new-heading-container pt-5">
-          <strong className="above-heading text-4xl">PREMIUM INTERIOR SERVICES</strong>
-          <h2 className="new-heading text-xl lg:text-2xl">Transform your vehicle's interior with our Premium Auto Detailing services.</h2>
+      <Section className="border-t-0">
+        <SectionHeader
+          eyebrow="Interior"
+          title="Premium interior services"
+          lead="Transform your vehicle's interior, from a quick refresh to a full restoration."
+          action={{ label: "Compare interior services", href: "/services/interior" }}
+        />
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {servicesIn("interior").map((s) => (
+            <ServiceCard key={s.slug} service={s} sizes="(min-width: 1024px) 400px, (min-width: 768px) 50vw, 100vw" />
+          ))}
         </div>
-        <div className="flex flex-col lg:flex-row flex-grow lg:justify-between lg:items-stretch lg:flex-wrap lg:w-[90%] mx-auto justify-center items-center gap-24 mt-8 mb-8">
-          <HomePageCard
-            title="Interior Refresh"
-            imageUrl="/assets/images/interior/driver12.jpg"
-            description="Best for new cars, pretty clean vehicles, or ones detailed within the last year. We'll give them a refresh to restore that like-new feel."
-            stepHeadline="KEY FEATURES:"
-            steps={["Quick air blow-out & vacuum", "Clean & condition surfaces", "Quick wipe door jambs"]}
-            hours="2-4"
-            linkUrl="/services/interior-refresh"
-            serviceType="interior"
-            specificService="intRefresh"
-            colors={{ bgMain: "bg-slate-950", bgLight: "bg-slate-900", bgHighlight: "bg-sky-500", borderColor: "border-cyan-400" }}
-          />
+      </Section>
 
-          <HomePageCard
-            title="Full Interior Detail"
-            imageUrl="/assets/images/interior/driverCivic.jpg"
-            description="A deeper clean targeting stains, pet hair, and heavy grime. Ideal for vehicles needing a complete interior reset."
-            stepHeadline="KEY ADDITIONS OVER INTERIOR REFRESH:"
-            steps={["Thorough blow-out and vacuum", "Stain Extraction + Headliner Cleaning", "Wash out all door jambs"]}
-            hours="3-6"
-            linkUrl="/services/interior"
-            serviceType="interior"
-            specificService="intFull"
-            colors={{ bgMain: "bg-slate-950", bgLight: "bg-slate-900", bgHighlight: "bg-teal-500", borderColor: "border-teal-600" }}
-          />
-
-          <HomePageCard
-            title="Interior Restoration"
-            imageUrl="/assets/images/before&afters/badInteriorBA.png"
-            description="Specialized care for mold, smoke odors, or extreme neglect. We restore interiors that standard detailing can't handle."
-            stepHeadline="KEY ADDITIONS OVER OUR FULL INTERIOR DETAIL:"
-            steps={["Comprehensive odor removal", "Extra time & chemicals spent on heavy stains", "Ozone Treatment included"]}
-            hours="4.5-8+"
-            linkUrl="/services/interior-restoration"
-            serviceType="interior"
-            specificService="intRestoration"
-            colors={{ bgMain: "bg-slate-950", bgLight: "bg-slate-900", bgHighlight: "bg-violet-600", borderColor: "border-purple-500" }}
-          />
+      <Section tone="surface">
+        <SectionHeader
+          eyebrow="Exterior"
+          title="Exterior services"
+          lead="From a deep decon wash to full paint correction and a ceramic coating. Listed from lowest to highest price."
+          action={{ label: "Compare exterior services", href: "/services/polish" }}
+        />
+        <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+          {servicesIn("exterior").map((s) => (
+            <ServiceCard key={s.slug} service={s} sizes="(min-width: 1280px) 300px, (min-width: 640px) 50vw, 100vw" />
+          ))}
         </div>
+      </Section>
 
-        <div className="general-container new-heading-container" style={{ margin: "5vh auto 2vh auto" }}>
-          <strong className="above-heading text-4xl">OUR EXTERIOR SERVICES</strong>
-          <h3 className="new-heading text-xl lg:text-2xl">
-            From a quick wash to a complete paint correction and ceramic coating, we cover all things exterior!
-          </h3>
-        </div>
-        <div className="flex flex-col lg:flex-row flex-grow lg:justify-center lg:items-stretch lg:flex-wrap lg:w-[90%] lg:my-0 mx-auto justify-center items-center gap-24 mb-8">
-          <HomePageCard
-            title="Exterior Decon Wash"
-            imageUrl="/assets/images/exterior/jeepRenegade.jpg"
-            description="A professional-grade deep clean for your paint and wheels that an automatic car wash simply can't touch."
-            stepHeadline="WHAT WE DO:"
-            steps={[
-              "Full vehicle top to bottom wash",
-              "Scrub & wash the tires, wheels, wheel barrels, and wells",
-              "Wash all door jambs & gas door",
-              "3-6 month ceramic spray sealant"
-            ]}
-            hours="1-2"
-            linkUrl="/services/exterior"
-            serviceType="exterior"
-            specificService="extDecon"
-            colors={{ bgMain: "bg-slate-950", bgLight: "bg-slate-900", bgHighlight: "bg-sky-500", borderColor: "border-cyan-400" }}
-          />
-          <HomePageCard
-            title="Wash & Coat"
-            imageUrl="/assets/images/exterior/archCoTruck.jpg"
-            description="Premium ceramic protection for your paint and wheels without the cost or time of paint correction."
-            stepHeadline="WHAT WE DO:"
-            steps={[
-              "Our Exterior Decon Wash + Clay Bar Treatment",
-              "Use a primer polish to prep the vehicle",
-              "Apply a 1-Year Ceramic Coating everywhere on your car"
-            ]}
-            hours="5-8"
-            linkUrl="/services/wash-coat"
-            serviceType="exterior"
-            specificService="extWashCoat"
-            colors={{ bgMain: "bg-slate-950", bgLight: "bg-slate-900", bgHighlight: "bg-teal-500", borderColor: "border-teal-600" }}
-            newService={true}
-          />
-
-          <HomePageCard
-            title="Polish & Coat"
-            imageUrl="/assets/images/polish/porscheFL.jpg"
-            description="Single-stage paint correction and a 3-year ceramic coating for drastic gloss enhancement and protection."
-            stepHeadline="WHAT WE DO:"
-            steps={[
-              "Our Exterior Decon Wash + Clay Bar Treatment",
-              "A single-stage polish (removes around 50% of swirls and scratches)",
-              "Apply a 3-Year Ceramic Coating everywhere on your car"
-            ]}
-            hours="6-9+"
-            linkUrl="/services/polish"
-            serviceType="exterior"
-            specificService="extPolish"
-            colors={{ bgMain: "bg-slate-950", bgLight: "bg-slate-900", bgHighlight: "bg-violet-600", borderColor: "border-purple-500" }}
-          />
-
-          <HomePageCard
-            title="Correct & Coat"
-            imageUrl="/assets/images/correction/bMustang1.jpg"
-            description="Our ultimate package: 2-stage paint correction and a 3-year ceramic coating for a flawless, mirror-like finish."
-            stepHeadline="WHAT WE DO:"
-            steps={[
-              "Our Exterior Decon Wash + Clay Bar Treatment",
-              "A thorough 2-stage paint correction (can remove 70-95% of swirls and scratches)",
-              "Apply a 3-Year Ceramic Coating everywhere on your car"
-            ]}
-            hours="10-15+"
-            linkUrl="/services/correct"
-            serviceType="exterior"
-            specificService="extCorrect"
-            colors={{ bgMain: "bg-slate-950", bgLight: "bg-slate-900", bgHighlight: "bg-amber-600", borderColor: "border-rose-400" }}
-          />
-        </div>
-
-        <br className="extra-space" />
-        <div
-          className="general-container new-heading-container flex flex-col lg:flex-row lg:items-center lg:justify-between"
-          style={{ margin: "5vh auto 2vh auto" }}
-        >
+      <Section>
+        <div className="grid items-center gap-10 lg:grid-cols-2">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-line">
+            <Image src={recreational.photo} alt="An RV after a wash by Dirt-Less Detailing" fill sizes="(min-width: 1024px) 600px, 100vw" className="object-cover" />
+          </div>
           <div>
-            <strong className="above-heading text-4xl"> Boats/RV's/Trailers/ & ORV's </strong>
-            <h3 className="new-heading text-xl lg:text-2xl">
-              Interior and Exterior detailing services for <span className="font-bold">any</span> of your other vehicles.
-            </h3>
-          </div>
-          <Button href="/services/recreational" variant="secondary">
-            Explore recreational services
-          </Button>
-        </div>
-        {/* <div
-          className="general-container new-heading-container flex flex-col lg:flex-row lg:items-center lg:justify-between"
-          style={{ margin: "5vh auto 2vh auto" }}
-        >
-          <div>
-            <strong className="above-heading text-4xl">Product Recommendations</strong>
-            <h3 className="new-heading text-xl lg:text-2xl lg:max-w-[60%]">
-              See the products and methods that we recommend for your own maintenance, and many of the products that we use on every vehicle we detail.
-            </h3>
-          </div>
-          <a href="/products" className="popular-readmore-secondary text-nowrap" aria-label="Learn more about our product recommendations.">
-            Learn More
-          </a>
-        </div> */}
-        <br className="extra-space" />
-        <div className="service-bkg-lighter pb-20">
-          <div className="general-container new-heading-container" style={{ margin: "5vh auto 2vh auto" }}>
-            <strong className="above-heading text-4xl">Testimonials</strong>
-            <h3 className="new-heading text-xl lg:text-2xl">Read some of the reviews from our valued customers!</h3>
-            <p style={{ margin: 0, padding: "1rem 0" }}>
-              See all of the reviews from our customers on our{" "}
-              <a className="text-accent-hover" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/DirtLessDetailing/reviews">
-                Facebook
-              </a>{" "}
-              or{" "}
-              <a
-                className="text-accent-hover"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.google.com/localservices/prolist?g2lbs=ADZRdktLAaGKKobG3aZn2_Qd9tpM-f3ifTKQp4hXsZnMmVk1USpK7Ha4kZIeLdSCTp26Z3uD8UBdDwRY7Zqn7XZatg-9z1GI86mqJXoiFQCA1rCg0Vis_yQK9JiR9qrRMObWwAegw9aPUbKd01T05_4R3o4ry_qhHA%3D%3D&hl=en-US&gl=us&cs=1&ssta=1&q=dirtless%20detailing&oq=dirtless%20detailing&slp=MgA6HENoTUlxZVd0Nkl2SV9nSVY2UTZ0QmgyZWJnaVJSAggCYAB6-gFDaEprYVhKMGJHVnpjeUJrWlhSaGFXeHBibWRJNnZqVDFhcTRnSUFJV2h3UUFCQUJHQUFZQVNJU1pHbHlkR3hsYzNNZ1pHVjBZV2xzYVc1bmtnRVZZMkZ5WDJSbGRHRnBiR2x1WjE5elpYSjJhV05sbWdFa1EyaGtSRk5WYUU1TlJ6bHVVekJXU2xFd1JtNVRWVkpEV2pKYVNHTnVhRzVTVWtGQ3FnRTZFQUV5SGhBQklocEZwOXktNVEwdWdLbGRqT2pnOEdvLWlaQlZ5NUdlSjh3QjV6SVdFQUlpRW1ScGNuUnNaWE56SUdSbGRHRnBiR2x1Wi1BQkFBkgG0AgoNL2cvMTFzYnBjOV8zYgoNL2cvMTFmcDJwN3dtbgoNL2cvMTFrMndndnhyegoNL2cvMTFzbXZfbm13MQoLL2cvMXRmM2I3bHQKDS9nLzExZ2w0dDJkY20KDC9nLzEyNjBieGxoNgoNL2cvMTFwMTN5MnQ4cQoNL2cvMTFjbnpuX3p3agoNL2cvMTFqcTlwcGtfNwoNL2cvMTFneTRsejU5aAoNL2cvMTF0ZDhjN195NQoNL2cvMTFrNDVzNzVmcwoNL2cvMTFnMnhjbHBxMwoNL2cvMTFzNTFrN2YzdAoNL2cvMTFzM2YwMHZzcAoML2cvMTFnem44M3diCg0vZy8xMW5uMGhzanF2Cg0vZy8xMWZxcXoxdmdwCg0vZy8xMXQ0ZmprMDltEgQSAggBEgQKAggB&src=2&spp=Cg0vZy8xMXNicGM5XzNiOtABV2h3UUFCQUJHQUFZQVNJU1pHbHlkR3hsYzNNZ1pHVjBZV2xzYVc1bmtnRVZZMkZ5WDJSbGRHRnBiR2x1WjE5elpYSjJhV05sbWdFa1EyaGtSRk5WYUU1TlJ6bHVVekJXU2xFd1JtNVRWVkpEV2pKYVNHTnVhRzVTVWtGQ3FnRTZFQUV5SGhBQklocEZwOXktNVEwdWdLbGRqT2pnOEdvLWlaQlZ5NUdlSjh3QjV6SVdFQUlpRW1ScGNuUnNaWE56SUdSbGRHRnBiR2x1Wnc9PQ%3D%3D&serdesk=1&lrlstt=1682530844021&ved=2ahUKEwiSvKHoi8j-AhWfHjQIHT0kD2MQvS56BAgwEAE&scp=ChpnY2lkOmNhcl9kZXRhaWxpbmdfc2VydmljZRJgEhIJeUAf2e38kFQRVTQwKEuFSMMiMkRpcnQtTGVzcyBEZXRhaWxpbmcsIDkzMDUgMjA1dGggQXZlIEUsIEJvbm5leSBMYWtlKhQNCAEeHBXFWjC3HQgBHhwlxVowtzAAGhJkaXJ0bGVzcyBkZXRhaWxpbmciEmRpcnRsZXNzIGRldGFpbGluZyoVQ2FyIGRldGFpbGluZyBzZXJ2aWNl#ts=3"
-              >
-                Google
-              </a>{" "}
-              page.
-            </p>
-          </div>
-          <InfiniteMovingCards
-            items={[
-              {
-                quote: (
-                  <p className="review-text">
-                    "Had an issue with the interior of a vehicle that had been in a garage for too long. Dirt-Less handled it professionally and quickly.{" "}
-                    <span className="highlight">We will definitely keep going back for our needs.</span>"
-                  </p>
-                ),
-                name: "Jonathon H.",
-                title: "Full Interior Detail"
-              },
-              {
-                quote: (
-                  <p className="review-text">
-                    "Brenden does an amazing job. My car looks amazing.{" "}
-                    <span className="highlight">He is super reasonable in his pricing and was very efficient.</span> Will definitely continue to use his service
-                    for all our vehicles."
-                  </p>
-                ),
-                name: "Kristi H.",
-                title: "Full Interior Detail"
-              },
-              {
-                quote: (
-                  <p className="review-text">
-                    "Brought in my 12 Escalade and he worked his magic on both inside and outside.{" "}
-                    <span className="highlight">Brenden is very good at what he does, the vehicle looks amazing. Better than it was when I bought it.</span>{" "}
-                    Thank you so much for getting me into your schedule. I am Extremely pleased with the outcome of your services."
-                  </p>
-                ),
-                name: "Rob B.",
-                title: "Full Interior Detail"
-              }
-            ]}
-            speed="normal"
-            className="w-screen"
-          />
-        </div>
-
-        <br className="extra-space" />
-
-        <div className="general-container new-heading-container font-bold">
-          <h3 style={{ margin: 0, width: "auto", padding: 0 }} className="new-heading new-heading-center text-4xl lg:text-5xl">
-            AUTO DETAILING FAQ's
-          </h3>
-          <p className="max-w-[500px] mx-auto text-center my-0 font-normal pb-8">
-            Answers to some of the most common questions that we get when people are booking with us, please reach out if you have other questions!
-          </p>
-        </div>
-        <section className="flex flex-col items-center xl:flex-row w-[95vw] mx-auto justify-center gap-8 max-w-[1500px]">
-          <div className="flex flex-col gap-6 w-full text-left">
-            {faqItems.map((item, i) => (
-              <FaqItem key={i} i={i} expanded={expanded} setExpanded={setExpanded} title={item.title} description={item.description} isMobile={smallScreen} />
-            ))}
-          </div>
-          <div className="map relative">
-            <IframeSuspense
-              src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJxxfUWqz7kFQRotRs8MwWDRE&key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS}`}
-              title="Google Maps Location"
-              classes="border-0 h-full w-full my-4 mx-auto"
+            <SectionHeader
+              eyebrow="Recreational"
+              title={recreational.name}
+              lead="Interior and exterior detailing for any of your other vehicles: boats, RVs, trailers and off-road vehicles."
+              className="mb-8"
             />
-          </div>
-        </section>
-        <br className="extra-space" />
-        <hr className="pricing__hr" />
-        <div className="text-center w-[95vw] lg:w-full mx-auto">
-          <h4 className="text-4xl font-bold py-6">24/7 ONLINE PRICING & BOOKING</h4>
-
-          <Button href="/booking" size="lg">
-            Book Online
-          </Button>
-
-          <p className="pt-8 text-2xl w-[95vw] lg:w-full">Have a question first? Send us a message!</p>
-          <Button href="/inquiry" variant="secondary" size="lg" className="mt-4">
-            Send an Inquiry
-          </Button>
-        </div>
-
-        <br className="extra-space" />
-        <div className="w-[90%] text-center mx-auto my-0 pt-[5vh] lg:pl-0" style={{ margin: "5vh auto 2vh auto" }}>
-          <strong className="text-zinc-300 text-center text-4xl">Lastest Video</strong>
-          <h3 className="new-heading text-xl lg:text-2xl pb-8">Check out the latest video we've posted to our YouTube Channel!</h3>
-          <div className="w-full max-w-4xl mx-auto px-4 pt-8">
-            <iframe
-              className="w-full aspect-video rounded-2xl shadow-xl border-0" // For shorts use aspect-[9/16]
-              src="https://www.youtube-nocookie.com/embed/tCHIwrw5aJ4" // Make sure to use the nocookie url
-              title="Testing Primer Polishes: Dr. Beasley&#39;s CoreCut vs. Shine Supply Burnout Head-to-Head | Part 1"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              loading="lazy"
-              allowFullScreen
-            ></iframe>
+            <Button href={recreational.href} variant="secondary" size="lg">
+              Explore recreational services
+            </Button>
           </div>
         </div>
-      </div>
+      </Section>
+
+      <Section tone="surface">
+        <SectionHeader eyebrow="Reviews" title="What our customers say" />
+        <div className="-mx-6 flex snap-x snap-mandatory gap-4 overflow-x-auto px-6 pb-2 md:mx-0 md:grid md:grid-cols-3 md:gap-6 md:overflow-visible md:px-0 md:pb-0">
+          {reviews.map((r) => (
+            <figure key={r.name} className="flex min-w-[85%] snap-start flex-col justify-between gap-6 rounded-2xl border border-line bg-page p-6 md:min-w-0">
+              <blockquote className="leading-relaxed text-zinc-300">
+                <p>
+                  “{r.before} <strong className="font-semibold text-white">{r.highlight}</strong>
+                  {r.after && ` ${r.after}`}”
+                </p>
+              </blockquote>
+              <figcaption className="flex flex-wrap items-center justify-between gap-3">
+                <span className="font-bold">{r.name}</span>
+                <Badge>{r.service}</Badge>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+        <p className="mt-8 text-muted">
+          Read all of our reviews on{" "}
+          <a href={GOOGLE_REVIEWS} target="_blank" rel="noopener noreferrer" className="font-semibold text-accent-hover hover:underline">
+            Google
+          </a>{" "}
+          or{" "}
+          <a href={FACEBOOK_REVIEWS} target="_blank" rel="noopener noreferrer" className="font-semibold text-accent-hover hover:underline">
+            Facebook
+          </a>
+          .
+        </p>
+      </Section>
+
+      <Section>
+        <div className="grid gap-10 lg:grid-cols-[1fr_1.5fr] lg:gap-16">
+          <div>
+            <SectionHeader
+              eyebrow="FAQ"
+              title="Common questions"
+              lead="Answers to the questions we hear most when people book with us."
+              className="mb-6"
+            />
+            <Button variant="link" href="/inquiry">
+              Send us an inquiry
+            </Button>
+          </div>
+          <Faq items={faqs} />
+        </div>
+      </Section>
+
+      <Section className="border-t-0 pt-0 md:pt-0">
+        <CtaBand title="See pricing and book online, 24/7." lead="Pick your services, see real prices and choose an open time." />
+      </Section>
+
+      <Section tone="surface">
+        <div className="grid items-center gap-10 lg:grid-cols-[1fr_1.4fr]">
+          <div>
+            <SectionHeader
+              eyebrow="YouTube"
+              title="Latest video"
+              lead="Testing primer polishes: Dr. Beasley's CoreCut vs. Shine Supply Burnout, head to head."
+              className="mb-6"
+            />
+            <Button variant="link" href="https://www.youtube.com/channel/UCsoqP5s4hwkQd_Sd-TVv-jg">
+              More on our YouTube channel
+            </Button>
+          </div>
+          <VideoEmbed id="tCHIwrw5aJ4" title="Testing Primer Polishes: Dr. Beasley's CoreCut vs. Shine Supply Burnout Head-to-Head | Part 1" />
+        </div>
+      </Section>
     </div>
   );
 }

@@ -1,128 +1,123 @@
 import Image from "next/image";
-import { PhoneCall, Mail, MapPin } from "lucide-react";
 import Link from "next/link";
-import { CallLink } from "./components/CallTracking";
+import { CallLink, REAL_PHONE_DISPLAY } from "./components/CallTracking";
+import { containerClass } from "./components/ui/Section";
 import { servicesIn } from "../utils/services";
+
+// Small uppercase labels, not headings, so the footer doesn't add to the page outline.
+const label = "mb-4 text-xs font-bold uppercase tracking-[0.16em] text-zinc-500";
+const link = "text-zinc-400 transition-colors hover:text-ink";
+
+const socials = [
+  ["Instagram", "https://www.instagram.com/dirt_less_detailing/", "/assets/icons/instagram.svg"],
+  ["Facebook", "https://www.facebook.com/DirtLessDetailing/", "/assets/icons/facebook.svg"],
+  ["YouTube", "https://www.youtube.com/channel/UCsoqP5s4hwkQd_Sd-TVv-jg", "/assets/icons/youtube.svg"],
+  ["TikTok", "https://www.tiktok.com/@brendenflower", "/assets/icons/tiktok.svg"]
+];
+
+function ServiceList({ category }) {
+  return (
+    <ul className="space-y-3">
+      {servicesIn(category).map((s) => (
+        <li key={s.slug}>
+          <Link href={s.href} className={link}>
+            {s.name}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
 
 export default function Footer() {
   return (
-    <footer>
-      <div className="footer-content-card-left">
+    <footer className="border-t border-line bg-page text-ink">
+      <div className={`${containerClass} grid gap-10 py-16 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.3fr]`}>
         <div>
-          <a href="/">
-            <Image src="/assets/images/showcase/splatTextLeft.png" alt="Dirt-Less Detailing" width={200} height={200} />
-          </a>
-        </div>
-        <div>
-          <p>2026 Dirt-Less Detailing.</p>
-          <p>All rights reserved.</p>
-          <a target="_blank" rel="noopener noreferrer" href="https://www.brandonblack.dev" className="text-zinc-400 underline">
-            Website made by Brandon.
-          </a>
-          <br />
-          <a href="/privacy" className="text-zinc-400 underline">
-            Privacy Policy
-          </a>
-        </div>
-        <div style={{ gap: 32, paddingTop: "1rem" }} className="screen-flex">
-          <a href="https://iglcoatingsusa.com/" target="_blank" rel="noopener noreferrer">
-            <Image
-              src="/assets/images/showcase/homepage-kenzo-nobkg.png"
-              alt="IGL Kenzo Coatings certified"
-              className="w-auto h-auto"
-              width={110}
-              height={105}
-            />
-          </a>
-          <a
-            href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Dirt-Less Detailing on Better Business Bureau"
-          >
-            <Image
-              src="/assets/images/showcase/homepage-bbb-large.png"
-              alt="Better Business Bureau A+ rating"
-              className="w-auto h-auto"
-              width={200}
-              height={100}
-            />
-          </a>
-        </div>
-      </div>
-      <div className="footer-content-card">
-        <h3 className="font-medium">COMPANY</h3>
-        <div className="flex flex-col gap-4 mt-4">
-          <Link href="/" className="no-underline text-zinc-400 hover:underline hover:text-zinc-200">
-            Home
+          <Link href="/" className="inline-block">
+            <Image src="/assets/images/showcase/splatTextLeft.png" alt="Dirt-Less Detailing home" width={160} height={160} />
           </Link>
-          <Link href="/about" className="no-underline text-zinc-400 hover:underline hover:text-zinc-200">
-            About Us
-          </Link>
-          <Link href="/products" className="no-underline text-zinc-400 hover:underline hover:text-zinc-200">
-            Product Recommendations
-          </Link>
-          <Link href="/links" className="no-underline text-zinc-400 hover:underline hover:text-zinc-200">
-            Our Links
-          </Link>
-        </div>
-      </div>
-      <div className="footer-content-card" style={{ paddingBottom: "2rem" }}>
-        <h3 className="font-medium">SERVICES</h3>
-        <div className="flex flex-col gap-4 mt-4">
-          {servicesIn("interior").map((s) => (
-            <Link key={s.slug} href={s.href} className="no-underline text-zinc-400 hover:underline hover:text-zinc-300">
-              {s.name}
-            </Link>
-          ))}
-          <hr style={{ marginTop: "1.5rem" }} />
-          {servicesIn("exterior").map((s) => (
-            <Link key={s.slug} href={s.href} className="no-underline text-zinc-400 hover:underline hover:text-zinc-300">
-              {s.name}
-            </Link>
-          ))}
-        </div>
-      </div>
-      <div className="footer-content-card footer-contact-card" id="contact">
-        <h3 className="font-medium">CONTACT</h3>
-
-        <div className="flex flex-col gap-4 mt-4">
-          <CallLink className="underline text-zinc-400 flex gap-2 hover:underline hover:text-zinc-300" rel="noopener noreferrer">
-            <PhoneCall color="white" /> (253) 252-9758
-          </CallLink>
-          <a
-            href="mailto:brenden@dirtlessdetailing.com?subject = Schedule a Detail with Dirt-Less Detailing"
-            className="underline text-zinc-400 flex gap-2 hover:underline hover:text-zinc-300 break-all"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Mail color="white" /> brenden@dirtlessdetailing.com
-          </a>
-          <a
-            href="https://maps.app.goo.gl/bhPDhjUN4jsSegu48"
-            className="underline text-zinc-400 flex gap-2 hover:underline hover:text-zinc-300"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <MapPin color="white" /> Buckley Business Park, 28120 WA-410, Unit C6
-          </a>
+          <p className="mt-4 max-w-xs text-zinc-400">Auto detailing and ceramic coating in Buckley, WA, with mobile service from Kent to Graham.</p>
+          <div className="mt-6 flex items-center gap-6">
+            <a href="https://iglcoatingsusa.com/" target="_blank" rel="noopener noreferrer">
+              <Image src="/assets/images/showcase/homepage-kenzo-nobkg.png" alt="IGL Kenzo Coatings certified" width={72} height={69} className="h-auto w-[72px]" />
+            </a>
+            <a
+              href="https://www.bbb.org/us/wa/bonney-lake/profile/auto-detailing/dirt-less-detailing-1296-1000135733/#sealclick"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image src="/assets/images/showcase/homepage-bbb-large.png" alt="Better Business Bureau A+ rating" width={130} height={65} className="h-auto w-[130px]" />
+            </a>
+          </div>
         </div>
 
-        <br />
+        <div>
+          <p className={label}>Interior</p>
+          <ServiceList category="interior" />
+          <p className={`${label} mt-8`}>Recreational</p>
+          <ServiceList category="recreational" />
+        </div>
 
         <div>
-          <a href="https://www.instagram.com/dirt_less_detailing/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <Image src="/assets/icons/instagram.svg" alt="instagram" width={48} height={48} className="text-white" />
-          </a>
-          <a href="https://www.facebook.com/DirtLessDetailing/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-            <Image src="/assets/icons/facebook.svg" alt="facebook" width={48} height={48} className="text-white" />
-          </a>
-          <a href="https://www.youtube.com/channel/UCsoqP5s4hwkQd_Sd-TVv-jg" target="_blank" rel="noopener noreferrer" aria-label="Youtube">
-            <Image src="/assets/icons/youtube.svg" alt="youtube" width={48} height={48} className="text-white" />
-          </a>
-          <a href="https://www.tiktok.com/@brendenflower" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-            <Image src="/assets/icons/tiktok.svg" alt="tiktok" width={48} height={48} className="text-white" />
-          </a>
+          <p className={label}>Exterior</p>
+          <ServiceList category="exterior" />
+        </div>
+
+        <div>
+          <p className={label}>Contact</p>
+          <ul className="space-y-3 text-zinc-400">
+            <li>
+              <CallLink className={link}>{REAL_PHONE_DISPLAY}</CallLink>
+              <span className="text-zinc-500"> · call or text</span>
+            </li>
+            <li>
+              <a href="mailto:brenden@dirtlessdetailing.com?subject=Schedule a Detail with Dirt-Less Detailing" className={`${link} break-all`}>
+                brenden@dirtlessdetailing.com
+              </a>
+            </li>
+            <li>
+              <a href="https://maps.app.goo.gl/bhPDhjUN4jsSegu48" target="_blank" rel="noopener noreferrer" className={link}>
+                Buckley Business Park, 28120 WA-410, Unit C6
+              </a>
+            </li>
+            <li>Monday - Sunday: 8 AM - 7 PM</li>
+          </ul>
+          <div className="mt-6 flex gap-3">
+            {socials.map(([name, href, icon]) => (
+              <a key={name} href={href} target="_blank" rel="noopener noreferrer" aria-label={name} className="rounded-md transition-opacity hover:opacity-80">
+                <Image src={icon} alt="" width={36} height={36} />
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="border-t border-line">
+        <div className={`${containerClass} flex flex-wrap items-center justify-between gap-x-6 gap-y-3 py-6 text-sm text-zinc-500`}>
+          <p>© {new Date().getFullYear()} Dirt-Less Detailing. All rights reserved.</p>
+          <ul className="flex flex-wrap gap-x-6 gap-y-2">
+            <li>
+              <Link href="/privacy" className={link}>
+                Privacy
+              </Link>
+            </li>
+            <li>
+              <Link href="/products" className={link}>
+                Products
+              </Link>
+            </li>
+            <li>
+              <Link href="/links" className={link}>
+                Links
+              </Link>
+            </li>
+            <li>
+              <a href="https://www.brandonblack.dev" target="_blank" rel="noopener noreferrer" className={link}>
+                Site by Brandon
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>

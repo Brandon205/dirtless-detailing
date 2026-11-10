@@ -227,10 +227,6 @@ img {
 }
 
 /** Navigation CSS **/
-li span {
-  padding: 0 3px 0 2px;
-}
-
 .normal-nav {
   background-color: $contact-bkg;
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.544);
@@ -698,19 +694,6 @@ li span {
 
 .cookie-button:first-of-type {
   margin-right: 1rem;
-}
-
-/** Footer CSS **/
-footer {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  position: relative;
-  padding: 1rem 0;
-  background-color: $contact-bkg-lighter;
-  box-shadow: 0 1px 8px rgba(255, 255, 255, 0.2);
-  color: white;
-  gap: 2rem;
 }
 
 .footer-content-card {
@@ -1444,15 +1427,6 @@ footer {
   .center {
     display: grid;
     place-items: center;
-  }
-}
-
-@media screen and (min-width: 660px) {
-  footer {
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 0;
   }
 }
 
