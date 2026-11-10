@@ -83,7 +83,7 @@ const faqs = [
   },
   {
     question: "Do you offer gift cards?",
-    answerText: "Yes! Any of our services can be bought as a gift card. Get one through our online booking page, or call or text us."
+    answerText: "Yes! Buy one for any amount or a specific service on our gift cards page and it's emailed right away, or call or text us."
   },
   {
     question: "How does booking with Dirt-Less Detailing work?",
@@ -116,7 +116,7 @@ export default function Home() {
             </Button>
           </div>
           <Link
-            href="/booking"
+            href="/gift-cards"
             className="group mt-8 inline-flex items-center gap-3 rounded-full border border-white/15 bg-zinc-950/50 py-1.5 pl-1.5 pr-4 text-sm font-semibold text-white transition-colors hover:border-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           >
             <Badge variant="featured">Gift cards</Badge>

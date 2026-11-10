@@ -83,7 +83,7 @@ export default function Contact() {
               We come to you, from Kent to Graham.
             </Row>
             <Row icon={Gift} label="Gift cards">
-              <Link href="/booking" className={linkClass}>
+              <Link href="/gift-cards" className={linkClass}>
                 Buy a gift card
               </Link>{" "}
               <span className="text-muted">or pick one up in person</span>

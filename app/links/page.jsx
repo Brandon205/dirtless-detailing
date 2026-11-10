@@ -72,7 +72,7 @@ export default function LinksPage() {
 
           <LinkButton href="/inquiry" Icon={MessageCircleQuestion} title="Send an Inquiry" subtext="Quotes, in-shop services, anything else" variant="secondary" />
 
-          <LinkButton href="/booking" Icon={Gift} title="Buy a Gift Card" subtext="Gift cards for any of our services" variant="secondary" />
+          <LinkButton href="/gift-cards" Icon={Gift} title="Buy a Gift Card" subtext="Gift cards for any of our services" variant="secondary" />
 
           <LinkButton
             href="/products?category=Ceramic"
