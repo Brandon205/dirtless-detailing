@@ -1,228 +1,157 @@
-"use client";
-import React from "react";
-import BeforeAfterSlider from "../../components/ImageSlider";
-import { ExternalLink } from "lucide-react";
-import Image from "next/image";
 import { PiBiohazardBold } from "react-icons/pi";
 import { LuAirVent } from "react-icons/lu";
-import HeaderComponent from "../../components/HeaderComponent";
-import BaseSchema from "../../jsonSchemas/BaseSchema";
-import ImageGallery from "../../components/ImageGallery";
+import { ServicePage } from "../../components/ServicePage";
+import { OptionCard, WideCard } from "../../components/OptionCard";
 import { Button } from "../../components/ui/Button";
 
-export default function InteriorRestoration() {
-  return (
-    <section className="service-content-container">
-      <BaseSchema
-        serviceImage="/assets/images/before&afters/badInteriorBA.png"
-        url="https://www.dirtlessdetailing.com/services/interior-restoration"
-        makesOffer={{
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Interior Restoration",
-            "description":
-              "Our Interior Restoration service is a service designed for vehicles that have been neglected beyond what our Full Interior Detail can handle. If your interior has heavy odors, mold, or is extremely dirty, and you need it back to acceptable, this is the service for you.",
-            "areaServed": "Buckley, Bonney Lake, and surrounding areas.",
-            "serviceType": "Interior Restoration"
-          }
-        }}
-      />
-      <HeaderComponent
-        imageUrl="/assets/images/interior/passfordGT.jpg"
-        title="Interior Restoration"
-        description="The service that can bring life back into heavily neglected interiors. If your interior has heavy odors, mold, or is extremely dirty, this is the service for you."
-        secondaryUrl="/assets/images/before&afters/badVanBA.jpg"
-      />
-
-      <div className="main-content-container">
-        <div className="process-container">
-          <div className="w-full">
-            <div className="flex justify-center gap-8 flex-col lg:flex-row">
-              <div className="max-w-[450px] w-full bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-6 mb-8">
-                <h3 className="font-bold text-2xl text-primary">DEEP REVIVE:</h3>
-                <p className="font-bold text-2xl text-primary">HEAVY USE & PET HAIR</p>
-                <div className="w-auto h-[250px] relative my-4">
-                  <Image
-                    src="/assets/images/before&afters/badInteriorBA.png"
-                    alt="Before and after of a heavily neglected interior"
-                    fill
-                    sizes="(max-width: 768px) 100vw, 450px"
-                    className="mb-4 rounded-lg object-cover"
-                  />
-                </div>
-                <strong className="font-bold text-2xl text-primary">$350 - $650+</strong>
-                <p className="text-sm text-zinc-400">*depending on size/condition</p>
-                <p className="text-left">
-                  Perfect for heavily used daily drivers, family cars, and vehicles with embedded dirt, spills, or strong smoke/musty odors. Includes deep
-                  extraction, scrubbing, and sanitization. Most odors should be gone afterwards, we utilize zinc odor neutralizers after extracting to trap and
-                  neutralize any odors that somehow survive extraction. Then our Ozone Treatment (included) gets even more odors past that point.
-                </p>
-              </div>
-              <div className="max-w-[400px] w-full bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-6 mb-8">
-                <h3 className="font-bold text-2xl text-primary">SAFETY & HEALTH:</h3>
-                <p className="font-bold text-2xl text-primary">MOLD & BIOHAZARD</p>
-                <div className="w-auto h-[250px] relative my-4">
-                  <Image
-                    src="/assets/images/before&afters/bio1278.webp"
-                    alt="Moldy rear van seat before and after"
-                    fill
-                    sizes="(max-width: 768px) 100vw, 450px"
-                    className="mb-4 rounded-lg object-cover"
-                  />
-                </div>
-                <strong className="font-bold text-2xl text-primary">$600-$1200+</strong>
-                <p className="text-sm text-zinc-400">*depending on size/condition</p>
-                <p className="text-left">
-                  If there's just a small spot or a little mold, it's included in our Full Interior Service, but if there's more than one area or the mold is
-                  very bad, this is the service for you. We use multiple different stages and chemicals all with the ability to kill mold, and end it off with a
-                  complete ozone treatment to get the places no one can reach.
-                </p>
-              </div>
-              <div className="max-w-[400px] w-full bg-zinc-800 text-white rounded-lg shadow-sm border border-zinc-900 p-6 mb-8">
-                <h3 className="font-bold text-2xl text-primary">ULTIMATE RESTORATION:</h3>
-                <p className="font-bold text-2xl text-primary">OLD VEHICLE/BARN FINDS</p>
-                <div className="w-auto h-[250px] relative my-4">
-                  <Image
-                    src="/assets/images/interior/ferrariInt.jpg"
-                    alt="Photo of the interior of an old Ferrari Interior"
-                    fill
-                    sizes="(max-width: 768px) 100vw, 450px"
-                    className="mb-4 rounded-lg object-cover"
-                  />
-                </div>
-                <strong className="font-bold text-2xl text-primary">QUOTE REQUIRED*</strong>
-                <p className="text-sm text-zinc-400">*depending on size/condition</p>
-                <p className="text-left">
-                  Typically for older vehicles that have sun damage, fading plastics and leathers, and varying levels of wear. We will use specialized cleaners
-                  to rejuvenate plastics and leathers, and do our best to restore the interior to its best possible condition, while protecting it from further
-                  damage with UV inhibitors and a durable interior dressing.
-                </p>
-              </div>
-            </div>
-
-            <div className="w-full bg-zinc-800 flex text-white rounded-lg shadow-sm border border-zinc-900 p-6 mb-8 max-w-[1315px] mx-auto text-left gap-4 flex-col lg:flex-row justify-center lg:justify-start">
-              <div className="w-full h-[250px] relative">
-                <Image
-                  src="/assets/images/before&afters/badVanBA.jpg"
-                  alt="Before and after of a heavily neglected interior"
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 600px"
-                  className="mb-4 object-cover"
-                />
-              </div>
-              <div>
-                <h3 className="font-semibold text-2xl text-primary mb-2">BUDGET CONSCIOUS RESTORATION: OPT FOR A CAPPED HOURLY DETAIL</h3>
-                <p>
-                  Choose this option for these services at our hourly rate ($125-$150/hour). Set a specific time limit (e.g., a 4 or 6 hour block). We
-                  prioritize your biggest concerns and get through the most important steps for you before the time is up without extra things you may not be as
-                  worried about. Ideal for making a huge impact without spending more money.
-                </p>
-                <div className="flex justify-start gap-8 mt-4 flex-col lg:flex-row">
-                  <Button href="/booking" size="lg">
-                    Book an Hourly Block
-                  </Button>
-                  <Button href="sms:+12532529758" variant="secondary" size="lg">
-                  Text photos for an estimate: (253) 252-9758
-                </Button>
-                </div>
-              </div>
-            </div>
-
-            <main className="w-full text-white my-0 mx-auto text-center p-4">
-              <div className="flex flex-col w-full gap-4 lg:w-5/6 mx-auto border-2 border-zinc-500 rounded-lg p-6 lg:p-8">
-                <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center mb-0 lg:mb-4">
-                  <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
-                    <BeforeAfterSlider
-                      beforeImage="/assets/images/before&afters/subDriveB.jpg"
-                      afterImage="/assets/images/before&afters/subDriveA.jpg"
-                      aspectRatio="16/9"
-                    />
-                  </div>
-
-                  <div className="flex flex-col w-full justify-between min-h-[475px] py-4">
-                    <div className="flex flex-col items-start">
-                      <h2 className="text-4xl font-bold">Our Interior Restoration Service</h2>
-                      <strong className="text-primary font-bold text-2xl">Thorough Cleaning and Conditioning</strong>
-                    </div>
-                    <div className="flex items-center my-4">
-                      <PiBiohazardBold size={48} className="text-accent mr-4 hidden lg:block flex-shrink-0" />
-                      <p className="leading-relaxed text-left">
-                        This is a full recovery service for vehicles facing extreme conditions that standard detailing simply cannot solve. We go beyond surface
-                        cleaning, making sure to get hidden biohazards or deep-seated grime. Whether you're dealing with a major water damage, a neglected used
-                        car, or a "disaster" vehicle, we do what it takes to restore your interior.
-                      </p>
-                    </div>
-                    <div className="flex items-center mb-4">
-                      <LuAirVent size={48} className="text-accent mr-4 hidden lg:block flex-shrink-0" />
-                      <p className="leading-relaxed text-left">
-                        On all Interior Restoration vehicles that need it we run our professional grade Ozone machine to remove odors and mold spores that we
-                        can't reach. Combined with heated carpet/fabric extraction and EPA Registered Disinfectants, we tackle the jobs other shops turn away.
-                        Our goal is to provide the absolute best possible outcome, restoring your interior to its highest possible standard.
-                      </p>
-                    </div>
-                    <div className="w-full p-4 bg-zinc-800 rounded-lg border border-zinc-600">
-                      <ul className="lg:max-h-[120px] list-disc list-inside leading-relaxed text-left w-full flex flex-wrap justify-between">
-                        <li className="basis-1/2">HEPA Vacuum</li>
-                        <li className="basis-1/2">Embedded Grime Removal</li>
-                        <li className="basis-1/2">Heated Extraction</li>
-                        <li className="basis-1/2">EPA Registered Disinfectants</li>
-                        <li className="basis-1/2">Mold Spore Elimination</li>
-                        <li className="basis-1/2">Professional Ozone Treatment</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <p className="text-center">
-                  Want the exterior done as well? Feel free to book an interior and exterior detail, we will get your entire vehicle looking like new in just
-                  one day! Check out our exterior decon wash{" "}
-                  <a href="/services/exterior" className="text-accent-hover hover:text-accent font-medium underline">
-                    here
-                  </a>
-                  !
-                </p>
-              </div>
-            </main>
-
-            <div className="mt-12 p-6 lg:p-8 bg-gradient-to-r from-zinc-800 to-zinc-700 rounded-lg border border-accent/30 text-center">
-              <h3 className="text-2xl lg:text-3xl font-bold text-white mb-3">Is your car in need of a restoration?</h3>
-              <p className="text-zinc-300 mb-6 text-lg">
-                Have questions or want a free quote on our Interior Restoration Service? Want to book an appointment? Get in touch with us today!
-              </p>
-              <Button href="/booking" size="lg">
-                  Book Online
-                </Button>
-            </div>
-            <br className="extra-space" />
-
-            <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
-            <h3 className="pricing__heading">Back to the way your car should be.</h3>
-            <p className="pricing__subtext">A car that you aren't scared or ashamed of to be driving anymore!</p>
-            <div>
-              <ImageGallery
-                images={[
-                  { src: "/assets/images/interior/ferrariInt.jpg", alt: "Vehicle Interior after our extensive Interior Restoration service" },
-                  { src: "/assets/images/interior/bio1281.jpg", alt: "Vehicle during our ozone treatment with the machine pumping ozone into the cabin" },
-                  { src: "/assets/images/before&afters/badMobileIntBA.jpg", alt: "Vehicle Interior after our extensive Interior Restoration service" },
-                  { src: "/assets/images/before&afters/bio1279.webp", alt: "Vehicle Interior after our extensive Interior Restoration service" },
-                  { src: "/assets/images/before&afters/traegerDriverBA.jpg", alt: "Vehicle Interior after our extensive Interior Restoration service" },
-                  { src: "/assets/images/before&afters/traegerCenterBA.jpg", alt: "Vehicle Interior after our extensive Interior Restoration service" },
-                  { src: "/assets/images/interior/wranglerIntCeramic.jpg", alt: "Vehicle Interior after our extensive Interior Restoration service" }
-                ]}
-              />
-            </div>
-
-            <div className="pb-8 text-center flex flex-col items-center text-white ">
-              <h4 className="text-3xl text-left">
-                See more examples of our interior work{" "}
-                <a href="/gallery/interior" className="text-accent-hover inline-block">
-                  here <ExternalLink className="inline-block" />
-                </a>
-              </h4>
-            </div>
-          </div>
+// Content for this page. The layout lives in app/components/ServicePage.tsx.
+// Restoration is priced by condition, so option cards take the estimator's place.
+const page = {
+  slug: "interior-restoration",
+  schema: {
+    serviceImage: "/assets/images/before&afters/badInteriorBA.png",
+    makesOffer: {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Interior Restoration",
+        "description":
+          "Our Interior Restoration service is a service designed for vehicles that have been neglected beyond what our Full Interior Detail can handle. If your interior has heavy odors, mold, or is extremely dirty, and you need it back to acceptable, this is the service for you.",
+        "areaServed": "Buckley, Bonney Lake, and surrounding areas.",
+        "serviceType": "Interior Restoration"
+      }
+    }
+  },
+  hero: {
+    title: "Interior Restoration",
+    lead: "The service that can bring life back into heavily neglected interiors. If your interior has heavy odors, mold, or is extremely dirty, this is the service for you.",
+    image: "/assets/images/interior/passfordGT.jpg",
+    sideImage: "/assets/images/before&afters/badVanBA.jpg"
+  },
+  options: {
+    title: "Restoration options",
+    lead: "Pricing depends on the size and condition of your vehicle. Text us photos for a free estimate.",
+    content: (
+      <>
+        <div className="grid gap-6 md:grid-cols-3">
+          <OptionCard
+            subtitle="Deep revive"
+            title="Heavy use & pet hair"
+            image="/assets/images/before&afters/badInteriorBA.png"
+            alt="Before and after of a heavily neglected interior"
+            price="$350 - $650+"
+            priceNote="Depending on size and condition"
+          >
+            Perfect for heavily used daily drivers, family cars, and vehicles with embedded dirt, spills, or strong smoke/musty odors. Includes deep extraction,
+            scrubbing, and sanitization. Most odors should be gone afterwards: we use zinc odor neutralizers after extracting to trap and neutralize any odors
+            that survive extraction, then our Ozone Treatment (included) gets even more odors past that point.
+          </OptionCard>
+          <OptionCard
+            subtitle="Safety & health"
+            title="Mold & biohazard"
+            image="/assets/images/before&afters/bio1278.webp"
+            alt="Moldy rear van seat before and after"
+            price="$600 - $1,200+"
+            priceNote="Depending on size and condition"
+          >
+            If there&apos;s just a small spot or a little mold, it&apos;s included in our Full Interior Detail, but if there&apos;s more than one area or the mold
+            is very bad, this is the service for you. We use multiple stages and chemicals that kill mold, and finish with a complete ozone treatment to get the
+            places no one can reach.
+          </OptionCard>
+          <OptionCard
+            subtitle="Ultimate restoration"
+            title="Old vehicles & barn finds"
+            image="/assets/images/interior/ferrariInt.jpg"
+            alt="The interior of an old Ferrari"
+            price="Quote required"
+            priceNote="Depending on size and condition"
+          >
+            Typically for older vehicles with sun damage, fading plastics and leathers, and varying levels of wear. We use specialized cleaners to rejuvenate
+            plastics and leathers and restore the interior to its best possible condition, then protect it from further damage with UV inhibitors and a durable
+            interior dressing.
+          </OptionCard>
         </div>
-      </div>
-    </section>
-  );
+        <WideCard
+          title="Budget-conscious restoration: a capped hourly detail"
+          image="/assets/images/before&afters/badVanBA.jpg"
+          alt="Before and after of a heavily neglected van interior"
+          actions={
+            <>
+              <Button href="/booking" size="lg">
+                Book an Hourly Block
+              </Button>
+              <Button href="sms:+12532529758" variant="secondary" size="lg">
+                Text photos for an estimate: (253) 252-9758
+              </Button>
+            </>
+          }
+        >
+          Choose this option for any of these services at our hourly rate ($125-$150/hour). Set a specific time limit (for example a 4 or 6 hour block) and
+          we&apos;ll prioritize your biggest concerns, getting through the most important steps before the time is up. Ideal for making a huge impact without
+          spending more.
+        </WideCard>
+      </>
+    )
+  },
+  about: {
+    title: "Our Interior Restoration service",
+    lead: "For interiors a standard detail can't handle",
+    media: { before: "/assets/images/before&afters/subDriveB.jpg", after: "/assets/images/before&afters/subDriveA.jpg" },
+    points: [
+      {
+        icon: <PiBiohazardBold />,
+        text: (
+          <>
+            This is a full recovery service for vehicles facing extreme conditions that standard detailing simply cannot solve. We go beyond surface cleaning,
+            making sure to get hidden biohazards or deep-seated grime. Whether you&apos;re dealing with major water damage, a neglected used car, or a
+            &quot;disaster&quot; vehicle, we do what it takes to restore your interior.
+          </>
+        )
+      },
+      {
+        icon: <LuAirVent />,
+        text: (
+          <>
+            On all Interior Restoration vehicles that need it we run our professional grade ozone machine to remove odors and mold spores that we can&apos;t
+            reach. Combined with heated carpet/fabric extraction and EPA registered disinfectants, we tackle the jobs other shops turn away. Our goal is to
+            restore your interior to its highest possible standard.
+          </>
+        )
+      }
+    ],
+    checklist: ["HEPA vacuum", "Embedded grime removal", "Heated extraction", "EPA registered disinfectants", "Mold spore elimination", "Professional ozone treatment"],
+    note: (
+      <>
+        Want the exterior done as well? Book an interior and exterior detail and we&apos;ll get your entire vehicle looking like new in just one day. Check out our{" "}
+        <a href="/services/exterior" className="font-semibold text-accent-hover hover:underline">
+          Exterior Decon Wash
+        </a>
+        .
+      </>
+    )
+  },
+  results: {
+    title: "Back to the way your car should be",
+    lead: "A car you aren't scared or embarrassed to drive anymore.",
+    galleryHref: "/gallery/interior",
+    galleryLabel: "See the interior gallery",
+    images: [
+      { src: "/assets/images/interior/ferrariInt.jpg", alt: "Vehicle interior after our extensive Interior Restoration service" },
+      { src: "/assets/images/interior/bio1281.jpg", alt: "Vehicle during our ozone treatment with the machine pumping ozone into the cabin" },
+      { src: "/assets/images/before&afters/badMobileIntBA.jpg", alt: "Vehicle interior after our extensive Interior Restoration service" },
+      { src: "/assets/images/before&afters/bio1279.webp", alt: "Vehicle interior after our extensive Interior Restoration service" },
+      { src: "/assets/images/before&afters/traegerDriverBA.jpg", alt: "Vehicle interior after our extensive Interior Restoration service" },
+      { src: "/assets/images/before&afters/traegerCenterBA.jpg", alt: "Vehicle interior after our extensive Interior Restoration service" },
+      { src: "/assets/images/interior/wranglerIntCeramic.jpg", alt: "Vehicle interior after our extensive Interior Restoration service" }
+    ]
+  },
+  cta: {
+    title: "Is your car in need of a restoration?",
+    lead: "Have questions or want a free quote on our Interior Restoration service? Send us an inquiry, or book a time online.",
+    next: { label: "Not that bad? See the Full Interior Detail", href: "/services/interior" }
+  }
+};
+
+export default function Page() {
+  return <ServicePage {...page} />;
 }

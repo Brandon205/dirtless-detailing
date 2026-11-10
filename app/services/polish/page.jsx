@@ -1,388 +1,227 @@
-"use client";
-import React, { useState, useEffect } from "react";
-import HeaderComponent from "../../components/HeaderComponent";
-import ImageGallery from "../../components/ImageGallery";
-import BeforeAfterSlider from "../../components/ImageSlider";
-import { containerVariant, oddVariant, evenVariant } from "../../../utils/animationVariations";
-import { ExternalLink } from "lucide-react";
+import { ServicePage } from "../../components/ServicePage";
 import { GiClayBrick } from "react-icons/gi";
 import { FaCarOn } from "react-icons/fa6";
-import FaqItem from "../../components/FaqItem";
-import { motion } from "framer-motion";
-import BaseSchema from "../../jsonSchemas/BaseSchema";
-import { Button } from "../../components/ui/Button";
-import { PricingEstimator } from "../../components/PricingEstimator";
-import { Section } from "../../components/ui/Section";
-import { SectionHeader } from "../../components/ui/SectionHeader";
-import { serviceBySlug } from "../../../utils/services";
+import ImageGallery from "../../components/ImageGallery";
 
-export default function ExteriorPolish() {
-  const [expanded, setExpanded] = useState(false);
-  const [smallScreen, setSmallScreen] = useState(false);
-
-  useEffect(() => {
-    if (window.innerWidth < 979) {
-      setSmallScreen(true);
-    } else {
-      setSmallScreen(false);
+// Content for this page. The layout lives in app/components/ServicePage.tsx.
+const page = {
+  slug: "polish",
+  schema: {
+    serviceImage: "/assets/images/correction/teslaclean.jpg",
+    makesOffer: {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Polish & Coat",
+        description:
+          "Experience a showroom shine and unparalleled protection with our Exterior Polish & Coat service, ensuring your car gleams like new while safeguarding its finish.",
+        areaServed: "Buckley, Bonney Lake, and surrounding areas.",
+        serviceType: "Paint Polishing and Ceramic Coating"
+      }
     }
-  }, []);
-
-  const faqItems = [
-    {
-      title: "How do I maintain my Ceramic Coating?",
-      description: (
-        <div>
-          We have a full Ceramic Coating Maintenance Guide available on our{" "}
-          <a href="/products?category=Ceramic" className="text-accent-hover hover:underline">
-            Products page
-          </a>
-          , which includes everything you need to know about maintaining your ceramic coating, including recommended products and techniques!
-        </div>
-      )
-    },
-    {
-      title: "What is a Ceramic Coating and why should I get one?",
-      description: (
-        <div>
-          <ul style={{ margin: 0, marginLeft: "1rem" }} className="list-disc">
-            <li>
-              Besides PPF it is the best protection for your paint, ceramic coatings increase the hardness of your paint, making it less likely to scratch while
-              washing.
-            </li>
-            <li>
-              Coatings increase the Gloss and Slickness of your paint, which can help remove dirt before it gets trapped under your wash mitts leading to
-              scratches.
-            </li>
-            <li>
-              Self cleaning properties: ceramic coatings easily bead water, dirt gets caught in these beads and will fly off while you're driving! Your
-              windshield will bead water like never before as well!
-            </li>
-            <li>
-              It will be far easier to wash and dry your car. Dirt will wash off with less effort, you can also blow dry 90% of your vehicle when you're done
-              washing.
-            </li>
-          </ul>
-          <ImageGallery images={[{ src: "/assets/images/showcase/iglcircle.jpg", alt: "Benefits of IGL high solids ceramic coatings" }]} />
-        </div>
-      )
-    },
-    {
-      title: "How do I wash/maintain a Ceramic Coating?",
-      description: (
-        <div>
-          We have a full Ceramic Coating Maintenance Guide available at the bottom of our{" "}
-          <a href="/products?category=Ceramic" className="text-accent-hover hover:underline">
-            Ceramic Products Page
-          </a>
-          , which includes everything you need to know about maintaining your ceramic coating, including recommended products and techniques!
-        </div>
-      )
-    },
-    {
-      title: "Does a ceramic coating make my vehicle scratch proof?",
-      description: <p className="faq-description">Unfortunately no, but it does noticeably increase resistance against light scratches and swirl marks.</p>
-    },
-    {
-      title: "How long will my Ceramic Coating last?",
-      description: (
-        <p className="faq-description">
-          Unlike waxes true ceramic coatings don't just wash off, however, over time your coating can get clogged with contaminants and gloss, slickness, and
-          water beading can degrade (for this coating it should stay in good quality for up to 3 years). We recommend getting at least our{" "}
-          <a href="/services/exterior" className="text-accent-hover">
-            Exterior Decon Wash
-          </a>{" "}
-          service with the <strong>Ceramic Maintenance Addon</strong> done bi-annually or annually. This package fully decontaminates and refreshes your ceramic
-          coating as well as has us top any spots that might be wearing down if needed.
-        </p>
-      )
-    },
-    {
-      title: "Can I still go through car washes?",
-      description: (
-        <p className="faq-description">
-          We never recommend going through a car wash as they can reduce the gloss slickness and beading of your coating prematurely. However in a pinch a
-          touch-less car wash will suffice. Just make sure to use the cheapest setting, without any waxes. We also recommend to make sure that all the edges and
-          corners are blown out and dried (We recommend{" "}
-          <a href="https://amzn.to/41db9SY" className="text-accent-hover" target="_blank" rel="noopener noreferrer">
-            The Rag Company's Large Drying Towel
-          </a>
-          ).
-        </p>
-      )
+  },
+  hero: {
+    title: "Exterior Polish & Coat",
+    lead: "An even more thorough wash with clay bar decontamination, a corrective polish, and a high-quality ceramic coating.",
+    image: "/assets/images/correction/teslaclean.jpg",
+    sideImage: "/assets/images/before&afters/f150PolishBA.jpg"
+  },
+  about: {
+    title: "Our Polish & Coat service",
+    lead: "The perfect exterior middle ground",
+    media: { before: "/assets/images/before&afters/polishHoodB.jpg", after: "/assets/images/before&afters/polishHoodA.jpg" },
+    points: [
+      {
+        icon: <GiClayBrick />,
+        text: (
+          <>
+            This service is the perfect middle ground for vehicles that have developed light swirl marks and a dull appearance. After a thorough decontamination
+            and clay bar treatment, we perform a light machine polishing step to restore depth and clarity to your clear coat.
+          </>
+        )
+      },
+      {
+        icon: <FaCarOn />,
+        text: (
+          <>
+            We top the restored surface with our 3-year ceramic coating that acts as a durable barrier against environmental damage and water spots. We also
+            give your windshield, exterior glass, and trim that same coating, protecting your entire vehicle. Your car will look better, stay cleaner for
+            longer, and be significantly easier to maintain until the next time you visit.
+          </>
+        )
+      }
+    ],
+    idealFor: 'Daily drivers with light swirl marks or paint that has lost its original depth and "glow."',
+    note: (
+      <>
+        Now's the perfect time to book an interior cleaning as well. Check out our current offers and pricing on our full interior detail{" "}
+        <a href="/services/interior" className="font-semibold text-accent-hover hover:underline">
+          here
+        </a>
+        !
+      </>
+    )
+  },
+  process: {
+    title: "Our Polish & Coat process",
+    steps: [
+      { title: "Wash vehicle", text: <>Thorough top to bottom wash including inside the gas door.</> },
+      {
+        title: "Wheel cleaning",
+        text: <>Clean wheels, wheel wells, and wheel barrels with specialized chemicals made for removing brake dust and road film.</>
+      },
+      { title: "Clean door jambs", text: <>Thoroughly clean and rinse out all cracks and crevices in the door jambs.</> },
+      {
+        title: "Remove tar, sap, iron, and clay bar if needed",
+        text: (
+          <>
+            Remove any tar, sap, and iron from the exterior. If the paint is rough to the touch after washing, we will also perform a clay bar treatment to
+            remove any remaining contaminants from the paint.
+          </>
+        )
+      },
+      { title: "Dry vehicle and dress tires", text: <>Dry the whole vehicle with drying towels and air blowers, and then dress the tires if desired.</> },
+      {
+        title: "Remove scratches, swirl marks, and waterspots",
+        text: (
+          <>
+            Perform our polishing procedure removing many lighter scratches and swirls from your paint. We also go over all of the glass to remove any
+            watermarks that have built up.
+          </>
+        )
+      },
+      {
+        title: "Coat vehicle",
+        text: (
+          <>
+            Apply the 3-year ceramic coating. At this stage we'll also apply our windshield, trim, headlight, and wheel coatings to protect your entire vehicle!
+          </>
+        )
+      },
+      { title: "Final touches", text: <>Dress the tires and wheel wells</> }
+    ],
+    upgrade: {
+      title: "Upgrade to Correct & Coat",
+      text: (
+        <>
+          If you opt for our Exterior Correct & Coat package you get all of these services, a 2-stage paint correction (removes more & deeper scratches), for an
+          even deeper gloss and a flawless, mirror-like finish!
+        </>
+      ),
+      href: "/services/correct",
+      label: "See Correct & Coat"
     }
-  ];
-
-  return (
-    <section className="service-content-container">
-      <BaseSchema
-        serviceImage="/assets/images/correction/teslaclean.jpg"
-        url="https://www.dirtlessdetailing.com/services/polish"
-        makesOffer={{
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Polish & Coat",
-            "description":
-              "Experience a showroom shine and unparalleled protection with our Exterior Polish & Coat service, ensuring your car gleams like new while safeguarding its finish.",
-            "areaServed": "Buckley, Bonney Lake, and surrounding areas.",
-            "serviceType": "Paint Polishing and Ceramic Coating"
-          }
-        }}
-      />
-      <HeaderComponent
-        imageUrl="/assets/images/correction/teslaclean.jpg"
-        title="Exterior Polish & Coat"
-        description="An even more thorough wash with clay bar decontamination, a corrective polish, and a high-quality ceramic coating."
-        secondaryUrl="/assets/images/before&afters/f150PolishBA.jpg"
-      />
-
-      <div className="main-content-container">
-        <div className="process-container">
-          <div className="w-full">
-            <Section tone="surface" className="text-left">
-              <SectionHeader eyebrow="Pricing" title={`${serviceBySlug("polish").name} pricing`} lead="Pick your vehicle size and any add-ons for an estimate." />
-              <PricingEstimator slug="polish" />
-            </Section>
-
-            <br className="extra-space" />
-
-            <main className="w-full text-white my-0 mx-auto text-center p-4">
-              <div className="flex flex-col w-full gap-4 lg:w-5/6 mx-auto border-2 border-zinc-500 rounded-lg p-6 lg:p-8">
-                <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center mb-0 lg:mb-4">
-                  <div className="w-11/12 lg:w-3/4 max-w-[1200px] mx-auto">
-                    <BeforeAfterSlider
-                      beforeImage="/assets/images/before&afters/polishHoodB.jpg"
-                      afterImage="/assets/images/before&afters/polishHoodA.jpg"
-                      aspectRatio="16/9"
-                    />
-                  </div>
-
-                  <div className="flex flex-col w-full justify-between min-h-[475px] py-4">
-                    <div className="flex flex-col items-start">
-                      <h2 className="text-4xl font-bold">Our Exterior Polish & Coat Service</h2>
-                      <strong className="text-primary font-bold text-2xl">The Perfect Exterior Middle Ground</strong>
-                    </div>
-                    <div className="flex items-center my-4">
-                      <GiClayBrick size={48} className="text-accent mr-4 hidden lg:block flex-shrink-0" />
-                      <p className="leading-relaxed text-left">
-                        This service is the perfect middle ground for vehicles that have developed light swirl marks and a dull appearance. After a thorough
-                        decontamination and clay bar treatment, we perform a light machine polishing step to restore depth and clarity to your clear coat.
-                      </p>
-                    </div>
-                    <div className="flex items-center mb-4">
-                      <FaCarOn size={48} className="text-accent mr-4 hidden lg:block flex-shrink-0" />
-                      <p className="leading-relaxed text-left">
-                        We top the restored surface with our 3-year ceramic coating that acts as a durable barrier against environmental damage and water spots.
-                        We also give your windshield, exterior glass, and trim that same coating, protecting your entire vehicle. Your car will look better,
-                        stay cleaner for longer, and be significantly easier to maintain until the next time you visit.
-                      </p>
-                    </div>
-                    <div className="w-full p-4 bg-zinc-800 rounded-lg border border-zinc-600">
-                      <p className="text-left">
-                        <span className="font-bold">Ideal for:</span> Daily drivers with light swirl marks or paint that has lost its original depth and
-                        "glow."
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <p className="text-center">
-                  Now's the perfect time to book a interior cleaning as well. Check out our current offers and pricing on our full interior detail{" "}
-                  <a href="/services/interior" className="text-accent-hover hover:text-accent font-medium underline">
-                    here
-                  </a>
-                  !
-                </p>
-              </div>
-            </main>
-
-            <br className="extra-space" />
-
-            <h2 className="cleaning-process-title pb-8">Our Exterior Polish & Coat Process</h2>
-            <motion.ol className="list" variants={containerVariant} initial="initial" whileInView="whileInView" viewport={{ once: true }}>
-              <motion.li className="item" variants={oddVariant}>
-                <div className="step-number-container">
-                  <h3 className="step-number">1</h3>
-                </div>
-                <div className="step-container">
-                  <h4 className="step-title">Wash Vehicle</h4>
-                  <p className="step-desc">Thorough top to bottom wash including inside the gas door.</p>
-                </div>
-              </motion.li>
-              <motion.li className="item" variants={evenVariant}>
-                <div className="step-number-container">
-                  <h3 className="step-number">2</h3>
-                </div>
-                <div className="step-container">
-                  <h4 className="step-title">Wheel Cleaning</h4>
-                  <p className="step-desc">
-                    Clean wheels, wheel wells, and wheel barrels with specialized chemicals made for removing brake dust and road film.
-                  </p>
-                </div>
-              </motion.li>
-              <motion.li className="item" variants={oddVariant}>
-                <div className="step-number-container">
-                  <h3 className="step-number">3</h3>
-                </div>
-                <div className="step-container">
-                  <h4 className="step-title">Clean Door Jambs</h4>
-                  <p className="step-desc">Thoroughly clean and rinse out all cracks and crevices in the door jambs.</p>
-                </div>
-              </motion.li>
-              <motion.li className="item" variants={oddVariant}>
-                <div className="step-number-container">
-                  <h3 className="step-number">4</h3>
-                </div>
-                <div className="step-container">
-                  <h4 className="step-title">Remove tar, sap, iron, and clay bar if needed</h4>
-                  <p className="step-desc">
-                    Remove any tar, sap, and iron from the exterior. If the paint is rough to the touch after washing, we will also perform a clay bar treatment
-                    to remove any remaining contaminants from the paint.
-                  </p>
-                </div>
-              </motion.li>
-              <motion.li className="item" variants={evenVariant}>
-                <div className="step-number-container">
-                  <h3 className="step-number">5</h3>
-                </div>
-                <div className="step-container">
-                  <h4 className="step-title">Dry Vehicle and Dress Tires</h4>
-                  <p className="step-desc">Dry the whole vehicle with drying towels and air blowers, and then dress the tires if desired.</p>
-                </div>
-              </motion.li>
-              <motion.li className="item" variants={oddVariant}>
-                <div className="step-number-container">
-                  <h3 className="step-number">6</h3>
-                </div>
-                <div className="step-container">
-                  <h4 className="step-title">Remove scratches, swirl marks, and waterspots</h4>
-                  <p className="step-desc">
-                    Perform our polishing procedure removing many lighter scratches and swirls from your paint. We also go over all of the glass to remove any
-                    watermarks that have built up.
-                  </p>
-                </div>
-              </motion.li>
-              <motion.li className="item" variants={evenVariant}>
-                <div className="step-number-container">
-                  <h3 className="step-number">7</h3>
-                </div>
-                <div className="step-container">
-                  <h4 className="step-title">Coat Vehicle</h4>
-                  <p className="step-desc">
-                    Apply the 3-year ceramic coating. At this stage we'll also apply our windshield, trim, headlight, and wheel coatings to protect your entire
-                    vehicle!
-                  </p>
-                </div>
-              </motion.li>
-              <motion.li className="item" variants={evenVariant}>
-                <div className="step-number-container">
-                  <h3 className="step-number">8</h3>
-                </div>
-                <div className="step-container">
-                  <h4 className="step-title">Final Touches</h4>
-                  <p className="step-desc">Dress the tires and wheel wells</p>
-                </div>
-              </motion.li>
-              <motion.li className="item item-disabled" variants={oddVariant}>
-                <div className="step-number-container">
-                  <h3 className="step-number" style={{ borderColor: "var(--color-muted)" }}>
-                    9
-                  </h3>
-                </div>
-                <div className="step-container">
-                  <h4 className="step-title flex line-through">
-                    All this and more!{" "}
-                    <a href="/services/correct">
-                      <ExternalLink size={24} className="text-accent-hover mt-1 ml-1" />
-                    </a>
-                  </h4>
-                  <p className="step-desc">
-                    If you opt for our Exterior Correct & Coat package you get all of these services, a 2-stage paint correction (removes more & deeper
-                    scratches), for an even deeper gloss and a flawless, mirror-like finish! See more info{" "}
-                    <a href="/services/correct" className="text-accent-hover">
-                      here
-                    </a>
-                    .
-                  </p>
-                </div>
-              </motion.li>
-            </motion.ol>
-
-            <div className="mt-12 mb-6 p-6 lg:p-8 bg-gradient-to-r from-zinc-800 to-zinc-700 rounded-lg border border-accent/30 text-center">
-              <h3 className="text-2xl lg:text-3xl font-bold text-white mb-3">Not sure if this is the service you need?</h3>
-              <p className="text-zinc-300 mb-6 text-lg">
-                Come by our shop in Buckley, or get in touch with us today, and for no cost at all we can answer your questions.
-              </p>
-              <p className="text-zinc-300 mb-6 text-lg">
-                We'll take a look assess what you want and even show you test spots vs our other services on your car so you can see what each service entails
-                and the results.
-              </p>
-              <div className="flex flex-col lg:flex-row gap-8 justify-center">
-                <Button href="/inquiry" size="lg">
-                  Send an Inquiry
-                </Button>
-                <Button href="sms:+12532529758" variant="secondary" size="lg">
-                  Call or text (253) 252-9758
-                </Button>
-              </div>
-            </div>
-
-            <div className="general-container new-heading-container font-bold text-white">
-              <h3 style={{ margin: 0, width: "auto", padding: 0 }} className="new-heading new-heading-center text-4xl lg:text-5xl">
-                Polish & Coat FAQ's
-              </h3>
-              <p className="max-w-[500px] mx-auto text-center my-0 font-normal pb-8">
-                Answers to the questions we most commonly get about this service, please reach out if you have other questions!
-              </p>
-            </div>
-            <section className="flex flex-col items-center xl:flex-row w-[95vw] mx-auto justify-center gap-8">
-              <div className="flex flex-col gap-6 w-full text-left text-white">
-                {faqItems.map((item, i) => (
-                  <FaqItem
-                    key={i}
-                    i={i}
-                    expanded={expanded}
-                    setExpanded={setExpanded}
-                    title={item.title}
-                    description={item.description}
-                    isMobile={smallScreen}
-                  />
-                ))}
-              </div>
-            </section>
-
-            <br className="extra-space" />
-
-            <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
-            <h3 className="pricing__heading">Clean, Shiny, and Protected.</h3>
-            <p className="pricing__subtext">With light scratches removed and 3 years of protection applied your car will shine like never before!</p>
-            <div>
-              <ImageGallery
-                images={[
-                  { src: "/assets/images/polish/36 plymouth.jpg", alt: "Exterior after our Polish & Coat Service" },
-                  { src: "/assets/images/polish/bMustang1.jpg", alt: "Exterior after our Polish & Coat Service" },
-                  { src: "/assets/images/polish/jaguar.jpg", alt: "Exterior after our Polish & Coat Service" },
-                  { src: "/assets/images/polish/thatmustang.jpg", alt: "Exterior after our Polish & Coat Service" },
-                  { src: "/assets/images/polish/redFordPolishers.jpg", alt: "Exterior during our Polish & Coat Service" },
-                  { src: "/assets/images/polish/fjCruiserOutside2.jpg", alt: "Exterior after our Polish & Coat Service" },
-                  { src: "/assets/images/polish/rivianDuring.jpg", alt: "Exterior after our Polish & Coat Service" },
-                  { src: "/assets/images/polish/blueRav4.jpg", alt: "Exterior after our Polish & Coat Service" }
-                ]}
-              />
-            </div>
-
-            <div className="pb-8 text-center flex flex-col items-center text-white ">
-              <h4 className="text-3xl text-left">
-                Check out our{" "}
-                <a href="/gallery/polish" className="text-accent-hover inline-block">
-                  Polish & Coat Gallery <ExternalLink className="inline-block" />
-                </a>{" "}
-                for more images.
-              </h4>
-            </div>
+  },
+  faq: {
+    title: "Polish & Coat FAQs",
+    items: [
+      {
+        question: "How do I maintain my Ceramic Coating?",
+        answer: (
+          <div>
+            We have a full Ceramic Coating Maintenance Guide available on our{" "}
+            <a href="/products?category=Ceramic" className="font-semibold text-accent-hover hover:underline">
+              Products page
+            </a>
+            , which includes everything you need to know about maintaining your ceramic coating, including recommended products and techniques!
           </div>
-        </div>
-      </div>
-    </section>
-  );
+        )
+      },
+      {
+        question: "What is a Ceramic Coating and why should I get one?",
+        answer: (
+          <div>
+            <ul className="ml-5 list-disc space-y-1">
+              <li>
+                Besides PPF it is the best protection for your paint, ceramic coatings increase the hardness of your paint, making it less likely to scratch
+                while washing.
+              </li>
+              <li>
+                Coatings increase the Gloss and Slickness of your paint, which can help remove dirt before it gets trapped under your wash mitts leading to
+                scratches.
+              </li>
+              <li>
+                Self cleaning properties: ceramic coatings easily bead water, dirt gets caught in these beads and will fly off while you're driving! Your
+                windshield will bead water like never before as well!
+              </li>
+              <li>
+                It will be far easier to wash and dry your car. Dirt will wash off with less effort, you can also blow dry 90% of your vehicle when you're done
+                washing.
+              </li>
+            </ul>
+            <ImageGallery images={[{ src: "/assets/images/showcase/iglcircle.jpg", alt: "Benefits of IGL high solids ceramic coatings" }]} />
+          </div>
+        )
+      },
+      {
+        question: "How do I wash/maintain a Ceramic Coating?",
+        answer: (
+          <div>
+            We have a full Ceramic Coating Maintenance Guide available at the bottom of our{" "}
+            <a href="/products?category=Ceramic" className="font-semibold text-accent-hover hover:underline">
+              Ceramic Products Page
+            </a>
+            , which includes everything you need to know about maintaining your ceramic coating, including recommended products and techniques!
+          </div>
+        )
+      },
+      {
+        question: "Does a ceramic coating make my vehicle scratch proof?",
+        answer: <p>Unfortunately no, but it does noticeably increase resistance against light scratches and swirl marks.</p>
+      },
+      {
+        question: "How long will my Ceramic Coating last?",
+        answer: (
+          <p>
+            Unlike waxes true ceramic coatings don't just wash off, however, over time your coating can get clogged with contaminants and gloss, slickness, and
+            water beading can degrade (for this coating it should stay in good quality for up to 3 years). We recommend getting at least our{" "}
+            <a href="/services/exterior" className="font-semibold text-accent-hover hover:underline">
+              Exterior Decon Wash
+            </a>{" "}
+            service with the <strong>Ceramic Maintenance Addon</strong> done bi-annually or annually. This package fully decontaminates and refreshes your
+            ceramic coating as well as has us top any spots that might be wearing down if needed.
+          </p>
+        )
+      },
+      {
+        question: "Can I still go through car washes?",
+        answer: (
+          <p>
+            We never recommend going through a car wash as they can reduce the gloss slickness and beading of your coating prematurely. However in a pinch a
+            touch-less car wash will suffice. Just make sure to use the cheapest setting, without any waxes. We also recommend to make sure that all the edges
+            and corners are blown out and dried (We recommend{" "}
+            <a href="https://amzn.to/41db9SY" className="font-semibold text-accent-hover hover:underline" target="_blank" rel="noopener noreferrer">
+              The Rag Company's Large Drying Towel
+            </a>
+            ).
+          </p>
+        )
+      }
+    ]
+  },
+  results: {
+    title: "Clean, shiny and protected",
+    lead: "With light scratches removed and 3 years of protection applied, your car will shine like never before.",
+    galleryHref: "/gallery/polish",
+    galleryLabel: "See the Polish & Coat gallery",
+    images: [
+      { src: "/assets/images/polish/36 plymouth.jpg", alt: "Exterior after our Polish & Coat Service" },
+      { src: "/assets/images/polish/bMustang1.jpg", alt: "Exterior after our Polish & Coat Service" },
+      { src: "/assets/images/polish/jaguar.jpg", alt: "Exterior after our Polish & Coat Service" },
+      { src: "/assets/images/polish/thatmustang.jpg", alt: "Exterior after our Polish & Coat Service" },
+      { src: "/assets/images/polish/redFordPolishers.jpg", alt: "Exterior during our Polish & Coat Service" },
+      { src: "/assets/images/polish/fjCruiserOutside2.jpg", alt: "Exterior after our Polish & Coat Service" },
+      { src: "/assets/images/polish/rivianDuring.jpg", alt: "Exterior after our Polish & Coat Service" },
+      { src: "/assets/images/polish/blueRav4.jpg", alt: "Exterior after our Polish & Coat Service" }
+    ]
+  },
+  cta: {
+    title: "Not sure this is the service you need?",
+    lead: "Come by our shop in Buckley, or get in touch with us today, and for no cost at all we can answer your questions. We'll take a look, assess what you want and even show you test spots vs our other services on your car so you can see what each service entails and the results.",
+    next: { label: "Want a flawless, mirror-like finish? See Correct & Coat", href: "/services/correct" }
+  }
+};
+
+export default function Page() {
+  return <ServicePage {...page} />;
 }

@@ -1,233 +1,133 @@
-"use client";
-import HeaderComponent from "../../components/HeaderComponent";
-import ImageGallery from "../../components/ImageGallery";
-import { containerVariant, oddVariant, evenVariant } from "../../../utils/animationVariations";
-import { motion } from "framer-motion";
-import { Flame, ExternalLink, Sparkles } from "lucide-react";
-import BaseSchema from "../../jsonSchemas/BaseSchema";
-import Image from "next/image";
-import { Button } from "../../components/ui/Button";
-import { PricingEstimator } from "../../components/PricingEstimator";
-import { Section } from "../../components/ui/Section";
-import { SectionHeader } from "../../components/ui/SectionHeader";
-import { serviceBySlug } from "../../../utils/services";
+import { ServicePage } from "../../components/ServicePage";
+import { Flame, Sparkles } from "lucide-react";
 
-export default function InteriorRefresh() {
-  return (
-    <section className="service-content-container">
-      <BaseSchema
-        serviceImage="/assets/images/interior/pass1.jpg"
-        url="https://www.dirtlessdetailing.com/services/interior-refresh"
-        makesOffer={{
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Interior Refresh",
-            "description":
-              "Give your already-clean interior a professional refresh with our Interior Refresh service. Perfect for vehicles that are already in good condition without needing deep cleaning or stain extraction.",
-            "areaServed": "Buckley, Bonney Lake, and surrounding areas.",
-            "serviceType": "Interior Detailing"
-          }
-        }}
-      />
-      <HeaderComponent
-        imageUrl="/assets/images/interior/pass1.jpg"
-        title="Interior Refresh"
-        description="For vehicles that are already nearly clean. A maintenance-focused interior detail that keeps your interior looking like new."
-        secondaryUrl="/assets/images/interior/driver5.jpg"
-      />
+// Content for this page. The layout lives in app/components/ServicePage.tsx.
+const page = {
+  slug: "interior-refresh",
+  schema: {
+    serviceImage: "/assets/images/interior/pass1.jpg",
+    makesOffer: {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Interior Refresh",
+        description:
+          "Give your already-clean interior a professional refresh with our Interior Refresh service. Perfect for vehicles that are already in good condition without needing deep cleaning or stain extraction.",
+        areaServed: "Buckley, Bonney Lake, and surrounding areas.",
+        serviceType: "Interior Detailing"
+      }
+    }
+  },
+  hero: {
+    title: "Interior Refresh",
+    lead: "For vehicles that are already nearly clean. A maintenance-focused interior detail that keeps your interior looking like new.",
+    image: "/assets/images/interior/pass1.jpg",
+    sideImage: "/assets/images/interior/driver5.jpg"
+  },
+  about: {
+    title: "Our Interior Refresh service",
+    lead: "A maintenance-based interior detail",
+    media: { image: "/assets/images/interior/driverModelX.jpg", alt: "Tesla Model X interior after an Interior Refresh" },
+    points: [
+      {
+        icon: <Sparkles />,
+        text: (
+          <>
+            Our Interior Refresh is designed for vehicles already in good condition that don't require intensive stain removal or heavy pet hair extraction.
+            It's the perfect maintenance choice if you've had your vehicle detailed within the last year to keep your cabin looking sharp and protected without
+            the extra cost of a deep clean.
+          </>
+        )
+      },
+      {
+        icon: <Flame />,
+        text: (
+          <>
+            We perform a thorough top-to-bottom cleaning of all surfaces, including seats, carpets, dashboards, and vents. While doing that we use products made
+            to clean and condition, saving us time and you money while still giving the benefits of protected and conditioned surfaces (without a greasy
+            finish).
+          </>
+        )
+      }
+    ],
+    checklist: ["Perfect for Maintenance", "Time-Efficient", "Cost-Effective", "Maintains Fresh Appearance", "Protects Interior Surfaces"],
+    note: (
+      <>
+        Need something more intensive? If your interior needs deep cleaning, stain extraction, or heavy pet hair removal, check out our Full Interior Service{" "}
+        <a href="/services/interior" className="font-semibold text-accent-hover hover:underline">
+          here
+        </a>
+        !
+      </>
+    )
+  },
+  process: {
+    title: "Our Interior Refresh process",
+    steps: [
+      { title: "Vacuum entire interior", text: <>Thorough vacuum of all carpets, floor mats, under seats, and any crevices to remove dust and light dirt.</> },
+      {
+        title: "Blow out vehicle",
+        text: <>Blow out all the cracks and crevices as well as blowing out all embedded dirt and dust from the seats and carpeting.</>
+      },
+      {
+        title: "Spot clean seats & upholstery",
+        text: <>Clean all seats and fabric surfaces with specialized cleaners appropriate for already-clean upholstery, leaving them fresh and vibrant.</>
+      },
+      {
+        title: "Clean and condition",
+        text: (
+          <>
+            Use a dedicated cleaner/conditioner product to detail the dashboard, door panels, center console, and all hard surfaces with appropriate products.
+          </>
+        )
+      },
+      {
+        title: "Clean windows and mirrors",
+        text: <>Clean all interior windows and mirrors for crystal clear visibility and a polished look throughout the cabin.</>
+      },
+      {
+        title: "Door jamb wipe down",
+        text: (
+          <>
+            Do a quick wipe down of the door jambs to remove any dust/dirt that has accumulated there. We don't do a full deep clean of the jambs with our
+            interior refresh.
+          </>
+        )
+      }
+    ],
+    upgrade: {
+      title: "Need something more in depth?",
+      text: (
+        <>
+          If your interior needs deep stain extraction, pet hair removal, or carpet restoration, check out our Full Interior Service for more comprehensive
+          detailing.
+        </>
+      ),
+      href: "/services/interior",
+      label: "See Full Interior Detail"
+    }
+  },
+  results: {
+    title: "Back to the way it should be",
+    lead: "And the way you wish it could stay forever.",
+    galleryHref: "/gallery/interior",
+    galleryLabel: "See the interior gallery",
+    images: [
+      { src: "/assets/images/interior/passfordGT.jpg", alt: "Interior after our Interior Refresh Service" },
+      { src: "/assets/images/interior/rear13.jpg", alt: "Interior after our Interior Refresh Service" },
+      { src: "/assets/images/interior/doorRenegade.jpg", alt: "Interior after our Interior Refresh Service" },
+      { src: "/assets/images/interior/trunkLexus.jpg", alt: "Interior after our Interior Refresh Service" },
+      { src: "/assets/images/interior/driver15.jpg", alt: "Interior after our Interior Refresh Service" },
+      { src: "/assets/images/interior/door1.jpg", alt: "Interior after our Interior Refresh Service" }
+    ]
+  },
+  cta: {
+    title: "Ready to refresh your interior?",
+    lead: "Have questions about our Interior Refresh service? Want to book an appointment? Get in touch with us today!",
+    next: { label: "Need a deeper clean? See Full Interior Detail", href: "/services/interior" }
+  }
+};
 
-      <div className="main-content-container">
-        <div className="process-container">
-          <div className="w-full">
-            <Section tone="surface" className="text-left">
-              <SectionHeader eyebrow="Pricing" title={`${serviceBySlug("interior-refresh").name} pricing`} lead="Pick your vehicle size and any add-ons for an estimate." />
-              <PricingEstimator slug="interior-refresh" />
-            </Section>
-
-            <main className="w-full text-white my-0 mx-auto text-center p-4">
-              <div className="flex flex-col w-full gap-4 lg:w-[90%] mx-auto border-2 border-zinc-500 rounded-lg p-6 lg:p-8">
-                <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center mb-0 lg:mb-4">
-                  <div className="relative flex flex-grow justify-center rounded-2xl w-full h-[450px] lg:h-[550px] shadow-lg">
-                    <Image src="/assets/images/interior/driverModelX.jpg" alt="Interior Refresh" className="rounded-2xl object-cover" sizes="(max-width: 1024px) 100vw, 550px" fill />
-                  </div>
-
-                  <div className="flex flex-col w-full justify-between min-h-[475px] py-4">
-                    <div className="flex flex-col items-start">
-                      <h2 className="text-4xl font-bold">Our Interior Refresh Service</h2>
-                      <strong className="text-primary font-bold text-2xl">Maintenance-based Interior Detail</strong>
-                    </div>
-                    <div className="flex items-center my-4">
-                      <Sparkles size={48} className="text-accent mr-4 hidden lg:block flex-shrink-0" />
-                      <p className="leading-relaxed text-left">
-                        Our Interior Refresh is designed for vehicles already in good condition that don't require intensive stain removal or heavy pet hair
-                        extraction. It's the perfect maintenance choice if you've had your vehicle detailed within the last year to keep your cabin looking
-                        sharp and protected without the extra cost of a deep clean.
-                      </p>
-                    </div>
-                    <div className="flex items-center mb-4">
-                      <Flame size={48} className="text-accent mr-4 hidden lg:block flex-shrink-0" />
-                      <p className="leading-relaxed text-left">
-                        We perform a thorough top-to-bottom cleaning of all surfaces, including seats, carpets, dashboards, and vents. While doing that we use
-                        products made to clean and condition, saving us time and you money while still giving the benefits of protected and conditioned surfaces
-                        (without a greasy finish).
-                      </p>
-                    </div>
-                    <div className="w-full p-4 bg-zinc-800 rounded-lg border border-zinc-600">
-                      <ul className="lg:max-h-[120px] list-disc list-inside leading-relaxed text-left w-full flex flex-wrap justify-between">
-                        <li className="basis-1/2">Perfect for Maintenance</li>
-                        <li className="basis-1/2">Time-Efficient</li>
-                        <li className="basis-1/2">Cost-Effective</li>
-                        <li className="basis-1/2">Maintains Fresh Appearance</li>
-                        <li className="basis-1/2">Protects Interior Surfaces</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <p className="text-center">
-                  Need something more intensive? If your interior needs deep cleaning, stain extraction, or heavy pet hair removal, check out our Full Interior
-                  Service{" "}
-                  <a href="/services/interior" className="text-accent-hover hover:text-accent font-medium underline">
-                    here
-                  </a>
-                  !
-                </p>
-              </div>
-            </main>
-
-            <br className="extra-space" />
-
-            <h2 className="cleaning-process-title pb-8">Our Interior Refresh Process</h2>
-            <motion.ol className="list" variants={containerVariant} initial="initial" whileInView="whileInView" viewport={{ once: true }}>
-              <motion.li className="item" variants={oddVariant}>
-                <div className="step-number-container">
-                  <h3 className="step-number">1</h3>
-                </div>
-                <div className="step-container">
-                  <h4 className="step-title">Vacuum Entire Interior</h4>
-                  <p className="step-desc">Thorough vacuum of all carpets, floor mats, under seats, and any crevices to remove dust and light dirt.</p>
-                </div>
-              </motion.li>
-              <motion.li className="item" variants={evenVariant}>
-                <div className="step-number-container">
-                  <h3 className="step-number">2</h3>
-                </div>
-                <div className="step-container">
-                  <h4 className="step-title">Blow Out Vehicle</h4>
-                  <p className="step-desc">
-                    Blow out all the cracks and crevices as well as blowing out all embedded dirt and dust from the seats and carpeting.
-                  </p>
-                </div>
-              </motion.li>
-              <motion.li className="item" variants={evenVariant}>
-                <div className="step-number-container">
-                  <h3 className="step-number">3</h3>
-                </div>
-                <div className="step-container">
-                  <h4 className="step-title">Spot Clean Seats & Upholstery</h4>
-                  <p className="step-desc">
-                    Clean all seats and fabric surfaces with specialized cleaners appropriate for already-clean upholstery, leaving them fresh and vibrant.
-                  </p>
-                </div>
-              </motion.li>
-              <motion.li className="item" variants={evenVariant}>
-                <div className="step-number-container">
-                  <h3 className="step-number">4</h3>
-                </div>
-                <div className="step-container">
-                  <h4 className="step-title">Clean and Condition</h4>
-                  <p className="step-desc">
-                    Use a dedicated cleaner/conditioner product to detail the dashboard, door panels, center console, and all hard surfaces with appropriate
-                    products.
-                  </p>
-                </div>
-              </motion.li>
-              <motion.li className="item" variants={oddVariant}>
-                <div className="step-number-container">
-                  <h3 className="step-number">5</h3>
-                </div>
-                <div className="step-container">
-                  <h4 className="step-title">Clean Windows and Mirrors</h4>
-                  <p className="step-desc">Clean all interior windows and mirrors for crystal clear visibility and a polished look throughout the cabin.</p>
-                </div>
-              </motion.li>
-              <motion.li className="item" variants={evenVariant}>
-                <div className="step-number-container">
-                  <h3 className="step-number">6</h3>
-                </div>
-                <div className="step-container">
-                  <h4 className="step-title">Door Jamb Wipe down</h4>
-                  <p className="step-desc">
-                    Do a quick wipe down of the door jambs to remove any dust/dirt that has accumulated there. We don't do a full deep clean of the jambs with
-                    our interior refresh.
-                  </p>
-                </div>
-              </motion.li>
-              <motion.li className="item item-disabled" variants={evenVariant}>
-                <div className="step-number-container">
-                  <h3 className="step-number" style={{ borderColor: "var(--color-muted)" }}>
-                    8
-                  </h3>
-                </div>
-                <div className="step-container">
-                  <h4 className="step-title flex line-through">
-                    Need Something More In Depth?{" "}
-                    <a href="/services/interior">
-                      <ExternalLink size={24} className="text-accent-hover mt-1 ml-1" />
-                    </a>
-                  </h4>
-                  <p className="step-desc">
-                    If your interior needs deep stain extraction, pet hair removal, or carpet restoration, check out our Full Interior Service for more
-                    comprehensive detailing. See more info{" "}
-                    <a href="/services/interior" className="text-accent-hover">
-                      here
-                    </a>
-                    .
-                  </p>
-                </div>
-              </motion.li>
-            </motion.ol>
-
-            <br className="extra-space" />
-
-            <div className="mt-12 mb-6 p-6 lg:p-8 bg-gradient-to-r from-zinc-800 to-zinc-700 rounded-lg border border-accent/30 text-center">
-              <h3 className="text-2xl lg:text-3xl font-bold text-white mb-3">Ready to Refresh Your Interior?</h3>
-              <p className="text-zinc-300 mb-6 text-lg">
-                Have questions about our Interior Refresh service? Want to book an appointment? Get in touch with us today!
-              </p>
-              <Button href="/booking" size="lg">
-                  Book Online
-                </Button>
-            </div>
-
-            <p style={{ fontSize: "2rem", margin: 0, color: "white" }}>End Results</p>
-            <h3 className="pricing__heading">Back to the way that it should be</h3>
-            <p className="pricing__subtext">And the way that you wish it could stay forever.</p>
-
-            <div>
-              <ImageGallery
-                images={[
-                  { src: "/assets/images/interior/passfordGT.jpg", alt: "Interior after our Interior Refresh Service" },
-                  { src: "/assets/images/interior/rear13.jpg", alt: "Interior after our Interior Refresh Service" },
-                  { src: "/assets/images/interior/doorRenegade.jpg", alt: "Interior after our Interior Refresh Service" },
-                  { src: "/assets/images/interior/trunkLexus.jpg", alt: "Interior after our Interior Refresh Service" },
-                  { src: "/assets/images/interior/driver15.jpg", alt: "Interior after our Interior Refresh Service" },
-                  { src: "/assets/images/interior/door1.jpg", alt: "Interior after our Interior Refresh Service" }
-                ]}
-              />
-            </div>
-
-            <div className="pb-8 text-center flex flex-col items-center text-white ">
-              <h4 className="text-3xl text-left">
-                See more examples of our interior work{" "}
-                <a href="/gallery/interior" className="text-accent-hover inline-block">
-                  here <ExternalLink className="inline-block" />
-                </a>
-              </h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+export default function Page() {
+  return <ServicePage {...page} />;
 }

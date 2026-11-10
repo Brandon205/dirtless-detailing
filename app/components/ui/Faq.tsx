@@ -1,13 +1,22 @@
-import type { ReactNode } from "react";
+import { isValidElement, type ReactNode } from "react";
 import { Plus } from "lucide-react";
 
 export type FaqEntry = {
   question: string;
   /** What visitors see. */
   answer: ReactNode;
-  /** Plain-text version of the answer for search engines. */
-  answerText: string;
+  /** Plain-text version of the answer for search engines. Worked out from `answer` when left out. */
+  answerText?: string;
 };
+
+/** The text inside some JSX, for structured data. */
+function toText(node: ReactNode): string {
+  if (node == null || typeof node === "boolean") return "";
+  if (typeof node === "string" || typeof node === "number") return String(node);
+  if (Array.isArray(node)) return node.map(toText).join("");
+  if (isValidElement<{ children?: ReactNode }>(node)) return toText(node.props.children);
+  return "";
+}
 
 /** An accordion of questions using native <details>, so it works without JavaScript. Adds FAQPage structured data. */
 export function Faq({ items }: { items: FaqEntry[] }) {
@@ -17,7 +26,7 @@ export function Faq({ items }: { items: FaqEntry[] }) {
     mainEntity: items.map((item) => ({
       "@type": "Question",
       name: item.question,
-      acceptedAnswer: { "@type": "Answer", text: item.answerText }
+      acceptedAnswer: { "@type": "Answer", text: (item.answerText ?? toText(item.answer)).replace(/\s+/g, " ").trim() }
     }))
   };
 
