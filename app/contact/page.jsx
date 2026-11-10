@@ -1,14 +1,31 @@
-"use client";
-import React from "react";
-
-import { Clock, MapPin, Smartphone, Mail, Gift, Snowflake } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { Clock, Gift, Mail, MapPin, Smartphone, Truck } from "lucide-react";
 import BaseSchema from "../jsonSchemas/BaseSchema";
-import { CallLink } from "../components/CallTracking";
+import { CallLink, REAL_PHONE_DISPLAY } from "../components/CallTracking";
 import { Button } from "../components/ui/Button";
+import { Section } from "../components/ui/Section";
+import { SectionHeader } from "../components/ui/SectionHeader";
+
+const MAPS_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS;
+const MAPS_LINK = "https://maps.app.goo.gl/bhPDhjUN4jsSegu48";
+const linkClass = "font-semibold text-ink hover:text-accent-hover hover:underline";
+
+function Row({ icon: Icon, label, children }) {
+  return (
+    <li className="flex gap-4 p-5">
+      <Icon aria-hidden="true" className="mt-0.5 size-6 shrink-0 text-accent" />
+      <div>
+        <p className="text-sm text-muted">{label}</p>
+        <div className="mt-0.5 text-lg">{children}</div>
+      </div>
+    </li>
+  );
+}
 
 export default function Contact() {
   return (
-    <section className="contact-container" id="contact">
+    <div className="bg-page text-ink">
       <BaseSchema
         serviceImage="/assets/images/interior/driver16.jpg"
         url="https://www.dirtlessdetailing.com/contact"
@@ -25,111 +42,78 @@ export default function Contact() {
         }}
       />
 
-      <h1 className="text-4xl font-bold pt-32 lg:pt-64 text-center font-heading">Contact & Book Your Auto Detail</h1>
-      <p className="text-2xl font-bold text-center font-heading mt-2">
-        <span className="text-primary">24/7</span> ONLINE PRICING & BOOKING
-      </p>
-      <p className="text-center mb-10">
-        <span className="text-white bold leading-none">
-          <span className="text-primary">Online Gift Cards</span> Available Now!
-        </span>
-        <br />
-        <a href="/booking" className="text-sm text-zinc-300 bold leading-none underline">
-          Buy a gift card online
-        </a>
-      </p>
-      {/* <div className="flex gap-2 lg:gap-8 items-center justify-center py-4 flex-col lg:flex-row max-w-[90%] mx-auto lg:mx-0">
-        <Image src="/assets/icons/valentinesGift.svg" alt="valentines gift box" width={48} height={48} />
-        <div>
-          <p className="text-[#dd9fc0] font-medium text-2xl text-center lg:text-left">
-            <span className="text-[#dd9fc0] font-extrabold text-2xl">10% OFF </span>
-            all details and Gift Cards with code: <span className="text-[#dd9fc0] font-extrabold text-2xl">VALENTINE10</span>
-          </p>
-          <p className="text-white text-lg w-1/2 text-center lg:text-left lg:w-full mx-auto">Valid until 2/14/25 on any Online Booking!</p>
-        </div>
-      </div> */}
-
-      {/* <motion.li className="flex justify-start items-center text-left" variants={listItemVariant} key={index}>
-        <div className="flex-shrink-0 w-[36px] h-[36px]">
-          <Check color="#1ca55d" size={36} />
-        </div>
-        <p className="ml-2">{step}</p>
-      </motion.li> */}
-      <div className="grid items-center" style={{ paddingTop: 0 }}>
-        <Button href="/booking" size="lg" className="mx-auto">
-          Book Online
-        </Button>
-      </div>
-      <div className="contact-information-container">
-        <div className="contact-info-cards">
-          {/* <div className="flex items-center gap-4 bg-white text-black p-4">
-            <div className="flex-shrink-0 w-[28px] h-[28px]">
-              <Snowflake size={28} className="text-[#3c8d0d]" />
-            </div>
-            <p className="bold text-xl">
-              <span className="text-[#3c8d0d]">Winter Sale</span> is on now! Get <span className="text-[#3c8d0d]">20%</span> off our main services and{" "}
-              <span className="text-[#3c8d0d]">10%</span> off all Gift Cards!
-            </p>
-          </div> */}
-          <div className="flex items-center gap-4 bg-zinc-800 p-4">
-            <div className="flex-shrink-0 w-[28px] h-[28px]">
-              <Smartphone size={28} />
-            </div>
-            <CallLink className="location-link underline" target="_blank" rel="noopener noreferrer">
-              (253) 252-9758
-            </CallLink>
-            <p>Text or Call</p>
-          </div>
-          <div className="flex items-center gap-4 bg-zinc-800 p-4">
-            <div className="flex-shrink-0 w-[28px] h-[28px]">
-              <Mail size={28} />
-            </div>
-            <a
-              className="location-link underline"
-              href="mailto:brenden@dirtlessdetailing.com?subject = Schedule a Detail!"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ overflow: "auto", overflowWrap: "anywhere" }}
-            >
-              brenden@dirtlessdetailing.com
-            </a>
-          </div>
-          <div className="flex items-center gap-4 bg-zinc-800 p-4">
-            <div className="flex-shrink-0 w-[28px] h-[28px]">
-              <Clock size={28} />
-            </div>
-            <p>Monday - Sunday: 8 AM - 7 PM</p>
-          </div>
-          <div className="flex items-center gap-4 bg-zinc-800 p-4">
-            <div className="flex-shrink-0 w-[28px] h-[28px]">
-              <MapPin size={28} />
-            </div>
-            <a href="https://maps.app.goo.gl/bhPDhjUN4jsSegu48" className="location-link underline" target="_blank" rel="noopener noreferrer">
-              Buckley Business Park, 28120 WA-410, Unit C6
-            </a>
-          </div>
-          <div className="flex items-center gap-4 bg-zinc-800 p-4">
-            <div className="flex-shrink-0 w-[28px] h-[28px]">
-              <Gift size={28} />
-            </div>
-            <p style={{ textAlign: "left" }}>We offer gift cards in person and online!</p>
-          </div>
-        </div>
-      </div>
-
-      <div className="urable-container pb-8">
-        <div className="text-center">
-          <strong style={{ fontSize: "2rem" }}>Feel free to reach out via this form!</strong>
-          <p style={{ fontSize: "1.3rem" }} className="services-p">
-            In-Shop Services • Pricing Quotes • General Questions
-          </p>
-        </div>
-        <div className="flex justify-center pt-6">
+      <Section className="border-t-0 pt-32 md:pt-40">
+        <SectionHeader
+          as="h1"
+          eyebrow="Contact"
+          title="Contact & book your auto detail"
+          lead="See pricing and book online 24/7, or send us a question first. We usually reply the same day."
+          className="mb-8"
+        />
+        <div className="flex flex-col gap-3 sm:flex-row">
+          <Button href="/booking" size="lg">
+            Book Online
+          </Button>
           <Button href="/inquiry" variant="secondary" size="lg">
             Send an Inquiry
           </Button>
         </div>
-      </div>
-    </section>
+
+        <div className="mt-12 grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)]">
+          <ul className="divide-y divide-line self-start rounded-2xl border border-line bg-surface">
+            <Row icon={Smartphone} label="Call or text">
+              <CallLink className={linkClass}>{REAL_PHONE_DISPLAY}</CallLink>
+            </Row>
+            <Row icon={Mail} label="Email">
+              <a href="mailto:brenden@dirtlessdetailing.com?subject=Schedule a Detail" className={linkClass}>
+                brenden@
+                <wbr />
+                dirtlessdetailing.com
+              </a>
+            </Row>
+            <Row icon={Clock} label="Hours">
+              Monday - Sunday: 8 AM - 7 PM
+            </Row>
+            <Row icon={MapPin} label="Shop">
+              <a href={MAPS_LINK} target="_blank" rel="noopener noreferrer" className={linkClass}>
+                Buckley Business Park, 28120 WA-410, Unit C6
+              </a>
+            </Row>
+            <Row icon={Truck} label="Mobile service">
+              We come to you, from Kent to Graham.
+            </Row>
+            <Row icon={Gift} label="Gift cards">
+              <Link href="/booking" className={linkClass}>
+                Buy a gift card
+              </Link>{" "}
+              <span className="text-muted">or pick one up in person</span>
+            </Row>
+          </ul>
+
+          <div className="relative min-h-[360px] overflow-hidden rounded-2xl border border-line bg-surface">
+            {MAPS_KEY ? (
+              <iframe
+                src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJxxfUWqz7kFQRotRs8MwWDRE&key=${MAPS_KEY}`}
+                title="Map to the Dirt-Less Detailing shop in Buckley"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="absolute inset-0 h-full w-full border-0"
+              />
+            ) : (
+              <a href={MAPS_LINK} target="_blank" rel="noopener noreferrer" className="group absolute inset-0">
+                <Image
+                  src="/assets/images/showcase/homepage-main.webp"
+                  alt="The Dirt-Less Detailing team in front of a classic Chevy truck"
+                  fill
+                  sizes="(min-width: 1024px) 55vw, 100vw"
+                  className="object-cover"
+                />
+                <span className="absolute bottom-4 left-4 rounded-lg bg-zinc-950/80 px-4 py-2 font-semibold group-hover:text-accent-hover">Open in Google Maps →</span>
+              </a>
+            )}
+          </div>
+        </div>
+      </Section>
+    </div>
   );
 }
