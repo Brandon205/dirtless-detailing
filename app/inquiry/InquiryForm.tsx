@@ -7,7 +7,7 @@ import { Turnstile } from "../components/Turnstile";
 import { submitInquiry } from "./actions";
 import { Button } from "../components/ui/Button";
 
-const inputClass = "w-full rounded-md border border-zinc-600 bg-zinc-900 px-3 py-3 text-lg text-white outline-none focus:border-primary";
+const inputClass = "w-full rounded-md border border-line-strong bg-page px-3 py-3 text-lg text-ink outline-none focus:border-accent";
 
 /** Ask a question without calling or texting. Lands in the Inbox in our CRM. */
 export default function InquiryForm({ services }: { services: string[] }) {
@@ -36,8 +36,8 @@ export default function InquiryForm({ services }: { services: string[] }) {
 
   if (sent) {
     return (
-      <div className="flex flex-col items-center gap-3 rounded-xl bg-zinc-800 p-8 text-center">
-        <span className="flex size-14 items-center justify-center rounded-full bg-primary text-zinc-950">
+      <div className="flex flex-col items-center gap-3 rounded-2xl border border-line bg-surface p-8 text-center">
+        <span className="flex size-14 items-center justify-center rounded-full bg-accent text-on-accent">
           <Check size={32} />
         </span>
         <h2 className="font-heading text-2xl font-bold">Thanks, {f.name.split(" ")[0]}!</h2>
@@ -50,7 +50,7 @@ export default function InquiryForm({ services }: { services: string[] }) {
   }
 
   return (
-    <form onSubmit={submit} className="flex flex-col gap-4 rounded-xl bg-zinc-800 p-5 text-left">
+    <form onSubmit={submit} className="flex flex-col gap-4 rounded-2xl border border-line bg-surface p-5 text-left">
       <div className="grid gap-3 sm:grid-cols-2">
         <Field label="Name" className="sm:col-span-2">
           <input value={f.name} onChange={(e) => setF({ ...f, name: e.target.value })} autoComplete="name" className={inputClass} />
@@ -67,7 +67,7 @@ export default function InquiryForm({ services }: { services: string[] }) {
       </div>
       {services.length > 0 && (
         <fieldset className="flex flex-col gap-2">
-          <legend className="mb-1.5 text-sm font-semibold uppercase tracking-wide text-zinc-400">Services you&apos;re interested in</legend>
+          <legend className="mb-1.5 text-sm font-semibold uppercase tracking-wide text-muted">Services you&apos;re interested in</legend>
           <div className="flex flex-wrap gap-2">
             {services.map((s) => {
               const on = picked.includes(s);
@@ -77,7 +77,7 @@ export default function InquiryForm({ services }: { services: string[] }) {
                   type="button"
                   aria-pressed={on}
                   onClick={() => setPicked((p) => (on ? p.filter((x) => x !== s) : [...p, s]))}
-                  className={cn("rounded-lg border-2 px-3 py-2 transition-colors", on ? "border-primary bg-primary/15" : "border-zinc-600 hover:border-zinc-400")}
+                  className={cn("rounded-lg border-2 px-3 py-2 transition-colors", on ? "border-accent bg-accent/10" : "border-line-strong hover:border-zinc-400")}
                 >
                   {s}
                 </button>
@@ -91,14 +91,14 @@ export default function InquiryForm({ services }: { services: string[] }) {
       </Field>
       <Turnstile onToken={setToken} resetKey={tokenKey} />
       {error && (
-        <p role="alert" className="rounded-lg border border-red-500 bg-red-500/10 p-3 text-red-300">
+        <p role="alert" className="rounded-lg border border-danger bg-danger/10 p-3 text-danger">
           {error}
         </p>
       )}
       <button
         type="submit"
         disabled={sending}
-        className="flex items-center justify-center gap-2 rounded-lg bg-primary px-6 py-4 text-xl font-bold text-zinc-950 transition-colors hover:bg-accent-darker disabled:opacity-60"
+        className="flex items-center justify-center gap-2 rounded-lg bg-accent px-6 py-4 text-xl font-bold text-on-accent transition-colors hover:bg-accent-hover disabled:opacity-60"
       >
         {sending && <Loader2 className="animate-spin" />}
         {sending ? "Sending…" : "Send"}
@@ -110,7 +110,7 @@ export default function InquiryForm({ services }: { services: string[] }) {
 function Field({ label, className, children }: { label: string; className?: string; children: React.ReactNode }) {
   return (
     <label className={cn("flex flex-col gap-1.5", className)}>
-      <span className="text-sm font-semibold uppercase tracking-wide text-zinc-400">{label}</span>
+      <span className="text-sm font-semibold uppercase tracking-wide text-muted">{label}</span>
       {children}
     </label>
   );

@@ -156,7 +156,7 @@ export default function BookingForm({ catalog, canceledRef, preselect }: { catal
 
   const step = (n: number, title: string, done: boolean) => (
     <h2 className="flex items-center gap-3 font-heading text-2xl font-bold">
-      <span className={cn("flex size-9 shrink-0 items-center justify-center rounded-full text-lg", done ? "bg-primary text-zinc-950" : "border-2 border-zinc-500 text-zinc-300")}>
+      <span className={cn("flex size-9 shrink-0 items-center justify-center rounded-full text-lg", done ? "bg-accent text-on-accent" : "border-2 border-zinc-500 text-zinc-300")}>
         {done ? <Check size={20} /> : n}
       </span>
       {title}
@@ -165,7 +165,7 @@ export default function BookingForm({ catalog, canceledRef, preselect }: { catal
 
   return (
     <div className="flex flex-col gap-6">
-      {notice && <p className="rounded-lg border border-primary bg-primary/10 p-4 text-lg">{notice}</p>}
+      {notice && <p className="rounded-lg border border-accent bg-accent/10 p-4 text-lg">{notice}</p>}
 
       {/* 1. Vehicle */}
       <Section>
@@ -205,7 +205,7 @@ export default function BookingForm({ catalog, canceledRef, preselect }: { catal
       {/* 2. Services */}
       <Section dim={!vehicleReady}>
         {step(2, "Services", lines.length > 0)}
-        {!vehicleReady && <p className="text-zinc-400">Pick your vehicle {kind === "car" ? "size" : "length"} first to see prices.</p>}
+        {!vehicleReady && <p className="text-muted">Pick your vehicle {kind === "car" ? "size" : "length"} first to see prices.</p>}
         {vehicleReady && (
           <>
             {groupBy(mains).map(([category, list]) => (
@@ -221,7 +221,7 @@ export default function BookingForm({ catalog, canceledRef, preselect }: { catal
                 <Label>Add-ons</Label>
                 {addons.map((s) =>
                   addonState(s.id) === "included" ? (
-                    <div key={s.id} className="flex items-center justify-between rounded-lg border-2 border-zinc-700 px-4 py-3 text-zinc-400">
+                    <div key={s.id} className="flex items-center justify-between rounded-lg border-2 border-line-strong px-4 py-3 text-muted">
                       <span>{s.name}</span>
                       <span className="text-sm">Included</span>
                     </div>
@@ -243,13 +243,13 @@ export default function BookingForm({ catalog, canceledRef, preselect }: { catal
             <span className="flex items-center gap-2 font-semibold">
               <Store size={20} /> At our shop
             </span>
-            <span className="text-sm text-zinc-400">Buckley Business Park, 28120 WA-410, Unit C6</span>
+            <span className="text-sm text-muted">Buckley Business Park, 28120 WA-410, Unit C6</span>
           </Choice>
           <Choice selected={where === "mobile"} onClick={() => setWhere("mobile")} className="flex-col items-start gap-1">
             <span className="flex items-center gap-2 font-semibold">
               <MapPin size={20} /> We come to you
             </span>
-            <span className="text-sm text-zinc-400">
+            <span className="text-sm text-muted">
               +{money(settings.mobileFeeCents)} mobile fee, within {settings.serviceRadiusMiles} miles of Buckley
             </span>
           </Choice>
@@ -273,21 +273,21 @@ export default function BookingForm({ catalog, canceledRef, preselect }: { catal
       <Section dim={!lines.length}>
         {step(4, "When", !!day && !!time)}
         {!lines.length ? (
-          <p className="text-zinc-400">Pick your services first; how long they take decides which times are open.</p>
+          <p className="text-muted">Pick your services first; how long they take decides which times are open.</p>
         ) : (
           <>
             <div className="flex items-center justify-between">
-              <button type="button" aria-label="Previous month" onClick={() => setMonth(addMonths(month, -1))} disabled={month <= todayKey().slice(0, 7)} className="rounded-md p-2 hover:bg-zinc-700 disabled:opacity-30">
+              <button type="button" aria-label="Previous month" onClick={() => setMonth(addMonths(month, -1))} disabled={month <= todayKey().slice(0, 7)} className="rounded-md p-2 hover:bg-line-strong disabled:opacity-30">
                 <ChevronLeft />
               </button>
               <span className="font-heading text-xl font-bold">{monthTitle(month)}</span>
-              <button type="button" aria-label="Next month" onClick={() => setMonth(addMonths(month, 1))} className="rounded-md p-2 hover:bg-zinc-700">
+              <button type="button" aria-label="Next month" onClick={() => setMonth(addMonths(month, 1))} className="rounded-md p-2 hover:bg-line-strong">
                 <ChevronRight />
               </button>
             </div>
-            {slotsError && <p className="text-red-400">{slotsError}</p>}
+            {slotsError && <p className="text-danger">{slotsError}</p>}
             {!days && !slotsError && (
-              <p className="flex items-center gap-2 text-zinc-400">
+              <p className="flex items-center gap-2 text-muted">
                 <Loader2 className="animate-spin" size={18} /> Checking open times…
               </p>
             )}
@@ -299,10 +299,10 @@ export default function BookingForm({ catalog, canceledRef, preselect }: { catal
                   {daySlots.map((s) => (
                     <Choice key={s.time} selected={time === s.time} disabled={s.state !== "open"} onClick={() => setTime(s.time)} className="flex-col items-center">
                       <span className={cn("text-lg font-semibold", s.state !== "open" && "line-through")}>{s.label}</span>
-                      <span className="text-sm text-zinc-400">{s.state === "open" ? (where === "shop" ? "Drop-off" : "Arrival") : s.state === "booked" ? "Booked" : "Not available"}</span>
+                      <span className="text-sm text-muted">{s.state === "open" ? (where === "shop" ? "Drop-off" : "Arrival") : s.state === "booked" ? "Booked" : "Not available"}</span>
                     </Choice>
                   ))}
-                  {daySlots.length === 0 && <p className="text-zinc-400">We're closed for online booking that day.</p>}
+                  {daySlots.length === 0 && <p className="text-muted">We're closed for online booking that day.</p>}
                 </div>
               </div>
             )}
@@ -344,31 +344,31 @@ export default function BookingForm({ catalog, canceledRef, preselect }: { catal
       <Section>
         {step(6, "Review and pay deposit", false)}
         {lines.length === 0 ? (
-          <p className="text-zinc-400">Your services and total show up here.</p>
+          <p className="text-muted">Your services and total show up here.</p>
         ) : (
           <div className="flex flex-col gap-1 text-lg">
             {lines.map((l) => (
               <Row key={l.service.id} label={l.service.name} value={money(l.price.cents)} />
             ))}
             {fee > 0 && <Row label="Mobile fee" value={money(fee)} />}
-            <div className="mt-2 border-t border-zinc-600 pt-2">
+            <div className="mt-2 border-t border-line-strong pt-2">
               <Row label={<strong>Estimated total</strong>} value={<strong>{money(subtotal)}</strong>} />
             </div>
-            <p className="text-sm text-zinc-400">Plus WA sales tax. Final price may change if the vehicle needs more work than expected.</p>
+            <p className="text-sm text-muted">Plus WA sales tax. Final price may change if the vehicle needs more work than expected.</p>
           </div>
         )}
         {day && time && (
           <p className="flex items-center gap-2 text-lg">
-            <CalendarDays className="text-primary" /> {dayTitle(day)} at {daySlots.find((s) => s.time === time)?.label}, {where === "shop" ? "at our shop" : "at your address"}
+            <CalendarDays className="text-accent" /> {dayTitle(day)} at {daySlots.find((s) => s.time === time)?.label}, {where === "shop" ? "at our shop" : "at your address"}
           </p>
         )}
-        <div className="rounded-lg bg-zinc-900 p-4 text-zinc-300">
-          A <strong className="text-white">{settings.depositPercent}% deposit</strong> holds your spot; you&apos;ll see the exact amount on the secure Stripe payment page. The rest is due
+        <div className="rounded-xl border border-line bg-page/60 p-4 text-zinc-300">
+          A <strong className="text-ink">{settings.depositPercent}% deposit</strong> holds your spot; you&apos;ll see the exact amount on the secure Stripe payment page. The rest is due
           after the detail. Cancel at least {settings.depositRefundDays} days ahead for a full deposit refund. We&apos;ll text you to confirm.
         </div>
         <Turnstile onToken={setToken} resetKey={tokenKey} />
         {error && (
-          <p role="alert" className="rounded-lg border border-red-500 bg-red-500/10 p-3 text-red-300">
+          <p role="alert" className="rounded-lg border border-danger bg-danger/10 p-3 text-danger">
             {error.message}
           </p>
         )}
@@ -376,7 +376,7 @@ export default function BookingForm({ catalog, canceledRef, preselect }: { catal
           type="button"
           onClick={submit}
           disabled={sending}
-          className="flex items-center justify-center gap-2 rounded-lg bg-primary px-6 py-4 text-xl font-bold text-zinc-950 transition-colors hover:bg-accent-darker disabled:opacity-60"
+          className="flex items-center justify-center gap-2 rounded-lg bg-accent px-6 py-4 text-xl font-bold text-on-accent transition-colors hover:bg-accent-hover disabled:opacity-60"
         >
           {sending && <Loader2 className="animate-spin" />}
           {sending ? "Saving your booking…" : "Continue to deposit"}
@@ -399,17 +399,17 @@ function groupBy(list: Service[]): [string, Service[]][] {
 function ServiceRow({ service: s, price, selected, onToggle }: { service: Service; price: { cents: number } | null; selected: boolean; onToggle: () => void }) {
   const [open, setOpen] = useState(false);
   return (
-    <div className={cn("rounded-lg border-2 transition-colors", selected ? "border-primary bg-primary/10" : "border-zinc-600")}>
+    <div className={cn("rounded-lg border-2 transition-colors", selected ? "border-accent bg-accent/10" : "border-line-strong")}>
       <button type="button" onClick={onToggle} disabled={!price} aria-pressed={selected} className="flex w-full items-center gap-3 px-4 py-3 text-left disabled:opacity-50">
-        <span className={cn("flex size-6 shrink-0 items-center justify-center rounded border-2", selected ? "border-primary bg-primary text-zinc-950" : "border-zinc-500")}>
+        <span className={cn("flex size-6 shrink-0 items-center justify-center rounded border-2", selected ? "border-accent bg-accent text-on-accent" : "border-zinc-500")}>
           {selected && <Check size={16} />}
         </span>
         <span className="flex-1 text-lg font-semibold">{s.name}</span>
-        <span className="text-lg font-semibold text-primary">{price ? money(price.cents) : "Call for price"}</span>
+        <span className="text-lg font-semibold text-accent">{price ? money(price.cents) : "Call for price"}</span>
       </button>
       {s.description && (
         <div className="px-4 pb-3 pl-13">
-          <button type="button" onClick={() => setOpen((o) => !o)} className="text-sm text-zinc-400 underline">
+          <button type="button" onClick={() => setOpen((o) => !o)} className="text-sm text-muted underline">
             {open ? "Hide details" : "What's included"}
           </button>
           {open && <p className="mt-2 whitespace-pre-line text-sm text-zinc-300">{s.description}</p>}
@@ -423,7 +423,7 @@ function MonthGrid({ month, days, selected, onSelect }: { month: string; days: D
   const keys = Object.keys(days);
   return (
     <div className="flex flex-col gap-2">
-      <div className="grid grid-cols-7 gap-1 text-center text-sm font-semibold text-zinc-400">
+      <div className="grid grid-cols-7 gap-1 text-center text-sm font-semibold text-muted">
         {["S", "M", "T", "W", "T", "F", "S"].map((d, i) => (
           <span key={i}>{d}</span>
         ))}
@@ -444,7 +444,7 @@ function MonthGrid({ month, days, selected, onSelect }: { month: string; days: D
               aria-label={`${dayTitle(d)}: ${open ? `${open} open` : "nothing open"}`}
               className={cn(
                 "flex h-14 flex-col items-center justify-center gap-1 rounded-md transition-colors",
-                picked ? "bg-primary text-zinc-950" : open ? "bg-zinc-900 hover:bg-zinc-700" : "text-zinc-600",
+                picked ? "bg-accent text-on-accent" : open ? "bg-page hover:bg-line-strong" : "text-zinc-600",
                 !inMonth && "invisible",
               )}
             >
@@ -455,7 +455,7 @@ function MonthGrid({ month, days, selected, onSelect }: { month: string; days: D
                     s === "open" || s === "booked" ? (
                       <span
                         key={i}
-                        className={cn("h-1.5 w-2.5 rounded-full", s === "open" ? (picked ? "bg-zinc-950" : "bg-green-400") : picked ? "border border-zinc-950" : "border border-zinc-500")}
+                        className={cn("h-1.5 w-2.5 rounded-full", s === "open" ? (picked ? "bg-zinc-950" : "bg-success") : picked ? "border border-zinc-950" : "border border-zinc-500")}
                       />
                     ) : null,
                   )}
@@ -465,9 +465,9 @@ function MonthGrid({ month, days, selected, onSelect }: { month: string; days: D
           );
         })}
       </div>
-      <div className="flex gap-4 text-sm text-zinc-400">
+      <div className="flex gap-4 text-sm text-muted">
         <span className="flex items-center gap-1.5">
-          <span className="h-1.5 w-2.5 rounded-full bg-green-400" /> Open
+          <span className="h-1.5 w-2.5 rounded-full bg-success" /> Open
         </span>
         <span className="flex items-center gap-1.5">
           <span className="h-1.5 w-2.5 rounded-full border border-zinc-500" /> Booked
@@ -501,10 +501,10 @@ function AddressField({ value, onChange, onPick, invalid }: { value: string; onC
           }}
           onBlur={() => setTimeout(() => setOpen(false), 150)}
           autoComplete="off"
-          className={invalid ? "border-red-500" : ""}
+          className={invalid ? "border-danger" : ""}
         />
         {open && list.length > 0 && (
-          <ul className="absolute inset-x-0 top-full z-20 mt-1 overflow-hidden rounded-md border border-zinc-600 bg-zinc-900 shadow-lg">
+          <ul className="absolute inset-x-0 top-full z-20 mt-1 overflow-hidden rounded-md border border-line-strong bg-page shadow-lg">
             {list.map((a) => (
               <li key={a.label}>
                 <button
@@ -515,9 +515,9 @@ function AddressField({ value, onChange, onPick, invalid }: { value: string; onC
                     onPick(a);
                     setOpen(false);
                   }}
-                  className="flex w-full items-center gap-2 px-3 py-3 text-left hover:bg-zinc-700"
+                  className="flex w-full items-center gap-2 px-3 py-3 text-left hover:bg-line-strong"
                 >
-                  <MapPin size={16} className="shrink-0 text-zinc-400" />
+                  <MapPin size={16} className="shrink-0 text-muted" />
                   {a.label}
                 </button>
               </li>
@@ -529,7 +529,7 @@ function AddressField({ value, onChange, onPick, invalid }: { value: string; onC
   );
 }
 
-const inputClass = "w-full rounded-md border border-zinc-600 bg-zinc-900 px-3 py-3 text-lg text-white outline-none focus:border-primary";
+const inputClass = "w-full rounded-md border border-line-strong bg-page px-3 py-3 text-lg text-ink outline-none focus:border-accent";
 
 function Input({ className, ...props }: React.InputHTMLAttributes<HTMLInputElement>) {
   return <input {...props} className={cn(inputClass, className)} />;
@@ -545,11 +545,11 @@ function Field({ label, className, children }: { label: string; className?: stri
 }
 
 function Label({ children }: { children: React.ReactNode }) {
-  return <span className="text-sm font-semibold uppercase tracking-wide text-zinc-400">{children}</span>;
+  return <span className="text-sm font-semibold uppercase tracking-wide text-muted">{children}</span>;
 }
 
 function Section({ children, dim }: { children: React.ReactNode; dim?: boolean }) {
-  return <div className={cn("flex w-full flex-col gap-4 rounded-xl bg-zinc-800 p-5 transition-opacity", dim && "opacity-60")}>{children}</div>;
+  return <div className={cn("flex w-full flex-col gap-4 rounded-2xl border border-line bg-surface p-5 transition-opacity", dim && "opacity-60")}>{children}</div>;
 }
 
 function Choice({ selected, disabled, onClick, className, children }: { selected: boolean; disabled?: boolean; onClick: () => void; className?: string; children: React.ReactNode }) {
@@ -561,7 +561,7 @@ function Choice({ selected, disabled, onClick, className, children }: { selected
       onClick={onClick}
       className={cn(
         "flex min-h-12 items-center rounded-lg border-2 px-4 py-3 text-left transition-colors disabled:cursor-not-allowed disabled:opacity-40",
-        selected ? "border-primary bg-primary/15" : "border-zinc-600 hover:border-zinc-400",
+        selected ? "border-accent bg-accent/10" : "border-line-strong hover:border-zinc-400",
         className,
       )}
     >

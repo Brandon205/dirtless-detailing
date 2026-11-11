@@ -13,8 +13,8 @@ const linkClass = "font-semibold text-ink hover:text-accent-hover hover:underlin
 
 function Row({ icon: Icon, label, children }) {
   return (
-    <li className="flex gap-4 p-5">
-      <Icon aria-hidden="true" className="mt-0.5 size-6 shrink-0 text-accent" />
+    <li className="flex items-center gap-4 p-5">
+      <Icon aria-hidden="true" className="size-6 shrink-0 text-accent" />
       <div>
         <p className="text-sm text-muted">{label}</p>
         <div className="mt-0.5 text-lg">{children}</div>
