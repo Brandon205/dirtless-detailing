@@ -3,6 +3,18 @@ import { FaLock } from "react-icons/fa";
 import { GiSquareBottle } from "react-icons/gi";
 import ImageGallery from "../../components/ImageGallery";
 
+export const metadata = {
+  title: "Paint Correction & Ceramic Coating in Buckley & Bonney Lake",
+  description:
+    "Multi-stage paint correction and 3-year ceramic coating in Buckley & Bonney Lake, WA. Removes 70-95% of swirls and scratches for a flawless mirror finish.",
+  alternates: { canonical: "https://www.dirtlessdetailing.com/services/correct" },
+  openGraph: {
+    type: "website",
+    url: "https://www.dirtlessdetailing.com/services/correct",
+    images: [{ url: "/assets/images/correction/genesis2.jpeg", alt: "Genesis after our Correct & Coat paint correction and ceramic coating" }]
+  }
+};
+
 // Content for this page. The layout lives in app/components/ServicePage.tsx.
 const page = {
   slug: "correct",
@@ -131,7 +143,10 @@ const page = {
                 washing.
               </li>
             </ul>
-            <ImageGallery className="mt-4 max-w-xs grid-cols-1 md:grid-cols-1 lg:grid-cols-1" images={[{ src: "/assets/images/showcase/iglcircle.jpg", alt: "Benefits of IGL high solids ceramic coatings" }]} />
+            <ImageGallery
+              className="mt-4 max-w-xs grid-cols-1 md:grid-cols-1 lg:grid-cols-1"
+              images={[{ src: "/assets/images/showcase/iglcircle.jpg", alt: "Benefits of IGL high solids ceramic coatings" }]}
+            />
           </div>
         )
       },

@@ -2,6 +2,17 @@ import { ServicePage } from "../../components/ServicePage";
 import { MdLocalCarWash } from "react-icons/md";
 import { PiSprayBottleFill } from "react-icons/pi";
 
+export const metadata = {
+  title: "Exterior Decon Wash in Buckley & Bonney Lake",
+  description: "Thorough hand wash, iron decontamination, tar removal, wheel cleaning, door jambs, and 3-month ceramic protection in Pierce County, WA.",
+  alternates: { canonical: "https://www.dirtlessdetailing.com/services/exterior" },
+  openGraph: {
+    type: "website",
+    url: "https://www.dirtlessdetailing.com/services/exterior",
+    images: [{ url: "/assets/images/exterior/subaruWashed.jpeg", alt: "Subaru WRX after our Exterior Decon Wash" }]
+  }
+};
+
 // Content for this page. The layout lives in app/components/ServicePage.tsx.
 const page = {
   slug: "exterior",

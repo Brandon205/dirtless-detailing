@@ -3,6 +3,18 @@ import { FaShieldAlt } from "react-icons/fa";
 import { RiResetLeftLine } from "react-icons/ri";
 import ImageGallery from "../../components/ImageGallery";
 
+export const metadata = {
+  title: "Wash & Ceramic Coating in Buckley & Bonney Lake",
+  description:
+    "Professional decontamination wash and 1-year ceramic coating without the expense of paint correction. Long-lasting shine and protection in Pierce County, WA.",
+  alternates: { canonical: "https://www.dirtlessdetailing.com/services/wash-coat" },
+  openGraph: {
+    type: "website",
+    url: "https://www.dirtlessdetailing.com/services/wash-coat",
+    images: [{ url: "/assets/images/exterior/crTesla.jpg", alt: "Black Tesla after decontamination wash and ceramic coating" }]
+  }
+};
+
 // Content for this page. The layout lives in app/components/ServicePage.tsx.
 const page = {
   slug: "wash-coat",
@@ -144,7 +156,10 @@ const page = {
                 washing.
               </li>
             </ul>
-            <ImageGallery className="mt-4 max-w-xs grid-cols-1 md:grid-cols-1 lg:grid-cols-1" images={[{ src: "/assets/images/showcase/iglcircle.jpg", alt: "Benefits of IGL high solids ceramic coatings" }]} />
+            <ImageGallery
+              className="mt-4 max-w-xs grid-cols-1 md:grid-cols-1 lg:grid-cols-1"
+              images={[{ src: "/assets/images/showcase/iglcircle.jpg", alt: "Benefits of IGL high solids ceramic coatings" }]}
+            />
           </div>
         )
       },

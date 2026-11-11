@@ -1,5 +1,16 @@
 import { GalleryPage } from "../../components/GalleryPage";
 
+export const metadata = {
+  title: "Full Interior Detailing Gallery",
+  description: "Browse before-and-after photos of our deep interior detailing, stain extraction, pet hair removal, and leather conditioning results.",
+  alternates: { canonical: "https://www.dirtlessdetailing.com/gallery/interior" },
+  openGraph: {
+    type: "website",
+    url: "https://www.dirtlessdetailing.com/gallery/interior",
+    images: [{ url: "/assets/images/interior/driverNewLexus.jpg", alt: "Driver side interior of a Lexus detailed by Dirt-Less Detailing" }]
+  }
+};
+
 // Photos for this gallery. The layout lives in app/components/GalleryPage.tsx.
 const baImages = [
   { src: "/assets/images/before&afters/badInteriorBA.png" },

@@ -7,6 +7,17 @@ import { Button } from "../components/ui/Button";
 import { Section } from "../components/ui/Section";
 import { SectionHeader } from "../components/ui/SectionHeader";
 
+export const metadata = {
+  title: "Contact Us & Book Online",
+  description: "Get a free auto detailing quote or book online 24/7. Mobile and shop detailing in Buckley, Bonney Lake, and Pierce County.",
+  alternates: { canonical: "https://www.dirtlessdetailing.com/contact" },
+  openGraph: {
+    type: "website",
+    url: "https://www.dirtlessdetailing.com/contact",
+    images: [{ url: "/assets/images/showcase/homepage-main.webp", alt: "The Dirt-Less Detailing team in front of a classic Chevy truck" }]
+  }
+};
+
 const MAPS_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS;
 const MAPS_LINK = "https://maps.app.goo.gl/bhPDhjUN4jsSegu48";
 const linkClass = "font-semibold text-ink hover:text-accent-hover hover:underline";
@@ -31,13 +42,13 @@ export default function Contact() {
         url="https://www.dirtlessdetailing.com/contact"
         makesOffer={{
           "@type": "Offer",
-          "itemOffered": {
+          itemOffered: {
             "@type": "Service",
-            "name": "Auto Detailing",
-            "description":
+            name: "Auto Detailing",
+            description:
               "Contact us here! Let us know any additional information we may need to know before your detail. Feel free to reach out with any questions!",
-            "areaServed": "Buckley, Bonney Lake, and surrounding areas.",
-            "serviceType": "Auto Detailing"
+            areaServed: "Buckley, Bonney Lake, and surrounding areas.",
+            serviceType: "Auto Detailing"
           }
         }}
       />
@@ -108,7 +119,9 @@ export default function Contact() {
                   sizes="(min-width: 1024px) 55vw, 100vw"
                   className="object-cover"
                 />
-                <span className="absolute bottom-4 left-4 rounded-lg bg-zinc-950/80 px-4 py-2 font-semibold group-hover:text-accent-hover">Open in Google Maps →</span>
+                <span className="absolute bottom-4 left-4 rounded-lg bg-zinc-950/80 px-4 py-2 font-semibold group-hover:text-accent-hover">
+                  Open in Google Maps →
+                </span>
               </a>
             )}
           </div>

@@ -4,6 +4,18 @@ import { ServicePage } from "../../components/ServicePage";
 import { OptionCard, WideCard } from "../../components/OptionCard";
 import { Button } from "../../components/ui/Button";
 
+export const metadata = {
+  title: "Interior Restoration in Buckley & Bonney Lake",
+  description:
+    "Heavy-duty vehicle interior restoration in Buckley & Bonney Lake. Specialized cleaning for mold removal, smoke odor elimination, severe stains, and biohazards.",
+  alternates: { canonical: "https://www.dirtlessdetailing.com/services/interior-restoration" },
+  openGraph: {
+    type: "website",
+    url: "https://www.dirtlessdetailing.com/services/interior-restoration",
+    images: [{ url: "/assets/images/before&afters/badInteriorBA.png", alt: "Before and after of a vehicle interior restoration" }]
+  }
+};
+
 // Content for this page. The layout lives in app/components/ServicePage.tsx.
 // Restoration is priced by condition, so option cards take the estimator's place.
 const page = {
@@ -12,13 +24,13 @@ const page = {
     serviceImage: "/assets/images/before&afters/badInteriorBA.png",
     makesOffer: {
       "@type": "Offer",
-      "itemOffered": {
+      itemOffered: {
         "@type": "Service",
-        "name": "Interior Restoration",
-        "description":
+        name: "Interior Restoration",
+        description:
           "Our Interior Restoration service is a service designed for vehicles that have been neglected beyond what our Full Interior Detail can handle. If your interior has heavy odors, mold, or is extremely dirty, and you need it back to acceptable, this is the service for you.",
-        "areaServed": "Buckley, Bonney Lake, and surrounding areas.",
-        "serviceType": "Interior Restoration"
+        areaServed: "Buckley, Bonney Lake, and surrounding areas.",
+        serviceType: "Interior Restoration"
       }
     }
   },
@@ -54,9 +66,9 @@ const page = {
             price="$600 - $1,200+"
             priceNote="Depending on size and condition"
           >
-            If there&apos;s just a small spot or a little mold, it&apos;s included in our Full Interior Detail, but if there&apos;s more than one area or the mold
-            is very bad, this is the service for you. We use multiple stages and chemicals that kill mold, and finish with a complete ozone treatment to get the
-            places no one can reach.
+            If there&apos;s just a small spot or a little mold, it&apos;s included in our Full Interior Detail, but if there&apos;s more than one area or the
+            mold is very bad, this is the service for you. We use multiple stages and chemicals that kill mold, and finish with a complete ozone treatment to
+            get the places no one can reach.
           </OptionCard>
           <OptionCard
             subtitle="Ultimate restoration"
@@ -119,10 +131,18 @@ const page = {
         )
       }
     ],
-    checklist: ["HEPA vacuum", "Embedded grime removal", "Heated extraction", "EPA registered disinfectants", "Mold spore elimination", "Professional ozone treatment"],
+    checklist: [
+      "HEPA vacuum",
+      "Embedded grime removal",
+      "Heated extraction",
+      "EPA registered disinfectants",
+      "Mold spore elimination",
+      "Professional ozone treatment"
+    ],
     note: (
       <>
-        Want the exterior done as well? Book an interior and exterior detail and we&apos;ll get your entire vehicle looking like new in just one day. Check out our{" "}
+        Want the exterior done as well? Book an interior and exterior detail and we&apos;ll get your entire vehicle looking like new in just one day. Check out
+        our{" "}
         <a href="/services/exterior" className="font-semibold text-accent-hover hover:underline">
           Exterior Decon Wash
         </a>

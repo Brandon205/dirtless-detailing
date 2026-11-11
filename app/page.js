@@ -135,7 +135,6 @@ export default function Home() {
           eyebrow="Interior"
           title="Premium interior services"
           lead="Transform your vehicle's interior, from a quick refresh to a full restoration."
-          action={{ label: "Compare interior services", href: "/services/interior" }}
         />
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {servicesIn("interior").map((s) => (
@@ -149,7 +148,6 @@ export default function Home() {
           eyebrow="Exterior"
           title="Exterior services"
           lead="From a deep decon wash to full paint correction and a ceramic coating. Listed from lowest to highest price."
-          action={{ label: "Compare exterior services", href: "/services/polish" }}
         />
         <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
           {servicesIn("exterior").map((s) => (

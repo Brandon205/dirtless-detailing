@@ -2,6 +2,17 @@ import { ServicePage } from "../../components/ServicePage";
 import { OptionCard, WideCard } from "../../components/OptionCard";
 import { Button } from "../../components/ui/Button";
 
+export const metadata = {
+  title: "Boat, RV, Trailer & ORV Detailing in Buckley & Bonney Lake",
+  description: "Mobile and shop detailing for RVs, travel trailers, boats, and off-road vehicles (ORVs) across Pierce County and South King County, WA.",
+  alternates: { canonical: "https://www.dirtlessdetailing.com/services/recreational" },
+  openGraph: {
+    type: "website",
+    url: "https://www.dirtlessdetailing.com/services/recreational",
+    images: [{ url: "/assets/images/polish/rv-finished.jpg", alt: "RV after wash and ceramic spray sealant" }]
+  }
+};
+
 // Content for this page. The layout lives in app/components/ServicePage.tsx.
 // Recreational is priced per foot or by quote, so option cards take the estimator's place.
 const page = {
@@ -10,12 +21,12 @@ const page = {
     serviceImage: "/assets/images/recreational/RVWash.jpg",
     makesOffer: {
       "@type": "Offer",
-      "itemOffered": {
+      itemOffered: {
         "@type": "Service",
-        "name": "RV/Trailer and Boat Detailing",
-        "description": "At Dirt-Less Detailing we aren't limited to just cars and trucks! Book any boats, RV's, Trailers, or ORV's for a detail today!",
-        "areaServed": "Buckley, Bonney Lake, and surrounding areas.",
-        "serviceType": "RV/Trailer and Boat Detailing"
+        name: "RV/Trailer and Boat Detailing",
+        description: "At Dirt-Less Detailing we aren't limited to just cars and trucks! Book any boats, RV's, Trailers, or ORV's for a detail today!",
+        areaServed: "Buckley, Bonney Lake, and surrounding areas.",
+        serviceType: "RV/Trailer and Boat Detailing"
       }
     }
   },
@@ -47,8 +58,8 @@ const page = {
             price="$10/foot"
             priceNote="$10/foot interior, $10/foot exterior"
           >
-            Get your boat ready for summer. We&apos;ll vacuum, blow out and clean all the main compartments and protect them with our specialized cleaners. On the
-            outside we give it a thorough wash and top it with a ceramic spray sealant so it stays cleaner through the year.
+            Get your boat ready for summer. We&apos;ll vacuum, blow out and clean all the main compartments and protect them with our specialized cleaners. On
+            the outside we give it a thorough wash and top it with a ceramic spray sealant so it stays cleaner through the year.
           </OptionCard>
           <OptionCard
             title="ORV detailing"

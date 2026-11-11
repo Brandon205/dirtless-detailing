@@ -3,6 +3,18 @@ import { GiClayBrick } from "react-icons/gi";
 import { FaCarOn } from "react-icons/fa6";
 import ImageGallery from "../../components/ImageGallery";
 
+export const metadata = {
+  title: "Paint Polish & Ceramic Coating in Buckley & Bonney Lake",
+  description:
+    "Single-stage paint enhancement polishing and 3-year ceramic coating in Pierce County. Removes light swirls, restores paint depth, and delivers durable protection.",
+  alternates: { canonical: "https://www.dirtlessdetailing.com/services/polish" },
+  openGraph: {
+    type: "website",
+    url: "https://www.dirtlessdetailing.com/services/polish",
+    images: [{ url: "/assets/images/correction/teslaclean.jpg", alt: "Tesla Model 3 after our Polish & Coat service" }]
+  }
+};
+
 // Content for this page. The layout lives in app/components/ServicePage.tsx.
 const page = {
   slug: "polish",
@@ -149,7 +161,10 @@ const page = {
                 washing.
               </li>
             </ul>
-            <ImageGallery className="mt-4 max-w-xs grid-cols-1 md:grid-cols-1 lg:grid-cols-1" images={[{ src: "/assets/images/showcase/iglcircle.jpg", alt: "Benefits of IGL high solids ceramic coatings" }]} />
+            <ImageGallery
+              className="mt-4 max-w-xs grid-cols-1 md:grid-cols-1 lg:grid-cols-1"
+              images={[{ src: "/assets/images/showcase/iglcircle.jpg", alt: "Benefits of IGL high solids ceramic coatings" }]}
+            />
           </div>
         )
       },

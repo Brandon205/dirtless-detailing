@@ -1,5 +1,16 @@
 import { GalleryPage } from "../../components/GalleryPage";
 
+export const metadata = {
+  title: "Exterior Polish & Coat Gallery",
+  description: "See before-and-after photos and finished gloss from our Exterior Polish & Coat enhancement polishing service.",
+  alternates: { canonical: "https://www.dirtlessdetailing.com/gallery/polish" },
+  openGraph: {
+    type: "website",
+    url: "https://www.dirtlessdetailing.com/gallery/polish",
+    images: [{ url: "/assets/images/polish/36 plymouth.jpg", alt: "A beautiful red 1936 Plymouth after our Polish & Coat Service" }]
+  }
+};
+
 // Photos for this gallery. The layout lives in app/components/GalleryPage.tsx.
 const baImages = [
   { src: "/assets/images/before&afters/daytonaBA.jpg" },

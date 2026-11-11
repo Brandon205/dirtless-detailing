@@ -3,6 +3,18 @@ import Link from "next/link";
 import { CalendarCheck, ChevronRight, Gift, Globe, MessageCircleQuestion, ShieldCheck, ShoppingCart, Tv } from "lucide-react";
 import { VideoEmbed } from "../components/VideoEmbed";
 
+export const metadata = {
+  title: "Quick Links & Resources",
+  description:
+    "All official Dirt-Less Detailing links in one place: online booking, recommended car care products, YouTube videos, maintenance guides, and social media channels.",
+  alternates: { canonical: "https://www.dirtlessdetailing.com/links" },
+  openGraph: {
+    type: "website",
+    url: "https://www.dirtlessdetailing.com/links",
+    images: [{ url: "/assets/images/interior/driverTesla.jpg", alt: "Dirt-Less Detailing quick links and detailing resources" }]
+  }
+};
+
 // A link-in-bio page for social profiles: one column of big tap targets.
 
 function LinkRow({ href, icon: Icon, iconSrc, title, subtext, featured = false }) {
