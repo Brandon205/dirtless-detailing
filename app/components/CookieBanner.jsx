@@ -76,19 +76,26 @@ export default function CookieBanner() {
     setShowBanner(false);
   }
 
+  if (!showBanner) return null;
   return (
-    <div>
-      {showBanner && (
-        <div className="cookie-container">
-          <p>We use cookies to analyze our site performance and make it better for everyone!</p>
-          <button className="cookie-button" onClick={() => acceptCookies()}>
-            Accept Cookies
-          </button>
-          <button className="cookie-button" onClick={() => declineCookies()}>
-            Decline Cookies
-          </button>
-        </div>
-      )}
+    <div
+      role="region"
+      aria-label="Cookie preferences"
+      className="fixed inset-x-3 bottom-3 z-40 flex flex-col gap-3 rounded-2xl border border-line bg-surface/95 p-4 text-sm text-zinc-300 shadow-2xl backdrop-blur sm:inset-x-auto sm:left-4 sm:max-w-sm"
+    >
+      <p>We use cookies to analyze our site performance and make it better for everyone.</p>
+      <div className="flex gap-2">
+        <button type="button" onClick={acceptCookies} className="flex-1 rounded-lg bg-accent px-3 py-2 font-semibold text-on-accent transition-colors hover:bg-accent-hover">
+          Accept
+        </button>
+        <button
+          type="button"
+          onClick={declineCookies}
+          className="flex-1 rounded-lg border border-line-strong px-3 py-2 font-semibold text-ink transition-colors hover:border-zinc-500"
+        >
+          Decline
+        </button>
+      </div>
     </div>
   );
 }

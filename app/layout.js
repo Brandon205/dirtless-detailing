@@ -1,4 +1,4 @@
-import "./App.scss";
+import "./globals.css";
 import { PHProvider } from "./providers";
 import Nav from "./Nav";
 import Footer from "./Footer";
