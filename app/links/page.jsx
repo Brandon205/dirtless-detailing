@@ -42,7 +42,7 @@ export default function LinksPage() {
         <LinkRow href="/inquiry" icon={MessageCircleQuestion} title="Send an Inquiry" subtext="Quotes, in-shop services, anything else" />
         <LinkRow href="/gift-cards" icon={Gift} title="Buy a Gift Card" subtext="Gift cards for any of our services" />
         <LinkRow href="/products" icon={ShoppingCart} title="Shop Detailing Products" subtext="Our recommended supplies" />
-        <LinkRow href="/products?category=Ceramic" icon={ShieldCheck} title="Ceramic Maintenance Guide" subtext="How to care for your coating" />
+        <LinkRow href="/products?category=Ceramic Maintenance" icon={ShieldCheck} title="Ceramic Maintenance Guide" subtext="How to care for your coating" />
         <LinkRow href="/products?category=As Seen On Our Channel" icon={Tv} title="Products Showcased on YouTube" subtext="As seen in our videos" />
 
         <p className="mt-6 flex items-center gap-4 text-eyebrow font-bold uppercase text-muted">

@@ -115,7 +115,7 @@ const page = {
         answer: (
           <div>
             We have a full Ceramic Coating Maintenance Guide available on our{" "}
-            <a href="/products?category=Ceramic" className="font-semibold text-accent-hover hover:underline">
+            <a href="/products?category=Ceramic Maintenance" className="font-semibold text-accent-hover hover:underline">
               Products page
             </a>
             , which includes everything you need to know about maintaining your ceramic coating, including recommended products and techniques!
@@ -153,7 +153,7 @@ const page = {
         answer: (
           <div>
             We have a full Ceramic Coating Maintenance Guide available at the bottom of our{" "}
-            <a href="/products?category=Ceramic" className="font-semibold text-accent-hover hover:underline">
+            <a href="/products?category=Ceramic Maintenance" className="font-semibold text-accent-hover hover:underline">
               Ceramic Products Page
             </a>
             , which includes everything you need to know about maintaining your ceramic coating, including recommended products and techniques!

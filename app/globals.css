@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-@plugin "tailwindcss-animate";
-
 @theme {
   /* Design tokens. Use these instead of raw colors. */
   --color-page: #09090b; /* zinc-950: page background */

@@ -444,7 +444,7 @@ function MonthGrid({ month, days, selected, onSelect }: { month: string; days: D
               aria-label={`${dayTitle(d)}: ${open ? `${open} open` : "nothing open"}`}
               className={cn(
                 "flex h-14 flex-col items-center justify-center gap-1 rounded-md transition-colors",
-                picked ? "bg-accent text-on-accent" : open ? "bg-page hover:bg-line-strong" : "text-zinc-600",
+                picked ? "bg-accent text-on-accent" : open ? "bg-page hover:bg-line-strong" : "text-zinc-500",
                 !inMonth && "invisible",
               )}
             >

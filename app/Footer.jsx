@@ -5,7 +5,7 @@ import { containerClass } from "./components/ui/Section";
 import { servicesIn } from "../utils/services";
 
 // Small uppercase labels, not headings, so the footer doesn't add to the page outline.
-const label = "mb-4 text-xs font-bold uppercase tracking-[0.16em] text-zinc-500";
+const label = "mb-4 text-xs font-bold uppercase tracking-[0.16em] text-muted";
 const link = "text-zinc-400 transition-colors hover:text-ink";
 
 const socials = [
@@ -69,7 +69,7 @@ export default function Footer() {
           <ul className="space-y-3 text-zinc-400">
             <li>
               <CallLink className={link}>{REAL_PHONE_DISPLAY}</CallLink>
-              <span className="text-zinc-500"> · call or text</span>
+              <span className="text-muted"> · call or text</span>
             </li>
             <li>
               <a href="mailto:brenden@dirtlessdetailing.com?subject=Schedule a Detail with Dirt-Less Detailing" className={`${link} break-all`}>
@@ -94,7 +94,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-line">
-        <div className={`${containerClass} flex flex-wrap items-center justify-between gap-x-6 gap-y-3 py-6 text-sm text-zinc-500`}>
+        <div className={`${containerClass} flex flex-wrap items-center justify-between gap-x-6 gap-y-3 py-6 text-sm text-muted`}>
           <p>© {new Date().getFullYear()} Dirt-Less Detailing. All rights reserved.</p>
           <ul className="flex flex-wrap gap-x-6 gap-y-2">
             <li>

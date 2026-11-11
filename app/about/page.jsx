@@ -43,7 +43,7 @@ const faqItems = [
     answer: (
       <>
         We have a guide on the steps and products we recommend on our{" "}
-        <a href="/products?category=Ceramic Maintenance8" className={linkClass}>
+        <a href="/products?category=Ceramic Maintenance" className={linkClass}>
           DIY maintenance
         </a>{" "}
         page. All the products are fine to use whether your car is ceramic coated or not. If you need a very quick wash, we only recommend touchless car washes,
