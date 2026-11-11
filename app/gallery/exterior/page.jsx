@@ -1,10 +1,6 @@
-"use client";
-import React from "react";
-import ImageGallery from "../../components/ImageGallery";
-import Image from "next/image";
-import "react-medium-image-zoom/dist/styles.css";
-import { Button } from "../../components/ui/Button";
+import { GalleryPage } from "../../components/GalleryPage";
 
+// Photos for this gallery. The layout lives in app/components/GalleryPage.tsx.
 const baImages = [
   { src: "/assets/images/before&afters/rearBA2.jpg" },
   { src: "/assets/images/before&afters/toyotaEngineBA.jpg" },
@@ -74,49 +70,19 @@ const images = [
   { src: "/assets/images/exterior/showtruck2.jpg" }
 ];
 
-export default function PaintCorrectionGallery() {
+export default function ExteriorWashGallery() {
   return (
-    <div className="pb-8">
-      <div className="cover">
-        <Image src="/assets/images/exterior/sideofsilverram.jpg" alt="Side of silver dodge ram" quality={75} priority fill sizes="100vw" className="object-cover" />
-      </div>
-      <div className="servicepage-header">
-        <div style={{ alignItems: "center" }}>
-          <h1 className="text-center lg:text-left">
-            <span className="text-accent bold text-shadow">Exterior Decon Wash Gallery</span>
-          </h1>
-          <strong className="page-subheading" style={{ textAlign: "center" }}>
-            This is a showcase of our Exterior Wash service. Take a look at our{" "}
-            <a href="/services/exterior" className="text-accent-hover">
-              Exterior Decon Wash
-            </a>{" "}
-            page for more details and pricing.
-          </strong>
-          <div className="header-buttons">
-            <Button href="/booking" size="lg">
-              Book Online
-            </Button>
-            <Button href="/inquiry" variant="secondary" size="lg" className="bg-zinc-950/40">
-              Send an Inquiry
-            </Button>
-          </div>
-        </div>
-      </div>
-      <h2 className="text-4xl text-white text-center font-bold mt-16">Before & After Results</h2>
-      <ImageGallery images={baImages} altLabel="Exterior Decon Wash before and after" />
-
-      <h3 className="text-4xl text-white font-bold text-center">Finished Results</h3>
-      <ImageGallery images={images} altLabel="Exterior Decon Wash finished results" />
-
-      <div className="max-w-[90%] lg:max-w-[60%] mx-auto text-center">
-        <strong className="text-white text-3xl lg:text-4xl">
-          Check out our{" "}
-          <a href="/services/exterior" className="text-accent-hover">
-            Exterior Decon Wash
-          </a>{" "}
-          page for more details!
-        </strong>
-      </div>
-    </div>
+    <GalleryPage
+      hero={{
+        title: "Exterior Decon Wash gallery",
+        lead: "A showcase of our Exterior Decon Wash, from muddy trucks to daily drivers.",
+        image: "/assets/images/exterior/sideofsilverram.jpg",
+        alt: "Side of a silver Dodge Ram"
+      }}
+      services={[{ label: "Exterior Decon Wash", href: "/services/exterior" }]}
+      altLabel="Exterior Decon Wash"
+      beforeAfter={baImages}
+      results={images}
+    />
   );
 }

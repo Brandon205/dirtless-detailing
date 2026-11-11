@@ -1,10 +1,6 @@
-"use client";
-import React from "react";
-import Image from "next/image";
-import "react-medium-image-zoom/dist/styles.css";
-import ImageGallery from "../../components/ImageGallery";
-import { Button } from "../../components/ui/Button";
+import { GalleryPage } from "../../components/GalleryPage";
 
+// Photos for this gallery. The layout lives in app/components/GalleryPage.tsx.
 const baImages = [
   { src: "/assets/images/before&afters/daytonaBA.jpg" },
   { src: "/assets/images/before&afters/headlightBA.jpg" },
@@ -51,49 +47,19 @@ const images = [
   { src: "/assets/images/polish/rubiconA.jpg" }
 ];
 
-export default function PaintCorrectionGallery() {
+export default function PolishCoatGallery() {
   return (
-    <div className="pb-8">
-      <div className="cover">
-        <Image src="/assets/images/polish/36 plymouth.jpg" alt="Polished 1936 Plymouth" quality={75} priority fill sizes="100vw" className="object-cover" />
-      </div>
-      <div className="servicepage-header">
-        <div className="items-center">
-          <h1 className="text-center lg:text-left">
-            <span className="text-accent bold text-shadow">Exterior Polish & Coat Gallery</span>
-          </h1>
-          <strong className="page-subheading" style={{ textAlign: "center" }}>
-            Check out the gallery below to see just what we are able to do with a simple polish and ceramic spray. Take a look at our{" "}
-            <a href="/services/polish" className="text-accent-hover">
-              Exterior Polish & Coat
-            </a>{" "}
-            page for more details and pricing.
-          </strong>
-          <div className="header-buttons">
-            <Button href="/booking" size="lg">
-              Book Online
-            </Button>
-            <Button href="/inquiry" variant="secondary" size="lg" className="bg-zinc-950/40">
-              Send an Inquiry
-            </Button>
-          </div>
-        </div>
-      </div>
-      <h2 className="text-4xl text-white text-center font-bold mt-16">Before & After Results</h2>
-      <ImageGallery images={baImages} altLabel="Exterior Polish & Coat before and after" />
-
-      <h3 className="text-4xl text-white font-bold text-center">Finished Results</h3>
-      <ImageGallery images={images} altLabel="Exterior Polish & Coat finished results" />
-
-      <div className="max-w-[90%] lg:max-w-[60%] mx-auto text-center">
-        <strong className="text-white text-3xl lg:text-4xl max-w-[90%] lg:max-w-[60%] mx-auto my-8">
-          To see more about the services pictured above be sure to check out our{" "}
-          <a href="/services/polish" className="text-accent-hover">
-            Exterior Polish & Coat
-          </a>{" "}
-          page for more details!
-        </strong>
-      </div>
-    </div>
+    <GalleryPage
+      hero={{
+        title: "Exterior Polish & Coat gallery",
+        lead: "See what we can do with a single-stage polish and a ceramic spray coating.",
+        image: "/assets/images/polish/36 plymouth.jpg",
+        alt: "Polished 1936 Plymouth"
+      }}
+      services={[{ label: "Exterior Polish & Coat", href: "/services/polish" }]}
+      altLabel="Exterior Polish & Coat"
+      beforeAfter={baImages}
+      results={images}
+    />
   );
 }

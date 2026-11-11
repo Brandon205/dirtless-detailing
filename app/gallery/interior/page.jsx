@@ -1,10 +1,6 @@
-"use client";
-import React from "react";
-import Image from "next/image";
-import ImageGallery from "../../components/ImageGallery";
-import "react-medium-image-zoom/dist/styles.css";
-import { Button } from "../../components/ui/Button";
+import { GalleryPage } from "../../components/GalleryPage";
 
+// Photos for this gallery. The layout lives in app/components/GalleryPage.tsx.
 const baImages = [
   { src: "/assets/images/before&afters/badInteriorBA.png" },
   { src: "/assets/images/before&afters/cupholderBA.jpg" },
@@ -69,65 +65,22 @@ const images = [
   { src: "/assets/images/interior/trunkLexus.jpg" }
 ];
 
-export default function FullIntGallery() {
+export default function InteriorGallery() {
   return (
-    <div className="pb-8">
-      <div className="cover">
-        <Image
-          src="/assets/images/interior/driverNewLexus.jpg"
-          alt="Cleaned Interior of a 2024 Lexus SUV"
-          quality={75}
-          priority
-          fill
-          sizes="100vw"
-          className="object-cover"
-        />
-      </div>
-      <div className="servicepage-header">
-        <div style={{ alignItems: "center" }}>
-          <h1 className="text-center lg:text-left">
-            <span className="text-accent bold text-shadow">Full Interior Cleaning Gallery</span>
-          </h1>
-          <strong className="page-subheading" style={{ textAlign: "center" }}>
-            We have cleaned it all, even the worst of interiors. Check out the Gallery below. Take a look at our{" "}
-            <a href="/services/interior" className="text-accent-hover">
-              Full Interior
-            </a>{" "}
-            or{" "}
-            <a href="/services/interior-restoration" className="text-accent-hover">
-              Interior Restoration
-            </a>{" "}
-            to find out more.
-          </strong>
-          <div className="header-buttons">
-            <Button href="/booking" size="lg">
-              Book Online
-            </Button>
-            <Button href="/inquiry" variant="secondary" size="lg" className="bg-zinc-950/40">
-              Send an Inquiry
-            </Button>
-          </div>
-        </div>
-      </div>
-      <h2 className="text-4xl text-white text-center font-bold mt-16">Before & After Results</h2>
-      <ImageGallery images={baImages} altLabel="Full Interior Detail before and after" />
-
-      <h3 className="text-4xl text-white font-bold text-center">Finished Results</h3>
-      <ImageGallery images={images} altLabel="Full Interior Detail finished results" />
-
-      <div className="max-w-[90%] lg:max-w-[60%] mx-auto text-center">
-        <strong className="text-white text-3xl lg:text-4xl">
-          Check out our{" "}
-          <a href="/services/interior" className="text-accent-hover">
-            Full Interior Cleaning
-          </a>{" "}
-          page or our{" "}
-          <a href="/services/interior-restoration" className="text-accent-hover">
-            Interior Restoration{" "}
-          </a>{" "}
-          page for more details!
-        </strong>
-      </div>
-    </div>
+    <GalleryPage
+      hero={{
+        title: "Interior detailing gallery",
+        lead: "We've cleaned it all, even the worst of interiors. Here are some of our favorites.",
+        image: "/assets/images/interior/driverNewLexus.jpg",
+        alt: "Cleaned interior of a 2024 Lexus SUV"
+      }}
+      services={[
+        { label: "Full Interior Detail", href: "/services/interior" },
+        { label: "Interior Restoration", href: "/services/interior-restoration" }
+      ]}
+      altLabel="Full Interior Detail"
+      beforeAfter={baImages}
+      results={images}
+    />
   );
 }

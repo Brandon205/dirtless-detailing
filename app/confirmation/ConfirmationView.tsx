@@ -3,6 +3,7 @@ import { CalendarCheck, Check } from "lucide-react";
 import { CallLink } from "../components/CallTracking";
 import { Button, buttonClasses } from "../components/ui/Button";
 import { containerClass } from "../components/ui/Section";
+import { cn } from "../../utils/cn";
 import type { BookingSummary } from "../../utils/crm";
 
 const money = (cents: number) => `$${(cents / 100).toFixed(2)}`;
@@ -12,7 +13,7 @@ export default function ConfirmationView({ booking }: { booking: BookingSummary 
   return (
     <section className="relative isolate min-h-screen overflow-hidden bg-page text-ink">
       <Image src="/assets/images/exterior/range-rover-right.jpg" priority alt="" fill sizes="100vw" className="-z-10 object-cover opacity-20" />
-      <div className={`${containerClass} max-w-2xl pb-20 pt-32 text-center md:pt-40 2xl:max-w-2xl`}>
+      <div className={cn(containerClass, "max-w-2xl pb-20 pt-32 text-center md:pt-40 2xl:max-w-2xl")}>
         <span className="mx-auto flex size-14 items-center justify-center rounded-full bg-accent text-on-accent">
           <Check aria-hidden="true" className="size-8" />
         </span>

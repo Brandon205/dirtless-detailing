@@ -1,260 +1,182 @@
-"use client";
-import React, { useState, useRef, useEffect } from "react";
-import { useTransform, useScroll } from "framer-motion";
 import Image from "next/image";
-import FaqItem from "../components/FaqItem";
-import Lottie from "lottie-react";
-import starJSON from "../../public/assets/icons/starJSON.json";
-import calendarJSON from "../../public/assets/icons/calendarJSON.json";
-import carJSON from "../../public/assets/icons/carJSON.json";
-import locationJSON from "../../public/assets/icons/locationPing.json";
 import BaseSchema from "../jsonSchemas/BaseSchema";
+import { StatsStrip } from "../components/StatsStrip";
 import { Button } from "../components/ui/Button";
+import { CtaBand } from "../components/ui/CtaBand";
+import { Faq } from "../components/ui/Faq";
+import { PageHero } from "../components/ui/PageHero";
+import { Section } from "../components/ui/Section";
+import { SectionHeader } from "../components/ui/SectionHeader";
+
+const linkClass = "font-semibold text-accent-hover hover:underline";
+
+const faqItems = [
+  {
+    question: "Can you come to my apartment or workplace?",
+    answer:
+      "It depends on the space and access. Apartment complexes and some workplaces can be strict about this, so we may not be able to come to you. Let us know if you need a ride home while we detail your vehicle; we give rides back all the time! We can also pick up your vehicle if needed, just let us know when you book."
+  },
+  {
+    question: "Are you licensed and insured?",
+    answer: "Yes, of course! We're fully insured for our vehicle pickup service as well."
+  },
+  {
+    question: "What types of payment do you accept?",
+    answer: "We take cash, check, and all major debit and credit cards."
+  },
+  {
+    question: "What cities do you service?",
+    answer:
+      "With our mobile service we can go to Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Lake Tapps, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood and Graham. Our current mobile fee is $50, which covers packing, travel, setup and takedown time."
+  },
+  {
+    question: "Do I have to be there the whole time you're working on my car?",
+    answer: "Absolutely not! You're free to go do whatever you need to while we work."
+  },
+  {
+    question: "Do you install PPF or window tint?",
+    answer:
+      "We don't install PPF or window tint at this time. If you're looking for window tinting, there's an installer just a few bays down from our shop that we recommend!"
+  },
+  {
+    question: "How would you recommend I wash my car on my own?",
+    answer: (
+      <>
+        We have a guide on the steps and products we recommend on our{" "}
+        <a href="/products?category=Ceramic Maintenance8" className={linkClass}>
+          DIY maintenance
+        </a>{" "}
+        page. All the products are fine to use whether your car is ceramic coated or not. If you need a very quick wash, we only recommend touchless car washes,
+        since they won&apos;t damage your paint as much as a normal car wash.
+      </>
+    )
+  }
+];
 
 export default function About() {
-  const [expanded, setExpanded] = useState(false);
-  const [smallScreen, setSmallScreen] = useState(false);
-  const scrollY = useScroll();
-
-  const calendarRef = useRef(null);
-  const carRef = useRef(null);
-  const starRef = useRef(null);
-  const mapRef = useRef(null);
-
-  useEffect(() => {
-    if (window.innerWidth < 979) {
-      setSmallScreen(true);
-    } else {
-      setSmallScreen(false);
-    }
-  }, []);
-
-  const xMovement = useTransform(scrollY.scrollYProgress, [0, 0.32], [0, 80]);
-
-  const yMovement = useTransform(scrollY.scrollYProgress, [0, 0.32], [0, 30]);
-
-  const faqItems = [
-    {
-      title: "Can you come to my apartment or workplace?",
-      description:
-        "It will depend on the amount of space and access if we can or not. Typically apartment complexes and some workplaces can be strict with this type of thing and we may not be able to come to you. Let us know if you need a ride back to your house while we detail your vehicle, we give out rides back all the time! We can also come pick up your vehicle if needed, just let us know when you book."
-    },
-    {
-      title: "Are you licensed and insured?",
-      description: "Yes of course! We are fully insured for our vehicle pickup service as well!"
-    },
-    {
-      title: "What types of payment do you accept?",
-      description: "We can take cash, check, and all major debit/credit cards!"
-    },
-    {
-      title: "What cities do you service?",
-      description:
-        "With our mobile service we can go out to: Bonney Lake, Buckley, Sumner, Enumclaw, Puyallup, Lake Tapps, Federal Way, Orting, South Prairie, Black Diamond, Milton, Edgewood, and Graham. Our current mobile fee is $50, this helps us cover the packing, travel, setup, and takedown time for our services."
-    },
-    {
-      title: "Do I have to be there the whole time you're working on my car?",
-      description: "Absolutely not! You are free to go do whatever you need to do while we are working."
-    },
-    {
-      title: "Do you install PPF or window tint?",
-      description:
-        "We do not install PPF or window tint at this time. If you are looking for window tinting just a few bays down from our shop we have an installer that we recommend!"
-    },
-    {
-      title: "How would you recommend I wash my car on my own?",
-      description: (
-        <p className="faq-description">
-          We have a guide on the steps and products we recommend on our{" "}
-          <a href="/products?category=Ceramic Maintenance8" className="text-accent-hover">
-            DIY Maintenance
-          </a>{" "}
-          page. All the products are perfectly fine to use whether your car is ceramic coated or not! If you are in need of a very quick wash we only recommend
-          touch-less car washes as they won't damage your paint as much as a normal car wash.
-        </p>
-      )
-    }
-  ];
-
   return (
-    <div className="App bg-contact">
+    <div className="bg-page text-ink">
       <BaseSchema
         serviceImage="/assets/images/interior/driver16.jpg"
         url="https://www.dirtlessdetailing.com/about"
         makesOffer={{
           "@type": "Offer",
-          "itemOffered": {
+          itemOffered: {
             "@type": "Service",
-            "name": "Auto Detailing",
-            "description":
+            name: "Auto Detailing",
+            description:
               "Learn more about us and why Dirt-Less Detailing was founded, and check out our FAQ to get answers to our most frequently asked questions.",
-            "areaServed": "Buckley, Bonney Lake, and surrounding areas.",
-            "serviceType": "Auto Detailing"
+            areaServed: "Buckley, Bonney Lake, and surrounding areas.",
+            serviceType: "Auto Detailing"
           }
         }}
       />
-      {/* <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld, null, 2) }} /> */}
-      <div className="cover">
-        <Image src="/assets/images/correction/teslafoam.jpg" alt="Dirt-Less Detailing" priority fill sizes="100vw" quality={75} className="object-cover" />
-      </div>
-      <div className="servicepage-header">
-        <div style={{ alignItems: "center" }}>
-          <h1>
-            <span className="text-accent bold text-shadow font-heading">About Us & FAQ</span>
-          </h1>
-          <h2 className="page-subheading" style={{ textAlign: "center" }}>
-            Learn a little more about Dirt-Less Detailing!
-          </h2>
-          <div className="header-buttons">
-            <Button href="/booking" size="lg">
-              Book Online
+
+      <PageHero
+        eyebrow="About Dirt-Less Detailing"
+        title="Who we are"
+        lead="Learn a little more about who we are, how we work, and the questions we hear most."
+        image="/assets/images/correction/teslafoam.jpg"
+      />
+
+      <StatsStrip />
+
+      <Section className="border-t-0">
+        <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+          <div className="relative aspect-[3/2] overflow-hidden rounded-2xl border border-line">
+            <Image
+              src="/assets/images/exterior/fordGTBack.jpg"
+              alt="Clean Ford GT in a garage"
+              fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-cover"
+            />
+          </div>
+          <div>
+            <SectionHeader eyebrow="Our story" title="You shouldn't have to take time out of your busy day to clean your car." className="mb-6" />
+            <div className="space-y-4 text-lg leading-relaxed text-zinc-300">
+              <p>
+                We do the dirty work for you, leaving you free to do whatever you want. After more than 1,500 details over the last 10 years we&apos;ve seen it
+                all, and perfected how we tackle every part of it.
+              </p>
+              <p>
+                I started out as a detailer at an autobody shop, and founded Dirt-Less Detailing to keep doing what I love for everyone in Bonney Lake and the
+                surrounding area.
+              </p>
+              <p>
+                Since then I&apos;ve spent about as much time researching the products and methods we use as I have detailing, and that research pays off in
+                every car we work on.
+              </p>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      <Section tone="surface">
+        <figure className="mx-auto max-w-4xl text-center">
+          <p aria-hidden="true" className="text-accent">
+            ★★★★★
+          </p>
+          <blockquote className="mt-4 text-balance text-xl leading-relaxed text-zinc-200 md:text-2xl">
+            &ldquo;I cannot believe the hair and grime they were able to get out of my car. Animals, ice cream and makeup spills. Incredible! 150,000 miles and
+            my interior looks brand new. Ozone treatment has it smelling so refreshed. I can&apos;t say enough about how impressed I am. On top of that they
+            finished exactly when they said they would and were great to work with. Will definitely use again and refer to friends and family.&rdquo;
+          </blockquote>
+          <figcaption className="mt-6 font-bold">Kristen H.</figcaption>
+        </figure>
+      </Section>
+
+      <Section>
+        <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+          <div className="lg:order-2">
+            <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-line">
+              <Image
+                src="/assets/images/showcase/porscheFront.jpg"
+                alt="Brenden, the owner of Dirt-Less Detailing, with a detailed Porsche"
+                fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="object-cover"
+              />
+            </div>
+          </div>
+          <div>
+            <SectionHeader eyebrow="The shop" title="Dirt-Less Detailing" className="mb-6" />
+            <div className="space-y-4 text-lg leading-relaxed text-zinc-300">
+              <p>
+                Dirt-Less Detailing was founded by Brenden (on the right in the picture), a detailer with 10 years of industry experience. We specialize in
+                restoring your vehicle&apos;s beauty, inside and out. Our mission is simple: give you the best results and customer service your money can buy.
+              </p>
+              <p>
+                We offer interior and exterior detailing, ceramic coatings, paint correction and engine bay cleaning, all to keep your vehicle looking and
+                performing its best.
+              </p>
+              <p>
+                Our shop is in the{" "}
+                <a href="https://maps.app.goo.gl/bhPDhjUN4jsSegu48" className={linkClass} target="_blank" rel="noopener noreferrer">
+                  Buckley Business Park
+                </a>
+                , Unit C6, off State Route 410.
+              </p>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      <Section tone="surface">
+        <div className="grid gap-10 lg:grid-cols-[1fr_1.5fr] lg:gap-16">
+          <div>
+            <SectionHeader eyebrow="FAQ" title="Frequently asked questions" lead="Answers to the questions we hear most." className="mb-6" />
+            <Button variant="link" href="/inquiry">
+              Send us an inquiry
             </Button>
-            <Button href="/inquiry" variant="secondary" size="lg" className="bg-zinc-950/40">
-              Send an Inquiry
-            </Button>
           </div>
+          <Faq items={faqItems} />
         </div>
-      </div>
+      </Section>
 
-      <section style={{ lineHeight: "2", fontSize: "1.2em" }} className="about-container w-[95vw] mx-auto">
-        <div className="about-explain">
-          <div className="about-image-container">
-            <div className="about-image w-full h-[160px] lg:w-[450px] lg:h-[300px]">
-              <Image src="/assets/images/exterior/fordGTBack.jpg" alt="Clean Ford GT in a garage" sizes="(max-width: 1024px) 100vw, 450px" className="rounded-lg object-cover" fill />
-            </div>
-          </div>
-          <div className="text-left">
-            <h3 className="text-large">You shouldn't have to take time out of your busy day to clean your car.</h3>
-            <p className="pb-4">
-              We can do the dirty work for you, leaving you free to do whatever you desire. After hundreds of completed details over the last 10 years we've
-              seen it all, and perfected how we tackle every aspect of it.
-            </p>
-            <p className="pb-4">
-              Starting almost a decade ago as a detailer at an autobody shop, I started Dirt-Less Detailing to continue doing what I love doing for everyone in
-              Bonney Lake.
-            </p>
-            <p>
-              Since I started I've spent about as much time detailing as I have doing research about the products and procedures we use, and I have seen the
-              benefits from my research pay off in every car that we detail!
-            </p>
-          </div>
-        </div>
-
-        <div className="about-testimonial">
-          <div className="testimonial">
-            <div className="customer-icon">
-              <p style={{ position: "absolute", margin: 0, transform: "translateX(90%)" }}>K</p>
-            </div>
-            <p className="about-review">
-              “I cannot believe the hair and grime they were able to get out of my car. Animals, ice cream and makeup spills. Incredible! 150,000 miles and my
-              interior looks brand new. Ozone treatment has it smelling so refreshed. I can't say enough about how impressed I am. On top of that they finished
-              exactly when they said they would and were great to work with. Will definitely use again and refer to friends and family.”
-            </p>
-            <p style={{ color: "#41444A", fontWeight: "bold", fontSize: "20px" }}>Kristen H.</p>
-          </div>
-          <div className="stats-container">
-            <div className="stat">
-              <Lottie
-                animationData={carJSON}
-                lottieRef={carRef}
-                style={{ width: "70px", height: "70px", gridArea: "icon" }}
-                loop={0}
-                onMouseEnter={() => {
-                  carRef.current.stop();
-                  carRef.current.play();
-                }}
-                onMouseLeave={() => carRef.current.goToAndStop(90, true)}
-              />
-              <strong>1,500+</strong>
-              <p>Details Completed</p>
-            </div>
-            <div className="stat">
-              <Lottie
-                animationData={starJSON}
-                lottieRef={starRef}
-                style={{ width: "70px", gridArea: "icon" }}
-                loop={0}
-                onMouseEnter={() => {
-                  starRef.current.stop();
-                  starRef.current.play();
-                }}
-                onMouseLeave={() => starRef.current.goToAndStop(20, true)}
-              />
-              <strong>30+</strong>
-              <p>5 Star Reviews</p>
-            </div>
-            <div className="stat">
-              <Lottie
-                animationData={calendarJSON}
-                lottieRef={calendarRef}
-                style={{ width: "70px", gridArea: "icon" }}
-                loop={0}
-                onMouseEnter={() => {
-                  calendarRef.current.stop();
-                  calendarRef.current.play();
-                }}
-                onMouseLeave={() => calendarRef.current.goToAndStop(60, true)}
-              />
-              <strong>9+</strong>
-              <p>Years in Service</p>
-            </div>
-            <div className="stat">
-              <Lottie
-                animationData={locationJSON}
-                lottieRef={mapRef}
-                style={{ width: "70px", gridArea: "icon" }}
-                loop={0}
-                onMouseEnter={() => {
-                  mapRef.current.stop();
-                  mapRef.current.play();
-                }}
-                onMouseLeave={() => mapRef.current.goToAndStop(80, true)}
-              />
-              <strong>Mobile</strong>
-              <p>Services</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="about-image w-full max-w-[800px] h-[375px] mx-auto">
-          <Image
-            src="/assets/images/showcase/porscheFront.jpg"
-            alt="Dirt-Less Detailing Owner"
-            sizes="(max-width: 979px) 100vw, (min-width: 980px) 800px"
-            fill
-            className="object-cover"
-          />
-        </div>
-        <h3 className="text-4xl py-8 text-left font-heading font-bold lg:text-center">Dirt-Less Detailing</h3>
-        <div style={{ maxWidth: "1200px", margin: "0 auto" }} className="text-left">
-          <p>
-            Dirt-Less Detailing is a premier auto detailing company founded 3 years ago by Brenden (on the right in the picture), an experienced detailer with 9
-            years of industry knowledge. We specialize in restoring your vehicle's beauty, inside and out. Our mission is simple - to provide you with the best
-            results and customer service that your money can buy. Let us make your car shine like new again!
-          </p>
-          <p>
-            At Dirt-Less Detailing, we are passionate about providing top-notch auto detailing services to our valued clients. With our comprehensive range of
-            services, including interior and exterior detailing, ceramic coatings, paint corrections, and engine bay cleanings, we strive to keep your vehicle
-            looking and performing its best. Trust us to provide the care and attention to detail that your car deserves.
-          </p>
-          <p>
-            Our shop location is right in the{" "}
-            <a href="https://maps.app.goo.gl/bhPDhjUN4jsSegu48" className="text-accent-hover" target="_blank" rel="noopener noreferrer">
-              Buckley Business Park
-            </a>{" "}
-            Unit C6 off State Route 410.
-          </p>
-        </div>
-
-        <br className="extra-space" />
-
-        <h3 style={{ fontSize: "2.5em" }}>FAQ</h3>
-        <div className="faq-container" itemScope itemType="https://schema.org/FAQPage">
-          {faqItems.map((item, i) => (
-            <FaqItem key={i} i={i} expanded={expanded} setExpanded={setExpanded} title={item.title} description={item.description} isMobile={true} />
-          ))}
-        </div>
-      </section>
+      <Section>
+        <CtaBand title="Ready to get your car detailed?" lead="See pricing and book online 24/7, or send us a question first." />
+      </Section>
     </div>
   );
 }

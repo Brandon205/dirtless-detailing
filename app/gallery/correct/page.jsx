@@ -1,9 +1,6 @@
-"use client";
-import Image from "next/image";
-import "react-medium-image-zoom/dist/styles.css";
-import ImageGallery from "../../components/ImageGallery";
-import { Button } from "../../components/ui/Button";
+import { GalleryPage } from "../../components/GalleryPage";
 
+// Photos for this gallery. The layout lives in app/components/GalleryPage.tsx.
 const baImages = [
   { src: "/assets/images/before&afters/carwashTruckBA.jpg" },
   { src: "/assets/images/before&afters/scratchesBA.png" },
@@ -54,57 +51,19 @@ const images = [
   { src: "/assets/images/correction/wheelFaces.jpg" }
 ];
 
-export default function CoatingGallery() {
+export default function CorrectCoatGallery() {
   return (
-    <div className="pb-8">
-      <div className="cover">
-        <Image
-          src="/assets/images/correction/genesis2.jpeg"
-          alt="Front Right view of Ceramic Coated Infinity Genesis in the sun"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
-          quality={75}
-        />
-      </div>
-      <div className="servicepage-header">
-        <div style={{ alignItems: "center" }}>
-          <h1 className="text-center lg:text-left">
-            <span className="text-accent bold text-shadow">Exterior Correct & Coat Gallery</span>
-          </h1>
-          <strong className="page-subheading" style={{ textAlign: "center" }}>
-            Check out the gallery below to see the results and capabilities of a freshly applied Ceramic Coating. Take a look at our{" "}
-            <a href="/services/correct" className="text-accent-hover">
-              Exterior Correct & Coat
-            </a>{" "}
-            page to learn more about this service!
-          </strong>
-          <div className="header-buttons">
-            <Button href="/booking" size="lg">
-              Book Online
-            </Button>
-            <Button href="/inquiry" variant="secondary" size="lg" className="bg-zinc-950/40">
-              Send an Inquiry
-            </Button>
-          </div>
-        </div>
-      </div>
-      <h2 className="text-4xl text-white text-center font-bold mt-16">Before & After Results</h2>
-      <ImageGallery images={baImages} altLabel="Exterior Correct & Coat before and after" />
-
-      <h3 className="text-4xl text-white font-bold text-center">Finished Results</h3>
-      <ImageGallery images={images} altLabel="Exterior Correct & Coat finished results" />
-
-      <div className="max-w-[90%] lg:max-w-[60%] mx-auto text-center">
-        <strong className="text-white text-3xl lg:text-4xl">
-          Be sure to check out our{" "}
-          <a href="/services/correct" className="text-accent-hover">
-            Correct & Coat
-          </a>{" "}
-          page for more details!
-        </strong>
-      </div>
-    </div>
+    <GalleryPage
+      hero={{
+        title: "Exterior Correct & Coat gallery",
+        lead: "The results of a multi-stage paint correction and a freshly applied ceramic coating: deep gloss, no swirls, and water that beads right off.",
+        image: "/assets/images/correction/genesis2.jpeg",
+        alt: "Front right view of a ceramic coated Genesis in the sun"
+      }}
+      services={[{ label: "Exterior Correct & Coat", href: "/services/correct" }]}
+      altLabel="Exterior Correct & Coat"
+      beforeAfter={baImages}
+      results={images}
+    />
   );
 }

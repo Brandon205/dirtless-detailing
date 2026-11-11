@@ -149,7 +149,7 @@ const page = {
                 washing.
               </li>
             </ul>
-            <ImageGallery images={[{ src: "/assets/images/showcase/iglcircle.jpg", alt: "Benefits of IGL high solids ceramic coatings" }]} />
+            <ImageGallery className="mt-4 max-w-xs grid-cols-1 md:grid-cols-1 lg:grid-cols-1" images={[{ src: "/assets/images/showcase/iglcircle.jpg", alt: "Benefits of IGL high solids ceramic coatings" }]} />
           </div>
         )
       },
