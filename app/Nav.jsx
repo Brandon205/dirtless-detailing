@@ -64,22 +64,26 @@ export default function Nav() {
   const [open, setOpen] = useState(null);
   const desktopRef = useRef(null);
 
-  // Close the dropdowns on an outside click or Escape.
+  // Close on Escape.
   useEffect(() => {
-    const onClick = (e) => desktopRef.current && !desktopRef.current.contains(e.target) && setOpen(null);
     const onKey = (e) => {
       if (e.key === "Escape") {
         setOpen(null);
         setMobileOpen(false);
       }
     };
-    document.addEventListener("mousedown", onClick);
     document.addEventListener("keydown", onKey);
-    return () => {
-      document.removeEventListener("mousedown", onClick);
-      document.removeEventListener("keydown", onKey);
-    };
+    return () => document.removeEventListener("keydown", onKey);
   }, []);
+
+  // Close a desktop dropdown on a click outside it. Only while the mobile menu is shut: its accordions share `open`,
+  // and collapsing one on mousedown would remove the link before the click lands.
+  useEffect(() => {
+    if (!open || mobileOpen) return;
+    const onClick = (e) => desktopRef.current && !desktopRef.current.contains(e.target) && setOpen(null);
+    document.addEventListener("mousedown", onClick);
+    return () => document.removeEventListener("mousedown", onClick);
+  }, [open, mobileOpen]);
 
   const toggle = (name) => setOpen(open === name ? null : name);
   const close = () => {
